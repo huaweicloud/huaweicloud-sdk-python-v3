@@ -42,6 +42,7 @@ from huaweicloudsdkbssintl.v2.model.customer_error_detail import CustomerErrorDe
 from huaweicloudsdkbssintl.v2.model.customer_information import CustomerInformation
 from huaweicloudsdkbssintl.v2.model.customer_on_demand_resource import CustomerOnDemandResource
 from huaweicloudsdkbssintl.v2.model.customer_order_v2 import CustomerOrderV2
+from huaweicloudsdkbssintl.v2.model.customer_order_v3 import CustomerOrderV3
 from huaweicloudsdkbssintl.v2.model.demand_discount_rating_result import DemandDiscountRatingResult
 from huaweicloudsdkbssintl.v2.model.demand_product_info import DemandProductInfo
 from huaweicloudsdkbssintl.v2.model.demand_product_rating_result import DemandProductRatingResult

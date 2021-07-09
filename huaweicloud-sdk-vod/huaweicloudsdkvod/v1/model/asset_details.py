@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -86,7 +84,7 @@ class AssetDetails:
     def asset_status(self):
         """Gets the asset_status of this AssetDetails.
 
-        媒资状态。 \"CREATING\"   //上传中 \"FAILED\"     //上传失败 \"CREATED\"  //上传成功 \"PUBLISHED\"  //已发布 \"DELETED\"  //已删除 
+        媒资状态。 - \"CREATING\"：上传中 - \"FAILED\"：上传失败 - \"CREATED\"：上传成功 - \"PUBLISHED\"：已发布 - \"DELETED\"：已删除
 
         :return: The asset_status of this AssetDetails.
         :rtype: str
@@ -97,7 +95,7 @@ class AssetDetails:
     def asset_status(self, asset_status):
         """Sets the asset_status of this AssetDetails.
 
-        媒资状态。 \"CREATING\"   //上传中 \"FAILED\"     //上传失败 \"CREATED\"  //上传成功 \"PUBLISHED\"  //已发布 \"DELETED\"  //已删除 
+        媒资状态。 - \"CREATING\"：上传中 - \"FAILED\"：上传失败 - \"CREATED\"：上传成功 - \"PUBLISHED\"：已发布 - \"DELETED\"：已删除
 
         :param asset_status: The asset_status of this AssetDetails.
         :type: str
@@ -108,7 +106,7 @@ class AssetDetails:
     def transcode_status(self):
         """Gets the transcode_status of this AssetDetails.
 
-        转码状态 \"UN_TRANSCODE\"        //未转码 \"WAITING_TRANSCODE\"   //等待转码，排队中 \"TRANSCODING\"          //转码中 \"TRANSCODE_SUCCEED\"    //转码成功 \"TRANSCODE_FAILED\"     //转码失败 
+        转码状态 - \"UN_TRANSCODE\"：未转码 - \"WAITING_TRANSCODE\"：等待转码，排队中 - \"TRANSCODING\"：转码中 - \"TRANSCODE_SUCCEED\"：转码成功 - \"TRANSCODE_FAILED\"：转码失败
 
         :return: The transcode_status of this AssetDetails.
         :rtype: str
@@ -119,7 +117,7 @@ class AssetDetails:
     def transcode_status(self, transcode_status):
         """Sets the transcode_status of this AssetDetails.
 
-        转码状态 \"UN_TRANSCODE\"        //未转码 \"WAITING_TRANSCODE\"   //等待转码，排队中 \"TRANSCODING\"          //转码中 \"TRANSCODE_SUCCEED\"    //转码成功 \"TRANSCODE_FAILED\"     //转码失败 
+        转码状态 - \"UN_TRANSCODE\"：未转码 - \"WAITING_TRANSCODE\"：等待转码，排队中 - \"TRANSCODING\"：转码中 - \"TRANSCODE_SUCCEED\"：转码成功 - \"TRANSCODE_FAILED\"：转码失败
 
         :param transcode_status: The transcode_status of this AssetDetails.
         :type: str
@@ -194,8 +192,8 @@ class AssetDetails:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

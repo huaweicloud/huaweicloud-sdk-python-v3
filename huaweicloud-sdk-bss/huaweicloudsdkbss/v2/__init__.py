@@ -68,6 +68,7 @@ from huaweicloudsdkbss.v2.model.customer_info_v2 import CustomerInfoV2
 from huaweicloudsdkbss.v2.model.customer_information import CustomerInformation
 from huaweicloudsdkbss.v2.model.customer_on_demand_resource import CustomerOnDemandResource
 from huaweicloudsdkbss.v2.model.customer_order_v2 import CustomerOrderV2
+from huaweicloudsdkbss.v2.model.customer_order_v3 import CustomerOrderV3
 from huaweicloudsdkbss.v2.model.customer_postal_address_v2 import CustomerPostalAddressV2
 from huaweicloudsdkbss.v2.model.delete_postal_request import DeletePostalRequest
 from huaweicloudsdkbss.v2.model.delete_postal_response import DeletePostalResponse

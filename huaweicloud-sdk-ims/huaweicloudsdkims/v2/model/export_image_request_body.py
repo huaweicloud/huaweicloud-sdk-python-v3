@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -24,25 +22,30 @@ class ExportImageRequestBody:
 
     openapi_types = {
         'bucket_url': 'str',
-        'file_format': 'str'
+        'file_format': 'str',
+        'is_quick_export': 'bool'
     }
 
     attribute_map = {
         'bucket_url': 'bucket_url',
-        'file_format': 'file_format'
+        'file_format': 'file_format',
+        'is_quick_export': 'is_quick_export'
     }
 
-    def __init__(self, bucket_url=None, file_format=None):
+    def __init__(self, bucket_url=None, file_format=None, is_quick_export=None):
         """ExportImageRequestBody - a model defined in huaweicloud sdk"""
         
         
 
         self._bucket_url = None
         self._file_format = None
+        self._is_quick_export = None
         self.discriminator = None
 
         self.bucket_url = bucket_url
         self.file_format = file_format
+        if is_quick_export is not None:
+            self.is_quick_export = is_quick_export
 
     @property
     def bucket_url(self):
@@ -88,6 +91,28 @@ class ExportImageRequestBody:
         """
         self._file_format = file_format
 
+    @property
+    def is_quick_export(self):
+        """Gets the is_quick_export of this ExportImageRequestBody.
+
+        是否使用快速导出，取值为true或者false。 说明：若使用快速导出，则无法指定file_format参数。
+
+        :return: The is_quick_export of this ExportImageRequestBody.
+        :rtype: bool
+        """
+        return self._is_quick_export
+
+    @is_quick_export.setter
+    def is_quick_export(self, is_quick_export):
+        """Sets the is_quick_export of this ExportImageRequestBody.
+
+        是否使用快速导出，取值为true或者false。 说明：若使用快速导出，则无法指定file_format参数。
+
+        :param is_quick_export: The is_quick_export of this ExportImageRequestBody.
+        :type: bool
+        """
+        self._is_quick_export = is_quick_export
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -116,8 +141,8 @@ class ExportImageRequestBody:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

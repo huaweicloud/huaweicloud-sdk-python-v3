@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -44,8 +42,7 @@ class ShowTakeOverTaskDetailsRequest:
         self._size = None
         self.discriminator = None
 
-        if task_id is not None:
-            self.task_id = task_id
+        self.task_id = task_id
         if page is not None:
             self.page = page
         if size is not None:
@@ -55,7 +52,7 @@ class ShowTakeOverTaskDetailsRequest:
     def task_id(self):
         """Gets the task_id of this ShowTakeOverTaskDetailsRequest.
 
-        起始时间.指定task_id时该参数无效<br/> 
+        任务ID。
 
         :return: The task_id of this ShowTakeOverTaskDetailsRequest.
         :rtype: str
@@ -66,7 +63,7 @@ class ShowTakeOverTaskDetailsRequest:
     def task_id(self, task_id):
         """Sets the task_id of this ShowTakeOverTaskDetailsRequest.
 
-        起始时间.指定task_id时该参数无效<br/> 
+        任务ID。
 
         :param task_id: The task_id of this ShowTakeOverTaskDetailsRequest.
         :type: str
@@ -77,7 +74,7 @@ class ShowTakeOverTaskDetailsRequest:
     def page(self):
         """Gets the page of this ShowTakeOverTaskDetailsRequest.
 
-        分页编号,默认为0。<br/> 
+        分页编号，默认为0。
 
         :return: The page of this ShowTakeOverTaskDetailsRequest.
         :rtype: int
@@ -88,7 +85,7 @@ class ShowTakeOverTaskDetailsRequest:
     def page(self, page):
         """Sets the page of this ShowTakeOverTaskDetailsRequest.
 
-        分页编号,默认为0。<br/> 
+        分页编号，默认为0。
 
         :param page: The page of this ShowTakeOverTaskDetailsRequest.
         :type: int
@@ -99,7 +96,7 @@ class ShowTakeOverTaskDetailsRequest:
     def size(self):
         """Gets the size of this ShowTakeOverTaskDetailsRequest.
 
-        每页记录数。默认10，范围[1,100]<br/> 
+        每页记录数。  默认10，范围[1,100]
 
         :return: The size of this ShowTakeOverTaskDetailsRequest.
         :rtype: int
@@ -110,7 +107,7 @@ class ShowTakeOverTaskDetailsRequest:
     def size(self, size):
         """Sets the size of this ShowTakeOverTaskDetailsRequest.
 
-        每页记录数。默认10，范围[1,100]<br/> 
+        每页记录数。  默认10，范围[1,100]
 
         :param size: The size of this ShowTakeOverTaskDetailsRequest.
         :type: int
@@ -145,8 +142,8 @@ class ShowTakeOverTaskDetailsRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

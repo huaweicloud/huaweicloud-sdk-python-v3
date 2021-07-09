@@ -563,7 +563,7 @@ class ImsAsyncClient(Client):
     def create_image_async(self, request):
         """制作镜像
 
-        本接口用于制作私有镜像，支持： 使用云服务器制作私有镜像。 使用上传至OBS桶中的外部镜像文件制作私有镜像。 使用数据卷制作系统盘镜像。 作为异步接口，调用成功，只是说明云平台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。
+        本接口用于制作私有镜像，支持： - 使用云服务器制作私有镜像。 - 使用上传至OBS桶中的外部镜像文件制作私有镜像。 - 使用数据卷制作系统盘镜像。  作为异步接口，调用成功，只是说明云平台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。  不同场景必选参数说明：  - 使用云服务器制作镜像时的请求的必选参数：name,instance_id。 - 使用上传至OBS桶中的外部镜像文件时的请求必选参数：name,image_url,min_disk。 - 使用数据卷制作系统盘镜像时的请求必选参数：name,volume_id,os_version
 
         :param CreateImageRequest request
         :return: CreateImageResponse
@@ -573,7 +573,7 @@ class ImsAsyncClient(Client):
     def create_image_with_http_info(self, request):
         """制作镜像
 
-        本接口用于制作私有镜像，支持： 使用云服务器制作私有镜像。 使用上传至OBS桶中的外部镜像文件制作私有镜像。 使用数据卷制作系统盘镜像。 作为异步接口，调用成功，只是说明云平台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。
+        本接口用于制作私有镜像，支持： - 使用云服务器制作私有镜像。 - 使用上传至OBS桶中的外部镜像文件制作私有镜像。 - 使用数据卷制作系统盘镜像。  作为异步接口，调用成功，只是说明云平台收到了制作请求，镜像是否制作成功需要通过异步任务查询接口查询该任务的执行状态，具体请参考异步任务查询。  不同场景必选参数说明：  - 使用云服务器制作镜像时的请求的必选参数：name,instance_id。 - 使用上传至OBS桶中的外部镜像文件时的请求必选参数：name,image_url,min_disk。 - 使用数据卷制作系统盘镜像时的请求必选参数：name,volume_id,os_version
 
         :param CreateImageRequest request
         :return: CreateImageResponse

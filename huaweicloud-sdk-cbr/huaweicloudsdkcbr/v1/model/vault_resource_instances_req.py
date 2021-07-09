@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -23,6 +21,7 @@ class VaultResourceInstancesReq:
     sensitive_list = []
 
     openapi_types = {
+        'without_any_tag': 'bool',
         'tags': 'list[TagsReq]',
         'tags_any': 'list[TagsReq]',
         'not_tags': 'list[TagsReq]',
@@ -37,6 +36,7 @@ class VaultResourceInstancesReq:
     }
 
     attribute_map = {
+        'without_any_tag': 'without_any_tag',
         'tags': 'tags',
         'tags_any': 'tags_any',
         'not_tags': 'not_tags',
@@ -50,11 +50,12 @@ class VaultResourceInstancesReq:
         'object_type': 'object_type'
     }
 
-    def __init__(self, tags=None, tags_any=None, not_tags=None, not_tags_any=None, sys_tags=None, limit=None, offset=None, action=None, matches=None, cloud_type=None, object_type=None):
+    def __init__(self, without_any_tag=None, tags=None, tags_any=None, not_tags=None, not_tags_any=None, sys_tags=None, limit=None, offset=None, action=None, matches=None, cloud_type=None, object_type=None):
         """VaultResourceInstancesReq - a model defined in huaweicloud sdk"""
         
         
 
+        self._without_any_tag = None
         self._tags = None
         self._tags_any = None
         self._not_tags = None
@@ -68,6 +69,8 @@ class VaultResourceInstancesReq:
         self._object_type = None
         self.discriminator = None
 
+        if without_any_tag is not None:
+            self.without_any_tag = without_any_tag
         if tags is not None:
             self.tags = tags
         if tags_any is not None:
@@ -89,6 +92,28 @@ class VaultResourceInstancesReq:
             self.cloud_type = cloud_type
         if object_type is not None:
             self.object_type = object_type
+
+    @property
+    def without_any_tag(self):
+        """Gets the without_any_tag of this VaultResourceInstancesReq.
+
+        不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”、“tags_any”、“not_tags”、“not_tags_any”字段。
+
+        :return: The without_any_tag of this VaultResourceInstancesReq.
+        :rtype: bool
+        """
+        return self._without_any_tag
+
+    @without_any_tag.setter
+    def without_any_tag(self, without_any_tag):
+        """Sets the without_any_tag of this VaultResourceInstancesReq.
+
+        不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”、“tags_any”、“not_tags”、“not_tags_any”字段。
+
+        :param without_any_tag: The without_any_tag of this VaultResourceInstancesReq.
+        :type: bool
+        """
+        self._without_any_tag = without_any_tag
 
     @property
     def tags(self):
@@ -360,8 +385,8 @@ class VaultResourceInstancesReq:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

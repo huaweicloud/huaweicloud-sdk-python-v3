@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -25,7 +23,7 @@ class QueryLTSLogParams:
     openapi_types = {
         'start_time': 'str',
         'end_time': 'str',
-        'labels': 'object',
+        'labels': 'dict(str, str)',
         'keywords': 'str',
         'line_num': 'str',
         'is_desc': 'bool',
@@ -125,7 +123,7 @@ class QueryLTSLogParams:
         日志过滤条件集合，不同日志来源所需字段不同。
 
         :return: The labels of this QueryLTSLogParams.
-        :rtype: object
+        :rtype: dict(str, str)
         """
         return self._labels
 
@@ -136,7 +134,7 @@ class QueryLTSLogParams:
         日志过滤条件集合，不同日志来源所需字段不同。
 
         :param labels: The labels of this QueryLTSLogParams.
-        :type: object
+        :type: dict(str, str)
         """
         self._labels = labels
 
@@ -278,8 +276,8 @@ class QueryLTSLogParams:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

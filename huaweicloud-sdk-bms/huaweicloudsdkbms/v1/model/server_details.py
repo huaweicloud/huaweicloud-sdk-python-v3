@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -30,7 +28,7 @@ class ServerDetails:
         'updated': 'datetime',
         'tenant_id': 'str',
         'host_id': 'str',
-        'addresses': 'Addresses',
+        'addresses': 'dict(str, list[AddressInfo])',
         'key_name': 'str',
         'image': 'ImageInfo',
         'flavor': 'FlavorInfos',
@@ -409,9 +407,10 @@ class ServerDetails:
     def addresses(self):
         """Gets the addresses of this ServerDetails.
 
+        裸金属服务器的网络属性。详情请参见表3 addresses数据结构说明。
 
         :return: The addresses of this ServerDetails.
-        :rtype: Addresses
+        :rtype: dict(str, list[AddressInfo])
         """
         return self._addresses
 
@@ -419,9 +418,10 @@ class ServerDetails:
     def addresses(self, addresses):
         """Sets the addresses of this ServerDetails.
 
+        裸金属服务器的网络属性。详情请参见表3 addresses数据结构说明。
 
         :param addresses: The addresses of this ServerDetails.
-        :type: Addresses
+        :type: dict(str, list[AddressInfo])
         """
         self._addresses = addresses
 
@@ -1235,8 +1235,8 @@ class ServerDetails:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

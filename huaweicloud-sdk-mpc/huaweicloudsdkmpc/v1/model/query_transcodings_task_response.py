@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -39,8 +37,7 @@ class QueryTranscodingsTaskResponse:
         'transcode_detail': 'TranscodeDetail',
         'thumbnail_output': 'ObsObjInfo',
         'thumbnail_outputname': 'str',
-        'pic_info': 'list[PicInfo]',
-        'audit_report': 'AuditReport'
+        'pic_info': 'list[PicInfo]'
     }
 
     attribute_map = {
@@ -60,11 +57,10 @@ class QueryTranscodingsTaskResponse:
         'transcode_detail': 'transcode_detail',
         'thumbnail_output': 'thumbnail_output',
         'thumbnail_outputname': 'thumbnail_outputname',
-        'pic_info': 'pic_info',
-        'audit_report': 'audit_report'
+        'pic_info': 'pic_info'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, output_url=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, audit_report=None):
+    def __init__(self, task_id=None, status=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, output_url=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None):
         """QueryTranscodingsTaskResponse - a model defined in huaweicloud sdk"""
         
         
@@ -86,7 +82,6 @@ class QueryTranscodingsTaskResponse:
         self._thumbnail_output = None
         self._thumbnail_outputname = None
         self._pic_info = None
-        self._audit_report = None
         self.discriminator = None
 
         if task_id is not None:
@@ -123,8 +118,6 @@ class QueryTranscodingsTaskResponse:
             self.thumbnail_outputname = thumbnail_outputname
         if pic_info is not None:
             self.pic_info = pic_info
-        if audit_report is not None:
-            self.audit_report = audit_report
 
     @property
     def task_id(self):
@@ -492,26 +485,6 @@ class QueryTranscodingsTaskResponse:
         """
         self._pic_info = pic_info
 
-    @property
-    def audit_report(self):
-        """Gets the audit_report of this QueryTranscodingsTaskResponse.
-
-
-        :return: The audit_report of this QueryTranscodingsTaskResponse.
-        :rtype: AuditReport
-        """
-        return self._audit_report
-
-    @audit_report.setter
-    def audit_report(self, audit_report):
-        """Sets the audit_report of this QueryTranscodingsTaskResponse.
-
-
-        :param audit_report: The audit_report of this QueryTranscodingsTaskResponse.
-        :type: AuditReport
-        """
-        self._audit_report = audit_report
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -540,8 +513,8 @@ class QueryTranscodingsTaskResponse:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

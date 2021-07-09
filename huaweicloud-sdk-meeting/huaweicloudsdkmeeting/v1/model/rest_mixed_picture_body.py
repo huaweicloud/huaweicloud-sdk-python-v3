@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -26,19 +24,17 @@ class RestMixedPictureBody:
         'manual_set': 'int',
         'image_type': 'str',
         'subscriber_in_pics': 'list[SubscriberInPic]',
-        'switch_time': 'int',
-        'multi_pic_save_only': 'bool'
+        'switch_time': 'int'
     }
 
     attribute_map = {
         'manual_set': 'manualSet',
         'image_type': 'imageType',
         'subscriber_in_pics': 'subscriberInPics',
-        'switch_time': 'switchTime',
-        'multi_pic_save_only': 'multiPicSaveOnly'
+        'switch_time': 'switchTime'
     }
 
-    def __init__(self, manual_set=None, image_type=None, subscriber_in_pics=None, switch_time=None, multi_pic_save_only=None):
+    def __init__(self, manual_set=None, image_type=None, subscriber_in_pics=None, switch_time=None):
         """RestMixedPictureBody - a model defined in huaweicloud sdk"""
         
         
@@ -47,7 +43,6 @@ class RestMixedPictureBody:
         self._image_type = None
         self._subscriber_in_pics = None
         self._switch_time = None
-        self._multi_pic_save_only = None
         self.discriminator = None
 
         self.manual_set = manual_set
@@ -57,8 +52,6 @@ class RestMixedPictureBody:
             self.subscriber_in_pics = subscriber_in_pics
         if switch_time is not None:
             self.switch_time = switch_time
-        if multi_pic_save_only is not None:
-            self.multi_pic_save_only = multi_pic_save_only
 
     @property
     def manual_set(self):
@@ -148,28 +141,6 @@ class RestMixedPictureBody:
         """
         self._switch_time = switch_time
 
-    @property
-    def multi_pic_save_only(self):
-        """Gets the multi_pic_save_only of this RestMixedPictureBody.
-
-        多画面仅保存
-
-        :return: The multi_pic_save_only of this RestMixedPictureBody.
-        :rtype: bool
-        """
-        return self._multi_pic_save_only
-
-    @multi_pic_save_only.setter
-    def multi_pic_save_only(self, multi_pic_save_only):
-        """Sets the multi_pic_save_only of this RestMixedPictureBody.
-
-        多画面仅保存
-
-        :param multi_pic_save_only: The multi_pic_save_only of this RestMixedPictureBody.
-        :type: bool
-        """
-        self._multi_pic_save_only = multi_pic_save_only
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -198,8 +169,8 @@ class RestMixedPictureBody:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

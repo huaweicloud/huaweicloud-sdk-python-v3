@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -62,7 +60,7 @@ class Subtitle:
     def id(self):
         """Gets the id of this Subtitle.
 
-        字幕id。 取值范围：[1,8]。
+        字幕id。  取值范围：[1,8]。
 
         :return: The id of this Subtitle.
         :rtype: int
@@ -73,7 +71,7 @@ class Subtitle:
     def id(self, id):
         """Sets the id of this Subtitle.
 
-        字幕id。 取值范围：[1,8]。
+        字幕id。  取值范围：[1,8]。
 
         :param id: The id of this Subtitle.
         :type: int
@@ -106,7 +104,7 @@ class Subtitle:
     def language(self):
         """Gets the language of this Subtitle.
 
-        字幕语音类型。 取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
+        字幕语音类型。  取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
 
         :return: The language of this Subtitle.
         :rtype: str
@@ -117,7 +115,7 @@ class Subtitle:
     def language(self, language):
         """Sets the language of this Subtitle.
 
-        字幕语音类型。 取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
+        字幕语音类型。  取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
 
         :param language: The language of this Subtitle.
         :type: str
@@ -196,8 +194,8 @@ class Subtitle:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

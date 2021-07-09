@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -23,7 +21,7 @@ class LogGroup:
     sensitive_list = []
 
     openapi_types = {
-        'creation_time': 'float',
+        'creation_time': 'int',
         'log_group_name': 'str',
         'log_group_id': 'str',
         'ttl_in_days': 'int'
@@ -59,7 +57,7 @@ class LogGroup:
         创建时间 
 
         :return: The creation_time of this LogGroup.
-        :rtype: float
+        :rtype: int
         """
         return self._creation_time
 
@@ -70,7 +68,7 @@ class LogGroup:
         创建时间 
 
         :param creation_time: The creation_time of this LogGroup.
-        :type: float
+        :type: int
         """
         self._creation_time = creation_time
 
@@ -168,8 +166,8 @@ class LogGroup:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -23,7 +21,7 @@ class CreateSecretResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'auths': 'Certification'
+        'auths': 'dict(str, AuthInfo)'
     }
 
     attribute_map = {
@@ -45,9 +43,10 @@ class CreateSecretResponse(SdkResponse):
     def auths(self):
         """Gets the auths of this CreateSecretResponse.
 
+        认证信息
 
         :return: The auths of this CreateSecretResponse.
-        :rtype: Certification
+        :rtype: dict(str, AuthInfo)
         """
         return self._auths
 
@@ -55,9 +54,10 @@ class CreateSecretResponse(SdkResponse):
     def auths(self, auths):
         """Sets the auths of this CreateSecretResponse.
 
+        认证信息
 
         :param auths: The auths of this CreateSecretResponse.
-        :type: Certification
+        :type: dict(str, AuthInfo)
         """
         self._auths = auths
 
@@ -89,8 +89,8 @@ class CreateSecretResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

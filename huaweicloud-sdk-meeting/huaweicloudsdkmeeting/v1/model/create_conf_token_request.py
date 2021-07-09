@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -27,7 +25,7 @@ class CreateConfTokenRequest:
         'conference_id': 'str',
         'x_conference_authorization': 'str',
         'x_password': 'str',
-        'x_login_type': 'str',
+        'x_login_type': 'int',
         'x_nonce': 'str'
     }
 
@@ -129,10 +127,10 @@ class CreateConfTokenRequest:
     def x_login_type(self):
         """Gets the x_login_type of this CreateConfTokenRequest.
 
-        区分请求类型。 - 0: 终端请求。 - 1: CloudPortal请求。
+        请求类型。 - 1: 业务固定为1。
 
         :return: The x_login_type of this CreateConfTokenRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._x_login_type
 
@@ -140,10 +138,10 @@ class CreateConfTokenRequest:
     def x_login_type(self, x_login_type):
         """Sets the x_login_type of this CreateConfTokenRequest.
 
-        区分请求类型。 - 0: 终端请求。 - 1: CloudPortal请求。
+        请求类型。 - 1: 业务固定为1。
 
         :param x_login_type: The x_login_type of this CreateConfTokenRequest.
-        :type: str
+        :type: int
         """
         self._x_login_type = x_login_type
 
@@ -197,8 +195,8 @@ class CreateConfTokenRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

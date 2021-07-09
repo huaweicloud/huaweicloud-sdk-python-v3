@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -45,7 +43,7 @@ class ShowPreheatingAssetResponse(SdkResponse):
     def preheating_results(self):
         """Gets the preheating_results of this ShowPreheatingAssetResponse.
 
-        预热任务数组<br/> 
+        预热任务数组 
 
         :return: The preheating_results of this ShowPreheatingAssetResponse.
         :rtype: list[PreheatingResult]
@@ -56,7 +54,7 @@ class ShowPreheatingAssetResponse(SdkResponse):
     def preheating_results(self, preheating_results):
         """Sets the preheating_results of this ShowPreheatingAssetResponse.
 
-        预热任务数组<br/> 
+        预热任务数组 
 
         :param preheating_results: The preheating_results of this ShowPreheatingAssetResponse.
         :type: list[PreheatingResult]
@@ -91,8 +89,8 @@ class ShowPreheatingAssetResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

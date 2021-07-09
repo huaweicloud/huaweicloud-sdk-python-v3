@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -32,7 +30,7 @@ class UpdateRoomSettingRequest:
     attribute_map = {
         'x_request_id': 'X-Request-Id',
         'accept_language': 'Accept-Language',
-        'conference_id': 'conferenceId',
+        'conference_id': 'conference_id',
         'body': 'body'
     }
 
@@ -169,8 +167,8 @@ class UpdateRoomSettingRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -23,7 +21,7 @@ class SetOffSiteBackupPolicyRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'policy_para': 'OffSiteBackupPolicy'
+        'policy_para': 'list[OffSiteBackupPolicy]'
     }
 
     attribute_map = {
@@ -44,9 +42,10 @@ class SetOffSiteBackupPolicyRequestBody:
     def policy_para(self):
         """Gets the policy_para of this SetOffSiteBackupPolicyRequestBody.
 
+        备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
 
         :return: The policy_para of this SetOffSiteBackupPolicyRequestBody.
-        :rtype: OffSiteBackupPolicy
+        :rtype: list[OffSiteBackupPolicy]
         """
         return self._policy_para
 
@@ -54,9 +53,10 @@ class SetOffSiteBackupPolicyRequestBody:
     def policy_para(self, policy_para):
         """Sets the policy_para of this SetOffSiteBackupPolicyRequestBody.
 
+        备份策略对象，包括备份类型、备份保留天数、目标区域ID和目标project ID。
 
         :param policy_para: The policy_para of this SetOffSiteBackupPolicyRequestBody.
-        :type: OffSiteBackupPolicy
+        :type: list[OffSiteBackupPolicy]
         """
         self._policy_para = policy_para
 
@@ -88,8 +88,8 @@ class SetOffSiteBackupPolicyRequestBody:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

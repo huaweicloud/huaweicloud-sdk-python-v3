@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -50,7 +48,7 @@ class VodSampleData:
     def storage(self):
         """Gets the storage of this VodSampleData.
 
-        存储空间。 单位：GB。
+        存储空间。  单位：GB。
 
         :return: The storage of this VodSampleData.
         :rtype: float
@@ -61,7 +59,7 @@ class VodSampleData:
     def storage(self, storage):
         """Sets the storage of this VodSampleData.
 
-        存储空间。 单位：GB。
+        存储空间。  单位：GB。
 
         :param storage: The storage of this VodSampleData.
         :type: float
@@ -72,7 +70,7 @@ class VodSampleData:
     def transcode(self):
         """Gets the transcode of this VodSampleData.
 
-        转码时长。 单位：秒。
+        转码时长。  单位：秒。
 
         :return: The transcode of this VodSampleData.
         :rtype: int
@@ -83,7 +81,7 @@ class VodSampleData:
     def transcode(self, transcode):
         """Sets the transcode of this VodSampleData.
 
-        转码时长。 单位：秒。
+        转码时长。  单位：秒。
 
         :param transcode: The transcode of this VodSampleData.
         :type: int
@@ -118,8 +116,8 @@ class VodSampleData:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

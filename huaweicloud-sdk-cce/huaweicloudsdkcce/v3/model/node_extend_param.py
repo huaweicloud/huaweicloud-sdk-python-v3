@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -33,7 +31,6 @@ class NodeExtendParam:
         'is_auto_pay': 'str',
         'docker_lvm_config_override': 'str',
         'docker_base_size': 'int',
-        'offload_node': 'str',
         'public_key': 'str',
         'alpha_cce_pre_install': 'str',
         'alpha_cce_post_install': 'str',
@@ -53,7 +50,6 @@ class NodeExtendParam:
         'is_auto_pay': 'isAutoPay',
         'docker_lvm_config_override': 'DockerLVMConfigOverride',
         'docker_base_size': 'dockerBaseSize',
-        'offload_node': 'offloadNode',
         'public_key': 'publicKey',
         'alpha_cce_pre_install': 'alpha.cce/preInstall',
         'alpha_cce_post_install': 'alpha.cce/postInstall',
@@ -62,7 +58,7 @@ class NodeExtendParam:
         'nic_threshold': 'nicThreshold'
     }
 
-    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, offload_node=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, nic_multiqueue=None, nic_threshold=None):
+    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, nic_multiqueue=None, nic_threshold=None):
         """NodeExtendParam - a model defined in huaweicloud sdk"""
         
         
@@ -77,7 +73,6 @@ class NodeExtendParam:
         self._is_auto_pay = None
         self._docker_lvm_config_override = None
         self._docker_base_size = None
-        self._offload_node = None
         self._public_key = None
         self._alpha_cce_pre_install = None
         self._alpha_cce_post_install = None
@@ -106,8 +101,6 @@ class NodeExtendParam:
             self.docker_lvm_config_override = docker_lvm_config_override
         if docker_base_size is not None:
             self.docker_base_size = docker_base_size
-        if offload_node is not None:
-            self.offload_node = offload_node
         if public_key is not None:
             self.public_key = public_key
         if alpha_cce_pre_install is not None:
@@ -125,7 +118,7 @@ class NodeExtendParam:
     def ecsperformancetype(self):
         """Gets the ecsperformancetype of this NodeExtendParam.
 
-        云服务器规格的分类。裸金属节点无该字段。
+        云服务器规格的分类。响应中会返回此字段。
 
         :return: The ecsperformancetype of this NodeExtendParam.
         :rtype: str
@@ -136,7 +129,7 @@ class NodeExtendParam:
     def ecsperformancetype(self, ecsperformancetype):
         """Sets the ecsperformancetype of this NodeExtendParam.
 
-        云服务器规格的分类。裸金属节点无该字段。
+        云服务器规格的分类。响应中会返回此字段。
 
         :param ecsperformancetype: The ecsperformancetype of this NodeExtendParam.
         :type: str
@@ -342,28 +335,6 @@ class NodeExtendParam:
         self._docker_base_size = docker_base_size
 
     @property
-    def offload_node(self):
-        """Gets the offload_node of this NodeExtendParam.
-
-        是否为CCE Turbo集群节点。
-
-        :return: The offload_node of this NodeExtendParam.
-        :rtype: str
-        """
-        return self._offload_node
-
-    @offload_node.setter
-    def offload_node(self, offload_node):
-        """Sets the offload_node of this NodeExtendParam.
-
-        是否为CCE Turbo集群节点。
-
-        :param offload_node: The offload_node of this NodeExtendParam.
-        :type: str
-        """
-        self._offload_node = offload_node
-
-    @property
     def public_key(self):
         """Gets the public_key of this NodeExtendParam.
 
@@ -523,8 +494,8 @@ class NodeExtendParam:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

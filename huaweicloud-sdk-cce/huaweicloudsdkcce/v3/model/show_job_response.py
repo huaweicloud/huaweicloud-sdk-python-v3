@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -25,9 +23,9 @@ class ShowJobResponse(SdkResponse):
     openapi_types = {
         'kind': 'str',
         'api_version': 'str',
-        'metadata': 'CCEJobMetadata',
-        'spec': 'CCEJobSpec',
-        'status': 'CCEJobStatus'
+        'metadata': 'JobMetadata',
+        'spec': 'JobSpec',
+        'status': 'JobStatus'
     }
 
     attribute_map = {
@@ -111,7 +109,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :return: The metadata of this ShowJobResponse.
-        :rtype: CCEJobMetadata
+        :rtype: JobMetadata
         """
         return self._metadata
 
@@ -121,7 +119,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param metadata: The metadata of this ShowJobResponse.
-        :type: CCEJobMetadata
+        :type: JobMetadata
         """
         self._metadata = metadata
 
@@ -131,7 +129,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :return: The spec of this ShowJobResponse.
-        :rtype: CCEJobSpec
+        :rtype: JobSpec
         """
         return self._spec
 
@@ -141,7 +139,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param spec: The spec of this ShowJobResponse.
-        :type: CCEJobSpec
+        :type: JobSpec
         """
         self._spec = spec
 
@@ -151,7 +149,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :return: The status of this ShowJobResponse.
-        :rtype: CCEJobStatus
+        :rtype: JobStatus
         """
         return self._status
 
@@ -161,7 +159,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param status: The status of this ShowJobResponse.
-        :type: CCEJobStatus
+        :type: JobStatus
         """
         self._status = status
 
@@ -193,8 +191,8 @@ class ShowJobResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

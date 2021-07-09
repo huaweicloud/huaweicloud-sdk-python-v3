@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -70,7 +68,7 @@ class ConfirmAssetUploadReq:
     def status(self):
         """Gets the status of this ConfirmAssetUploadReq.
 
-        上传状态。 取值如下： - CREATED：创建成功。 - FAILED：创建失败。 - CANCELLED：创建取消。
+        上传状态。  取值如下： - CREATED：创建成功。 - FAILED：创建失败。 - CANCELLED：创建取消。
 
         :return: The status of this ConfirmAssetUploadReq.
         :rtype: str
@@ -81,7 +79,7 @@ class ConfirmAssetUploadReq:
     def status(self, status):
         """Sets the status of this ConfirmAssetUploadReq.
 
-        上传状态。 取值如下： - CREATED：创建成功。 - FAILED：创建失败。 - CANCELLED：创建取消。
+        上传状态。  取值如下： - CREATED：创建成功。 - FAILED：创建失败。 - CANCELLED：创建取消。
 
         :param status: The status of this ConfirmAssetUploadReq.
         :type: str
@@ -116,8 +114,8 @@ class ConfirmAssetUploadReq:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

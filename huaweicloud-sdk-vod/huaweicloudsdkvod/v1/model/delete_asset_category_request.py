@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -44,7 +42,7 @@ class DeleteAssetCategoryRequest:
     def id(self):
         """Gets the id of this DeleteAssetCategoryRequest.
 
-        视频分类ID 
+        视频分类ID
 
         :return: The id of this DeleteAssetCategoryRequest.
         :rtype: int
@@ -55,7 +53,7 @@ class DeleteAssetCategoryRequest:
     def id(self, id):
         """Sets the id of this DeleteAssetCategoryRequest.
 
-        视频分类ID 
+        视频分类ID
 
         :param id: The id of this DeleteAssetCategoryRequest.
         :type: int
@@ -90,8 +88,8 @@ class DeleteAssetCategoryRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

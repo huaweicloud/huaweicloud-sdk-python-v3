@@ -81,6 +81,7 @@ from huaweicloudsdkdns.v2.model.ns_records import NsRecords
 from huaweicloudsdkdns.v2.model.page_link import PageLink
 from huaweicloudsdkdns.v2.model.private_name_server import PrivateNameServer
 from huaweicloudsdkdns.v2.model.private_zone_resp import PrivateZoneResp
+from huaweicloudsdkdns.v2.model.public_zone_resp import PublicZoneResp
 from huaweicloudsdkdns.v2.model.query_record_set_with_line_resp import QueryRecordSetWithLineResp
 from huaweicloudsdkdns.v2.model.resource_item import ResourceItem
 from huaweicloudsdkdns.v2.model.restore_ptr_record_request import RestorePtrRecordRequest

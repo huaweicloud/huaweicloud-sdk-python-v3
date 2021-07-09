@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -60,7 +58,7 @@ class ListTakeOverTaskRequest:
     def status(self):
         """Gets the status of this ListTakeOverTaskRequest.
 
-        状态<br/> 
+        任务状态。
 
         :return: The status of this ListTakeOverTaskRequest.
         :rtype: str
@@ -71,7 +69,7 @@ class ListTakeOverTaskRequest:
     def status(self, status):
         """Sets the status of this ListTakeOverTaskRequest.
 
-        状态<br/> 
+        任务状态。
 
         :param status: The status of this ListTakeOverTaskRequest.
         :type: str
@@ -82,7 +80,7 @@ class ListTakeOverTaskRequest:
     def task_id(self):
         """Gets the task_id of this ListTakeOverTaskRequest.
 
-        起始时间.指定task_id时该参数无效<br/> 
+        任务ID。
 
         :return: The task_id of this ListTakeOverTaskRequest.
         :rtype: str
@@ -93,7 +91,7 @@ class ListTakeOverTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this ListTakeOverTaskRequest.
 
-        起始时间.指定task_id时该参数无效<br/> 
+        任务ID。
 
         :param task_id: The task_id of this ListTakeOverTaskRequest.
         :type: str
@@ -104,7 +102,7 @@ class ListTakeOverTaskRequest:
     def page(self):
         """Gets the page of this ListTakeOverTaskRequest.
 
-        分页编号,默认为0。<br/> 
+        分页编号，默认为0。
 
         :return: The page of this ListTakeOverTaskRequest.
         :rtype: int
@@ -115,7 +113,7 @@ class ListTakeOverTaskRequest:
     def page(self, page):
         """Sets the page of this ListTakeOverTaskRequest.
 
-        分页编号,默认为0。<br/> 
+        分页编号，默认为0。
 
         :param page: The page of this ListTakeOverTaskRequest.
         :type: int
@@ -126,7 +124,7 @@ class ListTakeOverTaskRequest:
     def size(self):
         """Gets the size of this ListTakeOverTaskRequest.
 
-        每页记录数。默认10，范围[1,100]<br/> 指定task_id时该参数无效<br/> 
+        每页记录数。  默认10，范围[1,100]，指定task_id时该参数无效。
 
         :return: The size of this ListTakeOverTaskRequest.
         :rtype: int
@@ -137,7 +135,7 @@ class ListTakeOverTaskRequest:
     def size(self, size):
         """Sets the size of this ListTakeOverTaskRequest.
 
-        每页记录数。默认10，范围[1,100]<br/> 指定task_id时该参数无效<br/> 
+        每页记录数。  默认10，范围[1,100]，指定task_id时该参数无效。
 
         :param size: The size of this ListTakeOverTaskRequest.
         :type: int
@@ -172,8 +170,8 @@ class ListTakeOverTaskRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

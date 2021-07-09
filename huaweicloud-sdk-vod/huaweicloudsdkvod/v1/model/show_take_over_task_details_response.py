@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -60,6 +58,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ShowTakeOverTaskDetailsResponse.
 
+        总数。
 
         :return: The total of this ShowTakeOverTaskDetailsResponse.
         :rtype: int
@@ -70,6 +69,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ShowTakeOverTaskDetailsResponse.
 
+        总数。
 
         :param total: The total of this ShowTakeOverTaskDetailsResponse.
         :type: int
@@ -80,6 +80,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
     def task_id(self):
         """Gets the task_id of this ShowTakeOverTaskDetailsResponse.
 
+        任务ID。
 
         :return: The task_id of this ShowTakeOverTaskDetailsResponse.
         :rtype: str
@@ -90,6 +91,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
     def task_id(self, task_id):
         """Sets the task_id of this ShowTakeOverTaskDetailsResponse.
 
+        任务ID。
 
         :param task_id: The task_id of this ShowTakeOverTaskDetailsResponse.
         :type: str
@@ -100,6 +102,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
     def task_status(self):
         """Gets the task_status of this ShowTakeOverTaskDetailsResponse.
 
+        任务状态。
 
         :return: The task_status of this ShowTakeOverTaskDetailsResponse.
         :rtype: str
@@ -110,6 +113,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
     def task_status(self, task_status):
         """Sets the task_status of this ShowTakeOverTaskDetailsResponse.
 
+        任务状态。
 
         :param task_status: The task_status of this ShowTakeOverTaskDetailsResponse.
         :type: str
@@ -120,6 +124,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
     def assets(self):
         """Gets the assets of this ShowTakeOverTaskDetailsResponse.
 
+        媒资信息。
 
         :return: The assets of this ShowTakeOverTaskDetailsResponse.
         :rtype: list[AssetDetails]
@@ -130,6 +135,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
     def assets(self, assets):
         """Sets the assets of this ShowTakeOverTaskDetailsResponse.
 
+        媒资信息。
 
         :param assets: The assets of this ShowTakeOverTaskDetailsResponse.
         :type: list[AssetDetails]
@@ -164,8 +170,8 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

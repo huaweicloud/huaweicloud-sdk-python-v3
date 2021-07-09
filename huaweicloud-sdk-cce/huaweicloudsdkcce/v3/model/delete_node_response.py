@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -26,8 +24,8 @@ class DeleteNodeResponse(SdkResponse):
         'kind': 'str',
         'api_version': 'str',
         'metadata': 'NodeMetadata',
-        'spec': 'V3NodeSpec',
-        'status': 'V3NodeStatus'
+        'spec': 'NodeSpec',
+        'status': 'NodeStatus'
     }
 
     attribute_map = {
@@ -131,7 +129,7 @@ class DeleteNodeResponse(SdkResponse):
 
 
         :return: The spec of this DeleteNodeResponse.
-        :rtype: V3NodeSpec
+        :rtype: NodeSpec
         """
         return self._spec
 
@@ -141,7 +139,7 @@ class DeleteNodeResponse(SdkResponse):
 
 
         :param spec: The spec of this DeleteNodeResponse.
-        :type: V3NodeSpec
+        :type: NodeSpec
         """
         self._spec = spec
 
@@ -151,7 +149,7 @@ class DeleteNodeResponse(SdkResponse):
 
 
         :return: The status of this DeleteNodeResponse.
-        :rtype: V3NodeStatus
+        :rtype: NodeStatus
         """
         return self._status
 
@@ -161,7 +159,7 @@ class DeleteNodeResponse(SdkResponse):
 
 
         :param status: The status of this DeleteNodeResponse.
-        :type: V3NodeStatus
+        :type: NodeStatus
         """
         self._status = status
 
@@ -193,8 +191,8 @@ class DeleteNodeResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

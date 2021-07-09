@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -23,6 +21,7 @@ class ShowCustomerOrderDetailsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_language': 'str',
         'order_id': 'str',
         'limit': 'int',
         'offset': 'int',
@@ -30,23 +29,27 @@ class ShowCustomerOrderDetailsRequest:
     }
 
     attribute_map = {
+        'x_language': 'X-Language',
         'order_id': 'order_id',
         'limit': 'limit',
         'offset': 'offset',
         'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, order_id=None, limit=None, offset=None, indirect_partner_id=None):
+    def __init__(self, x_language=None, order_id=None, limit=None, offset=None, indirect_partner_id=None):
         """ShowCustomerOrderDetailsRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._x_language = None
         self._order_id = None
         self._limit = None
         self._offset = None
         self._indirect_partner_id = None
         self.discriminator = None
 
+        if x_language is not None:
+            self.x_language = x_language
         self.order_id = order_id
         if limit is not None:
             self.limit = limit
@@ -54,6 +57,28 @@ class ShowCustomerOrderDetailsRequest:
             self.offset = offset
         if indirect_partner_id is not None:
             self.indirect_partner_id = indirect_partner_id
+
+    @property
+    def x_language(self):
+        """Gets the x_language of this ShowCustomerOrderDetailsRequest.
+
+        |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US缺省为zh_CN|
+
+        :return: The x_language of this ShowCustomerOrderDetailsRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ShowCustomerOrderDetailsRequest.
+
+        |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US缺省为zh_CN|
+
+        :param x_language: The x_language of this ShowCustomerOrderDetailsRequest.
+        :type: str
+        """
+        self._x_language = x_language
 
     @property
     def order_id(self):
@@ -171,8 +196,8 @@ class ShowCustomerOrderDetailsRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

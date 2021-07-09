@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -26,7 +24,7 @@ class CreateClusterResponse(SdkResponse):
         'kind': 'str',
         'api_version': 'str',
         'metadata': 'ClusterMetadata',
-        'spec': 'V3ClusterSpec',
+        'spec': 'ClusterSpec',
         'status': 'ClusterStatus'
     }
 
@@ -131,7 +129,7 @@ class CreateClusterResponse(SdkResponse):
 
 
         :return: The spec of this CreateClusterResponse.
-        :rtype: V3ClusterSpec
+        :rtype: ClusterSpec
         """
         return self._spec
 
@@ -141,7 +139,7 @@ class CreateClusterResponse(SdkResponse):
 
 
         :param spec: The spec of this CreateClusterResponse.
-        :type: V3ClusterSpec
+        :type: ClusterSpec
         """
         self._spec = spec
 
@@ -193,8 +191,8 @@ class CreateClusterResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

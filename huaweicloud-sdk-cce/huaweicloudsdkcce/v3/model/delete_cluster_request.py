@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -29,7 +27,8 @@ class DeleteClusterRequest:
         'delete_evs': 'str',
         'delete_net': 'str',
         'delete_obs': 'str',
-        'delete_sfs': 'str'
+        'delete_sfs': 'str',
+        'tobedeleted': 'str'
     }
 
     attribute_map = {
@@ -39,10 +38,11 @@ class DeleteClusterRequest:
         'delete_evs': 'delete_evs',
         'delete_net': 'delete_net',
         'delete_obs': 'delete_obs',
-        'delete_sfs': 'delete_sfs'
+        'delete_sfs': 'delete_sfs',
+        'tobedeleted': 'tobedeleted'
     }
 
-    def __init__(self, cluster_id=None, delete_efs=None, delete_eni=None, delete_evs=None, delete_net=None, delete_obs=None, delete_sfs=None):
+    def __init__(self, cluster_id=None, delete_efs=None, delete_eni=None, delete_evs=None, delete_net=None, delete_obs=None, delete_sfs=None, tobedeleted=None):
         """DeleteClusterRequest - a model defined in huaweicloud sdk"""
         
         
@@ -54,6 +54,7 @@ class DeleteClusterRequest:
         self._delete_net = None
         self._delete_obs = None
         self._delete_sfs = None
+        self._tobedeleted = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
@@ -69,6 +70,8 @@ class DeleteClusterRequest:
             self.delete_obs = delete_obs
         if delete_sfs is not None:
             self.delete_sfs = delete_sfs
+        if tobedeleted is not None:
+            self.tobedeleted = tobedeleted
 
     @property
     def cluster_id(self):
@@ -118,7 +121,7 @@ class DeleteClusterRequest:
     def delete_eni(self):
         """Gets the delete_eni of this DeleteClusterRequest.
 
-        是否删除eni ports（原生弹性网卡）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+        是否删除eni ports（原生弹性网卡）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
         :return: The delete_eni of this DeleteClusterRequest.
         :rtype: str
@@ -129,7 +132,7 @@ class DeleteClusterRequest:
     def delete_eni(self, delete_eni):
         """Sets the delete_eni of this DeleteClusterRequest.
 
-        是否删除eni ports（原生弹性网卡）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+        是否删除eni ports（原生弹性网卡）， 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
         :param delete_eni: The delete_eni of this DeleteClusterRequest.
         :type: str
@@ -162,7 +165,7 @@ class DeleteClusterRequest:
     def delete_net(self):
         """Gets the delete_net of this DeleteClusterRequest.
 
-        是否删除elb（弹性负载均衡）等集群Service/Ingress相关资源。 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+        是否删除elb（弹性负载均衡）等集群Service/Ingress相关资源。 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
         :return: The delete_net of this DeleteClusterRequest.
         :rtype: str
@@ -173,7 +176,7 @@ class DeleteClusterRequest:
     def delete_net(self, delete_net):
         """Sets the delete_net of this DeleteClusterRequest.
 
-        是否删除elb（弹性负载均衡）等集群Service/Ingress相关资源。 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程，默认选项)
+        是否删除elb（弹性负载均衡）等集群Service/Ingress相关资源。 枚举取值： - true或block (执行删除流程，失败则阻塞后续流程，默认选项) - try (执行删除流程，失败则忽略，并继续执行后续流程) - false或skip (跳过删除流程)
 
         :param delete_net: The delete_net of this DeleteClusterRequest.
         :type: str
@@ -224,6 +227,28 @@ class DeleteClusterRequest:
         """
         self._delete_sfs = delete_sfs
 
+    @property
+    def tobedeleted(self):
+        """Gets the tobedeleted of this DeleteClusterRequest.
+
+        是否使用包周期集群删除参数预置模式（仅对包周期集群生效）。 需要和其他删除选项参数一起使用，未指定的参数，则使用默认值。 使用该参数，集群不执行真正的删除，仅将本次请求的全部query参数都预置到集群数据库中，用于包周期集群退订时识别用户要删除的资源。 允许重复执行，覆盖预置的删除参数。 枚举取值： - true  (预置模式，仅预置query参数，不执行删除)
+
+        :return: The tobedeleted of this DeleteClusterRequest.
+        :rtype: str
+        """
+        return self._tobedeleted
+
+    @tobedeleted.setter
+    def tobedeleted(self, tobedeleted):
+        """Sets the tobedeleted of this DeleteClusterRequest.
+
+        是否使用包周期集群删除参数预置模式（仅对包周期集群生效）。 需要和其他删除选项参数一起使用，未指定的参数，则使用默认值。 使用该参数，集群不执行真正的删除，仅将本次请求的全部query参数都预置到集群数据库中，用于包周期集群退订时识别用户要删除的资源。 允许重复执行，覆盖预置的删除参数。 枚举取值： - true  (预置模式，仅预置query参数，不执行删除)
+
+        :param tobedeleted: The tobedeleted of this DeleteClusterRequest.
+        :type: str
+        """
+        self._tobedeleted = tobedeleted
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -252,8 +277,8 @@ class DeleteClusterRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

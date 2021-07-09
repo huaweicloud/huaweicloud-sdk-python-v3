@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -26,11 +24,9 @@ class ImageInfo:
         'backup_id': 'str',
         'data_origin': 'str',
         'description': 'str',
-        'image_location': 'str',
         'image_size': 'str',
         'image_source_type': 'str',
         'imagetype': 'str',
-        'is_config_init': 'str',
         'isregistered': 'str',
         'originalimagename': 'str',
         'os_bit': 'str',
@@ -69,7 +65,6 @@ class ImageInfo:
         'virtual_env_type': 'str',
         'virtual_size': 'int',
         'visibility': 'str',
-        'architecture': 'str',
         'support_fc_inject': 'str',
         'hw_firmware_type': 'str',
         'support_arm': 'str',
@@ -77,18 +72,22 @@ class ImageInfo:
         'system__cmkid': 'str',
         'os_feature_list': 'str',
         'account_code': 'str',
-        'hw_vif_multiqueue_enabled': 'str'
+        'hw_vif_multiqueue_enabled': 'str',
+        'is_offshelved': 'str',
+        'lazyloading': 'bool',
+        'root_origin': 'str',
+        'sequence_num': 'str',
+        'active_at': 'str',
+        'support_agent_list': 'str'
     }
 
     attribute_map = {
         'backup_id': '__backup_id',
         'data_origin': '__data_origin',
         'description': '__description',
-        'image_location': '__image_location',
         'image_size': '__image_size',
         'image_source_type': '__image_source_type',
         'imagetype': '__imagetype',
-        'is_config_init': '__is_config_init',
         'isregistered': '__isregistered',
         'originalimagename': '__originalimagename',
         'os_bit': '__os_bit',
@@ -127,7 +126,6 @@ class ImageInfo:
         'virtual_env_type': 'virtual_env_type',
         'virtual_size': 'virtual_size',
         'visibility': 'visibility',
-        'architecture': 'architecture',
         'support_fc_inject': '__support_fc_inject',
         'hw_firmware_type': 'hw_firmware_type',
         'support_arm': '__support_arm',
@@ -135,10 +133,16 @@ class ImageInfo:
         'system__cmkid': '__system__cmkid',
         'os_feature_list': '__os_feature_list',
         'account_code': '__account_code',
-        'hw_vif_multiqueue_enabled': 'hw_vif_multiqueue_enabled'
+        'hw_vif_multiqueue_enabled': 'hw_vif_multiqueue_enabled',
+        'is_offshelved': '__is_offshelved',
+        'lazyloading': '__lazyloading',
+        'root_origin': '__root_origin',
+        'sequence_num': '__sequence_num',
+        'active_at': 'active_at',
+        'support_agent_list': '__support_agent_list'
     }
 
-    def __init__(self, backup_id=None, data_origin=None, description=None, image_location=None, image_size=None, image_source_type=None, imagetype=None, is_config_init=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, architecture=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None):
+    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None, is_offshelved=None, lazyloading=None, root_origin=None, sequence_num=None, active_at=None, support_agent_list=None):
         """ImageInfo - a model defined in huaweicloud sdk"""
         
         
@@ -146,11 +150,9 @@ class ImageInfo:
         self._backup_id = None
         self._data_origin = None
         self._description = None
-        self._image_location = None
         self._image_size = None
         self._image_source_type = None
         self._imagetype = None
-        self._is_config_init = None
         self._isregistered = None
         self._originalimagename = None
         self._os_bit = None
@@ -189,7 +191,6 @@ class ImageInfo:
         self._virtual_env_type = None
         self._virtual_size = None
         self._visibility = None
-        self._architecture = None
         self._support_fc_inject = None
         self._hw_firmware_type = None
         self._support_arm = None
@@ -198,16 +199,20 @@ class ImageInfo:
         self._os_feature_list = None
         self._account_code = None
         self._hw_vif_multiqueue_enabled = None
+        self._is_offshelved = None
+        self._lazyloading = None
+        self._root_origin = None
+        self._sequence_num = None
+        self._active_at = None
+        self._support_agent_list = None
         self.discriminator = None
 
         self.backup_id = backup_id
         self.data_origin = data_origin
         self.description = description
-        self.image_location = image_location
         self.image_size = image_size
         self.image_source_type = image_source_type
         self.imagetype = imagetype
-        self.is_config_init = is_config_init
         self.isregistered = isregistered
         self.originalimagename = originalimagename
         self.os_bit = os_bit
@@ -262,7 +267,6 @@ class ImageInfo:
         self.virtual_env_type = virtual_env_type
         self.virtual_size = virtual_size
         self.visibility = visibility
-        self.architecture = architecture
         if support_fc_inject is not None:
             self.support_fc_inject = support_fc_inject
         if hw_firmware_type is not None:
@@ -279,6 +283,12 @@ class ImageInfo:
             self.account_code = account_code
         if hw_vif_multiqueue_enabled is not None:
             self.hw_vif_multiqueue_enabled = hw_vif_multiqueue_enabled
+        self.is_offshelved = is_offshelved
+        self.lazyloading = lazyloading
+        self.root_origin = root_origin
+        self.sequence_num = sequence_num
+        self.active_at = active_at
+        self.support_agent_list = support_agent_list
 
     @property
     def backup_id(self):
@@ -347,28 +357,6 @@ class ImageInfo:
         self._description = description
 
     @property
-    def image_location(self):
-        """Gets the image_location of this ImageInfo.
-
-        镜像的存储位置
-
-        :return: The image_location of this ImageInfo.
-        :rtype: str
-        """
-        return self._image_location
-
-    @image_location.setter
-    def image_location(self, image_location):
-        """Sets the image_location of this ImageInfo.
-
-        镜像的存储位置
-
-        :param image_location: The image_location of this ImageInfo.
-        :type: str
-        """
-        self._image_location = image_location
-
-    @property
     def image_size(self):
         """Gets the image_size of this ImageInfo.
 
@@ -433,28 +421,6 @@ class ImageInfo:
         :type: str
         """
         self._imagetype = imagetype
-
-    @property
-    def is_config_init(self):
-        """Gets the is_config_init of this ImageInfo.
-
-        是否完成了初始化配置。取值为true或false。如果用户确定完成了初始化配置，则可以设置为true，否则设置为false。默认为false。
-
-        :return: The is_config_init of this ImageInfo.
-        :rtype: str
-        """
-        return self._is_config_init
-
-    @is_config_init.setter
-    def is_config_init(self, is_config_init):
-        """Sets the is_config_init of this ImageInfo.
-
-        是否完成了初始化配置。取值为true或false。如果用户确定完成了初始化配置，则可以设置为true，否则设置为false。默认为false。
-
-        :param is_config_init: The is_config_init of this ImageInfo.
-        :type: str
-        """
-        self._is_config_init = is_config_init
 
     @property
     def isregistered(self):
@@ -1293,28 +1259,6 @@ class ImageInfo:
         self._visibility = visibility
 
     @property
-    def architecture(self):
-        """Gets the architecture of this ImageInfo.
-
-        镜像架构类型。取值包括： x86 arm
-
-        :return: The architecture of this ImageInfo.
-        :rtype: str
-        """
-        return self._architecture
-
-    @architecture.setter
-    def architecture(self, architecture):
-        """Sets the architecture of this ImageInfo.
-
-        镜像架构类型。取值包括： x86 arm
-
-        :param architecture: The architecture of this ImageInfo.
-        :type: str
-        """
-        self._architecture = architecture
-
-    @property
     def support_fc_inject(self):
         """Gets the support_fc_inject of this ImageInfo.
 
@@ -1490,6 +1434,138 @@ class ImageInfo:
         """
         self._hw_vif_multiqueue_enabled = hw_vif_multiqueue_enabled
 
+    @property
+    def is_offshelved(self):
+        """Gets the is_offshelved of this ImageInfo.
+
+        表示当前市场镜像是否下架。true：已下架 false：未下架
+
+        :return: The is_offshelved of this ImageInfo.
+        :rtype: str
+        """
+        return self._is_offshelved
+
+    @is_offshelved.setter
+    def is_offshelved(self, is_offshelved):
+        """Sets the is_offshelved of this ImageInfo.
+
+        表示当前市场镜像是否下架。true：已下架 false：未下架
+
+        :param is_offshelved: The is_offshelved of this ImageInfo.
+        :type: str
+        """
+        self._is_offshelved = is_offshelved
+
+    @property
+    def lazyloading(self):
+        """Gets the lazyloading of this ImageInfo.
+
+        镜像是否支持延迟加载。取值为“True”或“False”。
+
+        :return: The lazyloading of this ImageInfo.
+        :rtype: bool
+        """
+        return self._lazyloading
+
+    @lazyloading.setter
+    def lazyloading(self, lazyloading):
+        """Sets the lazyloading of this ImageInfo.
+
+        镜像是否支持延迟加载。取值为“True”或“False”。
+
+        :param lazyloading: The lazyloading of this ImageInfo.
+        :type: bool
+        """
+        self._lazyloading = lazyloading
+
+    @property
+    def root_origin(self):
+        """Gets the root_origin of this ImageInfo.
+
+        表示当前镜像来源是从外部导入。取值：file。
+
+        :return: The root_origin of this ImageInfo.
+        :rtype: str
+        """
+        return self._root_origin
+
+    @root_origin.setter
+    def root_origin(self, root_origin):
+        """Sets the root_origin of this ImageInfo.
+
+        表示当前镜像来源是从外部导入。取值：file。
+
+        :param root_origin: The root_origin of this ImageInfo.
+        :type: str
+        """
+        self._root_origin = root_origin
+
+    @property
+    def sequence_num(self):
+        """Gets the sequence_num of this ImageInfo.
+
+        表示当前镜像对应云服务器的系统盘插槽位置。目前暂时不用
+
+        :return: The sequence_num of this ImageInfo.
+        :rtype: str
+        """
+        return self._sequence_num
+
+    @sequence_num.setter
+    def sequence_num(self, sequence_num):
+        """Sets the sequence_num of this ImageInfo.
+
+        表示当前镜像对应云服务器的系统盘插槽位置。目前暂时不用
+
+        :param sequence_num: The sequence_num of this ImageInfo.
+        :type: str
+        """
+        self._sequence_num = sequence_num
+
+    @property
+    def active_at(self):
+        """Gets the active_at of this ImageInfo.
+
+        镜像状态变为正常的时间。
+
+        :return: The active_at of this ImageInfo.
+        :rtype: str
+        """
+        return self._active_at
+
+    @active_at.setter
+    def active_at(self, active_at):
+        """Sets the active_at of this ImageInfo.
+
+        镜像状态变为正常的时间。
+
+        :param active_at: The active_at of this ImageInfo.
+        :type: str
+        """
+        self._active_at = active_at
+
+    @property
+    def support_agent_list(self):
+        """Gets the support_agent_list of this ImageInfo.
+
+        镜像是否支持企业主机安全或主机监控。 hss：企业主机安全 ces：主机监控
+
+        :return: The support_agent_list of this ImageInfo.
+        :rtype: str
+        """
+        return self._support_agent_list
+
+    @support_agent_list.setter
+    def support_agent_list(self, support_agent_list):
+        """Sets the support_agent_list of this ImageInfo.
+
+        镜像是否支持企业主机安全或主机监控。 hss：企业主机安全 ces：主机监控
+
+        :param support_agent_list: The support_agent_list of this ImageInfo.
+        :type: str
+        """
+        self._support_agent_list = support_agent_list
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -1518,8 +1594,8 @@ class ImageInfo:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

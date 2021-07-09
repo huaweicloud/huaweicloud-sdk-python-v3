@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -144,7 +142,7 @@ class CreateTakeOverTaskReq:
     def template_group_name(self):
         """Gets the template_group_name of this CreateTakeOverTaskReq.
 
-        转码模板组名称。 若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见转码设置。  **说明：** 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
+        转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见转码设置。  > 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
 
         :return: The template_group_name of this CreateTakeOverTaskReq.
         :rtype: str
@@ -155,7 +153,7 @@ class CreateTakeOverTaskReq:
     def template_group_name(self, template_group_name):
         """Sets the template_group_name of this CreateTakeOverTaskReq.
 
-        转码模板组名称。 若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见转码设置。  **说明：** 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
+        转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见转码设置。  > 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
 
         :param template_group_name: The template_group_name of this CreateTakeOverTaskReq.
         :type: str
@@ -166,7 +164,7 @@ class CreateTakeOverTaskReq:
     def workflow_name(self):
         """Gets the workflow_name of this CreateTakeOverTaskReq.
 
-        工作流名称。 若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
+        工作流名称。  若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
 
         :return: The workflow_name of this CreateTakeOverTaskReq.
         :rtype: str
@@ -177,7 +175,7 @@ class CreateTakeOverTaskReq:
     def workflow_name(self, workflow_name):
         """Sets the workflow_name of this CreateTakeOverTaskReq.
 
-        工作流名称。 若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
+        工作流名称。  若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
 
         :param workflow_name: The workflow_name of this CreateTakeOverTaskReq.
         :type: str
@@ -278,8 +276,8 @@ class CreateTakeOverTaskReq:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -44,7 +42,7 @@ class ListAssetCategoryRequest:
     def id(self):
         """Gets the id of this ListAssetCategoryRequest.
 
-        视频分类ID。 若设置为0，则查询所有一级分类。
+        视频分类ID。  若设置为0，则查询所有一级分类。
 
         :return: The id of this ListAssetCategoryRequest.
         :rtype: int
@@ -55,7 +53,7 @@ class ListAssetCategoryRequest:
     def id(self, id):
         """Sets the id of this ListAssetCategoryRequest.
 
-        视频分类ID。 若设置为0，则查询所有一级分类。
+        视频分类ID。  若设置为0，则查询所有一级分类。
 
         :param id: The id of this ListAssetCategoryRequest.
         :type: int
@@ -90,8 +88,8 @@ class ListAssetCategoryRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

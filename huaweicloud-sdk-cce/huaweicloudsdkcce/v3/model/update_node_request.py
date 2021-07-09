@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -25,7 +23,7 @@ class UpdateNodeRequest:
     openapi_types = {
         'cluster_id': 'str',
         'node_id': 'str',
-        'body': 'CCEClusterNodeInformation'
+        'body': 'ClusterNodeInformation'
     }
 
     attribute_map = {
@@ -99,7 +97,7 @@ class UpdateNodeRequest:
 
 
         :return: The body of this UpdateNodeRequest.
-        :rtype: CCEClusterNodeInformation
+        :rtype: ClusterNodeInformation
         """
         return self._body
 
@@ -109,7 +107,7 @@ class UpdateNodeRequest:
 
 
         :param body: The body of this UpdateNodeRequest.
-        :type: CCEClusterNodeInformation
+        :type: ClusterNodeInformation
         """
         self._body = body
 
@@ -141,8 +139,8 @@ class UpdateNodeRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

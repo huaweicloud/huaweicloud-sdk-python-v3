@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -64,7 +62,7 @@ class VideoTemplateInfo:
     def quality(self):
         """Gets the quality of this VideoTemplateInfo.
 
-        画质<br/> 
+        画质。
 
         :return: The quality of this VideoTemplateInfo.
         :rtype: str
@@ -75,7 +73,7 @@ class VideoTemplateInfo:
     def quality(self, quality):
         """Sets the quality of this VideoTemplateInfo.
 
-        画质<br/> 
+        画质。
 
         :param quality: The quality of this VideoTemplateInfo.
         :type: str
@@ -86,7 +84,7 @@ class VideoTemplateInfo:
     def width(self):
         """Gets the width of this VideoTemplateInfo.
 
-        视频宽度<br/> 
+        视频宽度。
 
         :return: The width of this VideoTemplateInfo.
         :rtype: int
@@ -97,7 +95,7 @@ class VideoTemplateInfo:
     def width(self, width):
         """Sets the width of this VideoTemplateInfo.
 
-        视频宽度<br/> 
+        视频宽度。
 
         :param width: The width of this VideoTemplateInfo.
         :type: int
@@ -108,7 +106,7 @@ class VideoTemplateInfo:
     def height(self):
         """Gets the height of this VideoTemplateInfo.
 
-        视频高度<br/> 
+        视频高度。
 
         :return: The height of this VideoTemplateInfo.
         :rtype: int
@@ -119,7 +117,7 @@ class VideoTemplateInfo:
     def height(self, height):
         """Sets the height of this VideoTemplateInfo.
 
-        视频高度<br/> 
+        视频高度。
 
         :param height: The height of this VideoTemplateInfo.
         :type: int
@@ -130,7 +128,7 @@ class VideoTemplateInfo:
     def bitrate(self):
         """Gets the bitrate of this VideoTemplateInfo.
 
-        码率<br/> 
+        码率。
 
         :return: The bitrate of this VideoTemplateInfo.
         :rtype: int
@@ -141,7 +139,7 @@ class VideoTemplateInfo:
     def bitrate(self, bitrate):
         """Sets the bitrate of this VideoTemplateInfo.
 
-        码率<br/> 
+        码率。
 
         :param bitrate: The bitrate of this VideoTemplateInfo.
         :type: int
@@ -152,7 +150,7 @@ class VideoTemplateInfo:
     def frame_rate(self):
         """Gets the frame_rate of this VideoTemplateInfo.
 
-        帧率（默认为1，1代表自适应，单位是帧每秒）<br/> 
+        帧率（默认为1，1代表自适应，单位是帧每秒）。
 
         :return: The frame_rate of this VideoTemplateInfo.
         :rtype: int
@@ -163,7 +161,7 @@ class VideoTemplateInfo:
     def frame_rate(self, frame_rate):
         """Sets the frame_rate of this VideoTemplateInfo.
 
-        帧率（默认为1，1代表自适应，单位是帧每秒）<br/> 
+        帧率（默认为1，1代表自适应，单位是帧每秒）。
 
         :param frame_rate: The frame_rate of this VideoTemplateInfo.
         :type: int
@@ -198,8 +196,8 @@ class VideoTemplateInfo:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

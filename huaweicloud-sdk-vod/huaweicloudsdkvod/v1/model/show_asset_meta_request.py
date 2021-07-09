@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -117,7 +115,7 @@ class ShowAssetMetaRequest:
     def status(self):
         """Gets the status of this ShowAssetMetaRequest.
 
-        媒资状态。 取值如下： - UNCREATED：未创建（媒资ID不存在 ） - DELETED：已删除 - CANCELLED：上传取消 - SERVER_ERROR：上传失败（点播服务端故障） - UPLOAD_FAILED：上传失败（向OBS上传失败） - CREATING：创建中 - PUBLISHED：已发布 - TRANSCODING：待发布（转码中） - TRANSCODE_FAILED：待发布（转码失败） - TRANSCODE_SUCCEED：待发布（转码成功） - CREATED：待发布（未转码）
+        媒资状态。  取值如下： - UNCREATED：未创建（媒资ID不存在 ） - DELETED：已删除 - CANCELLED：上传取消 - SERVER_ERROR：上传失败（点播服务端故障） - UPLOAD_FAILED：上传失败（向OBS上传失败） - CREATING：创建中 - PUBLISHED：已发布 - TRANSCODING：待发布（转码中） - TRANSCODE_FAILED：待发布（转码失败） - TRANSCODE_SUCCEED：待发布（转码成功） - CREATED：待发布（未转码）
 
         :return: The status of this ShowAssetMetaRequest.
         :rtype: list[str]
@@ -128,7 +126,7 @@ class ShowAssetMetaRequest:
     def status(self, status):
         """Sets the status of this ShowAssetMetaRequest.
 
-        媒资状态。 取值如下： - UNCREATED：未创建（媒资ID不存在 ） - DELETED：已删除 - CANCELLED：上传取消 - SERVER_ERROR：上传失败（点播服务端故障） - UPLOAD_FAILED：上传失败（向OBS上传失败） - CREATING：创建中 - PUBLISHED：已发布 - TRANSCODING：待发布（转码中） - TRANSCODE_FAILED：待发布（转码失败） - TRANSCODE_SUCCEED：待发布（转码成功） - CREATED：待发布（未转码）
+        媒资状态。  取值如下： - UNCREATED：未创建（媒资ID不存在 ） - DELETED：已删除 - CANCELLED：上传取消 - SERVER_ERROR：上传失败（点播服务端故障） - UPLOAD_FAILED：上传失败（向OBS上传失败） - CREATING：创建中 - PUBLISHED：已发布 - TRANSCODING：待发布（转码中） - TRANSCODE_FAILED：待发布（转码失败） - TRANSCODE_SUCCEED：待发布（转码成功） - CREATED：待发布（未转码）
 
         :param status: The status of this ShowAssetMetaRequest.
         :type: list[str]
@@ -139,7 +137,7 @@ class ShowAssetMetaRequest:
     def transcode_status(self):
         """Gets the transcode_status of this ShowAssetMetaRequest.
 
-        转码状态 取值如下： - TRANSCODING：转码中 - TRANSCODE_FAILED：转码失败 - TRANSCODE_SUCCEED：转码成功 - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：等待转码
+        转码状态  取值如下： - TRANSCODING：转码中 - TRANSCODE_FAILED：转码失败 - TRANSCODE_SUCCEED：转码成功 - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：等待转码
 
         :return: The transcode_status of this ShowAssetMetaRequest.
         :rtype: list[str]
@@ -150,7 +148,7 @@ class ShowAssetMetaRequest:
     def transcode_status(self, transcode_status):
         """Sets the transcode_status of this ShowAssetMetaRequest.
 
-        转码状态 取值如下： - TRANSCODING：转码中 - TRANSCODE_FAILED：转码失败 - TRANSCODE_SUCCEED：转码成功 - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：等待转码
+        转码状态  取值如下： - TRANSCODING：转码中 - TRANSCODE_FAILED：转码失败 - TRANSCODE_SUCCEED：转码成功 - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：等待转码
 
         :param transcode_status: The transcode_status of this ShowAssetMetaRequest.
         :type: list[str]
@@ -161,7 +159,7 @@ class ShowAssetMetaRequest:
     def asset_status(self):
         """Gets the asset_status of this ShowAssetMetaRequest.
 
-        媒资状态。 取值如下： - PUBLISHED：已发布 - CREATED：未发布
+        媒资状态。  取值如下： - PUBLISHED：已发布 - CREATED：未发布
 
         :return: The asset_status of this ShowAssetMetaRequest.
         :rtype: list[str]
@@ -172,7 +170,7 @@ class ShowAssetMetaRequest:
     def asset_status(self, asset_status):
         """Sets the asset_status of this ShowAssetMetaRequest.
 
-        媒资状态。 取值如下： - PUBLISHED：已发布 - CREATED：未发布
+        媒资状态。  取值如下： - PUBLISHED：已发布 - CREATED：未发布
 
         :param asset_status: The asset_status of this ShowAssetMetaRequest.
         :type: list[str]
@@ -183,7 +181,7 @@ class ShowAssetMetaRequest:
     def start_time(self):
         """Gets the start_time of this ShowAssetMetaRequest.
 
-        起始时间，查询指定“**asset_id**”时，该参数无效。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        起始时间，查询指定“**asset_id**”时，该参数无效。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :return: The start_time of this ShowAssetMetaRequest.
         :rtype: str
@@ -194,7 +192,7 @@ class ShowAssetMetaRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowAssetMetaRequest.
 
-        起始时间，查询指定“**asset_id**”时，该参数无效。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        起始时间，查询指定“**asset_id**”时，该参数无效。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :param start_time: The start_time of this ShowAssetMetaRequest.
         :type: str
@@ -205,7 +203,7 @@ class ShowAssetMetaRequest:
     def end_time(self):
         """Gets the end_time of this ShowAssetMetaRequest.
 
-        结束时间，查询指定“**asset_id**”时，该参数无效。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        结束时间，查询指定“**asset_id**”时，该参数无效。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :return: The end_time of this ShowAssetMetaRequest.
         :rtype: str
@@ -216,7 +214,7 @@ class ShowAssetMetaRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowAssetMetaRequest.
 
-        结束时间，查询指定“**asset_id**”时，该参数无效。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        结束时间，查询指定“**asset_id**”时，该参数无效。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :param end_time: The end_time of this ShowAssetMetaRequest.
         :type: str
@@ -249,7 +247,7 @@ class ShowAssetMetaRequest:
     def tags(self):
         """Gets the tags of this ShowAssetMetaRequest.
 
-        媒资标签。 单个标签不超过16个字节，最多不超过16个标签。 多个用逗号分隔，UTF8编码。
+        媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
         :return: The tags of this ShowAssetMetaRequest.
         :rtype: str
@@ -260,7 +258,7 @@ class ShowAssetMetaRequest:
     def tags(self, tags):
         """Sets the tags of this ShowAssetMetaRequest.
 
-        媒资标签。 单个标签不超过16个字节，最多不超过16个标签。 多个用逗号分隔，UTF8编码。
+        媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
         :param tags: The tags of this ShowAssetMetaRequest.
         :type: str
@@ -293,7 +291,7 @@ class ShowAssetMetaRequest:
     def page(self):
         """Gets the page of this ShowAssetMetaRequest.
 
-        分页编号，查询指定“asset_id”时，该参数无效。 默认值：0。
+        分页编号，查询指定“asset_id”时，该参数无效。  默认值：0。
 
         :return: The page of this ShowAssetMetaRequest.
         :rtype: int
@@ -304,7 +302,7 @@ class ShowAssetMetaRequest:
     def page(self, page):
         """Sets the page of this ShowAssetMetaRequest.
 
-        分页编号，查询指定“asset_id”时，该参数无效。 默认值：0。
+        分页编号，查询指定“asset_id”时，该参数无效。  默认值：0。
 
         :param page: The page of this ShowAssetMetaRequest.
         :type: int
@@ -315,7 +313,7 @@ class ShowAssetMetaRequest:
     def size(self):
         """Gets the size of this ShowAssetMetaRequest.
 
-        每页记录数，查询指定“**asset_id**”时，该参数无效。 取值范围：[1,100]。 默认值：10。
+        每页记录数，查询指定“**asset_id**”时，该参数无效。  取值范围：[1,100]。  默认值：10。
 
         :return: The size of this ShowAssetMetaRequest.
         :rtype: int
@@ -326,7 +324,7 @@ class ShowAssetMetaRequest:
     def size(self, size):
         """Sets the size of this ShowAssetMetaRequest.
 
-        每页记录数，查询指定“**asset_id**”时，该参数无效。 取值范围：[1,100]。 默认值：10。
+        每页记录数，查询指定“**asset_id**”时，该参数无效。  取值范围：[1,100]。  默认值：10。
 
         :param size: The size of this ShowAssetMetaRequest.
         :type: int
@@ -361,8 +359,8 @@ class ShowAssetMetaRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

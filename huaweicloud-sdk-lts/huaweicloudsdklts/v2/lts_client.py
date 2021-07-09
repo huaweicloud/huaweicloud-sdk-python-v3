@@ -615,26 +615,26 @@ class LtsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def update_log_contents(self, request):
+    def list_logs(self, request):
         """查询日志
 
         该接口用于查询指定日志流下的日志内容。
 
-        :param UpdateLogContentsRequest request
-        :return: UpdateLogContentsResponse
+        :param ListLogsRequest request
+        :return: ListLogsResponse
         """
-        return self.update_log_contents_with_http_info(request)
+        return self.list_logs_with_http_info(request)
 
-    def update_log_contents_with_http_info(self, request):
+    def list_logs_with_http_info(self, request):
         """查询日志
 
         该接口用于查询指定日志流下的日志内容。
 
-        :param UpdateLogContentsRequest request
-        :return: UpdateLogContentsResponse
+        :param ListLogsRequest request
+        :return: ListLogsResponse
         """
 
-        all_params = ['log_group_id', 'log_stream_id', 'update_log_contents_request_body']
+        all_params = ['log_group_id', 'log_stream_id', 'list_logs_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -675,33 +675,33 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='UpdateLogContentsResponse',
+            response_type='ListLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def update_log_contents2(self, request):
+    def list_query_structured_logs(self, request):
         """查询结构化日志
 
         该接口用于查询指定日志流下的结构化日志内容。
 
-        :param UpdateLogContents2Request request
-        :return: UpdateLogContents2Response
+        :param ListQueryStructuredLogsRequest request
+        :return: ListQueryStructuredLogsResponse
         """
-        return self.update_log_contents2_with_http_info(request)
+        return self.list_query_structured_logs_with_http_info(request)
 
-    def update_log_contents2_with_http_info(self, request):
+    def list_query_structured_logs_with_http_info(self, request):
         """查询结构化日志
 
         该接口用于查询指定日志流下的结构化日志内容。
 
-        :param UpdateLogContents2Request request
-        :return: UpdateLogContents2Response
+        :param ListQueryStructuredLogsRequest request
+        :return: ListQueryStructuredLogsResponse
         """
 
-        all_params = ['log_group_id', 'log_stream_id', 'update_log_contents2_request_body']
+        all_params = ['log_group_id', 'log_stream_id', 'list_query_structured_logs_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -742,33 +742,33 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='UpdateLogContents2Response',
+            response_type='ListQueryStructuredLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
 
-    def update_log_contents3(self, request):
+    def list_structured_logs_with_time_range(self, request):
         """查询结构化日志（新版）
 
         该接口用于查询指定日志流下的结构化日志内容（新版）。
 
-        :param UpdateLogContents3Request request
-        :return: UpdateLogContents3Response
+        :param ListStructuredLogsWithTimeRangeRequest request
+        :return: ListStructuredLogsWithTimeRangeResponse
         """
-        return self.update_log_contents3_with_http_info(request)
+        return self.list_structured_logs_with_time_range_with_http_info(request)
 
-    def update_log_contents3_with_http_info(self, request):
+    def list_structured_logs_with_time_range_with_http_info(self, request):
         """查询结构化日志（新版）
 
         该接口用于查询指定日志流下的结构化日志内容（新版）。
 
-        :param UpdateLogContents3Request request
-        :return: UpdateLogContents3Response
+        :param ListStructuredLogsWithTimeRangeRequest request
+        :return: ListStructuredLogsWithTimeRangeResponse
         """
 
-        all_params = ['log_stream_id', 'update_log_contents3_request_body']
+        all_params = ['log_stream_id', 'list_structured_logs_with_time_range_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -807,7 +807,7 @@ class LtsClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='UpdateLogContents3Response',
+            response_type='ListStructuredLogsWithTimeRangeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

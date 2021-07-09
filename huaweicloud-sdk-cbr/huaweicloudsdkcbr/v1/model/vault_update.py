@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -27,7 +25,9 @@ class VaultUpdate:
         'name': 'str',
         'auto_bind': 'bool',
         'bind_rules': 'VaultBindRules',
-        'auto_expand': 'bool'
+        'auto_expand': 'bool',
+        'smn_notify': 'bool',
+        'threshold': 'int'
     }
 
     attribute_map = {
@@ -35,10 +35,12 @@ class VaultUpdate:
         'name': 'name',
         'auto_bind': 'auto_bind',
         'bind_rules': 'bind_rules',
-        'auto_expand': 'auto_expand'
+        'auto_expand': 'auto_expand',
+        'smn_notify': 'smn_notify',
+        'threshold': 'threshold'
     }
 
-    def __init__(self, billing=None, name=None, auto_bind=None, bind_rules=None, auto_expand=None):
+    def __init__(self, billing=None, name=None, auto_bind=None, bind_rules=None, auto_expand=None, smn_notify=None, threshold=None):
         """VaultUpdate - a model defined in huaweicloud sdk"""
         
         
@@ -48,6 +50,8 @@ class VaultUpdate:
         self._auto_bind = None
         self._bind_rules = None
         self._auto_expand = None
+        self._smn_notify = None
+        self._threshold = None
         self.discriminator = None
 
         if billing is not None:
@@ -60,6 +64,10 @@ class VaultUpdate:
             self.bind_rules = bind_rules
         if auto_expand is not None:
             self.auto_expand = auto_expand
+        if smn_notify is not None:
+            self.smn_notify = smn_notify
+        if threshold is not None:
+            self.threshold = threshold
 
     @property
     def billing(self):
@@ -167,6 +175,50 @@ class VaultUpdate:
         """
         self._auto_expand = auto_expand
 
+    @property
+    def smn_notify(self):
+        """Gets the smn_notify of this VaultUpdate.
+
+        发送smn通知开关
+
+        :return: The smn_notify of this VaultUpdate.
+        :rtype: bool
+        """
+        return self._smn_notify
+
+    @smn_notify.setter
+    def smn_notify(self, smn_notify):
+        """Sets the smn_notify of this VaultUpdate.
+
+        发送smn通知开关
+
+        :param smn_notify: The smn_notify of this VaultUpdate.
+        :type: bool
+        """
+        self._smn_notify = smn_notify
+
+    @property
+    def threshold(self):
+        """Gets the threshold of this VaultUpdate.
+
+        存储库容量阈值，存储库已用容量和总容量的百分比超过该值，若smn_notify为开，将发送相关通知。
+
+        :return: The threshold of this VaultUpdate.
+        :rtype: int
+        """
+        return self._threshold
+
+    @threshold.setter
+    def threshold(self, threshold):
+        """Sets the threshold of this VaultUpdate.
+
+        存储库容量阈值，存储库已用容量和总容量的百分比超过该值，若smn_notify为开，将发送相关通知。
+
+        :param threshold: The threshold of this VaultUpdate.
+        :type: int
+        """
+        self._threshold = threshold
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -195,8 +247,8 @@ class VaultUpdate:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

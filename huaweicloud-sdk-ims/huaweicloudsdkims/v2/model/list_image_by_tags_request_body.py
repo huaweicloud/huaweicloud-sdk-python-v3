@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -30,7 +28,8 @@ class ListImageByTagsRequestBody:
         'not_tags_any': 'list[Tags]',
         'limit': 'str',
         'offset': 'str',
-        'matches': 'list[TagKeyValue]'
+        'matches': 'list[TagKeyValue]',
+        'without_any_tag': 'bool'
     }
 
     attribute_map = {
@@ -41,10 +40,11 @@ class ListImageByTagsRequestBody:
         'not_tags_any': 'not_tags_any',
         'limit': 'limit',
         'offset': 'offset',
-        'matches': 'matches'
+        'matches': 'matches',
+        'without_any_tag': 'without_any_tag'
     }
 
-    def __init__(self, action=None, tags=None, tags_any=None, not_tags=None, not_tags_any=None, limit=None, offset=None, matches=None):
+    def __init__(self, action=None, tags=None, tags_any=None, not_tags=None, not_tags_any=None, limit=None, offset=None, matches=None, without_any_tag=None):
         """ListImageByTagsRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -57,6 +57,7 @@ class ListImageByTagsRequestBody:
         self._limit = None
         self._offset = None
         self._matches = None
+        self._without_any_tag = None
         self.discriminator = None
 
         self.action = action
@@ -74,6 +75,8 @@ class ListImageByTagsRequestBody:
             self.offset = offset
         if matches is not None:
             self.matches = matches
+        if without_any_tag is not None:
+            self.without_any_tag = without_any_tag
 
     @property
     def action(self):
@@ -251,6 +254,28 @@ class ListImageByTagsRequestBody:
         """
         self._matches = matches
 
+    @property
+    def without_any_tag(self):
+        """Gets the without_any_tag of this ListImageByTagsRequestBody.
+
+        不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略tag、not_tags、tags_any、not_tags_any字段。
+
+        :return: The without_any_tag of this ListImageByTagsRequestBody.
+        :rtype: bool
+        """
+        return self._without_any_tag
+
+    @without_any_tag.setter
+    def without_any_tag(self, without_any_tag):
+        """Sets the without_any_tag of this ListImageByTagsRequestBody.
+
+        不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略tag、not_tags、tags_any、not_tags_any字段。
+
+        :param without_any_tag: The without_any_tag of this ListImageByTagsRequestBody.
+        :type: bool
+        """
+        self._without_any_tag = without_any_tag
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -279,8 +304,8 @@ class ListImageByTagsRequestBody:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

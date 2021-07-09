@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -36,7 +34,7 @@ class ShowPublicZoneResponse(SdkResponse):
         'created_at': 'str',
         'updated_at': 'str',
         'enterprise_project_id': 'str',
-        'masters': 'str',
+        'masters': 'list[str]',
         'links': 'PageLink',
         'project_id': 'str'
     }
@@ -409,7 +407,7 @@ class ShowPublicZoneResponse(SdkResponse):
         主从模式中，从DNS服务器用以获取DNS信息
 
         :return: The masters of this ShowPublicZoneResponse.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._masters
 
@@ -420,7 +418,7 @@ class ShowPublicZoneResponse(SdkResponse):
         主从模式中，从DNS服务器用以获取DNS信息
 
         :param masters: The masters of this ShowPublicZoneResponse.
-        :type: str
+        :type: list[str]
         """
         self._masters = masters
 
@@ -494,8 +492,8 @@ class ShowPublicZoneResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

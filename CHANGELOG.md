@@ -1,3 +1,143 @@
+# 3.0.51 2021-07-09
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Fix the issue that the data structure of the response parameter `addresses` of the interface `ListBareMetalServers` is incorrectly defined.
+- _Change_
+    - None
+
+### HuaweiCloud SDK CBR
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the response parameters `smn_notify`,`threshold` to the interface `ListProtectable`.
+    - Add the request parameter `add_policy_ids` and the response parameters `without_any_tag`,`smn_notify`,`threshold` to the interface `AssociateVaultPolicy`.
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+    - Support the interfaces `RemoveNode`,`MigrateNode`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request parameter `tobedeleted` to the interface `DeleteCluster`.
+
+### HuaweiCloud SDK CCM
+
+- _Features_
+    - Support the `Cloud Certificate Manager` service.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Change the request parameters `start_time`,`end_time` from optional to required of the interface `ShowTopUrl`, and add the optional value `outside_mainland_china` to the request parameter `domain_name`.
+    - Add the request parameter `service_area` to the interface `ShowDomainItemDetails`.
+
+### HuaweiCloud SDK DDM
+
+- _Features_
+    - Support the `Distributed Database Middleware` service.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK DNS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the type of the response parameters `masters`, `zones` of the interface `CreatePublicZone`: `string`->`array`
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the response parameter `publicip_border_group` to the interfaces `CreateSharedBandwidth`,`ListBandwidths`.
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the response parameters `__root_origin`,`checksum`,`size` to the interfaces `GlanceCreateImageMetadata`.
+    - Remove the request parameters `deleted`, `deleted_at` of the interface `GlanceAddImageMember`, and add the following request parameters:
+        - `__lazyloading`
+        - `__os_feature_list`
+        - `__root_origin`
+        - `__sequence_num`
+        - `__support_agent_list`
+        - `__system__cmkid`
+        - `active_at`
+        - `hw_vif_multiqueue_enabled`
+        - `max_ram`
+        - `__image_location`
+        - `__is_config_init`
+        - `__account_code`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the response parameters `edge_node_ids`, `last_update_time` to the interface `ListRules`.
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the type of the response parameter `context` of the interface `ListStructuredLogsWithTimeRange`: `string`->`array`
+    - Modify the name of the interfaces::
+        - `UpdateLogContents`->`ListLogs`
+        - `UpdateLogContents2`->`ListQueryStructuredLogs`
+        - `UpdateLogContents3`->`ListStructuredLogsWithTimeRange`
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the type of the response parameters `startTime`、`endTime` of the interface `CreateMeeting`: `string`->`integer`
+    - Modify the name of the request parameter of the interface `ShowWebinar`: `conferenceId`->`conference_id`
+
+### HuaweiCloud SDK SWR
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the response parameters `domain_id`,`priority` to the interface `ShowRepository`.
+    - Add the response parameter `template` to the interface `CreateRetention`.
+
 # 3.0.50 2021-06-29
 
 ### HuaweiCloud SDK CCE

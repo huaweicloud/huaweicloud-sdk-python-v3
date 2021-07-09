@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -74,7 +72,7 @@ class Thumbnail:
     def type(self):
         """Gets the type of this Thumbnail.
 
-        截图类型。 取值如下： - time：每次进行截图的间隔时间。 - dots: 按照指定的时间点截图。
+        截图类型。  取值如下： - time：每次进行截图的间隔时间。 - dots: 按照指定的时间点截图。
 
         :return: The type of this Thumbnail.
         :rtype: str
@@ -85,7 +83,7 @@ class Thumbnail:
     def type(self, type):
         """Sets the type of this Thumbnail.
 
-        截图类型。 取值如下： - time：每次进行截图的间隔时间。 - dots: 按照指定的时间点截图。
+        截图类型。  取值如下： - time：每次进行截图的间隔时间。 - dots: 按照指定的时间点截图。
 
         :param type: The type of this Thumbnail.
         :type: str
@@ -96,7 +94,7 @@ class Thumbnail:
     def time(self):
         """Gets the time of this Thumbnail.
 
-        根据时间间隔采样时的时间间隔值。 取值范围：[1,12]之间的整数。 单位：秒。
+        根据时间间隔采样时的时间间隔值。  取值范围：[1,12]之间的整数。  单位：秒。
 
         :return: The time of this Thumbnail.
         :rtype: int
@@ -107,7 +105,7 @@ class Thumbnail:
     def time(self, time):
         """Sets the time of this Thumbnail.
 
-        根据时间间隔采样时的时间间隔值。 取值范围：[1,12]之间的整数。 单位：秒。
+        根据时间间隔采样时的时间间隔值。  取值范围：[1,12]之间的整数。  单位：秒。
 
         :param time: The time of this Thumbnail.
         :type: int
@@ -140,7 +138,7 @@ class Thumbnail:
     def cover_position(self):
         """Gets the cover_position of this Thumbnail.
 
-        该值表示指定第几张截图作为封面(默认值：1)。
+        该值表示指定第几张截图作为封面。  默认值：1。
 
         :return: The cover_position of this Thumbnail.
         :rtype: int
@@ -151,7 +149,7 @@ class Thumbnail:
     def cover_position(self, cover_position):
         """Sets the cover_position of this Thumbnail.
 
-        该值表示指定第几张截图作为封面(默认值：1)。
+        该值表示指定第几张截图作为封面。  默认值：1。
 
         :param cover_position: The cover_position of this Thumbnail.
         :type: int
@@ -162,7 +160,7 @@ class Thumbnail:
     def format(self):
         """Gets the format of this Thumbnail.
 
-        截图文件格式。 取值如下： - 1：jpg。 默认值：1 。
+        截图文件格式。  取值如下： - 1：jpg。  默认值：1 。
 
         :return: The format of this Thumbnail.
         :rtype: int
@@ -173,7 +171,7 @@ class Thumbnail:
     def format(self, format):
         """Sets the format of this Thumbnail.
 
-        截图文件格式。 取值如下： - 1：jpg。 默认值：1 。
+        截图文件格式。  取值如下： - 1：jpg。  默认值：1 。
 
         :param format: The format of this Thumbnail.
         :type: int
@@ -184,7 +182,7 @@ class Thumbnail:
     def aspect_ratio(self):
         """Gets the aspect_ratio of this Thumbnail.
 
-        纵横比，图像缩放方式。 取值如下： - 0：自适应（保持原有宽高比）。 - 1：16:9。 默认值：0。
+        纵横比，图像缩放方式。  取值如下： - 0：自适应（保持原有宽高比）。 - 1：16:9。  默认值：0。
 
         :return: The aspect_ratio of this Thumbnail.
         :rtype: int
@@ -195,7 +193,7 @@ class Thumbnail:
     def aspect_ratio(self, aspect_ratio):
         """Sets the aspect_ratio of this Thumbnail.
 
-        纵横比，图像缩放方式。 取值如下： - 0：自适应（保持原有宽高比）。 - 1：16:9。 默认值：0。
+        纵横比，图像缩放方式。  取值如下： - 0：自适应（保持原有宽高比）。 - 1：16:9。  默认值：0。
 
         :param aspect_ratio: The aspect_ratio of this Thumbnail.
         :type: int
@@ -206,7 +204,7 @@ class Thumbnail:
     def max_length(self):
         """Gets the max_length of this Thumbnail.
 
-        截图最长边的尺寸。 单位：像素。 宽边尺寸按照该尺寸与原始视频像素等比缩放计算。
+        截图最长边的尺寸。  单位：像素。  宽边尺寸按照该尺寸与原始视频像素等比缩放计算。
 
         :return: The max_length of this Thumbnail.
         :rtype: int
@@ -217,7 +215,7 @@ class Thumbnail:
     def max_length(self, max_length):
         """Sets the max_length of this Thumbnail.
 
-        截图最长边的尺寸。 单位：像素。 宽边尺寸按照该尺寸与原始视频像素等比缩放计算。
+        截图最长边的尺寸。  单位：像素。  宽边尺寸按照该尺寸与原始视频像素等比缩放计算。
 
         :param max_length: The max_length of this Thumbnail.
         :type: int
@@ -252,8 +250,8 @@ class Thumbnail:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

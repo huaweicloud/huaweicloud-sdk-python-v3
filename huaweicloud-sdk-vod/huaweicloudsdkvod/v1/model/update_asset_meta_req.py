@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -152,7 +150,7 @@ class UpdateAssetMetaReq:
     def tags(self):
         """Gets the tags of this UpdateAssetMetaReq.
 
-        媒资标签。 单个标签不超过16个字节，最多不超过16个标签。 多个用逗号分隔，UTF-8编码。
+        媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF-8编码。
 
         :return: The tags of this UpdateAssetMetaReq.
         :rtype: str
@@ -163,7 +161,7 @@ class UpdateAssetMetaReq:
     def tags(self, tags):
         """Sets the tags of this UpdateAssetMetaReq.
 
-        媒资标签。 单个标签不超过16个字节，最多不超过16个标签。 多个用逗号分隔，UTF-8编码。
+        媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF-8编码。
 
         :param tags: The tags of this UpdateAssetMetaReq.
         :type: str
@@ -198,8 +196,8 @@ class UpdateAssetMetaReq:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

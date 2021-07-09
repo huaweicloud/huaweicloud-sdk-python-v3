@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -55,7 +53,7 @@ class ListWatermarkTemplateRequest:
     def id(self):
         """Gets the id of this ListWatermarkTemplateRequest.
 
-        水印模板配置id，一次最多10个<br/> 
+        水印模板配置id，一次最多10个。
 
         :return: The id of this ListWatermarkTemplateRequest.
         :rtype: list[str]
@@ -66,7 +64,7 @@ class ListWatermarkTemplateRequest:
     def id(self, id):
         """Sets the id of this ListWatermarkTemplateRequest.
 
-        水印模板配置id，一次最多10个<br/> 
+        水印模板配置id，一次最多10个。
 
         :param id: The id of this ListWatermarkTemplateRequest.
         :type: list[str]
@@ -77,7 +75,7 @@ class ListWatermarkTemplateRequest:
     def page(self):
         """Gets the page of this ListWatermarkTemplateRequest.
 
-        分页编号。默认为0。指定id时该参数无效。<br/> 
+        分页编号。  默认为0。指定id时该参数无效。
 
         :return: The page of this ListWatermarkTemplateRequest.
         :rtype: int
@@ -88,7 +86,7 @@ class ListWatermarkTemplateRequest:
     def page(self, page):
         """Sets the page of this ListWatermarkTemplateRequest.
 
-        分页编号。默认为0。指定id时该参数无效。<br/> 
+        分页编号。  默认为0。指定id时该参数无效。
 
         :param page: The page of this ListWatermarkTemplateRequest.
         :type: int
@@ -99,7 +97,7 @@ class ListWatermarkTemplateRequest:
     def size(self):
         """Gets the size of this ListWatermarkTemplateRequest.
 
-        每页记录数。默认为10，范围[1,100]。指定id时该参数无效。<br/> 
+        每页记录数。  默认为10，范围[1,100]。指定id时该参数无效。
 
         :return: The size of this ListWatermarkTemplateRequest.
         :rtype: int
@@ -110,7 +108,7 @@ class ListWatermarkTemplateRequest:
     def size(self, size):
         """Sets the size of this ListWatermarkTemplateRequest.
 
-        每页记录数。默认为10，范围[1,100]。指定id时该参数无效。<br/> 
+        每页记录数。  默认为10，范围[1,100]。指定id时该参数无效。
 
         :param size: The size of this ListWatermarkTemplateRequest.
         :type: int
@@ -145,8 +143,8 @@ class ListWatermarkTemplateRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

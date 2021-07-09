@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -173,7 +171,7 @@ class TemplateGroup:
     def auto_encrypt(self):
         """Gets the auto_encrypt of this TemplateGroup.
 
-        是否自动加密
+        是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出必须要为HLS。
 
         :return: The auto_encrypt of this TemplateGroup.
         :rtype: int
@@ -184,7 +182,7 @@ class TemplateGroup:
     def auto_encrypt(self, auto_encrypt):
         """Sets the auto_encrypt of this TemplateGroup.
 
-        是否自动加密
+        是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出必须要为HLS。
 
         :param auto_encrypt: The auto_encrypt of this TemplateGroup.
         :type: int
@@ -305,8 +303,8 @@ class TemplateGroup:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

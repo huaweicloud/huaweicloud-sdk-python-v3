@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -99,7 +97,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
     def values(self):
         """Gets the values of this ShowCdnStatisticsResponse.
 
-        采样数据数组。 从start_time开始，每个间隔对应一个采样数据。
+        采样数据数组。  从start_time开始，每个间隔对应一个采样数据。
 
         :return: The values of this ShowCdnStatisticsResponse.
         :rtype: list[int]
@@ -110,7 +108,7 @@ class ShowCdnStatisticsResponse(SdkResponse):
     def values(self, values):
         """Sets the values of this ShowCdnStatisticsResponse.
 
-        采样数据数组。 从start_time开始，每个间隔对应一个采样数据。
+        采样数据数组。  从start_time开始，每个间隔对应一个采样数据。
 
         :param values: The values of this ShowCdnStatisticsResponse.
         :type: list[int]
@@ -145,8 +143,8 @@ class ShowCdnStatisticsResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

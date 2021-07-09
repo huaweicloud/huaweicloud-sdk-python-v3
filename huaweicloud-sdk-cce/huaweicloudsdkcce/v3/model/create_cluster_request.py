@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -23,7 +21,7 @@ class CreateClusterRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'V3Cluster'
+        'body': 'Cluster'
     }
 
     attribute_map = {
@@ -47,7 +45,7 @@ class CreateClusterRequest:
 
 
         :return: The body of this CreateClusterRequest.
-        :rtype: V3Cluster
+        :rtype: Cluster
         """
         return self._body
 
@@ -57,7 +55,7 @@ class CreateClusterRequest:
 
 
         :param body: The body of this CreateClusterRequest.
-        :type: V3Cluster
+        :type: Cluster
         """
         self._body = body
 
@@ -89,8 +87,8 @@ class CreateClusterRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -71,7 +69,7 @@ class CreateCategoryReq:
     def parent_id(self):
         """Gets the parent_id of this CreateCategoryReq.
 
-        父分类ID。 若不填，则默认生成一级分类。 根节点分类ID为0。
+        父分类ID。  若不填，则默认生成一级分类。  根节点分类ID为0。
 
         :return: The parent_id of this CreateCategoryReq.
         :rtype: int
@@ -82,7 +80,7 @@ class CreateCategoryReq:
     def parent_id(self, parent_id):
         """Sets the parent_id of this CreateCategoryReq.
 
-        父分类ID。 若不填，则默认生成一级分类。 根节点分类ID为0。
+        父分类ID。  若不填，则默认生成一级分类。  根节点分类ID为0。
 
         :param parent_id: The parent_id of this CreateCategoryReq.
         :type: int
@@ -117,8 +115,8 @@ class CreateCategoryReq:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

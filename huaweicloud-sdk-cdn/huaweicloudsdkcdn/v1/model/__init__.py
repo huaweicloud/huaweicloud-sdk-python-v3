@@ -50,13 +50,13 @@ from huaweicloudsdkcdn.v1.model.origin_host_request import OriginHostRequest
 from huaweicloudsdkcdn.v1.model.origin_range_body import OriginRangeBody
 from huaweicloudsdkcdn.v1.model.origin_request import OriginRequest
 from huaweicloudsdkcdn.v1.model.preheating_task_request import PreheatingTaskRequest
-from huaweicloudsdkcdn.v1.model.preheating_task_request_preheating_task import PreheatingTaskRequestPreheatingTask
+from huaweicloudsdkcdn.v1.model.preheating_task_request_body import PreheatingTaskRequestBody
 from huaweicloudsdkcdn.v1.model.range_status_request import RangeStatusRequest
 from huaweicloudsdkcdn.v1.model.referer import Referer
 from huaweicloudsdkcdn.v1.model.referer_body import RefererBody
 from huaweicloudsdkcdn.v1.model.referer_rsp import RefererRsp
 from huaweicloudsdkcdn.v1.model.refresh_task_request import RefreshTaskRequest
-from huaweicloudsdkcdn.v1.model.refresh_task_request_refresh_task import RefreshTaskRequestRefreshTask
+from huaweicloudsdkcdn.v1.model.refresh_task_request_body import RefreshTaskRequestBody
 from huaweicloudsdkcdn.v1.model.resource_body import ResourceBody
 from huaweicloudsdkcdn.v1.model.rules import Rules
 from huaweicloudsdkcdn.v1.model.show_black_white_list_request import ShowBlackWhiteListRequest

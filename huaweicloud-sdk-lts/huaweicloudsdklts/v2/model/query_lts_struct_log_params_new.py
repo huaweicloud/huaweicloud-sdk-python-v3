@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -25,7 +23,7 @@ class QueryLTSStructLogParamsNew:
     openapi_types = {
         'query': 'str',
         'format': 'str',
-        'time_range': 'object'
+        'time_range': 'TimeRange'
     }
 
     attribute_map = {
@@ -96,10 +94,9 @@ class QueryLTSStructLogParamsNew:
     def time_range(self):
         """Gets the time_range of this QueryLTSStructLogParamsNew.
 
-        时间范围信息。
 
         :return: The time_range of this QueryLTSStructLogParamsNew.
-        :rtype: object
+        :rtype: TimeRange
         """
         return self._time_range
 
@@ -107,10 +104,9 @@ class QueryLTSStructLogParamsNew:
     def time_range(self, time_range):
         """Sets the time_range of this QueryLTSStructLogParamsNew.
 
-        时间范围信息。
 
         :param time_range: The time_range of this QueryLTSStructLogParamsNew.
-        :type: object
+        :type: TimeRange
         """
         self._time_range = time_range
 
@@ -142,8 +138,8 @@ class QueryLTSStructLogParamsNew:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

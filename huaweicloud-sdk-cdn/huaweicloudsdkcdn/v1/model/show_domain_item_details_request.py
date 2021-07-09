@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -27,6 +25,7 @@ class ShowDomainItemDetailsRequest:
         'start_time': 'int',
         'end_time': 'int',
         'domain_name': 'str',
+        'service_area': 'str',
         'stat_type': 'str'
     }
 
@@ -35,10 +34,11 @@ class ShowDomainItemDetailsRequest:
         'start_time': 'start_time',
         'end_time': 'end_time',
         'domain_name': 'domain_name',
+        'service_area': 'service_area',
         'stat_type': 'stat_type'
     }
 
-    def __init__(self, enterprise_project_id=None, start_time=None, end_time=None, domain_name=None, stat_type=None):
+    def __init__(self, enterprise_project_id=None, start_time=None, end_time=None, domain_name=None, service_area=None, stat_type=None):
         """ShowDomainItemDetailsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +47,7 @@ class ShowDomainItemDetailsRequest:
         self._start_time = None
         self._end_time = None
         self._domain_name = None
+        self._service_area = None
         self._stat_type = None
         self.discriminator = None
 
@@ -55,6 +56,8 @@ class ShowDomainItemDetailsRequest:
         self.start_time = start_time
         self.end_time = end_time
         self.domain_name = domain_name
+        if service_area is not None:
+            self.service_area = service_area
         self.stat_type = stat_type
 
     @property
@@ -146,10 +149,32 @@ class ShowDomainItemDetailsRequest:
         self._domain_name = domain_name
 
     @property
+    def service_area(self):
+        """Gets the service_area of this ShowDomainItemDetailsRequest.
+
+        mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
+
+        :return: The service_area of this ShowDomainItemDetailsRequest.
+        :rtype: str
+        """
+        return self._service_area
+
+    @service_area.setter
+    def service_area(self, service_area):
+        """Sets the service_area of this ShowDomainItemDetailsRequest.
+
+        mainland_china(中国大陆)，outside_mainland_china(中国大陆境外)，默认为mainland_china。
+
+        :param service_area: The service_area of this ShowDomainItemDetailsRequest.
+        :type: str
+        """
+        self._service_area = service_area
+
+    @property
     def stat_type(self):
         """Gets the stat_type of this ShowDomainItemDetailsRequest.
 
-        网络资源消耗： - bw（带宽） - flux（流量） - bs_bw(回源带宽) - bs_flux（回源流量）  访问情况： - req_num（请求总数） - hit_num（请求命中次数） - bs_num(回源总数) - bs_fail_num(回源失败数) - hit_flux（命中流量）
+        网络资源消耗： - bw（带宽） - flux（流量） - bs_bw(回源带宽) - bs_flux（回源流量）  访问情况： - req_num（请求总数） - hit_num（请求命中次数） - bs_num(回源总数) - bs_fail_num(回源失败数) - hit_flux（命中流量）  HTTP状态码（组合指标）： - http_code_2xx(状态码汇总2xx) - http_code_3xx(状态码汇总3xx) - http_code_4xx(状态码汇总4xx) - http_code_5xx(状态码汇总5xx)
 
         :return: The stat_type of this ShowDomainItemDetailsRequest.
         :rtype: str
@@ -160,7 +185,7 @@ class ShowDomainItemDetailsRequest:
     def stat_type(self, stat_type):
         """Sets the stat_type of this ShowDomainItemDetailsRequest.
 
-        网络资源消耗： - bw（带宽） - flux（流量） - bs_bw(回源带宽) - bs_flux（回源流量）  访问情况： - req_num（请求总数） - hit_num（请求命中次数） - bs_num(回源总数) - bs_fail_num(回源失败数) - hit_flux（命中流量）
+        网络资源消耗： - bw（带宽） - flux（流量） - bs_bw(回源带宽) - bs_flux（回源流量）  访问情况： - req_num（请求总数） - hit_num（请求命中次数） - bs_num(回源总数) - bs_fail_num(回源失败数) - hit_flux（命中流量）  HTTP状态码（组合指标）： - http_code_2xx(状态码汇总2xx) - http_code_3xx(状态码汇总3xx) - http_code_4xx(状态码汇总4xx) - http_code_5xx(状态码汇总5xx)
 
         :param stat_type: The stat_type of this ShowDomainItemDetailsRequest.
         :type: str
@@ -195,8 +220,8 @@ class ShowDomainItemDetailsRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

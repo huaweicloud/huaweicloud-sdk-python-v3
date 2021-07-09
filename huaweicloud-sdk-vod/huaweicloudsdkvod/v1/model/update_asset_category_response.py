@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -131,7 +129,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
     def level(self):
         """Gets the level of this UpdateAssetCategoryResponse.
 
-        媒资分类层级。 取值如下： - 1：一级分类层级。 - 2：二级分类层级。 - 3：三级分类层级。
+        媒资分类层级。  取值如下： - 1：一级分类层级。 - 2：二级分类层级。 - 3：三级分类层级。
 
         :return: The level of this UpdateAssetCategoryResponse.
         :rtype: int
@@ -142,7 +140,7 @@ class UpdateAssetCategoryResponse(SdkResponse):
     def level(self, level):
         """Sets the level of this UpdateAssetCategoryResponse.
 
-        媒资分类层级。 取值如下： - 1：一级分类层级。 - 2：二级分类层级。 - 3：三级分类层级。
+        媒资分类层级。  取值如下： - 1：一级分类层级。 - 2：二级分类层级。 - 3：三级分类层级。
 
         :param level: The level of this UpdateAssetCategoryResponse.
         :type: int
@@ -199,8 +197,8 @@ class UpdateAssetCategoryResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

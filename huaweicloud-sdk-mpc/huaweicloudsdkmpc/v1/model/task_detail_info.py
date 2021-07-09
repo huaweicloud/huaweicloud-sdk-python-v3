@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -31,7 +29,6 @@ class TaskDetailInfo:
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
         'user_data': 'str',
-        'audit_report': 'AuditReport',
         'error_code': 'str',
         'description': 'str',
         'media_detail': 'MediaDetail',
@@ -47,14 +44,13 @@ class TaskDetailInfo:
         'input': 'input',
         'output': 'output',
         'user_data': 'user_data',
-        'audit_report': 'audit_report',
         'error_code': 'error_code',
         'description': 'description',
         'media_detail': 'media_detail',
         'xcode_error': 'xcode_error'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, input=None, output=None, user_data=None, audit_report=None, error_code=None, description=None, media_detail=None, xcode_error=None):
+    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, input=None, output=None, user_data=None, error_code=None, description=None, media_detail=None, xcode_error=None):
         """TaskDetailInfo - a model defined in huaweicloud sdk"""
         
         
@@ -67,7 +63,6 @@ class TaskDetailInfo:
         self._input = None
         self._output = None
         self._user_data = None
-        self._audit_report = None
         self._error_code = None
         self._description = None
         self._media_detail = None
@@ -90,8 +85,6 @@ class TaskDetailInfo:
             self.output = output
         if user_data is not None:
             self.user_data = user_data
-        if audit_report is not None:
-            self.audit_report = audit_report
         if error_code is not None:
             self.error_code = error_code
         if description is not None:
@@ -274,26 +267,6 @@ class TaskDetailInfo:
         self._user_data = user_data
 
     @property
-    def audit_report(self):
-        """Gets the audit_report of this TaskDetailInfo.
-
-
-        :return: The audit_report of this TaskDetailInfo.
-        :rtype: AuditReport
-        """
-        return self._audit_report
-
-    @audit_report.setter
-    def audit_report(self, audit_report):
-        """Sets the audit_report of this TaskDetailInfo.
-
-
-        :param audit_report: The audit_report of this TaskDetailInfo.
-        :type: AuditReport
-        """
-        self._audit_report = audit_report
-
-    @property
     def error_code(self):
         """Gets the error_code of this TaskDetailInfo.
 
@@ -405,8 +378,8 @@ class TaskDetailInfo:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

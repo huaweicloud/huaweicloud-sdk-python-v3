@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -60,7 +58,7 @@ class PlayInfo:
     def play_type(self):
         """Gets the play_type of this PlayInfo.
 
-        播放协议类型。 取值如下： - hls - dash - mp4
+        播放协议类型。  取值如下： - hls - dash - mp4
 
         :return: The play_type of this PlayInfo.
         :rtype: str
@@ -71,7 +69,7 @@ class PlayInfo:
     def play_type(self, play_type):
         """Sets the play_type of this PlayInfo.
 
-        播放协议类型。 取值如下： - hls - dash - mp4
+        播放协议类型。  取值如下： - hls - dash - mp4
 
         :param play_type: The play_type of this PlayInfo.
         :type: str
@@ -104,7 +102,7 @@ class PlayInfo:
     def encrypted(self):
         """Gets the encrypted of this PlayInfo.
 
-        标记流是否已被加密。 取值如下： - 0：表示未加密。 - 1：表示已被加密。 默认值：0。
+        标记流是否已被加密。  取值如下： - 0：表示未加密。 - 1：表示已被加密。  默认值：0。
 
         :return: The encrypted of this PlayInfo.
         :rtype: int
@@ -115,7 +113,7 @@ class PlayInfo:
     def encrypted(self, encrypted):
         """Sets the encrypted of this PlayInfo.
 
-        标记流是否已被加密。 取值如下： - 0：表示未加密。 - 1：表示已被加密。 默认值：0。
+        标记流是否已被加密。  取值如下： - 0：表示未加密。 - 1：表示已被加密。  默认值：0。
 
         :param encrypted: The encrypted of this PlayInfo.
         :type: int
@@ -170,8 +168,8 @@ class PlayInfo:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

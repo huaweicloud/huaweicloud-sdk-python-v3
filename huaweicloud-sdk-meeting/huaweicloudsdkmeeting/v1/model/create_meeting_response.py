@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -23,45 +21,45 @@ class CreateMeetingResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'data': 'list[ConferenceInfo]'
+        'body': 'list[ConferenceInfo]'
     }
 
     attribute_map = {
-        'data': 'data'
+        'body': 'body'
     }
 
-    def __init__(self, data=None):
+    def __init__(self, body=None):
         """CreateMeetingResponse - a model defined in huaweicloud sdk"""
         
         super(CreateMeetingResponse, self).__init__()
 
-        self._data = None
+        self._body = None
         self.discriminator = None
 
-        if data is not None:
-            self.data = data
+        if body is not None:
+            self.body = body
 
     @property
-    def data(self):
-        """Gets the data of this CreateMeetingResponse.
+    def body(self):
+        """Gets the body of this CreateMeetingResponse.
 
-        会议信息
+        会议信息列表
 
-        :return: The data of this CreateMeetingResponse.
+        :return: The body of this CreateMeetingResponse.
         :rtype: list[ConferenceInfo]
         """
-        return self._data
+        return self._body
 
-    @data.setter
-    def data(self, data):
-        """Sets the data of this CreateMeetingResponse.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this CreateMeetingResponse.
 
-        会议信息
+        会议信息列表
 
-        :param data: The data of this CreateMeetingResponse.
+        :param body: The body of this CreateMeetingResponse.
         :type: list[ConferenceInfo]
         """
-        self._data = data
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -91,8 +89,8 @@ class CreateMeetingResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

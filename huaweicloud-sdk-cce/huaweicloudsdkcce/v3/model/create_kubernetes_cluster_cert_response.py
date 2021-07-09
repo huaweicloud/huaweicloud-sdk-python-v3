@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -29,7 +27,8 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         'clusters': 'list[Clusters]',
         'users': 'list[Users]',
         'contexts': 'list[Contexts]',
-        'current_context': 'str'
+        'current_context': 'str',
+        'port_id': 'str'
     }
 
     attribute_map = {
@@ -39,10 +38,11 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         'clusters': 'clusters',
         'users': 'users',
         'contexts': 'contexts',
-        'current_context': 'current-context'
+        'current_context': 'current-context',
+        'port_id': 'Port-ID'
     }
 
-    def __init__(self, kind=None, api_version=None, preferences=None, clusters=None, users=None, contexts=None, current_context=None):
+    def __init__(self, kind=None, api_version=None, preferences=None, clusters=None, users=None, contexts=None, current_context=None, port_id=None):
         """CreateKubernetesClusterCertResponse - a model defined in huaweicloud sdk"""
         
         super(CreateKubernetesClusterCertResponse, self).__init__()
@@ -54,6 +54,7 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         self._users = None
         self._contexts = None
         self._current_context = None
+        self._port_id = None
         self.discriminator = None
 
         if kind is not None:
@@ -70,6 +71,8 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
             self.contexts = contexts
         if current_context is not None:
             self.current_context = current_context
+        if port_id is not None:
+            self.port_id = port_id
 
     @property
     def kind(self):
@@ -225,6 +228,26 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         """
         self._current_context = current_context
 
+    @property
+    def port_id(self):
+        """Gets the port_id of this CreateKubernetesClusterCertResponse.
+
+
+        :return: The port_id of this CreateKubernetesClusterCertResponse.
+        :rtype: str
+        """
+        return self._port_id
+
+    @port_id.setter
+    def port_id(self, port_id):
+        """Sets the port_id of this CreateKubernetesClusterCertResponse.
+
+
+        :param port_id: The port_id of this CreateKubernetesClusterCertResponse.
+        :type: str
+        """
+        self._port_id = port_id
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -253,8 +276,8 @@ class CreateKubernetesClusterCertResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -50,6 +48,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
     def templates(self):
         """Gets the templates of this ListWatermarkTemplateResponse.
 
+        水印模板信息。
 
         :return: The templates of this ListWatermarkTemplateResponse.
         :rtype: list[WatermarkTemplate]
@@ -60,6 +59,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
     def templates(self, templates):
         """Sets the templates of this ListWatermarkTemplateResponse.
 
+        水印模板信息。
 
         :param templates: The templates of this ListWatermarkTemplateResponse.
         :type: list[WatermarkTemplate]
@@ -70,6 +70,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListWatermarkTemplateResponse.
 
+        总数。
 
         :return: The total of this ListWatermarkTemplateResponse.
         :rtype: int
@@ -80,6 +81,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListWatermarkTemplateResponse.
 
+        总数。
 
         :param total: The total of this ListWatermarkTemplateResponse.
         :type: int
@@ -114,8 +116,8 @@ class ListWatermarkTemplateResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

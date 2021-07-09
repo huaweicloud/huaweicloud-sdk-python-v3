@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -76,7 +74,7 @@ class Referer:
     def referer_list(self):
         """Gets the referer_list of this Referer.
 
-        referer防盗链信息（ip或者域名，以;分隔）。当设置防盗链时，此项必填。
+        请输入域名或IP地址，以“;”进行分割，域名、IP地址可以混合输入，支持泛域名添加。输入的域名、IP地址总数不超过100个。当设置防盗链时，此项必填。
 
         :return: The referer_list of this Referer.
         :rtype: str
@@ -87,7 +85,7 @@ class Referer:
     def referer_list(self, referer_list):
         """Sets the referer_list of this Referer.
 
-        referer防盗链信息（ip或者域名，以;分隔）。当设置防盗链时，此项必填。
+        请输入域名或IP地址，以“;”进行分割，域名、IP地址可以混合输入，支持泛域名添加。输入的域名、IP地址总数不超过100个。当设置防盗链时，此项必填。
 
         :param referer_list: The referer_list of this Referer.
         :type: str
@@ -144,8 +142,8 @@ class Referer:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

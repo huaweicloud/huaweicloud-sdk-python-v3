@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -130,7 +128,7 @@ class CreatePublicipBandwidthOption:
     def share_type(self):
         """Gets the share_type of this CreatePublicipBandwidthOption.
 
-        功能说明：带宽类型 取值范围：PER，WHOLE。 约束：该字段为WHOLE时，必须指定带宽ID。
+        功能说明：带宽类型 取值范围：PER，WHOLE(PER为独占带宽，WHOLE是共享带宽)。 约束：该字段为WHOLE时，必须指定带宽ID。
 
         :return: The share_type of this CreatePublicipBandwidthOption.
         :rtype: str
@@ -141,7 +139,7 @@ class CreatePublicipBandwidthOption:
     def share_type(self, share_type):
         """Sets the share_type of this CreatePublicipBandwidthOption.
 
-        功能说明：带宽类型 取值范围：PER，WHOLE。 约束：该字段为WHOLE时，必须指定带宽ID。
+        功能说明：带宽类型 取值范围：PER，WHOLE(PER为独占带宽，WHOLE是共享带宽)。 约束：该字段为WHOLE时，必须指定带宽ID。
 
         :param share_type: The share_type of this CreatePublicipBandwidthOption.
         :type: str
@@ -198,8 +196,8 @@ class CreatePublicipBandwidthOption:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

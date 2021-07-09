@@ -7,7 +7,6 @@ from huaweicloudsdkswr.v2.swr_client import SwrClient
 from huaweicloudsdkswr.v2.swr_async_client import SwrAsyncClient
 # import models into sdk package
 from huaweicloudsdkswr.v2.model.auth_info import AuthInfo
-from huaweicloudsdkswr.v2.model.certification import Certification
 from huaweicloudsdkswr.v2.model.create_image_sync_repo_request import CreateImageSyncRepoRequest
 from huaweicloudsdkswr.v2.model.create_image_sync_repo_request_body import CreateImageSyncRepoRequestBody
 from huaweicloudsdkswr.v2.model.create_image_sync_repo_response import CreateImageSyncRepoResponse

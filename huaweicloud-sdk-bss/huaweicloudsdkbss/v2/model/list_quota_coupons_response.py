@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -72,7 +70,7 @@ class ListQuotaCouponsResponse(SdkResponse):
     def quotas(self):
         """Gets the quotas of this ListQuotaCouponsResponse.
 
-        额度记录列表。 具体请参见表2。
+        额度记录列表。 具体请参见表1。
 
         :return: The quotas of this ListQuotaCouponsResponse.
         :rtype: list[CouponQuotaV2]
@@ -83,7 +81,7 @@ class ListQuotaCouponsResponse(SdkResponse):
     def quotas(self, quotas):
         """Sets the quotas of this ListQuotaCouponsResponse.
 
-        额度记录列表。 具体请参见表2。
+        额度记录列表。 具体请参见表1。
 
         :param quotas: The quotas of this ListQuotaCouponsResponse.
         :type: list[CouponQuotaV2]
@@ -118,8 +116,8 @@ class ListQuotaCouponsResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

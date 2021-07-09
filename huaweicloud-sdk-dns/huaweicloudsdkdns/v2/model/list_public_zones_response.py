@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -24,7 +22,7 @@ class ListPublicZonesResponse(SdkResponse):
 
     openapi_types = {
         'links': 'PageLink',
-        'zones': 'str',
+        'zones': 'list[PublicZoneResp]',
         'metadata': 'Metedata'
     }
 
@@ -75,9 +73,10 @@ class ListPublicZonesResponse(SdkResponse):
     def zones(self):
         """Gets the zones of this ListPublicZonesResponse.
 
+        查询公网Zone的列表响应。
 
         :return: The zones of this ListPublicZonesResponse.
-        :rtype: str
+        :rtype: list[PublicZoneResp]
         """
         return self._zones
 
@@ -85,9 +84,10 @@ class ListPublicZonesResponse(SdkResponse):
     def zones(self, zones):
         """Sets the zones of this ListPublicZonesResponse.
 
+        查询公网Zone的列表响应。
 
         :param zones: The zones of this ListPublicZonesResponse.
-        :type: str
+        :type: list[PublicZoneResp]
         """
         self._zones = zones
 
@@ -139,8 +139,8 @@ class ListPublicZonesResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

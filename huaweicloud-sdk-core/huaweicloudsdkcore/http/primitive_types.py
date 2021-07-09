@@ -19,6 +19,7 @@
 """
 
 import datetime
+import decimal
 
 import six
 
@@ -33,4 +34,5 @@ native_types_mapping = {
     'date': datetime.date,
     'datetime': datetime.datetime,
     'object': object,
+    'decimal.Decimal': decimal.Decimal
 }

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -23,36 +21,58 @@ class Rule:
     sensitive_list = []
 
     openapi_types = {
+        'template': 'str',
         'params': 'object',
-        'tag_selectors': 'list[TagSelector]',
-        'template': 'str'
+        'tag_selectors': 'list[TagSelector]'
     }
 
     attribute_map = {
+        'template': 'template',
         'params': 'params',
-        'tag_selectors': 'tag_selectors',
-        'template': 'template'
+        'tag_selectors': 'tag_selectors'
     }
 
-    def __init__(self, params=None, tag_selectors=None, template=None):
+    def __init__(self, template=None, params=None, tag_selectors=None):
         """Rule - a model defined in huaweicloud sdk"""
         
         
 
+        self._template = None
         self._params = None
         self._tag_selectors = None
-        self._template = None
         self.discriminator = None
 
+        self.template = template
         self.params = params
         self.tag_selectors = tag_selectors
-        self.template = template
+
+    @property
+    def template(self):
+        """Gets the template of this Rule.
+
+        回收类型，date_rule、tag_rule
+
+        :return: The template of this Rule.
+        :rtype: str
+        """
+        return self._template
+
+    @template.setter
+    def template(self, template):
+        """Sets the template of this Rule.
+
+        回收类型，date_rule、tag_rule
+
+        :param template: The template of this Rule.
+        :type: str
+        """
+        self._template = template
 
     @property
     def params(self):
         """Gets the params of this Rule.
 
-        template是date_rule时，设置params[\"days\"] template是tag_rule时，设置params[\"num\"] 
+        template是date_rule时，设置params为{\"days\": \"xxx\"} template是tag_rule时，设置params为{\"num\": \"xxx\"} 
 
         :return: The params of this Rule.
         :rtype: object
@@ -63,7 +83,7 @@ class Rule:
     def params(self, params):
         """Sets the params of this Rule.
 
-        template是date_rule时，设置params[\"days\"] template是tag_rule时，设置params[\"num\"] 
+        template是date_rule时，设置params为{\"days\": \"xxx\"} template是tag_rule时，设置params为{\"num\": \"xxx\"} 
 
         :param params: The params of this Rule.
         :type: object
@@ -91,28 +111,6 @@ class Rule:
         :type: list[TagSelector]
         """
         self._tag_selectors = tag_selectors
-
-    @property
-    def template(self):
-        """Gets the template of this Rule.
-
-        回收类型，date_rule、tag_rule
-
-        :return: The template of this Rule.
-        :rtype: str
-        """
-        return self._template
-
-    @template.setter
-    def template(self, template):
-        """Sets the template of this Rule.
-
-        回收类型，date_rule、tag_rule
-
-        :param template: The template of this Rule.
-        :type: str
-        """
-        self._template = template
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -142,8 +140,8 @@ class Rule:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

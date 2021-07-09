@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -35,6 +33,8 @@ class Vault:
         'auto_bind': 'bool',
         'bind_rules': 'VaultBindRules',
         'auto_expand': 'bool',
+        'smn_notify': 'bool',
+        'threshold': 'int',
         'user_id': 'str',
         'created_at': 'str'
     }
@@ -52,11 +52,13 @@ class Vault:
         'auto_bind': 'auto_bind',
         'bind_rules': 'bind_rules',
         'auto_expand': 'auto_expand',
+        'smn_notify': 'smn_notify',
+        'threshold': 'threshold',
         'user_id': 'user_id',
         'created_at': 'created_at'
     }
 
-    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None, user_id=None, created_at=None):
+    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None, smn_notify=None, threshold=None, user_id=None, created_at=None):
         """Vault - a model defined in huaweicloud sdk"""
         
         
@@ -73,6 +75,8 @@ class Vault:
         self._auto_bind = None
         self._bind_rules = None
         self._auto_expand = None
+        self._smn_notify = None
+        self._threshold = None
         self._user_id = None
         self._created_at = None
         self.discriminator = None
@@ -95,6 +99,10 @@ class Vault:
             self.bind_rules = bind_rules
         if auto_expand is not None:
             self.auto_expand = auto_expand
+        if smn_notify is not None:
+            self.smn_notify = smn_notify
+        if threshold is not None:
+            self.threshold = threshold
         if user_id is not None:
             self.user_id = user_id
         if created_at is not None:
@@ -361,6 +369,50 @@ class Vault:
         self._auto_expand = auto_expand
 
     @property
+    def smn_notify(self):
+        """Gets the smn_notify of this Vault.
+
+        存储库smn消息通知开关
+
+        :return: The smn_notify of this Vault.
+        :rtype: bool
+        """
+        return self._smn_notify
+
+    @smn_notify.setter
+    def smn_notify(self, smn_notify):
+        """Sets the smn_notify of this Vault.
+
+        存储库smn消息通知开关
+
+        :param smn_notify: The smn_notify of this Vault.
+        :type: bool
+        """
+        self._smn_notify = smn_notify
+
+    @property
+    def threshold(self):
+        """Gets the threshold of this Vault.
+
+        存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
+
+        :return: The threshold of this Vault.
+        :rtype: int
+        """
+        return self._threshold
+
+    @threshold.setter
+    def threshold(self, threshold):
+        """Sets the threshold of this Vault.
+
+        存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
+
+        :param threshold: The threshold of this Vault.
+        :type: int
+        """
+        self._threshold = threshold
+
+    @property
     def user_id(self):
         """Gets the user_id of this Vault.
 
@@ -432,8 +484,8 @@ class Vault:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

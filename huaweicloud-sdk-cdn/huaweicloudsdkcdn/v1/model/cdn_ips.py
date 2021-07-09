@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -87,7 +85,7 @@ class CdnIps:
     def belongs(self):
         """Gets the belongs of this CdnIps.
 
-        是否是华为云CDN节点。
+        是否是华为云CDN节点。（true:是华为云CDN节点，false:不是华为云CDN节点）
 
         :return: The belongs of this CdnIps.
         :rtype: bool
@@ -98,7 +96,7 @@ class CdnIps:
     def belongs(self, belongs):
         """Sets the belongs of this CdnIps.
 
-        是否是华为云CDN节点。
+        是否是华为云CDN节点。（true:是华为云CDN节点，false:不是华为云CDN节点）
 
         :param belongs: The belongs of this CdnIps.
         :type: bool
@@ -109,7 +107,7 @@ class CdnIps:
     def region(self):
         """Gets the region of this CdnIps.
 
-        IP归属地。
+        IP归属地省份。（Unknown:表示未知归属地）
 
         :return: The region of this CdnIps.
         :rtype: str
@@ -120,7 +118,7 @@ class CdnIps:
     def region(self, region):
         """Sets the region of this CdnIps.
 
-        IP归属地。
+        IP归属地省份。（Unknown:表示未知归属地）
 
         :param region: The region of this CdnIps.
         :type: str
@@ -131,7 +129,7 @@ class CdnIps:
     def isp(self):
         """Gets the isp of this CdnIps.
 
-        运营商。
+        运营商名称。如果IP归属地未知，该字段返回null。
 
         :return: The isp of this CdnIps.
         :rtype: str
@@ -142,7 +140,7 @@ class CdnIps:
     def isp(self, isp):
         """Sets the isp of this CdnIps.
 
-        运营商。
+        运营商名称。如果IP归属地未知，该字段返回null。
 
         :param isp: The isp of this CdnIps.
         :type: str
@@ -153,7 +151,7 @@ class CdnIps:
     def platform(self):
         """Gets the platform of this CdnIps.
 
-        平台。
+        平台。如果IP归属地未知，该字段返回null。
 
         :return: The platform of this CdnIps.
         :rtype: str
@@ -164,7 +162,7 @@ class CdnIps:
     def platform(self, platform):
         """Sets the platform of this CdnIps.
 
-        平台。
+        平台。如果IP归属地未知，该字段返回null。
 
         :param platform: The platform of this CdnIps.
         :type: str
@@ -199,8 +197,8 @@ class CdnIps:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

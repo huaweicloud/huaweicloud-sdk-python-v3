@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -30,7 +28,9 @@ class RuleResponse:
         'actions': 'list[RuleAction]',
         'rule_type': 'str',
         'status': 'str',
-        'app_id': 'str'
+        'app_id': 'str',
+        'edge_node_ids': 'list[str]',
+        'last_update_time': 'str'
     }
 
     attribute_map = {
@@ -41,10 +41,12 @@ class RuleResponse:
         'actions': 'actions',
         'rule_type': 'rule_type',
         'status': 'status',
-        'app_id': 'app_id'
+        'app_id': 'app_id',
+        'edge_node_ids': 'edge_node_ids',
+        'last_update_time': 'last_update_time'
     }
 
-    def __init__(self, rule_id=None, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None):
+    def __init__(self, rule_id=None, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None, edge_node_ids=None, last_update_time=None):
         """RuleResponse - a model defined in huaweicloud sdk"""
         
         
@@ -57,6 +59,8 @@ class RuleResponse:
         self._rule_type = None
         self._status = None
         self._app_id = None
+        self._edge_node_ids = None
+        self._last_update_time = None
         self.discriminator = None
 
         if rule_id is not None:
@@ -71,6 +75,10 @@ class RuleResponse:
             self.status = status
         if app_id is not None:
             self.app_id = app_id
+        if edge_node_ids is not None:
+            self.edge_node_ids = edge_node_ids
+        if last_update_time is not None:
+            self.last_update_time = last_update_time
 
     @property
     def rule_id(self):
@@ -246,6 +254,50 @@ class RuleResponse:
         """
         self._app_id = app_id
 
+    @property
+    def edge_node_ids(self):
+        """Gets the edge_node_ids of this RuleResponse.
+
+        归属边缘侧节点设备ID列表。
+
+        :return: The edge_node_ids of this RuleResponse.
+        :rtype: list[str]
+        """
+        return self._edge_node_ids
+
+    @edge_node_ids.setter
+    def edge_node_ids(self, edge_node_ids):
+        """Sets the edge_node_ids of this RuleResponse.
+
+        归属边缘侧节点设备ID列表。
+
+        :param edge_node_ids: The edge_node_ids of this RuleResponse.
+        :type: list[str]
+        """
+        self._edge_node_ids = edge_node_ids
+
+    @property
+    def last_update_time(self):
+        """Gets the last_update_time of this RuleResponse.
+
+        规则最后更新时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
+
+        :return: The last_update_time of this RuleResponse.
+        :rtype: str
+        """
+        return self._last_update_time
+
+    @last_update_time.setter
+    def last_update_time(self, last_update_time):
+        """Sets the last_update_time of this RuleResponse.
+
+        规则最后更新时间，使用UTC时区，格式：yyyyMMdd'T'HHmmss'Z'。
+
+        :param last_update_time: The last_update_time of this RuleResponse.
+        :type: str
+        """
+        self._last_update_time = last_update_time
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -274,8 +326,8 @@ class RuleResponse:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -115,7 +113,7 @@ class BaseInfo:
     def title(self):
         """Gets the title of this BaseInfo.
 
-        媒资标题。 长度不超过128个字节，UTF8编码。
+        媒资标题。  长度不超过128个字节，UTF8编码。
 
         :return: The title of this BaseInfo.
         :rtype: str
@@ -126,7 +124,7 @@ class BaseInfo:
     def title(self, title):
         """Sets the title of this BaseInfo.
 
-        媒资标题。 长度不超过128个字节，UTF8编码。
+        媒资标题。  长度不超过128个字节，UTF8编码。
 
         :param title: The title of this BaseInfo.
         :type: str
@@ -159,7 +157,7 @@ class BaseInfo:
     def description(self):
         """Gets the description of this BaseInfo.
 
-        媒资描述。 长度不超过1024个字节。
+        媒资描述。  长度不超过1024个字节。
 
         :return: The description of this BaseInfo.
         :rtype: str
@@ -170,7 +168,7 @@ class BaseInfo:
     def description(self, description):
         """Sets the description of this BaseInfo.
 
-        媒资描述。 长度不超过1024个字节。
+        媒资描述。  长度不超过1024个字节。
 
         :param description: The description of this BaseInfo.
         :type: str
@@ -225,7 +223,7 @@ class BaseInfo:
     def create_time(self):
         """Gets the create_time of this BaseInfo.
 
-        媒资创建时间。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        媒资创建时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :return: The create_time of this BaseInfo.
         :rtype: str
@@ -236,7 +234,7 @@ class BaseInfo:
     def create_time(self, create_time):
         """Sets the create_time of this BaseInfo.
 
-        媒资创建时间。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        媒资创建时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :param create_time: The create_time of this BaseInfo.
         :type: str
@@ -247,7 +245,7 @@ class BaseInfo:
     def last_modified(self):
         """Gets the last_modified of this BaseInfo.
 
-        媒资最近修改时间。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        媒资最近修改时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :return: The last_modified of this BaseInfo.
         :rtype: str
@@ -258,7 +256,7 @@ class BaseInfo:
     def last_modified(self, last_modified):
         """Sets the last_modified of this BaseInfo.
 
-        媒资最近修改时间。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        媒资最近修改时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :param last_modified: The last_modified of this BaseInfo.
         :type: str
@@ -269,7 +267,7 @@ class BaseInfo:
     def video_type(self):
         """Gets the video_type of this BaseInfo.
 
-        音视频文件类型。 取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
+        音视频文件类型。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
 
         :return: The video_type of this BaseInfo.
         :rtype: str
@@ -280,7 +278,7 @@ class BaseInfo:
     def video_type(self, video_type):
         """Sets the video_type of this BaseInfo.
 
-        音视频文件类型。 取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
+        音视频文件类型。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
 
         :param video_type: The video_type of this BaseInfo.
         :type: str
@@ -291,7 +289,7 @@ class BaseInfo:
     def tags(self):
         """Gets the tags of this BaseInfo.
 
-        媒资标签。 单个标签不超过16个字节，最多不超过16个标签。 多个用逗号分隔，UTF8编码。
+        媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
         :return: The tags of this BaseInfo.
         :rtype: str
@@ -302,7 +300,7 @@ class BaseInfo:
     def tags(self, tags):
         """Sets the tags of this BaseInfo.
 
-        媒资标签。 单个标签不超过16个字节，最多不超过16个标签。 多个用逗号分隔，UTF8编码。
+        媒资标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
         :param tags: The tags of this BaseInfo.
         :type: str
@@ -377,7 +375,7 @@ class BaseInfo:
     def subtitle_info(self):
         """Gets the subtitle_info of this BaseInfo.
 
-        字幕信息数组<br/>
+        字幕信息数组
 
         :return: The subtitle_info of this BaseInfo.
         :rtype: list[SubtitleInfo]
@@ -388,7 +386,7 @@ class BaseInfo:
     def subtitle_info(self, subtitle_info):
         """Sets the subtitle_info of this BaseInfo.
 
-        字幕信息数组<br/>
+        字幕信息数组
 
         :param subtitle_info: The subtitle_info of this BaseInfo.
         :type: list[SubtitleInfo]
@@ -463,8 +461,8 @@ class BaseInfo:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

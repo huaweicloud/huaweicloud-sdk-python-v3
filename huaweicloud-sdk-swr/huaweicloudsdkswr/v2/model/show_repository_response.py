@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -38,7 +36,9 @@ class ShowRepositoryResponse(SdkResponse):
         'path': 'str',
         'internal_path': 'str',
         'created': 'str',
-        'updated': 'str'
+        'updated': 'str',
+        'domain_id': 'str',
+        'priority': 'int'
     }
 
     attribute_map = {
@@ -57,10 +57,12 @@ class ShowRepositoryResponse(SdkResponse):
         'path': 'path',
         'internal_path': 'internal_path',
         'created': 'created',
-        'updated': 'updated'
+        'updated': 'updated',
+        'domain_id': 'domain_id',
+        'priority': 'priority'
     }
 
-    def __init__(self, id=None, ns_id=None, name=None, category=None, description=None, creator_id=None, creator_name=None, size=None, is_public=None, num_images=None, num_download=None, url=None, path=None, internal_path=None, created=None, updated=None):
+    def __init__(self, id=None, ns_id=None, name=None, category=None, description=None, creator_id=None, creator_name=None, size=None, is_public=None, num_images=None, num_download=None, url=None, path=None, internal_path=None, created=None, updated=None, domain_id=None, priority=None):
         """ShowRepositoryResponse - a model defined in huaweicloud sdk"""
         
         super(ShowRepositoryResponse, self).__init__()
@@ -81,6 +83,8 @@ class ShowRepositoryResponse(SdkResponse):
         self._internal_path = None
         self._created = None
         self._updated = None
+        self._domain_id = None
+        self._priority = None
         self.discriminator = None
 
         if id is not None:
@@ -115,6 +119,10 @@ class ShowRepositoryResponse(SdkResponse):
             self.created = created
         if updated is not None:
             self.updated = updated
+        if domain_id is not None:
+            self.domain_id = domain_id
+        if priority is not None:
+            self.priority = priority
 
     @property
     def id(self):
@@ -468,6 +476,50 @@ class ShowRepositoryResponse(SdkResponse):
         """
         self._updated = updated
 
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this ShowRepositoryResponse.
+
+        账号ID
+
+        :return: The domain_id of this ShowRepositoryResponse.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this ShowRepositoryResponse.
+
+        账号ID
+
+        :param domain_id: The domain_id of this ShowRepositoryResponse.
+        :type: str
+        """
+        self._domain_id = domain_id
+
+    @property
+    def priority(self):
+        """Gets the priority of this ShowRepositoryResponse.
+
+        镜像排序优先级
+
+        :return: The priority of this ShowRepositoryResponse.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        """Sets the priority of this ShowRepositoryResponse.
+
+        镜像排序优先级
+
+        :param priority: The priority of this ShowRepositoryResponse.
+        :type: int
+        """
+        self._priority = priority
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -496,8 +548,8 @@ class ShowRepositoryResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

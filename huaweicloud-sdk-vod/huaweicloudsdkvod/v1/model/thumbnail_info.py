@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -124,7 +122,7 @@ class ThumbnailInfo:
     def thumbnail_status(self):
         """Gets the thumbnail_status of this ThumbnailInfo.
 
-        截图状态。 取值如下： - UN_THUMBNAIL：未截图 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败
+        截图状态。  取值如下： - UN_THUMBNAIL：未截图 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败
 
         :return: The thumbnail_status of this ThumbnailInfo.
         :rtype: str
@@ -135,7 +133,7 @@ class ThumbnailInfo:
     def thumbnail_status(self, thumbnail_status):
         """Sets the thumbnail_status of this ThumbnailInfo.
 
-        截图状态。 取值如下： - UN_THUMBNAIL：未截图 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败
+        截图状态。  取值如下： - UN_THUMBNAIL：未截图 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败
 
         :param thumbnail_status: The thumbnail_status of this ThumbnailInfo.
         :type: str
@@ -170,8 +168,8 @@ class ThumbnailInfo:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

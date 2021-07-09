@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -48,8 +46,6 @@ class GlanceShowImageResponseBody:
         'checksum': 'str',
         'container_format': 'str',
         'created_at': 'str',
-        'deleted': 'bool',
-        'deleted_at': 'str',
         'disk_format': 'str',
         'file': 'str',
         'id': 'str',
@@ -71,7 +67,19 @@ class GlanceShowImageResponseBody:
         'enterprise_project_id': 'str',
         'hw_firmware_type': 'str',
         'support_arm': 'str',
-        'is_offshelved': 'str'
+        'is_offshelved': 'str',
+        'lazyloading': 'bool',
+        'os_feature_list': 'str',
+        'root_origin': 'str',
+        'sequence_num': 'str',
+        'support_agent_list': 'str',
+        'system__cmkid': 'str',
+        'active_at': 'str',
+        'hw_vif_multiqueue_enabled': 'str',
+        'max_ram': 'str',
+        'image_location': 'str',
+        'is_config_init': 'str',
+        'account_code': 'str'
     }
 
     attribute_map = {
@@ -100,8 +108,6 @@ class GlanceShowImageResponseBody:
         'checksum': 'checksum',
         'container_format': 'container_format',
         'created_at': 'created_at',
-        'deleted': 'deleted',
-        'deleted_at': 'deleted_at',
         'disk_format': 'disk_format',
         'file': 'file',
         'id': 'id',
@@ -123,10 +129,22 @@ class GlanceShowImageResponseBody:
         'enterprise_project_id': 'enterprise_project_id',
         'hw_firmware_type': 'hw_firmware_type',
         'support_arm': '__support_arm',
-        'is_offshelved': '__is_offshelved'
+        'is_offshelved': '__is_offshelved',
+        'lazyloading': '__lazyloading',
+        'os_feature_list': '__os_feature_list',
+        'root_origin': '__root_origin',
+        'sequence_num': '__sequence_num',
+        'support_agent_list': '__support_agent_list',
+        'system__cmkid': '__system__cmkid',
+        'active_at': 'active_at',
+        'hw_vif_multiqueue_enabled': 'hw_vif_multiqueue_enabled',
+        'max_ram': 'max_ram',
+        'image_location': '__image_location',
+        'is_config_init': '__is_config_init',
+        'account_code': '__account_code'
     }
 
-    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, checksum=None, container_format=None, created_at=None, deleted=None, deleted_at=None, disk_format=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, enterprise_project_id=None, hw_firmware_type=None, support_arm=None, is_offshelved=None):
+    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, checksum=None, container_format=None, created_at=None, disk_format=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, enterprise_project_id=None, hw_firmware_type=None, support_arm=None, is_offshelved=None, lazyloading=None, os_feature_list=None, root_origin=None, sequence_num=None, support_agent_list=None, system__cmkid=None, active_at=None, hw_vif_multiqueue_enabled=None, max_ram=None, image_location=None, is_config_init=None, account_code=None):
         """GlanceShowImageResponseBody - a model defined in huaweicloud sdk"""
         
         
@@ -156,8 +174,6 @@ class GlanceShowImageResponseBody:
         self._checksum = None
         self._container_format = None
         self._created_at = None
-        self._deleted = None
-        self._deleted_at = None
         self._disk_format = None
         self._file = None
         self._id = None
@@ -180,6 +196,18 @@ class GlanceShowImageResponseBody:
         self._hw_firmware_type = None
         self._support_arm = None
         self._is_offshelved = None
+        self._lazyloading = None
+        self._os_feature_list = None
+        self._root_origin = None
+        self._sequence_num = None
+        self._support_agent_list = None
+        self._system__cmkid = None
+        self._active_at = None
+        self._hw_vif_multiqueue_enabled = None
+        self._max_ram = None
+        self._image_location = None
+        self._is_config_init = None
+        self._account_code = None
         self.discriminator = None
 
         self.backup_id = backup_id
@@ -207,8 +235,6 @@ class GlanceShowImageResponseBody:
         self.checksum = checksum
         self.container_format = container_format
         self.created_at = created_at
-        self.deleted = deleted
-        self.deleted_at = deleted_at
         self.disk_format = disk_format
         self.file = file
         self.id = id
@@ -231,6 +257,18 @@ class GlanceShowImageResponseBody:
         self.hw_firmware_type = hw_firmware_type
         self.support_arm = support_arm
         self.is_offshelved = is_offshelved
+        self.lazyloading = lazyloading
+        self.os_feature_list = os_feature_list
+        self.root_origin = root_origin
+        self.sequence_num = sequence_num
+        self.support_agent_list = support_agent_list
+        self.system__cmkid = system__cmkid
+        self.active_at = active_at
+        self.hw_vif_multiqueue_enabled = hw_vif_multiqueue_enabled
+        self.max_ram = max_ram
+        self.image_location = image_location
+        self.is_config_init = is_config_init
+        self.account_code = account_code
 
     @property
     def backup_id(self):
@@ -783,50 +821,6 @@ class GlanceShowImageResponseBody:
         self._created_at = created_at
 
     @property
-    def deleted(self):
-        """Gets the deleted of this GlanceShowImageResponseBody.
-
-        是否是删除的镜像，取值为true或者false。
-
-        :return: The deleted of this GlanceShowImageResponseBody.
-        :rtype: bool
-        """
-        return self._deleted
-
-    @deleted.setter
-    def deleted(self, deleted):
-        """Sets the deleted of this GlanceShowImageResponseBody.
-
-        是否是删除的镜像，取值为true或者false。
-
-        :param deleted: The deleted of this GlanceShowImageResponseBody.
-        :type: bool
-        """
-        self._deleted = deleted
-
-    @property
-    def deleted_at(self):
-        """Gets the deleted_at of this GlanceShowImageResponseBody.
-
-        删除时间。格式为UTC时间
-
-        :return: The deleted_at of this GlanceShowImageResponseBody.
-        :rtype: str
-        """
-        return self._deleted_at
-
-    @deleted_at.setter
-    def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this GlanceShowImageResponseBody.
-
-        删除时间。格式为UTC时间
-
-        :param deleted_at: The deleted_at of this GlanceShowImageResponseBody.
-        :type: str
-        """
-        self._deleted_at = deleted_at
-
-    @property
     def disk_format(self):
         """Gets the disk_format of this GlanceShowImageResponseBody.
 
@@ -1310,6 +1304,270 @@ class GlanceShowImageResponseBody:
         """
         self._is_offshelved = is_offshelved
 
+    @property
+    def lazyloading(self):
+        """Gets the lazyloading of this GlanceShowImageResponseBody.
+
+        镜像是否支持延迟加载。取值为“True”或“False”。
+
+        :return: The lazyloading of this GlanceShowImageResponseBody.
+        :rtype: bool
+        """
+        return self._lazyloading
+
+    @lazyloading.setter
+    def lazyloading(self, lazyloading):
+        """Sets the lazyloading of this GlanceShowImageResponseBody.
+
+        镜像是否支持延迟加载。取值为“True”或“False”。
+
+        :param lazyloading: The lazyloading of this GlanceShowImageResponseBody.
+        :type: bool
+        """
+        self._lazyloading = lazyloading
+
+    @property
+    def os_feature_list(self):
+        """Gets the os_feature_list of this GlanceShowImageResponseBody.
+
+        镜像附加属性。该属性采用JSON格式来标识镜像支持的高级特性清单。
+
+        :return: The os_feature_list of this GlanceShowImageResponseBody.
+        :rtype: str
+        """
+        return self._os_feature_list
+
+    @os_feature_list.setter
+    def os_feature_list(self, os_feature_list):
+        """Sets the os_feature_list of this GlanceShowImageResponseBody.
+
+        镜像附加属性。该属性采用JSON格式来标识镜像支持的高级特性清单。
+
+        :param os_feature_list: The os_feature_list of this GlanceShowImageResponseBody.
+        :type: str
+        """
+        self._os_feature_list = os_feature_list
+
+    @property
+    def root_origin(self):
+        """Gets the root_origin of this GlanceShowImageResponseBody.
+
+        表示当前镜像来源是从外部导入。取值：file。
+
+        :return: The root_origin of this GlanceShowImageResponseBody.
+        :rtype: str
+        """
+        return self._root_origin
+
+    @root_origin.setter
+    def root_origin(self, root_origin):
+        """Sets the root_origin of this GlanceShowImageResponseBody.
+
+        表示当前镜像来源是从外部导入。取值：file。
+
+        :param root_origin: The root_origin of this GlanceShowImageResponseBody.
+        :type: str
+        """
+        self._root_origin = root_origin
+
+    @property
+    def sequence_num(self):
+        """Gets the sequence_num of this GlanceShowImageResponseBody.
+
+        目前暂时不用
+
+        :return: The sequence_num of this GlanceShowImageResponseBody.
+        :rtype: str
+        """
+        return self._sequence_num
+
+    @sequence_num.setter
+    def sequence_num(self, sequence_num):
+        """Sets the sequence_num of this GlanceShowImageResponseBody.
+
+        目前暂时不用
+
+        :param sequence_num: The sequence_num of this GlanceShowImageResponseBody.
+        :type: str
+        """
+        self._sequence_num = sequence_num
+
+    @property
+    def support_agent_list(self):
+        """Gets the support_agent_list of this GlanceShowImageResponseBody.
+
+        镜像是否支持企业主机安全或主机监控。 hss：企业主机安全 ces：主机监控
+
+        :return: The support_agent_list of this GlanceShowImageResponseBody.
+        :rtype: str
+        """
+        return self._support_agent_list
+
+    @support_agent_list.setter
+    def support_agent_list(self, support_agent_list):
+        """Sets the support_agent_list of this GlanceShowImageResponseBody.
+
+        镜像是否支持企业主机安全或主机监控。 hss：企业主机安全 ces：主机监控
+
+        :param support_agent_list: The support_agent_list of this GlanceShowImageResponseBody.
+        :type: str
+        """
+        self._support_agent_list = support_agent_list
+
+    @property
+    def system__cmkid(self):
+        """Gets the system__cmkid of this GlanceShowImageResponseBody.
+
+        加密镜像所使用的密钥ID。
+
+        :return: The system__cmkid of this GlanceShowImageResponseBody.
+        :rtype: str
+        """
+        return self._system__cmkid
+
+    @system__cmkid.setter
+    def system__cmkid(self, system__cmkid):
+        """Sets the system__cmkid of this GlanceShowImageResponseBody.
+
+        加密镜像所使用的密钥ID。
+
+        :param system__cmkid: The system__cmkid of this GlanceShowImageResponseBody.
+        :type: str
+        """
+        self._system__cmkid = system__cmkid
+
+    @property
+    def active_at(self):
+        """Gets the active_at of this GlanceShowImageResponseBody.
+
+        镜像状态变为正常的时间。
+
+        :return: The active_at of this GlanceShowImageResponseBody.
+        :rtype: str
+        """
+        return self._active_at
+
+    @active_at.setter
+    def active_at(self, active_at):
+        """Sets the active_at of this GlanceShowImageResponseBody.
+
+        镜像状态变为正常的时间。
+
+        :param active_at: The active_at of this GlanceShowImageResponseBody.
+        :type: str
+        """
+        self._active_at = active_at
+
+    @property
+    def hw_vif_multiqueue_enabled(self):
+        """Gets the hw_vif_multiqueue_enabled of this GlanceShowImageResponseBody.
+
+        镜像是否支持网卡多队列。取值为true或者false。
+
+        :return: The hw_vif_multiqueue_enabled of this GlanceShowImageResponseBody.
+        :rtype: str
+        """
+        return self._hw_vif_multiqueue_enabled
+
+    @hw_vif_multiqueue_enabled.setter
+    def hw_vif_multiqueue_enabled(self, hw_vif_multiqueue_enabled):
+        """Sets the hw_vif_multiqueue_enabled of this GlanceShowImageResponseBody.
+
+        镜像是否支持网卡多队列。取值为true或者false。
+
+        :param hw_vif_multiqueue_enabled: The hw_vif_multiqueue_enabled of this GlanceShowImageResponseBody.
+        :type: str
+        """
+        self._hw_vif_multiqueue_enabled = hw_vif_multiqueue_enabled
+
+    @property
+    def max_ram(self):
+        """Gets the max_ram of this GlanceShowImageResponseBody.
+
+        镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
+
+        :return: The max_ram of this GlanceShowImageResponseBody.
+        :rtype: str
+        """
+        return self._max_ram
+
+    @max_ram.setter
+    def max_ram(self, max_ram):
+        """Sets the max_ram of this GlanceShowImageResponseBody.
+
+        镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
+
+        :param max_ram: The max_ram of this GlanceShowImageResponseBody.
+        :type: str
+        """
+        self._max_ram = max_ram
+
+    @property
+    def image_location(self):
+        """Gets the image_location of this GlanceShowImageResponseBody.
+
+        镜像的存储位置。
+
+        :return: The image_location of this GlanceShowImageResponseBody.
+        :rtype: str
+        """
+        return self._image_location
+
+    @image_location.setter
+    def image_location(self, image_location):
+        """Sets the image_location of this GlanceShowImageResponseBody.
+
+        镜像的存储位置。
+
+        :param image_location: The image_location of this GlanceShowImageResponseBody.
+        :type: str
+        """
+        self._image_location = image_location
+
+    @property
+    def is_config_init(self):
+        """Gets the is_config_init of this GlanceShowImageResponseBody.
+
+        是否完成了初始化配置。取值为true或false
+
+        :return: The is_config_init of this GlanceShowImageResponseBody.
+        :rtype: str
+        """
+        return self._is_config_init
+
+    @is_config_init.setter
+    def is_config_init(self, is_config_init):
+        """Sets the is_config_init of this GlanceShowImageResponseBody.
+
+        是否完成了初始化配置。取值为true或false
+
+        :param is_config_init: The is_config_init of this GlanceShowImageResponseBody.
+        :type: str
+        """
+        self._is_config_init = is_config_init
+
+    @property
+    def account_code(self):
+        """Gets the account_code of this GlanceShowImageResponseBody.
+
+        收费镜像标识。
+
+        :return: The account_code of this GlanceShowImageResponseBody.
+        :rtype: str
+        """
+        return self._account_code
+
+    @account_code.setter
+    def account_code(self, account_code):
+        """Sets the account_code of this GlanceShowImageResponseBody.
+
+        收费镜像标识。
+
+        :param account_code: The account_code of this GlanceShowImageResponseBody.
+        :type: str
+        """
+        self._account_code = account_code
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -1338,8 +1596,8 @@ class GlanceShowImageResponseBody:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

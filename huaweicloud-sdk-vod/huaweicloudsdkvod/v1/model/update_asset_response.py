@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -82,7 +80,7 @@ class UpdateAssetResponse(SdkResponse):
     def video_upload_url(self):
         """Gets the video_upload_url of this UpdateAssetResponse.
 
-        视频上传地址。 用于客户端上传不超过20MB的小视频文件（<=20MB）。该URL中携带了临时授权信息，当文件大于20MB时，需要采用分段方式上传。  **说明：** 您可以使用PUT请求向“**video_upload_url**”中上传视频文件。 其中，“**Content-Type**”需要根据上传的视频文件类型进行设置，如下所示： 视频文件：video/视频格式，如：“video/mp4”。
+        视频上传地址。  用于客户端上传不超过20MB的小视频文件（<=20MB）。该URL中携带了临时授权信息，当文件大于20MB时，需要采用分段方式上传。  > 您可以使用PUT请求向“**video_upload_url**”中上传视频文件。其中，“**Content-Type**”需要根据上传的视频文件类型进行设置，如下所示：视频文件：video/视频格式，如：“video/mp4”。
 
         :return: The video_upload_url of this UpdateAssetResponse.
         :rtype: str
@@ -93,7 +91,7 @@ class UpdateAssetResponse(SdkResponse):
     def video_upload_url(self, video_upload_url):
         """Sets the video_upload_url of this UpdateAssetResponse.
 
-        视频上传地址。 用于客户端上传不超过20MB的小视频文件（<=20MB）。该URL中携带了临时授权信息，当文件大于20MB时，需要采用分段方式上传。  **说明：** 您可以使用PUT请求向“**video_upload_url**”中上传视频文件。 其中，“**Content-Type**”需要根据上传的视频文件类型进行设置，如下所示： 视频文件：video/视频格式，如：“video/mp4”。
+        视频上传地址。  用于客户端上传不超过20MB的小视频文件（<=20MB）。该URL中携带了临时授权信息，当文件大于20MB时，需要采用分段方式上传。  > 您可以使用PUT请求向“**video_upload_url**”中上传视频文件。其中，“**Content-Type**”需要根据上传的视频文件类型进行设置，如下所示：视频文件：video/视频格式，如：“video/mp4”。
 
         :param video_upload_url: The video_upload_url of this UpdateAssetResponse.
         :type: str
@@ -104,7 +102,7 @@ class UpdateAssetResponse(SdkResponse):
     def cover_upload_url(self):
         """Gets the cover_upload_url of this UpdateAssetResponse.
 
-        封面上传地址，用于上传封面文件。   **说明：** 您可以使用PUT请求向“**cover_upload_url**”中上传封面图片。 其中，“**Content-Type**”需要根据上传的封面文件类型进行设置，如下所示： 图片文件：image/图片格式，如：“image/png”。
+        封面上传地址，用于上传封面文件。  > 您可以使用PUT请求向“**cover_upload_url**”中上传封面图片。其中，“**Content-Type**”需要根据上传的封面文件类型进行设置，如下所示：图片文件：image/图片格式，如：“image/png”。
 
         :return: The cover_upload_url of this UpdateAssetResponse.
         :rtype: str
@@ -115,7 +113,7 @@ class UpdateAssetResponse(SdkResponse):
     def cover_upload_url(self, cover_upload_url):
         """Sets the cover_upload_url of this UpdateAssetResponse.
 
-        封面上传地址，用于上传封面文件。   **说明：** 您可以使用PUT请求向“**cover_upload_url**”中上传封面图片。 其中，“**Content-Type**”需要根据上传的封面文件类型进行设置，如下所示： 图片文件：image/图片格式，如：“image/png”。
+        封面上传地址，用于上传封面文件。  > 您可以使用PUT请求向“**cover_upload_url**”中上传封面图片。其中，“**Content-Type**”需要根据上传的封面文件类型进行设置，如下所示：图片文件：image/图片格式，如：“image/png”。
 
         :param cover_upload_url: The cover_upload_url of this UpdateAssetResponse.
         :type: str
@@ -126,7 +124,7 @@ class UpdateAssetResponse(SdkResponse):
     def subtitle_upload_urls(self):
         """Gets the subtitle_upload_urls of this UpdateAssetResponse.
 
-        字幕上传地址，用于上传字幕。  **说明：** 您可以使用PUT请求向“**subtitle_upload_urls**”中上传字幕文件。 其中，“**Content-Type**”需要根据上传的字幕文件类型进行设置，如下所示： 字幕文件：application/octet-stream。
+        字幕上传地址，用于上传字幕。  > 您可以使用PUT请求向“**subtitle_upload_urls**”中上传字幕文件。其中，“**Content-Type**”需要根据上传的字幕文件类型进行设置，如下所示：字幕文件：application/octet-stream。
 
         :return: The subtitle_upload_urls of this UpdateAssetResponse.
         :rtype: list[str]
@@ -137,7 +135,7 @@ class UpdateAssetResponse(SdkResponse):
     def subtitle_upload_urls(self, subtitle_upload_urls):
         """Sets the subtitle_upload_urls of this UpdateAssetResponse.
 
-        字幕上传地址，用于上传字幕。  **说明：** 您可以使用PUT请求向“**subtitle_upload_urls**”中上传字幕文件。 其中，“**Content-Type**”需要根据上传的字幕文件类型进行设置，如下所示： 字幕文件：application/octet-stream。
+        字幕上传地址，用于上传字幕。  > 您可以使用PUT请求向“**subtitle_upload_urls**”中上传字幕文件。其中，“**Content-Type**”需要根据上传的字幕文件类型进行设置，如下所示：字幕文件：application/octet-stream。
 
         :param subtitle_upload_urls: The subtitle_upload_urls of this UpdateAssetResponse.
         :type: list[str]
@@ -172,8 +170,8 @@ class UpdateAssetResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

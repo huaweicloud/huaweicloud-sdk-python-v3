@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -72,7 +70,7 @@ class PreheatingResult:
     def status(self):
         """Gets the status of this PreheatingResult.
 
-        预热任务状态。 取值如下： - processing：处理中 - succeed：预热完成 - failed：预热失败
+        预热任务状态。  取值如下： - processing：处理中 - succeed：预热完成 - failed：预热失败
 
         :return: The status of this PreheatingResult.
         :rtype: str
@@ -83,7 +81,7 @@ class PreheatingResult:
     def status(self, status):
         """Sets the status of this PreheatingResult.
 
-        预热任务状态。 取值如下： - processing：处理中 - succeed：预热完成 - failed：预热失败
+        预热任务状态。  取值如下： - processing：处理中 - succeed：预热完成 - failed：预热失败
 
         :param status: The status of this PreheatingResult.
         :type: str
@@ -118,8 +116,8 @@ class PreheatingResult:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

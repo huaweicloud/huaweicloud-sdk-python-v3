@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -23,7 +21,7 @@ class PreheatingTaskRequest:
     sensitive_list = []
 
     openapi_types = {
-        'preheating_task': 'PreheatingTaskRequestPreheatingTask'
+        'preheating_task': 'PreheatingTaskRequestBody'
     }
 
     attribute_map = {
@@ -46,7 +44,7 @@ class PreheatingTaskRequest:
 
 
         :return: The preheating_task of this PreheatingTaskRequest.
-        :rtype: PreheatingTaskRequestPreheatingTask
+        :rtype: PreheatingTaskRequestBody
         """
         return self._preheating_task
 
@@ -56,7 +54,7 @@ class PreheatingTaskRequest:
 
 
         :param preheating_task: The preheating_task of this PreheatingTaskRequest.
-        :type: PreheatingTaskRequestPreheatingTask
+        :type: PreheatingTaskRequestBody
         """
         self._preheating_task = preheating_task
 
@@ -88,8 +86,8 @@ class PreheatingTaskRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

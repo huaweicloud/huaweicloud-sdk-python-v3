@@ -2716,7 +2716,7 @@ class MeetingClient(Client):
 
         path_params = {}
         if 'conference_id' in local_var_params:
-            path_params['conferenceId'] = local_var_params['conference_id']
+            path_params['conference_id'] = local_var_params['conference_id']
 
         query_params = []
 
@@ -2740,7 +2740,7 @@ class MeetingClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/wss/webinar/open/conferences/{conferenceId}',
+            resource_path='/v1/wss/webinar/open/conferences/{conference_id}',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,
@@ -8071,7 +8071,7 @@ class MeetingClient(Client):
 
         path_params = {}
         if 'conference_id' in local_var_params:
-            path_params['conferenceId'] = local_var_params['conference_id']
+            path_params['conference_id'] = local_var_params['conference_id']
 
         query_params = []
 
@@ -8095,7 +8095,7 @@ class MeetingClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/wss/webinar/open/room_setting/{conferenceId}',
+            resource_path='/v1/wss/webinar/open/room-setting/{conference_id}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -8309,7 +8309,7 @@ class MeetingClient(Client):
     def show_webinar(self, request):
         """查询网络研讨会详情
 
-        根据conferenceId查询网络研讨会详情。
+        根据conference_id查询网络研讨会详情。
 
         :param ShowWebinarRequest request
         :return: ShowWebinarResponse
@@ -8319,7 +8319,7 @@ class MeetingClient(Client):
     def show_webinar_with_http_info(self, request):
         """查询网络研讨会详情
 
-        根据conferenceId查询网络研讨会详情。
+        根据conference_id查询网络研讨会详情。
 
         :param ShowWebinarRequest request
         :return: ShowWebinarResponse
@@ -8335,7 +8335,7 @@ class MeetingClient(Client):
 
         path_params = {}
         if 'conference_id' in local_var_params:
-            path_params['conferenceId'] = local_var_params['conference_id']
+            path_params['conference_id'] = local_var_params['conference_id']
 
         query_params = []
 
@@ -8359,7 +8359,7 @@ class MeetingClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/wss/webinar/open/conferences/{conferenceId}',
+            resource_path='/v1/wss/webinar/open/conferences/{conference_id}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -9425,7 +9425,7 @@ class MeetingClient(Client):
 
         path_params = {}
         if 'conference_id' in local_var_params:
-            path_params['conferenceId'] = local_var_params['conference_id']
+            path_params['conference_id'] = local_var_params['conference_id']
 
         query_params = []
 
@@ -9451,7 +9451,7 @@ class MeetingClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/wss/webinar/open/room_setting/{conferenceId}',
+            resource_path='/v1/wss/webinar/open/room-setting/{conference_id}',
             method='POST',
             path_params=path_params,
             query_params=query_params,

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -60,7 +58,7 @@ class ListTemplateGroupRequest:
     def group_id(self):
         """Gets the group_id of this ListTemplateGroupRequest.
 
-        模板组id 
+        模板组id
 
         :return: The group_id of this ListTemplateGroupRequest.
         :rtype: str
@@ -71,7 +69,7 @@ class ListTemplateGroupRequest:
     def group_id(self, group_id):
         """Sets the group_id of this ListTemplateGroupRequest.
 
-        模板组id 
+        模板组id
 
         :param group_id: The group_id of this ListTemplateGroupRequest.
         :type: str
@@ -82,7 +80,7 @@ class ListTemplateGroupRequest:
     def status(self):
         """Gets the status of this ListTemplateGroupRequest.
 
-        模板启用状态 
+        模板启用状态
 
         :return: The status of this ListTemplateGroupRequest.
         :rtype: str
@@ -93,7 +91,7 @@ class ListTemplateGroupRequest:
     def status(self, status):
         """Sets the status of this ListTemplateGroupRequest.
 
-        模板启用状态 
+        模板启用状态
 
         :param status: The status of this ListTemplateGroupRequest.
         :type: str
@@ -104,7 +102,7 @@ class ListTemplateGroupRequest:
     def page(self):
         """Gets the page of this ListTemplateGroupRequest.
 
-        分页编号。默认为0。指定group_id时该参数无效。<br/> 
+        分页编号。  默认为0，指定group_id时该参数无效。
 
         :return: The page of this ListTemplateGroupRequest.
         :rtype: int
@@ -115,7 +113,7 @@ class ListTemplateGroupRequest:
     def page(self, page):
         """Sets the page of this ListTemplateGroupRequest.
 
-        分页编号。默认为0。指定group_id时该参数无效。<br/> 
+        分页编号。  默认为0，指定group_id时该参数无效。
 
         :param page: The page of this ListTemplateGroupRequest.
         :type: int
@@ -126,7 +124,7 @@ class ListTemplateGroupRequest:
     def size(self):
         """Gets the size of this ListTemplateGroupRequest.
 
-        每页记录数。默认为10，范围[1,100]。指定group_id时该参数无效。<br/> 
+        每页记录数。  默认为10，范围[1,100]。指定group_id时该参数无效。
 
         :return: The size of this ListTemplateGroupRequest.
         :rtype: int
@@ -137,7 +135,7 @@ class ListTemplateGroupRequest:
     def size(self, size):
         """Sets the size of this ListTemplateGroupRequest.
 
-        每页记录数。默认为10，范围[1,100]。指定group_id时该参数无效。<br/> 
+        每页记录数。  默认为10，范围[1,100]。指定group_id时该参数无效。
 
         :param size: The size of this ListTemplateGroupRequest.
         :type: int
@@ -172,8 +170,8 @@ class ListTemplateGroupRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -53,7 +51,7 @@ class AudioTemplateInfo:
     def sample_rate(self):
         """Gets the sample_rate of this AudioTemplateInfo.
 
-        音频采样率(有效值范围)<br/>  AUDIO_SAMPLE_AUTO=1 (default), AUDIO_SAMPLE_22050=2<br/> AUDIO_SAMPLE_32000=3<br/> AUDIO_SAMPLE_44100=4<br/> AUDIO_SAMPLE_48000=5<br/> AUDIO_SAMPLE_96000=6<br/> 
+        音频采样率(有效值范围) - 1：AUDIO_SAMPLE_AUTO - 2：AUDIO_SAMPLE_22050 - 3：AUDIO_SAMPLE_32000 - 4：AUDIO_SAMPLE_44100 - 5：AUDIO_SAMPLE_48000 - 6：AUDIO_SAMPLE_96000  默认值为1。
 
         :return: The sample_rate of this AudioTemplateInfo.
         :rtype: int
@@ -64,7 +62,7 @@ class AudioTemplateInfo:
     def sample_rate(self, sample_rate):
         """Sets the sample_rate of this AudioTemplateInfo.
 
-        音频采样率(有效值范围)<br/>  AUDIO_SAMPLE_AUTO=1 (default), AUDIO_SAMPLE_22050=2<br/> AUDIO_SAMPLE_32000=3<br/> AUDIO_SAMPLE_44100=4<br/> AUDIO_SAMPLE_48000=5<br/> AUDIO_SAMPLE_96000=6<br/> 
+        音频采样率(有效值范围) - 1：AUDIO_SAMPLE_AUTO - 2：AUDIO_SAMPLE_22050 - 3：AUDIO_SAMPLE_32000 - 4：AUDIO_SAMPLE_44100 - 5：AUDIO_SAMPLE_48000 - 6：AUDIO_SAMPLE_96000  默认值为1。
 
         :param sample_rate: The sample_rate of this AudioTemplateInfo.
         :type: int
@@ -75,7 +73,7 @@ class AudioTemplateInfo:
     def bitrate(self):
         """Gets the bitrate of this AudioTemplateInfo.
 
-        音频码率（单位：Kbps）<br/> 
+        音频码率（单位：Kbps）。
 
         :return: The bitrate of this AudioTemplateInfo.
         :rtype: int
@@ -86,7 +84,7 @@ class AudioTemplateInfo:
     def bitrate(self, bitrate):
         """Sets the bitrate of this AudioTemplateInfo.
 
-        音频码率（单位：Kbps）<br/> 
+        音频码率（单位：Kbps）。
 
         :param bitrate: The bitrate of this AudioTemplateInfo.
         :type: int
@@ -97,7 +95,7 @@ class AudioTemplateInfo:
     def channels(self):
         """Gets the channels of this AudioTemplateInfo.
 
-        声道数(有效值范围)<br/> AUDIO_CHANNELS_1=1<br/> AUDIO_CHANNELS_2=2<br/> 
+        声道数(有效值范围) - 1：AUDIO_CHANNELS_1 - 2：AUDIO_CHANNELS_2
 
         :return: The channels of this AudioTemplateInfo.
         :rtype: int
@@ -108,7 +106,7 @@ class AudioTemplateInfo:
     def channels(self, channels):
         """Sets the channels of this AudioTemplateInfo.
 
-        声道数(有效值范围)<br/> AUDIO_CHANNELS_1=1<br/> AUDIO_CHANNELS_2=2<br/> 
+        声道数(有效值范围) - 1：AUDIO_CHANNELS_1 - 2：AUDIO_CHANNELS_2
 
         :param channels: The channels of this AudioTemplateInfo.
         :type: int
@@ -143,8 +141,8 @@ class AudioTemplateInfo:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

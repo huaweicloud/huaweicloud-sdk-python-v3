@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -335,7 +333,7 @@ class SubCustomerResFeeRecordV2:
     def amount(self):
         """Gets the amount of this SubCustomerResFeeRecordV2.
 
-        消费金额，包括现金券和代金券金额，精确到小数点后2位。
+        消费金额，包括现金券和代金券金额，精确到小数点后2位。  说明： amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
         :return: The amount of this SubCustomerResFeeRecordV2.
         :rtype: float
@@ -346,7 +344,7 @@ class SubCustomerResFeeRecordV2:
     def amount(self, amount):
         """Sets the amount of this SubCustomerResFeeRecordV2.
 
-        消费金额，包括现金券和代金券金额，精确到小数点后2位。
+        消费金额，包括现金券和代金券金额，精确到小数点后2位。  说明： amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
         :param amount: The amount of this SubCustomerResFeeRecordV2.
         :type: float
@@ -1063,8 +1061,8 @@ class SubCustomerResFeeRecordV2:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -72,7 +70,7 @@ class QuotaLimitInfo:
     def limit_values(self):
         """Gets the limit_values of this QuotaLimitInfo.
 
-        属性值，具体参见表4。
+        属性值，具体参见表3。
 
         :return: The limit_values of this QuotaLimitInfo.
         :rtype: list[LimitValue]
@@ -83,7 +81,7 @@ class QuotaLimitInfo:
     def limit_values(self, limit_values):
         """Sets the limit_values of this QuotaLimitInfo.
 
-        属性值，具体参见表4。
+        属性值，具体参见表3。
 
         :param limit_values: The limit_values of this QuotaLimitInfo.
         :type: list[LimitValue]
@@ -118,8 +116,8 @@ class QuotaLimitInfo:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

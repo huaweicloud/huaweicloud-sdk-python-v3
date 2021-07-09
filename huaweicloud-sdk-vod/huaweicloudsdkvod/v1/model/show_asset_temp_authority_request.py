@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -94,7 +92,7 @@ class ShowAssetTempAuthorityRequest:
     def bucket(self):
         """Gets the bucket of this ShowAssetTempAuthorityRequest.
 
-        桶名。 调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket值。
+        桶名。  调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket值。
 
         :return: The bucket of this ShowAssetTempAuthorityRequest.
         :rtype: str
@@ -105,7 +103,7 @@ class ShowAssetTempAuthorityRequest:
     def bucket(self, bucket):
         """Sets the bucket of this ShowAssetTempAuthorityRequest.
 
-        桶名。 调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket值。
+        桶名。  调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的bucket值。
 
         :param bucket: The bucket of this ShowAssetTempAuthorityRequest.
         :type: str
@@ -116,7 +114,7 @@ class ShowAssetTempAuthorityRequest:
     def object_key(self):
         """Gets the object_key of this ShowAssetTempAuthorityRequest.
 
-        对象名。 调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的object值。
+        对象名。  调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的object值。
 
         :return: The object_key of this ShowAssetTempAuthorityRequest.
         :rtype: str
@@ -127,7 +125,7 @@ class ShowAssetTempAuthorityRequest:
     def object_key(self, object_key):
         """Sets the object_key of this ShowAssetTempAuthorityRequest.
 
-        对象名。 调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的object值。
+        对象名。  调用[创建媒资：上传方式](https://support.huaweicloud.com/api-vod/vod_04_0196.html)接口中返回的响应体中的target字段获得的object值。
 
         :param object_key: The object_key of this ShowAssetTempAuthorityRequest.
         :type: str
@@ -204,7 +202,7 @@ class ShowAssetTempAuthorityRequest:
     def part_number(self):
         """Gets the part_number of this ShowAssetTempAuthorityRequest.
 
-        上传段时每一段的id。 取值范围：[1,10000]。
+        上传段时每一段的id。  取值范围：[1,10000]。
 
         :return: The part_number of this ShowAssetTempAuthorityRequest.
         :rtype: int
@@ -215,7 +213,7 @@ class ShowAssetTempAuthorityRequest:
     def part_number(self, part_number):
         """Sets the part_number of this ShowAssetTempAuthorityRequest.
 
-        上传段时每一段的id。 取值范围：[1,10000]。
+        上传段时每一段的id。  取值范围：[1,10000]。
 
         :param part_number: The part_number of this ShowAssetTempAuthorityRequest.
         :type: int
@@ -250,8 +248,8 @@ class ShowAssetTempAuthorityRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

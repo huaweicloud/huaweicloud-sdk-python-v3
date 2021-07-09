@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -25,8 +23,8 @@ class ShowClusterResponse(SdkResponse):
     openapi_types = {
         'kind': 'str',
         'api_version': 'str',
-        'metadata': 'ShowClusterMetadata',
-        'spec': 'V3ClusterSpec',
+        'metadata': 'ClusterMetadata',
+        'spec': 'ClusterSpec',
         'status': 'ClusterStatus'
     }
 
@@ -111,7 +109,7 @@ class ShowClusterResponse(SdkResponse):
 
 
         :return: The metadata of this ShowClusterResponse.
-        :rtype: ShowClusterMetadata
+        :rtype: ClusterMetadata
         """
         return self._metadata
 
@@ -121,7 +119,7 @@ class ShowClusterResponse(SdkResponse):
 
 
         :param metadata: The metadata of this ShowClusterResponse.
-        :type: ShowClusterMetadata
+        :type: ClusterMetadata
         """
         self._metadata = metadata
 
@@ -131,7 +129,7 @@ class ShowClusterResponse(SdkResponse):
 
 
         :return: The spec of this ShowClusterResponse.
-        :rtype: V3ClusterSpec
+        :rtype: ClusterSpec
         """
         return self._spec
 
@@ -141,7 +139,7 @@ class ShowClusterResponse(SdkResponse):
 
 
         :param spec: The spec of this ShowClusterResponse.
-        :type: V3ClusterSpec
+        :type: ClusterSpec
         """
         self._spec = spec
 
@@ -193,8 +191,8 @@ class ShowClusterResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -50,7 +48,7 @@ class ListAssetListResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListAssetListResponse.
 
-        媒资总数  **说明：** 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请提交工单申请。
+        媒资总数  > 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请提交工单申请。
 
         :return: The total of this ListAssetListResponse.
         :rtype: int
@@ -61,7 +59,7 @@ class ListAssetListResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListAssetListResponse.
 
-        媒资总数  **说明：** 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请提交工单申请。
+        媒资总数  > 暂只能统计2万个媒资，若您需要查询具体的媒资总数，请提交工单申请。
 
         :param total: The total of this ListAssetListResponse.
         :type: int
@@ -118,8 +116,8 @@ class ListAssetListResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

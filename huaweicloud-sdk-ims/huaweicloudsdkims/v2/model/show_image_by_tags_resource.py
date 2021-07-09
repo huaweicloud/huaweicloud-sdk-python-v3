@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -24,31 +22,31 @@ class ShowImageByTagsResource:
 
     openapi_types = {
         'resource_id': 'str',
-        'resouce_detail': 'QueryImageByTagsResourceDetail',
+        'resource_detail': 'QueryImageByTagsResourceDetail',
         'tags': 'list[TagKeyValue]',
         'resource_name': 'str'
     }
 
     attribute_map = {
         'resource_id': 'resource_id',
-        'resouce_detail': 'resouce_detail',
+        'resource_detail': 'resource_detail',
         'tags': 'tags',
         'resource_name': 'resource_name'
     }
 
-    def __init__(self, resource_id=None, resouce_detail=None, tags=None, resource_name=None):
+    def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
         """ShowImageByTagsResource - a model defined in huaweicloud sdk"""
         
         
 
         self._resource_id = None
-        self._resouce_detail = None
+        self._resource_detail = None
         self._tags = None
         self._resource_name = None
         self.discriminator = None
 
         self.resource_id = resource_id
-        self.resouce_detail = resouce_detail
+        self.resource_detail = resource_detail
         self.tags = tags
         self.resource_name = resource_name
 
@@ -75,24 +73,24 @@ class ShowImageByTagsResource:
         self._resource_id = resource_id
 
     @property
-    def resouce_detail(self):
-        """Gets the resouce_detail of this ShowImageByTagsResource.
+    def resource_detail(self):
+        """Gets the resource_detail of this ShowImageByTagsResource.
 
 
-        :return: The resouce_detail of this ShowImageByTagsResource.
+        :return: The resource_detail of this ShowImageByTagsResource.
         :rtype: QueryImageByTagsResourceDetail
         """
-        return self._resouce_detail
+        return self._resource_detail
 
-    @resouce_detail.setter
-    def resouce_detail(self, resouce_detail):
-        """Sets the resouce_detail of this ShowImageByTagsResource.
+    @resource_detail.setter
+    def resource_detail(self, resource_detail):
+        """Sets the resource_detail of this ShowImageByTagsResource.
 
 
-        :param resouce_detail: The resouce_detail of this ShowImageByTagsResource.
+        :param resource_detail: The resource_detail of this ShowImageByTagsResource.
         :type: QueryImageByTagsResourceDetail
         """
-        self._resouce_detail = resouce_detail
+        self._resource_detail = resource_detail
 
     @property
     def tags(self):
@@ -166,8 +164,8 @@ class ShowImageByTagsResource:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

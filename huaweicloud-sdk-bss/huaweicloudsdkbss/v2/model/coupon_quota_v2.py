@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -342,7 +340,7 @@ class CouponQuotaV2:
     def limit_infos(self):
         """Gets the limit_infos of this CouponQuotaV2.
 
-        优惠券额度上的限制属性，具体参见表3。
+        优惠券额度上的限制属性，具体参见表2。
 
         :return: The limit_infos of this CouponQuotaV2.
         :rtype: list[QuotaLimitInfo]
@@ -353,7 +351,7 @@ class CouponQuotaV2:
     def limit_infos(self, limit_infos):
         """Sets the limit_infos of this CouponQuotaV2.
 
-        优惠券额度上的限制属性，具体参见表3。
+        优惠券额度上的限制属性，具体参见表2。
 
         :param limit_infos: The limit_infos of this CouponQuotaV2.
         :type: list[QuotaLimitInfo]
@@ -388,8 +386,8 @@ class CouponQuotaV2:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

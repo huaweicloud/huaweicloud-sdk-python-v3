@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -38,7 +36,8 @@ class BandwidthResp:
         'rule_quota': 'int',
         'bandwidth_rules': 'list[BandWidthRules]',
         'created_at': 'str',
-        'updated_at': 'str'
+        'updated_at': 'str',
+        'publicip_border_group': 'str'
     }
 
     attribute_map = {
@@ -57,10 +56,11 @@ class BandwidthResp:
         'rule_quota': 'rule_quota',
         'bandwidth_rules': 'bandwidth_rules',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'publicip_border_group': 'publicip_border_group'
     }
 
-    def __init__(self, bandwidth_type=None, billing_info=None, charge_mode=None, id=None, name=None, publicip_info=None, share_type=None, size=None, tenant_id=None, enterprise_project_id=None, status=None, enable_bandwidth_rules=None, rule_quota=None, bandwidth_rules=None, created_at=None, updated_at=None):
+    def __init__(self, bandwidth_type=None, billing_info=None, charge_mode=None, id=None, name=None, publicip_info=None, share_type=None, size=None, tenant_id=None, enterprise_project_id=None, status=None, enable_bandwidth_rules=None, rule_quota=None, bandwidth_rules=None, created_at=None, updated_at=None, publicip_border_group=None):
         """BandwidthResp - a model defined in huaweicloud sdk"""
         
         
@@ -81,6 +81,7 @@ class BandwidthResp:
         self._bandwidth_rules = None
         self._created_at = None
         self._updated_at = None
+        self._publicip_border_group = None
         self.discriminator = None
 
         if bandwidth_type is not None:
@@ -115,6 +116,8 @@ class BandwidthResp:
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if publicip_border_group is not None:
+            self.publicip_border_group = publicip_border_group
 
     @property
     def bandwidth_type(self):
@@ -468,6 +471,28 @@ class BandwidthResp:
         """
         self._updated_at = updated_at
 
+    @property
+    def publicip_border_group(self):
+        """Gets the publicip_border_group of this BandwidthResp.
+
+        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域才会返回此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：publicip只能绑定该字段相同的资源
+
+        :return: The publicip_border_group of this BandwidthResp.
+        :rtype: str
+        """
+        return self._publicip_border_group
+
+    @publicip_border_group.setter
+    def publicip_border_group(self, publicip_border_group):
+        """Sets the publicip_border_group of this BandwidthResp.
+
+        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域才会返回此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：publicip只能绑定该字段相同的资源
+
+        :param publicip_border_group: The publicip_border_group of this BandwidthResp.
+        :type: str
+        """
+        self._publicip_border_group = publicip_border_group
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -496,8 +521,8 @@ class BandwidthResp:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

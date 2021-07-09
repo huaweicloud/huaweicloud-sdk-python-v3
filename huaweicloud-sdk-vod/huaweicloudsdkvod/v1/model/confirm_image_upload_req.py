@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -41,16 +39,14 @@ class ConfirmImageUploadReq:
         self._status = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if status is not None:
-            self.status = status
+        self.id = id
+        self.status = status
 
     @property
     def id(self):
         """Gets the id of this ConfirmImageUploadReq.
 
-        水印配置模板id<br/> 
+        水印配置模板id。
 
         :return: The id of this ConfirmImageUploadReq.
         :rtype: str
@@ -61,7 +57,7 @@ class ConfirmImageUploadReq:
     def id(self, id):
         """Sets the id of this ConfirmImageUploadReq.
 
-        水印配置模板id<br/> 
+        水印配置模板id。
 
         :param id: The id of this ConfirmImageUploadReq.
         :type: str
@@ -72,7 +68,7 @@ class ConfirmImageUploadReq:
     def status(self):
         """Gets the status of this ConfirmImageUploadReq.
 
-        水印图片格式类型<br/> 
+        水印上传状态。
 
         :return: The status of this ConfirmImageUploadReq.
         :rtype: str
@@ -83,7 +79,7 @@ class ConfirmImageUploadReq:
     def status(self, status):
         """Sets the status of this ConfirmImageUploadReq.
 
-        水印图片格式类型<br/> 
+        水印上传状态。
 
         :param status: The status of this ConfirmImageUploadReq.
         :type: str
@@ -118,8 +114,8 @@ class ConfirmImageUploadReq:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

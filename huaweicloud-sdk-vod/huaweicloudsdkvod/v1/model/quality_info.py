@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -94,7 +92,7 @@ class QualityInfo:
     def format(self):
         """Gets the format of this QualityInfo.
 
-        格式<br/> 
+        格式。
 
         :return: The format of this QualityInfo.
         :rtype: str
@@ -105,7 +103,7 @@ class QualityInfo:
     def format(self, format):
         """Sets the format of this QualityInfo.
 
-        格式<br/> 
+        格式。
 
         :param format: The format of this QualityInfo.
         :type: str
@@ -140,8 +138,8 @@ class QualityInfo:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

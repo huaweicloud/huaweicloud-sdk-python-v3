@@ -19,13 +19,14 @@
 """
 
 import datetime
+import decimal
 import importlib
 import json
 import logging
 import re
 import sys
-from logging.handlers import RotatingFileHandler
 from concurrent.futures import ThreadPoolExecutor
+from logging.handlers import RotatingFileHandler
 
 import six
 from six.moves.urllib.parse import quote, urlparse
@@ -368,7 +369,7 @@ class Client(object):
                 return klass(response)
 
         try:
-            data = json.loads(six.ensure_str(response.text))
+            data = json.loads(six.ensure_str(response.text), parse_float=decimal.Decimal)
         except ValueError:
             data = response.text
         return self._deserialize(data, response_type)
@@ -395,6 +396,8 @@ class Client(object):
 
         if klass in primitive_types:
             return self._deserialize_primitive(data, klass)
+        elif klass == decimal.Decimal:
+            return data
         elif klass == object:
             return self._deserialize_object(data)
         elif klass == datetime.date:

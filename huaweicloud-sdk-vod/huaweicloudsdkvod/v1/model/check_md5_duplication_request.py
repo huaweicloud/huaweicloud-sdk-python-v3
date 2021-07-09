@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -70,7 +68,7 @@ class CheckMd5DuplicationRequest:
     def md5(self):
         """Gets the md5 of this CheckMd5DuplicationRequest.
 
-        文件MD5。 建议参考[上传校验](https://support.huaweicloud.com/api-vod/vod_04_0212.html#vod_04_0212__section575102165412)生成对应的MD5值。
+        文件MD5。  建议参考[上传校验](https://support.huaweicloud.com/api-vod/vod_04_0212.html#vod_04_0212__section575102165412)生成对应的MD5值。
 
         :return: The md5 of this CheckMd5DuplicationRequest.
         :rtype: str
@@ -81,7 +79,7 @@ class CheckMd5DuplicationRequest:
     def md5(self, md5):
         """Sets the md5 of this CheckMd5DuplicationRequest.
 
-        文件MD5。 建议参考[上传校验](https://support.huaweicloud.com/api-vod/vod_04_0212.html#vod_04_0212__section575102165412)生成对应的MD5值。
+        文件MD5。  建议参考[上传校验](https://support.huaweicloud.com/api-vod/vod_04_0212.html#vod_04_0212__section575102165412)生成对应的MD5值。
 
         :param md5: The md5 of this CheckMd5DuplicationRequest.
         :type: str
@@ -116,8 +114,8 @@ class CheckMd5DuplicationRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

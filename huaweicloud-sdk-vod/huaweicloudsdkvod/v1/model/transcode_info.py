@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -124,7 +122,7 @@ class TranscodeInfo:
     def transcode_status(self):
         """Gets the transcode_status of this TranscodeInfo.
 
-        转码状态。 取值如下： - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败
+        转码状态。  取值如下： - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败
 
         :return: The transcode_status of this TranscodeInfo.
         :rtype: str
@@ -135,7 +133,7 @@ class TranscodeInfo:
     def transcode_status(self, transcode_status):
         """Sets the transcode_status of this TranscodeInfo.
 
-        转码状态。 取值如下： - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败
+        转码状态。  取值如下： - UN_TRANSCODE：未转码 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中 - TRANSCODE_SUCCEED：转码成功 - TRANSCODE_FAILED：转码失败
 
         :param transcode_status: The transcode_status of this TranscodeInfo.
         :type: str
@@ -170,8 +168,8 @@ class TranscodeInfo:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

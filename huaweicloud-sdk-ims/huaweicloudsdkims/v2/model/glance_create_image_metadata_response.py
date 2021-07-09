@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -49,7 +47,10 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         'virtual_env_type': 'str',
         'owner': 'str',
         'virtual_size': 'int',
-        'properties': 'object'
+        'properties': 'object',
+        'root_origin': 'str',
+        'checksum': 'str',
+        'size': 'int'
     }
 
     attribute_map = {
@@ -79,10 +80,13 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         'virtual_env_type': 'virtual_env_type',
         'owner': 'owner',
         'virtual_size': 'virtual_size',
-        'properties': 'properties'
+        'properties': 'properties',
+        'root_origin': '__root_origin',
+        'checksum': 'checksum',
+        'size': 'size'
     }
 
-    def __init__(self, visibility=None, name=None, protected=None, container_format=None, disk_format=None, tags=None, min_ram=None, min_disk=None, status=None, created_at=None, updated_at=None, _self=None, id=None, file=None, schema=None, image_source_type=None, image_size=None, isregistered=None, os_version=None, os_type=None, platform=None, os_bit=None, imagetype=None, virtual_env_type=None, owner=None, virtual_size=None, properties=None):
+    def __init__(self, visibility=None, name=None, protected=None, container_format=None, disk_format=None, tags=None, min_ram=None, min_disk=None, status=None, created_at=None, updated_at=None, _self=None, id=None, file=None, schema=None, image_source_type=None, image_size=None, isregistered=None, os_version=None, os_type=None, platform=None, os_bit=None, imagetype=None, virtual_env_type=None, owner=None, virtual_size=None, properties=None, root_origin=None, checksum=None, size=None):
         """GlanceCreateImageMetadataResponse - a model defined in huaweicloud sdk"""
         
         super(GlanceCreateImageMetadataResponse, self).__init__()
@@ -114,6 +118,9 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         self._owner = None
         self._virtual_size = None
         self._properties = None
+        self._root_origin = None
+        self._checksum = None
+        self._size = None
         self.discriminator = None
 
         if visibility is not None:
@@ -170,6 +177,12 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
             self.virtual_size = virtual_size
         if properties is not None:
             self.properties = properties
+        if root_origin is not None:
+            self.root_origin = root_origin
+        if checksum is not None:
+            self.checksum = checksum
+        if size is not None:
+            self.size = size
 
     @property
     def visibility(self):
@@ -765,6 +778,72 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         """
         self._properties = properties
 
+    @property
+    def root_origin(self):
+        """Gets the root_origin of this GlanceCreateImageMetadataResponse.
+
+        表示当前镜像来源是从外部导入。取值：file
+
+        :return: The root_origin of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._root_origin
+
+    @root_origin.setter
+    def root_origin(self, root_origin):
+        """Sets the root_origin of this GlanceCreateImageMetadataResponse.
+
+        表示当前镜像来源是从外部导入。取值：file
+
+        :param root_origin: The root_origin of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._root_origin = root_origin
+
+    @property
+    def checksum(self):
+        """Gets the checksum of this GlanceCreateImageMetadataResponse.
+
+        镜像文件md5值。
+
+        :return: The checksum of this GlanceCreateImageMetadataResponse.
+        :rtype: str
+        """
+        return self._checksum
+
+    @checksum.setter
+    def checksum(self, checksum):
+        """Sets the checksum of this GlanceCreateImageMetadataResponse.
+
+        镜像文件md5值。
+
+        :param checksum: The checksum of this GlanceCreateImageMetadataResponse.
+        :type: str
+        """
+        self._checksum = checksum
+
+    @property
+    def size(self):
+        """Gets the size of this GlanceCreateImageMetadataResponse.
+
+        目前暂时不使用。
+
+        :return: The size of this GlanceCreateImageMetadataResponse.
+        :rtype: int
+        """
+        return self._size
+
+    @size.setter
+    def size(self, size):
+        """Sets the size of this GlanceCreateImageMetadataResponse.
+
+        目前暂时不使用。
+
+        :param size: The size of this GlanceCreateImageMetadataResponse.
+        :type: int
+        """
+        self._size = size
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -793,8 +872,8 @@ class GlanceCreateImageMetadataResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

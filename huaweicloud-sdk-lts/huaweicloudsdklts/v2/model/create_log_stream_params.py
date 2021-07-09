@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -23,27 +21,22 @@ class CreateLogStreamParams:
     sensitive_list = []
 
     openapi_types = {
-        'log_stream_name': 'str',
-        'tag': 'object'
+        'log_stream_name': 'str'
     }
 
     attribute_map = {
-        'log_stream_name': 'log_stream_name',
-        'tag': 'tag'
+        'log_stream_name': 'log_stream_name'
     }
 
-    def __init__(self, log_stream_name=None, tag=None):
+    def __init__(self, log_stream_name=None):
         """CreateLogStreamParams - a model defined in huaweicloud sdk"""
         
         
 
         self._log_stream_name = None
-        self._tag = None
         self.discriminator = None
 
         self.log_stream_name = log_stream_name
-        if tag is not None:
-            self.tag = tag
 
     @property
     def log_stream_name(self):
@@ -66,28 +59,6 @@ class CreateLogStreamParams:
         :type: str
         """
         self._log_stream_name = log_stream_name
-
-    @property
-    def tag(self):
-        """Gets the tag of this CreateLogStreamParams.
-
-        日志流Tag集合，不同日志流属性不同。
-
-        :return: The tag of this CreateLogStreamParams.
-        :rtype: object
-        """
-        return self._tag
-
-    @tag.setter
-    def tag(self, tag):
-        """Sets the tag of this CreateLogStreamParams.
-
-        日志流Tag集合，不同日志流属性不同。
-
-        :param tag: The tag of this CreateLogStreamParams.
-        :type: object
-        """
-        self._tag = tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -117,8 +88,8 @@ class CreateLogStreamParams:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

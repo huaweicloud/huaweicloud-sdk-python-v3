@@ -14,8 +14,6 @@ from huaweicloudsdkmpc.v1.model.audio_file import AudioFile
 from huaweicloudsdkmpc.v1.model.audio_info import AudioInfo
 from huaweicloudsdkmpc.v1.model.audio_process import AudioProcess
 from huaweicloudsdkmpc.v1.model.audio_track import AudioTrack
-from huaweicloudsdkmpc.v1.model.audit import Audit
-from huaweicloudsdkmpc.v1.model.audit_report import AuditReport
 from huaweicloudsdkmpc.v1.model.av_parameters import AvParameters
 from huaweicloudsdkmpc.v1.model.basic_task_info import BasicTaskInfo
 from huaweicloudsdkmpc.v1.model.basic_watermark import BasicWatermark

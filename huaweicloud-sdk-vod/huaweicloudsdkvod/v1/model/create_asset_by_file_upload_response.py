@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -65,7 +63,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
     def asset_id(self):
         """Gets the asset_id of this CreateAssetByFileUploadResponse.
 
-        媒体ID<br/> 
+        媒体ID 
 
         :return: The asset_id of this CreateAssetByFileUploadResponse.
         :rtype: str
@@ -76,7 +74,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
     def asset_id(self, asset_id):
         """Sets the asset_id of this CreateAssetByFileUploadResponse.
 
-        媒体ID<br/> 
+        媒体ID 
 
         :param asset_id: The asset_id of this CreateAssetByFileUploadResponse.
         :type: str
@@ -87,7 +85,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
     def video_upload_url(self):
         """Gets the video_upload_url of this CreateAssetByFileUploadResponse.
 
-        视频上传URL<br/> 
+        视频上传URL 
 
         :return: The video_upload_url of this CreateAssetByFileUploadResponse.
         :rtype: str
@@ -98,7 +96,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
     def video_upload_url(self, video_upload_url):
         """Sets the video_upload_url of this CreateAssetByFileUploadResponse.
 
-        视频上传URL<br/> 
+        视频上传URL 
 
         :param video_upload_url: The video_upload_url of this CreateAssetByFileUploadResponse.
         :type: str
@@ -109,7 +107,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
     def cover_upload_url(self):
         """Gets the cover_upload_url of this CreateAssetByFileUploadResponse.
 
-        封面上传地址<br/> 
+        封面上传地址 
 
         :return: The cover_upload_url of this CreateAssetByFileUploadResponse.
         :rtype: str
@@ -120,7 +118,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
     def cover_upload_url(self, cover_upload_url):
         """Sets the cover_upload_url of this CreateAssetByFileUploadResponse.
 
-        封面上传地址<br/> 
+        封面上传地址 
 
         :param cover_upload_url: The cover_upload_url of this CreateAssetByFileUploadResponse.
         :type: str
@@ -131,7 +129,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
     def subtitle_upload_urls(self):
         """Gets the subtitle_upload_urls of this CreateAssetByFileUploadResponse.
 
-        字幕文件上传url数组<br/> 
+        字幕文件上传url数组 
 
         :return: The subtitle_upload_urls of this CreateAssetByFileUploadResponse.
         :rtype: list[str]
@@ -142,7 +140,7 @@ class CreateAssetByFileUploadResponse(SdkResponse):
     def subtitle_upload_urls(self, subtitle_upload_urls):
         """Sets the subtitle_upload_urls of this CreateAssetByFileUploadResponse.
 
-        字幕文件上传url数组<br/> 
+        字幕文件上传url数组 
 
         :param subtitle_upload_urls: The subtitle_upload_urls of this CreateAssetByFileUploadResponse.
         :type: list[str]
@@ -197,8 +195,8 @@ class CreateAssetByFileUploadResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

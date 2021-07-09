@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -101,7 +99,7 @@ class UploadAssetReq:
     def video_md5(self):
         """Gets the video_md5 of this UploadAssetReq.
 
-        视频文件MD5值。 建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
+        视频文件MD5值。  建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
 
         :return: The video_md5 of this UploadAssetReq.
         :rtype: str
@@ -112,7 +110,7 @@ class UploadAssetReq:
     def video_md5(self, video_md5):
         """Sets the video_md5 of this UploadAssetReq.
 
-        视频文件MD5值。 建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
+        视频文件MD5值。  建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
 
         :param video_md5: The video_md5 of this UploadAssetReq.
         :type: str
@@ -123,7 +121,7 @@ class UploadAssetReq:
     def video_name(self):
         """Gets the video_name of this UploadAssetReq.
 
-        视频文件名。 文件名后缀为可选。
+        视频文件名。  文件名后缀为可选。
 
         :return: The video_name of this UploadAssetReq.
         :rtype: str
@@ -134,7 +132,7 @@ class UploadAssetReq:
     def video_name(self, video_name):
         """Sets the video_name of this UploadAssetReq.
 
-        视频文件名。 文件名后缀为可选。
+        视频文件名。  文件名后缀为可选。
 
         :param video_name: The video_name of this UploadAssetReq.
         :type: str
@@ -167,7 +165,7 @@ class UploadAssetReq:
     def cover_id(self):
         """Gets the cover_id of this UploadAssetReq.
 
-        封面ID。 取值范围：[0,7]。 当前只支持一张封面，只能设置为0。
+        封面ID。  取值范围：[0,7]。  当前只支持一张封面，只能设置为0。
 
         :return: The cover_id of this UploadAssetReq.
         :rtype: int
@@ -178,7 +176,7 @@ class UploadAssetReq:
     def cover_id(self, cover_id):
         """Sets the cover_id of this UploadAssetReq.
 
-        封面ID。 取值范围：[0,7]。 当前只支持一张封面，只能设置为0。
+        封面ID。  取值范围：[0,7]。  当前只支持一张封面，只能设置为0。
 
         :param cover_id: The cover_id of this UploadAssetReq.
         :type: int
@@ -189,7 +187,7 @@ class UploadAssetReq:
     def cover_type(self):
         """Gets the cover_type of this UploadAssetReq.
 
-        封面图片格式类型。 取值如下： - JPG - PNG
+        封面图片格式类型。  取值如下： - JPG - PNG
 
         :return: The cover_type of this UploadAssetReq.
         :rtype: str
@@ -200,7 +198,7 @@ class UploadAssetReq:
     def cover_type(self, cover_type):
         """Sets the cover_type of this UploadAssetReq.
 
-        封面图片格式类型。 取值如下： - JPG - PNG
+        封面图片格式类型。  取值如下： - JPG - PNG
 
         :param cover_type: The cover_type of this UploadAssetReq.
         :type: str
@@ -279,8 +277,8 @@ class UploadAssetReq:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

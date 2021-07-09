@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -49,7 +47,7 @@ class ReviewDetail:
     def confidence(self):
         """Gets the confidence of this ReviewDetail.
 
-        置信度。 取值范围：[0,1]。
+        置信度。  取值范围：[0,1]。
 
         :return: The confidence of this ReviewDetail.
         :rtype: str
@@ -60,7 +58,7 @@ class ReviewDetail:
     def confidence(self, confidence):
         """Sets the confidence of this ReviewDetail.
 
-        置信度。 取值范围：[0,1]。
+        置信度。  取值范围：[0,1]。
 
         :param confidence: The confidence of this ReviewDetail.
         :type: str
@@ -117,8 +115,8 @@ class ReviewDetail:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

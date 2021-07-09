@@ -1,0 +1,107 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+
+
+class NetworkSubnet:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'subnet_id': 'str'
+    }
+
+    attribute_map = {
+        'subnet_id': 'subnetID'
+    }
+
+    def __init__(self, subnet_id=None):
+        """NetworkSubnet - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._subnet_id = None
+        self.discriminator = None
+
+        self.subnet_id = subnet_id
+
+    @property
+    def subnet_id(self):
+        """Gets the subnet_id of this NetworkSubnet.
+
+        用于创建控制节点的subnet的IPv4网络ID(暂不支持IPv6)。获取方法如下：- 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。- 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)](tag:hws)[[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)](tag:hws_hk)
+
+        :return: The subnet_id of this NetworkSubnet.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this NetworkSubnet.
+
+        用于创建控制节点的subnet的IPv4网络ID(暂不支持IPv6)。获取方法如下：- 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。- 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)](tag:hws)[[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)](tag:hws_hk)
+
+        :param subnet_id: The subnet_id of this NetworkSubnet.
+        :type: str
+        """
+        self._subnet_id = subnet_id
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        import simplejson as json
+        return json.dumps(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, NetworkSubnet):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

@@ -4,7 +4,6 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdkswr.v2.model.auth_info import AuthInfo
-from huaweicloudsdkswr.v2.model.certification import Certification
 from huaweicloudsdkswr.v2.model.create_image_sync_repo_request import CreateImageSyncRepoRequest
 from huaweicloudsdkswr.v2.model.create_image_sync_repo_request_body import CreateImageSyncRepoRequestBody
 from huaweicloudsdkswr.v2.model.create_image_sync_repo_response import CreateImageSyncRepoResponse

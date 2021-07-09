@@ -5,6 +5,7 @@ from __future__ import absolute_import
 # import models into model package
 from huaweicloudsdkbms.v1.model.absolute import Absolute
 from huaweicloudsdkbms.v1.model.address import Address
+from huaweicloudsdkbms.v1.model.address_info import AddressInfo
 from huaweicloudsdkbms.v1.model.addresses import Addresses
 from huaweicloudsdkbms.v1.model.attach_baremetal_server_volume_request import AttachBaremetalServerVolumeRequest
 from huaweicloudsdkbms.v1.model.attach_baremetal_server_volume_response import AttachBaremetalServerVolumeResponse

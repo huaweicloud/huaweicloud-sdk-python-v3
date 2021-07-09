@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -59,12 +57,10 @@ class TransTemplateGroup:
         self._description = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if status is not None:
             self.status = status
-        if type is not None:
-            self.type = type
+        self.type = type
         if auto_encrypt is not None:
             self.auto_encrypt = auto_encrypt
         if quality_info_list is not None:
@@ -80,7 +76,7 @@ class TransTemplateGroup:
     def name(self):
         """Gets the name of this TransTemplateGroup.
 
-        模板组名称<br/> 
+        模板组名称。
 
         :return: The name of this TransTemplateGroup.
         :rtype: str
@@ -91,7 +87,7 @@ class TransTemplateGroup:
     def name(self, name):
         """Sets the name of this TransTemplateGroup.
 
-        模板组名称<br/> 
+        模板组名称。
 
         :param name: The name of this TransTemplateGroup.
         :type: str
@@ -102,7 +98,7 @@ class TransTemplateGroup:
     def status(self):
         """Gets the status of this TransTemplateGroup.
 
-        是否设置默认<br/> 
+        是否设置默认。
 
         :return: The status of this TransTemplateGroup.
         :rtype: str
@@ -113,7 +109,7 @@ class TransTemplateGroup:
     def status(self, status):
         """Sets the status of this TransTemplateGroup.
 
-        是否设置默认<br/> 
+        是否设置默认。
 
         :param status: The status of this TransTemplateGroup.
         :type: str
@@ -124,7 +120,7 @@ class TransTemplateGroup:
     def type(self):
         """Gets the type of this TransTemplateGroup.
 
-        模板组类型<br/> 
+        模板组类型。
 
         :return: The type of this TransTemplateGroup.
         :rtype: str
@@ -135,7 +131,7 @@ class TransTemplateGroup:
     def type(self, type):
         """Sets the type of this TransTemplateGroup.
 
-        模板组类型<br/> 
+        模板组类型。
 
         :param type: The type of this TransTemplateGroup.
         :type: str
@@ -146,7 +142,7 @@ class TransTemplateGroup:
     def auto_encrypt(self):
         """Gets the auto_encrypt of this TransTemplateGroup.
 
-        是否自动加密
+        是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出必须要为HLS。
 
         :return: The auto_encrypt of this TransTemplateGroup.
         :rtype: int
@@ -157,7 +153,7 @@ class TransTemplateGroup:
     def auto_encrypt(self, auto_encrypt):
         """Sets the auto_encrypt of this TransTemplateGroup.
 
-        是否自动加密
+        是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出必须要为HLS。
 
         :param auto_encrypt: The auto_encrypt of this TransTemplateGroup.
         :type: int
@@ -168,7 +164,7 @@ class TransTemplateGroup:
     def quality_info_list(self):
         """Gets the quality_info_list of this TransTemplateGroup.
 
-        画质配置信息列表<br/> 
+        画质配置信息列表。
 
         :return: The quality_info_list of this TransTemplateGroup.
         :rtype: list[QualityInfo]
@@ -179,7 +175,7 @@ class TransTemplateGroup:
     def quality_info_list(self, quality_info_list):
         """Sets the quality_info_list of this TransTemplateGroup.
 
-        画质配置信息列表<br/> 
+        画质配置信息列表。
 
         :param quality_info_list: The quality_info_list of this TransTemplateGroup.
         :type: list[QualityInfo]
@@ -210,7 +206,7 @@ class TransTemplateGroup:
     def watermark_template_ids(self):
         """Gets the watermark_template_ids of this TransTemplateGroup.
 
-        绑定的水印模板组ID数组<br/> 
+        绑定的水印模板组ID数组。
 
         :return: The watermark_template_ids of this TransTemplateGroup.
         :rtype: list[str]
@@ -221,7 +217,7 @@ class TransTemplateGroup:
     def watermark_template_ids(self, watermark_template_ids):
         """Sets the watermark_template_ids of this TransTemplateGroup.
 
-        绑定的水印模板组ID数组<br/> 
+        绑定的水印模板组ID数组。
 
         :param watermark_template_ids: The watermark_template_ids of this TransTemplateGroup.
         :type: list[str]
@@ -232,7 +228,7 @@ class TransTemplateGroup:
     def description(self):
         """Gets the description of this TransTemplateGroup.
 
-        模板介绍<br/> 
+        模板介绍。
 
         :return: The description of this TransTemplateGroup.
         :rtype: str
@@ -243,7 +239,7 @@ class TransTemplateGroup:
     def description(self, description):
         """Sets the description of this TransTemplateGroup.
 
-        模板介绍<br/> 
+        模板介绍。
 
         :param description: The description of this TransTemplateGroup.
         :type: str
@@ -278,8 +274,8 @@ class TransTemplateGroup:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -49,7 +47,7 @@ class CreateNamespaceAuthRequest:
     def namespace(self):
         """Gets the namespace of this CreateNamespaceAuthRequest.
 
-        组织名称
+        组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
         :return: The namespace of this CreateNamespaceAuthRequest.
         :rtype: str
@@ -60,7 +58,7 @@ class CreateNamespaceAuthRequest:
     def namespace(self, namespace):
         """Sets the namespace of this CreateNamespaceAuthRequest.
 
-        组织名称
+        组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
         :param namespace: The namespace of this CreateNamespaceAuthRequest.
         :type: str
@@ -115,8 +113,8 @@ class CreateNamespaceAuthRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

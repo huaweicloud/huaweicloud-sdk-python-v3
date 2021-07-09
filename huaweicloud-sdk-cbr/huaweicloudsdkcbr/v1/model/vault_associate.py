@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -24,26 +22,32 @@ class VaultAssociate:
 
     openapi_types = {
         'destination_vault_id': 'str',
-        'policy_id': 'str'
+        'policy_id': 'str',
+        'add_policy_ids': 'list[str]'
     }
 
     attribute_map = {
         'destination_vault_id': 'destination_vault_id',
-        'policy_id': 'policy_id'
+        'policy_id': 'policy_id',
+        'add_policy_ids': 'add_policy_ids'
     }
 
-    def __init__(self, destination_vault_id=None, policy_id=None):
+    def __init__(self, destination_vault_id=None, policy_id=None, add_policy_ids=None):
         """VaultAssociate - a model defined in huaweicloud sdk"""
         
         
 
         self._destination_vault_id = None
         self._policy_id = None
+        self._add_policy_ids = None
         self.discriminator = None
 
         if destination_vault_id is not None:
             self.destination_vault_id = destination_vault_id
-        self.policy_id = policy_id
+        if policy_id is not None:
+            self.policy_id = policy_id
+        if add_policy_ids is not None:
+            self.add_policy_ids = add_policy_ids
 
     @property
     def destination_vault_id(self):
@@ -71,7 +75,7 @@ class VaultAssociate:
     def policy_id(self):
         """Gets the policy_id of this VaultAssociate.
 
-        策略ID
+        策略ID。policy_id字段与add_policy_ids字段在一次请求中有且只有一个。
 
         :return: The policy_id of this VaultAssociate.
         :rtype: str
@@ -82,12 +86,34 @@ class VaultAssociate:
     def policy_id(self, policy_id):
         """Sets the policy_id of this VaultAssociate.
 
-        策略ID
+        策略ID。policy_id字段与add_policy_ids字段在一次请求中有且只有一个。
 
         :param policy_id: The policy_id of this VaultAssociate.
         :type: str
         """
         self._policy_id = policy_id
+
+    @property
+    def add_policy_ids(self):
+        """Gets the add_policy_ids of this VaultAssociate.
+
+        多策略场景下，绑定新策略的id列表。policy_id字段与add_policy_ids字段在一次请求中有且只有一个。
+
+        :return: The add_policy_ids of this VaultAssociate.
+        :rtype: list[str]
+        """
+        return self._add_policy_ids
+
+    @add_policy_ids.setter
+    def add_policy_ids(self, add_policy_ids):
+        """Sets the add_policy_ids of this VaultAssociate.
+
+        多策略场景下，绑定新策略的id列表。policy_id字段与add_policy_ids字段在一次请求中有且只有一个。
+
+        :param add_policy_ids: The add_policy_ids of this VaultAssociate.
+        :type: list[str]
+        """
+        self._add_policy_ids = add_policy_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -117,8 +143,8 @@ class VaultAssociate:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

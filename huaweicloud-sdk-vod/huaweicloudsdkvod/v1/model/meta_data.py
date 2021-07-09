@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -85,7 +83,7 @@ class MetaData:
     def codec(self):
         """Gets the codec of this MetaData.
 
-        视频编码格式。 取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
+        视频编码格式。  取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
 
         :return: The codec of this MetaData.
         :rtype: str
@@ -96,7 +94,7 @@ class MetaData:
     def codec(self, codec):
         """Sets the codec of this MetaData.
 
-        视频编码格式。 取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
+        视频编码格式。  取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
 
         :param codec: The codec of this MetaData.
         :type: str
@@ -107,7 +105,7 @@ class MetaData:
     def duration(self):
         """Gets the duration of this MetaData.
 
-        视频时长。 若视频的原时长为非整数，则该字段值为原时长的向上取整。
+        视频时长。  若视频的原时长为非整数，则该字段值为原时长的向上取整。
 
         :return: The duration of this MetaData.
         :rtype: int
@@ -118,7 +116,7 @@ class MetaData:
     def duration(self, duration):
         """Sets the duration of this MetaData.
 
-        视频时长。 若视频的原时长为非整数，则该字段值为原时长的向上取整。
+        视频时长。  若视频的原时长为非整数，则该字段值为原时长的向上取整。
 
         :param duration: The duration of this MetaData.
         :type: int
@@ -129,7 +127,7 @@ class MetaData:
     def video_size(self):
         """Gets the video_size of this MetaData.
 
-        视频文件大小。 单位：字节。
+        视频文件大小。  单位：字节。
 
         :return: The video_size of this MetaData.
         :rtype: int
@@ -140,7 +138,7 @@ class MetaData:
     def video_size(self, video_size):
         """Sets the video_size of this MetaData.
 
-        视频文件大小。 单位：字节。
+        视频文件大小。  单位：字节。
 
         :param video_size: The video_size of this MetaData.
         :type: int
@@ -217,7 +215,7 @@ class MetaData:
     def frame_rate(self):
         """Gets the frame_rate of this MetaData.
 
-        帧率（单位：帧每秒）。 取值如下： - FRAMERATE_AUTO = 1, - FRAMERATE_10 = 2, - FRAMERATE_15 = 3, - FRAMERATE_2397 = 4, // 23.97 fps - FRAMERATE_24 = 5, - FRAMERATE_25 = 6, - FRAMERATE_2997 = 7, // 29.97 fps - FRAMERATE_30 = 8, - FRAMERATE_50 = 9, - FRAMERATE_60 = 10 默认值：1。 单位：帧每秒。
+        帧率（单位：帧每秒）。  取值如下： - FRAMERATE_AUTO = 1, - FRAMERATE_10 = 2, - FRAMERATE_15 = 3, - FRAMERATE_2397 = 4, // 23.97 fps - FRAMERATE_24 = 5, - FRAMERATE_25 = 6, - FRAMERATE_2997 = 7, // 29.97 fps - FRAMERATE_30 = 8, - FRAMERATE_50 = 9, - FRAMERATE_60 = 10  默认值：1。  单位：帧每秒。
 
         :return: The frame_rate of this MetaData.
         :rtype: int
@@ -228,7 +226,7 @@ class MetaData:
     def frame_rate(self, frame_rate):
         """Sets the frame_rate of this MetaData.
 
-        帧率（单位：帧每秒）。 取值如下： - FRAMERATE_AUTO = 1, - FRAMERATE_10 = 2, - FRAMERATE_15 = 3, - FRAMERATE_2397 = 4, // 23.97 fps - FRAMERATE_24 = 5, - FRAMERATE_25 = 6, - FRAMERATE_2997 = 7, // 29.97 fps - FRAMERATE_30 = 8, - FRAMERATE_50 = 9, - FRAMERATE_60 = 10 默认值：1。 单位：帧每秒。
+        帧率（单位：帧每秒）。  取值如下： - FRAMERATE_AUTO = 1, - FRAMERATE_10 = 2, - FRAMERATE_15 = 3, - FRAMERATE_2397 = 4, // 23.97 fps - FRAMERATE_24 = 5, - FRAMERATE_25 = 6, - FRAMERATE_2997 = 7, // 29.97 fps - FRAMERATE_30 = 8, - FRAMERATE_50 = 9, - FRAMERATE_60 = 10  默认值：1。  单位：帧每秒。
 
         :param frame_rate: The frame_rate of this MetaData.
         :type: int
@@ -239,7 +237,7 @@ class MetaData:
     def quality(self):
         """Gets the quality of this MetaData.
 
-        清晰度。 取值如下： - FULL_HD：超高清 - HD：高清 - SD：标清 - FLUENT：流畅 - AD：自适应 - 2K - 4K
+        清晰度。  取值如下： - FULL_HD：超高清 - HD：高清 - SD：标清 - FLUENT：流畅 - AD：自适应 - 2K - 4K
 
         :return: The quality of this MetaData.
         :rtype: str
@@ -250,7 +248,7 @@ class MetaData:
     def quality(self, quality):
         """Sets the quality of this MetaData.
 
-        清晰度。 取值如下： - FULL_HD：超高清 - HD：高清 - SD：标清 - FLUENT：流畅 - AD：自适应 - 2K - 4K
+        清晰度。  取值如下： - FULL_HD：超高清 - HD：高清 - SD：标清 - FLUENT：流畅 - AD：自适应 - 2K - 4K
 
         :param quality: The quality of this MetaData.
         :type: str
@@ -307,8 +305,8 @@ class MetaData:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

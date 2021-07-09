@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -55,7 +53,7 @@ class AuthenticatingProxy:
     def ca(self):
         """Gets the ca of this AuthenticatingProxy.
 
-        authenticating_proxy模式配置的x509格式CA证书(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。 最大长度：1M
+        authenticating_proxy模式配置的x509格式CA证书(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。  最大长度：1M
 
         :return: The ca of this AuthenticatingProxy.
         :rtype: str
@@ -66,7 +64,7 @@ class AuthenticatingProxy:
     def ca(self, ca):
         """Sets the ca of this AuthenticatingProxy.
 
-        authenticating_proxy模式配置的x509格式CA证书(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。 最大长度：1M
+        authenticating_proxy模式配置的x509格式CA证书(base64编码)。当集群认证模式为authenticating_proxy时，此项必须填写。  最大长度：1M
 
         :param ca: The ca of this AuthenticatingProxy.
         :type: str
@@ -145,8 +143,8 @@ class AuthenticatingProxy:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

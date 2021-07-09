@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -62,7 +60,7 @@ class Output:
     def play_type(self):
         """Gets the play_type of this Output.
 
-        协议类型。 取值如下： - hls - dash - mp4
+        协议类型。  取值如下： - hls - dash - mp4
 
         :return: The play_type of this Output.
         :rtype: str
@@ -73,7 +71,7 @@ class Output:
     def play_type(self, play_type):
         """Sets the play_type of this Output.
 
-        协议类型。 取值如下： - hls - dash - mp4
+        协议类型。  取值如下： - hls - dash - mp4
 
         :param play_type: The play_type of this Output.
         :type: str
@@ -106,7 +104,7 @@ class Output:
     def encrypted(self):
         """Gets the encrypted of this Output.
 
-        标记流是否已被加密。 取值如下： - 0：表示未加密。 - 1：表示已被加密。
+        标记流是否已被加密。  取值如下： - 0：表示未加密。 - 1：表示已被加密。
 
         :return: The encrypted of this Output.
         :rtype: int
@@ -117,7 +115,7 @@ class Output:
     def encrypted(self, encrypted):
         """Sets the encrypted of this Output.
 
-        标记流是否已被加密。 取值如下： - 0：表示未加密。 - 1：表示已被加密。
+        标记流是否已被加密。  取值如下： - 0：表示未加密。 - 1：表示已被加密。
 
         :param encrypted: The encrypted of this Output.
         :type: int
@@ -128,7 +126,7 @@ class Output:
     def quality(self):
         """Gets the quality of this Output.
 
-        清晰度。 取值如下： - FLUENT：流畅 - SD：标清 - HD：高清 - FULL_HD：超清
+        清晰度。  取值如下： - FLUENT：流畅 - SD：标清 - HD：高清 - FULL_HD：超清
 
         :return: The quality of this Output.
         :rtype: str
@@ -139,7 +137,7 @@ class Output:
     def quality(self, quality):
         """Sets the quality of this Output.
 
-        清晰度。 取值如下： - FLUENT：流畅 - SD：标清 - HD：高清 - FULL_HD：超清
+        清晰度。  取值如下： - FLUENT：流畅 - SD：标清 - HD：高清 - FULL_HD：超清
 
         :param quality: The quality of this Output.
         :type: str
@@ -194,8 +192,8 @@ class Output:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

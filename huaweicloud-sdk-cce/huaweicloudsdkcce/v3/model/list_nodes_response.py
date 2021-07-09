@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -25,7 +23,7 @@ class ListNodesResponse(SdkResponse):
     openapi_types = {
         'kind': 'str',
         'api_version': 'str',
-        'items': 'list[V3Node]'
+        'items': 'list[Node]'
     }
 
     attribute_map = {
@@ -102,7 +100,7 @@ class ListNodesResponse(SdkResponse):
         节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。
 
         :return: The items of this ListNodesResponse.
-        :rtype: list[V3Node]
+        :rtype: list[Node]
         """
         return self._items
 
@@ -113,7 +111,7 @@ class ListNodesResponse(SdkResponse):
         节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。
 
         :param items: The items of this ListNodesResponse.
-        :type: list[V3Node]
+        :type: list[Node]
         """
         self._items = items
 
@@ -145,8 +143,8 @@ class ListNodesResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

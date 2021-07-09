@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -23,78 +21,206 @@ class ShowEdgeCloudResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'coverage': 'CoverageResp',
+        'create_at': 'str',
+        'description': 'str',
+        'edge_regions': 'int',
+        'fail_reason': 'FailReason',
+        'failed_num': 'int',
         'id': 'str',
         'name': 'str',
-        'description': 'str',
-        'coverage': 'CoverageResp',
-        'failed_num': 'int',
+        'stacks': 'list[Stack]',
         'status': 'str',
         'success_num': 'int',
-        'edge_regions': 'int',
-        'create_at': 'str',
-        'fail_reason': 'FailReason',
-        'stacks': 'list[Stack]',
         'update_at': 'str'
     }
 
     attribute_map = {
+        'coverage': 'coverage',
+        'create_at': 'create_at',
+        'description': 'description',
+        'edge_regions': 'edge_regions',
+        'fail_reason': 'fail_reason',
+        'failed_num': 'failed_num',
         'id': 'id',
         'name': 'name',
-        'description': 'description',
-        'coverage': 'coverage',
-        'failed_num': 'failed_num',
+        'stacks': 'stacks',
         'status': 'status',
         'success_num': 'success_num',
-        'edge_regions': 'edge_regions',
-        'create_at': 'create_at',
-        'fail_reason': 'fail_reason',
-        'stacks': 'stacks',
         'update_at': 'update_at'
     }
 
-    def __init__(self, id=None, name=None, description=None, coverage=None, failed_num=None, status=None, success_num=None, edge_regions=None, create_at=None, fail_reason=None, stacks=None, update_at=None):
+    def __init__(self, coverage=None, create_at=None, description=None, edge_regions=None, fail_reason=None, failed_num=None, id=None, name=None, stacks=None, status=None, success_num=None, update_at=None):
         """ShowEdgeCloudResponse - a model defined in huaweicloud sdk"""
         
         super(ShowEdgeCloudResponse, self).__init__()
 
+        self._coverage = None
+        self._create_at = None
+        self._description = None
+        self._edge_regions = None
+        self._fail_reason = None
+        self._failed_num = None
         self._id = None
         self._name = None
-        self._description = None
-        self._coverage = None
-        self._failed_num = None
+        self._stacks = None
         self._status = None
         self._success_num = None
-        self._edge_regions = None
-        self._create_at = None
-        self._fail_reason = None
-        self._stacks = None
         self._update_at = None
         self.discriminator = None
 
+        if coverage is not None:
+            self.coverage = coverage
+        if create_at is not None:
+            self.create_at = create_at
+        if description is not None:
+            self.description = description
+        if edge_regions is not None:
+            self.edge_regions = edge_regions
+        if fail_reason is not None:
+            self.fail_reason = fail_reason
+        if failed_num is not None:
+            self.failed_num = failed_num
         if id is not None:
             self.id = id
         if name is not None:
             self.name = name
-        if description is not None:
-            self.description = description
-        if coverage is not None:
-            self.coverage = coverage
-        if failed_num is not None:
-            self.failed_num = failed_num
+        if stacks is not None:
+            self.stacks = stacks
         if status is not None:
             self.status = status
         if success_num is not None:
             self.success_num = success_num
-        if edge_regions is not None:
-            self.edge_regions = edge_regions
-        if create_at is not None:
-            self.create_at = create_at
-        if fail_reason is not None:
-            self.fail_reason = fail_reason
-        if stacks is not None:
-            self.stacks = stacks
         if update_at is not None:
             self.update_at = update_at
+
+    @property
+    def coverage(self):
+        """Gets the coverage of this ShowEdgeCloudResponse.
+
+
+        :return: The coverage of this ShowEdgeCloudResponse.
+        :rtype: CoverageResp
+        """
+        return self._coverage
+
+    @coverage.setter
+    def coverage(self, coverage):
+        """Sets the coverage of this ShowEdgeCloudResponse.
+
+
+        :param coverage: The coverage of this ShowEdgeCloudResponse.
+        :type: CoverageResp
+        """
+        self._coverage = coverage
+
+    @property
+    def create_at(self):
+        """Gets the create_at of this ShowEdgeCloudResponse.
+
+        创建时间。
+
+        :return: The create_at of this ShowEdgeCloudResponse.
+        :rtype: str
+        """
+        return self._create_at
+
+    @create_at.setter
+    def create_at(self, create_at):
+        """Sets the create_at of this ShowEdgeCloudResponse.
+
+        创建时间。
+
+        :param create_at: The create_at of this ShowEdgeCloudResponse.
+        :type: str
+        """
+        self._create_at = create_at
+
+    @property
+    def description(self):
+        """Gets the description of this ShowEdgeCloudResponse.
+
+        描述。
+
+        :return: The description of this ShowEdgeCloudResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ShowEdgeCloudResponse.
+
+        描述。
+
+        :param description: The description of this ShowEdgeCloudResponse.
+        :type: str
+        """
+        self._description = description
+
+    @property
+    def edge_regions(self):
+        """Gets the edge_regions of this ShowEdgeCloudResponse.
+
+        边缘业务支持的边缘区域数目，等同于边缘业务下所有实例的区域数目总和
+
+        :return: The edge_regions of this ShowEdgeCloudResponse.
+        :rtype: int
+        """
+        return self._edge_regions
+
+    @edge_regions.setter
+    def edge_regions(self, edge_regions):
+        """Sets the edge_regions of this ShowEdgeCloudResponse.
+
+        边缘业务支持的边缘区域数目，等同于边缘业务下所有实例的区域数目总和
+
+        :param edge_regions: The edge_regions of this ShowEdgeCloudResponse.
+        :type: int
+        """
+        self._edge_regions = edge_regions
+
+    @property
+    def fail_reason(self):
+        """Gets the fail_reason of this ShowEdgeCloudResponse.
+
+
+        :return: The fail_reason of this ShowEdgeCloudResponse.
+        :rtype: FailReason
+        """
+        return self._fail_reason
+
+    @fail_reason.setter
+    def fail_reason(self, fail_reason):
+        """Sets the fail_reason of this ShowEdgeCloudResponse.
+
+
+        :param fail_reason: The fail_reason of this ShowEdgeCloudResponse.
+        :type: FailReason
+        """
+        self._fail_reason = fail_reason
+
+    @property
+    def failed_num(self):
+        """Gets the failed_num of this ShowEdgeCloudResponse.
+
+        边缘业务创建失败的虚拟机数量。
+
+        :return: The failed_num of this ShowEdgeCloudResponse.
+        :rtype: int
+        """
+        return self._failed_num
+
+    @failed_num.setter
+    def failed_num(self, failed_num):
+        """Sets the failed_num of this ShowEdgeCloudResponse.
+
+        边缘业务创建失败的虚拟机数量。
+
+        :param failed_num: The failed_num of this ShowEdgeCloudResponse.
+        :type: int
+        """
+        self._failed_num = failed_num
 
     @property
     def id(self):
@@ -141,68 +267,26 @@ class ShowEdgeCloudResponse(SdkResponse):
         self._name = name
 
     @property
-    def description(self):
-        """Gets the description of this ShowEdgeCloudResponse.
+    def stacks(self):
+        """Gets the stacks of this ShowEdgeCloudResponse.
 
-        描述。
+        边缘业务资源组。
 
-        :return: The description of this ShowEdgeCloudResponse.
-        :rtype: str
+        :return: The stacks of this ShowEdgeCloudResponse.
+        :rtype: list[Stack]
         """
-        return self._description
+        return self._stacks
 
-    @description.setter
-    def description(self, description):
-        """Sets the description of this ShowEdgeCloudResponse.
+    @stacks.setter
+    def stacks(self, stacks):
+        """Sets the stacks of this ShowEdgeCloudResponse.
 
-        描述。
+        边缘业务资源组。
 
-        :param description: The description of this ShowEdgeCloudResponse.
-        :type: str
+        :param stacks: The stacks of this ShowEdgeCloudResponse.
+        :type: list[Stack]
         """
-        self._description = description
-
-    @property
-    def coverage(self):
-        """Gets the coverage of this ShowEdgeCloudResponse.
-
-
-        :return: The coverage of this ShowEdgeCloudResponse.
-        :rtype: CoverageResp
-        """
-        return self._coverage
-
-    @coverage.setter
-    def coverage(self, coverage):
-        """Sets the coverage of this ShowEdgeCloudResponse.
-
-
-        :param coverage: The coverage of this ShowEdgeCloudResponse.
-        :type: CoverageResp
-        """
-        self._coverage = coverage
-
-    @property
-    def failed_num(self):
-        """Gets the failed_num of this ShowEdgeCloudResponse.
-
-        边缘业务创建失败的虚拟机数量。
-
-        :return: The failed_num of this ShowEdgeCloudResponse.
-        :rtype: int
-        """
-        return self._failed_num
-
-    @failed_num.setter
-    def failed_num(self, failed_num):
-        """Sets the failed_num of this ShowEdgeCloudResponse.
-
-        边缘业务创建失败的虚拟机数量。
-
-        :param failed_num: The failed_num of this ShowEdgeCloudResponse.
-        :type: int
-        """
-        self._failed_num = failed_num
+        self._stacks = stacks
 
     @property
     def status(self):
@@ -247,92 +331,6 @@ class ShowEdgeCloudResponse(SdkResponse):
         :type: int
         """
         self._success_num = success_num
-
-    @property
-    def edge_regions(self):
-        """Gets the edge_regions of this ShowEdgeCloudResponse.
-
-        边缘业务支持的边缘区域数目，等同于边缘业务下所有实例的区域数目总和
-
-        :return: The edge_regions of this ShowEdgeCloudResponse.
-        :rtype: int
-        """
-        return self._edge_regions
-
-    @edge_regions.setter
-    def edge_regions(self, edge_regions):
-        """Sets the edge_regions of this ShowEdgeCloudResponse.
-
-        边缘业务支持的边缘区域数目，等同于边缘业务下所有实例的区域数目总和
-
-        :param edge_regions: The edge_regions of this ShowEdgeCloudResponse.
-        :type: int
-        """
-        self._edge_regions = edge_regions
-
-    @property
-    def create_at(self):
-        """Gets the create_at of this ShowEdgeCloudResponse.
-
-        创建时间。
-
-        :return: The create_at of this ShowEdgeCloudResponse.
-        :rtype: str
-        """
-        return self._create_at
-
-    @create_at.setter
-    def create_at(self, create_at):
-        """Sets the create_at of this ShowEdgeCloudResponse.
-
-        创建时间。
-
-        :param create_at: The create_at of this ShowEdgeCloudResponse.
-        :type: str
-        """
-        self._create_at = create_at
-
-    @property
-    def fail_reason(self):
-        """Gets the fail_reason of this ShowEdgeCloudResponse.
-
-
-        :return: The fail_reason of this ShowEdgeCloudResponse.
-        :rtype: FailReason
-        """
-        return self._fail_reason
-
-    @fail_reason.setter
-    def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ShowEdgeCloudResponse.
-
-
-        :param fail_reason: The fail_reason of this ShowEdgeCloudResponse.
-        :type: FailReason
-        """
-        self._fail_reason = fail_reason
-
-    @property
-    def stacks(self):
-        """Gets the stacks of this ShowEdgeCloudResponse.
-
-        边缘业务资源组。
-
-        :return: The stacks of this ShowEdgeCloudResponse.
-        :rtype: list[Stack]
-        """
-        return self._stacks
-
-    @stacks.setter
-    def stacks(self, stacks):
-        """Sets the stacks of this ShowEdgeCloudResponse.
-
-        边缘业务资源组。
-
-        :param stacks: The stacks of this ShowEdgeCloudResponse.
-        :type: list[Stack]
-        """
-        self._stacks = stacks
 
     @property
     def update_at(self):
@@ -384,8 +382,8 @@ class ShowEdgeCloudResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

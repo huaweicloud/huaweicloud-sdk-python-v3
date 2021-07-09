@@ -114,7 +114,7 @@ class CceAsyncClient(Client):
     def create_addon_instance_async(self, request):
         """创建AddonInstance
 
-        根据提供的插件模板，安装插件实例。 >插件管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。 
+        根据提供的插件模板，安装插件实例。 
 
         :param CreateAddonInstanceRequest request
         :return: CreateAddonInstanceResponse
@@ -124,7 +124,7 @@ class CceAsyncClient(Client):
     def create_addon_instance_with_http_info(self, request):
         """创建AddonInstance
 
-        根据提供的插件模板，安装插件实例。 >插件管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。 
+        根据提供的插件模板，安装插件实例。 
 
         :param CreateAddonInstanceRequest request
         :return: CreateAddonInstanceResponse
@@ -244,7 +244,7 @@ class CceAsyncClient(Client):
     def create_cluster_async(self, request):
         """创建集群
 
-        该API用于创建一个空集群（即只有控制节点Master，没有工作节点Node）。请在调用本接口完成集群创建之后，通过[[创建节点](https://support.huaweicloud.com/api-cce/cce_02_0242.html)](tag:hws)[[创建节点](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0242.html)](tag:hws_hk)添加节点。 >   - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 >   - 调用该接口创建集群时，默认不安装ICAgent。ICAgent是应用性能管理APM的采集代理，运行在应用所在的服务器上，用于实时采集探针所获取的数据，安装ICAgent是使用应用性能管理APM的前提。若需安装ICAgent，请参照[[安装ICAgent](https://support.huaweicloud.com/usermanual-apm/apm_02_0013.html)](tag:hws)[[安装ICAgent](https://support.huaweicloud.com/intl/zh-cn/usermanual-apm/apm_02_0013.html)](tag:hws_hk)。 >   - 默认情况下，一个帐户只能创建 5 个集群（每个Region下），如果您需要创建更多的集群，请[[提交工单](https://console.huaweicloud.com/console/#/quota)](tag:hws)[[提交工单](https://console-intl.huaweicloud.com/console/?locale=zh-cn#/quota)](tag:hws_hk)申请增加配额。
+        该API用于创建一个空集群（即只有控制节点Master，没有工作节点Node）。请在调用本接口完成集群创建之后，通过[[创建节点](https://support.huaweicloud.com/api-cce/cce_02_0242.html)](tag:hws)[[创建节点](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0242.html)](tag:hws_hk)添加节点。  >   - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 >   - 调用该接口创建集群时，默认不安装ICAgent。ICAgent是应用性能管理APM的采集代理，运行在应用所在的服务器上，用于实时采集探针所获取的数据，安装ICAgent是使用应用性能管理APM的前提。若需安装ICAgent，请参照[[安装ICAgent](https://support.huaweicloud.com/usermanual-apm/apm_02_0013.html)](tag:hws)[[安装ICAgent](https://support.huaweicloud.com/intl/zh-cn/usermanual-apm/apm_02_0013.html)](tag:hws_hk)。 >   - 默认情况下，一个帐户只能创建5个集群（每个Region下），如果您需要创建更多的集群，请[[提交工单](https://console.huaweicloud.com/console/#/quota)](tag:hws)[[提交工单](https://console-intl.huaweicloud.com/console/?locale=zh-cn#/quota)](tag:hws_hk)申请增加配额。
 
         :param CreateClusterRequest request
         :return: CreateClusterResponse
@@ -254,7 +254,7 @@ class CceAsyncClient(Client):
     def create_cluster_with_http_info(self, request):
         """创建集群
 
-        该API用于创建一个空集群（即只有控制节点Master，没有工作节点Node）。请在调用本接口完成集群创建之后，通过[[创建节点](https://support.huaweicloud.com/api-cce/cce_02_0242.html)](tag:hws)[[创建节点](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0242.html)](tag:hws_hk)添加节点。 >   - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 >   - 调用该接口创建集群时，默认不安装ICAgent。ICAgent是应用性能管理APM的采集代理，运行在应用所在的服务器上，用于实时采集探针所获取的数据，安装ICAgent是使用应用性能管理APM的前提。若需安装ICAgent，请参照[[安装ICAgent](https://support.huaweicloud.com/usermanual-apm/apm_02_0013.html)](tag:hws)[[安装ICAgent](https://support.huaweicloud.com/intl/zh-cn/usermanual-apm/apm_02_0013.html)](tag:hws_hk)。 >   - 默认情况下，一个帐户只能创建 5 个集群（每个Region下），如果您需要创建更多的集群，请[[提交工单](https://console.huaweicloud.com/console/#/quota)](tag:hws)[[提交工单](https://console-intl.huaweicloud.com/console/?locale=zh-cn#/quota)](tag:hws_hk)申请增加配额。
+        该API用于创建一个空集群（即只有控制节点Master，没有工作节点Node）。请在调用本接口完成集群创建之后，通过[[创建节点](https://support.huaweicloud.com/api-cce/cce_02_0242.html)](tag:hws)[[创建节点](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0242.html)](tag:hws_hk)添加节点。  >   - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。 >   - 调用该接口创建集群时，默认不安装ICAgent。ICAgent是应用性能管理APM的采集代理，运行在应用所在的服务器上，用于实时采集探针所获取的数据，安装ICAgent是使用应用性能管理APM的前提。若需安装ICAgent，请参照[[安装ICAgent](https://support.huaweicloud.com/usermanual-apm/apm_02_0013.html)](tag:hws)[[安装ICAgent](https://support.huaweicloud.com/intl/zh-cn/usermanual-apm/apm_02_0013.html)](tag:hws_hk)。 >   - 默认情况下，一个帐户只能创建5个集群（每个Region下），如果您需要创建更多的集群，请[[提交工单](https://console.huaweicloud.com/console/#/quota)](tag:hws)[[提交工单](https://console-intl.huaweicloud.com/console/?locale=zh-cn#/quota)](tag:hws_hk)申请增加配额。
 
         :param CreateClusterRequest request
         :return: CreateClusterResponse
@@ -347,7 +347,7 @@ class CceAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["Port-ID"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -372,7 +372,7 @@ class CceAsyncClient(Client):
     def create_node_async(self, request):
         """创建节点
 
-        该API用于在指定集群下创建节点。 > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于在指定集群下创建节点。  > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。  > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param CreateNodeRequest request
         :return: CreateNodeResponse
@@ -382,7 +382,7 @@ class CceAsyncClient(Client):
     def create_node_with_http_info(self, request):
         """创建节点
 
-        该API用于在指定集群下创建节点。 > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于在指定集群下创建节点。  > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。  > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param CreateNodeRequest request
         :return: CreateNodeResponse
@@ -439,7 +439,7 @@ class CceAsyncClient(Client):
     def create_node_pool_async(self, request):
         """创建节点池
 
-        该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。 > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
+        该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。  > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。  > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
 
         :param CreateNodePoolRequest request
         :return: CreateNodePoolResponse
@@ -449,7 +449,7 @@ class CceAsyncClient(Client):
     def create_node_pool_with_http_info(self, request):
         """创建节点池
 
-        该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。 > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
+        该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。  > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。  > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
 
         :param CreateNodePoolRequest request
         :return: CreateNodePoolResponse
@@ -504,7 +504,7 @@ class CceAsyncClient(Client):
     def delete_addon_instance_async(self, request):
         """删除AddonInstance
 
-        删除插件实例的功能。 >插件管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。 
+        删除插件实例的功能。 
 
         :param DeleteAddonInstanceRequest request
         :return: DeleteAddonInstanceResponse
@@ -514,7 +514,7 @@ class CceAsyncClient(Client):
     def delete_addon_instance_with_http_info(self, request):
         """删除AddonInstance
 
-        删除插件实例的功能。 >插件管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。 
+        删除插件实例的功能。 
 
         :param DeleteAddonInstanceRequest request
         :return: DeleteAddonInstanceResponse
@@ -569,7 +569,7 @@ class CceAsyncClient(Client):
     def delete_cloud_persistent_volume_claims_async(self, request):
         """删除PVC
 
-        该API用于删除指定Namespace下的PVC（PersistentVolumeClaim）对象，并可以选择保留后端的云存储。 >存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。 
+        该API用于删除指定Namespace下的PVC（PersistentVolumeClaim）对象，并可以选择保留后端的云存储。  >存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。 
 
         :param DeleteCloudPersistentVolumeClaimsRequest request
         :return: DeleteCloudPersistentVolumeClaimsResponse
@@ -579,7 +579,7 @@ class CceAsyncClient(Client):
     def delete_cloud_persistent_volume_claims_with_http_info(self, request):
         """删除PVC
 
-        该API用于删除指定Namespace下的PVC（PersistentVolumeClaim）对象，并可以选择保留后端的云存储。 >存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。 
+        该API用于删除指定Namespace下的PVC（PersistentVolumeClaim）对象，并可以选择保留后端的云存储。  >存储管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。如果使用https://Endpoint/uri，则必须指定请求header中的X-Cluster-ID参数。 
 
         :param DeleteCloudPersistentVolumeClaimsRequest request
         :return: DeleteCloudPersistentVolumeClaimsResponse
@@ -656,7 +656,7 @@ class CceAsyncClient(Client):
         :return: DeleteClusterResponse
         """
 
-        all_params = ['cluster_id', 'delete_efs', 'delete_eni', 'delete_evs', 'delete_net', 'delete_obs', 'delete_sfs']
+        all_params = ['cluster_id', 'delete_efs', 'delete_eni', 'delete_evs', 'delete_net', 'delete_obs', 'delete_sfs', 'tobedeleted']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -681,6 +681,8 @@ class CceAsyncClient(Client):
             query_params.append(('delete_obs', local_var_params['delete_obs']))
         if 'delete_sfs' in local_var_params:
             query_params.append(('delete_sfs', local_var_params['delete_sfs']))
+        if 'tobedeleted' in local_var_params:
+            query_params.append(('tobedeleted', local_var_params['tobedeleted']))
 
         header_params = {}
 
@@ -910,7 +912,7 @@ class CceAsyncClient(Client):
     def list_addon_instances_async(self, request):
         """获取AddonInstance列表
 
-        获取集群所有已安装插件实例 >插件管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。 
+        获取集群所有已安装插件实例 
 
         :param ListAddonInstancesRequest request
         :return: ListAddonInstancesResponse
@@ -920,7 +922,7 @@ class CceAsyncClient(Client):
     def list_addon_instances_with_http_info(self, request):
         """获取AddonInstance列表
 
-        获取集群所有已安装插件实例 >插件管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。 
+        获取集群所有已安装插件实例 
 
         :param ListAddonInstancesRequest request
         :return: ListAddonInstancesResponse
@@ -973,7 +975,7 @@ class CceAsyncClient(Client):
     def list_addon_templates_async(self, request):
         """查询AddonTemplates列表
 
-        插件模板查询接口，查询插件信息。 >插件管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。 
+        插件模板查询接口，查询插件信息。 
 
         :param ListAddonTemplatesRequest request
         :return: ListAddonTemplatesResponse
@@ -983,7 +985,7 @@ class CceAsyncClient(Client):
     def list_addon_templates_with_http_info(self, request):
         """查询AddonTemplates列表
 
-        插件模板查询接口，查询插件信息。 >插件管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。 
+        插件模板查询接口，查询插件信息。 
 
         :param ListAddonTemplatesRequest request
         :return: ListAddonTemplatesResponse
@@ -1230,10 +1232,142 @@ class CceAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def migrate_node_async(self, request):
+        """节点迁移
+
+        该API用于在指定集群下迁移节点到另一集群。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+
+        :param MigrateNodeRequest request
+        :return: MigrateNodeResponse
+        """
+        return self.migrate_node_with_http_info(request)
+
+    def migrate_node_with_http_info(self, request):
+        """节点迁移
+
+        该API用于在指定集群下迁移节点到另一集群。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+
+        :param MigrateNodeRequest request
+        :return: MigrateNodeResponse
+        """
+
+        all_params = ['cluster_id', 'target_cluster_id', 'migrate_nodes_task']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'target_cluster_id' in local_var_params:
+            path_params['target_cluster_id'] = local_var_params['target_cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/operation/migrateto/{target_cluster_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='MigrateNodeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def remove_node_async(self, request):
+        """节点移除
+
+        该API用于在指定集群下移除节点。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+
+        :param RemoveNodeRequest request
+        :return: RemoveNodeResponse
+        """
+        return self.remove_node_with_http_info(request)
+
+    def remove_node_with_http_info(self, request):
+        """节点移除
+
+        该API用于在指定集群下移除节点。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+
+        :param RemoveNodeRequest request
+        :return: RemoveNodeResponse
+        """
+
+        all_params = ['cluster_id', 'remove_nodes_task']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/operation/remove',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RemoveNodeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_addon_instance_async(self, request):
         """获取AddonInstance详情
 
-        获取插件实例详情。 >插件管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。 
+        获取插件实例详情。 
 
         :param ShowAddonInstanceRequest request
         :return: ShowAddonInstanceResponse
@@ -1243,7 +1377,7 @@ class CceAsyncClient(Client):
     def show_addon_instance_with_http_info(self, request):
         """获取AddonInstance详情
 
-        获取插件实例详情。 >插件管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。 
+        获取插件实例详情。 
 
         :param ShowAddonInstanceRequest request
         :return: ShowAddonInstanceResponse
@@ -1556,7 +1690,7 @@ class CceAsyncClient(Client):
     def update_addon_instance_async(self, request):
         """更新AddonInstance
 
-        更新插件实例的功能。 >插件管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。 
+        更新插件实例的功能。 
 
         :param UpdateAddonInstanceRequest request
         :return: UpdateAddonInstanceResponse
@@ -1566,7 +1700,7 @@ class CceAsyncClient(Client):
     def update_addon_instance_with_http_info(self, request):
         """更新AddonInstance
 
-        更新插件实例的功能。 >插件管理的URL格式为：https://{clusterid}.Endpoint/uri。其中{clusterid}为集群ID，uri为资源路径，也即API访问的路径。 
+        更新插件实例的功能。 
 
         :param UpdateAddonInstanceRequest request
         :return: UpdateAddonInstanceResponse
@@ -1753,7 +1887,7 @@ class CceAsyncClient(Client):
     def update_node_pool_async(self, request):
         """更新指定节点池
 
-        该API用于更新指定的节点池。仅支持集群在处于可用、扩容、缩容状态时调用。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 > - 当前仅支持更新节点池名称，spec下的initialNodeCount，k8sTags， taints，login，userTags与节点池的扩缩容配置相关字段。
+        该API用于更新指定的节点池。仅支持集群在处于可用、扩容、缩容状态时调用。  > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径  > - 当前仅支持更新节点池名称，spec下的initialNodeCount，k8sTags， taints，login，userTags与节点池的扩缩容配置相关字段。
 
         :param UpdateNodePoolRequest request
         :return: UpdateNodePoolResponse
@@ -1763,7 +1897,7 @@ class CceAsyncClient(Client):
     def update_node_pool_with_http_info(self, request):
         """更新指定节点池
 
-        该API用于更新指定的节点池。仅支持集群在处于可用、扩容、缩容状态时调用。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 > - 当前仅支持更新节点池名称，spec下的initialNodeCount，k8sTags， taints，login，userTags与节点池的扩缩容配置相关字段。
+        该API用于更新指定的节点池。仅支持集群在处于可用、扩容、缩容状态时调用。  > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径  > - 当前仅支持更新节点池名称，spec下的initialNodeCount，k8sTags， taints，login，userTags与节点池的扩缩容配置相关字段。
 
         :param UpdateNodePoolRequest request
         :return: UpdateNodePoolResponse

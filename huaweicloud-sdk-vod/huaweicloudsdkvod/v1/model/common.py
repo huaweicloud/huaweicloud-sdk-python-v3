@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -64,7 +62,7 @@ class Common:
     def pvc(self):
         """Gets the pvc of this Common.
 
-        pvc开关<br/> 
+        pvc开关。
 
         :return: The pvc of this Common.
         :rtype: str
@@ -75,7 +73,7 @@ class Common:
     def pvc(self, pvc):
         """Sets the pvc of this Common.
 
-        pvc开关<br/> 
+        pvc开关。
 
         :param pvc: The pvc of this Common.
         :type: str
@@ -86,7 +84,7 @@ class Common:
     def pvc_version(self):
         """Gets the pvc_version of this Common.
 
-        pvc版本<br/> 
+        pvc版本。
 
         :return: The pvc_version of this Common.
         :rtype: str
@@ -97,7 +95,7 @@ class Common:
     def pvc_version(self, pvc_version):
         """Sets the pvc_version of this Common.
 
-        pvc版本<br/> 
+        pvc版本。
 
         :param pvc_version: The pvc_version of this Common.
         :type: str
@@ -108,7 +106,7 @@ class Common:
     def video_codec(self):
         """Gets the video_codec of this Common.
 
-        视频编码格式<br/> 
+        视频编码格式。
 
         :return: The video_codec of this Common.
         :rtype: str
@@ -119,7 +117,7 @@ class Common:
     def video_codec(self, video_codec):
         """Sets the video_codec of this Common.
 
-        视频编码格式<br/> 
+        视频编码格式。
 
         :param video_codec: The video_codec of this Common.
         :type: str
@@ -130,7 +128,7 @@ class Common:
     def audio_codec(self):
         """Gets the audio_codec of this Common.
 
-        音频编码格式(有效值范围)<br/> AUDIO_CODECTYPE_AAC=1 (default)<br/> AUDIO_CODECTYPE_HEAAC1=2<br/> AUDIO_CODECTYPE_HEAAC2=3<br/> AUDIO_CODECTYPE_MP3=4<br/> 
+        音频编码格式(有效值范围) - 1：AUDIO_CODECTYPE_AAC - 2：AUDIO_CODECTYPE_HEAAC1 - 3：AUDIO_CODECTYPE_HEAAC2 - 4：AUDIO_CODECTYPE_MP3  默认值为1。
 
         :return: The audio_codec of this Common.
         :rtype: str
@@ -141,7 +139,7 @@ class Common:
     def audio_codec(self, audio_codec):
         """Sets the audio_codec of this Common.
 
-        音频编码格式(有效值范围)<br/> AUDIO_CODECTYPE_AAC=1 (default)<br/> AUDIO_CODECTYPE_HEAAC1=2<br/> AUDIO_CODECTYPE_HEAAC2=3<br/> AUDIO_CODECTYPE_MP3=4<br/> 
+        音频编码格式(有效值范围) - 1：AUDIO_CODECTYPE_AAC - 2：AUDIO_CODECTYPE_HEAAC1 - 3：AUDIO_CODECTYPE_HEAAC2 - 4：AUDIO_CODECTYPE_MP3  默认值为1。
 
         :param audio_codec: The audio_codec of this Common.
         :type: str
@@ -152,7 +150,7 @@ class Common:
     def hls_interval(self):
         """Gets the hls_interval of this Common.
 
-        分片时长(默认为5秒)<br/> 
+        分片时长(默认为5秒)。
 
         :return: The hls_interval of this Common.
         :rtype: int
@@ -163,7 +161,7 @@ class Common:
     def hls_interval(self, hls_interval):
         """Sets the hls_interval of this Common.
 
-        分片时长(默认为5秒)<br/> 
+        分片时长(默认为5秒)。
 
         :param hls_interval: The hls_interval of this Common.
         :type: int
@@ -198,8 +196,8 @@ class Common:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

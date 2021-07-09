@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -70,7 +68,7 @@ class UpdateBucketAuthorizedReq:
     def operation(self):
         """Gets the operation of this UpdateBucketAuthorizedReq.
 
-        是否进行桶授权。 取值如下： - 0：取消授权。 - 1：授权。
+        是否进行桶授权。  取值如下： - 0：取消授权。 - 1：授权。
 
         :return: The operation of this UpdateBucketAuthorizedReq.
         :rtype: str
@@ -81,7 +79,7 @@ class UpdateBucketAuthorizedReq:
     def operation(self, operation):
         """Sets the operation of this UpdateBucketAuthorizedReq.
 
-        是否进行桶授权。 取值如下： - 0：取消授权。 - 1：授权。
+        是否进行桶授权。  取值如下： - 0：取消授权。 - 1：授权。
 
         :param operation: The operation of this UpdateBucketAuthorizedReq.
         :type: str
@@ -116,8 +114,8 @@ class UpdateBucketAuthorizedReq:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

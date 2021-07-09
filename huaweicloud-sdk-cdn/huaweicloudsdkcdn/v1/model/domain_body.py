@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -61,7 +59,7 @@ class DomainBody:
     def domain_name(self):
         """Gets the domain_name of this DomainBody.
 
-        加速域名。（ 国际英文域名：域名用字母（A-Z，a-z，大小写等价）、数字（0-9）和连接符（-）组成，各级域名之间用实点（.）连接，国际域名50个字符。注意连接符（-）不能作为域名的开头或结尾字符。）
+        加速域名。（ 国际英文域名：域名用字母（A-Z，a-z，大小写等价）、数字（0-9）和连接符（-）组成，各级域名之间用实点（.）连接，国际域名75个字符。注意连接符（-）不能作为域名的开头或结尾字符。）
 
         :return: The domain_name of this DomainBody.
         :rtype: str
@@ -72,7 +70,7 @@ class DomainBody:
     def domain_name(self, domain_name):
         """Sets the domain_name of this DomainBody.
 
-        加速域名。（ 国际英文域名：域名用字母（A-Z，a-z，大小写等价）、数字（0-9）和连接符（-）组成，各级域名之间用实点（.）连接，国际域名50个字符。注意连接符（-）不能作为域名的开头或结尾字符。）
+        加速域名。（ 国际英文域名：域名用字母（A-Z，a-z，大小写等价）、数字（0-9）和连接符（-）组成，各级域名之间用实点（.）连接，国际域名75个字符。注意连接符（-）不能作为域名的开头或结尾字符。）
 
         :param domain_name: The domain_name of this DomainBody.
         :type: str
@@ -105,7 +103,7 @@ class DomainBody:
     def sources(self):
         """Gets the sources of this DomainBody.
 
-        源站域名或源站IP，IP仅支持IPv4，多个源站IP以多个对象传入，多个对象的origin_type都必须为ipaddr，最多支持10个源站IP对象。
+        源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
 
         :return: The sources of this DomainBody.
         :rtype: list[Sources]
@@ -116,7 +114,7 @@ class DomainBody:
     def sources(self, sources):
         """Sets the sources of this DomainBody.
 
-        源站域名或源站IP，IP仅支持IPv4，多个源站IP以多个对象传入，多个对象的origin_type都必须为ipaddr，最多支持10个源站IP对象。
+        源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
 
         :param sources: The sources of this DomainBody.
         :type: list[Sources]
@@ -195,8 +193,8 @@ class DomainBody:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

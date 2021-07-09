@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -55,10 +53,8 @@ class ShowTopUrlRequest:
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if start_time is not None:
-            self.start_time = start_time
-        if end_time is not None:
-            self.end_time = end_time
+        self.start_time = start_time
+        self.end_time = end_time
         self.domain_name = domain_name
         if service_area is not None:
             self.service_area = service_area
@@ -224,8 +220,8 @@ class ShowTopUrlRequest:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

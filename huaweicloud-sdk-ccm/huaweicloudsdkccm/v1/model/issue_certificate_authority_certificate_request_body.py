@@ -1,0 +1,187 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+
+
+class IssueCertificateAuthorityCertificateRequestBody:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'issuer_id': 'str',
+        'path_length': 'int',
+        'signature_algorithm': 'str',
+        'validity': 'Validity'
+    }
+
+    attribute_map = {
+        'issuer_id': 'issuer_id',
+        'path_length': 'path_length',
+        'signature_algorithm': 'signature_algorithm',
+        'validity': 'validity'
+    }
+
+    def __init__(self, issuer_id=None, path_length=None, signature_algorithm=None, validity=None):
+        """IssueCertificateAuthorityCertificateRequestBody - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._issuer_id = None
+        self._path_length = None
+        self._signature_algorithm = None
+        self._validity = None
+        self.discriminator = None
+
+        if issuer_id is not None:
+            self.issuer_id = issuer_id
+        if path_length is not None:
+            self.path_length = path_length
+        if signature_algorithm is not None:
+            self.signature_algorithm = signature_algorithm
+        if validity is not None:
+            self.validity = validity
+
+    @property
+    def issuer_id(self):
+        """Gets the issuer_id of this IssueCertificateAuthorityCertificateRequestBody.
+
+        签发CA ID
+
+        :return: The issuer_id of this IssueCertificateAuthorityCertificateRequestBody.
+        :rtype: str
+        """
+        return self._issuer_id
+
+    @issuer_id.setter
+    def issuer_id(self, issuer_id):
+        """Sets the issuer_id of this IssueCertificateAuthorityCertificateRequestBody.
+
+        签发CA ID
+
+        :param issuer_id: The issuer_id of this IssueCertificateAuthorityCertificateRequestBody.
+        :type: str
+        """
+        self._issuer_id = issuer_id
+
+    @property
+    def path_length(self):
+        """Gets the path_length of this IssueCertificateAuthorityCertificateRequestBody.
+
+        路径长度
+
+        :return: The path_length of this IssueCertificateAuthorityCertificateRequestBody.
+        :rtype: int
+        """
+        return self._path_length
+
+    @path_length.setter
+    def path_length(self, path_length):
+        """Sets the path_length of this IssueCertificateAuthorityCertificateRequestBody.
+
+        路径长度
+
+        :param path_length: The path_length of this IssueCertificateAuthorityCertificateRequestBody.
+        :type: int
+        """
+        self._path_length = path_length
+
+    @property
+    def signature_algorithm(self):
+        """Gets the signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
+
+        签名算法
+
+        :return: The signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
+        :rtype: str
+        """
+        return self._signature_algorithm
+
+    @signature_algorithm.setter
+    def signature_algorithm(self, signature_algorithm):
+        """Sets the signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
+
+        签名算法
+
+        :param signature_algorithm: The signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
+        :type: str
+        """
+        self._signature_algorithm = signature_algorithm
+
+    @property
+    def validity(self):
+        """Gets the validity of this IssueCertificateAuthorityCertificateRequestBody.
+
+
+        :return: The validity of this IssueCertificateAuthorityCertificateRequestBody.
+        :rtype: Validity
+        """
+        return self._validity
+
+    @validity.setter
+    def validity(self, validity):
+        """Sets the validity of this IssueCertificateAuthorityCertificateRequestBody.
+
+
+        :param validity: The validity of this IssueCertificateAuthorityCertificateRequestBody.
+        :type: Validity
+        """
+        self._validity = validity
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        import simplejson as json
+        return json.dumps(self.to_dict())
+
+    def __repr__(self):
+        """For `print` and `pprint`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, IssueCertificateAuthorityCertificateRequestBody):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -34,8 +32,8 @@ class QosConferenceInfo:
         'screen_alarm': 'str',
         'cpu_alarm': 'str',
         'time_zone_id': 'str',
-        'start_time': 'str',
-        'end_time': 'str',
+        'start_time': 'int',
+        'end_time': 'int',
         'duration': 'int',
         'participants': 'int',
         'webinar': 'bool'
@@ -362,10 +360,10 @@ class QosConferenceInfo:
     def start_time(self):
         """Gets the start_time of this QosConferenceInfo.
 
-        会议开始时间。UTC时间，格式 YYYY-MM-DD HH:MM。
+        会议开始时间(UTC时间), Unix时间戳（单位毫秒）。
 
         :return: The start_time of this QosConferenceInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._start_time
 
@@ -373,10 +371,10 @@ class QosConferenceInfo:
     def start_time(self, start_time):
         """Sets the start_time of this QosConferenceInfo.
 
-        会议开始时间。UTC时间，格式 YYYY-MM-DD HH:MM。
+        会议开始时间(UTC时间), Unix时间戳（单位毫秒）。
 
         :param start_time: The start_time of this QosConferenceInfo.
-        :type: str
+        :type: int
         """
         self._start_time = start_time
 
@@ -384,10 +382,10 @@ class QosConferenceInfo:
     def end_time(self):
         """Gets the end_time of this QosConferenceInfo.
 
-        议结束时间。UTC时间，格式 YYYY-MM-DD HH:MM。 说明： * 在线会议：会议召开中，endTime = 会议预计结束时间。 * 历史会议：会议已结束，endTime = 会议实际结束时间。
+        会议结束时间(UTC时间), Unix时间戳（单位毫秒）。 说明： * 在线会议：会议召开中，endTime = 会议预计结束时间。 * 历史会议：会议已结束，endTime = 会议实际结束时间。
 
         :return: The end_time of this QosConferenceInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._end_time
 
@@ -395,10 +393,10 @@ class QosConferenceInfo:
     def end_time(self, end_time):
         """Sets the end_time of this QosConferenceInfo.
 
-        议结束时间。UTC时间，格式 YYYY-MM-DD HH:MM。 说明： * 在线会议：会议召开中，endTime = 会议预计结束时间。 * 历史会议：会议已结束，endTime = 会议实际结束时间。
+        会议结束时间(UTC时间), Unix时间戳（单位毫秒）。 说明： * 在线会议：会议召开中，endTime = 会议预计结束时间。 * 历史会议：会议已结束，endTime = 会议实际结束时间。
 
         :param end_time: The end_time of this QosConferenceInfo.
-        :type: str
+        :type: int
         """
         self._end_time = end_time
 
@@ -496,8 +494,8 @@ class QosConferenceInfo:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

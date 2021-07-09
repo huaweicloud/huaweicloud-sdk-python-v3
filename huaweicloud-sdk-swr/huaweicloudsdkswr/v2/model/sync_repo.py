@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -32,7 +30,7 @@ class SyncRepo:
         'remote_namespace': 'str',
         'remote_region_id': 'str',
         'repo_name': 'str',
-        'syn_auto': 'bool',
+        'sync_auto': 'bool',
         'updated_at': 'str'
     }
 
@@ -46,11 +44,11 @@ class SyncRepo:
         'remote_namespace': 'remoteNamespace',
         'remote_region_id': 'remoteRegionId',
         'repo_name': 'repoName',
-        'syn_auto': 'synAuto',
+        'sync_auto': 'syncAuto',
         'updated_at': 'updatedAt'
     }
 
-    def __init__(self, created_at=None, domain_id=None, domain_name=None, id=None, namespace=None, override=None, remote_namespace=None, remote_region_id=None, repo_name=None, syn_auto=None, updated_at=None):
+    def __init__(self, created_at=None, domain_id=None, domain_name=None, id=None, namespace=None, override=None, remote_namespace=None, remote_region_id=None, repo_name=None, sync_auto=None, updated_at=None):
         """SyncRepo - a model defined in huaweicloud sdk"""
         
         
@@ -64,7 +62,7 @@ class SyncRepo:
         self._remote_namespace = None
         self._remote_region_id = None
         self._repo_name = None
-        self._syn_auto = None
+        self._sync_auto = None
         self._updated_at = None
         self.discriminator = None
 
@@ -77,7 +75,7 @@ class SyncRepo:
         self.remote_namespace = remote_namespace
         self.remote_region_id = remote_region_id
         self.repo_name = repo_name
-        self.syn_auto = syn_auto
+        self.sync_auto = sync_auto
         self.updated_at = updated_at
 
     @property
@@ -279,26 +277,26 @@ class SyncRepo:
         self._repo_name = repo_name
 
     @property
-    def syn_auto(self):
-        """Gets the syn_auto of this SyncRepo.
+    def sync_auto(self):
+        """Gets the sync_auto of this SyncRepo.
 
         自动同步
 
-        :return: The syn_auto of this SyncRepo.
+        :return: The sync_auto of this SyncRepo.
         :rtype: bool
         """
-        return self._syn_auto
+        return self._sync_auto
 
-    @syn_auto.setter
-    def syn_auto(self, syn_auto):
-        """Sets the syn_auto of this SyncRepo.
+    @sync_auto.setter
+    def sync_auto(self, sync_auto):
+        """Sets the sync_auto of this SyncRepo.
 
         自动同步
 
-        :param syn_auto: The syn_auto of this SyncRepo.
+        :param sync_auto: The sync_auto of this SyncRepo.
         :type: bool
         """
-        self._syn_auto = syn_auto
+        self._sync_auto = sync_auto
 
     @property
     def updated_at(self):
@@ -350,8 +348,8 @@ class SyncRepo:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

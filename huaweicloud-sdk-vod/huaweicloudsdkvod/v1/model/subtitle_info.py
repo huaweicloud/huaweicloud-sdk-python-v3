@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -60,7 +58,7 @@ class SubtitleInfo:
     def url(self):
         """Gets the url of this SubtitleInfo.
 
-        字幕文件的下载地址<br/> 
+        字幕文件的下载地址 
 
         :return: The url of this SubtitleInfo.
         :rtype: str
@@ -71,7 +69,7 @@ class SubtitleInfo:
     def url(self, url):
         """Sets the url of this SubtitleInfo.
 
-        字幕文件的下载地址<br/> 
+        字幕文件的下载地址 
 
         :param url: The url of this SubtitleInfo.
         :type: str
@@ -82,7 +80,7 @@ class SubtitleInfo:
     def id(self):
         """Gets the id of this SubtitleInfo.
 
-        字幕文件id<br/> 
+        字幕文件id 
 
         :return: The id of this SubtitleInfo.
         :rtype: int
@@ -93,7 +91,7 @@ class SubtitleInfo:
     def id(self, id):
         """Sets the id of this SubtitleInfo.
 
-        字幕文件id<br/> 
+        字幕文件id 
 
         :param id: The id of this SubtitleInfo.
         :type: int
@@ -104,7 +102,7 @@ class SubtitleInfo:
     def type(self):
         """Gets the type of this SubtitleInfo.
 
-        字幕文件类型<br/> 
+        字幕文件类型 
 
         :return: The type of this SubtitleInfo.
         :rtype: str
@@ -115,7 +113,7 @@ class SubtitleInfo:
     def type(self, type):
         """Sets the type of this SubtitleInfo.
 
-        字幕文件类型<br/> 
+        字幕文件类型 
 
         :param type: The type of this SubtitleInfo.
         :type: str
@@ -126,7 +124,7 @@ class SubtitleInfo:
     def language(self):
         """Gets the language of this SubtitleInfo.
 
-        字幕文件语言种类<br/> 
+        字幕文件语言种类 
 
         :return: The language of this SubtitleInfo.
         :rtype: str
@@ -137,7 +135,7 @@ class SubtitleInfo:
     def language(self, language):
         """Sets the language of this SubtitleInfo.
 
-        字幕文件语言种类<br/> 
+        字幕文件语言种类 
 
         :param language: The language of this SubtitleInfo.
         :type: str
@@ -172,8 +170,8 @@ class SubtitleInfo:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

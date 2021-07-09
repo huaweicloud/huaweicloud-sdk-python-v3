@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -24,7 +22,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
 
     openapi_types = {
         'total_count': 'int',
-        'order_info': 'CustomerOrderV2',
+        'order_info': 'CustomerOrderV3',
         'order_line_items': 'list[OrderLineItemEntityV2]'
     }
 
@@ -79,7 +77,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
 
 
         :return: The order_info of this ShowCustomerOrderDetailsResponse.
-        :rtype: CustomerOrderV2
+        :rtype: CustomerOrderV3
         """
         return self._order_info
 
@@ -89,7 +87,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
 
 
         :param order_info: The order_info of this ShowCustomerOrderDetailsResponse.
-        :type: CustomerOrderV2
+        :type: CustomerOrderV3
         """
         self._order_info = order_info
 
@@ -97,7 +95,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     def order_line_items(self):
         """Gets the order_line_items of this ShowCustomerOrderDetailsResponse.
 
-        |参数名称：订单对应的订单项。具体请参见表 OrderLineItemEntity。| |参数约束及描述： 订单对应的订单项。具体请参见表 OrderLineItemEntity。|
+        |参数名称：订单对应的订单项。具体请参见表 OrderLineItemEntityV2。| |参数约束及描述： 订单对应的订单项。具体请参见表 OrderLineItemEntityV2。|
 
         :return: The order_line_items of this ShowCustomerOrderDetailsResponse.
         :rtype: list[OrderLineItemEntityV2]
@@ -108,7 +106,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     def order_line_items(self, order_line_items):
         """Sets the order_line_items of this ShowCustomerOrderDetailsResponse.
 
-        |参数名称：订单对应的订单项。具体请参见表 OrderLineItemEntity。| |参数约束及描述： 订单对应的订单项。具体请参见表 OrderLineItemEntity。|
+        |参数名称：订单对应的订单项。具体请参见表 OrderLineItemEntityV2。| |参数约束及描述： 订单对应的订单项。具体请参见表 OrderLineItemEntityV2。|
 
         :param order_line_items: The order_line_items of this ShowCustomerOrderDetailsResponse.
         :type: list[OrderLineItemEntityV2]
@@ -143,8 +141,8 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

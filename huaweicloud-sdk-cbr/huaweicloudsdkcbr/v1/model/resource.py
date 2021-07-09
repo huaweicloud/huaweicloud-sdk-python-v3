@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -50,7 +48,8 @@ class Resource:
         if extra_info is not None:
             self.extra_info = extra_info
         self.id = id
-        self.name = name
+        if name is not None:
+            self.name = name
         self.type = type
 
     @property
@@ -167,8 +166,8 @@ class Resource:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

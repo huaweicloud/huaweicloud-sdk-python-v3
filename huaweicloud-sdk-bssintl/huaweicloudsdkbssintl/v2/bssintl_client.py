@@ -2758,7 +2758,7 @@ class BssintlClient(Client):
         :return: ShowCustomerOrderDetailsResponse
         """
 
-        all_params = ['order_id', 'limit', 'offset', 'indirect_partner_id']
+        all_params = ['order_id', 'x_language', 'limit', 'offset', 'indirect_partner_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2779,6 +2779,8 @@ class BssintlClient(Client):
             query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 

@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -131,7 +129,7 @@ class TopUrl:
     def duration(self):
         """Gets the duration of this TopUrl.
 
-        媒资时长。 单位：秒。
+        媒资时长。  单位：秒。
 
         :return: The duration of this TopUrl.
         :rtype: int
@@ -142,7 +140,7 @@ class TopUrl:
     def duration(self, duration):
         """Sets the duration of this TopUrl.
 
-        媒资时长。 单位：秒。
+        媒资时长。  单位：秒。
 
         :param duration: The duration of this TopUrl.
         :type: int
@@ -153,7 +151,7 @@ class TopUrl:
     def size(self):
         """Gets the size of this TopUrl.
 
-        媒资原始大小。 单位：字节。
+        媒资原始大小。  单位：字节。
 
         :return: The size of this TopUrl.
         :rtype: int
@@ -164,7 +162,7 @@ class TopUrl:
     def size(self, size):
         """Sets the size of this TopUrl.
 
-        媒资原始大小。 单位：字节。
+        媒资原始大小。  单位：字节。
 
         :param size: The size of this TopUrl.
         :type: int
@@ -199,8 +197,8 @@ class TopUrl:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

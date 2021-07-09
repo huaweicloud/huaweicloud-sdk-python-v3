@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -25,7 +23,7 @@ class LogContents:
     openapi_types = {
         'content': 'str',
         'line_num': 'str',
-        'labels': 'object'
+        'labels': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -102,7 +100,7 @@ class LogContents:
         该条日志包含的 labels。
 
         :return: The labels of this LogContents.
-        :rtype: object
+        :rtype: dict(str, str)
         """
         return self._labels
 
@@ -113,7 +111,7 @@ class LogContents:
         该条日志包含的 labels。
 
         :param labels: The labels of this LogContents.
-        :type: object
+        :type: dict(str, str)
         """
         self._labels = labels
 
@@ -145,8 +143,8 @@ class LogContents:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

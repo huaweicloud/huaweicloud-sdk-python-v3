@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -25,7 +23,7 @@ class ListClustersResponse(SdkResponse):
     openapi_types = {
         'kind': 'str',
         'api_version': 'str',
-        'items': 'list[V3Cluster]'
+        'items': 'list[Cluster]'
     }
 
     attribute_map = {
@@ -102,7 +100,7 @@ class ListClustersResponse(SdkResponse):
         集群对象列表，包含了当前项目下所有集群的详细信息。您可通过items.metadata.name下的值来找到对应的集群。
 
         :return: The items of this ListClustersResponse.
-        :rtype: list[V3Cluster]
+        :rtype: list[Cluster]
         """
         return self._items
 
@@ -113,7 +111,7 @@ class ListClustersResponse(SdkResponse):
         集群对象列表，包含了当前项目下所有集群的详细信息。您可通过items.metadata.name下的值来找到对应的集群。
 
         :param items: The items of this ListClustersResponse.
-        :type: list[V3Cluster]
+        :type: list[Cluster]
         """
         self._items = items
 
@@ -145,8 +143,8 @@ class ListClustersResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

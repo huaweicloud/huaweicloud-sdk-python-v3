@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -69,7 +67,7 @@ class PictureReviewRet:
     def suggestion(self):
         """Gets the suggestion of this PictureReviewRet.
 
-        检测结果是否通过。 取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
+        检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
 
         :return: The suggestion of this PictureReviewRet.
         :rtype: str
@@ -80,7 +78,7 @@ class PictureReviewRet:
     def suggestion(self, suggestion):
         """Sets the suggestion of this PictureReviewRet.
 
-        检测结果是否通过。 取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
+        检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
 
         :param suggestion: The suggestion of this PictureReviewRet.
         :type: str
@@ -91,7 +89,7 @@ class PictureReviewRet:
     def offset(self):
         """Gets the offset of this PictureReviewRet.
 
-        截图在视频中的时间偏移值。封面不涉及此字段 单位：秒。
+        截图在视频中的时间偏移值。封面不涉及此字段  单位：秒。
 
         :return: The offset of this PictureReviewRet.
         :rtype: int
@@ -102,7 +100,7 @@ class PictureReviewRet:
     def offset(self, offset):
         """Sets the offset of this PictureReviewRet.
 
-        截图在视频中的时间偏移值。封面不涉及此字段 单位：秒。
+        截图在视频中的时间偏移值。封面不涉及此字段  单位：秒。
 
         :param offset: The offset of this PictureReviewRet.
         :type: int
@@ -225,8 +223,8 @@ class PictureReviewRet:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

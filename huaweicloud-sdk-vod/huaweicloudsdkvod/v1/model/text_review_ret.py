@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -59,7 +57,7 @@ class TextReviewRet:
     def suggestion(self):
         """Gets the suggestion of this TextReviewRet.
 
-        检测结果是否通过。 取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
+        检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
 
         :return: The suggestion of this TextReviewRet.
         :rtype: str
@@ -70,7 +68,7 @@ class TextReviewRet:
     def suggestion(self, suggestion):
         """Sets the suggestion of this TextReviewRet.
 
-        检测结果是否通过。 取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
+        检测结果是否通过。  取值如下： - block：包含敏感信息，不通过。 - pass：不包含敏感信息，通过。 - review：需要人工复检。
 
         :param suggestion: The suggestion of this TextReviewRet.
         :type: str
@@ -171,8 +169,8 @@ class TextReviewRet:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

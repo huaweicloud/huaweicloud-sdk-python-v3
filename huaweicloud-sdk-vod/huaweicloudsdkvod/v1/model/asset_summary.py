@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -176,7 +174,7 @@ class AssetSummary:
     def duration(self):
         """Gets the duration of this AssetSummary.
 
-        媒资时长。 单位：秒。
+        媒资时长。  单位：秒。
 
         :return: The duration of this AssetSummary.
         :rtype: int
@@ -187,7 +185,7 @@ class AssetSummary:
     def duration(self, duration):
         """Sets the duration of this AssetSummary.
 
-        媒资时长。 单位：秒。
+        媒资时长。  单位：秒。
 
         :param duration: The duration of this AssetSummary.
         :type: int
@@ -198,7 +196,7 @@ class AssetSummary:
     def size(self):
         """Gets the size of this AssetSummary.
 
-        媒资大小。 单位：字节。
+        媒资大小。  单位：字节。
 
         :return: The size of this AssetSummary.
         :rtype: int
@@ -209,7 +207,7 @@ class AssetSummary:
     def size(self, size):
         """Sets the size of this AssetSummary.
 
-        媒资大小。 单位：字节。
+        媒资大小。  单位：字节。
 
         :param size: The size of this AssetSummary.
         :type: int
@@ -286,7 +284,7 @@ class AssetSummary:
     def create_time(self):
         """Gets the create_time of this AssetSummary.
 
-        媒资创建时间。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        媒资创建时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :return: The create_time of this AssetSummary.
         :rtype: str
@@ -297,7 +295,7 @@ class AssetSummary:
     def create_time(self, create_time):
         """Sets the create_time of this AssetSummary.
 
-        媒资创建时间。 格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
+        媒资创建时间。  格式为yyyymmddhhmmss。必须是与时区无关的UTC时间。
 
         :param create_time: The create_time of this AssetSummary.
         :type: str
@@ -308,7 +306,7 @@ class AssetSummary:
     def asset_status(self):
         """Gets the asset_status of this AssetSummary.
 
-        媒资状态。 取值如下： - CREATING：上传中。 - FAILED：上传失败。 - CREATED：上传成功。 - PUBLISHED：已发布。 - DELETED：已删除。
+        媒资状态。  取值如下： - CREATING：上传中。 - FAILED：上传失败。 - CREATED：上传成功。 - PUBLISHED：已发布。 - DELETED：已删除。
 
         :return: The asset_status of this AssetSummary.
         :rtype: str
@@ -319,7 +317,7 @@ class AssetSummary:
     def asset_status(self, asset_status):
         """Sets the asset_status of this AssetSummary.
 
-        媒资状态。 取值如下： - CREATING：上传中。 - FAILED：上传失败。 - CREATED：上传成功。 - PUBLISHED：已发布。 - DELETED：已删除。
+        媒资状态。  取值如下： - CREATING：上传中。 - FAILED：上传失败。 - CREATED：上传成功。 - PUBLISHED：已发布。 - DELETED：已删除。
 
         :param asset_status: The asset_status of this AssetSummary.
         :type: str
@@ -330,7 +328,7 @@ class AssetSummary:
     def transcode_status(self):
         """Gets the transcode_status of this AssetSummary.
 
-        转码状态。 取值如下： - UN_TRANSCODE：未转码。 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中。 - TRANSCODE_SUCCEED：转码成功。 - TRANSCODE_FAILED：转码失败。
+        转码状态。  取值如下： - UN_TRANSCODE：未转码。 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中。 - TRANSCODE_SUCCEED：转码成功。 - TRANSCODE_FAILED：转码失败。
 
         :return: The transcode_status of this AssetSummary.
         :rtype: str
@@ -341,7 +339,7 @@ class AssetSummary:
     def transcode_status(self, transcode_status):
         """Sets the transcode_status of this AssetSummary.
 
-        转码状态。 取值如下： - UN_TRANSCODE：未转码。 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中。 - TRANSCODE_SUCCEED：转码成功。 - TRANSCODE_FAILED：转码失败。
+        转码状态。  取值如下： - UN_TRANSCODE：未转码。 - WAITING_TRANSCODE：待转码 - TRANSCODING：转码中。 - TRANSCODE_SUCCEED：转码成功。 - TRANSCODE_FAILED：转码失败。
 
         :param transcode_status: The transcode_status of this AssetSummary.
         :type: str
@@ -352,7 +350,7 @@ class AssetSummary:
     def thumbnail_status(self):
         """Gets the thumbnail_status of this AssetSummary.
 
-        截图状态。 取值如下： - UN_THUMBNAIL：未截图。 - THUMBNAILING：截图中。 - THUMBNAIL_SUCCEED：截图成功。 - THUMBNAIL_FAILED：截图失败。
+        截图状态。  取值如下： - UN_THUMBNAIL：未截图。 - THUMBNAILING：截图中。 - THUMBNAIL_SUCCEED：截图成功。 - THUMBNAIL_FAILED：截图失败。
 
         :return: The thumbnail_status of this AssetSummary.
         :rtype: str
@@ -363,7 +361,7 @@ class AssetSummary:
     def thumbnail_status(self, thumbnail_status):
         """Sets the thumbnail_status of this AssetSummary.
 
-        截图状态。 取值如下： - UN_THUMBNAIL：未截图。 - THUMBNAILING：截图中。 - THUMBNAIL_SUCCEED：截图成功。 - THUMBNAIL_FAILED：截图失败。
+        截图状态。  取值如下： - UN_THUMBNAIL：未截图。 - THUMBNAILING：截图中。 - THUMBNAIL_SUCCEED：截图成功。 - THUMBNAIL_FAILED：截图失败。
 
         :param thumbnail_status: The thumbnail_status of this AssetSummary.
         :type: str
@@ -374,7 +372,7 @@ class AssetSummary:
     def review_status(self):
         """Gets the review_status of this AssetSummary.
 
-        内容审核状态 取值如下： - UN_REVIEW：未审核。 - REVIEWING：审核中。 - REVIEW_SUSPICIOUS：审核可疑，需要人工复审。 - REVIEW_PASSED：审核通过。 - REVIEW_FAILED：审核失败。 - REVIEW_BLOCKED：已屏蔽。
+        内容审核状态  取值如下： - UN_REVIEW：未审核。 - REVIEWING：审核中。 - REVIEW_SUSPICIOUS：审核可疑，需要人工复审。 - REVIEW_PASSED：审核通过。 - REVIEW_FAILED：审核失败。 - REVIEW_BLOCKED：已屏蔽。
 
         :return: The review_status of this AssetSummary.
         :rtype: str
@@ -385,7 +383,7 @@ class AssetSummary:
     def review_status(self, review_status):
         """Sets the review_status of this AssetSummary.
 
-        内容审核状态 取值如下： - UN_REVIEW：未审核。 - REVIEWING：审核中。 - REVIEW_SUSPICIOUS：审核可疑，需要人工复审。 - REVIEW_PASSED：审核通过。 - REVIEW_FAILED：审核失败。 - REVIEW_BLOCKED：已屏蔽。
+        内容审核状态  取值如下： - UN_REVIEW：未审核。 - REVIEWING：审核中。 - REVIEW_SUSPICIOUS：审核可疑，需要人工复审。 - REVIEW_PASSED：审核通过。 - REVIEW_FAILED：审核失败。 - REVIEW_BLOCKED：已屏蔽。
 
         :param review_status: The review_status of this AssetSummary.
         :type: str
@@ -396,7 +394,7 @@ class AssetSummary:
     def exec_desc(self):
         """Gets the exec_desc of this AssetSummary.
 
-        媒资的任务执行描述汇总。 示例： - asset_exec_desc: upload success，媒资任务执行描述信息。 - transcode_exec_desc: transcode success，转码任务执行描述信息。 - thumbnail_exec_desc: thumbnail failed，截图任务执行描述信息。 - review_exec_desc: review pass，审核任务执行描述信息。
+        媒资的任务执行描述汇总。  示例： - asset_exec_desc: upload success，媒资任务执行描述信息。 - transcode_exec_desc: transcode success，转码任务执行描述信息。 - thumbnail_exec_desc: thumbnail failed，截图任务执行描述信息。 - review_exec_desc: review pass，审核任务执行描述信息。
 
         :return: The exec_desc of this AssetSummary.
         :rtype: str
@@ -407,7 +405,7 @@ class AssetSummary:
     def exec_desc(self, exec_desc):
         """Sets the exec_desc of this AssetSummary.
 
-        媒资的任务执行描述汇总。 示例： - asset_exec_desc: upload success，媒资任务执行描述信息。 - transcode_exec_desc: transcode success，转码任务执行描述信息。 - thumbnail_exec_desc: thumbnail failed，截图任务执行描述信息。 - review_exec_desc: review pass，审核任务执行描述信息。
+        媒资的任务执行描述汇总。  示例： - asset_exec_desc: upload success，媒资任务执行描述信息。 - transcode_exec_desc: transcode success，转码任务执行描述信息。 - thumbnail_exec_desc: thumbnail failed，截图任务执行描述信息。 - review_exec_desc: review pass，审核任务执行描述信息。
 
         :param exec_desc: The exec_desc of this AssetSummary.
         :type: str
@@ -418,7 +416,7 @@ class AssetSummary:
     def media_type(self):
         """Gets the media_type of this AssetSummary.
 
-        音视频文件的格式。 取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
+        音视频文件的格式。  取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
 
         :return: The media_type of this AssetSummary.
         :rtype: str
@@ -429,7 +427,7 @@ class AssetSummary:
     def media_type(self, media_type):
         """Sets the media_type of this AssetSummary.
 
-        音视频文件的格式。 取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
+        音视频文件的格式。  取值如下： - 视频文件格式：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG - 音频文件格式：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2
 
         :param media_type: The media_type of this AssetSummary.
         :type: str
@@ -464,8 +462,8 @@ class AssetSummary:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

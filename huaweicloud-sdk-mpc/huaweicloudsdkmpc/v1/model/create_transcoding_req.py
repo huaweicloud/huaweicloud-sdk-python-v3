@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -33,7 +31,6 @@ class CreateTranscodingReq:
         'thumbnail': 'Thumbnail',
         'digital_watermark': 'DigitalWatermark',
         'priority': 'int',
-        'audit': 'Audit',
         'subtitle': 'Subtitle',
         'special_effect': 'SpecialEffect',
         'encryption': 'Encryption',
@@ -58,7 +55,6 @@ class CreateTranscodingReq:
         'thumbnail': 'thumbnail',
         'digital_watermark': 'digital_watermark',
         'priority': 'priority',
-        'audit': 'audit',
         'subtitle': 'subtitle',
         'special_effect': 'special_effect',
         'encryption': 'encryption',
@@ -72,7 +68,7 @@ class CreateTranscodingReq:
         'template_extend': 'template_extend'
     }
 
-    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, digital_watermark=None, priority=None, audit=None, subtitle=None, special_effect=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, quality_enhance=None, system_process=None, template_extend=None):
+    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, digital_watermark=None, priority=None, subtitle=None, special_effect=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, quality_enhance=None, system_process=None, template_extend=None):
         """CreateTranscodingReq - a model defined in huaweicloud sdk"""
         
         
@@ -87,7 +83,6 @@ class CreateTranscodingReq:
         self._thumbnail = None
         self._digital_watermark = None
         self._priority = None
-        self._audit = None
         self._subtitle = None
         self._special_effect = None
         self._encryption = None
@@ -120,8 +115,6 @@ class CreateTranscodingReq:
             self.digital_watermark = digital_watermark
         if priority is not None:
             self.priority = priority
-        if audit is not None:
-            self.audit = audit
         if subtitle is not None:
             self.subtitle = subtitle
         if special_effect is not None:
@@ -356,26 +349,6 @@ class CreateTranscodingReq:
         :type: int
         """
         self._priority = priority
-
-    @property
-    def audit(self):
-        """Gets the audit of this CreateTranscodingReq.
-
-
-        :return: The audit of this CreateTranscodingReq.
-        :rtype: Audit
-        """
-        return self._audit
-
-    @audit.setter
-    def audit(self, audit):
-        """Sets the audit of this CreateTranscodingReq.
-
-
-        :param audit: The audit of this CreateTranscodingReq.
-        :type: Audit
-        """
-        self._audit = audit
 
     @property
     def subtitle(self):
@@ -625,8 +598,8 @@ class CreateTranscodingReq:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

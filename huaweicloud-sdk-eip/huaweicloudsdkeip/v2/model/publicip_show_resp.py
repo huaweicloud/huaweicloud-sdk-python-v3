@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -38,7 +36,8 @@ class PublicipShowResp:
         'tenant_id': 'str',
         'type': 'str',
         'public_ipv6_address': 'str',
-        'ip_version': 'int'
+        'ip_version': 'int',
+        'publicip_border_group': 'str'
     }
 
     attribute_map = {
@@ -57,10 +56,11 @@ class PublicipShowResp:
         'tenant_id': 'tenant_id',
         'type': 'type',
         'public_ipv6_address': 'public_ipv6_address',
-        'ip_version': 'ip_version'
+        'ip_version': 'ip_version',
+        'publicip_border_group': 'publicip_border_group'
     }
 
-    def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None):
+    def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, publicip_border_group=None):
         """PublicipShowResp - a model defined in huaweicloud sdk"""
         
         
@@ -81,6 +81,7 @@ class PublicipShowResp:
         self._type = None
         self._public_ipv6_address = None
         self._ip_version = None
+        self._publicip_border_group = None
         self.discriminator = None
 
         if bandwidth_id is not None:
@@ -115,6 +116,8 @@ class PublicipShowResp:
             self.public_ipv6_address = public_ipv6_address
         if ip_version is not None:
             self.ip_version = ip_version
+        if publicip_border_group is not None:
+            self.publicip_border_group = publicip_border_group
 
     @property
     def bandwidth_id(self):
@@ -466,6 +469,28 @@ class PublicipShowResp:
         """
         self._ip_version = ip_version
 
+    @property
+    def publicip_border_group(self):
+        """Gets the publicip_border_group of this PublicipShowResp.
+
+        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域才会返回此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：publicip只能绑定该字段相同的资源
+
+        :return: The publicip_border_group of this PublicipShowResp.
+        :rtype: str
+        """
+        return self._publicip_border_group
+
+    @publicip_border_group.setter
+    def publicip_border_group(self, publicip_border_group):
+        """Sets the publicip_border_group of this PublicipShowResp.
+
+        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域才会返回此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：publicip只能绑定该字段相同的资源
+
+        :param publicip_border_group: The publicip_border_group of this PublicipShowResp.
+        :type: str
+        """
+        self._publicip_border_group = publicip_border_group
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -494,8 +519,8 @@ class PublicipShowResp:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

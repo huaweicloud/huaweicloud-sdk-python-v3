@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -100,7 +98,7 @@ class TakeOverTask:
     def bucket(self):
         """Gets the bucket of this TakeOverTask.
 
-        桶 <br/> 
+        桶名。
 
         :return: The bucket of this TakeOverTask.
         :rtype: str
@@ -111,7 +109,7 @@ class TakeOverTask:
     def bucket(self, bucket):
         """Sets the bucket of this TakeOverTask.
 
-        桶 <br/> 
+        桶名。
 
         :param bucket: The bucket of this TakeOverTask.
         :type: str
@@ -122,7 +120,7 @@ class TakeOverTask:
     def object(self):
         """Gets the object of this TakeOverTask.
 
-        目录 
+        目录/文件名。
 
         :return: The object of this TakeOverTask.
         :rtype: str
@@ -133,7 +131,7 @@ class TakeOverTask:
     def object(self, object):
         """Sets the object of this TakeOverTask.
 
-        目录 
+        目录/文件名。
 
         :param object: The object of this TakeOverTask.
         :type: str
@@ -144,7 +142,7 @@ class TakeOverTask:
     def host_type(self):
         """Gets the host_type of this TakeOverTask.
 
-        托管类型：0表示存储到点播桶 1表示存储在租户桶  2表示存储到租户桶，并且源文件名跟随<br/> 
+        托管类型： - 0：表示存储到点播桶 - 1：表示存储在租户桶 - 2：表示存储到租户桶，并且源文件名跟随
 
         :return: The host_type of this TakeOverTask.
         :rtype: int
@@ -155,7 +153,7 @@ class TakeOverTask:
     def host_type(self, host_type):
         """Sets the host_type of this TakeOverTask.
 
-        托管类型：0表示存储到点播桶 1表示存储在租户桶  2表示存储到租户桶，并且源文件名跟随<br/> 
+        托管类型： - 0：表示存储到点播桶 - 1：表示存储在租户桶 - 2：表示存储到租户桶，并且源文件名跟随
 
         :param host_type: The host_type of this TakeOverTask.
         :type: int
@@ -166,7 +164,7 @@ class TakeOverTask:
     def output_bucket(self):
         """Gets the output_bucket of this TakeOverTask.
 
-        输出桶 <br/> 
+        输出桶 。
 
         :return: The output_bucket of this TakeOverTask.
         :rtype: str
@@ -177,7 +175,7 @@ class TakeOverTask:
     def output_bucket(self, output_bucket):
         """Sets the output_bucket of this TakeOverTask.
 
-        输出桶 <br/> 
+        输出桶 。
 
         :param output_bucket: The output_bucket of this TakeOverTask.
         :type: str
@@ -188,7 +186,7 @@ class TakeOverTask:
     def output_path(self):
         """Gets the output_path of this TakeOverTask.
 
-        输出路径 <br/> 
+        输出路径 。
 
         :return: The output_path of this TakeOverTask.
         :rtype: str
@@ -199,7 +197,7 @@ class TakeOverTask:
     def output_path(self, output_path):
         """Sets the output_path of this TakeOverTask.
 
-        输出路径 <br/> 
+        输出路径 。
 
         :param output_path: The output_path of this TakeOverTask.
         :type: str
@@ -210,7 +208,7 @@ class TakeOverTask:
     def task_id(self):
         """Gets the task_id of this TakeOverTask.
 
-        任务ID <br/> 
+        任务ID。
 
         :return: The task_id of this TakeOverTask.
         :rtype: str
@@ -221,7 +219,7 @@ class TakeOverTask:
     def task_id(self, task_id):
         """Sets the task_id of this TakeOverTask.
 
-        任务ID <br/> 
+        任务ID。
 
         :param task_id: The task_id of this TakeOverTask.
         :type: str
@@ -232,6 +230,7 @@ class TakeOverTask:
     def suffix(self):
         """Gets the suffix of this TakeOverTask.
 
+        托管文件类型。
 
         :return: The suffix of this TakeOverTask.
         :rtype: list[str]
@@ -242,6 +241,7 @@ class TakeOverTask:
     def suffix(self, suffix):
         """Sets the suffix of this TakeOverTask.
 
+        托管文件类型。
 
         :param suffix: The suffix of this TakeOverTask.
         :type: list[str]
@@ -252,7 +252,7 @@ class TakeOverTask:
     def template_group_name(self):
         """Gets the template_group_name of this TakeOverTask.
 
-        转码模板组 <br/> 
+        转码模板组 。
 
         :return: The template_group_name of this TakeOverTask.
         :rtype: str
@@ -263,7 +263,7 @@ class TakeOverTask:
     def template_group_name(self, template_group_name):
         """Sets the template_group_name of this TakeOverTask.
 
-        转码模板组 <br/> 
+        转码模板组 。
 
         :param template_group_name: The template_group_name of this TakeOverTask.
         :type: str
@@ -274,7 +274,7 @@ class TakeOverTask:
     def create_time(self):
         """Gets the create_time of this TakeOverTask.
 
-        创建时间<br/> 
+        创建时间。
 
         :return: The create_time of this TakeOverTask.
         :rtype: str
@@ -285,7 +285,7 @@ class TakeOverTask:
     def create_time(self, create_time):
         """Sets the create_time of this TakeOverTask.
 
-        创建时间<br/> 
+        创建时间。
 
         :param create_time: The create_time of this TakeOverTask.
         :type: str
@@ -296,7 +296,7 @@ class TakeOverTask:
     def end_time(self):
         """Gets the end_time of this TakeOverTask.
 
-        结束时间<br/> 
+        结束时间。
 
         :return: The end_time of this TakeOverTask.
         :rtype: str
@@ -307,7 +307,7 @@ class TakeOverTask:
     def end_time(self, end_time):
         """Sets the end_time of this TakeOverTask.
 
-        结束时间<br/> 
+        结束时间。
 
         :param end_time: The end_time of this TakeOverTask.
         :type: str
@@ -318,6 +318,7 @@ class TakeOverTask:
     def status(self):
         """Gets the status of this TakeOverTask.
 
+        任务状态。
 
         :return: The status of this TakeOverTask.
         :rtype: str
@@ -328,6 +329,7 @@ class TakeOverTask:
     def status(self, status):
         """Sets the status of this TakeOverTask.
 
+        任务状态。
 
         :param status: The status of this TakeOverTask.
         :type: str
@@ -384,8 +386,8 @@ class TakeOverTask:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

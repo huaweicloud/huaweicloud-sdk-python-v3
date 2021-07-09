@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -71,8 +69,7 @@ class CreateWatermarkTemplateReq:
         self._md5 = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if watermark_type is not None:
             self.watermark_type = watermark_type
         if image_process is not None:
@@ -91,8 +88,7 @@ class CreateWatermarkTemplateReq:
             self.timeline_start = timeline_start
         if timeline_duration is not None:
             self.timeline_duration = timeline_duration
-        if type is not None:
-            self.type = type
+        self.type = type
         if md5 is not None:
             self.md5 = md5
 
@@ -100,7 +96,7 @@ class CreateWatermarkTemplateReq:
     def name(self):
         """Gets the name of this CreateWatermarkTemplateReq.
 
-        水印模板名称<br/> 
+        水印模板名称<br/>
 
         :return: The name of this CreateWatermarkTemplateReq.
         :rtype: str
@@ -111,7 +107,7 @@ class CreateWatermarkTemplateReq:
     def name(self, name):
         """Sets the name of this CreateWatermarkTemplateReq.
 
-        水印模板名称<br/> 
+        水印模板名称<br/>
 
         :param name: The name of this CreateWatermarkTemplateReq.
         :type: str
@@ -122,7 +118,7 @@ class CreateWatermarkTemplateReq:
     def watermark_type(self):
         """Gets the watermark_type of this CreateWatermarkTemplateReq.
 
-        水印类型，当前只支持Image（图片水印）<br/> 
+        水印类型，当前只支持Image（图片水印）<br/>
 
         :return: The watermark_type of this CreateWatermarkTemplateReq.
         :rtype: str
@@ -133,7 +129,7 @@ class CreateWatermarkTemplateReq:
     def watermark_type(self, watermark_type):
         """Sets the watermark_type of this CreateWatermarkTemplateReq.
 
-        水印类型，当前只支持Image（图片水印）<br/> 
+        水印类型，当前只支持Image（图片水印）<br/>
 
         :param watermark_type: The watermark_type of this CreateWatermarkTemplateReq.
         :type: str
@@ -144,7 +140,7 @@ class CreateWatermarkTemplateReq:
     def image_process(self):
         """Gets the image_process of this CreateWatermarkTemplateReq.
 
-        type设置为Image时有效，目前包括Original（只做简单缩放，不做其他处理），Transparent（图片底色透明），Grayed（彩色图片变灰）<br/> 
+        type设置为Image时有效。 目前包括 - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
 
         :return: The image_process of this CreateWatermarkTemplateReq.
         :rtype: str
@@ -155,7 +151,7 @@ class CreateWatermarkTemplateReq:
     def image_process(self, image_process):
         """Sets the image_process of this CreateWatermarkTemplateReq.
 
-        type设置为Image时有效，目前包括Original（只做简单缩放，不做其他处理），Transparent（图片底色透明），Grayed（彩色图片变灰）<br/> 
+        type设置为Image时有效。 目前包括 - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
 
         :param image_process: The image_process of this CreateWatermarkTemplateReq.
         :type: str
@@ -166,7 +162,7 @@ class CreateWatermarkTemplateReq:
     def dx(self):
         """Gets the dx of this CreateWatermarkTemplateReq.
 
-        水印图片相对输出视频的水平偏移量，默认值是0<br/> 
+        水印图片相对输出视频的水平偏移量，默认值是0<br/>
 
         :return: The dx of this CreateWatermarkTemplateReq.
         :rtype: str
@@ -177,7 +173,7 @@ class CreateWatermarkTemplateReq:
     def dx(self, dx):
         """Sets the dx of this CreateWatermarkTemplateReq.
 
-        水印图片相对输出视频的水平偏移量，默认值是0<br/> 
+        水印图片相对输出视频的水平偏移量，默认值是0<br/>
 
         :param dx: The dx of this CreateWatermarkTemplateReq.
         :type: str
@@ -188,7 +184,7 @@ class CreateWatermarkTemplateReq:
     def dy(self):
         """Gets the dy of this CreateWatermarkTemplateReq.
 
-        水印图片相对输出视频的垂直偏移量，默认值是0<br/> 
+        水印图片相对输出视频的垂直偏移量，默认值是0<br/>
 
         :return: The dy of this CreateWatermarkTemplateReq.
         :rtype: str
@@ -199,7 +195,7 @@ class CreateWatermarkTemplateReq:
     def dy(self, dy):
         """Sets the dy of this CreateWatermarkTemplateReq.
 
-        水印图片相对输出视频的垂直偏移量，默认值是0<br/> 
+        水印图片相对输出视频的垂直偏移量，默认值是0<br/>
 
         :param dy: The dy of this CreateWatermarkTemplateReq.
         :type: str
@@ -210,7 +206,7 @@ class CreateWatermarkTemplateReq:
     def position(self):
         """Gets the position of this CreateWatermarkTemplateReq.
 
-        水印的位置<br/> 
+        水印的位置<br/>
 
         :return: The position of this CreateWatermarkTemplateReq.
         :rtype: str
@@ -221,7 +217,7 @@ class CreateWatermarkTemplateReq:
     def position(self, position):
         """Sets the position of this CreateWatermarkTemplateReq.
 
-        水印的位置<br/> 
+        水印的位置<br/>
 
         :param position: The position of this CreateWatermarkTemplateReq.
         :type: str
@@ -232,7 +228,7 @@ class CreateWatermarkTemplateReq:
     def width(self):
         """Gets the width of this CreateWatermarkTemplateReq.
 
-        水印图片宽<br/> 
+        水印图片宽<br/>
 
         :return: The width of this CreateWatermarkTemplateReq.
         :rtype: str
@@ -243,7 +239,7 @@ class CreateWatermarkTemplateReq:
     def width(self, width):
         """Sets the width of this CreateWatermarkTemplateReq.
 
-        水印图片宽<br/> 
+        水印图片宽<br/>
 
         :param width: The width of this CreateWatermarkTemplateReq.
         :type: str
@@ -254,7 +250,7 @@ class CreateWatermarkTemplateReq:
     def height(self):
         """Gets the height of this CreateWatermarkTemplateReq.
 
-        水印图片高<br/> 
+        水印图片高<br/>
 
         :return: The height of this CreateWatermarkTemplateReq.
         :rtype: str
@@ -265,7 +261,7 @@ class CreateWatermarkTemplateReq:
     def height(self, height):
         """Sets the height of this CreateWatermarkTemplateReq.
 
-        水印图片高<br/> 
+        水印图片高<br/>
 
         :param height: The height of this CreateWatermarkTemplateReq.
         :type: str
@@ -276,7 +272,7 @@ class CreateWatermarkTemplateReq:
     def timeline_start(self):
         """Gets the timeline_start of this CreateWatermarkTemplateReq.
 
-        水印开始时间<br/> 
+        水印开始时间<br/>
 
         :return: The timeline_start of this CreateWatermarkTemplateReq.
         :rtype: str
@@ -287,7 +283,7 @@ class CreateWatermarkTemplateReq:
     def timeline_start(self, timeline_start):
         """Sets the timeline_start of this CreateWatermarkTemplateReq.
 
-        水印开始时间<br/> 
+        水印开始时间<br/>
 
         :param timeline_start: The timeline_start of this CreateWatermarkTemplateReq.
         :type: str
@@ -298,7 +294,7 @@ class CreateWatermarkTemplateReq:
     def timeline_duration(self):
         """Gets the timeline_duration of this CreateWatermarkTemplateReq.
 
-        水印持续时间<br/> 
+        水印持续时间<br/>
 
         :return: The timeline_duration of this CreateWatermarkTemplateReq.
         :rtype: str
@@ -309,7 +305,7 @@ class CreateWatermarkTemplateReq:
     def timeline_duration(self, timeline_duration):
         """Sets the timeline_duration of this CreateWatermarkTemplateReq.
 
-        水印持续时间<br/> 
+        水印持续时间<br/>
 
         :param timeline_duration: The timeline_duration of this CreateWatermarkTemplateReq.
         :type: str
@@ -320,7 +316,7 @@ class CreateWatermarkTemplateReq:
     def type(self):
         """Gets the type of this CreateWatermarkTemplateReq.
 
-        水印图片格式类型<br/> 
+        水印图片格式类型<br/>
 
         :return: The type of this CreateWatermarkTemplateReq.
         :rtype: str
@@ -331,7 +327,7 @@ class CreateWatermarkTemplateReq:
     def type(self, type):
         """Sets the type of this CreateWatermarkTemplateReq.
 
-        水印图片格式类型<br/> 
+        水印图片格式类型<br/>
 
         :param type: The type of this CreateWatermarkTemplateReq.
         :type: str
@@ -342,7 +338,7 @@ class CreateWatermarkTemplateReq:
     def md5(self):
         """Gets the md5 of this CreateWatermarkTemplateReq.
 
-        水印图片MD5值<br/> 
+        水印图片MD5值<br/>
 
         :return: The md5 of this CreateWatermarkTemplateReq.
         :rtype: str
@@ -353,7 +349,7 @@ class CreateWatermarkTemplateReq:
     def md5(self, md5):
         """Sets the md5 of this CreateWatermarkTemplateReq.
 
-        水印图片MD5值<br/> 
+        水印图片MD5值<br/>
 
         :param md5: The md5 of this CreateWatermarkTemplateReq.
         :type: str
@@ -388,8 +384,8 @@ class CreateWatermarkTemplateReq:
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

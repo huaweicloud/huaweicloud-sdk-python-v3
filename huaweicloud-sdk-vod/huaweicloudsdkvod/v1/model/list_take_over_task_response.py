@@ -1,8 +1,6 @@
 # coding: utf-8
 
-import pprint
 import re
-
 import six
 
 
@@ -50,6 +48,7 @@ class ListTakeOverTaskResponse(SdkResponse):
     def tasks(self):
         """Gets the tasks of this ListTakeOverTaskResponse.
 
+        托管任务信息
 
         :return: The tasks of this ListTakeOverTaskResponse.
         :rtype: list[TakeOverTask]
@@ -60,6 +59,7 @@ class ListTakeOverTaskResponse(SdkResponse):
     def tasks(self, tasks):
         """Sets the tasks of this ListTakeOverTaskResponse.
 
+        托管任务信息
 
         :param tasks: The tasks of this ListTakeOverTaskResponse.
         :type: list[TakeOverTask]
@@ -70,6 +70,7 @@ class ListTakeOverTaskResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListTakeOverTaskResponse.
 
+        任务数量。
 
         :return: The total of this ListTakeOverTaskResponse.
         :rtype: int
@@ -80,6 +81,7 @@ class ListTakeOverTaskResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListTakeOverTaskResponse.
 
+        任务数量。
 
         :param total: The total of this ListTakeOverTaskResponse.
         :type: int
@@ -114,8 +116,8 @@ class ListTakeOverTaskResponse(SdkResponse):
         return result
 
     def to_str(self):
-        """Returns the string representation of the model"""
-        return pprint.pformat(self.to_dict())
+        import simplejson as json
+        return json.dumps(self.to_dict())
 
     def __repr__(self):
         """For `print` and `pprint`"""

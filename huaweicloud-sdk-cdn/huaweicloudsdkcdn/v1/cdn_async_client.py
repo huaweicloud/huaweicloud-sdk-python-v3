@@ -778,7 +778,7 @@ class CdnAsyncClient(Client):
     def show_domain_item_details_async(self, request):
         """批量查询域名的统计明细-按域名单独返回
 
-        - 支持查询3个月内的数据。 - 查询跨度不能超过7天。 - 最多同时指定100个域名。 - 起始时间和结束时间，左闭右开，需要同时指定。 - 开始时间、结束时间必须传毫秒级时间戳，且必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。 - 统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。 - 流量类指标单位统一为Byte（字节）、带宽类指标单位统一为bit/s（比特/秒）、请求数类指标单位统一为次数。用于查询指定域名、指定统计指标的明细数据。 - 如果传的是多个域名，则每个域名的数据分开返回。 - 支持同时查询多个指标，不超过10个。 - 域名为海外加速场景不适用。
+        - 支持查询3个月内的数据。 - 查询跨度不能超过7天。 - 最多同时指定100个域名。 - 起始时间和结束时间，左闭右开，需要同时指定。 - 开始时间、结束时间必须传毫秒级时间戳，且必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。 - 统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。 - 流量类指标单位统一为Byte（字节）、带宽类指标单位统一为bit/s（比特/秒）、请求数类指标单位统一为次数。用于查询指定域名、指定统计指标的明细数据。 - 如果传的是多个域名，则每个域名的数据分开返回。 - 支持同时查询多个指标，不超过10个。
 
         :param ShowDomainItemDetailsRequest request
         :return: ShowDomainItemDetailsResponse
@@ -788,13 +788,13 @@ class CdnAsyncClient(Client):
     def show_domain_item_details_with_http_info(self, request):
         """批量查询域名的统计明细-按域名单独返回
 
-        - 支持查询3个月内的数据。 - 查询跨度不能超过7天。 - 最多同时指定100个域名。 - 起始时间和结束时间，左闭右开，需要同时指定。 - 开始时间、结束时间必须传毫秒级时间戳，且必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。 - 统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。 - 流量类指标单位统一为Byte（字节）、带宽类指标单位统一为bit/s（比特/秒）、请求数类指标单位统一为次数。用于查询指定域名、指定统计指标的明细数据。 - 如果传的是多个域名，则每个域名的数据分开返回。 - 支持同时查询多个指标，不超过10个。 - 域名为海外加速场景不适用。
+        - 支持查询3个月内的数据。 - 查询跨度不能超过7天。 - 最多同时指定100个域名。 - 起始时间和结束时间，左闭右开，需要同时指定。 - 开始时间、结束时间必须传毫秒级时间戳，且必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。 - 统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。 - 流量类指标单位统一为Byte（字节）、带宽类指标单位统一为bit/s（比特/秒）、请求数类指标单位统一为次数。用于查询指定域名、指定统计指标的明细数据。 - 如果传的是多个域名，则每个域名的数据分开返回。 - 支持同时查询多个指标，不超过10个。
 
         :param ShowDomainItemDetailsRequest request
         :return: ShowDomainItemDetailsResponse
         """
 
-        all_params = ['start_time', 'end_time', 'domain_name', 'stat_type', 'enterprise_project_id']
+        all_params = ['start_time', 'end_time', 'domain_name', 'stat_type', 'enterprise_project_id', 'service_area']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -813,6 +813,8 @@ class CdnAsyncClient(Client):
             query_params.append(('end_time', local_var_params['end_time']))
         if 'domain_name' in local_var_params:
             query_params.append(('domain_name', local_var_params['domain_name']))
+        if 'service_area' in local_var_params:
+            query_params.append(('service_area', local_var_params['service_area']))
         if 'stat_type' in local_var_params:
             query_params.append(('stat_type', local_var_params['stat_type']))
 
@@ -1553,7 +1555,7 @@ class CdnAsyncClient(Client):
         :return: ShowTopUrlResponse
         """
 
-        all_params = ['domain_name', 'stat_type', 'enterprise_project_id', 'start_time', 'end_time', 'service_area']
+        all_params = ['start_time', 'end_time', 'domain_name', 'stat_type', 'enterprise_project_id', 'service_area']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
