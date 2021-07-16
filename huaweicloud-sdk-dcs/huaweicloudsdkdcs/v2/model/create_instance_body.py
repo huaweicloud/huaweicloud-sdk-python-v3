@@ -254,7 +254,7 @@ class CreateInstanceBody:
     def spec_code(self):
         """Gets the spec_code of this CreateInstanceBody.
 
-        产品规格编码。具体查询方法，请参考[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)。 
+        产品规格编码。具体查询方法如下：  - 方法一：查询产品介绍中的[实例规格](https://support.huaweicloud.com/productdesc-dcs/dcs-pd-0522002.html) - 方法二：登录分布式缓存的控制台界面，点击购买缓存实例，查找对应的实例规格名称 - 方法三：调用[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)接口查询。 
 
         :return: The spec_code of this CreateInstanceBody.
         :rtype: str
@@ -265,7 +265,7 @@ class CreateInstanceBody:
     def spec_code(self, spec_code):
         """Sets the spec_code of this CreateInstanceBody.
 
-        产品规格编码。具体查询方法，请参考[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)。 
+        产品规格编码。具体查询方法如下：  - 方法一：查询产品介绍中的[实例规格](https://support.huaweicloud.com/productdesc-dcs/dcs-pd-0522002.html) - 方法二：登录分布式缓存的控制台界面，点击购买缓存实例，查找对应的实例规格名称 - 方法三：调用[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)接口查询。 
 
         :param spec_code: The spec_code of this CreateInstanceBody.
         :type: str

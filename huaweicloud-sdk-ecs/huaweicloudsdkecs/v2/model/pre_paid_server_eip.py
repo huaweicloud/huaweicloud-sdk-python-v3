@@ -51,7 +51,7 @@ class PrePaidServerEip:
     def iptype(self):
         """Gets the iptype of this PrePaidServerEip.
 
-        弹性IP地址类型。
+        弹性IP地址类型。  详情请参见“[申请弹性公网IP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)”章节的“publicip”字段说明。
 
         :return: The iptype of this PrePaidServerEip.
         :rtype: str
@@ -62,7 +62,7 @@ class PrePaidServerEip:
     def iptype(self, iptype):
         """Sets the iptype of this PrePaidServerEip.
 
-        弹性IP地址类型。
+        弹性IP地址类型。  详情请参见“[申请弹性公网IP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)”章节的“publicip”字段说明。
 
         :param iptype: The iptype of this PrePaidServerEip.
         :type: str

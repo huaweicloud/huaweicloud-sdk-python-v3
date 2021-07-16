@@ -53,7 +53,10 @@ class InstanceListInfo:
         'spec_code': 'str',
         'status': 'str',
         'tags': 'list[ResourceTag]',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'description': 'str',
+        'cpu_type': 'str',
+        'az_codes': 'list[str]'
     }
 
     attribute_map = {
@@ -89,10 +92,13 @@ class InstanceListInfo:
         'spec_code': 'spec_code',
         'status': 'status',
         'tags': 'tags',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'description': 'description',
+        'cpu_type': 'cpu_type',
+        'az_codes': 'az_codes'
     }
 
-    def __init__(self, publicip_id=None, vpc_name=None, charging_mode=None, vpc_id=None, subnet_id=None, security_group_id=None, created_at=None, enable_ssl=None, max_memory=None, used_memory=None, publicip_address=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, engine_version=None, service_upgrade=None, no_password_access=None, service_task_id=None, ip=None, access_user=None, instance_id=None, enable_publicip=None, port=None, user_id=None, user_name=None, domain_name=None, name=None, spec_code=None, status=None, tags=None, enterprise_project_id=None):
+    def __init__(self, publicip_id=None, vpc_name=None, charging_mode=None, vpc_id=None, subnet_id=None, security_group_id=None, created_at=None, enable_ssl=None, max_memory=None, used_memory=None, publicip_address=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, engine_version=None, service_upgrade=None, no_password_access=None, service_task_id=None, ip=None, access_user=None, instance_id=None, enable_publicip=None, port=None, user_id=None, user_name=None, domain_name=None, name=None, spec_code=None, status=None, tags=None, enterprise_project_id=None, description=None, cpu_type=None, az_codes=None):
         """InstanceListInfo - a model defined in huaweicloud sdk"""
         
         
@@ -130,6 +136,9 @@ class InstanceListInfo:
         self._status = None
         self._tags = None
         self._enterprise_project_id = None
+        self._description = None
+        self._cpu_type = None
+        self._az_codes = None
         self.discriminator = None
 
         if publicip_id is not None:
@@ -198,6 +207,12 @@ class InstanceListInfo:
             self.tags = tags
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if description is not None:
+            self.description = description
+        if cpu_type is not None:
+            self.cpu_type = cpu_type
+        if az_codes is not None:
+            self.az_codes = az_codes
 
     @property
     def publicip_id(self):
@@ -924,6 +939,72 @@ class InstanceListInfo:
         :type: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def description(self):
+        """Gets the description of this InstanceListInfo.
+
+        实例描述备注
+
+        :return: The description of this InstanceListInfo.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this InstanceListInfo.
+
+        实例描述备注
+
+        :param description: The description of this InstanceListInfo.
+        :type: str
+        """
+        self._description = description
+
+    @property
+    def cpu_type(self):
+        """Gets the cpu_type of this InstanceListInfo.
+
+        实例CPU类型，通常为x86_64或aarch64
+
+        :return: The cpu_type of this InstanceListInfo.
+        :rtype: str
+        """
+        return self._cpu_type
+
+    @cpu_type.setter
+    def cpu_type(self, cpu_type):
+        """Sets the cpu_type of this InstanceListInfo.
+
+        实例CPU类型，通常为x86_64或aarch64
+
+        :param cpu_type: The cpu_type of this InstanceListInfo.
+        :type: str
+        """
+        self._cpu_type = cpu_type
+
+    @property
+    def az_codes(self):
+        """Gets the az_codes of this InstanceListInfo.
+
+        有资源的可用区编码。
+
+        :return: The az_codes of this InstanceListInfo.
+        :rtype: list[str]
+        """
+        return self._az_codes
+
+    @az_codes.setter
+    def az_codes(self, az_codes):
+        """Sets the az_codes of this InstanceListInfo.
+
+        有资源的可用区编码。
+
+        :param az_codes: The az_codes of this InstanceListInfo.
+        :type: list[str]
+        """
+        self._az_codes = az_codes
 
     def to_dict(self):
         """Returns the model properties as a dict"""

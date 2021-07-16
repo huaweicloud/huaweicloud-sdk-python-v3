@@ -23,6 +23,7 @@ class ListInstancesRequest:
     openapi_types = {
         'instance_id': 'str',
         'include_failure': 'str',
+        'include_delete': 'str',
         'name': 'str',
         'offset': 'int',
         'limit': 'int',
@@ -35,6 +36,7 @@ class ListInstancesRequest:
     attribute_map = {
         'instance_id': 'instance_id',
         'include_failure': 'include_failure',
+        'include_delete': 'include_delete',
         'name': 'name',
         'offset': 'offset',
         'limit': 'limit',
@@ -44,13 +46,14 @@ class ListInstancesRequest:
         'ip': 'ip'
     }
 
-    def __init__(self, instance_id=None, include_failure=None, name=None, offset=None, limit=None, status=None, name_equal=None, tags=None, ip=None):
+    def __init__(self, instance_id=None, include_failure=None, include_delete=None, name=None, offset=None, limit=None, status=None, name_equal=None, tags=None, ip=None):
         """ListInstancesRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._instance_id = None
         self._include_failure = None
+        self._include_delete = None
         self._name = None
         self._offset = None
         self._limit = None
@@ -64,6 +67,8 @@ class ListInstancesRequest:
             self.instance_id = instance_id
         if include_failure is not None:
             self.include_failure = include_failure
+        if include_delete is not None:
+            self.include_delete = include_delete
         if name is not None:
             self.name = name
         if offset is not None:
@@ -105,7 +110,7 @@ class ListInstancesRequest:
     def include_failure(self):
         """Gets the include_failure of this ListInstancesRequest.
 
-        是否返回创建失败的实例数。 当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。 
+        是否返回创建失败的实例数。 当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
 
         :return: The include_failure of this ListInstancesRequest.
         :rtype: str
@@ -116,12 +121,34 @@ class ListInstancesRequest:
     def include_failure(self, include_failure):
         """Sets the include_failure of this ListInstancesRequest.
 
-        是否返回创建失败的实例数。 当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。 
+        是否返回创建失败的实例数。 当参数值为“true”时，返回创建失败的实例数。参数值为“false”或者其他值，不返回创建失败的实例数。
 
         :param include_failure: The include_failure of this ListInstancesRequest.
         :type: str
         """
         self._include_failure = include_failure
+
+    @property
+    def include_delete(self):
+        """Gets the include_delete of this ListInstancesRequest.
+
+        是否返回已删除的实例数。 当参数值为“true”时，返回已删除的实例数。参数值为“false”或者其他值，不返回已删除的实例数。
+
+        :return: The include_delete of this ListInstancesRequest.
+        :rtype: str
+        """
+        return self._include_delete
+
+    @include_delete.setter
+    def include_delete(self, include_delete):
+        """Sets the include_delete of this ListInstancesRequest.
+
+        是否返回已删除的实例数。 当参数值为“true”时，返回已删除的实例数。参数值为“false”或者其他值，不返回已删除的实例数。
+
+        :param include_delete: The include_delete of this ListInstancesRequest.
+        :type: str
+        """
+        self._include_delete = include_delete
 
     @property
     def name(self):
@@ -215,7 +242,7 @@ class ListInstancesRequest:
     def name_equal(self):
         """Gets the name_equal of this ListInstancesRequest.
 
-        是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。 
+        是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
 
         :return: The name_equal of this ListInstancesRequest.
         :rtype: str
@@ -226,7 +253,7 @@ class ListInstancesRequest:
     def name_equal(self, name_equal):
         """Sets the name_equal of this ListInstancesRequest.
 
-        是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。 
+        是否按照实例名称进行精确匹配查询。  默认为“false”，表示模糊匹配实例名称查询。若参数值为“true”表示按照实例名称进行精确匹配查询。
 
         :param name_equal: The name_equal of this ListInstancesRequest.
         :type: str

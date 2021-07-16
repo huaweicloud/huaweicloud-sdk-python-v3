@@ -228,7 +228,7 @@ class ServerDetail:
     def status(self):
         """Gets the status of this ServerDetail.
 
-        弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE
+        弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
 
         :return: The status of this ServerDetail.
         :rtype: str
@@ -239,7 +239,7 @@ class ServerDetail:
     def status(self, status):
         """Sets the status of this ServerDetail.
 
-        弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE
+        弹性云服务器状态。  取值范围：  ACTIVE、BUILD、DELETED、ERROR、HARD_REBOOT、MIGRATING、PAUSED、REBOOT、REBUILD、RESIZE、REVERT_RESIZE、SHUTOFF、SHELVED、SHELVED_OFFLOADED、SOFT_DELETED、SUSPENDED、VERIFY_RESIZE  弹性云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)
 
         :param status: The status of this ServerDetail.
         :type: str
@@ -402,7 +402,7 @@ class ServerDetail:
     def os_ext_st_stask_state(self):
         """Gets the os_ext_st_stask_state of this ServerDetail.
 
-        扩展属性，弹性云服务器当前任务的状态。
+        扩展属性，弹性云服务器当前任务的状态。  取值范围请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)表3。
 
         :return: The os_ext_st_stask_state of this ServerDetail.
         :rtype: str
@@ -413,7 +413,7 @@ class ServerDetail:
     def os_ext_st_stask_state(self, os_ext_st_stask_state):
         """Sets the os_ext_st_stask_state of this ServerDetail.
 
-        扩展属性，弹性云服务器当前任务的状态。
+        扩展属性，弹性云服务器当前任务的状态。  取值范围请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)表3。
 
         :param os_ext_st_stask_state: The os_ext_st_stask_state of this ServerDetail.
         :type: str
@@ -424,7 +424,7 @@ class ServerDetail:
     def os_ext_st_svm_state(self):
         """Gets the os_ext_st_svm_state of this ServerDetail.
 
-        扩展属性，弹性云服务器当前状态。
+        扩展属性，弹性云服务器当前状态。  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
         :return: The os_ext_st_svm_state of this ServerDetail.
         :rtype: str
@@ -435,7 +435,7 @@ class ServerDetail:
     def os_ext_st_svm_state(self, os_ext_st_svm_state):
         """Sets the os_ext_st_svm_state of this ServerDetail.
 
-        扩展属性，弹性云服务器当前状态。
+        扩展属性，弹性云服务器当前状态。  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
         :param os_ext_st_svm_state: The os_ext_st_svm_state of this ServerDetail.
         :type: str

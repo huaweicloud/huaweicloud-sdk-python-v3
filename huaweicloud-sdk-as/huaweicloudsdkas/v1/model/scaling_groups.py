@@ -50,7 +50,8 @@ class ScalingGroups:
         'cloud_location_id': 'str',
         'enterprise_project_id': 'str',
         'activity_type': 'str',
-        'multi_az_priority_policy': 'str'
+        'multi_az_priority_policy': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -83,10 +84,11 @@ class ScalingGroups:
         'cloud_location_id': 'cloud_location_id',
         'enterprise_project_id': 'enterprise_project_id',
         'activity_type': 'activity_type',
-        'multi_az_priority_policy': 'multi_az_priority_policy'
+        'multi_az_priority_policy': 'multi_az_priority_policy',
+        'description': 'description'
     }
 
-    def __init__(self, scaling_group_name=None, scaling_group_id=None, scaling_group_status=None, scaling_configuration_id=None, scaling_configuration_name=None, current_instance_number=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, create_time=None, vpc_id=None, detail=None, is_scaling=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, delete_volume=None, cloud_location_id=None, enterprise_project_id=None, activity_type=None, multi_az_priority_policy=None):
+    def __init__(self, scaling_group_name=None, scaling_group_id=None, scaling_group_status=None, scaling_configuration_id=None, scaling_configuration_name=None, current_instance_number=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, create_time=None, vpc_id=None, detail=None, is_scaling=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, delete_volume=None, cloud_location_id=None, enterprise_project_id=None, activity_type=None, multi_az_priority_policy=None, description=None):
         """ScalingGroups - a model defined in huaweicloud sdk"""
         
         
@@ -121,6 +123,7 @@ class ScalingGroups:
         self._enterprise_project_id = None
         self._activity_type = None
         self._multi_az_priority_policy = None
+        self._description = None
         self.discriminator = None
 
         if scaling_group_name is not None:
@@ -183,6 +186,8 @@ class ScalingGroups:
             self.activity_type = activity_type
         if multi_az_priority_policy is not None:
             self.multi_az_priority_policy = multi_az_priority_policy
+        if description is not None:
+            self.description = description
 
     @property
     def scaling_group_name(self):
@@ -843,6 +848,28 @@ class ScalingGroups:
         :type: str
         """
         self._multi_az_priority_policy = multi_az_priority_policy
+
+    @property
+    def description(self):
+        """Gets the description of this ScalingGroups.
+
+        伸缩组描述信息
+
+        :return: The description of this ScalingGroups.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ScalingGroups.
+
+        伸缩组描述信息
+
+        :param description: The description of this ScalingGroups.
+        :type: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

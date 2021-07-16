@@ -52,10 +52,6 @@ from huaweicloudsdkddm.v1.model.list_instances_request import ListInstancesReque
 from huaweicloudsdkddm.v1.model.list_instances_response import ListInstancesResponse
 from huaweicloudsdkddm.v1.model.list_nodes_request import ListNodesRequest
 from huaweicloudsdkddm.v1.model.list_nodes_response import ListNodesResponse
-from huaweicloudsdkddm.v1.model.list_read_write_ratio_request import ListReadWriteRatioRequest
-from huaweicloudsdkddm.v1.model.list_read_write_ratio_response import ListReadWriteRatioResponse
-from huaweicloudsdkddm.v1.model.list_slow_log_request import ListSlowLogRequest
-from huaweicloudsdkddm.v1.model.list_slow_log_response import ListSlowLogResponse
 from huaweicloudsdkddm.v1.model.list_users_request import ListUsersRequest
 from huaweicloudsdkddm.v1.model.list_users_response import ListUsersResponse
 from huaweicloudsdkddm.v1.model.modify_instance_name_req import ModifyInstanceNameReq
@@ -63,7 +59,6 @@ from huaweicloudsdkddm.v1.model.modify_instance_security_group_req import Modify
 from huaweicloudsdkddm.v1.model.modify_read_and_write_strategy_req import ModifyReadAndWriteStrategyReq
 from huaweicloudsdkddm.v1.model.node_list import NodeList
 from huaweicloudsdkddm.v1.model.query_available_rds_list import QueryAvailableRdsList
-from huaweicloudsdkddm.v1.model.read_write_ratio_list import ReadWriteRatioList
 from huaweicloudsdkddm.v1.model.rebuild_config_request import RebuildConfigRequest
 from huaweicloudsdkddm.v1.model.rebuild_config_response import RebuildConfigResponse
 from huaweicloudsdkddm.v1.model.reduce_request import ReduceRequest
@@ -85,7 +80,6 @@ from huaweicloudsdkddm.v1.model.show_node_request import ShowNodeRequest
 from huaweicloudsdkddm.v1.model.show_node_response import ShowNodeResponse
 from huaweicloudsdkddm.v1.model.shrink_instance_nodes_request import ShrinkInstanceNodesRequest
 from huaweicloudsdkddm.v1.model.shrink_instance_nodes_response import ShrinkInstanceNodesResponse
-from huaweicloudsdkddm.v1.model.slow_log_list import SlowLogList
 from huaweicloudsdkddm.v1.model.support_azs_info import SupportAzsInfo
 from huaweicloudsdkddm.v1.model.update_database_info_request import UpdateDatabaseInfoRequest
 from huaweicloudsdkddm.v1.model.update_database_info_response import UpdateDatabaseInfoResponse

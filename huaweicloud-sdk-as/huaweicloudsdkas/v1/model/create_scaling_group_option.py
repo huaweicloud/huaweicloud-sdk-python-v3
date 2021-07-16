@@ -41,7 +41,8 @@ class CreateScalingGroupOption:
         'delete_publicip': 'bool',
         'delete_volume': 'bool',
         'enterprise_project_id': 'str',
-        'multi_az_priority_policy': 'str'
+        'multi_az_priority_policy': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class CreateScalingGroupOption:
         'delete_publicip': 'delete_publicip',
         'delete_volume': 'delete_volume',
         'enterprise_project_id': 'enterprise_project_id',
-        'multi_az_priority_policy': 'multi_az_priority_policy'
+        'multi_az_priority_policy': 'multi_az_priority_policy',
+        'description': 'description'
     }
 
-    def __init__(self, scaling_group_name=None, scaling_configuration_id=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, vpc_id=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, delete_volume=None, enterprise_project_id=None, multi_az_priority_policy=None):
+    def __init__(self, scaling_group_name=None, scaling_configuration_id=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, lb_listener_id=None, lbaas_listeners=None, available_zones=None, networks=None, security_groups=None, vpc_id=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, notifications=None, delete_publicip=None, delete_volume=None, enterprise_project_id=None, multi_az_priority_policy=None, description=None):
         """CreateScalingGroupOption - a model defined in huaweicloud sdk"""
         
         
@@ -94,6 +96,7 @@ class CreateScalingGroupOption:
         self._delete_volume = None
         self._enterprise_project_id = None
         self._multi_az_priority_policy = None
+        self._description = None
         self.discriminator = None
 
         self.scaling_group_name = scaling_group_name
@@ -135,6 +138,8 @@ class CreateScalingGroupOption:
             self.enterprise_project_id = enterprise_project_id
         if multi_az_priority_policy is not None:
             self.multi_az_priority_policy = multi_az_priority_policy
+        if description is not None:
+            self.description = description
 
     @property
     def scaling_group_name(self):
@@ -338,7 +343,7 @@ class CreateScalingGroupOption:
     def networks(self):
         """Gets the networks of this CreateScalingGroupOption.
 
-        网络信息，最多支持选择5个子网，传入的第一个子网默认作为云服务器的主网卡。使用vpc_id通过查询VPC服务子网列表接口获取， 查询子网列表”。
+        网络信息，最多支持选择5个子网，传入的第一个子网默认作为云服务器的主网卡。获取子网信息请参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 
         :return: The networks of this CreateScalingGroupOption.
         :rtype: list[Networks]
@@ -349,7 +354,7 @@ class CreateScalingGroupOption:
     def networks(self, networks):
         """Sets the networks of this CreateScalingGroupOption.
 
-        网络信息，最多支持选择5个子网，传入的第一个子网默认作为云服务器的主网卡。使用vpc_id通过查询VPC服务子网列表接口获取， 查询子网列表”。
+        网络信息，最多支持选择5个子网，传入的第一个子网默认作为云服务器的主网卡。获取子网信息请参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 
         :param networks: The networks of this CreateScalingGroupOption.
         :type: list[Networks]
@@ -597,6 +602,28 @@ class CreateScalingGroupOption:
         :type: str
         """
         self._multi_az_priority_policy = multi_az_priority_policy
+
+    @property
+    def description(self):
+        """Gets the description of this CreateScalingGroupOption.
+
+        伸缩组描述信息(0-256个字符)
+
+        :return: The description of this CreateScalingGroupOption.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this CreateScalingGroupOption.
+
+        伸缩组描述信息(0-256个字符)
+
+        :param description: The description of this CreateScalingGroupOption.
+        :type: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

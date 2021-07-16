@@ -53,7 +53,7 @@ class AttrsObject:
     def capacity(self):
         """Gets the capacity of this AttrsObject.
 
-        缓存容量。
+        缓存容量（G Byte）。
 
         :return: The capacity of this AttrsObject.
         :rtype: str
@@ -64,7 +64,7 @@ class AttrsObject:
     def capacity(self, capacity):
         """Sets the capacity of this AttrsObject.
 
-        缓存容量。
+        缓存容量（G Byte）。
 
         :param capacity: The capacity of this AttrsObject.
         :type: str

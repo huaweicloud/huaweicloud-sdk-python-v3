@@ -74,7 +74,7 @@ class UpdateImageResponse(SdkResponse):
         'account_code': 'str',
         'hw_vif_multiqueue_enabled': 'str',
         'is_offshelved': 'str',
-        'lazyloading': 'bool',
+        'lazyloading': 'str',
         'root_origin': 'str',
         'sequence_num': 'str',
         'active_at': 'str',
@@ -1497,7 +1497,7 @@ class UpdateImageResponse(SdkResponse):
         镜像是否支持延迟加载。取值为“True”或“False”。
 
         :return: The lazyloading of this UpdateImageResponse.
-        :rtype: bool
+        :rtype: str
         """
         return self._lazyloading
 
@@ -1508,7 +1508,7 @@ class UpdateImageResponse(SdkResponse):
         镜像是否支持延迟加载。取值为“True”或“False”。
 
         :param lazyloading: The lazyloading of this UpdateImageResponse.
-        :type: bool
+        :type: str
         """
         self._lazyloading = lazyloading
 

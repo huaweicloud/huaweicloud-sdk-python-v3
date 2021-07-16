@@ -85,7 +85,7 @@ class ReinstallServerWithCloudInitOption:
     def keyname(self):
         """Gets the keyname of this ReinstallServerWithCloudInitOption.
 
-        密钥名称。
+        密钥名称。  密钥可以通过密钥创建接口进行创建（请参见[创建和导入SSH密钥](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212678.html)），或使用SSH密钥查询接口查询已有的密钥（请参见[查询SSH密钥列表](https://support.huaweicloud.com/api-ecs/ecs_03_1201.html) ）。
 
         :return: The keyname of this ReinstallServerWithCloudInitOption.
         :rtype: str
@@ -96,7 +96,7 @@ class ReinstallServerWithCloudInitOption:
     def keyname(self, keyname):
         """Sets the keyname of this ReinstallServerWithCloudInitOption.
 
-        密钥名称。
+        密钥名称。  密钥可以通过密钥创建接口进行创建（请参见[创建和导入SSH密钥](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212678.html)），或使用SSH密钥查询接口查询已有的密钥（请参见[查询SSH密钥列表](https://support.huaweicloud.com/api-ecs/ecs_03_1201.html) ）。
 
         :param keyname: The keyname of this ReinstallServerWithCloudInitOption.
         :type: str

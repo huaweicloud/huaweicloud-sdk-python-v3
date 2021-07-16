@@ -89,7 +89,7 @@ class ChangeServerOsWithCloudInitOption:
     def keyname(self):
         """Gets the keyname of this ChangeServerOsWithCloudInitOption.
 
-        密钥名称。
+        密钥名称。  密钥可以通过密钥创建接口进行创建（请参见[创建和导入SSH密钥](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212678.html)），或使用SSH密钥查询接口查询已有的密钥（请参见[查询SSH密钥列表](https://support.huaweicloud.com/api-ecs/ecs_03_1201.html) ）。
 
         :return: The keyname of this ChangeServerOsWithCloudInitOption.
         :rtype: str
@@ -100,7 +100,7 @@ class ChangeServerOsWithCloudInitOption:
     def keyname(self, keyname):
         """Sets the keyname of this ChangeServerOsWithCloudInitOption.
 
-        密钥名称。
+        密钥名称。  密钥可以通过密钥创建接口进行创建（请参见[创建和导入SSH密钥](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212678.html)），或使用SSH密钥查询接口查询已有的密钥（请参见[查询SSH密钥列表](https://support.huaweicloud.com/api-ecs/ecs_03_1201.html) ）。
 
         :param keyname: The keyname of this ChangeServerOsWithCloudInitOption.
         :type: str
@@ -133,7 +133,7 @@ class ChangeServerOsWithCloudInitOption:
     def imageid(self):
         """Gets the imageid of this ChangeServerOsWithCloudInitOption.
 
-        切换系统所使用的新镜像的ID，格式为UUID。
+        切换系统所使用的新镜像的ID，格式为UUID。  镜像的ID可以从控制台或者参考[《镜像服务API参考》](https://support.huaweicloud.com/api-ims/ims_03_0702.html)的“查询镜像列表”的章节获取。
 
         :return: The imageid of this ChangeServerOsWithCloudInitOption.
         :rtype: str
@@ -144,7 +144,7 @@ class ChangeServerOsWithCloudInitOption:
     def imageid(self, imageid):
         """Sets the imageid of this ChangeServerOsWithCloudInitOption.
 
-        切换系统所使用的新镜像的ID，格式为UUID。
+        切换系统所使用的新镜像的ID，格式为UUID。  镜像的ID可以从控制台或者参考[《镜像服务API参考》](https://support.huaweicloud.com/api-ims/ims_03_0702.html)的“查询镜像列表”的章节获取。
 
         :param imageid: The imageid of this ChangeServerOsWithCloudInitOption.
         :type: str

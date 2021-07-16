@@ -53,7 +53,7 @@ class PrePaidServerSchedulerHints:
     def group(self):
         """Gets the group of this PrePaidServerSchedulerHints.
 
-        云服务器组ID，UUID格式。
+        云服务器组ID，UUID格式。  云服务器组的ID可以从控制台或者参考[查询云服务器组列表](https://support.huaweicloud.com/api-ecs/ecs_03_1402.html)获取。
 
         :return: The group of this PrePaidServerSchedulerHints.
         :rtype: str
@@ -64,7 +64,7 @@ class PrePaidServerSchedulerHints:
     def group(self, group):
         """Sets the group of this PrePaidServerSchedulerHints.
 
-        云服务器组ID，UUID格式。
+        云服务器组ID，UUID格式。  云服务器组的ID可以从控制台或者参考[查询云服务器组列表](https://support.huaweicloud.com/api-ecs/ecs_03_1402.html)获取。
 
         :param group: The group of this PrePaidServerSchedulerHints.
         :type: str

@@ -1,3 +1,40 @@
+# 3.0.52 2021-07-16
+
+### HuaweiCloud SDK AS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request parameter `description` to the interface `CreateScalingV2Policy`.
+    - Add the response parameter `description` to the interfaces `ShowScalingV2Policy`, `ShowScalingGroup`.
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+    - Support more interfaces:
+        - `CreateDiagnosisTask`
+        - `CreateRedislog`
+        - `CreateRedislogDownloadLink`
+        - `ListDiagnosisTasks`
+        - `ListRedislog`
+        - `ListSlowlog`
+        - `ShowDiagnosisTaskDetails`
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request parameter `include_delete` to the interface `ListInstances`.
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - [Issue 40](https://github.com/huaweicloud/huaweicloud-sdk-java-v3/issues/40): Fix the issue that the type of the response parameter `__lazyloading` is incorrectly defined.
+- _Change_
+    - None
+
 # 3.0.51 2021-07-09
 
 ### HuaweiCloud SDK BMS

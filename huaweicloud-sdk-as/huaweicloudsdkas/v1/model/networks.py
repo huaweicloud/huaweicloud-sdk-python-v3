@@ -52,7 +52,7 @@ class Networks:
     def id(self):
         """Gets the id of this Networks.
 
-        网络ID。
+        子网的网络id。
 
         :return: The id of this Networks.
         :rtype: str
@@ -63,7 +63,7 @@ class Networks:
     def id(self, id):
         """Sets the id of this Networks.
 
-        网络ID。
+        子网的网络id。
 
         :param id: The id of this Networks.
         :type: str

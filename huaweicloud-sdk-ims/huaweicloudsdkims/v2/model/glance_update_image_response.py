@@ -68,7 +68,7 @@ class GlanceUpdateImageResponse(SdkResponse):
         'hw_firmware_type': 'str',
         'support_arm': 'str',
         'is_offshelved': 'str',
-        'lazyloading': 'bool',
+        'lazyloading': 'str',
         'os_feature_list': 'str',
         'root_origin': 'str',
         'sequence_num': 'str',
@@ -1367,10 +1367,10 @@ class GlanceUpdateImageResponse(SdkResponse):
     def lazyloading(self):
         """Gets the lazyloading of this GlanceUpdateImageResponse.
 
-        镜像是否支持延迟加载。取值为“True”或“False”。
+        镜像是否支持延迟加载。取值为True或False。
 
         :return: The lazyloading of this GlanceUpdateImageResponse.
-        :rtype: bool
+        :rtype: str
         """
         return self._lazyloading
 
@@ -1378,10 +1378,10 @@ class GlanceUpdateImageResponse(SdkResponse):
     def lazyloading(self, lazyloading):
         """Sets the lazyloading of this GlanceUpdateImageResponse.
 
-        镜像是否支持延迟加载。取值为“True”或“False”。
+        镜像是否支持延迟加载。取值为True或False。
 
         :param lazyloading: The lazyloading of this GlanceUpdateImageResponse.
-        :type: bool
+        :type: str
         """
         self._lazyloading = lazyloading
 

@@ -1,3 +1,40 @@
+# 3.0.52 2021-07-16
+
+### HuaweiCloud SDK AS
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`CreateScalingV2Policy`新增请求参数`description`
+    - 接口`ShowScalingV2Policy`、`ShowScalingGroup`新增响应参数`description`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+    - 支持更多接口：
+        - `CreateDiagnosisTask`
+        - `CreateRedislog`
+        - `CreateRedislogDownloadLink`
+        - `ListDiagnosisTasks`
+        - `ListRedislog`
+        - `ListSlowlog`
+        - `ShowDiagnosisTaskDetails`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ListInstances`新增请求参数`include_delete`
+
+### HuaweiCloud SDK IMS
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - [Issue 40](https://github.com/huaweicloud/huaweicloud-sdk-java-v3/issues/40): 修复响应参数`__lazyloading`类型定义错误的问题
+- _特性变更_
+    - 无
+
 # 3.0.51 2021-07-09
 
 ### HuaweiCloud SDK BMS

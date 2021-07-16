@@ -39,10 +39,8 @@ class Matches:
         self._value = None
         self.discriminator = None
 
-        if key is not None:
-            self.key = key
-        if value is not None:
-            self.value = value
+        self.key = key
+        self.value = value
 
     @property
     def key(self):

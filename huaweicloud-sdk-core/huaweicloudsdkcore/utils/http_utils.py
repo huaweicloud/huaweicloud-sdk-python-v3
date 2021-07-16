@@ -19,6 +19,7 @@
 """
 
 import datetime
+import decimal
 
 import six
 
@@ -30,6 +31,9 @@ def sanitize_for_serialization(obj):
         return None
 
     elif isinstance(obj, primitive_types):
+        return obj
+
+    elif isinstance(obj, decimal.Decimal):
         return obj
 
     elif isinstance(obj, list):

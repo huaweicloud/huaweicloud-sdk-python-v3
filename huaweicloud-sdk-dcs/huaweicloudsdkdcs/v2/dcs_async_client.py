@@ -369,6 +369,71 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_diagnosis_task_async(self, request):
+        """创建实例诊断任务
+
+        诊断指定的缓存实例。
+
+        :param CreateDiagnosisTaskRequest request
+        :return: CreateDiagnosisTaskResponse
+        """
+        return self.create_diagnosis_task_with_http_info(request)
+
+    def create_diagnosis_task_with_http_info(self, request):
+        """创建实例诊断任务
+
+        诊断指定的缓存实例。
+
+        :param CreateDiagnosisTaskRequest request
+        :return: CreateDiagnosisTaskResponse
+        """
+
+        all_params = ['instance_id', 'create_diagnosis_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/diagnosis',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateDiagnosisTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_hotkey_scan_task_async(self, request):
         """创建热key分析任务
 
@@ -552,6 +617,140 @@ class DcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateMigrationTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_redislog_async(self, request):
+        """采集Redis运行日志
+
+        采集Redis运行日志。
+
+        :param CreateRedislogRequest request
+        :return: CreateRedislogResponse
+        """
+        return self.create_redislog_with_http_info(request)
+
+    def create_redislog_with_http_info(self, request):
+        """采集Redis运行日志
+
+        采集Redis运行日志。
+
+        :param CreateRedislogRequest request
+        :return: CreateRedislogResponse
+        """
+
+        all_params = ['instance_id', 'log_type', 'query_time', 'replication_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'query_time' in local_var_params:
+            query_params.append(('query_time', local_var_params['query_time']))
+        if 'log_type' in local_var_params:
+            query_params.append(('log_type', local_var_params['log_type']))
+        if 'replication_id' in local_var_params:
+            query_params.append(('replication_id', local_var_params['replication_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/redislog',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateRedislogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_redislog_download_link_async(self, request):
+        """获取日志下载链接
+
+        获取日志下载链接。
+
+        :param CreateRedislogDownloadLinkRequest request
+        :return: CreateRedislogDownloadLinkResponse
+        """
+        return self.create_redislog_download_link_with_http_info(request)
+
+    def create_redislog_download_link_with_http_info(self, request):
+        """获取日志下载链接
+
+        获取日志下载链接。
+
+        :param CreateRedislogDownloadLinkRequest request
+        :return: CreateRedislogDownloadLinkResponse
+        """
+
+        all_params = ['instance_id', 'id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/redislog/{id}/links',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateRedislogDownloadLinkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1413,6 +1612,73 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_diagnosis_tasks_async(self, request):
+        """查询实例诊断任务列表
+
+        查询指定缓存实例诊断任务列表。
+
+        :param ListDiagnosisTasksRequest request
+        :return: ListDiagnosisTasksResponse
+        """
+        return self.list_diagnosis_tasks_with_http_info(request)
+
+    def list_diagnosis_tasks_with_http_info(self, request):
+        """查询实例诊断任务列表
+
+        查询指定缓存实例诊断任务列表。
+
+        :param ListDiagnosisTasksRequest request
+        :return: ListDiagnosisTasksResponse
+        """
+
+        all_params = ['instance_id', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/diagnosis',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListDiagnosisTasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_flavors_async(self, request):
         """查询产品规格
 
@@ -1637,7 +1903,7 @@ class DcsAsyncClient(Client):
         :return: ListInstancesResponse
         """
 
-        all_params = ['instance_id', 'include_failure', 'name', 'offset', 'limit', 'status', 'name_equal', 'tags', 'ip']
+        all_params = ['instance_id', 'include_failure', 'include_delete', 'name', 'offset', 'limit', 'status', 'name_equal', 'tags', 'ip']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1652,6 +1918,8 @@ class DcsAsyncClient(Client):
             query_params.append(('instance_id', local_var_params['instance_id']))
         if 'include_failure' in local_var_params:
             query_params.append(('include_failure', local_var_params['include_failure']))
+        if 'include_delete' in local_var_params:
+            query_params.append(('include_delete', local_var_params['include_delete']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
         if 'offset' in local_var_params:
@@ -2020,6 +2288,75 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_redislog_async(self, request):
+        """查询Redis运行日志列表
+
+        查询Redis运行日志列表。
+
+        :param ListRedislogRequest request
+        :return: ListRedislogResponse
+        """
+        return self.list_redislog_with_http_info(request)
+
+    def list_redislog_with_http_info(self, request):
+        """查询Redis运行日志列表
+
+        查询Redis运行日志列表。
+
+        :param ListRedislogRequest request
+        :return: ListRedislogResponse
+        """
+
+        all_params = ['instance_id', 'log_type', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'log_type' in local_var_params:
+            query_params.append(('log_type', local_var_params['log_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/redislog',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRedislogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_restore_records_async(self, request):
         """查询实例恢复记录
 
@@ -2288,6 +2625,71 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def resize_instance_async(self, request):
+        """变更实例规格
+
+        用户可以为状态为“运行中”的DCS缓存实例进行规格变更，当前仅能支持按需实例的同副本或分片数量的实例规格变更。
+
+        :param ResizeInstanceRequest request
+        :return: ResizeInstanceResponse
+        """
+        return self.resize_instance_with_http_info(request)
+
+    def resize_instance_with_http_info(self, request):
+        """变更实例规格
+
+        用户可以为状态为“运行中”的DCS缓存实例进行规格变更，当前仅能支持按需实例的同副本或分片数量的实例规格变更。
+
+        :param ResizeInstanceRequest request
+        :return: ResizeInstanceResponse
+        """
+
+        all_params = ['instance_id', 'resize_instance_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/resize',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResizeInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def restart_or_flush_instances_async(self, request):
         """重启实例或清空数据
 
@@ -2538,6 +2940,69 @@ class DcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowBigkeyScanTaskDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_diagnosis_task_details_async(self, request):
+        """查询指定诊断报告
+
+        通过报告ID查询诊断报告的详细信息。
+
+        :param ShowDiagnosisTaskDetailsRequest request
+        :return: ShowDiagnosisTaskDetailsResponse
+        """
+        return self.show_diagnosis_task_details_with_http_info(request)
+
+    def show_diagnosis_task_details_with_http_info(self, request):
+        """查询指定诊断报告
+
+        通过报告ID查询诊断报告的详细信息。
+
+        :param ShowDiagnosisTaskDetailsRequest request
+        :return: ShowDiagnosisTaskDetailsResponse
+        """
+
+        all_params = ['report_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'report_id' in local_var_params:
+            path_params['report_id'] = local_var_params['report_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/diagnosis/{report_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDiagnosisTaskDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

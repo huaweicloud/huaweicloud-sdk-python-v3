@@ -48,7 +48,7 @@ class FlavorAzObject:
     def capacity(self):
         """Gets the capacity of this FlavorAzObject.
 
-        缓存容量。
+        缓存容量（G Byte）。
 
         :return: The capacity of this FlavorAzObject.
         :rtype: str
@@ -59,7 +59,7 @@ class FlavorAzObject:
     def capacity(self, capacity):
         """Sets the capacity of this FlavorAzObject.
 
-        缓存容量。
+        缓存容量（G Byte）。
 
         :param capacity: The capacity of this FlavorAzObject.
         :type: str

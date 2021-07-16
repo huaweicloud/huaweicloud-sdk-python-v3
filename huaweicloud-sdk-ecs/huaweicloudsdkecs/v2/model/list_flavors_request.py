@@ -43,7 +43,7 @@ class ListFlavorsRequest:
     def availability_zone(self):
         """Gets the availability_zone of this ListFlavorsRequest.
 
-        可用区，需要指定可用区（AZ）的名称或者ID或者code。
+        可用区，需要指定可用区（AZ）的名称或者ID或者code。  可通过接口 [查询可用区列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=ECS&api=NovaListAvailabilityZones) 获取，也可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
 
         :return: The availability_zone of this ListFlavorsRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class ListFlavorsRequest:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this ListFlavorsRequest.
 
-        可用区，需要指定可用区（AZ）的名称或者ID或者code。
+        可用区，需要指定可用区（AZ）的名称或者ID或者code。  可通过接口 [查询可用区列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=ECS&api=NovaListAvailabilityZones) 获取，也可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
 
         :param availability_zone: The availability_zone of this ListFlavorsRequest.
         :type: str

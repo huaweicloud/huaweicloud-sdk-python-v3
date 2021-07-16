@@ -40,7 +40,8 @@ class UpdateScalingGroupOption:
         'delete_publicip': 'bool',
         'delete_volume': 'bool',
         'enterprise_project_id': 'str',
-        'multi_az_priority_policy': 'str'
+        'multi_az_priority_policy': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class UpdateScalingGroupOption:
         'delete_publicip': 'delete_publicip',
         'delete_volume': 'delete_volume',
         'enterprise_project_id': 'enterprise_project_id',
-        'multi_az_priority_policy': 'multi_az_priority_policy'
+        'multi_az_priority_policy': 'multi_az_priority_policy',
+        'description': 'description'
     }
 
-    def __init__(self, scaling_group_name=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, available_zones=None, networks=None, security_groups=None, lb_listener_id=None, lbaas_listeners=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, scaling_configuration_id=None, notifications=None, delete_publicip=None, delete_volume=None, enterprise_project_id=None, multi_az_priority_policy=None):
+    def __init__(self, scaling_group_name=None, desire_instance_number=None, min_instance_number=None, max_instance_number=None, cool_down_time=None, available_zones=None, networks=None, security_groups=None, lb_listener_id=None, lbaas_listeners=None, health_periodic_audit_method=None, health_periodic_audit_time=None, health_periodic_audit_grace_period=None, instance_terminate_policy=None, scaling_configuration_id=None, notifications=None, delete_publicip=None, delete_volume=None, enterprise_project_id=None, multi_az_priority_policy=None, description=None):
         """UpdateScalingGroupOption - a model defined in huaweicloud sdk"""
         
         
@@ -91,6 +93,7 @@ class UpdateScalingGroupOption:
         self._delete_volume = None
         self._enterprise_project_id = None
         self._multi_az_priority_policy = None
+        self._description = None
         self.discriminator = None
 
         if scaling_group_name is not None:
@@ -133,6 +136,8 @@ class UpdateScalingGroupOption:
             self.enterprise_project_id = enterprise_project_id
         if multi_az_priority_policy is not None:
             self.multi_az_priority_policy = multi_az_priority_policy
+        if description is not None:
+            self.description = description
 
     @property
     def scaling_group_name(self):
@@ -512,7 +517,7 @@ class UpdateScalingGroupOption:
     def delete_volume(self):
         """Gets the delete_volume of this UpdateScalingGroupOption.
 
-         配置删除云服务器时是否删除云服务器绑定的数据盘。取值为true或false，默认为false。  true：删除云服务器时，会同时删除绑定在云服务器上的数据盘。当数据盘的计费方式为包年包月时，不会被删除。 false：删除务器时，仅云服解绑定在云服务器上的数据盘，不删除数据盘。
+        配置删除云服务器时是否删除云服务器绑定的数据盘。取值为true或false，默认为false。  true：删除云服务器时，会同时删除绑定在云服务器上的数据盘。当数据盘的计费方式为包年包月时，不会被删除。 false：删除务器时，仅云服解绑定在云服务器上的数据盘，不删除数据盘。
 
         :return: The delete_volume of this UpdateScalingGroupOption.
         :rtype: bool
@@ -523,7 +528,7 @@ class UpdateScalingGroupOption:
     def delete_volume(self, delete_volume):
         """Sets the delete_volume of this UpdateScalingGroupOption.
 
-         配置删除云服务器时是否删除云服务器绑定的数据盘。取值为true或false，默认为false。  true：删除云服务器时，会同时删除绑定在云服务器上的数据盘。当数据盘的计费方式为包年包月时，不会被删除。 false：删除务器时，仅云服解绑定在云服务器上的数据盘，不删除数据盘。
+        配置删除云服务器时是否删除云服务器绑定的数据盘。取值为true或false，默认为false。  true：删除云服务器时，会同时删除绑定在云服务器上的数据盘。当数据盘的计费方式为包年包月时，不会被删除。 false：删除务器时，仅云服解绑定在云服务器上的数据盘，不删除数据盘。
 
         :param delete_volume: The delete_volume of this UpdateScalingGroupOption.
         :type: bool
@@ -573,6 +578,28 @@ class UpdateScalingGroupOption:
         :type: str
         """
         self._multi_az_priority_policy = multi_az_priority_policy
+
+    @property
+    def description(self):
+        """Gets the description of this UpdateScalingGroupOption.
+
+        伸缩组描述信息(0-256个字符)
+
+        :return: The description of this UpdateScalingGroupOption.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this UpdateScalingGroupOption.
+
+        伸缩组描述信息(0-256个字符)
+
+        :param description: The description of this UpdateScalingGroupOption.
+        :type: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

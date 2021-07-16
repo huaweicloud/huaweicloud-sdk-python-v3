@@ -28,7 +28,8 @@ class UpdateScalingV2PolicyOption:
         'alarm_id': 'str',
         'scheduled_policy': 'ScheduledPolicy',
         'scaling_policy_action': 'ScalingPolicyActionV2',
-        'cool_down_time': 'int'
+        'cool_down_time': 'int',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class UpdateScalingV2PolicyOption:
         'alarm_id': 'alarm_id',
         'scheduled_policy': 'scheduled_policy',
         'scaling_policy_action': 'scaling_policy_action',
-        'cool_down_time': 'cool_down_time'
+        'cool_down_time': 'cool_down_time',
+        'description': 'description'
     }
 
-    def __init__(self, scaling_policy_name=None, scaling_resource_id=None, scaling_resource_type=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, cool_down_time=None):
+    def __init__(self, scaling_policy_name=None, scaling_resource_id=None, scaling_resource_type=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, cool_down_time=None, description=None):
         """UpdateScalingV2PolicyOption - a model defined in huaweicloud sdk"""
         
         
@@ -55,6 +57,7 @@ class UpdateScalingV2PolicyOption:
         self._scheduled_policy = None
         self._scaling_policy_action = None
         self._cool_down_time = None
+        self._description = None
         self.discriminator = None
 
         if scaling_policy_name is not None:
@@ -73,6 +76,8 @@ class UpdateScalingV2PolicyOption:
             self.scaling_policy_action = scaling_policy_action
         if cool_down_time is not None:
             self.cool_down_time = cool_down_time
+        if description is not None:
+            self.description = description
 
     @property
     def scaling_policy_name(self):
@@ -245,6 +250,28 @@ class UpdateScalingV2PolicyOption:
         :type: int
         """
         self._cool_down_time = cool_down_time
+
+    @property
+    def description(self):
+        """Gets the description of this UpdateScalingV2PolicyOption.
+
+        伸缩策略描述（1-256个字符）
+
+        :return: The description of this UpdateScalingV2PolicyOption.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this UpdateScalingV2PolicyOption.
+
+        伸缩策略描述（1-256个字符）
+
+        :param description: The description of this UpdateScalingV2PolicyOption.
+        :type: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

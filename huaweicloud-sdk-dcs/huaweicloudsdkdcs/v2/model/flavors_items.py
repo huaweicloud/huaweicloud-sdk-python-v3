@@ -184,7 +184,7 @@ class FlavorsItems:
     def cache_mode(self):
         """Gets the cache_mode of this FlavorsItems.
 
-        缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 
+        缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 - ha_rw_split： 表示读写分离实例 
 
         :return: The cache_mode of this FlavorsItems.
         :rtype: str
@@ -195,7 +195,7 @@ class FlavorsItems:
     def cache_mode(self, cache_mode):
         """Sets the cache_mode of this FlavorsItems.
 
-        缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 
+        缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 - ha_rw_split： 表示读写分离实例 
 
         :param cache_mode: The cache_mode of this FlavorsItems.
         :type: str

@@ -286,7 +286,7 @@ class GlanceListImagesRequest:
     def platform(self):
         """Gets the platform of this GlanceListImagesRequest.
 
-        镜像平台分类，取值为Windows，Ubuntu，RedHat，SUSE，CentOS，Debian，OpenSUSE, Oracle Linux，Fedora，Other，CoreOS和EuleOS
+        镜像平台分类，取值为Windows，Ubuntu，RedHat，SUSE，CentOS，Debian，OpenSUSE, Oracle Linux，Fedora，Other，CoreOS和EulerOS
 
         :return: The platform of this GlanceListImagesRequest.
         :rtype: str
@@ -297,7 +297,7 @@ class GlanceListImagesRequest:
     def platform(self, platform):
         """Sets the platform of this GlanceListImagesRequest.
 
-        镜像平台分类，取值为Windows，Ubuntu，RedHat，SUSE，CentOS，Debian，OpenSUSE, Oracle Linux，Fedora，Other，CoreOS和EuleOS
+        镜像平台分类，取值为Windows，Ubuntu，RedHat，SUSE，CentOS，Debian，OpenSUSE, Oracle Linux，Fedora，Other，CoreOS和EulerOS
 
         :param platform: The platform of this GlanceListImagesRequest.
         :type: str
