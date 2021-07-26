@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class NeutronFirewallRule:
@@ -28,6 +29,7 @@ class NeutronFirewallRule:
         'protocol': 'str',
         'ip_version': 'int',
         'enabled': 'bool',
+        'public': 'bool',
         'destination_ip_address': 'str',
         'destination_port': 'str',
         'source_ip_address': 'str',
@@ -44,6 +46,7 @@ class NeutronFirewallRule:
         'protocol': 'protocol',
         'ip_version': 'ip_version',
         'enabled': 'enabled',
+        'public': 'public',
         'destination_ip_address': 'destination_ip_address',
         'destination_port': 'destination_port',
         'source_ip_address': 'source_ip_address',
@@ -52,7 +55,7 @@ class NeutronFirewallRule:
         'project_id': 'project_id'
     }
 
-    def __init__(self, id=None, name=None, description=None, action=None, protocol=None, ip_version=None, enabled=None, destination_ip_address=None, destination_port=None, source_ip_address=None, source_port=None, tenant_id=None, project_id=None):
+    def __init__(self, id=None, name=None, description=None, action=None, protocol=None, ip_version=None, enabled=None, public=None, destination_ip_address=None, destination_port=None, source_ip_address=None, source_port=None, tenant_id=None, project_id=None):
         """NeutronFirewallRule - a model defined in huaweicloud sdk"""
         
         
@@ -64,6 +67,7 @@ class NeutronFirewallRule:
         self._protocol = None
         self._ip_version = None
         self._enabled = None
+        self._public = None
         self._destination_ip_address = None
         self._destination_port = None
         self._source_ip_address = None
@@ -79,6 +83,7 @@ class NeutronFirewallRule:
         self.protocol = protocol
         self.ip_version = ip_version
         self.enabled = enabled
+        self.public = public
         self.destination_ip_address = destination_ip_address
         self.destination_port = destination_port
         self.source_ip_address = source_ip_address
@@ -241,6 +246,28 @@ class NeutronFirewallRule:
         self._enabled = enabled
 
     @property
+    def public(self):
+        """Gets the public of this NeutronFirewallRule.
+
+        功能说明：是否支持跨租户共享 取值范围：true/false
+
+        :return: The public of this NeutronFirewallRule.
+        :rtype: bool
+        """
+        return self._public
+
+    @public.setter
+    def public(self, public):
+        """Sets the public of this NeutronFirewallRule.
+
+        功能说明：是否支持跨租户共享 取值范围：true/false
+
+        :param public: The public of this NeutronFirewallRule.
+        :type: bool
+        """
+        self._public = public
+
+    @property
     def destination_ip_address(self):
         """Gets the destination_ip_address of this NeutronFirewallRule.
 
@@ -401,7 +428,7 @@ class NeutronFirewallRule:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

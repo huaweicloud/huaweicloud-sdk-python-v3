@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ListPartnerCouponsRecordRequest:
@@ -313,7 +314,7 @@ class ListPartnerCouponsRecordRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListPartnerCouponsRecordRequest.
 
-        精英服务商ID。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
+        精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
 
         :return: The indirect_partner_id of this ListPartnerCouponsRecordRequest.
         :rtype: str
@@ -324,7 +325,7 @@ class ListPartnerCouponsRecordRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListPartnerCouponsRecordRequest.
 
-        精英服务商ID。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
+        精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
 
         :param indirect_partner_id: The indirect_partner_id of this ListPartnerCouponsRecordRequest.
         :type: str
@@ -360,7 +361,7 @@ class ListPartnerCouponsRecordRequest:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class BalancerActiveWindow:
@@ -39,8 +40,10 @@ class BalancerActiveWindow:
         self._stop_time = None
         self.discriminator = None
 
-        self.start_time = start_time
-        self.stop_time = stop_time
+        if start_time is not None:
+            self.start_time = start_time
+        if stop_time is not None:
+            self.stop_time = stop_time
 
     @property
     def start_time(self):
@@ -115,7 +118,7 @@ class BalancerActiveWindow:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

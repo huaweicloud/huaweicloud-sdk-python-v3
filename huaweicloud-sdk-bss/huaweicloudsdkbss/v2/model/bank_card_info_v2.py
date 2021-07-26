@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class BankCardInfoV2:
@@ -120,7 +121,7 @@ class BankCardInfoV2:
     def verification_code(self):
         """Gets the verification_code of this BankCardInfoV2.
 
-        验证码。 请调用“发送验证码”接口获取。 如果手机号不存在，则不需要输入验证码。
+        验证码。 请调用“发送验证码”接口获取。
 
         :return: The verification_code of this BankCardInfoV2.
         :rtype: str
@@ -131,7 +132,7 @@ class BankCardInfoV2:
     def verification_code(self, verification_code):
         """Sets the verification_code of this BankCardInfoV2.
 
-        验证码。 请调用“发送验证码”接口获取。 如果手机号不存在，则不需要输入验证码。
+        验证码。 请调用“发送验证码”接口获取。
 
         :param verification_code: The verification_code of this BankCardInfoV2.
         :type: str
@@ -167,7 +168,7 @@ class BankCardInfoV2:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class DeletePolicyRequest:
@@ -42,7 +43,7 @@ class DeletePolicyRequest:
     def policy_id(self):
         """Gets the policy_id of this DeletePolicyRequest.
 
-        policyid
+        策略id（策略id从查询防护策略列表接口获取）
 
         :return: The policy_id of this DeletePolicyRequest.
         :rtype: str
@@ -53,7 +54,7 @@ class DeletePolicyRequest:
     def policy_id(self, policy_id):
         """Sets the policy_id of this DeletePolicyRequest.
 
-        policyid
+        策略id（策略id从查询防护策略列表接口获取）
 
         :param policy_id: The policy_id of this DeletePolicyRequest.
         :type: str
@@ -89,7 +90,7 @@ class DeletePolicyRequest:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

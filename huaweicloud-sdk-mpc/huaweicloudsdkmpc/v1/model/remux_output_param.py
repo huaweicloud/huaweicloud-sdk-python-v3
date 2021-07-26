@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class RemuxOutputParam:
@@ -97,7 +98,7 @@ class RemuxOutputParam:
     def remove_meta(self):
         """Gets the remove_meta of this RemuxOutputParam.
 
-        输出媒体是否去除片源的中metadata信息。 
+        输出媒体是否去除片源的中metadata自定义信息。默认值：false 
 
         :return: The remove_meta of this RemuxOutputParam.
         :rtype: bool
@@ -108,7 +109,7 @@ class RemuxOutputParam:
     def remove_meta(self, remove_meta):
         """Sets the remove_meta of this RemuxOutputParam.
 
-        输出媒体是否去除片源的中metadata信息。 
+        输出媒体是否去除片源的中metadata自定义信息。默认值：false 
 
         :param remove_meta: The remove_meta of this RemuxOutputParam.
         :type: bool
@@ -144,7 +145,7 @@ class RemuxOutputParam:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

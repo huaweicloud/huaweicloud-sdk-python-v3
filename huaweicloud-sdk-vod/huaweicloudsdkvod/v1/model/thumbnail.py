@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Thumbnail:
@@ -94,7 +95,7 @@ class Thumbnail:
     def time(self):
         """Gets the time of this Thumbnail.
 
-        根据时间间隔采样时的时间间隔值。  取值范围：[1,12]之间的整数。  单位：秒。
+        **type**取值为time时必填。根据时间间隔采样时的时间间隔值。  取值范围：[1,12]之间的整数。  单位：秒。
 
         :return: The time of this Thumbnail.
         :rtype: int
@@ -105,7 +106,7 @@ class Thumbnail:
     def time(self, time):
         """Sets the time of this Thumbnail.
 
-        根据时间间隔采样时的时间间隔值。  取值范围：[1,12]之间的整数。  单位：秒。
+        **type**取值为time时必填。根据时间间隔采样时的时间间隔值。  取值范围：[1,12]之间的整数。  单位：秒。
 
         :param time: The time of this Thumbnail.
         :type: int
@@ -116,7 +117,7 @@ class Thumbnail:
     def dots(self):
         """Gets the dots of this Thumbnail.
 
-        指定时间截图时的时间点数组。
+        **type**取值为dots时必填。指定时间截图时的时间点数组。
 
         :return: The dots of this Thumbnail.
         :rtype: list[int]
@@ -127,7 +128,7 @@ class Thumbnail:
     def dots(self, dots):
         """Sets the dots of this Thumbnail.
 
-        指定时间截图时的时间点数组。
+        **type**取值为dots时必填。指定时间截图时的时间点数组。
 
         :param dots: The dots of this Thumbnail.
         :type: list[int]
@@ -251,7 +252,7 @@ class Thumbnail:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

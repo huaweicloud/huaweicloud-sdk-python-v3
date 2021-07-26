@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class DecoupledLiveDomainInfo:
@@ -28,8 +29,7 @@ class DecoupledLiveDomainInfo:
         'domain_cname': 'str',
         'status': 'str',
         'related_domain': 'str',
-        'create_time': 'datetime',
-        'domain_source': 'DomainSourceInfo'
+        'create_time': 'datetime'
     }
 
     attribute_map = {
@@ -40,11 +40,10 @@ class DecoupledLiveDomainInfo:
         'domain_cname': 'domain_cname',
         'status': 'status',
         'related_domain': 'related_domain',
-        'create_time': 'create_time',
-        'domain_source': 'domain_source'
+        'create_time': 'create_time'
     }
 
-    def __init__(self, domain=None, domain_type=None, vendor=None, region=None, domain_cname=None, status=None, related_domain=None, create_time=None, domain_source=None):
+    def __init__(self, domain=None, domain_type=None, vendor=None, region=None, domain_cname=None, status=None, related_domain=None, create_time=None):
         """DecoupledLiveDomainInfo - a model defined in huaweicloud sdk"""
         
         
@@ -57,7 +56,6 @@ class DecoupledLiveDomainInfo:
         self._status = None
         self._related_domain = None
         self._create_time = None
-        self._domain_source = None
         self.discriminator = None
 
         self.domain = domain
@@ -68,7 +66,6 @@ class DecoupledLiveDomainInfo:
         self.status = status
         self.related_domain = related_domain
         self.create_time = create_time
-        self.domain_source = domain_source
 
     @property
     def domain(self):
@@ -246,26 +243,6 @@ class DecoupledLiveDomainInfo:
         """
         self._create_time = create_time
 
-    @property
-    def domain_source(self):
-        """Gets the domain_source of this DecoupledLiveDomainInfo.
-
-
-        :return: The domain_source of this DecoupledLiveDomainInfo.
-        :rtype: DomainSourceInfo
-        """
-        return self._domain_source
-
-    @domain_source.setter
-    def domain_source(self, domain_source):
-        """Sets the domain_source of this DecoupledLiveDomainInfo.
-
-
-        :param domain_source: The domain_source of this DecoupledLiveDomainInfo.
-        :type: DomainSourceInfo
-        """
-        self._domain_source = domain_source
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -295,7 +272,7 @@ class DecoupledLiveDomainInfo:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

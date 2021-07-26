@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class DssPoolInfo:
@@ -102,7 +103,7 @@ class DssPoolInfo:
     def dsspool_volume_type(self):
         """Gets the dsspool_volume_type of this DssPoolInfo.
 
-        专属存储池磁盘类型名称，可能取值如下：  - ULTRAHIGH，表示SSD。  - ULTRAHIGHPRO，表示SSD尊享版，仅支持超高性能型尊享版实例。  - NVMESSD，表示直通SSD，仅支持i3规格实例。
+        专属存储池磁盘类型名称，可能取值如下：  - ULTRAHIGH，表示SSD。  - LOCALSSD：表示本地SSD。  - CLOUDSSD：表示SSD云盘，仅支持通用型和独享型规格实例。  - ESSD：表示极速型SSD，仅支持独享型规格实例。
 
         :return: The dsspool_volume_type of this DssPoolInfo.
         :rtype: str
@@ -113,7 +114,7 @@ class DssPoolInfo:
     def dsspool_volume_type(self, dsspool_volume_type):
         """Sets the dsspool_volume_type of this DssPoolInfo.
 
-        专属存储池磁盘类型名称，可能取值如下：  - ULTRAHIGH，表示SSD。  - ULTRAHIGHPRO，表示SSD尊享版，仅支持超高性能型尊享版实例。  - NVMESSD，表示直通SSD，仅支持i3规格实例。
+        专属存储池磁盘类型名称，可能取值如下：  - ULTRAHIGH，表示SSD。  - LOCALSSD：表示本地SSD。  - CLOUDSSD：表示SSD云盘，仅支持通用型和独享型规格实例。  - ESSD：表示极速型SSD，仅支持独享型规格实例。
 
         :param dsspool_volume_type: The dsspool_volume_type of this DssPoolInfo.
         :type: str
@@ -193,7 +194,7 @@ class DssPoolInfo:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class PremiumWafServer:
@@ -174,7 +175,7 @@ class PremiumWafServer:
     def vpc_id(self):
         """Gets the vpc_id of this PremiumWafServer.
 
-        源站所在VPC ID
+        独享引擎所在VPC ID（子网id）源站和独享引擎需要在同一子网
 
         :return: The vpc_id of this PremiumWafServer.
         :rtype: str
@@ -185,7 +186,7 @@ class PremiumWafServer:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this PremiumWafServer.
 
-        源站所在VPC ID
+        独享引擎所在VPC ID（子网id）源站和独享引擎需要在同一子网
 
         :param vpc_id: The vpc_id of this PremiumWafServer.
         :type: str
@@ -221,7 +222,7 @@ class PremiumWafServer:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

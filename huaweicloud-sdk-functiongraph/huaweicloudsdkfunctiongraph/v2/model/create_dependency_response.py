@@ -5,6 +5,7 @@ import six
 
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreateDependencyResponse(SdkResponse):
@@ -26,7 +27,7 @@ class CreateDependencyResponse(SdkResponse):
         'link': 'str',
         'runtime': 'str',
         'etag': 'str',
-        'size': 'str',
+        'size': 'int',
         'name': 'str',
         'description': 'str',
         'file_name': 'str'
@@ -196,7 +197,7 @@ class CreateDependencyResponse(SdkResponse):
         依赖包大小。
 
         :return: The size of this CreateDependencyResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._size
 
@@ -207,7 +208,7 @@ class CreateDependencyResponse(SdkResponse):
         依赖包大小。
 
         :param size: The size of this CreateDependencyResponse.
-        :type: str
+        :type: int
         """
         self._size = size
 
@@ -306,7 +307,7 @@ class CreateDependencyResponse(SdkResponse):
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

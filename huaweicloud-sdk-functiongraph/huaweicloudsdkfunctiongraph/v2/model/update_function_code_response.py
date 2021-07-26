@@ -5,6 +5,7 @@ import six
 
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class UpdateFunctionCodeResponse(SdkResponse):
@@ -32,7 +33,6 @@ class UpdateFunctionCodeResponse(SdkResponse):
         'digest': 'str',
         'last_modified': 'datetime',
         'func_code': 'FuncCode',
-        'concurrency': 'int',
         'depend_list': 'list[str]',
         'strategy_config': 'StrategyConfig',
         'dependencies': 'list[Dependency]'
@@ -50,13 +50,12 @@ class UpdateFunctionCodeResponse(SdkResponse):
         'digest': 'digest',
         'last_modified': 'last_modified',
         'func_code': 'func_code',
-        'concurrency': 'concurrency',
         'depend_list': 'depend_list',
         'strategy_config': 'strategy_config',
         'dependencies': 'dependencies'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, runtime=None, code_type=None, code_url=None, code_filename=None, code_size=None, digest=None, last_modified=None, func_code=None, concurrency=None, depend_list=None, strategy_config=None, dependencies=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, runtime=None, code_type=None, code_url=None, code_filename=None, code_size=None, digest=None, last_modified=None, func_code=None, depend_list=None, strategy_config=None, dependencies=None):
         """UpdateFunctionCodeResponse - a model defined in huaweicloud sdk"""
         
         super(UpdateFunctionCodeResponse, self).__init__()
@@ -72,7 +71,6 @@ class UpdateFunctionCodeResponse(SdkResponse):
         self._digest = None
         self._last_modified = None
         self._func_code = None
-        self._concurrency = None
         self._depend_list = None
         self._strategy_config = None
         self._dependencies = None
@@ -100,8 +98,6 @@ class UpdateFunctionCodeResponse(SdkResponse):
             self.last_modified = last_modified
         if func_code is not None:
             self.func_code = func_code
-        if concurrency is not None:
-            self.concurrency = concurrency
         if depend_list is not None:
             self.depend_list = depend_list
         if strategy_config is not None:
@@ -350,26 +346,6 @@ class UpdateFunctionCodeResponse(SdkResponse):
         self._func_code = func_code
 
     @property
-    def concurrency(self):
-        """Gets the concurrency of this UpdateFunctionCodeResponse.
-
-
-        :return: The concurrency of this UpdateFunctionCodeResponse.
-        :rtype: int
-        """
-        return self._concurrency
-
-    @concurrency.setter
-    def concurrency(self, concurrency):
-        """Sets the concurrency of this UpdateFunctionCodeResponse.
-
-
-        :param concurrency: The concurrency of this UpdateFunctionCodeResponse.
-        :type: int
-        """
-        self._concurrency = concurrency
-
-    @property
     def depend_list(self):
         """Gets the depend_list of this UpdateFunctionCodeResponse.
 
@@ -462,7 +438,7 @@ class UpdateFunctionCodeResponse(SdkResponse):
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

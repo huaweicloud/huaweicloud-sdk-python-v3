@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class TasksObject:
@@ -29,9 +30,7 @@ class TasksObject:
         'failed': 'int',
         'total': 'int',
         'create_time': 'int',
-        'urls': 'list[str]',
-        'file_type': 'str',
-        'task_id': 'str'
+        'file_type': 'str'
     }
 
     attribute_map = {
@@ -43,12 +42,10 @@ class TasksObject:
         'failed': 'failed',
         'total': 'total',
         'create_time': 'create_time',
-        'urls': 'urls',
-        'file_type': 'file_type',
-        'task_id': 'task_id'
+        'file_type': 'file_type'
     }
 
-    def __init__(self, id=None, task_type=None, status=None, processing=None, succeed=None, failed=None, total=None, create_time=None, urls=None, file_type=None, task_id=None):
+    def __init__(self, id=None, task_type=None, status=None, processing=None, succeed=None, failed=None, total=None, create_time=None, file_type=None):
         """TasksObject - a model defined in huaweicloud sdk"""
         
         
@@ -61,9 +58,7 @@ class TasksObject:
         self._failed = None
         self._total = None
         self._create_time = None
-        self._urls = None
         self._file_type = None
-        self._task_id = None
         self.discriminator = None
 
         if id is not None:
@@ -82,12 +77,8 @@ class TasksObject:
             self.total = total
         if create_time is not None:
             self.create_time = create_time
-        if urls is not None:
-            self.urls = urls
         if file_type is not None:
             self.file_type = file_type
-        if task_id is not None:
-            self.task_id = task_id
 
     @property
     def id(self):
@@ -266,28 +257,6 @@ class TasksObject:
         self._create_time = create_time
 
     @property
-    def urls(self):
-        """Gets the urls of this TasksObject.
-
-        刷新预热的url。
-
-        :return: The urls of this TasksObject.
-        :rtype: list[str]
-        """
-        return self._urls
-
-    @urls.setter
-    def urls(self, urls):
-        """Sets the urls of this TasksObject.
-
-        刷新预热的url。
-
-        :param urls: The urls of this TasksObject.
-        :type: list[str]
-        """
-        self._urls = urls
-
-    @property
     def file_type(self):
         """Gets the file_type of this TasksObject.
 
@@ -308,28 +277,6 @@ class TasksObject:
         :type: str
         """
         self._file_type = file_type
-
-    @property
-    def task_id(self):
-        """Gets the task_id of this TasksObject.
-
-        任务id。
-
-        :return: The task_id of this TasksObject.
-        :rtype: str
-        """
-        return self._task_id
-
-    @task_id.setter
-    def task_id(self, task_id):
-        """Sets the task_id of this TasksObject.
-
-        任务id。
-
-        :param task_id: The task_id of this TasksObject.
-        :type: str
-        """
-        self._task_id = task_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -360,7 +307,7 @@ class TasksObject:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -5,6 +5,7 @@ import six
 
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ShowHistoryTaskDetailsResponse(SdkResponse):
@@ -30,8 +31,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         'succeed': 'int',
         'failed': 'int',
         'total': 'int',
-        'file_type': 'str',
-        'task_id': 'str'
+        'file_type': 'str'
     }
 
     attribute_map = {
@@ -44,11 +44,10 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         'succeed': 'succeed',
         'failed': 'failed',
         'total': 'total',
-        'file_type': 'file_type',
-        'task_id': 'task_id'
+        'file_type': 'file_type'
     }
 
-    def __init__(self, id=None, task_type=None, status=None, urls=None, create_time=None, processing=None, succeed=None, failed=None, total=None, file_type=None, task_id=None):
+    def __init__(self, id=None, task_type=None, status=None, urls=None, create_time=None, processing=None, succeed=None, failed=None, total=None, file_type=None):
         """ShowHistoryTaskDetailsResponse - a model defined in huaweicloud sdk"""
         
         super(ShowHistoryTaskDetailsResponse, self).__init__()
@@ -63,7 +62,6 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         self._failed = None
         self._total = None
         self._file_type = None
-        self._task_id = None
         self.discriminator = None
 
         if id is not None:
@@ -86,8 +84,6 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
             self.total = total
         if file_type is not None:
             self.file_type = file_type
-        if task_id is not None:
-            self.task_id = task_id
 
     @property
     def id(self):
@@ -309,28 +305,6 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         """
         self._file_type = file_type
 
-    @property
-    def task_id(self):
-        """Gets the task_id of this ShowHistoryTaskDetailsResponse.
-
-        任务id
-
-        :return: The task_id of this ShowHistoryTaskDetailsResponse.
-        :rtype: str
-        """
-        return self._task_id
-
-    @task_id.setter
-    def task_id(self, task_id):
-        """Sets the task_id of this ShowHistoryTaskDetailsResponse.
-
-        任务id
-
-        :param task_id: The task_id of this ShowHistoryTaskDetailsResponse.
-        :type: str
-        """
-        self._task_id = task_id
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -360,7 +334,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

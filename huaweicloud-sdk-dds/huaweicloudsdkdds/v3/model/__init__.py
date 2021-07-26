@@ -29,6 +29,7 @@ from huaweicloudsdkdds.v3.model.cancel_eip_response import CancelEipResponse
 from huaweicloudsdkdds.v3.model.check_password_request import CheckPasswordRequest
 from huaweicloudsdkdds.v3.model.check_password_request_body import CheckPasswordRequestBody
 from huaweicloudsdkdds.v3.model.check_password_response import CheckPasswordResponse
+from huaweicloudsdkdds.v3.model.client_network_request_body import ClientNetworkRequestBody
 from huaweicloudsdkdds.v3.model.create_database_role_request import CreateDatabaseRoleRequest
 from huaweicloudsdkdds.v3.model.create_database_role_request_body import CreateDatabaseRoleRequestBody
 from huaweicloudsdkdds.v3.model.create_database_role_response import CreateDatabaseRoleResponse
@@ -197,6 +198,8 @@ from huaweicloudsdkdds.v3.model.switchover_replica_set_request import Switchover
 from huaweicloudsdkdds.v3.model.switchover_replica_set_response import SwitchoverReplicaSetResponse
 from huaweicloudsdkdds.v3.model.tag_item import TagItem
 from huaweicloudsdkdds.v3.model.target import Target
+from huaweicloudsdkdds.v3.model.update_client_network_request import UpdateClientNetworkRequest
+from huaweicloudsdkdds.v3.model.update_client_network_response import UpdateClientNetworkResponse
 from huaweicloudsdkdds.v3.model.update_instance_name_request import UpdateInstanceNameRequest
 from huaweicloudsdkdds.v3.model.update_instance_name_response import UpdateInstanceNameResponse
 from huaweicloudsdkdds.v3.model.update_instance_port_request import UpdateInstancePortRequest

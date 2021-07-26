@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class TemplateView:
@@ -39,7 +40,7 @@ class TemplateView:
         'description': 'str',
         'parameter': 'list[TemplateParam]',
         'flow': 'dict(str, dict(str, str))',
-        'states': 'dict(str, object)',
+        'states': 'dict(str, TemplateState)',
         'can_update': 'bool',
         'can_delete': 'bool',
         'need_hub': 'bool'
@@ -525,7 +526,7 @@ class TemplateView:
         编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :return: The states of this TemplateView.
-        :rtype: dict(str, object)
+        :rtype: dict(str, TemplateState)
         """
         return self._states
 
@@ -536,7 +537,7 @@ class TemplateView:
         编排State详情，map类型数据。本字段为描述流水线基础编排数据之一，建议可通过流水线真实界面基于模板创建接口中获取
 
         :param states: The states of this TemplateView.
-        :type: dict(str, object)
+        :type: dict(str, TemplateState)
         """
         self._states = states
 
@@ -635,7 +636,7 @@ class TemplateView:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

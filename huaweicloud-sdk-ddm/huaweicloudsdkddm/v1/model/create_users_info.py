@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreateUsersInfo:
@@ -24,7 +25,6 @@ class CreateUsersInfo:
         'name': 'str',
         'password': 'str',
         'base_authority': 'list[str]',
-        'extend_authority': 'list[str]',
         'description': 'str',
         'databases': 'list[CreateUsersDatabases]'
     }
@@ -33,12 +33,11 @@ class CreateUsersInfo:
         'name': 'name',
         'password': 'password',
         'base_authority': 'base_authority',
-        'extend_authority': 'extend_authority',
         'description': 'description',
         'databases': 'databases'
     }
 
-    def __init__(self, name=None, password=None, base_authority=None, extend_authority=None, description=None, databases=None):
+    def __init__(self, name=None, password=None, base_authority=None, description=None, databases=None):
         """CreateUsersInfo - a model defined in huaweicloud sdk"""
         
         
@@ -46,7 +45,6 @@ class CreateUsersInfo:
         self._name = None
         self._password = None
         self._base_authority = None
-        self._extend_authority = None
         self._description = None
         self._databases = None
         self.discriminator = None
@@ -54,8 +52,6 @@ class CreateUsersInfo:
         self.name = name
         self.password = password
         self.base_authority = base_authority
-        if extend_authority is not None:
-            self.extend_authority = extend_authority
         if description is not None:
             self.description = description
         if databases is not None:
@@ -126,28 +122,6 @@ class CreateUsersInfo:
         :type: list[str]
         """
         self._base_authority = base_authority
-
-    @property
-    def extend_authority(self):
-        """Gets the extend_authority of this CreateUsersInfo.
-
-        DDM实例帐号的扩展权限，默认值为空。  取值范围为：fulltableDelete、fulltableSelect、fulltableUpdate。  说明： 权限配置应该遵循如下原则：  请至少选择一个基础权限，且扩展权限对应的基础权限必须选择，对应关系如下：   - “fulltableSelect”对应“SELECT”   - “fulltableDelete”对应“DELETE”   - “fulltableUpdate”对应“UPDATE”
-
-        :return: The extend_authority of this CreateUsersInfo.
-        :rtype: list[str]
-        """
-        return self._extend_authority
-
-    @extend_authority.setter
-    def extend_authority(self, extend_authority):
-        """Sets the extend_authority of this CreateUsersInfo.
-
-        DDM实例帐号的扩展权限，默认值为空。  取值范围为：fulltableDelete、fulltableSelect、fulltableUpdate。  说明： 权限配置应该遵循如下原则：  请至少选择一个基础权限，且扩展权限对应的基础权限必须选择，对应关系如下：   - “fulltableSelect”对应“SELECT”   - “fulltableDelete”对应“DELETE”   - “fulltableUpdate”对应“UPDATE”
-
-        :param extend_authority: The extend_authority of this CreateUsersInfo.
-        :type: list[str]
-        """
-        self._extend_authority = extend_authority
 
     @property
     def description(self):
@@ -222,7 +196,7 @@ class CreateUsersInfo:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -129,6 +129,7 @@ from huaweicloudsdkdcs.v2.model.modify_instance_password_body import ModifyInsta
 from huaweicloudsdkdcs.v2.model.modify_ip_whitelist_body import ModifyIpWhitelistBody
 from huaweicloudsdkdcs.v2.model.modify_redis_config_body import ModifyRedisConfigBody
 from huaweicloudsdkdcs.v2.model.priority_body import PriorityBody
+from huaweicloudsdkdcs.v2.model.proxy2_node_monitored_object import Proxy2NodeMonitoredObject
 from huaweicloudsdkdcs.v2.model.proxy_node_monitored_object import ProxyNodeMonitoredObject
 from huaweicloudsdkdcs.v2.model.query_redis_config import QueryRedisConfig
 from huaweicloudsdkdcs.v2.model.query_tenant_quota_resp_quotas import QueryTenantQuotaRespQuotas

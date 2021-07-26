@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Encryption:
@@ -21,33 +22,23 @@ class Encryption:
     sensitive_list = []
 
     openapi_types = {
-        'hls_encrypt': 'HlsEncrypt',
-        'multidrm': 'Multidrm',
-        'preview_duration': 'int'
+        'hls_encrypt': 'HlsEncrypt'
     }
 
     attribute_map = {
-        'hls_encrypt': 'hls_encrypt',
-        'multidrm': 'multidrm',
-        'preview_duration': 'preview_duration'
+        'hls_encrypt': 'hls_encrypt'
     }
 
-    def __init__(self, hls_encrypt=None, multidrm=None, preview_duration=None):
+    def __init__(self, hls_encrypt=None):
         """Encryption - a model defined in huaweicloud sdk"""
         
         
 
         self._hls_encrypt = None
-        self._multidrm = None
-        self._preview_duration = None
         self.discriminator = None
 
         if hls_encrypt is not None:
             self.hls_encrypt = hls_encrypt
-        if multidrm is not None:
-            self.multidrm = multidrm
-        if preview_duration is not None:
-            self.preview_duration = preview_duration
 
     @property
     def hls_encrypt(self):
@@ -68,48 +59,6 @@ class Encryption:
         :type: HlsEncrypt
         """
         self._hls_encrypt = hls_encrypt
-
-    @property
-    def multidrm(self):
-        """Gets the multidrm of this Encryption.
-
-
-        :return: The multidrm of this Encryption.
-        :rtype: Multidrm
-        """
-        return self._multidrm
-
-    @multidrm.setter
-    def multidrm(self, multidrm):
-        """Sets the multidrm of this Encryption.
-
-
-        :param multidrm: The multidrm of this Encryption.
-        :type: Multidrm
-        """
-        self._multidrm = multidrm
-
-    @property
-    def preview_duration(self):
-        """Gets the preview_duration of this Encryption.
-
-        加密预览时长, 单位秒(S), 0 - preview_duration之间的内容不加密
-
-        :return: The preview_duration of this Encryption.
-        :rtype: int
-        """
-        return self._preview_duration
-
-    @preview_duration.setter
-    def preview_duration(self, preview_duration):
-        """Sets the preview_duration of this Encryption.
-
-        加密预览时长, 单位秒(S), 0 - preview_duration之间的内容不加密
-
-        :param preview_duration: The preview_duration of this Encryption.
-        :type: int
-        """
-        self._preview_duration = preview_duration
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -140,7 +89,7 @@ class Encryption:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

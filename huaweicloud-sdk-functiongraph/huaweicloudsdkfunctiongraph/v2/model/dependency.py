@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Dependency:
@@ -21,6 +22,7 @@ class Dependency:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'owner': 'str',
         'link': 'str',
         'runtime': 'str',
@@ -32,6 +34,7 @@ class Dependency:
     }
 
     attribute_map = {
+        'id': 'id',
         'owner': 'owner',
         'link': 'link',
         'runtime': 'runtime',
@@ -42,11 +45,12 @@ class Dependency:
         'file_name': 'file_name'
     }
 
-    def __init__(self, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None):
+    def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None):
         """Dependency - a model defined in huaweicloud sdk"""
         
         
 
+        self._id = None
         self._owner = None
         self._link = None
         self._runtime = None
@@ -57,6 +61,7 @@ class Dependency:
         self._file_name = None
         self.discriminator = None
 
+        self.id = id
         self.owner = owner
         self.link = link
         self.runtime = runtime
@@ -66,6 +71,28 @@ class Dependency:
         self.description = description
         if file_name is not None:
             self.file_name = file_name
+
+    @property
+    def id(self):
+        """Gets the id of this Dependency.
+
+        依赖包id。
+
+        :return: The id of this Dependency.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this Dependency.
+
+        依赖包id。
+
+        :param id: The id of this Dependency.
+        :type: str
+        """
+        self._id = id
 
     @property
     def owner(self):
@@ -272,7 +299,7 @@ class Dependency:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ResFeeRecordV2:
@@ -40,6 +41,7 @@ class ResFeeRecordV2:
         'spec_size': 'float',
         'spec_size_measure_id': 'int',
         'trade_id': 'str',
+        'trade_time': 'str',
         'enterprise_project_id': 'str',
         'enterprise_project_name': 'str',
         'charge_mode': 'str',
@@ -88,6 +90,7 @@ class ResFeeRecordV2:
         'spec_size': 'spec_size',
         'spec_size_measure_id': 'spec_size_measure_id',
         'trade_id': 'trade_id',
+        'trade_time': 'trade_time',
         'enterprise_project_id': 'enterprise_project_id',
         'enterprise_project_name': 'enterprise_project_name',
         'charge_mode': 'charge_mode',
@@ -116,7 +119,7 @@ class ResFeeRecordV2:
         'measure_id': 'measure_id'
     }
 
-    def __init__(self, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_id=None, product_name=None, product_spec_desc=None, sku_code=None, spec_size=None, spec_size_measure_id=None, trade_id=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, unit_price=None, unit=None, official_amount=None, discount_amount=None, amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, measure_id=None):
+    def __init__(self, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_id=None, product_name=None, product_spec_desc=None, sku_code=None, spec_size=None, spec_size_measure_id=None, trade_id=None, trade_time=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, unit_price=None, unit=None, official_amount=None, discount_amount=None, amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, measure_id=None):
         """ResFeeRecordV2 - a model defined in huaweicloud sdk"""
         
         
@@ -140,6 +143,7 @@ class ResFeeRecordV2:
         self._spec_size = None
         self._spec_size_measure_id = None
         self._trade_id = None
+        self._trade_time = None
         self._enterprise_project_id = None
         self._enterprise_project_name = None
         self._charge_mode = None
@@ -206,6 +210,8 @@ class ResFeeRecordV2:
             self.spec_size_measure_id = spec_size_measure_id
         if trade_id is not None:
             self.trade_id = trade_id
+        if trade_time is not None:
+            self.trade_time = trade_time
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if enterprise_project_name is not None:
@@ -676,6 +682,28 @@ class ResFeeRecordV2:
         :type: str
         """
         self._trade_id = trade_id
+
+    @property
+    def trade_time(self):
+        """Gets the trade_time of this ResFeeRecordV2.
+
+        |参数名称：交易时间| |参数名称：交易时间，某条消费记录对应的扣费时间。|
+
+        :return: The trade_time of this ResFeeRecordV2.
+        :rtype: str
+        """
+        return self._trade_time
+
+    @trade_time.setter
+    def trade_time(self, trade_time):
+        """Sets the trade_time of this ResFeeRecordV2.
+
+        |参数名称：交易时间| |参数名称：交易时间，某条消费记录对应的扣费时间。|
+
+        :param trade_time: The trade_time of this ResFeeRecordV2.
+        :type: str
+        """
+        self._trade_time = trade_time
 
     @property
     def enterprise_project_id(self):
@@ -1278,7 +1306,7 @@ class ResFeeRecordV2:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

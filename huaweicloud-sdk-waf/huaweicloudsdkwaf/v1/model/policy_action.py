@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class PolicyAction:
@@ -21,34 +22,29 @@ class PolicyAction:
     sensitive_list = []
 
     openapi_types = {
-        'category': 'str',
-        'followed_action_id': 'str'
+        'category': 'str'
     }
 
     attribute_map = {
-        'category': 'category',
-        'followed_action_id': 'followed_action_id'
+        'category': 'category'
     }
 
-    def __init__(self, category=None, followed_action_id=None):
+    def __init__(self, category=None):
         """PolicyAction - a model defined in huaweicloud sdk"""
         
         
 
         self._category = None
-        self._followed_action_id = None
         self.discriminator = None
 
         if category is not None:
             self.category = category
-        if followed_action_id is not None:
-            self.followed_action_id = followed_action_id
 
     @property
     def category(self):
         """Gets the category of this PolicyAction.
 
-        防护等级
+        防护等级（log为仅记录、block为拦截）
 
         :return: The category of this PolicyAction.
         :rtype: str
@@ -59,34 +55,12 @@ class PolicyAction:
     def category(self, category):
         """Sets the category of this PolicyAction.
 
-        防护等级
+        防护等级（log为仅记录、block为拦截）
 
         :param category: The category of this PolicyAction.
         :type: str
         """
         self._category = category
-
-    @property
-    def followed_action_id(self):
-        """Gets the followed_action_id of this PolicyAction.
-
-        攻击惩罚规则ID
-
-        :return: The followed_action_id of this PolicyAction.
-        :rtype: str
-        """
-        return self._followed_action_id
-
-    @followed_action_id.setter
-    def followed_action_id(self, followed_action_id):
-        """Sets the followed_action_id of this PolicyAction.
-
-        攻击惩罚规则ID
-
-        :param followed_action_id: The followed_action_id of this PolicyAction.
-        :type: str
-        """
-        self._followed_action_id = followed_action_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -117,7 +91,7 @@ class PolicyAction:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

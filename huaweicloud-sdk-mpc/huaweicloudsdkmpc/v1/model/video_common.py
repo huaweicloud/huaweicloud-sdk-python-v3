@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class VideoCommon:
@@ -31,9 +32,7 @@ class VideoCommon:
         'bframes_count': 'int',
         'frame_rate': 'int',
         'aspect_ratio': 'int',
-        'black_cut': 'int',
-        'gop_structure': 'bool',
-        'sr_factor': 'str'
+        'black_cut': 'int'
     }
 
     attribute_map = {
@@ -47,12 +46,10 @@ class VideoCommon:
         'bframes_count': 'bframes_count',
         'frame_rate': 'frame_rate',
         'aspect_ratio': 'aspect_ratio',
-        'black_cut': 'black_cut',
-        'gop_structure': 'GOP_structure',
-        'sr_factor': 'sr_factor'
+        'black_cut': 'black_cut'
     }
 
-    def __init__(self, output_policy=None, codec=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, aspect_ratio=None, black_cut=None, gop_structure=None, sr_factor=None):
+    def __init__(self, output_policy=None, codec=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, aspect_ratio=None, black_cut=None):
         """VideoCommon - a model defined in huaweicloud sdk"""
         
         
@@ -68,8 +65,6 @@ class VideoCommon:
         self._frame_rate = None
         self._aspect_ratio = None
         self._black_cut = None
-        self._gop_structure = None
-        self._sr_factor = None
         self.discriminator = None
 
         if output_policy is not None:
@@ -94,10 +89,6 @@ class VideoCommon:
             self.aspect_ratio = aspect_ratio
         if black_cut is not None:
             self.black_cut = black_cut
-        if gop_structure is not None:
-            self.gop_structure = gop_structure
-        if sr_factor is not None:
-            self.sr_factor = sr_factor
 
     @property
     def output_policy(self):
@@ -341,50 +332,6 @@ class VideoCommon:
         """
         self._black_cut = black_cut
 
-    @property
-    def gop_structure(self):
-        """Gets the gop_structure of this VideoCommon.
-
-        GOP类型（暂不开放） 0: Closed (Default) 1:Open 
-
-        :return: The gop_structure of this VideoCommon.
-        :rtype: bool
-        """
-        return self._gop_structure
-
-    @gop_structure.setter
-    def gop_structure(self, gop_structure):
-        """Sets the gop_structure of this VideoCommon.
-
-        GOP类型（暂不开放） 0: Closed (Default) 1:Open 
-
-        :param gop_structure: The gop_structure of this VideoCommon.
-        :type: bool
-        """
-        self._gop_structure = gop_structure
-
-    @property
-    def sr_factor(self):
-        """Gets the sr_factor of this VideoCommon.
-
-        超分倍数  取值如下： - 2：两倍超分 
-
-        :return: The sr_factor of this VideoCommon.
-        :rtype: str
-        """
-        return self._sr_factor
-
-    @sr_factor.setter
-    def sr_factor(self, sr_factor):
-        """Sets the sr_factor of this VideoCommon.
-
-        超分倍数  取值如下： - 2：两倍超分 
-
-        :param sr_factor: The sr_factor of this VideoCommon.
-        :type: str
-        """
-        self._sr_factor = sr_factor
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -414,7 +361,7 @@ class VideoCommon:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

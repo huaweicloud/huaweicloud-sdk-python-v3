@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class UpdateTriggerRequestBody:
@@ -36,8 +37,7 @@ class UpdateTriggerRequestBody:
         self._trigger_status = None
         self.discriminator = None
 
-        if trigger_status is not None:
-            self.trigger_status = trigger_status
+        self.trigger_status = trigger_status
 
     @property
     def trigger_status(self):
@@ -90,7 +90,7 @@ class UpdateTriggerRequestBody:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

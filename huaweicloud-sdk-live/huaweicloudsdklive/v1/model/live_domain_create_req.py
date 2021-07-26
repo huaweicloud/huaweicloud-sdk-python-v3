@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class LiveDomainCreateReq:
@@ -24,19 +25,17 @@ class LiveDomainCreateReq:
         'domain': 'str',
         'domain_type': 'str',
         'region': 'str',
-        'service_area': 'str',
-        'domain_source': 'DomainSourceInfo'
+        'service_area': 'str'
     }
 
     attribute_map = {
         'domain': 'domain',
         'domain_type': 'domain_type',
         'region': 'region',
-        'service_area': 'service_area',
-        'domain_source': 'domain_source'
+        'service_area': 'service_area'
     }
 
-    def __init__(self, domain=None, domain_type=None, region=None, service_area=None, domain_source=None):
+    def __init__(self, domain=None, domain_type=None, region=None, service_area=None):
         """LiveDomainCreateReq - a model defined in huaweicloud sdk"""
         
         
@@ -45,7 +44,6 @@ class LiveDomainCreateReq:
         self._domain_type = None
         self._region = None
         self._service_area = None
-        self._domain_source = None
         self.discriminator = None
 
         self.domain = domain
@@ -53,8 +51,6 @@ class LiveDomainCreateReq:
         self.region = region
         if service_area is not None:
             self.service_area = service_area
-        if domain_source is not None:
-            self.domain_source = domain_source
 
     @property
     def domain(self):
@@ -144,26 +140,6 @@ class LiveDomainCreateReq:
         """
         self._service_area = service_area
 
-    @property
-    def domain_source(self):
-        """Gets the domain_source of this LiveDomainCreateReq.
-
-
-        :return: The domain_source of this LiveDomainCreateReq.
-        :rtype: DomainSourceInfo
-        """
-        return self._domain_source
-
-    @domain_source.setter
-    def domain_source(self, domain_source):
-        """Sets the domain_source of this LiveDomainCreateReq.
-
-
-        :param domain_source: The domain_source of this LiveDomainCreateReq.
-        :type: DomainSourceInfo
-        """
-        self._domain_source = domain_source
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -193,7 +169,7 @@ class LiveDomainCreateReq:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

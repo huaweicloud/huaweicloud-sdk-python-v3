@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Flavor:
@@ -136,7 +137,7 @@ class Flavor:
     def spec_code(self):
         """Gets the spec_code of this Flavor.
 
-        资源规格编码。例如：rds.mysql.m1.xlarge.rr。  其中形如“xxx.xxx.mcs.i3.xxx.xxx.xxx”是超高性能型（尊享版），需要申请一定权限才可使用，更多规格说明请参考数据库实例规格。 - “rds”代表RDS产品。 - “mysql”代表数据库引擎。 - “m1.xlarge”代表性能规格，为高内存类型。 - “rr”表示只读实例（“.ha”表示主备实例，“gr”表示MySQL金融版）。
+        资源规格编码。例如：rds.mysql.m1.xlarge.rr。  其中形如“xxx.xxx.mcs.i3.xxx.xxx.xxx”是超高性能型（尊享版），需要申请一定权限才可使用，更多规格说明请参考数据库实例规格。 - “rds”代表RDS产品。 - “mysql”代表数据库引擎。 - “m1.xlarge”代表性能规格，为高内存类型。
 
         :return: The spec_code of this Flavor.
         :rtype: str
@@ -147,7 +148,7 @@ class Flavor:
     def spec_code(self, spec_code):
         """Sets the spec_code of this Flavor.
 
-        资源规格编码。例如：rds.mysql.m1.xlarge.rr。  其中形如“xxx.xxx.mcs.i3.xxx.xxx.xxx”是超高性能型（尊享版），需要申请一定权限才可使用，更多规格说明请参考数据库实例规格。 - “rds”代表RDS产品。 - “mysql”代表数据库引擎。 - “m1.xlarge”代表性能规格，为高内存类型。 - “rr”表示只读实例（“.ha”表示主备实例，“gr”表示MySQL金融版）。
+        资源规格编码。例如：rds.mysql.m1.xlarge.rr。  其中形如“xxx.xxx.mcs.i3.xxx.xxx.xxx”是超高性能型（尊享版），需要申请一定权限才可使用，更多规格说明请参考数据库实例规格。 - “rds”代表RDS产品。 - “mysql”代表数据库引擎。 - “m1.xlarge”代表性能规格，为高内存类型。
 
         :param spec_code: The spec_code of this Flavor.
         :type: str
@@ -158,7 +159,7 @@ class Flavor:
     def instance_mode(self):
         """Gets the instance_mode of this Flavor.
 
-        实例模型，包括如下类型： - ha，主备实例。 - replica，只读实例。 - single，单实例。 - gr，MySQL金融版。
+        实例模型，包括如下类型： - ha，主备实例。 - replica，只读实例。 - single，单实例。
 
         :return: The instance_mode of this Flavor.
         :rtype: str
@@ -169,7 +170,7 @@ class Flavor:
     def instance_mode(self, instance_mode):
         """Sets the instance_mode of this Flavor.
 
-        实例模型，包括如下类型： - ha，主备实例。 - replica，只读实例。 - single，单实例。 - gr，MySQL金融版。
+        实例模型，包括如下类型： - ha，主备实例。 - replica，只读实例。 - single，单实例。
 
         :param instance_mode: The instance_mode of this Flavor.
         :type: str
@@ -271,7 +272,7 @@ class Flavor:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

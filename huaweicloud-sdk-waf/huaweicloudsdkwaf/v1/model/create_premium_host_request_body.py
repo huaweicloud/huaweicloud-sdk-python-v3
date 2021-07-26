@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreatePremiumHostRequestBody:
@@ -21,57 +22,91 @@ class CreatePremiumHostRequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'certificateid': 'str',
+        'certificatename': 'str',
         'hostname': 'str',
         'proxy': 'bool',
         'policyid': 'str',
-        'certificateid': 'str',
-        'certificatename': 'str',
-        'server': 'list[PremiumWafServer]',
-        'mode': 'str',
-        'pool_ids': 'list[str]'
+        'server': 'list[PremiumWafServer]'
     }
 
     attribute_map = {
+        'certificateid': 'certificateid',
+        'certificatename': 'certificatename',
         'hostname': 'hostname',
         'proxy': 'proxy',
         'policyid': 'policyid',
-        'certificateid': 'certificateid',
-        'certificatename': 'certificatename',
-        'server': 'server',
-        'mode': 'mode',
-        'pool_ids': 'pool_ids'
+        'server': 'server'
     }
 
-    def __init__(self, hostname=None, proxy=None, policyid=None, certificateid=None, certificatename=None, server=None, mode=None, pool_ids=None):
+    def __init__(self, certificateid=None, certificatename=None, hostname=None, proxy=None, policyid=None, server=None):
         """CreatePremiumHostRequestBody - a model defined in huaweicloud sdk"""
         
         
 
+        self._certificateid = None
+        self._certificatename = None
         self._hostname = None
         self._proxy = None
         self._policyid = None
-        self._certificateid = None
-        self._certificatename = None
         self._server = None
-        self._mode = None
-        self._pool_ids = None
         self.discriminator = None
 
+        if certificateid is not None:
+            self.certificateid = certificateid
+        if certificatename is not None:
+            self.certificatename = certificatename
         self.hostname = hostname
         if proxy is not None:
             self.proxy = proxy
         if policyid is not None:
             self.policyid = policyid
-        if certificateid is not None:
-            self.certificateid = certificateid
-        if certificatename is not None:
-            self.certificatename = certificatename
         if server is not None:
             self.server = server
-        if mode is not None:
-            self.mode = mode
-        if pool_ids is not None:
-            self.pool_ids = pool_ids
+
+    @property
+    def certificateid(self):
+        """Gets the certificateid of this CreatePremiumHostRequestBody.
+
+        证书id
+
+        :return: The certificateid of this CreatePremiumHostRequestBody.
+        :rtype: str
+        """
+        return self._certificateid
+
+    @certificateid.setter
+    def certificateid(self, certificateid):
+        """Sets the certificateid of this CreatePremiumHostRequestBody.
+
+        证书id
+
+        :param certificateid: The certificateid of this CreatePremiumHostRequestBody.
+        :type: str
+        """
+        self._certificateid = certificateid
+
+    @property
+    def certificatename(self):
+        """Gets the certificatename of this CreatePremiumHostRequestBody.
+
+        证书名称
+
+        :return: The certificatename of this CreatePremiumHostRequestBody.
+        :rtype: str
+        """
+        return self._certificatename
+
+    @certificatename.setter
+    def certificatename(self, certificatename):
+        """Sets the certificatename of this CreatePremiumHostRequestBody.
+
+        证书名称
+
+        :param certificatename: The certificatename of this CreatePremiumHostRequestBody.
+        :type: str
+        """
+        self._certificatename = certificatename
 
     @property
     def hostname(self):
@@ -140,50 +175,6 @@ class CreatePremiumHostRequestBody:
         self._policyid = policyid
 
     @property
-    def certificateid(self):
-        """Gets the certificateid of this CreatePremiumHostRequestBody.
-
-        证书ID
-
-        :return: The certificateid of this CreatePremiumHostRequestBody.
-        :rtype: str
-        """
-        return self._certificateid
-
-    @certificateid.setter
-    def certificateid(self, certificateid):
-        """Sets the certificateid of this CreatePremiumHostRequestBody.
-
-        证书ID
-
-        :param certificateid: The certificateid of this CreatePremiumHostRequestBody.
-        :type: str
-        """
-        self._certificateid = certificateid
-
-    @property
-    def certificatename(self):
-        """Gets the certificatename of this CreatePremiumHostRequestBody.
-
-        证书名称
-
-        :return: The certificatename of this CreatePremiumHostRequestBody.
-        :rtype: str
-        """
-        return self._certificatename
-
-    @certificatename.setter
-    def certificatename(self, certificatename):
-        """Sets the certificatename of this CreatePremiumHostRequestBody.
-
-        证书名称
-
-        :param certificatename: The certificatename of this CreatePremiumHostRequestBody.
-        :type: str
-        """
-        self._certificatename = certificatename
-
-    @property
     def server(self):
         """Gets the server of this CreatePremiumHostRequestBody.
 
@@ -204,50 +195,6 @@ class CreatePremiumHostRequestBody:
         :type: list[PremiumWafServer]
         """
         self._server = server
-
-    @property
-    def mode(self):
-        """Gets the mode of this CreatePremiumHostRequestBody.
-
-        独享模式特殊域名模式（仅特殊模式需要，如elb）
-
-        :return: The mode of this CreatePremiumHostRequestBody.
-        :rtype: str
-        """
-        return self._mode
-
-    @mode.setter
-    def mode(self, mode):
-        """Sets the mode of this CreatePremiumHostRequestBody.
-
-        独享模式特殊域名模式（仅特殊模式需要，如elb）
-
-        :param mode: The mode of this CreatePremiumHostRequestBody.
-        :type: str
-        """
-        self._mode = mode
-
-    @property
-    def pool_ids(self):
-        """Gets the pool_ids of this CreatePremiumHostRequestBody.
-
-        域名关联的组ID（仅特殊模式需要，如elb）
-
-        :return: The pool_ids of this CreatePremiumHostRequestBody.
-        :rtype: list[str]
-        """
-        return self._pool_ids
-
-    @pool_ids.setter
-    def pool_ids(self, pool_ids):
-        """Sets the pool_ids of this CreatePremiumHostRequestBody.
-
-        域名关联的组ID（仅特殊模式需要，如elb）
-
-        :param pool_ids: The pool_ids of this CreatePremiumHostRequestBody.
-        :type: list[str]
-        """
-        self._pool_ids = pool_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -278,7 +225,7 @@ class CreatePremiumHostRequestBody:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

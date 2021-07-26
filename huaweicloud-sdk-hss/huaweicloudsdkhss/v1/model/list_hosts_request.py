@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ListHostsRequest:
@@ -98,7 +99,7 @@ class ListHostsRequest:
     def version(self):
         """Gets the version of this ListHostsRequest.
 
-        主机开通的版本
+        主机开通的版本，包含如下5种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
 
         :return: The version of this ListHostsRequest.
         :rtype: str
@@ -109,7 +110,7 @@ class ListHostsRequest:
     def version(self, version):
         """Sets the version of this ListHostsRequest.
 
-        主机开通的版本
+        主机开通的版本，包含如下5种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
 
         :param version: The version of this ListHostsRequest.
         :type: str
@@ -120,7 +121,7 @@ class ListHostsRequest:
     def agent_status(self):
         """Gets the agent_status of this ListHostsRequest.
 
-        Agent状态，未注册：uninstall；在线：online；离线：offline；
+        Agent状态，包含如下3种。   - not_register ：未注册。   - online ：在线。   - offline ：离线。
 
         :return: The agent_status of this ListHostsRequest.
         :rtype: str
@@ -131,7 +132,7 @@ class ListHostsRequest:
     def agent_status(self, agent_status):
         """Sets the agent_status of this ListHostsRequest.
 
-        Agent状态，未注册：uninstall；在线：online；离线：offline；
+        Agent状态，包含如下3种。   - not_register ：未注册。   - online ：在线。   - offline ：离线。
 
         :param agent_status: The agent_status of this ListHostsRequest.
         :type: str
@@ -142,7 +143,7 @@ class ListHostsRequest:
     def host_status(self):
         """Gets the host_status of this ListHostsRequest.
 
-        云主机状态：正在运行：active；关机：shutoff；创建中：building；故障：error
+        Agent状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
 
         :return: The host_status of this ListHostsRequest.
         :rtype: str
@@ -153,7 +154,7 @@ class ListHostsRequest:
     def host_status(self, host_status):
         """Sets the host_status of this ListHostsRequest.
 
-        云主机状态：正在运行：active；关机：shutoff；创建中：building；故障：error
+        Agent状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
 
         :param host_status: The host_status of this ListHostsRequest.
         :type: str
@@ -164,7 +165,7 @@ class ListHostsRequest:
     def protect_status(self):
         """Gets the protect_status of this ListHostsRequest.
 
-        防护状态：closed关闭；opened开启
+        防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
 
         :return: The protect_status of this ListHostsRequest.
         :rtype: str
@@ -175,7 +176,7 @@ class ListHostsRequest:
     def protect_status(self, protect_status):
         """Sets the protect_status of this ListHostsRequest.
 
-        防护状态：closed关闭；opened开启
+        防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
 
         :param protect_status: The protect_status of this ListHostsRequest.
         :type: str
@@ -186,7 +187,7 @@ class ListHostsRequest:
     def detect_result(self):
         """Gets the detect_result of this ListHostsRequest.
 
-        检测结果，undetect：未检测，clean：无风险，risk：有风险
+        防护状态，包含如下3种。   - undetect ：未检测。   - clean ：无风险。   - risk ：有风险。
 
         :return: The detect_result of this ListHostsRequest.
         :rtype: str
@@ -197,7 +198,7 @@ class ListHostsRequest:
     def detect_result(self, detect_result):
         """Sets the detect_result of this ListHostsRequest.
 
-        检测结果，undetect：未检测，clean：无风险，risk：有风险
+        防护状态，包含如下3种。   - undetect ：未检测。   - clean ：无风险。   - risk ：有风险。
 
         :param detect_result: The detect_result of this ListHostsRequest.
         :type: str
@@ -296,7 +297,7 @@ class ListHostsRequest:
     def charging_mode(self):
         """Gets the charging_mode of this ListHostsRequest.
 
-        收费模式
+        收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
 
         :return: The charging_mode of this ListHostsRequest.
         :rtype: str
@@ -307,7 +308,7 @@ class ListHostsRequest:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ListHostsRequest.
 
-        收费模式
+        收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
 
         :param charging_mode: The charging_mode of this ListHostsRequest.
         :type: str
@@ -387,7 +388,7 @@ class ListHostsRequest:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

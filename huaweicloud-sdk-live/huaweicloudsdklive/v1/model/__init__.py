@@ -31,7 +31,6 @@ from huaweicloudsdklive.v1.model.delete_stream_forbidden_response import DeleteS
 from huaweicloudsdklive.v1.model.delete_transcodings_template_request import DeleteTranscodingsTemplateRequest
 from huaweicloudsdklive.v1.model.delete_transcodings_template_response import DeleteTranscodingsTemplateResponse
 from huaweicloudsdklive.v1.model.domain_mapping import DomainMapping
-from huaweicloudsdklive.v1.model.domain_source_info import DomainSourceInfo
 from huaweicloudsdklive.v1.model.flv_record_config import FLVRecordConfig
 from huaweicloudsdklive.v1.model.hls_record_config import HLSRecordConfig
 from huaweicloudsdklive.v1.model.list_live_sample_logs_request import ListLiveSampleLogsRequest

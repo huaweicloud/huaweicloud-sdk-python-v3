@@ -5,6 +5,7 @@ import six
 
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class UpdatePremiumHostResponse(SdkResponse):
@@ -241,7 +242,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def project_id(self):
         """Gets the project_id of this UpdatePremiumHostResponse.
 
-        用户Project ID
+        用户的project_id
 
         :return: The project_id of this UpdatePremiumHostResponse.
         :rtype: str
@@ -252,7 +253,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def project_id(self, project_id):
         """Sets the project_id of this UpdatePremiumHostResponse.
 
-        用户Project ID
+        用户的project_id
 
         :param project_id: The project_id of this UpdatePremiumHostResponse.
         :type: str
@@ -263,7 +264,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def access_code(self):
         """Gets the access_code of this UpdatePremiumHostResponse.
 
-        cname
+        cname前缀
 
         :return: The access_code of this UpdatePremiumHostResponse.
         :rtype: str
@@ -274,7 +275,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def access_code(self, access_code):
         """Sets the access_code of this UpdatePremiumHostResponse.
 
-        cname
+        cname前缀
 
         :param access_code: The access_code of this UpdatePremiumHostResponse.
         :type: str
@@ -285,7 +286,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def protocol(self):
         """Gets the protocol of this UpdatePremiumHostResponse.
 
-        返回的客户端协议类型
+        http协议类型
 
         :return: The protocol of this UpdatePremiumHostResponse.
         :rtype: str
@@ -296,7 +297,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def protocol(self, protocol):
         """Sets the protocol of this UpdatePremiumHostResponse.
 
-        返回的客户端协议类型
+        http协议类型
 
         :param protocol: The protocol of this UpdatePremiumHostResponse.
         :type: str
@@ -680,7 +681,7 @@ class UpdatePremiumHostResponse(SdkResponse):
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

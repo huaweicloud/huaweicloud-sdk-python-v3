@@ -7931,7 +7931,7 @@ class MeetingClient(Client):
         :return: ShowRecordingFileDownloadUrlsResponse
         """
 
-        all_params = ['conf_uuid', 'x_authorization_type', 'x_site_id']
+        all_params = ['conf_uuid', 'offset', 'limit', 'x_authorization_type', 'x_site_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -7944,6 +7944,10 @@ class MeetingClient(Client):
         query_params = []
         if 'conf_uuid' in local_var_params:
             query_params.append(('confUUID', local_var_params['conf_uuid']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_authorization_type' in local_var_params:

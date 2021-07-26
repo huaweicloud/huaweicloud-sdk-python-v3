@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class GetUsersListDetailResponses:
@@ -57,7 +58,8 @@ class GetUsersListDetailResponses:
         self.name = name
         self.status = status
         self.base_authority = base_authority
-        self.extend_authority = extend_authority
+        if extend_authority is not None:
+            self.extend_authority = extend_authority
         self.description = description
         self.created = created
         self.databases = databases
@@ -132,7 +134,7 @@ class GetUsersListDetailResponses:
     def extend_authority(self):
         """Gets the extend_authority of this GetUsersListDetailResponses.
 
-        DDM实例帐号的扩展权限。  取值为：fulltableDelete、fulltableSelect、fulltableUpdate
+        DDM实例帐号的扩展权限。2021年8月开始不支持该字段，9月会去掉该字段。  取值为：fulltableDelete、fulltableSelect、fulltableUpdate
 
         :return: The extend_authority of this GetUsersListDetailResponses.
         :rtype: list[str]
@@ -143,7 +145,7 @@ class GetUsersListDetailResponses:
     def extend_authority(self, extend_authority):
         """Sets the extend_authority of this GetUsersListDetailResponses.
 
-        DDM实例帐号的扩展权限。  取值为：fulltableDelete、fulltableSelect、fulltableUpdate
+        DDM实例帐号的扩展权限。2021年8月开始不支持该字段，9月会去掉该字段。  取值为：fulltableDelete、fulltableSelect、fulltableUpdate
 
         :param extend_authority: The extend_authority of this GetUsersListDetailResponses.
         :type: list[str]
@@ -245,7 +247,7 @@ class GetUsersListDetailResponses:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

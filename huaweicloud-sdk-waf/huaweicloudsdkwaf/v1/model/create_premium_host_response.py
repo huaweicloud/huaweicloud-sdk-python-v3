@@ -5,6 +5,7 @@ import six
 
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreatePremiumHostResponse(SdkResponse):
@@ -25,25 +26,8 @@ class CreatePremiumHostResponse(SdkResponse):
         'policyid': 'str',
         'hostname': 'str',
         'domainid': 'str',
-        'project_id': 'str',
-        'access_code': 'str',
-        'protocol': 'str',
-        'server': 'list[PremiumWafServer]',
-        'certificateid': 'str',
-        'certificatename': 'str',
-        'tls': 'str',
-        'cipher': 'str',
-        'proxy': 'bool',
-        'locked': 'int',
-        'protect_status': 'int',
-        'access_status': 'int',
-        'timestamp': 'int',
-        'block_page': 'BlockPage',
-        'extend': 'dict(str, str)',
-        'traffic_mark': 'TrafficMark',
-        'flag': 'dict(str, str)',
-        'mode': 'str',
-        'pool_ids': 'list[str]'
+        'projectid': 'str',
+        'protocol': 'str'
     }
 
     attribute_map = {
@@ -51,28 +35,11 @@ class CreatePremiumHostResponse(SdkResponse):
         'policyid': 'policyid',
         'hostname': 'hostname',
         'domainid': 'domainid',
-        'project_id': 'project_id',
-        'access_code': 'access_code',
-        'protocol': 'protocol',
-        'server': 'server',
-        'certificateid': 'certificateid',
-        'certificatename': 'certificatename',
-        'tls': 'tls',
-        'cipher': 'cipher',
-        'proxy': 'proxy',
-        'locked': 'locked',
-        'protect_status': 'protect_status',
-        'access_status': 'access_status',
-        'timestamp': 'timestamp',
-        'block_page': 'block_page',
-        'extend': 'extend',
-        'traffic_mark': 'traffic_mark',
-        'flag': 'flag',
-        'mode': 'mode',
-        'pool_ids': 'pool_ids'
+        'projectid': 'projectid',
+        'protocol': 'protocol'
     }
 
-    def __init__(self, id=None, policyid=None, hostname=None, domainid=None, project_id=None, access_code=None, protocol=None, server=None, certificateid=None, certificatename=None, tls=None, cipher=None, proxy=None, locked=None, protect_status=None, access_status=None, timestamp=None, block_page=None, extend=None, traffic_mark=None, flag=None, mode=None, pool_ids=None):
+    def __init__(self, id=None, policyid=None, hostname=None, domainid=None, projectid=None, protocol=None):
         """CreatePremiumHostResponse - a model defined in huaweicloud sdk"""
         
         super(CreatePremiumHostResponse, self).__init__()
@@ -81,25 +48,8 @@ class CreatePremiumHostResponse(SdkResponse):
         self._policyid = None
         self._hostname = None
         self._domainid = None
-        self._project_id = None
-        self._access_code = None
+        self._projectid = None
         self._protocol = None
-        self._server = None
-        self._certificateid = None
-        self._certificatename = None
-        self._tls = None
-        self._cipher = None
-        self._proxy = None
-        self._locked = None
-        self._protect_status = None
-        self._access_status = None
-        self._timestamp = None
-        self._block_page = None
-        self._extend = None
-        self._traffic_mark = None
-        self._flag = None
-        self._mode = None
-        self._pool_ids = None
         self.discriminator = None
 
         if id is not None:
@@ -110,44 +60,10 @@ class CreatePremiumHostResponse(SdkResponse):
             self.hostname = hostname
         if domainid is not None:
             self.domainid = domainid
-        if project_id is not None:
-            self.project_id = project_id
-        if access_code is not None:
-            self.access_code = access_code
+        if projectid is not None:
+            self.projectid = projectid
         if protocol is not None:
             self.protocol = protocol
-        if server is not None:
-            self.server = server
-        if certificateid is not None:
-            self.certificateid = certificateid
-        if certificatename is not None:
-            self.certificatename = certificatename
-        if tls is not None:
-            self.tls = tls
-        if cipher is not None:
-            self.cipher = cipher
-        if proxy is not None:
-            self.proxy = proxy
-        if locked is not None:
-            self.locked = locked
-        if protect_status is not None:
-            self.protect_status = protect_status
-        if access_status is not None:
-            self.access_status = access_status
-        if timestamp is not None:
-            self.timestamp = timestamp
-        if block_page is not None:
-            self.block_page = block_page
-        if extend is not None:
-            self.extend = extend
-        if traffic_mark is not None:
-            self.traffic_mark = traffic_mark
-        if flag is not None:
-            self.flag = flag
-        if mode is not None:
-            self.mode = mode
-        if pool_ids is not None:
-            self.pool_ids = pool_ids
 
     @property
     def id(self):
@@ -197,7 +113,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def hostname(self):
         """Gets the hostname of this CreatePremiumHostResponse.
 
-        创建的云模式防护域名
+        策略id
 
         :return: The hostname of this CreatePremiumHostResponse.
         :rtype: str
@@ -208,7 +124,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def hostname(self, hostname):
         """Sets the hostname of this CreatePremiumHostResponse.
 
-        创建的云模式防护域名
+        策略id
 
         :param hostname: The hostname of this CreatePremiumHostResponse.
         :type: str
@@ -219,7 +135,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def domainid(self):
         """Gets the domainid of this CreatePremiumHostResponse.
 
-        用户Domain ID
+        租户id
 
         :return: The domainid of this CreatePremiumHostResponse.
         :rtype: str
@@ -230,7 +146,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def domainid(self, domainid):
         """Sets the domainid of this CreatePremiumHostResponse.
 
-        用户Domain ID
+        租户id
 
         :param domainid: The domainid of this CreatePremiumHostResponse.
         :type: str
@@ -238,54 +154,32 @@ class CreatePremiumHostResponse(SdkResponse):
         self._domainid = domainid
 
     @property
-    def project_id(self):
-        """Gets the project_id of this CreatePremiumHostResponse.
+    def projectid(self):
+        """Gets the projectid of this CreatePremiumHostResponse.
 
-        用户Project ID
+        项目projectid
 
-        :return: The project_id of this CreatePremiumHostResponse.
+        :return: The projectid of this CreatePremiumHostResponse.
         :rtype: str
         """
-        return self._project_id
+        return self._projectid
 
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this CreatePremiumHostResponse.
+    @projectid.setter
+    def projectid(self, projectid):
+        """Sets the projectid of this CreatePremiumHostResponse.
 
-        用户Project ID
+        项目projectid
 
-        :param project_id: The project_id of this CreatePremiumHostResponse.
+        :param projectid: The projectid of this CreatePremiumHostResponse.
         :type: str
         """
-        self._project_id = project_id
-
-    @property
-    def access_code(self):
-        """Gets the access_code of this CreatePremiumHostResponse.
-
-        cname
-
-        :return: The access_code of this CreatePremiumHostResponse.
-        :rtype: str
-        """
-        return self._access_code
-
-    @access_code.setter
-    def access_code(self, access_code):
-        """Sets the access_code of this CreatePremiumHostResponse.
-
-        cname
-
-        :param access_code: The access_code of this CreatePremiumHostResponse.
-        :type: str
-        """
-        self._access_code = access_code
+        self._projectid = projectid
 
     @property
     def protocol(self):
         """Gets the protocol of this CreatePremiumHostResponse.
 
-        返回的客户端协议类型
+        http协议
 
         :return: The protocol of this CreatePremiumHostResponse.
         :rtype: str
@@ -296,360 +190,12 @@ class CreatePremiumHostResponse(SdkResponse):
     def protocol(self, protocol):
         """Sets the protocol of this CreatePremiumHostResponse.
 
-        返回的客户端协议类型
+        http协议
 
         :param protocol: The protocol of this CreatePremiumHostResponse.
         :type: str
         """
         self._protocol = protocol
-
-    @property
-    def server(self):
-        """Gets the server of this CreatePremiumHostResponse.
-
-        源站信息
-
-        :return: The server of this CreatePremiumHostResponse.
-        :rtype: list[PremiumWafServer]
-        """
-        return self._server
-
-    @server.setter
-    def server(self, server):
-        """Sets the server of this CreatePremiumHostResponse.
-
-        源站信息
-
-        :param server: The server of this CreatePremiumHostResponse.
-        :type: list[PremiumWafServer]
-        """
-        self._server = server
-
-    @property
-    def certificateid(self):
-        """Gets the certificateid of this CreatePremiumHostResponse.
-
-        返回的证书id
-
-        :return: The certificateid of this CreatePremiumHostResponse.
-        :rtype: str
-        """
-        return self._certificateid
-
-    @certificateid.setter
-    def certificateid(self, certificateid):
-        """Sets the certificateid of this CreatePremiumHostResponse.
-
-        返回的证书id
-
-        :param certificateid: The certificateid of this CreatePremiumHostResponse.
-        :type: str
-        """
-        self._certificateid = certificateid
-
-    @property
-    def certificatename(self):
-        """Gets the certificatename of this CreatePremiumHostResponse.
-
-        证书名称
-
-        :return: The certificatename of this CreatePremiumHostResponse.
-        :rtype: str
-        """
-        return self._certificatename
-
-    @certificatename.setter
-    def certificatename(self, certificatename):
-        """Sets the certificatename of this CreatePremiumHostResponse.
-
-        证书名称
-
-        :param certificatename: The certificatename of this CreatePremiumHostResponse.
-        :type: str
-        """
-        self._certificatename = certificatename
-
-    @property
-    def tls(self):
-        """Gets the tls of this CreatePremiumHostResponse.
-
-        支持最低的TLS版本
-
-        :return: The tls of this CreatePremiumHostResponse.
-        :rtype: str
-        """
-        return self._tls
-
-    @tls.setter
-    def tls(self, tls):
-        """Sets the tls of this CreatePremiumHostResponse.
-
-        支持最低的TLS版本
-
-        :param tls: The tls of this CreatePremiumHostResponse.
-        :type: str
-        """
-        self._tls = tls
-
-    @property
-    def cipher(self):
-        """Gets the cipher of this CreatePremiumHostResponse.
-
-        加密套件代码
-
-        :return: The cipher of this CreatePremiumHostResponse.
-        :rtype: str
-        """
-        return self._cipher
-
-    @cipher.setter
-    def cipher(self, cipher):
-        """Sets the cipher of this CreatePremiumHostResponse.
-
-        加密套件代码
-
-        :param cipher: The cipher of this CreatePremiumHostResponse.
-        :type: str
-        """
-        self._cipher = cipher
-
-    @property
-    def proxy(self):
-        """Gets the proxy of this CreatePremiumHostResponse.
-
-        是否开启了代理
-
-        :return: The proxy of this CreatePremiumHostResponse.
-        :rtype: bool
-        """
-        return self._proxy
-
-    @proxy.setter
-    def proxy(self, proxy):
-        """Sets the proxy of this CreatePremiumHostResponse.
-
-        是否开启了代理
-
-        :param proxy: The proxy of this CreatePremiumHostResponse.
-        :type: bool
-        """
-        self._proxy = proxy
-
-    @property
-    def locked(self):
-        """Gets the locked of this CreatePremiumHostResponse.
-
-        锁定状态
-
-        :return: The locked of this CreatePremiumHostResponse.
-        :rtype: int
-        """
-        return self._locked
-
-    @locked.setter
-    def locked(self, locked):
-        """Sets the locked of this CreatePremiumHostResponse.
-
-        锁定状态
-
-        :param locked: The locked of this CreatePremiumHostResponse.
-        :type: int
-        """
-        self._locked = locked
-
-    @property
-    def protect_status(self):
-        """Gets the protect_status of this CreatePremiumHostResponse.
-
-        防护状态
-
-        :return: The protect_status of this CreatePremiumHostResponse.
-        :rtype: int
-        """
-        return self._protect_status
-
-    @protect_status.setter
-    def protect_status(self, protect_status):
-        """Sets the protect_status of this CreatePremiumHostResponse.
-
-        防护状态
-
-        :param protect_status: The protect_status of this CreatePremiumHostResponse.
-        :type: int
-        """
-        self._protect_status = protect_status
-
-    @property
-    def access_status(self):
-        """Gets the access_status of this CreatePremiumHostResponse.
-
-        接入状态
-
-        :return: The access_status of this CreatePremiumHostResponse.
-        :rtype: int
-        """
-        return self._access_status
-
-    @access_status.setter
-    def access_status(self, access_status):
-        """Sets the access_status of this CreatePremiumHostResponse.
-
-        接入状态
-
-        :param access_status: The access_status of this CreatePremiumHostResponse.
-        :type: int
-        """
-        self._access_status = access_status
-
-    @property
-    def timestamp(self):
-        """Gets the timestamp of this CreatePremiumHostResponse.
-
-        创建防护域名的时间
-
-        :return: The timestamp of this CreatePremiumHostResponse.
-        :rtype: int
-        """
-        return self._timestamp
-
-    @timestamp.setter
-    def timestamp(self, timestamp):
-        """Sets the timestamp of this CreatePremiumHostResponse.
-
-        创建防护域名的时间
-
-        :param timestamp: The timestamp of this CreatePremiumHostResponse.
-        :type: int
-        """
-        self._timestamp = timestamp
-
-    @property
-    def block_page(self):
-        """Gets the block_page of this CreatePremiumHostResponse.
-
-
-        :return: The block_page of this CreatePremiumHostResponse.
-        :rtype: BlockPage
-        """
-        return self._block_page
-
-    @block_page.setter
-    def block_page(self, block_page):
-        """Sets the block_page of this CreatePremiumHostResponse.
-
-
-        :param block_page: The block_page of this CreatePremiumHostResponse.
-        :type: BlockPage
-        """
-        self._block_page = block_page
-
-    @property
-    def extend(self):
-        """Gets the extend of this CreatePremiumHostResponse.
-
-        可扩展属性
-
-        :return: The extend of this CreatePremiumHostResponse.
-        :rtype: dict(str, str)
-        """
-        return self._extend
-
-    @extend.setter
-    def extend(self, extend):
-        """Sets the extend of this CreatePremiumHostResponse.
-
-        可扩展属性
-
-        :param extend: The extend of this CreatePremiumHostResponse.
-        :type: dict(str, str)
-        """
-        self._extend = extend
-
-    @property
-    def traffic_mark(self):
-        """Gets the traffic_mark of this CreatePremiumHostResponse.
-
-
-        :return: The traffic_mark of this CreatePremiumHostResponse.
-        :rtype: TrafficMark
-        """
-        return self._traffic_mark
-
-    @traffic_mark.setter
-    def traffic_mark(self, traffic_mark):
-        """Sets the traffic_mark of this CreatePremiumHostResponse.
-
-
-        :param traffic_mark: The traffic_mark of this CreatePremiumHostResponse.
-        :type: TrafficMark
-        """
-        self._traffic_mark = traffic_mark
-
-    @property
-    def flag(self):
-        """Gets the flag of this CreatePremiumHostResponse.
-
-        域名特殊标记
-
-        :return: The flag of this CreatePremiumHostResponse.
-        :rtype: dict(str, str)
-        """
-        return self._flag
-
-    @flag.setter
-    def flag(self, flag):
-        """Sets the flag of this CreatePremiumHostResponse.
-
-        域名特殊标记
-
-        :param flag: The flag of this CreatePremiumHostResponse.
-        :type: dict(str, str)
-        """
-        self._flag = flag
-
-    @property
-    def mode(self):
-        """Gets the mode of this CreatePremiumHostResponse.
-
-        独享模式特殊域名模式（仅特殊模式需要，如elb）
-
-        :return: The mode of this CreatePremiumHostResponse.
-        :rtype: str
-        """
-        return self._mode
-
-    @mode.setter
-    def mode(self, mode):
-        """Sets the mode of this CreatePremiumHostResponse.
-
-        独享模式特殊域名模式（仅特殊模式需要，如elb）
-
-        :param mode: The mode of this CreatePremiumHostResponse.
-        :type: str
-        """
-        self._mode = mode
-
-    @property
-    def pool_ids(self):
-        """Gets the pool_ids of this CreatePremiumHostResponse.
-
-        域名关联的组ID（仅特殊模式需要，如elb）
-
-        :return: The pool_ids of this CreatePremiumHostResponse.
-        :rtype: list[str]
-        """
-        return self._pool_ids
-
-    @pool_ids.setter
-    def pool_ids(self, pool_ids):
-        """Sets the pool_ids of this CreatePremiumHostResponse.
-
-        域名关联的组ID（仅特殊模式需要，如elb）
-
-        :param pool_ids: The pool_ids of this CreatePremiumHostResponse.
-        :type: list[str]
-        """
-        self._pool_ids = pool_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -680,7 +226,7 @@ class CreatePremiumHostResponse(SdkResponse):
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

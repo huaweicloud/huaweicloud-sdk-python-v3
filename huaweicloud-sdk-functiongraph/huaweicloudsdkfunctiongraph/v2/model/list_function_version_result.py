@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ListFunctionVersionResult:
@@ -45,8 +46,6 @@ class ListFunctionVersionResult:
         'description': 'str',
         'version_description': 'str',
         'last_modified': 'datetime',
-        'last_modified_utc': 'int',
-        'func_code': 'FuncCode',
         'func_vpc': 'FuncVpc',
         'mount_config': 'MountConfig',
         'concurrency': 'int',
@@ -84,8 +83,6 @@ class ListFunctionVersionResult:
         'description': 'description',
         'version_description': 'version_description',
         'last_modified': 'last_modified',
-        'last_modified_utc': 'last_modified_utc',
-        'func_code': 'func_code',
         'func_vpc': 'func_vpc',
         'mount_config': 'mount_config',
         'concurrency': 'concurrency',
@@ -98,7 +95,7 @@ class ListFunctionVersionResult:
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, version_description=None, last_modified=None, last_modified_utc=None, func_code=None, func_vpc=None, mount_config=None, concurrency=None, depend_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, version_description=None, last_modified=None, func_vpc=None, mount_config=None, concurrency=None, depend_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None):
         """ListFunctionVersionResult - a model defined in huaweicloud sdk"""
         
         
@@ -127,8 +124,6 @@ class ListFunctionVersionResult:
         self._description = None
         self._version_description = None
         self._last_modified = None
-        self._last_modified_utc = None
-        self._func_code = None
         self._func_vpc = None
         self._mount_config = None
         self._concurrency = None
@@ -172,10 +167,6 @@ class ListFunctionVersionResult:
         if version_description is not None:
             self.version_description = version_description
         self.last_modified = last_modified
-        if last_modified_utc is not None:
-            self.last_modified_utc = last_modified_utc
-        if func_code is not None:
-            self.func_code = func_code
         if func_vpc is not None:
             self.func_vpc = func_vpc
         if mount_config is not None:
@@ -726,48 +717,6 @@ class ListFunctionVersionResult:
         self._last_modified = last_modified
 
     @property
-    def last_modified_utc(self):
-        """Gets the last_modified_utc of this ListFunctionVersionResult.
-
-        函数最后一次更新utc时间。
-
-        :return: The last_modified_utc of this ListFunctionVersionResult.
-        :rtype: int
-        """
-        return self._last_modified_utc
-
-    @last_modified_utc.setter
-    def last_modified_utc(self, last_modified_utc):
-        """Sets the last_modified_utc of this ListFunctionVersionResult.
-
-        函数最后一次更新utc时间。
-
-        :param last_modified_utc: The last_modified_utc of this ListFunctionVersionResult.
-        :type: int
-        """
-        self._last_modified_utc = last_modified_utc
-
-    @property
-    def func_code(self):
-        """Gets the func_code of this ListFunctionVersionResult.
-
-
-        :return: The func_code of this ListFunctionVersionResult.
-        :rtype: FuncCode
-        """
-        return self._func_code
-
-    @func_code.setter
-    def func_code(self, func_code):
-        """Sets the func_code of this ListFunctionVersionResult.
-
-
-        :param func_code: The func_code of this ListFunctionVersionResult.
-        :type: FuncCode
-        """
-        self._func_code = func_code
-
-    @property
     def func_vpc(self):
         """Gets the func_vpc of this ListFunctionVersionResult.
 
@@ -1008,7 +957,7 @@ class ListFunctionVersionResult:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreateTranscodingReq:
@@ -29,19 +30,14 @@ class CreateTranscodingReq:
         'user_data': 'str',
         'watermarks': 'list[WatermarkRequest]',
         'thumbnail': 'Thumbnail',
-        'digital_watermark': 'DigitalWatermark',
         'priority': 'int',
         'subtitle': 'Subtitle',
-        'special_effect': 'SpecialEffect',
         'encryption': 'Encryption',
         'crop': 'Crop',
         'audio_track': 'AudioTrack',
         'multi_audio': 'MultiAudio',
         'video_process': 'VideoProcess',
-        'audio_process': 'AudioProcess',
-        'quality_enhance': 'QualityEnhance',
-        'system_process': 'SystemProcess',
-        'template_extend': 'TemplateExtend'
+        'audio_process': 'AudioProcess'
     }
 
     attribute_map = {
@@ -53,22 +49,17 @@ class CreateTranscodingReq:
         'user_data': 'user_data',
         'watermarks': 'watermarks',
         'thumbnail': 'thumbnail',
-        'digital_watermark': 'digital_watermark',
         'priority': 'priority',
         'subtitle': 'subtitle',
-        'special_effect': 'special_effect',
         'encryption': 'encryption',
         'crop': 'crop',
         'audio_track': 'audio_track',
         'multi_audio': 'multi_audio',
         'video_process': 'video_process',
-        'audio_process': 'audio_process',
-        'quality_enhance': 'quality_enhance',
-        'system_process': 'system_process',
-        'template_extend': 'template_extend'
+        'audio_process': 'audio_process'
     }
 
-    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, digital_watermark=None, priority=None, subtitle=None, special_effect=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, quality_enhance=None, system_process=None, template_extend=None):
+    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, priority=None, subtitle=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None):
         """CreateTranscodingReq - a model defined in huaweicloud sdk"""
         
         
@@ -81,19 +72,14 @@ class CreateTranscodingReq:
         self._user_data = None
         self._watermarks = None
         self._thumbnail = None
-        self._digital_watermark = None
         self._priority = None
         self._subtitle = None
-        self._special_effect = None
         self._encryption = None
         self._crop = None
         self._audio_track = None
         self._multi_audio = None
         self._video_process = None
         self._audio_process = None
-        self._quality_enhance = None
-        self._system_process = None
-        self._template_extend = None
         self.discriminator = None
 
         if input is not None:
@@ -111,14 +97,10 @@ class CreateTranscodingReq:
             self.watermarks = watermarks
         if thumbnail is not None:
             self.thumbnail = thumbnail
-        if digital_watermark is not None:
-            self.digital_watermark = digital_watermark
         if priority is not None:
             self.priority = priority
         if subtitle is not None:
             self.subtitle = subtitle
-        if special_effect is not None:
-            self.special_effect = special_effect
         if encryption is not None:
             self.encryption = encryption
         if crop is not None:
@@ -131,12 +113,6 @@ class CreateTranscodingReq:
             self.video_process = video_process
         if audio_process is not None:
             self.audio_process = audio_process
-        if quality_enhance is not None:
-            self.quality_enhance = quality_enhance
-        if system_process is not None:
-            self.system_process = system_process
-        if template_extend is not None:
-            self.template_extend = template_extend
 
     @property
     def input(self):
@@ -309,26 +285,6 @@ class CreateTranscodingReq:
         self._thumbnail = thumbnail
 
     @property
-    def digital_watermark(self):
-        """Gets the digital_watermark of this CreateTranscodingReq.
-
-
-        :return: The digital_watermark of this CreateTranscodingReq.
-        :rtype: DigitalWatermark
-        """
-        return self._digital_watermark
-
-    @digital_watermark.setter
-    def digital_watermark(self, digital_watermark):
-        """Sets the digital_watermark of this CreateTranscodingReq.
-
-
-        :param digital_watermark: The digital_watermark of this CreateTranscodingReq.
-        :type: DigitalWatermark
-        """
-        self._digital_watermark = digital_watermark
-
-    @property
     def priority(self):
         """Gets the priority of this CreateTranscodingReq.
 
@@ -369,26 +325,6 @@ class CreateTranscodingReq:
         :type: Subtitle
         """
         self._subtitle = subtitle
-
-    @property
-    def special_effect(self):
-        """Gets the special_effect of this CreateTranscodingReq.
-
-
-        :return: The special_effect of this CreateTranscodingReq.
-        :rtype: SpecialEffect
-        """
-        return self._special_effect
-
-    @special_effect.setter
-    def special_effect(self, special_effect):
-        """Sets the special_effect of this CreateTranscodingReq.
-
-
-        :param special_effect: The special_effect of this CreateTranscodingReq.
-        :type: SpecialEffect
-        """
-        self._special_effect = special_effect
 
     @property
     def encryption(self):
@@ -510,66 +446,6 @@ class CreateTranscodingReq:
         """
         self._audio_process = audio_process
 
-    @property
-    def quality_enhance(self):
-        """Gets the quality_enhance of this CreateTranscodingReq.
-
-
-        :return: The quality_enhance of this CreateTranscodingReq.
-        :rtype: QualityEnhance
-        """
-        return self._quality_enhance
-
-    @quality_enhance.setter
-    def quality_enhance(self, quality_enhance):
-        """Sets the quality_enhance of this CreateTranscodingReq.
-
-
-        :param quality_enhance: The quality_enhance of this CreateTranscodingReq.
-        :type: QualityEnhance
-        """
-        self._quality_enhance = quality_enhance
-
-    @property
-    def system_process(self):
-        """Gets the system_process of this CreateTranscodingReq.
-
-
-        :return: The system_process of this CreateTranscodingReq.
-        :rtype: SystemProcess
-        """
-        return self._system_process
-
-    @system_process.setter
-    def system_process(self, system_process):
-        """Sets the system_process of this CreateTranscodingReq.
-
-
-        :param system_process: The system_process of this CreateTranscodingReq.
-        :type: SystemProcess
-        """
-        self._system_process = system_process
-
-    @property
-    def template_extend(self):
-        """Gets the template_extend of this CreateTranscodingReq.
-
-
-        :return: The template_extend of this CreateTranscodingReq.
-        :rtype: TemplateExtend
-        """
-        return self._template_extend
-
-    @template_extend.setter
-    def template_extend(self, template_extend):
-        """Sets the template_extend of this CreateTranscodingReq.
-
-
-        :param template_extend: The template_extend of this CreateTranscodingReq.
-        :type: TemplateExtend
-        """
-        self._template_extend = template_extend
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -599,7 +475,7 @@ class CreateTranscodingReq:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

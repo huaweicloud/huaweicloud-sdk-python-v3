@@ -1,3 +1,151 @@
+# 3.0.53 2021-07-26
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ShowHistoryTasks`移除响应参数`urls`、`task_id`
+    - 接口`ShowHistoryTaskDetails`移除响应参数`task_id`、`process_reason`,请求参数`process_reason`类型调整： `integer`->`string`
+    - 接口`ShowTopUrl`移除请求参数`user_domain_id`、`task_id`
+
+### HuaweiCloud SDK CloudPipeline
+
+- _新增特性_
+    - 支持接口`ShowPlans`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK Cloudtest
+
+- _新增特性_
+    - 支持接口`ListPipelineSimpleInfo`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`UpdateConfigurations`新增请求参数`dcs_cluster_proxy2_node`
+
+### HuaweiCloud SDK DDM
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`UpdateUser`移除请求参数`extend_authority`
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+    - 支持接口`UpdateClientNetwork`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`SetBalancerWindow`的请求参数`start_time`、`stop_time`改为非必填
+    - 接口`CreateInstance`新增请求参数`port`，新增响应参数`port`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+    - 支持接口`EnableLtsLogs`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ShowFunctionCode`新增响应参数`concurrent_num`、`id`、`encrypted_user_data`
+    - 接口`ListFunctions`新增响应参数`func_vpc_id`、`encrypted_user_data`、`long_time`、`log_group_id`、`log_stream_id`、`type`，移除响应参数`version_description`、`last_modified_utc`、`dependencies`
+    - 接口`UpdateVersionAlias`移除请求参数`name`、`last_modified`、`alias_urn`
+    - 接口`ShowFunctionConfig`新增响应参数`encrypted_user_data`、`long_time`、`log_group_id`、`log_stream_id`、`type`，移除响应参数`version_description`、`concurrency`
+    - 接口`UpdateFunctionConfig`移除请求参数`version_description`、`concurrency`、`depend_list`，新增请求参数`encrypted_user_data`、`long_time`、`log_group_id`、`log_stream_id`、`type`
+    - 接口`ListFunctionVersions`移除响应参数`last_modified_utc`、`concurrency`，新增响应参数`encrypted_user_data`、`long_time`、`log_group_id`、`log_stream_id`、`type`
+    - 接口`UpdateTrigger`的请求参数`size`类型调整： `string`->`integer`
+    - 接口`ShowDependency`的响应参数`size`类型调整： `string`->`integer`
+    - 接口`UpdateDependency`的响应参数`size`类型调整： `string`->`integer`
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+    - 支持接口`ListEvents`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK IEC
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`CreateDeployment`移除请求参数`pool_id_v6`、`ipv6_bandwidth_enable`
+    - 接口`ShowEdgeCloud`移除响应参数`ipv6_enable`、`ipv6_bandwidth_enable`、`pool_id_v6`
+    - 接口`ListSites`移除响应参数`shared`、`charge_mode`
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ShowDomain`移除响应参数`domain_source`
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ShowRecordingFileDownloadUrls`新增请求参数`offset`、`limit`
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ListTranscodeDetail`移除响应参数`language`
+    - 接口`CreateThumbnailsTask`移除请求参数`project_id`、`tenant_project_id`、`domain_name`、`canonical_grant_id`
+    - 接口`ListTranscodeDetail`新增响应参数`audit_report`
+    - 接口`QueryTranscodingsTask`移除响应参数`output_url`
+    - 接口`CreateTranscoding`新增请求参数`audit`，移除请求参数`special_effect`、`quality_enhance`、`template_extend`
+    - 接口`ListWatermarkTemplate`移除响应参数`template_id`、`error`
+    - 接口`CreateVodTranscodingTask`移除请求参数`multidrm`、`preview_duration`
+
+### HuaweiCloud SDK VOD
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`CreateAssetByFileUpload`的请求参数`auto_publish`类型调整： `string`->`integer`，并配置可选值为`0`、`1`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+      接口`ListEvent`的响应参数`response_time`、`response_size`类型调整： `string`->`integer`
+
 # 3.0.52 2021-07-16
 
 ### HuaweiCloud SDK AS

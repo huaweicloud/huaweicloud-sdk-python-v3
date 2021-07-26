@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class UpdateGeoipRuleRequest:
@@ -23,7 +24,7 @@ class UpdateGeoipRuleRequest:
     openapi_types = {
         'policy_id': 'str',
         'rule_id': 'str',
-        'body': 'GeoIpBody'
+        'body': 'UpdateGeoipRuleRequestBody'
     }
 
     attribute_map = {
@@ -51,7 +52,7 @@ class UpdateGeoipRuleRequest:
     def policy_id(self):
         """Gets the policy_id of this UpdateGeoipRuleRequest.
 
-        policyid
+        策略id（策略id从查询防护策略列表接口获取）
 
         :return: The policy_id of this UpdateGeoipRuleRequest.
         :rtype: str
@@ -62,7 +63,7 @@ class UpdateGeoipRuleRequest:
     def policy_id(self, policy_id):
         """Sets the policy_id of this UpdateGeoipRuleRequest.
 
-        policyid
+        策略id（策略id从查询防护策略列表接口获取）
 
         :param policy_id: The policy_id of this UpdateGeoipRuleRequest.
         :type: str
@@ -97,7 +98,7 @@ class UpdateGeoipRuleRequest:
 
 
         :return: The body of this UpdateGeoipRuleRequest.
-        :rtype: GeoIpBody
+        :rtype: UpdateGeoipRuleRequestBody
         """
         return self._body
 
@@ -107,7 +108,7 @@ class UpdateGeoipRuleRequest:
 
 
         :param body: The body of this UpdateGeoipRuleRequest.
-        :type: GeoIpBody
+        :type: UpdateGeoipRuleRequestBody
         """
         self._body = body
 
@@ -140,7 +141,7 @@ class UpdateGeoipRuleRequest:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

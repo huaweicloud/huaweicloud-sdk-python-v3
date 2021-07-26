@@ -5,6 +5,7 @@ import six
 
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreateFunctionVersionResponse(SdkResponse):
@@ -37,6 +38,7 @@ class CreateFunctionVersionResponse(SdkResponse):
         'code_filename': 'str',
         'code_size': 'int',
         'user_data': 'str',
+        'encrypted_user_data': 'str',
         'digest': 'str',
         'version': 'str',
         'image_name': 'str',
@@ -47,14 +49,17 @@ class CreateFunctionVersionResponse(SdkResponse):
         'last_modified': 'datetime',
         'func_vpc': 'FuncVpc',
         'mount_config': 'MountConfig',
-        'concurrency': 'int',
         'depend_list': 'list[str]',
         'strategy_config': 'StrategyConfig',
         'extend_config': 'str',
         'dependencies': 'list[Dependency]',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'long_time': 'bool',
+        'log_group_id': 'str',
+        'log_stream_id': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -74,6 +79,7 @@ class CreateFunctionVersionResponse(SdkResponse):
         'code_filename': 'code_filename',
         'code_size': 'code_size',
         'user_data': 'user_data',
+        'encrypted_user_data': 'encrypted_user_data',
         'digest': 'digest',
         'version': 'version',
         'image_name': 'image_name',
@@ -84,17 +90,20 @@ class CreateFunctionVersionResponse(SdkResponse):
         'last_modified': 'last_modified',
         'func_vpc': 'func_vpc',
         'mount_config': 'mount_config',
-        'concurrency': 'concurrency',
         'depend_list': 'depend_list',
         'strategy_config': 'strategy_config',
         'extend_config': 'extend_config',
         'dependencies': 'dependencies',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'long_time': 'long_time',
+        'log_group_id': 'log_group_id',
+        'log_stream_id': 'log_stream_id',
+        'type': 'type'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, version_description=None, last_modified=None, func_vpc=None, mount_config=None, concurrency=None, depend_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, version_description=None, last_modified=None, func_vpc=None, mount_config=None, depend_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None):
         """CreateFunctionVersionResponse - a model defined in huaweicloud sdk"""
         
         super(CreateFunctionVersionResponse, self).__init__()
@@ -115,6 +124,7 @@ class CreateFunctionVersionResponse(SdkResponse):
         self._code_filename = None
         self._code_size = None
         self._user_data = None
+        self._encrypted_user_data = None
         self._digest = None
         self._version = None
         self._image_name = None
@@ -125,7 +135,6 @@ class CreateFunctionVersionResponse(SdkResponse):
         self._last_modified = None
         self._func_vpc = None
         self._mount_config = None
-        self._concurrency = None
         self._depend_list = None
         self._strategy_config = None
         self._extend_config = None
@@ -133,6 +142,10 @@ class CreateFunctionVersionResponse(SdkResponse):
         self._initializer_handler = None
         self._initializer_timeout = None
         self._enterprise_project_id = None
+        self._long_time = None
+        self._log_group_id = None
+        self._log_stream_id = None
+        self._type = None
         self.discriminator = None
 
         if func_urn is not None:
@@ -167,6 +180,8 @@ class CreateFunctionVersionResponse(SdkResponse):
             self.code_size = code_size
         if user_data is not None:
             self.user_data = user_data
+        if encrypted_user_data is not None:
+            self.encrypted_user_data = encrypted_user_data
         if digest is not None:
             self.digest = digest
         if version is not None:
@@ -187,8 +202,6 @@ class CreateFunctionVersionResponse(SdkResponse):
             self.func_vpc = func_vpc
         if mount_config is not None:
             self.mount_config = mount_config
-        if concurrency is not None:
-            self.concurrency = concurrency
         if depend_list is not None:
             self.depend_list = depend_list
         if strategy_config is not None:
@@ -203,6 +216,14 @@ class CreateFunctionVersionResponse(SdkResponse):
             self.initializer_timeout = initializer_timeout
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if long_time is not None:
+            self.long_time = long_time
+        if log_group_id is not None:
+            self.log_group_id = log_group_id
+        if log_stream_id is not None:
+            self.log_stream_id = log_stream_id
+        if type is not None:
+            self.type = type
 
     @property
     def func_urn(self):
@@ -557,6 +578,28 @@ class CreateFunctionVersionResponse(SdkResponse):
         self._user_data = user_data
 
     @property
+    def encrypted_user_data(self):
+        """Gets the encrypted_user_data of this CreateFunctionVersionResponse.
+
+        用户自定义的name/value信息，用于需要加密的配置。
+
+        :return: The encrypted_user_data of this CreateFunctionVersionResponse.
+        :rtype: str
+        """
+        return self._encrypted_user_data
+
+    @encrypted_user_data.setter
+    def encrypted_user_data(self, encrypted_user_data):
+        """Sets the encrypted_user_data of this CreateFunctionVersionResponse.
+
+        用户自定义的name/value信息，用于需要加密的配置。
+
+        :param encrypted_user_data: The encrypted_user_data of this CreateFunctionVersionResponse.
+        :type: str
+        """
+        self._encrypted_user_data = encrypted_user_data
+
+    @property
     def digest(self):
         """Gets the digest of this CreateFunctionVersionResponse.
 
@@ -773,26 +816,6 @@ class CreateFunctionVersionResponse(SdkResponse):
         self._mount_config = mount_config
 
     @property
-    def concurrency(self):
-        """Gets the concurrency of this CreateFunctionVersionResponse.
-
-
-        :return: The concurrency of this CreateFunctionVersionResponse.
-        :rtype: int
-        """
-        return self._concurrency
-
-    @concurrency.setter
-    def concurrency(self, concurrency):
-        """Sets the concurrency of this CreateFunctionVersionResponse.
-
-
-        :param concurrency: The concurrency of this CreateFunctionVersionResponse.
-        :type: int
-        """
-        self._concurrency = concurrency
-
-    @property
     def depend_list(self):
         """Gets the depend_list of this CreateFunctionVersionResponse.
 
@@ -944,6 +967,94 @@ class CreateFunctionVersionResponse(SdkResponse):
         """
         self._enterprise_project_id = enterprise_project_id
 
+    @property
+    def long_time(self):
+        """Gets the long_time of this CreateFunctionVersionResponse.
+
+        是否允许进行长时间超时设置。
+
+        :return: The long_time of this CreateFunctionVersionResponse.
+        :rtype: bool
+        """
+        return self._long_time
+
+    @long_time.setter
+    def long_time(self, long_time):
+        """Sets the long_time of this CreateFunctionVersionResponse.
+
+        是否允许进行长时间超时设置。
+
+        :param long_time: The long_time of this CreateFunctionVersionResponse.
+        :type: bool
+        """
+        self._long_time = long_time
+
+    @property
+    def log_group_id(self):
+        """Gets the log_group_id of this CreateFunctionVersionResponse.
+
+        自定义日志查询组id
+
+        :return: The log_group_id of this CreateFunctionVersionResponse.
+        :rtype: str
+        """
+        return self._log_group_id
+
+    @log_group_id.setter
+    def log_group_id(self, log_group_id):
+        """Sets the log_group_id of this CreateFunctionVersionResponse.
+
+        自定义日志查询组id
+
+        :param log_group_id: The log_group_id of this CreateFunctionVersionResponse.
+        :type: str
+        """
+        self._log_group_id = log_group_id
+
+    @property
+    def log_stream_id(self):
+        """Gets the log_stream_id of this CreateFunctionVersionResponse.
+
+        自定义日志查询流id
+
+        :return: The log_stream_id of this CreateFunctionVersionResponse.
+        :rtype: str
+        """
+        return self._log_stream_id
+
+    @log_stream_id.setter
+    def log_stream_id(self, log_stream_id):
+        """Sets the log_stream_id of this CreateFunctionVersionResponse.
+
+        自定义日志查询流id
+
+        :param log_stream_id: The log_stream_id of this CreateFunctionVersionResponse.
+        :type: str
+        """
+        self._log_stream_id = log_stream_id
+
+    @property
+    def type(self):
+        """Gets the type of this CreateFunctionVersionResponse.
+
+        v2表示为公测版本,v1为原来版本。
+
+        :return: The type of this CreateFunctionVersionResponse.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this CreateFunctionVersionResponse.
+
+        v2表示为公测版本,v1为原来版本。
+
+        :param type: The type of this CreateFunctionVersionResponse.
+        :type: str
+        """
+        self._type = type
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -973,7 +1084,7 @@ class CreateFunctionVersionResponse(SdkResponse):
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

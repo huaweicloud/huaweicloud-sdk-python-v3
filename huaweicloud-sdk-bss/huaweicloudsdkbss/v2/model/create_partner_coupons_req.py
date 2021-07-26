@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreatePartnerCouponsReq:
@@ -256,7 +257,7 @@ class CreatePartnerCouponsReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this CreatePartnerCouponsReq.
 
-        精英服务商ID。 精英服务商给子客户发放优惠券时，需要携带该参数。
+        精英服务商ID。获取方法请参见查询精英服务商列表。 精英服务商给子客户发放优惠券时，需要携带该参数。
 
         :return: The indirect_partner_id of this CreatePartnerCouponsReq.
         :rtype: str
@@ -267,7 +268,7 @@ class CreatePartnerCouponsReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this CreatePartnerCouponsReq.
 
-        精英服务商ID。 精英服务商给子客户发放优惠券时，需要携带该参数。
+        精英服务商ID。获取方法请参见查询精英服务商列表。 精英服务商给子客户发放优惠券时，需要携带该参数。
 
         :param indirect_partner_id: The indirect_partner_id of this CreatePartnerCouponsReq.
         :type: str
@@ -303,7 +304,7 @@ class CreatePartnerCouponsReq:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

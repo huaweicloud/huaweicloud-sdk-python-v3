@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ListSubCustomerResFeeRecordsRequest:
@@ -320,7 +321,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListSubCustomerResFeeRecordsRequest.
 
-        精英服务商ID。如果华为云伙伴能力中心需要查询客户在精英服务商关联期间的消费，需要携带该字段；否则只能查询该客户在与自己关联期间的消费。
+        精英服务商ID。获取方法请参见查询精英服务商列表。如果华为云伙伴能力中心需要查询客户在精英服务商关联期间的消费，需要携带该字段；否则只能查询该客户在与自己关联期间的消费。
 
         :return: The indirect_partner_id of this ListSubCustomerResFeeRecordsRequest.
         :rtype: str
@@ -331,7 +332,7 @@ class ListSubCustomerResFeeRecordsRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListSubCustomerResFeeRecordsRequest.
 
-        精英服务商ID。如果华为云伙伴能力中心需要查询客户在精英服务商关联期间的消费，需要携带该字段；否则只能查询该客户在与自己关联期间的消费。
+        精英服务商ID。获取方法请参见查询精英服务商列表。如果华为云伙伴能力中心需要查询客户在精英服务商关联期间的消费，需要携带该字段；否则只能查询该客户在与自己关联期间的消费。
 
         :param indirect_partner_id: The indirect_partner_id of this ListSubCustomerResFeeRecordsRequest.
         :type: str
@@ -411,7 +412,7 @@ class ListSubCustomerResFeeRecordsRequest:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

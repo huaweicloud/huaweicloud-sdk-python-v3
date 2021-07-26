@@ -1,3 +1,150 @@
+# 3.0.53 2021-07-26
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Remove the response parameters `urls`, `task_id` of the interface `ShowHistoryTasks`.
+    - Remove the response parameters `task_id`, `process_reason`, modify the type of the request parameter `process_reason`：`integer`->`string`
+    - Remove the request parameters `user_domain_id`, `task_id` of the interface `ShowTopUrl`.
+
+### HuaweiCloud SDK CloudPipeline
+
+- _Features_
+    - Support the interface `ShowPlans`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK Cloudtest
+
+- _Features_
+    - Support the interface `ListPipelineSimpleInfo`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request parameter `dcs_cluster_proxy2_node` to the interface `UpdateConfigurations`.
+
+### HuaweiCloud SDK DDM
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Remove the request parameter `extend_authority` of the interface `UpdateUser`.
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+    - Support the interface `UpdateClientNetwork`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Change the request parameters `start_time`,`stop_time` from `optional` to `required` of the interface `SetBalancerWindow`.
+    - Add the request parameter `port` and response parameter `port` to the interface `CreateInstance`.
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+    - Support the interface `EnableLtsLogs`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the response parameters `concurrent_num`,`id`,`encrypted_user_data`.
+    - Add the response parameters `func_vpc_id`,`encrypted_user_data`,`long_time`,`log_group_id`,`log_stream_id`,`type` to the interface `ListFunctions`, and remove the response parameters `version_description`,`last_modified_utc`,`dependencies` of this interface.
+    - Remove the request parameter `name`,`last_modified`,`alias_urn` of the interface `UpdateVersionAlias`.
+    - Add the response parameters `encrypted_user_data`,`long_time`,`log_group_id`,`log_stream_id`,`type` of the interface `ShowFunctionConfig`, and remove the response parameters `version_description`,`concurrency` of this interface.
+    - Add the response parameters `encrypted_user_data`,`long_time`,`log_group_id`,`log_stream_id`,`type` to the interface `ListFunctionVersions`, and remove the response parameters `version_description`,`concurrency`,`depend_list`.
+    - Add the response parameters `encrypted_user_data`,`long_time`,`log_group_id`,`log_stream_id`,`type` to the interface `ListFunctionVersions`, remove the response parameters `last_modified_utc`,`concurrency`.
+    - Modify the type of the request parameter `size` of the interface `UpdateTrigger`: `string`->`integer`
+    - Modify the type of the response parameter `size` of the interface `ShowDependency`: `string`->`integer`
+    - Modify the type of the response parameter `size` of the interface `UpdateDependency`: `string`->`integer`
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+    - Support the interface `ListEvents`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK IEC
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Remove the request parameters `pool_id_v6`,`ipv6_bandwidth_enable` of the interface `CreateDeployment`.
+    - Remove the response parameters `ipv6_enable`,`ipv6_bandwidth_enable`,`pool_id_v6` of the interface `ShowEdgeCloud`.
+    - Remove the response parameters `shared`,`charge_mode` of the interface `ListSites`.
+
+### HuaweiCloud SDK Live
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Remove the response parameter `domain_source` of the interface `ShowDomain`.
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request parameters `offset`,`limit` to the interface `ShowRecordingFileDownloadUrls`.
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Remove the response parameter `language` of the interface `ListTranscodeDetail`.
+    - Remove the request parameter `project_id`,`tenant_project_id`,`domain_name`,`canonical_grant_id` of the interface `CreateThumbnailsTask`.
+    - Add the response parameter `audit_report` to the interface `ListTranscodeDetail`.
+    - Remove the response parameter `output_url` of the interface `QueryTranscodingsTask`.
+    - Add the request parameter `audit` to the interface, and remove the request parameter `special_effect`,`quality_enhance`,`template_extend` of this interface.
+    - Remove the response parameter `template_id`,`error` of the interface `ListWatermarkTemplate`.
+    - Remove the request parameter `multidrm`,`preview_duration` of the interface `CreateVodTranscodingTask`.
+
+### HuaweiCloud SDK VOD
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the type of the request parameter `auto_publish` of the interface `CreateAssetByFileUpload`, and configure the optional values `0`,`1`.
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the type of the response parameters `response_time`,`response_size` of the interface `ListEvent`: `string`->`integer`.
+
 # 3.0.52 2021-07-16
 
 ### HuaweiCloud SDK AS

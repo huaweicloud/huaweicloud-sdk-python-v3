@@ -5,6 +5,7 @@ import six
 
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class DeleteGeoipRuleResponse(SdkResponse):
@@ -22,35 +23,45 @@ class DeleteGeoipRuleResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
+        'policyid': 'str',
         'geoip': 'str',
         'white': 'int',
+        'description': 'str',
         'timestamp': 'int'
     }
 
     attribute_map = {
         'id': 'id',
+        'policyid': 'policyid',
         'geoip': 'geoip',
         'white': 'white',
+        'description': 'description',
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, id=None, geoip=None, white=None, timestamp=None):
+    def __init__(self, id=None, policyid=None, geoip=None, white=None, description=None, timestamp=None):
         """DeleteGeoipRuleResponse - a model defined in huaweicloud sdk"""
         
         super(DeleteGeoipRuleResponse, self).__init__()
 
         self._id = None
+        self._policyid = None
         self._geoip = None
         self._white = None
+        self._description = None
         self._timestamp = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
+        if policyid is not None:
+            self.policyid = policyid
         if geoip is not None:
             self.geoip = geoip
         if white is not None:
             self.white = white
+        if description is not None:
+            self.description = description
         if timestamp is not None:
             self.timestamp = timestamp
 
@@ -75,6 +86,28 @@ class DeleteGeoipRuleResponse(SdkResponse):
         :type: str
         """
         self._id = id
+
+    @property
+    def policyid(self):
+        """Gets the policyid of this DeleteGeoipRuleResponse.
+
+        策略id
+
+        :return: The policyid of this DeleteGeoipRuleResponse.
+        :rtype: str
+        """
+        return self._policyid
+
+    @policyid.setter
+    def policyid(self, policyid):
+        """Sets the policyid of this DeleteGeoipRuleResponse.
+
+        策略id
+
+        :param policyid: The policyid of this DeleteGeoipRuleResponse.
+        :type: str
+        """
+        self._policyid = policyid
 
     @property
     def geoip(self):
@@ -102,7 +135,7 @@ class DeleteGeoipRuleResponse(SdkResponse):
     def white(self):
         """Gets the white of this DeleteGeoipRuleResponse.
 
-        放行或者拦截
+        放行或者拦截（0拦截，1放行）
 
         :return: The white of this DeleteGeoipRuleResponse.
         :rtype: int
@@ -113,12 +146,34 @@ class DeleteGeoipRuleResponse(SdkResponse):
     def white(self, white):
         """Sets the white of this DeleteGeoipRuleResponse.
 
-        放行或者拦截
+        放行或者拦截（0拦截，1放行）
 
         :param white: The white of this DeleteGeoipRuleResponse.
         :type: int
         """
         self._white = white
+
+    @property
+    def description(self):
+        """Gets the description of this DeleteGeoipRuleResponse.
+
+        描述
+
+        :return: The description of this DeleteGeoipRuleResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this DeleteGeoipRuleResponse.
+
+        描述
+
+        :param description: The description of this DeleteGeoipRuleResponse.
+        :type: str
+        """
+        self._description = description
 
     @property
     def timestamp(self):
@@ -171,7 +226,7 @@ class DeleteGeoipRuleResponse(SdkResponse):
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

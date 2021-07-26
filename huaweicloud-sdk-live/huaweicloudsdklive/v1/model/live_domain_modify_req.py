@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class LiveDomainModifyReq:
@@ -22,31 +23,26 @@ class LiveDomainModifyReq:
 
     openapi_types = {
         'domain': 'str',
-        'status': 'str',
-        'domain_source': 'DomainSourceInfo'
+        'status': 'str'
     }
 
     attribute_map = {
         'domain': 'domain',
-        'status': 'status',
-        'domain_source': 'domain_source'
+        'status': 'status'
     }
 
-    def __init__(self, domain=None, status=None, domain_source=None):
+    def __init__(self, domain=None, status=None):
         """LiveDomainModifyReq - a model defined in huaweicloud sdk"""
         
         
 
         self._domain = None
         self._status = None
-        self._domain_source = None
         self.discriminator = None
 
         self.domain = domain
         if status is not None:
             self.status = status
-        if domain_source is not None:
-            self.domain_source = domain_source
 
     @property
     def domain(self):
@@ -92,26 +88,6 @@ class LiveDomainModifyReq:
         """
         self._status = status
 
-    @property
-    def domain_source(self):
-        """Gets the domain_source of this LiveDomainModifyReq.
-
-
-        :return: The domain_source of this LiveDomainModifyReq.
-        :rtype: DomainSourceInfo
-        """
-        return self._domain_source
-
-    @domain_source.setter
-    def domain_source(self, domain_source):
-        """Sets the domain_source of this LiveDomainModifyReq.
-
-
-        :param domain_source: The domain_source of this LiveDomainModifyReq.
-        :type: DomainSourceInfo
-        """
-        self._domain_source = domain_source
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -141,7 +117,7 @@ class LiveDomainModifyReq:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

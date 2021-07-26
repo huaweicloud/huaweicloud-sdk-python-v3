@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class StrategyConfig:
@@ -21,22 +22,27 @@ class StrategyConfig:
     sensitive_list = []
 
     openapi_types = {
-        'concurrency': 'int'
+        'concurrency': 'int',
+        'concurrent_num': 'int'
     }
 
     attribute_map = {
-        'concurrency': 'concurrency'
+        'concurrency': 'concurrency',
+        'concurrent_num': 'concurrent_num'
     }
 
-    def __init__(self, concurrency=None):
+    def __init__(self, concurrency=None, concurrent_num=None):
         """StrategyConfig - a model defined in huaweicloud sdk"""
         
         
 
         self._concurrency = None
+        self._concurrent_num = None
         self.discriminator = None
 
         self.concurrency = concurrency
+        if concurrent_num is not None:
+            self.concurrent_num = concurrent_num
 
     @property
     def concurrency(self):
@@ -59,6 +65,28 @@ class StrategyConfig:
         :type: int
         """
         self._concurrency = concurrency
+
+    @property
+    def concurrent_num(self):
+        """Gets the concurrent_num of this StrategyConfig.
+
+        函数并发数
+
+        :return: The concurrent_num of this StrategyConfig.
+        :rtype: int
+        """
+        return self._concurrent_num
+
+    @concurrent_num.setter
+    def concurrent_num(self, concurrent_num):
+        """Sets the concurrent_num of this StrategyConfig.
+
+        函数并发数
+
+        :param concurrent_num: The concurrent_num of this StrategyConfig.
+        :type: int
+        """
+        self._concurrent_num = concurrent_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -89,7 +117,7 @@ class StrategyConfig:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

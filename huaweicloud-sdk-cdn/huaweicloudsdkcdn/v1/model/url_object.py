@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class UrlObject:
@@ -25,8 +26,7 @@ class UrlObject:
         'url': 'str',
         'status': 'str',
         'create_time': 'int',
-        'task_id': 'str',
-        'process_reason': 'str'
+        'task_id': 'str'
     }
 
     attribute_map = {
@@ -34,11 +34,10 @@ class UrlObject:
         'url': 'url',
         'status': 'status',
         'create_time': 'create_time',
-        'task_id': 'task_id',
-        'process_reason': 'process_reason'
+        'task_id': 'task_id'
     }
 
-    def __init__(self, id=None, url=None, status=None, create_time=None, task_id=None, process_reason=None):
+    def __init__(self, id=None, url=None, status=None, create_time=None, task_id=None):
         """UrlObject - a model defined in huaweicloud sdk"""
         
         
@@ -48,7 +47,6 @@ class UrlObject:
         self._status = None
         self._create_time = None
         self._task_id = None
-        self._process_reason = None
         self.discriminator = None
 
         if id is not None:
@@ -61,14 +59,12 @@ class UrlObject:
             self.create_time = create_time
         if task_id is not None:
             self.task_id = task_id
-        if process_reason is not None:
-            self.process_reason = process_reason
 
     @property
     def id(self):
         """Gets the id of this UrlObject.
 
-        任务id
+        url的id
 
         :return: The id of this UrlObject.
         :rtype: str
@@ -79,7 +75,7 @@ class UrlObject:
     def id(self, id):
         """Sets the id of this UrlObject.
 
-        任务id
+        url的id
 
         :param id: The id of this UrlObject.
         :type: str
@@ -112,7 +108,7 @@ class UrlObject:
     def status(self):
         """Gets the status of this UrlObject.
 
-        url的状态 processing， succeed， failed，分别表示处理中，完成，失败。
+        url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
 
         :return: The status of this UrlObject.
         :rtype: str
@@ -123,7 +119,7 @@ class UrlObject:
     def status(self, status):
         """Sets the status of this UrlObject.
 
-        url的状态 processing， succeed， failed，分别表示处理中，完成，失败。
+        url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
 
         :param status: The status of this UrlObject.
         :type: str
@@ -156,7 +152,7 @@ class UrlObject:
     def task_id(self):
         """Gets the task_id of this UrlObject.
 
-        url所属task的id。
+        任务id。
 
         :return: The task_id of this UrlObject.
         :rtype: str
@@ -167,34 +163,12 @@ class UrlObject:
     def task_id(self, task_id):
         """Sets the task_id of this UrlObject.
 
-        url所属task的id。
+        任务id。
 
         :param task_id: The task_id of this UrlObject.
         :type: str
         """
         self._task_id = task_id
-
-    @property
-    def process_reason(self):
-        """Gets the process_reason of this UrlObject.
-
-        标记处理原因。
-
-        :return: The process_reason of this UrlObject.
-        :rtype: str
-        """
-        return self._process_reason
-
-    @process_reason.setter
-    def process_reason(self, process_reason):
-        """Sets the process_reason of this UrlObject.
-
-        标记处理原因。
-
-        :param process_reason: The process_reason of this UrlObject.
-        :type: str
-        """
-        self._process_reason = process_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -225,7 +199,7 @@ class UrlObject:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

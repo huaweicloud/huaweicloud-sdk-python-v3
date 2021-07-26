@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ShowHistoryTaskDetailsRequest:
@@ -25,7 +26,7 @@ class ShowHistoryTaskDetailsRequest:
         'history_tasks_id': 'str',
         'page_size': 'int',
         'page_number': 'int',
-        'status': 'int',
+        'status': 'str',
         'url': 'str'
     }
 
@@ -111,7 +112,7 @@ class ShowHistoryTaskDetailsRequest:
     def page_size(self):
         """Gets the page_size of this ShowHistoryTaskDetailsRequest.
 
-        刷新预热的urls所显示单页最大数量，取值范围为1-10000。
+        刷新预热的urls所显示单页最大数量，取值范围为1-10000。page_size和page_number必须同时传值。默认值30。
 
         :return: The page_size of this ShowHistoryTaskDetailsRequest.
         :rtype: int
@@ -122,7 +123,7 @@ class ShowHistoryTaskDetailsRequest:
     def page_size(self, page_size):
         """Sets the page_size of this ShowHistoryTaskDetailsRequest.
 
-        刷新预热的urls所显示单页最大数量，取值范围为1-10000。
+        刷新预热的urls所显示单页最大数量，取值范围为1-10000。page_size和page_number必须同时传值。默认值30。
 
         :param page_size: The page_size of this ShowHistoryTaskDetailsRequest.
         :type: int
@@ -133,7 +134,7 @@ class ShowHistoryTaskDetailsRequest:
     def page_number(self):
         """Gets the page_number of this ShowHistoryTaskDetailsRequest.
 
-        刷新预热的urls当前查询为第几页，取值范围为1-65535。
+        刷新预热的urls当前查询为第几页，取值范围为1-65535。默认值1。
 
         :return: The page_number of this ShowHistoryTaskDetailsRequest.
         :rtype: int
@@ -144,7 +145,7 @@ class ShowHistoryTaskDetailsRequest:
     def page_number(self, page_number):
         """Sets the page_number of this ShowHistoryTaskDetailsRequest.
 
-        刷新预热的urls当前查询为第几页，取值范围为1-65535。
+        刷新预热的urls当前查询为第几页，取值范围为1-65535。默认值1。
 
         :param page_number: The page_number of this ShowHistoryTaskDetailsRequest.
         :type: int
@@ -155,10 +156,10 @@ class ShowHistoryTaskDetailsRequest:
     def status(self):
         """Gets the status of this ShowHistoryTaskDetailsRequest.
 
-        url的状态 processing， succeed， failed，分别表示处理中，完成，失败。
+        url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
 
         :return: The status of this ShowHistoryTaskDetailsRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._status
 
@@ -166,10 +167,10 @@ class ShowHistoryTaskDetailsRequest:
     def status(self, status):
         """Sets the status of this ShowHistoryTaskDetailsRequest.
 
-        url的状态 processing， succeed， failed，分别表示处理中，完成，失败。
+        url的状态 processing 处理中，succeed 完成，failed 失败，waiting 等待，refreshing 刷新中，preheating 预热中。
 
         :param status: The status of this ShowHistoryTaskDetailsRequest.
-        :type: int
+        :type: str
         """
         self._status = status
 
@@ -177,7 +178,7 @@ class ShowHistoryTaskDetailsRequest:
     def url(self):
         """Gets the url of this ShowHistoryTaskDetailsRequest.
 
-        url的地址，支持同一任务id的多个url,多个url用分号隔开。
+        url的地址。
 
         :return: The url of this ShowHistoryTaskDetailsRequest.
         :rtype: str
@@ -188,7 +189,7 @@ class ShowHistoryTaskDetailsRequest:
     def url(self, url):
         """Sets the url of this ShowHistoryTaskDetailsRequest.
 
-        url的地址，支持同一任务id的多个url,多个url用分号隔开。
+        url的地址。
 
         :param url: The url of this ShowHistoryTaskDetailsRequest.
         :type: str
@@ -224,7 +225,7 @@ class ShowHistoryTaskDetailsRequest:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

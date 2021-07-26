@@ -5,6 +5,7 @@ import six
 
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ListValueListResponse(SdkResponse):
@@ -22,7 +23,7 @@ class ListValueListResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'items': 'list[ValueList]'
+        'items': 'list[ValueListResponseBody]'
     }
 
     attribute_map = {
@@ -73,7 +74,7 @@ class ListValueListResponse(SdkResponse):
         引用表列表
 
         :return: The items of this ListValueListResponse.
-        :rtype: list[ValueList]
+        :rtype: list[ValueListResponseBody]
         """
         return self._items
 
@@ -84,7 +85,7 @@ class ListValueListResponse(SdkResponse):
         引用表列表
 
         :param items: The items of this ListValueListResponse.
-        :type: list[ValueList]
+        :type: list[ValueListResponseBody]
         """
         self._items = items
 
@@ -117,7 +118,7 @@ class ListValueListResponse(SdkResponse):
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreateThumbReq:
@@ -27,11 +28,7 @@ class CreateThumbReq:
         'thumbnail_para': 'ThumbnailPara',
         'tar': 'int',
         'sync': 'int',
-        'original_dir': 'int',
-        'project_id': 'str',
-        'tenant_project_id': 'str',
-        'domain_name': 'str',
-        'canonical_grant_id': 'str'
+        'original_dir': 'int'
     }
 
     attribute_map = {
@@ -41,14 +38,10 @@ class CreateThumbReq:
         'thumbnail_para': 'thumbnail_para',
         'tar': 'tar',
         'sync': 'sync',
-        'original_dir': 'original_dir',
-        'project_id': 'project_id',
-        'tenant_project_id': 'tenant_project_id',
-        'domain_name': 'domain_name',
-        'canonical_grant_id': 'canonical_grant_id'
+        'original_dir': 'original_dir'
     }
 
-    def __init__(self, input=None, output=None, user_data=None, thumbnail_para=None, tar=None, sync=None, original_dir=None, project_id=None, tenant_project_id=None, domain_name=None, canonical_grant_id=None):
+    def __init__(self, input=None, output=None, user_data=None, thumbnail_para=None, tar=None, sync=None, original_dir=None):
         """CreateThumbReq - a model defined in huaweicloud sdk"""
         
         
@@ -60,10 +53,6 @@ class CreateThumbReq:
         self._tar = None
         self._sync = None
         self._original_dir = None
-        self._project_id = None
-        self._tenant_project_id = None
-        self._domain_name = None
-        self._canonical_grant_id = None
         self.discriminator = None
 
         self.input = input
@@ -77,14 +66,6 @@ class CreateThumbReq:
             self.sync = sync
         if original_dir is not None:
             self.original_dir = original_dir
-        if project_id is not None:
-            self.project_id = project_id
-        if tenant_project_id is not None:
-            self.tenant_project_id = tenant_project_id
-        if domain_name is not None:
-            self.domain_name = domain_name
-        if canonical_grant_id is not None:
-            self.canonical_grant_id = canonical_grant_id
 
     @property
     def input(self):
@@ -234,94 +215,6 @@ class CreateThumbReq:
         """
         self._original_dir = original_dir
 
-    @property
-    def project_id(self):
-        """Gets the project_id of this CreateThumbReq.
-
-        租户Id
-
-        :return: The project_id of this CreateThumbReq.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this CreateThumbReq.
-
-        租户Id
-
-        :param project_id: The project_id of this CreateThumbReq.
-        :type: str
-        """
-        self._project_id = project_id
-
-    @property
-    def tenant_project_id(self):
-        """Gets the tenant_project_id of this CreateThumbReq.
-
-        vod租户Id
-
-        :return: The tenant_project_id of this CreateThumbReq.
-        :rtype: str
-        """
-        return self._tenant_project_id
-
-    @tenant_project_id.setter
-    def tenant_project_id(self, tenant_project_id):
-        """Sets the tenant_project_id of this CreateThumbReq.
-
-        vod租户Id
-
-        :param tenant_project_id: The tenant_project_id of this CreateThumbReq.
-        :type: str
-        """
-        self._tenant_project_id = tenant_project_id
-
-    @property
-    def domain_name(self):
-        """Gets the domain_name of this CreateThumbReq.
-
-        domain名称
-
-        :return: The domain_name of this CreateThumbReq.
-        :rtype: str
-        """
-        return self._domain_name
-
-    @domain_name.setter
-    def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateThumbReq.
-
-        domain名称
-
-        :param domain_name: The domain_name of this CreateThumbReq.
-        :type: str
-        """
-        self._domain_name = domain_name
-
-    @property
-    def canonical_grant_id(self):
-        """Gets the canonical_grant_id of this CreateThumbReq.
-
-        用户domainId
-
-        :return: The canonical_grant_id of this CreateThumbReq.
-        :rtype: str
-        """
-        return self._canonical_grant_id
-
-    @canonical_grant_id.setter
-    def canonical_grant_id(self, canonical_grant_id):
-        """Sets the canonical_grant_id of this CreateThumbReq.
-
-        用户domainId
-
-        :param canonical_grant_id: The canonical_grant_id of this CreateThumbReq.
-        :type: str
-        """
-        self._canonical_grant_id = canonical_grant_id
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -351,7 +244,7 @@ class CreateThumbReq:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

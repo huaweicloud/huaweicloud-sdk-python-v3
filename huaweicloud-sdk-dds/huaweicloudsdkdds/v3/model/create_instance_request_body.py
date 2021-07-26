@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreateInstanceRequestBody:
@@ -28,6 +29,7 @@ class CreateInstanceRequestBody:
         'vpc_id': 'str',
         'subnet_id': 'str',
         'security_group_id': 'str',
+        'port': 'str',
         'password': 'str',
         'disk_encryption_id': 'str',
         'mode': 'str',
@@ -47,6 +49,7 @@ class CreateInstanceRequestBody:
         'vpc_id': 'vpc_id',
         'subnet_id': 'subnet_id',
         'security_group_id': 'security_group_id',
+        'port': 'port',
         'password': 'password',
         'disk_encryption_id': 'disk_encryption_id',
         'mode': 'mode',
@@ -58,7 +61,7 @@ class CreateInstanceRequestBody:
         'server_group_policies': 'server_group_policies'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None):
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, port=None, password=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None):
         """CreateInstanceRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -70,6 +73,7 @@ class CreateInstanceRequestBody:
         self._vpc_id = None
         self._subnet_id = None
         self._security_group_id = None
+        self._port = None
         self._password = None
         self._disk_encryption_id = None
         self._mode = None
@@ -88,6 +92,8 @@ class CreateInstanceRequestBody:
         self.vpc_id = vpc_id
         self.subnet_id = subnet_id
         self.security_group_id = security_group_id
+        if port is not None:
+            self.port = port
         if password is not None:
             self.password = password
         if disk_encryption_id is not None:
@@ -256,6 +262,28 @@ class CreateInstanceRequestBody:
         :type: str
         """
         self._security_group_id = security_group_id
+
+    @property
+    def port(self):
+        """Gets the port of this CreateInstanceRequestBody.
+
+        数据库访问端口。 取值范围：2100~9500，以及27017、27018、27019。 不传该参数时，创建实例的访问端口默认为8635。
+
+        :return: The port of this CreateInstanceRequestBody.
+        :rtype: str
+        """
+        return self._port
+
+    @port.setter
+    def port(self, port):
+        """Sets the port of this CreateInstanceRequestBody.
+
+        数据库访问端口。 取值范围：2100~9500，以及27017、27018、27019。 不传该参数时，创建实例的访问端口默认为8635。
+
+        :param port: The port of this CreateInstanceRequestBody.
+        :type: str
+        """
+        self._port = port
 
     @property
     def password(self):
@@ -482,7 +510,7 @@ class CreateInstanceRequestBody:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -6,7 +6,6 @@ from __future__ import absolute_import
 from huaweicloudsdkmpc.v1.model.animated_graphics_output_param import AnimatedGraphicsOutputParam
 from huaweicloudsdkmpc.v1.model.animated_graphics_task import AnimatedGraphicsTask
 from huaweicloudsdkmpc.v1.model.audio import Audio
-from huaweicloudsdkmpc.v1.model.audio_extend_settings import AudioExtendSettings
 from huaweicloudsdkmpc.v1.model.audio_file import AudioFile
 from huaweicloudsdkmpc.v1.model.audio_info import AudioInfo
 from huaweicloudsdkmpc.v1.model.audio_process import AudioProcess
@@ -19,6 +18,7 @@ from huaweicloudsdkmpc.v1.model.cancel_remux_task_request import CancelRemuxTask
 from huaweicloudsdkmpc.v1.model.cancel_remux_task_response import CancelRemuxTaskResponse
 from huaweicloudsdkmpc.v1.model.common import Common
 from huaweicloudsdkmpc.v1.model.common_create_task_req import CommonCreateTaskReq
+from huaweicloudsdkmpc.v1.model.common_create_task_rsp import CommonCreateTaskRsp
 from huaweicloudsdkmpc.v1.model.common_query_task_rsp import CommonQueryTaskRsp
 from huaweicloudsdkmpc.v1.model.common_task import CommonTask
 from huaweicloudsdkmpc.v1.model.create_animated_graphics_task_req import CreateAnimatedGraphicsTaskReq
@@ -89,9 +89,7 @@ from huaweicloudsdkmpc.v1.model.delete_transcoding_task_request import DeleteTra
 from huaweicloudsdkmpc.v1.model.delete_transcoding_task_response import DeleteTranscodingTaskResponse
 from huaweicloudsdkmpc.v1.model.delete_watermark_template_request import DeleteWatermarkTemplateRequest
 from huaweicloudsdkmpc.v1.model.delete_watermark_template_response import DeleteWatermarkTemplateResponse
-from huaweicloudsdkmpc.v1.model.digital_watermark import DigitalWatermark
 from huaweicloudsdkmpc.v1.model.each_encrypt_rsp import EachEncryptRsp
-from huaweicloudsdkmpc.v1.model.effect_info import EffectInfo
 from huaweicloudsdkmpc.v1.model.encryption import Encryption
 from huaweicloudsdkmpc.v1.model.error_response import ErrorResponse
 from huaweicloudsdkmpc.v1.model.extract_task import ExtractTask
@@ -139,7 +137,6 @@ from huaweicloudsdkmpc.v1.model.mpe_meta_data import MpeMetaData
 from huaweicloudsdkmpc.v1.model.mul_input_file_info import MulInputFileInfo
 from huaweicloudsdkmpc.v1.model.multi_audio import MultiAudio
 from huaweicloudsdkmpc.v1.model.multi_task_info import MultiTaskInfo
-from huaweicloudsdkmpc.v1.model.multidrm import Multidrm
 from huaweicloudsdkmpc.v1.model.obs_obj_info import ObsObjInfo
 from huaweicloudsdkmpc.v1.model.origin_para import OriginPara
 from huaweicloudsdkmpc.v1.model.output_policy import OutputPolicy
@@ -147,7 +144,6 @@ from huaweicloudsdkmpc.v1.model.output_thumbnail_para import OutputThumbnailPara
 from huaweicloudsdkmpc.v1.model.output_video_para import OutputVideoPara
 from huaweicloudsdkmpc.v1.model.output_watermark_para import OutputWatermarkPara
 from huaweicloudsdkmpc.v1.model.pic_info import PicInfo
-from huaweicloudsdkmpc.v1.model.quality_enhance import QualityEnhance
 from huaweicloudsdkmpc.v1.model.quality_enhance_template import QualityEnhanceTemplate
 from huaweicloudsdkmpc.v1.model.quality_enhance_template_info import QualityEnhanceTemplateInfo
 from huaweicloudsdkmpc.v1.model.quality_enhance_video import QualityEnhanceVideo
@@ -158,13 +154,10 @@ from huaweicloudsdkmpc.v1.model.remux_retry_req import RemuxRetryReq
 from huaweicloudsdkmpc.v1.model.remux_task import RemuxTask
 from huaweicloudsdkmpc.v1.model.reset_tracks_task_info import ResetTracksTaskInfo
 from huaweicloudsdkmpc.v1.model.source_info import SourceInfo
-from huaweicloudsdkmpc.v1.model.special_effect import SpecialEffect
 from huaweicloudsdkmpc.v1.model.sub_audio_file import SubAudioFile
 from huaweicloudsdkmpc.v1.model.subtitle import Subtitle
-from huaweicloudsdkmpc.v1.model.system_process import SystemProcess
 from huaweicloudsdkmpc.v1.model.task_detail_info import TaskDetailInfo
 from huaweicloudsdkmpc.v1.model.task_info import TaskInfo
-from huaweicloudsdkmpc.v1.model.template_extend import TemplateExtend
 from huaweicloudsdkmpc.v1.model.template_group import TemplateGroup
 from huaweicloudsdkmpc.v1.model.template_info import TemplateInfo
 from huaweicloudsdkmpc.v1.model.text_watermark import TextWatermark
@@ -190,13 +183,11 @@ from huaweicloudsdkmpc.v1.model.video_common import VideoCommon
 from huaweicloudsdkmpc.v1.model.video_contrast import VideoContrast
 from huaweicloudsdkmpc.v1.model.video_deblock import VideoDeblock
 from huaweicloudsdkmpc.v1.model.video_denoise import VideoDenoise
-from huaweicloudsdkmpc.v1.model.video_extend_settings import VideoExtendSettings
 from huaweicloudsdkmpc.v1.model.video_info import VideoInfo
 from huaweicloudsdkmpc.v1.model.video_obj import VideoObj
 from huaweicloudsdkmpc.v1.model.video_parameters import VideoParameters
 from huaweicloudsdkmpc.v1.model.video_process import VideoProcess
 from huaweicloudsdkmpc.v1.model.video_saturation import VideoSaturation
-from huaweicloudsdkmpc.v1.model.video_settings import VideoSettings
 from huaweicloudsdkmpc.v1.model.video_sharp import VideoSharp
 from huaweicloudsdkmpc.v1.model.video_superresolution import VideoSuperresolution
 from huaweicloudsdkmpc.v1.model.watermark_request import WatermarkRequest

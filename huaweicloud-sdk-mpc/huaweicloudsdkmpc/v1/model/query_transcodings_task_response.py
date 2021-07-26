@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class QueryTranscodingsTaskResponse:
@@ -33,7 +34,6 @@ class QueryTranscodingsTaskResponse:
         'error_code': 'str',
         'description': 'str',
         'tips': 'str',
-        'output_url': 'str',
         'transcode_detail': 'TranscodeDetail',
         'thumbnail_output': 'ObsObjInfo',
         'thumbnail_outputname': 'str',
@@ -53,14 +53,13 @@ class QueryTranscodingsTaskResponse:
         'error_code': 'error_code',
         'description': 'description',
         'tips': 'tips',
-        'output_url': 'output_url',
         'transcode_detail': 'transcode_detail',
         'thumbnail_output': 'thumbnail_output',
         'thumbnail_outputname': 'thumbnail_outputname',
         'pic_info': 'pic_info'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, output_url=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None):
+    def __init__(self, task_id=None, status=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None):
         """QueryTranscodingsTaskResponse - a model defined in huaweicloud sdk"""
         
         
@@ -77,7 +76,6 @@ class QueryTranscodingsTaskResponse:
         self._error_code = None
         self._description = None
         self._tips = None
-        self._output_url = None
         self._transcode_detail = None
         self._thumbnail_output = None
         self._thumbnail_outputname = None
@@ -108,8 +106,6 @@ class QueryTranscodingsTaskResponse:
             self.description = description
         if tips is not None:
             self.tips = tips
-        if output_url is not None:
-            self.output_url = output_url
         if transcode_detail is not None:
             self.transcode_detail = transcode_detail
         if thumbnail_output is not None:
@@ -380,28 +376,6 @@ class QueryTranscodingsTaskResponse:
         self._tips = tips
 
     @property
-    def output_url(self):
-        """Gets the output_url of this QueryTranscodingsTaskResponse.
-
-        质检文件输出路径 
-
-        :return: The output_url of this QueryTranscodingsTaskResponse.
-        :rtype: str
-        """
-        return self._output_url
-
-    @output_url.setter
-    def output_url(self, output_url):
-        """Sets the output_url of this QueryTranscodingsTaskResponse.
-
-        质检文件输出路径 
-
-        :param output_url: The output_url of this QueryTranscodingsTaskResponse.
-        :type: str
-        """
-        self._output_url = output_url
-
-    @property
     def transcode_detail(self):
         """Gets the transcode_detail of this QueryTranscodingsTaskResponse.
 
@@ -514,7 +488,7 @@ class QueryTranscodingsTaskResponse:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

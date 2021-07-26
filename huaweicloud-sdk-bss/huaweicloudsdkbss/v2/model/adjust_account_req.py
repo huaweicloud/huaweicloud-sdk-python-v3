@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AdjustAccountReq:
@@ -95,7 +96,7 @@ class AdjustAccountReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this AdjustAccountReq.
 
-        精英服务商ID。 精英服务商（二级经销商）给子客户拨款时，需携带该参数。  说明： 该参数存在的情况下，如果结果返回余额不足，表示对应的二级经销商的余额不足，如果该参数不存在，则余额不足表示调用的伙伴自身账号的余额不足。
+        精英服务商ID。获取方法请参见查询精英服务商列表。 精英服务商（二级经销商）给子客户拨款时，需携带该参数。  说明： 该参数存在的情况下，如果结果返回余额不足，表示对应的二级经销商的余额不足，如果该参数不存在，则余额不足表示调用的伙伴自身账号的余额不足。
 
         :return: The indirect_partner_id of this AdjustAccountReq.
         :rtype: str
@@ -106,7 +107,7 @@ class AdjustAccountReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this AdjustAccountReq.
 
-        精英服务商ID。 精英服务商（二级经销商）给子客户拨款时，需携带该参数。  说明： 该参数存在的情况下，如果结果返回余额不足，表示对应的二级经销商的余额不足，如果该参数不存在，则余额不足表示调用的伙伴自身账号的余额不足。
+        精英服务商ID。获取方法请参见查询精英服务商列表。 精英服务商（二级经销商）给子客户拨款时，需携带该参数。  说明： 该参数存在的情况下，如果结果返回余额不足，表示对应的二级经销商的余额不足，如果该参数不存在，则余额不足表示调用的伙伴自身账号的余额不足。
 
         :param indirect_partner_id: The indirect_partner_id of this AdjustAccountReq.
         :type: str
@@ -142,7 +143,7 @@ class AdjustAccountReq:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

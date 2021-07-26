@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ListPolicyRequest:
@@ -53,7 +54,7 @@ class ListPolicyRequest:
     def page(self):
         """Gets the page of this ListPolicyRequest.
 
-        page
+        页码
 
         :return: The page of this ListPolicyRequest.
         :rtype: int
@@ -64,7 +65,7 @@ class ListPolicyRequest:
     def page(self, page):
         """Sets the page of this ListPolicyRequest.
 
-        page
+        页码
 
         :param page: The page of this ListPolicyRequest.
         :type: int
@@ -75,7 +76,7 @@ class ListPolicyRequest:
     def pagesize(self):
         """Gets the pagesize of this ListPolicyRequest.
 
-        pagesize
+        每页条数
 
         :return: The pagesize of this ListPolicyRequest.
         :rtype: int
@@ -86,7 +87,7 @@ class ListPolicyRequest:
     def pagesize(self, pagesize):
         """Sets the pagesize of this ListPolicyRequest.
 
-        pagesize
+        每页条数
 
         :param pagesize: The pagesize of this ListPolicyRequest.
         :type: int
@@ -97,7 +98,7 @@ class ListPolicyRequest:
     def name(self):
         """Gets the name of this ListPolicyRequest.
 
-        name
+        策略名称
 
         :return: The name of this ListPolicyRequest.
         :rtype: str
@@ -108,7 +109,7 @@ class ListPolicyRequest:
     def name(self, name):
         """Sets the name of this ListPolicyRequest.
 
-        name
+        策略名称
 
         :param name: The name of this ListPolicyRequest.
         :type: str
@@ -144,7 +145,7 @@ class ListPolicyRequest:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

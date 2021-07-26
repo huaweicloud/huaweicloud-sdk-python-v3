@@ -5,6 +5,7 @@ import six
 
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreatePolicyResponse(SdkResponse):
@@ -23,38 +24,41 @@ class CreatePolicyResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'level': 'int',
         'action': 'PolicyAction',
         'options': 'PolicyOption',
-        'level': 'int',
         'full_detection': 'bool',
+        'hosts': 'list[object]',
         'bind_host': 'list[BindHost]',
         'timestamp': 'int',
-        'extend': 'dict(str, str)'
+        'extend': 'object'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'level': 'level',
         'action': 'action',
         'options': 'options',
-        'level': 'level',
         'full_detection': 'full_detection',
+        'hosts': 'hosts',
         'bind_host': 'bind_host',
         'timestamp': 'timestamp',
         'extend': 'extend'
     }
 
-    def __init__(self, id=None, name=None, action=None, options=None, level=None, full_detection=None, bind_host=None, timestamp=None, extend=None):
+    def __init__(self, id=None, name=None, level=None, action=None, options=None, full_detection=None, hosts=None, bind_host=None, timestamp=None, extend=None):
         """CreatePolicyResponse - a model defined in huaweicloud sdk"""
         
         super(CreatePolicyResponse, self).__init__()
 
         self._id = None
         self._name = None
+        self._level = None
         self._action = None
         self._options = None
-        self._level = None
         self._full_detection = None
+        self._hosts = None
         self._bind_host = None
         self._timestamp = None
         self._extend = None
@@ -64,14 +68,16 @@ class CreatePolicyResponse(SdkResponse):
             self.id = id
         if name is not None:
             self.name = name
+        if level is not None:
+            self.level = level
         if action is not None:
             self.action = action
         if options is not None:
             self.options = options
-        if level is not None:
-            self.level = level
         if full_detection is not None:
             self.full_detection = full_detection
+        if hosts is not None:
+            self.hosts = hosts
         if bind_host is not None:
             self.bind_host = bind_host
         if timestamp is not None:
@@ -124,6 +130,28 @@ class CreatePolicyResponse(SdkResponse):
         self._name = name
 
     @property
+    def level(self):
+        """Gets the level of this CreatePolicyResponse.
+
+        防护等级
+
+        :return: The level of this CreatePolicyResponse.
+        :rtype: int
+        """
+        return self._level
+
+    @level.setter
+    def level(self, level):
+        """Sets the level of this CreatePolicyResponse.
+
+        防护等级
+
+        :param level: The level of this CreatePolicyResponse.
+        :type: int
+        """
+        self._level = level
+
+    @property
     def action(self):
         """Gets the action of this CreatePolicyResponse.
 
@@ -164,28 +192,6 @@ class CreatePolicyResponse(SdkResponse):
         self._options = options
 
     @property
-    def level(self):
-        """Gets the level of this CreatePolicyResponse.
-
-        防护等级
-
-        :return: The level of this CreatePolicyResponse.
-        :rtype: int
-        """
-        return self._level
-
-    @level.setter
-    def level(self, level):
-        """Sets the level of this CreatePolicyResponse.
-
-        防护等级
-
-        :param level: The level of this CreatePolicyResponse.
-        :type: int
-        """
-        self._level = level
-
-    @property
     def full_detection(self):
         """Gets the full_detection of this CreatePolicyResponse.
 
@@ -208,10 +214,32 @@ class CreatePolicyResponse(SdkResponse):
         self._full_detection = full_detection
 
     @property
+    def hosts(self):
+        """Gets the hosts of this CreatePolicyResponse.
+
+        防护的网站id
+
+        :return: The hosts of this CreatePolicyResponse.
+        :rtype: list[object]
+        """
+        return self._hosts
+
+    @hosts.setter
+    def hosts(self, hosts):
+        """Sets the hosts of this CreatePolicyResponse.
+
+        防护的网站id
+
+        :param hosts: The hosts of this CreatePolicyResponse.
+        :type: list[object]
+        """
+        self._hosts = hosts
+
+    @property
     def bind_host(self):
         """Gets the bind_host of this CreatePolicyResponse.
 
-        防护域名的信息
+        防护的网站信息
 
         :return: The bind_host of this CreatePolicyResponse.
         :rtype: list[BindHost]
@@ -222,7 +250,7 @@ class CreatePolicyResponse(SdkResponse):
     def bind_host(self, bind_host):
         """Sets the bind_host of this CreatePolicyResponse.
 
-        防护域名的信息
+        防护的网站信息
 
         :param bind_host: The bind_host of this CreatePolicyResponse.
         :type: list[BindHost]
@@ -258,7 +286,7 @@ class CreatePolicyResponse(SdkResponse):
         扩展字段
 
         :return: The extend of this CreatePolicyResponse.
-        :rtype: dict(str, str)
+        :rtype: object
         """
         return self._extend
 
@@ -269,7 +297,7 @@ class CreatePolicyResponse(SdkResponse):
         扩展字段
 
         :param extend: The extend of this CreatePolicyResponse.
-        :type: dict(str, str)
+        :type: object
         """
         self._extend = extend
 
@@ -302,7 +330,7 @@ class CreatePolicyResponse(SdkResponse):
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ListPartnerBalancesRequest:
@@ -43,7 +44,7 @@ class ListPartnerBalancesRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListPartnerBalancesRequest.
 
-        精英服务商ID。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）余额时，需要携带该参数；否则只能查询自己的账户余额。
+        精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）余额时，需要携带该参数；否则只能查询自己的账户余额。
 
         :return: The indirect_partner_id of this ListPartnerBalancesRequest.
         :rtype: str
@@ -54,7 +55,7 @@ class ListPartnerBalancesRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListPartnerBalancesRequest.
 
-        精英服务商ID。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）余额时，需要携带该参数；否则只能查询自己的账户余额。
+        精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）余额时，需要携带该参数；否则只能查询自己的账户余额。
 
         :param indirect_partner_id: The indirect_partner_id of this ListPartnerBalancesRequest.
         :type: str
@@ -90,7 +91,7 @@ class ListPartnerBalancesRequest:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

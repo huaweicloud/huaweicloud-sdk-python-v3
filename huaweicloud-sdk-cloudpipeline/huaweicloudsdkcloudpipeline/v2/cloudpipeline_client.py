@@ -178,6 +178,71 @@ class CloudPipelineClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_pipeline_simple_info(self, request):
+        """获取流水线列表接口
+
+        获取流水线列表接口
+
+        :param ListPipelineSimpleInfoRequest request
+        :return: ListPipelineSimpleInfoResponse
+        """
+        return self.list_pipeline_simple_info_with_http_info(request)
+
+    def list_pipeline_simple_info_with_http_info(self, request):
+        """获取流水线列表接口
+
+        获取流水线列表接口
+
+        :param ListPipelineSimpleInfoRequest request
+        :return: ListPipelineSimpleInfoResponse
+        """
+
+        all_params = ['x_language', 'list_pipeline_simple_info_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v3/pipelines/list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListPipelineSimpleInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_pipleine_build_result(self, request):
         """获取项目下流水线执行状况
 

@@ -5,6 +5,7 @@ import six
 
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreateFunctionResponse(SdkResponse):
@@ -37,21 +38,19 @@ class CreateFunctionResponse(SdkResponse):
         'code_filename': 'str',
         'code_size': 'int',
         'user_data': 'str',
+        'encrypted_user_data': 'str',
         'digest': 'str',
         'version': 'str',
         'image_name': 'str',
         'xrole': 'str',
         'app_xrole': 'str',
         'description': 'str',
-        'version_description': 'str',
         'last_modified': 'datetime',
         'func_vpc': 'FuncVpc',
         'mount_config': 'MountConfig',
-        'concurrency': 'int',
         'depend_list': 'list[str]',
         'strategy_config': 'StrategyConfig',
         'extend_config': 'str',
-        'dependencies': 'list[Dependency]',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
         'enterprise_project_id': 'str'
@@ -74,27 +73,25 @@ class CreateFunctionResponse(SdkResponse):
         'code_filename': 'code_filename',
         'code_size': 'code_size',
         'user_data': 'user_data',
+        'encrypted_user_data': 'encrypted_user_data',
         'digest': 'digest',
         'version': 'version',
         'image_name': 'image_name',
         'xrole': 'xrole',
         'app_xrole': 'app_xrole',
         'description': 'description',
-        'version_description': 'version_description',
         'last_modified': 'last_modified',
         'func_vpc': 'func_vpc',
         'mount_config': 'mount_config',
-        'concurrency': 'concurrency',
         'depend_list': 'depend_list',
         'strategy_config': 'strategy_config',
         'extend_config': 'extend_config',
-        'dependencies': 'dependencies',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, version_description=None, last_modified=None, func_vpc=None, mount_config=None, concurrency=None, depend_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, depend_list=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None):
         """CreateFunctionResponse - a model defined in huaweicloud sdk"""
         
         super(CreateFunctionResponse, self).__init__()
@@ -115,21 +112,19 @@ class CreateFunctionResponse(SdkResponse):
         self._code_filename = None
         self._code_size = None
         self._user_data = None
+        self._encrypted_user_data = None
         self._digest = None
         self._version = None
         self._image_name = None
         self._xrole = None
         self._app_xrole = None
         self._description = None
-        self._version_description = None
         self._last_modified = None
         self._func_vpc = None
         self._mount_config = None
-        self._concurrency = None
         self._depend_list = None
         self._strategy_config = None
         self._extend_config = None
-        self._dependencies = None
         self._initializer_handler = None
         self._initializer_timeout = None
         self._enterprise_project_id = None
@@ -167,6 +162,8 @@ class CreateFunctionResponse(SdkResponse):
             self.code_size = code_size
         if user_data is not None:
             self.user_data = user_data
+        if encrypted_user_data is not None:
+            self.encrypted_user_data = encrypted_user_data
         if digest is not None:
             self.digest = digest
         if version is not None:
@@ -179,24 +176,18 @@ class CreateFunctionResponse(SdkResponse):
             self.app_xrole = app_xrole
         if description is not None:
             self.description = description
-        if version_description is not None:
-            self.version_description = version_description
         if last_modified is not None:
             self.last_modified = last_modified
         if func_vpc is not None:
             self.func_vpc = func_vpc
         if mount_config is not None:
             self.mount_config = mount_config
-        if concurrency is not None:
-            self.concurrency = concurrency
         if depend_list is not None:
             self.depend_list = depend_list
         if strategy_config is not None:
             self.strategy_config = strategy_config
         if extend_config is not None:
             self.extend_config = extend_config
-        if dependencies is not None:
-            self.dependencies = dependencies
         if initializer_handler is not None:
             self.initializer_handler = initializer_handler
         if initializer_timeout is not None:
@@ -557,6 +548,28 @@ class CreateFunctionResponse(SdkResponse):
         self._user_data = user_data
 
     @property
+    def encrypted_user_data(self):
+        """Gets the encrypted_user_data of this CreateFunctionResponse.
+
+        用户自定义的name/value信息，用于需要加密的配置。
+
+        :return: The encrypted_user_data of this CreateFunctionResponse.
+        :rtype: str
+        """
+        return self._encrypted_user_data
+
+    @encrypted_user_data.setter
+    def encrypted_user_data(self, encrypted_user_data):
+        """Sets the encrypted_user_data of this CreateFunctionResponse.
+
+        用户自定义的name/value信息，用于需要加密的配置。
+
+        :param encrypted_user_data: The encrypted_user_data of this CreateFunctionResponse.
+        :type: str
+        """
+        self._encrypted_user_data = encrypted_user_data
+
+    @property
     def digest(self):
         """Gets the digest of this CreateFunctionResponse.
 
@@ -689,28 +702,6 @@ class CreateFunctionResponse(SdkResponse):
         self._description = description
 
     @property
-    def version_description(self):
-        """Gets the version_description of this CreateFunctionResponse.
-
-        函数版本描述。
-
-        :return: The version_description of this CreateFunctionResponse.
-        :rtype: str
-        """
-        return self._version_description
-
-    @version_description.setter
-    def version_description(self, version_description):
-        """Sets the version_description of this CreateFunctionResponse.
-
-        函数版本描述。
-
-        :param version_description: The version_description of this CreateFunctionResponse.
-        :type: str
-        """
-        self._version_description = version_description
-
-    @property
     def last_modified(self):
         """Gets the last_modified of this CreateFunctionResponse.
 
@@ -771,26 +762,6 @@ class CreateFunctionResponse(SdkResponse):
         :type: MountConfig
         """
         self._mount_config = mount_config
-
-    @property
-    def concurrency(self):
-        """Gets the concurrency of this CreateFunctionResponse.
-
-
-        :return: The concurrency of this CreateFunctionResponse.
-        :rtype: int
-        """
-        return self._concurrency
-
-    @concurrency.setter
-    def concurrency(self, concurrency):
-        """Sets the concurrency of this CreateFunctionResponse.
-
-
-        :param concurrency: The concurrency of this CreateFunctionResponse.
-        :type: int
-        """
-        self._concurrency = concurrency
 
     @property
     def depend_list(self):
@@ -855,28 +826,6 @@ class CreateFunctionResponse(SdkResponse):
         :type: str
         """
         self._extend_config = extend_config
-
-    @property
-    def dependencies(self):
-        """Gets the dependencies of this CreateFunctionResponse.
-
-        函数依赖代码包列表。
-
-        :return: The dependencies of this CreateFunctionResponse.
-        :rtype: list[Dependency]
-        """
-        return self._dependencies
-
-    @dependencies.setter
-    def dependencies(self, dependencies):
-        """Sets the dependencies of this CreateFunctionResponse.
-
-        函数依赖代码包列表。
-
-        :param dependencies: The dependencies of this CreateFunctionResponse.
-        :type: list[Dependency]
-        """
-        self._dependencies = dependencies
 
     @property
     def initializer_handler(self):
@@ -973,7 +922,7 @@ class CreateFunctionResponse(SdkResponse):
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

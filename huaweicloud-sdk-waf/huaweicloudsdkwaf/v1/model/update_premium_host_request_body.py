@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class UpdatePremiumHostRequestBody:
@@ -21,287 +22,43 @@ class UpdatePremiumHostRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'policyid': 'str',
-        'hostname': 'str',
-        'domainid': 'str',
-        'project_id': 'str',
-        'access_code': 'str',
-        'protocol': 'str',
         'proxy': 'bool',
         'certificateid': 'str',
         'certificatename': 'str',
-        'locked': 'int',
-        'protect_status': 'int',
-        'access_status': 'int',
-        'timestamp': 'int',
-        'server': 'list[PremiumWafServer]',
-        'mode': 'str',
         'tls': 'str',
-        'cipher': 'str',
-        'pool_ids': 'list[str]',
-        'block_page': 'BlockPage',
-        'traffic_mark': 'TrafficMark',
-        'flag': 'dict(str, str)',
-        'extend': 'dict(str, str)'
+        'cipher': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
-        'policyid': 'policyid',
-        'hostname': 'hostname',
-        'domainid': 'domainid',
-        'project_id': 'project_id',
-        'access_code': 'access_code',
-        'protocol': 'protocol',
         'proxy': 'proxy',
         'certificateid': 'certificateid',
         'certificatename': 'certificatename',
-        'locked': 'locked',
-        'protect_status': 'protect_status',
-        'access_status': 'access_status',
-        'timestamp': 'timestamp',
-        'server': 'server',
-        'mode': 'mode',
         'tls': 'tls',
-        'cipher': 'cipher',
-        'pool_ids': 'pool_ids',
-        'block_page': 'block_page',
-        'traffic_mark': 'traffic_mark',
-        'flag': 'flag',
-        'extend': 'extend'
+        'cipher': 'cipher'
     }
 
-    def __init__(self, id=None, policyid=None, hostname=None, domainid=None, project_id=None, access_code=None, protocol=None, proxy=None, certificateid=None, certificatename=None, locked=None, protect_status=None, access_status=None, timestamp=None, server=None, mode=None, tls=None, cipher=None, pool_ids=None, block_page=None, traffic_mark=None, flag=None, extend=None):
+    def __init__(self, proxy=None, certificateid=None, certificatename=None, tls=None, cipher=None):
         """UpdatePremiumHostRequestBody - a model defined in huaweicloud sdk"""
         
         
 
-        self._id = None
-        self._policyid = None
-        self._hostname = None
-        self._domainid = None
-        self._project_id = None
-        self._access_code = None
-        self._protocol = None
         self._proxy = None
         self._certificateid = None
         self._certificatename = None
-        self._locked = None
-        self._protect_status = None
-        self._access_status = None
-        self._timestamp = None
-        self._server = None
-        self._mode = None
         self._tls = None
         self._cipher = None
-        self._pool_ids = None
-        self._block_page = None
-        self._traffic_mark = None
-        self._flag = None
-        self._extend = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if policyid is not None:
-            self.policyid = policyid
-        if hostname is not None:
-            self.hostname = hostname
-        if domainid is not None:
-            self.domainid = domainid
-        if project_id is not None:
-            self.project_id = project_id
-        if access_code is not None:
-            self.access_code = access_code
-        if protocol is not None:
-            self.protocol = protocol
         if proxy is not None:
             self.proxy = proxy
         if certificateid is not None:
             self.certificateid = certificateid
         if certificatename is not None:
             self.certificatename = certificatename
-        if locked is not None:
-            self.locked = locked
-        if protect_status is not None:
-            self.protect_status = protect_status
-        if access_status is not None:
-            self.access_status = access_status
-        if timestamp is not None:
-            self.timestamp = timestamp
-        if server is not None:
-            self.server = server
-        if mode is not None:
-            self.mode = mode
         if tls is not None:
             self.tls = tls
         if cipher is not None:
             self.cipher = cipher
-        if pool_ids is not None:
-            self.pool_ids = pool_ids
-        if block_page is not None:
-            self.block_page = block_page
-        if traffic_mark is not None:
-            self.traffic_mark = traffic_mark
-        if flag is not None:
-            self.flag = flag
-        if extend is not None:
-            self.extend = extend
-
-    @property
-    def id(self):
-        """Gets the id of this UpdatePremiumHostRequestBody.
-
-        域名id
-
-        :return: The id of this UpdatePremiumHostRequestBody.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this UpdatePremiumHostRequestBody.
-
-        域名id
-
-        :param id: The id of this UpdatePremiumHostRequestBody.
-        :type: str
-        """
-        self._id = id
-
-    @property
-    def policyid(self):
-        """Gets the policyid of this UpdatePremiumHostRequestBody.
-
-        防护策略id
-
-        :return: The policyid of this UpdatePremiumHostRequestBody.
-        :rtype: str
-        """
-        return self._policyid
-
-    @policyid.setter
-    def policyid(self, policyid):
-        """Sets the policyid of this UpdatePremiumHostRequestBody.
-
-        防护策略id
-
-        :param policyid: The policyid of this UpdatePremiumHostRequestBody.
-        :type: str
-        """
-        self._policyid = policyid
-
-    @property
-    def hostname(self):
-        """Gets the hostname of this UpdatePremiumHostRequestBody.
-
-        防护域名
-
-        :return: The hostname of this UpdatePremiumHostRequestBody.
-        :rtype: str
-        """
-        return self._hostname
-
-    @hostname.setter
-    def hostname(self, hostname):
-        """Sets the hostname of this UpdatePremiumHostRequestBody.
-
-        防护域名
-
-        :param hostname: The hostname of this UpdatePremiumHostRequestBody.
-        :type: str
-        """
-        self._hostname = hostname
-
-    @property
-    def domainid(self):
-        """Gets the domainid of this UpdatePremiumHostRequestBody.
-
-        用户的domainid
-
-        :return: The domainid of this UpdatePremiumHostRequestBody.
-        :rtype: str
-        """
-        return self._domainid
-
-    @domainid.setter
-    def domainid(self, domainid):
-        """Sets the domainid of this UpdatePremiumHostRequestBody.
-
-        用户的domainid
-
-        :param domainid: The domainid of this UpdatePremiumHostRequestBody.
-        :type: str
-        """
-        self._domainid = domainid
-
-    @property
-    def project_id(self):
-        """Gets the project_id of this UpdatePremiumHostRequestBody.
-
-        用户的project_id
-
-        :return: The project_id of this UpdatePremiumHostRequestBody.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        """Sets the project_id of this UpdatePremiumHostRequestBody.
-
-        用户的project_id
-
-        :param project_id: The project_id of this UpdatePremiumHostRequestBody.
-        :type: str
-        """
-        self._project_id = project_id
-
-    @property
-    def access_code(self):
-        """Gets the access_code of this UpdatePremiumHostRequestBody.
-
-        用户的access_code
-
-        :return: The access_code of this UpdatePremiumHostRequestBody.
-        :rtype: str
-        """
-        return self._access_code
-
-    @access_code.setter
-    def access_code(self, access_code):
-        """Sets the access_code of this UpdatePremiumHostRequestBody.
-
-        用户的access_code
-
-        :param access_code: The access_code of this UpdatePremiumHostRequestBody.
-        :type: str
-        """
-        self._access_code = access_code
-
-    @property
-    def protocol(self):
-        """Gets the protocol of this UpdatePremiumHostRequestBody.
-
-        http协议
-
-        :return: The protocol of this UpdatePremiumHostRequestBody.
-        :rtype: str
-        """
-        return self._protocol
-
-    @protocol.setter
-    def protocol(self, protocol):
-        """Sets the protocol of this UpdatePremiumHostRequestBody.
-
-        http协议
-
-        :param protocol: The protocol of this UpdatePremiumHostRequestBody.
-        :type: str
-        """
-        self._protocol = protocol
 
     @property
     def proxy(self):
@@ -370,138 +127,6 @@ class UpdatePremiumHostRequestBody:
         self._certificatename = certificatename
 
     @property
-    def locked(self):
-        """Gets the locked of this UpdatePremiumHostRequestBody.
-
-        是否锁定
-
-        :return: The locked of this UpdatePremiumHostRequestBody.
-        :rtype: int
-        """
-        return self._locked
-
-    @locked.setter
-    def locked(self, locked):
-        """Sets the locked of this UpdatePremiumHostRequestBody.
-
-        是否锁定
-
-        :param locked: The locked of this UpdatePremiumHostRequestBody.
-        :type: int
-        """
-        self._locked = locked
-
-    @property
-    def protect_status(self):
-        """Gets the protect_status of this UpdatePremiumHostRequestBody.
-
-        防护状态
-
-        :return: The protect_status of this UpdatePremiumHostRequestBody.
-        :rtype: int
-        """
-        return self._protect_status
-
-    @protect_status.setter
-    def protect_status(self, protect_status):
-        """Sets the protect_status of this UpdatePremiumHostRequestBody.
-
-        防护状态
-
-        :param protect_status: The protect_status of this UpdatePremiumHostRequestBody.
-        :type: int
-        """
-        self._protect_status = protect_status
-
-    @property
-    def access_status(self):
-        """Gets the access_status of this UpdatePremiumHostRequestBody.
-
-        接入状态
-
-        :return: The access_status of this UpdatePremiumHostRequestBody.
-        :rtype: int
-        """
-        return self._access_status
-
-    @access_status.setter
-    def access_status(self, access_status):
-        """Sets the access_status of this UpdatePremiumHostRequestBody.
-
-        接入状态
-
-        :param access_status: The access_status of this UpdatePremiumHostRequestBody.
-        :type: int
-        """
-        self._access_status = access_status
-
-    @property
-    def timestamp(self):
-        """Gets the timestamp of this UpdatePremiumHostRequestBody.
-
-        时间戳
-
-        :return: The timestamp of this UpdatePremiumHostRequestBody.
-        :rtype: int
-        """
-        return self._timestamp
-
-    @timestamp.setter
-    def timestamp(self, timestamp):
-        """Sets the timestamp of this UpdatePremiumHostRequestBody.
-
-        时间戳
-
-        :param timestamp: The timestamp of this UpdatePremiumHostRequestBody.
-        :type: int
-        """
-        self._timestamp = timestamp
-
-    @property
-    def server(self):
-        """Gets the server of this UpdatePremiumHostRequestBody.
-
-        独享模式回源服务器配置
-
-        :return: The server of this UpdatePremiumHostRequestBody.
-        :rtype: list[PremiumWafServer]
-        """
-        return self._server
-
-    @server.setter
-    def server(self, server):
-        """Sets the server of this UpdatePremiumHostRequestBody.
-
-        独享模式回源服务器配置
-
-        :param server: The server of this UpdatePremiumHostRequestBody.
-        :type: list[PremiumWafServer]
-        """
-        self._server = server
-
-    @property
-    def mode(self):
-        """Gets the mode of this UpdatePremiumHostRequestBody.
-
-        独享模式特殊域名模式（仅特殊模式需要，如elb）
-
-        :return: The mode of this UpdatePremiumHostRequestBody.
-        :rtype: str
-        """
-        return self._mode
-
-    @mode.setter
-    def mode(self, mode):
-        """Sets the mode of this UpdatePremiumHostRequestBody.
-
-        独享模式特殊域名模式（仅特殊模式需要，如elb）
-
-        :param mode: The mode of this UpdatePremiumHostRequestBody.
-        :type: str
-        """
-        self._mode = mode
-
-    @property
     def tls(self):
         """Gets the tls of this UpdatePremiumHostRequestBody.
 
@@ -545,112 +170,6 @@ class UpdatePremiumHostRequestBody:
         """
         self._cipher = cipher
 
-    @property
-    def pool_ids(self):
-        """Gets the pool_ids of this UpdatePremiumHostRequestBody.
-
-        域名关联的组ID（仅特殊模式需要，如elb）
-
-        :return: The pool_ids of this UpdatePremiumHostRequestBody.
-        :rtype: list[str]
-        """
-        return self._pool_ids
-
-    @pool_ids.setter
-    def pool_ids(self, pool_ids):
-        """Sets the pool_ids of this UpdatePremiumHostRequestBody.
-
-        域名关联的组ID（仅特殊模式需要，如elb）
-
-        :param pool_ids: The pool_ids of this UpdatePremiumHostRequestBody.
-        :type: list[str]
-        """
-        self._pool_ids = pool_ids
-
-    @property
-    def block_page(self):
-        """Gets the block_page of this UpdatePremiumHostRequestBody.
-
-
-        :return: The block_page of this UpdatePremiumHostRequestBody.
-        :rtype: BlockPage
-        """
-        return self._block_page
-
-    @block_page.setter
-    def block_page(self, block_page):
-        """Sets the block_page of this UpdatePremiumHostRequestBody.
-
-
-        :param block_page: The block_page of this UpdatePremiumHostRequestBody.
-        :type: BlockPage
-        """
-        self._block_page = block_page
-
-    @property
-    def traffic_mark(self):
-        """Gets the traffic_mark of this UpdatePremiumHostRequestBody.
-
-
-        :return: The traffic_mark of this UpdatePremiumHostRequestBody.
-        :rtype: TrafficMark
-        """
-        return self._traffic_mark
-
-    @traffic_mark.setter
-    def traffic_mark(self, traffic_mark):
-        """Sets the traffic_mark of this UpdatePremiumHostRequestBody.
-
-
-        :param traffic_mark: The traffic_mark of this UpdatePremiumHostRequestBody.
-        :type: TrafficMark
-        """
-        self._traffic_mark = traffic_mark
-
-    @property
-    def flag(self):
-        """Gets the flag of this UpdatePremiumHostRequestBody.
-
-        域名特殊标识
-
-        :return: The flag of this UpdatePremiumHostRequestBody.
-        :rtype: dict(str, str)
-        """
-        return self._flag
-
-    @flag.setter
-    def flag(self, flag):
-        """Sets the flag of this UpdatePremiumHostRequestBody.
-
-        域名特殊标识
-
-        :param flag: The flag of this UpdatePremiumHostRequestBody.
-        :type: dict(str, str)
-        """
-        self._flag = flag
-
-    @property
-    def extend(self):
-        """Gets the extend of this UpdatePremiumHostRequestBody.
-
-        可扩展字段
-
-        :return: The extend of this UpdatePremiumHostRequestBody.
-        :rtype: dict(str, str)
-        """
-        return self._extend
-
-    @extend.setter
-    def extend(self, extend):
-        """Sets the extend of this UpdatePremiumHostRequestBody.
-
-        可扩展字段
-
-        :param extend: The extend of this UpdatePremiumHostRequestBody.
-        :type: dict(str, str)
-        """
-        self._extend = extend
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -680,7 +199,7 @@ class UpdatePremiumHostRequestBody:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

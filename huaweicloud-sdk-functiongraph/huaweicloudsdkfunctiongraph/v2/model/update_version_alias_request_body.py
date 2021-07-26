@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class UpdateVersionAliasRequestBody:
@@ -21,66 +22,32 @@ class UpdateVersionAliasRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
         'version': 'str',
         'description': 'str',
-        'last_modified': 'datetime',
-        'alias_urn': 'str',
         'additional_version_weights': 'dict(str, int)'
     }
 
     attribute_map = {
-        'name': 'name',
         'version': 'version',
         'description': 'description',
-        'last_modified': 'last_modified',
-        'alias_urn': 'alias_urn',
         'additional_version_weights': 'additional_version_weights'
     }
 
-    def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None, additional_version_weights=None):
+    def __init__(self, version=None, description=None, additional_version_weights=None):
         """UpdateVersionAliasRequestBody - a model defined in huaweicloud sdk"""
         
         
 
-        self._name = None
         self._version = None
         self._description = None
-        self._last_modified = None
-        self._alias_urn = None
         self._additional_version_weights = None
         self.discriminator = None
 
-        self.name = name
         self.version = version
         if description is not None:
             self.description = description
-        self.last_modified = last_modified
-        self.alias_urn = alias_urn
         if additional_version_weights is not None:
             self.additional_version_weights = additional_version_weights
-
-    @property
-    def name(self):
-        """Gets the name of this UpdateVersionAliasRequestBody.
-
-        要获取的别名名称。
-
-        :return: The name of this UpdateVersionAliasRequestBody.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this UpdateVersionAliasRequestBody.
-
-        要获取的别名名称。
-
-        :param name: The name of this UpdateVersionAliasRequestBody.
-        :type: str
-        """
-        self._name = name
 
     @property
     def version(self):
@@ -125,50 +92,6 @@ class UpdateVersionAliasRequestBody:
         :type: str
         """
         self._description = description
-
-    @property
-    def last_modified(self):
-        """Gets the last_modified of this UpdateVersionAliasRequestBody.
-
-        别名最后修改时间。
-
-        :return: The last_modified of this UpdateVersionAliasRequestBody.
-        :rtype: datetime
-        """
-        return self._last_modified
-
-    @last_modified.setter
-    def last_modified(self, last_modified):
-        """Sets the last_modified of this UpdateVersionAliasRequestBody.
-
-        别名最后修改时间。
-
-        :param last_modified: The last_modified of this UpdateVersionAliasRequestBody.
-        :type: datetime
-        """
-        self._last_modified = last_modified
-
-    @property
-    def alias_urn(self):
-        """Gets the alias_urn of this UpdateVersionAliasRequestBody.
-
-        版本别名唯一标识。
-
-        :return: The alias_urn of this UpdateVersionAliasRequestBody.
-        :rtype: str
-        """
-        return self._alias_urn
-
-    @alias_urn.setter
-    def alias_urn(self, alias_urn):
-        """Sets the alias_urn of this UpdateVersionAliasRequestBody.
-
-        版本别名唯一标识。
-
-        :param alias_urn: The alias_urn of this UpdateVersionAliasRequestBody.
-        :type: str
-        """
-        self._alias_urn = alias_urn
 
     @property
     def additional_version_weights(self):
@@ -221,7 +144,7 @@ class UpdateVersionAliasRequestBody:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

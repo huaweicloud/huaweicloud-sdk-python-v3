@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class UpdatePolicyRequestBody:
@@ -23,20 +24,16 @@ class UpdatePolicyRequestBody:
     openapi_types = {
         'name': 'str',
         'action': 'PolicyAction',
-        'options': 'PolicyOption',
-        'level': 'int',
-        'full_detection': 'bool'
+        'options': 'PolicyOption'
     }
 
     attribute_map = {
         'name': 'name',
         'action': 'action',
-        'options': 'options',
-        'level': 'level',
-        'full_detection': 'full_detection'
+        'options': 'options'
     }
 
-    def __init__(self, name=None, action=None, options=None, level=None, full_detection=None):
+    def __init__(self, name=None, action=None, options=None):
         """UpdatePolicyRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -44,8 +41,6 @@ class UpdatePolicyRequestBody:
         self._name = None
         self._action = None
         self._options = None
-        self._level = None
-        self._full_detection = None
         self.discriminator = None
 
         if name is not None:
@@ -54,10 +49,6 @@ class UpdatePolicyRequestBody:
             self.action = action
         if options is not None:
             self.options = options
-        if level is not None:
-            self.level = level
-        if full_detection is not None:
-            self.full_detection = full_detection
 
     @property
     def name(self):
@@ -121,50 +112,6 @@ class UpdatePolicyRequestBody:
         """
         self._options = options
 
-    @property
-    def level(self):
-        """Gets the level of this UpdatePolicyRequestBody.
-
-        防护等级
-
-        :return: The level of this UpdatePolicyRequestBody.
-        :rtype: int
-        """
-        return self._level
-
-    @level.setter
-    def level(self, level):
-        """Sets the level of this UpdatePolicyRequestBody.
-
-        防护等级
-
-        :param level: The level of this UpdatePolicyRequestBody.
-        :type: int
-        """
-        self._level = level
-
-    @property
-    def full_detection(self):
-        """Gets the full_detection of this UpdatePolicyRequestBody.
-
-        精准防护中的检测模式
-
-        :return: The full_detection of this UpdatePolicyRequestBody.
-        :rtype: bool
-        """
-        return self._full_detection
-
-    @full_detection.setter
-    def full_detection(self, full_detection):
-        """Sets the full_detection of this UpdatePolicyRequestBody.
-
-        精准防护中的检测模式
-
-        :param full_detection: The full_detection of this UpdatePolicyRequestBody.
-        :type: bool
-        """
-        self._full_detection = full_detection
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -194,7 +141,7 @@ class UpdatePolicyRequestBody:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

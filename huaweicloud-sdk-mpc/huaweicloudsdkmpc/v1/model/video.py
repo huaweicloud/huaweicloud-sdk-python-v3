@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Video:
@@ -33,7 +34,6 @@ class Video:
         'frame_rate': 'int',
         'width': 'int',
         'height': 'int',
-        'aspect_ratio': 'int',
         'black_cut': 'int'
     }
 
@@ -50,11 +50,10 @@ class Video:
         'frame_rate': 'frame_rate',
         'width': 'width',
         'height': 'height',
-        'aspect_ratio': 'aspect_ratio',
         'black_cut': 'black_cut'
     }
 
-    def __init__(self, output_policy=None, codec=None, bitrate=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, aspect_ratio=None, black_cut=None):
+    def __init__(self, output_policy=None, codec=None, bitrate=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, black_cut=None):
         """Video - a model defined in huaweicloud sdk"""
         
         
@@ -71,7 +70,6 @@ class Video:
         self._frame_rate = None
         self._width = None
         self._height = None
-        self._aspect_ratio = None
         self._black_cut = None
         self.discriminator = None
 
@@ -99,8 +97,6 @@ class Video:
             self.width = width
         if height is not None:
             self.height = height
-        if aspect_ratio is not None:
-            self.aspect_ratio = aspect_ratio
         if black_cut is not None:
             self.black_cut = black_cut
 
@@ -369,28 +365,6 @@ class Video:
         self._height = height
 
     @property
-    def aspect_ratio(self):
-        """Gets the aspect_ratio of this Video.
-
-        纵横比，图像缩放方式。  取值如下： - 0：自适应，保持原有宽高比 - 1：补黑边（16:9） - 2：裁黑边（18:9） 
-
-        :return: The aspect_ratio of this Video.
-        :rtype: int
-        """
-        return self._aspect_ratio
-
-    @aspect_ratio.setter
-    def aspect_ratio(self, aspect_ratio):
-        """Sets the aspect_ratio of this Video.
-
-        纵横比，图像缩放方式。  取值如下： - 0：自适应，保持原有宽高比 - 1：补黑边（16:9） - 2：裁黑边（18:9） 
-
-        :param aspect_ratio: The aspect_ratio of this Video.
-        :type: int
-        """
-        self._aspect_ratio = aspect_ratio
-
-    @property
     def black_cut(self):
         """Gets the black_cut of this Video.
 
@@ -441,7 +415,7 @@ class Video:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

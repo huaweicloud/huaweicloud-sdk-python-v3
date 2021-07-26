@@ -26,6 +26,10 @@ class FunctionGraphRegion:
 
     AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://functiongraph.ap-southeast-3.myhuaweicloud.com")
 
+    AF_SOUTH_1 = Region(id="af-south-1", endpoint="https://functiongraph.af-south-1.myhuaweicloud.com")
+
+    CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://functiongraph.cn-southwest-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,
@@ -35,6 +39,8 @@ class FunctionGraphRegion:
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "af-south-1": AF_SOUTH_1,
+        "cn-southwest-2": CN_SOUTHWEST_2,
     }
 
     @staticmethod

@@ -1015,7 +1015,7 @@ class CdnAsyncClient(Client):
         :return: ShowHistoryTasksResponse
         """
 
-        all_params = ['enterprise_project_id', 'page_size', 'page_number', 'status', 'start_date', 'end_date', 'order_field', 'order_type', 'user_domain_id', 'file_type', 'task_id']
+        all_params = ['enterprise_project_id', 'page_size', 'page_number', 'status', 'start_date', 'end_date', 'order_field', 'order_type', 'file_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1042,12 +1042,8 @@ class CdnAsyncClient(Client):
             query_params.append(('order_field', local_var_params['order_field']))
         if 'order_type' in local_var_params:
             query_params.append(('order_type', local_var_params['order_type']))
-        if 'user_domain_id' in local_var_params:
-            query_params.append(('user_domain_id', local_var_params['user_domain_id']))
         if 'file_type' in local_var_params:
             query_params.append(('file_type', local_var_params['file_type']))
-        if 'task_id' in local_var_params:
-            query_params.append(('task_id', local_var_params['task_id']))
 
         header_params = {}
 

@@ -48,6 +48,82 @@ class HssAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def list_events_async(self, request):
+        """查入侵事件列表
+
+        查入侵事件列表
+
+        :param ListEventsRequest request
+        :return: ListEventsResponse
+        """
+        return self.list_events_with_http_info(request)
+
+    def list_events_with_http_info(self, request):
+        """查入侵事件列表
+
+        查入侵事件列表
+
+        :param ListEventsRequest request
+        :return: ListEventsResponse
+        """
+
+        all_params = ['begin_time', 'end_time', 'event_types', 'host_name', 'handle_status', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'host_name' in local_var_params:
+            query_params.append(('host_name', local_var_params['host_name']))
+        if 'event_types' in local_var_params:
+            query_params.append(('event_types', local_var_params['event_types']))
+            collection_formats['event_types'] = 'multi'
+        if 'handle_status' in local_var_params:
+            query_params.append(('handle_status', local_var_params['handle_status']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/hss/v1/{project_id}/api/event-management/events',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEventsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_hosts_async(self, request):
         """查询弹性云服务器状态列表
 

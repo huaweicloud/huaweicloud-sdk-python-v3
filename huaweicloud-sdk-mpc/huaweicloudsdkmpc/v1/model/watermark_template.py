@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class WatermarkTemplate:
@@ -30,10 +31,8 @@ class WatermarkTemplate:
         'width': 'str',
         'height': 'str',
         'base': 'str',
-        'template_id': 'int',
         'template_name': 'str',
-        'type': 'str',
-        'error': 'XCodeError'
+        'type': 'str'
     }
 
     attribute_map = {
@@ -46,13 +45,11 @@ class WatermarkTemplate:
         'width': 'width',
         'height': 'height',
         'base': 'base',
-        'template_id': 'template_id',
         'template_name': 'template_name',
-        'type': 'type',
-        'error': 'error'
+        'type': 'type'
     }
 
-    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, image_process=None, width=None, height=None, base=None, template_id=None, template_name=None, type=None, error=None):
+    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, image_process=None, width=None, height=None, base=None, template_name=None, type=None):
         """WatermarkTemplate - a model defined in huaweicloud sdk"""
         
         
@@ -66,10 +63,8 @@ class WatermarkTemplate:
         self._width = None
         self._height = None
         self._base = None
-        self._template_id = None
         self._template_name = None
         self._type = None
-        self._error = None
         self.discriminator = None
 
         if dx is not None:
@@ -90,14 +85,10 @@ class WatermarkTemplate:
             self.height = height
         if base is not None:
             self.base = base
-        if template_id is not None:
-            self.template_id = template_id
         if template_name is not None:
             self.template_name = template_name
         if type is not None:
             self.type = type
-        if error is not None:
-            self.error = error
 
     @property
     def dx(self):
@@ -298,28 +289,6 @@ class WatermarkTemplate:
         self._base = base
 
     @property
-    def template_id(self):
-        """Gets the template_id of this WatermarkTemplate.
-
-        水印模板ID
-
-        :return: The template_id of this WatermarkTemplate.
-        :rtype: int
-        """
-        return self._template_id
-
-    @template_id.setter
-    def template_id(self, template_id):
-        """Sets the template_id of this WatermarkTemplate.
-
-        水印模板ID
-
-        :param template_id: The template_id of this WatermarkTemplate.
-        :type: int
-        """
-        self._template_id = template_id
-
-    @property
     def template_name(self):
         """Gets the template_name of this WatermarkTemplate.
 
@@ -363,26 +332,6 @@ class WatermarkTemplate:
         """
         self._type = type
 
-    @property
-    def error(self):
-        """Gets the error of this WatermarkTemplate.
-
-
-        :return: The error of this WatermarkTemplate.
-        :rtype: XCodeError
-        """
-        return self._error
-
-    @error.setter
-    def error(self, error):
-        """Sets the error of this WatermarkTemplate.
-
-
-        :param error: The error of this WatermarkTemplate.
-        :type: XCodeError
-        """
-        self._error = error
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -412,7 +361,7 @@ class WatermarkTemplate:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

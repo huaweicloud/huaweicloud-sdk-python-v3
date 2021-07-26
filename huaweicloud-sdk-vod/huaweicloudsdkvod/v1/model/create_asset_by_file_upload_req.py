@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreateAssetByFileUploadReq:
@@ -31,7 +32,7 @@ class CreateAssetByFileUploadReq:
         'cover_md5': 'str',
         'subtitles': 'list[Subtitle]',
         'tags': 'str',
-        'auto_publish': 'str',
+        'auto_publish': 'int',
         'template_group_name': 'str',
         'auto_encrypt': 'int',
         'auto_preheat': 'str',
@@ -343,7 +344,7 @@ class CreateAssetByFileUploadReq:
         是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：0。
 
         :return: The auto_publish of this CreateAssetByFileUploadReq.
-        :rtype: str
+        :rtype: int
         """
         return self._auto_publish
 
@@ -354,7 +355,7 @@ class CreateAssetByFileUploadReq:
         是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：0。
 
         :param auto_publish: The auto_publish of this CreateAssetByFileUploadReq.
-        :type: str
+        :type: int
         """
         self._auto_publish = auto_publish
 
@@ -515,7 +516,7 @@ class CreateAssetByFileUploadReq:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

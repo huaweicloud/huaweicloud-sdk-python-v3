@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class UpdateCertificateRequestBody:
@@ -21,33 +22,23 @@ class UpdateCertificateRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
-        'content': 'str',
-        'key': 'str'
+        'name': 'str'
     }
 
     attribute_map = {
-        'name': 'name',
-        'content': 'content',
-        'key': 'key'
+        'name': 'name'
     }
 
-    def __init__(self, name=None, content=None, key=None):
+    def __init__(self, name=None):
         """UpdateCertificateRequestBody - a model defined in huaweicloud sdk"""
         
         
 
         self._name = None
-        self._content = None
-        self._key = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
-        if content is not None:
-            self.content = content
-        if key is not None:
-            self.key = key
 
     @property
     def name(self):
@@ -70,50 +61,6 @@ class UpdateCertificateRequestBody:
         :type: str
         """
         self._name = name
-
-    @property
-    def content(self):
-        """Gets the content of this UpdateCertificateRequestBody.
-
-        证书文件，PEM编码
-
-        :return: The content of this UpdateCertificateRequestBody.
-        :rtype: str
-        """
-        return self._content
-
-    @content.setter
-    def content(self, content):
-        """Sets the content of this UpdateCertificateRequestBody.
-
-        证书文件，PEM编码
-
-        :param content: The content of this UpdateCertificateRequestBody.
-        :type: str
-        """
-        self._content = content
-
-    @property
-    def key(self):
-        """Gets the key of this UpdateCertificateRequestBody.
-
-        证书私钥，PEM编码
-
-        :return: The key of this UpdateCertificateRequestBody.
-        :rtype: str
-        """
-        return self._key
-
-    @key.setter
-    def key(self, key):
-        """Sets the key of this UpdateCertificateRequestBody.
-
-        证书私钥，PEM编码
-
-        :param key: The key of this UpdateCertificateRequestBody.
-        :type: str
-        """
-        self._key = key
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -144,7 +91,7 @@ class UpdateCertificateRequestBody:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ListValueListRequest:
@@ -21,16 +22,72 @@ class ListValueListRequest:
     sensitive_list = []
 
     openapi_types = {
+        'page': 'int',
+        'pagesize': 'int'
     }
 
     attribute_map = {
+        'page': 'page',
+        'pagesize': 'pagesize'
     }
 
-    def __init__(self):
+    def __init__(self, page=None, pagesize=None):
         """ListValueListRequest - a model defined in huaweicloud sdk"""
         
         
+
+        self._page = None
+        self._pagesize = None
         self.discriminator = None
+
+        if page is not None:
+            self.page = page
+        if pagesize is not None:
+            self.pagesize = pagesize
+
+    @property
+    def page(self):
+        """Gets the page of this ListValueListRequest.
+
+        页码
+
+        :return: The page of this ListValueListRequest.
+        :rtype: int
+        """
+        return self._page
+
+    @page.setter
+    def page(self, page):
+        """Sets the page of this ListValueListRequest.
+
+        页码
+
+        :param page: The page of this ListValueListRequest.
+        :type: int
+        """
+        self._page = page
+
+    @property
+    def pagesize(self):
+        """Gets the pagesize of this ListValueListRequest.
+
+        每页的条数
+
+        :return: The pagesize of this ListValueListRequest.
+        :rtype: int
+        """
+        return self._pagesize
+
+    @pagesize.setter
+    def pagesize(self, pagesize):
+        """Sets the pagesize of this ListValueListRequest.
+
+        每页的条数
+
+        :param pagesize: The pagesize of this ListValueListRequest.
+        :type: int
+        """
+        self._pagesize = pagesize
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -61,7 +118,7 @@ class ListValueListRequest:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

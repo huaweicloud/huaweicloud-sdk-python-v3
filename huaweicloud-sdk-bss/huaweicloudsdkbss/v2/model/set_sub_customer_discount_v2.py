@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class SetSubCustomerDiscountV2:
@@ -100,7 +101,7 @@ class SetSubCustomerDiscountV2:
     def effective_time(self):
         """Gets the effective_time of this SetSubCustomerDiscountV2.
 
-        生效时间。discount=1时无需填写。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
+        生效时间。仅discount=1时无需填写。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The effective_time of this SetSubCustomerDiscountV2.
         :rtype: str
@@ -111,7 +112,7 @@ class SetSubCustomerDiscountV2:
     def effective_time(self, effective_time):
         """Sets the effective_time of this SetSubCustomerDiscountV2.
 
-        生效时间。discount=1时无需填写。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
+        生效时间。仅discount=1时无需填写。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param effective_time: The effective_time of this SetSubCustomerDiscountV2.
         :type: str
@@ -122,7 +123,7 @@ class SetSubCustomerDiscountV2:
     def expire_time(self):
         """Gets the expire_time of this SetSubCustomerDiscountV2.
 
-        失效时间。discount=1时无需填写。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
+        失效时间。仅discount=1时无需填写。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The expire_time of this SetSubCustomerDiscountV2.
         :rtype: str
@@ -133,7 +134,7 @@ class SetSubCustomerDiscountV2:
     def expire_time(self, expire_time):
         """Sets the expire_time of this SetSubCustomerDiscountV2.
 
-        失效时间。discount=1时无需填写。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
+        失效时间。仅discount=1时无需填写。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this SetSubCustomerDiscountV2.
         :type: str
@@ -169,7 +170,7 @@ class SetSubCustomerDiscountV2:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

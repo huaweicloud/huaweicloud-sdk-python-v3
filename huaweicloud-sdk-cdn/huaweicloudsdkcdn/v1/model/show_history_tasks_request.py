@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ShowHistoryTasksRequest:
@@ -29,9 +30,7 @@ class ShowHistoryTasksRequest:
         'end_date': 'int',
         'order_field': 'str',
         'order_type': 'str',
-        'user_domain_id': 'str',
-        'file_type': 'str',
-        'task_id': 'str'
+        'file_type': 'str'
     }
 
     attribute_map = {
@@ -43,12 +42,10 @@ class ShowHistoryTasksRequest:
         'end_date': 'end_date',
         'order_field': 'order_field',
         'order_type': 'order_type',
-        'user_domain_id': 'user_domain_id',
-        'file_type': 'file_type',
-        'task_id': 'task_id'
+        'file_type': 'file_type'
     }
 
-    def __init__(self, enterprise_project_id=None, page_size=None, page_number=None, status=None, start_date=None, end_date=None, order_field=None, order_type=None, user_domain_id=None, file_type=None, task_id=None):
+    def __init__(self, enterprise_project_id=None, page_size=None, page_number=None, status=None, start_date=None, end_date=None, order_field=None, order_type=None, file_type=None):
         """ShowHistoryTasksRequest - a model defined in huaweicloud sdk"""
         
         
@@ -61,9 +58,7 @@ class ShowHistoryTasksRequest:
         self._end_date = None
         self._order_field = None
         self._order_type = None
-        self._user_domain_id = None
         self._file_type = None
-        self._task_id = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -82,12 +77,8 @@ class ShowHistoryTasksRequest:
             self.order_field = order_field
         if order_type is not None:
             self.order_type = order_type
-        if user_domain_id is not None:
-            self.user_domain_id = user_domain_id
         if file_type is not None:
             self.file_type = file_type
-        if task_id is not None:
-            self.task_id = task_id
 
     @property
     def enterprise_project_id(self):
@@ -115,7 +106,7 @@ class ShowHistoryTasksRequest:
     def page_size(self):
         """Gets the page_size of this ShowHistoryTasksRequest.
 
-        单页最大数量，取值范围为1-10000。
+        单页最大数量，取值范围为1-10000。page_size和page_number必须同时传值。默认值30。
 
         :return: The page_size of this ShowHistoryTasksRequest.
         :rtype: int
@@ -126,7 +117,7 @@ class ShowHistoryTasksRequest:
     def page_size(self, page_size):
         """Sets the page_size of this ShowHistoryTasksRequest.
 
-        单页最大数量，取值范围为1-10000。
+        单页最大数量，取值范围为1-10000。page_size和page_number必须同时传值。默认值30。
 
         :param page_size: The page_size of this ShowHistoryTasksRequest.
         :type: int
@@ -137,7 +128,7 @@ class ShowHistoryTasksRequest:
     def page_number(self):
         """Gets the page_number of this ShowHistoryTasksRequest.
 
-        当前查询第几页，取值范围为1-65535。
+        当前查询第几页，取值范围为1-65535。默认值1。
 
         :return: The page_number of this ShowHistoryTasksRequest.
         :rtype: int
@@ -148,7 +139,7 @@ class ShowHistoryTasksRequest:
     def page_number(self, page_number):
         """Sets the page_number of this ShowHistoryTasksRequest.
 
-        当前查询第几页，取值范围为1-65535。
+        当前查询第几页，取值范围为1-65535。默认值1。
 
         :param page_number: The page_number of this ShowHistoryTasksRequest.
         :type: int
@@ -225,7 +216,7 @@ class ShowHistoryTasksRequest:
     def order_field(self):
         """Gets the order_field of this ShowHistoryTasksRequest.
 
-        用来排序的字段，支持的字段有“task_type”，“total”，“processing”， “succeed”，“failed”，“create_time”。order_field和order_type必须同时传值。
+        用来排序的字段，支持的字段有“task_type”，“total”，“processing”， “succeed”，“failed”，“create_time”。order_field和order_type必须同时传值，否则使用默认值\"create_time\" 和 \"desc\"。
 
         :return: The order_field of this ShowHistoryTasksRequest.
         :rtype: str
@@ -236,7 +227,7 @@ class ShowHistoryTasksRequest:
     def order_field(self, order_field):
         """Sets the order_field of this ShowHistoryTasksRequest.
 
-        用来排序的字段，支持的字段有“task_type”，“total”，“processing”， “succeed”，“failed”，“create_time”。order_field和order_type必须同时传值。
+        用来排序的字段，支持的字段有“task_type”，“total”，“processing”， “succeed”，“failed”，“create_time”。order_field和order_type必须同时传值，否则使用默认值\"create_time\" 和 \"desc\"。
 
         :param order_field: The order_field of this ShowHistoryTasksRequest.
         :type: str
@@ -247,7 +238,7 @@ class ShowHistoryTasksRequest:
     def order_type(self):
         """Gets the order_type of this ShowHistoryTasksRequest.
 
-        desc 或者asc。
+        desc 或者asc。默认值desc。
 
         :return: The order_type of this ShowHistoryTasksRequest.
         :rtype: str
@@ -258,34 +249,12 @@ class ShowHistoryTasksRequest:
     def order_type(self, order_type):
         """Sets the order_type of this ShowHistoryTasksRequest.
 
-        desc 或者asc。
+        desc 或者asc。默认值desc。
 
         :param order_type: The order_type of this ShowHistoryTasksRequest.
         :type: str
         """
         self._order_type = order_type
-
-    @property
-    def user_domain_id(self):
-        """Gets the user_domain_id of this ShowHistoryTasksRequest.
-
-        指定用户的域id。
-
-        :return: The user_domain_id of this ShowHistoryTasksRequest.
-        :rtype: str
-        """
-        return self._user_domain_id
-
-    @user_domain_id.setter
-    def user_domain_id(self, user_domain_id):
-        """Sets the user_domain_id of this ShowHistoryTasksRequest.
-
-        指定用户的域id。
-
-        :param user_domain_id: The user_domain_id of this ShowHistoryTasksRequest.
-        :type: str
-        """
-        self._user_domain_id = user_domain_id
 
     @property
     def file_type(self):
@@ -308,28 +277,6 @@ class ShowHistoryTasksRequest:
         :type: str
         """
         self._file_type = file_type
-
-    @property
-    def task_id(self):
-        """Gets the task_id of this ShowHistoryTasksRequest.
-
-        任务id。
-
-        :return: The task_id of this ShowHistoryTasksRequest.
-        :rtype: str
-        """
-        return self._task_id
-
-    @task_id.setter
-    def task_id(self, task_id):
-        """Sets the task_id of this ShowHistoryTasksRequest.
-
-        任务id。
-
-        :param task_id: The task_id of this ShowHistoryTasksRequest.
-        :type: str
-        """
-        self._task_id = task_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -360,7 +307,7 @@ class ShowHistoryTasksRequest:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ListFunctionResult:
@@ -37,26 +38,24 @@ class ListFunctionResult:
         'code_filename': 'str',
         'code_size': 'int',
         'user_data': 'str',
+        'encrypted_user_data': 'str',
         'digest': 'str',
         'version': 'str',
         'image_name': 'str',
         'xrole': 'str',
         'app_xrole': 'str',
         'description': 'str',
-        'version_description': 'str',
         'last_modified': 'datetime',
-        'last_modified_utc': 'int',
-        'func_code': 'FuncCode',
-        'func_vpc': 'FuncVpc',
-        'mount_config': 'MountConfig',
-        'concurrency': 'int',
-        'depend_list': 'list[str]',
+        'func_vpc_id': 'str',
         'strategy_config': 'StrategyConfig',
         'extend_config': 'str',
-        'dependencies': 'list[Dependency]',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'long_time': 'bool',
+        'log_group_id': 'str',
+        'log_stream_id': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -76,29 +75,27 @@ class ListFunctionResult:
         'code_filename': 'code_filename',
         'code_size': 'code_size',
         'user_data': 'user_data',
+        'encrypted_user_data': 'encrypted_user_data',
         'digest': 'digest',
         'version': 'version',
         'image_name': 'image_name',
         'xrole': 'xrole',
         'app_xrole': 'app_xrole',
         'description': 'description',
-        'version_description': 'version_description',
         'last_modified': 'last_modified',
-        'last_modified_utc': 'last_modified_utc',
-        'func_code': 'func_code',
-        'func_vpc': 'func_vpc',
-        'mount_config': 'mount_config',
-        'concurrency': 'concurrency',
-        'depend_list': 'depend_list',
+        'func_vpc_id': 'func_vpc_id',
         'strategy_config': 'strategy_config',
         'extend_config': 'extend_config',
-        'dependencies': 'dependencies',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'long_time': 'long_time',
+        'log_group_id': 'log_group_id',
+        'log_stream_id': 'log_stream_id',
+        'type': 'type'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, version_description=None, last_modified=None, last_modified_utc=None, func_code=None, func_vpc=None, mount_config=None, concurrency=None, depend_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc_id=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None):
         """ListFunctionResult - a model defined in huaweicloud sdk"""
         
         
@@ -119,26 +116,24 @@ class ListFunctionResult:
         self._code_filename = None
         self._code_size = None
         self._user_data = None
+        self._encrypted_user_data = None
         self._digest = None
         self._version = None
         self._image_name = None
         self._xrole = None
         self._app_xrole = None
         self._description = None
-        self._version_description = None
         self._last_modified = None
-        self._last_modified_utc = None
-        self._func_code = None
-        self._func_vpc = None
-        self._mount_config = None
-        self._concurrency = None
-        self._depend_list = None
+        self._func_vpc_id = None
         self._strategy_config = None
         self._extend_config = None
-        self._dependencies = None
         self._initializer_handler = None
         self._initializer_timeout = None
         self._enterprise_project_id = None
+        self._long_time = None
+        self._log_group_id = None
+        self._log_stream_id = None
+        self._type = None
         self.discriminator = None
 
         self.func_urn = func_urn
@@ -160,6 +155,8 @@ class ListFunctionResult:
         self.code_size = code_size
         if user_data is not None:
             self.user_data = user_data
+        if encrypted_user_data is not None:
+            self.encrypted_user_data = encrypted_user_data
         self.digest = digest
         self.version = version
         self.image_name = image_name
@@ -169,33 +166,27 @@ class ListFunctionResult:
             self.app_xrole = app_xrole
         if description is not None:
             self.description = description
-        if version_description is not None:
-            self.version_description = version_description
         self.last_modified = last_modified
-        if last_modified_utc is not None:
-            self.last_modified_utc = last_modified_utc
-        if func_code is not None:
-            self.func_code = func_code
-        if func_vpc is not None:
-            self.func_vpc = func_vpc
-        if mount_config is not None:
-            self.mount_config = mount_config
-        if concurrency is not None:
-            self.concurrency = concurrency
-        if depend_list is not None:
-            self.depend_list = depend_list
+        if func_vpc_id is not None:
+            self.func_vpc_id = func_vpc_id
         if strategy_config is not None:
             self.strategy_config = strategy_config
         if extend_config is not None:
             self.extend_config = extend_config
-        if dependencies is not None:
-            self.dependencies = dependencies
         if initializer_handler is not None:
             self.initializer_handler = initializer_handler
         if initializer_timeout is not None:
             self.initializer_timeout = initializer_timeout
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if long_time is not None:
+            self.long_time = long_time
+        if log_group_id is not None:
+            self.log_group_id = log_group_id
+        if log_stream_id is not None:
+            self.log_stream_id = log_stream_id
+        if type is not None:
+            self.type = type
 
     @property
     def func_urn(self):
@@ -550,6 +541,28 @@ class ListFunctionResult:
         self._user_data = user_data
 
     @property
+    def encrypted_user_data(self):
+        """Gets the encrypted_user_data of this ListFunctionResult.
+
+        用户自定义的name/value信息，用于需要加密的配置。
+
+        :return: The encrypted_user_data of this ListFunctionResult.
+        :rtype: str
+        """
+        return self._encrypted_user_data
+
+    @encrypted_user_data.setter
+    def encrypted_user_data(self, encrypted_user_data):
+        """Sets the encrypted_user_data of this ListFunctionResult.
+
+        用户自定义的name/value信息，用于需要加密的配置。
+
+        :param encrypted_user_data: The encrypted_user_data of this ListFunctionResult.
+        :type: str
+        """
+        self._encrypted_user_data = encrypted_user_data
+
+    @property
     def digest(self):
         """Gets the digest of this ListFunctionResult.
 
@@ -682,28 +695,6 @@ class ListFunctionResult:
         self._description = description
 
     @property
-    def version_description(self):
-        """Gets the version_description of this ListFunctionResult.
-
-        函数版本描述。
-
-        :return: The version_description of this ListFunctionResult.
-        :rtype: str
-        """
-        return self._version_description
-
-    @version_description.setter
-    def version_description(self, version_description):
-        """Sets the version_description of this ListFunctionResult.
-
-        函数版本描述。
-
-        :param version_description: The version_description of this ListFunctionResult.
-        :type: str
-        """
-        self._version_description = version_description
-
-    @property
     def last_modified(self):
         """Gets the last_modified of this ListFunctionResult.
 
@@ -726,128 +717,26 @@ class ListFunctionResult:
         self._last_modified = last_modified
 
     @property
-    def last_modified_utc(self):
-        """Gets the last_modified_utc of this ListFunctionResult.
+    def func_vpc_id(self):
+        """Gets the func_vpc_id of this ListFunctionResult.
 
-        函数最后一次更新utc时间。
+        对应tbl_func_vpc表的id字段。
 
-        :return: The last_modified_utc of this ListFunctionResult.
-        :rtype: int
+        :return: The func_vpc_id of this ListFunctionResult.
+        :rtype: str
         """
-        return self._last_modified_utc
+        return self._func_vpc_id
 
-    @last_modified_utc.setter
-    def last_modified_utc(self, last_modified_utc):
-        """Sets the last_modified_utc of this ListFunctionResult.
+    @func_vpc_id.setter
+    def func_vpc_id(self, func_vpc_id):
+        """Sets the func_vpc_id of this ListFunctionResult.
 
-        函数最后一次更新utc时间。
+        对应tbl_func_vpc表的id字段。
 
-        :param last_modified_utc: The last_modified_utc of this ListFunctionResult.
-        :type: int
+        :param func_vpc_id: The func_vpc_id of this ListFunctionResult.
+        :type: str
         """
-        self._last_modified_utc = last_modified_utc
-
-    @property
-    def func_code(self):
-        """Gets the func_code of this ListFunctionResult.
-
-
-        :return: The func_code of this ListFunctionResult.
-        :rtype: FuncCode
-        """
-        return self._func_code
-
-    @func_code.setter
-    def func_code(self, func_code):
-        """Sets the func_code of this ListFunctionResult.
-
-
-        :param func_code: The func_code of this ListFunctionResult.
-        :type: FuncCode
-        """
-        self._func_code = func_code
-
-    @property
-    def func_vpc(self):
-        """Gets the func_vpc of this ListFunctionResult.
-
-
-        :return: The func_vpc of this ListFunctionResult.
-        :rtype: FuncVpc
-        """
-        return self._func_vpc
-
-    @func_vpc.setter
-    def func_vpc(self, func_vpc):
-        """Sets the func_vpc of this ListFunctionResult.
-
-
-        :param func_vpc: The func_vpc of this ListFunctionResult.
-        :type: FuncVpc
-        """
-        self._func_vpc = func_vpc
-
-    @property
-    def mount_config(self):
-        """Gets the mount_config of this ListFunctionResult.
-
-
-        :return: The mount_config of this ListFunctionResult.
-        :rtype: MountConfig
-        """
-        return self._mount_config
-
-    @mount_config.setter
-    def mount_config(self, mount_config):
-        """Sets the mount_config of this ListFunctionResult.
-
-
-        :param mount_config: The mount_config of this ListFunctionResult.
-        :type: MountConfig
-        """
-        self._mount_config = mount_config
-
-    @property
-    def concurrency(self):
-        """Gets the concurrency of this ListFunctionResult.
-
-
-        :return: The concurrency of this ListFunctionResult.
-        :rtype: int
-        """
-        return self._concurrency
-
-    @concurrency.setter
-    def concurrency(self, concurrency):
-        """Sets the concurrency of this ListFunctionResult.
-
-
-        :param concurrency: The concurrency of this ListFunctionResult.
-        :type: int
-        """
-        self._concurrency = concurrency
-
-    @property
-    def depend_list(self):
-        """Gets the depend_list of this ListFunctionResult.
-
-        依赖id列表
-
-        :return: The depend_list of this ListFunctionResult.
-        :rtype: list[str]
-        """
-        return self._depend_list
-
-    @depend_list.setter
-    def depend_list(self, depend_list):
-        """Sets the depend_list of this ListFunctionResult.
-
-        依赖id列表
-
-        :param depend_list: The depend_list of this ListFunctionResult.
-        :type: list[str]
-        """
-        self._depend_list = depend_list
+        self._func_vpc_id = func_vpc_id
 
     @property
     def strategy_config(self):
@@ -890,28 +779,6 @@ class ListFunctionResult:
         :type: str
         """
         self._extend_config = extend_config
-
-    @property
-    def dependencies(self):
-        """Gets the dependencies of this ListFunctionResult.
-
-        函数依赖代码包列表。
-
-        :return: The dependencies of this ListFunctionResult.
-        :rtype: list[Dependency]
-        """
-        return self._dependencies
-
-    @dependencies.setter
-    def dependencies(self, dependencies):
-        """Sets the dependencies of this ListFunctionResult.
-
-        函数依赖代码包列表。
-
-        :param dependencies: The dependencies of this ListFunctionResult.
-        :type: list[Dependency]
-        """
-        self._dependencies = dependencies
 
     @property
     def initializer_handler(self):
@@ -979,6 +846,94 @@ class ListFunctionResult:
         """
         self._enterprise_project_id = enterprise_project_id
 
+    @property
+    def long_time(self):
+        """Gets the long_time of this ListFunctionResult.
+
+        是否允许进行长时间超时设置。
+
+        :return: The long_time of this ListFunctionResult.
+        :rtype: bool
+        """
+        return self._long_time
+
+    @long_time.setter
+    def long_time(self, long_time):
+        """Sets the long_time of this ListFunctionResult.
+
+        是否允许进行长时间超时设置。
+
+        :param long_time: The long_time of this ListFunctionResult.
+        :type: bool
+        """
+        self._long_time = long_time
+
+    @property
+    def log_group_id(self):
+        """Gets the log_group_id of this ListFunctionResult.
+
+        自定义日志查询组id
+
+        :return: The log_group_id of this ListFunctionResult.
+        :rtype: str
+        """
+        return self._log_group_id
+
+    @log_group_id.setter
+    def log_group_id(self, log_group_id):
+        """Sets the log_group_id of this ListFunctionResult.
+
+        自定义日志查询组id
+
+        :param log_group_id: The log_group_id of this ListFunctionResult.
+        :type: str
+        """
+        self._log_group_id = log_group_id
+
+    @property
+    def log_stream_id(self):
+        """Gets the log_stream_id of this ListFunctionResult.
+
+        自定义日志查询流id
+
+        :return: The log_stream_id of this ListFunctionResult.
+        :rtype: str
+        """
+        return self._log_stream_id
+
+    @log_stream_id.setter
+    def log_stream_id(self, log_stream_id):
+        """Sets the log_stream_id of this ListFunctionResult.
+
+        自定义日志查询流id
+
+        :param log_stream_id: The log_stream_id of this ListFunctionResult.
+        :type: str
+        """
+        self._log_stream_id = log_stream_id
+
+    @property
+    def type(self):
+        """Gets the type of this ListFunctionResult.
+
+        v2表示为公测版本,v1为原来版本。
+
+        :return: The type of this ListFunctionResult.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ListFunctionResult.
+
+        v2表示为公测版本,v1为原来版本。
+
+        :param type: The type of this ListFunctionResult.
+        :type: str
+        """
+        self._type = type
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -1008,7 +963,7 @@ class ListFunctionResult:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

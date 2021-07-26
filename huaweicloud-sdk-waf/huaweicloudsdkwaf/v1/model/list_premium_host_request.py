@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ListPremiumHostRequest:
@@ -63,7 +64,7 @@ class ListPremiumHostRequest:
     def page(self):
         """Gets the page of this ListPremiumHostRequest.
 
-        页数
+        页码
 
         :return: The page of this ListPremiumHostRequest.
         :rtype: str
@@ -74,7 +75,7 @@ class ListPremiumHostRequest:
     def page(self, page):
         """Sets the page of this ListPremiumHostRequest.
 
-        页数
+        页码
 
         :param page: The page of this ListPremiumHostRequest.
         :type: str
@@ -85,7 +86,7 @@ class ListPremiumHostRequest:
     def pagesize(self):
         """Gets the pagesize of this ListPremiumHostRequest.
 
-        每页数量
+        每页条数
 
         :return: The pagesize of this ListPremiumHostRequest.
         :rtype: str
@@ -96,7 +97,7 @@ class ListPremiumHostRequest:
     def pagesize(self, pagesize):
         """Sets the pagesize of this ListPremiumHostRequest.
 
-        每页数量
+        每页条数
 
         :param pagesize: The pagesize of this ListPremiumHostRequest.
         :type: str
@@ -198,7 +199,7 @@ class ListPremiumHostRequest:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

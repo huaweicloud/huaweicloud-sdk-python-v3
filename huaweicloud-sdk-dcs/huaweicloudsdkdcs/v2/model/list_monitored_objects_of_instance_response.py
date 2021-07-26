@@ -5,6 +5,7 @@ import six
 
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
@@ -26,6 +27,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         'instances': 'list[InstancesMonitoredObject]',
         'dcs_cluster_redis_node': 'list[ClusterRedisNodeMonitoredObject]',
         'dcs_cluster_proxy_node': 'list[ProxyNodeMonitoredObject]',
+        'dcs_cluster_proxy2_node': 'list[Proxy2NodeMonitoredObject]',
         'total': 'int'
     }
 
@@ -35,10 +37,11 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         'instances': 'instances',
         'dcs_cluster_redis_node': 'dcs_cluster_redis_node',
         'dcs_cluster_proxy_node': 'dcs_cluster_proxy_node',
+        'dcs_cluster_proxy2_node': 'dcs_cluster_proxy2_node',
         'total': 'total'
     }
 
-    def __init__(self, router=None, children=None, instances=None, dcs_cluster_redis_node=None, dcs_cluster_proxy_node=None, total=None):
+    def __init__(self, router=None, children=None, instances=None, dcs_cluster_redis_node=None, dcs_cluster_proxy_node=None, dcs_cluster_proxy2_node=None, total=None):
         """ListMonitoredObjectsOfInstanceResponse - a model defined in huaweicloud sdk"""
         
         super(ListMonitoredObjectsOfInstanceResponse, self).__init__()
@@ -48,6 +51,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         self._instances = None
         self._dcs_cluster_redis_node = None
         self._dcs_cluster_proxy_node = None
+        self._dcs_cluster_proxy2_node = None
         self._total = None
         self.discriminator = None
 
@@ -61,6 +65,8 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
             self.dcs_cluster_redis_node = dcs_cluster_redis_node
         if dcs_cluster_proxy_node is not None:
             self.dcs_cluster_proxy_node = dcs_cluster_proxy_node
+        if dcs_cluster_proxy2_node is not None:
+            self.dcs_cluster_proxy2_node = dcs_cluster_proxy2_node
         if total is not None:
             self.total = total
 
@@ -175,6 +181,28 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
         self._dcs_cluster_proxy_node = dcs_cluster_proxy_node
 
     @property
+    def dcs_cluster_proxy2_node(self):
+        """Gets the dcs_cluster_proxy2_node of this ListMonitoredObjectsOfInstanceResponse.
+
+        Redis 4.0和5.0的Proxy集群时才存在，表示集群Proxy节点维度的监控对象列表。字段名称与children的子维度对象名称相同。 
+
+        :return: The dcs_cluster_proxy2_node of this ListMonitoredObjectsOfInstanceResponse.
+        :rtype: list[Proxy2NodeMonitoredObject]
+        """
+        return self._dcs_cluster_proxy2_node
+
+    @dcs_cluster_proxy2_node.setter
+    def dcs_cluster_proxy2_node(self, dcs_cluster_proxy2_node):
+        """Sets the dcs_cluster_proxy2_node of this ListMonitoredObjectsOfInstanceResponse.
+
+        Redis 4.0和5.0的Proxy集群时才存在，表示集群Proxy节点维度的监控对象列表。字段名称与children的子维度对象名称相同。 
+
+        :param dcs_cluster_proxy2_node: The dcs_cluster_proxy2_node of this ListMonitoredObjectsOfInstanceResponse.
+        :type: list[Proxy2NodeMonitoredObject]
+        """
+        self._dcs_cluster_proxy2_node = dcs_cluster_proxy2_node
+
+    @property
     def total(self):
         """Gets the total of this ListMonitoredObjectsOfInstanceResponse.
 
@@ -225,7 +253,7 @@ class ListMonitoredObjectsOfInstanceResponse(SdkResponse):
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

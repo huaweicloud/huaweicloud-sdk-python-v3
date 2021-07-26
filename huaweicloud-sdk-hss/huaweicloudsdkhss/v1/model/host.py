@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Host:
@@ -351,7 +352,7 @@ class Host:
     def host_status(self):
         """Gets the host_status of this Host.
 
-        云主机状态：正在运行：ACTIVE; 关机：SHUTOFF; 创建中：BUILDING; 故障：ERROR;
+        Agent状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
 
         :return: The host_status of this Host.
         :rtype: str
@@ -362,7 +363,7 @@ class Host:
     def host_status(self, host_status):
         """Sets the host_status of this Host.
 
-        云主机状态：正在运行：ACTIVE; 关机：SHUTOFF; 创建中：BUILDING; 故障：ERROR;
+        Agent状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
 
         :param host_status: The host_status of this Host.
         :type: str
@@ -373,7 +374,7 @@ class Host:
     def agent_status(self):
         """Gets the agent_status of this Host.
 
-        客户端状态, 未注册：not_register; 在线：online; 离线：offline; 所有状态：all;
+        Agent状态，包含如下3种。   - uninstall ：未注册。   - online ：在线。   - offline ：离线。
 
         :return: The agent_status of this Host.
         :rtype: str
@@ -384,7 +385,7 @@ class Host:
     def agent_status(self, agent_status):
         """Sets the agent_status of this Host.
 
-        客户端状态, 未注册：not_register; 在线：online; 离线：offline; 所有状态：all;
+        Agent状态，包含如下3种。   - uninstall ：未注册。   - online ：在线。   - offline ：离线。
 
         :param agent_status: The agent_status of this Host.
         :type: str
@@ -395,7 +396,7 @@ class Host:
     def version(self):
         """Gets the version of this Host.
 
-        云主机开通的版本,hss.version.null：无； hss.version.basic：基础班；hss.version.enterprise：企业版；hss.version.premium：旗舰版；hss.version.wtp：网页防篡改版
+        主机开通的版本，包含如下5种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
 
         :return: The version of this Host.
         :rtype: str
@@ -406,7 +407,7 @@ class Host:
     def version(self, version):
         """Sets the version of this Host.
 
-        云主机开通的版本,hss.version.null：无； hss.version.basic：基础班；hss.version.enterprise：企业版；hss.version.premium：旗舰版；hss.version.wtp：网页防篡改版
+        主机开通的版本，包含如下5种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
 
         :param version: The version of this Host.
         :type: str
@@ -417,7 +418,7 @@ class Host:
     def protect_status(self):
         """Gets the protect_status of this Host.
 
-        防护状态, opened：开启；opened：关闭
+        防护状态，包含如下2种。 - closed ：关闭。 - opened ：开启。
 
         :return: The protect_status of this Host.
         :rtype: str
@@ -428,7 +429,7 @@ class Host:
     def protect_status(self, protect_status):
         """Sets the protect_status of this Host.
 
-        防护状态, opened：开启；opened：关闭
+        防护状态，包含如下2种。 - closed ：关闭。 - opened ：开启。
 
         :param protect_status: The protect_status of this Host.
         :type: str
@@ -505,7 +506,7 @@ class Host:
     def detect_result(self):
         """Gets the detect_result of this Host.
 
-        云主机安全检测结果：undetect：未检测；clean：无风险；risk：有风险
+        云主机安全检测结果，包含如下3种。 - undetect ：未检测。 - clean ：无风险。 - risk ：有风险。
 
         :return: The detect_result of this Host.
         :rtype: str
@@ -516,7 +517,7 @@ class Host:
     def detect_result(self, detect_result):
         """Sets the detect_result of this Host.
 
-        云主机安全检测结果：undetect：未检测；clean：无风险；risk：有风险
+        云主机安全检测结果，包含如下3种。 - undetect ：未检测。 - clean ：无风险。 - risk ：有风险。
 
         :param detect_result: The detect_result of this Host.
         :type: str
@@ -615,7 +616,7 @@ class Host:
     def charging_mode(self):
         """Gets the charging_mode of this Host.
 
-        计费模式：packet_cycle：包年包月；on_demand：按需付费
+        收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
 
         :return: The charging_mode of this Host.
         :rtype: str
@@ -626,7 +627,7 @@ class Host:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this Host.
 
-        计费模式：packet_cycle：包年包月；on_demand：按需付费
+        收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
 
         :param charging_mode: The charging_mode of this Host.
         :type: str
@@ -684,7 +685,7 @@ class Host:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

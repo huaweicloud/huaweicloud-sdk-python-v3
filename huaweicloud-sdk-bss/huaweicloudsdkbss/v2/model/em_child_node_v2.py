@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class EmChildNodeV2:
@@ -80,7 +81,7 @@ class EmChildNodeV2:
     def id(self):
         """Gets the id of this EmChildNodeV2.
 
-        节点ID。
+        节点ID（即组织单元的Party ID）。
 
         :return: The id of this EmChildNodeV2.
         :rtype: str
@@ -91,7 +92,7 @@ class EmChildNodeV2:
     def id(self, id):
         """Sets the id of this EmChildNodeV2.
 
-        节点ID。
+        节点ID（即组织单元的Party ID）。
 
         :param id: The id of this EmChildNodeV2.
         :type: str
@@ -171,7 +172,7 @@ class EmChildNodeV2:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

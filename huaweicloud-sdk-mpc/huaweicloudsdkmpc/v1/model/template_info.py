@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class TemplateInfo:
@@ -22,32 +23,27 @@ class TemplateInfo:
 
     openapi_types = {
         'template_id': 'int',
-        'template': 'QueryTransTemplate',
-        'error': 'XCodeError'
+        'template': 'QueryTransTemplate'
     }
 
     attribute_map = {
         'template_id': 'template_id',
-        'template': 'template',
-        'error': 'error'
+        'template': 'template'
     }
 
-    def __init__(self, template_id=None, template=None, error=None):
+    def __init__(self, template_id=None, template=None):
         """TemplateInfo - a model defined in huaweicloud sdk"""
         
         
 
         self._template_id = None
         self._template = None
-        self._error = None
         self.discriminator = None
 
         if template_id is not None:
             self.template_id = template_id
         if template is not None:
             self.template = template
-        if error is not None:
-            self.error = error
 
     @property
     def template_id(self):
@@ -91,26 +87,6 @@ class TemplateInfo:
         """
         self._template = template
 
-    @property
-    def error(self):
-        """Gets the error of this TemplateInfo.
-
-
-        :return: The error of this TemplateInfo.
-        :rtype: XCodeError
-        """
-        return self._error
-
-    @error.setter
-    def error(self, error):
-        """Sets the error of this TemplateInfo.
-
-
-        :param error: The error of this TemplateInfo.
-        :type: XCodeError
-        """
-        self._error = error
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -140,7 +116,7 @@ class TemplateInfo:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

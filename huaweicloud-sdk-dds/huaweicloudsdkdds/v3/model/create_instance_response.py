@@ -5,6 +5,7 @@ import six
 
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreateInstanceResponse(SdkResponse):
@@ -31,6 +32,7 @@ class CreateInstanceResponse(SdkResponse):
         'vpc_id': 'str',
         'subnet_id': 'str',
         'security_group_id': 'str',
+        'port': 'int',
         'disk_encryption_id': 'str',
         'mode': 'str',
         'flavor': 'list[CreateInstanceFlavorOption]',
@@ -52,6 +54,7 @@ class CreateInstanceResponse(SdkResponse):
         'vpc_id': 'vpc_id',
         'subnet_id': 'subnet_id',
         'security_group_id': 'security_group_id',
+        'port': 'port',
         'disk_encryption_id': 'disk_encryption_id',
         'mode': 'mode',
         'flavor': 'flavor',
@@ -62,7 +65,7 @@ class CreateInstanceResponse(SdkResponse):
         'job_id': 'job_id'
     }
 
-    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, job_id=None):
+    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, port=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, job_id=None):
         """CreateInstanceResponse - a model defined in huaweicloud sdk"""
         
         super(CreateInstanceResponse, self).__init__()
@@ -77,6 +80,7 @@ class CreateInstanceResponse(SdkResponse):
         self._vpc_id = None
         self._subnet_id = None
         self._security_group_id = None
+        self._port = None
         self._disk_encryption_id = None
         self._mode = None
         self._flavor = None
@@ -107,6 +111,8 @@ class CreateInstanceResponse(SdkResponse):
             self.subnet_id = subnet_id
         if security_group_id is not None:
             self.security_group_id = security_group_id
+        if port is not None:
+            self.port = port
         if disk_encryption_id is not None:
             self.disk_encryption_id = disk_encryption_id
         if mode is not None:
@@ -343,6 +349,28 @@ class CreateInstanceResponse(SdkResponse):
         self._security_group_id = security_group_id
 
     @property
+    def port(self):
+        """Gets the port of this CreateInstanceResponse.
+
+        数据库访问端口。
+
+        :return: The port of this CreateInstanceResponse.
+        :rtype: int
+        """
+        return self._port
+
+    @port.setter
+    def port(self, port):
+        """Sets the port of this CreateInstanceResponse.
+
+        数据库访问端口。
+
+        :param port: The port of this CreateInstanceResponse.
+        :type: int
+        """
+        self._port = port
+
+    @property
     def disk_encryption_id(self):
         """Gets the disk_encryption_id of this CreateInstanceResponse.
 
@@ -545,7 +573,7 @@ class CreateInstanceResponse(SdkResponse):
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

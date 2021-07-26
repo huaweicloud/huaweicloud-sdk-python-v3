@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class QueryCustomerOnDemandResourcesReq:
@@ -285,7 +286,7 @@ class QueryCustomerOnDemandResourcesReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
 
-        精英服务商ID，如果需要查询精英服务商子客户的按需资源列表，必须携带该字段，否则只能查询自己的子客户按需资源。
+        精英服务商ID。获取方法请参见查询精英服务商列表。如果需要查询精英服务商子客户的按需资源列表，必须携带该字段，否则只能查询自己的子客户按需资源。
 
         :return: The indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
         :rtype: str
@@ -296,7 +297,7 @@ class QueryCustomerOnDemandResourcesReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
 
-        精英服务商ID，如果需要查询精英服务商子客户的按需资源列表，必须携带该字段，否则只能查询自己的子客户按需资源。
+        精英服务商ID。获取方法请参见查询精英服务商列表。如果需要查询精英服务商子客户的按需资源列表，必须携带该字段，否则只能查询自己的子客户按需资源。
 
         :param indirect_partner_id: The indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
         :type: str
@@ -332,7 +333,7 @@ class QueryCustomerOnDemandResourcesReq:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

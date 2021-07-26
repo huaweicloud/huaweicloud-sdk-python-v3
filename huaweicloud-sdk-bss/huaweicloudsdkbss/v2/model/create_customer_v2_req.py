@@ -5,6 +5,7 @@ import six
 
 
 
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CreateCustomerV2Req:
@@ -262,7 +263,7 @@ class CreateCustomerV2Req:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this CreateCustomerV2Req.
 
-        精英服务商ID。
+        精英服务商ID。获取方法请参见查询精英服务商列表。
 
         :return: The indirect_partner_id of this CreateCustomerV2Req.
         :rtype: str
@@ -273,7 +274,7 @@ class CreateCustomerV2Req:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this CreateCustomerV2Req.
 
-        精英服务商ID。
+        精英服务商ID。获取方法请参见查询精英服务商列表。
 
         :param indirect_partner_id: The indirect_partner_id of this CreateCustomerV2Req.
         :type: str
@@ -331,7 +332,7 @@ class CreateCustomerV2Req:
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

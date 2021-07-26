@@ -5,6 +5,7 @@ import six
 
 
 from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ListWatermarkTemplateResponse(SdkResponse):
@@ -22,32 +23,27 @@ class ListWatermarkTemplateResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'templates': 'list[WatermarkTemplate]',
-        'error': 'XCodeError'
+        'templates': 'list[WatermarkTemplate]'
     }
 
     attribute_map = {
         'total': 'total',
-        'templates': 'templates',
-        'error': 'error'
+        'templates': 'templates'
     }
 
-    def __init__(self, total=None, templates=None, error=None):
+    def __init__(self, total=None, templates=None):
         """ListWatermarkTemplateResponse - a model defined in huaweicloud sdk"""
         
         super(ListWatermarkTemplateResponse, self).__init__()
 
         self._total = None
         self._templates = None
-        self._error = None
         self.discriminator = None
 
         if total is not None:
             self.total = total
         if templates is not None:
             self.templates = templates
-        if error is not None:
-            self.error = error
 
     @property
     def total(self):
@@ -93,26 +89,6 @@ class ListWatermarkTemplateResponse(SdkResponse):
         """
         self._templates = templates
 
-    @property
-    def error(self):
-        """Gets the error of this ListWatermarkTemplateResponse.
-
-
-        :return: The error of this ListWatermarkTemplateResponse.
-        :rtype: XCodeError
-        """
-        return self._error
-
-    @error.setter
-    def error(self, error):
-        """Sets the error of this ListWatermarkTemplateResponse.
-
-
-        :param error: The error of this ListWatermarkTemplateResponse.
-        :type: XCodeError
-        """
-        self._error = error
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -142,7 +118,7 @@ class ListWatermarkTemplateResponse(SdkResponse):
 
     def to_str(self):
         import simplejson as json
-        return json.dumps(self.to_dict())
+        return json.dumps(sanitize_for_serialization(self))
 
     def __repr__(self):
         """For `print` and `pprint`"""

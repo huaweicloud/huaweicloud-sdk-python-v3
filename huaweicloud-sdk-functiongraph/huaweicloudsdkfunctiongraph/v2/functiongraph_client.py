@@ -883,6 +883,67 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def enable_lts_logs(self, request):
+        """开通lts日志上报功能。
+
+        开通lts日志上报功能。
+
+        :param EnableLtsLogsRequest request
+        :return: EnableLtsLogsResponse
+        """
+        return self.enable_lts_logs_with_http_info(request)
+
+    def enable_lts_logs_with_http_info(self, request):
+        """开通lts日志上报功能。
+
+        开通lts日志上报功能。
+
+        :param EnableLtsLogsRequest request
+        :return: EnableLtsLogsResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/enable-lts-logs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='EnableLtsLogsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def export_function(self, request):
         """导出函数。
 
@@ -1982,6 +2043,69 @@ class FunctionGraphClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowFunctionConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_lts_log_details(self, request):
+        """获取指定函数的lts日志组日志流配置。
+
+        获取指定函数的lts日志组日志流配置。
+
+        :param ShowLtsLogDetailsRequest request
+        :return: ShowLtsLogDetailsResponse
+        """
+        return self.show_lts_log_details_with_http_info(request)
+
+    def show_lts_log_details_with_http_info(self, request):
+        """获取指定函数的lts日志组日志流配置。
+
+        获取指定函数的lts日志组日志流配置。
+
+        :param ShowLtsLogDetailsRequest request
+        :return: ShowLtsLogDetailsResponse
+        """
+
+        all_params = ['function_urn']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/lts-log-detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowLtsLogDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
