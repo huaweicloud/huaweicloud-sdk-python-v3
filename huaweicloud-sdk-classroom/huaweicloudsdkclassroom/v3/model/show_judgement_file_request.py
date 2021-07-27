@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateFirewallOption:
+class ShowJudgementFileRequest:
 
 
     """
@@ -22,71 +22,44 @@ class CreateFirewallOption:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
-        'description': 'str'
+        'file_id': 'str'
     }
 
     attribute_map = {
-        'name': 'name',
-        'description': 'description'
+        'file_id': 'file_id'
     }
 
-    def __init__(self, name=None, description=None):
-        """CreateFirewallOption - a model defined in huaweicloud sdk"""
+    def __init__(self, file_id=None):
+        """ShowJudgementFileRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._name = None
-        self._description = None
+        self._file_id = None
         self.discriminator = None
 
-        self.name = name
-        if description is not None:
-            self.description = description
+        self.file_id = file_id
 
     @property
-    def name(self):
-        """Gets the name of this CreateFirewallOption.
+    def file_id(self):
+        """Gets the file_id of this ShowJudgementFileRequest.
 
-        中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
+        文件id，可以从接口[ShowJudgementDetail](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=Classroom&api=ShowJudgementDetail)的响应中获取
 
-        :return: The name of this CreateFirewallOption.
+        :return: The file_id of this ShowJudgementFileRequest.
         :rtype: str
         """
-        return self._name
+        return self._file_id
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this CreateFirewallOption.
+    @file_id.setter
+    def file_id(self, file_id):
+        """Sets the file_id of this ShowJudgementFileRequest.
 
-        中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
+        文件id，可以从接口[ShowJudgementDetail](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=Classroom&api=ShowJudgementDetail)的响应中获取
 
-        :param name: The name of this CreateFirewallOption.
+        :param file_id: The file_id of this ShowJudgementFileRequest.
         :type: str
         """
-        self._name = name
-
-    @property
-    def description(self):
-        """Gets the description of this CreateFirewallOption.
-
-        网络ACL描述。  取值范围：0-64
-
-        :return: The description of this CreateFirewallOption.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this CreateFirewallOption.
-
-        网络ACL描述。  取值范围：0-64
-
-        :param description: The description of this CreateFirewallOption.
-        :type: str
-        """
-        self._description = description
+        self._file_id = file_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -125,7 +98,7 @@ class CreateFirewallOption:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateFirewallOption):
+        if not isinstance(other, ShowJudgementFileRequest):
             return False
 
         return self.__dict__ == other.__dict__

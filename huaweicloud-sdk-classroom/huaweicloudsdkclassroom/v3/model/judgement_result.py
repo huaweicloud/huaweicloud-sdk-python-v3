@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreatePublicIpOption:
+class JudgementResult:
 
 
     """
@@ -22,98 +22,96 @@ class CreatePublicIpOption:
     sensitive_list = []
 
     openapi_types = {
-        'site_id': 'str',
-        'ip_version': 'str',
-        'type': 'str'
+        'output': 'str',
+        'file_id': 'str',
+        'image_id': 'str'
     }
 
     attribute_map = {
-        'site_id': 'site_id',
-        'ip_version': 'ip_version',
-        'type': 'type'
+        'output': 'output',
+        'file_id': 'file_id',
+        'image_id': 'image_id'
     }
 
-    def __init__(self, site_id=None, ip_version=None, type=None):
-        """CreatePublicIpOption - a model defined in huaweicloud sdk"""
+    def __init__(self, output=None, file_id=None, image_id=None):
+        """JudgementResult - a model defined in huaweicloud sdk"""
         
         
 
-        self._site_id = None
-        self._ip_version = None
-        self._type = None
+        self._output = None
+        self._file_id = None
+        self._image_id = None
         self.discriminator = None
 
-        self.site_id = site_id
-        if ip_version is not None:
-            self.ip_version = ip_version
-        if type is not None:
-            self.type = type
+        self.output = output
+        self.file_id = file_id
+        self.image_id = image_id
 
     @property
-    def site_id(self):
-        """Gets the site_id of this CreatePublicIpOption.
+    def output(self):
+        """Gets the output of this JudgementResult.
 
-        边缘站点的ID。
+        标准类型输出结果
 
-        :return: The site_id of this CreatePublicIpOption.
+        :return: The output of this JudgementResult.
         :rtype: str
         """
-        return self._site_id
+        return self._output
 
-    @site_id.setter
-    def site_id(self, site_id):
-        """Sets the site_id of this CreatePublicIpOption.
+    @output.setter
+    def output(self, output):
+        """Sets the output of this JudgementResult.
 
-        边缘站点的ID。
+        标准类型输出结果
 
-        :param site_id: The site_id of this CreatePublicIpOption.
+        :param output: The output of this JudgementResult.
         :type: str
         """
-        self._site_id = site_id
+        self._output = output
 
     @property
-    def ip_version(self):
-        """Gets the ip_version of this CreatePublicIpOption.
+    def file_id(self):
+        """Gets the file_id of this JudgementResult.
 
-        弹性公网IP的版本。目前IEC服务只支持4，即ipv4。
+        文件形式输出的文件id，可根据文件id下载详情
 
-        :return: The ip_version of this CreatePublicIpOption.
+        :return: The file_id of this JudgementResult.
         :rtype: str
         """
-        return self._ip_version
+        return self._file_id
 
-    @ip_version.setter
-    def ip_version(self, ip_version):
-        """Sets the ip_version of this CreatePublicIpOption.
+    @file_id.setter
+    def file_id(self, file_id):
+        """Sets the file_id of this JudgementResult.
 
-        弹性公网IP的版本。目前IEC服务只支持4，即ipv4。
+        文件形式输出的文件id，可根据文件id下载详情
 
-        :param ip_version: The ip_version of this CreatePublicIpOption.
+        :param file_id: The file_id of this JudgementResult.
         :type: str
         """
-        self._ip_version = ip_version
+        self._file_id = file_id
 
     @property
-    def type(self):
-        """Gets the type of this CreatePublicIpOption.
+    def image_id(self):
+        """Gets the image_id of this JudgementResult.
 
-        线路ID。 不传时默认取当前站点第一条线路
+        图片形式输出的图片id，可根据图片id下载详情
 
-        :return: The type of this CreatePublicIpOption.
+        :return: The image_id of this JudgementResult.
         :rtype: str
         """
-        return self._type
+        return self._image_id
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this CreatePublicIpOption.
+    @image_id.setter
+    def image_id(self, image_id):
+        """Sets the image_id of this JudgementResult.
 
-        线路ID。 不传时默认取当前站点第一条线路
+        图片形式输出的图片id，可根据图片id下载详情
 
-        :param type: The type of this CreatePublicIpOption.
+        :param image_id: The image_id of this JudgementResult.
         :type: str
         """
-        self._type = type
+        self._image_id = image_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -152,7 +150,7 @@ class CreatePublicIpOption:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreatePublicIpOption):
+        if not isinstance(other, JudgementResult):
             return False
 
         return self.__dict__ == other.__dict__

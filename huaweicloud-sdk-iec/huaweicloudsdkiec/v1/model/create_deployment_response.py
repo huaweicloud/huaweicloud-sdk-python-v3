@@ -23,27 +23,32 @@ class CreateDeploymentResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
-        'locations': 'list[Location]'
+        'locations': 'list[Location]',
+        'order_id': 'str'
     }
 
     attribute_map = {
         'id': 'id',
-        'locations': 'locations'
+        'locations': 'locations',
+        'order_id': 'order_id'
     }
 
-    def __init__(self, id=None, locations=None):
+    def __init__(self, id=None, locations=None, order_id=None):
         """CreateDeploymentResponse - a model defined in huaweicloud sdk"""
         
         super(CreateDeploymentResponse, self).__init__()
 
         self._id = None
         self._locations = None
+        self._order_id = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if locations is not None:
             self.locations = locations
+        if order_id is not None:
+            self.order_id = order_id
 
     @property
     def id(self):
@@ -88,6 +93,28 @@ class CreateDeploymentResponse(SdkResponse):
         :type: list[Location]
         """
         self._locations = locations
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this CreateDeploymentResponse.
+
+        订单ID。 开通包年/包月资源时返回。
+
+        :return: The order_id of this CreateDeploymentResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this CreateDeploymentResponse.
+
+        订单ID。 开通包年/包月资源时返回。
+
+        :param order_id: The order_id of this CreateDeploymentResponse.
+        :type: str
+        """
+        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

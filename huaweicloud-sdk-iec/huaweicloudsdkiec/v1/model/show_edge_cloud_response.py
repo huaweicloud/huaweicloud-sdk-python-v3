@@ -22,206 +22,78 @@ class ShowEdgeCloudResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'coverage': 'CoverageResp',
-        'create_at': 'str',
-        'description': 'str',
-        'edge_regions': 'int',
-        'fail_reason': 'FailReason',
-        'failed_num': 'int',
         'id': 'str',
         'name': 'str',
         'stacks': 'list[Stack]',
-        'status': 'str',
+        'coverage': 'CoverageResp',
         'success_num': 'int',
+        'failed_num': 'int',
+        'status': 'str',
+        'fail_reason': 'FailReason',
+        'edge_regions': 'int',
+        'description': 'str',
+        'create_at': 'str',
         'update_at': 'str'
     }
 
     attribute_map = {
-        'coverage': 'coverage',
-        'create_at': 'create_at',
-        'description': 'description',
-        'edge_regions': 'edge_regions',
-        'fail_reason': 'fail_reason',
-        'failed_num': 'failed_num',
         'id': 'id',
         'name': 'name',
         'stacks': 'stacks',
-        'status': 'status',
+        'coverage': 'coverage',
         'success_num': 'success_num',
+        'failed_num': 'failed_num',
+        'status': 'status',
+        'fail_reason': 'fail_reason',
+        'edge_regions': 'edge_regions',
+        'description': 'description',
+        'create_at': 'create_at',
         'update_at': 'update_at'
     }
 
-    def __init__(self, coverage=None, create_at=None, description=None, edge_regions=None, fail_reason=None, failed_num=None, id=None, name=None, stacks=None, status=None, success_num=None, update_at=None):
+    def __init__(self, id=None, name=None, stacks=None, coverage=None, success_num=None, failed_num=None, status=None, fail_reason=None, edge_regions=None, description=None, create_at=None, update_at=None):
         """ShowEdgeCloudResponse - a model defined in huaweicloud sdk"""
         
         super(ShowEdgeCloudResponse, self).__init__()
 
-        self._coverage = None
-        self._create_at = None
-        self._description = None
-        self._edge_regions = None
-        self._fail_reason = None
-        self._failed_num = None
         self._id = None
         self._name = None
         self._stacks = None
-        self._status = None
+        self._coverage = None
         self._success_num = None
+        self._failed_num = None
+        self._status = None
+        self._fail_reason = None
+        self._edge_regions = None
+        self._description = None
+        self._create_at = None
         self._update_at = None
         self.discriminator = None
 
-        if coverage is not None:
-            self.coverage = coverage
-        if create_at is not None:
-            self.create_at = create_at
-        if description is not None:
-            self.description = description
-        if edge_regions is not None:
-            self.edge_regions = edge_regions
-        if fail_reason is not None:
-            self.fail_reason = fail_reason
-        if failed_num is not None:
-            self.failed_num = failed_num
         if id is not None:
             self.id = id
         if name is not None:
             self.name = name
         if stacks is not None:
             self.stacks = stacks
-        if status is not None:
-            self.status = status
+        if coverage is not None:
+            self.coverage = coverage
         if success_num is not None:
             self.success_num = success_num
+        if failed_num is not None:
+            self.failed_num = failed_num
+        if status is not None:
+            self.status = status
+        if fail_reason is not None:
+            self.fail_reason = fail_reason
+        if edge_regions is not None:
+            self.edge_regions = edge_regions
+        if description is not None:
+            self.description = description
+        if create_at is not None:
+            self.create_at = create_at
         if update_at is not None:
             self.update_at = update_at
-
-    @property
-    def coverage(self):
-        """Gets the coverage of this ShowEdgeCloudResponse.
-
-
-        :return: The coverage of this ShowEdgeCloudResponse.
-        :rtype: CoverageResp
-        """
-        return self._coverage
-
-    @coverage.setter
-    def coverage(self, coverage):
-        """Sets the coverage of this ShowEdgeCloudResponse.
-
-
-        :param coverage: The coverage of this ShowEdgeCloudResponse.
-        :type: CoverageResp
-        """
-        self._coverage = coverage
-
-    @property
-    def create_at(self):
-        """Gets the create_at of this ShowEdgeCloudResponse.
-
-        创建时间。
-
-        :return: The create_at of this ShowEdgeCloudResponse.
-        :rtype: str
-        """
-        return self._create_at
-
-    @create_at.setter
-    def create_at(self, create_at):
-        """Sets the create_at of this ShowEdgeCloudResponse.
-
-        创建时间。
-
-        :param create_at: The create_at of this ShowEdgeCloudResponse.
-        :type: str
-        """
-        self._create_at = create_at
-
-    @property
-    def description(self):
-        """Gets the description of this ShowEdgeCloudResponse.
-
-        描述。
-
-        :return: The description of this ShowEdgeCloudResponse.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this ShowEdgeCloudResponse.
-
-        描述。
-
-        :param description: The description of this ShowEdgeCloudResponse.
-        :type: str
-        """
-        self._description = description
-
-    @property
-    def edge_regions(self):
-        """Gets the edge_regions of this ShowEdgeCloudResponse.
-
-        边缘业务支持的边缘区域数目，等同于边缘业务下所有实例的区域数目总和
-
-        :return: The edge_regions of this ShowEdgeCloudResponse.
-        :rtype: int
-        """
-        return self._edge_regions
-
-    @edge_regions.setter
-    def edge_regions(self, edge_regions):
-        """Sets the edge_regions of this ShowEdgeCloudResponse.
-
-        边缘业务支持的边缘区域数目，等同于边缘业务下所有实例的区域数目总和
-
-        :param edge_regions: The edge_regions of this ShowEdgeCloudResponse.
-        :type: int
-        """
-        self._edge_regions = edge_regions
-
-    @property
-    def fail_reason(self):
-        """Gets the fail_reason of this ShowEdgeCloudResponse.
-
-
-        :return: The fail_reason of this ShowEdgeCloudResponse.
-        :rtype: FailReason
-        """
-        return self._fail_reason
-
-    @fail_reason.setter
-    def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ShowEdgeCloudResponse.
-
-
-        :param fail_reason: The fail_reason of this ShowEdgeCloudResponse.
-        :type: FailReason
-        """
-        self._fail_reason = fail_reason
-
-    @property
-    def failed_num(self):
-        """Gets the failed_num of this ShowEdgeCloudResponse.
-
-        边缘业务创建失败的虚拟机数量。
-
-        :return: The failed_num of this ShowEdgeCloudResponse.
-        :rtype: int
-        """
-        return self._failed_num
-
-    @failed_num.setter
-    def failed_num(self, failed_num):
-        """Sets the failed_num of this ShowEdgeCloudResponse.
-
-        边缘业务创建失败的虚拟机数量。
-
-        :param failed_num: The failed_num of this ShowEdgeCloudResponse.
-        :type: int
-        """
-        self._failed_num = failed_num
 
     @property
     def id(self):
@@ -290,26 +162,24 @@ class ShowEdgeCloudResponse(SdkResponse):
         self._stacks = stacks
 
     @property
-    def status(self):
-        """Gets the status of this ShowEdgeCloudResponse.
+    def coverage(self):
+        """Gets the coverage of this ShowEdgeCloudResponse.
 
-        边缘业务状态。
 
-        :return: The status of this ShowEdgeCloudResponse.
-        :rtype: str
+        :return: The coverage of this ShowEdgeCloudResponse.
+        :rtype: CoverageResp
         """
-        return self._status
+        return self._coverage
 
-    @status.setter
-    def status(self, status):
-        """Sets the status of this ShowEdgeCloudResponse.
+    @coverage.setter
+    def coverage(self, coverage):
+        """Sets the coverage of this ShowEdgeCloudResponse.
 
-        边缘业务状态。
 
-        :param status: The status of this ShowEdgeCloudResponse.
-        :type: str
+        :param coverage: The coverage of this ShowEdgeCloudResponse.
+        :type: CoverageResp
         """
-        self._status = status
+        self._coverage = coverage
 
     @property
     def success_num(self):
@@ -332,6 +202,136 @@ class ShowEdgeCloudResponse(SdkResponse):
         :type: int
         """
         self._success_num = success_num
+
+    @property
+    def failed_num(self):
+        """Gets the failed_num of this ShowEdgeCloudResponse.
+
+        边缘业务创建失败的虚拟机数量。
+
+        :return: The failed_num of this ShowEdgeCloudResponse.
+        :rtype: int
+        """
+        return self._failed_num
+
+    @failed_num.setter
+    def failed_num(self, failed_num):
+        """Sets the failed_num of this ShowEdgeCloudResponse.
+
+        边缘业务创建失败的虚拟机数量。
+
+        :param failed_num: The failed_num of this ShowEdgeCloudResponse.
+        :type: int
+        """
+        self._failed_num = failed_num
+
+    @property
+    def status(self):
+        """Gets the status of this ShowEdgeCloudResponse.
+
+        边缘业务状态。
+
+        :return: The status of this ShowEdgeCloudResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ShowEdgeCloudResponse.
+
+        边缘业务状态。
+
+        :param status: The status of this ShowEdgeCloudResponse.
+        :type: str
+        """
+        self._status = status
+
+    @property
+    def fail_reason(self):
+        """Gets the fail_reason of this ShowEdgeCloudResponse.
+
+
+        :return: The fail_reason of this ShowEdgeCloudResponse.
+        :rtype: FailReason
+        """
+        return self._fail_reason
+
+    @fail_reason.setter
+    def fail_reason(self, fail_reason):
+        """Sets the fail_reason of this ShowEdgeCloudResponse.
+
+
+        :param fail_reason: The fail_reason of this ShowEdgeCloudResponse.
+        :type: FailReason
+        """
+        self._fail_reason = fail_reason
+
+    @property
+    def edge_regions(self):
+        """Gets the edge_regions of this ShowEdgeCloudResponse.
+
+        边缘业务支持的边缘区域数目，等同于边缘业务下所有实例的区域数目总和
+
+        :return: The edge_regions of this ShowEdgeCloudResponse.
+        :rtype: int
+        """
+        return self._edge_regions
+
+    @edge_regions.setter
+    def edge_regions(self, edge_regions):
+        """Sets the edge_regions of this ShowEdgeCloudResponse.
+
+        边缘业务支持的边缘区域数目，等同于边缘业务下所有实例的区域数目总和
+
+        :param edge_regions: The edge_regions of this ShowEdgeCloudResponse.
+        :type: int
+        """
+        self._edge_regions = edge_regions
+
+    @property
+    def description(self):
+        """Gets the description of this ShowEdgeCloudResponse.
+
+        描述。
+
+        :return: The description of this ShowEdgeCloudResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ShowEdgeCloudResponse.
+
+        描述。
+
+        :param description: The description of this ShowEdgeCloudResponse.
+        :type: str
+        """
+        self._description = description
+
+    @property
+    def create_at(self):
+        """Gets the create_at of this ShowEdgeCloudResponse.
+
+        创建时间。
+
+        :return: The create_at of this ShowEdgeCloudResponse.
+        :rtype: str
+        """
+        return self._create_at
+
+    @create_at.setter
+    def create_at(self, create_at):
+        """Sets the create_at of this ShowEdgeCloudResponse.
+
+        创建时间。
+
+        :param create_at: The create_at of this ShowEdgeCloudResponse.
+        :type: str
+        """
+        self._create_at = create_at
 
     @property
     def update_at(self):

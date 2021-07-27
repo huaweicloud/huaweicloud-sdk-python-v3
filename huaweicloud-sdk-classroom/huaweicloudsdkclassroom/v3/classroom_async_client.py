@@ -48,6 +48,195 @@ class ClassroomAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def apply_judgement_async(self, request):
+        """下发判题任务
+
+        下发判题任务，根据回调地址、代码来源、源代码文本、语言类型、超时时长、输出类型，触发后台代码编译运行和判题
+
+        :param ApplyJudgementRequest request
+        :return: ApplyJudgementResponse
+        """
+        return self.apply_judgement_with_http_info(request)
+
+    def apply_judgement_with_http_info(self, request):
+        """下发判题任务
+
+        下发判题任务，根据回调地址、代码来源、源代码文本、语言类型、超时时长、输出类型，触发后台代码编译运行和判题
+
+        :param ApplyJudgementRequest request
+        :return: ApplyJudgementResponse
+        """
+
+        all_params = ['apply_judgement_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/enablement/judgements',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ApplyJudgementResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_judgement_detail_async(self, request):
+        """获取判题结果详情
+
+        根据判题任务ID获取判题结果详情
+
+        :param ShowJudgementDetailRequest request
+        :return: ShowJudgementDetailResponse
+        """
+        return self.show_judgement_detail_with_http_info(request)
+
+    def show_judgement_detail_with_http_info(self, request):
+        """获取判题结果详情
+
+        根据判题任务ID获取判题结果详情
+
+        :param ShowJudgementDetailRequest request
+        :return: ShowJudgementDetailResponse
+        """
+
+        all_params = ['judgement_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'judgement_id' in local_var_params:
+            path_params['judgement_id'] = local_var_params['judgement_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/enablement/judgements/{judgement_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowJudgementDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_judgement_file_async(self, request):
+        """下载判题结果文件
+
+        根据文件id或图片id下载输出结果文件
+
+        :param ShowJudgementFileRequest request
+        :return: ShowJudgementFileResponse
+        """
+        return self.show_judgement_file_with_http_info(request)
+
+    def show_judgement_file_with_http_info(self, request):
+        """下载判题结果文件
+
+        根据文件id或图片id下载输出结果文件
+
+        :param ShowJudgementFileRequest request
+        :return: ShowJudgementFileResponse
+        """
+
+        all_params = ['file_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'file_id' in local_var_params:
+            path_params['file_id'] = local_var_params['file_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/enablement/judgement/files/{file_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowJudgementFileResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_classroom_members_async(self, request):
         """根据课堂ID获取指定课堂的课堂成员列表
 

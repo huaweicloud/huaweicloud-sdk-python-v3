@@ -23,6 +23,7 @@ class Resource:
 
     openapi_types = {
         'name': 'str',
+        'with_prefix': 'bool',
         'image_ref': 'str',
         'flavor_ref': 'str',
         'admin_pass': 'str',
@@ -38,6 +39,7 @@ class Resource:
 
     attribute_map = {
         'name': 'name',
+        'with_prefix': 'with_prefix',
         'image_ref': 'image_ref',
         'flavor_ref': 'flavor_ref',
         'admin_pass': 'admin_pass',
@@ -51,12 +53,13 @@ class Resource:
         'user_data': 'user_data'
     }
 
-    def __init__(self, name=None, image_ref=None, flavor_ref=None, admin_pass=None, key_name=None, net_config=None, bandwidth=None, root_volume=None, data_volumes=None, count=None, security_groups=None, user_data=None):
+    def __init__(self, name=None, with_prefix=None, image_ref=None, flavor_ref=None, admin_pass=None, key_name=None, net_config=None, bandwidth=None, root_volume=None, data_volumes=None, count=None, security_groups=None, user_data=None):
         """Resource - a model defined in huaweicloud sdk"""
         
         
 
         self._name = None
+        self._with_prefix = None
         self._image_ref = None
         self._flavor_ref = None
         self._admin_pass = None
@@ -71,6 +74,8 @@ class Resource:
         self.discriminator = None
 
         self.name = name
+        if with_prefix is not None:
+            self.with_prefix = with_prefix
         self.image_ref = image_ref
         self.flavor_ref = flavor_ref
         if admin_pass is not None:
@@ -111,6 +116,28 @@ class Resource:
         :type: str
         """
         self._name = name
+
+    @property
+    def with_prefix(self):
+        """Gets the with_prefix of this Resource.
+
+        是否自动添加名称前缀。 - with_prefix为false时不拼接IEC前缀 - with_prefix不传或者传true时拼自动IEC前缀  以name为iec为例： 不添加前缀时实例名称为：iec-0001 自动添加前缀实例名称为：IEC-ZS01-iec-0001 0001为创建边缘业务时根据实例个数自动添加的编号
+
+        :return: The with_prefix of this Resource.
+        :rtype: bool
+        """
+        return self._with_prefix
+
+    @with_prefix.setter
+    def with_prefix(self, with_prefix):
+        """Sets the with_prefix of this Resource.
+
+        是否自动添加名称前缀。 - with_prefix为false时不拼接IEC前缀 - with_prefix不传或者传true时拼自动IEC前缀  以name为iec为例： 不添加前缀时实例名称为：iec-0001 自动添加前缀实例名称为：IEC-ZS01-iec-0001 0001为创建边缘业务时根据实例个数自动添加的编号
+
+        :param with_prefix: The with_prefix of this Resource.
+        :type: bool
+        """
+        self._with_prefix = with_prefix
 
     @property
     def image_ref(self):

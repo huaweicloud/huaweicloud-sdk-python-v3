@@ -6,12 +6,16 @@ from __future__ import absolute_import
 from huaweicloudsdkclassroom.v3.classroom_client import ClassroomClient
 from huaweicloudsdkclassroom.v3.classroom_async_client import ClassroomAsyncClient
 # import models into sdk package
+from huaweicloudsdkclassroom.v3.model.apply_judgement_request import ApplyJudgementRequest
+from huaweicloudsdkclassroom.v3.model.apply_judgement_response import ApplyJudgementResponse
 from huaweicloudsdkclassroom.v3.model.classroom_card import ClassroomCard
 from huaweicloudsdkclassroom.v3.model.classroom_member import ClassroomMember
 from huaweicloudsdkclassroom.v3.model.exercise_card import ExerciseCard
 from huaweicloudsdkclassroom.v3.model.exercise_group import ExerciseGroup
 from huaweicloudsdkclassroom.v3.model.job_card import JobCard
 from huaweicloudsdkclassroom.v3.model.job_records import JobRecords
+from huaweicloudsdkclassroom.v3.model.judgement_result import JudgementResult
+from huaweicloudsdkclassroom.v3.model.judgement_task_request_body import JudgementTaskRequestBody
 from huaweicloudsdkclassroom.v3.model.list_classroom_member_jobs_request import ListClassroomMemberJobsRequest
 from huaweicloudsdkclassroom.v3.model.list_classroom_member_jobs_response import ListClassroomMemberJobsResponse
 from huaweicloudsdkclassroom.v3.model.list_classroom_members_request import ListClassroomMembersRequest
@@ -29,4 +33,8 @@ from huaweicloudsdkclassroom.v3.model.show_job_detail_request import ShowJobDeta
 from huaweicloudsdkclassroom.v3.model.show_job_detail_response import ShowJobDetailResponse
 from huaweicloudsdkclassroom.v3.model.show_job_exercises_request import ShowJobExercisesRequest
 from huaweicloudsdkclassroom.v3.model.show_job_exercises_response import ShowJobExercisesResponse
+from huaweicloudsdkclassroom.v3.model.show_judgement_detail_request import ShowJudgementDetailRequest
+from huaweicloudsdkclassroom.v3.model.show_judgement_detail_response import ShowJudgementDetailResponse
+from huaweicloudsdkclassroom.v3.model.show_judgement_file_request import ShowJudgementFileRequest
+from huaweicloudsdkclassroom.v3.model.show_judgement_file_response import ShowJudgementFileResponse
 

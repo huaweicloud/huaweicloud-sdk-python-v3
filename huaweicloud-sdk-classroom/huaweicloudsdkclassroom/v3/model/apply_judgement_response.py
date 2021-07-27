@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateFirewallOption:
+class ApplyJudgementResponse(SdkResponse):
 
 
     """
@@ -22,71 +22,45 @@ class CreateFirewallOption:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
-        'description': 'str'
+        'judgement_id': 'str'
     }
 
     attribute_map = {
-        'name': 'name',
-        'description': 'description'
+        'judgement_id': 'judgement_id'
     }
 
-    def __init__(self, name=None, description=None):
-        """CreateFirewallOption - a model defined in huaweicloud sdk"""
+    def __init__(self, judgement_id=None):
+        """ApplyJudgementResponse - a model defined in huaweicloud sdk"""
         
-        
+        super(ApplyJudgementResponse, self).__init__()
 
-        self._name = None
-        self._description = None
+        self._judgement_id = None
         self.discriminator = None
 
-        self.name = name
-        if description is not None:
-            self.description = description
+        if judgement_id is not None:
+            self.judgement_id = judgement_id
 
     @property
-    def name(self):
-        """Gets the name of this CreateFirewallOption.
+    def judgement_id(self):
+        """Gets the judgement_id of this ApplyJudgementResponse.
 
-        中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
+        判题任务ID
 
-        :return: The name of this CreateFirewallOption.
+        :return: The judgement_id of this ApplyJudgementResponse.
         :rtype: str
         """
-        return self._name
+        return self._judgement_id
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this CreateFirewallOption.
+    @judgement_id.setter
+    def judgement_id(self, judgement_id):
+        """Sets the judgement_id of this ApplyJudgementResponse.
 
-        中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
+        判题任务ID
 
-        :param name: The name of this CreateFirewallOption.
+        :param judgement_id: The judgement_id of this ApplyJudgementResponse.
         :type: str
         """
-        self._name = name
-
-    @property
-    def description(self):
-        """Gets the description of this CreateFirewallOption.
-
-        网络ACL描述。  取值范围：0-64
-
-        :return: The description of this CreateFirewallOption.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this CreateFirewallOption.
-
-        网络ACL描述。  取值范围：0-64
-
-        :param description: The description of this CreateFirewallOption.
-        :type: str
-        """
-        self._description = description
+        self._judgement_id = judgement_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -125,7 +99,7 @@ class CreateFirewallOption:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateFirewallOption):
+        if not isinstance(other, ApplyJudgementResponse):
             return False
 
         return self.__dict__ == other.__dict__

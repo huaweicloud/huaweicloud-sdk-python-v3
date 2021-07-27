@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateFirewallOption:
+class ShowJudgementFileResponse(SdkStreamResponse):
 
 
     """
@@ -22,71 +22,16 @@ class CreateFirewallOption:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
-        'description': 'str'
     }
 
     attribute_map = {
-        'name': 'name',
-        'description': 'description'
     }
 
-    def __init__(self, name=None, description=None):
-        """CreateFirewallOption - a model defined in huaweicloud sdk"""
+    def __init__(self,response):
+        """ShowJudgementFileResponse - a model defined in huaweicloud sdk"""
         
-        
-
-        self._name = None
-        self._description = None
+        super(ShowJudgementFileResponse, self).__init__(response)
         self.discriminator = None
-
-        self.name = name
-        if description is not None:
-            self.description = description
-
-    @property
-    def name(self):
-        """Gets the name of this CreateFirewallOption.
-
-        中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
-
-        :return: The name of this CreateFirewallOption.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this CreateFirewallOption.
-
-        中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
-
-        :param name: The name of this CreateFirewallOption.
-        :type: str
-        """
-        self._name = name
-
-    @property
-    def description(self):
-        """Gets the description of this CreateFirewallOption.
-
-        网络ACL描述。  取值范围：0-64
-
-        :return: The description of this CreateFirewallOption.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this CreateFirewallOption.
-
-        网络ACL描述。  取值范围：0-64
-
-        :param description: The description of this CreateFirewallOption.
-        :type: str
-        """
-        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -125,7 +70,7 @@ class CreateFirewallOption:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateFirewallOption):
+        if not isinstance(other, ShowJudgementFileResponse):
             return False
 
         return self.__dict__ == other.__dict__

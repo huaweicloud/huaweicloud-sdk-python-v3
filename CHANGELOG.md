@@ -1,3 +1,33 @@
+# 3.0.54 2021-07-27
+
+### HuaweiCloud SDK Classroom
+
+- _Features_
+    - Support the interfaces `ApplyJudgement`,`ShowJudgementDetail`,`ShowJudgementFile`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK Cloudtest
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Fix the issue of failing to call the service `Cloudtest` with the endpoint `cn-north-1`.
+- _Change_
+    - None
+
+### HuaweiCloud SDK IEC
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the response parameter `order_id` to the interface `CreateDeployment`.
+    - Add the response parameter `with_prefix` to the interface `ListDeployments`.
+
 # 3.0.53 2021-07-26
 
 ### HuaweiCloud SDK CDN

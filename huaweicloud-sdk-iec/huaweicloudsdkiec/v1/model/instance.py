@@ -300,7 +300,7 @@ class Instance:
     def updated(self):
         """Gets the updated of this Instance.
 
-        边缘实例修改时间。 UTC时间，格式：yyyy-mm-ddTss:ss:ssZ，例如：0001-01-01T00:00:00Z
+        边缘实例修改时间。 UTC时间，格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T03:21:39Z
 
         :return: The updated of this Instance.
         :rtype: str
@@ -311,7 +311,7 @@ class Instance:
     def updated(self, updated):
         """Sets the updated of this Instance.
 
-        边缘实例修改时间。 UTC时间，格式：yyyy-mm-ddTss:ss:ssZ，例如：0001-01-01T00:00:00Z
+        边缘实例修改时间。 UTC时间，格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T03:21:39Z
 
         :param updated: The updated of this Instance.
         :type: str
@@ -366,7 +366,7 @@ class Instance:
     def created(self):
         """Gets the created of this Instance.
 
-        边缘实例创建时间。 时间格式：yyyy-mm-ddTss:ss:ssZ，例如：0001-01-01T00:00:00Z
+        边缘实例创建时间。 时间格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T02:46:23Z
 
         :return: The created of this Instance.
         :rtype: str
@@ -377,7 +377,7 @@ class Instance:
     def created(self, created):
         """Sets the created of this Instance.
 
-        边缘实例创建时间。 时间格式：yyyy-mm-ddTss:ss:ssZ，例如：0001-01-01T00:00:00Z
+        边缘实例创建时间。 时间格式：yyyy-mm-ddTss:ss:ssZ，例如：2021-04-25T02:46:23Z
 
         :param created: The created of this Instance.
         :type: str

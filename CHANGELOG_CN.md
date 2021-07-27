@@ -1,3 +1,33 @@
+# 3.0.54 2021-07-27
+
+### HuaweiCloud SDK Classroom
+
+- _新增特性_
+    - 支持接口`ApplyJudgement`、`ShowJudgementDetail`、`ShowJudgementFile`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK Cloudtest
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 修复调用`北京一`地区的云测服务失败的问题
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK IEC
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`CreateDeployment`新增响应参数`order_id`
+    - 接口`ListDeployments`新增响应参数`with_prefix`
+
 # 3.0.53 2021-07-26
 
 ### HuaweiCloud SDK CDN

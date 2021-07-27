@@ -86,7 +86,7 @@ class UpdateSubnetOption:
     def dhcp_enable(self):
         """Gets the dhcp_enable of this UpdateSubnetOption.
 
-        子网是否开启dhcp功能  取值范围：true（开启），false（关闭）  约束：不填时默认为true。当设置为false时，会导致新创建的ECS无法获取IP地址，cloudinit无法注入帐号密码，请谨慎操作。
+        子网是否开启dhcp功能  取值范围：true（开启），false（关闭）  约束：不填时默认为true。当设置为false时，会导致新创建的实例无法获取IP地址，cloudinit无法注入帐号密码，请谨慎操作。
 
         :return: The dhcp_enable of this UpdateSubnetOption.
         :rtype: bool
@@ -97,7 +97,7 @@ class UpdateSubnetOption:
     def dhcp_enable(self, dhcp_enable):
         """Sets the dhcp_enable of this UpdateSubnetOption.
 
-        子网是否开启dhcp功能  取值范围：true（开启），false（关闭）  约束：不填时默认为true。当设置为false时，会导致新创建的ECS无法获取IP地址，cloudinit无法注入帐号密码，请谨慎操作。
+        子网是否开启dhcp功能  取值范围：true（开启），false（关闭）  约束：不填时默认为true。当设置为false时，会导致新创建的实例无法获取IP地址，cloudinit无法注入帐号密码，请谨慎操作。
 
         :param dhcp_enable: The dhcp_enable of this UpdateSubnetOption.
         :type: bool

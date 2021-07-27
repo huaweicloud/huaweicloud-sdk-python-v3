@@ -2316,7 +2316,7 @@ class IecClient(Client):
     def list_sites(self, request):
         """查询边缘站点列表
 
-        查询边缘站点列表。  - 边缘站点：靠近终端应用的位置，基于一个或多个运营商建立的一个城市级站点。边缘站点提供物理隔离的资源池，提供多元算力、存储和网络的能力。用户可以将业务灵活就近部署在边缘站点上，以降低网络时延和成本。 - 边缘区域：为依据边缘站点的物理位置划分的区域，一个边缘区域包含多个相靠近的边缘站点的集合。IEC当前提供城市级、省级和大区级三个分布层级的边缘区域。[了解更多](https://support.huaweicloud.com/usermanual-iec/iec_02_0302.html)
+        查询边缘站点列表。  - 边缘站点：靠近终端应用的位置，基于一个或多个运营商建立的一个城市级站点。边缘站点提供物理隔离的资源池，提供多元算力、存储和网络的能力。用户可以将业务灵活就近部署在边缘站点上，以降低网络时延和成本。 - 边缘区域：为依据边缘站点的物理位置划分的区域，一个边缘区域包含多个相靠近的边缘站点的集合。IEC当前提供城市级、省级和大区级三个分布层级的边缘区域。
 
         :param ListSitesRequest request
         :return: ListSitesResponse
@@ -2326,7 +2326,7 @@ class IecClient(Client):
     def list_sites_with_http_info(self, request):
         """查询边缘站点列表
 
-        查询边缘站点列表。  - 边缘站点：靠近终端应用的位置，基于一个或多个运营商建立的一个城市级站点。边缘站点提供物理隔离的资源池，提供多元算力、存储和网络的能力。用户可以将业务灵活就近部署在边缘站点上，以降低网络时延和成本。 - 边缘区域：为依据边缘站点的物理位置划分的区域，一个边缘区域包含多个相靠近的边缘站点的集合。IEC当前提供城市级、省级和大区级三个分布层级的边缘区域。[了解更多](https://support.huaweicloud.com/usermanual-iec/iec_02_0302.html)
+        查询边缘站点列表。  - 边缘站点：靠近终端应用的位置，基于一个或多个运营商建立的一个城市级站点。边缘站点提供物理隔离的资源池，提供多元算力、存储和网络的能力。用户可以将业务灵活就近部署在边缘站点上，以降低网络时延和成本。 - 边缘区域：为依据边缘站点的物理位置划分的区域，一个边缘区域包含多个相靠近的边缘站点的集合。IEC当前提供城市级、省级和大区级三个分布层级的边缘区域。
 
         :param ListSitesRequest request
         :return: ListSitesResponse
@@ -2909,7 +2909,7 @@ class IecClient(Client):
     def show_security_group(self, request):
         """查询安全组详情
 
-        根据安全组的ID,获取特定安全组的详细信息。
+        根据安全组的ID，获取特定安全组的详细信息。
 
         :param ShowSecurityGroupRequest request
         :return: ShowSecurityGroupResponse
@@ -2919,7 +2919,7 @@ class IecClient(Client):
     def show_security_group_with_http_info(self, request):
         """查询安全组详情
 
-        根据安全组的ID,获取特定安全组的详细信息。
+        根据安全组的ID，获取特定安全组的详细信息。
 
         :param ShowSecurityGroupRequest request
         :return: ShowSecurityGroupResponse
@@ -2972,7 +2972,7 @@ class IecClient(Client):
     def show_security_group_rule(self, request):
         """查询安全组规则详情
 
-        根据安全组规则的ID,获取安全组规则的详细信息。
+        根据安全组规则的ID，获取安全组规则的详细信息。
 
         :param ShowSecurityGroupRuleRequest request
         :return: ShowSecurityGroupRuleResponse
@@ -2982,7 +2982,7 @@ class IecClient(Client):
     def show_security_group_rule_with_http_info(self, request):
         """查询安全组规则详情
 
-        根据安全组规则的ID,获取安全组规则的详细信息。
+        根据安全组规则的ID，获取安全组规则的详细信息。
 
         :param ShowSecurityGroupRuleRequest request
         :return: ShowSecurityGroupRuleResponse
