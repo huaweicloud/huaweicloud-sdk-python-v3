@@ -22,28 +22,55 @@ class IdentityproviderOption:
     sensitive_list = []
 
     openapi_types = {
+        'sso_type': 'str',
         'description': 'str',
         'enabled': 'bool'
     }
 
     attribute_map = {
+        'sso_type': 'sso_type',
         'description': 'description',
         'enabled': 'enabled'
     }
 
-    def __init__(self, description=None, enabled=None):
+    def __init__(self, sso_type=None, description=None, enabled=None):
         """IdentityproviderOption - a model defined in huaweicloud sdk"""
         
         
 
+        self._sso_type = None
         self._description = None
         self._enabled = None
         self.discriminator = None
 
+        if sso_type is not None:
+            self.sso_type = sso_type
         if description is not None:
             self.description = description
         if enabled is not None:
             self.enabled = enabled
+
+    @property
+    def sso_type(self):
+        """Gets the sso_type of this IdentityproviderOption.
+
+        身份提供商类型。当前支持virtual_user_sso和iam_user_sso两种，缺省配置默认为virtual_user_sso类型。
+
+        :return: The sso_type of this IdentityproviderOption.
+        :rtype: str
+        """
+        return self._sso_type
+
+    @sso_type.setter
+    def sso_type(self, sso_type):
+        """Sets the sso_type of this IdentityproviderOption.
+
+        身份提供商类型。当前支持virtual_user_sso和iam_user_sso两种，缺省配置默认为virtual_user_sso类型。
+
+        :param sso_type: The sso_type of this IdentityproviderOption.
+        :type: str
+        """
+        self._sso_type = sso_type
 
     @property
     def description(self):
@@ -117,11 +144,16 @@ class IdentityproviderOption:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

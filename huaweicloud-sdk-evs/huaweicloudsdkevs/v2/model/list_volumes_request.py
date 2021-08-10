@@ -38,7 +38,8 @@ class ListVolumesRequest:
         'volume_type_id': 'str',
         'id': 'str',
         'ids': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'server_id': 'str'
     }
 
     attribute_map = {
@@ -58,10 +59,11 @@ class ListVolumesRequest:
         'volume_type_id': 'volume_type_id',
         'id': 'id',
         'ids': 'ids',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'server_id': 'server_id'
     }
 
-    def __init__(self, marker=None, name=None, limit=None, sort_key=None, offset=None, sort_dir=None, status=None, metadata=None, availability_zone=None, multiattach=None, service_type=None, dedicated_storage_id=None, dedicated_storage_name=None, volume_type_id=None, id=None, ids=None, enterprise_project_id=None):
+    def __init__(self, marker=None, name=None, limit=None, sort_key=None, offset=None, sort_dir=None, status=None, metadata=None, availability_zone=None, multiattach=None, service_type=None, dedicated_storage_id=None, dedicated_storage_name=None, volume_type_id=None, id=None, ids=None, enterprise_project_id=None, server_id=None):
         """ListVolumesRequest - a model defined in huaweicloud sdk"""
         
         
@@ -83,6 +85,7 @@ class ListVolumesRequest:
         self._id = None
         self._ids = None
         self._enterprise_project_id = None
+        self._server_id = None
         self.discriminator = None
 
         if marker is not None:
@@ -119,6 +122,8 @@ class ListVolumesRequest:
             self.ids = ids
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if server_id is not None:
+            self.server_id = server_id
 
     @property
     def marker(self):
@@ -494,6 +499,28 @@ class ListVolumesRequest:
         """
         self._enterprise_project_id = enterprise_project_id
 
+    @property
+    def server_id(self):
+        """Gets the server_id of this ListVolumesRequest.
+
+        云服务器id
+
+        :return: The server_id of this ListVolumesRequest.
+        :rtype: str
+        """
+        return self._server_id
+
+    @server_id.setter
+    def server_id(self, server_id):
+        """Sets the server_id of this ListVolumesRequest.
+
+        云服务器id
+
+        :param server_id: The server_id of this ListVolumesRequest.
+        :type: str
+        """
+        self._server_id = server_id
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -522,11 +549,16 @@ class ListVolumesRequest:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

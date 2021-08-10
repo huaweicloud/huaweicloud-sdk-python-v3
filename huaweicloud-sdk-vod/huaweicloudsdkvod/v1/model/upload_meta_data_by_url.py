@@ -24,6 +24,7 @@ class UploadMetaDataByUrl:
     openapi_types = {
         'video_type': 'str',
         'title': 'str',
+        'url': 'str',
         'description': 'str',
         'category_id': 'int',
         'tags': 'str',
@@ -33,13 +34,13 @@ class UploadMetaDataByUrl:
         'auto_preheat': 'int',
         'thumbnail': 'Thumbnail',
         'review': 'Review',
-        'workflow_name': 'str',
-        'url': 'str'
+        'workflow_name': 'str'
     }
 
     attribute_map = {
         'video_type': 'video_type',
         'title': 'title',
+        'url': 'url',
         'description': 'description',
         'category_id': 'category_id',
         'tags': 'tags',
@@ -49,17 +50,17 @@ class UploadMetaDataByUrl:
         'auto_preheat': 'auto_preheat',
         'thumbnail': 'thumbnail',
         'review': 'review',
-        'workflow_name': 'workflow_name',
-        'url': 'url'
+        'workflow_name': 'workflow_name'
     }
 
-    def __init__(self, video_type=None, title=None, description=None, category_id=None, tags=None, auto_publish=None, template_group_name=None, auto_encrypt=None, auto_preheat=None, thumbnail=None, review=None, workflow_name=None, url=None):
+    def __init__(self, video_type=None, title=None, url=None, description=None, category_id=None, tags=None, auto_publish=None, template_group_name=None, auto_encrypt=None, auto_preheat=None, thumbnail=None, review=None, workflow_name=None):
         """UploadMetaDataByUrl - a model defined in huaweicloud sdk"""
         
         
 
         self._video_type = None
         self._title = None
+        self._url = None
         self._description = None
         self._category_id = None
         self._tags = None
@@ -70,11 +71,11 @@ class UploadMetaDataByUrl:
         self._thumbnail = None
         self._review = None
         self._workflow_name = None
-        self._url = None
         self.discriminator = None
 
         self.video_type = video_type
         self.title = title
+        self.url = url
         if description is not None:
             self.description = description
         if category_id is not None:
@@ -95,13 +96,12 @@ class UploadMetaDataByUrl:
             self.review = review
         if workflow_name is not None:
             self.workflow_name = workflow_name
-        self.url = url
 
     @property
     def video_type(self):
         """Gets the video_type of this UploadMetaDataByUrl.
 
-        上传音视频文件的格式。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV、HLS - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2  若上传格式为音频文件，则不支持转码、添加水印和字幕。
+        上传音视频文件的格式。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2  若上传格式为音频文件，则不支持转码、添加水印和字幕。
 
         :return: The video_type of this UploadMetaDataByUrl.
         :rtype: str
@@ -112,7 +112,7 @@ class UploadMetaDataByUrl:
     def video_type(self, video_type):
         """Sets the video_type of this UploadMetaDataByUrl.
 
-        上传音视频文件的格式。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV、HLS - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2  若上传格式为音频文件，则不支持转码、添加水印和字幕。
+        上传音视频文件的格式。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2  若上传格式为音频文件，则不支持转码、添加水印和字幕。
 
         :param video_type: The video_type of this UploadMetaDataByUrl.
         :type: str
@@ -140,6 +140,28 @@ class UploadMetaDataByUrl:
         :type: str
         """
         self._title = title
+
+    @property
+    def url(self):
+        """Gets the url of this UploadMetaDataByUrl.
+
+        音视频源文件URL。   > URL必须以扩展名结尾，暂只支持http和https协议。
+
+        :return: The url of this UploadMetaDataByUrl.
+        :rtype: str
+        """
+        return self._url
+
+    @url.setter
+    def url(self, url):
+        """Sets the url of this UploadMetaDataByUrl.
+
+        音视频源文件URL。   > URL必须以扩展名结尾，暂只支持http和https协议。
+
+        :param url: The url of this UploadMetaDataByUrl.
+        :type: str
+        """
+        self._url = url
 
     @property
     def description(self):
@@ -233,7 +255,7 @@ class UploadMetaDataByUrl:
     def template_group_name(self):
         """Gets the template_group_name of this UploadMetaDataByUrl.
 
-        转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。  > 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
+        转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。  >若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
 
         :return: The template_group_name of this UploadMetaDataByUrl.
         :rtype: str
@@ -244,7 +266,7 @@ class UploadMetaDataByUrl:
     def template_group_name(self, template_group_name):
         """Sets the template_group_name of this UploadMetaDataByUrl.
 
-        转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。  > 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
+        转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。  >若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
 
         :param template_group_name: The template_group_name of this UploadMetaDataByUrl.
         :type: str
@@ -255,7 +277,7 @@ class UploadMetaDataByUrl:
     def auto_encrypt(self):
         """Gets the auto_encrypt of this UploadMetaDataByUrl.
 
-        是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  若设置为需要加密，则必须配置转码模板，且转码的输出格式是HLS。
+        是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。若设置为需要加密，则必须配置转码模板，且转码的输出格式是HLS。
 
         :return: The auto_encrypt of this UploadMetaDataByUrl.
         :rtype: int
@@ -266,7 +288,7 @@ class UploadMetaDataByUrl:
     def auto_encrypt(self, auto_encrypt):
         """Sets the auto_encrypt of this UploadMetaDataByUrl.
 
-        是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  若设置为需要加密，则必须配置转码模板，且转码的输出格式是HLS。
+        是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。若设置为需要加密，则必须配置转码模板，且转码的输出格式是HLS。
 
         :param auto_encrypt: The auto_encrypt of this UploadMetaDataByUrl.
         :type: int
@@ -357,28 +379,6 @@ class UploadMetaDataByUrl:
         """
         self._workflow_name = workflow_name
 
-    @property
-    def url(self):
-        """Gets the url of this UploadMetaDataByUrl.
-
-        音视频源文件URL。  > URL必须以扩展名结尾，暂只支持http和https协议。
-
-        :return: The url of this UploadMetaDataByUrl.
-        :rtype: str
-        """
-        return self._url
-
-    @url.setter
-    def url(self, url):
-        """Sets the url of this UploadMetaDataByUrl.
-
-        音视频源文件URL。  > URL必须以扩展名结尾，暂只支持http和https协议。
-
-        :param url: The url of this UploadMetaDataByUrl.
-        :type: str
-        """
-        self._url = url
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -407,11 +407,16 @@ class UploadMetaDataByUrl:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

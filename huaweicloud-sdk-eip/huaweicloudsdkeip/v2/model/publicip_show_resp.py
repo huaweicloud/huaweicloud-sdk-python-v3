@@ -38,7 +38,7 @@ class PublicipShowResp:
         'type': 'str',
         'public_ipv6_address': 'str',
         'ip_version': 'int',
-        'publicip_border_group': 'str'
+        'public_border_group': 'str'
     }
 
     attribute_map = {
@@ -58,10 +58,10 @@ class PublicipShowResp:
         'type': 'type',
         'public_ipv6_address': 'public_ipv6_address',
         'ip_version': 'ip_version',
-        'publicip_border_group': 'publicip_border_group'
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, publicip_border_group=None):
+    def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, public_border_group=None):
         """PublicipShowResp - a model defined in huaweicloud sdk"""
         
         
@@ -82,7 +82,7 @@ class PublicipShowResp:
         self._type = None
         self._public_ipv6_address = None
         self._ip_version = None
-        self._publicip_border_group = None
+        self._public_border_group = None
         self.discriminator = None
 
         if bandwidth_id is not None:
@@ -117,8 +117,8 @@ class PublicipShowResp:
             self.public_ipv6_address = public_ipv6_address
         if ip_version is not None:
             self.ip_version = ip_version
-        if publicip_border_group is not None:
-            self.publicip_border_group = publicip_border_group
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
 
     @property
     def bandwidth_id(self):
@@ -471,26 +471,26 @@ class PublicipShowResp:
         self._ip_version = ip_version
 
     @property
-    def publicip_border_group(self):
-        """Gets the publicip_border_group of this PublicipShowResp.
+    def public_border_group(self):
+        """Gets the public_border_group of this PublicipShowResp.
 
         功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域才会返回此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：publicip只能绑定该字段相同的资源
 
-        :return: The publicip_border_group of this PublicipShowResp.
+        :return: The public_border_group of this PublicipShowResp.
         :rtype: str
         """
-        return self._publicip_border_group
+        return self._public_border_group
 
-    @publicip_border_group.setter
-    def publicip_border_group(self, publicip_border_group):
-        """Sets the publicip_border_group of this PublicipShowResp.
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this PublicipShowResp.
 
         功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域才会返回此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：publicip只能绑定该字段相同的资源
 
-        :param publicip_border_group: The publicip_border_group of this PublicipShowResp.
+        :param public_border_group: The public_border_group of this PublicipShowResp.
         :type: str
         """
-        self._publicip_border_group = publicip_border_group
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -520,11 +520,16 @@ class PublicipShowResp:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

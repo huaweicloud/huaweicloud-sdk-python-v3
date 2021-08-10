@@ -1,0 +1,17 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import models into model package
+from huaweicloudsdkimage.v2.model.celebrity_recognition_req import CelebrityRecognitionReq
+from huaweicloudsdkimage.v2.model.celebrity_recognition_result_body import CelebrityRecognitionResultBody
+from huaweicloudsdkimage.v2.model.image_tagging_instance import ImageTaggingInstance
+from huaweicloudsdkimage.v2.model.image_tagging_item_body import ImageTaggingItemBody
+from huaweicloudsdkimage.v2.model.image_tagging_item_body_i18n_tag import ImageTaggingItemBodyI18nTag
+from huaweicloudsdkimage.v2.model.image_tagging_item_body_i18n_type import ImageTaggingItemBodyI18nType
+from huaweicloudsdkimage.v2.model.image_tagging_req import ImageTaggingReq
+from huaweicloudsdkimage.v2.model.image_tagging_response_result import ImageTaggingResponseResult
+from huaweicloudsdkimage.v2.model.run_celebrity_recognition_request import RunCelebrityRecognitionRequest
+from huaweicloudsdkimage.v2.model.run_celebrity_recognition_response import RunCelebrityRecognitionResponse
+from huaweicloudsdkimage.v2.model.run_image_tagging_request import RunImageTaggingRequest
+from huaweicloudsdkimage.v2.model.run_image_tagging_response import RunImageTaggingResponse

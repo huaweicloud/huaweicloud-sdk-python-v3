@@ -25,17 +25,19 @@ class UpdateInstanceTopicReqTopics:
         'id': 'str',
         'retention_time': 'int',
         'sync_replication': 'bool',
-        'sync_message_flush': 'bool'
+        'sync_message_flush': 'bool',
+        'new_partition_numbers': 'int'
     }
 
     attribute_map = {
         'id': 'id',
         'retention_time': 'retention_time',
         'sync_replication': 'sync_replication',
-        'sync_message_flush': 'sync_message_flush'
+        'sync_message_flush': 'sync_message_flush',
+        'new_partition_numbers': 'new_partition_numbers'
     }
 
-    def __init__(self, id=None, retention_time=None, sync_replication=None, sync_message_flush=None):
+    def __init__(self, id=None, retention_time=None, sync_replication=None, sync_message_flush=None, new_partition_numbers=None):
         """UpdateInstanceTopicReqTopics - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +46,7 @@ class UpdateInstanceTopicReqTopics:
         self._retention_time = None
         self._sync_replication = None
         self._sync_message_flush = None
+        self._new_partition_numbers = None
         self.discriminator = None
 
         self.id = id
@@ -53,6 +56,8 @@ class UpdateInstanceTopicReqTopics:
             self.sync_replication = sync_replication
         if sync_message_flush is not None:
             self.sync_message_flush = sync_message_flush
+        if new_partition_numbers is not None:
+            self.new_partition_numbers = new_partition_numbers
 
     @property
     def id(self):
@@ -142,6 +147,28 @@ class UpdateInstanceTopicReqTopics:
         """
         self._sync_message_flush = sync_message_flush
 
+    @property
+    def new_partition_numbers(self):
+        """Gets the new_partition_numbers of this UpdateInstanceTopicReqTopics.
+
+        分区数。
+
+        :return: The new_partition_numbers of this UpdateInstanceTopicReqTopics.
+        :rtype: int
+        """
+        return self._new_partition_numbers
+
+    @new_partition_numbers.setter
+    def new_partition_numbers(self, new_partition_numbers):
+        """Sets the new_partition_numbers of this UpdateInstanceTopicReqTopics.
+
+        分区数。
+
+        :param new_partition_numbers: The new_partition_numbers of this UpdateInstanceTopicReqTopics.
+        :type: int
+        """
+        self._new_partition_numbers = new_partition_numbers
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -170,11 +197,16 @@ class UpdateInstanceTopicReqTopics:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

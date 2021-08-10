@@ -94,7 +94,7 @@ class PackageUsageInfo:
     def order_instance_id(self):
         """Gets the order_instance_id of this PackageUsageInfo.
 
-        订购实例ID。
+        订购资源包产品后，系统生成的ID，是这个资源包列表的标识字段。
 
         :return: The order_instance_id of this PackageUsageInfo.
         :rtype: str
@@ -105,7 +105,7 @@ class PackageUsageInfo:
     def order_instance_id(self, order_instance_id):
         """Sets the order_instance_id of this PackageUsageInfo.
 
-        订购实例ID。
+        订购资源包产品后，系统生成的ID，是这个资源包列表的标识字段。
 
         :param order_instance_id: The order_instance_id of this PackageUsageInfo.
         :type: str
@@ -360,11 +360,16 @@ class PackageUsageInfo:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

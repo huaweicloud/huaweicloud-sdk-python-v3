@@ -269,7 +269,7 @@ class UpdateWatermarkTemplateReq:
     def image_process(self):
         """Gets the image_process of this UpdateWatermarkTemplateReq.
 
-        type设置为Image时有效，目前包括Original（只做简单缩放，不做其他处理），Transparent（图片底色透明），Grayed（彩色图片变灰）<br/>
+        type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
 
         :return: The image_process of this UpdateWatermarkTemplateReq.
         :rtype: str
@@ -280,7 +280,7 @@ class UpdateWatermarkTemplateReq:
     def image_process(self, image_process):
         """Sets the image_process of this UpdateWatermarkTemplateReq.
 
-        type设置为Image时有效，目前包括Original（只做简单缩放，不做其他处理），Transparent（图片底色透明），Grayed（彩色图片变灰）<br/>
+        type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
 
         :param image_process: The image_process of this UpdateWatermarkTemplateReq.
         :type: str
@@ -359,11 +359,16 @@ class UpdateWatermarkTemplateReq:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

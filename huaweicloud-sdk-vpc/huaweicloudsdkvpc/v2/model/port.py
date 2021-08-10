@@ -38,7 +38,7 @@ class Port:
         'bindingvnic_type': 'str',
         'dns_assignment': 'list[DnsAssignMent]',
         'dns_name': 'str',
-        'bindingvif_details': 'object',
+        'bindingvif_details': 'BindingVifDetails',
         'bindingprofile': 'object',
         'instance_id': 'str',
         'instance_type': 'str',
@@ -479,10 +479,9 @@ class Port:
     def bindingvif_details(self):
         """Gets the bindingvif_details of this Port.
 
-        功能说明：vif的详细信息，  \"ovs_hybrid_plug\": 是否为ovs/bridge混合模式 约束：管理员权限，普通租户不可指定
 
         :return: The bindingvif_details of this Port.
-        :rtype: object
+        :rtype: BindingVifDetails
         """
         return self._bindingvif_details
 
@@ -490,10 +489,9 @@ class Port:
     def bindingvif_details(self, bindingvif_details):
         """Sets the bindingvif_details of this Port.
 
-        功能说明：vif的详细信息，  \"ovs_hybrid_plug\": 是否为ovs/bridge混合模式 约束：管理员权限，普通租户不可指定
 
         :param bindingvif_details: The bindingvif_details of this Port.
-        :type: object
+        :type: BindingVifDetails
         """
         self._bindingvif_details = bindingvif_details
 
@@ -635,11 +633,16 @@ class Port:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

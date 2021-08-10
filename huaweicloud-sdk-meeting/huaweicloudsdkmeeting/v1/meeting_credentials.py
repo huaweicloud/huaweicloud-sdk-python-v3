@@ -45,7 +45,7 @@ class MeetingCredentials(Credentials):
             authorization = "Basic " + six.ensure_str(
                 base64.b64encode((self._user_name + ':' + self._user_password).encode('utf-8')))
                                            
-            body = {'account': self._user_name, 'clientType': 0}
+            body = {'account': self._user_name, 'clientType': 72}
             sdk_request = SdkRequest('POST', 'https', request.host, [], '/v1/usg/acs/auth/account', [],
                                      {'Authorization': authorization, 'Content-Type': 'application/json'},
                                      json.dumps(body), [])

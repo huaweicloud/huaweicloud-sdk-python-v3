@@ -687,7 +687,7 @@ class ResFeeRecordV2:
     def trade_time(self):
         """Gets the trade_time of this ResFeeRecordV2.
 
-        |参数名称：交易时间| |参数名称：交易时间，某条消费记录对应的扣费时间。|
+        交易时间。
 
         :return: The trade_time of this ResFeeRecordV2.
         :rtype: str
@@ -698,7 +698,7 @@ class ResFeeRecordV2:
     def trade_time(self, trade_time):
         """Sets the trade_time of this ResFeeRecordV2.
 
-        |参数名称：交易时间| |参数名称：交易时间，某条消费记录对应的扣费时间。|
+        交易时间。
 
         :param trade_time: The trade_time of this ResFeeRecordV2.
         :type: str
@@ -1061,7 +1061,7 @@ class ResFeeRecordV2:
     def amount(self):
         """Gets the amount of this ResFeeRecordV2.
 
-        消费金额，包括现金券和储值卡和代金券金额，精确到小数点后2位。
+        消费金额，包括现金券和储值卡和代金券金额，精确到小数点后2位。  说明： amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
         :return: The amount of this ResFeeRecordV2.
         :rtype: float
@@ -1072,7 +1072,7 @@ class ResFeeRecordV2:
     def amount(self, amount):
         """Sets the amount of this ResFeeRecordV2.
 
-        消费金额，包括现金券和储值卡和代金券金额，精确到小数点后2位。
+        消费金额，包括现金券和储值卡和代金券金额，精确到小数点后2位。  说明： amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
         :param amount: The amount of this ResFeeRecordV2.
         :type: float
@@ -1305,11 +1305,16 @@ class ResFeeRecordV2:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

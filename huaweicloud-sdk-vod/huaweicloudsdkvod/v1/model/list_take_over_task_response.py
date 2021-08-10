@@ -49,7 +49,7 @@ class ListTakeOverTaskResponse(SdkResponse):
     def tasks(self):
         """Gets the tasks of this ListTakeOverTaskResponse.
 
-        托管任务信息
+        托管任务信息。
 
         :return: The tasks of this ListTakeOverTaskResponse.
         :rtype: list[TakeOverTask]
@@ -60,7 +60,7 @@ class ListTakeOverTaskResponse(SdkResponse):
     def tasks(self, tasks):
         """Sets the tasks of this ListTakeOverTaskResponse.
 
-        托管任务信息
+        托管任务信息。
 
         :param tasks: The tasks of this ListTakeOverTaskResponse.
         :type: list[TakeOverTask]
@@ -117,11 +117,16 @@ class ListTakeOverTaskResponse(SdkResponse):
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

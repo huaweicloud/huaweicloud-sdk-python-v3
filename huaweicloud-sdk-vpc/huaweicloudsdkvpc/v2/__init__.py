@@ -9,6 +9,10 @@ from huaweicloudsdkvpc.v2.vpc_async_client import VpcAsyncClient
 from huaweicloudsdkvpc.v2.model.accept_vpc_peering_request import AcceptVpcPeeringRequest
 from huaweicloudsdkvpc.v2.model.accept_vpc_peering_response import AcceptVpcPeeringResponse
 from huaweicloudsdkvpc.v2.model.allowed_address_pair import AllowedAddressPair
+from huaweicloudsdkvpc.v2.model.asscoiate_req import AsscoiateReq
+from huaweicloudsdkvpc.v2.model.associate_route_table_and_subnet_req import AssociateRouteTableAndSubnetReq
+from huaweicloudsdkvpc.v2.model.associate_route_table_request import AssociateRouteTableRequest
+from huaweicloudsdkvpc.v2.model.associate_route_table_response import AssociateRouteTableResponse
 from huaweicloudsdkvpc.v2.model.batch_create_subnet_tags_request import BatchCreateSubnetTagsRequest
 from huaweicloudsdkvpc.v2.model.batch_create_subnet_tags_request_body import BatchCreateSubnetTagsRequestBody
 from huaweicloudsdkvpc.v2.model.batch_create_subnet_tags_response import BatchCreateSubnetTagsResponse
@@ -21,6 +25,7 @@ from huaweicloudsdkvpc.v2.model.batch_delete_subnet_tags_response import BatchDe
 from huaweicloudsdkvpc.v2.model.batch_delete_vpc_tags_request import BatchDeleteVpcTagsRequest
 from huaweicloudsdkvpc.v2.model.batch_delete_vpc_tags_request_body import BatchDeleteVpcTagsRequestBody
 from huaweicloudsdkvpc.v2.model.batch_delete_vpc_tags_response import BatchDeleteVpcTagsResponse
+from huaweicloudsdkvpc.v2.model.binding_vif_details import BindingVifDetails
 from huaweicloudsdkvpc.v2.model.create_port_option import CreatePortOption
 from huaweicloudsdkvpc.v2.model.create_port_request import CreatePortRequest
 from huaweicloudsdkvpc.v2.model.create_port_request_body import CreatePortRequestBody
@@ -29,6 +34,10 @@ from huaweicloudsdkvpc.v2.model.create_privateip_option import CreatePrivateipOp
 from huaweicloudsdkvpc.v2.model.create_privateip_request import CreatePrivateipRequest
 from huaweicloudsdkvpc.v2.model.create_privateip_request_body import CreatePrivateipRequestBody
 from huaweicloudsdkvpc.v2.model.create_privateip_response import CreatePrivateipResponse
+from huaweicloudsdkvpc.v2.model.create_route_table_req import CreateRouteTableReq
+from huaweicloudsdkvpc.v2.model.create_route_table_request import CreateRouteTableRequest
+from huaweicloudsdkvpc.v2.model.create_route_table_response import CreateRouteTableResponse
+from huaweicloudsdkvpc.v2.model.create_routetable_req_body import CreateRoutetableReqBody
 from huaweicloudsdkvpc.v2.model.create_security_group_option import CreateSecurityGroupOption
 from huaweicloudsdkvpc.v2.model.create_security_group_request import CreateSecurityGroupRequest
 from huaweicloudsdkvpc.v2.model.create_security_group_request_body import CreateSecurityGroupRequestBody
@@ -63,6 +72,8 @@ from huaweicloudsdkvpc.v2.model.delete_port_request import DeletePortRequest
 from huaweicloudsdkvpc.v2.model.delete_port_response import DeletePortResponse
 from huaweicloudsdkvpc.v2.model.delete_privateip_request import DeletePrivateipRequest
 from huaweicloudsdkvpc.v2.model.delete_privateip_response import DeletePrivateipResponse
+from huaweicloudsdkvpc.v2.model.delete_route_table_request import DeleteRouteTableRequest
+from huaweicloudsdkvpc.v2.model.delete_route_table_response import DeleteRouteTableResponse
 from huaweicloudsdkvpc.v2.model.delete_security_group_request import DeleteSecurityGroupRequest
 from huaweicloudsdkvpc.v2.model.delete_security_group_response import DeleteSecurityGroupResponse
 from huaweicloudsdkvpc.v2.model.delete_security_group_rule_request import DeleteSecurityGroupRuleRequest
@@ -79,6 +90,8 @@ from huaweicloudsdkvpc.v2.model.delete_vpc_route_request import DeleteVpcRouteRe
 from huaweicloudsdkvpc.v2.model.delete_vpc_route_response import DeleteVpcRouteResponse
 from huaweicloudsdkvpc.v2.model.delete_vpc_tag_request import DeleteVpcTagRequest
 from huaweicloudsdkvpc.v2.model.delete_vpc_tag_response import DeleteVpcTagResponse
+from huaweicloudsdkvpc.v2.model.disassociate_route_table_request import DisassociateRouteTableRequest
+from huaweicloudsdkvpc.v2.model.disassociate_route_table_response import DisassociateRouteTableResponse
 from huaweicloudsdkvpc.v2.model.dns_assign_ment import DnsAssignMent
 from huaweicloudsdkvpc.v2.model.extra_dhcp_opt import ExtraDhcpOpt
 from huaweicloudsdkvpc.v2.model.extra_dhcp_option import ExtraDhcpOption
@@ -88,6 +101,8 @@ from huaweicloudsdkvpc.v2.model.list_ports_response import ListPortsResponse
 from huaweicloudsdkvpc.v2.model.list_privateips_request import ListPrivateipsRequest
 from huaweicloudsdkvpc.v2.model.list_privateips_response import ListPrivateipsResponse
 from huaweicloudsdkvpc.v2.model.list_resource_resp import ListResourceResp
+from huaweicloudsdkvpc.v2.model.list_route_tables_request import ListRouteTablesRequest
+from huaweicloudsdkvpc.v2.model.list_route_tables_response import ListRouteTablesResponse
 from huaweicloudsdkvpc.v2.model.list_security_group_rules_request import ListSecurityGroupRulesRequest
 from huaweicloudsdkvpc.v2.model.list_security_group_rules_response import ListSecurityGroupRulesResponse
 from huaweicloudsdkvpc.v2.model.list_security_groups_request import ListSecurityGroupsRequest
@@ -199,6 +214,9 @@ from huaweicloudsdkvpc.v2.model.reject_vpc_peering_response import RejectVpcPeer
 from huaweicloudsdkvpc.v2.model.resource_result import ResourceResult
 from huaweicloudsdkvpc.v2.model.resource_tag import ResourceTag
 from huaweicloudsdkvpc.v2.model.route import Route
+from huaweicloudsdkvpc.v2.model.route_table_list_resp import RouteTableListResp
+from huaweicloudsdkvpc.v2.model.route_table_resp import RouteTableResp
+from huaweicloudsdkvpc.v2.model.routetable_associate_reqbody import RoutetableAssociateReqbody
 from huaweicloudsdkvpc.v2.model.security_group import SecurityGroup
 from huaweicloudsdkvpc.v2.model.security_group_rule import SecurityGroupRule
 from huaweicloudsdkvpc.v2.model.show_network_ip_availabilities_request import ShowNetworkIpAvailabilitiesRequest
@@ -209,6 +227,8 @@ from huaweicloudsdkvpc.v2.model.show_privateip_request import ShowPrivateipReque
 from huaweicloudsdkvpc.v2.model.show_privateip_response import ShowPrivateipResponse
 from huaweicloudsdkvpc.v2.model.show_quota_request import ShowQuotaRequest
 from huaweicloudsdkvpc.v2.model.show_quota_response import ShowQuotaResponse
+from huaweicloudsdkvpc.v2.model.show_route_table_request import ShowRouteTableRequest
+from huaweicloudsdkvpc.v2.model.show_route_table_response import ShowRouteTableResponse
 from huaweicloudsdkvpc.v2.model.show_security_group_request import ShowSecurityGroupRequest
 from huaweicloudsdkvpc.v2.model.show_security_group_response import ShowSecurityGroupResponse
 from huaweicloudsdkvpc.v2.model.show_security_group_rule_request import ShowSecurityGroupRuleRequest
@@ -227,11 +247,16 @@ from huaweicloudsdkvpc.v2.model.show_vpc_tags_request import ShowVpcTagsRequest
 from huaweicloudsdkvpc.v2.model.show_vpc_tags_response import ShowVpcTagsResponse
 from huaweicloudsdkvpc.v2.model.subnet import Subnet
 from huaweicloudsdkvpc.v2.model.subnet_ip_availability import SubnetIpAvailability
+from huaweicloudsdkvpc.v2.model.subnet_list import SubnetList
 from huaweicloudsdkvpc.v2.model.subnet_result import SubnetResult
 from huaweicloudsdkvpc.v2.model.update_port_option import UpdatePortOption
 from huaweicloudsdkvpc.v2.model.update_port_request import UpdatePortRequest
 from huaweicloudsdkvpc.v2.model.update_port_request_body import UpdatePortRequestBody
 from huaweicloudsdkvpc.v2.model.update_port_response import UpdatePortResponse
+from huaweicloudsdkvpc.v2.model.update_route_table_req import UpdateRouteTableReq
+from huaweicloudsdkvpc.v2.model.update_route_table_request import UpdateRouteTableRequest
+from huaweicloudsdkvpc.v2.model.update_route_table_response import UpdateRouteTableResponse
+from huaweicloudsdkvpc.v2.model.update_routetable_req_body import UpdateRoutetableReqBody
 from huaweicloudsdkvpc.v2.model.update_subnet_option import UpdateSubnetOption
 from huaweicloudsdkvpc.v2.model.update_subnet_request import UpdateSubnetRequest
 from huaweicloudsdkvpc.v2.model.update_subnet_request_body import UpdateSubnetRequestBody

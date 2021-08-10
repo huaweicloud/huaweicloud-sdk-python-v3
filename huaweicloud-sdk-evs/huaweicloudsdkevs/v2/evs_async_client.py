@@ -845,7 +845,7 @@ class EvsAsyncClient(Client):
         :return: ListVolumesResponse
         """
 
-        all_params = ['marker', 'name', 'limit', 'sort_key', 'offset', 'sort_dir', 'status', 'metadata', 'availability_zone', 'multiattach', 'service_type', 'dedicated_storage_id', 'dedicated_storage_name', 'volume_type_id', 'id', 'ids', 'enterprise_project_id']
+        all_params = ['marker', 'name', 'limit', 'sort_key', 'offset', 'sort_dir', 'status', 'metadata', 'availability_zone', 'multiattach', 'service_type', 'dedicated_storage_id', 'dedicated_storage_name', 'volume_type_id', 'id', 'ids', 'enterprise_project_id', 'server_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -890,6 +890,8 @@ class EvsAsyncClient(Client):
             query_params.append(('ids', local_var_params['ids']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'server_id' in local_var_params:
+            query_params.append(('server_id', local_var_params['server_id']))
 
         header_params = {}
 

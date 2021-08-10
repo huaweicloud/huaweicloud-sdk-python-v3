@@ -49,7 +49,7 @@ class IdMarkDTO:
     def id(self):
         """Gets the id of this IdMarkDTO.
 
-        部门编码。
+        唯一标识。
 
         :return: The id of this IdMarkDTO.
         :rtype: str
@@ -60,7 +60,7 @@ class IdMarkDTO:
     def id(self, id):
         """Sets the id of this IdMarkDTO.
 
-        部门编码。
+        唯一标识。
 
         :param id: The id of this IdMarkDTO.
         :type: str
@@ -117,11 +117,16 @@ class IdMarkDTO:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

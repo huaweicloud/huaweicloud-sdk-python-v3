@@ -28,7 +28,7 @@ class CreatePolicyResponse(SdkResponse):
         'action': 'PolicyAction',
         'options': 'PolicyOption',
         'full_detection': 'bool',
-        'hosts': 'list[object]',
+        'hosts': 'list[str]',
         'bind_host': 'list[BindHost]',
         'timestamp': 'int',
         'extend': 'object'
@@ -220,7 +220,7 @@ class CreatePolicyResponse(SdkResponse):
         防护的网站id
 
         :return: The hosts of this CreatePolicyResponse.
-        :rtype: list[object]
+        :rtype: list[str]
         """
         return self._hosts
 
@@ -231,7 +231,7 @@ class CreatePolicyResponse(SdkResponse):
         防护的网站id
 
         :param hosts: The hosts of this CreatePolicyResponse.
-        :type: list[object]
+        :type: list[str]
         """
         self._hosts = hosts
 
@@ -329,11 +329,16 @@ class CreatePolicyResponse(SdkResponse):
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

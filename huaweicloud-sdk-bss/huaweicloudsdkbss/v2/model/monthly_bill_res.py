@@ -477,7 +477,7 @@ class MonthlyBillRes:
     def consume_amount(self):
         """Gets the consume_amount of this MonthlyBillRes.
 
-        客户购买云服务类型的消费金额，包含代金券、现金券，精确到小数点后2位。
+        客户购买云服务类型的消费金额，包含代金券、现金券，精确到小数点后2位。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
         :return: The consume_amount of this MonthlyBillRes.
         :rtype: float
@@ -488,7 +488,7 @@ class MonthlyBillRes:
     def consume_amount(self, consume_amount):
         """Sets the consume_amount of this MonthlyBillRes.
 
-        客户购买云服务类型的消费金额，包含代金券、现金券，精确到小数点后2位。
+        客户购买云服务类型的消费金额，包含代金券、现金券，精确到小数点后2位。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
         :param consume_amount: The consume_amount of this MonthlyBillRes.
         :type: float
@@ -765,11 +765,16 @@ class MonthlyBillRes:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

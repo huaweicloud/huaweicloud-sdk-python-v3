@@ -47,7 +47,7 @@ class ShowTakeOverAssetDetailsRequest:
     def source_bucket(self):
         """Gets the source_bucket of this ShowTakeOverAssetDetailsRequest.
 
-        媒资原始输入存放的桶<br/> 
+        媒资原始输入存放的桶。
 
         :return: The source_bucket of this ShowTakeOverAssetDetailsRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class ShowTakeOverAssetDetailsRequest:
     def source_bucket(self, source_bucket):
         """Sets the source_bucket of this ShowTakeOverAssetDetailsRequest.
 
-        媒资原始输入存放的桶<br/> 
+        媒资原始输入存放的桶。
 
         :param source_bucket: The source_bucket of this ShowTakeOverAssetDetailsRequest.
         :type: str
@@ -69,7 +69,7 @@ class ShowTakeOverAssetDetailsRequest:
     def source_object(self):
         """Gets the source_object of this ShowTakeOverAssetDetailsRequest.
 
-        媒资原始输入的objectKey。<br/> 
+        媒资原始输入的objectKey。
 
         :return: The source_object of this ShowTakeOverAssetDetailsRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class ShowTakeOverAssetDetailsRequest:
     def source_object(self, source_object):
         """Sets the source_object of this ShowTakeOverAssetDetailsRequest.
 
-        媒资原始输入的objectKey。<br/> 
+        媒资原始输入的objectKey。
 
         :param source_object: The source_object of this ShowTakeOverAssetDetailsRequest.
         :type: str
@@ -115,11 +115,16 @@ class ShowTakeOverAssetDetailsRequest:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

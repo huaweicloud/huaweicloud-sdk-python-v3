@@ -64,7 +64,7 @@ class FreeResource:
     def free_resource_id(self):
         """Gets the free_resource_id of this FreeResource.
 
-        资源项ID。
+        资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。
 
         :return: The free_resource_id of this FreeResource.
         :rtype: str
@@ -75,7 +75,7 @@ class FreeResource:
     def free_resource_id(self, free_resource_id):
         """Sets the free_resource_id of this FreeResource.
 
-        资源项ID。
+        资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。
 
         :param free_resource_id: The free_resource_id of this FreeResource.
         :type: str
@@ -108,7 +108,7 @@ class FreeResource:
     def amount(self):
         """Gets the amount of this FreeResource.
 
-        资源剩余额度，针对可重置套餐包，是指当前重置周期内的剩余量。
+        资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。
 
         :return: The amount of this FreeResource.
         :rtype: float
@@ -119,7 +119,7 @@ class FreeResource:
     def amount(self, amount):
         """Sets the amount of this FreeResource.
 
-        资源剩余额度，针对可重置套餐包，是指当前重置周期内的剩余量。
+        资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。
 
         :param amount: The amount of this FreeResource.
         :type: float
@@ -130,7 +130,7 @@ class FreeResource:
     def original_amount(self):
         """Gets the original_amount of this FreeResource.
 
-        资源原始额度，针对可重置套餐包，是指每个重置周期内的总量。
+        资源原始额度，针对可重置资源包，是指每个重置周期内的总量。
 
         :return: The original_amount of this FreeResource.
         :rtype: float
@@ -141,7 +141,7 @@ class FreeResource:
     def original_amount(self, original_amount):
         """Sets the original_amount of this FreeResource.
 
-        资源原始额度，针对可重置套餐包，是指每个重置周期内的总量。
+        资源原始额度，针对可重置资源包，是指每个重置周期内的总量。
 
         :param original_amount: The original_amount of this FreeResource.
         :type: float
@@ -198,11 +198,16 @@ class FreeResource:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

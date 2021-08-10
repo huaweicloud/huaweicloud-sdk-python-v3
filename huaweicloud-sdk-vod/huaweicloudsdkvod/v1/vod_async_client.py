@@ -305,7 +305,7 @@ class VodAsyncClient(Client):
     def confirm_image_upload_async(self, request):
         """确认水印图片上传
 
-        确认水印图片上传 
+        确认水印图片上传状态。
 
         :param ConfirmImageUploadRequest request
         :return: ConfirmImageUploadResponse
@@ -315,7 +315,7 @@ class VodAsyncClient(Client):
     def confirm_image_upload_with_http_info(self, request):
         """确认水印图片上传
 
-        确认水印图片上传 
+        确认水印图片上传状态。
 
         :param ConfirmImageUploadRequest request
         :return: ConfirmImageUploadResponse
@@ -807,9 +807,9 @@ class VodAsyncClient(Client):
 
 
     def create_template_group_async(self, request):
-        """创建自定义模板组
+        """创建自定义转码模板组
 
-        创建自定义模板组。
+        创建自定义转码模板组。
 
         :param CreateTemplateGroupRequest request
         :return: CreateTemplateGroupResponse
@@ -817,9 +817,9 @@ class VodAsyncClient(Client):
         return self.create_template_group_with_http_info(request)
 
     def create_template_group_with_http_info(self, request):
-        """创建自定义模板组
+        """创建自定义转码模板组
 
-        创建自定义模板组。
+        创建自定义转码模板组。
 
         :param CreateTemplateGroupRequest request
         :return: CreateTemplateGroupResponse
@@ -872,7 +872,7 @@ class VodAsyncClient(Client):
     def create_watermark_template_async(self, request):
         """创建水印模板
 
-        创建水印模板 
+        创建水印模板。
 
         :param CreateWatermarkTemplateRequest request
         :return: CreateWatermarkTemplateResponse
@@ -882,7 +882,7 @@ class VodAsyncClient(Client):
     def create_watermark_template_with_http_info(self, request):
         """创建水印模板
 
-        创建水印模板 
+        创建水印模板。
 
         :param CreateWatermarkTemplateRequest request
         :return: CreateWatermarkTemplateResponse
@@ -1060,9 +1060,9 @@ class VodAsyncClient(Client):
 
 
     def delete_template_group_async(self, request):
-        """删除自定义模板组
+        """删除自定义转码模板组
 
-        删除自定义模板组。 
+        删除自定义转码模板组。
 
         :param DeleteTemplateGroupRequest request
         :return: DeleteTemplateGroupResponse
@@ -1070,9 +1070,9 @@ class VodAsyncClient(Client):
         return self.delete_template_group_with_http_info(request)
 
     def delete_template_group_with_http_info(self, request):
-        """删除自定义模板组
+        """删除自定义转码模板组
 
-        删除自定义模板组。 
+        删除自定义转码模板组。
 
         :param DeleteTemplateGroupRequest request
         :return: DeleteTemplateGroupResponse
@@ -1335,9 +1335,9 @@ class VodAsyncClient(Client):
 
 
     def list_template_group_async(self, request):
-        """查询模板组列表
+        """查询转码模板组列表
 
-        查询模板组列表。
+        查询转码模板组列表。
 
         :param ListTemplateGroupRequest request
         :return: ListTemplateGroupResponse
@@ -1345,9 +1345,9 @@ class VodAsyncClient(Client):
         return self.list_template_group_with_http_info(request)
 
     def list_template_group_with_http_info(self, request):
-        """查询模板组列表
+        """查询转码模板组列表
 
-        查询模板组列表。
+        查询转码模板组列表。
 
         :param ListTemplateGroupRequest request
         :return: ListTemplateGroupResponse
@@ -1663,7 +1663,7 @@ class VodAsyncClient(Client):
 
 
     def show_asset_cipher_async(self, request):
-        """密钥查询接口
+        """密钥查询
 
         终端播放HLS加密视频时，向租户管理系统请求密钥，租户管理系统先查询其本地有没有已缓存的密钥，没有时则调用此接口向VOD查询。该接口的具体使用场景请参见[通过HLS加密防止视频泄露](https://support.huaweicloud.com/bestpractice-vod/vod_10_0004.html)。
 
@@ -1673,7 +1673,7 @@ class VodAsyncClient(Client):
         return self.show_asset_cipher_with_http_info(request)
 
     def show_asset_cipher_with_http_info(self, request):
-        """密钥查询接口
+        """密钥查询
 
         终端播放HLS加密视频时，向租户管理系统请求密钥，租户管理系统先查询其本地有没有已缓存的密钥，没有时则调用此接口向VOD查询。该接口的具体使用场景请参见[通过HLS加密防止视频泄露](https://support.huaweicloud.com/bestpractice-vod/vod_10_0004.html)。
 
@@ -2533,9 +2533,9 @@ class VodAsyncClient(Client):
 
 
     def update_template_group_async(self, request):
-        """修改自定义模板组
+        """修改自定义转码模板组
 
-        修改自定义模板组。 
+        修改自定义转码模板组。
 
         :param UpdateTemplateGroupRequest request
         :return: UpdateTemplateGroupResponse
@@ -2543,9 +2543,9 @@ class VodAsyncClient(Client):
         return self.update_template_group_with_http_info(request)
 
     def update_template_group_with_http_info(self, request):
-        """修改自定义模板组
+        """修改自定义转码模板组
 
-        修改自定义模板组。 
+        修改自定义转码模板组。
 
         :param UpdateTemplateGroupRequest request
         :return: UpdateTemplateGroupResponse
@@ -2724,7 +2724,7 @@ class VodAsyncClient(Client):
     def list_take_over_task_async(self, request):
         """查询托管任务
 
-        查询托管任务
+        查询OBS存量托管任务列表。
 
         :param ListTakeOverTaskRequest request
         :return: ListTakeOverTaskResponse
@@ -2734,7 +2734,7 @@ class VodAsyncClient(Client):
     def list_take_over_task_with_http_info(self, request):
         """查询托管任务
 
-        查询托管任务
+        查询OBS存量托管任务列表。
 
         :param ListTakeOverTaskRequest request
         :return: ListTakeOverTaskResponse
@@ -2793,7 +2793,7 @@ class VodAsyncClient(Client):
     def show_take_over_asset_details_async(self, request):
         """查询托管媒资详情
 
-        查询托管媒资详情 
+        查询OBS托管媒资的详细信息。
 
         :param ShowTakeOverAssetDetailsRequest request
         :return: ShowTakeOverAssetDetailsResponse
@@ -2803,7 +2803,7 @@ class VodAsyncClient(Client):
     def show_take_over_asset_details_with_http_info(self, request):
         """查询托管媒资详情
 
-        查询托管媒资详情 
+        查询OBS托管媒资的详细信息。
 
         :param ShowTakeOverAssetDetailsRequest request
         :return: ShowTakeOverAssetDetailsResponse
@@ -2858,7 +2858,7 @@ class VodAsyncClient(Client):
     def show_take_over_task_details_async(self, request):
         """查询托管任务详情
 
-        查询托管任务详情
+        查询OBS存量托管任务详情。
 
         :param ShowTakeOverTaskDetailsRequest request
         :return: ShowTakeOverTaskDetailsResponse
@@ -2868,7 +2868,7 @@ class VodAsyncClient(Client):
     def show_take_over_task_details_with_http_info(self, request):
         """查询托管任务详情
 
-        查询托管任务详情
+        查询OBS存量托管任务详情。
 
         :param ShowTakeOverTaskDetailsRequest request
         :return: ShowTakeOverTaskDetailsResponse

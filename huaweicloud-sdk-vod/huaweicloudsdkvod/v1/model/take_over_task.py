@@ -143,7 +143,7 @@ class TakeOverTask:
     def host_type(self):
         """Gets the host_type of this TakeOverTask.
 
-        托管类型： - 0：表示存储到点播桶 - 1：表示存储在租户桶 - 2：表示存储到租户桶，并且源文件名跟随
+        托管类型。  取值如下： - 0：表示存储到点播桶 - 1：表示存储在租户桶 - 2：表示存储到租户OBS桶中，且输出目录与源文件的存储目录相同。
 
         :return: The host_type of this TakeOverTask.
         :rtype: int
@@ -154,7 +154,7 @@ class TakeOverTask:
     def host_type(self, host_type):
         """Sets the host_type of this TakeOverTask.
 
-        托管类型： - 0：表示存储到点播桶 - 1：表示存储在租户桶 - 2：表示存储到租户桶，并且源文件名跟随
+        托管类型。  取值如下： - 0：表示存储到点播桶 - 1：表示存储在租户桶 - 2：表示存储到租户OBS桶中，且输出目录与源文件的存储目录相同。
 
         :param host_type: The host_type of this TakeOverTask.
         :type: int
@@ -387,11 +387,16 @@ class TakeOverTask:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

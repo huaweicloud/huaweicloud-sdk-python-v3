@@ -13,7 +13,6 @@ from huaweicloudsdkmpc.v1.model.audio_track import AudioTrack
 from huaweicloudsdkmpc.v1.model.av_parameters import AvParameters
 from huaweicloudsdkmpc.v1.model.basic_task_info import BasicTaskInfo
 from huaweicloudsdkmpc.v1.model.basic_watermark import BasicWatermark
-from huaweicloudsdkmpc.v1.model.black_enhance import BlackEnhance
 from huaweicloudsdkmpc.v1.model.cancel_remux_task_request import CancelRemuxTaskRequest
 from huaweicloudsdkmpc.v1.model.cancel_remux_task_response import CancelRemuxTaskResponse
 from huaweicloudsdkmpc.v1.model.common import Common

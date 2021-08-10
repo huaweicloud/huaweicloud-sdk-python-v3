@@ -27,8 +27,7 @@ class VideoInfo:
         'bitrate': 'int',
         'bitrate_bps': 'int',
         'frame_rate': 'int',
-        'codec': 'str',
-        'dynamic_range': 'str'
+        'codec': 'str'
     }
 
     attribute_map = {
@@ -37,11 +36,10 @@ class VideoInfo:
         'bitrate': 'bitrate',
         'bitrate_bps': 'bitrate_bps',
         'frame_rate': 'frame_rate',
-        'codec': 'codec',
-        'dynamic_range': 'dynamic_range'
+        'codec': 'codec'
     }
 
-    def __init__(self, width=None, height=None, bitrate=None, bitrate_bps=None, frame_rate=None, codec=None, dynamic_range=None):
+    def __init__(self, width=None, height=None, bitrate=None, bitrate_bps=None, frame_rate=None, codec=None):
         """VideoInfo - a model defined in huaweicloud sdk"""
         
         
@@ -52,7 +50,6 @@ class VideoInfo:
         self._bitrate_bps = None
         self._frame_rate = None
         self._codec = None
-        self._dynamic_range = None
         self.discriminator = None
 
         if width is not None:
@@ -67,8 +64,6 @@ class VideoInfo:
             self.frame_rate = frame_rate
         if codec is not None:
             self.codec = codec
-        if dynamic_range is not None:
-            self.dynamic_range = dynamic_range
 
     @property
     def width(self):
@@ -202,28 +197,6 @@ class VideoInfo:
         """
         self._codec = codec
 
-    @property
-    def dynamic_range(self):
-        """Gets the dynamic_range of this VideoInfo.
-
-        片源动态范围类型。  取值如下： - SDR - HDR10 - CUVA_HDR 
-
-        :return: The dynamic_range of this VideoInfo.
-        :rtype: str
-        """
-        return self._dynamic_range
-
-    @dynamic_range.setter
-    def dynamic_range(self, dynamic_range):
-        """Sets the dynamic_range of this VideoInfo.
-
-        片源动态范围类型。  取值如下： - SDR - HDR10 - CUVA_HDR 
-
-        :param dynamic_range: The dynamic_range of this VideoInfo.
-        :type: str
-        """
-        self._dynamic_range = dynamic_range
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -252,11 +225,16 @@ class VideoInfo:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

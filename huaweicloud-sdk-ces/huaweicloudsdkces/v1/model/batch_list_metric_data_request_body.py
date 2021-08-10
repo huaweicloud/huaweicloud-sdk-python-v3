@@ -59,7 +59,7 @@ class BatchListMetricDataRequestBody:
     def metrics(self):
         """Gets the metrics of this BatchListMetricDataRequestBody.
 
-        指标数据。数组长度最大10
+        指标数据。数组长度最大500
 
         :return: The metrics of this BatchListMetricDataRequestBody.
         :rtype: list[MetricInfo]
@@ -70,7 +70,7 @@ class BatchListMetricDataRequestBody:
     def metrics(self, metrics):
         """Sets the metrics of this BatchListMetricDataRequestBody.
 
-        指标数据。数组长度最大10
+        指标数据。数组长度最大500
 
         :param metrics: The metrics of this BatchListMetricDataRequestBody.
         :type: list[MetricInfo]
@@ -193,11 +193,16 @@ class BatchListMetricDataRequestBody:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

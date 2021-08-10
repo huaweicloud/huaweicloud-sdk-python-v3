@@ -54,7 +54,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
     def currency(self):
         """Gets the currency of this ListCustomerBillsMonthlyBreakDownResponse.
 
-        货币单位代码： CNY：人民币
+        |参数名称：货币单位代码：CNY：人民币| |参数约束及描述：货币单位代码：CNY：人民币|
 
         :return: The currency of this ListCustomerBillsMonthlyBreakDownResponse.
         :rtype: str
@@ -65,7 +65,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
     def currency(self, currency):
         """Sets the currency of this ListCustomerBillsMonthlyBreakDownResponse.
 
-        货币单位代码： CNY：人民币
+        |参数名称：货币单位代码：CNY：人民币| |参数约束及描述：货币单位代码：CNY：人民币|
 
         :param currency: The currency of this ListCustomerBillsMonthlyBreakDownResponse.
         :type: str
@@ -76,7 +76,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListCustomerBillsMonthlyBreakDownResponse.
 
-        结果集数量，只有成功才返回这个参数。
+        |参数名称：结果集数量，只有成功才返回这个参数。| |参数的约束及描述：结果集数量，只有成功才返回这个参数。|
 
         :return: The total_count of this ListCustomerBillsMonthlyBreakDownResponse.
         :rtype: int
@@ -87,7 +87,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListCustomerBillsMonthlyBreakDownResponse.
 
-        结果集数量，只有成功才返回这个参数。
+        |参数名称：结果集数量，只有成功才返回这个参数。| |参数的约束及描述：结果集数量，只有成功才返回这个参数。|
 
         :param total_count: The total_count of this ListCustomerBillsMonthlyBreakDownResponse.
         :type: int
@@ -98,7 +98,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
     def details(self):
         """Gets the details of this ListCustomerBillsMonthlyBreakDownResponse.
 
-        分摊成本记录数据。 具体请参见表3。
+        |参数名称：查询查询月度成本响应| |参数约束以及描述：查询查询月度成本响应|
 
         :return: The details of this ListCustomerBillsMonthlyBreakDownResponse.
         :rtype: list[NvlCostAnalysedBillDetail]
@@ -109,7 +109,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
     def details(self, details):
         """Sets the details of this ListCustomerBillsMonthlyBreakDownResponse.
 
-        分摊成本记录数据。 具体请参见表3。
+        |参数名称：查询查询月度成本响应| |参数约束以及描述：查询查询月度成本响应|
 
         :param details: The details of this ListCustomerBillsMonthlyBreakDownResponse.
         :type: list[NvlCostAnalysedBillDetail]
@@ -144,11 +144,16 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

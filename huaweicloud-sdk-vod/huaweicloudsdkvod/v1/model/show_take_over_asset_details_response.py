@@ -64,7 +64,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
     def asset_id(self):
         """Gets the asset_id of this ShowTakeOverAssetDetailsResponse.
 
-        媒资ID
+        媒资ID。
 
         :return: The asset_id of this ShowTakeOverAssetDetailsResponse.
         :rtype: str
@@ -75,7 +75,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
     def asset_id(self, asset_id):
         """Sets the asset_id of this ShowTakeOverAssetDetailsResponse.
 
-        媒资ID
+        媒资ID。
 
         :param asset_id: The asset_id of this ShowTakeOverAssetDetailsResponse.
         :type: str
@@ -108,7 +108,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
     def transcode_status(self):
         """Gets the transcode_status of this ShowTakeOverAssetDetailsResponse.
 
-        转码状态 - \"UN_TRANSCODE\"：未转码 - \"WAITING_TRANSCODE\"：等待转码，排队中 - \"TRANSCODING\"：转码中 - \"TRANSCODE_SUCCEED\"：转码成功 - \"TRANSCODE_FAILED\"：转码失败
+        转码状态。 - \"UN_TRANSCODE\"：未转码 - \"WAITING_TRANSCODE\"：等待转码，排队中 - \"TRANSCODING\"：转码中 - \"TRANSCODE_SUCCEED\"：转码成功 - \"TRANSCODE_FAILED\"：转码失败
 
         :return: The transcode_status of this ShowTakeOverAssetDetailsResponse.
         :rtype: str
@@ -119,7 +119,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
     def transcode_status(self, transcode_status):
         """Sets the transcode_status of this ShowTakeOverAssetDetailsResponse.
 
-        转码状态 - \"UN_TRANSCODE\"：未转码 - \"WAITING_TRANSCODE\"：等待转码，排队中 - \"TRANSCODING\"：转码中 - \"TRANSCODE_SUCCEED\"：转码成功 - \"TRANSCODE_FAILED\"：转码失败
+        转码状态。 - \"UN_TRANSCODE\"：未转码 - \"WAITING_TRANSCODE\"：等待转码，排队中 - \"TRANSCODING\"：转码中 - \"TRANSCODE_SUCCEED\"：转码成功 - \"TRANSCODE_FAILED\"：转码失败
 
         :param transcode_status: The transcode_status of this ShowTakeOverAssetDetailsResponse.
         :type: str
@@ -194,11 +194,16 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

@@ -118,7 +118,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def x_language(self):
         """Gets the x_language of this ListCustomerBillsFeeRecordsRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        |zh_CN：中文 en_US：英文。默认为zh_CN：中文。|
 
         :return: The x_language of this ListCustomerBillsFeeRecordsRequest.
         :rtype: str
@@ -129,7 +129,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListCustomerBillsFeeRecordsRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        |zh_CN：中文 en_US：英文。默认为zh_CN：中文。|
 
         :param x_language: The x_language of this ListCustomerBillsFeeRecordsRequest.
         :type: str
@@ -494,11 +494,16 @@ class ListCustomerBillsFeeRecordsRequest:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

@@ -175,7 +175,7 @@ class ShowInstanceMessagesRequest:
     def end_time(self):
         """Gets the end_time of this ShowInstanceMessagesRequest.
 
-        开始时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
+        结束时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
 
         :return: The end_time of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -186,7 +186,7 @@ class ShowInstanceMessagesRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowInstanceMessagesRequest.
 
-        开始时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
+        结束时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
 
         :param end_time: The end_time of this ShowInstanceMessagesRequest.
         :type: str
@@ -197,7 +197,7 @@ class ShowInstanceMessagesRequest:
     def limit(self):
         """Gets the limit of this ShowInstanceMessagesRequest.
 
-        查询消息的数量。
+        分页大小。
 
         :return: The limit of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -208,7 +208,7 @@ class ShowInstanceMessagesRequest:
     def limit(self, limit):
         """Sets the limit of this ShowInstanceMessagesRequest.
 
-        查询消息的数量。
+        分页大小。
 
         :param limit: The limit of this ShowInstanceMessagesRequest.
         :type: str
@@ -219,7 +219,7 @@ class ShowInstanceMessagesRequest:
     def offset(self):
         """Gets the offset of this ShowInstanceMessagesRequest.
 
-        查询的偏移量。
+        分页偏移量。
 
         :return: The offset of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -230,7 +230,7 @@ class ShowInstanceMessagesRequest:
     def offset(self, offset):
         """Sets the offset of this ShowInstanceMessagesRequest.
 
-        查询的偏移量。
+        分页偏移量。
 
         :param offset: The offset of this ShowInstanceMessagesRequest.
         :type: str
@@ -263,7 +263,7 @@ class ShowInstanceMessagesRequest:
     def message_offset(self):
         """Gets the message_offset of this ShowInstanceMessagesRequest.
 
-        消息偏移量。 查询消息内容时，为必选参数。 若start_time、end_time参数不为空，该参数无效。
+        消息偏移量。 **查询消息内容时，为必选参数。** 若start_time、end_time参数不为空，该参数无效。
 
         :return: The message_offset of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -274,7 +274,7 @@ class ShowInstanceMessagesRequest:
     def message_offset(self, message_offset):
         """Sets the message_offset of this ShowInstanceMessagesRequest.
 
-        消息偏移量。 查询消息内容时，为必选参数。 若start_time、end_time参数不为空，该参数无效。
+        消息偏移量。 **查询消息内容时，为必选参数。** 若start_time、end_time参数不为空，该参数无效。
 
         :param message_offset: The message_offset of this ShowInstanceMessagesRequest.
         :type: str
@@ -285,7 +285,7 @@ class ShowInstanceMessagesRequest:
     def partition(self):
         """Gets the partition of this ShowInstanceMessagesRequest.
 
-        分区。 查询消息内容时，为必选参数。 若start_time、end_time参数不为空，该参数无效。
+        分区。 **查询消息内容时，为必选参数。** 若start_time、end_time参数不为空，该参数无效。
 
         :return: The partition of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -296,7 +296,7 @@ class ShowInstanceMessagesRequest:
     def partition(self, partition):
         """Sets the partition of this ShowInstanceMessagesRequest.
 
-        分区。 查询消息内容时，为必选参数。 若start_time、end_time参数不为空，该参数无效。
+        分区。 **查询消息内容时，为必选参数。** 若start_time、end_time参数不为空，该参数无效。
 
         :param partition: The partition of this ShowInstanceMessagesRequest.
         :type: str
@@ -331,11 +331,16 @@ class ShowInstanceMessagesRequest:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

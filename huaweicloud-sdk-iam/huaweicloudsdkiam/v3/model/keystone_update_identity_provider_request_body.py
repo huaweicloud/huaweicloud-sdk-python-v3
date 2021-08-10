@@ -22,7 +22,7 @@ class KeystoneUpdateIdentityProviderRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'identity_provider': 'IdentityproviderOption'
+        'identity_provider': 'UpdateIdentityproviderOption'
     }
 
     attribute_map = {
@@ -45,7 +45,7 @@ class KeystoneUpdateIdentityProviderRequestBody:
 
 
         :return: The identity_provider of this KeystoneUpdateIdentityProviderRequestBody.
-        :rtype: IdentityproviderOption
+        :rtype: UpdateIdentityproviderOption
         """
         return self._identity_provider
 
@@ -55,7 +55,7 @@ class KeystoneUpdateIdentityProviderRequestBody:
 
 
         :param identity_provider: The identity_provider of this KeystoneUpdateIdentityProviderRequestBody.
-        :type: IdentityproviderOption
+        :type: UpdateIdentityproviderOption
         """
         self._identity_provider = identity_provider
 
@@ -87,11 +87,16 @@ class KeystoneUpdateIdentityProviderRequestBody:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

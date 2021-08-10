@@ -1,3 +1,177 @@
+# 3.0.55 2021-08-10
+
+### HuaweiCloud SDK Services
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Delete unused packages in `requirements.txt` of each service.
+- _Change_
+    - None
+
+### HuaweiCloud SDK AS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the request parameters `key` and `value` of the interface `ListResourceInstances` as required parameters.
+
+### HuaweiCloud SDK CloudBuild
+
+- _Features_
+    - Support the service `CloudBuild`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the name of the response parameter of the interfaces `ListBandwidths` and `ShowPublicip`: `publicip_border_group` -> `public_border_group`
+
+### HuaweiCloud SDK EVS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request parameter `server_id` to the interface `ListVolumes`.
+
+### HuaweiCloud SDK FRS
+
+- _Features_
+    - Support the `Face Recognition Service`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK IAM
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Remove the response parameter `order_id` from the interface `CreateDeployment`.
+
+### HuaweiCloud SDK IEC
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request parameters `permission_type`,`display_name`,`catalog` to the interface `KeystoneListPermissions`.
+    - Add the request and response parameter `sso_type` to the interface `KeystoneCreateIdentityProvider`.
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the request parameter `value` of the interface `UpdateImage` as a required parameter.
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request parameter `new_partition_numbers` to the interface `UpdateInstanceTopic`.
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request parameter `highlight` to the interface `ListLogs`.
+    - Add the optional value `backwards` to the request parameter `search_type` of the interface `ListLogs`.
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Remove the response parameter `dynamic_range` from the interface `ListTranscodingTask`.
+    - Remove the request parameter `tenant_id` from the interface `CreateTransTemplate`.
+    - Remove the request parameters `percent` and `frame_type` from the interface `CreateThumbnailsTask`.
+    - Remove the request parameter `black_enhance` from the interface `CreateTranscodingTask`.
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+    - Support the following interfaces:
+        - `RecognizeGeneralText`
+        - `RecognizeQuotaInvoice`
+        - `RecognizeIdCard`
+        - `RecognizeHandwriting`
+        - `RecognizeVehicleLicense`
+        - `RecognizeTransportationLicense`
+        - `RecognizeTaxiInvoice`
+        - `RecognizeAutoClassification`
+        - `RecognizeTollInvoice`
+        - `RecognizeMvsInvoice`
+        - `RecognizeLicensePlate`
+        - `RecognizeFlightItinerary`
+        - `RecognizeBusinessLicense`
+        - `RecognizeWebImage`
+        - `RecognizeDriverLicense`
+        - `RecognizeBusinessCard`
+        - `RecognizeTrainTicket`
+        - `RecognizeVin`
+        - `RecognizePassport`
+        - `RecognizeBankcard`
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK SWR
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the following response parameters to the interface `ShowAccessDomain`:
+        - `namespace`
+        - `repository`
+        - `access_domain`
+        - `permit`
+        - `deadline`
+        - `description`
+        - `creator_id`
+        - `creator_name`
+        - `created`
+        - `updated`
+        - `status`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request parameter `enable_dhcp` to the interface `NeutronListSubnets`.
+    - Add the response parameter `security_groups_links` to the interface `NeutronListSecurityGroups`.
+
 # 3.0.54 2021-07-27
 
 ### HuaweiCloud SDK Classroom

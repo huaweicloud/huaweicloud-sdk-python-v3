@@ -54,11 +54,13 @@ def keystone_list_projects(http_client, request):
             return response["projects"][0]["id"]
         elif "projects" in response and len(response["projects"]) > 1:
             raise ApiValueError("Multiple project ids have been returned, \
-                 please specify one when initializing credentials.")
+                 please specify one when initializing the credentials.")
         else:
-            raise ApiValueError("No project id found.")
+            raise ApiValueError("No project id found, "
+                                "please specify project_id manually when initializing the credentials.")
     else:
-        raise ApiValueError("No project id found.")
+        raise ApiValueError("No project id found, "
+                            "please specify project_id manually when initializing the credentials.")
 
 
 def get_keystone_list_auth_domains_request(iam_endpoint=None):
@@ -84,6 +86,13 @@ def keystone_list_auth_domains(http_client, request):
         if "domains" in response and len(response["domains"]) == 1:
             return response["domains"][0]["id"]
         else:
-            raise ApiValueError("No domain id found.")
+            raise ApiValueError("No domain id found, please select one of the following solutions:\n\t"
+                                "1. Manually specify domain_id when initializing the credentials.\n\t"
+                                "2. Use the domain account to grant the current account permissions "
+                                "of the IAM service.\n\t"
+                                "3. Use AK/SK of the domain account.")
     else:
-        raise ApiValueError("No domain id found.")
+        raise ApiValueError("No domain id found, please select one of the following solutions:\n\t"
+                            "1. Manually specify domain_id when initializing the credentials.\n\t"
+                            "2. Use the domain account to grant the current account permissions of the IAM service.\n\t"
+                            "3. Use AK/SK of the domain account.")

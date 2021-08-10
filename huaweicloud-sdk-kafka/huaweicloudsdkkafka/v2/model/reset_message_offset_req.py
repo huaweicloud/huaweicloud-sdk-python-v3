@@ -124,7 +124,7 @@ class ResetMessageOffsetReq:
     def timestamp(self):
         """Gets the timestamp of this ResetMessageOffsetReq.
 
-        重置的消费进度到指定时间，格式为unix时间戳。 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 如果晚于最晚的timestamp，则重置到最晚的timestamp。 message_offset、timestamp二者必选其一。 
+        重置的消费进度到指定时间，格式为unix时间戳，单位为毫秒。 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 如果晚于最晚的timestamp，则重置到最晚的timestamp。 message_offset、timestamp二者必选其一。 
 
         :return: The timestamp of this ResetMessageOffsetReq.
         :rtype: int
@@ -135,7 +135,7 @@ class ResetMessageOffsetReq:
     def timestamp(self, timestamp):
         """Sets the timestamp of this ResetMessageOffsetReq.
 
-        重置的消费进度到指定时间，格式为unix时间戳。 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 如果晚于最晚的timestamp，则重置到最晚的timestamp。 message_offset、timestamp二者必选其一。 
+        重置的消费进度到指定时间，格式为unix时间戳，单位为毫秒。 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 如果晚于最晚的timestamp，则重置到最晚的timestamp。 message_offset、timestamp二者必选其一。 
 
         :param timestamp: The timestamp of this ResetMessageOffsetReq.
         :type: int
@@ -170,11 +170,16 @@ class ResetMessageOffsetReq:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

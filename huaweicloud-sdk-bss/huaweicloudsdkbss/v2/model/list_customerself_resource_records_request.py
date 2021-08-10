@@ -426,7 +426,7 @@ class ListCustomerselfResourceRecordsRequest:
     def bill_date_begin(self):
         """Gets the bill_date_begin of this ListCustomerselfResourceRecordsRequest.
 
-        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。
+        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
         :return: The bill_date_begin of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -437,7 +437,7 @@ class ListCustomerselfResourceRecordsRequest:
     def bill_date_begin(self, bill_date_begin):
         """Sets the bill_date_begin of this ListCustomerselfResourceRecordsRequest.
 
-        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。
+        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
         :param bill_date_begin: The bill_date_begin of this ListCustomerselfResourceRecordsRequest.
         :type: str
@@ -494,11 +494,16 @@ class ListCustomerselfResourceRecordsRequest:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

@@ -37,13 +37,14 @@ class ProtocolOption:
         self._mapping_id = None
         self.discriminator = None
 
-        self.mapping_id = mapping_id
+        if mapping_id is not None:
+            self.mapping_id = mapping_id
 
     @property
     def mapping_id(self):
         """Gets the mapping_id of this ProtocolOption.
 
-        映射ID。
+        映射ID。身份提供商类型为iam_user_sso时，不需要绑定映射ID，无需传入此字段；否则此字段必填。
 
         :return: The mapping_id of this ProtocolOption.
         :rtype: str
@@ -54,7 +55,7 @@ class ProtocolOption:
     def mapping_id(self, mapping_id):
         """Sets the mapping_id of this ProtocolOption.
 
-        映射ID。
+        映射ID。身份提供商类型为iam_user_sso时，不需要绑定映射ID，无需传入此字段；否则此字段必填。
 
         :param mapping_id: The mapping_id of this ProtocolOption.
         :type: str
@@ -89,11 +90,16 @@ class ProtocolOption:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

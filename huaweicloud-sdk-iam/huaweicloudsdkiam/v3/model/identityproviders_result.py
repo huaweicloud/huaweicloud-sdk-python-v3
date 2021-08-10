@@ -22,6 +22,7 @@ class IdentityprovidersResult:
     sensitive_list = []
 
     openapi_types = {
+        'sso_type': 'str',
         'id': 'str',
         'description': 'str',
         'enabled': 'bool',
@@ -30,6 +31,7 @@ class IdentityprovidersResult:
     }
 
     attribute_map = {
+        'sso_type': 'sso_type',
         'id': 'id',
         'description': 'description',
         'enabled': 'enabled',
@@ -37,11 +39,12 @@ class IdentityprovidersResult:
         'links': 'links'
     }
 
-    def __init__(self, id=None, description=None, enabled=None, remote_ids=None, links=None):
+    def __init__(self, sso_type=None, id=None, description=None, enabled=None, remote_ids=None, links=None):
         """IdentityprovidersResult - a model defined in huaweicloud sdk"""
         
         
 
+        self._sso_type = None
         self._id = None
         self._description = None
         self._enabled = None
@@ -49,11 +52,34 @@ class IdentityprovidersResult:
         self._links = None
         self.discriminator = None
 
+        self.sso_type = sso_type
         self.id = id
         self.description = description
         self.enabled = enabled
         self.remote_ids = remote_ids
         self.links = links
+
+    @property
+    def sso_type(self):
+        """Gets the sso_type of this IdentityprovidersResult.
+
+        身份提供商类型。当前支持virtual_user_sso和iam_user_sso两种。当返回为空字符串或者null时，默认为缺省类型virtual_user_sso类型。
+
+        :return: The sso_type of this IdentityprovidersResult.
+        :rtype: str
+        """
+        return self._sso_type
+
+    @sso_type.setter
+    def sso_type(self, sso_type):
+        """Sets the sso_type of this IdentityprovidersResult.
+
+        身份提供商类型。当前支持virtual_user_sso和iam_user_sso两种。当返回为空字符串或者null时，默认为缺省类型virtual_user_sso类型。
+
+        :param sso_type: The sso_type of this IdentityprovidersResult.
+        :type: str
+        """
+        self._sso_type = sso_type
 
     @property
     def id(self):
@@ -191,11 +217,16 @@ class IdentityprovidersResult:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

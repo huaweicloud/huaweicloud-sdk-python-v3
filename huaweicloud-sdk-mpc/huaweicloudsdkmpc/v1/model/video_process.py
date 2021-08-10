@@ -23,33 +23,28 @@ class VideoProcess:
 
     openapi_types = {
         'rotate': 'int',
-        'black_enhance': 'BlackEnhance',
         'adaptation': 'str',
         'upsample': 'int'
     }
 
     attribute_map = {
         'rotate': 'rotate',
-        'black_enhance': 'black_enhance',
         'adaptation': 'adaptation',
         'upsample': 'upsample'
     }
 
-    def __init__(self, rotate=None, black_enhance=None, adaptation=None, upsample=None):
+    def __init__(self, rotate=None, adaptation=None, upsample=None):
         """VideoProcess - a model defined in huaweicloud sdk"""
         
         
 
         self._rotate = None
-        self._black_enhance = None
         self._adaptation = None
         self._upsample = None
         self.discriminator = None
 
         if rotate is not None:
             self.rotate = rotate
-        if black_enhance is not None:
-            self.black_enhance = black_enhance
         if adaptation is not None:
             self.adaptation = adaptation
         if upsample is not None:
@@ -76,26 +71,6 @@ class VideoProcess:
         :type: int
         """
         self._rotate = rotate
-
-    @property
-    def black_enhance(self):
-        """Gets the black_enhance of this VideoProcess.
-
-
-        :return: The black_enhance of this VideoProcess.
-        :rtype: BlackEnhance
-        """
-        return self._black_enhance
-
-    @black_enhance.setter
-    def black_enhance(self, black_enhance):
-        """Sets the black_enhance of this VideoProcess.
-
-
-        :param black_enhance: The black_enhance of this VideoProcess.
-        :type: BlackEnhance
-        """
-        self._black_enhance = black_enhance
 
     @property
     def adaptation(self):
@@ -169,11 +144,16 @@ class VideoProcess:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

@@ -23,32 +23,27 @@ class CreateDeploymentResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
-        'locations': 'list[Location]',
-        'order_id': 'str'
+        'locations': 'list[Location]'
     }
 
     attribute_map = {
         'id': 'id',
-        'locations': 'locations',
-        'order_id': 'order_id'
+        'locations': 'locations'
     }
 
-    def __init__(self, id=None, locations=None, order_id=None):
+    def __init__(self, id=None, locations=None):
         """CreateDeploymentResponse - a model defined in huaweicloud sdk"""
         
         super(CreateDeploymentResponse, self).__init__()
 
         self._id = None
         self._locations = None
-        self._order_id = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if locations is not None:
             self.locations = locations
-        if order_id is not None:
-            self.order_id = order_id
 
     @property
     def id(self):
@@ -94,28 +89,6 @@ class CreateDeploymentResponse(SdkResponse):
         """
         self._locations = locations
 
-    @property
-    def order_id(self):
-        """Gets the order_id of this CreateDeploymentResponse.
-
-        订单ID。 开通包年/包月资源时返回。
-
-        :return: The order_id of this CreateDeploymentResponse.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        """Sets the order_id of this CreateDeploymentResponse.
-
-        订单ID。 开通包年/包月资源时返回。
-
-        :param order_id: The order_id of this CreateDeploymentResponse.
-        :type: str
-        """
-        self._order_id = order_id
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -144,11 +117,16 @@ class CreateDeploymentResponse(SdkResponse):
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

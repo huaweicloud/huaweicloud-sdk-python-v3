@@ -341,7 +341,7 @@ class QueryDeptResultDTO:
     def designated_out_dept_codes(self):
         """Gets the designated_out_dept_codes of this QueryDeptResultDTO.
 
-        允许访问的部门列表。
+        允许访问的部门列表，id为部门编码。
 
         :return: The designated_out_dept_codes of this QueryDeptResultDTO.
         :rtype: list[IdMarkDTO]
@@ -352,7 +352,7 @@ class QueryDeptResultDTO:
     def designated_out_dept_codes(self, designated_out_dept_codes):
         """Sets the designated_out_dept_codes of this QueryDeptResultDTO.
 
-        允许访问的部门列表。
+        允许访问的部门列表，id为部门编码。
 
         :param designated_out_dept_codes: The designated_out_dept_codes of this QueryDeptResultDTO.
         :type: list[IdMarkDTO]
@@ -387,11 +387,16 @@ class QueryDeptResultDTO:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

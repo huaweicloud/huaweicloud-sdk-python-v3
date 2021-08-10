@@ -152,7 +152,7 @@ class ShowMessagesRespMessages:
     def timestamp(self):
         """Gets the timestamp of this ShowMessagesRespMessages.
 
-        消息时间戳。
+        生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 
         :return: The timestamp of this ShowMessagesRespMessages.
         :rtype: int
@@ -163,7 +163,7 @@ class ShowMessagesRespMessages:
     def timestamp(self, timestamp):
         """Sets the timestamp of this ShowMessagesRespMessages.
 
-        消息时间戳。
+        生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 
         :param timestamp: The timestamp of this ShowMessagesRespMessages.
         :type: int
@@ -198,11 +198,16 @@ class ShowMessagesRespMessages:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

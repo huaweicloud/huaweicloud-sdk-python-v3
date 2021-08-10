@@ -23,7 +23,6 @@ class ThumbnailPara:
 
     openapi_types = {
         'type': 'str',
-        'percent': 'int',
         'time': 'int',
         'start_time': 'int',
         'duration': 'int',
@@ -33,13 +32,11 @@ class ThumbnailPara:
         'aspect_ratio': 'int',
         'width': 'int',
         'height': 'int',
-        'max_length': 'int',
-        'frame_type': 'str'
+        'max_length': 'int'
     }
 
     attribute_map = {
         'type': 'type',
-        'percent': 'percent',
         'time': 'time',
         'start_time': 'start_time',
         'duration': 'duration',
@@ -49,17 +46,15 @@ class ThumbnailPara:
         'aspect_ratio': 'aspect_ratio',
         'width': 'width',
         'height': 'height',
-        'max_length': 'max_length',
-        'frame_type': 'frame_type'
+        'max_length': 'max_length'
     }
 
-    def __init__(self, type=None, percent=None, time=None, start_time=None, duration=None, dots=None, output_filename=None, format=None, aspect_ratio=None, width=None, height=None, max_length=None, frame_type=None):
+    def __init__(self, type=None, time=None, start_time=None, duration=None, dots=None, output_filename=None, format=None, aspect_ratio=None, width=None, height=None, max_length=None):
         """ThumbnailPara - a model defined in huaweicloud sdk"""
         
         
 
         self._type = None
-        self._percent = None
         self._time = None
         self._start_time = None
         self._duration = None
@@ -70,13 +65,10 @@ class ThumbnailPara:
         self._width = None
         self._height = None
         self._max_length = None
-        self._frame_type = None
         self.discriminator = None
 
         if type is not None:
             self.type = type
-        if percent is not None:
-            self.percent = percent
         if time is not None:
             self.time = time
         if start_time is not None:
@@ -97,8 +89,6 @@ class ThumbnailPara:
             self.height = height
         if max_length is not None:
             self.max_length = max_length
-        if frame_type is not None:
-            self.frame_type = frame_type
 
     @property
     def type(self):
@@ -121,28 +111,6 @@ class ThumbnailPara:
         :type: str
         """
         self._type = type
-
-    @property
-    def percent(self):
-        """Gets the percent of this ThumbnailPara.
-
-        根据视频时长百分比间隔采样时的百分比值。 
-
-        :return: The percent of this ThumbnailPara.
-        :rtype: int
-        """
-        return self._percent
-
-    @percent.setter
-    def percent(self, percent):
-        """Sets the percent of this ThumbnailPara.
-
-        根据视频时长百分比间隔采样时的百分比值。 
-
-        :param percent: The percent of this ThumbnailPara.
-        :type: int
-        """
-        self._percent = percent
 
     @property
     def time(self):
@@ -364,28 +332,6 @@ class ThumbnailPara:
         """
         self._max_length = max_length
 
-    @property
-    def frame_type(self):
-        """Gets the frame_type of this ThumbnailPara.
-
-        截图的帧类型 
-
-        :return: The frame_type of this ThumbnailPara.
-        :rtype: str
-        """
-        return self._frame_type
-
-    @frame_type.setter
-    def frame_type(self, frame_type):
-        """Sets the frame_type of this ThumbnailPara.
-
-        截图的帧类型 
-
-        :param frame_type: The frame_type of this ThumbnailPara.
-        :type: str
-        """
-        self._frame_type = frame_type
-
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -414,11 +360,16 @@ class ThumbnailPara:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

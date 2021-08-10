@@ -29,7 +29,8 @@ class QueryLTSLogParams:
         'line_num': 'str',
         'is_desc': 'bool',
         'search_type': 'str',
-        'limit': 'int'
+        'limit': 'int',
+        'highlight': 'bool'
     }
 
     attribute_map = {
@@ -40,10 +41,11 @@ class QueryLTSLogParams:
         'line_num': 'line_num',
         'is_desc': 'is_desc',
         'search_type': 'search_type',
-        'limit': 'limit'
+        'limit': 'limit',
+        'highlight': 'highlight'
     }
 
-    def __init__(self, start_time=None, end_time=None, labels=None, keywords=None, line_num=None, is_desc=None, search_type=None, limit=None):
+    def __init__(self, start_time=None, end_time=None, labels=None, keywords=None, line_num=None, is_desc=None, search_type=None, limit=None, highlight=None):
         """QueryLTSLogParams - a model defined in huaweicloud sdk"""
         
         
@@ -56,6 +58,7 @@ class QueryLTSLogParams:
         self._is_desc = None
         self._search_type = None
         self._limit = None
+        self._highlight = None
         self.discriminator = None
 
         self.start_time = start_time
@@ -72,6 +75,8 @@ class QueryLTSLogParams:
             self.search_type = search_type
         if limit is not None:
             self.limit = limit
+        if highlight is not None:
+            self.highlight = highlight
 
     @property
     def start_time(self):
@@ -249,6 +254,28 @@ class QueryLTSLogParams:
         """
         self._limit = limit
 
+    @property
+    def highlight(self):
+        """Gets the highlight of this QueryLTSLogParams.
+
+        日志关键词高亮显示，默认为true（高亮显示），false为取消高亮显示。
+
+        :return: The highlight of this QueryLTSLogParams.
+        :rtype: bool
+        """
+        return self._highlight
+
+    @highlight.setter
+    def highlight(self, highlight):
+        """Sets the highlight of this QueryLTSLogParams.
+
+        日志关键词高亮显示，默认为true（高亮显示），false为取消高亮显示。
+
+        :param highlight: The highlight of this QueryLTSLogParams.
+        :type: bool
+        """
+        self._highlight = highlight
+
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
@@ -277,11 +304,16 @@ class QueryLTSLogParams:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

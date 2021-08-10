@@ -1,3 +1,177 @@
+# 3.0.55 2021-08-10
+
+### HuaweiCloud SDK Services
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 删除各服务`requirements.txt`中未使用的包
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK AS
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 修改接口`ListResourceInstances`的请求参数`key`、`value`为必填参数
+
+### HuaweiCloud SDK CloudBuild
+
+- _新增特性_
+    - 支持编译构建服务
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ListBandwidths`、`ShowPublicip`的响应参数名称调整：`publicip_border_group` -> `public_border_group`
+
+### HuaweiCloud SDK EVS
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ListVolumes`新增请求参数`server_id`
+
+### HuaweiCloud SDK FRS
+
+- _新增特性_
+    - 支持人脸识别服务
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK IAM
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`CreateDeployment`移除响应参数`order_id`
+
+### HuaweiCloud SDK IEC
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`KeystoneListPermissions`新增请求参数`permission_type`、`display_name`、`catalog`
+    - 接口`KeystoneCreateIdentityProvider`新增请求和响应参数`sso_type`
+
+### HuaweiCloud SDK IMS
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 修改接口`UpdateImage`的请求参数`value`为必填参数
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`UpdateInstanceTopic`新增请求参数`new_partition_numbers`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ListLogs`新增请求参数`highlight`
+    - 接口`ListLogs`的请求参数`search_type`新增可选值`backwards`
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ListTranscodingTask`移除响应参数`dynamic_range`
+    - 接口`CreateTransTemplate`移除请求参数`tenant_id`
+    - 接口`CreateThumbnailsTask`移除请求参数`percent`、`frame_type`
+    - 接口`CreateTranscodingTask`移除请求参数`black_enhance`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+    - 支持如下接口：
+        - `RecognizeGeneralText`
+        - `RecognizeQuotaInvoice`
+        - `RecognizeIdCard`
+        - `RecognizeHandwriting`
+        - `RecognizeVehicleLicense`
+        - `RecognizeTransportationLicense`
+        - `RecognizeTaxiInvoice`
+        - `RecognizeAutoClassification`
+        - `RecognizeTollInvoice`
+        - `RecognizeMvsInvoice`
+        - `RecognizeLicensePlate`
+        - `RecognizeFlightItinerary`
+        - `RecognizeBusinessLicense`
+        - `RecognizeWebImage`
+        - `RecognizeDriverLicense`
+        - `RecognizeBusinessCard`
+        - `RecognizeTrainTicket`
+        - `RecognizeVin`
+        - `RecognizePassport`
+        - `RecognizeBankcard`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK SWR
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ShowAccessDomain`新增以下响应参数：
+        - `namespace`
+        - `repository`
+        - `access_domain`
+        - `permit`
+        - `deadline`
+        - `description`
+        - `creator_id`
+        - `creator_name`
+        - `created`
+        - `updated`
+        - `status`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`NeutronListSubnets`新增请求参数`enable_dhcp`
+    - 接口`NeutronListSecurityGroups`新增响应参数`security_groups_links`
+
 # 3.0.54 2021-07-27
 
 ### HuaweiCloud SDK Classroom

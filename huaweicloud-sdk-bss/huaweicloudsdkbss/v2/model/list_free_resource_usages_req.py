@@ -43,7 +43,7 @@ class ListFreeResourceUsagesReq:
     def free_resource_ids(self):
         """Gets the free_resource_ids of this ListFreeResourceUsagesReq.
 
-        资源项ID列表，每个最大64字节。
+        资源项ID列表，每个最大64字节。 资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。资源项ID来自“查询资源包列表”接口的响应。
 
         :return: The free_resource_ids of this ListFreeResourceUsagesReq.
         :rtype: list[str]
@@ -54,7 +54,7 @@ class ListFreeResourceUsagesReq:
     def free_resource_ids(self, free_resource_ids):
         """Sets the free_resource_ids of this ListFreeResourceUsagesReq.
 
-        资源项ID列表，每个最大64字节。
+        资源项ID列表，每个最大64字节。 资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。资源项ID来自“查询资源包列表”接口的响应。
 
         :param free_resource_ids: The free_resource_ids of this ListFreeResourceUsagesReq.
         :type: list[str]
@@ -89,11 +89,16 @@ class ListFreeResourceUsagesReq:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):

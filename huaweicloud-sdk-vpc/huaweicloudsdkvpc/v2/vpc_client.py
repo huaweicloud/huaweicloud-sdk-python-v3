@@ -111,6 +111,71 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def associate_route_table(self, request):
+        """子网关联路由表
+
+        路由表关联子网。子网关联路由表A后，再关联B，不需要先跟路由表A解关联再关联路由表B
+
+        :param AssociateRouteTableRequest request
+        :return: AssociateRouteTableResponse
+        """
+        return self.associate_route_table_with_http_info(request)
+
+    def associate_route_table_with_http_info(self, request):
+        """子网关联路由表
+
+        路由表关联子网。子网关联路由表A后，再关联B，不需要先跟路由表A解关联再关联路由表B
+
+        :param AssociateRouteTableRequest request
+        :return: AssociateRouteTableResponse
+        """
+
+        all_params = ['routetable_id', 'routetable_associate']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/routetables/{routetable_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AssociateRouteTableResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def batch_create_subnet_tags(self, request):
         """批量创建子网资源标签
 
@@ -298,6 +363,69 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreatePortResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_route_table(self, request):
+        """创建路由表
+
+        创建路由表
+
+        :param CreateRouteTableRequest request
+        :return: CreateRouteTableResponse
+        """
+        return self.create_route_table_with_http_info(request)
+
+    def create_route_table_with_http_info(self, request):
+        """创建路由表
+
+        创建路由表
+
+        :param CreateRouteTableRequest request
+        :return: CreateRouteTableResponse
+        """
+
+        all_params = ['routetable']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/routetables',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -684,6 +812,69 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_route_table(self, request):
+        """删除路由表
+
+        删除路由表
+
+        :param DeleteRouteTableRequest request
+        :return: DeleteRouteTableResponse
+        """
+        return self.delete_route_table_with_http_info(request)
+
+    def delete_route_table_with_http_info(self, request):
+        """删除路由表
+
+        删除路由表
+
+        :param DeleteRouteTableRequest request
+        :return: DeleteRouteTableResponse
+        """
+
+        all_params = ['routetable_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/routetables/{routetable_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteRouteTableResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_security_group(self, request):
         """删除安全组
 
@@ -1003,6 +1194,71 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def disassociate_route_table(self, request):
+        """子网解关联路由表
+
+        子网解关联路由表
+
+        :param DisassociateRouteTableRequest request
+        :return: DisassociateRouteTableResponse
+        """
+        return self.disassociate_route_table_with_http_info(request)
+
+    def disassociate_route_table_with_http_info(self, request):
+        """子网解关联路由表
+
+        子网解关联路由表
+
+        :param DisassociateRouteTableRequest request
+        :return: DisassociateRouteTableResponse
+        """
+
+        all_params = ['routetable_id', 'routetable_associate']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/routetables/{routetable_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DisassociateRouteTableResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_ports(self, request):
         """查询端口列表
 
@@ -1082,6 +1338,77 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListPortsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_route_tables(self, request):
+        """查询路由表列表
+
+        查询提交请求的帐户的所有路由表列表，并根据过滤条件进行过滤
+
+        :param ListRouteTablesRequest request
+        :return: ListRouteTablesResponse
+        """
+        return self.list_route_tables_with_http_info(request)
+
+    def list_route_tables_with_http_info(self, request):
+        """查询路由表列表
+
+        查询提交请求的帐户的所有路由表列表，并根据过滤条件进行过滤
+
+        :param ListRouteTablesRequest request
+        :return: ListRouteTablesResponse
+        """
+
+        all_params = ['limit', 'marker', 'id', 'vpc_id', 'subnet_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+        if 'subnet_id' in local_var_params:
+            query_params.append(('subnet_id', local_var_params['subnet_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/routetables',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRouteTablesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1679,6 +2006,69 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_route_table(self, request):
+        """查询路由表
+
+        查询路由表详情
+
+        :param ShowRouteTableRequest request
+        :return: ShowRouteTableResponse
+        """
+        return self.show_route_table_with_http_info(request)
+
+    def show_route_table_with_http_info(self, request):
+        """查询路由表
+
+        查询路由表详情
+
+        :param ShowRouteTableRequest request
+        :return: ShowRouteTableResponse
+        """
+
+        all_params = ['routetable_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/routetables/{routetable_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRouteTableResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_security_group(self, request):
         """查询安全组
 
@@ -2053,6 +2443,71 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdatePortResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_route_table(self, request):
+        """更新路由表
+
+        更新路由表，包括可以更新路由表的名称，描述，以及新增、更新、删除路由条目
+
+        :param UpdateRouteTableRequest request
+        :return: UpdateRouteTableResponse
+        """
+        return self.update_route_table_with_http_info(request)
+
+    def update_route_table_with_http_info(self, request):
+        """更新路由表
+
+        更新路由表，包括可以更新路由表的名称，描述，以及新增、更新、删除路由条目
+
+        :param UpdateRouteTableRequest request
+        :return: UpdateRouteTableResponse
+        """
+
+        all_params = ['routetable_id', 'routetable']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/routetables/{routetable_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateRouteTableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

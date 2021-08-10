@@ -23,7 +23,6 @@ class QueryTransTemplate:
 
     openapi_types = {
         'template_name': 'str',
-        'tenant_id': 'str',
         'video': 'Video',
         'audio': 'Audio',
         'common': 'Common'
@@ -31,27 +30,23 @@ class QueryTransTemplate:
 
     attribute_map = {
         'template_name': 'template_name',
-        'tenant_id': 'tenant_id',
         'video': 'video',
         'audio': 'audio',
         'common': 'common'
     }
 
-    def __init__(self, template_name=None, tenant_id=None, video=None, audio=None, common=None):
+    def __init__(self, template_name=None, video=None, audio=None, common=None):
         """QueryTransTemplate - a model defined in huaweicloud sdk"""
         
         
 
         self._template_name = None
-        self._tenant_id = None
         self._video = None
         self._audio = None
         self._common = None
         self.discriminator = None
 
         self.template_name = template_name
-        if tenant_id is not None:
-            self.tenant_id = tenant_id
         self.video = video
         if audio is not None:
             self.audio = audio
@@ -79,28 +74,6 @@ class QueryTransTemplate:
         :type: str
         """
         self._template_name = template_name
-
-    @property
-    def tenant_id(self):
-        """Gets the tenant_id of this QueryTransTemplate.
-
-        租户ID。 
-
-        :return: The tenant_id of this QueryTransTemplate.
-        :rtype: str
-        """
-        return self._tenant_id
-
-    @tenant_id.setter
-    def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this QueryTransTemplate.
-
-        租户ID。 
-
-        :param tenant_id: The tenant_id of this QueryTransTemplate.
-        :type: str
-        """
-        self._tenant_id = tenant_id
 
     @property
     def video(self):
@@ -190,11 +163,16 @@ class QueryTransTemplate:
         return result
 
     def to_str(self):
+        """Returns the string representation of the model"""
         import simplejson as json
-        return json.dumps(sanitize_for_serialization(self))
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):
-        """For `print` and `pprint`"""
+        """For `print`"""
         return self.to_str()
 
     def __eq__(self, other):
