@@ -26,7 +26,9 @@ class NovaCreateServersSchedulerHint:
         'different_host': 'list[str]',
         'same_host': 'list[str]',
         'cidr': 'str',
-        'build_near_host_ip': 'str'
+        'build_near_host_ip': 'str',
+        'tenancy': 'str',
+        'dedicated_host_id': 'str'
     }
 
     attribute_map = {
@@ -34,10 +36,12 @@ class NovaCreateServersSchedulerHint:
         'different_host': 'different_host',
         'same_host': 'same_host',
         'cidr': 'cidr',
-        'build_near_host_ip': 'build_near_host_ip'
+        'build_near_host_ip': 'build_near_host_ip',
+        'tenancy': 'tenancy',
+        'dedicated_host_id': 'dedicated_host_id'
     }
 
-    def __init__(self, group=None, different_host=None, same_host=None, cidr=None, build_near_host_ip=None):
+    def __init__(self, group=None, different_host=None, same_host=None, cidr=None, build_near_host_ip=None, tenancy=None, dedicated_host_id=None):
         """NovaCreateServersSchedulerHint - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +51,8 @@ class NovaCreateServersSchedulerHint:
         self._same_host = None
         self._cidr = None
         self._build_near_host_ip = None
+        self._tenancy = None
+        self._dedicated_host_id = None
         self.discriminator = None
 
         if group is not None:
@@ -59,6 +65,10 @@ class NovaCreateServersSchedulerHint:
             self.cidr = cidr
         if build_near_host_ip is not None:
             self.build_near_host_ip = build_near_host_ip
+        if tenancy is not None:
+            self.tenancy = tenancy
+        if dedicated_host_id is not None:
+            self.dedicated_host_id = dedicated_host_id
 
     @property
     def group(self):
@@ -169,6 +179,50 @@ class NovaCreateServersSchedulerHint:
         :type: str
         """
         self._build_near_host_ip = build_near_host_ip
+
+    @property
+    def tenancy(self):
+        """Gets the tenancy of this NovaCreateServersSchedulerHint.
+
+        在专属主机或共享池中创建弹性云服务器。默认为在共享池创建。 值为： shared 或dedicated。 shared：表示共享池。 dedicated:表示专属主机。 创建与查询此值均有效。
+
+        :return: The tenancy of this NovaCreateServersSchedulerHint.
+        :rtype: str
+        """
+        return self._tenancy
+
+    @tenancy.setter
+    def tenancy(self, tenancy):
+        """Sets the tenancy of this NovaCreateServersSchedulerHint.
+
+        在专属主机或共享池中创建弹性云服务器。默认为在共享池创建。 值为： shared 或dedicated。 shared：表示共享池。 dedicated:表示专属主机。 创建与查询此值均有效。
+
+        :param tenancy: The tenancy of this NovaCreateServersSchedulerHint.
+        :type: str
+        """
+        self._tenancy = tenancy
+
+    @property
+    def dedicated_host_id(self):
+        """Gets the dedicated_host_id of this NovaCreateServersSchedulerHint.
+
+        专属主机ID。 此属性仅在tenancy值为dedicated时有效。 不指定此属性，系统将自动分配租户可自动放置弹性云服务器的专属主机。 创建与查询此值均有效。
+
+        :return: The dedicated_host_id of this NovaCreateServersSchedulerHint.
+        :rtype: str
+        """
+        return self._dedicated_host_id
+
+    @dedicated_host_id.setter
+    def dedicated_host_id(self, dedicated_host_id):
+        """Sets the dedicated_host_id of this NovaCreateServersSchedulerHint.
+
+        专属主机ID。 此属性仅在tenancy值为dedicated时有效。 不指定此属性，系统将自动分配租户可自动放置弹性云服务器的专属主机。 创建与查询此值均有效。
+
+        :param dedicated_host_id: The dedicated_host_id of this NovaCreateServersSchedulerHint.
+        :type: str
+        """
+        self._dedicated_host_id = dedicated_host_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,10 +31,12 @@ class ClusterExtendParam:
         'dec_master_flavor': 'str',
         'docker_umask_mode': 'str',
         'kubernetes_io_cpu_manager_policy': 'str',
+        'order_id': 'str',
         'period_type': 'str',
         'period_num': 'int',
         'is_auto_renew': 'str',
-        'is_auto_pay': 'str'
+        'is_auto_pay': 'str',
+        'upgradefrom': 'str'
     }
 
     attribute_map = {
@@ -47,13 +49,15 @@ class ClusterExtendParam:
         'dec_master_flavor': 'decMasterFlavor',
         'docker_umask_mode': 'dockerUmaskMode',
         'kubernetes_io_cpu_manager_policy': 'kubernetes.io/cpuManagerPolicy',
+        'order_id': 'orderID',
         'period_type': 'periodType',
         'period_num': 'periodNum',
         'is_auto_renew': 'isAutoRenew',
-        'is_auto_pay': 'isAutoPay'
+        'is_auto_pay': 'isAutoPay',
+        'upgradefrom': 'upgradefrom'
     }
 
-    def __init__(self, cluster_az=None, dss_master_volumes=None, enterprise_project_id=None, kube_proxy_mode=None, cluster_external_ip=None, alpha_cce_fix_pool_mask=None, dec_master_flavor=None, docker_umask_mode=None, kubernetes_io_cpu_manager_policy=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None):
+    def __init__(self, cluster_az=None, dss_master_volumes=None, enterprise_project_id=None, kube_proxy_mode=None, cluster_external_ip=None, alpha_cce_fix_pool_mask=None, dec_master_flavor=None, docker_umask_mode=None, kubernetes_io_cpu_manager_policy=None, order_id=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, upgradefrom=None):
         """ClusterExtendParam - a model defined in huaweicloud sdk"""
         
         
@@ -67,10 +71,12 @@ class ClusterExtendParam:
         self._dec_master_flavor = None
         self._docker_umask_mode = None
         self._kubernetes_io_cpu_manager_policy = None
+        self._order_id = None
         self._period_type = None
         self._period_num = None
         self._is_auto_renew = None
         self._is_auto_pay = None
+        self._upgradefrom = None
         self.discriminator = None
 
         if cluster_az is not None:
@@ -91,6 +97,8 @@ class ClusterExtendParam:
             self.docker_umask_mode = docker_umask_mode
         if kubernetes_io_cpu_manager_policy is not None:
             self.kubernetes_io_cpu_manager_policy = kubernetes_io_cpu_manager_policy
+        if order_id is not None:
+            self.order_id = order_id
         if period_type is not None:
             self.period_type = period_type
         if period_num is not None:
@@ -99,6 +107,8 @@ class ClusterExtendParam:
             self.is_auto_renew = is_auto_renew
         if is_auto_pay is not None:
             self.is_auto_pay = is_auto_pay
+        if upgradefrom is not None:
+            self.upgradefrom = upgradefrom
 
     @property
     def cluster_az(self):
@@ -299,6 +309,28 @@ class ClusterExtendParam:
         self._kubernetes_io_cpu_manager_policy = kubernetes_io_cpu_manager_policy
 
     @property
+    def order_id(self):
+        """Gets the order_id of this ClusterExtendParam.
+
+        订单ID，集群付费类型为自动付费包周期类型时，响应中会返回此字段。
+
+        :return: The order_id of this ClusterExtendParam.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this ClusterExtendParam.
+
+        订单ID，集群付费类型为自动付费包周期类型时，响应中会返回此字段。
+
+        :param order_id: The order_id of this ClusterExtendParam.
+        :type: str
+        """
+        self._order_id = order_id
+
+    @property
     def period_type(self):
         """Gets the period_type of this ClusterExtendParam.
 
@@ -385,6 +417,28 @@ class ClusterExtendParam:
         :type: str
         """
         self._is_auto_pay = is_auto_pay
+
+    @property
+    def upgradefrom(self):
+        """Gets the upgradefrom of this ClusterExtendParam.
+
+        记录集群通过何种升级方式升级到当前版本。 
+
+        :return: The upgradefrom of this ClusterExtendParam.
+        :rtype: str
+        """
+        return self._upgradefrom
+
+    @upgradefrom.setter
+    def upgradefrom(self, upgradefrom):
+        """Sets the upgradefrom of this ClusterExtendParam.
+
+        记录集群通过何种升级方式升级到当前版本。 
+
+        :param upgradefrom: The upgradefrom of this ClusterExtendParam.
+        :type: str
+        """
+        self._upgradefrom = upgradefrom
 
     def to_dict(self):
         """Returns the model properties as a dict"""

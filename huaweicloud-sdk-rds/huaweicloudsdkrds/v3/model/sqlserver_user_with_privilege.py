@@ -22,22 +22,27 @@ class SqlserverUserWithPrivilege:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str'
+        'name': 'str',
+        'readonly': 'bool'
     }
 
     attribute_map = {
-        'name': 'name'
+        'name': 'name',
+        'readonly': 'readonly'
     }
 
-    def __init__(self, name=None):
+    def __init__(self, name=None, readonly=None):
         """SqlserverUserWithPrivilege - a model defined in huaweicloud sdk"""
         
         
 
         self._name = None
+        self._readonly = None
         self.discriminator = None
 
         self.name = name
+        if readonly is not None:
+            self.readonly = readonly
 
     @property
     def name(self):
@@ -60,6 +65,28 @@ class SqlserverUserWithPrivilege:
         :type: str
         """
         self._name = name
+
+    @property
+    def readonly(self):
+        """Gets the readonly of this SqlserverUserWithPrivilege.
+
+        是否为只读权限。
+
+        :return: The readonly of this SqlserverUserWithPrivilege.
+        :rtype: bool
+        """
+        return self._readonly
+
+    @readonly.setter
+    def readonly(self, readonly):
+        """Sets the readonly of this SqlserverUserWithPrivilege.
+
+        是否为只读权限。
+
+        :param readonly: The readonly of this SqlserverUserWithPrivilege.
+        :type: bool
+        """
+        self._readonly = readonly
 
     def to_dict(self):
         """Returns the model properties as a dict"""

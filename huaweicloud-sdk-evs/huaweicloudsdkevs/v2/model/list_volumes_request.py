@@ -503,7 +503,7 @@ class ListVolumesRequest:
     def server_id(self):
         """Gets the server_id of this ListVolumesRequest.
 
-        云服务器id
+        云服务器id。
 
         :return: The server_id of this ListVolumesRequest.
         :rtype: str
@@ -514,7 +514,7 @@ class ListVolumesRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ListVolumesRequest.
 
-        云服务器id
+        云服务器id。
 
         :param server_id: The server_id of this ListVolumesRequest.
         :type: str

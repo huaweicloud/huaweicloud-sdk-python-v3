@@ -1,0 +1,410 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class TaskTargetServer:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'id': 'str',
+        'vm_id': 'str',
+        'name': 'str',
+        'ip': 'str',
+        'os_type': 'str',
+        'os_version': 'str',
+        'system_dir': 'str',
+        'disks': 'list[TargetDisk]',
+        'volume_groups': 'list[VolumeGroups]',
+        'btrfs_list': 'list[str]',
+        'image_disk_id': 'str',
+        'rollback_snapshot_ids': 'str'
+    }
+
+    attribute_map = {
+        'id': 'id',
+        'vm_id': 'vm_id',
+        'name': 'name',
+        'ip': 'ip',
+        'os_type': 'os_type',
+        'os_version': 'os_version',
+        'system_dir': 'system_dir',
+        'disks': 'disks',
+        'volume_groups': 'volume_groups',
+        'btrfs_list': 'btrfs_list',
+        'image_disk_id': 'image_disk_id',
+        'rollback_snapshot_ids': 'rollback_snapshot_ids'
+    }
+
+    def __init__(self, id=None, vm_id=None, name=None, ip=None, os_type=None, os_version=None, system_dir=None, disks=None, volume_groups=None, btrfs_list=None, image_disk_id=None, rollback_snapshot_ids=None):
+        """TaskTargetServer - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._id = None
+        self._vm_id = None
+        self._name = None
+        self._ip = None
+        self._os_type = None
+        self._os_version = None
+        self._system_dir = None
+        self._disks = None
+        self._volume_groups = None
+        self._btrfs_list = None
+        self._image_disk_id = None
+        self._rollback_snapshot_ids = None
+        self.discriminator = None
+
+        if id is not None:
+            self.id = id
+        if vm_id is not None:
+            self.vm_id = vm_id
+        if name is not None:
+            self.name = name
+        if ip is not None:
+            self.ip = ip
+        if os_type is not None:
+            self.os_type = os_type
+        if os_version is not None:
+            self.os_version = os_version
+        if system_dir is not None:
+            self.system_dir = system_dir
+        self.disks = disks
+        if volume_groups is not None:
+            self.volume_groups = volume_groups
+        if btrfs_list is not None:
+            self.btrfs_list = btrfs_list
+        if image_disk_id is not None:
+            self.image_disk_id = image_disk_id
+        if rollback_snapshot_ids is not None:
+            self.rollback_snapshot_ids = rollback_snapshot_ids
+
+    @property
+    def id(self):
+        """Gets the id of this TaskTargetServer.
+
+        目的端在SMS数据库中的ID
+
+        :return: The id of this TaskTargetServer.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this TaskTargetServer.
+
+        目的端在SMS数据库中的ID
+
+        :param id: The id of this TaskTargetServer.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def vm_id(self):
+        """Gets the vm_id of this TaskTargetServer.
+
+        目的端服务器ID，自动创建虚拟机不需要这个参数
+
+        :return: The vm_id of this TaskTargetServer.
+        :rtype: str
+        """
+        return self._vm_id
+
+    @vm_id.setter
+    def vm_id(self, vm_id):
+        """Sets the vm_id of this TaskTargetServer.
+
+        目的端服务器ID，自动创建虚拟机不需要这个参数
+
+        :param vm_id: The vm_id of this TaskTargetServer.
+        :type: str
+        """
+        self._vm_id = vm_id
+
+    @property
+    def name(self):
+        """Gets the name of this TaskTargetServer.
+
+        目的端服务器的名称
+
+        :return: The name of this TaskTargetServer.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this TaskTargetServer.
+
+        目的端服务器的名称
+
+        :param name: The name of this TaskTargetServer.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def ip(self):
+        """Gets the ip of this TaskTargetServer.
+
+        目的端服务器ip
+
+        :return: The ip of this TaskTargetServer.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this TaskTargetServer.
+
+        目的端服务器ip
+
+        :param ip: The ip of this TaskTargetServer.
+        :type: str
+        """
+        self._ip = ip
+
+    @property
+    def os_type(self):
+        """Gets the os_type of this TaskTargetServer.
+
+        源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
+
+        :return: The os_type of this TaskTargetServer.
+        :rtype: str
+        """
+        return self._os_type
+
+    @os_type.setter
+    def os_type(self, os_type):
+        """Sets the os_type of this TaskTargetServer.
+
+        源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
+
+        :param os_type: The os_type of this TaskTargetServer.
+        :type: str
+        """
+        self._os_type = os_type
+
+    @property
+    def os_version(self):
+        """Gets the os_version of this TaskTargetServer.
+
+        操作系统版本，注册必选，更新非必选
+
+        :return: The os_version of this TaskTargetServer.
+        :rtype: str
+        """
+        return self._os_version
+
+    @os_version.setter
+    def os_version(self, os_version):
+        """Sets the os_version of this TaskTargetServer.
+
+        操作系统版本，注册必选，更新非必选
+
+        :param os_version: The os_version of this TaskTargetServer.
+        :type: str
+        """
+        self._os_version = os_version
+
+    @property
+    def system_dir(self):
+        """Gets the system_dir of this TaskTargetServer.
+
+        Windows必选，系统目录
+
+        :return: The system_dir of this TaskTargetServer.
+        :rtype: str
+        """
+        return self._system_dir
+
+    @system_dir.setter
+    def system_dir(self, system_dir):
+        """Sets the system_dir of this TaskTargetServer.
+
+        Windows必选，系统目录
+
+        :param system_dir: The system_dir of this TaskTargetServer.
+        :type: str
+        """
+        self._system_dir = system_dir
+
+    @property
+    def disks(self):
+        """Gets the disks of this TaskTargetServer.
+
+        目的端磁盘信息，一般和源端保持一致
+
+        :return: The disks of this TaskTargetServer.
+        :rtype: list[TargetDisk]
+        """
+        return self._disks
+
+    @disks.setter
+    def disks(self, disks):
+        """Sets the disks of this TaskTargetServer.
+
+        目的端磁盘信息，一般和源端保持一致
+
+        :param disks: The disks of this TaskTargetServer.
+        :type: list[TargetDisk]
+        """
+        self._disks = disks
+
+    @property
+    def volume_groups(self):
+        """Gets the volume_groups of this TaskTargetServer.
+
+        lvm信息，一般和源端保持一致
+
+        :return: The volume_groups of this TaskTargetServer.
+        :rtype: list[VolumeGroups]
+        """
+        return self._volume_groups
+
+    @volume_groups.setter
+    def volume_groups(self, volume_groups):
+        """Sets the volume_groups of this TaskTargetServer.
+
+        lvm信息，一般和源端保持一致
+
+        :param volume_groups: The volume_groups of this TaskTargetServer.
+        :type: list[VolumeGroups]
+        """
+        self._volume_groups = volume_groups
+
+    @property
+    def btrfs_list(self):
+        """Gets the btrfs_list of this TaskTargetServer.
+
+        Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
+
+        :return: The btrfs_list of this TaskTargetServer.
+        :rtype: list[str]
+        """
+        return self._btrfs_list
+
+    @btrfs_list.setter
+    def btrfs_list(self, btrfs_list):
+        """Sets the btrfs_list of this TaskTargetServer.
+
+        Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
+
+        :param btrfs_list: The btrfs_list of this TaskTargetServer.
+        :type: list[str]
+        """
+        self._btrfs_list = btrfs_list
+
+    @property
+    def image_disk_id(self):
+        """Gets the image_disk_id of this TaskTargetServer.
+
+        目的端代理镜像磁盘id
+
+        :return: The image_disk_id of this TaskTargetServer.
+        :rtype: str
+        """
+        return self._image_disk_id
+
+    @image_disk_id.setter
+    def image_disk_id(self, image_disk_id):
+        """Sets the image_disk_id of this TaskTargetServer.
+
+        目的端代理镜像磁盘id
+
+        :param image_disk_id: The image_disk_id of this TaskTargetServer.
+        :type: str
+        """
+        self._image_disk_id = image_disk_id
+
+    @property
+    def rollback_snapshot_ids(self):
+        """Gets the rollback_snapshot_ids of this TaskTargetServer.
+
+        目的端回滚快照id
+
+        :return: The rollback_snapshot_ids of this TaskTargetServer.
+        :rtype: str
+        """
+        return self._rollback_snapshot_ids
+
+    @rollback_snapshot_ids.setter
+    def rollback_snapshot_ids(self, rollback_snapshot_ids):
+        """Sets the rollback_snapshot_ids of this TaskTargetServer.
+
+        目的端回滚快照id
+
+        :param rollback_snapshot_ids: The rollback_snapshot_ids of this TaskTargetServer.
+        :type: str
+        """
+        self._rollback_snapshot_ids = rollback_snapshot_ids
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, TaskTargetServer):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

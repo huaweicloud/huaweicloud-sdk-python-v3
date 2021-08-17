@@ -29,7 +29,9 @@ class DecoupledLiveDomainInfo:
         'domain_cname': 'str',
         'status': 'str',
         'related_domain': 'str',
-        'create_time': 'datetime'
+        'create_time': 'datetime',
+        'status_describe': 'str',
+        'service_area': 'str'
     }
 
     attribute_map = {
@@ -40,10 +42,12 @@ class DecoupledLiveDomainInfo:
         'domain_cname': 'domain_cname',
         'status': 'status',
         'related_domain': 'related_domain',
-        'create_time': 'create_time'
+        'create_time': 'create_time',
+        'status_describe': 'status_describe',
+        'service_area': 'service_area'
     }
 
-    def __init__(self, domain=None, domain_type=None, vendor=None, region=None, domain_cname=None, status=None, related_domain=None, create_time=None):
+    def __init__(self, domain=None, domain_type=None, vendor=None, region=None, domain_cname=None, status=None, related_domain=None, create_time=None, status_describe=None, service_area=None):
         """DecoupledLiveDomainInfo - a model defined in huaweicloud sdk"""
         
         
@@ -56,6 +60,8 @@ class DecoupledLiveDomainInfo:
         self._status = None
         self._related_domain = None
         self._create_time = None
+        self._status_describe = None
+        self._service_area = None
         self.discriminator = None
 
         self.domain = domain
@@ -66,6 +72,10 @@ class DecoupledLiveDomainInfo:
         self.status = status
         self.related_domain = related_domain
         self.create_time = create_time
+        if status_describe is not None:
+            self.status_describe = status_describe
+        if service_area is not None:
+            self.service_area = service_area
 
     @property
     def domain(self):
@@ -242,6 +252,50 @@ class DecoupledLiveDomainInfo:
         :type: datetime
         """
         self._create_time = create_time
+
+    @property
+    def status_describe(self):
+        """Gets the status_describe of this DecoupledLiveDomainInfo.
+
+        状态描述
+
+        :return: The status_describe of this DecoupledLiveDomainInfo.
+        :rtype: str
+        """
+        return self._status_describe
+
+    @status_describe.setter
+    def status_describe(self, status_describe):
+        """Sets the status_describe of this DecoupledLiveDomainInfo.
+
+        状态描述
+
+        :param status_describe: The status_describe of this DecoupledLiveDomainInfo.
+        :type: str
+        """
+        self._status_describe = status_describe
+
+    @property
+    def service_area(self):
+        """Gets the service_area of this DecoupledLiveDomainInfo.
+
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+
+        :return: The service_area of this DecoupledLiveDomainInfo.
+        :rtype: str
+        """
+        return self._service_area
+
+    @service_area.setter
+    def service_area(self, service_area):
+        """Sets the service_area of this DecoupledLiveDomainInfo.
+
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+
+        :param service_area: The service_area of this DecoupledLiveDomainInfo.
+        :type: str
+        """
+        self._service_area = service_area
 
     def to_dict(self):
         """Returns the model properties as a dict"""

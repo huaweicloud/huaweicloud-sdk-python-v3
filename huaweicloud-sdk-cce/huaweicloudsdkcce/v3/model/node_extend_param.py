@@ -37,7 +37,9 @@ class NodeExtendParam:
         'alpha_cce_post_install': 'str',
         'alpha_cce_node_image_id': 'str',
         'nic_multiqueue': 'str',
-        'nic_threshold': 'str'
+        'nic_threshold': 'str',
+        'enterprise_project_id': 'str',
+        'charging_mode': 'int'
     }
 
     attribute_map = {
@@ -56,10 +58,12 @@ class NodeExtendParam:
         'alpha_cce_post_install': 'alpha.cce/postInstall',
         'alpha_cce_node_image_id': 'alpha.cce/NodeImageID',
         'nic_multiqueue': 'nicMultiqueue',
-        'nic_threshold': 'nicThreshold'
+        'nic_threshold': 'nicThreshold',
+        'enterprise_project_id': 'enterprise_project_id',
+        'charging_mode': 'chargingMode'
     }
 
-    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, nic_multiqueue=None, nic_threshold=None):
+    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, nic_multiqueue=None, nic_threshold=None, enterprise_project_id=None, charging_mode=None):
         """NodeExtendParam - a model defined in huaweicloud sdk"""
         
         
@@ -80,6 +84,8 @@ class NodeExtendParam:
         self._alpha_cce_node_image_id = None
         self._nic_multiqueue = None
         self._nic_threshold = None
+        self._enterprise_project_id = None
+        self._charging_mode = None
         self.discriminator = None
 
         if ecsperformancetype is not None:
@@ -114,6 +120,10 @@ class NodeExtendParam:
             self.nic_multiqueue = nic_multiqueue
         if nic_threshold is not None:
             self.nic_threshold = nic_threshold
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if charging_mode is not None:
+            self.charging_mode = charging_mode
 
     @property
     def ecsperformancetype(self):
@@ -466,6 +476,50 @@ class NodeExtendParam:
         :type: str
         """
         self._nic_threshold = nic_threshold
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this NodeExtendParam.
+
+        节点所属的企业项目id。 
+
+        :return: The enterprise_project_id of this NodeExtendParam.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this NodeExtendParam.
+
+        节点所属的企业项目id。 
+
+        :param enterprise_project_id: The enterprise_project_id of this NodeExtendParam.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def charging_mode(self):
+        """Gets the charging_mode of this NodeExtendParam.
+
+        节点的计费模式。已废弃，请使用NodeSpec中的billingMode字段。 
+
+        :return: The charging_mode of this NodeExtendParam.
+        :rtype: int
+        """
+        return self._charging_mode
+
+    @charging_mode.setter
+    def charging_mode(self, charging_mode):
+        """Sets the charging_mode of this NodeExtendParam.
+
+        节点的计费模式。已废弃，请使用NodeSpec中的billingMode字段。 
+
+        :param charging_mode: The charging_mode of this NodeExtendParam.
+        :type: int
+        """
+        self._charging_mode = charging_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

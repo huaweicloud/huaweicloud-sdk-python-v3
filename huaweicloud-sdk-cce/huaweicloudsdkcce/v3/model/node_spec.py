@@ -101,7 +101,8 @@ class NodeSpec:
             self.public_ip = public_ip
         if node_nic_spec is not None:
             self.node_nic_spec = node_nic_spec
-        self.count = count
+        if count is not None:
+            self.count = count
         if billing_mode is not None:
             self.billing_mode = billing_mode
         if taints is not None:
@@ -311,7 +312,7 @@ class NodeSpec:
     def count(self):
         """Gets the count of this NodeSpec.
 
-        批量创建时节点的个数，必须为大于等于1，小于等于最大限额的正整数。作用于节点池时该项允许为0
+        批量创建时节点的个数，必须为大于等于1，小于等于最大限额的正整数。作用于节点池时该项可以不填写。
 
         :return: The count of this NodeSpec.
         :rtype: int
@@ -322,7 +323,7 @@ class NodeSpec:
     def count(self, count):
         """Sets the count of this NodeSpec.
 
-        批量创建时节点的个数，必须为大于等于1，小于等于最大限额的正整数。作用于节点池时该项允许为0
+        批量创建时节点的个数，必须为大于等于1，小于等于最大限额的正整数。作用于节点池时该项可以不填写。
 
         :param count: The count of this NodeSpec.
         :type: int

@@ -53,7 +53,8 @@ class FlavorExtraSpec:
         'condcompute': 'str',
         'infogpuname': 'str',
         'infocpuname': 'str',
-        'quotagpu': 'str'
+        'quotagpu': 'str',
+        'ecsinstance_architecture': 'str'
     }
 
     attribute_map = {
@@ -88,10 +89,11 @@ class FlavorExtraSpec:
         'condcompute': 'cond:compute',
         'infogpuname': 'info:gpu:name',
         'infocpuname': 'info:cpu:name',
-        'quotagpu': 'quota:gpu'
+        'quotagpu': 'quota:gpu',
+        'ecsinstance_architecture': 'ecs:instance_architecture'
     }
 
-    def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None):
+    def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None, ecsinstance_architecture=None):
         """FlavorExtraSpec - a model defined in huaweicloud sdk"""
         
         
@@ -128,6 +130,7 @@ class FlavorExtraSpec:
         self._infogpuname = None
         self._infocpuname = None
         self._quotagpu = None
+        self._ecsinstance_architecture = None
         self.discriminator = None
 
         self.ecsperformancetype = ecsperformancetype
@@ -184,6 +187,8 @@ class FlavorExtraSpec:
             self.infocpuname = infocpuname
         if quotagpu is not None:
             self.quotagpu = quotagpu
+        if ecsinstance_architecture is not None:
+            self.ecsinstance_architecture = ecsinstance_architecture
 
     @property
     def ecsperformancetype(self):
@@ -888,6 +893,28 @@ class FlavorExtraSpec:
         :type: str
         """
         self._quotagpu = quotagpu
+
+    @property
+    def ecsinstance_architecture(self):
+        """Gets the ecsinstance_architecture of this FlavorExtraSpec.
+
+        该规格对应的CPU架构，且仅鲲鹏实例架构规格返回该字段  - 取值为arm64表示CPU架构为鲲鹏计算。
+
+        :return: The ecsinstance_architecture of this FlavorExtraSpec.
+        :rtype: str
+        """
+        return self._ecsinstance_architecture
+
+    @ecsinstance_architecture.setter
+    def ecsinstance_architecture(self, ecsinstance_architecture):
+        """Sets the ecsinstance_architecture of this FlavorExtraSpec.
+
+        该规格对应的CPU架构，且仅鲲鹏实例架构规格返回该字段  - 取值为arm64表示CPU架构为鲲鹏计算。
+
+        :param ecsinstance_architecture: The ecsinstance_architecture of this FlavorExtraSpec.
+        :type: str
+        """
+        self._ecsinstance_architecture = ecsinstance_architecture
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -28,6 +28,7 @@ class ShowRecordCallbackConfigResponse(SdkResponse):
         'notify_callback_url': 'str',
         'notify_event_subscription': 'list[str]',
         'on_demand_callback_url': 'str',
+        'sign_type': 'str',
         'create_time': 'date',
         'update_time': 'date'
     }
@@ -39,11 +40,12 @@ class ShowRecordCallbackConfigResponse(SdkResponse):
         'notify_callback_url': 'notify_callback_url',
         'notify_event_subscription': 'notify_event_subscription',
         'on_demand_callback_url': 'on_demand_callback_url',
+        'sign_type': 'sign_type',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, publish_domain=None, app=None, notify_callback_url=None, notify_event_subscription=None, on_demand_callback_url=None, create_time=None, update_time=None):
+    def __init__(self, id=None, publish_domain=None, app=None, notify_callback_url=None, notify_event_subscription=None, on_demand_callback_url=None, sign_type=None, create_time=None, update_time=None):
         """ShowRecordCallbackConfigResponse - a model defined in huaweicloud sdk"""
         
         super(ShowRecordCallbackConfigResponse, self).__init__()
@@ -54,6 +56,7 @@ class ShowRecordCallbackConfigResponse(SdkResponse):
         self._notify_callback_url = None
         self._notify_event_subscription = None
         self._on_demand_callback_url = None
+        self._sign_type = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -70,6 +73,8 @@ class ShowRecordCallbackConfigResponse(SdkResponse):
             self.notify_event_subscription = notify_event_subscription
         if on_demand_callback_url is not None:
             self.on_demand_callback_url = on_demand_callback_url
+        if sign_type is not None:
+            self.sign_type = sign_type
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -206,6 +211,28 @@ class ShowRecordCallbackConfigResponse(SdkResponse):
         :type: str
         """
         self._on_demand_callback_url = on_demand_callback_url
+
+    @property
+    def sign_type(self):
+        """Gets the sign_type of this ShowRecordCallbackConfigResponse.
+
+        加密类型
+
+        :return: The sign_type of this ShowRecordCallbackConfigResponse.
+        :rtype: str
+        """
+        return self._sign_type
+
+    @sign_type.setter
+    def sign_type(self, sign_type):
+        """Sets the sign_type of this ShowRecordCallbackConfigResponse.
+
+        加密类型
+
+        :param sign_type: The sign_type of this ShowRecordCallbackConfigResponse.
+        :type: str
+        """
+        self._sign_type = sign_type
 
     @property
     def create_time(self):

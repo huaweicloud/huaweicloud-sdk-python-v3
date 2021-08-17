@@ -94,6 +94,7 @@ from huaweicloudsdkcce.v3.model.node_management import NodeManagement
 from huaweicloudsdkcce.v3.model.node_metadata import NodeMetadata
 from huaweicloudsdkcce.v3.model.node_nic_spec import NodeNicSpec
 from huaweicloudsdkcce.v3.model.node_pool import NodePool
+from huaweicloudsdkcce.v3.model.node_pool_condition import NodePoolCondition
 from huaweicloudsdkcce.v3.model.node_pool_metadata import NodePoolMetadata
 from huaweicloudsdkcce.v3.model.node_pool_node_autoscaling import NodePoolNodeAutoscaling
 from huaweicloudsdkcce.v3.model.node_pool_spec import NodePoolSpec

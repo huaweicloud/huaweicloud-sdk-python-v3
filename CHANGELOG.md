@@ -1,3 +1,79 @@
+# 3.0.56 2021-08-17
+
+### HuaweiCloud SDK AntiDDoS
+
+- _Features_
+    - Support the service `Anti-DDoS`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the following response parameters to the interface `ListNodePools`:
+        - `annotations`
+        - `updateTimestamp`
+        - `creationTimestamp`
+        - `creatingNode`
+        - `deletingNode`
+        - `conditions`
+        - `enterprise_project_id`
+    - Add the response parameters `orderID` and `upgradefrom` to the interface `ListClusters`.
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the response parameter `ecs:instance_architecture` to the interface `ListServerResizeFlavors`.
+    - Add the request parameters `tenancy` and `dedicated_host_id` to the interface `NovaCreateServers`.
+
+### HuaweiCloud SDK ELB
+
+- _Features_
+    - None
+- _Bug Fix_
+    - Fix the problem of abnormal creation of LB.
+- _Change_
+    - None
+
+### HuaweiCloud SDK Live
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Remove the request parameter `key` from the interface `CreateRecordCallbackConfig`.
+    - Add the response parameter `sign_type` to the interface `ListRecordCallbackConfigs`.
+    - Add the response parameters `status_describe` and `service_area` to the interface `ShowDomain`.
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request parameter `readonly` to the interfaces `AllowSqlserverDbUserPrivilege` and `RevokeSqlserverDbUserPrivilege`.
+
+### HuaweiCloud SDK SMS
+
+- _Features_
+    - Support `Server Migration Service`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
 # 3.0.55 2021-08-10
 
 ### HuaweiCloud SDK Services

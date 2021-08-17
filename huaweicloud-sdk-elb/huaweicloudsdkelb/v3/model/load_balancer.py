@@ -54,7 +54,7 @@ class LoadBalancer:
         'elb_virsubnet_ids': 'list[str]',
         'elb_virsubnet_type': 'str',
         'ip_target_enable': 'bool',
-        'deletion_protection_enable': 'str',
+        'deletion_protection_enable': 'bool',
         'frozen_scene': 'str',
         'ipv6_bandwidth': 'BandwidthRef'
     }
@@ -893,7 +893,7 @@ class LoadBalancer:
         是否开启删除保护
 
         :return: The deletion_protection_enable of this LoadBalancer.
-        :rtype: str
+        :rtype: bool
         """
         return self._deletion_protection_enable
 
@@ -904,7 +904,7 @@ class LoadBalancer:
         是否开启删除保护
 
         :param deletion_protection_enable: The deletion_protection_enable of this LoadBalancer.
-        :type: str
+        :type: bool
         """
         self._deletion_protection_enable = deletion_protection_enable
 

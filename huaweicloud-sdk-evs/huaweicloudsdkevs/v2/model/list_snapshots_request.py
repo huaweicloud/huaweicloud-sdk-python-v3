@@ -226,7 +226,7 @@ class ListSnapshotsRequest:
     def id(self):
         """Gets the id of this ListSnapshotsRequest.
 
-        指定快照id进行过滤。
+        指定快照id进行过滤。可以传入多个id过滤查询，格式：id=id1&id=id2&id=id3
 
         :return: The id of this ListSnapshotsRequest.
         :rtype: str
@@ -237,7 +237,7 @@ class ListSnapshotsRequest:
     def id(self, id):
         """Sets the id of this ListSnapshotsRequest.
 
-        指定快照id进行过滤。
+        指定快照id进行过滤。可以传入多个id过滤查询，格式：id=id1&id=id2&id=id3
 
         :param id: The id of this ListSnapshotsRequest.
         :type: str

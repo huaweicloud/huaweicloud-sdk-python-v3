@@ -86,7 +86,7 @@ class HssAsyncClient(Client):
             query_params.append(('host_name', local_var_params['host_name']))
         if 'event_types' in local_var_params:
             query_params.append(('event_types', local_var_params['event_types']))
-            collection_formats['event_types'] = 'multi'
+            collection_formats['event_types'] = 'csv'
         if 'handle_status' in local_var_params:
             query_params.append(('handle_status', local_var_params['handle_status']))
         if 'limit' in local_var_params:
@@ -110,7 +110,7 @@ class HssAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/hss/v1/{project_id}/api/event-management/events',
+            resource_path='/v1/{project_id}/api/event-management/events',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -195,7 +195,7 @@ class HssAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/hss/v1/{project_id}/api/host-management/hosts',
+            resource_path='/v1/{project_id}/api/host-management/hosts',
             method='GET',
             path_params=path_params,
             query_params=query_params,

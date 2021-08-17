@@ -54,7 +54,8 @@ class VolumeDetail:
         'dedicated_storage_name': 'str',
         'tags': 'dict(str, str)',
         'wwn': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'serial_number': 'str'
     }
 
     attribute_map = {
@@ -90,10 +91,11 @@ class VolumeDetail:
         'dedicated_storage_name': 'dedicated_storage_name',
         'tags': 'tags',
         'wwn': 'wwn',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'serial_number': 'serial_number'
     }
 
-    def __init__(self, id=None, links=None, name=None, status=None, attachments=None, availability_zone=None, os_vol_host_attrhost=None, source_volid=None, snapshot_id=None, description=None, created_at=None, os_vol_tenant_attrtenant_id=None, volume_image_metadata=None, volume_type=None, size=None, consistencygroup_id=None, bootable=None, metadata=None, updated_at=None, encrypted=None, replication_status=None, os_volume_replicationextended_status=None, os_vol_mig_status_attrmigstat=None, os_vol_mig_status_attrname_id=None, shareable=None, user_id=None, service_type=None, multiattach=None, dedicated_storage_id=None, dedicated_storage_name=None, tags=None, wwn=None, enterprise_project_id=None):
+    def __init__(self, id=None, links=None, name=None, status=None, attachments=None, availability_zone=None, os_vol_host_attrhost=None, source_volid=None, snapshot_id=None, description=None, created_at=None, os_vol_tenant_attrtenant_id=None, volume_image_metadata=None, volume_type=None, size=None, consistencygroup_id=None, bootable=None, metadata=None, updated_at=None, encrypted=None, replication_status=None, os_volume_replicationextended_status=None, os_vol_mig_status_attrmigstat=None, os_vol_mig_status_attrname_id=None, shareable=None, user_id=None, service_type=None, multiattach=None, dedicated_storage_id=None, dedicated_storage_name=None, tags=None, wwn=None, enterprise_project_id=None, serial_number=None):
         """VolumeDetail - a model defined in huaweicloud sdk"""
         
         
@@ -131,6 +133,7 @@ class VolumeDetail:
         self._tags = None
         self._wwn = None
         self._enterprise_project_id = None
+        self._serial_number = None
         self.discriminator = None
 
         self.id = id
@@ -173,6 +176,8 @@ class VolumeDetail:
             self.wwn = wwn
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if serial_number is not None:
+            self.serial_number = serial_number
 
     @property
     def id(self):
@@ -464,7 +469,7 @@ class VolumeDetail:
     def volume_type(self):
         """Gets the volume_type of this VolumeDetail.
 
-        云硬盘类型。 目前支持“SSD”，“GPSSD”，“SAS”和“SATA”四种。 “SSD”为超高IO云硬盘 “GPSSD”为通用型云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘
+        云硬盘类型。 目前支持“SSD”，“SAS”和“SATA”三种。 “SSD”为超高IO云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘
 
         :return: The volume_type of this VolumeDetail.
         :rtype: str
@@ -475,7 +480,7 @@ class VolumeDetail:
     def volume_type(self, volume_type):
         """Sets the volume_type of this VolumeDetail.
 
-        云硬盘类型。 目前支持“SSD”，“GPSSD”，“SAS”和“SATA”四种。 “SSD”为超高IO云硬盘 “GPSSD”为通用型云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘
+        云硬盘类型。 目前支持“SSD”，“SAS”和“SATA”三种。 “SSD”为超高IO云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘
 
         :param volume_type: The volume_type of this VolumeDetail.
         :type: str
@@ -897,6 +902,28 @@ class VolumeDetail:
         :type: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def serial_number(self):
+        """Gets the serial_number of this VolumeDetail.
+
+        云硬盘序列号。 只有SCSI类型的非双活卷才会返回该字段，用于与虚拟机中的盘做对应关系。
+
+        :return: The serial_number of this VolumeDetail.
+        :rtype: str
+        """
+        return self._serial_number
+
+    @serial_number.setter
+    def serial_number(self, serial_number):
+        """Sets the serial_number of this VolumeDetail.
+
+        云硬盘序列号。 只有SCSI类型的非双活卷才会返回该字段，用于与虚拟机中的盘做对应关系。
+
+        :param serial_number: The serial_number of this VolumeDetail.
+        :type: str
+        """
+        self._serial_number = serial_number
 
     def to_dict(self):
         """Returns the model properties as a dict"""

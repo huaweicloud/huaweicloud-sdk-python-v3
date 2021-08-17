@@ -1,0 +1,271 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class NetWork:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'name': 'str',
+        'ip': 'str',
+        'netmask': 'str',
+        'gateway': 'str',
+        'mtu': 'int',
+        'mac': 'str',
+        'id': 'str'
+    }
+
+    attribute_map = {
+        'name': 'name',
+        'ip': 'ip',
+        'netmask': 'netmask',
+        'gateway': 'gateway',
+        'mtu': 'mtu',
+        'mac': 'mac',
+        'id': 'id'
+    }
+
+    def __init__(self, name=None, ip=None, netmask=None, gateway=None, mtu=None, mac=None, id=None):
+        """NetWork - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._name = None
+        self._ip = None
+        self._netmask = None
+        self._gateway = None
+        self._mtu = None
+        self._mac = None
+        self._id = None
+        self.discriminator = None
+
+        self.name = name
+        self.ip = ip
+        self.netmask = netmask
+        self.gateway = gateway
+        if mtu is not None:
+            self.mtu = mtu
+        self.mac = mac
+        if id is not None:
+            self.id = id
+
+    @property
+    def name(self):
+        """Gets the name of this NetWork.
+
+        网卡的名称
+
+        :return: The name of this NetWork.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this NetWork.
+
+        网卡的名称
+
+        :param name: The name of this NetWork.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def ip(self):
+        """Gets the ip of this NetWork.
+
+        该网卡绑定的IP
+
+        :return: The ip of this NetWork.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this NetWork.
+
+        该网卡绑定的IP
+
+        :param ip: The ip of this NetWork.
+        :type: str
+        """
+        self._ip = ip
+
+    @property
+    def netmask(self):
+        """Gets the netmask of this NetWork.
+
+        掩码
+
+        :return: The netmask of this NetWork.
+        :rtype: str
+        """
+        return self._netmask
+
+    @netmask.setter
+    def netmask(self, netmask):
+        """Sets the netmask of this NetWork.
+
+        掩码
+
+        :param netmask: The netmask of this NetWork.
+        :type: str
+        """
+        self._netmask = netmask
+
+    @property
+    def gateway(self):
+        """Gets the gateway of this NetWork.
+
+        网关
+
+        :return: The gateway of this NetWork.
+        :rtype: str
+        """
+        return self._gateway
+
+    @gateway.setter
+    def gateway(self, gateway):
+        """Sets the gateway of this NetWork.
+
+        网关
+
+        :param gateway: The gateway of this NetWork.
+        :type: str
+        """
+        self._gateway = gateway
+
+    @property
+    def mtu(self):
+        """Gets the mtu of this NetWork.
+
+        Linux必选，网卡的MTU
+
+        :return: The mtu of this NetWork.
+        :rtype: int
+        """
+        return self._mtu
+
+    @mtu.setter
+    def mtu(self, mtu):
+        """Sets the mtu of this NetWork.
+
+        Linux必选，网卡的MTU
+
+        :param mtu: The mtu of this NetWork.
+        :type: int
+        """
+        self._mtu = mtu
+
+    @property
+    def mac(self):
+        """Gets the mac of this NetWork.
+
+        Mac地址
+
+        :return: The mac of this NetWork.
+        :rtype: str
+        """
+        return self._mac
+
+    @mac.setter
+    def mac(self, mac):
+        """Sets the mac of this NetWork.
+
+        Mac地址
+
+        :param mac: The mac of this NetWork.
+        :type: str
+        """
+        self._mac = mac
+
+    @property
+    def id(self):
+        """Gets the id of this NetWork.
+
+        数据库Id
+
+        :return: The id of this NetWork.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this NetWork.
+
+        数据库Id
+
+        :param id: The id of this NetWork.
+        :type: str
+        """
+        self._id = id
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, NetWork):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

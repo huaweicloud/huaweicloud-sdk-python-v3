@@ -23,38 +23,53 @@ class NodePoolStatus:
 
     openapi_types = {
         'current_node': 'int',
+        'creating_node': 'int',
+        'deleting_node': 'int',
         'phase': 'str',
-        'job_id': 'str'
+        'job_id': 'str',
+        'conditions': 'list[NodePoolCondition]'
     }
 
     attribute_map = {
         'current_node': 'currentNode',
+        'creating_node': 'creatingNode',
+        'deleting_node': 'deletingNode',
         'phase': 'phase',
-        'job_id': 'jobId'
+        'job_id': 'jobId',
+        'conditions': 'conditions'
     }
 
-    def __init__(self, current_node=None, phase=None, job_id=None):
+    def __init__(self, current_node=None, creating_node=None, deleting_node=None, phase=None, job_id=None, conditions=None):
         """NodePoolStatus - a model defined in huaweicloud sdk"""
         
         
 
         self._current_node = None
+        self._creating_node = None
+        self._deleting_node = None
         self._phase = None
         self._job_id = None
+        self._conditions = None
         self.discriminator = None
 
         if current_node is not None:
             self.current_node = current_node
+        if creating_node is not None:
+            self.creating_node = creating_node
+        if deleting_node is not None:
+            self.deleting_node = deleting_node
         if phase is not None:
             self.phase = phase
         if job_id is not None:
             self.job_id = job_id
+        if conditions is not None:
+            self.conditions = conditions
 
     @property
     def current_node(self):
         """Gets the current_node of this NodePoolStatus.
 
-        当前节点池中节点数量
+        当前节点池中所有节点数量（不含删除中的节点）。
 
         :return: The current_node of this NodePoolStatus.
         :rtype: int
@@ -65,12 +80,56 @@ class NodePoolStatus:
     def current_node(self, current_node):
         """Sets the current_node of this NodePoolStatus.
 
-        当前节点池中节点数量
+        当前节点池中所有节点数量（不含删除中的节点）。
 
         :param current_node: The current_node of this NodePoolStatus.
         :type: int
         """
         self._current_node = current_node
+
+    @property
+    def creating_node(self):
+        """Gets the creating_node of this NodePoolStatus.
+
+        当前节点池中处于创建流程中的节点数量。
+
+        :return: The creating_node of this NodePoolStatus.
+        :rtype: int
+        """
+        return self._creating_node
+
+    @creating_node.setter
+    def creating_node(self, creating_node):
+        """Sets the creating_node of this NodePoolStatus.
+
+        当前节点池中处于创建流程中的节点数量。
+
+        :param creating_node: The creating_node of this NodePoolStatus.
+        :type: int
+        """
+        self._creating_node = creating_node
+
+    @property
+    def deleting_node(self):
+        """Gets the deleting_node of this NodePoolStatus.
+
+        当前节点池中删除中或者删除失败的节点数量。
+
+        :return: The deleting_node of this NodePoolStatus.
+        :rtype: int
+        """
+        return self._deleting_node
+
+    @deleting_node.setter
+    def deleting_node(self, deleting_node):
+        """Sets the deleting_node of this NodePoolStatus.
+
+        当前节点池中删除中或者删除失败的节点数量。
+
+        :param deleting_node: The deleting_node of this NodePoolStatus.
+        :type: int
+        """
+        self._deleting_node = deleting_node
 
     @property
     def phase(self):
@@ -98,7 +157,7 @@ class NodePoolStatus:
     def job_id(self):
         """Gets the job_id of this NodePoolStatus.
 
-        节点池删除时的 JobID
+        对节点池执行操作时的 JobID。
 
         :return: The job_id of this NodePoolStatus.
         :rtype: str
@@ -109,12 +168,34 @@ class NodePoolStatus:
     def job_id(self, job_id):
         """Sets the job_id of this NodePoolStatus.
 
-        节点池删除时的 JobID
+        对节点池执行操作时的 JobID。
 
         :param job_id: The job_id of this NodePoolStatus.
         :type: str
         """
         self._job_id = job_id
+
+    @property
+    def conditions(self):
+        """Gets the conditions of this NodePoolStatus.
+
+        节点池每次扩容的动作结果记录，用于确定节点池是否还能继续扩容。
+
+        :return: The conditions of this NodePoolStatus.
+        :rtype: list[NodePoolCondition]
+        """
+        return self._conditions
+
+    @conditions.setter
+    def conditions(self, conditions):
+        """Sets the conditions of this NodePoolStatus.
+
+        节点池每次扩容的动作结果记录，用于确定节点池是否还能继续扩容。
+
+        :param conditions: The conditions of this NodePoolStatus.
+        :type: list[NodePoolCondition]
+        """
+        self._conditions = conditions
 
     def to_dict(self):
         """Returns the model properties as a dict"""
