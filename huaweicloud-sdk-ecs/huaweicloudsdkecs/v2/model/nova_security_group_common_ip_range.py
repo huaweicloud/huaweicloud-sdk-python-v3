@@ -37,7 +37,8 @@ class NovaSecurityGroupCommonIpRange:
         self._cidr = None
         self.discriminator = None
 
-        self.cidr = cidr
+        if cidr is not None:
+            self.cidr = cidr
 
     @property
     def cidr(self):

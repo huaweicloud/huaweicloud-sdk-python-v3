@@ -973,7 +973,7 @@ class ResFeeRecordV2:
     def unit_price(self):
         """Gets the unit_price of this ResFeeRecordV2.
 
-        资源的单价。
+        产品的单价。 按需产品的单价，只有简单定价，不分档的场景会返回。 包周期产品的单价，只有包周期的如下场景会返回：包周期订购/续订/降配/升配/扩容简单定价，不分档 预留实例的单价，只有如下场景下会返回：订购/续订/降配/升配/扩容/按时计费简单定价，不分档
 
         :return: The unit_price of this ResFeeRecordV2.
         :rtype: float
@@ -984,7 +984,7 @@ class ResFeeRecordV2:
     def unit_price(self, unit_price):
         """Sets the unit_price of this ResFeeRecordV2.
 
-        资源的单价。
+        产品的单价。 按需产品的单价，只有简单定价，不分档的场景会返回。 包周期产品的单价，只有包周期的如下场景会返回：包周期订购/续订/降配/升配/扩容简单定价，不分档 预留实例的单价，只有如下场景下会返回：订购/续订/降配/升配/扩容/按时计费简单定价，不分档
 
         :param unit_price: The unit_price of this ResFeeRecordV2.
         :type: float
@@ -1017,7 +1017,7 @@ class ResFeeRecordV2:
     def official_amount(self):
         """Gets the official_amount of this ResFeeRecordV2.
 
-        官网价。
+        官网价，华为云商品在官网上未叠加应用商务折扣、促销折扣等优惠的销售价格。
 
         :return: The official_amount of this ResFeeRecordV2.
         :rtype: float
@@ -1028,7 +1028,7 @@ class ResFeeRecordV2:
     def official_amount(self, official_amount):
         """Sets the official_amount of this ResFeeRecordV2.
 
-        官网价。
+        官网价，华为云商品在官网上未叠加应用商务折扣、促销折扣等优惠的销售价格。
 
         :param official_amount: The official_amount of this ResFeeRecordV2.
         :type: float
@@ -1039,7 +1039,7 @@ class ResFeeRecordV2:
     def discount_amount(self):
         """Gets the discount_amount of this ResFeeRecordV2.
 
-        折扣金额。
+        优惠金额，用户使用云服务享受折扣优惠如商务折扣、伙伴授予折扣以及促销优惠等减免的金额。
 
         :return: The discount_amount of this ResFeeRecordV2.
         :rtype: float
@@ -1050,7 +1050,7 @@ class ResFeeRecordV2:
     def discount_amount(self, discount_amount):
         """Sets the discount_amount of this ResFeeRecordV2.
 
-        折扣金额。
+        优惠金额，用户使用云服务享受折扣优惠如商务折扣、伙伴授予折扣以及促销优惠等减免的金额。
 
         :param discount_amount: The discount_amount of this ResFeeRecordV2.
         :type: float
@@ -1061,7 +1061,7 @@ class ResFeeRecordV2:
     def amount(self):
         """Gets the amount of this ResFeeRecordV2.
 
-        消费金额，包括现金券和储值卡和代金券金额，精确到小数点后2位。  说明： amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
+        应付金额，用户使用云服务享受折扣优惠后需要支付的费用金额，包括现金券和储值卡和代金券金额，精确到小数点后2位。  说明： amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
         :return: The amount of this ResFeeRecordV2.
         :rtype: float
@@ -1072,7 +1072,7 @@ class ResFeeRecordV2:
     def amount(self, amount):
         """Sets the amount of this ResFeeRecordV2.
 
-        消费金额，包括现金券和储值卡和代金券金额，精确到小数点后2位。  说明： amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
+        应付金额，用户使用云服务享受折扣优惠后需要支付的费用金额，包括现金券和储值卡和代金券金额，精确到小数点后2位。  说明： amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_card_amount，bonus_amount，debt_amount，adjustment_amount的总和。
 
         :param amount: The amount of this ResFeeRecordV2.
         :type: float

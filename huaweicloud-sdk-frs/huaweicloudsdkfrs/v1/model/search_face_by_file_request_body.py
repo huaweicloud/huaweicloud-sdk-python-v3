@@ -52,8 +52,7 @@ class SearchFaceByFileRequestBody:
         self._return_fields = None
         self.discriminator = None
 
-        if image_file is not None:
-            self.image_file = image_file
+        self.image_file = image_file
         if top_n is not None:
             self.top_n = top_n
         if threshold is not None:

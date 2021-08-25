@@ -10084,6 +10084,298 @@ class MeetingClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def search_statistic_conference_info(self, request):
+        """查询企业级会议总体统计数据
+
+        * 查询企业级会议指定时间范围内总体统计数据，按日/按月统计。 * 查询企业级会议单日内总体统计数据，按小时统计。 * 权限角色 = 旗舰版企业 + 管理员。
+
+        :param SearchStatisticConferenceInfoRequest request
+        :return: SearchStatisticConferenceInfoResponse
+        """
+        return self.search_statistic_conference_info_with_http_info(request)
+
+    def search_statistic_conference_info_with_http_info(self, request):
+        """查询企业级会议总体统计数据
+
+        * 查询企业级会议指定时间范围内总体统计数据，按日/按月统计。 * 查询企业级会议单日内总体统计数据，按小时统计。 * 权限角色 = 旗舰版企业 + 管理员。
+
+        :param SearchStatisticConferenceInfoRequest request
+        :return: SearchStatisticConferenceInfoResponse
+        """
+
+        all_params = ['time_unit', 'start_time', 'end_time', 'category', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'time_unit' in local_var_params:
+            query_params.append(('timeUnit', local_var_params['time_unit']))
+        if 'start_time' in local_var_params:
+            query_params.append(('startTime', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('endTime', local_var_params['end_time']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/metrics/dashboard/statistic/conference/info',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchStatisticConferenceInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def search_statistic_conference_participant(self, request):
+        """查询企业级会议与会统计数据
+
+        * 查询企业级会议与会用户统计数据，按日/按月统计。 * 查询企业级会议与会硬件终端统计数据，按日/按月统计。 * 查询企业级会议与会设备统计数据，按日/按月统计。 * 权限角色 = 旗舰版企业 + 管理员。
+
+        :param SearchStatisticConferenceParticipantRequest request
+        :return: SearchStatisticConferenceParticipantResponse
+        """
+        return self.search_statistic_conference_participant_with_http_info(request)
+
+    def search_statistic_conference_participant_with_http_info(self, request):
+        """查询企业级会议与会统计数据
+
+        * 查询企业级会议与会用户统计数据，按日/按月统计。 * 查询企业级会议与会硬件终端统计数据，按日/按月统计。 * 查询企业级会议与会设备统计数据，按日/按月统计。 * 权限角色 = 旗舰版企业 + 管理员。
+
+        :param SearchStatisticConferenceParticipantRequest request
+        :return: SearchStatisticConferenceParticipantResponse
+        """
+
+        all_params = ['time_unit', 'start_time', 'end_time', 'category', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'time_unit' in local_var_params:
+            query_params.append(('timeUnit', local_var_params['time_unit']))
+        if 'start_time' in local_var_params:
+            query_params.append(('startTime', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('endTime', local_var_params['end_time']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/metrics/dashboard/statistic/conference/participant',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchStatisticConferenceParticipantResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def search_statistic_resource_info(self, request):
+        """查询企业级会议已购资源使用统计数据
+
+        * 查询企业级会议的已购资源使用状况，按日/按月统计。 * 权限角色 = 旗舰版企业 + 管理员。
+
+        :param SearchStatisticResourceInfoRequest request
+        :return: SearchStatisticResourceInfoResponse
+        """
+        return self.search_statistic_resource_info_with_http_info(request)
+
+    def search_statistic_resource_info_with_http_info(self, request):
+        """查询企业级会议已购资源使用统计数据
+
+        * 查询企业级会议的已购资源使用状况，按日/按月统计。 * 权限角色 = 旗舰版企业 + 管理员。
+
+        :param SearchStatisticResourceInfoRequest request
+        :return: SearchStatisticResourceInfoResponse
+        """
+
+        all_params = ['time_unit', 'start_time', 'end_time', 'category', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'time_unit' in local_var_params:
+            query_params.append(('timeUnit', local_var_params['time_unit']))
+        if 'start_time' in local_var_params:
+            query_params.append(('startTime', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('endTime', local_var_params['end_time']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/metrics/dashboard/statistic/resource/info',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchStatisticResourceInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def search_statistic_user_info(self, request):
+        """查询企业级会议的用户统计数据
+
+        * 查询企业级会议用户登录数据，按日/按月统计。 * 查询企业级会议用户激活数据，按日/按月统计。 * 查询企业级会议用户登录设备数据，按日/按月统计。 * 权限角色 = 旗舰版企业 + 管理员。
+
+        :param SearchStatisticUserInfoRequest request
+        :return: SearchStatisticUserInfoResponse
+        """
+        return self.search_statistic_user_info_with_http_info(request)
+
+    def search_statistic_user_info_with_http_info(self, request):
+        """查询企业级会议的用户统计数据
+
+        * 查询企业级会议用户登录数据，按日/按月统计。 * 查询企业级会议用户激活数据，按日/按月统计。 * 查询企业级会议用户登录设备数据，按日/按月统计。 * 权限角色 = 旗舰版企业 + 管理员。
+
+        :param SearchStatisticUserInfoRequest request
+        :return: SearchStatisticUserInfoResponse
+        """
+
+        all_params = ['time_unit', 'start_time', 'end_time', 'category', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'time_unit' in local_var_params:
+            query_params.append(('timeUnit', local_var_params['time_unit']))
+        if 'start_time' in local_var_params:
+            query_params.append(('startTime', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('endTime', local_var_params['end_time']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/metrics/dashboard/statistic/user/info',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchStatisticUserInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):

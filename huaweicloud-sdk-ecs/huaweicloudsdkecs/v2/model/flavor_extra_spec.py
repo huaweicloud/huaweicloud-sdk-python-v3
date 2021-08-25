@@ -133,13 +133,20 @@ class FlavorExtraSpec:
         self._ecsinstance_architecture = None
         self.discriminator = None
 
-        self.ecsperformancetype = ecsperformancetype
-        self.hwnuma_nodes = hwnuma_nodes
-        self.resource_type = resource_type
-        self.hpet_support = hpet_support
-        self.instance_vnictype = instance_vnictype
-        self.instance_vnicinstance_bandwidth = instance_vnicinstance_bandwidth
-        self.instance_vnicmax_count = instance_vnicmax_count
+        if ecsperformancetype is not None:
+            self.ecsperformancetype = ecsperformancetype
+        if hwnuma_nodes is not None:
+            self.hwnuma_nodes = hwnuma_nodes
+        if resource_type is not None:
+            self.resource_type = resource_type
+        if hpet_support is not None:
+            self.hpet_support = hpet_support
+        if instance_vnictype is not None:
+            self.instance_vnictype = instance_vnictype
+        if instance_vnicinstance_bandwidth is not None:
+            self.instance_vnicinstance_bandwidth = instance_vnicinstance_bandwidth
+        if instance_vnicmax_count is not None:
+            self.instance_vnicmax_count = instance_vnicmax_count
         if quotalocal_disk is not None:
             self.quotalocal_disk = quotalocal_disk
         if quotanvme_ssd is not None:
@@ -150,9 +157,12 @@ class FlavorExtraSpec:
             self.ecsgeneration = ecsgeneration
         if ecsvirtualization_env_types is not None:
             self.ecsvirtualization_env_types = ecsvirtualization_env_types
-        self.pci_passthroughenable_gpu = pci_passthroughenable_gpu
-        self.pci_passthroughgpu_specs = pci_passthroughgpu_specs
-        self.pci_passthroughalias = pci_passthroughalias
+        if pci_passthroughenable_gpu is not None:
+            self.pci_passthroughenable_gpu = pci_passthroughenable_gpu
+        if pci_passthroughgpu_specs is not None:
+            self.pci_passthroughgpu_specs = pci_passthroughgpu_specs
+        if pci_passthroughalias is not None:
+            self.pci_passthroughalias = pci_passthroughalias
         if condoperationstatus is not None:
             self.condoperationstatus = condoperationstatus
         if condoperationaz is not None:

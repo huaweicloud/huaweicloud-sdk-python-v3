@@ -41,7 +41,7 @@ class GetTaskDetailListRspJobs:
         'created': 'created',
         'ended': 'ended',
         'process': 'process',
-        'task_detail': 'taskDetail',
+        'task_detail': 'task_detail',
         'instance': 'instance',
         'entities': 'entities',
         'fail_reason': 'fail_reason'

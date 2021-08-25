@@ -22,28 +22,59 @@ class ExportFunctionRequest:
     sensitive_list = []
 
     openapi_types = {
+        'function_urn': 'str',
         'config': 'bool',
-        'code': 'bool'
+        'code': 'bool',
+        'type': 'str'
     }
 
     attribute_map = {
+        'function_urn': 'function_urn',
         'config': 'config',
-        'code': 'code'
+        'code': 'code',
+        'type': 'type'
     }
 
-    def __init__(self, config=None, code=None):
+    def __init__(self, function_urn=None, config=None, code=None, type=None):
         """ExportFunctionRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._function_urn = None
         self._config = None
         self._code = None
+        self._type = None
         self.discriminator = None
 
+        self.function_urn = function_urn
         if config is not None:
             self.config = config
         if code is not None:
             self.code = code
+        if type is not None:
+            self.type = type
+
+    @property
+    def function_urn(self):
+        """Gets the function_urn of this ExportFunctionRequest.
+
+        函数的URN（Uniform Resource Name），唯一标识函数。
+
+        :return: The function_urn of this ExportFunctionRequest.
+        :rtype: str
+        """
+        return self._function_urn
+
+    @function_urn.setter
+    def function_urn(self, function_urn):
+        """Sets the function_urn of this ExportFunctionRequest.
+
+        函数的URN（Uniform Resource Name），唯一标识函数。
+
+        :param function_urn: The function_urn of this ExportFunctionRequest.
+        :type: str
+        """
+        self._function_urn = function_urn
 
     @property
     def config(self):
@@ -88,6 +119,28 @@ class ExportFunctionRequest:
         :type: bool
         """
         self._code = code
+
+    @property
+    def type(self):
+        """Gets the type of this ExportFunctionRequest.
+
+        兼容老的方式，type=code代表导出代码,type=config代码导出配置
+
+        :return: The type of this ExportFunctionRequest.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ExportFunctionRequest.
+
+        兼容老的方式，type=code代表导出代码,type=config代码导出配置
+
+        :param type: The type of this ExportFunctionRequest.
+        :type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

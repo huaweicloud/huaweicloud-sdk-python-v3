@@ -23,7 +23,7 @@ class CreateRouteTableReq:
 
     openapi_types = {
         'name': 'str',
-        'routes': 'list[Route]',
+        'routes': 'list[RouteTableRoute]',
         'vpc_id': 'str',
         'description': 'str'
     }
@@ -83,7 +83,7 @@ class CreateRouteTableReq:
         功能说明：路由对象，参见route字段说明  约束：每个路由表最大关联200条路由
 
         :return: The routes of this CreateRouteTableReq.
-        :rtype: list[Route]
+        :rtype: list[RouteTableRoute]
         """
         return self._routes
 
@@ -94,7 +94,7 @@ class CreateRouteTableReq:
         功能说明：路由对象，参见route字段说明  约束：每个路由表最大关联200条路由
 
         :param routes: The routes of this CreateRouteTableReq.
-        :type: list[Route]
+        :type: list[RouteTableRoute]
         """
         self._routes = routes
 

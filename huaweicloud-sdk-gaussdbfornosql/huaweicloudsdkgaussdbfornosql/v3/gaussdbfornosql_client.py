@@ -495,6 +495,71 @@ class GaussDBforNoSQLClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_configuration_templates(self, request):
+        """获取参数模板列表
+
+        获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
+
+        :param ListConfigurationTemplatesRequest request
+        :return: ListConfigurationTemplatesResponse
+        """
+        return self.list_configuration_templates_with_http_info(request)
+
+    def list_configuration_templates_with_http_info(self, request):
+        """获取参数模板列表
+
+        获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
+
+        :param ListConfigurationTemplatesRequest request
+        :return: ListConfigurationTemplatesResponse
+        """
+
+        all_params = ['offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.1/{project_id}/configurations',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListConfigurationTemplatesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_configurations(self, request):
         """获取参数模板列表
 
@@ -613,6 +678,138 @@ class GaussDBforNoSQLClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListDatastoresResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_dedicated_resources(self, request):
+        """查询专属资源列表
+
+        查询专属资源列表。
+
+        :param ListDedicatedResourcesRequest request
+        :return: ListDedicatedResourcesResponse
+        """
+        return self.list_dedicated_resources_with_http_info(request)
+
+    def list_dedicated_resources_with_http_info(self, request):
+        """查询专属资源列表
+
+        查询专属资源列表。
+
+        :param ListDedicatedResourcesRequest request
+        :return: ListDedicatedResourcesResponse
+        """
+
+        all_params = ['offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/dedicated-resources',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListDedicatedResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_flavor_infos(self, request):
+        """查询数据库规格
+
+        查询指定条件下的实例规格信息。
+
+        :param ListFlavorInfosRequest request
+        :return: ListFlavorInfosResponse
+        """
+        return self.list_flavor_infos_with_http_info(request)
+
+    def list_flavor_infos_with_http_info(self, request):
+        """查询数据库规格
+
+        查询指定条件下的实例规格信息。
+
+        :param ListFlavorInfosRequest request
+        :return: ListFlavorInfosResponse
+        """
+
+        all_params = ['engine_name', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'engine_name' in local_var_params:
+            query_params.append(('engine_name', local_var_params['engine_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.1/{project_id}/flavors',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFlavorInfosResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -818,6 +1015,69 @@ class GaussDBforNoSQLClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_instances_by_resource_tags(self, request):
+        """查询资源实例
+
+        根据标签查询指定的数据库实例。
+
+        :param ListInstancesByResourceTagsRequest request
+        :return: ListInstancesByResourceTagsResponse
+        """
+        return self.list_instances_by_resource_tags_with_http_info(request)
+
+    def list_instances_by_resource_tags_with_http_info(self, request):
+        """查询资源实例
+
+        根据标签查询指定的数据库实例。
+
+        :param ListInstancesByResourceTagsRequest request
+        :return: ListInstancesByResourceTagsResponse
+        """
+
+        all_params = ['list_instances_by_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/resource-instances/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListInstancesByResourceTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

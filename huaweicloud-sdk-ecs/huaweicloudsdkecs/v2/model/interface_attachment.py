@@ -26,7 +26,12 @@ class InterfaceAttachment:
         'mac_addr': 'str',
         'net_id': 'str',
         'port_id': 'str',
-        'port_state': 'str'
+        'port_state': 'str',
+        'delete_on_termination': 'bool',
+        'driver_mode': 'str',
+        'min_rate': 'int',
+        'multiqueue_num': 'int',
+        'pci_address': 'str'
     }
 
     attribute_map = {
@@ -34,10 +39,15 @@ class InterfaceAttachment:
         'mac_addr': 'mac_addr',
         'net_id': 'net_id',
         'port_id': 'port_id',
-        'port_state': 'port_state'
+        'port_state': 'port_state',
+        'delete_on_termination': 'delete_on_termination',
+        'driver_mode': 'driver_mode',
+        'min_rate': 'min_rate',
+        'multiqueue_num': 'multiqueue_num',
+        'pci_address': 'pci_address'
     }
 
-    def __init__(self, fixed_ips=None, mac_addr=None, net_id=None, port_id=None, port_state=None):
+    def __init__(self, fixed_ips=None, mac_addr=None, net_id=None, port_id=None, port_state=None, delete_on_termination=None, driver_mode=None, min_rate=None, multiqueue_num=None, pci_address=None):
         """InterfaceAttachment - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +57,11 @@ class InterfaceAttachment:
         self._net_id = None
         self._port_id = None
         self._port_state = None
+        self._delete_on_termination = None
+        self._driver_mode = None
+        self._min_rate = None
+        self._multiqueue_num = None
+        self._pci_address = None
         self.discriminator = None
 
         if fixed_ips is not None:
@@ -59,6 +74,16 @@ class InterfaceAttachment:
             self.port_id = port_id
         if port_state is not None:
             self.port_state = port_state
+        if delete_on_termination is not None:
+            self.delete_on_termination = delete_on_termination
+        if driver_mode is not None:
+            self.driver_mode = driver_mode
+        if min_rate is not None:
+            self.min_rate = min_rate
+        if multiqueue_num is not None:
+            self.multiqueue_num = multiqueue_num
+        if pci_address is not None:
+            self.pci_address = pci_address
 
     @property
     def fixed_ips(self):
@@ -169,6 +194,116 @@ class InterfaceAttachment:
         :type: str
         """
         self._port_state = port_state
+
+    @property
+    def delete_on_termination(self):
+        """Gets the delete_on_termination of this InterfaceAttachment.
+
+        卸载网卡时，是否删除网卡。
+
+        :return: The delete_on_termination of this InterfaceAttachment.
+        :rtype: bool
+        """
+        return self._delete_on_termination
+
+    @delete_on_termination.setter
+    def delete_on_termination(self, delete_on_termination):
+        """Sets the delete_on_termination of this InterfaceAttachment.
+
+        卸载网卡时，是否删除网卡。
+
+        :param delete_on_termination: The delete_on_termination of this InterfaceAttachment.
+        :type: bool
+        """
+        self._delete_on_termination = delete_on_termination
+
+    @property
+    def driver_mode(self):
+        """Gets the driver_mode of this InterfaceAttachment.
+
+        从guest os中，网卡的驱动类型。可选值为virtio和hinic，默认为virtio
+
+        :return: The driver_mode of this InterfaceAttachment.
+        :rtype: str
+        """
+        return self._driver_mode
+
+    @driver_mode.setter
+    def driver_mode(self, driver_mode):
+        """Sets the driver_mode of this InterfaceAttachment.
+
+        从guest os中，网卡的驱动类型。可选值为virtio和hinic，默认为virtio
+
+        :param driver_mode: The driver_mode of this InterfaceAttachment.
+        :type: str
+        """
+        self._driver_mode = driver_mode
+
+    @property
+    def min_rate(self):
+        """Gets the min_rate of this InterfaceAttachment.
+
+        网卡带宽下限。
+
+        :return: The min_rate of this InterfaceAttachment.
+        :rtype: int
+        """
+        return self._min_rate
+
+    @min_rate.setter
+    def min_rate(self, min_rate):
+        """Sets the min_rate of this InterfaceAttachment.
+
+        网卡带宽下限。
+
+        :param min_rate: The min_rate of this InterfaceAttachment.
+        :type: int
+        """
+        self._min_rate = min_rate
+
+    @property
+    def multiqueue_num(self):
+        """Gets the multiqueue_num of this InterfaceAttachment.
+
+        网卡多队列个数。
+
+        :return: The multiqueue_num of this InterfaceAttachment.
+        :rtype: int
+        """
+        return self._multiqueue_num
+
+    @multiqueue_num.setter
+    def multiqueue_num(self, multiqueue_num):
+        """Sets the multiqueue_num of this InterfaceAttachment.
+
+        网卡多队列个数。
+
+        :param multiqueue_num: The multiqueue_num of this InterfaceAttachment.
+        :type: int
+        """
+        self._multiqueue_num = multiqueue_num
+
+    @property
+    def pci_address(self):
+        """Gets the pci_address of this InterfaceAttachment.
+
+        弹性网卡在Linux GuestOS里的BDF号
+
+        :return: The pci_address of this InterfaceAttachment.
+        :rtype: str
+        """
+        return self._pci_address
+
+    @pci_address.setter
+    def pci_address(self, pci_address):
+        """Sets the pci_address of this InterfaceAttachment.
+
+        弹性网卡在Linux GuestOS里的BDF号
+
+        :param pci_address: The pci_address of this InterfaceAttachment.
+        :type: str
+        """
+        self._pci_address = pci_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

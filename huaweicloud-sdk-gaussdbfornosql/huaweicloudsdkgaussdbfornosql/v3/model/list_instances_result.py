@@ -41,6 +41,7 @@ class ListInstancesResult:
         'maintenance_window': 'str',
         'groups': 'list[ListInstancesGroupResult]',
         'enterprise_project_id': 'str',
+        'dedicated_resource_id': 'str',
         'time_zone': 'str',
         'actions': 'list[str]'
     }
@@ -65,11 +66,12 @@ class ListInstancesResult:
         'maintenance_window': 'maintenance_window',
         'groups': 'groups',
         'enterprise_project_id': 'enterprise_project_id',
+        'dedicated_resource_id': 'dedicated_resource_id',
         'time_zone': 'time_zone',
         'actions': 'actions'
     }
 
-    def __init__(self, id=None, name=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, time_zone=None, actions=None):
+    def __init__(self, id=None, name=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None):
         """ListInstancesResult - a model defined in huaweicloud sdk"""
         
         
@@ -93,6 +95,7 @@ class ListInstancesResult:
         self._maintenance_window = None
         self._groups = None
         self._enterprise_project_id = None
+        self._dedicated_resource_id = None
         self._time_zone = None
         self._actions = None
         self.discriminator = None
@@ -116,6 +119,8 @@ class ListInstancesResult:
         self.maintenance_window = maintenance_window
         self.groups = groups
         self.enterprise_project_id = enterprise_project_id
+        if dedicated_resource_id is not None:
+            self.dedicated_resource_id = dedicated_resource_id
         self.time_zone = time_zone
         self.actions = actions
 
@@ -532,6 +537,28 @@ class ListInstancesResult:
         :type: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def dedicated_resource_id(self):
+        """Gets the dedicated_resource_id of this ListInstancesResult.
+
+        专属资源ID，只有数据库实例属于专属资源池才会返回该参数。
+
+        :return: The dedicated_resource_id of this ListInstancesResult.
+        :rtype: str
+        """
+        return self._dedicated_resource_id
+
+    @dedicated_resource_id.setter
+    def dedicated_resource_id(self, dedicated_resource_id):
+        """Sets the dedicated_resource_id of this ListInstancesResult.
+
+        专属资源ID，只有数据库实例属于专属资源池才会返回该参数。
+
+        :param dedicated_resource_id: The dedicated_resource_id of this ListInstancesResult.
+        :type: str
+        """
+        self._dedicated_resource_id = dedicated_resource_id
 
     @property
     def time_zone(self):

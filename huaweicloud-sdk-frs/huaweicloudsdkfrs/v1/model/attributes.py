@@ -22,7 +22,7 @@ class Attributes:
     sensitive_list = []
 
     openapi_types = {
-        'dress': 'list[str]',
+        'dress': 'Dress',
         'glass': 'str',
         'gender': 'str',
         'yaw_angle': 'float',
@@ -115,10 +115,9 @@ class Attributes:
     def dress(self):
         """Gets the dress of this Attributes.
 
-        包含glass和hat两个属性结果。
 
         :return: The dress of this Attributes.
-        :rtype: list[str]
+        :rtype: Dress
         """
         return self._dress
 
@@ -126,10 +125,9 @@ class Attributes:
     def dress(self, dress):
         """Sets the dress of this Attributes.
 
-        包含glass和hat两个属性结果。
 
         :param dress: The dress of this Attributes.
-        :type: list[str]
+        :type: Dress
         """
         self._dress = dress
 

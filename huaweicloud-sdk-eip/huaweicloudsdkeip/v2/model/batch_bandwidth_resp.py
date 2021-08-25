@@ -31,7 +31,8 @@ class BatchBandwidthResp:
         'share_type': 'str',
         'size': 'int',
         'tenant_id': 'str',
-        'status': 'str'
+        'status': 'str',
+        'public_border_group': 'str'
     }
 
     attribute_map = {
@@ -44,10 +45,11 @@ class BatchBandwidthResp:
         'share_type': 'share_type',
         'size': 'size',
         'tenant_id': 'tenant_id',
-        'status': 'status'
+        'status': 'status',
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, bandwidth_type=None, billing_info=None, charge_mode=None, id=None, name=None, publicip_info=None, share_type=None, size=None, tenant_id=None, status=None):
+    def __init__(self, bandwidth_type=None, billing_info=None, charge_mode=None, id=None, name=None, publicip_info=None, share_type=None, size=None, tenant_id=None, status=None, public_border_group=None):
         """BatchBandwidthResp - a model defined in huaweicloud sdk"""
         
         
@@ -62,6 +64,7 @@ class BatchBandwidthResp:
         self._size = None
         self._tenant_id = None
         self._status = None
+        self._public_border_group = None
         self.discriminator = None
 
         if bandwidth_type is not None:
@@ -84,6 +87,8 @@ class BatchBandwidthResp:
             self.tenant_id = tenant_id
         if status is not None:
             self.status = status
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
 
     @property
     def bandwidth_type(self):
@@ -304,6 +309,28 @@ class BatchBandwidthResp:
         :type: str
         """
         self._status = status
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this BatchBandwidthResp.
+
+        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域会返回此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：共享带宽只能插入与该字段相同的publicip
+
+        :return: The public_border_group of this BatchBandwidthResp.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this BatchBandwidthResp.
+
+        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域会返回此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：共享带宽只能插入与该字段相同的publicip
+
+        :param public_border_group: The public_border_group of this BatchBandwidthResp.
+        :type: str
+        """
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -24,6 +24,7 @@ class QueryInstanceResponse:
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'remark': 'str',
         'status': 'str',
         'port': 'str',
         'mode': 'str',
@@ -51,6 +52,7 @@ class QueryInstanceResponse:
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'remark': 'remark',
         'status': 'status',
         'port': 'port',
         'mode': 'mode',
@@ -75,13 +77,14 @@ class QueryInstanceResponse:
         'actions': 'actions'
     }
 
-    def __init__(self, id=None, name=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, ssl=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, disk_encryption_id=None, enterprise_project_id=None, time_zone=None, dss_pool_id=None, actions=None):
+    def __init__(self, id=None, name=None, remark=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, ssl=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, disk_encryption_id=None, enterprise_project_id=None, time_zone=None, dss_pool_id=None, actions=None):
         """QueryInstanceResponse - a model defined in huaweicloud sdk"""
         
         
 
         self._id = None
         self._name = None
+        self._remark = None
         self._status = None
         self._port = None
         self._mode = None
@@ -108,6 +111,7 @@ class QueryInstanceResponse:
 
         self.id = id
         self.name = name
+        self.remark = remark
         self.status = status
         self.port = port
         self.mode = mode
@@ -176,6 +180,28 @@ class QueryInstanceResponse:
         :type: str
         """
         self._name = name
+
+    @property
+    def remark(self):
+        """Gets the remark of this QueryInstanceResponse.
+
+        实例备注。
+
+        :return: The remark of this QueryInstanceResponse.
+        :rtype: str
+        """
+        return self._remark
+
+    @remark.setter
+    def remark(self, remark):
+        """Sets the remark of this QueryInstanceResponse.
+
+        实例备注。
+
+        :param remark: The remark of this QueryInstanceResponse.
+        :type: str
+        """
+        self._remark = remark
 
     @property
     def status(self):

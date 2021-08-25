@@ -35,6 +35,7 @@ class CreateInstanceRequestBody:
         'configuration_id': 'str',
         'backup_strategy': 'BackupStrategyOption',
         'enterprise_project_id': 'str',
+        'dedicated_resource_id': 'str',
         'ssl_option': 'str',
         'charge_info': 'ChargeInfoOption'
     }
@@ -53,11 +54,12 @@ class CreateInstanceRequestBody:
         'configuration_id': 'configuration_id',
         'backup_strategy': 'backup_strategy',
         'enterprise_project_id': 'enterprise_project_id',
+        'dedicated_resource_id': 'dedicated_resource_id',
         'ssl_option': 'ssl_option',
         'charge_info': 'charge_info'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, charge_info=None):
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, mode=None, flavor=None, configuration_id=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, charge_info=None):
         """CreateInstanceRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -75,6 +77,7 @@ class CreateInstanceRequestBody:
         self._configuration_id = None
         self._backup_strategy = None
         self._enterprise_project_id = None
+        self._dedicated_resource_id = None
         self._ssl_option = None
         self._charge_info = None
         self.discriminator = None
@@ -95,6 +98,8 @@ class CreateInstanceRequestBody:
             self.backup_strategy = backup_strategy
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if dedicated_resource_id is not None:
+            self.dedicated_resource_id = dedicated_resource_id
         if ssl_option is not None:
             self.ssl_option = ssl_option
         if charge_info is not None:
@@ -381,6 +386,28 @@ class CreateInstanceRequestBody:
         :type: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def dedicated_resource_id(self):
+        """Gets the dedicated_resource_id of this CreateInstanceRequestBody.
+
+        专属资源ID，只有开通专属资源池后才可以下发此参数。
+
+        :return: The dedicated_resource_id of this CreateInstanceRequestBody.
+        :rtype: str
+        """
+        return self._dedicated_resource_id
+
+    @dedicated_resource_id.setter
+    def dedicated_resource_id(self, dedicated_resource_id):
+        """Sets the dedicated_resource_id of this CreateInstanceRequestBody.
+
+        专属资源ID，只有开通专属资源池后才可以下发此参数。
+
+        :param dedicated_resource_id: The dedicated_resource_id of this CreateInstanceRequestBody.
+        :type: str
+        """
+        self._dedicated_resource_id = dedicated_resource_id
 
     @property
     def ssl_option(self):

@@ -22,23 +22,28 @@ class RunCheckTaskJobsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'list[CheckTaskJobsItemsBody]'
+        'result': 'list[CheckTaskJobsItemsBody]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'result': 'result'
+        'result': 'result',
+        'count': 'count'
     }
 
-    def __init__(self, result=None):
+    def __init__(self, result=None, count=None):
         """RunCheckTaskJobsResponse - a model defined in huaweicloud sdk"""
         
         super(RunCheckTaskJobsResponse, self).__init__()
 
         self._result = None
+        self._count = None
         self.discriminator = None
 
         if result is not None:
             self.result = result
+        if count is not None:
+            self.count = count
 
     @property
     def result(self):
@@ -61,6 +66,28 @@ class RunCheckTaskJobsResponse(SdkResponse):
         :type: list[CheckTaskJobsItemsBody]
         """
         self._result = result
+
+    @property
+    def count(self):
+        """Gets the count of this RunCheckTaskJobsResponse.
+
+        符合查询条件的总任务数量。 
+
+        :return: The count of this RunCheckTaskJobsResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this RunCheckTaskJobsResponse.
+
+        符合查询条件的总任务数量。 
+
+        :param count: The count of this RunCheckTaskJobsResponse.
+        :type: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

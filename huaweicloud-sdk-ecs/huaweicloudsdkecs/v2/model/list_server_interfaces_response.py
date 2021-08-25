@@ -22,23 +22,48 @@ class ListServerInterfacesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'attachable_quantity': 'InterfaceAttachableQuantity',
         'interface_attachments': 'list[InterfaceAttachment]'
     }
 
     attribute_map = {
+        'attachable_quantity': 'attachableQuantity',
         'interface_attachments': 'interfaceAttachments'
     }
 
-    def __init__(self, interface_attachments=None):
+    def __init__(self, attachable_quantity=None, interface_attachments=None):
         """ListServerInterfacesResponse - a model defined in huaweicloud sdk"""
         
         super(ListServerInterfacesResponse, self).__init__()
 
+        self._attachable_quantity = None
         self._interface_attachments = None
         self.discriminator = None
 
+        if attachable_quantity is not None:
+            self.attachable_quantity = attachable_quantity
         if interface_attachments is not None:
             self.interface_attachments = interface_attachments
+
+    @property
+    def attachable_quantity(self):
+        """Gets the attachable_quantity of this ListServerInterfacesResponse.
+
+
+        :return: The attachable_quantity of this ListServerInterfacesResponse.
+        :rtype: InterfaceAttachableQuantity
+        """
+        return self._attachable_quantity
+
+    @attachable_quantity.setter
+    def attachable_quantity(self, attachable_quantity):
+        """Sets the attachable_quantity of this ListServerInterfacesResponse.
+
+
+        :param attachable_quantity: The attachable_quantity of this ListServerInterfacesResponse.
+        :type: InterfaceAttachableQuantity
+        """
+        self._attachable_quantity = attachable_quantity
 
     @property
     def interface_attachments(self):

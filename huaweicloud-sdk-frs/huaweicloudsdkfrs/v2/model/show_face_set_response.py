@@ -22,45 +22,43 @@ class ShowFaceSetResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'face_sets_info': 'list[FaceSetInfo]'
+        'face_set_info': 'FaceSetInfo'
     }
 
     attribute_map = {
-        'face_sets_info': 'face_sets_info'
+        'face_set_info': 'face_set_info'
     }
 
-    def __init__(self, face_sets_info=None):
+    def __init__(self, face_set_info=None):
         """ShowFaceSetResponse - a model defined in huaweicloud sdk"""
         
         super(ShowFaceSetResponse, self).__init__()
 
-        self._face_sets_info = None
+        self._face_set_info = None
         self.discriminator = None
 
-        if face_sets_info is not None:
-            self.face_sets_info = face_sets_info
+        if face_set_info is not None:
+            self.face_set_info = face_set_info
 
     @property
-    def face_sets_info(self):
-        """Gets the face_sets_info of this ShowFaceSetResponse.
+    def face_set_info(self):
+        """Gets the face_set_info of this ShowFaceSetResponse.
 
-        人脸库信息集合，详见[FaceSetInfo](zh-cn_topic_0106912072.xml)。 调用失败时无此字段。
 
-        :return: The face_sets_info of this ShowFaceSetResponse.
-        :rtype: list[FaceSetInfo]
+        :return: The face_set_info of this ShowFaceSetResponse.
+        :rtype: FaceSetInfo
         """
-        return self._face_sets_info
+        return self._face_set_info
 
-    @face_sets_info.setter
-    def face_sets_info(self, face_sets_info):
-        """Sets the face_sets_info of this ShowFaceSetResponse.
+    @face_set_info.setter
+    def face_set_info(self, face_set_info):
+        """Sets the face_set_info of this ShowFaceSetResponse.
 
-        人脸库信息集合，详见[FaceSetInfo](zh-cn_topic_0106912072.xml)。 调用失败时无此字段。
 
-        :param face_sets_info: The face_sets_info of this ShowFaceSetResponse.
-        :type: list[FaceSetInfo]
+        :param face_set_info: The face_set_info of this ShowFaceSetResponse.
+        :type: FaceSetInfo
         """
-        self._face_sets_info = face_sets_info
+        self._face_set_info = face_set_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -8,7 +8,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AuthorizeFaceRecognitionServiceResponse(SdkResponse):
+class ShowSubscribesResponse(SdkResponse):
 
 
     """
@@ -38,9 +38,9 @@ class AuthorizeFaceRecognitionServiceResponse(SdkResponse):
     }
 
     def __init__(self, max_face_set_number=None, detect_service=None, live_detect_service=None, compare_service=None, search_service=None):
-        """AuthorizeFaceRecognitionServiceResponse - a model defined in huaweicloud sdk"""
+        """ShowSubscribesResponse - a model defined in huaweicloud sdk"""
         
-        super(AuthorizeFaceRecognitionServiceResponse, self).__init__()
+        super(ShowSubscribesResponse, self).__init__()
 
         self._max_face_set_number = None
         self._detect_service = None
@@ -62,102 +62,102 @@ class AuthorizeFaceRecognitionServiceResponse(SdkResponse):
 
     @property
     def max_face_set_number(self):
-        """Gets the max_face_set_number of this AuthorizeFaceRecognitionServiceResponse.
+        """Gets the max_face_set_number of this ShowSubscribesResponse.
 
         调用成功时表示最大的人脸库数量。 调用失败时无此字段。
 
-        :return: The max_face_set_number of this AuthorizeFaceRecognitionServiceResponse.
+        :return: The max_face_set_number of this ShowSubscribesResponse.
         :rtype: int
         """
         return self._max_face_set_number
 
     @max_face_set_number.setter
     def max_face_set_number(self, max_face_set_number):
-        """Sets the max_face_set_number of this AuthorizeFaceRecognitionServiceResponse.
+        """Sets the max_face_set_number of this ShowSubscribesResponse.
 
         调用成功时表示最大的人脸库数量。 调用失败时无此字段。
 
-        :param max_face_set_number: The max_face_set_number of this AuthorizeFaceRecognitionServiceResponse.
+        :param max_face_set_number: The max_face_set_number of this ShowSubscribesResponse.
         :type: int
         """
         self._max_face_set_number = max_face_set_number
 
     @property
     def detect_service(self):
-        """Gets the detect_service of this AuthorizeFaceRecognitionServiceResponse.
+        """Gets the detect_service of this ShowSubscribesResponse.
 
 
-        :return: The detect_service of this AuthorizeFaceRecognitionServiceResponse.
+        :return: The detect_service of this ShowSubscribesResponse.
         :rtype: ServiceInfo
         """
         return self._detect_service
 
     @detect_service.setter
     def detect_service(self, detect_service):
-        """Sets the detect_service of this AuthorizeFaceRecognitionServiceResponse.
+        """Sets the detect_service of this ShowSubscribesResponse.
 
 
-        :param detect_service: The detect_service of this AuthorizeFaceRecognitionServiceResponse.
+        :param detect_service: The detect_service of this ShowSubscribesResponse.
         :type: ServiceInfo
         """
         self._detect_service = detect_service
 
     @property
     def live_detect_service(self):
-        """Gets the live_detect_service of this AuthorizeFaceRecognitionServiceResponse.
+        """Gets the live_detect_service of this ShowSubscribesResponse.
 
 
-        :return: The live_detect_service of this AuthorizeFaceRecognitionServiceResponse.
+        :return: The live_detect_service of this ShowSubscribesResponse.
         :rtype: ServiceInfo
         """
         return self._live_detect_service
 
     @live_detect_service.setter
     def live_detect_service(self, live_detect_service):
-        """Sets the live_detect_service of this AuthorizeFaceRecognitionServiceResponse.
+        """Sets the live_detect_service of this ShowSubscribesResponse.
 
 
-        :param live_detect_service: The live_detect_service of this AuthorizeFaceRecognitionServiceResponse.
+        :param live_detect_service: The live_detect_service of this ShowSubscribesResponse.
         :type: ServiceInfo
         """
         self._live_detect_service = live_detect_service
 
     @property
     def compare_service(self):
-        """Gets the compare_service of this AuthorizeFaceRecognitionServiceResponse.
+        """Gets the compare_service of this ShowSubscribesResponse.
 
 
-        :return: The compare_service of this AuthorizeFaceRecognitionServiceResponse.
+        :return: The compare_service of this ShowSubscribesResponse.
         :rtype: ServiceInfo
         """
         return self._compare_service
 
     @compare_service.setter
     def compare_service(self, compare_service):
-        """Sets the compare_service of this AuthorizeFaceRecognitionServiceResponse.
+        """Sets the compare_service of this ShowSubscribesResponse.
 
 
-        :param compare_service: The compare_service of this AuthorizeFaceRecognitionServiceResponse.
+        :param compare_service: The compare_service of this ShowSubscribesResponse.
         :type: ServiceInfo
         """
         self._compare_service = compare_service
 
     @property
     def search_service(self):
-        """Gets the search_service of this AuthorizeFaceRecognitionServiceResponse.
+        """Gets the search_service of this ShowSubscribesResponse.
 
 
-        :return: The search_service of this AuthorizeFaceRecognitionServiceResponse.
+        :return: The search_service of this ShowSubscribesResponse.
         :rtype: ServiceInfo
         """
         return self._search_service
 
     @search_service.setter
     def search_service(self, search_service):
-        """Sets the search_service of this AuthorizeFaceRecognitionServiceResponse.
+        """Sets the search_service of this ShowSubscribesResponse.
 
 
-        :param search_service: The search_service of this AuthorizeFaceRecognitionServiceResponse.
+        :param search_service: The search_service of this ShowSubscribesResponse.
         :type: ServiceInfo
         """
         self._search_service = search_service
@@ -204,7 +204,7 @@ class AuthorizeFaceRecognitionServiceResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AuthorizeFaceRecognitionServiceResponse):
+        if not isinstance(other, ShowSubscribesResponse):
             return False
 
         return self.__dict__ == other.__dict__

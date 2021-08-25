@@ -963,7 +963,7 @@ class FunctionGraphClient(Client):
         :return: ExportFunctionResponse
         """
 
-        all_params = ['config', 'code']
+        all_params = ['function_urn', 'config', 'code', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -972,12 +972,16 @@ class FunctionGraphClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
 
         query_params = []
         if 'config' in local_var_params:
             query_params.append(('config', local_var_params['config']))
         if 'code' in local_var_params:
             query_params.append(('code', local_var_params['code']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
 
         header_params = {}
 
@@ -995,8 +999,8 @@ class FunctionGraphClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/fgs/functions/export',
-            method='POST',
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/export',
+            method='GET',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
@@ -1621,7 +1625,7 @@ class FunctionGraphClient(Client):
         :return: ListStatisticsResponse
         """
 
-        all_params = ['filter', 'month_code', 'period']
+        all_params = ['filter', 'period']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1636,8 +1640,6 @@ class FunctionGraphClient(Client):
             query_params.append(('filter', local_var_params['filter']))
         if 'period' in local_var_params:
             query_params.append(('period', local_var_params['period']))
-        if 'month_code' in local_var_params:
-            query_params.append(('month_code', local_var_params['month_code']))
 
         header_params = {}
 

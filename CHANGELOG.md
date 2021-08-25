@@ -1,3 +1,147 @@
+# 3.0.57 2021-08-25
+
+### HuaweiCloud SDK CBS
+
+- _Features_
+    - Support the `Conversational Bot Service`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK CodeCraft
+
+- _Features_
+    - Support the `Conversational Bot Service`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the type of the request parameter `score` of the interfaces `CreateCompetitionScore` and `UpdateCompetitionScore`: `float` -> `string`
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+    - Support the following interfaces:
+        - `ShowJobDetail`
+        - `SwitchSlowlogDesensitization`
+        - `ListFlavorInfos`
+        - `UpdateInstanceRemark`
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the response parameter `job_id` to the interfaces `RestoreInstance`, `CreateManualBackup` and `RestoreInstanceFromCollection`.
+    - Add the response parameter `remark` to the interface `ListInstances`.
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the following response parameters to the interface `ListServerInterfaces`:
+        - `delete_on_termination`
+        - `driver_mode`
+        - `min_rate`
+        - `multiqueue_num`
+        - `pci_address`
+    - Add the response parameters `cpu_options` and `hypervisor` to the interface `ListServersDetails`.
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request and response parameter `public_border_group` to the interface `BatchCreateSharedBandwidths`.
+    - Add the response parameter `public_border_group` to the interface `AddPublicipsIntoSharedBandwidth`.
+
+### HuaweiCloud SDK FRS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the name of the interface: `AuthorizeFaceRecognitionService` -> `ShowSubscribes`.
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request parameters `function_urn` and `type` to the interface `ExportFunction`.
+    - -The optional value of the request parameter `filter` of the interface `ListStatistics` is modified to [`monitor_data`, `monthly_report`]
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+    - Support the following interfaces:
+        - `ListDedicatedResources`
+        - `ListFlavorInfos`
+        - `ListConfigurationTemplates`
+        - `ListInstancesByResourceTags`
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the request parameter `dedicated_resource_id` to the interface `CreateInstance`.
+    - Add the response parameter `dedicated_resource_id` to the interface `ListInstances`.
+
+### HuaweiCloud SDK ImageSearch
+
+- _Features_
+    - Support the service `ImageSearch`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK Live
+
+- _Features_
+    - Support the interface `RunRecord`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+    - Support the following interfaces:
+        - `SearchStatisticConferenceInfo`
+        - `SearchStatisticConferenceParticipant`
+        - `SearchStatisticUserInfo`
+        - `SearchStatisticResourceInfo`
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Remove the request parameter `aspect_ratio` of the interface `CreateTransTemplate`.
+    - Remove the request parameter `GOP_structure` and `sr_factor` of the interface `CreateTranscodingTask`.
+    - Remove the request parameter `GOP_structure` and `sr_factor` of the interface `CreateTemplateGroup`.
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Modify the name of the response parameter of the interface `ListJobInfoDetail`: `taskDetail` -> `task_detail`
+    - Add the response parameter `count` to the interface `ListJobInfoDetail`.
+
 # 3.0.56 2021-08-17
 
 ### HuaweiCloud SDK AntiDDoS

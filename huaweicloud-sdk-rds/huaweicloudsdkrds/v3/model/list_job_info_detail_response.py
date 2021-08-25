@@ -22,23 +22,28 @@ class ListJobInfoDetailResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'jobs': 'GetTaskDetailListRspJobs'
+        'jobs': 'GetTaskDetailListRspJobs',
+        'count': 'int'
     }
 
     attribute_map = {
-        'jobs': 'jobs'
+        'jobs': 'jobs',
+        'count': 'count'
     }
 
-    def __init__(self, jobs=None):
+    def __init__(self, jobs=None, count=None):
         """ListJobInfoDetailResponse - a model defined in huaweicloud sdk"""
         
         super(ListJobInfoDetailResponse, self).__init__()
 
         self._jobs = None
+        self._count = None
         self.discriminator = None
 
         if jobs is not None:
             self.jobs = jobs
+        if count is not None:
+            self.count = count
 
     @property
     def jobs(self):
@@ -59,6 +64,28 @@ class ListJobInfoDetailResponse(SdkResponse):
         :type: GetTaskDetailListRspJobs
         """
         self._jobs = jobs
+
+    @property
+    def count(self):
+        """Gets the count of this ListJobInfoDetailResponse.
+
+        任务数量。
+
+        :return: The count of this ListJobInfoDetailResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListJobInfoDetailResponse.
+
+        任务数量。
+
+        :param count: The count of this ListJobInfoDetailResponse.
+        :type: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

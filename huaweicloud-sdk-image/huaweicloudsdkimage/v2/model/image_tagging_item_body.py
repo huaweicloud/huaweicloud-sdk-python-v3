@@ -91,7 +91,7 @@ class ImageTaggingItemBody:
     def type(self):
         """Gets the type of this ImageTaggingItemBody.
 
-        标签的类别。有以下三种类别：  object：实体标签  scene：场景标签  concept：概念标签 
+        标签的类别。返回的标签类型，包含二十多种大类，具体可以参考[图像标签](http://support.huaweicloud.com/image_faq/image_01_0037.html)。 
 
         :return: The type of this ImageTaggingItemBody.
         :rtype: str
@@ -102,7 +102,7 @@ class ImageTaggingItemBody:
     def type(self, type):
         """Sets the type of this ImageTaggingItemBody.
 
-        标签的类别。有以下三种类别：  object：实体标签  scene：场景标签  concept：概念标签 
+        标签的类别。返回的标签类型，包含二十多种大类，具体可以参考[图像标签](http://support.huaweicloud.com/image_faq/image_01_0037.html)。 
 
         :param type: The type of this ImageTaggingItemBody.
         :type: str

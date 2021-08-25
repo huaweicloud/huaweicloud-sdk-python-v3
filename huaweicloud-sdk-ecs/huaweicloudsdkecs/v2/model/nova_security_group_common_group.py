@@ -40,8 +40,10 @@ class NovaSecurityGroupCommonGroup:
         self._tenant_id = None
         self.discriminator = None
 
-        self.name = name
-        self.tenant_id = tenant_id
+        if name is not None:
+            self.name = name
+        if tenant_id is not None:
+            self.tenant_id = tenant_id
 
     @property
     def name(self):

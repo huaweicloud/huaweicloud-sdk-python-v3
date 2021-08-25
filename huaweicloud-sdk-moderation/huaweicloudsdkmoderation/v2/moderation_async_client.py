@@ -114,7 +114,7 @@ class ModerationAsyncClient(Client):
     def run_check_task_jobs_async(self, request):
         """任务列表查询
 
-        查询批量图像内容检测任务列表，可通过指定任务状态查询来对任务列表进行过滤。
+        查询批量图像内容审核任务列表，可通过指定任务状态查询来对任务列表进行过滤。
 
         :param RunCheckTaskJobsRequest request
         :return: RunCheckTaskJobsResponse
@@ -124,13 +124,13 @@ class ModerationAsyncClient(Client):
     def run_check_task_jobs_with_http_info(self, request):
         """任务列表查询
 
-        查询批量图像内容检测任务列表，可通过指定任务状态查询来对任务列表进行过滤。
+        查询批量图像内容审核任务列表，可通过指定任务状态查询来对任务列表进行过滤。
 
         :param RunCheckTaskJobsRequest request
         :return: RunCheckTaskJobsResponse
         """
 
-        all_params = ['status']
+        all_params = ['status', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -143,6 +143,10 @@ class ModerationAsyncClient(Client):
         query_params = []
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -175,7 +179,7 @@ class ModerationAsyncClient(Client):
 
 
     def run_image_batch_moderation_async(self, request):
-        """图像内容检测（批量）
+        """图像内容审核（批量）
 
         分析并识别用户上传的图像内容是否有敏感内容（如涉及政治人物、暴恐元素、涉黄内容等），并将识别结果返回给用户。
 
@@ -185,7 +189,7 @@ class ModerationAsyncClient(Client):
         return self.run_image_batch_moderation_with_http_info(request)
 
     def run_image_batch_moderation_with_http_info(self, request):
-        """图像内容检测（批量）
+        """图像内容审核（批量）
 
         分析并识别用户上传的图像内容是否有敏感内容（如涉及政治人物、暴恐元素、涉黄内容等），并将识别结果返回给用户。
 
@@ -238,7 +242,7 @@ class ModerationAsyncClient(Client):
 
 
     def run_image_moderation_async(self, request):
-        """图像内容检测
+        """图像内容审核
 
         分析并识别用户上传的图像内容是否有敏感内容（如涉及政治人物、暴恐元素、涉黄内容等），并将识别结果返回给用户。
 
@@ -248,7 +252,7 @@ class ModerationAsyncClient(Client):
         return self.run_image_moderation_with_http_info(request)
 
     def run_image_moderation_with_http_info(self, request):
-        """图像内容检测
+        """图像内容审核
 
         分析并识别用户上传的图像内容是否有敏感内容（如涉及政治人物、暴恐元素、涉黄内容等），并将识别结果返回给用户。
 
@@ -303,7 +307,7 @@ class ModerationAsyncClient(Client):
     def run_task_sumbit_async(self, request):
         """任务提交
 
-        提交批量图像内容检测任务，返回任务标识，任务标识可用于查询任务结果。此接口为异步接口，相对于批量接口，支持更大图片列表批次。
+        提交批量图像内容审核任务，返回任务标识，任务标识可用于查询任务结果。此接口为异步接口，相对于批量接口，支持更大图片列表批次。
 
         :param RunTaskSumbitRequest request
         :return: RunTaskSumbitResponse
@@ -313,7 +317,7 @@ class ModerationAsyncClient(Client):
     def run_task_sumbit_with_http_info(self, request):
         """任务提交
 
-        提交批量图像内容检测任务，返回任务标识，任务标识可用于查询任务结果。此接口为异步接口，相对于批量接口，支持更大图片列表批次。
+        提交批量图像内容审核任务，返回任务标识，任务标识可用于查询任务结果。此接口为异步接口，相对于批量接口，支持更大图片列表批次。
 
         :param RunTaskSumbitRequest request
         :return: RunTaskSumbitResponse
@@ -364,7 +368,7 @@ class ModerationAsyncClient(Client):
 
 
     def run_text_moderation_async(self, request):
-        """文本内容检测
+        """文本内容审核
 
         分析并识别用户上传的文本内容是否有敏感内容（如色情、政治等），并将识别结果返回给用户。
 
@@ -374,7 +378,7 @@ class ModerationAsyncClient(Client):
         return self.run_text_moderation_with_http_info(request)
 
     def run_text_moderation_with_http_info(self, request):
-        """文本内容检测
+        """文本内容审核
 
         分析并识别用户上传的文本内容是否有敏感内容（如色情、政治等），并将识别结果返回给用户。
 

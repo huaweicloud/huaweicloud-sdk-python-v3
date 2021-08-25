@@ -43,8 +43,7 @@ class AddFacesByFileRequestBody:
         self._external_fields = None
         self.discriminator = None
 
-        if image_file is not None:
-            self.image_file = image_file
+        self.image_file = image_file
         if external_image_id is not None:
             self.external_image_id = external_image_id
         if external_fields is not None:

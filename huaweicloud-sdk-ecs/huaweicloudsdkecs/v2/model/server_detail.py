@@ -66,7 +66,9 @@ class ServerDetail:
         'tags': 'list[str]',
         'osscheduler_hints': 'ServerSchedulerHints',
         'enterprise_project_id': 'str',
-        'sys_tags': 'list[ServerSystemTag]'
+        'sys_tags': 'list[ServerSystemTag]',
+        'cpu_options': 'CpuOptions',
+        'hypervisor': 'Hypervisor'
     }
 
     attribute_map = {
@@ -114,10 +116,12 @@ class ServerDetail:
         'tags': 'tags',
         'osscheduler_hints': 'os:scheduler_hints',
         'enterprise_project_id': 'enterprise_project_id',
-        'sys_tags': 'sys_tags'
+        'sys_tags': 'sys_tags',
+        'cpu_options': 'cpu_options',
+        'hypervisor': 'hypervisor'
     }
 
-    def __init__(self, status=None, updated=None, auto_terminate_time=None, host_id=None, os_ext_srv_att_rhost=None, addresses=None, key_name=None, image=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rinstance_name=None, os_ext_srv_att_rhypervisor_hostname=None, flavor=None, id=None, security_groups=None, os_ext_a_zavailability_zone=None, user_id=None, name=None, created=None, tenant_id=None, os_dc_fdisk_config=None, access_i_pv4=None, access_i_pv6=None, fault=None, progress=None, os_ext_st_spower_state=None, config_drive=None, metadata=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None):
+    def __init__(self, status=None, updated=None, auto_terminate_time=None, host_id=None, os_ext_srv_att_rhost=None, addresses=None, key_name=None, image=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_ext_srv_att_rinstance_name=None, os_ext_srv_att_rhypervisor_hostname=None, flavor=None, id=None, security_groups=None, os_ext_a_zavailability_zone=None, user_id=None, name=None, created=None, tenant_id=None, os_dc_fdisk_config=None, access_i_pv4=None, access_i_pv6=None, fault=None, progress=None, os_ext_st_spower_state=None, config_drive=None, metadata=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, locked=None, tags=None, osscheduler_hints=None, enterprise_project_id=None, sys_tags=None, cpu_options=None, hypervisor=None):
         """ServerDetail - a model defined in huaweicloud sdk"""
         
         
@@ -167,6 +171,8 @@ class ServerDetail:
         self._osscheduler_hints = None
         self._enterprise_project_id = None
         self._sys_tags = None
+        self._cpu_options = None
+        self._hypervisor = None
         self.discriminator = None
 
         self.status = status
@@ -224,6 +230,10 @@ class ServerDetail:
             self.enterprise_project_id = enterprise_project_id
         if sys_tags is not None:
             self.sys_tags = sys_tags
+        if cpu_options is not None:
+            self.cpu_options = cpu_options
+        if hypervisor is not None:
+            self.hypervisor = hypervisor
 
     @property
     def status(self):
@@ -1206,6 +1216,46 @@ class ServerDetail:
         :type: list[ServerSystemTag]
         """
         self._sys_tags = sys_tags
+
+    @property
+    def cpu_options(self):
+        """Gets the cpu_options of this ServerDetail.
+
+
+        :return: The cpu_options of this ServerDetail.
+        :rtype: CpuOptions
+        """
+        return self._cpu_options
+
+    @cpu_options.setter
+    def cpu_options(self, cpu_options):
+        """Sets the cpu_options of this ServerDetail.
+
+
+        :param cpu_options: The cpu_options of this ServerDetail.
+        :type: CpuOptions
+        """
+        self._cpu_options = cpu_options
+
+    @property
+    def hypervisor(self):
+        """Gets the hypervisor of this ServerDetail.
+
+
+        :return: The hypervisor of this ServerDetail.
+        :rtype: Hypervisor
+        """
+        return self._hypervisor
+
+    @hypervisor.setter
+    def hypervisor(self, hypervisor):
+        """Sets the hypervisor of this ServerDetail.
+
+
+        :param hypervisor: The hypervisor of this ServerDetail.
+        :type: Hypervisor
+        """
+        self._hypervisor = hypervisor
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -1768,6 +1768,75 @@ class DdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_flavor_infos_async(self, request):
+        """查询数据库规格
+
+        查询指定条件下的实例规格信息。
+
+        :param ListFlavorInfosRequest request
+        :return: ListFlavorInfosResponse
+        """
+        return self.list_flavor_infos_with_http_info(request)
+
+    def list_flavor_infos_with_http_info(self, request):
+        """查询数据库规格
+
+        查询指定条件下的实例规格信息。
+
+        :param ListFlavorInfosRequest request
+        :return: ListFlavorInfosResponse
+        """
+
+        all_params = ['engine_name', 'engine_version', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'engine_name' in local_var_params:
+            query_params.append(('engine_name', local_var_params['engine_name']))
+        if 'engine_version' in local_var_params:
+            query_params.append(('engine_version', local_var_params['engine_version']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.1/{project_id}/flavors',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFlavorInfosResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_flavors_async(self, request):
         """查询所有实例规格信息
 
@@ -3561,6 +3630,69 @@ class DdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_job_detail_async(self, request):
+        """获取DDS任务中心指定ID的任务信息。
+
+        获取DDS任务中心指定ID的任务信息。
+
+        :param ShowJobDetailRequest request
+        :return: ShowJobDetailResponse
+        """
+        return self.show_job_detail_with_http_info(request)
+
+    def show_job_detail_with_http_info(self, request):
+        """获取DDS任务中心指定ID的任务信息。
+
+        获取DDS任务中心指定ID的任务信息。
+
+        :param ShowJobDetailRequest request
+        :return: ShowJobDetailResponse
+        """
+
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/jobs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowJobDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_quotas_async(self, request):
         """查询配额
 
@@ -3679,6 +3811,71 @@ class DdsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowShardingBalancerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def switch_slowlog_desensitization_async(self, request):
+        """设置慢日志明文开关
+
+        设置实例的慢日志明文开关。
+
+        :param SwitchSlowlogDesensitizationRequest request
+        :return: SwitchSlowlogDesensitizationResponse
+        """
+        return self.switch_slowlog_desensitization_with_http_info(request)
+
+    def switch_slowlog_desensitization_with_http_info(self, request):
+        """设置慢日志明文开关
+
+        设置实例的慢日志明文开关。
+
+        :param SwitchSlowlogDesensitizationRequest request
+        :return: SwitchSlowlogDesensitizationResponse
+        """
+
+        all_params = ['instance_id', 'status']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'status' in local_var_params:
+            path_params['status'] = local_var_params['status']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/slowlog-desensitization/{status}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SwitchSlowlogDesensitizationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4002,6 +4199,71 @@ class DdsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateInstancePortResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_instance_remark_async(self, request):
+        """修改实例备注
+
+        修改实例备注。
+
+        :param UpdateInstanceRemarkRequest request
+        :return: UpdateInstanceRemarkResponse
+        """
+        return self.update_instance_remark_with_http_info(request)
+
+    def update_instance_remark_with_http_info(self, request):
+        """修改实例备注
+
+        修改实例备注。
+
+        :param UpdateInstanceRemarkRequest request
+        :return: UpdateInstanceRemarkResponse
+        """
+
+        all_params = ['instance_id', 'update_instance_remark_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/remark',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateInstanceRemarkResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

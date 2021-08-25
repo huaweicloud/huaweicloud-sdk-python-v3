@@ -24,16 +24,18 @@ class BatchCreateBandwidthOption:
     openapi_types = {
         'count': 'int',
         'name': 'str',
-        'size': 'int'
+        'size': 'int',
+        'public_border_group': 'str'
     }
 
     attribute_map = {
         'count': 'count',
         'name': 'name',
-        'size': 'size'
+        'size': 'size',
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, count=None, name=None, size=None):
+    def __init__(self, count=None, name=None, size=None, public_border_group=None):
         """BatchCreateBandwidthOption - a model defined in huaweicloud sdk"""
         
         
@@ -41,11 +43,14 @@ class BatchCreateBandwidthOption:
         self._count = None
         self._name = None
         self._size = None
+        self._public_border_group = None
         self.discriminator = None
 
         self.count = count
         self.name = name
         self.size = size
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
 
     @property
     def count(self):
@@ -112,6 +117,28 @@ class BatchCreateBandwidthOption:
         :type: int
         """
         self._size = size
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this BatchCreateBandwidthOption.
+
+        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域需传此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：共享带宽只能插入与该字段相同的publicip
+
+        :return: The public_border_group of this BatchCreateBandwidthOption.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this BatchCreateBandwidthOption.
+
+        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域需传此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：共享带宽只能插入与该字段相同的publicip
+
+        :param public_border_group: The public_border_group of this BatchCreateBandwidthOption.
+        :type: str
+        """
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

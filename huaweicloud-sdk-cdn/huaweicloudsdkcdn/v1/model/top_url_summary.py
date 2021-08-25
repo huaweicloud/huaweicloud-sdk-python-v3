@@ -152,7 +152,7 @@ class TopUrlSummary:
     def stat_type(self):
         """Gets the stat_type of this TopUrlSummary.
 
-        参数类型支持：flux(流量)，bw(带宽),req_num(请求总数)。
+        参数类型支持：flux(流量)，req_num(请求总数)。
 
         :return: The stat_type of this TopUrlSummary.
         :rtype: str
@@ -163,7 +163,7 @@ class TopUrlSummary:
     def stat_type(self, stat_type):
         """Sets the stat_type of this TopUrlSummary.
 
-        参数类型支持：flux(流量)，bw(带宽),req_num(请求总数)。
+        参数类型支持：flux(流量)，req_num(请求总数)。
 
         :param stat_type: The stat_type of this TopUrlSummary.
         :type: str

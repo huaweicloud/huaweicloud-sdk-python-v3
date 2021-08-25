@@ -43,6 +43,7 @@ from huaweicloudsdkfrs.v2.model.detect_face_by_file_request_body import DetectFa
 from huaweicloudsdkfrs.v2.model.detect_face_by_file_response import DetectFaceByFileResponse
 from huaweicloudsdkfrs.v2.model.detect_face_by_url_request import DetectFaceByUrlRequest
 from huaweicloudsdkfrs.v2.model.detect_face_by_url_response import DetectFaceByUrlResponse
+from huaweicloudsdkfrs.v2.model.dress import Dress
 from huaweicloudsdkfrs.v2.model.face_compare_base64_req import FaceCompareBase64Req
 from huaweicloudsdkfrs.v2.model.face_compare_url_req import FaceCompareUrlReq
 from huaweicloudsdkfrs.v2.model.face_detect_base64_req import FaceDetectBase64Req

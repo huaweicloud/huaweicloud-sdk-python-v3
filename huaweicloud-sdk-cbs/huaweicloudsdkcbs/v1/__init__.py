@@ -1,0 +1,62 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import CbsClient
+from huaweicloudsdkcbs.v1.cbs_client import CbsClient
+from huaweicloudsdkcbs.v1.cbs_async_client import CbsAsyncClient
+# import models into sdk package
+from huaweicloudsdkcbs.v1.model.candidate_intention import CandidateIntention
+from huaweicloudsdkcbs.v1.model.chat_answers import ChatAnswers
+from huaweicloudsdkcbs.v1.model.collect_hot_questions_request import CollectHotQuestionsRequest
+from huaweicloudsdkcbs.v1.model.collect_hot_questions_response import CollectHotQuestionsResponse
+from huaweicloudsdkcbs.v1.model.collect_key_words_request import CollectKeyWordsRequest
+from huaweicloudsdkcbs.v1.model.collect_key_words_response import CollectKeyWordsResponse
+from huaweicloudsdkcbs.v1.model.collect_reply_rates_request import CollectReplyRatesRequest
+from huaweicloudsdkcbs.v1.model.collect_reply_rates_response import CollectReplyRatesResponse
+from huaweicloudsdkcbs.v1.model.collect_session_stats_request import CollectSessionStatsRequest
+from huaweicloudsdkcbs.v1.model.collect_session_stats_response import CollectSessionStatsResponse
+from huaweicloudsdkcbs.v1.model.create_session_request import CreateSessionRequest
+from huaweicloudsdkcbs.v1.model.create_session_response import CreateSessionResponse
+from huaweicloudsdkcbs.v1.model.current_slot import CurrentSlot
+from huaweicloudsdkcbs.v1.model.delete_session_request import DeleteSessionRequest
+from huaweicloudsdkcbs.v1.model.delete_session_response import DeleteSessionResponse
+from huaweicloudsdkcbs.v1.model.doc_bot_answers import DocBotAnswers
+from huaweicloudsdkcbs.v1.model.doc_query_answer_detail import DocQueryAnswerDetail
+from huaweicloudsdkcbs.v1.model.execute_qa_chat_request import ExecuteQaChatRequest
+from huaweicloudsdkcbs.v1.model.execute_qa_chat_response import ExecuteQaChatResponse
+from huaweicloudsdkcbs.v1.model.execute_session_request import ExecuteSessionRequest
+from huaweicloudsdkcbs.v1.model.execute_session_response import ExecuteSessionResponse
+from huaweicloudsdkcbs.v1.model.extends import Extends
+from huaweicloudsdkcbs.v1.model.frame import Frame
+from huaweicloudsdkcbs.v1.model.history_slot import HistorySlot
+from huaweicloudsdkcbs.v1.model.history_slot_word import HistorySlotWord
+from huaweicloudsdkcbs.v1.model.hot_question_count import HotQuestionCount
+from huaweicloudsdkcbs.v1.model.kbqa_answers import KbqaAnswers
+from huaweicloudsdkcbs.v1.model.key_words_stat import KeyWordsStat
+from huaweicloudsdkcbs.v1.model.list_suggestions_request import ListSuggestionsRequest
+from huaweicloudsdkcbs.v1.model.list_suggestions_response import ListSuggestionsResponse
+from huaweicloudsdkcbs.v1.model.post_qa_session_req import PostQaSessionReq
+from huaweicloudsdkcbs.v1.model.post_requests_req import PostRequestsReq
+from huaweicloudsdkcbs.v1.model.post_satisfaction_req import PostSatisfactionReq
+from huaweicloudsdkcbs.v1.model.post_suggestions_req import PostSuggestionsReq
+from huaweicloudsdkcbs.v1.model.qa_bot_answer import QaBotAnswer
+from huaweicloudsdkcbs.v1.model.qa_bot_answers import QaBotAnswers
+from huaweicloudsdkcbs.v1.model.qa_bot_answers_new import QaBotAnswersNew
+from huaweicloudsdkcbs.v1.model.recomend_answer import RecomendAnswer
+from huaweicloudsdkcbs.v1.model.related_intention import RelatedIntention
+from huaweicloudsdkcbs.v1.model.reply_rates_intervals import ReplyRatesIntervals
+from huaweicloudsdkcbs.v1.model.reply_rates_total import ReplyRatesTotal
+from huaweicloudsdkcbs.v1.model.session_extends import SessionExtends
+from huaweicloudsdkcbs.v1.model.session_stats_intervals import SessionStatsIntervals
+from huaweicloudsdkcbs.v1.model.session_stats_total import SessionStatsTotal
+from huaweicloudsdkcbs.v1.model.skill_response import SkillResponse
+from huaweicloudsdkcbs.v1.model.slot_value import SlotValue
+from huaweicloudsdkcbs.v1.model.table_qa_answers import TableQaAnswers
+from huaweicloudsdkcbs.v1.model.tag import Tag
+from huaweicloudsdkcbs.v1.model.tag_labor_request import TagLaborRequest
+from huaweicloudsdkcbs.v1.model.tag_labor_response import TagLaborResponse
+from huaweicloudsdkcbs.v1.model.tag_satisfaction_request import TagSatisfactionRequest
+from huaweicloudsdkcbs.v1.model.tag_satisfaction_response import TagSatisfactionResponse
+from huaweicloudsdkcbs.v1.model.task_bot_answers import TaskBotAnswers
+

@@ -18,8 +18,6 @@ from huaweicloudsdkfrs.v1.model.add_faces_by_url_response import AddFacesByUrlRe
 from huaweicloudsdkfrs.v1.model.add_faces_url_req import AddFacesUrlReq
 from huaweicloudsdkfrs.v1.model.attributes import Attributes
 from huaweicloudsdkfrs.v1.model.attributes_expression import AttributesExpression
-from huaweicloudsdkfrs.v1.model.authorize_face_recognition_service_request import AuthorizeFaceRecognitionServiceRequest
-from huaweicloudsdkfrs.v1.model.authorize_face_recognition_service_response import AuthorizeFaceRecognitionServiceResponse
 from huaweicloudsdkfrs.v1.model.batch_delete_faces_request import BatchDeleteFacesRequest
 from huaweicloudsdkfrs.v1.model.batch_delete_faces_response import BatchDeleteFacesResponse
 from huaweicloudsdkfrs.v1.model.bounding_box import BoundingBox
@@ -63,6 +61,7 @@ from huaweicloudsdkfrs.v1.model.detect_live_face_by_file_request_body import Det
 from huaweicloudsdkfrs.v1.model.detect_live_face_by_file_response import DetectLiveFaceByFileResponse
 from huaweicloudsdkfrs.v1.model.detect_live_face_by_url_request import DetectLiveFaceByUrlRequest
 from huaweicloudsdkfrs.v1.model.detect_live_face_by_url_response import DetectLiveFaceByUrlResponse
+from huaweicloudsdkfrs.v1.model.dress import Dress
 from huaweicloudsdkfrs.v1.model.face_compare_base64_req import FaceCompareBase64Req
 from huaweicloudsdkfrs.v1.model.face_compare_url_req import FaceCompareUrlReq
 from huaweicloudsdkfrs.v1.model.face_detect_base64_req import FaceDetectBase64Req
@@ -100,6 +99,8 @@ from huaweicloudsdkfrs.v1.model.show_faces_by_face_id_request import ShowFacesBy
 from huaweicloudsdkfrs.v1.model.show_faces_by_face_id_response import ShowFacesByFaceIdResponse
 from huaweicloudsdkfrs.v1.model.show_faces_by_limit_request import ShowFacesByLimitRequest
 from huaweicloudsdkfrs.v1.model.show_faces_by_limit_response import ShowFacesByLimitResponse
+from huaweicloudsdkfrs.v1.model.show_subscribes_request import ShowSubscribesRequest
+from huaweicloudsdkfrs.v1.model.show_subscribes_response import ShowSubscribesResponse
 from huaweicloudsdkfrs.v1.model.type_info import TypeInfo
 from huaweicloudsdkfrs.v1.model.update_face_req import UpdateFaceReq
 from huaweicloudsdkfrs.v1.model.update_face_request import UpdateFaceRequest

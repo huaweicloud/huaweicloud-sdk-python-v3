@@ -37,8 +37,7 @@ class InviteShareDTO:
         self._share = None
         self.discriminator = None
 
-        if share is not None:
-            self.share = share
+        self.share = share
 
     @property
     def share(self):

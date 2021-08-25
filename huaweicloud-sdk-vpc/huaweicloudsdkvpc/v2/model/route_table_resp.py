@@ -25,7 +25,7 @@ class RouteTableResp:
         'id': 'str',
         'name': 'str',
         'default': 'bool',
-        'routes': 'list[Route]',
+        'routes': 'list[RouteTableRoute]',
         'subnets': 'list[SubnetList]',
         'tenant_id': 'str',
         'vpc_id': 'str',
@@ -140,7 +140,7 @@ class RouteTableResp:
         功能说明：路由对象，参见route字段说明。  约束：每个路由表最大关联200条路由
 
         :return: The routes of this RouteTableResp.
-        :rtype: list[Route]
+        :rtype: list[RouteTableRoute]
         """
         return self._routes
 
@@ -151,7 +151,7 @@ class RouteTableResp:
         功能说明：路由对象，参见route字段说明。  约束：每个路由表最大关联200条路由
 
         :param routes: The routes of this RouteTableResp.
-        :type: list[Route]
+        :type: list[RouteTableRoute]
         """
         self._routes = routes
 

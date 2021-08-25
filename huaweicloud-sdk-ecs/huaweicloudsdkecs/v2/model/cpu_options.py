@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AuthorizeFaceRecognitionServiceRequest:
+class CpuOptions:
 
 
     """
@@ -22,16 +22,45 @@ class AuthorizeFaceRecognitionServiceRequest:
     sensitive_list = []
 
     openapi_types = {
+        'hwcpu_threads': 'int'
     }
 
     attribute_map = {
+        'hwcpu_threads': 'hw:cpu_threads'
     }
 
-    def __init__(self):
-        """AuthorizeFaceRecognitionServiceRequest - a model defined in huaweicloud sdk"""
+    def __init__(self, hwcpu_threads=None):
+        """CpuOptions - a model defined in huaweicloud sdk"""
         
         
+
+        self._hwcpu_threads = None
         self.discriminator = None
+
+        if hwcpu_threads is not None:
+            self.hwcpu_threads = hwcpu_threads
+
+    @property
+    def hwcpu_threads(self):
+        """Gets the hwcpu_threads of this CpuOptions.
+
+        CPU超线程数， 决定CPU是否开启超线程
+
+        :return: The hwcpu_threads of this CpuOptions.
+        :rtype: int
+        """
+        return self._hwcpu_threads
+
+    @hwcpu_threads.setter
+    def hwcpu_threads(self, hwcpu_threads):
+        """Sets the hwcpu_threads of this CpuOptions.
+
+        CPU超线程数， 决定CPU是否开启超线程
+
+        :param hwcpu_threads: The hwcpu_threads of this CpuOptions.
+        :type: int
+        """
+        self._hwcpu_threads = hwcpu_threads
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -75,7 +104,7 @@ class AuthorizeFaceRecognitionServiceRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AuthorizeFaceRecognitionServiceRequest):
+        if not isinstance(other, CpuOptions):
             return False
 
         return self.__dict__ == other.__dict__

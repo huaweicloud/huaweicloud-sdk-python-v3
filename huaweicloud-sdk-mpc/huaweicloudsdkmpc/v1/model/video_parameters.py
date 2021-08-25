@@ -34,10 +34,7 @@ class VideoParameters:
         'frame_rate': 'int',
         'width': 'int',
         'height': 'int',
-        'aspect_ratio': 'int',
-        'black_cut': 'int',
-        'gop_structure': 'bool',
-        'sr_factor': 'str'
+        'black_cut': 'int'
     }
 
     attribute_map = {
@@ -53,13 +50,10 @@ class VideoParameters:
         'frame_rate': 'frame_rate',
         'width': 'width',
         'height': 'height',
-        'aspect_ratio': 'aspect_ratio',
-        'black_cut': 'black_cut',
-        'gop_structure': 'GOP_structure',
-        'sr_factor': 'sr_factor'
+        'black_cut': 'black_cut'
     }
 
-    def __init__(self, output_policy=None, codec=None, bitrate=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, aspect_ratio=None, black_cut=None, gop_structure=None, sr_factor=None):
+    def __init__(self, output_policy=None, codec=None, bitrate=None, profile=None, level=None, preset=None, ref_frames_count=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, black_cut=None):
         """VideoParameters - a model defined in huaweicloud sdk"""
         
         
@@ -76,10 +70,7 @@ class VideoParameters:
         self._frame_rate = None
         self._width = None
         self._height = None
-        self._aspect_ratio = None
         self._black_cut = None
-        self._gop_structure = None
-        self._sr_factor = None
         self.discriminator = None
 
         if output_policy is not None:
@@ -106,14 +97,8 @@ class VideoParameters:
             self.width = width
         if height is not None:
             self.height = height
-        if aspect_ratio is not None:
-            self.aspect_ratio = aspect_ratio
         if black_cut is not None:
             self.black_cut = black_cut
-        if gop_structure is not None:
-            self.gop_structure = gop_structure
-        if sr_factor is not None:
-            self.sr_factor = sr_factor
 
     @property
     def output_policy(self):
@@ -380,28 +365,6 @@ class VideoParameters:
         self._height = height
 
     @property
-    def aspect_ratio(self):
-        """Gets the aspect_ratio of this VideoParameters.
-
-        纵横比（保留，图像缩放方式）  - 0：自适应（保持原有宽高比） - 1：补黑边（16:9） - 2：裁黑边（18:9） 
-
-        :return: The aspect_ratio of this VideoParameters.
-        :rtype: int
-        """
-        return self._aspect_ratio
-
-    @aspect_ratio.setter
-    def aspect_ratio(self, aspect_ratio):
-        """Sets the aspect_ratio of this VideoParameters.
-
-        纵横比（保留，图像缩放方式）  - 0：自适应（保持原有宽高比） - 1：补黑边（16:9） - 2：裁黑边（18:9） 
-
-        :param aspect_ratio: The aspect_ratio of this VideoParameters.
-        :type: int
-        """
-        self._aspect_ratio = aspect_ratio
-
-    @property
     def black_cut(self):
         """Gets the black_cut of this VideoParameters.
 
@@ -422,50 +385,6 @@ class VideoParameters:
         :type: int
         """
         self._black_cut = black_cut
-
-    @property
-    def gop_structure(self):
-        """Gets the gop_structure of this VideoParameters.
-
-        GOP类型（暂不开放） - 0: Closed (Default) - 1:Open 
-
-        :return: The gop_structure of this VideoParameters.
-        :rtype: bool
-        """
-        return self._gop_structure
-
-    @gop_structure.setter
-    def gop_structure(self, gop_structure):
-        """Sets the gop_structure of this VideoParameters.
-
-        GOP类型（暂不开放） - 0: Closed (Default) - 1:Open 
-
-        :param gop_structure: The gop_structure of this VideoParameters.
-        :type: bool
-        """
-        self._gop_structure = gop_structure
-
-    @property
-    def sr_factor(self):
-        """Gets the sr_factor of this VideoParameters.
-
-        超分倍数  取值如下： - 2：两倍超分 
-
-        :return: The sr_factor of this VideoParameters.
-        :rtype: str
-        """
-        return self._sr_factor
-
-    @sr_factor.setter
-    def sr_factor(self, sr_factor):
-        """Sets the sr_factor of this VideoParameters.
-
-        超分倍数  取值如下： - 2：两倍超分 
-
-        :param sr_factor: The sr_factor of this VideoParameters.
-        :type: str
-        """
-        self._sr_factor = sr_factor
 
     def to_dict(self):
         """Returns the model properties as a dict"""

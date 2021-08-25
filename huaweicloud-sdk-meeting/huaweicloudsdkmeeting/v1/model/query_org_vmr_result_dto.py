@@ -79,7 +79,7 @@ class QueryOrgVmrResultDTO:
     def id(self):
         """Gets the id of this QueryOrgVmrResultDTO.
 
-        唯一标识
+        唯一标识。 说明：对应会议管理->创建会议接口中的vmrID。 
 
         :return: The id of this QueryOrgVmrResultDTO.
         :rtype: str
@@ -90,7 +90,7 @@ class QueryOrgVmrResultDTO:
     def id(self, id):
         """Sets the id of this QueryOrgVmrResultDTO.
 
-        唯一标识
+        唯一标识。 说明：对应会议管理->创建会议接口中的vmrID。 
 
         :param id: The id of this QueryOrgVmrResultDTO.
         :type: str
@@ -101,7 +101,7 @@ class QueryOrgVmrResultDTO:
     def vmr_id(self):
         """Gets the vmr_id of this QueryOrgVmrResultDTO.
 
-        云会议室ID。
+        云会议室ID。 说明：对应会议管理->创建会议接口中当vmrIDType等于0（固定ID）时返回数据的conferenceID 。 
 
         :return: The vmr_id of this QueryOrgVmrResultDTO.
         :rtype: str
@@ -112,7 +112,7 @@ class QueryOrgVmrResultDTO:
     def vmr_id(self, vmr_id):
         """Sets the vmr_id of this QueryOrgVmrResultDTO.
 
-        云会议室ID。
+        云会议室ID。 说明：对应会议管理->创建会议接口中当vmrIDType等于0（固定ID）时返回数据的conferenceID 。 
 
         :param vmr_id: The vmr_id of this QueryOrgVmrResultDTO.
         :type: str

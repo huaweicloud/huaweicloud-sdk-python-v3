@@ -23,30 +23,26 @@ class ListStatisticsRequest:
 
     openapi_types = {
         'filter': 'str',
-        'period': 'str',
-        'month_code': 'str'
+        'period': 'str'
     }
 
     attribute_map = {
         'filter': 'filter',
-        'period': 'period',
-        'month_code': 'month_code'
+        'period': 'period'
     }
 
-    def __init__(self, filter=None, period=None, month_code=None):
+    def __init__(self, filter=None, period=None):
         """ListStatisticsRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._filter = None
         self._period = None
-        self._month_code = None
         self.discriminator = None
 
         self.filter = filter
         if period is not None:
             self.period = period
-        self.month_code = month_code
 
     @property
     def filter(self):
@@ -91,28 +87,6 @@ class ListStatisticsRequest:
         :type: str
         """
         self._period = period
-
-    @property
-    def month_code(self):
-        """Gets the month_code of this ListStatisticsRequest.
-
-        月度统计的维度，与filter参数monthly_statistics配合使用。 \"0\":本月月度统计。 \"1\":上月月度统计。 \"2\":最近三个月月度统计。 \"3\":最近六个月月度计。 取值超出范围时默认取\"0”
-
-        :return: The month_code of this ListStatisticsRequest.
-        :rtype: str
-        """
-        return self._month_code
-
-    @month_code.setter
-    def month_code(self, month_code):
-        """Sets the month_code of this ListStatisticsRequest.
-
-        月度统计的维度，与filter参数monthly_statistics配合使用。 \"0\":本月月度统计。 \"1\":上月月度统计。 \"2\":最近三个月月度统计。 \"3\":最近六个月月度计。 取值超出范围时默认取\"0”
-
-        :param month_code: The month_code of this ListStatisticsRequest.
-        :type: str
-        """
-        self._month_code = month_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -74,10 +74,13 @@ from huaweicloudsdkdds.v3.model.enlarge_instance_request_body import EnlargeInst
 from huaweicloudsdkdds.v3.model.error_response import ErrorResponse
 from huaweicloudsdkdds.v3.model.errorlog_result import ErrorlogResult
 from huaweicloudsdkdds.v3.model.flavor import Flavor
+from huaweicloudsdkdds.v3.model.flavor_info import FlavorInfo
 from huaweicloudsdkdds.v3.model.get_backup_download_link_response_body_files import GetBackupDownloadLinkResponseBodyFiles
 from huaweicloudsdkdds.v3.model.group_response_item import GroupResponseItem
 from huaweicloudsdkdds.v3.model.instance_item import InstanceItem
 from huaweicloudsdkdds.v3.model.instance_item_tag_item import InstanceItemTagItem
+from huaweicloudsdkdds.v3.model.job_detail import JobDetail
+from huaweicloudsdkdds.v3.model.job_instance_info import JobInstanceInfo
 from huaweicloudsdkdds.v3.model.links import Links
 from huaweicloudsdkdds.v3.model.list_api_version_request import ListApiVersionRequest
 from huaweicloudsdkdds.v3.model.list_api_version_response import ListApiVersionResponse
@@ -98,6 +101,8 @@ from huaweicloudsdkdds.v3.model.list_datastore_versions_request import ListDatas
 from huaweicloudsdkdds.v3.model.list_datastore_versions_response import ListDatastoreVersionsResponse
 from huaweicloudsdkdds.v3.model.list_error_logs_request import ListErrorLogsRequest
 from huaweicloudsdkdds.v3.model.list_error_logs_response import ListErrorLogsResponse
+from huaweicloudsdkdds.v3.model.list_flavor_infos_request import ListFlavorInfosRequest
+from huaweicloudsdkdds.v3.model.list_flavor_infos_response import ListFlavorInfosResponse
 from huaweicloudsdkdds.v3.model.list_flavors_request import ListFlavorsRequest
 from huaweicloudsdkdds.v3.model.list_flavors_response import ListFlavorsResponse
 from huaweicloudsdkdds.v3.model.list_instance_tags_request import ListInstanceTagsRequest
@@ -182,6 +187,8 @@ from huaweicloudsdkdds.v3.model.show_backup_policy_request import ShowBackupPoli
 from huaweicloudsdkdds.v3.model.show_backup_policy_response import ShowBackupPolicyResponse
 from huaweicloudsdkdds.v3.model.show_connection_statistics_request import ShowConnectionStatisticsRequest
 from huaweicloudsdkdds.v3.model.show_connection_statistics_response import ShowConnectionStatisticsResponse
+from huaweicloudsdkdds.v3.model.show_job_detail_request import ShowJobDetailRequest
+from huaweicloudsdkdds.v3.model.show_job_detail_response import ShowJobDetailResponse
 from huaweicloudsdkdds.v3.model.show_quotas_request import ShowQuotasRequest
 from huaweicloudsdkdds.v3.model.show_quotas_response import ShowQuotasResponse
 from huaweicloudsdkdds.v3.model.show_resources_detail_response_body import ShowResourcesDetailResponseBody
@@ -191,6 +198,8 @@ from huaweicloudsdkdds.v3.model.show_sharding_balancer_response import ShowShard
 from huaweicloudsdkdds.v3.model.slowlog_result import SlowlogResult
 from huaweicloudsdkdds.v3.model.source import Source
 from huaweicloudsdkdds.v3.model.storage import Storage
+from huaweicloudsdkdds.v3.model.switch_slowlog_desensitization_request import SwitchSlowlogDesensitizationRequest
+from huaweicloudsdkdds.v3.model.switch_slowlog_desensitization_response import SwitchSlowlogDesensitizationResponse
 from huaweicloudsdkdds.v3.model.switch_ssl_request import SwitchSslRequest
 from huaweicloudsdkdds.v3.model.switch_ssl_request_body import SwitchSslRequestBody
 from huaweicloudsdkdds.v3.model.switch_ssl_response import SwitchSslResponse
@@ -204,6 +213,9 @@ from huaweicloudsdkdds.v3.model.update_instance_name_request import UpdateInstan
 from huaweicloudsdkdds.v3.model.update_instance_name_response import UpdateInstanceNameResponse
 from huaweicloudsdkdds.v3.model.update_instance_port_request import UpdateInstancePortRequest
 from huaweicloudsdkdds.v3.model.update_instance_port_response import UpdateInstancePortResponse
+from huaweicloudsdkdds.v3.model.update_instance_remark_request import UpdateInstanceRemarkRequest
+from huaweicloudsdkdds.v3.model.update_instance_remark_request_body import UpdateInstanceRemarkRequestBody
+from huaweicloudsdkdds.v3.model.update_instance_remark_response import UpdateInstanceRemarkResponse
 from huaweicloudsdkdds.v3.model.update_name_request_body import UpdateNameRequestBody
 from huaweicloudsdkdds.v3.model.update_port_request_body import UpdatePortRequestBody
 from huaweicloudsdkdds.v3.model.update_security_group_request import UpdateSecurityGroupRequest

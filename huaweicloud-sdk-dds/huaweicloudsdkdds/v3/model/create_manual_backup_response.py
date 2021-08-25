@@ -22,23 +22,50 @@ class CreateManualBackupResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'job_id': 'str',
         'backup_id': 'str'
     }
 
     attribute_map = {
+        'job_id': 'job_id',
         'backup_id': 'backup_id'
     }
 
-    def __init__(self, backup_id=None):
+    def __init__(self, job_id=None, backup_id=None):
         """CreateManualBackupResponse - a model defined in huaweicloud sdk"""
         
         super(CreateManualBackupResponse, self).__init__()
 
+        self._job_id = None
         self._backup_id = None
         self.discriminator = None
 
+        if job_id is not None:
+            self.job_id = job_id
         if backup_id is not None:
             self.backup_id = backup_id
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this CreateManualBackupResponse.
+
+        手动备份的异步任务ID。
+
+        :return: The job_id of this CreateManualBackupResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this CreateManualBackupResponse.
+
+        手动备份的异步任务ID。
+
+        :param job_id: The job_id of this CreateManualBackupResponse.
+        :type: str
+        """
+        self._job_id = job_id
 
     @property
     def backup_id(self):

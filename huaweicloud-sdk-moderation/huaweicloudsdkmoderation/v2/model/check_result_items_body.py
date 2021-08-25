@@ -81,7 +81,7 @@ class CheckResultItemsBody:
     def suggestion(self):
         """Gets the suggestion of this CheckResultItemsBody.
 
-        请参见[表2](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table663805019540)中suggestion字段说明。
+        检测结果是否通过。 - block：包含敏感信息，不通过 - pass：不包含敏感信息，通过 - review：需要人工复检 > 当同时检测多个场景时，suggestion的值以最可能包含敏感信息的场景为准。即任一场景出现了block则总的suggestion为block，所有场景都pass时suggestion为pass，这两种情况之外则一定有场景需要review，此时suggestion为review。 
 
         :return: The suggestion of this CheckResultItemsBody.
         :rtype: str
@@ -92,7 +92,7 @@ class CheckResultItemsBody:
     def suggestion(self, suggestion):
         """Sets the suggestion of this CheckResultItemsBody.
 
-        请参见[表2](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table663805019540)中suggestion字段说明。
+        检测结果是否通过。 - block：包含敏感信息，不通过 - pass：不包含敏感信息，通过 - review：需要人工复检 > 当同时检测多个场景时，suggestion的值以最可能包含敏感信息的场景为准。即任一场景出现了block则总的suggestion为block，所有场景都pass时suggestion为pass，这两种情况之外则一定有场景需要review，此时suggestion为review。 
 
         :param suggestion: The suggestion of this CheckResultItemsBody.
         :type: str

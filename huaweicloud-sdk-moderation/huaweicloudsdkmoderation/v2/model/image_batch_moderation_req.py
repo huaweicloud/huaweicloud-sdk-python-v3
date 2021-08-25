@@ -75,7 +75,7 @@ class ImageBatchModerationReq:
     def categories(self):
         """Gets the categories of this ImageBatchModerationReq.
 
-        请参见[表1](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table2693546819540)中categories参数说明。
+        检测场景:  - politics：是否涉及政治人物的检测。  - terrorism：是否包含涉政暴恐元素的检测。  - porn：是否包含涉黄内容元素的检测。  - ad：是否包含广告的检测（公测特性）。  - all：包含politics、terrorism和porn三种场景的检测。  可通过配置上述场景，来完对应场景元素的检测。  为空或无此参数表示politics和terrorism都检测，但不包含porn场景。  > 每个检测场景的检测次数会分类统计。 
 
         :return: The categories of this ImageBatchModerationReq.
         :rtype: list[str]
@@ -86,7 +86,7 @@ class ImageBatchModerationReq:
     def categories(self, categories):
         """Sets the categories of this ImageBatchModerationReq.
 
-        请参见[表1](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table2693546819540)中categories参数说明。
+        检测场景:  - politics：是否涉及政治人物的检测。  - terrorism：是否包含涉政暴恐元素的检测。  - porn：是否包含涉黄内容元素的检测。  - ad：是否包含广告的检测（公测特性）。  - all：包含politics、terrorism和porn三种场景的检测。  可通过配置上述场景，来完对应场景元素的检测。  为空或无此参数表示politics和terrorism都检测，但不包含porn场景。  > 每个检测场景的检测次数会分类统计。 
 
         :param categories: The categories of this ImageBatchModerationReq.
         :type: list[str]
@@ -97,7 +97,7 @@ class ImageBatchModerationReq:
     def threshold(self):
         """Gets the threshold of this ImageBatchModerationReq.
 
-        请参见[表1](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table2693546819540)中threshold参数说明。
+        - 结果过滤门限，只有置信度不低于此门限的结果才会呈现在detail的列表中，取值范围 0-1，当未设置此值时各个检测场景会使用各自的默认值。  - politics检测场景的默认值为0.95。  - terrorism检测场景的默认值为0。  - ad检测场景的默认值为0。  - 无特殊需求直接不传此参数或像示例中一样值设为空字符串即可。  > - 如果检测场景中的最高置信度也未达到threshold，则结果列表为空；反之threshold过小，则会使结果列表中内容过多。 > - threshold参数不支持porn场景筛选。 > -  threshold参数不会影响响应中的suggestion。 
 
         :return: The threshold of this ImageBatchModerationReq.
         :rtype: float
@@ -108,7 +108,7 @@ class ImageBatchModerationReq:
     def threshold(self, threshold):
         """Sets the threshold of this ImageBatchModerationReq.
 
-        请参见[表1](https://support.huaweicloud.com/api-moderation/moderation_03_0019.html#moderation_03_0019__zh-cn_topic_0087142444_table2693546819540)中threshold参数说明。
+        - 结果过滤门限，只有置信度不低于此门限的结果才会呈现在detail的列表中，取值范围 0-1，当未设置此值时各个检测场景会使用各自的默认值。  - politics检测场景的默认值为0.95。  - terrorism检测场景的默认值为0。  - ad检测场景的默认值为0。  - 无特殊需求直接不传此参数或像示例中一样值设为空字符串即可。  > - 如果检测场景中的最高置信度也未达到threshold，则结果列表为空；反之threshold过小，则会使结果列表中内容过多。 > - threshold参数不支持porn场景筛选。 > -  threshold参数不会影响响应中的suggestion。 
 
         :param threshold: The threshold of this ImageBatchModerationReq.
         :type: float

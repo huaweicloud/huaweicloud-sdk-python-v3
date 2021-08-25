@@ -45,6 +45,7 @@ from huaweicloudsdkecs.v2.model.change_server_os_with_cloud_init_request import 
 from huaweicloudsdkecs.v2.model.change_server_os_with_cloud_init_request_body import ChangeServerOsWithCloudInitRequestBody
 from huaweicloudsdkecs.v2.model.change_server_os_with_cloud_init_response import ChangeServerOsWithCloudInitResponse
 from huaweicloudsdkecs.v2.model.change_severs_os_metadata import ChangeSeversOsMetadata
+from huaweicloudsdkecs.v2.model.cpu_options import CpuOptions
 from huaweicloudsdkecs.v2.model.create_post_paid_servers_request import CreatePostPaidServersRequest
 from huaweicloudsdkecs.v2.model.create_post_paid_servers_request_body import CreatePostPaidServersRequestBody
 from huaweicloudsdkecs.v2.model.create_post_paid_servers_response import CreatePostPaidServersResponse
@@ -72,6 +73,8 @@ from huaweicloudsdkecs.v2.model.flavor import Flavor
 from huaweicloudsdkecs.v2.model.flavor_extra_spec import FlavorExtraSpec
 from huaweicloudsdkecs.v2.model.flavor_link import FlavorLink
 from huaweicloudsdkecs.v2.model.get_server_remote_console_option import GetServerRemoteConsoleOption
+from huaweicloudsdkecs.v2.model.hypervisor import Hypervisor
+from huaweicloudsdkecs.v2.model.interface_attachable_quantity import InterfaceAttachableQuantity
 from huaweicloudsdkecs.v2.model.interface_attachment import InterfaceAttachment
 from huaweicloudsdkecs.v2.model.ipv6_bandwidth import Ipv6Bandwidth
 from huaweicloudsdkecs.v2.model.job_entities import JobEntities

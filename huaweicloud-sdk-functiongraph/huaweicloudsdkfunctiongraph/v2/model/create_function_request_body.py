@@ -38,7 +38,8 @@ class CreateFunctionRequestBody:
         'func_code': 'FuncCode',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -58,10 +59,11 @@ class CreateFunctionRequestBody:
         'func_code': 'func_code',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'type': 'type'
     }
 
-    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, code_type=None, code_url=None, code_filename=None, user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None):
+    def __init__(self, func_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, code_type=None, code_url=None, code_filename=None, user_data=None, xrole=None, app_xrole=None, description=None, func_code=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, type=None):
         """CreateFunctionRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -83,6 +85,7 @@ class CreateFunctionRequestBody:
         self._initializer_handler = None
         self._initializer_timeout = None
         self._enterprise_project_id = None
+        self._type = None
         self.discriminator = None
 
         self.func_name = func_name
@@ -112,6 +115,8 @@ class CreateFunctionRequestBody:
             self.initializer_timeout = initializer_timeout
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if type is not None:
+            self.type = type
 
     @property
     def func_name(self):
@@ -484,6 +489,28 @@ class CreateFunctionRequestBody:
         :type: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def type(self):
+        """Gets the type of this CreateFunctionRequestBody.
+
+        函数版本。
+
+        :return: The type of this CreateFunctionRequestBody.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this CreateFunctionRequestBody.
+
+        函数版本。
+
+        :param type: The type of this CreateFunctionRequestBody.
+        :type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

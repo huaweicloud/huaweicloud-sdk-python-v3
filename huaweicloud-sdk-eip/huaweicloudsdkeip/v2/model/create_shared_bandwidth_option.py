@@ -25,17 +25,19 @@ class CreateSharedBandwidthOption:
         'enterprise_project_id': 'str',
         'name': 'str',
         'size': 'int',
-        'charge_mode': 'str'
+        'charge_mode': 'str',
+        'public_border_group': 'str'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'name': 'name',
         'size': 'size',
-        'charge_mode': 'charge_mode'
+        'charge_mode': 'charge_mode',
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, enterprise_project_id=None, name=None, size=None, charge_mode=None):
+    def __init__(self, enterprise_project_id=None, name=None, size=None, charge_mode=None, public_border_group=None):
         """CreateSharedBandwidthOption - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +46,7 @@ class CreateSharedBandwidthOption:
         self._name = None
         self._size = None
         self._charge_mode = None
+        self._public_border_group = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -52,6 +55,8 @@ class CreateSharedBandwidthOption:
         self.size = size
         if charge_mode is not None:
             self.charge_mode = charge_mode
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
 
     @property
     def enterprise_project_id(self):
@@ -140,6 +145,28 @@ class CreateSharedBandwidthOption:
         :type: str
         """
         self._charge_mode = charge_mode
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this CreateSharedBandwidthOption.
+
+        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域需传此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：共享带宽只能插入与该字段相同的publicip
+
+        :return: The public_border_group of this CreateSharedBandwidthOption.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this CreateSharedBandwidthOption.
+
+        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域需传此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：共享带宽只能插入与该字段相同的publicip
+
+        :param public_border_group: The public_border_group of this CreateSharedBandwidthOption.
+        :type: str
+        """
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

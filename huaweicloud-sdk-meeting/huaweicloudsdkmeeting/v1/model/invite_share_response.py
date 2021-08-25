@@ -22,72 +22,16 @@ class InviteShareResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'return_code': 'int',
-        'return_desc': 'str'
     }
 
     attribute_map = {
-        'return_code': 'returnCode',
-        'return_desc': 'returnDesc'
     }
 
-    def __init__(self, return_code=None, return_desc=None):
+    def __init__(self):
         """InviteShareResponse - a model defined in huaweicloud sdk"""
         
         super(InviteShareResponse, self).__init__()
-
-        self._return_code = None
-        self._return_desc = None
         self.discriminator = None
-
-        if return_code is not None:
-            self.return_code = return_code
-        if return_desc is not None:
-            self.return_desc = return_desc
-
-    @property
-    def return_code(self):
-        """Gets the return_code of this InviteShareResponse.
-
-        结果码
-
-        :return: The return_code of this InviteShareResponse.
-        :rtype: int
-        """
-        return self._return_code
-
-    @return_code.setter
-    def return_code(self, return_code):
-        """Sets the return_code of this InviteShareResponse.
-
-        结果码
-
-        :param return_code: The return_code of this InviteShareResponse.
-        :type: int
-        """
-        self._return_code = return_code
-
-    @property
-    def return_desc(self):
-        """Gets the return_desc of this InviteShareResponse.
-
-        结果描述
-
-        :return: The return_desc of this InviteShareResponse.
-        :rtype: str
-        """
-        return self._return_desc
-
-    @return_desc.setter
-    def return_desc(self, return_desc):
-        """Sets the return_desc of this InviteShareResponse.
-
-        结果描述
-
-        :param return_desc: The return_desc of this InviteShareResponse.
-        :type: str
-        """
-        self._return_desc = return_desc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

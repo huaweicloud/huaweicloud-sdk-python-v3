@@ -36,6 +36,7 @@ class CreateInstanceResponse(SdkResponse):
         'flavor': 'list[CreateInstanceFlavorResult]',
         'backup_strategy': 'BackupStrategyResult',
         'enterprise_project_id': 'str',
+        'dedicated_resource_id': 'str',
         'ssl_option': 'str',
         'job_id': 'str',
         'order_id': 'str',
@@ -57,13 +58,14 @@ class CreateInstanceResponse(SdkResponse):
         'flavor': 'flavor',
         'backup_strategy': 'backup_strategy',
         'enterprise_project_id': 'enterprise_project_id',
+        'dedicated_resource_id': 'dedicated_resource_id',
         'ssl_option': 'ssl_option',
         'job_id': 'job_id',
         'order_id': 'order_id',
         'charge_info': 'charge_info'
     }
 
-    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, job_id=None, order_id=None, charge_info=None):
+    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, dedicated_resource_id=None, ssl_option=None, job_id=None, order_id=None, charge_info=None):
         """CreateInstanceResponse - a model defined in huaweicloud sdk"""
         
         super(CreateInstanceResponse, self).__init__()
@@ -82,6 +84,7 @@ class CreateInstanceResponse(SdkResponse):
         self._flavor = None
         self._backup_strategy = None
         self._enterprise_project_id = None
+        self._dedicated_resource_id = None
         self._ssl_option = None
         self._job_id = None
         self._order_id = None
@@ -116,6 +119,8 @@ class CreateInstanceResponse(SdkResponse):
             self.backup_strategy = backup_strategy
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if dedicated_resource_id is not None:
+            self.dedicated_resource_id = dedicated_resource_id
         if ssl_option is not None:
             self.ssl_option = ssl_option
         if job_id is not None:
@@ -428,6 +433,28 @@ class CreateInstanceResponse(SdkResponse):
         :type: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def dedicated_resource_id(self):
+        """Gets the dedicated_resource_id of this CreateInstanceResponse.
+
+        专属资源ID，只有创建在专属资源上的实例才会返回该字段。
+
+        :return: The dedicated_resource_id of this CreateInstanceResponse.
+        :rtype: str
+        """
+        return self._dedicated_resource_id
+
+    @dedicated_resource_id.setter
+    def dedicated_resource_id(self, dedicated_resource_id):
+        """Sets the dedicated_resource_id of this CreateInstanceResponse.
+
+        专属资源ID，只有创建在专属资源上的实例才会返回该字段。
+
+        :param dedicated_resource_id: The dedicated_resource_id of this CreateInstanceResponse.
+        :type: str
+        """
+        self._dedicated_resource_id = dedicated_resource_id
 
     @property
     def ssl_option(self):

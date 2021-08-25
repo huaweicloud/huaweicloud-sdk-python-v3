@@ -216,6 +216,7 @@ from huaweicloudsdkvpc.v2.model.resource_tag import ResourceTag
 from huaweicloudsdkvpc.v2.model.route import Route
 from huaweicloudsdkvpc.v2.model.route_table_list_resp import RouteTableListResp
 from huaweicloudsdkvpc.v2.model.route_table_resp import RouteTableResp
+from huaweicloudsdkvpc.v2.model.route_table_route import RouteTableRoute
 from huaweicloudsdkvpc.v2.model.routetable_associate_reqbody import RoutetableAssociateReqbody
 from huaweicloudsdkvpc.v2.model.security_group import SecurityGroup
 from huaweicloudsdkvpc.v2.model.security_group_rule import SecurityGroupRule
