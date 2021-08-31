@@ -23,27 +23,42 @@ class ListTopicsRequest:
 
     openapi_types = {
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'enterprise_project_id': 'str',
+        'name': 'str',
+        'fuzzy_name': 'str'
     }
 
     attribute_map = {
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'enterprise_project_id': 'enterprise_project_id',
+        'name': 'name',
+        'fuzzy_name': 'fuzzy_name'
     }
 
-    def __init__(self, offset=None, limit=None):
+    def __init__(self, offset=None, limit=None, enterprise_project_id=None, name=None, fuzzy_name=None):
         """ListTopicsRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._offset = None
         self._limit = None
+        self._enterprise_project_id = None
+        self._name = None
+        self._fuzzy_name = None
         self.discriminator = None
 
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if name is not None:
+            self.name = name
+        if fuzzy_name is not None:
+            self.fuzzy_name = fuzzy_name
 
     @property
     def offset(self):
@@ -88,6 +103,72 @@ class ListTopicsRequest:
         :type: int
         """
         self._limit = limit
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListTopicsRequest.
+
+        企业项目id, 默认企业项目id为0
+
+        :return: The enterprise_project_id of this ListTopicsRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListTopicsRequest.
+
+        企业项目id, 默认企业项目id为0
+
+        :param enterprise_project_id: The enterprise_project_id of this ListTopicsRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def name(self):
+        """Gets the name of this ListTopicsRequest.
+
+        检索的主题名称，完全匹配
+
+        :return: The name of this ListTopicsRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListTopicsRequest.
+
+        检索的主题名称，完全匹配
+
+        :param name: The name of this ListTopicsRequest.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def fuzzy_name(self):
+        """Gets the fuzzy_name of this ListTopicsRequest.
+
+        检索的主题名称，模糊匹配，按照startwith模式进行匹配
+
+        :return: The fuzzy_name of this ListTopicsRequest.
+        :rtype: str
+        """
+        return self._fuzzy_name
+
+    @fuzzy_name.setter
+    def fuzzy_name(self, fuzzy_name):
+        """Sets the fuzzy_name of this ListTopicsRequest.
+
+        检索的主题名称，模糊匹配，按照startwith模式进行匹配
+
+        :param fuzzy_name: The fuzzy_name of this ListTopicsRequest.
+        :type: str
+        """
+        self._fuzzy_name = fuzzy_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

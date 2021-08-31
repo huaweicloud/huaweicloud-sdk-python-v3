@@ -23,7 +23,7 @@ class UpdateScoreRequestModel:
 
     openapi_types = {
         'works_id': 'int',
-        'score': 'str',
+        'score': 'float',
         'status': 'str',
         'message': 'str'
     }
@@ -81,7 +81,7 @@ class UpdateScoreRequestModel:
         作品分数，作品状态为failed时传-1，计算长度时包括小数点，小数点后面最多保留四位
 
         :return: The score of this UpdateScoreRequestModel.
-        :rtype: str
+        :rtype: float
         """
         return self._score
 
@@ -92,7 +92,7 @@ class UpdateScoreRequestModel:
         作品分数，作品状态为failed时传-1，计算长度时包括小数点，小数点后面最多保留四位
 
         :param score: The score of this UpdateScoreRequestModel.
-        :type: str
+        :type: float
         """
         self._score = score
 

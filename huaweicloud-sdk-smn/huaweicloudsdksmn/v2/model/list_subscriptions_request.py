@@ -23,27 +23,42 @@ class ListSubscriptionsRequest:
 
     openapi_types = {
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'protocol': 'str',
+        'status': 'int',
+        'endpoint': 'str'
     }
 
     attribute_map = {
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'protocol': 'protocol',
+        'status': 'status',
+        'endpoint': 'endpoint'
     }
 
-    def __init__(self, offset=None, limit=None):
+    def __init__(self, offset=None, limit=None, protocol=None, status=None, endpoint=None):
         """ListSubscriptionsRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._offset = None
         self._limit = None
+        self._protocol = None
+        self._status = None
+        self._endpoint = None
         self.discriminator = None
 
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if protocol is not None:
+            self.protocol = protocol
+        if status is not None:
+            self.status = status
+        if endpoint is not None:
+            self.endpoint = endpoint
 
     @property
     def offset(self):
@@ -88,6 +103,72 @@ class ListSubscriptionsRequest:
         :type: int
         """
         self._limit = limit
+
+    @property
+    def protocol(self):
+        """Gets the protocol of this ListSubscriptionsRequest.
+
+        协议名称, 枚举值：http,https,sms,email,functionstage,dms,application
+
+        :return: The protocol of this ListSubscriptionsRequest.
+        :rtype: str
+        """
+        return self._protocol
+
+    @protocol.setter
+    def protocol(self, protocol):
+        """Sets the protocol of this ListSubscriptionsRequest.
+
+        协议名称, 枚举值：http,https,sms,email,functionstage,dms,application
+
+        :param protocol: The protocol of this ListSubscriptionsRequest.
+        :type: str
+        """
+        self._protocol = protocol
+
+    @property
+    def status(self):
+        """Gets the status of this ListSubscriptionsRequest.
+
+        状态：0-未确认，1-已确认，2-不需要确认，3-已取消确认，4-已经删除
+
+        :return: The status of this ListSubscriptionsRequest.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListSubscriptionsRequest.
+
+        状态：0-未确认，1-已确认，2-不需要确认，3-已取消确认，4-已经删除
+
+        :param status: The status of this ListSubscriptionsRequest.
+        :type: int
+        """
+        self._status = status
+
+    @property
+    def endpoint(self):
+        """Gets the endpoint of this ListSubscriptionsRequest.
+
+        订阅终端
+
+        :return: The endpoint of this ListSubscriptionsRequest.
+        :rtype: str
+        """
+        return self._endpoint
+
+    @endpoint.setter
+    def endpoint(self, endpoint):
+        """Sets the endpoint of this ListSubscriptionsRequest.
+
+        订阅终端
+
+        :param endpoint: The endpoint of this ListSubscriptionsRequest.
+        :type: str
+        """
+        self._endpoint = endpoint
 
     def to_dict(self):
         """Returns the model properties as a dict"""

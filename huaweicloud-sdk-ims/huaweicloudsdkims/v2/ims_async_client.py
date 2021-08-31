@@ -2603,7 +2603,7 @@ class ImsAsyncClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
+            ['application/openstack-images-v2.1-json-patch'])
 
         auth_settings = []
 

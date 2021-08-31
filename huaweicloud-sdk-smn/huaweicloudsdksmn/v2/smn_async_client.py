@@ -1101,7 +1101,7 @@ class SmnAsyncClient(Client):
         :return: ListSubscriptionsResponse
         """
 
-        all_params = ['offset', 'limit']
+        all_params = ['offset', 'limit', 'protocol', 'status', 'endpoint']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1116,6 +1116,12 @@ class SmnAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'endpoint' in local_var_params:
+            query_params.append(('endpoint', local_var_params['endpoint']))
 
         header_params = {}
 
@@ -1361,7 +1367,7 @@ class SmnAsyncClient(Client):
         :return: ListTopicsResponse
         """
 
-        all_params = ['offset', 'limit']
+        all_params = ['offset', 'limit', 'enterprise_project_id', 'name', 'fuzzy_name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1376,6 +1382,12 @@ class SmnAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'fuzzy_name' in local_var_params:
+            query_params.append(('fuzzy_name', local_var_params['fuzzy_name']))
 
         header_params = {}
 

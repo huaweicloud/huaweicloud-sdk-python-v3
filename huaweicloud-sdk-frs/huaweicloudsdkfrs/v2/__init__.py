@@ -6,6 +6,7 @@ from __future__ import absolute_import
 from huaweicloudsdkfrs.v2.frs_client import FrsClient
 from huaweicloudsdkfrs.v2.frs_async_client import FrsAsyncClient
 # import models into sdk package
+from huaweicloudsdkfrs.v2.model.actions_list import ActionsList
 from huaweicloudsdkfrs.v2.model.add_faces_base64_req import AddFacesBase64Req
 from huaweicloudsdkfrs.v2.model.add_faces_by_base64_request import AddFacesByBase64Request
 from huaweicloudsdkfrs.v2.model.add_faces_by_base64_response import AddFacesByBase64Response
@@ -46,6 +47,20 @@ from huaweicloudsdkfrs.v2.model.detect_face_by_file_request_body import DetectFa
 from huaweicloudsdkfrs.v2.model.detect_face_by_file_response import DetectFaceByFileResponse
 from huaweicloudsdkfrs.v2.model.detect_face_by_url_request import DetectFaceByUrlRequest
 from huaweicloudsdkfrs.v2.model.detect_face_by_url_response import DetectFaceByUrlResponse
+from huaweicloudsdkfrs.v2.model.detect_live_by_base64_request import DetectLiveByBase64Request
+from huaweicloudsdkfrs.v2.model.detect_live_by_base64_response import DetectLiveByBase64Response
+from huaweicloudsdkfrs.v2.model.detect_live_by_file_request import DetectLiveByFileRequest
+from huaweicloudsdkfrs.v2.model.detect_live_by_file_request_body import DetectLiveByFileRequestBody
+from huaweicloudsdkfrs.v2.model.detect_live_by_file_response import DetectLiveByFileResponse
+from huaweicloudsdkfrs.v2.model.detect_live_by_url_request import DetectLiveByUrlRequest
+from huaweicloudsdkfrs.v2.model.detect_live_by_url_response import DetectLiveByUrlResponse
+from huaweicloudsdkfrs.v2.model.detect_live_face_by_base64_request import DetectLiveFaceByBase64Request
+from huaweicloudsdkfrs.v2.model.detect_live_face_by_base64_response import DetectLiveFaceByBase64Response
+from huaweicloudsdkfrs.v2.model.detect_live_face_by_file_request import DetectLiveFaceByFileRequest
+from huaweicloudsdkfrs.v2.model.detect_live_face_by_file_request_body import DetectLiveFaceByFileRequestBody
+from huaweicloudsdkfrs.v2.model.detect_live_face_by_file_response import DetectLiveFaceByFileResponse
+from huaweicloudsdkfrs.v2.model.detect_live_face_by_url_request import DetectLiveFaceByUrlRequest
+from huaweicloudsdkfrs.v2.model.detect_live_face_by_url_response import DetectLiveFaceByUrlResponse
 from huaweicloudsdkfrs.v2.model.dress import Dress
 from huaweicloudsdkfrs.v2.model.face_compare_base64_req import FaceCompareBase64Req
 from huaweicloudsdkfrs.v2.model.face_compare_url_req import FaceCompareUrlReq
@@ -58,6 +73,12 @@ from huaweicloudsdkfrs.v2.model.face_search_url_req import FaceSearchUrlReq
 from huaweicloudsdkfrs.v2.model.face_set_face import FaceSetFace
 from huaweicloudsdkfrs.v2.model.face_set_info import FaceSetInfo
 from huaweicloudsdkfrs.v2.model.landmark import Landmark
+from huaweicloudsdkfrs.v2.model.live_detect_base64_req import LiveDetectBase64Req
+from huaweicloudsdkfrs.v2.model.live_detect_face_base64_req import LiveDetectFaceBase64Req
+from huaweicloudsdkfrs.v2.model.live_detect_face_resp_result import LiveDetectFaceRespResult
+from huaweicloudsdkfrs.v2.model.live_detect_face_url_req import LiveDetectFaceUrlReq
+from huaweicloudsdkfrs.v2.model.live_detect_resp_videoresult import LiveDetectRespVideoresult
+from huaweicloudsdkfrs.v2.model.live_detect_url_req import LiveDetectUrlReq
 from huaweicloudsdkfrs.v2.model.point import Point
 from huaweicloudsdkfrs.v2.model.search_face import SearchFace
 from huaweicloudsdkfrs.v2.model.search_face_by_base64_request import SearchFaceByBase64Request
@@ -81,4 +102,5 @@ from huaweicloudsdkfrs.v2.model.type_info import TypeInfo
 from huaweicloudsdkfrs.v2.model.update_face_req import UpdateFaceReq
 from huaweicloudsdkfrs.v2.model.update_face_request import UpdateFaceRequest
 from huaweicloudsdkfrs.v2.model.update_face_response import UpdateFaceResponse
+from huaweicloudsdkfrs.v2.model.warning_list import WarningList
 

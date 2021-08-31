@@ -27,7 +27,7 @@ class CreateScoresRequestModel:
         'works_id': 'int',
         'name': 'str',
         'works_kind': 'str',
-        'score': 'str',
+        'score': 'float',
         'status': 'str',
         'created_time': 'str',
         'note': 'str',
@@ -204,7 +204,7 @@ class CreateScoresRequestModel:
         作品分数，作品状态为failed时传-1，计算长度时包括小数点，小数点后面最多保留四位
 
         :return: The score of this CreateScoresRequestModel.
-        :rtype: str
+        :rtype: float
         """
         return self._score
 
@@ -215,7 +215,7 @@ class CreateScoresRequestModel:
         作品分数，作品状态为failed时传-1，计算长度时包括小数点，小数点后面最多保留四位
 
         :param score: The score of this CreateScoresRequestModel.
-        :type: str
+        :type: float
         """
         self._score = score
 

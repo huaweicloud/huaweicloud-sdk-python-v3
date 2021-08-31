@@ -27,6 +27,11 @@ class OnlineInfo:
         'stream': 'str',
         'video_codec': 'str',
         'audio_codec': 'str',
+        'video_frame_rate': 'int',
+        'audio_frame_rate': 'int',
+        'video_bitrate': 'int',
+        'audio_bitrate': 'int',
+        'resolution': 'str',
         'client_ip': 'str',
         'start_time': 'str'
     }
@@ -37,11 +42,16 @@ class OnlineInfo:
         'stream': 'stream',
         'video_codec': 'video_codec',
         'audio_codec': 'audio_codec',
+        'video_frame_rate': 'video_frame_rate',
+        'audio_frame_rate': 'audio_frame_rate',
+        'video_bitrate': 'video_bitrate',
+        'audio_bitrate': 'audio_bitrate',
+        'resolution': 'resolution',
         'client_ip': 'client_ip',
         'start_time': 'start_time'
     }
 
-    def __init__(self, publish_domain=None, app=None, stream=None, video_codec=None, audio_codec=None, client_ip=None, start_time=None):
+    def __init__(self, publish_domain=None, app=None, stream=None, video_codec=None, audio_codec=None, video_frame_rate=None, audio_frame_rate=None, video_bitrate=None, audio_bitrate=None, resolution=None, client_ip=None, start_time=None):
         """OnlineInfo - a model defined in huaweicloud sdk"""
         
         
@@ -51,6 +61,11 @@ class OnlineInfo:
         self._stream = None
         self._video_codec = None
         self._audio_codec = None
+        self._video_frame_rate = None
+        self._audio_frame_rate = None
+        self._video_bitrate = None
+        self._audio_bitrate = None
+        self._resolution = None
         self._client_ip = None
         self._start_time = None
         self.discriminator = None
@@ -60,6 +75,16 @@ class OnlineInfo:
         self.stream = stream
         self.video_codec = video_codec
         self.audio_codec = audio_codec
+        if video_frame_rate is not None:
+            self.video_frame_rate = video_frame_rate
+        if audio_frame_rate is not None:
+            self.audio_frame_rate = audio_frame_rate
+        if video_bitrate is not None:
+            self.video_bitrate = video_bitrate
+        if audio_bitrate is not None:
+            self.audio_bitrate = audio_bitrate
+        if resolution is not None:
+            self.resolution = resolution
         self.client_ip = client_ip
         self.start_time = start_time
 
@@ -172,6 +197,116 @@ class OnlineInfo:
         :type: str
         """
         self._audio_codec = audio_codec
+
+    @property
+    def video_frame_rate(self):
+        """Gets the video_frame_rate of this OnlineInfo.
+
+        视频帧率
+
+        :return: The video_frame_rate of this OnlineInfo.
+        :rtype: int
+        """
+        return self._video_frame_rate
+
+    @video_frame_rate.setter
+    def video_frame_rate(self, video_frame_rate):
+        """Sets the video_frame_rate of this OnlineInfo.
+
+        视频帧率
+
+        :param video_frame_rate: The video_frame_rate of this OnlineInfo.
+        :type: int
+        """
+        self._video_frame_rate = video_frame_rate
+
+    @property
+    def audio_frame_rate(self):
+        """Gets the audio_frame_rate of this OnlineInfo.
+
+        音频帧率
+
+        :return: The audio_frame_rate of this OnlineInfo.
+        :rtype: int
+        """
+        return self._audio_frame_rate
+
+    @audio_frame_rate.setter
+    def audio_frame_rate(self, audio_frame_rate):
+        """Sets the audio_frame_rate of this OnlineInfo.
+
+        音频帧率
+
+        :param audio_frame_rate: The audio_frame_rate of this OnlineInfo.
+        :type: int
+        """
+        self._audio_frame_rate = audio_frame_rate
+
+    @property
+    def video_bitrate(self):
+        """Gets the video_bitrate of this OnlineInfo.
+
+        视频码率
+
+        :return: The video_bitrate of this OnlineInfo.
+        :rtype: int
+        """
+        return self._video_bitrate
+
+    @video_bitrate.setter
+    def video_bitrate(self, video_bitrate):
+        """Sets the video_bitrate of this OnlineInfo.
+
+        视频码率
+
+        :param video_bitrate: The video_bitrate of this OnlineInfo.
+        :type: int
+        """
+        self._video_bitrate = video_bitrate
+
+    @property
+    def audio_bitrate(self):
+        """Gets the audio_bitrate of this OnlineInfo.
+
+        音频码率
+
+        :return: The audio_bitrate of this OnlineInfo.
+        :rtype: int
+        """
+        return self._audio_bitrate
+
+    @audio_bitrate.setter
+    def audio_bitrate(self, audio_bitrate):
+        """Sets the audio_bitrate of this OnlineInfo.
+
+        音频码率
+
+        :param audio_bitrate: The audio_bitrate of this OnlineInfo.
+        :type: int
+        """
+        self._audio_bitrate = audio_bitrate
+
+    @property
+    def resolution(self):
+        """Gets the resolution of this OnlineInfo.
+
+        视频分辨率
+
+        :return: The resolution of this OnlineInfo.
+        :rtype: str
+        """
+        return self._resolution
+
+    @resolution.setter
+    def resolution(self, resolution):
+        """Sets the resolution of this OnlineInfo.
+
+        视频分辨率
+
+        :param resolution: The resolution of this OnlineInfo.
+        :type: str
+        """
+        self._resolution = resolution
 
     @property
     def client_ip(self):
