@@ -621,7 +621,7 @@ class ResFeeRecordV2:
     def spec_size(self):
         """Gets the spec_size of this ResFeeRecordV2.
 
-        产品的实例大小，仅线性产品有效。 线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
+        产品的实例大小，仅线性产品有效。  说明： 线性产品是指订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小规格。
 
         :return: The spec_size of this ResFeeRecordV2.
         :rtype: float
@@ -632,7 +632,7 @@ class ResFeeRecordV2:
     def spec_size(self, spec_size):
         """Sets the spec_size of this ResFeeRecordV2.
 
-        产品的实例大小，仅线性产品有效。 线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
+        产品的实例大小，仅线性产品有效。  说明： 线性产品是指订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小规格。
 
         :param spec_size: The spec_size of this ResFeeRecordV2.
         :type: float
@@ -995,7 +995,7 @@ class ResFeeRecordV2:
     def unit(self):
         """Gets the unit of this ResFeeRecordV2.
 
-        资源的单价单位。
+        产品的单价单位。 线性产品的单价单位为“元/{线性单位}/月”或“元/{线性单位}/小时”等。非线性产品的单价单位为“元/月”或“元/小时”等。  说明： “线性单位”为线性产品（即订购时需要指定大小的产品）的大小的单位，比如硬盘的线性单位为GB，带宽的线性单位为Mbps。
 
         :return: The unit of this ResFeeRecordV2.
         :rtype: str
@@ -1006,7 +1006,7 @@ class ResFeeRecordV2:
     def unit(self, unit):
         """Sets the unit of this ResFeeRecordV2.
 
-        资源的单价单位。
+        产品的单价单位。 线性产品的单价单位为“元/{线性单位}/月”或“元/{线性单位}/小时”等。非线性产品的单价单位为“元/月”或“元/小时”等。  说明： “线性单位”为线性产品（即订购时需要指定大小的产品）的大小的单位，比如硬盘的线性单位为GB，带宽的线性单位为Mbps。
 
         :param unit: The unit of this ResFeeRecordV2.
         :type: str

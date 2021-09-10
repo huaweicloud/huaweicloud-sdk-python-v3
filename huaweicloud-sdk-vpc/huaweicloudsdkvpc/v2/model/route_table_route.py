@@ -46,12 +46,9 @@ class RouteTableRoute:
         self._description = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if destination is not None:
-            self.destination = destination
-        if nexthop is not None:
-            self.nexthop = nexthop
+        self.type = type
+        self.destination = destination
+        self.nexthop = nexthop
         if description is not None:
             self.description = description
 

@@ -56,7 +56,7 @@ class Sources:
     def ip_or_domain(self):
         """Gets the ip_or_domain of this Sources.
 
-        源站IP或者域名。
+        源站IP（非内网IP）或者域名。
 
         :return: The ip_or_domain of this Sources.
         :rtype: str
@@ -67,7 +67,7 @@ class Sources:
     def ip_or_domain(self, ip_or_domain):
         """Sets the ip_or_domain of this Sources.
 
-        源站IP或者域名。
+        源站IP（非内网IP）或者域名。
 
         :param ip_or_domain: The ip_or_domain of this Sources.
         :type: str

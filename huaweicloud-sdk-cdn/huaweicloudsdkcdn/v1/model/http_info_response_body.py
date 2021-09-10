@@ -150,7 +150,7 @@ class HttpInfoResponseBody:
     def private_key(self):
         """Gets the private_key of this HttpInfoResponseBody.
 
-        功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。  取值范围：PEM编码格式。
+        功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。（为了客户信息安全，接口返回私钥为空）
 
         :return: The private_key of this HttpInfoResponseBody.
         :rtype: str
@@ -161,7 +161,7 @@ class HttpInfoResponseBody:
     def private_key(self, private_key):
         """Sets the private_key of this HttpInfoResponseBody.
 
-        功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。  取值范围：PEM编码格式。
+        功能说明： HTTPS协议使用的私钥，不启用证书则无需输入。（为了客户信息安全，接口返回私钥为空）
 
         :param private_key: The private_key of this HttpInfoResponseBody.
         :type: str
@@ -194,7 +194,7 @@ class HttpInfoResponseBody:
     def force_redirect_https(self):
         """Gets the force_redirect_https of this HttpInfoResponseBody.
 
-        客户端请求是否强制重定向。1是，0否。
+        客户端请求是否强制重定向。1是，0否。（如果为2，表示强制跳转HTTP）
 
         :return: The force_redirect_https of this HttpInfoResponseBody.
         :rtype: int
@@ -205,7 +205,7 @@ class HttpInfoResponseBody:
     def force_redirect_https(self, force_redirect_https):
         """Sets the force_redirect_https of this HttpInfoResponseBody.
 
-        客户端请求是否强制重定向。1是，0否。
+        客户端请求是否强制重定向。1是，0否。（如果为2，表示强制跳转HTTP）
 
         :param force_redirect_https: The force_redirect_https of this HttpInfoResponseBody.
         :type: int

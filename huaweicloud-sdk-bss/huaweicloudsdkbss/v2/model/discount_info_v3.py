@@ -99,7 +99,7 @@ class DiscountInfoV3:
     def discount_type(self):
         """Gets the discount_type of this DiscountInfoV3.
 
-        折扣类型，取值为 1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
+        折扣类型，取值为 0：促销折扣1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
 
         :return: The discount_type of this DiscountInfoV3.
         :rtype: int
@@ -110,7 +110,7 @@ class DiscountInfoV3:
     def discount_type(self, discount_type):
         """Sets the discount_type of this DiscountInfoV3.
 
-        折扣类型，取值为 1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
+        折扣类型，取值为 0：促销折扣1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
 
         :param discount_type: The discount_type of this DiscountInfoV3.
         :type: int

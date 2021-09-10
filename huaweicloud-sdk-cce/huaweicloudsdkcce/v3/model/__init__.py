@@ -3,6 +3,10 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkcce.v3.model.add_node import AddNode
+from huaweicloudsdkcce.v3.model.add_node_list import AddNodeList
+from huaweicloudsdkcce.v3.model.add_node_request import AddNodeRequest
+from huaweicloudsdkcce.v3.model.add_node_response import AddNodeResponse
 from huaweicloudsdkcce.v3.model.addon_instance import AddonInstance
 from huaweicloudsdkcce.v3.model.addon_instance_status import AddonInstanceStatus
 from huaweicloudsdkcce.v3.model.addon_template import AddonTemplate
@@ -87,6 +91,7 @@ from huaweicloudsdkcce.v3.model.node_create_request import NodeCreateRequest
 from huaweicloudsdkcce.v3.model.node_eip_spec import NodeEIPSpec
 from huaweicloudsdkcce.v3.model.node_extend_param import NodeExtendParam
 from huaweicloudsdkcce.v3.model.node_item import NodeItem
+from huaweicloudsdkcce.v3.model.node_lifecycle_config import NodeLifecycleConfig
 from huaweicloudsdkcce.v3.model.node_management import NodeManagement
 from huaweicloudsdkcce.v3.model.node_metadata import NodeMetadata
 from huaweicloudsdkcce.v3.model.node_nic_spec import NodeNicSpec
@@ -103,10 +108,21 @@ from huaweicloudsdkcce.v3.model.persistent_volume_claim import PersistentVolumeC
 from huaweicloudsdkcce.v3.model.persistent_volume_claim_metadata import PersistentVolumeClaimMetadata
 from huaweicloudsdkcce.v3.model.persistent_volume_claim_spec import PersistentVolumeClaimSpec
 from huaweicloudsdkcce.v3.model.persistent_volume_claim_status import PersistentVolumeClaimStatus
+from huaweicloudsdkcce.v3.model.reinstall_extend_param import ReinstallExtendParam
+from huaweicloudsdkcce.v3.model.reinstall_k8s_options_config import ReinstallK8sOptionsConfig
+from huaweicloudsdkcce.v3.model.reinstall_node_spec import ReinstallNodeSpec
+from huaweicloudsdkcce.v3.model.reinstall_runtime_config import ReinstallRuntimeConfig
+from huaweicloudsdkcce.v3.model.reinstall_server_config import ReinstallServerConfig
+from huaweicloudsdkcce.v3.model.reinstall_volume_config import ReinstallVolumeConfig
+from huaweicloudsdkcce.v3.model.reinstall_volume_spec import ReinstallVolumeSpec
 from huaweicloudsdkcce.v3.model.remove_node_request import RemoveNodeRequest
 from huaweicloudsdkcce.v3.model.remove_node_response import RemoveNodeResponse
 from huaweicloudsdkcce.v3.model.remove_nodes_spec import RemoveNodesSpec
 from huaweicloudsdkcce.v3.model.remove_nodes_task import RemoveNodesTask
+from huaweicloudsdkcce.v3.model.reset_node import ResetNode
+from huaweicloudsdkcce.v3.model.reset_node_list import ResetNodeList
+from huaweicloudsdkcce.v3.model.reset_node_request import ResetNodeRequest
+from huaweicloudsdkcce.v3.model.reset_node_response import ResetNodeResponse
 from huaweicloudsdkcce.v3.model.resource_requirements import ResourceRequirements
 from huaweicloudsdkcce.v3.model.resource_tag import ResourceTag
 from huaweicloudsdkcce.v3.model.runtime import Runtime

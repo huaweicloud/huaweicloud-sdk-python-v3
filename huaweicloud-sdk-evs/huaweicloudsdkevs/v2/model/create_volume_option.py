@@ -90,8 +90,7 @@ class CreateVolumeOption:
             self.multiattach = multiattach
         if name is not None:
             self.name = name
-        if size is not None:
-            self.size = size
+        self.size = size
         if snapshot_id is not None:
             self.snapshot_id = snapshot_id
         self.volume_type = volume_type
@@ -102,7 +101,7 @@ class CreateVolumeOption:
     def availability_zone(self):
         """Gets the availability_zone of this CreateVolumeOption.
 
-        指定要创建云硬盘的可用区。
+        指定要创建云硬盘的可用区。 获取方法请参见\"[获取可用区](https://apiexplorer.developer.huaweicloud.com/apiexplorer/sdk?product=EVS&api=CinderListAvailabilityZones)\"。
 
         :return: The availability_zone of this CreateVolumeOption.
         :rtype: str
@@ -113,7 +112,7 @@ class CreateVolumeOption:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this CreateVolumeOption.
 
-        指定要创建云硬盘的可用区。
+        指定要创建云硬盘的可用区。 获取方法请参见\"[获取可用区](https://apiexplorer.developer.huaweicloud.com/apiexplorer/sdk?product=EVS&api=CinderListAvailabilityZones)\"。
 
         :param availability_zone: The availability_zone of this CreateVolumeOption.
         :type: str
@@ -344,7 +343,7 @@ class CreateVolumeOption:
     def volume_type(self):
         """Gets the volume_type of this CreateVolumeOption.
 
-        云硬盘类型。  目前支持“SSD”，“GPSSD”，“SAS”和“SATA”四种 “SSD”为超高IO云硬盘 \"GPSSD\"为通用型SSD云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘 当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。  说明： 从快照创建云硬盘时，volume_type字段必须和快照源云硬盘保持一致。 了解不同磁盘类型的详细信息，请参见 [磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
+        云硬盘类型。  目前支持“SSD”，“GPSSD”，“SAS”三种 “SSD”为超高IO云硬盘 \"GPSSD\"为通用型SSD云硬盘 “SAS”为高IO云硬盘 当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。  说明： 从快照创建云硬盘时，volume_type字段必须和快照源云硬盘保持一致。 了解不同磁盘类型的详细信息，请参见 [磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。 获取region可用的卷类型，请参见[查询云硬盘类型列表](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=EVS&api=CinderListVolumeTypes)
 
         :return: The volume_type of this CreateVolumeOption.
         :rtype: str
@@ -355,7 +354,7 @@ class CreateVolumeOption:
     def volume_type(self, volume_type):
         """Sets the volume_type of this CreateVolumeOption.
 
-        云硬盘类型。  目前支持“SSD”，“GPSSD”，“SAS”和“SATA”四种 “SSD”为超高IO云硬盘 \"GPSSD\"为通用型SSD云硬盘 “SAS”为高IO云硬盘 “SATA”为普通IO云硬盘 当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。  说明： 从快照创建云硬盘时，volume_type字段必须和快照源云硬盘保持一致。 了解不同磁盘类型的详细信息，请参见 [磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
+        云硬盘类型。  目前支持“SSD”，“GPSSD”，“SAS”三种 “SSD”为超高IO云硬盘 \"GPSSD\"为通用型SSD云硬盘 “SAS”为高IO云硬盘 当指定的云硬盘类型在avaliability_zone内不存在时，则创建云硬盘失败。  说明： 从快照创建云硬盘时，volume_type字段必须和快照源云硬盘保持一致。 了解不同磁盘类型的详细信息，请参见 [磁盘类型及性能介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。 获取region可用的卷类型，请参见[查询云硬盘类型列表](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=EVS&api=CinderListVolumeTypes)
 
         :param volume_type: The volume_type of this CreateVolumeOption.
         :type: str

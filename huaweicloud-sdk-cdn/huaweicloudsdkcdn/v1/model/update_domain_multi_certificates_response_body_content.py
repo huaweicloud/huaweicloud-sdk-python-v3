@@ -26,6 +26,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         'https_switch': 'int',
         'access_origin_way': 'int',
         'force_redirect_https': 'int',
+        'force_redirect_config': 'ForceRedirect',
         'http2': 'int',
         'cert_name': 'str',
         'certificate': 'str',
@@ -38,6 +39,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         'https_switch': 'https_switch',
         'access_origin_way': 'access_origin_way',
         'force_redirect_https': 'force_redirect_https',
+        'force_redirect_config': 'force_redirect_config',
         'http2': 'http2',
         'cert_name': 'cert_name',
         'certificate': 'certificate',
@@ -45,7 +47,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         'expiration_time': 'expiration_time'
     }
 
-    def __init__(self, domain_name=None, https_switch=None, access_origin_way=None, force_redirect_https=None, http2=None, cert_name=None, certificate=None, certificate_type=None, expiration_time=None):
+    def __init__(self, domain_name=None, https_switch=None, access_origin_way=None, force_redirect_https=None, force_redirect_config=None, http2=None, cert_name=None, certificate=None, certificate_type=None, expiration_time=None):
         """UpdateDomainMultiCertificatesResponseBodyContent - a model defined in huaweicloud sdk"""
         
         
@@ -54,6 +56,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         self._https_switch = None
         self._access_origin_way = None
         self._force_redirect_https = None
+        self._force_redirect_config = None
         self._http2 = None
         self._cert_name = None
         self._certificate = None
@@ -68,6 +71,8 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
             self.access_origin_way = access_origin_way
         if force_redirect_https is not None:
             self.force_redirect_https = force_redirect_https
+        if force_redirect_config is not None:
+            self.force_redirect_config = force_redirect_config
         if http2 is not None:
             self.http2 = http2
         if cert_name is not None:
@@ -149,7 +154,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def force_redirect_https(self):
         """Gets the force_redirect_https of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        强制跳转HTTPS（0：不强制；1：强制）
+        强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
 
         :return: The force_redirect_https of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: int
@@ -160,12 +165,32 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def force_redirect_https(self, force_redirect_https):
         """Sets the force_redirect_https of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        强制跳转HTTPS（0：不强制；1：强制）
+        强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
 
         :param force_redirect_https: The force_redirect_https of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type: int
         """
         self._force_redirect_https = force_redirect_https
+
+    @property
+    def force_redirect_config(self):
+        """Gets the force_redirect_config of this UpdateDomainMultiCertificatesResponseBodyContent.
+
+
+        :return: The force_redirect_config of this UpdateDomainMultiCertificatesResponseBodyContent.
+        :rtype: ForceRedirect
+        """
+        return self._force_redirect_config
+
+    @force_redirect_config.setter
+    def force_redirect_config(self, force_redirect_config):
+        """Sets the force_redirect_config of this UpdateDomainMultiCertificatesResponseBodyContent.
+
+
+        :param force_redirect_config: The force_redirect_config of this UpdateDomainMultiCertificatesResponseBodyContent.
+        :type: ForceRedirect
+        """
+        self._force_redirect_config = force_redirect_config
 
     @property
     def http2(self):

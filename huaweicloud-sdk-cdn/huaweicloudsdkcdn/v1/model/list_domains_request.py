@@ -96,7 +96,7 @@ class ListDomainsRequest:
     def business_type(self):
         """Gets the business_type of this ListDomainsRequest.
 
-        加速域名的业务类型。取值： - web（图片及小文件分发） - download（大文件下载加速） - video（视音频点播加速） - wholeSite（全站加速）
+        加速域名的业务类型。取值： - web（网站加速） - download（文件下载加速） - video（点播加速） - wholeSite（全站加速）
 
         :return: The business_type of this ListDomainsRequest.
         :rtype: str
@@ -107,7 +107,7 @@ class ListDomainsRequest:
     def business_type(self, business_type):
         """Sets the business_type of this ListDomainsRequest.
 
-        加速域名的业务类型。取值： - web（图片及小文件分发） - download（大文件下载加速） - video（视音频点播加速） - wholeSite（全站加速）
+        加速域名的业务类型。取值： - web（网站加速） - download（文件下载加速） - video（点播加速） - wholeSite（全站加速）
 
         :param business_type: The business_type of this ListDomainsRequest.
         :type: str
@@ -118,7 +118,7 @@ class ListDomainsRequest:
     def domain_status(self):
         """Gets the domain_status of this ListDomainsRequest.
 
-        加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核失败” - deleting表示“删除中”。
+        加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
 
         :return: The domain_status of this ListDomainsRequest.
         :rtype: str
@@ -129,7 +129,7 @@ class ListDomainsRequest:
     def domain_status(self, domain_status):
         """Sets the domain_status of this ListDomainsRequest.
 
-        加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核失败” - deleting表示“删除中”。
+        加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”。
 
         :param domain_status: The domain_status of this ListDomainsRequest.
         :type: str

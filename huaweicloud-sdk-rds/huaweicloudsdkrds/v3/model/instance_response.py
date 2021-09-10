@@ -56,7 +56,8 @@ class InstanceResponse:
         'backup_used_space': 'float',
         'storage_used_space': 'float',
         'order_id': 'str',
-        'associated_with_ddm': 'bool'
+        'associated_with_ddm': 'bool',
+        'alias': 'str'
     }
 
     attribute_map = {
@@ -94,10 +95,11 @@ class InstanceResponse:
         'backup_used_space': 'backup_used_space',
         'storage_used_space': 'storage_used_space',
         'order_id': 'order_id',
-        'associated_with_ddm': 'associated_with_ddm'
+        'associated_with_ddm': 'associated_with_ddm',
+        'alias': 'alias'
     }
 
-    def __init__(self, id=None, status=None, private_ips=None, private_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None):
+    def __init__(self, id=None, status=None, private_ips=None, private_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None, alias=None):
         """InstanceResponse - a model defined in huaweicloud sdk"""
         
         
@@ -137,6 +139,7 @@ class InstanceResponse:
         self._storage_used_space = None
         self._order_id = None
         self._associated_with_ddm = None
+        self._alias = None
         self.discriminator = None
 
         self.id = id
@@ -182,6 +185,8 @@ class InstanceResponse:
             self.order_id = order_id
         if associated_with_ddm is not None:
             self.associated_with_ddm = associated_with_ddm
+        if alias is not None:
+            self.alias = alias
 
     @property
     def id(self):
@@ -934,6 +939,28 @@ class InstanceResponse:
         :type: bool
         """
         self._associated_with_ddm = associated_with_ddm
+
+    @property
+    def alias(self):
+        """Gets the alias of this InstanceResponse.
+
+        实例的备注信息。
+
+        :return: The alias of this InstanceResponse.
+        :rtype: str
+        """
+        return self._alias
+
+    @alias.setter
+    def alias(self, alias):
+        """Sets the alias of this InstanceResponse.
+
+        实例的备注信息。
+
+        :param alias: The alias of this InstanceResponse.
+        :type: str
+        """
+        self._alias = alias
 
     def to_dict(self):
         """Returns the model properties as a dict"""

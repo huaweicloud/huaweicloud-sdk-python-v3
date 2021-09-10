@@ -65,7 +65,8 @@ class ConferenceInfo:
         'conf_mode': 'str',
         'schedule_vmr': 'bool',
         'concurrent_participants': 'int',
-        'pic_display': 'object'
+        'pic_display': 'object',
+        'sub_confs': 'list[CycleSubConf]'
     }
 
     attribute_map = {
@@ -112,10 +113,11 @@ class ConferenceInfo:
         'conf_mode': 'confMode',
         'schedule_vmr': 'scheduleVmr',
         'concurrent_participants': 'concurrentParticipants',
-        'pic_display': 'picDisplay'
+        'pic_display': 'picDisplay',
+        'sub_confs': 'subConfs'
     }
 
-    def __init__(self, conference_id=None, subject=None, size=None, time_zone_id=None, start_time=None, end_time=None, media_types=None, conference_state=None, language=None, access_number=None, password_entry=None, user_uuid=None, scheduser_name=None, conference_type=None, conf_type=None, cycle_params=None, is_auto_mute=None, is_auto_record=None, chair_join_uri=None, guest_join_uri=None, audience_join_uri=None, record_type=None, aux_address=None, live_address=None, record_aux_stream=None, record_auth_type=None, live_url=None, conf_config_info=None, vmr_flag=None, is_has_record_file=None, vmr_conference_id=None, conf_uuid=None, part_attendee_info=None, terminl_count=None, normal_count=None, dept_name=None, vmr_id=None, role=None, webinar=None, multi_stream_flag=None, conf_mode=None, schedule_vmr=None, concurrent_participants=None, pic_display=None):
+    def __init__(self, conference_id=None, subject=None, size=None, time_zone_id=None, start_time=None, end_time=None, media_types=None, conference_state=None, language=None, access_number=None, password_entry=None, user_uuid=None, scheduser_name=None, conference_type=None, conf_type=None, cycle_params=None, is_auto_mute=None, is_auto_record=None, chair_join_uri=None, guest_join_uri=None, audience_join_uri=None, record_type=None, aux_address=None, live_address=None, record_aux_stream=None, record_auth_type=None, live_url=None, conf_config_info=None, vmr_flag=None, is_has_record_file=None, vmr_conference_id=None, conf_uuid=None, part_attendee_info=None, terminl_count=None, normal_count=None, dept_name=None, vmr_id=None, role=None, webinar=None, multi_stream_flag=None, conf_mode=None, schedule_vmr=None, concurrent_participants=None, pic_display=None, sub_confs=None):
         """ConferenceInfo - a model defined in huaweicloud sdk"""
         
         
@@ -164,6 +166,7 @@ class ConferenceInfo:
         self._schedule_vmr = None
         self._concurrent_participants = None
         self._pic_display = None
+        self._sub_confs = None
         self.discriminator = None
 
         if conference_id is not None:
@@ -254,6 +257,8 @@ class ConferenceInfo:
             self.concurrent_participants = concurrent_participants
         if pic_display is not None:
             self.pic_display = pic_display
+        if sub_confs is not None:
+            self.sub_confs = sub_confs
 
     @property
     def conference_id(self):
@@ -545,7 +550,7 @@ class ConferenceInfo:
     def conference_type(self):
         """Gets the conference_type of this ConferenceInfo.
 
-        - 0: 普通会议。 - 1: 周期会议。
+        - 0: 普通会议。 - 2: 周期性会议。
 
         :return: The conference_type of this ConferenceInfo.
         :rtype: int
@@ -556,7 +561,7 @@ class ConferenceInfo:
     def conference_type(self, conference_type):
         """Sets the conference_type of this ConferenceInfo.
 
-        - 0: 普通会议。 - 1: 周期会议。
+        - 0: 普通会议。 - 2: 周期性会议。
 
         :param conference_type: The conference_type of this ConferenceInfo.
         :type: int
@@ -1218,6 +1223,28 @@ class ConferenceInfo:
         :type: object
         """
         self._pic_display = pic_display
+
+    @property
+    def sub_confs(self):
+        """Gets the sub_confs of this ConferenceInfo.
+
+        周期子会议列表
+
+        :return: The sub_confs of this ConferenceInfo.
+        :rtype: list[CycleSubConf]
+        """
+        return self._sub_confs
+
+    @sub_confs.setter
+    def sub_confs(self, sub_confs):
+        """Sets the sub_confs of this ConferenceInfo.
+
+        周期子会议列表
+
+        :param sub_confs: The sub_confs of this ConferenceInfo.
+        :type: list[CycleSubConf]
+        """
+        self._sub_confs = sub_confs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

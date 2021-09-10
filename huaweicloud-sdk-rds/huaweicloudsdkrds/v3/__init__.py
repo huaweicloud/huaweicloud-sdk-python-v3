@@ -292,6 +292,9 @@ from huaweicloudsdkrds.v3.model.update_configuration_request import UpdateConfig
 from huaweicloudsdkrds.v3.model.update_configuration_response import UpdateConfigurationResponse
 from huaweicloudsdkrds.v3.model.update_data_ip_request import UpdateDataIpRequest
 from huaweicloudsdkrds.v3.model.update_data_ip_response import UpdateDataIpResponse
+from huaweicloudsdkrds.v3.model.update_database_req import UpdateDatabaseReq
+from huaweicloudsdkrds.v3.model.update_database_request import UpdateDatabaseRequest
+from huaweicloudsdkrds.v3.model.update_database_response import UpdateDatabaseResponse
 from huaweicloudsdkrds.v3.model.update_db_port_request import UpdateDbPortRequest
 from huaweicloudsdkrds.v3.model.update_dns_name_request import UpdateDnsNameRequest
 from huaweicloudsdkrds.v3.model.update_dns_name_response import UpdateDnsNameResponse

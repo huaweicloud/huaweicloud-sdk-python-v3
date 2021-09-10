@@ -1,0 +1,219 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class InvoiceVerificationRequestBody:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'code': 'str',
+        'number': 'str',
+        'issue_date': 'str',
+        'check_code': 'str',
+        'subtotal_amount': 'str'
+    }
+
+    attribute_map = {
+        'code': 'code',
+        'number': 'number',
+        'issue_date': 'issue_date',
+        'check_code': 'check_code',
+        'subtotal_amount': 'subtotal_amount'
+    }
+
+    def __init__(self, code=None, number=None, issue_date=None, check_code=None, subtotal_amount=None):
+        """InvoiceVerificationRequestBody - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._code = None
+        self._number = None
+        self._issue_date = None
+        self._check_code = None
+        self._subtotal_amount = None
+        self.discriminator = None
+
+        self.code = code
+        self.number = number
+        self.issue_date = issue_date
+        if check_code is not None:
+            self.check_code = check_code
+        if subtotal_amount is not None:
+            self.subtotal_amount = subtotal_amount
+
+    @property
+    def code(self):
+        """Gets the code of this InvoiceVerificationRequestBody.
+
+        发票代码
+
+        :return: The code of this InvoiceVerificationRequestBody.
+        :rtype: str
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        """Sets the code of this InvoiceVerificationRequestBody.
+
+        发票代码
+
+        :param code: The code of this InvoiceVerificationRequestBody.
+        :type: str
+        """
+        self._code = code
+
+    @property
+    def number(self):
+        """Gets the number of this InvoiceVerificationRequestBody.
+
+        发票号码
+
+        :return: The number of this InvoiceVerificationRequestBody.
+        :rtype: str
+        """
+        return self._number
+
+    @number.setter
+    def number(self, number):
+        """Sets the number of this InvoiceVerificationRequestBody.
+
+        发票号码
+
+        :param number: The number of this InvoiceVerificationRequestBody.
+        :type: str
+        """
+        self._number = number
+
+    @property
+    def issue_date(self):
+        """Gets the issue_date of this InvoiceVerificationRequestBody.
+
+        发票日期格式YYYY-MM-DD
+
+        :return: The issue_date of this InvoiceVerificationRequestBody.
+        :rtype: str
+        """
+        return self._issue_date
+
+    @issue_date.setter
+    def issue_date(self, issue_date):
+        """Sets the issue_date of this InvoiceVerificationRequestBody.
+
+        发票日期格式YYYY-MM-DD
+
+        :param issue_date: The issue_date of this InvoiceVerificationRequestBody.
+        :type: str
+        """
+        self._issue_date = issue_date
+
+    @property
+    def check_code(self):
+        """Gets the check_code of this InvoiceVerificationRequestBody.
+
+        校验码后六位  发票种类为增值税普通发票、增值税电子普通发票、增值税普通发票（卷式）、增值税电子普通发票（通行费）、区块链电子发票时此项不可为空（区块链电子发票验真时，填写的是5位校验码） 
+
+        :return: The check_code of this InvoiceVerificationRequestBody.
+        :rtype: str
+        """
+        return self._check_code
+
+    @check_code.setter
+    def check_code(self, check_code):
+        """Sets the check_code of this InvoiceVerificationRequestBody.
+
+        校验码后六位  发票种类为增值税普通发票、增值税电子普通发票、增值税普通发票（卷式）、增值税电子普通发票（通行费）、区块链电子发票时此项不可为空（区块链电子发票验真时，填写的是5位校验码） 
+
+        :param check_code: The check_code of this InvoiceVerificationRequestBody.
+        :type: str
+        """
+        self._check_code = check_code
+
+    @property
+    def subtotal_amount(self):
+        """Gets the subtotal_amount of this InvoiceVerificationRequestBody.
+
+        合计金额（不含税）  1.发票种类为增值税专用发票、增值税电子专用发票、机动车销售统一发票、二手车销售统一发票、区块链电子发票时不可为空； 2.增值税专用发票、增值税电子专用发票、机动车销售统一发票、区块链电子发票填写发票合计金额（不含税），二手车发票填写发票车价合计 
+
+        :return: The subtotal_amount of this InvoiceVerificationRequestBody.
+        :rtype: str
+        """
+        return self._subtotal_amount
+
+    @subtotal_amount.setter
+    def subtotal_amount(self, subtotal_amount):
+        """Sets the subtotal_amount of this InvoiceVerificationRequestBody.
+
+        合计金额（不含税）  1.发票种类为增值税专用发票、增值税电子专用发票、机动车销售统一发票、二手车销售统一发票、区块链电子发票时不可为空； 2.增值税专用发票、增值税电子专用发票、机动车销售统一发票、区块链电子发票填写发票合计金额（不含税），二手车发票填写发票车价合计 
+
+        :param subtotal_amount: The subtotal_amount of this InvoiceVerificationRequestBody.
+        :type: str
+        """
+        self._subtotal_amount = subtotal_amount
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, InvoiceVerificationRequestBody):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

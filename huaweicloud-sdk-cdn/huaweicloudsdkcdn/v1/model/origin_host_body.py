@@ -48,7 +48,7 @@ class OriginHostBody:
     def origin_host_type(self):
         """Gets the origin_host_type of this OriginHostBody.
 
-        accelerate：选择加速域名作为回源地址；  customize：使用自动定义的域名作为回源地址；
+        accelerate：选择加速域名作为回源地址；  customize：使用自定义的域名作为回源host域名；
 
         :return: The origin_host_type of this OriginHostBody.
         :rtype: str
@@ -59,7 +59,7 @@ class OriginHostBody:
     def origin_host_type(self, origin_host_type):
         """Sets the origin_host_type of this OriginHostBody.
 
-        accelerate：选择加速域名作为回源地址；  customize：使用自动定义的域名作为回源地址；
+        accelerate：选择加速域名作为回源地址；  customize：使用自定义的域名作为回源host域名；
 
         :param origin_host_type: The origin_host_type of this OriginHostBody.
         :type: str

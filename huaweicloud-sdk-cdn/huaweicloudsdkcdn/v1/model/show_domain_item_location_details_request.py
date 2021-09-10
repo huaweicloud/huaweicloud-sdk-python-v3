@@ -156,7 +156,7 @@ class ShowDomainItemLocationDetailsRequest:
     def stat_type(self):
         """Gets the stat_type of this ShowDomainItemLocationDetailsRequest.
 
-        指标类型列表 网络资源消耗：bw（带宽），flux（流量） 访问情况：req_num（请求总数）
+        指标类型列表 网络资源消耗：bw（带宽），flux（流量），ipv6_bw(ipv6带宽)，ipv6_flux(ipv6流量), https_bw(https带宽)，https_flux(https流量) 访问情况：req_num（请求总数），hit_num（请求命中次数），req_time(请求时长) HTTP状态码（组合指标）：status_code_2xx(状态码2xx)，status_code_3xx(状态码3xx)，status_code_4xx(状态码4xx)，status_code_5xx(状态码5xx)
 
         :return: The stat_type of this ShowDomainItemLocationDetailsRequest.
         :rtype: str
@@ -167,7 +167,7 @@ class ShowDomainItemLocationDetailsRequest:
     def stat_type(self, stat_type):
         """Sets the stat_type of this ShowDomainItemLocationDetailsRequest.
 
-        指标类型列表 网络资源消耗：bw（带宽），flux（流量） 访问情况：req_num（请求总数）
+        指标类型列表 网络资源消耗：bw（带宽），flux（流量），ipv6_bw(ipv6带宽)，ipv6_flux(ipv6流量), https_bw(https带宽)，https_flux(https流量) 访问情况：req_num（请求总数），hit_num（请求命中次数），req_time(请求时长) HTTP状态码（组合指标）：status_code_2xx(状态码2xx)，status_code_3xx(状态码3xx)，status_code_4xx(状态码4xx)，status_code_5xx(状态码5xx)
 
         :param stat_type: The stat_type of this ShowDomainItemLocationDetailsRequest.
         :type: str

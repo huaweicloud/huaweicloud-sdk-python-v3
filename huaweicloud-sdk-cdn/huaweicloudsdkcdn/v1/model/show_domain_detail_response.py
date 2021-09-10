@@ -22,7 +22,7 @@ class ShowDomainDetailResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'domain': 'Domains'
+        'domain': 'DomainsWithPort'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
 
         :return: The domain of this ShowDomainDetailResponse.
-        :rtype: Domains
+        :rtype: DomainsWithPort
         """
         return self._domain
 
@@ -56,7 +56,7 @@ class ShowDomainDetailResponse(SdkResponse):
 
 
         :param domain: The domain of this ShowDomainDetailResponse.
-        :type: Domains
+        :type: DomainsWithPort
         """
         self._domain = domain
 

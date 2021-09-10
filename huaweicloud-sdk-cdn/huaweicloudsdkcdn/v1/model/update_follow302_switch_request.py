@@ -23,24 +23,29 @@ class UpdateFollow302SwitchRequest:
 
     openapi_types = {
         'domain_id': 'str',
+        'enterprise_project_id': 'str',
         'body': 'Follow302StatusRequest'
     }
 
     attribute_map = {
         'domain_id': 'domain_id',
+        'enterprise_project_id': 'enterprise_project_id',
         'body': 'body'
     }
 
-    def __init__(self, domain_id=None, body=None):
+    def __init__(self, domain_id=None, enterprise_project_id=None, body=None):
         """UpdateFollow302SwitchRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._domain_id = None
+        self._enterprise_project_id = None
         self._body = None
         self.discriminator = None
 
         self.domain_id = domain_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if body is not None:
             self.body = body
 
@@ -65,6 +70,28 @@ class UpdateFollow302SwitchRequest:
         :type: str
         """
         self._domain_id = domain_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this UpdateFollow302SwitchRequest.
+
+        当用户开启企业项目功能时，该参数生效，表示资源所属项目，不传表示查询默认项目。
+
+        :return: The enterprise_project_id of this UpdateFollow302SwitchRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this UpdateFollow302SwitchRequest.
+
+        当用户开启企业项目功能时，该参数生效，表示资源所属项目，不传表示查询默认项目。
+
+        :param enterprise_project_id: The enterprise_project_id of this UpdateFollow302SwitchRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def body(self):

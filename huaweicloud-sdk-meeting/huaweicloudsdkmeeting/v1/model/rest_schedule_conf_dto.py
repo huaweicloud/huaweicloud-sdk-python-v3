@@ -143,7 +143,7 @@ class RestScheduleConfDTO:
     def conference_type(self):
         """Gets the conference_type of this RestScheduleConfDTO.
 
-        创建会议类型（默认为普通会议）。 - 0: 普通会议。 - 1: 周期会议，此时cycleParams必须填写。
+        创建会议类型（默认为普通会议）。 - 0: 普通会议。 - 2: 周期性会议，此时cycleParams必须填写。
 
         :return: The conference_type of this RestScheduleConfDTO.
         :rtype: int
@@ -154,7 +154,7 @@ class RestScheduleConfDTO:
     def conference_type(self, conference_type):
         """Sets the conference_type of this RestScheduleConfDTO.
 
-        创建会议类型（默认为普通会议）。 - 0: 普通会议。 - 1: 周期会议，此时cycleParams必须填写。
+        创建会议类型（默认为普通会议）。 - 0: 普通会议。 - 2: 周期性会议，此时cycleParams必须填写。
 
         :param conference_type: The conference_type of this RestScheduleConfDTO.
         :type: int

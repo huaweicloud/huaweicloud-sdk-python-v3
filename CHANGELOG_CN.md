@@ -1,3 +1,126 @@
+# 3.0.59 2021-09-10
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+    - 支持接口`ListSubCustomerBillDetail`、`ListResourceUsageSummary`、`ListResourceUsage`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 移除接口`ListResourceUsages`
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 移除接口`ListResourceUsages`
+
+### HuaweiCloud SDK CBS
+
+- _新增特性_
+    - 支持接口`CreateTbSession`、`ExecuteTbSession`、`DeleteTbSession`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+    - 支持接口`AddNode`和`ResetNode`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`CreateDomain`新增以下响应参数:
+        - `range_status`
+        - `follow_status`
+        - `origin_status`
+        - `auto_refresh_preheat`
+    - 接口`UpdateDomainMultiCertificates`新增必填请求参数`switch`和可选请求参数`redirect_type`
+    - 接口`UpdateHttpsInfo`新增必填请求参数`switch`和可选请求参数`redirect_type`
+    - 接口`ShowHistoryTasks`新增可选请求参数`create_time`
+
+### HuaweiCloud SDK DAS
+
+- _新增特性_
+    - 支持数据管理服务
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ShowJobDetail`新增响应参数`status`和`fail_reason`
+
+### HuaweiCloud SDK EVS
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`CreateVolume`的请求参数`size`改为必填
+
+### HuaweiCloud SDK IVS
+
+- _新增特性_
+    - 支持人证核身服务
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+    - 支持以下接口：
+        - `AddMaterial`
+        - `CreateRecurringMeeting`
+        - `UpdateRecurringMeeting`
+        - `CancelRecurringMeeting`
+        - `CancelRecurringSubMeeting`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 无
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+    - 支持接口`RecognizeInvoiceVerification`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`RecognizeIdCard`新增可选请求参数`return_verification`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+    - 支持接口`UpdateDatabase`
+- _解决问题_
+    - 无
+- _特性变更_
+    - 接口`ListInstances`新增响应参数`alias`
+    - 接口`CreateDatabase`新增可选请求参数`comment`
+
 # 3.0.58 2021-08-31
 
 ### HuaweiCloud SDK CodeCraft

@@ -175,7 +175,7 @@ class CycleParams:
     def pre_remind_days(self):
         """Gets the pre_remind_days of this CycleParams.
 
-        支持用户指定提前会议通知的天数N，预订人收到整个周期会议的通知，所有与会人在每个子会议召开时间的前N天收到会议通知（包括日历）。 天数N的输入根据间隔期进行自动调整，如果按日每隔2天召开，则N自动变为2，如果为按周每2周的周一、周二，则N自动变为14。 约束：暂不考虑夏令时处理。 取值范围[1,30]。 default: 1
+        支持用户指定提前会议通知的天数N，预订人收到整个周期会议的通知，所有与会人在每个子会议召开时间的前N天收到会议通知（包括日历）。 天数N的输入根据间隔期进行自动调整，如果按日每隔2天召开，则N自动变为2，如果为按周每2周的周一、周二，则N自动变为14。 约束：暂不考虑夏令时处理。 取值范围[0,30]。 default: 1
 
         :return: The pre_remind_days of this CycleParams.
         :rtype: int
@@ -186,7 +186,7 @@ class CycleParams:
     def pre_remind_days(self, pre_remind_days):
         """Sets the pre_remind_days of this CycleParams.
 
-        支持用户指定提前会议通知的天数N，预订人收到整个周期会议的通知，所有与会人在每个子会议召开时间的前N天收到会议通知（包括日历）。 天数N的输入根据间隔期进行自动调整，如果按日每隔2天召开，则N自动变为2，如果为按周每2周的周一、周二，则N自动变为14。 约束：暂不考虑夏令时处理。 取值范围[1,30]。 default: 1
+        支持用户指定提前会议通知的天数N，预订人收到整个周期会议的通知，所有与会人在每个子会议召开时间的前N天收到会议通知（包括日历）。 天数N的输入根据间隔期进行自动调整，如果按日每隔2天召开，则N自动变为2，如果为按周每2周的周一、周二，则N自动变为14。 约束：暂不考虑夏令时处理。 取值范围[0,30]。 default: 1
 
         :param pre_remind_days: The pre_remind_days of this CycleParams.
         :type: int

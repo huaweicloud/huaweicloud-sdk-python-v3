@@ -75,7 +75,7 @@ class DomainOriginHost:
     def origin_host_type(self):
         """Gets the origin_host_type of this DomainOriginHost.
 
-        回源的类型。
+        回源host的类型。
 
         :return: The origin_host_type of this DomainOriginHost.
         :rtype: str
@@ -86,7 +86,7 @@ class DomainOriginHost:
     def origin_host_type(self, origin_host_type):
         """Sets the origin_host_type of this DomainOriginHost.
 
-        回源的类型。
+        回源host的类型。
 
         :param origin_host_type: The origin_host_type of this DomainOriginHost.
         :type: str
@@ -97,7 +97,7 @@ class DomainOriginHost:
     def customize_domain(self):
         """Gets the customize_domain of this DomainOriginHost.
 
-        自定义回源域名。
+        自定义回源host域名。
 
         :return: The customize_domain of this DomainOriginHost.
         :rtype: str
@@ -108,7 +108,7 @@ class DomainOriginHost:
     def customize_domain(self, customize_domain):
         """Sets the customize_domain of this DomainOriginHost.
 
-        自定义回源域名。
+        自定义回源host域名。
 
         :param customize_domain: The customize_domain of this DomainOriginHost.
         :type: str

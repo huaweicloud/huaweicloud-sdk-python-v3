@@ -23,7 +23,7 @@ class DomainRegion:
 
     openapi_types = {
         'domain_name': 'str',
-        'region_isp_details': 'list[DomainRegionIspDetail]'
+        'region_isp_details': 'list[dict(str, object)]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class DomainRegion:
         指标统计数据列表  如果该时间段内无值，则为空数组[]
 
         :return: The region_isp_details of this DomainRegion.
-        :rtype: list[DomainRegionIspDetail]
+        :rtype: list[dict(str, object)]
         """
         return self._region_isp_details
 
@@ -85,7 +85,7 @@ class DomainRegion:
         指标统计数据列表  如果该时间段内无值，则为空数组[]
 
         :param region_isp_details: The region_isp_details of this DomainRegion.
-        :type: list[DomainRegionIspDetail]
+        :type: list[dict(str, object)]
         """
         self._region_isp_details = region_isp_details
 

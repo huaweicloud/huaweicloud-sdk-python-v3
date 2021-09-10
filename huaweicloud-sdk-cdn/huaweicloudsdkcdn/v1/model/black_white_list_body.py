@@ -48,7 +48,7 @@ class BlackWhiteListBody:
     def type(self):
         """Gets the type of this BlackWhiteListBody.
 
-        IP类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）
+        IP黑白名单类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）
 
         :return: The type of this BlackWhiteListBody.
         :rtype: int
@@ -59,7 +59,7 @@ class BlackWhiteListBody:
     def type(self, type):
         """Sets the type of this BlackWhiteListBody.
 
-        IP类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）
+        IP黑白名单类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）
 
         :param type: The type of this BlackWhiteListBody.
         :type: int

@@ -23,25 +23,30 @@ class DatabaseForCreation:
 
     openapi_types = {
         'name': 'str',
-        'character_set': 'str'
+        'character_set': 'str',
+        'comment': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'character_set': 'character_set'
+        'character_set': 'character_set',
+        'comment': 'comment'
     }
 
-    def __init__(self, name=None, character_set=None):
+    def __init__(self, name=None, character_set=None, comment=None):
         """DatabaseForCreation - a model defined in huaweicloud sdk"""
         
         
 
         self._name = None
         self._character_set = None
+        self._comment = None
         self.discriminator = None
 
         self.name = name
         self.character_set = character_set
+        if comment is not None:
+            self.comment = comment
 
     @property
     def name(self):
@@ -86,6 +91,28 @@ class DatabaseForCreation:
         :type: str
         """
         self._character_set = character_set
+
+    @property
+    def comment(self):
+        """Gets the comment of this DatabaseForCreation.
+
+        数据库备注，最大长度512
+
+        :return: The comment of this DatabaseForCreation.
+        :rtype: str
+        """
+        return self._comment
+
+    @comment.setter
+    def comment(self, comment):
+        """Sets the comment of this DatabaseForCreation.
+
+        数据库备注，最大长度512
+
+        :param comment: The comment of this DatabaseForCreation.
+        :type: str
+        """
+        self._comment = comment
 
     def to_dict(self):
         """Returns the model properties as a dict"""

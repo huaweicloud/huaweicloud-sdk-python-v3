@@ -9,6 +9,7 @@ from huaweicloudsdkocr.v1.ocr_async_client import OcrAsyncClient
 from huaweicloudsdkocr.v1.model.answer_block_list import AnswerBlockList
 from huaweicloudsdkocr.v1.model.auto_classification_request_body import AutoClassificationRequestBody
 from huaweicloudsdkocr.v1.model.auto_classification_result import AutoClassificationResult
+from huaweicloudsdkocr.v1.model.auto_classification_result_status import AutoClassificationResultStatus
 from huaweicloudsdkocr.v1.model.bankcard_request_body import BankcardRequestBody
 from huaweicloudsdkocr.v1.model.bankcard_result import BankcardResult
 from huaweicloudsdkocr.v1.model.business_card_request_body import BusinessCardRequestBody
@@ -32,6 +33,8 @@ from huaweicloudsdkocr.v1.model.handwriting_result import HandwritingResult
 from huaweicloudsdkocr.v1.model.handwriting_words_block_list import HandwritingWordsBlockList
 from huaweicloudsdkocr.v1.model.id_card_request_body import IdCardRequestBody
 from huaweicloudsdkocr.v1.model.id_card_result import IdCardResult
+from huaweicloudsdkocr.v1.model.idcard_verification_result import IdcardVerificationResult
+from huaweicloudsdkocr.v1.model.invoice_verification_request_body import InvoiceVerificationRequestBody
 from huaweicloudsdkocr.v1.model.item_list import ItemList
 from huaweicloudsdkocr.v1.model.itinerary_list import ItineraryList
 from huaweicloudsdkocr.v1.model.license_plate_request_body import LicensePlateRequestBody
@@ -63,6 +66,8 @@ from huaweicloudsdkocr.v1.model.recognize_handwriting_request import RecognizeHa
 from huaweicloudsdkocr.v1.model.recognize_handwriting_response import RecognizeHandwritingResponse
 from huaweicloudsdkocr.v1.model.recognize_id_card_request import RecognizeIdCardRequest
 from huaweicloudsdkocr.v1.model.recognize_id_card_response import RecognizeIdCardResponse
+from huaweicloudsdkocr.v1.model.recognize_invoice_verification_request import RecognizeInvoiceVerificationRequest
+from huaweicloudsdkocr.v1.model.recognize_invoice_verification_response import RecognizeInvoiceVerificationResponse
 from huaweicloudsdkocr.v1.model.recognize_license_plate_request import RecognizeLicensePlateRequest
 from huaweicloudsdkocr.v1.model.recognize_license_plate_response import RecognizeLicensePlateResponse
 from huaweicloudsdkocr.v1.model.recognize_mvs_invoice_request import RecognizeMvsInvoiceRequest

@@ -25,7 +25,7 @@ class DomainItemDetail:
         'start_time': 'int',
         'end_time': 'int',
         'stat_type': 'str',
-        'domains': 'list[DomainObject]'
+        'domains': 'list[dict(str, object)]'
     }
 
     attribute_map = {
@@ -128,7 +128,7 @@ class DomainItemDetail:
         数据结束时间戳，可能与请求时间不一致，可能不返回
 
         :return: The domains of this DomainItemDetail.
-        :rtype: list[DomainObject]
+        :rtype: list[dict(str, object)]
         """
         return self._domains
 
@@ -139,7 +139,7 @@ class DomainItemDetail:
         数据结束时间戳，可能与请求时间不一致，可能不返回
 
         :param domains: The domains of this DomainItemDetail.
-        :type: list[DomainObject]
+        :type: list[dict(str, object)]
         """
         self._domains = domains
 

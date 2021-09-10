@@ -27,7 +27,6 @@ class FlavorInfo:
         'vcpus': 'str',
         'ram': 'str',
         'spec_code': 'str',
-        'availability_zone': 'list[str]',
         'az_status': 'object',
         'engine_versions': 'list[str]'
     }
@@ -38,12 +37,11 @@ class FlavorInfo:
         'vcpus': 'vcpus',
         'ram': 'ram',
         'spec_code': 'spec_code',
-        'availability_zone': 'availability_zone',
         'az_status': 'az_status',
         'engine_versions': 'engine_versions'
     }
 
-    def __init__(self, engine_name=None, type=None, vcpus=None, ram=None, spec_code=None, availability_zone=None, az_status=None, engine_versions=None):
+    def __init__(self, engine_name=None, type=None, vcpus=None, ram=None, spec_code=None, az_status=None, engine_versions=None):
         """FlavorInfo - a model defined in huaweicloud sdk"""
         
         
@@ -53,7 +51,6 @@ class FlavorInfo:
         self._vcpus = None
         self._ram = None
         self._spec_code = None
-        self._availability_zone = None
         self._az_status = None
         self._engine_versions = None
         self.discriminator = None
@@ -63,7 +60,6 @@ class FlavorInfo:
         self.vcpus = vcpus
         self.ram = ram
         self.spec_code = spec_code
-        self.availability_zone = availability_zone
         self.az_status = az_status
         self.engine_versions = engine_versions
 
@@ -176,28 +172,6 @@ class FlavorInfo:
         :type: str
         """
         self._spec_code = spec_code
-
-    @property
-    def availability_zone(self):
-        """Gets the availability_zone of this FlavorInfo.
-
-        支持该规格的可用区ID。
-
-        :return: The availability_zone of this FlavorInfo.
-        :rtype: list[str]
-        """
-        return self._availability_zone
-
-    @availability_zone.setter
-    def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this FlavorInfo.
-
-        支持该规格的可用区ID。
-
-        :param availability_zone: The availability_zone of this FlavorInfo.
-        :type: list[str]
-        """
-        self._availability_zone = availability_zone
 
     @property
     def az_status(self):

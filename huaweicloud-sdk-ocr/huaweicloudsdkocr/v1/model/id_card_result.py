@@ -30,7 +30,8 @@ class IdCardResult:
         'number': 'str',
         'issue': 'str',
         'valid_from': 'str',
-        'valid_to': 'str'
+        'valid_to': 'str',
+        'verification_result': 'IdcardVerificationResult'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class IdCardResult:
         'number': 'number',
         'issue': 'issue',
         'valid_from': 'valid_from',
-        'valid_to': 'valid_to'
+        'valid_to': 'valid_to',
+        'verification_result': 'verification_result'
     }
 
-    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None):
+    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None, verification_result=None):
         """IdCardResult - a model defined in huaweicloud sdk"""
         
         
@@ -59,6 +61,7 @@ class IdCardResult:
         self._issue = None
         self._valid_from = None
         self._valid_to = None
+        self._verification_result = None
         self.discriminator = None
 
         if name is not None:
@@ -79,6 +82,8 @@ class IdCardResult:
             self.valid_from = valid_from
         if valid_to is not None:
             self.valid_to = valid_to
+        if verification_result is not None:
+            self.verification_result = verification_result
 
     @property
     def name(self):
@@ -277,6 +282,26 @@ class IdCardResult:
         :type: str
         """
         self._valid_to = valid_to
+
+    @property
+    def verification_result(self):
+        """Gets the verification_result of this IdCardResult.
+
+
+        :return: The verification_result of this IdCardResult.
+        :rtype: IdcardVerificationResult
+        """
+        return self._verification_result
+
+    @verification_result.setter
+    def verification_result(self, verification_result):
+        """Sets the verification_result of this IdCardResult.
+
+
+        :param verification_result: The verification_result of this IdCardResult.
+        :type: IdcardVerificationResult
+        """
+        self._verification_result = verification_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

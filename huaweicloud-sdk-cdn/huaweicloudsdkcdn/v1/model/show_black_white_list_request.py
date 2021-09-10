@@ -22,22 +22,27 @@ class ShowBlackWhiteListRequest:
     sensitive_list = []
 
     openapi_types = {
-        'domain_id': 'str'
+        'domain_id': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
-        'domain_id': 'domain_id'
+        'domain_id': 'domain_id',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, domain_id=None):
+    def __init__(self, domain_id=None, enterprise_project_id=None):
         """ShowBlackWhiteListRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._domain_id = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.domain_id = domain_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def domain_id(self):
@@ -60,6 +65,28 @@ class ShowBlackWhiteListRequest:
         :type: str
         """
         self._domain_id = domain_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ShowBlackWhiteListRequest.
+
+        当用户开启企业项目功能时，该参数生效，表示资源所属企业项目，不传表示默认项目。 
+
+        :return: The enterprise_project_id of this ShowBlackWhiteListRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ShowBlackWhiteListRequest.
+
+        当用户开启企业项目功能时，该参数生效，表示资源所属企业项目，不传表示默认项目。 
+
+        :param enterprise_project_id: The enterprise_project_id of this ShowBlackWhiteListRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

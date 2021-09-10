@@ -248,7 +248,7 @@ class HttpsDetail:
     def https_status(self):
         """Gets the https_status of this HttpsDetail.
 
-        HTTPS证书是否启用，取值0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用并HTTPS加速并HTTP回源，开启时需要传递证书及私钥。
+        HTTPS证书是否启用，取值0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，开启时需要传递证书及私钥。
 
         :return: The https_status of this HttpsDetail.
         :rtype: int
@@ -259,7 +259,7 @@ class HttpsDetail:
     def https_status(self, https_status):
         """Sets the https_status of this HttpsDetail.
 
-        HTTPS证书是否启用，取值0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用并HTTPS加速并HTTP回源，开启时需要传递证书及私钥。
+        HTTPS证书是否启用，取值0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，开启时需要传递证书及私钥。
 
         :param https_status: The https_status of this HttpsDetail.
         :type: int
@@ -270,7 +270,7 @@ class HttpsDetail:
     def force_redirect_https(self):
         """Gets the force_redirect_https of this HttpsDetail.
 
-        客户端请求是否强制重定向。1是，0否。
+        客户端请求是否强制重定向。1是，0否。（如果为2，表示强制跳转HTTP）
 
         :return: The force_redirect_https of this HttpsDetail.
         :rtype: int
@@ -281,7 +281,7 @@ class HttpsDetail:
     def force_redirect_https(self, force_redirect_https):
         """Sets the force_redirect_https of this HttpsDetail.
 
-        客户端请求是否强制重定向。1是，0否。
+        客户端请求是否强制重定向。1是，0否。（如果为2，表示强制跳转HTTP）
 
         :param force_redirect_https: The force_redirect_https of this HttpsDetail.
         :type: int

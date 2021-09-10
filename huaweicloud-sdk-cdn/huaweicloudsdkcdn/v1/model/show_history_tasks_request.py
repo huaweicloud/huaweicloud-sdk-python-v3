@@ -30,7 +30,8 @@ class ShowHistoryTasksRequest:
         'end_date': 'int',
         'order_field': 'str',
         'order_type': 'str',
-        'file_type': 'str'
+        'file_type': 'str',
+        'create_time': 'int'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class ShowHistoryTasksRequest:
         'end_date': 'end_date',
         'order_field': 'order_field',
         'order_type': 'order_type',
-        'file_type': 'file_type'
+        'file_type': 'file_type',
+        'create_time': 'create_time'
     }
 
-    def __init__(self, enterprise_project_id=None, page_size=None, page_number=None, status=None, start_date=None, end_date=None, order_field=None, order_type=None, file_type=None):
+    def __init__(self, enterprise_project_id=None, page_size=None, page_number=None, status=None, start_date=None, end_date=None, order_field=None, order_type=None, file_type=None, create_time=None):
         """ShowHistoryTasksRequest - a model defined in huaweicloud sdk"""
         
         
@@ -59,6 +61,7 @@ class ShowHistoryTasksRequest:
         self._order_field = None
         self._order_type = None
         self._file_type = None
+        self._create_time = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -79,6 +82,8 @@ class ShowHistoryTasksRequest:
             self.order_type = order_type
         if file_type is not None:
             self.file_type = file_type
+        if create_time is not None:
+            self.create_time = create_time
 
     @property
     def enterprise_project_id(self):
@@ -277,6 +282,28 @@ class ShowHistoryTasksRequest:
         :type: str
         """
         self._file_type = file_type
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this ShowHistoryTasksRequest.
+
+        刷新预热任务的创建时间。不传参默认为查询3天内的任务。最长可查询15天内数据。
+
+        :return: The create_time of this ShowHistoryTasksRequest.
+        :rtype: int
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this ShowHistoryTasksRequest.
+
+        刷新预热任务的创建时间。不传参默认为查询3天内的任务。最长可查询15天内数据。
+
+        :param create_time: The create_time of this ShowHistoryTasksRequest.
+        :type: int
+        """
+        self._create_time = create_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

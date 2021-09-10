@@ -49,7 +49,7 @@ class ShowBlackWhiteListResponse(SdkResponse):
     def type(self):
         """Gets the type of this ShowBlackWhiteListResponse.
 
-        IP类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）
+        IP黑白名单类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）
 
         :return: The type of this ShowBlackWhiteListResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ShowBlackWhiteListResponse(SdkResponse):
     def type(self, type):
         """Sets the type of this ShowBlackWhiteListResponse.
 
-        IP类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）
+        IP黑白名单类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）
 
         :param type: The type of this ShowBlackWhiteListResponse.
         :type: int

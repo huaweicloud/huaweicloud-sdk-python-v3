@@ -318,6 +318,73 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def add_material_async(self, request):
+        """新增全球窗素材
+
+        新增全球窗素材（上传素材文件）
+
+        :param AddMaterialRequest request
+        :return: AddMaterialResponse
+        """
+        return self.add_material_with_http_info(request)
+
+    def add_material_with_http_info(self, request):
+        """新增全球窗素材
+
+        新增全球窗素材（上传素材文件）
+
+        :param AddMaterialRequest request
+        :return: AddMaterialResponse
+        """
+
+        all_params = ['file', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] =  local_var_params['file']
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/sss/materials',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddMaterialResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def add_program_async(self, request):
         """新增全球窗节目
 
@@ -1477,6 +1544,150 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def cancel_recurring_meeting_async(self, request):
+        """取消周期会议
+
+        管理员或UC账号可以通过该接口取消周期会议
+
+        :param CancelRecurringMeetingRequest request
+        :return: CancelRecurringMeetingResponse
+        """
+        return self.cancel_recurring_meeting_with_http_info(request)
+
+    def cancel_recurring_meeting_with_http_info(self, request):
+        """取消周期会议
+
+        管理员或UC账号可以通过该接口取消周期会议
+
+        :param CancelRecurringMeetingRequest request
+        :return: CancelRecurringMeetingResponse
+        """
+
+        all_params = ['conference_id', 'x_authorization_type', 'user_uuid', 'x_site_id', 'type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/cycleconferences',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CancelRecurringMeetingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def cancel_recurring_sub_meeting_async(self, request):
+        """取消周期子会议
+
+        管理员或UC账号可以通过该接口取消周期会议
+
+        :param CancelRecurringSubMeetingRequest request
+        :return: CancelRecurringSubMeetingResponse
+        """
+        return self.cancel_recurring_sub_meeting_with_http_info(request)
+
+    def cancel_recurring_sub_meeting_with_http_info(self, request):
+        """取消周期子会议
+
+        管理员或UC账号可以通过该接口取消周期会议
+
+        :param CancelRecurringSubMeetingRequest request
+        :return: CancelRecurringSubMeetingResponse
+        """
+
+        all_params = ['conference_id', 'req_body', 'x_authorization_type', 'user_uuid', 'x_site_id', 'type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/cyclesubconf',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CancelRecurringSubMeetingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def check_slide_verify_code_async(self, request):
         """校验滑块验证码
 
@@ -2009,6 +2220,75 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreatePortalRefNonceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_recurring_meeting_async(self, request):
+        """创建周期会议
+
+        管理员或UC账号可以通过该接口创建周期会议
+
+        :param CreateRecurringMeetingRequest request
+        :return: CreateRecurringMeetingResponse
+        """
+        return self.create_recurring_meeting_with_http_info(request)
+
+    def create_recurring_meeting_with_http_info(self, request):
+        """创建周期会议
+
+        管理员或UC账号可以通过该接口创建周期会议
+
+        :param CreateRecurringMeetingRequest request
+        :return: CreateRecurringMeetingResponse
+        """
+
+        all_params = ['req_body', 'x_authorization_type', 'user_uuid', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/cycleconferences',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateRecurringMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -9325,6 +9605,148 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdatePwdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_recurring_meeting_async(self, request):
+        """修改预定周期会议
+
+        修改预定的周期会议；会议开始时，不能修改会议
+
+        :param UpdateRecurringMeetingRequest request
+        :return: UpdateRecurringMeetingResponse
+        """
+        return self.update_recurring_meeting_with_http_info(request)
+
+    def update_recurring_meeting_with_http_info(self, request):
+        """修改预定周期会议
+
+        修改预定的周期会议；会议开始时，不能修改会议
+
+        :param UpdateRecurringMeetingRequest request
+        :return: UpdateRecurringMeetingResponse
+        """
+
+        all_params = ['conference_id', 'req_body', 'x_authorization_type', 'user_uuid', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/cycleconferences',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateRecurringMeetingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_recurring_sub_meeting_async(self, request):
+        """修改预定周期子会议
+
+        修改预定的周期子会议；会议开始时，不能修改会议
+
+        :param UpdateRecurringSubMeetingRequest request
+        :return: UpdateRecurringSubMeetingResponse
+        """
+        return self.update_recurring_sub_meeting_with_http_info(request)
+
+    def update_recurring_sub_meeting_with_http_info(self, request):
+        """修改预定周期子会议
+
+        修改预定的周期子会议；会议开始时，不能修改会议
+
+        :param UpdateRecurringSubMeetingRequest request
+        :return: UpdateRecurringSubMeetingResponse
+        """
+
+        all_params = ['conference_id', 'req_body', 'x_authorization_type', 'user_uuid', 'x_site_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_uuid' in local_var_params:
+            query_params.append(('userUUID', local_var_params['user_uuid']))
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_authorization_type' in local_var_params:
+            header_params['X-Authorization-Type'] = local_var_params['x_authorization_type']
+        if 'x_site_id' in local_var_params:
+            header_params['X-Site-Id'] = local_var_params['x_site_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/cyclesubconf',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateRecurringSubMeetingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

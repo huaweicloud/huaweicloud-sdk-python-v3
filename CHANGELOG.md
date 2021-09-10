@@ -1,3 +1,126 @@
+# 3.0.59 2021-09-10
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+    - Support the interfaces `ListSubCustomerBillDetail`, `ListResourceUsageSummary` and `ListResourceUsage`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Remove the interface `ListResourceUsages`.
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Remove the interface `ListResourceUsages`.
+
+### HuaweiCloud SDK CBS
+
+- _Features_
+    - Support the interfaces `CreateTbSession`, `ExecuteTbSession` and `DeleteTbSession`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+    - Support the interfaces `AddNode` and `ResetNode`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the following response parameters to the interface `CreateDomain`:
+        - `range_status`
+        - `follow_status`
+        - `origin_status`
+        - `auto_refresh_preheat`
+    - Add the required request parameter `switch` and optional request parameter `redirect_type` to the interface `UpdateDomainMultiCertificates`.
+    - Add the required request parameter `switch` and optional request parameter `redirect_type` to the interface `UpdateHttpsInfo`.
+    - Add the optional request parameter `create_time` to the interface `ShowHistoryTasks`.
+
+### HuaweiCloud SDK DAS
+
+- _Features_
+    - Support the `Data Admin Service`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the response parameters `status` and `fail_reason` to the interface `ShowJobDetail`.
+
+### HuaweiCloud SDK EVS
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Set the request parameter `size` of the interface `CreateVolume` to `required`.
+
+### HuaweiCloud SDK IVS
+
+- _Features_
+    - Support the service `Identity Verification Solution`.
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+    - Support the following interfaces:
+        - `AddMaterial`
+        - `CreateRecurringMeeting`
+        - `UpdateRecurringMeeting`
+        - `CancelRecurringMeeting`
+        - `CancelRecurringSubMeeting`
+- _Bug Fix_
+    - None
+- _Change_
+    - None
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+    - Support the interface `RecognizeInvoiceVerification`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the optional request parameter `return_verification` to the interface `RecognizeIdCard`.
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+    - Support the interface `UpdateDatabase`.
+- _Bug Fix_
+    - None
+- _Change_
+    - Add the response parameter `alias` to the interface `ListInstances`.
+    - Add the optional request parameter `comment` to the interface `CreateDatabase`.
+
 # 3.0.58 2021-08-31
 
 ### HuaweiCloud SDK CodeCraft

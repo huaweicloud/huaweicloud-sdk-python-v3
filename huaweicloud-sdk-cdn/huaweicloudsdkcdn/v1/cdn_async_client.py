@@ -530,7 +530,7 @@ class CdnAsyncClient(Client):
         :return: ShowBlackWhiteListResponse
         """
 
-        all_params = ['domain_id']
+        all_params = ['domain_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -543,6 +543,8 @@ class CdnAsyncClient(Client):
             path_params['domain_id'] = local_var_params['domain_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1015,7 +1017,7 @@ class CdnAsyncClient(Client):
         :return: ShowHistoryTasksResponse
         """
 
-        all_params = ['enterprise_project_id', 'page_size', 'page_number', 'status', 'start_date', 'end_date', 'order_field', 'order_type', 'file_type']
+        all_params = ['enterprise_project_id', 'page_size', 'page_number', 'status', 'start_date', 'end_date', 'order_field', 'order_type', 'file_type', 'create_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1044,6 +1046,8 @@ class CdnAsyncClient(Client):
             query_params.append(('order_type', local_var_params['order_type']))
         if 'file_type' in local_var_params:
             query_params.append(('file_type', local_var_params['file_type']))
+        if 'create_time' in local_var_params:
+            query_params.append(('create_time', local_var_params['create_time']))
 
         header_params = {}
 
@@ -1624,7 +1628,7 @@ class CdnAsyncClient(Client):
         :return: UpdateBlackWhiteListResponse
         """
 
-        all_params = ['domain_id', 'black_white_list_body']
+        all_params = ['domain_id', 'black_white_list_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1637,6 +1641,8 @@ class CdnAsyncClient(Client):
             path_params['domain_id'] = local_var_params['domain_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1756,7 +1762,7 @@ class CdnAsyncClient(Client):
         :return: UpdateDomainMultiCertificatesResponse
         """
 
-        all_params = ['https']
+        all_params = ['enterprise_project_id', 'https']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1767,6 +1773,8 @@ class CdnAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1870,7 +1878,7 @@ class CdnAsyncClient(Client):
     def update_follow302_switch_async(self, request):
         """开启/关闭回源跟随
 
-        开启此项配置后，当CDN节点回源请求源站返回302状态码时，CDN节点会先跳转到302对应地址获取资源并缓存后再返回给用户。
+        开启此项配置后，当CDN节点回源请求源站返回301/302状态码时，CDN节点会先跳转到301/302对应地址获取资源并缓存后再返回给用户。
 
         :param UpdateFollow302SwitchRequest request
         :return: UpdateFollow302SwitchResponse
@@ -1880,13 +1888,13 @@ class CdnAsyncClient(Client):
     def update_follow302_switch_with_http_info(self, request):
         """开启/关闭回源跟随
 
-        开启此项配置后，当CDN节点回源请求源站返回302状态码时，CDN节点会先跳转到302对应地址获取资源并缓存后再返回给用户。
+        开启此项配置后，当CDN节点回源请求源站返回301/302状态码时，CDN节点会先跳转到301/302对应地址获取资源并缓存后再返回给用户。
 
         :param UpdateFollow302SwitchRequest request
         :return: UpdateFollow302SwitchResponse
         """
 
-        all_params = ['domain_id', 'follow_status']
+        all_params = ['domain_id', 'follow_status', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1899,6 +1907,8 @@ class CdnAsyncClient(Client):
             path_params['domain_id'] = local_var_params['domain_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2085,7 +2095,7 @@ class CdnAsyncClient(Client):
         :return: UpdatePrivateBucketAccessResponse
         """
 
-        all_params = ['domain_id', 'status']
+        all_params = ['domain_id', 'enterprise_project_id', 'status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2098,6 +2108,8 @@ class CdnAsyncClient(Client):
             path_params['domain_id'] = local_var_params['domain_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2150,7 +2162,7 @@ class CdnAsyncClient(Client):
         :return: UpdateRangeSwitchResponse
         """
 
-        all_params = ['domain_id', 'range_status']
+        all_params = ['domain_id', 'range_status', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2163,6 +2175,8 @@ class CdnAsyncClient(Client):
             path_params['domain_id'] = local_var_params['domain_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 

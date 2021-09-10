@@ -24,40 +24,48 @@ class JobDetail:
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'status': 'str',
         'created': 'str',
         'ended': 'str',
         'progress': 'str',
-        'instance': 'JobInstanceInfo'
+        'instance': 'JobInstanceInfo',
+        'fail_reason': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'status': 'status',
         'created': 'created',
         'ended': 'ended',
         'progress': 'progress',
-        'instance': 'instance'
+        'instance': 'instance',
+        'fail_reason': 'fail_reason'
     }
 
-    def __init__(self, id=None, name=None, created=None, ended=None, progress=None, instance=None):
+    def __init__(self, id=None, name=None, status=None, created=None, ended=None, progress=None, instance=None, fail_reason=None):
         """JobDetail - a model defined in huaweicloud sdk"""
         
         
 
         self._id = None
         self._name = None
+        self._status = None
         self._created = None
         self._ended = None
         self._progress = None
         self._instance = None
+        self._fail_reason = None
         self.discriminator = None
 
         self.id = id
         self.name = name
+        self.status = status
         self.created = created
         self.ended = ended
         self.progress = progress
         self.instance = instance
+        self.fail_reason = fail_reason
 
     @property
     def id(self):
@@ -102,6 +110,28 @@ class JobDetail:
         :type: str
         """
         self._name = name
+
+    @property
+    def status(self):
+        """Gets the status of this JobDetail.
+
+        任务执行状态。
+
+        :return: The status of this JobDetail.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this JobDetail.
+
+        任务执行状态。
+
+        :param status: The status of this JobDetail.
+        :type: str
+        """
+        self._status = status
 
     @property
     def created(self):
@@ -188,6 +218,28 @@ class JobDetail:
         :type: JobInstanceInfo
         """
         self._instance = instance
+
+    @property
+    def fail_reason(self):
+        """Gets the fail_reason of this JobDetail.
+
+        任务执行失败时的错误信息。
+
+        :return: The fail_reason of this JobDetail.
+        :rtype: str
+        """
+        return self._fail_reason
+
+    @fail_reason.setter
+    def fail_reason(self, fail_reason):
+        """Sets the fail_reason of this JobDetail.
+
+        任务执行失败时的错误信息。
+
+        :param fail_reason: The fail_reason of this JobDetail.
+        :type: str
+        """
+        self._fail_reason = fail_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

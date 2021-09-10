@@ -48,6 +48,71 @@ class CceAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def add_node_async(self, request):
+        """纳管节点
+
+        该API用于在指定集群下纳管节点。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+
+        :param AddNodeRequest request
+        :return: AddNodeResponse
+        """
+        return self.add_node_with_http_info(request)
+
+    def add_node_with_http_info(self, request):
+        """纳管节点
+
+        该API用于在指定集群下纳管节点。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+
+        :param AddNodeRequest request
+        :return: AddNodeResponse
+        """
+
+        all_params = ['cluster_id', 'add_node_list']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/add',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddNodeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def awake_cluster_async(self, request):
         """集群唤醒
 
@@ -1358,6 +1423,71 @@ class CceAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RemoveNodeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def reset_node_async(self, request):
+        """重置节点
+
+        该API用于在指定集群下重置节点。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+
+        :param ResetNodeRequest request
+        :return: ResetNodeResponse
+        """
+        return self.reset_node_with_http_info(request)
+
+    def reset_node_with_http_info(self, request):
+        """重置节点
+
+        该API用于在指定集群下重置节点。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+
+        :param ResetNodeRequest request
+        :return: ResetNodeResponse
+        """
+
+        all_params = ['cluster_id', 'reset_node_list']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/reset',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResetNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

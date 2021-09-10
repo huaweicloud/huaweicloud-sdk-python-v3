@@ -22,23 +22,50 @@ class UpdateDomainMultiCertificatesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'body': 'UpdateDomainMultiCertificatesRequestBody'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, enterprise_project_id=None, body=None):
         """UpdateDomainMultiCertificatesRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._body = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if body is not None:
             self.body = body
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this UpdateDomainMultiCertificatesRequest.
+
+        当用户开启企业项目功能时，该参数生效，表示资源所属项目，不传表示查询默认项目。
+
+        :return: The enterprise_project_id of this UpdateDomainMultiCertificatesRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this UpdateDomainMultiCertificatesRequest.
+
+        当用户开启企业项目功能时，该参数生效，表示资源所属项目，不传表示查询默认项目。
+
+        :param enterprise_project_id: The enterprise_project_id of this UpdateDomainMultiCertificatesRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def body(self):

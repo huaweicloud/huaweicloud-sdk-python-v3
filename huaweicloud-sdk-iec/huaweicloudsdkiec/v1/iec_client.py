@@ -3855,7 +3855,7 @@ class IecClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/firewalls/{firewall_id}/update_firewall_rules',
+            resource_path='/v1/firewalls/{firewall_id}/firewall-rules',
             method='PUT',
             path_params=path_params,
             query_params=query_params,

@@ -24,16 +24,18 @@ class IdCardRequestBody:
     openapi_types = {
         'image': 'str',
         'url': 'str',
-        'side': 'str'
+        'side': 'str',
+        'return_verification': 'bool'
     }
 
     attribute_map = {
         'image': 'image',
         'url': 'url',
-        'side': 'side'
+        'side': 'side',
+        'return_verification': 'return_verification'
     }
 
-    def __init__(self, image=None, url=None, side=None):
+    def __init__(self, image=None, url=None, side=None, return_verification=None):
         """IdCardRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -41,6 +43,7 @@ class IdCardRequestBody:
         self._image = None
         self._url = None
         self._side = None
+        self._return_verification = None
         self.discriminator = None
 
         if image is not None:
@@ -49,6 +52,8 @@ class IdCardRequestBody:
             self.url = url
         if side is not None:
             self.side = side
+        if return_verification is not None:
+            self.return_verification = return_verification
 
     @property
     def image(self):
@@ -115,6 +120,28 @@ class IdCardRequestBody:
         :type: str
         """
         self._side = side
+
+    @property
+    def return_verification(self):
+        """Gets the return_verification of this IdCardRequestBody.
+
+        返回校验身份证号等信息的开关，默认false，可选值如下所示：  - true：返回校验信息  - false：不反回校验信息 
+
+        :return: The return_verification of this IdCardRequestBody.
+        :rtype: bool
+        """
+        return self._return_verification
+
+    @return_verification.setter
+    def return_verification(self, return_verification):
+        """Sets the return_verification of this IdCardRequestBody.
+
+        返回校验身份证号等信息的开关，默认false，可选值如下所示：  - true：返回校验信息  - false：不反回校验信息 
+
+        :param return_verification: The return_verification of this IdCardRequestBody.
+        :type: bool
+        """
+        self._return_verification = return_verification
 
     def to_dict(self):
         """Returns the model properties as a dict"""

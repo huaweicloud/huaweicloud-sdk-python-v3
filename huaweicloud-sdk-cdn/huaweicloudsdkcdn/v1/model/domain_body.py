@@ -82,7 +82,7 @@ class DomainBody:
     def business_type(self):
         """Gets the business_type of this DomainBody.
 
-        域名业务类型，若为web，则表示类型为静态加速；若为download，则表示业务类型为下载加速；若为video，则表示业务类型为流媒体加速；若为wholeSite，则表示业务类型为全站加速。
+        域名业务类型，若为web，则表示类型为网页加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示业务类型为全站加速。
 
         :return: The business_type of this DomainBody.
         :rtype: str
@@ -93,7 +93,7 @@ class DomainBody:
     def business_type(self, business_type):
         """Sets the business_type of this DomainBody.
 
-        域名业务类型，若为web，则表示类型为静态加速；若为download，则表示业务类型为下载加速；若为video，则表示业务类型为流媒体加速；若为wholeSite，则表示业务类型为全站加速。
+        域名业务类型，若为web，则表示类型为网页加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示业务类型为全站加速。
 
         :param business_type: The business_type of this DomainBody.
         :type: str

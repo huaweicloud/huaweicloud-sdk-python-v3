@@ -35,7 +35,11 @@ class CreateDomainResponseBodyContent:
         'create_time': 'int',
         'modify_time': 'int',
         'disabled': 'int',
-        'locked': 'int'
+        'locked': 'int',
+        'range_status': 'str',
+        'follow_status': 'str',
+        'origin_status': 'str',
+        'auto_refresh_preheat': 'int'
     }
 
     attribute_map = {
@@ -52,10 +56,14 @@ class CreateDomainResponseBodyContent:
         'create_time': 'create_time',
         'modify_time': 'modify_time',
         'disabled': 'disabled',
-        'locked': 'locked'
+        'locked': 'locked',
+        'range_status': 'range_status',
+        'follow_status': 'follow_status',
+        'origin_status': 'origin_status',
+        'auto_refresh_preheat': 'auto_refresh_preheat'
     }
 
-    def __init__(self, id=None, domain_name=None, business_type=None, service_area=None, user_domain_id=None, domain_status=None, cname=None, sources=None, domain_origin_host=None, https_status=None, create_time=None, modify_time=None, disabled=None, locked=None):
+    def __init__(self, id=None, domain_name=None, business_type=None, service_area=None, user_domain_id=None, domain_status=None, cname=None, sources=None, domain_origin_host=None, https_status=None, create_time=None, modify_time=None, disabled=None, locked=None, range_status=None, follow_status=None, origin_status=None, auto_refresh_preheat=None):
         """CreateDomainResponseBodyContent - a model defined in huaweicloud sdk"""
         
         
@@ -74,6 +82,10 @@ class CreateDomainResponseBodyContent:
         self._modify_time = None
         self._disabled = None
         self._locked = None
+        self._range_status = None
+        self._follow_status = None
+        self._origin_status = None
+        self._auto_refresh_preheat = None
         self.discriminator = None
 
         if id is not None:
@@ -104,6 +116,14 @@ class CreateDomainResponseBodyContent:
             self.disabled = disabled
         if locked is not None:
             self.locked = locked
+        if range_status is not None:
+            self.range_status = range_status
+        if follow_status is not None:
+            self.follow_status = follow_status
+        if origin_status is not None:
+            self.origin_status = origin_status
+        if auto_refresh_preheat is not None:
+            self.auto_refresh_preheat = auto_refresh_preheat
 
     @property
     def id(self):
@@ -153,7 +173,7 @@ class CreateDomainResponseBodyContent:
     def business_type(self):
         """Gets the business_type of this CreateDomainResponseBodyContent.
 
-        域名业务类型:-web:静态加速；-download:下载加速；-video:流媒体加速；-wholeSite:全站加速。
+        域名业务类型:-web:网站加速；-download:文件下载加速；-video:点播加速；-wholeSite:全站加速。
 
         :return: The business_type of this CreateDomainResponseBodyContent.
         :rtype: str
@@ -164,7 +184,7 @@ class CreateDomainResponseBodyContent:
     def business_type(self, business_type):
         """Sets the business_type of this CreateDomainResponseBodyContent.
 
-        域名业务类型:-web:静态加速；-download:下载加速；-video:流媒体加速；-wholeSite:全站加速。
+        域名业务类型:-web:网站加速；-download:文件下载加速；-video:点播加速；-wholeSite:全站加速。
 
         :param business_type: The business_type of this CreateDomainResponseBodyContent.
         :type: str
@@ -219,7 +239,7 @@ class CreateDomainResponseBodyContent:
     def domain_status(self):
         """Gets the domain_status of this CreateDomainResponseBodyContent.
 
-        加速域名状态。取值意义：online表示“已开启”、offline表示“已停用”、configuring表示“配置中”、configure_failed表示“配置失败”、checking表示“审核中”、check_failed表示“审核失败”、deleting表示“删除中”。
+        加速域名状态。取值意义：online表示“已开启”、offline表示“已停用”、configuring表示“配置中”、configure_failed表示“配置失败”、checking表示“审核中”、check_failed表示“审核未通过”、deleting表示“删除中”。
 
         :return: The domain_status of this CreateDomainResponseBodyContent.
         :rtype: str
@@ -230,7 +250,7 @@ class CreateDomainResponseBodyContent:
     def domain_status(self, domain_status):
         """Sets the domain_status of this CreateDomainResponseBodyContent.
 
-        加速域名状态。取值意义：online表示“已开启”、offline表示“已停用”、configuring表示“配置中”、configure_failed表示“配置失败”、checking表示“审核中”、check_failed表示“审核失败”、deleting表示“删除中”。
+        加速域名状态。取值意义：online表示“已开启”、offline表示“已停用”、configuring表示“配置中”、configure_failed表示“配置失败”、checking表示“审核中”、check_failed表示“审核未通过”、deleting表示“删除中”。
 
         :param domain_status: The domain_status of this CreateDomainResponseBodyContent.
         :type: str
@@ -410,6 +430,94 @@ class CreateDomainResponseBodyContent:
         :type: int
         """
         self._locked = locked
+
+    @property
+    def range_status(self):
+        """Gets the range_status of this CreateDomainResponseBodyContent.
+
+        range状态（\"off\"/\"on\"）。
+
+        :return: The range_status of this CreateDomainResponseBodyContent.
+        :rtype: str
+        """
+        return self._range_status
+
+    @range_status.setter
+    def range_status(self, range_status):
+        """Sets the range_status of this CreateDomainResponseBodyContent.
+
+        range状态（\"off\"/\"on\"）。
+
+        :param range_status: The range_status of this CreateDomainResponseBodyContent.
+        :type: str
+        """
+        self._range_status = range_status
+
+    @property
+    def follow_status(self):
+        """Gets the follow_status of this CreateDomainResponseBodyContent.
+
+        follow302状态（\"off\"/\"on\"）。
+
+        :return: The follow_status of this CreateDomainResponseBodyContent.
+        :rtype: str
+        """
+        return self._follow_status
+
+    @follow_status.setter
+    def follow_status(self, follow_status):
+        """Sets the follow_status of this CreateDomainResponseBodyContent.
+
+        follow302状态（\"off\"/\"on\"）。
+
+        :param follow_status: The follow_status of this CreateDomainResponseBodyContent.
+        :type: str
+        """
+        self._follow_status = follow_status
+
+    @property
+    def origin_status(self):
+        """Gets the origin_status of this CreateDomainResponseBodyContent.
+
+        是否暂停源站回源。
+
+        :return: The origin_status of this CreateDomainResponseBodyContent.
+        :rtype: str
+        """
+        return self._origin_status
+
+    @origin_status.setter
+    def origin_status(self, origin_status):
+        """Sets the origin_status of this CreateDomainResponseBodyContent.
+
+        是否暂停源站回源。
+
+        :param origin_status: The origin_status of this CreateDomainResponseBodyContent.
+        :type: str
+        """
+        self._origin_status = origin_status
+
+    @property
+    def auto_refresh_preheat(self):
+        """Gets the auto_refresh_preheat of this CreateDomainResponseBodyContent.
+
+        自动刷新预热（0代表关闭；1代表打开）
+
+        :return: The auto_refresh_preheat of this CreateDomainResponseBodyContent.
+        :rtype: int
+        """
+        return self._auto_refresh_preheat
+
+    @auto_refresh_preheat.setter
+    def auto_refresh_preheat(self, auto_refresh_preheat):
+        """Sets the auto_refresh_preheat of this CreateDomainResponseBodyContent.
+
+        自动刷新预热（0代表关闭；1代表打开）
+
+        :param auto_refresh_preheat: The auto_refresh_preheat of this CreateDomainResponseBodyContent.
+        :type: int
+        """
+        self._auto_refresh_preheat = auto_refresh_preheat
 
     def to_dict(self):
         """Returns the model properties as a dict"""

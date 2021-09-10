@@ -22,22 +22,20 @@ class AutoClassificationResult:
     sensitive_list = []
 
     openapi_types = {
-        'status': 'object',
+        'status': 'AutoClassificationResultStatus',
         'content': 'object',
         'type': 'str',
-        'location': 'list[list[int]]',
-        'confidence': 'object'
+        'location': 'list[list[int]]'
     }
 
     attribute_map = {
         'status': 'status',
         'content': 'content',
         'type': 'type',
-        'location': 'location',
-        'confidence': 'confidence'
+        'location': 'location'
     }
 
-    def __init__(self, status=None, content=None, type=None, location=None, confidence=None):
+    def __init__(self, status=None, content=None, type=None, location=None):
         """AutoClassificationResult - a model defined in huaweicloud sdk"""
         
         
@@ -46,24 +44,20 @@ class AutoClassificationResult:
         self._content = None
         self._type = None
         self._location = None
-        self._confidence = None
         self.discriminator = None
 
         self.status = status
         self.content = content
         self.type = type
         self.location = location
-        if confidence is not None:
-            self.confidence = confidence
 
     @property
     def status(self):
         """Gets the status of this AutoClassificationResult.
 
-        指示各对应票证的识别状态。  
 
         :return: The status of this AutoClassificationResult.
-        :rtype: object
+        :rtype: AutoClassificationResultStatus
         """
         return self._status
 
@@ -71,10 +65,9 @@ class AutoClassificationResult:
     def status(self, status):
         """Sets the status of this AutoClassificationResult.
 
-        指示各对应票证的识别状态。  
 
         :param status: The status of this AutoClassificationResult.
-        :type: object
+        :type: AutoClassificationResultStatus
         """
         self._status = status
 
@@ -143,28 +136,6 @@ class AutoClassificationResult:
         :type: list[list[int]]
         """
         self._location = location
-
-    @property
-    def confidence(self):
-        """Gets the confidence of this AutoClassificationResult.
-
-        相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。          
-
-        :return: The confidence of this AutoClassificationResult.
-        :rtype: object
-        """
-        return self._confidence
-
-    @confidence.setter
-    def confidence(self, confidence):
-        """Sets the confidence of this AutoClassificationResult.
-
-        相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。          
-
-        :param confidence: The confidence of this AutoClassificationResult.
-        :type: object
-        """
-        self._confidence = confidence
 
     def to_dict(self):
         """Returns the model properties as a dict"""

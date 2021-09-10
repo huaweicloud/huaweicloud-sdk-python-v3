@@ -28,7 +28,7 @@ class Domains:
         'user_domain_id': 'str',
         'domain_status': 'str',
         'cname': 'str',
-        'sources': 'list[SourceWithPort]',
+        'sources': 'list[Sources]',
         'domain_origin_host': 'DomainOriginHost',
         'https_status': 'int',
         'create_time': 'int',
@@ -188,7 +188,7 @@ class Domains:
     def business_type(self):
         """Gets the business_type of this Domains.
 
-        域名业务类型，若为web，则表示类型为静态加速；若为download，则表示业务类型为下载加速；若为video，则表示业务类型为流媒体加速；若为wholeSite，则表示类型为全站加速。
+        域名业务类型，若为web，则表示类型为网站加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示类型为全站加速。
 
         :return: The business_type of this Domains.
         :rtype: str
@@ -199,7 +199,7 @@ class Domains:
     def business_type(self, business_type):
         """Sets the business_type of this Domains.
 
-        域名业务类型，若为web，则表示类型为静态加速；若为download，则表示业务类型为下载加速；若为video，则表示业务类型为流媒体加速；若为wholeSite，则表示类型为全站加速。
+        域名业务类型，若为web，则表示类型为网站加速；若为download，则表示业务类型为文件下载加速；若为video，则表示业务类型为点播加速；若为wholeSite，则表示类型为全站加速。
 
         :param business_type: The business_type of this Domains.
         :type: str
@@ -232,7 +232,7 @@ class Domains:
     def domain_status(self):
         """Gets the domain_status of this Domains.
 
-        加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核失败” - deleting表示“删除中”
+        加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”
 
         :return: The domain_status of this Domains.
         :rtype: str
@@ -243,7 +243,7 @@ class Domains:
     def domain_status(self, domain_status):
         """Sets the domain_status of this Domains.
 
-        加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核失败” - deleting表示“删除中”
+        加速域名状态。取值意义： - online表示“已开启” - offline表示“已停用” - configuring表示“配置中” - configure_failed表示“配置失败” - checking表示“审核中” - check_failed表示“审核未通过” - deleting表示“删除中”
 
         :param domain_status: The domain_status of this Domains.
         :type: str
@@ -279,7 +279,7 @@ class Domains:
         源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
 
         :return: The sources of this Domains.
-        :rtype: list[SourceWithPort]
+        :rtype: list[Sources]
         """
         return self._sources
 
@@ -290,7 +290,7 @@ class Domains:
         源站域名或源站IP，源站为IP类型时，仅支持IPv4，如需传入多个源站IP，以多个源站对象传入，除IP其他参数请保持一致，主源站最多支持15个源站IP对象，备源站最多支持15个源站IP对象；源站为域名类型时仅支持1个源站对象。不支持IP源站和域名源站混用。
 
         :param sources: The sources of this Domains.
-        :type: list[SourceWithPort]
+        :type: list[Sources]
         """
         self._sources = sources
 
@@ -516,7 +516,7 @@ class Domains:
     def origin_status(self):
         """Gets the origin_status of this Domains.
 
-        是否暂停源站回源
+        是否暂停源站回源。
 
         :return: The origin_status of this Domains.
         :rtype: str
@@ -527,7 +527,7 @@ class Domains:
     def origin_status(self, origin_status):
         """Sets the origin_status of this Domains.
 
-        是否暂停源站回源
+        是否暂停源站回源。
 
         :param origin_status: The origin_status of this Domains.
         :type: str

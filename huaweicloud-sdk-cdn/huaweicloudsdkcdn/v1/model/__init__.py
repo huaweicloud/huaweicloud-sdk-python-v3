@@ -26,11 +26,10 @@ from huaweicloudsdkcdn.v1.model.disable_domain_response import DisableDomainResp
 from huaweicloudsdkcdn.v1.model.domain_body import DomainBody
 from huaweicloudsdkcdn.v1.model.domain_item_detail import DomainItemDetail
 from huaweicloudsdkcdn.v1.model.domain_item_location_details import DomainItemLocationDetails
-from huaweicloudsdkcdn.v1.model.domain_object import DomainObject
 from huaweicloudsdkcdn.v1.model.domain_origin_host import DomainOriginHost
 from huaweicloudsdkcdn.v1.model.domain_region import DomainRegion
-from huaweicloudsdkcdn.v1.model.domain_region_isp_detail import DomainRegionIspDetail
 from huaweicloudsdkcdn.v1.model.domains import Domains
+from huaweicloudsdkcdn.v1.model.domains_with_port import DomainsWithPort
 from huaweicloudsdkcdn.v1.model.enable_domain_request import EnableDomainRequest
 from huaweicloudsdkcdn.v1.model.enable_domain_response import EnableDomainResponse
 from huaweicloudsdkcdn.v1.model.follow302_status_body import Follow302StatusBody

@@ -1,6 +1,4 @@
-urllib3
-six
-requests
-futures
 requests_futures
 simplejson
+six >= 1.16.0
+futures >= 3.3.0; python_version == '2.7'
