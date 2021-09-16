@@ -23,6 +23,8 @@ class CreateKeyRequestBody:
 
     openapi_types = {
         'key_alias': 'str',
+        'key_spec': 'str',
+        'key_usage': 'str',
         'key_description': 'str',
         'origin': 'str',
         'enterprise_project_id': 'str',
@@ -31,18 +33,22 @@ class CreateKeyRequestBody:
 
     attribute_map = {
         'key_alias': 'key_alias',
+        'key_spec': 'key_spec',
+        'key_usage': 'key_usage',
         'key_description': 'key_description',
         'origin': 'origin',
         'enterprise_project_id': 'enterprise_project_id',
         'sequence': 'sequence'
     }
 
-    def __init__(self, key_alias=None, key_description=None, origin=None, enterprise_project_id=None, sequence=None):
+    def __init__(self, key_alias=None, key_spec=None, key_usage=None, key_description=None, origin=None, enterprise_project_id=None, sequence=None):
         """CreateKeyRequestBody - a model defined in huaweicloud sdk"""
         
         
 
         self._key_alias = None
+        self._key_spec = None
+        self._key_usage = None
         self._key_description = None
         self._origin = None
         self._enterprise_project_id = None
@@ -51,6 +57,10 @@ class CreateKeyRequestBody:
 
         if key_alias is not None:
             self.key_alias = key_alias
+        if key_spec is not None:
+            self.key_spec = key_spec
+        if key_usage is not None:
+            self.key_usage = key_usage
         if key_description is not None:
             self.key_description = key_description
         if origin is not None:
@@ -81,6 +91,50 @@ class CreateKeyRequestBody:
         :type: str
         """
         self._key_alias = key_alias
+
+    @property
+    def key_spec(self):
+        """Gets the key_spec of this CreateKeyRequestBody.
+
+        密钥生成算法，默认为“AES_256”，枚举如下： - AES_256 - SM4 - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SM2
+
+        :return: The key_spec of this CreateKeyRequestBody.
+        :rtype: str
+        """
+        return self._key_spec
+
+    @key_spec.setter
+    def key_spec(self, key_spec):
+        """Sets the key_spec of this CreateKeyRequestBody.
+
+        密钥生成算法，默认为“AES_256”，枚举如下： - AES_256 - SM4 - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SM2
+
+        :param key_spec: The key_spec of this CreateKeyRequestBody.
+        :type: str
+        """
+        self._key_spec = key_spec
+
+    @property
+    def key_usage(self):
+        """Gets the key_usage of this CreateKeyRequestBody.
+
+        密钥用途，对称密钥默认为“ENCRYPT_DECRYPT”，非对称密钥默认为“SIGN_VERIFY”，枚举如下： - ENCRYPT_DECRYPT - SIGN_VERIFY
+
+        :return: The key_usage of this CreateKeyRequestBody.
+        :rtype: str
+        """
+        return self._key_usage
+
+    @key_usage.setter
+    def key_usage(self, key_usage):
+        """Sets the key_usage of this CreateKeyRequestBody.
+
+        密钥用途，对称密钥默认为“ENCRYPT_DECRYPT”，非对称密钥默认为“SIGN_VERIFY”，枚举如下： - ENCRYPT_DECRYPT - SIGN_VERIFY
+
+        :param key_usage: The key_usage of this CreateKeyRequestBody.
+        :type: str
+        """
+        self._key_usage = key_usage
 
     @property
     def key_description(self):

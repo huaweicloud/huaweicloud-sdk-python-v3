@@ -40,8 +40,10 @@ class ListInstancesRequest:
         self._limit = None
         self.discriminator = None
 
-        self.offset = offset
-        self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def offset(self):

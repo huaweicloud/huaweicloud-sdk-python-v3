@@ -69,7 +69,7 @@ class DetectLiveByFileResponse(SdkResponse):
     def warning_list(self):
         """Gets the warning_list of this DetectLiveByFileResponse.
 
-        警告信息列表，WarningList结构见[WarningList](zh-cn_topic_0146322261.xml)。 调用失败时无此字段
+        警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。 调用失败时无此字段
 
         :return: The warning_list of this DetectLiveByFileResponse.
         :rtype: list[WarningList]
@@ -80,7 +80,7 @@ class DetectLiveByFileResponse(SdkResponse):
     def warning_list(self, warning_list):
         """Sets the warning_list of this DetectLiveByFileResponse.
 
-        警告信息列表，WarningList结构见[WarningList](zh-cn_topic_0146322261.xml)。 调用失败时无此字段
+        警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。 调用失败时无此字段
 
         :param warning_list: The warning_list of this DetectLiveByFileResponse.
         :type: list[WarningList]

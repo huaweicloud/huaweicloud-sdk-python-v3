@@ -25,6 +25,7 @@ class ListKeysRequestBody:
         'limit': 'str',
         'marker': 'str',
         'key_state': 'str',
+        'key_spec': 'str',
         'sequence': 'str'
     }
 
@@ -32,10 +33,11 @@ class ListKeysRequestBody:
         'limit': 'limit',
         'marker': 'marker',
         'key_state': 'key_state',
+        'key_spec': 'key_spec',
         'sequence': 'sequence'
     }
 
-    def __init__(self, limit=None, marker=None, key_state=None, sequence=None):
+    def __init__(self, limit=None, marker=None, key_state=None, key_spec=None, sequence=None):
         """ListKeysRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -43,6 +45,7 @@ class ListKeysRequestBody:
         self._limit = None
         self._marker = None
         self._key_state = None
+        self._key_spec = None
         self._sequence = None
         self.discriminator = None
 
@@ -52,6 +55,8 @@ class ListKeysRequestBody:
             self.marker = marker
         if key_state is not None:
             self.key_state = key_state
+        if key_spec is not None:
+            self.key_spec = key_spec
         if sequence is not None:
             self.sequence = sequence
 
@@ -120,6 +125,28 @@ class ListKeysRequestBody:
         :type: str
         """
         self._key_state = key_state
+
+    @property
+    def key_spec(self):
+        """Gets the key_spec of this ListKeysRequestBody.
+
+        密钥生成算法，默认为“AES_256”。查询所有（包含非对称）密钥需要指定参数“ALL”。  - AES_256  - SM4  - RSA_2048  - RSA_3072  - RSA_4096  - EC_P256  - EC_P384  - SM2  - ALL
+
+        :return: The key_spec of this ListKeysRequestBody.
+        :rtype: str
+        """
+        return self._key_spec
+
+    @key_spec.setter
+    def key_spec(self, key_spec):
+        """Sets the key_spec of this ListKeysRequestBody.
+
+        密钥生成算法，默认为“AES_256”。查询所有（包含非对称）密钥需要指定参数“ALL”。  - AES_256  - SM4  - RSA_2048  - RSA_3072  - RSA_4096  - EC_P256  - EC_P384  - SM2  - ALL
+
+        :param key_spec: The key_spec of this ListKeysRequestBody.
+        :type: str
+        """
+        self._key_spec = key_spec
 
     @property
     def sequence(self):

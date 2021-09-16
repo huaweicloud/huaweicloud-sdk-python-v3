@@ -22,45 +22,43 @@ class ShowDomainItemLocationDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'domains': 'list[DomainItemLocationDetails]'
+        'domain_item_location_details': 'DomainItemLocationDetails'
     }
 
     attribute_map = {
-        'domains': 'domains'
+        'domain_item_location_details': 'domain_item_location_details'
     }
 
-    def __init__(self, domains=None):
+    def __init__(self, domain_item_location_details=None):
         """ShowDomainItemLocationDetailsResponse - a model defined in huaweicloud sdk"""
         
         super(ShowDomainItemLocationDetailsResponse, self).__init__()
 
-        self._domains = None
+        self._domain_item_location_details = None
         self.discriminator = None
 
-        if domains is not None:
-            self.domains = domains
+        if domain_item_location_details is not None:
+            self.domain_item_location_details = domain_item_location_details
 
     @property
-    def domains(self):
-        """Gets the domains of this ShowDomainItemLocationDetailsResponse.
+    def domain_item_location_details(self):
+        """Gets the domain_item_location_details of this ShowDomainItemLocationDetailsResponse.
 
-        域名详情数据列表
 
-        :return: The domains of this ShowDomainItemLocationDetailsResponse.
-        :rtype: list[DomainItemLocationDetails]
+        :return: The domain_item_location_details of this ShowDomainItemLocationDetailsResponse.
+        :rtype: DomainItemLocationDetails
         """
-        return self._domains
+        return self._domain_item_location_details
 
-    @domains.setter
-    def domains(self, domains):
-        """Sets the domains of this ShowDomainItemLocationDetailsResponse.
+    @domain_item_location_details.setter
+    def domain_item_location_details(self, domain_item_location_details):
+        """Sets the domain_item_location_details of this ShowDomainItemLocationDetailsResponse.
 
-        域名详情数据列表
 
-        :param domains: The domains of this ShowDomainItemLocationDetailsResponse.
-        :type: list[DomainItemLocationDetails]
+        :param domain_item_location_details: The domain_item_location_details of this ShowDomainItemLocationDetailsResponse.
+        :type: DomainItemLocationDetails
         """
-        self._domains = domains
+        self._domain_item_location_details = domain_item_location_details
 
     def to_dict(self):
         """Returns the model properties as a dict"""

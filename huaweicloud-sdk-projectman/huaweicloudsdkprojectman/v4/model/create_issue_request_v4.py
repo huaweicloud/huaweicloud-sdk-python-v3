@@ -451,7 +451,7 @@ class CreateIssueRequestV4:
     def status_id(self):
         """Gets the status_id of this CreateIssueRequestV4.
 
-        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已解决 6,
+        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
         :return: The status_id of this CreateIssueRequestV4.
         :rtype: int
@@ -462,7 +462,7 @@ class CreateIssueRequestV4:
     def status_id(self, status_id):
         """Sets the status_id of this CreateIssueRequestV4.
 
-        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已解决 6,
+        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
         :param status_id: The status_id of this CreateIssueRequestV4.
         :type: int

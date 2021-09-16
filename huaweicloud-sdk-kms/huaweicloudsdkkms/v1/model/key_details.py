@@ -26,6 +26,8 @@ class KeyDetails:
         'domain_id': 'str',
         'key_alias': 'str',
         'realm': 'str',
+        'key_spec': 'str',
+        'key_usage': 'str',
         'key_description': 'str',
         'creation_date': 'str',
         'scheduled_deletion_date': 'str',
@@ -43,6 +45,8 @@ class KeyDetails:
         'domain_id': 'domain_id',
         'key_alias': 'key_alias',
         'realm': 'realm',
+        'key_spec': 'key_spec',
+        'key_usage': 'key_usage',
         'key_description': 'key_description',
         'creation_date': 'creation_date',
         'scheduled_deletion_date': 'scheduled_deletion_date',
@@ -55,7 +59,7 @@ class KeyDetails:
         'sys_enterprise_project_id': 'sys_enterprise_project_id'
     }
 
-    def __init__(self, key_id=None, domain_id=None, key_alias=None, realm=None, key_description=None, creation_date=None, scheduled_deletion_date=None, key_state=None, default_key_flag=None, key_type=None, expiration_time=None, origin=None, key_rotation_enabled=None, sys_enterprise_project_id=None):
+    def __init__(self, key_id=None, domain_id=None, key_alias=None, realm=None, key_spec=None, key_usage=None, key_description=None, creation_date=None, scheduled_deletion_date=None, key_state=None, default_key_flag=None, key_type=None, expiration_time=None, origin=None, key_rotation_enabled=None, sys_enterprise_project_id=None):
         """KeyDetails - a model defined in huaweicloud sdk"""
         
         
@@ -64,6 +68,8 @@ class KeyDetails:
         self._domain_id = None
         self._key_alias = None
         self._realm = None
+        self._key_spec = None
+        self._key_usage = None
         self._key_description = None
         self._creation_date = None
         self._scheduled_deletion_date = None
@@ -84,6 +90,10 @@ class KeyDetails:
             self.key_alias = key_alias
         if realm is not None:
             self.realm = realm
+        if key_spec is not None:
+            self.key_spec = key_spec
+        if key_usage is not None:
+            self.key_usage = key_usage
         if key_description is not None:
             self.key_description = key_description
         if creation_date is not None:
@@ -192,6 +202,50 @@ class KeyDetails:
         :type: str
         """
         self._realm = realm
+
+    @property
+    def key_spec(self):
+        """Gets the key_spec of this KeyDetails.
+
+        密钥生成算法。  - AES_256  - SM4  - RSA_2048  - RSA_3072  - RSA_4096  - EC_P256  - EC_P384  - SM2
+
+        :return: The key_spec of this KeyDetails.
+        :rtype: str
+        """
+        return self._key_spec
+
+    @key_spec.setter
+    def key_spec(self, key_spec):
+        """Sets the key_spec of this KeyDetails.
+
+        密钥生成算法。  - AES_256  - SM4  - RSA_2048  - RSA_3072  - RSA_4096  - EC_P256  - EC_P384  - SM2
+
+        :param key_spec: The key_spec of this KeyDetails.
+        :type: str
+        """
+        self._key_spec = key_spec
+
+    @property
+    def key_usage(self):
+        """Gets the key_usage of this KeyDetails.
+
+        密钥用途。 - ENCRYPT_DECRYPT - SIGN_VERIFY
+
+        :return: The key_usage of this KeyDetails.
+        :rtype: str
+        """
+        return self._key_usage
+
+    @key_usage.setter
+    def key_usage(self, key_usage):
+        """Sets the key_usage of this KeyDetails.
+
+        密钥用途。 - ENCRYPT_DECRYPT - SIGN_VERIFY
+
+        :param key_usage: The key_usage of this KeyDetails.
+        :type: str
+        """
+        self._key_usage = key_usage
 
     @property
     def key_description(self):

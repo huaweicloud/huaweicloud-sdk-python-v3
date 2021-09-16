@@ -47,7 +47,7 @@ class UpdateMembesRoleV4RequestBody:
     def role_id(self):
         """Gets the role_id of this UpdateMembesRoleV4RequestBody.
 
-        成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者,
+        成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
         :return: The role_id of this UpdateMembesRoleV4RequestBody.
         :rtype: int
@@ -58,7 +58,7 @@ class UpdateMembesRoleV4RequestBody:
     def role_id(self, role_id):
         """Sets the role_id of this UpdateMembesRoleV4RequestBody.
 
-        成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者,
+        成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
         :param role_id: The role_id of this UpdateMembesRoleV4RequestBody.
         :type: int

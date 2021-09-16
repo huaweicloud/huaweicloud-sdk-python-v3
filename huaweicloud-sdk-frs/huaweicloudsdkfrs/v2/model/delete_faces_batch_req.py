@@ -43,7 +43,7 @@ class DeleteFacesBatchReq:
     def filter(self):
         """Gets the filter of this DeleteFacesBatchReq.
 
-        过滤条件，参考[filter语法](zh-cn_topic_0130807048.xml)。
+        过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
 
         :return: The filter of this DeleteFacesBatchReq.
         :rtype: str
@@ -54,7 +54,7 @@ class DeleteFacesBatchReq:
     def filter(self, filter):
         """Sets the filter of this DeleteFacesBatchReq.
 
-        过滤条件，参考[filter语法](zh-cn_topic_0130807048.xml)。
+        过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
 
         :param filter: The filter of this DeleteFacesBatchReq.
         :type: str

@@ -33,7 +33,8 @@ class ShowIterationV4Response(SdkResponse):
         'opened_total': 'int',
         'progress': 'str',
         'total': 'int',
-        'updated_time': 'str'
+        'updated_time': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class ShowIterationV4Response(SdkResponse):
         'opened_total': 'opened_total',
         'progress': 'progress',
         'total': 'total',
-        'updated_time': 'updated_time'
+        'updated_time': 'updated_time',
+        'status': 'status'
     }
 
-    def __init__(self, begin_time=None, charts=None, closed_total=None, created_time=None, end_time=None, have_task=None, iteration_id=None, name=None, opened_total=None, progress=None, total=None, updated_time=None):
+    def __init__(self, begin_time=None, charts=None, closed_total=None, created_time=None, end_time=None, have_task=None, iteration_id=None, name=None, opened_total=None, progress=None, total=None, updated_time=None, status=None):
         """ShowIterationV4Response - a model defined in huaweicloud sdk"""
         
         super(ShowIterationV4Response, self).__init__()
@@ -68,6 +70,7 @@ class ShowIterationV4Response(SdkResponse):
         self._progress = None
         self._total = None
         self._updated_time = None
+        self._status = None
         self.discriminator = None
 
         if begin_time is not None:
@@ -94,6 +97,8 @@ class ShowIterationV4Response(SdkResponse):
             self.total = total
         if updated_time is not None:
             self.updated_time = updated_time
+        if status is not None:
+            self.status = status
 
     @property
     def begin_time(self):
@@ -358,6 +363,28 @@ class ShowIterationV4Response(SdkResponse):
         :type: str
         """
         self._updated_time = updated_time
+
+    @property
+    def status(self):
+        """Gets the status of this ShowIterationV4Response.
+
+        迭代的状态,0 未开始，1 进行中，2 结束
+
+        :return: The status of this ShowIterationV4Response.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ShowIterationV4Response.
+
+        迭代的状态,0 未开始，1 进行中，2 结束
+
+        :param status: The status of this ShowIterationV4Response.
+        :type: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

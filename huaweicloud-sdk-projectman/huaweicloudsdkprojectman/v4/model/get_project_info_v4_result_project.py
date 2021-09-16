@@ -28,7 +28,7 @@ class GetProjectInfoV4ResultProject:
         'created_on': 'float',
         'updated_on': 'float',
         'project_type': 'str',
-        'archive': 'bool',
+        'archive': 'int',
         'enterprise_id': 'str',
         'project_code': 'str',
         'creator': 'GetProjectInfoV4ResultProjectCreator'
@@ -224,7 +224,7 @@ class GetProjectInfoV4ResultProject:
         是否归档
 
         :return: The archive of this GetProjectInfoV4ResultProject.
-        :rtype: bool
+        :rtype: int
         """
         return self._archive
 
@@ -235,7 +235,7 @@ class GetProjectInfoV4ResultProject:
         是否归档
 
         :param archive: The archive of this GetProjectInfoV4ResultProject.
-        :type: bool
+        :type: int
         """
         self._archive = archive
 

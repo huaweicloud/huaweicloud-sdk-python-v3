@@ -508,7 +508,7 @@ class KmsClient(Client):
     def create_key(self, request):
         """创建密钥
 
-        - 功能介绍：创建用户主密钥，可用来加密数据密钥。  - 说明： 别名“/default”为服务默认主密钥的后缀名，由服务自动创建。因此用户创建的主密钥别名不能与服务默认主密钥的别名相同，即后缀名不能为“/default”。对于开通企业项目的用户，服务默认主密钥属于且只能属于默认企业项目下，且不支持企业资源的迁入迁出。服务默认主密钥为用户提供基础的云上加密功能，满足合规要求。因此，在企业多项目下，其他非默认企业项目下的用户均可使用该密钥。若客户有企业管理资源诉求，请自行创建和使用密钥。
+        创建用户主密钥，用户主密钥可以为对称密钥或非对称密钥。 - 对称密钥为长度为256位AES密钥，可用于小量数据的加密或者用于加密数据密钥。 - 非对称密钥可以为RSA密钥对或者ECC密钥对，可用于数字签名及验签。
 
         :param CreateKeyRequest request
         :return: CreateKeyResponse
@@ -518,7 +518,7 @@ class KmsClient(Client):
     def create_key_with_http_info(self, request):
         """创建密钥
 
-        - 功能介绍：创建用户主密钥，可用来加密数据密钥。  - 说明： 别名“/default”为服务默认主密钥的后缀名，由服务自动创建。因此用户创建的主密钥别名不能与服务默认主密钥的别名相同，即后缀名不能为“/default”。对于开通企业项目的用户，服务默认主密钥属于且只能属于默认企业项目下，且不支持企业资源的迁入迁出。服务默认主密钥为用户提供基础的云上加密功能，满足合规要求。因此，在企业多项目下，其他非默认企业项目下的用户均可使用该密钥。若客户有企业管理资源诉求，请自行创建和使用密钥。
+        创建用户主密钥，用户主密钥可以为对称密钥或非对称密钥。 - 对称密钥为长度为256位AES密钥，可用于小量数据的加密或者用于加密数据密钥。 - 非对称密钥可以为RSA密钥对或者ECC密钥对，可用于数字签名及验签。
 
         :param CreateKeyRequest request
         :return: CreateKeyResponse
@@ -705,7 +705,7 @@ class KmsClient(Client):
     def create_random(self, request):
         """创建随机数
 
-        - 功能介绍：   生成8~8192bit范围内的随机数。   生成512bit的随机数。
+        - 功能介绍：   生成8~8192bit范围内的随机数。
 
         :param CreateRandomRequest request
         :return: CreateRandomResponse
@@ -715,7 +715,7 @@ class KmsClient(Client):
     def create_random_with_http_info(self, request):
         """创建随机数
 
-        - 功能介绍：   生成8~8192bit范围内的随机数。   生成512bit的随机数。
+        - 功能介绍：   生成8~8192bit范围内的随机数。
 
         :param CreateRandomRequest request
         :return: CreateRandomResponse
@@ -2646,6 +2646,71 @@ class KmsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_public_key(self, request):
+        """查询公钥信息
+
+        - 查询用户指定非对称密钥的公钥信息。
+
+        :param ShowPublicKeyRequest request
+        :return: ShowPublicKeyResponse
+        """
+        return self.show_public_key_with_http_info(request)
+
+    def show_public_key_with_http_info(self, request):
+        """查询公钥信息
+
+        - 查询用户指定非对称密钥的公钥信息。
+
+        :param ShowPublicKeyRequest request
+        :return: ShowPublicKeyResponse
+        """
+
+        all_params = ['version_id', 'get_public_key_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/{version_id}/{project_id}/kms/get-publickey',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowPublicKeyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_secret(self, request):
         """查询凭据
 
@@ -2894,6 +2959,71 @@ class KmsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowUserQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def sign(self, request):
+        """签名数据
+
+        - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行数字签名。
+
+        :param SignRequest request
+        :return: SignResponse
+        """
+        return self.sign_with_http_info(request)
+
+    def sign_with_http_info(self, request):
+        """签名数据
+
+        - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行数字签名。
+
+        :param SignRequest request
+        :return: SignResponse
+        """
+
+        all_params = ['version_id', 'sign_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/{version_id}/{project_id}/kms/sign',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SignResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3221,6 +3351,71 @@ class KmsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateSecretStageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def validate_signature(self, request):
+        """验证签名
+
+        - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行数字签名。
+
+        :param ValidateSignatureRequest request
+        :return: ValidateSignatureResponse
+        """
+        return self.validate_signature_with_http_info(request)
+
+    def validate_signature_with_http_info(self, request):
+        """验证签名
+
+        - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行数字签名。
+
+        :param ValidateSignatureRequest request
+        :return: ValidateSignatureResponse
+        """
+
+        all_params = ['version_id', 'verify_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/{version_id}/{project_id}/kms/verify',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ValidateSignatureResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

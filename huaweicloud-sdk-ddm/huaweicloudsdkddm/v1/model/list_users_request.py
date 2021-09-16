@@ -44,8 +44,10 @@ class ListUsersRequest:
         self.discriminator = None
 
         self.instance_id = instance_id
-        self.offset = offset
-        self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def instance_id(self):

@@ -48,7 +48,7 @@ class BatchAddMemberRequestV4:
     def role_id(self):
         """Gets the role_id of this BatchAddMemberRequestV4.
 
-        用户在项目中的角色ID -1, 3, 4, 5, 6, 7 , 8
+        成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
         :return: The role_id of this BatchAddMemberRequestV4.
         :rtype: int
@@ -59,7 +59,7 @@ class BatchAddMemberRequestV4:
     def role_id(self, role_id):
         """Sets the role_id of this BatchAddMemberRequestV4.
 
-        用户在项目中的角色ID -1, 3, 4, 5, 6, 7 , 8
+        成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
         :param role_id: The role_id of this BatchAddMemberRequestV4.
         :type: int

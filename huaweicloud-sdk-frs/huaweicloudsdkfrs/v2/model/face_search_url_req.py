@@ -68,7 +68,7 @@ class FaceSearchUrlReq:
     def filter(self):
         """Gets the filter of this FaceSearchUrlReq.
 
-        过滤条件，参考[filter语法](zh-cn_topic_0130807048.xml)。
+        过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
 
         :return: The filter of this FaceSearchUrlReq.
         :rtype: str
@@ -79,7 +79,7 @@ class FaceSearchUrlReq:
     def filter(self, filter):
         """Sets the filter of this FaceSearchUrlReq.
 
-        过滤条件，参考[filter语法](zh-cn_topic_0130807048.xml)。
+        过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
 
         :param filter: The filter of this FaceSearchUrlReq.
         :type: str
@@ -112,7 +112,7 @@ class FaceSearchUrlReq:
     def image_url(self):
         """Gets the image_url of this FaceSearchUrlReq.
 
-        图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](zh-cn_topic_0107696818.xml)。
+        图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。
 
         :return: The image_url of this FaceSearchUrlReq.
         :rtype: str
@@ -123,7 +123,7 @@ class FaceSearchUrlReq:
     def image_url(self, image_url):
         """Sets the image_url of this FaceSearchUrlReq.
 
-        图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](zh-cn_topic_0107696818.xml)。
+        图片的URL路径，目前仅支持华为云上OBS的URL，且人脸识别服务有权限读取该OBS桶的数据。 开通读取权限的操作请参见[服务授权](https://support.huaweicloud.com/api-face/face_02_0006.html)。
 
         :param image_url: The image_url of this FaceSearchUrlReq.
         :type: str
@@ -178,7 +178,7 @@ class FaceSearchUrlReq:
     def sort(self):
         """Gets the sort of this FaceSearchUrlReq.
 
-        支持字段排序，参考[sort语法](zh-cn_topic_0130807047.xml)。
+        支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
 
         :return: The sort of this FaceSearchUrlReq.
         :rtype: list[dict(str, str)]
@@ -189,7 +189,7 @@ class FaceSearchUrlReq:
     def sort(self, sort):
         """Sets the sort of this FaceSearchUrlReq.
 
-        支持字段排序，参考[sort语法](zh-cn_topic_0130807047.xml)。
+        支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
 
         :param sort: The sort of this FaceSearchUrlReq.
         :type: list[dict(str, str)]

@@ -80,7 +80,8 @@ class GlanceShowImageResponse(SdkResponse):
         'max_ram': 'str',
         'image_location': 'str',
         'is_config_init': 'str',
-        'account_code': 'str'
+        'account_code': 'str',
+        'support_amd': 'str'
     }
 
     attribute_map = {
@@ -142,10 +143,11 @@ class GlanceShowImageResponse(SdkResponse):
         'max_ram': 'max_ram',
         'image_location': '__image_location',
         'is_config_init': '__is_config_init',
-        'account_code': '__account_code'
+        'account_code': '__account_code',
+        'support_amd': '__support_amd'
     }
 
-    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, checksum=None, container_format=None, created_at=None, disk_format=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, enterprise_project_id=None, hw_firmware_type=None, support_arm=None, is_offshelved=None, lazyloading=None, os_feature_list=None, root_origin=None, sequence_num=None, support_agent_list=None, system__cmkid=None, active_at=None, hw_vif_multiqueue_enabled=None, max_ram=None, image_location=None, is_config_init=None, account_code=None):
+    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, checksum=None, container_format=None, created_at=None, disk_format=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, enterprise_project_id=None, hw_firmware_type=None, support_arm=None, is_offshelved=None, lazyloading=None, os_feature_list=None, root_origin=None, sequence_num=None, support_agent_list=None, system__cmkid=None, active_at=None, hw_vif_multiqueue_enabled=None, max_ram=None, image_location=None, is_config_init=None, account_code=None, support_amd=None):
         """GlanceShowImageResponse - a model defined in huaweicloud sdk"""
         
         super(GlanceShowImageResponse, self).__init__()
@@ -209,6 +211,7 @@ class GlanceShowImageResponse(SdkResponse):
         self._image_location = None
         self._is_config_init = None
         self._account_code = None
+        self._support_amd = None
         self.discriminator = None
 
         if backup_id is not None:
@@ -329,6 +332,8 @@ class GlanceShowImageResponse(SdkResponse):
             self.is_config_init = is_config_init
         if account_code is not None:
             self.account_code = account_code
+        if support_amd is not None:
+            self.support_amd = support_amd
 
     @property
     def backup_id(self):
@@ -1627,6 +1632,28 @@ class GlanceShowImageResponse(SdkResponse):
         :type: str
         """
         self._account_code = account_code
+
+    @property
+    def support_amd(self):
+        """Gets the support_amd of this GlanceShowImageResponse.
+
+        是否是AMD架构类型的镜像。取值为“true”或者“false”。
+
+        :return: The support_amd of this GlanceShowImageResponse.
+        :rtype: str
+        """
+        return self._support_amd
+
+    @support_amd.setter
+    def support_amd(self, support_amd):
+        """Sets the support_amd of this GlanceShowImageResponse.
+
+        是否是AMD架构类型的镜像。取值为“true”或者“false”。
+
+        :param support_amd: The support_amd of this GlanceShowImageResponse.
+        :type: str
+        """
+        self._support_amd = support_amd
 
     def to_dict(self):
         """Returns the model properties as a dict"""

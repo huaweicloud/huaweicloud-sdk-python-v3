@@ -121,6 +121,8 @@ from huaweicloudsdkkms.v1.model.show_key_rotation_status_request import ShowKeyR
 from huaweicloudsdkkms.v1.model.show_key_rotation_status_response import ShowKeyRotationStatusResponse
 from huaweicloudsdkkms.v1.model.show_kms_tags_request import ShowKmsTagsRequest
 from huaweicloudsdkkms.v1.model.show_kms_tags_response import ShowKmsTagsResponse
+from huaweicloudsdkkms.v1.model.show_public_key_request import ShowPublicKeyRequest
+from huaweicloudsdkkms.v1.model.show_public_key_response import ShowPublicKeyResponse
 from huaweicloudsdkkms.v1.model.show_secret_request import ShowSecretRequest
 from huaweicloudsdkkms.v1.model.show_secret_response import ShowSecretResponse
 from huaweicloudsdkkms.v1.model.show_secret_version_request import ShowSecretVersionRequest
@@ -133,6 +135,9 @@ from huaweicloudsdkkms.v1.model.show_version_request import ShowVersionRequest
 from huaweicloudsdkkms.v1.model.show_version_response import ShowVersionResponse
 from huaweicloudsdkkms.v1.model.show_versions_request import ShowVersionsRequest
 from huaweicloudsdkkms.v1.model.show_versions_response import ShowVersionsResponse
+from huaweicloudsdkkms.v1.model.sign_request import SignRequest
+from huaweicloudsdkkms.v1.model.sign_request_body import SignRequestBody
+from huaweicloudsdkkms.v1.model.sign_response import SignResponse
 from huaweicloudsdkkms.v1.model.stage import Stage
 from huaweicloudsdkkms.v1.model.tag import Tag
 from huaweicloudsdkkms.v1.model.tag_item import TagItem
@@ -151,6 +156,9 @@ from huaweicloudsdkkms.v1.model.update_secret_response import UpdateSecretRespon
 from huaweicloudsdkkms.v1.model.update_secret_stage_request import UpdateSecretStageRequest
 from huaweicloudsdkkms.v1.model.update_secret_stage_request_body import UpdateSecretStageRequestBody
 from huaweicloudsdkkms.v1.model.update_secret_stage_response import UpdateSecretStageResponse
+from huaweicloudsdkkms.v1.model.validate_signature_request import ValidateSignatureRequest
+from huaweicloudsdkkms.v1.model.validate_signature_response import ValidateSignatureResponse
+from huaweicloudsdkkms.v1.model.verify_request_body import VerifyRequestBody
 from huaweicloudsdkkms.v1.model.version import Version
 from huaweicloudsdkkms.v1.model.version_metadata import VersionMetadata
 

@@ -79,7 +79,8 @@ class ImageInfo:
         'root_origin': 'str',
         'sequence_num': 'str',
         'active_at': 'str',
-        'support_agent_list': 'str'
+        'support_agent_list': 'str',
+        'support_amd': 'str'
     }
 
     attribute_map = {
@@ -140,10 +141,11 @@ class ImageInfo:
         'root_origin': '__root_origin',
         'sequence_num': '__sequence_num',
         'active_at': 'active_at',
-        'support_agent_list': '__support_agent_list'
+        'support_agent_list': '__support_agent_list',
+        'support_amd': '__support_amd'
     }
 
-    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None, is_offshelved=None, lazyloading=None, root_origin=None, sequence_num=None, active_at=None, support_agent_list=None):
+    def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None, is_offshelved=None, lazyloading=None, root_origin=None, sequence_num=None, active_at=None, support_agent_list=None, support_amd=None):
         """ImageInfo - a model defined in huaweicloud sdk"""
         
         
@@ -206,6 +208,7 @@ class ImageInfo:
         self._sequence_num = None
         self._active_at = None
         self._support_agent_list = None
+        self._support_amd = None
         self.discriminator = None
 
         self.backup_id = backup_id
@@ -290,6 +293,8 @@ class ImageInfo:
         self.sequence_num = sequence_num
         self.active_at = active_at
         self.support_agent_list = support_agent_list
+        if support_amd is not None:
+            self.support_amd = support_amd
 
     @property
     def backup_id(self):
@@ -1566,6 +1571,28 @@ class ImageInfo:
         :type: str
         """
         self._support_agent_list = support_agent_list
+
+    @property
+    def support_amd(self):
+        """Gets the support_amd of this ImageInfo.
+
+        是否是AMD架构类型的镜像。取值为“true”或者“false”。
+
+        :return: The support_amd of this ImageInfo.
+        :rtype: str
+        """
+        return self._support_amd
+
+    @support_amd.setter
+    def support_amd(self, support_amd):
+        """Sets the support_amd of this ImageInfo.
+
+        是否是AMD架构类型的镜像。取值为“true”或者“false”。
+
+        :param support_amd: The support_amd of this ImageInfo.
+        :type: str
+        """
+        self._support_amd = support_amd
 
     def to_dict(self):
         """Returns the model properties as a dict"""

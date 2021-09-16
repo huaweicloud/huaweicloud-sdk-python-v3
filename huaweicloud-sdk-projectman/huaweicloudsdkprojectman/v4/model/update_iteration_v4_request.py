@@ -24,7 +24,7 @@ class UpdateIterationV4Request:
     openapi_types = {
         'project_id': 'str',
         'iteration_id': 'int',
-        'body': 'CreateIterationRequestV4'
+        'body': 'UpdateIterationRequestV4'
     }
 
     attribute_map = {
@@ -98,7 +98,7 @@ class UpdateIterationV4Request:
 
 
         :return: The body of this UpdateIterationV4Request.
-        :rtype: CreateIterationRequestV4
+        :rtype: UpdateIterationRequestV4
         """
         return self._body
 
@@ -108,7 +108,7 @@ class UpdateIterationV4Request:
 
 
         :param body: The body of this UpdateIterationV4Request.
-        :type: CreateIterationRequestV4
+        :type: UpdateIterationRequestV4
         """
         self._body = body
 

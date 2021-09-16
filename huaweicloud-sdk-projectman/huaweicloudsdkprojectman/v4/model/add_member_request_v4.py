@@ -22,31 +22,58 @@ class AddMemberRequestV4:
     sensitive_list = []
 
     openapi_types = {
+        'domain_name': 'str',
         'domain_id': 'str',
         'role_id': 'int',
         'user_id': 'str'
     }
 
     attribute_map = {
+        'domain_name': 'domain_name',
         'domain_id': 'domain_id',
         'role_id': 'role_id',
         'user_id': 'user_id'
     }
 
-    def __init__(self, domain_id=None, role_id=None, user_id=None):
+    def __init__(self, domain_name=None, domain_id=None, role_id=None, user_id=None):
         """AddMemberRequestV4 - a model defined in huaweicloud sdk"""
         
         
 
+        self._domain_name = None
         self._domain_id = None
         self._role_id = None
         self._user_id = None
         self.discriminator = None
 
+        if domain_name is not None:
+            self.domain_name = domain_name
         self.domain_id = domain_id
         if role_id is not None:
             self.role_id = role_id
         self.user_id = user_id
+
+    @property
+    def domain_name(self):
+        """Gets the domain_name of this AddMemberRequestV4.
+
+        租户名称（跨租户添加用户时，填写正确的租户名称，可将未授权的租户主动授权，将用户添加为项目成员）
+
+        :return: The domain_name of this AddMemberRequestV4.
+        :rtype: str
+        """
+        return self._domain_name
+
+    @domain_name.setter
+    def domain_name(self, domain_name):
+        """Sets the domain_name of this AddMemberRequestV4.
+
+        租户名称（跨租户添加用户时，填写正确的租户名称，可将未授权的租户主动授权，将用户添加为项目成员）
+
+        :param domain_name: The domain_name of this AddMemberRequestV4.
+        :type: str
+        """
+        self._domain_name = domain_name
 
     @property
     def domain_id(self):
@@ -74,7 +101,7 @@ class AddMemberRequestV4:
     def role_id(self):
         """Gets the role_id of this AddMemberRequestV4.
 
-        用户在项目中的角色ID -1, 3, 4, 5, 6, 7 , 8
+        '用户在项目中的角色ID' 成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
         :return: The role_id of this AddMemberRequestV4.
         :rtype: int
@@ -85,7 +112,7 @@ class AddMemberRequestV4:
     def role_id(self, role_id):
         """Sets the role_id of this AddMemberRequestV4.
 
-        用户在项目中的角色ID -1, 3, 4, 5, 6, 7 , 8
+        '用户在项目中的角色ID' 成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
         :param role_id: The role_id of this AddMemberRequestV4.
         :type: int

@@ -24,22 +24,28 @@ class DecryptDataRequestBody:
     openapi_types = {
         'cipher_text': 'str',
         'encryption_context': 'object',
+        'encryption_algorithm': 'str',
+        'key_id': 'str',
         'sequence': 'str'
     }
 
     attribute_map = {
         'cipher_text': 'cipher_text',
         'encryption_context': 'encryption_context',
+        'encryption_algorithm': 'encryption_algorithm',
+        'key_id': 'key_id',
         'sequence': 'sequence'
     }
 
-    def __init__(self, cipher_text=None, encryption_context=None, sequence=None):
+    def __init__(self, cipher_text=None, encryption_context=None, encryption_algorithm=None, key_id=None, sequence=None):
         """DecryptDataRequestBody - a model defined in huaweicloud sdk"""
         
         
 
         self._cipher_text = None
         self._encryption_context = None
+        self._encryption_algorithm = None
+        self._key_id = None
         self._sequence = None
         self.discriminator = None
 
@@ -47,6 +53,10 @@ class DecryptDataRequestBody:
             self.cipher_text = cipher_text
         if encryption_context is not None:
             self.encryption_context = encryption_context
+        if encryption_algorithm is not None:
+            self.encryption_algorithm = encryption_algorithm
+        if key_id is not None:
+            self.key_id = key_id
         if sequence is not None:
             self.sequence = sequence
 
@@ -93,6 +103,50 @@ class DecryptDataRequestBody:
         :type: object
         """
         self._encryption_context = encryption_context
+
+    @property
+    def encryption_algorithm(self):
+        """Gets the encryption_algorithm of this DecryptDataRequestBody.
+
+        数据加密算法，仅使用非对称密钥需要指定该参数，默认值为“SYMMETRIC_DEFAULT”，合法枚举值如下：  - SYMMETRIC_DEFAULT  - RSAES_OAEP_SHA_256  - RSAES_OAEP_SHA_1  - SM2_ENCRYPT
+
+        :return: The encryption_algorithm of this DecryptDataRequestBody.
+        :rtype: str
+        """
+        return self._encryption_algorithm
+
+    @encryption_algorithm.setter
+    def encryption_algorithm(self, encryption_algorithm):
+        """Sets the encryption_algorithm of this DecryptDataRequestBody.
+
+        数据加密算法，仅使用非对称密钥需要指定该参数，默认值为“SYMMETRIC_DEFAULT”，合法枚举值如下：  - SYMMETRIC_DEFAULT  - RSAES_OAEP_SHA_256  - RSAES_OAEP_SHA_1  - SM2_ENCRYPT
+
+        :param encryption_algorithm: The encryption_algorithm of this DecryptDataRequestBody.
+        :type: str
+        """
+        self._encryption_algorithm = encryption_algorithm
+
+    @property
+    def key_id(self):
+        """Gets the key_id of this DecryptDataRequestBody.
+
+        密钥ID，36字节，满足正则匹配“^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$”。仅当密文使用非对称密钥加密时才需要此参数。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+
+        :return: The key_id of this DecryptDataRequestBody.
+        :rtype: str
+        """
+        return self._key_id
+
+    @key_id.setter
+    def key_id(self, key_id):
+        """Sets the key_id of this DecryptDataRequestBody.
+
+        密钥ID，36字节，满足正则匹配“^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$”。仅当密文使用非对称密钥加密时才需要此参数。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+
+        :param key_id: The key_id of this DecryptDataRequestBody.
+        :type: str
+        """
+        self._key_id = key_id
 
     @property
     def sequence(self):

@@ -98,7 +98,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
     def faces(self):
         """Gets the faces of this ShowFacesByFaceIdResponse.
 
-        人脸库当中的人脸结构，详见[FaceSetFace](zh-cn_topic_0106912070.xml)。 调用失败时无此字段。
+        人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/api-face/face_02_0018.html)。 调用失败时无此字段。
 
         :return: The faces of this ShowFacesByFaceIdResponse.
         :rtype: list[FaceSetFace]
@@ -109,7 +109,7 @@ class ShowFacesByFaceIdResponse(SdkResponse):
     def faces(self, faces):
         """Sets the faces of this ShowFacesByFaceIdResponse.
 
-        人脸库当中的人脸结构，详见[FaceSetFace](zh-cn_topic_0106912070.xml)。 调用失败时无此字段。
+        人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/api-face/face_02_0018.html)。 调用失败时无此字段。
 
         :param faces: The faces of this ShowFacesByFaceIdResponse.
         :type: list[FaceSetFace]

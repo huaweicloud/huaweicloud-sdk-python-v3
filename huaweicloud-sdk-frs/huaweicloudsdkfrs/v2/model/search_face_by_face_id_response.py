@@ -44,7 +44,7 @@ class SearchFaceByFaceIdResponse(SdkResponse):
     def faces(self):
         """Gets the faces of this SearchFaceByFaceIdResponse.
 
-        查找的人脸集合，详见[SearchFace](zh-cn_topic_0106912071.xml)。 调用失败时无此字段。
+        查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。 调用失败时无此字段。
 
         :return: The faces of this SearchFaceByFaceIdResponse.
         :rtype: list[SearchFace]
@@ -55,7 +55,7 @@ class SearchFaceByFaceIdResponse(SdkResponse):
     def faces(self, faces):
         """Sets the faces of this SearchFaceByFaceIdResponse.
 
-        查找的人脸集合，详见[SearchFace](zh-cn_topic_0106912071.xml)。 调用失败时无此字段。
+        查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。 调用失败时无此字段。
 
         :param faces: The faces of this SearchFaceByFaceIdResponse.
         :type: list[SearchFace]

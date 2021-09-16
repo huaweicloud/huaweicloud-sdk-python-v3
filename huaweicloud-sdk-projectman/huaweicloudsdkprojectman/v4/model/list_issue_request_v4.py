@@ -378,7 +378,7 @@ class ListIssueRequestV4:
     def status_ids(self):
         """Gets the status_ids of this ListIssueRequestV4.
 
-        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已解决 6,
+        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
         :return: The status_ids of this ListIssueRequestV4.
         :rtype: list[int]
@@ -389,7 +389,7 @@ class ListIssueRequestV4:
     def status_ids(self, status_ids):
         """Sets the status_ids of this ListIssueRequestV4.
 
-        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已解决 6,
+        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
         :param status_ids: The status_ids of this ListIssueRequestV4.
         :type: list[int]

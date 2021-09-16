@@ -134,7 +134,7 @@ class SearchFaceByFileRequestBody:
     def sort(self):
         """Gets the sort of this SearchFaceByFileRequestBody.
 
-        支持字段排序，参考[sort语法](zh-cn_topic_0130807047.xml)。
+        支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
 
         :return: The sort of this SearchFaceByFileRequestBody.
         :rtype: str
@@ -145,7 +145,7 @@ class SearchFaceByFileRequestBody:
     def sort(self, sort):
         """Sets the sort of this SearchFaceByFileRequestBody.
 
-        支持字段排序，参考[sort语法](zh-cn_topic_0130807047.xml)。
+        支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
 
         :param sort: The sort of this SearchFaceByFileRequestBody.
         :type: str
@@ -156,7 +156,7 @@ class SearchFaceByFileRequestBody:
     def filter(self):
         """Gets the filter of this SearchFaceByFileRequestBody.
 
-        过滤条件，参考[filter语法](zh-cn_topic_0130807048.xml)。
+        过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
 
         :return: The filter of this SearchFaceByFileRequestBody.
         :rtype: str
@@ -167,7 +167,7 @@ class SearchFaceByFileRequestBody:
     def filter(self, filter):
         """Sets the filter of this SearchFaceByFileRequestBody.
 
-        过滤条件，参考[filter语法](zh-cn_topic_0130807048.xml)。
+        过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
 
         :param filter: The filter of this SearchFaceByFileRequestBody.
         :type: str

@@ -68,7 +68,7 @@ class FaceSearchBase64Req:
     def filter(self):
         """Gets the filter of this FaceSearchBase64Req.
 
-        过滤条件，参考[filter语法](zh-cn_topic_0130807048.xml)。
+        过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
 
         :return: The filter of this FaceSearchBase64Req.
         :rtype: str
@@ -79,7 +79,7 @@ class FaceSearchBase64Req:
     def filter(self, filter):
         """Sets the filter of this FaceSearchBase64Req.
 
-        过滤条件，参考[filter语法](zh-cn_topic_0130807048.xml)。
+        过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。
 
         :param filter: The filter of this FaceSearchBase64Req.
         :type: str
@@ -178,7 +178,7 @@ class FaceSearchBase64Req:
     def sort(self):
         """Gets the sort of this FaceSearchBase64Req.
 
-        支持字段排序，参考[sort语法](zh-cn_topic_0130807047.xml)。
+        支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
 
         :return: The sort of this FaceSearchBase64Req.
         :rtype: list[dict(str, str)]
@@ -189,7 +189,7 @@ class FaceSearchBase64Req:
     def sort(self, sort):
         """Sets the sort of this FaceSearchBase64Req.
 
-        支持字段排序，参考[sort语法](zh-cn_topic_0130807047.xml)。
+        支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。
 
         :param sort: The sort of this FaceSearchBase64Req.
         :type: list[dict(str, str)]
