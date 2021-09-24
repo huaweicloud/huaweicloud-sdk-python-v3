@@ -35,7 +35,10 @@ class ShowReposTagResp:
         'is_trusted': 'bool',
         'created': 'str',
         'updated': 'str',
-        'deleted': 'str'
+        'deleted': 'str',
+        'domain_id': 'str',
+        'scanned': 'bool',
+        'tag_type': 'int'
     }
 
     attribute_map = {
@@ -52,10 +55,13 @@ class ShowReposTagResp:
         'is_trusted': 'is_trusted',
         'created': 'created',
         'updated': 'updated',
-        'deleted': 'deleted'
+        'deleted': 'deleted',
+        'domain_id': 'domain_id',
+        'scanned': 'scanned',
+        'tag_type': 'tag_type'
     }
 
-    def __init__(self, id=None, repo_id=None, tag=None, image_id=None, manifest=None, digest=None, schema=None, path=None, internal_path=None, size=None, is_trusted=None, created=None, updated=None, deleted=None):
+    def __init__(self, id=None, repo_id=None, tag=None, image_id=None, manifest=None, digest=None, schema=None, path=None, internal_path=None, size=None, is_trusted=None, created=None, updated=None, deleted=None, domain_id=None, scanned=None, tag_type=None):
         """ShowReposTagResp - a model defined in huaweicloud sdk"""
         
         
@@ -74,6 +80,9 @@ class ShowReposTagResp:
         self._created = None
         self._updated = None
         self._deleted = None
+        self._domain_id = None
+        self._scanned = None
+        self._tag_type = None
         self.discriminator = None
 
         self.id = id
@@ -90,6 +99,9 @@ class ShowReposTagResp:
         self.created = created
         self.updated = updated
         self.deleted = deleted
+        self.domain_id = domain_id
+        self.scanned = scanned
+        self.tag_type = tag_type
 
     @property
     def id(self):
@@ -398,6 +410,72 @@ class ShowReposTagResp:
         :type: str
         """
         self._deleted = deleted
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this ShowReposTagResp.
+
+        帐号ID
+
+        :return: The domain_id of this ShowReposTagResp.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this ShowReposTagResp.
+
+        帐号ID
+
+        :param domain_id: The domain_id of this ShowReposTagResp.
+        :type: str
+        """
+        self._domain_id = domain_id
+
+    @property
+    def scanned(self):
+        """Gets the scanned of this ShowReposTagResp.
+
+        镜像是否被扫描过
+
+        :return: The scanned of this ShowReposTagResp.
+        :rtype: bool
+        """
+        return self._scanned
+
+    @scanned.setter
+    def scanned(self, scanned):
+        """Sets the scanned of this ShowReposTagResp.
+
+        镜像是否被扫描过
+
+        :param scanned: The scanned of this ShowReposTagResp.
+        :type: bool
+        """
+        self._scanned = scanned
+
+    @property
+    def tag_type(self):
+        """Gets the tag_type of this ShowReposTagResp.
+
+        0：manifest类型；1：manifest list类型
+
+        :return: The tag_type of this ShowReposTagResp.
+        :rtype: int
+        """
+        return self._tag_type
+
+    @tag_type.setter
+    def tag_type(self, tag_type):
+        """Sets the tag_type of this ShowReposTagResp.
+
+        0：manifest类型；1：manifest list类型
+
+        :param tag_type: The tag_type of this ShowReposTagResp.
+        :type: int
+        """
+        self._tag_type = tag_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

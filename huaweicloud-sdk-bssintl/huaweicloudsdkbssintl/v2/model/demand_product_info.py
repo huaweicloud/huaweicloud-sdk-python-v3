@@ -31,7 +31,7 @@ class DemandProductInfo:
         'resource_size': 'int',
         'size_measure_id': 'int',
         'usage_factor': 'str',
-        'usage_value': 'float',
+        'usage_value': 'decimal.Decimal',
         'usage_measure_id': 'int',
         'subscription_num': 'int'
     }
@@ -291,7 +291,7 @@ class DemandProductInfo:
         |参数名称：使用量值| |参数约束及描述：例如按小时询价，使用量值为1，使用量单位为小时|
 
         :return: The usage_value of this DemandProductInfo.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._usage_value
 
@@ -302,7 +302,7 @@ class DemandProductInfo:
         |参数名称：使用量值| |参数约束及描述：例如按小时询价，使用量值为1，使用量单位为小时|
 
         :param usage_value: The usage_value of this DemandProductInfo.
-        :type: float
+        :type: decimal.Decimal
         """
         self._usage_value = usage_value
 

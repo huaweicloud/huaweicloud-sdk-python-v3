@@ -51,7 +51,7 @@ class CceClient(Client):
     def add_node(self, request):
         """纳管节点
 
-        该API用于在指定集群下纳管节点。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于在指定集群下纳管节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param AddNodeRequest request
         :return: AddNodeResponse
@@ -61,7 +61,7 @@ class CceClient(Client):
     def add_node_with_http_info(self, request):
         """纳管节点
 
-        该API用于在指定集群下纳管节点。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于在指定集群下纳管节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param AddNodeRequest request
         :return: AddNodeResponse
@@ -437,7 +437,7 @@ class CceClient(Client):
     def create_node(self, request):
         """创建节点
 
-        该API用于在指定集群下创建节点。  > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。  > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于在指定集群下创建节点。 > - 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param CreateNodeRequest request
         :return: CreateNodeResponse
@@ -447,7 +447,7 @@ class CceClient(Client):
     def create_node_with_http_info(self, request):
         """创建节点
 
-        该API用于在指定集群下创建节点。  > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。  > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于在指定集群下创建节点。 > - 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param CreateNodeRequest request
         :return: CreateNodeResponse
@@ -705,7 +705,7 @@ class CceClient(Client):
     def delete_cluster(self, request):
         """删除集群
 
-        该API用于删除一个指定的集群。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于删除一个指定的集群。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param DeleteClusterRequest request
         :return: DeleteClusterResponse
@@ -715,7 +715,7 @@ class CceClient(Client):
     def delete_cluster_with_http_info(self, request):
         """删除集群
 
-        该API用于删除一个指定的集群。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于删除一个指定的集群。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param DeleteClusterRequest request
         :return: DeleteClusterResponse
@@ -782,7 +782,7 @@ class CceClient(Client):
     def delete_node(self, request):
         """删除节点
 
-        该API用于删除指定的节点。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
+        该API用于删除指定的节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
 
         :param DeleteNodeRequest request
         :return: DeleteNodeResponse
@@ -792,7 +792,7 @@ class CceClient(Client):
     def delete_node_with_http_info(self, request):
         """删除节点
 
-        该API用于删除指定的节点。 > - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
+        该API用于删除指定的节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
 
         :param DeleteNodeRequest request
         :return: DeleteNodeResponse
@@ -1237,7 +1237,7 @@ class CceClient(Client):
     def list_nodes(self, request):
         """获取集群下所有节点
 
-        该API用于通过集群ID获取指定集群下所有节点的详细信息。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于通过集群ID获取指定集群下所有节点的详细信息。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param ListNodesRequest request
         :return: ListNodesResponse
@@ -1247,7 +1247,7 @@ class CceClient(Client):
     def list_nodes_with_http_info(self, request):
         """获取集群下所有节点
 
-        该API用于通过集群ID获取指定集群下所有节点的详细信息。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于通过集群ID获取指定集群下所有节点的详细信息。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param ListNodesRequest request
         :return: ListNodesResponse
@@ -1300,7 +1300,7 @@ class CceClient(Client):
     def migrate_node(self, request):
         """节点迁移
 
-        该API用于在指定集群下迁移节点到另一集群。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于在指定集群下迁移节点到另一集群。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param MigrateNodeRequest request
         :return: MigrateNodeResponse
@@ -1310,7 +1310,7 @@ class CceClient(Client):
     def migrate_node_with_http_info(self, request):
         """节点迁移
 
-        该API用于在指定集群下迁移节点到另一集群。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于在指定集群下迁移节点到另一集群。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param MigrateNodeRequest request
         :return: MigrateNodeResponse
@@ -1367,7 +1367,7 @@ class CceClient(Client):
     def remove_node(self, request):
         """节点移除
 
-        该API用于在指定集群下移除节点。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于在指定集群下移除节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param RemoveNodeRequest request
         :return: RemoveNodeResponse
@@ -1377,7 +1377,7 @@ class CceClient(Client):
     def remove_node_with_http_info(self, request):
         """节点移除
 
-        该API用于在指定集群下移除节点。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于在指定集群下移除节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param RemoveNodeRequest request
         :return: RemoveNodeResponse
@@ -1432,7 +1432,7 @@ class CceClient(Client):
     def reset_node(self, request):
         """重置节点
 
-        该API用于在指定集群下重置节点。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于在指定集群下重置节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param ResetNodeRequest request
         :return: ResetNodeResponse
@@ -1442,7 +1442,7 @@ class CceClient(Client):
     def reset_node_with_http_info(self, request):
         """重置节点
 
-        该API用于在指定集群下重置节点。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于在指定集群下重置节点。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param ResetNodeRequest request
         :return: ResetNodeResponse
@@ -1562,7 +1562,7 @@ class CceClient(Client):
     def show_cluster(self, request):
         """获取指定的集群
 
-        该API用于获取指定集群的详细信息。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于获取指定集群的详细信息。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param ShowClusterRequest request
         :return: ShowClusterResponse
@@ -1572,7 +1572,7 @@ class CceClient(Client):
     def show_cluster_with_http_info(self, request):
         """获取指定的集群
 
-        该API用于获取指定集群的详细信息。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于获取指定集群的详细信息。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param ShowClusterRequest request
         :return: ShowClusterResponse
@@ -1690,7 +1690,7 @@ class CceClient(Client):
     def show_node(self, request):
         """获取指定的节点
 
-        该API用于通过节点ID获取指定节点的详细信息。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于通过节点ID获取指定节点的详细信息。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param ShowNodeRequest request
         :return: ShowNodeResponse
@@ -1700,7 +1700,7 @@ class CceClient(Client):
     def show_node_with_http_info(self, request):
         """获取指定的节点
 
-        该API用于通过节点ID获取指定节点的详细信息。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于通过节点ID获取指定节点的详细信息。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param ShowNodeRequest request
         :return: ShowNodeResponse
@@ -1885,7 +1885,7 @@ class CceClient(Client):
     def update_cluster(self, request):
         """更新指定的集群
 
-        该API用于更新指定的集群。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于更新指定的集群。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param UpdateClusterRequest request
         :return: UpdateClusterResponse
@@ -1895,7 +1895,7 @@ class CceClient(Client):
     def update_cluster_with_http_info(self, request):
         """更新指定的集群
 
-        该API用于更新指定的集群。 > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        该API用于更新指定的集群。 >集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
 
         :param UpdateClusterRequest request
         :return: UpdateClusterResponse

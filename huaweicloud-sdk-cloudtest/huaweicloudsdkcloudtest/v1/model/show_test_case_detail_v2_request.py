@@ -23,31 +23,25 @@ class ShowTestCaseDetailV2Request:
 
     openapi_types = {
         'project_id': 'str',
-        'testcase_number': 'str',
-        'testcase_id': 'str'
+        'testcase_number': 'str'
     }
 
     attribute_map = {
         'project_id': 'project_id',
-        'testcase_number': 'testcase_number',
-        'testcase_id': 'testcase_id'
+        'testcase_number': 'testcase_number'
     }
 
-    def __init__(self, project_id=None, testcase_number=None, testcase_id=None):
+    def __init__(self, project_id=None, testcase_number=None):
         """ShowTestCaseDetailV2Request - a model defined in huaweicloud sdk"""
         
         
 
         self._project_id = None
         self._testcase_number = None
-        self._testcase_id = None
         self.discriminator = None
 
         self.project_id = project_id
-        if testcase_number is not None:
-            self.testcase_number = testcase_number
-        if testcase_id is not None:
-            self.testcase_id = testcase_id
+        self.testcase_number = testcase_number
 
     @property
     def project_id(self):
@@ -92,28 +86,6 @@ class ShowTestCaseDetailV2Request:
         :type: str
         """
         self._testcase_number = testcase_number
-
-    @property
-    def testcase_id(self):
-        """Gets the testcase_id of this ShowTestCaseDetailV2Request.
-
-        测试用例唯一标识，固定长度32位字符
-
-        :return: The testcase_id of this ShowTestCaseDetailV2Request.
-        :rtype: str
-        """
-        return self._testcase_id
-
-    @testcase_id.setter
-    def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this ShowTestCaseDetailV2Request.
-
-        测试用例唯一标识，固定长度32位字符
-
-        :param testcase_id: The testcase_id of this ShowTestCaseDetailV2Request.
-        :type: str
-        """
-        self._testcase_id = testcase_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

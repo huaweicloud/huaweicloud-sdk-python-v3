@@ -22,7 +22,7 @@ class ShowQuotaResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'quotas': 'list[ShowQuotaResponseBodyQuotas]'
+        'quotas': 'list[Quotas]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowQuotaResponse(SdkResponse):
         配额数组
 
         :return: The quotas of this ShowQuotaResponse.
-        :rtype: list[ShowQuotaResponseBodyQuotas]
+        :rtype: list[Quotas]
         """
         return self._quotas
 
@@ -58,7 +58,7 @@ class ShowQuotaResponse(SdkResponse):
         配额数组
 
         :param quotas: The quotas of this ShowQuotaResponse.
-        :type: list[ShowQuotaResponseBodyQuotas]
+        :type: list[Quotas]
         """
         self._quotas = quotas
 

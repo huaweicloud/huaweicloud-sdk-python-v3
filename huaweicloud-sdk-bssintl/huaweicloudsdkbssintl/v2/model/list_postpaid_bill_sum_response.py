@@ -23,11 +23,11 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     openapi_types = {
         'bill_cycle': 'str',
-        'initial_amount_due': 'float',
-        'consume_amount': 'float',
-        'refunds': 'float',
-        'adjustments': 'float',
-        'tax_amount': 'float',
+        'initial_amount_due': 'decimal.Decimal',
+        'consume_amount': 'decimal.Decimal',
+        'refunds': 'decimal.Decimal',
+        'adjustments': 'decimal.Decimal',
+        'tax_amount': 'decimal.Decimal',
         'currency': 'str'
     }
 
@@ -99,7 +99,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         |参数名称：初始应还金额（含税）| |参数的约束及描述：初始应还金额（含税）|
 
         :return: The initial_amount_due of this ListPostpaidBillSumResponse.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._initial_amount_due
 
@@ -110,7 +110,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         |参数名称：初始应还金额（含税）| |参数的约束及描述：初始应还金额（含税）|
 
         :param initial_amount_due: The initial_amount_due of this ListPostpaidBillSumResponse.
-        :type: float
+        :type: decimal.Decimal
         """
         self._initial_amount_due = initial_amount_due
 
@@ -121,7 +121,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         |参数名称：消费金额| |参数的约束及描述：消费金额|
 
         :return: The consume_amount of this ListPostpaidBillSumResponse.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._consume_amount
 
@@ -132,7 +132,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         |参数名称：消费金额| |参数的约束及描述：消费金额|
 
         :param consume_amount: The consume_amount of this ListPostpaidBillSumResponse.
-        :type: float
+        :type: decimal.Decimal
         """
         self._consume_amount = consume_amount
 
@@ -143,7 +143,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         |参数名称：退款| |参数的约束及描述：退款|
 
         :return: The refunds of this ListPostpaidBillSumResponse.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._refunds
 
@@ -154,7 +154,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         |参数名称：退款| |参数的约束及描述：退款|
 
         :param refunds: The refunds of this ListPostpaidBillSumResponse.
-        :type: float
+        :type: decimal.Decimal
         """
         self._refunds = refunds
 
@@ -165,7 +165,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         |参数名称：调账| |参数的约束及描述：调账|
 
         :return: The adjustments of this ListPostpaidBillSumResponse.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._adjustments
 
@@ -176,7 +176,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         |参数名称：调账| |参数的约束及描述：调账|
 
         :param adjustments: The adjustments of this ListPostpaidBillSumResponse.
-        :type: float
+        :type: decimal.Decimal
         """
         self._adjustments = adjustments
 
@@ -187,7 +187,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         |参数名称：销项税金额| |参数的约束及描述：销项税金额|
 
         :return: The tax_amount of this ListPostpaidBillSumResponse.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._tax_amount
 
@@ -198,7 +198,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
         |参数名称：销项税金额| |参数的约束及描述：销项税金额|
 
         :param tax_amount: The tax_amount of this ListPostpaidBillSumResponse.
-        :type: float
+        :type: decimal.Decimal
         """
         self._tax_amount = tax_amount
 

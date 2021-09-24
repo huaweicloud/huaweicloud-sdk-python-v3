@@ -202,6 +202,71 @@ class BssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_free_resource_infos_async(self, request):
+        """查询资源包列表
+
+        功能描述：客户在自建平台查询资源包列表。
+
+        :param ListFreeResourceInfosRequest request
+        :return: ListFreeResourceInfosResponse
+        """
+        return self.list_free_resource_infos_with_http_info(request)
+
+    def list_free_resource_infos_with_http_info(self, request):
+        """查询资源包列表
+
+        功能描述：客户在自建平台查询资源包列表。
+
+        :param ListFreeResourceInfosRequest request
+        :return: ListFreeResourceInfosResponse
+        """
+
+        all_params = ['req', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/payments/free-resources/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFreeResourceInfosResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_free_resource_usages_async(self, request):
         """查询资源内使用量
 
@@ -2388,6 +2453,83 @@ class BssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_parnter_adjust_records_async(self, request):
+        """查询调账记录
+
+        功能描述：伙伴在伙伴销售平台查询向客户及关联的精英服务商（二级经销商）拨款或回收的调账记录
+
+        :param ListParnterAdjustRecordsRequest request
+        :return: ListParnterAdjustRecordsResponse
+        """
+        return self.list_parnter_adjust_records_with_http_info(request)
+
+    def list_parnter_adjust_records_with_http_info(self, request):
+        """查询调账记录
+
+        功能描述：伙伴在伙伴销售平台查询向客户及关联的精英服务商（二级经销商）拨款或回收的调账记录
+
+        :param ListParnterAdjustRecordsRequest request
+        :return: ListParnterAdjustRecordsResponse
+        """
+
+        all_params = ['customer_id', 'operation_type', 'operation_time_begin', 'operation_time_end', 'trans_id', 'offset', 'limit', 'indirect_partner_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'customer_id' in local_var_params:
+            query_params.append(('customer_id', local_var_params['customer_id']))
+        if 'operation_type' in local_var_params:
+            query_params.append(('operation_type', local_var_params['operation_type']))
+        if 'operation_time_begin' in local_var_params:
+            query_params.append(('operation_time_begin', local_var_params['operation_time_begin']))
+        if 'operation_time_end' in local_var_params:
+            query_params.append(('operation_time_end', local_var_params['operation_time_end']))
+        if 'trans_id' in local_var_params:
+            query_params.append(('trans_id', local_var_params['trans_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'indirect_partner_id' in local_var_params:
+            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/accounts/partner-accounts/adjust-records',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListParnterAdjustRecordsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_partner_adjust_records_async(self, request):
         """查询调账记录
 
@@ -3127,101 +3269,6 @@ class BssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSkuInventoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_sub_customer_bill_detail_async(self, request):
-        """查询客户消费记录
-
-        功能描述：查询客户消费记录
-
-        :param ListSubCustomerBillDetailRequest request
-        :return: ListSubCustomerBillDetailResponse
-        """
-        return self.list_sub_customer_bill_detail_with_http_info(request)
-
-    def list_sub_customer_bill_detail_with_http_info(self, request):
-        """查询客户消费记录
-
-        功能描述：查询客户消费记录
-
-        :param ListSubCustomerBillDetailRequest request
-        :return: ListSubCustomerBillDetailResponse
-        """
-
-        all_params = ['bill_cycle', 'customer_id', 'x_language', 'service_type_code', 'region_code', 'charging_mode', 'bill_detail_type', 'resource_id', 'resource_name', 'trade_id', 'account_manager_id', 'association_type', 'offset', 'limit', 'indirect_partner_id', 'bill_date_begin', 'bill_date_end']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'bill_cycle' in local_var_params:
-            query_params.append(('bill_cycle', local_var_params['bill_cycle']))
-        if 'customer_id' in local_var_params:
-            query_params.append(('customer_id', local_var_params['customer_id']))
-        if 'service_type_code' in local_var_params:
-            query_params.append(('service_type_code', local_var_params['service_type_code']))
-        if 'region_code' in local_var_params:
-            query_params.append(('region_code', local_var_params['region_code']))
-        if 'charging_mode' in local_var_params:
-            query_params.append(('charging_mode', local_var_params['charging_mode']))
-        if 'bill_detail_type' in local_var_params:
-            query_params.append(('bill_detail_type', local_var_params['bill_detail_type']))
-        if 'resource_id' in local_var_params:
-            query_params.append(('resource_id', local_var_params['resource_id']))
-        if 'resource_name' in local_var_params:
-            query_params.append(('resource_name', local_var_params['resource_name']))
-        if 'trade_id' in local_var_params:
-            query_params.append(('trade_id', local_var_params['trade_id']))
-        if 'account_manager_id' in local_var_params:
-            query_params.append(('account_manager_id', local_var_params['account_manager_id']))
-        if 'association_type' in local_var_params:
-            query_params.append(('association_type', local_var_params['association_type']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'indirect_partner_id' in local_var_params:
-            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
-        if 'bill_date_begin' in local_var_params:
-            query_params.append(('bill_date_begin', local_var_params['bill_date_begin']))
-        if 'bill_date_end' in local_var_params:
-            query_params.append(('bill_date_end', local_var_params['bill_date_end']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bills/subcustomer-bills/res-fee-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListSubCustomerBillDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

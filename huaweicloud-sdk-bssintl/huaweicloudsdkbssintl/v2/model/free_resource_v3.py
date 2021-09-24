@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class FreeResource:
+class FreeResourceV3:
 
 
     """
@@ -24,8 +24,8 @@ class FreeResource:
     openapi_types = {
         'free_resource_id': 'str',
         'usage_type_name': 'str',
-        'amount': 'float',
-        'original_amount': 'float',
+        'amount': 'str',
+        'original_amount': 'str',
         'measure_id': 'int'
     }
 
@@ -38,7 +38,7 @@ class FreeResource:
     }
 
     def __init__(self, free_resource_id=None, usage_type_name=None, amount=None, original_amount=None, measure_id=None):
-        """FreeResource - a model defined in huaweicloud sdk"""
+        """FreeResourceV3 - a model defined in huaweicloud sdk"""
         
         
 
@@ -62,110 +62,110 @@ class FreeResource:
 
     @property
     def free_resource_id(self):
-        """Gets the free_resource_id of this FreeResource.
+        """Gets the free_resource_id of this FreeResourceV3.
 
-        |参数名称：免费资源ID| |参数约束及描述：免费资源ID|
+        |参数名称：资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。| |参数约束及描述：资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。|
 
-        :return: The free_resource_id of this FreeResource.
+        :return: The free_resource_id of this FreeResourceV3.
         :rtype: str
         """
         return self._free_resource_id
 
     @free_resource_id.setter
     def free_resource_id(self, free_resource_id):
-        """Sets the free_resource_id of this FreeResource.
+        """Sets the free_resource_id of this FreeResourceV3.
 
-        |参数名称：免费资源ID| |参数约束及描述：免费资源ID|
+        |参数名称：资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。| |参数约束及描述：资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。|
 
-        :param free_resource_id: The free_resource_id of this FreeResource.
+        :param free_resource_id: The free_resource_id of this FreeResourceV3.
         :type: str
         """
         self._free_resource_id = free_resource_id
 
     @property
     def usage_type_name(self):
-        """Gets the usage_type_name of this FreeResource.
+        """Gets the usage_type_name of this FreeResourceV3.
 
-        |参数名称：使用量类型名称| |参数约束及描述：使用量类型名称|
+        |参数名称：使用量类型名称。| |参数约束及描述：使用量类型名称。|
 
-        :return: The usage_type_name of this FreeResource.
+        :return: The usage_type_name of this FreeResourceV3.
         :rtype: str
         """
         return self._usage_type_name
 
     @usage_type_name.setter
     def usage_type_name(self, usage_type_name):
-        """Sets the usage_type_name of this FreeResource.
+        """Sets the usage_type_name of this FreeResourceV3.
 
-        |参数名称：使用量类型名称| |参数约束及描述：使用量类型名称|
+        |参数名称：使用量类型名称。| |参数约束及描述：使用量类型名称。|
 
-        :param usage_type_name: The usage_type_name of this FreeResource.
+        :param usage_type_name: The usage_type_name of this FreeResourceV3.
         :type: str
         """
         self._usage_type_name = usage_type_name
 
     @property
     def amount(self):
-        """Gets the amount of this FreeResource.
+        """Gets the amount of this FreeResourceV3.
 
-        |参数名称：免费资源剩余额度| |参数约束及描述：免费资源剩余额度，如果是可重置套餐包，是指当前重置周期内的剩余量|
+        |参数名称：资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。| |参数约束及描述：资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。|
 
-        :return: The amount of this FreeResource.
-        :rtype: float
+        :return: The amount of this FreeResourceV3.
+        :rtype: str
         """
         return self._amount
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this FreeResource.
+        """Sets the amount of this FreeResourceV3.
 
-        |参数名称：免费资源剩余额度| |参数约束及描述：免费资源剩余额度，如果是可重置套餐包，是指当前重置周期内的剩余量|
+        |参数名称：资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。| |参数约束及描述：资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。|
 
-        :param amount: The amount of this FreeResource.
-        :type: float
+        :param amount: The amount of this FreeResourceV3.
+        :type: str
         """
         self._amount = amount
 
     @property
     def original_amount(self):
-        """Gets the original_amount of this FreeResource.
+        """Gets the original_amount of this FreeResourceV3.
 
-        |参数名称：免费资源原始额度| |参数约束及描述：免费资源原始额度，针对可重置套餐包，是指每个重置周期内的总量|
+        |参数名称：资源原始额度，针对可重置资源包，是指每个重置周期内的总量。| |参数约束及描述：资源原始额度，针对可重置资源包，是指每个重置周期内的总量。|
 
-        :return: The original_amount of this FreeResource.
-        :rtype: float
+        :return: The original_amount of this FreeResourceV3.
+        :rtype: str
         """
         return self._original_amount
 
     @original_amount.setter
     def original_amount(self, original_amount):
-        """Sets the original_amount of this FreeResource.
+        """Sets the original_amount of this FreeResourceV3.
 
-        |参数名称：免费资源原始额度| |参数约束及描述：免费资源原始额度，针对可重置套餐包，是指每个重置周期内的总量|
+        |参数名称：资源原始额度，针对可重置资源包，是指每个重置周期内的总量。| |参数约束及描述：资源原始额度，针对可重置资源包，是指每个重置周期内的总量。|
 
-        :param original_amount: The original_amount of this FreeResource.
-        :type: float
+        :param original_amount: The original_amount of this FreeResourceV3.
+        :type: str
         """
         self._original_amount = original_amount
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this FreeResource.
+        """Gets the measure_id of this FreeResourceV3.
 
-        |参数名称：度量单位| |参数约束及描述：度量单位，免费资源套餐额度度量单位|
+        |参数名称：度量单位，免费资源套餐额度度量单位。| |参数的约束及描述：度量单位，免费资源套餐额度度量单位。|
 
-        :return: The measure_id of this FreeResource.
+        :return: The measure_id of this FreeResourceV3.
         :rtype: int
         """
         return self._measure_id
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this FreeResource.
+        """Sets the measure_id of this FreeResourceV3.
 
-        |参数名称：度量单位| |参数约束及描述：度量单位，免费资源套餐额度度量单位|
+        |参数名称：度量单位，免费资源套餐额度度量单位。| |参数的约束及描述：度量单位，免费资源套餐额度度量单位。|
 
-        :param measure_id: The measure_id of this FreeResource.
+        :param measure_id: The measure_id of this FreeResourceV3.
         :type: int
         """
         self._measure_id = measure_id
@@ -212,7 +212,7 @@ class FreeResource:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FreeResource):
+        if not isinstance(other, FreeResourceV3):
             return False
 
         return self.__dict__ == other.__dict__

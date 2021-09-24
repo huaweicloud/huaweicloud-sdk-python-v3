@@ -926,9 +926,9 @@ class CdnAsyncClient(Client):
 
 
     def show_domain_stats_async(self, request):
-        """查询区域运营商总体统计数据
+        """查询区域运营商统计数据
 
-        - 支持查询90天内的数据。 - 支持多个指标同时查询，不超过5个。 - 最多同时指定100个域名。 - 起始时间和结束时间，左闭右开，需要同时指定。 - 开始时间、结束时间必须传毫秒级时间戳，且必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。 - 统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。
+        - 支持同时指定多个指标。 - 支持同时指定多个域名。 - 起始时间和结束时间，需要同时指定。 - 开始时间、结束时间必须传毫秒级时间戳。
 
         :param ShowDomainStatsRequest request
         :return: ShowDomainStatsResponse
@@ -936,9 +936,9 @@ class CdnAsyncClient(Client):
         return self.show_domain_stats_with_http_info(request)
 
     def show_domain_stats_with_http_info(self, request):
-        """查询区域运营商总体统计数据
+        """查询区域运营商统计数据
 
-        - 支持查询90天内的数据。 - 支持多个指标同时查询，不超过5个。 - 最多同时指定100个域名。 - 起始时间和结束时间，左闭右开，需要同时指定。 - 开始时间、结束时间必须传毫秒级时间戳，且必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。 - 统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。
+        - 支持同时指定多个指标。 - 支持同时指定多个域名。 - 起始时间和结束时间，需要同时指定。 - 开始时间、结束时间必须传毫秒级时间戳。
 
         :param ShowDomainStatsRequest request
         :return: ShowDomainStatsResponse

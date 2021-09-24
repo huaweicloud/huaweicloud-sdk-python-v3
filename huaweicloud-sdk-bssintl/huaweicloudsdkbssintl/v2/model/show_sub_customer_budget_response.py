@@ -22,8 +22,8 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'budget_amount': 'float',
-        'used_amount': 'float',
+        'budget_amount': 'decimal.Decimal',
+        'used_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'currency': 'str'
     }
@@ -62,7 +62,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         |参数名称：预算金额。| |参数的约束及描述：预算金额。|
 
         :return: The budget_amount of this ShowSubCustomerBudgetResponse.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._budget_amount
 
@@ -73,7 +73,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         |参数名称：预算金额。| |参数的约束及描述：预算金额。|
 
         :param budget_amount: The budget_amount of this ShowSubCustomerBudgetResponse.
-        :type: float
+        :type: decimal.Decimal
         """
         self._budget_amount = budget_amount
 
@@ -84,7 +84,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         |参数名称：已经使用的预算。该预算存在一定的时延和误差。| |参数的约束及描述：已经使用的预算。该预算存在一定的时延和误差。|
 
         :return: The used_amount of this ShowSubCustomerBudgetResponse.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._used_amount
 
@@ -95,7 +95,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
         |参数名称：已经使用的预算。该预算存在一定的时延和误差。| |参数的约束及描述：已经使用的预算。该预算存在一定的时延和误差。|
 
         :param used_amount: The used_amount of this ShowSubCustomerBudgetResponse.
-        :type: float
+        :type: decimal.Decimal
         """
         self._used_amount = used_amount
 

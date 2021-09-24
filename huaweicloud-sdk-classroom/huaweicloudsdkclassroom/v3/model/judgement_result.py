@@ -24,16 +24,22 @@ class JudgementResult:
     openapi_types = {
         'output': 'str',
         'file_id': 'str',
-        'image_id': 'str'
+        'image_id': 'str',
+        'case_count': 'int',
+        'executed_count': 'int',
+        'testcases': 'list[JudgementCaseResult]'
     }
 
     attribute_map = {
         'output': 'output',
         'file_id': 'file_id',
-        'image_id': 'image_id'
+        'image_id': 'image_id',
+        'case_count': 'case_count',
+        'executed_count': 'executed_count',
+        'testcases': 'testcases'
     }
 
-    def __init__(self, output=None, file_id=None, image_id=None):
+    def __init__(self, output=None, file_id=None, image_id=None, case_count=None, executed_count=None, testcases=None):
         """JudgementResult - a model defined in huaweicloud sdk"""
         
         
@@ -41,11 +47,17 @@ class JudgementResult:
         self._output = None
         self._file_id = None
         self._image_id = None
+        self._case_count = None
+        self._executed_count = None
+        self._testcases = None
         self.discriminator = None
 
         self.output = output
         self.file_id = file_id
         self.image_id = image_id
+        self.case_count = case_count
+        self.executed_count = executed_count
+        self.testcases = testcases
 
     @property
     def output(self):
@@ -112,6 +124,72 @@ class JudgementResult:
         :type: str
         """
         self._image_id = image_id
+
+    @property
+    def case_count(self):
+        """Gets the case_count of this JudgementResult.
+
+        用例形式输出的用例总个数
+
+        :return: The case_count of this JudgementResult.
+        :rtype: int
+        """
+        return self._case_count
+
+    @case_count.setter
+    def case_count(self, case_count):
+        """Sets the case_count of this JudgementResult.
+
+        用例形式输出的用例总个数
+
+        :param case_count: The case_count of this JudgementResult.
+        :type: int
+        """
+        self._case_count = case_count
+
+    @property
+    def executed_count(self):
+        """Gets the executed_count of this JudgementResult.
+
+        用例形式输出的已执行用例的个数
+
+        :return: The executed_count of this JudgementResult.
+        :rtype: int
+        """
+        return self._executed_count
+
+    @executed_count.setter
+    def executed_count(self, executed_count):
+        """Sets the executed_count of this JudgementResult.
+
+        用例形式输出的已执行用例的个数
+
+        :param executed_count: The executed_count of this JudgementResult.
+        :type: int
+        """
+        self._executed_count = executed_count
+
+    @property
+    def testcases(self):
+        """Gets the testcases of this JudgementResult.
+
+        用例形式输出的已执行用例的结果
+
+        :return: The testcases of this JudgementResult.
+        :rtype: list[JudgementCaseResult]
+        """
+        return self._testcases
+
+    @testcases.setter
+    def testcases(self, testcases):
+        """Sets the testcases of this JudgementResult.
+
+        用例形式输出的已执行用例的结果
+
+        :param testcases: The testcases of this JudgementResult.
+        :type: list[JudgementCaseResult]
+        """
+        self._testcases = testcases
 
     def to_dict(self):
         """Returns the model properties as a dict"""

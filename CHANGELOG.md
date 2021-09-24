@@ -1,3 +1,77 @@
+# 3.0.61 2021-09-24
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - Support the interfaces `ListParnterAdjustRecords` and `ListFreeResourceInfos`.
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `ListSubCustomerBillDetail`.
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the name of the interface: `ListFreeResources` -> `ListFreeResourceUsages`
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - Support the interface `ShowQuotas`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Classroom
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the optional request parameter `testcases` to the interface `ApplyJudgement`.
+
+### HuaweiCloud SDK Cloudtest
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Set the request parameter `testcase_number` to `optional`, and remove the request parameter of the interface `ShowTestCaseDetailV2`.
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - Support the service `GaussDB(for openGauss)`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - Support the interface `ListRecordContents`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SWR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `domain_id`, `scanned` and `tag_type` to the interface `ListRepositoryTags`.
+
 # 3.0.60 2021-09-16
 
 ### HuaweiCloud SDK CCE

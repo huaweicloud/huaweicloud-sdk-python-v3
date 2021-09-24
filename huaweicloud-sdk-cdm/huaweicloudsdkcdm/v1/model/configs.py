@@ -22,7 +22,7 @@ class Configs:
     sensitive_list = []
 
     openapi_types = {
-        'inputs': 'list[object]',
+        'inputs': 'list[Input]',
         'name': 'str'
     }
 
@@ -47,9 +47,10 @@ class Configs:
     def inputs(self):
         """Gets the inputs of this Configs.
 
+        输入参数列表，列表中的每个参数为“name,value”结构，请参考inputs数据结构参数说明。在“from-config-values”数据结构中，不同的源连接类型有不同的“inputs”参数列表，请参见源端作业参数说明下的章节。在“to-cofig-values”数据结构中，不同的目的连接类型有不同的“inputs”参数列表，请参见目的端作业参数说明下面的子章节。在“driver-config-values”数据结构中，“inputs”具体参数请参见作业任务参数说明。
 
         :return: The inputs of this Configs.
-        :rtype: list[object]
+        :rtype: list[Input]
         """
         return self._inputs
 
@@ -57,9 +58,10 @@ class Configs:
     def inputs(self, inputs):
         """Sets the inputs of this Configs.
 
+        输入参数列表，列表中的每个参数为“name,value”结构，请参考inputs数据结构参数说明。在“from-config-values”数据结构中，不同的源连接类型有不同的“inputs”参数列表，请参见源端作业参数说明下的章节。在“to-cofig-values”数据结构中，不同的目的连接类型有不同的“inputs”参数列表，请参见目的端作业参数说明下面的子章节。在“driver-config-values”数据结构中，“inputs”具体参数请参见作业任务参数说明。
 
         :param inputs: The inputs of this Configs.
-        :type: list[object]
+        :type: list[Input]
         """
         self._inputs = inputs
 

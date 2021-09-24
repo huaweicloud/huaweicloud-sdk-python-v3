@@ -10,7 +10,6 @@ from huaweicloudsdkcdm.v1.model.action_progress import ActionProgress
 from huaweicloudsdkcdm.v1.model.cdm_create_and_update_link_req import CdmCreateAndUpdateLinkReq
 from huaweicloudsdkcdm.v1.model.cdm_create_cluster_req import CdmCreateClusterReq
 from huaweicloudsdkcdm.v1.model.cdm_create_cluster_req_cluster import CdmCreateClusterReqCluster
-from huaweicloudsdkcdm.v1.model.cdm_create_cluster_req_cluster_datastore import CdmCreateClusterReqClusterDatastore
 from huaweicloudsdkcdm.v1.model.cdm_create_job_json_req import CdmCreateJobJsonReq
 from huaweicloudsdkcdm.v1.model.cdm_delete_cluster_req import CdmDeleteClusterReq
 from huaweicloudsdkcdm.v1.model.cdm_query_cluster_details_repsonse_maintain_window import CdmQueryClusterDetailsRepsonseMaintainWindow
@@ -50,6 +49,7 @@ from huaweicloudsdkcdm.v1.model.delete_link_request import DeleteLinkRequest
 from huaweicloudsdkcdm.v1.model.delete_link_response import DeleteLinkResponse
 from huaweicloudsdkcdm.v1.model.failed_reasons import FailedReasons
 from huaweicloudsdkcdm.v1.model.failed_reasons_createfailed import FailedReasonsCREATEFAILED
+from huaweicloudsdkcdm.v1.model.input import Input
 from huaweicloudsdkcdm.v1.model.instance import Instance
 from huaweicloudsdkcdm.v1.model.job import Job
 from huaweicloudsdkcdm.v1.model.job_validation_result import JobValidationResult

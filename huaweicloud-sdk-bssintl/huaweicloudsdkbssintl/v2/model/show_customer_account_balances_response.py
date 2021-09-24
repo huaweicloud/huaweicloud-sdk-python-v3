@@ -23,7 +23,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
 
     openapi_types = {
         'account_balances': 'list[AccountBalanceV3]',
-        'debt_amount': 'float',
+        'debt_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'currency': 'str'
     }
@@ -84,7 +84,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
         |参数名称：欠款总金额。| |参数的约束及描述：欠款总金额。|
 
         :return: The debt_amount of this ShowCustomerAccountBalancesResponse.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._debt_amount
 
@@ -95,7 +95,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
         |参数名称：欠款总金额。| |参数的约束及描述：欠款总金额。|
 
         :param debt_amount: The debt_amount of this ShowCustomerAccountBalancesResponse.
-        :type: float
+        :type: decimal.Decimal
         """
         self._debt_amount = debt_amount
 

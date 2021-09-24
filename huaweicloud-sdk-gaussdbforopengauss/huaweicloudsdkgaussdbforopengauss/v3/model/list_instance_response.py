@@ -1,0 +1,856 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ListInstanceResponse:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'id': 'str',
+        'name': 'str',
+        'status': 'str',
+        'private_ips': 'list[str]',
+        'public_ips': 'list[str]',
+        'port': 'int',
+        'type': 'str',
+        'ha': 'ListHa',
+        'replica_num': 'int',
+        'region': 'str',
+        'datastore': 'ListDatastore',
+        'created': 'str',
+        'updated': 'str',
+        'db_user_name': 'str',
+        'vpc_id': 'str',
+        'subnet_id': 'str',
+        'security_group_id': 'str',
+        'flavor_ref': 'str',
+        'flavor_info': 'ListFlavorInfo',
+        'volume': 'ListVolume',
+        'switch_strategy': 'str',
+        'backup_strategy': 'OpenGaussBackupStrategyForListResponse',
+        'maintenance_window': 'str',
+        'related_instance': 'list[object]',
+        'nodes': 'list[object]',
+        'enterprise_project_id': 'str',
+        'disk_encryption_id': 'str',
+        'charge_info': 'OpenGaussChargeInfoListResponse',
+        'time_zone': 'str',
+        'tags': 'list[object]'
+    }
+
+    attribute_map = {
+        'id': 'id',
+        'name': 'name',
+        'status': 'status',
+        'private_ips': 'private_ips',
+        'public_ips': 'public_ips',
+        'port': 'port',
+        'type': 'type',
+        'ha': 'ha',
+        'replica_num': 'replica_num',
+        'region': 'region',
+        'datastore': 'datastore',
+        'created': 'created',
+        'updated': 'updated',
+        'db_user_name': 'db_user_name',
+        'vpc_id': 'vpc_id',
+        'subnet_id': 'subnet_id',
+        'security_group_id': 'security_group_id',
+        'flavor_ref': 'flavor_ref',
+        'flavor_info': 'flavor_info',
+        'volume': 'volume',
+        'switch_strategy': 'switch_strategy',
+        'backup_strategy': 'backup_strategy',
+        'maintenance_window': 'maintenance_window',
+        'related_instance': 'related_instance',
+        'nodes': 'nodes',
+        'enterprise_project_id': 'enterprise_project_id',
+        'disk_encryption_id': 'disk_encryption_id',
+        'charge_info': 'charge_info',
+        'time_zone': 'time_zone',
+        'tags': 'tags'
+    }
+
+    def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, ha=None, replica_num=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, switch_strategy=None, backup_strategy=None, maintenance_window=None, related_instance=None, nodes=None, enterprise_project_id=None, disk_encryption_id=None, charge_info=None, time_zone=None, tags=None):
+        """ListInstanceResponse - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._id = None
+        self._name = None
+        self._status = None
+        self._private_ips = None
+        self._public_ips = None
+        self._port = None
+        self._type = None
+        self._ha = None
+        self._replica_num = None
+        self._region = None
+        self._datastore = None
+        self._created = None
+        self._updated = None
+        self._db_user_name = None
+        self._vpc_id = None
+        self._subnet_id = None
+        self._security_group_id = None
+        self._flavor_ref = None
+        self._flavor_info = None
+        self._volume = None
+        self._switch_strategy = None
+        self._backup_strategy = None
+        self._maintenance_window = None
+        self._related_instance = None
+        self._nodes = None
+        self._enterprise_project_id = None
+        self._disk_encryption_id = None
+        self._charge_info = None
+        self._time_zone = None
+        self._tags = None
+        self.discriminator = None
+
+        self.id = id
+        self.name = name
+        self.status = status
+        self.private_ips = private_ips
+        self.public_ips = public_ips
+        self.port = port
+        self.type = type
+        self.ha = ha
+        if replica_num is not None:
+            self.replica_num = replica_num
+        self.region = region
+        self.datastore = datastore
+        self.created = created
+        self.updated = updated
+        self.db_user_name = db_user_name
+        self.vpc_id = vpc_id
+        self.subnet_id = subnet_id
+        self.security_group_id = security_group_id
+        self.flavor_ref = flavor_ref
+        self.flavor_info = flavor_info
+        self.volume = volume
+        self.switch_strategy = switch_strategy
+        self.backup_strategy = backup_strategy
+        self.maintenance_window = maintenance_window
+        self.related_instance = related_instance
+        self.nodes = nodes
+        self.enterprise_project_id = enterprise_project_id
+        self.disk_encryption_id = disk_encryption_id
+        self.charge_info = charge_info
+        self.time_zone = time_zone
+        self.tags = tags
+
+    @property
+    def id(self):
+        """Gets the id of this ListInstanceResponse.
+
+        实例ID。
+
+        :return: The id of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ListInstanceResponse.
+
+        实例ID。
+
+        :param id: The id of this ListInstanceResponse.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this ListInstanceResponse.
+
+        创建的实例名称。
+
+        :return: The name of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListInstanceResponse.
+
+        创建的实例名称。
+
+        :param name: The name of this ListInstanceResponse.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def status(self):
+        """Gets the status of this ListInstanceResponse.
+
+        实例状态。  取值：  值为“BUILD”，表示实例正在创建。  值为“ACTIVE”，表示实例正常。  值为“FAILED”，表示实例异常。  值为“FROZEN”，表示实例冻结。  值为“EXPANDING”，表示实例正在扩容CN或DN。  值为“REBOOTING”，表示实例正在重启。  值为“UPGRADING”，表示实例正在升级。  值为“BACKING UP”，表示实例正在进行备份。  值为“STORAGE FULL”，表示实例磁盘空间满。
+
+        :return: The status of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListInstanceResponse.
+
+        实例状态。  取值：  值为“BUILD”，表示实例正在创建。  值为“ACTIVE”，表示实例正常。  值为“FAILED”，表示实例异常。  值为“FROZEN”，表示实例冻结。  值为“EXPANDING”，表示实例正在扩容CN或DN。  值为“REBOOTING”，表示实例正在重启。  值为“UPGRADING”，表示实例正在升级。  值为“BACKING UP”，表示实例正在进行备份。  值为“STORAGE FULL”，表示实例磁盘空间满。
+
+        :param status: The status of this ListInstanceResponse.
+        :type: str
+        """
+        self._status = status
+
+    @property
+    def private_ips(self):
+        """Gets the private_ips of this ListInstanceResponse.
+
+        实例内网IP地址列表。CN在的弹性云服务器创建成功后该值存在，其他情况下为空字符串。
+
+        :return: The private_ips of this ListInstanceResponse.
+        :rtype: list[str]
+        """
+        return self._private_ips
+
+    @private_ips.setter
+    def private_ips(self, private_ips):
+        """Sets the private_ips of this ListInstanceResponse.
+
+        实例内网IP地址列表。CN在的弹性云服务器创建成功后该值存在，其他情况下为空字符串。
+
+        :param private_ips: The private_ips of this ListInstanceResponse.
+        :type: list[str]
+        """
+        self._private_ips = private_ips
+
+    @property
+    def public_ips(self):
+        """Gets the public_ips of this ListInstanceResponse.
+
+        实例外网IP地址列表。绑定弹性公网IP后，该值不为空。
+
+        :return: The public_ips of this ListInstanceResponse.
+        :rtype: list[str]
+        """
+        return self._public_ips
+
+    @public_ips.setter
+    def public_ips(self, public_ips):
+        """Sets the public_ips of this ListInstanceResponse.
+
+        实例外网IP地址列表。绑定弹性公网IP后，该值不为空。
+
+        :param public_ips: The public_ips of this ListInstanceResponse.
+        :type: list[str]
+        """
+        self._public_ips = public_ips
+
+    @property
+    def port(self):
+        """Gets the port of this ListInstanceResponse.
+
+        数据库端口号。GaussDB(for openGauss)数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,20049,20050,21731,21732被系统占用不可设置）。  当不传该参数时，默认端口如下：8000。
+
+        :return: The port of this ListInstanceResponse.
+        :rtype: int
+        """
+        return self._port
+
+    @port.setter
+    def port(self, port):
+        """Sets the port of this ListInstanceResponse.
+
+        数据库端口号。GaussDB(for openGauss)数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,20049,20050,21731,21732被系统占用不可设置）。  当不传该参数时，默认端口如下：8000。
+
+        :param port: The port of this ListInstanceResponse.
+        :type: int
+        """
+        self._port = port
+
+    @property
+    def type(self):
+        """Gets the type of this ListInstanceResponse.
+
+        实例类型，取值为 \"Enterprise\"，对应于分布式实例（企业版）。
+
+        :return: The type of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ListInstanceResponse.
+
+        实例类型，取值为 \"Enterprise\"，对应于分布式实例（企业版）。
+
+        :param type: The type of this ListInstanceResponse.
+        :type: str
+        """
+        self._type = type
+
+    @property
+    def ha(self):
+        """Gets the ha of this ListInstanceResponse.
+
+
+        :return: The ha of this ListInstanceResponse.
+        :rtype: ListHa
+        """
+        return self._ha
+
+    @ha.setter
+    def ha(self, ha):
+        """Sets the ha of this ListInstanceResponse.
+
+
+        :param ha: The ha of this ListInstanceResponse.
+        :type: ListHa
+        """
+        self._ha = ha
+
+    @property
+    def replica_num(self):
+        """Gets the replica_num of this ListInstanceResponse.
+
+        实例副本数。说明：需添加白名单，才会开放显示。
+
+        :return: The replica_num of this ListInstanceResponse.
+        :rtype: int
+        """
+        return self._replica_num
+
+    @replica_num.setter
+    def replica_num(self, replica_num):
+        """Sets the replica_num of this ListInstanceResponse.
+
+        实例副本数。说明：需添加白名单，才会开放显示。
+
+        :param replica_num: The replica_num of this ListInstanceResponse.
+        :type: int
+        """
+        self._replica_num = replica_num
+
+    @property
+    def region(self):
+        """Gets the region of this ListInstanceResponse.
+
+        实例所在区域。
+
+        :return: The region of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        """Sets the region of this ListInstanceResponse.
+
+        实例所在区域。
+
+        :param region: The region of this ListInstanceResponse.
+        :type: str
+        """
+        self._region = region
+
+    @property
+    def datastore(self):
+        """Gets the datastore of this ListInstanceResponse.
+
+
+        :return: The datastore of this ListInstanceResponse.
+        :rtype: ListDatastore
+        """
+        return self._datastore
+
+    @datastore.setter
+    def datastore(self, datastore):
+        """Sets the datastore of this ListInstanceResponse.
+
+
+        :param datastore: The datastore of this ListInstanceResponse.
+        :type: ListDatastore
+        """
+        self._datastore = datastore
+
+    @property
+    def created(self):
+        """Gets the created of this ListInstanceResponse.
+
+        创建时间，格式为“yyyy-mm-dd hh:mm:ss timezone”。  其中timezone是指时区。  说明：创建时该值为实例下发创建的时间，创建完成后，该值为创建完成时间。
+
+        :return: The created of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._created
+
+    @created.setter
+    def created(self, created):
+        """Sets the created of this ListInstanceResponse.
+
+        创建时间，格式为“yyyy-mm-dd hh:mm:ss timezone”。  其中timezone是指时区。  说明：创建时该值为实例下发创建的时间，创建完成后，该值为创建完成时间。
+
+        :param created: The created of this ListInstanceResponse.
+        :type: str
+        """
+        self._created = created
+
+    @property
+    def updated(self):
+        """Gets the updated of this ListInstanceResponse.
+
+        更新时间，格式与“created”字段对应格式完全相同。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+
+        :return: The updated of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._updated
+
+    @updated.setter
+    def updated(self, updated):
+        """Sets the updated of this ListInstanceResponse.
+
+        更新时间，格式与“created”字段对应格式完全相同。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
+
+        :param updated: The updated of this ListInstanceResponse.
+        :type: str
+        """
+        self._updated = updated
+
+    @property
+    def db_user_name(self):
+        """Gets the db_user_name of this ListInstanceResponse.
+
+        默认用户名。
+
+        :return: The db_user_name of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._db_user_name
+
+    @db_user_name.setter
+    def db_user_name(self, db_user_name):
+        """Sets the db_user_name of this ListInstanceResponse.
+
+        默认用户名。
+
+        :param db_user_name: The db_user_name of this ListInstanceResponse.
+        :type: str
+        """
+        self._db_user_name = db_user_name
+
+    @property
+    def vpc_id(self):
+        """Gets the vpc_id of this ListInstanceResponse.
+
+        虚拟私有云ID。
+
+        :return: The vpc_id of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._vpc_id
+
+    @vpc_id.setter
+    def vpc_id(self, vpc_id):
+        """Sets the vpc_id of this ListInstanceResponse.
+
+        虚拟私有云ID。
+
+        :param vpc_id: The vpc_id of this ListInstanceResponse.
+        :type: str
+        """
+        self._vpc_id = vpc_id
+
+    @property
+    def subnet_id(self):
+        """Gets the subnet_id of this ListInstanceResponse.
+
+        子网的网络ID信息。
+
+        :return: The subnet_id of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this ListInstanceResponse.
+
+        子网的网络ID信息。
+
+        :param subnet_id: The subnet_id of this ListInstanceResponse.
+        :type: str
+        """
+        self._subnet_id = subnet_id
+
+    @property
+    def security_group_id(self):
+        """Gets the security_group_id of this ListInstanceResponse.
+
+        安全组ID。
+
+        :return: The security_group_id of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._security_group_id
+
+    @security_group_id.setter
+    def security_group_id(self, security_group_id):
+        """Sets the security_group_id of this ListInstanceResponse.
+
+        安全组ID。
+
+        :param security_group_id: The security_group_id of this ListInstanceResponse.
+        :type: str
+        """
+        self._security_group_id = security_group_id
+
+    @property
+    def flavor_ref(self):
+        """Gets the flavor_ref of this ListInstanceResponse.
+
+        规格码。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+
+        :return: The flavor_ref of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._flavor_ref
+
+    @flavor_ref.setter
+    def flavor_ref(self, flavor_ref):
+        """Sets the flavor_ref of this ListInstanceResponse.
+
+        规格码。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+
+        :param flavor_ref: The flavor_ref of this ListInstanceResponse.
+        :type: str
+        """
+        self._flavor_ref = flavor_ref
+
+    @property
+    def flavor_info(self):
+        """Gets the flavor_info of this ListInstanceResponse.
+
+
+        :return: The flavor_info of this ListInstanceResponse.
+        :rtype: ListFlavorInfo
+        """
+        return self._flavor_info
+
+    @flavor_info.setter
+    def flavor_info(self, flavor_info):
+        """Sets the flavor_info of this ListInstanceResponse.
+
+
+        :param flavor_info: The flavor_info of this ListInstanceResponse.
+        :type: ListFlavorInfo
+        """
+        self._flavor_info = flavor_info
+
+    @property
+    def volume(self):
+        """Gets the volume of this ListInstanceResponse.
+
+
+        :return: The volume of this ListInstanceResponse.
+        :rtype: ListVolume
+        """
+        return self._volume
+
+    @volume.setter
+    def volume(self, volume):
+        """Sets the volume of this ListInstanceResponse.
+
+
+        :param volume: The volume of this ListInstanceResponse.
+        :type: ListVolume
+        """
+        self._volume = volume
+
+    @property
+    def switch_strategy(self):
+        """Gets the switch_strategy of this ListInstanceResponse.
+
+        数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。
+
+        :return: The switch_strategy of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._switch_strategy
+
+    @switch_strategy.setter
+    def switch_strategy(self, switch_strategy):
+        """Sets the switch_strategy of this ListInstanceResponse.
+
+        数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。
+
+        :param switch_strategy: The switch_strategy of this ListInstanceResponse.
+        :type: str
+        """
+        self._switch_strategy = switch_strategy
+
+    @property
+    def backup_strategy(self):
+        """Gets the backup_strategy of this ListInstanceResponse.
+
+
+        :return: The backup_strategy of this ListInstanceResponse.
+        :rtype: OpenGaussBackupStrategyForListResponse
+        """
+        return self._backup_strategy
+
+    @backup_strategy.setter
+    def backup_strategy(self, backup_strategy):
+        """Sets the backup_strategy of this ListInstanceResponse.
+
+
+        :param backup_strategy: The backup_strategy of this ListInstanceResponse.
+        :type: OpenGaussBackupStrategyForListResponse
+        """
+        self._backup_strategy = backup_strategy
+
+    @property
+    def maintenance_window(self):
+        """Gets the maintenance_window of this ListInstanceResponse.
+
+        可维护时间窗，为UTC时间。
+
+        :return: The maintenance_window of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._maintenance_window
+
+    @maintenance_window.setter
+    def maintenance_window(self, maintenance_window):
+        """Sets the maintenance_window of this ListInstanceResponse.
+
+        可维护时间窗，为UTC时间。
+
+        :param maintenance_window: The maintenance_window of this ListInstanceResponse.
+        :type: str
+        """
+        self._maintenance_window = maintenance_window
+
+    @property
+    def related_instance(self):
+        """Gets the related_instance of this ListInstanceResponse.
+
+        所关联的数据库实例列表。GaussDB(for openGauss)不涉及该参数。
+
+        :return: The related_instance of this ListInstanceResponse.
+        :rtype: list[object]
+        """
+        return self._related_instance
+
+    @related_instance.setter
+    def related_instance(self, related_instance):
+        """Sets the related_instance of this ListInstanceResponse.
+
+        所关联的数据库实例列表。GaussDB(for openGauss)不涉及该参数。
+
+        :param related_instance: The related_instance of this ListInstanceResponse.
+        :type: list[object]
+        """
+        self._related_instance = related_instance
+
+    @property
+    def nodes(self):
+        """Gets the nodes of this ListInstanceResponse.
+
+        实例节点信息。
+
+        :return: The nodes of this ListInstanceResponse.
+        :rtype: list[object]
+        """
+        return self._nodes
+
+    @nodes.setter
+    def nodes(self, nodes):
+        """Sets the nodes of this ListInstanceResponse.
+
+        实例节点信息。
+
+        :param nodes: The nodes of this ListInstanceResponse.
+        :type: list[object]
+        """
+        self._nodes = nodes
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListInstanceResponse.
+
+        企业项目标签ID。非企业项目账号的实例，企业项目默认0。
+
+        :return: The enterprise_project_id of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListInstanceResponse.
+
+        企业项目标签ID。非企业项目账号的实例，企业项目默认0。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListInstanceResponse.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def disk_encryption_id(self):
+        """Gets the disk_encryption_id of this ListInstanceResponse.
+
+        磁盘加密密钥ID。
+
+        :return: The disk_encryption_id of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._disk_encryption_id
+
+    @disk_encryption_id.setter
+    def disk_encryption_id(self, disk_encryption_id):
+        """Sets the disk_encryption_id of this ListInstanceResponse.
+
+        磁盘加密密钥ID。
+
+        :param disk_encryption_id: The disk_encryption_id of this ListInstanceResponse.
+        :type: str
+        """
+        self._disk_encryption_id = disk_encryption_id
+
+    @property
+    def charge_info(self):
+        """Gets the charge_info of this ListInstanceResponse.
+
+
+        :return: The charge_info of this ListInstanceResponse.
+        :rtype: OpenGaussChargeInfoListResponse
+        """
+        return self._charge_info
+
+    @charge_info.setter
+    def charge_info(self, charge_info):
+        """Sets the charge_info of this ListInstanceResponse.
+
+
+        :param charge_info: The charge_info of this ListInstanceResponse.
+        :type: OpenGaussChargeInfoListResponse
+        """
+        self._charge_info = charge_info
+
+    @property
+    def time_zone(self):
+        """Gets the time_zone of this ListInstanceResponse.
+
+        时区。
+
+        :return: The time_zone of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._time_zone
+
+    @time_zone.setter
+    def time_zone(self, time_zone):
+        """Sets the time_zone of this ListInstanceResponse.
+
+        时区。
+
+        :param time_zone: The time_zone of this ListInstanceResponse.
+        :type: str
+        """
+        self._time_zone = time_zone
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListInstanceResponse.
+
+        标签列表，没有标签默认为空数组。
+
+        :return: The tags of this ListInstanceResponse.
+        :rtype: list[object]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListInstanceResponse.
+
+        标签列表，没有标签默认为空数组。
+
+        :param tags: The tags of this ListInstanceResponse.
+        :type: list[object]
+        """
+        self._tags = tags
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ListInstanceResponse):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CdmCreateClusterReqClusterDatastore:
+class CreateInstanceRequest:
 
 
     """
@@ -22,70 +22,70 @@ class CdmCreateClusterReqClusterDatastore:
     sensitive_list = []
 
     openapi_types = {
-        'type': 'str',
-        'version': 'str'
+        'x_language': 'str',
+        'body': 'OpenGaussInstanceRequest'
     }
 
     attribute_map = {
-        'type': 'type',
-        'version': 'version'
+        'x_language': 'X-Language',
+        'body': 'body'
     }
 
-    def __init__(self, type=None, version=None):
-        """CdmCreateClusterReqClusterDatastore - a model defined in huaweicloud sdk"""
+    def __init__(self, x_language=None, body=None):
+        """CreateInstanceRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._type = None
-        self._version = None
+        self._x_language = None
+        self._body = None
         self.discriminator = None
 
-        self.type = type
-        self.version = version
+        if x_language is not None:
+            self.x_language = x_language
+        if body is not None:
+            self.body = body
 
     @property
-    def type(self):
-        """Gets the type of this CdmCreateClusterReqClusterDatastore.
+    def x_language(self):
+        """Gets the x_language of this CreateInstanceRequest.
 
-        集群类型，当前只有“cdm”一种类型
+        语言
 
-        :return: The type of this CdmCreateClusterReqClusterDatastore.
+        :return: The x_language of this CreateInstanceRequest.
         :rtype: str
         """
-        return self._type
+        return self._x_language
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this CdmCreateClusterReqClusterDatastore.
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this CreateInstanceRequest.
 
-        集群类型，当前只有“cdm”一种类型
+        语言
 
-        :param type: The type of this CdmCreateClusterReqClusterDatastore.
+        :param x_language: The x_language of this CreateInstanceRequest.
         :type: str
         """
-        self._type = type
+        self._x_language = x_language
 
     @property
-    def version(self):
-        """Gets the version of this CdmCreateClusterReqClusterDatastore.
+    def body(self):
+        """Gets the body of this CreateInstanceRequest.
 
-        集群版本
 
-        :return: The version of this CdmCreateClusterReqClusterDatastore.
-        :rtype: str
+        :return: The body of this CreateInstanceRequest.
+        :rtype: OpenGaussInstanceRequest
         """
-        return self._version
+        return self._body
 
-    @version.setter
-    def version(self, version):
-        """Sets the version of this CdmCreateClusterReqClusterDatastore.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this CreateInstanceRequest.
 
-        集群版本
 
-        :param version: The version of this CdmCreateClusterReqClusterDatastore.
-        :type: str
+        :param body: The body of this CreateInstanceRequest.
+        :type: OpenGaussInstanceRequest
         """
-        self._version = version
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -129,7 +129,7 @@ class CdmCreateClusterReqClusterDatastore:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CdmCreateClusterReqClusterDatastore):
+        if not isinstance(other, CreateInstanceRequest):
             return False
 
         return self.__dict__ == other.__dict__

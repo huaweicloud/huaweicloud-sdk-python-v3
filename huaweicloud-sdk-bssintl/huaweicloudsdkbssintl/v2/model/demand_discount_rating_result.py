@@ -24,7 +24,7 @@ class DemandDiscountRatingResult:
     openapi_types = {
         'discount_id': 'str',
         'discount_type': 'int',
-        'amount': 'float',
+        'amount': 'decimal.Decimal',
         'measure_id': 'int',
         'discount_name': 'str'
     }
@@ -111,7 +111,7 @@ class DemandDiscountRatingResult:
         优惠金额
 
         :return: The amount of this DemandDiscountRatingResult.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._amount
 
@@ -122,7 +122,7 @@ class DemandDiscountRatingResult:
         优惠金额
 
         :param amount: The amount of this DemandDiscountRatingResult.
-        :type: float
+        :type: decimal.Decimal
         """
         self._amount = amount
 

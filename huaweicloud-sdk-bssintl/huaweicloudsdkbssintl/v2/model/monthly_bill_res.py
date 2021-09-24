@@ -36,17 +36,17 @@ class MonthlyBillRes:
         'enterprise_project_id': 'str',
         'enterprise_project_name': 'str',
         'charge_mode': 'int',
-        'consume_amount': 'float',
-        'cash_amount': 'float',
-        'credit_amount': 'float',
-        'coupon_amount': 'float',
-        'flexipurchase_coupon_amount': 'float',
-        'stored_card_amount': 'float',
-        'bonus_amount': 'float',
-        'debt_amount': 'float',
-        'adjustment_amount': 'float',
-        'official_amount': 'float',
-        'discount_amount': 'float',
+        'consume_amount': 'decimal.Decimal',
+        'cash_amount': 'decimal.Decimal',
+        'credit_amount': 'decimal.Decimal',
+        'coupon_amount': 'decimal.Decimal',
+        'flexipurchase_coupon_amount': 'decimal.Decimal',
+        'stored_card_amount': 'decimal.Decimal',
+        'bonus_amount': 'decimal.Decimal',
+        'debt_amount': 'decimal.Decimal',
+        'adjustment_amount': 'decimal.Decimal',
+        'official_amount': 'decimal.Decimal',
+        'discount_amount': 'decimal.Decimal',
         'measure_id': 'int'
     }
 
@@ -480,7 +480,7 @@ class MonthlyBillRes:
         |参数名称：客户购买云服务类型的消费金额| |参数的约束及描述：该参数非必填，包含代金券，大陆站还包含现金券，大陆站精确到小数点后8位，国际站精确到小数点后2位。|
 
         :return: The consume_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._consume_amount
 
@@ -491,7 +491,7 @@ class MonthlyBillRes:
         |参数名称：客户购买云服务类型的消费金额| |参数的约束及描述：该参数非必填，包含代金券，大陆站还包含现金券，大陆站精确到小数点后8位，国际站精确到小数点后2位。|
 
         :param consume_amount: The consume_amount of this MonthlyBillRes.
-        :type: float
+        :type: decimal.Decimal
         """
         self._consume_amount = consume_amount
 
@@ -502,7 +502,7 @@ class MonthlyBillRes:
         |参数名称：现金支付金额| |参数的约束及描述：该参数非必填|
 
         :return: The cash_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._cash_amount
 
@@ -513,7 +513,7 @@ class MonthlyBillRes:
         |参数名称：现金支付金额| |参数的约束及描述：该参数非必填|
 
         :param cash_amount: The cash_amount of this MonthlyBillRes.
-        :type: float
+        :type: decimal.Decimal
         """
         self._cash_amount = cash_amount
 
@@ -524,7 +524,7 @@ class MonthlyBillRes:
         |参数名称：信用额度支付金额| |参数的约束及描述：该参数非必填|
 
         :return: The credit_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._credit_amount
 
@@ -535,7 +535,7 @@ class MonthlyBillRes:
         |参数名称：信用额度支付金额| |参数的约束及描述：该参数非必填|
 
         :param credit_amount: The credit_amount of this MonthlyBillRes.
-        :type: float
+        :type: decimal.Decimal
         """
         self._credit_amount = credit_amount
 
@@ -546,7 +546,7 @@ class MonthlyBillRes:
         |参数名称：代金券支付金额| |参数的约束及描述：该参数非必填。|
 
         :return: The coupon_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._coupon_amount
 
@@ -557,7 +557,7 @@ class MonthlyBillRes:
         |参数名称：代金券支付金额| |参数的约束及描述：该参数非必填。|
 
         :param coupon_amount: The coupon_amount of this MonthlyBillRes.
-        :type: float
+        :type: decimal.Decimal
         """
         self._coupon_amount = coupon_amount
 
@@ -568,7 +568,7 @@ class MonthlyBillRes:
         |参数名称：现金券支付金额| |参数的约束及描述：该参数非必填。|
 
         :return: The flexipurchase_coupon_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._flexipurchase_coupon_amount
 
@@ -579,7 +579,7 @@ class MonthlyBillRes:
         |参数名称：现金券支付金额| |参数的约束及描述：该参数非必填。|
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this MonthlyBillRes.
-        :type: float
+        :type: decimal.Decimal
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
@@ -590,7 +590,7 @@ class MonthlyBillRes:
         |参数名称：储值卡支付金额| |参数的约束及描述：该参数非必填。|
 
         :return: The stored_card_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._stored_card_amount
 
@@ -601,7 +601,7 @@ class MonthlyBillRes:
         |参数名称：储值卡支付金额| |参数的约束及描述：该参数非必填。|
 
         :param stored_card_amount: The stored_card_amount of this MonthlyBillRes.
-        :type: float
+        :type: decimal.Decimal
         """
         self._stored_card_amount = stored_card_amount
 
@@ -612,7 +612,7 @@ class MonthlyBillRes:
         |参数名称：奖励金支付金额（用于现网未清干净的奖励金）| |参数的约束及描述：该参数非必填。|
 
         :return: The bonus_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._bonus_amount
 
@@ -623,7 +623,7 @@ class MonthlyBillRes:
         |参数名称：奖励金支付金额（用于现网未清干净的奖励金）| |参数的约束及描述：该参数非必填。|
 
         :param bonus_amount: The bonus_amount of this MonthlyBillRes.
-        :type: float
+        :type: decimal.Decimal
         """
         self._bonus_amount = bonus_amount
 
@@ -634,7 +634,7 @@ class MonthlyBillRes:
         |参数名称：欠费金额| |参数的约束及描述：该参数非必填。|
 
         :return: The debt_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._debt_amount
 
@@ -645,7 +645,7 @@ class MonthlyBillRes:
         |参数名称：欠费金额| |参数的约束及描述：该参数非必填。|
 
         :param debt_amount: The debt_amount of this MonthlyBillRes.
-        :type: float
+        :type: decimal.Decimal
         """
         self._debt_amount = debt_amount
 
@@ -656,7 +656,7 @@ class MonthlyBillRes:
         |参数名称：欠费核销金额| |参数的约束及描述：该参数非必填。|
 
         :return: The adjustment_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._adjustment_amount
 
@@ -667,7 +667,7 @@ class MonthlyBillRes:
         |参数名称：欠费核销金额| |参数的约束及描述：该参数非必填。|
 
         :param adjustment_amount: The adjustment_amount of this MonthlyBillRes.
-        :type: float
+        :type: decimal.Decimal
         """
         self._adjustment_amount = adjustment_amount
 
@@ -678,7 +678,7 @@ class MonthlyBillRes:
         |参数名称：官网价| |参数的约束及描述：该参数非必填。|
 
         :return: The official_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._official_amount
 
@@ -689,7 +689,7 @@ class MonthlyBillRes:
         |参数名称：官网价| |参数的约束及描述：该参数非必填。|
 
         :param official_amount: The official_amount of this MonthlyBillRes.
-        :type: float
+        :type: decimal.Decimal
         """
         self._official_amount = official_amount
 
@@ -700,7 +700,7 @@ class MonthlyBillRes:
         |参数名称：对应官网价折扣金额| |参数的约束及描述：该参数非必填。|
 
         :return: The discount_amount of this MonthlyBillRes.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._discount_amount
 
@@ -711,7 +711,7 @@ class MonthlyBillRes:
         |参数名称：对应官网价折扣金额| |参数的约束及描述：该参数非必填。|
 
         :param discount_amount: The discount_amount of this MonthlyBillRes.
-        :type: float
+        :type: decimal.Decimal
         """
         self._discount_amount = discount_amount
 

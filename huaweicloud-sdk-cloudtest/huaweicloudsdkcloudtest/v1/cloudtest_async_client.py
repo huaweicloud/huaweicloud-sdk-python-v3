@@ -914,7 +914,7 @@ class CloudtestAsyncClient(Client):
         :return: ShowTestCaseDetailV2Response
         """
 
-        all_params = ['project_id', 'testcase_number', 'testcase_id']
+        all_params = ['project_id', 'testcase_number']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -929,8 +929,6 @@ class CloudtestAsyncClient(Client):
         query_params = []
         if 'testcase_number' in local_var_params:
             query_params.append(('testcase_number', local_var_params['testcase_number']))
-        if 'testcase_id' in local_var_params:
-            query_params.append(('testcase_id', local_var_params['testcase_id']))
 
         header_params = {}
 

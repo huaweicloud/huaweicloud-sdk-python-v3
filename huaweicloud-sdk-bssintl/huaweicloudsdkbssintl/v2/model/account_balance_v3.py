@@ -24,10 +24,10 @@ class AccountBalanceV3:
     openapi_types = {
         'account_id': 'str',
         'account_type': 'int',
-        'amount': 'float',
+        'amount': 'decimal.Decimal',
         'currency': 'str',
-        'designated_amount': 'float',
-        'credit_amount': 'float',
+        'designated_amount': 'decimal.Decimal',
+        'credit_amount': 'decimal.Decimal',
         'measure_id': 'int'
     }
 
@@ -116,7 +116,7 @@ class AccountBalanceV3:
         |参数名称：余额。| |参数的约束及描述：余额。|
 
         :return: The amount of this AccountBalanceV3.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._amount
 
@@ -127,7 +127,7 @@ class AccountBalanceV3:
         |参数名称：余额。| |参数的约束及描述：余额。|
 
         :param amount: The amount of this AccountBalanceV3.
-        :type: float
+        :type: decimal.Decimal
         """
         self._amount = amount
 
@@ -160,7 +160,7 @@ class AccountBalanceV3:
         |参数名称：专款专用余额。| |参数的约束及描述：专款专用余额。|
 
         :return: The designated_amount of this AccountBalanceV3.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._designated_amount
 
@@ -171,7 +171,7 @@ class AccountBalanceV3:
         |参数名称：专款专用余额。| |参数的约束及描述：专款专用余额。|
 
         :param designated_amount: The designated_amount of this AccountBalanceV3.
-        :type: float
+        :type: decimal.Decimal
         """
         self._designated_amount = designated_amount
 
@@ -182,7 +182,7 @@ class AccountBalanceV3:
         |参数名称：总信用额度。只有账户类型是2:信用的时候才有该字段| |参数的约束及描述：总信用额度。只有账户类型是2:信用的时候才有该字段|
 
         :return: The credit_amount of this AccountBalanceV3.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._credit_amount
 
@@ -193,7 +193,7 @@ class AccountBalanceV3:
         |参数名称：总信用额度。只有账户类型是2:信用的时候才有该字段| |参数的约束及描述：总信用额度。只有账户类型是2:信用的时候才有该字段|
 
         :param credit_amount: The credit_amount of this AccountBalanceV3.
-        :type: float
+        :type: decimal.Decimal
         """
         self._credit_amount = credit_amount
 

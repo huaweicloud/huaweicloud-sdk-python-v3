@@ -29,8 +29,8 @@ class FreeResourceDetail:
         'usage_type_name': 'str',
         'start_time': 'str',
         'end_time': 'str',
-        'amount': 'float',
-        'original_amount': 'float',
+        'amount': 'decimal.Decimal',
+        'original_amount': 'decimal.Decimal',
         'measure_id': 'int'
     }
 
@@ -246,7 +246,7 @@ class FreeResourceDetail:
         |参数名称：免费资源剩余额度| |参数的约束及描述：免费资源剩余额度|
 
         :return: The amount of this FreeResourceDetail.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._amount
 
@@ -257,7 +257,7 @@ class FreeResourceDetail:
         |参数名称：免费资源剩余额度| |参数的约束及描述：免费资源剩余额度|
 
         :param amount: The amount of this FreeResourceDetail.
-        :type: float
+        :type: decimal.Decimal
         """
         self._amount = amount
 
@@ -268,7 +268,7 @@ class FreeResourceDetail:
         |参数名称：免费资源原始额度| |参数的约束及描述：免费资源原始额度|
 
         :return: The original_amount of this FreeResourceDetail.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._original_amount
 
@@ -279,7 +279,7 @@ class FreeResourceDetail:
         |参数名称：免费资源原始额度| |参数的约束及描述：免费资源原始额度|
 
         :param original_amount: The original_amount of this FreeResourceDetail.
-        :type: float
+        :type: decimal.Decimal
         """
         self._original_amount = original_amount
 

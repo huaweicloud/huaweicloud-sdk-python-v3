@@ -50,6 +50,7 @@ from huaweicloudsdkcdn.v1.model.origin_range_body import OriginRangeBody
 from huaweicloudsdkcdn.v1.model.origin_request import OriginRequest
 from huaweicloudsdkcdn.v1.model.preheating_task_request import PreheatingTaskRequest
 from huaweicloudsdkcdn.v1.model.preheating_task_request_body import PreheatingTaskRequestBody
+from huaweicloudsdkcdn.v1.model.quotas import Quotas
 from huaweicloudsdkcdn.v1.model.range_status_request import RangeStatusRequest
 from huaweicloudsdkcdn.v1.model.referer import Referer
 from huaweicloudsdkcdn.v1.model.referer_body import RefererBody
@@ -86,7 +87,6 @@ from huaweicloudsdkcdn.v1.model.show_origin_host_request import ShowOriginHostRe
 from huaweicloudsdkcdn.v1.model.show_origin_host_response import ShowOriginHostResponse
 from huaweicloudsdkcdn.v1.model.show_quota_request import ShowQuotaRequest
 from huaweicloudsdkcdn.v1.model.show_quota_response import ShowQuotaResponse
-from huaweicloudsdkcdn.v1.model.show_quota_response_body_quotas import ShowQuotaResponseBodyQuotas
 from huaweicloudsdkcdn.v1.model.show_refer_request import ShowReferRequest
 from huaweicloudsdkcdn.v1.model.show_refer_response import ShowReferResponse
 from huaweicloudsdkcdn.v1.model.show_response_header_request import ShowResponseHeaderRequest

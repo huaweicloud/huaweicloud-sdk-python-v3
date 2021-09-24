@@ -28,7 +28,8 @@ class JudgementTaskRequestBody:
         'description': 'str',
         'runtime_type': 'str',
         'timeout': 'int',
-        'output_type': 'str'
+        'output_type': 'str',
+        'testcases': 'list[JudgementCaseInfo]'
     }
 
     attribute_map = {
@@ -38,10 +39,11 @@ class JudgementTaskRequestBody:
         'description': 'description',
         'runtime_type': 'runtime_type',
         'timeout': 'timeout',
-        'output_type': 'output_type'
+        'output_type': 'output_type',
+        'testcases': 'testcases'
     }
 
-    def __init__(self, notify_url=None, code_type=None, source_code=None, description=None, runtime_type=None, timeout=None, output_type=None):
+    def __init__(self, notify_url=None, code_type=None, source_code=None, description=None, runtime_type=None, timeout=None, output_type=None, testcases=None):
         """JudgementTaskRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -53,6 +55,7 @@ class JudgementTaskRequestBody:
         self._runtime_type = None
         self._timeout = None
         self._output_type = None
+        self._testcases = None
         self.discriminator = None
 
         self.notify_url = notify_url
@@ -64,6 +67,8 @@ class JudgementTaskRequestBody:
         if timeout is not None:
             self.timeout = timeout
         self.output_type = output_type
+        if testcases is not None:
+            self.testcases = testcases
 
     @property
     def notify_url(self):
@@ -201,7 +206,7 @@ class JudgementTaskRequestBody:
     def output_type(self):
         """Gets the output_type of this JudgementTaskRequestBody.
 
-        结果返回类型：sysout（标准输出）、fileout（以文件形式输出）、imgout（以图片形式输出）
+        结果返回类型：sysout（标准输出）、fileout（以文件形式输出）、imgout（以图片形式输出）、caseout（用例运行返回）、judgeout（输出评判返回）
 
         :return: The output_type of this JudgementTaskRequestBody.
         :rtype: str
@@ -212,12 +217,34 @@ class JudgementTaskRequestBody:
     def output_type(self, output_type):
         """Sets the output_type of this JudgementTaskRequestBody.
 
-        结果返回类型：sysout（标准输出）、fileout（以文件形式输出）、imgout（以图片形式输出）
+        结果返回类型：sysout（标准输出）、fileout（以文件形式输出）、imgout（以图片形式输出）、caseout（用例运行返回）、judgeout（输出评判返回）
 
         :param output_type: The output_type of this JudgementTaskRequestBody.
         :type: str
         """
         self._output_type = output_type
+
+    @property
+    def testcases(self):
+        """Gets the testcases of this JudgementTaskRequestBody.
+
+        当判题结果类型是caseout和judgeout类型才需要传的字段，表示用例数据
+
+        :return: The testcases of this JudgementTaskRequestBody.
+        :rtype: list[JudgementCaseInfo]
+        """
+        return self._testcases
+
+    @testcases.setter
+    def testcases(self, testcases):
+        """Sets the testcases of this JudgementTaskRequestBody.
+
+        当判题结果类型是caseout和judgeout类型才需要传的字段，表示用例数据
+
+        :param testcases: The testcases of this JudgementTaskRequestBody.
+        :type: list[JudgementCaseInfo]
+        """
+        self._testcases = testcases
 
     def to_dict(self):
         """Returns the model properties as a dict"""

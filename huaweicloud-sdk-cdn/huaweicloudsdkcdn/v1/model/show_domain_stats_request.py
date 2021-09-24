@@ -89,7 +89,7 @@ class ShowDomainStatsRequest:
     def action(self):
         """Gets the action of this ShowDomainStatsRequest.
 
-        查询类型，可选location_summary,location_detail
+        查询类型，可选location_summary,location_detail  location_summary：查询汇总数据 location_detail：查询数据详情 
 
         :return: The action of this ShowDomainStatsRequest.
         :rtype: str
@@ -100,7 +100,7 @@ class ShowDomainStatsRequest:
     def action(self, action):
         """Sets the action of this ShowDomainStatsRequest.
 
-        查询类型，可选location_summary,location_detail
+        查询类型，可选location_summary,location_detail  location_summary：查询汇总数据 location_detail：查询数据详情 
 
         :param action: The action of this ShowDomainStatsRequest.
         :type: str
@@ -111,7 +111,7 @@ class ShowDomainStatsRequest:
     def start_time(self):
         """Gets the start_time of this ShowDomainStatsRequest.
 
-        查询起始时间戳，必须设为5分钟整时刻点
+        查询起始时间戳， 时间戳应设置需为整5分钟或整小时时刻点，设置方式如下  interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) interval大于等于3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) 
 
         :return: The start_time of this ShowDomainStatsRequest.
         :rtype: int
@@ -122,7 +122,7 @@ class ShowDomainStatsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowDomainStatsRequest.
 
-        查询起始时间戳，必须设为5分钟整时刻点
+        查询起始时间戳， 时间戳应设置需为整5分钟或整小时时刻点，设置方式如下  interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) interval大于等于3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) 
 
         :param start_time: The start_time of this ShowDomainStatsRequest.
         :type: int
@@ -133,7 +133,7 @@ class ShowDomainStatsRequest:
     def end_time(self):
         """Gets the end_time of this ShowDomainStatsRequest.
 
-        查询结束时间戳，必须设为5分钟整时刻点，与开始时间戳时间差不可以超过一天
+        查询结束时间戳， 时间戳应设置需为整5分钟或整小时时刻点，设置方式如下  interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-11 10:15:00) interval大于等于3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) 
 
         :return: The end_time of this ShowDomainStatsRequest.
         :rtype: int
@@ -144,7 +144,7 @@ class ShowDomainStatsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowDomainStatsRequest.
 
-        查询结束时间戳，必须设为5分钟整时刻点，与开始时间戳时间差不可以超过一天
+        查询结束时间戳， 时间戳应设置需为整5分钟或整小时时刻点，设置方式如下  interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-11 10:15:00) interval大于等于3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) 
 
         :param end_time: The end_time of this ShowDomainStatsRequest.
         :type: int
@@ -155,7 +155,7 @@ class ShowDomainStatsRequest:
     def interval(self):
         """Gets the interval of this ShowDomainStatsRequest.
 
-        查询间隔，对详情类查询有效，如location_detail
+        查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),14400(4小时)等
 
         :return: The interval of this ShowDomainStatsRequest.
         :rtype: int
@@ -166,7 +166,7 @@ class ShowDomainStatsRequest:
     def interval(self, interval):
         """Sets the interval of this ShowDomainStatsRequest.
 
-        查询间隔，对详情类查询有效，如location_detail
+        查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),14400(4小时)等
 
         :param interval: The interval of this ShowDomainStatsRequest.
         :type: int

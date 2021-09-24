@@ -1,3 +1,77 @@
+# 3.0.61 2021-09-24
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 支持接口`ListParnterAdjustRecords`和`ListFreeResourceInfos`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListSubCustomerBillDetail`
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口名调整： `ListFreeResources` -> `ListFreeResourceUsages`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 支持接口`ShowQuotas`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Classroom
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ApplyJudgement`新增非必填的请求参数`testcases`
+
+### HuaweiCloud SDK Cloudtest
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowTestCaseDetailV2`的请求参数`testcase_number`改为必填，移除请求参数`testcase_id`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 支持云数据库GaussDB(for openGauss)服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+  - 支持接口`ListRecordContents`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SWR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListRepositoryTags`新增响应参数`domain_id`、`scanned`、`tag_type`
+
 # 3.0.60 2021-09-16
 
 ### HuaweiCloud SDK CCE

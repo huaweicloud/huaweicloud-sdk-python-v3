@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListFreeResourcesRequest:
+class DeleteInstanceRequest:
 
 
     """
@@ -23,69 +23,70 @@ class ListFreeResourcesRequest:
 
     openapi_types = {
         'x_language': 'str',
-        'body': 'ListFreeResourcesReq'
+        'instance_id': 'str'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
-        'body': 'body'
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, x_language=None, body=None):
-        """ListFreeResourcesRequest - a model defined in huaweicloud sdk"""
+    def __init__(self, x_language=None, instance_id=None):
+        """DeleteInstanceRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._x_language = None
-        self._body = None
+        self._instance_id = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
-        if body is not None:
-            self.body = body
+        self.instance_id = instance_id
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListFreeResourcesRequest.
+        """Gets the x_language of this DeleteInstanceRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        语言
 
-        :return: The x_language of this ListFreeResourcesRequest.
+        :return: The x_language of this DeleteInstanceRequest.
         :rtype: str
         """
         return self._x_language
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListFreeResourcesRequest.
+        """Sets the x_language of this DeleteInstanceRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        语言
 
-        :param x_language: The x_language of this ListFreeResourcesRequest.
+        :param x_language: The x_language of this DeleteInstanceRequest.
         :type: str
         """
         self._x_language = x_language
 
     @property
-    def body(self):
-        """Gets the body of this ListFreeResourcesRequest.
+    def instance_id(self):
+        """Gets the instance_id of this DeleteInstanceRequest.
 
+        实例ID，严格匹配UUID规则。
 
-        :return: The body of this ListFreeResourcesRequest.
-        :rtype: ListFreeResourcesReq
+        :return: The instance_id of this DeleteInstanceRequest.
+        :rtype: str
         """
-        return self._body
+        return self._instance_id
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this ListFreeResourcesRequest.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this DeleteInstanceRequest.
 
+        实例ID，严格匹配UUID规则。
 
-        :param body: The body of this ListFreeResourcesRequest.
-        :type: ListFreeResourcesReq
+        :param instance_id: The instance_id of this DeleteInstanceRequest.
+        :type: str
         """
-        self._body = body
+        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -129,7 +130,7 @@ class ListFreeResourcesRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListFreeResourcesRequest):
+        if not isinstance(other, DeleteInstanceRequest):
             return False
 
         return self.__dict__ == other.__dict__

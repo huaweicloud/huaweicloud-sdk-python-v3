@@ -22,9 +22,9 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'amount': 'float',
-        'discount_amount': 'float',
-        'official_website_amount': 'float',
+        'amount': 'decimal.Decimal',
+        'discount_amount': 'decimal.Decimal',
+        'official_website_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'currency': 'str',
         'product_rating_results': 'list[DemandProductRatingResult]'
@@ -72,7 +72,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         |参数名称：总额| |参数约束及描述：即最终优惠后的金额|
 
         :return: The amount of this ListOnDemandResourceRatingsResponse.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._amount
 
@@ -83,7 +83,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         |参数名称：总额| |参数约束及描述：即最终优惠后的金额|
 
         :param amount: The amount of this ListOnDemandResourceRatingsResponse.
-        :type: float
+        :type: decimal.Decimal
         """
         self._amount = amount
 
@@ -94,7 +94,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         |参数名称：优惠额| |参数约束及描述：（官网价和总价的差）|
 
         :return: The discount_amount of this ListOnDemandResourceRatingsResponse.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._discount_amount
 
@@ -105,7 +105,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         |参数名称：优惠额| |参数约束及描述：（官网价和总价的差）|
 
         :param discount_amount: The discount_amount of this ListOnDemandResourceRatingsResponse.
-        :type: float
+        :type: decimal.Decimal
         """
         self._discount_amount = discount_amount
 
@@ -116,7 +116,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         |参数名称：官网价| |参数约束及描述：官网价|
 
         :return: The official_website_amount of this ListOnDemandResourceRatingsResponse.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._official_website_amount
 
@@ -127,7 +127,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         |参数名称：官网价| |参数约束及描述：官网价|
 
         :param official_website_amount: The official_website_amount of this ListOnDemandResourceRatingsResponse.
-        :type: float
+        :type: decimal.Decimal
         """
         self._official_website_amount = official_website_amount
 

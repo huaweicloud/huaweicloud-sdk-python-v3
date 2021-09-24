@@ -22,7 +22,7 @@ class OfficialWebsiteRatingResult:
     sensitive_list = []
 
     openapi_types = {
-        'official_website_amount': 'float',
+        'official_website_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'product_rating_results': 'list[PeriodProductOfficialRatingResult]'
     }
@@ -57,7 +57,7 @@ class OfficialWebsiteRatingResult:
         |参数名称：官网价| |参数约束及描述：官网价|
 
         :return: The official_website_amount of this OfficialWebsiteRatingResult.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._official_website_amount
 
@@ -68,7 +68,7 @@ class OfficialWebsiteRatingResult:
         |参数名称：官网价| |参数约束及描述：官网价|
 
         :param official_website_amount: The official_website_amount of this OfficialWebsiteRatingResult.
-        :type: float
+        :type: decimal.Decimal
         """
         self._official_website_amount = official_website_amount
 

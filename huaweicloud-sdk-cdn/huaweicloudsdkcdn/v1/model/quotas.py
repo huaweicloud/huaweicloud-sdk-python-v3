@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowQuotaResponseBodyQuotas:
+class Quotas:
 
 
     """
@@ -36,7 +36,7 @@ class ShowQuotaResponseBodyQuotas:
     }
 
     def __init__(self, quota_limit=None, type=None, used=None, user_domain_id=None):
-        """ShowQuotaResponseBodyQuotas - a model defined in huaweicloud sdk"""
+        """Quotas - a model defined in huaweicloud sdk"""
         
         
 
@@ -57,88 +57,88 @@ class ShowQuotaResponseBodyQuotas:
 
     @property
     def quota_limit(self):
-        """Gets the quota_limit of this ShowQuotaResponseBodyQuotas.
+        """Gets the quota_limit of this Quotas.
 
         配额上限
 
-        :return: The quota_limit of this ShowQuotaResponseBodyQuotas.
+        :return: The quota_limit of this Quotas.
         :rtype: int
         """
         return self._quota_limit
 
     @quota_limit.setter
     def quota_limit(self, quota_limit):
-        """Sets the quota_limit of this ShowQuotaResponseBodyQuotas.
+        """Sets the quota_limit of this Quotas.
 
         配额上限
 
-        :param quota_limit: The quota_limit of this ShowQuotaResponseBodyQuotas.
+        :param quota_limit: The quota_limit of this Quotas.
         :type: int
         """
         self._quota_limit = quota_limit
 
     @property
     def type(self):
-        """Gets the type of this ShowQuotaResponseBodyQuotas.
+        """Gets the type of this Quotas.
 
         配额类型
 
-        :return: The type of this ShowQuotaResponseBodyQuotas.
+        :return: The type of this Quotas.
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowQuotaResponseBodyQuotas.
+        """Sets the type of this Quotas.
 
         配额类型
 
-        :param type: The type of this ShowQuotaResponseBodyQuotas.
+        :param type: The type of this Quotas.
         :type: str
         """
         self._type = type
 
     @property
     def used(self):
-        """Gets the used of this ShowQuotaResponseBodyQuotas.
+        """Gets the used of this Quotas.
 
         已使用配额数
 
-        :return: The used of this ShowQuotaResponseBodyQuotas.
+        :return: The used of this Quotas.
         :rtype: int
         """
         return self._used
 
     @used.setter
     def used(self, used):
-        """Sets the used of this ShowQuotaResponseBodyQuotas.
+        """Sets the used of this Quotas.
 
         已使用配额数
 
-        :param used: The used of this ShowQuotaResponseBodyQuotas.
+        :param used: The used of this Quotas.
         :type: int
         """
         self._used = used
 
     @property
     def user_domain_id(self):
-        """Gets the user_domain_id of this ShowQuotaResponseBodyQuotas.
+        """Gets the user_domain_id of this Quotas.
 
         域名所属用户的domain_id。
 
-        :return: The user_domain_id of this ShowQuotaResponseBodyQuotas.
+        :return: The user_domain_id of this Quotas.
         :rtype: str
         """
         return self._user_domain_id
 
     @user_domain_id.setter
     def user_domain_id(self, user_domain_id):
-        """Sets the user_domain_id of this ShowQuotaResponseBodyQuotas.
+        """Sets the user_domain_id of this Quotas.
 
         域名所属用户的domain_id。
 
-        :param user_domain_id: The user_domain_id of this ShowQuotaResponseBodyQuotas.
+        :param user_domain_id: The user_domain_id of this Quotas.
         :type: str
         """
         self._user_domain_id = user_domain_id
@@ -185,7 +185,7 @@ class ShowQuotaResponseBodyQuotas:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowQuotaResponseBodyQuotas):
+        if not isinstance(other, Quotas):
             return False
 
         return self.__dict__ == other.__dict__

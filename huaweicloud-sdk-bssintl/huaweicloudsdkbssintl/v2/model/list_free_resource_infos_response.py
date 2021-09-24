@@ -8,7 +8,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListFreeResourcesResponse(SdkResponse):
+class ListFreeResourceInfosResponse(SdkResponse):
 
 
     """
@@ -22,72 +22,72 @@ class ListFreeResourcesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_count': 'int',
-        'free_resource_packages': 'list[FreeResourcePackage]'
+        'free_resource_packages': 'list[FreeResourcePackageV3]',
+        'total_count': 'int'
     }
 
     attribute_map = {
-        'total_count': 'total_count',
-        'free_resource_packages': 'free_resource_packages'
+        'free_resource_packages': 'free_resource_packages',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, total_count=None, free_resource_packages=None):
-        """ListFreeResourcesResponse - a model defined in huaweicloud sdk"""
+    def __init__(self, free_resource_packages=None, total_count=None):
+        """ListFreeResourceInfosResponse - a model defined in huaweicloud sdk"""
         
-        super(ListFreeResourcesResponse, self).__init__()
+        super(ListFreeResourceInfosResponse, self).__init__()
 
-        self._total_count = None
         self._free_resource_packages = None
+        self._total_count = None
         self.discriminator = None
 
-        if total_count is not None:
-            self.total_count = total_count
         if free_resource_packages is not None:
             self.free_resource_packages = free_resource_packages
+        if total_count is not None:
+            self.total_count = total_count
+
+    @property
+    def free_resource_packages(self):
+        """Gets the free_resource_packages of this ListFreeResourceInfosResponse.
+
+        |参数名称：调账记录列表| |参数约束以及描述：调账记录列表|
+
+        :return: The free_resource_packages of this ListFreeResourceInfosResponse.
+        :rtype: list[FreeResourcePackageV3]
+        """
+        return self._free_resource_packages
+
+    @free_resource_packages.setter
+    def free_resource_packages(self, free_resource_packages):
+        """Sets the free_resource_packages of this ListFreeResourceInfosResponse.
+
+        |参数名称：调账记录列表| |参数约束以及描述：调账记录列表|
+
+        :param free_resource_packages: The free_resource_packages of this ListFreeResourceInfosResponse.
+        :type: list[FreeResourcePackageV3]
+        """
+        self._free_resource_packages = free_resource_packages
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListFreeResourcesResponse.
+        """Gets the total_count of this ListFreeResourceInfosResponse.
 
         |参数名称：总条数| |参数的约束及描述：总条数|
 
-        :return: The total_count of this ListFreeResourcesResponse.
+        :return: The total_count of this ListFreeResourceInfosResponse.
         :rtype: int
         """
         return self._total_count
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListFreeResourcesResponse.
+        """Sets the total_count of this ListFreeResourceInfosResponse.
 
         |参数名称：总条数| |参数的约束及描述：总条数|
 
-        :param total_count: The total_count of this ListFreeResourcesResponse.
+        :param total_count: The total_count of this ListFreeResourceInfosResponse.
         :type: int
         """
         self._total_count = total_count
-
-    @property
-    def free_resource_packages(self):
-        """Gets the free_resource_packages of this ListFreeResourcesResponse.
-
-        |参数名称：免费资源套餐信息列表（按订单、产品等信息汇总）| |参数约束以及描述：免费资源套餐信息列表（按订单、产品等信息汇总）|
-
-        :return: The free_resource_packages of this ListFreeResourcesResponse.
-        :rtype: list[FreeResourcePackage]
-        """
-        return self._free_resource_packages
-
-    @free_resource_packages.setter
-    def free_resource_packages(self, free_resource_packages):
-        """Sets the free_resource_packages of this ListFreeResourcesResponse.
-
-        |参数名称：免费资源套餐信息列表（按订单、产品等信息汇总）| |参数约束以及描述：免费资源套餐信息列表（按订单、产品等信息汇总）|
-
-        :param free_resource_packages: The free_resource_packages of this ListFreeResourcesResponse.
-        :type: list[FreeResourcePackage]
-        """
-        self._free_resource_packages = free_resource_packages
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -131,7 +131,7 @@ class ListFreeResourcesResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListFreeResourcesResponse):
+        if not isinstance(other, ListFreeResourceInfosResponse):
             return False
 
         return self.__dict__ == other.__dict__

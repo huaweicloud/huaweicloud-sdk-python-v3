@@ -74,7 +74,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def start_time(self):
         """Gets the start_time of this ShowDomainStatsResponse.
 
-        数据起始时间戳，可能与请求时间不一致，可能不返回
+        数据起始时间戳，可能不返回
 
         :return: The start_time of this ShowDomainStatsResponse.
         :rtype: int
@@ -85,7 +85,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def start_time(self, start_time):
         """Sets the start_time of this ShowDomainStatsResponse.
 
-        数据起始时间戳，可能与请求时间不一致，可能不返回
+        数据起始时间戳，可能不返回
 
         :param start_time: The start_time of this ShowDomainStatsResponse.
         :type: int
@@ -96,7 +96,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def end_time(self):
         """Gets the end_time of this ShowDomainStatsResponse.
 
-        数据结束时间戳，可能与请求时间不一致，可能不返回
+        数据结束时间戳，可能不返回
 
         :return: The end_time of this ShowDomainStatsResponse.
         :rtype: int
@@ -107,7 +107,7 @@ class ShowDomainStatsResponse(SdkResponse):
     def end_time(self, end_time):
         """Sets the end_time of this ShowDomainStatsResponse.
 
-        数据结束时间戳，可能与请求时间不一致，可能不返回
+        数据结束时间戳，可能不返回
 
         :param end_time: The end_time of this ShowDomainStatsResponse.
         :type: int

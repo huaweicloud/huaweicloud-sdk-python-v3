@@ -25,7 +25,7 @@ class CdmCreateClusterReqCluster:
         'schedule_boot_time': 'str',
         'is_schedule_boot_off': 'bool',
         'instances': 'list[Instance]',
-        'datastore': 'CdmCreateClusterReqClusterDatastore',
+        'datastore': 'Datastore',
         'schedule_off_time': 'str',
         'vpc_id': 'str',
         'name': 'str',
@@ -63,15 +63,22 @@ class CdmCreateClusterReqCluster:
 
         if schedule_boot_time is not None:
             self.schedule_boot_time = schedule_boot_time
-        self.is_schedule_boot_off = is_schedule_boot_off
-        self.instances = instances
-        self.datastore = datastore
+        if is_schedule_boot_off is not None:
+            self.is_schedule_boot_off = is_schedule_boot_off
+        if instances is not None:
+            self.instances = instances
+        if datastore is not None:
+            self.datastore = datastore
         if schedule_off_time is not None:
             self.schedule_off_time = schedule_off_time
-        self.vpc_id = vpc_id
-        self.name = name
-        self.sys_tags = sys_tags
-        self.is_auto_off = is_auto_off
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
+        if name is not None:
+            self.name = name
+        if sys_tags is not None:
+            self.sys_tags = sys_tags
+        if is_auto_off is not None:
+            self.is_auto_off = is_auto_off
 
     @property
     def schedule_boot_time(self):
@@ -145,7 +152,7 @@ class CdmCreateClusterReqCluster:
 
 
         :return: The datastore of this CdmCreateClusterReqCluster.
-        :rtype: CdmCreateClusterReqClusterDatastore
+        :rtype: Datastore
         """
         return self._datastore
 
@@ -155,7 +162,7 @@ class CdmCreateClusterReqCluster:
 
 
         :param datastore: The datastore of this CdmCreateClusterReqCluster.
-        :type: CdmCreateClusterReqClusterDatastore
+        :type: Datastore
         """
         self._datastore = datastore
 

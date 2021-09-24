@@ -43,7 +43,7 @@ class UpdateInstanceConfigurationRequestBody:
     def values(self):
         """Gets the values of this UpdateInstanceConfigurationRequestBody.
 
-        参数值对象，用户基于默认参数模板自定义的参数值。
+        参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。  - key：参数名称，\"max_connections\":\"10\"。为空时不修改参数值，key不为空时value也不可为空。 - value：参数值，\"max_connections\":\"10\"。
 
         :return: The values of this UpdateInstanceConfigurationRequestBody.
         :rtype: dict(str, str)
@@ -54,7 +54,7 @@ class UpdateInstanceConfigurationRequestBody:
     def values(self, values):
         """Sets the values of this UpdateInstanceConfigurationRequestBody.
 
-        参数值对象，用户基于默认参数模板自定义的参数值。
+        参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。  - key：参数名称，\"max_connections\":\"10\"。为空时不修改参数值，key不为空时value也不可为空。 - value：参数值，\"max_connections\":\"10\"。
 
         :param values: The values of this UpdateInstanceConfigurationRequestBody.
         :type: dict(str, str)

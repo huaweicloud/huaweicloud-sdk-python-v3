@@ -23,7 +23,7 @@ class ModSubCustomerBudgetReq:
 
     openapi_types = {
         'customer_id': 'str',
-        'budget_amount': 'float',
+        'budget_amount': 'decimal.Decimal',
         'cancel_partner_frozen': 'str'
     }
 
@@ -77,7 +77,7 @@ class ModSubCustomerBudgetReq:
         |参数名称：调整的目标金额，可精确至小数点后面2位。| |参数的约束及描述：调整的目标金额，可精确至小数点后面2位。|
 
         :return: The budget_amount of this ModSubCustomerBudgetReq.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._budget_amount
 
@@ -88,7 +88,7 @@ class ModSubCustomerBudgetReq:
         |参数名称：调整的目标金额，可精确至小数点后面2位。| |参数的约束及描述：调整的目标金额，可精确至小数点后面2位。|
 
         :param budget_amount: The budget_amount of this ModSubCustomerBudgetReq.
-        :type: float
+        :type: decimal.Decimal
         """
         self._budget_amount = budget_amount
 

@@ -24,8 +24,8 @@ class OrderLineItemV3:
     openapi_types = {
         'order_line_item_ids': 'list[str]',
         'discount_mode': 'int',
-        'discount_amount': 'float',
-        'discount_ratio': 'float'
+        'discount_amount': 'decimal.Decimal',
+        'discount_ratio': 'decimal.Decimal'
     }
 
     attribute_map = {
@@ -102,7 +102,7 @@ class OrderLineItemV3:
         |参数名称：折扣额（减免金额）| |参数的约束及描述：折扣额（减免金额）|
 
         :return: The discount_amount of this OrderLineItemV3.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._discount_amount
 
@@ -113,7 +113,7 @@ class OrderLineItemV3:
         |参数名称：折扣额（减免金额）| |参数的约束及描述：折扣额（减免金额）|
 
         :param discount_amount: The discount_amount of this OrderLineItemV3.
-        :type: float
+        :type: decimal.Decimal
         """
         self._discount_amount = discount_amount
 
@@ -124,7 +124,7 @@ class OrderLineItemV3:
         |参数名称：折扣比例，折扣为| |参数的约束及描述：折扣比例，折扣为|
 
         :return: The discount_ratio of this OrderLineItemV3.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._discount_ratio
 
@@ -135,7 +135,7 @@ class OrderLineItemV3:
         |参数名称：折扣比例，折扣为| |参数的约束及描述：折扣比例，折扣为|
 
         :param discount_ratio: The discount_ratio of this OrderLineItemV3.
-        :type: float
+        :type: decimal.Decimal
         """
         self._discount_ratio = discount_ratio
 

@@ -11,6 +11,8 @@ from huaweicloudsdkclassroom.v3.model.exercise_card import ExerciseCard
 from huaweicloudsdkclassroom.v3.model.exercise_group import ExerciseGroup
 from huaweicloudsdkclassroom.v3.model.job_card import JobCard
 from huaweicloudsdkclassroom.v3.model.job_records import JobRecords
+from huaweicloudsdkclassroom.v3.model.judgement_case_info import JudgementCaseInfo
+from huaweicloudsdkclassroom.v3.model.judgement_case_result import JudgementCaseResult
 from huaweicloudsdkclassroom.v3.model.judgement_result import JudgementResult
 from huaweicloudsdkclassroom.v3.model.judgement_task_request_body import JudgementTaskRequestBody
 from huaweicloudsdkclassroom.v3.model.list_classroom_member_jobs_request import ListClassroomMemberJobsRequest

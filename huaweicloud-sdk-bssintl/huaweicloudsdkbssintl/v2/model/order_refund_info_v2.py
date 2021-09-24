@@ -23,7 +23,7 @@ class OrderRefundInfoV2:
 
     openapi_types = {
         'id': 'str',
-        'amount': 'float',
+        'amount': 'decimal.Decimal',
         'measure_id': 'str',
         'customer_id': 'str',
         'resource_type_code': 'str',
@@ -97,7 +97,7 @@ class OrderRefundInfoV2:
         |参数名称：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。| |参数的约束及描述：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。|
 
         :return: The amount of this OrderRefundInfoV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._amount
 
@@ -108,7 +108,7 @@ class OrderRefundInfoV2:
         |参数名称：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。| |参数的约束及描述：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。|
 
         :param amount: The amount of this OrderRefundInfoV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._amount = amount
 

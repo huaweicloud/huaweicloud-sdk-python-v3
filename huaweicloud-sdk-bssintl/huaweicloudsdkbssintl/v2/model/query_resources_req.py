@@ -27,7 +27,9 @@ class QueryResourcesReq:
         'only_main_resource': 'int',
         'status_list': 'list[int]',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'expire_time_begin': 'str',
+        'expire_time_end': 'str'
     }
 
     attribute_map = {
@@ -36,10 +38,12 @@ class QueryResourcesReq:
         'only_main_resource': 'only_main_resource',
         'status_list': 'status_list',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'expire_time_begin': 'expire_time_begin',
+        'expire_time_end': 'expire_time_end'
     }
 
-    def __init__(self, resource_ids=None, order_id=None, only_main_resource=None, status_list=None, offset=None, limit=None):
+    def __init__(self, resource_ids=None, order_id=None, only_main_resource=None, status_list=None, offset=None, limit=None, expire_time_begin=None, expire_time_end=None):
         """QueryResourcesReq - a model defined in huaweicloud sdk"""
         
         
@@ -50,6 +54,8 @@ class QueryResourcesReq:
         self._status_list = None
         self._offset = None
         self._limit = None
+        self._expire_time_begin = None
+        self._expire_time_end = None
         self.discriminator = None
 
         if resource_ids is not None:
@@ -64,6 +70,10 @@ class QueryResourcesReq:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if expire_time_begin is not None:
+            self.expire_time_begin = expire_time_begin
+        if expire_time_end is not None:
+            self.expire_time_end = expire_time_end
 
     @property
     def resource_ids(self):
@@ -196,6 +206,50 @@ class QueryResourcesReq:
         :type: int
         """
         self._limit = limit
+
+    @property
+    def expire_time_begin(self):
+        """Gets the expire_time_begin of this QueryResourcesReq.
+
+        |参数名称：失效开始时间，UTC时间。| |参数约束及描述：失效开始时间，UTC时间。|
+
+        :return: The expire_time_begin of this QueryResourcesReq.
+        :rtype: str
+        """
+        return self._expire_time_begin
+
+    @expire_time_begin.setter
+    def expire_time_begin(self, expire_time_begin):
+        """Sets the expire_time_begin of this QueryResourcesReq.
+
+        |参数名称：失效开始时间，UTC时间。| |参数约束及描述：失效开始时间，UTC时间。|
+
+        :param expire_time_begin: The expire_time_begin of this QueryResourcesReq.
+        :type: str
+        """
+        self._expire_time_begin = expire_time_begin
+
+    @property
+    def expire_time_end(self):
+        """Gets the expire_time_end of this QueryResourcesReq.
+
+        |参数名称：失效结束时间，UTC时间。| |参数约束及描述：失效结束时间，UTC时间。|
+
+        :return: The expire_time_end of this QueryResourcesReq.
+        :rtype: str
+        """
+        return self._expire_time_end
+
+    @expire_time_end.setter
+    def expire_time_end(self, expire_time_end):
+        """Sets the expire_time_end of this QueryResourcesReq.
+
+        |参数名称：失效结束时间，UTC时间。| |参数约束及描述：失效结束时间，UTC时间。|
+
+        :param expire_time_end: The expire_time_end of this QueryResourcesReq.
+        :type: str
+        """
+        self._expire_time_end = expire_time_end
 
     def to_dict(self):
         """Returns the model properties as a dict"""

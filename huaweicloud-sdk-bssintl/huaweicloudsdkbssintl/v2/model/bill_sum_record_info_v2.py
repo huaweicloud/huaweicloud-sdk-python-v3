@@ -26,17 +26,17 @@ class BillSumRecordInfoV2:
         'resource_type_code': 'str',
         'service_type_code': 'str',
         'charging_mode': 'int',
-        'official_amount': 'float',
-        'official_discount_amount': 'float',
-        'truncated_amount': 'float',
-        'consume_amount': 'float',
-        'coupon_amount': 'float',
-        'flexipurchase_coupon_amount': 'float',
-        'stored_value_card_amount': 'float',
-        'debt_amount': 'float',
-        'writeoff_amount': 'float',
-        'cash_amount': 'float',
-        'credit_amount': 'float',
+        'official_amount': 'decimal.Decimal',
+        'official_discount_amount': 'decimal.Decimal',
+        'truncated_amount': 'decimal.Decimal',
+        'consume_amount': 'decimal.Decimal',
+        'coupon_amount': 'decimal.Decimal',
+        'flexipurchase_coupon_amount': 'decimal.Decimal',
+        'stored_value_card_amount': 'decimal.Decimal',
+        'debt_amount': 'decimal.Decimal',
+        'writeoff_amount': 'decimal.Decimal',
+        'cash_amount': 'decimal.Decimal',
+        'credit_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'bill_type': 'int',
         'customer_id': 'str'
@@ -220,7 +220,7 @@ class BillSumRecordInfoV2:
         |参数名称：官网价| |参数的约束及描述：官网价|
 
         :return: The official_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._official_amount
 
@@ -231,7 +231,7 @@ class BillSumRecordInfoV2:
         |参数名称：官网价| |参数的约束及描述：官网价|
 
         :param official_amount: The official_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._official_amount = official_amount
 
@@ -242,7 +242,7 @@ class BillSumRecordInfoV2:
         |参数名称：折扣金额| |参数的约束及描述：折扣金额|
 
         :return: The official_discount_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._official_discount_amount
 
@@ -253,7 +253,7 @@ class BillSumRecordInfoV2:
         |参数名称：折扣金额| |参数的约束及描述：折扣金额|
 
         :param official_discount_amount: The official_discount_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._official_discount_amount = official_discount_amount
 
@@ -264,7 +264,7 @@ class BillSumRecordInfoV2:
         |参数名称：抹零金额| |参数的约束及描述：抹零金额|
 
         :return: The truncated_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._truncated_amount
 
@@ -275,7 +275,7 @@ class BillSumRecordInfoV2:
         |参数名称：抹零金额| |参数的约束及描述：抹零金额|
 
         :param truncated_amount: The truncated_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._truncated_amount = truncated_amount
 
@@ -286,7 +286,7 @@ class BillSumRecordInfoV2:
         |参数名称：应付金额，应付金额 = 官网价-折扣金额-抹零金额| |参数的约束及描述：应付金额，应付金额 = 官网价-折扣金额-抹零金额|
 
         :return: The consume_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._consume_amount
 
@@ -297,7 +297,7 @@ class BillSumRecordInfoV2:
         |参数名称：应付金额，应付金额 = 官网价-折扣金额-抹零金额| |参数的约束及描述：应付金额，应付金额 = 官网价-折扣金额-抹零金额|
 
         :param consume_amount: The consume_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._consume_amount = consume_amount
 
@@ -308,7 +308,7 @@ class BillSumRecordInfoV2:
         |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
 
         :return: The coupon_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._coupon_amount
 
@@ -319,7 +319,7 @@ class BillSumRecordInfoV2:
         |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
 
         :param coupon_amount: The coupon_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._coupon_amount = coupon_amount
 
@@ -330,7 +330,7 @@ class BillSumRecordInfoV2:
         |参数名称：现金券金额，预留。| |参数的约束及描述：现金券金额，预留。|
 
         :return: The flexipurchase_coupon_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._flexipurchase_coupon_amount
 
@@ -341,7 +341,7 @@ class BillSumRecordInfoV2:
         |参数名称：现金券金额，预留。| |参数的约束及描述：现金券金额，预留。|
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
@@ -352,7 +352,7 @@ class BillSumRecordInfoV2:
         |参数名称：储值卡金额，预留。| |参数的约束及描述：储值卡金额，预留。|
 
         :return: The stored_value_card_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._stored_value_card_amount
 
@@ -363,7 +363,7 @@ class BillSumRecordInfoV2:
         |参数名称：储值卡金额，预留。| |参数的约束及描述：储值卡金额，预留。|
 
         :param stored_value_card_amount: The stored_value_card_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._stored_value_card_amount = stored_value_card_amount
 
@@ -374,7 +374,7 @@ class BillSumRecordInfoV2:
         |参数名称：欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。| |参数的约束及描述：欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。|
 
         :return: The debt_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._debt_amount
 
@@ -385,7 +385,7 @@ class BillSumRecordInfoV2:
         |参数名称：欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。| |参数的约束及描述：欠费金额，即从客户账户扣费的时候，客户账户金额不足，欠费的金额。|
 
         :param debt_amount: The debt_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._debt_amount = debt_amount
 
@@ -396,7 +396,7 @@ class BillSumRecordInfoV2:
         |参数名称：欠费核销金额| |参数的约束及描述：欠费核销金额|
 
         :return: The writeoff_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._writeoff_amount
 
@@ -407,7 +407,7 @@ class BillSumRecordInfoV2:
         |参数名称：欠费核销金额| |参数的约束及描述：欠费核销金额|
 
         :param writeoff_amount: The writeoff_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._writeoff_amount = writeoff_amount
 
@@ -418,7 +418,7 @@ class BillSumRecordInfoV2:
         |参数名称：现金账户金额。| |参数的约束及描述：现金账户金额。|
 
         :return: The cash_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._cash_amount
 
@@ -429,7 +429,7 @@ class BillSumRecordInfoV2:
         |参数名称：现金账户金额。| |参数的约束及描述：现金账户金额。|
 
         :param cash_amount: The cash_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._cash_amount = cash_amount
 
@@ -440,7 +440,7 @@ class BillSumRecordInfoV2:
         |参数名称：信用账户金额。| |参数的约束及描述：信用账户金额。|
 
         :return: The credit_amount of this BillSumRecordInfoV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._credit_amount
 
@@ -451,7 +451,7 @@ class BillSumRecordInfoV2:
         |参数名称：信用账户金额。| |参数的约束及描述：信用账户金额。|
 
         :param credit_amount: The credit_amount of this BillSumRecordInfoV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._credit_amount = credit_amount
 

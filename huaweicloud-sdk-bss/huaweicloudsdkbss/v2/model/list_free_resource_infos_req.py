@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListFreeResourcesReq:
+class ListFreeResourceInfosReq:
 
 
     """
@@ -44,7 +44,7 @@ class ListFreeResourcesReq:
     }
 
     def __init__(self, region_code=None, order_id=None, product_id=None, product_name=None, enterprise_project_id=None, status=None, offset=None, limit=None):
-        """ListFreeResourcesReq - a model defined in huaweicloud sdk"""
+        """ListFreeResourceInfosReq - a model defined in huaweicloud sdk"""
         
         
 
@@ -77,176 +77,176 @@ class ListFreeResourcesReq:
 
     @property
     def region_code(self):
-        """Gets the region_code of this ListFreeResourcesReq.
+        """Gets the region_code of this ListFreeResourceInfosReq.
 
-        |参数名称：区域编码| |参数约束及描述：区域编码|
+        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
-        :return: The region_code of this ListFreeResourcesReq.
+        :return: The region_code of this ListFreeResourceInfosReq.
         :rtype: str
         """
         return self._region_code
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this ListFreeResourcesReq.
+        """Sets the region_code of this ListFreeResourceInfosReq.
 
-        |参数名称：区域编码| |参数约束及描述：区域编码|
+        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
-        :param region_code: The region_code of this ListFreeResourcesReq.
+        :param region_code: The region_code of this ListFreeResourceInfosReq.
         :type: str
         """
         self._region_code = region_code
 
     @property
     def order_id(self):
-        """Gets the order_id of this ListFreeResourcesReq.
+        """Gets the order_id of this ListFreeResourceInfosReq.
 
-        |参数名称：订单ID| |参数约束及描述：订单ID|
+        订单ID。
 
-        :return: The order_id of this ListFreeResourcesReq.
+        :return: The order_id of this ListFreeResourceInfosReq.
         :rtype: str
         """
         return self._order_id
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ListFreeResourcesReq.
+        """Sets the order_id of this ListFreeResourceInfosReq.
 
-        |参数名称：订单ID| |参数约束及描述：订单ID|
+        订单ID。
 
-        :param order_id: The order_id of this ListFreeResourcesReq.
+        :param order_id: The order_id of this ListFreeResourceInfosReq.
         :type: str
         """
         self._order_id = order_id
 
     @property
     def product_id(self):
-        """Gets the product_id of this ListFreeResourcesReq.
+        """Gets the product_id of this ListFreeResourceInfosReq.
 
-        |参数名称：产品ID//资源包ID| |参数约束及描述：产品ID//资源包ID|
+        产品ID，即资源包ID。
 
-        :return: The product_id of this ListFreeResourcesReq.
+        :return: The product_id of this ListFreeResourceInfosReq.
         :rtype: str
         """
         return self._product_id
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ListFreeResourcesReq.
+        """Sets the product_id of this ListFreeResourceInfosReq.
 
-        |参数名称：产品ID//资源包ID| |参数约束及描述：产品ID//资源包ID|
+        产品ID，即资源包ID。
 
-        :param product_id: The product_id of this ListFreeResourcesReq.
+        :param product_id: The product_id of this ListFreeResourceInfosReq.
         :type: str
         """
         self._product_id = product_id
 
     @property
     def product_name(self):
-        """Gets the product_name of this ListFreeResourcesReq.
+        """Gets the product_name of this ListFreeResourceInfosReq.
 
-        |参数名称：产品名称，即资源包名称| |参数约束及描述：产品名称，即资源包名称|
+        产品名称，即资源包名称。
 
-        :return: The product_name of this ListFreeResourcesReq.
+        :return: The product_name of this ListFreeResourceInfosReq.
         :rtype: str
         """
         return self._product_name
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this ListFreeResourcesReq.
+        """Sets the product_name of this ListFreeResourceInfosReq.
 
-        |参数名称：产品名称，即资源包名称| |参数约束及描述：产品名称，即资源包名称|
+        产品名称，即资源包名称。
 
-        :param product_name: The product_name of this ListFreeResourcesReq.
+        :param product_name: The product_name of this ListFreeResourceInfosReq.
         :type: str
         """
         self._product_name = product_name
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListFreeResourcesReq.
+        """Gets the enterprise_project_id of this ListFreeResourceInfosReq.
 
-        |参数名称：企业项目ID| |参数约束及描述：企业项目ID|
+        企业项目ID。
 
-        :return: The enterprise_project_id of this ListFreeResourcesReq.
+        :return: The enterprise_project_id of this ListFreeResourceInfosReq.
         :rtype: str
         """
         return self._enterprise_project_id
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListFreeResourcesReq.
+        """Sets the enterprise_project_id of this ListFreeResourceInfosReq.
 
-        |参数名称：企业项目ID| |参数约束及描述：企业项目ID|
+        企业项目ID。
 
-        :param enterprise_project_id: The enterprise_project_id of this ListFreeResourcesReq.
+        :param enterprise_project_id: The enterprise_project_id of this ListFreeResourceInfosReq.
         :type: str
         """
         self._enterprise_project_id = enterprise_project_id
 
     @property
     def status(self):
-        """Gets the status of this ListFreeResourcesReq.
+        """Gets the status of this ListFreeResourceInfosReq.
 
-        |参数名称：状态| |参数的约束及描述： 0：未生效 1：生效中 2：已用完3：已失效4：已退订|
+        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
-        :return: The status of this ListFreeResourcesReq.
+        :return: The status of this ListFreeResourceInfosReq.
         :rtype: int
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListFreeResourcesReq.
+        """Sets the status of this ListFreeResourceInfosReq.
 
-        |参数名称：状态| |参数的约束及描述： 0：未生效 1：生效中 2：已用完3：已失效4：已退订|
+        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
-        :param status: The status of this ListFreeResourcesReq.
+        :param status: The status of this ListFreeResourceInfosReq.
         :type: int
         """
         self._status = status
 
     @property
     def offset(self):
-        """Gets the offset of this ListFreeResourcesReq.
+        """Gets the offset of this ListFreeResourceInfosReq.
 
-        |参数名称：偏移量| |参数的约束及描述：从0开始，默认为0|
+        偏移量，从0开始，默认为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
-        :return: The offset of this ListFreeResourcesReq.
+        :return: The offset of this ListFreeResourceInfosReq.
         :rtype: int
         """
         return self._offset
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFreeResourcesReq.
+        """Sets the offset of this ListFreeResourceInfosReq.
 
-        |参数名称：偏移量| |参数的约束及描述：从0开始，默认为0|
+        偏移量，从0开始，默认为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
-        :param offset: The offset of this ListFreeResourcesReq.
+        :param offset: The offset of this ListFreeResourceInfosReq.
         :type: int
         """
         self._offset = offset
 
     @property
     def limit(self):
-        """Gets the limit of this ListFreeResourcesReq.
+        """Gets the limit of this ListFreeResourceInfosReq.
 
-        |参数名称：每次查询的记录数| |参数的约束及描述：默认为10|
+        每次查询的记录数，默认为10。
 
-        :return: The limit of this ListFreeResourcesReq.
+        :return: The limit of this ListFreeResourceInfosReq.
         :rtype: int
         """
         return self._limit
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFreeResourcesReq.
+        """Sets the limit of this ListFreeResourceInfosReq.
 
-        |参数名称：每次查询的记录数| |参数的约束及描述：默认为10|
+        每次查询的记录数，默认为10。
 
-        :param limit: The limit of this ListFreeResourcesReq.
+        :param limit: The limit of this ListFreeResourceInfosReq.
         :type: int
         """
         self._limit = limit
@@ -293,7 +293,7 @@ class ListFreeResourcesReq:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListFreeResourcesReq):
+        if not isinstance(other, ListFreeResourceInfosReq):
             return False
 
         return self.__dict__ == other.__dict__

@@ -38,7 +38,7 @@ class ResFeeRecordV2:
         'product_name': 'str',
         'product_spec_desc': 'str',
         'sku_code': 'str',
-        'spec_size': 'float',
+        'spec_size': 'decimal.Decimal',
         'spec_size_measure_id': 'int',
         'trade_id': 'str',
         'trade_time': 'str',
@@ -48,25 +48,25 @@ class ResFeeRecordV2:
         'order_id': 'str',
         'period_type': 'str',
         'usage_type': 'str',
-        'usage': 'float',
+        'usage': 'decimal.Decimal',
         'usage_measure_id': 'int',
-        'free_resource_usage': 'float',
+        'free_resource_usage': 'decimal.Decimal',
         'free_resource_measure_id': 'int',
-        'ri_usage': 'float',
+        'ri_usage': 'decimal.Decimal',
         'ri_usage_measure_id': 'int',
-        'unit_price': 'float',
+        'unit_price': 'decimal.Decimal',
         'unit': 'str',
-        'official_amount': 'float',
-        'discount_amount': 'float',
-        'amount': 'float',
-        'cash_amount': 'float',
-        'credit_amount': 'float',
-        'coupon_amount': 'float',
-        'flexipurchase_coupon_amount': 'float',
-        'stored_card_amount': 'float',
-        'bonus_amount': 'float',
-        'debt_amount': 'float',
-        'adjustment_amount': 'float',
+        'official_amount': 'decimal.Decimal',
+        'discount_amount': 'decimal.Decimal',
+        'amount': 'decimal.Decimal',
+        'cash_amount': 'decimal.Decimal',
+        'credit_amount': 'decimal.Decimal',
+        'coupon_amount': 'decimal.Decimal',
+        'flexipurchase_coupon_amount': 'decimal.Decimal',
+        'stored_card_amount': 'decimal.Decimal',
+        'bonus_amount': 'decimal.Decimal',
+        'debt_amount': 'decimal.Decimal',
+        'adjustment_amount': 'decimal.Decimal',
         'measure_id': 'int'
     }
 
@@ -624,7 +624,7 @@ class ResFeeRecordV2:
         |参数名称：线性大小| |参数约束及描述： 线性大小|
 
         :return: The spec_size of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._spec_size
 
@@ -635,7 +635,7 @@ class ResFeeRecordV2:
         |参数名称：线性大小| |参数约束及描述： 线性大小|
 
         :param spec_size: The spec_size of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._spec_size = spec_size
 
@@ -844,7 +844,7 @@ class ResFeeRecordV2:
         |参数名称：使用量。| |参数约束及描述： 使用量。|
 
         :return: The usage of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._usage
 
@@ -855,7 +855,7 @@ class ResFeeRecordV2:
         |参数名称：使用量。| |参数约束及描述： 使用量。|
 
         :param usage: The usage of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._usage = usage
 
@@ -888,7 +888,7 @@ class ResFeeRecordV2:
         |参数名称：套餐内使用量。| |参数约束及描述： 套餐内使用量。|
 
         :return: The free_resource_usage of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._free_resource_usage
 
@@ -899,7 +899,7 @@ class ResFeeRecordV2:
         |参数名称：套餐内使用量。| |参数约束及描述： 套餐内使用量。|
 
         :param free_resource_usage: The free_resource_usage of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._free_resource_usage = free_resource_usage
 
@@ -932,7 +932,7 @@ class ResFeeRecordV2:
         |参数名称：预留实例使用量。| |参数约束及描述： 预留实例使用量。|
 
         :return: The ri_usage of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._ri_usage
 
@@ -943,7 +943,7 @@ class ResFeeRecordV2:
         |参数名称：预留实例使用量。| |参数约束及描述： 预留实例使用量。|
 
         :param ri_usage: The ri_usage of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._ri_usage = ri_usage
 
@@ -976,7 +976,7 @@ class ResFeeRecordV2:
         |参数名称：单价| |参数约束及描述：单价|
 
         :return: The unit_price of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._unit_price
 
@@ -987,7 +987,7 @@ class ResFeeRecordV2:
         |参数名称：单价| |参数约束及描述：单价|
 
         :param unit_price: The unit_price of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._unit_price = unit_price
 
@@ -1020,7 +1020,7 @@ class ResFeeRecordV2:
         |参数名称：官网价。| |参数约束及描述： 官网价。|
 
         :return: The official_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._official_amount
 
@@ -1031,7 +1031,7 @@ class ResFeeRecordV2:
         |参数名称：官网价。| |参数约束及描述： 官网价。|
 
         :param official_amount: The official_amount of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._official_amount = official_amount
 
@@ -1042,7 +1042,7 @@ class ResFeeRecordV2:
         |参数名称：折扣金额| |参数约束及描述： 折扣金额|
 
         :return: The discount_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._discount_amount
 
@@ -1053,7 +1053,7 @@ class ResFeeRecordV2:
         |参数名称：折扣金额| |参数约束及描述： 折扣金额|
 
         :param discount_amount: The discount_amount of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._discount_amount = discount_amount
 
@@ -1064,7 +1064,7 @@ class ResFeeRecordV2:
         |参数名称：消费金额，包括现金券和代金券金额，精确到小数点后2位。| |参数约束及描述： 消费金额，包括现金券和代金券金额，精确到小数点后2位。|
 
         :return: The amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._amount
 
@@ -1075,7 +1075,7 @@ class ResFeeRecordV2:
         |参数名称：消费金额，包括现金券和代金券金额，精确到小数点后2位。| |参数约束及描述： 消费金额，包括现金券和代金券金额，精确到小数点后2位。|
 
         :param amount: The amount of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._amount = amount
 
@@ -1086,7 +1086,7 @@ class ResFeeRecordV2:
         |参数名称：现金支付金额| |参数约束及描述： 现金支付金额|
 
         :return: The cash_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._cash_amount
 
@@ -1097,7 +1097,7 @@ class ResFeeRecordV2:
         |参数名称：现金支付金额| |参数约束及描述： 现金支付金额|
 
         :param cash_amount: The cash_amount of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._cash_amount = cash_amount
 
@@ -1108,7 +1108,7 @@ class ResFeeRecordV2:
         |参数名称：信用额度支付金额。| |参数约束及描述： 信用额度支付金额。|
 
         :return: The credit_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._credit_amount
 
@@ -1119,7 +1119,7 @@ class ResFeeRecordV2:
         |参数名称：信用额度支付金额。| |参数约束及描述： 信用额度支付金额。|
 
         :param credit_amount: The credit_amount of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._credit_amount = credit_amount
 
@@ -1130,7 +1130,7 @@ class ResFeeRecordV2:
         |参数名称：代金券支付金额。| |参数约束及描述： 代金券支付金额。|
 
         :return: The coupon_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._coupon_amount
 
@@ -1141,7 +1141,7 @@ class ResFeeRecordV2:
         |参数名称：代金券支付金额。| |参数约束及描述： 代金券支付金额。|
 
         :param coupon_amount: The coupon_amount of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._coupon_amount = coupon_amount
 
@@ -1152,7 +1152,7 @@ class ResFeeRecordV2:
         |参数名称：现金券支付金额。| |参数约束及描述： 现金券支付金额。|
 
         :return: The flexipurchase_coupon_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._flexipurchase_coupon_amount
 
@@ -1163,7 +1163,7 @@ class ResFeeRecordV2:
         |参数名称：现金券支付金额。| |参数约束及描述： 现金券支付金额。|
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
@@ -1174,7 +1174,7 @@ class ResFeeRecordV2:
         |参数名称：储值卡支付金额。| |参数约束及描述： 储值卡支付金额。|
 
         :return: The stored_card_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._stored_card_amount
 
@@ -1185,7 +1185,7 @@ class ResFeeRecordV2:
         |参数名称：储值卡支付金额。| |参数约束及描述： 储值卡支付金额。|
 
         :param stored_card_amount: The stored_card_amount of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._stored_card_amount = stored_card_amount
 
@@ -1196,7 +1196,7 @@ class ResFeeRecordV2:
         |参数名称：奖励金支付金额（用于现网未清干净的奖励金）。| |参数约束及描述： 奖励金支付金额（用于现网未清干净的奖励金）。|
 
         :return: The bonus_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._bonus_amount
 
@@ -1207,7 +1207,7 @@ class ResFeeRecordV2:
         |参数名称：奖励金支付金额（用于现网未清干净的奖励金）。| |参数约束及描述： 奖励金支付金额（用于现网未清干净的奖励金）。|
 
         :param bonus_amount: The bonus_amount of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._bonus_amount = bonus_amount
 
@@ -1218,7 +1218,7 @@ class ResFeeRecordV2:
         |参数名称：欠费金额。| |参数约束及描述： 欠费金额。|
 
         :return: The debt_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._debt_amount
 
@@ -1229,7 +1229,7 @@ class ResFeeRecordV2:
         |参数名称：欠费金额。| |参数约束及描述： 欠费金额。|
 
         :param debt_amount: The debt_amount of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._debt_amount = debt_amount
 
@@ -1240,7 +1240,7 @@ class ResFeeRecordV2:
         |参数名称：欠费核销金额。| |参数约束及描述： 欠费核销金额。|
 
         :return: The adjustment_amount of this ResFeeRecordV2.
-        :rtype: float
+        :rtype: decimal.Decimal
         """
         return self._adjustment_amount
 
@@ -1251,7 +1251,7 @@ class ResFeeRecordV2:
         |参数名称：欠费核销金额。| |参数约束及描述： 欠费核销金额。|
 
         :param adjustment_amount: The adjustment_amount of this ResFeeRecordV2.
-        :type: float
+        :type: decimal.Decimal
         """
         self._adjustment_amount = adjustment_amount
 

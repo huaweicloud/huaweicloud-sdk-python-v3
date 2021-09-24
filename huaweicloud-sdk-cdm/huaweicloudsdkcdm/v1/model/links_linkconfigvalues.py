@@ -37,7 +37,8 @@ class LinksLinkconfigvalues:
         self._configs = None
         self.discriminator = None
 
-        self.configs = configs
+        if configs is not None:
+            self.configs = configs
 
     @property
     def configs(self):

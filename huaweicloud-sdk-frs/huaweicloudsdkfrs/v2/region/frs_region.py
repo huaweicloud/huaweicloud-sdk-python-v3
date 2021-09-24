@@ -18,11 +18,17 @@ class FrsRegion:
 
     CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://face.cn-north-1.myhuaweicloud.com")
 
+    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://face.ap-southeast-1.myhuaweicloud.com")
+
+    AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://face.ap-southeast-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-south-1": CN_SOUTH_1,
         "cn-east-3": CN_EAST_3,
         "cn-north-1": CN_NORTH_1,
+        "ap-southeast-1": AP_SOUTHEAST_1,
+        "ap-southeast-2": AP_SOUTHEAST_2,
     }
 
     @staticmethod
