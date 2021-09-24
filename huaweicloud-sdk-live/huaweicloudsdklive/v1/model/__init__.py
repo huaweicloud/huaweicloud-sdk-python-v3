@@ -39,6 +39,8 @@ from huaweicloudsdklive.v1.model.list_live_streams_online_request import ListLiv
 from huaweicloudsdklive.v1.model.list_live_streams_online_response import ListLiveStreamsOnlineResponse
 from huaweicloudsdklive.v1.model.list_record_callback_configs_request import ListRecordCallbackConfigsRequest
 from huaweicloudsdklive.v1.model.list_record_callback_configs_response import ListRecordCallbackConfigsResponse
+from huaweicloudsdklive.v1.model.list_record_contents_request import ListRecordContentsRequest
+from huaweicloudsdklive.v1.model.list_record_contents_response import ListRecordContentsResponse
 from huaweicloudsdklive.v1.model.list_record_rules_request import ListRecordRulesRequest
 from huaweicloudsdklive.v1.model.list_record_rules_response import ListRecordRulesResponse
 from huaweicloudsdklive.v1.model.list_stream_forbidden_request import ListStreamForbiddenRequest
@@ -52,6 +54,7 @@ from huaweicloudsdklive.v1.model.plan_record_time import PlanRecordTime
 from huaweicloudsdklive.v1.model.quality_info import QualityInfo
 from huaweicloudsdklive.v1.model.record_callback_config import RecordCallbackConfig
 from huaweicloudsdklive.v1.model.record_callback_config_request import RecordCallbackConfigRequest
+from huaweicloudsdklive.v1.model.record_content_info_v2 import RecordContentInfoV2
 from huaweicloudsdklive.v1.model.record_obs_file_addr import RecordObsFileAddr
 from huaweicloudsdklive.v1.model.record_rule import RecordRule
 from huaweicloudsdklive.v1.model.record_rule_request import RecordRuleRequest
@@ -77,3 +80,4 @@ from huaweicloudsdklive.v1.model.update_stream_forbidden_response import UpdateS
 from huaweicloudsdklive.v1.model.update_transcodings_template_request import UpdateTranscodingsTemplateRequest
 from huaweicloudsdklive.v1.model.update_transcodings_template_response import UpdateTranscodingsTemplateResponse
 from huaweicloudsdklive.v1.model.video_format_var import VideoFormatVar
+from huaweicloudsdklive.v1.model.vod_info_v2 import VodInfoV2

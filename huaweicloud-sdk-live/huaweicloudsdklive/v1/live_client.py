@@ -1027,6 +1027,83 @@ class LiveClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_record_contents(self, request):
+        """录制完成内容的查询
+
+        录制完成的内容查询
+
+        :param ListRecordContentsRequest request
+        :return: ListRecordContentsResponse
+        """
+        return self.list_record_contents_with_http_info(request)
+
+    def list_record_contents_with_http_info(self, request):
+        """录制完成内容的查询
+
+        录制完成的内容查询
+
+        :param ListRecordContentsRequest request
+        :return: ListRecordContentsResponse
+        """
+
+        all_params = ['start_time', 'publish_domain', 'app', 'stream', 'record_type', 'end_time', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'publish_domain' in local_var_params:
+            query_params.append(('publish_domain', local_var_params['publish_domain']))
+        if 'app' in local_var_params:
+            query_params.append(('app', local_var_params['app']))
+        if 'stream' in local_var_params:
+            query_params.append(('stream', local_var_params['stream']))
+        if 'record_type' in local_var_params:
+            query_params.append(('record_type', local_var_params['record_type']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/record/contents',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRecordContentsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_record_rules(self, request):
         """查询录制规则列表
 
