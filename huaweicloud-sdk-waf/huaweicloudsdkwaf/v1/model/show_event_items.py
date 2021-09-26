@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowEventResponseBodyItems:
+class ShowEventItems:
 
 
     """
@@ -48,7 +48,7 @@ class ShowEventResponseBodyItems:
     }
 
     def __init__(self, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, payload=None, action=None, timestamp=None):
-        """ShowEventResponseBodyItems - a model defined in huaweicloud sdk"""
+        """ShowEventItems - a model defined in huaweicloud sdk"""
         
         
 
@@ -87,220 +87,220 @@ class ShowEventResponseBodyItems:
 
     @property
     def time(self):
-        """Gets the time of this ShowEventResponseBodyItems.
+        """Gets the time of this ShowEventItems.
 
         次数
 
-        :return: The time of this ShowEventResponseBodyItems.
+        :return: The time of this ShowEventItems.
         :rtype: int
         """
         return self._time
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ShowEventResponseBodyItems.
+        """Sets the time of this ShowEventItems.
 
         次数
 
-        :param time: The time of this ShowEventResponseBodyItems.
+        :param time: The time of this ShowEventItems.
         :type: int
         """
         self._time = time
 
     @property
     def policyid(self):
-        """Gets the policyid of this ShowEventResponseBodyItems.
+        """Gets the policyid of this ShowEventItems.
 
         策略id
 
-        :return: The policyid of this ShowEventResponseBodyItems.
+        :return: The policyid of this ShowEventItems.
         :rtype: str
         """
         return self._policyid
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this ShowEventResponseBodyItems.
+        """Sets the policyid of this ShowEventItems.
 
         策略id
 
-        :param policyid: The policyid of this ShowEventResponseBodyItems.
+        :param policyid: The policyid of this ShowEventItems.
         :type: str
         """
         self._policyid = policyid
 
     @property
     def sip(self):
-        """Gets the sip of this ShowEventResponseBodyItems.
+        """Gets the sip of this ShowEventItems.
 
         源ip
 
-        :return: The sip of this ShowEventResponseBodyItems.
+        :return: The sip of this ShowEventItems.
         :rtype: str
         """
         return self._sip
 
     @sip.setter
     def sip(self, sip):
-        """Sets the sip of this ShowEventResponseBodyItems.
+        """Sets the sip of this ShowEventItems.
 
         源ip
 
-        :param sip: The sip of this ShowEventResponseBodyItems.
+        :param sip: The sip of this ShowEventItems.
         :type: str
         """
         self._sip = sip
 
     @property
     def host(self):
-        """Gets the host of this ShowEventResponseBodyItems.
+        """Gets the host of this ShowEventItems.
 
         域名
 
-        :return: The host of this ShowEventResponseBodyItems.
+        :return: The host of this ShowEventItems.
         :rtype: str
         """
         return self._host
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ShowEventResponseBodyItems.
+        """Sets the host of this ShowEventItems.
 
         域名
 
-        :param host: The host of this ShowEventResponseBodyItems.
+        :param host: The host of this ShowEventItems.
         :type: str
         """
         self._host = host
 
     @property
     def url(self):
-        """Gets the url of this ShowEventResponseBodyItems.
+        """Gets the url of this ShowEventItems.
 
         攻击的url链接
 
-        :return: The url of this ShowEventResponseBodyItems.
+        :return: The url of this ShowEventItems.
         :rtype: str
         """
         return self._url
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowEventResponseBodyItems.
+        """Sets the url of this ShowEventItems.
 
         攻击的url链接
 
-        :param url: The url of this ShowEventResponseBodyItems.
+        :param url: The url of this ShowEventItems.
         :type: str
         """
         self._url = url
 
     @property
     def attack(self):
-        """Gets the attack of this ShowEventResponseBodyItems.
+        """Gets the attack of this ShowEventItems.
 
         攻击类型
 
-        :return: The attack of this ShowEventResponseBodyItems.
+        :return: The attack of this ShowEventItems.
         :rtype: str
         """
         return self._attack
 
     @attack.setter
     def attack(self, attack):
-        """Sets the attack of this ShowEventResponseBodyItems.
+        """Sets the attack of this ShowEventItems.
 
         攻击类型
 
-        :param attack: The attack of this ShowEventResponseBodyItems.
+        :param attack: The attack of this ShowEventItems.
         :type: str
         """
         self._attack = attack
 
     @property
     def rule(self):
-        """Gets the rule of this ShowEventResponseBodyItems.
+        """Gets the rule of this ShowEventItems.
 
         命中的规则id
 
-        :return: The rule of this ShowEventResponseBodyItems.
+        :return: The rule of this ShowEventItems.
         :rtype: str
         """
         return self._rule
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this ShowEventResponseBodyItems.
+        """Sets the rule of this ShowEventItems.
 
         命中的规则id
 
-        :param rule: The rule of this ShowEventResponseBodyItems.
+        :param rule: The rule of this ShowEventItems.
         :type: str
         """
         self._rule = rule
 
     @property
     def payload(self):
-        """Gets the payload of this ShowEventResponseBodyItems.
+        """Gets the payload of this ShowEventItems.
 
         命中的载荷
 
-        :return: The payload of this ShowEventResponseBodyItems.
+        :return: The payload of this ShowEventItems.
         :rtype: str
         """
         return self._payload
 
     @payload.setter
     def payload(self, payload):
-        """Sets the payload of this ShowEventResponseBodyItems.
+        """Sets the payload of this ShowEventItems.
 
         命中的载荷
 
-        :param payload: The payload of this ShowEventResponseBodyItems.
+        :param payload: The payload of this ShowEventItems.
         :type: str
         """
         self._payload = payload
 
     @property
     def action(self):
-        """Gets the action of this ShowEventResponseBodyItems.
+        """Gets the action of this ShowEventItems.
 
         防护动作
 
-        :return: The action of this ShowEventResponseBodyItems.
+        :return: The action of this ShowEventItems.
         :rtype: str
         """
         return self._action
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ShowEventResponseBodyItems.
+        """Sets the action of this ShowEventItems.
 
         防护动作
 
-        :param action: The action of this ShowEventResponseBodyItems.
+        :param action: The action of this ShowEventItems.
         :type: str
         """
         self._action = action
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowEventResponseBodyItems.
+        """Gets the timestamp of this ShowEventItems.
 
         时间戳
 
-        :return: The timestamp of this ShowEventResponseBodyItems.
+        :return: The timestamp of this ShowEventItems.
         :rtype: int
         """
         return self._timestamp
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowEventResponseBodyItems.
+        """Sets the timestamp of this ShowEventItems.
 
         时间戳
 
-        :param timestamp: The timestamp of this ShowEventResponseBodyItems.
+        :param timestamp: The timestamp of this ShowEventItems.
         :type: int
         """
         self._timestamp = timestamp
@@ -347,7 +347,7 @@ class ShowEventResponseBodyItems:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowEventResponseBodyItems):
+        if not isinstance(other, ShowEventItems):
             return False
 
         return self.__dict__ == other.__dict__

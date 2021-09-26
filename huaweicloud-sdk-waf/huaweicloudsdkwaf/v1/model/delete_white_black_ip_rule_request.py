@@ -22,26 +22,53 @@ class DeleteWhiteBlackIpRuleRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'policy_id': 'str',
         'rule_id': 'str'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'policy_id': 'policy_id',
         'rule_id': 'rule_id'
     }
 
-    def __init__(self, policy_id=None, rule_id=None):
+    def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None):
         """DeleteWhiteBlackIpRuleRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._policy_id = None
         self._rule_id = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         self.policy_id = policy_id
         self.rule_id = rule_id
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this DeleteWhiteBlackIpRuleRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this DeleteWhiteBlackIpRuleRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this DeleteWhiteBlackIpRuleRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this DeleteWhiteBlackIpRuleRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def policy_id(self):

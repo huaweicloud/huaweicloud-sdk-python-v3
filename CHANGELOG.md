@@ -1,3 +1,48 @@
+# 3.0.63 2021-09-26
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - Support the interface `BatchSetPolicy`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+  - Support the interfaces `InviteOperateVideo`,`SetSsoConfig` and `ShowSsoConfig`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+  - Support the interfaces `CreateEditingJob`,`ListEditingJob` and `DeleteEditingJob`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - Support the following interfaces:
+    - `ListIgnoreRule`
+    - `ListStatistics`
+    - `ListQpsTimeline`
+    - `ListBandwidthTimeline`
+    - `ListResponseCodeTimeline`
+    - `ListTopAbnormal`
+    - `ShowConsoleConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.0.62 2021-09-24
 
 ### HuaweiCloud SDK Live

@@ -22,6 +22,7 @@ class ListEventRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'recent': 'str',
         'hosts': 'list[str]',
         'page': 'int',
@@ -29,23 +30,27 @@ class ListEventRequest:
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'recent': 'recent',
         'hosts': 'hosts',
         'page': 'page',
         'pagesize': 'pagesize'
     }
 
-    def __init__(self, recent=None, hosts=None, page=None, pagesize=None):
+    def __init__(self, enterprise_project_id=None, recent=None, hosts=None, page=None, pagesize=None):
         """ListEventRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._recent = None
         self._hosts = None
         self._page = None
         self._pagesize = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         self.recent = recent
         if hosts is not None:
             self.hosts = hosts
@@ -53,6 +58,28 @@ class ListEventRequest:
             self.page = page
         if pagesize is not None:
             self.pagesize = pagesize
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListEventRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this ListEventRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListEventRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this ListEventRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def recent(self):

@@ -23,7 +23,7 @@ class ListEventResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'items': 'list[ListEventResponseBodyItems]'
+        'items': 'list[ListEventItems]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class ListEventResponse(SdkResponse):
         攻击事件详情
 
         :return: The items of this ListEventResponse.
-        :rtype: list[ListEventResponseBodyItems]
+        :rtype: list[ListEventItems]
         """
         return self._items
 
@@ -85,7 +85,7 @@ class ListEventResponse(SdkResponse):
         攻击事件详情
 
         :param items: The items of this ListEventResponse.
-        :type: list[ListEventResponseBodyItems]
+        :type: list[ListEventItems]
         """
         self._items = items
 

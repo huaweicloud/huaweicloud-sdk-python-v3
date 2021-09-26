@@ -70,7 +70,7 @@ class ListStatisticsRequest:
     def period(self):
         """Gets the period of this ListStatisticsRequest.
 
-        时间段单位为分钟，与filter参数metric配合使用。
+        时间段单位为分钟，与filter参数配合使用。
 
         :return: The period of this ListStatisticsRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ListStatisticsRequest:
     def period(self, period):
         """Sets the period of this ListStatisticsRequest.
 
-        时间段单位为分钟，与filter参数metric配合使用。
+        时间段单位为分钟，与filter参数配合使用。
 
         :param period: The period of this ListStatisticsRequest.
         :type: str

@@ -22,33 +22,60 @@ class ListPolicyRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'page': 'int',
         'pagesize': 'int',
         'name': 'str'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'page': 'page',
         'pagesize': 'pagesize',
         'name': 'name'
     }
 
-    def __init__(self, page=None, pagesize=None, name=None):
+    def __init__(self, enterprise_project_id=None, page=None, pagesize=None, name=None):
         """ListPolicyRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._page = None
         self._pagesize = None
         self._name = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if page is not None:
             self.page = page
         if pagesize is not None:
             self.pagesize = pagesize
         if name is not None:
             self.name = name
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListPolicyRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this ListPolicyRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListPolicyRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this ListPolicyRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def page(self):

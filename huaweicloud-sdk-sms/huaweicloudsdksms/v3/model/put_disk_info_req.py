@@ -22,7 +22,7 @@ class PutDiskInfoReq:
     sensitive_list = []
 
     openapi_types = {
-        'disks': 'list[Disk]',
+        'disks': 'list[ServerDisk]',
         'volumegroups': 'list[VolumeGroups]',
         'btrfs_list': 'list[BtrfsFileSystem]'
     }
@@ -57,7 +57,7 @@ class PutDiskInfoReq:
         更新的磁盘信息
 
         :return: The disks of this PutDiskInfoReq.
-        :rtype: list[Disk]
+        :rtype: list[ServerDisk]
         """
         return self._disks
 
@@ -68,7 +68,7 @@ class PutDiskInfoReq:
         更新的磁盘信息
 
         :param disks: The disks of this PutDiskInfoReq.
-        :type: list[Disk]
+        :type: list[ServerDisk]
         """
         self._disks = disks
 

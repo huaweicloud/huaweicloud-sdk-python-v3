@@ -22,26 +22,53 @@ class UpdatePolicyProtectHostRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'policy_id': 'str',
         'hosts': 'str'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'policy_id': 'policy_id',
         'hosts': 'hosts'
     }
 
-    def __init__(self, policy_id=None, hosts=None):
+    def __init__(self, enterprise_project_id=None, policy_id=None, hosts=None):
         """UpdatePolicyProtectHostRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._policy_id = None
         self._hosts = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         self.policy_id = policy_id
         self.hosts = hosts
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this UpdatePolicyProtectHostRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this UpdatePolicyProtectHostRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this UpdatePolicyProtectHostRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this UpdatePolicyProtectHostRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def policy_id(self):

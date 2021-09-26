@@ -22,6 +22,7 @@ class ListCertificatesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'page': 'int',
         'pagesize': 'int',
         'name': 'str',
@@ -30,6 +31,7 @@ class ListCertificatesRequest:
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'page': 'page',
         'pagesize': 'pagesize',
         'name': 'name',
@@ -37,11 +39,12 @@ class ListCertificatesRequest:
         'exp_status': 'exp_status'
     }
 
-    def __init__(self, page=None, pagesize=None, name=None, host=None, exp_status=None):
+    def __init__(self, enterprise_project_id=None, page=None, pagesize=None, name=None, host=None, exp_status=None):
         """ListCertificatesRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._page = None
         self._pagesize = None
         self._name = None
@@ -49,6 +52,8 @@ class ListCertificatesRequest:
         self._exp_status = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if page is not None:
             self.page = page
         if pagesize is not None:
@@ -59,6 +64,28 @@ class ListCertificatesRequest:
             self.host = host
         if exp_status is not None:
             self.exp_status = exp_status
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListCertificatesRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this ListCertificatesRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListCertificatesRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this ListCertificatesRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def page(self):

@@ -37,6 +37,7 @@ from huaweicloudsdkmeeting.v1.model.allow_guest_unmute_response import AllowGues
 from huaweicloudsdkmeeting.v1.model.associate_vmr_request import AssociateVmrRequest
 from huaweicloudsdkmeeting.v1.model.associate_vmr_response import AssociateVmrResponse
 from huaweicloudsdkmeeting.v1.model.attendee import Attendee
+from huaweicloudsdkmeeting.v1.model.authorize_config_info_request_body import AuthorizeConfigInfoRequestBody
 from huaweicloudsdkmeeting.v1.model.base_user import BaseUser
 from huaweicloudsdkmeeting.v1.model.batch_delete_corp_admins_request import BatchDeleteCorpAdminsRequest
 from huaweicloudsdkmeeting.v1.model.batch_delete_corp_admins_response import BatchDeleteCorpAdminsResponse
@@ -125,6 +126,8 @@ from huaweicloudsdkmeeting.v1.model.hang_up_request import HangUpRequest
 from huaweicloudsdkmeeting.v1.model.hang_up_response import HangUpResponse
 from huaweicloudsdkmeeting.v1.model.id_mark_dto import IdMarkDTO
 from huaweicloudsdkmeeting.v1.model.image_moderation_result import ImageModerationResult
+from huaweicloudsdkmeeting.v1.model.invite_operate_video_request import InviteOperateVideoRequest
+from huaweicloudsdkmeeting.v1.model.invite_operate_video_response import InviteOperateVideoResponse
 from huaweicloudsdkmeeting.v1.model.invite_participant_request import InviteParticipantRequest
 from huaweicloudsdkmeeting.v1.model.invite_participant_response import InviteParticipantResponse
 from huaweicloudsdkmeeting.v1.model.invite_share_dto import InviteShareDTO
@@ -266,6 +269,7 @@ from huaweicloudsdkmeeting.v1.model.rest_set_live_req_body import RestSetLiveReq
 from huaweicloudsdkmeeting.v1.model.rest_set_record_req_body import RestSetRecordReqBody
 from huaweicloudsdkmeeting.v1.model.rest_subscriber_in_pic import RestSubscriberInPic
 from huaweicloudsdkmeeting.v1.model.rest_switch_mode_req_body import RestSwitchModeReqBody
+from huaweicloudsdkmeeting.v1.model.rest_video_body import RestVideoBody
 from huaweicloudsdkmeeting.v1.model.rollcall_participant_request import RollcallParticipantRequest
 from huaweicloudsdkmeeting.v1.model.rollcall_participant_response import RollcallParticipantResponse
 from huaweicloudsdkmeeting.v1.model.search_attendance_records_of_his_meeting_request import SearchAttendanceRecordsOfHisMeetingRequest
@@ -345,6 +349,8 @@ from huaweicloudsdkmeeting.v1.model.set_participant_view_request import SetParti
 from huaweicloudsdkmeeting.v1.model.set_participant_view_response import SetParticipantViewResponse
 from huaweicloudsdkmeeting.v1.model.set_role_request import SetRoleRequest
 from huaweicloudsdkmeeting.v1.model.set_role_response import SetRoleResponse
+from huaweicloudsdkmeeting.v1.model.set_sso_config_request import SetSsoConfigRequest
+from huaweicloudsdkmeeting.v1.model.set_sso_config_response import SetSsoConfigResponse
 from huaweicloudsdkmeeting.v1.model.show_audience_count_info import ShowAudienceCountInfo
 from huaweicloudsdkmeeting.v1.model.show_conf_org_request import ShowConfOrgRequest
 from huaweicloudsdkmeeting.v1.model.show_conf_org_response import ShowConfOrgResponse
@@ -396,6 +402,8 @@ from huaweicloudsdkmeeting.v1.model.show_sp_res_request import ShowSpResRequest
 from huaweicloudsdkmeeting.v1.model.show_sp_res_response import ShowSpResResponse
 from huaweicloudsdkmeeting.v1.model.show_sp_resource_request import ShowSpResourceRequest
 from huaweicloudsdkmeeting.v1.model.show_sp_resource_response import ShowSpResourceResponse
+from huaweicloudsdkmeeting.v1.model.show_sso_config_request import ShowSsoConfigRequest
+from huaweicloudsdkmeeting.v1.model.show_sso_config_response import ShowSsoConfigResponse
 from huaweicloudsdkmeeting.v1.model.show_user_detail_request import ShowUserDetailRequest
 from huaweicloudsdkmeeting.v1.model.show_user_detail_response import ShowUserDetailResponse
 from huaweicloudsdkmeeting.v1.model.show_webinar_request import ShowWebinarRequest

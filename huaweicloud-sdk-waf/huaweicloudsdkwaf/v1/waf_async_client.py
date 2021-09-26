@@ -67,7 +67,7 @@ class WafAsyncClient(Client):
         :return: ApplyCertificateToHostResponse
         """
 
-        all_params = ['certificate_id', 'apply_certificate_to_host_request_body']
+        all_params = ['certificate_id', 'enterprise_project_id', 'apply_certificate_to_host_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -80,6 +80,8 @@ class WafAsyncClient(Client):
             path_params['certificate_id'] = local_var_params['certificate_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -132,7 +134,7 @@ class WafAsyncClient(Client):
         :return: CreateAntiTamperRuleResponse
         """
 
-        all_params = ['policy_id', 'create_anti_tamper_rules_request_body']
+        all_params = ['policy_id', 'create_anti_tamper_rules_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -145,6 +147,8 @@ class WafAsyncClient(Client):
             path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -197,7 +201,7 @@ class WafAsyncClient(Client):
         :return: CreateCertificateResponse
         """
 
-        all_params = ['create_certificate_request_body']
+        all_params = ['create_certificate_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -208,6 +212,8 @@ class WafAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -260,7 +266,7 @@ class WafAsyncClient(Client):
         :return: CreateGeoipRuleResponse
         """
 
-        all_params = ['policy_id', 'create_geo_ip_rule_request_body']
+        all_params = ['policy_id', 'create_geo_ip_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -273,6 +279,8 @@ class WafAsyncClient(Client):
             path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -325,7 +333,7 @@ class WafAsyncClient(Client):
         :return: CreateHostResponse
         """
 
-        all_params = ['create_host_request_body']
+        all_params = ['create_host_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -336,6 +344,8 @@ class WafAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -388,7 +398,7 @@ class WafAsyncClient(Client):
         :return: CreatePolicyResponse
         """
 
-        all_params = ['create_policy_request_body']
+        all_params = ['create_policy_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -399,6 +409,8 @@ class WafAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -451,7 +463,7 @@ class WafAsyncClient(Client):
         :return: CreatePremiumHostResponse
         """
 
-        all_params = ['create_premium_host_request_body']
+        all_params = ['enterprise_project_id', 'create_premium_host_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -462,6 +474,8 @@ class WafAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -514,7 +528,7 @@ class WafAsyncClient(Client):
         :return: CreatePrivacyRuleResponse
         """
 
-        all_params = ['policy_id', 'create_privacy_rule_request_body']
+        all_params = ['policy_id', 'create_privacy_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -527,6 +541,8 @@ class WafAsyncClient(Client):
             path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -579,7 +595,7 @@ class WafAsyncClient(Client):
         :return: CreateValueListResponse
         """
 
-        all_params = ['create_value_list_request_body']
+        all_params = ['create_value_list_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -590,6 +606,8 @@ class WafAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -642,7 +660,7 @@ class WafAsyncClient(Client):
         :return: CreateWhiteblackipRuleResponse
         """
 
-        all_params = ['policy_id', 'create_whiteblackip_rule_request_body']
+        all_params = ['policy_id', 'create_whiteblackip_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -655,6 +673,8 @@ class WafAsyncClient(Client):
             path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -707,7 +727,7 @@ class WafAsyncClient(Client):
         :return: DeleteAntitamperRuleResponse
         """
 
-        all_params = ['policy_id', 'rule_id']
+        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -722,6 +742,8 @@ class WafAsyncClient(Client):
             path_params['rule_id'] = local_var_params['rule_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -772,7 +794,7 @@ class WafAsyncClient(Client):
         :return: DeleteCertificateResponse
         """
 
-        all_params = ['certificate_id']
+        all_params = ['certificate_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -785,6 +807,8 @@ class WafAsyncClient(Client):
             path_params['certificate_id'] = local_var_params['certificate_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -835,7 +859,7 @@ class WafAsyncClient(Client):
         :return: DeleteGeoipRuleResponse
         """
 
-        all_params = ['policy_id', 'rule_id']
+        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -850,6 +874,8 @@ class WafAsyncClient(Client):
             path_params['rule_id'] = local_var_params['rule_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -900,7 +926,7 @@ class WafAsyncClient(Client):
         :return: DeleteHostResponse
         """
 
-        all_params = ['instance_id']
+        all_params = ['instance_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -913,6 +939,8 @@ class WafAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -963,7 +991,7 @@ class WafAsyncClient(Client):
         :return: DeletePolicyResponse
         """
 
-        all_params = ['policy_id']
+        all_params = ['policy_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -976,6 +1004,8 @@ class WafAsyncClient(Client):
             path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1026,7 +1056,7 @@ class WafAsyncClient(Client):
         :return: DeletePremiumHostResponse
         """
 
-        all_params = ['host_id', 'keep_policy']
+        all_params = ['host_id', 'enterprise_project_id', 'keep_policy']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1039,6 +1069,8 @@ class WafAsyncClient(Client):
             path_params['host_id'] = local_var_params['host_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'keep_policy' in local_var_params:
             query_params.append(('keepPolicy', local_var_params['keep_policy']))
 
@@ -1091,7 +1123,7 @@ class WafAsyncClient(Client):
         :return: DeletePrivacyRuleResponse
         """
 
-        all_params = ['policy_id', 'rule_id']
+        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1106,6 +1138,8 @@ class WafAsyncClient(Client):
             path_params['rule_id'] = local_var_params['rule_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1156,7 +1190,7 @@ class WafAsyncClient(Client):
         :return: DeleteValueListResponse
         """
 
-        all_params = ['valuelistid']
+        all_params = ['valuelistid', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1169,6 +1203,8 @@ class WafAsyncClient(Client):
             path_params['valuelistid'] = local_var_params['valuelistid']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1219,7 +1255,7 @@ class WafAsyncClient(Client):
         :return: DeleteWhiteBlackIpRuleResponse
         """
 
-        all_params = ['policy_id', 'rule_id']
+        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1234,6 +1270,8 @@ class WafAsyncClient(Client):
             path_params['rule_id'] = local_var_params['rule_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1284,7 +1322,7 @@ class WafAsyncClient(Client):
         :return: ListAntitamperRuleResponse
         """
 
-        all_params = ['policy_id', 'page', 'pagesize']
+        all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1297,6 +1335,8 @@ class WafAsyncClient(Client):
             path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'page' in local_var_params:
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
@@ -1332,6 +1372,79 @@ class WafAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_bandwidth_timeline_async(self, request):
+        """查询安全统计带宽数据
+
+        查询安全统计带宽数据
+
+        :param ListBandwidthTimelineRequest request
+        :return: ListBandwidthTimelineResponse
+        """
+        return self.list_bandwidth_timeline_with_http_info(request)
+
+    def list_bandwidth_timeline_with_http_info(self, request):
+        """查询安全统计带宽数据
+
+        查询安全统计带宽数据
+
+        :param ListBandwidthTimelineRequest request
+        :return: ListBandwidthTimelineResponse
+        """
+
+        all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances', 'group_by']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+        if 'instances' in local_var_params:
+            query_params.append(('instances', local_var_params['instances']))
+        if 'group_by' in local_var_params:
+            query_params.append(('group_by', local_var_params['group_by']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/overviews/bandwidth/timeline',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListBandwidthTimelineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_certificates_async(self, request):
         """查询证书列表
 
@@ -1351,7 +1464,7 @@ class WafAsyncClient(Client):
         :return: ListCertificatesResponse
         """
 
-        all_params = ['page', 'pagesize', 'name', 'host', 'exp_status']
+        all_params = ['enterprise_project_id', 'page', 'pagesize', 'name', 'host', 'exp_status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1362,6 +1475,8 @@ class WafAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'page' in local_var_params:
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
@@ -1422,7 +1537,7 @@ class WafAsyncClient(Client):
         :return: ListCompositeHostsResponse
         """
 
-        all_params = ['page', 'pagesize', 'hostname', 'policyname', 'protect_status', 'waf_type', 'is_https']
+        all_params = ['enterprise_project_id', 'page', 'pagesize', 'hostname', 'policyname', 'protect_status', 'waf_type', 'is_https']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1433,6 +1548,8 @@ class WafAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'page' in local_var_params:
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
@@ -1497,7 +1614,7 @@ class WafAsyncClient(Client):
         :return: ListEventResponse
         """
 
-        all_params = ['recent', 'hosts', 'page', 'pagesize']
+        all_params = ['recent', 'enterprise_project_id', 'hosts', 'page', 'pagesize']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1508,6 +1625,8 @@ class WafAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'recent' in local_var_params:
             query_params.append(('recent', local_var_params['recent']))
         if 'hosts' in local_var_params:
@@ -1567,7 +1686,7 @@ class WafAsyncClient(Client):
         :return: ListGeoipRuleResponse
         """
 
-        all_params = ['policy_id', 'page', 'pagesize']
+        all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1580,6 +1699,8 @@ class WafAsyncClient(Client):
             path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'page' in local_var_params:
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
@@ -1634,7 +1755,7 @@ class WafAsyncClient(Client):
         :return: ListHostResponse
         """
 
-        all_params = ['page', 'pagesize', 'hostname', 'policyname']
+        all_params = ['enterprise_project_id', 'page', 'pagesize', 'hostname', 'policyname']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1645,6 +1766,8 @@ class WafAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'page' in local_var_params:
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
@@ -1703,7 +1826,7 @@ class WafAsyncClient(Client):
         :return: ListHostRouteResponse
         """
 
-        all_params = ['instance_id']
+        all_params = ['instance_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1716,6 +1839,8 @@ class WafAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -1747,6 +1872,75 @@ class WafAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_ignore_rule_async(self, request):
+        """查询误报屏蔽规则列表
+
+        查询误报屏蔽规则列表
+
+        :param ListIgnoreRuleRequest request
+        :return: ListIgnoreRuleResponse
+        """
+        return self.list_ignore_rule_with_http_info(request)
+
+    def list_ignore_rule_with_http_info(self, request):
+        """查询误报屏蔽规则列表
+
+        查询误报屏蔽规则列表
+
+        :param ListIgnoreRuleRequest request
+        :return: ListIgnoreRuleResponse
+        """
+
+        all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'pagesize' in local_var_params:
+            query_params.append(('pagesize', local_var_params['pagesize']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/policy/{policy_id}/ignore',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListIgnoreRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_policy_async(self, request):
         """查询防护策略列表
 
@@ -1766,7 +1960,7 @@ class WafAsyncClient(Client):
         :return: ListPolicyResponse
         """
 
-        all_params = ['page', 'pagesize', 'name']
+        all_params = ['enterprise_project_id', 'page', 'pagesize', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1777,6 +1971,8 @@ class WafAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'page' in local_var_params:
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
@@ -1833,7 +2029,7 @@ class WafAsyncClient(Client):
         :return: ListPremiumHostResponse
         """
 
-        all_params = ['page', 'pagesize', 'hostname', 'policyname', 'protect_status']
+        all_params = ['enterprise_project_id', 'page', 'pagesize', 'hostname', 'policyname', 'protect_status']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1844,6 +2040,8 @@ class WafAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'page' in local_var_params:
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
@@ -1904,7 +2102,7 @@ class WafAsyncClient(Client):
         :return: ListPrivacyRuleResponse
         """
 
-        all_params = ['policy_id', 'page', 'pagesize']
+        all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1917,6 +2115,8 @@ class WafAsyncClient(Client):
             path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'page' in local_var_params:
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
@@ -1946,6 +2146,300 @@ class WafAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListPrivacyRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_qps_timeline_async(self, request):
+        """查询安全统计qps次数
+
+        查询安全统计qps次数
+
+        :param ListQpsTimelineRequest request
+        :return: ListQpsTimelineResponse
+        """
+        return self.list_qps_timeline_with_http_info(request)
+
+    def list_qps_timeline_with_http_info(self, request):
+        """查询安全统计qps次数
+
+        查询安全统计qps次数
+
+        :param ListQpsTimelineRequest request
+        :return: ListQpsTimelineResponse
+        """
+
+        all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances', 'group_by']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+        if 'instances' in local_var_params:
+            query_params.append(('instances', local_var_params['instances']))
+        if 'group_by' in local_var_params:
+            query_params.append(('group_by', local_var_params['group_by']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/overviews/qps/timeline',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListQpsTimelineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_response_code_timeline_async(self, request):
+        """查询安全统计响应码数据
+
+        查询安全统计响应码数据
+
+        :param ListResponseCodeTimelineRequest request
+        :return: ListResponseCodeTimelineResponse
+        """
+        return self.list_response_code_timeline_with_http_info(request)
+
+    def list_response_code_timeline_with_http_info(self, request):
+        """查询安全统计响应码数据
+
+        查询安全统计响应码数据
+
+        :param ListResponseCodeTimelineRequest request
+        :return: ListResponseCodeTimelineResponse
+        """
+
+        all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances', 'response_source', 'group_by']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+        if 'instances' in local_var_params:
+            query_params.append(('instances', local_var_params['instances']))
+        if 'response_source' in local_var_params:
+            query_params.append(('response_source', local_var_params['response_source']))
+        if 'group_by' in local_var_params:
+            query_params.append(('group_by', local_var_params['group_by']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/overviews/response-code/timeline',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListResponseCodeTimelineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_statistics_async(self, request):
+        """查询安全总览请求数据
+
+        查询安全总览请求数据
+
+        :param ListStatisticsRequest request
+        :return: ListStatisticsResponse
+        """
+        return self.list_statistics_with_http_info(request)
+
+    def list_statistics_with_http_info(self, request):
+        """查询安全总览请求数据
+
+        查询安全总览请求数据
+
+        :param ListStatisticsRequest request
+        :return: ListStatisticsResponse
+        """
+
+        all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+        if 'instances' in local_var_params:
+            query_params.append(('instances', local_var_params['instances']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/overviews/statistics',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListStatisticsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_top_abnormal_async(self, request):
+        """查询业务异常数量
+
+        查询业务异常数量
+
+        :param ListTopAbnormalRequest request
+        :return: ListTopAbnormalResponse
+        """
+        return self.list_top_abnormal_with_http_info(request)
+
+    def list_top_abnormal_with_http_info(self, request):
+        """查询业务异常数量
+
+        查询业务异常数量
+
+        :param ListTopAbnormalRequest request
+        :return: ListTopAbnormalResponse
+        """
+
+        all_params = ['_from', 'to', 'enterprise_project_id', 'top', 'code', 'hosts', 'instances']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'top' in local_var_params:
+            query_params.append(('top', local_var_params['top']))
+        if 'code' in local_var_params:
+            query_params.append(('code', local_var_params['code']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+        if 'instances' in local_var_params:
+            query_params.append(('instances', local_var_params['instances']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/overviews/abnormal',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTopAbnormalResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2036,7 +2530,7 @@ class WafAsyncClient(Client):
         :return: ListWhiteblackipRuleResponse
         """
 
-        all_params = ['policy_id', 'page', 'pagesize']
+        all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2049,6 +2543,8 @@ class WafAsyncClient(Client):
             path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'page' in local_var_params:
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
@@ -2103,7 +2599,7 @@ class WafAsyncClient(Client):
         :return: ShowCertificateResponse
         """
 
-        all_params = ['certificate_id']
+        all_params = ['certificate_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2116,6 +2612,8 @@ class WafAsyncClient(Client):
             path_params['certificate_id'] = local_var_params['certificate_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2166,7 +2664,7 @@ class WafAsyncClient(Client):
         :return: ShowCompositeHostResponse
         """
 
-        all_params = ['host_id']
+        all_params = ['host_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2179,6 +2677,8 @@ class WafAsyncClient(Client):
             path_params['host_id'] = local_var_params['host_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2210,6 +2710,67 @@ class WafAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_console_config_async(self, request):
+        """局点支持特性查询
+
+        局点支持特性查询
+
+        :param ShowConsoleConfigRequest request
+        :return: ShowConsoleConfigResponse
+        """
+        return self.show_console_config_with_http_info(request)
+
+    def show_console_config_with_http_info(self, request):
+        """局点支持特性查询
+
+        局点支持特性查询
+
+        :param ShowConsoleConfigRequest request
+        :return: ShowConsoleConfigResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/config/console',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowConsoleConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_event_async(self, request):
         """查询攻击事件详情
 
@@ -2229,7 +2790,7 @@ class WafAsyncClient(Client):
         :return: ShowEventResponse
         """
 
-        all_params = ['eventid']
+        all_params = ['eventid', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2242,6 +2803,8 @@ class WafAsyncClient(Client):
             path_params['eventid'] = local_var_params['eventid']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2292,7 +2855,7 @@ class WafAsyncClient(Client):
         :return: ShowHostResponse
         """
 
-        all_params = ['instance_id']
+        all_params = ['instance_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2305,6 +2868,8 @@ class WafAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2355,7 +2920,7 @@ class WafAsyncClient(Client):
         :return: ShowPolicyResponse
         """
 
-        all_params = ['policy_id']
+        all_params = ['policy_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2368,6 +2933,8 @@ class WafAsyncClient(Client):
             path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2418,7 +2985,7 @@ class WafAsyncClient(Client):
         :return: ShowPremiumHostResponse
         """
 
-        all_params = ['host_id']
+        all_params = ['host_id', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2431,6 +2998,8 @@ class WafAsyncClient(Client):
             path_params['host_id'] = local_var_params['host_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2481,7 +3050,7 @@ class WafAsyncClient(Client):
         :return: UpdateCertificateResponse
         """
 
-        all_params = ['certificate_id', 'update_certificate_request_body']
+        all_params = ['certificate_id', 'enterprise_project_id', 'update_certificate_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2494,6 +3063,8 @@ class WafAsyncClient(Client):
             path_params['certificate_id'] = local_var_params['certificate_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2546,7 +3117,7 @@ class WafAsyncClient(Client):
         :return: UpdateGeoipRuleResponse
         """
 
-        all_params = ['policy_id', 'rule_id', 'update_geoip_rule_request_body']
+        all_params = ['policy_id', 'rule_id', 'update_geoip_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2561,6 +3132,8 @@ class WafAsyncClient(Client):
             path_params['rule_id'] = local_var_params['rule_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2613,7 +3186,7 @@ class WafAsyncClient(Client):
         :return: UpdateHostResponse
         """
 
-        all_params = ['instance_id', 'update_host_request_body']
+        all_params = ['instance_id', 'enterprise_project_id', 'update_host_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2626,6 +3199,8 @@ class WafAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2678,7 +3253,7 @@ class WafAsyncClient(Client):
         :return: UpdateHostProtectStatusResponse
         """
 
-        all_params = ['instance_id', 'update_host_protect_status_request_body']
+        all_params = ['instance_id', 'enterprise_project_id', 'update_host_protect_status_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2691,6 +3266,8 @@ class WafAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2743,7 +3320,7 @@ class WafAsyncClient(Client):
         :return: UpdatePolicyResponse
         """
 
-        all_params = ['policy_id', 'update_policy_request_body']
+        all_params = ['policy_id', 'update_policy_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2756,6 +3333,8 @@ class WafAsyncClient(Client):
             path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2808,7 +3387,7 @@ class WafAsyncClient(Client):
         :return: UpdatePolicyProtectHostResponse
         """
 
-        all_params = ['policy_id', 'hosts']
+        all_params = ['policy_id', 'hosts', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2821,6 +3400,8 @@ class WafAsyncClient(Client):
             path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
 
@@ -2873,7 +3454,7 @@ class WafAsyncClient(Client):
         :return: UpdatePolicyRuleStatusResponse
         """
 
-        all_params = ['policy_id', 'ruletype', 'rule_id', 'update_rule_status_request_body']
+        all_params = ['policy_id', 'ruletype', 'rule_id', 'update_rule_status_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2890,6 +3471,8 @@ class WafAsyncClient(Client):
             path_params['rule_id'] = local_var_params['rule_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2942,7 +3525,7 @@ class WafAsyncClient(Client):
         :return: UpdatePremiumHostResponse
         """
 
-        all_params = ['host_id', 'update_premium_host_request_body']
+        all_params = ['host_id', 'enterprise_project_id', 'update_premium_host_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2955,6 +3538,8 @@ class WafAsyncClient(Client):
             path_params['host_id'] = local_var_params['host_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -3007,7 +3592,7 @@ class WafAsyncClient(Client):
         :return: UpdatePremiumHostProtectStatusResponse
         """
 
-        all_params = ['host_id', 'update_premium_host_protect_status_request_body']
+        all_params = ['host_id', 'enterprise_project_id', 'update_premium_host_protect_status_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3020,6 +3605,8 @@ class WafAsyncClient(Client):
             path_params['host_id'] = local_var_params['host_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -3072,7 +3659,7 @@ class WafAsyncClient(Client):
         :return: UpdatePrivacyRuleResponse
         """
 
-        all_params = ['policy_id', 'rule_id', 'update_privacy_rule_request_body']
+        all_params = ['policy_id', 'rule_id', 'update_privacy_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3087,6 +3674,8 @@ class WafAsyncClient(Client):
             path_params['rule_id'] = local_var_params['rule_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -3139,7 +3728,7 @@ class WafAsyncClient(Client):
         :return: UpdateValueListResponse
         """
 
-        all_params = ['valuelistid', 'update_value_list_request_body']
+        all_params = ['valuelistid', 'enterprise_project_id', 'update_value_list_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3152,6 +3741,8 @@ class WafAsyncClient(Client):
             path_params['valuelistid'] = local_var_params['valuelistid']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -3204,7 +3795,7 @@ class WafAsyncClient(Client):
         :return: UpdateWhiteblackipRuleResponse
         """
 
-        all_params = ['policy_id', 'rule_id', 'update_whiteblackip_rule_request_body']
+        all_params = ['policy_id', 'rule_id', 'update_whiteblackip_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3219,6 +3810,8 @@ class WafAsyncClient(Client):
             path_params['rule_id'] = local_var_params['rule_id']
 
         query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 

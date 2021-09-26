@@ -22,27 +22,54 @@ class UpdateHostRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'instance_id': 'str',
         'body': 'UpdateHostRequestBody'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'instance_id': 'instance_id',
         'body': 'body'
     }
 
-    def __init__(self, instance_id=None, body=None):
+    def __init__(self, enterprise_project_id=None, instance_id=None, body=None):
         """UpdateHostRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._instance_id = None
         self._body = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         self.instance_id = instance_id
         if body is not None:
             self.body = body
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this UpdateHostRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this UpdateHostRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this UpdateHostRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this UpdateHostRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def instance_id(self):

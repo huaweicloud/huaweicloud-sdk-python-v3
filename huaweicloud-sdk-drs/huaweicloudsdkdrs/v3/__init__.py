@@ -54,8 +54,11 @@ from huaweicloudsdkdrs.v3.model.batch_set_definer_request import BatchSetDefiner
 from huaweicloudsdkdrs.v3.model.batch_set_definer_response import BatchSetDefinerResponse
 from huaweicloudsdkdrs.v3.model.batch_set_objects_request import BatchSetObjectsRequest
 from huaweicloudsdkdrs.v3.model.batch_set_objects_response import BatchSetObjectsResponse
+from huaweicloudsdkdrs.v3.model.batch_set_policy_request import BatchSetPolicyRequest
+from huaweicloudsdkdrs.v3.model.batch_set_policy_response import BatchSetPolicyResponse
 from huaweicloudsdkdrs.v3.model.batch_set_speed_request import BatchSetSpeedRequest
 from huaweicloudsdkdrs.v3.model.batch_set_speed_response import BatchSetSpeedResponse
+from huaweicloudsdkdrs.v3.model.batch_setup_sync_policy_req import BatchSetupSyncPolicyReq
 from huaweicloudsdkdrs.v3.model.batch_show_params_request import BatchShowParamsRequest
 from huaweicloudsdkdrs.v3.model.batch_show_params_response import BatchShowParamsResponse
 from huaweicloudsdkdrs.v3.model.batch_special_test_connection_req import BatchSpecialTestConnectionReq
@@ -175,6 +178,8 @@ from huaweicloudsdkdrs.v3.model.struct_process_resp import StructProcessResp
 from huaweicloudsdkdrs.v3.model.struct_process_vo import StructProcessVO
 from huaweicloudsdkdrs.v3.model.subscription_info import SubscriptionInfo
 from huaweicloudsdkdrs.v3.model.switchover_resp import SwitchoverResp
+from huaweicloudsdkdrs.v3.model.sync_policy_req import SyncPolicyReq
+from huaweicloudsdkdrs.v3.model.sync_policy_resp import SyncPolicyResp
 from huaweicloudsdkdrs.v3.model.test_end_point import TestEndPoint
 from huaweicloudsdkdrs.v3.model.transformation_info import TransformationInfo
 from huaweicloudsdkdrs.v3.model.update_database_object_req import UpdateDatabaseObjectReq

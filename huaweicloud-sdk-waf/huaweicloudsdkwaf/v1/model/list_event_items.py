@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListEventResponseBodyItems:
+class ListEventItems:
 
 
     """
@@ -33,7 +33,7 @@ class ListEventResponseBodyItems:
         'payload': 'str',
         'action': 'str',
         'request_line': 'str',
-        'headers': 'ListEventResponseBodyHeaders',
+        'headers': 'ListEventItemsHeaders',
         'cookie': 'str',
         'status': 'str',
         'region': 'str',
@@ -66,7 +66,7 @@ class ListEventResponseBodyItems:
     }
 
     def __init__(self, id=None, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, payload=None, action=None, request_line=None, headers=None, cookie=None, status=None, region=None, host_id=None, response_time=None, response_size=None, response_body=None):
-        """ListEventResponseBodyItems - a model defined in huaweicloud sdk"""
+        """ListEventItems - a model defined in huaweicloud sdk"""
         
         
 
@@ -132,416 +132,416 @@ class ListEventResponseBodyItems:
 
     @property
     def id(self):
-        """Gets the id of this ListEventResponseBodyItems.
+        """Gets the id of this ListEventItems.
 
         事件id
 
-        :return: The id of this ListEventResponseBodyItems.
+        :return: The id of this ListEventItems.
         :rtype: str
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListEventResponseBodyItems.
+        """Sets the id of this ListEventItems.
 
         事件id
 
-        :param id: The id of this ListEventResponseBodyItems.
+        :param id: The id of this ListEventItems.
         :type: str
         """
         self._id = id
 
     @property
     def time(self):
-        """Gets the time of this ListEventResponseBodyItems.
+        """Gets the time of this ListEventItems.
 
         次数
 
-        :return: The time of this ListEventResponseBodyItems.
+        :return: The time of this ListEventItems.
         :rtype: int
         """
         return self._time
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ListEventResponseBodyItems.
+        """Sets the time of this ListEventItems.
 
         次数
 
-        :param time: The time of this ListEventResponseBodyItems.
+        :param time: The time of this ListEventItems.
         :type: int
         """
         self._time = time
 
     @property
     def policyid(self):
-        """Gets the policyid of this ListEventResponseBodyItems.
+        """Gets the policyid of this ListEventItems.
 
         策略id
 
-        :return: The policyid of this ListEventResponseBodyItems.
+        :return: The policyid of this ListEventItems.
         :rtype: str
         """
         return self._policyid
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this ListEventResponseBodyItems.
+        """Sets the policyid of this ListEventItems.
 
         策略id
 
-        :param policyid: The policyid of this ListEventResponseBodyItems.
+        :param policyid: The policyid of this ListEventItems.
         :type: str
         """
         self._policyid = policyid
 
     @property
     def sip(self):
-        """Gets the sip of this ListEventResponseBodyItems.
+        """Gets the sip of this ListEventItems.
 
         源ip
 
-        :return: The sip of this ListEventResponseBodyItems.
+        :return: The sip of this ListEventItems.
         :rtype: str
         """
         return self._sip
 
     @sip.setter
     def sip(self, sip):
-        """Sets the sip of this ListEventResponseBodyItems.
+        """Sets the sip of this ListEventItems.
 
         源ip
 
-        :param sip: The sip of this ListEventResponseBodyItems.
+        :param sip: The sip of this ListEventItems.
         :type: str
         """
         self._sip = sip
 
     @property
     def host(self):
-        """Gets the host of this ListEventResponseBodyItems.
+        """Gets the host of this ListEventItems.
 
         域名
 
-        :return: The host of this ListEventResponseBodyItems.
+        :return: The host of this ListEventItems.
         :rtype: str
         """
         return self._host
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ListEventResponseBodyItems.
+        """Sets the host of this ListEventItems.
 
         域名
 
-        :param host: The host of this ListEventResponseBodyItems.
+        :param host: The host of this ListEventItems.
         :type: str
         """
         self._host = host
 
     @property
     def url(self):
-        """Gets the url of this ListEventResponseBodyItems.
+        """Gets the url of this ListEventItems.
 
         攻击的url链接
 
-        :return: The url of this ListEventResponseBodyItems.
+        :return: The url of this ListEventItems.
         :rtype: str
         """
         return self._url
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ListEventResponseBodyItems.
+        """Sets the url of this ListEventItems.
 
         攻击的url链接
 
-        :param url: The url of this ListEventResponseBodyItems.
+        :param url: The url of this ListEventItems.
         :type: str
         """
         self._url = url
 
     @property
     def attack(self):
-        """Gets the attack of this ListEventResponseBodyItems.
+        """Gets the attack of this ListEventItems.
 
-        攻击类型
+        攻击类型（XSS攻击：xss，sqli，命令注入：cmdi，恶意爬虫：robot，本地文件包含：lfi，远程文件包含：rfi，网站木马：webshell，cc攻击：cc，精准防护：custom_custom，IP黑白名单：custom_whiteblackip，地理位置访问控制：custom_geoip，防篡改：antitamper，反爬虫：anticrawler，网站信息防泄漏：leakage，非法请求：illegal，其它类型攻击：vuln）
 
-        :return: The attack of this ListEventResponseBodyItems.
+        :return: The attack of this ListEventItems.
         :rtype: str
         """
         return self._attack
 
     @attack.setter
     def attack(self, attack):
-        """Sets the attack of this ListEventResponseBodyItems.
+        """Sets the attack of this ListEventItems.
 
-        攻击类型
+        攻击类型（XSS攻击：xss，sqli，命令注入：cmdi，恶意爬虫：robot，本地文件包含：lfi，远程文件包含：rfi，网站木马：webshell，cc攻击：cc，精准防护：custom_custom，IP黑白名单：custom_whiteblackip，地理位置访问控制：custom_geoip，防篡改：antitamper，反爬虫：anticrawler，网站信息防泄漏：leakage，非法请求：illegal，其它类型攻击：vuln）
 
-        :param attack: The attack of this ListEventResponseBodyItems.
+        :param attack: The attack of this ListEventItems.
         :type: str
         """
         self._attack = attack
 
     @property
     def rule(self):
-        """Gets the rule of this ListEventResponseBodyItems.
+        """Gets the rule of this ListEventItems.
 
         命中的规则id
 
-        :return: The rule of this ListEventResponseBodyItems.
+        :return: The rule of this ListEventItems.
         :rtype: str
         """
         return self._rule
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this ListEventResponseBodyItems.
+        """Sets the rule of this ListEventItems.
 
         命中的规则id
 
-        :param rule: The rule of this ListEventResponseBodyItems.
+        :param rule: The rule of this ListEventItems.
         :type: str
         """
         self._rule = rule
 
     @property
     def payload(self):
-        """Gets the payload of this ListEventResponseBodyItems.
+        """Gets the payload of this ListEventItems.
 
         命中的载荷
 
-        :return: The payload of this ListEventResponseBodyItems.
+        :return: The payload of this ListEventItems.
         :rtype: str
         """
         return self._payload
 
     @payload.setter
     def payload(self, payload):
-        """Sets the payload of this ListEventResponseBodyItems.
+        """Sets the payload of this ListEventItems.
 
         命中的载荷
 
-        :param payload: The payload of this ListEventResponseBodyItems.
+        :param payload: The payload of this ListEventItems.
         :type: str
         """
         self._payload = payload
 
     @property
     def action(self):
-        """Gets the action of this ListEventResponseBodyItems.
+        """Gets the action of this ListEventItems.
 
         防护动作
 
-        :return: The action of this ListEventResponseBodyItems.
+        :return: The action of this ListEventItems.
         :rtype: str
         """
         return self._action
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListEventResponseBodyItems.
+        """Sets the action of this ListEventItems.
 
         防护动作
 
-        :param action: The action of this ListEventResponseBodyItems.
+        :param action: The action of this ListEventItems.
         :type: str
         """
         self._action = action
 
     @property
     def request_line(self):
-        """Gets the request_line of this ListEventResponseBodyItems.
+        """Gets the request_line of this ListEventItems.
 
         请求方法和路径
 
-        :return: The request_line of this ListEventResponseBodyItems.
+        :return: The request_line of this ListEventItems.
         :rtype: str
         """
         return self._request_line
 
     @request_line.setter
     def request_line(self, request_line):
-        """Sets the request_line of this ListEventResponseBodyItems.
+        """Sets the request_line of this ListEventItems.
 
         请求方法和路径
 
-        :param request_line: The request_line of this ListEventResponseBodyItems.
+        :param request_line: The request_line of this ListEventItems.
         :type: str
         """
         self._request_line = request_line
 
     @property
     def headers(self):
-        """Gets the headers of this ListEventResponseBodyItems.
+        """Gets the headers of this ListEventItems.
 
 
-        :return: The headers of this ListEventResponseBodyItems.
-        :rtype: ListEventResponseBodyHeaders
+        :return: The headers of this ListEventItems.
+        :rtype: ListEventItemsHeaders
         """
         return self._headers
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this ListEventResponseBodyItems.
+        """Sets the headers of this ListEventItems.
 
 
-        :param headers: The headers of this ListEventResponseBodyItems.
-        :type: ListEventResponseBodyHeaders
+        :param headers: The headers of this ListEventItems.
+        :type: ListEventItemsHeaders
         """
         self._headers = headers
 
     @property
     def cookie(self):
-        """Gets the cookie of this ListEventResponseBodyItems.
+        """Gets the cookie of this ListEventItems.
 
         请求cookie
 
-        :return: The cookie of this ListEventResponseBodyItems.
+        :return: The cookie of this ListEventItems.
         :rtype: str
         """
         return self._cookie
 
     @cookie.setter
     def cookie(self, cookie):
-        """Sets the cookie of this ListEventResponseBodyItems.
+        """Sets the cookie of this ListEventItems.
 
         请求cookie
 
-        :param cookie: The cookie of this ListEventResponseBodyItems.
+        :param cookie: The cookie of this ListEventItems.
         :type: str
         """
         self._cookie = cookie
 
     @property
     def status(self):
-        """Gets the status of this ListEventResponseBodyItems.
+        """Gets the status of this ListEventItems.
 
         响应码状态
 
-        :return: The status of this ListEventResponseBodyItems.
+        :return: The status of this ListEventItems.
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEventResponseBodyItems.
+        """Sets the status of this ListEventItems.
 
         响应码状态
 
-        :param status: The status of this ListEventResponseBodyItems.
+        :param status: The status of this ListEventItems.
         :type: str
         """
         self._status = status
 
     @property
     def region(self):
-        """Gets the region of this ListEventResponseBodyItems.
+        """Gets the region of this ListEventItems.
 
         区域
 
-        :return: The region of this ListEventResponseBodyItems.
+        :return: The region of this ListEventItems.
         :rtype: str
         """
         return self._region
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListEventResponseBodyItems.
+        """Sets the region of this ListEventItems.
 
         区域
 
-        :param region: The region of this ListEventResponseBodyItems.
+        :param region: The region of this ListEventItems.
         :type: str
         """
         self._region = region
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListEventResponseBodyItems.
+        """Gets the host_id of this ListEventItems.
 
         域名id
 
-        :return: The host_id of this ListEventResponseBodyItems.
+        :return: The host_id of this ListEventItems.
         :rtype: str
         """
         return self._host_id
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListEventResponseBodyItems.
+        """Sets the host_id of this ListEventItems.
 
         域名id
 
-        :param host_id: The host_id of this ListEventResponseBodyItems.
+        :param host_id: The host_id of this ListEventItems.
         :type: str
         """
         self._host_id = host_id
 
     @property
     def response_time(self):
-        """Gets the response_time of this ListEventResponseBodyItems.
+        """Gets the response_time of this ListEventItems.
 
         响应时长
 
-        :return: The response_time of this ListEventResponseBodyItems.
+        :return: The response_time of this ListEventItems.
         :rtype: int
         """
         return self._response_time
 
     @response_time.setter
     def response_time(self, response_time):
-        """Sets the response_time of this ListEventResponseBodyItems.
+        """Sets the response_time of this ListEventItems.
 
         响应时长
 
-        :param response_time: The response_time of this ListEventResponseBodyItems.
+        :param response_time: The response_time of this ListEventItems.
         :type: int
         """
         self._response_time = response_time
 
     @property
     def response_size(self):
-        """Gets the response_size of this ListEventResponseBodyItems.
+        """Gets the response_size of this ListEventItems.
 
         响应体大小
 
-        :return: The response_size of this ListEventResponseBodyItems.
+        :return: The response_size of this ListEventItems.
         :rtype: int
         """
         return self._response_size
 
     @response_size.setter
     def response_size(self, response_size):
-        """Sets the response_size of this ListEventResponseBodyItems.
+        """Sets the response_size of this ListEventItems.
 
         响应体大小
 
-        :param response_size: The response_size of this ListEventResponseBodyItems.
+        :param response_size: The response_size of this ListEventItems.
         :type: int
         """
         self._response_size = response_size
 
     @property
     def response_body(self):
-        """Gets the response_body of this ListEventResponseBodyItems.
+        """Gets the response_body of this ListEventItems.
 
         响应体
 
-        :return: The response_body of this ListEventResponseBodyItems.
+        :return: The response_body of this ListEventItems.
         :rtype: str
         """
         return self._response_body
 
     @response_body.setter
     def response_body(self, response_body):
-        """Sets the response_body of this ListEventResponseBodyItems.
+        """Sets the response_body of this ListEventItems.
 
         响应体
 
-        :param response_body: The response_body of this ListEventResponseBodyItems.
+        :param response_body: The response_body of this ListEventItems.
         :type: str
         """
         self._response_body = response_body
@@ -588,7 +588,7 @@ class ListEventResponseBodyItems:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListEventResponseBodyItems):
+        if not isinstance(other, ListEventItems):
             return False
 
         return self.__dict__ == other.__dict__

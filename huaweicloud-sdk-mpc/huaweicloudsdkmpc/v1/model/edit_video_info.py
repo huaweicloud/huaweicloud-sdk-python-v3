@@ -1,0 +1,249 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class EditVideoInfo:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'reference': 'str',
+        'width': 'int',
+        'height': 'int',
+        'codec': 'str',
+        'bitrate': 'int',
+        'frame_rate': 'int'
+    }
+
+    attribute_map = {
+        'reference': 'reference',
+        'width': 'width',
+        'height': 'height',
+        'codec': 'codec',
+        'bitrate': 'bitrate',
+        'frame_rate': 'frame_rate'
+    }
+
+    def __init__(self, reference=None, width=None, height=None, codec=None, bitrate=None, frame_rate=None):
+        """EditVideoInfo - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._reference = None
+        self._width = None
+        self._height = None
+        self._codec = None
+        self._bitrate = None
+        self._frame_rate = None
+        self.discriminator = None
+
+        if reference is not None:
+            self.reference = reference
+        if width is not None:
+            self.width = width
+        if height is not None:
+            self.height = height
+        if codec is not None:
+            self.codec = codec
+        if bitrate is not None:
+            self.bitrate = bitrate
+        if frame_rate is not None:
+            self.frame_rate = frame_rate
+
+    @property
+    def reference(self):
+        """Gets the reference of this EditVideoInfo.
+
+        剪辑输出视频参数的参照物。取值如下： - MAX，以输入片源中最大分辨率的视频参数作为输出参照。 - MIN，以输入片源中最小分辨率的视频参数作为输出参照。 - CUSTOM，自定义视频输出参数，使用该参数时，所有视频参数必填
+
+        :return: The reference of this EditVideoInfo.
+        :rtype: str
+        """
+        return self._reference
+
+    @reference.setter
+    def reference(self, reference):
+        """Sets the reference of this EditVideoInfo.
+
+        剪辑输出视频参数的参照物。取值如下： - MAX，以输入片源中最大分辨率的视频参数作为输出参照。 - MIN，以输入片源中最小分辨率的视频参数作为输出参照。 - CUSTOM，自定义视频输出参数，使用该参数时，所有视频参数必填
+
+        :param reference: The reference of this EditVideoInfo.
+        :type: str
+        """
+        self._reference = reference
+
+    @property
+    def width(self):
+        """Gets the width of this EditVideoInfo.
+
+        视频宽度。
+
+        :return: The width of this EditVideoInfo.
+        :rtype: int
+        """
+        return self._width
+
+    @width.setter
+    def width(self, width):
+        """Sets the width of this EditVideoInfo.
+
+        视频宽度。
+
+        :param width: The width of this EditVideoInfo.
+        :type: int
+        """
+        self._width = width
+
+    @property
+    def height(self):
+        """Gets the height of this EditVideoInfo.
+
+        视频高度。
+
+        :return: The height of this EditVideoInfo.
+        :rtype: int
+        """
+        return self._height
+
+    @height.setter
+    def height(self, height):
+        """Sets the height of this EditVideoInfo.
+
+        视频高度。
+
+        :param height: The height of this EditVideoInfo.
+        :type: int
+        """
+        self._height = height
+
+    @property
+    def codec(self):
+        """Gets the codec of this EditVideoInfo.
+
+        视频频编码格式。
+
+        :return: The codec of this EditVideoInfo.
+        :rtype: str
+        """
+        return self._codec
+
+    @codec.setter
+    def codec(self, codec):
+        """Sets the codec of this EditVideoInfo.
+
+        视频频编码格式。
+
+        :param codec: The codec of this EditVideoInfo.
+        :type: str
+        """
+        self._codec = codec
+
+    @property
+    def bitrate(self):
+        """Gets the bitrate of this EditVideoInfo.
+
+        视频码率，单位: bit/s 
+
+        :return: The bitrate of this EditVideoInfo.
+        :rtype: int
+        """
+        return self._bitrate
+
+    @bitrate.setter
+    def bitrate(self, bitrate):
+        """Sets the bitrate of this EditVideoInfo.
+
+        视频码率，单位: bit/s 
+
+        :param bitrate: The bitrate of this EditVideoInfo.
+        :type: int
+        """
+        self._bitrate = bitrate
+
+    @property
+    def frame_rate(self):
+        """Gets the frame_rate of this EditVideoInfo.
+
+        帧率。 
+
+        :return: The frame_rate of this EditVideoInfo.
+        :rtype: int
+        """
+        return self._frame_rate
+
+    @frame_rate.setter
+    def frame_rate(self, frame_rate):
+        """Sets the frame_rate of this EditVideoInfo.
+
+        帧率。 
+
+        :param frame_rate: The frame_rate of this EditVideoInfo.
+        :type: int
+        """
+        self._frame_rate = frame_rate
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, EditVideoInfo):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

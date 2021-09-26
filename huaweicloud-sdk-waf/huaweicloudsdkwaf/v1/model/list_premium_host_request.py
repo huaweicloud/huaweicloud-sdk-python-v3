@@ -22,6 +22,7 @@ class ListPremiumHostRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'page': 'str',
         'pagesize': 'str',
         'hostname': 'str',
@@ -30,6 +31,7 @@ class ListPremiumHostRequest:
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'page': 'page',
         'pagesize': 'pagesize',
         'hostname': 'hostname',
@@ -37,11 +39,12 @@ class ListPremiumHostRequest:
         'protect_status': 'protect_status'
     }
 
-    def __init__(self, page=None, pagesize=None, hostname=None, policyname=None, protect_status=None):
+    def __init__(self, enterprise_project_id=None, page=None, pagesize=None, hostname=None, policyname=None, protect_status=None):
         """ListPremiumHostRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._page = None
         self._pagesize = None
         self._hostname = None
@@ -49,6 +52,8 @@ class ListPremiumHostRequest:
         self._protect_status = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if page is not None:
             self.page = page
         if pagesize is not None:
@@ -59,6 +64,28 @@ class ListPremiumHostRequest:
             self.policyname = policyname
         if protect_status is not None:
             self.protect_status = protect_status
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListPremiumHostRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this ListPremiumHostRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListPremiumHostRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this ListPremiumHostRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def page(self):

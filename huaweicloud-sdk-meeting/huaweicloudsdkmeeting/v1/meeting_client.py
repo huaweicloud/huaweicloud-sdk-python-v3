@@ -3241,6 +3241,75 @@ class MeetingClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def invite_operate_video(self, request):
+        """主持人邀请与会者开启、关闭摄像头
+
+        主持人邀请与会者开启、关闭摄像头
+
+        :param InviteOperateVideoRequest request
+        :return: InviteOperateVideoResponse
+        """
+        return self.invite_operate_video_with_http_info(request)
+
+    def invite_operate_video_with_http_info(self, request):
+        """主持人邀请与会者开启、关闭摄像头
+
+        主持人邀请与会者开启、关闭摄像头
+
+        :param InviteOperateVideoRequest request
+        :return: InviteOperateVideoResponse
+        """
+
+        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'participant_id' in local_var_params:
+            query_params.append(('participantID', local_var_params['participant_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/participants/video',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='InviteOperateVideoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def invite_participant(self, request):
         """邀请与会者
 
@@ -6832,6 +6901,73 @@ class MeetingClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def set_sso_config(self, request):
+        """设置SSO鉴权配置
+
+        设置SSO鉴权配置
+
+        :param SetSsoConfigRequest request
+        :return: SetSsoConfigResponse
+        """
+        return self.set_sso_config_with_http_info(request)
+
+    def set_sso_config_with_http_info(self, request):
+        """设置SSO鉴权配置
+
+        设置SSO鉴权配置
+
+        :param SetSsoConfigRequest request
+        :return: SetSsoConfigResponse
+        """
+
+        all_params = ['authorize_config_info', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/acs/authorizeconfig',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetSsoConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_conf_org(self, request):
         """通过会议ID查询企业ID
 
@@ -8515,6 +8651,71 @@ class MeetingClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowSpResourceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_sso_config(self, request):
+        """查询SSO鉴权配置
+
+        查询SSO鉴权配置
+
+        :param ShowSsoConfigRequest request
+        :return: ShowSsoConfigResponse
+        """
+        return self.show_sso_config_with_http_info(request)
+
+    def show_sso_config_with_http_info(self, request):
+        """查询SSO鉴权配置
+
+        查询SSO鉴权配置
+
+        :param ShowSsoConfigRequest request
+        :return: ShowSsoConfigResponse
+        """
+
+        all_params = ['x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/acs/authorizeconfig',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowSsoConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -2125,7 +2125,7 @@ class SmsAsyncClient(Client):
     def update_task_speed_async(self, request):
         """上报数据迁移进度和速率
 
-        此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。   迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
+        此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。  迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
 
         :param UpdateTaskSpeedRequest request
         :return: UpdateTaskSpeedResponse
@@ -2135,7 +2135,7 @@ class SmsAsyncClient(Client):
     def update_task_speed_with_http_info(self, request):
         """上报数据迁移进度和速率
 
-        此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。   迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
+        此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。  迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
 
         :param UpdateTaskSpeedRequest request
         :return: UpdateTaskSpeedResponse

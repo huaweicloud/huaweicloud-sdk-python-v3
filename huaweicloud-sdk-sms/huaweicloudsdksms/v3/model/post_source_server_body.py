@@ -31,7 +31,7 @@ class PostSourceServerBody:
         'firmware': 'str',
         'cpu_quantity': 'int',
         'memory': 'int',
-        'disks': 'list[Disk]',
+        'disks': 'list[ServerDisk]',
         'btrfs_list': 'list[BtrfsFileSystem]',
         'networks': 'list[NetWork]',
         'domain_id': 'str',
@@ -351,7 +351,7 @@ class PostSourceServerBody:
         源端服务器的磁盘信息
 
         :return: The disks of this PostSourceServerBody.
-        :rtype: list[Disk]
+        :rtype: list[ServerDisk]
         """
         return self._disks
 
@@ -362,7 +362,7 @@ class PostSourceServerBody:
         源端服务器的磁盘信息
 
         :param disks: The disks of this PostSourceServerBody.
-        :type: list[Disk]
+        :type: list[ServerDisk]
         """
         self._disks = disks
 

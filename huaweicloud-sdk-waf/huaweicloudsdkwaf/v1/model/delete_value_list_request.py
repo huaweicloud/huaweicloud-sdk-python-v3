@@ -22,22 +22,49 @@ class DeleteValueListRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'valuelistid': 'str'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'valuelistid': 'valuelistid'
     }
 
-    def __init__(self, valuelistid=None):
+    def __init__(self, enterprise_project_id=None, valuelistid=None):
         """DeleteValueListRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._valuelistid = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         self.valuelistid = valuelistid
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this DeleteValueListRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this DeleteValueListRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this DeleteValueListRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this DeleteValueListRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def valuelistid(self):

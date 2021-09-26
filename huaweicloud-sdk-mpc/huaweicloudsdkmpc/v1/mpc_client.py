@@ -250,6 +250,208 @@ class MpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_editing_job(self, request):
+        """新建剪辑任务
+
+        创建剪辑任务，用于将多个视频文件进行裁剪成多个视频分段，并且可以把这些视频分段合并成一个视频，剪切和拼接功能可以单独使用。 待剪辑的视频文件需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。
+
+        :param CreateEditingJobRequest request
+        :return: CreateEditingJobResponse
+        """
+        return self.create_editing_job_with_http_info(request)
+
+    def create_editing_job_with_http_info(self, request):
+        """新建剪辑任务
+
+        创建剪辑任务，用于将多个视频文件进行裁剪成多个视频分段，并且可以把这些视频分段合并成一个视频，剪切和拼接功能可以单独使用。 待剪辑的视频文件需要存储在与媒体处理服务同区域的OBS桶中，且该OBS桶已授权。
+
+        :param CreateEditingJobRequest request
+        :return: CreateEditingJobResponse
+        """
+
+        all_params = ['create_editing_job_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/editing/jobs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateEditingJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_editing_job(self, request):
+        """取消剪辑任务
+
+        取消已下发的生成剪辑任务，仅支持取消正在排队中的任务。
+
+        :param DeleteEditingJobRequest request
+        :return: DeleteEditingJobResponse
+        """
+        return self.delete_editing_job_with_http_info(request)
+
+    def delete_editing_job_with_http_info(self, request):
+        """取消剪辑任务
+
+        取消已下发的生成剪辑任务，仅支持取消正在排队中的任务。
+
+        :param DeleteEditingJobRequest request
+        :return: DeleteEditingJobResponse
+        """
+
+        all_params = ['job_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/editing/jobs',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteEditingJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_editing_job(self, request):
+        """查询剪辑任务
+
+        查询剪辑任务的状态。
+
+        :param ListEditingJobRequest request
+        :return: ListEditingJobResponse
+        """
+        return self.list_editing_job_with_http_info(request)
+
+    def list_editing_job_with_http_info(self, request):
+        """查询剪辑任务
+
+        查询剪辑任务的状态。
+
+        :param ListEditingJobRequest request
+        :return: ListEditingJobResponse
+        """
+
+        all_params = ['x_language', 'job_id', 'status', 'start_time', 'end_time', 'page', 'size']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+            collection_formats['job_id'] = 'multi'
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['x-language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/editing/jobs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEditingJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_encrypt_task(self, request):
         """新建独立加密任务
 

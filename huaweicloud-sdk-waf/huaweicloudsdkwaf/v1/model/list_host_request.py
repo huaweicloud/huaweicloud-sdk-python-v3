@@ -22,6 +22,7 @@ class ListHostRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'page': 'int',
         'pagesize': 'int',
         'hostname': 'str',
@@ -29,23 +30,27 @@ class ListHostRequest:
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'page': 'page',
         'pagesize': 'pagesize',
         'hostname': 'hostname',
         'policyname': 'policyname'
     }
 
-    def __init__(self, page=None, pagesize=None, hostname=None, policyname=None):
+    def __init__(self, enterprise_project_id=None, page=None, pagesize=None, hostname=None, policyname=None):
         """ListHostRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._page = None
         self._pagesize = None
         self._hostname = None
         self._policyname = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if page is not None:
             self.page = page
         if pagesize is not None:
@@ -54,6 +59,28 @@ class ListHostRequest:
             self.hostname = hostname
         if policyname is not None:
             self.policyname = policyname
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListHostRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this ListHostRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListHostRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this ListHostRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def page(self):

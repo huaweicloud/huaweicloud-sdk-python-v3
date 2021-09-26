@@ -25,7 +25,7 @@ class PipelineParam:
         'name': 'str',
         'value': 'str',
         'description': 'str',
-        'paramtype': 'str',
+        'param_type': 'str',
         'is_static': 'bool',
         'is_default': 'bool'
     }
@@ -34,12 +34,12 @@ class PipelineParam:
         'name': 'name',
         'value': 'value',
         'description': 'description',
-        'paramtype': 'paramtype',
+        'param_type': 'param_type',
         'is_static': 'is_static',
         'is_default': 'is_default'
     }
 
-    def __init__(self, name=None, value=None, description=None, paramtype=None, is_static=None, is_default=None):
+    def __init__(self, name=None, value=None, description=None, param_type=None, is_static=None, is_default=None):
         """PipelineParam - a model defined in huaweicloud sdk"""
         
         
@@ -47,7 +47,7 @@ class PipelineParam:
         self._name = None
         self._value = None
         self._description = None
-        self._paramtype = None
+        self._param_type = None
         self._is_static = None
         self._is_default = None
         self.discriminator = None
@@ -55,7 +55,7 @@ class PipelineParam:
         self.name = name
         self.value = value
         self.description = description
-        self.paramtype = paramtype
+        self.param_type = param_type
         self.is_static = is_static
         self.is_default = is_default
 
@@ -126,26 +126,26 @@ class PipelineParam:
         self._description = description
 
     @property
-    def paramtype(self):
-        """Gets the paramtype of this PipelineParam.
+    def param_type(self):
+        """Gets the param_type of this PipelineParam.
 
         流水线参数类型
 
-        :return: The paramtype of this PipelineParam.
+        :return: The param_type of this PipelineParam.
         :rtype: str
         """
-        return self._paramtype
+        return self._param_type
 
-    @paramtype.setter
-    def paramtype(self, paramtype):
-        """Sets the paramtype of this PipelineParam.
+    @param_type.setter
+    def param_type(self, param_type):
+        """Sets the param_type of this PipelineParam.
 
         流水线参数类型
 
-        :param paramtype: The paramtype of this PipelineParam.
+        :param param_type: The param_type of this PipelineParam.
         :type: str
         """
-        self._paramtype = paramtype
+        self._param_type = param_type
 
     @property
     def is_static(self):

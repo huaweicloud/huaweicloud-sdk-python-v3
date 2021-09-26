@@ -28,7 +28,6 @@ class ServerDisk:
         'size': 'int',
         'used_size': 'int',
         'physical_volumes': 'list[PhysicalVolume]',
-        'disk_id': 'str',
         'os_disk': 'bool',
         'relation_name': 'str'
     }
@@ -40,12 +39,11 @@ class ServerDisk:
         'size': 'size',
         'used_size': 'used_size',
         'physical_volumes': 'physical_volumes',
-        'disk_id': 'disk_id',
         'os_disk': 'os_disk',
         'relation_name': 'relation_name'
     }
 
-    def __init__(self, name=None, partition_style=None, device_use=None, size=None, used_size=None, physical_volumes=None, disk_id=None, os_disk=None, relation_name=None):
+    def __init__(self, name=None, partition_style=None, device_use=None, size=None, used_size=None, physical_volumes=None, os_disk=None, relation_name=None):
         """ServerDisk - a model defined in huaweicloud sdk"""
         
         
@@ -56,7 +54,6 @@ class ServerDisk:
         self._size = None
         self._used_size = None
         self._physical_volumes = None
-        self._disk_id = None
         self._os_disk = None
         self._relation_name = None
         self.discriminator = None
@@ -68,8 +65,6 @@ class ServerDisk:
         self.size = size
         self.used_size = used_size
         self.physical_volumes = physical_volumes
-        if disk_id is not None:
-            self.disk_id = disk_id
         if os_disk is not None:
             self.os_disk = os_disk
         if relation_name is not None:
@@ -206,28 +201,6 @@ class ServerDisk:
         :type: list[PhysicalVolume]
         """
         self._physical_volumes = physical_volumes
-
-    @property
-    def disk_id(self):
-        """Gets the disk_id of this ServerDisk.
-
-        创建任务时，如果选择已有虚拟机，此参数必选
-
-        :return: The disk_id of this ServerDisk.
-        :rtype: str
-        """
-        return self._disk_id
-
-    @disk_id.setter
-    def disk_id(self, disk_id):
-        """Sets the disk_id of this ServerDisk.
-
-        创建任务时，如果选择已有虚拟机，此参数必选
-
-        :param disk_id: The disk_id of this ServerDisk.
-        :type: str
-        """
-        self._disk_id = disk_id
 
     @property
     def os_disk(self):

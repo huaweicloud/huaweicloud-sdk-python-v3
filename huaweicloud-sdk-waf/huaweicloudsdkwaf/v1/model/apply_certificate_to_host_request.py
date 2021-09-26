@@ -22,27 +22,54 @@ class ApplyCertificateToHostRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'certificate_id': 'str',
         'body': 'ApplyCertificateToHostRequestBody'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'certificate_id': 'certificate_id',
         'body': 'body'
     }
 
-    def __init__(self, certificate_id=None, body=None):
+    def __init__(self, enterprise_project_id=None, certificate_id=None, body=None):
         """ApplyCertificateToHostRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._certificate_id = None
         self._body = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         self.certificate_id = certificate_id
         if body is not None:
             self.body = body
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ApplyCertificateToHostRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this ApplyCertificateToHostRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ApplyCertificateToHostRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this ApplyCertificateToHostRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def certificate_id(self):

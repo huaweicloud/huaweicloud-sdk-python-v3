@@ -22,27 +22,54 @@ class UpdatePolicyRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'policy_id': 'str',
         'body': 'UpdatePolicyRequestBody'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'policy_id': 'policy_id',
         'body': 'body'
     }
 
-    def __init__(self, policy_id=None, body=None):
+    def __init__(self, enterprise_project_id=None, policy_id=None, body=None):
         """UpdatePolicyRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._policy_id = None
         self._body = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         self.policy_id = policy_id
         if body is not None:
             self.body = body
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this UpdatePolicyRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this UpdatePolicyRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this UpdatePolicyRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this UpdatePolicyRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def policy_id(self):

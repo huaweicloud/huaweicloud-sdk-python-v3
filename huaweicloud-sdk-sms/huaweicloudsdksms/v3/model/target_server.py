@@ -48,7 +48,7 @@ class TargetServer:
         'flavor': 'str',
         'image_disk_id': 'str',
         'snapshot_ids': 'str',
-        'rollback_snapshot_ids': 'str'
+        'cutovered_snapshot_ids': 'str'
     }
 
     attribute_map = {
@@ -78,10 +78,10 @@ class TargetServer:
         'flavor': 'flavor',
         'image_disk_id': 'image_disk_id',
         'snapshot_ids': 'snapshot_ids',
-        'rollback_snapshot_ids': 'rollback_snapshot_ids'
+        'cutovered_snapshot_ids': 'cutovered_snapshot_ids'
     }
 
-    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, vm_id=None, flavor=None, image_disk_id=None, snapshot_ids=None, rollback_snapshot_ids=None):
+    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, vm_id=None, flavor=None, image_disk_id=None, snapshot_ids=None, cutovered_snapshot_ids=None):
         """TargetServer - a model defined in huaweicloud sdk"""
         
         
@@ -112,7 +112,7 @@ class TargetServer:
         self._flavor = None
         self._image_disk_id = None
         self._snapshot_ids = None
-        self._rollback_snapshot_ids = None
+        self._cutovered_snapshot_ids = None
         self.discriminator = None
 
         if id is not None:
@@ -163,8 +163,8 @@ class TargetServer:
             self.image_disk_id = image_disk_id
         if snapshot_ids is not None:
             self.snapshot_ids = snapshot_ids
-        if rollback_snapshot_ids is not None:
-            self.rollback_snapshot_ids = rollback_snapshot_ids
+        if cutovered_snapshot_ids is not None:
+            self.cutovered_snapshot_ids = cutovered_snapshot_ids
 
     @property
     def id(self):
@@ -739,26 +739,26 @@ class TargetServer:
         self._snapshot_ids = snapshot_ids
 
     @property
-    def rollback_snapshot_ids(self):
-        """Gets the rollback_snapshot_ids of this TargetServer.
+    def cutovered_snapshot_ids(self):
+        """Gets the cutovered_snapshot_ids of this TargetServer.
 
         目的端回滚快照id
 
-        :return: The rollback_snapshot_ids of this TargetServer.
+        :return: The cutovered_snapshot_ids of this TargetServer.
         :rtype: str
         """
-        return self._rollback_snapshot_ids
+        return self._cutovered_snapshot_ids
 
-    @rollback_snapshot_ids.setter
-    def rollback_snapshot_ids(self, rollback_snapshot_ids):
-        """Sets the rollback_snapshot_ids of this TargetServer.
+    @cutovered_snapshot_ids.setter
+    def cutovered_snapshot_ids(self, cutovered_snapshot_ids):
+        """Sets the cutovered_snapshot_ids of this TargetServer.
 
         目的端回滚快照id
 
-        :param rollback_snapshot_ids: The rollback_snapshot_ids of this TargetServer.
+        :param cutovered_snapshot_ids: The cutovered_snapshot_ids of this TargetServer.
         :type: str
         """
-        self._rollback_snapshot_ids = rollback_snapshot_ids
+        self._cutovered_snapshot_ids = cutovered_snapshot_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

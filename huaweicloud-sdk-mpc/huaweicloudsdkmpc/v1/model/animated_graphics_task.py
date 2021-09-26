@@ -28,9 +28,9 @@ class AnimatedGraphicsTask:
         'start_time': 'str',
         'end_time': 'str',
         'description': 'str',
+        'user_data': 'str',
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
-        'user_data': 'str',
         'output_param': 'AnimatedGraphicsOutputParam'
     }
 
@@ -41,13 +41,13 @@ class AnimatedGraphicsTask:
         'start_time': 'start_time',
         'end_time': 'end_time',
         'description': 'description',
+        'user_data': 'user_data',
         'input': 'input',
         'output': 'output',
-        'user_data': 'user_data',
         'output_param': 'output_param'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, input=None, output=None, user_data=None, output_param=None):
+    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, user_data=None, input=None, output=None, output_param=None):
         """AnimatedGraphicsTask - a model defined in huaweicloud sdk"""
         
         
@@ -58,9 +58,9 @@ class AnimatedGraphicsTask:
         self._start_time = None
         self._end_time = None
         self._description = None
+        self._user_data = None
         self._input = None
         self._output = None
-        self._user_data = None
         self._output_param = None
         self.discriminator = None
 
@@ -76,12 +76,12 @@ class AnimatedGraphicsTask:
             self.end_time = end_time
         if description is not None:
             self.description = description
+        if user_data is not None:
+            self.user_data = user_data
         if input is not None:
             self.input = input
         if output is not None:
             self.output = output
-        if user_data is not None:
-            self.user_data = user_data
         if output_param is not None:
             self.output_param = output_param
 
@@ -218,6 +218,28 @@ class AnimatedGraphicsTask:
         self._description = description
 
     @property
+    def user_data(self):
+        """Gets the user_data of this AnimatedGraphicsTask.
+
+        用户数据。 
+
+        :return: The user_data of this AnimatedGraphicsTask.
+        :rtype: str
+        """
+        return self._user_data
+
+    @user_data.setter
+    def user_data(self, user_data):
+        """Sets the user_data of this AnimatedGraphicsTask.
+
+        用户数据。 
+
+        :param user_data: The user_data of this AnimatedGraphicsTask.
+        :type: str
+        """
+        self._user_data = user_data
+
+    @property
     def input(self):
         """Gets the input of this AnimatedGraphicsTask.
 
@@ -256,28 +278,6 @@ class AnimatedGraphicsTask:
         :type: ObsObjInfo
         """
         self._output = output
-
-    @property
-    def user_data(self):
-        """Gets the user_data of this AnimatedGraphicsTask.
-
-        用户数据。 
-
-        :return: The user_data of this AnimatedGraphicsTask.
-        :rtype: str
-        """
-        return self._user_data
-
-    @user_data.setter
-    def user_data(self, user_data):
-        """Sets the user_data of this AnimatedGraphicsTask.
-
-        用户数据。 
-
-        :param user_data: The user_data of this AnimatedGraphicsTask.
-        :type: str
-        """
-        self._user_data = user_data
 
     @property
     def output_param(self):

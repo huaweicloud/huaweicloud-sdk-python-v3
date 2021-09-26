@@ -22,27 +22,54 @@ class DeletePremiumHostRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'host_id': 'str',
         'keep_policy': 'bool'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'host_id': 'host_id',
         'keep_policy': 'keepPolicy'
     }
 
-    def __init__(self, host_id=None, keep_policy=None):
+    def __init__(self, enterprise_project_id=None, host_id=None, keep_policy=None):
         """DeletePremiumHostRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._host_id = None
         self._keep_policy = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         self.host_id = host_id
         if keep_policy is not None:
             self.keep_policy = keep_policy
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this DeletePremiumHostRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this DeletePremiumHostRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this DeletePremiumHostRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this DeletePremiumHostRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def host_id(self):

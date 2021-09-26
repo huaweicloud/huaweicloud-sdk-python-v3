@@ -33,7 +33,7 @@ class TaskTargetServer:
         'volume_groups': 'list[VolumeGroups]',
         'btrfs_list': 'list[str]',
         'image_disk_id': 'str',
-        'rollback_snapshot_ids': 'str'
+        'cutovered_snapshot_ids': 'str'
     }
 
     attribute_map = {
@@ -48,10 +48,10 @@ class TaskTargetServer:
         'volume_groups': 'volume_groups',
         'btrfs_list': 'btrfs_list',
         'image_disk_id': 'image_disk_id',
-        'rollback_snapshot_ids': 'rollback_snapshot_ids'
+        'cutovered_snapshot_ids': 'cutovered_snapshot_ids'
     }
 
-    def __init__(self, id=None, vm_id=None, name=None, ip=None, os_type=None, os_version=None, system_dir=None, disks=None, volume_groups=None, btrfs_list=None, image_disk_id=None, rollback_snapshot_ids=None):
+    def __init__(self, id=None, vm_id=None, name=None, ip=None, os_type=None, os_version=None, system_dir=None, disks=None, volume_groups=None, btrfs_list=None, image_disk_id=None, cutovered_snapshot_ids=None):
         """TaskTargetServer - a model defined in huaweicloud sdk"""
         
         
@@ -67,7 +67,7 @@ class TaskTargetServer:
         self._volume_groups = None
         self._btrfs_list = None
         self._image_disk_id = None
-        self._rollback_snapshot_ids = None
+        self._cutovered_snapshot_ids = None
         self.discriminator = None
 
         if id is not None:
@@ -91,8 +91,8 @@ class TaskTargetServer:
             self.btrfs_list = btrfs_list
         if image_disk_id is not None:
             self.image_disk_id = image_disk_id
-        if rollback_snapshot_ids is not None:
-            self.rollback_snapshot_ids = rollback_snapshot_ids
+        if cutovered_snapshot_ids is not None:
+            self.cutovered_snapshot_ids = cutovered_snapshot_ids
 
     @property
     def id(self):
@@ -337,26 +337,26 @@ class TaskTargetServer:
         self._image_disk_id = image_disk_id
 
     @property
-    def rollback_snapshot_ids(self):
-        """Gets the rollback_snapshot_ids of this TaskTargetServer.
+    def cutovered_snapshot_ids(self):
+        """Gets the cutovered_snapshot_ids of this TaskTargetServer.
 
         目的端回滚快照id
 
-        :return: The rollback_snapshot_ids of this TaskTargetServer.
+        :return: The cutovered_snapshot_ids of this TaskTargetServer.
         :rtype: str
         """
-        return self._rollback_snapshot_ids
+        return self._cutovered_snapshot_ids
 
-    @rollback_snapshot_ids.setter
-    def rollback_snapshot_ids(self, rollback_snapshot_ids):
-        """Sets the rollback_snapshot_ids of this TaskTargetServer.
+    @cutovered_snapshot_ids.setter
+    def cutovered_snapshot_ids(self, cutovered_snapshot_ids):
+        """Sets the cutovered_snapshot_ids of this TaskTargetServer.
 
         目的端回滚快照id
 
-        :param rollback_snapshot_ids: The rollback_snapshot_ids of this TaskTargetServer.
+        :param cutovered_snapshot_ids: The cutovered_snapshot_ids of this TaskTargetServer.
         :type: str
         """
-        self._rollback_snapshot_ids = rollback_snapshot_ids
+        self._cutovered_snapshot_ids = cutovered_snapshot_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

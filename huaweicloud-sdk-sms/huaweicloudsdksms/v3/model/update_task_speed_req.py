@@ -49,16 +49,11 @@ class UpdateTaskSpeedReq:
         self._migrate_speed = None
         self.discriminator = None
 
-        if subtask_name is not None:
-            self.subtask_name = subtask_name
-        if progress is not None:
-            self.progress = progress
-        if replicatesize is not None:
-            self.replicatesize = replicatesize
-        if totalsize is not None:
-            self.totalsize = totalsize
-        if migrate_speed is not None:
-            self.migrate_speed = migrate_speed
+        self.subtask_name = subtask_name
+        self.progress = progress
+        self.replicatesize = replicatesize
+        self.totalsize = totalsize
+        self.migrate_speed = migrate_speed
 
     @property
     def subtask_name(self):

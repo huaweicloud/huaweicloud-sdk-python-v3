@@ -1025,6 +1025,71 @@ class DrsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_set_policy_async(self, request):
+        """批量设置同步策略
+
+        批量设置MySQL同步策略，包括冲突策略、过滤DROP Datase、对象同步范围。
+
+        :param BatchSetPolicyRequest request
+        :return: BatchSetPolicyResponse
+        """
+        return self.batch_set_policy_with_http_info(request)
+
+    def batch_set_policy_with_http_info(self, request):
+        """批量设置同步策略
+
+        批量设置MySQL同步策略，包括冲突策略、过滤DROP Datase、对象同步范围。
+
+        :param BatchSetPolicyRequest request
+        :return: BatchSetPolicyResponse
+        """
+
+        all_params = ['x_language', 'request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/jobs/batch-sync-policy',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchSetPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def batch_set_speed_async(self, request):
         """批量设置任务限速
 

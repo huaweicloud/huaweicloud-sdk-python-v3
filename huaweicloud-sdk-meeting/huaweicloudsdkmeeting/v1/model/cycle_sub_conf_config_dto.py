@@ -34,7 +34,7 @@ class CycleSubConfConfigDTO:
         'audience_call_in_restriction': 'audienceCallInRestriction',
         'allow_guest_start_conf': 'allowGuestStartConf',
         'enable_waiting_room': 'enableWaitingRoom',
-        'show_audience_count_info': 'ShowAudienceCountInfo'
+        'show_audience_count_info': 'showAudienceCountInfo'
     }
 
     def __init__(self, call_in_restriction=None, audience_call_in_restriction=None, allow_guest_start_conf=None, enable_waiting_room=None, show_audience_count_info=None):

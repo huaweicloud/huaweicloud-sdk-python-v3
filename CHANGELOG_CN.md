@@ -1,3 +1,48 @@
+# 3.0.63 2021-09-26
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 支持接口`BatchSetPolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 支持接口`InviteOperateVideo`、`SetSsoConfig`、`ShowSsoConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+  - 支持接口`CreateEditingJob`、`ListEditingJob`、`DeleteEditingJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 支持下列接口：
+    - `ListIgnoreRule`
+    - `ListStatistics`
+    - `ListQpsTimeline`
+    - `ListBandwidthTimeline`
+    - `ListResponseCodeTimeline`
+    - `ListTopAbnormal`
+    - `ShowConsoleConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.0.62 2021-09-24
 
 ### HuaweiCloud SDK Live

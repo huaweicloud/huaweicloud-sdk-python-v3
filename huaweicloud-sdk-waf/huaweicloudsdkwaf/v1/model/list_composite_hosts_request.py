@@ -22,6 +22,7 @@ class ListCompositeHostsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'page': 'int',
         'pagesize': 'int',
         'hostname': 'str',
@@ -32,6 +33,7 @@ class ListCompositeHostsRequest:
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'page': 'page',
         'pagesize': 'pagesize',
         'hostname': 'hostname',
@@ -41,11 +43,12 @@ class ListCompositeHostsRequest:
         'is_https': 'is_https'
     }
 
-    def __init__(self, page=None, pagesize=None, hostname=None, policyname=None, protect_status=None, waf_type=None, is_https=None):
+    def __init__(self, enterprise_project_id=None, page=None, pagesize=None, hostname=None, policyname=None, protect_status=None, waf_type=None, is_https=None):
         """ListCompositeHostsRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._page = None
         self._pagesize = None
         self._hostname = None
@@ -55,6 +58,8 @@ class ListCompositeHostsRequest:
         self._is_https = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if page is not None:
             self.page = page
         if pagesize is not None:
@@ -69,6 +74,28 @@ class ListCompositeHostsRequest:
             self.waf_type = waf_type
         if is_https is not None:
             self.is_https = is_https
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListCompositeHostsRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this ListCompositeHostsRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListCompositeHostsRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this ListCompositeHostsRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def page(self):

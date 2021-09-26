@@ -22,23 +22,50 @@ class CreateCertificateRequest:
     sensitive_list = []
 
     openapi_types = {
+        'enterprise_project_id': 'str',
         'body': 'CreateCertificateRequestBody'
     }
 
     attribute_map = {
+        'enterprise_project_id': 'enterprise_project_id',
         'body': 'body'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, enterprise_project_id=None, body=None):
         """CreateCertificateRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._enterprise_project_id = None
         self._body = None
         self.discriminator = None
 
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if body is not None:
             self.body = body
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CreateCertificateRequest.
+
+        企业项目id
+
+        :return: The enterprise_project_id of this CreateCertificateRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CreateCertificateRequest.
+
+        企业项目id
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateCertificateRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def body(self):
