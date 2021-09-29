@@ -35,8 +35,8 @@ class DeletePublicZoneResponse(SdkResponse):
         'project_id': 'str',
         'created_at': 'str',
         'updated_at': 'str',
-        'masters': 'str',
-        'links': 'list[PageLink]'
+        'masters': 'list[str]',
+        'links': 'PageLink'
     }
 
     attribute_map = {
@@ -403,7 +403,7 @@ class DeletePublicZoneResponse(SdkResponse):
         主从模式中，从DNS服务器用以获取DNS信息
 
         :return: The masters of this DeletePublicZoneResponse.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._masters
 
@@ -414,7 +414,7 @@ class DeletePublicZoneResponse(SdkResponse):
         主从模式中，从DNS服务器用以获取DNS信息
 
         :param masters: The masters of this DeletePublicZoneResponse.
-        :type: str
+        :type: list[str]
         """
         self._masters = masters
 
@@ -422,10 +422,9 @@ class DeletePublicZoneResponse(SdkResponse):
     def links(self):
         """Gets the links of this DeletePublicZoneResponse.
 
-        指向当前资源或者其他资源的链接。当查询需要分页时，需要包含一个next链接指向下一页
 
         :return: The links of this DeletePublicZoneResponse.
-        :rtype: list[PageLink]
+        :rtype: PageLink
         """
         return self._links
 
@@ -433,10 +432,9 @@ class DeletePublicZoneResponse(SdkResponse):
     def links(self, links):
         """Sets the links of this DeletePublicZoneResponse.
 
-        指向当前资源或者其他资源的链接。当查询需要分页时，需要包含一个next链接指向下一页
 
         :param links: The links of this DeletePublicZoneResponse.
-        :type: list[PageLink]
+        :type: PageLink
         """
         self._links = links
 

@@ -30,6 +30,7 @@ class ListPtrRecordsFloatingResp:
         'status': 'str',
         'action': 'str',
         'links': 'PageLink',
+        'tags': 'list[Tag]',
         'enterprise_project_id': 'str'
     }
 
@@ -42,10 +43,11 @@ class ListPtrRecordsFloatingResp:
         'status': 'status',
         'action': 'action',
         'links': 'links',
+        'tags': 'tags',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, id=None, ptrdname=None, description=None, ttl=None, address=None, status=None, action=None, links=None, enterprise_project_id=None):
+    def __init__(self, id=None, ptrdname=None, description=None, ttl=None, address=None, status=None, action=None, links=None, tags=None, enterprise_project_id=None):
         """ListPtrRecordsFloatingResp - a model defined in huaweicloud sdk"""
         
         
@@ -58,6 +60,7 @@ class ListPtrRecordsFloatingResp:
         self._status = None
         self._action = None
         self._links = None
+        self._tags = None
         self._enterprise_project_id = None
         self.discriminator = None
 
@@ -77,6 +80,8 @@ class ListPtrRecordsFloatingResp:
             self.action = action
         if links is not None:
             self.links = links
+        if tags is not None:
+            self.tags = tags
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
@@ -253,6 +258,28 @@ class ListPtrRecordsFloatingResp:
         :type: PageLink
         """
         self._links = links
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListPtrRecordsFloatingResp.
+
+        资源标签。
+
+        :return: The tags of this ListPtrRecordsFloatingResp.
+        :rtype: list[Tag]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListPtrRecordsFloatingResp.
+
+        资源标签。
+
+        :param tags: The tags of this ListPtrRecordsFloatingResp.
+        :type: list[Tag]
+        """
+        self._tags = tags
 
     @property
     def enterprise_project_id(self):

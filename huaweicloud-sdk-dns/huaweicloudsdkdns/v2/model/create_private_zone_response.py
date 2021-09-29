@@ -36,7 +36,7 @@ class CreatePrivateZoneResponse(SdkResponse):
         'created_at': 'str',
         'updated_at': 'str',
         'links': 'PageLink',
-        'masters': 'str',
+        'masters': 'list[str]',
         'router': 'RouterWithStatus'
     }
 
@@ -428,7 +428,7 @@ class CreatePrivateZoneResponse(SdkResponse):
         主从模式中，从DNS服务器用以获取DNS信息。
 
         :return: The masters of this CreatePrivateZoneResponse.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._masters
 
@@ -439,7 +439,7 @@ class CreatePrivateZoneResponse(SdkResponse):
         主从模式中，从DNS服务器用以获取DNS信息。
 
         :param masters: The masters of this CreatePrivateZoneResponse.
-        :type: str
+        :type: list[str]
         """
         self._masters = masters
 

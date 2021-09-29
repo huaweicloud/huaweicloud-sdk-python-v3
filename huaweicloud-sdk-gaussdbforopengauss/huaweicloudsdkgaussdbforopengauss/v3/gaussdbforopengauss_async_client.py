@@ -99,7 +99,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/opengauss/v3/{project_id}/instances',
+            resource_path='/v3/{project_id}/instances',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -164,7 +164,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/opengauss/v3/{project_id}/instances/{instance_id}',
+            resource_path='/v3/{project_id}/instances/{instance_id}',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,
@@ -246,7 +246,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/opengauss/v3/{project_id}/instances',
+            resource_path='/v3/{project_id}/instances',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -313,7 +313,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/opengauss/v3/{project_id}/instances/{instance_id}/password',
+            resource_path='/v3/{project_id}/instances/{instance_id}/password',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -380,7 +380,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/opengauss/v3/{project_id}/instances/{instance_id}/action',
+            resource_path='/v3/{project_id}/instances/{instance_id}/action',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -447,7 +447,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/opengauss/v3/{project_id}/instances/{instance_id}/backups/policy',
+            resource_path='/v3/{project_id}/instances/{instance_id}/backups/policy',
             method='PUT',
             path_params=path_params,
             query_params=query_params,
@@ -514,7 +514,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/opengauss/v3/{project_id}/instances/{instance_id}/configurations',
+            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
             method='PUT',
             path_params=path_params,
             query_params=query_params,
@@ -581,7 +581,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/opengauss/v3/{project_id}/instances/{instance_id}/name',
+            resource_path='/v3/{project_id}/instances/{instance_id}/name',
             method='PUT',
             path_params=path_params,
             query_params=query_params,

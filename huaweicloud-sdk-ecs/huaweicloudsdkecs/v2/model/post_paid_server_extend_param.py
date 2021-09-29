@@ -31,7 +31,8 @@ class PostPaidServerExtendParam:
         'disk_prior': 'str',
         'spot_duration_hours': 'int',
         'interruption_policy': 'str',
-        'spot_duration_count': 'int'
+        'spot_duration_count': 'int',
+        'cb_csbs_backup': 'str'
     }
 
     attribute_map = {
@@ -44,10 +45,11 @@ class PostPaidServerExtendParam:
         'disk_prior': 'diskPrior',
         'spot_duration_hours': 'spot_duration_hours',
         'interruption_policy': 'interruption_policy',
-        'spot_duration_count': 'spot_duration_count'
+        'spot_duration_count': 'spot_duration_count',
+        'cb_csbs_backup': 'CB_CSBS_BACKUP'
     }
 
-    def __init__(self, charging_mode=None, region_id=None, support_auto_recovery=None, enterprise_project_id=None, market_type=None, spot_price=None, disk_prior=None, spot_duration_hours=None, interruption_policy=None, spot_duration_count=None):
+    def __init__(self, charging_mode=None, region_id=None, support_auto_recovery=None, enterprise_project_id=None, market_type=None, spot_price=None, disk_prior=None, spot_duration_hours=None, interruption_policy=None, spot_duration_count=None, cb_csbs_backup=None):
         """PostPaidServerExtendParam - a model defined in huaweicloud sdk"""
         
         
@@ -62,6 +64,7 @@ class PostPaidServerExtendParam:
         self._spot_duration_hours = None
         self._interruption_policy = None
         self._spot_duration_count = None
+        self._cb_csbs_backup = None
         self.discriminator = None
 
         if charging_mode is not None:
@@ -84,6 +87,8 @@ class PostPaidServerExtendParam:
             self.interruption_policy = interruption_policy
         if spot_duration_count is not None:
             self.spot_duration_count = spot_duration_count
+        if cb_csbs_backup is not None:
+            self.cb_csbs_backup = cb_csbs_backup
 
     @property
     def charging_mode(self):
@@ -304,6 +309,28 @@ class PostPaidServerExtendParam:
         :type: int
         """
         self._spot_duration_count = spot_duration_count
+
+    @property
+    def cb_csbs_backup(self):
+        """Gets the cb_csbs_backup of this PostPaidServerExtendParam.
+
+        云备份策略和云备份存储库详情，取值包含备份策略ID和云备份存储库ID。
+
+        :return: The cb_csbs_backup of this PostPaidServerExtendParam.
+        :rtype: str
+        """
+        return self._cb_csbs_backup
+
+    @cb_csbs_backup.setter
+    def cb_csbs_backup(self, cb_csbs_backup):
+        """Sets the cb_csbs_backup of this PostPaidServerExtendParam.
+
+        云备份策略和云备份存储库详情，取值包含备份策略ID和云备份存储库ID。
+
+        :param cb_csbs_backup: The cb_csbs_backup of this PostPaidServerExtendParam.
+        :type: str
+        """
+        self._cb_csbs_backup = cb_csbs_backup
 
     def to_dict(self):
         """Returns the model properties as a dict"""

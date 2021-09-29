@@ -36,7 +36,7 @@ class UpdatePublicZoneResponse(SdkResponse):
         'created_at': 'str',
         'updated_at': 'str',
         'links': 'PageLink',
-        'masters': 'str'
+        'masters': 'list[str]'
     }
 
     attribute_map = {
@@ -423,7 +423,7 @@ class UpdatePublicZoneResponse(SdkResponse):
         主从模式中，从DNS服务器用以获取DNS信息。  目前暂未使用。
 
         :return: The masters of this UpdatePublicZoneResponse.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._masters
 
@@ -434,7 +434,7 @@ class UpdatePublicZoneResponse(SdkResponse):
         主从模式中，从DNS服务器用以获取DNS信息。  目前暂未使用。
 
         :param masters: The masters of this UpdatePublicZoneResponse.
-        :type: str
+        :type: list[str]
         """
         self._masters = masters
 

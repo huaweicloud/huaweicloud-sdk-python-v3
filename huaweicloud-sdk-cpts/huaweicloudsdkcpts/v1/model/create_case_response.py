@@ -23,7 +23,7 @@ class CreateCaseResponse(SdkResponse):
 
     openapi_types = {
         'code': 'str',
-        'json': 'CreateCaseResqJson',
+        'json': 'CreateCaseResultJson',
         'message': 'str'
     }
 
@@ -78,7 +78,7 @@ class CreateCaseResponse(SdkResponse):
 
 
         :return: The json of this CreateCaseResponse.
-        :rtype: CreateCaseResqJson
+        :rtype: CreateCaseResultJson
         """
         return self._json
 
@@ -88,7 +88,7 @@ class CreateCaseResponse(SdkResponse):
 
 
         :param json: The json of this CreateCaseResponse.
-        :type: CreateCaseResqJson
+        :type: CreateCaseResultJson
         """
         self._json = json
 

@@ -25,7 +25,7 @@ class UpdateTaskStatusResponse(SdkResponse):
         'code': 'str',
         'message': 'str',
         'extend': 'str',
-        'result': 'UpdateTaskStatusResqResult'
+        'result': 'UpdateTaskStatusResult'
     }
 
     attribute_map = {
@@ -127,7 +127,7 @@ class UpdateTaskStatusResponse(SdkResponse):
 
 
         :return: The result of this UpdateTaskStatusResponse.
-        :rtype: UpdateTaskStatusResqResult
+        :rtype: UpdateTaskStatusResult
         """
         return self._result
 
@@ -137,7 +137,7 @@ class UpdateTaskStatusResponse(SdkResponse):
 
 
         :param result: The result of this UpdateTaskStatusResponse.
-        :type: UpdateTaskStatusResqResult
+        :type: UpdateTaskStatusResult
         """
         self._result = result
 

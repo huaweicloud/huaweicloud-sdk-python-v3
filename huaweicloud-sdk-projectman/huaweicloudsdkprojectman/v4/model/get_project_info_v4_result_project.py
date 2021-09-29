@@ -25,8 +25,8 @@ class GetProjectInfoV4ResultProject:
         'project_num_id': 'int',
         'project_id': 'str',
         'name': 'str',
-        'created_on': 'float',
-        'updated_on': 'float',
+        'created_on': 'int',
+        'updated_on': 'int',
         'project_type': 'str',
         'archive': 'int',
         'enterprise_id': 'str',
@@ -158,7 +158,7 @@ class GetProjectInfoV4ResultProject:
         项目创建时间
 
         :return: The created_on of this GetProjectInfoV4ResultProject.
-        :rtype: float
+        :rtype: int
         """
         return self._created_on
 
@@ -169,7 +169,7 @@ class GetProjectInfoV4ResultProject:
         项目创建时间
 
         :param created_on: The created_on of this GetProjectInfoV4ResultProject.
-        :type: float
+        :type: int
         """
         self._created_on = created_on
 
@@ -180,7 +180,7 @@ class GetProjectInfoV4ResultProject:
         项目更新时间
 
         :return: The updated_on of this GetProjectInfoV4ResultProject.
-        :rtype: float
+        :rtype: int
         """
         return self._updated_on
 
@@ -191,7 +191,7 @@ class GetProjectInfoV4ResultProject:
         项目更新时间
 
         :param updated_on: The updated_on of this GetProjectInfoV4ResultProject.
-        :type: float
+        :type: int
         """
         self._updated_on = updated_on
 

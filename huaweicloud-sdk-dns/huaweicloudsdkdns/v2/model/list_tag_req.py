@@ -23,9 +23,9 @@ class ListTagReq:
 
     openapi_types = {
         'tags': 'list[TagValues]',
-        'tags_any': 'list[object]',
-        'not_tags': 'list[object]',
-        'not_tags_any': 'list[object]',
+        'tags_any': 'list[TagValues]',
+        'not_tags': 'list[TagValues]',
+        'not_tags_any': 'list[TagValues]',
         'limit': 'int',
         'offset': 'int',
         'action': 'str',
@@ -103,7 +103,7 @@ class ListTagReq:
         最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
         :return: The tags_any of this ListTagReq.
-        :rtype: list[object]
+        :rtype: list[TagValues]
         """
         return self._tags_any
 
@@ -114,7 +114,7 @@ class ListTagReq:
         最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
         :param tags_any: The tags_any of this ListTagReq.
-        :type: list[object]
+        :type: list[TagValues]
         """
         self._tags_any = tags_any
 
@@ -125,7 +125,7 @@ class ListTagReq:
         最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
         :return: The not_tags of this ListTagReq.
-        :rtype: list[object]
+        :rtype: list[TagValues]
         """
         return self._not_tags
 
@@ -136,7 +136,7 @@ class ListTagReq:
         最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
         :param not_tags: The not_tags of this ListTagReq.
-        :type: list[object]
+        :type: list[TagValues]
         """
         self._not_tags = not_tags
 
@@ -147,7 +147,7 @@ class ListTagReq:
         最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
         :return: The not_tags_any of this ListTagReq.
-        :rtype: list[object]
+        :rtype: list[TagValues]
         """
         return self._not_tags_any
 
@@ -158,7 +158,7 @@ class ListTagReq:
         最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。
 
         :param not_tags_any: The not_tags_any of this ListTagReq.
-        :type: list[object]
+        :type: list[TagValues]
         """
         self._not_tags_any = not_tags_any
 

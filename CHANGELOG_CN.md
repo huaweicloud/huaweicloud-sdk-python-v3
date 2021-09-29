@@ -1,3 +1,116 @@
+# 3.0.64 2021-09-29
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 支持接口`ListSubCustomerBillDetail`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListSubCustomerResFeeRecords`和`ListFreeResources`
+  - 接口名调整: `ListParnterAdjustRecords` -> `ListPartnerAdjustRecords`
+
+### HuaweiCloud SDK CPTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateTemp`新增响应体
+
+### HuaweiCloud SDK DNS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListTag`的响应参数`resource_detail`类型调整： `string` -> `object`
+  - 接口`CreatePrivateZone`、`UpdatePublicZone`、`DeletePublicZone`的响应参数`masters`类型调整： `string` -> `array`
+  - 接口`CreatePrivateZone`和`UpdatePublicZone`的请求参数`ttl`类型调整： `string` -> `integer`
+  - 接口`ListRecordSets`、`ListRecordSetsWithLine`、`ListRecordSetsByZone`的请求参数`limit`和`offset`类型调整: `string` -> `integer`
+  - 接口`CreatePrivateZone`、`ListRecordSetsByZone`、`ShowRecordSetWithLine`、`ListPtrRecords`、`ListPublicZones`新增响应参数`tags`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 支持以下接口:
+    - `ListServerTags`
+    - `BatchAttachSharableVolumes`
+    - `ShowServerAutoRecovery`
+    - `BatchResetServersPassword`
+    - `ReinstallServerWithoutCloudInit`
+    - `ChangeServerOsWithoutCloudInit`
+    - `BatchUpdateServersName`
+    - `ShowServerPassword`
+    - `AssociateServerVirtualIp`
+    - `MigrateServer`
+    - `ShowServerBlockDevice`
+    - `DisassociateServerVirtualIp`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 调整以下接口名:
+    - `ShowMysqlEngineVersion` -> `ShowGaussMySqlEngineVersion`
+    - `ShowMysqlFlavors` -> `ShowGaussMySqlFlavors`
+    - `CreateMysqlInstance` -> `CreateGaussMySqlInstance`
+    - `ShowMysqlInstanceList` -> `ListGaussMySqlInstances`
+    - `DeleteMysqlInstance` -> `DeleteGaussMySqlInstance`
+    - `ShowMysqlInstanceInfo` -> `ShowGaussMySqlInstanceInfo`
+    - `CreateMysqlReadonlyNode` -> `CreateGaussMySqlReadonlyNode`
+    - `DeleteMysqlReadonlyNode` -> `DeleteGaussMySqlReadonlyNode`
+    - `ExpandMysqlInstanceVolume` -> `ExpandGaussMySqlInstanceVolume`
+    - `UpdateMysqlBackupPolicy` -> `UpdateGaussMySqlBackupPolicy`
+    - `UpdateMysqlInstanceName` -> `UpdateGaussMySqlInstanceName`
+    - `ResetMysqlPassword` -> `ResetGaussMySqlPassword`
+    - `ChangeMysqlInstanceSpecification` -> `ChangeGaussMySqlInstanceSpecification`
+    - `ListDedicatedResources`  -> `ListGaussMySqlDedicatedResources`
+    - `CreateMysqlProxy` -> `CreateGaussMySqlProxy`
+    - `DeleteMysqlProxy` -> `DeleteGaussMySqlProxy`
+    - `ShowMysqlProxy` -> `ShowGaussMySqlProxy`
+    - `ShowMysqlProxyFlavors` -> `ShowGaussMySqlProxyFlavors`
+    - `ExpandMysqlProxy` -> `ExpandGaussMySqlProxy`
+    - `ListMysqlErrorLog` -> `ListGaussMySqlErrorLog`
+    - `ListMysqlSlowLog` -> `ListGaussMySqlSlowLog`
+    - `ShowMysqlProjectQuotas` -> `ShowGaussMySqlProjectQuotas`
+    - `ShowMysqlQuotas` -> `ShowGaussMySqlQuotas`
+    - `SetMysqlQuotas` -> `SetGaussMySqlQuotas`
+    - `UpdateMysqlQuotas` -> `UpdateGaussMySqlQuotas`
+    - `CreateMysqlBackup` -> `CreateGaussMySqlBackup`
+    - `ShowMysqlBackupList` -> `ShowGaussMySqlBackupList`
+    - `ShowMysqlBackupPolicy` -> `ShowGaussMySqlBackupPolicy`
+    - `ListMysqlConfigurations` -> `ListGaussMySqlConfigurations`
+    - `ShowMysqlJobInfo` -> `ShowGaussMySqlJobInfo`
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListIssueRecordsV4`新增响应参数`id`和`name`
+  - 接口`ListProjectIterationsV4`新增响应参数`status`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListFlavors`响应参数`group_type`新增可选值`bigmen`
+
 # 3.0.63 2021-09-26
 
 ### HuaweiCloud SDK DRS

@@ -113,6 +113,71 @@ class EcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def associate_server_virtual_ip_async(self, request):
+        """云服务器网卡配置虚拟IP地址
+
+        虚拟IP地址用于为网卡提供第二个IP地址，同时支持与多个弹性云服务器的网卡绑定，从而实现多个弹性云服务器之间的高可用性。  该接口用于给云服务器网卡配置虚拟IP地址：  - 当指定的IP地址是一个不存在的虚拟IP地址时，系统会创建该虚拟IP，并绑定至对应网卡。  - 当指定的IP地址是一个已经创建好的私有IP时，系统会将指定的网卡和虚拟IP绑定。如果该IP的device_owner为空，则仅支持VPC内二三层通信；如果该IP的device_owner为neutron:VIP_PORT，则支持VPC内二三层通信、VPC之间对等连接访问，以及弹性公网IP、VPN、云专线等Internet接入。
+
+        :param AssociateServerVirtualIpRequest request
+        :return: AssociateServerVirtualIpResponse
+        """
+        return self.associate_server_virtual_ip_with_http_info(request)
+
+    def associate_server_virtual_ip_with_http_info(self, request):
+        """云服务器网卡配置虚拟IP地址
+
+        虚拟IP地址用于为网卡提供第二个IP地址，同时支持与多个弹性云服务器的网卡绑定，从而实现多个弹性云服务器之间的高可用性。  该接口用于给云服务器网卡配置虚拟IP地址：  - 当指定的IP地址是一个不存在的虚拟IP地址时，系统会创建该虚拟IP，并绑定至对应网卡。  - 当指定的IP地址是一个已经创建好的私有IP时，系统会将指定的网卡和虚拟IP绑定。如果该IP的device_owner为空，则仅支持VPC内二三层通信；如果该IP的device_owner为neutron:VIP_PORT，则支持VPC内二三层通信、VPC之间对等连接访问，以及弹性公网IP、VPN、云专线等Internet接入。
+
+        :param AssociateServerVirtualIpRequest request
+        :return: AssociateServerVirtualIpResponse
+        """
+
+        all_params = ['nic_id', 'associate_server_virtual_ip_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'nic_id' in local_var_params:
+            path_params['nic_id'] = local_var_params['nic_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/nics/{nic_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AssociateServerVirtualIpResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def attach_server_volume_async(self, request):
         """弹性云服务器挂载磁盘
 
@@ -237,6 +302,71 @@ class EcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='BatchAddServerNicsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_attach_sharable_volumes_async(self, request):
+        """批量挂载指定共享盘
+
+        将指定的共享磁盘一次性挂载到多个弹性云服务器，实现批量挂载。
+
+        :param BatchAttachSharableVolumesRequest request
+        :return: BatchAttachSharableVolumesResponse
+        """
+        return self.batch_attach_sharable_volumes_with_http_info(request)
+
+    def batch_attach_sharable_volumes_with_http_info(self, request):
+        """批量挂载指定共享盘
+
+        将指定的共享磁盘一次性挂载到多个弹性云服务器，实现批量挂载。
+
+        :param BatchAttachSharableVolumesRequest request
+        :return: BatchAttachSharableVolumesResponse
+        """
+
+        all_params = ['volume_id', 'batch_attach_sharable_volumes_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'volume_id' in local_var_params:
+            path_params['volume_id'] = local_var_params['volume_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/batchaction/attachvolumes/{volume_id}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchAttachSharableVolumesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -501,6 +631,69 @@ class EcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_reset_servers_password_async(self, request):
+        """批量重置弹性云服务器密码
+
+        批量重置弹性云服务器管理帐号（root用户或Administrator用户）的密码。
+
+        :param BatchResetServersPasswordRequest request
+        :return: BatchResetServersPasswordResponse
+        """
+        return self.batch_reset_servers_password_with_http_info(request)
+
+    def batch_reset_servers_password_with_http_info(self, request):
+        """批量重置弹性云服务器密码
+
+        批量重置弹性云服务器管理帐号（root用户或Administrator用户）的密码。
+
+        :param BatchResetServersPasswordRequest request
+        :return: BatchResetServersPasswordResponse
+        """
+
+        all_params = ['batch_reset_servers_password_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/os-reset-passwords',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchResetServersPasswordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def batch_start_servers_async(self, request):
         """批量启动云服务器
 
@@ -627,6 +820,69 @@ class EcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_update_servers_name_async(self, request):
+        """批量修改弹性云服务器
+
+        批量修改弹性云服务器信息。 当前仅支持批量修改云服务器名称，一次最多可以修改1000台。
+
+        :param BatchUpdateServersNameRequest request
+        :return: BatchUpdateServersNameResponse
+        """
+        return self.batch_update_servers_name_with_http_info(request)
+
+    def batch_update_servers_name_with_http_info(self, request):
+        """批量修改弹性云服务器
+
+        批量修改弹性云服务器信息。 当前仅支持批量修改云服务器名称，一次最多可以修改1000台。
+
+        :param BatchUpdateServersNameRequest request
+        :return: BatchUpdateServersNameResponse
+        """
+
+        all_params = ['batch_update_servers_name_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/server-name',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchUpdateServersNameResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def change_server_os_with_cloud_init_async(self, request):
         """切换弹性云服务器操作系统(安装Cloud init)
 
@@ -686,6 +942,71 @@ class EcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ChangeServerOsWithCloudInitResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def change_server_os_without_cloud_init_async(self, request):
+        """切换弹性云服务器操作系统(未安装Cloud init)
+
+        切换弹性云服务器操作系统。  该接口支持未安装Cloud-init或Cloudbase-init的镜像使用。
+
+        :param ChangeServerOsWithoutCloudInitRequest request
+        :return: ChangeServerOsWithoutCloudInitResponse
+        """
+        return self.change_server_os_without_cloud_init_with_http_info(request)
+
+    def change_server_os_without_cloud_init_with_http_info(self, request):
+        """切换弹性云服务器操作系统(未安装Cloud init)
+
+        切换弹性云服务器操作系统。  该接口支持未安装Cloud-init或Cloudbase-init的镜像使用。
+
+        :param ChangeServerOsWithoutCloudInitRequest request
+        :return: ChangeServerOsWithoutCloudInitResponse
+        """
+
+        all_params = ['server_id', 'change_server_os_without_cloud_init_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/changeos',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ChangeServerOsWithoutCloudInitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1074,6 +1395,69 @@ class EcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_server_password_async(self, request):
+        """云服务器清除密码(企业项目)
+
+        清除Windows云服务器初始安装时系统生成的密码记录。清除密码后，不影响云服务器密码登录功能，但不能再使用获取密码功能来查询该云服务器密码。
+
+        :param DeleteServerPasswordRequest request
+        :return: DeleteServerPasswordResponse
+        """
+        return self.delete_server_password_with_http_info(request)
+
+    def delete_server_password_with_http_info(self, request):
+        """云服务器清除密码(企业项目)
+
+        清除Windows云服务器初始安装时系统生成的密码记录。清除密码后，不影响云服务器密码登录功能，但不能再使用获取密码功能来查询该云服务器密码。
+
+        :param DeleteServerPasswordRequest request
+        :return: DeleteServerPasswordResponse
+        """
+
+        all_params = ['server_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/os-server-password',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteServerPasswordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_servers_async(self, request):
         """删除云服务器
 
@@ -1198,6 +1582,71 @@ class EcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DetachServerVolumeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def disassociate_server_virtual_ip_async(self, request):
+        """云服务器网卡解绑虚拟IP地址
+
+        虚拟IP地址用于为网卡提供第二个IP地址，同时支持与多个弹性云服务器的网卡绑定，从而实现多个弹性云服务器之间的高可用性。  该接口用于解绑定弹性云服务器网卡的虚拟IP地址。解绑后，网卡不会被删除。
+
+        :param DisassociateServerVirtualIpRequest request
+        :return: DisassociateServerVirtualIpResponse
+        """
+        return self.disassociate_server_virtual_ip_with_http_info(request)
+
+    def disassociate_server_virtual_ip_with_http_info(self, request):
+        """云服务器网卡解绑虚拟IP地址
+
+        虚拟IP地址用于为网卡提供第二个IP地址，同时支持与多个弹性云服务器的网卡绑定，从而实现多个弹性云服务器之间的高可用性。  该接口用于解绑定弹性云服务器网卡的虚拟IP地址。解绑后，网卡不会被删除。
+
+        :param DisassociateServerVirtualIpRequest request
+        :return: DisassociateServerVirtualIpResponse
+        """
+
+        all_params = ['nic_id', 'disassociate_server_virtual_ip_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'nic_id' in local_var_params:
+            path_params['nic_id'] = local_var_params['nic_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/nics/{nic_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DisassociateServerVirtualIpResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1533,6 +1982,67 @@ class EcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_server_tags_async(self, request):
+        """查询项目标签
+
+        项目（Project）用于将OpenStack的资源（计算资源、存储资源和网络资源）进行分组和隔离。项目可以是一个部门或者一个项目组。一个帐户中可以创建多个项目。  该接口用于查询用户在指定项目所使用的全部标签。
+
+        :param ListServerTagsRequest request
+        :return: ListServerTagsResponse
+        """
+        return self.list_server_tags_with_http_info(request)
+
+    def list_server_tags_with_http_info(self, request):
+        """查询项目标签
+
+        项目（Project）用于将OpenStack的资源（计算资源、存储资源和网络资源）进行分组和隔离。项目可以是一个部门或者一个项目组。一个帐户中可以创建多个项目。  该接口用于查询用户在指定项目所使用的全部标签。
+
+        :param ListServerTagsRequest request
+        :return: ListServerTagsResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListServerTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_servers_details_async(self, request):
         """查询云服务器详情列表
 
@@ -1608,6 +2118,71 @@ class EcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListServersDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def migrate_server_async(self, request):
+        """冷迁移云服务器
+
+        - 将部署在专属主机上的弹性云服务器迁移至其他专属主机。 - 将部署在专属主机上的弹性云服务器迁移至公共资源池，即不再部署在专属主机上。 - 将公共资源池的弹性云服务器迁移至专属主机上，成为专属主机上部署的弹性云服务器。
+
+        :param MigrateServerRequest request
+        :return: MigrateServerResponse
+        """
+        return self.migrate_server_with_http_info(request)
+
+    def migrate_server_with_http_info(self, request):
+        """冷迁移云服务器
+
+        - 将部署在专属主机上的弹性云服务器迁移至其他专属主机。 - 将部署在专属主机上的弹性云服务器迁移至公共资源池，即不再部署在专属主机上。 - 将公共资源池的弹性云服务器迁移至专属主机上，成为专属主机上部署的弹性云服务器。
+
+        :param MigrateServerRequest request
+        :return: MigrateServerResponse
+        """
+
+        all_params = ['server_id', 'migrate_server_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/migrate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='MigrateServerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2408,6 +2983,71 @@ class EcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def register_server_auto_recovery_async(self, request):
+        """管理云服务器自动恢复动作
+
+        配置、删除云服务器自动恢复动作。
+
+        :param RegisterServerAutoRecoveryRequest request
+        :return: RegisterServerAutoRecoveryResponse
+        """
+        return self.register_server_auto_recovery_with_http_info(request)
+
+    def register_server_auto_recovery_with_http_info(self, request):
+        """管理云服务器自动恢复动作
+
+        配置、删除云服务器自动恢复动作。
+
+        :param RegisterServerAutoRecoveryRequest request
+        :return: RegisterServerAutoRecoveryResponse
+        """
+
+        all_params = ['server_id', 'register_server_auto_recovery_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/autorecovery',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RegisterServerAutoRecoveryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def reinstall_server_with_cloud_init_async(self, request):
         """重装弹性云服务器操作系统(安装Cloud-init)
 
@@ -2467,6 +3107,71 @@ class EcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ReinstallServerWithCloudInitResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def reinstall_server_without_cloud_init_async(self, request):
+        """重装弹性云服务器操作系统(未安装Cloud init)
+
+        重装弹性云服务器的操作系统。  该接口支持未安装Cloud-init或Cloudbase-init的镜像。
+
+        :param ReinstallServerWithoutCloudInitRequest request
+        :return: ReinstallServerWithoutCloudInitResponse
+        """
+        return self.reinstall_server_without_cloud_init_with_http_info(request)
+
+    def reinstall_server_without_cloud_init_with_http_info(self, request):
+        """重装弹性云服务器操作系统(未安装Cloud init)
+
+        重装弹性云服务器的操作系统。  该接口支持未安装Cloud-init或Cloudbase-init的镜像。
+
+        :param ReinstallServerWithoutCloudInitRequest request
+        :return: ReinstallServerWithoutCloudInitResponse
+        """
+
+        all_params = ['server_id', 'reinstall_server_without_cloud_init_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/reinstallos',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ReinstallServerWithoutCloudInitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2794,6 +3499,134 @@ class EcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_server_auto_recovery_async(self, request):
+        """查询云服务器是否配置了自动恢复动作
+
+        查询云服务器是否配置了自动恢复动作。
+
+        :param ShowServerAutoRecoveryRequest request
+        :return: ShowServerAutoRecoveryResponse
+        """
+        return self.show_server_auto_recovery_with_http_info(request)
+
+    def show_server_auto_recovery_with_http_info(self, request):
+        """查询云服务器是否配置了自动恢复动作
+
+        查询云服务器是否配置了自动恢复动作。
+
+        :param ShowServerAutoRecoveryRequest request
+        :return: ShowServerAutoRecoveryResponse
+        """
+
+        all_params = ['server_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/autorecovery',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowServerAutoRecoveryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_server_block_device_async(self, request):
+        """查询弹性云服务器单个磁盘信息
+
+        查询弹性云服务器挂载的单个磁盘信息。
+
+        :param ShowServerBlockDeviceRequest request
+        :return: ShowServerBlockDeviceResponse
+        """
+        return self.show_server_block_device_with_http_info(request)
+
+    def show_server_block_device_with_http_info(self, request):
+        """查询弹性云服务器单个磁盘信息
+
+        查询弹性云服务器挂载的单个磁盘信息。
+
+        :param ShowServerBlockDeviceRequest request
+        :return: ShowServerBlockDeviceResponse
+        """
+
+        all_params = ['server_id', 'volume_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+        if 'volume_id' in local_var_params:
+            path_params['volume_id'] = local_var_params['volume_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/block_device/{volume_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowServerBlockDeviceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_server_group_async(self, request):
         """查询云服务器组详情
 
@@ -2912,6 +3745,69 @@ class EcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowServerLimitsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_server_password_async(self, request):
+        """云服务器获取密码(企业项目)
+
+        当通过支持Cloudbase-init功能的镜像创建Windows云服务器时，获取云服务器初始安装时系统生成的管理员帐户（Administrator帐户或Cloudbase-init设置的帐户）随机密码。
+
+        :param ShowServerPasswordRequest request
+        :return: ShowServerPasswordResponse
+        """
+        return self.show_server_password_with_http_info(request)
+
+    def show_server_password_with_http_info(self, request):
+        """云服务器获取密码(企业项目)
+
+        当通过支持Cloudbase-init功能的镜像创建Windows云服务器时，获取云服务器初始安装时系统生成的管理员帐户（Administrator帐户或Cloudbase-init设置的帐户）随机密码。
+
+        :param ShowServerPasswordRequest request
+        :return: ShowServerPasswordResponse
+        """
+
+        all_params = ['server_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/os-server-password',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowServerPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

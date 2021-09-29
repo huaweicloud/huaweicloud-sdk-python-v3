@@ -23,7 +23,7 @@ class UpdateVariableResponse(SdkResponse):
 
     openapi_types = {
         'code': 'str',
-        'json': 'CreateVariableResqJson',
+        'json': 'CreateVariableResultJson',
         'message': 'str'
     }
 
@@ -78,7 +78,7 @@ class UpdateVariableResponse(SdkResponse):
 
 
         :return: The json of this UpdateVariableResponse.
-        :rtype: CreateVariableResqJson
+        :rtype: CreateVariableResultJson
         """
         return self._json
 
@@ -88,7 +88,7 @@ class UpdateVariableResponse(SdkResponse):
 
 
         :param json: The json of this UpdateVariableResponse.
-        :type: CreateVariableResqJson
+        :type: CreateVariableResultJson
         """
         self._json = json
 

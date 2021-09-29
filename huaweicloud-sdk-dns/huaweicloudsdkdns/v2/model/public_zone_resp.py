@@ -36,6 +36,7 @@ class PublicZoneResp:
         'created_at': 'str',
         'updated_at': 'str',
         'links': 'PageLink',
+        'tags': 'list[Tag]',
         'masters': 'list[str]',
         'routers': 'list[RouterWithStatus]',
         'enterprise_project_id': 'str'
@@ -56,12 +57,13 @@ class PublicZoneResp:
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'links': 'links',
+        'tags': 'tags',
         'masters': 'masters',
         'routers': 'routers',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, masters=None, routers=None, enterprise_project_id=None):
+    def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, tags=None, masters=None, routers=None, enterprise_project_id=None):
         """PublicZoneResp - a model defined in huaweicloud sdk"""
         
         
@@ -80,6 +82,7 @@ class PublicZoneResp:
         self._created_at = None
         self._updated_at = None
         self._links = None
+        self._tags = None
         self._masters = None
         self._routers = None
         self._enterprise_project_id = None
@@ -113,6 +116,8 @@ class PublicZoneResp:
             self.updated_at = updated_at
         if links is not None:
             self.links = links
+        if tags is not None:
+            self.tags = tags
         if masters is not None:
             self.masters = masters
         if routers is not None:
@@ -425,6 +430,28 @@ class PublicZoneResp:
         :type: PageLink
         """
         self._links = links
+
+    @property
+    def tags(self):
+        """Gets the tags of this PublicZoneResp.
+
+        资源标签。
+
+        :return: The tags of this PublicZoneResp.
+        :rtype: list[Tag]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this PublicZoneResp.
+
+        资源标签。
+
+        :param tags: The tags of this PublicZoneResp.
+        :type: list[Tag]
+        """
+        self._tags = tags
 
     @property
     def masters(self):

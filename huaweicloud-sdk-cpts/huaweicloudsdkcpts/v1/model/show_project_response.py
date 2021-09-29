@@ -24,7 +24,7 @@ class ShowProjectResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'project': 'ShowProjectResqProject'
+        'project': 'Project'
     }
 
     attribute_map = {
@@ -100,7 +100,7 @@ class ShowProjectResponse(SdkResponse):
 
 
         :return: The project of this ShowProjectResponse.
-        :rtype: ShowProjectResqProject
+        :rtype: Project
         """
         return self._project
 
@@ -110,7 +110,7 @@ class ShowProjectResponse(SdkResponse):
 
 
         :param project: The project of this ShowProjectResponse.
-        :type: ShowProjectResqProject
+        :type: Project
         """
         self._project = project
 

@@ -26,7 +26,7 @@ class CreatePrivateZoneReq:
         'description': 'str',
         'zone_type': 'str',
         'email': 'str',
-        'ttl': 'str',
+        'ttl': 'int',
         'router': 'Router',
         'tags': 'list[Tag]',
         'enterprise_project_id': 'str'
@@ -167,7 +167,7 @@ class CreatePrivateZoneReq:
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
 
         :return: The ttl of this CreatePrivateZoneReq.
-        :rtype: str
+        :rtype: int
         """
         return self._ttl
 
@@ -178,7 +178,7 @@ class CreatePrivateZoneReq:
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
 
         :param ttl: The ttl of this CreatePrivateZoneReq.
-        :type: str
+        :type: int
         """
         self._ttl = ttl
 

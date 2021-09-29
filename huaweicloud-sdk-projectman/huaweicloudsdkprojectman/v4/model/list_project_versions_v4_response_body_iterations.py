@@ -26,7 +26,8 @@ class ListProjectVersionsV4ResponseBodyIterations:
         'end_time': 'str',
         'id': 'int',
         'name': 'str',
-        'begin_time': 'str'
+        'begin_time': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ListProjectVersionsV4ResponseBodyIterations:
         'end_time': 'end_time',
         'id': 'id',
         'name': 'name',
-        'begin_time': 'begin_time'
+        'begin_time': 'begin_time',
+        'status': 'status'
     }
 
-    def __init__(self, description=None, end_time=None, id=None, name=None, begin_time=None):
+    def __init__(self, description=None, end_time=None, id=None, name=None, begin_time=None, status=None):
         """ListProjectVersionsV4ResponseBodyIterations - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +49,7 @@ class ListProjectVersionsV4ResponseBodyIterations:
         self._id = None
         self._name = None
         self._begin_time = None
+        self._status = None
         self.discriminator = None
 
         if description is not None:
@@ -59,6 +62,8 @@ class ListProjectVersionsV4ResponseBodyIterations:
             self.name = name
         if begin_time is not None:
             self.begin_time = begin_time
+        if status is not None:
+            self.status = status
 
     @property
     def description(self):
@@ -169,6 +174,28 @@ class ListProjectVersionsV4ResponseBodyIterations:
         :type: str
         """
         self._begin_time = begin_time
+
+    @property
+    def status(self):
+        """Gets the status of this ListProjectVersionsV4ResponseBodyIterations.
+
+        迭代状态
+
+        :return: The status of this ListProjectVersionsV4ResponseBodyIterations.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListProjectVersionsV4ResponseBodyIterations.
+
+        迭代状态
+
+        :param status: The status of this ListProjectVersionsV4ResponseBodyIterations.
+        :type: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

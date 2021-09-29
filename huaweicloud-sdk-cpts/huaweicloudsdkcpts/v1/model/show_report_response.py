@@ -25,7 +25,7 @@ class ShowReportResponse(SdkResponse):
         'code': 'str',
         'message': 'str',
         'extend': 'str',
-        'result': 'object'
+        'result': 'ReportInfo'
     }
 
     attribute_map = {
@@ -125,10 +125,9 @@ class ShowReportResponse(SdkResponse):
     def result(self):
         """Gets the result of this ShowReportResponse.
 
-        result
 
         :return: The result of this ShowReportResponse.
-        :rtype: object
+        :rtype: ReportInfo
         """
         return self._result
 
@@ -136,10 +135,9 @@ class ShowReportResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this ShowReportResponse.
 
-        result
 
         :param result: The result of this ShowReportResponse.
-        :type: object
+        :type: ReportInfo
         """
         self._result = result
 

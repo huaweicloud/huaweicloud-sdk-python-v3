@@ -25,7 +25,7 @@ class ShowTaskSetResponse(SdkResponse):
         'code': 'str',
         'extend': 'list[str]',
         'message': 'str',
-        'tasks': 'list[ShowTaskSetResqTasks]'
+        'tasks': 'list[Task]'
     }
 
     attribute_map = {
@@ -125,10 +125,10 @@ class ShowTaskSetResponse(SdkResponse):
     def tasks(self):
         """Gets the tasks of this ShowTaskSetResponse.
 
-        tasks
+        工程集详细信息
 
         :return: The tasks of this ShowTaskSetResponse.
-        :rtype: list[ShowTaskSetResqTasks]
+        :rtype: list[Task]
         """
         return self._tasks
 
@@ -136,10 +136,10 @@ class ShowTaskSetResponse(SdkResponse):
     def tasks(self, tasks):
         """Sets the tasks of this ShowTaskSetResponse.
 
-        tasks
+        工程集详细信息
 
         :param tasks: The tasks of this ShowTaskSetResponse.
-        :type: list[ShowTaskSetResqTasks]
+        :type: list[Task]
         """
         self._tasks = tasks
 

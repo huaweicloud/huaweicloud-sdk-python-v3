@@ -22,28 +22,50 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_count': 'int',
-        'records': 'list[AdjustRecordV2]'
+        'records': 'list[AdjustRecordV3]',
+        'total_count': 'int'
     }
 
     attribute_map = {
-        'total_count': 'total_count',
-        'records': 'records'
+        'records': 'records',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, total_count=None, records=None):
+    def __init__(self, records=None, total_count=None):
         """ListPartnerAdjustRecordsResponse - a model defined in huaweicloud sdk"""
         
         super(ListPartnerAdjustRecordsResponse, self).__init__()
 
-        self._total_count = None
         self._records = None
+        self._total_count = None
         self.discriminator = None
 
-        if total_count is not None:
-            self.total_count = total_count
         if records is not None:
             self.records = records
+        if total_count is not None:
+            self.total_count = total_count
+
+    @property
+    def records(self):
+        """Gets the records of this ListPartnerAdjustRecordsResponse.
+
+        调账记录列表。 具体请参见表2。
+
+        :return: The records of this ListPartnerAdjustRecordsResponse.
+        :rtype: list[AdjustRecordV3]
+        """
+        return self._records
+
+    @records.setter
+    def records(self, records):
+        """Sets the records of this ListPartnerAdjustRecordsResponse.
+
+        调账记录列表。 具体请参见表2。
+
+        :param records: The records of this ListPartnerAdjustRecordsResponse.
+        :type: list[AdjustRecordV3]
+        """
+        self._records = records
 
     @property
     def total_count(self):
@@ -66,28 +88,6 @@ class ListPartnerAdjustRecordsResponse(SdkResponse):
         :type: int
         """
         self._total_count = total_count
-
-    @property
-    def records(self):
-        """Gets the records of this ListPartnerAdjustRecordsResponse.
-
-        调账记录列表。 具体请参见表2。
-
-        :return: The records of this ListPartnerAdjustRecordsResponse.
-        :rtype: list[AdjustRecordV2]
-        """
-        return self._records
-
-    @records.setter
-    def records(self, records):
-        """Sets the records of this ListPartnerAdjustRecordsResponse.
-
-        调账记录列表。 具体请参见表2。
-
-        :param records: The records of this ListPartnerAdjustRecordsResponse.
-        :type: list[AdjustRecordV2]
-        """
-        self._records = records
 
     def to_dict(self):
         """Returns the model properties as a dict"""

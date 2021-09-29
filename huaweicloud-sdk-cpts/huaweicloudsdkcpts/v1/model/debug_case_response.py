@@ -25,7 +25,7 @@ class DebugCaseResponse(SdkResponse):
         'code': 'str',
         'message': 'str',
         'extend': 'str',
-        'result': 'list[DebugCaseResqResult]'
+        'result': 'list[DebugCaseResult]'
     }
 
     attribute_map = {
@@ -128,7 +128,7 @@ class DebugCaseResponse(SdkResponse):
         result
 
         :return: The result of this DebugCaseResponse.
-        :rtype: list[DebugCaseResqResult]
+        :rtype: list[DebugCaseResult]
         """
         return self._result
 
@@ -139,7 +139,7 @@ class DebugCaseResponse(SdkResponse):
         result
 
         :param result: The result of this DebugCaseResponse.
-        :type: list[DebugCaseResqResult]
+        :type: list[DebugCaseResult]
         """
         self._result = result
 

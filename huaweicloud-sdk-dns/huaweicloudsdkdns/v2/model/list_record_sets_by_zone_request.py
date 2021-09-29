@@ -24,8 +24,8 @@ class ListRecordSetsByZoneRequest:
     openapi_types = {
         'zone_id': 'str',
         'marker': 'str',
-        'limit': 'str',
-        'offset': 'str',
+        'limit': 'int',
+        'offset': 'int',
         'tags': 'str',
         'status': 'str',
         'type': 'str',
@@ -140,7 +140,7 @@ class ListRecordSetsByZoneRequest:
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :return: The limit of this ListRecordSetsByZoneRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._limit
 
@@ -151,7 +151,7 @@ class ListRecordSetsByZoneRequest:
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
         :param limit: The limit of this ListRecordSetsByZoneRequest.
-        :type: str
+        :type: int
         """
         self._limit = limit
 
@@ -162,7 +162,7 @@ class ListRecordSetsByZoneRequest:
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :return: The offset of this ListRecordSetsByZoneRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._offset
 
@@ -173,7 +173,7 @@ class ListRecordSetsByZoneRequest:
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
         :param offset: The offset of this ListRecordSetsByZoneRequest.
-        :type: str
+        :type: int
         """
         self._offset = offset
 

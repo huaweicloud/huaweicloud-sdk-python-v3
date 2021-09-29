@@ -24,7 +24,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'log_list': 'list[object]'
+        'log_list': 'list[HistoryRunInfo]'
     }
 
     attribute_map = {
@@ -101,7 +101,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
         log_list
 
         :return: The log_list of this ShowHistoryRunInfoResponse.
-        :rtype: list[object]
+        :rtype: list[HistoryRunInfo]
         """
         return self._log_list
 
@@ -112,7 +112,7 @@ class ShowHistoryRunInfoResponse(SdkResponse):
         log_list
 
         :param log_list: The log_list of this ShowHistoryRunInfoResponse.
-        :type: list[object]
+        :type: list[HistoryRunInfo]
         """
         self._log_list = log_list
 

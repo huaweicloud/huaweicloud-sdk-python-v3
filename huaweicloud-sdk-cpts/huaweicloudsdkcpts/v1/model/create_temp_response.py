@@ -22,16 +22,99 @@ class CreateTempResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'code': 'str',
+        'temp_id': 'int',
+        'message': 'str'
     }
 
     attribute_map = {
+        'code': 'code',
+        'temp_id': 'tempId',
+        'message': 'message'
     }
 
-    def __init__(self):
+    def __init__(self, code=None, temp_id=None, message=None):
         """CreateTempResponse - a model defined in huaweicloud sdk"""
         
         super(CreateTempResponse, self).__init__()
+
+        self._code = None
+        self._temp_id = None
+        self._message = None
         self.discriminator = None
+
+        if code is not None:
+            self.code = code
+        if temp_id is not None:
+            self.temp_id = temp_id
+        if message is not None:
+            self.message = message
+
+    @property
+    def code(self):
+        """Gets the code of this CreateTempResponse.
+
+        code
+
+        :return: The code of this CreateTempResponse.
+        :rtype: str
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        """Sets the code of this CreateTempResponse.
+
+        code
+
+        :param code: The code of this CreateTempResponse.
+        :type: str
+        """
+        self._code = code
+
+    @property
+    def temp_id(self):
+        """Gets the temp_id of this CreateTempResponse.
+
+        tempId
+
+        :return: The temp_id of this CreateTempResponse.
+        :rtype: int
+        """
+        return self._temp_id
+
+    @temp_id.setter
+    def temp_id(self, temp_id):
+        """Sets the temp_id of this CreateTempResponse.
+
+        tempId
+
+        :param temp_id: The temp_id of this CreateTempResponse.
+        :type: int
+        """
+        self._temp_id = temp_id
+
+    @property
+    def message(self):
+        """Gets the message of this CreateTempResponse.
+
+        message
+
+        :return: The message of this CreateTempResponse.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        """Sets the message of this CreateTempResponse.
+
+        message
+
+        :param message: The message of this CreateTempResponse.
+        :type: str
+        """
+        self._message = message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

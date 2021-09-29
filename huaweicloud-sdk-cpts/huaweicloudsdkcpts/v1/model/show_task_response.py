@@ -24,7 +24,7 @@ class ShowTaskResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'taskinfo': 'ShowTaskResqTaskinfo'
+        'taskinfo': 'TaskInfo'
     }
 
     attribute_map = {
@@ -100,7 +100,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The taskinfo of this ShowTaskResponse.
-        :rtype: ShowTaskResqTaskinfo
+        :rtype: TaskInfo
         """
         return self._taskinfo
 
@@ -110,7 +110,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param taskinfo: The taskinfo of this ShowTaskResponse.
-        :type: ShowTaskResqTaskinfo
+        :type: TaskInfo
         """
         self._taskinfo = taskinfo
 

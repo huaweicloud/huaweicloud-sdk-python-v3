@@ -25,7 +25,7 @@ class UpdateTaskStatusRequestBody:
         'cluster_id': 'int',
         'cluster_type': 'str',
         'without_package': 'int',
-        'network_info': 'UpdateTaskStatusRequestBodyNetworkInfo',
+        'network_info': 'NetworkInfo',
         'status': 'int'
     }
 
@@ -127,7 +127,7 @@ class UpdateTaskStatusRequestBody:
 
 
         :return: The network_info of this UpdateTaskStatusRequestBody.
-        :rtype: UpdateTaskStatusRequestBodyNetworkInfo
+        :rtype: NetworkInfo
         """
         return self._network_info
 
@@ -137,7 +137,7 @@ class UpdateTaskStatusRequestBody:
 
 
         :param network_info: The network_info of this UpdateTaskStatusRequestBody.
-        :type: UpdateTaskStatusRequestBodyNetworkInfo
+        :type: NetworkInfo
         """
         self._network_info = network_info
 

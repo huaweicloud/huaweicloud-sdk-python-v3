@@ -23,7 +23,7 @@ class ResourceItem:
 
     openapi_types = {
         'resource_id': 'str',
-        'resource_detail': 'str',
+        'resource_detail': 'object',
         'tags': 'list[Tag]',
         'resource_name': 'str'
     }
@@ -84,7 +84,7 @@ class ResourceItem:
         资源详情。资源对象，用于扩展，默认为空。
 
         :return: The resource_detail of this ResourceItem.
-        :rtype: str
+        :rtype: object
         """
         return self._resource_detail
 
@@ -95,7 +95,7 @@ class ResourceItem:
         资源详情。资源对象，用于扩展，默认为空。
 
         :param resource_detail: The resource_detail of this ResourceItem.
-        :type: str
+        :type: object
         """
         self._resource_detail = resource_detail
 

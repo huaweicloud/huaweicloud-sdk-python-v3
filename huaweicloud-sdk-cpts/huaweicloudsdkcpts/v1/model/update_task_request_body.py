@@ -28,11 +28,11 @@ class UpdateTaskRequestBody:
         'project_id': 'int',
         'run_status': 'int',
         'run_type': 'int',
-        'task_run_info': 'ShowTaskSetResqTaskRunInfo',
-        'case_list': 'list[ShowTaskResqTaskinfoCaseList]',
+        'task_run_info': 'TaskRunInfo',
+        'case_list': 'list[CaseInfo]',
         'operate_mode': 'int',
         'bench_concurrent': 'int',
-        'related_temp_running_data': 'list[UpdateTaskRequestBodyRelatedTempRunningData]'
+        'related_temp_running_data': 'list[RelatedTempRunningData]'
     }
 
     attribute_map = {
@@ -226,7 +226,7 @@ class UpdateTaskRequestBody:
 
 
         :return: The task_run_info of this UpdateTaskRequestBody.
-        :rtype: ShowTaskSetResqTaskRunInfo
+        :rtype: TaskRunInfo
         """
         return self._task_run_info
 
@@ -236,7 +236,7 @@ class UpdateTaskRequestBody:
 
 
         :param task_run_info: The task_run_info of this UpdateTaskRequestBody.
-        :type: ShowTaskSetResqTaskRunInfo
+        :type: TaskRunInfo
         """
         self._task_run_info = task_run_info
 
@@ -247,7 +247,7 @@ class UpdateTaskRequestBody:
         case_list
 
         :return: The case_list of this UpdateTaskRequestBody.
-        :rtype: list[ShowTaskResqTaskinfoCaseList]
+        :rtype: list[CaseInfo]
         """
         return self._case_list
 
@@ -258,7 +258,7 @@ class UpdateTaskRequestBody:
         case_list
 
         :param case_list: The case_list of this UpdateTaskRequestBody.
-        :type: list[ShowTaskResqTaskinfoCaseList]
+        :type: list[CaseInfo]
         """
         self._case_list = case_list
 
@@ -313,7 +313,7 @@ class UpdateTaskRequestBody:
         related_temp_running_data
 
         :return: The related_temp_running_data of this UpdateTaskRequestBody.
-        :rtype: list[UpdateTaskRequestBodyRelatedTempRunningData]
+        :rtype: list[RelatedTempRunningData]
         """
         return self._related_temp_running_data
 
@@ -324,7 +324,7 @@ class UpdateTaskRequestBody:
         related_temp_running_data
 
         :param related_temp_running_data: The related_temp_running_data of this UpdateTaskRequestBody.
-        :type: list[UpdateTaskRequestBodyRelatedTempRunningData]
+        :type: list[RelatedTempRunningData]
         """
         self._related_temp_running_data = related_temp_running_data
 

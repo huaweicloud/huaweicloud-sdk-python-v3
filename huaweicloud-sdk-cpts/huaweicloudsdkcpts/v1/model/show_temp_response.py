@@ -24,7 +24,7 @@ class ShowTempResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'temp_info': 'object'
+        'temp_info': 'TempInfo'
     }
 
     attribute_map = {
@@ -98,10 +98,9 @@ class ShowTempResponse(SdkResponse):
     def temp_info(self):
         """Gets the temp_info of this ShowTempResponse.
 
-        temp_info
 
         :return: The temp_info of this ShowTempResponse.
-        :rtype: object
+        :rtype: TempInfo
         """
         return self._temp_info
 
@@ -109,10 +108,9 @@ class ShowTempResponse(SdkResponse):
     def temp_info(self, temp_info):
         """Sets the temp_info of this ShowTempResponse.
 
-        temp_info
 
         :param temp_info: The temp_info of this ShowTempResponse.
-        :type: object
+        :type: TempInfo
         """
         self._temp_info = temp_info
 

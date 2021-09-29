@@ -24,7 +24,7 @@ class UpdatePublicZoneInfo:
     openapi_types = {
         'description': 'str',
         'email': 'str',
-        'ttl': 'str'
+        'ttl': 'int'
     }
 
     attribute_map = {
@@ -101,7 +101,7 @@ class UpdatePublicZoneInfo:
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
 
         :return: The ttl of this UpdatePublicZoneInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._ttl
 
@@ -112,7 +112,7 @@ class UpdatePublicZoneInfo:
         用于填写默认生成的SOA记录中有效缓存时间，以秒为单位。
 
         :param ttl: The ttl of this UpdatePublicZoneInfo.
-        :type: str
+        :type: int
         """
         self._ttl = ttl
 
