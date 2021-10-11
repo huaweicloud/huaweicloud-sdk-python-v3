@@ -43,10 +43,8 @@ class ChannelInfoV2:
         self._description = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if org_names is not None:
-            self.org_names = org_names
+        self.name = name
+        self.org_names = org_names
         if description is not None:
             self.description = description
 

@@ -1,3 +1,174 @@
+# 3.0.65 2021-10-11
+
+### HuaweiCloud SDK Core
+
+- _新增特性_
+  - 支持文件上传
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateAppCodeV2`
+    - `CreateAppCodeAutoV2`
+    - `ListAppCodesV2`
+    - `ShowDetailsOfAppCodeV2`
+    - `DeleteAppCodeV2`
+    - `DebugApiV2`
+    - `BatchPublishOrOfflineApiV2`
+    - `ListApiVersionsV2`
+    - `ChangeApiVersionV2`
+    - `ListApiRuntimeDefinitionV2`
+    - `ListApiVersionDetailV2`
+    - `DeleteApiByVersionIdV2`
+    - `ListAclStrategiesV2`
+    - `BatchDeleteAclV2`
+    - `CreateAclStrategyV2`
+    - `ShowDetailsOfAclPolicyV2`
+    - `UpdateAclStrategyV2`
+    - `DeleteAclV2`
+    - `BatchDeleteApiAclBindingV2`
+    - `CreateApiAclBindingV2`
+    - `DeleteApiAclBindingV2`
+    - `ListAclPolicyBindedToApiV2`
+    - `ListApisBindedToAclPolicyV2`
+    - `ListApisUnbindedToAclPolicyV2`
+    - `ListCustomAuthorizersV2`
+    - `CreateCustomAuthorizerV2`
+    - `ShowDetailsOfCustomAuthorizersV2`
+    - `UpdateCustomAuthorizerV2`
+    - `DeleteCustomAuthorizerV2`
+    - `ExportApiDefinitionsV2`
+    - `ImportApiDefinitionsV2`
+    - `CreateVpcChannelV2`
+    - `ListVpcChannelsV2`
+    - `ShowDetailsOfVpcChannelV2`
+    - `DeleteVpcChannelV2`
+    - `UpdateVpcChannelV2`
+    - `AddingBackendInstancesV2`
+    - `ListBackendInstancesV2`
+    - `DeleteBackendInstanceV2`
+    - `ListLatelyApiStatisticsV2`
+    - `ListLatelyGroupStatisticsV2`
+    - `CreateGatewayResponseV2`
+    - `ListGatewayResponsesV2`
+    - `ShowDetailsOfGatewayResponseV2`
+    - `UpdateGatewayResponseV2`
+    - `DeleteGatewayResponseV2`
+    - `ShowDetailsOfGatewayResponseTypeV2`
+    - `UpdateGatewayResponseTypeV2`
+    - `DeleteGatewayResponseTypeV2`
+    - `ListTagsV2`
+    - `CreateFeatureV2`
+    - `ListFeaturesV2`
+    - `CreateInstanceV2`
+    - `ListInstancesV2`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListSkuInventories`
+
+### HuaweiCloud SDK CampusGo
+
+- _新增特性_
+  - 支持园区智能体服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CPTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowTask`新增以下响应参数:
+    - `create_time`
+    - `description`
+    - `operate_mode`
+    - `related_temp_running_data`
+    - `run_status`
+    - `update_time`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DisassociateServerVirtualIp`的请求参数`reverse_binding`改为非必填
+
+### HuaweiCloud SDK FRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DetectFaceByFile`、`DetectFaceByBase64`、`DetectFaceByUrl`的请求参数`attributes`可选值调整为`2,4,6,7,8,11,12,13,21`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`新增响应参数`instance_mode`
+
+### HuaweiCloud SDK IoTEdge
+
+- _新增特性_
+  - 支持IoT边缘服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`SearchCorpDir`的响应参数类型调整： `number` -> `integer`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListClusters`新增响应参数`vpcId`，调整响应参数`start_time`类型: `string` -> `integer`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`新增请求参数`unchangeable_param`、`dry_run`、`count`
+  - 接口`CreateRestoreInstance`新增响应参数`enable_ssl`
+
 # 3.0.64 2021-09-29
 
 ### HuaweiCloud SDK BSS

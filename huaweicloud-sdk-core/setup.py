@@ -22,7 +22,7 @@ from os import path
 from setuptools import setup, find_packages
 
 NAME = "huaweicloudsdkcore"
-VERSION = "3.0.64"
+VERSION = "3.0.65"
 AUTHOR = "HuaweiCloud SDK"
 AUTHOR_EMAIL = "hwcloudsdk@huawei.com"
 URL = "https://github.com/huaweicloud/huaweicloud-sdk-python-v3"
@@ -35,7 +35,8 @@ with open(path.join(this_directory, 'README_PYPI.md'), encoding='utf-8') as f:
 INSTALL_REQUIRES = [
     "six>=1.16.0",
     "requests_futures",
-    "simplejson"
+    "simplejson",
+    "requests-toolbelt"
 ]
 
 TESTS_REQUIRES = [

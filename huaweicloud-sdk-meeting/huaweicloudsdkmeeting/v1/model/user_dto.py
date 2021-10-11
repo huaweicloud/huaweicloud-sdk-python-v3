@@ -31,7 +31,7 @@ class UserDTO:
         'phone': 'str',
         'dept_name': 'str',
         'number': 'str',
-        'update_time': 'float',
+        'update_time': 'int',
         'is_hard_terminal': 'bool',
         'vmr_id': 'str',
         'signature': 'str',
@@ -325,7 +325,7 @@ class UserDTO:
         用户信息最后更新时间。
 
         :return: The update_time of this UserDTO.
-        :rtype: float
+        :rtype: int
         """
         return self._update_time
 
@@ -336,7 +336,7 @@ class UserDTO:
         用户信息最后更新时间。
 
         :param update_time: The update_time of this UserDTO.
-        :type: float
+        :type: int
         """
         self._update_time = update_time
 

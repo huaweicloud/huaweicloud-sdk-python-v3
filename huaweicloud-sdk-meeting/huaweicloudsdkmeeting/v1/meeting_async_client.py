@@ -357,9 +357,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
         if 'file' in local_var_params:
-            form_params['file'] =  local_var_params['file']
+            form_params['file'] = local_var_params['file']
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
@@ -10401,9 +10403,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
         if 'file' in local_var_params:
-            form_params['file'] =  local_var_params['file']
+            form_params['file'] = local_var_params['file']
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 

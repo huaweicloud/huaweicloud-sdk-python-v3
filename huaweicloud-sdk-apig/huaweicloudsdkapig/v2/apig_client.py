@@ -48,6 +48,136 @@ class ApigClient(Client):
 
         return ClientBuilder(clazz)
 
+    def add_eip_v2(self, request):
+        """实例更新或绑定EIP
+
+        实例更新或绑定EIP
+
+        :param AddEipV2Request request
+        :return: AddEipV2Response
+        """
+        return self.add_eip_v2_with_http_info(request)
+
+    def add_eip_v2_with_http_info(self, request):
+        """实例更新或绑定EIP
+
+        实例更新或绑定EIP
+
+        :param AddEipV2Request request
+        :return: AddEipV2Response
+        """
+
+        all_params = ['instance_id', 'add_eip_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/eip',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddEipV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def add_engress_eip_v2(self, request):
+        """开启实例公网出口
+
+        实例开启公网出口
+
+        :param AddEngressEipV2Request request
+        :return: AddEngressEipV2Response
+        """
+        return self.add_engress_eip_v2_with_http_info(request)
+
+    def add_engress_eip_v2_with_http_info(self, request):
+        """开启实例公网出口
+
+        实例开启公网出口
+
+        :param AddEngressEipV2Request request
+        :return: AddEngressEipV2Response
+        """
+
+        all_params = ['instance_id', 'add_engress_eip_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/nat-eip',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddEngressEipV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def associate_certificate_v2(self, request):
         """绑定域名证书
 
@@ -249,6 +379,71 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_custom_authorizer_v2(self, request):
+        """创建自定义认证
+
+        创建自定义认证
+
+        :param CreateCustomAuthorizerV2Request request
+        :return: CreateCustomAuthorizerV2Response
+        """
+        return self.create_custom_authorizer_v2_with_http_info(request)
+
+    def create_custom_authorizer_v2_with_http_info(self, request):
+        """创建自定义认证
+
+        创建自定义认证
+
+        :param CreateCustomAuthorizerV2Request request
+        :return: CreateCustomAuthorizerV2Response
+        """
+
+        all_params = ['instance_id', 'create_custom_authorizer_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/authorizers',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateCustomAuthorizerV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_environment_v2(self, request):
         """创建环境
 
@@ -373,6 +568,201 @@ class ApigClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateEnvironmentVariableV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_feature_v2(self, request):
+        """实例配置特性
+
+        为实例配置需要的特性。  支持配置的特性列表及特性配置示例如下：  | 特性名称 | 特性描述 | 特性配置示例 | 特性配置参数 |  |  |  | --------| :------- | :-------| :-------| :-------| :-------| :------- |  |  |  | 参数名称 | 参数描述 | 参数默认值 | 参数范围 | | lts | 是否支持shubao访问日志上报功能。|{\"name\":\"lts\",\"enable\":true,\"config\": \"{\\\\\"group_id\\\\\": \\\"\\,\\\\\"topic_id\\\\\":\\\\\"\\\\\",\\\\\"log_group\\\\\":\\\\\"\\\\\",\\\\\"log_stream\\\\\":\\\\\"\\\\\"}\"} | group_id | 日志组ID | | | |  |  |  | topic_id | 日志流ID | | | |  |  |  | log_group | 日志组名称 | | | |  |  |  | log_stream | 日志流名称 | | | | ratelimit | 是否支持自定义流控值。|{\"name\":\"ratelimit\",\"enable\":true,\"config\": \"{\\\\\"api_limits\\\\\": 500}\"} | api_limits | API全局默认流控值。注意：如果配置过小会导致业务持续被流控，请根据业务谨慎修改。 | 200 次/秒 | 1-1000000 次/秒 | | request_body_size | 是否支持指定最大请求Body大小。|{\"name\":\"request_body_size\",\"enable\":true,\"config\": \"104857600\"} | request_body_size | 请求中允许携带的Body大小上限。 | 12 M | 1-9536 M | | backend_timeout | 是否支持配置后端API最大超时时间。|{\"name\":\"backend_timeout\",\"enable\":true,\"config\": \"{\\\"max_timeout\\\": 500}\"} | max_timeout | API网关到后端服务的超时时间上限。 | 60000 ms | 1-600000 ms | | app_token | 是否开启app_token认证方式。|{\"name\":\"app_token\",\"enable\":true,\"config\": \"{\\\\\"enable\\\\\": \\\\\"on\\\\\", \\\\\"app_token_expire_time\\\\\": 3600, \\\\\"app_token_uri\\\\\": \\\\\"/v1/apigw/oauth2/token\\\\\", \\\\\"refresh_token_expire_time\\\\\": 7200}\"} | enable | 是否开启 | off | on/off | |  |  |  | app_token_expire_time | access token的有效时间 | 3600 s | 1-72000 s | |  |  |  | refresh_token_expire_time | refresh token的有效时间 | 7200 s | 1-72000 s | |  |  |  | app_token_uri | 获取token的uri | /v1/apigw/oauth2/token |  | |  |  |  | app_token_key | token的加密key |  |  | | app_api_key | 是否开启app_api_key认证方式。|{\"name\":\"app_api_key\",\"enable\":true,\"config\": \"on\"} |  |  | off | on/off | | app_basic | 是否开启app_basic认证方式。|{\"name\":\"app_basic\",\"enable\":true,\"config\": \"on\"} |  |  | off | on/off | | app_secret | 是否支持app_secret认证方式。|{\"name\":\"app_secret\",\"enable\":true,\"config\": \"on\"} |  |  | off | on/off | | app_jwt | 是否支持app_jwt认证方式。|{\"name\":\"app_jwt\",\"enable\":true,\"config\": \"{\\\\\"enable\\\\\": \\\\\"on\\\\\", \\\\\"auth_header\\\\\": \\\\\"Authorization\\\\\"}\"}| enable | 是否开启app_jwt认证方式。 | off | on/off | |  |  |  | auth_header | app_jwt认证头 | Authorization |  | | public_key | 是否支持public_key类型的后端签名。|{\"name\":\"public_key\",\"enable\":true,\"config\": \"{\\\\\"enable\\\\\": \\\\\"on\\\\\", \\\\\"public_key_uri_prefix\\\\\": \\\\\"/apigw/authadv/v2/public-key/\\\\\"}\"}| enable | 是否开启app_jwt认证方式。 | off | on/off | |  |  |  | public_key_uri_prefix | 获取public key的uri前缀 | /apigw/authadv/v2/public-key/ |  | | backend_token_allow | 是否支持普通租户透传token到后端。|{\"name\":\"backend_token_allow\",\"enable\":true,\"config\": \"{\\\\\"backend_token_allow_users\\\\\": [\\\\\"paas_apig_wwx548366_01\\\\\"]}\"} | backend_token_allow_users | 透传token到后端普通租户白名单，匹配普通租户domain name正则表达式 |  |  | | backend_client_certificate | 是否开启后端双向认证。|{\"name\":\"backend_client_certificate\",\"enable\":true,\"config\": \"{\\\\\"enable\\\\\": \\\\\"on\\\\\",\\\\\"ca\\\\\": \\\\\"\\\\\",\\\\\"content\\\\\": \\\\\"\\\\\",\\\\\"key\\\\\": \\\\\"\\\\\"}\"} | enable | 是否开启 | off | on/off | |  |  |  | ca | 双向认证信任证书 |  |  | |  |  |  | content | 双向认证证书 |  |  | |  |  |  | key | 双向认证信任私钥 |  |  | | ssl_ciphers | 是否支持https加密套件。|{\"name\":\"ssl_ciphers\",\"enable\":true,\"config\": \"config\": \"{\\\\\"ssl_ciphers\\\\\": [\\\\\"ECDHE-ECDSA-AES256-GCM-SHA384\\\\\"]}\"} | ssl_ciphers | 支持的加解密套件。ssl_ciphers数组中只允许出现默认值中的字符串，且数组不能为空。 |  | ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-RSA-AES256-GCM-SHA384,ECDHE-ECDSA-AES128-GCM-SHA256,ECDHE-RSA-AES128-GCM-SHA256,ECDHE-ECDSA-AES256-SHA384,ECDHE-RSA-AES256-SHA384,ECDHE-ECDSA-AES128-SHA256,ECDHE-RSA-AES128-SHA256 | | real_ip_from_xff | 是否开启使用xff头作为访问控制、流控策略的源ip生效依据。|{\"name\":\"real_ip_from_xff\",\"enable\": true,\"config\": \"{\\\\\"enable\\\\\": \\\\\"on\\\\\",\\\\\"xff_index\\\\\": 1}\"} | enable | 是否开启 | off | on/off | |  |  |  | xff_index | 源ip所在xff头的索引位置（支持负数，-1为最后一位，以此类推） | -1 | int32有效值 |
+
+        :param CreateFeatureV2Request request
+        :return: CreateFeatureV2Response
+        """
+        return self.create_feature_v2_with_http_info(request)
+
+    def create_feature_v2_with_http_info(self, request):
+        """实例配置特性
+
+        为实例配置需要的特性。  支持配置的特性列表及特性配置示例如下：  | 特性名称 | 特性描述 | 特性配置示例 | 特性配置参数 |  |  |  | --------| :------- | :-------| :-------| :-------| :-------| :------- |  |  |  | 参数名称 | 参数描述 | 参数默认值 | 参数范围 | | lts | 是否支持shubao访问日志上报功能。|{\"name\":\"lts\",\"enable\":true,\"config\": \"{\\\\\"group_id\\\\\": \\\"\\,\\\\\"topic_id\\\\\":\\\\\"\\\\\",\\\\\"log_group\\\\\":\\\\\"\\\\\",\\\\\"log_stream\\\\\":\\\\\"\\\\\"}\"} | group_id | 日志组ID | | | |  |  |  | topic_id | 日志流ID | | | |  |  |  | log_group | 日志组名称 | | | |  |  |  | log_stream | 日志流名称 | | | | ratelimit | 是否支持自定义流控值。|{\"name\":\"ratelimit\",\"enable\":true,\"config\": \"{\\\\\"api_limits\\\\\": 500}\"} | api_limits | API全局默认流控值。注意：如果配置过小会导致业务持续被流控，请根据业务谨慎修改。 | 200 次/秒 | 1-1000000 次/秒 | | request_body_size | 是否支持指定最大请求Body大小。|{\"name\":\"request_body_size\",\"enable\":true,\"config\": \"104857600\"} | request_body_size | 请求中允许携带的Body大小上限。 | 12 M | 1-9536 M | | backend_timeout | 是否支持配置后端API最大超时时间。|{\"name\":\"backend_timeout\",\"enable\":true,\"config\": \"{\\\"max_timeout\\\": 500}\"} | max_timeout | API网关到后端服务的超时时间上限。 | 60000 ms | 1-600000 ms | | app_token | 是否开启app_token认证方式。|{\"name\":\"app_token\",\"enable\":true,\"config\": \"{\\\\\"enable\\\\\": \\\\\"on\\\\\", \\\\\"app_token_expire_time\\\\\": 3600, \\\\\"app_token_uri\\\\\": \\\\\"/v1/apigw/oauth2/token\\\\\", \\\\\"refresh_token_expire_time\\\\\": 7200}\"} | enable | 是否开启 | off | on/off | |  |  |  | app_token_expire_time | access token的有效时间 | 3600 s | 1-72000 s | |  |  |  | refresh_token_expire_time | refresh token的有效时间 | 7200 s | 1-72000 s | |  |  |  | app_token_uri | 获取token的uri | /v1/apigw/oauth2/token |  | |  |  |  | app_token_key | token的加密key |  |  | | app_api_key | 是否开启app_api_key认证方式。|{\"name\":\"app_api_key\",\"enable\":true,\"config\": \"on\"} |  |  | off | on/off | | app_basic | 是否开启app_basic认证方式。|{\"name\":\"app_basic\",\"enable\":true,\"config\": \"on\"} |  |  | off | on/off | | app_secret | 是否支持app_secret认证方式。|{\"name\":\"app_secret\",\"enable\":true,\"config\": \"on\"} |  |  | off | on/off | | app_jwt | 是否支持app_jwt认证方式。|{\"name\":\"app_jwt\",\"enable\":true,\"config\": \"{\\\\\"enable\\\\\": \\\\\"on\\\\\", \\\\\"auth_header\\\\\": \\\\\"Authorization\\\\\"}\"}| enable | 是否开启app_jwt认证方式。 | off | on/off | |  |  |  | auth_header | app_jwt认证头 | Authorization |  | | public_key | 是否支持public_key类型的后端签名。|{\"name\":\"public_key\",\"enable\":true,\"config\": \"{\\\\\"enable\\\\\": \\\\\"on\\\\\", \\\\\"public_key_uri_prefix\\\\\": \\\\\"/apigw/authadv/v2/public-key/\\\\\"}\"}| enable | 是否开启app_jwt认证方式。 | off | on/off | |  |  |  | public_key_uri_prefix | 获取public key的uri前缀 | /apigw/authadv/v2/public-key/ |  | | backend_token_allow | 是否支持普通租户透传token到后端。|{\"name\":\"backend_token_allow\",\"enable\":true,\"config\": \"{\\\\\"backend_token_allow_users\\\\\": [\\\\\"paas_apig_wwx548366_01\\\\\"]}\"} | backend_token_allow_users | 透传token到后端普通租户白名单，匹配普通租户domain name正则表达式 |  |  | | backend_client_certificate | 是否开启后端双向认证。|{\"name\":\"backend_client_certificate\",\"enable\":true,\"config\": \"{\\\\\"enable\\\\\": \\\\\"on\\\\\",\\\\\"ca\\\\\": \\\\\"\\\\\",\\\\\"content\\\\\": \\\\\"\\\\\",\\\\\"key\\\\\": \\\\\"\\\\\"}\"} | enable | 是否开启 | off | on/off | |  |  |  | ca | 双向认证信任证书 |  |  | |  |  |  | content | 双向认证证书 |  |  | |  |  |  | key | 双向认证信任私钥 |  |  | | ssl_ciphers | 是否支持https加密套件。|{\"name\":\"ssl_ciphers\",\"enable\":true,\"config\": \"config\": \"{\\\\\"ssl_ciphers\\\\\": [\\\\\"ECDHE-ECDSA-AES256-GCM-SHA384\\\\\"]}\"} | ssl_ciphers | 支持的加解密套件。ssl_ciphers数组中只允许出现默认值中的字符串，且数组不能为空。 |  | ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-RSA-AES256-GCM-SHA384,ECDHE-ECDSA-AES128-GCM-SHA256,ECDHE-RSA-AES128-GCM-SHA256,ECDHE-ECDSA-AES256-SHA384,ECDHE-RSA-AES256-SHA384,ECDHE-ECDSA-AES128-SHA256,ECDHE-RSA-AES128-SHA256 | | real_ip_from_xff | 是否开启使用xff头作为访问控制、流控策略的源ip生效依据。|{\"name\":\"real_ip_from_xff\",\"enable\": true,\"config\": \"{\\\\\"enable\\\\\": \\\\\"on\\\\\",\\\\\"xff_index\\\\\": 1}\"} | enable | 是否开启 | off | on/off | |  |  |  | xff_index | 源ip所在xff头的索引位置（支持负数，-1为最后一位，以此类推） | -1 | int32有效值 |
+
+        :param CreateFeatureV2Request request
+        :return: CreateFeatureV2Response
+        """
+
+        all_params = ['instance_id', 'create_feature_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/features',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateFeatureV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_gateway_response_v2(self, request):
+        """创建分组自定义响应
+
+        新增分组下自定义响应
+
+        :param CreateGatewayResponseV2Request request
+        :return: CreateGatewayResponseV2Response
+        """
+        return self.create_gateway_response_v2_with_http_info(request)
+
+    def create_gateway_response_v2_with_http_info(self, request):
+        """创建分组自定义响应
+
+        新增分组下自定义响应
+
+        :param CreateGatewayResponseV2Request request
+        :return: CreateGatewayResponseV2Response
+        """
+
+        all_params = ['instance_id', 'group_id', 'create_gateway_response_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateGatewayResponseV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_instance_v2(self, request):
+        """创建专享版实例
+
+        创建专享版实例
+
+        :param CreateInstanceV2Request request
+        :return: CreateInstanceV2Response
+        """
+        return self.create_instance_v2_with_http_info(request)
+
+    def create_instance_v2_with_http_info(self, request):
+        """创建专享版实例
+
+        创建专享版实例
+
+        :param CreateInstanceV2Request request
+        :return: CreateInstanceV2Response
+        """
+
+        all_params = ['create_instance_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateInstanceV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -576,6 +966,71 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_custom_authorizer_v2(self, request):
+        """删除自定义认证
+
+        删除自定义认证
+
+        :param DeleteCustomAuthorizerV2Request request
+        :return: DeleteCustomAuthorizerV2Response
+        """
+        return self.delete_custom_authorizer_v2_with_http_info(request)
+
+    def delete_custom_authorizer_v2_with_http_info(self, request):
+        """删除自定义认证
+
+        删除自定义认证
+
+        :param DeleteCustomAuthorizerV2Request request
+        :return: DeleteCustomAuthorizerV2Response
+        """
+
+        all_params = ['instance_id', 'authorizer_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'authorizer_id' in local_var_params:
+            path_params['authorizer_id'] = local_var_params['authorizer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/authorizers/{authorizer_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteCustomAuthorizerV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_environment_v2(self, request):
         """删除环境
 
@@ -700,6 +1155,205 @@ class ApigClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteEnvironmentVariableV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_gateway_response_type_v2(self, request):
+        """删除分组指定错误类型的自定义响应配置
+
+        删除分组指定错误类型的自定义响应配置，还原为使用默认值的配置。
+
+        :param DeleteGatewayResponseTypeV2Request request
+        :return: DeleteGatewayResponseTypeV2Response
+        """
+        return self.delete_gateway_response_type_v2_with_http_info(request)
+
+    def delete_gateway_response_type_v2_with_http_info(self, request):
+        """删除分组指定错误类型的自定义响应配置
+
+        删除分组指定错误类型的自定义响应配置，还原为使用默认值的配置。
+
+        :param DeleteGatewayResponseTypeV2Request request
+        :return: DeleteGatewayResponseTypeV2Response
+        """
+
+        all_params = ['instance_id', 'group_id', 'response_id', 'response_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'response_id' in local_var_params:
+            path_params['response_id'] = local_var_params['response_id']
+        if 'response_type' in local_var_params:
+            path_params['response_type'] = local_var_params['response_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}/{response_type}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteGatewayResponseTypeV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_gateway_response_v2(self, request):
+        """删除分组自定义响应
+
+        删除分组自定义响应
+
+        :param DeleteGatewayResponseV2Request request
+        :return: DeleteGatewayResponseV2Response
+        """
+        return self.delete_gateway_response_v2_with_http_info(request)
+
+    def delete_gateway_response_v2_with_http_info(self, request):
+        """删除分组自定义响应
+
+        删除分组自定义响应
+
+        :param DeleteGatewayResponseV2Request request
+        :return: DeleteGatewayResponseV2Response
+        """
+
+        all_params = ['instance_id', 'group_id', 'response_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'response_id' in local_var_params:
+            path_params['response_id'] = local_var_params['response_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteGatewayResponseV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_instances_v2(self, request):
+        """删除专享版实例
+
+        删除专享版实例
+
+        :param DeleteInstancesV2Request request
+        :return: DeleteInstancesV2Response
+        """
+        return self.delete_instances_v2_with_http_info(request)
+
+    def delete_instances_v2_with_http_info(self, request):
+        """删除专享版实例
+
+        删除专享版实例
+
+        :param DeleteInstancesV2Request request
+        :return: DeleteInstancesV2Response
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteInstancesV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1447,6 +2101,140 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_available_zones_v2(self, request):
+        """查看可用区信息
+
+        查看可用区信息
+
+        :param ListAvailableZonesV2Request request
+        :return: ListAvailableZonesV2Response
+        """
+        return self.list_available_zones_v2_with_http_info(request)
+
+    def list_available_zones_v2_with_http_info(self, request):
+        """查看可用区信息
+
+        查看可用区信息
+
+        :param ListAvailableZonesV2Request request
+        :return: ListAvailableZonesV2Response
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/available-zones',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAvailableZonesV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_custom_authorizers_v2(self, request):
+        """查询自定义认证列表
+
+        查询自定义认证列表
+
+        :param ListCustomAuthorizersV2Request request
+        :return: ListCustomAuthorizersV2Response
+        """
+        return self.list_custom_authorizers_v2_with_http_info(request)
+
+    def list_custom_authorizers_v2_with_http_info(self, request):
+        """查询自定义认证列表
+
+        查询自定义认证列表
+
+        :param ListCustomAuthorizersV2Request request
+        :return: ListCustomAuthorizersV2Response
+        """
+
+        all_params = ['instance_id', 'id', 'name', 'type', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/authorizers',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListCustomAuthorizersV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_environment_variables_v2(self, request):
         """查询变量列表
 
@@ -1585,6 +2373,477 @@ class ApigClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListEnvironmentsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_features_v2(self, request):
+        """查看实例特性列表
+
+        查看实例特性列表。注意：实例不支持以下特性的需要联系技术支持升级实例版本。  当前支持的特性列表如下：  特性名称 | 特性描述 | 特性是否可配置| --------| :------- | :-------| lts | 是否支持shubao访问日志上报功能。| 是 | gateway_responses | 是否支持网关自定义响应。| 否 | ratelimit | 是否支持自定义流控值。| 是 | request_body_size | 是否支持指定最大请求Body大小。| 是 | backend_timeout | 是否支持配置后端API最大超时时间。| 是 | app_token | 是否开启app_token认证方式。| 是 | app_api_key | 是否开启app_api_key认证方式。| 是 | app_basic | 是否开启app_basic认证方式。| 是 | app_secret | 是否支持app_secret认证方式。| 是 | app_jwt | 是否支持app_jwt认证方式。| 是 | public_key | 是否支持public_key类型的后端签名。| 是 | backend_token_allow | 是否支持普通租户透传token到后端。| 是 | sign_basic | 签名秘钥是否支持basic类型。| 否 | multi_auth | API是否支持双重认证方式。| 否 | backend_client_certificate | 是否开启后端双向认证。| 是 | ssl_ciphers | 是否支持https加密套件。 | 是 | route | 是否支持自定义路由。| 否 | cors | 是否支持API使用插件功能。| 否 | real_ip_from_xff | 是否开启使用xff头作为访问控制、流控策略的源ip生效依据。 | 是 |
+
+        :param ListFeaturesV2Request request
+        :return: ListFeaturesV2Response
+        """
+        return self.list_features_v2_with_http_info(request)
+
+    def list_features_v2_with_http_info(self, request):
+        """查看实例特性列表
+
+        查看实例特性列表。注意：实例不支持以下特性的需要联系技术支持升级实例版本。  当前支持的特性列表如下：  特性名称 | 特性描述 | 特性是否可配置| --------| :------- | :-------| lts | 是否支持shubao访问日志上报功能。| 是 | gateway_responses | 是否支持网关自定义响应。| 否 | ratelimit | 是否支持自定义流控值。| 是 | request_body_size | 是否支持指定最大请求Body大小。| 是 | backend_timeout | 是否支持配置后端API最大超时时间。| 是 | app_token | 是否开启app_token认证方式。| 是 | app_api_key | 是否开启app_api_key认证方式。| 是 | app_basic | 是否开启app_basic认证方式。| 是 | app_secret | 是否支持app_secret认证方式。| 是 | app_jwt | 是否支持app_jwt认证方式。| 是 | public_key | 是否支持public_key类型的后端签名。| 是 | backend_token_allow | 是否支持普通租户透传token到后端。| 是 | sign_basic | 签名秘钥是否支持basic类型。| 否 | multi_auth | API是否支持双重认证方式。| 否 | backend_client_certificate | 是否开启后端双向认证。| 是 | ssl_ciphers | 是否支持https加密套件。 | 是 | route | 是否支持自定义路由。| 否 | cors | 是否支持API使用插件功能。| 否 | real_ip_from_xff | 是否开启使用xff头作为访问控制、流控策略的源ip生效依据。 | 是 |
+
+        :param ListFeaturesV2Request request
+        :return: ListFeaturesV2Response
+        """
+
+        all_params = ['instance_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/features',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFeaturesV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_gateway_responses_v2(self, request):
+        """查询分组自定义响应列表
+
+        查询分组自定义响应列表
+
+        :param ListGatewayResponsesV2Request request
+        :return: ListGatewayResponsesV2Response
+        """
+        return self.list_gateway_responses_v2_with_http_info(request)
+
+    def list_gateway_responses_v2_with_http_info(self, request):
+        """查询分组自定义响应列表
+
+        查询分组自定义响应列表
+
+        :param ListGatewayResponsesV2Request request
+        :return: ListGatewayResponsesV2Response
+        """
+
+        all_params = ['instance_id', 'group_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListGatewayResponsesV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_instance_cofigs_v2(self, request):
+        """查询租户实例配置列表
+
+        查询租户实例配置列表
+
+        :param ListInstanceCofigsV2Request request
+        :return: ListInstanceCofigsV2Response
+        """
+        return self.list_instance_cofigs_v2_with_http_info(request)
+
+    def list_instance_cofigs_v2_with_http_info(self, request):
+        """查询租户实例配置列表
+
+        查询租户实例配置列表
+
+        :param ListInstanceCofigsV2Request request
+        :return: ListInstanceCofigsV2Response
+        """
+
+        all_params = ['offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instance/configs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListInstanceCofigsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_instances_v2(self, request):
+        """查询专享版实例列表
+
+        查询专享版实例列表
+
+        :param ListInstancesV2Request request
+        :return: ListInstancesV2Response
+        """
+        return self.list_instances_v2_with_http_info(request)
+
+    def list_instances_v2_with_http_info(self, request):
+        """查询专享版实例列表
+
+        查询专享版实例列表
+
+        :param ListInstancesV2Request request
+        :return: ListInstancesV2Response
+        """
+
+        all_params = ['offset', 'limit', 'instance_id', 'instance_name', 'status']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListInstancesV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_lately_api_statistics_v2(self, request):
+        """API统计信息查询-最近一段时间
+
+        根据API的id和最近的一段时间查询API被调用的次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。 > 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
+
+        :param ListLatelyApiStatisticsV2Request request
+        :return: ListLatelyApiStatisticsV2Response
+        """
+        return self.list_lately_api_statistics_v2_with_http_info(request)
+
+    def list_lately_api_statistics_v2_with_http_info(self, request):
+        """API统计信息查询-最近一段时间
+
+        根据API的id和最近的一段时间查询API被调用的次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。 > 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
+
+        :param ListLatelyApiStatisticsV2Request request
+        :return: ListLatelyApiStatisticsV2Response
+        """
+
+        all_params = ['instance_id', 'api_id', 'duration']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'api_id' in local_var_params:
+            query_params.append(('api_id', local_var_params['api_id']))
+        if 'duration' in local_var_params:
+            query_params.append(('duration', local_var_params['duration']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/statistics/api/latest',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListLatelyApiStatisticsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_lately_group_statistics_v2(self, request):
+        """分组统计信息查询-最近一小时内
+
+        根据API分组的编号查询该分组下所有API被调用的总次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。 > 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
+
+        :param ListLatelyGroupStatisticsV2Request request
+        :return: ListLatelyGroupStatisticsV2Response
+        """
+        return self.list_lately_group_statistics_v2_with_http_info(request)
+
+    def list_lately_group_statistics_v2_with_http_info(self, request):
+        """分组统计信息查询-最近一小时内
+
+        根据API分组的编号查询该分组下所有API被调用的总次数，统计周期为1分钟。查询范围一小时以内，一分钟一个样本，其样本值为一分钟内的累计值。 > 为了安全起见，在服务器上使用curl命令调用接口查询信息后，需要清理历史操作记录，包括但不限于“~/.bash_history”、“/var/log/messages”（如有）。
+
+        :param ListLatelyGroupStatisticsV2Request request
+        :return: ListLatelyGroupStatisticsV2Response
+        """
+
+        all_params = ['instance_id', 'group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/statistics/group/latest',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListLatelyGroupStatisticsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_project_cofigs_v2(self, request):
+        """查询某个实例的租户配置列表
+
+        查询某个实例的租户配置列表，用户可以通过此接口查看各类型资源配置及使用情况。
+
+        :param ListProjectCofigsV2Request request
+        :return: ListProjectCofigsV2Response
+        """
+        return self.list_project_cofigs_v2_with_http_info(request)
+
+    def list_project_cofigs_v2_with_http_info(self, request):
+        """查询某个实例的租户配置列表
+
+        查询某个实例的租户配置列表，用户可以通过此接口查看各类型资源配置及使用情况。
+
+        :param ListProjectCofigsV2Request request
+        :return: ListProjectCofigsV2Response
+        """
+
+        all_params = ['instance_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/project/configs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListProjectCofigsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1831,7 +3090,7 @@ class ApigClient(Client):
         :return: ListSpecialThrottlingConfigurationsV2Response
         """
 
-        all_params = ['instance_id', 'throttle_id', 'object_type', 'app_name', 'offset', 'limit']
+        all_params = ['instance_id', 'throttle_id', 'object_type', 'app_name', 'user', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1850,6 +3109,8 @@ class ApigClient(Client):
             query_params.append(('object_type', local_var_params['object_type']))
         if 'app_name' in local_var_params:
             query_params.append(('app_name', local_var_params['app_name']))
+        if 'user' in local_var_params:
+            query_params.append(('user', local_var_params['user']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -1879,6 +3140,264 @@ class ApigClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSpecialThrottlingConfigurationsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_tags_v2(self, request):
+        """查询标签列表
+
+        查询标签列表
+
+        :param ListTagsV2Request request
+        :return: ListTagsV2Response
+        """
+        return self.list_tags_v2_with_http_info(request)
+
+    def list_tags_v2_with_http_info(self, request):
+        """查询标签列表
+
+        查询标签列表
+
+        :param ListTagsV2Request request
+        :return: ListTagsV2Response
+        """
+
+        all_params = ['instance_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTagsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def remove_eip_v2(self, request):
+        """实例解绑EIP
+
+        实例解绑EIP
+
+        :param RemoveEipV2Request request
+        :return: RemoveEipV2Response
+        """
+        return self.remove_eip_v2_with_http_info(request)
+
+    def remove_eip_v2_with_http_info(self, request):
+        """实例解绑EIP
+
+        实例解绑EIP
+
+        :param RemoveEipV2Request request
+        :return: RemoveEipV2Response
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/eip',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RemoveEipV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def remove_engress_eip_v2(self, request):
+        """关闭实例公网出口
+
+        关闭实例公网出口
+
+        :param RemoveEngressEipV2Request request
+        :return: RemoveEngressEipV2Response
+        """
+        return self.remove_engress_eip_v2_with_http_info(request)
+
+    def remove_engress_eip_v2_with_http_info(self, request):
+        """关闭实例公网出口
+
+        关闭实例公网出口
+
+        :param RemoveEngressEipV2Request request
+        :return: RemoveEngressEipV2Response
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/nat-eip',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RemoveEngressEipV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_details_of_custom_authorizers_v2(self, request):
+        """查看自定义认证详情
+
+        查看自定义认证详情
+
+        :param ShowDetailsOfCustomAuthorizersV2Request request
+        :return: ShowDetailsOfCustomAuthorizersV2Response
+        """
+        return self.show_details_of_custom_authorizers_v2_with_http_info(request)
+
+    def show_details_of_custom_authorizers_v2_with_http_info(self, request):
+        """查看自定义认证详情
+
+        查看自定义认证详情
+
+        :param ShowDetailsOfCustomAuthorizersV2Request request
+        :return: ShowDetailsOfCustomAuthorizersV2Response
+        """
+
+        all_params = ['instance_id', 'authorizer_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'authorizer_id' in local_var_params:
+            path_params['authorizer_id'] = local_var_params['authorizer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/authorizers/{authorizer_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDetailsOfCustomAuthorizersV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2019,6 +3538,268 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_details_of_gateway_response_type_v2(self, request):
+        """查看分组下指定错误类型的自定义响应
+
+        查看分组下指定错误类型的自定义响应
+
+        :param ShowDetailsOfGatewayResponseTypeV2Request request
+        :return: ShowDetailsOfGatewayResponseTypeV2Response
+        """
+        return self.show_details_of_gateway_response_type_v2_with_http_info(request)
+
+    def show_details_of_gateway_response_type_v2_with_http_info(self, request):
+        """查看分组下指定错误类型的自定义响应
+
+        查看分组下指定错误类型的自定义响应
+
+        :param ShowDetailsOfGatewayResponseTypeV2Request request
+        :return: ShowDetailsOfGatewayResponseTypeV2Response
+        """
+
+        all_params = ['instance_id', 'group_id', 'response_id', 'response_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'response_id' in local_var_params:
+            path_params['response_id'] = local_var_params['response_id']
+        if 'response_type' in local_var_params:
+            path_params['response_type'] = local_var_params['response_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}/{response_type}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDetailsOfGatewayResponseTypeV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_details_of_gateway_response_v2(self, request):
+        """查询分组自定义响应详情
+
+        查询分组自定义响应详情
+
+        :param ShowDetailsOfGatewayResponseV2Request request
+        :return: ShowDetailsOfGatewayResponseV2Response
+        """
+        return self.show_details_of_gateway_response_v2_with_http_info(request)
+
+    def show_details_of_gateway_response_v2_with_http_info(self, request):
+        """查询分组自定义响应详情
+
+        查询分组自定义响应详情
+
+        :param ShowDetailsOfGatewayResponseV2Request request
+        :return: ShowDetailsOfGatewayResponseV2Response
+        """
+
+        all_params = ['instance_id', 'group_id', 'response_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'response_id' in local_var_params:
+            path_params['response_id'] = local_var_params['response_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDetailsOfGatewayResponseV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_details_of_instance_progress_v2(self, request):
+        """查看专享版实例创建进度
+
+        查看专享版实例创建进度
+
+        :param ShowDetailsOfInstanceProgressV2Request request
+        :return: ShowDetailsOfInstanceProgressV2Response
+        """
+        return self.show_details_of_instance_progress_v2_with_http_info(request)
+
+    def show_details_of_instance_progress_v2_with_http_info(self, request):
+        """查看专享版实例创建进度
+
+        查看专享版实例创建进度
+
+        :param ShowDetailsOfInstanceProgressV2Request request
+        :return: ShowDetailsOfInstanceProgressV2Response
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/progress',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDetailsOfInstanceProgressV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_details_of_instance_v2(self, request):
+        """查看专享版实例详情
+
+        查看专享版实例详情
+
+        :param ShowDetailsOfInstanceV2Request request
+        :return: ShowDetailsOfInstanceV2Response
+        """
+        return self.show_details_of_instance_v2_with_http_info(request)
+
+    def show_details_of_instance_v2_with_http_info(self, request):
+        """查看专享版实例详情
+
+        查看专享版实例详情
+
+        :param ShowDetailsOfInstanceV2Request request
+        :return: ShowDetailsOfInstanceV2Response
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDetailsOfInstanceV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_details_of_request_throttling_policy_v2(self, request):
         """查看流控策略详情
 
@@ -2078,6 +3859,73 @@ class ApigClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowDetailsOfRequestThrottlingPolicyV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_custom_authorizer_v2(self, request):
+        """修改自定义认证
+
+        修改自定义认证
+
+        :param UpdateCustomAuthorizerV2Request request
+        :return: UpdateCustomAuthorizerV2Response
+        """
+        return self.update_custom_authorizer_v2_with_http_info(request)
+
+    def update_custom_authorizer_v2_with_http_info(self, request):
+        """修改自定义认证
+
+        修改自定义认证
+
+        :param UpdateCustomAuthorizerV2Request request
+        :return: UpdateCustomAuthorizerV2Response
+        """
+
+        all_params = ['instance_id', 'authorizer_id', 'update_custom_authorizer_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'authorizer_id' in local_var_params:
+            path_params['authorizer_id'] = local_var_params['authorizer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/authorizers/{authorizer_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateCustomAuthorizerV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2153,6 +4001,71 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_engress_eip_v2(self, request):
+        """更新实例出公网带宽
+
+        更新实例出公网带宽
+
+        :param UpdateEngressEipV2Request request
+        :return: UpdateEngressEipV2Response
+        """
+        return self.update_engress_eip_v2_with_http_info(request)
+
+    def update_engress_eip_v2_with_http_info(self, request):
+        """更新实例出公网带宽
+
+        更新实例出公网带宽
+
+        :param UpdateEngressEipV2Request request
+        :return: UpdateEngressEipV2Response
+        """
+
+        all_params = ['instance_id', 'update_engress_eip_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/nat-eip',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateEngressEipV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_environment_v2(self, request):
         """修改环境
 
@@ -2214,6 +4127,211 @@ class ApigClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateEnvironmentV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_gateway_response_type_v2(self, request):
+        """修改分组下指定错误类型的自定义响应
+
+        修改分组下指定错误类型的自定义响应。
+
+        :param UpdateGatewayResponseTypeV2Request request
+        :return: UpdateGatewayResponseTypeV2Response
+        """
+        return self.update_gateway_response_type_v2_with_http_info(request)
+
+    def update_gateway_response_type_v2_with_http_info(self, request):
+        """修改分组下指定错误类型的自定义响应
+
+        修改分组下指定错误类型的自定义响应。
+
+        :param UpdateGatewayResponseTypeV2Request request
+        :return: UpdateGatewayResponseTypeV2Response
+        """
+
+        all_params = ['instance_id', 'group_id', 'response_id', 'response_type', 'update_gateway_response_type_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'response_id' in local_var_params:
+            path_params['response_id'] = local_var_params['response_id']
+        if 'response_type' in local_var_params:
+            path_params['response_type'] = local_var_params['response_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}/{response_type}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateGatewayResponseTypeV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_gateway_response_v2(self, request):
+        """修改分组自定义响应
+
+        修改分组自定义响应
+
+        :param UpdateGatewayResponseV2Request request
+        :return: UpdateGatewayResponseV2Response
+        """
+        return self.update_gateway_response_v2_with_http_info(request)
+
+    def update_gateway_response_v2_with_http_info(self, request):
+        """修改分组自定义响应
+
+        修改分组自定义响应
+
+        :param UpdateGatewayResponseV2Request request
+        :return: UpdateGatewayResponseV2Response
+        """
+
+        all_params = ['instance_id', 'group_id', 'response_id', 'update_gateway_response_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'response_id' in local_var_params:
+            path_params['response_id'] = local_var_params['response_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateGatewayResponseV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_instance_v2(self, request):
+        """更新专享版实例
+
+        更新专享版实例
+
+        :param UpdateInstanceV2Request request
+        :return: UpdateInstanceV2Response
+        """
+        return self.update_instance_v2_with_http_info(request)
+
+    def update_instance_v2_with_http_info(self, request):
+        """更新专享版实例
+
+        更新专享版实例
+
+        :param UpdateInstanceV2Request request
+        :return: UpdateInstanceV2Response
+        """
+
+        all_params = ['instance_id', 'update_instance_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateInstanceV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2423,6 +4541,412 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_delete_acl_v2(self, request):
+        """批量删除ACL策略
+
+        批量删除指定的多个ACL策略。  删除ACL策略时，如果存在ACL策略与API绑定关系，则无法删除。
+
+        :param BatchDeleteAclV2Request request
+        :return: BatchDeleteAclV2Response
+        """
+        return self.batch_delete_acl_v2_with_http_info(request)
+
+    def batch_delete_acl_v2_with_http_info(self, request):
+        """批量删除ACL策略
+
+        批量删除指定的多个ACL策略。  删除ACL策略时，如果存在ACL策略与API绑定关系，则无法删除。
+
+        :param BatchDeleteAclV2Request request
+        :return: BatchDeleteAclV2Response
+        """
+
+        all_params = ['instance_id', 'action', 'batch_delete_acl_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acls',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteAclV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_acl_strategy_v2(self, request):
+        """创建ACL策略
+
+        增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com\"之类的网络域名。
+
+        :param CreateAclStrategyV2Request request
+        :return: CreateAclStrategyV2Response
+        """
+        return self.create_acl_strategy_v2_with_http_info(request)
+
+    def create_acl_strategy_v2_with_http_info(self, request):
+        """创建ACL策略
+
+        增加一个ACL策略，策略类型通过字段acl_type来确定（permit或者deny），限制的对象的类型可以为IP或者DOMAIN，这里的DOMAIN对应的acl_value的值为租户名称，而非“www.exampleDomain.com\"之类的网络域名。
+
+        :param CreateAclStrategyV2Request request
+        :return: CreateAclStrategyV2Response
+        """
+
+        all_params = ['instance_id', 'create_acl_strategy_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acls',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateAclStrategyV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_acl_v2(self, request):
+        """删除ACL策略
+
+        删除指定的ACL策略， 如果存在api与该ACL策略的绑定关系，则无法删除
+
+        :param DeleteAclV2Request request
+        :return: DeleteAclV2Response
+        """
+        return self.delete_acl_v2_with_http_info(request)
+
+    def delete_acl_v2_with_http_info(self, request):
+        """删除ACL策略
+
+        删除指定的ACL策略， 如果存在api与该ACL策略的绑定关系，则无法删除
+
+        :param DeleteAclV2Request request
+        :return: DeleteAclV2Response
+        """
+
+        all_params = ['instance_id', 'acl_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'acl_id' in local_var_params:
+            path_params['acl_id'] = local_var_params['acl_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acls/{acl_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteAclV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_acl_strategies_v2(self, request):
+        """查看ACL策略列表
+
+        查询所有的ACL策略列表。 
+
+        :param ListAclStrategiesV2Request request
+        :return: ListAclStrategiesV2Response
+        """
+        return self.list_acl_strategies_v2_with_http_info(request)
+
+    def list_acl_strategies_v2_with_http_info(self, request):
+        """查看ACL策略列表
+
+        查询所有的ACL策略列表。 
+
+        :param ListAclStrategiesV2Request request
+        :return: ListAclStrategiesV2Response
+        """
+
+        all_params = ['instance_id', 'id', 'name', 'acl_type', 'entity_type', 'offset', 'limit', 'precise_search']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'acl_type' in local_var_params:
+            query_params.append(('acl_type', local_var_params['acl_type']))
+        if 'entity_type' in local_var_params:
+            query_params.append(('entity_type', local_var_params['entity_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'precise_search' in local_var_params:
+            query_params.append(('precise_search', local_var_params['precise_search']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acls',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAclStrategiesV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_details_of_acl_policy_v2(self, request):
+        """查看ACL策略详情
+
+        查询指定ACL策略的详情。
+
+        :param ShowDetailsOfAclPolicyV2Request request
+        :return: ShowDetailsOfAclPolicyV2Response
+        """
+        return self.show_details_of_acl_policy_v2_with_http_info(request)
+
+    def show_details_of_acl_policy_v2_with_http_info(self, request):
+        """查看ACL策略详情
+
+        查询指定ACL策略的详情。
+
+        :param ShowDetailsOfAclPolicyV2Request request
+        :return: ShowDetailsOfAclPolicyV2Response
+        """
+
+        all_params = ['instance_id', 'acl_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'acl_id' in local_var_params:
+            path_params['acl_id'] = local_var_params['acl_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acls/{acl_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDetailsOfAclPolicyV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_acl_strategy_v2(self, request):
+        """修改ACL策略
+
+        修改指定的ACL策略，其中可修改的属性为：acl_name、acl_type、acl_value，其它属性不可修改。
+
+        :param UpdateAclStrategyV2Request request
+        :return: UpdateAclStrategyV2Response
+        """
+        return self.update_acl_strategy_v2_with_http_info(request)
+
+    def update_acl_strategy_v2_with_http_info(self, request):
+        """修改ACL策略
+
+        修改指定的ACL策略，其中可修改的属性为：acl_name、acl_type、acl_value，其它属性不可修改。
+
+        :param UpdateAclStrategyV2Request request
+        :return: UpdateAclStrategyV2Response
+        """
+
+        all_params = ['instance_id', 'acl_id', 'update_acl_strategy_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'acl_id' in local_var_params:
+            path_params['acl_id'] = local_var_params['acl_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acls/{acl_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateAclStrategyV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def associate_request_throttling_policy_v2(self, request):
         """绑定流控策略
 
@@ -2549,6 +5073,205 @@ class ApigClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='BatchDisassociateThrottlingPolicyV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_publish_or_offline_api_v2(self, request):
+        """批量发布或下线API
+
+        将多个API发布到一个指定的环境，或将多个API从指定的环境下线。
+
+        :param BatchPublishOrOfflineApiV2Request request
+        :return: BatchPublishOrOfflineApiV2Response
+        """
+        return self.batch_publish_or_offline_api_v2_with_http_info(request)
+
+    def batch_publish_or_offline_api_v2_with_http_info(self, request):
+        """批量发布或下线API
+
+        将多个API发布到一个指定的环境，或将多个API从指定的环境下线。
+
+        :param BatchPublishOrOfflineApiV2Request request
+        :return: BatchPublishOrOfflineApiV2Response
+        """
+
+        all_params = ['instance_id', 'action', 'batch_publish_or_offline_api_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/publish',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchPublishOrOfflineApiV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def change_api_version_v2(self, request):
+        """切换API版本
+
+        API每次发布时，会基于当前的API定义生成一个版本。版本记录了API发布时的各种定义及状态。  多个版本之间可以进行随意切换。但一个API在一个环境上，只能有一个版本生效。
+
+        :param ChangeApiVersionV2Request request
+        :return: ChangeApiVersionV2Response
+        """
+        return self.change_api_version_v2_with_http_info(request)
+
+    def change_api_version_v2_with_http_info(self, request):
+        """切换API版本
+
+        API每次发布时，会基于当前的API定义生成一个版本。版本记录了API发布时的各种定义及状态。  多个版本之间可以进行随意切换。但一个API在一个环境上，只能有一个版本生效。
+
+        :param ChangeApiVersionV2Request request
+        :return: ChangeApiVersionV2Response
+        """
+
+        all_params = ['instance_id', 'api_id', 'change_api_version_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'api_id' in local_var_params:
+            path_params['api_id'] = local_var_params['api_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/publish/{api_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ChangeApiVersionV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def check_backend_connectivity(self, request):
+        """后端连通性检测接口
+
+        后端连通性检测接口
+
+        :param CheckBackendConnectivityRequest request
+        :return: CheckBackendConnectivityResponse
+        """
+        return self.check_backend_connectivity_with_http_info(request)
+
+    def check_backend_connectivity_with_http_info(self, request):
+        """后端连通性检测接口
+
+        后端连通性检测接口
+
+        :param CheckBackendConnectivityRequest request
+        :return: CheckBackendConnectivityResponse
+        """
+
+        all_params = ['instance_id', 'check_backend_connectivity_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/backend/connectivity/check',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CheckBackendConnectivityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2744,6 +5467,138 @@ class ApigClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateOrDeletePublishRecordForApiV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def debug_api_v2(self, request):
+        """调试API
+
+        调试一个API在指定运行环境下的定义，接口调用者需要具有操作该API的权限。
+
+        :param DebugApiV2Request request
+        :return: DebugApiV2Response
+        """
+        return self.debug_api_v2_with_http_info(request)
+
+    def debug_api_v2_with_http_info(self, request):
+        """调试API
+
+        调试一个API在指定运行环境下的定义，接口调用者需要具有操作该API的权限。
+
+        :param DebugApiV2Request request
+        :return: DebugApiV2Response
+        """
+
+        all_params = ['instance_id', 'api_id', 'debug_api_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'api_id' in local_var_params:
+            path_params['api_id'] = local_var_params['api_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/debug/{api_id}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DebugApiV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_api_by_version_id_v2(self, request):
+        """根据版本编号下线API
+
+        对某个生效中的API版本进行下线操作，下线后，API在该版本生效的环境中将不再能够被调用。
+
+        :param DeleteApiByVersionIdV2Request request
+        :return: DeleteApiByVersionIdV2Response
+        """
+        return self.delete_api_by_version_id_v2_with_http_info(request)
+
+    def delete_api_by_version_id_v2_with_http_info(self, request):
+        """根据版本编号下线API
+
+        对某个生效中的API版本进行下线操作，下线后，API在该版本生效的环境中将不再能够被调用。
+
+        :param DeleteApiByVersionIdV2Request request
+        :return: DeleteApiByVersionIdV2Response
+        """
+
+        all_params = ['instance_id', 'version_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/versions/{version_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteApiByVersionIdV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3012,6 +5867,211 @@ class ApigClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListApiGroupsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_api_runtime_definition_v2(self, request):
+        """查询API运行时定义
+
+        查看指定的API在指定的环境上的运行时定义，默认查询RELEASE环境上的运行时定义。  API的定义分为临时定义和运行时定义，分别代表如下含义： - 临时定义：API在编辑中的定义，表示用户最后一次编辑后的API的状态 - 运行时定义：API在发布到某个环境时，对发布时的API的临时定义进行快照，固化出来的API的状态。  访问某个环境上的API，其实访问的就是其运行时的定义
+
+        :param ListApiRuntimeDefinitionV2Request request
+        :return: ListApiRuntimeDefinitionV2Response
+        """
+        return self.list_api_runtime_definition_v2_with_http_info(request)
+
+    def list_api_runtime_definition_v2_with_http_info(self, request):
+        """查询API运行时定义
+
+        查看指定的API在指定的环境上的运行时定义，默认查询RELEASE环境上的运行时定义。  API的定义分为临时定义和运行时定义，分别代表如下含义： - 临时定义：API在编辑中的定义，表示用户最后一次编辑后的API的状态 - 运行时定义：API在发布到某个环境时，对发布时的API的临时定义进行快照，固化出来的API的状态。  访问某个环境上的API，其实访问的就是其运行时的定义
+
+        :param ListApiRuntimeDefinitionV2Request request
+        :return: ListApiRuntimeDefinitionV2Response
+        """
+
+        all_params = ['instance_id', 'api_id', 'env_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'api_id' in local_var_params:
+            path_params['api_id'] = local_var_params['api_id']
+
+        query_params = []
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/runtime/{api_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListApiRuntimeDefinitionV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_api_version_detail_v2(self, request):
+        """查看版本详情
+
+        查询某个指定的版本详情。
+
+        :param ListApiVersionDetailV2Request request
+        :return: ListApiVersionDetailV2Response
+        """
+        return self.list_api_version_detail_v2_with_http_info(request)
+
+    def list_api_version_detail_v2_with_http_info(self, request):
+        """查看版本详情
+
+        查询某个指定的版本详情。
+
+        :param ListApiVersionDetailV2Request request
+        :return: ListApiVersionDetailV2Response
+        """
+
+        all_params = ['instance_id', 'version_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/versions/{version_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListApiVersionDetailV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_api_versions_v2(self, request):
+        """查询API历史版本列表
+
+        查询某个API的历史版本。每个API在一个环境上最多存在10个历史版本。
+
+        :param ListApiVersionsV2Request request
+        :return: ListApiVersionsV2Response
+        """
+        return self.list_api_versions_v2_with_http_info(request)
+
+    def list_api_versions_v2_with_http_info(self, request):
+        """查询API历史版本列表
+
+        查询某个API的历史版本。每个API在一个环境上最多存在10个历史版本。
+
+        :param ListApiVersionsV2Request request
+        :return: ListApiVersionsV2Response
+        """
+
+        all_params = ['instance_id', 'api_id', 'env_id', 'env_name', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'api_id' in local_var_params:
+            path_params['api_id'] = local_var_params['api_id']
+
+        query_params = []
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+        if 'env_name' in local_var_params:
+            query_params.append(('env_name', local_var_params['env_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/publish/{api_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListApiVersionsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3598,6 +6658,434 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_delete_api_acl_binding_v2(self, request):
+        """批量解除API与ACL策略的绑定
+
+        批量解除API与ACL策略的绑定
+
+        :param BatchDeleteApiAclBindingV2Request request
+        :return: BatchDeleteApiAclBindingV2Response
+        """
+        return self.batch_delete_api_acl_binding_v2_with_http_info(request)
+
+    def batch_delete_api_acl_binding_v2_with_http_info(self, request):
+        """批量解除API与ACL策略的绑定
+
+        批量解除API与ACL策略的绑定
+
+        :param BatchDeleteApiAclBindingV2Request request
+        :return: BatchDeleteApiAclBindingV2Response
+        """
+
+        all_params = ['instance_id', 'action', 'batch_delete_api_acl_binding_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteApiAclBindingV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_api_acl_binding_v2(self, request):
+        """将API与ACL策略进行绑定
+
+        将API与ACL策略进行绑定。  同一个API发布到不同的环境可以绑定不同的ACL策略；一个API在发布到特定环境后只能绑定一个同一种类型的ACL策略。
+
+        :param CreateApiAclBindingV2Request request
+        :return: CreateApiAclBindingV2Response
+        """
+        return self.create_api_acl_binding_v2_with_http_info(request)
+
+    def create_api_acl_binding_v2_with_http_info(self, request):
+        """将API与ACL策略进行绑定
+
+        将API与ACL策略进行绑定。  同一个API发布到不同的环境可以绑定不同的ACL策略；一个API在发布到特定环境后只能绑定一个同一种类型的ACL策略。
+
+        :param CreateApiAclBindingV2Request request
+        :return: CreateApiAclBindingV2Response
+        """
+
+        all_params = ['instance_id', 'create_api_acl_binding_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateApiAclBindingV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_api_acl_binding_v2(self, request):
+        """解除API与ACL策略的绑定
+
+        解除某条API与ACL策略的绑定关系
+
+        :param DeleteApiAclBindingV2Request request
+        :return: DeleteApiAclBindingV2Response
+        """
+        return self.delete_api_acl_binding_v2_with_http_info(request)
+
+    def delete_api_acl_binding_v2_with_http_info(self, request):
+        """解除API与ACL策略的绑定
+
+        解除某条API与ACL策略的绑定关系
+
+        :param DeleteApiAclBindingV2Request request
+        :return: DeleteApiAclBindingV2Response
+        """
+
+        all_params = ['instance_id', 'acl_bindings_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'acl_bindings_id' in local_var_params:
+            path_params['acl_bindings_id'] = local_var_params['acl_bindings_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings/{acl_bindings_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteApiAclBindingV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_acl_policy_binded_to_api_v2(self, request):
+        """查看API绑定的ACL策略列表
+
+        查看API绑定的ACL策略列表
+
+        :param ListAclPolicyBindedToApiV2Request request
+        :return: ListAclPolicyBindedToApiV2Response
+        """
+        return self.list_acl_policy_binded_to_api_v2_with_http_info(request)
+
+    def list_acl_policy_binded_to_api_v2_with_http_info(self, request):
+        """查看API绑定的ACL策略列表
+
+        查看API绑定的ACL策略列表
+
+        :param ListAclPolicyBindedToApiV2Request request
+        :return: ListAclPolicyBindedToApiV2Response
+        """
+
+        all_params = ['instance_id', 'api_id', 'env_id', 'env_name', 'acl_id', 'acl_name', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'api_id' in local_var_params:
+            query_params.append(('api_id', local_var_params['api_id']))
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+        if 'env_name' in local_var_params:
+            query_params.append(('env_name', local_var_params['env_name']))
+        if 'acl_id' in local_var_params:
+            query_params.append(('acl_id', local_var_params['acl_id']))
+        if 'acl_name' in local_var_params:
+            query_params.append(('acl_name', local_var_params['acl_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings/binded-acls',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAclPolicyBindedToApiV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_apis_binded_to_acl_policy_v2(self, request):
+        """查看ACL策略绑定的API列表
+
+        查看ACL策略绑定的API列表
+
+        :param ListApisBindedToAclPolicyV2Request request
+        :return: ListApisBindedToAclPolicyV2Response
+        """
+        return self.list_apis_binded_to_acl_policy_v2_with_http_info(request)
+
+    def list_apis_binded_to_acl_policy_v2_with_http_info(self, request):
+        """查看ACL策略绑定的API列表
+
+        查看ACL策略绑定的API列表
+
+        :param ListApisBindedToAclPolicyV2Request request
+        :return: ListApisBindedToAclPolicyV2Response
+        """
+
+        all_params = ['instance_id', 'acl_id', 'api_id', 'api_name', 'env_id', 'group_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'acl_id' in local_var_params:
+            query_params.append(('acl_id', local_var_params['acl_id']))
+        if 'api_id' in local_var_params:
+            query_params.append(('api_id', local_var_params['api_id']))
+        if 'api_name' in local_var_params:
+            query_params.append(('api_name', local_var_params['api_name']))
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings/binded-apis',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListApisBindedToAclPolicyV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_apis_unbinded_to_acl_policy_v2(self, request):
+        """查看ACL策略未绑定的API列表
+
+        查看ACL策略未绑定的API列表，需要API已发布
+
+        :param ListApisUnbindedToAclPolicyV2Request request
+        :return: ListApisUnbindedToAclPolicyV2Response
+        """
+        return self.list_apis_unbinded_to_acl_policy_v2_with_http_info(request)
+
+    def list_apis_unbinded_to_acl_policy_v2_with_http_info(self, request):
+        """查看ACL策略未绑定的API列表
+
+        查看ACL策略未绑定的API列表，需要API已发布
+
+        :param ListApisUnbindedToAclPolicyV2Request request
+        :return: ListApisUnbindedToAclPolicyV2Response
+        """
+
+        all_params = ['instance_id', 'acl_id', 'api_id', 'api_name', 'env_id', 'group_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'acl_id' in local_var_params:
+            query_params.append(('acl_id', local_var_params['acl_id']))
+        if 'api_id' in local_var_params:
+            query_params.append(('api_id', local_var_params['api_id']))
+        if 'api_name' in local_var_params:
+            query_params.append(('api_name', local_var_params['api_name']))
+        if 'env_id' in local_var_params:
+            query_params.append(('env_id', local_var_params['env_id']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings/unbinded-apis',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListApisUnbindedToAclPolicyV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def canceling_authorization_v2(self, request):
         """解除授权
 
@@ -3793,6 +7281,138 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_app_code_auto_v2(self, request):
+        """自动生成APP Code
+
+        创建App Code时，可以不指定具体值，由后台自动生成随机字符串填充。
+
+        :param CreateAppCodeAutoV2Request request
+        :return: CreateAppCodeAutoV2Response
+        """
+        return self.create_app_code_auto_v2_with_http_info(request)
+
+    def create_app_code_auto_v2_with_http_info(self, request):
+        """自动生成APP Code
+
+        创建App Code时，可以不指定具体值，由后台自动生成随机字符串填充。
+
+        :param CreateAppCodeAutoV2Request request
+        :return: CreateAppCodeAutoV2Response
+        """
+
+        all_params = ['instance_id', 'app_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateAppCodeAutoV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_app_code_v2(self, request):
+        """创建APP Code
+
+        App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
+
+        :param CreateAppCodeV2Request request
+        :return: CreateAppCodeV2Response
+        """
+        return self.create_app_code_v2_with_http_info(request)
+
+    def create_app_code_v2_with_http_info(self, request):
+        """创建APP Code
+
+        App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
+
+        :param CreateAppCodeV2Request request
+        :return: CreateAppCodeV2Response
+        """
+
+        all_params = ['instance_id', 'app_id', 'create_app_code_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateAppCodeV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_authorizing_apps_v2(self, request):
         """APP授权
 
@@ -3852,6 +7472,73 @@ class ApigClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateAuthorizingAppsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_app_code_v2(self, request):
+        """删除APP Code
+
+        删除App Code，App Code删除后，将无法再通过简易认证访问对应的API。
+
+        :param DeleteAppCodeV2Request request
+        :return: DeleteAppCodeV2Response
+        """
+        return self.delete_app_code_v2_with_http_info(request)
+
+    def delete_app_code_v2_with_http_info(self, request):
+        """删除APP Code
+
+        删除App Code，App Code删除后，将无法再通过简易认证访问对应的API。
+
+        :param DeleteAppCodeV2Request request
+        :return: DeleteAppCodeV2Response
+        """
+
+        all_params = ['instance_id', 'app_id', 'app_code_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+        if 'app_code_id' in local_var_params:
+            path_params['app_code_id'] = local_var_params['app_code_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes/{app_code_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteAppCodeV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4079,6 +7766,75 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_app_codes_v2(self, request):
+        """查询APP Code列表
+
+        查询App Code列表。
+
+        :param ListAppCodesV2Request request
+        :return: ListAppCodesV2Response
+        """
+        return self.list_app_codes_v2_with_http_info(request)
+
+    def list_app_codes_v2_with_http_info(self, request):
+        """查询APP Code列表
+
+        查询App Code列表。
+
+        :param ListAppCodesV2Request request
+        :return: ListAppCodesV2Response
+        """
+
+        all_params = ['instance_id', 'app_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAppCodesV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_apps_binded_to_api_v2(self, request):
         """查看API已绑定的APP列表
 
@@ -4300,6 +8056,73 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_details_of_app_code_v2(self, request):
+        """查看APP Code详情
+
+        App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
+
+        :param ShowDetailsOfAppCodeV2Request request
+        :return: ShowDetailsOfAppCodeV2Response
+        """
+        return self.show_details_of_app_code_v2_with_http_info(request)
+
+    def show_details_of_app_code_v2_with_http_info(self, request):
+        """查看APP Code详情
+
+        App Code为APP应用下的子模块，创建App Code之后，可以实现简易的APP认证。
+
+        :param ShowDetailsOfAppCodeV2Request request
+        :return: ShowDetailsOfAppCodeV2Response
+        """
+
+        all_params = ['instance_id', 'app_id', 'app_code_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+        if 'app_code_id' in local_var_params:
+            path_params['app_code_id'] = local_var_params['app_code_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes/{app_code_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDetailsOfAppCodeV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_details_of_app_v2(self, request):
         """查看APP详情
 
@@ -4426,6 +8249,690 @@ class ApigClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateAppV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def export_api_definitions_v2(self, request):
+        """导出API
+
+        导出分组下API的定义信息。导出文件内容符合swagger标准规范，API网关自定义扩展字段请参考《API网关开发指南》的“导入导出API：扩展定义”章节。
+
+        :param ExportApiDefinitionsV2Request request
+        :return: ExportApiDefinitionsV2Response
+        """
+        return self.export_api_definitions_v2_with_http_info(request)
+
+    def export_api_definitions_v2_with_http_info(self, request):
+        """导出API
+
+        导出分组下API的定义信息。导出文件内容符合swagger标准规范，API网关自定义扩展字段请参考《API网关开发指南》的“导入导出API：扩展定义”章节。
+
+        :param ExportApiDefinitionsV2Request request
+        :return: ExportApiDefinitionsV2Response
+        """
+
+        all_params = ['instance_id', 'export_api_definitions_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/openapi/export',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ExportApiDefinitionsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def import_api_definitions_v2(self, request):
+        """导入API
+
+        导入API。导入文件内容需要符合swagger标准规范，API网关自定义扩展字段请参考《API网关开发指南》的“导入导出API：扩展定义”章节。
+
+        :param ImportApiDefinitionsV2Request request
+        :return: ImportApiDefinitionsV2Response
+        """
+        return self.import_api_definitions_v2_with_http_info(request)
+
+    def import_api_definitions_v2_with_http_info(self, request):
+        """导入API
+
+        导入API。导入文件内容需要符合swagger标准规范，API网关自定义扩展字段请参考《API网关开发指南》的“导入导出API：扩展定义”章节。
+
+        :param ImportApiDefinitionsV2Request request
+        :return: ImportApiDefinitionsV2Response
+        """
+
+        all_params = ['instance_id', 'file_name', 'is_create_group', 'group_id', 'extend_mode', 'simple_mode', 'mock_mode', 'api_mode']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'is_create_group' in local_var_params:
+            form_params['is_create_group'] = local_var_params['is_create_group']
+        if 'group_id' in local_var_params:
+            form_params['group_id'] = local_var_params['group_id']
+        if 'extend_mode' in local_var_params:
+            form_params['extend_mode'] = local_var_params['extend_mode']
+        if 'simple_mode' in local_var_params:
+            form_params['simple_mode'] = local_var_params['simple_mode']
+        if 'mock_mode' in local_var_params:
+            form_params['mock_mode'] = local_var_params['mock_mode']
+        if 'api_mode' in local_var_params:
+            form_params['api_mode'] = local_var_params['api_mode']
+        if 'file_name' in local_var_params:
+            form_params['file_name'] = local_var_params['file_name']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/openapi/import',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ImportApiDefinitionsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def adding_backend_instances_v2(self, request):
+        """添加后端实例
+
+        为指定的VPC通道添加弹性云服务器
+
+        :param AddingBackendInstancesV2Request request
+        :return: AddingBackendInstancesV2Response
+        """
+        return self.adding_backend_instances_v2_with_http_info(request)
+
+    def adding_backend_instances_v2_with_http_info(self, request):
+        """添加后端实例
+
+        为指定的VPC通道添加弹性云服务器
+
+        :param AddingBackendInstancesV2Request request
+        :return: AddingBackendInstancesV2Response
+        """
+
+        all_params = ['instance_id', 'vpc_channel_id', 'adding_backend_instances_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddingBackendInstancesV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_vpc_channel_v2(self, request):
+        """创建VPC通道
+
+        在API网关中创建连接私有VPC资源的通道，并在创建API时将后端节点配置为使用这些VPC通道，以便API网关直接访问私有VPC资源。 > 每个用户最多创建30个VPC通道。
+
+        :param CreateVpcChannelV2Request request
+        :return: CreateVpcChannelV2Response
+        """
+        return self.create_vpc_channel_v2_with_http_info(request)
+
+    def create_vpc_channel_v2_with_http_info(self, request):
+        """创建VPC通道
+
+        在API网关中创建连接私有VPC资源的通道，并在创建API时将后端节点配置为使用这些VPC通道，以便API网关直接访问私有VPC资源。 > 每个用户最多创建30个VPC通道。
+
+        :param CreateVpcChannelV2Request request
+        :return: CreateVpcChannelV2Response
+        """
+
+        all_params = ['instance_id', 'create_vpc_channel_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateVpcChannelV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_backend_instance_v2(self, request):
+        """删除后端实例
+
+        删除指定VPC通道中的弹性云服务器
+
+        :param DeleteBackendInstanceV2Request request
+        :return: DeleteBackendInstanceV2Response
+        """
+        return self.delete_backend_instance_v2_with_http_info(request)
+
+    def delete_backend_instance_v2_with_http_info(self, request):
+        """删除后端实例
+
+        删除指定VPC通道中的弹性云服务器
+
+        :param DeleteBackendInstanceV2Request request
+        :return: DeleteBackendInstanceV2Response
+        """
+
+        all_params = ['instance_id', 'vpc_channel_id', 'member_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+        if 'member_id' in local_var_params:
+            path_params['member_id'] = local_var_params['member_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/{member_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteBackendInstanceV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_vpc_channel_v2(self, request):
+        """删除VPC通道
+
+        删除指定的VPC通道
+
+        :param DeleteVpcChannelV2Request request
+        :return: DeleteVpcChannelV2Response
+        """
+        return self.delete_vpc_channel_v2_with_http_info(request)
+
+    def delete_vpc_channel_v2_with_http_info(self, request):
+        """删除VPC通道
+
+        删除指定的VPC通道
+
+        :param DeleteVpcChannelV2Request request
+        :return: DeleteVpcChannelV2Response
+        """
+
+        all_params = ['instance_id', 'vpc_channel_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteVpcChannelV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_backend_instances_v2(self, request):
+        """查看后端实例列表
+
+        查看指定VPC通道的弹性云服务器列表。
+
+        :param ListBackendInstancesV2Request request
+        :return: ListBackendInstancesV2Response
+        """
+        return self.list_backend_instances_v2_with_http_info(request)
+
+    def list_backend_instances_v2_with_http_info(self, request):
+        """查看后端实例列表
+
+        查看指定VPC通道的弹性云服务器列表。
+
+        :param ListBackendInstancesV2Request request
+        :return: ListBackendInstancesV2Response
+        """
+
+        all_params = ['instance_id', 'vpc_channel_id', 'name', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListBackendInstancesV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_vpc_channels_v2(self, request):
+        """查询VPC通道列表
+
+        查看VPC通道列表
+
+        :param ListVpcChannelsV2Request request
+        :return: ListVpcChannelsV2Response
+        """
+        return self.list_vpc_channels_v2_with_http_info(request)
+
+    def list_vpc_channels_v2_with_http_info(self, request):
+        """查询VPC通道列表
+
+        查看VPC通道列表
+
+        :param ListVpcChannelsV2Request request
+        :return: ListVpcChannelsV2Response
+        """
+
+        all_params = ['instance_id', 'id', 'name', 'offset', 'limit', 'precise_search']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'precise_search' in local_var_params:
+            query_params.append(('precise_search', local_var_params['precise_search']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListVpcChannelsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_details_of_vpc_channel_v2(self, request):
+        """查看VPC通道详情
+
+        查看指定的VPC通道详情
+
+        :param ShowDetailsOfVpcChannelV2Request request
+        :return: ShowDetailsOfVpcChannelV2Response
+        """
+        return self.show_details_of_vpc_channel_v2_with_http_info(request)
+
+    def show_details_of_vpc_channel_v2_with_http_info(self, request):
+        """查看VPC通道详情
+
+        查看指定的VPC通道详情
+
+        :param ShowDetailsOfVpcChannelV2Request request
+        :return: ShowDetailsOfVpcChannelV2Response
+        """
+
+        all_params = ['instance_id', 'vpc_channel_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDetailsOfVpcChannelV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_vpc_channel_v2(self, request):
+        """更新VPC通道
+
+        更新指定VPC通道的参数
+
+        :param UpdateVpcChannelV2Request request
+        :return: UpdateVpcChannelV2Response
+        """
+        return self.update_vpc_channel_v2_with_http_info(request)
+
+    def update_vpc_channel_v2_with_http_info(self, request):
+        """更新VPC通道
+
+        更新指定VPC通道的参数
+
+        :param UpdateVpcChannelV2Request request
+        :return: UpdateVpcChannelV2Response
+        """
+
+        all_params = ['instance_id', 'vpc_channel_id', 'update_vpc_channel_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateVpcChannelV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

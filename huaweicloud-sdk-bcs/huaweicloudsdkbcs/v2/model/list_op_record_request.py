@@ -86,7 +86,7 @@ class ListOpRecordRequest:
     def operation_status(self):
         """Gets the operation_status of this ListOpRecordRequest.
 
-        操作状态
+        操作状态, 可选数值如下（括号中为该数值对应的操作类型含义）：waiting(等待执行)，processing（处理中），finished（操作完成，成功），failed（操作失败），stop（操作中断）
 
         :return: The operation_status of this ListOpRecordRequest.
         :rtype: str
@@ -97,7 +97,7 @@ class ListOpRecordRequest:
     def operation_status(self, operation_status):
         """Sets the operation_status of this ListOpRecordRequest.
 
-        操作状态
+        操作状态, 可选数值如下（括号中为该数值对应的操作类型含义）：waiting(等待执行)，processing（处理中），finished（操作完成，成功），failed（操作失败），stop（操作中断）
 
         :param operation_status: The operation_status of this ListOpRecordRequest.
         :type: str
@@ -108,7 +108,7 @@ class ListOpRecordRequest:
     def resource_type(self):
         """Gets the resource_type of this ListOpRecordRequest.
 
-        资源类型
+        资源类型, 可选数值如下（括号中为该数值对应的操作类型含义）：BCSSVC01（BCS变更操作），BCSSVC02（UGBaaS变更操作），PLUGIN01（RestAPI插件变更操作），PLUGIN02（TC3插件变更操作），PLUGIN03（轻节点插件变更操作）
 
         :return: The resource_type of this ListOpRecordRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class ListOpRecordRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListOpRecordRequest.
 
-        资源类型
+        资源类型, 可选数值如下（括号中为该数值对应的操作类型含义）：BCSSVC01（BCS变更操作），BCSSVC02（UGBaaS变更操作），PLUGIN01（RestAPI插件变更操作），PLUGIN02（TC3插件变更操作），PLUGIN03（轻节点插件变更操作）
 
         :param resource_type: The resource_type of this ListOpRecordRequest.
         :type: str

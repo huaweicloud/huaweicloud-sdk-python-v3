@@ -23,19 +23,17 @@ class MetaData:
 
     openapi_types = {
         'count': 'int',
-        'offset': 'int',
-        'total': 'int',
-        'next_token': 'int'
+        'offset': 'str',
+        'total': 'int'
     }
 
     attribute_map = {
         'count': 'count',
         'offset': 'offset',
-        'total': 'total',
-        'next_token': 'nextToken'
+        'total': 'total'
     }
 
-    def __init__(self, count=None, offset=None, total=None, next_token=None):
+    def __init__(self, count=None, offset=None, total=None):
         """MetaData - a model defined in huaweicloud sdk"""
         
         
@@ -43,7 +41,6 @@ class MetaData:
         self._count = None
         self._offset = None
         self._total = None
-        self._next_token = None
         self.discriminator = None
 
         if count is not None:
@@ -52,8 +49,6 @@ class MetaData:
             self.offset = offset
         if total is not None:
             self.total = total
-        if next_token is not None:
-            self.next_token = next_token
 
     @property
     def count(self):
@@ -84,7 +79,7 @@ class MetaData:
         下一个开始的标记，用于分页，null表示无更多数据。
 
         :return: The offset of this MetaData.
-        :rtype: int
+        :rtype: str
         """
         return self._offset
 
@@ -95,7 +90,7 @@ class MetaData:
         下一个开始的标记，用于分页，null表示无更多数据。
 
         :param offset: The offset of this MetaData.
-        :type: int
+        :type: str
         """
         self._offset = offset
 
@@ -120,28 +115,6 @@ class MetaData:
         :type: int
         """
         self._total = total
-
-    @property
-    def next_token(self):
-        """Gets the next_token of this MetaData.
-
-        偏移量。
-
-        :return: The next_token of this MetaData.
-        :rtype: int
-        """
-        return self._next_token
-
-    @next_token.setter
-    def next_token(self, next_token):
-        """Sets the next_token of this MetaData.
-
-        偏移量。
-
-        :param next_token: The next_token of this MetaData.
-        :type: int
-        """
-        self._next_token = next_token
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -29,7 +29,7 @@ class BootstrapScriptResp:
         'active_master': 'bool',
         'fail_action': 'str',
         'before_component_start': 'bool',
-        'start_time': 'str',
+        'start_time': 'int',
         'state': 'str'
     }
 
@@ -237,7 +237,7 @@ class BootstrapScriptResp:
         单个引导操作脚本的执行时间。
 
         :return: The start_time of this BootstrapScriptResp.
-        :rtype: str
+        :rtype: int
         """
         return self._start_time
 
@@ -248,7 +248,7 @@ class BootstrapScriptResp:
         单个引导操作脚本的执行时间。
 
         :param start_time: The start_time of this BootstrapScriptResp.
-        :type: str
+        :type: int
         """
         self._start_time = start_time
 

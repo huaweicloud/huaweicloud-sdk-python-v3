@@ -22,77 +22,77 @@ class Org:
     sensitive_list = []
 
     openapi_types = {
-        'msp_id': 'str',
-        'domain': 'str',
+        'org_msp_id': 'str',
+        'org_domain': 'str',
         'peers': 'dict(str, Node)'
     }
 
     attribute_map = {
-        'msp_id': 'msp_id',
-        'domain': 'domain',
+        'org_msp_id': 'org_msp_id',
+        'org_domain': 'org_domain',
         'peers': 'peers'
     }
 
-    def __init__(self, msp_id=None, domain=None, peers=None):
+    def __init__(self, org_msp_id=None, org_domain=None, peers=None):
         """Org - a model defined in huaweicloud sdk"""
         
         
 
-        self._msp_id = None
-        self._domain = None
+        self._org_msp_id = None
+        self._org_domain = None
         self._peers = None
         self.discriminator = None
 
-        if msp_id is not None:
-            self.msp_id = msp_id
-        if domain is not None:
-            self.domain = domain
+        if org_msp_id is not None:
+            self.org_msp_id = org_msp_id
+        if org_domain is not None:
+            self.org_domain = org_domain
         if peers is not None:
             self.peers = peers
 
     @property
-    def msp_id(self):
-        """Gets the msp_id of this Org.
+    def org_msp_id(self):
+        """Gets the org_msp_id of this Org.
 
         组织MSP标识
 
-        :return: The msp_id of this Org.
+        :return: The org_msp_id of this Org.
         :rtype: str
         """
-        return self._msp_id
+        return self._org_msp_id
 
-    @msp_id.setter
-    def msp_id(self, msp_id):
-        """Sets the msp_id of this Org.
+    @org_msp_id.setter
+    def org_msp_id(self, org_msp_id):
+        """Sets the org_msp_id of this Org.
 
         组织MSP标识
 
-        :param msp_id: The msp_id of this Org.
+        :param org_msp_id: The org_msp_id of this Org.
         :type: str
         """
-        self._msp_id = msp_id
+        self._org_msp_id = org_msp_id
 
     @property
-    def domain(self):
-        """Gets the domain of this Org.
+    def org_domain(self):
+        """Gets the org_domain of this Org.
 
         组织域名
 
-        :return: The domain of this Org.
+        :return: The org_domain of this Org.
         :rtype: str
         """
-        return self._domain
+        return self._org_domain
 
-    @domain.setter
-    def domain(self, domain):
-        """Sets the domain of this Org.
+    @org_domain.setter
+    def org_domain(self, org_domain):
+        """Sets the org_domain of this Org.
 
         组织域名
 
-        :param domain: The domain of this Org.
+        :param org_domain: The org_domain of this Org.
         :type: str
         """
-        self._domain = domain
+        self._org_domain = org_domain
 
     @property
     def peers(self):

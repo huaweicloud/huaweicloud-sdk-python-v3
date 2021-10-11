@@ -43,7 +43,7 @@ class InvitedDomain:
     def invited_user(self):
         """Gets the invited_user of this InvitedDomain.
 
-        被邀请方租户，hcs模式下是邀请方的租户ID
+        被邀请方租户
 
         :return: The invited_user of this InvitedDomain.
         :rtype: str
@@ -54,7 +54,7 @@ class InvitedDomain:
     def invited_user(self, invited_user):
         """Sets the invited_user of this InvitedDomain.
 
-        被邀请方租户，hcs模式下是邀请方的租户ID
+        被邀请方租户
 
         :param invited_user: The invited_user of this InvitedDomain.
         :type: str

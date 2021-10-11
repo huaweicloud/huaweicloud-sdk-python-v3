@@ -22,7 +22,7 @@ class UpdateCaseRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'contents': 'list[UpdateCaseRequestBodyContents]',
+        'contents': 'list[CaseInfo]',
         'for_loop_params': 'list[object]'
     }
 
@@ -52,7 +52,7 @@ class UpdateCaseRequestBody:
         contents
 
         :return: The contents of this UpdateCaseRequestBody.
-        :rtype: list[UpdateCaseRequestBodyContents]
+        :rtype: list[CaseInfo]
         """
         return self._contents
 
@@ -63,7 +63,7 @@ class UpdateCaseRequestBody:
         contents
 
         :param contents: The contents of this UpdateCaseRequestBody.
-        :type: list[UpdateCaseRequestBodyContents]
+        :type: list[CaseInfo]
         """
         self._contents = contents
 

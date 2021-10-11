@@ -48,6 +48,7 @@ class ListInstanceResponse:
         'related_instance': 'list[object]',
         'nodes': 'list[object]',
         'enterprise_project_id': 'str',
+        'instance_mode': 'str',
         'disk_encryption_id': 'str',
         'charge_info': 'OpenGaussChargeInfoListResponse',
         'time_zone': 'str',
@@ -81,13 +82,14 @@ class ListInstanceResponse:
         'related_instance': 'related_instance',
         'nodes': 'nodes',
         'enterprise_project_id': 'enterprise_project_id',
+        'instance_mode': 'instance_mode',
         'disk_encryption_id': 'disk_encryption_id',
         'charge_info': 'charge_info',
         'time_zone': 'time_zone',
         'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, ha=None, replica_num=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, switch_strategy=None, backup_strategy=None, maintenance_window=None, related_instance=None, nodes=None, enterprise_project_id=None, disk_encryption_id=None, charge_info=None, time_zone=None, tags=None):
+    def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, ha=None, replica_num=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, switch_strategy=None, backup_strategy=None, maintenance_window=None, related_instance=None, nodes=None, enterprise_project_id=None, instance_mode=None, disk_encryption_id=None, charge_info=None, time_zone=None, tags=None):
         """ListInstanceResponse - a model defined in huaweicloud sdk"""
         
         
@@ -118,6 +120,7 @@ class ListInstanceResponse:
         self._related_instance = None
         self._nodes = None
         self._enterprise_project_id = None
+        self._instance_mode = None
         self._disk_encryption_id = None
         self._charge_info = None
         self._time_zone = None
@@ -151,6 +154,7 @@ class ListInstanceResponse:
         self.related_instance = related_instance
         self.nodes = nodes
         self.enterprise_project_id = enterprise_project_id
+        self.instance_mode = instance_mode
         self.disk_encryption_id = disk_encryption_id
         self.charge_info = charge_info
         self.time_zone = time_zone
@@ -717,6 +721,28 @@ class ListInstanceResponse:
         :type: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def instance_mode(self):
+        """Gets the instance_mode of this ListInstanceResponse.
+
+        basic为基础版 ，enterprise为企业版。
+
+        :return: The instance_mode of this ListInstanceResponse.
+        :rtype: str
+        """
+        return self._instance_mode
+
+    @instance_mode.setter
+    def instance_mode(self, instance_mode):
+        """Sets the instance_mode of this ListInstanceResponse.
+
+        basic为基础版 ，enterprise为企业版。
+
+        :param instance_mode: The instance_mode of this ListInstanceResponse.
+        :type: str
+        """
+        self._instance_mode = instance_mode
 
     @property
     def disk_encryption_id(self):

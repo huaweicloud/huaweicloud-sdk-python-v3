@@ -51,7 +51,7 @@ class QuerySample:
     def namespace(self):
         """Gets the namespace of this QuerySample.
 
-        时间序列的命名空间。 取值范围  PAAS.CONTAINER PAAS.NODE PAAS.SLA PAAS.AGGR CUSTOMMETRICS 
+        时间序列的命名空间。 取值范围 PAAS.CONTAINER PAAS.NODE PAAS.SLA PAAS.AGGR CUSTOMMETRICS 
 
         :return: The namespace of this QuerySample.
         :rtype: str
@@ -62,7 +62,7 @@ class QuerySample:
     def namespace(self, namespace):
         """Sets the namespace of this QuerySample.
 
-        时间序列的命名空间。 取值范围  PAAS.CONTAINER PAAS.NODE PAAS.SLA PAAS.AGGR CUSTOMMETRICS 
+        时间序列的命名空间。 取值范围 PAAS.CONTAINER PAAS.NODE PAAS.SLA PAAS.AGGR CUSTOMMETRICS 
 
         :param namespace: The namespace of this QuerySample.
         :type: str

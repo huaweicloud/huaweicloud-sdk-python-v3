@@ -61,7 +61,7 @@ class CreateUsersInfo:
     def name(self):
         """Gets the name of this CreateUsersInfo.
 
-        DDM实例帐号名称，命名要求如下。  - 长度为6-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
+        DDM实例帐号名称，命名要求如下。  - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
 
         :return: The name of this CreateUsersInfo.
         :rtype: str
@@ -72,7 +72,7 @@ class CreateUsersInfo:
     def name(self, name):
         """Sets the name of this CreateUsersInfo.
 
-        DDM实例帐号名称，命名要求如下。  - 长度为6-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
+        DDM实例帐号名称，命名要求如下。  - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
 
         :param name: The name of this CreateUsersInfo.
         :type: str

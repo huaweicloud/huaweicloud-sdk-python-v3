@@ -24,6 +24,7 @@ class InstanceResponse:
     openapi_types = {
         'id': 'str',
         'status': 'str',
+        'enable_ssl': 'bool',
         'private_ips': 'list[str]',
         'private_dns_names': 'list[str]',
         'public_ips': 'list[str]',
@@ -63,6 +64,7 @@ class InstanceResponse:
     attribute_map = {
         'id': 'id',
         'status': 'status',
+        'enable_ssl': 'enable_ssl',
         'private_ips': 'private_ips',
         'private_dns_names': 'private_dns_names',
         'public_ips': 'public_ips',
@@ -99,13 +101,14 @@ class InstanceResponse:
         'alias': 'alias'
     }
 
-    def __init__(self, id=None, status=None, private_ips=None, private_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None, alias=None):
+    def __init__(self, id=None, status=None, enable_ssl=None, private_ips=None, private_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None, alias=None):
         """InstanceResponse - a model defined in huaweicloud sdk"""
         
         
 
         self._id = None
         self._status = None
+        self._enable_ssl = None
         self._private_ips = None
         self._private_dns_names = None
         self._public_ips = None
@@ -144,6 +147,7 @@ class InstanceResponse:
 
         self.id = id
         self.status = status
+        self.enable_ssl = enable_ssl
         self.private_ips = private_ips
         if private_dns_names is not None:
             self.private_dns_names = private_dns_names
@@ -231,6 +235,28 @@ class InstanceResponse:
         :type: str
         """
         self._status = status
+
+    @property
+    def enable_ssl(self):
+        """Gets the enable_ssl of this InstanceResponse.
+
+        实例是否开启SSL，取值为\"true\"表示实例开启了SSL，取值为\"false\"表示实例未开启SSL。
+
+        :return: The enable_ssl of this InstanceResponse.
+        :rtype: bool
+        """
+        return self._enable_ssl
+
+    @enable_ssl.setter
+    def enable_ssl(self, enable_ssl):
+        """Sets the enable_ssl of this InstanceResponse.
+
+        实例是否开启SSL，取值为\"true\"表示实例开启了SSL，取值为\"false\"表示实例未开启SSL。
+
+        :param enable_ssl: The enable_ssl of this InstanceResponse.
+        :type: bool
+        """
+        self._enable_ssl = enable_ssl
 
     @property
     def private_ips(self):

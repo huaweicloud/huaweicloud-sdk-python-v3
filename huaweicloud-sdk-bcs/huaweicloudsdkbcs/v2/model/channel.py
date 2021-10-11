@@ -25,17 +25,21 @@ class Channel:
         'name': 'str',
         'description': 'str',
         'create_time': 'str',
-        'peers': 'dict(str, list[str])'
+        'consensus': 'str',
+        'peers': 'dict(str, list[str])',
+        'consensus_nodes': 'dict(str, list[str])'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'create_time': 'create_time',
-        'peers': 'peers'
+        'consensus': 'consensus',
+        'peers': 'peers',
+        'consensus_nodes': 'consensusNodes'
     }
 
-    def __init__(self, name=None, description=None, create_time=None, peers=None):
+    def __init__(self, name=None, description=None, create_time=None, consensus=None, peers=None, consensus_nodes=None):
         """Channel - a model defined in huaweicloud sdk"""
         
         
@@ -43,7 +47,9 @@ class Channel:
         self._name = None
         self._description = None
         self._create_time = None
+        self._consensus = None
         self._peers = None
+        self._consensus_nodes = None
         self.discriminator = None
 
         if name is not None:
@@ -52,8 +58,12 @@ class Channel:
             self.description = description
         if create_time is not None:
             self.create_time = create_time
+        if consensus is not None:
+            self.consensus = consensus
         if peers is not None:
             self.peers = peers
+        if consensus_nodes is not None:
+            self.consensus_nodes = consensus_nodes
 
     @property
     def name(self):
@@ -122,6 +132,28 @@ class Channel:
         self._create_time = create_time
 
     @property
+    def consensus(self):
+        """Gets the consensus of this Channel.
+
+        共识策略
+
+        :return: The consensus of this Channel.
+        :rtype: str
+        """
+        return self._consensus
+
+    @consensus.setter
+    def consensus(self, consensus):
+        """Sets the consensus of this Channel.
+
+        共识策略
+
+        :param consensus: The consensus of this Channel.
+        :type: str
+        """
+        self._consensus = consensus
+
+    @property
     def peers(self):
         """Gets the peers of this Channel.
 
@@ -142,6 +174,28 @@ class Channel:
         :type: dict(str, list[str])
         """
         self._peers = peers
+
+    @property
+    def consensus_nodes(self):
+        """Gets the consensus_nodes of this Channel.
+
+        key:组织名，value:节点名称列表
+
+        :return: The consensus_nodes of this Channel.
+        :rtype: dict(str, list[str])
+        """
+        return self._consensus_nodes
+
+    @consensus_nodes.setter
+    def consensus_nodes(self, consensus_nodes):
+        """Sets the consensus_nodes of this Channel.
+
+        key:组织名，value:节点名称列表
+
+        :param consensus_nodes: The consensus_nodes of this Channel.
+        :type: dict(str, list[str])
+        """
+        self._consensus_nodes = consensus_nodes
 
     def to_dict(self):
         """Returns the model properties as a dict"""

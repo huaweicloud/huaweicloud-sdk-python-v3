@@ -37,7 +37,7 @@ class ReqParam:
         'max_size': 'int',
         'regular': 'str',
         'json_schema': 'str',
-        'pass_through': 'str',
+        'pass_through': 'int',
         'id': 'str'
     }
 
@@ -454,7 +454,7 @@ class ReqParam:
         是否透传 - 1：是 - 2：否
 
         :return: The pass_through of this ReqParam.
-        :rtype: str
+        :rtype: int
         """
         return self._pass_through
 
@@ -465,7 +465,7 @@ class ReqParam:
         是否透传 - 1：是 - 2：否
 
         :param pass_through: The pass_through of this ReqParam.
-        :type: str
+        :type: int
         """
         self._pass_through = pass_through
 

@@ -77,7 +77,7 @@ class HandleNotificationInvitee:
     def invitee_bcs_name(self):
         """Gets the invitee_bcs_name of this HandleNotificationInvitee.
 
-        被邀请方服务实例名称，同意联盟邀请时比填
+        被邀请方服务实例名称，同意联盟邀请时必填
 
         :return: The invitee_bcs_name of this HandleNotificationInvitee.
         :rtype: str
@@ -88,7 +88,7 @@ class HandleNotificationInvitee:
     def invitee_bcs_name(self, invitee_bcs_name):
         """Sets the invitee_bcs_name of this HandleNotificationInvitee.
 
-        被邀请方服务实例名称，同意联盟邀请时比填
+        被邀请方服务实例名称，同意联盟邀请时必填
 
         :param invitee_bcs_name: The invitee_bcs_name of this HandleNotificationInvitee.
         :type: str

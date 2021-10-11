@@ -27,7 +27,7 @@ class VpcInfo:
         'cascade_flag': 'bool',
         'vpc_channel_proxy_host': 'str',
         'vpc_channel_id': 'str',
-        'vpc_channel_port': 'str'
+        'vpc_channel_port': 'int'
     }
 
     attribute_map = {
@@ -182,7 +182,7 @@ class VpcInfo:
         VPC通道端口
 
         :return: The vpc_channel_port of this VpcInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._vpc_channel_port
 
@@ -193,7 +193,7 @@ class VpcInfo:
         VPC通道端口
 
         :param vpc_channel_port: The vpc_channel_port of this VpcInfo.
-        :type: str
+        :type: int
         """
         self._vpc_channel_port = vpc_channel_port
 

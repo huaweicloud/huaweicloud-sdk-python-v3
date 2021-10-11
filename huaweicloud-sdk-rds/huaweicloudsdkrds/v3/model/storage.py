@@ -52,7 +52,7 @@ class Storage:
     def name(self):
         """Gets the name of this Storage.
 
-        磁盘类型名称，可能取值如下： - ULTRAHIGH，表示SSD。 - ULTRAHIGHPRO，表示SSD尊享版，仅支持超高性能型尊享版实例。 - NVMESSD，表示直通SSD，仅支持i3规格实例。
+        磁盘类型名称，可能取值如下： - ULTRAHIGH：表示SSD。 - LOCALSSD：表示本地SSD。 - CLOUDSSD：表示SSD云盘，仅支持通用型和独享型规格实例。 - ESSD：表示极速型SSD，仅支持独享型规格实例。
 
         :return: The name of this Storage.
         :rtype: str
@@ -63,7 +63,7 @@ class Storage:
     def name(self, name):
         """Sets the name of this Storage.
 
-        磁盘类型名称，可能取值如下： - ULTRAHIGH，表示SSD。 - ULTRAHIGHPRO，表示SSD尊享版，仅支持超高性能型尊享版实例。 - NVMESSD，表示直通SSD，仅支持i3规格实例。
+        磁盘类型名称，可能取值如下： - ULTRAHIGH：表示SSD。 - LOCALSSD：表示本地SSD。 - CLOUDSSD：表示SSD云盘，仅支持通用型和独享型规格实例。 - ESSD：表示极速型SSD，仅支持独享型规格实例。
 
         :param name: The name of this Storage.
         :type: str

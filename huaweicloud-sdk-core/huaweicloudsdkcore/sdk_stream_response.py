@@ -25,7 +25,7 @@ class SdkStreamResponse(SdkResponse):
         super(SdkStreamResponse, self).__init__()
         self._stream = response
 
-    def consumeDownloadStream(self, fn):
+    def consume_download_stream(self, fn):
         try:
             fn(self._stream)
         except IOError as e:

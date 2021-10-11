@@ -241,10 +241,77 @@ class BcsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_remove_orgs_from_channel(self, request):
+        """BCS组织退出某通道
+
+        该接口用于BCS组织退出某通道。
+
+        :param BatchRemoveOrgsFromChannelRequest request
+        :return: BatchRemoveOrgsFromChannelResponse
+        """
+        return self.batch_remove_orgs_from_channel_with_http_info(request)
+
+    def batch_remove_orgs_from_channel_with_http_info(self, request):
+        """BCS组织退出某通道
+
+        该接口用于BCS组织退出某通道。
+
+        :param BatchRemoveOrgsFromChannelRequest request
+        :return: BatchRemoveOrgsFromChannelResponse
+        """
+
+        all_params = ['blockchain_id', 'channel_id', 'batch_remove_orgs_from_channel_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'blockchain_id' in local_var_params:
+            path_params['blockchain_id'] = local_var_params['blockchain_id']
+        if 'channel_id' in local_var_params:
+            path_params['channel_id'] = local_var_params['channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/{channel_id}/orgs/quit',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchRemoveOrgsFromChannelResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_new_blockchain(self, request):
         """创建服务实例
 
-        创建BCS服务实例
+        创建BCS服务实例,只支持按需创建
 
         :param CreateNewBlockchainRequest request
         :return: CreateNewBlockchainResponse
@@ -254,7 +321,7 @@ class BcsClient(Client):
     def create_new_blockchain_with_http_info(self, request):
         """创建服务实例
 
-        创建BCS服务实例
+        创建BCS服务实例,只支持按需创建
 
         :param CreateNewBlockchainRequest request
         :return: CreateNewBlockchainResponse
@@ -305,9 +372,9 @@ class BcsClient(Client):
 
 
     def delete_blockchain(self, request):
-        """删除bcs实例
+        """删除服务实例
 
-        删除bcs实例
+        删除bcs实例。包周期实例不支持
 
         :param DeleteBlockchainRequest request
         :return: DeleteBlockchainResponse
@@ -315,9 +382,9 @@ class BcsClient(Client):
         return self.delete_blockchain_with_http_info(request)
 
     def delete_blockchain_with_http_info(self, request):
-        """删除bcs实例
+        """删除服务实例
 
-        删除bcs实例
+        删除bcs实例。包周期实例不支持
 
         :param DeleteBlockchainRequest request
         :return: DeleteBlockchainResponse
@@ -571,7 +638,7 @@ class BcsClient(Client):
     def list_bcs_metric(self, request):
         """查询BCS服务实例监控数据
 
-        [该接口用于查询BCS服务的监控数据，可以指定相应的指标名称,目前不支持IEF节点](tag:online)[该接口用于查询BCS服务的监控数据，可以指定相应的指标名称](tag:hcs)
+        该接口用于查询BCS服务的监控数据，可以指定相应的指标名称。[目前不支持IEF节点](tag:hasief)
 
         :param ListBcsMetricRequest request
         :return: ListBcsMetricResponse
@@ -581,7 +648,7 @@ class BcsClient(Client):
     def list_bcs_metric_with_http_info(self, request):
         """查询BCS服务实例监控数据
 
-        [该接口用于查询BCS服务的监控数据，可以指定相应的指标名称,目前不支持IEF节点](tag:online)[该接口用于查询BCS服务的监控数据，可以指定相应的指标名称](tag:hcs)
+        该接口用于查询BCS服务的监控数据，可以指定相应的指标名称。[目前不支持IEF节点](tag:hasief)
 
         :param ListBcsMetricRequest request
         :return: ListBcsMetricResponse
@@ -697,7 +764,7 @@ class BcsClient(Client):
 
 
     def list_blockchains(self, request):
-        """查询服务实例简要信息
+        """查询服务实例列表
 
         查询当前项目下所有服务实例的简要信息
 
@@ -707,7 +774,7 @@ class BcsClient(Client):
         return self.list_blockchains_with_http_info(request)
 
     def list_blockchains_with_http_info(self, request):
-        """查询服务实例简要信息
+        """查询服务实例列表
 
         查询当前项目下所有服务实例的简要信息
 
@@ -1142,7 +1209,7 @@ class BcsClient(Client):
 
 
     def show_blockchain_detail(self, request):
-        """查询详细信息
+        """查询实例信息
 
         查询指定服务实例详细信息
 
@@ -1152,7 +1219,7 @@ class BcsClient(Client):
         return self.show_blockchain_detail_with_http_info(request)
 
     def show_blockchain_detail_with_http_info(self, request):
-        """查询详细信息
+        """查询实例信息
 
         查询指定服务实例详细信息
 
@@ -1331,9 +1398,9 @@ class BcsClient(Client):
 
 
     def update_instance(self, request):
-        """修改实例
+        """修改服务实例
 
-        修改实例的节点、组织，目前仅支持添加节点，添加组织
+        修改实例的节点、组织，目前仅支持添加、删除节点（IEF模式不支持添加、删除节点），添加、删除组织，共4种类型，每次操作只可以操作一种类型。此接口不支持包周期模式; 注意注册IEF节点时，IEF节点名称长度应该为4-24位的字符
 
         :param UpdateInstanceRequest request
         :return: UpdateInstanceResponse
@@ -1341,9 +1408,9 @@ class BcsClient(Client):
         return self.update_instance_with_http_info(request)
 
     def update_instance_with_http_info(self, request):
-        """修改实例
+        """修改服务实例
 
-        修改实例的节点、组织，目前仅支持添加节点，添加组织
+        修改实例的节点、组织，目前仅支持添加、删除节点（IEF模式不支持添加、删除节点），添加、删除组织，共4种类型，每次操作只可以操作一种类型。此接口不支持包周期模式; 注意注册IEF节点时，IEF节点名称长度应该为4-24位的字符
 
         :param UpdateInstanceRequest request
         :return: UpdateInstanceResponse

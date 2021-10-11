@@ -22,7 +22,7 @@ class ReportdetailsInfo:
     sensitive_list = []
 
     openapi_types = {
-        'data': 'list[ReportdetailsInfoData]',
+        'data': 'list[ReportdetailItemInfo]',
         'page_index': 'int',
         'page_size': 'int',
         'total': 'int'
@@ -62,7 +62,7 @@ class ReportdetailsInfo:
         data
 
         :return: The data of this ReportdetailsInfo.
-        :rtype: list[ReportdetailsInfoData]
+        :rtype: list[ReportdetailItemInfo]
         """
         return self._data
 
@@ -73,7 +73,7 @@ class ReportdetailsInfo:
         data
 
         :param data: The data of this ReportdetailsInfo.
-        :type: list[ReportdetailsInfoData]
+        :type: list[ReportdetailItemInfo]
         """
         self._data = data
 

@@ -206,7 +206,7 @@ class ListResourceUsageResponse(SdkResponse):
     def usage_info_list(self):
         """Gets the usage_info_list of this ListResourceUsageResponse.
 
-        使用量明细（5分钟统计值）。
+        使用量明细（5分钟统计值）。具体请参见表3。
 
         :return: The usage_info_list of this ListResourceUsageResponse.
         :rtype: list[StatUsageInfo]
@@ -217,7 +217,7 @@ class ListResourceUsageResponse(SdkResponse):
     def usage_info_list(self, usage_info_list):
         """Sets the usage_info_list of this ListResourceUsageResponse.
 
-        使用量明细（5分钟统计值）。
+        使用量明细（5分钟统计值）。具体请参见表3。
 
         :param usage_info_list: The usage_info_list of this ListResourceUsageResponse.
         :type: list[StatUsageInfo]

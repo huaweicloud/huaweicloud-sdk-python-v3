@@ -77,7 +77,7 @@ class HandleNotificationInvitor:
     def invitor_bcs_name(self):
         """Gets the invitor_bcs_name of this HandleNotificationInvitor.
 
-        邀请方实例名称，同意联盟邀请时比填
+        邀请方实例名称
 
         :return: The invitor_bcs_name of this HandleNotificationInvitor.
         :rtype: str
@@ -88,7 +88,7 @@ class HandleNotificationInvitor:
     def invitor_bcs_name(self, invitor_bcs_name):
         """Sets the invitor_bcs_name of this HandleNotificationInvitor.
 
-        邀请方实例名称，同意联盟邀请时比填
+        邀请方实例名称
 
         :param invitor_bcs_name: The invitor_bcs_name of this HandleNotificationInvitor.
         :type: str
@@ -121,7 +121,7 @@ class HandleNotificationInvitor:
     def invitor_user_id(self):
         """Gets the invitor_user_id of this HandleNotificationInvitor.
 
-        邀请方租户,hcs模式下是邀请方租户id
+        邀请方租户id
 
         :return: The invitor_user_id of this HandleNotificationInvitor.
         :rtype: str
@@ -132,7 +132,7 @@ class HandleNotificationInvitor:
     def invitor_user_id(self, invitor_user_id):
         """Sets the invitor_user_id of this HandleNotificationInvitor.
 
-        邀请方租户,hcs模式下是邀请方租户id
+        邀请方租户id
 
         :param invitor_user_id: The invitor_user_id of this HandleNotificationInvitor.
         :type: str

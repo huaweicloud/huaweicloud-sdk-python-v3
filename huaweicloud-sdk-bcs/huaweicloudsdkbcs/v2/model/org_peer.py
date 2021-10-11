@@ -40,10 +40,8 @@ class OrgPeer:
         self._node_count = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if node_count is not None:
-            self.node_count = node_count
+        self.name = name
+        self.node_count = node_count
 
     @property
     def name(self):

@@ -24,7 +24,7 @@ class ShowProcessResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'json': 'Json',
+        'json': 'UploadProcessJson',
         'extend': 'str'
     }
 
@@ -105,7 +105,7 @@ class ShowProcessResponse(SdkResponse):
 
 
         :return: The json of this ShowProcessResponse.
-        :rtype: Json
+        :rtype: UploadProcessJson
         """
         return self._json
 
@@ -115,7 +115,7 @@ class ShowProcessResponse(SdkResponse):
 
 
         :param json: The json of this ShowProcessResponse.
-        :type: Json
+        :type: UploadProcessJson
         """
         self._json = json
 

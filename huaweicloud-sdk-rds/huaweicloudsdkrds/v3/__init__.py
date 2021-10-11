@@ -288,6 +288,7 @@ from huaweicloudsdkrds.v3.model.switch_ssl_response import SwitchSslResponse
 from huaweicloudsdkrds.v3.model.tag_del_with_key_value import TagDelWithKeyValue
 from huaweicloudsdkrds.v3.model.tag_response import TagResponse
 from huaweicloudsdkrds.v3.model.tag_with_key_value import TagWithKeyValue
+from huaweicloudsdkrds.v3.model.unchangeable_param import UnchangeableParam
 from huaweicloudsdkrds.v3.model.update_configuration_request import UpdateConfigurationRequest
 from huaweicloudsdkrds.v3.model.update_configuration_response import UpdateConfigurationResponse
 from huaweicloudsdkrds.v3.model.update_data_ip_request import UpdateDataIpRequest

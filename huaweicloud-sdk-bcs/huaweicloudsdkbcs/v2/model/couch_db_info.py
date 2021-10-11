@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CouchDBInfo:
+class CouchDbInfo:
 
 
     """
@@ -22,45 +22,70 @@ class CouchDBInfo:
     sensitive_list = []
 
     openapi_types = {
-        'user': 'str'
+        'user_name': 'str',
+        'password': 'str'
     }
 
     attribute_map = {
-        'user': 'user'
+        'user_name': 'user_name',
+        'password': 'password'
     }
 
-    def __init__(self, user=None):
-        """CouchDBInfo - a model defined in huaweicloud sdk"""
+    def __init__(self, user_name=None, password=None):
+        """CouchDbInfo - a model defined in huaweicloud sdk"""
         
         
 
-        self._user = None
+        self._user_name = None
+        self._password = None
         self.discriminator = None
 
-        if user is not None:
-            self.user = user
+        self.user_name = user_name
+        self.password = password
 
     @property
-    def user(self):
-        """Gets the user of this CouchDBInfo.
+    def user_name(self):
+        """Gets the user_name of this CouchDbInfo.
 
-        couchDB用户名称
+        couchDB用户名
 
-        :return: The user of this CouchDBInfo.
+        :return: The user_name of this CouchDbInfo.
         :rtype: str
         """
-        return self._user
+        return self._user_name
 
-    @user.setter
-    def user(self, user):
-        """Sets the user of this CouchDBInfo.
+    @user_name.setter
+    def user_name(self, user_name):
+        """Sets the user_name of this CouchDbInfo.
 
-        couchDB用户名称
+        couchDB用户名
 
-        :param user: The user of this CouchDBInfo.
+        :param user_name: The user_name of this CouchDbInfo.
         :type: str
         """
-        self._user = user
+        self._user_name = user_name
+
+    @property
+    def password(self):
+        """Gets the password of this CouchDbInfo.
+
+        couchDB密码
+
+        :return: The password of this CouchDbInfo.
+        :rtype: str
+        """
+        return self._password
+
+    @password.setter
+    def password(self, password):
+        """Sets the password of this CouchDbInfo.
+
+        couchDB密码
+
+        :param password: The password of this CouchDbInfo.
+        :type: str
+        """
+        self._password = password
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -104,7 +129,7 @@ class CouchDBInfo:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CouchDBInfo):
+        if not isinstance(other, CouchDbInfo):
             return False
 
         return self.__dict__ == other.__dict__

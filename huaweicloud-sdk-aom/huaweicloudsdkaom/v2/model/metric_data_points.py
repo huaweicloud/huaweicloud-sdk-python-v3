@@ -22,33 +22,55 @@ class MetricDataPoints:
     sensitive_list = []
 
     openapi_types = {
+        'statistics': 'list[StatisticValue]',
         'timestamp': 'int',
-        'unit': 'str',
-        'statistics': 'list[StatisticValue]'
+        'unit': 'str'
     }
 
     attribute_map = {
+        'statistics': 'statistics',
         'timestamp': 'timestamp',
-        'unit': 'unit',
-        'statistics': 'statistics'
+        'unit': 'unit'
     }
 
-    def __init__(self, timestamp=None, unit=None, statistics=None):
+    def __init__(self, statistics=None, timestamp=None, unit=None):
         """MetricDataPoints - a model defined in huaweicloud sdk"""
         
         
 
+        self._statistics = None
         self._timestamp = None
         self._unit = None
-        self._statistics = None
         self.discriminator = None
 
+        if statistics is not None:
+            self.statistics = statistics
         if timestamp is not None:
             self.timestamp = timestamp
         if unit is not None:
             self.unit = unit
-        if statistics is not None:
-            self.statistics = statistics
+
+    @property
+    def statistics(self):
+        """Gets the statistics of this MetricDataPoints.
+
+        统计方式。
+
+        :return: The statistics of this MetricDataPoints.
+        :rtype: list[StatisticValue]
+        """
+        return self._statistics
+
+    @statistics.setter
+    def statistics(self, statistics):
+        """Sets the statistics of this MetricDataPoints.
+
+        统计方式。
+
+        :param statistics: The statistics of this MetricDataPoints.
+        :type: list[StatisticValue]
+        """
+        self._statistics = statistics
 
     @property
     def timestamp(self):
@@ -93,28 +115,6 @@ class MetricDataPoints:
         :type: str
         """
         self._unit = unit
-
-    @property
-    def statistics(self):
-        """Gets the statistics of this MetricDataPoints.
-
-        统计方式。
-
-        :return: The statistics of this MetricDataPoints.
-        :rtype: list[StatisticValue]
-        """
-        return self._statistics
-
-    @statistics.setter
-    def statistics(self, statistics):
-        """Sets the statistics of this MetricDataPoints.
-
-        统计方式。
-
-        :param statistics: The statistics of this MetricDataPoints.
-        :type: list[StatisticValue]
-        """
-        self._statistics = statistics
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -24,7 +24,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
     openapi_types = {
         'common_name': 'str',
         'san': 'list[str]',
-        'version': 'str',
+        'version': 'int',
         'organization': 'list[str]',
         'organizational_unit': 'list[str]',
         'locality': 'list[str]',
@@ -151,7 +151,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         证书版本
 
         :return: The version of this ShowDetailsOfDomainNameCertificateV2Response.
-        :rtype: str
+        :rtype: int
         """
         return self._version
 
@@ -162,7 +162,7 @@ class ShowDetailsOfDomainNameCertificateV2Response(SdkResponse):
         证书版本
 
         :param version: The version of this ShowDetailsOfDomainNameCertificateV2Response.
-        :type: str
+        :type: int
         """
         self._version = version
 

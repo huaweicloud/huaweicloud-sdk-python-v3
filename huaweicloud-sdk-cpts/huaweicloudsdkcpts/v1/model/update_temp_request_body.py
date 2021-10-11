@@ -29,7 +29,7 @@ class UpdateTempRequestBody:
         'description': 'str',
         'for_loop_params': 'list[object]',
         'enable_pre': 'bool',
-        'contents': 'list[UpdateTempRequestBodyContents]'
+        'contents': 'list[TempContentInfo]'
     }
 
     attribute_map = {
@@ -234,7 +234,7 @@ class UpdateTempRequestBody:
         contents
 
         :return: The contents of this UpdateTempRequestBody.
-        :rtype: list[UpdateTempRequestBodyContents]
+        :rtype: list[TempContentInfo]
         """
         return self._contents
 
@@ -245,7 +245,7 @@ class UpdateTempRequestBody:
         contents
 
         :param contents: The contents of this UpdateTempRequestBody.
-        :type: list[UpdateTempRequestBodyContents]
+        :type: list[TempContentInfo]
         """
         self._contents = contents
 

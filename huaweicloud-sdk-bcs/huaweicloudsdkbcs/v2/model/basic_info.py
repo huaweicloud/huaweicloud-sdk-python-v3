@@ -252,7 +252,7 @@ class BasicInfo:
     def purchase_type(self):
         """Gets the purchase_type of this BasicInfo.
 
-        BCS服务部署类型，分为一键购买（onestep），普通购买（normal）
+        BCS服务部署类型，一键部署（onestep），普通部署（normal）
 
         :return: The purchase_type of this BasicInfo.
         :rtype: str
@@ -263,7 +263,7 @@ class BasicInfo:
     def purchase_type(self, purchase_type):
         """Sets the purchase_type of this BasicInfo.
 
-        BCS服务部署类型，分为一键购买（onestep），普通购买（normal）
+        BCS服务部署类型，一键部署（onestep），普通部署（normal）
 
         :param purchase_type: The purchase_type of this BasicInfo.
         :type: str
@@ -296,7 +296,7 @@ class BasicInfo:
     def consensus(self):
         """Gets the consensus of this BasicInfo.
 
-        BCS服务的共识策略，分为测试策略（solo），快速拜占庭容错算法（sflic）,Kafka(kafka)
+        BCS服务的共识策略，分为测试策略（solo），快速拜占庭容错算法（sflic）,Kafka(kafka)，raft共识算法（etcdraft）
 
         :return: The consensus of this BasicInfo.
         :rtype: str
@@ -307,7 +307,7 @@ class BasicInfo:
     def consensus(self, consensus):
         """Sets the consensus of this BasicInfo.
 
-        BCS服务的共识策略，分为测试策略（solo），快速拜占庭容错算法（sflic）,Kafka(kafka)
+        BCS服务的共识策略，分为测试策略（solo），快速拜占庭容错算法（sflic）,Kafka(kafka)，raft共识算法（etcdraft）
 
         :param consensus: The consensus of this BasicInfo.
         :type: str
@@ -318,7 +318,7 @@ class BasicInfo:
     def charging_mode(self):
         """Gets the charging_mode of this BasicInfo.
 
-        BCS服务付费模式，分为按需（1），包周期（0）
+        BCS服务付费模式，分为按需（1）[包周期（0）](tag:onorder)
 
         :return: The charging_mode of this BasicInfo.
         :rtype: int
@@ -329,7 +329,7 @@ class BasicInfo:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this BasicInfo.
 
-        BCS服务付费模式，分为按需（1），包周期（0）
+        BCS服务付费模式，分为按需（1）[包周期（0）](tag:onorder)
 
         :param charging_mode: The charging_mode of this BasicInfo.
         :type: int
@@ -340,7 +340,7 @@ class BasicInfo:
     def version_type(self):
         """Gets the version_type of this BasicInfo.
 
-        BCS服务版本类型，分为基础版（1），专业版（2），铂金版（3）
+        BCS服务版本类型
 
         :return: The version_type of this BasicInfo.
         :rtype: int
@@ -351,7 +351,7 @@ class BasicInfo:
     def version_type(self, version_type):
         """Sets the version_type of this BasicInfo.
 
-        BCS服务版本类型，分为基础版（1），专业版（2），铂金版（3）
+        BCS服务版本类型
 
         :param version_type: The version_type of this BasicInfo.
         :type: int
@@ -428,7 +428,7 @@ class BasicInfo:
     def cluster_type(self):
         """Gets the cluster_type of this BasicInfo.
 
-        BCS服务的集群类型，分为CCE集群（空），IEF集群（ief）
+        BCS服务的集群类型，分为CCE集群（CCE），IEF集群（ief）
 
         :return: The cluster_type of this BasicInfo.
         :rtype: str
@@ -439,7 +439,7 @@ class BasicInfo:
     def cluster_type(self, cluster_type):
         """Sets the cluster_type of this BasicInfo.
 
-        BCS服务的集群类型，分为CCE集群（空），IEF集群（ief）
+        BCS服务的集群类型，分为CCE集群（CCE），IEF集群（ief）
 
         :param cluster_type: The cluster_type of this BasicInfo.
         :type: str

@@ -20,9 +20,11 @@
 
 import datetime
 import decimal
+from mimetypes import MimeTypes
 
 import six
 
+from huaweicloudsdkcore.http.formdata import FormFile
 from huaweicloudsdkcore.http.primitive_types import primitive_types
 
 
@@ -44,6 +46,9 @@ def sanitize_for_serialization(obj):
 
     elif isinstance(obj, (datetime.datetime, datetime.date)):
         return obj.isoformat()
+
+    elif isinstance(obj, FormFile):
+        return obj
 
     elif isinstance(obj, dict):
         obj_dict = obj
@@ -131,3 +136,6 @@ def select_header_content_type(content_types):
         return 'application/json'
     else:
         return content_types[0]
+
+
+

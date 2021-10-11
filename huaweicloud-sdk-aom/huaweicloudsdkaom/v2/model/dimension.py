@@ -49,7 +49,7 @@ class Dimension:
     def name(self):
         """Gets the name of this Dimension.
 
-        名称。
+        维度名称。
 
         :return: The name of this Dimension.
         :rtype: str
@@ -60,7 +60,7 @@ class Dimension:
     def name(self, name):
         """Sets the name of this Dimension.
 
-        名称。
+        维度名称。
 
         :param name: The name of this Dimension.
         :type: str
@@ -71,7 +71,7 @@ class Dimension:
     def value(self):
         """Gets the value of this Dimension.
 
-        具体数值。
+        维度取值。
 
         :return: The value of this Dimension.
         :rtype: str
@@ -82,7 +82,7 @@ class Dimension:
     def value(self, value):
         """Sets the value of this Dimension.
 
-        具体数值。
+        维度取值。
 
         :param value: The value of this Dimension.
         :type: str

@@ -45,7 +45,10 @@ class InstanceRequest:
         'replica_of_id': 'str',
         'restore_point': 'RestorePoint',
         'collation': 'str',
-        'tags': 'list[TagWithKeyValue]'
+        'tags': 'list[TagWithKeyValue]',
+        'unchangeable_param': 'UnchangeableParam',
+        'dry_run': 'bool',
+        'count': 'int'
     }
 
     attribute_map = {
@@ -72,10 +75,13 @@ class InstanceRequest:
         'replica_of_id': 'replica_of_id',
         'restore_point': 'restore_point',
         'collation': 'collation',
-        'tags': 'tags'
+        'tags': 'tags',
+        'unchangeable_param': 'unchangeable_param',
+        'dry_run': 'dry_run',
+        'count': 'count'
     }
 
-    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, replica_of_id=None, restore_point=None, collation=None, tags=None):
+    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, replica_of_id=None, restore_point=None, collation=None, tags=None, unchangeable_param=None, dry_run=None, count=None):
         """InstanceRequest - a model defined in huaweicloud sdk"""
         
         
@@ -104,6 +110,9 @@ class InstanceRequest:
         self._restore_point = None
         self._collation = None
         self._tags = None
+        self._unchangeable_param = None
+        self._dry_run = None
+        self._count = None
         self.discriminator = None
 
         self.name = name
@@ -145,6 +154,12 @@ class InstanceRequest:
             self.collation = collation
         if tags is not None:
             self.tags = tags
+        if unchangeable_param is not None:
+            self.unchangeable_param = unchangeable_param
+        if dry_run is not None:
+            self.dry_run = dry_run
+        if count is not None:
+            self.count = count
 
     @property
     def name(self):
@@ -661,6 +676,70 @@ class InstanceRequest:
         :type: list[TagWithKeyValue]
         """
         self._tags = tags
+
+    @property
+    def unchangeable_param(self):
+        """Gets the unchangeable_param of this InstanceRequest.
+
+
+        :return: The unchangeable_param of this InstanceRequest.
+        :rtype: UnchangeableParam
+        """
+        return self._unchangeable_param
+
+    @unchangeable_param.setter
+    def unchangeable_param(self, unchangeable_param):
+        """Sets the unchangeable_param of this InstanceRequest.
+
+
+        :param unchangeable_param: The unchangeable_param of this InstanceRequest.
+        :type: UnchangeableParam
+        """
+        self._unchangeable_param = unchangeable_param
+
+    @property
+    def dry_run(self):
+        """Gets the dry_run of this InstanceRequest.
+
+        是否只预检此次请求，仅支持MySQL。 - true：发送参数检查请求，不会创建实例。   - 检查通过：返回202状态码。   - 检查不通过：返回对应错误码，详情请参考错误码。 - false：发送正常请求，通过检查后，并且执行创建实例的请求。
+
+        :return: The dry_run of this InstanceRequest.
+        :rtype: bool
+        """
+        return self._dry_run
+
+    @dry_run.setter
+    def dry_run(self, dry_run):
+        """Sets the dry_run of this InstanceRequest.
+
+        是否只预检此次请求，仅支持MySQL。 - true：发送参数检查请求，不会创建实例。   - 检查通过：返回202状态码。   - 检查不通过：返回对应错误码，详情请参考错误码。 - false：发送正常请求，通过检查后，并且执行创建实例的请求。
+
+        :param dry_run: The dry_run of this InstanceRequest.
+        :type: bool
+        """
+        self._dry_run = dry_run
+
+    @property
+    def count(self):
+        """Gets the count of this InstanceRequest.
+
+        批量创建实例的数量，取值范围为1~50。
+
+        :return: The count of this InstanceRequest.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this InstanceRequest.
+
+        批量创建实例的数量，取值范围为1~50。
+
+        :param count: The count of this InstanceRequest.
+        :type: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

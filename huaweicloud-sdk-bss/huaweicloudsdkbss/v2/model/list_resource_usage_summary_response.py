@@ -71,7 +71,7 @@ class ListResourceUsageSummaryResponse(SdkResponse):
     def summary_usage_info_list(self):
         """Gets the summary_usage_info_list of this ListResourceUsageSummaryResponse.
 
-        统计值，按照资源ID维度返回的月度统计结果。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则只返回资源ID。
+        统计值，按照资源ID维度返回的月度统计结果。具体请参见表3。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则只返回资源ID。
 
         :return: The summary_usage_info_list of this ListResourceUsageSummaryResponse.
         :rtype: list[StatUsageSummaryInfo]
@@ -82,7 +82,7 @@ class ListResourceUsageSummaryResponse(SdkResponse):
     def summary_usage_info_list(self, summary_usage_info_list):
         """Sets the summary_usage_info_list of this ListResourceUsageSummaryResponse.
 
-        统计值，按照资源ID维度返回的月度统计结果。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则只返回资源ID。
+        统计值，按照资源ID维度返回的月度统计结果。具体请参见表3。  说明： 每月2日20点后可查询上月数据；若查询当月数据，则只返回资源ID。
 
         :param summary_usage_info_list: The summary_usage_info_list of this ListResourceUsageSummaryResponse.
         :type: list[StatUsageSummaryInfo]

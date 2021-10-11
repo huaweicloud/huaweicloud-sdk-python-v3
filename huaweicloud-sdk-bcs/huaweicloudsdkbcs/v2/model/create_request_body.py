@@ -39,20 +39,20 @@ class CreateRequestBody:
         'bandwidth_size': 'int',
         'cluster_type': 'str',
         'create_new_cluster': 'bool',
-        'cce_cluster_info': 'CreateRequestBodyCceClusterInfo',
-        'cce_create_info': 'CreateRequestBodyCceCreateInfo',
+        'cce_cluster_info': 'CCEClusterInfo',
+        'cce_create_info': 'CCECreateInfo',
         'ief_deploy_mode': 'int',
         'ief_nodes_info': 'list[IEFNode]',
         'peer_orgs': 'list[OrgPeer]',
         'channels': 'list[ChannelInfoV2]',
-        'couchdb_info': 'CreateRequestBodyCouchdbInfo',
-        'turbo_info': 'CreateRequestBodyTurboInfo',
+        'couchdb_info': 'CouchDbInfo',
+        'turbo_info': 'TurboInfo',
         'block_info': 'CreateRequestBodyBlockInfo',
-        'kafka_create_info': 'CreateRequestBodyKafkaCreateInfo',
+        'kafka_create_info': 'KafkaCreateInfo',
         'tc3_need': 'bool',
         'restful_api_support': 'bool',
         'is_invitee': 'bool',
-        'invitor_infos': 'CreateRequestBodyInvitorInfos'
+        'invitor_infos': 'InvitorInfos'
     }
 
     attribute_map = {
@@ -128,10 +128,8 @@ class CreateRequestBody:
         self.discriminator = None
 
         self.name = name
-        if version_type is not None:
-            self.version_type = version_type
-        if fabric_version is not None:
-            self.fabric_version = fabric_version
+        self.version_type = version_type
+        self.fabric_version = fabric_version
         if blockchain_type is not None:
             self.blockchain_type = blockchain_type
         if consensus is not None:
@@ -154,11 +152,12 @@ class CreateRequestBody:
             self.use_eip = use_eip
         if bandwidth_size is not None:
             self.bandwidth_size = bandwidth_size
-        if cluster_type is not None:
-            self.cluster_type = cluster_type
+        self.cluster_type = cluster_type
         self.create_new_cluster = create_new_cluster
-        self.cce_cluster_info = cce_cluster_info
-        self.cce_create_info = cce_create_info
+        if cce_cluster_info is not None:
+            self.cce_cluster_info = cce_cluster_info
+        if cce_create_info is not None:
+            self.cce_create_info = cce_create_info
         if ief_deploy_mode is not None:
             self.ief_deploy_mode = ief_deploy_mode
         if ief_nodes_info is not None:
@@ -210,7 +209,7 @@ class CreateRequestBody:
     def version_type(self):
         """Gets the version_type of this CreateRequestBody.
 
-        BCS服务版本类型，可选：基础版（1），专业版（4），企业版（2），铂金版（3）
+        BCS服务版本类型，[专业版（4），企业版（2）](tag:g42)[可选：基础版（1），专业版（4），企业版（2），铂金版（3）](tag:online)。被邀请方创建时，和邀请方保持一致。
 
         :return: The version_type of this CreateRequestBody.
         :rtype: int
@@ -221,7 +220,7 @@ class CreateRequestBody:
     def version_type(self, version_type):
         """Sets the version_type of this CreateRequestBody.
 
-        BCS服务版本类型，可选：基础版（1），专业版（4），企业版（2），铂金版（3）
+        BCS服务版本类型，[专业版（4），企业版（2）](tag:g42)[可选：基础版（1），专业版（4），企业版（2），铂金版（3）](tag:online)。被邀请方创建时，和邀请方保持一致。
 
         :param version_type: The version_type of this CreateRequestBody.
         :type: int
@@ -232,7 +231,7 @@ class CreateRequestBody:
     def fabric_version(self):
         """Gets the fabric_version of this CreateRequestBody.
 
-        Fabric版本，可选：\"1.4\"，\"2.0\"。目前HCS只支持1.4
+        Fabric版本，当前邀请方以及私有链的创建仅可选：2.2 ;被邀请方创建时，和邀请方保持一致，1.4版本服务仅支持1.15及以下版本集群
 
         :return: The fabric_version of this CreateRequestBody.
         :rtype: str
@@ -243,7 +242,7 @@ class CreateRequestBody:
     def fabric_version(self, fabric_version):
         """Sets the fabric_version of this CreateRequestBody.
 
-        Fabric版本，可选：\"1.4\"，\"2.0\"。目前HCS只支持1.4
+        Fabric版本，当前邀请方以及私有链的创建仅可选：2.2 ;被邀请方创建时，和邀请方保持一致，1.4版本服务仅支持1.15及以下版本集群
 
         :param fabric_version: The fabric_version of this CreateRequestBody.
         :type: str
@@ -254,7 +253,7 @@ class CreateRequestBody:
     def blockchain_type(self):
         """Gets the blockchain_type of this CreateRequestBody.
 
-        区块链类型，可选：联盟链（union），私有链（private）
+        区块链类型，默认私有链，可选：联盟链（union），私有链（private）。被邀请方创建时，和邀请方保持一致。
 
         :return: The blockchain_type of this CreateRequestBody.
         :rtype: str
@@ -265,7 +264,7 @@ class CreateRequestBody:
     def blockchain_type(self, blockchain_type):
         """Sets the blockchain_type of this CreateRequestBody.
 
-        区块链类型，可选：联盟链（union），私有链（private）
+        区块链类型，默认私有链，可选：联盟链（union），私有链（private）。被邀请方创建时，和邀请方保持一致。
 
         :param blockchain_type: The blockchain_type of this CreateRequestBody.
         :type: str
@@ -276,7 +275,7 @@ class CreateRequestBody:
     def consensus(self):
         """Gets the consensus of this CreateRequestBody.
 
-        BCS服务的共识策略，可选：（etcdraft,1.4版本不支持raft共识算法）、快速拜占庭容错算法（SFLIC）、测试策略（solo）、Kafka共识（kafka）
+        BCS服务的共识策略，Fabric1.4版本可选：测试策略（solo）、快速拜占庭容错算法（SFLIC）；Fabric2.2版本可选：raft共识算法（etcdraft）、快速拜占庭容错算法（SFLIC）。被邀请方创建时，和邀请方保持一致。
 
         :return: The consensus of this CreateRequestBody.
         :rtype: str
@@ -287,7 +286,7 @@ class CreateRequestBody:
     def consensus(self, consensus):
         """Sets the consensus of this CreateRequestBody.
 
-        BCS服务的共识策略，可选：（etcdraft,1.4版本不支持raft共识算法）、快速拜占庭容错算法（SFLIC）、测试策略（solo）、Kafka共识（kafka）
+        BCS服务的共识策略，Fabric1.4版本可选：测试策略（solo）、快速拜占庭容错算法（SFLIC）；Fabric2.2版本可选：raft共识算法（etcdraft）、快速拜占庭容错算法（SFLIC）。被邀请方创建时，和邀请方保持一致。
 
         :param consensus: The consensus of this CreateRequestBody.
         :type: str
@@ -386,7 +385,7 @@ class CreateRequestBody:
     def org_disk_size(self):
         """Gets the org_disk_size of this CreateRequestBody.
 
-        [节点组织存储容量，基础版至少40GB，专业版和企业版至少100GB，铂金版至少500GB](tag:online)[节点组织存储容量GB，至少为100GB](tag:hcs)
+        节点组织存储容量[，基础版至少40GB，专业版和企业版至少100GB，铂金版至少500GB](tag:online)[，专业版和企业版至少100GB](tag:g42)[节点组织存储容量GB，至少为100GB](tag:hcs)
 
         :return: The org_disk_size of this CreateRequestBody.
         :rtype: int
@@ -397,7 +396,7 @@ class CreateRequestBody:
     def org_disk_size(self, org_disk_size):
         """Sets the org_disk_size of this CreateRequestBody.
 
-        [节点组织存储容量，基础版至少40GB，专业版和企业版至少100GB，铂金版至少500GB](tag:online)[节点组织存储容量GB，至少为100GB](tag:hcs)
+        节点组织存储容量[，基础版至少40GB，专业版和企业版至少100GB，铂金版至少500GB](tag:online)[，专业版和企业版至少100GB](tag:g42)[节点组织存储容量GB，至少为100GB](tag:hcs)
 
         :param org_disk_size: The org_disk_size of this CreateRequestBody.
         :type: int
@@ -408,7 +407,7 @@ class CreateRequestBody:
     def database_type(self):
         """Gets the database_type of this CreateRequestBody.
 
-        BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb）
+        BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb），选择couchdb需要填写couchdb_info字段中的信息
 
         :return: The database_type of this CreateRequestBody.
         :rtype: str
@@ -419,7 +418,7 @@ class CreateRequestBody:
     def database_type(self, database_type):
         """Sets the database_type of this CreateRequestBody.
 
-        BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb）
+        BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb），选择couchdb需要填写couchdb_info字段中的信息
 
         :param database_type: The database_type of this CreateRequestBody.
         :type: str
@@ -452,7 +451,7 @@ class CreateRequestBody:
     def orderer_node_number(self):
         """Gets the orderer_node_number of this CreateRequestBody.
 
-        共识组织节点数，被邀请方创实例时可不填
+        共识组织节点数，被邀请方创实例时可不填。购买fabric2.2服务时必填。
 
         :return: The orderer_node_number of this CreateRequestBody.
         :rtype: int
@@ -463,7 +462,7 @@ class CreateRequestBody:
     def orderer_node_number(self, orderer_node_number):
         """Sets the orderer_node_number of this CreateRequestBody.
 
-        共识组织节点数，被邀请方创实例时可不填
+        共识组织节点数，被邀请方创实例时可不填。购买fabric2.2服务时必填。
 
         :param orderer_node_number: The orderer_node_number of this CreateRequestBody.
         :type: int
@@ -518,7 +517,7 @@ class CreateRequestBody:
     def cluster_type(self):
         """Gets the cluster_type of this CreateRequestBody.
 
-        集群类型，[可选：CCE集群（cce），边缘集群（ief）](tag:online)[目前线下混合云模式下只支持CCE集群](tag:hcs)
+        集群类型，可选：CCE集群 [,边缘集群ief](tag:hasief)。
 
         :return: The cluster_type of this CreateRequestBody.
         :rtype: str
@@ -529,7 +528,7 @@ class CreateRequestBody:
     def cluster_type(self, cluster_type):
         """Sets the cluster_type of this CreateRequestBody.
 
-        集群类型，[可选：CCE集群（cce），边缘集群（ief）](tag:online)[目前线下混合云模式下只支持CCE集群](tag:hcs)
+        集群类型，可选：CCE集群 [,边缘集群ief](tag:hasief)。
 
         :param cluster_type: The cluster_type of this CreateRequestBody.
         :type: str
@@ -540,7 +539,7 @@ class CreateRequestBody:
     def create_new_cluster(self):
         """Gets the create_new_cluster of this CreateRequestBody.
 
-        是否创建新集群
+        是否创建新集群，使用已有集群需要填写cce_cluster_info字段中的信息，创建新集群需要填写cce_create_info字段中的信息
 
         :return: The create_new_cluster of this CreateRequestBody.
         :rtype: bool
@@ -551,7 +550,7 @@ class CreateRequestBody:
     def create_new_cluster(self, create_new_cluster):
         """Sets the create_new_cluster of this CreateRequestBody.
 
-        是否创建新集群
+        是否创建新集群，使用已有集群需要填写cce_cluster_info字段中的信息，创建新集群需要填写cce_create_info字段中的信息
 
         :param create_new_cluster: The create_new_cluster of this CreateRequestBody.
         :type: bool
@@ -564,7 +563,7 @@ class CreateRequestBody:
 
 
         :return: The cce_cluster_info of this CreateRequestBody.
-        :rtype: CreateRequestBodyCceClusterInfo
+        :rtype: CCEClusterInfo
         """
         return self._cce_cluster_info
 
@@ -574,7 +573,7 @@ class CreateRequestBody:
 
 
         :param cce_cluster_info: The cce_cluster_info of this CreateRequestBody.
-        :type: CreateRequestBodyCceClusterInfo
+        :type: CCEClusterInfo
         """
         self._cce_cluster_info = cce_cluster_info
 
@@ -584,7 +583,7 @@ class CreateRequestBody:
 
 
         :return: The cce_create_info of this CreateRequestBody.
-        :rtype: CreateRequestBodyCceCreateInfo
+        :rtype: CCECreateInfo
         """
         return self._cce_create_info
 
@@ -594,7 +593,7 @@ class CreateRequestBody:
 
 
         :param cce_create_info: The cce_create_info of this CreateRequestBody.
-        :type: CreateRequestBodyCceCreateInfo
+        :type: CCECreateInfo
         """
         self._cce_create_info = cce_create_info
 
@@ -602,7 +601,7 @@ class CreateRequestBody:
     def ief_deploy_mode(self):
         """Gets the ief_deploy_mode of this CreateRequestBody.
 
-        IEF集群部署方式，随机部署（0），组织节点绑定（1）
+        IEF集群部署方式，随机部署（0），组织节点绑定（1）。组织节点绑定模式时，peer_orgs 参数必填。组织名和IEF节点名必须一致。
 
         :return: The ief_deploy_mode of this CreateRequestBody.
         :rtype: int
@@ -613,7 +612,7 @@ class CreateRequestBody:
     def ief_deploy_mode(self, ief_deploy_mode):
         """Sets the ief_deploy_mode of this CreateRequestBody.
 
-        IEF集群部署方式，随机部署（0），组织节点绑定（1）
+        IEF集群部署方式，随机部署（0），组织节点绑定（1）。组织节点绑定模式时，peer_orgs 参数必填。组织名和IEF节点名必须一致。
 
         :param ief_deploy_mode: The ief_deploy_mode of this CreateRequestBody.
         :type: int
@@ -624,7 +623,7 @@ class CreateRequestBody:
     def ief_nodes_info(self):
         """Gets the ief_nodes_info of this CreateRequestBody.
 
-        IEF集群节点列表
+        IEF集群节点列表，使用边缘集群模式部署时必填。
 
         :return: The ief_nodes_info of this CreateRequestBody.
         :rtype: list[IEFNode]
@@ -635,7 +634,7 @@ class CreateRequestBody:
     def ief_nodes_info(self, ief_nodes_info):
         """Sets the ief_nodes_info of this CreateRequestBody.
 
-        IEF集群节点列表
+        IEF集群节点列表，使用边缘集群模式部署时必填。
 
         :param ief_nodes_info: The ief_nodes_info of this CreateRequestBody.
         :type: list[IEFNode]
@@ -646,7 +645,7 @@ class CreateRequestBody:
     def peer_orgs(self):
         """Gets the peer_orgs of this CreateRequestBody.
 
-        节点组织列表
+        节点组织列表。节点绑定模式中，组织名和IEF节点名必须一致。边缘集群模式时此字段必填。
 
         :return: The peer_orgs of this CreateRequestBody.
         :rtype: list[OrgPeer]
@@ -657,7 +656,7 @@ class CreateRequestBody:
     def peer_orgs(self, peer_orgs):
         """Sets the peer_orgs of this CreateRequestBody.
 
-        节点组织列表
+        节点组织列表。节点绑定模式中，组织名和IEF节点名必须一致。边缘集群模式时此字段必填。
 
         :param peer_orgs: The peer_orgs of this CreateRequestBody.
         :type: list[OrgPeer]
@@ -692,7 +691,7 @@ class CreateRequestBody:
 
 
         :return: The couchdb_info of this CreateRequestBody.
-        :rtype: CreateRequestBodyCouchdbInfo
+        :rtype: CouchDbInfo
         """
         return self._couchdb_info
 
@@ -702,7 +701,7 @@ class CreateRequestBody:
 
 
         :param couchdb_info: The couchdb_info of this CreateRequestBody.
-        :type: CreateRequestBodyCouchdbInfo
+        :type: CouchDbInfo
         """
         self._couchdb_info = couchdb_info
 
@@ -712,7 +711,7 @@ class CreateRequestBody:
 
 
         :return: The turbo_info of this CreateRequestBody.
-        :rtype: CreateRequestBodyTurboInfo
+        :rtype: TurboInfo
         """
         return self._turbo_info
 
@@ -722,7 +721,7 @@ class CreateRequestBody:
 
 
         :param turbo_info: The turbo_info of this CreateRequestBody.
-        :type: CreateRequestBodyTurboInfo
+        :type: TurboInfo
         """
         self._turbo_info = turbo_info
 
@@ -752,7 +751,7 @@ class CreateRequestBody:
 
 
         :return: The kafka_create_info of this CreateRequestBody.
-        :rtype: CreateRequestBodyKafkaCreateInfo
+        :rtype: KafkaCreateInfo
         """
         return self._kafka_create_info
 
@@ -762,7 +761,7 @@ class CreateRequestBody:
 
 
         :param kafka_create_info: The kafka_create_info of this CreateRequestBody.
-        :type: CreateRequestBodyKafkaCreateInfo
+        :type: KafkaCreateInfo
         """
         self._kafka_create_info = kafka_create_info
 
@@ -814,7 +813,7 @@ class CreateRequestBody:
     def is_invitee(self):
         """Gets the is_invitee of this CreateRequestBody.
 
-        是否是被邀请方创建实例
+        是否是创建被邀请方实例，创建被邀请方实例需要同时填写invitor_infos字段中的信息
 
         :return: The is_invitee of this CreateRequestBody.
         :rtype: bool
@@ -825,7 +824,7 @@ class CreateRequestBody:
     def is_invitee(self, is_invitee):
         """Sets the is_invitee of this CreateRequestBody.
 
-        是否是被邀请方创建实例
+        是否是创建被邀请方实例，创建被邀请方实例需要同时填写invitor_infos字段中的信息
 
         :param is_invitee: The is_invitee of this CreateRequestBody.
         :type: bool
@@ -838,7 +837,7 @@ class CreateRequestBody:
 
 
         :return: The invitor_infos of this CreateRequestBody.
-        :rtype: CreateRequestBodyInvitorInfos
+        :rtype: InvitorInfos
         """
         return self._invitor_infos
 
@@ -848,7 +847,7 @@ class CreateRequestBody:
 
 
         :param invitor_infos: The invitor_infos of this CreateRequestBody.
-        :type: CreateRequestBodyInvitorInfos
+        :type: InvitorInfos
         """
         self._invitor_infos = invitor_infos
 

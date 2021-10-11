@@ -22,23 +22,28 @@ class ListBlockchainsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'blockchains': 'list[BlockchainInfo]'
+        'blockchains': 'list[BlockchainInfo]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'blockchains': 'blockchains'
+        'blockchains': 'blockchains',
+        'count': 'count'
     }
 
-    def __init__(self, blockchains=None):
+    def __init__(self, blockchains=None, count=None):
         """ListBlockchainsResponse - a model defined in huaweicloud sdk"""
         
         super(ListBlockchainsResponse, self).__init__()
 
         self._blockchains = None
+        self._count = None
         self.discriminator = None
 
         if blockchains is not None:
             self.blockchains = blockchains
+        if count is not None:
+            self.count = count
 
     @property
     def blockchains(self):
@@ -61,6 +66,28 @@ class ListBlockchainsResponse(SdkResponse):
         :type: list[BlockchainInfo]
         """
         self._blockchains = blockchains
+
+    @property
+    def count(self):
+        """Gets the count of this ListBlockchainsResponse.
+
+        实例总数
+
+        :return: The count of this ListBlockchainsResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListBlockchainsResponse.
+
+        实例总数
+
+        :param count: The count of this ListBlockchainsResponse.
+        :type: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

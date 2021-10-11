@@ -1,3 +1,174 @@
+# 3.0.65 2021-10-11
+
+### HuaweiCloud SDK Core
+
+- _Features_
+  - Support uploading files.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - Support the interfaces:
+    - `CreateAppCodeV2`
+    - `CreateAppCodeAutoV2`
+    - `ListAppCodesV2`
+    - `ShowDetailsOfAppCodeV2`
+    - `DeleteAppCodeV2`
+    - `DebugApiV2`
+    - `BatchPublishOrOfflineApiV2`
+    - `ListApiVersionsV2`
+    - `ChangeApiVersionV2`
+    - `ListApiRuntimeDefinitionV2`
+    - `ListApiVersionDetailV2`
+    - `DeleteApiByVersionIdV2`
+    - `ListAclStrategiesV2`
+    - `BatchDeleteAclV2`
+    - `CreateAclStrategyV2`
+    - `ShowDetailsOfAclPolicyV2`
+    - `UpdateAclStrategyV2`
+    - `DeleteAclV2`
+    - `BatchDeleteApiAclBindingV2`
+    - `CreateApiAclBindingV2`
+    - `DeleteApiAclBindingV2`
+    - `ListAclPolicyBindedToApiV2`
+    - `ListApisBindedToAclPolicyV2`
+    - `ListApisUnbindedToAclPolicyV2`
+    - `ListCustomAuthorizersV2`
+    - `CreateCustomAuthorizerV2`
+    - `ShowDetailsOfCustomAuthorizersV2`
+    - `UpdateCustomAuthorizerV2`
+    - `DeleteCustomAuthorizerV2`
+    - `ExportApiDefinitionsV2`
+    - `ImportApiDefinitionsV2`
+    - `CreateVpcChannelV2`
+    - `ListVpcChannelsV2`
+    - `ShowDetailsOfVpcChannelV2`
+    - `DeleteVpcChannelV2`
+    - `UpdateVpcChannelV2`
+    - `AddingBackendInstancesV2`
+    - `ListBackendInstancesV2`
+    - `DeleteBackendInstanceV2`
+    - `ListLatelyApiStatisticsV2`
+    - `ListLatelyGroupStatisticsV2`
+    - `CreateGatewayResponseV2`
+    - `ListGatewayResponsesV2`
+    - `ShowDetailsOfGatewayResponseV2`
+    - `UpdateGatewayResponseV2`
+    - `DeleteGatewayResponseV2`
+    - `ShowDetailsOfGatewayResponseTypeV2`
+    - `UpdateGatewayResponseTypeV2`
+    - `DeleteGatewayResponseTypeV2`
+    - `ListTagsV2`
+    - `CreateFeatureV2`
+    - `ListFeaturesV2`
+    - `CreateInstanceV2`
+    - `ListInstancesV2`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `ListSkuInventories`.
+
+### HuaweiCloud SDK CampusGo
+
+- _Features_
+  - Support the service `CampusGo`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CPTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the following response parameters to the interface `ShowTask`:
+    - `create_time`
+    - `description`
+    - `operate_mode`
+    - `related_temp_running_data`
+    - `run_status`
+    - `update_time`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Set the request parameter `reverse_binding` to `optional` of the interface `DisassociateServerVirtualIp`.
+
+### HuaweiCloud SDK FRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the optional value to `2,4,6,7,8,11,12,13,21` of the request parameter `attributes` of the interfaces `DetectFaceByFile`,`DetectFaceByBase64` and `DetectFaceByUrl`.
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `instance_mode` to the interface `ListInstances`.
+
+### HuaweiCloud SDK IoTEdge
+
+- _Features_
+  - Support the service `IoTEdge`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type of response parameter of the interface `SearchCorpDir`: `number` -> `integer`
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `vpcId` to the interface `ListClusters`, and modify the type of the response parameter `start_time` of this interface: `string` -> `integer`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `unchangeable_param`,`dry_run` and `count` to the interface `CreateInstance`.
+  - Add the response parameter `enable_ssl` to the interface `CreateRestoreInstance`.
+
 # 3.0.64 2021-09-29
 
 ### HuaweiCloud SDK BSS

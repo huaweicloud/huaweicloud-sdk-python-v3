@@ -37,8 +37,7 @@ class NetworkInfo:
         self._network_type = None
         self.discriminator = None
 
-        if network_type is not None:
-            self.network_type = network_type
+        self.network_type = network_type
 
     @property
     def network_type(self):

@@ -3070,69 +3070,6 @@ class BssAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_sku_inventories_async(self, request):
-        """查询硬件库存
-
-        功能描述：客户在购买硬件产品时，可以在客户自建平台上查询硬件产品的库存
-
-        :param ListSkuInventoriesRequest request
-        :return: ListSkuInventoriesResponse
-        """
-        return self.list_sku_inventories_with_http_info(request)
-
-    def list_sku_inventories_with_http_info(self, request):
-        """查询硬件库存
-
-        功能描述：客户在购买硬件产品时，可以在客户自建平台上查询硬件产品的库存
-
-        :param ListSkuInventoriesRequest request
-        :return: ListSkuInventoriesResponse
-        """
-
-        all_params = ['req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/inventories/sku-inventories/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListSkuInventoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def list_sub_customer_bill_detail_async(self, request):
         """查询客户消费记录
 

@@ -22,7 +22,7 @@ class BatchAddPeersToChannelRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'channel_peers': 'list[BatchAddPeersToChannelRequestBodyChannelPeers]'
+        'channel_peers': 'list[PeerChannelInfo]'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class BatchAddPeersToChannelRequestBody:
         加入某个通道的节点信息
 
         :return: The channel_peers of this BatchAddPeersToChannelRequestBody.
-        :rtype: list[BatchAddPeersToChannelRequestBodyChannelPeers]
+        :rtype: list[PeerChannelInfo]
         """
         return self._channel_peers
 
@@ -57,7 +57,7 @@ class BatchAddPeersToChannelRequestBody:
         加入某个通道的节点信息
 
         :param channel_peers: The channel_peers of this BatchAddPeersToChannelRequestBody.
-        :type: list[BatchAddPeersToChannelRequestBodyChannelPeers]
+        :type: list[PeerChannelInfo]
         """
         self._channel_peers = channel_peers
 

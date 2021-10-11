@@ -25,7 +25,7 @@ class CaseInfo:
         'case_id': 'int',
         'case_name': 'str',
         'case_type': 'int',
-        'contents': 'list[Contents]',
+        'content': 'list[Contents]',
         'for_loop_params': 'list[object]',
         'increase_setting': 'list[object]',
         'stages': 'list[object]',
@@ -37,7 +37,7 @@ class CaseInfo:
         'case_id': 'case_id',
         'case_name': 'case_name',
         'case_type': 'case_type',
-        'contents': 'contents',
+        'content': 'content',
         'for_loop_params': 'for_loop_params',
         'increase_setting': 'increase_setting',
         'stages': 'stages',
@@ -45,7 +45,7 @@ class CaseInfo:
         'temp_id': 'temp_id'
     }
 
-    def __init__(self, case_id=None, case_name=None, case_type=None, contents=None, for_loop_params=None, increase_setting=None, stages=None, status=None, temp_id=None):
+    def __init__(self, case_id=None, case_name=None, case_type=None, content=None, for_loop_params=None, increase_setting=None, stages=None, status=None, temp_id=None):
         """CaseInfo - a model defined in huaweicloud sdk"""
         
         
@@ -53,7 +53,7 @@ class CaseInfo:
         self._case_id = None
         self._case_name = None
         self._case_type = None
-        self._contents = None
+        self._content = None
         self._for_loop_params = None
         self._increase_setting = None
         self._stages = None
@@ -67,8 +67,8 @@ class CaseInfo:
             self.case_name = case_name
         if case_type is not None:
             self.case_type = case_type
-        if contents is not None:
-            self.contents = contents
+        if content is not None:
+            self.content = content
         if for_loop_params is not None:
             self.for_loop_params = for_loop_params
         if increase_setting is not None:
@@ -147,26 +147,26 @@ class CaseInfo:
         self._case_type = case_type
 
     @property
-    def contents(self):
-        """Gets the contents of this CaseInfo.
+    def content(self):
+        """Gets the content of this CaseInfo.
 
         contents
 
-        :return: The contents of this CaseInfo.
+        :return: The content of this CaseInfo.
         :rtype: list[Contents]
         """
-        return self._contents
+        return self._content
 
-    @contents.setter
-    def contents(self, contents):
-        """Sets the contents of this CaseInfo.
+    @content.setter
+    def content(self, content):
+        """Sets the content of this CaseInfo.
 
         contents
 
-        :param contents: The contents of this CaseInfo.
+        :param content: The content of this CaseInfo.
         :type: list[Contents]
         """
-        self._contents = contents
+        self._content = content
 
     @property
     def for_loop_params(self):

@@ -26,7 +26,9 @@ class CfgRequestBody:
         'cert_path': 'str',
         'channel_name': 'str',
         'peer_orgs': 'dict(str, list[str])',
-        'union_info': 'dict(str, list[str])'
+        'union_info': 'dict(str, list[str])',
+        'is_multi_chan': 'bool',
+        'channel_chaincode': 'dict(str, list[str])'
     }
 
     attribute_map = {
@@ -34,10 +36,12 @@ class CfgRequestBody:
         'cert_path': 'cert_path',
         'channel_name': 'channel_name',
         'peer_orgs': 'peer_orgs',
-        'union_info': 'union_info'
+        'union_info': 'union_info',
+        'is_multi_chan': 'is_multi_chan',
+        'channel_chaincode': 'channel_chaincode'
     }
 
-    def __init__(self, chaincode_name=None, cert_path=None, channel_name=None, peer_orgs=None, union_info=None):
+    def __init__(self, chaincode_name=None, cert_path=None, channel_name=None, peer_orgs=None, union_info=None, is_multi_chan=None, channel_chaincode=None):
         """CfgRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +51,8 @@ class CfgRequestBody:
         self._channel_name = None
         self._peer_orgs = None
         self._union_info = None
+        self._is_multi_chan = None
+        self._channel_chaincode = None
         self.discriminator = None
 
         self.chaincode_name = chaincode_name
@@ -55,12 +61,16 @@ class CfgRequestBody:
         self.peer_orgs = peer_orgs
         if union_info is not None:
             self.union_info = union_info
+        if is_multi_chan is not None:
+            self.is_multi_chan = is_multi_chan
+        if channel_chaincode is not None:
+            self.channel_chaincode = channel_chaincode
 
     @property
     def chaincode_name(self):
         """Gets the chaincode_name of this CfgRequestBody.
 
-        链代码名称
+        链代码名称，以小写字母开头，支持小写字母和数字，长度6-25位
 
         :return: The chaincode_name of this CfgRequestBody.
         :rtype: str
@@ -71,7 +81,7 @@ class CfgRequestBody:
     def chaincode_name(self, chaincode_name):
         """Sets the chaincode_name of this CfgRequestBody.
 
-        链代码名称
+        链代码名称，以小写字母开头，支持小写字母和数字，长度6-25位
 
         :param chaincode_name: The chaincode_name of this CfgRequestBody.
         :type: str
@@ -126,7 +136,7 @@ class CfgRequestBody:
     def peer_orgs(self):
         """Gets the peer_orgs of this CfgRequestBody.
 
-        key：组织名，value：该组织下需要下载的peer节点信息
+        key：组织名，value：该组织下需要下载的peer节点信息，peer节点请按照0,1,2的顺序升序填写
 
         :return: The peer_orgs of this CfgRequestBody.
         :rtype: dict(str, list[str])
@@ -137,7 +147,7 @@ class CfgRequestBody:
     def peer_orgs(self, peer_orgs):
         """Sets the peer_orgs of this CfgRequestBody.
 
-        key：组织名，value：该组织下需要下载的peer节点信息
+        key：组织名，value：该组织下需要下载的peer节点信息，peer节点请按照0,1,2的顺序升序填写
 
         :param peer_orgs: The peer_orgs of this CfgRequestBody.
         :type: dict(str, list[str])
@@ -165,6 +175,50 @@ class CfgRequestBody:
         :type: dict(str, list[str])
         """
         self._union_info = union_info
+
+    @property
+    def is_multi_chan(self):
+        """Gets the is_multi_chan of this CfgRequestBody.
+
+        是否是多通道请求，如此处设成true则必须传入channel_chaincode，chaincode_name和channel_name设为空即可
+
+        :return: The is_multi_chan of this CfgRequestBody.
+        :rtype: bool
+        """
+        return self._is_multi_chan
+
+    @is_multi_chan.setter
+    def is_multi_chan(self, is_multi_chan):
+        """Sets the is_multi_chan of this CfgRequestBody.
+
+        是否是多通道请求，如此处设成true则必须传入channel_chaincode，chaincode_name和channel_name设为空即可
+
+        :param is_multi_chan: The is_multi_chan of this CfgRequestBody.
+        :type: bool
+        """
+        self._is_multi_chan = is_multi_chan
+
+    @property
+    def channel_chaincode(self):
+        """Gets the channel_chaincode of this CfgRequestBody.
+
+        key：通道名称，value：该通道对应的链代码数组
+
+        :return: The channel_chaincode of this CfgRequestBody.
+        :rtype: dict(str, list[str])
+        """
+        return self._channel_chaincode
+
+    @channel_chaincode.setter
+    def channel_chaincode(self, channel_chaincode):
+        """Sets the channel_chaincode of this CfgRequestBody.
+
+        key：通道名称，value：该通道对应的链代码数组
+
+        :param channel_chaincode: The channel_chaincode of this CfgRequestBody.
+        :type: dict(str, list[str])
+        """
+        self._channel_chaincode = channel_chaincode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

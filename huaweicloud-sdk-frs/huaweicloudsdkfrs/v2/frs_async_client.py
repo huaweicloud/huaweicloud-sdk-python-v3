@@ -150,13 +150,15 @@ class FrsAsyncClient(Client):
 
         form_params = {}
         if 'image_file' in local_var_params:
-            form_params['image_file'] =  local_var_params['image_file']
+            form_params['image_file'] = local_var_params['image_file']
         if 'external_image_id' in local_var_params:
-            form_params['external_image_id'] =  local_var_params['external_image_id']
+            form_params['external_image_id'] = local_var_params['external_image_id']
         if 'external_fields' in local_var_params:
-            form_params['external_fields'] =  local_var_params['external_fields']
+            form_params['external_fields'] = local_var_params['external_fields']
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
@@ -410,11 +412,13 @@ class FrsAsyncClient(Client):
 
         form_params = {}
         if 'image1_file' in local_var_params:
-            form_params['image1_file'] =  local_var_params['image1_file']
+            form_params['image1_file'] = local_var_params['image1_file']
         if 'image2_file' in local_var_params:
-            form_params['image2_file'] =  local_var_params['image2_file']
+            form_params['image2_file'] = local_var_params['image2_file']
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
@@ -857,11 +861,13 @@ class FrsAsyncClient(Client):
 
         form_params = {}
         if 'image_file' in local_var_params:
-            form_params['image_file'] =  local_var_params['image_file']
+            form_params['image_file'] = local_var_params['image_file']
         if 'attributes' in local_var_params:
-            form_params['attributes'] =  local_var_params['attributes']
+            form_params['attributes'] = local_var_params['attributes']
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
@@ -1048,13 +1054,15 @@ class FrsAsyncClient(Client):
 
         form_params = {}
         if 'video_file' in local_var_params:
-            form_params['video_file'] =  local_var_params['video_file']
+            form_params['video_file'] = local_var_params['video_file']
         if 'actions' in local_var_params:
-            form_params['actions'] =  local_var_params['actions']
+            form_params['actions'] = local_var_params['actions']
         if 'action_time' in local_var_params:
-            form_params['action_time'] =  local_var_params['action_time']
+            form_params['action_time'] = local_var_params['action_time']
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
@@ -1241,9 +1249,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
         if 'image_file' in local_var_params:
-            form_params['image_file'] =  local_var_params['image_file']
+            form_params['image_file'] = local_var_params['image_file']
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
@@ -1499,19 +1509,21 @@ class FrsAsyncClient(Client):
 
         form_params = {}
         if 'image_file' in local_var_params:
-            form_params['image_file'] =  local_var_params['image_file']
+            form_params['image_file'] = local_var_params['image_file']
         if 'top_n' in local_var_params:
-            form_params['top_n'] =  local_var_params['top_n']
+            form_params['top_n'] = local_var_params['top_n']
         if 'threshold' in local_var_params:
-            form_params['threshold'] =  local_var_params['threshold']
+            form_params['threshold'] = local_var_params['threshold']
         if 'sort' in local_var_params:
-            form_params['sort'] =  local_var_params['sort']
+            form_params['sort'] = local_var_params['sort']
         if 'filter' in local_var_params:
-            form_params['filter'] =  local_var_params['filter']
+            form_params['filter'] = local_var_params['filter']
         if 'return_fields' in local_var_params:
-            form_params['return_fields'] =  local_var_params['return_fields']
+            form_params['return_fields'] = local_var_params['return_fields']
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 

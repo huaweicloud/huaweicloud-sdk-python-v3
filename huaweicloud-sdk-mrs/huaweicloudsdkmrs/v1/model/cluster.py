@@ -33,6 +33,7 @@ class Cluster:
         'billing_type': 'str',
         'data_center': 'str',
         'vpc': 'str',
+        'vpc_id': 'str',
         'duration': 'str',
         'fee': 'str',
         'hadoop_version': 'str',
@@ -99,6 +100,7 @@ class Cluster:
         'billing_type': 'billingType',
         'data_center': 'dataCenter',
         'vpc': 'vpc',
+        'vpc_id': 'vpcId',
         'duration': 'duration',
         'fee': 'fee',
         'hadoop_version': 'hadoopVersion',
@@ -153,7 +155,7 @@ class Cluster:
         'task_node_groups': 'taskNodeGroups'
     }
 
-    def __init__(self, cluster_id=None, cluster_name=None, total_node_num=None, cluster_state=None, stage_desc=None, create_at=None, update_at=None, charging_start_time=None, billing_type=None, data_center=None, vpc=None, duration=None, fee=None, hadoop_version=None, component_list=None, external_ip=None, external_alternate_ip=None, internal_ip=None, deployment_id=None, remark=None, order_id=None, az_id=None, az_name=None, az_code=None, instance_id=None, vnc=None, tenant_id=None, volume_size=None, volume_type=None, subnet_id=None, subnet_name=None, security_groups_id=None, slave_security_groups_id=None, bootstrap_scripts=None, safe_mode=None, cluster_version=None, node_public_cert_name=None, master_node_ip=None, private_ip_first=None, error_info=None, tags=None, master_node_num=None, core_node_num=None, master_node_size=None, core_node_size=None, master_node_product_id=None, master_node_spec_id=None, core_node_product_id=None, core_node_spec_id=None, master_data_volume_type=None, master_data_volume_size=None, master_data_volume_count=None, core_data_volume_type=None, core_data_volume_size=None, core_data_volume_count=None, enterprise_project_id=None, is_mrs_manager_finish=None, cluster_type=None, log_collection=None, period_type=None, scale=None, node_groups=None, task_node_groups=None):
+    def __init__(self, cluster_id=None, cluster_name=None, total_node_num=None, cluster_state=None, stage_desc=None, create_at=None, update_at=None, charging_start_time=None, billing_type=None, data_center=None, vpc=None, vpc_id=None, duration=None, fee=None, hadoop_version=None, component_list=None, external_ip=None, external_alternate_ip=None, internal_ip=None, deployment_id=None, remark=None, order_id=None, az_id=None, az_name=None, az_code=None, instance_id=None, vnc=None, tenant_id=None, volume_size=None, volume_type=None, subnet_id=None, subnet_name=None, security_groups_id=None, slave_security_groups_id=None, bootstrap_scripts=None, safe_mode=None, cluster_version=None, node_public_cert_name=None, master_node_ip=None, private_ip_first=None, error_info=None, tags=None, master_node_num=None, core_node_num=None, master_node_size=None, core_node_size=None, master_node_product_id=None, master_node_spec_id=None, core_node_product_id=None, core_node_spec_id=None, master_data_volume_type=None, master_data_volume_size=None, master_data_volume_count=None, core_data_volume_type=None, core_data_volume_size=None, core_data_volume_count=None, enterprise_project_id=None, is_mrs_manager_finish=None, cluster_type=None, log_collection=None, period_type=None, scale=None, node_groups=None, task_node_groups=None):
         """Cluster - a model defined in huaweicloud sdk"""
         
         
@@ -169,6 +171,7 @@ class Cluster:
         self._billing_type = None
         self._data_center = None
         self._vpc = None
+        self._vpc_id = None
         self._duration = None
         self._fee = None
         self._hadoop_version = None
@@ -245,6 +248,8 @@ class Cluster:
             self.data_center = data_center
         if vpc is not None:
             self.vpc = vpc
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
         if duration is not None:
             self.duration = duration
         if fee is not None:
@@ -591,6 +596,28 @@ class Cluster:
         :type: str
         """
         self._vpc = vpc
+
+    @property
+    def vpc_id(self):
+        """Gets the vpc_id of this Cluster.
+
+        VPC ID。
+
+        :return: The vpc_id of this Cluster.
+        :rtype: str
+        """
+        return self._vpc_id
+
+    @vpc_id.setter
+    def vpc_id(self, vpc_id):
+        """Sets the vpc_id of this Cluster.
+
+        VPC ID。
+
+        :param vpc_id: The vpc_id of this Cluster.
+        :type: str
+        """
+        self._vpc_id = vpc_id
 
     @property
     def duration(self):

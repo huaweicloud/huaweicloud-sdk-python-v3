@@ -26,6 +26,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
         'throttle_id': 'str',
         'object_type': 'str',
         'app_name': 'str',
+        'user': 'str',
         'offset': 'int',
         'limit': 'int'
     }
@@ -35,11 +36,12 @@ class ListSpecialThrottlingConfigurationsV2Request:
         'throttle_id': 'throttle_id',
         'object_type': 'object_type',
         'app_name': 'app_name',
+        'user': 'user',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, instance_id=None, throttle_id=None, object_type=None, app_name=None, offset=None, limit=None):
+    def __init__(self, instance_id=None, throttle_id=None, object_type=None, app_name=None, user=None, offset=None, limit=None):
         """ListSpecialThrottlingConfigurationsV2Request - a model defined in huaweicloud sdk"""
         
         
@@ -48,6 +50,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
         self._throttle_id = None
         self._object_type = None
         self._app_name = None
+        self._user = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -58,6 +61,8 @@ class ListSpecialThrottlingConfigurationsV2Request:
             self.object_type = object_type
         if app_name is not None:
             self.app_name = app_name
+        if user is not None:
+            self.user = user
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -150,6 +155,28 @@ class ListSpecialThrottlingConfigurationsV2Request:
         :type: str
         """
         self._app_name = app_name
+
+    @property
+    def user(self):
+        """Gets the user of this ListSpecialThrottlingConfigurationsV2Request.
+
+        筛选的特殊用户名称
+
+        :return: The user of this ListSpecialThrottlingConfigurationsV2Request.
+        :rtype: str
+        """
+        return self._user
+
+    @user.setter
+    def user(self, user):
+        """Sets the user of this ListSpecialThrottlingConfigurationsV2Request.
+
+        筛选的特殊用户名称
+
+        :param user: The user of this ListSpecialThrottlingConfigurationsV2Request.
+        :type: str
+        """
+        self._user = user
 
     @property
     def offset(self):

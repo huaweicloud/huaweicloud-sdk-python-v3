@@ -24,7 +24,7 @@ class ListVariablesResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'variable_list': 'list[ListVariablesResqVariableList]'
+        'variable_list': 'list[VariableDetail]'
     }
 
     attribute_map = {
@@ -101,7 +101,7 @@ class ListVariablesResponse(SdkResponse):
         variable_list
 
         :return: The variable_list of this ListVariablesResponse.
-        :rtype: list[ListVariablesResqVariableList]
+        :rtype: list[VariableDetail]
         """
         return self._variable_list
 
@@ -112,7 +112,7 @@ class ListVariablesResponse(SdkResponse):
         variable_list
 
         :param variable_list: The variable_list of this ListVariablesResponse.
-        :type: list[ListVariablesResqVariableList]
+        :type: list[VariableDetail]
         """
         self._variable_list = variable_list
 

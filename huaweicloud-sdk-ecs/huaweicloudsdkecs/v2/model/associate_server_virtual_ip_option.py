@@ -45,7 +45,8 @@ class AssociateServerVirtualIpOption:
 
         self.subnet_id = subnet_id
         self.ip_address = ip_address
-        self.reverse_binding = reverse_binding
+        if reverse_binding is not None:
+            self.reverse_binding = reverse_binding
 
     @property
     def subnet_id(self):

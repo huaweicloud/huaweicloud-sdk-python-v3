@@ -24,7 +24,7 @@ class ShowTempSetResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'temps': 'list[object]'
+        'temps': 'list[TempDetailInfo]'
     }
 
     attribute_map = {
@@ -101,7 +101,7 @@ class ShowTempSetResponse(SdkResponse):
         temps
 
         :return: The temps of this ShowTempSetResponse.
-        :rtype: list[object]
+        :rtype: list[TempDetailInfo]
         """
         return self._temps
 
@@ -112,7 +112,7 @@ class ShowTempSetResponse(SdkResponse):
         temps
 
         :param temps: The temps of this ShowTempSetResponse.
-        :type: list[object]
+        :type: list[TempDetailInfo]
         """
         self._temps = temps
 

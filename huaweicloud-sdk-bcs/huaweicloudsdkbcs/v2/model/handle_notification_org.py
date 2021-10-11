@@ -37,8 +37,7 @@ class HandleNotificationOrg:
         self._name = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
 
     @property
     def name(self):

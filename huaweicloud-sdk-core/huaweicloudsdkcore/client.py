@@ -30,6 +30,7 @@ from logging.handlers import RotatingFileHandler
 
 import six
 from six.moves.urllib.parse import quote, urlparse
+from requests_toolbelt import MultipartEncoder
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, EnvCredentials
 from huaweicloudsdkcore.http.http_client import HttpClient
@@ -41,6 +42,7 @@ from huaweicloudsdkcore.sdk_request import SdkRequest
 from huaweicloudsdkcore.sdk_response import FutureSdkResponse
 from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils import http_utils, core_utils
+from huaweicloudsdkcore.http.formdata import FormFile
 
 
 class ClientBuilder(object):
@@ -267,12 +269,23 @@ class Client(object):
             body = ""
         return body
 
+    @classmethod
+    def _parse_formdata_body(cls, body, headers):
+        if not body:
+            return body, headers
+        body = http_utils.sanitize_for_serialization(body)
+        body = {k: v.convert_to_file_tuple() if isinstance(v, FormFile) else str(v) for k, v in body.items()}
+        multipart = MultipartEncoder(fields=body)
+        headers["Content-Type"] = multipart.content_type
+        return multipart, headers
+
     def _is_stream(self, response_type):
         if type(response_type) == str and hasattr(self.model_package, response_type):
             klass = getattr(self.model_package, response_type)
             if issubclass(klass, SdkStreamResponse):
                 return True
         return False
+
 
     @classmethod
     def post_process_params(cls, params):
@@ -297,7 +310,12 @@ class Client(object):
                                                 self._credentials.get_update_path_params())
         query_params = self._parse_query_params(collection_formats, query_params)
         post_params = self._parse_post_params(collection_formats, post_params)
-        body = self._parse_body(body, post_params)
+
+        if isinstance(header_params, dict) \
+                and header_params.setdefault("Content-Type", "").startswith("multipart/form-data"):
+            body, header_params = self._parse_formdata_body(body, header_params)
+        else:
+            body = self._parse_body(body, post_params)
 
         stream = self._is_stream(response_type)
         sdk_request = SdkRequest(method=method, schema=schema, host=host, resource_path=resource_path,
@@ -391,6 +409,8 @@ class Client(object):
 
             if klass in native_types_mapping:
                 klass = native_types_mapping[klass]
+            elif klass == FormFile.TYPE:
+                return FormFile(open(data, "rb"))
             else:
                 klass = getattr(self.model_package, klass)
 

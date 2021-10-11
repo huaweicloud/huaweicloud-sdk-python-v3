@@ -1,0 +1,32 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import CampusGoClient
+from huaweicloudsdkcampusgo.v2.campusgo_client import CampusGoClient
+from huaweicloudsdkcampusgo.v2.campusgo_async_client import CampusGoAsyncClient
+# import models into sdk package
+from huaweicloudsdkcampusgo.v2.model.create_response_body import CreateResponseBody
+from huaweicloudsdkcampusgo.v2.model.create_tasks_request import CreateTasksRequest
+from huaweicloudsdkcampusgo.v2.model.create_tasks_request_body import CreateTasksRequestBody
+from huaweicloudsdkcampusgo.v2.model.create_tasks_response import CreateTasksResponse
+from huaweicloudsdkcampusgo.v2.model.delete_task_request import DeleteTaskRequest
+from huaweicloudsdkcampusgo.v2.model.delete_task_response import DeleteTaskResponse
+from huaweicloudsdkcampusgo.v2.model.list_tasks_details_request import ListTasksDetailsRequest
+from huaweicloudsdkcampusgo.v2.model.list_tasks_details_response import ListTasksDetailsResponse
+from huaweicloudsdkcampusgo.v2.model.show_task_request import ShowTaskRequest
+from huaweicloudsdkcampusgo.v2.model.show_task_response import ShowTaskResponse
+from huaweicloudsdkcampusgo.v2.model.task_details import TaskDetails
+from huaweicloudsdkcampusgo.v2.model.task_details_error import TaskDetailsError
+from huaweicloudsdkcampusgo.v2.model.task_details_service_title import TaskDetailsServiceTitle
+from huaweicloudsdkcampusgo.v2.model.task_input import TaskInput
+from huaweicloudsdkcampusgo.v2.model.task_input_data import TaskInputData
+from huaweicloudsdkcampusgo.v2.model.task_input_vcn import TaskInputVcn
+from huaweicloudsdkcampusgo.v2.model.task_output import TaskOutput
+from huaweicloudsdkcampusgo.v2.model.task_output_dis import TaskOutputDis
+from huaweicloudsdkcampusgo.v2.model.task_output_for_display import TaskOutputForDisplay
+from huaweicloudsdkcampusgo.v2.model.task_output_localpath import TaskOutputLocalpath
+from huaweicloudsdkcampusgo.v2.model.task_output_obs import TaskOutputObs
+from huaweicloudsdkcampusgo.v2.model.task_output_webhook import TaskOutputWebhook
+from huaweicloudsdkcampusgo.v2.model.task_service_config import TaskServiceConfig
+

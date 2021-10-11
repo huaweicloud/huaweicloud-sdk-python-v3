@@ -37,7 +37,7 @@ class ReqParamBase:
         'max_size': 'int',
         'regular': 'str',
         'json_schema': 'str',
-        'pass_through': 'str'
+        'pass_through': 'int'
     }
 
     attribute_map = {
@@ -449,7 +449,7 @@ class ReqParamBase:
         是否透传 - 1：是 - 2：否
 
         :return: The pass_through of this ReqParamBase.
-        :rtype: str
+        :rtype: int
         """
         return self._pass_through
 
@@ -460,7 +460,7 @@ class ReqParamBase:
         是否透传 - 1：是 - 2：否
 
         :param pass_through: The pass_through of this ReqParamBase.
-        :type: str
+        :type: int
         """
         self._pass_through = pass_through
 
