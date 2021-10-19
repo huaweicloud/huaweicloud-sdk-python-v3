@@ -22,7 +22,7 @@ class NeutronListFloatingIpsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'limit': 'str',
+        'limit': 'int',
         'marker': 'str',
         'page_reverse': 'bool',
         'id': 'str',
@@ -92,7 +92,7 @@ class NeutronListFloatingIpsRequest:
         每页显示的条目数量。
 
         :return: The limit of this NeutronListFloatingIpsRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._limit
 
@@ -103,7 +103,7 @@ class NeutronListFloatingIpsRequest:
         每页显示的条目数量。
 
         :param limit: The limit of this NeutronListFloatingIpsRequest.
-        :type: str
+        :type: int
         """
         self._limit = limit
 

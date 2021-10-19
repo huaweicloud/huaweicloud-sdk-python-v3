@@ -62,7 +62,7 @@ class ShowInstanceResponse(SdkResponse):
         'storage_spec_code': 'str',
         'ipv6_enable': 'bool',
         'ipv6_connect_addresses': 'list[str]',
-        'tags': 'list[ListInstancesRespTags]'
+        'tags': 'list[TagEntity]'
     }
 
     attribute_map = {
@@ -1127,7 +1127,7 @@ class ShowInstanceResponse(SdkResponse):
         标签列表。
 
         :return: The tags of this ShowInstanceResponse.
-        :rtype: list[ListInstancesRespTags]
+        :rtype: list[TagEntity]
         """
         return self._tags
 
@@ -1138,7 +1138,7 @@ class ShowInstanceResponse(SdkResponse):
         标签列表。
 
         :param tags: The tags of this ShowInstanceResponse.
-        :type: list[ListInstancesRespTags]
+        :type: list[TagEntity]
         """
         self._tags = tags
 

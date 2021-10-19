@@ -29,7 +29,8 @@ class ListPublicipsRequest:
         'port_id': 'list[str]',
         'public_ip_address': 'list[str]',
         'private_ip_address': 'list[str]',
-        'id': 'list[str]'
+        'id': 'list[str]',
+        'allow_share_bandwidth_type_any': 'list[str]'
     }
 
     attribute_map = {
@@ -40,10 +41,11 @@ class ListPublicipsRequest:
         'port_id': 'port_id',
         'public_ip_address': 'public_ip_address',
         'private_ip_address': 'private_ip_address',
-        'id': 'id'
+        'id': 'id',
+        'allow_share_bandwidth_type_any': 'allow_share_bandwidth_type_any'
     }
 
-    def __init__(self, marker=None, limit=None, ip_version=None, enterprise_project_id=None, port_id=None, public_ip_address=None, private_ip_address=None, id=None):
+    def __init__(self, marker=None, limit=None, ip_version=None, enterprise_project_id=None, port_id=None, public_ip_address=None, private_ip_address=None, id=None, allow_share_bandwidth_type_any=None):
         """ListPublicipsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -56,6 +58,7 @@ class ListPublicipsRequest:
         self._public_ip_address = None
         self._private_ip_address = None
         self._id = None
+        self._allow_share_bandwidth_type_any = None
         self.discriminator = None
 
         if marker is not None:
@@ -74,6 +77,8 @@ class ListPublicipsRequest:
             self.private_ip_address = private_ip_address
         if id is not None:
             self.id = id
+        if allow_share_bandwidth_type_any is not None:
+            self.allow_share_bandwidth_type_any = allow_share_bandwidth_type_any
 
     @property
     def marker(self):
@@ -250,6 +255,28 @@ class ListPublicipsRequest:
         :type: list[str]
         """
         self._id = id
+
+    @property
+    def allow_share_bandwidth_type_any(self):
+        """Gets the allow_share_bandwidth_type_any of this ListPublicipsRequest.
+
+        共享带宽类型，根据任一共享带宽类型过滤EIP列表。 可以指定多个带宽类型，不同的带宽类型间用逗号分隔。
+
+        :return: The allow_share_bandwidth_type_any of this ListPublicipsRequest.
+        :rtype: list[str]
+        """
+        return self._allow_share_bandwidth_type_any
+
+    @allow_share_bandwidth_type_any.setter
+    def allow_share_bandwidth_type_any(self, allow_share_bandwidth_type_any):
+        """Sets the allow_share_bandwidth_type_any of this ListPublicipsRequest.
+
+        共享带宽类型，根据任一共享带宽类型过滤EIP列表。 可以指定多个带宽类型，不同的带宽类型间用逗号分隔。
+
+        :param allow_share_bandwidth_type_any: The allow_share_bandwidth_type_any of this ListPublicipsRequest.
+        :type: list[str]
+        """
+        self._allow_share_bandwidth_type_any = allow_share_bandwidth_type_any
 
     def to_dict(self):
         """Returns the model properties as a dict"""

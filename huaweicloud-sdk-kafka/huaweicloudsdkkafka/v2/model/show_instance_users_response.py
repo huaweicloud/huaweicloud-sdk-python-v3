@@ -22,7 +22,7 @@ class ShowInstanceUsersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'users': 'list[ShowInstanceUsersRespUsers]'
+        'users': 'list[ShowInstanceUsersEntity]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowInstanceUsersResponse(SdkResponse):
         用户列表。
 
         :return: The users of this ShowInstanceUsersResponse.
-        :rtype: list[ShowInstanceUsersRespUsers]
+        :rtype: list[ShowInstanceUsersEntity]
         """
         return self._users
 
@@ -58,7 +58,7 @@ class ShowInstanceUsersResponse(SdkResponse):
         用户列表。
 
         :param users: The users of this ShowInstanceUsersResponse.
-        :type: list[ShowInstanceUsersRespUsers]
+        :type: list[ShowInstanceUsersEntity]
         """
         self._users = users
 

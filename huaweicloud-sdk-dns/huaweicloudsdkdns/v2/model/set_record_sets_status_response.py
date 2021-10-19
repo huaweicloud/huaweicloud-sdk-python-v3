@@ -36,7 +36,6 @@ class SetRecordSetsStatusResponse(SdkResponse):
         'default': 'bool',
         'project_id': 'str',
         'links': 'PageLink',
-        'tags': 'list[Tag]',
         'line': 'str',
         'weight': 'int',
         'health_check_id': 'str',
@@ -58,14 +57,13 @@ class SetRecordSetsStatusResponse(SdkResponse):
         'default': 'default',
         'project_id': 'project_id',
         'links': 'links',
-        'tags': 'tags',
         'line': 'line',
         'weight': 'weight',
         'health_check_id': 'health_check_id',
         'alias_target': 'alias_target'
     }
 
-    def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, tags=None, line=None, weight=None, health_check_id=None, alias_target=None):
+    def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, line=None, weight=None, health_check_id=None, alias_target=None):
         """SetRecordSetsStatusResponse - a model defined in huaweicloud sdk"""
         
         super(SetRecordSetsStatusResponse, self).__init__()
@@ -84,7 +82,6 @@ class SetRecordSetsStatusResponse(SdkResponse):
         self._default = None
         self._project_id = None
         self._links = None
-        self._tags = None
         self._line = None
         self._weight = None
         self._health_check_id = None
@@ -119,8 +116,6 @@ class SetRecordSetsStatusResponse(SdkResponse):
             self.project_id = project_id
         if links is not None:
             self.links = links
-        if tags is not None:
-            self.tags = tags
         if line is not None:
             self.line = line
         if weight is not None:
@@ -435,28 +430,6 @@ class SetRecordSetsStatusResponse(SdkResponse):
         :type: PageLink
         """
         self._links = links
-
-    @property
-    def tags(self):
-        """Gets the tags of this SetRecordSetsStatusResponse.
-
-        资源标签。
-
-        :return: The tags of this SetRecordSetsStatusResponse.
-        :rtype: list[Tag]
-        """
-        return self._tags
-
-    @tags.setter
-    def tags(self, tags):
-        """Sets the tags of this SetRecordSetsStatusResponse.
-
-        资源标签。
-
-        :param tags: The tags of this SetRecordSetsStatusResponse.
-        :type: list[Tag]
-        """
-        self._tags = tags
 
     @property
     def line(self):

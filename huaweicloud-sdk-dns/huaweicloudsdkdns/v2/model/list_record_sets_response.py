@@ -23,7 +23,7 @@ class ListRecordSetsResponse(SdkResponse):
 
     openapi_types = {
         'links': 'PageLink',
-        'recordsets': 'list[ListRecordSets]',
+        'recordsets': 'list[ListRecordSetsWithTags]',
         'metadata': 'Metedata'
     }
 
@@ -76,7 +76,7 @@ class ListRecordSetsResponse(SdkResponse):
 
 
         :return: The recordsets of this ListRecordSetsResponse.
-        :rtype: list[ListRecordSets]
+        :rtype: list[ListRecordSetsWithTags]
         """
         return self._recordsets
 
@@ -86,7 +86,7 @@ class ListRecordSetsResponse(SdkResponse):
 
 
         :param recordsets: The recordsets of this ListRecordSetsResponse.
-        :type: list[ListRecordSets]
+        :type: list[ListRecordSetsWithTags]
         """
         self._recordsets = recordsets
 

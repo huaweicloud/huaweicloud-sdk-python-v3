@@ -22,7 +22,7 @@ class ShowPartitionMessageResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'message': 'list[ShowPartitionMessageRespMessage]'
+        'message': 'list[ShowPartitionMessageEntity]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowPartitionMessageResponse(SdkResponse):
         消息列表。
 
         :return: The message of this ShowPartitionMessageResponse.
-        :rtype: list[ShowPartitionMessageRespMessage]
+        :rtype: list[ShowPartitionMessageEntity]
         """
         return self._message
 
@@ -58,7 +58,7 @@ class ShowPartitionMessageResponse(SdkResponse):
         消息列表。
 
         :param message: The message of this ShowPartitionMessageResponse.
-        :type: list[ShowPartitionMessageRespMessage]
+        :type: list[ShowPartitionMessageEntity]
         """
         self._message = message
 

@@ -44,7 +44,7 @@ class CreatePartitionReq:
     def partition(self):
         """Gets the partition of this CreatePartitionReq.
 
-        期望调整分区后的数量，必须大于当前分区数量，小于等于50。
+        期望调整分区后的数量，必须大于当前分区数量，小于等于100。
 
         :return: The partition of this CreatePartitionReq.
         :rtype: int
@@ -55,7 +55,7 @@ class CreatePartitionReq:
     def partition(self, partition):
         """Sets the partition of this CreatePartitionReq.
 
-        期望调整分区后的数量，必须大于当前分区数量，小于等于50。
+        期望调整分区后的数量，必须大于当前分区数量，小于等于100。
 
         :param partition: The partition of this CreatePartitionReq.
         :type: int

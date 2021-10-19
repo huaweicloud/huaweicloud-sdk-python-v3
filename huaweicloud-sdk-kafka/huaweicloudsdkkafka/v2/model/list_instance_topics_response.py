@@ -26,7 +26,7 @@ class ListInstanceTopicsResponse(SdkResponse):
         'size': 'int',
         'remain_partitions': 'int',
         'max_partitions': 'int',
-        'topics': 'list[ListInstanceTopicsRespTopics]'
+        'topics': 'list[TopicEntity]'
     }
 
     attribute_map = {
@@ -155,7 +155,7 @@ class ListInstanceTopicsResponse(SdkResponse):
         topic列表。
 
         :return: The topics of this ListInstanceTopicsResponse.
-        :rtype: list[ListInstanceTopicsRespTopics]
+        :rtype: list[TopicEntity]
         """
         return self._topics
 
@@ -166,7 +166,7 @@ class ListInstanceTopicsResponse(SdkResponse):
         topic列表。
 
         :param topics: The topics of this ListInstanceTopicsResponse.
-        :type: list[ListInstanceTopicsRespTopics]
+        :type: list[TopicEntity]
         """
         self._topics = topics
 

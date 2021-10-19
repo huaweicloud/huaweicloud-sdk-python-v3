@@ -22,7 +22,7 @@ class ShowKafkaTopicPartitionDiskusageResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'broker_list': 'list[ShowKafkaTopicPartitionDiskusageRespBrokerList]'
+        'broker_list': 'list[DiskusageEntity]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowKafkaTopicPartitionDiskusageResponse(SdkResponse):
         Broker列表。
 
         :return: The broker_list of this ShowKafkaTopicPartitionDiskusageResponse.
-        :rtype: list[ShowKafkaTopicPartitionDiskusageRespBrokerList]
+        :rtype: list[DiskusageEntity]
         """
         return self._broker_list
 
@@ -58,7 +58,7 @@ class ShowKafkaTopicPartitionDiskusageResponse(SdkResponse):
         Broker列表。
 
         :param broker_list: The broker_list of this ShowKafkaTopicPartitionDiskusageResponse.
-        :type: list[ShowKafkaTopicPartitionDiskusageRespBrokerList]
+        :type: list[DiskusageEntity]
         """
         self._broker_list = broker_list
 

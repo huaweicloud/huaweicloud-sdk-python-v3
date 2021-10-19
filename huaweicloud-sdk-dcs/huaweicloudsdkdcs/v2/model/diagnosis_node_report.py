@@ -29,7 +29,7 @@ class DiagnosisNodeReport:
         'failed_sum': 'int',
         'role': 'str',
         'diagnosis_dimension_list': 'list[DiagnosisDimension]',
-        'command_time_taken_list': 'object'
+        'command_time_taken_list': 'CommandTimeTakenList'
     }
 
     attribute_map = {
@@ -225,10 +225,9 @@ class DiagnosisNodeReport:
     def command_time_taken_list(self):
         """Gets the command_time_taken_list of this DiagnosisNodeReport.
 
-        命令耗时统计列表
 
         :return: The command_time_taken_list of this DiagnosisNodeReport.
-        :rtype: object
+        :rtype: CommandTimeTakenList
         """
         return self._command_time_taken_list
 
@@ -236,10 +235,9 @@ class DiagnosisNodeReport:
     def command_time_taken_list(self, command_time_taken_list):
         """Sets the command_time_taken_list of this DiagnosisNodeReport.
 
-        命令耗时统计列表
 
         :param command_time_taken_list: The command_time_taken_list of this DiagnosisNodeReport.
-        :type: object
+        :type: CommandTimeTakenList
         """
         self._command_time_taken_list = command_time_taken_list
 

@@ -122,7 +122,7 @@ class BatchCreateBandwidthOption:
     def public_border_group(self):
         """Gets the public_border_group of this BatchCreateBandwidthOption.
 
-        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域需传此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：共享带宽只能插入与该字段相同的publicip
+        功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：共享带宽只能插入与该字段相同的publicip
 
         :return: The public_border_group of this BatchCreateBandwidthOption.
         :rtype: str
@@ -133,7 +133,7 @@ class BatchCreateBandwidthOption:
     def public_border_group(self, public_border_group):
         """Sets the public_border_group of this BatchCreateBandwidthOption.
 
-        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域需传此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：共享带宽只能插入与该字段相同的publicip
+        功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：共享带宽只能插入与该字段相同的publicip
 
         :param public_border_group: The public_border_group of this BatchCreateBandwidthOption.
         :type: str

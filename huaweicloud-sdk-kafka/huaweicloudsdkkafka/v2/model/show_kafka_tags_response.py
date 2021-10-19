@@ -22,7 +22,7 @@ class ShowKafkaTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[CreatePostPaidInstanceReqTags]'
+        'tags': 'list[TagEntity]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowKafkaTagsResponse(SdkResponse):
         标签列表
 
         :return: The tags of this ShowKafkaTagsResponse.
-        :rtype: list[CreatePostPaidInstanceReqTags]
+        :rtype: list[TagEntity]
         """
         return self._tags
 
@@ -58,7 +58,7 @@ class ShowKafkaTagsResponse(SdkResponse):
         标签列表
 
         :param tags: The tags of this ShowKafkaTagsResponse.
-        :type: list[CreatePostPaidInstanceReqTags]
+        :type: list[TagEntity]
         """
         self._tags = tags
 

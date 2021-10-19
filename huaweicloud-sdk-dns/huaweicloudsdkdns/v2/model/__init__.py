@@ -69,6 +69,7 @@ from huaweicloudsdkdns.v2.model.list_record_sets_request import ListRecordSetsRe
 from huaweicloudsdkdns.v2.model.list_record_sets_response import ListRecordSetsResponse
 from huaweicloudsdkdns.v2.model.list_record_sets_with_line_request import ListRecordSetsWithLineRequest
 from huaweicloudsdkdns.v2.model.list_record_sets_with_line_response import ListRecordSetsWithLineResponse
+from huaweicloudsdkdns.v2.model.list_record_sets_with_tags import ListRecordSetsWithTags
 from huaweicloudsdkdns.v2.model.list_tag_req import ListTagReq
 from huaweicloudsdkdns.v2.model.list_tag_request import ListTagRequest
 from huaweicloudsdkdns.v2.model.list_tag_response import ListTagResponse
@@ -82,7 +83,7 @@ from huaweicloudsdkdns.v2.model.page_link import PageLink
 from huaweicloudsdkdns.v2.model.private_name_server import PrivateNameServer
 from huaweicloudsdkdns.v2.model.private_zone_resp import PrivateZoneResp
 from huaweicloudsdkdns.v2.model.public_zone_resp import PublicZoneResp
-from huaweicloudsdkdns.v2.model.query_record_set_with_line_resp import QueryRecordSetWithLineResp
+from huaweicloudsdkdns.v2.model.query_record_set_with_line_and_tags_resp import QueryRecordSetWithLineAndTagsResp
 from huaweicloudsdkdns.v2.model.resource_item import ResourceItem
 from huaweicloudsdkdns.v2.model.restore_ptr_record_request import RestorePtrRecordRequest
 from huaweicloudsdkdns.v2.model.restore_ptr_record_response import RestorePtrRecordResponse

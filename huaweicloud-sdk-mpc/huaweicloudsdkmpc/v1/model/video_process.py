@@ -24,16 +24,20 @@ class VideoProcess:
     openapi_types = {
         'rotate': 'int',
         'adaptation': 'str',
-        'upsample': 'int'
+        'upsample': 'int',
+        'hls_init_count': 'int',
+        'hls_init_interval': 'int'
     }
 
     attribute_map = {
         'rotate': 'rotate',
         'adaptation': 'adaptation',
-        'upsample': 'upsample'
+        'upsample': 'upsample',
+        'hls_init_count': 'hls_init_count',
+        'hls_init_interval': 'hls_init_interval'
     }
 
-    def __init__(self, rotate=None, adaptation=None, upsample=None):
+    def __init__(self, rotate=None, adaptation=None, upsample=None, hls_init_count=None, hls_init_interval=None):
         """VideoProcess - a model defined in huaweicloud sdk"""
         
         
@@ -41,6 +45,8 @@ class VideoProcess:
         self._rotate = None
         self._adaptation = None
         self._upsample = None
+        self._hls_init_count = None
+        self._hls_init_interval = None
         self.discriminator = None
 
         if rotate is not None:
@@ -49,6 +55,10 @@ class VideoProcess:
             self.adaptation = adaptation
         if upsample is not None:
             self.upsample = upsample
+        if hls_init_count is not None:
+            self.hls_init_count = hls_init_count
+        if hls_init_interval is not None:
+            self.hls_init_interval = hls_init_interval
 
     @property
     def rotate(self):
@@ -115,6 +125,50 @@ class VideoProcess:
         :type: int
         """
         self._upsample = upsample
+
+    @property
+    def hls_init_count(self):
+        """Gets the hls_init_count of this VideoProcess.
+
+        需要单独设置时长的HLS起始分片数量。与hls_init_interval配合使用，设置前面hls_init_count个HLS分片时长。 为0表示不单独配置时长。 
+
+        :return: The hls_init_count of this VideoProcess.
+        :rtype: int
+        """
+        return self._hls_init_count
+
+    @hls_init_count.setter
+    def hls_init_count(self, hls_init_count):
+        """Sets the hls_init_count of this VideoProcess.
+
+        需要单独设置时长的HLS起始分片数量。与hls_init_interval配合使用，设置前面hls_init_count个HLS分片时长。 为0表示不单独配置时长。 
+
+        :param hls_init_count: The hls_init_count of this VideoProcess.
+        :type: int
+        """
+        self._hls_init_count = hls_init_count
+
+    @property
+    def hls_init_interval(self):
+        """Gets the hls_init_interval of this VideoProcess.
+
+        表示前面hls_init_count个HLS分片的时长。hls_init_count不为0时，该字段才起作用。 
+
+        :return: The hls_init_interval of this VideoProcess.
+        :rtype: int
+        """
+        return self._hls_init_interval
+
+    @hls_init_interval.setter
+    def hls_init_interval(self, hls_init_interval):
+        """Sets the hls_init_interval of this VideoProcess.
+
+        表示前面hls_init_count个HLS分片的时长。hls_init_count不为0时，该字段才起作用。 
+
+        :param hls_init_interval: The hls_init_interval of this VideoProcess.
+        :type: int
+        """
+        self._hls_init_interval = hls_init_interval
 
     def to_dict(self):
         """Returns the model properties as a dict"""

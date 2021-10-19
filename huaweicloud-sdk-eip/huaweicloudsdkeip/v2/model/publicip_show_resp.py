@@ -38,7 +38,8 @@ class PublicipShowResp:
         'type': 'str',
         'public_ipv6_address': 'str',
         'ip_version': 'int',
-        'public_border_group': 'str'
+        'public_border_group': 'str',
+        'allow_share_bandwidth_types': 'list[str]'
     }
 
     attribute_map = {
@@ -58,10 +59,11 @@ class PublicipShowResp:
         'type': 'type',
         'public_ipv6_address': 'public_ipv6_address',
         'ip_version': 'ip_version',
-        'public_border_group': 'public_border_group'
+        'public_border_group': 'public_border_group',
+        'allow_share_bandwidth_types': 'allow_share_bandwidth_types'
     }
 
-    def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, public_border_group=None):
+    def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, public_border_group=None, allow_share_bandwidth_types=None):
         """PublicipShowResp - a model defined in huaweicloud sdk"""
         
         
@@ -83,6 +85,7 @@ class PublicipShowResp:
         self._public_ipv6_address = None
         self._ip_version = None
         self._public_border_group = None
+        self._allow_share_bandwidth_types = None
         self.discriminator = None
 
         if bandwidth_id is not None:
@@ -119,6 +122,8 @@ class PublicipShowResp:
             self.ip_version = ip_version
         if public_border_group is not None:
             self.public_border_group = public_border_group
+        if allow_share_bandwidth_types is not None:
+            self.allow_share_bandwidth_types = allow_share_bandwidth_types
 
     @property
     def bandwidth_id(self):
@@ -474,7 +479,7 @@ class PublicipShowResp:
     def public_border_group(self):
         """Gets the public_border_group of this PublicipShowResp.
 
-        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域才会返回此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：publicip只能绑定该字段相同的资源
+        功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：publicip只能绑定该字段相同的资源
 
         :return: The public_border_group of this PublicipShowResp.
         :rtype: str
@@ -485,12 +490,34 @@ class PublicipShowResp:
     def public_border_group(self, public_border_group):
         """Sets the public_border_group of this PublicipShowResp.
 
-        功能说明：表示中心站点资源或者边缘站点资源，对接了边缘站点的区域才会返回此字段 取值范围： center、边缘站点名称 上线区域：华北-乌兰察布一，华南-广州 约束：publicip只能绑定该字段相同的资源
+        功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：publicip只能绑定该字段相同的资源
 
         :param public_border_group: The public_border_group of this PublicipShowResp.
         :type: str
         """
         self._public_border_group = public_border_group
+
+    @property
+    def allow_share_bandwidth_types(self):
+        """Gets the allow_share_bandwidth_types of this PublicipShowResp.
+
+        功能说明：表示此publicip可以加入的共享带宽类型列表，如果为空列表，则表示该           publicip不能加入任何共享带宽 约束：publicip只能加入到有该带宽类型的共享带宽中
+
+        :return: The allow_share_bandwidth_types of this PublicipShowResp.
+        :rtype: list[str]
+        """
+        return self._allow_share_bandwidth_types
+
+    @allow_share_bandwidth_types.setter
+    def allow_share_bandwidth_types(self, allow_share_bandwidth_types):
+        """Sets the allow_share_bandwidth_types of this PublicipShowResp.
+
+        功能说明：表示此publicip可以加入的共享带宽类型列表，如果为空列表，则表示该           publicip不能加入任何共享带宽 约束：publicip只能加入到有该带宽类型的共享带宽中
+
+        :param allow_share_bandwidth_types: The allow_share_bandwidth_types of this PublicipShowResp.
+        :type: list[str]
+        """
+        self._allow_share_bandwidth_types = allow_share_bandwidth_types
 
     def to_dict(self):
         """Returns the model properties as a dict"""

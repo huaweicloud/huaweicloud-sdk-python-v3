@@ -71,7 +71,7 @@ class CreateInstanceUserReq:
     def user_passwd(self):
         """Gets the user_passwd of this CreateInstanceUserReq.
 
-        用户密码。 密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
+        用户密码。  密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
 
         :return: The user_passwd of this CreateInstanceUserReq.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateInstanceUserReq:
     def user_passwd(self, user_passwd):
         """Sets the user_passwd of this CreateInstanceUserReq.
 
-        用户密码。 密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
+        用户密码。  密码不能和用户名相同。 复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的两种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）
 
         :param user_passwd: The user_passwd of this CreateInstanceUserReq.
         :type: str

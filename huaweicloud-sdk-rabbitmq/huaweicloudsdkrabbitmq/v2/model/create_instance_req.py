@@ -41,7 +41,7 @@ class CreateInstanceReq:
         'ssl_enable': 'bool',
         'storage_spec_code': 'str',
         'enterprise_project_id': 'str',
-        'tags': 'list[CreateInstanceReqTags]'
+        'tags': 'list[TagEntity]'
     }
 
     attribute_map = {
@@ -548,7 +548,7 @@ class CreateInstanceReq:
         标签列表。
 
         :return: The tags of this CreateInstanceReq.
-        :rtype: list[CreateInstanceReqTags]
+        :rtype: list[TagEntity]
         """
         return self._tags
 
@@ -559,7 +559,7 @@ class CreateInstanceReq:
         标签列表。
 
         :param tags: The tags of this CreateInstanceReq.
-        :type: list[CreateInstanceReqTags]
+        :type: list[TagEntity]
         """
         self._tags = tags
 

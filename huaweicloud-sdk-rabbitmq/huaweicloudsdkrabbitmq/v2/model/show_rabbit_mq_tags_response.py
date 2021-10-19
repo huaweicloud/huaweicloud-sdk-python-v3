@@ -22,7 +22,7 @@ class ShowRabbitMqTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[CreateInstanceReqTags]'
+        'tags': 'list[TagEntity]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowRabbitMqTagsResponse(SdkResponse):
         标签列表
 
         :return: The tags of this ShowRabbitMqTagsResponse.
-        :rtype: list[CreateInstanceReqTags]
+        :rtype: list[TagEntity]
         """
         return self._tags
 
@@ -58,7 +58,7 @@ class ShowRabbitMqTagsResponse(SdkResponse):
         标签列表
 
         :param tags: The tags of this ShowRabbitMqTagsResponse.
-        :type: list[CreateInstanceReqTags]
+        :type: list[TagEntity]
         """
         self._tags = tags
 

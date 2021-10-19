@@ -23,25 +23,30 @@ class ShowSinkTaskDetailRequest:
 
     openapi_types = {
         'connector_id': 'str',
-        'task_id': 'str'
+        'task_id': 'str',
+        'topic_info': 'str'
     }
 
     attribute_map = {
         'connector_id': 'connector_id',
-        'task_id': 'task_id'
+        'task_id': 'task_id',
+        'topic_info': 'topic-info'
     }
 
-    def __init__(self, connector_id=None, task_id=None):
+    def __init__(self, connector_id=None, task_id=None, topic_info=None):
         """ShowSinkTaskDetailRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._connector_id = None
         self._task_id = None
+        self._topic_info = None
         self.discriminator = None
 
         self.connector_id = connector_id
         self.task_id = task_id
+        if topic_info is not None:
+            self.topic_info = topic_info
 
     @property
     def connector_id(self):
@@ -86,6 +91,28 @@ class ShowSinkTaskDetailRequest:
         :type: str
         """
         self._task_id = task_id
+
+    @property
+    def topic_info(self):
+        """Gets the topic_info of this ShowSinkTaskDetailRequest.
+
+        是否包含topic信息。默认是false。
+
+        :return: The topic_info of this ShowSinkTaskDetailRequest.
+        :rtype: str
+        """
+        return self._topic_info
+
+    @topic_info.setter
+    def topic_info(self, topic_info):
+        """Sets the topic_info of this ShowSinkTaskDetailRequest.
+
+        是否包含topic信息。默认是false。
+
+        :param topic_info: The topic_info of this ShowSinkTaskDetailRequest.
+        :type: str
+        """
+        self._topic_info = topic_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

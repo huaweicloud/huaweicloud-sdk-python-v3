@@ -63,7 +63,7 @@ class UpdateInstanceTopicReqTopics:
     def id(self):
         """Gets the id of this UpdateInstanceTopicReqTopics.
 
-        topic名称
+        topic名称，不支持修改。
 
         :return: The id of this UpdateInstanceTopicReqTopics.
         :rtype: str
@@ -74,7 +74,7 @@ class UpdateInstanceTopicReqTopics:
     def id(self, id):
         """Sets the id of this UpdateInstanceTopicReqTopics.
 
-        topic名称
+        topic名称，不支持修改。
 
         :param id: The id of this UpdateInstanceTopicReqTopics.
         :type: str

@@ -1221,7 +1221,7 @@ class EipAsyncClient(Client):
         :return: ListPublicipsResponse
         """
 
-        all_params = ['marker', 'limit', 'ip_version', 'enterprise_project_id', 'port_id', 'public_ip_address', 'private_ip_address', 'id']
+        all_params = ['marker', 'limit', 'ip_version', 'enterprise_project_id', 'port_id', 'public_ip_address', 'private_ip_address', 'id', 'allow_share_bandwidth_type_any']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1252,6 +1252,9 @@ class EipAsyncClient(Client):
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
             collection_formats['id'] = 'multi'
+        if 'allow_share_bandwidth_type_any' in local_var_params:
+            query_params.append(('allow_share_bandwidth_type_any', local_var_params['allow_share_bandwidth_type_any']))
+            collection_formats['allow_share_bandwidth_type_any'] = 'multi'
 
         header_params = {}
 
@@ -1826,7 +1829,7 @@ class EipAsyncClient(Client):
         :return: NeutronUpdateFloatingIpResponse
         """
 
-        all_params = ['floatingip_id', 'floatingip']
+        all_params = ['floatingip_id', 'neutron_update_floating_ip_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

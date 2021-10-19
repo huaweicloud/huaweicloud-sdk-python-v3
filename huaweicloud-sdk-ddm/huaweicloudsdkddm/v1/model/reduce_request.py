@@ -43,7 +43,7 @@ class ReduceRequest:
     def node_number(self):
         """Gets the node_number of this ReduceRequest.
 
-        需要扩容的节点个数
+        需要缩容的节点数量，最大值为实例节点数减1。
 
         :return: The node_number of this ReduceRequest.
         :rtype: int
@@ -54,7 +54,7 @@ class ReduceRequest:
     def node_number(self, node_number):
         """Sets the node_number of this ReduceRequest.
 
-        需要扩容的节点个数
+        需要缩容的节点数量，最大值为实例节点数减1。
 
         :param node_number: The node_number of this ReduceRequest.
         :type: int

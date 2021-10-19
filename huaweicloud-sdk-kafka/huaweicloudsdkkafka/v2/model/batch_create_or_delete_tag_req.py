@@ -23,7 +23,7 @@ class BatchCreateOrDeleteTagReq:
 
     openapi_types = {
         'action': 'str',
-        'tags': 'list[CreatePostPaidInstanceReqTags]'
+        'tags': 'list[TagEntity]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class BatchCreateOrDeleteTagReq:
         标签列表。
 
         :return: The tags of this BatchCreateOrDeleteTagReq.
-        :rtype: list[CreatePostPaidInstanceReqTags]
+        :rtype: list[TagEntity]
         """
         return self._tags
 
@@ -85,7 +85,7 @@ class BatchCreateOrDeleteTagReq:
         标签列表。
 
         :param tags: The tags of this BatchCreateOrDeleteTagReq.
-        :type: list[CreatePostPaidInstanceReqTags]
+        :type: list[TagEntity]
         """
         self._tags = tags
 

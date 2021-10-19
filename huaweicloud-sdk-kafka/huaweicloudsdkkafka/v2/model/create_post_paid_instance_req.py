@@ -49,7 +49,7 @@ class CreatePostPaidInstanceReq:
         'enable_auto_topic': 'bool',
         'storage_spec_code': 'str',
         'enterprise_project_id': 'str',
-        'tags': 'list[CreatePostPaidInstanceReqTags]'
+        'tags': 'list[TagEntity]'
     }
 
     attribute_map = {
@@ -605,7 +605,7 @@ class CreatePostPaidInstanceReq:
     def publicip_id(self):
         """Gets the publicip_id of this CreatePostPaidInstanceReq.
 
-        实例绑定的弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 
         :return: The publicip_id of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -616,7 +616,7 @@ class CreatePostPaidInstanceReq:
     def publicip_id(self, publicip_id):
         """Sets the publicip_id of this CreatePostPaidInstanceReq.
 
-        实例绑定的弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 
         :param publicip_id: The publicip_id of this CreatePostPaidInstanceReq.
         :type: str
@@ -762,7 +762,7 @@ class CreatePostPaidInstanceReq:
         标签列表。
 
         :return: The tags of this CreatePostPaidInstanceReq.
-        :rtype: list[CreatePostPaidInstanceReqTags]
+        :rtype: list[TagEntity]
         """
         return self._tags
 
@@ -773,7 +773,7 @@ class CreatePostPaidInstanceReq:
         标签列表。
 
         :param tags: The tags of this CreatePostPaidInstanceReq.
-        :type: list[CreatePostPaidInstanceReqTags]
+        :type: list[TagEntity]
         """
         self._tags = tags
 

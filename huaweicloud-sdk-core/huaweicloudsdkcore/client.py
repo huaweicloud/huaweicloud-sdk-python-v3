@@ -21,7 +21,6 @@
 import datetime
 import decimal
 import importlib
-import json
 import logging
 import re
 import sys
@@ -29,6 +28,7 @@ from concurrent.futures import ThreadPoolExecutor
 from logging.handlers import RotatingFileHandler
 
 import six
+import simplejson as json
 from six.moves.urllib.parse import quote, urlparse
 from requests_toolbelt import MultipartEncoder
 
@@ -262,7 +262,7 @@ class Client(object):
                 if all([hasattr(body, '__iter__'), not isinstance(body, (str, bytes, list, tuple, dict))]):
                     return body
             body = http_utils.sanitize_for_serialization(body)
-            body = json.dumps(body)
+            body = json.dumps(body, use_decimal=True)
         elif len(post_params) != 0:
             body = post_params
         else:

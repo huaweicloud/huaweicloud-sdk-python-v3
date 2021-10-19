@@ -24,7 +24,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
     openapi_types = {
         'name': 'str',
         'topic_type': 'int',
-        'policies': 'list[ShowTopicAccessPolicyRespPolicies]'
+        'policies': 'list[PolicyEntity]'
     }
 
     attribute_map = {
@@ -101,7 +101,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
         权限列表。
 
         :return: The policies of this ShowTopicAccessPolicyResponse.
-        :rtype: list[ShowTopicAccessPolicyRespPolicies]
+        :rtype: list[PolicyEntity]
         """
         return self._policies
 
@@ -112,7 +112,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
         权限列表。
 
         :param policies: The policies of this ShowTopicAccessPolicyResponse.
-        :type: list[ShowTopicAccessPolicyRespPolicies]
+        :type: list[PolicyEntity]
         """
         self._policies = policies
 

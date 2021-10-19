@@ -27,8 +27,12 @@ class MigrationTaskList:
         'status': 'str',
         'migration_type': 'str',
         'migration_method': 'str',
-        'target_instance_name': 'str',
         'data_source': 'str',
+        'source_instance_name': 'str',
+        'source_instance_id': 'str',
+        'target_instance_addrs': 'str',
+        'target_instance_name': 'str',
+        'target_instance_id': 'str',
         'created_at': 'str'
     }
 
@@ -38,12 +42,16 @@ class MigrationTaskList:
         'status': 'status',
         'migration_type': 'migration_type',
         'migration_method': 'migration_method',
-        'target_instance_name': 'target_instance_name',
         'data_source': 'data_source',
+        'source_instance_name': 'source_instance_name',
+        'source_instance_id': 'source_instance_id',
+        'target_instance_addrs': 'target_instance_addrs',
+        'target_instance_name': 'target_instance_name',
+        'target_instance_id': 'target_instance_id',
         'created_at': 'created_at'
     }
 
-    def __init__(self, task_id=None, task_name=None, status=None, migration_type=None, migration_method=None, target_instance_name=None, data_source=None, created_at=None):
+    def __init__(self, task_id=None, task_name=None, status=None, migration_type=None, migration_method=None, data_source=None, source_instance_name=None, source_instance_id=None, target_instance_addrs=None, target_instance_name=None, target_instance_id=None, created_at=None):
         """MigrationTaskList - a model defined in huaweicloud sdk"""
         
         
@@ -53,8 +61,12 @@ class MigrationTaskList:
         self._status = None
         self._migration_type = None
         self._migration_method = None
-        self._target_instance_name = None
         self._data_source = None
+        self._source_instance_name = None
+        self._source_instance_id = None
+        self._target_instance_addrs = None
+        self._target_instance_name = None
+        self._target_instance_id = None
         self._created_at = None
         self.discriminator = None
 
@@ -68,10 +80,18 @@ class MigrationTaskList:
             self.migration_type = migration_type
         if migration_method is not None:
             self.migration_method = migration_method
-        if target_instance_name is not None:
-            self.target_instance_name = target_instance_name
         if data_source is not None:
             self.data_source = data_source
+        if source_instance_name is not None:
+            self.source_instance_name = source_instance_name
+        if source_instance_id is not None:
+            self.source_instance_id = source_instance_id
+        if target_instance_addrs is not None:
+            self.target_instance_addrs = target_instance_addrs
+        if target_instance_name is not None:
+            self.target_instance_name = target_instance_name
+        if target_instance_id is not None:
+            self.target_instance_id = target_instance_id
         if created_at is not None:
             self.created_at = created_at
 
@@ -186,6 +206,94 @@ class MigrationTaskList:
         self._migration_method = migration_method
 
     @property
+    def data_source(self):
+        """Gets the data_source of this MigrationTaskList.
+
+        数据源，格式为ip:port或者桶名。
+
+        :return: The data_source of this MigrationTaskList.
+        :rtype: str
+        """
+        return self._data_source
+
+    @data_source.setter
+    def data_source(self, data_source):
+        """Sets the data_source of this MigrationTaskList.
+
+        数据源，格式为ip:port或者桶名。
+
+        :param data_source: The data_source of this MigrationTaskList.
+        :type: str
+        """
+        self._data_source = data_source
+
+    @property
+    def source_instance_name(self):
+        """Gets the source_instance_name of this MigrationTaskList.
+
+        源实例名称，若自建redis则为空。
+
+        :return: The source_instance_name of this MigrationTaskList.
+        :rtype: str
+        """
+        return self._source_instance_name
+
+    @source_instance_name.setter
+    def source_instance_name(self, source_instance_name):
+        """Sets the source_instance_name of this MigrationTaskList.
+
+        源实例名称，若自建redis则为空。
+
+        :param source_instance_name: The source_instance_name of this MigrationTaskList.
+        :type: str
+        """
+        self._source_instance_name = source_instance_name
+
+    @property
+    def source_instance_id(self):
+        """Gets the source_instance_id of this MigrationTaskList.
+
+        源实例ID，若自建redis则为空。
+
+        :return: The source_instance_id of this MigrationTaskList.
+        :rtype: str
+        """
+        return self._source_instance_id
+
+    @source_instance_id.setter
+    def source_instance_id(self, source_instance_id):
+        """Sets the source_instance_id of this MigrationTaskList.
+
+        源实例ID，若自建redis则为空。
+
+        :param source_instance_id: The source_instance_id of this MigrationTaskList.
+        :type: str
+        """
+        self._source_instance_id = source_instance_id
+
+    @property
+    def target_instance_addrs(self):
+        """Gets the target_instance_addrs of this MigrationTaskList.
+
+        目标redis地址，格式为ip:port。
+
+        :return: The target_instance_addrs of this MigrationTaskList.
+        :rtype: str
+        """
+        return self._target_instance_addrs
+
+    @target_instance_addrs.setter
+    def target_instance_addrs(self, target_instance_addrs):
+        """Sets the target_instance_addrs of this MigrationTaskList.
+
+        目标redis地址，格式为ip:port。
+
+        :param target_instance_addrs: The target_instance_addrs of this MigrationTaskList.
+        :type: str
+        """
+        self._target_instance_addrs = target_instance_addrs
+
+    @property
     def target_instance_name(self):
         """Gets the target_instance_name of this MigrationTaskList.
 
@@ -208,26 +316,26 @@ class MigrationTaskList:
         self._target_instance_name = target_instance_name
 
     @property
-    def data_source(self):
-        """Gets the data_source of this MigrationTaskList.
+    def target_instance_id(self):
+        """Gets the target_instance_id of this MigrationTaskList.
 
-        数据源，格式为ip:port或者桶名。
+        目标实例ID。
 
-        :return: The data_source of this MigrationTaskList.
+        :return: The target_instance_id of this MigrationTaskList.
         :rtype: str
         """
-        return self._data_source
+        return self._target_instance_id
 
-    @data_source.setter
-    def data_source(self, data_source):
-        """Sets the data_source of this MigrationTaskList.
+    @target_instance_id.setter
+    def target_instance_id(self, target_instance_id):
+        """Sets the target_instance_id of this MigrationTaskList.
 
-        数据源，格式为ip:port或者桶名。
+        目标实例ID。
 
-        :param data_source: The data_source of this MigrationTaskList.
+        :param target_instance_id: The target_instance_id of this MigrationTaskList.
         :type: str
         """
-        self._data_source = data_source
+        self._target_instance_id = target_instance_id
 
     @property
     def created_at(self):

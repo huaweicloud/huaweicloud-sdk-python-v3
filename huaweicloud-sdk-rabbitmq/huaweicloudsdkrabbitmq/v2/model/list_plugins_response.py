@@ -22,7 +22,7 @@ class ListPluginsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'plugins': 'list[ListPluginsRespPlugins]'
+        'plugins': 'list[PluginEntity]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ListPluginsResponse(SdkResponse):
         插件信息列表。
 
         :return: The plugins of this ListPluginsResponse.
-        :rtype: list[ListPluginsRespPlugins]
+        :rtype: list[PluginEntity]
         """
         return self._plugins
 
@@ -58,7 +58,7 @@ class ListPluginsResponse(SdkResponse):
         插件信息列表。
 
         :param plugins: The plugins of this ListPluginsResponse.
-        :type: list[ListPluginsRespPlugins]
+        :type: list[PluginEntity]
         """
         self._plugins = plugins
 

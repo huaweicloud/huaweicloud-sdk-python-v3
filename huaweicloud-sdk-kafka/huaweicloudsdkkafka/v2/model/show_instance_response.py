@@ -82,7 +82,7 @@ class ShowInstanceResponse(SdkResponse):
         'disk_encrypted': 'bool',
         'kafka_private_connect_address': 'str',
         'ces_version': 'str',
-        'tags': 'list[ListInstancesRespTags]'
+        'tags': 'list[TagEntity]'
     }
 
     attribute_map = {
@@ -1667,7 +1667,7 @@ class ShowInstanceResponse(SdkResponse):
         标签列表。
 
         :return: The tags of this ShowInstanceResponse.
-        :rtype: list[ListInstancesRespTags]
+        :rtype: list[TagEntity]
         """
         return self._tags
 
@@ -1678,7 +1678,7 @@ class ShowInstanceResponse(SdkResponse):
         标签列表。
 
         :param tags: The tags of this ShowInstanceResponse.
-        :type: list[ListInstancesRespTags]
+        :type: list[TagEntity]
         """
         self._tags = tags
 

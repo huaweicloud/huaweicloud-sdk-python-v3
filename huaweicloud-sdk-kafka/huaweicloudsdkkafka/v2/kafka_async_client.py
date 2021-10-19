@@ -2275,7 +2275,7 @@ class KafkaAsyncClient(Client):
     def show_instance_users_async(self, request):
         """查询用户列表
 
-        查询用户列表。 Kafka实例开启SASL功能时，才支持多用户管理的功能。
+        查询用户列表。  Kafka实例开启SASL功能时，才支持多用户管理的功能。
 
         :param ShowInstanceUsersRequest request
         :return: ShowInstanceUsersResponse
@@ -2285,7 +2285,7 @@ class KafkaAsyncClient(Client):
     def show_instance_users_with_http_info(self, request):
         """查询用户列表
 
-        查询用户列表。 Kafka实例开启SASL功能时，才支持多用户管理的功能。
+        查询用户列表。  Kafka实例开启SASL功能时，才支持多用户管理的功能。
 
         :param ShowInstanceUsersRequest request
         :return: ShowInstanceUsersResponse
@@ -2886,7 +2886,7 @@ class KafkaAsyncClient(Client):
         :return: ShowSinkTaskDetailResponse
         """
 
-        all_params = ['connector_id', 'task_id']
+        all_params = ['connector_id', 'task_id', 'topic_info']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2901,6 +2901,8 @@ class KafkaAsyncClient(Client):
             path_params['task_id'] = local_var_params['task_id']
 
         query_params = []
+        if 'topic_info' in local_var_params:
+            query_params.append(('topic-info', local_var_params['topic_info']))
 
         header_params = {}
 
@@ -2935,7 +2937,7 @@ class KafkaAsyncClient(Client):
     def show_topic_access_policy_async(self, request):
         """查询用户权限
 
-        查询用户权限。 Kafka实例开启SASL功能时，才支持多用户管理的功能。
+        查询用户权限。  Kafka实例开启SASL功能时，才支持多用户管理的功能。
 
         :param ShowTopicAccessPolicyRequest request
         :return: ShowTopicAccessPolicyResponse
@@ -2945,7 +2947,7 @@ class KafkaAsyncClient(Client):
     def show_topic_access_policy_with_http_info(self, request):
         """查询用户权限
 
-        查询用户权限。 Kafka实例开启SASL功能时，才支持多用户管理的功能。
+        查询用户权限。  Kafka实例开启SASL功能时，才支持多用户管理的功能。
 
         :param ShowTopicAccessPolicyRequest request
         :return: ShowTopicAccessPolicyResponse
@@ -3325,7 +3327,7 @@ class KafkaAsyncClient(Client):
     def update_topic_access_policy_async(self, request):
         """设置用户权限
 
-        设置用户权限。 Kafka实例开启SASL功能时，才支持多用户管理的功能。
+        设置用户权限。  Kafka实例开启SASL功能时，才支持多用户管理的功能。
 
         :param UpdateTopicAccessPolicyRequest request
         :return: UpdateTopicAccessPolicyResponse
@@ -3335,7 +3337,7 @@ class KafkaAsyncClient(Client):
     def update_topic_access_policy_with_http_info(self, request):
         """设置用户权限
 
-        设置用户权限。 Kafka实例开启SASL功能时，才支持多用户管理的功能。
+        设置用户权限。  Kafka实例开启SASL功能时，才支持多用户管理的功能。
 
         :param UpdateTopicAccessPolicyRequest request
         :return: UpdateTopicAccessPolicyResponse

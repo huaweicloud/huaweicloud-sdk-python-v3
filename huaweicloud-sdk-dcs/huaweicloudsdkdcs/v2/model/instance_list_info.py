@@ -35,6 +35,7 @@ class InstanceListInfo:
         'publicip_address': 'str',
         'capacity': 'int',
         'capacity_minor': 'str',
+        'order_id': 'str',
         'maintain_begin': 'str',
         'maintain_end': 'str',
         'engine': 'str',
@@ -74,6 +75,7 @@ class InstanceListInfo:
         'publicip_address': 'publicip_address',
         'capacity': 'capacity',
         'capacity_minor': 'capacity_minor',
+        'order_id': 'order_id',
         'maintain_begin': 'maintain_begin',
         'maintain_end': 'maintain_end',
         'engine': 'engine',
@@ -99,7 +101,7 @@ class InstanceListInfo:
         'az_codes': 'az_codes'
     }
 
-    def __init__(self, publicip_id=None, vpc_name=None, charging_mode=None, vpc_id=None, subnet_id=None, security_group_id=None, created_at=None, enable_ssl=None, max_memory=None, used_memory=None, publicip_address=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, engine_version=None, service_upgrade=None, no_password_access=None, service_task_id=None, ip=None, access_user=None, instance_id=None, enable_publicip=None, port=None, user_id=None, user_name=None, domain_name=None, name=None, spec_code=None, status=None, tags=None, enterprise_project_id=None, description=None, cpu_type=None, az_codes=None):
+    def __init__(self, publicip_id=None, vpc_name=None, charging_mode=None, vpc_id=None, subnet_id=None, security_group_id=None, created_at=None, enable_ssl=None, max_memory=None, used_memory=None, publicip_address=None, capacity=None, capacity_minor=None, order_id=None, maintain_begin=None, maintain_end=None, engine=None, engine_version=None, service_upgrade=None, no_password_access=None, service_task_id=None, ip=None, access_user=None, instance_id=None, enable_publicip=None, port=None, user_id=None, user_name=None, domain_name=None, name=None, spec_code=None, status=None, tags=None, enterprise_project_id=None, description=None, cpu_type=None, az_codes=None):
         """InstanceListInfo - a model defined in huaweicloud sdk"""
         
         
@@ -117,6 +119,7 @@ class InstanceListInfo:
         self._publicip_address = None
         self._capacity = None
         self._capacity_minor = None
+        self._order_id = None
         self._maintain_begin = None
         self._maintain_end = None
         self._engine = None
@@ -168,6 +171,8 @@ class InstanceListInfo:
             self.capacity = capacity
         if capacity_minor is not None:
             self.capacity_minor = capacity_minor
+        if order_id is not None:
+            self.order_id = order_id
         if maintain_begin is not None:
             self.maintain_begin = maintain_begin
         if maintain_end is not None:
@@ -500,6 +505,28 @@ class InstanceListInfo:
         :type: str
         """
         self._capacity_minor = capacity_minor
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this InstanceListInfo.
+
+        订单ID，仅在创建包周期实例时返回。按需实例时此值为null
+
+        :return: The order_id of this InstanceListInfo.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this InstanceListInfo.
+
+        订单ID，仅在创建包周期实例时返回。按需实例时此值为null
+
+        :param order_id: The order_id of this InstanceListInfo.
+        :type: str
+        """
+        self._order_id = order_id
 
     @property
     def maintain_begin(self):

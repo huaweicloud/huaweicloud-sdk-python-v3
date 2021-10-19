@@ -23,7 +23,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
 
     openapi_types = {
         'links': 'PageLink',
-        'recordsets': 'list[QueryRecordSetWithLineResp]',
+        'recordsets': 'list[QueryRecordSetWithLineAndTagsResp]',
         'metadata': 'Metedata'
     }
 
@@ -76,7 +76,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
 
 
         :return: The recordsets of this ListRecordSetsWithLineResponse.
-        :rtype: list[QueryRecordSetWithLineResp]
+        :rtype: list[QueryRecordSetWithLineAndTagsResp]
         """
         return self._recordsets
 
@@ -86,7 +86,7 @@ class ListRecordSetsWithLineResponse(SdkResponse):
 
 
         :param recordsets: The recordsets of this ListRecordSetsWithLineResponse.
-        :type: list[QueryRecordSetWithLineResp]
+        :type: list[QueryRecordSetWithLineAndTagsResp]
         """
         self._recordsets = recordsets
 

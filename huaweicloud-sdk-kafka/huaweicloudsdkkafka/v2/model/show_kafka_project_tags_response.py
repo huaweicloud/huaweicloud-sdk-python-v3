@@ -22,7 +22,7 @@ class ShowKafkaProjectTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[ShowProjectTagsRespTags]'
+        'tags': 'list[TagMultyValueEntity]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ShowKafkaProjectTagsResponse(SdkResponse):
         标签列表
 
         :return: The tags of this ShowKafkaProjectTagsResponse.
-        :rtype: list[ShowProjectTagsRespTags]
+        :rtype: list[TagMultyValueEntity]
         """
         return self._tags
 
@@ -58,7 +58,7 @@ class ShowKafkaProjectTagsResponse(SdkResponse):
         标签列表
 
         :param tags: The tags of this ShowKafkaProjectTagsResponse.
-        :type: list[ShowProjectTagsRespTags]
+        :type: list[TagMultyValueEntity]
         """
         self._tags = tags
 

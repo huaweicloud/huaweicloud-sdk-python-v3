@@ -78,6 +78,7 @@ from huaweicloudsdkeip.v2.model.profile_resp import ProfileResp
 from huaweicloudsdkeip.v2.model.publicip_create_resp import PublicipCreateResp
 from huaweicloudsdkeip.v2.model.publicip_info_resp import PublicipInfoResp
 from huaweicloudsdkeip.v2.model.publicip_show_resp import PublicipShowResp
+from huaweicloudsdkeip.v2.model.publicip_update_resp import PublicipUpdateResp
 from huaweicloudsdkeip.v2.model.quota_show_resp import QuotaShowResp
 from huaweicloudsdkeip.v2.model.remove_from_shared_bandwidth_option import RemoveFromSharedBandwidthOption
 from huaweicloudsdkeip.v2.model.remove_publicip_info import RemovePublicipInfo

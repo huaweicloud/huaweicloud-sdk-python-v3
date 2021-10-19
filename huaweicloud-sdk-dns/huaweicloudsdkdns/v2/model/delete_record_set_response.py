@@ -35,8 +35,7 @@ class DeleteRecordSetResponse(SdkResponse):
         'status': 'str',
         'default': 'bool',
         'project_id': 'str',
-        'links': 'PageLink',
-        'tags': 'list[Tag]'
+        'links': 'PageLink'
     }
 
     attribute_map = {
@@ -53,11 +52,10 @@ class DeleteRecordSetResponse(SdkResponse):
         'status': 'status',
         'default': 'default',
         'project_id': 'project_id',
-        'links': 'links',
-        'tags': 'tags'
+        'links': 'links'
     }
 
-    def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, create_at=None, update_at=None, status=None, default=None, project_id=None, links=None, tags=None):
+    def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, create_at=None, update_at=None, status=None, default=None, project_id=None, links=None):
         """DeleteRecordSetResponse - a model defined in huaweicloud sdk"""
         
         super(DeleteRecordSetResponse, self).__init__()
@@ -76,7 +74,6 @@ class DeleteRecordSetResponse(SdkResponse):
         self._default = None
         self._project_id = None
         self._links = None
-        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -107,8 +104,6 @@ class DeleteRecordSetResponse(SdkResponse):
             self.project_id = project_id
         if links is not None:
             self.links = links
-        if tags is not None:
-            self.tags = tags
 
     @property
     def id(self):
@@ -415,28 +410,6 @@ class DeleteRecordSetResponse(SdkResponse):
         :type: PageLink
         """
         self._links = links
-
-    @property
-    def tags(self):
-        """Gets the tags of this DeleteRecordSetResponse.
-
-        资源标签。
-
-        :return: The tags of this DeleteRecordSetResponse.
-        :rtype: list[Tag]
-        """
-        return self._tags
-
-    @tags.setter
-    def tags(self, tags):
-        """Sets the tags of this DeleteRecordSetResponse.
-
-        资源标签。
-
-        :param tags: The tags of this DeleteRecordSetResponse.
-        :type: list[Tag]
-        """
-        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

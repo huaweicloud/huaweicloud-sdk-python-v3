@@ -22,7 +22,7 @@ class UpdateTopicAccessPolicyReq:
     sensitive_list = []
 
     openapi_types = {
-        'topics': 'list[UpdateTopicAccessPolicyReqTopics]'
+        'topics': 'list[AccessPolicyTopicEntity]'
     }
 
     attribute_map = {
@@ -37,8 +37,7 @@ class UpdateTopicAccessPolicyReq:
         self._topics = None
         self.discriminator = None
 
-        if topics is not None:
-            self.topics = topics
+        self.topics = topics
 
     @property
     def topics(self):
@@ -47,7 +46,7 @@ class UpdateTopicAccessPolicyReq:
         topic列表。
 
         :return: The topics of this UpdateTopicAccessPolicyReq.
-        :rtype: list[UpdateTopicAccessPolicyReqTopics]
+        :rtype: list[AccessPolicyTopicEntity]
         """
         return self._topics
 
@@ -58,7 +57,7 @@ class UpdateTopicAccessPolicyReq:
         topic列表。
 
         :param topics: The topics of this UpdateTopicAccessPolicyReq.
-        :type: list[UpdateTopicAccessPolicyReqTopics]
+        :type: list[AccessPolicyTopicEntity]
         """
         self._topics = topics
 

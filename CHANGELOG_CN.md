@@ -1,3 +1,73 @@
+# 3.0.66 2021-10-19
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowMigrationTask`新增响应参数`backup_id`
+  - 接口`ListMigrationTask`新增以下响应参数:
+    - `source_instance_name`
+    - `source_instance_id`
+    - `target_instance_addrs`
+    - `target_instance_id`
+  - 接口`ListDiagnosisTasks`的响应参数`total_usec_sum`类型调整： `integer` -> `double`
+
+### HuaweiCloud SDK DSC
+
+- _新增特性_
+  - 支持数据安全中心服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListCommonPools`
+    - `ListPublicBorderGroups`
+    - `ListPublicipPool`
+    - `ShowPublicipPool`
+    - `ListShareBandwidthTypes`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListPublicips`新增请求参数`allow_share_bandwidth_type_any`
+  - 接口`NeutronListFloatingIps`的请求参数`limit`的类型调整： `string` -> `integer`
+  - 接口`NeutronUpdateFloatingIp`请求体的名称调整： `floatingip` -> `NeutronUpdateFloatingIpRequestBody`
+  - 接口`ShowPublicip`新增响应参数`allow_share_bandwidth_types`
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateTranscodingTask`新增请求参数`hls_init_count`和`hls_init_interval`
+
+### HuaweiCloud SDK VPCEP
+
+- _新增特性_
+  - 支持VPC终端节点服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VSS
+
+- _新增特性_
+  - 支持漏洞扫描服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.0.65 2021-10-11
 
 ### HuaweiCloud SDK Core

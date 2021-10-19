@@ -24,6 +24,8 @@ from huaweicloudsdkdcs.v2.model.change_instance_status_body import ChangeInstanc
 from huaweicloudsdkdcs.v2.model.change_master_standby_request import ChangeMasterStandbyRequest
 from huaweicloudsdkdcs.v2.model.change_master_standby_response import ChangeMasterStandbyResponse
 from huaweicloudsdkdcs.v2.model.cluster_redis_node_monitored_object import ClusterRedisNodeMonitoredObject
+from huaweicloudsdkdcs.v2.model.command_time_taken import CommandTimeTaken
+from huaweicloudsdkdcs.v2.model.command_time_taken_list import CommandTimeTakenList
 from huaweicloudsdkdcs.v2.model.conclusion_item import ConclusionItem
 from huaweicloudsdkdcs.v2.model.copy_instance_request import CopyInstanceRequest
 from huaweicloudsdkdcs.v2.model.copy_instance_response import CopyInstanceResponse

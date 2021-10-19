@@ -153,7 +153,7 @@ class ShowInstanceMessagesRequest:
     def start_time(self):
         """Gets the start_time of this ShowInstanceMessagesRequest.
 
-        开始时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
+        开始时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
 
         :return: The start_time of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class ShowInstanceMessagesRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowInstanceMessagesRequest.
 
-        开始时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
+        开始时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
 
         :param start_time: The start_time of this ShowInstanceMessagesRequest.
         :type: str
@@ -175,7 +175,7 @@ class ShowInstanceMessagesRequest:
     def end_time(self):
         """Gets the end_time of this ShowInstanceMessagesRequest.
 
-        结束时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
+        结束时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
 
         :return: The end_time of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -186,7 +186,7 @@ class ShowInstanceMessagesRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowInstanceMessagesRequest.
 
-        结束时间。Unix毫秒时间戳。 查询消息偏移量时，为必选参数。
+        结束时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
 
         :param end_time: The end_time of this ShowInstanceMessagesRequest.
         :type: str
@@ -263,7 +263,7 @@ class ShowInstanceMessagesRequest:
     def message_offset(self):
         """Gets the message_offset of this ShowInstanceMessagesRequest.
 
-        消息偏移量。 **查询消息内容时，为必选参数。** 若start_time、end_time参数不为空，该参数无效。
+        消息偏移量。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
 
         :return: The message_offset of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -274,7 +274,7 @@ class ShowInstanceMessagesRequest:
     def message_offset(self, message_offset):
         """Sets the message_offset of this ShowInstanceMessagesRequest.
 
-        消息偏移量。 **查询消息内容时，为必选参数。** 若start_time、end_time参数不为空，该参数无效。
+        消息偏移量。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
 
         :param message_offset: The message_offset of this ShowInstanceMessagesRequest.
         :type: str
@@ -285,7 +285,7 @@ class ShowInstanceMessagesRequest:
     def partition(self):
         """Gets the partition of this ShowInstanceMessagesRequest.
 
-        分区。 **查询消息内容时，为必选参数。** 若start_time、end_time参数不为空，该参数无效。
+        分区。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
 
         :return: The partition of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -296,7 +296,7 @@ class ShowInstanceMessagesRequest:
     def partition(self, partition):
         """Sets the partition of this ShowInstanceMessagesRequest.
 
-        分区。 **查询消息内容时，为必选参数。** 若start_time、end_time参数不为空，该参数无效。
+        分区。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
 
         :param partition: The partition of this ShowInstanceMessagesRequest.
         :type: str

@@ -22,7 +22,7 @@ class UpdatePublicipResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'publicip': 'PublicipShowResp'
+        'publicip': 'PublicipUpdateResp'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class UpdatePublicipResponse(SdkResponse):
 
 
         :return: The publicip of this UpdatePublicipResponse.
-        :rtype: PublicipShowResp
+        :rtype: PublicipUpdateResp
         """
         return self._publicip
 
@@ -56,7 +56,7 @@ class UpdatePublicipResponse(SdkResponse):
 
 
         :param publicip: The publicip of this UpdatePublicipResponse.
-        :type: PublicipShowResp
+        :type: PublicipUpdateResp
         """
         self._publicip = publicip
 

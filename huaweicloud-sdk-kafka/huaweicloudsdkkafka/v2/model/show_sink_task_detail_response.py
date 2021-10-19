@@ -27,7 +27,8 @@ class ShowSinkTaskDetailResponse(SdkResponse):
         'create_time': 'int',
         'status': 'str',
         'topics': 'str',
-        'obs_destination_descriptor': 'ShowSinkTaskDetailRespObsDestinationDescriptor'
+        'obs_destination_descriptor': 'ShowSinkTaskDetailRespObsDestinationDescriptor',
+        'topics_info': 'list[ShowSinkTaskDetailRespTopicsInfo]'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class ShowSinkTaskDetailResponse(SdkResponse):
         'create_time': 'create_time',
         'status': 'status',
         'topics': 'topics',
-        'obs_destination_descriptor': 'obs_destination_descriptor'
+        'obs_destination_descriptor': 'obs_destination_descriptor',
+        'topics_info': 'topics_info'
     }
 
-    def __init__(self, task_name=None, destination_type=None, create_time=None, status=None, topics=None, obs_destination_descriptor=None):
+    def __init__(self, task_name=None, destination_type=None, create_time=None, status=None, topics=None, obs_destination_descriptor=None, topics_info=None):
         """ShowSinkTaskDetailResponse - a model defined in huaweicloud sdk"""
         
         super(ShowSinkTaskDetailResponse, self).__init__()
@@ -50,6 +52,7 @@ class ShowSinkTaskDetailResponse(SdkResponse):
         self._status = None
         self._topics = None
         self._obs_destination_descriptor = None
+        self._topics_info = None
         self.discriminator = None
 
         if task_name is not None:
@@ -64,6 +67,8 @@ class ShowSinkTaskDetailResponse(SdkResponse):
             self.topics = topics
         if obs_destination_descriptor is not None:
             self.obs_destination_descriptor = obs_destination_descriptor
+        if topics_info is not None:
+            self.topics_info = topics_info
 
     @property
     def task_name(self):
@@ -194,6 +199,28 @@ class ShowSinkTaskDetailResponse(SdkResponse):
         :type: ShowSinkTaskDetailRespObsDestinationDescriptor
         """
         self._obs_destination_descriptor = obs_destination_descriptor
+
+    @property
+    def topics_info(self):
+        """Gets the topics_info of this ShowSinkTaskDetailResponse.
+
+        topic信息。
+
+        :return: The topics_info of this ShowSinkTaskDetailResponse.
+        :rtype: list[ShowSinkTaskDetailRespTopicsInfo]
+        """
+        return self._topics_info
+
+    @topics_info.setter
+    def topics_info(self, topics_info):
+        """Sets the topics_info of this ShowSinkTaskDetailResponse.
+
+        topic信息。
+
+        :param topics_info: The topics_info of this ShowSinkTaskDetailResponse.
+        :type: list[ShowSinkTaskDetailRespTopicsInfo]
+        """
+        self._topics_info = topics_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,7 +22,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'messages': 'list[ShowInstanceMessagesRespMessages]',
+        'messages': 'list[MessagesEntity]',
         'total': 'int',
         'size': 'int'
     }
@@ -57,7 +57,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
         消息列表。
 
         :return: The messages of this ShowInstanceMessagesResponse.
-        :rtype: list[ShowInstanceMessagesRespMessages]
+        :rtype: list[MessagesEntity]
         """
         return self._messages
 
@@ -68,7 +68,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
         消息列表。
 
         :param messages: The messages of this ShowInstanceMessagesResponse.
-        :type: list[ShowInstanceMessagesRespMessages]
+        :type: list[MessagesEntity]
         """
         self._messages = messages
 

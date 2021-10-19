@@ -24,16 +24,18 @@ class BackupFilesBody:
     openapi_types = {
         'file_source': 'str',
         'bucket_name': 'str',
-        'files': 'list[Files]'
+        'files': 'list[Files]',
+        'backup_id': 'str'
     }
 
     attribute_map = {
         'file_source': 'file_source',
         'bucket_name': 'bucket_name',
-        'files': 'files'
+        'files': 'files',
+        'backup_id': 'backup_id'
     }
 
-    def __init__(self, file_source=None, bucket_name=None, files=None):
+    def __init__(self, file_source=None, bucket_name=None, files=None, backup_id=None):
         """BackupFilesBody - a model defined in huaweicloud sdk"""
         
         
@@ -41,12 +43,15 @@ class BackupFilesBody:
         self._file_source = None
         self._bucket_name = None
         self._files = None
+        self._backup_id = None
         self.discriminator = None
 
         if file_source is not None:
             self.file_source = file_source
         self.bucket_name = bucket_name
         self.files = files
+        if backup_id is not None:
+            self.backup_id = backup_id
 
     @property
     def file_source(self):
@@ -113,6 +118,28 @@ class BackupFilesBody:
         :type: list[Files]
         """
         self._files = files
+
+    @property
+    def backup_id(self):
+        """Gets the backup_id of this BackupFilesBody.
+
+        备份记录ID，数据来源为备份记录时必须填写
+
+        :return: The backup_id of this BackupFilesBody.
+        :rtype: str
+        """
+        return self._backup_id
+
+    @backup_id.setter
+    def backup_id(self, backup_id):
+        """Sets the backup_id of this BackupFilesBody.
+
+        备份记录ID，数据来源为备份记录时必须填写
+
+        :param backup_id: The backup_id of this BackupFilesBody.
+        :type: str
+        """
+        self._backup_id = backup_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

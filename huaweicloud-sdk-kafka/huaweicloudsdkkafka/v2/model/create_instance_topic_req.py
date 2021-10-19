@@ -134,7 +134,7 @@ class CreateInstanceTopicReq:
     def partition(self):
         """Gets the partition of this CreateInstanceTopicReq.
 
-        topic分区数，设置消费的并发数。 取值范围：1-50。
+        topic分区数，设置消费的并发数。 取值范围：1-100。
 
         :return: The partition of this CreateInstanceTopicReq.
         :rtype: int
@@ -145,7 +145,7 @@ class CreateInstanceTopicReq:
     def partition(self, partition):
         """Sets the partition of this CreateInstanceTopicReq.
 
-        topic分区数，设置消费的并发数。 取值范围：1-50。
+        topic分区数，设置消费的并发数。 取值范围：1-100。
 
         :param partition: The partition of this CreateInstanceTopicReq.
         :type: int
