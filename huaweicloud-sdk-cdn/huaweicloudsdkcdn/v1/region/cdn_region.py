@@ -12,8 +12,11 @@ class CdnRegion:
 
     CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://cdn.myhuaweicloud.com")
 
+    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://cdn.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-1": CN_NORTH_1,
+        "ap-southeast-1": AP_SOUTHEAST_1,
     }
 
     @staticmethod

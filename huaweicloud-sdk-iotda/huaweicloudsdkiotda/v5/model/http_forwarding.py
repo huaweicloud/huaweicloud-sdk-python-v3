@@ -102,7 +102,7 @@ class HttpForwarding:
     def cn_name(self):
         """Gets the cn_name of this HttpForwarding.
 
-        **参数说明**：当sni_enable为true时，此字段需要填写，内容为将要请求的服务端证书的域名,举例:www.example.com:8443;当sni_enbale为false时，此字段默认不填写。
+        **参数说明**：当sni_enable为true时，此字段需要填写，内容为将要请求的服务端证书的域名,举例:domain:8443;当sni_enbale为false时，此字段默认不填写。
 
         :return: The cn_name of this HttpForwarding.
         :rtype: str
@@ -113,7 +113,7 @@ class HttpForwarding:
     def cn_name(self, cn_name):
         """Sets the cn_name of this HttpForwarding.
 
-        **参数说明**：当sni_enable为true时，此字段需要填写，内容为将要请求的服务端证书的域名,举例:www.example.com:8443;当sni_enbale为false时，此字段默认不填写。
+        **参数说明**：当sni_enable为true时，此字段需要填写，内容为将要请求的服务端证书的域名,举例:domain:8443;当sni_enbale为false时，此字段默认不填写。
 
         :param cn_name: The cn_name of this HttpForwarding.
         :type: str

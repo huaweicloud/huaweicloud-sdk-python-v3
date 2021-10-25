@@ -27,7 +27,8 @@ class ShowHistoryTaskDetailsRequest:
         'page_size': 'int',
         'page_number': 'int',
         'status': 'str',
-        'url': 'str'
+        'url': 'str',
+        'create_time': 'int'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class ShowHistoryTaskDetailsRequest:
         'page_size': 'page_size',
         'page_number': 'page_number',
         'status': 'status',
-        'url': 'url'
+        'url': 'url',
+        'create_time': 'create_time'
     }
 
-    def __init__(self, enterprise_project_id=None, history_tasks_id=None, page_size=None, page_number=None, status=None, url=None):
+    def __init__(self, enterprise_project_id=None, history_tasks_id=None, page_size=None, page_number=None, status=None, url=None, create_time=None):
         """ShowHistoryTaskDetailsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -50,6 +52,7 @@ class ShowHistoryTaskDetailsRequest:
         self._page_number = None
         self._status = None
         self._url = None
+        self._create_time = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -63,6 +66,8 @@ class ShowHistoryTaskDetailsRequest:
             self.status = status
         if url is not None:
             self.url = url
+        if create_time is not None:
+            self.create_time = create_time
 
     @property
     def enterprise_project_id(self):
@@ -195,6 +200,28 @@ class ShowHistoryTaskDetailsRequest:
         :type: str
         """
         self._url = url
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this ShowHistoryTaskDetailsRequest.
+
+        刷新预热任务的创建时间。不传参默认为查询3天内的任务。最长可查询15天内数据。
+
+        :return: The create_time of this ShowHistoryTaskDetailsRequest.
+        :rtype: int
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this ShowHistoryTaskDetailsRequest.
+
+        刷新预热任务的创建时间。不传参默认为查询3天内的任务。最长可查询15天内数据。
+
+        :param create_time: The create_time of this ShowHistoryTaskDetailsRequest.
+        :type: int
+        """
+        self._create_time = create_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

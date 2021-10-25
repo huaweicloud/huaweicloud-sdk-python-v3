@@ -73,7 +73,7 @@ class AddRuleReq:
     def rule_name(self):
         """Gets the rule_name of this AddRuleReq.
 
-        **参数说明**：用户自定义的规则名称。
+        **参数说明**：规则名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
         :return: The rule_name of this AddRuleReq.
         :rtype: str
@@ -84,7 +84,7 @@ class AddRuleReq:
     def rule_name(self, rule_name):
         """Sets the rule_name of this AddRuleReq.
 
-        **参数说明**：用户自定义的规则名称。
+        **参数说明**：规则名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
         :param rule_name: The rule_name of this AddRuleReq.
         :type: str

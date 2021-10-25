@@ -36,7 +36,8 @@ class ProPricePlanVo:
         'location_desc': 'str',
         'location_type': 'int',
         'sim_type': 'int',
-        'carrier_type': 'int'
+        'carrier_type': 'int',
+        'price': 'int'
     }
 
     attribute_map = {
@@ -54,10 +55,11 @@ class ProPricePlanVo:
         'location_desc': 'location_desc',
         'location_type': 'location_type',
         'sim_type': 'sim_type',
-        'carrier_type': 'carrier_type'
+        'carrier_type': 'carrier_type',
+        'price': 'price'
     }
 
-    def __init__(self, price_plan_id=None, price_plan_name=None, description=None, flow_total=None, package_type=None, period=None, period_type=None, effect_type=None, silent_period_day=None, silent_period_unit=None, auto_renew=None, location_desc=None, location_type=None, sim_type=None, carrier_type=None):
+    def __init__(self, price_plan_id=None, price_plan_name=None, description=None, flow_total=None, package_type=None, period=None, period_type=None, effect_type=None, silent_period_day=None, silent_period_unit=None, auto_renew=None, location_desc=None, location_type=None, sim_type=None, carrier_type=None, price=None):
         """ProPricePlanVo - a model defined in huaweicloud sdk"""
         
         
@@ -77,6 +79,7 @@ class ProPricePlanVo:
         self._location_type = None
         self._sim_type = None
         self._carrier_type = None
+        self._price = None
         self.discriminator = None
 
         if price_plan_id is not None:
@@ -109,6 +112,8 @@ class ProPricePlanVo:
             self.sim_type = sim_type
         if carrier_type is not None:
             self.carrier_type = carrier_type
+        if price is not None:
+            self.price = price
 
     @property
     def price_plan_id(self):
@@ -439,6 +444,28 @@ class ProPricePlanVo:
         :type: int
         """
         self._carrier_type = carrier_type
+
+    @property
+    def price(self):
+        """Gets the price of this ProPricePlanVo.
+
+        价格(元)
+
+        :return: The price of this ProPricePlanVo.
+        :rtype: int
+        """
+        return self._price
+
+    @price.setter
+    def price(self, price):
+        """Sets the price of this ProPricePlanVo.
+
+        价格(元)
+
+        :param price: The price of this ProPricePlanVo.
+        :type: int
+        """
+        self._price = price
 
     def to_dict(self):
         """Returns the model properties as a dict"""

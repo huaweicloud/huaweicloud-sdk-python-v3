@@ -26,7 +26,8 @@ class UrlObject:
         'url': 'str',
         'status': 'str',
         'create_time': 'int',
-        'task_id': 'str'
+        'task_id': 'str',
+        'task_type': 'str'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class UrlObject:
         'url': 'url',
         'status': 'status',
         'create_time': 'create_time',
-        'task_id': 'task_id'
+        'task_id': 'task_id',
+        'task_type': 'task_type'
     }
 
-    def __init__(self, id=None, url=None, status=None, create_time=None, task_id=None):
+    def __init__(self, id=None, url=None, status=None, create_time=None, task_id=None, task_type=None):
         """UrlObject - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +49,7 @@ class UrlObject:
         self._status = None
         self._create_time = None
         self._task_id = None
+        self._task_type = None
         self.discriminator = None
 
         if id is not None:
@@ -59,6 +62,8 @@ class UrlObject:
             self.create_time = create_time
         if task_id is not None:
             self.task_id = task_id
+        if task_type is not None:
+            self.task_type = task_type
 
     @property
     def id(self):
@@ -169,6 +174,28 @@ class UrlObject:
         :type: str
         """
         self._task_id = task_id
+
+    @property
+    def task_type(self):
+        """Gets the task_type of this UrlObject.
+
+        任务的类型， 其值可以为REFRESH、PREHEATING、REFRESH_AFTER_PREHEATING
+
+        :return: The task_type of this UrlObject.
+        :rtype: str
+        """
+        return self._task_type
+
+    @task_type.setter
+    def task_type(self, task_type):
+        """Sets the task_type of this UrlObject.
+
+        任务的类型， 其值可以为REFRESH、PREHEATING、REFRESH_AFTER_PREHEATING
+
+        :param task_type: The task_type of this UrlObject.
+        :type: str
+        """
+        self._task_type = task_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -27,7 +27,9 @@ class IndirectPartnerInfo:
         'email': 'str',
         'account_name': 'str',
         'name': 'str',
-        'associated_on': 'str'
+        'associated_on': 'str',
+        'account_manager_id': 'str',
+        'account_manager_name': 'str'
     }
 
     attribute_map = {
@@ -36,10 +38,12 @@ class IndirectPartnerInfo:
         'email': 'email',
         'account_name': 'account_name',
         'name': 'name',
-        'associated_on': 'associated_on'
+        'associated_on': 'associated_on',
+        'account_manager_id': 'account_manager_id',
+        'account_manager_name': 'account_manager_name'
     }
 
-    def __init__(self, indirect_partner_id=None, mobile_phone=None, email=None, account_name=None, name=None, associated_on=None):
+    def __init__(self, indirect_partner_id=None, mobile_phone=None, email=None, account_name=None, name=None, associated_on=None, account_manager_id=None, account_manager_name=None):
         """IndirectPartnerInfo - a model defined in huaweicloud sdk"""
         
         
@@ -50,6 +54,8 @@ class IndirectPartnerInfo:
         self._account_name = None
         self._name = None
         self._associated_on = None
+        self._account_manager_id = None
+        self._account_manager_name = None
         self.discriminator = None
 
         if indirect_partner_id is not None:
@@ -64,6 +70,10 @@ class IndirectPartnerInfo:
             self.name = name
         if associated_on is not None:
             self.associated_on = associated_on
+        if account_manager_id is not None:
+            self.account_manager_id = account_manager_id
+        if account_manager_name is not None:
+            self.account_manager_name = account_manager_name
 
     @property
     def indirect_partner_id(self):
@@ -179,7 +189,7 @@ class IndirectPartnerInfo:
     def associated_on(self):
         """Gets the associated_on of this IndirectPartnerInfo.
 
-        精英服务商关联华为云伙伴能力中心的时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z
+        精英服务商关联华为云伙伴能力中心的时间。 UTC时间（包括时区），例如2016-03-28T00:00:00Z。
 
         :return: The associated_on of this IndirectPartnerInfo.
         :rtype: str
@@ -190,12 +200,56 @@ class IndirectPartnerInfo:
     def associated_on(self, associated_on):
         """Sets the associated_on of this IndirectPartnerInfo.
 
-        精英服务商关联华为云伙伴能力中心的时间。 UTC时间（包括时区），比如2016-03-28T00:00:00Z
+        精英服务商关联华为云伙伴能力中心的时间。 UTC时间（包括时区），例如2016-03-28T00:00:00Z。
 
         :param associated_on: The associated_on of this IndirectPartnerInfo.
         :type: str
         """
         self._associated_on = associated_on
+
+    @property
+    def account_manager_id(self):
+        """Gets the account_manager_id of this IndirectPartnerInfo.
+
+        客户经理ID。
+
+        :return: The account_manager_id of this IndirectPartnerInfo.
+        :rtype: str
+        """
+        return self._account_manager_id
+
+    @account_manager_id.setter
+    def account_manager_id(self, account_manager_id):
+        """Sets the account_manager_id of this IndirectPartnerInfo.
+
+        客户经理ID。
+
+        :param account_manager_id: The account_manager_id of this IndirectPartnerInfo.
+        :type: str
+        """
+        self._account_manager_id = account_manager_id
+
+    @property
+    def account_manager_name(self):
+        """Gets the account_manager_name of this IndirectPartnerInfo.
+
+        客户经理的名称。
+
+        :return: The account_manager_name of this IndirectPartnerInfo.
+        :rtype: str
+        """
+        return self._account_manager_name
+
+    @account_manager_name.setter
+    def account_manager_name(self, account_manager_name):
+        """Sets the account_manager_name of this IndirectPartnerInfo.
+
+        客户经理的名称。
+
+        :param account_manager_name: The account_manager_name of this IndirectPartnerInfo.
+        :type: str
+        """
+        self._account_manager_name = account_manager_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

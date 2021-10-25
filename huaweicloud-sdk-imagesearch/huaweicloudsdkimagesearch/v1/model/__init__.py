@@ -23,5 +23,6 @@ from huaweicloudsdkimagesearch.v1.model.run_query_instance_request import RunQue
 from huaweicloudsdkimagesearch.v1.model.run_query_instance_response import RunQueryInstanceResponse
 from huaweicloudsdkimagesearch.v1.model.run_search_picture_request import RunSearchPictureRequest
 from huaweicloudsdkimagesearch.v1.model.run_search_picture_response import RunSearchPictureResponse
+from huaweicloudsdkimagesearch.v1.model.search_box_detail import SearchBoxDetail
 from huaweicloudsdkimagesearch.v1.model.search_picture_item import SearchPictureItem
 from huaweicloudsdkimagesearch.v1.model.search_picture_req import SearchPictureReq

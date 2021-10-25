@@ -23,30 +23,30 @@ class MetaData:
 
     openapi_types = {
         'count': 'int',
-        'offset': 'str',
+        'start': 'str',
         'total': 'int'
     }
 
     attribute_map = {
         'count': 'count',
-        'offset': 'offset',
+        'start': 'start',
         'total': 'total'
     }
 
-    def __init__(self, count=None, offset=None, total=None):
+    def __init__(self, count=None, start=None, total=None):
         """MetaData - a model defined in huaweicloud sdk"""
         
         
 
         self._count = None
-        self._offset = None
+        self._start = None
         self._total = None
         self.discriminator = None
 
         if count is not None:
             self.count = count
-        if offset is not None:
-            self.offset = offset
+        if start is not None:
+            self.start = start
         if total is not None:
             self.total = total
 
@@ -73,26 +73,26 @@ class MetaData:
         self._count = count
 
     @property
-    def offset(self):
-        """Gets the offset of this MetaData.
+    def start(self):
+        """Gets the start of this MetaData.
 
         下一个开始的标记，用于分页，null表示无更多数据。
 
-        :return: The offset of this MetaData.
+        :return: The start of this MetaData.
         :rtype: str
         """
-        return self._offset
+        return self._start
 
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this MetaData.
+    @start.setter
+    def start(self, start):
+        """Sets the start of this MetaData.
 
         下一个开始的标记，用于分页，null表示无更多数据。
 
-        :param offset: The offset of this MetaData.
+        :param start: The start of this MetaData.
         :type: str
         """
-        self._offset = offset
+        self._start = start
 
     @property
     def total(self):

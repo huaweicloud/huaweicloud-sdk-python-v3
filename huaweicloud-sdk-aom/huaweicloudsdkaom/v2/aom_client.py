@@ -48,6 +48,324 @@ class AomClient(Client):
 
         return ClientBuilder(clazz)
 
+    def add_alarm_rule(self, request):
+        """add_alarm_rule
+
+        该接口用于添加一条阈值规则
+
+        :param AddAlarmRuleRequest request
+        :return: AddAlarmRuleResponse
+        """
+        return self.add_alarm_rule_with_http_info(request)
+
+    def add_alarm_rule_with_http_info(self, request):
+        """add_alarm_rule
+
+        该接口用于添加一条阈值规则
+
+        :param AddAlarmRuleRequest request
+        :return: AddAlarmRuleResponse
+        """
+
+        all_params = ['add_alarm_rule_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alarm-rules',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddAlarmRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def add_metric_data(self, request):
+        """添加监控数据
+
+        该接口用于向服务端添加一条或多条监控数据。
+
+        :param AddMetricDataRequest request
+        :return: AddMetricDataResponse
+        """
+        return self.add_metric_data_with_http_info(request)
+
+    def add_metric_data_with_http_info(self, request):
+        """添加监控数据
+
+        该接口用于向服务端添加一条或多条监控数据。
+
+        :param AddMetricDataRequest request
+        :return: AddMetricDataResponse
+        """
+
+        all_params = ['metric_data_param']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/ams/report/metricdata',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddMetricDataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_alarm_rule(self, request):
+        """delete_alarm_rule
+
+        该接口用于删除阈值规则。
+
+        :param DeleteAlarmRuleRequest request
+        :return: DeleteAlarmRuleResponse
+        """
+        return self.delete_alarm_rule_with_http_info(request)
+
+    def delete_alarm_rule_with_http_info(self, request):
+        """delete_alarm_rule
+
+        该接口用于删除阈值规则。
+
+        :param DeleteAlarmRuleRequest request
+        :return: DeleteAlarmRuleResponse
+        """
+
+        all_params = ['alarm_rule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'alarm_rule_id' in local_var_params:
+            path_params['alarm_rule_id'] = local_var_params['alarm_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alarm-rules/{alarm_rule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteAlarmRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def deleteservice_discovery_rules(self, request):
+        """删除服务发现规则
+
+        该接口用于删除服务发现规则。
+
+        :param DeleteserviceDiscoveryRulesRequest request
+        :return: DeleteserviceDiscoveryRulesResponse
+        """
+        return self.deleteservice_discovery_rules_with_http_info(request)
+
+    def deleteservice_discovery_rules_with_http_info(self, request):
+        """删除服务发现规则
+
+        该接口用于删除服务发现规则。
+
+        :param DeleteserviceDiscoveryRulesRequest request
+        :return: DeleteserviceDiscoveryRulesResponse
+        """
+
+        all_params = ['app_rules_ids']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'app_rules_ids' in local_var_params:
+            query_params.append(('appRulesIds', local_var_params['app_rules_ids']))
+            collection_formats['appRulesIds'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/inv/servicediscoveryrules',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteserviceDiscoveryRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_alarm_rule(self, request):
+        """list_alarm_rule
+
+        该接口用于查询阈值规则列表。
+
+        :param ListAlarmRuleRequest request
+        :return: ListAlarmRuleResponse
+        """
+        return self.list_alarm_rule_with_http_info(request)
+
+    def list_alarm_rule_with_http_info(self, request):
+        """list_alarm_rule
+
+        该接口用于查询阈值规则列表。
+
+        :param ListAlarmRuleRequest request
+        :return: ListAlarmRuleResponse
+        """
+
+        all_params = ['offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alarm-rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAlarmRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_sample(self, request):
         """查询时序数据
 
@@ -174,6 +492,195 @@ class AomClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSeriesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_service_discovery_rules(self, request):
+        """查询系统中已有服务发现规则
+
+        该接口用于查询系统当前已存在的服务发现规则。
+
+        :param ListServiceDiscoveryRulesRequest request
+        :return: ListServiceDiscoveryRulesResponse
+        """
+        return self.list_service_discovery_rules_with_http_info(request)
+
+    def list_service_discovery_rules_with_http_info(self, request):
+        """查询系统中已有服务发现规则
+
+        该接口用于查询系统当前已存在的服务发现规则。
+
+        :param ListServiceDiscoveryRulesRequest request
+        :return: ListServiceDiscoveryRulesResponse
+        """
+
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/inv/servicediscoveryrules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListServiceDiscoveryRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_alarm_rule(self, request):
+        """show_alarm_rule
+
+        查询单条阈值规则
+
+        :param ShowAlarmRuleRequest request
+        :return: ShowAlarmRuleResponse
+        """
+        return self.show_alarm_rule_with_http_info(request)
+
+    def show_alarm_rule_with_http_info(self, request):
+        """show_alarm_rule
+
+        查询单条阈值规则
+
+        :param ShowAlarmRuleRequest request
+        :return: ShowAlarmRuleResponse
+        """
+
+        all_params = ['alarm_rule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'alarm_rule_id' in local_var_params:
+            path_params['alarm_rule_id'] = local_var_params['alarm_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alarm-rules/{alarm_rule_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowAlarmRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_alarm_rule(self, request):
+        """update_alarm_rule
+
+        修改阈值规则
+
+        :param UpdateAlarmRuleRequest request
+        :return: UpdateAlarmRuleResponse
+        """
+        return self.update_alarm_rule_with_http_info(request)
+
+    def update_alarm_rule_with_http_info(self, request):
+        """update_alarm_rule
+
+        修改阈值规则
+
+        :param UpdateAlarmRuleRequest request
+        :return: UpdateAlarmRuleResponse
+        """
+
+        all_params = ['update_alarm_rule_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/alarm-rules',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateAlarmRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

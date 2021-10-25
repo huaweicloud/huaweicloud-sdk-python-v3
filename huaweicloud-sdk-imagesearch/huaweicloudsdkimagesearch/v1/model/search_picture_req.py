@@ -28,10 +28,7 @@ class SearchPictureReq:
         'offset': 'int',
         'tags': 'object',
         'is_crop': 'bool',
-        'x': 'int',
-        'y': 'int',
-        'width': 'int',
-        'height': 'int'
+        'box': 'SearchBoxDetail'
     }
 
     attribute_map = {
@@ -40,14 +37,11 @@ class SearchPictureReq:
         'limit': 'limit',
         'offset': 'offset',
         'tags': 'tags',
-        'is_crop': 'isCrop',
-        'x': 'x',
-        'y': 'y',
-        'width': 'width',
-        'height': 'height'
+        'is_crop': 'is_crop',
+        'box': 'box'
     }
 
-    def __init__(self, file=None, path=None, limit=None, offset=None, tags=None, is_crop=None, x=None, y=None, width=None, height=None):
+    def __init__(self, file=None, path=None, limit=None, offset=None, tags=None, is_crop=None, box=None):
         """SearchPictureReq - a model defined in huaweicloud sdk"""
         
         
@@ -58,10 +52,7 @@ class SearchPictureReq:
         self._offset = None
         self._tags = None
         self._is_crop = None
-        self._x = None
-        self._y = None
-        self._width = None
-        self._height = None
+        self._box = None
         self.discriminator = None
 
         if file is not None:
@@ -76,14 +67,8 @@ class SearchPictureReq:
             self.tags = tags
         if is_crop is not None:
             self.is_crop = is_crop
-        if x is not None:
-            self.x = x
-        if y is not None:
-            self.y = y
-        if width is not None:
-            self.width = width
-        if height is not None:
-            self.height = height
+        if box is not None:
+            self.box = box
 
     @property
     def file(self):
@@ -218,92 +203,24 @@ class SearchPictureReq:
         self._is_crop = is_crop
 
     @property
-    def x(self):
-        """Gets the x of this SearchPictureReq.
+    def box(self):
+        """Gets the box of this SearchPictureReq.
 
-        区域中x坐标的最小值，单位：像素。
 
-        :return: The x of this SearchPictureReq.
-        :rtype: int
+        :return: The box of this SearchPictureReq.
+        :rtype: SearchBoxDetail
         """
-        return self._x
+        return self._box
 
-    @x.setter
-    def x(self, x):
-        """Sets the x of this SearchPictureReq.
+    @box.setter
+    def box(self, box):
+        """Sets the box of this SearchPictureReq.
 
-        区域中x坐标的最小值，单位：像素。
 
-        :param x: The x of this SearchPictureReq.
-        :type: int
+        :param box: The box of this SearchPictureReq.
+        :type: SearchBoxDetail
         """
-        self._x = x
-
-    @property
-    def y(self):
-        """Gets the y of this SearchPictureReq.
-
-        区域中y坐标的最小值，单位：像素。
-
-        :return: The y of this SearchPictureReq.
-        :rtype: int
-        """
-        return self._y
-
-    @y.setter
-    def y(self, y):
-        """Sets the y of this SearchPictureReq.
-
-        区域中y坐标的最小值，单位：像素。
-
-        :param y: The y of this SearchPictureReq.
-        :type: int
-        """
-        self._y = y
-
-    @property
-    def width(self):
-        """Gets the width of this SearchPictureReq.
-
-        区域的宽度，单位：像素。
-
-        :return: The width of this SearchPictureReq.
-        :rtype: int
-        """
-        return self._width
-
-    @width.setter
-    def width(self, width):
-        """Sets the width of this SearchPictureReq.
-
-        区域的宽度，单位：像素。
-
-        :param width: The width of this SearchPictureReq.
-        :type: int
-        """
-        self._width = width
-
-    @property
-    def height(self):
-        """Gets the height of this SearchPictureReq.
-
-        区域的高度，单位：像素。
-
-        :return: The height of this SearchPictureReq.
-        :rtype: int
-        """
-        return self._height
-
-    @height.setter
-    def height(self, height):
-        """Sets the height of this SearchPictureReq.
-
-        区域的高度，单位：像素。
-
-        :param height: The height of this SearchPictureReq.
-        :type: int
-        """
-        self._height = height
+        self._box = box
 
     def to_dict(self):
         """Returns the model properties as a dict"""

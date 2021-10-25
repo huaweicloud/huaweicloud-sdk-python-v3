@@ -24,16 +24,18 @@ class AddFacesBase64Req:
     openapi_types = {
         'image_base64': 'str',
         'external_fields': 'object',
-        'external_image_id': 'str'
+        'external_image_id': 'str',
+        'single': 'bool'
     }
 
     attribute_map = {
         'image_base64': 'image_base64',
         'external_fields': 'external_fields',
-        'external_image_id': 'external_image_id'
+        'external_image_id': 'external_image_id',
+        'single': 'single'
     }
 
-    def __init__(self, image_base64=None, external_fields=None, external_image_id=None):
+    def __init__(self, image_base64=None, external_fields=None, external_image_id=None, single=None):
         """AddFacesBase64Req - a model defined in huaweicloud sdk"""
         
         
@@ -41,6 +43,7 @@ class AddFacesBase64Req:
         self._image_base64 = None
         self._external_fields = None
         self._external_image_id = None
+        self._single = None
         self.discriminator = None
 
         self.image_base64 = image_base64
@@ -48,6 +51,8 @@ class AddFacesBase64Req:
             self.external_fields = external_fields
         if external_image_id is not None:
             self.external_image_id = external_image_id
+        if single is not None:
+            self.single = single
 
     @property
     def image_base64(self):
@@ -114,6 +119,28 @@ class AddFacesBase64Req:
         :type: str
         """
         self._external_image_id = external_image_id
+
+    @property
+    def single(self):
+        """Gets the single of this AddFacesBase64Req.
+
+        是否将图片中的最大人脸添加至人脸库。可选值包括: • true: 传入的单张图片中如果包含多张人脸，则只将最大人脸添加到人脸库中。 • false: 默认为false。传入的单张图片中如果包含多张人脸，则将所有人脸添加至人脸库中。
+
+        :return: The single of this AddFacesBase64Req.
+        :rtype: bool
+        """
+        return self._single
+
+    @single.setter
+    def single(self, single):
+        """Sets the single of this AddFacesBase64Req.
+
+        是否将图片中的最大人脸添加至人脸库。可选值包括: • true: 传入的单张图片中如果包含多张人脸，则只将最大人脸添加到人脸库中。 • false: 默认为false。传入的单张图片中如果包含多张人脸，则将所有人脸添加至人脸库中。
+
+        :param single: The single of this AddFacesBase64Req.
+        :type: bool
+        """
+        self._single = single
 
     def to_dict(self):
         """Returns the model properties as a dict"""

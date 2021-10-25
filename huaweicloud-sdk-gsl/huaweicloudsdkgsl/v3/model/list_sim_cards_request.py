@@ -28,6 +28,7 @@ class ListSimCardsRequest:
         'offset': 'int',
         'sim_status': 'int',
         'device_status': 'int',
+        'tag_id': 'list[int]',
         'sim_type': 'int',
         'order': 'str',
         'sort': 'str',
@@ -48,6 +49,7 @@ class ListSimCardsRequest:
         'offset': 'offset',
         'sim_status': 'sim_status',
         'device_status': 'device_status',
+        'tag_id': 'tag_id',
         'sim_type': 'sim_type',
         'order': 'order',
         'sort': 'sort',
@@ -61,7 +63,7 @@ class ListSimCardsRequest:
         'real_named': 'real_named'
     }
 
-    def __init__(self, main_search_type=None, main_search_key=None, limit=None, offset=None, sim_status=None, device_status=None, sim_type=None, order=None, sort=None, msisdn=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, real_named=None):
+    def __init__(self, main_search_type=None, main_search_key=None, limit=None, offset=None, sim_status=None, device_status=None, tag_id=None, sim_type=None, order=None, sort=None, msisdn=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, real_named=None):
         """ListSimCardsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -72,6 +74,7 @@ class ListSimCardsRequest:
         self._offset = None
         self._sim_status = None
         self._device_status = None
+        self._tag_id = None
         self._sim_type = None
         self._order = None
         self._sort = None
@@ -97,6 +100,8 @@ class ListSimCardsRequest:
             self.sim_status = sim_status
         if device_status is not None:
             self.device_status = device_status
+        if tag_id is not None:
+            self.tag_id = tag_id
         if sim_type is not None:
             self.sim_type = sim_type
         if order is not None:
@@ -212,7 +217,7 @@ class ListSimCardsRequest:
     def sim_status(self):
         """Gets the sim_status of this ListSimCardsRequest.
 
-        sim卡状态：  11.未激活  13.可激活  14.已停用  20.在用
+        sim卡状态：  10.可测试  11.未激活  13.可激活  14.已停用  20.在用  30.已拆机
 
         :return: The sim_status of this ListSimCardsRequest.
         :rtype: int
@@ -223,7 +228,7 @@ class ListSimCardsRequest:
     def sim_status(self, sim_status):
         """Sets the sim_status of this ListSimCardsRequest.
 
-        sim卡状态：  11.未激活  13.可激活  14.已停用  20.在用
+        sim卡状态：  10.可测试  11.未激活  13.可激活  14.已停用  20.在用  30.已拆机
 
         :param sim_status: The sim_status of this ListSimCardsRequest.
         :type: int
@@ -251,6 +256,28 @@ class ListSimCardsRequest:
         :type: int
         """
         self._device_status = device_status
+
+    @property
+    def tag_id(self):
+        """Gets the tag_id of this ListSimCardsRequest.
+
+        标签ID，最多支持传50个
+
+        :return: The tag_id of this ListSimCardsRequest.
+        :rtype: list[int]
+        """
+        return self._tag_id
+
+    @tag_id.setter
+    def tag_id(self, tag_id):
+        """Sets the tag_id of this ListSimCardsRequest.
+
+        标签ID，最多支持传50个
+
+        :param tag_id: The tag_id of this ListSimCardsRequest.
+        :type: list[int]
+        """
+        self._tag_id = tag_id
 
     @property
     def sim_type(self):
@@ -300,7 +327,7 @@ class ListSimCardsRequest:
     def sort(self):
         """Gets the sort of this ListSimCardsRequest.
 
-        排序的属性，目前支持:cid（容器ID）
+        排序的属性，目前支持:cid（容器ID）、flow_used（已用流量）、flow_left（剩余流量）
 
         :return: The sort of this ListSimCardsRequest.
         :rtype: str
@@ -311,7 +338,7 @@ class ListSimCardsRequest:
     def sort(self, sort):
         """Sets the sort of this ListSimCardsRequest.
 
-        排序的属性，目前支持:cid（容器ID）
+        排序的属性，目前支持:cid（容器ID）、flow_used（已用流量）、flow_left（剩余流量）
 
         :param sort: The sort of this ListSimCardsRequest.
         :type: str

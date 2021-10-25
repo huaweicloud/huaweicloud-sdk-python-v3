@@ -52,7 +52,8 @@ class ListSimPoolsRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
-        self.billing_cycle = billing_cycle
+        if billing_cycle is not None:
+            self.billing_cycle = billing_cycle
 
     @property
     def pool_name(self):

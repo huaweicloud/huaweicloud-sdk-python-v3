@@ -211,18 +211,25 @@ class ImageInfo:
         self._support_amd = None
         self.discriminator = None
 
-        self.backup_id = backup_id
-        self.data_origin = data_origin
-        self.description = description
+        if backup_id is not None:
+            self.backup_id = backup_id
+        if data_origin is not None:
+            self.data_origin = data_origin
+        if description is not None:
+            self.description = description
         self.image_size = image_size
         self.image_source_type = image_source_type
         self.imagetype = imagetype
         self.isregistered = isregistered
-        self.originalimagename = originalimagename
-        self.os_bit = os_bit
+        if originalimagename is not None:
+            self.originalimagename = originalimagename
+        if os_bit is not None:
+            self.os_bit = os_bit
         self.os_type = os_type
-        self.os_version = os_version
-        self.platform = platform
+        if os_version is not None:
+            self.os_version = os_version
+        if platform is not None:
+            self.platform = platform
         if productcode is not None:
             self.productcode = productcode
         if support_diskintensive is not None:
@@ -251,7 +258,8 @@ class ImageInfo:
         self.created_at = created_at
         if disk_format is not None:
             self.disk_format = disk_format
-        self.enterprise_project_id = enterprise_project_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if file is not None:
             self.file = file
         self.id = id
@@ -269,7 +277,8 @@ class ImageInfo:
         self.tags = tags
         self.updated_at = updated_at
         self.virtual_env_type = virtual_env_type
-        self.virtual_size = virtual_size
+        if virtual_size is not None:
+            self.virtual_size = virtual_size
         self.visibility = visibility
         if support_fc_inject is not None:
             self.support_fc_inject = support_fc_inject
@@ -287,12 +296,17 @@ class ImageInfo:
             self.account_code = account_code
         if hw_vif_multiqueue_enabled is not None:
             self.hw_vif_multiqueue_enabled = hw_vif_multiqueue_enabled
-        self.is_offshelved = is_offshelved
-        self.lazyloading = lazyloading
-        self.root_origin = root_origin
-        self.sequence_num = sequence_num
+        if is_offshelved is not None:
+            self.is_offshelved = is_offshelved
+        if lazyloading is not None:
+            self.lazyloading = lazyloading
+        if root_origin is not None:
+            self.root_origin = root_origin
+        if sequence_num is not None:
+            self.sequence_num = sequence_num
         self.active_at = active_at
-        self.support_agent_list = support_agent_list
+        if support_agent_list is not None:
+            self.support_agent_list = support_agent_list
         if support_amd is not None:
             self.support_amd = support_amd
 

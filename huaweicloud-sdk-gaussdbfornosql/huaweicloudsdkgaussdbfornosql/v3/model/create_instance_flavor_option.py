@@ -22,9 +22,9 @@ class CreateInstanceFlavorOption:
     sensitive_list = []
 
     openapi_types = {
-        'num': 'int',
+        'num': 'str',
         'storage': 'str',
-        'size': 'int',
+        'size': 'str',
         'spec_code': 'str'
     }
 
@@ -58,7 +58,7 @@ class CreateInstanceFlavorOption:
         节点数量。   - GaussDB(for Cassandra)实例的节点数量可取3~12。   - GaussDB(for Mongo)3.4版本集群实例的节点数量可取3~16。   - GaussDB(for Mongo)4.0版本副本集实例的节点数量可取3。   - GaussDB(for Influx)实例的节点数量可取3~16。
 
         :return: The num of this CreateInstanceFlavorOption.
-        :rtype: int
+        :rtype: str
         """
         return self._num
 
@@ -69,7 +69,7 @@ class CreateInstanceFlavorOption:
         节点数量。   - GaussDB(for Cassandra)实例的节点数量可取3~12。   - GaussDB(for Mongo)3.4版本集群实例的节点数量可取3~16。   - GaussDB(for Mongo)4.0版本副本集实例的节点数量可取3。   - GaussDB(for Influx)实例的节点数量可取3~16。
 
         :param num: The num of this CreateInstanceFlavorOption.
-        :type: int
+        :type: str
         """
         self._num = num
 
@@ -102,7 +102,7 @@ class CreateInstanceFlavorOption:
         磁盘大小。必须为10的整数倍。单位为GB。最小磁盘容量100GB，最大磁盘容量与实例的性能规格有关，详见数据库实例规格。
 
         :return: The size of this CreateInstanceFlavorOption.
-        :rtype: int
+        :rtype: str
         """
         return self._size
 
@@ -113,7 +113,7 @@ class CreateInstanceFlavorOption:
         磁盘大小。必须为10的整数倍。单位为GB。最小磁盘容量100GB，最大磁盘容量与实例的性能规格有关，详见数据库实例规格。
 
         :param size: The size of this CreateInstanceFlavorOption.
-        :type: int
+        :type: str
         """
         self._size = size
 

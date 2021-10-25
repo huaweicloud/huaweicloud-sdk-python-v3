@@ -26,7 +26,8 @@ class CreateSharedBandwidthOption:
         'name': 'str',
         'size': 'int',
         'charge_mode': 'str',
-        'public_border_group': 'str'
+        'public_border_group': 'str',
+        'bandwidth_type': 'str'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class CreateSharedBandwidthOption:
         'name': 'name',
         'size': 'size',
         'charge_mode': 'charge_mode',
-        'public_border_group': 'public_border_group'
+        'public_border_group': 'public_border_group',
+        'bandwidth_type': 'bandwidth_type'
     }
 
-    def __init__(self, enterprise_project_id=None, name=None, size=None, charge_mode=None, public_border_group=None):
+    def __init__(self, enterprise_project_id=None, name=None, size=None, charge_mode=None, public_border_group=None, bandwidth_type=None):
         """CreateSharedBandwidthOption - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +49,7 @@ class CreateSharedBandwidthOption:
         self._size = None
         self._charge_mode = None
         self._public_border_group = None
+        self._bandwidth_type = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -57,6 +60,8 @@ class CreateSharedBandwidthOption:
             self.charge_mode = charge_mode
         if public_border_group is not None:
             self.public_border_group = public_border_group
+        if bandwidth_type is not None:
+            self.bandwidth_type = bandwidth_type
 
     @property
     def enterprise_project_id(self):
@@ -167,6 +172,28 @@ class CreateSharedBandwidthOption:
         :type: str
         """
         self._public_border_group = public_border_group
+
+    @property
+    def bandwidth_type(self):
+        """Gets the bandwidth_type of this CreateSharedBandwidthOption.
+
+        功能说明：指定带宽类型创建，默认中心站点为share，边缘站点为edgeshare 取值范围： 查询当前租户可见的带宽类型列表获取
+
+        :return: The bandwidth_type of this CreateSharedBandwidthOption.
+        :rtype: str
+        """
+        return self._bandwidth_type
+
+    @bandwidth_type.setter
+    def bandwidth_type(self, bandwidth_type):
+        """Sets the bandwidth_type of this CreateSharedBandwidthOption.
+
+        功能说明：指定带宽类型创建，默认中心站点为share，边缘站点为edgeshare 取值范围： 查询当前租户可见的带宽类型列表获取
+
+        :param bandwidth_type: The bandwidth_type of this CreateSharedBandwidthOption.
+        :type: str
+        """
+        self._bandwidth_type = bandwidth_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

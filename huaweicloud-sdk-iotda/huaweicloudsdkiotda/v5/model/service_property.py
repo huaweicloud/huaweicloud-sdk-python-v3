@@ -96,7 +96,7 @@ class ServiceProperty:
     def property_name(self):
         """Gets the property_name of this ServiceProperty.
 
-        **参数说明**：设备属性名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
+        **参数说明**：设备属性名称。注：设备服务内不允许重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :return: The property_name of this ServiceProperty.
         :rtype: str
@@ -107,7 +107,7 @@ class ServiceProperty:
     def property_name(self, property_name):
         """Sets the property_name of this ServiceProperty.
 
-        **参数说明**：设备属性名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
+        **参数说明**：设备属性名称。注：设备服务内不允许重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param property_name: The property_name of this ServiceProperty.
         :type: str

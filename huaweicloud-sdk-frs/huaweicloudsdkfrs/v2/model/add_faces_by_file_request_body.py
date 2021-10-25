@@ -24,16 +24,18 @@ class AddFacesByFileRequestBody:
     openapi_types = {
         'image_file': 'file',
         'external_image_id': 'str',
-        'external_fields': 'str'
+        'external_fields': 'str',
+        'single': 'bool'
     }
 
     attribute_map = {
         'image_file': 'image_file',
         'external_image_id': 'external_image_id',
-        'external_fields': 'external_fields'
+        'external_fields': 'external_fields',
+        'single': 'single'
     }
 
-    def __init__(self, image_file=None, external_image_id=None, external_fields=None):
+    def __init__(self, image_file=None, external_image_id=None, external_fields=None, single=None):
         """AddFacesByFileRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -41,6 +43,7 @@ class AddFacesByFileRequestBody:
         self._image_file = None
         self._external_image_id = None
         self._external_fields = None
+        self._single = None
         self.discriminator = None
 
         self.image_file = image_file
@@ -48,6 +51,8 @@ class AddFacesByFileRequestBody:
             self.external_image_id = external_image_id
         if external_fields is not None:
             self.external_fields = external_fields
+        if single is not None:
+            self.single = single
 
     @property
     def image_file(self):
@@ -114,6 +119,28 @@ class AddFacesByFileRequestBody:
         :type: str
         """
         self._external_fields = external_fields
+
+    @property
+    def single(self):
+        """Gets the single of this AddFacesByFileRequestBody.
+
+        是否将图片中的最大人脸添加至人脸库。可选值包括: • true: 传入的单张图片中如果包含多张人脸，则只将最大人脸添加到人脸库中。 • false: 默认为false。传入的单张图片中如果包含多张人脸，则将所有人脸添加至人脸库中。
+
+        :return: The single of this AddFacesByFileRequestBody.
+        :rtype: bool
+        """
+        return self._single
+
+    @single.setter
+    def single(self, single):
+        """Sets the single of this AddFacesByFileRequestBody.
+
+        是否将图片中的最大人脸添加至人脸库。可选值包括: • true: 传入的单张图片中如果包含多张人脸，则只将最大人脸添加到人脸库中。 • false: 默认为false。传入的单张图片中如果包含多张人脸，则将所有人脸添加至人脸库中。
+
+        :param single: The single of this AddFacesByFileRequestBody.
+        :type: bool
+        """
+        self._single = single
 
     def to_dict(self):
         """Returns the model properties as a dict"""

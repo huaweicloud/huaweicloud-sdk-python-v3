@@ -58,7 +58,9 @@ class InstanceResponse:
         'storage_used_space': 'float',
         'order_id': 'str',
         'associated_with_ddm': 'bool',
-        'alias': 'str'
+        'alias': 'str',
+        'max_iops': 'int',
+        'expiration_time': 'str'
     }
 
     attribute_map = {
@@ -98,10 +100,12 @@ class InstanceResponse:
         'storage_used_space': 'storage_used_space',
         'order_id': 'order_id',
         'associated_with_ddm': 'associated_with_ddm',
-        'alias': 'alias'
+        'alias': 'alias',
+        'max_iops': 'max_iops',
+        'expiration_time': 'expiration_time'
     }
 
-    def __init__(self, id=None, status=None, enable_ssl=None, private_ips=None, private_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None, alias=None):
+    def __init__(self, id=None, status=None, enable_ssl=None, private_ips=None, private_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None, alias=None, max_iops=None, expiration_time=None):
         """InstanceResponse - a model defined in huaweicloud sdk"""
         
         
@@ -143,6 +147,8 @@ class InstanceResponse:
         self._order_id = None
         self._associated_with_ddm = None
         self._alias = None
+        self._max_iops = None
+        self._expiration_time = None
         self.discriminator = None
 
         self.id = id
@@ -191,6 +197,10 @@ class InstanceResponse:
             self.associated_with_ddm = associated_with_ddm
         if alias is not None:
             self.alias = alias
+        if max_iops is not None:
+            self.max_iops = max_iops
+        if expiration_time is not None:
+            self.expiration_time = expiration_time
 
     @property
     def id(self):
@@ -987,6 +997,50 @@ class InstanceResponse:
         :type: str
         """
         self._alias = alias
+
+    @property
+    def max_iops(self):
+        """Gets the max_iops of this InstanceResponse.
+
+        实例磁盘的最大IOPS值。  当前该字段仅对于SQL Server引擎实例返回。
+
+        :return: The max_iops of this InstanceResponse.
+        :rtype: int
+        """
+        return self._max_iops
+
+    @max_iops.setter
+    def max_iops(self, max_iops):
+        """Sets the max_iops of this InstanceResponse.
+
+        实例磁盘的最大IOPS值。  当前该字段仅对于SQL Server引擎实例返回。
+
+        :param max_iops: The max_iops of this InstanceResponse.
+        :type: int
+        """
+        self._max_iops = max_iops
+
+    @property
+    def expiration_time(self):
+        """Gets the expiration_time of this InstanceResponse.
+
+        实例的到期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  仅包周期场景返回。
+
+        :return: The expiration_time of this InstanceResponse.
+        :rtype: str
+        """
+        return self._expiration_time
+
+    @expiration_time.setter
+    def expiration_time(self, expiration_time):
+        """Sets the expiration_time of this InstanceResponse.
+
+        实例的到期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  仅包周期场景返回。
+
+        :param expiration_time: The expiration_time of this InstanceResponse.
+        :type: str
+        """
+        self._expiration_time = expiration_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -81,7 +81,7 @@ class IdcardVerificationResult:
     def valid_birth(self):
         """Gets the valid_birth of this IdcardVerificationResult.
 
-        身份证号与出生日期一致。出生日期和身份证号的第7位和第13位之间表示的出生日期是否一致。一致返回true，否则返回false。  当身份证图片是背面时，默认是false。 
+        身份证号与出生日期一致。出生日期和身份证号的第7位和第14位之间表示的出生日期是否一致。一致返回true，否则返回false。  当身份证图片是背面时，默认是false。 
 
         :return: The valid_birth of this IdcardVerificationResult.
         :rtype: bool
@@ -92,7 +92,7 @@ class IdcardVerificationResult:
     def valid_birth(self, valid_birth):
         """Sets the valid_birth of this IdcardVerificationResult.
 
-        身份证号与出生日期一致。出生日期和身份证号的第7位和第13位之间表示的出生日期是否一致。一致返回true，否则返回false。  当身份证图片是背面时，默认是false。 
+        身份证号与出生日期一致。出生日期和身份证号的第7位和第14位之间表示的出生日期是否一致。一致返回true，否则返回false。  当身份证图片是背面时，默认是false。 
 
         :param valid_birth: The valid_birth of this IdcardVerificationResult.
         :type: bool
@@ -103,7 +103,7 @@ class IdcardVerificationResult:
     def valid_sex(self):
         """Gets the valid_sex of this IdcardVerificationResult.
 
-        身份证号与性别一致。性别和身份证号的第17位表示的性别信息是否一致。身份证号的第17位如果为奇数表示男性，偶数表示男性。一致返回true，否则返回false。  当身份证图片是背面时，默认是false。 
+        身份证号与性别一致。性别和身份证号的第17位表示的性别信息是否一致。身份证号的第17位如果为奇数表示男性，偶数表示女性。一致返回true，否则返回false。  当身份证图片是背面时，默认是false。 
 
         :return: The valid_sex of this IdcardVerificationResult.
         :rtype: bool
@@ -114,7 +114,7 @@ class IdcardVerificationResult:
     def valid_sex(self, valid_sex):
         """Sets the valid_sex of this IdcardVerificationResult.
 
-        身份证号与性别一致。性别和身份证号的第17位表示的性别信息是否一致。身份证号的第17位如果为奇数表示男性，偶数表示男性。一致返回true，否则返回false。  当身份证图片是背面时，默认是false。 
+        身份证号与性别一致。性别和身份证号的第17位表示的性别信息是否一致。身份证号的第17位如果为奇数表示男性，偶数表示女性。一致返回true，否则返回false。  当身份证图片是背面时，默认是false。 
 
         :param valid_sex: The valid_sex of this IdcardVerificationResult.
         :type: bool

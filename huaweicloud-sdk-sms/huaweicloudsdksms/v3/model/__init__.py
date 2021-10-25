@@ -72,8 +72,6 @@ from huaweicloudsdksms.v3.model.register_server_response import RegisterServerRe
 from huaweicloudsdksms.v3.model.server import Server
 from huaweicloudsdksms.v3.model.server_disk import ServerDisk
 from huaweicloudsdksms.v3.model.sg_object import SgObject
-from huaweicloudsdksms.v3.model.show_cert_key_request import ShowCertKeyRequest
-from huaweicloudsdksms.v3.model.show_cert_key_response import ShowCertKeyResponse
 from huaweicloudsdksms.v3.model.show_command_request import ShowCommandRequest
 from huaweicloudsdksms.v3.model.show_command_response import ShowCommandResponse
 from huaweicloudsdksms.v3.model.show_migproject_request import ShowMigprojectRequest

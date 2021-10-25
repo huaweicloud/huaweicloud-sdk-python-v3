@@ -1,3 +1,160 @@
+# 3.0.67 2021-10-25
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - Support the following interfaces:
+    - `ListServiceDiscoveryRules`
+    - `DeleteserviceDiscoveryRules`
+    - `AddAlarmRule`
+    - `ListAlarmRule`
+    - `UpdateAlarmRule`
+    - `DeleteAlarmRule`
+    - `ShowAlarmRule`
+- _Bug Fix_
+  - [Issue #43](https://github.com/huaweicloud/huaweicloud-sdk-java-v3/issues/43)：Fix the issue of incorrect type of the response parameter `offset` of the interface `ListSeries`.
+- _Change_
+  - None
+
+### HuaweiCloud SDK BCS
+
+- _Features_
+  - Support the interface `ShowBlockchainFlavors`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `account_manager_id` and `account_manager_name` to the interface `ListIndirectPartners`.
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `create_time` and response parameter `task_type` to the interface `ShowHistoryTaskDetails`.
+  - Remove the request parameter `create_time` from the interface `ShowHistoryTasks`.
+
+### HuaweiCloud SDK DNS
+
+- _Features_
+  - Support the interface `ShowDomainQuota`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `bandwidth_type` to the interface `CreateSharedBandwidth`.
+
+### HuaweiCloud SDK FRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `single` to the interfaces `AddFacesByFile`, `AddFacesByBase64` and `AddFacesByUrl`.
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type of request and response parameters `num` and `size` of the interface `CreateInstance`: `integer` -> `string`.
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - Support the service `Global SIM Link`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ImageSearch
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the name of the request parameter of the interface `RunSearchPicture`: `isCrop` -> `is_crop`
+  - Add the request parameter `box` to the interface `RunSearchPicture`.
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `current_task`, `image_name` and `process_percent` to the interface `ShowJob`.
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `status` to the interface `ListDevices`.
+  - Add the request parameter `file_path` to the interface `CreateRuleAction`.
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+  - Support the interfaces `ShowQosThreshold` and `SetQosThreshold`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - Support the interfaces `RecognizeInsurancePolicy`, `RecognizeFinancialStatement` and `RecognizeQualificationCertificate`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `database_name` to the interface `ShowBackupDownloadLink`.
+  - Add the response parameter `max_iops` and `expiration_time` to the interface `ListInstances`.
+
+### HuaweiCloud SDK SDRS
+
+- _Features_
+  - Support the `Storage Disaster Recovery Service`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.0.66 2021-10-19
 
 ### HuaweiCloud SDK DCS

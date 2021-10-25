@@ -1,0 +1,598 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class QualificationCertificateResult:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'id_number': 'str',
+        'assessment_date': 'str',
+        'certificate_number': 'str',
+        'file_number': 'str',
+        'union_card_number': 'str',
+        'continuing_education_info': 'str',
+        'sex': 'str',
+        'phone_number': 'str',
+        'registration_date': 'str',
+        'work_unit': 'str',
+        'integrity_assessment_info': 'str',
+        'nationality': 'str',
+        'name': 'str',
+        'address': 'str',
+        'driving_class': 'str',
+        'issuing_authority': 'str',
+        'birth_date': 'str',
+        'qualification_category_list': 'list[QualificationCategory]',
+        'confidence': 'QualificationConfidence'
+    }
+
+    attribute_map = {
+        'id_number': 'id_number',
+        'assessment_date': 'assessment_date',
+        'certificate_number': 'certificate_number',
+        'file_number': 'file_number',
+        'union_card_number': 'union_card_number',
+        'continuing_education_info': 'continuing_education_info',
+        'sex': 'sex',
+        'phone_number': 'phone_number',
+        'registration_date': 'registration_date',
+        'work_unit': 'work_unit',
+        'integrity_assessment_info': 'integrity_assessment_info',
+        'nationality': 'nationality',
+        'name': 'name',
+        'address': 'address',
+        'driving_class': 'driving_class',
+        'issuing_authority': 'issuing_authority',
+        'birth_date': 'birth_date',
+        'qualification_category_list': 'qualification_category_list',
+        'confidence': 'confidence'
+    }
+
+    def __init__(self, id_number=None, assessment_date=None, certificate_number=None, file_number=None, union_card_number=None, continuing_education_info=None, sex=None, phone_number=None, registration_date=None, work_unit=None, integrity_assessment_info=None, nationality=None, name=None, address=None, driving_class=None, issuing_authority=None, birth_date=None, qualification_category_list=None, confidence=None):
+        """QualificationCertificateResult - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._id_number = None
+        self._assessment_date = None
+        self._certificate_number = None
+        self._file_number = None
+        self._union_card_number = None
+        self._continuing_education_info = None
+        self._sex = None
+        self._phone_number = None
+        self._registration_date = None
+        self._work_unit = None
+        self._integrity_assessment_info = None
+        self._nationality = None
+        self._name = None
+        self._address = None
+        self._driving_class = None
+        self._issuing_authority = None
+        self._birth_date = None
+        self._qualification_category_list = None
+        self._confidence = None
+        self.discriminator = None
+
+        if id_number is not None:
+            self.id_number = id_number
+        if assessment_date is not None:
+            self.assessment_date = assessment_date
+        if certificate_number is not None:
+            self.certificate_number = certificate_number
+        if file_number is not None:
+            self.file_number = file_number
+        if union_card_number is not None:
+            self.union_card_number = union_card_number
+        if continuing_education_info is not None:
+            self.continuing_education_info = continuing_education_info
+        if sex is not None:
+            self.sex = sex
+        if phone_number is not None:
+            self.phone_number = phone_number
+        if registration_date is not None:
+            self.registration_date = registration_date
+        if work_unit is not None:
+            self.work_unit = work_unit
+        if integrity_assessment_info is not None:
+            self.integrity_assessment_info = integrity_assessment_info
+        if nationality is not None:
+            self.nationality = nationality
+        if name is not None:
+            self.name = name
+        if address is not None:
+            self.address = address
+        if driving_class is not None:
+            self.driving_class = driving_class
+        if issuing_authority is not None:
+            self.issuing_authority = issuing_authority
+        if birth_date is not None:
+            self.birth_date = birth_date
+        if qualification_category_list is not None:
+            self.qualification_category_list = qualification_category_list
+        if confidence is not None:
+            self.confidence = confidence
+
+    @property
+    def id_number(self):
+        """Gets the id_number of this QualificationCertificateResult.
+
+        身份证号（非必有，依赖对应从业资格证板式）。 
+
+        :return: The id_number of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._id_number
+
+    @id_number.setter
+    def id_number(self, id_number):
+        """Sets the id_number of this QualificationCertificateResult.
+
+        身份证号（非必有，依赖对应从业资格证板式）。 
+
+        :param id_number: The id_number of this QualificationCertificateResult.
+        :type: str
+        """
+        self._id_number = id_number
+
+    @property
+    def assessment_date(self):
+        """Gets the assessment_date of this QualificationCertificateResult.
+
+        考核时间（非必有，依赖对应从业资格证板式）。 
+
+        :return: The assessment_date of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._assessment_date
+
+    @assessment_date.setter
+    def assessment_date(self, assessment_date):
+        """Sets the assessment_date of this QualificationCertificateResult.
+
+        考核时间（非必有，依赖对应从业资格证板式）。 
+
+        :param assessment_date: The assessment_date of this QualificationCertificateResult.
+        :type: str
+        """
+        self._assessment_date = assessment_date
+
+    @property
+    def certificate_number(self):
+        """Gets the certificate_number of this QualificationCertificateResult.
+
+        从业资格证号。 
+
+        :return: The certificate_number of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._certificate_number
+
+    @certificate_number.setter
+    def certificate_number(self, certificate_number):
+        """Sets the certificate_number of this QualificationCertificateResult.
+
+        从业资格证号。 
+
+        :param certificate_number: The certificate_number of this QualificationCertificateResult.
+        :type: str
+        """
+        self._certificate_number = certificate_number
+
+    @property
+    def file_number(self):
+        """Gets the file_number of this QualificationCertificateResult.
+
+        档案号（非必有，依赖对应从业资格证板式）。 
+
+        :return: The file_number of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._file_number
+
+    @file_number.setter
+    def file_number(self, file_number):
+        """Sets the file_number of this QualificationCertificateResult.
+
+        档案号（非必有，依赖对应从业资格证板式）。 
+
+        :param file_number: The file_number of this QualificationCertificateResult.
+        :type: str
+        """
+        self._file_number = file_number
+
+    @property
+    def union_card_number(self):
+        """Gets the union_card_number of this QualificationCertificateResult.
+
+        福路通号（非必有，依赖对应从业资格证板式）。 
+
+        :return: The union_card_number of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._union_card_number
+
+    @union_card_number.setter
+    def union_card_number(self, union_card_number):
+        """Sets the union_card_number of this QualificationCertificateResult.
+
+        福路通号（非必有，依赖对应从业资格证板式）。 
+
+        :param union_card_number: The union_card_number of this QualificationCertificateResult.
+        :type: str
+        """
+        self._union_card_number = union_card_number
+
+    @property
+    def continuing_education_info(self):
+        """Gets the continuing_education_info of this QualificationCertificateResult.
+
+        继续教育信息（非必有，依赖对应从业资格证板式）。 
+
+        :return: The continuing_education_info of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._continuing_education_info
+
+    @continuing_education_info.setter
+    def continuing_education_info(self, continuing_education_info):
+        """Sets the continuing_education_info of this QualificationCertificateResult.
+
+        继续教育信息（非必有，依赖对应从业资格证板式）。 
+
+        :param continuing_education_info: The continuing_education_info of this QualificationCertificateResult.
+        :type: str
+        """
+        self._continuing_education_info = continuing_education_info
+
+    @property
+    def sex(self):
+        """Gets the sex of this QualificationCertificateResult.
+
+        性别（非必有，依赖对应从业资格证板式）。 
+
+        :return: The sex of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._sex
+
+    @sex.setter
+    def sex(self, sex):
+        """Sets the sex of this QualificationCertificateResult.
+
+        性别（非必有，依赖对应从业资格证板式）。 
+
+        :param sex: The sex of this QualificationCertificateResult.
+        :type: str
+        """
+        self._sex = sex
+
+    @property
+    def phone_number(self):
+        """Gets the phone_number of this QualificationCertificateResult.
+
+        联系电话（非必有，依赖对应从业资格证板式）。 
+
+        :return: The phone_number of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._phone_number
+
+    @phone_number.setter
+    def phone_number(self, phone_number):
+        """Sets the phone_number of this QualificationCertificateResult.
+
+        联系电话（非必有，依赖对应从业资格证板式）。 
+
+        :param phone_number: The phone_number of this QualificationCertificateResult.
+        :type: str
+        """
+        self._phone_number = phone_number
+
+    @property
+    def registration_date(self):
+        """Gets the registration_date of this QualificationCertificateResult.
+
+        登记时间（非必有，依赖对应从业资格证板式）。 
+
+        :return: The registration_date of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._registration_date
+
+    @registration_date.setter
+    def registration_date(self, registration_date):
+        """Sets the registration_date of this QualificationCertificateResult.
+
+        登记时间（非必有，依赖对应从业资格证板式）。 
+
+        :param registration_date: The registration_date of this QualificationCertificateResult.
+        :type: str
+        """
+        self._registration_date = registration_date
+
+    @property
+    def work_unit(self):
+        """Gets the work_unit of this QualificationCertificateResult.
+
+        单位（非必有，依赖对应从业资格证板式）。 
+
+        :return: The work_unit of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._work_unit
+
+    @work_unit.setter
+    def work_unit(self, work_unit):
+        """Sets the work_unit of this QualificationCertificateResult.
+
+        单位（非必有，依赖对应从业资格证板式）。 
+
+        :param work_unit: The work_unit of this QualificationCertificateResult.
+        :type: str
+        """
+        self._work_unit = work_unit
+
+    @property
+    def integrity_assessment_info(self):
+        """Gets the integrity_assessment_info of this QualificationCertificateResult.
+
+        诚信考核信息（非必有，依赖对应从业资格证板式）。 
+
+        :return: The integrity_assessment_info of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._integrity_assessment_info
+
+    @integrity_assessment_info.setter
+    def integrity_assessment_info(self, integrity_assessment_info):
+        """Sets the integrity_assessment_info of this QualificationCertificateResult.
+
+        诚信考核信息（非必有，依赖对应从业资格证板式）。 
+
+        :param integrity_assessment_info: The integrity_assessment_info of this QualificationCertificateResult.
+        :type: str
+        """
+        self._integrity_assessment_info = integrity_assessment_info
+
+    @property
+    def nationality(self):
+        """Gets the nationality of this QualificationCertificateResult.
+
+        国籍（非必有，依赖对应从业资格证板式）。 
+
+        :return: The nationality of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._nationality
+
+    @nationality.setter
+    def nationality(self, nationality):
+        """Sets the nationality of this QualificationCertificateResult.
+
+        国籍（非必有，依赖对应从业资格证板式）。 
+
+        :param nationality: The nationality of this QualificationCertificateResult.
+        :type: str
+        """
+        self._nationality = nationality
+
+    @property
+    def name(self):
+        """Gets the name of this QualificationCertificateResult.
+
+        姓名。 
+
+        :return: The name of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this QualificationCertificateResult.
+
+        姓名。 
+
+        :param name: The name of this QualificationCertificateResult.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def address(self):
+        """Gets the address of this QualificationCertificateResult.
+
+        住址。 
+
+        :return: The address of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._address
+
+    @address.setter
+    def address(self, address):
+        """Sets the address of this QualificationCertificateResult.
+
+        住址。 
+
+        :param address: The address of this QualificationCertificateResult.
+        :type: str
+        """
+        self._address = address
+
+    @property
+    def driving_class(self):
+        """Gets the driving_class of this QualificationCertificateResult.
+
+        准驾车型（非必有，依赖对应从业资格证板式）。 
+
+        :return: The driving_class of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._driving_class
+
+    @driving_class.setter
+    def driving_class(self, driving_class):
+        """Sets the driving_class of this QualificationCertificateResult.
+
+        准驾车型（非必有，依赖对应从业资格证板式）。 
+
+        :param driving_class: The driving_class of this QualificationCertificateResult.
+        :type: str
+        """
+        self._driving_class = driving_class
+
+    @property
+    def issuing_authority(self):
+        """Gets the issuing_authority of this QualificationCertificateResult.
+
+        发证机关（非必有，依赖对应从业资格证板式）。 
+
+        :return: The issuing_authority of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._issuing_authority
+
+    @issuing_authority.setter
+    def issuing_authority(self, issuing_authority):
+        """Sets the issuing_authority of this QualificationCertificateResult.
+
+        发证机关（非必有，依赖对应从业资格证板式）。 
+
+        :param issuing_authority: The issuing_authority of this QualificationCertificateResult.
+        :type: str
+        """
+        self._issuing_authority = issuing_authority
+
+    @property
+    def birth_date(self):
+        """Gets the birth_date of this QualificationCertificateResult.
+
+        出生日期（非必有，依赖对应从业资格证板式）。 
+
+        :return: The birth_date of this QualificationCertificateResult.
+        :rtype: str
+        """
+        return self._birth_date
+
+    @birth_date.setter
+    def birth_date(self, birth_date):
+        """Sets the birth_date of this QualificationCertificateResult.
+
+        出生日期（非必有，依赖对应从业资格证板式）。 
+
+        :param birth_date: The birth_date of this QualificationCertificateResult.
+        :type: str
+        """
+        self._birth_date = birth_date
+
+    @property
+    def qualification_category_list(self):
+        """Gets the qualification_category_list of this QualificationCertificateResult.
+
+        从业资格列表。 
+
+        :return: The qualification_category_list of this QualificationCertificateResult.
+        :rtype: list[QualificationCategory]
+        """
+        return self._qualification_category_list
+
+    @qualification_category_list.setter
+    def qualification_category_list(self, qualification_category_list):
+        """Sets the qualification_category_list of this QualificationCertificateResult.
+
+        从业资格列表。 
+
+        :param qualification_category_list: The qualification_category_list of this QualificationCertificateResult.
+        :type: list[QualificationCategory]
+        """
+        self._qualification_category_list = qualification_category_list
+
+    @property
+    def confidence(self):
+        """Gets the confidence of this QualificationCertificateResult.
+
+
+        :return: The confidence of this QualificationCertificateResult.
+        :rtype: QualificationConfidence
+        """
+        return self._confidence
+
+    @confidence.setter
+    def confidence(self, confidence):
+        """Sets the confidence of this QualificationCertificateResult.
+
+
+        :param confidence: The confidence of this QualificationCertificateResult.
+        :type: QualificationConfidence
+        """
+        self._confidence = confidence
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, QualificationCertificateResult):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

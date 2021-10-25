@@ -51,7 +51,7 @@ class FrsClient(Client):
     def add_faces_by_base64(self, request):
         """添加人脸
 
-        添加人脸到人脸库中，检测到传入的单张图片中存在多少张人脸，则增加多少张人脸到人脸库当中。
+        添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
 
         :param AddFacesByBase64Request request
         :return: AddFacesByBase64Response
@@ -61,7 +61,7 @@ class FrsClient(Client):
     def add_faces_by_base64_with_http_info(self, request):
         """添加人脸
 
-        添加人脸到人脸库中，检测到传入的单张图片中存在多少张人脸，则增加多少张人脸到人脸库当中。
+        添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
 
         :param AddFacesByBase64Request request
         :return: AddFacesByBase64Response
@@ -116,7 +116,7 @@ class FrsClient(Client):
     def add_faces_by_file(self, request):
         """添加人脸
 
-        添加人脸到人脸库中，检测到传入的单张图片中存在多少张人脸，则增加多少张人脸到人脸库当中。
+        添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
 
         :param AddFacesByFileRequest request
         :return: AddFacesByFileResponse
@@ -126,13 +126,13 @@ class FrsClient(Client):
     def add_faces_by_file_with_http_info(self, request):
         """添加人脸
 
-        添加人脸到人脸库中，检测到传入的单张图片中存在多少张人脸，则增加多少张人脸到人脸库当中。
+        添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
 
         :param AddFacesByFileRequest request
         :return: AddFacesByFileResponse
         """
 
-        all_params = ['face_set_name', 'image_file', 'external_image_id', 'external_fields']
+        all_params = ['face_set_name', 'image_file', 'external_image_id', 'external_fields', 'single']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -155,6 +155,8 @@ class FrsClient(Client):
             form_params['external_image_id'] = local_var_params['external_image_id']
         if 'external_fields' in local_var_params:
             form_params['external_fields'] = local_var_params['external_fields']
+        if 'single' in local_var_params:
+            form_params['single'] = local_var_params['single']
 
         body_params = None
         if 'body' in local_var_params:
@@ -187,7 +189,7 @@ class FrsClient(Client):
     def add_faces_by_url(self, request):
         """添加人脸
 
-        添加人脸到人脸库中，检测到传入的单张图片中存在多少张人脸，则增加多少张人脸到人脸库当中。
+        添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
 
         :param AddFacesByUrlRequest request
         :return: AddFacesByUrlResponse
@@ -197,7 +199,7 @@ class FrsClient(Client):
     def add_faces_by_url_with_http_info(self, request):
         """添加人脸
 
-        添加人脸到人脸库中，检测到传入的单张图片中存在多少张人脸，则增加多少张人脸到人脸库当中。
+        添加人脸到人脸库中。将单张图片中的人脸添加至人脸库中，支持添加最大人脸或所有人脸。
 
         :param AddFacesByUrlRequest request
         :return: AddFacesByUrlResponse

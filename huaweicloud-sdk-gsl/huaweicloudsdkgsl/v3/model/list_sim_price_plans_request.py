@@ -23,6 +23,7 @@ class ListSimPricePlansRequest:
 
     openapi_types = {
         'sim_card_id': 'int',
+        'sim_price_plan_id': 'int',
         'real_time': 'bool',
         'limit': 'int',
         'offset': 'int'
@@ -30,23 +31,27 @@ class ListSimPricePlansRequest:
 
     attribute_map = {
         'sim_card_id': 'sim_card_id',
+        'sim_price_plan_id': 'sim_price_plan_id',
         'real_time': 'real_time',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, sim_card_id=None, real_time=None, limit=None, offset=None):
+    def __init__(self, sim_card_id=None, sim_price_plan_id=None, real_time=None, limit=None, offset=None):
         """ListSimPricePlansRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._sim_card_id = None
+        self._sim_price_plan_id = None
         self._real_time = None
         self._limit = None
         self._offset = None
         self.discriminator = None
 
         self.sim_card_id = sim_card_id
+        if sim_price_plan_id is not None:
+            self.sim_price_plan_id = sim_price_plan_id
         if real_time is not None:
             self.real_time = real_time
         if limit is not None:
@@ -75,6 +80,28 @@ class ListSimPricePlansRequest:
         :type: int
         """
         self._sim_card_id = sim_card_id
+
+    @property
+    def sim_price_plan_id(self):
+        """Gets the sim_price_plan_id of this ListSimPricePlansRequest.
+
+        套餐实例ID
+
+        :return: The sim_price_plan_id of this ListSimPricePlansRequest.
+        :rtype: int
+        """
+        return self._sim_price_plan_id
+
+    @sim_price_plan_id.setter
+    def sim_price_plan_id(self, sim_price_plan_id):
+        """Sets the sim_price_plan_id of this ListSimPricePlansRequest.
+
+        套餐实例ID
+
+        :param sim_price_plan_id: The sim_price_plan_id of this ListSimPricePlansRequest.
+        :type: int
+        """
+        self._sim_price_plan_id = sim_price_plan_id
 
     @property
     def real_time(self):

@@ -26,6 +26,7 @@ class RestConfConfigDTO:
         'is_send_sms': 'bool',
         'is_send_calendar': 'bool',
         'is_auto_mute': 'bool',
+        'is_hard_terminal_auto_mute': 'bool',
         'is_guest_free_pwd': 'bool',
         'call_in_restriction': 'int',
         'allow_guest_start_conf': 'bool',
@@ -40,6 +41,7 @@ class RestConfConfigDTO:
         'is_send_sms': 'isSendSms',
         'is_send_calendar': 'isSendCalendar',
         'is_auto_mute': 'isAutoMute',
+        'is_hard_terminal_auto_mute': 'isHardTerminalAutoMute',
         'is_guest_free_pwd': 'isGuestFreePwd',
         'call_in_restriction': 'callInRestriction',
         'allow_guest_start_conf': 'allowGuestStartConf',
@@ -49,7 +51,7 @@ class RestConfConfigDTO:
         'enable_waiting_room': 'enableWaitingRoom'
     }
 
-    def __init__(self, is_send_notify=None, is_send_sms=None, is_send_calendar=None, is_auto_mute=None, is_guest_free_pwd=None, call_in_restriction=None, allow_guest_start_conf=None, guest_pwd=None, vmr_id_type=None, prolong_length=None, enable_waiting_room=None):
+    def __init__(self, is_send_notify=None, is_send_sms=None, is_send_calendar=None, is_auto_mute=None, is_hard_terminal_auto_mute=None, is_guest_free_pwd=None, call_in_restriction=None, allow_guest_start_conf=None, guest_pwd=None, vmr_id_type=None, prolong_length=None, enable_waiting_room=None):
         """RestConfConfigDTO - a model defined in huaweicloud sdk"""
         
         
@@ -58,6 +60,7 @@ class RestConfConfigDTO:
         self._is_send_sms = None
         self._is_send_calendar = None
         self._is_auto_mute = None
+        self._is_hard_terminal_auto_mute = None
         self._is_guest_free_pwd = None
         self._call_in_restriction = None
         self._allow_guest_start_conf = None
@@ -75,6 +78,8 @@ class RestConfConfigDTO:
             self.is_send_calendar = is_send_calendar
         if is_auto_mute is not None:
             self.is_auto_mute = is_auto_mute
+        if is_hard_terminal_auto_mute is not None:
+            self.is_hard_terminal_auto_mute = is_hard_terminal_auto_mute
         if is_guest_free_pwd is not None:
             self.is_guest_free_pwd = is_guest_free_pwd
         if call_in_restriction is not None:
@@ -160,7 +165,7 @@ class RestConfConfigDTO:
     def is_auto_mute(self):
         """Gets the is_auto_mute of this RestConfConfigDTO.
 
-        是否自动静音。默认值由会议模板决定。 - True: 自动静音。 - False: 不自动静音。
+        来宾入会,软终端是否自动静音。默认值由会议模板决定。 - True: 自动静音。 - False: 不自动静音。
 
         :return: The is_auto_mute of this RestConfConfigDTO.
         :rtype: bool
@@ -171,12 +176,34 @@ class RestConfConfigDTO:
     def is_auto_mute(self, is_auto_mute):
         """Sets the is_auto_mute of this RestConfConfigDTO.
 
-        是否自动静音。默认值由会议模板决定。 - True: 自动静音。 - False: 不自动静音。
+        来宾入会,软终端是否自动静音。默认值由会议模板决定。 - True: 自动静音。 - False: 不自动静音。
 
         :param is_auto_mute: The is_auto_mute of this RestConfConfigDTO.
         :type: bool
         """
         self._is_auto_mute = is_auto_mute
+
+    @property
+    def is_hard_terminal_auto_mute(self):
+        """Gets the is_hard_terminal_auto_mute of this RestConfConfigDTO.
+
+        来宾入会,硬终端是否自动静音。默认值由会议模板决定。 - True: 自动静音。 - False: 不自动静音。
+
+        :return: The is_hard_terminal_auto_mute of this RestConfConfigDTO.
+        :rtype: bool
+        """
+        return self._is_hard_terminal_auto_mute
+
+    @is_hard_terminal_auto_mute.setter
+    def is_hard_terminal_auto_mute(self, is_hard_terminal_auto_mute):
+        """Sets the is_hard_terminal_auto_mute of this RestConfConfigDTO.
+
+        来宾入会,硬终端是否自动静音。默认值由会议模板决定。 - True: 自动静音。 - False: 不自动静音。
+
+        :param is_hard_terminal_auto_mute: The is_hard_terminal_auto_mute of this RestConfConfigDTO.
+        :type: bool
+        """
+        self._is_hard_terminal_auto_mute = is_hard_terminal_auto_mute
 
     @property
     def is_guest_free_pwd(self):

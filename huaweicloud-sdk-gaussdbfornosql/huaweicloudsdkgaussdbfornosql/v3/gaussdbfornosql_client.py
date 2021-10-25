@@ -244,7 +244,7 @@ class GaussDBforNoSQLClient(Client):
     def create_instance(self, request):
         """创建实例
 
-        创建文档数据库实例，包括集群实例、副本集实例、以及单节点实例。
+        创建数据库实例。
 
         :param CreateInstanceRequest request
         :return: CreateInstanceResponse
@@ -254,7 +254,7 @@ class GaussDBforNoSQLClient(Client):
     def create_instance_with_http_info(self, request):
         """创建实例
 
-        创建文档数据库实例，包括集群实例、副本集实例、以及单节点实例。
+        创建数据库实例。
 
         :param CreateInstanceRequest request
         :return: CreateInstanceResponse

@@ -363,6 +363,69 @@ class OcrClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def recognize_financial_statement(self, request):
+        """财务报表识别
+
+        识别用户上传的表格图片中的文字内容，并将识别的结果返回给用户。
+
+        :param RecognizeFinancialStatementRequest request
+        :return: RecognizeFinancialStatementResponse
+        """
+        return self.recognize_financial_statement_with_http_info(request)
+
+    def recognize_financial_statement_with_http_info(self, request):
+        """财务报表识别
+
+        识别用户上传的表格图片中的文字内容，并将识别的结果返回给用户。
+
+        :param RecognizeFinancialStatementRequest request
+        :return: RecognizeFinancialStatementResponse
+        """
+
+        all_params = ['financial_statement_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/financial-statement',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeFinancialStatementResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def recognize_flight_itinerary(self, request):
         """飞机行程单识别
 
@@ -678,6 +741,69 @@ class OcrClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def recognize_insurance_policy(self, request):
+        """保险单识别
+
+        识别保险单图片上的文字信息，并将识别的结构化结果返回给用户。支持对多板式保险单的扫描图片及手机照片进行结构化信息提取。 
+
+        :param RecognizeInsurancePolicyRequest request
+        :return: RecognizeInsurancePolicyResponse
+        """
+        return self.recognize_insurance_policy_with_http_info(request)
+
+    def recognize_insurance_policy_with_http_info(self, request):
+        """保险单识别
+
+        识别保险单图片上的文字信息，并将识别的结构化结果返回给用户。支持对多板式保险单的扫描图片及手机照片进行结构化信息提取。 
+
+        :param RecognizeInsurancePolicyRequest request
+        :return: RecognizeInsurancePolicyResponse
+        """
+
+        all_params = ['insurance_policy_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/insurance-policy',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeInsurancePolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def recognize_invoice_verification(self, request):
         """发票验真
 
@@ -924,6 +1050,69 @@ class OcrClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RecognizePassportResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def recognize_qualification_certificate(self, request):
+        """从业资格证识别
+
+        识别道路运输从业资格证上的关键文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
+
+        :param RecognizeQualificationCertificateRequest request
+        :return: RecognizeQualificationCertificateResponse
+        """
+        return self.recognize_qualification_certificate_with_http_info(request)
+
+    def recognize_qualification_certificate_with_http_info(self, request):
+        """从业资格证识别
+
+        识别道路运输从业资格证上的关键文字信息，并返回识别的结构化结果。  说明：  如果图片中包含多张卡证票据，请调用[智能分类识别](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=OCR&api=AutoClassification)服务。 
+
+        :param RecognizeQualificationCertificateRequest request
+        :return: RecognizeQualificationCertificateResponse
+        """
+
+        all_params = ['qualification_certificate_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/transportation-qualification-certificate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeQualificationCertificateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

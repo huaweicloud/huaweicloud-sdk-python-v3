@@ -97,7 +97,7 @@ class DeviceCommandRequest:
     def paras(self):
         """Gets the paras of this DeviceCommandRequest.
 
-        **参数说明**：设备执行的命令，Json格式，里面是一个个键值对，如果serviceId不为空，每个键都是profile中命令的参数名（paraName）;如果serviceId为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。
+        **参数说明**：设备执行的命令，Json格式，里面是一个个键值对，如果serviceId不为空，每个键都是profile中命令的参数名（paraName）;如果serviceId为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。此参数仅支持Json格式，暂不支持字符串。
 
         :return: The paras of this DeviceCommandRequest.
         :rtype: object
@@ -108,7 +108,7 @@ class DeviceCommandRequest:
     def paras(self, paras):
         """Sets the paras of this DeviceCommandRequest.
 
-        **参数说明**：设备执行的命令，Json格式，里面是一个个键值对，如果serviceId不为空，每个键都是profile中命令的参数名（paraName）;如果serviceId为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。
+        **参数说明**：设备执行的命令，Json格式，里面是一个个键值对，如果serviceId不为空，每个键都是profile中命令的参数名（paraName）;如果serviceId为空则由用户自定义命令格式。设备命令示例：{\"value\":\"1\"}，具体格式需要应用和设备约定。此参数仅支持Json格式，暂不支持字符串。
 
         :param paras: The paras of this DeviceCommandRequest.
         :type: object

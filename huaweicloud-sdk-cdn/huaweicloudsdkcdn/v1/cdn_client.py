@@ -1027,7 +1027,7 @@ class CdnClient(Client):
         :return: ShowHistoryTaskDetailsResponse
         """
 
-        all_params = ['history_tasks_id', 'enterprise_project_id', 'page_size', 'page_number', 'status', 'url']
+        all_params = ['history_tasks_id', 'enterprise_project_id', 'page_size', 'page_number', 'status', 'url', 'create_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1050,6 +1050,8 @@ class CdnClient(Client):
             query_params.append(('status', local_var_params['status']))
         if 'url' in local_var_params:
             query_params.append(('url', local_var_params['url']))
+        if 'create_time' in local_var_params:
+            query_params.append(('create_time', local_var_params['create_time']))
 
         header_params = {}
 
@@ -1100,7 +1102,7 @@ class CdnClient(Client):
         :return: ShowHistoryTasksResponse
         """
 
-        all_params = ['enterprise_project_id', 'page_size', 'page_number', 'status', 'start_date', 'end_date', 'order_field', 'order_type', 'file_type', 'create_time']
+        all_params = ['enterprise_project_id', 'page_size', 'page_number', 'status', 'start_date', 'end_date', 'order_field', 'order_type', 'file_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1129,8 +1131,6 @@ class CdnClient(Client):
             query_params.append(('order_type', local_var_params['order_type']))
         if 'file_type' in local_var_params:
             query_params.append(('file_type', local_var_params['file_type']))
-        if 'create_time' in local_var_params:
-            query_params.append(('create_time', local_var_params['create_time']))
 
         header_params = {}
 

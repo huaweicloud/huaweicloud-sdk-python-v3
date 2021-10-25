@@ -29,7 +29,7 @@ class GetJobInfoDetail:
         'ended': 'str',
         'process': 'str',
         'instance': 'GetJobInstanceInfoDetail',
-        'entities': 'dict(str, GetJobEntitiesObjectDetail)',
+        'entities': 'GetJobEntitiesInfoDetail',
         'fail_reason': 'str'
     }
 
@@ -231,10 +231,9 @@ class GetJobInfoDetail:
     def entities(self):
         """Gets the entities of this GetJobInfoDetail.
 
-        根据不同的任务，显示不同的内容。
 
         :return: The entities of this GetJobInfoDetail.
-        :rtype: dict(str, GetJobEntitiesObjectDetail)
+        :rtype: GetJobEntitiesInfoDetail
         """
         return self._entities
 
@@ -242,10 +241,9 @@ class GetJobInfoDetail:
     def entities(self, entities):
         """Sets the entities of this GetJobInfoDetail.
 
-        根据不同的任务，显示不同的内容。
 
         :param entities: The entities of this GetJobInfoDetail.
-        :type: dict(str, GetJobEntitiesObjectDetail)
+        :type: GetJobEntitiesInfoDetail
         """
         self._entities = entities
 

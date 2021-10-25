@@ -50,6 +50,7 @@ from huaweicloudsdkbcs.v2.model.handle_notification_response import HandleNotifi
 from huaweicloudsdkbcs.v2.model.ief_node import IEFNode
 from huaweicloudsdkbcs.v2.model.ief_info import IefInfo
 from huaweicloudsdkbcs.v2.model.ief_node import IefNode
+from huaweicloudsdkbcs.v2.model.instance_spc import InstanceSpc
 from huaweicloudsdkbcs.v2.model.invited_domain import InvitedDomain
 from huaweicloudsdkbcs.v2.model.invitee_info import InviteeInfo
 from huaweicloudsdkbcs.v2.model.invitor_info import InvitorInfo
@@ -100,6 +101,8 @@ from huaweicloudsdkbcs.v2.model.resource import Resource
 from huaweicloudsdkbcs.v2.model.sfs_info import SfsInfo
 from huaweicloudsdkbcs.v2.model.show_blockchain_detail_request import ShowBlockchainDetailRequest
 from huaweicloudsdkbcs.v2.model.show_blockchain_detail_response import ShowBlockchainDetailResponse
+from huaweicloudsdkbcs.v2.model.show_blockchain_flavors_request import ShowBlockchainFlavorsRequest
+from huaweicloudsdkbcs.v2.model.show_blockchain_flavors_response import ShowBlockchainFlavorsResponse
 from huaweicloudsdkbcs.v2.model.show_blockchain_nodes_request import ShowBlockchainNodesRequest
 from huaweicloudsdkbcs.v2.model.show_blockchain_nodes_response import ShowBlockchainNodesResponse
 from huaweicloudsdkbcs.v2.model.show_blockchain_status_request import ShowBlockchainStatusRequest

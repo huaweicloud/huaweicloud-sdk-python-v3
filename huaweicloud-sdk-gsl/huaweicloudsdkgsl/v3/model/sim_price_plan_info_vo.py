@@ -27,7 +27,9 @@ class SimPricePlanInfoVO:
         'sim_card_id': 'int',
         'status': 'int',
         'price_plan_id': 'str',
+        'partner': 'int',
         'cid': 'str',
+        'partner_pid': 'str',
         'order_id': 'str',
         'create_time': 'date',
         'active_time': 'date',
@@ -52,7 +54,9 @@ class SimPricePlanInfoVO:
         'sim_card_id': 'sim_card_id',
         'status': 'status',
         'price_plan_id': 'price_plan_id',
+        'partner': 'partner',
         'cid': 'cid',
+        'partner_pid': 'partner_pid',
         'order_id': 'order_id',
         'create_time': 'create_time',
         'active_time': 'active_time',
@@ -71,7 +75,7 @@ class SimPricePlanInfoVO:
         'location_desc': 'location_desc'
     }
 
-    def __init__(self, id=None, account_id=None, sim_card_id=None, status=None, price_plan_id=None, cid=None, order_id=None, create_time=None, active_time=None, stop_time=None, flow_total=None, flow_used=None, flow_left=None, using=None, price_plan_name=None, description=None, package_type=None, effect_type=None, silent_period_day=None, silent_period_unit=None, auto_renew=None, location_desc=None):
+    def __init__(self, id=None, account_id=None, sim_card_id=None, status=None, price_plan_id=None, partner=None, cid=None, partner_pid=None, order_id=None, create_time=None, active_time=None, stop_time=None, flow_total=None, flow_used=None, flow_left=None, using=None, price_plan_name=None, description=None, package_type=None, effect_type=None, silent_period_day=None, silent_period_unit=None, auto_renew=None, location_desc=None):
         """SimPricePlanInfoVO - a model defined in huaweicloud sdk"""
         
         
@@ -81,7 +85,9 @@ class SimPricePlanInfoVO:
         self._sim_card_id = None
         self._status = None
         self._price_plan_id = None
+        self._partner = None
         self._cid = None
+        self._partner_pid = None
         self._order_id = None
         self._create_time = None
         self._active_time = None
@@ -110,8 +116,12 @@ class SimPricePlanInfoVO:
             self.status = status
         if price_plan_id is not None:
             self.price_plan_id = price_plan_id
+        if partner is not None:
+            self.partner = partner
         if cid is not None:
             self.cid = cid
+        if partner_pid is not None:
+            self.partner_pid = partner_pid
         if order_id is not None:
             self.order_id = order_id
         if create_time is not None:
@@ -256,6 +266,28 @@ class SimPricePlanInfoVO:
         self._price_plan_id = price_plan_id
 
     @property
+    def partner(self):
+        """Gets the partner of this SimPricePlanInfoVO.
+
+        伙伴
+
+        :return: The partner of this SimPricePlanInfoVO.
+        :rtype: int
+        """
+        return self._partner
+
+    @partner.setter
+    def partner(self, partner):
+        """Sets the partner of this SimPricePlanInfoVO.
+
+        伙伴
+
+        :param partner: The partner of this SimPricePlanInfoVO.
+        :type: int
+        """
+        self._partner = partner
+
+    @property
     def cid(self):
         """Gets the cid of this SimPricePlanInfoVO.
 
@@ -276,6 +308,28 @@ class SimPricePlanInfoVO:
         :type: str
         """
         self._cid = cid
+
+    @property
+    def partner_pid(self):
+        """Gets the partner_pid of this SimPricePlanInfoVO.
+
+        伙伴套餐pid
+
+        :return: The partner_pid of this SimPricePlanInfoVO.
+        :rtype: str
+        """
+        return self._partner_pid
+
+    @partner_pid.setter
+    def partner_pid(self, partner_pid):
+        """Sets the partner_pid of this SimPricePlanInfoVO.
+
+        伙伴套餐pid
+
+        :param partner_pid: The partner_pid of this SimPricePlanInfoVO.
+        :type: str
+        """
+        self._partner_pid = partner_pid
 
     @property
     def order_id(self):

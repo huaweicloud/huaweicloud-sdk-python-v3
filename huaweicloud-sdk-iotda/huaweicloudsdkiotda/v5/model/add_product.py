@@ -194,7 +194,7 @@ class AddProduct:
     def service_capabilities(self):
         """Gets the service_capabilities of this AddProduct.
 
-        **参数说明**：设备的服务能力列表。
+        **参数说明**：设备的服务能力列表。 **取值范围**：数组长度大小不超过500，内容大小不超过500k。
 
         :return: The service_capabilities of this AddProduct.
         :rtype: list[ServiceCapability]
@@ -205,7 +205,7 @@ class AddProduct:
     def service_capabilities(self, service_capabilities):
         """Sets the service_capabilities of this AddProduct.
 
-        **参数说明**：设备的服务能力列表。
+        **参数说明**：设备的服务能力列表。 **取值范围**：数组长度大小不超过500，内容大小不超过500k。
 
         :param service_capabilities: The service_capabilities of this AddProduct.
         :type: list[ServiceCapability]

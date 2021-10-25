@@ -25,17 +25,19 @@ class ObsForwarding:
         'region_name': 'str',
         'project_id': 'str',
         'bucket_name': 'str',
-        'location': 'str'
+        'location': 'str',
+        'file_path': 'str'
     }
 
     attribute_map = {
         'region_name': 'region_name',
         'project_id': 'project_id',
         'bucket_name': 'bucket_name',
-        'location': 'location'
+        'location': 'location',
+        'file_path': 'file_path'
     }
 
-    def __init__(self, region_name=None, project_id=None, bucket_name=None, location=None):
+    def __init__(self, region_name=None, project_id=None, bucket_name=None, location=None, file_path=None):
         """ObsForwarding - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +46,7 @@ class ObsForwarding:
         self._project_id = None
         self._bucket_name = None
         self._location = None
+        self._file_path = None
         self.discriminator = None
 
         self.region_name = region_name
@@ -51,6 +54,8 @@ class ObsForwarding:
         self.bucket_name = bucket_name
         if location is not None:
             self.location = location
+        if file_path is not None:
+            self.file_path = file_path
 
     @property
     def region_name(self):
@@ -139,6 +144,28 @@ class ObsForwarding:
         :type: str
         """
         self._location = location
+
+    @property
+    def file_path(self):
+        """Gets the file_path of this ObsForwarding.
+
+        **参数说明**：OBS服务中存储通道文件的自定义目录,多级目录可用(/)进行分隔，不可以斜杠(/)开头或结尾，不能包含两个以上相邻的斜杠(/) **取值范围**: 英文字母(a-zA-Z)、数字(0-9)、下划线(_)、中划线(-)、斜杠(/)和大括号({})，最大字符长度256个字符。其中大括号只能用于对应模板参数。 **模板参数**:   - \\{YYYY\\} 年   - \\{MM\\} 月   - \\{DD\\} 日   - \\{HH\\} 小时   例如:自定义目录结构为\\{YYYY\\}/\\{MM\\}/\\{DD\\}/\\{HH\\},则会在转发数据时，根据当前时间往对应的目录结构2021>08>11>09下生成对应的数据。 
+
+        :return: The file_path of this ObsForwarding.
+        :rtype: str
+        """
+        return self._file_path
+
+    @file_path.setter
+    def file_path(self, file_path):
+        """Sets the file_path of this ObsForwarding.
+
+        **参数说明**：OBS服务中存储通道文件的自定义目录,多级目录可用(/)进行分隔，不可以斜杠(/)开头或结尾，不能包含两个以上相邻的斜杠(/) **取值范围**: 英文字母(a-zA-Z)、数字(0-9)、下划线(_)、中划线(-)、斜杠(/)和大括号({})，最大字符长度256个字符。其中大括号只能用于对应模板参数。 **模板参数**:   - \\{YYYY\\} 年   - \\{MM\\} 月   - \\{DD\\} 日   - \\{HH\\} 小时   例如:自定义目录结构为\\{YYYY\\}/\\{MM\\}/\\{DD\\}/\\{HH\\},则会在转发数据时，根据当前时间往对应的目录结构2021>08>11>09下生成对应的数据。 
+
+        :param file_path: The file_path of this ObsForwarding.
+        :type: str
+        """
+        self._file_path = file_path
 
     def to_dict(self):
         """Returns the model properties as a dict"""

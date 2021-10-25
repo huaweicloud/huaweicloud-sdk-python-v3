@@ -25,17 +25,19 @@ class GetBackupDownloadLinkFiles:
         'name': 'str',
         'size': 'int',
         'download_link': 'str',
-        'link_expired_time': 'str'
+        'link_expired_time': 'str',
+        'database_name': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'size': 'size',
         'download_link': 'download_link',
-        'link_expired_time': 'link_expired_time'
+        'link_expired_time': 'link_expired_time',
+        'database_name': 'database_name'
     }
 
-    def __init__(self, name=None, size=None, download_link=None, link_expired_time=None):
+    def __init__(self, name=None, size=None, download_link=None, link_expired_time=None, database_name=None):
         """GetBackupDownloadLinkFiles - a model defined in huaweicloud sdk"""
         
         
@@ -44,12 +46,14 @@ class GetBackupDownloadLinkFiles:
         self._size = None
         self._download_link = None
         self._link_expired_time = None
+        self._database_name = None
         self.discriminator = None
 
         self.name = name
         self.size = size
         self.download_link = download_link
         self.link_expired_time = link_expired_time
+        self.database_name = database_name
 
     @property
     def name(self):
@@ -138,6 +142,28 @@ class GetBackupDownloadLinkFiles:
         :type: str
         """
         self._link_expired_time = link_expired_time
+
+    @property
+    def database_name(self):
+        """Gets the database_name of this GetBackupDownloadLinkFiles.
+
+        数据库名。若文件不是数据库备份，则返回空
+
+        :return: The database_name of this GetBackupDownloadLinkFiles.
+        :rtype: str
+        """
+        return self._database_name
+
+    @database_name.setter
+    def database_name(self, database_name):
+        """Sets the database_name of this GetBackupDownloadLinkFiles.
+
+        数据库名。若文件不是数据库备份，则返回空
+
+        :param database_name: The database_name of this GetBackupDownloadLinkFiles.
+        :type: str
+        """
+        self._database_name = database_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -48,7 +48,7 @@ class ServiceEvent:
     def event_type(self):
         """Gets the event_type of this ServiceEvent.
 
-        **参数说明**：设备事件类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
+        **参数说明**：设备事件类型。注：设备服务内不允许重复。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :return: The event_type of this ServiceEvent.
         :rtype: str
@@ -59,7 +59,7 @@ class ServiceEvent:
     def event_type(self, event_type):
         """Sets the event_type of this ServiceEvent.
 
-        **参数说明**：设备事件类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
+        **参数说明**：设备事件类型。注：设备服务内不允许重复。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param event_type: The event_type of this ServiceEvent.
         :type: str

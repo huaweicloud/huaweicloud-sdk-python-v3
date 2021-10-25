@@ -1102,69 +1102,6 @@ class SmsClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_cert_key(self, request):
-        """获取SSL目的端证书和私钥
-
-        当源端服务器为Windows操作系统时，安装在源端服务器上的迁移Agent通过SSLSocket同目的端服务器通信，该接口用于下载目的端服务器所需要的证书和私钥(PEM格式)。
-
-        :param ShowCertKeyRequest request
-        :return: ShowCertKeyResponse
-        """
-        return self.show_cert_key_with_http_info(request)
-
-    def show_cert_key_with_http_info(self, request):
-        """获取SSL目的端证书和私钥
-
-        当源端服务器为Windows操作系统时，安装在源端服务器上的迁移Agent通过SSLSocket同目的端服务器通信，该接口用于下载目的端服务器所需要的证书和私钥(PEM格式)。
-
-        :param ShowCertKeyRequest request
-        :return: ShowCertKeyResponse
-        """
-
-        all_params = ['task_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'task_id' in local_var_params:
-            path_params['task_id'] = local_var_params['task_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}/certkey',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowCertKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def show_command(self, request):
         """获取服务端命令
 
@@ -2125,7 +2062,7 @@ class SmsClient(Client):
     def update_task_speed(self, request):
         """上报数据迁移进度和速率
 
-        此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。  迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
+        此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。   迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
 
         :param UpdateTaskSpeedRequest request
         :return: UpdateTaskSpeedResponse
@@ -2135,7 +2072,7 @@ class SmsClient(Client):
     def update_task_speed_with_http_info(self, request):
         """上报数据迁移进度和速率
 
-        此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。  迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
+        此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。   迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
 
         :param UpdateTaskSpeedRequest request
         :return: UpdateTaskSpeedResponse

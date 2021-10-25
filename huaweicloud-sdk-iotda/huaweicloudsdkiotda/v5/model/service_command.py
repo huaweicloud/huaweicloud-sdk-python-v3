@@ -53,7 +53,7 @@ class ServiceCommand:
     def command_name(self):
         """Gets the command_name of this ServiceCommand.
 
-        **参数说明**：设备命令名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
+        **参数说明**：设备命令名称。注：设备服务内不允许重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :return: The command_name of this ServiceCommand.
         :rtype: str
@@ -64,7 +64,7 @@ class ServiceCommand:
     def command_name(self, command_name):
         """Sets the command_name of this ServiceCommand.
 
-        **参数说明**：设备命令名称。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
+        **参数说明**：设备命令名称。注：设备服务内不允许重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
         :param command_name: The command_name of this ServiceCommand.
         :type: str

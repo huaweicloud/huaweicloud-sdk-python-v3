@@ -72,7 +72,7 @@ class ServiceCapability:
     def service_id(self):
         """Gets the service_id of this ServiceCapability.
 
-        **参数说明**：设备的服务ID。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
+        **参数说明**：设备的服务ID。注：产品内不允许重复。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
         :return: The service_id of this ServiceCapability.
         :rtype: str
@@ -83,7 +83,7 @@ class ServiceCapability:
     def service_id(self, service_id):
         """Sets the service_id of this ServiceCapability.
 
-        **参数说明**：设备的服务ID。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
+        **参数说明**：设备的服务ID。注：产品内不允许重复。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
         :param service_id: The service_id of this ServiceCapability.
         :type: str
@@ -116,7 +116,7 @@ class ServiceCapability:
     def properties(self):
         """Gets the properties of this ServiceCapability.
 
-        **参数说明**：设备服务支持的属性列表
+        **参数说明**：设备服务支持的属性列表。 **取值范围**：数组长度大小不超过500。
 
         :return: The properties of this ServiceCapability.
         :rtype: list[ServiceProperty]
@@ -127,7 +127,7 @@ class ServiceCapability:
     def properties(self, properties):
         """Sets the properties of this ServiceCapability.
 
-        **参数说明**：设备服务支持的属性列表
+        **参数说明**：设备服务支持的属性列表。 **取值范围**：数组长度大小不超过500。
 
         :param properties: The properties of this ServiceCapability.
         :type: list[ServiceProperty]
@@ -138,7 +138,7 @@ class ServiceCapability:
     def commands(self):
         """Gets the commands of this ServiceCapability.
 
-        **参数说明**：设备服务支持的命令列表。
+        **参数说明**：设备服务支持的命令列表。 **取值范围**：数组长度大小不超过500。
 
         :return: The commands of this ServiceCapability.
         :rtype: list[ServiceCommand]
@@ -149,7 +149,7 @@ class ServiceCapability:
     def commands(self, commands):
         """Sets the commands of this ServiceCapability.
 
-        **参数说明**：设备服务支持的命令列表。
+        **参数说明**：设备服务支持的命令列表。 **取值范围**：数组长度大小不超过500。
 
         :param commands: The commands of this ServiceCapability.
         :type: list[ServiceCommand]
@@ -160,7 +160,7 @@ class ServiceCapability:
     def events(self):
         """Gets the events of this ServiceCapability.
 
-        **参数说明**：设备服务支持的事件列表。
+        **参数说明**：设备服务支持的事件列表。 **取值范围**：数组长度大小不超过500。
 
         :return: The events of this ServiceCapability.
         :rtype: list[ServiceEvent]
@@ -171,7 +171,7 @@ class ServiceCapability:
     def events(self, events):
         """Sets the events of this ServiceCapability.
 
-        **参数说明**：设备服务支持的事件列表。
+        **参数说明**：设备服务支持的事件列表。 **取值范围**：数组长度大小不超过500。
 
         :param events: The events of this ServiceCapability.
         :type: list[ServiceEvent]

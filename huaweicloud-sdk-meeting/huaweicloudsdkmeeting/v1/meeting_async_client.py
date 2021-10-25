@@ -10436,7 +10436,7 @@ class MeetingAsyncClient(Client):
     def search_qos_history_meetings_async(self, request):
         """查询QoS历史会议列表
 
-        * 查询企业内QoS历史会议列表。 * 支持按照时间范围查询，可查询最近3个月内数据。 * 权限角色=旗舰版企业 + 管理员。
+        * 查询企业内QoS历史会议列表。 * 支持按照时间范围查询，可查询最近3个月内数据。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchQosHistoryMeetingsRequest request
         :return: SearchQosHistoryMeetingsResponse
@@ -10446,7 +10446,7 @@ class MeetingAsyncClient(Client):
     def search_qos_history_meetings_with_http_info(self, request):
         """查询QoS历史会议列表
 
-        * 查询企业内QoS历史会议列表。 * 支持按照时间范围查询，可查询最近3个月内数据。 * 权限角色=旗舰版企业 + 管理员。
+        * 查询企业内QoS历史会议列表。 * 支持按照时间范围查询，可查询最近3个月内数据。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchQosHistoryMeetingsRequest request
         :return: SearchQosHistoryMeetingsResponse
@@ -10507,7 +10507,7 @@ class MeetingAsyncClient(Client):
     def search_qos_online_meetings_async(self, request):
         """查询QoS在线会议列表
 
-        * 查询企业内QoS在线会议列表。 * 权限角色=旗舰版企业 + 管理员。
+        * 查询企业内QoS在线会议列表。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchQosOnlineMeetingsRequest request
         :return: SearchQosOnlineMeetingsResponse
@@ -10517,7 +10517,7 @@ class MeetingAsyncClient(Client):
     def search_qos_online_meetings_with_http_info(self, request):
         """查询QoS在线会议列表
 
-        * 查询企业内QoS在线会议列表。 * 权限角色=旗舰版企业 + 管理员。
+        * 查询企业内QoS在线会议列表。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchQosOnlineMeetingsRequest request
         :return: SearchQosOnlineMeetingsResponse
@@ -10574,7 +10574,7 @@ class MeetingAsyncClient(Client):
     def search_qos_participant_detail_async(self, request):
         """查询与会者的QoS数据
 
-        * 查询企业内指定与会者的QoS数据，按照音频，视频，屏幕共享，CPU分类查询QoS数据。 * QoS数据的打点周期为5秒。 * 权限角色=旗舰版企业 + 管理员。
+        * 查询企业内指定与会者的QoS数据，按照音频，视频，屏幕共享，CPU分类查询QoS数据。 * QoS数据的打点周期为5秒。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchQosParticipantDetailRequest request
         :return: SearchQosParticipantDetailResponse
@@ -10584,7 +10584,7 @@ class MeetingAsyncClient(Client):
     def search_qos_participant_detail_with_http_info(self, request):
         """查询与会者的QoS数据
 
-        * 查询企业内指定与会者的QoS数据，按照音频，视频，屏幕共享，CPU分类查询QoS数据。 * QoS数据的打点周期为5秒。 * 权限角色=旗舰版企业 + 管理员。
+        * 查询企业内指定与会者的QoS数据，按照音频，视频，屏幕共享，CPU分类查询QoS数据。 * QoS数据的打点周期为5秒。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchQosParticipantDetailRequest request
         :return: SearchQosParticipantDetailResponse
@@ -10643,7 +10643,7 @@ class MeetingAsyncClient(Client):
     def search_qos_participants_async(self, request):
         """查询QoS会议与会者列表
 
-        * 查询企业内QoS会议与会者列表。 * 权限角色=旗舰版企业 + 管理员。
+        * 查询企业内QoS会议与会者列表。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchQosParticipantsRequest request
         :return: SearchQosParticipantsResponse
@@ -10653,7 +10653,7 @@ class MeetingAsyncClient(Client):
     def search_qos_participants_with_http_info(self, request):
         """查询QoS会议与会者列表
 
-        * 查询企业内QoS会议与会者列表。 * 权限角色=旗舰版企业 + 管理员。
+        * 查询企业内QoS会议与会者列表。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchQosParticipantsRequest request
         :return: SearchQosParticipantsResponse
@@ -10711,10 +10711,138 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def set_qos_threshold_async(self, request):
+        """设置企业租户指定类型的会议质量阈值
+
+        * 设置企业租户指定类型的会议质量阈值。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
+
+        :param SetQosThresholdRequest request
+        :return: SetQosThresholdResponse
+        """
+        return self.set_qos_threshold_with_http_info(request)
+
+    def set_qos_threshold_with_http_info(self, request):
+        """设置企业租户指定类型的会议质量阈值
+
+        * 设置企业租户指定类型的会议质量阈值。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
+
+        :param SetQosThresholdRequest request
+        :return: SetQosThresholdResponse
+        """
+
+        all_params = ['threshold_type', 'set_qos_threshold_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'threshold_type' in local_var_params:
+            query_params.append(('thresholdType', local_var_params['threshold_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=utf-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/metrics/conference/threshold',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetQosThresholdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_qos_threshold_async(self, request):
+        """查询企业租户指定类型的会议质量阈值
+
+        * 查询企业租户指定类型的会议质量阈值。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
+
+        :param ShowQosThresholdRequest request
+        :return: ShowQosThresholdResponse
+        """
+        return self.show_qos_threshold_with_http_info(request)
+
+    def show_qos_threshold_with_http_info(self, request):
+        """查询企业租户指定类型的会议质量阈值
+
+        * 查询企业租户指定类型的会议质量阈值。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
+
+        :param ShowQosThresholdRequest request
+        :return: ShowQosThresholdResponse
+        """
+
+        all_params = ['threshold_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'threshold_type' in local_var_params:
+            query_params.append(('thresholdType', local_var_params['threshold_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/metrics/conference/threshold',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowQosThresholdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def search_statistic_conference_info_async(self, request):
         """查询企业级会议总体统计数据
 
-        * 查询企业级会议指定时间范围内总体统计数据，按日/按月统计。 * 查询企业级会议单日内总体统计数据，按小时统计。 * 权限角色 = 旗舰版企业 + 管理员。
+        * 查询企业级会议指定时间范围内总体统计数据，按日/按月统计。 * 查询企业级会议单日内总体统计数据，按小时统计。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchStatisticConferenceInfoRequest request
         :return: SearchStatisticConferenceInfoResponse
@@ -10724,7 +10852,7 @@ class MeetingAsyncClient(Client):
     def search_statistic_conference_info_with_http_info(self, request):
         """查询企业级会议总体统计数据
 
-        * 查询企业级会议指定时间范围内总体统计数据，按日/按月统计。 * 查询企业级会议单日内总体统计数据，按小时统计。 * 权限角色 = 旗舰版企业 + 管理员。
+        * 查询企业级会议指定时间范围内总体统计数据，按日/按月统计。 * 查询企业级会议单日内总体统计数据，按小时统计。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchStatisticConferenceInfoRequest request
         :return: SearchStatisticConferenceInfoResponse
@@ -10787,7 +10915,7 @@ class MeetingAsyncClient(Client):
     def search_statistic_conference_participant_async(self, request):
         """查询企业级会议与会统计数据
 
-        * 查询企业级会议与会用户统计数据，按日/按月统计。 * 查询企业级会议与会硬件终端统计数据，按日/按月统计。 * 查询企业级会议与会设备统计数据，按日/按月统计。 * 权限角色 = 旗舰版企业 + 管理员。
+        * 查询企业级会议与会用户统计数据，按日/按月统计。 * 查询企业级会议与会硬件终端统计数据，按日/按月统计。 * 查询企业级会议与会设备统计数据，按日/按月统计。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchStatisticConferenceParticipantRequest request
         :return: SearchStatisticConferenceParticipantResponse
@@ -10797,7 +10925,7 @@ class MeetingAsyncClient(Client):
     def search_statistic_conference_participant_with_http_info(self, request):
         """查询企业级会议与会统计数据
 
-        * 查询企业级会议与会用户统计数据，按日/按月统计。 * 查询企业级会议与会硬件终端统计数据，按日/按月统计。 * 查询企业级会议与会设备统计数据，按日/按月统计。 * 权限角色 = 旗舰版企业 + 管理员。
+        * 查询企业级会议与会用户统计数据，按日/按月统计。 * 查询企业级会议与会硬件终端统计数据，按日/按月统计。 * 查询企业级会议与会设备统计数据，按日/按月统计。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchStatisticConferenceParticipantRequest request
         :return: SearchStatisticConferenceParticipantResponse
@@ -10860,7 +10988,7 @@ class MeetingAsyncClient(Client):
     def search_statistic_resource_info_async(self, request):
         """查询企业级会议已购资源使用统计数据
 
-        * 查询企业级会议的已购资源使用状况，按日/按月统计。 * 权限角色 = 旗舰版企业 + 管理员。
+        * 查询企业级会议的已购资源使用状况，按日/按月统计。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchStatisticResourceInfoRequest request
         :return: SearchStatisticResourceInfoResponse
@@ -10870,7 +10998,7 @@ class MeetingAsyncClient(Client):
     def search_statistic_resource_info_with_http_info(self, request):
         """查询企业级会议已购资源使用统计数据
 
-        * 查询企业级会议的已购资源使用状况，按日/按月统计。 * 权限角色 = 旗舰版企业 + 管理员。
+        * 查询企业级会议的已购资源使用状况，按日/按月统计。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchStatisticResourceInfoRequest request
         :return: SearchStatisticResourceInfoResponse
@@ -10933,7 +11061,7 @@ class MeetingAsyncClient(Client):
     def search_statistic_user_info_async(self, request):
         """查询企业级会议的用户统计数据
 
-        * 查询企业级会议用户登录数据，按日/按月统计。 * 查询企业级会议用户激活数据，按日/按月统计。 * 查询企业级会议用户登录设备数据，按日/按月统计。 * 权限角色 = 旗舰版企业 + 管理员。
+        * 查询企业级会议用户登录数据，按日/按月统计。 * 查询企业级会议用户激活数据，按日/按月统计。 * 查询企业级会议用户登录设备数据，按日/按月统计。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchStatisticUserInfoRequest request
         :return: SearchStatisticUserInfoResponse
@@ -10943,7 +11071,7 @@ class MeetingAsyncClient(Client):
     def search_statistic_user_info_with_http_info(self, request):
         """查询企业级会议的用户统计数据
 
-        * 查询企业级会议用户登录数据，按日/按月统计。 * 查询企业级会议用户激活数据，按日/按月统计。 * 查询企业级会议用户登录设备数据，按日/按月统计。 * 权限角色 = 旗舰版企业 + 管理员。
+        * 查询企业级会议用户登录数据，按日/按月统计。 * 查询企业级会议用户激活数据，按日/按月统计。 * 查询企业级会议用户登录设备数据，按日/按月统计。 * 权限角色 = 旗舰版企业/标准版企业 + 管理员。
 
         :param SearchStatisticUserInfoRequest request
         :return: SearchStatisticUserInfoResponse

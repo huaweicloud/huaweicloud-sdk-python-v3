@@ -214,29 +214,47 @@ class GlanceShowImageResponseBody:
         self._support_amd = None
         self.discriminator = None
 
-        self.backup_id = backup_id
-        self.data_origin = data_origin
-        self.description = description
+        if backup_id is not None:
+            self.backup_id = backup_id
+        if data_origin is not None:
+            self.data_origin = data_origin
+        if description is not None:
+            self.description = description
         self.image_size = image_size
         self.image_source_type = image_source_type
         self.imagetype = imagetype
         self.isregistered = isregistered
-        self.originalimagename = originalimagename
-        self.os_bit = os_bit
+        if originalimagename is not None:
+            self.originalimagename = originalimagename
+        if os_bit is not None:
+            self.os_bit = os_bit
         self.os_type = os_type
-        self.os_version = os_version
-        self.platform = platform
-        self.productcode = productcode
-        self.support_diskintensive = support_diskintensive
-        self.support_highperformance = support_highperformance
-        self.support_kvm = support_kvm
-        self.support_kvm_gpu_type = support_kvm_gpu_type
-        self.support_kvm_infiniband = support_kvm_infiniband
-        self.support_largememory = support_largememory
-        self.support_xen = support_xen
-        self.support_xen_gpu_type = support_xen_gpu_type
-        self.support_xen_hana = support_xen_hana
-        self.checksum = checksum
+        if os_version is not None:
+            self.os_version = os_version
+        if platform is not None:
+            self.platform = platform
+        if productcode is not None:
+            self.productcode = productcode
+        if support_diskintensive is not None:
+            self.support_diskintensive = support_diskintensive
+        if support_highperformance is not None:
+            self.support_highperformance = support_highperformance
+        if support_kvm is not None:
+            self.support_kvm = support_kvm
+        if support_kvm_gpu_type is not None:
+            self.support_kvm_gpu_type = support_kvm_gpu_type
+        if support_kvm_infiniband is not None:
+            self.support_kvm_infiniband = support_kvm_infiniband
+        if support_largememory is not None:
+            self.support_largememory = support_largememory
+        if support_xen is not None:
+            self.support_xen = support_xen
+        if support_xen_gpu_type is not None:
+            self.support_xen_gpu_type = support_xen_gpu_type
+        if support_xen_hana is not None:
+            self.support_xen_hana = support_xen_hana
+        if checksum is not None:
+            self.checksum = checksum
         self.container_format = container_format
         self.created_at = created_at
         self.disk_format = disk_format
@@ -249,30 +267,48 @@ class GlanceShowImageResponseBody:
         self.protected = protected
         self.schema = schema
         self._self = _self
-        self.size = size
+        if size is not None:
+            self.size = size
         self.status = status
         self.tags = tags
         self.updated_at = updated_at
         self.virtual_env_type = virtual_env_type
-        self.virtual_size = virtual_size
+        if virtual_size is not None:
+            self.virtual_size = virtual_size
         self.visibility = visibility
-        self.support_fc_inject = support_fc_inject
-        self.enterprise_project_id = enterprise_project_id
-        self.hw_firmware_type = hw_firmware_type
-        self.support_arm = support_arm
-        self.is_offshelved = is_offshelved
-        self.lazyloading = lazyloading
-        self.os_feature_list = os_feature_list
-        self.root_origin = root_origin
-        self.sequence_num = sequence_num
-        self.support_agent_list = support_agent_list
-        self.system__cmkid = system__cmkid
+        if support_fc_inject is not None:
+            self.support_fc_inject = support_fc_inject
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if hw_firmware_type is not None:
+            self.hw_firmware_type = hw_firmware_type
+        if support_arm is not None:
+            self.support_arm = support_arm
+        if is_offshelved is not None:
+            self.is_offshelved = is_offshelved
+        if lazyloading is not None:
+            self.lazyloading = lazyloading
+        if os_feature_list is not None:
+            self.os_feature_list = os_feature_list
+        if root_origin is not None:
+            self.root_origin = root_origin
+        if sequence_num is not None:
+            self.sequence_num = sequence_num
+        if support_agent_list is not None:
+            self.support_agent_list = support_agent_list
+        if system__cmkid is not None:
+            self.system__cmkid = system__cmkid
         self.active_at = active_at
-        self.hw_vif_multiqueue_enabled = hw_vif_multiqueue_enabled
-        self.max_ram = max_ram
-        self.image_location = image_location
-        self.is_config_init = is_config_init
-        self.account_code = account_code
+        if hw_vif_multiqueue_enabled is not None:
+            self.hw_vif_multiqueue_enabled = hw_vif_multiqueue_enabled
+        if max_ram is not None:
+            self.max_ram = max_ram
+        if image_location is not None:
+            self.image_location = image_location
+        if is_config_init is not None:
+            self.is_config_init = is_config_init
+        if account_code is not None:
+            self.account_code = account_code
         if support_amd is not None:
             self.support_amd = support_amd
 
