@@ -50,7 +50,6 @@ class ShowFunctionConfigResponse(SdkResponse):
         'mount_config': 'MountConfig',
         'depend_list': 'list[str]',
         'strategy_config': 'StrategyConfig',
-        'extend_config': 'str',
         'dependencies': 'list[Dependency]',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
@@ -58,7 +57,8 @@ class ShowFunctionConfigResponse(SdkResponse):
         'long_time': 'bool',
         'log_group_id': 'str',
         'log_stream_id': 'str',
-        'type': 'str'
+        'type': 'str',
+        'enable_dynamic_memory': 'bool'
     }
 
     attribute_map = {
@@ -90,7 +90,6 @@ class ShowFunctionConfigResponse(SdkResponse):
         'mount_config': 'mount_config',
         'depend_list': 'depend_list',
         'strategy_config': 'strategy_config',
-        'extend_config': 'extend_config',
         'dependencies': 'dependencies',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
@@ -98,10 +97,11 @@ class ShowFunctionConfigResponse(SdkResponse):
         'long_time': 'long_time',
         'log_group_id': 'log_group_id',
         'log_stream_id': 'log_stream_id',
-        'type': 'type'
+        'type': 'type',
+        'enable_dynamic_memory': 'enable_dynamic_memory'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, depend_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, depend_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None):
         """ShowFunctionConfigResponse - a model defined in huaweicloud sdk"""
         
         super(ShowFunctionConfigResponse, self).__init__()
@@ -134,7 +134,6 @@ class ShowFunctionConfigResponse(SdkResponse):
         self._mount_config = None
         self._depend_list = None
         self._strategy_config = None
-        self._extend_config = None
         self._dependencies = None
         self._initializer_handler = None
         self._initializer_timeout = None
@@ -143,6 +142,7 @@ class ShowFunctionConfigResponse(SdkResponse):
         self._log_group_id = None
         self._log_stream_id = None
         self._type = None
+        self._enable_dynamic_memory = None
         self.discriminator = None
 
         if func_urn is not None:
@@ -201,8 +201,6 @@ class ShowFunctionConfigResponse(SdkResponse):
             self.depend_list = depend_list
         if strategy_config is not None:
             self.strategy_config = strategy_config
-        if extend_config is not None:
-            self.extend_config = extend_config
         if dependencies is not None:
             self.dependencies = dependencies
         if initializer_handler is not None:
@@ -219,6 +217,8 @@ class ShowFunctionConfigResponse(SdkResponse):
             self.log_stream_id = log_stream_id
         if type is not None:
             self.type = type
+        if enable_dynamic_memory is not None:
+            self.enable_dynamic_memory = enable_dynamic_memory
 
     @property
     def func_urn(self):
@@ -831,28 +831,6 @@ class ShowFunctionConfigResponse(SdkResponse):
         self._strategy_config = strategy_config
 
     @property
-    def extend_config(self):
-        """Gets the extend_config of this ShowFunctionConfigResponse.
-
-        函数扩展配置。
-
-        :return: The extend_config of this ShowFunctionConfigResponse.
-        :rtype: str
-        """
-        return self._extend_config
-
-    @extend_config.setter
-    def extend_config(self, extend_config):
-        """Sets the extend_config of this ShowFunctionConfigResponse.
-
-        函数扩展配置。
-
-        :param extend_config: The extend_config of this ShowFunctionConfigResponse.
-        :type: str
-        """
-        self._extend_config = extend_config
-
-    @property
     def dependencies(self):
         """Gets the dependencies of this ShowFunctionConfigResponse.
 
@@ -1027,6 +1005,28 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type: str
         """
         self._type = type
+
+    @property
+    def enable_dynamic_memory(self):
+        """Gets the enable_dynamic_memory of this ShowFunctionConfigResponse.
+
+        是否允许动态内存配置
+
+        :return: The enable_dynamic_memory of this ShowFunctionConfigResponse.
+        :rtype: bool
+        """
+        return self._enable_dynamic_memory
+
+    @enable_dynamic_memory.setter
+    def enable_dynamic_memory(self, enable_dynamic_memory):
+        """Sets the enable_dynamic_memory of this ShowFunctionConfigResponse.
+
+        是否允许动态内存配置
+
+        :param enable_dynamic_memory: The enable_dynamic_memory of this ShowFunctionConfigResponse.
+        :type: bool
+        """
+        self._enable_dynamic_memory = enable_dynamic_memory
 
     def to_dict(self):
         """Returns the model properties as a dict"""

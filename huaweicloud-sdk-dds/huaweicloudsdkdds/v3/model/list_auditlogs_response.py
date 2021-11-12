@@ -22,50 +22,50 @@ class ListAuditlogsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_count': 'int',
+        'total_record': 'int',
         'audit_logs': 'list[ListAuditlogsResult]'
     }
 
     attribute_map = {
-        'total_count': 'total_count',
+        'total_record': 'total_record',
         'audit_logs': 'audit_logs'
     }
 
-    def __init__(self, total_count=None, audit_logs=None):
+    def __init__(self, total_record=None, audit_logs=None):
         """ListAuditlogsResponse - a model defined in huaweicloud sdk"""
         
         super(ListAuditlogsResponse, self).__init__()
 
-        self._total_count = None
+        self._total_record = None
         self._audit_logs = None
         self.discriminator = None
 
-        if total_count is not None:
-            self.total_count = total_count
+        if total_record is not None:
+            self.total_record = total_record
         if audit_logs is not None:
             self.audit_logs = audit_logs
 
     @property
-    def total_count(self):
-        """Gets the total_count of this ListAuditlogsResponse.
+    def total_record(self):
+        """Gets the total_record of this ListAuditlogsResponse.
 
         总记录数。
 
-        :return: The total_count of this ListAuditlogsResponse.
+        :return: The total_record of this ListAuditlogsResponse.
         :rtype: int
         """
-        return self._total_count
+        return self._total_record
 
-    @total_count.setter
-    def total_count(self, total_count):
-        """Sets the total_count of this ListAuditlogsResponse.
+    @total_record.setter
+    def total_record(self, total_record):
+        """Sets the total_record of this ListAuditlogsResponse.
 
         总记录数。
 
-        :param total_count: The total_count of this ListAuditlogsResponse.
+        :param total_record: The total_record of this ListAuditlogsResponse.
         :type: int
         """
-        self._total_count = total_count
+        self._total_record = total_record
 
     @property
     def audit_logs(self):

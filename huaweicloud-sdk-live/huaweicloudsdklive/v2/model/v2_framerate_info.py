@@ -179,7 +179,7 @@ class V2FramerateInfo:
     def data_list(self):
         """Gets the data_list of this V2FramerateInfo.
 
-        帧率信息列表。
+        帧率信息列表，单位为fps。
 
         :return: The data_list of this V2FramerateInfo.
         :rtype: list[int]
@@ -190,7 +190,7 @@ class V2FramerateInfo:
     def data_list(self, data_list):
         """Sets the data_list of this V2FramerateInfo.
 
-        帧率信息列表。
+        帧率信息列表，单位为fps。
 
         :param data_list: The data_list of this V2FramerateInfo.
         :type: list[int]

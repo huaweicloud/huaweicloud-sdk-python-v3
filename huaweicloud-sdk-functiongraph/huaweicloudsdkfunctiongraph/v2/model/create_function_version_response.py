@@ -49,9 +49,7 @@ class CreateFunctionVersionResponse(SdkResponse):
         'last_modified': 'datetime',
         'func_vpc': 'FuncVpc',
         'mount_config': 'MountConfig',
-        'depend_list': 'list[str]',
         'strategy_config': 'StrategyConfig',
-        'extend_config': 'str',
         'dependencies': 'list[Dependency]',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
@@ -59,7 +57,9 @@ class CreateFunctionVersionResponse(SdkResponse):
         'long_time': 'bool',
         'log_group_id': 'str',
         'log_stream_id': 'str',
-        'type': 'str'
+        'type': 'str',
+        'enable_dynamic_memory': 'bool',
+        'function_async_config': 'FunctionAsyncConfig'
     }
 
     attribute_map = {
@@ -90,9 +90,7 @@ class CreateFunctionVersionResponse(SdkResponse):
         'last_modified': 'last_modified',
         'func_vpc': 'func_vpc',
         'mount_config': 'mount_config',
-        'depend_list': 'depend_list',
         'strategy_config': 'strategy_config',
-        'extend_config': 'extend_config',
         'dependencies': 'dependencies',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
@@ -100,10 +98,12 @@ class CreateFunctionVersionResponse(SdkResponse):
         'long_time': 'long_time',
         'log_group_id': 'log_group_id',
         'log_stream_id': 'log_stream_id',
-        'type': 'type'
+        'type': 'type',
+        'enable_dynamic_memory': 'enable_dynamic_memory',
+        'function_async_config': 'function_async_config'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, version_description=None, last_modified=None, func_vpc=None, mount_config=None, depend_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, version_description=None, last_modified=None, func_vpc=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, function_async_config=None):
         """CreateFunctionVersionResponse - a model defined in huaweicloud sdk"""
         
         super(CreateFunctionVersionResponse, self).__init__()
@@ -135,9 +135,7 @@ class CreateFunctionVersionResponse(SdkResponse):
         self._last_modified = None
         self._func_vpc = None
         self._mount_config = None
-        self._depend_list = None
         self._strategy_config = None
-        self._extend_config = None
         self._dependencies = None
         self._initializer_handler = None
         self._initializer_timeout = None
@@ -146,6 +144,8 @@ class CreateFunctionVersionResponse(SdkResponse):
         self._log_group_id = None
         self._log_stream_id = None
         self._type = None
+        self._enable_dynamic_memory = None
+        self._function_async_config = None
         self.discriminator = None
 
         if func_urn is not None:
@@ -202,12 +202,8 @@ class CreateFunctionVersionResponse(SdkResponse):
             self.func_vpc = func_vpc
         if mount_config is not None:
             self.mount_config = mount_config
-        if depend_list is not None:
-            self.depend_list = depend_list
         if strategy_config is not None:
             self.strategy_config = strategy_config
-        if extend_config is not None:
-            self.extend_config = extend_config
         if dependencies is not None:
             self.dependencies = dependencies
         if initializer_handler is not None:
@@ -224,6 +220,10 @@ class CreateFunctionVersionResponse(SdkResponse):
             self.log_stream_id = log_stream_id
         if type is not None:
             self.type = type
+        if enable_dynamic_memory is not None:
+            self.enable_dynamic_memory = enable_dynamic_memory
+        if function_async_config is not None:
+            self.function_async_config = function_async_config
 
     @property
     def func_urn(self):
@@ -816,28 +816,6 @@ class CreateFunctionVersionResponse(SdkResponse):
         self._mount_config = mount_config
 
     @property
-    def depend_list(self):
-        """Gets the depend_list of this CreateFunctionVersionResponse.
-
-        依赖id列表
-
-        :return: The depend_list of this CreateFunctionVersionResponse.
-        :rtype: list[str]
-        """
-        return self._depend_list
-
-    @depend_list.setter
-    def depend_list(self, depend_list):
-        """Sets the depend_list of this CreateFunctionVersionResponse.
-
-        依赖id列表
-
-        :param depend_list: The depend_list of this CreateFunctionVersionResponse.
-        :type: list[str]
-        """
-        self._depend_list = depend_list
-
-    @property
     def strategy_config(self):
         """Gets the strategy_config of this CreateFunctionVersionResponse.
 
@@ -856,28 +834,6 @@ class CreateFunctionVersionResponse(SdkResponse):
         :type: StrategyConfig
         """
         self._strategy_config = strategy_config
-
-    @property
-    def extend_config(self):
-        """Gets the extend_config of this CreateFunctionVersionResponse.
-
-        函数扩展配置。
-
-        :return: The extend_config of this CreateFunctionVersionResponse.
-        :rtype: str
-        """
-        return self._extend_config
-
-    @extend_config.setter
-    def extend_config(self, extend_config):
-        """Sets the extend_config of this CreateFunctionVersionResponse.
-
-        函数扩展配置。
-
-        :param extend_config: The extend_config of this CreateFunctionVersionResponse.
-        :type: str
-        """
-        self._extend_config = extend_config
 
     @property
     def dependencies(self):
@@ -1054,6 +1010,48 @@ class CreateFunctionVersionResponse(SdkResponse):
         :type: str
         """
         self._type = type
+
+    @property
+    def enable_dynamic_memory(self):
+        """Gets the enable_dynamic_memory of this CreateFunctionVersionResponse.
+
+        是否允许动态内存配置
+
+        :return: The enable_dynamic_memory of this CreateFunctionVersionResponse.
+        :rtype: bool
+        """
+        return self._enable_dynamic_memory
+
+    @enable_dynamic_memory.setter
+    def enable_dynamic_memory(self, enable_dynamic_memory):
+        """Sets the enable_dynamic_memory of this CreateFunctionVersionResponse.
+
+        是否允许动态内存配置
+
+        :param enable_dynamic_memory: The enable_dynamic_memory of this CreateFunctionVersionResponse.
+        :type: bool
+        """
+        self._enable_dynamic_memory = enable_dynamic_memory
+
+    @property
+    def function_async_config(self):
+        """Gets the function_async_config of this CreateFunctionVersionResponse.
+
+
+        :return: The function_async_config of this CreateFunctionVersionResponse.
+        :rtype: FunctionAsyncConfig
+        """
+        return self._function_async_config
+
+    @function_async_config.setter
+    def function_async_config(self, function_async_config):
+        """Sets the function_async_config of this CreateFunctionVersionResponse.
+
+
+        :param function_async_config: The function_async_config of this CreateFunctionVersionResponse.
+        :type: FunctionAsyncConfig
+        """
+        self._function_async_config = function_async_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

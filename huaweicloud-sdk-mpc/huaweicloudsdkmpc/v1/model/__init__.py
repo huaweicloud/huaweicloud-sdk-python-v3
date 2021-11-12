@@ -107,6 +107,7 @@ from huaweicloudsdkmpc.v1.model.extract_task import ExtractTask
 from huaweicloudsdkmpc.v1.model.hls_encrypt import HlsEncrypt
 from huaweicloudsdkmpc.v1.model.image_watermark import ImageWatermark
 from huaweicloudsdkmpc.v1.model.image_watermark_setting import ImageWatermarkSetting
+from huaweicloudsdkmpc.v1.model.input_setting import InputSetting
 from huaweicloudsdkmpc.v1.model.list_animated_graphics_task_request import ListAnimatedGraphicsTaskRequest
 from huaweicloudsdkmpc.v1.model.list_animated_graphics_task_response import ListAnimatedGraphicsTaskResponse
 from huaweicloudsdkmpc.v1.model.list_editing_job_request import ListEditingJobRequest
@@ -143,6 +144,8 @@ from huaweicloudsdkmpc.v1.model.media_detail import MediaDetail
 from huaweicloudsdkmpc.v1.model.media_process_task_info import MediaProcessTaskInfo
 from huaweicloudsdkmpc.v1.model.merge_channels_task_info import MergeChannelsTaskInfo
 from huaweicloudsdkmpc.v1.model.meta_data import MetaData
+from huaweicloudsdkmpc.v1.model.mix_info import MixInfo
+from huaweicloudsdkmpc.v1.model.mix_info_layout import MixInfoLayout
 from huaweicloudsdkmpc.v1.model.modify_trans_template_group import ModifyTransTemplateGroup
 from huaweicloudsdkmpc.v1.model.modify_trans_template_req import ModifyTransTemplateReq
 from huaweicloudsdkmpc.v1.model.mpc_multi_audio import MpcMultiAudio
@@ -150,6 +153,7 @@ from huaweicloudsdkmpc.v1.model.mpe_call_back_req import MpeCallBackReq
 from huaweicloudsdkmpc.v1.model.mpe_meta_data import MpeMetaData
 from huaweicloudsdkmpc.v1.model.mul_input_file_info import MulInputFileInfo
 from huaweicloudsdkmpc.v1.model.multi_audio import MultiAudio
+from huaweicloudsdkmpc.v1.model.multi_concat_info import MultiConcatInfo
 from huaweicloudsdkmpc.v1.model.multi_task_info import MultiTaskInfo
 from huaweicloudsdkmpc.v1.model.obs_obj_info import ObsObjInfo
 from huaweicloudsdkmpc.v1.model.origin_para import OriginPara
@@ -159,6 +163,7 @@ from huaweicloudsdkmpc.v1.model.output_setting import OutputSetting
 from huaweicloudsdkmpc.v1.model.output_thumbnail_para import OutputThumbnailPara
 from huaweicloudsdkmpc.v1.model.output_video_para import OutputVideoPara
 from huaweicloudsdkmpc.v1.model.output_watermark_para import OutputWatermarkPara
+from huaweicloudsdkmpc.v1.model.pane_setting import PaneSetting
 from huaweicloudsdkmpc.v1.model.pic_info import PicInfo
 from huaweicloudsdkmpc.v1.model.quality_enhance_template import QualityEnhanceTemplate
 from huaweicloudsdkmpc.v1.model.quality_enhance_template_info import QualityEnhanceTemplateInfo

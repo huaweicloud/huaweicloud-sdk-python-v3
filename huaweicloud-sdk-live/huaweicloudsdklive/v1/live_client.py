@@ -1250,6 +1250,71 @@ class LiveClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def run_record(self, request):
+        """提交录制控制命令
+
+        对单条流的实时录制控制接口。
+
+        :param RunRecordRequest request
+        :return: RunRecordResponse
+        """
+        return self.run_record_with_http_info(request)
+
+    def run_record_with_http_info(self, request):
+        """提交录制控制命令
+
+        对单条流的实时录制控制接口。
+
+        :param RunRecordRequest request
+        :return: RunRecordResponse
+        """
+
+        all_params = ['action', 'run_record_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/record/control',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RunRecordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_domain(self, request):
         """查询直播域名
 

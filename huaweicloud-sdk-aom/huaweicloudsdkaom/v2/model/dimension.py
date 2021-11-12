@@ -40,10 +40,8 @@ class Dimension:
         self._value = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if value is not None:
-            self.value = value
+        self.name = name
+        self.value = value
 
     @property
     def name(self):

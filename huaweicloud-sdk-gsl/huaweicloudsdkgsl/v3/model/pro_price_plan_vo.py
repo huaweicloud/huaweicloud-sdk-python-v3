@@ -273,7 +273,7 @@ class ProPricePlanVo:
     def effect_type(self):
         """Gets the effect_type of this ProPricePlanVo.
 
-        套餐生效类型
+        套餐生效类型 1.订购后激活使用时生效 2.订购即时生效 3.订购下个月开始生效
 
         :return: The effect_type of this ProPricePlanVo.
         :rtype: int
@@ -284,7 +284,7 @@ class ProPricePlanVo:
     def effect_type(self, effect_type):
         """Sets the effect_type of this ProPricePlanVo.
 
-        套餐生效类型
+        套餐生效类型 1.订购后激活使用时生效 2.订购即时生效 3.订购下个月开始生效
 
         :param effect_type: The effect_type of this ProPricePlanVo.
         :type: int
@@ -405,7 +405,7 @@ class ProPricePlanVo:
     def sim_type(self):
         """Gets the sim_type of this ProPricePlanVo.
 
-        SIM卡类型
+        SIM卡类型 1.vSIM 2.eSIM 3.实体卡
 
         :return: The sim_type of this ProPricePlanVo.
         :rtype: int
@@ -416,7 +416,7 @@ class ProPricePlanVo:
     def sim_type(self, sim_type):
         """Sets the sim_type of this ProPricePlanVo.
 
-        SIM卡类型
+        SIM卡类型 1.vSIM 2.eSIM 3.实体卡
 
         :param sim_type: The sim_type of this ProPricePlanVo.
         :type: int
@@ -449,7 +449,7 @@ class ProPricePlanVo:
     def price(self):
         """Gets the price of this ProPricePlanVo.
 
-        价格(元)
+        价格(分)
 
         :return: The price of this ProPricePlanVo.
         :rtype: int
@@ -460,7 +460,7 @@ class ProPricePlanVo:
     def price(self, price):
         """Sets the price of this ProPricePlanVo.
 
-        价格(元)
+        价格(分)
 
         :param price: The price of this ProPricePlanVo.
         :type: int

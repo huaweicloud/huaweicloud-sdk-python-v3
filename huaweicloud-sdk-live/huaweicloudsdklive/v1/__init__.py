@@ -58,9 +58,12 @@ from huaweicloudsdklive.v1.model.quality_info import QualityInfo
 from huaweicloudsdklive.v1.model.record_callback_config import RecordCallbackConfig
 from huaweicloudsdklive.v1.model.record_callback_config_request import RecordCallbackConfigRequest
 from huaweicloudsdklive.v1.model.record_content_info_v2 import RecordContentInfoV2
+from huaweicloudsdklive.v1.model.record_control_info import RecordControlInfo
 from huaweicloudsdklive.v1.model.record_obs_file_addr import RecordObsFileAddr
 from huaweicloudsdklive.v1.model.record_rule import RecordRule
 from huaweicloudsdklive.v1.model.record_rule_request import RecordRuleRequest
+from huaweicloudsdklive.v1.model.run_record_request import RunRecordRequest
+from huaweicloudsdklive.v1.model.run_record_response import RunRecordResponse
 from huaweicloudsdklive.v1.model.show_domain_request import ShowDomainRequest
 from huaweicloudsdklive.v1.model.show_domain_response import ShowDomainResponse
 from huaweicloudsdklive.v1.model.show_record_callback_config_request import ShowRecordCallbackConfigRequest

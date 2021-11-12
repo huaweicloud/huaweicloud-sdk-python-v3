@@ -22,97 +22,42 @@ class MysqlProxyComputeFlavor:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'spec_code': 'str',
         'vcpus': 'str',
         'ram': 'str',
         'db_type': 'str',
-        'az_status': 'object',
-        'region_status': 'str'
+        'id': 'str',
+        'spec_code': 'str',
+        'az_status': 'object'
     }
 
     attribute_map = {
-        'id': 'id',
-        'spec_code': 'spec_code',
         'vcpus': 'vcpus',
         'ram': 'ram',
         'db_type': 'db_type',
-        'az_status': 'az_status',
-        'region_status': 'region_status'
+        'id': 'id',
+        'spec_code': 'spec_code',
+        'az_status': 'az_status'
     }
 
-    def __init__(self, id=None, spec_code=None, vcpus=None, ram=None, db_type=None, az_status=None, region_status=None):
+    def __init__(self, vcpus=None, ram=None, db_type=None, id=None, spec_code=None, az_status=None):
         """MysqlProxyComputeFlavor - a model defined in huaweicloud sdk"""
         
         
 
-        self._id = None
-        self._spec_code = None
         self._vcpus = None
         self._ram = None
         self._db_type = None
+        self._id = None
+        self._spec_code = None
         self._az_status = None
-        self._region_status = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if spec_code is not None:
-            self.spec_code = spec_code
-        if vcpus is not None:
-            self.vcpus = vcpus
-        if ram is not None:
-            self.ram = ram
-        if db_type is not None:
-            self.db_type = db_type
-        if az_status is not None:
-            self.az_status = az_status
-        if region_status is not None:
-            self.region_status = region_status
-
-    @property
-    def id(self):
-        """Gets the id of this MysqlProxyComputeFlavor.
-
-        Proxy规格id。
-
-        :return: The id of this MysqlProxyComputeFlavor.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this MysqlProxyComputeFlavor.
-
-        Proxy规格id。
-
-        :param id: The id of this MysqlProxyComputeFlavor.
-        :type: str
-        """
-        self._id = id
-
-    @property
-    def spec_code(self):
-        """Gets the spec_code of this MysqlProxyComputeFlavor.
-
-        Proxy规格码。
-
-        :return: The spec_code of this MysqlProxyComputeFlavor.
-        :rtype: str
-        """
-        return self._spec_code
-
-    @spec_code.setter
-    def spec_code(self, spec_code):
-        """Sets the spec_code of this MysqlProxyComputeFlavor.
-
-        Proxy规格码。
-
-        :param spec_code: The spec_code of this MysqlProxyComputeFlavor.
-        :type: str
-        """
-        self._spec_code = spec_code
+        self.vcpus = vcpus
+        self.ram = ram
+        self.db_type = db_type
+        self.id = id
+        self.spec_code = spec_code
+        self.az_status = az_status
 
     @property
     def vcpus(self):
@@ -181,6 +126,50 @@ class MysqlProxyComputeFlavor:
         self._db_type = db_type
 
     @property
+    def id(self):
+        """Gets the id of this MysqlProxyComputeFlavor.
+
+        Proxy规格id。
+
+        :return: The id of this MysqlProxyComputeFlavor.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this MysqlProxyComputeFlavor.
+
+        Proxy规格id。
+
+        :param id: The id of this MysqlProxyComputeFlavor.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def spec_code(self):
+        """Gets the spec_code of this MysqlProxyComputeFlavor.
+
+        Proxy规格码。
+
+        :return: The spec_code of this MysqlProxyComputeFlavor.
+        :rtype: str
+        """
+        return self._spec_code
+
+    @spec_code.setter
+    def spec_code(self, spec_code):
+        """Sets the spec_code of this MysqlProxyComputeFlavor.
+
+        Proxy规格码。
+
+        :param spec_code: The spec_code of this MysqlProxyComputeFlavor.
+        :type: str
+        """
+        self._spec_code = spec_code
+
+    @property
     def az_status(self):
         """Gets the az_status of this MysqlProxyComputeFlavor.
 
@@ -201,28 +190,6 @@ class MysqlProxyComputeFlavor:
         :type: object
         """
         self._az_status = az_status
-
-    @property
-    def region_status(self):
-        """Gets the region_status of this MysqlProxyComputeFlavor.
-
-        Region状态。
-
-        :return: The region_status of this MysqlProxyComputeFlavor.
-        :rtype: str
-        """
-        return self._region_status
-
-    @region_status.setter
-    def region_status(self, region_status):
-        """Sets the region_status of this MysqlProxyComputeFlavor.
-
-        Region状态。
-
-        :param region_status: The region_status of this MysqlProxyComputeFlavor.
-        :type: str
-        """
-        self._region_status = region_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

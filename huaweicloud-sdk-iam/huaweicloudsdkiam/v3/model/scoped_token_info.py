@@ -28,7 +28,7 @@ class ScopedTokenInfo:
         'user': 'FederationUserBody',
         'domain': 'DomainInfo',
         'project': 'ProjectInfo',
-        'roles': 'list[UnscopedTokenInfoRoles]',
+        'roles': 'list[ScopedTokenInfoRoles]',
         'catalog': 'list[UnscopedTokenInfoCatalog]'
     }
 
@@ -73,7 +73,7 @@ class ScopedTokenInfo:
     def expires_at(self):
         """Gets the expires_at of this ScopedTokenInfo.
 
-        过期时间
+        过期时间。
 
         :return: The expires_at of this ScopedTokenInfo.
         :rtype: str
@@ -84,7 +84,7 @@ class ScopedTokenInfo:
     def expires_at(self, expires_at):
         """Sets the expires_at of this ScopedTokenInfo.
 
-        过期时间
+        过期时间。
 
         :param expires_at: The expires_at of this ScopedTokenInfo.
         :type: str
@@ -95,7 +95,7 @@ class ScopedTokenInfo:
     def methods(self):
         """Gets the methods of this ScopedTokenInfo.
 
-        获取token的方式，联邦用户默认为mapped
+        获取token的方式，联邦用户默认为mapped。
 
         :return: The methods of this ScopedTokenInfo.
         :rtype: list[str]
@@ -106,7 +106,7 @@ class ScopedTokenInfo:
     def methods(self, methods):
         """Sets the methods of this ScopedTokenInfo.
 
-        获取token的方式，联邦用户默认为mapped
+        获取token的方式，联邦用户默认为mapped。
 
         :param methods: The methods of this ScopedTokenInfo.
         :type: list[str]
@@ -117,7 +117,7 @@ class ScopedTokenInfo:
     def issued_at(self):
         """Gets the issued_at of this ScopedTokenInfo.
 
-        生成时间
+        生成时间。
 
         :return: The issued_at of this ScopedTokenInfo.
         :rtype: str
@@ -128,7 +128,7 @@ class ScopedTokenInfo:
     def issued_at(self, issued_at):
         """Sets the issued_at of this ScopedTokenInfo.
 
-        生成时间
+        生成时间。
 
         :param issued_at: The issued_at of this ScopedTokenInfo.
         :type: str
@@ -199,10 +199,10 @@ class ScopedTokenInfo:
     def roles(self):
         """Gets the roles of this ScopedTokenInfo.
 
-        roles信息
+        roles信息。
 
         :return: The roles of this ScopedTokenInfo.
-        :rtype: list[UnscopedTokenInfoRoles]
+        :rtype: list[ScopedTokenInfoRoles]
         """
         return self._roles
 
@@ -210,10 +210,10 @@ class ScopedTokenInfo:
     def roles(self, roles):
         """Sets the roles of this ScopedTokenInfo.
 
-        roles信息
+        roles信息。
 
         :param roles: The roles of this ScopedTokenInfo.
-        :type: list[UnscopedTokenInfoRoles]
+        :type: list[ScopedTokenInfoRoles]
         """
         self._roles = roles
 

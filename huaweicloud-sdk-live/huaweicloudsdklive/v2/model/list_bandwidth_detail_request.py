@@ -25,8 +25,10 @@ class ListBandwidthDetailRequest:
         'play_domains': 'list[str]',
         'app': 'str',
         'stream': 'str',
+        'country': 'list[str]',
         'region': 'list[str]',
         'isp': 'list[str]',
+        'protocol': 'str',
         'interval': 'int',
         'start_time': 'str',
         'end_time': 'str'
@@ -36,14 +38,16 @@ class ListBandwidthDetailRequest:
         'play_domains': 'play_domains',
         'app': 'app',
         'stream': 'stream',
+        'country': 'country',
         'region': 'region',
         'isp': 'isp',
+        'protocol': 'protocol',
         'interval': 'interval',
         'start_time': 'start_time',
         'end_time': 'end_time'
     }
 
-    def __init__(self, play_domains=None, app=None, stream=None, region=None, isp=None, interval=None, start_time=None, end_time=None):
+    def __init__(self, play_domains=None, app=None, stream=None, country=None, region=None, isp=None, protocol=None, interval=None, start_time=None, end_time=None):
         """ListBandwidthDetailRequest - a model defined in huaweicloud sdk"""
         
         
@@ -51,8 +55,10 @@ class ListBandwidthDetailRequest:
         self._play_domains = None
         self._app = None
         self._stream = None
+        self._country = None
         self._region = None
         self._isp = None
+        self._protocol = None
         self._interval = None
         self._start_time = None
         self._end_time = None
@@ -63,10 +69,14 @@ class ListBandwidthDetailRequest:
             self.app = app
         if stream is not None:
             self.stream = stream
+        if country is not None:
+            self.country = country
         if region is not None:
             self.region = region
         if isp is not None:
             self.isp = isp
+        if protocol is not None:
+            self.protocol = protocol
         if interval is not None:
             self.interval = interval
         if start_time is not None:
@@ -78,7 +88,7 @@ class ListBandwidthDetailRequest:
     def play_domains(self):
         """Gets the play_domains of this ListBandwidthDetailRequest.
 
-        播放域名列表，最多支持查询10个域名，多个域名以逗号分隔。 
+        播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。 
 
         :return: The play_domains of this ListBandwidthDetailRequest.
         :rtype: list[str]
@@ -89,7 +99,7 @@ class ListBandwidthDetailRequest:
     def play_domains(self, play_domains):
         """Sets the play_domains of this ListBandwidthDetailRequest.
 
-        播放域名列表，最多支持查询10个域名，多个域名以逗号分隔。 
+        播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。 
 
         :param play_domains: The play_domains of this ListBandwidthDetailRequest.
         :type: list[str]
@@ -141,6 +151,28 @@ class ListBandwidthDetailRequest:
         self._stream = stream
 
     @property
+    def country(self):
+        """Gets the country of this ListBandwidthDetailRequest.
+
+        国家列表。具体取值请参考[国家名称缩写](vod_08_0172.xml)，不填写查询所有国家。 
+
+        :return: The country of this ListBandwidthDetailRequest.
+        :rtype: list[str]
+        """
+        return self._country
+
+    @country.setter
+    def country(self, country):
+        """Sets the country of this ListBandwidthDetailRequest.
+
+        国家列表。具体取值请参考[国家名称缩写](vod_08_0172.xml)，不填写查询所有国家。 
+
+        :param country: The country of this ListBandwidthDetailRequest.
+        :type: list[str]
+        """
+        self._country = country
+
+    @property
     def region(self):
         """Gets the region of this ListBandwidthDetailRequest.
 
@@ -166,7 +198,7 @@ class ListBandwidthDetailRequest:
     def isp(self):
         """Gets the isp of this ListBandwidthDetailRequest.
 
-        运营商列表，取值如下： - \"CMCC ：移动\" - \"CTCC ： 电信\" - \"CUCC ：联通\" - \"OTHER: 其他\"  不填写查询所有运营商。 
+        运营商列表，取值如下： - CMCC ：移动 - CTCC ：电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
         :return: The isp of this ListBandwidthDetailRequest.
         :rtype: list[str]
@@ -177,12 +209,34 @@ class ListBandwidthDetailRequest:
     def isp(self, isp):
         """Sets the isp of this ListBandwidthDetailRequest.
 
-        运营商列表，取值如下： - \"CMCC ：移动\" - \"CTCC ： 电信\" - \"CUCC ：联通\" - \"OTHER: 其他\"  不填写查询所有运营商。 
+        运营商列表，取值如下： - CMCC ：移动 - CTCC ：电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
         :param isp: The isp of this ListBandwidthDetailRequest.
         :type: list[str]
         """
         self._isp = isp
+
+    @property
+    def protocol(self):
+        """Gets the protocol of this ListBandwidthDetailRequest.
+
+        请求协议
+
+        :return: The protocol of this ListBandwidthDetailRequest.
+        :rtype: str
+        """
+        return self._protocol
+
+    @protocol.setter
+    def protocol(self, protocol):
+        """Sets the protocol of this ListBandwidthDetailRequest.
+
+        请求协议
+
+        :param protocol: The protocol of this ListBandwidthDetailRequest.
+        :type: str
+        """
+        self._protocol = protocol
 
     @property
     def interval(self):
@@ -210,7 +264,7 @@ class ListBandwidthDetailRequest:
     def start_time(self):
         """Gets the start_time of this ListBandwidthDetailRequest.
 
-        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期90天。  若参数为空，默认查询7天数据。 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
         :return: The start_time of this ListBandwidthDetailRequest.
         :rtype: str
@@ -221,7 +275,7 @@ class ListBandwidthDetailRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListBandwidthDetailRequest.
 
-        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期90天。  若参数为空，默认查询7天数据。 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
         :param start_time: The start_time of this ListBandwidthDetailRequest.
         :type: str

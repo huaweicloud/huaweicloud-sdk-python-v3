@@ -128,4 +128,5 @@ from huaweicloudsdkocr.v1.model.vin_request_body import VinRequestBody
 from huaweicloudsdkocr.v1.model.web_image_request_body import WebImageRequestBody
 from huaweicloudsdkocr.v1.model.web_image_result import WebImageResult
 from huaweicloudsdkocr.v1.model.web_image_words_block_list import WebImageWordsBlockList
+from huaweicloudsdkocr.v1.model.words_list_iem import WordsListIem
 from huaweicloudsdkocr.v1.model.words_region_list import WordsRegionList

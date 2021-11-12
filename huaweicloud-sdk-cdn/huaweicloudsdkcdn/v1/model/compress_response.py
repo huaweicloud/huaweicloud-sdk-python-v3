@@ -23,7 +23,7 @@ class CompressResponse:
 
     openapi_types = {
         'compress_switch': 'int',
-        'compress_rules': 'CompressRules'
+        'compress_rules': 'list[CompressRules]'
     }
 
     attribute_map = {
@@ -70,9 +70,10 @@ class CompressResponse:
     def compress_rules(self):
         """Gets the compress_rules of this CompressResponse.
 
+        GZIP压缩规则
 
         :return: The compress_rules of this CompressResponse.
-        :rtype: CompressRules
+        :rtype: list[CompressRules]
         """
         return self._compress_rules
 
@@ -80,9 +81,10 @@ class CompressResponse:
     def compress_rules(self, compress_rules):
         """Sets the compress_rules of this CompressResponse.
 
+        GZIP压缩规则
 
         :param compress_rules: The compress_rules of this CompressResponse.
-        :type: CompressRules
+        :type: list[CompressRules]
         """
         self._compress_rules = compress_rules
 

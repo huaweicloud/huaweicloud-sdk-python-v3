@@ -74,7 +74,7 @@ class BatchRemoveOrgsFromChannelRequest:
     def channel_id(self):
         """Gets the channel_id of this BatchRemoveOrgsFromChannelRequest.
 
-        区块链通道id。
+        区块链通道名称。
 
         :return: The channel_id of this BatchRemoveOrgsFromChannelRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class BatchRemoveOrgsFromChannelRequest:
     def channel_id(self, channel_id):
         """Sets the channel_id of this BatchRemoveOrgsFromChannelRequest.
 
-        区块链通道id。
+        区块链通道名称。
 
         :param channel_id: The channel_id of this BatchRemoveOrgsFromChannelRequest.
         :type: str

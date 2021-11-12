@@ -59,7 +59,7 @@ class DomainItemDetail:
     def start_time(self):
         """Gets the start_time of this DomainItemDetail.
 
-        数据起始时间戳，可能与请求时间不一致，可能不返回
+        数据起始时间戳，可能与请求时间不一致
 
         :return: The start_time of this DomainItemDetail.
         :rtype: int
@@ -70,7 +70,7 @@ class DomainItemDetail:
     def start_time(self, start_time):
         """Sets the start_time of this DomainItemDetail.
 
-        数据起始时间戳，可能与请求时间不一致，可能不返回
+        数据起始时间戳，可能与请求时间不一致
 
         :param start_time: The start_time of this DomainItemDetail.
         :type: int
@@ -81,7 +81,7 @@ class DomainItemDetail:
     def end_time(self):
         """Gets the end_time of this DomainItemDetail.
 
-        数据结束时间戳，可能与请求时间不一致，可能不返回
+        数据结束时间戳，可能与请求时间不一致
 
         :return: The end_time of this DomainItemDetail.
         :rtype: int
@@ -92,7 +92,7 @@ class DomainItemDetail:
     def end_time(self, end_time):
         """Sets the end_time of this DomainItemDetail.
 
-        数据结束时间戳，可能与请求时间不一致，可能不返回
+        数据结束时间戳，可能与请求时间不一致
 
         :param end_time: The end_time of this DomainItemDetail.
         :type: int
@@ -103,7 +103,7 @@ class DomainItemDetail:
     def stat_type(self):
         """Gets the stat_type of this DomainItemDetail.
 
-        指标类型，可能不返回
+        指标类型
 
         :return: The stat_type of this DomainItemDetail.
         :rtype: str
@@ -114,7 +114,7 @@ class DomainItemDetail:
     def stat_type(self, stat_type):
         """Sets the stat_type of this DomainItemDetail.
 
-        指标类型，可能不返回
+        指标类型
 
         :param stat_type: The stat_type of this DomainItemDetail.
         :type: str
@@ -125,7 +125,7 @@ class DomainItemDetail:
     def domains(self):
         """Gets the domains of this DomainItemDetail.
 
-        数据结束时间戳，可能与请求时间不一致，可能不返回
+        指标统计数据列表，如果该时间段内无值，则为空数组[]
 
         :return: The domains of this DomainItemDetail.
         :rtype: list[dict(str, object)]
@@ -136,7 +136,7 @@ class DomainItemDetail:
     def domains(self, domains):
         """Sets the domains of this DomainItemDetail.
 
-        数据结束时间戳，可能与请求时间不一致，可能不返回
+        指标统计数据列表，如果该时间段内无值，则为空数组[]
 
         :param domains: The domains of this DomainItemDetail.
         :type: list[dict(str, object)]

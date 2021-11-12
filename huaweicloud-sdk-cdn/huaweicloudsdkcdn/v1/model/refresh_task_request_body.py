@@ -70,7 +70,7 @@ class RefreshTaskRequestBody:
     def urls(self):
         """Gets the urls of this RefreshTaskRequestBody.
 
-        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为10240字符，单次最多输入1000个url。
+        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为4096字符，单次最多输入1000个url。
 
         :return: The urls of this RefreshTaskRequestBody.
         :rtype: list[str]
@@ -81,7 +81,7 @@ class RefreshTaskRequestBody:
     def urls(self, urls):
         """Sets the urls of this RefreshTaskRequestBody.
 
-        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为10240字符，单次最多输入1000个url。
+        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，单个url的长度限制为4096字符，单次最多输入1000个url。
 
         :param urls: The urls of this RefreshTaskRequestBody.
         :type: list[str]

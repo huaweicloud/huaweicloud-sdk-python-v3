@@ -387,7 +387,7 @@ class MysqlInstanceRequest:
     def time_zone(self):
         """Gets the time_zone of this MysqlInstanceRequest.
 
-        时区。
+        时区。默认时区为UTC。
 
         :return: The time_zone of this MysqlInstanceRequest.
         :rtype: str
@@ -398,7 +398,7 @@ class MysqlInstanceRequest:
     def time_zone(self, time_zone):
         """Sets the time_zone of this MysqlInstanceRequest.
 
-        时区。
+        时区。默认时区为UTC。
 
         :param time_zone: The time_zone of this MysqlInstanceRequest.
         :type: str

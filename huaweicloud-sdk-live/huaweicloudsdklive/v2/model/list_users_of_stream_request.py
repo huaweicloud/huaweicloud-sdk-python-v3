@@ -26,7 +26,9 @@ class ListUsersOfStreamRequest:
         'app': 'str',
         'stream': 'str',
         'isp': 'list[str]',
+        'country': 'list[str]',
         'region': 'list[str]',
+        'protocol': 'str',
         'interval': 'int',
         'start_time': 'str',
         'end_time': 'str'
@@ -37,13 +39,15 @@ class ListUsersOfStreamRequest:
         'app': 'app',
         'stream': 'stream',
         'isp': 'isp',
+        'country': 'country',
         'region': 'region',
+        'protocol': 'protocol',
         'interval': 'interval',
         'start_time': 'start_time',
         'end_time': 'end_time'
     }
 
-    def __init__(self, play_domain=None, app=None, stream=None, isp=None, region=None, interval=None, start_time=None, end_time=None):
+    def __init__(self, play_domain=None, app=None, stream=None, isp=None, country=None, region=None, protocol=None, interval=None, start_time=None, end_time=None):
         """ListUsersOfStreamRequest - a model defined in huaweicloud sdk"""
         
         
@@ -52,7 +56,9 @@ class ListUsersOfStreamRequest:
         self._app = None
         self._stream = None
         self._isp = None
+        self._country = None
         self._region = None
+        self._protocol = None
         self._interval = None
         self._start_time = None
         self._end_time = None
@@ -65,8 +71,12 @@ class ListUsersOfStreamRequest:
             self.stream = stream
         if isp is not None:
             self.isp = isp
+        if country is not None:
+            self.country = country
         if region is not None:
             self.region = region
+        if protocol is not None:
+            self.protocol = protocol
         if interval is not None:
             self.interval = interval
         if start_time is not None:
@@ -144,7 +154,7 @@ class ListUsersOfStreamRequest:
     def isp(self):
         """Gets the isp of this ListUsersOfStreamRequest.
 
-        运营商列表，取值如下： - \"CMCC ：移动\" - \"CTCC ： 电信\" - \"CUCC ：联通\" - \"OTHER: 其他\"  不填写查询所有运营商。 
+        运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
         :return: The isp of this ListUsersOfStreamRequest.
         :rtype: list[str]
@@ -155,12 +165,34 @@ class ListUsersOfStreamRequest:
     def isp(self, isp):
         """Sets the isp of this ListUsersOfStreamRequest.
 
-        运营商列表，取值如下： - \"CMCC ：移动\" - \"CTCC ： 电信\" - \"CUCC ：联通\" - \"OTHER: 其他\"  不填写查询所有运营商。 
+        运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
         :param isp: The isp of this ListUsersOfStreamRequest.
         :type: list[str]
         """
         self._isp = isp
+
+    @property
+    def country(self):
+        """Gets the country of this ListUsersOfStreamRequest.
+
+        国家列表。具体取值请参考[国家名称缩写](vod_08_0172.xml)，不填写查询所有国家。 
+
+        :return: The country of this ListUsersOfStreamRequest.
+        :rtype: list[str]
+        """
+        return self._country
+
+    @country.setter
+    def country(self, country):
+        """Sets the country of this ListUsersOfStreamRequest.
+
+        国家列表。具体取值请参考[国家名称缩写](vod_08_0172.xml)，不填写查询所有国家。 
+
+        :param country: The country of this ListUsersOfStreamRequest.
+        :type: list[str]
+        """
+        self._country = country
 
     @property
     def region(self):
@@ -183,6 +215,28 @@ class ListUsersOfStreamRequest:
         :type: list[str]
         """
         self._region = region
+
+    @property
+    def protocol(self):
+        """Gets the protocol of this ListUsersOfStreamRequest.
+
+        请求协议
+
+        :return: The protocol of this ListUsersOfStreamRequest.
+        :rtype: str
+        """
+        return self._protocol
+
+    @protocol.setter
+    def protocol(self, protocol):
+        """Sets the protocol of this ListUsersOfStreamRequest.
+
+        请求协议
+
+        :param protocol: The protocol of this ListUsersOfStreamRequest.
+        :type: str
+        """
+        self._protocol = protocol
 
     @property
     def interval(self):
@@ -210,7 +264,7 @@ class ListUsersOfStreamRequest:
     def start_time(self):
         """Gets the start_time of this ListUsersOfStreamRequest.
 
-        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期90天。  若参数为空，默认查询7天数据。 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
         :return: The start_time of this ListUsersOfStreamRequest.
         :rtype: str
@@ -221,7 +275,7 @@ class ListUsersOfStreamRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListUsersOfStreamRequest.
 
-        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期90天。  若参数为空，默认查询7天数据。 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期一年。  若参数为空，默认查询7天数据。 
 
         :param start_time: The start_time of this ListUsersOfStreamRequest.
         :type: str

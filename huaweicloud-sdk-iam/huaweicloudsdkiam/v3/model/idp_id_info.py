@@ -43,7 +43,7 @@ class IdpIdInfo:
     def id(self):
         """Gets the id of this IdpIdInfo.
 
-        身份提供商id
+        身份提供商id。
 
         :return: The id of this IdpIdInfo.
         :rtype: str
@@ -54,7 +54,7 @@ class IdpIdInfo:
     def id(self, id):
         """Sets the id of this IdpIdInfo.
 
-        身份提供商id
+        身份提供商id。
 
         :param id: The id of this IdpIdInfo.
         :type: str

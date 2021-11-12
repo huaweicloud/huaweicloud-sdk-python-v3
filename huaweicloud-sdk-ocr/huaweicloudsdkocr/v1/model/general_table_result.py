@@ -23,25 +23,30 @@ class GeneralTableResult:
 
     openapi_types = {
         'words_region_count': 'int',
-        'words_region_list': 'list[WordsRegionList]'
+        'words_region_list': 'list[WordsRegionList]',
+        'excel': 'str'
     }
 
     attribute_map = {
         'words_region_count': 'words_region_count',
-        'words_region_list': 'words_region_list'
+        'words_region_list': 'words_region_list',
+        'excel': 'excel'
     }
 
-    def __init__(self, words_region_count=None, words_region_list=None):
+    def __init__(self, words_region_count=None, words_region_list=None, excel=None):
         """GeneralTableResult - a model defined in huaweicloud sdk"""
         
         
 
         self._words_region_count = None
         self._words_region_list = None
+        self._excel = None
         self.discriminator = None
 
         self.words_region_count = words_region_count
         self.words_region_list = words_region_list
+        if excel is not None:
+            self.excel = excel
 
     @property
     def words_region_count(self):
@@ -86,6 +91,28 @@ class GeneralTableResult:
         :type: list[WordsRegionList]
         """
         self._words_region_list = words_region_list
+
+    @property
+    def excel(self):
+        """Gets the excel of this GeneralTableResult.
+
+        表格图像转换为excel的base64编码，图像中的文字和表格按位置写入excel。对返回的excel编码可用base64.b64decode解码并保存为.xlsx文件。 
+
+        :return: The excel of this GeneralTableResult.
+        :rtype: str
+        """
+        return self._excel
+
+    @excel.setter
+    def excel(self, excel):
+        """Sets the excel of this GeneralTableResult.
+
+        表格图像转换为excel的base64编码，图像中的文字和表格按位置写入excel。对返回的excel编码可用base64.b64decode解码并保存为.xlsx文件。 
+
+        :param excel: The excel of this GeneralTableResult.
+        :type: str
+        """
+        self._excel = excel
 
     def to_dict(self):
         """Returns the model properties as a dict"""

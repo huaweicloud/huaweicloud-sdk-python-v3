@@ -28,6 +28,7 @@ class HttpInfoRequestBody:
         'private_key': 'str',
         'http2': 'int',
         'certificate_type': 'int',
+        'force_redirect_https': 'int',
         'force_redirect_config': 'ForceRedirect'
     }
 
@@ -38,10 +39,11 @@ class HttpInfoRequestBody:
         'private_key': 'private_key',
         'http2': 'http2',
         'certificate_type': 'certificate_type',
+        'force_redirect_https': 'force_redirect_https',
         'force_redirect_config': 'force_redirect_config'
     }
 
-    def __init__(self, cert_name=None, https_status=None, certificate=None, private_key=None, http2=None, certificate_type=None, force_redirect_config=None):
+    def __init__(self, cert_name=None, https_status=None, certificate=None, private_key=None, http2=None, certificate_type=None, force_redirect_https=None, force_redirect_config=None):
         """HttpInfoRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -52,6 +54,7 @@ class HttpInfoRequestBody:
         self._private_key = None
         self._http2 = None
         self._certificate_type = None
+        self._force_redirect_https = None
         self._force_redirect_config = None
         self.discriminator = None
 
@@ -65,6 +68,8 @@ class HttpInfoRequestBody:
             self.http2 = http2
         if certificate_type is not None:
             self.certificate_type = certificate_type
+        if force_redirect_https is not None:
+            self.force_redirect_https = force_redirect_https
         if force_redirect_config is not None:
             self.force_redirect_config = force_redirect_config
 
@@ -199,6 +204,28 @@ class HttpInfoRequestBody:
         :type: int
         """
         self._certificate_type = certificate_type
+
+    @property
+    def force_redirect_https(self):
+        """Gets the force_redirect_https of this HttpInfoRequestBody.
+
+        强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
+
+        :return: The force_redirect_https of this HttpInfoRequestBody.
+        :rtype: int
+        """
+        return self._force_redirect_https
+
+    @force_redirect_https.setter
+    def force_redirect_https(self, force_redirect_https):
+        """Sets the force_redirect_https of this HttpInfoRequestBody.
+
+        强制跳转HTTPS（0：不强制；1：强制） 为空值时默认设置为关闭。（建议使用force_redirect_config修改配置）
+
+        :param force_redirect_https: The force_redirect_https of this HttpInfoRequestBody.
+        :type: int
+        """
+        self._force_redirect_https = force_redirect_https
 
     @property
     def force_redirect_config(self):

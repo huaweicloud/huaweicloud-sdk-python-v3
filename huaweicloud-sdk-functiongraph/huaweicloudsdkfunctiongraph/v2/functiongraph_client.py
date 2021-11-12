@@ -753,71 +753,6 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def delete_reserved_instance_by_id(self, request):
-        """根据预留实例ID删除对应预留实例
-
-        预留实例异常时，可以根据预留实例ID删除该预留实例，注意：删除成功之后重新会重新拉起一个新的预留实例，业务高峰期可以更好的工作（该接口主要针对白名单用户）
-
-        :param DeleteReservedInstanceByIdRequest request
-        :return: DeleteReservedInstanceByIdResponse
-        """
-        return self.delete_reserved_instance_by_id_with_http_info(request)
-
-    def delete_reserved_instance_by_id_with_http_info(self, request):
-        """根据预留实例ID删除对应预留实例
-
-        预留实例异常时，可以根据预留实例ID删除该预留实例，注意：删除成功之后重新会重新拉起一个新的预留实例，业务高峰期可以更好的工作（该接口主要针对白名单用户）
-
-        :param DeleteReservedInstanceByIdRequest request
-        :return: DeleteReservedInstanceByIdResponse
-        """
-
-        all_params = ['function_urn', 'instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'function_urn' in local_var_params:
-            path_params['function_urn'] = local_var_params['function_urn']
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/reservedinstances/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='DeleteReservedInstanceByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def delete_version_alias(self, request):
         """删除函数版本别名。
 
@@ -2114,6 +2049,69 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_tracing(self, request):
+        """获取函数调用链配置
+
+        获取函数调用链配置
+
+        :param ShowTracingRequest request
+        :return: ShowTracingResponse
+        """
+        return self.show_tracing_with_http_info(request)
+
+    def show_tracing_with_http_info(self, request):
+        """获取函数调用链配置
+
+        获取函数调用链配置
+
+        :param ShowTracingRequest request
+        :return: ShowTracingResponse
+        """
+
+        all_params = ['function_urn']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/tracing',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowTracingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_version_alias(self, request):
         """获取函数版本的指定别名信息。
 
@@ -2565,6 +2563,71 @@ class FunctionGraphClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateFunctionReservedInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_tracing(self, request):
+        """修改函数调用链配置
+
+        修改函数调用链配置,开通/修改传入aksk，关闭aksk传空
+
+        :param UpdateTracingRequest request
+        :return: UpdateTracingResponse
+        """
+        return self.update_tracing_with_http_info(request)
+
+    def update_tracing_with_http_info(self, request):
+        """修改函数调用链配置
+
+        修改函数调用链配置,开通/修改传入aksk，关闭aksk传空
+
+        :param UpdateTracingRequest request
+        :return: UpdateTracingResponse
+        """
+
+        all_params = ['function_urn', 'update_tracing_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/tracing',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateTracingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

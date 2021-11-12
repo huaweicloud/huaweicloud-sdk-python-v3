@@ -99,7 +99,7 @@ class RestConfConfigDTO:
     def is_send_notify(self):
         """Gets the is_send_notify of this RestConfConfigDTO.
 
-        是否需要发送会议邮件通知。默认值由会议模板决定。 - True: 需要。 - False: 不需要。
+        是否需要发送会议邮件通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
 
         :return: The is_send_notify of this RestConfConfigDTO.
         :rtype: bool
@@ -110,7 +110,7 @@ class RestConfConfigDTO:
     def is_send_notify(self, is_send_notify):
         """Sets the is_send_notify of this RestConfConfigDTO.
 
-        是否需要发送会议邮件通知。默认值由会议模板决定。 - True: 需要。 - False: 不需要。
+        是否需要发送会议邮件通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
 
         :param is_send_notify: The is_send_notify of this RestConfConfigDTO.
         :type: bool
@@ -121,7 +121,7 @@ class RestConfConfigDTO:
     def is_send_sms(self):
         """Gets the is_send_sms of this RestConfConfigDTO.
 
-        是否需要发送会议短信通知。默认值由会议模板决定。 - True: 需要。 - False: 不需要。
+        是否需要发送会议短信通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
 
         :return: The is_send_sms of this RestConfConfigDTO.
         :rtype: bool
@@ -132,7 +132,7 @@ class RestConfConfigDTO:
     def is_send_sms(self, is_send_sms):
         """Sets the is_send_sms of this RestConfConfigDTO.
 
-        是否需要发送会议短信通知。默认值由会议模板决定。 - True: 需要。 - False: 不需要。
+        是否需要发送会议短信通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
 
         :param is_send_sms: The is_send_sms of this RestConfConfigDTO.
         :type: bool
@@ -143,7 +143,7 @@ class RestConfConfigDTO:
     def is_send_calendar(self):
         """Gets the is_send_calendar of this RestConfConfigDTO.
 
-        是否需要发送会议通知。默认值由会议模板决定。 - True: 需要。 - False: 不需要。
+        是否需要发送会议通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
 
         :return: The is_send_calendar of this RestConfConfigDTO.
         :rtype: bool
@@ -154,7 +154,7 @@ class RestConfConfigDTO:
     def is_send_calendar(self, is_send_calendar):
         """Sets the is_send_calendar of this RestConfConfigDTO.
 
-        是否需要发送会议通知。默认值由会议模板决定。 - True: 需要。 - False: 不需要。
+        是否需要发送会议通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
 
         :param is_send_calendar: The is_send_calendar of this RestConfConfigDTO.
         :type: bool
@@ -165,7 +165,7 @@ class RestConfConfigDTO:
     def is_auto_mute(self):
         """Gets the is_auto_mute of this RestConfConfigDTO.
 
-        来宾入会,软终端是否自动静音。默认值由会议模板决定。 - True: 自动静音。 - False: 不自动静音。
+        来宾入会,软终端是否自动静音。默认值由企业级配置决定。 - True: 自动静音。 - False: 不自动静音。
 
         :return: The is_auto_mute of this RestConfConfigDTO.
         :rtype: bool
@@ -176,7 +176,7 @@ class RestConfConfigDTO:
     def is_auto_mute(self, is_auto_mute):
         """Sets the is_auto_mute of this RestConfConfigDTO.
 
-        来宾入会,软终端是否自动静音。默认值由会议模板决定。 - True: 自动静音。 - False: 不自动静音。
+        来宾入会,软终端是否自动静音。默认值由企业级配置决定。 - True: 自动静音。 - False: 不自动静音。
 
         :param is_auto_mute: The is_auto_mute of this RestConfConfigDTO.
         :type: bool
@@ -187,7 +187,7 @@ class RestConfConfigDTO:
     def is_hard_terminal_auto_mute(self):
         """Gets the is_hard_terminal_auto_mute of this RestConfConfigDTO.
 
-        来宾入会,硬终端是否自动静音。默认值由会议模板决定。 - True: 自动静音。 - False: 不自动静音。
+        来宾入会,硬终端是否自动静音。默认值由企业级配置决定。 - True: 自动静音。 - False: 不自动静音。
 
         :return: The is_hard_terminal_auto_mute of this RestConfConfigDTO.
         :rtype: bool
@@ -198,7 +198,7 @@ class RestConfConfigDTO:
     def is_hard_terminal_auto_mute(self, is_hard_terminal_auto_mute):
         """Sets the is_hard_terminal_auto_mute of this RestConfConfigDTO.
 
-        来宾入会,硬终端是否自动静音。默认值由会议模板决定。 - True: 自动静音。 - False: 不自动静音。
+        来宾入会,硬终端是否自动静音。默认值由企业级配置决定。 - True: 自动静音。 - False: 不自动静音。
 
         :param is_hard_terminal_auto_mute: The is_hard_terminal_auto_mute of this RestConfConfigDTO.
         :type: bool

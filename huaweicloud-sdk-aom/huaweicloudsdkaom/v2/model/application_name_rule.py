@@ -22,53 +22,31 @@ class ApplicationNameRule:
     sensitive_list = []
 
     openapi_types = {
-        'args': 'list[str]',
         'name_type': 'str',
+        'args': 'list[str]',
         'value': 'list[str]'
     }
 
     attribute_map = {
-        'args': 'args',
         'name_type': 'nameType',
+        'args': 'args',
         'value': 'value'
     }
 
-    def __init__(self, args=None, name_type=None, value=None):
+    def __init__(self, name_type=None, args=None, value=None):
         """ApplicationNameRule - a model defined in huaweicloud sdk"""
         
         
 
-        self._args = None
         self._name_type = None
+        self._args = None
         self._value = None
         self.discriminator = None
 
-        self.args = args
         self.name_type = name_type
+        self.args = args
         if value is not None:
             self.value = value
-
-    @property
-    def args(self):
-        """Gets the args of this ApplicationNameRule.
-
-        输入值。
-
-        :return: The args of this ApplicationNameRule.
-        :rtype: list[str]
-        """
-        return self._args
-
-    @args.setter
-    def args(self, args):
-        """Sets the args of this ApplicationNameRule.
-
-        输入值。
-
-        :param args: The args of this ApplicationNameRule.
-        :type: list[str]
-        """
-        self._args = args
 
     @property
     def name_type(self):
@@ -91,6 +69,28 @@ class ApplicationNameRule:
         :type: str
         """
         self._name_type = name_type
+
+    @property
+    def args(self):
+        """Gets the args of this ApplicationNameRule.
+
+        输入值。
+
+        :return: The args of this ApplicationNameRule.
+        :rtype: list[str]
+        """
+        return self._args
+
+    @args.setter
+    def args(self, args):
+        """Sets the args of this ApplicationNameRule.
+
+        输入值。
+
+        :param args: The args of this ApplicationNameRule.
+        :type: list[str]
+        """
+        self._args = args
 
     @property
     def value(self):

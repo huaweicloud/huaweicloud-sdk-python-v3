@@ -30,8 +30,8 @@ class AppRulesSpec:
         'is_detect': 'str',
         'log_file_fix': 'list[str]',
         'log_path_rule': 'list[LogPathRule]',
-        'name_rule': 'list[NameRule]',
-        'priority': 'int'
+        'name_rule': 'NameRule',
+        'priority': 'str'
     }
 
     attribute_map = {
@@ -257,10 +257,9 @@ class AppRulesSpec:
     def name_rule(self):
         """Gets the name_rule of this AppRulesSpec.
 
-        服务发现规则命名部分。
 
         :return: The name_rule of this AppRulesSpec.
-        :rtype: list[NameRule]
+        :rtype: NameRule
         """
         return self._name_rule
 
@@ -268,10 +267,9 @@ class AppRulesSpec:
     def name_rule(self, name_rule):
         """Sets the name_rule of this AppRulesSpec.
 
-        服务发现规则命名部分。
 
         :param name_rule: The name_rule of this AppRulesSpec.
-        :type: list[NameRule]
+        :type: NameRule
         """
         self._name_rule = name_rule
 
@@ -279,10 +277,10 @@ class AppRulesSpec:
     def priority(self):
         """Gets the priority of this AppRulesSpec.
 
-        1~9999的整数,默认取值为9999 规则优先级。
+        1~9999的整数字符串,默认取值为9999 规则优先级。
 
         :return: The priority of this AppRulesSpec.
-        :rtype: int
+        :rtype: str
         """
         return self._priority
 
@@ -290,10 +288,10 @@ class AppRulesSpec:
     def priority(self, priority):
         """Sets the priority of this AppRulesSpec.
 
-        1~9999的整数,默认取值为9999 规则优先级。
+        1~9999的整数字符串,默认取值为9999 规则优先级。
 
         :param priority: The priority of this AppRulesSpec.
-        :type: int
+        :type: str
         """
         self._priority = priority
 

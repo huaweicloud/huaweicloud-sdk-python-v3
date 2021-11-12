@@ -59,7 +59,7 @@ class DomainItemLocationDetails:
     def start_time(self):
         """Gets the start_time of this DomainItemLocationDetails.
 
-        数据起始时间戳，可能与请求时间不一致，可能不返回
+        数据起始时间戳，可能与请求时间不一致
 
         :return: The start_time of this DomainItemLocationDetails.
         :rtype: int
@@ -70,7 +70,7 @@ class DomainItemLocationDetails:
     def start_time(self, start_time):
         """Sets the start_time of this DomainItemLocationDetails.
 
-        数据起始时间戳，可能与请求时间不一致，可能不返回
+        数据起始时间戳，可能与请求时间不一致
 
         :param start_time: The start_time of this DomainItemLocationDetails.
         :type: int
@@ -81,7 +81,7 @@ class DomainItemLocationDetails:
     def end_time(self):
         """Gets the end_time of this DomainItemLocationDetails.
 
-        数据结束时间戳，可能与请求时间不一致，可能不返回
+        数据结束时间戳，可能与请求时间不一致
 
         :return: The end_time of this DomainItemLocationDetails.
         :rtype: int
@@ -92,7 +92,7 @@ class DomainItemLocationDetails:
     def end_time(self, end_time):
         """Sets the end_time of this DomainItemLocationDetails.
 
-        数据结束时间戳，可能与请求时间不一致，可能不返回
+        数据结束时间戳，可能与请求时间不一致
 
         :param end_time: The end_time of this DomainItemLocationDetails.
         :type: int
@@ -103,7 +103,7 @@ class DomainItemLocationDetails:
     def stat_type(self):
         """Gets the stat_type of this DomainItemLocationDetails.
 
-        指标类型，可能不返回
+        指标类型
 
         :return: The stat_type of this DomainItemLocationDetails.
         :rtype: str
@@ -114,7 +114,7 @@ class DomainItemLocationDetails:
     def stat_type(self, stat_type):
         """Sets the stat_type of this DomainItemLocationDetails.
 
-        指标类型，可能不返回
+        指标类型
 
         :param stat_type: The stat_type of this DomainItemLocationDetails.
         :type: str

@@ -735,6 +735,69 @@ class VpcClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def migrate_sub_network_interface(self, request):
+        """迁移辅助弹性网卡
+
+        批量迁移辅助弹性网卡
+
+        :param MigrateSubNetworkInterfaceRequest request
+        :return: MigrateSubNetworkInterfaceResponse
+        """
+        return self.migrate_sub_network_interface_with_http_info(request)
+
+    def migrate_sub_network_interface_with_http_info(self, request):
+        """迁移辅助弹性网卡
+
+        批量迁移辅助弹性网卡
+
+        :param MigrateSubNetworkInterfaceRequest request
+        :return: MigrateSubNetworkInterfaceResponse
+        """
+
+        all_params = ['migrate_sub_network_interface_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/sub-network-interfaces/migrate',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='MigrateSubNetworkInterfaceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_security_group(self, request):
         """查询安全组
 
@@ -1109,6 +1172,860 @@ class VpcClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateSubNetworkInterfaceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_address_group(self, request):
+        """创建地址组
+
+        创建地址组
+
+        :param CreateAddressGroupRequest request
+        :return: CreateAddressGroupResponse
+        """
+        return self.create_address_group_with_http_info(request)
+
+    def create_address_group_with_http_info(self, request):
+        """创建地址组
+
+        创建地址组
+
+        :param CreateAddressGroupRequest request
+        :return: CreateAddressGroupResponse
+        """
+
+        all_params = ['create_address_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/address_groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateAddressGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_address_group(self, request):
+        """删除地址组
+
+        删除地址组，非强制删除，删除前请确保未被其他资源引用
+
+        :param DeleteAddressGroupRequest request
+        :return: DeleteAddressGroupResponse
+        """
+        return self.delete_address_group_with_http_info(request)
+
+    def delete_address_group_with_http_info(self, request):
+        """删除地址组
+
+        删除地址组，非强制删除，删除前请确保未被其他资源引用
+
+        :param DeleteAddressGroupRequest request
+        :return: DeleteAddressGroupResponse
+        """
+
+        all_params = ['address_group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'address_group_id' in local_var_params:
+            path_params['address_group_id'] = local_var_params['address_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/address_groups/{address_group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteAddressGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_ip_address_group_force(self, request):
+        """强制删除地址组
+
+        强制删除地址组，删除的地址组与安全组规则关联时，会删除地址组与关联的安全组规则。
+
+        :param DeleteIpAddressGroupForceRequest request
+        :return: DeleteIpAddressGroupForceResponse
+        """
+        return self.delete_ip_address_group_force_with_http_info(request)
+
+    def delete_ip_address_group_force_with_http_info(self, request):
+        """强制删除地址组
+
+        强制删除地址组，删除的地址组与安全组规则关联时，会删除地址组与关联的安全组规则。
+
+        :param DeleteIpAddressGroupForceRequest request
+        :return: DeleteIpAddressGroupForceResponse
+        """
+
+        all_params = ['address_group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'address_group_id' in local_var_params:
+            path_params['address_group_id'] = local_var_params['address_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/address_groups/{address_group_id}/force',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteIpAddressGroupForceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_address_group(self, request):
+        """查询地址组列表
+
+        查询地址组列表，根据过滤条件进行过滤。
+
+        :param ListAddressGroupRequest request
+        :return: ListAddressGroupResponse
+        """
+        return self.list_address_group_with_http_info(request)
+
+    def list_address_group_with_http_info(self, request):
+        """查询地址组列表
+
+        查询地址组列表，根据过滤条件进行过滤。
+
+        :param ListAddressGroupRequest request
+        :return: ListAddressGroupResponse
+        """
+
+        all_params = ['limit', 'marker', 'id', 'name', 'ip_version', 'description']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'ip_version' in local_var_params:
+            query_params.append(('ip_version', local_var_params['ip_version']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/address_groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAddressGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_address_group(self, request):
+        """查询地址组
+
+        查询地址组详情。
+
+        :param ShowAddressGroupRequest request
+        :return: ShowAddressGroupResponse
+        """
+        return self.show_address_group_with_http_info(request)
+
+    def show_address_group_with_http_info(self, request):
+        """查询地址组
+
+        查询地址组详情。
+
+        :param ShowAddressGroupRequest request
+        :return: ShowAddressGroupResponse
+        """
+
+        all_params = ['address_group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'address_group_id' in local_var_params:
+            path_params['address_group_id'] = local_var_params['address_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/address_groups/{address_group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowAddressGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_address_group(self, request):
+        """更新地址组
+
+        更新地址组。
+
+        :param UpdateAddressGroupRequest request
+        :return: UpdateAddressGroupResponse
+        """
+        return self.update_address_group_with_http_info(request)
+
+    def update_address_group_with_http_info(self, request):
+        """更新地址组
+
+        更新地址组。
+
+        :param UpdateAddressGroupRequest request
+        :return: UpdateAddressGroupResponse
+        """
+
+        all_params = ['address_group_id', 'update_address_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'address_group_id' in local_var_params:
+            path_params['address_group_id'] = local_var_params['address_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/address_groups/{address_group_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateAddressGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def add_vpc_extend_cidr(self, request):
+        """添加VPC扩展网段
+
+        添加VPC的扩展网段
+
+        :param AddVpcExtendCidrRequest request
+        :return: AddVpcExtendCidrResponse
+        """
+        return self.add_vpc_extend_cidr_with_http_info(request)
+
+    def add_vpc_extend_cidr_with_http_info(self, request):
+        """添加VPC扩展网段
+
+        添加VPC的扩展网段
+
+        :param AddVpcExtendCidrRequest request
+        :return: AddVpcExtendCidrResponse
+        """
+
+        all_params = ['vpc_id', 'add_vpc_extend_cidr_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_id' in local_var_params:
+            path_params['vpc_id'] = local_var_params['vpc_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/vpcs/{vpc_id}/add-extend-cidr',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddVpcExtendCidrResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_vpc(self, request):
+        """创建VPC
+
+        创建虚拟私有云
+
+        :param CreateVpcRequest request
+        :return: CreateVpcResponse
+        """
+        return self.create_vpc_with_http_info(request)
+
+    def create_vpc_with_http_info(self, request):
+        """创建VPC
+
+        创建虚拟私有云
+
+        :param CreateVpcRequest request
+        :return: CreateVpcResponse
+        """
+
+        all_params = ['create_vpc_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/vpcs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateVpcResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_vpc(self, request):
+        """删除VPC
+
+        删除VPC
+
+        :param DeleteVpcRequest request
+        :return: DeleteVpcResponse
+        """
+        return self.delete_vpc_with_http_info(request)
+
+    def delete_vpc_with_http_info(self, request):
+        """删除VPC
+
+        删除VPC
+
+        :param DeleteVpcRequest request
+        :return: DeleteVpcResponse
+        """
+
+        all_params = ['vpc_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_id' in local_var_params:
+            path_params['vpc_id'] = local_var_params['vpc_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/vpcs/{vpc_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteVpcResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_vpcs(self, request):
+        """查询VPC列表
+
+        查询vpc列表
+
+        :param ListVpcsRequest request
+        :return: ListVpcsResponse
+        """
+        return self.list_vpcs_with_http_info(request)
+
+    def list_vpcs_with_http_info(self, request):
+        """查询VPC列表
+
+        查询vpc列表
+
+        :param ListVpcsRequest request
+        :return: ListVpcsResponse
+        """
+
+        all_params = ['limit', 'marker', 'id', 'name', 'description', 'cidr']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'multi'
+        if 'cidr' in local_var_params:
+            query_params.append(('cidr', local_var_params['cidr']))
+            collection_formats['cidr'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/vpcs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListVpcsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def remove_vpc_extend_cidr(self, request):
+        """移除VPC扩展网段
+
+        移除VPC扩展网段
+
+        :param RemoveVpcExtendCidrRequest request
+        :return: RemoveVpcExtendCidrResponse
+        """
+        return self.remove_vpc_extend_cidr_with_http_info(request)
+
+    def remove_vpc_extend_cidr_with_http_info(self, request):
+        """移除VPC扩展网段
+
+        移除VPC扩展网段
+
+        :param RemoveVpcExtendCidrRequest request
+        :return: RemoveVpcExtendCidrResponse
+        """
+
+        all_params = ['vpc_id', 'remove_vpc_extend_cidr_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_id' in local_var_params:
+            path_params['vpc_id'] = local_var_params['vpc_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/vpcs/{vpc_id}/remove-extend-cidr',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RemoveVpcExtendCidrResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_vpc(self, request):
+        """查询VPC详情
+
+        查询vpc详情
+
+        :param ShowVpcRequest request
+        :return: ShowVpcResponse
+        """
+        return self.show_vpc_with_http_info(request)
+
+    def show_vpc_with_http_info(self, request):
+        """查询VPC详情
+
+        查询vpc详情
+
+        :param ShowVpcRequest request
+        :return: ShowVpcResponse
+        """
+
+        all_params = ['vpc_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_id' in local_var_params:
+            path_params['vpc_id'] = local_var_params['vpc_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/vpcs/{vpc_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowVpcResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_vpc(self, request):
+        """更新VPC
+
+        更新vpc
+
+        :param UpdateVpcRequest request
+        :return: UpdateVpcResponse
+        """
+        return self.update_vpc_with_http_info(request)
+
+    def update_vpc_with_http_info(self, request):
+        """更新VPC
+
+        更新vpc
+
+        :param UpdateVpcRequest request
+        :return: UpdateVpcResponse
+        """
+
+        all_params = ['vpc_id', 'update_vpc_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_id' in local_var_params:
+            path_params['vpc_id'] = local_var_params['vpc_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/vpc/vpcs/{vpc_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateVpcResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

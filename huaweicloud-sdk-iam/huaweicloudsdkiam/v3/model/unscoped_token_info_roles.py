@@ -49,7 +49,7 @@ class UnscopedTokenInfoRoles:
     def id(self):
         """Gets the id of this UnscopedTokenInfoRoles.
 
-        role id
+        role id。
 
         :return: The id of this UnscopedTokenInfoRoles.
         :rtype: str
@@ -60,7 +60,7 @@ class UnscopedTokenInfoRoles:
     def id(self, id):
         """Sets the id of this UnscopedTokenInfoRoles.
 
-        role id
+        role id。
 
         :param id: The id of this UnscopedTokenInfoRoles.
         :type: str
@@ -71,7 +71,7 @@ class UnscopedTokenInfoRoles:
     def name(self):
         """Gets the name of this UnscopedTokenInfoRoles.
 
-        name id
+        name id。
 
         :return: The name of this UnscopedTokenInfoRoles.
         :rtype: str
@@ -82,7 +82,7 @@ class UnscopedTokenInfoRoles:
     def name(self, name):
         """Sets the name of this UnscopedTokenInfoRoles.
 
-        name id
+        name id。
 
         :param name: The name of this UnscopedTokenInfoRoles.
         :type: str

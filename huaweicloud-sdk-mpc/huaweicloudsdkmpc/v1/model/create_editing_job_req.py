@@ -24,7 +24,9 @@ class CreateEditingJobReq:
     openapi_types = {
         'edit_type': 'list[str]',
         'clips': 'list[ClipInfo]',
-        'contcat': 'ConcatInfo',
+        'concats': 'list[MultiConcatInfo]',
+        'concat': 'ConcatInfo',
+        'mix': 'MixInfo',
         'output_setting': 'OutputSetting',
         'image_watermark_settings': 'list[ImageWatermarkSetting]',
         'user_data': 'str'
@@ -33,20 +35,24 @@ class CreateEditingJobReq:
     attribute_map = {
         'edit_type': 'edit_type',
         'clips': 'clips',
-        'contcat': 'contcat',
+        'concats': 'concats',
+        'concat': 'concat',
+        'mix': 'mix',
         'output_setting': 'output_setting',
         'image_watermark_settings': 'image_watermark_settings',
         'user_data': 'user_data'
     }
 
-    def __init__(self, edit_type=None, clips=None, contcat=None, output_setting=None, image_watermark_settings=None, user_data=None):
+    def __init__(self, edit_type=None, clips=None, concats=None, concat=None, mix=None, output_setting=None, image_watermark_settings=None, user_data=None):
         """CreateEditingJobReq - a model defined in huaweicloud sdk"""
         
         
 
         self._edit_type = None
         self._clips = None
-        self._contcat = None
+        self._concats = None
+        self._concat = None
+        self._mix = None
         self._output_setting = None
         self._image_watermark_settings = None
         self._user_data = None
@@ -56,8 +62,12 @@ class CreateEditingJobReq:
             self.edit_type = edit_type
         if clips is not None:
             self.clips = clips
-        if contcat is not None:
-            self.contcat = contcat
+        if concats is not None:
+            self.concats = concats
+        if concat is not None:
+            self.concat = concat
+        if mix is not None:
+            self.mix = mix
         if output_setting is not None:
             self.output_setting = output_setting
         if image_watermark_settings is not None:
@@ -69,7 +79,7 @@ class CreateEditingJobReq:
     def edit_type(self):
         """Gets the edit_type of this CreateEditingJobReq.
 
-        剪辑任务类型。取值如下：\"CLIP\",\"CONCAT\"。
+        剪辑任务类型。取值如下：\"CLIP\",\"CONCAT\",\"CONCATS\",\"MIX\"。
 
         :return: The edit_type of this CreateEditingJobReq.
         :rtype: list[str]
@@ -80,7 +90,7 @@ class CreateEditingJobReq:
     def edit_type(self, edit_type):
         """Sets the edit_type of this CreateEditingJobReq.
 
-        剪辑任务类型。取值如下：\"CLIP\",\"CONCAT\"。
+        剪辑任务类型。取值如下：\"CLIP\",\"CONCAT\",\"CONCATS\",\"MIX\"。
 
         :param edit_type: The edit_type of this CreateEditingJobReq.
         :type: list[str]
@@ -110,24 +120,66 @@ class CreateEditingJobReq:
         self._clips = clips
 
     @property
-    def contcat(self):
-        """Gets the contcat of this CreateEditingJobReq.
+    def concats(self):
+        """Gets the concats of this CreateEditingJobReq.
+
+        多拼接任务信息，支持多个拼接输出，与concat参数只能二选一。 
+
+        :return: The concats of this CreateEditingJobReq.
+        :rtype: list[MultiConcatInfo]
+        """
+        return self._concats
+
+    @concats.setter
+    def concats(self, concats):
+        """Sets the concats of this CreateEditingJobReq.
+
+        多拼接任务信息，支持多个拼接输出，与concat参数只能二选一。 
+
+        :param concats: The concats of this CreateEditingJobReq.
+        :type: list[MultiConcatInfo]
+        """
+        self._concats = concats
+
+    @property
+    def concat(self):
+        """Gets the concat of this CreateEditingJobReq.
 
 
-        :return: The contcat of this CreateEditingJobReq.
+        :return: The concat of this CreateEditingJobReq.
         :rtype: ConcatInfo
         """
-        return self._contcat
+        return self._concat
 
-    @contcat.setter
-    def contcat(self, contcat):
-        """Sets the contcat of this CreateEditingJobReq.
+    @concat.setter
+    def concat(self, concat):
+        """Sets the concat of this CreateEditingJobReq.
 
 
-        :param contcat: The contcat of this CreateEditingJobReq.
+        :param concat: The concat of this CreateEditingJobReq.
         :type: ConcatInfo
         """
-        self._contcat = contcat
+        self._concat = concat
+
+    @property
+    def mix(self):
+        """Gets the mix of this CreateEditingJobReq.
+
+
+        :return: The mix of this CreateEditingJobReq.
+        :rtype: MixInfo
+        """
+        return self._mix
+
+    @mix.setter
+    def mix(self, mix):
+        """Sets the mix of this CreateEditingJobReq.
+
+
+        :param mix: The mix of this CreateEditingJobReq.
+        :type: MixInfo
+        """
+        self._mix = mix
 
     @property
     def output_setting(self):

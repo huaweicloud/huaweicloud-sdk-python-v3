@@ -126,7 +126,7 @@ class KeystoneListUsersRequest:
     def password_expires_at(self):
         """Gets the password_expires_at of this KeystoneListUsersRequest.
 
-        密码过期时间，格式为：password_expires_at={operator}:{timestamp}。timestamp格式为：YYYY-MM-DDTHH:mm:ssZ。示例：    ``` password_expires_at=lt:2016-12-08T22:02:00Z ```   > - operator取值范围：lt，lte，gt，gte，eq，neq。   > - lt：过期时间小于timestamp。   > - lte：过期时间小于等于timestamp。   > - gt：过期时间大于timestamp。   > - gte：过期时间大于等于timestamp。   > - eq：过期时间等于timestamp。   > - neq：过期时间不等于timestamp。
+        密码过期时间，格式为：password_expires_at={operator}:{timestamp}。timestamp格式为：YYYY-MM-DDTHH:mm:ssZ。示例：  ``` password_expires_at=lt:2016-12-08T22:02:00Z ``` > - operator取值范围：lt，lte，gt，gte，eq，neq。 > - lt：过期时间小于timestamp。 > - lte：过期时间小于等于timestamp。 > - gt：过期时间大于timestamp。 > - gte：过期时间大于等于timestamp。 > - eq：过期时间等于timestamp。 > - neq：过期时间不等于timestamp。
 
         :return: The password_expires_at of this KeystoneListUsersRequest.
         :rtype: str
@@ -137,7 +137,7 @@ class KeystoneListUsersRequest:
     def password_expires_at(self, password_expires_at):
         """Sets the password_expires_at of this KeystoneListUsersRequest.
 
-        密码过期时间，格式为：password_expires_at={operator}:{timestamp}。timestamp格式为：YYYY-MM-DDTHH:mm:ssZ。示例：    ``` password_expires_at=lt:2016-12-08T22:02:00Z ```   > - operator取值范围：lt，lte，gt，gte，eq，neq。   > - lt：过期时间小于timestamp。   > - lte：过期时间小于等于timestamp。   > - gt：过期时间大于timestamp。   > - gte：过期时间大于等于timestamp。   > - eq：过期时间等于timestamp。   > - neq：过期时间不等于timestamp。
+        密码过期时间，格式为：password_expires_at={operator}:{timestamp}。timestamp格式为：YYYY-MM-DDTHH:mm:ssZ。示例：  ``` password_expires_at=lt:2016-12-08T22:02:00Z ``` > - operator取值范围：lt，lte，gt，gte，eq，neq。 > - lt：过期时间小于timestamp。 > - lte：过期时间小于等于timestamp。 > - gt：过期时间大于timestamp。 > - gte：过期时间大于等于timestamp。 > - eq：过期时间等于timestamp。 > - neq：过期时间不等于timestamp。
 
         :param password_expires_at: The password_expires_at of this KeystoneListUsersRequest.
         :type: str

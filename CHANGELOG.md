@@ -1,3 +1,235 @@
+# 3.0.68 2021-11-12
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - Support the following interfaces:
+    - `ListRangeQueryAomPromGet`
+    - `ListRangeQueryAomPromPost`
+    - `ListInstantQueryAomPromGet`
+    - `ListInstantQueryAomPromPost`
+    - `ListLabelValuesAomPromGet`
+    - `ListLabelsAomPromGet`
+    - `ListLabelsAomPromPost`
+    - `ListMetadataAomPromGet`
+    - `DeleteAlarmRules`
+    - `ListLogItems`
+    - `ListEvents`
+    - `CountEvents`
+    - `PushEvents`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `customSan` to the interface `UpdateNode`.
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `force_redirect_https` to the interface `UpdateHttpsInfo`.
+
+### HuaweiCloud SDK CloudDeploy
+
+- _Features_
+  - Support the service `CloudDeploy`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the name of the response parameter of the interface `ListAuditLogs`: `total_count` -> `total_record`.
+
+### HuaweiCloud SDK DSC
+
+- _Features_
+  - Support the interfaces `ShowScanJobs` and `ShowScanJobResults`.
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `marked_file_password` to the interface `CreateDocWatermark`.
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `offset` and `limit`.
+  - Add the response parameters `id` and `spec_code`.
+
+### HuaweiCloud SDK GES
+
+- _Features_
+  - Support `Graph Engine Service`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameters `sim_card_id`, `partner`, `package_type` and `sim_type` from the interface `ListProPricePlans`.
+  - Remove the request parameter `tag_id` from the interface `ListSimCards`.
+  - Remove the request parameter `sim_price_plan_id` from the interface `ListSimPricePlans`.
+  - Remove the request parameter `price_plan_list` from the interfaces `StopSimCard` and `ResetSimCard`.
+  - Remove the response parameters `sn`, `supply_code`, `bundle_id` and `test_type` from the interfaces `ShowSimCard` and `ListSimCards`.
+  - Remove the response parameter `sim_price_plan_list` from the interface `StopSimCard`.
+  - Remove the response parameter `order_id` from the interface `ListSimPools`.
+  - Remove the response parameters `partner` and `partner_pid` from the interface `ListSimPricePlans`.
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `results` to the interface `ShowJob`.
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `country` and `protocol` to the interface `ListBandwidthDetail` and `ListUsersOfStream`.
+  - Add the request parameter `protocol` to the interface `ListDomainTrafficDetail`, `ListDomainBandwidthPeak` and `ListDomainTrafficSummary`.
+  - Add the request parameter `stream` to the interface `ListTranscodeData`.
+  - Add the request parameters `stream`, `start_time` and `end_time` to the interface `ListHistoryStreams`.
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - Support the following interfaces:
+    - `ShowStructTemplate`
+    - `CreateStructTemplate`
+    - `UpdateStructTemplate`
+    - `DeleteStructTemplate`
+    - `ShowAomMappingRules`
+    - `CreateAomMappingRules`
+    - `UpdateAomMappingRules`
+    - `DeleteAomMappingRules`
+    - `ShowAomMappingRule`
+    - `ListNotificationTopics`
+    - `CreateSqlAlarmRule`
+    - `UpdateSqlAlarmRule`
+    - `ListSqlAlarmRules`
+    - `DeleteSqlAlarmRule`
+    - `CreateKeywordsAlarmRule`
+    - `UpdateKeywordsAlarmRule`
+    - `ListKeywordsAlarmRules`
+    - `DeleteKeywordsAlarmRule`
+    - `ListActiveOrHistoryAlarms`
+    - `DeleteActiveAlarms`
+    - `ListCharts`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameter `conferenceType` from the interface `CreateMeeting`.
+  - Add the response parameter `cycleSubConfID` to the interface `CreateRecurringMeeting`.
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the name of the request parameter of the interface `CreateEditingJob`: `const` -> `consts`
+  - Remove the request parameter `index`, and add the request parameters `overlay_input`, `const` and `mix` to the interface `CreateEditingJob`.
+  - Add the response parameter `output` to the interface `ListEditingJob`.
+  - Add the response parameters `hls_init_count` and `hls_init_interval`, add the optional value `EFFICIENCY` to the request parameter `video_enhance` of the interface `CreateTranscodingTask`.
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `job_id`, `user` and `queue` to the interface(V2) `GetJobExeListNew`.
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `confidence` to the interface `RecognizeGeneralTable`.
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+  - Support the interface `CreateSystemIssueV4`.
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `sequence` to the interface `ListIrs`.
+  - Add the request parameter `status_id` to the interface `BatchUpdateIrs`.
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `ListSlowLogsNew`, `ListErrorLogsNew` and `UpgradeDbVersion`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VAS
+
+- _Features_
+  - Support `Video Analysis Service`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - Support interfaces(V3): `AddVpcExtendCidr`、`RemoveVpcExtendCidr`、`ListVpcs`、`ShowVpc`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.0.67 2021-10-25
 
 ### HuaweiCloud SDK AOM

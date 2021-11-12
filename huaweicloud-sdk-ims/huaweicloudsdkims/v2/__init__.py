@@ -89,6 +89,7 @@ from huaweicloudsdkims.v2.model.image_tag import ImageTag
 from huaweicloudsdkims.v2.model.import_image_quick_request import ImportImageQuickRequest
 from huaweicloudsdkims.v2.model.import_image_quick_response import ImportImageQuickResponse
 from huaweicloudsdkims.v2.model.job_entities import JobEntities
+from huaweicloudsdkims.v2.model.job_entities_result import JobEntitiesResult
 from huaweicloudsdkims.v2.model.links import Links
 from huaweicloudsdkims.v2.model.list_image_by_tags_request import ListImageByTagsRequest
 from huaweicloudsdkims.v2.model.list_image_by_tags_request_body import ListImageByTagsRequestBody

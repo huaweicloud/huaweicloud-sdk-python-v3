@@ -26,7 +26,7 @@ class QueryAlarmResult:
         'alarm_actions': 'list[str]',
         'alarm_advice': 'str',
         'alarm_description': 'str',
-        'alarm_level': 'int',
+        'alarm_level': 'str',
         'alarm_rule_id': 'str',
         'alarm_rule_name': 'str',
         'comparison_operator': 'str',
@@ -255,7 +255,7 @@ class QueryAlarmResult:
         告警级别。
 
         :return: The alarm_level of this QueryAlarmResult.
-        :rtype: int
+        :rtype: str
         """
         return self._alarm_level
 
@@ -266,7 +266,7 @@ class QueryAlarmResult:
         告警级别。
 
         :param alarm_level: The alarm_level of this QueryAlarmResult.
-        :type: int
+        :type: str
         """
         self._alarm_level = alarm_level
 

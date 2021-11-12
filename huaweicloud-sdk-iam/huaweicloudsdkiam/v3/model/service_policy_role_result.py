@@ -245,7 +245,7 @@ class ServicePolicyRoleResult:
     def type(self):
         """Gets the type of this ServicePolicyRoleResult.
 
-        自定义策略的显示模式。   > - AX表示在domain层显示。   > - XA表示在project层显示。   > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
+        自定义策略的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
         :return: The type of this ServicePolicyRoleResult.
         :rtype: str
@@ -256,7 +256,7 @@ class ServicePolicyRoleResult:
     def type(self, type):
         """Sets the type of this ServicePolicyRoleResult.
 
-        自定义策略的显示模式。   > - AX表示在domain层显示。   > - XA表示在project层显示。   > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
+        自定义策略的显示模式。 > - AX表示在domain层显示。 > - XA表示在project层显示。 > - 自定义策略的显示模式只能为AX或者XA，不能在domain层和project层都显示（AA），或者在domain层和project层都不显示（XX）。
 
         :param type: The type of this ServicePolicyRoleResult.
         :type: str

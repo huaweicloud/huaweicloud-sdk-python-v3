@@ -69,7 +69,7 @@ class AclPolicyOption:
     def allow_ip_ranges(self):
         """Gets the allow_ip_ranges of this AclPolicyOption.
 
-        允许访问的IP地址区间
+        允许访问的IP地址区间。
 
         :return: The allow_ip_ranges of this AclPolicyOption.
         :rtype: list[AllowIpRangesOption]
@@ -80,7 +80,7 @@ class AclPolicyOption:
     def allow_ip_ranges(self, allow_ip_ranges):
         """Sets the allow_ip_ranges of this AclPolicyOption.
 
-        允许访问的IP地址区间
+        允许访问的IP地址区间。
 
         :param allow_ip_ranges: The allow_ip_ranges of this AclPolicyOption.
         :type: list[AllowIpRangesOption]

@@ -48,6 +48,69 @@ class LtsClient(Client):
 
         return ClientBuilder(clazz)
 
+    def create_keywords_alarm_rule(self, request):
+        """创建关键词告警规则
+
+        该接口用于创建关键词告警，目前每个帐户最多可以创建共200个关键词告警与SQL告警。
+
+        :param CreateKeywordsAlarmRuleRequest request
+        :return: CreateKeywordsAlarmRuleResponse
+        """
+        return self.create_keywords_alarm_rule_with_http_info(request)
+
+    def create_keywords_alarm_rule_with_http_info(self, request):
+        """创建关键词告警规则
+
+        该接口用于创建关键词告警，目前每个帐户最多可以创建共200个关键词告警与SQL告警。
+
+        :param CreateKeywordsAlarmRuleRequest request
+        :return: CreateKeywordsAlarmRuleResponse
+        """
+
+        all_params = ['create_keywords_alarm_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/alarms/keywords-alarm-rule',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateKeywordsAlarmRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_log_dump_obs(self, request):
         """日志转储
 
@@ -239,6 +302,197 @@ class LtsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_struct_template(self, request):
+        """创建结构化配置
+
+        该接口用于创建指定日志流下的结构化配置。
+
+        :param CreateStructTemplateRequest request
+        :return: CreateStructTemplateResponse
+        """
+        return self.create_struct_template_with_http_info(request)
+
+    def create_struct_template_with_http_info(self, request):
+        """创建结构化配置
+
+        该接口用于创建指定日志流下的结构化配置。
+
+        :param CreateStructTemplateRequest request
+        :return: CreateStructTemplateResponse
+        """
+
+        all_params = ['create_struct_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/struct/template',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateStructTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_active_alarms(self, request):
+        """删除活动告警
+
+        该接口用于删除活动告警
+
+        :param DeleteActiveAlarmsRequest request
+        :return: DeleteActiveAlarmsResponse
+        """
+        return self.delete_active_alarms_with_http_info(request)
+
+    def delete_active_alarms_with_http_info(self, request):
+        """删除活动告警
+
+        该接口用于删除活动告警
+
+        :param DeleteActiveAlarmsRequest request
+        :return: DeleteActiveAlarmsResponse
+        """
+
+        all_params = ['domain_id', 'delete_active_alarms_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/{domain_id}/lts/alarms/sql-alarm/clear',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteActiveAlarmsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_keywords_alarm_rule(self, request):
+        """删除关键词告警规则
+
+        该接口用于删除关键词告警。
+
+        :param DeleteKeywordsAlarmRuleRequest request
+        :return: DeleteKeywordsAlarmRuleResponse
+        """
+        return self.delete_keywords_alarm_rule_with_http_info(request)
+
+    def delete_keywords_alarm_rule_with_http_info(self, request):
+        """删除关键词告警规则
+
+        该接口用于删除关键词告警。
+
+        :param DeleteKeywordsAlarmRuleRequest request
+        :return: DeleteKeywordsAlarmRuleResponse
+        """
+
+        all_params = ['keywords_alarm_rule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'keywords_alarm_rule_id' in local_var_params:
+            path_params['keywords_alarm_rule_id'] = local_var_params['keywords_alarm_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/alarms/keywords-alarm-rule/{keywords_alarm_rule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteKeywordsAlarmRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_log_group(self, request):
         """删除日志组
 
@@ -367,6 +621,69 @@ class LtsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_struct_template(self, request):
+        """删除结构化配置
+
+        该接口用于删除指定日志流下的结构化配置。
+
+        :param DeleteStructTemplateRequest request
+        :return: DeleteStructTemplateResponse
+        """
+        return self.delete_struct_template_with_http_info(request)
+
+    def delete_struct_template_with_http_info(self, request):
+        """删除结构化配置
+
+        该接口用于删除指定日志流下的结构化配置。
+
+        :param DeleteStructTemplateRequest request
+        :return: DeleteStructTemplateResponse
+        """
+
+        all_params = ['delete_struct_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/struct/template',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteStructTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def disable_log_collection(self, request):
         """关闭超额采集开关
 
@@ -483,6 +800,203 @@ class LtsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='EnableLogCollectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_active_or_history_alarms(self, request):
+        """查询活动或历史告警列表
+
+        该接口用于查询告警列表
+
+        :param ListActiveOrHistoryAlarmsRequest request
+        :return: ListActiveOrHistoryAlarmsResponse
+        """
+        return self.list_active_or_history_alarms_with_http_info(request)
+
+    def list_active_or_history_alarms_with_http_info(self, request):
+        """查询活动或历史告警列表
+
+        该接口用于查询告警列表
+
+        :param ListActiveOrHistoryAlarmsRequest request
+        :return: ListActiveOrHistoryAlarmsResponse
+        """
+
+        all_params = ['domain_id', 'type', 'list_active_or_history_alarms_request_body', 'marker', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/{domain_id}/lts/alarms/sql-alarm/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListActiveOrHistoryAlarmsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_charts(self, request):
+        """查询日志流图表
+
+        该接口用于查询日志流图表
+
+        :param ListChartsRequest request
+        :return: ListChartsResponse
+        """
+        return self.list_charts_with_http_info(request)
+
+    def list_charts_with_http_info(self, request):
+        """查询日志流图表
+
+        该接口用于查询日志流图表
+
+        :param ListChartsRequest request
+        :return: ListChartsResponse
+        """
+
+        all_params = ['log_group_id', 'log_stream_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'log_group_id' in local_var_params:
+            path_params['log_group_id'] = local_var_params['log_group_id']
+        if 'log_stream_id' in local_var_params:
+            path_params['log_stream_id'] = local_var_params['log_stream_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/groups/{log_group_id}/streams/{log_stream_id}/charts',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListChartsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_keywords_alarm_rules(self, request):
+        """查询关键词告警规则
+
+        该接口用于查询关键词告警。
+
+        :param ListKeywordsAlarmRulesRequest request
+        :return: ListKeywordsAlarmRulesResponse
+        """
+        return self.list_keywords_alarm_rules_with_http_info(request)
+
+    def list_keywords_alarm_rules_with_http_info(self, request):
+        """查询关键词告警规则
+
+        该接口用于查询关键词告警。
+
+        :param ListKeywordsAlarmRulesRequest request
+        :return: ListKeywordsAlarmRulesResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/alarms/keywords-alarm-rule',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListKeywordsAlarmRulesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -682,6 +1196,71 @@ class LtsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_notification_topics(self, request):
+        """查询SMN主题
+
+        该接口用于查询SMN主题
+
+        :param ListNotificationTopicsRequest request
+        :return: ListNotificationTopicsResponse
+        """
+        return self.list_notification_topics_with_http_info(request)
+
+    def list_notification_topics_with_http_info(self, request):
+        """查询SMN主题
+
+        该接口用于查询SMN主题
+
+        :param ListNotificationTopicsRequest request
+        :return: ListNotificationTopicsResponse
+        """
+
+        all_params = ['offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/notifications/topics',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListNotificationTopicsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_query_structured_logs(self, request):
         """查询结构化日志
 
@@ -814,6 +1393,134 @@ class LtsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_struct_template(self, request):
+        """查询结构化配置
+
+        该接口用于查询指定日志流下的结构化配置内容。
+
+        :param ShowStructTemplateRequest request
+        :return: ShowStructTemplateResponse
+        """
+        return self.show_struct_template_with_http_info(request)
+
+    def show_struct_template_with_http_info(self, request):
+        """查询结构化配置
+
+        该接口用于查询指定日志流下的结构化配置内容。
+
+        :param ShowStructTemplateRequest request
+        :return: ShowStructTemplateResponse
+        """
+
+        all_params = ['log_group_id', 'log_stream_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'log_group_id' in local_var_params:
+            query_params.append(('logGroupId', local_var_params['log_group_id']))
+        if 'log_stream_id' in local_var_params:
+            query_params.append(('logStreamId', local_var_params['log_stream_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/struct/template',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowStructTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_keywords_alarm_rule(self, request):
+        """修改关键词告警规则
+
+        该接口用于修改关键词告警。
+
+        :param UpdateKeywordsAlarmRuleRequest request
+        :return: UpdateKeywordsAlarmRuleResponse
+        """
+        return self.update_keywords_alarm_rule_with_http_info(request)
+
+    def update_keywords_alarm_rule_with_http_info(self, request):
+        """修改关键词告警规则
+
+        该接口用于修改关键词告警。
+
+        :param UpdateKeywordsAlarmRuleRequest request
+        :return: UpdateKeywordsAlarmRuleResponse
+        """
+
+        all_params = ['update_keywords_alarm_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/alarms/keywords-alarm-rule',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateKeywordsAlarmRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_log_group(self, request):
         """修改日志组
 
@@ -873,6 +1580,634 @@ class LtsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateLogGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_struct_template(self, request):
+        """修改结构化配置
+
+        该接口用于修改指定日志流下的结构化配置。
+
+        :param UpdateStructTemplateRequest request
+        :return: UpdateStructTemplateResponse
+        """
+        return self.update_struct_template_with_http_info(request)
+
+    def update_struct_template_with_http_info(self, request):
+        """修改结构化配置
+
+        该接口用于修改指定日志流下的结构化配置。
+
+        :param UpdateStructTemplateRequest request
+        :return: UpdateStructTemplateResponse
+        """
+
+        all_params = ['update_struct_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/struct/template',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateStructTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_aom_mapping_rules(self, request):
+        """创建日志接入lts规则
+
+        该接口用于创建aom日志接入lts规则
+
+        :param CreateAomMappingRulesRequest request
+        :return: CreateAomMappingRulesResponse
+        """
+        return self.create_aom_mapping_rules_with_http_info(request)
+
+    def create_aom_mapping_rules_with_http_info(self, request):
+        """创建日志接入lts规则
+
+        该接口用于创建aom日志接入lts规则
+
+        :param CreateAomMappingRulesRequest request
+        :return: CreateAomMappingRulesResponse
+        """
+
+        all_params = ['is_batch', 'create_aom_mapping_rules_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'is_batch' in local_var_params:
+            query_params.append(('isBatch', local_var_params['is_batch']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/aom-mapping',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateAomMappingRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_aom_mapping_rules(self, request):
+        """删除接入规则
+
+        该接口用于删除lts接入规则。
+
+        :param DeleteAomMappingRulesRequest request
+        :return: DeleteAomMappingRulesResponse
+        """
+        return self.delete_aom_mapping_rules_with_http_info(request)
+
+    def delete_aom_mapping_rules_with_http_info(self, request):
+        """删除接入规则
+
+        该接口用于删除lts接入规则。
+
+        :param DeleteAomMappingRulesRequest request
+        :return: DeleteAomMappingRulesResponse
+        """
+
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/aom-mapping',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteAomMappingRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_aom_mapping_rule(self, request):
+        """查询接入规则
+
+        该接口用于查询单个aom日志接入lts
+
+        :param ShowAomMappingRuleRequest request
+        :return: ShowAomMappingRuleResponse
+        """
+        return self.show_aom_mapping_rule_with_http_info(request)
+
+    def show_aom_mapping_rule_with_http_info(self, request):
+        """查询接入规则
+
+        该接口用于查询单个aom日志接入lts
+
+        :param ShowAomMappingRuleRequest request
+        :return: ShowAomMappingRuleResponse
+        """
+
+        all_params = ['rule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/aom-mapping/{rule_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowAomMappingRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_aom_mapping_rules(self, request):
+        """查询接入规则
+
+        该接口用于查询aom日志所有接入lts规则
+
+        :param ShowAomMappingRulesRequest request
+        :return: ShowAomMappingRulesResponse
+        """
+        return self.show_aom_mapping_rules_with_http_info(request)
+
+    def show_aom_mapping_rules_with_http_info(self, request):
+        """查询接入规则
+
+        该接口用于查询aom日志所有接入lts规则
+
+        :param ShowAomMappingRulesRequest request
+        :return: ShowAomMappingRulesResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/aom-mapping',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowAomMappingRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_aom_mapping_rules(self, request):
+        """修改接入规则
+
+        该接口用于修改接入规则
+
+        :param UpdateAomMappingRulesRequest request
+        :return: UpdateAomMappingRulesResponse
+        """
+        return self.update_aom_mapping_rules_with_http_info(request)
+
+    def update_aom_mapping_rules_with_http_info(self, request):
+        """修改接入规则
+
+        该接口用于修改接入规则
+
+        :param UpdateAomMappingRulesRequest request
+        :return: UpdateAomMappingRulesResponse
+        """
+
+        all_params = ['update_aom_mapping_rules_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/aom-mapping',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateAomMappingRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_sql_alarm_rule(self, request):
+        """创建SQL告警规则
+
+        该接口用于创建SQL告警，目前每个帐户最多可以创建共200个关键词告警与SQL告警
+
+        :param CreateSqlAlarmRuleRequest request
+        :return: CreateSqlAlarmRuleResponse
+        """
+        return self.create_sql_alarm_rule_with_http_info(request)
+
+    def create_sql_alarm_rule_with_http_info(self, request):
+        """创建SQL告警规则
+
+        该接口用于创建SQL告警，目前每个帐户最多可以创建共200个关键词告警与SQL告警
+
+        :param CreateSqlAlarmRuleRequest request
+        :return: CreateSqlAlarmRuleResponse
+        """
+
+        all_params = ['create_sql_alarm_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/alarms/sql-alarm-rule',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateSqlAlarmRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_sql_alarm_rule(self, request):
+        """删除SQL告警规则
+
+        该接口用于删除SQL告警
+
+        :param DeleteSqlAlarmRuleRequest request
+        :return: DeleteSqlAlarmRuleResponse
+        """
+        return self.delete_sql_alarm_rule_with_http_info(request)
+
+    def delete_sql_alarm_rule_with_http_info(self, request):
+        """删除SQL告警规则
+
+        该接口用于删除SQL告警
+
+        :param DeleteSqlAlarmRuleRequest request
+        :return: DeleteSqlAlarmRuleResponse
+        """
+
+        all_params = ['sql_alarm_rule_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'sql_alarm_rule_id' in local_var_params:
+            path_params['sql_alarm_rule_id'] = local_var_params['sql_alarm_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/alarms/sql-alarm-rule/{sql_alarm_rule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteSqlAlarmRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_sql_alarm_rules(self, request):
+        """查询SQL告警规则
+
+        该接口用于查询SQL告警
+
+        :param ListSqlAlarmRulesRequest request
+        :return: ListSqlAlarmRulesResponse
+        """
+        return self.list_sql_alarm_rules_with_http_info(request)
+
+    def list_sql_alarm_rules_with_http_info(self, request):
+        """查询SQL告警规则
+
+        该接口用于查询SQL告警
+
+        :param ListSqlAlarmRulesRequest request
+        :return: ListSqlAlarmRulesResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/alarms/sql-alarm-rule',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSqlAlarmRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_sql_alarm_rule(self, request):
+        """修改SQL告警规则
+
+        该接口用于修改SQL告警
+
+        :param UpdateSqlAlarmRuleRequest request
+        :return: UpdateSqlAlarmRuleResponse
+        """
+        return self.update_sql_alarm_rule_with_http_info(request)
+
+    def update_sql_alarm_rule_with_http_info(self, request):
+        """修改SQL告警规则
+
+        该接口用于修改SQL告警
+
+        :param UpdateSqlAlarmRuleRequest request
+        :return: UpdateSqlAlarmRuleResponse
+        """
+
+        all_params = ['update_sql_alarm_rule_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/alarms/sql-alarm-rule',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateSqlAlarmRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

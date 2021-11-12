@@ -31,6 +31,7 @@ class EditingJob:
         'user_data': 'str',
         'job_id': 'str',
         'edit_type': 'list[str]',
+        'output': 'ObsObjInfo',
         'edit_task_req': 'CreateEditingJobReq',
         'output_file_info': 'list[OutputFileInfo]'
     }
@@ -45,11 +46,12 @@ class EditingJob:
         'user_data': 'user_data',
         'job_id': 'job_id',
         'edit_type': 'edit_type',
+        'output': 'output',
         'edit_task_req': 'edit_task_req',
         'output_file_info': 'output_file_info'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, user_data=None, job_id=None, edit_type=None, edit_task_req=None, output_file_info=None):
+    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, user_data=None, job_id=None, edit_type=None, output=None, edit_task_req=None, output_file_info=None):
         """EditingJob - a model defined in huaweicloud sdk"""
         
         
@@ -63,6 +65,7 @@ class EditingJob:
         self._user_data = None
         self._job_id = None
         self._edit_type = None
+        self._output = None
         self._edit_task_req = None
         self._output_file_info = None
         self.discriminator = None
@@ -85,6 +88,8 @@ class EditingJob:
             self.job_id = job_id
         if edit_type is not None:
             self.edit_type = edit_type
+        if output is not None:
+            self.output = output
         if edit_task_req is not None:
             self.edit_task_req = edit_task_req
         if output_file_info is not None:
@@ -270,7 +275,7 @@ class EditingJob:
     def edit_type(self):
         """Gets the edit_type of this EditingJob.
 
-        剪辑任务类型。取值如下：\"CLIP\",\"CONCAT\"。
+        剪辑任务类型。取值如下：\"CLIP\",\"CONCAT\",\"CONCATS\",\"MIX\"。
 
         :return: The edit_type of this EditingJob.
         :rtype: list[str]
@@ -281,12 +286,32 @@ class EditingJob:
     def edit_type(self, edit_type):
         """Sets the edit_type of this EditingJob.
 
-        剪辑任务类型。取值如下：\"CLIP\",\"CONCAT\"。
+        剪辑任务类型。取值如下：\"CLIP\",\"CONCAT\",\"CONCATS\",\"MIX\"。
 
         :param edit_type: The edit_type of this EditingJob.
         :type: list[str]
         """
         self._edit_type = edit_type
+
+    @property
+    def output(self):
+        """Gets the output of this EditingJob.
+
+
+        :return: The output of this EditingJob.
+        :rtype: ObsObjInfo
+        """
+        return self._output
+
+    @output.setter
+    def output(self, output):
+        """Sets the output of this EditingJob.
+
+
+        :param output: The output of this EditingJob.
+        :type: ObsObjInfo
+        """
+        self._output = output
 
     @property
     def edit_task_req(self):

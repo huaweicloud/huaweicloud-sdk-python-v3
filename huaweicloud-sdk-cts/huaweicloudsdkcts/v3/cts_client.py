@@ -48,6 +48,69 @@ class CtsClient(Client):
 
         return ClientBuilder(clazz)
 
+    def create_notification(self, request):
+        """创建关键操作通知
+
+        配置关键操作通知，可在发生特定操作时，使用预先创建好的SMN主题，向用户手机、邮箱发送消息，也可直接发送http/https消息。常用于实时感知高危操作、触发特定操作或对接用户自有审计分析系统。
+
+        :param CreateNotificationRequest request
+        :return: CreateNotificationResponse
+        """
+        return self.create_notification_with_http_info(request)
+
+    def create_notification_with_http_info(self, request):
+        """创建关键操作通知
+
+        配置关键操作通知，可在发生特定操作时，使用预先创建好的SMN主题，向用户手机、邮箱发送消息，也可直接发送http/https消息。常用于实时感知高危操作、触发特定操作或对接用户自有审计分析系统。
+
+        :param CreateNotificationRequest request
+        :return: CreateNotificationResponse
+        """
+
+        all_params = ['create_notification_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/notifications',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateNotificationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_tracker(self, request):
         """创建追踪器
 
@@ -105,6 +168,69 @@ class CtsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateTrackerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_notification(self, request):
+        """删除关键操作通知
+
+        云审计服务支持删除已创建的关键操作通知。
+
+        :param DeleteNotificationRequest request
+        :return: DeleteNotificationResponse
+        """
+        return self.delete_notification_with_http_info(request)
+
+    def delete_notification_with_http_info(self, request):
+        """删除关键操作通知
+
+        云审计服务支持删除已创建的关键操作通知。
+
+        :param DeleteNotificationRequest request
+        :return: DeleteNotificationResponse
+        """
+
+        all_params = ['notification_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'notification_id' in local_var_params:
+            query_params.append(('notification_id', local_var_params['notification_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/notifications',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -170,6 +296,71 @@ class CtsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteTrackerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_notifications(self, request):
+        """查询关键操作通知
+
+        查询创建的关键操作通知规则。
+
+        :param ListNotificationsRequest request
+        :return: ListNotificationsResponse
+        """
+        return self.list_notifications_with_http_info(request)
+
+    def list_notifications_with_http_info(self, request):
+        """查询关键操作通知
+
+        查询创建的关键操作通知规则。
+
+        :param ListNotificationsRequest request
+        :return: ListNotificationsResponse
+        """
+
+        all_params = ['notification_type', 'notification_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'notification_type' in local_var_params:
+            path_params['notification_type'] = local_var_params['notification_type']
+
+        query_params = []
+        if 'notification_name' in local_var_params:
+            query_params.append(('notification_name', local_var_params['notification_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/notifications/{notification_type}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListNotificationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -385,6 +576,69 @@ class CtsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListTrackersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_notification(self, request):
+        """修改关键操作通知
+
+        云审计服务支持修改已创建关键操作通知配置项，通过notification_id的字段匹配修改对象，notification_id必须已经存在。
+
+        :param UpdateNotificationRequest request
+        :return: UpdateNotificationResponse
+        """
+        return self.update_notification_with_http_info(request)
+
+    def update_notification_with_http_info(self, request):
+        """修改关键操作通知
+
+        云审计服务支持修改已创建关键操作通知配置项，通过notification_id的字段匹配修改对象，notification_id必须已经存在。
+
+        :param UpdateNotificationRequest request
+        :return: UpdateNotificationResponse
+        """
+
+        all_params = ['update_notification_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/notifications',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateNotificationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

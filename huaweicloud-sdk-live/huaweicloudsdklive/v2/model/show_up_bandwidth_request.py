@@ -78,7 +78,7 @@ class ShowUpBandwidthRequest:
     def publish_domains(self):
         """Gets the publish_domains of this ShowUpBandwidthRequest.
 
-        推流域名列表，最多支持查询10个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
+        推流域名列表，最多支持查询100个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
 
         :return: The publish_domains of this ShowUpBandwidthRequest.
         :rtype: list[str]
@@ -89,7 +89,7 @@ class ShowUpBandwidthRequest:
     def publish_domains(self, publish_domains):
         """Sets the publish_domains of this ShowUpBandwidthRequest.
 
-        推流域名列表，最多支持查询10个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
+        推流域名列表，最多支持查询100个域名，多个域名以逗号分隔，若查询多个域名，则返回的是多个域名合并数据。 
 
         :param publish_domains: The publish_domains of this ShowUpBandwidthRequest.
         :type: list[str]
@@ -166,7 +166,7 @@ class ShowUpBandwidthRequest:
     def isp(self):
         """Gets the isp of this ShowUpBandwidthRequest.
 
-        运营商列表，取值如下： - \"CMCC ：移动\" - \"CTCC ： 电信\" - \"CUCC ：联通\" - \"OTHER: 其他\"  不填写查询所有运营商。 
+        运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
         :return: The isp of this ShowUpBandwidthRequest.
         :rtype: list[str]
@@ -177,7 +177,7 @@ class ShowUpBandwidthRequest:
     def isp(self, isp):
         """Sets the isp of this ShowUpBandwidthRequest.
 
-        运营商列表，取值如下： - \"CMCC ：移动\" - \"CTCC ： 电信\" - \"CUCC ：联通\" - \"OTHER: 其他\"  不填写查询所有运营商。 
+        运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
         :param isp: The isp of this ShowUpBandwidthRequest.
         :type: list[str]
@@ -210,7 +210,7 @@ class ShowUpBandwidthRequest:
     def start_time(self):
         """Gets the start_time of this ShowUpBandwidthRequest.
 
-        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期90天  若参数为空，默认查询7天数据。 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。 最大查询跨度31天，最大查询周期1年。  若参数为空，默认查询7天数据。 
 
         :return: The start_time of this ShowUpBandwidthRequest.
         :rtype: str
@@ -221,7 +221,7 @@ class ShowUpBandwidthRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowUpBandwidthRequest.
 
-        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度31天，最大查询周期90天  若参数为空，默认查询7天数据。 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。 最大查询跨度31天，最大查询周期1年。  若参数为空，默认查询7天数据。 
 
         :param start_time: The start_time of this ShowUpBandwidthRequest.
         :type: str

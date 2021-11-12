@@ -67,7 +67,7 @@ class GslClient(Client):
         :return: ListProPricePlansResponse
         """
 
-        all_params = ['limit', 'offset', 'main_search_key', 'flow_total', 'network_type', 'location_type', 'carrier_type', 'country_type', 'sim_card_id', 'partner', 'package_type', 'sim_type']
+        all_params = ['limit', 'offset', 'main_search_key', 'flow_total', 'network_type', 'location_type', 'carrier_type', 'country_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -94,14 +94,6 @@ class GslClient(Client):
             query_params.append(('carrier_type', local_var_params['carrier_type']))
         if 'country_type' in local_var_params:
             query_params.append(('country_type', local_var_params['country_type']))
-        if 'sim_card_id' in local_var_params:
-            query_params.append(('sim_card_id', local_var_params['sim_card_id']))
-        if 'partner' in local_var_params:
-            query_params.append(('partner', local_var_params['partner']))
-        if 'package_type' in local_var_params:
-            query_params.append(('package_type', local_var_params['package_type']))
-        if 'sim_type' in local_var_params:
-            query_params.append(('sim_type', local_var_params['sim_type']))
 
         header_params = {}
 
@@ -278,7 +270,7 @@ class GslClient(Client):
         :return: ListSimCardsResponse
         """
 
-        all_params = ['main_search_type', 'main_search_key', 'limit', 'offset', 'sim_status', 'device_status', 'tag_id', 'sim_type', 'order', 'sort', 'msisdn', 'customer_attribute1', 'customer_attribute2', 'customer_attribute3', 'customer_attribute4', 'customer_attribute5', 'customer_attribute6', 'real_named']
+        all_params = ['main_search_type', 'main_search_key', 'limit', 'offset', 'sim_status', 'device_status', 'sim_type', 'order', 'sort', 'msisdn', 'customer_attribute1', 'customer_attribute2', 'customer_attribute3', 'customer_attribute4', 'customer_attribute5', 'customer_attribute6', 'real_named']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -301,9 +293,6 @@ class GslClient(Client):
             query_params.append(('sim_status', local_var_params['sim_status']))
         if 'device_status' in local_var_params:
             query_params.append(('device_status', local_var_params['device_status']))
-        if 'tag_id' in local_var_params:
-            query_params.append(('tag_id', local_var_params['tag_id']))
-            collection_formats['tag_id'] = 'csv'
         if 'sim_type' in local_var_params:
             query_params.append(('sim_type', local_var_params['sim_type']))
         if 'order' in local_var_params:
@@ -1095,7 +1084,7 @@ class GslClient(Client):
         :return: ListSimPricePlansResponse
         """
 
-        all_params = ['sim_card_id', 'sim_price_plan_id', 'real_time', 'limit', 'offset']
+        all_params = ['sim_card_id', 'real_time', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1108,8 +1097,6 @@ class GslClient(Client):
         query_params = []
         if 'sim_card_id' in local_var_params:
             query_params.append(('sim_card_id', local_var_params['sim_card_id']))
-        if 'sim_price_plan_id' in local_var_params:
-            query_params.append(('sim_price_plan_id', local_var_params['sim_price_plan_id']))
         if 'real_time' in local_var_params:
             query_params.append(('real_time', local_var_params['real_time']))
         if 'limit' in local_var_params:

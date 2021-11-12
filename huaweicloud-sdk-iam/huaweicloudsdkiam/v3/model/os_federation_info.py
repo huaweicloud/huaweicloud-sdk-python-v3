@@ -91,7 +91,7 @@ class OsFederationInfo:
     def groups(self):
         """Gets the groups of this OsFederationInfo.
 
-        用户组信息
+        用户组信息。
 
         :return: The groups of this OsFederationInfo.
         :rtype: list[object]
@@ -102,7 +102,7 @@ class OsFederationInfo:
     def groups(self, groups):
         """Sets the groups of this OsFederationInfo.
 
-        用户组信息
+        用户组信息。
 
         :param groups: The groups of this OsFederationInfo.
         :type: list[object]

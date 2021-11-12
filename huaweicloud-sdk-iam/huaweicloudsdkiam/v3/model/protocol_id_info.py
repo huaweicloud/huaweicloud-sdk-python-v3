@@ -43,7 +43,7 @@ class ProtocolIdInfo:
     def id(self):
         """Gets the id of this ProtocolIdInfo.
 
-        协议id
+        协议id。
 
         :return: The id of this ProtocolIdInfo.
         :rtype: str
@@ -54,7 +54,7 @@ class ProtocolIdInfo:
     def id(self, id):
         """Sets the id of this ProtocolIdInfo.
 
-        协议id
+        协议id。
 
         :param id: The id of this ProtocolIdInfo.
         :type: str

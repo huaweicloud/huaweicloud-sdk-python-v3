@@ -23,7 +23,7 @@ class QuerySample:
 
     openapi_types = {
         'namespace': 'str',
-        'dimensions': 'list[Dimension]',
+        'dimensions': 'list[DimensionSeries]',
         'metric_name': 'str'
     }
 
@@ -76,7 +76,7 @@ class QuerySample:
         时间序列维度列表。 取值范围： 数组不能为空，同时数组中任何一个dimension对象name和value属性的值也不能为空。 
 
         :return: The dimensions of this QuerySample.
-        :rtype: list[Dimension]
+        :rtype: list[DimensionSeries]
         """
         return self._dimensions
 
@@ -87,7 +87,7 @@ class QuerySample:
         时间序列维度列表。 取值范围： 数组不能为空，同时数组中任何一个dimension对象name和value属性的值也不能为空。 
 
         :param dimensions: The dimensions of this QuerySample.
-        :type: list[Dimension]
+        :type: list[DimensionSeries]
         """
         self._dimensions = dimensions
 

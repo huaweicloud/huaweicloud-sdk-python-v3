@@ -24,18 +24,16 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
     openapi_types = {
         'app_rules': 'list[AppRules]',
         'error_code': 'str',
-        'error_message': 'str',
-        'response_status': 'int'
+        'error_message': 'str'
     }
 
     attribute_map = {
         'app_rules': 'appRules',
         'error_code': 'errorCode',
-        'error_message': 'errorMessage',
-        'response_status': 'responseStatus'
+        'error_message': 'errorMessage'
     }
 
-    def __init__(self, app_rules=None, error_code=None, error_message=None, response_status=None):
+    def __init__(self, app_rules=None, error_code=None, error_message=None):
         """ListServiceDiscoveryRulesResponse - a model defined in huaweicloud sdk"""
         
         super(ListServiceDiscoveryRulesResponse, self).__init__()
@@ -43,7 +41,6 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
         self._app_rules = None
         self._error_code = None
         self._error_message = None
-        self._response_status = None
         self.discriminator = None
 
         if app_rules is not None:
@@ -52,8 +49,6 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
             self.error_code = error_code
         if error_message is not None:
             self.error_message = error_message
-        if response_status is not None:
-            self.response_status = response_status
 
     @property
     def app_rules(self):
@@ -120,28 +115,6 @@ class ListServiceDiscoveryRulesResponse(SdkResponse):
         :type: str
         """
         self._error_message = error_message
-
-    @property
-    def response_status(self):
-        """Gets the response_status of this ListServiceDiscoveryRulesResponse.
-
-        响应状态码。
-
-        :return: The response_status of this ListServiceDiscoveryRulesResponse.
-        :rtype: int
-        """
-        return self._response_status
-
-    @response_status.setter
-    def response_status(self, response_status):
-        """Sets the response_status of this ListServiceDiscoveryRulesResponse.
-
-        响应状态码。
-
-        :param response_status: The response_status of this ListServiceDiscoveryRulesResponse.
-        :type: int
-        """
-        self._response_status = response_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

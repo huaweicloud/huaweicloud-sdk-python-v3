@@ -23,54 +23,52 @@ class GeneralTableWordsBlockList:
 
     openapi_types = {
         'words': 'str',
-        'words_list': 'list[object]',
+        'confidence': 'float',
+        'location': 'list[list[int]]',
+        'words_list': 'list[WordsListIem]',
         'rows': 'list[int]',
         'columns': 'list[int]',
-        'location': 'list[list[int]]',
-        'cell_location': 'list[list[int]]',
-        'confidence': 'float',
-        'excel': 'str'
+        'cell_location': 'list[list[int]]'
     }
 
     attribute_map = {
         'words': 'words',
+        'confidence': 'confidence',
+        'location': 'location',
         'words_list': 'words_list',
         'rows': 'rows',
         'columns': 'columns',
-        'location': 'location',
-        'cell_location': 'cell_location',
-        'confidence': 'confidence',
-        'excel': 'excel'
+        'cell_location': 'cell_location'
     }
 
-    def __init__(self, words=None, words_list=None, rows=None, columns=None, location=None, cell_location=None, confidence=None, excel=None):
+    def __init__(self, words=None, confidence=None, location=None, words_list=None, rows=None, columns=None, cell_location=None):
         """GeneralTableWordsBlockList - a model defined in huaweicloud sdk"""
         
         
 
         self._words = None
+        self._confidence = None
+        self._location = None
         self._words_list = None
         self._rows = None
         self._columns = None
-        self._location = None
         self._cell_location = None
-        self._confidence = None
-        self._excel = None
         self.discriminator = None
 
-        self.words = words
-        if words_list is not None:
-            self.words_list = words_list
-        self.rows = rows
-        self.columns = columns
-        if location is not None:
-            self.location = location
-        if cell_location is not None:
-            self.cell_location = cell_location
+        if words is not None:
+            self.words = words
         if confidence is not None:
             self.confidence = confidence
-        if excel is not None:
-            self.excel = excel
+        if location is not None:
+            self.location = location
+        if words_list is not None:
+            self.words_list = words_list
+        if rows is not None:
+            self.rows = rows
+        if columns is not None:
+            self.columns = columns
+        if cell_location is not None:
+            self.cell_location = cell_location
 
     @property
     def words(self):
@@ -95,13 +93,57 @@ class GeneralTableWordsBlockList:
         self._words = words
 
     @property
+    def confidence(self):
+        """Gets the confidence of this GeneralTableWordsBlockList.
+
+        字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
+
+        :return: The confidence of this GeneralTableWordsBlockList.
+        :rtype: float
+        """
+        return self._confidence
+
+    @confidence.setter
+    def confidence(self, confidence):
+        """Sets the confidence of this GeneralTableWordsBlockList.
+
+        字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
+
+        :param confidence: The confidence of this GeneralTableWordsBlockList.
+        :type: float
+        """
+        self._confidence = confidence
+
+    @property
+    def location(self):
+        """Gets the location of this GeneralTableWordsBlockList.
+
+        文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+
+        :return: The location of this GeneralTableWordsBlockList.
+        :rtype: list[list[int]]
+        """
+        return self._location
+
+    @location.setter
+    def location(self, location):
+        """Sets the location of this GeneralTableWordsBlockList.
+
+        文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+
+        :param location: The location of this GeneralTableWordsBlockList.
+        :type: list[list[int]]
+        """
+        self._location = location
+
+    @property
     def words_list(self):
         """Gets the words_list of this GeneralTableWordsBlockList.
 
         单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\"return_text_location\"为true时存在。 
 
         :return: The words_list of this GeneralTableWordsBlockList.
-        :rtype: list[object]
+        :rtype: list[WordsListIem]
         """
         return self._words_list
 
@@ -112,7 +154,7 @@ class GeneralTableWordsBlockList:
         单元格内文字段列表。输出顺序从左到右，从上到下。仅当入参\"return_text_location\"为true时存在。 
 
         :param words_list: The words_list of this GeneralTableWordsBlockList.
-        :type: list[object]
+        :type: list[WordsListIem]
         """
         self._words_list = words_list
 
@@ -161,28 +203,6 @@ class GeneralTableWordsBlockList:
         self._columns = columns
 
     @property
-    def location(self):
-        """Gets the location of this GeneralTableWordsBlockList.
-
-        文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
-
-        :return: The location of this GeneralTableWordsBlockList.
-        :rtype: list[list[int]]
-        """
-        return self._location
-
-    @location.setter
-    def location(self, location):
-        """Sets the location of this GeneralTableWordsBlockList.
-
-        文字块位置信息，列表形式，分别表示文字块4个顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
-
-        :param location: The location of this GeneralTableWordsBlockList.
-        :type: list[list[int]]
-        """
-        self._location = location
-
-    @property
     def cell_location(self):
         """Gets the cell_location of this GeneralTableWordsBlockList.
 
@@ -203,50 +223,6 @@ class GeneralTableWordsBlockList:
         :type: list[list[int]]
         """
         self._cell_location = cell_location
-
-    @property
-    def confidence(self):
-        """Gets the confidence of this GeneralTableWordsBlockList.
-
-        字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
-
-        :return: The confidence of this GeneralTableWordsBlockList.
-        :rtype: float
-        """
-        return self._confidence
-
-    @confidence.setter
-    def confidence(self, confidence):
-        """Sets the confidence of this GeneralTableWordsBlockList.
-
-        字段的平均置信度，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。置信度由算法给出，不直接等价于对应字段的准确率。 
-
-        :param confidence: The confidence of this GeneralTableWordsBlockList.
-        :type: float
-        """
-        self._confidence = confidence
-
-    @property
-    def excel(self):
-        """Gets the excel of this GeneralTableWordsBlockList.
-
-        表格图像转换为excel的base64编码，图像中的文字和表格按位置写入excel。对返回的excel编码可用base64.b64decode解码并保存为.xlsx文件。 
-
-        :return: The excel of this GeneralTableWordsBlockList.
-        :rtype: str
-        """
-        return self._excel
-
-    @excel.setter
-    def excel(self, excel):
-        """Sets the excel of this GeneralTableWordsBlockList.
-
-        表格图像转换为excel的base64编码，图像中的文字和表格按位置写入excel。对返回的excel编码可用base64.b64decode解码并保存为.xlsx文件。 
-
-        :param excel: The excel of this GeneralTableWordsBlockList.
-        :type: str
-        """
-        self._excel = excel
 
     def to_dict(self):
         """Returns the model properties as a dict"""

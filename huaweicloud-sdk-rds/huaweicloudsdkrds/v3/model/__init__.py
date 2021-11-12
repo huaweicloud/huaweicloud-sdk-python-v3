@@ -69,6 +69,7 @@ from huaweicloudsdkrds.v3.model.create_sqlserver_database_request import CreateS
 from huaweicloudsdkrds.v3.model.create_sqlserver_database_response import CreateSqlserverDatabaseResponse
 from huaweicloudsdkrds.v3.model.create_sqlserver_db_user_request import CreateSqlserverDbUserRequest
 from huaweicloudsdkrds.v3.model.create_sqlserver_db_user_response import CreateSqlserverDbUserResponse
+from huaweicloudsdkrds.v3.model.customer_upgrade_database_version_req import CustomerUpgradeDatabaseVersionReq
 from huaweicloudsdkrds.v3.model.data_ip_request import DataIpRequest
 from huaweicloudsdkrds.v3.model.database_for_creation import DatabaseForCreation
 from huaweicloudsdkrds.v3.model.database_with_privilege import DatabaseWithPrivilege
@@ -136,6 +137,8 @@ from huaweicloudsdkrds.v3.model.list_datastores_request import ListDatastoresReq
 from huaweicloudsdkrds.v3.model.list_datastores_response import ListDatastoresResponse
 from huaweicloudsdkrds.v3.model.list_db_users_request import ListDbUsersRequest
 from huaweicloudsdkrds.v3.model.list_db_users_response import ListDbUsersResponse
+from huaweicloudsdkrds.v3.model.list_error_logs_new_request import ListErrorLogsNewRequest
+from huaweicloudsdkrds.v3.model.list_error_logs_new_response import ListErrorLogsNewResponse
 from huaweicloudsdkrds.v3.model.list_error_logs_request import ListErrorLogsRequest
 from huaweicloudsdkrds.v3.model.list_error_logs_response import ListErrorLogsResponse
 from huaweicloudsdkrds.v3.model.list_flavors_request import ListFlavorsRequest
@@ -162,6 +165,8 @@ from huaweicloudsdkrds.v3.model.list_project_tags_request import ListProjectTags
 from huaweicloudsdkrds.v3.model.list_project_tags_response import ListProjectTagsResponse
 from huaweicloudsdkrds.v3.model.list_restore_times_request import ListRestoreTimesRequest
 from huaweicloudsdkrds.v3.model.list_restore_times_response import ListRestoreTimesResponse
+from huaweicloudsdkrds.v3.model.list_slow_logs_new_request import ListSlowLogsNewRequest
+from huaweicloudsdkrds.v3.model.list_slow_logs_new_response import ListSlowLogsNewResponse
 from huaweicloudsdkrds.v3.model.list_slow_logs_request import ListSlowLogsRequest
 from huaweicloudsdkrds.v3.model.list_slow_logs_response import ListSlowLogsResponse
 from huaweicloudsdkrds.v3.model.list_slowlog_statistics_request import ListSlowlogStatisticsRequest
@@ -306,6 +311,8 @@ from huaweicloudsdkrds.v3.model.update_port_response import UpdatePortResponse
 from huaweicloudsdkrds.v3.model.update_postgresql_instance_alias_request import UpdatePostgresqlInstanceAliasRequest
 from huaweicloudsdkrds.v3.model.update_postgresql_instance_alias_response import UpdatePostgresqlInstanceAliasResponse
 from huaweicloudsdkrds.v3.model.update_rds_instance_alias_request import UpdateRdsInstanceAliasRequest
+from huaweicloudsdkrds.v3.model.upgrade_db_version_request import UpgradeDbVersionRequest
+from huaweicloudsdkrds.v3.model.upgrade_db_version_response import UpgradeDbVersionResponse
 from huaweicloudsdkrds.v3.model.user_for_creation import UserForCreation
 from huaweicloudsdkrds.v3.model.user_for_list import UserForList
 from huaweicloudsdkrds.v3.model.user_with_privilege import UserWithPrivilege

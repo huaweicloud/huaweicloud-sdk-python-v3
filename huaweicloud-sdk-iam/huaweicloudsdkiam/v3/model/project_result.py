@@ -179,7 +179,7 @@ class ProjectResult:
     def parent_id(self):
         """Gets the parent_id of this ProjectResult.
 
-        如果查询自己创建的项目，则此处返回所属区域的项目ID。    如果查询的是系统内置项目，如cn-north-4，则此处返回账号ID。  
+        如果查询自己创建的项目，则此处返回所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处返回账号ID。
 
         :return: The parent_id of this ProjectResult.
         :rtype: str
@@ -190,7 +190,7 @@ class ProjectResult:
     def parent_id(self, parent_id):
         """Sets the parent_id of this ProjectResult.
 
-        如果查询自己创建的项目，则此处返回所属区域的项目ID。    如果查询的是系统内置项目，如cn-north-4，则此处返回账号ID。  
+        如果查询自己创建的项目，则此处返回所属区域的项目ID。  如果查询的是系统内置项目，如cn-north-4，则此处返回账号ID。
 
         :param parent_id: The parent_id of this ProjectResult.
         :type: str

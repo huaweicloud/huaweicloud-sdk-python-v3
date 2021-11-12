@@ -43,7 +43,7 @@ class DeleteProjectV4Request:
     def project_id(self):
         """Gets the project_id of this DeleteProjectV4Request.
 
-        项目id
+        devcloud的项目id
 
         :return: The project_id of this DeleteProjectV4Request.
         :rtype: str
@@ -54,7 +54,7 @@ class DeleteProjectV4Request:
     def project_id(self, project_id):
         """Sets the project_id of this DeleteProjectV4Request.
 
-        项目id
+        devcloud的项目id
 
         :param project_id: The project_id of this DeleteProjectV4Request.
         :type: str

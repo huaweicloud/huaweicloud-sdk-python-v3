@@ -22,7 +22,6 @@ class RestScheduleConfDTO:
     sensitive_list = []
 
     openapi_types = {
-        'conference_type': 'int',
         'start_time': 'str',
         'length': 'int',
         'subject': 'str',
@@ -46,7 +45,6 @@ class RestScheduleConfDTO:
     }
 
     attribute_map = {
-        'conference_type': 'conferenceType',
         'start_time': 'startTime',
         'length': 'length',
         'subject': 'subject',
@@ -69,12 +67,11 @@ class RestScheduleConfDTO:
         'concurrent_participants': 'concurrentParticipants'
     }
 
-    def __init__(self, conference_type=None, start_time=None, length=None, subject=None, media_types=None, groupuri=None, attendees=None, is_auto_record=None, encrypt_mode=None, language=None, time_zone_id=None, record_type=None, live_address=None, aux_address=None, record_aux_stream=None, conf_config_info=None, record_auth_type=None, vmr_flag=None, cycle_params=None, vmr_id=None, concurrent_participants=None):
+    def __init__(self, start_time=None, length=None, subject=None, media_types=None, groupuri=None, attendees=None, is_auto_record=None, encrypt_mode=None, language=None, time_zone_id=None, record_type=None, live_address=None, aux_address=None, record_aux_stream=None, conf_config_info=None, record_auth_type=None, vmr_flag=None, cycle_params=None, vmr_id=None, concurrent_participants=None):
         """RestScheduleConfDTO - a model defined in huaweicloud sdk"""
         
         
 
-        self._conference_type = None
         self._start_time = None
         self._length = None
         self._subject = None
@@ -97,8 +94,6 @@ class RestScheduleConfDTO:
         self._concurrent_participants = None
         self.discriminator = None
 
-        if conference_type is not None:
-            self.conference_type = conference_type
         if start_time is not None:
             self.start_time = start_time
         if length is not None:
@@ -138,28 +133,6 @@ class RestScheduleConfDTO:
             self.vmr_id = vmr_id
         if concurrent_participants is not None:
             self.concurrent_participants = concurrent_participants
-
-    @property
-    def conference_type(self):
-        """Gets the conference_type of this RestScheduleConfDTO.
-
-        创建会议类型（默认为普通会议）。 - 0: 普通会议。 - 2: 周期性会议，此时cycleParams必须填写。
-
-        :return: The conference_type of this RestScheduleConfDTO.
-        :rtype: int
-        """
-        return self._conference_type
-
-    @conference_type.setter
-    def conference_type(self, conference_type):
-        """Sets the conference_type of this RestScheduleConfDTO.
-
-        创建会议类型（默认为普通会议）。 - 0: 普通会议。 - 2: 周期性会议，此时cycleParams必须填写。
-
-        :param conference_type: The conference_type of this RestScheduleConfDTO.
-        :type: int
-        """
-        self._conference_type = conference_type
 
     @property
     def start_time(self):

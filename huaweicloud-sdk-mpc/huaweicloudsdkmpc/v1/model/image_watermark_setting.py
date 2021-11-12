@@ -27,7 +27,7 @@ class ImageWatermarkSetting:
         'referpos': 'str',
         'timeline_start': 'str',
         'timeline_duration': 'str',
-        'index': 'int',
+        'overlay_input': 'str',
         'input': 'ObsObjInfo',
         'base': 'str'
     }
@@ -38,12 +38,12 @@ class ImageWatermarkSetting:
         'referpos': 'referpos',
         'timeline_start': 'timeline_start',
         'timeline_duration': 'timeline_duration',
-        'index': 'index',
+        'overlay_input': 'overlay_input',
         'input': 'input',
         'base': 'base'
     }
 
-    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, index=None, input=None, base=None):
+    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, overlay_input=None, input=None, base=None):
         """ImageWatermarkSetting - a model defined in huaweicloud sdk"""
         
         
@@ -53,7 +53,7 @@ class ImageWatermarkSetting:
         self._referpos = None
         self._timeline_start = None
         self._timeline_duration = None
-        self._index = None
+        self._overlay_input = None
         self._input = None
         self._base = None
         self.discriminator = None
@@ -68,8 +68,8 @@ class ImageWatermarkSetting:
             self.timeline_start = timeline_start
         if timeline_duration is not None:
             self.timeline_duration = timeline_duration
-        if index is not None:
-            self.index = index
+        if overlay_input is not None:
+            self.overlay_input = overlay_input
         if input is not None:
             self.input = input
         if base is not None:
@@ -186,26 +186,26 @@ class ImageWatermarkSetting:
         self._timeline_duration = timeline_duration
 
     @property
-    def index(self):
-        """Gets the index of this ImageWatermarkSetting.
+    def overlay_input(self):
+        """Gets the overlay_input of this ImageWatermarkSetting.
 
-        对应拼接列表中第几个片段打水印，从1开始，0表示所有拼接后所有片源打水印。 
+        对应拼接列表中第几个片段打水印，从0开始，\"0表示第1个，“1”表示第二个，不带或填\"ALL\"表示所有拼接片源打水印。 
 
-        :return: The index of this ImageWatermarkSetting.
-        :rtype: int
+        :return: The overlay_input of this ImageWatermarkSetting.
+        :rtype: str
         """
-        return self._index
+        return self._overlay_input
 
-    @index.setter
-    def index(self, index):
-        """Sets the index of this ImageWatermarkSetting.
+    @overlay_input.setter
+    def overlay_input(self, overlay_input):
+        """Sets the overlay_input of this ImageWatermarkSetting.
 
-        对应拼接列表中第几个片段打水印，从1开始，0表示所有拼接后所有片源打水印。 
+        对应拼接列表中第几个片段打水印，从0开始，\"0表示第1个，“1”表示第二个，不带或填\"ALL\"表示所有拼接片源打水印。 
 
-        :param index: The index of this ImageWatermarkSetting.
-        :type: int
+        :param overlay_input: The overlay_input of this ImageWatermarkSetting.
+        :type: str
         """
-        self._index = index
+        self._overlay_input = overlay_input
 
     @property
     def input(self):

@@ -729,7 +729,7 @@ class GaussDBClient(Client):
         :return: ListGaussMySqlConfigurationsResponse
         """
 
-        all_params = ['x_language']
+        all_params = ['x_language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -740,6 +740,10 @@ class GaussDBClient(Client):
         path_params = {}
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:

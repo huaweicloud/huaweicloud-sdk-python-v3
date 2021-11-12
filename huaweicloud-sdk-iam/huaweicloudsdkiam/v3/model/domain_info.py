@@ -48,7 +48,7 @@ class DomainInfo:
     def id(self):
         """Gets the id of this DomainInfo.
 
-        租户id
+        租户id。
 
         :return: The id of this DomainInfo.
         :rtype: str
@@ -59,7 +59,7 @@ class DomainInfo:
     def id(self, id):
         """Sets the id of this DomainInfo.
 
-        租户id
+        租户id。
 
         :param id: The id of this DomainInfo.
         :type: str
@@ -70,7 +70,7 @@ class DomainInfo:
     def name(self):
         """Gets the name of this DomainInfo.
 
-        租户name
+        租户name。
 
         :return: The name of this DomainInfo.
         :rtype: str
@@ -81,7 +81,7 @@ class DomainInfo:
     def name(self, name):
         """Sets the name of this DomainInfo.
 
-        租户name
+        租户name。
 
         :param name: The name of this DomainInfo.
         :type: str

@@ -48,8 +48,7 @@ class FuncMount:
 
         self.mount_type = mount_type
         self.mount_resource = mount_resource
-        if mount_share_path is not None:
-            self.mount_share_path = mount_share_path
+        self.mount_share_path = mount_share_path
         self.local_mount_path = local_mount_path
 
     @property

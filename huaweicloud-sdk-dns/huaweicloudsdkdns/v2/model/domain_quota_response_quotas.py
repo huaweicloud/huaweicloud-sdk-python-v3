@@ -55,6 +55,7 @@ class DomainQuotaResponseQuotas:
     def quota_key(self):
         """Gets the quota_key of this DomainQuotaResponseQuotas.
 
+        资源类型。
 
         :return: The quota_key of this DomainQuotaResponseQuotas.
         :rtype: str
@@ -65,6 +66,7 @@ class DomainQuotaResponseQuotas:
     def quota_key(self, quota_key):
         """Sets the quota_key of this DomainQuotaResponseQuotas.
 
+        资源类型。
 
         :param quota_key: The quota_key of this DomainQuotaResponseQuotas.
         :type: str
@@ -75,6 +77,7 @@ class DomainQuotaResponseQuotas:
     def quota_limit(self):
         """Gets the quota_limit of this DomainQuotaResponseQuotas.
 
+        资源配额的最大值。
 
         :return: The quota_limit of this DomainQuotaResponseQuotas.
         :rtype: int
@@ -85,6 +88,7 @@ class DomainQuotaResponseQuotas:
     def quota_limit(self, quota_limit):
         """Sets the quota_limit of this DomainQuotaResponseQuotas.
 
+        资源配额的最大值。
 
         :param quota_limit: The quota_limit of this DomainQuotaResponseQuotas.
         :type: int
@@ -95,6 +99,7 @@ class DomainQuotaResponseQuotas:
     def used(self):
         """Gets the used of this DomainQuotaResponseQuotas.
 
+        配额已使用数量。
 
         :return: The used of this DomainQuotaResponseQuotas.
         :rtype: int
@@ -105,6 +110,7 @@ class DomainQuotaResponseQuotas:
     def used(self, used):
         """Sets the used of this DomainQuotaResponseQuotas.
 
+        配额已使用数量。
 
         :param used: The used of this DomainQuotaResponseQuotas.
         :type: int
@@ -115,6 +121,7 @@ class DomainQuotaResponseQuotas:
     def unit(self):
         """Gets the unit of this DomainQuotaResponseQuotas.
 
+        配额统计单位，取固定值“count”。
 
         :return: The unit of this DomainQuotaResponseQuotas.
         :rtype: str
@@ -125,6 +132,7 @@ class DomainQuotaResponseQuotas:
     def unit(self, unit):
         """Sets the unit of this DomainQuotaResponseQuotas.
 
+        配额统计单位，取固定值“count”。
 
         :param unit: The unit of this DomainQuotaResponseQuotas.
         :type: str

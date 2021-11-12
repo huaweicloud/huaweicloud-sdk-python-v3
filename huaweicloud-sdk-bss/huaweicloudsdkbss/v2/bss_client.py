@@ -332,6 +332,75 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_incentive_discount_policies(self, request):
+        """查询产品的折扣和激励策略
+
+        功能描述：合作伙伴可以查看产品的折扣和激励策略。
+
+        :param ListIncentiveDiscountPoliciesRequest request
+        :return: ListIncentiveDiscountPoliciesResponse
+        """
+        return self.list_incentive_discount_policies_with_http_info(request)
+
+    def list_incentive_discount_policies_with_http_info(self, request):
+        """查询产品的折扣和激励策略
+
+        功能描述：合作伙伴可以查看产品的折扣和激励策略。
+
+        :param ListIncentiveDiscountPoliciesRequest request
+        :return: ListIncentiveDiscountPoliciesResponse
+        """
+
+        all_params = ['time', 'service_type_code', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'time' in local_var_params:
+            query_params.append(('time', local_var_params['time']))
+        if 'service_type_code' in local_var_params:
+            query_params.append(('service_type_code', local_var_params['service_type_code']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/products/incentive-discount-policies',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListIncentiveDiscountPoliciesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_measure_units(self, request):
         """查询使用量单位列表
 
@@ -389,6 +458,81 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListMeasureUnitsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_partner_account_change_records(self, request):
+        """查询收支明细
+
+        功能描述：伙伴在伙伴管理台可以查看自身的收支明细情况
+
+        :param ListPartnerAccountChangeRecordsRequest request
+        :return: ListPartnerAccountChangeRecordsResponse
+        """
+        return self.list_partner_account_change_records_with_http_info(request)
+
+    def list_partner_account_change_records_with_http_info(self, request):
+        """查询收支明细
+
+        功能描述：伙伴在伙伴管理台可以查看自身的收支明细情况
+
+        :param ListPartnerAccountChangeRecordsRequest request
+        :return: ListPartnerAccountChangeRecordsResponse
+        """
+
+        all_params = ['balance_type', 'trade_type', 'trade_time_begin', 'trade_time_end', 'offset', 'limit', 'indirect_partner_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'balance_type' in local_var_params:
+            query_params.append(('balance_type', local_var_params['balance_type']))
+        if 'trade_type' in local_var_params:
+            query_params.append(('trade_type', local_var_params['trade_type']))
+        if 'trade_time_begin' in local_var_params:
+            query_params.append(('trade_time_begin', local_var_params['trade_time_begin']))
+        if 'trade_time_end' in local_var_params:
+            query_params.append(('trade_time_end', local_var_params['trade_time_end']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'indirect_partner_id' in local_var_params:
+            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/accounts/partner-accounts/account-change-records',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListPartnerAccountChangeRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

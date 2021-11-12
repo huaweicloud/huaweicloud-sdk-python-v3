@@ -24,7 +24,7 @@ class QuerySeriesOptionParam:
     openapi_types = {
         'namespace': 'str',
         'metric_name': 'str',
-        'dimensions': 'list[Dimension]'
+        'dimensions': 'list[DimensionSeries]'
     }
 
     attribute_map = {
@@ -100,7 +100,7 @@ class QuerySeriesOptionParam:
         时间序列维度列表。
 
         :return: The dimensions of this QuerySeriesOptionParam.
-        :rtype: list[Dimension]
+        :rtype: list[DimensionSeries]
         """
         return self._dimensions
 
@@ -111,7 +111,7 @@ class QuerySeriesOptionParam:
         时间序列维度列表。
 
         :param dimensions: The dimensions of this QuerySeriesOptionParam.
-        :type: list[Dimension]
+        :type: list[DimensionSeries]
         """
         self._dimensions = dimensions
 

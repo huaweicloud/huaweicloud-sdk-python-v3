@@ -68,7 +68,7 @@ class ListQueryHttpCodeRequest:
     def play_domains(self):
         """Gets the play_domains of this ListQueryHttpCodeRequest.
 
-        播放域名列表，最多支持查询10个域名，多个域名以逗号分隔。 
+        播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。 
 
         :return: The play_domains of this ListQueryHttpCodeRequest.
         :rtype: list[str]
@@ -79,7 +79,7 @@ class ListQueryHttpCodeRequest:
     def play_domains(self, play_domains):
         """Sets the play_domains of this ListQueryHttpCodeRequest.
 
-        播放域名列表，最多支持查询10个域名，多个域名以逗号分隔。 
+        播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。 
 
         :param play_domains: The play_domains of this ListQueryHttpCodeRequest.
         :type: list[str]
@@ -134,7 +134,7 @@ class ListQueryHttpCodeRequest:
     def isp(self):
         """Gets the isp of this ListQueryHttpCodeRequest.
 
-        运营商列表，取值如下： - \"CMCC ：移动\" - \"CTCC ： 电信\" - \"CUCC ：联通\" - \"OTHER: 其他\"  不填写查询所有运营商。 
+        运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
         :return: The isp of this ListQueryHttpCodeRequest.
         :rtype: list[str]
@@ -145,7 +145,7 @@ class ListQueryHttpCodeRequest:
     def isp(self, isp):
         """Sets the isp of this ListQueryHttpCodeRequest.
 
-        运营商列表，取值如下： - \"CMCC ：移动\" - \"CTCC ： 电信\" - \"CUCC ：联通\" - \"OTHER: 其他\"  不填写查询所有运营商。 
+        运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
         :param isp: The isp of this ListQueryHttpCodeRequest.
         :type: list[str]

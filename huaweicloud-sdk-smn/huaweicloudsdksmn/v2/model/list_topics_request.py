@@ -108,7 +108,7 @@ class ListTopicsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListTopicsRequest.
 
-        企业项目id, 默认企业项目id为0
+        企业项目id，默认企业项目id为0。
 
         :return: The enterprise_project_id of this ListTopicsRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class ListTopicsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListTopicsRequest.
 
-        企业项目id, 默认企业项目id为0
+        企业项目id，默认企业项目id为0。
 
         :param enterprise_project_id: The enterprise_project_id of this ListTopicsRequest.
         :type: str
@@ -130,7 +130,7 @@ class ListTopicsRequest:
     def name(self):
         """Gets the name of this ListTopicsRequest.
 
-        检索的主题名称，完全匹配
+        检索的主题名称，完全匹配。
 
         :return: The name of this ListTopicsRequest.
         :rtype: str
@@ -141,7 +141,7 @@ class ListTopicsRequest:
     def name(self, name):
         """Sets the name of this ListTopicsRequest.
 
-        检索的主题名称，完全匹配
+        检索的主题名称，完全匹配。
 
         :param name: The name of this ListTopicsRequest.
         :type: str
@@ -152,7 +152,7 @@ class ListTopicsRequest:
     def fuzzy_name(self):
         """Gets the fuzzy_name of this ListTopicsRequest.
 
-        检索的主题名称，模糊匹配，按照startwith模式进行匹配
+        检索的主题名称，模糊匹配，按照startwith模式进行匹配。
 
         :return: The fuzzy_name of this ListTopicsRequest.
         :rtype: str
@@ -163,7 +163,7 @@ class ListTopicsRequest:
     def fuzzy_name(self, fuzzy_name):
         """Sets the fuzzy_name of this ListTopicsRequest.
 
-        检索的主题名称，模糊匹配，按照startwith模式进行匹配
+        检索的主题名称，模糊匹配，按照startwith模式进行匹配。
 
         :param fuzzy_name: The fuzzy_name of this ListTopicsRequest.
         :type: str

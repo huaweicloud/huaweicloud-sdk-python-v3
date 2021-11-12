@@ -76,7 +76,7 @@ class ListHistoryStreamsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListHistoryStreamsResponse.
 
-        总记录数
+        总记录数。
 
         :return: The total of this ListHistoryStreamsResponse.
         :rtype: int
@@ -87,7 +87,7 @@ class ListHistoryStreamsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListHistoryStreamsResponse.
 
-        总记录数
+        总记录数。
 
         :param total: The total of this ListHistoryStreamsResponse.
         :type: int

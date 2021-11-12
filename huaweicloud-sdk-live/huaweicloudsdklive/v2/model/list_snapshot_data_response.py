@@ -76,7 +76,7 @@ class ListSnapshotDataResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListSnapshotDataResponse.
 
-        指定时间区间内截图数量总和
+        指定时间区间内截图数量总和。
 
         :return: The total of this ListSnapshotDataResponse.
         :rtype: int
@@ -87,7 +87,7 @@ class ListSnapshotDataResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListSnapshotDataResponse.
 
-        指定时间区间内截图数量总和
+        指定时间区间内截图数量总和。
 
         :param total: The total of this ListSnapshotDataResponse.
         :type: int

@@ -67,7 +67,7 @@ class LoginPolicyOption:
     def account_validity_period(self):
         """Gets the account_validity_period of this LoginPolicyOption.
 
-        登录提示信息，取值范围[0,240]。
+        账号在该值设置的有效期内未使用，则被停用。
 
         :return: The account_validity_period of this LoginPolicyOption.
         :rtype: int
@@ -78,7 +78,7 @@ class LoginPolicyOption:
     def account_validity_period(self, account_validity_period):
         """Sets the account_validity_period of this LoginPolicyOption.
 
-        登录提示信息，取值范围[0,240]。
+        账号在该值设置的有效期内未使用，则被停用。
 
         :param account_validity_period: The account_validity_period of this LoginPolicyOption.
         :type: int

@@ -47,7 +47,7 @@ class MappingRules:
     def local(self):
         """Gets the local of this MappingRules.
 
-        表示联邦用户在本系统中的用户信息。 user：联邦用户在本系统中的用户名称。group：联邦用户在本系统中所属用户组。   
+        表示联邦用户在本系统中的用户信息。 user：联邦用户在本系统中的用户名称。group：联邦用户在本系统中所属用户组。 
 
         :return: The local of this MappingRules.
         :rtype: list[dict(str, RulesLocalAdditional)]
@@ -58,7 +58,7 @@ class MappingRules:
     def local(self, local):
         """Sets the local of this MappingRules.
 
-        表示联邦用户在本系统中的用户信息。 user：联邦用户在本系统中的用户名称。group：联邦用户在本系统中所属用户组。   
+        表示联邦用户在本系统中的用户信息。 user：联邦用户在本系统中的用户名称。group：联邦用户在本系统中所属用户组。 
 
         :param local: The local of this MappingRules.
         :type: list[dict(str, RulesLocalAdditional)]

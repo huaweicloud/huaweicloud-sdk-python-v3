@@ -22,28 +22,23 @@ class ResetSimCardResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'work_order_id': 'int',
-        'sim_price_plan_list': 'list[SimPricePlanInfoVO]'
+        'work_order_id': 'int'
     }
 
     attribute_map = {
-        'work_order_id': 'work_order_id',
-        'sim_price_plan_list': 'sim_price_plan_list'
+        'work_order_id': 'work_order_id'
     }
 
-    def __init__(self, work_order_id=None, sim_price_plan_list=None):
+    def __init__(self, work_order_id=None):
         """ResetSimCardResponse - a model defined in huaweicloud sdk"""
         
         super(ResetSimCardResponse, self).__init__()
 
         self._work_order_id = None
-        self._sim_price_plan_list = None
         self.discriminator = None
 
         if work_order_id is not None:
             self.work_order_id = work_order_id
-        if sim_price_plan_list is not None:
-            self.sim_price_plan_list = sim_price_plan_list
 
     @property
     def work_order_id(self):
@@ -66,28 +61,6 @@ class ResetSimCardResponse(SdkResponse):
         :type: int
         """
         self._work_order_id = work_order_id
-
-    @property
-    def sim_price_plan_list(self):
-        """Gets the sim_price_plan_list of this ResetSimCardResponse.
-
-        套餐列表
-
-        :return: The sim_price_plan_list of this ResetSimCardResponse.
-        :rtype: list[SimPricePlanInfoVO]
-        """
-        return self._sim_price_plan_list
-
-    @sim_price_plan_list.setter
-    def sim_price_plan_list(self, sim_price_plan_list):
-        """Sets the sim_price_plan_list of this ResetSimCardResponse.
-
-        套餐列表
-
-        :param sim_price_plan_list: The sim_price_plan_list of this ResetSimCardResponse.
-        :type: list[SimPricePlanInfoVO]
-        """
-        self._sim_price_plan_list = sim_price_plan_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

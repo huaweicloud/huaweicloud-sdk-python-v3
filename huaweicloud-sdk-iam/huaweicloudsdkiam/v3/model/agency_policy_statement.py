@@ -51,7 +51,7 @@ class AgencyPolicyStatement:
     def action(self):
         """Gets the action of this AgencyPolicyStatement.
 
-        授权项，指对资源的具体操作权限。   > - 当自定义策略为委托自定义策略时，该字段值为：``` \"Action\": [\"iam:agencies:assume\"]```。
+        授权项，指对资源的具体操作权限。 > - 当自定义策略为委托自定义策略时，该字段值为：``` \"Action\": [\"iam:agencies:assume\"]```。
 
         :return: The action of this AgencyPolicyStatement.
         :rtype: list[str]
@@ -62,7 +62,7 @@ class AgencyPolicyStatement:
     def action(self, action):
         """Sets the action of this AgencyPolicyStatement.
 
-        授权项，指对资源的具体操作权限。   > - 当自定义策略为委托自定义策略时，该字段值为：``` \"Action\": [\"iam:agencies:assume\"]```。
+        授权项，指对资源的具体操作权限。 > - 当自定义策略为委托自定义策略时，该字段值为：``` \"Action\": [\"iam:agencies:assume\"]```。
 
         :param action: The action of this AgencyPolicyStatement.
         :type: list[str]

@@ -24,7 +24,7 @@ class OutputFileInfo:
     openapi_types = {
         'output_file_name': 'str',
         'exec_description': 'str',
-        'meta_data': 'MetaData'
+        'meta_data': 'SourceInfo'
     }
 
     attribute_map = {
@@ -100,7 +100,7 @@ class OutputFileInfo:
 
 
         :return: The meta_data of this OutputFileInfo.
-        :rtype: MetaData
+        :rtype: SourceInfo
         """
         return self._meta_data
 
@@ -110,7 +110,7 @@ class OutputFileInfo:
 
 
         :param meta_data: The meta_data of this OutputFileInfo.
-        :type: MetaData
+        :type: SourceInfo
         """
         self._meta_data = meta_data
 

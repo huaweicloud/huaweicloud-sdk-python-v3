@@ -51,7 +51,7 @@ class LiveClient(Client):
     def list_bandwidth_detail(self, request):
         """查询播放带宽趋势接口
 
-        查询播放域名带宽数据。  最大查询跨度31天，最大查询周期90天。
+        查询播放域名带宽数据。  最大查询跨度31天，最大查询周期一年。
 
         :param ListBandwidthDetailRequest request
         :return: ListBandwidthDetailResponse
@@ -61,13 +61,13 @@ class LiveClient(Client):
     def list_bandwidth_detail_with_http_info(self, request):
         """查询播放带宽趋势接口
 
-        查询播放域名带宽数据。  最大查询跨度31天，最大查询周期90天。
+        查询播放域名带宽数据。  最大查询跨度31天，最大查询周期一年。
 
         :param ListBandwidthDetailRequest request
         :return: ListBandwidthDetailResponse
         """
 
-        all_params = ['play_domains', 'app', 'stream', 'region', 'isp', 'interval', 'start_time', 'end_time']
+        all_params = ['play_domains', 'app', 'stream', 'country', 'region', 'isp', 'protocol', 'interval', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -85,12 +85,17 @@ class LiveClient(Client):
             query_params.append(('app', local_var_params['app']))
         if 'stream' in local_var_params:
             query_params.append(('stream', local_var_params['stream']))
+        if 'country' in local_var_params:
+            query_params.append(('country', local_var_params['country']))
+            collection_formats['country'] = 'csv'
         if 'region' in local_var_params:
             query_params.append(('region', local_var_params['region']))
             collection_formats['region'] = 'csv'
         if 'isp' in local_var_params:
             query_params.append(('isp', local_var_params['isp']))
             collection_formats['isp'] = 'csv'
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
         if 'interval' in local_var_params:
             query_params.append(('interval', local_var_params['interval']))
         if 'start_time' in local_var_params:
@@ -131,7 +136,7 @@ class LiveClient(Client):
     def list_domain_bandwidth_peak(self, request):
         """查询播放带宽峰值接口
 
-        查询指定时间范围内播放带宽峰值。  最大查询跨度31天，最大查询周期90天。
+        查询指定时间范围内播放带宽峰值。  最大查询跨度31天，最大查询周期一年。
 
         :param ListDomainBandwidthPeakRequest request
         :return: ListDomainBandwidthPeakResponse
@@ -141,13 +146,13 @@ class LiveClient(Client):
     def list_domain_bandwidth_peak_with_http_info(self, request):
         """查询播放带宽峰值接口
 
-        查询指定时间范围内播放带宽峰值。  最大查询跨度31天，最大查询周期90天。
+        查询指定时间范围内播放带宽峰值。  最大查询跨度31天，最大查询周期一年。
 
         :param ListDomainBandwidthPeakRequest request
         :return: ListDomainBandwidthPeakResponse
         """
 
-        all_params = ['play_domains', 'app', 'stream', 'region', 'isp', 'start_time', 'end_time']
+        all_params = ['play_domains', 'app', 'stream', 'region', 'isp', 'protocol', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -171,6 +176,8 @@ class LiveClient(Client):
         if 'isp' in local_var_params:
             query_params.append(('isp', local_var_params['isp']))
             collection_formats['isp'] = 'csv'
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
         if 'start_time' in local_var_params:
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
@@ -209,7 +216,7 @@ class LiveClient(Client):
     def list_domain_traffic_detail(self, request):
         """查询播放流量趋势接口
 
-        查询播放域名流量数据。  最大查询跨度31天，最大查询周期90天。
+        查询播放域名流量数据。  最大查询跨度31天，最大查询周期一年。
 
         :param ListDomainTrafficDetailRequest request
         :return: ListDomainTrafficDetailResponse
@@ -219,13 +226,13 @@ class LiveClient(Client):
     def list_domain_traffic_detail_with_http_info(self, request):
         """查询播放流量趋势接口
 
-        查询播放域名流量数据。  最大查询跨度31天，最大查询周期90天。
+        查询播放域名流量数据。  最大查询跨度31天，最大查询周期一年。
 
         :param ListDomainTrafficDetailRequest request
         :return: ListDomainTrafficDetailResponse
         """
 
-        all_params = ['play_domains', 'app', 'stream', 'region', 'isp', 'interval', 'start_time', 'end_time']
+        all_params = ['play_domains', 'app', 'stream', 'region', 'isp', 'protocol', 'interval', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -249,6 +256,8 @@ class LiveClient(Client):
         if 'isp' in local_var_params:
             query_params.append(('isp', local_var_params['isp']))
             collection_formats['isp'] = 'csv'
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
         if 'interval' in local_var_params:
             query_params.append(('interval', local_var_params['interval']))
         if 'start_time' in local_var_params:
@@ -289,7 +298,7 @@ class LiveClient(Client):
     def list_domain_traffic_summary(self, request):
         """查询播放流量汇总接口
 
-        查询指定时间范围内流量汇总量。  最大查询跨度31天，最大查询周期90天。
+        查询指定时间范围内流量汇总量。  最大查询跨度31天，最大查询周期一年。
 
         :param ListDomainTrafficSummaryRequest request
         :return: ListDomainTrafficSummaryResponse
@@ -299,13 +308,13 @@ class LiveClient(Client):
     def list_domain_traffic_summary_with_http_info(self, request):
         """查询播放流量汇总接口
 
-        查询指定时间范围内流量汇总量。  最大查询跨度31天，最大查询周期90天。
+        查询指定时间范围内流量汇总量。  最大查询跨度31天，最大查询周期一年。
 
         :param ListDomainTrafficSummaryRequest request
         :return: ListDomainTrafficSummaryResponse
         """
 
-        all_params = ['play_domains', 'app', 'stream', 'region', 'isp', 'start_time', 'end_time']
+        all_params = ['play_domains', 'app', 'stream', 'region', 'isp', 'protocol', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -329,6 +338,8 @@ class LiveClient(Client):
         if 'isp' in local_var_params:
             query_params.append(('isp', local_var_params['isp']))
             collection_formats['isp'] = 'csv'
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
         if 'start_time' in local_var_params:
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
@@ -367,7 +378,7 @@ class LiveClient(Client):
     def list_history_streams(self, request):
         """查询历史推流列表接口
 
-        查询历史推流列表。  最大查询跨度1天，最大查询周期7天。
+        查询历史推流列表。  不能查询现推流。  最大查询跨度1天，最大查询周期1个月。
 
         :param ListHistoryStreamsRequest request
         :return: ListHistoryStreamsResponse
@@ -377,13 +388,13 @@ class LiveClient(Client):
     def list_history_streams_with_http_info(self, request):
         """查询历史推流列表接口
 
-        查询历史推流列表。  最大查询跨度1天，最大查询周期7天。
+        查询历史推流列表。  不能查询现推流。  最大查询跨度1天，最大查询周期1个月。
 
         :param ListHistoryStreamsRequest request
         :return: ListHistoryStreamsResponse
         """
 
-        all_params = ['domain', 'app', 'offset', 'limit']
+        all_params = ['domain', 'app', 'stream', 'start_time', 'end_time', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -398,6 +409,12 @@ class LiveClient(Client):
             query_params.append(('domain', local_var_params['domain']))
         if 'app' in local_var_params:
             query_params.append(('app', local_var_params['app']))
+        if 'stream' in local_var_params:
+            query_params.append(('stream', local_var_params['stream']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -661,7 +678,7 @@ class LiveClient(Client):
         :return: ListTranscodeDataResponse
         """
 
-        all_params = ['publish_domain', 'start_time', 'end_time']
+        all_params = ['publish_domain', 'stream', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -674,6 +691,8 @@ class LiveClient(Client):
         query_params = []
         if 'publish_domain' in local_var_params:
             query_params.append(('publish_domain', local_var_params['publish_domain']))
+        if 'stream' in local_var_params:
+            query_params.append(('stream', local_var_params['stream']))
         if 'start_time' in local_var_params:
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
@@ -712,7 +731,7 @@ class LiveClient(Client):
     def list_users_of_stream(self, request):
         """查询观众趋势接口
 
-        查询观众趋势。  最大查询跨度7天，最大查询周期90天。
+        查询观众趋势。  最大查询跨度31天，最大查询周期一年。
 
         :param ListUsersOfStreamRequest request
         :return: ListUsersOfStreamResponse
@@ -722,13 +741,13 @@ class LiveClient(Client):
     def list_users_of_stream_with_http_info(self, request):
         """查询观众趋势接口
 
-        查询观众趋势。  最大查询跨度7天，最大查询周期90天。
+        查询观众趋势。  最大查询跨度31天，最大查询周期一年。
 
         :param ListUsersOfStreamRequest request
         :return: ListUsersOfStreamResponse
         """
 
-        all_params = ['play_domain', 'app', 'stream', 'isp', 'region', 'interval', 'start_time', 'end_time']
+        all_params = ['play_domain', 'app', 'stream', 'isp', 'country', 'region', 'protocol', 'interval', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -748,9 +767,14 @@ class LiveClient(Client):
         if 'isp' in local_var_params:
             query_params.append(('isp', local_var_params['isp']))
             collection_formats['isp'] = 'csv'
+        if 'country' in local_var_params:
+            query_params.append(('country', local_var_params['country']))
+            collection_formats['country'] = 'csv'
         if 'region' in local_var_params:
             query_params.append(('region', local_var_params['region']))
             collection_formats['region'] = 'csv'
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
         if 'interval' in local_var_params:
             query_params.append(('interval', local_var_params['interval']))
         if 'start_time' in local_var_params:
@@ -791,7 +815,7 @@ class LiveClient(Client):
     def show_stream_count(self, request):
         """查询域名维度推流路数接口
 
-        查询域名维度推流路数接口。  最大查询跨度31天，最大查询周期90天。
+        查询域名维度推流路数接口。  最大查询跨度31天，最大查询周期1年。
 
         :param ShowStreamCountRequest request
         :return: ShowStreamCountResponse
@@ -801,7 +825,7 @@ class LiveClient(Client):
     def show_stream_count_with_http_info(self, request):
         """查询域名维度推流路数接口
 
-        查询域名维度推流路数接口。  最大查询跨度31天，最大查询周期90天。
+        查询域名维度推流路数接口。  最大查询跨度31天，最大查询周期1年。
 
         :param ShowStreamCountRequest request
         :return: ShowStreamCountResponse
@@ -859,7 +883,7 @@ class LiveClient(Client):
     def show_stream_portrait(self, request):
         """查询播放画像信息接口
 
-        查询播放画像信息。  最大查询跨度1天，最大查询周期31天。
+        查询播放画像信息。  最大查询跨度1天，最大查询周期31天。 不统计协议为HLS的播放时长（play_duration）信息。
 
         :param ShowStreamPortraitRequest request
         :return: ShowStreamPortraitResponse
@@ -869,7 +893,7 @@ class LiveClient(Client):
     def show_stream_portrait_with_http_info(self, request):
         """查询播放画像信息接口
 
-        查询播放画像信息。  最大查询跨度1天，最大查询周期31天。
+        查询播放画像信息。  最大查询跨度1天，最大查询周期31天。 不统计协议为HLS的播放时长（play_duration）信息。
 
         :param ShowStreamPortraitRequest request
         :return: ShowStreamPortraitResponse
@@ -926,7 +950,7 @@ class LiveClient(Client):
     def show_up_bandwidth(self, request):
         """查询上行带宽数据接口
 
-        查询上行带宽数据。  最大查询跨度31天，最大查询周期90天。
+        查询上行带宽数据。  最大查询跨度31天，最大查询周期1年。
 
         :param ShowUpBandwidthRequest request
         :return: ShowUpBandwidthResponse
@@ -936,7 +960,7 @@ class LiveClient(Client):
     def show_up_bandwidth_with_http_info(self, request):
         """查询上行带宽数据接口
 
-        查询上行带宽数据。  最大查询跨度31天，最大查询周期90天。
+        查询上行带宽数据。  最大查询跨度31天，最大查询周期1年。
 
         :param ShowUpBandwidthRequest request
         :return: ShowUpBandwidthResponse
@@ -1006,7 +1030,7 @@ class LiveClient(Client):
     def list_single_stream_bitrate(self, request):
         """查询推流码率数据接口
 
-        查询推流监控码率数据接口。  最大查询跨度6小时，最大查询周期7天。
+        查询推流监控码率数据接口。  最大查询跨度1天，最大查询周期1个月。
 
         :param ListSingleStreamBitrateRequest request
         :return: ListSingleStreamBitrateResponse
@@ -1016,7 +1040,7 @@ class LiveClient(Client):
     def list_single_stream_bitrate_with_http_info(self, request):
         """查询推流码率数据接口
 
-        查询推流监控码率数据接口。  最大查询跨度6小时，最大查询周期7天。
+        查询推流监控码率数据接口。  最大查询跨度1天，最大查询周期1个月。
 
         :param ListSingleStreamBitrateRequest request
         :return: ListSingleStreamBitrateResponse
@@ -1077,7 +1101,7 @@ class LiveClient(Client):
     def list_single_stream_framerate(self, request):
         """查询推流帧率数据接口
 
-        查询推流帧率数据接口。  最大查询跨度6小时，最大查询周期7天。
+        查询推流帧率数据接口。  最大查询跨度1天，最大查询周期1个月。
 
         :param ListSingleStreamFramerateRequest request
         :return: ListSingleStreamFramerateResponse
@@ -1087,7 +1111,7 @@ class LiveClient(Client):
     def list_single_stream_framerate_with_http_info(self, request):
         """查询推流帧率数据接口
 
-        查询推流帧率数据接口。  最大查询跨度6小时，最大查询周期7天。
+        查询推流帧率数据接口。  最大查询跨度1天，最大查询周期1个月。
 
         :param ListSingleStreamFramerateRequest request
         :return: ListSingleStreamFramerateResponse

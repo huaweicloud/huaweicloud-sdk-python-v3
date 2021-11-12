@@ -38,23 +38,26 @@ class ListFunctionVersionResult:
         'code_filename': 'str',
         'code_size': 'int',
         'user_data': 'str',
+        'encrypted_user_data': 'str',
         'digest': 'str',
         'version': 'str',
         'image_name': 'str',
         'xrole': 'str',
         'app_xrole': 'str',
-        'description': 'str',
-        'version_description': 'str',
         'last_modified': 'datetime',
-        'func_vpc': 'FuncVpc',
-        'mount_config': 'MountConfig',
+        'func_vpc_id': 'str',
         'concurrency': 'int',
-        'depend_list': 'list[str]',
+        'concurrent_num': 'int',
         'strategy_config': 'StrategyConfig',
-        'extend_config': 'str',
-        'dependencies': 'list[Dependency]',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
+        'long_time': 'bool',
+        'log_group_id': 'str',
+        'log_stream_id': 'str',
+        'function_async_config': 'FunctionAsyncConfig',
+        'type': 'str',
+        'enable_cloud_debug': 'str',
+        'enable_dynamic_memory': 'bool',
         'enterprise_project_id': 'str'
     }
 
@@ -75,27 +78,30 @@ class ListFunctionVersionResult:
         'code_filename': 'code_filename',
         'code_size': 'code_size',
         'user_data': 'user_data',
+        'encrypted_user_data': 'encrypted_user_data',
         'digest': 'digest',
         'version': 'version',
         'image_name': 'image_name',
         'xrole': 'xrole',
         'app_xrole': 'app_xrole',
-        'description': 'description',
-        'version_description': 'version_description',
         'last_modified': 'last_modified',
-        'func_vpc': 'func_vpc',
-        'mount_config': 'mount_config',
+        'func_vpc_id': 'func_vpc_id',
         'concurrency': 'concurrency',
-        'depend_list': 'depend_list',
+        'concurrent_num': 'concurrent_num',
         'strategy_config': 'strategy_config',
-        'extend_config': 'extend_config',
-        'dependencies': 'dependencies',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
+        'long_time': 'long_time',
+        'log_group_id': 'log_group_id',
+        'log_stream_id': 'log_stream_id',
+        'function_async_config': 'function_async_config',
+        'type': 'type',
+        'enable_cloud_debug': 'enable_cloud_debug',
+        'enable_dynamic_memory': 'enable_dynamic_memory',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, version_description=None, last_modified=None, func_vpc=None, mount_config=None, concurrency=None, depend_list=None, strategy_config=None, extend_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, last_modified=None, func_vpc_id=None, concurrency=None, concurrent_num=None, strategy_config=None, initializer_handler=None, initializer_timeout=None, long_time=None, log_group_id=None, log_stream_id=None, function_async_config=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, enterprise_project_id=None):
         """ListFunctionVersionResult - a model defined in huaweicloud sdk"""
         
         
@@ -116,23 +122,26 @@ class ListFunctionVersionResult:
         self._code_filename = None
         self._code_size = None
         self._user_data = None
+        self._encrypted_user_data = None
         self._digest = None
         self._version = None
         self._image_name = None
         self._xrole = None
         self._app_xrole = None
-        self._description = None
-        self._version_description = None
         self._last_modified = None
-        self._func_vpc = None
-        self._mount_config = None
+        self._func_vpc_id = None
         self._concurrency = None
-        self._depend_list = None
+        self._concurrent_num = None
         self._strategy_config = None
-        self._extend_config = None
-        self._dependencies = None
         self._initializer_handler = None
         self._initializer_timeout = None
+        self._long_time = None
+        self._log_group_id = None
+        self._log_stream_id = None
+        self._function_async_config = None
+        self._type = None
+        self._enable_cloud_debug = None
+        self._enable_dynamic_memory = None
         self._enterprise_project_id = None
         self.discriminator = None
 
@@ -155,6 +164,8 @@ class ListFunctionVersionResult:
         self.code_size = code_size
         if user_data is not None:
             self.user_data = user_data
+        if encrypted_user_data is not None:
+            self.encrypted_user_data = encrypted_user_data
         self.digest = digest
         self.version = version
         self.image_name = image_name
@@ -162,29 +173,33 @@ class ListFunctionVersionResult:
             self.xrole = xrole
         if app_xrole is not None:
             self.app_xrole = app_xrole
-        if description is not None:
-            self.description = description
-        if version_description is not None:
-            self.version_description = version_description
         self.last_modified = last_modified
-        if func_vpc is not None:
-            self.func_vpc = func_vpc
-        if mount_config is not None:
-            self.mount_config = mount_config
+        if func_vpc_id is not None:
+            self.func_vpc_id = func_vpc_id
         if concurrency is not None:
             self.concurrency = concurrency
-        if depend_list is not None:
-            self.depend_list = depend_list
+        if concurrent_num is not None:
+            self.concurrent_num = concurrent_num
         if strategy_config is not None:
             self.strategy_config = strategy_config
-        if extend_config is not None:
-            self.extend_config = extend_config
-        if dependencies is not None:
-            self.dependencies = dependencies
         if initializer_handler is not None:
             self.initializer_handler = initializer_handler
         if initializer_timeout is not None:
             self.initializer_timeout = initializer_timeout
+        if long_time is not None:
+            self.long_time = long_time
+        if log_group_id is not None:
+            self.log_group_id = log_group_id
+        if log_stream_id is not None:
+            self.log_stream_id = log_stream_id
+        if function_async_config is not None:
+            self.function_async_config = function_async_config
+        if type is not None:
+            self.type = type
+        if enable_cloud_debug is not None:
+            self.enable_cloud_debug = enable_cloud_debug
+        if enable_dynamic_memory is not None:
+            self.enable_dynamic_memory = enable_dynamic_memory
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
@@ -541,6 +556,28 @@ class ListFunctionVersionResult:
         self._user_data = user_data
 
     @property
+    def encrypted_user_data(self):
+        """Gets the encrypted_user_data of this ListFunctionVersionResult.
+
+        用户自定义的name/value信息，用于需要加密的配置。
+
+        :return: The encrypted_user_data of this ListFunctionVersionResult.
+        :rtype: str
+        """
+        return self._encrypted_user_data
+
+    @encrypted_user_data.setter
+    def encrypted_user_data(self, encrypted_user_data):
+        """Sets the encrypted_user_data of this ListFunctionVersionResult.
+
+        用户自定义的name/value信息，用于需要加密的配置。
+
+        :param encrypted_user_data: The encrypted_user_data of this ListFunctionVersionResult.
+        :type: str
+        """
+        self._encrypted_user_data = encrypted_user_data
+
+    @property
     def digest(self):
         """Gets the digest of this ListFunctionVersionResult.
 
@@ -651,50 +688,6 @@ class ListFunctionVersionResult:
         self._app_xrole = app_xrole
 
     @property
-    def description(self):
-        """Gets the description of this ListFunctionVersionResult.
-
-        函数描述。
-
-        :return: The description of this ListFunctionVersionResult.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this ListFunctionVersionResult.
-
-        函数描述。
-
-        :param description: The description of this ListFunctionVersionResult.
-        :type: str
-        """
-        self._description = description
-
-    @property
-    def version_description(self):
-        """Gets the version_description of this ListFunctionVersionResult.
-
-        函数版本描述。
-
-        :return: The version_description of this ListFunctionVersionResult.
-        :rtype: str
-        """
-        return self._version_description
-
-    @version_description.setter
-    def version_description(self, version_description):
-        """Sets the version_description of this ListFunctionVersionResult.
-
-        函数版本描述。
-
-        :param version_description: The version_description of this ListFunctionVersionResult.
-        :type: str
-        """
-        self._version_description = version_description
-
-    @property
     def last_modified(self):
         """Gets the last_modified of this ListFunctionVersionResult.
 
@@ -717,44 +710,26 @@ class ListFunctionVersionResult:
         self._last_modified = last_modified
 
     @property
-    def func_vpc(self):
-        """Gets the func_vpc of this ListFunctionVersionResult.
+    def func_vpc_id(self):
+        """Gets the func_vpc_id of this ListFunctionVersionResult.
 
+        用户的vpcid
 
-        :return: The func_vpc of this ListFunctionVersionResult.
-        :rtype: FuncVpc
+        :return: The func_vpc_id of this ListFunctionVersionResult.
+        :rtype: str
         """
-        return self._func_vpc
+        return self._func_vpc_id
 
-    @func_vpc.setter
-    def func_vpc(self, func_vpc):
-        """Sets the func_vpc of this ListFunctionVersionResult.
+    @func_vpc_id.setter
+    def func_vpc_id(self, func_vpc_id):
+        """Sets the func_vpc_id of this ListFunctionVersionResult.
 
+        用户的vpcid
 
-        :param func_vpc: The func_vpc of this ListFunctionVersionResult.
-        :type: FuncVpc
+        :param func_vpc_id: The func_vpc_id of this ListFunctionVersionResult.
+        :type: str
         """
-        self._func_vpc = func_vpc
-
-    @property
-    def mount_config(self):
-        """Gets the mount_config of this ListFunctionVersionResult.
-
-
-        :return: The mount_config of this ListFunctionVersionResult.
-        :rtype: MountConfig
-        """
-        return self._mount_config
-
-    @mount_config.setter
-    def mount_config(self, mount_config):
-        """Sets the mount_config of this ListFunctionVersionResult.
-
-
-        :param mount_config: The mount_config of this ListFunctionVersionResult.
-        :type: MountConfig
-        """
-        self._mount_config = mount_config
+        self._func_vpc_id = func_vpc_id
 
     @property
     def concurrency(self):
@@ -777,26 +752,24 @@ class ListFunctionVersionResult:
         self._concurrency = concurrency
 
     @property
-    def depend_list(self):
-        """Gets the depend_list of this ListFunctionVersionResult.
+    def concurrent_num(self):
+        """Gets the concurrent_num of this ListFunctionVersionResult.
 
-        依赖id列表
 
-        :return: The depend_list of this ListFunctionVersionResult.
-        :rtype: list[str]
+        :return: The concurrent_num of this ListFunctionVersionResult.
+        :rtype: int
         """
-        return self._depend_list
+        return self._concurrent_num
 
-    @depend_list.setter
-    def depend_list(self, depend_list):
-        """Sets the depend_list of this ListFunctionVersionResult.
+    @concurrent_num.setter
+    def concurrent_num(self, concurrent_num):
+        """Sets the concurrent_num of this ListFunctionVersionResult.
 
-        依赖id列表
 
-        :param depend_list: The depend_list of this ListFunctionVersionResult.
-        :type: list[str]
+        :param concurrent_num: The concurrent_num of this ListFunctionVersionResult.
+        :type: int
         """
-        self._depend_list = depend_list
+        self._concurrent_num = concurrent_num
 
     @property
     def strategy_config(self):
@@ -817,50 +790,6 @@ class ListFunctionVersionResult:
         :type: StrategyConfig
         """
         self._strategy_config = strategy_config
-
-    @property
-    def extend_config(self):
-        """Gets the extend_config of this ListFunctionVersionResult.
-
-        函数扩展配置。
-
-        :return: The extend_config of this ListFunctionVersionResult.
-        :rtype: str
-        """
-        return self._extend_config
-
-    @extend_config.setter
-    def extend_config(self, extend_config):
-        """Sets the extend_config of this ListFunctionVersionResult.
-
-        函数扩展配置。
-
-        :param extend_config: The extend_config of this ListFunctionVersionResult.
-        :type: str
-        """
-        self._extend_config = extend_config
-
-    @property
-    def dependencies(self):
-        """Gets the dependencies of this ListFunctionVersionResult.
-
-        函数依赖代码包列表。
-
-        :return: The dependencies of this ListFunctionVersionResult.
-        :rtype: list[Dependency]
-        """
-        return self._dependencies
-
-    @dependencies.setter
-    def dependencies(self, dependencies):
-        """Sets the dependencies of this ListFunctionVersionResult.
-
-        函数依赖代码包列表。
-
-        :param dependencies: The dependencies of this ListFunctionVersionResult.
-        :type: list[Dependency]
-        """
-        self._dependencies = dependencies
 
     @property
     def initializer_handler(self):
@@ -905,6 +834,158 @@ class ListFunctionVersionResult:
         :type: int
         """
         self._initializer_timeout = initializer_timeout
+
+    @property
+    def long_time(self):
+        """Gets the long_time of this ListFunctionVersionResult.
+
+        是否是支持长时间运行
+
+        :return: The long_time of this ListFunctionVersionResult.
+        :rtype: bool
+        """
+        return self._long_time
+
+    @long_time.setter
+    def long_time(self, long_time):
+        """Sets the long_time of this ListFunctionVersionResult.
+
+        是否是支持长时间运行
+
+        :param long_time: The long_time of this ListFunctionVersionResult.
+        :type: bool
+        """
+        self._long_time = long_time
+
+    @property
+    def log_group_id(self):
+        """Gets the log_group_id of this ListFunctionVersionResult.
+
+        自定义日志查询组id
+
+        :return: The log_group_id of this ListFunctionVersionResult.
+        :rtype: str
+        """
+        return self._log_group_id
+
+    @log_group_id.setter
+    def log_group_id(self, log_group_id):
+        """Sets the log_group_id of this ListFunctionVersionResult.
+
+        自定义日志查询组id
+
+        :param log_group_id: The log_group_id of this ListFunctionVersionResult.
+        :type: str
+        """
+        self._log_group_id = log_group_id
+
+    @property
+    def log_stream_id(self):
+        """Gets the log_stream_id of this ListFunctionVersionResult.
+
+        自定义日志查询流id
+
+        :return: The log_stream_id of this ListFunctionVersionResult.
+        :rtype: str
+        """
+        return self._log_stream_id
+
+    @log_stream_id.setter
+    def log_stream_id(self, log_stream_id):
+        """Sets the log_stream_id of this ListFunctionVersionResult.
+
+        自定义日志查询流id
+
+        :param log_stream_id: The log_stream_id of this ListFunctionVersionResult.
+        :type: str
+        """
+        self._log_stream_id = log_stream_id
+
+    @property
+    def function_async_config(self):
+        """Gets the function_async_config of this ListFunctionVersionResult.
+
+
+        :return: The function_async_config of this ListFunctionVersionResult.
+        :rtype: FunctionAsyncConfig
+        """
+        return self._function_async_config
+
+    @function_async_config.setter
+    def function_async_config(self, function_async_config):
+        """Sets the function_async_config of this ListFunctionVersionResult.
+
+
+        :param function_async_config: The function_async_config of this ListFunctionVersionResult.
+        :type: FunctionAsyncConfig
+        """
+        self._function_async_config = function_async_config
+
+    @property
+    def type(self):
+        """Gets the type of this ListFunctionVersionResult.
+
+        函数版本
+
+        :return: The type of this ListFunctionVersionResult.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ListFunctionVersionResult.
+
+        函数版本
+
+        :param type: The type of this ListFunctionVersionResult.
+        :type: str
+        """
+        self._type = type
+
+    @property
+    def enable_cloud_debug(self):
+        """Gets the enable_cloud_debug of this ListFunctionVersionResult.
+
+        是否启用cloud debug功能
+
+        :return: The enable_cloud_debug of this ListFunctionVersionResult.
+        :rtype: str
+        """
+        return self._enable_cloud_debug
+
+    @enable_cloud_debug.setter
+    def enable_cloud_debug(self, enable_cloud_debug):
+        """Sets the enable_cloud_debug of this ListFunctionVersionResult.
+
+        是否启用cloud debug功能
+
+        :param enable_cloud_debug: The enable_cloud_debug of this ListFunctionVersionResult.
+        :type: str
+        """
+        self._enable_cloud_debug = enable_cloud_debug
+
+    @property
+    def enable_dynamic_memory(self):
+        """Gets the enable_dynamic_memory of this ListFunctionVersionResult.
+
+        是否启用动态内存功能
+
+        :return: The enable_dynamic_memory of this ListFunctionVersionResult.
+        :rtype: bool
+        """
+        return self._enable_dynamic_memory
+
+    @enable_dynamic_memory.setter
+    def enable_dynamic_memory(self, enable_dynamic_memory):
+        """Sets the enable_dynamic_memory of this ListFunctionVersionResult.
+
+        是否启用动态内存功能
+
+        :param enable_dynamic_memory: The enable_dynamic_memory of this ListFunctionVersionResult.
+        :type: bool
+        """
+        self._enable_dynamic_memory = enable_dynamic_memory
 
     @property
     def enterprise_project_id(self):

@@ -51,7 +51,7 @@ class IamAsyncClient(Client):
     def associate_agency_with_all_projects_permission_async(self, request):
         """为委托授予所有项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予所有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param AssociateAgencyWithAllProjectsPermissionRequest request
         :return: AssociateAgencyWithAllProjectsPermissionResponse
@@ -61,7 +61,7 @@ class IamAsyncClient(Client):
     def associate_agency_with_all_projects_permission_with_http_info(self, request):
         """为委托授予所有项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予所有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param AssociateAgencyWithAllProjectsPermissionRequest request
         :return: AssociateAgencyWithAllProjectsPermissionResponse
@@ -118,7 +118,7 @@ class IamAsyncClient(Client):
     def associate_agency_with_domain_permission_async(self, request):
         """为委托授予全局服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予全局服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param AssociateAgencyWithDomainPermissionRequest request
         :return: AssociateAgencyWithDomainPermissionResponse
@@ -128,7 +128,7 @@ class IamAsyncClient(Client):
     def associate_agency_with_domain_permission_with_http_info(self, request):
         """为委托授予全局服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予全局服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param AssociateAgencyWithDomainPermissionRequest request
         :return: AssociateAgencyWithDomainPermissionResponse
@@ -185,7 +185,7 @@ class IamAsyncClient(Client):
     def associate_agency_with_project_permission_async(self, request):
         """为委托授予项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param AssociateAgencyWithProjectPermissionRequest request
         :return: AssociateAgencyWithProjectPermissionResponse
@@ -195,7 +195,7 @@ class IamAsyncClient(Client):
     def associate_agency_with_project_permission_with_http_info(self, request):
         """为委托授予项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为委托授予项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param AssociateAgencyWithProjectPermissionRequest request
         :return: AssociateAgencyWithProjectPermissionResponse
@@ -249,10 +249,144 @@ class IamAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def associate_role_to_group_on_enterprise_project_async(self, request):
+        """基于用户组为企业项目授权
+
+        该接口用于基于用户组为企业项目授权。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param AssociateRoleToGroupOnEnterpriseProjectRequest request
+        :return: AssociateRoleToGroupOnEnterpriseProjectResponse
+        """
+        return self.associate_role_to_group_on_enterprise_project_with_http_info(request)
+
+    def associate_role_to_group_on_enterprise_project_with_http_info(self, request):
+        """基于用户组为企业项目授权
+
+        该接口用于基于用户组为企业项目授权。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param AssociateRoleToGroupOnEnterpriseProjectRequest request
+        :return: AssociateRoleToGroupOnEnterpriseProjectResponse
+        """
+
+        all_params = ['enterprise_project_id', 'group_id', 'role_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            path_params['enterprise_project_id'] = local_var_params['enterprise_project_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'role_id' in local_var_params:
+            path_params['role_id'] = local_var_params['role_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/groups/{group_id}/roles/{role_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AssociateRoleToGroupOnEnterpriseProjectResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def associate_role_to_user_on_enterprise_project_async(self, request):
+        """基于用户为企业项目授权
+
+        基于用户为企业项目授权。 该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param AssociateRoleToUserOnEnterpriseProjectRequest request
+        :return: AssociateRoleToUserOnEnterpriseProjectResponse
+        """
+        return self.associate_role_to_user_on_enterprise_project_with_http_info(request)
+
+    def associate_role_to_user_on_enterprise_project_with_http_info(self, request):
+        """基于用户为企业项目授权
+
+        基于用户为企业项目授权。 该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param AssociateRoleToUserOnEnterpriseProjectRequest request
+        :return: AssociateRoleToUserOnEnterpriseProjectResponse
+        """
+
+        all_params = ['enterprise_project_id', 'user_id', 'role_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            path_params['enterprise_project_id'] = local_var_params['enterprise_project_id']
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+        if 'role_id' in local_var_params:
+            path_params['role_id'] = local_var_params['role_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/users/{user_id}/roles/{role_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AssociateRoleToUserOnEnterpriseProjectResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def check_all_projects_permission_for_agency_async(self, request):
         """检查委托下是否具有所有项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)检查委托是否具有所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)检查委托是否具有所有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CheckAllProjectsPermissionForAgencyRequest request
         :return: CheckAllProjectsPermissionForAgencyResponse
@@ -262,7 +396,7 @@ class IamAsyncClient(Client):
     def check_all_projects_permission_for_agency_with_http_info(self, request):
         """检查委托下是否具有所有项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)检查委托是否具有所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)检查委托是否具有所有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CheckAllProjectsPermissionForAgencyRequest request
         :return: CheckAllProjectsPermissionForAgencyResponse
@@ -319,7 +453,7 @@ class IamAsyncClient(Client):
     def check_domain_permission_for_agency_async(self, request):
         """查询委托是否拥有全局服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托是否拥有全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托是否拥有全局服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CheckDomainPermissionForAgencyRequest request
         :return: CheckDomainPermissionForAgencyResponse
@@ -329,7 +463,7 @@ class IamAsyncClient(Client):
     def check_domain_permission_for_agency_with_http_info(self, request):
         """查询委托是否拥有全局服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托是否拥有全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托是否拥有全局服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CheckDomainPermissionForAgencyRequest request
         :return: CheckDomainPermissionForAgencyResponse
@@ -386,7 +520,7 @@ class IamAsyncClient(Client):
     def check_project_permission_for_agency_async(self, request):
         """查询委托是否拥有项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托是否拥有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托是否拥有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CheckProjectPermissionForAgencyRequest request
         :return: CheckProjectPermissionForAgencyResponse
@@ -396,7 +530,7 @@ class IamAsyncClient(Client):
     def check_project_permission_for_agency_with_http_info(self, request):
         """查询委托是否拥有项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托是否拥有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托是否拥有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CheckProjectPermissionForAgencyRequest request
         :return: CheckProjectPermissionForAgencyResponse
@@ -453,7 +587,7 @@ class IamAsyncClient(Client):
     def create_agency_async(self, request):
         """创建委托
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建委托。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建委托。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateAgencyRequest request
         :return: CreateAgencyResponse
@@ -463,7 +597,7 @@ class IamAsyncClient(Client):
     def create_agency_with_http_info(self, request):
         """创建委托
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建委托。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建委托。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateAgencyRequest request
         :return: CreateAgencyResponse
@@ -516,7 +650,7 @@ class IamAsyncClient(Client):
     def create_agency_custom_policy_async(self, request):
         """创建委托自定义策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建委托自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建委托自定义策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateAgencyCustomPolicyRequest request
         :return: CreateAgencyCustomPolicyResponse
@@ -526,7 +660,7 @@ class IamAsyncClient(Client):
     def create_agency_custom_policy_with_http_info(self, request):
         """创建委托自定义策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建委托自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建委托自定义策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateAgencyCustomPolicyRequest request
         :return: CreateAgencyCustomPolicyResponse
@@ -579,7 +713,7 @@ class IamAsyncClient(Client):
     def create_cloud_service_custom_policy_async(self, request):
         """创建云服务自定义策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建云服务自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建云服务自定义策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateCloudServiceCustomPolicyRequest request
         :return: CreateCloudServiceCustomPolicyResponse
@@ -589,7 +723,7 @@ class IamAsyncClient(Client):
     def create_cloud_service_custom_policy_with_http_info(self, request):
         """创建云服务自定义策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建云服务自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建云服务自定义策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateCloudServiceCustomPolicyRequest request
         :return: CreateCloudServiceCustomPolicyResponse
@@ -642,7 +776,7 @@ class IamAsyncClient(Client):
     def create_login_token_async(self, request):
         """获取自定义代理登录票据
 
-        该接口用于用于获取自定义代理登录票据logintoken。logintoken是系统颁发给自定义代理用户的登录票据，承载用户的身份、session等信息。调用自定义代理URL登录云服务控制台时，可以使用本接口获取的logintoken进行认证。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。    > - logintoken的有效期为10分钟。
+        该接口用于用于获取自定义代理登录票据logintoken。logintoken是系统颁发给自定义代理用户的登录票据，承载用户的身份、session等信息。调用自定义代理URL登录云服务控制台时，可以使用本接口获取的logintoken进行认证。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。  > - logintoken的有效期为10分钟。
 
         :param CreateLoginTokenRequest request
         :return: CreateLoginTokenResponse
@@ -652,7 +786,7 @@ class IamAsyncClient(Client):
     def create_login_token_with_http_info(self, request):
         """获取自定义代理登录票据
 
-        该接口用于用于获取自定义代理登录票据logintoken。logintoken是系统颁发给自定义代理用户的登录票据，承载用户的身份、session等信息。调用自定义代理URL登录云服务控制台时，可以使用本接口获取的logintoken进行认证。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。    > - logintoken的有效期为10分钟。
+        该接口用于用于获取自定义代理登录票据logintoken。logintoken是系统颁发给自定义代理用户的登录票据，承载用户的身份、session等信息。调用自定义代理URL登录云服务控制台时，可以使用本接口获取的logintoken进行认证。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。  > - logintoken的有效期为10分钟。
 
         :param CreateLoginTokenRequest request
         :return: CreateLoginTokenResponse
@@ -705,7 +839,7 @@ class IamAsyncClient(Client):
     def create_metadata_async(self, request):
         """导入Metadata文件
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)导入Metadata文件。    账号在使用联邦认证功能前，需要先将Metadata文件导入到IAM中。Metadata文件是SAML 2.0协议约定的接口文件，包含访问接口地址和证书信息，请找企业管理员获取企业IdP的Metadata文件。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)导入Metadata文件。  账号在使用联邦认证功能前，需要先将Metadata文件导入到IAM中。Metadata文件是SAML 2.0协议约定的接口文件，包含访问接口地址和证书信息，请找企业管理员获取企业IdP的Metadata文件。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateMetadataRequest request
         :return: CreateMetadataResponse
@@ -715,7 +849,7 @@ class IamAsyncClient(Client):
     def create_metadata_with_http_info(self, request):
         """导入Metadata文件
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)导入Metadata文件。    账号在使用联邦认证功能前，需要先将Metadata文件导入到IAM中。Metadata文件是SAML 2.0协议约定的接口文件，包含访问接口地址和证书信息，请找企业管理员获取企业IdP的Metadata文件。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)导入Metadata文件。  账号在使用联邦认证功能前，需要先将Metadata文件导入到IAM中。Metadata文件是SAML 2.0协议约定的接口文件，包含访问接口地址和证书信息，请找企业管理员获取企业IdP的Metadata文件。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateMetadataRequest request
         :return: CreateMetadataResponse
@@ -899,10 +1033,77 @@ class IamAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_unscoped_token_with_id_token_async(self, request):
+        """获取联邦认证unscoped token(OpenId Connect Id token方式)
+
+        获取联邦认证token(OpenId Connect Id token方式)。
+
+        :param CreateUnscopedTokenWithIdTokenRequest request
+        :return: CreateUnscopedTokenWithIdTokenResponse
+        """
+        return self.create_unscoped_token_with_id_token_with_http_info(request)
+
+    def create_unscoped_token_with_id_token_with_http_info(self, request):
+        """获取联邦认证unscoped token(OpenId Connect Id token方式)
+
+        获取联邦认证token(OpenId Connect Id token方式)。
+
+        :param CreateUnscopedTokenWithIdTokenRequest request
+        :return: CreateUnscopedTokenWithIdTokenResponse
+        """
+
+        all_params = ['idp_id', 'protocol_id', 'authorization']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'idp_id' in local_var_params:
+            path_params['idp_id'] = local_var_params['idp_id']
+        if 'protocol_id' in local_var_params:
+            path_params['protocol_id'] = local_var_params['protocol_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'authorization' in local_var_params:
+            header_params['Authorization'] = local_var_params['authorization']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Subject-Token"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}/auth',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateUnscopedTokenWithIdTokenResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_agency_async(self, request):
         """删除委托
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除委托。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除委托。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteAgencyRequest request
         :return: DeleteAgencyResponse
@@ -912,7 +1113,7 @@ class IamAsyncClient(Client):
     def delete_agency_with_http_info(self, request):
         """删除委托
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除委托。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除委托。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteAgencyRequest request
         :return: DeleteAgencyResponse
@@ -965,7 +1166,7 @@ class IamAsyncClient(Client):
     def delete_custom_policy_async(self, request):
         """删除自定义策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除自定义策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteCustomPolicyRequest request
         :return: DeleteCustomPolicyResponse
@@ -975,7 +1176,7 @@ class IamAsyncClient(Client):
     def delete_custom_policy_with_http_info(self, request):
         """删除自定义策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除自定义策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteCustomPolicyRequest request
         :return: DeleteCustomPolicyResponse
@@ -1028,7 +1229,7 @@ class IamAsyncClient(Client):
     def delete_domain_group_inherited_role_async(self, request):
         """移除用户组的所有项目服务权限
 
-        该接口可以用于移除用户组的所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于移除用户组的所有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteDomainGroupInheritedRoleRequest request
         :return: DeleteDomainGroupInheritedRoleResponse
@@ -1038,7 +1239,7 @@ class IamAsyncClient(Client):
     def delete_domain_group_inherited_role_with_http_info(self, request):
         """移除用户组的所有项目服务权限
 
-        该接口可以用于移除用户组的所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于移除用户组的所有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteDomainGroupInheritedRoleRequest request
         :return: DeleteDomainGroupInheritedRoleResponse
@@ -1095,7 +1296,7 @@ class IamAsyncClient(Client):
     def keystone_add_user_to_group_async(self, request):
         """添加IAM用户到用户组
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)添加IAM用户到用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)添加IAM用户到用户组。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAddUserToGroupRequest request
         :return: KeystoneAddUserToGroupResponse
@@ -1105,7 +1306,7 @@ class IamAsyncClient(Client):
     def keystone_add_user_to_group_with_http_info(self, request):
         """添加IAM用户到用户组
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)添加IAM用户到用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)添加IAM用户到用户组。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAddUserToGroupRequest request
         :return: KeystoneAddUserToGroupResponse
@@ -1160,7 +1361,7 @@ class IamAsyncClient(Client):
     def keystone_associate_group_with_domain_permission_async(self, request):
         """为用户组授予全局服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予全局服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAssociateGroupWithDomainPermissionRequest request
         :return: KeystoneAssociateGroupWithDomainPermissionResponse
@@ -1170,7 +1371,7 @@ class IamAsyncClient(Client):
     def keystone_associate_group_with_domain_permission_with_http_info(self, request):
         """为用户组授予全局服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予全局服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAssociateGroupWithDomainPermissionRequest request
         :return: KeystoneAssociateGroupWithDomainPermissionResponse
@@ -1227,7 +1428,7 @@ class IamAsyncClient(Client):
     def keystone_associate_group_with_project_permission_async(self, request):
         """为用户组授予项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAssociateGroupWithProjectPermissionRequest request
         :return: KeystoneAssociateGroupWithProjectPermissionResponse
@@ -1237,7 +1438,7 @@ class IamAsyncClient(Client):
     def keystone_associate_group_with_project_permission_with_http_info(self, request):
         """为用户组授予项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)为用户组授予项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneAssociateGroupWithProjectPermissionRequest request
         :return: KeystoneAssociateGroupWithProjectPermissionResponse
@@ -1294,7 +1495,7 @@ class IamAsyncClient(Client):
     def keystone_check_domain_permission_for_group_async(self, request):
         """查询用户组是否拥有全局服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组是否拥有全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组是否拥有全局服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCheckDomainPermissionForGroupRequest request
         :return: KeystoneCheckDomainPermissionForGroupResponse
@@ -1304,7 +1505,7 @@ class IamAsyncClient(Client):
     def keystone_check_domain_permission_for_group_with_http_info(self, request):
         """查询用户组是否拥有全局服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组是否拥有全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组是否拥有全局服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCheckDomainPermissionForGroupRequest request
         :return: KeystoneCheckDomainPermissionForGroupResponse
@@ -1361,7 +1562,7 @@ class IamAsyncClient(Client):
     def keystone_check_project_permission_for_group_async(self, request):
         """查询用户组是否拥有项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组是否拥有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组是否拥有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCheckProjectPermissionForGroupRequest request
         :return: KeystoneCheckProjectPermissionForGroupResponse
@@ -1371,7 +1572,7 @@ class IamAsyncClient(Client):
     def keystone_check_project_permission_for_group_with_http_info(self, request):
         """查询用户组是否拥有项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组是否拥有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组是否拥有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCheckProjectPermissionForGroupRequest request
         :return: KeystoneCheckProjectPermissionForGroupResponse
@@ -1428,7 +1629,7 @@ class IamAsyncClient(Client):
     def keystone_check_user_in_group_async(self, request):
         """查询IAM用户是否在用户组中
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户是否在用户组中。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户是否在用户组中。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCheckUserInGroupRequest request
         :return: KeystoneCheckUserInGroupResponse
@@ -1438,7 +1639,7 @@ class IamAsyncClient(Client):
     def keystone_check_user_in_group_with_http_info(self, request):
         """查询IAM用户是否在用户组中
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户是否在用户组中。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户是否在用户组中。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCheckUserInGroupRequest request
         :return: KeystoneCheckUserInGroupResponse
@@ -1560,7 +1761,7 @@ class IamAsyncClient(Client):
     def keystone_create_group_async(self, request):
         """创建用户组
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建用户组。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateGroupRequest request
         :return: KeystoneCreateGroupResponse
@@ -1570,7 +1771,7 @@ class IamAsyncClient(Client):
     def keystone_create_group_with_http_info(self, request):
         """创建用户组
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建用户组。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateGroupRequest request
         :return: KeystoneCreateGroupResponse
@@ -1623,7 +1824,7 @@ class IamAsyncClient(Client):
     def keystone_create_identity_provider_async(self, request):
         """注册身份提供商
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册身份提供商。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册身份提供商。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateIdentityProviderRequest request
         :return: KeystoneCreateIdentityProviderResponse
@@ -1633,7 +1834,7 @@ class IamAsyncClient(Client):
     def keystone_create_identity_provider_with_http_info(self, request):
         """注册身份提供商
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册身份提供商。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册身份提供商。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateIdentityProviderRequest request
         :return: KeystoneCreateIdentityProviderResponse
@@ -1688,7 +1889,7 @@ class IamAsyncClient(Client):
     def keystone_create_mapping_async(self, request):
         """注册映射
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册映射。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册映射。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateMappingRequest request
         :return: KeystoneCreateMappingResponse
@@ -1698,7 +1899,7 @@ class IamAsyncClient(Client):
     def keystone_create_mapping_with_http_info(self, request):
         """注册映射
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册映射。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册映射。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateMappingRequest request
         :return: KeystoneCreateMappingResponse
@@ -1753,7 +1954,7 @@ class IamAsyncClient(Client):
     def keystone_create_project_async(self, request):
         """创建项目
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建项目。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建项目。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateProjectRequest request
         :return: KeystoneCreateProjectResponse
@@ -1763,7 +1964,7 @@ class IamAsyncClient(Client):
     def keystone_create_project_with_http_info(self, request):
         """创建项目
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建项目。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建项目。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateProjectRequest request
         :return: KeystoneCreateProjectResponse
@@ -1816,7 +2017,7 @@ class IamAsyncClient(Client):
     def keystone_create_protocol_async(self, request):
         """注册协议
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册协议（将协议关联到某一身份提供商）。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册协议（将协议关联到某一身份提供商）。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateProtocolRequest request
         :return: KeystoneCreateProtocolResponse
@@ -1826,7 +2027,7 @@ class IamAsyncClient(Client):
     def keystone_create_protocol_with_http_info(self, request):
         """注册协议
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册协议（将协议关联到某一身份提供商）。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)注册协议（将协议关联到某一身份提供商）。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateProtocolRequest request
         :return: KeystoneCreateProtocolResponse
@@ -1883,7 +2084,7 @@ class IamAsyncClient(Client):
     def keystone_create_scoped_token_async(self, request):
         """获取联邦认证scoped token
 
-        该接口可以用于通过联邦认证方式获取scoped token。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于通过联邦认证方式获取scoped token。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateScopedTokenRequest request
         :return: KeystoneCreateScopedTokenResponse
@@ -1893,7 +2094,7 @@ class IamAsyncClient(Client):
     def keystone_create_scoped_token_with_http_info(self, request):
         """获取联邦认证scoped token
 
-        该接口可以用于通过联邦认证方式获取scoped token。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于通过联邦认证方式获取scoped token。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateScopedTokenRequest request
         :return: KeystoneCreateScopedTokenResponse
@@ -1946,7 +2147,7 @@ class IamAsyncClient(Client):
     def keystone_delete_group_async(self, request):
         """删除用户组
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除用户组。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteGroupRequest request
         :return: KeystoneDeleteGroupResponse
@@ -1956,7 +2157,7 @@ class IamAsyncClient(Client):
     def keystone_delete_group_with_http_info(self, request):
         """删除用户组
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除用户组。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteGroupRequest request
         :return: KeystoneDeleteGroupResponse
@@ -2009,7 +2210,7 @@ class IamAsyncClient(Client):
     def keystone_delete_identity_provider_async(self, request):
         """删除身份提供商
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html) 删除身份提供商。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html) 删除身份提供商。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteIdentityProviderRequest request
         :return: KeystoneDeleteIdentityProviderResponse
@@ -2019,7 +2220,7 @@ class IamAsyncClient(Client):
     def keystone_delete_identity_provider_with_http_info(self, request):
         """删除身份提供商
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html) 删除身份提供商。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html) 删除身份提供商。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteIdentityProviderRequest request
         :return: KeystoneDeleteIdentityProviderResponse
@@ -2072,7 +2273,7 @@ class IamAsyncClient(Client):
     def keystone_delete_mapping_async(self, request):
         """删除映射
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除映射。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除映射。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteMappingRequest request
         :return: KeystoneDeleteMappingResponse
@@ -2082,7 +2283,7 @@ class IamAsyncClient(Client):
     def keystone_delete_mapping_with_http_info(self, request):
         """删除映射
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除映射。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除映射。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteMappingRequest request
         :return: KeystoneDeleteMappingResponse
@@ -2135,7 +2336,7 @@ class IamAsyncClient(Client):
     def keystone_delete_protocol_async(self, request):
         """删除协议
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除协议。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除协议。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteProtocolRequest request
         :return: KeystoneDeleteProtocolResponse
@@ -2145,7 +2346,7 @@ class IamAsyncClient(Client):
     def keystone_delete_protocol_with_http_info(self, request):
         """删除协议
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除协议。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除协议。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteProtocolRequest request
         :return: KeystoneDeleteProtocolResponse
@@ -2200,7 +2401,7 @@ class IamAsyncClient(Client):
     def keystone_list_all_project_permissions_for_group_async(self, request):
         """查询用户组的所有项目权限列表
 
-        该接口可以用于管理员查询用户组所有项目服务权限列表。  \\n\\n该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于管理员查询用户组所有项目服务权限列表。 该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListAllProjectPermissionsForGroupRequest request
         :return: KeystoneListAllProjectPermissionsForGroupResponse
@@ -2210,7 +2411,7 @@ class IamAsyncClient(Client):
     def keystone_list_all_project_permissions_for_group_with_http_info(self, request):
         """查询用户组的所有项目权限列表
 
-        该接口可以用于管理员查询用户组所有项目服务权限列表。  \\n\\n该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于管理员查询用户组所有项目服务权限列表。 该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListAllProjectPermissionsForGroupRequest request
         :return: KeystoneListAllProjectPermissionsForGroupResponse
@@ -2265,7 +2466,7 @@ class IamAsyncClient(Client):
     def keystone_list_auth_domains_async(self, request):
         """查询IAM用户可以访问的账号详情
 
-        该接口可以用于查询IAM用户可以用访问的账号详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询IAM用户可以用访问的账号详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListAuthDomainsRequest request
         :return: KeystoneListAuthDomainsResponse
@@ -2275,7 +2476,7 @@ class IamAsyncClient(Client):
     def keystone_list_auth_domains_with_http_info(self, request):
         """查询IAM用户可以访问的账号详情
 
-        该接口可以用于查询IAM用户可以用访问的账号详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询IAM用户可以用访问的账号详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListAuthDomainsRequest request
         :return: KeystoneListAuthDomainsResponse
@@ -2326,7 +2527,7 @@ class IamAsyncClient(Client):
     def keystone_list_auth_projects_async(self, request):
         """查询IAM用户可以访问的项目列表
 
-        该接口可以用于查询IAM用户可以访问的项目列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询IAM用户可以访问的项目列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListAuthProjectsRequest request
         :return: KeystoneListAuthProjectsResponse
@@ -2336,7 +2537,7 @@ class IamAsyncClient(Client):
     def keystone_list_auth_projects_with_http_info(self, request):
         """查询IAM用户可以访问的项目列表
 
-        该接口可以用于查询IAM用户可以访问的项目列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询IAM用户可以访问的项目列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListAuthProjectsRequest request
         :return: KeystoneListAuthProjectsResponse
@@ -2387,7 +2588,7 @@ class IamAsyncClient(Client):
     def keystone_list_domain_permissions_for_group_async(self, request):
         """查询全局服务中的用户组权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询全局服务中的用户组权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询全局服务中的用户组权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListDomainPermissionsForGroupRequest request
         :return: KeystoneListDomainPermissionsForGroupResponse
@@ -2397,7 +2598,7 @@ class IamAsyncClient(Client):
     def keystone_list_domain_permissions_for_group_with_http_info(self, request):
         """查询全局服务中的用户组权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询全局服务中的用户组权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询全局服务中的用户组权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListDomainPermissionsForGroupRequest request
         :return: KeystoneListDomainPermissionsForGroupResponse
@@ -2452,7 +2653,7 @@ class IamAsyncClient(Client):
     def keystone_list_endpoints_async(self, request):
         """查询终端节点列表
 
-        该接口可以用于查询终端节点列表。终端节点用来提供服务访问入口。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询终端节点列表。终端节点用来提供服务访问入口。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListEndpointsRequest request
         :return: KeystoneListEndpointsResponse
@@ -2462,7 +2663,7 @@ class IamAsyncClient(Client):
     def keystone_list_endpoints_with_http_info(self, request):
         """查询终端节点列表
 
-        该接口可以用于查询终端节点列表。终端节点用来提供服务访问入口。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询终端节点列表。终端节点用来提供服务访问入口。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListEndpointsRequest request
         :return: KeystoneListEndpointsResponse
@@ -2514,10 +2715,71 @@ class IamAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def keystone_list_federation_domains_async(self, request):
+        """查询联邦用户可以访问的账号列表
+
+        该接口用于查询联邦用户可以访问的账号列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。 > - 推荐使用[查询IAM用户可以访问的账号详情](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneQueryAccessibleDomainDetailsToUser)，该接口可以返回相同的响应格式。
+
+        :param KeystoneListFederationDomainsRequest request
+        :return: KeystoneListFederationDomainsResponse
+        """
+        return self.keystone_list_federation_domains_with_http_info(request)
+
+    def keystone_list_federation_domains_with_http_info(self, request):
+        """查询联邦用户可以访问的账号列表
+
+        该接口用于查询联邦用户可以访问的账号列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。 > - 推荐使用[查询IAM用户可以访问的账号详情](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneQueryAccessibleDomainDetailsToUser)，该接口可以返回相同的响应格式。
+
+        :param KeystoneListFederationDomainsRequest request
+        :return: KeystoneListFederationDomainsResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/OS-FEDERATION/domains',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='KeystoneListFederationDomainsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def keystone_list_groups_async(self, request):
         """查询用户组列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListGroupsRequest request
         :return: KeystoneListGroupsResponse
@@ -2527,7 +2789,7 @@ class IamAsyncClient(Client):
     def keystone_list_groups_with_http_info(self, request):
         """查询用户组列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListGroupsRequest request
         :return: KeystoneListGroupsResponse
@@ -2582,7 +2844,7 @@ class IamAsyncClient(Client):
     def keystone_list_identity_providers_async(self, request):
         """查询身份提供商列表
 
-        该接口可以用于查询身份提供商列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询身份提供商列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListIdentityProvidersRequest request
         :return: KeystoneListIdentityProvidersResponse
@@ -2592,7 +2854,7 @@ class IamAsyncClient(Client):
     def keystone_list_identity_providers_with_http_info(self, request):
         """查询身份提供商列表
 
-        该接口可以用于查询身份提供商列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询身份提供商列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListIdentityProvidersRequest request
         :return: KeystoneListIdentityProvidersResponse
@@ -2643,7 +2905,7 @@ class IamAsyncClient(Client):
     def keystone_list_mappings_async(self, request):
         """查询映射列表
 
-        该接口可以用于查询映射列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询映射列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListMappingsRequest request
         :return: KeystoneListMappingsResponse
@@ -2653,7 +2915,7 @@ class IamAsyncClient(Client):
     def keystone_list_mappings_with_http_info(self, request):
         """查询映射列表
 
-        该接口可以用于查询映射列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询映射列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListMappingsRequest request
         :return: KeystoneListMappingsResponse
@@ -2704,7 +2966,7 @@ class IamAsyncClient(Client):
     def keystone_list_permissions_async(self, request):
         """查询权限列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询权限列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询权限列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListPermissionsRequest request
         :return: KeystoneListPermissionsResponse
@@ -2714,7 +2976,7 @@ class IamAsyncClient(Client):
     def keystone_list_permissions_with_http_info(self, request):
         """查询权限列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询权限列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询权限列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListPermissionsRequest request
         :return: KeystoneListPermissionsResponse
@@ -2781,7 +3043,7 @@ class IamAsyncClient(Client):
     def keystone_list_project_permissions_for_group_async(self, request):
         """查询项目服务中的用户组权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目服务中的用户组权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目服务中的用户组权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListProjectPermissionsForGroupRequest request
         :return: KeystoneListProjectPermissionsForGroupResponse
@@ -2791,7 +3053,7 @@ class IamAsyncClient(Client):
     def keystone_list_project_permissions_for_group_with_http_info(self, request):
         """查询项目服务中的用户组权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目服务中的用户组权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目服务中的用户组权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListProjectPermissionsForGroupRequest request
         :return: KeystoneListProjectPermissionsForGroupResponse
@@ -2846,7 +3108,7 @@ class IamAsyncClient(Client):
     def keystone_list_projects_async(self, request):
         """查询指定条件下的项目列表
 
-        该接口可以用于查询指定条件下的项目列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询指定条件下的项目列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListProjectsRequest request
         :return: KeystoneListProjectsResponse
@@ -2856,7 +3118,7 @@ class IamAsyncClient(Client):
     def keystone_list_projects_with_http_info(self, request):
         """查询指定条件下的项目列表
 
-        该接口可以用于查询指定条件下的项目列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询指定条件下的项目列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListProjectsRequest request
         :return: KeystoneListProjectsResponse
@@ -2921,7 +3183,7 @@ class IamAsyncClient(Client):
     def keystone_list_projects_for_user_async(self, request):
         """查询指定IAM用户的项目列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的项目列表，或IAM用户查询自己的项目列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的项目列表，或IAM用户查询自己的项目列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListProjectsForUserRequest request
         :return: KeystoneListProjectsForUserResponse
@@ -2931,7 +3193,7 @@ class IamAsyncClient(Client):
     def keystone_list_projects_for_user_with_http_info(self, request):
         """查询指定IAM用户的项目列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的项目列表，或IAM用户查询自己的项目列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的项目列表，或IAM用户查询自己的项目列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListProjectsForUserRequest request
         :return: KeystoneListProjectsForUserResponse
@@ -2984,7 +3246,7 @@ class IamAsyncClient(Client):
     def keystone_list_protocols_async(self, request):
         """查询协议列表
 
-        该接口可以用于查询协议列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询协议列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListProtocolsRequest request
         :return: KeystoneListProtocolsResponse
@@ -2994,7 +3256,7 @@ class IamAsyncClient(Client):
     def keystone_list_protocols_with_http_info(self, request):
         """查询协议列表
 
-        该接口可以用于查询协议列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询协议列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListProtocolsRequest request
         :return: KeystoneListProtocolsResponse
@@ -3047,7 +3309,7 @@ class IamAsyncClient(Client):
     def keystone_list_regions_async(self, request):
         """查询区域列表
 
-        该接口可以用于查询区域列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询区域列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListRegionsRequest request
         :return: KeystoneListRegionsResponse
@@ -3057,7 +3319,7 @@ class IamAsyncClient(Client):
     def keystone_list_regions_with_http_info(self, request):
         """查询区域列表
 
-        该接口可以用于查询区域列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询区域列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListRegionsRequest request
         :return: KeystoneListRegionsResponse
@@ -3108,7 +3370,7 @@ class IamAsyncClient(Client):
     def keystone_list_services_async(self, request):
         """查询服务列表
 
-        该接口可以用于查询服务列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询服务列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListServicesRequest request
         :return: KeystoneListServicesResponse
@@ -3118,7 +3380,7 @@ class IamAsyncClient(Client):
     def keystone_list_services_with_http_info(self, request):
         """查询服务列表
 
-        该接口可以用于查询服务列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询服务列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListServicesRequest request
         :return: KeystoneListServicesResponse
@@ -3171,7 +3433,7 @@ class IamAsyncClient(Client):
     def keystone_list_users_for_group_by_admin_async(self, request):
         """管理员查询用户组所包含的IAM用户
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组中所包含的IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组中所包含的IAM用户。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListUsersForGroupByAdminRequest request
         :return: KeystoneListUsersForGroupByAdminResponse
@@ -3181,7 +3443,7 @@ class IamAsyncClient(Client):
     def keystone_list_users_for_group_by_admin_with_http_info(self, request):
         """管理员查询用户组所包含的IAM用户
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组中所包含的IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组中所包含的IAM用户。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListUsersForGroupByAdminRequest request
         :return: KeystoneListUsersForGroupByAdminResponse
@@ -3234,7 +3496,7 @@ class IamAsyncClient(Client):
     def keystone_list_versions_async(self, request):
         """查询版本信息列表
 
-        该接口用于查询Keystone API的版本信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口用于查询Keystone API的版本信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListVersionsRequest request
         :return: KeystoneListVersionsResponse
@@ -3244,7 +3506,7 @@ class IamAsyncClient(Client):
     def keystone_list_versions_with_http_info(self, request):
         """查询版本信息列表
 
-        该接口用于查询Keystone API的版本信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口用于查询Keystone API的版本信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListVersionsRequest request
         :return: KeystoneListVersionsResponse
@@ -3295,7 +3557,7 @@ class IamAsyncClient(Client):
     def keystone_remove_domain_permission_from_group_async(self, request):
         """移除用户组的全局服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组的全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组的全局服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneRemoveDomainPermissionFromGroupRequest request
         :return: KeystoneRemoveDomainPermissionFromGroupResponse
@@ -3305,7 +3567,7 @@ class IamAsyncClient(Client):
     def keystone_remove_domain_permission_from_group_with_http_info(self, request):
         """移除用户组的全局服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组的全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组的全局服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneRemoveDomainPermissionFromGroupRequest request
         :return: KeystoneRemoveDomainPermissionFromGroupResponse
@@ -3362,7 +3624,7 @@ class IamAsyncClient(Client):
     def keystone_remove_project_permission_from_group_async(self, request):
         """移除用户组的项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组的项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组的项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneRemoveProjectPermissionFromGroupRequest request
         :return: KeystoneRemoveProjectPermissionFromGroupResponse
@@ -3372,7 +3634,7 @@ class IamAsyncClient(Client):
     def keystone_remove_project_permission_from_group_with_http_info(self, request):
         """移除用户组的项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组的项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组的项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneRemoveProjectPermissionFromGroupRequest request
         :return: KeystoneRemoveProjectPermissionFromGroupResponse
@@ -3429,7 +3691,7 @@ class IamAsyncClient(Client):
     def keystone_remove_user_from_group_async(self, request):
         """移除用户组中的IAM用户
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组中的IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组中的IAM用户。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneRemoveUserFromGroupRequest request
         :return: KeystoneRemoveUserFromGroupResponse
@@ -3439,7 +3701,7 @@ class IamAsyncClient(Client):
     def keystone_remove_user_from_group_with_http_info(self, request):
         """移除用户组中的IAM用户
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组中的IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除用户组中的IAM用户。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneRemoveUserFromGroupRequest request
         :return: KeystoneRemoveUserFromGroupResponse
@@ -3494,7 +3756,7 @@ class IamAsyncClient(Client):
     def keystone_show_catalog_async(self, request):
         """查询服务目录
 
-        该接口可以用于查询请求头中X-Auth-Token对应的服务目录。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询请求头中X-Auth-Token对应的服务目录。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowCatalogRequest request
         :return: KeystoneShowCatalogResponse
@@ -3504,7 +3766,7 @@ class IamAsyncClient(Client):
     def keystone_show_catalog_with_http_info(self, request):
         """查询服务目录
 
-        该接口可以用于查询请求头中X-Auth-Token对应的服务目录。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询请求头中X-Auth-Token对应的服务目录。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowCatalogRequest request
         :return: KeystoneShowCatalogResponse
@@ -3555,7 +3817,7 @@ class IamAsyncClient(Client):
     def keystone_show_endpoint_async(self, request):
         """查询终端节点详情
 
-        该接口可以用于查询终端节点详情。终端节点用来提供服务访问入口。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询终端节点详情。终端节点用来提供服务访问入口。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowEndpointRequest request
         :return: KeystoneShowEndpointResponse
@@ -3565,7 +3827,7 @@ class IamAsyncClient(Client):
     def keystone_show_endpoint_with_http_info(self, request):
         """查询终端节点详情
 
-        该接口可以用于查询终端节点详情。终端节点用来提供服务访问入口。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询终端节点详情。终端节点用来提供服务访问入口。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowEndpointRequest request
         :return: KeystoneShowEndpointResponse
@@ -3618,7 +3880,7 @@ class IamAsyncClient(Client):
     def keystone_show_group_async(self, request):
         """查询用户组详情
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowGroupRequest request
         :return: KeystoneShowGroupResponse
@@ -3628,7 +3890,7 @@ class IamAsyncClient(Client):
     def keystone_show_group_with_http_info(self, request):
         """查询用户组详情
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询用户组详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowGroupRequest request
         :return: KeystoneShowGroupResponse
@@ -3681,7 +3943,7 @@ class IamAsyncClient(Client):
     def keystone_show_identity_provider_async(self, request):
         """查询身份提供商详情
 
-        该接口可以用于查询身份提供商详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询身份提供商详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowIdentityProviderRequest request
         :return: KeystoneShowIdentityProviderResponse
@@ -3691,7 +3953,7 @@ class IamAsyncClient(Client):
     def keystone_show_identity_provider_with_http_info(self, request):
         """查询身份提供商详情
 
-        该接口可以用于查询身份提供商详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询身份提供商详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowIdentityProviderRequest request
         :return: KeystoneShowIdentityProviderResponse
@@ -3744,7 +4006,7 @@ class IamAsyncClient(Client):
     def keystone_show_mapping_async(self, request):
         """查询映射详情
 
-        该接口可以用于查询映射详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询映射详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowMappingRequest request
         :return: KeystoneShowMappingResponse
@@ -3754,7 +4016,7 @@ class IamAsyncClient(Client):
     def keystone_show_mapping_with_http_info(self, request):
         """查询映射详情
 
-        该接口可以用于查询映射详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询映射详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowMappingRequest request
         :return: KeystoneShowMappingResponse
@@ -3807,7 +4069,7 @@ class IamAsyncClient(Client):
     def keystone_show_permission_async(self, request):
         """查询权限详情
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询权限详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询权限详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowPermissionRequest request
         :return: KeystoneShowPermissionResponse
@@ -3817,7 +4079,7 @@ class IamAsyncClient(Client):
     def keystone_show_permission_with_http_info(self, request):
         """查询权限详情
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询权限详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询权限详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowPermissionRequest request
         :return: KeystoneShowPermissionResponse
@@ -3870,7 +4132,7 @@ class IamAsyncClient(Client):
     def keystone_show_project_async(self, request):
         """查询项目详情
 
-        该接口可以用于查询项目详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询项目详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowProjectRequest request
         :return: KeystoneShowProjectResponse
@@ -3880,7 +4142,7 @@ class IamAsyncClient(Client):
     def keystone_show_project_with_http_info(self, request):
         """查询项目详情
 
-        该接口可以用于查询项目详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询项目详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowProjectRequest request
         :return: KeystoneShowProjectResponse
@@ -3933,7 +4195,7 @@ class IamAsyncClient(Client):
     def keystone_show_protocol_async(self, request):
         """查询协议详情
 
-        该接口可以用于查询协议详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询协议详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowProtocolRequest request
         :return: KeystoneShowProtocolResponse
@@ -3943,7 +4205,7 @@ class IamAsyncClient(Client):
     def keystone_show_protocol_with_http_info(self, request):
         """查询协议详情
 
-        该接口可以用于查询协议详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询协议详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowProtocolRequest request
         :return: KeystoneShowProtocolResponse
@@ -3998,7 +4260,7 @@ class IamAsyncClient(Client):
     def keystone_show_region_async(self, request):
         """查询区域详情
 
-        该接口可以用于查询区域详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询区域详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowRegionRequest request
         :return: KeystoneShowRegionResponse
@@ -4008,7 +4270,7 @@ class IamAsyncClient(Client):
     def keystone_show_region_with_http_info(self, request):
         """查询区域详情
 
-        该接口可以用于查询区域详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询区域详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowRegionRequest request
         :return: KeystoneShowRegionResponse
@@ -4061,7 +4323,7 @@ class IamAsyncClient(Client):
     def keystone_show_security_compliance_async(self, request):
         """查询账号密码强度策略
 
-        该接口可以用于查询账号密码强度策略，查询结果包括密码强度策略的正则表达式及其描述。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号密码强度策略，查询结果包括密码强度策略的正则表达式及其描述。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowSecurityComplianceRequest request
         :return: KeystoneShowSecurityComplianceResponse
@@ -4071,7 +4333,7 @@ class IamAsyncClient(Client):
     def keystone_show_security_compliance_with_http_info(self, request):
         """查询账号密码强度策略
 
-        该接口可以用于查询账号密码强度策略，查询结果包括密码强度策略的正则表达式及其描述。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号密码强度策略，查询结果包括密码强度策略的正则表达式及其描述。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowSecurityComplianceRequest request
         :return: KeystoneShowSecurityComplianceResponse
@@ -4124,7 +4386,7 @@ class IamAsyncClient(Client):
     def keystone_show_security_compliance_by_option_async(self, request):
         """按条件查询账号密码强度策略
 
-        该接口可以用于按条件查询账号密码强度策略，查询结果包括密码强度策略的正则表达式及其描述。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于按条件查询账号密码强度策略，查询结果包括密码强度策略的正则表达式及其描述。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowSecurityComplianceByOptionRequest request
         :return: KeystoneShowSecurityComplianceByOptionResponse
@@ -4134,7 +4396,7 @@ class IamAsyncClient(Client):
     def keystone_show_security_compliance_by_option_with_http_info(self, request):
         """按条件查询账号密码强度策略
 
-        该接口可以用于按条件查询账号密码强度策略，查询结果包括密码强度策略的正则表达式及其描述。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于按条件查询账号密码强度策略，查询结果包括密码强度策略的正则表达式及其描述。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowSecurityComplianceByOptionRequest request
         :return: KeystoneShowSecurityComplianceByOptionResponse
@@ -4189,7 +4451,7 @@ class IamAsyncClient(Client):
     def keystone_show_service_async(self, request):
         """查询服务详情
 
-        该接口可以用于查询服务详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询服务详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowServiceRequest request
         :return: KeystoneShowServiceResponse
@@ -4199,7 +4461,7 @@ class IamAsyncClient(Client):
     def keystone_show_service_with_http_info(self, request):
         """查询服务详情
 
-        该接口可以用于查询服务详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询服务详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowServiceRequest request
         :return: KeystoneShowServiceResponse
@@ -4252,7 +4514,7 @@ class IamAsyncClient(Client):
     def keystone_show_version_async(self, request):
         """查询版本信息
 
-        该接口用于查询Keystone API的3.0版本的信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口用于查询Keystone API的3.0版本的信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowVersionRequest request
         :return: KeystoneShowVersionResponse
@@ -4262,7 +4524,7 @@ class IamAsyncClient(Client):
     def keystone_show_version_with_http_info(self, request):
         """查询版本信息
 
-        该接口用于查询Keystone API的3.0版本的信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口用于查询Keystone API的3.0版本的信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowVersionRequest request
         :return: KeystoneShowVersionResponse
@@ -4313,7 +4575,7 @@ class IamAsyncClient(Client):
     def keystone_update_group_async(self, request):
         """更新用户组
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新用户组信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新用户组信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateGroupRequest request
         :return: KeystoneUpdateGroupResponse
@@ -4323,7 +4585,7 @@ class IamAsyncClient(Client):
     def keystone_update_group_with_http_info(self, request):
         """更新用户组
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新用户组信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新用户组信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateGroupRequest request
         :return: KeystoneUpdateGroupResponse
@@ -4378,7 +4640,7 @@ class IamAsyncClient(Client):
     def keystone_update_identity_provider_async(self, request):
         """更新身份提供商
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新身份提供商。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新身份提供商。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateIdentityProviderRequest request
         :return: KeystoneUpdateIdentityProviderResponse
@@ -4388,7 +4650,7 @@ class IamAsyncClient(Client):
     def keystone_update_identity_provider_with_http_info(self, request):
         """更新身份提供商
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新身份提供商。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新身份提供商。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateIdentityProviderRequest request
         :return: KeystoneUpdateIdentityProviderResponse
@@ -4443,7 +4705,7 @@ class IamAsyncClient(Client):
     def keystone_update_mapping_async(self, request):
         """更新映射
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新映射。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新映射。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateMappingRequest request
         :return: KeystoneUpdateMappingResponse
@@ -4453,7 +4715,7 @@ class IamAsyncClient(Client):
     def keystone_update_mapping_with_http_info(self, request):
         """更新映射
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新映射。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新映射。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateMappingRequest request
         :return: KeystoneUpdateMappingResponse
@@ -4508,7 +4770,7 @@ class IamAsyncClient(Client):
     def keystone_update_project_async(self, request):
         """修改项目信息
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改项目信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改项目信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateProjectRequest request
         :return: KeystoneUpdateProjectResponse
@@ -4518,7 +4780,7 @@ class IamAsyncClient(Client):
     def keystone_update_project_with_http_info(self, request):
         """修改项目信息
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改项目信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改项目信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateProjectRequest request
         :return: KeystoneUpdateProjectResponse
@@ -4573,7 +4835,7 @@ class IamAsyncClient(Client):
     def keystone_update_protocol_async(self, request):
         """更新协议
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新协议。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新协议。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateProtocolRequest request
         :return: KeystoneUpdateProtocolResponse
@@ -4583,7 +4845,7 @@ class IamAsyncClient(Client):
     def keystone_update_protocol_with_http_info(self, request):
         """更新协议
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新协议。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)更新协议。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateProtocolRequest request
         :return: KeystoneUpdateProtocolResponse
@@ -4640,7 +4902,7 @@ class IamAsyncClient(Client):
     def list_agencies_async(self, request):
         """查询指定条件下的委托列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定条件下的委托列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定条件下的委托列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListAgenciesRequest request
         :return: ListAgenciesResponse
@@ -4650,7 +4912,7 @@ class IamAsyncClient(Client):
     def list_agencies_with_http_info(self, request):
         """查询指定条件下的委托列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定条件下的委托列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定条件下的委托列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListAgenciesRequest request
         :return: ListAgenciesResponse
@@ -4707,7 +4969,7 @@ class IamAsyncClient(Client):
     def list_all_projects_permissions_for_agency_async(self, request):
         """查询委托下的所有项目服务权限列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托所有项目服务权限列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托所有项目服务权限列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListAllProjectsPermissionsForAgencyRequest request
         :return: ListAllProjectsPermissionsForAgencyResponse
@@ -4717,7 +4979,7 @@ class IamAsyncClient(Client):
     def list_all_projects_permissions_for_agency_with_http_info(self, request):
         """查询委托下的所有项目服务权限列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托所有项目服务权限列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托所有项目服务权限列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListAllProjectsPermissionsForAgencyRequest request
         :return: ListAllProjectsPermissionsForAgencyResponse
@@ -4772,7 +5034,7 @@ class IamAsyncClient(Client):
     def list_custom_policies_async(self, request):
         """查询自定义策略列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询自定义策略列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询自定义策略列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListCustomPoliciesRequest request
         :return: ListCustomPoliciesResponse
@@ -4782,7 +5044,7 @@ class IamAsyncClient(Client):
     def list_custom_policies_with_http_info(self, request):
         """查询自定义策略列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询自定义策略列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询自定义策略列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListCustomPoliciesRequest request
         :return: ListCustomPoliciesResponse
@@ -4837,7 +5099,7 @@ class IamAsyncClient(Client):
     def list_domain_permissions_for_agency_async(self, request):
         """查询全局服务中的委托权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询全局服务中的委托权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询全局服务中的委托权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListDomainPermissionsForAgencyRequest request
         :return: ListDomainPermissionsForAgencyResponse
@@ -4847,7 +5109,7 @@ class IamAsyncClient(Client):
     def list_domain_permissions_for_agency_with_http_info(self, request):
         """查询全局服务中的委托权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询全局服务中的委托权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询全局服务中的委托权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListDomainPermissionsForAgencyRequest request
         :return: ListDomainPermissionsForAgencyResponse
@@ -4899,10 +5161,199 @@ class IamAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_enterprise_projects_for_group_async(self, request):
+        """查询用户组关联的企业项目
+
+        该接口可用于查询用户组所关联的企业项目。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param ListEnterpriseProjectsForGroupRequest request
+        :return: ListEnterpriseProjectsForGroupResponse
+        """
+        return self.list_enterprise_projects_for_group_with_http_info(request)
+
+    def list_enterprise_projects_for_group_with_http_info(self, request):
+        """查询用户组关联的企业项目
+
+        该接口可用于查询用户组所关联的企业项目。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param ListEnterpriseProjectsForGroupRequest request
+        :return: ListEnterpriseProjectsForGroupResponse
+        """
+
+        all_params = ['group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-PERMISSION/groups/{group_id}/enterprise-projects',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEnterpriseProjectsForGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_enterprise_projects_for_user_async(self, request):
+        """查询用户关联的企业项目
+
+        该接口可用于查询用户所关联的企业项目。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param ListEnterpriseProjectsForUserRequest request
+        :return: ListEnterpriseProjectsForUserResponse
+        """
+        return self.list_enterprise_projects_for_user_with_http_info(request)
+
+    def list_enterprise_projects_for_user_with_http_info(self, request):
+        """查询用户关联的企业项目
+
+        该接口可用于查询用户所关联的企业项目。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param ListEnterpriseProjectsForUserRequest request
+        :return: ListEnterpriseProjectsForUserResponse
+        """
+
+        all_params = ['user_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-PERMISSION/users/{user_id}/enterprise-projects',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEnterpriseProjectsForUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_groups_for_enterprise_project_async(self, request):
+        """查询企业项目关联的用户组
+
+        该接口可用于查询企业项目关联的用户组。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param ListGroupsForEnterpriseProjectRequest request
+        :return: ListGroupsForEnterpriseProjectResponse
+        """
+        return self.list_groups_for_enterprise_project_with_http_info(request)
+
+    def list_groups_for_enterprise_project_with_http_info(self, request):
+        """查询企业项目关联的用户组
+
+        该接口可用于查询企业项目关联的用户组。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param ListGroupsForEnterpriseProjectRequest request
+        :return: ListGroupsForEnterpriseProjectResponse
+        """
+
+        all_params = ['enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            path_params['enterprise_project_id'] = local_var_params['enterprise_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListGroupsForEnterpriseProjectResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_project_permissions_for_agency_async(self, request):
         """查询项目服务中的委托权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目服务中的委托权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目服务中的委托权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListProjectPermissionsForAgencyRequest request
         :return: ListProjectPermissionsForAgencyResponse
@@ -4912,7 +5363,7 @@ class IamAsyncClient(Client):
     def list_project_permissions_for_agency_with_http_info(self, request):
         """查询项目服务中的委托权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目服务中的委托权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目服务中的委托权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListProjectPermissionsForAgencyRequest request
         :return: ListProjectPermissionsForAgencyResponse
@@ -4964,10 +5415,203 @@ class IamAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_roles_for_group_on_enterprise_project_async(self, request):
+        """查询企业项目已关联用户组的权限
+
+        该接口可用于查询企业项目已关联用户组的权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param ListRolesForGroupOnEnterpriseProjectRequest request
+        :return: ListRolesForGroupOnEnterpriseProjectResponse
+        """
+        return self.list_roles_for_group_on_enterprise_project_with_http_info(request)
+
+    def list_roles_for_group_on_enterprise_project_with_http_info(self, request):
+        """查询企业项目已关联用户组的权限
+
+        该接口可用于查询企业项目已关联用户组的权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param ListRolesForGroupOnEnterpriseProjectRequest request
+        :return: ListRolesForGroupOnEnterpriseProjectResponse
+        """
+
+        all_params = ['enterprise_project_id', 'group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            path_params['enterprise_project_id'] = local_var_params['enterprise_project_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/groups/{group_id}/roles',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRolesForGroupOnEnterpriseProjectResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_roles_for_user_on_enterprise_project_async(self, request):
+        """查询企业项目直接关联用户的权限
+
+        该接口可用于查询企业项目直接关联用户的权限。 该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param ListRolesForUserOnEnterpriseProjectRequest request
+        :return: ListRolesForUserOnEnterpriseProjectResponse
+        """
+        return self.list_roles_for_user_on_enterprise_project_with_http_info(request)
+
+    def list_roles_for_user_on_enterprise_project_with_http_info(self, request):
+        """查询企业项目直接关联用户的权限
+
+        该接口可用于查询企业项目直接关联用户的权限。 该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param ListRolesForUserOnEnterpriseProjectRequest request
+        :return: ListRolesForUserOnEnterpriseProjectResponse
+        """
+
+        all_params = ['enterprise_project_id', 'user_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            path_params['enterprise_project_id'] = local_var_params['enterprise_project_id']
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/users/{user_id}/roles',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRolesForUserOnEnterpriseProjectResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_users_for_enterprise_project_async(self, request):
+        """查询企业项目直接关联用户
+
+        该接口可用于查询企业项目直接关联的用户。 该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param ListUsersForEnterpriseProjectRequest request
+        :return: ListUsersForEnterpriseProjectResponse
+        """
+        return self.list_users_for_enterprise_project_with_http_info(request)
+
+    def list_users_for_enterprise_project_with_http_info(self, request):
+        """查询企业项目直接关联用户
+
+        该接口可用于查询企业项目直接关联的用户。 该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param ListUsersForEnterpriseProjectRequest request
+        :return: ListUsersForEnterpriseProjectResponse
+        """
+
+        all_params = ['enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            path_params['enterprise_project_id'] = local_var_params['enterprise_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/users',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListUsersForEnterpriseProjectResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def remove_all_projects_permission_from_agency_async(self, request):
         """移除委托下的所有项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的所有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param RemoveAllProjectsPermissionFromAgencyRequest request
         :return: RemoveAllProjectsPermissionFromAgencyResponse
@@ -4977,7 +5621,7 @@ class IamAsyncClient(Client):
     def remove_all_projects_permission_from_agency_with_http_info(self, request):
         """移除委托下的所有项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的所有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param RemoveAllProjectsPermissionFromAgencyRequest request
         :return: RemoveAllProjectsPermissionFromAgencyResponse
@@ -5034,7 +5678,7 @@ class IamAsyncClient(Client):
     def remove_domain_permission_from_agency_async(self, request):
         """移除委托的全局服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的全局服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param RemoveDomainPermissionFromAgencyRequest request
         :return: RemoveDomainPermissionFromAgencyResponse
@@ -5044,7 +5688,7 @@ class IamAsyncClient(Client):
     def remove_domain_permission_from_agency_with_http_info(self, request):
         """移除委托的全局服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的全局服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的全局服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param RemoveDomainPermissionFromAgencyRequest request
         :return: RemoveDomainPermissionFromAgencyResponse
@@ -5101,7 +5745,7 @@ class IamAsyncClient(Client):
     def remove_project_permission_from_agency_async(self, request):
         """移除委托的项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param RemoveProjectPermissionFromAgencyRequest request
         :return: RemoveProjectPermissionFromAgencyResponse
@@ -5111,7 +5755,7 @@ class IamAsyncClient(Client):
     def remove_project_permission_from_agency_with_http_info(self, request):
         """移除委托的项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)移除委托的项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param RemoveProjectPermissionFromAgencyRequest request
         :return: RemoveProjectPermissionFromAgencyResponse
@@ -5165,10 +5809,144 @@ class IamAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def revoke_role_from_group_on_enterprise_project_async(self, request):
+        """删除企业项目关联用户组的权限
+
+        该接口用于删除企业项目关联用户组的权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param RevokeRoleFromGroupOnEnterpriseProjectRequest request
+        :return: RevokeRoleFromGroupOnEnterpriseProjectResponse
+        """
+        return self.revoke_role_from_group_on_enterprise_project_with_http_info(request)
+
+    def revoke_role_from_group_on_enterprise_project_with_http_info(self, request):
+        """删除企业项目关联用户组的权限
+
+        该接口用于删除企业项目关联用户组的权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param RevokeRoleFromGroupOnEnterpriseProjectRequest request
+        :return: RevokeRoleFromGroupOnEnterpriseProjectResponse
+        """
+
+        all_params = ['enterprise_project_id', 'group_id', 'role_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            path_params['enterprise_project_id'] = local_var_params['enterprise_project_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'role_id' in local_var_params:
+            path_params['role_id'] = local_var_params['role_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/groups/{group_id}/roles/{role_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RevokeRoleFromGroupOnEnterpriseProjectResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def revoke_role_from_user_on_enterprise_project_async(self, request):
+        """删除企业项目直接关联用户的权限
+
+        删除企业项目直接关联用户的权限。 该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param RevokeRoleFromUserOnEnterpriseProjectRequest request
+        :return: RevokeRoleFromUserOnEnterpriseProjectResponse
+        """
+        return self.revoke_role_from_user_on_enterprise_project_with_http_info(request)
+
+    def revoke_role_from_user_on_enterprise_project_with_http_info(self, request):
+        """删除企业项目直接关联用户的权限
+
+        删除企业项目直接关联用户的权限。 该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+
+        :param RevokeRoleFromUserOnEnterpriseProjectRequest request
+        :return: RevokeRoleFromUserOnEnterpriseProjectResponse
+        """
+
+        all_params = ['enterprise_project_id', 'user_id', 'role_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            path_params['enterprise_project_id'] = local_var_params['enterprise_project_id']
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+        if 'role_id' in local_var_params:
+            path_params['role_id'] = local_var_params['role_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/users/{user_id}/roles/{role_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RevokeRoleFromUserOnEnterpriseProjectResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_agency_async(self, request):
         """查询委托详情
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowAgencyRequest request
         :return: ShowAgencyResponse
@@ -5178,7 +5956,7 @@ class IamAsyncClient(Client):
     def show_agency_with_http_info(self, request):
         """查询委托详情
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询委托详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowAgencyRequest request
         :return: ShowAgencyResponse
@@ -5231,7 +6009,7 @@ class IamAsyncClient(Client):
     def show_custom_policy_async(self, request):
         """查询自定义策略详情
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询自定义策略详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询自定义策略详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowCustomPolicyRequest request
         :return: ShowCustomPolicyResponse
@@ -5241,7 +6019,7 @@ class IamAsyncClient(Client):
     def show_custom_policy_with_http_info(self, request):
         """查询自定义策略详情
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询自定义策略详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询自定义策略详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowCustomPolicyRequest request
         :return: ShowCustomPolicyResponse
@@ -5294,7 +6072,7 @@ class IamAsyncClient(Client):
     def show_domain_api_acl_policy_async(self, request):
         """查询账号接口访问策略
 
-        该接口可以用于查询账号接口访问控制策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号接口访问控制策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowDomainApiAclPolicyRequest request
         :return: ShowDomainApiAclPolicyResponse
@@ -5304,7 +6082,7 @@ class IamAsyncClient(Client):
     def show_domain_api_acl_policy_with_http_info(self, request):
         """查询账号接口访问策略
 
-        该接口可以用于查询账号接口访问控制策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号接口访问控制策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowDomainApiAclPolicyRequest request
         :return: ShowDomainApiAclPolicyResponse
@@ -5357,7 +6135,7 @@ class IamAsyncClient(Client):
     def show_domain_console_acl_policy_async(self, request):
         """查询账号控制台访问策略
 
-        该接口可以用于查询账号控制台访问控制策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号控制台访问控制策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowDomainConsoleAclPolicyRequest request
         :return: ShowDomainConsoleAclPolicyResponse
@@ -5367,7 +6145,7 @@ class IamAsyncClient(Client):
     def show_domain_console_acl_policy_with_http_info(self, request):
         """查询账号控制台访问策略
 
-        该接口可以用于查询账号控制台访问控制策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号控制台访问控制策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowDomainConsoleAclPolicyRequest request
         :return: ShowDomainConsoleAclPolicyResponse
@@ -5420,7 +6198,7 @@ class IamAsyncClient(Client):
     def show_domain_login_policy_async(self, request):
         """查询账号登录策略
 
-        该接口可以用于查询账号登录策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号登录策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowDomainLoginPolicyRequest request
         :return: ShowDomainLoginPolicyResponse
@@ -5430,7 +6208,7 @@ class IamAsyncClient(Client):
     def show_domain_login_policy_with_http_info(self, request):
         """查询账号登录策略
 
-        该接口可以用于查询账号登录策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号登录策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowDomainLoginPolicyRequest request
         :return: ShowDomainLoginPolicyResponse
@@ -5483,7 +6261,7 @@ class IamAsyncClient(Client):
     def show_domain_password_policy_async(self, request):
         """查询账号密码策略
 
-        该接口可以用于查询账号密码策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号密码策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowDomainPasswordPolicyRequest request
         :return: ShowDomainPasswordPolicyResponse
@@ -5493,7 +6271,7 @@ class IamAsyncClient(Client):
     def show_domain_password_policy_with_http_info(self, request):
         """查询账号密码策略
 
-        该接口可以用于查询账号密码策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号密码策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowDomainPasswordPolicyRequest request
         :return: ShowDomainPasswordPolicyResponse
@@ -5546,7 +6324,7 @@ class IamAsyncClient(Client):
     def show_domain_protect_policy_async(self, request):
         """查询账号操作保护策略
 
-        该接口可以用于查询账号操作保护策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号操作保护策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowDomainProtectPolicyRequest request
         :return: ShowDomainProtectPolicyResponse
@@ -5556,7 +6334,7 @@ class IamAsyncClient(Client):
     def show_domain_protect_policy_with_http_info(self, request):
         """查询账号操作保护策略
 
-        该接口可以用于查询账号操作保护策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号操作保护策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowDomainProtectPolicyRequest request
         :return: ShowDomainProtectPolicyResponse
@@ -5609,7 +6387,7 @@ class IamAsyncClient(Client):
     def show_domain_quota_async(self, request):
         """查询账号配额
 
-        该接口可以用于查询账号配额。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号配额。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowDomainQuotaRequest request
         :return: ShowDomainQuotaResponse
@@ -5619,7 +6397,7 @@ class IamAsyncClient(Client):
     def show_domain_quota_with_http_info(self, request):
         """查询账号配额
 
-        该接口可以用于查询账号配额。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询账号配额。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowDomainQuotaRequest request
         :return: ShowDomainQuotaResponse
@@ -5674,7 +6452,7 @@ class IamAsyncClient(Client):
     def show_metadata_async(self, request):
         """查询Metadata文件
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询身份提供商导入到IAM中的Metadata文件。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询身份提供商导入到IAM中的Metadata文件。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowMetadataRequest request
         :return: ShowMetadataResponse
@@ -5684,7 +6462,7 @@ class IamAsyncClient(Client):
     def show_metadata_with_http_info(self, request):
         """查询Metadata文件
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询身份提供商导入到IAM中的Metadata文件。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询身份提供商导入到IAM中的Metadata文件。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowMetadataRequest request
         :return: ShowMetadataResponse
@@ -5802,7 +6580,7 @@ class IamAsyncClient(Client):
     def show_project_details_and_status_async(self, request):
         """查询项目详情与状态
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目详情与状态。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目详情与状态。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowProjectDetailsAndStatusRequest request
         :return: ShowProjectDetailsAndStatusResponse
@@ -5812,7 +6590,7 @@ class IamAsyncClient(Client):
     def show_project_details_and_status_with_http_info(self, request):
         """查询项目详情与状态
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目详情与状态。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询项目详情与状态。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowProjectDetailsAndStatusRequest request
         :return: ShowProjectDetailsAndStatusResponse
@@ -5865,7 +6643,7 @@ class IamAsyncClient(Client):
     def show_project_quota_async(self, request):
         """查询项目配额
 
-        该接口可以用于查询项目配额。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询项目配额。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowProjectQuotaRequest request
         :return: ShowProjectQuotaResponse
@@ -5875,7 +6653,7 @@ class IamAsyncClient(Client):
     def show_project_quota_with_http_info(self, request):
         """查询项目配额
 
-        该接口可以用于查询项目配额。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于查询项目配额。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowProjectQuotaRequest request
         :return: ShowProjectQuotaResponse
@@ -5928,7 +6706,7 @@ class IamAsyncClient(Client):
     def update_agency_async(self, request):
         """修改委托
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改委托。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改委托。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateAgencyRequest request
         :return: UpdateAgencyResponse
@@ -5938,7 +6716,7 @@ class IamAsyncClient(Client):
     def update_agency_with_http_info(self, request):
         """修改委托
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改委托。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改委托。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateAgencyRequest request
         :return: UpdateAgencyResponse
@@ -5993,7 +6771,7 @@ class IamAsyncClient(Client):
     def update_agency_custom_policy_async(self, request):
         """修改委托自定义策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改委托自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改委托自定义策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateAgencyCustomPolicyRequest request
         :return: UpdateAgencyCustomPolicyResponse
@@ -6003,7 +6781,7 @@ class IamAsyncClient(Client):
     def update_agency_custom_policy_with_http_info(self, request):
         """修改委托自定义策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改委托自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改委托自定义策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateAgencyCustomPolicyRequest request
         :return: UpdateAgencyCustomPolicyResponse
@@ -6058,7 +6836,7 @@ class IamAsyncClient(Client):
     def update_cloud_service_custom_policy_async(self, request):
         """修改云服务自定义策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改云服务自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改云服务自定义策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateCloudServiceCustomPolicyRequest request
         :return: UpdateCloudServiceCustomPolicyResponse
@@ -6068,7 +6846,7 @@ class IamAsyncClient(Client):
     def update_cloud_service_custom_policy_with_http_info(self, request):
         """修改云服务自定义策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改云服务自定义策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改云服务自定义策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateCloudServiceCustomPolicyRequest request
         :return: UpdateCloudServiceCustomPolicyResponse
@@ -6123,7 +6901,7 @@ class IamAsyncClient(Client):
     def update_domain_api_acl_policy_async(self, request):
         """修改账号接口访问策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号接口访问策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号接口访问策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateDomainApiAclPolicyRequest request
         :return: UpdateDomainApiAclPolicyResponse
@@ -6133,7 +6911,7 @@ class IamAsyncClient(Client):
     def update_domain_api_acl_policy_with_http_info(self, request):
         """修改账号接口访问策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号接口访问策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号接口访问策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateDomainApiAclPolicyRequest request
         :return: UpdateDomainApiAclPolicyResponse
@@ -6188,7 +6966,7 @@ class IamAsyncClient(Client):
     def update_domain_console_acl_policy_async(self, request):
         """修改账号控制台访问策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号控制台访问策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号控制台访问策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateDomainConsoleAclPolicyRequest request
         :return: UpdateDomainConsoleAclPolicyResponse
@@ -6198,7 +6976,7 @@ class IamAsyncClient(Client):
     def update_domain_console_acl_policy_with_http_info(self, request):
         """修改账号控制台访问策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号控制台访问策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号控制台访问策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateDomainConsoleAclPolicyRequest request
         :return: UpdateDomainConsoleAclPolicyResponse
@@ -6253,7 +7031,7 @@ class IamAsyncClient(Client):
     def update_domain_group_inherit_role_async(self, request):
         """为用户组授予所有项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为用户组授予所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为用户组授予所有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateDomainGroupInheritRoleRequest request
         :return: UpdateDomainGroupInheritRoleResponse
@@ -6263,7 +7041,7 @@ class IamAsyncClient(Client):
     def update_domain_group_inherit_role_with_http_info(self, request):
         """为用户组授予所有项目服务权限
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为用户组授予所有项目服务权限。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0079496985.html)为用户组授予所有项目服务权限。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateDomainGroupInheritRoleRequest request
         :return: UpdateDomainGroupInheritRoleResponse
@@ -6320,7 +7098,7 @@ class IamAsyncClient(Client):
     def update_domain_login_policy_async(self, request):
         """修改账号登录策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号登录策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号登录策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateDomainLoginPolicyRequest request
         :return: UpdateDomainLoginPolicyResponse
@@ -6330,7 +7108,7 @@ class IamAsyncClient(Client):
     def update_domain_login_policy_with_http_info(self, request):
         """修改账号登录策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号登录策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号登录策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateDomainLoginPolicyRequest request
         :return: UpdateDomainLoginPolicyResponse
@@ -6385,7 +7163,7 @@ class IamAsyncClient(Client):
     def update_domain_password_policy_async(self, request):
         """修改账号密码策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号密码策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号密码策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateDomainPasswordPolicyRequest request
         :return: UpdateDomainPasswordPolicyResponse
@@ -6395,7 +7173,7 @@ class IamAsyncClient(Client):
     def update_domain_password_policy_with_http_info(self, request):
         """修改账号密码策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号密码策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号密码策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateDomainPasswordPolicyRequest request
         :return: UpdateDomainPasswordPolicyResponse
@@ -6450,7 +7228,7 @@ class IamAsyncClient(Client):
     def update_domain_protect_policy_async(self, request):
         """修改账号操作保护策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号操作保护策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号操作保护策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateDomainProtectPolicyRequest request
         :return: UpdateDomainProtectPolicyResponse
@@ -6460,7 +7238,7 @@ class IamAsyncClient(Client):
     def update_domain_protect_policy_with_http_info(self, request):
         """修改账号操作保护策略
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号操作保护策略。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号操作保护策略。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateDomainProtectPolicyRequest request
         :return: UpdateDomainProtectPolicyResponse
@@ -6580,7 +7358,7 @@ class IamAsyncClient(Client):
     def update_project_status_async(self, request):
         """设置项目状态
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)设置项目状态。项目状态包括：正常、冻结。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)设置项目状态。项目状态包括：正常、冻结。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateProjectStatusRequest request
         :return: UpdateProjectStatusResponse
@@ -6590,7 +7368,7 @@ class IamAsyncClient(Client):
     def update_project_status_with_http_info(self, request):
         """设置项目状态
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)设置项目状态。项目状态包括：正常、冻结。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)设置项目状态。项目状态包括：正常、冻结。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateProjectStatusRequest request
         :return: UpdateProjectStatusResponse
@@ -6645,7 +7423,7 @@ class IamAsyncClient(Client):
     def create_permanent_access_key_async(self, request):
         """创建永久访问密钥
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)给IAM用户创建永久访问密钥，或IAM用户给自己创建永久访问密钥。    访问密钥（Access Key ID/Secret Access Key，简称AK/SK），是您通过开发工具（API、CLI、SDK）访问华为云时的身份凭证，不用于登录控制台。系统通过AK识别访问用户的身份，通过SK进行签名验证，通过加密签名验证可以确保请求的机密性、完整性和请求者身份的正确性。在控制台创建访问密钥的方式请参见：[访问密钥](https://support.huaweicloud.com/usermanual-ca/zh-cn_topic_0046606340.html)  。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)给IAM用户创建永久访问密钥，或IAM用户给自己创建永久访问密钥。  访问密钥（Access Key ID/Secret Access Key，简称AK/SK），是您通过开发工具（API、CLI、SDK）访问华为云时的身份凭证，不用于登录控制台。系统通过AK识别访问用户的身份，通过SK进行签名验证，通过加密签名验证可以确保请求的机密性、完整性和请求者身份的正确性。在控制台创建访问密钥的方式请参见：[访问密钥](https://support.huaweicloud.com/usermanual-ca/zh-cn_topic_0046606340.html) 。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreatePermanentAccessKeyRequest request
         :return: CreatePermanentAccessKeyResponse
@@ -6655,7 +7433,7 @@ class IamAsyncClient(Client):
     def create_permanent_access_key_with_http_info(self, request):
         """创建永久访问密钥
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)给IAM用户创建永久访问密钥，或IAM用户给自己创建永久访问密钥。    访问密钥（Access Key ID/Secret Access Key，简称AK/SK），是您通过开发工具（API、CLI、SDK）访问华为云时的身份凭证，不用于登录控制台。系统通过AK识别访问用户的身份，通过SK进行签名验证，通过加密签名验证可以确保请求的机密性、完整性和请求者身份的正确性。在控制台创建访问密钥的方式请参见：[访问密钥](https://support.huaweicloud.com/usermanual-ca/zh-cn_topic_0046606340.html)  。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)给IAM用户创建永久访问密钥，或IAM用户给自己创建永久访问密钥。  访问密钥（Access Key ID/Secret Access Key，简称AK/SK），是您通过开发工具（API、CLI、SDK）访问华为云时的身份凭证，不用于登录控制台。系统通过AK识别访问用户的身份，通过SK进行签名验证，通过加密签名验证可以确保请求的机密性、完整性和请求者身份的正确性。在控制台创建访问密钥的方式请参见：[访问密钥](https://support.huaweicloud.com/usermanual-ca/zh-cn_topic_0046606340.html) 。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreatePermanentAccessKeyRequest request
         :return: CreatePermanentAccessKeyResponse
@@ -6708,7 +7486,7 @@ class IamAsyncClient(Client):
     def create_temporary_access_key_by_agency_async(self, request):
         """通过委托获取临时访问密钥
 
-        该接口可以用于通过委托来获取临时访问密钥（临时AK/SK）和securitytoken。    临时AK/SK和securitytoken是系统颁发给IAM用户的临时访问令牌，有效期为15分钟至24小时，过期后需要重新获取。临时AK/SK和securitytoken遵循权限最小化原则。鉴权时，临时AK/SK和securitytoken必须同时使用，请求头中需要添加“x-security-token”字段，使用方法详情请参考：[API签名参考](https://support.huaweicloud.com/devg-apisign/api-sign-provide.html) 。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于通过委托来获取临时访问密钥（临时AK/SK）和securitytoken。  临时AK/SK和securitytoken是系统颁发给IAM用户的临时访问令牌，有效期为15分钟至24小时，过期后需要重新获取。临时AK/SK和securitytoken遵循权限最小化原则。鉴权时，临时AK/SK和securitytoken必须同时使用，请求头中需要添加“x-security-token”字段，使用方法详情请参考：[API签名参考](https://support.huaweicloud.com/devg-apisign/api-sign-provide.html) 。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateTemporaryAccessKeyByAgencyRequest request
         :return: CreateTemporaryAccessKeyByAgencyResponse
@@ -6718,7 +7496,7 @@ class IamAsyncClient(Client):
     def create_temporary_access_key_by_agency_with_http_info(self, request):
         """通过委托获取临时访问密钥
 
-        该接口可以用于通过委托来获取临时访问密钥（临时AK/SK）和securitytoken。    临时AK/SK和securitytoken是系统颁发给IAM用户的临时访问令牌，有效期为15分钟至24小时，过期后需要重新获取。临时AK/SK和securitytoken遵循权限最小化原则。鉴权时，临时AK/SK和securitytoken必须同时使用，请求头中需要添加“x-security-token”字段，使用方法详情请参考：[API签名参考](https://support.huaweicloud.com/devg-apisign/api-sign-provide.html) 。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于通过委托来获取临时访问密钥（临时AK/SK）和securitytoken。  临时AK/SK和securitytoken是系统颁发给IAM用户的临时访问令牌，有效期为15分钟至24小时，过期后需要重新获取。临时AK/SK和securitytoken遵循权限最小化原则。鉴权时，临时AK/SK和securitytoken必须同时使用，请求头中需要添加“x-security-token”字段，使用方法详情请参考：[API签名参考](https://support.huaweicloud.com/devg-apisign/api-sign-provide.html) 。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateTemporaryAccessKeyByAgencyRequest request
         :return: CreateTemporaryAccessKeyByAgencyResponse
@@ -6771,7 +7549,7 @@ class IamAsyncClient(Client):
     def create_temporary_access_key_by_token_async(self, request):
         """通过token获取临时访问密钥
 
-        该接口可以用于通过token来获取临时AK/SK和securitytoken。    临时AK/SK和securitytoken是系统颁发给IAM用户的临时访问令牌，有效期为15分钟至24小时，过期后需要重新获取。临时AK/SK和securitytoken遵循权限最小化原则。鉴权时，临时AK/SK和securitytoken必须同时使用，请求头中需要添加“x-security-token”字段，使用方法详情请参考：[API签名参考](https://support.huaweicloud.com/devg-apisign/api-sign-provide.html)。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于通过token来获取临时AK/SK和securitytoken。  临时AK/SK和securitytoken是系统颁发给IAM用户的临时访问令牌，有效期为15分钟至24小时，过期后需要重新获取。临时AK/SK和securitytoken遵循权限最小化原则。鉴权时，临时AK/SK和securitytoken必须同时使用，请求头中需要添加“x-security-token”字段，使用方法详情请参考：[API签名参考](https://support.huaweicloud.com/devg-apisign/api-sign-provide.html)。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateTemporaryAccessKeyByTokenRequest request
         :return: CreateTemporaryAccessKeyByTokenResponse
@@ -6781,7 +7559,7 @@ class IamAsyncClient(Client):
     def create_temporary_access_key_by_token_with_http_info(self, request):
         """通过token获取临时访问密钥
 
-        该接口可以用于通过token来获取临时AK/SK和securitytoken。    临时AK/SK和securitytoken是系统颁发给IAM用户的临时访问令牌，有效期为15分钟至24小时，过期后需要重新获取。临时AK/SK和securitytoken遵循权限最小化原则。鉴权时，临时AK/SK和securitytoken必须同时使用，请求头中需要添加“x-security-token”字段，使用方法详情请参考：[API签名参考](https://support.huaweicloud.com/devg-apisign/api-sign-provide.html)。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于通过token来获取临时AK/SK和securitytoken。  临时AK/SK和securitytoken是系统颁发给IAM用户的临时访问令牌，有效期为15分钟至24小时，过期后需要重新获取。临时AK/SK和securitytoken遵循权限最小化原则。鉴权时，临时AK/SK和securitytoken必须同时使用，请求头中需要添加“x-security-token”字段，使用方法详情请参考：[API签名参考](https://support.huaweicloud.com/devg-apisign/api-sign-provide.html)。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateTemporaryAccessKeyByTokenRequest request
         :return: CreateTemporaryAccessKeyByTokenResponse
@@ -6834,7 +7612,7 @@ class IamAsyncClient(Client):
     def delete_permanent_access_key_async(self, request):
         """删除指定永久访问密钥
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除IAM用户的指定永久访问密钥，或IAM用户删除自己的指定永久访问密钥。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除IAM用户的指定永久访问密钥，或IAM用户删除自己的指定永久访问密钥。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeletePermanentAccessKeyRequest request
         :return: DeletePermanentAccessKeyResponse
@@ -6844,7 +7622,7 @@ class IamAsyncClient(Client):
     def delete_permanent_access_key_with_http_info(self, request):
         """删除指定永久访问密钥
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除IAM用户的指定永久访问密钥，或IAM用户删除自己的指定永久访问密钥。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除IAM用户的指定永久访问密钥，或IAM用户删除自己的指定永久访问密钥。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeletePermanentAccessKeyRequest request
         :return: DeletePermanentAccessKeyResponse
@@ -6897,7 +7675,7 @@ class IamAsyncClient(Client):
     def list_permanent_access_keys_async(self, request):
         """查询所有永久访问密钥
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的所有永久访问密钥，或IAM用户查询自己的所有永久访问密钥。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的所有永久访问密钥，或IAM用户查询自己的所有永久访问密钥。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListPermanentAccessKeysRequest request
         :return: ListPermanentAccessKeysResponse
@@ -6907,7 +7685,7 @@ class IamAsyncClient(Client):
     def list_permanent_access_keys_with_http_info(self, request):
         """查询所有永久访问密钥
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的所有永久访问密钥，或IAM用户查询自己的所有永久访问密钥。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的所有永久访问密钥，或IAM用户查询自己的所有永久访问密钥。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListPermanentAccessKeysRequest request
         :return: ListPermanentAccessKeysResponse
@@ -6960,7 +7738,7 @@ class IamAsyncClient(Client):
     def show_permanent_access_key_async(self, request):
         """查询指定永久访问密钥
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的指定永久访问密钥，或IAM用户查询自己的指定永久访问密钥。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的指定永久访问密钥，或IAM用户查询自己的指定永久访问密钥。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowPermanentAccessKeyRequest request
         :return: ShowPermanentAccessKeyResponse
@@ -6970,7 +7748,7 @@ class IamAsyncClient(Client):
     def show_permanent_access_key_with_http_info(self, request):
         """查询指定永久访问密钥
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的指定永久访问密钥，或IAM用户查询自己的指定永久访问密钥。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的指定永久访问密钥，或IAM用户查询自己的指定永久访问密钥。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowPermanentAccessKeyRequest request
         :return: ShowPermanentAccessKeyResponse
@@ -7023,7 +7801,7 @@ class IamAsyncClient(Client):
     def update_permanent_access_key_async(self, request):
         """修改指定永久访问密钥
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户的指定永久访问密钥，或IAM用户修改自己的指定永久访问密钥。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户的指定永久访问密钥，或IAM用户修改自己的指定永久访问密钥。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdatePermanentAccessKeyRequest request
         :return: UpdatePermanentAccessKeyResponse
@@ -7033,7 +7811,7 @@ class IamAsyncClient(Client):
     def update_permanent_access_key_with_http_info(self, request):
         """修改指定永久访问密钥
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户的指定永久访问密钥，或IAM用户修改自己的指定永久访问密钥。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户的指定永久访问密钥，或IAM用户修改自己的指定永久访问密钥。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdatePermanentAccessKeyRequest request
         :return: UpdatePermanentAccessKeyResponse
@@ -7088,7 +7866,7 @@ class IamAsyncClient(Client):
     def create_binding_device_async(self, request):
         """绑定MFA设备
 
-        该接口可以用于绑定MFA设备。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于绑定MFA设备。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateBindingDeviceRequest request
         :return: CreateBindingDeviceResponse
@@ -7098,7 +7876,7 @@ class IamAsyncClient(Client):
     def create_binding_device_with_http_info(self, request):
         """绑定MFA设备
 
-        该接口可以用于绑定MFA设备。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于绑定MFA设备。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateBindingDeviceRequest request
         :return: CreateBindingDeviceResponse
@@ -7214,7 +7992,7 @@ class IamAsyncClient(Client):
     def create_user_async(self, request):
         """管理员创建IAM用户（推荐）
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建IAM用户。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateUserRequest request
         :return: CreateUserResponse
@@ -7224,7 +8002,7 @@ class IamAsyncClient(Client):
     def create_user_with_http_info(self, request):
         """管理员创建IAM用户（推荐）
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建IAM用户。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param CreateUserRequest request
         :return: CreateUserResponse
@@ -7277,7 +8055,7 @@ class IamAsyncClient(Client):
     def delete_binding_device_async(self, request):
         """解绑MFA设备
 
-        该接口可以用于解绑MFA设备   该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于解绑MFA设备  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteBindingDeviceRequest request
         :return: DeleteBindingDeviceResponse
@@ -7287,7 +8065,7 @@ class IamAsyncClient(Client):
     def delete_binding_device_with_http_info(self, request):
         """解绑MFA设备
 
-        该接口可以用于解绑MFA设备   该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于解绑MFA设备  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteBindingDeviceRequest request
         :return: DeleteBindingDeviceResponse
@@ -7340,7 +8118,7 @@ class IamAsyncClient(Client):
     def delete_mfa_device_async(self, request):
         """删除MFA设备
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除MFA设备。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除MFA设备。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteMfaDeviceRequest request
         :return: DeleteMfaDeviceResponse
@@ -7350,7 +8128,7 @@ class IamAsyncClient(Client):
     def delete_mfa_device_with_http_info(self, request):
         """删除MFA设备
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除MFA设备。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除MFA设备。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param DeleteMfaDeviceRequest request
         :return: DeleteMfaDeviceResponse
@@ -7405,7 +8183,7 @@ class IamAsyncClient(Client):
     def keystone_create_user_async(self, request):
         """管理员创建IAM用户
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建IAM用户。IAM用户首次登录时需要修改密码。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建IAM用户。IAM用户首次登录时需要修改密码。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateUserRequest request
         :return: KeystoneCreateUserResponse
@@ -7415,7 +8193,7 @@ class IamAsyncClient(Client):
     def keystone_create_user_with_http_info(self, request):
         """管理员创建IAM用户
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建IAM用户。IAM用户首次登录时需要修改密码。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)创建IAM用户。IAM用户首次登录时需要修改密码。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneCreateUserRequest request
         :return: KeystoneCreateUserResponse
@@ -7468,7 +8246,7 @@ class IamAsyncClient(Client):
     def keystone_delete_user_async(self, request):
         """管理员删除IAM用户
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除指定IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除指定IAM用户。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteUserRequest request
         :return: KeystoneDeleteUserResponse
@@ -7478,7 +8256,7 @@ class IamAsyncClient(Client):
     def keystone_delete_user_with_http_info(self, request):
         """管理员删除IAM用户
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除指定IAM用户。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)删除指定IAM用户。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneDeleteUserRequest request
         :return: KeystoneDeleteUserResponse
@@ -7531,7 +8309,7 @@ class IamAsyncClient(Client):
     def keystone_list_groups_for_user_async(self, request):
         """查询IAM用户所属用户组
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户所属用户组，或IAM用户查询自己所属用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户所属用户组，或IAM用户查询自己所属用户组。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListGroupsForUserRequest request
         :return: KeystoneListGroupsForUserResponse
@@ -7541,7 +8319,7 @@ class IamAsyncClient(Client):
     def keystone_list_groups_for_user_with_http_info(self, request):
         """查询IAM用户所属用户组
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户所属用户组，或IAM用户查询自己所属用户组。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户所属用户组，或IAM用户查询自己所属用户组。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListGroupsForUserRequest request
         :return: KeystoneListGroupsForUserResponse
@@ -7594,7 +8372,7 @@ class IamAsyncClient(Client):
     def keystone_list_users_async(self, request):
         """管理员查询IAM用户列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListUsersRequest request
         :return: KeystoneListUsersResponse
@@ -7604,7 +8382,7 @@ class IamAsyncClient(Client):
     def keystone_list_users_with_http_info(self, request):
         """管理员查询IAM用户列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneListUsersRequest request
         :return: KeystoneListUsersResponse
@@ -7663,7 +8441,7 @@ class IamAsyncClient(Client):
     def keystone_show_user_async(self, request):
         """查询IAM用户详情
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户详情，或IAM用户查询自己的用户详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户详情，或IAM用户查询自己的用户详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowUserRequest request
         :return: KeystoneShowUserResponse
@@ -7673,7 +8451,7 @@ class IamAsyncClient(Client):
     def keystone_show_user_with_http_info(self, request):
         """查询IAM用户详情
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户详情，或IAM用户查询自己的用户详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户详情，或IAM用户查询自己的用户详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneShowUserRequest request
         :return: KeystoneShowUserResponse
@@ -7726,7 +8504,7 @@ class IamAsyncClient(Client):
     def keystone_update_user_by_admin_async(self, request):
         """管理员修改IAM用户信息
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateUserByAdminRequest request
         :return: KeystoneUpdateUserByAdminResponse
@@ -7736,7 +8514,7 @@ class IamAsyncClient(Client):
     def keystone_update_user_by_admin_with_http_info(self, request):
         """管理员修改IAM用户信息
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateUserByAdminRequest request
         :return: KeystoneUpdateUserByAdminResponse
@@ -7791,7 +8569,7 @@ class IamAsyncClient(Client):
     def keystone_update_user_password_async(self, request):
         """修改IAM用户密码
 
-        该接口可以用于IAM用户修改自己的密码。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于IAM用户修改自己的密码。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateUserPasswordRequest request
         :return: KeystoneUpdateUserPasswordResponse
@@ -7801,7 +8579,7 @@ class IamAsyncClient(Client):
     def keystone_update_user_password_with_http_info(self, request):
         """修改IAM用户密码
 
-        该接口可以用于IAM用户修改自己的密码。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于IAM用户修改自己的密码。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneUpdateUserPasswordRequest request
         :return: KeystoneUpdateUserPasswordResponse
@@ -7856,7 +8634,7 @@ class IamAsyncClient(Client):
     def list_user_login_protects_async(self, request):
         """查询IAM用户的登录保护状态信息列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的登录保护状态列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的登录保护状态列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListUserLoginProtectsRequest request
         :return: ListUserLoginProtectsResponse
@@ -7866,7 +8644,7 @@ class IamAsyncClient(Client):
     def list_user_login_protects_with_http_info(self, request):
         """查询IAM用户的登录保护状态信息列表
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的登录保护状态列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的登录保护状态列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListUserLoginProtectsRequest request
         :return: ListUserLoginProtectsResponse
@@ -7917,7 +8695,7 @@ class IamAsyncClient(Client):
     def list_user_mfa_devices_async(self, request):
         """该接口可以用于获取MFA设备。
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的MFA绑定信息列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的MFA绑定信息列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListUserMfaDevicesRequest request
         :return: ListUserMfaDevicesResponse
@@ -7927,7 +8705,7 @@ class IamAsyncClient(Client):
     def list_user_mfa_devices_with_http_info(self, request):
         """该接口可以用于获取MFA设备。
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的MFA绑定信息列表。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户的MFA绑定信息列表。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ListUserMfaDevicesRequest request
         :return: ListUserMfaDevicesResponse
@@ -7978,7 +8756,7 @@ class IamAsyncClient(Client):
     def show_user_async(self, request):
         """查询IAM用户详情（推荐）
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户详情，或IAM用户查询自己的详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户详情，或IAM用户查询自己的详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowUserRequest request
         :return: ShowUserResponse
@@ -7988,7 +8766,7 @@ class IamAsyncClient(Client):
     def show_user_with_http_info(self, request):
         """查询IAM用户详情（推荐）
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户详情，或IAM用户查询自己的详情。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询IAM用户详情，或IAM用户查询自己的详情。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowUserRequest request
         :return: ShowUserResponse
@@ -8041,7 +8819,7 @@ class IamAsyncClient(Client):
     def show_user_login_protect_async(self, request):
         """查询指定IAM用户的登录保护状态信息
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的登录保护状态信息，或IAM用户查询自己的登录保护状态信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的登录保护状态信息，或IAM用户查询自己的登录保护状态信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowUserLoginProtectRequest request
         :return: ShowUserLoginProtectResponse
@@ -8051,7 +8829,7 @@ class IamAsyncClient(Client):
     def show_user_login_protect_with_http_info(self, request):
         """查询指定IAM用户的登录保护状态信息
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的登录保护状态信息，或IAM用户查询自己的登录保护状态信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的登录保护状态信息，或IAM用户查询自己的登录保护状态信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowUserLoginProtectRequest request
         :return: ShowUserLoginProtectResponse
@@ -8104,7 +8882,7 @@ class IamAsyncClient(Client):
     def show_user_mfa_device_async(self, request):
         """查询指定IAM用户的MFA绑定信息
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的MFA绑定信息，或IAM用户查询自己的MFA绑定信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的MFA绑定信息，或IAM用户查询自己的MFA绑定信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowUserMfaDeviceRequest request
         :return: ShowUserMfaDeviceResponse
@@ -8114,7 +8892,7 @@ class IamAsyncClient(Client):
     def show_user_mfa_device_with_http_info(self, request):
         """查询指定IAM用户的MFA绑定信息
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的MFA绑定信息，或IAM用户查询自己的MFA绑定信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)查询指定IAM用户的MFA绑定信息，或IAM用户查询自己的MFA绑定信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param ShowUserMfaDeviceRequest request
         :return: ShowUserMfaDeviceResponse
@@ -8167,7 +8945,7 @@ class IamAsyncClient(Client):
     def update_login_protect_async(self, request):
         """修改IAM用户登录保护状态信息
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号操作保护。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号操作保护。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateLoginProtectRequest request
         :return: UpdateLoginProtectResponse
@@ -8177,7 +8955,7 @@ class IamAsyncClient(Client):
     def update_login_protect_with_http_info(self, request):
         """修改IAM用户登录保护状态信息
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号操作保护。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改账号操作保护。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateLoginProtectRequest request
         :return: UpdateLoginProtectResponse
@@ -8232,7 +9010,7 @@ class IamAsyncClient(Client):
     def update_user_async(self, request):
         """管理员修改IAM用户信息（推荐）
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户信息 。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户信息 。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateUserRequest request
         :return: UpdateUserResponse
@@ -8242,7 +9020,7 @@ class IamAsyncClient(Client):
     def update_user_with_http_info(self, request):
         """管理员修改IAM用户信息（推荐）
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户信息 。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)修改IAM用户信息 。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateUserRequest request
         :return: UpdateUserResponse
@@ -8297,7 +9075,7 @@ class IamAsyncClient(Client):
     def update_user_information_async(self, request):
         """修改IAM用户信息（推荐）
 
-        该接口可以用于IAM用户修改自己的用户信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于IAM用户修改自己的用户信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateUserInformationRequest request
         :return: UpdateUserInformationResponse
@@ -8307,7 +9085,7 @@ class IamAsyncClient(Client):
     def update_user_information_with_http_info(self, request):
         """修改IAM用户信息（推荐）
 
-        该接口可以用于IAM用户修改自己的用户信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于IAM用户修改自己的用户信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param UpdateUserInformationRequest request
         :return: UpdateUserInformationResponse
@@ -8362,7 +9140,7 @@ class IamAsyncClient(Client):
     def keystone_create_agency_token_async(self, request):
         """获取委托Token
 
-        该接口可以用于获取委托方的token。    例如：A账号希望B账号管理自己的某些资源，所以A账号创建了委托给B账号，则A账号为委托方，B账号为被委托方。那么B账号可以通过该接口获取委托token。B账号仅能使用该token管理A账号的委托资源，不能管理自己账号中的资源。如果B账号需要管理自己账号中的资源，则需要获取自己的用户token。    token是系统颁发给用户的访问令牌，承载用户的身份、权限等信息。调用IAM以及其他云服务的接口时，可以使用本接口获取的token进行鉴权。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。如果使用全局区域的Endpoint调用，该token可以在所有区域使用；如果使用非全局区域的Endpoint调用，则该token仅在该区域生效，不能跨区域使用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。    > - token的有效期为24小时，建议进行缓存，避免频繁调用。
+        该接口可以用于获取委托方的token。  例如：A账号希望B账号管理自己的某些资源，所以A账号创建了委托给B账号，则A账号为委托方，B账号为被委托方。那么B账号可以通过该接口获取委托token。B账号仅能使用该token管理A账号的委托资源，不能管理自己账号中的资源。如果B账号需要管理自己账号中的资源，则需要获取自己的用户token。  token是系统颁发给用户的访问令牌，承载用户的身份、权限等信息。调用IAM以及其他云服务的接口时，可以使用本接口获取的token进行鉴权。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。如果使用全局区域的Endpoint调用，该token可以在所有区域使用；如果使用非全局区域的Endpoint调用，则该token仅在该区域生效，不能跨区域使用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。  > - token的有效期为24小时，建议进行缓存，避免频繁调用。
 
         :param KeystoneCreateAgencyTokenRequest request
         :return: KeystoneCreateAgencyTokenResponse
@@ -8372,7 +9150,7 @@ class IamAsyncClient(Client):
     def keystone_create_agency_token_with_http_info(self, request):
         """获取委托Token
 
-        该接口可以用于获取委托方的token。    例如：A账号希望B账号管理自己的某些资源，所以A账号创建了委托给B账号，则A账号为委托方，B账号为被委托方。那么B账号可以通过该接口获取委托token。B账号仅能使用该token管理A账号的委托资源，不能管理自己账号中的资源。如果B账号需要管理自己账号中的资源，则需要获取自己的用户token。    token是系统颁发给用户的访问令牌，承载用户的身份、权限等信息。调用IAM以及其他云服务的接口时，可以使用本接口获取的token进行鉴权。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。如果使用全局区域的Endpoint调用，该token可以在所有区域使用；如果使用非全局区域的Endpoint调用，则该token仅在该区域生效，不能跨区域使用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。    > - token的有效期为24小时，建议进行缓存，避免频繁调用。
+        该接口可以用于获取委托方的token。  例如：A账号希望B账号管理自己的某些资源，所以A账号创建了委托给B账号，则A账号为委托方，B账号为被委托方。那么B账号可以通过该接口获取委托token。B账号仅能使用该token管理A账号的委托资源，不能管理自己账号中的资源。如果B账号需要管理自己账号中的资源，则需要获取自己的用户token。  token是系统颁发给用户的访问令牌，承载用户的身份、权限等信息。调用IAM以及其他云服务的接口时，可以使用本接口获取的token进行鉴权。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。如果使用全局区域的Endpoint调用，该token可以在所有区域使用；如果使用非全局区域的Endpoint调用，则该token仅在该区域生效，不能跨区域使用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。  > - token的有效期为24小时，建议进行缓存，避免频繁调用。
 
         :param KeystoneCreateAgencyTokenRequest request
         :return: KeystoneCreateAgencyTokenResponse
@@ -8427,7 +9205,7 @@ class IamAsyncClient(Client):
     def keystone_create_user_token_by_password_async(self, request):
         """获取IAM用户Token（使用密码）
 
-        该接口可以用于通过用户名/密码的方式进行认证来获取IAM用户token。    token是系统颁发给IAM用户的访问令牌，承载用户的身份、权限等信息。调用IAM以及其他云服务的接口时，可以使用本接口获取的IAM用户token进行鉴权。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。如果使用全局区域的Endpoint调用，该token可以在所有区域使用；如果使用非全局区域的Endpoint调用，则该token仅在该区域生效，不能跨区域使用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。   > - token的有效期为24小时，建议进行缓存，避免频繁调用。   > - 通过Postman获取用户token示例请参见：[如何通过Postman获取用户token](https://support.huaweicloud.com/iam_faq/iam_01_034.html)。   > - 如果需要获取具有Security Administrator权限的token，请参见：[IAM 常见问题](https://support.huaweicloud.com/iam_faq/iam_01_0608.html)。
+        该接口可以用于通过用户名/密码的方式进行认证来获取IAM用户token。  token是系统颁发给IAM用户的访问令牌，承载用户的身份、权限等信息。调用IAM以及其他云服务的接口时，可以使用本接口获取的IAM用户token进行鉴权。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。如果使用全局区域的Endpoint调用，该token可以在所有区域使用；如果使用非全局区域的Endpoint调用，则该token仅在该区域生效，不能跨区域使用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。 > - token的有效期为24小时，建议进行缓存，避免频繁调用。 > - 通过Postman获取用户token示例请参见：[如何通过Postman获取用户token](https://support.huaweicloud.com/iam_faq/iam_01_034.html)。 > - 如果需要获取具有Security Administrator权限的token，请参见：[IAM 常见问题](https://support.huaweicloud.com/iam_faq/iam_01_0608.html)。
 
         :param KeystoneCreateUserTokenByPasswordRequest request
         :return: KeystoneCreateUserTokenByPasswordResponse
@@ -8437,7 +9215,7 @@ class IamAsyncClient(Client):
     def keystone_create_user_token_by_password_with_http_info(self, request):
         """获取IAM用户Token（使用密码）
 
-        该接口可以用于通过用户名/密码的方式进行认证来获取IAM用户token。    token是系统颁发给IAM用户的访问令牌，承载用户的身份、权限等信息。调用IAM以及其他云服务的接口时，可以使用本接口获取的IAM用户token进行鉴权。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。如果使用全局区域的Endpoint调用，该token可以在所有区域使用；如果使用非全局区域的Endpoint调用，则该token仅在该区域生效，不能跨区域使用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。   > - token的有效期为24小时，建议进行缓存，避免频繁调用。   > - 通过Postman获取用户token示例请参见：[如何通过Postman获取用户token](https://support.huaweicloud.com/iam_faq/iam_01_034.html)。   > - 如果需要获取具有Security Administrator权限的token，请参见：[IAM 常见问题](https://support.huaweicloud.com/iam_faq/iam_01_0608.html)。
+        该接口可以用于通过用户名/密码的方式进行认证来获取IAM用户token。  token是系统颁发给IAM用户的访问令牌，承载用户的身份、权限等信息。调用IAM以及其他云服务的接口时，可以使用本接口获取的IAM用户token进行鉴权。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。如果使用全局区域的Endpoint调用，该token可以在所有区域使用；如果使用非全局区域的Endpoint调用，则该token仅在该区域生效，不能跨区域使用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。 > - token的有效期为24小时，建议进行缓存，避免频繁调用。 > - 通过Postman获取用户token示例请参见：[如何通过Postman获取用户token](https://support.huaweicloud.com/iam_faq/iam_01_034.html)。 > - 如果需要获取具有Security Administrator权限的token，请参见：[IAM 常见问题](https://support.huaweicloud.com/iam_faq/iam_01_0608.html)。
 
         :param KeystoneCreateUserTokenByPasswordRequest request
         :return: KeystoneCreateUserTokenByPasswordResponse
@@ -8492,7 +9270,7 @@ class IamAsyncClient(Client):
     def keystone_create_user_token_by_password_and_mfa_async(self, request):
         """获取IAM用户Token（使用密码+虚拟MFA）
 
-        该接口可以用于通过用户名/密码+虚拟MFA的方式进行认证，在IAM用户开启了的登录保护功能，并选择通过虚拟MFA验证时获取IAM用户token。    token是系统颁发给用户的访问令牌，承载用户的身份、权限等信息。调用IAM以及其他云服务的接口时，可以使用本接口获取的token进行鉴权。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。如果使用全局区域的Endpoint调用，该token可以在所有区域使用；如果使用非全局区域的Endpoint调用，则该token仅在该区域生效，不能跨区域使用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。   > - token的有效期为24小时，建议进行缓存，避免频繁调用。   > - 通过Postman获取用户token示例请参见：[如何通过Postman获取用户token](https://support.huaweicloud.com/iam_faq/iam_01_034.html)。   > - 如果需要获取具有Security Administrator权限的token，请参见：[IAM 常见问题](https://support.huaweicloud.com/iam_faq/iam_01_0608.html)。
+        该接口可以用于通过用户名/密码+虚拟MFA的方式进行认证，在IAM用户开启了的登录保护功能，并选择通过虚拟MFA验证时获取IAM用户token。  token是系统颁发给用户的访问令牌，承载用户的身份、权限等信息。调用IAM以及其他云服务的接口时，可以使用本接口获取的token进行鉴权。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。如果使用全局区域的Endpoint调用，该token可以在所有区域使用；如果使用非全局区域的Endpoint调用，则该token仅在该区域生效，不能跨区域使用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。 > - token的有效期为24小时，建议进行缓存，避免频繁调用。 > - 通过Postman获取用户token示例请参见：[如何通过Postman获取用户token](https://support.huaweicloud.com/iam_faq/iam_01_034.html)。 > - 如果需要获取具有Security Administrator权限的token，请参见：[IAM 常见问题](https://support.huaweicloud.com/iam_faq/iam_01_0608.html)。
 
         :param KeystoneCreateUserTokenByPasswordAndMfaRequest request
         :return: KeystoneCreateUserTokenByPasswordAndMfaResponse
@@ -8502,7 +9280,7 @@ class IamAsyncClient(Client):
     def keystone_create_user_token_by_password_and_mfa_with_http_info(self, request):
         """获取IAM用户Token（使用密码+虚拟MFA）
 
-        该接口可以用于通过用户名/密码+虚拟MFA的方式进行认证，在IAM用户开启了的登录保护功能，并选择通过虚拟MFA验证时获取IAM用户token。    token是系统颁发给用户的访问令牌，承载用户的身份、权限等信息。调用IAM以及其他云服务的接口时，可以使用本接口获取的token进行鉴权。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。如果使用全局区域的Endpoint调用，该token可以在所有区域使用；如果使用非全局区域的Endpoint调用，则该token仅在该区域生效，不能跨区域使用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。   > - token的有效期为24小时，建议进行缓存，避免频繁调用。   > - 通过Postman获取用户token示例请参见：[如何通过Postman获取用户token](https://support.huaweicloud.com/iam_faq/iam_01_034.html)。   > - 如果需要获取具有Security Administrator权限的token，请参见：[IAM 常见问题](https://support.huaweicloud.com/iam_faq/iam_01_0608.html)。
+        该接口可以用于通过用户名/密码+虚拟MFA的方式进行认证，在IAM用户开启了的登录保护功能，并选择通过虚拟MFA验证时获取IAM用户token。  token是系统颁发给用户的访问令牌，承载用户的身份、权限等信息。调用IAM以及其他云服务的接口时，可以使用本接口获取的token进行鉴权。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。如果使用全局区域的Endpoint调用，该token可以在所有区域使用；如果使用非全局区域的Endpoint调用，则该token仅在该区域生效，不能跨区域使用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。 > - token的有效期为24小时，建议进行缓存，避免频繁调用。 > - 通过Postman获取用户token示例请参见：[如何通过Postman获取用户token](https://support.huaweicloud.com/iam_faq/iam_01_034.html)。 > - 如果需要获取具有Security Administrator权限的token，请参见：[IAM 常见问题](https://support.huaweicloud.com/iam_faq/iam_01_0608.html)。
 
         :param KeystoneCreateUserTokenByPasswordAndMfaRequest request
         :return: KeystoneCreateUserTokenByPasswordAndMfaResponse
@@ -8557,7 +9335,7 @@ class IamAsyncClient(Client):
     def keystone_validate_token_async(self, request):
         """校验Token的有效性
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)校验本账号中IAM用户token的有效性，或IAM用户校验自己token的有效性。管理员仅能校验本账号中IAM用户token的有效性，不能校验其他账号中IAM用户token的有效性。如果被校验的token有效，则返回该token的详细信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)校验本账号中IAM用户token的有效性，或IAM用户校验自己token的有效性。管理员仅能校验本账号中IAM用户token的有效性，不能校验其他账号中IAM用户token的有效性。如果被校验的token有效，则返回该token的详细信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneValidateTokenRequest request
         :return: KeystoneValidateTokenResponse
@@ -8567,7 +9345,7 @@ class IamAsyncClient(Client):
     def keystone_validate_token_with_http_info(self, request):
         """校验Token的有效性
 
-        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)校验本账号中IAM用户token的有效性，或IAM用户校验自己token的有效性。管理员仅能校验本账号中IAM用户token的有效性，不能校验其他账号中IAM用户token的有效性。如果被校验的token有效，则返回该token的详细信息。    该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        该接口可以用于[管理员](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)校验本账号中IAM用户token的有效性，或IAM用户校验自己token的有效性。管理员仅能校验本账号中IAM用户token的有效性，不能校验其他账号中IAM用户token的有效性。如果被校验的token有效，则返回该token的详细信息。  该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
 
         :param KeystoneValidateTokenRequest request
         :return: KeystoneValidateTokenResponse

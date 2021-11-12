@@ -43,7 +43,7 @@ class UpdateProjectOption:
     def status(self):
         """Gets the status of this UpdateProjectOption.
 
-        项目的状态信息，参数的值为\"suspended\"或\"normal\"。   - status值为\"suspended\"时，会将项目设置为冻结状态。   - status值为\"normal\"时，会将项目设置为正常（解冻）状态。
+        项目的状态信息，参数的值为\"suspended\"或\"normal\"。 - status值为\"suspended\"时，会将项目设置为冻结状态。 - status值为\"normal\"时，会将项目设置为正常（解冻）状态。
 
         :return: The status of this UpdateProjectOption.
         :rtype: str
@@ -54,7 +54,7 @@ class UpdateProjectOption:
     def status(self, status):
         """Sets the status of this UpdateProjectOption.
 
-        项目的状态信息，参数的值为\"suspended\"或\"normal\"。   - status值为\"suspended\"时，会将项目设置为冻结状态。   - status值为\"normal\"时，会将项目设置为正常（解冻）状态。
+        项目的状态信息，参数的值为\"suspended\"或\"normal\"。 - status值为\"suspended\"时，会将项目设置为冻结状态。 - status值为\"normal\"时，会将项目设置为正常（解冻）状态。
 
         :param status: The status of this UpdateProjectOption.
         :type: str

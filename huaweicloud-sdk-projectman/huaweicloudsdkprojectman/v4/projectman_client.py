@@ -313,7 +313,7 @@ class ProjectManClient(Client):
     def check_project_name_v4(self, request):
         """检查项目名称是否存在
 
-        更新项目
+        检查项目名称是否存在
 
         :param CheckProjectNameV4Request request
         :return: CheckProjectNameV4Response
@@ -323,7 +323,7 @@ class ProjectManClient(Client):
     def check_project_name_v4_with_http_info(self, request):
         """检查项目名称是否存在
 
-        更新项目
+        检查项目名称是否存在
 
         :param CheckProjectNameV4Request request
         :return: CheckProjectNameV4Response
@@ -1858,6 +1858,71 @@ class ProjectManClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_system_issue_v4(self, request):
+        """细粒度权限用户创建工作项
+
+        拥有IAM细粒度权限（projectmanConfig:systemSettingField:set）且在devcloud项目中有创建工作项的权限的用户可以设置工作项的创建者
+
+        :param CreateSystemIssueV4Request request
+        :return: CreateSystemIssueV4Response
+        """
+        return self.create_system_issue_v4_with_http_info(request)
+
+    def create_system_issue_v4_with_http_info(self, request):
+        """细粒度权限用户创建工作项
+
+        拥有IAM细粒度权限（projectmanConfig:systemSettingField:set）且在devcloud项目中有创建工作项的权限的用户可以设置工作项的创建者
+
+        :param CreateSystemIssueV4Request request
+        :return: CreateSystemIssueV4Response
+        """
+
+        all_params = ['project_id', 'create_system_issue_v4_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/system/issue',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateSystemIssueV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_issue_v4(self, request):
         """删除工作项
 
@@ -2766,6 +2831,73 @@ class ProjectManClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateIterationV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def upload_issue_img(self, request):
+        """上传图片
+
+        上传图片
+
+        :param UploadIssueImgRequest request
+        :return: UploadIssueImgResponse
+        """
+        return self.upload_issue_img_with_http_info(request)
+
+    def upload_issue_img_with_http_info(self, request):
+        """上传图片
+
+        上传图片
+
+        :param UploadIssueImgRequest request
+        :return: UploadIssueImgResponse
+        """
+
+        all_params = ['project_id', 'file']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/img',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UploadIssueImgResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -108,7 +108,7 @@ class ListSubscriptionsRequest:
     def protocol(self):
         """Gets the protocol of this ListSubscriptionsRequest.
 
-        协议名称, 枚举值：http,https,sms,email,functionstage,dms,application
+        协议名称， 枚举值：http、https、sms、email、functionstage、dms、application。
 
         :return: The protocol of this ListSubscriptionsRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class ListSubscriptionsRequest:
     def protocol(self, protocol):
         """Sets the protocol of this ListSubscriptionsRequest.
 
-        协议名称, 枚举值：http,https,sms,email,functionstage,dms,application
+        协议名称， 枚举值：http、https、sms、email、functionstage、dms、application。
 
         :param protocol: The protocol of this ListSubscriptionsRequest.
         :type: str
@@ -130,7 +130,7 @@ class ListSubscriptionsRequest:
     def status(self):
         """Gets the status of this ListSubscriptionsRequest.
 
-        状态：0-未确认，1-已确认，2-不需要确认，3-已取消确认，4-已经删除
+        状态。 0：未确认 1：已确认 2：不需要确认 3：已取消确认 4：已经删除。
 
         :return: The status of this ListSubscriptionsRequest.
         :rtype: int
@@ -141,7 +141,7 @@ class ListSubscriptionsRequest:
     def status(self, status):
         """Sets the status of this ListSubscriptionsRequest.
 
-        状态：0-未确认，1-已确认，2-不需要确认，3-已取消确认，4-已经删除
+        状态。 0：未确认 1：已确认 2：不需要确认 3：已取消确认 4：已经删除。
 
         :param status: The status of this ListSubscriptionsRequest.
         :type: int
@@ -152,7 +152,7 @@ class ListSubscriptionsRequest:
     def endpoint(self):
         """Gets the endpoint of this ListSubscriptionsRequest.
 
-        订阅终端
+        订阅终端。
 
         :return: The endpoint of this ListSubscriptionsRequest.
         :rtype: str
@@ -163,7 +163,7 @@ class ListSubscriptionsRequest:
     def endpoint(self, endpoint):
         """Sets the endpoint of this ListSubscriptionsRequest.
 
-        订阅终端
+        订阅终端。
 
         :param endpoint: The endpoint of this ListSubscriptionsRequest.
         :type: str

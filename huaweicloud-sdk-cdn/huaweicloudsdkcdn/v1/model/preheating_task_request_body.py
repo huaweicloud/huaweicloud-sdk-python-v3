@@ -43,7 +43,7 @@ class PreheatingTaskRequestBody:
     def urls(self):
         """Gets the urls of this PreheatingTaskRequestBody.
 
-        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，目前不支持对目录的预热，单个url的长度限制为10240字符,单次最多输入1000个url。
+        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，目前不支持对目录的预热，单个url的长度限制为4096字符,单次最多输入1000个url。
 
         :return: The urls of this PreheatingTaskRequestBody.
         :rtype: list[str]
@@ -54,7 +54,7 @@ class PreheatingTaskRequestBody:
     def urls(self, urls):
         """Sets the urls of this PreheatingTaskRequestBody.
 
-        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，目前不支持对目录的预热，单个url的长度限制为10240字符,单次最多输入1000个url。
+        输入URL必须带有“http://”或“https://”，多个URL用逗号分隔，目前不支持对目录的预热，单个url的长度限制为4096字符,单次最多输入1000个url。
 
         :param urls: The urls of this PreheatingTaskRequestBody.
         :type: list[str]

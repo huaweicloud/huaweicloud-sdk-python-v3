@@ -44,7 +44,7 @@ class RulesLocalAdditional:
     def name(self):
         """Gets the name of this RulesLocalAdditional.
 
-        user：联邦用户在本系统中的用户名称。   ``` \"user\":{\"name\":\"{0}\"} ```    group：联邦用户在本系统中所属用户组。   ``` \"group\":{\"name\":\"0cd5e9\"} ```
+        user：联邦用户在本系统中的用户名称。 ``` \"user\":{\"name\":\"{0}\"} ```  group：联邦用户在本系统中所属用户组。 ``` \"group\":{\"name\":\"0cd5e9\"} ```
 
         :return: The name of this RulesLocalAdditional.
         :rtype: str
@@ -55,7 +55,7 @@ class RulesLocalAdditional:
     def name(self, name):
         """Sets the name of this RulesLocalAdditional.
 
-        user：联邦用户在本系统中的用户名称。   ``` \"user\":{\"name\":\"{0}\"} ```    group：联邦用户在本系统中所属用户组。   ``` \"group\":{\"name\":\"0cd5e9\"} ```
+        user：联邦用户在本系统中的用户名称。 ``` \"user\":{\"name\":\"{0}\"} ```  group：联邦用户在本系统中所属用户组。 ``` \"group\":{\"name\":\"0cd5e9\"} ```
 
         :param name: The name of this RulesLocalAdditional.
         :type: str

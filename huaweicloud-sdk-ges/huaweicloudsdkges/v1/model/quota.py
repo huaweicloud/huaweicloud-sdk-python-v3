@@ -1,0 +1,166 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class Quota:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'type': 'str',
+        'available': 'int',
+        'edge_volume': 'int'
+    }
+
+    attribute_map = {
+        'type': 'type',
+        'available': 'available',
+        'edge_volume': 'edgeVolume'
+    }
+
+    def __init__(self, type=None, available=None, edge_volume=None):
+        """Quota - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._type = None
+        self._available = None
+        self._edge_volume = None
+        self.discriminator = None
+
+        self.type = type
+        self.available = available
+        if edge_volume is not None:
+            self.edge_volume = edge_volume
+
+    @property
+    def type(self):
+        """Gets the type of this Quota.
+
+        类型。  取值范围： - \"graph\" - \"backup\" - \"metadata\"
+
+        :return: The type of this Quota.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this Quota.
+
+        类型。  取值范围： - \"graph\" - \"backup\" - \"metadata\"
+
+        :param type: The type of this Quota.
+        :type: str
+        """
+        self._type = type
+
+    @property
+    def available(self):
+        """Gets the available of this Quota.
+
+        图的可用个数。
+
+        :return: The available of this Quota.
+        :rtype: int
+        """
+        return self._available
+
+    @available.setter
+    def available(self, available):
+        """Sets the available of this Quota.
+
+        图的可用个数。
+
+        :param available: The available of this Quota.
+        :type: int
+        """
+        self._available = available
+
+    @property
+    def edge_volume(self):
+        """Gets the edge_volume of this Quota.
+
+        边的可用个数。type为graph时此值有效。
+
+        :return: The edge_volume of this Quota.
+        :rtype: int
+        """
+        return self._edge_volume
+
+    @edge_volume.setter
+    def edge_volume(self, edge_volume):
+        """Sets the edge_volume of this Quota.
+
+        边的可用个数。type为graph时此值有效。
+
+        :param edge_volume: The edge_volume of this Quota.
+        :type: int
+        """
+        self._edge_volume = edge_volume
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, Quota):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

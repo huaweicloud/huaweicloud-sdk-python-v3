@@ -1522,6 +1522,81 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_error_logs_new(self, request):
+        """查询数据库错误日志
+
+        查询数据库错误日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
+
+        :param ListErrorLogsNewRequest request
+        :return: ListErrorLogsNewResponse
+        """
+        return self.list_error_logs_new_with_http_info(request)
+
+    def list_error_logs_new_with_http_info(self, request):
+        """查询数据库错误日志
+
+        查询数据库错误日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
+
+        :param ListErrorLogsNewRequest request
+        :return: ListErrorLogsNewResponse
+        """
+
+        all_params = ['instance_id', 'start_date', 'end_date', 'x_language', 'offset', 'limit', 'level']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start_date' in local_var_params:
+            query_params.append(('start_date', local_var_params['start_date']))
+        if 'end_date' in local_var_params:
+            query_params.append(('end_date', local_var_params['end_date']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'level' in local_var_params:
+            query_params.append(('level', local_var_params['level']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.1/{project_id}/instances/{instance_id}/errorlog',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListErrorLogsNewResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_flavors(self, request):
         """查询数据库规格
 
@@ -2216,6 +2291,81 @@ class RdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSlowLogsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_slow_logs_new(self, request):
+        """查询数据库慢日志
+
+        查询数据库慢日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
+
+        :param ListSlowLogsNewRequest request
+        :return: ListSlowLogsNewResponse
+        """
+        return self.list_slow_logs_new_with_http_info(request)
+
+    def list_slow_logs_new_with_http_info(self, request):
+        """查询数据库慢日志
+
+        查询数据库慢日志。(与原v3接口相比修改offset,符合华为云服务开放 API遵从性规范3.0)
+
+        :param ListSlowLogsNewRequest request
+        :return: ListSlowLogsNewResponse
+        """
+
+        all_params = ['instance_id', 'start_date', 'end_date', 'x_language', 'offset', 'limit', 'type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start_date' in local_var_params:
+            query_params.append(('start_date', local_var_params['start_date']))
+        if 'end_date' in local_var_params:
+            query_params.append(('end_date', local_var_params['end_date']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.1/{project_id}/instances/{instance_id}/slowlog',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSlowLogsNewResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4413,6 +4563,73 @@ class RdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdatePostgresqlInstanceAliasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def upgrade_db_version(self, request):
+        """升级内核小版本
+
+        对实例进行小版本升级。
+
+        :param UpgradeDbVersionRequest request
+        :return: UpgradeDbVersionResponse
+        """
+        return self.upgrade_db_version_with_http_info(request)
+
+    def upgrade_db_version_with_http_info(self, request):
+        """升级内核小版本
+
+        对实例进行小版本升级。
+
+        :param UpgradeDbVersionRequest request
+        :return: UpgradeDbVersionResponse
+        """
+
+        all_params = ['instance_id', 'x_language', 'customer_upgrade_database_version_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/action/db-upgrade',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpgradeDbVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

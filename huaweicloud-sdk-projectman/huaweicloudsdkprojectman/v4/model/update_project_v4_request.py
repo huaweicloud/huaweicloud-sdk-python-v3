@@ -48,7 +48,7 @@ class UpdateProjectV4Request:
     def project_id(self):
         """Gets the project_id of this UpdateProjectV4Request.
 
-        项目id
+        devcloud的项目id
 
         :return: The project_id of this UpdateProjectV4Request.
         :rtype: str
@@ -59,7 +59,7 @@ class UpdateProjectV4Request:
     def project_id(self, project_id):
         """Sets the project_id of this UpdateProjectV4Request.
 
-        项目id
+        devcloud的项目id
 
         :param project_id: The project_id of this UpdateProjectV4Request.
         :type: str

@@ -25,17 +25,19 @@ class JobEntities:
         'image_id': 'str',
         'current_task': 'str',
         'image_name': 'str',
-        'process_percent': 'float'
+        'process_percent': 'float',
+        'results': 'list[JobEntitiesResult]'
     }
 
     attribute_map = {
         'image_id': 'image_id',
         'current_task': 'current_task',
         'image_name': 'image_name',
-        'process_percent': 'process_percent'
+        'process_percent': 'process_percent',
+        'results': 'results'
     }
 
-    def __init__(self, image_id=None, current_task=None, image_name=None, process_percent=None):
+    def __init__(self, image_id=None, current_task=None, image_name=None, process_percent=None, results=None):
         """JobEntities - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +46,7 @@ class JobEntities:
         self._current_task = None
         self._image_name = None
         self._process_percent = None
+        self._results = None
         self.discriminator = None
 
         if image_id is not None:
@@ -54,6 +57,8 @@ class JobEntities:
             self.image_name = image_name
         if process_percent is not None:
             self.process_percent = process_percent
+        if results is not None:
+            self.results = results
 
     @property
     def image_id(self):
@@ -142,6 +147,28 @@ class JobEntities:
         :type: float
         """
         self._process_percent = process_percent
+
+    @property
+    def results(self):
+        """Gets the results of this JobEntities.
+
+        批量任务执行结果
+
+        :return: The results of this JobEntities.
+        :rtype: list[JobEntitiesResult]
+        """
+        return self._results
+
+    @results.setter
+    def results(self, results):
+        """Sets the results of this JobEntities.
+
+        批量任务执行结果
+
+        :param results: The results of this JobEntities.
+        :type: list[JobEntitiesResult]
+        """
+        self._results = results
 
     def to_dict(self):
         """Returns the model properties as a dict"""

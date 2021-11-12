@@ -49,7 +49,7 @@ class ShowStreamCountResponse(SdkResponse):
     def data_list(self):
         """Gets the data_list of this ShowStreamCountResponse.
 
-        采样数据列表
+        采样数据列表。
 
         :return: The data_list of this ShowStreamCountResponse.
         :rtype: list[StreamCountData]
@@ -60,7 +60,7 @@ class ShowStreamCountResponse(SdkResponse):
     def data_list(self, data_list):
         """Sets the data_list of this ShowStreamCountResponse.
 
-        采样数据列表
+        采样数据列表。
 
         :param data_list: The data_list of this ShowStreamCountResponse.
         :type: list[StreamCountData]

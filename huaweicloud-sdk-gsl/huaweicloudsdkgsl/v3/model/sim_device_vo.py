@@ -26,22 +26,18 @@ class SimDeviceVO:
         'account_id': 'str',
         'cid': 'str',
         'sim_pool_id': 'int',
-        'sn': 'str',
         'imei': 'str',
         'sim_status': 'int',
         'device_status': 'int',
         'device_model': 'str',
         'act_date': 'date',
         'device_status_date': 'date',
-        'supply_code': 'str',
         'node_id': 'str',
         'iccid': 'str',
-        'bundle_id': 'str',
         'network_type': 'str',
         'dbm': 'str',
         'signal_level': 'str',
         'sim_type': 'int',
-        'test_type': 'bool',
         'tag_names': 'str',
         'order_id': 'int',
         'expire_time': 'date',
@@ -71,22 +67,18 @@ class SimDeviceVO:
         'account_id': 'account_id',
         'cid': 'cid',
         'sim_pool_id': 'sim_pool_id',
-        'sn': 'sn',
         'imei': 'imei',
         'sim_status': 'sim_status',
         'device_status': 'device_status',
         'device_model': 'device_model',
         'act_date': 'act_date',
         'device_status_date': 'device_status_date',
-        'supply_code': 'supply_code',
         'node_id': 'node_id',
         'iccid': 'iccid',
-        'bundle_id': 'bundle_id',
         'network_type': 'network_type',
         'dbm': 'dbm',
         'signal_level': 'signal_level',
         'sim_type': 'sim_type',
-        'test_type': 'test_type',
         'tag_names': 'tag_names',
         'order_id': 'order_id',
         'expire_time': 'expire_time',
@@ -111,7 +103,7 @@ class SimDeviceVO:
         'speed_value': 'speed_value'
     }
 
-    def __init__(self, sim_card_id=None, account_id=None, cid=None, sim_pool_id=None, sn=None, imei=None, sim_status=None, device_status=None, device_model=None, act_date=None, device_status_date=None, supply_code=None, node_id=None, iccid=None, bundle_id=None, network_type=None, dbm=None, signal_level=None, sim_type=None, test_type=None, tag_names=None, order_id=None, expire_time=None, price_plan_name=None, sim_price_plan_id=None, flow_left=None, flow_used=None, operator_status=None, msisdn=None, imsi=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, real_named=None, cut_net_flag=None, exceed_cut_net_flag=None, exceed_cut_net_quota=None, imei_bind_remain_times=None, speed_value=None):
+    def __init__(self, sim_card_id=None, account_id=None, cid=None, sim_pool_id=None, imei=None, sim_status=None, device_status=None, device_model=None, act_date=None, device_status_date=None, node_id=None, iccid=None, network_type=None, dbm=None, signal_level=None, sim_type=None, tag_names=None, order_id=None, expire_time=None, price_plan_name=None, sim_price_plan_id=None, flow_left=None, flow_used=None, operator_status=None, msisdn=None, imsi=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, real_named=None, cut_net_flag=None, exceed_cut_net_flag=None, exceed_cut_net_quota=None, imei_bind_remain_times=None, speed_value=None):
         """SimDeviceVO - a model defined in huaweicloud sdk"""
         
         
@@ -120,22 +112,18 @@ class SimDeviceVO:
         self._account_id = None
         self._cid = None
         self._sim_pool_id = None
-        self._sn = None
         self._imei = None
         self._sim_status = None
         self._device_status = None
         self._device_model = None
         self._act_date = None
         self._device_status_date = None
-        self._supply_code = None
         self._node_id = None
         self._iccid = None
-        self._bundle_id = None
         self._network_type = None
         self._dbm = None
         self._signal_level = None
         self._sim_type = None
-        self._test_type = None
         self._tag_names = None
         self._order_id = None
         self._expire_time = None
@@ -168,8 +156,6 @@ class SimDeviceVO:
             self.cid = cid
         if sim_pool_id is not None:
             self.sim_pool_id = sim_pool_id
-        if sn is not None:
-            self.sn = sn
         if imei is not None:
             self.imei = imei
         if sim_status is not None:
@@ -182,14 +168,10 @@ class SimDeviceVO:
             self.act_date = act_date
         if device_status_date is not None:
             self.device_status_date = device_status_date
-        if supply_code is not None:
-            self.supply_code = supply_code
         if node_id is not None:
             self.node_id = node_id
         if iccid is not None:
             self.iccid = iccid
-        if bundle_id is not None:
-            self.bundle_id = bundle_id
         if network_type is not None:
             self.network_type = network_type
         if dbm is not None:
@@ -198,8 +180,6 @@ class SimDeviceVO:
             self.signal_level = signal_level
         if sim_type is not None:
             self.sim_type = sim_type
-        if test_type is not None:
-            self.test_type = test_type
         if tag_names is not None:
             self.tag_names = tag_names
         if order_id is not None:
@@ -334,28 +314,6 @@ class SimDeviceVO:
         self._sim_pool_id = sim_pool_id
 
     @property
-    def sn(self):
-        """Gets the sn of this SimDeviceVO.
-
-        sn
-
-        :return: The sn of this SimDeviceVO.
-        :rtype: str
-        """
-        return self._sn
-
-    @sn.setter
-    def sn(self, sn):
-        """Sets the sn of this SimDeviceVO.
-
-        sn
-
-        :param sn: The sn of this SimDeviceVO.
-        :type: str
-        """
-        self._sn = sn
-
-    @property
     def imei(self):
         """Gets the imei of this SimDeviceVO.
 
@@ -488,28 +446,6 @@ class SimDeviceVO:
         self._device_status_date = device_status_date
 
     @property
-    def supply_code(self):
-        """Gets the supply_code of this SimDeviceVO.
-
-        供应商代码
-
-        :return: The supply_code of this SimDeviceVO.
-        :rtype: str
-        """
-        return self._supply_code
-
-    @supply_code.setter
-    def supply_code(self, supply_code):
-        """Sets the supply_code of this SimDeviceVO.
-
-        供应商代码
-
-        :param supply_code: The supply_code of this SimDeviceVO.
-        :type: str
-        """
-        self._supply_code = supply_code
-
-    @property
     def node_id(self):
         """Gets the node_id of this SimDeviceVO.
 
@@ -552,28 +488,6 @@ class SimDeviceVO:
         :type: str
         """
         self._iccid = iccid
-
-    @property
-    def bundle_id(self):
-        """Gets the bundle_id of this SimDeviceVO.
-
-        码号对应的bundle
-
-        :return: The bundle_id of this SimDeviceVO.
-        :rtype: str
-        """
-        return self._bundle_id
-
-    @bundle_id.setter
-    def bundle_id(self, bundle_id):
-        """Sets the bundle_id of this SimDeviceVO.
-
-        码号对应的bundle
-
-        :param bundle_id: The bundle_id of this SimDeviceVO.
-        :type: str
-        """
-        self._bundle_id = bundle_id
 
     @property
     def network_type(self):
@@ -662,28 +576,6 @@ class SimDeviceVO:
         :type: int
         """
         self._sim_type = sim_type
-
-    @property
-    def test_type(self):
-        """Gets the test_type of this SimDeviceVO.
-
-        是否测试卡
-
-        :return: The test_type of this SimDeviceVO.
-        :rtype: bool
-        """
-        return self._test_type
-
-    @test_type.setter
-    def test_type(self, test_type):
-        """Sets the test_type of this SimDeviceVO.
-
-        是否测试卡
-
-        :param test_type: The test_type of this SimDeviceVO.
-        :type: bool
-        """
-        self._test_type = test_type
 
     @property
     def tag_names(self):

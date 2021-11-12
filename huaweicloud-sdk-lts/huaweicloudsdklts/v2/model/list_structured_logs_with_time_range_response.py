@@ -22,45 +22,45 @@ class ListStructuredLogsWithTimeRangeResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'context': 'list[str]'
+        'body': 'dict(str, list[object])'
     }
 
     attribute_map = {
-        'context': 'context'
+        'body': 'body'
     }
 
-    def __init__(self, context=None):
+    def __init__(self, body=None):
         """ListStructuredLogsWithTimeRangeResponse - a model defined in huaweicloud sdk"""
         
         super(ListStructuredLogsWithTimeRangeResponse, self).__init__()
 
-        self._context = None
+        self._body = None
         self.discriminator = None
 
-        if context is not None:
-            self.context = context
+        if body is not None:
+            self.body = body
 
     @property
-    def context(self):
-        """Gets the context of this ListStructuredLogsWithTimeRangeResponse.
+    def body(self):
+        """Gets the body of this ListStructuredLogsWithTimeRangeResponse.
 
-        查询结构化日志结果信息。此处仅为示例，具体参数名称取决于查询的字段。
+        此参数在请求实体中，采用json字符串格式。
 
-        :return: The context of this ListStructuredLogsWithTimeRangeResponse.
-        :rtype: list[str]
+        :return: The body of this ListStructuredLogsWithTimeRangeResponse.
+        :rtype: dict(str, list[object])
         """
-        return self._context
+        return self._body
 
-    @context.setter
-    def context(self, context):
-        """Sets the context of this ListStructuredLogsWithTimeRangeResponse.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this ListStructuredLogsWithTimeRangeResponse.
 
-        查询结构化日志结果信息。此处仅为示例，具体参数名称取决于查询的字段。
+        此参数在请求实体中，采用json字符串格式。
 
-        :param context: The context of this ListStructuredLogsWithTimeRangeResponse.
-        :type: list[str]
+        :param body: The body of this ListStructuredLogsWithTimeRangeResponse.
+        :type: dict(str, list[object])
         """
-        self._context = context
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

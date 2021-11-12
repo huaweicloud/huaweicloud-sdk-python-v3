@@ -29,11 +29,7 @@ class ListProPricePlansRequest:
         'network_type': 'int',
         'location_type': 'int',
         'carrier_type': 'int',
-        'country_type': 'int',
-        'sim_card_id': 'int',
-        'partner': 'int',
-        'package_type': 'int',
-        'sim_type': 'int'
+        'country_type': 'int'
     }
 
     attribute_map = {
@@ -44,14 +40,10 @@ class ListProPricePlansRequest:
         'network_type': 'network_type',
         'location_type': 'location_type',
         'carrier_type': 'carrier_type',
-        'country_type': 'country_type',
-        'sim_card_id': 'sim_card_id',
-        'partner': 'partner',
-        'package_type': 'package_type',
-        'sim_type': 'sim_type'
+        'country_type': 'country_type'
     }
 
-    def __init__(self, limit=None, offset=None, main_search_key=None, flow_total=None, network_type=None, location_type=None, carrier_type=None, country_type=None, sim_card_id=None, partner=None, package_type=None, sim_type=None):
+    def __init__(self, limit=None, offset=None, main_search_key=None, flow_total=None, network_type=None, location_type=None, carrier_type=None, country_type=None):
         """ListProPricePlansRequest - a model defined in huaweicloud sdk"""
         
         
@@ -64,10 +56,6 @@ class ListProPricePlansRequest:
         self._location_type = None
         self._carrier_type = None
         self._country_type = None
-        self._sim_card_id = None
-        self._partner = None
-        self._package_type = None
-        self._sim_type = None
         self.discriminator = None
 
         if limit is not None:
@@ -86,14 +74,6 @@ class ListProPricePlansRequest:
             self.carrier_type = carrier_type
         if country_type is not None:
             self.country_type = country_type
-        if sim_card_id is not None:
-            self.sim_card_id = sim_card_id
-        if partner is not None:
-            self.partner = partner
-        if package_type is not None:
-            self.package_type = package_type
-        if sim_type is not None:
-            self.sim_type = sim_type
 
     @property
     def limit(self):
@@ -187,7 +167,7 @@ class ListProPricePlansRequest:
     def network_type(self):
         """Gets the network_type of this ListProPricePlansRequest.
 
-        网络制式
+        网络制式 1.2g,3g,4g 2.NB
 
         :return: The network_type of this ListProPricePlansRequest.
         :rtype: int
@@ -198,7 +178,7 @@ class ListProPricePlansRequest:
     def network_type(self, network_type):
         """Sets the network_type of this ListProPricePlansRequest.
 
-        网络制式
+        网络制式 1.2g,3g,4g 2.NB
 
         :param network_type: The network_type of this ListProPricePlansRequest.
         :type: int
@@ -270,94 +250,6 @@ class ListProPricePlansRequest:
         :type: int
         """
         self._country_type = country_type
-
-    @property
-    def sim_card_id(self):
-        """Gets the sim_card_id of this ListProPricePlansRequest.
-
-        sim card id sim卡标识
-
-        :return: The sim_card_id of this ListProPricePlansRequest.
-        :rtype: int
-        """
-        return self._sim_card_id
-
-    @sim_card_id.setter
-    def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this ListProPricePlansRequest.
-
-        sim card id sim卡标识
-
-        :param sim_card_id: The sim_card_id of this ListProPricePlansRequest.
-        :type: int
-        """
-        self._sim_card_id = sim_card_id
-
-    @property
-    def partner(self):
-        """Gets the partner of this ListProPricePlansRequest.
-
-        伙伴
-
-        :return: The partner of this ListProPricePlansRequest.
-        :rtype: int
-        """
-        return self._partner
-
-    @partner.setter
-    def partner(self, partner):
-        """Sets the partner of this ListProPricePlansRequest.
-
-        伙伴
-
-        :param partner: The partner of this ListProPricePlansRequest.
-        :type: int
-        """
-        self._partner = partner
-
-    @property
-    def package_type(self):
-        """Gets the package_type of this ListProPricePlansRequest.
-
-        套餐类型
-
-        :return: The package_type of this ListProPricePlansRequest.
-        :rtype: int
-        """
-        return self._package_type
-
-    @package_type.setter
-    def package_type(self, package_type):
-        """Sets the package_type of this ListProPricePlansRequest.
-
-        套餐类型
-
-        :param package_type: The package_type of this ListProPricePlansRequest.
-        :type: int
-        """
-        self._package_type = package_type
-
-    @property
-    def sim_type(self):
-        """Gets the sim_type of this ListProPricePlansRequest.
-
-        适用SIM卡类型
-
-        :return: The sim_type of this ListProPricePlansRequest.
-        :rtype: int
-        """
-        return self._sim_type
-
-    @sim_type.setter
-    def sim_type(self, sim_type):
-        """Sets the sim_type of this ListProPricePlansRequest.
-
-        适用SIM卡类型
-
-        :param sim_type: The sim_type of this ListProPricePlansRequest.
-        :type: int
-        """
-        self._sim_type = sim_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

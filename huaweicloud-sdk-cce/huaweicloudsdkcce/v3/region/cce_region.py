@@ -12,6 +12,8 @@ class CceRegion:
 
     CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://cce.cn-north-1.myhuaweicloud.com")
 
+    CN_NORTH_2 = Region(id="cn-north-2", endpoint="https://cce.cn-north-2.myhuaweicloud.com")
+
     CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://cce.cn-north-4.myhuaweicloud.com")
 
     CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://cce.cn-south-1.myhuaweicloud.com")
@@ -32,6 +34,7 @@ class CceRegion:
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
+        "cn-north-2": CN_NORTH_2,
         "cn-north-4": CN_NORTH_4,
         "cn-south-1": CN_SOUTH_1,
         "cn-east-2": CN_EAST_2,

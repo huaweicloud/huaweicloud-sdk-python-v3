@@ -71,7 +71,7 @@ class DomainRegion:
     def region_isp_details(self):
         """Gets the region_isp_details of this DomainRegion.
 
-        指标统计数据列表  如果该时间段内无值，则为空数组[]
+        指标统计数据列表，如果该时间段内无值，则为空数组[]
 
         :return: The region_isp_details of this DomainRegion.
         :rtype: list[dict(str, object)]
@@ -82,7 +82,7 @@ class DomainRegion:
     def region_isp_details(self, region_isp_details):
         """Sets the region_isp_details of this DomainRegion.
 
-        指标统计数据列表  如果该时间段内无值，则为空数组[]
+        指标统计数据列表，如果该时间段内无值，则为空数组[]
 
         :param region_isp_details: The region_isp_details of this DomainRegion.
         :type: list[dict(str, object)]

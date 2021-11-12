@@ -95,7 +95,7 @@ class AddApplyJoinProjectForAgcRequest:
     def project_id(self):
         """Gets the project_id of this AddApplyJoinProjectForAgcRequest.
 
-        项目id
+        devcloud的项目id
 
         :return: The project_id of this AddApplyJoinProjectForAgcRequest.
         :rtype: str
@@ -106,7 +106,7 @@ class AddApplyJoinProjectForAgcRequest:
     def project_id(self, project_id):
         """Sets the project_id of this AddApplyJoinProjectForAgcRequest.
 
-        项目id
+        devcloud的项目id
 
         :param project_id: The project_id of this AddApplyJoinProjectForAgcRequest.
         :type: str

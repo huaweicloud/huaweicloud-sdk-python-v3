@@ -14,10 +14,19 @@ from huaweicloudsdkdsc.v1.model.create_doc_watermark_response import CreateDocWa
 from huaweicloudsdkdsc.v1.model.create_image_watermark_request import CreateImageWatermarkRequest
 from huaweicloudsdkdsc.v1.model.create_image_watermark_request_body import CreateImageWatermarkRequestBody
 from huaweicloudsdkdsc.v1.model.create_image_watermark_response import CreateImageWatermarkResponse
+from huaweicloudsdkdsc.v1.model.db_match_info import DbMatchInfo
+from huaweicloudsdkdsc.v1.model.db_scan_result import DbScanResult
+from huaweicloudsdkdsc.v1.model.db_scan_result_info import DbScanResultInfo
 from huaweicloudsdkdsc.v1.model.dynamic_data_mask import DynamicDataMask
 from huaweicloudsdkdsc.v1.model.embedded_database_watermark import EmbeddedDatabaseWatermark
+from huaweicloudsdkdsc.v1.model.es_match_info import EsMatchInfo
+from huaweicloudsdkdsc.v1.model.es_scan_result import EsScanResult
+from huaweicloudsdkdsc.v1.model.es_scan_result_info import EsScanResultInfo
 from huaweicloudsdkdsc.v1.model.extracted_database_watermark import ExtractedDatabaseWatermark
 from huaweicloudsdkdsc.v1.model.mask_strategies import MaskStrategies
+from huaweicloudsdkdsc.v1.model.obs_scan_result import ObsScanResult
+from huaweicloudsdkdsc.v1.model.obs_scan_result_info import ObsScanResultInfo
+from huaweicloudsdkdsc.v1.model.scan_job import ScanJob
 from huaweicloudsdkdsc.v1.model.show_database_water_mark_request import ShowDatabaseWaterMarkRequest
 from huaweicloudsdkdsc.v1.model.show_database_water_mark_response import ShowDatabaseWaterMarkResponse
 from huaweicloudsdkdsc.v1.model.show_doc_watermark_request import ShowDocWatermarkRequest
@@ -26,3 +35,7 @@ from huaweicloudsdkdsc.v1.model.show_doc_watermark_response import ShowDocWaterm
 from huaweicloudsdkdsc.v1.model.show_image_watermark_request import ShowImageWatermarkRequest
 from huaweicloudsdkdsc.v1.model.show_image_watermark_request_body import ShowImageWatermarkRequestBody
 from huaweicloudsdkdsc.v1.model.show_image_watermark_response import ShowImageWatermarkResponse
+from huaweicloudsdkdsc.v1.model.show_scan_job_results_request import ShowScanJobResultsRequest
+from huaweicloudsdkdsc.v1.model.show_scan_job_results_response import ShowScanJobResultsResponse
+from huaweicloudsdkdsc.v1.model.show_scan_jobs_request import ShowScanJobsRequest
+from huaweicloudsdkdsc.v1.model.show_scan_jobs_response import ShowScanJobsResponse

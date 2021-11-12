@@ -1,0 +1,401 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class UpdateSqlAlarmRuleRequestBody:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'sql_alarm_rule_id': 'str',
+        'sql_alarm_rule_name': 'str',
+        'sql_alarm_rule_description': 'str',
+        'sql_requests': 'list[SqlRequest]',
+        'frequency': 'Frequency',
+        'condition_expression': 'str',
+        'sql_alarm_level': 'str',
+        'sql_alarm_send': 'bool',
+        'sql_alarm_send_code': 'int',
+        'domain_id': 'str',
+        'notification_save_rule': 'NotificationSaveRule',
+        'whether_english': 'bool'
+    }
+
+    attribute_map = {
+        'sql_alarm_rule_id': 'sql_alarm_rule_id',
+        'sql_alarm_rule_name': 'sql_alarm_rule_name',
+        'sql_alarm_rule_description': 'sql_alarm_rule_description',
+        'sql_requests': 'sql_requests',
+        'frequency': 'frequency',
+        'condition_expression': 'condition_expression',
+        'sql_alarm_level': 'sql_alarm_level',
+        'sql_alarm_send': 'sql_alarm_send',
+        'sql_alarm_send_code': 'sql_alarm_send_code',
+        'domain_id': 'domain_id',
+        'notification_save_rule': 'notification_save_rule',
+        'whether_english': 'whether_english'
+    }
+
+    def __init__(self, sql_alarm_rule_id=None, sql_alarm_rule_name=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, sql_alarm_send_code=None, domain_id=None, notification_save_rule=None, whether_english=None):
+        """UpdateSqlAlarmRuleRequestBody - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._sql_alarm_rule_id = None
+        self._sql_alarm_rule_name = None
+        self._sql_alarm_rule_description = None
+        self._sql_requests = None
+        self._frequency = None
+        self._condition_expression = None
+        self._sql_alarm_level = None
+        self._sql_alarm_send = None
+        self._sql_alarm_send_code = None
+        self._domain_id = None
+        self._notification_save_rule = None
+        self._whether_english = None
+        self.discriminator = None
+
+        self.sql_alarm_rule_id = sql_alarm_rule_id
+        self.sql_alarm_rule_name = sql_alarm_rule_name
+        if sql_alarm_rule_description is not None:
+            self.sql_alarm_rule_description = sql_alarm_rule_description
+        self.sql_requests = sql_requests
+        self.frequency = frequency
+        self.condition_expression = condition_expression
+        self.sql_alarm_level = sql_alarm_level
+        self.sql_alarm_send = sql_alarm_send
+        self.sql_alarm_send_code = sql_alarm_send_code
+        self.domain_id = domain_id
+        if notification_save_rule is not None:
+            self.notification_save_rule = notification_save_rule
+        self.whether_english = whether_english
+
+    @property
+    def sql_alarm_rule_id(self):
+        """Gets the sql_alarm_rule_id of this UpdateSqlAlarmRuleRequestBody.
+
+        SQL告警id
+
+        :return: The sql_alarm_rule_id of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: str
+        """
+        return self._sql_alarm_rule_id
+
+    @sql_alarm_rule_id.setter
+    def sql_alarm_rule_id(self, sql_alarm_rule_id):
+        """Sets the sql_alarm_rule_id of this UpdateSqlAlarmRuleRequestBody.
+
+        SQL告警id
+
+        :param sql_alarm_rule_id: The sql_alarm_rule_id of this UpdateSqlAlarmRuleRequestBody.
+        :type: str
+        """
+        self._sql_alarm_rule_id = sql_alarm_rule_id
+
+    @property
+    def sql_alarm_rule_name(self):
+        """Gets the sql_alarm_rule_name of this UpdateSqlAlarmRuleRequestBody.
+
+        SQL告警名称
+
+        :return: The sql_alarm_rule_name of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: str
+        """
+        return self._sql_alarm_rule_name
+
+    @sql_alarm_rule_name.setter
+    def sql_alarm_rule_name(self, sql_alarm_rule_name):
+        """Sets the sql_alarm_rule_name of this UpdateSqlAlarmRuleRequestBody.
+
+        SQL告警名称
+
+        :param sql_alarm_rule_name: The sql_alarm_rule_name of this UpdateSqlAlarmRuleRequestBody.
+        :type: str
+        """
+        self._sql_alarm_rule_name = sql_alarm_rule_name
+
+    @property
+    def sql_alarm_rule_description(self):
+        """Gets the sql_alarm_rule_description of this UpdateSqlAlarmRuleRequestBody.
+
+        SQL告警信息描述
+
+        :return: The sql_alarm_rule_description of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: str
+        """
+        return self._sql_alarm_rule_description
+
+    @sql_alarm_rule_description.setter
+    def sql_alarm_rule_description(self, sql_alarm_rule_description):
+        """Sets the sql_alarm_rule_description of this UpdateSqlAlarmRuleRequestBody.
+
+        SQL告警信息描述
+
+        :param sql_alarm_rule_description: The sql_alarm_rule_description of this UpdateSqlAlarmRuleRequestBody.
+        :type: str
+        """
+        self._sql_alarm_rule_description = sql_alarm_rule_description
+
+    @property
+    def sql_requests(self):
+        """Gets the sql_requests of this UpdateSqlAlarmRuleRequestBody.
+
+        SQL详细信息
+
+        :return: The sql_requests of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: list[SqlRequest]
+        """
+        return self._sql_requests
+
+    @sql_requests.setter
+    def sql_requests(self, sql_requests):
+        """Sets the sql_requests of this UpdateSqlAlarmRuleRequestBody.
+
+        SQL详细信息
+
+        :param sql_requests: The sql_requests of this UpdateSqlAlarmRuleRequestBody.
+        :type: list[SqlRequest]
+        """
+        self._sql_requests = sql_requests
+
+    @property
+    def frequency(self):
+        """Gets the frequency of this UpdateSqlAlarmRuleRequestBody.
+
+        告警统计周期
+
+        :return: The frequency of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: Frequency
+        """
+        return self._frequency
+
+    @frequency.setter
+    def frequency(self, frequency):
+        """Sets the frequency of this UpdateSqlAlarmRuleRequestBody.
+
+        告警统计周期
+
+        :param frequency: The frequency of this UpdateSqlAlarmRuleRequestBody.
+        :type: Frequency
+        """
+        self._frequency = frequency
+
+    @property
+    def condition_expression(self):
+        """Gets the condition_expression of this UpdateSqlAlarmRuleRequestBody.
+
+        条件表达式
+
+        :return: The condition_expression of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: str
+        """
+        return self._condition_expression
+
+    @condition_expression.setter
+    def condition_expression(self, condition_expression):
+        """Sets the condition_expression of this UpdateSqlAlarmRuleRequestBody.
+
+        条件表达式
+
+        :param condition_expression: The condition_expression of this UpdateSqlAlarmRuleRequestBody.
+        :type: str
+        """
+        self._condition_expression = condition_expression
+
+    @property
+    def sql_alarm_level(self):
+        """Gets the sql_alarm_level of this UpdateSqlAlarmRuleRequestBody.
+
+        告警级别
+
+        :return: The sql_alarm_level of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: str
+        """
+        return self._sql_alarm_level
+
+    @sql_alarm_level.setter
+    def sql_alarm_level(self, sql_alarm_level):
+        """Sets the sql_alarm_level of this UpdateSqlAlarmRuleRequestBody.
+
+        告警级别
+
+        :param sql_alarm_level: The sql_alarm_level of this UpdateSqlAlarmRuleRequestBody.
+        :type: str
+        """
+        self._sql_alarm_level = sql_alarm_level
+
+    @property
+    def sql_alarm_send(self):
+        """Gets the sql_alarm_send of this UpdateSqlAlarmRuleRequestBody.
+
+        是否发送
+
+        :return: The sql_alarm_send of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: bool
+        """
+        return self._sql_alarm_send
+
+    @sql_alarm_send.setter
+    def sql_alarm_send(self, sql_alarm_send):
+        """Sets the sql_alarm_send of this UpdateSqlAlarmRuleRequestBody.
+
+        是否发送
+
+        :param sql_alarm_send: The sql_alarm_send of this UpdateSqlAlarmRuleRequestBody.
+        :type: bool
+        """
+        self._sql_alarm_send = sql_alarm_send
+
+    @property
+    def sql_alarm_send_code(self):
+        """Gets the sql_alarm_send_code of this UpdateSqlAlarmRuleRequestBody.
+
+        发送主题 0:不变 1:新增 2:修改 3:删除
+
+        :return: The sql_alarm_send_code of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: int
+        """
+        return self._sql_alarm_send_code
+
+    @sql_alarm_send_code.setter
+    def sql_alarm_send_code(self, sql_alarm_send_code):
+        """Sets the sql_alarm_send_code of this UpdateSqlAlarmRuleRequestBody.
+
+        发送主题 0:不变 1:新增 2:修改 3:删除
+
+        :param sql_alarm_send_code: The sql_alarm_send_code of this UpdateSqlAlarmRuleRequestBody.
+        :type: int
+        """
+        self._sql_alarm_send_code = sql_alarm_send_code
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this UpdateSqlAlarmRuleRequestBody.
+
+        domainId
+
+        :return: The domain_id of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this UpdateSqlAlarmRuleRequestBody.
+
+        domainId
+
+        :param domain_id: The domain_id of this UpdateSqlAlarmRuleRequestBody.
+        :type: str
+        """
+        self._domain_id = domain_id
+
+    @property
+    def notification_save_rule(self):
+        """Gets the notification_save_rule of this UpdateSqlAlarmRuleRequestBody.
+
+        通知主题
+
+        :return: The notification_save_rule of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: NotificationSaveRule
+        """
+        return self._notification_save_rule
+
+    @notification_save_rule.setter
+    def notification_save_rule(self, notification_save_rule):
+        """Sets the notification_save_rule of this UpdateSqlAlarmRuleRequestBody.
+
+        通知主题
+
+        :param notification_save_rule: The notification_save_rule of this UpdateSqlAlarmRuleRequestBody.
+        :type: NotificationSaveRule
+        """
+        self._notification_save_rule = notification_save_rule
+
+    @property
+    def whether_english(self):
+        """Gets the whether_english of this UpdateSqlAlarmRuleRequestBody.
+
+        邮件附加信息是否英文
+
+        :return: The whether_english of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: bool
+        """
+        return self._whether_english
+
+    @whether_english.setter
+    def whether_english(self, whether_english):
+        """Sets the whether_english of this UpdateSqlAlarmRuleRequestBody.
+
+        邮件附加信息是否英文
+
+        :param whether_english: The whether_english of this UpdateSqlAlarmRuleRequestBody.
+        :type: bool
+        """
+        self._whether_english = whether_english
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, UpdateSqlAlarmRuleRequestBody):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

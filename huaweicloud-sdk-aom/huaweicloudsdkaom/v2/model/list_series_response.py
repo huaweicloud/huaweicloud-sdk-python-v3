@@ -23,7 +23,7 @@ class ListSeriesResponse(SdkResponse):
 
     openapi_types = {
         'series': 'list[SeriesQueryItemResult]',
-        'meta_data': 'Metadata2'
+        'meta_data': 'MetaDataSeries'
     }
 
     attribute_map = {
@@ -73,7 +73,7 @@ class ListSeriesResponse(SdkResponse):
 
 
         :return: The meta_data of this ListSeriesResponse.
-        :rtype: Metadata2
+        :rtype: MetaDataSeries
         """
         return self._meta_data
 
@@ -83,7 +83,7 @@ class ListSeriesResponse(SdkResponse):
 
 
         :param meta_data: The meta_data of this ListSeriesResponse.
-        :type: Metadata2
+        :type: MetaDataSeries
         """
         self._meta_data = meta_data
 

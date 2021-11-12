@@ -97,7 +97,7 @@ class FederationUserBody:
     def id(self):
         """Gets the id of this FederationUserBody.
 
-        user id
+        user id。
 
         :return: The id of this FederationUserBody.
         :rtype: str
@@ -108,7 +108,7 @@ class FederationUserBody:
     def id(self, id):
         """Sets the id of this FederationUserBody.
 
-        user id
+        user id。
 
         :param id: The id of this FederationUserBody.
         :type: str
@@ -119,7 +119,7 @@ class FederationUserBody:
     def name(self):
         """Gets the name of this FederationUserBody.
 
-        user name
+        user name。
 
         :return: The name of this FederationUserBody.
         :rtype: str
@@ -130,7 +130,7 @@ class FederationUserBody:
     def name(self, name):
         """Sets the name of this FederationUserBody.
 
-        user name
+        user name。
 
         :param name: The name of this FederationUserBody.
         :type: str

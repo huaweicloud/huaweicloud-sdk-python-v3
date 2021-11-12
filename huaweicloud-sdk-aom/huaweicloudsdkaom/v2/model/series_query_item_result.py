@@ -23,7 +23,7 @@ class SeriesQueryItemResult:
 
     openapi_types = {
         'namespace': 'str',
-        'dimensions': 'list[Dimension]',
+        'dimensions': 'list[DimensionSeries]',
         'metric_name': 'str',
         'unit': 'str',
         'dimension_value_hash': 'str'
@@ -89,7 +89,7 @@ class SeriesQueryItemResult:
         维度列表。
 
         :return: The dimensions of this SeriesQueryItemResult.
-        :rtype: list[Dimension]
+        :rtype: list[DimensionSeries]
         """
         return self._dimensions
 
@@ -100,7 +100,7 @@ class SeriesQueryItemResult:
         维度列表。
 
         :param dimensions: The dimensions of this SeriesQueryItemResult.
-        :type: list[Dimension]
+        :type: list[DimensionSeries]
         """
         self._dimensions = dimensions
 

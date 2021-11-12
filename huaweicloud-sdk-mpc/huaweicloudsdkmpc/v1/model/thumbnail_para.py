@@ -94,7 +94,7 @@ class ThumbnailPara:
     def type(self):
         """Gets the type of this ThumbnailPara.
 
-        采样类型。  取值如下： - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。 默认值：\"TIME\" 
+        采样类型。  取值如下： - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。选择同步截图时，需指定此类型。  默认值：\"TIME\" 
 
         :return: The type of this ThumbnailPara.
         :rtype: str
@@ -105,7 +105,7 @@ class ThumbnailPara:
     def type(self, type):
         """Sets the type of this ThumbnailPara.
 
-        采样类型。  取值如下： - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。 默认值：\"TIME\" 
+        采样类型。  取值如下： - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。选择同步截图时，需指定此类型。  默认值：\"TIME\" 
 
         :param type: The type of this ThumbnailPara.
         :type: str
@@ -314,7 +314,7 @@ class ThumbnailPara:
     def max_length(self):
         """Gets the max_length of this ThumbnailPara.
 
-        截图最长边的尺寸。宽边尺寸按照该尺寸与原始视频像素等比缩放计算。  取值范围：[240,3840]  默认值：480  单位：像素 > 该参数和width/height选择使用，以width/height优先，若width/height都不等于0，则图片尺寸按width/height得出；反之，则图片尺寸按 max_length 得出。 > 若该参数和width/height都未选择，则取max_length默认为480 
+        截图最长边的尺寸。宽边尺寸按照该尺寸与原始视频像素等比缩放计算。   取值范围：[240,3840]  默认值：480  单位：像素  > 该参数和width/height选择使用，以width/height优先，若width/height都不等于0，则图片尺寸按width/height得出；反之，则图片尺寸按 max_length 得出。  > 若该参数和width/height都未选择，则按源片源宽高输出截图 
 
         :return: The max_length of this ThumbnailPara.
         :rtype: int
@@ -325,7 +325,7 @@ class ThumbnailPara:
     def max_length(self, max_length):
         """Sets the max_length of this ThumbnailPara.
 
-        截图最长边的尺寸。宽边尺寸按照该尺寸与原始视频像素等比缩放计算。  取值范围：[240,3840]  默认值：480  单位：像素 > 该参数和width/height选择使用，以width/height优先，若width/height都不等于0，则图片尺寸按width/height得出；反之，则图片尺寸按 max_length 得出。 > 若该参数和width/height都未选择，则取max_length默认为480 
+        截图最长边的尺寸。宽边尺寸按照该尺寸与原始视频像素等比缩放计算。   取值范围：[240,3840]  默认值：480  单位：像素  > 该参数和width/height选择使用，以width/height优先，若width/height都不等于0，则图片尺寸按width/height得出；反之，则图片尺寸按 max_length 得出。  > 若该参数和width/height都未选择，则按源片源宽高输出截图 
 
         :param max_length: The max_length of this ThumbnailPara.
         :type: int

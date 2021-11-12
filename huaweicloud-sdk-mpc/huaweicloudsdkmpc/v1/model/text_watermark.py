@@ -194,7 +194,7 @@ class TextWatermark:
     def font_name(self):
         """Gets the font_name of this TextWatermark.
 
-        字体，当前支持fzyouh、msyh 
+        字体，当前支持fzyouh 
 
         :return: The font_name of this TextWatermark.
         :rtype: str
@@ -205,7 +205,7 @@ class TextWatermark:
     def font_name(self, font_name):
         """Sets the font_name of this TextWatermark.
 
-        字体，当前支持fzyouh、msyh 
+        字体，当前支持fzyouh 
 
         :param font_name: The font_name of this TextWatermark.
         :type: str

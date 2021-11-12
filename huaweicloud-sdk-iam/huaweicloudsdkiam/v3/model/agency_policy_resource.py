@@ -43,7 +43,7 @@ class AgencyPolicyResource:
     def uri(self):
         """Gets the uri of this AgencyPolicyResource.
 
-        委托资源的URI，长度不超过128。格式为：/iam/agencies/委托ID。例：   ``` \"uri\": [\"/iam/agencies/07805acaba800fdd4fbdc00b8f888c7c\"] ```
+        委托资源的URI，长度不超过128。格式为：/iam/agencies/委托ID。例： ``` \"uri\": [\"/iam/agencies/07805acaba800fdd4fbdc00b8f888c7c\"] ```
 
         :return: The uri of this AgencyPolicyResource.
         :rtype: list[str]
@@ -54,7 +54,7 @@ class AgencyPolicyResource:
     def uri(self, uri):
         """Sets the uri of this AgencyPolicyResource.
 
-        委托资源的URI，长度不超过128。格式为：/iam/agencies/委托ID。例：   ``` \"uri\": [\"/iam/agencies/07805acaba800fdd4fbdc00b8f888c7c\"] ```
+        委托资源的URI，长度不超过128。格式为：/iam/agencies/委托ID。例： ``` \"uri\": [\"/iam/agencies/07805acaba800fdd4fbdc00b8f888c7c\"] ```
 
         :param uri: The uri of this AgencyPolicyResource.
         :type: list[str]

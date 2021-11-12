@@ -339,7 +339,7 @@ class RestAttendeeDTO:
     def is_auto_invite(self):
         """Gets the is_auto_invite of this RestAttendeeDTO.
 
-        会议开始时是否自动邀请该与会者。默认不自动邀请。 - 0: 不自动邀请 - 1: 自动邀请
+        会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 - 0: 不自动邀请 - 1: 自动邀请
 
         :return: The is_auto_invite of this RestAttendeeDTO.
         :rtype: int
@@ -350,7 +350,7 @@ class RestAttendeeDTO:
     def is_auto_invite(self, is_auto_invite):
         """Sets the is_auto_invite of this RestAttendeeDTO.
 
-        会议开始时是否自动邀请该与会者。默认不自动邀请。 - 0: 不自动邀请 - 1: 自动邀请
+        会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 - 0: 不自动邀请 - 1: 自动邀请
 
         :param is_auto_invite: The is_auto_invite of this RestAttendeeDTO.
         :type: int

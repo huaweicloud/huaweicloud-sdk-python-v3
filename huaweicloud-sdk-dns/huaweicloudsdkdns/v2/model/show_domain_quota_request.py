@@ -43,7 +43,7 @@ class ShowDomainQuotaRequest:
     def domain_id(self):
         """Gets the domain_id of this ShowDomainQuotaRequest.
 
-        账号ID。
+        租户ID。
 
         :return: The domain_id of this ShowDomainQuotaRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class ShowDomainQuotaRequest:
     def domain_id(self, domain_id):
         """Sets the domain_id of this ShowDomainQuotaRequest.
 
-        账号ID。
+        租户ID。
 
         :param domain_id: The domain_id of this ShowDomainQuotaRequest.
         :type: str

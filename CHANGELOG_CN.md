@@ -1,3 +1,235 @@
+# 3.0.68 2021-11-12
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListRangeQueryAomPromGet`
+    - `ListRangeQueryAomPromPost`
+    - `ListInstantQueryAomPromGet`
+    - `ListInstantQueryAomPromPost`
+    - `ListLabelValuesAomPromGet`
+    - `ListLabelsAomPromGet`
+    - `ListLabelsAomPromPost`
+    - `ListMetadataAomPromGet`
+    - `DeleteAlarmRules`
+    - `ListLogItems`
+    - `ListEvents`
+    - `CountEvents`
+    - `PushEvents`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateNode`新增请求参数`customSan`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateHttpsInfo`新增请求参数`force_redirect_https`
+
+### HuaweiCloud SDK CloudDeploy
+
+- _新增特性_
+  - 支持部署服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListAuditLogs`的响应参数名调整： `total_count` -> `total_record`
+
+### HuaweiCloud SDK DSC
+
+- _新增特性_
+  - 支持接口`ShowScanJobs`和`ShowScanJobResults`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateDocWatermark`新增请求参数`marked_file_password`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListGaussMySqlConfigurations`新增请求参数`offset`和`limit`
+  - 接口`ShowGaussMySqlProxy`新增响应参数`id`和`spec_code`
+  
+### HuaweiCloud SDK GES
+
+- _新增特性_
+  - 支持图引擎服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListProPricePlans`移除请求参数`sim_card_id`、`partner`、`package_type`、`sim_type`
+  - 接口`ListSimCards`移除请求参数`tag_id`
+  - 接口`ListSimPricePlans`移除请求参数`sim_price_plan_id`
+  - 接口`StopSimCard`和`ResetSimCard`移除请求参数`price_plan_list`
+  - 接口`ShowSimCard`和`ListSimCards`移除响应参数参数`sn`、`supply_code`、`bundle_id`、`test_type`
+  - 接口`StopSimCard`移除响应参数`sim_price_plan_list`
+  - 接口`ListSimPools`移除响应参数`order_id`
+  - 接口`ListSimPricePlans`移除响应参数`partner`、`partner_pid`
+
+### HuaweiCloud SDK IMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowJob`新增响应参数`results`
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListBandwidthDetail`、`ListUsersOfStream`新增请求参数`country`和`protocol`
+  - 接口`ListDomainTrafficDetail`、`ListDomainBandwidthPeak`、`ListDomainTrafficSummary`新增请求参数`protocol`
+  - 接口`ListTranscodeData`新增请求参数`stream`
+  - 接口`ListHistoryStreams`新增请求参数`stream`、`start_time`、`end_time`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowStructTemplate`
+    - `CreateStructTemplate`
+    - `UpdateStructTemplate`
+    - `DeleteStructTemplate`
+    - `ShowAomMappingRules`
+    - `CreateAomMappingRules`
+    - `UpdateAomMappingRules`
+    - `DeleteAomMappingRules`
+    - `ShowAomMappingRule`
+    - `ListNotificationTopics`
+    - `CreateSqlAlarmRule`
+    - `UpdateSqlAlarmRule`
+    - `ListSqlAlarmRules`
+    - `DeleteSqlAlarmRule`
+    - `CreateKeywordsAlarmRule`
+    - `UpdateKeywordsAlarmRule`
+    - `ListKeywordsAlarmRules`
+    - `DeleteKeywordsAlarmRule`
+    - `ListActiveOrHistoryAlarms`
+    - `DeleteActiveAlarms`
+    - `ListCharts`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateMeeting`移除请求参数`conferenceType`
+  - 接口`CreateRecurringMeeting`新增响应参数`cycleSubConfID`
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateEditingJob`请求参数名称调整： `const` -> `consts`
+  - 接口`CreateEditingJob`移除请求参数`index`，新增请求参数`overlay_input`、`const`、`mix`
+  - 接口`ListEditingJob`新增响应参数`output`
+  - 接口`CreateTranscodingTask`新增请求参数`hls_init_count`和`hls_init_interval`, 请求参数`video_enhance`新增可选值`EFFICIENCY`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口（V2）`GetJobExeListNew`新增请求参数`job_id`、`user`、`queue`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeGeneralTable`新增响应参数`confidence`
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 支持接口`CreateSystemIssueV4`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListIrs`新增响应参数`sequence`
+  - 接口`BatchUpdateIrs`新增请求参数`status_id`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListSlowLogsNew`、`ListErrorLogsNew`、`UpgradeDbVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VAS
+
+- _新增特性_
+  - 支持视频分析服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 支持接口（V3）: `AddVpcExtendCidr`、`RemoveVpcExtendCidr`、`ListVpcs`、`ShowVpc`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.0.67 2021-10-25
 
 ### HuaweiCloud SDK AOM

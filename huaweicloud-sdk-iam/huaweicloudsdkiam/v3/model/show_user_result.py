@@ -427,7 +427,7 @@ class ShowUserResult:
     def pwd_strength(self):
         """Gets the pwd_strength of this ShowUserResult.
 
-        IAM用户密码强度。结果为low/middle/high/none，分别表示密码强度低/中/高/无。
+        IAM用户密码强度。结果为Low/Middle/High/None，分别表示密码强度低/中/高/无。
 
         :return: The pwd_strength of this ShowUserResult.
         :rtype: str
@@ -438,7 +438,7 @@ class ShowUserResult:
     def pwd_strength(self, pwd_strength):
         """Sets the pwd_strength of this ShowUserResult.
 
-        IAM用户密码强度。结果为low/middle/high/none，分别表示密码强度低/中/高/无。
+        IAM用户密码强度。结果为Low/Middle/High/None，分别表示密码强度低/中/高/无。
 
         :param pwd_strength: The pwd_strength of this ShowUserResult.
         :type: str

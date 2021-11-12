@@ -144,7 +144,7 @@ class ApplyIndividualRealnameAuthsReq:
     def verified_file_url(self):
         """Gets the verified_file_url of this ApplyIndividualRealnameAuthsReq.
 
-        个人证件认证时证件附件的文件URL，该URL地址必须按照顺序填写。 以身份证举例，譬如身份证人像面文件名称是abc023，国徽面是def004，个人手持身份证人像面是gh007，那么这个地方需要按照 abc023 def004 gh007 的顺序填写URL（文件名称区分大小写）。 个人银行卡认证时直接上传一张个人扫脸的图片附件即可。证件附件目前仅仅支持jpg、jpeg、bmp、png、gif、pdf格式，单个文件最大不超过10M。这个URL是相对URL，不需要包含桶名和download目录，只要包含download目录下的子目录和对应文件名称即可。举例如下： 如果上传的证件附件在桶中的位置是： https://bucketname.obs.Endpoint.myhuaweicloud.com/download/abc023.jpg，该字段填写abc023.jpg； 如果上传的证件附件在桶中的位置是： https://bucketname.obs.Endpoint.myhuaweicloud.com/download/test/abc023.jpg，该字段填写test/abc023.jpg。
+        个人证件认证时证件附件的文件URL，该URL地址必须按照顺序填写。以身份证举例，譬如身份证人像面文件名称是abc023，国徽面是def004，个人手持身份证人像面是gh007，那么这个地方需要按照 abc023 def004 gh007 的顺序填写URL（文件名称区分大小写）。 个人银行卡认证时直接上传一张个人扫脸的图片附件即可。证件附件目前仅仅支持jpg、jpeg、bmp、png、gif、pdf格式，单个文件最大不超过10M。这个URL是相对URL，不需要包含桶名和download目录，只要包含download目录下的子目录和对应文件名称即可。举例如下：如果上传的证件附件在桶中的位置是：https://bucketname.obs.Endpoint.myhuaweicloud.com/download/abc023.jpg，该字段填写abc023.jpg； 如果上传的证件附件在桶中的位置是：https://bucketname.obs.Endpoint.myhuaweicloud.com/download/test/abc023.jpg，该字段填写test/abc023.jpg。
 
         :return: The verified_file_url of this ApplyIndividualRealnameAuthsReq.
         :rtype: list[str]
@@ -155,7 +155,7 @@ class ApplyIndividualRealnameAuthsReq:
     def verified_file_url(self, verified_file_url):
         """Sets the verified_file_url of this ApplyIndividualRealnameAuthsReq.
 
-        个人证件认证时证件附件的文件URL，该URL地址必须按照顺序填写。 以身份证举例，譬如身份证人像面文件名称是abc023，国徽面是def004，个人手持身份证人像面是gh007，那么这个地方需要按照 abc023 def004 gh007 的顺序填写URL（文件名称区分大小写）。 个人银行卡认证时直接上传一张个人扫脸的图片附件即可。证件附件目前仅仅支持jpg、jpeg、bmp、png、gif、pdf格式，单个文件最大不超过10M。这个URL是相对URL，不需要包含桶名和download目录，只要包含download目录下的子目录和对应文件名称即可。举例如下： 如果上传的证件附件在桶中的位置是： https://bucketname.obs.Endpoint.myhuaweicloud.com/download/abc023.jpg，该字段填写abc023.jpg； 如果上传的证件附件在桶中的位置是： https://bucketname.obs.Endpoint.myhuaweicloud.com/download/test/abc023.jpg，该字段填写test/abc023.jpg。
+        个人证件认证时证件附件的文件URL，该URL地址必须按照顺序填写。以身份证举例，譬如身份证人像面文件名称是abc023，国徽面是def004，个人手持身份证人像面是gh007，那么这个地方需要按照 abc023 def004 gh007 的顺序填写URL（文件名称区分大小写）。 个人银行卡认证时直接上传一张个人扫脸的图片附件即可。证件附件目前仅仅支持jpg、jpeg、bmp、png、gif、pdf格式，单个文件最大不超过10M。这个URL是相对URL，不需要包含桶名和download目录，只要包含download目录下的子目录和对应文件名称即可。举例如下：如果上传的证件附件在桶中的位置是：https://bucketname.obs.Endpoint.myhuaweicloud.com/download/abc023.jpg，该字段填写abc023.jpg； 如果上传的证件附件在桶中的位置是：https://bucketname.obs.Endpoint.myhuaweicloud.com/download/test/abc023.jpg，该字段填写test/abc023.jpg。
 
         :param verified_file_url: The verified_file_url of this ApplyIndividualRealnameAuthsReq.
         :type: list[str]

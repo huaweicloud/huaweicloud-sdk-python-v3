@@ -49,7 +49,7 @@ class IdentityToken:
     def id(self):
         """Gets the id of this IdentityToken.
 
-        token的ID。与请求头中的X-Auth-Token填写其一即可，若都填写，优先校验X-Auth-Token。
+        token的ID。与请求头中的X-Auth-Token含义相同，待废弃。
 
         :return: The id of this IdentityToken.
         :rtype: str
@@ -60,7 +60,7 @@ class IdentityToken:
     def id(self, id):
         """Sets the id of this IdentityToken.
 
-        token的ID。与请求头中的X-Auth-Token填写其一即可，若都填写，优先校验X-Auth-Token。
+        token的ID。与请求头中的X-Auth-Token含义相同，待废弃。
 
         :param id: The id of this IdentityToken.
         :type: str
