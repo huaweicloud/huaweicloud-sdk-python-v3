@@ -209,6 +209,8 @@ from huaweicloudsdkdds.v3.model.switch_ssl_response import SwitchSslResponse
 from huaweicloudsdkdds.v3.model.switchover_replica_set_request import SwitchoverReplicaSetRequest
 from huaweicloudsdkdds.v3.model.switchover_replica_set_response import SwitchoverReplicaSetResponse
 from huaweicloudsdkdds.v3.model.tag_item import TagItem
+from huaweicloudsdkdds.v3.model.tag_response import TagResponse
+from huaweicloudsdkdds.v3.model.tag_with_key_value import TagWithKeyValue
 from huaweicloudsdkdds.v3.model.target import Target
 from huaweicloudsdkdds.v3.model.update_client_network_request import UpdateClientNetworkRequest
 from huaweicloudsdkdds.v3.model.update_client_network_response import UpdateClientNetworkResponse

@@ -23,48 +23,44 @@ class ListEnvironmentVariablesV2Request:
 
     openapi_types = {
         'instance_id': 'str',
-        'group_id': 'str',
-        'env_id': 'str',
-        'variable_name': 'str',
         'offset': 'int',
         'limit': 'int',
+        'env_id': 'str',
+        'variable_name': 'str',
         'precise_search': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
-        'group_id': 'group_id',
-        'env_id': 'env_id',
-        'variable_name': 'variable_name',
         'offset': 'offset',
         'limit': 'limit',
+        'env_id': 'env_id',
+        'variable_name': 'variable_name',
         'precise_search': 'precise_search'
     }
 
-    def __init__(self, instance_id=None, group_id=None, env_id=None, variable_name=None, offset=None, limit=None, precise_search=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, env_id=None, variable_name=None, precise_search=None):
         """ListEnvironmentVariablesV2Request - a model defined in huaweicloud sdk"""
         
         
 
         self._instance_id = None
-        self._group_id = None
-        self._env_id = None
-        self._variable_name = None
         self._offset = None
         self._limit = None
+        self._env_id = None
+        self._variable_name = None
         self._precise_search = None
         self.discriminator = None
 
         self.instance_id = instance_id
-        self.group_id = group_id
-        if env_id is not None:
-            self.env_id = env_id
-        if variable_name is not None:
-            self.variable_name = variable_name
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if env_id is not None:
+            self.env_id = env_id
+        if variable_name is not None:
+            self.variable_name = variable_name
         if precise_search is not None:
             self.precise_search = precise_search
 
@@ -72,7 +68,7 @@ class ListEnvironmentVariablesV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListEnvironmentVariablesV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this ListEnvironmentVariablesV2Request.
         :rtype: str
@@ -83,78 +79,12 @@ class ListEnvironmentVariablesV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListEnvironmentVariablesV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this ListEnvironmentVariablesV2Request.
         :type: str
         """
         self._instance_id = instance_id
-
-    @property
-    def group_id(self):
-        """Gets the group_id of this ListEnvironmentVariablesV2Request.
-
-        API分组编号
-
-        :return: The group_id of this ListEnvironmentVariablesV2Request.
-        :rtype: str
-        """
-        return self._group_id
-
-    @group_id.setter
-    def group_id(self, group_id):
-        """Sets the group_id of this ListEnvironmentVariablesV2Request.
-
-        API分组编号
-
-        :param group_id: The group_id of this ListEnvironmentVariablesV2Request.
-        :type: str
-        """
-        self._group_id = group_id
-
-    @property
-    def env_id(self):
-        """Gets the env_id of this ListEnvironmentVariablesV2Request.
-
-        环境编号
-
-        :return: The env_id of this ListEnvironmentVariablesV2Request.
-        :rtype: str
-        """
-        return self._env_id
-
-    @env_id.setter
-    def env_id(self, env_id):
-        """Sets the env_id of this ListEnvironmentVariablesV2Request.
-
-        环境编号
-
-        :param env_id: The env_id of this ListEnvironmentVariablesV2Request.
-        :type: str
-        """
-        self._env_id = env_id
-
-    @property
-    def variable_name(self):
-        """Gets the variable_name of this ListEnvironmentVariablesV2Request.
-
-        变量名
-
-        :return: The variable_name of this ListEnvironmentVariablesV2Request.
-        :rtype: str
-        """
-        return self._variable_name
-
-    @variable_name.setter
-    def variable_name(self, variable_name):
-        """Sets the variable_name of this ListEnvironmentVariablesV2Request.
-
-        变量名
-
-        :param variable_name: The variable_name of this ListEnvironmentVariablesV2Request.
-        :type: str
-        """
-        self._variable_name = variable_name
 
     @property
     def offset(self):
@@ -199,6 +129,50 @@ class ListEnvironmentVariablesV2Request:
         :type: int
         """
         self._limit = limit
+
+    @property
+    def env_id(self):
+        """Gets the env_id of this ListEnvironmentVariablesV2Request.
+
+        环境编号
+
+        :return: The env_id of this ListEnvironmentVariablesV2Request.
+        :rtype: str
+        """
+        return self._env_id
+
+    @env_id.setter
+    def env_id(self, env_id):
+        """Sets the env_id of this ListEnvironmentVariablesV2Request.
+
+        环境编号
+
+        :param env_id: The env_id of this ListEnvironmentVariablesV2Request.
+        :type: str
+        """
+        self._env_id = env_id
+
+    @property
+    def variable_name(self):
+        """Gets the variable_name of this ListEnvironmentVariablesV2Request.
+
+        变量名
+
+        :return: The variable_name of this ListEnvironmentVariablesV2Request.
+        :rtype: str
+        """
+        return self._variable_name
+
+    @variable_name.setter
+    def variable_name(self, variable_name):
+        """Sets the variable_name of this ListEnvironmentVariablesV2Request.
+
+        变量名
+
+        :param variable_name: The variable_name of this ListEnvironmentVariablesV2Request.
+        :type: str
+        """
+        self._variable_name = variable_name
 
     @property
     def precise_search(self):

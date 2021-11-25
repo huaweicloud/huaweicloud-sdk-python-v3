@@ -53,8 +53,7 @@ class CloudWafServer:
         self.back_protocol = back_protocol
         self.address = address
         self.port = port
-        if type is not None:
-            self.type = type
+        self.type = type
 
     @property
     def front_protocol(self):

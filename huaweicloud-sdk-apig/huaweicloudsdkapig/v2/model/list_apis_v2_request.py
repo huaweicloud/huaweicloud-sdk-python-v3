@@ -23,6 +23,8 @@ class ListApisV2Request:
 
     openapi_types = {
         'instance_id': 'str',
+        'offset': 'int',
+        'limit': 'int',
         'id': 'str',
         'name': 'str',
         'group_id': 'str',
@@ -32,13 +34,13 @@ class ListApisV2Request:
         'auth_type': 'str',
         'env_id': 'str',
         'type': 'int',
-        'offset': 'int',
-        'limit': 'int',
         'precise_search': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
+        'offset': 'offset',
+        'limit': 'limit',
         'id': 'id',
         'name': 'name',
         'group_id': 'group_id',
@@ -48,17 +50,17 @@ class ListApisV2Request:
         'auth_type': 'auth_type',
         'env_id': 'env_id',
         'type': 'type',
-        'offset': 'offset',
-        'limit': 'limit',
         'precise_search': 'precise_search'
     }
 
-    def __init__(self, instance_id=None, id=None, name=None, group_id=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, env_id=None, type=None, offset=None, limit=None, precise_search=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, group_id=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, env_id=None, type=None, precise_search=None):
         """ListApisV2Request - a model defined in huaweicloud sdk"""
         
         
 
         self._instance_id = None
+        self._offset = None
+        self._limit = None
         self._id = None
         self._name = None
         self._group_id = None
@@ -68,12 +70,14 @@ class ListApisV2Request:
         self._auth_type = None
         self._env_id = None
         self._type = None
-        self._offset = None
-        self._limit = None
         self._precise_search = None
         self.discriminator = None
 
         self.instance_id = instance_id
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
         if id is not None:
             self.id = id
         if name is not None:
@@ -92,10 +96,6 @@ class ListApisV2Request:
             self.env_id = env_id
         if type is not None:
             self.type = type
-        if offset is not None:
-            self.offset = offset
-        if limit is not None:
-            self.limit = limit
         if precise_search is not None:
             self.precise_search = precise_search
 
@@ -103,7 +103,7 @@ class ListApisV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListApisV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this ListApisV2Request.
         :rtype: str
@@ -114,12 +114,56 @@ class ListApisV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListApisV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this ListApisV2Request.
         :type: str
         """
         self._instance_id = instance_id
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListApisV2Request.
+
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+
+        :return: The offset of this ListApisV2Request.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListApisV2Request.
+
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+
+        :param offset: The offset of this ListApisV2Request.
+        :type: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListApisV2Request.
+
+        每页显示的条目数量
+
+        :return: The limit of this ListApisV2Request.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListApisV2Request.
+
+        每页显示的条目数量
+
+        :param limit: The limit of this ListApisV2Request.
+        :type: int
+        """
+        self._limit = limit
 
     @property
     def id(self):
@@ -318,50 +362,6 @@ class ListApisV2Request:
         :type: int
         """
         self._type = type
-
-    @property
-    def offset(self):
-        """Gets the offset of this ListApisV2Request.
-
-        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
-
-        :return: The offset of this ListApisV2Request.
-        :rtype: int
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this ListApisV2Request.
-
-        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
-
-        :param offset: The offset of this ListApisV2Request.
-        :type: int
-        """
-        self._offset = offset
-
-    @property
-    def limit(self):
-        """Gets the limit of this ListApisV2Request.
-
-        每页显示的条目数量
-
-        :return: The limit of this ListApisV2Request.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListApisV2Request.
-
-        每页显示的条目数量
-
-        :param limit: The limit of this ListApisV2Request.
-        :type: int
-        """
-        self._limit = limit
 
     @property
     def precise_search(self):

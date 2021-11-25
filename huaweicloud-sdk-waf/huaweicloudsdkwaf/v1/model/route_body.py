@@ -22,28 +22,55 @@ class RouteBody:
     sensitive_list = []
 
     openapi_types = {
+        'cname': 'str',
         'name': 'str',
         'servers': 'list[RouteServerBody]'
     }
 
     attribute_map = {
+        'cname': 'cname',
         'name': 'name',
         'servers': 'servers'
     }
 
-    def __init__(self, name=None, servers=None):
+    def __init__(self, cname=None, name=None, servers=None):
         """RouteBody - a model defined in huaweicloud sdk"""
         
         
 
+        self._cname = None
         self._name = None
         self._servers = None
         self.discriminator = None
 
+        if cname is not None:
+            self.cname = cname
         if name is not None:
             self.name = name
         if servers is not None:
             self.servers = servers
+
+    @property
+    def cname(self):
+        """Gets the cname of this RouteBody.
+
+        cname后缀
+
+        :return: The cname of this RouteBody.
+        :rtype: str
+        """
+        return self._cname
+
+    @cname.setter
+    def cname(self, cname):
+        """Sets the cname of this RouteBody.
+
+        cname后缀
+
+        :param cname: The cname of this RouteBody.
+        :type: str
+        """
+        self._cname = cname
 
     @property
     def name(self):

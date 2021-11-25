@@ -100,7 +100,7 @@ class ApplyIndividualRealnameAuthsReq:
     def identify_type(self):
         """Gets the identify_type of this ApplyIndividualRealnameAuthsReq.
 
-        认证方案： 0：个人证件认证 4：个人银行卡认证。这种方式下，仅仅需要上传一张个人扫脸的图片附件即可。
+        认证方案： 0：个人证件认证 4：个人银行卡认证
 
         :return: The identify_type of this ApplyIndividualRealnameAuthsReq.
         :rtype: int
@@ -111,7 +111,7 @@ class ApplyIndividualRealnameAuthsReq:
     def identify_type(self, identify_type):
         """Sets the identify_type of this ApplyIndividualRealnameAuthsReq.
 
-        认证方案： 0：个人证件认证 4：个人银行卡认证。这种方式下，仅仅需要上传一张个人扫脸的图片附件即可。
+        认证方案： 0：个人证件认证 4：个人银行卡认证
 
         :param identify_type: The identify_type of this ApplyIndividualRealnameAuthsReq.
         :type: int

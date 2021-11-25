@@ -48,7 +48,7 @@ class DeleteValueListRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this DeleteValueListRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this DeleteValueListRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class DeleteValueListRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this DeleteValueListRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this DeleteValueListRequest.
         :type: str
@@ -70,7 +70,7 @@ class DeleteValueListRequest:
     def valuelistid(self):
         """Gets the valuelistid of this DeleteValueListRequest.
 
-        引用表id
+        引用表id，从查询引用表列表接口获取https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=WAF&api=ListValueList
 
         :return: The valuelistid of this DeleteValueListRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class DeleteValueListRequest:
     def valuelistid(self, valuelistid):
         """Sets the valuelistid of this DeleteValueListRequest.
 
-        引用表id
+        引用表id，从查询引用表列表接口获取https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=WAF&api=ListValueList
 
         :param valuelistid: The valuelistid of this DeleteValueListRequest.
         :type: str

@@ -696,6 +696,71 @@ class GesClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def expand_graph(self, request):
+        """扩副本(2.2.23)
+
+        扩副本能力允许动态扩容多个从节点，扩容的从节点可以处理读请求，从而提高读请求性能。 >一万边和百亿边规格的图暂不支持扩副本。
+
+        :param ExpandGraphRequest request
+        :return: ExpandGraphResponse
+        """
+        return self.expand_graph_with_http_info(request)
+
+    def expand_graph_with_http_info(self, request):
+        """扩副本(2.2.23)
+
+        扩副本能力允许动态扩容多个从节点，扩容的从节点可以处理读请求，从而提高读请求性能。 >一万边和百亿边规格的图暂不支持扩副本。
+
+        :param ExpandGraphRequest request
+        :return: ExpandGraphResponse
+        """
+
+        all_params = ['graph_id', 'expand_graph_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'graph_id' in local_var_params:
+            path_params['graph_id'] = local_var_params['graph_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/graphs/{graph_id}/expand',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ExpandGraphResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def export_graph(self, request):
         """导出图(1.0.5)
 
@@ -1289,6 +1354,71 @@ class GesClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def resize_graph(self, request):
+        """扩容图(2.2.21)
+
+        扩容图规格。
+
+        :param ResizeGraphRequest request
+        :return: ResizeGraphResponse
+        """
+        return self.resize_graph_with_http_info(request)
+
+    def resize_graph_with_http_info(self, request):
+        """扩容图(2.2.21)
+
+        扩容图规格。
+
+        :param ResizeGraphRequest request
+        :return: ResizeGraphResponse
+        """
+
+        all_params = ['graph_id', 'resize_graph_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'graph_id' in local_var_params:
+            path_params['graph_id'] = local_var_params['graph_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/graphs/{graph_id}/resize',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResizeGraphResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def restart_graph(self, request):
         """强制重启图(2.2.21)
 
@@ -1675,6 +1805,69 @@ class GesClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpgradeGraphResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def upload_from_obs(self, request):
+        """从OBS导入元数据(1.0.0)
+
+        从OBS导入元数据。
+
+        :param UploadFromObsRequest request
+        :return: UploadFromObsResponse
+        """
+        return self.upload_from_obs_with_http_info(request)
+
+    def upload_from_obs_with_http_info(self, request):
+        """从OBS导入元数据(1.0.0)
+
+        从OBS导入元数据。
+
+        :param UploadFromObsRequest request
+        :return: UploadFromObsResponse
+        """
+
+        all_params = ['upload_from_obs_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/graphs/metadata/upload_from_obs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UploadFromObsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

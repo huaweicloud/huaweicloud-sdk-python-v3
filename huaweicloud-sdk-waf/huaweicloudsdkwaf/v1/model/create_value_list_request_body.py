@@ -48,8 +48,7 @@ class CreateValueListRequestBody:
 
         self.name = name
         self.type = type
-        if values is not None:
-            self.values = values
+        self.values = values
         if description is not None:
             self.description = description
 
@@ -57,7 +56,7 @@ class CreateValueListRequestBody:
     def name(self):
         """Gets the name of this CreateValueListRequestBody.
 
-        引用表名称，2-32位字符串组成
+        引用表名称，只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64
 
         :return: The name of this CreateValueListRequestBody.
         :rtype: str
@@ -68,7 +67,7 @@ class CreateValueListRequestBody:
     def name(self, name):
         """Sets the name of this CreateValueListRequestBody.
 
-        引用表名称，2-32位字符串组成
+        引用表名称，只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64
 
         :param name: The name of this CreateValueListRequestBody.
         :type: str

@@ -23,7 +23,7 @@ class CreateEnvironmentV2Request:
 
     openapi_types = {
         'instance_id': 'str',
-        'body': 'EnvReq'
+        'body': 'EnvCreate'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class CreateEnvironmentV2Request:
     def instance_id(self):
         """Gets the instance_id of this CreateEnvironmentV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this CreateEnvironmentV2Request.
         :rtype: str
@@ -59,7 +59,7 @@ class CreateEnvironmentV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreateEnvironmentV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this CreateEnvironmentV2Request.
         :type: str
@@ -72,7 +72,7 @@ class CreateEnvironmentV2Request:
 
 
         :return: The body of this CreateEnvironmentV2Request.
-        :rtype: EnvReq
+        :rtype: EnvCreate
         """
         return self._body
 
@@ -82,7 +82,7 @@ class CreateEnvironmentV2Request:
 
 
         :param body: The body of this CreateEnvironmentV2Request.
-        :type: EnvReq
+        :type: EnvCreate
         """
         self._body = body
 

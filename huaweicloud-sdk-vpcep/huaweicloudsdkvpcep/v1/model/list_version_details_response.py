@@ -22,7 +22,7 @@ class ListVersionDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'versions': 'list[Versions]'
+        'versions': 'list[Version]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ListVersionDetailsResponse(SdkResponse):
         VPC终端节点版本信息列表。
 
         :return: The versions of this ListVersionDetailsResponse.
-        :rtype: list[Versions]
+        :rtype: list[Version]
         """
         return self._versions
 
@@ -58,7 +58,7 @@ class ListVersionDetailsResponse(SdkResponse):
         VPC终端节点版本信息列表。
 
         :param versions: The versions of this ListVersionDetailsResponse.
-        :type: list[Versions]
+        :type: list[Version]
         """
         self._versions = versions
 

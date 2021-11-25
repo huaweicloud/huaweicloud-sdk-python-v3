@@ -24,7 +24,7 @@ class ResettingAppSecretV2Request:
     openapi_types = {
         'instance_id': 'str',
         'app_id': 'str',
-        'body': 'AppSecretReq'
+        'body': 'AppResetCreate'
     }
 
     attribute_map = {
@@ -52,7 +52,7 @@ class ResettingAppSecretV2Request:
     def instance_id(self):
         """Gets the instance_id of this ResettingAppSecretV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this ResettingAppSecretV2Request.
         :rtype: str
@@ -63,7 +63,7 @@ class ResettingAppSecretV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ResettingAppSecretV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this ResettingAppSecretV2Request.
         :type: str
@@ -74,7 +74,7 @@ class ResettingAppSecretV2Request:
     def app_id(self):
         """Gets the app_id of this ResettingAppSecretV2Request.
 
-        APP的编号，可通过查询APP列表获取
+        应用编号
 
         :return: The app_id of this ResettingAppSecretV2Request.
         :rtype: str
@@ -85,7 +85,7 @@ class ResettingAppSecretV2Request:
     def app_id(self, app_id):
         """Sets the app_id of this ResettingAppSecretV2Request.
 
-        APP的编号，可通过查询APP列表获取
+        应用编号
 
         :param app_id: The app_id of this ResettingAppSecretV2Request.
         :type: str
@@ -98,7 +98,7 @@ class ResettingAppSecretV2Request:
 
 
         :return: The body of this ResettingAppSecretV2Request.
-        :rtype: AppSecretReq
+        :rtype: AppResetCreate
         """
         return self._body
 
@@ -108,7 +108,7 @@ class ResettingAppSecretV2Request:
 
 
         :param body: The body of this ResettingAppSecretV2Request.
-        :type: AppSecretReq
+        :type: AppResetCreate
         """
         self._body = body
 

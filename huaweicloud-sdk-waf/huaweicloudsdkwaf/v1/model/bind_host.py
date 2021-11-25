@@ -103,7 +103,7 @@ class BindHost:
     def waf_type(self):
         """Gets the waf_type of this BindHost.
 
-        域名对应模式：cloud/premium
+        域名对应模式：cloud（云模式）/premium（独享模式）
 
         :return: The waf_type of this BindHost.
         :rtype: str
@@ -114,7 +114,7 @@ class BindHost:
     def waf_type(self, waf_type):
         """Sets the waf_type of this BindHost.
 
-        域名对应模式：cloud/premium
+        域名对应模式：cloud（云模式）/premium（独享模式）
 
         :param waf_type: The waf_type of this BindHost.
         :type: str
@@ -125,7 +125,7 @@ class BindHost:
     def mode(self):
         """Gets the mode of this BindHost.
 
-        （仅独享模式）特殊域名模式
+        仅独享模式涉及特殊域名模式
 
         :return: The mode of this BindHost.
         :rtype: str
@@ -136,7 +136,7 @@ class BindHost:
     def mode(self, mode):
         """Sets the mode of this BindHost.
 
-        （仅独享模式）特殊域名模式
+        仅独享模式涉及特殊域名模式
 
         :param mode: The mode of this BindHost.
         :type: str

@@ -25,21 +25,17 @@ class DeleteValueListResponse(SdkResponse):
         'id': 'str',
         'name': 'str',
         'type': 'str',
-        'description': 'str',
-        'timestamp': 'int',
-        'values': 'list[str]'
+        'timestamp': 'int'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
         'type': 'type',
-        'description': 'description',
-        'timestamp': 'timestamp',
-        'values': 'values'
+        'timestamp': 'timestamp'
     }
 
-    def __init__(self, id=None, name=None, type=None, description=None, timestamp=None, values=None):
+    def __init__(self, id=None, name=None, type=None, timestamp=None):
         """DeleteValueListResponse - a model defined in huaweicloud sdk"""
         
         super(DeleteValueListResponse, self).__init__()
@@ -47,9 +43,7 @@ class DeleteValueListResponse(SdkResponse):
         self._id = None
         self._name = None
         self._type = None
-        self._description = None
         self._timestamp = None
-        self._values = None
         self.discriminator = None
 
         if id is not None:
@@ -58,12 +52,8 @@ class DeleteValueListResponse(SdkResponse):
             self.name = name
         if type is not None:
             self.type = type
-        if description is not None:
-            self.description = description
         if timestamp is not None:
             self.timestamp = timestamp
-        if values is not None:
-            self.values = values
 
     @property
     def id(self):
@@ -132,32 +122,10 @@ class DeleteValueListResponse(SdkResponse):
         self._type = type
 
     @property
-    def description(self):
-        """Gets the description of this DeleteValueListResponse.
-
-        引用表描述
-
-        :return: The description of this DeleteValueListResponse.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this DeleteValueListResponse.
-
-        引用表描述
-
-        :param description: The description of this DeleteValueListResponse.
-        :type: str
-        """
-        self._description = description
-
-    @property
     def timestamp(self):
         """Gets the timestamp of this DeleteValueListResponse.
 
-        引用表时间戳
+        删除引用表的时间，时间为13位毫秒时间戳
 
         :return: The timestamp of this DeleteValueListResponse.
         :rtype: int
@@ -168,34 +136,12 @@ class DeleteValueListResponse(SdkResponse):
     def timestamp(self, timestamp):
         """Sets the timestamp of this DeleteValueListResponse.
 
-        引用表时间戳
+        删除引用表的时间，时间为13位毫秒时间戳
 
         :param timestamp: The timestamp of this DeleteValueListResponse.
         :type: int
         """
         self._timestamp = timestamp
-
-    @property
-    def values(self):
-        """Gets the values of this DeleteValueListResponse.
-
-        引用表的值
-
-        :return: The values of this DeleteValueListResponse.
-        :rtype: list[str]
-        """
-        return self._values
-
-    @values.setter
-    def values(self, values):
-        """Sets the values of this DeleteValueListResponse.
-
-        引用表的值
-
-        :param values: The values of this DeleteValueListResponse.
-        :type: list[str]
-        """
-        self._values = values
 
     def to_dict(self):
         """Returns the model properties as a dict"""

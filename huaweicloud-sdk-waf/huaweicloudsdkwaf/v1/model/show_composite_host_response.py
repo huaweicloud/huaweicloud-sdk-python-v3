@@ -182,7 +182,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def protect_status(self):
         """Gets the protect_status of this ShowCompositeHostResponse.
 
-        防护状态
+        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :return: The protect_status of this ShowCompositeHostResponse.
         :rtype: int
@@ -193,7 +193,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def protect_status(self, protect_status):
         """Sets the protect_status of this ShowCompositeHostResponse.
 
-        防护状态
+        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :param protect_status: The protect_status of this ShowCompositeHostResponse.
         :type: int
@@ -270,7 +270,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def paid_type(self):
         """Gets the paid_type of this ShowCompositeHostResponse.
 
-        付费模式
+        套餐付费模式，目前只支持prePaid预付款模式
 
         :return: The paid_type of this ShowCompositeHostResponse.
         :rtype: str
@@ -281,7 +281,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def paid_type(self, paid_type):
         """Sets the paid_type of this ShowCompositeHostResponse.
 
-        付费模式
+        套餐付费模式，目前只支持prePaid预付款模式
 
         :param paid_type: The paid_type of this ShowCompositeHostResponse.
         :type: str

@@ -24,7 +24,7 @@ class ListLogItemsResponse(SdkResponse):
     openapi_types = {
         'error_code': 'str',
         'error_message': 'str',
-        'result': 'ResultDatasDetail'
+        'result': 'str'
     }
 
     attribute_map = {
@@ -98,9 +98,10 @@ class ListLogItemsResponse(SdkResponse):
     def result(self):
         """Gets the result of this ListLogItemsResponse.
 
+        查询结果元数据信息，包括返回总数及结果。
 
         :return: The result of this ListLogItemsResponse.
-        :rtype: ResultDatasDetail
+        :rtype: str
         """
         return self._result
 
@@ -108,9 +109,10 @@ class ListLogItemsResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this ListLogItemsResponse.
 
+        查询结果元数据信息，包括返回总数及结果。
 
         :param result: The result of this ListLogItemsResponse.
-        :type: ResultDatasDetail
+        :type: str
         """
         self._result = result
 

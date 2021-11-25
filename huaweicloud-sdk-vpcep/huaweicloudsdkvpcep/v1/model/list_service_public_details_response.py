@@ -22,7 +22,7 @@ class ListServicePublicDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'endpoint_services': 'list[EndpointServiceS]',
+        'endpoint_services': 'list[EndpointService]',
         'total_count': 'int'
     }
 
@@ -52,7 +52,7 @@ class ListServicePublicDetailsResponse(SdkResponse):
         终端节点服务列表。
 
         :return: The endpoint_services of this ListServicePublicDetailsResponse.
-        :rtype: list[EndpointServiceS]
+        :rtype: list[EndpointService]
         """
         return self._endpoint_services
 
@@ -63,7 +63,7 @@ class ListServicePublicDetailsResponse(SdkResponse):
         终端节点服务列表。
 
         :param endpoint_services: The endpoint_services of this ListServicePublicDetailsResponse.
-        :type: list[EndpointServiceS]
+        :type: list[EndpointService]
         """
         self._endpoint_services = endpoint_services
 

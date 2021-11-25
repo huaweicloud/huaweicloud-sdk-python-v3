@@ -23,35 +23,35 @@ class DisassociateDomainV2Request:
 
     openapi_types = {
         'instance_id': 'str',
-        'domain_id': 'str',
-        'group_id': 'str'
+        'group_id': 'str',
+        'domain_id': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
-        'domain_id': 'domain_id',
-        'group_id': 'group_id'
+        'group_id': 'group_id',
+        'domain_id': 'domain_id'
     }
 
-    def __init__(self, instance_id=None, domain_id=None, group_id=None):
+    def __init__(self, instance_id=None, group_id=None, domain_id=None):
         """DisassociateDomainV2Request - a model defined in huaweicloud sdk"""
         
         
 
         self._instance_id = None
-        self._domain_id = None
         self._group_id = None
+        self._domain_id = None
         self.discriminator = None
 
         self.instance_id = instance_id
-        self.domain_id = domain_id
         self.group_id = group_id
+        self.domain_id = domain_id
 
     @property
     def instance_id(self):
         """Gets the instance_id of this DisassociateDomainV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this DisassociateDomainV2Request.
         :rtype: str
@@ -62,34 +62,12 @@ class DisassociateDomainV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DisassociateDomainV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this DisassociateDomainV2Request.
         :type: str
         """
         self._instance_id = instance_id
-
-    @property
-    def domain_id(self):
-        """Gets the domain_id of this DisassociateDomainV2Request.
-
-        域名的编号
-
-        :return: The domain_id of this DisassociateDomainV2Request.
-        :rtype: str
-        """
-        return self._domain_id
-
-    @domain_id.setter
-    def domain_id(self, domain_id):
-        """Sets the domain_id of this DisassociateDomainV2Request.
-
-        域名的编号
-
-        :param domain_id: The domain_id of this DisassociateDomainV2Request.
-        :type: str
-        """
-        self._domain_id = domain_id
 
     @property
     def group_id(self):
@@ -112,6 +90,28 @@ class DisassociateDomainV2Request:
         :type: str
         """
         self._group_id = group_id
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this DisassociateDomainV2Request.
+
+        域名的编号
+
+        :return: The domain_id of this DisassociateDomainV2Request.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this DisassociateDomainV2Request.
+
+        域名的编号
+
+        :param domain_id: The domain_id of this DisassociateDomainV2Request.
+        :type: str
+        """
+        self._domain_id = domain_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

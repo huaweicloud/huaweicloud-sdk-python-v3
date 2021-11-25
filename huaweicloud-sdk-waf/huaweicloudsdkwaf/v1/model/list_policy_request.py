@@ -59,7 +59,7 @@ class ListPolicyRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPolicyRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ListPolicyRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class ListPolicyRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPolicyRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListPolicyRequest.
         :type: str
@@ -81,7 +81,7 @@ class ListPolicyRequest:
     def page(self):
         """Gets the page of this ListPolicyRequest.
 
-        页码
+        分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :return: The page of this ListPolicyRequest.
         :rtype: int
@@ -92,7 +92,7 @@ class ListPolicyRequest:
     def page(self, page):
         """Sets the page of this ListPolicyRequest.
 
-        页码
+        分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :param page: The page of this ListPolicyRequest.
         :type: int
@@ -103,7 +103,7 @@ class ListPolicyRequest:
     def pagesize(self):
         """Gets the pagesize of this ListPolicyRequest.
 
-        每页条数
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :return: The pagesize of this ListPolicyRequest.
         :rtype: int
@@ -114,7 +114,7 @@ class ListPolicyRequest:
     def pagesize(self, pagesize):
         """Sets the pagesize of this ListPolicyRequest.
 
-        每页条数
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :param pagesize: The pagesize of this ListPolicyRequest.
         :type: int

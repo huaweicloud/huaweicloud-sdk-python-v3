@@ -47,7 +47,7 @@ class DeleteAclV2Request:
     def instance_id(self):
         """Gets the instance_id of this DeleteAclV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this DeleteAclV2Request.
         :rtype: str
@@ -58,7 +58,7 @@ class DeleteAclV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteAclV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this DeleteAclV2Request.
         :type: str
@@ -69,7 +69,7 @@ class DeleteAclV2Request:
     def acl_id(self):
         """Gets the acl_id of this DeleteAclV2Request.
 
-        需要删除的ACL ID
+        ACL策略的编号
 
         :return: The acl_id of this DeleteAclV2Request.
         :rtype: str
@@ -80,7 +80,7 @@ class DeleteAclV2Request:
     def acl_id(self, acl_id):
         """Sets the acl_id of this DeleteAclV2Request.
 
-        需要删除的ACL ID
+        ACL策略的编号
 
         :param acl_id: The acl_id of this DeleteAclV2Request.
         :type: str

@@ -52,7 +52,7 @@ class UpdateAclStrategyV2Request:
     def instance_id(self):
         """Gets the instance_id of this UpdateAclStrategyV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this UpdateAclStrategyV2Request.
         :rtype: str
@@ -63,7 +63,7 @@ class UpdateAclStrategyV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateAclStrategyV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this UpdateAclStrategyV2Request.
         :type: str
@@ -74,7 +74,7 @@ class UpdateAclStrategyV2Request:
     def acl_id(self):
         """Gets the acl_id of this UpdateAclStrategyV2Request.
 
-        ACL策略的编号。可通过查询ACL信息获取该ID。
+        ACL策略的编号
 
         :return: The acl_id of this UpdateAclStrategyV2Request.
         :rtype: str
@@ -85,7 +85,7 @@ class UpdateAclStrategyV2Request:
     def acl_id(self, acl_id):
         """Sets the acl_id of this UpdateAclStrategyV2Request.
 
-        ACL策略的编号。可通过查询ACL信息获取该ID。
+        ACL策略的编号
 
         :param acl_id: The acl_id of this UpdateAclStrategyV2Request.
         :type: str

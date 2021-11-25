@@ -55,18 +55,15 @@ class CreateHostRequestBody:
         self._description = None
         self.discriminator = None
 
-        if hostname is not None:
-            self.hostname = hostname
+        self.hostname = hostname
         if policyid is not None:
             self.policyid = policyid
-        if server is not None:
-            self.server = server
+        self.server = server
         if certificateid is not None:
             self.certificateid = certificateid
         if certificatename is not None:
             self.certificatename = certificatename
-        if proxy is not None:
-            self.proxy = proxy
+        self.proxy = proxy
         if description is not None:
             self.description = description
 
@@ -74,7 +71,7 @@ class CreateHostRequestBody:
     def hostname(self):
         """Gets the hostname of this CreateHostRequestBody.
 
-        域名
+        域名（域名只能由字母、数字、-、_和.组成，长度不能超过64个字符，如www.domain.com）
 
         :return: The hostname of this CreateHostRequestBody.
         :rtype: str
@@ -85,7 +82,7 @@ class CreateHostRequestBody:
     def hostname(self, hostname):
         """Sets the hostname of this CreateHostRequestBody.
 
-        域名
+        域名（域名只能由字母、数字、-、_和.组成，长度不能超过64个字符，如www.domain.com）
 
         :param hostname: The hostname of this CreateHostRequestBody.
         :type: str
@@ -96,7 +93,7 @@ class CreateHostRequestBody:
     def policyid(self):
         """Gets the policyid of this CreateHostRequestBody.
 
-        防护域名初始绑定的策略ID
+        防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
         :return: The policyid of this CreateHostRequestBody.
         :rtype: str
@@ -107,7 +104,7 @@ class CreateHostRequestBody:
     def policyid(self, policyid):
         """Sets the policyid of this CreateHostRequestBody.
 
-        防护域名初始绑定的策略ID
+        防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
         :param policyid: The policyid of this CreateHostRequestBody.
         :type: str
@@ -140,7 +137,7 @@ class CreateHostRequestBody:
     def certificateid(self):
         """Gets the certificateid of this CreateHostRequestBody.
 
-        证书id
+        证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :return: The certificateid of this CreateHostRequestBody.
         :rtype: str
@@ -151,7 +148,7 @@ class CreateHostRequestBody:
     def certificateid(self, certificateid):
         """Sets the certificateid of this CreateHostRequestBody.
 
-        证书id
+        证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificateid: The certificateid of this CreateHostRequestBody.
         :type: str
@@ -162,7 +159,7 @@ class CreateHostRequestBody:
     def certificatename(self):
         """Gets the certificatename of this CreateHostRequestBody.
 
-        证书名
+        证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :return: The certificatename of this CreateHostRequestBody.
         :rtype: str
@@ -173,7 +170,7 @@ class CreateHostRequestBody:
     def certificatename(self, certificatename):
         """Sets the certificatename of this CreateHostRequestBody.
 
-        证书名
+        证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificatename: The certificatename of this CreateHostRequestBody.
         :type: str

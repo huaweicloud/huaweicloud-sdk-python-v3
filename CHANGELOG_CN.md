@@ -1,3 +1,266 @@
+# 3.0.69 2021-11-25
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListAlarmRule`和`ShowAlarmRule`的响应参数`resources`类型调整: `string` -> `array`
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`CheckBackendConnectivity`
+
+### HuaweiCloud SDK APM
+
+- _新增特性_
+  - 支持应用性能管理服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK BCS
+
+- _新增特性_
+  - 支持接口`DeleteMemberInvite`、`CreateBlockchainCertByUserName`、`UnfreezeCert`、`FreezeCert`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCustomerselfResourceRecordDetails`新增请求参数`statistic_type`和响应参数`bill_date`
+
+### HuaweiCloud SDK CBH
+
+- _新增特性_
+  - 支持云堡垒机服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowCluster`新增响应参数`platformVersion`
+  - 接口`ListClusters`的请求参数`status`新增枚举值`RollingBack`和`RollbackFailed`
+
+### HuaweiCloud SDK CloudRTC
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListRtcRealtimeScaleDimension`
+    - `ListRtcRealtimeQuality`
+    - `ListRtcRealtimeNetwork`
+    - `ListRtcHistoryUsage`
+    - `ListRtcHistoryScale`
+    - `ListRtcHistoryQuality`
+    - `ListRtcClientQosDetails`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CloudTable
+
+- _新增特性_
+  - 支持表格存储服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CodeCheck
+
+- _新增特性_
+  - 支持代码检查服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DAS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 修正部分接口的请求参数`X-Language`的枚举值
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DBSS
+
+- _新增特性_
+  - 支持数据库安全服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`、`ListInstances`新增请求参数`tags`
+
+### HuaweiCloud SDK DeH
+
+- _新增特性_
+  - 支持专属主机服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreatePrePaidPublicip`、`CreatePublicip`新增请求和响应参数`alias`
+  - 接口`ShowPublicip`、`UpdatePublicip`新增响应参数`alias`
+
+### HuaweiCloud SDK GES
+
+- _新增特性_
+  - 支持接口`ResizeGraph`、`ExpandGraph`、`UploadFromObs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateTransfer`
+    - `DeleteTransfer`
+    - `UpdateTransfer`
+    - `ListTransfers`
+    - `ListLogStreams`
+    - `RegisterDmsKafkaInstance`
+    - `CreateNotificationTemplate`
+    - `UpdateNotificationTemplate`
+    - `ListNotificationTemplates`
+    - `DeleteNotificationTemplate`
+    - `ShowNotificationTemplate`
+    - `ListNotificationTemplate`
+    - `UpdateAlarmRuleStatus`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK KMS
+
+- _新增特性_
+  - 支持V2版本的接口
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK NLP
+
+- _新增特性_
+  - 支持自然语言处理服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeHandwriting`移除响应参数`extracted_data`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListSlowlogStatistics`新增请求参数`sort`
+
+### HuaweiCloud SDK SIS
+
+- _新增特性_
+  - 支持语音交互服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SFSTurbo
+
+- _新增特性_
+  - 支持弹性文件服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK TMS
+
+- _新增特性_
+  - 支持接口`ShowTagQuota`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPCEP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListServicePublicDetails`、`ListServiceDetails`、`ListServiceConnections`、`AcceptOrRejectEndpoint`、`ListEndpoints`、`UpdateEndpointWhite`、`ListEndpointInfoDetails`的响应参数`created_at`和`updated_at`类型调整: `datetime` -> `string`
+  - 接口`CreateEndpointService`的请求参数`vpc_id`和`port_id`改为必填
+  - 接口`AcceptOrRejectEndpoint`移除响应参数`error`
+  - 接口`ListVersionDetails`和`ListSpecifiedVersionDetails`的响应参数`updated`类型调整: `datetime` -> `string`
+  - 接口`ListResourceInstances`和`BatchAddOrRemoveResourceInstance`的请求参数`action`改为必填
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListEvent`新增请求参数`from`和`to`
+  - 接口`ListWhiteblackipRule`新增请求参数`name`
+
 # 3.0.68 2021-11-12
 
 ### HuaweiCloud SDK AOM

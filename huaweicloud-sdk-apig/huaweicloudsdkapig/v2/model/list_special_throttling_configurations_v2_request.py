@@ -23,39 +23,43 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     openapi_types = {
         'instance_id': 'str',
+        'offset': 'int',
+        'limit': 'int',
         'throttle_id': 'str',
         'object_type': 'str',
         'app_name': 'str',
-        'user': 'str',
-        'offset': 'int',
-        'limit': 'int'
+        'user': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
+        'offset': 'offset',
+        'limit': 'limit',
         'throttle_id': 'throttle_id',
         'object_type': 'object_type',
         'app_name': 'app_name',
-        'user': 'user',
-        'offset': 'offset',
-        'limit': 'limit'
+        'user': 'user'
     }
 
-    def __init__(self, instance_id=None, throttle_id=None, object_type=None, app_name=None, user=None, offset=None, limit=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, throttle_id=None, object_type=None, app_name=None, user=None):
         """ListSpecialThrottlingConfigurationsV2Request - a model defined in huaweicloud sdk"""
         
         
 
         self._instance_id = None
+        self._offset = None
+        self._limit = None
         self._throttle_id = None
         self._object_type = None
         self._app_name = None
         self._user = None
-        self._offset = None
-        self._limit = None
         self.discriminator = None
 
         self.instance_id = instance_id
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
         self.throttle_id = throttle_id
         if object_type is not None:
             self.object_type = object_type
@@ -63,16 +67,12 @@ class ListSpecialThrottlingConfigurationsV2Request:
             self.app_name = app_name
         if user is not None:
             self.user = user
-        if offset is not None:
-            self.offset = offset
-        if limit is not None:
-            self.limit = limit
 
     @property
     def instance_id(self):
         """Gets the instance_id of this ListSpecialThrottlingConfigurationsV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this ListSpecialThrottlingConfigurationsV2Request.
         :rtype: str
@@ -83,7 +83,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListSpecialThrottlingConfigurationsV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this ListSpecialThrottlingConfigurationsV2Request.
         :type: str
@@ -91,10 +91,54 @@ class ListSpecialThrottlingConfigurationsV2Request:
         self._instance_id = instance_id
 
     @property
+    def offset(self):
+        """Gets the offset of this ListSpecialThrottlingConfigurationsV2Request.
+
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+
+        :return: The offset of this ListSpecialThrottlingConfigurationsV2Request.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListSpecialThrottlingConfigurationsV2Request.
+
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+
+        :param offset: The offset of this ListSpecialThrottlingConfigurationsV2Request.
+        :type: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListSpecialThrottlingConfigurationsV2Request.
+
+        每页显示的条目数量
+
+        :return: The limit of this ListSpecialThrottlingConfigurationsV2Request.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListSpecialThrottlingConfigurationsV2Request.
+
+        每页显示的条目数量
+
+        :param limit: The limit of this ListSpecialThrottlingConfigurationsV2Request.
+        :type: int
+        """
+        self._limit = limit
+
+    @property
     def throttle_id(self):
         """Gets the throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
 
-        流控策略的ID
+        流控策略的编号
 
         :return: The throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
         :rtype: str
@@ -105,7 +149,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def throttle_id(self, throttle_id):
         """Sets the throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
 
-        流控策略的ID
+        流控策略的编号
 
         :param throttle_id: The throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
         :type: str
@@ -177,50 +221,6 @@ class ListSpecialThrottlingConfigurationsV2Request:
         :type: str
         """
         self._user = user
-
-    @property
-    def offset(self):
-        """Gets the offset of this ListSpecialThrottlingConfigurationsV2Request.
-
-        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
-
-        :return: The offset of this ListSpecialThrottlingConfigurationsV2Request.
-        :rtype: int
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this ListSpecialThrottlingConfigurationsV2Request.
-
-        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
-
-        :param offset: The offset of this ListSpecialThrottlingConfigurationsV2Request.
-        :type: int
-        """
-        self._offset = offset
-
-    @property
-    def limit(self):
-        """Gets the limit of this ListSpecialThrottlingConfigurationsV2Request.
-
-        每页显示的条目数量
-
-        :return: The limit of this ListSpecialThrottlingConfigurationsV2Request.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListSpecialThrottlingConfigurationsV2Request.
-
-        每页显示的条目数量
-
-        :param limit: The limit of this ListSpecialThrottlingConfigurationsV2Request.
-        :type: int
-        """
-        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

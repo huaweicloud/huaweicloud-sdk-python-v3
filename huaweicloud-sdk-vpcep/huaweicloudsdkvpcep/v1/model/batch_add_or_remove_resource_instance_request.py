@@ -52,7 +52,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
     def resource_type(self):
         """Gets the resource_type of this BatchAddOrRemoveResourceInstanceRequest.
 
-        资源类型，值为： endpoint_service或 endpoint。
+        资源类型，值为：endpoint_service或endpoint。
 
         :return: The resource_type of this BatchAddOrRemoveResourceInstanceRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this BatchAddOrRemoveResourceInstanceRequest.
 
-        资源类型，值为： endpoint_service或 endpoint。
+        资源类型，值为：endpoint_service或endpoint。
 
         :param resource_type: The resource_type of this BatchAddOrRemoveResourceInstanceRequest.
         :type: str
@@ -74,7 +74,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
     def resource_id(self):
         """Gets the resource_id of this BatchAddOrRemoveResourceInstanceRequest.
 
-        资源ID，Endpoint Service ID或Endpoint ID。
+        资源ID，Endpoint ServiceID或Endpoint ID。
 
         :return: The resource_id of this BatchAddOrRemoveResourceInstanceRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class BatchAddOrRemoveResourceInstanceRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this BatchAddOrRemoveResourceInstanceRequest.
 
-        资源ID，Endpoint Service ID或Endpoint ID。
+        资源ID，Endpoint ServiceID或Endpoint ID。
 
         :param resource_id: The resource_id of this BatchAddOrRemoveResourceInstanceRequest.
         :type: str

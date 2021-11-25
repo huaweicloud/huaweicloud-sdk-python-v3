@@ -23,7 +23,7 @@ class AssociateSignatureKeyV2Request:
 
     openapi_types = {
         'instance_id': 'str',
-        'body': 'SignBindingReq'
+        'body': 'SignApiBinding'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class AssociateSignatureKeyV2Request:
     def instance_id(self):
         """Gets the instance_id of this AssociateSignatureKeyV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this AssociateSignatureKeyV2Request.
         :rtype: str
@@ -59,7 +59,7 @@ class AssociateSignatureKeyV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this AssociateSignatureKeyV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this AssociateSignatureKeyV2Request.
         :type: str
@@ -72,7 +72,7 @@ class AssociateSignatureKeyV2Request:
 
 
         :return: The body of this AssociateSignatureKeyV2Request.
-        :rtype: SignBindingReq
+        :rtype: SignApiBinding
         """
         return self._body
 
@@ -82,7 +82,7 @@ class AssociateSignatureKeyV2Request:
 
 
         :param body: The body of this AssociateSignatureKeyV2Request.
-        :type: SignBindingReq
+        :type: SignApiBinding
         """
         self._body = body
 

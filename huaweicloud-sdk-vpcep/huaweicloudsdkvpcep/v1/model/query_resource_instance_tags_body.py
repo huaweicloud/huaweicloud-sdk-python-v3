@@ -22,14 +22,14 @@ class QueryResourceInstanceTagsBody:
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[TagValuesList]',
-        'tags_any': 'list[TagAnyValuesList]',
-        'not_tags': 'list[NotTagsValuesList]',
-        'not_tags_any': 'list[NotTagsAnyValuesList]',
+        'tags': 'list[Tag]',
+        'tags_any': 'list[Tag]',
+        'not_tags': 'list[Tag]',
+        'not_tags_any': 'list[Tag]',
         'limit': 'str',
         'offset': 'str',
         'action': 'str',
-        'matches': 'list[TagMatchList]'
+        'matches': 'list[Match]'
     }
 
     attribute_map = {
@@ -70,8 +70,7 @@ class QueryResourceInstanceTagsBody:
             self.limit = limit
         if offset is not None:
             self.offset = offset
-        if action is not None:
-            self.action = action
+        self.action = action
         if matches is not None:
             self.matches = matches
 
@@ -82,7 +81,7 @@ class QueryResourceInstanceTagsBody:
         包含标签，最多包含10个key，每 个key下面的value最多10个，每 个key对应的value可以为空数组但 结构体不能缺失。Key不能重复， 同一个key中values不能重复。结 果返回包含所有标签的资源列表， key之间是与的关系，key-value结 构中value是或的关系。无tag过滤 条件时返回全量数据。
 
         :return: The tags of this QueryResourceInstanceTagsBody.
-        :rtype: list[TagValuesList]
+        :rtype: list[Tag]
         """
         return self._tags
 
@@ -93,7 +92,7 @@ class QueryResourceInstanceTagsBody:
         包含标签，最多包含10个key，每 个key下面的value最多10个，每 个key对应的value可以为空数组但 结构体不能缺失。Key不能重复， 同一个key中values不能重复。结 果返回包含所有标签的资源列表， key之间是与的关系，key-value结 构中value是或的关系。无tag过滤 条件时返回全量数据。
 
         :param tags: The tags of this QueryResourceInstanceTagsBody.
-        :type: list[TagValuesList]
+        :type: list[Tag]
         """
         self._tags = tags
 
@@ -104,7 +103,7 @@ class QueryResourceInstanceTagsBody:
         包含任意标签，最多包含10个 key，每个key下面的value最多10 个，每个key对应的value可以为空 数组但结构体不能缺失。Key不能 重复，同一个key中values不能重 复。结果返回包含标签的资源列 表，key之间是或的关系，keyvalue 结构中value是或的关系。无 过滤条件时返回全量数据。
 
         :return: The tags_any of this QueryResourceInstanceTagsBody.
-        :rtype: list[TagAnyValuesList]
+        :rtype: list[Tag]
         """
         return self._tags_any
 
@@ -115,7 +114,7 @@ class QueryResourceInstanceTagsBody:
         包含任意标签，最多包含10个 key，每个key下面的value最多10 个，每个key对应的value可以为空 数组但结构体不能缺失。Key不能 重复，同一个key中values不能重 复。结果返回包含标签的资源列 表，key之间是或的关系，keyvalue 结构中value是或的关系。无 过滤条件时返回全量数据。
 
         :param tags_any: The tags_any of this QueryResourceInstanceTagsBody.
-        :type: list[TagAnyValuesList]
+        :type: list[Tag]
         """
         self._tags_any = tags_any
 
@@ -126,7 +125,7 @@ class QueryResourceInstanceTagsBody:
         不包含标签，最多包含10个key， 每个key下面的value最多10个， 每个key对应的value可以为空数组 但结构体不能缺失。Key不能重 复，同一个key中values不能重 复。结果返回不包含标签的资源列 表，key之间是与的关系，keyvalue 结构中value是或的关系。无 过滤条件时返回全量数据。
 
         :return: The not_tags of this QueryResourceInstanceTagsBody.
-        :rtype: list[NotTagsValuesList]
+        :rtype: list[Tag]
         """
         return self._not_tags
 
@@ -137,7 +136,7 @@ class QueryResourceInstanceTagsBody:
         不包含标签，最多包含10个key， 每个key下面的value最多10个， 每个key对应的value可以为空数组 但结构体不能缺失。Key不能重 复，同一个key中values不能重 复。结果返回不包含标签的资源列 表，key之间是与的关系，keyvalue 结构中value是或的关系。无 过滤条件时返回全量数据。
 
         :param not_tags: The not_tags of this QueryResourceInstanceTagsBody.
-        :type: list[NotTagsValuesList]
+        :type: list[Tag]
         """
         self._not_tags = not_tags
 
@@ -148,7 +147,7 @@ class QueryResourceInstanceTagsBody:
         不包含任意标签，最多包含10个 key，每个key下面的value最多10 个，每个key对应的value可以为空 数组但结构体不能缺失。Key不能 重复，同一个key中values不能重 复。结果返回不包含标签的资源列 表，key之间是与的关系，keyvalue 结构中value是或的关系。无 过滤条件时返回全量数据。
 
         :return: The not_tags_any of this QueryResourceInstanceTagsBody.
-        :rtype: list[NotTagsAnyValuesList]
+        :rtype: list[Tag]
         """
         return self._not_tags_any
 
@@ -159,7 +158,7 @@ class QueryResourceInstanceTagsBody:
         不包含任意标签，最多包含10个 key，每个key下面的value最多10 个，每个key对应的value可以为空 数组但结构体不能缺失。Key不能 重复，同一个key中values不能重 复。结果返回不包含标签的资源列 表，key之间是与的关系，keyvalue 结构中value是或的关系。无 过滤条件时返回全量数据。
 
         :param not_tags_any: The not_tags_any of this QueryResourceInstanceTagsBody.
-        :type: list[NotTagsAnyValuesList]
+        :type: list[Tag]
         """
         self._not_tags_any = not_tags_any
 
@@ -236,7 +235,7 @@ class QueryResourceInstanceTagsBody:
         搜索字段，key为要匹配的字段， 如resource_name等。value为匹 配的值。key为固定字典值，不能 包含重复的key或不支持的key。 根据key的值确认是否需要模糊匹 配，如resource_name默认为模糊 搜索（不区分大小写），如果 value为空字符串精确匹配（多数 服务不存在资源名称为空的情况， 因此此类情况返回空列表）。 resource_id为精确匹配。第一期 只做resource_name，后续再扩 展。
 
         :return: The matches of this QueryResourceInstanceTagsBody.
-        :rtype: list[TagMatchList]
+        :rtype: list[Match]
         """
         return self._matches
 
@@ -247,7 +246,7 @@ class QueryResourceInstanceTagsBody:
         搜索字段，key为要匹配的字段， 如resource_name等。value为匹 配的值。key为固定字典值，不能 包含重复的key或不支持的key。 根据key的值确认是否需要模糊匹 配，如resource_name默认为模糊 搜索（不区分大小写），如果 value为空字符串精确匹配（多数 服务不存在资源名称为空的情况， 因此此类情况返回空列表）。 resource_id为精确匹配。第一期 只做resource_name，后续再扩 展。
 
         :param matches: The matches of this QueryResourceInstanceTagsBody.
-        :type: list[TagMatchList]
+        :type: list[Match]
         """
         self._matches = matches
 

@@ -206,7 +206,7 @@ class JudgementTaskRequestBody:
     def output_type(self):
         """Gets the output_type of this JudgementTaskRequestBody.
 
-        结果返回类型：sysout（标准输出）、fileout（以文件形式输出）、imgout（以图片形式输出）、caseout（用例运行返回）、judgeout（输出评判返回）
+        结果返回类型：sysout（标准输出）、fileout（以文件形式输出）、imgout（以图片形式输出）、caseout（用例运行返回）、judgeout（用例对比返回）
 
         :return: The output_type of this JudgementTaskRequestBody.
         :rtype: str
@@ -217,7 +217,7 @@ class JudgementTaskRequestBody:
     def output_type(self, output_type):
         """Sets the output_type of this JudgementTaskRequestBody.
 
-        结果返回类型：sysout（标准输出）、fileout（以文件形式输出）、imgout（以图片形式输出）、caseout（用例运行返回）、judgeout（输出评判返回）
+        结果返回类型：sysout（标准输出）、fileout（以文件形式输出）、imgout（以图片形式输出）、caseout（用例运行返回）、judgeout（用例对比返回）
 
         :param output_type: The output_type of this JudgementTaskRequestBody.
         :type: str

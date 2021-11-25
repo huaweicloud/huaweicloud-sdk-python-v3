@@ -132,7 +132,7 @@ class AutoScalingPolicy:
     def resources_plans(self):
         """Gets the resources_plans of this AutoScalingPolicy.
 
-        资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。  MRS 1.6.3及以后版本支持该参数。
+        资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
         :return: The resources_plans of this AutoScalingPolicy.
         :rtype: list[ResourcesPlan]
@@ -143,7 +143,7 @@ class AutoScalingPolicy:
     def resources_plans(self, resources_plans):
         """Sets the resources_plans of this AutoScalingPolicy.
 
-        资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。  MRS 1.6.3及以后版本支持该参数。
+        资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
         :param resources_plans: The resources_plans of this AutoScalingPolicy.
         :type: list[ResourcesPlan]
@@ -176,7 +176,7 @@ class AutoScalingPolicy:
     def exec_scripts(self):
         """Gets the exec_scripts of this AutoScalingPolicy.
 
-        弹性伸缩自定义自动化脚本列表。若该参数为空表示不启用自动化脚本。  MRS 1.7.1及以后版本支持该参数。
+        弹性伸缩自定义自动化脚本列表。若该参数为空表示不启用自动化脚本。
 
         :return: The exec_scripts of this AutoScalingPolicy.
         :rtype: list[ScaleScript]
@@ -187,7 +187,7 @@ class AutoScalingPolicy:
     def exec_scripts(self, exec_scripts):
         """Sets the exec_scripts of this AutoScalingPolicy.
 
-        弹性伸缩自定义自动化脚本列表。若该参数为空表示不启用自动化脚本。  MRS 1.7.1及以后版本支持该参数。
+        弹性伸缩自定义自动化脚本列表。若该参数为空表示不启用自动化脚本。
 
         :param exec_scripts: The exec_scripts of this AutoScalingPolicy.
         :type: list[ScaleScript]

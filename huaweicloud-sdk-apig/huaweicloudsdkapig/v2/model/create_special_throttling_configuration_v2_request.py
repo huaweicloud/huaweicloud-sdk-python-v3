@@ -24,7 +24,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
     openapi_types = {
         'instance_id': 'str',
         'throttle_id': 'str',
-        'body': 'ThrottleSpecialReq'
+        'body': 'ThrottleSpecialCreate'
     }
 
     attribute_map = {
@@ -52,7 +52,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
     def instance_id(self):
         """Gets the instance_id of this CreateSpecialThrottlingConfigurationV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this CreateSpecialThrottlingConfigurationV2Request.
         :rtype: str
@@ -63,7 +63,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreateSpecialThrottlingConfigurationV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this CreateSpecialThrottlingConfigurationV2Request.
         :type: str
@@ -74,7 +74,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
     def throttle_id(self):
         """Gets the throttle_id of this CreateSpecialThrottlingConfigurationV2Request.
 
-        流控策略的ID
+        流控策略的编号
 
         :return: The throttle_id of this CreateSpecialThrottlingConfigurationV2Request.
         :rtype: str
@@ -85,7 +85,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
     def throttle_id(self, throttle_id):
         """Sets the throttle_id of this CreateSpecialThrottlingConfigurationV2Request.
 
-        流控策略的ID
+        流控策略的编号
 
         :param throttle_id: The throttle_id of this CreateSpecialThrottlingConfigurationV2Request.
         :type: str
@@ -98,7 +98,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
 
 
         :return: The body of this CreateSpecialThrottlingConfigurationV2Request.
-        :rtype: ThrottleSpecialReq
+        :rtype: ThrottleSpecialCreate
         """
         return self._body
 
@@ -108,7 +108,7 @@ class CreateSpecialThrottlingConfigurationV2Request:
 
 
         :param body: The body of this CreateSpecialThrottlingConfigurationV2Request.
-        :type: ThrottleSpecialReq
+        :type: ThrottleSpecialCreate
         """
         self._body = body
 

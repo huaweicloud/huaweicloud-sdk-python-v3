@@ -22,7 +22,7 @@ class BatchPublishOrOfflineApiV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'success': 'list[BatchSuccess]',
+        'success': 'list[PublishResp]',
         'failure': 'list[BatchFailure]'
     }
 
@@ -52,7 +52,7 @@ class BatchPublishOrOfflineApiV2Response(SdkResponse):
         发布或下线成功的信息
 
         :return: The success of this BatchPublishOrOfflineApiV2Response.
-        :rtype: list[BatchSuccess]
+        :rtype: list[PublishResp]
         """
         return self._success
 
@@ -63,7 +63,7 @@ class BatchPublishOrOfflineApiV2Response(SdkResponse):
         发布或下线成功的信息
 
         :param success: The success of this BatchPublishOrOfflineApiV2Response.
-        :type: list[BatchSuccess]
+        :type: list[PublishResp]
         """
         self._success = success
 

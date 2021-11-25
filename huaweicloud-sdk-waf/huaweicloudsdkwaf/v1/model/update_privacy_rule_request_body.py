@@ -22,66 +22,41 @@ class UpdatePrivacyRuleRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
         'url': 'str',
         'category': 'str',
-        'index': 'str'
+        'index': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
         'url': 'url',
         'category': 'category',
-        'index': 'index'
+        'index': 'index',
+        'description': 'description'
     }
 
-    def __init__(self, id=None, url=None, category=None, index=None):
+    def __init__(self, url=None, category=None, index=None, description=None):
         """UpdatePrivacyRuleRequestBody - a model defined in huaweicloud sdk"""
         
         
 
-        self._id = None
         self._url = None
         self._category = None
         self._index = None
+        self._description = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if url is not None:
-            self.url = url
-        if category is not None:
-            self.category = category
-        if index is not None:
-            self.index = index
-
-    @property
-    def id(self):
-        """Gets the id of this UpdatePrivacyRuleRequestBody.
-
-        规则id
-
-        :return: The id of this UpdatePrivacyRuleRequestBody.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this UpdatePrivacyRuleRequestBody.
-
-        规则id
-
-        :param id: The id of this UpdatePrivacyRuleRequestBody.
-        :type: str
-        """
-        self._id = id
+        self.url = url
+        self.category = category
+        self.index = index
+        if description is not None:
+            self.description = description
 
     @property
     def url(self):
         """Gets the url of this UpdatePrivacyRuleRequestBody.
 
-        隐私屏蔽规则应用的url
+        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
         :return: The url of this UpdatePrivacyRuleRequestBody.
         :rtype: str
@@ -92,7 +67,7 @@ class UpdatePrivacyRuleRequestBody:
     def url(self, url):
         """Sets the url of this UpdatePrivacyRuleRequestBody.
 
-        隐私屏蔽规则应用的url
+        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
         :param url: The url of this UpdatePrivacyRuleRequestBody.
         :type: str
@@ -142,6 +117,28 @@ class UpdatePrivacyRuleRequestBody:
         :type: str
         """
         self._index = index
+
+    @property
+    def description(self):
+        """Gets the description of this UpdatePrivacyRuleRequestBody.
+
+        规则描述
+
+        :return: The description of this UpdatePrivacyRuleRequestBody.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this UpdatePrivacyRuleRequestBody.
+
+        规则描述
+
+        :param description: The description of this UpdatePrivacyRuleRequestBody.
+        :type: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

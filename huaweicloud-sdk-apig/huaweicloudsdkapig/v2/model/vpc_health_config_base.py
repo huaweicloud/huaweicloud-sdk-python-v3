@@ -30,7 +30,8 @@ class VpcHealthConfigBase:
         'threshold_abnormal': 'int',
         'time_interval': 'int',
         'http_code': 'str',
-        'enable_client_ssl': 'bool'
+        'enable_client_ssl': 'bool',
+        'status': 'int'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class VpcHealthConfigBase:
         'threshold_abnormal': 'threshold_abnormal',
         'time_interval': 'time_interval',
         'http_code': 'http_code',
-        'enable_client_ssl': 'enable_client_ssl'
+        'enable_client_ssl': 'enable_client_ssl',
+        'status': 'status'
     }
 
-    def __init__(self, protocol=None, path=None, method=None, port=None, threshold_normal=None, threshold_abnormal=None, time_interval=None, http_code=None, enable_client_ssl=None):
+    def __init__(self, protocol=None, path=None, method=None, port=None, threshold_normal=None, threshold_abnormal=None, time_interval=None, http_code=None, enable_client_ssl=None, status=None):
         """VpcHealthConfigBase - a model defined in huaweicloud sdk"""
         
         
@@ -59,6 +61,7 @@ class VpcHealthConfigBase:
         self._time_interval = None
         self._http_code = None
         self._enable_client_ssl = None
+        self._status = None
         self.discriminator = None
 
         self.protocol = protocol
@@ -75,6 +78,8 @@ class VpcHealthConfigBase:
             self.http_code = http_code
         if enable_client_ssl is not None:
             self.enable_client_ssl = enable_client_ssl
+        if status is not None:
+            self.status = status
 
     @property
     def protocol(self):
@@ -273,6 +278,28 @@ class VpcHealthConfigBase:
         :type: bool
         """
         self._enable_client_ssl = enable_client_ssl
+
+    @property
+    def status(self):
+        """Gets the status of this VpcHealthConfigBase.
+
+        健康检查状态   - 1：可用   - 2：不可用
+
+        :return: The status of this VpcHealthConfigBase.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this VpcHealthConfigBase.
+
+        健康检查状态   - 1：可用   - 2：不可用
+
+        :param status: The status of this VpcHealthConfigBase.
+        :type: int
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

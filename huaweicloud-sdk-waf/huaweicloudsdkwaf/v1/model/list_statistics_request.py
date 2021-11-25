@@ -51,8 +51,10 @@ class ListStatisticsRequest:
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        self._from = _from
-        self.to = to
+        if _from is not None:
+            self._from = _from
+        if to is not None:
+            self.to = to
         if hosts is not None:
             self.hosts = hosts
         if instances is not None:
@@ -62,7 +64,7 @@ class ListStatisticsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListStatisticsRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ListStatisticsRequest.
         :rtype: str
@@ -73,7 +75,7 @@ class ListStatisticsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListStatisticsRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListStatisticsRequest.
         :type: str
@@ -84,7 +86,7 @@ class ListStatisticsRequest:
     def _from(self):
         """Gets the _from of this ListStatisticsRequest.
 
-        起始时间
+        起始时间(13位时间戳)，需要和to同时使用
 
         :return: The _from of this ListStatisticsRequest.
         :rtype: int
@@ -95,7 +97,7 @@ class ListStatisticsRequest:
     def _from(self, _from):
         """Sets the _from of this ListStatisticsRequest.
 
-        起始时间
+        起始时间(13位时间戳)，需要和to同时使用
 
         :param _from: The _from of this ListStatisticsRequest.
         :type: int
@@ -106,7 +108,7 @@ class ListStatisticsRequest:
     def to(self):
         """Gets the to of this ListStatisticsRequest.
 
-        结束时间
+        结束时间(13位时间戳),需要和from同时使用
 
         :return: The to of this ListStatisticsRequest.
         :rtype: int
@@ -117,7 +119,7 @@ class ListStatisticsRequest:
     def to(self, to):
         """Sets the to of this ListStatisticsRequest.
 
-        结束时间
+        结束时间(13位时间戳),需要和from同时使用
 
         :param to: The to of this ListStatisticsRequest.
         :type: int

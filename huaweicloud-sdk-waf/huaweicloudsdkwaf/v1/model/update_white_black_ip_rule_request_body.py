@@ -22,38 +22,63 @@ class UpdateWhiteBlackIpRuleRequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'name': 'str',
         'addr': 'str',
         'description': 'str',
         'white': 'int'
     }
 
     attribute_map = {
+        'name': 'name',
         'addr': 'addr',
         'description': 'description',
         'white': 'white'
     }
 
-    def __init__(self, addr=None, description=None, white=None):
+    def __init__(self, name=None, addr=None, description=None, white=None):
         """UpdateWhiteBlackIpRuleRequestBody - a model defined in huaweicloud sdk"""
         
         
 
+        self._name = None
         self._addr = None
         self._description = None
         self._white = None
         self.discriminator = None
 
+        self.name = name
         self.addr = addr
         if description is not None:
             self.description = description
-        if white is not None:
-            self.white = white
+        self.white = white
+
+    @property
+    def name(self):
+        """Gets the name of this UpdateWhiteBlackIpRuleRequestBody.
+
+        黑白名单规则名称
+
+        :return: The name of this UpdateWhiteBlackIpRuleRequestBody.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this UpdateWhiteBlackIpRuleRequestBody.
+
+        黑白名单规则名称
+
+        :param name: The name of this UpdateWhiteBlackIpRuleRequestBody.
+        :type: str
+        """
+        self._name = name
 
     @property
     def addr(self):
         """Gets the addr of this UpdateWhiteBlackIpRuleRequestBody.
 
-        黑白名单地址
+        黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
 
         :return: The addr of this UpdateWhiteBlackIpRuleRequestBody.
         :rtype: str
@@ -64,7 +89,7 @@ class UpdateWhiteBlackIpRuleRequestBody:
     def addr(self, addr):
         """Sets the addr of this UpdateWhiteBlackIpRuleRequestBody.
 
-        黑白名单地址
+        黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
 
         :param addr: The addr of this UpdateWhiteBlackIpRuleRequestBody.
         :type: str
@@ -97,7 +122,7 @@ class UpdateWhiteBlackIpRuleRequestBody:
     def white(self):
         """Gets the white of this UpdateWhiteBlackIpRuleRequestBody.
 
-        设置的ip地址类型，1放行，0拦截，2仅记录
+        防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
         :return: The white of this UpdateWhiteBlackIpRuleRequestBody.
         :rtype: int
@@ -108,7 +133,7 @@ class UpdateWhiteBlackIpRuleRequestBody:
     def white(self, white):
         """Sets the white of this UpdateWhiteBlackIpRuleRequestBody.
 
-        设置的ip地址类型，1放行，0拦截，2仅记录
+        防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
         :param white: The white of this UpdateWhiteBlackIpRuleRequestBody.
         :type: int

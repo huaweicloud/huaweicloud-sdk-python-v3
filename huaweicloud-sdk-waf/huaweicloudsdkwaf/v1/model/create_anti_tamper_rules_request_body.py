@@ -43,10 +43,8 @@ class CreateAntiTamperRulesRequestBody:
         self._description = None
         self.discriminator = None
 
-        if hostname is not None:
-            self.hostname = hostname
-        if url is not None:
-            self.url = url
+        self.hostname = hostname
+        self.url = url
         if description is not None:
             self.description = description
 
@@ -54,7 +52,7 @@ class CreateAntiTamperRulesRequestBody:
     def hostname(self):
         """Gets the hostname of this CreateAntiTamperRulesRequestBody.
 
-        防护网站（查询云模式防护域名列表获取防护域名，响应体的hostname字段）
+        防护网站，查询云模式防护域名列表（ListHost）接口获取防护域名，响应体中的的hostname字段
 
         :return: The hostname of this CreateAntiTamperRulesRequestBody.
         :rtype: str
@@ -65,7 +63,7 @@ class CreateAntiTamperRulesRequestBody:
     def hostname(self, hostname):
         """Sets the hostname of this CreateAntiTamperRulesRequestBody.
 
-        防护网站（查询云模式防护域名列表获取防护域名，响应体的hostname字段）
+        防护网站，查询云模式防护域名列表（ListHost）接口获取防护域名，响应体中的的hostname字段
 
         :param hostname: The hostname of this CreateAntiTamperRulesRequestBody.
         :type: str
@@ -76,7 +74,7 @@ class CreateAntiTamperRulesRequestBody:
     def url(self):
         """Gets the url of this CreateAntiTamperRulesRequestBody.
 
-        防篡改的url
+        防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
         :return: The url of this CreateAntiTamperRulesRequestBody.
         :rtype: str
@@ -87,7 +85,7 @@ class CreateAntiTamperRulesRequestBody:
     def url(self, url):
         """Sets the url of this CreateAntiTamperRulesRequestBody.
 
-        防篡改的url
+        防篡改规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
         :param url: The url of this CreateAntiTamperRulesRequestBody.
         :type: str

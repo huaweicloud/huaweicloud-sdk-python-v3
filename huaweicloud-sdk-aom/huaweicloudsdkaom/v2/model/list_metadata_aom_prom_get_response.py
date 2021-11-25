@@ -23,7 +23,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
 
     openapi_types = {
         'status': 'str',
-        'data': 'list[str]'
+        'data': 'object'
     }
 
     attribute_map = {
@@ -71,7 +71,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
 
 
         :return: The data of this ListMetadataAomPromGetResponse.
-        :rtype: list[str]
+        :rtype: object
         """
         return self._data
 
@@ -81,7 +81,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
 
 
         :param data: The data of this ListMetadataAomPromGetResponse.
-        :type: list[str]
+        :type: object
         """
         self._data = data
 

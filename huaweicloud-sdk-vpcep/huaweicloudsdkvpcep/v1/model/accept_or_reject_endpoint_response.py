@@ -22,7 +22,7 @@ class AcceptOrRejectEndpointResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'connections': 'list[Endpoints]'
+        'connections': 'list[ConnectionEndpoints]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class AcceptOrRejectEndpointResponse(SdkResponse):
         连接列表
 
         :return: The connections of this AcceptOrRejectEndpointResponse.
-        :rtype: list[Endpoints]
+        :rtype: list[ConnectionEndpoints]
         """
         return self._connections
 
@@ -58,7 +58,7 @@ class AcceptOrRejectEndpointResponse(SdkResponse):
         连接列表
 
         :param connections: The connections of this AcceptOrRejectEndpointResponse.
-        :type: list[Endpoints]
+        :type: list[ConnectionEndpoints]
         """
         self._connections = connections
 

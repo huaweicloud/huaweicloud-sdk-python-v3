@@ -64,7 +64,7 @@ class ListIssuedCouponQuotasRequest:
     def quota_id(self):
         """Gets the quota_id of this ListIssuedCouponQuotasRequest.
 
-        精英服务商的代金券额度ID。
+        精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。
 
         :return: The quota_id of this ListIssuedCouponQuotasRequest.
         :rtype: str
@@ -75,7 +75,7 @@ class ListIssuedCouponQuotasRequest:
     def quota_id(self, quota_id):
         """Sets the quota_id of this ListIssuedCouponQuotasRequest.
 
-        精英服务商的代金券额度ID。
+        精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。
 
         :param quota_id: The quota_id of this ListIssuedCouponQuotasRequest.
         :type: str

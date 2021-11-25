@@ -24,7 +24,7 @@ class ListRequestThrottlingPolicyV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'throttles': 'list[ThrottleResp]'
+        'throttles': 'list[ThrottlesInfo]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class ListRequestThrottlingPolicyV2Response(SdkResponse):
         本次查询到的流控策略列表
 
         :return: The throttles of this ListRequestThrottlingPolicyV2Response.
-        :rtype: list[ThrottleResp]
+        :rtype: list[ThrottlesInfo]
         """
         return self._throttles
 
@@ -110,7 +110,7 @@ class ListRequestThrottlingPolicyV2Response(SdkResponse):
         本次查询到的流控策略列表
 
         :param throttles: The throttles of this ListRequestThrottlingPolicyV2Response.
-        :type: list[ThrottleResp]
+        :type: list[ThrottlesInfo]
         """
         self._throttles = throttles
 

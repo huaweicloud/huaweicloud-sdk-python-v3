@@ -162,7 +162,7 @@ class AddJobs:
     def arguments(self):
         """Gets the arguments of this AddJobs.
 
-        程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。 最多为2047字符，不能包含;|&>'<$特殊字符，可为空。
+        程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。 最多为150000字符，不能包含;|&>'<$特殊字符，可为空。
 
         :return: The arguments of this AddJobs.
         :rtype: str
@@ -173,7 +173,7 @@ class AddJobs:
     def arguments(self, arguments):
         """Sets the arguments of this AddJobs.
 
-        程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。 最多为2047字符，不能包含;|&>'<$特殊字符，可为空。
+        程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。 最多为150000字符，不能包含;|&>'<$特殊字符，可为空。
 
         :param arguments: The arguments of this AddJobs.
         :type: str

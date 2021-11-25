@@ -3,7 +3,6 @@
 from __future__ import absolute_import
 
 # import models into model package
-from huaweicloudsdkaom.v2.model.als_datas_detail import ALSDatasDetail
 from huaweicloudsdkaom.v2.model.add_alarm_rule_request import AddAlarmRuleRequest
 from huaweicloudsdkaom.v2.model.add_alarm_rule_response import AddAlarmRuleResponse
 from huaweicloudsdkaom.v2.model.add_metric_data_request import AddMetricDataRequest
@@ -87,7 +86,6 @@ from huaweicloudsdkaom.v2.model.query_sample import QuerySample
 from huaweicloudsdkaom.v2.model.query_sample_param import QuerySampleParam
 from huaweicloudsdkaom.v2.model.query_series_option_param import QuerySeriesOptionParam
 from huaweicloudsdkaom.v2.model.relation_model import RelationModel
-from huaweicloudsdkaom.v2.model.result_datas_detail import ResultDatasDetail
 from huaweicloudsdkaom.v2.model.sample_data_value import SampleDataValue
 from huaweicloudsdkaom.v2.model.search_key import SearchKey
 from huaweicloudsdkaom.v2.model.series_api_query_item_param import SeriesAPIQueryItemParam

@@ -25,49 +25,45 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         'id': 'str',
         'service_type': 'str',
         'status': 'str',
+        'ip': 'str',
         'active_status': 'list[str]',
         'endpoint_service_name': 'str',
         'marker_id': 'int',
         'endpoint_service_id': 'str',
         'enable_dns': 'bool',
         'dns_names': 'list[str]',
-        'ip': 'str',
-        'vpc_id': 'str',
         'subnet_id': 'str',
-        'created_at': 'datetime',
-        'updated_at': 'datetime',
+        'vpc_id': 'str',
+        'created_at': 'str',
+        'updated_at': 'str',
         'project_id': 'str',
         'tags': 'list[TagList]',
-        'error': 'QueryError',
         'whitelist': 'list[str]',
-        'enable_whitelist': 'bool',
-        'routetables': 'list[str]'
+        'enable_whitelist': 'bool'
     }
 
     attribute_map = {
         'id': 'id',
         'service_type': 'service_type',
         'status': 'status',
+        'ip': 'ip',
         'active_status': 'active_status',
         'endpoint_service_name': 'endpoint_service_name',
         'marker_id': 'marker_id',
         'endpoint_service_id': 'endpoint_service_id',
         'enable_dns': 'enable_dns',
         'dns_names': 'dns_names',
-        'ip': 'ip',
-        'vpc_id': 'vpc_id',
         'subnet_id': 'subnet_id',
+        'vpc_id': 'vpc_id',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'project_id': 'project_id',
         'tags': 'tags',
-        'error': 'error',
         'whitelist': 'whitelist',
-        'enable_whitelist': 'enable_whitelist',
-        'routetables': 'routetables'
+        'enable_whitelist': 'enable_whitelist'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None):
+    def __init__(self, id=None, service_type=None, status=None, ip=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, subnet_id=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, whitelist=None, enable_whitelist=None):
         """UpdateEndpointWhiteResponse - a model defined in huaweicloud sdk"""
         
         super(UpdateEndpointWhiteResponse, self).__init__()
@@ -75,23 +71,21 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         self._id = None
         self._service_type = None
         self._status = None
+        self._ip = None
         self._active_status = None
         self._endpoint_service_name = None
         self._marker_id = None
         self._endpoint_service_id = None
         self._enable_dns = None
         self._dns_names = None
-        self._ip = None
-        self._vpc_id = None
         self._subnet_id = None
+        self._vpc_id = None
         self._created_at = None
         self._updated_at = None
         self._project_id = None
         self._tags = None
-        self._error = None
         self._whitelist = None
         self._enable_whitelist = None
-        self._routetables = None
         self.discriminator = None
 
         if id is not None:
@@ -100,6 +94,8 @@ class UpdateEndpointWhiteResponse(SdkResponse):
             self.service_type = service_type
         if status is not None:
             self.status = status
+        if ip is not None:
+            self.ip = ip
         if active_status is not None:
             self.active_status = active_status
         if endpoint_service_name is not None:
@@ -112,12 +108,10 @@ class UpdateEndpointWhiteResponse(SdkResponse):
             self.enable_dns = enable_dns
         if dns_names is not None:
             self.dns_names = dns_names
-        if ip is not None:
-            self.ip = ip
-        if vpc_id is not None:
-            self.vpc_id = vpc_id
         if subnet_id is not None:
             self.subnet_id = subnet_id
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
@@ -126,14 +120,10 @@ class UpdateEndpointWhiteResponse(SdkResponse):
             self.project_id = project_id
         if tags is not None:
             self.tags = tags
-        if error is not None:
-            self.error = error
         if whitelist is not None:
             self.whitelist = whitelist
         if enable_whitelist is not None:
             self.enable_whitelist = enable_whitelist
-        if routetables is not None:
-            self.routetables = routetables
 
     @property
     def id(self):
@@ -200,6 +190,28 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         :type: str
         """
         self._status = status
+
+    @property
+    def ip(self):
+        """Gets the ip of this UpdateEndpointWhiteResponse.
+
+        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： ● 当查询连接interface类型终端节点服务的终 端节点时。 ● 终端节点服务启用“连接审批”功能，且已 经“接受”连接审批。 “status”可以是“accepted”或者 “rejected（仅支持“接受”连接审批后再 “拒绝”的情况）”。
+
+        :return: The ip of this UpdateEndpointWhiteResponse.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this UpdateEndpointWhiteResponse.
+
+        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： ● 当查询连接interface类型终端节点服务的终 端节点时。 ● 终端节点服务启用“连接审批”功能，且已 经“接受”连接审批。 “status”可以是“accepted”或者 “rejected（仅支持“接受”连接审批后再 “拒绝”的情况）”。
+
+        :param ip: The ip of this UpdateEndpointWhiteResponse.
+        :type: str
+        """
+        self._ip = ip
 
     @property
     def active_status(self):
@@ -334,26 +346,26 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         self._dns_names = dns_names
 
     @property
-    def ip(self):
-        """Gets the ip of this UpdateEndpointWhiteResponse.
+    def subnet_id(self):
+        """Gets the subnet_id of this UpdateEndpointWhiteResponse.
 
-        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： ● 当查询连接interface类型终端节点服务的终 端节点时。 ● 终端节点服务启用“连接审批”功能，且已 经“接受”连接审批。 “status”可以是“accepted”或者 “rejected（仅支持“接受”连接审批后再 “拒绝”的情况）”。
+        vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
 
-        :return: The ip of this UpdateEndpointWhiteResponse.
+        :return: The subnet_id of this UpdateEndpointWhiteResponse.
         :rtype: str
         """
-        return self._ip
+        return self._subnet_id
 
-    @ip.setter
-    def ip(self, ip):
-        """Sets the ip of this UpdateEndpointWhiteResponse.
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this UpdateEndpointWhiteResponse.
 
-        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： ● 当查询连接interface类型终端节点服务的终 端节点时。 ● 终端节点服务启用“连接审批”功能，且已 经“接受”连接审批。 “status”可以是“accepted”或者 “rejected（仅支持“接受”连接审批后再 “拒绝”的情况）”。
+        vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
 
-        :param ip: The ip of this UpdateEndpointWhiteResponse.
+        :param subnet_id: The subnet_id of this UpdateEndpointWhiteResponse.
         :type: str
         """
-        self._ip = ip
+        self._subnet_id = subnet_id
 
     @property
     def vpc_id(self):
@@ -378,35 +390,13 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         self._vpc_id = vpc_id
 
     @property
-    def subnet_id(self):
-        """Gets the subnet_id of this UpdateEndpointWhiteResponse.
-
-        vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
-
-        :return: The subnet_id of this UpdateEndpointWhiteResponse.
-        :rtype: str
-        """
-        return self._subnet_id
-
-    @subnet_id.setter
-    def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this UpdateEndpointWhiteResponse.
-
-        vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
-
-        :param subnet_id: The subnet_id of this UpdateEndpointWhiteResponse.
-        :type: str
-        """
-        self._subnet_id = subnet_id
-
-    @property
     def created_at(self):
         """Gets the created_at of this UpdateEndpointWhiteResponse.
 
         终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
 
         :return: The created_at of this UpdateEndpointWhiteResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -417,7 +407,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
 
         :param created_at: The created_at of this UpdateEndpointWhiteResponse.
-        :type: datetime
+        :type: str
         """
         self._created_at = created_at
 
@@ -428,7 +418,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
 
         :return: The updated_at of this UpdateEndpointWhiteResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._updated_at
 
@@ -439,7 +429,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this UpdateEndpointWhiteResponse.
-        :type: datetime
+        :type: str
         """
         self._updated_at = updated_at
 
@@ -488,26 +478,6 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         self._tags = tags
 
     @property
-    def error(self):
-        """Gets the error of this UpdateEndpointWhiteResponse.
-
-
-        :return: The error of this UpdateEndpointWhiteResponse.
-        :rtype: QueryError
-        """
-        return self._error
-
-    @error.setter
-    def error(self, error):
-        """Sets the error of this UpdateEndpointWhiteResponse.
-
-
-        :param error: The error of this UpdateEndpointWhiteResponse.
-        :type: QueryError
-        """
-        self._error = error
-
-    @property
     def whitelist(self):
         """Gets the whitelist of this UpdateEndpointWhiteResponse.
 
@@ -550,28 +520,6 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         :type: bool
         """
         self._enable_whitelist = enable_whitelist
-
-    @property
-    def routetables(self):
-        """Gets the routetables of this UpdateEndpointWhiteResponse.
-
-        路由表ID列表。 若未指定，返回默认VPC下路由表 ID。 创建连接Gateway类型终端节点 服务的终端节点时，显示此参 数。
-
-        :return: The routetables of this UpdateEndpointWhiteResponse.
-        :rtype: list[str]
-        """
-        return self._routetables
-
-    @routetables.setter
-    def routetables(self, routetables):
-        """Sets the routetables of this UpdateEndpointWhiteResponse.
-
-        路由表ID列表。 若未指定，返回默认VPC下路由表 ID。 创建连接Gateway类型终端节点 服务的终端节点时，显示此参 数。
-
-        :param routetables: The routetables of this UpdateEndpointWhiteResponse.
-        :type: list[str]
-        """
-        self._routetables = routetables
 
     def to_dict(self):
         """Returns the model properties as a dict"""

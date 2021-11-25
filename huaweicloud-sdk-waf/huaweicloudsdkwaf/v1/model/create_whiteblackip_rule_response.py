@@ -24,7 +24,7 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'policyid': 'str',
-        'ip': 'str',
+        'addr': 'str',
         'white': 'int',
         'timestamp': 'int'
     }
@@ -32,19 +32,19 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
     attribute_map = {
         'id': 'id',
         'policyid': 'policyid',
-        'ip': 'ip',
+        'addr': 'addr',
         'white': 'white',
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, id=None, policyid=None, ip=None, white=None, timestamp=None):
+    def __init__(self, id=None, policyid=None, addr=None, white=None, timestamp=None):
         """CreateWhiteblackipRuleResponse - a model defined in huaweicloud sdk"""
         
         super(CreateWhiteblackipRuleResponse, self).__init__()
 
         self._id = None
         self._policyid = None
-        self._ip = None
+        self._addr = None
         self._white = None
         self._timestamp = None
         self.discriminator = None
@@ -53,8 +53,8 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
             self.id = id
         if policyid is not None:
             self.policyid = policyid
-        if ip is not None:
-            self.ip = ip
+        if addr is not None:
+            self.addr = addr
         if white is not None:
             self.white = white
         if timestamp is not None:
@@ -105,32 +105,32 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
         self._policyid = policyid
 
     @property
-    def ip(self):
-        """Gets the ip of this CreateWhiteblackipRuleResponse.
+    def addr(self):
+        """Gets the addr of this CreateWhiteblackipRuleResponse.
 
-        黑白名单
+        黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
 
-        :return: The ip of this CreateWhiteblackipRuleResponse.
+        :return: The addr of this CreateWhiteblackipRuleResponse.
         :rtype: str
         """
-        return self._ip
+        return self._addr
 
-    @ip.setter
-    def ip(self, ip):
-        """Sets the ip of this CreateWhiteblackipRuleResponse.
+    @addr.setter
+    def addr(self, addr):
+        """Sets the addr of this CreateWhiteblackipRuleResponse.
 
-        黑白名单
+        黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
 
-        :param ip: The ip of this CreateWhiteblackipRuleResponse.
+        :param addr: The addr of this CreateWhiteblackipRuleResponse.
         :type: str
         """
-        self._ip = ip
+        self._addr = addr
 
     @property
     def white(self):
         """Gets the white of this CreateWhiteblackipRuleResponse.
 
-        类型，0拦截，1放行
+        防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
         :return: The white of this CreateWhiteblackipRuleResponse.
         :rtype: int
@@ -141,7 +141,7 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
     def white(self, white):
         """Sets the white of this CreateWhiteblackipRuleResponse.
 
-        类型，0拦截，1放行
+        防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
         :param white: The white of this CreateWhiteblackipRuleResponse.
         :type: int
@@ -152,7 +152,7 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
     def timestamp(self):
         """Gets the timestamp of this CreateWhiteblackipRuleResponse.
 
-        创建规则的时间戳
+        创建规则的时间戳,13位毫秒时间戳
 
         :return: The timestamp of this CreateWhiteblackipRuleResponse.
         :rtype: int
@@ -163,7 +163,7 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
     def timestamp(self, timestamp):
         """Sets the timestamp of this CreateWhiteblackipRuleResponse.
 
-        创建规则的时间戳
+        创建规则的时间戳,13位毫秒时间戳
 
         :param timestamp: The timestamp of this CreateWhiteblackipRuleResponse.
         :type: int

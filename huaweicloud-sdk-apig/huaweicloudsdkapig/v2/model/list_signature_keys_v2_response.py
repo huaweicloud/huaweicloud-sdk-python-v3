@@ -24,7 +24,7 @@ class ListSignatureKeysV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'signs': 'list[SignatureCreateResp]'
+        'signs': 'list[SignatureWithBindNum]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class ListSignatureKeysV2Response(SdkResponse):
         本次查询到的签名密钥列表
 
         :return: The signs of this ListSignatureKeysV2Response.
-        :rtype: list[SignatureCreateResp]
+        :rtype: list[SignatureWithBindNum]
         """
         return self._signs
 
@@ -110,7 +110,7 @@ class ListSignatureKeysV2Response(SdkResponse):
         本次查询到的签名密钥列表
 
         :param signs: The signs of this ListSignatureKeysV2Response.
-        :type: list[SignatureCreateResp]
+        :type: list[SignatureWithBindNum]
         """
         self._signs = signs
 

@@ -134,7 +134,7 @@ class WafAsyncClient(Client):
         :return: CreateAntiTamperRuleResponse
         """
 
-        all_params = ['policy_id', 'create_anti_tamper_rules_request_body', 'enterprise_project_id']
+        all_params = ['policy_id', 'create_anti_tamper_rule_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1391,7 +1391,7 @@ class WafAsyncClient(Client):
         :return: ListBandwidthTimelineResponse
         """
 
-        all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances', 'group_by']
+        all_params = ['enterprise_project_id', '_from', 'to', 'hosts', 'instances', 'group_by']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1598,7 +1598,7 @@ class WafAsyncClient(Client):
     def list_event_async(self, request):
         """查询攻击事件列表
 
-        查询攻击事件列表
+        查询攻击事件列表，该API暂时不支持查询全部防护事件，pagesize参数不可设为-1
 
         :param ListEventRequest request
         :return: ListEventResponse
@@ -1608,13 +1608,13 @@ class WafAsyncClient(Client):
     def list_event_with_http_info(self, request):
         """查询攻击事件列表
 
-        查询攻击事件列表
+        查询攻击事件列表，该API暂时不支持查询全部防护事件，pagesize参数不可设为-1
 
         :param ListEventRequest request
         :return: ListEventResponse
         """
 
-        all_params = ['recent', 'enterprise_project_id', 'hosts', 'page', 'pagesize']
+        all_params = ['enterprise_project_id', 'recent', '_from', 'to', 'hosts', 'page', 'pagesize']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1629,6 +1629,10 @@ class WafAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'recent' in local_var_params:
             query_params.append(('recent', local_var_params['recent']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
             collection_formats['hosts'] = 'csv'
@@ -2171,7 +2175,7 @@ class WafAsyncClient(Client):
         :return: ListQpsTimelineResponse
         """
 
-        all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances', 'group_by']
+        all_params = ['enterprise_project_id', '_from', 'to', 'hosts', 'instances', 'group_by']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2225,81 +2229,6 @@ class WafAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_response_code_timeline_async(self, request):
-        """查询安全统计响应码数据
-
-        查询安全统计响应码数据
-
-        :param ListResponseCodeTimelineRequest request
-        :return: ListResponseCodeTimelineResponse
-        """
-        return self.list_response_code_timeline_with_http_info(request)
-
-    def list_response_code_timeline_with_http_info(self, request):
-        """查询安全统计响应码数据
-
-        查询安全统计响应码数据
-
-        :param ListResponseCodeTimelineRequest request
-        :return: ListResponseCodeTimelineResponse
-        """
-
-        all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances', 'response_source', 'group_by']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-        if '_from' in local_var_params:
-            query_params.append(('from', local_var_params['_from']))
-        if 'to' in local_var_params:
-            query_params.append(('to', local_var_params['to']))
-        if 'hosts' in local_var_params:
-            query_params.append(('hosts', local_var_params['hosts']))
-        if 'instances' in local_var_params:
-            query_params.append(('instances', local_var_params['instances']))
-        if 'response_source' in local_var_params:
-            query_params.append(('response_source', local_var_params['response_source']))
-        if 'group_by' in local_var_params:
-            query_params.append(('group_by', local_var_params['group_by']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/overviews/response-code/timeline',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListResponseCodeTimelineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def list_statistics_async(self, request):
         """查询安全总览请求数据
 
@@ -2319,7 +2248,7 @@ class WafAsyncClient(Client):
         :return: ListStatisticsResponse
         """
 
-        all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances']
+        all_params = ['enterprise_project_id', '_from', 'to', 'hosts', 'instances']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2390,7 +2319,7 @@ class WafAsyncClient(Client):
         :return: ListTopAbnormalResponse
         """
 
-        all_params = ['_from', 'to', 'enterprise_project_id', 'top', 'code', 'hosts', 'instances']
+        all_params = ['enterprise_project_id', '_from', 'to', 'top', 'code', 'hosts', 'instances']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2465,7 +2394,7 @@ class WafAsyncClient(Client):
         :return: ListValueListResponse
         """
 
-        all_params = ['page', 'pagesize']
+        all_params = ['page', 'pagesize', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2480,6 +2409,8 @@ class WafAsyncClient(Client):
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
             query_params.append(('pagesize', local_var_params['pagesize']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
 
         header_params = {}
 
@@ -2530,7 +2461,7 @@ class WafAsyncClient(Client):
         :return: ListWhiteblackipRuleResponse
         """
 
-        all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize']
+        all_params = ['policy_id', 'enterprise_project_id', 'page', 'pagesize', 'name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2549,6 +2480,8 @@ class WafAsyncClient(Client):
             query_params.append(('page', local_var_params['page']))
         if 'pagesize' in local_var_params:
             query_params.append(('pagesize', local_var_params['pagesize']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
 
         header_params = {}
 
@@ -3170,7 +3103,7 @@ class WafAsyncClient(Client):
     def update_host_async(self, request):
         """更新云模式防护域名
 
-        更新云模式防护域名
+        更新云模式防护域名配置，在没有填入源站信息server的原始数据的情况下，则新的源站信息server会覆盖源站信息，而不是新增源站
 
         :param UpdateHostRequest request
         :return: UpdateHostResponse
@@ -3180,7 +3113,7 @@ class WafAsyncClient(Client):
     def update_host_with_http_info(self, request):
         """更新云模式防护域名
 
-        更新云模式防护域名
+        更新云模式防护域名配置，在没有填入源站信息server的原始数据的情况下，则新的源站信息server会覆盖源站信息，而不是新增源站
 
         :param UpdateHostRequest request
         :return: UpdateHostResponse
@@ -3438,7 +3371,7 @@ class WafAsyncClient(Client):
     def update_policy_rule_status_async(self, request):
         """修改单条规则的状态
 
-        查询敏感信息选项的详细信息。
+        修改单条规则的状态
 
         :param UpdatePolicyRuleStatusRequest request
         :return: UpdatePolicyRuleStatusResponse
@@ -3448,13 +3381,13 @@ class WafAsyncClient(Client):
     def update_policy_rule_status_with_http_info(self, request):
         """修改单条规则的状态
 
-        查询敏感信息选项的详细信息。
+        修改单条规则的状态
 
         :param UpdatePolicyRuleStatusRequest request
         :return: UpdatePolicyRuleStatusResponse
         """
 
-        all_params = ['policy_id', 'ruletype', 'rule_id', 'update_rule_status_request_body', 'enterprise_project_id']
+        all_params = ['policy_id', 'ruletype', 'rule_id', 'update_policy_rule_status_request_body', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

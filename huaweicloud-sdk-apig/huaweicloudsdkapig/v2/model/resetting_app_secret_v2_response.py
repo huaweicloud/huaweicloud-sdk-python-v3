@@ -22,60 +22,63 @@ class ResettingAppSecretV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
+        'name': 'str',
+        'remark': 'str',
         'creator': 'str',
         'update_time': 'datetime',
         'app_key': 'str',
-        'name': 'str',
-        'remark': 'str',
-        'id': 'str',
         'app_secret': 'str',
         'register_time': 'datetime',
         'status': 'int',
-        'app_type': 'str'
+        'app_type': 'str',
+        'roma_app_type': 'object'
     }
 
     attribute_map = {
+        'id': 'id',
+        'name': 'name',
+        'remark': 'remark',
         'creator': 'creator',
         'update_time': 'update_time',
         'app_key': 'app_key',
-        'name': 'name',
-        'remark': 'remark',
-        'id': 'id',
         'app_secret': 'app_secret',
         'register_time': 'register_time',
         'status': 'status',
-        'app_type': 'app_type'
+        'app_type': 'app_type',
+        'roma_app_type': 'roma_app_type'
     }
 
-    def __init__(self, creator=None, update_time=None, app_key=None, name=None, remark=None, id=None, app_secret=None, register_time=None, status=None, app_type=None):
+    def __init__(self, id=None, name=None, remark=None, creator=None, update_time=None, app_key=None, app_secret=None, register_time=None, status=None, app_type=None, roma_app_type=None):
         """ResettingAppSecretV2Response - a model defined in huaweicloud sdk"""
         
         super(ResettingAppSecretV2Response, self).__init__()
 
+        self._id = None
+        self._name = None
+        self._remark = None
         self._creator = None
         self._update_time = None
         self._app_key = None
-        self._name = None
-        self._remark = None
-        self._id = None
         self._app_secret = None
         self._register_time = None
         self._status = None
         self._app_type = None
+        self._roma_app_type = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
+        if remark is not None:
+            self.remark = remark
         if creator is not None:
             self.creator = creator
         if update_time is not None:
             self.update_time = update_time
         if app_key is not None:
             self.app_key = app_key
-        if name is not None:
-            self.name = name
-        if remark is not None:
-            self.remark = remark
-        if id is not None:
-            self.id = id
         if app_secret is not None:
             self.app_secret = app_secret
         if register_time is not None:
@@ -84,12 +87,80 @@ class ResettingAppSecretV2Response(SdkResponse):
             self.status = status
         if app_type is not None:
             self.app_type = app_type
+        if roma_app_type is not None:
+            self.roma_app_type = roma_app_type
+
+    @property
+    def id(self):
+        """Gets the id of this ResettingAppSecretV2Response.
+
+        编号
+
+        :return: The id of this ResettingAppSecretV2Response.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ResettingAppSecretV2Response.
+
+        编号
+
+        :param id: The id of this ResettingAppSecretV2Response.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this ResettingAppSecretV2Response.
+
+        名称
+
+        :return: The name of this ResettingAppSecretV2Response.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ResettingAppSecretV2Response.
+
+        名称
+
+        :param name: The name of this ResettingAppSecretV2Response.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def remark(self):
+        """Gets the remark of this ResettingAppSecretV2Response.
+
+        描述
+
+        :return: The remark of this ResettingAppSecretV2Response.
+        :rtype: str
+        """
+        return self._remark
+
+    @remark.setter
+    def remark(self, remark):
+        """Sets the remark of this ResettingAppSecretV2Response.
+
+        描述
+
+        :param remark: The remark of this ResettingAppSecretV2Response.
+        :type: str
+        """
+        self._remark = remark
 
     @property
     def creator(self):
         """Gets the creator of this ResettingAppSecretV2Response.
 
-        APP的创建者 - USER：用户自行创建 - MARKET：云市场分配
+        APP的创建者 - USER：用户自行创建 - MARKET：云市场分配  暂不支持MARKET
 
         :return: The creator of this ResettingAppSecretV2Response.
         :rtype: str
@@ -100,7 +171,7 @@ class ResettingAppSecretV2Response(SdkResponse):
     def creator(self, creator):
         """Sets the creator of this ResettingAppSecretV2Response.
 
-        APP的创建者 - USER：用户自行创建 - MARKET：云市场分配
+        APP的创建者 - USER：用户自行创建 - MARKET：云市场分配  暂不支持MARKET
 
         :param creator: The creator of this ResettingAppSecretV2Response.
         :type: str
@@ -152,72 +223,6 @@ class ResettingAppSecretV2Response(SdkResponse):
         self._app_key = app_key
 
     @property
-    def name(self):
-        """Gets the name of this ResettingAppSecretV2Response.
-
-        名称
-
-        :return: The name of this ResettingAppSecretV2Response.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ResettingAppSecretV2Response.
-
-        名称
-
-        :param name: The name of this ResettingAppSecretV2Response.
-        :type: str
-        """
-        self._name = name
-
-    @property
-    def remark(self):
-        """Gets the remark of this ResettingAppSecretV2Response.
-
-        描述
-
-        :return: The remark of this ResettingAppSecretV2Response.
-        :rtype: str
-        """
-        return self._remark
-
-    @remark.setter
-    def remark(self, remark):
-        """Sets the remark of this ResettingAppSecretV2Response.
-
-        描述
-
-        :param remark: The remark of this ResettingAppSecretV2Response.
-        :type: str
-        """
-        self._remark = remark
-
-    @property
-    def id(self):
-        """Gets the id of this ResettingAppSecretV2Response.
-
-        编号
-
-        :return: The id of this ResettingAppSecretV2Response.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ResettingAppSecretV2Response.
-
-        编号
-
-        :param id: The id of this ResettingAppSecretV2Response.
-        :type: str
-        """
-        self._id = id
-
-    @property
     def app_secret(self):
         """Gets the app_secret of this ResettingAppSecretV2Response.
 
@@ -265,7 +270,7 @@ class ResettingAppSecretV2Response(SdkResponse):
     def status(self):
         """Gets the status of this ResettingAppSecretV2Response.
 
-        状态
+        状态   - 1： 有效
 
         :return: The status of this ResettingAppSecretV2Response.
         :rtype: int
@@ -276,7 +281,7 @@ class ResettingAppSecretV2Response(SdkResponse):
     def status(self, status):
         """Sets the status of this ResettingAppSecretV2Response.
 
-        状态
+        状态   - 1： 有效
 
         :param status: The status of this ResettingAppSecretV2Response.
         :type: int
@@ -287,7 +292,7 @@ class ResettingAppSecretV2Response(SdkResponse):
     def app_type(self):
         """Gets the app_type of this ResettingAppSecretV2Response.
 
-        APP的类型  默认为apig，暂不支持其他类型
+        APP的类型： - apig：存量apig应用，不推荐使用 - roma：roma集成应用  默认apig，暂不支持其他类型
 
         :return: The app_type of this ResettingAppSecretV2Response.
         :rtype: str
@@ -298,12 +303,34 @@ class ResettingAppSecretV2Response(SdkResponse):
     def app_type(self, app_type):
         """Sets the app_type of this ResettingAppSecretV2Response.
 
-        APP的类型  默认为apig，暂不支持其他类型
+        APP的类型： - apig：存量apig应用，不推荐使用 - roma：roma集成应用  默认apig，暂不支持其他类型
 
         :param app_type: The app_type of this ResettingAppSecretV2Response.
         :type: str
         """
         self._app_type = app_type
+
+    @property
+    def roma_app_type(self):
+        """Gets the roma_app_type of this ResettingAppSecretV2Response.
+
+        ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用  暂不支持
+
+        :return: The roma_app_type of this ResettingAppSecretV2Response.
+        :rtype: object
+        """
+        return self._roma_app_type
+
+    @roma_app_type.setter
+    def roma_app_type(self, roma_app_type):
+        """Sets the roma_app_type of this ResettingAppSecretV2Response.
+
+        ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用  暂不支持
+
+        :param roma_app_type: The roma_app_type of this ResettingAppSecretV2Response.
+        :type: object
+        """
+        self._roma_app_type = roma_app_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

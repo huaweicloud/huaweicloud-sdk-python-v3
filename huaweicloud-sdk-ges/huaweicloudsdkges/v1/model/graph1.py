@@ -529,7 +529,7 @@ class Graph1:
     def status(self):
         """Gets the status of this Graph1.
 
-        图的状态码。  - 100：准备中 - 200：运行中 - 201：升级中 - 202：导入中 - 203：回滚中 - 204：导出中 - 205：清空中 - 206：扩容准备中 - 207：扩容中 - 208：扩容回退中 - 300：故障 - 303：创建失败 - 400：被删除 - 900：停止 - 901：停止中 - 920：启动中
+        图的状态码。  - 100：准备中 - 200：运行中 - 201：升级中 - 202：导入中 - 203：回滚中 - 204：导出中 - 205：清空中 - 206：扩容准备中 - 207：扩容中 - 208：扩容回退中 - 300：故障 - 303：创建失败 - 400：被删除 - 800：已冻结 - 900：停止 - 901：停止中 - 920：启动中
 
         :return: The status of this Graph1.
         :rtype: str
@@ -540,7 +540,7 @@ class Graph1:
     def status(self, status):
         """Sets the status of this Graph1.
 
-        图的状态码。  - 100：准备中 - 200：运行中 - 201：升级中 - 202：导入中 - 203：回滚中 - 204：导出中 - 205：清空中 - 206：扩容准备中 - 207：扩容中 - 208：扩容回退中 - 300：故障 - 303：创建失败 - 400：被删除 - 900：停止 - 901：停止中 - 920：启动中
+        图的状态码。  - 100：准备中 - 200：运行中 - 201：升级中 - 202：导入中 - 203：回滚中 - 204：导出中 - 205：清空中 - 206：扩容准备中 - 207：扩容中 - 208：扩容回退中 - 300：故障 - 303：创建失败 - 400：被删除 - 800：已冻结 - 900：停止 - 901：停止中 - 920：启动中
 
         :param status: The status of this Graph1.
         :type: str
@@ -573,7 +573,7 @@ class Graph1:
     def graph_size_type_index(self):
         """Gets the graph_size_type_index of this Graph1.
 
-        图规模类型索引。  - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边
+        图规模类型索引。  - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 6：千亿边
 
         :return: The graph_size_type_index of this Graph1.
         :rtype: str
@@ -584,7 +584,7 @@ class Graph1:
     def graph_size_type_index(self, graph_size_type_index):
         """Sets the graph_size_type_index of this Graph1.
 
-        图规模类型索引。  - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边
+        图规模类型索引。  - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 6：千亿边
 
         :param graph_size_type_index: The graph_size_type_index of this Graph1.
         :type: str

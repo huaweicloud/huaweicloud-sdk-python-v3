@@ -23,7 +23,7 @@ class VpcBaseInfo:
 
     openapi_types = {
         'ecs_id': 'str',
-        'ecs_name': 'int',
+        'ecs_name': 'str',
         'cascade_flag': 'bool'
     }
 
@@ -79,7 +79,7 @@ class VpcBaseInfo:
         云服务器名称
 
         :return: The ecs_name of this VpcBaseInfo.
-        :rtype: int
+        :rtype: str
         """
         return self._ecs_name
 
@@ -90,7 +90,7 @@ class VpcBaseInfo:
         云服务器名称
 
         :param ecs_name: The ecs_name of this VpcBaseInfo.
-        :type: int
+        :type: str
         """
         self._ecs_name = ecs_name
 

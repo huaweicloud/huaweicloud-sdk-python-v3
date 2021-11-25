@@ -22,7 +22,7 @@ class AssociateSignatureKeyV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'bindings': 'list[SignBindingApiResp]'
+        'bindings': 'list[SignApiBindingInfo]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class AssociateSignatureKeyV2Response(SdkResponse):
         API与签名密钥的绑定关系列表
 
         :return: The bindings of this AssociateSignatureKeyV2Response.
-        :rtype: list[SignBindingApiResp]
+        :rtype: list[SignApiBindingInfo]
         """
         return self._bindings
 
@@ -58,7 +58,7 @@ class AssociateSignatureKeyV2Response(SdkResponse):
         API与签名密钥的绑定关系列表
 
         :param bindings: The bindings of this AssociateSignatureKeyV2Response.
-        :type: list[SignBindingApiResp]
+        :type: list[SignApiBindingInfo]
         """
         self._bindings = bindings
 

@@ -2798,7 +2798,7 @@ class ElbAsyncClient(Client):
     def show_quota_async(self, request):
         """查询配额详情
 
-        【不开放】查询特定项目的配额数。
+        查询特定项目的配额数。
 
         :param ShowQuotaRequest request
         :return: ShowQuotaResponse
@@ -2808,7 +2808,7 @@ class ElbAsyncClient(Client):
     def show_quota_with_http_info(self, request):
         """查询配额详情
 
-        【不开放】查询特定项目的配额数。
+        查询特定项目的配额数。
 
         :param ShowQuotaRequest request
         :return: ShowQuotaResponse
@@ -2859,7 +2859,7 @@ class ElbAsyncClient(Client):
     def show_quota_defaults_async(self, request):
         """查询默认配额
 
-        【不开放】查询默认配额数。
+        查询默认配额数。
 
         :param ShowQuotaDefaultsRequest request
         :return: ShowQuotaDefaultsResponse
@@ -2869,7 +2869,7 @@ class ElbAsyncClient(Client):
     def show_quota_defaults_with_http_info(self, request):
         """查询默认配额
 
-        【不开放】查询默认配额数。
+        查询默认配额数。
 
         :param ShowQuotaDefaultsRequest request
         :return: ShowQuotaDefaultsResponse

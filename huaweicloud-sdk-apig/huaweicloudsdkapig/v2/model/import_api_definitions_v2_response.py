@@ -22,38 +22,107 @@ class ImportApiDefinitionsV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'success': 'list[Success]',
+        'failure': 'list[Failure]',
+        'swagger': 'Swagger',
         'group_id': 'str',
-        'failure': 'list[SwaggerFailureResp]',
-        'success': 'list[SwaggerSuccessResp]',
-        'swagger': 'SwaggerInfoResp'
+        'ignore': 'list[Ignore]'
     }
 
     attribute_map = {
-        'group_id': 'group_id',
-        'failure': 'failure',
         'success': 'success',
-        'swagger': 'swagger'
+        'failure': 'failure',
+        'swagger': 'swagger',
+        'group_id': 'group_id',
+        'ignore': 'ignore'
     }
 
-    def __init__(self, group_id=None, failure=None, success=None, swagger=None):
+    def __init__(self, success=None, failure=None, swagger=None, group_id=None, ignore=None):
         """ImportApiDefinitionsV2Response - a model defined in huaweicloud sdk"""
         
         super(ImportApiDefinitionsV2Response, self).__init__()
 
-        self._group_id = None
-        self._failure = None
         self._success = None
+        self._failure = None
         self._swagger = None
+        self._group_id = None
+        self._ignore = None
         self.discriminator = None
 
-        if group_id is not None:
-            self.group_id = group_id
-        if failure is not None:
-            self.failure = failure
         if success is not None:
             self.success = success
+        if failure is not None:
+            self.failure = failure
         if swagger is not None:
             self.swagger = swagger
+        if group_id is not None:
+            self.group_id = group_id
+        if ignore is not None:
+            self.ignore = ignore
+
+    @property
+    def success(self):
+        """Gets the success of this ImportApiDefinitionsV2Response.
+
+        导入成功信息
+
+        :return: The success of this ImportApiDefinitionsV2Response.
+        :rtype: list[Success]
+        """
+        return self._success
+
+    @success.setter
+    def success(self, success):
+        """Sets the success of this ImportApiDefinitionsV2Response.
+
+        导入成功信息
+
+        :param success: The success of this ImportApiDefinitionsV2Response.
+        :type: list[Success]
+        """
+        self._success = success
+
+    @property
+    def failure(self):
+        """Gets the failure of this ImportApiDefinitionsV2Response.
+
+        导入失败信息
+
+        :return: The failure of this ImportApiDefinitionsV2Response.
+        :rtype: list[Failure]
+        """
+        return self._failure
+
+    @failure.setter
+    def failure(self, failure):
+        """Sets the failure of this ImportApiDefinitionsV2Response.
+
+        导入失败信息
+
+        :param failure: The failure of this ImportApiDefinitionsV2Response.
+        :type: list[Failure]
+        """
+        self._failure = failure
+
+    @property
+    def swagger(self):
+        """Gets the swagger of this ImportApiDefinitionsV2Response.
+
+
+        :return: The swagger of this ImportApiDefinitionsV2Response.
+        :rtype: Swagger
+        """
+        return self._swagger
+
+    @swagger.setter
+    def swagger(self, swagger):
+        """Sets the swagger of this ImportApiDefinitionsV2Response.
+
+
+        :param swagger: The swagger of this ImportApiDefinitionsV2Response.
+        :type: Swagger
+        """
+        self._swagger = swagger
 
     @property
     def group_id(self):
@@ -78,68 +147,26 @@ class ImportApiDefinitionsV2Response(SdkResponse):
         self._group_id = group_id
 
     @property
-    def failure(self):
-        """Gets the failure of this ImportApiDefinitionsV2Response.
+    def ignore(self):
+        """Gets the ignore of this ImportApiDefinitionsV2Response.
 
-        导入失败信息
+        被忽略导入的API信息
 
-        :return: The failure of this ImportApiDefinitionsV2Response.
-        :rtype: list[SwaggerFailureResp]
+        :return: The ignore of this ImportApiDefinitionsV2Response.
+        :rtype: list[Ignore]
         """
-        return self._failure
+        return self._ignore
 
-    @failure.setter
-    def failure(self, failure):
-        """Sets the failure of this ImportApiDefinitionsV2Response.
+    @ignore.setter
+    def ignore(self, ignore):
+        """Sets the ignore of this ImportApiDefinitionsV2Response.
 
-        导入失败信息
+        被忽略导入的API信息
 
-        :param failure: The failure of this ImportApiDefinitionsV2Response.
-        :type: list[SwaggerFailureResp]
+        :param ignore: The ignore of this ImportApiDefinitionsV2Response.
+        :type: list[Ignore]
         """
-        self._failure = failure
-
-    @property
-    def success(self):
-        """Gets the success of this ImportApiDefinitionsV2Response.
-
-        导入成功信息
-
-        :return: The success of this ImportApiDefinitionsV2Response.
-        :rtype: list[SwaggerSuccessResp]
-        """
-        return self._success
-
-    @success.setter
-    def success(self, success):
-        """Sets the success of this ImportApiDefinitionsV2Response.
-
-        导入成功信息
-
-        :param success: The success of this ImportApiDefinitionsV2Response.
-        :type: list[SwaggerSuccessResp]
-        """
-        self._success = success
-
-    @property
-    def swagger(self):
-        """Gets the swagger of this ImportApiDefinitionsV2Response.
-
-
-        :return: The swagger of this ImportApiDefinitionsV2Response.
-        :rtype: SwaggerInfoResp
-        """
-        return self._swagger
-
-    @swagger.setter
-    def swagger(self, swagger):
-        """Sets the swagger of this ImportApiDefinitionsV2Response.
-
-
-        :param swagger: The swagger of this ImportApiDefinitionsV2Response.
-        :type: SwaggerInfoResp
-        """
-        self._swagger = swagger
+        self._ignore = ignore
 
     def to_dict(self):
         """Returns the model properties as a dict"""

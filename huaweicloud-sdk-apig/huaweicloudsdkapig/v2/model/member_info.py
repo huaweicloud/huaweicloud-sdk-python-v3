@@ -24,6 +24,10 @@ class MemberInfo:
     openapi_types = {
         'host': 'str',
         'weight': 'int',
+        'is_backup': 'bool',
+        'member_group_name': 'str',
+        'status': 'int',
+        'port': 'int',
         'ecs_id': 'str',
         'ecs_name': 'str'
     }
@@ -31,17 +35,25 @@ class MemberInfo:
     attribute_map = {
         'host': 'host',
         'weight': 'weight',
+        'is_backup': 'is_backup',
+        'member_group_name': 'member_group_name',
+        'status': 'status',
+        'port': 'port',
         'ecs_id': 'ecs_id',
         'ecs_name': 'ecs_name'
     }
 
-    def __init__(self, host=None, weight=None, ecs_id=None, ecs_name=None):
+    def __init__(self, host=None, weight=None, is_backup=None, member_group_name=None, status=None, port=None, ecs_id=None, ecs_name=None):
         """MemberInfo - a model defined in huaweicloud sdk"""
         
         
 
         self._host = None
         self._weight = None
+        self._is_backup = None
+        self._member_group_name = None
+        self._status = None
+        self._port = None
         self._ecs_id = None
         self._ecs_name = None
         self.discriminator = None
@@ -50,6 +62,14 @@ class MemberInfo:
             self.host = host
         if weight is not None:
             self.weight = weight
+        if is_backup is not None:
+            self.is_backup = is_backup
+        if member_group_name is not None:
+            self.member_group_name = member_group_name
+        if status is not None:
+            self.status = status
+        if port is not None:
+            self.port = port
         if ecs_id is not None:
             self.ecs_id = ecs_id
         if ecs_name is not None:
@@ -59,7 +79,7 @@ class MemberInfo:
     def host(self):
         """Gets the host of this MemberInfo.
 
-        后端服务器地址  后端实例类型为ip时生效
+        后端服务器地址  后端实例类型为ip时必填
 
         :return: The host of this MemberInfo.
         :rtype: str
@@ -70,7 +90,7 @@ class MemberInfo:
     def host(self, host):
         """Sets the host of this MemberInfo.
 
-        后端服务器地址  后端实例类型为ip时生效
+        后端服务器地址  后端实例类型为ip时必填
 
         :param host: The host of this MemberInfo.
         :type: str
@@ -81,7 +101,7 @@ class MemberInfo:
     def weight(self):
         """Gets the weight of this MemberInfo.
 
-        权重值。  允许您对云服务器进行评级，权重值越大，转发到该云服务的请求数量越多。权重只对加权轮询和加权最小连接算法生效  仅VPC通道类型为2时有效。
+        权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
 
         :return: The weight of this MemberInfo.
         :rtype: int
@@ -92,12 +112,100 @@ class MemberInfo:
     def weight(self, weight):
         """Sets the weight of this MemberInfo.
 
-        权重值。  允许您对云服务器进行评级，权重值越大，转发到该云服务的请求数量越多。权重只对加权轮询和加权最小连接算法生效  仅VPC通道类型为2时有效。
+        权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
 
         :param weight: The weight of this MemberInfo.
         :type: int
         """
         self._weight = weight
+
+    @property
+    def is_backup(self):
+        """Gets the is_backup of this MemberInfo.
+
+        是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
+
+        :return: The is_backup of this MemberInfo.
+        :rtype: bool
+        """
+        return self._is_backup
+
+    @is_backup.setter
+    def is_backup(self, is_backup):
+        """Sets the is_backup of this MemberInfo.
+
+        是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
+
+        :param is_backup: The is_backup of this MemberInfo.
+        :type: bool
+        """
+        self._is_backup = is_backup
+
+    @property
+    def member_group_name(self):
+        """Gets the member_group_name of this MemberInfo.
+
+        后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
+
+        :return: The member_group_name of this MemberInfo.
+        :rtype: str
+        """
+        return self._member_group_name
+
+    @member_group_name.setter
+    def member_group_name(self, member_group_name):
+        """Sets the member_group_name of this MemberInfo.
+
+        后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
+
+        :param member_group_name: The member_group_name of this MemberInfo.
+        :type: str
+        """
+        self._member_group_name = member_group_name
+
+    @property
+    def status(self):
+        """Gets the status of this MemberInfo.
+
+        后端服务器状态   - 1：可用   - 2：不可用
+
+        :return: The status of this MemberInfo.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this MemberInfo.
+
+        后端服务器状态   - 1：可用   - 2：不可用
+
+        :param status: The status of this MemberInfo.
+        :type: int
+        """
+        self._status = status
+
+    @property
+    def port(self):
+        """Gets the port of this MemberInfo.
+
+        后端服务器端口
+
+        :return: The port of this MemberInfo.
+        :rtype: int
+        """
+        return self._port
+
+    @port.setter
+    def port(self, port):
+        """Sets the port of this MemberInfo.
+
+        后端服务器端口
+
+        :param port: The port of this MemberInfo.
+        :type: int
+        """
+        self._port = port
 
     @property
     def ecs_id(self):

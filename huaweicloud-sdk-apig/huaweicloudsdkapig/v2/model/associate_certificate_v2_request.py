@@ -23,32 +23,32 @@ class AssociateCertificateV2Request:
 
     openapi_types = {
         'instance_id': 'str',
-        'domain_id': 'str',
         'group_id': 'str',
-        'body': 'DomainCertReq'
+        'domain_id': 'str',
+        'body': 'CertForm'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
-        'domain_id': 'domain_id',
         'group_id': 'group_id',
+        'domain_id': 'domain_id',
         'body': 'body'
     }
 
-    def __init__(self, instance_id=None, domain_id=None, group_id=None, body=None):
+    def __init__(self, instance_id=None, group_id=None, domain_id=None, body=None):
         """AssociateCertificateV2Request - a model defined in huaweicloud sdk"""
         
         
 
         self._instance_id = None
-        self._domain_id = None
         self._group_id = None
+        self._domain_id = None
         self._body = None
         self.discriminator = None
 
         self.instance_id = instance_id
-        self.domain_id = domain_id
         self.group_id = group_id
+        self.domain_id = domain_id
         if body is not None:
             self.body = body
 
@@ -56,7 +56,7 @@ class AssociateCertificateV2Request:
     def instance_id(self):
         """Gets the instance_id of this AssociateCertificateV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this AssociateCertificateV2Request.
         :rtype: str
@@ -67,34 +67,12 @@ class AssociateCertificateV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this AssociateCertificateV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this AssociateCertificateV2Request.
         :type: str
         """
         self._instance_id = instance_id
-
-    @property
-    def domain_id(self):
-        """Gets the domain_id of this AssociateCertificateV2Request.
-
-        域名的编号
-
-        :return: The domain_id of this AssociateCertificateV2Request.
-        :rtype: str
-        """
-        return self._domain_id
-
-    @domain_id.setter
-    def domain_id(self, domain_id):
-        """Sets the domain_id of this AssociateCertificateV2Request.
-
-        域名的编号
-
-        :param domain_id: The domain_id of this AssociateCertificateV2Request.
-        :type: str
-        """
-        self._domain_id = domain_id
 
     @property
     def group_id(self):
@@ -119,12 +97,34 @@ class AssociateCertificateV2Request:
         self._group_id = group_id
 
     @property
+    def domain_id(self):
+        """Gets the domain_id of this AssociateCertificateV2Request.
+
+        域名的编号
+
+        :return: The domain_id of this AssociateCertificateV2Request.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this AssociateCertificateV2Request.
+
+        域名的编号
+
+        :param domain_id: The domain_id of this AssociateCertificateV2Request.
+        :type: str
+        """
+        self._domain_id = domain_id
+
+    @property
     def body(self):
         """Gets the body of this AssociateCertificateV2Request.
 
 
         :return: The body of this AssociateCertificateV2Request.
-        :rtype: DomainCertReq
+        :rtype: CertForm
         """
         return self._body
 
@@ -134,7 +134,7 @@ class AssociateCertificateV2Request:
 
 
         :param body: The body of this AssociateCertificateV2Request.
-        :type: DomainCertReq
+        :type: CertForm
         """
         self._body = body
 

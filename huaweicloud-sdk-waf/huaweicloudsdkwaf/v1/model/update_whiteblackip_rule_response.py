@@ -152,7 +152,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
     def white(self):
         """Gets the white of this UpdateWhiteblackipRuleResponse.
 
-        设置的ip地址类型，1放行，0拦截，2仅记录
+        防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
         :return: The white of this UpdateWhiteblackipRuleResponse.
         :rtype: int
@@ -163,7 +163,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
     def white(self, white):
         """Sets the white of this UpdateWhiteblackipRuleResponse.
 
-        设置的ip地址类型，1放行，0拦截，2仅记录
+        防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
         :param white: The white of this UpdateWhiteblackipRuleResponse.
         :type: int

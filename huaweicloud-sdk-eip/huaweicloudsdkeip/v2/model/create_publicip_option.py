@@ -24,16 +24,18 @@ class CreatePublicipOption:
     openapi_types = {
         'ip_address': 'str',
         'type': 'str',
-        'ip_version': 'int'
+        'ip_version': 'int',
+        'alias': 'str'
     }
 
     attribute_map = {
         'ip_address': 'ip_address',
         'type': 'type',
-        'ip_version': 'ip_version'
+        'ip_version': 'ip_version',
+        'alias': 'alias'
     }
 
-    def __init__(self, ip_address=None, type=None, ip_version=None):
+    def __init__(self, ip_address=None, type=None, ip_version=None, alias=None):
         """CreatePublicipOption - a model defined in huaweicloud sdk"""
         
         
@@ -41,6 +43,7 @@ class CreatePublicipOption:
         self._ip_address = None
         self._type = None
         self._ip_version = None
+        self._alias = None
         self.discriminator = None
 
         if ip_address is not None:
@@ -48,6 +51,8 @@ class CreatePublicipOption:
         self.type = type
         if ip_version is not None:
             self.ip_version = ip_version
+        if alias is not None:
+            self.alias = alias
 
     @property
     def ip_address(self):
@@ -114,6 +119,28 @@ class CreatePublicipOption:
         :type: int
         """
         self._ip_version = ip_version
+
+    @property
+    def alias(self):
+        """Gets the alias of this CreatePublicipOption.
+
+        功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+
+        :return: The alias of this CreatePublicipOption.
+        :rtype: str
+        """
+        return self._alias
+
+    @alias.setter
+    def alias(self, alias):
+        """Sets the alias of this CreatePublicipOption.
+
+        功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+
+        :param alias: The alias of this CreatePublicipOption.
+        :type: str
+        """
+        self._alias = alias
 
     def to_dict(self):
         """Returns the model properties as a dict"""

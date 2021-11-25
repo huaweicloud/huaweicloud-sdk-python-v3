@@ -25,17 +25,19 @@ class ListWhiteblackipRuleRequest:
         'enterprise_project_id': 'str',
         'policy_id': 'str',
         'page': 'int',
-        'pagesize': 'int'
+        'pagesize': 'int',
+        'name': 'str'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'policy_id': 'policy_id',
         'page': 'page',
-        'pagesize': 'pagesize'
+        'pagesize': 'pagesize',
+        'name': 'name'
     }
 
-    def __init__(self, enterprise_project_id=None, policy_id=None, page=None, pagesize=None):
+    def __init__(self, enterprise_project_id=None, policy_id=None, page=None, pagesize=None, name=None):
         """ListWhiteblackipRuleRequest - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +46,7 @@ class ListWhiteblackipRuleRequest:
         self._policy_id = None
         self._page = None
         self._pagesize = None
+        self._name = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -53,12 +56,14 @@ class ListWhiteblackipRuleRequest:
             self.page = page
         if pagesize is not None:
             self.pagesize = pagesize
+        if name is not None:
+            self.name = name
 
     @property
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListWhiteblackipRuleRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ListWhiteblackipRuleRequest.
         :rtype: str
@@ -69,7 +74,7 @@ class ListWhiteblackipRuleRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListWhiteblackipRuleRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListWhiteblackipRuleRequest.
         :type: str
@@ -80,7 +85,7 @@ class ListWhiteblackipRuleRequest:
     def policy_id(self):
         """Gets the policy_id of this ListWhiteblackipRuleRequest.
 
-        策略id（策略id从查询防护策略列表接口获取）
+        防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :return: The policy_id of this ListWhiteblackipRuleRequest.
         :rtype: str
@@ -91,7 +96,7 @@ class ListWhiteblackipRuleRequest:
     def policy_id(self, policy_id):
         """Sets the policy_id of this ListWhiteblackipRuleRequest.
 
-        策略id（策略id从查询防护策略列表接口获取）
+        防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :param policy_id: The policy_id of this ListWhiteblackipRuleRequest.
         :type: str
@@ -102,7 +107,7 @@ class ListWhiteblackipRuleRequest:
     def page(self):
         """Gets the page of this ListWhiteblackipRuleRequest.
 
-        页码
+        分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :return: The page of this ListWhiteblackipRuleRequest.
         :rtype: int
@@ -113,7 +118,7 @@ class ListWhiteblackipRuleRequest:
     def page(self, page):
         """Sets the page of this ListWhiteblackipRuleRequest.
 
-        页码
+        分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :param page: The page of this ListWhiteblackipRuleRequest.
         :type: int
@@ -124,7 +129,7 @@ class ListWhiteblackipRuleRequest:
     def pagesize(self):
         """Gets the pagesize of this ListWhiteblackipRuleRequest.
 
-        每页条数
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :return: The pagesize of this ListWhiteblackipRuleRequest.
         :rtype: int
@@ -135,12 +140,34 @@ class ListWhiteblackipRuleRequest:
     def pagesize(self, pagesize):
         """Sets the pagesize of this ListWhiteblackipRuleRequest.
 
-        每页条数
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :param pagesize: The pagesize of this ListWhiteblackipRuleRequest.
         :type: int
         """
         self._pagesize = pagesize
+
+    @property
+    def name(self):
+        """Gets the name of this ListWhiteblackipRuleRequest.
+
+        黑白名单规则名称
+
+        :return: The name of this ListWhiteblackipRuleRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListWhiteblackipRuleRequest.
+
+        黑白名单规则名称
+
+        :param name: The name of this ListWhiteblackipRuleRequest.
+        :type: str
+        """
+        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

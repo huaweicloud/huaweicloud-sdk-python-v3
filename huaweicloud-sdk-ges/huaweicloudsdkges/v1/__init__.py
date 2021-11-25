@@ -35,6 +35,9 @@ from huaweicloudsdkges.v1.model.detach_eip_response import DetachEipResponse
 from huaweicloudsdkges.v1.model.edgeset_path import EdgesetPath
 from huaweicloudsdkges.v1.model.edgeset_path1 import EdgesetPath1
 from huaweicloudsdkges.v1.model.encryption_req import EncryptionReq
+from huaweicloudsdkges.v1.model.expand_graph_req import ExpandGraphReq
+from huaweicloudsdkges.v1.model.expand_graph_request import ExpandGraphRequest
+from huaweicloudsdkges.v1.model.expand_graph_response import ExpandGraphResponse
 from huaweicloudsdkges.v1.model.export_graph_req import ExportGraphReq
 from huaweicloudsdkges.v1.model.export_graph_request import ExportGraphRequest
 from huaweicloudsdkges.v1.model.export_graph_response import ExportGraphResponse
@@ -42,6 +45,7 @@ from huaweicloudsdkges.v1.model.ges_meta_data import GesMetaData
 from huaweicloudsdkges.v1.model.ges_quota_resp import GesQuotaResp
 from huaweicloudsdkges.v1.model.graph import Graph
 from huaweicloudsdkges.v1.model.graph1 import Graph1
+from huaweicloudsdkges.v1.model.graph_size_type_index_req import GraphSizeTypeIndexReq
 from huaweicloudsdkges.v1.model.import_graph_req import ImportGraphReq
 from huaweicloudsdkges.v1.model.import_graph_request import ImportGraphRequest
 from huaweicloudsdkges.v1.model.import_graph_response import ImportGraphResponse
@@ -68,6 +72,10 @@ from huaweicloudsdkges.v1.model.parallel_edge import ParallelEdge
 from huaweicloudsdkges.v1.model.parameters import Parameters
 from huaweicloudsdkges.v1.model.public_ip import PublicIp
 from huaweicloudsdkges.v1.model.quota import Quota
+from huaweicloudsdkges.v1.model.replication_req import ReplicationReq
+from huaweicloudsdkges.v1.model.resize_graph_req import ResizeGraphReq
+from huaweicloudsdkges.v1.model.resize_graph_request import ResizeGraphRequest
+from huaweicloudsdkges.v1.model.resize_graph_response import ResizeGraphResponse
 from huaweicloudsdkges.v1.model.restart_graph_request import RestartGraphRequest
 from huaweicloudsdkges.v1.model.restart_graph_response import RestartGraphResponse
 from huaweicloudsdkges.v1.model.schema_path import SchemaPath
@@ -86,6 +94,9 @@ from huaweicloudsdkges.v1.model.unbind_eip_req import UnbindEipReq
 from huaweicloudsdkges.v1.model.upgrade_graph_req import UpgradeGraphReq
 from huaweicloudsdkges.v1.model.upgrade_graph_request import UpgradeGraphRequest
 from huaweicloudsdkges.v1.model.upgrade_graph_response import UpgradeGraphResponse
+from huaweicloudsdkges.v1.model.upload_from_obs_req import UploadFromOBSReq
+from huaweicloudsdkges.v1.model.upload_from_obs_request import UploadFromObsRequest
+from huaweicloudsdkges.v1.model.upload_from_obs_response import UploadFromObsResponse
 from huaweicloudsdkges.v1.model.vertexset_path import VertexsetPath
 from huaweicloudsdkges.v1.model.vertexset_path1 import VertexsetPath1
 

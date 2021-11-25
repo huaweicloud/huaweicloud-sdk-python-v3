@@ -189,7 +189,7 @@ class VatInvoiceResult:
     def type(self):
         """Gets the type of this VatInvoiceResult.
 
-        增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票 
+        增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - roll：增值税普通发票（卷票） 
 
         :return: The type of this VatInvoiceResult.
         :rtype: str
@@ -200,7 +200,7 @@ class VatInvoiceResult:
     def type(self, type):
         """Sets the type of this VatInvoiceResult.
 
-        增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票 
+        增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - roll：增值税普通发票（卷票） 
 
         :param type: The type of this VatInvoiceResult.
         :type: str

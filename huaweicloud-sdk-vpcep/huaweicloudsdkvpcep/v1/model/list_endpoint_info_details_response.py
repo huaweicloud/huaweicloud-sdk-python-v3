@@ -34,8 +34,8 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         'ip': 'str',
         'vpc_id': 'str',
         'subnet_id': 'str',
-        'created_at': 'datetime',
-        'updated_at': 'datetime',
+        'created_at': 'str',
+        'updated_at': 'str',
         'project_id': 'str',
         'tags': 'list[TagList]',
         'error': 'QueryError',
@@ -406,7 +406,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
 
         :return: The created_at of this ListEndpointInfoDetailsResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -417,7 +417,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
 
         :param created_at: The created_at of this ListEndpointInfoDetailsResponse.
-        :type: datetime
+        :type: str
         """
         self._created_at = created_at
 
@@ -428,7 +428,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
 
         :return: The updated_at of this ListEndpointInfoDetailsResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._updated_at
 
@@ -439,7 +439,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this ListEndpointInfoDetailsResponse.
-        :type: datetime
+        :type: str
         """
         self._updated_at = updated_at
 

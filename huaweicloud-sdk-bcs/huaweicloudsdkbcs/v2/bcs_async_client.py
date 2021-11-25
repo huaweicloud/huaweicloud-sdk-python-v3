@@ -308,6 +308,73 @@ class BcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_blockchain_cert_by_user_name_async(self, request):
+        """生成用户证书
+
+        通过用户名生成指定服务实例组织用户证书
+
+        :param CreateBlockchainCertByUserNameRequest request
+        :return: CreateBlockchainCertByUserNameResponse
+        """
+        return self.create_blockchain_cert_by_user_name_with_http_info(request)
+
+    def create_blockchain_cert_by_user_name_with_http_info(self, request):
+        """生成用户证书
+
+        通过用户名生成指定服务实例组织用户证书
+
+        :param CreateBlockchainCertByUserNameRequest request
+        :return: CreateBlockchainCertByUserNameResponse
+        """
+
+        all_params = ['blockchain_id', 'org_name', 'user_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'blockchain_id' in local_var_params:
+            path_params['blockchain_id'] = local_var_params['blockchain_id']
+        if 'org_name' in local_var_params:
+            path_params['org_name'] = local_var_params['org_name']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/orgs/{org_name}/usercert/{user_name}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateBlockchainCertByUserNameResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_new_blockchain_async(self, request):
         """创建服务实例
 
@@ -440,6 +507,69 @@ class BcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_member_invite_async(self, request):
+        """删除邀请成员信息
+
+        可通过此接口批量取消邀请或删除对已退出或拒绝加入或解散的成员邀请信息
+
+        :param DeleteMemberInviteRequest request
+        :return: DeleteMemberInviteResponse
+        """
+        return self.delete_member_invite_with_http_info(request)
+
+    def delete_member_invite_with_http_info(self, request):
+        """删除邀请成员信息
+
+        可通过此接口批量取消邀请或删除对已退出或拒绝加入或解散的成员邀请信息
+
+        :param DeleteMemberInviteRequest request
+        :return: DeleteMemberInviteResponse
+        """
+
+        all_params = ['delete_member_invite_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/members/invitations',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteMemberInviteResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def download_blockchain_cert_async(self, request):
         """下载证书
 
@@ -566,6 +696,73 @@ class BcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DownloadBlockchainSdkConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def freeze_cert_async(self, request):
+        """冻结用户证书
+
+        冻结指定服务实例组织用户证书，冻结后需等待半分钟到一分钟左右生效
+
+        :param FreezeCertRequest request
+        :return: FreezeCertResponse
+        """
+        return self.freeze_cert_with_http_info(request)
+
+    def freeze_cert_with_http_info(self, request):
+        """冻结用户证书
+
+        冻结指定服务实例组织用户证书，冻结后需等待半分钟到一分钟左右生效
+
+        :param FreezeCertRequest request
+        :return: FreezeCertResponse
+        """
+
+        all_params = ['user_name', 'blockchain_id', 'org_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+        if 'blockchain_id' in local_var_params:
+            path_params['blockchain_id'] = local_var_params['blockchain_id']
+        if 'org_name' in local_var_params:
+            path_params['org_name'] = local_var_params['org_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/orgs/{org_name}/usercert/{user_name}/freeze',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='FreezeCertResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1452,6 +1649,73 @@ class BcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowBlockchainStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def unfreeze_cert_async(self, request):
+        """解冻用户证书
+
+        解冻指定服务实例组织用户证书，解冻后需等待半分钟到一分钟左右生效
+
+        :param UnfreezeCertRequest request
+        :return: UnfreezeCertResponse
+        """
+        return self.unfreeze_cert_with_http_info(request)
+
+    def unfreeze_cert_with_http_info(self, request):
+        """解冻用户证书
+
+        解冻指定服务实例组织用户证书，解冻后需等待半分钟到一分钟左右生效
+
+        :param UnfreezeCertRequest request
+        :return: UnfreezeCertResponse
+        """
+
+        all_params = ['user_name', 'blockchain_id', 'org_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+        if 'blockchain_id' in local_var_params:
+            path_params['blockchain_id'] = local_var_params['blockchain_id']
+        if 'org_name' in local_var_params:
+            path_params['org_name'] = local_var_params['org_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/orgs/{org_name}/usercert/{user_name}/unfreeze',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UnfreezeCertResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

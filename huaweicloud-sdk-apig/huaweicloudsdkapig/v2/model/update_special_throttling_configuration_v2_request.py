@@ -25,7 +25,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
         'instance_id': 'str',
         'throttle_id': 'str',
         'strategy_id': 'str',
-        'body': 'ThrottleSpecialUpdateReq'
+        'body': 'ThrottleSpecialUpdate'
     }
 
     attribute_map = {
@@ -56,7 +56,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
     def instance_id(self):
         """Gets the instance_id of this UpdateSpecialThrottlingConfigurationV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this UpdateSpecialThrottlingConfigurationV2Request.
         :rtype: str
@@ -67,7 +67,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateSpecialThrottlingConfigurationV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this UpdateSpecialThrottlingConfigurationV2Request.
         :type: str
@@ -78,7 +78,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
     def throttle_id(self):
         """Gets the throttle_id of this UpdateSpecialThrottlingConfigurationV2Request.
 
-        流控策略的ID
+        流控策略的编号
 
         :return: The throttle_id of this UpdateSpecialThrottlingConfigurationV2Request.
         :rtype: str
@@ -89,7 +89,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
     def throttle_id(self, throttle_id):
         """Sets the throttle_id of this UpdateSpecialThrottlingConfigurationV2Request.
 
-        流控策略的ID
+        流控策略的编号
 
         :param throttle_id: The throttle_id of this UpdateSpecialThrottlingConfigurationV2Request.
         :type: str
@@ -124,7 +124,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
 
 
         :return: The body of this UpdateSpecialThrottlingConfigurationV2Request.
-        :rtype: ThrottleSpecialUpdateReq
+        :rtype: ThrottleSpecialUpdate
         """
         return self._body
 
@@ -134,7 +134,7 @@ class UpdateSpecialThrottlingConfigurationV2Request:
 
 
         :param body: The body of this UpdateSpecialThrottlingConfigurationV2Request.
-        :type: ThrottleSpecialUpdateReq
+        :type: ThrottleSpecialUpdate
         """
         self._body = body
 

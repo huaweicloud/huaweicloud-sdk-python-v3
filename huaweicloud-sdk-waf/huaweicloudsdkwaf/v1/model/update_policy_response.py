@@ -24,61 +24,66 @@ class UpdatePolicyResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'level': 'int',
         'action': 'PolicyAction',
         'options': 'PolicyOption',
-        'level': 'int',
-        'full_detection': 'bool',
-        'bind_host': 'list[BindHost]',
+        'hosts': 'list[str]',
+        'extend': 'dict(str, str)',
         'timestamp': 'int',
-        'extend': 'dict(str, str)'
+        'full_detection': 'bool',
+        'bind_host': 'list[BindHost]'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'level': 'level',
         'action': 'action',
         'options': 'options',
-        'level': 'level',
-        'full_detection': 'full_detection',
-        'bind_host': 'bind_host',
+        'hosts': 'hosts',
+        'extend': 'extend',
         'timestamp': 'timestamp',
-        'extend': 'extend'
+        'full_detection': 'full_detection',
+        'bind_host': 'bind_host'
     }
 
-    def __init__(self, id=None, name=None, action=None, options=None, level=None, full_detection=None, bind_host=None, timestamp=None, extend=None):
+    def __init__(self, id=None, name=None, level=None, action=None, options=None, hosts=None, extend=None, timestamp=None, full_detection=None, bind_host=None):
         """UpdatePolicyResponse - a model defined in huaweicloud sdk"""
         
         super(UpdatePolicyResponse, self).__init__()
 
         self._id = None
         self._name = None
+        self._level = None
         self._action = None
         self._options = None
-        self._level = None
+        self._hosts = None
+        self._extend = None
+        self._timestamp = None
         self._full_detection = None
         self._bind_host = None
-        self._timestamp = None
-        self._extend = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if name is not None:
             self.name = name
+        if level is not None:
+            self.level = level
         if action is not None:
             self.action = action
         if options is not None:
             self.options = options
-        if level is not None:
-            self.level = level
+        if hosts is not None:
+            self.hosts = hosts
+        if extend is not None:
+            self.extend = extend
+        if timestamp is not None:
+            self.timestamp = timestamp
         if full_detection is not None:
             self.full_detection = full_detection
         if bind_host is not None:
             self.bind_host = bind_host
-        if timestamp is not None:
-            self.timestamp = timestamp
-        if extend is not None:
-            self.extend = extend
 
     @property
     def id(self):
@@ -125,6 +130,28 @@ class UpdatePolicyResponse(SdkResponse):
         self._name = name
 
     @property
+    def level(self):
+        """Gets the level of this UpdatePolicyResponse.
+
+        防护等级
+
+        :return: The level of this UpdatePolicyResponse.
+        :rtype: int
+        """
+        return self._level
+
+    @level.setter
+    def level(self, level):
+        """Sets the level of this UpdatePolicyResponse.
+
+        防护等级
+
+        :param level: The level of this UpdatePolicyResponse.
+        :type: int
+        """
+        self._level = level
+
+    @property
     def action(self):
         """Gets the action of this UpdatePolicyResponse.
 
@@ -165,26 +192,70 @@ class UpdatePolicyResponse(SdkResponse):
         self._options = options
 
     @property
-    def level(self):
-        """Gets the level of this UpdatePolicyResponse.
+    def hosts(self):
+        """Gets the hosts of this UpdatePolicyResponse.
 
-        防护等级
+        防护域名的信息
 
-        :return: The level of this UpdatePolicyResponse.
+        :return: The hosts of this UpdatePolicyResponse.
+        :rtype: list[str]
+        """
+        return self._hosts
+
+    @hosts.setter
+    def hosts(self, hosts):
+        """Sets the hosts of this UpdatePolicyResponse.
+
+        防护域名的信息
+
+        :param hosts: The hosts of this UpdatePolicyResponse.
+        :type: list[str]
+        """
+        self._hosts = hosts
+
+    @property
+    def extend(self):
+        """Gets the extend of this UpdatePolicyResponse.
+
+        扩展字段
+
+        :return: The extend of this UpdatePolicyResponse.
+        :rtype: dict(str, str)
+        """
+        return self._extend
+
+    @extend.setter
+    def extend(self, extend):
+        """Sets the extend of this UpdatePolicyResponse.
+
+        扩展字段
+
+        :param extend: The extend of this UpdatePolicyResponse.
+        :type: dict(str, str)
+        """
+        self._extend = extend
+
+    @property
+    def timestamp(self):
+        """Gets the timestamp of this UpdatePolicyResponse.
+
+        创建防护策略的时间
+
+        :return: The timestamp of this UpdatePolicyResponse.
         :rtype: int
         """
-        return self._level
+        return self._timestamp
 
-    @level.setter
-    def level(self, level):
-        """Sets the level of this UpdatePolicyResponse.
+    @timestamp.setter
+    def timestamp(self, timestamp):
+        """Sets the timestamp of this UpdatePolicyResponse.
 
-        防护等级
+        创建防护策略的时间
 
-        :param level: The level of this UpdatePolicyResponse.
+        :param timestamp: The timestamp of this UpdatePolicyResponse.
         :type: int
         """
-        self._level = level
+        self._timestamp = timestamp
 
     @property
     def full_detection(self):
@@ -229,50 +300,6 @@ class UpdatePolicyResponse(SdkResponse):
         :type: list[BindHost]
         """
         self._bind_host = bind_host
-
-    @property
-    def timestamp(self):
-        """Gets the timestamp of this UpdatePolicyResponse.
-
-        创建防护策略的时间
-
-        :return: The timestamp of this UpdatePolicyResponse.
-        :rtype: int
-        """
-        return self._timestamp
-
-    @timestamp.setter
-    def timestamp(self, timestamp):
-        """Sets the timestamp of this UpdatePolicyResponse.
-
-        创建防护策略的时间
-
-        :param timestamp: The timestamp of this UpdatePolicyResponse.
-        :type: int
-        """
-        self._timestamp = timestamp
-
-    @property
-    def extend(self):
-        """Gets the extend of this UpdatePolicyResponse.
-
-        扩展字段
-
-        :return: The extend of this UpdatePolicyResponse.
-        :rtype: dict(str, str)
-        """
-        return self._extend
-
-    @extend.setter
-    def extend(self, extend):
-        """Sets the extend of this UpdatePolicyResponse.
-
-        扩展字段
-
-        :param extend: The extend of this UpdatePolicyResponse.
-        :type: dict(str, str)
-        """
-        self._extend = extend
 
     def to_dict(self):
         """Returns the model properties as a dict"""

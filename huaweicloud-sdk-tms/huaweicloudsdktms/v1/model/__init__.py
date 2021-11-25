@@ -19,6 +19,9 @@ from huaweicloudsdktms.v1.model.req_create_predefine_tag import ReqCreatePredefi
 from huaweicloudsdktms.v1.model.req_delete_predefine_tag import ReqDeletePredefineTag
 from huaweicloudsdktms.v1.model.show_api_version_request import ShowApiVersionRequest
 from huaweicloudsdktms.v1.model.show_api_version_response import ShowApiVersionResponse
+from huaweicloudsdktms.v1.model.show_tag_quota_request import ShowTagQuotaRequest
+from huaweicloudsdktms.v1.model.show_tag_quota_response import ShowTagQuotaResponse
+from huaweicloudsdktms.v1.model.tag_quota import TagQuota
 from huaweicloudsdktms.v1.model.update_predefine_tags_request import UpdatePredefineTagsRequest
 from huaweicloudsdktms.v1.model.update_predefine_tags_response import UpdatePredefineTagsResponse
 from huaweicloudsdktms.v1.model.version_detail import VersionDetail

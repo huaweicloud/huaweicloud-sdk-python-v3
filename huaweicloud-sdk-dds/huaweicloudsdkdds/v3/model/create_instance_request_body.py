@@ -38,7 +38,8 @@ class CreateInstanceRequestBody:
         'enterprise_project_id': 'str',
         'ssl_option': 'str',
         'dss_pool_id': 'str',
-        'server_group_policies': 'list[str]'
+        'server_group_policies': 'list[str]',
+        'tags': 'list[TagWithKeyValue]'
     }
 
     attribute_map = {
@@ -58,10 +59,11 @@ class CreateInstanceRequestBody:
         'enterprise_project_id': 'enterprise_project_id',
         'ssl_option': 'ssl_option',
         'dss_pool_id': 'dss_pool_id',
-        'server_group_policies': 'server_group_policies'
+        'server_group_policies': 'server_group_policies',
+        'tags': 'tags'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, port=None, password=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None):
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, port=None, password=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None, tags=None):
         """CreateInstanceRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -83,6 +85,7 @@ class CreateInstanceRequestBody:
         self._ssl_option = None
         self._dss_pool_id = None
         self._server_group_policies = None
+        self._tags = None
         self.discriminator = None
 
         self.name = name
@@ -110,6 +113,8 @@ class CreateInstanceRequestBody:
             self.dss_pool_id = dss_pool_id
         if server_group_policies is not None:
             self.server_group_policies = server_group_policies
+        if tags is not None:
+            self.tags = tags
 
     @property
     def name(self):
@@ -480,6 +485,28 @@ class CreateInstanceRequestBody:
         :type: list[str]
         """
         self._server_group_policies = server_group_policies
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateInstanceRequestBody.
+
+        标签列表。单个实例总标签数上限20个。
+
+        :return: The tags of this CreateInstanceRequestBody.
+        :rtype: list[TagWithKeyValue]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateInstanceRequestBody.
+
+        标签列表。单个实例总标签数上限20个。
+
+        :param tags: The tags of this CreateInstanceRequestBody.
+        :type: list[TagWithKeyValue]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

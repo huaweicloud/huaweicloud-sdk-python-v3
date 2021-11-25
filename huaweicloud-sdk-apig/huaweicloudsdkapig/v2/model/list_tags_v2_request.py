@@ -53,7 +53,7 @@ class ListTagsV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListTagsV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this ListTagsV2Request.
         :rtype: str
@@ -64,7 +64,7 @@ class ListTagsV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListTagsV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this ListTagsV2Request.
         :type: str

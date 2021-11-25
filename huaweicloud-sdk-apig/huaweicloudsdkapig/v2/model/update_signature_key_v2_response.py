@@ -22,59 +22,129 @@ class UpdateSignatureKeyV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'name': 'str',
+        'sign_type': 'str',
+        'sign_key': 'str',
         'sign_secret': 'str',
+        'sign_algorithm': 'str',
         'update_time': 'datetime',
         'create_time': 'datetime',
-        'name': 'str',
-        'id': 'str',
-        'sign_key': 'str',
-        'sign_type': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
+        'name': 'name',
+        'sign_type': 'sign_type',
+        'sign_key': 'sign_key',
         'sign_secret': 'sign_secret',
+        'sign_algorithm': 'sign_algorithm',
         'update_time': 'update_time',
         'create_time': 'create_time',
-        'name': 'name',
-        'id': 'id',
-        'sign_key': 'sign_key',
-        'sign_type': 'sign_type'
+        'id': 'id'
     }
 
-    def __init__(self, sign_secret=None, update_time=None, create_time=None, name=None, id=None, sign_key=None, sign_type=None):
+    def __init__(self, name=None, sign_type=None, sign_key=None, sign_secret=None, sign_algorithm=None, update_time=None, create_time=None, id=None):
         """UpdateSignatureKeyV2Response - a model defined in huaweicloud sdk"""
         
         super(UpdateSignatureKeyV2Response, self).__init__()
 
+        self._name = None
+        self._sign_type = None
+        self._sign_key = None
         self._sign_secret = None
+        self._sign_algorithm = None
         self._update_time = None
         self._create_time = None
-        self._name = None
         self._id = None
-        self._sign_key = None
-        self._sign_type = None
         self.discriminator = None
 
+        self.name = name
+        if sign_type is not None:
+            self.sign_type = sign_type
+        if sign_key is not None:
+            self.sign_key = sign_key
         if sign_secret is not None:
             self.sign_secret = sign_secret
+        if sign_algorithm is not None:
+            self.sign_algorithm = sign_algorithm
         if update_time is not None:
             self.update_time = update_time
         if create_time is not None:
             self.create_time = create_time
-        if name is not None:
-            self.name = name
         if id is not None:
             self.id = id
-        if sign_key is not None:
-            self.sign_key = sign_key
-        if sign_type is not None:
-            self.sign_type = sign_type
+
+    @property
+    def name(self):
+        """Gets the name of this UpdateSignatureKeyV2Response.
+
+        签名密钥的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头。 > 中文字符必须为UTF-8或者unicode编码。
+
+        :return: The name of this UpdateSignatureKeyV2Response.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this UpdateSignatureKeyV2Response.
+
+        签名密钥的名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头。 > 中文字符必须为UTF-8或者unicode编码。
+
+        :param name: The name of this UpdateSignatureKeyV2Response.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def sign_type(self):
+        """Gets the sign_type of this UpdateSignatureKeyV2Response.
+
+        签名密钥类型： - hmac - basic - public_key - aes  basic类型需要实例升级到对应版本，若不存在可联系技术工程师升级。  public_key类型开启实例配置public_key才可使用，实例特性配置详情请参考“附录 > 实例支持的APIC特性”，如确认实例不存在public_key配置可联系技术工程师开启。  aes类型需要实例升级到对应版本，若不存在可联系技术工程师升级。
+
+        :return: The sign_type of this UpdateSignatureKeyV2Response.
+        :rtype: str
+        """
+        return self._sign_type
+
+    @sign_type.setter
+    def sign_type(self, sign_type):
+        """Sets the sign_type of this UpdateSignatureKeyV2Response.
+
+        签名密钥类型： - hmac - basic - public_key - aes  basic类型需要实例升级到对应版本，若不存在可联系技术工程师升级。  public_key类型开启实例配置public_key才可使用，实例特性配置详情请参考“附录 > 实例支持的APIC特性”，如确认实例不存在public_key配置可联系技术工程师开启。  aes类型需要实例升级到对应版本，若不存在可联系技术工程师升级。
+
+        :param sign_type: The sign_type of this UpdateSignatureKeyV2Response.
+        :type: str
+        """
+        self._sign_type = sign_type
+
+    @property
+    def sign_key(self):
+        """Gets the sign_key of this UpdateSignatureKeyV2Response.
+
+        签名密钥的key。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母或数字开头，8 ~ 32字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母开头，4 ~ 32字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，+，/，=，可以英文字母，数字，+，/开头，8 ~ 512字符。未填写时后台自动生成。 - aes类型的签名秘钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，签名算法为aes-128-cfb时为16个字符，签名算法为aes-256-cfb时为32个字符。未填写时后台自动生成。
+
+        :return: The sign_key of this UpdateSignatureKeyV2Response.
+        :rtype: str
+        """
+        return self._sign_key
+
+    @sign_key.setter
+    def sign_key(self, sign_key):
+        """Sets the sign_key of this UpdateSignatureKeyV2Response.
+
+        签名密钥的key。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母或数字开头，8 ~ 32字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，且只能以英文字母开头，4 ~ 32字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，+，/，=，可以英文字母，数字，+，/开头，8 ~ 512字符。未填写时后台自动生成。 - aes类型的签名秘钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，签名算法为aes-128-cfb时为16个字符，签名算法为aes-256-cfb时为32个字符。未填写时后台自动生成。
+
+        :param sign_key: The sign_key of this UpdateSignatureKeyV2Response.
+        :type: str
+        """
+        self._sign_key = sign_key
 
     @property
     def sign_secret(self):
         """Gets the sign_secret of this UpdateSignatureKeyV2Response.
 
-        签名密钥的密钥
+        签名密钥的密钥。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，16 ~ 64字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，8 ~ 64字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，15 ~ 2048字符。未填写时后台自动生成。 - aes类型签名秘钥使用的向量：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，16个字符。未填写时后台自动生成。
 
         :return: The sign_secret of this UpdateSignatureKeyV2Response.
         :rtype: str
@@ -85,12 +155,34 @@ class UpdateSignatureKeyV2Response(SdkResponse):
     def sign_secret(self, sign_secret):
         """Sets the sign_secret of this UpdateSignatureKeyV2Response.
 
-        签名密钥的密钥
+        签名密钥的密钥。 - hmac类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，16 ~ 64字符。未填写时后台自动生成。 - basic类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，且只能以英文字母或数字开头，8 ~ 64字符。未填写时后台自动生成。 - public_key类型的签名密钥key：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，15 ~ 2048字符。未填写时后台自动生成。 - aes类型签名秘钥使用的向量：支持英文，数字，下划线，中划线，!，@，#，$，%，+，/，=，可以英文字母，数字，+，/开头，16个字符。未填写时后台自动生成。
 
         :param sign_secret: The sign_secret of this UpdateSignatureKeyV2Response.
         :type: str
         """
         self._sign_secret = sign_secret
+
+    @property
+    def sign_algorithm(self):
+        """Gets the sign_algorithm of this UpdateSignatureKeyV2Response.
+
+        签名算法。默认值为空，仅aes类型签名秘钥支持选择签名算法，其他类型签名秘钥不支持签名算法。
+
+        :return: The sign_algorithm of this UpdateSignatureKeyV2Response.
+        :rtype: str
+        """
+        return self._sign_algorithm
+
+    @sign_algorithm.setter
+    def sign_algorithm(self, sign_algorithm):
+        """Sets the sign_algorithm of this UpdateSignatureKeyV2Response.
+
+        签名算法。默认值为空，仅aes类型签名秘钥支持选择签名算法，其他类型签名秘钥不支持签名算法。
+
+        :param sign_algorithm: The sign_algorithm of this UpdateSignatureKeyV2Response.
+        :type: str
+        """
+        self._sign_algorithm = sign_algorithm
 
     @property
     def update_time(self):
@@ -137,28 +229,6 @@ class UpdateSignatureKeyV2Response(SdkResponse):
         self._create_time = create_time
 
     @property
-    def name(self):
-        """Gets the name of this UpdateSignatureKeyV2Response.
-
-        签名密钥的名称
-
-        :return: The name of this UpdateSignatureKeyV2Response.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this UpdateSignatureKeyV2Response.
-
-        签名密钥的名称
-
-        :param name: The name of this UpdateSignatureKeyV2Response.
-        :type: str
-        """
-        self._name = name
-
-    @property
     def id(self):
         """Gets the id of this UpdateSignatureKeyV2Response.
 
@@ -179,50 +249,6 @@ class UpdateSignatureKeyV2Response(SdkResponse):
         :type: str
         """
         self._id = id
-
-    @property
-    def sign_key(self):
-        """Gets the sign_key of this UpdateSignatureKeyV2Response.
-
-        签名密钥的key
-
-        :return: The sign_key of this UpdateSignatureKeyV2Response.
-        :rtype: str
-        """
-        return self._sign_key
-
-    @sign_key.setter
-    def sign_key(self, sign_key):
-        """Sets the sign_key of this UpdateSignatureKeyV2Response.
-
-        签名密钥的key
-
-        :param sign_key: The sign_key of this UpdateSignatureKeyV2Response.
-        :type: str
-        """
-        self._sign_key = sign_key
-
-    @property
-    def sign_type(self):
-        """Gets the sign_type of this UpdateSignatureKeyV2Response.
-
-        签名密钥类型。
-
-        :return: The sign_type of this UpdateSignatureKeyV2Response.
-        :rtype: str
-        """
-        return self._sign_type
-
-    @sign_type.setter
-    def sign_type(self, sign_type):
-        """Sets the sign_type of this UpdateSignatureKeyV2Response.
-
-        签名密钥类型。
-
-        :param sign_type: The sign_type of this UpdateSignatureKeyV2Response.
-        :type: str
-        """
-        self._sign_type = sign_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

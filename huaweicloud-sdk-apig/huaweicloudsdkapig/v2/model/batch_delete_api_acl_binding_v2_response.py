@@ -23,7 +23,7 @@ class BatchDeleteApiAclBindingV2Response(SdkResponse):
 
     openapi_types = {
         'success_count': 'int',
-        'failure': 'list[AclBindingBatchResultFailureResp]'
+        'failure': 'list[AclBindingBatchFailure]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class BatchDeleteApiAclBindingV2Response(SdkResponse):
         解除绑定失败的ACL策略及错误信息
 
         :return: The failure of this BatchDeleteApiAclBindingV2Response.
-        :rtype: list[AclBindingBatchResultFailureResp]
+        :rtype: list[AclBindingBatchFailure]
         """
         return self._failure
 
@@ -85,7 +85,7 @@ class BatchDeleteApiAclBindingV2Response(SdkResponse):
         解除绑定失败的ACL策略及错误信息
 
         :param failure: The failure of this BatchDeleteApiAclBindingV2Response.
-        :type: list[AclBindingBatchResultFailureResp]
+        :type: list[AclBindingBatchFailure]
         """
         self._failure = failure
 

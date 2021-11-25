@@ -24,7 +24,7 @@ class ListAppsV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'apps': 'list[AppInfoWithBindNumResp]'
+        'apps': 'list[AppInfoWithBindNum]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class ListAppsV2Response(SdkResponse):
         APP列表
 
         :return: The apps of this ListAppsV2Response.
-        :rtype: list[AppInfoWithBindNumResp]
+        :rtype: list[AppInfoWithBindNum]
         """
         return self._apps
 
@@ -110,7 +110,7 @@ class ListAppsV2Response(SdkResponse):
         APP列表
 
         :param apps: The apps of this ListAppsV2Response.
-        :type: list[AppInfoWithBindNumResp]
+        :type: list[AppInfoWithBindNum]
         """
         self._apps = apps
 

@@ -24,62 +24,82 @@ class VpcMemberInfo:
     openapi_types = {
         'host': 'str',
         'weight': 'int',
+        'is_backup': 'bool',
+        'member_group_name': 'str',
+        'status': 'int',
+        'port': 'int',
         'ecs_id': 'str',
         'ecs_name': 'str',
         'id': 'str',
-        'status': 'int',
         'vpc_channel_id': 'str',
-        'create_time': 'datetime'
+        'create_time': 'datetime',
+        'member_group_id': 'str'
     }
 
     attribute_map = {
         'host': 'host',
         'weight': 'weight',
+        'is_backup': 'is_backup',
+        'member_group_name': 'member_group_name',
+        'status': 'status',
+        'port': 'port',
         'ecs_id': 'ecs_id',
         'ecs_name': 'ecs_name',
         'id': 'id',
-        'status': 'status',
         'vpc_channel_id': 'vpc_channel_id',
-        'create_time': 'create_time'
+        'create_time': 'create_time',
+        'member_group_id': 'member_group_id'
     }
 
-    def __init__(self, host=None, weight=None, ecs_id=None, ecs_name=None, id=None, status=None, vpc_channel_id=None, create_time=None):
+    def __init__(self, host=None, weight=None, is_backup=None, member_group_name=None, status=None, port=None, ecs_id=None, ecs_name=None, id=None, vpc_channel_id=None, create_time=None, member_group_id=None):
         """VpcMemberInfo - a model defined in huaweicloud sdk"""
         
         
 
         self._host = None
         self._weight = None
+        self._is_backup = None
+        self._member_group_name = None
+        self._status = None
+        self._port = None
         self._ecs_id = None
         self._ecs_name = None
         self._id = None
-        self._status = None
         self._vpc_channel_id = None
         self._create_time = None
+        self._member_group_id = None
         self.discriminator = None
 
         if host is not None:
             self.host = host
         if weight is not None:
             self.weight = weight
+        if is_backup is not None:
+            self.is_backup = is_backup
+        if member_group_name is not None:
+            self.member_group_name = member_group_name
+        if status is not None:
+            self.status = status
+        if port is not None:
+            self.port = port
         if ecs_id is not None:
             self.ecs_id = ecs_id
         if ecs_name is not None:
             self.ecs_name = ecs_name
         if id is not None:
             self.id = id
-        if status is not None:
-            self.status = status
         if vpc_channel_id is not None:
             self.vpc_channel_id = vpc_channel_id
         if create_time is not None:
             self.create_time = create_time
+        if member_group_id is not None:
+            self.member_group_id = member_group_id
 
     @property
     def host(self):
         """Gets the host of this VpcMemberInfo.
 
-        后端服务器地址  后端实例类型为ip时生效
+        后端服务器地址  后端实例类型为ip时必填
 
         :return: The host of this VpcMemberInfo.
         :rtype: str
@@ -90,7 +110,7 @@ class VpcMemberInfo:
     def host(self, host):
         """Sets the host of this VpcMemberInfo.
 
-        后端服务器地址  后端实例类型为ip时生效
+        后端服务器地址  后端实例类型为ip时必填
 
         :param host: The host of this VpcMemberInfo.
         :type: str
@@ -101,7 +121,7 @@ class VpcMemberInfo:
     def weight(self):
         """Gets the weight of this VpcMemberInfo.
 
-        权重值。  允许您对云服务器进行评级，权重值越大，转发到该云服务的请求数量越多。权重只对加权轮询和加权最小连接算法生效  仅VPC通道类型为2时有效。
+        权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
 
         :return: The weight of this VpcMemberInfo.
         :rtype: int
@@ -112,12 +132,100 @@ class VpcMemberInfo:
     def weight(self, weight):
         """Sets the weight of this VpcMemberInfo.
 
-        权重值。  允许您对云服务器进行评级，权重值越大，转发到该云服务的请求数量越多。权重只对加权轮询和加权最小连接算法生效  仅VPC通道类型为2时有效。
+        权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
 
         :param weight: The weight of this VpcMemberInfo.
         :type: int
         """
         self._weight = weight
+
+    @property
+    def is_backup(self):
+        """Gets the is_backup of this VpcMemberInfo.
+
+        是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
+
+        :return: The is_backup of this VpcMemberInfo.
+        :rtype: bool
+        """
+        return self._is_backup
+
+    @is_backup.setter
+    def is_backup(self, is_backup):
+        """Sets the is_backup of this VpcMemberInfo.
+
+        是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
+
+        :param is_backup: The is_backup of this VpcMemberInfo.
+        :type: bool
+        """
+        self._is_backup = is_backup
+
+    @property
+    def member_group_name(self):
+        """Gets the member_group_name of this VpcMemberInfo.
+
+        后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
+
+        :return: The member_group_name of this VpcMemberInfo.
+        :rtype: str
+        """
+        return self._member_group_name
+
+    @member_group_name.setter
+    def member_group_name(self, member_group_name):
+        """Sets the member_group_name of this VpcMemberInfo.
+
+        后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
+
+        :param member_group_name: The member_group_name of this VpcMemberInfo.
+        :type: str
+        """
+        self._member_group_name = member_group_name
+
+    @property
+    def status(self):
+        """Gets the status of this VpcMemberInfo.
+
+        后端服务器状态   - 1：可用   - 2：不可用
+
+        :return: The status of this VpcMemberInfo.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this VpcMemberInfo.
+
+        后端服务器状态   - 1：可用   - 2：不可用
+
+        :param status: The status of this VpcMemberInfo.
+        :type: int
+        """
+        self._status = status
+
+    @property
+    def port(self):
+        """Gets the port of this VpcMemberInfo.
+
+        后端服务器端口
+
+        :return: The port of this VpcMemberInfo.
+        :rtype: int
+        """
+        return self._port
+
+    @port.setter
+    def port(self, port):
+        """Sets the port of this VpcMemberInfo.
+
+        后端服务器端口
+
+        :param port: The port of this VpcMemberInfo.
+        :type: int
+        """
+        self._port = port
 
     @property
     def ecs_id(self):
@@ -186,28 +294,6 @@ class VpcMemberInfo:
         self._id = id
 
     @property
-    def status(self):
-        """Gets the status of this VpcMemberInfo.
-
-        后端实例对象的状态
-
-        :return: The status of this VpcMemberInfo.
-        :rtype: int
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this VpcMemberInfo.
-
-        后端实例对象的状态
-
-        :param status: The status of this VpcMemberInfo.
-        :type: int
-        """
-        self._status = status
-
-    @property
     def vpc_channel_id(self):
         """Gets the vpc_channel_id of this VpcMemberInfo.
 
@@ -250,6 +336,28 @@ class VpcMemberInfo:
         :type: datetime
         """
         self._create_time = create_time
+
+    @property
+    def member_group_id(self):
+        """Gets the member_group_id of this VpcMemberInfo.
+
+        后端服务器组编号  暂不支持
+
+        :return: The member_group_id of this VpcMemberInfo.
+        :rtype: str
+        """
+        return self._member_group_id
+
+    @member_group_id.setter
+    def member_group_id(self, member_group_id):
+        """Sets the member_group_id of this VpcMemberInfo.
+
+        后端服务器组编号  暂不支持
+
+        :param member_group_id: The member_group_id of this VpcMemberInfo.
+        :type: str
+        """
+        self._member_group_id = member_group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

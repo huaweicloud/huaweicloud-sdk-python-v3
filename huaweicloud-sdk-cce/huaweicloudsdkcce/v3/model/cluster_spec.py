@@ -26,6 +26,7 @@ class ClusterSpec:
         'type': 'str',
         'flavor': 'str',
         'version': 'str',
+        'platform_version': 'str',
         'description': 'str',
         'ipv6enable': 'bool',
         'host_network': 'HostNetwork',
@@ -47,6 +48,7 @@ class ClusterSpec:
         'type': 'type',
         'flavor': 'flavor',
         'version': 'version',
+        'platform_version': 'platformVersion',
         'description': 'description',
         'ipv6enable': 'ipv6enable',
         'host_network': 'hostNetwork',
@@ -63,7 +65,7 @@ class ClusterSpec:
         'support_istio': 'supportIstio'
     }
 
-    def __init__(self, category=None, type=None, flavor=None, version=None, description=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None):
+    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None):
         """ClusterSpec - a model defined in huaweicloud sdk"""
         
         
@@ -72,6 +74,7 @@ class ClusterSpec:
         self._type = None
         self._flavor = None
         self._version = None
+        self._platform_version = None
         self._description = None
         self._ipv6enable = None
         self._host_network = None
@@ -95,6 +98,8 @@ class ClusterSpec:
         self.flavor = flavor
         if version is not None:
             self.version = version
+        if platform_version is not None:
+            self.platform_version = platform_version
         if description is not None:
             self.description = description
         if ipv6enable is not None:
@@ -209,6 +214,28 @@ class ClusterSpec:
         :type: str
         """
         self._version = version
+
+    @property
+    def platform_version(self):
+        """Gets the platform_version of this ClusterSpec.
+
+        CCE集群平台版本号，仅供查看，不支持创建指定，集群创建时自动选择对应集群版本的最新平台版本。
+
+        :return: The platform_version of this ClusterSpec.
+        :rtype: str
+        """
+        return self._platform_version
+
+    @platform_version.setter
+    def platform_version(self, platform_version):
+        """Sets the platform_version of this ClusterSpec.
+
+        CCE集群平台版本号，仅供查看，不支持创建指定，集群创建时自动选择对应集群版本的最新平台版本。
+
+        :param platform_version: The platform_version of this ClusterSpec.
+        :type: str
+        """
+        self._platform_version = platform_version
 
     @property
     def description(self):

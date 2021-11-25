@@ -22,33 +22,55 @@ class CheckAppV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'name': 'str',
-        'remark': 'str',
-        'id': 'str'
+        'remark': 'str'
     }
 
     attribute_map = {
+        'id': 'id',
         'name': 'name',
-        'remark': 'remark',
-        'id': 'id'
+        'remark': 'remark'
     }
 
-    def __init__(self, name=None, remark=None, id=None):
+    def __init__(self, id=None, name=None, remark=None):
         """CheckAppV2Response - a model defined in huaweicloud sdk"""
         
         super(CheckAppV2Response, self).__init__()
 
+        self._id = None
         self._name = None
         self._remark = None
-        self._id = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if name is not None:
             self.name = name
         if remark is not None:
             self.remark = remark
-        if id is not None:
-            self.id = id
+
+    @property
+    def id(self):
+        """Gets the id of this CheckAppV2Response.
+
+        编号
+
+        :return: The id of this CheckAppV2Response.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this CheckAppV2Response.
+
+        编号
+
+        :param id: The id of this CheckAppV2Response.
+        :type: str
+        """
+        self._id = id
 
     @property
     def name(self):
@@ -93,28 +115,6 @@ class CheckAppV2Response(SdkResponse):
         :type: str
         """
         self._remark = remark
-
-    @property
-    def id(self):
-        """Gets the id of this CheckAppV2Response.
-
-        编号
-
-        :return: The id of this CheckAppV2Response.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this CheckAppV2Response.
-
-        编号
-
-        :param id: The id of this CheckAppV2Response.
-        :type: str
-        """
-        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

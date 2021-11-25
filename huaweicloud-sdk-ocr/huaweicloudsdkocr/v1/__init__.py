@@ -6,7 +6,6 @@ from __future__ import absolute_import
 from huaweicloudsdkocr.v1.ocr_client import OcrClient
 from huaweicloudsdkocr.v1.ocr_async_client import OcrAsyncClient
 # import models into sdk package
-from huaweicloudsdkocr.v1.model.answer_block_list import AnswerBlockList
 from huaweicloudsdkocr.v1.model.auto_classification_request_body import AutoClassificationRequestBody
 from huaweicloudsdkocr.v1.model.auto_classification_result import AutoClassificationResult
 from huaweicloudsdkocr.v1.model.auto_classification_result_status import AutoClassificationResultStatus
@@ -20,7 +19,6 @@ from huaweicloudsdkocr.v1.model.business_license_result import BusinessLicenseRe
 from huaweicloudsdkocr.v1.model.driver_license_request_body import DriverLicenseRequestBody
 from huaweicloudsdkocr.v1.model.driver_license_result import DriverLicenseResult
 from huaweicloudsdkocr.v1.model.extra_info_list import ExtraInfoList
-from huaweicloudsdkocr.v1.model.extracted_data import ExtractedData
 from huaweicloudsdkocr.v1.model.financial_statement_request_body import FinancialStatementRequestBody
 from huaweicloudsdkocr.v1.model.financial_statement_result import FinancialStatementResult
 from huaweicloudsdkocr.v1.model.financial_statement_result_image_size import FinancialStatementResultImageSize
@@ -50,7 +48,6 @@ from huaweicloudsdkocr.v1.model.item_list import ItemList
 from huaweicloudsdkocr.v1.model.itinerary_list import ItineraryList
 from huaweicloudsdkocr.v1.model.license_plate_request_body import LicensePlateRequestBody
 from huaweicloudsdkocr.v1.model.license_plate_result import LicensePlateResult
-from huaweicloudsdkocr.v1.model.math_info import MathInfo
 from huaweicloudsdkocr.v1.model.mvs_invoice_request_body import MvsInvoiceRequestBody
 from huaweicloudsdkocr.v1.model.mvs_invoice_result import MvsInvoiceResult
 from huaweicloudsdkocr.v1.model.passport_request_body import PassportRequestBody

@@ -125,7 +125,7 @@ class NodeGroupV11:
     def node_size(self):
         """Gets the node_size of this NodeGroupV11.
 
-        节点的实例规格。配置方法请参考“master_node_size”配置的备注。
+        节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。MRS当前支持主机规格的配型由CPU+内存+Disk共同决定。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
         :return: The node_size of this NodeGroupV11.
         :rtype: str
@@ -136,7 +136,7 @@ class NodeGroupV11:
     def node_size(self, node_size):
         """Sets the node_size of this NodeGroupV11.
 
-        节点的实例规格。配置方法请参考“master_node_size”配置的备注。
+        节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。MRS当前支持主机规格的配型由CPU+内存+Disk共同决定。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
         :param node_size: The node_size of this NodeGroupV11.
         :type: str

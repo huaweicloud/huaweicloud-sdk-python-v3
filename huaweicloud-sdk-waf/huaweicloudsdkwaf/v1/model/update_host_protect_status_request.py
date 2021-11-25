@@ -53,7 +53,7 @@ class UpdateHostProtectStatusRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdateHostProtectStatusRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this UpdateHostProtectStatusRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class UpdateHostProtectStatusRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this UpdateHostProtectStatusRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateHostProtectStatusRequest.
         :type: str
@@ -75,7 +75,7 @@ class UpdateHostProtectStatusRequest:
     def instance_id(self):
         """Gets the instance_id of this UpdateHostProtectStatusRequest.
 
-        域名Id（通过查询云模式防护域名列表获取域名id)
+        域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
 
         :return: The instance_id of this UpdateHostProtectStatusRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class UpdateHostProtectStatusRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateHostProtectStatusRequest.
 
-        域名Id（通过查询云模式防护域名列表获取域名id)
+        域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
 
         :param instance_id: The instance_id of this UpdateHostProtectStatusRequest.
         :type: str

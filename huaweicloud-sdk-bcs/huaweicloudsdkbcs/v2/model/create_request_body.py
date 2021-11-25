@@ -45,7 +45,7 @@ class CreateRequestBody:
         'ief_nodes_info': 'list[IEFNode]',
         'peer_orgs': 'list[OrgPeer]',
         'channels': 'list[ChannelInfoV2]',
-        'couchdb_info': 'CouchDbInfo',
+        'couchdb_info': 'Couchdb',
         'turbo_info': 'TurboInfo',
         'block_info': 'CreateRequestBodyBlockInfo',
         'kafka_create_info': 'KafkaCreateInfo',
@@ -691,7 +691,7 @@ class CreateRequestBody:
 
 
         :return: The couchdb_info of this CreateRequestBody.
-        :rtype: CouchDbInfo
+        :rtype: Couchdb
         """
         return self._couchdb_info
 
@@ -701,7 +701,7 @@ class CreateRequestBody:
 
 
         :param couchdb_info: The couchdb_info of this CreateRequestBody.
-        :type: CouchDbInfo
+        :type: Couchdb
         """
         self._couchdb_info = couchdb_info
 

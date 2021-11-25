@@ -52,7 +52,7 @@ class DeletePrivacyRuleRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this DeletePrivacyRuleRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this DeletePrivacyRuleRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class DeletePrivacyRuleRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this DeletePrivacyRuleRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this DeletePrivacyRuleRequest.
         :type: str
@@ -74,7 +74,7 @@ class DeletePrivacyRuleRequest:
     def policy_id(self):
         """Gets the policy_id of this DeletePrivacyRuleRequest.
 
-        策略id（策略id从查询防护策略列表接口获取）
+        防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :return: The policy_id of this DeletePrivacyRuleRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class DeletePrivacyRuleRequest:
     def policy_id(self, policy_id):
         """Sets the policy_id of this DeletePrivacyRuleRequest.
 
-        策略id（策略id从查询防护策略列表接口获取）
+        防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :param policy_id: The policy_id of this DeletePrivacyRuleRequest.
         :type: str
@@ -96,7 +96,7 @@ class DeletePrivacyRuleRequest:
     def rule_id(self):
         """Gets the rule_id of this DeletePrivacyRuleRequest.
 
-        privacyRuleId
+        隐私屏蔽规则id，从查询隐私屏蔽防护规则接口https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=WAF&api=ListPrivacyRule获取
 
         :return: The rule_id of this DeletePrivacyRuleRequest.
         :rtype: str
@@ -107,7 +107,7 @@ class DeletePrivacyRuleRequest:
     def rule_id(self, rule_id):
         """Sets the rule_id of this DeletePrivacyRuleRequest.
 
-        privacyRuleId
+        隐私屏蔽规则id，从查询隐私屏蔽防护规则接口https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=WAF&api=ListPrivacyRule获取
 
         :param rule_id: The rule_id of this DeletePrivacyRuleRequest.
         :type: str

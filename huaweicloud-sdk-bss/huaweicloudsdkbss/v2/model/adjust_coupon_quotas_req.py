@@ -51,7 +51,7 @@ class AdjustCouponQuotasReq:
     def quota_id(self):
         """Gets the quota_id of this AdjustCouponQuotasReq.
 
-        华为云伙伴能力中心发放的代金券额度的ID。
+        华为云伙伴能力中心发放的代金券额度的ID。获取方法请参见查询优惠券额度。
 
         :return: The quota_id of this AdjustCouponQuotasReq.
         :rtype: str
@@ -62,7 +62,7 @@ class AdjustCouponQuotasReq:
     def quota_id(self, quota_id):
         """Sets the quota_id of this AdjustCouponQuotasReq.
 
-        华为云伙伴能力中心发放的代金券额度的ID。
+        华为云伙伴能力中心发放的代金券额度的ID。获取方法请参见查询优惠券额度。
 
         :param quota_id: The quota_id of this AdjustCouponQuotasReq.
         :type: str

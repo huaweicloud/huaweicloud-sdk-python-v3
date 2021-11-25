@@ -23,27 +23,32 @@ class UpdatePublicipOption:
 
     openapi_types = {
         'port_id': 'str',
-        'ip_version': 'int'
+        'ip_version': 'int',
+        'alias': 'str'
     }
 
     attribute_map = {
         'port_id': 'port_id',
-        'ip_version': 'ip_version'
+        'ip_version': 'ip_version',
+        'alias': 'alias'
     }
 
-    def __init__(self, port_id=None, ip_version=None):
+    def __init__(self, port_id=None, ip_version=None, alias=None):
         """UpdatePublicipOption - a model defined in huaweicloud sdk"""
         
         
 
         self._port_id = None
         self._ip_version = None
+        self._alias = None
         self.discriminator = None
 
         if port_id is not None:
             self.port_id = port_id
         if ip_version is not None:
             self.ip_version = ip_version
+        if alias is not None:
+            self.alias = alias
 
     @property
     def port_id(self):
@@ -88,6 +93,28 @@ class UpdatePublicipOption:
         :type: int
         """
         self._ip_version = ip_version
+
+    @property
+    def alias(self):
+        """Gets the alias of this UpdatePublicipOption.
+
+        功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+
+        :return: The alias of this UpdatePublicipOption.
+        :rtype: str
+        """
+        return self._alias
+
+    @alias.setter
+    def alias(self, alias):
+        """Sets the alias of this UpdatePublicipOption.
+
+        功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+
+        :param alias: The alias of this UpdatePublicipOption.
+        :type: str
+        """
+        self._alias = alias
 
     def to_dict(self):
         """Returns the model properties as a dict"""

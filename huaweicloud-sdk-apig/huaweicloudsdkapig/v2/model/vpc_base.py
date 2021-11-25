@@ -23,7 +23,6 @@ class VpcBase:
 
     openapi_types = {
         'name': 'str',
-        'type': 'int',
         'port': 'int',
         'balance_strategy': 'int',
         'member_type': 'str'
@@ -31,26 +30,23 @@ class VpcBase:
 
     attribute_map = {
         'name': 'name',
-        'type': 'type',
         'port': 'port',
         'balance_strategy': 'balance_strategy',
         'member_type': 'member_type'
     }
 
-    def __init__(self, name=None, type=None, port=None, balance_strategy=None, member_type=None):
+    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None):
         """VpcBase - a model defined in huaweicloud sdk"""
         
         
 
         self._name = None
-        self._type = None
         self._port = None
         self._balance_strategy = None
         self._member_type = None
         self.discriminator = None
 
         self.name = name
-        self.type = type
         if port is not None:
             self.port = port
         if balance_strategy is not None:
@@ -79,28 +75,6 @@ class VpcBase:
         :type: str
         """
         self._name = name
-
-    @property
-    def type(self):
-        """Gets the type of this VpcBase.
-
-        VPC通道的类型。 - 1：私网ELB通道（待废弃） - 2：API网关内置支持负载均衡功能的快速通道类型
-
-        :return: The type of this VpcBase.
-        :rtype: int
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this VpcBase.
-
-        VPC通道的类型。 - 1：私网ELB通道（待废弃） - 2：API网关内置支持负载均衡功能的快速通道类型
-
-        :param type: The type of this VpcBase.
-        :type: int
-        """
-        self._type = type
 
     @property
     def port(self):

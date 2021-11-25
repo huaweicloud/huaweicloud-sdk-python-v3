@@ -25,7 +25,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         'id': 'str',
         'service_name': 'str',
         'service_type': 'str',
-        'created_at': 'datetime',
+        'created_at': 'str',
         'is_charge': 'bool'
     }
 
@@ -133,7 +133,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
 
         :return: The created_at of this ListServiceDescribeDetailsResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -144,7 +144,7 @@ class ListServiceDescribeDetailsResponse(SdkResponse):
         终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
 
         :param created_at: The created_at of this ListServiceDescribeDetailsResponse.
-        :type: datetime
+        :type: str
         """
         self._created_at = created_at
 

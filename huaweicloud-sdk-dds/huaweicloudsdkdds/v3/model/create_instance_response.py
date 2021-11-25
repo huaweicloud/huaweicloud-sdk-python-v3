@@ -40,7 +40,8 @@ class CreateInstanceResponse(SdkResponse):
         'enterprise_project_id': 'str',
         'ssl_option': 'str',
         'dss_pool_id': 'str',
-        'job_id': 'str'
+        'job_id': 'str',
+        'tags': 'list[TagWithKeyValue]'
     }
 
     attribute_map = {
@@ -62,10 +63,11 @@ class CreateInstanceResponse(SdkResponse):
         'enterprise_project_id': 'enterprise_project_id',
         'ssl_option': 'ssl_option',
         'dss_pool_id': 'dss_pool_id',
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, port=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, job_id=None):
+    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, port=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, job_id=None, tags=None):
         """CreateInstanceResponse - a model defined in huaweicloud sdk"""
         
         super(CreateInstanceResponse, self).__init__()
@@ -89,6 +91,7 @@ class CreateInstanceResponse(SdkResponse):
         self._ssl_option = None
         self._dss_pool_id = None
         self._job_id = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -129,6 +132,8 @@ class CreateInstanceResponse(SdkResponse):
             self.dss_pool_id = dss_pool_id
         if job_id is not None:
             self.job_id = job_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -543,6 +548,28 @@ class CreateInstanceResponse(SdkResponse):
         :type: str
         """
         self._job_id = job_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this CreateInstanceResponse.
+
+        标签列表，与请求参数相同。
+
+        :return: The tags of this CreateInstanceResponse.
+        :rtype: list[TagWithKeyValue]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateInstanceResponse.
+
+        标签列表，与请求参数相同。
+
+        :param tags: The tags of this CreateInstanceResponse.
+        :type: list[TagWithKeyValue]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

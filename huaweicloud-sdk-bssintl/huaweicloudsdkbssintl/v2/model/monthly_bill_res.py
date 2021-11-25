@@ -23,6 +23,7 @@ class MonthlyBillRes:
 
     openapi_types = {
         'cycle': 'str',
+        'bill_date': 'str',
         'bill_type': 'int',
         'customer_id': 'str',
         'region': 'str',
@@ -52,6 +53,7 @@ class MonthlyBillRes:
 
     attribute_map = {
         'cycle': 'cycle',
+        'bill_date': 'bill_date',
         'bill_type': 'bill_type',
         'customer_id': 'customer_id',
         'region': 'region',
@@ -79,12 +81,13 @@ class MonthlyBillRes:
         'measure_id': 'measure_id'
     }
 
-    def __init__(self, cycle=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None):
+    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None):
         """MonthlyBillRes - a model defined in huaweicloud sdk"""
         
         
 
         self._cycle = None
+        self._bill_date = None
         self._bill_type = None
         self._customer_id = None
         self._region = None
@@ -114,6 +117,8 @@ class MonthlyBillRes:
 
         if cycle is not None:
             self.cycle = cycle
+        if bill_date is not None:
+            self.bill_date = bill_date
         if bill_type is not None:
             self.bill_type = bill_type
         if customer_id is not None:
@@ -169,7 +174,7 @@ class MonthlyBillRes:
     def cycle(self):
         """Gets the cycle of this MonthlyBillRes.
 
-        |参数名称：消费月份| |参数的约束及描述：格式为YYYY-MM|
+        |参数名称：资源详单数据所在账期| |参数的约束及描述：格式为YYYY-MM|
 
         :return: The cycle of this MonthlyBillRes.
         :rtype: str
@@ -180,12 +185,34 @@ class MonthlyBillRes:
     def cycle(self, cycle):
         """Sets the cycle of this MonthlyBillRes.
 
-        |参数名称：消费月份| |参数的约束及描述：格式为YYYY-MM|
+        |参数名称：资源详单数据所在账期| |参数的约束及描述：格式为YYYY-MM|
 
         :param cycle: The cycle of this MonthlyBillRes.
         :type: str
         """
         self._cycle = cycle
+
+    @property
+    def bill_date(self):
+        """Gets the bill_date of this MonthlyBillRes.
+
+        |参数名称：消费日期| |参数的约束及描述：消费日期，格式为：YYYY-MM-DD|
+
+        :return: The bill_date of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._bill_date
+
+    @bill_date.setter
+    def bill_date(self, bill_date):
+        """Sets the bill_date of this MonthlyBillRes.
+
+        |参数名称：消费日期| |参数的约束及描述：消费日期，格式为：YYYY-MM-DD|
+
+        :param bill_date: The bill_date of this MonthlyBillRes.
+        :type: str
+        """
+        self._bill_date = bill_date
 
     @property
     def bill_type(self):

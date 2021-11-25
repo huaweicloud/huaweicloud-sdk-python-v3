@@ -23,7 +23,7 @@ class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
 
     openapi_types = {
         'success_count': 'int',
-        'failure': 'list[ThrottleBindingBatchResultFailureResp]'
+        'failure': 'list[ThrottleBindingBatchFailure]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
         解除绑定失败的API和流控绑定关系及错误信息
 
         :return: The failure of this BatchDisassociateThrottlingPolicyV2Response.
-        :rtype: list[ThrottleBindingBatchResultFailureResp]
+        :rtype: list[ThrottleBindingBatchFailure]
         """
         return self._failure
 
@@ -85,7 +85,7 @@ class BatchDisassociateThrottlingPolicyV2Response(SdkResponse):
         解除绑定失败的API和流控绑定关系及错误信息
 
         :param failure: The failure of this BatchDisassociateThrottlingPolicyV2Response.
-        :type: list[ThrottleBindingBatchResultFailureResp]
+        :type: list[ThrottleBindingBatchFailure]
         """
         self._failure = failure
 

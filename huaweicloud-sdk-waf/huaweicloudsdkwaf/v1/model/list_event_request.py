@@ -24,6 +24,8 @@ class ListEventRequest:
     openapi_types = {
         'enterprise_project_id': 'str',
         'recent': 'str',
+        '_from': 'int',
+        'to': 'int',
         'hosts': 'list[str]',
         'page': 'int',
         'pagesize': 'int'
@@ -32,18 +34,22 @@ class ListEventRequest:
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'recent': 'recent',
+        '_from': 'from',
+        'to': 'to',
         'hosts': 'hosts',
         'page': 'page',
         'pagesize': 'pagesize'
     }
 
-    def __init__(self, enterprise_project_id=None, recent=None, hosts=None, page=None, pagesize=None):
+    def __init__(self, enterprise_project_id=None, recent=None, _from=None, to=None, hosts=None, page=None, pagesize=None):
         """ListEventRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._enterprise_project_id = None
         self._recent = None
+        self.__from = None
+        self._to = None
         self._hosts = None
         self._page = None
         self._pagesize = None
@@ -51,7 +57,12 @@ class ListEventRequest:
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        self.recent = recent
+        if recent is not None:
+            self.recent = recent
+        if _from is not None:
+            self._from = _from
+        if to is not None:
+            self.to = to
         if hosts is not None:
             self.hosts = hosts
         if page is not None:
@@ -63,7 +74,7 @@ class ListEventRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListEventRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ListEventRequest.
         :rtype: str
@@ -74,7 +85,7 @@ class ListEventRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListEventRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListEventRequest.
         :type: str
@@ -85,7 +96,7 @@ class ListEventRequest:
     def recent(self):
         """Gets the recent of this ListEventRequest.
 
-        查询日志的时间范围
+        查询日志的时间范围,(不能和from、to同时使用)
 
         :return: The recent of this ListEventRequest.
         :rtype: str
@@ -96,7 +107,7 @@ class ListEventRequest:
     def recent(self, recent):
         """Sets the recent of this ListEventRequest.
 
-        查询日志的时间范围
+        查询日志的时间范围,(不能和from、to同时使用)
 
         :param recent: The recent of this ListEventRequest.
         :type: str
@@ -104,10 +115,54 @@ class ListEventRequest:
         self._recent = recent
 
     @property
+    def _from(self):
+        """Gets the _from of this ListEventRequest.
+
+        起始时间(13位时间戳)，需要和to同时使用，不能和recent参数同时使用
+
+        :return: The _from of this ListEventRequest.
+        :rtype: int
+        """
+        return self.__from
+
+    @_from.setter
+    def _from(self, _from):
+        """Sets the _from of this ListEventRequest.
+
+        起始时间(13位时间戳)，需要和to同时使用，不能和recent参数同时使用
+
+        :param _from: The _from of this ListEventRequest.
+        :type: int
+        """
+        self.__from = _from
+
+    @property
+    def to(self):
+        """Gets the to of this ListEventRequest.
+
+        结束时间(13位时间戳)，需要和from同时使用，不能和recent参数同时使用
+
+        :return: The to of this ListEventRequest.
+        :rtype: int
+        """
+        return self._to
+
+    @to.setter
+    def to(self, to):
+        """Sets the to of this ListEventRequest.
+
+        结束时间(13位时间戳)，需要和from同时使用，不能和recent参数同时使用
+
+        :param to: The to of this ListEventRequest.
+        :type: int
+        """
+        self._to = to
+
+    @property
     def hosts(self):
         """Gets the hosts of this ListEventRequest.
 
-        域名id9从获取防护网站列表获取域名id）
+        域名id，从获取防护网站列表（ListHost）接口获取域名id
 
         :return: The hosts of this ListEventRequest.
         :rtype: list[str]
@@ -118,7 +173,7 @@ class ListEventRequest:
     def hosts(self, hosts):
         """Sets the hosts of this ListEventRequest.
 
-        域名id9从获取防护网站列表获取域名id）
+        域名id，从获取防护网站列表（ListHost）接口获取域名id
 
         :param hosts: The hosts of this ListEventRequest.
         :type: list[str]
@@ -129,7 +184,7 @@ class ListEventRequest:
     def page(self):
         """Gets the page of this ListEventRequest.
 
-        页码
+        分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :return: The page of this ListEventRequest.
         :rtype: int
@@ -140,7 +195,7 @@ class ListEventRequest:
     def page(self, page):
         """Sets the page of this ListEventRequest.
 
-        页码
+        分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :param page: The page of this ListEventRequest.
         :type: int
@@ -151,7 +206,7 @@ class ListEventRequest:
     def pagesize(self):
         """Gets the pagesize of this ListEventRequest.
 
-        每页的条数
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :return: The pagesize of this ListEventRequest.
         :rtype: int
@@ -162,7 +217,7 @@ class ListEventRequest:
     def pagesize(self, pagesize):
         """Sets the pagesize of this ListEventRequest.
 
-        每页的条数
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :param pagesize: The pagesize of this ListEventRequest.
         :type: int

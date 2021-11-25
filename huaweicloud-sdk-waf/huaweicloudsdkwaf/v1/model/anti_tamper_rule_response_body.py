@@ -23,37 +23,52 @@ class AntiTamperRuleResponseBody:
 
     openapi_types = {
         'id': 'str',
+        'policyid': 'str',
+        'timestamp': 'int',
+        'description': 'str',
+        'status': 'int',
         'hostname': 'str',
-        'url': 'str',
-        'description': 'str'
+        'url': 'str'
     }
 
     attribute_map = {
         'id': 'id',
+        'policyid': 'policyid',
+        'timestamp': 'timestamp',
+        'description': 'description',
+        'status': 'status',
         'hostname': 'hostname',
-        'url': 'url',
-        'description': 'description'
+        'url': 'url'
     }
 
-    def __init__(self, id=None, hostname=None, url=None, description=None):
+    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, hostname=None, url=None):
         """AntiTamperRuleResponseBody - a model defined in huaweicloud sdk"""
         
         
 
         self._id = None
+        self._policyid = None
+        self._timestamp = None
+        self._description = None
+        self._status = None
         self._hostname = None
         self._url = None
-        self._description = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
+        if policyid is not None:
+            self.policyid = policyid
+        if timestamp is not None:
+            self.timestamp = timestamp
+        if description is not None:
+            self.description = description
+        if status is not None:
+            self.status = status
         if hostname is not None:
             self.hostname = hostname
         if url is not None:
             self.url = url
-        if description is not None:
-            self.description = description
 
     @property
     def id(self):
@@ -76,6 +91,94 @@ class AntiTamperRuleResponseBody:
         :type: str
         """
         self._id = id
+
+    @property
+    def policyid(self):
+        """Gets the policyid of this AntiTamperRuleResponseBody.
+
+        策略id
+
+        :return: The policyid of this AntiTamperRuleResponseBody.
+        :rtype: str
+        """
+        return self._policyid
+
+    @policyid.setter
+    def policyid(self, policyid):
+        """Sets the policyid of this AntiTamperRuleResponseBody.
+
+        策略id
+
+        :param policyid: The policyid of this AntiTamperRuleResponseBody.
+        :type: str
+        """
+        self._policyid = policyid
+
+    @property
+    def timestamp(self):
+        """Gets the timestamp of this AntiTamperRuleResponseBody.
+
+        时间戳
+
+        :return: The timestamp of this AntiTamperRuleResponseBody.
+        :rtype: int
+        """
+        return self._timestamp
+
+    @timestamp.setter
+    def timestamp(self, timestamp):
+        """Sets the timestamp of this AntiTamperRuleResponseBody.
+
+        时间戳
+
+        :param timestamp: The timestamp of this AntiTamperRuleResponseBody.
+        :type: int
+        """
+        self._timestamp = timestamp
+
+    @property
+    def description(self):
+        """Gets the description of this AntiTamperRuleResponseBody.
+
+        创建规则的时间戳
+
+        :return: The description of this AntiTamperRuleResponseBody.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this AntiTamperRuleResponseBody.
+
+        创建规则的时间戳
+
+        :param description: The description of this AntiTamperRuleResponseBody.
+        :type: str
+        """
+        self._description = description
+
+    @property
+    def status(self):
+        """Gets the status of this AntiTamperRuleResponseBody.
+
+        规则状态，0：关闭，1：开启
+
+        :return: The status of this AntiTamperRuleResponseBody.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this AntiTamperRuleResponseBody.
+
+        规则状态，0：关闭，1：开启
+
+        :param status: The status of this AntiTamperRuleResponseBody.
+        :type: int
+        """
+        self._status = status
 
     @property
     def hostname(self):
@@ -120,28 +223,6 @@ class AntiTamperRuleResponseBody:
         :type: str
         """
         self._url = url
-
-    @property
-    def description(self):
-        """Gets the description of this AntiTamperRuleResponseBody.
-
-        创建规则的时间戳
-
-        :return: The description of this AntiTamperRuleResponseBody.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this AntiTamperRuleResponseBody.
-
-        创建规则的时间戳
-
-        :param description: The description of this AntiTamperRuleResponseBody.
-        :type: str
-        """
-        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

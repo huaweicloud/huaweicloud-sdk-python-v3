@@ -23,44 +23,44 @@ class ListSignatureKeysV2Request:
 
     openapi_types = {
         'instance_id': 'str',
-        'id': 'str',
-        'name': 'str',
         'offset': 'int',
         'limit': 'int',
+        'id': 'str',
+        'name': 'str',
         'precise_search': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
-        'id': 'id',
-        'name': 'name',
         'offset': 'offset',
         'limit': 'limit',
+        'id': 'id',
+        'name': 'name',
         'precise_search': 'precise_search'
     }
 
-    def __init__(self, instance_id=None, id=None, name=None, offset=None, limit=None, precise_search=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, precise_search=None):
         """ListSignatureKeysV2Request - a model defined in huaweicloud sdk"""
         
         
 
         self._instance_id = None
-        self._id = None
-        self._name = None
         self._offset = None
         self._limit = None
+        self._id = None
+        self._name = None
         self._precise_search = None
         self.discriminator = None
 
         self.instance_id = instance_id
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
         if precise_search is not None:
             self.precise_search = precise_search
 
@@ -68,7 +68,7 @@ class ListSignatureKeysV2Request:
     def instance_id(self):
         """Gets the instance_id of this ListSignatureKeysV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this ListSignatureKeysV2Request.
         :rtype: str
@@ -79,56 +79,12 @@ class ListSignatureKeysV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListSignatureKeysV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this ListSignatureKeysV2Request.
         :type: str
         """
         self._instance_id = instance_id
-
-    @property
-    def id(self):
-        """Gets the id of this ListSignatureKeysV2Request.
-
-        签名密钥编号
-
-        :return: The id of this ListSignatureKeysV2Request.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ListSignatureKeysV2Request.
-
-        签名密钥编号
-
-        :param id: The id of this ListSignatureKeysV2Request.
-        :type: str
-        """
-        self._id = id
-
-    @property
-    def name(self):
-        """Gets the name of this ListSignatureKeysV2Request.
-
-        签名密钥名称
-
-        :return: The name of this ListSignatureKeysV2Request.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListSignatureKeysV2Request.
-
-        签名密钥名称
-
-        :param name: The name of this ListSignatureKeysV2Request.
-        :type: str
-        """
-        self._name = name
 
     @property
     def offset(self):
@@ -173,6 +129,50 @@ class ListSignatureKeysV2Request:
         :type: int
         """
         self._limit = limit
+
+    @property
+    def id(self):
+        """Gets the id of this ListSignatureKeysV2Request.
+
+        签名密钥编号
+
+        :return: The id of this ListSignatureKeysV2Request.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ListSignatureKeysV2Request.
+
+        签名密钥编号
+
+        :param id: The id of this ListSignatureKeysV2Request.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this ListSignatureKeysV2Request.
+
+        签名密钥名称
+
+        :return: The name of this ListSignatureKeysV2Request.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListSignatureKeysV2Request.
+
+        签名密钥名称
+
+        :param name: The name of this ListSignatureKeysV2Request.
+        :type: str
+        """
+        self._name = name
 
     @property
     def precise_search(self):

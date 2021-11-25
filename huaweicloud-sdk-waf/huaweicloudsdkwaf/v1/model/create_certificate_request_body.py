@@ -43,18 +43,15 @@ class CreateCertificateRequestBody:
         self._key = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if content is not None:
-            self.content = content
-        if key is not None:
-            self.key = key
+        self.name = name
+        self.content = content
+        self.key = key
 
     @property
     def name(self):
         """Gets the name of this CreateCertificateRequestBody.
 
-        证书名
+        证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64位字符
 
         :return: The name of this CreateCertificateRequestBody.
         :rtype: str
@@ -65,7 +62,7 @@ class CreateCertificateRequestBody:
     def name(self, name):
         """Sets the name of this CreateCertificateRequestBody.
 
-        证书名
+        证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64位字符
 
         :param name: The name of this CreateCertificateRequestBody.
         :type: str
@@ -76,7 +73,7 @@ class CreateCertificateRequestBody:
     def content(self):
         """Gets the content of this CreateCertificateRequestBody.
 
-        证书文件，PEM编码
+        证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
 
         :return: The content of this CreateCertificateRequestBody.
         :rtype: str
@@ -87,7 +84,7 @@ class CreateCertificateRequestBody:
     def content(self, content):
         """Sets the content of this CreateCertificateRequestBody.
 
-        证书文件，PEM编码
+        证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
 
         :param content: The content of this CreateCertificateRequestBody.
         :type: str
@@ -98,7 +95,7 @@ class CreateCertificateRequestBody:
     def key(self):
         """Gets the key of this CreateCertificateRequestBody.
 
-        证书私钥，PEM编码
+        证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
 
         :return: The key of this CreateCertificateRequestBody.
         :rtype: str
@@ -109,7 +106,7 @@ class CreateCertificateRequestBody:
     def key(self, key):
         """Sets the key of this CreateCertificateRequestBody.
 
-        证书私钥，PEM编码
+        证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
 
         :param key: The key of this CreateCertificateRequestBody.
         :type: str

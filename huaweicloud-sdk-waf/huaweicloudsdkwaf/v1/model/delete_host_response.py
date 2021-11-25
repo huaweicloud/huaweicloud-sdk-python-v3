@@ -23,82 +23,87 @@ class DeleteHostResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
+        'hostid': 'str',
+        'description': 'str',
+        'type': 'int',
+        'proxy': 'bool',
+        'flag': 'Flag',
         'hostname': 'str',
-        'policyid': 'str',
         'access_code': 'str',
+        'policyid': 'str',
+        'timestamp': 'int',
         'protect_status': 'int',
         'access_status': 'int',
-        'protocol': 'str',
-        'certificateid': 'str',
-        'certificatename': 'str',
-        'server': 'list[CloudWafServer]',
-        'proxy': 'bool',
-        'timestamp': 'int',
-        'exclusive_ip': 'bool'
+        'exclusive_ip': 'bool',
+        'paid_type': 'str'
     }
 
     attribute_map = {
         'id': 'id',
+        'hostid': 'hostid',
+        'description': 'description',
+        'type': 'type',
+        'proxy': 'proxy',
+        'flag': 'flag',
         'hostname': 'hostname',
-        'policyid': 'policyid',
         'access_code': 'access_code',
+        'policyid': 'policyid',
+        'timestamp': 'timestamp',
         'protect_status': 'protect_status',
         'access_status': 'access_status',
-        'protocol': 'protocol',
-        'certificateid': 'certificateid',
-        'certificatename': 'certificatename',
-        'server': 'server',
-        'proxy': 'proxy',
-        'timestamp': 'timestamp',
-        'exclusive_ip': 'exclusive_ip'
+        'exclusive_ip': 'exclusive_ip',
+        'paid_type': 'paid_type'
     }
 
-    def __init__(self, id=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, protocol=None, certificateid=None, certificatename=None, server=None, proxy=None, timestamp=None, exclusive_ip=None):
+    def __init__(self, id=None, hostid=None, description=None, type=None, proxy=None, flag=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None):
         """DeleteHostResponse - a model defined in huaweicloud sdk"""
         
         super(DeleteHostResponse, self).__init__()
 
         self._id = None
+        self._hostid = None
+        self._description = None
+        self._type = None
+        self._proxy = None
+        self._flag = None
         self._hostname = None
-        self._policyid = None
         self._access_code = None
+        self._policyid = None
+        self._timestamp = None
         self._protect_status = None
         self._access_status = None
-        self._protocol = None
-        self._certificateid = None
-        self._certificatename = None
-        self._server = None
-        self._proxy = None
-        self._timestamp = None
         self._exclusive_ip = None
+        self._paid_type = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
+        if hostid is not None:
+            self.hostid = hostid
+        if description is not None:
+            self.description = description
+        if type is not None:
+            self.type = type
+        if proxy is not None:
+            self.proxy = proxy
+        if flag is not None:
+            self.flag = flag
         if hostname is not None:
             self.hostname = hostname
-        if policyid is not None:
-            self.policyid = policyid
         if access_code is not None:
             self.access_code = access_code
+        if policyid is not None:
+            self.policyid = policyid
+        if timestamp is not None:
+            self.timestamp = timestamp
         if protect_status is not None:
             self.protect_status = protect_status
         if access_status is not None:
             self.access_status = access_status
-        if protocol is not None:
-            self.protocol = protocol
-        if certificateid is not None:
-            self.certificateid = certificateid
-        if certificatename is not None:
-            self.certificatename = certificatename
-        if server is not None:
-            self.server = server
-        if proxy is not None:
-            self.proxy = proxy
-        if timestamp is not None:
-            self.timestamp = timestamp
         if exclusive_ip is not None:
             self.exclusive_ip = exclusive_ip
+        if paid_type is not None:
+            self.paid_type = paid_type
 
     @property
     def id(self):
@@ -123,202 +128,70 @@ class DeleteHostResponse(SdkResponse):
         self._id = id
 
     @property
-    def hostname(self):
-        """Gets the hostname of this DeleteHostResponse.
+    def hostid(self):
+        """Gets the hostid of this DeleteHostResponse.
 
-        创建的云模式防护域名
+        域名id
 
-        :return: The hostname of this DeleteHostResponse.
+        :return: The hostid of this DeleteHostResponse.
         :rtype: str
         """
-        return self._hostname
+        return self._hostid
 
-    @hostname.setter
-    def hostname(self, hostname):
-        """Sets the hostname of this DeleteHostResponse.
+    @hostid.setter
+    def hostid(self, hostid):
+        """Sets the hostid of this DeleteHostResponse.
 
-        创建的云模式防护域名
+        域名id
 
-        :param hostname: The hostname of this DeleteHostResponse.
+        :param hostid: The hostid of this DeleteHostResponse.
         :type: str
         """
-        self._hostname = hostname
+        self._hostid = hostid
 
     @property
-    def policyid(self):
-        """Gets the policyid of this DeleteHostResponse.
+    def description(self):
+        """Gets the description of this DeleteHostResponse.
 
-        策略id
+        描述信息
 
-        :return: The policyid of this DeleteHostResponse.
+        :return: The description of this DeleteHostResponse.
         :rtype: str
         """
-        return self._policyid
+        return self._description
 
-    @policyid.setter
-    def policyid(self, policyid):
-        """Sets the policyid of this DeleteHostResponse.
+    @description.setter
+    def description(self, description):
+        """Sets the description of this DeleteHostResponse.
 
-        策略id
+        描述信息
 
-        :param policyid: The policyid of this DeleteHostResponse.
+        :param description: The description of this DeleteHostResponse.
         :type: str
         """
-        self._policyid = policyid
+        self._description = description
 
     @property
-    def access_code(self):
-        """Gets the access_code of this DeleteHostResponse.
+    def type(self):
+        """Gets the type of this DeleteHostResponse.
 
-        cname前缀
+        WAF部署模式，默认是1，目前仅支持反代模式
 
-        :return: The access_code of this DeleteHostResponse.
-        :rtype: str
-        """
-        return self._access_code
-
-    @access_code.setter
-    def access_code(self, access_code):
-        """Sets the access_code of this DeleteHostResponse.
-
-        cname前缀
-
-        :param access_code: The access_code of this DeleteHostResponse.
-        :type: str
-        """
-        self._access_code = access_code
-
-    @property
-    def protect_status(self):
-        """Gets the protect_status of this DeleteHostResponse.
-
-        防护状态
-
-        :return: The protect_status of this DeleteHostResponse.
+        :return: The type of this DeleteHostResponse.
         :rtype: int
         """
-        return self._protect_status
+        return self._type
 
-    @protect_status.setter
-    def protect_status(self, protect_status):
-        """Sets the protect_status of this DeleteHostResponse.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this DeleteHostResponse.
 
-        防护状态
+        WAF部署模式，默认是1，目前仅支持反代模式
 
-        :param protect_status: The protect_status of this DeleteHostResponse.
+        :param type: The type of this DeleteHostResponse.
         :type: int
         """
-        self._protect_status = protect_status
-
-    @property
-    def access_status(self):
-        """Gets the access_status of this DeleteHostResponse.
-
-        接入状态
-
-        :return: The access_status of this DeleteHostResponse.
-        :rtype: int
-        """
-        return self._access_status
-
-    @access_status.setter
-    def access_status(self, access_status):
-        """Sets the access_status of this DeleteHostResponse.
-
-        接入状态
-
-        :param access_status: The access_status of this DeleteHostResponse.
-        :type: int
-        """
-        self._access_status = access_status
-
-    @property
-    def protocol(self):
-        """Gets the protocol of this DeleteHostResponse.
-
-        返回的客户端协议类型
-
-        :return: The protocol of this DeleteHostResponse.
-        :rtype: str
-        """
-        return self._protocol
-
-    @protocol.setter
-    def protocol(self, protocol):
-        """Sets the protocol of this DeleteHostResponse.
-
-        返回的客户端协议类型
-
-        :param protocol: The protocol of this DeleteHostResponse.
-        :type: str
-        """
-        self._protocol = protocol
-
-    @property
-    def certificateid(self):
-        """Gets the certificateid of this DeleteHostResponse.
-
-        返回的证书id
-
-        :return: The certificateid of this DeleteHostResponse.
-        :rtype: str
-        """
-        return self._certificateid
-
-    @certificateid.setter
-    def certificateid(self, certificateid):
-        """Sets the certificateid of this DeleteHostResponse.
-
-        返回的证书id
-
-        :param certificateid: The certificateid of this DeleteHostResponse.
-        :type: str
-        """
-        self._certificateid = certificateid
-
-    @property
-    def certificatename(self):
-        """Gets the certificatename of this DeleteHostResponse.
-
-        证书名称
-
-        :return: The certificatename of this DeleteHostResponse.
-        :rtype: str
-        """
-        return self._certificatename
-
-    @certificatename.setter
-    def certificatename(self, certificatename):
-        """Sets the certificatename of this DeleteHostResponse.
-
-        证书名称
-
-        :param certificatename: The certificatename of this DeleteHostResponse.
-        :type: str
-        """
-        self._certificatename = certificatename
-
-    @property
-    def server(self):
-        """Gets the server of this DeleteHostResponse.
-
-        源站信息
-
-        :return: The server of this DeleteHostResponse.
-        :rtype: list[CloudWafServer]
-        """
-        return self._server
-
-    @server.setter
-    def server(self, server):
-        """Sets the server of this DeleteHostResponse.
-
-        源站信息
-
-        :param server: The server of this DeleteHostResponse.
-        :type: list[CloudWafServer]
-        """
-        self._server = server
+        self._type = type
 
     @property
     def proxy(self):
@@ -343,6 +216,92 @@ class DeleteHostResponse(SdkResponse):
         self._proxy = proxy
 
     @property
+    def flag(self):
+        """Gets the flag of this DeleteHostResponse.
+
+
+        :return: The flag of this DeleteHostResponse.
+        :rtype: Flag
+        """
+        return self._flag
+
+    @flag.setter
+    def flag(self, flag):
+        """Sets the flag of this DeleteHostResponse.
+
+
+        :param flag: The flag of this DeleteHostResponse.
+        :type: Flag
+        """
+        self._flag = flag
+
+    @property
+    def hostname(self):
+        """Gets the hostname of this DeleteHostResponse.
+
+        创建的云模式防护域名
+
+        :return: The hostname of this DeleteHostResponse.
+        :rtype: str
+        """
+        return self._hostname
+
+    @hostname.setter
+    def hostname(self, hostname):
+        """Sets the hostname of this DeleteHostResponse.
+
+        创建的云模式防护域名
+
+        :param hostname: The hostname of this DeleteHostResponse.
+        :type: str
+        """
+        self._hostname = hostname
+
+    @property
+    def access_code(self):
+        """Gets the access_code of this DeleteHostResponse.
+
+        cname后缀
+
+        :return: The access_code of this DeleteHostResponse.
+        :rtype: str
+        """
+        return self._access_code
+
+    @access_code.setter
+    def access_code(self, access_code):
+        """Sets the access_code of this DeleteHostResponse.
+
+        cname后缀
+
+        :param access_code: The access_code of this DeleteHostResponse.
+        :type: str
+        """
+        self._access_code = access_code
+
+    @property
+    def policyid(self):
+        """Gets the policyid of this DeleteHostResponse.
+
+        策略id
+
+        :return: The policyid of this DeleteHostResponse.
+        :rtype: str
+        """
+        return self._policyid
+
+    @policyid.setter
+    def policyid(self, policyid):
+        """Sets the policyid of this DeleteHostResponse.
+
+        策略id
+
+        :param policyid: The policyid of this DeleteHostResponse.
+        :type: str
+        """
+        self._policyid = policyid
+
+    @property
     def timestamp(self):
         """Gets the timestamp of this DeleteHostResponse.
 
@@ -365,6 +324,50 @@ class DeleteHostResponse(SdkResponse):
         self._timestamp = timestamp
 
     @property
+    def protect_status(self):
+        """Gets the protect_status of this DeleteHostResponse.
+
+        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+
+        :return: The protect_status of this DeleteHostResponse.
+        :rtype: int
+        """
+        return self._protect_status
+
+    @protect_status.setter
+    def protect_status(self, protect_status):
+        """Sets the protect_status of this DeleteHostResponse.
+
+        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+
+        :param protect_status: The protect_status of this DeleteHostResponse.
+        :type: int
+        """
+        self._protect_status = protect_status
+
+    @property
+    def access_status(self):
+        """Gets the access_status of this DeleteHostResponse.
+
+        接入状态，0： 未接入，1：已接入
+
+        :return: The access_status of this DeleteHostResponse.
+        :rtype: int
+        """
+        return self._access_status
+
+    @access_status.setter
+    def access_status(self, access_status):
+        """Sets the access_status of this DeleteHostResponse.
+
+        接入状态，0： 未接入，1：已接入
+
+        :param access_status: The access_status of this DeleteHostResponse.
+        :type: int
+        """
+        self._access_status = access_status
+
+    @property
     def exclusive_ip(self):
         """Gets the exclusive_ip of this DeleteHostResponse.
 
@@ -385,6 +388,28 @@ class DeleteHostResponse(SdkResponse):
         :type: bool
         """
         self._exclusive_ip = exclusive_ip
+
+    @property
+    def paid_type(self):
+        """Gets the paid_type of this DeleteHostResponse.
+
+        套餐付费模式，目前只支持prePaid预付款模式
+
+        :return: The paid_type of this DeleteHostResponse.
+        :rtype: str
+        """
+        return self._paid_type
+
+    @paid_type.setter
+    def paid_type(self, paid_type):
+        """Sets the paid_type of this DeleteHostResponse.
+
+        套餐付费模式，目前只支持prePaid预付款模式
+
+        :param paid_type: The paid_type of this DeleteHostResponse.
+        :type: str
+        """
+        self._paid_type = paid_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

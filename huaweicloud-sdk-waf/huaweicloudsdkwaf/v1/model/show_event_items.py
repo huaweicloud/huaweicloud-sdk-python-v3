@@ -29,9 +29,18 @@ class ShowEventItems:
         'url': 'str',
         'attack': 'str',
         'rule': 'str',
-        'payload': 'str',
         'action': 'str',
-        'timestamp': 'int'
+        'cookie': 'object',
+        'headers': 'str',
+        'host_id': 'object',
+        'id': 'str',
+        'payload': 'str',
+        'payload_location': 'str',
+        'region': 'str',
+        'request_line': 'str',
+        'response_size': 'str',
+        'response_time': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
@@ -42,12 +51,21 @@ class ShowEventItems:
         'url': 'url',
         'attack': 'attack',
         'rule': 'rule',
-        'payload': 'payload',
         'action': 'action',
-        'timestamp': 'timestamp'
+        'cookie': 'cookie',
+        'headers': 'headers',
+        'host_id': 'host_id',
+        'id': 'id',
+        'payload': 'payload',
+        'payload_location': 'payload_location',
+        'region': 'region',
+        'request_line': 'request_line',
+        'response_size': 'response_size',
+        'response_time': 'response_time',
+        'status': 'status'
     }
 
-    def __init__(self, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, payload=None, action=None, timestamp=None):
+    def __init__(self, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, action=None, cookie=None, headers=None, host_id=None, id=None, payload=None, payload_location=None, region=None, request_line=None, response_size=None, response_time=None, status=None):
         """ShowEventItems - a model defined in huaweicloud sdk"""
         
         
@@ -59,9 +77,18 @@ class ShowEventItems:
         self._url = None
         self._attack = None
         self._rule = None
-        self._payload = None
         self._action = None
-        self._timestamp = None
+        self._cookie = None
+        self._headers = None
+        self._host_id = None
+        self._id = None
+        self._payload = None
+        self._payload_location = None
+        self._region = None
+        self._request_line = None
+        self._response_size = None
+        self._response_time = None
+        self._status = None
         self.discriminator = None
 
         if time is not None:
@@ -78,18 +105,36 @@ class ShowEventItems:
             self.attack = attack
         if rule is not None:
             self.rule = rule
-        if payload is not None:
-            self.payload = payload
         if action is not None:
             self.action = action
-        if timestamp is not None:
-            self.timestamp = timestamp
+        if cookie is not None:
+            self.cookie = cookie
+        if headers is not None:
+            self.headers = headers
+        if host_id is not None:
+            self.host_id = host_id
+        if id is not None:
+            self.id = id
+        if payload is not None:
+            self.payload = payload
+        if payload_location is not None:
+            self.payload_location = payload_location
+        if region is not None:
+            self.region = region
+        if request_line is not None:
+            self.request_line = request_line
+        if response_size is not None:
+            self.response_size = response_size
+        if response_time is not None:
+            self.response_time = response_time
+        if status is not None:
+            self.status = status
 
     @property
     def time(self):
         """Gets the time of this ShowEventItems.
 
-        次数
+        攻击发生时的时间戳（毫秒）
 
         :return: The time of this ShowEventItems.
         :rtype: int
@@ -100,7 +145,7 @@ class ShowEventItems:
     def time(self, time):
         """Sets the time of this ShowEventItems.
 
-        次数
+        攻击发生时的时间戳（毫秒）
 
         :param time: The time of this ShowEventItems.
         :type: int
@@ -240,28 +285,6 @@ class ShowEventItems:
         self._rule = rule
 
     @property
-    def payload(self):
-        """Gets the payload of this ShowEventItems.
-
-        命中的载荷
-
-        :return: The payload of this ShowEventItems.
-        :rtype: str
-        """
-        return self._payload
-
-    @payload.setter
-    def payload(self, payload):
-        """Sets the payload of this ShowEventItems.
-
-        命中的载荷
-
-        :param payload: The payload of this ShowEventItems.
-        :type: str
-        """
-        self._payload = payload
-
-    @property
     def action(self):
         """Gets the action of this ShowEventItems.
 
@@ -284,26 +307,246 @@ class ShowEventItems:
         self._action = action
 
     @property
-    def timestamp(self):
-        """Gets the timestamp of this ShowEventItems.
+    def cookie(self):
+        """Gets the cookie of this ShowEventItems.
 
-        时间戳
+        攻击请求的cookie
 
-        :return: The timestamp of this ShowEventItems.
-        :rtype: int
+        :return: The cookie of this ShowEventItems.
+        :rtype: object
         """
-        return self._timestamp
+        return self._cookie
 
-    @timestamp.setter
-    def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowEventItems.
+    @cookie.setter
+    def cookie(self, cookie):
+        """Sets the cookie of this ShowEventItems.
 
-        时间戳
+        攻击请求的cookie
 
-        :param timestamp: The timestamp of this ShowEventItems.
-        :type: int
+        :param cookie: The cookie of this ShowEventItems.
+        :type: object
         """
-        self._timestamp = timestamp
+        self._cookie = cookie
+
+    @property
+    def headers(self):
+        """Gets the headers of this ShowEventItems.
+
+        攻击请求的headers
+
+        :return: The headers of this ShowEventItems.
+        :rtype: str
+        """
+        return self._headers
+
+    @headers.setter
+    def headers(self, headers):
+        """Sets the headers of this ShowEventItems.
+
+        攻击请求的headers
+
+        :param headers: The headers of this ShowEventItems.
+        :type: str
+        """
+        self._headers = headers
+
+    @property
+    def host_id(self):
+        """Gets the host_id of this ShowEventItems.
+
+        被攻击的域名id
+
+        :return: The host_id of this ShowEventItems.
+        :rtype: object
+        """
+        return self._host_id
+
+    @host_id.setter
+    def host_id(self, host_id):
+        """Sets the host_id of this ShowEventItems.
+
+        被攻击的域名id
+
+        :param host_id: The host_id of this ShowEventItems.
+        :type: object
+        """
+        self._host_id = host_id
+
+    @property
+    def id(self):
+        """Gets the id of this ShowEventItems.
+
+        攻击请求的id
+
+        :return: The id of this ShowEventItems.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ShowEventItems.
+
+        攻击请求的id
+
+        :param id: The id of this ShowEventItems.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def payload(self):
+        """Gets the payload of this ShowEventItems.
+
+        恶意负载
+
+        :return: The payload of this ShowEventItems.
+        :rtype: str
+        """
+        return self._payload
+
+    @payload.setter
+    def payload(self, payload):
+        """Sets the payload of this ShowEventItems.
+
+        恶意负载
+
+        :param payload: The payload of this ShowEventItems.
+        :type: str
+        """
+        self._payload = payload
+
+    @property
+    def payload_location(self):
+        """Gets the payload_location of this ShowEventItems.
+
+        恶意负载位置
+
+        :return: The payload_location of this ShowEventItems.
+        :rtype: str
+        """
+        return self._payload_location
+
+    @payload_location.setter
+    def payload_location(self, payload_location):
+        """Sets the payload_location of this ShowEventItems.
+
+        恶意负载位置
+
+        :param payload_location: The payload_location of this ShowEventItems.
+        :type: str
+        """
+        self._payload_location = payload_location
+
+    @property
+    def region(self):
+        """Gets the region of this ShowEventItems.
+
+        源ip地理位置
+
+        :return: The region of this ShowEventItems.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        """Sets the region of this ShowEventItems.
+
+        源ip地理位置
+
+        :param region: The region of this ShowEventItems.
+        :type: str
+        """
+        self._region = region
+
+    @property
+    def request_line(self):
+        """Gets the request_line of this ShowEventItems.
+
+        攻击请求的请求行
+
+        :return: The request_line of this ShowEventItems.
+        :rtype: str
+        """
+        return self._request_line
+
+    @request_line.setter
+    def request_line(self, request_line):
+        """Sets the request_line of this ShowEventItems.
+
+        攻击请求的请求行
+
+        :param request_line: The request_line of this ShowEventItems.
+        :type: str
+        """
+        self._request_line = request_line
+
+    @property
+    def response_size(self):
+        """Gets the response_size of this ShowEventItems.
+
+        返回大小（字节）
+
+        :return: The response_size of this ShowEventItems.
+        :rtype: str
+        """
+        return self._response_size
+
+    @response_size.setter
+    def response_size(self, response_size):
+        """Sets the response_size of this ShowEventItems.
+
+        返回大小（字节）
+
+        :param response_size: The response_size of this ShowEventItems.
+        :type: str
+        """
+        self._response_size = response_size
+
+    @property
+    def response_time(self):
+        """Gets the response_time of this ShowEventItems.
+
+        响应时间（毫秒）
+
+        :return: The response_time of this ShowEventItems.
+        :rtype: str
+        """
+        return self._response_time
+
+    @response_time.setter
+    def response_time(self, response_time):
+        """Sets the response_time of this ShowEventItems.
+
+        响应时间（毫秒）
+
+        :param response_time: The response_time of this ShowEventItems.
+        :type: str
+        """
+        self._response_time = response_time
+
+    @property
+    def status(self):
+        """Gets the status of this ShowEventItems.
+
+        响应码
+
+        :return: The status of this ShowEventItems.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ShowEventItems.
+
+        响应码
+
+        :param status: The status of this ShowEventItems.
+        :type: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

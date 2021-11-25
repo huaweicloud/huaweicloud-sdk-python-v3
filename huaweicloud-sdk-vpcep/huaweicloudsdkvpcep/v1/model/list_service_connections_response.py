@@ -22,7 +22,7 @@ class ListServiceConnectionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'connections': 'list[Endpoints]',
+        'connections': 'list[Connection]',
         'total_count': 'int'
     }
 
@@ -52,7 +52,7 @@ class ListServiceConnectionsResponse(SdkResponse):
         连接列表。
 
         :return: The connections of this ListServiceConnectionsResponse.
-        :rtype: list[Endpoints]
+        :rtype: list[Connection]
         """
         return self._connections
 
@@ -63,7 +63,7 @@ class ListServiceConnectionsResponse(SdkResponse):
         连接列表。
 
         :param connections: The connections of this ListServiceConnectionsResponse.
-        :type: list[Endpoints]
+        :type: list[Connection]
         """
         self._connections = connections
 
@@ -71,7 +71,7 @@ class ListServiceConnectionsResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListServiceConnectionsResponse.
 
-        满足查询条件的终端节点总条数，不受分 页（即limit、offset参数）影响。
+        满足查询条件的终端节点总条数，不受分页（即limit、offset参数）影响。
 
         :return: The total_count of this ListServiceConnectionsResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class ListServiceConnectionsResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListServiceConnectionsResponse.
 
-        满足查询条件的终端节点总条数，不受分 页（即limit、offset参数）影响。
+        满足查询条件的终端节点总条数，不受分页（即limit、offset参数）影响。
 
         :param total_count: The total_count of this ListServiceConnectionsResponse.
         :type: int

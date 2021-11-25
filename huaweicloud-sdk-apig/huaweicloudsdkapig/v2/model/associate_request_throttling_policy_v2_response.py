@@ -22,7 +22,7 @@ class AssociateRequestThrottlingPolicyV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'throttle_applys': 'list[ThrottleBindingResp]'
+        'throttle_applys': 'list[ThrottleApiBinding]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class AssociateRequestThrottlingPolicyV2Response(SdkResponse):
         API与流控策略的绑定关系列表
 
         :return: The throttle_applys of this AssociateRequestThrottlingPolicyV2Response.
-        :rtype: list[ThrottleBindingResp]
+        :rtype: list[ThrottleApiBinding]
         """
         return self._throttle_applys
 
@@ -58,7 +58,7 @@ class AssociateRequestThrottlingPolicyV2Response(SdkResponse):
         API与流控策略的绑定关系列表
 
         :param throttle_applys: The throttle_applys of this AssociateRequestThrottlingPolicyV2Response.
-        :type: list[ThrottleBindingResp]
+        :type: list[ThrottleApiBinding]
         """
         self._throttle_applys = throttle_applys
 

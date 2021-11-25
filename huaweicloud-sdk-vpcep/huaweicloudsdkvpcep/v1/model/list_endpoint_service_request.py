@@ -74,7 +74,7 @@ class ListEndpointServiceRequest:
     def endpoint_service_name(self):
         """Gets the endpoint_service_name of this ListEndpointServiceRequest.
 
-        终端节点服务的名称，支持大小 写，前后模糊匹配。
+        终端节点服务的名称，支持大小写，前后模糊匹配。
 
         :return: The endpoint_service_name of this ListEndpointServiceRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class ListEndpointServiceRequest:
     def endpoint_service_name(self, endpoint_service_name):
         """Sets the endpoint_service_name of this ListEndpointServiceRequest.
 
-        终端节点服务的名称，支持大小 写，前后模糊匹配。
+        终端节点服务的名称，支持大小写，前后模糊匹配。
 
         :param endpoint_service_name: The endpoint_service_name of this ListEndpointServiceRequest.
         :type: str
@@ -140,7 +140,7 @@ class ListEndpointServiceRequest:
     def sort_key(self):
         """Gets the sort_key of this ListEndpointServiceRequest.
 
-        查询结果中终端节点服务列表的排 序字段，取值为： ● create_at：终端节点服务的创建 时间 ● update_at：终端节点服务的更 新时间 默认值为create_at。
+        查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
 
         :return: The sort_key of this ListEndpointServiceRequest.
         :rtype: str
@@ -151,7 +151,7 @@ class ListEndpointServiceRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListEndpointServiceRequest.
 
-        查询结果中终端节点服务列表的排 序字段，取值为： ● create_at：终端节点服务的创建 时间 ● update_at：终端节点服务的更 新时间 默认值为create_at。
+        查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
 
         :param sort_key: The sort_key of this ListEndpointServiceRequest.
         :type: str
@@ -184,7 +184,7 @@ class ListEndpointServiceRequest:
     def limit(self):
         """Gets the limit of this ListEndpointServiceRequest.
 
-        查询返回的终端节点服务数量限 制，即每页返回的终端节点服务的 个数。 取值范围：0~1000，取值一般为 10，20或者50，默认为10。
+        查询返回的终端节点服务数量限制，即每页返回的终端节点服务的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
         :return: The limit of this ListEndpointServiceRequest.
         :rtype: int
@@ -195,7 +195,7 @@ class ListEndpointServiceRequest:
     def limit(self, limit):
         """Sets the limit of this ListEndpointServiceRequest.
 
-        查询返回的终端节点服务数量限 制，即每页返回的终端节点服务的 个数。 取值范围：0~1000，取值一般为 10，20或者50，默认为10。
+        查询返回的终端节点服务数量限制，即每页返回的终端节点服务的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
         :param limit: The limit of this ListEndpointServiceRequest.
         :type: int
@@ -206,7 +206,7 @@ class ListEndpointServiceRequest:
     def offset(self):
         """Gets the offset of this ListEndpointServiceRequest.
 
-        偏移量。 偏移量为一个大于0小于终端节点 服务总个数的整数，表示从偏移量 后面的终端节点服务开始查询。
+        偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数，表示从偏移量后面的终端节点服务开始查询。
 
         :return: The offset of this ListEndpointServiceRequest.
         :rtype: int
@@ -217,7 +217,7 @@ class ListEndpointServiceRequest:
     def offset(self, offset):
         """Sets the offset of this ListEndpointServiceRequest.
 
-        偏移量。 偏移量为一个大于0小于终端节点 服务总个数的整数，表示从偏移量 后面的终端节点服务开始查询。
+        偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数，表示从偏移量后面的终端节点服务开始查询。
 
         :param offset: The offset of this ListEndpointServiceRequest.
         :type: int

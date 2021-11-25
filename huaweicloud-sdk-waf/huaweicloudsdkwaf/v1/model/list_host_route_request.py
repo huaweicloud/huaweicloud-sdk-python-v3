@@ -48,7 +48,7 @@ class ListHostRouteRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListHostRouteRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ListHostRouteRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ListHostRouteRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListHostRouteRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListHostRouteRequest.
         :type: str
@@ -70,7 +70,7 @@ class ListHostRouteRequest:
     def instance_id(self):
         """Gets the instance_id of this ListHostRouteRequest.
 
-        域名Id
+        域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
 
         :return: The instance_id of this ListHostRouteRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ListHostRouteRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListHostRouteRequest.
 
-        域名Id
+        域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
 
         :param instance_id: The instance_id of this ListHostRouteRequest.
         :type: str

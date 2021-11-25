@@ -52,7 +52,7 @@ class UpdatePolicyProtectHostRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdatePolicyProtectHostRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this UpdatePolicyProtectHostRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class UpdatePolicyProtectHostRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this UpdatePolicyProtectHostRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdatePolicyProtectHostRequest.
         :type: str
@@ -74,7 +74,7 @@ class UpdatePolicyProtectHostRequest:
     def policy_id(self):
         """Gets the policy_id of this UpdatePolicyProtectHostRequest.
 
-        策略id（策略id从查询防护策略列表接口获取）
+        防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :return: The policy_id of this UpdatePolicyProtectHostRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class UpdatePolicyProtectHostRequest:
     def policy_id(self, policy_id):
         """Sets the policy_id of this UpdatePolicyProtectHostRequest.
 
-        策略id（策略id从查询防护策略列表接口获取）
+        防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
         :param policy_id: The policy_id of this UpdatePolicyProtectHostRequest.
         :type: str
@@ -96,7 +96,7 @@ class UpdatePolicyProtectHostRequest:
     def hosts(self):
         """Gets the hosts of this UpdatePolicyProtectHostRequest.
 
-        域名id9从获取防护网站列表获取域名id）
+        域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
 
         :return: The hosts of this UpdatePolicyProtectHostRequest.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdatePolicyProtectHostRequest:
     def hosts(self, hosts):
         """Sets the hosts of this UpdatePolicyProtectHostRequest.
 
-        域名id9从获取防护网站列表获取域名id）
+        域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
 
         :param hosts: The hosts of this UpdatePolicyProtectHostRequest.
         :type: str

@@ -1227,7 +1227,7 @@ class VpcAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3/{project_id}/vpc/address_groups',
+            resource_path='/v3/{project_id}/vpc/address-groups',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -1290,7 +1290,7 @@ class VpcAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3/{project_id}/vpc/address_groups/{address_group_id}',
+            resource_path='/v3/{project_id}/vpc/address-groups/{address_group_id}',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,
@@ -1353,7 +1353,7 @@ class VpcAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3/{project_id}/vpc/address_groups/{address_group_id}/force',
+            resource_path='/v3/{project_id}/vpc/address-groups/{address_group_id}/force',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,
@@ -1429,7 +1429,7 @@ class VpcAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3/{project_id}/vpc/address_groups',
+            resource_path='/v3/{project_id}/vpc/address-groups',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -1492,7 +1492,7 @@ class VpcAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3/{project_id}/vpc/address_groups/{address_group_id}',
+            resource_path='/v3/{project_id}/vpc/address-groups/{address_group_id}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -1557,7 +1557,7 @@ class VpcAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3/{project_id}/vpc/address_groups/{address_group_id}',
+            resource_path='/v3/{project_id}/vpc/address-groups/{address_group_id}',
             method='PUT',
             path_params=path_params,
             query_params=query_params,

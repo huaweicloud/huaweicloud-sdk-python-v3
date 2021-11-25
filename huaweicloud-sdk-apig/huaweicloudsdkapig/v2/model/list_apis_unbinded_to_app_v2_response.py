@@ -24,7 +24,7 @@ class ListApisUnbindedToAppV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'apis': 'list[AppAuthUnBindedApiResp]'
+        'apis': 'list[ApiOutline]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class ListApisUnbindedToAppV2Response(SdkResponse):
         本次返回的API列表
 
         :return: The apis of this ListApisUnbindedToAppV2Response.
-        :rtype: list[AppAuthUnBindedApiResp]
+        :rtype: list[ApiOutline]
         """
         return self._apis
 
@@ -110,7 +110,7 @@ class ListApisUnbindedToAppV2Response(SdkResponse):
         本次返回的API列表
 
         :param apis: The apis of this ListApisUnbindedToAppV2Response.
-        :type: list[AppAuthUnBindedApiResp]
+        :type: list[ApiOutline]
         """
         self._apis = apis
 

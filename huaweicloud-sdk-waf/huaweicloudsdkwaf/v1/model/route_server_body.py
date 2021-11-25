@@ -54,7 +54,7 @@ class RouteServerBody:
     def back_protocol(self):
         """Gets the back_protocol of this RouteServerBody.
 
-        协议
+        后端协议
 
         :return: The back_protocol of this RouteServerBody.
         :rtype: str
@@ -65,7 +65,7 @@ class RouteServerBody:
     def back_protocol(self, back_protocol):
         """Sets the back_protocol of this RouteServerBody.
 
-        协议
+        后端协议
 
         :param back_protocol: The back_protocol of this RouteServerBody.
         :type: str
@@ -76,7 +76,7 @@ class RouteServerBody:
     def address(self):
         """Gets the address of this RouteServerBody.
 
-        ip信息
+        后端ip地址
 
         :return: The address of this RouteServerBody.
         :rtype: str
@@ -87,7 +87,7 @@ class RouteServerBody:
     def address(self, address):
         """Sets the address of this RouteServerBody.
 
-        ip信息
+        后端ip地址
 
         :param address: The address of this RouteServerBody.
         :type: str

@@ -393,7 +393,7 @@ class NodeGroupV10:
     def data_volume_type(self):
         """Gets the data_volume_type of this NodeGroupV10.
 
-        节点数据磁盘存储类别，目前支持SATA、SAS和SSD。  SATA：普通IO SAS：高IO SSD：超高IO
+        节点数据磁盘存储类别，目前支持SATA、SAS和SSD。  - SATA：普通IO - SAS：高IO - SSD：超高IO
 
         :return: The data_volume_type of this NodeGroupV10.
         :rtype: str
@@ -404,7 +404,7 @@ class NodeGroupV10:
     def data_volume_type(self, data_volume_type):
         """Sets the data_volume_type of this NodeGroupV10.
 
-        节点数据磁盘存储类别，目前支持SATA、SAS和SSD。  SATA：普通IO SAS：高IO SSD：超高IO
+        节点数据磁盘存储类别，目前支持SATA、SAS和SSD。  - SATA：普通IO - SAS：高IO - SSD：超高IO
 
         :param data_volume_type: The data_volume_type of this NodeGroupV10.
         :type: str

@@ -26,7 +26,7 @@ class UpdatePolicyRuleStatusRequest:
         'policy_id': 'str',
         'ruletype': 'str',
         'rule_id': 'str',
-        'body': 'UpdateRuleStatusRequestBody'
+        'body': 'UpdatePolicyRuleStatusRequestBody'
     }
 
     attribute_map = {
@@ -127,7 +127,7 @@ class UpdatePolicyRuleStatusRequest:
     def rule_id(self):
         """Gets the rule_id of this UpdatePolicyRuleStatusRequest.
 
-        规则id（根据不同的ruletype调用规则列表接口获取规则id）
+        规则id，根据不同的规则类型（ruletype）调用规则列表接口获取规则id，例如黑白名单（whiteblackip）规则id，您可以通过调用查询黑白名单规则列表（ListWhiteblackipRule）获取规则id
 
         :return: The rule_id of this UpdatePolicyRuleStatusRequest.
         :rtype: str
@@ -138,7 +138,7 @@ class UpdatePolicyRuleStatusRequest:
     def rule_id(self, rule_id):
         """Sets the rule_id of this UpdatePolicyRuleStatusRequest.
 
-        规则id（根据不同的ruletype调用规则列表接口获取规则id）
+        规则id，根据不同的规则类型（ruletype）调用规则列表接口获取规则id，例如黑白名单（whiteblackip）规则id，您可以通过调用查询黑白名单规则列表（ListWhiteblackipRule）获取规则id
 
         :param rule_id: The rule_id of this UpdatePolicyRuleStatusRequest.
         :type: str
@@ -151,7 +151,7 @@ class UpdatePolicyRuleStatusRequest:
 
 
         :return: The body of this UpdatePolicyRuleStatusRequest.
-        :rtype: UpdateRuleStatusRequestBody
+        :rtype: UpdatePolicyRuleStatusRequestBody
         """
         return self._body
 
@@ -161,7 +161,7 @@ class UpdatePolicyRuleStatusRequest:
 
 
         :param body: The body of this UpdatePolicyRuleStatusRequest.
-        :type: UpdateRuleStatusRequestBody
+        :type: UpdatePolicyRuleStatusRequestBody
         """
         self._body = body
 

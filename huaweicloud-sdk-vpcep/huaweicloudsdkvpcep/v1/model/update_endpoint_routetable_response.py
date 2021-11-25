@@ -23,7 +23,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
 
     openapi_types = {
         'routetables': 'list[str]',
-        'error': 'RoutetableInfoError'
+        'error': 'list[RoutetableInfoError]'
     }
 
     attribute_map = {
@@ -71,9 +71,10 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
     def error(self):
         """Gets the error of this UpdateEndpointRoutetableResponse.
 
+        当修改终端节点子网路由表失败 时，返回错误提示信息
 
         :return: The error of this UpdateEndpointRoutetableResponse.
-        :rtype: RoutetableInfoError
+        :rtype: list[RoutetableInfoError]
         """
         return self._error
 
@@ -81,9 +82,10 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
     def error(self, error):
         """Sets the error of this UpdateEndpointRoutetableResponse.
 
+        当修改终端节点子网路由表失败 时，返回错误提示信息
 
         :param error: The error of this UpdateEndpointRoutetableResponse.
-        :type: RoutetableInfoError
+        :type: list[RoutetableInfoError]
         """
         self._error = error
 

@@ -48,7 +48,7 @@ class ListResourceInstancesRequest:
     def resource_type(self):
         """Gets the resource_type of this ListResourceInstancesRequest.
 
-        资源类型，值为： endpoint_service或endpoint。
+        资源类型，值为：endpoint_service或endpoint。
 
         :return: The resource_type of this ListResourceInstancesRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ListResourceInstancesRequest:
     def resource_type(self, resource_type):
         """Sets the resource_type of this ListResourceInstancesRequest.
 
-        资源类型，值为： endpoint_service或endpoint。
+        资源类型，值为：endpoint_service或endpoint。
 
         :param resource_type: The resource_type of this ListResourceInstancesRequest.
         :type: str

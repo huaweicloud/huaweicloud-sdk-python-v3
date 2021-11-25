@@ -11,7 +11,7 @@ from huaweicloudsdkwaf.v1.model.bind_host import BindHost
 from huaweicloudsdkwaf.v1.model.block_page import BlockPage
 from huaweicloudsdkwaf.v1.model.certificate_body import CertificateBody
 from huaweicloudsdkwaf.v1.model.certificate_bunding_host_body import CertificateBundingHostBody
-from huaweicloudsdkwaf.v1.model.cloud_waf_host_response_body import CloudWafHostResponseBody
+from huaweicloudsdkwaf.v1.model.cloud_waf_host_item import CloudWafHostItem
 from huaweicloudsdkwaf.v1.model.cloud_waf_server import CloudWafServer
 from huaweicloudsdkwaf.v1.model.composite_host_response import CompositeHostResponse
 from huaweicloudsdkwaf.v1.model.count_item import CountItem
@@ -61,6 +61,7 @@ from huaweicloudsdkwaf.v1.model.delete_value_list_request import DeleteValueList
 from huaweicloudsdkwaf.v1.model.delete_value_list_response import DeleteValueListResponse
 from huaweicloudsdkwaf.v1.model.delete_white_black_ip_rule_request import DeleteWhiteBlackIpRuleRequest
 from huaweicloudsdkwaf.v1.model.delete_white_black_ip_rule_response import DeleteWhiteBlackIpRuleResponse
+from huaweicloudsdkwaf.v1.model.flag import Flag
 from huaweicloudsdkwaf.v1.model.host_flag import HostFlag
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_request import ListAntitamperRuleRequest
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_response import ListAntitamperRuleResponse
@@ -91,8 +92,6 @@ from huaweicloudsdkwaf.v1.model.list_privacy_rule_request import ListPrivacyRule
 from huaweicloudsdkwaf.v1.model.list_privacy_rule_response import ListPrivacyRuleResponse
 from huaweicloudsdkwaf.v1.model.list_qps_timeline_request import ListQpsTimelineRequest
 from huaweicloudsdkwaf.v1.model.list_qps_timeline_response import ListQpsTimelineResponse
-from huaweicloudsdkwaf.v1.model.list_response_code_timeline_request import ListResponseCodeTimelineRequest
-from huaweicloudsdkwaf.v1.model.list_response_code_timeline_response import ListResponseCodeTimelineResponse
 from huaweicloudsdkwaf.v1.model.list_statistics_request import ListStatisticsRequest
 from huaweicloudsdkwaf.v1.model.list_statistics_response import ListStatisticsResponse
 from huaweicloudsdkwaf.v1.model.list_top_abnormal_request import ListTopAbnormalRequest
@@ -131,6 +130,7 @@ from huaweicloudsdkwaf.v1.model.traffic_mark import TrafficMark
 from huaweicloudsdkwaf.v1.model.update_certificate_request import UpdateCertificateRequest
 from huaweicloudsdkwaf.v1.model.update_certificate_request_body import UpdateCertificateRequestBody
 from huaweicloudsdkwaf.v1.model.update_certificate_response import UpdateCertificateResponse
+from huaweicloudsdkwaf.v1.model.update_cloud_waf_server import UpdateCloudWafServer
 from huaweicloudsdkwaf.v1.model.update_geoip_rule_request import UpdateGeoipRuleRequest
 from huaweicloudsdkwaf.v1.model.update_geoip_rule_request_body import UpdateGeoipRuleRequestBody
 from huaweicloudsdkwaf.v1.model.update_geoip_rule_response import UpdateGeoipRuleResponse
@@ -146,6 +146,7 @@ from huaweicloudsdkwaf.v1.model.update_policy_request import UpdatePolicyRequest
 from huaweicloudsdkwaf.v1.model.update_policy_request_body import UpdatePolicyRequestBody
 from huaweicloudsdkwaf.v1.model.update_policy_response import UpdatePolicyResponse
 from huaweicloudsdkwaf.v1.model.update_policy_rule_status_request import UpdatePolicyRuleStatusRequest
+from huaweicloudsdkwaf.v1.model.update_policy_rule_status_request_body import UpdatePolicyRuleStatusRequestBody
 from huaweicloudsdkwaf.v1.model.update_policy_rule_status_response import UpdatePolicyRuleStatusResponse
 from huaweicloudsdkwaf.v1.model.update_premium_host_protect_status_request import UpdatePremiumHostProtectStatusRequest
 from huaweicloudsdkwaf.v1.model.update_premium_host_protect_status_request_body import UpdatePremiumHostProtectStatusRequestBody
@@ -156,7 +157,6 @@ from huaweicloudsdkwaf.v1.model.update_premium_host_response import UpdatePremiu
 from huaweicloudsdkwaf.v1.model.update_privacy_rule_request import UpdatePrivacyRuleRequest
 from huaweicloudsdkwaf.v1.model.update_privacy_rule_request_body import UpdatePrivacyRuleRequestBody
 from huaweicloudsdkwaf.v1.model.update_privacy_rule_response import UpdatePrivacyRuleResponse
-from huaweicloudsdkwaf.v1.model.update_rule_status_request_body import UpdateRuleStatusRequestBody
 from huaweicloudsdkwaf.v1.model.update_value_list_request import UpdateValueListRequest
 from huaweicloudsdkwaf.v1.model.update_value_list_request_body import UpdateValueListRequestBody
 from huaweicloudsdkwaf.v1.model.update_value_list_response import UpdateValueListResponse

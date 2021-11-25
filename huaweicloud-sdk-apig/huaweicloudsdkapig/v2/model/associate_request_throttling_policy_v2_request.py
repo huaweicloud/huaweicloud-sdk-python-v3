@@ -23,7 +23,7 @@ class AssociateRequestThrottlingPolicyV2Request:
 
     openapi_types = {
         'instance_id': 'str',
-        'body': 'ThrottleBindingReq'
+        'body': 'ThrottleApiBindingCreate'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class AssociateRequestThrottlingPolicyV2Request:
     def instance_id(self):
         """Gets the instance_id of this AssociateRequestThrottlingPolicyV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this AssociateRequestThrottlingPolicyV2Request.
         :rtype: str
@@ -59,7 +59,7 @@ class AssociateRequestThrottlingPolicyV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this AssociateRequestThrottlingPolicyV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this AssociateRequestThrottlingPolicyV2Request.
         :type: str
@@ -72,7 +72,7 @@ class AssociateRequestThrottlingPolicyV2Request:
 
 
         :return: The body of this AssociateRequestThrottlingPolicyV2Request.
-        :rtype: ThrottleBindingReq
+        :rtype: ThrottleApiBindingCreate
         """
         return self._body
 
@@ -82,7 +82,7 @@ class AssociateRequestThrottlingPolicyV2Request:
 
 
         :param body: The body of this AssociateRequestThrottlingPolicyV2Request.
-        :type: ThrottleBindingReq
+        :type: ThrottleApiBindingCreate
         """
         self._body = body
 

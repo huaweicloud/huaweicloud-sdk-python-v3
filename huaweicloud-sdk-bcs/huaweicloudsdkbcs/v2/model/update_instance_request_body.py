@@ -23,7 +23,7 @@ class UpdateInstanceRequestBody:
 
     openapi_types = {
         'node_orgs': 'list[NodeOrgs]',
-        'publicips': 'list[IefNode]',
+        'publicips': 'list[IefNodeinfo]',
         'is_delete_org': 'bool'
     }
 
@@ -78,7 +78,7 @@ class UpdateInstanceRequestBody:
         ief添加组织时，ief节点信息。绑定模式的IEF服务，新增组织时，该字段必填
 
         :return: The publicips of this UpdateInstanceRequestBody.
-        :rtype: list[IefNode]
+        :rtype: list[IefNodeinfo]
         """
         return self._publicips
 
@@ -89,7 +89,7 @@ class UpdateInstanceRequestBody:
         ief添加组织时，ief节点信息。绑定模式的IEF服务，新增组织时，该字段必填
 
         :param publicips: The publicips of this UpdateInstanceRequestBody.
-        :type: list[IefNode]
+        :type: list[IefNodeinfo]
         """
         self._publicips = publicips
 

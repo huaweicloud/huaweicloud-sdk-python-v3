@@ -113,7 +113,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def hostname(self):
         """Gets the hostname of this CreatePremiumHostResponse.
 
-        策略id
+        域名id
 
         :return: The hostname of this CreatePremiumHostResponse.
         :rtype: str
@@ -124,7 +124,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def hostname(self, hostname):
         """Sets the hostname of this CreatePremiumHostResponse.
 
-        策略id
+        域名id
 
         :param hostname: The hostname of this CreatePremiumHostResponse.
         :type: str

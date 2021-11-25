@@ -48,7 +48,7 @@ class ReclaimCouponQuotasReq:
     def quota_ids(self):
         """Gets the quota_ids of this ReclaimCouponQuotasReq.
 
-        被回收的精英服务商的代金券额度ID。
+        被回收的精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。
 
         :return: The quota_ids of this ReclaimCouponQuotasReq.
         :rtype: list[str]
@@ -59,7 +59,7 @@ class ReclaimCouponQuotasReq:
     def quota_ids(self, quota_ids):
         """Sets the quota_ids of this ReclaimCouponQuotasReq.
 
-        被回收的精英服务商的代金券额度ID。
+        被回收的精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。
 
         :param quota_ids: The quota_ids of this ReclaimCouponQuotasReq.
         :type: list[str]

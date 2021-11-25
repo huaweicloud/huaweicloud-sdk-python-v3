@@ -52,7 +52,7 @@ class UpdateApiV2Request:
     def instance_id(self):
         """Gets the instance_id of this UpdateApiV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this UpdateApiV2Request.
         :rtype: str
@@ -63,7 +63,7 @@ class UpdateApiV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateApiV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this UpdateApiV2Request.
         :type: str
@@ -74,7 +74,7 @@ class UpdateApiV2Request:
     def api_id(self):
         """Gets the api_id of this UpdateApiV2Request.
 
-        API的编号，可通过查询API信息获取该编号。
+        API的编号
 
         :return: The api_id of this UpdateApiV2Request.
         :rtype: str
@@ -85,7 +85,7 @@ class UpdateApiV2Request:
     def api_id(self, api_id):
         """Sets the api_id of this UpdateApiV2Request.
 
-        API的编号，可通过查询API信息获取该编号。
+        API的编号
 
         :param api_id: The api_id of this UpdateApiV2Request.
         :type: str

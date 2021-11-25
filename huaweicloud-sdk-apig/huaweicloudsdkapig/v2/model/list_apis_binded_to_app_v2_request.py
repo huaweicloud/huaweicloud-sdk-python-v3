@@ -23,45 +23,49 @@ class ListApisBindedToAppV2Request:
 
     openapi_types = {
         'instance_id': 'str',
+        'offset': 'int',
+        'limit': 'int',
         'app_id': 'str',
         'api_id': 'str',
         'api_name': 'str',
         'group_id': 'str',
         'group_name': 'str',
-        'env_id': 'str',
-        'offset': 'int',
-        'limit': 'int'
+        'env_id': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
+        'offset': 'offset',
+        'limit': 'limit',
         'app_id': 'app_id',
         'api_id': 'api_id',
         'api_name': 'api_name',
         'group_id': 'group_id',
         'group_name': 'group_name',
-        'env_id': 'env_id',
-        'offset': 'offset',
-        'limit': 'limit'
+        'env_id': 'env_id'
     }
 
-    def __init__(self, instance_id=None, app_id=None, api_id=None, api_name=None, group_id=None, group_name=None, env_id=None, offset=None, limit=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, app_id=None, api_id=None, api_name=None, group_id=None, group_name=None, env_id=None):
         """ListApisBindedToAppV2Request - a model defined in huaweicloud sdk"""
         
         
 
         self._instance_id = None
+        self._offset = None
+        self._limit = None
         self._app_id = None
         self._api_id = None
         self._api_name = None
         self._group_id = None
         self._group_name = None
         self._env_id = None
-        self._offset = None
-        self._limit = None
         self.discriminator = None
 
         self.instance_id = instance_id
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
         self.app_id = app_id
         if api_id is not None:
             self.api_id = api_id
@@ -73,16 +77,12 @@ class ListApisBindedToAppV2Request:
             self.group_name = group_name
         if env_id is not None:
             self.env_id = env_id
-        if offset is not None:
-            self.offset = offset
-        if limit is not None:
-            self.limit = limit
 
     @property
     def instance_id(self):
         """Gets the instance_id of this ListApisBindedToAppV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this ListApisBindedToAppV2Request.
         :rtype: str
@@ -93,12 +93,56 @@ class ListApisBindedToAppV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListApisBindedToAppV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this ListApisBindedToAppV2Request.
         :type: str
         """
         self._instance_id = instance_id
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListApisBindedToAppV2Request.
+
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+
+        :return: The offset of this ListApisBindedToAppV2Request.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListApisBindedToAppV2Request.
+
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+
+        :param offset: The offset of this ListApisBindedToAppV2Request.
+        :type: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListApisBindedToAppV2Request.
+
+        每页显示的条目数量
+
+        :return: The limit of this ListApisBindedToAppV2Request.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListApisBindedToAppV2Request.
+
+        每页显示的条目数量
+
+        :param limit: The limit of this ListApisBindedToAppV2Request.
+        :type: int
+        """
+        self._limit = limit
 
     @property
     def app_id(self):
@@ -231,50 +275,6 @@ class ListApisBindedToAppV2Request:
         :type: str
         """
         self._env_id = env_id
-
-    @property
-    def offset(self):
-        """Gets the offset of this ListApisBindedToAppV2Request.
-
-        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
-
-        :return: The offset of this ListApisBindedToAppV2Request.
-        :rtype: int
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this ListApisBindedToAppV2Request.
-
-        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
-
-        :param offset: The offset of this ListApisBindedToAppV2Request.
-        :type: int
-        """
-        self._offset = offset
-
-    @property
-    def limit(self):
-        """Gets the limit of this ListApisBindedToAppV2Request.
-
-        每页显示的条目数量
-
-        :return: The limit of this ListApisBindedToAppV2Request.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListApisBindedToAppV2Request.
-
-        每页显示的条目数量
-
-        :param limit: The limit of this ListApisBindedToAppV2Request.
-        :type: int
-        """
-        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

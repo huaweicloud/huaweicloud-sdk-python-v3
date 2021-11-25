@@ -22,45 +22,43 @@ class ListSpecifiedVersionDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'versions': 'list[Versions]'
+        'version': 'Version'
     }
 
     attribute_map = {
-        'versions': 'versions'
+        'version': 'version'
     }
 
-    def __init__(self, versions=None):
+    def __init__(self, version=None):
         """ListSpecifiedVersionDetailsResponse - a model defined in huaweicloud sdk"""
         
         super(ListSpecifiedVersionDetailsResponse, self).__init__()
 
-        self._versions = None
+        self._version = None
         self.discriminator = None
 
-        if versions is not None:
-            self.versions = versions
+        if version is not None:
+            self.version = version
 
     @property
-    def versions(self):
-        """Gets the versions of this ListSpecifiedVersionDetailsResponse.
+    def version(self):
+        """Gets the version of this ListSpecifiedVersionDetailsResponse.
 
-        VPC终端节点版本信息列表。
 
-        :return: The versions of this ListSpecifiedVersionDetailsResponse.
-        :rtype: list[Versions]
+        :return: The version of this ListSpecifiedVersionDetailsResponse.
+        :rtype: Version
         """
-        return self._versions
+        return self._version
 
-    @versions.setter
-    def versions(self, versions):
-        """Sets the versions of this ListSpecifiedVersionDetailsResponse.
+    @version.setter
+    def version(self, version):
+        """Sets the version of this ListSpecifiedVersionDetailsResponse.
 
-        VPC终端节点版本信息列表。
 
-        :param versions: The versions of this ListSpecifiedVersionDetailsResponse.
-        :type: list[Versions]
+        :param version: The version of this ListSpecifiedVersionDetailsResponse.
+        :type: Version
         """
-        self._versions = versions
+        self._version = version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

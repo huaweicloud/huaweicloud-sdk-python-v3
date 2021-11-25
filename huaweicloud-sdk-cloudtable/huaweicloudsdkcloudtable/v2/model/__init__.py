@@ -1,0 +1,19 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import models into model package
+from huaweicloudsdkcloudtable.v2.model.cluster import Cluster
+from huaweicloudsdkcloudtable.v2.model.cluster_detail import ClusterDetail
+from huaweicloudsdkcloudtable.v2.model.create_cluster_request import CreateClusterRequest
+from huaweicloudsdkcloudtable.v2.model.create_cluster_request_body import CreateClusterRequestBody
+from huaweicloudsdkcloudtable.v2.model.create_cluster_response import CreateClusterResponse
+from huaweicloudsdkcloudtable.v2.model.datastore import Datastore
+from huaweicloudsdkcloudtable.v2.model.delete_cluster_request import DeleteClusterRequest
+from huaweicloudsdkcloudtable.v2.model.delete_cluster_response import DeleteClusterResponse
+from huaweicloudsdkcloudtable.v2.model.instance import Instance
+from huaweicloudsdkcloudtable.v2.model.list_clusters_request import ListClustersRequest
+from huaweicloudsdkcloudtable.v2.model.list_clusters_response import ListClustersResponse
+from huaweicloudsdkcloudtable.v2.model.nics import Nics
+from huaweicloudsdkcloudtable.v2.model.show_cluster_detail_request import ShowClusterDetailRequest
+from huaweicloudsdkcloudtable.v2.model.show_cluster_detail_response import ShowClusterDetailResponse

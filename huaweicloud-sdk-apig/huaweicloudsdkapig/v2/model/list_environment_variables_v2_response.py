@@ -24,7 +24,7 @@ class ListEnvironmentVariablesV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'variables': 'list[EnvVariableResp]'
+        'variables': 'list[EnvVariableInfo]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class ListEnvironmentVariablesV2Response(SdkResponse):
         本次返回的环境变量列表
 
         :return: The variables of this ListEnvironmentVariablesV2Response.
-        :rtype: list[EnvVariableResp]
+        :rtype: list[EnvVariableInfo]
         """
         return self._variables
 
@@ -110,7 +110,7 @@ class ListEnvironmentVariablesV2Response(SdkResponse):
         本次返回的环境变量列表
 
         :param variables: The variables of this ListEnvironmentVariablesV2Response.
-        :type: list[EnvVariableResp]
+        :type: list[EnvVariableInfo]
         """
         self._variables = variables
 

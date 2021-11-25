@@ -25,7 +25,7 @@ class UpdateHostRequestBody:
         'proxy': 'bool',
         'certificateid': 'str',
         'certificatename': 'str',
-        'server': 'list[PremiumWafServer]',
+        'server': 'list[UpdateCloudWafServer]',
         'tls': 'str',
         'cipher': 'str'
     }
@@ -91,7 +91,7 @@ class UpdateHostRequestBody:
     def certificateid(self):
         """Gets the certificateid of this UpdateHostRequestBody.
 
-        证书ID
+        证书id,在对外协议为https的场景下可以使用，可以通过查询证书列表（ListCertificates）接口查询证书id
 
         :return: The certificateid of this UpdateHostRequestBody.
         :rtype: str
@@ -102,7 +102,7 @@ class UpdateHostRequestBody:
     def certificateid(self, certificateid):
         """Sets the certificateid of this UpdateHostRequestBody.
 
-        证书ID
+        证书id,在对外协议为https的场景下可以使用，可以通过查询证书列表（ListCertificates）接口查询证书id
 
         :param certificateid: The certificateid of this UpdateHostRequestBody.
         :type: str
@@ -113,7 +113,7 @@ class UpdateHostRequestBody:
     def certificatename(self):
         """Gets the certificatename of this UpdateHostRequestBody.
 
-        证书名称
+        证书名称,在对外协议为https的场景下可以使用，可以在页面上获取的证书名称，或通过查询证书列表（ListCertificates）接口获取证书名称
 
         :return: The certificatename of this UpdateHostRequestBody.
         :rtype: str
@@ -124,7 +124,7 @@ class UpdateHostRequestBody:
     def certificatename(self, certificatename):
         """Sets the certificatename of this UpdateHostRequestBody.
 
-        证书名称
+        证书名称,在对外协议为https的场景下可以使用，可以在页面上获取的证书名称，或通过查询证书列表（ListCertificates）接口获取证书名称
 
         :param certificatename: The certificatename of this UpdateHostRequestBody.
         :type: str
@@ -138,7 +138,7 @@ class UpdateHostRequestBody:
         独享模式回源服务器配置
 
         :return: The server of this UpdateHostRequestBody.
-        :rtype: list[PremiumWafServer]
+        :rtype: list[UpdateCloudWafServer]
         """
         return self._server
 
@@ -149,7 +149,7 @@ class UpdateHostRequestBody:
         独享模式回源服务器配置
 
         :param server: The server of this UpdateHostRequestBody.
-        :type: list[PremiumWafServer]
+        :type: list[UpdateCloudWafServer]
         """
         self._server = server
 
@@ -157,7 +157,7 @@ class UpdateHostRequestBody:
     def tls(self):
         """Gets the tls of this UpdateHostRequestBody.
 
-        支持最低的TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）
+        支持最低的TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本
 
         :return: The tls of this UpdateHostRequestBody.
         :rtype: str
@@ -168,7 +168,7 @@ class UpdateHostRequestBody:
     def tls(self, tls):
         """Sets the tls of this UpdateHostRequestBody.
 
-        支持最低的TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）
+        支持最低的TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本
 
         :param tls: The tls of this UpdateHostRequestBody.
         :type: str
@@ -179,7 +179,7 @@ class UpdateHostRequestBody:
     def cipher(self):
         """Gets the cipher of this UpdateHostRequestBody.
 
-        加密套件代码（cipher_default/cipher_1/cipher_2）
+        加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
         :return: The cipher of this UpdateHostRequestBody.
         :rtype: str
@@ -190,7 +190,7 @@ class UpdateHostRequestBody:
     def cipher(self, cipher):
         """Sets the cipher of this UpdateHostRequestBody.
 
-        加密套件代码（cipher_default/cipher_1/cipher_2）
+        加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
         :param cipher: The cipher of this UpdateHostRequestBody.
         :type: str

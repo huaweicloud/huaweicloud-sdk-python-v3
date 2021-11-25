@@ -37,7 +37,8 @@ class PublicipUpdateResp:
         'tenant_id': 'str',
         'type': 'str',
         'public_ipv6_address': 'str',
-        'ip_version': 'int'
+        'ip_version': 'int',
+        'alias': 'str'
     }
 
     attribute_map = {
@@ -56,10 +57,11 @@ class PublicipUpdateResp:
         'tenant_id': 'tenant_id',
         'type': 'type',
         'public_ipv6_address': 'public_ipv6_address',
-        'ip_version': 'ip_version'
+        'ip_version': 'ip_version',
+        'alias': 'alias'
     }
 
-    def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None):
+    def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, alias=None):
         """PublicipUpdateResp - a model defined in huaweicloud sdk"""
         
         
@@ -80,6 +82,7 @@ class PublicipUpdateResp:
         self._type = None
         self._public_ipv6_address = None
         self._ip_version = None
+        self._alias = None
         self.discriminator = None
 
         if bandwidth_id is not None:
@@ -114,6 +117,8 @@ class PublicipUpdateResp:
             self.public_ipv6_address = public_ipv6_address
         if ip_version is not None:
             self.ip_version = ip_version
+        if alias is not None:
+            self.alias = alias
 
     @property
     def bandwidth_id(self):
@@ -464,6 +469,28 @@ class PublicipUpdateResp:
         :type: int
         """
         self._ip_version = ip_version
+
+    @property
+    def alias(self):
+        """Gets the alias of this PublicipUpdateResp.
+
+        功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+
+        :return: The alias of this PublicipUpdateResp.
+        :rtype: str
+        """
+        return self._alias
+
+    @alias.setter
+    def alias(self, alias):
+        """Sets the alias of this PublicipUpdateResp.
+
+        功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+
+        :param alias: The alias of this PublicipUpdateResp.
+        :type: str
+        """
+        self._alias = alias
 
     def to_dict(self):
         """Returns the model properties as a dict"""

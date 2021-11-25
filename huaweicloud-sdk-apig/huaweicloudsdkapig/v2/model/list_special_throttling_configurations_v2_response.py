@@ -24,7 +24,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'throttle_specials': 'list[ThrottleSpecialResp]'
+        'throttle_specials': 'list[ThrottleSpecialInfo]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
         本次查询返回的特殊配置列表
 
         :return: The throttle_specials of this ListSpecialThrottlingConfigurationsV2Response.
-        :rtype: list[ThrottleSpecialResp]
+        :rtype: list[ThrottleSpecialInfo]
         """
         return self._throttle_specials
 
@@ -110,7 +110,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
         本次查询返回的特殊配置列表
 
         :param throttle_specials: The throttle_specials of this ListSpecialThrottlingConfigurationsV2Response.
-        :type: list[ThrottleSpecialResp]
+        :type: list[ThrottleSpecialInfo]
         """
         self._throttle_specials = throttle_specials
 

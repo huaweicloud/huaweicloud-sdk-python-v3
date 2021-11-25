@@ -47,7 +47,7 @@ class RateOnPeriodReq:
     def project_id(self):
         """Gets the project_id of this RateOnPeriodReq.
 
-        项目ID。 调用通过assume_role方式获取用户token接口获取客户Token后，参见如何将合作伙伴Token置换为客户Token的步骤2获取项目ID。
+        项目ID。  说明： 获取方法： 步骤1：调用IAM获取委托Token接口，获取客户Token。 步骤2：参见如何将合作伙伴Token置换为客户Token的步骤2，获取项目ID。
 
         :return: The project_id of this RateOnPeriodReq.
         :rtype: str
@@ -58,7 +58,7 @@ class RateOnPeriodReq:
     def project_id(self, project_id):
         """Sets the project_id of this RateOnPeriodReq.
 
-        项目ID。 调用通过assume_role方式获取用户token接口获取客户Token后，参见如何将合作伙伴Token置换为客户Token的步骤2获取项目ID。
+        项目ID。  说明： 获取方法： 步骤1：调用IAM获取委托Token接口，获取客户Token。 步骤2：参见如何将合作伙伴Token置换为客户Token的步骤2，获取项目ID。
 
         :param project_id: The project_id of this RateOnPeriodReq.
         :type: str

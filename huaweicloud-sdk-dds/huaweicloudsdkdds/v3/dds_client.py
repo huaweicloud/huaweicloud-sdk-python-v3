@@ -1984,7 +1984,7 @@ class DdsClient(Client):
         :return: ListInstancesResponse
         """
 
-        all_params = ['id', 'name', 'mode', 'datastore_type', 'vpc_id', 'subnet_id', 'offset', 'limit']
+        all_params = ['id', 'name', 'mode', 'datastore_type', 'vpc_id', 'subnet_id', 'offset', 'limit', 'tags']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2011,6 +2011,8 @@ class DdsClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 

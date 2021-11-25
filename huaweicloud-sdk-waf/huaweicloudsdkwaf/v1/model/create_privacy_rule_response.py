@@ -108,7 +108,7 @@ class CreatePrivacyRuleResponse(SdkResponse):
     def url(self):
         """Gets the url of this CreatePrivacyRuleResponse.
 
-        隐私屏蔽规则应用的url
+        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
         :return: The url of this CreatePrivacyRuleResponse.
         :rtype: str
@@ -119,7 +119,7 @@ class CreatePrivacyRuleResponse(SdkResponse):
     def url(self, url):
         """Sets the url of this CreatePrivacyRuleResponse.
 
-        隐私屏蔽规则应用的url
+        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
         :param url: The url of this CreatePrivacyRuleResponse.
         :type: str

@@ -24,6 +24,8 @@ class PrivacyResponseBody:
     openapi_types = {
         'id': 'str',
         'policyid': 'str',
+        'timestamp': 'int',
+        'status': 'int',
         'url': 'str',
         'category': 'str',
         'index': 'str'
@@ -32,18 +34,22 @@ class PrivacyResponseBody:
     attribute_map = {
         'id': 'id',
         'policyid': 'policyid',
+        'timestamp': 'timestamp',
+        'status': 'status',
         'url': 'url',
         'category': 'category',
         'index': 'index'
     }
 
-    def __init__(self, id=None, policyid=None, url=None, category=None, index=None):
+    def __init__(self, id=None, policyid=None, timestamp=None, status=None, url=None, category=None, index=None):
         """PrivacyResponseBody - a model defined in huaweicloud sdk"""
         
         
 
         self._id = None
         self._policyid = None
+        self._timestamp = None
+        self._status = None
         self._url = None
         self._category = None
         self._index = None
@@ -53,6 +59,10 @@ class PrivacyResponseBody:
             self.id = id
         if policyid is not None:
             self.policyid = policyid
+        if timestamp is not None:
+            self.timestamp = timestamp
+        if status is not None:
+            self.status = status
         if url is not None:
             self.url = url
         if category is not None:
@@ -103,6 +113,50 @@ class PrivacyResponseBody:
         :type: str
         """
         self._policyid = policyid
+
+    @property
+    def timestamp(self):
+        """Gets the timestamp of this PrivacyResponseBody.
+
+        创建规则的时间，格式为13位毫秒时间戳
+
+        :return: The timestamp of this PrivacyResponseBody.
+        :rtype: int
+        """
+        return self._timestamp
+
+    @timestamp.setter
+    def timestamp(self, timestamp):
+        """Sets the timestamp of this PrivacyResponseBody.
+
+        创建规则的时间，格式为13位毫秒时间戳
+
+        :param timestamp: The timestamp of this PrivacyResponseBody.
+        :type: int
+        """
+        self._timestamp = timestamp
+
+    @property
+    def status(self):
+        """Gets the status of this PrivacyResponseBody.
+
+        规则状态，0：关闭，1：开启
+
+        :return: The status of this PrivacyResponseBody.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this PrivacyResponseBody.
+
+        规则状态，0：关闭，1：开启
+
+        :param status: The status of this PrivacyResponseBody.
+        :type: int
+        """
+        self._status = status
 
     @property
     def url(self):

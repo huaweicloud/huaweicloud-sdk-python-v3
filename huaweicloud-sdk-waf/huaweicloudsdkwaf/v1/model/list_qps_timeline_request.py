@@ -54,8 +54,10 @@ class ListQpsTimelineRequest:
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        self._from = _from
-        self.to = to
+        if _from is not None:
+            self._from = _from
+        if to is not None:
+            self.to = to
         if hosts is not None:
             self.hosts = hosts
         if instances is not None:
@@ -67,7 +69,7 @@ class ListQpsTimelineRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListQpsTimelineRequest.
 
-        企业项目id
+        通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询企业项目ID
 
         :return: The enterprise_project_id of this ListQpsTimelineRequest.
         :rtype: str
@@ -78,7 +80,7 @@ class ListQpsTimelineRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListQpsTimelineRequest.
 
-        企业项目id
+        通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ListQpsTimelineRequest.
         :type: str
@@ -89,7 +91,7 @@ class ListQpsTimelineRequest:
     def _from(self):
         """Gets the _from of this ListQpsTimelineRequest.
 
-        起始时间（13位毫秒时间戳）
+        起始时间（13位毫秒时间戳），需要和to同时使用
 
         :return: The _from of this ListQpsTimelineRequest.
         :rtype: int
@@ -100,7 +102,7 @@ class ListQpsTimelineRequest:
     def _from(self, _from):
         """Sets the _from of this ListQpsTimelineRequest.
 
-        起始时间（13位毫秒时间戳）
+        起始时间（13位毫秒时间戳），需要和to同时使用
 
         :param _from: The _from of this ListQpsTimelineRequest.
         :type: int
@@ -111,7 +113,7 @@ class ListQpsTimelineRequest:
     def to(self):
         """Gets the to of this ListQpsTimelineRequest.
 
-        结束时间（13位毫秒时间戳）
+        结束时间（13位毫秒时间戳），需要和from同时使用
 
         :return: The to of this ListQpsTimelineRequest.
         :rtype: int
@@ -122,7 +124,7 @@ class ListQpsTimelineRequest:
     def to(self, to):
         """Sets the to of this ListQpsTimelineRequest.
 
-        结束时间（13位毫秒时间戳）
+        结束时间（13位毫秒时间戳），需要和from同时使用
 
         :param to: The to of this ListQpsTimelineRequest.
         :type: int
@@ -177,7 +179,7 @@ class ListQpsTimelineRequest:
     def group_by(self):
         """Gets the group_by of this ListQpsTimelineRequest.
 
-        展示维度，按天展示时传\"DAY\"
+        展示维度，需要按天展示时传\"DAY\"
 
         :return: The group_by of this ListQpsTimelineRequest.
         :rtype: str
@@ -188,7 +190,7 @@ class ListQpsTimelineRequest:
     def group_by(self, group_by):
         """Sets the group_by of this ListQpsTimelineRequest.
 
-        展示维度，按天展示时传\"DAY\"
+        展示维度，需要按天展示时传\"DAY\"
 
         :param group_by: The group_by of this ListQpsTimelineRequest.
         :type: str

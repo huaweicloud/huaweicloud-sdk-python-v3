@@ -22,7 +22,7 @@ class CreateAuthorizingAppsV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'auths': 'list[AppAuthResp]'
+        'auths': 'list[ApiAuthRelations]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class CreateAuthorizingAppsV2Response(SdkResponse):
         API与APP的授权关系列表
 
         :return: The auths of this CreateAuthorizingAppsV2Response.
-        :rtype: list[AppAuthResp]
+        :rtype: list[ApiAuthRelations]
         """
         return self._auths
 
@@ -58,7 +58,7 @@ class CreateAuthorizingAppsV2Response(SdkResponse):
         API与APP的授权关系列表
 
         :param auths: The auths of this CreateAuthorizingAppsV2Response.
-        :type: list[AppAuthResp]
+        :type: list[ApiAuthRelations]
         """
         self._auths = auths
 

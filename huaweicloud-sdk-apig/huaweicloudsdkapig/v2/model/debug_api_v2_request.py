@@ -24,7 +24,7 @@ class DebugApiV2Request:
     openapi_types = {
         'instance_id': 'str',
         'api_id': 'str',
-        'body': 'DebugApiReq'
+        'body': 'ApiDebugInfo'
     }
 
     attribute_map = {
@@ -52,7 +52,7 @@ class DebugApiV2Request:
     def instance_id(self):
         """Gets the instance_id of this DebugApiV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this DebugApiV2Request.
         :rtype: str
@@ -63,7 +63,7 @@ class DebugApiV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DebugApiV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this DebugApiV2Request.
         :type: str
@@ -98,7 +98,7 @@ class DebugApiV2Request:
 
 
         :return: The body of this DebugApiV2Request.
-        :rtype: DebugApiReq
+        :rtype: ApiDebugInfo
         """
         return self._body
 
@@ -108,7 +108,7 @@ class DebugApiV2Request:
 
 
         :param body: The body of this DebugApiV2Request.
-        :type: DebugApiReq
+        :type: ApiDebugInfo
         """
         self._body = body
 

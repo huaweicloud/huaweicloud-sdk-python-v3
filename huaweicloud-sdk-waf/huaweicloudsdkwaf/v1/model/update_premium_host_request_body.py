@@ -86,7 +86,7 @@ class UpdatePremiumHostRequestBody:
     def certificateid(self):
         """Gets the certificateid of this UpdatePremiumHostRequestBody.
 
-        证书ID
+        https证书id，通过查询证书列表接口（ListCertificates）接口获取证书id
 
         :return: The certificateid of this UpdatePremiumHostRequestBody.
         :rtype: str
@@ -97,7 +97,7 @@ class UpdatePremiumHostRequestBody:
     def certificateid(self, certificateid):
         """Sets the certificateid of this UpdatePremiumHostRequestBody.
 
-        证书ID
+        https证书id，通过查询证书列表接口（ListCertificates）接口获取证书id
 
         :param certificateid: The certificateid of this UpdatePremiumHostRequestBody.
         :type: str
@@ -108,7 +108,7 @@ class UpdatePremiumHostRequestBody:
     def certificatename(self):
         """Gets the certificatename of this UpdatePremiumHostRequestBody.
 
-        证书名称
+        https证书名称，通过查询证书列表接口（ListCertificates）接口获取证书id
 
         :return: The certificatename of this UpdatePremiumHostRequestBody.
         :rtype: str
@@ -119,7 +119,7 @@ class UpdatePremiumHostRequestBody:
     def certificatename(self, certificatename):
         """Sets the certificatename of this UpdatePremiumHostRequestBody.
 
-        证书名称
+        https证书名称，通过查询证书列表接口（ListCertificates）接口获取证书id
 
         :param certificatename: The certificatename of this UpdatePremiumHostRequestBody.
         :type: str
@@ -152,7 +152,7 @@ class UpdatePremiumHostRequestBody:
     def cipher(self):
         """Gets the cipher of this UpdatePremiumHostRequestBody.
 
-        加密套件代码
+        加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
         :return: The cipher of this UpdatePremiumHostRequestBody.
         :rtype: str
@@ -163,7 +163,7 @@ class UpdatePremiumHostRequestBody:
     def cipher(self, cipher):
         """Sets the cipher of this UpdatePremiumHostRequestBody.
 
-        加密套件代码
+        加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
         :param cipher: The cipher of this UpdatePremiumHostRequestBody.
         :type: str

@@ -23,46 +23,42 @@ class UpdateVpcChannelV2Response(SdkResponse):
 
     openapi_types = {
         'name': 'str',
-        'type': 'int',
         'port': 'int',
         'balance_strategy': 'int',
         'member_type': 'str',
         'create_time': 'datetime',
         'id': 'str',
         'status': 'int',
-        'elb_id': 'str'
+        'member_groups': 'list[MemberGroupInfo]'
     }
 
     attribute_map = {
         'name': 'name',
-        'type': 'type',
         'port': 'port',
         'balance_strategy': 'balance_strategy',
         'member_type': 'member_type',
         'create_time': 'create_time',
         'id': 'id',
         'status': 'status',
-        'elb_id': 'elb_id'
+        'member_groups': 'member_groups'
     }
 
-    def __init__(self, name=None, type=None, port=None, balance_strategy=None, member_type=None, create_time=None, id=None, status=None, elb_id=None):
+    def __init__(self, name=None, port=None, balance_strategy=None, member_type=None, create_time=None, id=None, status=None, member_groups=None):
         """UpdateVpcChannelV2Response - a model defined in huaweicloud sdk"""
         
         super(UpdateVpcChannelV2Response, self).__init__()
 
         self._name = None
-        self._type = None
         self._port = None
         self._balance_strategy = None
         self._member_type = None
         self._create_time = None
         self._id = None
         self._status = None
-        self._elb_id = None
+        self._member_groups = None
         self.discriminator = None
 
         self.name = name
-        self.type = type
         if port is not None:
             self.port = port
         if balance_strategy is not None:
@@ -75,8 +71,8 @@ class UpdateVpcChannelV2Response(SdkResponse):
             self.id = id
         if status is not None:
             self.status = status
-        if elb_id is not None:
-            self.elb_id = elb_id
+        if member_groups is not None:
+            self.member_groups = member_groups
 
     @property
     def name(self):
@@ -99,28 +95,6 @@ class UpdateVpcChannelV2Response(SdkResponse):
         :type: str
         """
         self._name = name
-
-    @property
-    def type(self):
-        """Gets the type of this UpdateVpcChannelV2Response.
-
-        VPC通道的类型。 - 1：私网ELB通道（待废弃） - 2：API网关内置支持负载均衡功能的快速通道类型
-
-        :return: The type of this UpdateVpcChannelV2Response.
-        :rtype: int
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this UpdateVpcChannelV2Response.
-
-        VPC通道的类型。 - 1：私网ELB通道（待废弃） - 2：API网关内置支持负载均衡功能的快速通道类型
-
-        :param type: The type of this UpdateVpcChannelV2Response.
-        :type: int
-        """
-        self._type = type
 
     @property
     def port(self):
@@ -255,26 +229,26 @@ class UpdateVpcChannelV2Response(SdkResponse):
         self._status = status
 
     @property
-    def elb_id(self):
-        """Gets the elb_id of this UpdateVpcChannelV2Response.
+    def member_groups(self):
+        """Gets the member_groups of this UpdateVpcChannelV2Response.
 
-        私网ELB通道的编号。  仅当VPC通道类型为1时生效
+        后端云服务器组列表。  暂不支持
 
-        :return: The elb_id of this UpdateVpcChannelV2Response.
-        :rtype: str
+        :return: The member_groups of this UpdateVpcChannelV2Response.
+        :rtype: list[MemberGroupInfo]
         """
-        return self._elb_id
+        return self._member_groups
 
-    @elb_id.setter
-    def elb_id(self, elb_id):
-        """Sets the elb_id of this UpdateVpcChannelV2Response.
+    @member_groups.setter
+    def member_groups(self, member_groups):
+        """Sets the member_groups of this UpdateVpcChannelV2Response.
 
-        私网ELB通道的编号。  仅当VPC通道类型为1时生效
+        后端云服务器组列表。  暂不支持
 
-        :param elb_id: The elb_id of this UpdateVpcChannelV2Response.
-        :type: str
+        :param member_groups: The member_groups of this UpdateVpcChannelV2Response.
+        :type: list[MemberGroupInfo]
         """
-        self._elb_id = elb_id
+        self._member_groups = member_groups
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,7 +23,7 @@ class ExportApiDefinitionsV2Request:
 
     openapi_types = {
         'instance_id': 'str',
-        'body': 'SwaggerReq'
+        'body': 'ExportOpenApiReq'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class ExportApiDefinitionsV2Request:
     def instance_id(self):
         """Gets the instance_id of this ExportApiDefinitionsV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this ExportApiDefinitionsV2Request.
         :rtype: str
@@ -59,7 +59,7 @@ class ExportApiDefinitionsV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ExportApiDefinitionsV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this ExportApiDefinitionsV2Request.
         :type: str
@@ -72,7 +72,7 @@ class ExportApiDefinitionsV2Request:
 
 
         :return: The body of this ExportApiDefinitionsV2Request.
-        :rtype: SwaggerReq
+        :rtype: ExportOpenApiReq
         """
         return self._body
 
@@ -82,7 +82,7 @@ class ExportApiDefinitionsV2Request:
 
 
         :param body: The body of this ExportApiDefinitionsV2Request.
-        :type: SwaggerReq
+        :type: ExportOpenApiReq
         """
         self._body = body
 

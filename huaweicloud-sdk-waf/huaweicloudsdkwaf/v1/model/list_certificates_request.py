@@ -69,7 +69,7 @@ class ListCertificatesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListCertificatesRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ListCertificatesRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class ListCertificatesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListCertificatesRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListCertificatesRequest.
         :type: str
@@ -91,7 +91,7 @@ class ListCertificatesRequest:
     def page(self):
         """Gets the page of this ListCertificatesRequest.
 
-        页码
+        分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :return: The page of this ListCertificatesRequest.
         :rtype: int
@@ -102,7 +102,7 @@ class ListCertificatesRequest:
     def page(self, page):
         """Sets the page of this ListCertificatesRequest.
 
-        页码
+        分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :param page: The page of this ListCertificatesRequest.
         :type: int
@@ -113,7 +113,7 @@ class ListCertificatesRequest:
     def pagesize(self):
         """Gets the pagesize of this ListCertificatesRequest.
 
-        每页条数
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :return: The pagesize of this ListCertificatesRequest.
         :rtype: int
@@ -124,7 +124,7 @@ class ListCertificatesRequest:
     def pagesize(self, pagesize):
         """Sets the pagesize of this ListCertificatesRequest.
 
-        每页条数
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :param pagesize: The pagesize of this ListCertificatesRequest.
         :type: int
@@ -157,7 +157,7 @@ class ListCertificatesRequest:
     def host(self):
         """Gets the host of this ListCertificatesRequest.
 
-        是否获取证书关联的域名
+        是否获取证书关联的域名，默认为false   -true:获取已关联域名的证书   -false:获取未关联域名的证书
 
         :return: The host of this ListCertificatesRequest.
         :rtype: bool
@@ -168,7 +168,7 @@ class ListCertificatesRequest:
     def host(self, host):
         """Sets the host of this ListCertificatesRequest.
 
-        是否获取证书关联的域名
+        是否获取证书关联的域名，默认为false   -true:获取已关联域名的证书   -false:获取未关联域名的证书
 
         :param host: The host of this ListCertificatesRequest.
         :type: bool
@@ -179,7 +179,7 @@ class ListCertificatesRequest:
     def exp_status(self):
         """Gets the exp_status of this ListCertificatesRequest.
 
-        证书过期状态，0-未过期，1-已过期，2-即将过期
+        证书过期状态，0-未过期，1-已过期，2-即将过期（证书将在一个月内过期）
 
         :return: The exp_status of this ListCertificatesRequest.
         :rtype: int
@@ -190,7 +190,7 @@ class ListCertificatesRequest:
     def exp_status(self, exp_status):
         """Sets the exp_status of this ListCertificatesRequest.
 
-        证书过期状态，0-未过期，1-已过期，2-即将过期
+        证书过期状态，0-未过期，1-已过期，2-即将过期（证书将在一个月内过期）
 
         :param exp_status: The exp_status of this ListCertificatesRequest.
         :type: int

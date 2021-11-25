@@ -22,7 +22,7 @@ class ListResourceInstancesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'resources': 'ResourceInstance',
+        'resources': 'list[ResourceInstance]',
         'total_count': 'int'
     }
 
@@ -49,9 +49,10 @@ class ListResourceInstancesResponse(SdkResponse):
     def resources(self):
         """Gets the resources of this ListResourceInstancesResponse.
 
+        资源实例详情
 
         :return: The resources of this ListResourceInstancesResponse.
-        :rtype: ResourceInstance
+        :rtype: list[ResourceInstance]
         """
         return self._resources
 
@@ -59,9 +60,10 @@ class ListResourceInstancesResponse(SdkResponse):
     def resources(self, resources):
         """Sets the resources of this ListResourceInstancesResponse.
 
+        资源实例详情
 
         :param resources: The resources of this ListResourceInstancesResponse.
-        :type: ResourceInstance
+        :type: list[ResourceInstance]
         """
         self._resources = resources
 

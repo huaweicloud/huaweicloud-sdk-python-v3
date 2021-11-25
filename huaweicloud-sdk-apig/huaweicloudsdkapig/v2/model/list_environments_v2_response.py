@@ -24,7 +24,7 @@ class ListEnvironmentsV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'envs': 'list[EnvResp]'
+        'envs': 'list[EnvInfo]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class ListEnvironmentsV2Response(SdkResponse):
         本次返回的环境列表
 
         :return: The envs of this ListEnvironmentsV2Response.
-        :rtype: list[EnvResp]
+        :rtype: list[EnvInfo]
         """
         return self._envs
 
@@ -110,7 +110,7 @@ class ListEnvironmentsV2Response(SdkResponse):
         本次返回的环境列表
 
         :param envs: The envs of this ListEnvironmentsV2Response.
-        :type: list[EnvResp]
+        :type: list[EnvInfo]
         """
         self._envs = envs
 

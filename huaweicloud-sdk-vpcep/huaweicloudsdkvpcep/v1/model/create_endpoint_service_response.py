@@ -26,13 +26,13 @@ class CreateEndpointServiceResponse(SdkResponse):
         'port_id': 'str',
         'vip_port_id': 'str',
         'service_name': 'str',
-        'service_type': 'str',
         'server_type': 'str',
         'vpc_id': 'str',
         'approval_enabled': 'bool',
         'status': 'str',
-        'created_at': 'datetime',
-        'updated_at': 'datetime',
+        'service_type': 'str',
+        'created_at': 'str',
+        'updated_at': 'str',
         'project_id': 'str',
         'cidr_type': 'str',
         'ports': 'list[PortList]',
@@ -45,11 +45,11 @@ class CreateEndpointServiceResponse(SdkResponse):
         'port_id': 'port_id',
         'vip_port_id': 'vip_port_id',
         'service_name': 'service_name',
-        'service_type': 'service_type',
         'server_type': 'server_type',
         'vpc_id': 'vpc_id',
         'approval_enabled': 'approval_enabled',
         'status': 'status',
+        'service_type': 'service_type',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'project_id': 'project_id',
@@ -59,7 +59,7 @@ class CreateEndpointServiceResponse(SdkResponse):
         'tags': 'tags'
     }
 
-    def __init__(self, id=None, port_id=None, vip_port_id=None, service_name=None, service_type=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, created_at=None, updated_at=None, project_id=None, cidr_type=None, ports=None, tcp_proxy=None, tags=None):
+    def __init__(self, id=None, port_id=None, vip_port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, cidr_type=None, ports=None, tcp_proxy=None, tags=None):
         """CreateEndpointServiceResponse - a model defined in huaweicloud sdk"""
         
         super(CreateEndpointServiceResponse, self).__init__()
@@ -68,11 +68,11 @@ class CreateEndpointServiceResponse(SdkResponse):
         self._port_id = None
         self._vip_port_id = None
         self._service_name = None
-        self._service_type = None
         self._server_type = None
         self._vpc_id = None
         self._approval_enabled = None
         self._status = None
+        self._service_type = None
         self._created_at = None
         self._updated_at = None
         self._project_id = None
@@ -90,8 +90,6 @@ class CreateEndpointServiceResponse(SdkResponse):
             self.vip_port_id = vip_port_id
         if service_name is not None:
             self.service_name = service_name
-        if service_type is not None:
-            self.service_type = service_type
         if server_type is not None:
             self.server_type = server_type
         if vpc_id is not None:
@@ -100,6 +98,8 @@ class CreateEndpointServiceResponse(SdkResponse):
             self.approval_enabled = approval_enabled
         if status is not None:
             self.status = status
+        if service_type is not None:
+            self.service_type = service_type
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
@@ -141,7 +141,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def port_id(self):
         """Gets the port_id of this CreateEndpointServiceResponse.
 
-        标识终端节点服务后端资源的ID，格式为通用 唯一识别码（Universally Unique Identifier， 下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端 口ID。 ● VM类型：弹性云服务器IP地址对应的网卡 ID。 ● VIP类型：虚拟资源所在物理服务器对应的网 卡ID。
+        标识终端节点服务后端资源的ID，格式为通用唯一识别码 （Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
 
         :return: The port_id of this CreateEndpointServiceResponse.
         :rtype: str
@@ -152,7 +152,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def port_id(self, port_id):
         """Sets the port_id of this CreateEndpointServiceResponse.
 
-        标识终端节点服务后端资源的ID，格式为通用 唯一识别码（Universally Unique Identifier， 下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端 口ID。 ● VM类型：弹性云服务器IP地址对应的网卡 ID。 ● VIP类型：虚拟资源所在物理服务器对应的网 卡ID。
+        标识终端节点服务后端资源的ID，格式为通用唯一识别码 （Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
 
         :param port_id: The port_id of this CreateEndpointServiceResponse.
         :type: str
@@ -163,7 +163,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def vip_port_id(self):
         """Gets the vip_port_id of this CreateEndpointServiceResponse.
 
-        虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参 数。
+        虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参数。
 
         :return: The vip_port_id of this CreateEndpointServiceResponse.
         :rtype: str
@@ -174,7 +174,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def vip_port_id(self, vip_port_id):
         """Sets the vip_port_id of this CreateEndpointServiceResponse.
 
-        虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参 数。
+        虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参数。
 
         :param vip_port_id: The vip_port_id of this CreateEndpointServiceResponse.
         :type: str
@@ -202,28 +202,6 @@ class CreateEndpointServiceResponse(SdkResponse):
         :type: str
         """
         self._service_name = service_name
-
-    @property
-    def service_type(self):
-        """Gets the service_type of this CreateEndpointServiceResponse.
-
-        终端节点服务类型。 终端节点服务类型包括“网关（gataway）型” 和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创 建，可直接使用。 ● interface：包括运维人员配置的云服务和用 户自己创建的私有服务。其中，运维人员配 置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和 Interface类型终端节点服务的终端节点。
-
-        :return: The service_type of this CreateEndpointServiceResponse.
-        :rtype: str
-        """
-        return self._service_type
-
-    @service_type.setter
-    def service_type(self, service_type):
-        """Sets the service_type of this CreateEndpointServiceResponse.
-
-        终端节点服务类型。 终端节点服务类型包括“网关（gataway）型” 和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创 建，可直接使用。 ● interface：包括运维人员配置的云服务和用 户自己创建的私有服务。其中，运维人员配 置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和 Interface类型终端节点服务的终端节点。
-
-        :param service_type: The service_type of this CreateEndpointServiceResponse.
-        :type: str
-        """
-        self._service_type = service_type
 
     @property
     def server_type(self):
@@ -273,7 +251,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def approval_enabled(self):
         """Gets the approval_enabled of this CreateEndpointServiceResponse.
 
-        是否需要审批。 ● false：不需要审批，创建的终端节点连接直 接为accepted状态。 ● true：需要审批，创建的终端节点连接为 pendingAcceptance状态，需要终端节点服 务所属用户审核后方可使用。
+        是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态，需要终端节点服务所属用户审核后方可使用。
 
         :return: The approval_enabled of this CreateEndpointServiceResponse.
         :rtype: bool
@@ -284,7 +262,7 @@ class CreateEndpointServiceResponse(SdkResponse):
     def approval_enabled(self, approval_enabled):
         """Sets the approval_enabled of this CreateEndpointServiceResponse.
 
-        是否需要审批。 ● false：不需要审批，创建的终端节点连接直 接为accepted状态。 ● true：需要审批，创建的终端节点连接为 pendingAcceptance状态，需要终端节点服 务所属用户审核后方可使用。
+        是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态，需要终端节点服务所属用户审核后方可使用。
 
         :param approval_enabled: The approval_enabled of this CreateEndpointServiceResponse.
         :type: bool
@@ -314,13 +292,35 @@ class CreateEndpointServiceResponse(SdkResponse):
         self._status = status
 
     @property
+    def service_type(self):
+        """Gets the service_type of this CreateEndpointServiceResponse.
+
+        终端节点服务类型。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。其中，运维人员配 置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+
+        :return: The service_type of this CreateEndpointServiceResponse.
+        :rtype: str
+        """
+        return self._service_type
+
+    @service_type.setter
+    def service_type(self, service_type):
+        """Sets the service_type of this CreateEndpointServiceResponse.
+
+        终端节点服务类型。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。其中，运维人员配 置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+
+        :param service_type: The service_type of this CreateEndpointServiceResponse.
+        :type: str
+        """
+        self._service_type = service_type
+
+    @property
     def created_at(self):
         """Gets the created_at of this CreateEndpointServiceResponse.
 
-        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :return: The created_at of this CreateEndpointServiceResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -328,10 +328,10 @@ class CreateEndpointServiceResponse(SdkResponse):
     def created_at(self, created_at):
         """Sets the created_at of this CreateEndpointServiceResponse.
 
-        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :param created_at: The created_at of this CreateEndpointServiceResponse.
-        :type: datetime
+        :type: str
         """
         self._created_at = created_at
 
@@ -339,10 +339,10 @@ class CreateEndpointServiceResponse(SdkResponse):
     def updated_at(self):
         """Gets the updated_at of this CreateEndpointServiceResponse.
 
-        终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :return: The updated_at of this CreateEndpointServiceResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._updated_at
 
@@ -350,10 +350,10 @@ class CreateEndpointServiceResponse(SdkResponse):
     def updated_at(self, updated_at):
         """Sets the updated_at of this CreateEndpointServiceResponse.
 
-        终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this CreateEndpointServiceResponse.
-        :type: datetime
+        :type: str
         """
         self._updated_at = updated_at
 

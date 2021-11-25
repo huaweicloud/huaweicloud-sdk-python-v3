@@ -166,7 +166,7 @@ class ListServiceConnectionsRequest:
     def sort_key(self):
         """Gets the sort_key of this ListServiceConnectionsRequest.
 
-        查询结果中终端节点列表的排序字 段，取值为： ● create_at：终端节点的创建时 间 ● update_at：终端节点的更新时 间 默认值为create_at。
+        查询结果中终端节点列表的排序字段，取值为： ● create_at：终端节点的创建时间 ● update_at：终端节点的更新时间 默认值为create_at。
 
         :return: The sort_key of this ListServiceConnectionsRequest.
         :rtype: str
@@ -177,7 +177,7 @@ class ListServiceConnectionsRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListServiceConnectionsRequest.
 
-        查询结果中终端节点列表的排序字 段，取值为： ● create_at：终端节点的创建时 间 ● update_at：终端节点的更新时 间 默认值为create_at。
+        查询结果中终端节点列表的排序字段，取值为： ● create_at：终端节点的创建时间 ● update_at：终端节点的更新时间 默认值为create_at。
 
         :param sort_key: The sort_key of this ListServiceConnectionsRequest.
         :type: str
@@ -210,7 +210,7 @@ class ListServiceConnectionsRequest:
     def limit(self):
         """Gets the limit of this ListServiceConnectionsRequest.
 
-        查询返回终端节点服务的连接列表 限制每页个数，即每页返回的个 数。 取值范围：0~1000，取值一般为 10，20或者50，默认为10。
+        查询返回终端节点服务的连接列表限制每页个数，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
         :return: The limit of this ListServiceConnectionsRequest.
         :rtype: int
@@ -221,7 +221,7 @@ class ListServiceConnectionsRequest:
     def limit(self, limit):
         """Sets the limit of this ListServiceConnectionsRequest.
 
-        查询返回终端节点服务的连接列表 限制每页个数，即每页返回的个 数。 取值范围：0~1000，取值一般为 10，20或者50，默认为10。
+        查询返回终端节点服务的连接列表限制每页个数，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
         :param limit: The limit of this ListServiceConnectionsRequest.
         :type: int

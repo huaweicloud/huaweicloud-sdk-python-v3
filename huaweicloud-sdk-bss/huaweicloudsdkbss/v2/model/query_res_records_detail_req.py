@@ -34,7 +34,8 @@ class QueryResRecordsDetailReq:
         'offset': 'int',
         'limit': 'int',
         'method': 'str',
-        'sub_customer_id': 'str'
+        'sub_customer_id': 'str',
+        'statistic_type': 'int'
     }
 
     attribute_map = {
@@ -50,10 +51,11 @@ class QueryResRecordsDetailReq:
         'offset': 'offset',
         'limit': 'limit',
         'method': 'method',
-        'sub_customer_id': 'sub_customer_id'
+        'sub_customer_id': 'sub_customer_id',
+        'statistic_type': 'statistic_type'
     }
 
-    def __init__(self, cycle=None, cloud_service_type=None, resource_type=None, region=None, res_instance_id=None, charge_mode=None, bill_type=None, enterprise_project_id=None, include_zero_record=None, offset=None, limit=None, method=None, sub_customer_id=None):
+    def __init__(self, cycle=None, cloud_service_type=None, resource_type=None, region=None, res_instance_id=None, charge_mode=None, bill_type=None, enterprise_project_id=None, include_zero_record=None, offset=None, limit=None, method=None, sub_customer_id=None, statistic_type=None):
         """QueryResRecordsDetailReq - a model defined in huaweicloud sdk"""
         
         
@@ -71,6 +73,7 @@ class QueryResRecordsDetailReq:
         self._limit = None
         self._method = None
         self._sub_customer_id = None
+        self._statistic_type = None
         self.discriminator = None
 
         self.cycle = cycle
@@ -98,6 +101,8 @@ class QueryResRecordsDetailReq:
             self.method = method
         if sub_customer_id is not None:
             self.sub_customer_id = sub_customer_id
+        if statistic_type is not None:
+            self.statistic_type = statistic_type
 
     @property
     def cycle(self):
@@ -384,6 +389,28 @@ class QueryResRecordsDetailReq:
         :type: str
         """
         self._sub_customer_id = sub_customer_id
+
+    @property
+    def statistic_type(self):
+        """Gets the statistic_type of this QueryResRecordsDetailReq.
+
+        统计类型。默认值为1。 1：按账期2：按天
+
+        :return: The statistic_type of this QueryResRecordsDetailReq.
+        :rtype: int
+        """
+        return self._statistic_type
+
+    @statistic_type.setter
+    def statistic_type(self, statistic_type):
+        """Sets the statistic_type of this QueryResRecordsDetailReq.
+
+        统计类型。默认值为1。 1：按账期2：按天
+
+        :param statistic_type: The statistic_type of this QueryResRecordsDetailReq.
+        :type: int
+        """
+        self._statistic_type = statistic_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -29,7 +29,8 @@ class ListInstancesRequest:
         'vpc_id': 'str',
         'subnet_id': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'tags': 'str'
     }
 
     attribute_map = {
@@ -40,10 +41,11 @@ class ListInstancesRequest:
         'vpc_id': 'vpc_id',
         'subnet_id': 'subnet_id',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, mode=None, datastore_type=None, vpc_id=None, subnet_id=None, offset=None, limit=None):
+    def __init__(self, id=None, name=None, mode=None, datastore_type=None, vpc_id=None, subnet_id=None, offset=None, limit=None, tags=None):
         """ListInstancesRequest - a model defined in huaweicloud sdk"""
         
         
@@ -56,6 +58,7 @@ class ListInstancesRequest:
         self._subnet_id = None
         self._offset = None
         self._limit = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -74,6 +77,8 @@ class ListInstancesRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -250,6 +255,28 @@ class ListInstancesRequest:
         :type: int
         """
         self._limit = limit
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListInstancesRequest.
+
+        根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值，最多包含20组。key不可以为空或重复，value可以为空。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。
+
+        :return: The tags of this ListInstancesRequest.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListInstancesRequest.
+
+        根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值，最多包含20组。key不可以为空或重复，value可以为空。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。
+
+        :param tags: The tags of this ListInstancesRequest.
+        :type: str
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -47,7 +47,7 @@ class CancelingAuthorizationV2Request:
     def instance_id(self):
         """Gets the instance_id of this CancelingAuthorizationV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this CancelingAuthorizationV2Request.
         :rtype: str
@@ -58,7 +58,7 @@ class CancelingAuthorizationV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CancelingAuthorizationV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this CancelingAuthorizationV2Request.
         :type: str
@@ -69,7 +69,7 @@ class CancelingAuthorizationV2Request:
     def app_auth_id(self):
         """Gets the app_auth_id of this CancelingAuthorizationV2Request.
 
-        授权关系的ID
+        授权关系的编号
 
         :return: The app_auth_id of this CancelingAuthorizationV2Request.
         :rtype: str
@@ -80,7 +80,7 @@ class CancelingAuthorizationV2Request:
     def app_auth_id(self, app_auth_id):
         """Sets the app_auth_id of this CancelingAuthorizationV2Request.
 
-        授权关系的ID
+        授权关系的编号
 
         :param app_auth_id: The app_auth_id of this CancelingAuthorizationV2Request.
         :type: str

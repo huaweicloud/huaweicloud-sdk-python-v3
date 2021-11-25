@@ -82,7 +82,7 @@ class CreateEndpointRequestBody:
     def subnet_id(self):
         """Gets the subnet_id of this CreateEndpointRequestBody.
 
-        需要指定vpc_id对应VPC下已 创建的网络（network）的 ID，UUID格式。 详细内容请参考《虚拟私有云 API参考》中的“查询子 网”，详见响应消息中的 “id”字段。 创建连接Interface类型终端节 点服务的终端节点时，此参数 必选。 说明 ● VPC的子网网段不能与 198.19.128.0/20重叠 ● VPC路由表中自定义路由的目 的地址不能与 198.19.128.0/20重叠
+        说明： 创建Interface类型Client必选。需要指定vpc_id对应VPC下已 创建的网络（network）的 ID，UUID格式。 详细内容请参考《虚拟私有云 API参考》中的“查询子 网”，详见响应消息中的 “id”字段。 创建连接Interface类型终端节 点服务的终端节点时，此参数 必选。 说明 ● VPC的子网网段不能与 198.19.128.0/20重叠 ● VPC路由表中自定义路由的目 的地址不能与 198.19.128.0/20重叠
 
         :return: The subnet_id of this CreateEndpointRequestBody.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateEndpointRequestBody:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this CreateEndpointRequestBody.
 
-        需要指定vpc_id对应VPC下已 创建的网络（network）的 ID，UUID格式。 详细内容请参考《虚拟私有云 API参考》中的“查询子 网”，详见响应消息中的 “id”字段。 创建连接Interface类型终端节 点服务的终端节点时，此参数 必选。 说明 ● VPC的子网网段不能与 198.19.128.0/20重叠 ● VPC路由表中自定义路由的目 的地址不能与 198.19.128.0/20重叠
+        说明： 创建Interface类型Client必选。需要指定vpc_id对应VPC下已 创建的网络（network）的 ID，UUID格式。 详细内容请参考《虚拟私有云 API参考》中的“查询子 网”，详见响应消息中的 “id”字段。 创建连接Interface类型终端节 点服务的终端节点时，此参数 必选。 说明 ● VPC的子网网段不能与 198.19.128.0/20重叠 ● VPC路由表中自定义路由的目 的地址不能与 198.19.128.0/20重叠
 
         :param subnet_id: The subnet_id of this CreateEndpointRequestBody.
         :type: str
@@ -148,7 +148,7 @@ class CreateEndpointRequestBody:
     def enable_dns(self):
         """Gets the enable_dns of this CreateEndpointRequestBody.
 
-        是否创建域名。 ● true：创建域名 ● false：不创建域名 默认值为false。 说明 当创建连接gateway类型终端节 点服务的终端节点时， “enable_dns”设置为true或者 false，均不创建域名。
+        是否创建域名。 ● true：创建域名 ● false：不创建域名 默认值为false。 说明 当创建连接gateway类型终端节点服务的终端节点时，“enable_dns”设置为true或者false，均不创建域名。
 
         :return: The enable_dns of this CreateEndpointRequestBody.
         :rtype: bool
@@ -159,7 +159,7 @@ class CreateEndpointRequestBody:
     def enable_dns(self, enable_dns):
         """Sets the enable_dns of this CreateEndpointRequestBody.
 
-        是否创建域名。 ● true：创建域名 ● false：不创建域名 默认值为false。 说明 当创建连接gateway类型终端节 点服务的终端节点时， “enable_dns”设置为true或者 false，均不创建域名。
+        是否创建域名。 ● true：创建域名 ● false：不创建域名 默认值为false。 说明 当创建连接gateway类型终端节点服务的终端节点时，“enable_dns”设置为true或者false，均不创建域名。
 
         :param enable_dns: The enable_dns of this CreateEndpointRequestBody.
         :type: bool
@@ -192,7 +192,7 @@ class CreateEndpointRequestBody:
     def routetables(self):
         """Gets the routetables of this CreateEndpointRequestBody.
 
-        路由表ID列表。 详细内容请参考《虚拟私有云 API参考》中的“查询VPC路 由”，详见响应消息中的 “id”字段。 创建连接gateway类型终端节 点服务的终节点时，此参数必 选。 说明 不设置此参数时，选择默认路由 表。
+        路由表ID列表。详细内容请参考《虚拟私有云 API参考》中的“查询VPC路由”，详见响应消息中的“id”字段。 创建连接gateway类型终端节点服务的终节点时，此参数必选。 说明 不设置此参数时，选择默认路由表。
 
         :return: The routetables of this CreateEndpointRequestBody.
         :rtype: list[str]
@@ -203,7 +203,7 @@ class CreateEndpointRequestBody:
     def routetables(self, routetables):
         """Sets the routetables of this CreateEndpointRequestBody.
 
-        路由表ID列表。 详细内容请参考《虚拟私有云 API参考》中的“查询VPC路 由”，详见响应消息中的 “id”字段。 创建连接gateway类型终端节 点服务的终节点时，此参数必 选。 说明 不设置此参数时，选择默认路由 表。
+        路由表ID列表。详细内容请参考《虚拟私有云 API参考》中的“查询VPC路由”，详见响应消息中的“id”字段。 创建连接gateway类型终端节点服务的终节点时，此参数必选。 说明 不设置此参数时，选择默认路由表。
 
         :param routetables: The routetables of this CreateEndpointRequestBody.
         :type: list[str]
@@ -214,7 +214,7 @@ class CreateEndpointRequestBody:
     def port_ip(self):
         """Gets the port_ip of this CreateEndpointRequestBody.
 
-        访问所连接的终端节点服务的 IP。 创建终端节点时，可以指定访 问所连接的终端节点服务的 IP，目前只支持IPv4类型 。 创建连接Interface类型终端节 点服务的终端节点时，此参数 必选。
+        访问所连接的终端节点服务的IP。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，目前只支持IPv4类型 。 创建连接Interface类型终端节点服务的终端节点时，此参数必选。
 
         :return: The port_ip of this CreateEndpointRequestBody.
         :rtype: str
@@ -225,7 +225,7 @@ class CreateEndpointRequestBody:
     def port_ip(self, port_ip):
         """Sets the port_ip of this CreateEndpointRequestBody.
 
-        访问所连接的终端节点服务的 IP。 创建终端节点时，可以指定访 问所连接的终端节点服务的 IP，目前只支持IPv4类型 。 创建连接Interface类型终端节 点服务的终端节点时，此参数 必选。
+        访问所连接的终端节点服务的IP。 创建终端节点时，可以指定访问所连接的终端节点服务的IP，目前只支持IPv4类型 。 创建连接Interface类型终端节点服务的终端节点时，此参数必选。
 
         :param port_ip: The port_ip of this CreateEndpointRequestBody.
         :type: str
@@ -236,7 +236,7 @@ class CreateEndpointRequestBody:
     def whitelist(self):
         """Gets the whitelist of this CreateEndpointRequestBody.
 
-        添加用于控制访问终端节点的 白名单。 创建终端节点时，支持访问控 制，使用此参数可以添加IPv4 或CIDR，默认空列表。 仅当创建连接Interface类型终 端节点服务的终端节点时，支 持设置此参数。
+        添加用于控制访问终端节点的白名单。 创建终端节点时，支持访问控制，使用此参数可以添加IPv4或CIDR，默认空列表。 仅当创建连接Interface类型终端节点服务的终端节点时，支持设置此参数。
 
         :return: The whitelist of this CreateEndpointRequestBody.
         :rtype: list[str]
@@ -247,7 +247,7 @@ class CreateEndpointRequestBody:
     def whitelist(self, whitelist):
         """Sets the whitelist of this CreateEndpointRequestBody.
 
-        添加用于控制访问终端节点的 白名单。 创建终端节点时，支持访问控 制，使用此参数可以添加IPv4 或CIDR，默认空列表。 仅当创建连接Interface类型终 端节点服务的终端节点时，支 持设置此参数。
+        添加用于控制访问终端节点的白名单。 创建终端节点时，支持访问控制，使用此参数可以添加IPv4或CIDR，默认空列表。 仅当创建连接Interface类型终端节点服务的终端节点时，支持设置此参数。
 
         :param whitelist: The whitelist of this CreateEndpointRequestBody.
         :type: list[str]

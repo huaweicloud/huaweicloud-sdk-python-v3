@@ -33,9 +33,13 @@ class PolicyOption:
         'cc': 'bool',
         'custom': 'bool',
         'whiteblackip': 'bool',
+        'geoip': 'bool',
         'ignore': 'bool',
         'privacy': 'bool',
-        'antitamper': 'bool'
+        'antitamper': 'bool',
+        'antileakage': 'bool',
+        'bot_enable': 'bool',
+        'modulex_enabled': 'bool'
     }
 
     attribute_map = {
@@ -50,12 +54,16 @@ class PolicyOption:
         'cc': 'cc',
         'custom': 'custom',
         'whiteblackip': 'whiteblackip',
+        'geoip': 'geoip',
         'ignore': 'ignore',
         'privacy': 'privacy',
-        'antitamper': 'antitamper'
+        'antitamper': 'antitamper',
+        'antileakage': 'antileakage',
+        'bot_enable': 'bot_enable',
+        'modulex_enabled': 'modulex_enabled'
     }
 
-    def __init__(self, webattack=None, common=None, crawler=None, crawler_engine=None, crawler_scanner=None, crawler_script=None, crawler_other=None, webshell=None, cc=None, custom=None, whiteblackip=None, ignore=None, privacy=None, antitamper=None):
+    def __init__(self, webattack=None, common=None, crawler=None, crawler_engine=None, crawler_scanner=None, crawler_script=None, crawler_other=None, webshell=None, cc=None, custom=None, whiteblackip=None, geoip=None, ignore=None, privacy=None, antitamper=None, antileakage=None, bot_enable=None, modulex_enabled=None):
         """PolicyOption - a model defined in huaweicloud sdk"""
         
         
@@ -71,9 +79,13 @@ class PolicyOption:
         self._cc = None
         self._custom = None
         self._whiteblackip = None
+        self._geoip = None
         self._ignore = None
         self._privacy = None
         self._antitamper = None
+        self._antileakage = None
+        self._bot_enable = None
+        self._modulex_enabled = None
         self.discriminator = None
 
         if webattack is not None:
@@ -98,12 +110,20 @@ class PolicyOption:
             self.custom = custom
         if whiteblackip is not None:
             self.whiteblackip = whiteblackip
+        if geoip is not None:
+            self.geoip = geoip
         if ignore is not None:
             self.ignore = ignore
         if privacy is not None:
             self.privacy = privacy
         if antitamper is not None:
             self.antitamper = antitamper
+        if antileakage is not None:
+            self.antileakage = antileakage
+        if bot_enable is not None:
+            self.bot_enable = bot_enable
+        if modulex_enabled is not None:
+            self.modulex_enabled = modulex_enabled
 
     @property
     def webattack(self):
@@ -348,6 +368,28 @@ class PolicyOption:
         self._whiteblackip = whiteblackip
 
     @property
+    def geoip(self):
+        """Gets the geoip of this PolicyOption.
+
+        地理位置访问控制规则是否开启
+
+        :return: The geoip of this PolicyOption.
+        :rtype: bool
+        """
+        return self._geoip
+
+    @geoip.setter
+    def geoip(self, geoip):
+        """Sets the geoip of this PolicyOption.
+
+        地理位置访问控制规则是否开启
+
+        :param geoip: The geoip of this PolicyOption.
+        :type: bool
+        """
+        self._geoip = geoip
+
+    @property
     def ignore(self):
         """Gets the ignore of this PolicyOption.
 
@@ -412,6 +454,72 @@ class PolicyOption:
         :type: bool
         """
         self._antitamper = antitamper
+
+    @property
+    def antileakage(self):
+        """Gets the antileakage of this PolicyOption.
+
+        防敏感信息泄露规则是否开启
+
+        :return: The antileakage of this PolicyOption.
+        :rtype: bool
+        """
+        return self._antileakage
+
+    @antileakage.setter
+    def antileakage(self, antileakage):
+        """Sets the antileakage of this PolicyOption.
+
+        防敏感信息泄露规则是否开启
+
+        :param antileakage: The antileakage of this PolicyOption.
+        :type: bool
+        """
+        self._antileakage = antileakage
+
+    @property
+    def bot_enable(self):
+        """Gets the bot_enable of this PolicyOption.
+
+        防网络机器人攻击是否开启
+
+        :return: The bot_enable of this PolicyOption.
+        :rtype: bool
+        """
+        return self._bot_enable
+
+    @bot_enable.setter
+    def bot_enable(self, bot_enable):
+        """Sets the bot_enable of this PolicyOption.
+
+        防网络机器人攻击是否开启
+
+        :param bot_enable: The bot_enable of this PolicyOption.
+        :type: bool
+        """
+        self._bot_enable = bot_enable
+
+    @property
+    def modulex_enabled(self):
+        """Gets the modulex_enabled of this PolicyOption.
+
+        modulex智能cc防护是否开启，该特性是公测特性，在公测期间，只支持仅记录模式。
+
+        :return: The modulex_enabled of this PolicyOption.
+        :rtype: bool
+        """
+        return self._modulex_enabled
+
+    @modulex_enabled.setter
+    def modulex_enabled(self, modulex_enabled):
+        """Sets the modulex_enabled of this PolicyOption.
+
+        modulex智能cc防护是否开启，该特性是公测特性，在公测期间，只支持仅记录模式。
+
+        :param modulex_enabled: The modulex_enabled of this PolicyOption.
+        :type: bool
+        """
+        self._modulex_enabled = modulex_enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -76,7 +76,7 @@ class CertificateBody:
     def id(self):
         """Gets the id of this CertificateBody.
 
-        证书ID
+        证书id
 
         :return: The id of this CertificateBody.
         :rtype: str
@@ -87,7 +87,7 @@ class CertificateBody:
     def id(self, id):
         """Sets the id of this CertificateBody.
 
-        证书ID
+        证书id
 
         :param id: The id of this CertificateBody.
         :type: str
@@ -186,7 +186,7 @@ class CertificateBody:
     def exp_status(self):
         """Gets the exp_status of this CertificateBody.
 
-        证书过期状态，0-未过期，1-已过期，2-即将过期
+        证书过期状态，0-未过期，1-已过期，2-即将过期（一个月内即将过期）
 
         :return: The exp_status of this CertificateBody.
         :rtype: int
@@ -197,7 +197,7 @@ class CertificateBody:
     def exp_status(self, exp_status):
         """Sets the exp_status of this CertificateBody.
 
-        证书过期状态，0-未过期，1-已过期，2-即将过期
+        证书过期状态，0-未过期，1-已过期，2-即将过期（一个月内即将过期）
 
         :param exp_status: The exp_status of this CertificateBody.
         :type: int

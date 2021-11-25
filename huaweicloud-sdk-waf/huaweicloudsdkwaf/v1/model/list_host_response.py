@@ -23,7 +23,7 @@ class ListHostResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'items': 'list[CloudWafHostResponseBody]'
+        'items': 'list[CloudWafHostItem]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class ListHostResponse(SdkResponse):
         详细的防护域名信息
 
         :return: The items of this ListHostResponse.
-        :rtype: list[CloudWafHostResponseBody]
+        :rtype: list[CloudWafHostItem]
         """
         return self._items
 
@@ -85,7 +85,7 @@ class ListHostResponse(SdkResponse):
         详细的防护域名信息
 
         :param items: The items of this ListHostResponse.
-        :type: list[CloudWafHostResponseBody]
+        :type: list[CloudWafHostItem]
         """
         self._items = items
 

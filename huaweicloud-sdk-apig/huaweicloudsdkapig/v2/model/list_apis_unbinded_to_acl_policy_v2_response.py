@@ -24,7 +24,7 @@ class ListApisUnbindedToAclPolicyV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'apis': 'list[UnbindApiForAclPageApisResp]'
+        'apis': 'list[UnbindApiForAcl]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class ListApisUnbindedToAclPolicyV2Response(SdkResponse):
         本次查询返回的API列表
 
         :return: The apis of this ListApisUnbindedToAclPolicyV2Response.
-        :rtype: list[UnbindApiForAclPageApisResp]
+        :rtype: list[UnbindApiForAcl]
         """
         return self._apis
 
@@ -110,7 +110,7 @@ class ListApisUnbindedToAclPolicyV2Response(SdkResponse):
         本次查询返回的API列表
 
         :param apis: The apis of this ListApisUnbindedToAclPolicyV2Response.
-        :type: list[UnbindApiForAclPageApisResp]
+        :type: list[UnbindApiForAcl]
         """
         self._apis = apis
 

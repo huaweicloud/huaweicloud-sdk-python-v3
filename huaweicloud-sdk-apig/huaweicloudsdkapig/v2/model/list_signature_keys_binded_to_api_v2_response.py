@@ -24,7 +24,7 @@ class ListSignatureKeysBindedToApiV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'bindings': 'list[SignBindingApiResp]'
+        'bindings': 'list[SignApiBindingInfo]'
     }
 
     attribute_map = {
@@ -96,10 +96,10 @@ class ListSignatureKeysBindedToApiV2Response(SdkResponse):
     def bindings(self):
         """Gets the bindings of this ListSignatureKeysBindedToApiV2Response.
 
-        本次查询返回的列表
+        API与签名密钥的绑定关系列表
 
         :return: The bindings of this ListSignatureKeysBindedToApiV2Response.
-        :rtype: list[SignBindingApiResp]
+        :rtype: list[SignApiBindingInfo]
         """
         return self._bindings
 
@@ -107,10 +107,10 @@ class ListSignatureKeysBindedToApiV2Response(SdkResponse):
     def bindings(self, bindings):
         """Sets the bindings of this ListSignatureKeysBindedToApiV2Response.
 
-        本次查询返回的列表
+        API与签名密钥的绑定关系列表
 
         :param bindings: The bindings of this ListSignatureKeysBindedToApiV2Response.
-        :type: list[SignBindingApiResp]
+        :type: list[SignApiBindingInfo]
         """
         self._bindings = bindings
 

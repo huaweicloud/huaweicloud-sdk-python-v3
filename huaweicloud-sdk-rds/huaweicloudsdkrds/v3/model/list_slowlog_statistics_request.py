@@ -28,7 +28,8 @@ class ListSlowlogStatisticsRequest:
         'per_page': 'int',
         'start_date': 'str',
         'end_date': 'str',
-        'type': 'str'
+        'type': 'str',
+        'sort': 'str'
     }
 
     attribute_map = {
@@ -38,10 +39,11 @@ class ListSlowlogStatisticsRequest:
         'per_page': 'per_page',
         'start_date': 'start_date',
         'end_date': 'end_date',
-        'type': 'type'
+        'type': 'type',
+        'sort': 'sort'
     }
 
-    def __init__(self, x_language=None, instance_id=None, cur_page=None, per_page=None, start_date=None, end_date=None, type=None):
+    def __init__(self, x_language=None, instance_id=None, cur_page=None, per_page=None, start_date=None, end_date=None, type=None, sort=None):
         """ListSlowlogStatisticsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -53,6 +55,7 @@ class ListSlowlogStatisticsRequest:
         self._start_date = None
         self._end_date = None
         self._type = None
+        self._sort = None
         self.discriminator = None
 
         if x_language is not None:
@@ -63,6 +66,8 @@ class ListSlowlogStatisticsRequest:
         self.start_date = start_date
         self.end_date = end_date
         self.type = type
+        if sort is not None:
+            self.sort = sort
 
     @property
     def x_language(self):
@@ -217,6 +222,28 @@ class ListSlowlogStatisticsRequest:
         :type: str
         """
         self._type = type
+
+    @property
+    def sort(self):
+        """Gets the sort of this ListSlowlogStatisticsRequest.
+
+        取值范围：\"executeTime\",表示按执行时间降序排序，不传或者传其他表示按执行次数降序排序
+
+        :return: The sort of this ListSlowlogStatisticsRequest.
+        :rtype: str
+        """
+        return self._sort
+
+    @sort.setter
+    def sort(self, sort):
+        """Sets the sort of this ListSlowlogStatisticsRequest.
+
+        取值范围：\"executeTime\",表示按执行时间降序排序，不传或者传其他表示按执行次数降序排序
+
+        :param sort: The sort of this ListSlowlogStatisticsRequest.
+        :type: str
+        """
+        self._sort = sort
 
     def to_dict(self):
         """Returns the model properties as a dict"""

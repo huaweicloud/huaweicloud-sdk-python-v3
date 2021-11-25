@@ -24,7 +24,7 @@ class BeneficiaryItem:
     openapi_types = {
         'beneficiary_name': 'InsurancePolicyDetail',
         'beneficiary_type': 'InsurancePolicyDetail',
-        'beneficiary_order': 'object',
+        'beneficiary_order': 'InsurancePolicyDetail',
         'beneficiary_share': 'InsurancePolicyDetail'
     }
 
@@ -99,10 +99,9 @@ class BeneficiaryItem:
     def beneficiary_order(self):
         """Gets the beneficiary_order of this BeneficiaryItem.
 
-        受益顺序。 
 
         :return: The beneficiary_order of this BeneficiaryItem.
-        :rtype: object
+        :rtype: InsurancePolicyDetail
         """
         return self._beneficiary_order
 
@@ -110,10 +109,9 @@ class BeneficiaryItem:
     def beneficiary_order(self, beneficiary_order):
         """Sets the beneficiary_order of this BeneficiaryItem.
 
-        受益顺序。 
 
         :param beneficiary_order: The beneficiary_order of this BeneficiaryItem.
-        :type: object
+        :type: InsurancePolicyDetail
         """
         self._beneficiary_order = beneficiary_order
 

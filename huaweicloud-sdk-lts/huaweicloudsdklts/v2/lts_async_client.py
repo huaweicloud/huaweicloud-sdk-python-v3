@@ -302,6 +302,71 @@ class LtsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_notification_template_async(self, request):
+        """创建通知模板
+
+        该接口用于创建通知模板，目前每个帐户最多可以创建共100个通知模板，创建后名称不可修改。
+
+        :param CreateNotificationTemplateRequest request
+        :return: CreateNotificationTemplateResponse
+        """
+        return self.create_notification_template_with_http_info(request)
+
+    def create_notification_template_with_http_info(self, request):
+        """创建通知模板
+
+        该接口用于创建通知模板，目前每个帐户最多可以创建共100个通知模板，创建后名称不可修改。
+
+        :param CreateNotificationTemplateRequest request
+        :return: CreateNotificationTemplateResponse
+        """
+
+        all_params = ['domain_id', 'create_notification_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/{domain_id}/lts/events/notification/templates',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateNotificationTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_struct_template_async(self, request):
         """创建结构化配置
 
@@ -359,6 +424,69 @@ class LtsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateStructTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_transfer_async(self, request):
+        """创建日志转储
+
+        该接口用于创建OBS转储，DIS转储，DMS转储。
+
+        :param CreateTransferRequest request
+        :return: CreateTransferResponse
+        """
+        return self.create_transfer_with_http_info(request)
+
+    def create_transfer_with_http_info(self, request):
+        """创建日志转储
+
+        该接口用于创建OBS转储，DIS转储，DMS转储。
+
+        :param CreateTransferRequest request
+        :return: CreateTransferResponse
+        """
+
+        all_params = ['create_transfer_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/transfers',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateTransferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -621,6 +749,71 @@ class LtsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_notification_template_async(self, request):
+        """删除通知模板
+
+        该接口用于删除通知模板。
+
+        :param DeleteNotificationTemplateRequest request
+        :return: DeleteNotificationTemplateResponse
+        """
+        return self.delete_notification_template_with_http_info(request)
+
+    def delete_notification_template_with_http_info(self, request):
+        """删除通知模板
+
+        该接口用于删除通知模板。
+
+        :param DeleteNotificationTemplateRequest request
+        :return: DeleteNotificationTemplateResponse
+        """
+
+        all_params = ['domain_id', 'delete_notification_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/{domain_id}/lts/events/notification/templates',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteNotificationTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_struct_template_async(self, request):
         """删除结构化配置
 
@@ -678,6 +871,69 @@ class LtsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteStructTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_transfer_async(self, request):
+        """删除日志转储
+
+        该接口用于删除OBS转储，DIS转储，DMS转储。
+
+        :param DeleteTransferRequest request
+        :return: DeleteTransferResponse
+        """
+        return self.delete_transfer_with_http_info(request)
+
+    def delete_transfer_with_http_info(self, request):
+        """删除日志转储
+
+        该接口用于删除OBS转储，DIS转储，DMS转储。
+
+        :param DeleteTransferRequest request
+        :return: DeleteTransferResponse
+        """
+
+        all_params = ['log_transfer_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'log_transfer_id' in local_var_params:
+            query_params.append(('log_transfer_id', local_var_params['log_transfer_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/transfers',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteTransferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1129,6 +1385,71 @@ class LtsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_log_streams_async(self, request):
+        """查询日志流信息
+
+        该接口用于查询LTS日志流信息。
+
+        :param ListLogStreamsRequest request
+        :return: ListLogStreamsResponse
+        """
+        return self.list_log_streams_with_http_info(request)
+
+    def list_log_streams_with_http_info(self, request):
+        """查询日志流信息
+
+        该接口用于查询LTS日志流信息。
+
+        :param ListLogStreamsRequest request
+        :return: ListLogStreamsResponse
+        """
+
+        all_params = ['log_group_name', 'log_stream_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'log_group_name' in local_var_params:
+            query_params.append(('log_group_name', local_var_params['log_group_name']))
+        if 'log_stream_name' in local_var_params:
+            query_params.append(('log_stream_name', local_var_params['log_stream_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/log-streams',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListLogStreamsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_logs_async(self, request):
         """查询日志
 
@@ -1190,6 +1511,134 @@ class LtsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListLogsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_notification_template_async(self, request):
+        """预览通知模板邮件格式
+
+        该接口用于预览通知模板邮件格式
+
+        :param ListNotificationTemplateRequest request
+        :return: ListNotificationTemplateResponse
+        """
+        return self.list_notification_template_with_http_info(request)
+
+    def list_notification_template_with_http_info(self, request):
+        """预览通知模板邮件格式
+
+        该接口用于预览通知模板邮件格式
+
+        :param ListNotificationTemplateRequest request
+        :return: ListNotificationTemplateResponse
+        """
+
+        all_params = ['domain_id', 'preview_notification_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/{domain_id}/lts/events/notification/templates/view',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListNotificationTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_notification_templates_async(self, request):
+        """查询通知模板
+
+        该接口用于查询通知模板。
+
+        :param ListNotificationTemplatesRequest request
+        :return: ListNotificationTemplatesResponse
+        """
+        return self.list_notification_templates_with_http_info(request)
+
+    def list_notification_templates_with_http_info(self, request):
+        """查询通知模板
+
+        该接口用于查询通知模板。
+
+        :param ListNotificationTemplatesRequest request
+        :return: ListNotificationTemplatesResponse
+        """
+
+        all_params = ['domain_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/{domain_id}/lts/events/notification/templates',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListNotificationTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1393,6 +1842,201 @@ class LtsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_transfers_async(self, request):
+        """查询日志转储
+
+        该接口用于查询OBS转储，DIS转储，DMS转储配置。
+
+        :param ListTransfersRequest request
+        :return: ListTransfersResponse
+        """
+        return self.list_transfers_with_http_info(request)
+
+    def list_transfers_with_http_info(self, request):
+        """查询日志转储
+
+        该接口用于查询OBS转储，DIS转储，DMS转储配置。
+
+        :param ListTransfersRequest request
+        :return: ListTransfersResponse
+        """
+
+        all_params = ['log_transfer_type', 'log_group_name', 'log_stream_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'log_transfer_type' in local_var_params:
+            query_params.append(('log_transfer_type', local_var_params['log_transfer_type']))
+        if 'log_group_name' in local_var_params:
+            query_params.append(('log_group_name', local_var_params['log_group_name']))
+        if 'log_stream_name' in local_var_params:
+            query_params.append(('log_stream_name', local_var_params['log_stream_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/transfers',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTransfersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def register_dms_kafka_instance_async(self, request):
+        """注册DMS kafka实例
+
+        该接口用于注册DMS kafka实例。
+
+        :param RegisterDmsKafkaInstanceRequest request
+        :return: RegisterDmsKafkaInstanceResponse
+        """
+        return self.register_dms_kafka_instance_with_http_info(request)
+
+    def register_dms_kafka_instance_with_http_info(self, request):
+        """注册DMS kafka实例
+
+        该接口用于注册DMS kafka实例。
+
+        :param RegisterDmsKafkaInstanceRequest request
+        :return: RegisterDmsKafkaInstanceResponse
+        """
+
+        all_params = ['register_dms_kafka_instance_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/dms/kafka-instance',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RegisterDmsKafkaInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_notification_template_async(self, request):
+        """查询单个通知模板
+
+        该接口用于查询单个通知模板
+
+        :param ShowNotificationTemplateRequest request
+        :return: ShowNotificationTemplateResponse
+        """
+        return self.show_notification_template_with_http_info(request)
+
+    def show_notification_template_with_http_info(self, request):
+        """查询单个通知模板
+
+        该接口用于查询单个通知模板
+
+        :param ShowNotificationTemplateRequest request
+        :return: ShowNotificationTemplateResponse
+        """
+
+        all_params = ['domain_id', 'template_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+        if 'template_name' in local_var_params:
+            path_params['template_name'] = local_var_params['template_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/{domain_id}/lts/events/notification/template/{template_name}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowNotificationTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_struct_template_async(self, request):
         """查询结构化配置
 
@@ -1586,6 +2230,71 @@ class LtsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_notification_template_async(self, request):
+        """修改通知模板
+
+        该接口用于修改通知模板,根据名称进行修改。
+
+        :param UpdateNotificationTemplateRequest request
+        :return: UpdateNotificationTemplateResponse
+        """
+        return self.update_notification_template_with_http_info(request)
+
+    def update_notification_template_with_http_info(self, request):
+        """修改通知模板
+
+        该接口用于修改通知模板,根据名称进行修改。
+
+        :param UpdateNotificationTemplateRequest request
+        :return: UpdateNotificationTemplateResponse
+        """
+
+        all_params = ['domain_id', 'update_notification_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/{domain_id}/lts/events/notification/templates',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateNotificationTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_struct_template_async(self, request):
         """修改结构化配置
 
@@ -1643,6 +2352,69 @@ class LtsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateStructTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_transfer_async(self, request):
+        """更新日志转储
+
+        该接口用于更新OBS转储，DIS转储，DMS转储。
+
+        :param UpdateTransferRequest request
+        :return: UpdateTransferResponse
+        """
+        return self.update_transfer_with_http_info(request)
+
+    def update_transfer_with_http_info(self, request):
+        """更新日志转储
+
+        该接口用于更新OBS转储，DIS转储，DMS转储。
+
+        :param UpdateTransferRequest request
+        :return: UpdateTransferResponse
+        """
+
+        all_params = ['update_transfer_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/transfers',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateTransferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1958,6 +2730,69 @@ class LtsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateAomMappingRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_alarm_rule_status_async(self, request):
+        """改变告警规则状态
+
+        改变告警规则状态
+
+        :param UpdateAlarmRuleStatusRequest request
+        :return: UpdateAlarmRuleStatusResponse
+        """
+        return self.update_alarm_rule_status_with_http_info(request)
+
+    def update_alarm_rule_status_with_http_info(self, request):
+        """改变告警规则状态
+
+        改变告警规则状态
+
+        :param UpdateAlarmRuleStatusRequest request
+        :return: UpdateAlarmRuleStatusResponse
+        """
+
+        all_params = ['change_alarm_rule_status']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/alarms/status',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateAlarmRuleStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

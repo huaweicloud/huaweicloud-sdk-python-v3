@@ -39,7 +39,8 @@ class PublicipShowResp:
         'public_ipv6_address': 'str',
         'ip_version': 'int',
         'public_border_group': 'str',
-        'allow_share_bandwidth_types': 'list[str]'
+        'allow_share_bandwidth_types': 'list[str]',
+        'alias': 'str'
     }
 
     attribute_map = {
@@ -60,10 +61,11 @@ class PublicipShowResp:
         'public_ipv6_address': 'public_ipv6_address',
         'ip_version': 'ip_version',
         'public_border_group': 'public_border_group',
-        'allow_share_bandwidth_types': 'allow_share_bandwidth_types'
+        'allow_share_bandwidth_types': 'allow_share_bandwidth_types',
+        'alias': 'alias'
     }
 
-    def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, public_border_group=None, allow_share_bandwidth_types=None):
+    def __init__(self, bandwidth_id=None, bandwidth_name=None, bandwidth_share_type=None, bandwidth_size=None, create_time=None, enterprise_project_id=None, id=None, port_id=None, private_ip_address=None, profile=None, public_ip_address=None, status=None, tenant_id=None, type=None, public_ipv6_address=None, ip_version=None, public_border_group=None, allow_share_bandwidth_types=None, alias=None):
         """PublicipShowResp - a model defined in huaweicloud sdk"""
         
         
@@ -86,6 +88,7 @@ class PublicipShowResp:
         self._ip_version = None
         self._public_border_group = None
         self._allow_share_bandwidth_types = None
+        self._alias = None
         self.discriminator = None
 
         if bandwidth_id is not None:
@@ -124,6 +127,8 @@ class PublicipShowResp:
             self.public_border_group = public_border_group
         if allow_share_bandwidth_types is not None:
             self.allow_share_bandwidth_types = allow_share_bandwidth_types
+        if alias is not None:
+            self.alias = alias
 
     @property
     def bandwidth_id(self):
@@ -518,6 +523,28 @@ class PublicipShowResp:
         :type: list[str]
         """
         self._allow_share_bandwidth_types = allow_share_bandwidth_types
+
+    @property
+    def alias(self):
+        """Gets the alias of this PublicipShowResp.
+
+        功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+
+        :return: The alias of this PublicipShowResp.
+        :rtype: str
+        """
+        return self._alias
+
+    @alias.setter
+    def alias(self, alias):
+        """Sets the alias of this PublicipShowResp.
+
+        功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
+
+        :param alias: The alias of this PublicipShowResp.
+        :type: str
+        """
+        self._alias = alias
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -64,7 +64,7 @@ class ListHostRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListHostRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ListHostRequest.
         :rtype: str
@@ -75,7 +75,7 @@ class ListHostRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListHostRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListHostRequest.
         :type: str
@@ -86,7 +86,7 @@ class ListHostRequest:
     def page(self):
         """Gets the page of this ListHostRequest.
 
-        页码
+        分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :return: The page of this ListHostRequest.
         :rtype: int
@@ -97,7 +97,7 @@ class ListHostRequest:
     def page(self, page):
         """Sets the page of this ListHostRequest.
 
-        页码
+        分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
 
         :param page: The page of this ListHostRequest.
         :type: int
@@ -108,7 +108,7 @@ class ListHostRequest:
     def pagesize(self):
         """Gets the pagesize of this ListHostRequest.
 
-        单页条数
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :return: The pagesize of this ListHostRequest.
         :rtype: int
@@ -119,7 +119,7 @@ class ListHostRequest:
     def pagesize(self, pagesize):
         """Sets the pagesize of this ListHostRequest.
 
-        单页条数
+        分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
         :param pagesize: The pagesize of this ListHostRequest.
         :type: int

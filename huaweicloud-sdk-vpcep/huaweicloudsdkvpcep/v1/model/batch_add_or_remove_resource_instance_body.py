@@ -22,7 +22,7 @@ class BatchAddOrRemoveResourceInstanceBody:
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[TagList]',
+        'tags': 'list[ResourceTag]',
         'action': 'str'
     }
 
@@ -42,8 +42,7 @@ class BatchAddOrRemoveResourceInstanceBody:
 
         if tags is not None:
             self.tags = tags
-        if action is not None:
-            self.action = action
+        self.action = action
 
     @property
     def tags(self):
@@ -52,7 +51,7 @@ class BatchAddOrRemoveResourceInstanceBody:
         标签列表，没有标签默认为空数组。
 
         :return: The tags of this BatchAddOrRemoveResourceInstanceBody.
-        :rtype: list[TagList]
+        :rtype: list[ResourceTag]
         """
         return self._tags
 
@@ -63,7 +62,7 @@ class BatchAddOrRemoveResourceInstanceBody:
         标签列表，没有标签默认为空数组。
 
         :param tags: The tags of this BatchAddOrRemoveResourceInstanceBody.
-        :type: list[TagList]
+        :type: list[ResourceTag]
         """
         self._tags = tags
 

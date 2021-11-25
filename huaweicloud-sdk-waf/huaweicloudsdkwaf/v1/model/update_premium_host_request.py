@@ -53,7 +53,7 @@ class UpdatePremiumHostRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdatePremiumHostRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this UpdatePremiumHostRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class UpdatePremiumHostRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this UpdatePremiumHostRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdatePremiumHostRequest.
         :type: str

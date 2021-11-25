@@ -39,7 +39,7 @@ class QueryAlarmResult:
         'ok_actions': 'list[str]',
         'period': 'int',
         'policy_name': 'str',
-        'resources': 'str',
+        'resources': 'list[str]',
         'state_reason': 'str',
         'state_updated_timestamp': 'str',
         'state_value': 'str',
@@ -541,7 +541,7 @@ class QueryAlarmResult:
         资源信息(已废弃)。
 
         :return: The resources of this QueryAlarmResult.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._resources
 
@@ -552,7 +552,7 @@ class QueryAlarmResult:
         资源信息(已废弃)。
 
         :param resources: The resources of this QueryAlarmResult.
-        :type: str
+        :type: list[str]
         """
         self._resources = resources
 

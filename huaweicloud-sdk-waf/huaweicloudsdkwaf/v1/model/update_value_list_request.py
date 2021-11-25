@@ -53,7 +53,7 @@ class UpdateValueListRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdateValueListRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this UpdateValueListRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class UpdateValueListRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this UpdateValueListRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateValueListRequest.
         :type: str
@@ -75,7 +75,7 @@ class UpdateValueListRequest:
     def valuelistid(self):
         """Gets the valuelistid of this UpdateValueListRequest.
 
-        引用表id
+        引用表id，通过查询引用表列表（ListValueList）接口获取
 
         :return: The valuelistid of this UpdateValueListRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class UpdateValueListRequest:
     def valuelistid(self, valuelistid):
         """Sets the valuelistid of this UpdateValueListRequest.
 
-        引用表id
+        引用表id，通过查询引用表列表（ListValueList）接口获取
 
         :param valuelistid: The valuelistid of this UpdateValueListRequest.
         :type: str

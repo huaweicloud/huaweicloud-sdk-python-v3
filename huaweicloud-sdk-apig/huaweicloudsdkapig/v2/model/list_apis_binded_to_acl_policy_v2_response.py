@@ -24,7 +24,7 @@ class ListApisBindedToAclPolicyV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'apis': 'list[AclBindApiPageApisResp]'
+        'apis': 'list[AclBindApiInfo]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class ListApisBindedToAclPolicyV2Response(SdkResponse):
         本次查询返回的API列表
 
         :return: The apis of this ListApisBindedToAclPolicyV2Response.
-        :rtype: list[AclBindApiPageApisResp]
+        :rtype: list[AclBindApiInfo]
         """
         return self._apis
 
@@ -110,7 +110,7 @@ class ListApisBindedToAclPolicyV2Response(SdkResponse):
         本次查询返回的API列表
 
         :param apis: The apis of this ListApisBindedToAclPolicyV2Response.
-        :type: list[AclBindApiPageApisResp]
+        :type: list[AclBindApiInfo]
         """
         self._apis = apis
 

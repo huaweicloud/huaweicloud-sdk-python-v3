@@ -23,42 +23,42 @@ class ListEnvironmentsV2Request:
 
     openapi_types = {
         'instance_id': 'str',
-        'name': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'name': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
-        'name': 'name',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'name': 'name'
     }
 
-    def __init__(self, instance_id=None, name=None, offset=None, limit=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, name=None):
         """ListEnvironmentsV2Request - a model defined in huaweicloud sdk"""
         
         
 
         self._instance_id = None
-        self._name = None
         self._offset = None
         self._limit = None
+        self._name = None
         self.discriminator = None
 
         self.instance_id = instance_id
-        if name is not None:
-            self.name = name
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if name is not None:
+            self.name = name
 
     @property
     def instance_id(self):
         """Gets the instance_id of this ListEnvironmentsV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this ListEnvironmentsV2Request.
         :rtype: str
@@ -69,34 +69,12 @@ class ListEnvironmentsV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListEnvironmentsV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this ListEnvironmentsV2Request.
         :type: str
         """
         self._instance_id = instance_id
-
-    @property
-    def name(self):
-        """Gets the name of this ListEnvironmentsV2Request.
-
-        环境名称
-
-        :return: The name of this ListEnvironmentsV2Request.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListEnvironmentsV2Request.
-
-        环境名称
-
-        :param name: The name of this ListEnvironmentsV2Request.
-        :type: str
-        """
-        self._name = name
 
     @property
     def offset(self):
@@ -141,6 +119,28 @@ class ListEnvironmentsV2Request:
         :type: int
         """
         self._limit = limit
+
+    @property
+    def name(self):
+        """Gets the name of this ListEnvironmentsV2Request.
+
+        环境名称
+
+        :return: The name of this ListEnvironmentsV2Request.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListEnvironmentsV2Request.
+
+        环境名称
+
+        :param name: The name of this ListEnvironmentsV2Request.
+        :type: str
+        """
+        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

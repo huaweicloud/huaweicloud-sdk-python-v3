@@ -49,7 +49,7 @@ class ApplyCertificateToHostRequestBody:
     def cloud_host_ids(self):
         """Gets the cloud_host_ids of this ApplyCertificateToHostRequestBody.
 
-        云模式HTTPS域名ID
+        云模式HTTPS域名id，通过查询云模式防护域名列表（ListHost）接口获取
 
         :return: The cloud_host_ids of this ApplyCertificateToHostRequestBody.
         :rtype: list[str]
@@ -60,7 +60,7 @@ class ApplyCertificateToHostRequestBody:
     def cloud_host_ids(self, cloud_host_ids):
         """Sets the cloud_host_ids of this ApplyCertificateToHostRequestBody.
 
-        云模式HTTPS域名ID
+        云模式HTTPS域名id，通过查询云模式防护域名列表（ListHost）接口获取
 
         :param cloud_host_ids: The cloud_host_ids of this ApplyCertificateToHostRequestBody.
         :type: list[str]
@@ -71,7 +71,7 @@ class ApplyCertificateToHostRequestBody:
     def premium_host_ids(self):
         """Gets the premium_host_ids of this ApplyCertificateToHostRequestBody.
 
-        独享模式HTTPS域名ID
+        独享模式HTTPS域名id，通过独享模式域名列表（ListPremiumHost）接口获取
 
         :return: The premium_host_ids of this ApplyCertificateToHostRequestBody.
         :rtype: list[str]
@@ -82,7 +82,7 @@ class ApplyCertificateToHostRequestBody:
     def premium_host_ids(self, premium_host_ids):
         """Sets the premium_host_ids of this ApplyCertificateToHostRequestBody.
 
-        独享模式HTTPS域名ID
+        独享模式HTTPS域名id，通过独享模式域名列表（ListPremiumHost）接口获取
 
         :param premium_host_ids: The premium_host_ids of this ApplyCertificateToHostRequestBody.
         :type: list[str]

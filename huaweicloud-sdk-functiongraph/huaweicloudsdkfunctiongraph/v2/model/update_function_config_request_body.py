@@ -85,8 +85,7 @@ class UpdateFunctionConfigRequestBody:
         self.func_name = func_name
         self.runtime = runtime
         self.timeout = timeout
-        if handler is not None:
-            self.handler = handler
+        self.handler = handler
         self.memory_size = memory_size
         if user_data is not None:
             self.user_data = user_data

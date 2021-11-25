@@ -43,7 +43,7 @@ class ListClusterTagsRequest:
     def cluster_id(self):
         """Gets the cluster_id of this ListClusterTagsRequest.
 
-        集群ID。获取方法，请参见[获取集群ID](mrs_02_9001.xml)。
+        集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
         :return: The cluster_id of this ListClusterTagsRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class ListClusterTagsRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this ListClusterTagsRequest.
 
-        集群ID。获取方法，请参见[获取集群ID](mrs_02_9001.xml)。
+        集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
         :param cluster_id: The cluster_id of this ListClusterTagsRequest.
         :type: str

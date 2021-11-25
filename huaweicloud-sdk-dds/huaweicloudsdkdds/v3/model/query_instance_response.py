@@ -46,7 +46,9 @@ class QueryInstanceResponse:
         'enterprise_project_id': 'str',
         'time_zone': 'str',
         'dss_pool_id': 'str',
-        'actions': 'list[str]'
+        'actions': 'list[str]',
+        'order_id': 'str',
+        'tags': 'list[TagResponse]'
     }
 
     attribute_map = {
@@ -74,10 +76,12 @@ class QueryInstanceResponse:
         'enterprise_project_id': 'enterprise_project_id',
         'time_zone': 'time_zone',
         'dss_pool_id': 'dss_pool_id',
-        'actions': 'actions'
+        'actions': 'actions',
+        'order_id': 'order_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, remark=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, ssl=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, disk_encryption_id=None, enterprise_project_id=None, time_zone=None, dss_pool_id=None, actions=None):
+    def __init__(self, id=None, name=None, remark=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, ssl=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, disk_encryption_id=None, enterprise_project_id=None, time_zone=None, dss_pool_id=None, actions=None, order_id=None, tags=None):
         """QueryInstanceResponse - a model defined in huaweicloud sdk"""
         
         
@@ -107,6 +111,8 @@ class QueryInstanceResponse:
         self._time_zone = None
         self._dss_pool_id = None
         self._actions = None
+        self._order_id = None
+        self._tags = None
         self.discriminator = None
 
         self.id = id
@@ -136,6 +142,9 @@ class QueryInstanceResponse:
         if dss_pool_id is not None:
             self.dss_pool_id = dss_pool_id
         self.actions = actions
+        if order_id is not None:
+            self.order_id = order_id
+        self.tags = tags
 
     @property
     def id(self):
@@ -682,6 +691,50 @@ class QueryInstanceResponse:
         :type: list[str]
         """
         self._actions = actions
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this QueryInstanceResponse.
+
+        订单ID，仅包周期场景返回。
+
+        :return: The order_id of this QueryInstanceResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this QueryInstanceResponse.
+
+        订单ID，仅包周期场景返回。
+
+        :param order_id: The order_id of this QueryInstanceResponse.
+        :type: str
+        """
+        self._order_id = order_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this QueryInstanceResponse.
+
+        标签列表。
+
+        :return: The tags of this QueryInstanceResponse.
+        :rtype: list[TagResponse]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this QueryInstanceResponse.
+
+        标签列表。
+
+        :param tags: The tags of this QueryInstanceResponse.
+        :type: list[TagResponse]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

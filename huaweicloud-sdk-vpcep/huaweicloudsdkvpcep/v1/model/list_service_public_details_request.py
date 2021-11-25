@@ -69,7 +69,7 @@ class ListServicePublicDetailsRequest:
     def limit(self):
         """Gets the limit of this ListServicePublicDetailsRequest.
 
-        查询返回公共的终端节点服务数 量限制，即每页返回的个数。 取值范围：0~1000，取值一般为 10，20或者50，默认为10。
+        查询返回公共的终端节点服务数量限制，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
         :return: The limit of this ListServicePublicDetailsRequest.
         :rtype: int
@@ -80,7 +80,7 @@ class ListServicePublicDetailsRequest:
     def limit(self, limit):
         """Sets the limit of this ListServicePublicDetailsRequest.
 
-        查询返回公共的终端节点服务数 量限制，即每页返回的个数。 取值范围：0~1000，取值一般为 10，20或者50，默认为10。
+        查询返回公共的终端节点服务数量限制，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
         :param limit: The limit of this ListServicePublicDetailsRequest.
         :type: int
@@ -91,7 +91,7 @@ class ListServicePublicDetailsRequest:
     def offset(self):
         """Gets the offset of this ListServicePublicDetailsRequest.
 
-        偏移量。 偏移量为一个大于0小于终端节点 服务总个数的整数，表示从偏移 量后面的终端节点服务开始查 询。
+        偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数，表示从偏移量后面的终端节点服务开始查询。
 
         :return: The offset of this ListServicePublicDetailsRequest.
         :rtype: int
@@ -102,7 +102,7 @@ class ListServicePublicDetailsRequest:
     def offset(self, offset):
         """Sets the offset of this ListServicePublicDetailsRequest.
 
-        偏移量。 偏移量为一个大于0小于终端节点 服务总个数的整数，表示从偏移 量后面的终端节点服务开始查 询。
+        偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数，表示从偏移量后面的终端节点服务开始查询。
 
         :param offset: The offset of this ListServicePublicDetailsRequest.
         :type: int
@@ -113,7 +113,7 @@ class ListServicePublicDetailsRequest:
     def endpoint_service_name(self):
         """Gets the endpoint_service_name of this ListServicePublicDetailsRequest.
 
-        公共终端节点服务的名称，支持 大小写以及模糊匹配。
+        公共终端节点服务的名称，支持大小写以及模糊匹配。
 
         :return: The endpoint_service_name of this ListServicePublicDetailsRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class ListServicePublicDetailsRequest:
     def endpoint_service_name(self, endpoint_service_name):
         """Sets the endpoint_service_name of this ListServicePublicDetailsRequest.
 
-        公共终端节点服务的名称，支持 大小写以及模糊匹配。
+        公共终端节点服务的名称，支持大小写以及模糊匹配。
 
         :param endpoint_service_name: The endpoint_service_name of this ListServicePublicDetailsRequest.
         :type: str
@@ -135,7 +135,7 @@ class ListServicePublicDetailsRequest:
     def id(self):
         """Gets the id of this ListServicePublicDetailsRequest.
 
-        公共终端节点服务的ID，唯一标 识。
+        公共终端节点服务的ID，唯一标识。
 
         :return: The id of this ListServicePublicDetailsRequest.
         :rtype: str
@@ -146,7 +146,7 @@ class ListServicePublicDetailsRequest:
     def id(self, id):
         """Sets the id of this ListServicePublicDetailsRequest.
 
-        公共终端节点服务的ID，唯一标 识。
+        公共终端节点服务的ID，唯一标识。
 
         :param id: The id of this ListServicePublicDetailsRequest.
         :type: str
@@ -157,7 +157,7 @@ class ListServicePublicDetailsRequest:
     def sort_key(self):
         """Gets the sort_key of this ListServicePublicDetailsRequest.
 
-        查询结果中终端节点服务列表的 排序字段，取值为： ● create_at：终端节点服务的创 建时间 ● update_at：终端节点服务的 更新时间 默认值为create_at。
+        查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
 
         :return: The sort_key of this ListServicePublicDetailsRequest.
         :rtype: str
@@ -168,7 +168,7 @@ class ListServicePublicDetailsRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListServicePublicDetailsRequest.
 
-        查询结果中终端节点服务列表的 排序字段，取值为： ● create_at：终端节点服务的创 建时间 ● update_at：终端节点服务的 更新时间 默认值为create_at。
+        查询结果中终端节点服务列表的排序字段，取值为： ● create_at：终端节点服务的创建时间 ● update_at：终端节点服务的更新时间 默认值为create_at。
 
         :param sort_key: The sort_key of this ListServicePublicDetailsRequest.
         :type: str
@@ -179,7 +179,7 @@ class ListServicePublicDetailsRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListServicePublicDetailsRequest.
 
-        查询结果中终端节点服务列表的 排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        查询结果中终端节点服务列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
 
         :return: The sort_dir of this ListServicePublicDetailsRequest.
         :rtype: str
@@ -190,7 +190,7 @@ class ListServicePublicDetailsRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListServicePublicDetailsRequest.
 
-        查询结果中终端节点服务列表的 排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        查询结果中终端节点服务列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
 
         :param sort_dir: The sort_dir of this ListServicePublicDetailsRequest.
         :type: str

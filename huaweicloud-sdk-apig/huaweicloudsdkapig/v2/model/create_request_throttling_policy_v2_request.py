@@ -23,7 +23,7 @@ class CreateRequestThrottlingPolicyV2Request:
 
     openapi_types = {
         'instance_id': 'str',
-        'body': 'ThrottleReq'
+        'body': 'ThrottleBaseInfo'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class CreateRequestThrottlingPolicyV2Request:
     def instance_id(self):
         """Gets the instance_id of this CreateRequestThrottlingPolicyV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this CreateRequestThrottlingPolicyV2Request.
         :rtype: str
@@ -59,7 +59,7 @@ class CreateRequestThrottlingPolicyV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreateRequestThrottlingPolicyV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this CreateRequestThrottlingPolicyV2Request.
         :type: str
@@ -72,7 +72,7 @@ class CreateRequestThrottlingPolicyV2Request:
 
 
         :return: The body of this CreateRequestThrottlingPolicyV2Request.
-        :rtype: ThrottleReq
+        :rtype: ThrottleBaseInfo
         """
         return self._body
 
@@ -82,7 +82,7 @@ class CreateRequestThrottlingPolicyV2Request:
 
 
         :param body: The body of this CreateRequestThrottlingPolicyV2Request.
-        :type: ThrottleReq
+        :type: ThrottleBaseInfo
         """
         self._body = body
 

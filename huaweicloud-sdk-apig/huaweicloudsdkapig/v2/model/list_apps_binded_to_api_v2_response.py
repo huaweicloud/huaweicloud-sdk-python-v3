@@ -24,7 +24,7 @@ class ListAppsBindedToApiV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'auths': 'list[AppAuthBindedApiResp]'
+        'auths': 'list[ApiAuthInfo]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class ListAppsBindedToApiV2Response(SdkResponse):
         本次返回的API列表
 
         :return: The auths of this ListAppsBindedToApiV2Response.
-        :rtype: list[AppAuthBindedApiResp]
+        :rtype: list[ApiAuthInfo]
         """
         return self._auths
 
@@ -110,7 +110,7 @@ class ListAppsBindedToApiV2Response(SdkResponse):
         本次返回的API列表
 
         :param auths: The auths of this ListAppsBindedToApiV2Response.
-        :type: list[AppAuthBindedApiResp]
+        :type: list[ApiAuthInfo]
         """
         self._auths = auths
 

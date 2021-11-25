@@ -31,12 +31,14 @@ class EndpointResp:
         'endpoint_service_id': 'str',
         'enable_dns': 'bool',
         'dns_names': 'list[str]',
-        'subnet_id': 'str',
+        'ip': 'str',
         'vpc_id': 'str',
-        'created_at': 'datetime',
-        'updated_at': 'datetime',
+        'subnet_id': 'str',
+        'created_at': 'str',
+        'updated_at': 'str',
         'project_id': 'str',
         'tags': 'list[TagList]',
+        'error': 'list[QueryError]',
         'whitelist': 'list[str]',
         'enable_whitelist': 'bool',
         'routetables': 'list[str]'
@@ -52,18 +54,20 @@ class EndpointResp:
         'endpoint_service_id': 'endpoint_service_id',
         'enable_dns': 'enable_dns',
         'dns_names': 'dns_names',
-        'subnet_id': 'subnet_id',
+        'ip': 'ip',
         'vpc_id': 'vpc_id',
+        'subnet_id': 'subnet_id',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'project_id': 'project_id',
         'tags': 'tags',
+        'error': 'error',
         'whitelist': 'whitelist',
         'enable_whitelist': 'enable_whitelist',
         'routetables': 'routetables'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, subnet_id=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, whitelist=None, enable_whitelist=None, routetables=None):
+    def __init__(self, id=None, service_type=None, status=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None):
         """EndpointResp - a model defined in huaweicloud sdk"""
         
         
@@ -77,12 +81,14 @@ class EndpointResp:
         self._endpoint_service_id = None
         self._enable_dns = None
         self._dns_names = None
-        self._subnet_id = None
+        self._ip = None
         self._vpc_id = None
+        self._subnet_id = None
         self._created_at = None
         self._updated_at = None
         self._project_id = None
         self._tags = None
+        self._error = None
         self._whitelist = None
         self._enable_whitelist = None
         self._routetables = None
@@ -106,10 +112,12 @@ class EndpointResp:
             self.enable_dns = enable_dns
         if dns_names is not None:
             self.dns_names = dns_names
-        if subnet_id is not None:
-            self.subnet_id = subnet_id
+        if ip is not None:
+            self.ip = ip
         if vpc_id is not None:
             self.vpc_id = vpc_id
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
@@ -118,6 +126,8 @@ class EndpointResp:
             self.project_id = project_id
         if tags is not None:
             self.tags = tags
+        if error is not None:
+            self.error = error
         if whitelist is not None:
             self.whitelist = whitelist
         if enable_whitelist is not None:
@@ -324,26 +334,26 @@ class EndpointResp:
         self._dns_names = dns_names
 
     @property
-    def subnet_id(self):
-        """Gets the subnet_id of this EndpointResp.
+    def ip(self):
+        """Gets the ip of this EndpointResp.
 
-        vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
+        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数：  当查询连接interface类型终端节点服务的终端节点时。 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
 
-        :return: The subnet_id of this EndpointResp.
+        :return: The ip of this EndpointResp.
         :rtype: str
         """
-        return self._subnet_id
+        return self._ip
 
-    @subnet_id.setter
-    def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this EndpointResp.
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this EndpointResp.
 
-        vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
+        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数：  当查询连接interface类型终端节点服务的终端节点时。 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
 
-        :param subnet_id: The subnet_id of this EndpointResp.
+        :param ip: The ip of this EndpointResp.
         :type: str
         """
-        self._subnet_id = subnet_id
+        self._ip = ip
 
     @property
     def vpc_id(self):
@@ -368,13 +378,35 @@ class EndpointResp:
         self._vpc_id = vpc_id
 
     @property
+    def subnet_id(self):
+        """Gets the subnet_id of this EndpointResp.
+
+        vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
+
+        :return: The subnet_id of this EndpointResp.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        """Sets the subnet_id of this EndpointResp.
+
+        vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
+
+        :param subnet_id: The subnet_id of this EndpointResp.
+        :type: str
+        """
+        self._subnet_id = subnet_id
+
+    @property
     def created_at(self):
         """Gets the created_at of this EndpointResp.
 
         终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
 
         :return: The created_at of this EndpointResp.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -385,7 +417,7 @@ class EndpointResp:
         终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
 
         :param created_at: The created_at of this EndpointResp.
-        :type: datetime
+        :type: str
         """
         self._created_at = created_at
 
@@ -396,7 +428,7 @@ class EndpointResp:
         终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
 
         :return: The updated_at of this EndpointResp.
-        :rtype: datetime
+        :rtype: str
         """
         return self._updated_at
 
@@ -407,7 +439,7 @@ class EndpointResp:
         终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this EndpointResp.
-        :type: datetime
+        :type: str
         """
         self._updated_at = updated_at
 
@@ -454,6 +486,28 @@ class EndpointResp:
         :type: list[TagList]
         """
         self._tags = tags
+
+    @property
+    def error(self):
+        """Gets the error of this EndpointResp.
+
+        错误信息。  当终端节点状态异常，即“status”的值为“failed”时，会返回该字段。
+
+        :return: The error of this EndpointResp.
+        :rtype: list[QueryError]
+        """
+        return self._error
+
+    @error.setter
+    def error(self, error):
+        """Sets the error of this EndpointResp.
+
+        错误信息。  当终端节点状态异常，即“status”的值为“failed”时，会返回该字段。
+
+        :param error: The error of this EndpointResp.
+        :type: list[QueryError]
+        """
+        self._error = error
 
     @property
     def whitelist(self):

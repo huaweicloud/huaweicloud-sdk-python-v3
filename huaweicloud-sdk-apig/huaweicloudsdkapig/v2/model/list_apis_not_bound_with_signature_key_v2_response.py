@@ -24,7 +24,7 @@ class ListApisNotBoundWithSignatureKeyV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'apis': 'list[SignUnbindingApiResp]'
+        'apis': 'list[ApiForSign]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class ListApisNotBoundWithSignatureKeyV2Response(SdkResponse):
         本次查询返回的API列表
 
         :return: The apis of this ListApisNotBoundWithSignatureKeyV2Response.
-        :rtype: list[SignUnbindingApiResp]
+        :rtype: list[ApiForSign]
         """
         return self._apis
 
@@ -110,7 +110,7 @@ class ListApisNotBoundWithSignatureKeyV2Response(SdkResponse):
         本次查询返回的API列表
 
         :param apis: The apis of this ListApisNotBoundWithSignatureKeyV2Response.
-        :type: list[SignUnbindingApiResp]
+        :type: list[ApiForSign]
         """
         self._apis = apis
 

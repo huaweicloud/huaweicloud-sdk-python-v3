@@ -139,7 +139,7 @@ class ListHistoryStreamsRequest:
     def start_time(self):
         """Gets the start_time of this ListHistoryStreamsRequest.
 
-        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认查询7天数据。 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认查询1天数据。 
 
         :return: The start_time of this ListHistoryStreamsRequest.
         :rtype: str
@@ -150,7 +150,7 @@ class ListHistoryStreamsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListHistoryStreamsRequest.
 
-        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认查询7天数据。 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认查询1天数据。 
 
         :param start_time: The start_time of this ListHistoryStreamsRequest.
         :type: str

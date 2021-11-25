@@ -47,7 +47,7 @@ class DeleteEnvironmentVariableV2Request:
     def instance_id(self):
         """Gets the instance_id of this DeleteEnvironmentVariableV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this DeleteEnvironmentVariableV2Request.
         :rtype: str
@@ -58,7 +58,7 @@ class DeleteEnvironmentVariableV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteEnvironmentVariableV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this DeleteEnvironmentVariableV2Request.
         :type: str
@@ -69,7 +69,7 @@ class DeleteEnvironmentVariableV2Request:
     def env_variable_id(self):
         """Gets the env_variable_id of this DeleteEnvironmentVariableV2Request.
 
-        环境变量的ID
+        环境变量的编号
 
         :return: The env_variable_id of this DeleteEnvironmentVariableV2Request.
         :rtype: str
@@ -80,7 +80,7 @@ class DeleteEnvironmentVariableV2Request:
     def env_variable_id(self, env_variable_id):
         """Sets the env_variable_id of this DeleteEnvironmentVariableV2Request.
 
-        环境变量的ID
+        环境变量的编号
 
         :param env_variable_id: The env_variable_id of this DeleteEnvironmentVariableV2Request.
         :type: str

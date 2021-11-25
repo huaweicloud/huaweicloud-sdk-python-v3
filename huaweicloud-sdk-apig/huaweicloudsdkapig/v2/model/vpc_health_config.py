@@ -31,6 +31,7 @@ class VpcHealthConfig:
         'time_interval': 'int',
         'http_code': 'str',
         'enable_client_ssl': 'bool',
+        'status': 'int',
         'timeout': 'int'
     }
 
@@ -44,10 +45,11 @@ class VpcHealthConfig:
         'time_interval': 'time_interval',
         'http_code': 'http_code',
         'enable_client_ssl': 'enable_client_ssl',
+        'status': 'status',
         'timeout': 'timeout'
     }
 
-    def __init__(self, protocol=None, path=None, method=None, port=None, threshold_normal=None, threshold_abnormal=None, time_interval=None, http_code=None, enable_client_ssl=None, timeout=None):
+    def __init__(self, protocol=None, path=None, method=None, port=None, threshold_normal=None, threshold_abnormal=None, time_interval=None, http_code=None, enable_client_ssl=None, status=None, timeout=None):
         """VpcHealthConfig - a model defined in huaweicloud sdk"""
         
         
@@ -61,6 +63,7 @@ class VpcHealthConfig:
         self._time_interval = None
         self._http_code = None
         self._enable_client_ssl = None
+        self._status = None
         self._timeout = None
         self.discriminator = None
 
@@ -78,6 +81,8 @@ class VpcHealthConfig:
             self.http_code = http_code
         if enable_client_ssl is not None:
             self.enable_client_ssl = enable_client_ssl
+        if status is not None:
+            self.status = status
         if timeout is not None:
             self.timeout = timeout
 
@@ -278,6 +283,28 @@ class VpcHealthConfig:
         :type: bool
         """
         self._enable_client_ssl = enable_client_ssl
+
+    @property
+    def status(self):
+        """Gets the status of this VpcHealthConfig.
+
+        健康检查状态   - 1：可用   - 2：不可用
+
+        :return: The status of this VpcHealthConfig.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this VpcHealthConfig.
+
+        健康检查状态   - 1：可用   - 2：不可用
+
+        :param status: The status of this VpcHealthConfig.
+        :type: int
+        """
+        self._status = status
 
     @property
     def timeout(self):

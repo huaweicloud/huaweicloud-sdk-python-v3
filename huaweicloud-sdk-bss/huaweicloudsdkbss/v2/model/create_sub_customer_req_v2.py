@@ -128,7 +128,7 @@ class CreateSubCustomerReqV2:
     def permission_ids(self):
         """Gets the permission_ids of this CreateSubCustomerReqV2.
 
-        申请的权限列表。 支持的权限项参见表2。
+        申请的权限列表。 支持的权限项：READ_FINANCE_INFO；READ_CONSUME_BILL；SUBSTITUTE-OPEN-INVOICE；TAKE-OVER-OPEN-INVOICE；SHARE-CREDIT-TO-SUB；SHARE-BIZ-DISCOUNT-TO-SUB。
 
         :return: The permission_ids of this CreateSubCustomerReqV2.
         :rtype: list[str]
@@ -139,7 +139,7 @@ class CreateSubCustomerReqV2:
     def permission_ids(self, permission_ids):
         """Sets the permission_ids of this CreateSubCustomerReqV2.
 
-        申请的权限列表。 支持的权限项参见表2。
+        申请的权限列表。 支持的权限项：READ_FINANCE_INFO；READ_CONSUME_BILL；SUBSTITUTE-OPEN-INVOICE；TAKE-OVER-OPEN-INVOICE；SHARE-CREDIT-TO-SUB；SHARE-BIZ-DISCOUNT-TO-SUB。
 
         :param permission_ids: The permission_ids of this CreateSubCustomerReqV2.
         :type: list[str]

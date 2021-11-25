@@ -24,7 +24,7 @@ class UpdateEnvironmentV2Request:
     openapi_types = {
         'instance_id': 'str',
         'env_id': 'str',
-        'body': 'EnvReq'
+        'body': 'EnvCreate'
     }
 
     attribute_map = {
@@ -52,7 +52,7 @@ class UpdateEnvironmentV2Request:
     def instance_id(self):
         """Gets the instance_id of this UpdateEnvironmentV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this UpdateEnvironmentV2Request.
         :rtype: str
@@ -63,7 +63,7 @@ class UpdateEnvironmentV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this UpdateEnvironmentV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this UpdateEnvironmentV2Request.
         :type: str
@@ -74,7 +74,7 @@ class UpdateEnvironmentV2Request:
     def env_id(self):
         """Gets the env_id of this UpdateEnvironmentV2Request.
 
-        环境的ID，可通过查询环境信息获取该ID
+        环境的ID
 
         :return: The env_id of this UpdateEnvironmentV2Request.
         :rtype: str
@@ -85,7 +85,7 @@ class UpdateEnvironmentV2Request:
     def env_id(self, env_id):
         """Sets the env_id of this UpdateEnvironmentV2Request.
 
-        环境的ID，可通过查询环境信息获取该ID
+        环境的ID
 
         :param env_id: The env_id of this UpdateEnvironmentV2Request.
         :type: str
@@ -98,7 +98,7 @@ class UpdateEnvironmentV2Request:
 
 
         :return: The body of this UpdateEnvironmentV2Request.
-        :rtype: EnvReq
+        :rtype: EnvCreate
         """
         return self._body
 
@@ -108,7 +108,7 @@ class UpdateEnvironmentV2Request:
 
 
         :param body: The body of this UpdateEnvironmentV2Request.
-        :type: EnvReq
+        :type: EnvCreate
         """
         self._body = body
 

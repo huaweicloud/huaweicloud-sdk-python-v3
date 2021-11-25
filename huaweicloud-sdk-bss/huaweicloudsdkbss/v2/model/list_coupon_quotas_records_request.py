@@ -101,7 +101,7 @@ class ListCouponQuotasRecordsRequest:
     def quota_id(self):
         """Gets the quota_id of this ListCouponQuotasRecordsRequest.
 
-        精英服务商的代金券额度ID。即华为云伙伴能力中心给精英服务商发放代金券额度时，产生的精英服务商的代金券额度ID，或者从精英服务商回收代金券额度时，精英服务商的代金券额度ID。
+        精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。即华为云伙伴能力中心给精英服务商发放代金券额度时，产生的精英服务商的代金券额度ID，或者从精英服务商回收代金券额度时，精英服务商的代金券额度ID。
 
         :return: The quota_id of this ListCouponQuotasRecordsRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListCouponQuotasRecordsRequest:
     def quota_id(self, quota_id):
         """Sets the quota_id of this ListCouponQuotasRecordsRequest.
 
-        精英服务商的代金券额度ID。即华为云伙伴能力中心给精英服务商发放代金券额度时，产生的精英服务商的代金券额度ID，或者从精英服务商回收代金券额度时，精英服务商的代金券额度ID。
+        精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。即华为云伙伴能力中心给精英服务商发放代金券额度时，产生的精英服务商的代金券额度ID，或者从精英服务商回收代金券额度时，精英服务商的代金券额度ID。
 
         :param quota_id: The quota_id of this ListCouponQuotasRecordsRequest.
         :type: str

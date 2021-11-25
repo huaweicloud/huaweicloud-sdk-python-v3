@@ -54,7 +54,7 @@ class ResourceInstance:
     def resource_id(self):
         """Gets the resource_id of this ResourceInstance.
 
-        资源ID，Endpoint Service ID或 Endpoint ID。
+        资源ID，Endpoint Service ID或Endpoint ID。
 
         :return: The resource_id of this ResourceInstance.
         :rtype: str
@@ -65,7 +65,7 @@ class ResourceInstance:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ResourceInstance.
 
-        资源ID，Endpoint Service ID或 Endpoint ID。
+        资源ID，Endpoint Service ID或Endpoint ID。
 
         :param resource_id: The resource_id of this ResourceInstance.
         :type: str
@@ -98,7 +98,7 @@ class ResourceInstance:
     def resource_name(self):
         """Gets the resource_name of this ResourceInstance.
 
-        资源名称，资源没有名称时，返回 ID。
+        资源名称，资源没有名称时，返回ID。
 
         :return: The resource_name of this ResourceInstance.
         :rtype: str
@@ -109,7 +109,7 @@ class ResourceInstance:
     def resource_name(self, resource_name):
         """Sets the resource_name of this ResourceInstance.
 
-        资源名称，资源没有名称时，返回 ID。
+        资源名称，资源没有名称时，返回ID。
 
         :param resource_name: The resource_name of this ResourceInstance.
         :type: str

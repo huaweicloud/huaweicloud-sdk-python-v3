@@ -24,7 +24,7 @@ class ListApiGroupsV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'groups': 'list[ApiGroupDetailResp]'
+        'groups': 'list[ApiGroupInfoPage]'
     }
 
     attribute_map = {
@@ -99,7 +99,7 @@ class ListApiGroupsV2Response(SdkResponse):
         分组列表
 
         :return: The groups of this ListApiGroupsV2Response.
-        :rtype: list[ApiGroupDetailResp]
+        :rtype: list[ApiGroupInfoPage]
         """
         return self._groups
 
@@ -110,7 +110,7 @@ class ListApiGroupsV2Response(SdkResponse):
         分组列表
 
         :param groups: The groups of this ListApiGroupsV2Response.
-        :type: list[ApiGroupDetailResp]
+        :type: list[ApiGroupInfoPage]
         """
         self._groups = groups
 

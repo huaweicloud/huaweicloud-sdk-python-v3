@@ -47,7 +47,7 @@ class DeleteCustomAuthorizerV2Request:
     def instance_id(self):
         """Gets the instance_id of this DeleteCustomAuthorizerV2Request.
 
-        实例编号
+        实例ID
 
         :return: The instance_id of this DeleteCustomAuthorizerV2Request.
         :rtype: str
@@ -58,7 +58,7 @@ class DeleteCustomAuthorizerV2Request:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteCustomAuthorizerV2Request.
 
-        实例编号
+        实例ID
 
         :param instance_id: The instance_id of this DeleteCustomAuthorizerV2Request.
         :type: str
@@ -69,7 +69,7 @@ class DeleteCustomAuthorizerV2Request:
     def authorizer_id(self):
         """Gets the authorizer_id of this DeleteCustomAuthorizerV2Request.
 
-        自定义认证的ID
+        自定义认证的编号
 
         :return: The authorizer_id of this DeleteCustomAuthorizerV2Request.
         :rtype: str
@@ -80,7 +80,7 @@ class DeleteCustomAuthorizerV2Request:
     def authorizer_id(self, authorizer_id):
         """Sets the authorizer_id of this DeleteCustomAuthorizerV2Request.
 
-        自定义认证的ID
+        自定义认证的编号
 
         :param authorizer_id: The authorizer_id of this DeleteCustomAuthorizerV2Request.
         :type: str

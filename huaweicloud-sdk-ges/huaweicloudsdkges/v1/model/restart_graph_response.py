@@ -98,7 +98,7 @@ class RestartGraphResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this RestartGraphResponse.
 
-        启动图任务ID。请求失败时字段为空。 >可以查询jobId查看任务执行状态、获取返回结果
+        强制重启任务ID。请求失败时字段为空。 >可以查询jobId查看任务执行状态、获取返回结果
 
         :return: The job_id of this RestartGraphResponse.
         :rtype: str
@@ -109,7 +109,7 @@ class RestartGraphResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this RestartGraphResponse.
 
-        启动图任务ID。请求失败时字段为空。 >可以查询jobId查看任务执行状态、获取返回结果
+        强制重启任务ID。请求失败时字段为空。 >可以查询jobId查看任务执行状态、获取返回结果
 
         :param job_id: The job_id of this RestartGraphResponse.
         :type: str

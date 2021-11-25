@@ -31,7 +31,7 @@ class UpdatePremiumHostResponse(SdkResponse):
         'protocol': 'str',
         'server': 'list[PremiumWafServer]',
         'certificateid': 'str',
-        'certificatename': 'str',
+        'certificatename': 'object',
         'tls': 'str',
         'cipher': 'str',
         'proxy': 'bool',
@@ -176,7 +176,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def policyid(self):
         """Gets the policyid of this UpdatePremiumHostResponse.
 
-        策略id
+        防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
         :return: The policyid of this UpdatePremiumHostResponse.
         :rtype: str
@@ -187,7 +187,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def policyid(self, policyid):
         """Sets the policyid of this UpdatePremiumHostResponse.
 
-        策略id
+        防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
         :param policyid: The policyid of this UpdatePremiumHostResponse.
         :type: str
@@ -330,7 +330,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def certificateid(self):
         """Gets the certificateid of this UpdatePremiumHostResponse.
 
-        返回的证书id
+        证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :return: The certificateid of this UpdatePremiumHostResponse.
         :rtype: str
@@ -341,7 +341,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def certificateid(self, certificateid):
         """Sets the certificateid of this UpdatePremiumHostResponse.
 
-        返回的证书id
+        证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificateid: The certificateid of this UpdatePremiumHostResponse.
         :type: str
@@ -352,10 +352,10 @@ class UpdatePremiumHostResponse(SdkResponse):
     def certificatename(self):
         """Gets the certificatename of this UpdatePremiumHostResponse.
 
-        证书名称
+        证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :return: The certificatename of this UpdatePremiumHostResponse.
-        :rtype: str
+        :rtype: object
         """
         return self._certificatename
 
@@ -363,10 +363,10 @@ class UpdatePremiumHostResponse(SdkResponse):
     def certificatename(self, certificatename):
         """Sets the certificatename of this UpdatePremiumHostResponse.
 
-        证书名称
+        证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificatename: The certificatename of this UpdatePremiumHostResponse.
-        :type: str
+        :type: object
         """
         self._certificatename = certificatename
 
@@ -374,7 +374,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def tls(self):
         """Gets the tls of this UpdatePremiumHostResponse.
 
-        支持最低的TLS版本
+        支持最低的TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本
 
         :return: The tls of this UpdatePremiumHostResponse.
         :rtype: str
@@ -385,7 +385,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def tls(self, tls):
         """Sets the tls of this UpdatePremiumHostResponse.
 
-        支持最低的TLS版本
+        支持最低的TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本
 
         :param tls: The tls of this UpdatePremiumHostResponse.
         :type: str
@@ -396,7 +396,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def cipher(self):
         """Gets the cipher of this UpdatePremiumHostResponse.
 
-        加密套件代码
+        加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
         :return: The cipher of this UpdatePremiumHostResponse.
         :rtype: str
@@ -407,7 +407,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def cipher(self, cipher):
         """Sets the cipher of this UpdatePremiumHostResponse.
 
-        加密套件代码
+        加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
         :param cipher: The cipher of this UpdatePremiumHostResponse.
         :type: str
@@ -462,7 +462,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def protect_status(self):
         """Gets the protect_status of this UpdatePremiumHostResponse.
 
-        防护状态
+        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :return: The protect_status of this UpdatePremiumHostResponse.
         :rtype: int
@@ -473,7 +473,7 @@ class UpdatePremiumHostResponse(SdkResponse):
     def protect_status(self, protect_status):
         """Sets the protect_status of this UpdatePremiumHostResponse.
 
-        防护状态
+        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :param protect_status: The protect_status of this UpdatePremiumHostResponse.
         :type: int

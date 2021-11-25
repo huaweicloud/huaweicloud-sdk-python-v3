@@ -22,8 +22,8 @@ class RoutetableInfoError:
     sensitive_list = []
 
     openapi_types = {
-        'bind_failed': 'RoutetableInfoErrorDetial',
-        'unbind_failed': 'RoutetableInfoErrorDetial'
+        'bind_failed': 'list[RoutetableInfoErrorDetial]',
+        'unbind_failed': 'list[RoutetableInfoErrorDetial]'
     }
 
     attribute_map = {
@@ -49,9 +49,10 @@ class RoutetableInfoError:
     def bind_failed(self):
         """Gets the bind_failed of this RoutetableInfoError.
 
+        绑定终端节点子网路由表失败信息。
 
         :return: The bind_failed of this RoutetableInfoError.
-        :rtype: RoutetableInfoErrorDetial
+        :rtype: list[RoutetableInfoErrorDetial]
         """
         return self._bind_failed
 
@@ -59,9 +60,10 @@ class RoutetableInfoError:
     def bind_failed(self, bind_failed):
         """Sets the bind_failed of this RoutetableInfoError.
 
+        绑定终端节点子网路由表失败信息。
 
         :param bind_failed: The bind_failed of this RoutetableInfoError.
-        :type: RoutetableInfoErrorDetial
+        :type: list[RoutetableInfoErrorDetial]
         """
         self._bind_failed = bind_failed
 
@@ -69,9 +71,10 @@ class RoutetableInfoError:
     def unbind_failed(self):
         """Gets the unbind_failed of this RoutetableInfoError.
 
+        解绑终端节点子网路由表失败信息。
 
         :return: The unbind_failed of this RoutetableInfoError.
-        :rtype: RoutetableInfoErrorDetial
+        :rtype: list[RoutetableInfoErrorDetial]
         """
         return self._unbind_failed
 
@@ -79,9 +82,10 @@ class RoutetableInfoError:
     def unbind_failed(self, unbind_failed):
         """Sets the unbind_failed of this RoutetableInfoError.
 
+        解绑终端节点子网路由表失败信息。
 
         :param unbind_failed: The unbind_failed of this RoutetableInfoError.
-        :type: RoutetableInfoErrorDetial
+        :type: list[RoutetableInfoErrorDetial]
         """
         self._unbind_failed = unbind_failed
 

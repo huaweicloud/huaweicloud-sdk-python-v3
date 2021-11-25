@@ -2391,7 +2391,7 @@ class RdsAsyncClient(Client):
         :return: ListSlowlogStatisticsResponse
         """
 
-        all_params = ['instance_id', 'cur_page', 'per_page', 'start_date', 'end_date', 'type', 'x_language']
+        all_params = ['instance_id', 'cur_page', 'per_page', 'start_date', 'end_date', 'type', 'x_language', 'sort']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2414,6 +2414,8 @@ class RdsAsyncClient(Client):
             query_params.append(('end_date', local_var_params['end_date']))
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
 
         header_params = {}
         if 'x_language' in local_var_params:

@@ -53,7 +53,7 @@ class ApplyCertificateToHostRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ApplyCertificateToHostRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ApplyCertificateToHostRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class ApplyCertificateToHostRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ApplyCertificateToHostRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ApplyCertificateToHostRequest.
         :type: str
@@ -75,7 +75,7 @@ class ApplyCertificateToHostRequest:
     def certificate_id(self):
         """Gets the certificate_id of this ApplyCertificateToHostRequest.
 
-        证书ID
+        https证书id，您可以通过调用查询证书列表（ListCertificates）接口获取证书id
 
         :return: The certificate_id of this ApplyCertificateToHostRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class ApplyCertificateToHostRequest:
     def certificate_id(self, certificate_id):
         """Sets the certificate_id of this ApplyCertificateToHostRequest.
 
-        证书ID
+        https证书id，您可以通过调用查询证书列表（ListCertificates）接口获取证书id
 
         :param certificate_id: The certificate_id of this ApplyCertificateToHostRequest.
         :type: str

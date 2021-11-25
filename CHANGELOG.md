@@ -1,3 +1,266 @@
+# 3.0.69 2021-11-25
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - Support the service `Cloud Bastion Host`.
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type of the response parameter `resources` of the interfaces `ListAlarmRule` and `ShowAlarmRule`: `string` -> `array`
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `CheckBackendConnectivity`.
+
+### HuaweiCloud SDK APM
+
+- _Features_
+  - Support the service `Application Performance Management`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK BCS
+
+- _Features_
+  - Support the service `Application Performance Management`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `statistic_type` and response parameter `bill_date` to the interface `ListCustomerselfResourceRecordDetails`.
+
+### HuaweiCloud SDK CBH
+
+- _Features_
+  - Support the service `Cloud Bastion Host`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `platformVersion` to the interface `ShowCluster`.
+  - Add the enumeration values `RollingBack` and `RollbackFailed` to the request parameter `status` of the interface `ListClusters`.
+
+### HuaweiCloud SDK CloudRTC
+
+- _Features_
+  - Support the following interfaces:
+    - `ListRtcRealtimeScaleDimension`
+    - `ListRtcRealtimeQuality`
+    - `ListRtcRealtimeNetwork`
+    - `ListRtcHistoryUsage`
+    - `ListRtcHistoryScale`
+    - `ListRtcHistoryQuality`
+    - `ListRtcClientQosDetails`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CloudTable
+
+- _Features_
+  - Support the service `CloudTable`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CodeCheck
+
+- _Features_
+  - Support CodeCheck service.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DAS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - Correct the enumeration value of the request parameter `X-Language` of some interfaces.
+- _Change_
+  - None
+
+### HuaweiCloud SDK DBSS
+
+- _Features_
+  - Support the `Database Security Service`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `tags` to the interfaces `CreateInstance` and `ListInstances`.
+
+### HuaweiCloud SDK DeH
+
+- _Features_
+  - Support the service `Dedicated Host`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request and response parameter `alias` to the interfaces `CreatePrePaidPublicip` and `CreatePublicip`.
+  - Add the response parameter `alias` to the interfaces `ShowPublicip` and `UpdatePublicip`.
+
+### HuaweiCloud SDK GES
+
+- _Features_
+  - Support the interfaces `ResizeGraph`, `ExpandGraph` and `UploadFromObs`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - Support the following interfaces:
+    - `CreateTransfer`
+    - `DeleteTransfer`
+    - `UpdateTransfer`
+    - `ListTransfers`
+    - `ListLogStreams`
+    - `RegisterDmsKafkaInstance`
+    - `CreateNotificationTemplate`
+    - `UpdateNotificationTemplate`
+    - `ListNotificationTemplates`
+    - `DeleteNotificationTemplate`
+    - `ShowNotificationTemplate`
+    - `ListNotificationTemplate`
+    - `UpdateAlarmRuleStatus`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK KMS
+
+- _Features_
+  - Support the interfaces of version `V2`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK NLP
+
+- _Features_
+  - Support the service `Natural Language Processing`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameter `extracted_data` of the interface `RecognizeHandwriting`.
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `sort` to the interface `ListSlowlogStatistics`.
+
+### HuaweiCloud SDK SIS
+
+- _Features_
+  - Support the `Voice Interaction Service`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SFSTurbo
+
+- _Features_
+  - Support the service `Scalable File Service - Turbo`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK TMS
+
+- _Features_
+  - Support the interface `ShowTagQuota`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VPCEP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type of the response parameters `created_at` and `updated_at` of the interfaces `ListServicePublicDetails`, `ListServiceDetails`, `ListServiceConnections`, `AcceptOrRejectEndpoint`, `ListEndpoints`, `UpdateEndpointWhite` and `ListEndpointInfoDetails`.
+  - Update the request parameters `vpc_id` and `port_id` to required of the interface `CreateEndpointService`.
+  - Remove the response parameter `error` of the interface `AcceptOrRejectEndpoint`.
+  - Modify the type of the response parameter `updated` of the interfaces `ListVersionDetails` and `ListSpecifiedVersionDetails`: `datetime` -> `string`
+  - Update the request parameter `action` to required of the interfaces `ListResourceInstances` and `BatchAddOrRemoveResourceInstance`.
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `from` and `to` to the interface `ListEvent`.
+  - Add the request parameter `name` to the interface `ListWhiteblackipRule`.
+
 # 3.0.68 2021-11-12
 
 ### HuaweiCloud SDK AOM

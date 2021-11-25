@@ -56,10 +56,8 @@ class PremiumWafServer:
         self.back_protocol = back_protocol
         self.address = address
         self.port = port
-        if type is not None:
-            self.type = type
-        if vpc_id is not None:
-            self.vpc_id = vpc_id
+        self.type = type
+        self.vpc_id = vpc_id
 
     @property
     def front_protocol(self):
@@ -175,7 +173,7 @@ class PremiumWafServer:
     def vpc_id(self):
         """Gets the vpc_id of this PremiumWafServer.
 
-        独享引擎所在VPC ID（子网id）源站和独享引擎需要在同一子网
+        VPC id,通过以下步骤获取VPC id： \\n 1.找到独享引擎所在的虚拟私有云名称，VPC\\子网这一列就是VPC的名称：登录WAF的控制台->单击系统管理->独享引擎->VPC\\子网 \\n 2.登录虚拟私有云 VPC控制台->虚拟私有云->单击虚拟私有云的名称->基本信息的ID
 
         :return: The vpc_id of this PremiumWafServer.
         :rtype: str
@@ -186,7 +184,7 @@ class PremiumWafServer:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this PremiumWafServer.
 
-        独享引擎所在VPC ID（子网id）源站和独享引擎需要在同一子网
+        VPC id,通过以下步骤获取VPC id： \\n 1.找到独享引擎所在的虚拟私有云名称，VPC\\子网这一列就是VPC的名称：登录WAF的控制台->单击系统管理->独享引擎->VPC\\子网 \\n 2.登录虚拟私有云 VPC控制台->虚拟私有云->单击虚拟私有云的名称->基本信息的ID
 
         :param vpc_id: The vpc_id of this PremiumWafServer.
         :type: str

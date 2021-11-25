@@ -22,7 +22,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'permissions': 'list[Permissions]',
+        'permissions': 'list[Permission]',
         'total_count': 'int'
     }
 
@@ -52,7 +52,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
         permission列表。
 
         :return: The permissions of this ListServicePermissionsDetailsResponse.
-        :rtype: list[Permissions]
+        :rtype: list[Permission]
         """
         return self._permissions
 
@@ -63,7 +63,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
         permission列表。
 
         :param permissions: The permissions of this ListServicePermissionsDetailsResponse.
-        :type: list[Permissions]
+        :type: list[Permission]
         """
         self._permissions = permissions
 

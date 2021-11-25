@@ -23,30 +23,25 @@ class HandwritingResult:
 
     openapi_types = {
         'words_block_count': 'int',
-        'words_block_list': 'list[HandwritingWordsBlockList]',
-        'extracted_data': 'ExtractedData'
+        'words_block_list': 'list[HandwritingWordsBlockList]'
     }
 
     attribute_map = {
         'words_block_count': 'words_block_count',
-        'words_block_list': 'words_block_list',
-        'extracted_data': 'extracted_data'
+        'words_block_list': 'words_block_list'
     }
 
-    def __init__(self, words_block_count=None, words_block_list=None, extracted_data=None):
+    def __init__(self, words_block_count=None, words_block_list=None):
         """HandwritingResult - a model defined in huaweicloud sdk"""
         
         
 
         self._words_block_count = None
         self._words_block_list = None
-        self._extracted_data = None
         self.discriminator = None
 
         self.words_block_count = words_block_count
         self.words_block_list = words_block_list
-        if extracted_data is not None:
-            self.extracted_data = extracted_data
 
     @property
     def words_block_count(self):
@@ -91,26 +86,6 @@ class HandwritingResult:
         :type: list[HandwritingWordsBlockList]
         """
         self._words_block_list = words_block_list
-
-    @property
-    def extracted_data(self):
-        """Gets the extracted_data of this HandwritingResult.
-
-
-        :return: The extracted_data of this HandwritingResult.
-        :rtype: ExtractedData
-        """
-        return self._extracted_data
-
-    @extracted_data.setter
-    def extracted_data(self, extracted_data):
-        """Sets the extracted_data of this HandwritingResult.
-
-
-        :param extracted_data: The extracted_data of this HandwritingResult.
-        :type: ExtractedData
-        """
-        self._extracted_data = extracted_data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

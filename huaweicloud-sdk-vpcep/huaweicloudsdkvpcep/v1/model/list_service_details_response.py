@@ -31,14 +31,14 @@ class ListServiceDetailsResponse(SdkResponse):
         'approval_enabled': 'bool',
         'status': 'str',
         'server_type': 'str',
-        'created_at': 'datetime',
-        'updated_at': 'datetime',
+        'created_at': 'str',
+        'updated_at': 'str',
         'project_id': 'str',
         'cidr_type': 'str',
         'ports': 'list[PortList]',
         'tcp_proxy': 'str',
         'tags': 'list[TagList]',
-        'error': 'list[QueryError]'
+        'error': 'list[Error]'
     }
 
     attribute_map = {
@@ -146,7 +146,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def port_id(self):
         """Gets the port_id of this ListServiceDetailsResponse.
 
-        标识终端节点服务后端资源的ID，格式为通用 唯一识别码（Universally Unique Identifier， 下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端 口ID。 ● VM类型：弹性云服务器IP地址对应的网卡 ID。 ● VIP类型：虚拟资源所在物理服务器对应的 网卡ID。
+        标识终端节点服务后端资源的ID，格式为通用唯一识别码 （Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
 
         :return: The port_id of this ListServiceDetailsResponse.
         :rtype: str
@@ -157,7 +157,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def port_id(self, port_id):
         """Sets the port_id of this ListServiceDetailsResponse.
 
-        标识终端节点服务后端资源的ID，格式为通用 唯一识别码（Universally Unique Identifier， 下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端 口ID。 ● VM类型：弹性云服务器IP地址对应的网卡 ID。 ● VIP类型：虚拟资源所在物理服务器对应的 网卡ID。
+        标识终端节点服务后端资源的ID，格式为通用唯一识别码 （Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
 
         :param port_id: The port_id of this ListServiceDetailsResponse.
         :type: str
@@ -168,7 +168,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def vip_port_id(self):
         """Gets the vip_port_id of this ListServiceDetailsResponse.
 
-        虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参 数。
+        虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参数。
 
         :return: The vip_port_id of this ListServiceDetailsResponse.
         :rtype: str
@@ -179,7 +179,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def vip_port_id(self, vip_port_id):
         """Sets the vip_port_id of this ListServiceDetailsResponse.
 
-        虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参 数。
+        虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参数。
 
         :param vip_port_id: The vip_port_id of this ListServiceDetailsResponse.
         :type: str
@@ -256,7 +256,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def approval_enabled(self):
         """Gets the approval_enabled of this ListServiceDetailsResponse.
 
-        是否需要审批。 ● false：不需要审批，创建的终端节点连接直 接为accepted状态。 ● true：需要审批，创建的终端节点连接为 pendingAcceptance状态，需要终端节点服 务所属用户审核后方可使用。
+        是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态，需要终端节点服务所属用户审核后方可使用。
 
         :return: The approval_enabled of this ListServiceDetailsResponse.
         :rtype: bool
@@ -267,7 +267,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def approval_enabled(self, approval_enabled):
         """Sets the approval_enabled of this ListServiceDetailsResponse.
 
-        是否需要审批。 ● false：不需要审批，创建的终端节点连接直 接为accepted状态。 ● true：需要审批，创建的终端节点连接为 pendingAcceptance状态，需要终端节点服 务所属用户审核后方可使用。
+        是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态，需要终端节点服务所属用户审核后方可使用。
 
         :param approval_enabled: The approval_enabled of this ListServiceDetailsResponse.
         :type: bool
@@ -300,7 +300,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def server_type(self):
         """Gets the server_type of this ListServiceDetailsResponse.
 
-        终端节点服务类型。 终端节点服务类型包括“网关（gataway） 型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创 建，可直接使用。 ● interface：包括运维人员配置的云服务和用 户自己创建的私有服务。其中，运维人员配 置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和 Interface类型终端节点服务的终端节点。
+        终端节点服务类型。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。其中，运维人员配 置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
         :return: The server_type of this ListServiceDetailsResponse.
         :rtype: str
@@ -311,7 +311,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def server_type(self, server_type):
         """Sets the server_type of this ListServiceDetailsResponse.
 
-        终端节点服务类型。 终端节点服务类型包括“网关（gataway） 型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创 建，可直接使用。 ● interface：包括运维人员配置的云服务和用 户自己创建的私有服务。其中，运维人员配 置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和 Interface类型终端节点服务的终端节点。
+        终端节点服务类型。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。其中，运维人员配 置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
 
         :param server_type: The server_type of this ListServiceDetailsResponse.
         :type: str
@@ -322,10 +322,10 @@ class ListServiceDetailsResponse(SdkResponse):
     def created_at(self):
         """Gets the created_at of this ListServiceDetailsResponse.
 
-        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :return: The created_at of this ListServiceDetailsResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -333,10 +333,10 @@ class ListServiceDetailsResponse(SdkResponse):
     def created_at(self, created_at):
         """Sets the created_at of this ListServiceDetailsResponse.
 
-        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :param created_at: The created_at of this ListServiceDetailsResponse.
-        :type: datetime
+        :type: str
         """
         self._created_at = created_at
 
@@ -344,10 +344,10 @@ class ListServiceDetailsResponse(SdkResponse):
     def updated_at(self):
         """Gets the updated_at of this ListServiceDetailsResponse.
 
-        终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :return: The updated_at of this ListServiceDetailsResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._updated_at
 
@@ -355,10 +355,10 @@ class ListServiceDetailsResponse(SdkResponse):
     def updated_at(self, updated_at):
         """Sets the updated_at of this ListServiceDetailsResponse.
 
-        终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this ListServiceDetailsResponse.
-        :type: datetime
+        :type: str
         """
         self._updated_at = updated_at
 
@@ -388,7 +388,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def cidr_type(self):
         """Gets the cidr_type of this ListServiceDetailsResponse.
 
-        网段类型。 ● public：公网网段 ● internal：内网网段 默认值为internal。
+        网段类型。 public：公网网段 internal：内网网段 默认值为internal。
 
         :return: The cidr_type of this ListServiceDetailsResponse.
         :rtype: str
@@ -399,7 +399,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def cidr_type(self, cidr_type):
         """Sets the cidr_type of this ListServiceDetailsResponse.
 
-        网段类型。 ● public：公网网段 ● internal：内网网段 默认值为internal。
+        网段类型。 public：公网网段 internal：内网网段 默认值为internal。
 
         :param cidr_type: The cidr_type of this ListServiceDetailsResponse.
         :type: str
@@ -410,7 +410,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def ports(self):
         """Gets the ports of this ListServiceDetailsResponse.
 
-        服务开放的端口映射列表，详细内容请参见表 4-17 同一个终端节点服务下，不允许重复的端口映 射。若多个终端节点服务共用一个port_id，则 终端节点服务之间的所有端口映射的 server_port和protocol的组合不能重复。
+        服务开放的端口映射列表，详细内容请参见表4-17 同一个终端节点服务下，不允许重复的端口映射。若多个终端节点服务共用一个port_id，则 终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复。
 
         :return: The ports of this ListServiceDetailsResponse.
         :rtype: list[PortList]
@@ -421,7 +421,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def ports(self, ports):
         """Sets the ports of this ListServiceDetailsResponse.
 
-        服务开放的端口映射列表，详细内容请参见表 4-17 同一个终端节点服务下，不允许重复的端口映 射。若多个终端节点服务共用一个port_id，则 终端节点服务之间的所有端口映射的 server_port和protocol的组合不能重复。
+        服务开放的端口映射列表，详细内容请参见表4-17 同一个终端节点服务下，不允许重复的端口映射。若多个终端节点服务共用一个port_id，则 终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复。
 
         :param ports: The ports of this ListServiceDetailsResponse.
         :type: list[PortList]
@@ -432,7 +432,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def tcp_proxy(self):
         """Gets the tcp_proxy of this ListServiceDetailsResponse.
 
-        用于控制是否将客户端的源IP、源端口、 marker_id等信息携带到服务端。信息携带支 持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息 携带方式。 ● Proxy Protocol：表示将客户端相关信息插 入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置 才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议 “tcp_toa”。 ● proxy_open：表示开启代理协议 “proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa” 和“proxy_protocol”。 默认值为“close”。
+        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcpoption字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
         :return: The tcp_proxy of this ListServiceDetailsResponse.
         :rtype: str
@@ -443,7 +443,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def tcp_proxy(self, tcp_proxy):
         """Sets the tcp_proxy of this ListServiceDetailsResponse.
 
-        用于控制是否将客户端的源IP、源端口、 marker_id等信息携带到服务端。信息携带支 持两种方式： ● TCP TOA：表示将客户端信息插入到tcp option字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息 携带方式。 ● Proxy Protocol：表示将客户端相关信息插 入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置 才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议 “tcp_toa”。 ● proxy_open：表示开启代理协议 “proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa” 和“proxy_protocol”。 默认值为“close”。
+        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcpoption字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
         :param tcp_proxy: The tcp_proxy of this ListServiceDetailsResponse.
         :type: str
@@ -476,10 +476,10 @@ class ListServiceDetailsResponse(SdkResponse):
     def error(self):
         """Gets the error of this ListServiceDetailsResponse.
 
-        错误信息。 当终端节点服务状态异常，即“status”的值 为“failed”时，会返回该字段，详细内容请 参见表4-19。
+        提交任务异常时返回的异常信息
 
         :return: The error of this ListServiceDetailsResponse.
-        :rtype: list[QueryError]
+        :rtype: list[Error]
         """
         return self._error
 
@@ -487,10 +487,10 @@ class ListServiceDetailsResponse(SdkResponse):
     def error(self, error):
         """Sets the error of this ListServiceDetailsResponse.
 
-        错误信息。 当终端节点服务状态异常，即“status”的值 为“failed”时，会返回该字段，详细内容请 参见表4-19。
+        提交任务异常时返回的异常信息
 
         :param error: The error of this ListServiceDetailsResponse.
-        :type: list[QueryError]
+        :type: list[Error]
         """
         self._error = error
 

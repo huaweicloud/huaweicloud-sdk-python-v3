@@ -33,8 +33,8 @@ class CreateEndpointResponse(SdkResponse):
         'dns_names': 'list[str]',
         'subnet_id': 'str',
         'vpc_id': 'str',
-        'created_at': 'datetime',
-        'updated_at': 'datetime',
+        'created_at': 'str',
+        'updated_at': 'str',
         'project_id': 'str',
         'tags': 'list[TagList]',
         'whitelist': 'list[str]',
@@ -151,7 +151,7 @@ class CreateEndpointResponse(SdkResponse):
     def service_type(self):
         """Gets the service_type of this CreateEndpointResponse.
 
-        终端节点连接的终端节点服务类 型。 ● gataway：由运维人员配置。 用户无需创建，可直接使用。 ● interface：包括运维人员配置 的云服务和用户自己创建的私 有服务。其中，运维人员配置 的云服务无需创建，用户可直 接使用。 您可以通过查询公共终端节点服 务列表查看由运维人员配置的所 有用户可见且可连接的终端节点 服务，并通过创建终端节点服务 创建Interface类型的终端节点服 务。
+        终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表查看由运维人员配置的所有用户可见且可连接的终端节点服务，并通过创建终端节点服务创建Interface类型的终端节点服务。
 
         :return: The service_type of this CreateEndpointResponse.
         :rtype: str
@@ -162,7 +162,7 @@ class CreateEndpointResponse(SdkResponse):
     def service_type(self, service_type):
         """Sets the service_type of this CreateEndpointResponse.
 
-        终端节点连接的终端节点服务类 型。 ● gataway：由运维人员配置。 用户无需创建，可直接使用。 ● interface：包括运维人员配置 的云服务和用户自己创建的私 有服务。其中，运维人员配置 的云服务无需创建，用户可直 接使用。 您可以通过查询公共终端节点服 务列表查看由运维人员配置的所 有用户可见且可连接的终端节点 服务，并通过创建终端节点服务 创建Interface类型的终端节点服 务。
+        终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表查看由运维人员配置的所有用户可见且可连接的终端节点服务，并通过创建终端节点服务创建Interface类型的终端节点服务。
 
         :param service_type: The service_type of this CreateEndpointResponse.
         :type: str
@@ -305,7 +305,7 @@ class CreateEndpointResponse(SdkResponse):
     def dns_names(self):
         """Gets the dns_names of this CreateEndpointResponse.
 
-        访问所连接的终端节点服务的域 名。 当“enable_dns”为true时，该 参数可见。
+        访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
 
         :return: The dns_names of this CreateEndpointResponse.
         :rtype: list[str]
@@ -316,7 +316,7 @@ class CreateEndpointResponse(SdkResponse):
     def dns_names(self, dns_names):
         """Sets the dns_names of this CreateEndpointResponse.
 
-        访问所连接的终端节点服务的域 名。 当“enable_dns”为true时，该 参数可见。
+        访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
 
         :param dns_names: The dns_names of this CreateEndpointResponse.
         :type: list[str]
@@ -371,10 +371,10 @@ class CreateEndpointResponse(SdkResponse):
     def created_at(self):
         """Gets the created_at of this CreateEndpointResponse.
 
-        终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The created_at of this CreateEndpointResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -382,10 +382,10 @@ class CreateEndpointResponse(SdkResponse):
     def created_at(self, created_at):
         """Sets the created_at of this CreateEndpointResponse.
 
-        终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param created_at: The created_at of this CreateEndpointResponse.
-        :type: datetime
+        :type: str
         """
         self._created_at = created_at
 
@@ -393,10 +393,10 @@ class CreateEndpointResponse(SdkResponse):
     def updated_at(self):
         """Gets the updated_at of this CreateEndpointResponse.
 
-        终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The updated_at of this CreateEndpointResponse.
-        :rtype: datetime
+        :rtype: str
         """
         return self._updated_at
 
@@ -404,10 +404,10 @@ class CreateEndpointResponse(SdkResponse):
     def updated_at(self, updated_at):
         """Sets the updated_at of this CreateEndpointResponse.
 
-        终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this CreateEndpointResponse.
-        :type: datetime
+        :type: str
         """
         self._updated_at = updated_at
 
