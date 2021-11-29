@@ -24,7 +24,7 @@ class Cluster:
     openapi_types = {
         'auth_mode': 'str',
         'enable_lemon': 'bool',
-        'enable_opentsdb': 'bool',
+        'enable_open_tsdb': 'bool',
         'instance': 'Instance',
         'name': 'str',
         'storage_size': 'int',
@@ -36,7 +36,7 @@ class Cluster:
     attribute_map = {
         'auth_mode': 'auth_mode',
         'enable_lemon': 'enable_lemon',
-        'enable_opentsdb': 'enable_opentsdb',
+        'enable_open_tsdb': 'enable_openTSDB',
         'instance': 'instance',
         'name': 'name',
         'storage_size': 'storage_size',
@@ -45,14 +45,14 @@ class Cluster:
         'datastore': 'datastore'
     }
 
-    def __init__(self, auth_mode=None, enable_lemon=None, enable_opentsdb=None, instance=None, name=None, storage_size=None, storage_type=None, vpc_id=None, datastore=None):
+    def __init__(self, auth_mode=None, enable_lemon=None, enable_open_tsdb=None, instance=None, name=None, storage_size=None, storage_type=None, vpc_id=None, datastore=None):
         """Cluster - a model defined in huaweicloud sdk"""
         
         
 
         self._auth_mode = None
         self._enable_lemon = None
-        self._enable_opentsdb = None
+        self._enable_open_tsdb = None
         self._instance = None
         self._name = None
         self._storage_size = None
@@ -64,8 +64,7 @@ class Cluster:
         if auth_mode is not None:
             self.auth_mode = auth_mode
         self.enable_lemon = enable_lemon
-        if enable_opentsdb is not None:
-            self.enable_opentsdb = enable_opentsdb
+        self.enable_open_tsdb = enable_open_tsdb
         self.instance = instance
         self.name = name
         if storage_size is not None:
@@ -120,26 +119,26 @@ class Cluster:
         self._enable_lemon = enable_lemon
 
     @property
-    def enable_opentsdb(self):
-        """Gets the enable_opentsdb of this Cluster.
+    def enable_open_tsdb(self):
+        """Gets the enable_open_tsdb of this Cluster.
 
         是否开启OpenTSDB。 - false：不开启 - true：开启
 
-        :return: The enable_opentsdb of this Cluster.
+        :return: The enable_open_tsdb of this Cluster.
         :rtype: bool
         """
-        return self._enable_opentsdb
+        return self._enable_open_tsdb
 
-    @enable_opentsdb.setter
-    def enable_opentsdb(self, enable_opentsdb):
-        """Sets the enable_opentsdb of this Cluster.
+    @enable_open_tsdb.setter
+    def enable_open_tsdb(self, enable_open_tsdb):
+        """Sets the enable_open_tsdb of this Cluster.
 
         是否开启OpenTSDB。 - false：不开启 - true：开启
 
-        :param enable_opentsdb: The enable_opentsdb of this Cluster.
+        :param enable_open_tsdb: The enable_open_tsdb of this Cluster.
         :type: bool
         """
-        self._enable_opentsdb = enable_opentsdb
+        self._enable_open_tsdb = enable_open_tsdb
 
     @property
     def instance(self):

@@ -1,3 +1,233 @@
+# 3.0.70 2021-11-29
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `roma_app_type` to the interface `ResettingAppSecretV2`.
+
+### HuaweiCloud SDK BCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type of the response parameter `values` of the interface `ListEntityMetric`: `object` -> `array`
+
+### HuaweiCloud SDK CBR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `provider_id` to the interface `ListBackups`.
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `cidrs` to the interface `ShowCluster`.
+
+### HuaweiCloud SDK CloudTable
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the name of the request parameter of the interface `CreateCluster`: `enable_opentsdb` -> `enable_openTSDB`
+  - Modify the name of the response parameter of the interface `ListClusters` and `ShowClusterDetail`: `enable_opentsdb` -> `enable_openTSDB`
+
+### HuaweiCloud SDK DBSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the name of the response parameter of the interfaces `SwitchAgent` and `SwitchRiskRule`: `status` -> `result`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `port` to the interface `UpdateInstance`.
+
+### HuaweiCloud SDK DSC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `start_time` to the interface `ShowScanJobs`.
+
+### HuaweiCloud SDK EVS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `CinderExportToImage`.
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `os:scheduler_hints` to the interfaces `NovaShowServer` and `NovaListServersDetails`.
+
+### HuaweiCloud SDK ELB
+
+- _Features_
+  - Support the following interfaces:
+    - `ListApiVersions`
+    - `ListSecurityPolicies`
+    - `CreateSecurityPolicy`
+    - `ShowSecurityPolicy`
+    - `UpdateSecurityPolicy`
+    - `DeleteSecurityPolicy`
+    - `ListSystemSecurityPolicies`
+    - `ListQuotaDetails`
+    - `ChangeLoadbalancerChargeMode`
+    - `BatchUpdatePoliciesPriority`
+    - `UpdateIpList`
+    - `BatchDeleteIpList`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `ShowQuotaDefaults`.
+  - Add the response parameters `flavor_sold_out` and `lcu` to the interfaces `ListFlavors` and `ShowFlavor`, and remove the response parameter `availability_zone_ids`.
+  - Add the response parameter `members_per_pool` to the interface `ShowQuota`.
+  - Add the request parameters `enc_certificate` and `enc_private_key` to the interfaces `CreateCertificate` and `UpdateCertificate`.
+  - Add the response parameters `enc_certificate` and `enc_private_key` to the interfaces `ListCertificates` and `ShowCertificate`.
+  - Add the request parameters `prepaid_options`, `autoscaling` and `id` to the interface `CreateLoadBalancer`.
+  - Add the request parameters `elb_virsubnet_type` and `autoscaling` and the response parameters `autoscaling` and `ip_version` to the interface `ListLoadBalancers`.
+  - Add the request parameters `elb_virsubnet_type` and `autoscaling` and the response parameters `loadbalancer_id`, `order_id`, `autoscaling` and `ip_version` to the interface `UpdateLoadBalancer`.
+  - Add the response parameters `autoscaling` and `ip_version` to the interface `ShowLoadBalancer`.
+  - Add the response parameters `id`, `type` and `provisioning_status` to the interface `ShowLoadBalancerStatus`.
+  - Add the request parameters `security_policy_id` and `enhance_l7policy_enable` to the interface `CreateListener`.
+  - Add the request parameters `enhance_l7policy_enable` and `member_instance_id` and the response parameters `security_policy_id`, `transparent_client_ip_enable` and `enhance_l7policy_enable` to the interface `ListListeners`.
+  - Add the request parameters `enhance_l7policy_enable` and `member_instance_id` and the response parameters `security_policy_id`, `transparent_client_ip_enable` and `enhance_l7policy_enable` to the interface `UpdateListener`.
+  - Add the response parameters `security_policy_id`, `transparent_client_ip_enable` and `enhance_l7policy_enable` to the interface `ShowListener`.
+  - Add the request parameters `listener_id` and `member_instance_id` to the interface `ListPools`.
+  - Add the request parameters `ip_version` and `member_type` and the response parameters `member_type` and `instance_id` to the interface `ListMembers`.
+  - Add the response parameters `member_type` and `instance_id` to the interfaces `UpdateMember`, `ShowMember` and `ListAllMembers`.
+  - Add the request parameters `priority`, `redirect_url_config`, `fixed_response_config` and `conditions` to the interface `CreateL7Policy`.
+  - Add the request parameter `priority` and the response parameters `redirect_url_config` and `fixed_response_config` to the interface `ListL7Policies`.
+  - Add the request parameters `priority`, `redirect_url_config`, `fixed_response_config` and `rules` and the response parameters `member_type` and `instance_id` to the interface `UpdateL7Policy`.
+  - Add the response parameters `redirect_url_config` and `fixed_response_config` to the interface `ShowL7Policy`.
+  - Add the request parameter `conditions` to the interface `CreateL7Rule`.
+  - Add the response parameter `conditions` to the interfaces `ListL7Rules` and `ShowL7Rule`.
+  - Add the request and response parameter `conditions` to the interface `UpdateL7Rule`.
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `ListVersionAliases` to the interface `ListVersionAliases`.
+  - Update the request parameter `name` to required of the interfaces  `CreateDependency` and `UpdateDependency`.
+  - Update the request parameters `name` and `content` to required of the interface `CreateEvent`.
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `enable_force_switch` to the interface `CreateInstance`.
+
+### HuaweiCloud SDK GES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type of the request parameter `graphSizeTypeIndex` of the interface `CreateGraph`: `integer` -> `string`
+
+### HuaweiCloud SDK KMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Update the request parameter `key_alias` to required of the interface `CreateKey`.
+  - Update the request parameter `key_id` to required of the interfaces `EnableKey`, `CancelKeyDeletion`, `ListKeys`, `ListKeyDetail`, `ShowPublicKey`, `ListGrants`, `DeleteImportedKeyMaterial`, `EnableKeyRotation`, `DisableKeyRotation` and `ShowKeyRotationStatus`.
+  - Update the request parameters `key_id` and `pending_days` to required of the interface `DeleteKey`.
+  - Add the request parameter `enterprise_project_id` to the interface `ListKeys`.
+  - Update the request parameter `random_data_length` to required of the interface `CreateRandom`.
+  - Update the request parameters `key_id` and `datakey_length` to required of the interfaces `CreateDatakey` and `CreateDatakeyWithoutPlaintext`.
+  - Update the request parameters `key_id`, `plain_text` and `datakey_plain_length` to required of the interface `EncryptDatakey`.
+  - Update the request parameters `key_id`, `cipher_text` and `datakey_cipher_length` to required of the interface `DecryptDatakey`.
+  - Update the request parameters `key_id` and `key_alias` to required of the interface `UpdateKeyAlias`.
+  - Update the request parameters `key_id` and `key_description` to required of the interface `UpdateKeyDescription`.
+  - Update the request parameters `key_id`, `grantee_principal` and `operations` to required of the interface `CreateGrant`.
+  - Update the request parameters `key_id` and `grant_id` to required of the interfaces `CancelGrant` and `CancelSelfGrant`.
+  - Update the request parameters `key_id` and `plain_text` to required of the interface `EncryptData`.
+  - Update the request parameter `cipher_text` to required of the interface `DecryptData`.
+  - Update the request parameters `key_id` and `wrapping_algorithm` to required of the interface `CreateParametersForImport`.
+  - Update the request parameters `key_id`, `import_token` and `encrypted_key_material` to required of the interface `ImportKeyMaterial`.
+  - Update the request parameters `key_id` and `rotation_interval` to required of the interface `UpdateKeyRotationInterval`.
+  - Add the request parameter `sequence` to the interface `CreateKmsTag`.
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the following interfaces:
+    - `ChangeProxyScale`
+    - `SearchQueryScaleFlavors`
+    - `ShowInformationAboutDatabaseProxy`
+    - `StartDatabaseProxy`
+    - `StopDatabaseProxy`
+    - `UpdateReadWeight`
+    - `ChangeTheDelayThreshold`
+    - `ShowDrReplicaStatus`
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type of the response parameter `size` of the interface `ListPostgresqlDatabases`: `int32` -> `int64`
+
+### HuaweiCloud SDK SMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - Fix the problem that the enumeration value contains the Chinese description and causes the parameter error.
+- _Change_
+  - None
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `items` to the interface `ListIgnoreRule`.
+  - Add the request parameter `attacks` to the interface `ListEvent`.
+  - Add the response parameter `host_id` to the interface `ShowEvent`.
+  - Add the response parameter `certificatename` to the interface `UpdateHost`.
+
 # 3.0.69 2021-11-25
 
 ### HuaweiCloud SDK AOM

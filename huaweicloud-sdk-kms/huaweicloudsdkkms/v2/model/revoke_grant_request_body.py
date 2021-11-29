@@ -43,10 +43,8 @@ class RevokeGrantRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
-        if grant_id is not None:
-            self.grant_id = grant_id
+        self.key_id = key_id
+        self.grant_id = grant_id
         if sequence is not None:
             self.sequence = sequence
 

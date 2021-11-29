@@ -22,257 +22,125 @@ class ListHealthMonitorsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'admin_state_up': 'bool',
-        'delay': 'list[int]',
-        'domain_name': 'list[str]',
-        'enterprise_project_id': 'list[str]',
-        'expected_codes': 'list[str]',
-        'http_method': 'list[str]',
-        'id': 'list[str]',
-        'limit': 'int',
         'marker': 'str',
-        'max_retries': 'list[int]',
-        'max_retries_down': 'list[int]',
-        'monitor_port': 'list[int]',
-        'name': 'list[str]',
+        'limit': 'int',
         'page_reverse': 'bool',
+        'id': 'list[str]',
+        'monitor_port': 'list[int]',
+        'domain_name': 'list[str]',
+        'name': 'list[str]',
+        'delay': 'list[int]',
+        'max_retries': 'list[int]',
+        'admin_state_up': 'bool',
+        'max_retries_down': 'list[int]',
         'timeout': 'int',
         'type': 'list[str]',
-        'url_path': 'list[str]'
+        'expected_codes': 'list[str]',
+        'url_path': 'list[str]',
+        'http_method': 'list[str]',
+        'enterprise_project_id': 'list[str]'
     }
 
     attribute_map = {
-        'admin_state_up': 'admin_state_up',
-        'delay': 'delay',
-        'domain_name': 'domain_name',
-        'enterprise_project_id': 'enterprise_project_id',
-        'expected_codes': 'expected_codes',
-        'http_method': 'http_method',
-        'id': 'id',
-        'limit': 'limit',
         'marker': 'marker',
-        'max_retries': 'max_retries',
-        'max_retries_down': 'max_retries_down',
-        'monitor_port': 'monitor_port',
-        'name': 'name',
+        'limit': 'limit',
         'page_reverse': 'page_reverse',
+        'id': 'id',
+        'monitor_port': 'monitor_port',
+        'domain_name': 'domain_name',
+        'name': 'name',
+        'delay': 'delay',
+        'max_retries': 'max_retries',
+        'admin_state_up': 'admin_state_up',
+        'max_retries_down': 'max_retries_down',
         'timeout': 'timeout',
         'type': 'type',
-        'url_path': 'url_path'
+        'expected_codes': 'expected_codes',
+        'url_path': 'url_path',
+        'http_method': 'http_method',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, admin_state_up=None, delay=None, domain_name=None, enterprise_project_id=None, expected_codes=None, http_method=None, id=None, limit=None, marker=None, max_retries=None, max_retries_down=None, monitor_port=None, name=None, page_reverse=None, timeout=None, type=None, url_path=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, monitor_port=None, domain_name=None, name=None, delay=None, max_retries=None, admin_state_up=None, max_retries_down=None, timeout=None, type=None, expected_codes=None, url_path=None, http_method=None, enterprise_project_id=None):
         """ListHealthMonitorsRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._admin_state_up = None
-        self._delay = None
-        self._domain_name = None
-        self._enterprise_project_id = None
-        self._expected_codes = None
-        self._http_method = None
-        self._id = None
-        self._limit = None
         self._marker = None
-        self._max_retries = None
-        self._max_retries_down = None
-        self._monitor_port = None
-        self._name = None
+        self._limit = None
         self._page_reverse = None
+        self._id = None
+        self._monitor_port = None
+        self._domain_name = None
+        self._name = None
+        self._delay = None
+        self._max_retries = None
+        self._admin_state_up = None
+        self._max_retries_down = None
         self._timeout = None
         self._type = None
+        self._expected_codes = None
         self._url_path = None
+        self._http_method = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
-        if admin_state_up is not None:
-            self.admin_state_up = admin_state_up
-        if delay is not None:
-            self.delay = delay
-        if domain_name is not None:
-            self.domain_name = domain_name
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
-        if expected_codes is not None:
-            self.expected_codes = expected_codes
-        if http_method is not None:
-            self.http_method = http_method
-        if id is not None:
-            self.id = id
-        if limit is not None:
-            self.limit = limit
         if marker is not None:
             self.marker = marker
-        if max_retries is not None:
-            self.max_retries = max_retries
-        if max_retries_down is not None:
-            self.max_retries_down = max_retries_down
-        if monitor_port is not None:
-            self.monitor_port = monitor_port
-        if name is not None:
-            self.name = name
+        if limit is not None:
+            self.limit = limit
         if page_reverse is not None:
             self.page_reverse = page_reverse
+        if id is not None:
+            self.id = id
+        if monitor_port is not None:
+            self.monitor_port = monitor_port
+        if domain_name is not None:
+            self.domain_name = domain_name
+        if name is not None:
+            self.name = name
+        if delay is not None:
+            self.delay = delay
+        if max_retries is not None:
+            self.max_retries = max_retries
+        if admin_state_up is not None:
+            self.admin_state_up = admin_state_up
+        if max_retries_down is not None:
+            self.max_retries_down = max_retries_down
         if timeout is not None:
             self.timeout = timeout
         if type is not None:
             self.type = type
+        if expected_codes is not None:
+            self.expected_codes = expected_codes
         if url_path is not None:
             self.url_path = url_path
+        if http_method is not None:
+            self.http_method = http_method
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
-    def admin_state_up(self):
-        """Gets the admin_state_up of this ListHealthMonitorsRequest.
+    def marker(self):
+        """Gets the marker of this ListHealthMonitorsRequest.
 
-        健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
-        :return: The admin_state_up of this ListHealthMonitorsRequest.
-        :rtype: bool
+        :return: The marker of this ListHealthMonitorsRequest.
+        :rtype: str
         """
-        return self._admin_state_up
+        return self._marker
 
-    @admin_state_up.setter
-    def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListHealthMonitorsRequest.
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListHealthMonitorsRequest.
 
-        健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。该字段虽然支持创建、更新，但实际取值决定于member对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
-        :param admin_state_up: The admin_state_up of this ListHealthMonitorsRequest.
-        :type: bool
+        :param marker: The marker of this ListHealthMonitorsRequest.
+        :type: str
         """
-        self._admin_state_up = admin_state_up
-
-    @property
-    def delay(self):
-        """Gets the delay of this ListHealthMonitorsRequest.
-
-        健康检查间隔。
-
-        :return: The delay of this ListHealthMonitorsRequest.
-        :rtype: list[int]
-        """
-        return self._delay
-
-    @delay.setter
-    def delay(self, delay):
-        """Sets the delay of this ListHealthMonitorsRequest.
-
-        健康检查间隔。
-
-        :param delay: The delay of this ListHealthMonitorsRequest.
-        :type: list[int]
-        """
-        self._delay = delay
-
-    @property
-    def domain_name(self):
-        """Gets the domain_name of this ListHealthMonitorsRequest.
-
-        功能说明：健康检查测试member健康状态时，发送的http请求的域名。仅当type为HTTP时生效。使用说明：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。
-
-        :return: The domain_name of this ListHealthMonitorsRequest.
-        :rtype: list[str]
-        """
-        return self._domain_name
-
-    @domain_name.setter
-    def domain_name(self, domain_name):
-        """Sets the domain_name of this ListHealthMonitorsRequest.
-
-        功能说明：健康检查测试member健康状态时，发送的http请求的域名。仅当type为HTTP时生效。使用说明：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。
-
-        :param domain_name: The domain_name of this ListHealthMonitorsRequest.
-        :type: list[str]
-        """
-        self._domain_name = domain_name
-
-    @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListHealthMonitorsRequest.
-
-        企业项目ID。
-
-        :return: The enterprise_project_id of this ListHealthMonitorsRequest.
-        :rtype: list[str]
-        """
-        return self._enterprise_project_id
-
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListHealthMonitorsRequest.
-
-        企业项目ID。
-
-        :param enterprise_project_id: The enterprise_project_id of this ListHealthMonitorsRequest.
-        :type: list[str]
-        """
-        self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def expected_codes(self):
-        """Gets the expected_codes of this ListHealthMonitorsRequest.
-
-        期望HTTP响应状态码，指定下列值：单值，例如200；列表，例如200，202；区间，例如200-204。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
-
-        :return: The expected_codes of this ListHealthMonitorsRequest.
-        :rtype: list[str]
-        """
-        return self._expected_codes
-
-    @expected_codes.setter
-    def expected_codes(self, expected_codes):
-        """Sets the expected_codes of this ListHealthMonitorsRequest.
-
-        期望HTTP响应状态码，指定下列值：单值，例如200；列表，例如200，202；区间，例如200-204。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
-
-        :param expected_codes: The expected_codes of this ListHealthMonitorsRequest.
-        :type: list[str]
-        """
-        self._expected_codes = expected_codes
-
-    @property
-    def http_method(self):
-        """Gets the http_method of this ListHealthMonitorsRequest.
-
-        HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
-
-        :return: The http_method of this ListHealthMonitorsRequest.
-        :rtype: list[str]
-        """
-        return self._http_method
-
-    @http_method.setter
-    def http_method(self, http_method):
-        """Sets the http_method of this ListHealthMonitorsRequest.
-
-        HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
-
-        :param http_method: The http_method of this ListHealthMonitorsRequest.
-        :type: list[str]
-        """
-        self._http_method = http_method
-
-    @property
-    def id(self):
-        """Gets the id of this ListHealthMonitorsRequest.
-
-        健康检查ID。
-
-        :return: The id of this ListHealthMonitorsRequest.
-        :rtype: list[str]
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ListHealthMonitorsRequest.
-
-        健康检查ID。
-
-        :param id: The id of this ListHealthMonitorsRequest.
-        :type: list[str]
-        """
-        self._id = id
+        self._marker = marker
 
     @property
     def limit(self):
@@ -297,116 +165,6 @@ class ListHealthMonitorsRequest:
         self._limit = limit
 
     @property
-    def marker(self):
-        """Gets the marker of this ListHealthMonitorsRequest.
-
-        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
-
-        :return: The marker of this ListHealthMonitorsRequest.
-        :rtype: str
-        """
-        return self._marker
-
-    @marker.setter
-    def marker(self, marker):
-        """Sets the marker of this ListHealthMonitorsRequest.
-
-        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
-
-        :param marker: The marker of this ListHealthMonitorsRequest.
-        :type: str
-        """
-        self._marker = marker
-
-    @property
-    def max_retries(self):
-        """Gets the max_retries of this ListHealthMonitorsRequest.
-
-        最大重试次数。
-
-        :return: The max_retries of this ListHealthMonitorsRequest.
-        :rtype: list[int]
-        """
-        return self._max_retries
-
-    @max_retries.setter
-    def max_retries(self, max_retries):
-        """Sets the max_retries of this ListHealthMonitorsRequest.
-
-        最大重试次数。
-
-        :param max_retries: The max_retries of this ListHealthMonitorsRequest.
-        :type: list[int]
-        """
-        self._max_retries = max_retries
-
-    @property
-    def max_retries_down(self):
-        """Gets the max_retries_down of this ListHealthMonitorsRequest.
-
-        健康检查连续成功多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE，取值范围[1，10]。
-
-        :return: The max_retries_down of this ListHealthMonitorsRequest.
-        :rtype: list[int]
-        """
-        return self._max_retries_down
-
-    @max_retries_down.setter
-    def max_retries_down(self, max_retries_down):
-        """Sets the max_retries_down of this ListHealthMonitorsRequest.
-
-        健康检查连续成功多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE，取值范围[1，10]。
-
-        :param max_retries_down: The max_retries_down of this ListHealthMonitorsRequest.
-        :type: list[int]
-        """
-        self._max_retries_down = max_retries_down
-
-    @property
-    def monitor_port(self):
-        """Gets the monitor_port of this ListHealthMonitorsRequest.
-
-        健康检查端口号。
-
-        :return: The monitor_port of this ListHealthMonitorsRequest.
-        :rtype: list[int]
-        """
-        return self._monitor_port
-
-    @monitor_port.setter
-    def monitor_port(self, monitor_port):
-        """Sets the monitor_port of this ListHealthMonitorsRequest.
-
-        健康检查端口号。
-
-        :param monitor_port: The monitor_port of this ListHealthMonitorsRequest.
-        :type: list[int]
-        """
-        self._monitor_port = monitor_port
-
-    @property
-    def name(self):
-        """Gets the name of this ListHealthMonitorsRequest.
-
-        健康检查名称。
-
-        :return: The name of this ListHealthMonitorsRequest.
-        :rtype: list[str]
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListHealthMonitorsRequest.
-
-        健康检查名称。
-
-        :param name: The name of this ListHealthMonitorsRequest.
-        :type: list[str]
-        """
-        self._name = name
-
-    @property
     def page_reverse(self):
         """Gets the page_reverse of this ListHealthMonitorsRequest.
 
@@ -429,10 +187,186 @@ class ListHealthMonitorsRequest:
         self._page_reverse = page_reverse
 
     @property
+    def id(self):
+        """Gets the id of this ListHealthMonitorsRequest.
+
+        健康检查ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx****。
+
+        :return: The id of this ListHealthMonitorsRequest.
+        :rtype: list[str]
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ListHealthMonitorsRequest.
+
+        健康检查ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx****。
+
+        :param id: The id of this ListHealthMonitorsRequest.
+        :type: list[str]
+        """
+        self._id = id
+
+    @property
+    def monitor_port(self):
+        """Gets the monitor_port of this ListHealthMonitorsRequest.
+
+        健康检查端口号。  支持多值查询，查询条件格式：***monitor_port=xxx&monitor_port=xxx***。
+
+        :return: The monitor_port of this ListHealthMonitorsRequest.
+        :rtype: list[int]
+        """
+        return self._monitor_port
+
+    @monitor_port.setter
+    def monitor_port(self, monitor_port):
+        """Sets the monitor_port of this ListHealthMonitorsRequest.
+
+        健康检查端口号。  支持多值查询，查询条件格式：***monitor_port=xxx&monitor_port=xxx***。
+
+        :param monitor_port: The monitor_port of this ListHealthMonitorsRequest.
+        :type: list[int]
+        """
+        self._monitor_port = monitor_port
+
+    @property
+    def domain_name(self):
+        """Gets the domain_name of this ListHealthMonitorsRequest.
+
+        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  支持多值查询，查询条件格式：**domain_name=xxx&domain_name=xxx**。
+
+        :return: The domain_name of this ListHealthMonitorsRequest.
+        :rtype: list[str]
+        """
+        return self._domain_name
+
+    @domain_name.setter
+    def domain_name(self, domain_name):
+        """Sets the domain_name of this ListHealthMonitorsRequest.
+
+        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  支持多值查询，查询条件格式：**domain_name=xxx&domain_name=xxx**。
+
+        :param domain_name: The domain_name of this ListHealthMonitorsRequest.
+        :type: list[str]
+        """
+        self._domain_name = domain_name
+
+    @property
+    def name(self):
+        """Gets the name of this ListHealthMonitorsRequest.
+
+        健康检查名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+
+        :return: The name of this ListHealthMonitorsRequest.
+        :rtype: list[str]
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListHealthMonitorsRequest.
+
+        健康检查名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。
+
+        :param name: The name of this ListHealthMonitorsRequest.
+        :type: list[str]
+        """
+        self._name = name
+
+    @property
+    def delay(self):
+        """Gets the delay of this ListHealthMonitorsRequest.
+
+        健康检查间隔。取值：1-50s。  支持多值查询，查询条件格式：*delay=xxx&delay=xxx*。
+
+        :return: The delay of this ListHealthMonitorsRequest.
+        :rtype: list[int]
+        """
+        return self._delay
+
+    @delay.setter
+    def delay(self, delay):
+        """Sets the delay of this ListHealthMonitorsRequest.
+
+        健康检查间隔。取值：1-50s。  支持多值查询，查询条件格式：*delay=xxx&delay=xxx*。
+
+        :param delay: The delay of this ListHealthMonitorsRequest.
+        :type: list[int]
+        """
+        self._delay = delay
+
+    @property
+    def max_retries(self):
+        """Gets the max_retries of this ListHealthMonitorsRequest.
+
+        健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。  支持多值查询，查询条件格式：*******max_retries=xxx&max_retries=xxx*******。
+
+        :return: The max_retries of this ListHealthMonitorsRequest.
+        :rtype: list[int]
+        """
+        return self._max_retries
+
+    @max_retries.setter
+    def max_retries(self, max_retries):
+        """Sets the max_retries of this ListHealthMonitorsRequest.
+
+        健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。  支持多值查询，查询条件格式：*******max_retries=xxx&max_retries=xxx*******。
+
+        :param max_retries: The max_retries of this ListHealthMonitorsRequest.
+        :type: list[int]
+        """
+        self._max_retries = max_retries
+
+    @property
+    def admin_state_up(self):
+        """Gets the admin_state_up of this ListHealthMonitorsRequest.
+
+        健康检查的管理状态。取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
+
+        :return: The admin_state_up of this ListHealthMonitorsRequest.
+        :rtype: bool
+        """
+        return self._admin_state_up
+
+    @admin_state_up.setter
+    def admin_state_up(self, admin_state_up):
+        """Sets the admin_state_up of this ListHealthMonitorsRequest.
+
+        健康检查的管理状态。取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
+
+        :param admin_state_up: The admin_state_up of this ListHealthMonitorsRequest.
+        :type: bool
+        """
+        self._admin_state_up = admin_state_up
+
+    @property
+    def max_retries_down(self):
+        """Gets the max_retries_down of this ListHealthMonitorsRequest.
+
+        健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10。  支持多值查询，查询条件格式：******max_retries_down=xxx&max_retries_down=xxx******。
+
+        :return: The max_retries_down of this ListHealthMonitorsRequest.
+        :rtype: list[int]
+        """
+        return self._max_retries_down
+
+    @max_retries_down.setter
+    def max_retries_down(self, max_retries_down):
+        """Sets the max_retries_down of this ListHealthMonitorsRequest.
+
+        健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10。  支持多值查询，查询条件格式：******max_retries_down=xxx&max_retries_down=xxx******。
+
+        :param max_retries_down: The max_retries_down of this ListHealthMonitorsRequest.
+        :type: list[int]
+        """
+        self._max_retries_down = max_retries_down
+
+    @property
     def timeout(self):
         """Gets the timeout of this ListHealthMonitorsRequest.
 
-        健康检查的超时时间。建议该值小于delay的值。
+        一次健康检查请求的超时时间。
 
         :return: The timeout of this ListHealthMonitorsRequest.
         :rtype: int
@@ -443,7 +377,7 @@ class ListHealthMonitorsRequest:
     def timeout(self, timeout):
         """Sets the timeout of this ListHealthMonitorsRequest.
 
-        健康检查的超时时间。建议该值小于delay的值。
+        一次健康检查请求的超时时间。
 
         :param timeout: The timeout of this ListHealthMonitorsRequest.
         :type: int
@@ -454,7 +388,7 @@ class ListHealthMonitorsRequest:
     def type(self):
         """Gets the type of this ListHealthMonitorsRequest.
 
-        健康检查类型。
+        健康检查请求协议。 取值：TCP、UDP_CONNECT、HTTP、HTTPS。  支持多值查询，查询条件格式：*****type=xxx&type=xxx*****。
 
         :return: The type of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -465,7 +399,7 @@ class ListHealthMonitorsRequest:
     def type(self, type):
         """Sets the type of this ListHealthMonitorsRequest.
 
-        健康检查类型。
+        健康检查请求协议。 取值：TCP、UDP_CONNECT、HTTP、HTTPS。  支持多值查询，查询条件格式：*****type=xxx&type=xxx*****。
 
         :param type: The type of this ListHealthMonitorsRequest.
         :type: list[str]
@@ -473,10 +407,32 @@ class ListHealthMonitorsRequest:
         self._type = type
 
     @property
+    def expected_codes(self):
+        """Gets the expected_codes of this ListHealthMonitorsRequest.
+
+        期望响应状态码。支持多种取值格式：   单值：单个返回码，例如200。   列表：多个特定返回码，例如200，202。   区间：一个返回码区间，例如200-204。 仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。 支持多值查询，查询条件格式：****expected_codes=xxx&expected_codes=xxx****。
+
+        :return: The expected_codes of this ListHealthMonitorsRequest.
+        :rtype: list[str]
+        """
+        return self._expected_codes
+
+    @expected_codes.setter
+    def expected_codes(self, expected_codes):
+        """Sets the expected_codes of this ListHealthMonitorsRequest.
+
+        期望响应状态码。支持多种取值格式：   单值：单个返回码，例如200。   列表：多个特定返回码，例如200，202。   区间：一个返回码区间，例如200-204。 仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。 支持多值查询，查询条件格式：****expected_codes=xxx&expected_codes=xxx****。
+
+        :param expected_codes: The expected_codes of this ListHealthMonitorsRequest.
+        :type: list[str]
+        """
+        self._expected_codes = expected_codes
+
+    @property
     def url_path(self):
         """Gets the url_path of this ListHealthMonitorsRequest.
 
-        功能说明：健康检查测试member健康时发送的http请求路径。默认为“/”。使用说明：以“/”开头。仅当type为HTTP时生效。
+        健康检查测试member健康时发送的http请求路径。默认为“/”。  使用说明： - 以“/”开头。仅当type为HTTP时生效。  支持多值查询，查询条件格式：***url_path=xxx&url_path=xxx***。
 
         :return: The url_path of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -487,12 +443,56 @@ class ListHealthMonitorsRequest:
     def url_path(self, url_path):
         """Sets the url_path of this ListHealthMonitorsRequest.
 
-        功能说明：健康检查测试member健康时发送的http请求路径。默认为“/”。使用说明：以“/”开头。仅当type为HTTP时生效。
+        健康检查测试member健康时发送的http请求路径。默认为“/”。  使用说明： - 以“/”开头。仅当type为HTTP时生效。  支持多值查询，查询条件格式：***url_path=xxx&url_path=xxx***。
 
         :param url_path: The url_path of this ListHealthMonitorsRequest.
         :type: list[str]
         """
         self._url_path = url_path
+
+    @property
+    def http_method(self):
+        """Gets the http_method of this ListHealthMonitorsRequest.
+
+        HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。  支持多值查询，查询条件格式：**http_method=xxx&http_method=xxx**。  不支持该字段，请勿使用。
+
+        :return: The http_method of this ListHealthMonitorsRequest.
+        :rtype: list[str]
+        """
+        return self._http_method
+
+    @http_method.setter
+    def http_method(self, http_method):
+        """Sets the http_method of this ListHealthMonitorsRequest.
+
+        HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。  支持多值查询，查询条件格式：**http_method=xxx&http_method=xxx**。  不支持该字段，请勿使用。
+
+        :param http_method: The http_method of this ListHealthMonitorsRequest.
+        :type: list[str]
+        """
+        self._http_method = http_method
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListHealthMonitorsRequest.
+
+        企业项目ID。不传时查询default企业项目\"0\"下的资源，鉴权按照default企业项目鉴权；如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+
+        :return: The enterprise_project_id of this ListHealthMonitorsRequest.
+        :rtype: list[str]
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListHealthMonitorsRequest.
+
+        企业项目ID。不传时查询default企业项目\"0\"下的资源，鉴权按照default企业项目鉴权；如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+
+        :param enterprise_project_id: The enterprise_project_id of this ListHealthMonitorsRequest.
+        :type: list[str]
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CinderExportToImageRequestBody:
+class BatchUpdatePoliciesPriorityRequest:
 
 
     """
@@ -22,42 +22,43 @@ class CinderExportToImageRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'os_volume_upload_image': 'CinderExportToImageOption'
+        'body': 'BatchUpdatePoliciesPriorityRequestBody'
     }
 
     attribute_map = {
-        'os_volume_upload_image': 'os-volume_upload_image'
+        'body': 'body'
     }
 
-    def __init__(self, os_volume_upload_image=None):
-        """CinderExportToImageRequestBody - a model defined in huaweicloud sdk"""
+    def __init__(self, body=None):
+        """BatchUpdatePoliciesPriorityRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._os_volume_upload_image = None
+        self._body = None
         self.discriminator = None
 
-        self.os_volume_upload_image = os_volume_upload_image
+        if body is not None:
+            self.body = body
 
     @property
-    def os_volume_upload_image(self):
-        """Gets the os_volume_upload_image of this CinderExportToImageRequestBody.
+    def body(self):
+        """Gets the body of this BatchUpdatePoliciesPriorityRequest.
 
 
-        :return: The os_volume_upload_image of this CinderExportToImageRequestBody.
-        :rtype: CinderExportToImageOption
+        :return: The body of this BatchUpdatePoliciesPriorityRequest.
+        :rtype: BatchUpdatePoliciesPriorityRequestBody
         """
-        return self._os_volume_upload_image
+        return self._body
 
-    @os_volume_upload_image.setter
-    def os_volume_upload_image(self, os_volume_upload_image):
-        """Sets the os_volume_upload_image of this CinderExportToImageRequestBody.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this BatchUpdatePoliciesPriorityRequest.
 
 
-        :param os_volume_upload_image: The os_volume_upload_image of this CinderExportToImageRequestBody.
-        :type: CinderExportToImageOption
+        :param body: The body of this BatchUpdatePoliciesPriorityRequest.
+        :type: BatchUpdatePoliciesPriorityRequestBody
         """
-        self._os_volume_upload_image = os_volume_upload_image
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -101,7 +102,7 @@ class CinderExportToImageRequestBody:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CinderExportToImageRequestBody):
+        if not isinstance(other, BatchUpdatePoliciesPriorityRequest):
             return False
 
         return self.__dict__ == other.__dict__

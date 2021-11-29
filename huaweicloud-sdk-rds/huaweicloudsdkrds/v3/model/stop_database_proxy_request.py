@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class VaultResourceIntancesResp:
+class StopDatabaseProxyRequest:
 
 
     """
@@ -22,72 +22,71 @@ class VaultResourceIntancesResp:
     sensitive_list = []
 
     openapi_types = {
-        'resources': 'list[TagResource]',
-        'total_count': 'int'
+        'x_language': 'str',
+        'instance_id': 'str'
     }
 
     attribute_map = {
-        'resources': 'resources',
-        'total_count': 'total_count'
+        'x_language': 'X-Language',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, resources=None, total_count=None):
-        """VaultResourceIntancesResp - a model defined in huaweicloud sdk"""
+    def __init__(self, x_language=None, instance_id=None):
+        """StopDatabaseProxyRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._resources = None
-        self._total_count = None
+        self._x_language = None
+        self._instance_id = None
         self.discriminator = None
 
-        if resources is not None:
-            self.resources = resources
-        if total_count is not None:
-            self.total_count = total_count
+        if x_language is not None:
+            self.x_language = x_language
+        self.instance_id = instance_id
 
     @property
-    def resources(self):
-        """Gets the resources of this VaultResourceIntancesResp.
+    def x_language(self):
+        """Gets the x_language of this StopDatabaseProxyRequest.
 
-        符合查询条件的资源列表（action为count时无此参数）。
+        语言
 
-        :return: The resources of this VaultResourceIntancesResp.
-        :rtype: list[TagResource]
+        :return: The x_language of this StopDatabaseProxyRequest.
+        :rtype: str
         """
-        return self._resources
+        return self._x_language
 
-    @resources.setter
-    def resources(self, resources):
-        """Sets the resources of this VaultResourceIntancesResp.
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this StopDatabaseProxyRequest.
 
-        符合查询条件的资源列表（action为count时无此参数）。
+        语言
 
-        :param resources: The resources of this VaultResourceIntancesResp.
-        :type: list[TagResource]
+        :param x_language: The x_language of this StopDatabaseProxyRequest.
+        :type: str
         """
-        self._resources = resources
+        self._x_language = x_language
 
     @property
-    def total_count(self):
-        """Gets the total_count of this VaultResourceIntancesResp.
+    def instance_id(self):
+        """Gets the instance_id of this StopDatabaseProxyRequest.
 
-        符合查询条件的资源总个数
+        实例ID。
 
-        :return: The total_count of this VaultResourceIntancesResp.
-        :rtype: int
+        :return: The instance_id of this StopDatabaseProxyRequest.
+        :rtype: str
         """
-        return self._total_count
+        return self._instance_id
 
-    @total_count.setter
-    def total_count(self, total_count):
-        """Sets the total_count of this VaultResourceIntancesResp.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this StopDatabaseProxyRequest.
 
-        符合查询条件的资源总个数
+        实例ID。
 
-        :param total_count: The total_count of this VaultResourceIntancesResp.
-        :type: int
+        :param instance_id: The instance_id of this StopDatabaseProxyRequest.
+        :type: str
         """
-        self._total_count = total_count
+        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -131,7 +130,7 @@ class VaultResourceIntancesResp:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, VaultResourceIntancesResp):
+        if not isinstance(other, StopDatabaseProxyRequest):
             return False
 
         return self.__dict__ == other.__dict__

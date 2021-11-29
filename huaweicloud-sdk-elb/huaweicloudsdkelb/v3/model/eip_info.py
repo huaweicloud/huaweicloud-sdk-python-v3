@@ -23,27 +23,32 @@ class EipInfo:
 
     openapi_types = {
         'eip_id': 'str',
-        'eip_address': 'str'
+        'eip_address': 'str',
+        'ip_version': 'int'
     }
 
     attribute_map = {
         'eip_id': 'eip_id',
-        'eip_address': 'eip_address'
+        'eip_address': 'eip_address',
+        'ip_version': 'ip_version'
     }
 
-    def __init__(self, eip_id=None, eip_address=None):
+    def __init__(self, eip_id=None, eip_address=None, ip_version=None):
         """EipInfo - a model defined in huaweicloud sdk"""
         
         
 
         self._eip_id = None
         self._eip_address = None
+        self._ip_version = None
         self.discriminator = None
 
         if eip_id is not None:
             self.eip_id = eip_id
         if eip_address is not None:
             self.eip_address = eip_address
+        if ip_version is not None:
+            self.ip_version = ip_version
 
     @property
     def eip_id(self):
@@ -88,6 +93,28 @@ class EipInfo:
         :type: str
         """
         self._eip_address = eip_address
+
+    @property
+    def ip_version(self):
+        """Gets the ip_version of this EipInfo.
+
+        IP版本号，取值：4表示IPv4,6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:otc,otc_test,dt,dt_test)
+
+        :return: The ip_version of this EipInfo.
+        :rtype: int
+        """
+        return self._ip_version
+
+    @ip_version.setter
+    def ip_version(self, ip_version):
+        """Sets the ip_version of this EipInfo.
+
+        IP版本号，取值：4表示IPv4,6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:otc,otc_test,dt,dt_test)
+
+        :param ip_version: The ip_version of this EipInfo.
+        :type: int
+        """
+        self._ip_version = ip_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

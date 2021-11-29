@@ -43,9 +43,12 @@ class UpdateListenerIpGroupOption:
         self._type = None
         self.discriminator = None
 
-        self.ipgroup_id = ipgroup_id
-        self.enable_ipgroup = enable_ipgroup
-        self.type = type
+        if ipgroup_id is not None:
+            self.ipgroup_id = ipgroup_id
+        if enable_ipgroup is not None:
+            self.enable_ipgroup = enable_ipgroup
+        if type is not None:
+            self.type = type
 
     @property
     def ipgroup_id(self):

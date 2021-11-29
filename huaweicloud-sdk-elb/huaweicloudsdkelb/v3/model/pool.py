@@ -93,14 +93,13 @@ class Pool:
         self.session_persistence = session_persistence
         self.ip_version = ip_version
         self.slow_start = slow_start
-        if member_deletion_protection_enable is not None:
-            self.member_deletion_protection_enable = member_deletion_protection_enable
+        self.member_deletion_protection_enable = member_deletion_protection_enable
 
     @property
     def admin_state_up(self):
         """Gets the admin_state_up of this Pool.
 
-        后端云服务器组的管理状态；该字段为预留字段，暂未启用。只支持更新为true。
+        后端云服务器组的管理状态，只支持设置为true。  不支持该字段，请勿使用。
 
         :return: The admin_state_up of this Pool.
         :rtype: bool
@@ -111,7 +110,7 @@ class Pool:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this Pool.
 
-        后端云服务器组的管理状态；该字段为预留字段，暂未启用。只支持更新为true。
+        后端云服务器组的管理状态，只支持设置为true。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this Pool.
         :type: bool
@@ -122,7 +121,7 @@ class Pool:
     def description(self):
         """Gets the description of this Pool.
 
-        后端云服务器组的描述信息
+        后端云服务器组的描述信息。
 
         :return: The description of this Pool.
         :rtype: str
@@ -133,7 +132,7 @@ class Pool:
     def description(self, description):
         """Sets the description of this Pool.
 
-        后端云服务器组的描述信息
+        后端云服务器组的描述信息。
 
         :param description: The description of this Pool.
         :type: str
@@ -188,7 +187,7 @@ class Pool:
     def lb_algorithm(self):
         """Gets the lb_algorithm of this Pool.
 
-        后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法；当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
+        后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :return: The lb_algorithm of this Pool.
         :rtype: str
@@ -199,7 +198,7 @@ class Pool:
     def lb_algorithm(self, lb_algorithm):
         """Sets the lb_algorithm of this Pool.
 
-        后端云服务器组的负载均衡算法，取值：ROUND_ROBIN：加权轮询算法；LEAST_CONNECTIONS：加权最少连接算法；SOURCE_IP：源IP算法；当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。
+        后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :param lb_algorithm: The lb_algorithm of this Pool.
         :type: str
@@ -210,7 +209,7 @@ class Pool:
     def listeners(self):
         """Gets the listeners of this Pool.
 
-        后端云服务器组关联的监听器ID的列表。
+        后端云服务器组关联的监听器ID列表。实际上只会有一个关联的监听器ID。
 
         :return: The listeners of this Pool.
         :rtype: list[ListenerRef]
@@ -221,7 +220,7 @@ class Pool:
     def listeners(self, listeners):
         """Sets the listeners of this Pool.
 
-        后端云服务器组关联的监听器ID的列表。
+        后端云服务器组关联的监听器ID列表。实际上只会有一个关联的监听器ID。
 
         :param listeners: The listeners of this Pool.
         :type: list[ListenerRef]
@@ -232,7 +231,7 @@ class Pool:
     def loadbalancers(self):
         """Gets the loadbalancers of this Pool.
 
-        后端云服务器组绑定的负载均衡器ID的列表。
+        后端云服务器组关联的负载均衡器ID列表。实际只会有一个关联的负载均衡器ID。
 
         :return: The loadbalancers of this Pool.
         :rtype: list[LoadBalancerRef]
@@ -243,7 +242,7 @@ class Pool:
     def loadbalancers(self, loadbalancers):
         """Sets the loadbalancers of this Pool.
 
-        后端云服务器组绑定的负载均衡器ID的列表。
+        后端云服务器组关联的负载均衡器ID列表。实际只会有一个关联的负载均衡器ID。
 
         :param loadbalancers: The loadbalancers of this Pool.
         :type: list[LoadBalancerRef]
@@ -254,7 +253,7 @@ class Pool:
     def members(self):
         """Gets the members of this Pool.
 
-        后端云服务器组关联的后端云服务器ID的列表。
+        后端云服务器组中的后端云服务器ID列表。
 
         :return: The members of this Pool.
         :rtype: list[MemberRef]
@@ -265,7 +264,7 @@ class Pool:
     def members(self, members):
         """Sets the members of this Pool.
 
-        后端云服务器组关联的后端云服务器ID的列表。
+        后端云服务器组中的后端云服务器ID列表。
 
         :param members: The members of this Pool.
         :type: list[MemberRef]
@@ -320,7 +319,7 @@ class Pool:
     def protocol(self):
         """Gets the protocol of this Pool.
 
-        后端云服务器组的后端协议。 使用说明：支持TCP、UDP和HTTP。listener的protocol为UDP时pool的protocol必须为UDP；listener的protocol为TCP时pool的protocol必须为TCP；listener的protocol为HTTP或TERMINATED_HTTPS时pool的protocol必须为HTTP。
+        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
 
         :return: The protocol of this Pool.
         :rtype: str
@@ -331,7 +330,7 @@ class Pool:
     def protocol(self, protocol):
         """Sets the protocol of this Pool.
 
-        后端云服务器组的后端协议。 使用说明：支持TCP、UDP和HTTP。listener的protocol为UDP时pool的protocol必须为UDP；listener的protocol为TCP时pool的protocol必须为TCP；listener的protocol为HTTP或TERMINATED_HTTPS时pool的protocol必须为HTTP。
+        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
 
         :param protocol: The protocol of this Pool.
         :type: str
@@ -362,7 +361,7 @@ class Pool:
     def ip_version(self):
         """Gets the ip_version of this Pool.
 
-        后端云服务器组支持的IP版本， 共享型：默认为v4； 性能保障型：取值范围(dualstack、v4、v6)。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。
+        后端云服务器组支持的IP版本。取值： - 共享型LB下的pool：固定为v4； - 独享型LB下的pool：dualstack、v4。当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。当协议为HTTP/HTTPS时，ip_version为v4。 [不支持IPv6，只会返回v4。](tag:otc,otc_test,dt,dt_test)
 
         :return: The ip_version of this Pool.
         :rtype: str
@@ -373,7 +372,7 @@ class Pool:
     def ip_version(self, ip_version):
         """Sets the ip_version of this Pool.
 
-        后端云服务器组支持的IP版本， 共享型：默认为v4； 性能保障型：取值范围(dualstack、v4、v6)。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。
+        后端云服务器组支持的IP版本。取值： - 共享型LB下的pool：固定为v4； - 独享型LB下的pool：dualstack、v4。当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。当协议为HTTP/HTTPS时，ip_version为v4。 [不支持IPv6，只会返回v4。](tag:otc,otc_test,dt,dt_test)
 
         :param ip_version: The ip_version of this Pool.
         :type: str
@@ -404,7 +403,7 @@ class Pool:
     def member_deletion_protection_enable(self):
         """Gets the member_deletion_protection_enable of this Pool.
 
-        是否开启误删保护，默认false不开启
+        是否开启误删保护。取值：false不开启，true开启。  > 退场时需要先关闭所有资源的删除保护开关。
 
         :return: The member_deletion_protection_enable of this Pool.
         :rtype: bool
@@ -415,7 +414,7 @@ class Pool:
     def member_deletion_protection_enable(self, member_deletion_protection_enable):
         """Sets the member_deletion_protection_enable of this Pool.
 
-        是否开启误删保护，默认false不开启
+        是否开启误删保护。取值：false不开启，true开启。  > 退场时需要先关闭所有资源的删除保护开关。
 
         :param member_deletion_protection_enable: The member_deletion_protection_enable of this Pool.
         :type: bool

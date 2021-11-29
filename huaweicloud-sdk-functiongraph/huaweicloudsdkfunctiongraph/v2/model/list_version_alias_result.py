@@ -26,7 +26,8 @@ class ListVersionAliasResult:
         'version': 'str',
         'description': 'str',
         'last_modified': 'datetime',
-        'alias_urn': 'str'
+        'alias_urn': 'str',
+        'additional_version_weights': 'dict(str, int)'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class ListVersionAliasResult:
         'version': 'version',
         'description': 'description',
         'last_modified': 'last_modified',
-        'alias_urn': 'alias_urn'
+        'alias_urn': 'alias_urn',
+        'additional_version_weights': 'additional_version_weights'
     }
 
-    def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None):
+    def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None, additional_version_weights=None):
         """ListVersionAliasResult - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +49,7 @@ class ListVersionAliasResult:
         self._description = None
         self._last_modified = None
         self._alias_urn = None
+        self._additional_version_weights = None
         self.discriminator = None
 
         self.name = name
@@ -55,6 +58,8 @@ class ListVersionAliasResult:
             self.description = description
         self.last_modified = last_modified
         self.alias_urn = alias_urn
+        if additional_version_weights is not None:
+            self.additional_version_weights = additional_version_weights
 
     @property
     def name(self):
@@ -165,6 +170,28 @@ class ListVersionAliasResult:
         :type: str
         """
         self._alias_urn = alias_urn
+
+    @property
+    def additional_version_weights(self):
+        """Gets the additional_version_weights of this ListVersionAliasResult.
+
+        灰度版本信息
+
+        :return: The additional_version_weights of this ListVersionAliasResult.
+        :rtype: dict(str, int)
+        """
+        return self._additional_version_weights
+
+    @additional_version_weights.setter
+    def additional_version_weights(self, additional_version_weights):
+        """Sets the additional_version_weights of this ListVersionAliasResult.
+
+        灰度版本信息
+
+        :param additional_version_weights: The additional_version_weights of this ListVersionAliasResult.
+        :type: dict(str, int)
+        """
+        self._additional_version_weights = additional_version_weights
 
     def to_dict(self):
         """Returns the model properties as a dict"""

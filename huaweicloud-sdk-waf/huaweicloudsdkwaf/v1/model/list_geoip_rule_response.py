@@ -23,7 +23,7 @@ class ListGeoipRuleResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'items': 'list[ListGeoIpResponseBodyItems]'
+        'items': 'list[GeOIpItem]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class ListGeoipRuleResponse(SdkResponse):
         地理位置封禁列表
 
         :return: The items of this ListGeoipRuleResponse.
-        :rtype: list[ListGeoIpResponseBodyItems]
+        :rtype: list[GeOIpItem]
         """
         return self._items
 
@@ -85,7 +85,7 @@ class ListGeoipRuleResponse(SdkResponse):
         地理位置封禁列表
 
         :param items: The items of this ListGeoipRuleResponse.
-        :type: list[ListGeoIpResponseBodyItems]
+        :type: list[GeOIpItem]
         """
         self._items = items
 

@@ -70,7 +70,7 @@ class ShowEventRequest:
     def eventid(self):
         """Gets the eventid of this ShowEventRequest.
 
-        事件ID
+        防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id
 
         :return: The eventid of this ShowEventRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ShowEventRequest:
     def eventid(self, eventid):
         """Sets the eventid of this ShowEventRequest.
 
-        事件ID
+        防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id
 
         :param eventid: The eventid of this ShowEventRequest.
         :type: str

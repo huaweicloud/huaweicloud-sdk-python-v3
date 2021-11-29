@@ -40,8 +40,10 @@ class UpdatePoolSlowStartOption:
         self._duration = None
         self.discriminator = None
 
-        self.enable = enable
-        self.duration = duration
+        if enable is not None:
+            self.enable = enable
+        if duration is not None:
+            self.duration = duration
 
     @property
     def enable(self):

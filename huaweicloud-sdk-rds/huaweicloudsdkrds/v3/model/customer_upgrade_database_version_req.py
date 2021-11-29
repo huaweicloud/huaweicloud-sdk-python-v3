@@ -44,7 +44,7 @@ class CustomerUpgradeDatabaseVersionReq:
     def delay(self):
         """Gets the delay of this CustomerUpgradeDatabaseVersionReq.
 
-        是否延迟升级。
+        是否延迟至可维护时间段内升级。 取值范围： - true：延迟升级。表示实例将在设置的可维护时间段内升级。 - false：立即升级，默认该方式。
 
         :return: The delay of this CustomerUpgradeDatabaseVersionReq.
         :rtype: bool
@@ -55,7 +55,7 @@ class CustomerUpgradeDatabaseVersionReq:
     def delay(self, delay):
         """Sets the delay of this CustomerUpgradeDatabaseVersionReq.
 
-        是否延迟升级。
+        是否延迟至可维护时间段内升级。 取值范围： - true：延迟升级。表示实例将在设置的可维护时间段内升级。 - false：立即升级，默认该方式。
 
         :param delay: The delay of this CustomerUpgradeDatabaseVersionReq.
         :type: bool

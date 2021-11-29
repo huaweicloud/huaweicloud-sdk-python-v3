@@ -46,8 +46,7 @@ class DecryptDataRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if cipher_text is not None:
-            self.cipher_text = cipher_text
+        self.cipher_text = cipher_text
         if encryption_algorithm is not None:
             self.encryption_algorithm = encryption_algorithm
         if key_id is not None:

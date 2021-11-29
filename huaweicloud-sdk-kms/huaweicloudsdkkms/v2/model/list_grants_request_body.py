@@ -46,8 +46,7 @@ class ListGrantsRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
+        self.key_id = key_id
         if limit is not None:
             self.limit = limit
         if marker is not None:

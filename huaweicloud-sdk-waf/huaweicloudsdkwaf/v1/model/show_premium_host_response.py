@@ -31,7 +31,7 @@ class ShowPremiumHostResponse(SdkResponse):
         'protocol': 'str',
         'server': 'list[PremiumWafServer]',
         'certificateid': 'str',
-        'certificatename': 'object',
+        'certificatename': 'str',
         'tls': 'str',
         'cipher': 'str',
         'proxy': 'bool',
@@ -355,7 +355,7 @@ class ShowPremiumHostResponse(SdkResponse):
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :return: The certificatename of this ShowPremiumHostResponse.
-        :rtype: object
+        :rtype: str
         """
         return self._certificatename
 
@@ -366,7 +366,7 @@ class ShowPremiumHostResponse(SdkResponse):
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificatename: The certificatename of this ShowPremiumHostResponse.
-        :type: object
+        :type: str
         """
         self._certificatename = certificatename
 

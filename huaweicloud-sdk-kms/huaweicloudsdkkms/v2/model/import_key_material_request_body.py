@@ -49,12 +49,9 @@ class ImportKeyMaterialRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
-        if import_token is not None:
-            self.import_token = import_token
-        if encrypted_key_material is not None:
-            self.encrypted_key_material = encrypted_key_material
+        self.key_id = key_id
+        self.import_token = import_token
+        self.encrypted_key_material = encrypted_key_material
         if expiration_time is not None:
             self.expiration_time = expiration_time
         if sequence is not None:

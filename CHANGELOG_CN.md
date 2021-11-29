@@ -1,3 +1,233 @@
+# 3.0.70 2021-11-29
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ResettingAppSecretV2`新增响应参数`roma_app_type`
+
+### HuaweiCloud SDK BCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListEntityMetric`响应参数`values `类型调整： `object` -> `array`
+
+### HuaweiCloud SDK CBR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListBackups`新增响应参数`provider_id`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowCluster`新增响应参数`cidrs`
+
+### HuaweiCloud SDK CloudTable
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateCluster`的请求参数名称调整： `enable_opentsdb` -> `enable_openTSDB`
+  - 接口`ListClusters`和`ShowClusterDetail`的响应参数名称调整： `enable_opentsdb` -> `enable_openTSDB`
+
+### HuaweiCloud SDK DBSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`SwitchAgent`和`SwitchRiskRule`的响应参数名称调整： `status` -> `result`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateInstance`新增请求参数`port`
+
+### HuaweiCloud SDK DSC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowScanJobs`新增响应参数`start_time`
+
+### HuaweiCloud SDK EVS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`CinderExportToImage`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`NovaShowServer`和`NovaListServersDetails`新增响应参数`os:scheduler_hints`
+
+### HuaweiCloud SDK ELB
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListApiVersions`
+    - `ListSecurityPolicies`
+    - `CreateSecurityPolicy`
+    - `ShowSecurityPolicy`
+    - `UpdateSecurityPolicy`
+    - `DeleteSecurityPolicy`
+    - `ListSystemSecurityPolicies`
+    - `ListQuotaDetails`
+    - `ChangeLoadbalancerChargeMode`
+    - `BatchUpdatePoliciesPriority`
+    - `UpdateIpList`
+    - `BatchDeleteIpList`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowQuotaDefaults`
+  - 接口`ListFlavors`和`ShowFlavor`新增响应参数`flavor_sold_out`和`lcu`, 移除响应参数`availability_zone_ids`
+  - 接口`ShowQuota`新增响应参数`members_per_pool`
+  - 接口`CreateCertificate`和`UpdateCertificate`新增请求参数`enc_certificate`和`enc_private_key`
+  - 接口`ListCertificates`和`ShowCertificate`新增响应参数`enc_certificate`和`enc_private_key`
+  - 接口`CreateLoadBalancer`新增请求参数`prepaid_options`、`autoscaling`、`id`
+  - 接口`ListLoadBalancers`新增请求参数`elb_virsubnet_type`和`autoscaling`,新增响应参数`autoscaling`和`ip_version`
+  - 接口`UpdateLoadBalancer`新增请求参数`prepaid_options`和`autoscaling`,新增响应参数`loadbalancer_id`、`order_id`、`autoscaling`、`ip_version`
+  - 接口`ShowLoadBalancer`新增响应参数`autoscaling`和`ip_version`
+  - 接口`ShowLoadBalancerStatus`新增响应参数`id`、`type`、`provisioning_status`
+  - 接口`CreateListener`新增请求参数`security_policy_id`、`enhance_l7policy_enable`
+  - 接口`ListListeners`新增请求参数`enhance_l7policy_enable`和`member_instance_id`，新增响应参数`security_policy_id`、`transparent_client_ip_enable`、`enhance_l7policy_enable`
+  - 接口`UpdateListener`新增请求参数`security_policy_id`、`enhance_l7policy_enable`，新增响应参数`security_policy_id`、`transparent_client_ip_enable`、`enhance_l7policy_enable`
+  - 接口`ShowListener`新增响应参数`security_policy_id`、`transparent_client_ip_enable`、`enhance_l7policy_enable`
+  - 接口`ListPools`新增请求参数`listener_id`和`member_instance_id`
+  - 接口`ListMembers`新增请求参数`ip_version`和`member_type`，新增响应参数`member_type`和`instance_id`
+  - 接口`UpdateMember`、`ShowMember`、`ListAllMembers`新增响应参数`member_type`和`instance_id`
+  - 接口`CreateL7Policy`新增请求参数`priority`、`redirect_url_config`、`fixed_response_config`、`conditions`
+  - 接口`ListL7Policies`新增请求参数`priority`,新增响应参数`redirect_url_config`和`fixed_response_config`
+  - 接口`UpdateL7Policy`新增请求参数`priority`、`redirect_url_config`、`fixed_response_config`、`rules`,新增响应参数`redirect_url_config`和`fixed_response_config`
+  - 接口`ShowL7Policy`新增响应参数`redirect_url_config`和`fixed_response_config`
+  - 接口`CreateL7Rule`新增请求参数`conditions`
+  - 接口`ListL7Rules`和`ShowL7Rule`新增响应参数`conditions`
+  - 接口`UpdateL7Rule`新增请求参数和响应参数`conditions`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListVersionAliases`新增响应参数`ListVersionAliases`
+  - 接口`CreateDependency`和`UpdateDependency`的请求参数`name`改为必填
+  - 接口`CreateEvent`的请求参数`name`和`content`改为必填
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`新增请求参数`enable_force_switch`
+
+### HuaweiCloud SDK GES
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateGraph`的请求参数`graphSizeTypeIndex`类型调整： `integer` -> `string`
+
+### HuaweiCloud SDK KMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateKey`的请求参数`key_alias`改为必填
+  - 接口`EnableKey`、`CancelKeyDeletion`、`ListKeys`、`ListKeyDetail`、`ShowPublicKey`、`ListGrants`、`DeleteImportedKeyMaterial`、`EnableKeyRotation`、`DisableKeyRotation`、`ShowKeyRotationStatus`的请求参数`key_id`改为必填
+  - 接口`DeleteKey`的请求参数`key_id`和`pending_days`改为必填
+  - 接口`ListKeys`新增请求参数`enterprise_project_id`
+  - 接口`CreateRandom`的请求参数`random_data_length`改为必填
+  - 接口`CreateDatakey`和`CreateDatakeyWithoutPlaintext`的请求参数`key_id`和`datakey_length`改为必填
+  - 接口`EncryptDatakey`的请求参数`key_id`、`plain_text`、`datakey_plain_length`改为必填
+  - 接口`DecryptDatakey`的请求参数`key_id`、`cipher_text`、`datakey_cipher_length`改为必填
+  - 接口`UpdateKeyAlias`的请求参数`key_id`和`key_alias`改为必填
+  - 接口`UpdateKeyDescription`的请求参数`key_id`和`key_description`改为必填
+  - 接口`CreateGrant`的请求参数`key_id`、`grantee_principal`、`operations`改为必填
+  - 接口`CancelGrant`和`CancelSelfGrant`的请求参数`key_id`和`grant_id`改为必填
+  - 接口`EncryptData`的请求参数`key_id`和`plain_text`改为必填
+  - 接口`DecryptData`的请求参数`cipher_text`改为必填
+  - 接口`CreateParametersForImport`的请求参数`key_id`和`wrapping_algorithm`改为必填
+  - 接口`ImportKeyMaterial`的请求参数`key_id`、`import_token`、`encrypted_key_material`改为必填
+  - 接口`UpdateKeyRotationInterval`的请求参数`key_id`和`rotation_interval`改为必填
+  - 接口`CreateKmsTag`新增请求参数`sequence`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ChangeProxyScale`
+    - `SearchQueryScaleFlavors`
+    - `ShowInformationAboutDatabaseProxy`
+    - `StartDatabaseProxy`
+    - `StopDatabaseProxy`
+    - `UpdateReadWeight`
+    - `ChangeTheDelayThreshold`
+    - `ShowDrReplicaStatus`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListPostgresqlDatabases`的响应参数`size`类型调整： `int32` -> `int64`
+
+### HuaweiCloud SDK SMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 修复枚举值中包含中文描述导致参数错误的问题
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListIgnoreRule`新增响应参数`items`
+  - 接口`ListEvent`新增请求参数`attacks`
+  - 接口`ShowEvent`新增响应参数`host_id`
+  - 接口`UpdateHost`新增响应参数`certificatename`
+
 # 3.0.69 2021-11-25
 
 ### HuaweiCloud SDK AOM

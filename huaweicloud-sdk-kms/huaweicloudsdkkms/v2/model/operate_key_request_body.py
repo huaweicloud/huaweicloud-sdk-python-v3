@@ -40,8 +40,7 @@ class OperateKeyRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
+        self.key_id = key_id
         if sequence is not None:
             self.sequence = sequence
 

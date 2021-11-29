@@ -12,8 +12,11 @@ class SFSTurboRegion:
 
     CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://sfs-turbo.cn-north-1.myhuaweicloud.com")
 
+    CN_SOUTH_2 = Region(id="cn-south-2", endpoint="https://sfs-turbo.cn-south-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-1": CN_NORTH_1,
+        "cn-south-2": CN_SOUTH_2,
     }
 
     @staticmethod

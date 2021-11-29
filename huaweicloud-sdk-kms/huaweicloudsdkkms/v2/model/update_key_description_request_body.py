@@ -43,10 +43,8 @@ class UpdateKeyDescriptionRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
-        if key_description is not None:
-            self.key_description = key_description
+        self.key_id = key_id
+        self.key_description = key_description
         if sequence is not None:
             self.sequence = sequence
 

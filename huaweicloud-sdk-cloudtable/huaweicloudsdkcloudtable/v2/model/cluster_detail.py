@@ -31,7 +31,7 @@ class ClusterDetail:
         'enable_dfv': 'str',
         'enable_free': 'str',
         'enable_lemon': 'str',
-        'enable_opentsdb': 'str',
+        'enable_open_tsdb': 'str',
         'status': 'str',
         'tags': 'str',
         'version': 'str',
@@ -48,14 +48,14 @@ class ClusterDetail:
         'enable_dfv': 'enable_dfv',
         'enable_free': 'enable_free',
         'enable_lemon': 'enable_lemon',
-        'enable_opentsdb': 'enable_opentsdb',
+        'enable_open_tsdb': 'enable_openTSDB',
         'status': 'status',
         'tags': 'tags',
         'version': 'version',
         'zookeeper_link': 'zookeeper_link'
     }
 
-    def __init__(self, action_progress=None, auth_mode=None, az_code=None, cluster_id=None, cluster_name=None, created=None, enable_dfv=None, enable_free=None, enable_lemon=None, enable_opentsdb=None, status=None, tags=None, version=None, zookeeper_link=None):
+    def __init__(self, action_progress=None, auth_mode=None, az_code=None, cluster_id=None, cluster_name=None, created=None, enable_dfv=None, enable_free=None, enable_lemon=None, enable_open_tsdb=None, status=None, tags=None, version=None, zookeeper_link=None):
         """ClusterDetail - a model defined in huaweicloud sdk"""
         
         
@@ -69,7 +69,7 @@ class ClusterDetail:
         self._enable_dfv = None
         self._enable_free = None
         self._enable_lemon = None
-        self._enable_opentsdb = None
+        self._enable_open_tsdb = None
         self._status = None
         self._tags = None
         self._version = None
@@ -94,8 +94,8 @@ class ClusterDetail:
             self.enable_free = enable_free
         if enable_lemon is not None:
             self.enable_lemon = enable_lemon
-        if enable_opentsdb is not None:
-            self.enable_opentsdb = enable_opentsdb
+        if enable_open_tsdb is not None:
+            self.enable_open_tsdb = enable_open_tsdb
         if status is not None:
             self.status = status
         if tags is not None:
@@ -304,26 +304,26 @@ class ClusterDetail:
         self._enable_lemon = enable_lemon
 
     @property
-    def enable_opentsdb(self):
-        """Gets the enable_opentsdb of this ClusterDetail.
+    def enable_open_tsdb(self):
+        """Gets the enable_open_tsdb of this ClusterDetail.
 
         是否开启OpenTSDB。 - false：不开启 - true：开启
 
-        :return: The enable_opentsdb of this ClusterDetail.
+        :return: The enable_open_tsdb of this ClusterDetail.
         :rtype: str
         """
-        return self._enable_opentsdb
+        return self._enable_open_tsdb
 
-    @enable_opentsdb.setter
-    def enable_opentsdb(self, enable_opentsdb):
-        """Sets the enable_opentsdb of this ClusterDetail.
+    @enable_open_tsdb.setter
+    def enable_open_tsdb(self, enable_open_tsdb):
+        """Sets the enable_open_tsdb of this ClusterDetail.
 
         是否开启OpenTSDB。 - false：不开启 - true：开启
 
-        :param enable_opentsdb: The enable_opentsdb of this ClusterDetail.
+        :param enable_open_tsdb: The enable_open_tsdb of this ClusterDetail.
         :type: str
         """
-        self._enable_opentsdb = enable_opentsdb
+        self._enable_open_tsdb = enable_open_tsdb
 
     @property
     def status(self):

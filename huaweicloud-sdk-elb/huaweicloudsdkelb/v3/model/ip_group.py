@@ -71,7 +71,7 @@ class IpGroup:
     def created_at(self):
         """Gets the created_at of this IpGroup.
 
-        IP地址组的创建时间
+        IP地址组的创建时间。
 
         :return: The created_at of this IpGroup.
         :rtype: str
@@ -82,7 +82,7 @@ class IpGroup:
     def created_at(self, created_at):
         """Sets the created_at of this IpGroup.
 
-        IP地址组的创建时间
+        IP地址组的创建时间。
 
         :param created_at: The created_at of this IpGroup.
         :type: str
@@ -115,7 +115,7 @@ class IpGroup:
     def id(self):
         """Gets the id of this IpGroup.
 
-        IP地址组的id。
+        IP地址组的ID。
 
         :return: The id of this IpGroup.
         :rtype: str
@@ -126,7 +126,7 @@ class IpGroup:
     def id(self, id):
         """Sets the id of this IpGroup.
 
-        IP地址组的id。
+        IP地址组的ID。
 
         :param id: The id of this IpGroup.
         :type: str
@@ -137,7 +137,7 @@ class IpGroup:
     def ip_list(self):
         """Gets the ip_list of this IpGroup.
 
-        IP地址组中包含的ip或网段列表。[]表示任意ip。
+        IP地址组中包含的IP或网段列表。[]表示任意IP。
 
         :return: The ip_list of this IpGroup.
         :rtype: list[IpInfo]
@@ -148,7 +148,7 @@ class IpGroup:
     def ip_list(self, ip_list):
         """Sets the ip_list of this IpGroup.
 
-        IP地址组中包含的ip或网段列表。[]表示任意ip。
+        IP地址组中包含的IP或网段列表。[]表示任意IP。
 
         :param ip_list: The ip_list of this IpGroup.
         :type: list[IpInfo]
@@ -159,7 +159,7 @@ class IpGroup:
     def listeners(self):
         """Gets the listeners of this IpGroup.
 
-        与IP地址组关联的监听器的id列表。
+        与IP地址组关联的监听器的ID列表。
 
         :return: The listeners of this IpGroup.
         :rtype: list[ListenerRef]
@@ -170,7 +170,7 @@ class IpGroup:
     def listeners(self, listeners):
         """Sets the listeners of this IpGroup.
 
-        与IP地址组关联的监听器的id列表。
+        与IP地址组关联的监听器的ID列表。
 
         :param listeners: The listeners of this IpGroup.
         :type: list[ListenerRef]
@@ -203,7 +203,7 @@ class IpGroup:
     def project_id(self):
         """Gets the project_id of this IpGroup.
 
-        IP地址组的项目id。
+        IP地址组的项目ID。
 
         :return: The project_id of this IpGroup.
         :rtype: str
@@ -214,7 +214,7 @@ class IpGroup:
     def project_id(self, project_id):
         """Sets the project_id of this IpGroup.
 
-        IP地址组的项目id。
+        IP地址组的项目ID。
 
         :param project_id: The project_id of this IpGroup.
         :type: str

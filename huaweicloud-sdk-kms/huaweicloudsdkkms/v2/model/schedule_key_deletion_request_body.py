@@ -43,10 +43,8 @@ class ScheduleKeyDeletionRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
-        if pending_days is not None:
-            self.pending_days = pending_days
+        self.key_id = key_id
+        self.pending_days = pending_days
         if sequence is not None:
             self.sequence = sequence
 

@@ -64,7 +64,7 @@ class LoadBalancerStatusMember:
     def provisioning_status(self):
         """Gets the provisioning_status of this LoadBalancerStatusMember.
 
-        provisioning的状态。 可以为：ACTIVE、PENDING_CREATE 或者ERROR。 说明：该字段为预留字段，暂未启用，默认为ACTIVE。
+        后端服务器配置状态。取值：ACTIVE表示使用中。
 
         :return: The provisioning_status of this LoadBalancerStatusMember.
         :rtype: str
@@ -75,7 +75,7 @@ class LoadBalancerStatusMember:
     def provisioning_status(self, provisioning_status):
         """Sets the provisioning_status of this LoadBalancerStatusMember.
 
-        provisioning的状态。 可以为：ACTIVE、PENDING_CREATE 或者ERROR。 说明：该字段为预留字段，暂未启用，默认为ACTIVE。
+        后端服务器配置状态。取值：ACTIVE表示使用中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusMember.
         :type: str
@@ -86,7 +86,7 @@ class LoadBalancerStatusMember:
     def address(self):
         """Gets the address of this LoadBalancerStatusMember.
 
-        后端服务器ip。
+        后端服务器的IP地址。
 
         :return: The address of this LoadBalancerStatusMember.
         :rtype: str
@@ -97,7 +97,7 @@ class LoadBalancerStatusMember:
     def address(self, address):
         """Sets the address of this LoadBalancerStatusMember.
 
-        后端服务器ip。
+        后端服务器的IP地址。
 
         :param address: The address of this LoadBalancerStatusMember.
         :type: str
@@ -108,7 +108,7 @@ class LoadBalancerStatusMember:
     def protocol_port(self):
         """Gets the protocol_port of this LoadBalancerStatusMember.
 
-        后端协议号。 取值范围[1, 65535]。
+        后端服务器的端口号。取值范围[1, 65535]。
 
         :return: The protocol_port of this LoadBalancerStatusMember.
         :rtype: int
@@ -119,7 +119,7 @@ class LoadBalancerStatusMember:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this LoadBalancerStatusMember.
 
-        后端协议号。 取值范围[1, 65535]。
+        后端服务器的端口号。取值范围[1, 65535]。
 
         :param protocol_port: The protocol_port of this LoadBalancerStatusMember.
         :type: int
@@ -152,7 +152,7 @@ class LoadBalancerStatusMember:
     def operating_status(self):
         """Gets the operating_status of this LoadBalancerStatusMember.
 
-        操作状态。 可以为：ONLINE、OFFLINE、DEGRADED、DISABLED或NO_MONITOR。默认为ONLINE。
+        后端服务器的操作状态。取值： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up=flase时，会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。
 
         :return: The operating_status of this LoadBalancerStatusMember.
         :rtype: str
@@ -163,7 +163,7 @@ class LoadBalancerStatusMember:
     def operating_status(self, operating_status):
         """Sets the operating_status of this LoadBalancerStatusMember.
 
-        操作状态。 可以为：ONLINE、OFFLINE、DEGRADED、DISABLED或NO_MONITOR。默认为ONLINE。
+        后端服务器的操作状态。取值： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up=flase时，会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。
 
         :param operating_status: The operating_status of this LoadBalancerStatusMember.
         :type: str

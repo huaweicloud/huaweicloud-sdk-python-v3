@@ -74,7 +74,7 @@ class UpdatePoolOption:
     def admin_state_up(self):
         """Gets the admin_state_up of this UpdatePoolOption.
 
-        后端云服务器组的管理状态；该字段为预留字段，暂未启用。只支持更新为true。
+        后端云服务器组的管理状态，只支持更新为true。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :return: The admin_state_up of this UpdatePoolOption.
         :rtype: bool
@@ -85,7 +85,7 @@ class UpdatePoolOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this UpdatePoolOption.
 
-        后端云服务器组的管理状态；该字段为预留字段，暂未启用。只支持更新为true。
+        后端云服务器组的管理状态，只支持更新为true。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :param admin_state_up: The admin_state_up of this UpdatePoolOption.
         :type: bool
@@ -96,7 +96,7 @@ class UpdatePoolOption:
     def description(self):
         """Gets the description of this UpdatePoolOption.
 
-        后端云服务器组的描述信息
+        后端云服务器组的描述信息。
 
         :return: The description of this UpdatePoolOption.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdatePoolOption:
     def description(self, description):
         """Sets the description of this UpdatePoolOption.
 
-        后端云服务器组的描述信息
+        后端云服务器组的描述信息。
 
         :param description: The description of this UpdatePoolOption.
         :type: str
@@ -118,7 +118,7 @@ class UpdatePoolOption:
     def lb_algorithm(self):
         """Gets the lb_algorithm of this UpdatePoolOption.
 
-        描述：后端云服务器组的负载均衡算法     取值：   1、ROUND_ROBIN：加权轮询算法；   2、LEAST_CONNECTIONS：加权最少连接算法；   3、SOURCE_IP：源IP算法；   4、QUIC_CID：连接ID算法；   约束：   1、当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。   2、只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :return: The lb_algorithm of this UpdatePoolOption.
         :rtype: str
@@ -129,7 +129,7 @@ class UpdatePoolOption:
     def lb_algorithm(self, lb_algorithm):
         """Sets the lb_algorithm of this UpdatePoolOption.
 
-        描述：后端云服务器组的负载均衡算法     取值：   1、ROUND_ROBIN：加权轮询算法；   2、LEAST_CONNECTIONS：加权最少连接算法；   3、SOURCE_IP：源IP算法；   4、QUIC_CID：连接ID算法；   约束：   1、当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。   2、只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :param lb_algorithm: The lb_algorithm of this UpdatePoolOption.
         :type: str
@@ -202,7 +202,7 @@ class UpdatePoolOption:
     def member_deletion_protection_enable(self):
         """Gets the member_deletion_protection_enable of this UpdatePoolOption.
 
-        是否开启删除保护，默认不开启
+        是否开启删除保护。取值：false不开启，true开启。 > 退场时需要先关闭所有资源的删除保护开关。
 
         :return: The member_deletion_protection_enable of this UpdatePoolOption.
         :rtype: bool
@@ -213,7 +213,7 @@ class UpdatePoolOption:
     def member_deletion_protection_enable(self, member_deletion_protection_enable):
         """Sets the member_deletion_protection_enable of this UpdatePoolOption.
 
-        是否开启删除保护，默认不开启
+        是否开启删除保护。取值：false不开启，true开启。 > 退场时需要先关闭所有资源的删除保护开关。
 
         :param member_deletion_protection_enable: The member_deletion_protection_enable of this UpdatePoolOption.
         :type: bool

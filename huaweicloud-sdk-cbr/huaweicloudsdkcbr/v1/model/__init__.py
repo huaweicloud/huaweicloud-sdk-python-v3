@@ -166,7 +166,6 @@ from huaweicloudsdkcbr.v1.model.vault_migrate_resource_req import VaultMigrateRe
 from huaweicloudsdkcbr.v1.model.vault_policy_resp import VaultPolicyResp
 from huaweicloudsdkcbr.v1.model.vault_remove_resource_req import VaultRemoveResourceReq
 from huaweicloudsdkcbr.v1.model.vault_resource_instances_req import VaultResourceInstancesReq
-from huaweicloudsdkcbr.v1.model.vault_resource_intances_resp import VaultResourceIntancesResp
 from huaweicloudsdkcbr.v1.model.vault_tags_create_req import VaultTagsCreateReq
 from huaweicloudsdkcbr.v1.model.vault_update import VaultUpdate
 from huaweicloudsdkcbr.v1.model.vault_update_req import VaultUpdateReq

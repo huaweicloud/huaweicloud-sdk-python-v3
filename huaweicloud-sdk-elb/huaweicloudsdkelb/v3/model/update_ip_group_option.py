@@ -98,7 +98,7 @@ class UpdateIpGroupOption:
     def ip_list(self):
         """Gets the ip_list of this UpdateIpGroupOption.
 
-        IP地址组中包含的ip列表。
+        IP地址组中包含的IP列表。
 
         :return: The ip_list of this UpdateIpGroupOption.
         :rtype: list[UpadateIpGroupIpOption]
@@ -109,7 +109,7 @@ class UpdateIpGroupOption:
     def ip_list(self, ip_list):
         """Sets the ip_list of this UpdateIpGroupOption.
 
-        IP地址组中包含的ip列表。
+        IP地址组中包含的IP列表。
 
         :param ip_list: The ip_list of this UpdateIpGroupOption.
         :type: list[UpadateIpGroupIpOption]

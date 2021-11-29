@@ -48,7 +48,7 @@ class ListKmsByTagsRequest:
     def resource_instances(self):
         """Gets the resource_instances of this ListKmsByTagsRequest.
 
-        资源实例，默认值为resource_instances
+        资源实例，固定值为resource_instances
 
         :return: The resource_instances of this ListKmsByTagsRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ListKmsByTagsRequest:
     def resource_instances(self, resource_instances):
         """Sets the resource_instances of this ListKmsByTagsRequest.
 
-        资源实例，默认值为resource_instances
+        资源实例，固定值为resource_instances
 
         :param resource_instances: The resource_instances of this ListKmsByTagsRequest.
         :type: str

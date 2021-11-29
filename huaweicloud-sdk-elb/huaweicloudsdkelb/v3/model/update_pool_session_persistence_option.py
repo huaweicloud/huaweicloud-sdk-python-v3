@@ -45,7 +45,8 @@ class UpdatePoolSessionPersistenceOption:
 
         if cookie_name is not None:
             self.cookie_name = cookie_name
-        self.type = type
+        if type is not None:
+            self.type = type
         if persistence_timeout is not None:
             self.persistence_timeout = persistence_timeout
 
@@ -53,7 +54,7 @@ class UpdatePoolSessionPersistenceOption:
     def cookie_name(self):
         """Gets the cookie_name of this UpdatePoolSessionPersistenceOption.
 
-        cookie名称。 只有当type为APP_COOKIE时才支持。 格式要求：仅支持字母数字-_. 
+        cookie名称。  格式：仅支持字母、数字、中划线(-)、下划线(_)和点号(.)。  使用说明： - 只有当type为APP_COOKIE时才有效。其他情况下传该字段会报错。
 
         :return: The cookie_name of this UpdatePoolSessionPersistenceOption.
         :rtype: str
@@ -64,7 +65,7 @@ class UpdatePoolSessionPersistenceOption:
     def cookie_name(self, cookie_name):
         """Sets the cookie_name of this UpdatePoolSessionPersistenceOption.
 
-        cookie名称。 只有当type为APP_COOKIE时才支持。 格式要求：仅支持字母数字-_. 
+        cookie名称。  格式：仅支持字母、数字、中划线(-)、下划线(_)和点号(.)。  使用说明： - 只有当type为APP_COOKIE时才有效。其他情况下传该字段会报错。
 
         :param cookie_name: The cookie_name of this UpdatePoolSessionPersistenceOption.
         :type: str
@@ -75,7 +76,7 @@ class UpdatePoolSessionPersistenceOption:
     def type(self):
         """Gets the type of this UpdatePoolSessionPersistenceOption.
 
-        描述：类型，可以为SOURCE_IP、HTTP_COOKIE、APP_COOKIE。   约束：   1、当pool的protocol为TCP、UDP、QUIC时，只按SOURCE_IP生效；   2、当pool的protocol为HTTP、HTTPS时，只按HTTP_COOKIE、APP_COOKIE生效。  
+        描述：类型，可以为SOURCE_IP、HTTP_COOKIE、APP_COOKIE。  使用说明： - 当pool的protocol为TCP、UDP、QUIC时，只按SOURCE_IP生效； - 当pool的protocol为HTTP、HTTPS时，只按HTTP_COOKIE、APP_COOKIE生效。
 
         :return: The type of this UpdatePoolSessionPersistenceOption.
         :rtype: str
@@ -86,7 +87,7 @@ class UpdatePoolSessionPersistenceOption:
     def type(self, type):
         """Sets the type of this UpdatePoolSessionPersistenceOption.
 
-        描述：类型，可以为SOURCE_IP、HTTP_COOKIE、APP_COOKIE。   约束：   1、当pool的protocol为TCP、UDP、QUIC时，只按SOURCE_IP生效；   2、当pool的protocol为HTTP、HTTPS时，只按HTTP_COOKIE、APP_COOKIE生效。  
+        描述：类型，可以为SOURCE_IP、HTTP_COOKIE、APP_COOKIE。  使用说明： - 当pool的protocol为TCP、UDP、QUIC时，只按SOURCE_IP生效； - 当pool的protocol为HTTP、HTTPS时，只按HTTP_COOKIE、APP_COOKIE生效。
 
         :param type: The type of this UpdatePoolSessionPersistenceOption.
         :type: str

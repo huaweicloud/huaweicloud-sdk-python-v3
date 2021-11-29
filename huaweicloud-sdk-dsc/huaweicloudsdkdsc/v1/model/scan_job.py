@@ -32,7 +32,8 @@ class ScanJob:
         'rule_groups': 'list[str]',
         'status': 'str',
         'topic_urn': 'str',
-        'use_nlp': 'bool'
+        'use_nlp': 'bool',
+        'start_time': 'int'
     }
 
     attribute_map = {
@@ -46,10 +47,11 @@ class ScanJob:
         'rule_groups': 'rule_groups',
         'status': 'status',
         'topic_urn': 'topic_urn',
-        'use_nlp': 'use_nlp'
+        'use_nlp': 'use_nlp',
+        'start_time': 'start_time'
     }
 
-    def __init__(self, create_time=None, cycle=None, id=None, last_run_time=None, last_scan_risk=None, name=None, open=None, rule_groups=None, status=None, topic_urn=None, use_nlp=None):
+    def __init__(self, create_time=None, cycle=None, id=None, last_run_time=None, last_scan_risk=None, name=None, open=None, rule_groups=None, status=None, topic_urn=None, use_nlp=None, start_time=None):
         """ScanJob - a model defined in huaweicloud sdk"""
         
         
@@ -65,6 +67,7 @@ class ScanJob:
         self._status = None
         self._topic_urn = None
         self._use_nlp = None
+        self._start_time = None
         self.discriminator = None
 
         if create_time is not None:
@@ -89,6 +92,8 @@ class ScanJob:
             self.topic_urn = topic_urn
         if use_nlp is not None:
             self.use_nlp = use_nlp
+        if start_time is not None:
+            self.start_time = start_time
 
     @property
     def create_time(self):
@@ -331,6 +336,28 @@ class ScanJob:
         :type: bool
         """
         self._use_nlp = use_nlp
+
+    @property
+    def start_time(self):
+        """Gets the start_time of this ScanJob.
+
+        任务启动时间
+
+        :return: The start_time of this ScanJob.
+        :rtype: int
+        """
+        return self._start_time
+
+    @start_time.setter
+    def start_time(self, start_time):
+        """Sets the start_time of this ScanJob.
+
+        任务启动时间
+
+        :param start_time: The start_time of this ScanJob.
+        :type: int
+        """
+        self._start_time = start_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

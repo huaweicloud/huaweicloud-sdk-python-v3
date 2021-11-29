@@ -1614,7 +1614,7 @@ class WafAsyncClient(Client):
         :return: ListEventResponse
         """
 
-        all_params = ['enterprise_project_id', 'recent', '_from', 'to', 'hosts', 'page', 'pagesize']
+        all_params = ['enterprise_project_id', 'recent', 'attacks', '_from', 'to', 'hosts', 'page', 'pagesize']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1629,6 +1629,9 @@ class WafAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'recent' in local_var_params:
             query_params.append(('recent', local_var_params['recent']))
+        if 'attacks' in local_var_params:
+            query_params.append(('attacks', local_var_params['attacks']))
+            collection_formats['attacks'] = 'csv'
         if '_from' in local_var_params:
             query_params.append(('from', local_var_params['_from']))
         if 'to' in local_var_params:

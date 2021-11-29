@@ -63,7 +63,7 @@ class CreateIpGroupOption:
     def project_id(self):
         """Gets the project_id of this CreateIpGroupOption.
 
-        IP地址组的租户id
+        IP地址组所在的项目ID。
 
         :return: The project_id of this CreateIpGroupOption.
         :rtype: str
@@ -74,7 +74,7 @@ class CreateIpGroupOption:
     def project_id(self, project_id):
         """Sets the project_id of this CreateIpGroupOption.
 
-        IP地址组的租户id
+        IP地址组所在的项目ID。
 
         :param project_id: The project_id of this CreateIpGroupOption.
         :type: str
@@ -85,7 +85,7 @@ class CreateIpGroupOption:
     def description(self):
         """Gets the description of this CreateIpGroupOption.
 
-        IP地址组的描述信息
+        IP地址组的描述。
 
         :return: The description of this CreateIpGroupOption.
         :rtype: str
@@ -96,7 +96,7 @@ class CreateIpGroupOption:
     def description(self, description):
         """Sets the description of this CreateIpGroupOption.
 
-        IP地址组的描述信息
+        IP地址组的描述。
 
         :param description: The description of this CreateIpGroupOption.
         :type: str
@@ -107,7 +107,7 @@ class CreateIpGroupOption:
     def name(self):
         """Gets the name of this CreateIpGroupOption.
 
-        IP地址组的名称
+        IP地址组的名称。
 
         :return: The name of this CreateIpGroupOption.
         :rtype: str
@@ -118,7 +118,7 @@ class CreateIpGroupOption:
     def name(self, name):
         """Sets the name of this CreateIpGroupOption.
 
-        IP地址组的名称
+        IP地址组的名称。
 
         :param name: The name of this CreateIpGroupOption.
         :type: str
@@ -129,7 +129,7 @@ class CreateIpGroupOption:
     def ip_list(self):
         """Gets the ip_list of this CreateIpGroupOption.
 
-        IP地址组中包含的ip或网段列表。[]表示任意ip。
+        IP地址组中包含的IP或网段列表。[]表示任意IP。
 
         :return: The ip_list of this CreateIpGroupOption.
         :rtype: list[CreateIpGroupIpOption]
@@ -140,7 +140,7 @@ class CreateIpGroupOption:
     def ip_list(self, ip_list):
         """Sets the ip_list of this CreateIpGroupOption.
 
-        IP地址组中包含的ip或网段列表。[]表示任意ip。
+        IP地址组中包含的IP或网段列表。[]表示任意IP。
 
         :param ip_list: The ip_list of this CreateIpGroupOption.
         :type: list[CreateIpGroupIpOption]
@@ -151,7 +151,7 @@ class CreateIpGroupOption:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateIpGroupOption.
 
-        企业项目id
+        IP地址组所在的企业项目ID。
 
         :return: The enterprise_project_id of this CreateIpGroupOption.
         :rtype: str
@@ -162,7 +162,7 @@ class CreateIpGroupOption:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateIpGroupOption.
 
-        企业项目id
+        IP地址组所在的企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateIpGroupOption.
         :type: str

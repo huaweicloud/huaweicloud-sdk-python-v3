@@ -32,8 +32,10 @@ class UpdateLoadBalancerOption:
         'l7_flavor_id': 'str',
         'ipv6_bandwidth': 'BandwidthRef',
         'ip_target_enable': 'bool',
+        'elb_virsubnet_ids': 'list[str]',
         'deletion_protection_enable': 'bool',
-        'elb_virsubnet_ids': 'list[str]'
+        'prepaid_options': 'PrepaidUpdateOption',
+        'autoscaling': 'UpdateLoadbalancerAutoscalingOption'
     }
 
     attribute_map = {
@@ -47,11 +49,13 @@ class UpdateLoadBalancerOption:
         'l7_flavor_id': 'l7_flavor_id',
         'ipv6_bandwidth': 'ipv6_bandwidth',
         'ip_target_enable': 'ip_target_enable',
+        'elb_virsubnet_ids': 'elb_virsubnet_ids',
         'deletion_protection_enable': 'deletion_protection_enable',
-        'elb_virsubnet_ids': 'elb_virsubnet_ids'
+        'prepaid_options': 'prepaid_options',
+        'autoscaling': 'autoscaling'
     }
 
-    def __init__(self, name=None, admin_state_up=None, description=None, ipv6_vip_virsubnet_id=None, vip_subnet_cidr_id=None, vip_address=None, l4_flavor_id=None, l7_flavor_id=None, ipv6_bandwidth=None, ip_target_enable=None, deletion_protection_enable=None, elb_virsubnet_ids=None):
+    def __init__(self, name=None, admin_state_up=None, description=None, ipv6_vip_virsubnet_id=None, vip_subnet_cidr_id=None, vip_address=None, l4_flavor_id=None, l7_flavor_id=None, ipv6_bandwidth=None, ip_target_enable=None, elb_virsubnet_ids=None, deletion_protection_enable=None, prepaid_options=None, autoscaling=None):
         """UpdateLoadBalancerOption - a model defined in huaweicloud sdk"""
         
         
@@ -66,8 +70,10 @@ class UpdateLoadBalancerOption:
         self._l7_flavor_id = None
         self._ipv6_bandwidth = None
         self._ip_target_enable = None
-        self._deletion_protection_enable = None
         self._elb_virsubnet_ids = None
+        self._deletion_protection_enable = None
+        self._prepaid_options = None
+        self._autoscaling = None
         self.discriminator = None
 
         if name is not None:
@@ -90,16 +96,20 @@ class UpdateLoadBalancerOption:
             self.ipv6_bandwidth = ipv6_bandwidth
         if ip_target_enable is not None:
             self.ip_target_enable = ip_target_enable
-        if deletion_protection_enable is not None:
-            self.deletion_protection_enable = deletion_protection_enable
         if elb_virsubnet_ids is not None:
             self.elb_virsubnet_ids = elb_virsubnet_ids
+        if deletion_protection_enable is not None:
+            self.deletion_protection_enable = deletion_protection_enable
+        if prepaid_options is not None:
+            self.prepaid_options = prepaid_options
+        if autoscaling is not None:
+            self.autoscaling = autoscaling
 
     @property
     def name(self):
         """Gets the name of this UpdateLoadBalancerOption.
 
-        负载均衡器名称。 
+        负载均衡器的名称。
 
         :return: The name of this UpdateLoadBalancerOption.
         :rtype: str
@@ -110,7 +120,7 @@ class UpdateLoadBalancerOption:
     def name(self, name):
         """Sets the name of this UpdateLoadBalancerOption.
 
-        负载均衡器名称。 
+        负载均衡器的名称。
 
         :param name: The name of this UpdateLoadBalancerOption.
         :type: str
@@ -121,7 +131,7 @@ class UpdateLoadBalancerOption:
     def admin_state_up(self):
         """Gets the admin_state_up of this UpdateLoadBalancerOption.
 
-        负载均衡器的管理状态。 说明：负载均衡器的管理状态。只支持设定为true。
+        负载均衡器的管理状态。只能设置为true。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :return: The admin_state_up of this UpdateLoadBalancerOption.
         :rtype: bool
@@ -132,7 +142,7 @@ class UpdateLoadBalancerOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this UpdateLoadBalancerOption.
 
-        负载均衡器的管理状态。 说明：负载均衡器的管理状态。只支持设定为true。
+        负载均衡器的管理状态。只能设置为true。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :param admin_state_up: The admin_state_up of this UpdateLoadBalancerOption.
         :type: bool
@@ -143,7 +153,7 @@ class UpdateLoadBalancerOption:
     def description(self):
         """Gets the description of this UpdateLoadBalancerOption.
 
-        负载均衡器功能说明。
+        负载均衡器的描述。
 
         :return: The description of this UpdateLoadBalancerOption.
         :rtype: str
@@ -154,7 +164,7 @@ class UpdateLoadBalancerOption:
     def description(self, description):
         """Sets the description of this UpdateLoadBalancerOption.
 
-        负载均衡器功能说明。
+        负载均衡器的描述。
 
         :param description: The description of this UpdateLoadBalancerOption.
         :type: str
@@ -165,7 +175,7 @@ class UpdateLoadBalancerOption:
     def ipv6_vip_virsubnet_id(self):
         """Gets the ipv6_vip_virsubnet_id of this UpdateLoadBalancerOption.
 
-        双栈实例对应v6的网络id 。 注： 1.默认为空，只有开启IPv6时才会传入。 2.仅当guaranteed是true的场合，才支持更新。 3.解绑ipv6的情况下，输入null
+        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。 通过更新ipv6_vip_virsubnet_id可以更新负载均衡器所在IPv6子网，并且负载均衡器的内网IPv6地址将发生变化。 ipv6_vip_virsubnet_id对应的子网必须属于当前负载均衡器所在VPC。 注： 1.只有子网开启IPv6时才可以传入。 2.仅当guaranteed是true的场合，才支持更新。 3.传入为null表示解绑IPv6子网。 [不支持IPv6，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :return: The ipv6_vip_virsubnet_id of this UpdateLoadBalancerOption.
         :rtype: str
@@ -176,7 +186,7 @@ class UpdateLoadBalancerOption:
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
         """Sets the ipv6_vip_virsubnet_id of this UpdateLoadBalancerOption.
 
-        双栈实例对应v6的网络id 。 注： 1.默认为空，只有开启IPv6时才会传入。 2.仅当guaranteed是true的场合，才支持更新。 3.解绑ipv6的情况下，输入null
+        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。 通过更新ipv6_vip_virsubnet_id可以更新负载均衡器所在IPv6子网，并且负载均衡器的内网IPv6地址将发生变化。 ipv6_vip_virsubnet_id对应的子网必须属于当前负载均衡器所在VPC。 注： 1.只有子网开启IPv6时才可以传入。 2.仅当guaranteed是true的场合，才支持更新。 3.传入为null表示解绑IPv6子网。 [不支持IPv6，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this UpdateLoadBalancerOption.
         :type: str
@@ -187,7 +197,7 @@ class UpdateLoadBalancerOption:
     def vip_subnet_cidr_id(self):
         """Gets the vip_subnet_cidr_id of this UpdateLoadBalancerOption.
 
-        负载均衡器所在的子网ID。 注： 1.仅当guaranteed是true的场合，才支持更新。 2.解绑ipv4私网的情况下，输入null
+        负载均衡器所在的IPv4子网ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。 通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的内网IPv4地址将发生变化。 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。更新后将使用vip_address对应的IP作为负载均衡器的内网IPv4地址。 vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 注： 1.只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 2.传入null表示解绑IPv4子网。
 
         :return: The vip_subnet_cidr_id of this UpdateLoadBalancerOption.
         :rtype: str
@@ -198,7 +208,7 @@ class UpdateLoadBalancerOption:
     def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
         """Sets the vip_subnet_cidr_id of this UpdateLoadBalancerOption.
 
-        负载均衡器所在的子网ID。 注： 1.仅当guaranteed是true的场合，才支持更新。 2.解绑ipv4私网的情况下，输入null
+        负载均衡器所在的IPv4子网ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。 通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的内网IPv4地址将发生变化。 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。更新后将使用vip_address对应的IP作为负载均衡器的内网IPv4地址。 vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 注： 1.只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 2.传入null表示解绑IPv4子网。
 
         :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this UpdateLoadBalancerOption.
         :type: str
@@ -209,7 +219,7 @@ class UpdateLoadBalancerOption:
     def vip_address(self):
         """Gets the vip_address of this UpdateLoadBalancerOption.
 
-        负载均衡器的虚拟IP。 说明： 1.传入vip_address时必须传入vip_subnet_cidr_id 2.不传入vip_address，自动分配虚拟IP。 3.传入vip_address，需要保证该ip地址在子网中未被占用 注：仅当guaranteed是true的场合，才支持更新。
+        负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  注：仅当guaranteed是true的场合，才支持更新。
 
         :return: The vip_address of this UpdateLoadBalancerOption.
         :rtype: str
@@ -220,7 +230,7 @@ class UpdateLoadBalancerOption:
     def vip_address(self, vip_address):
         """Sets the vip_address of this UpdateLoadBalancerOption.
 
-        负载均衡器的虚拟IP。 说明： 1.传入vip_address时必须传入vip_subnet_cidr_id 2.不传入vip_address，自动分配虚拟IP。 3.传入vip_address，需要保证该ip地址在子网中未被占用 注：仅当guaranteed是true的场合，才支持更新。
+        负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  注：仅当guaranteed是true的场合，才支持更新。
 
         :param vip_address: The vip_address of this UpdateLoadBalancerOption.
         :type: str
@@ -231,7 +241,7 @@ class UpdateLoadBalancerOption:
     def l4_flavor_id(self):
         """Gets the l4_flavor_id of this UpdateLoadBalancerOption.
 
-        四层Flavor。 注：1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null，只允许改大，不允许改小。
+        四层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null，只允许改大，不允许改小。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hc,hws,hcso)
 
         :return: The l4_flavor_id of this UpdateLoadBalancerOption.
         :rtype: str
@@ -242,7 +252,7 @@ class UpdateLoadBalancerOption:
     def l4_flavor_id(self, l4_flavor_id):
         """Sets the l4_flavor_id of this UpdateLoadBalancerOption.
 
-        四层Flavor。 注：1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null，只允许改大，不允许改小。
+        四层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null，只允许改大，不允许改小。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hc,hws,hcso)
 
         :param l4_flavor_id: The l4_flavor_id of this UpdateLoadBalancerOption.
         :type: str
@@ -253,7 +263,7 @@ class UpdateLoadBalancerOption:
     def l7_flavor_id(self):
         """Gets the l7_flavor_id of this UpdateLoadBalancerOption.
 
-        七层Flavor。 注：1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null；只允许改大，不允许改小。
+        七层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null；只允许改大，不允许改小。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hc,hws,hcso)
 
         :return: The l7_flavor_id of this UpdateLoadBalancerOption.
         :rtype: str
@@ -264,7 +274,7 @@ class UpdateLoadBalancerOption:
     def l7_flavor_id(self, l7_flavor_id):
         """Sets the l7_flavor_id of this UpdateLoadBalancerOption.
 
-        七层Flavor。 注：1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null；只允许改大，不允许改小。
+        七层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null；只允许改大，不允许改小。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hc,hws,hcso)
 
         :param l7_flavor_id: The l7_flavor_id of this UpdateLoadBalancerOption.
         :type: str
@@ -295,7 +305,7 @@ class UpdateLoadBalancerOption:
     def ip_target_enable(self):
         """Gets the ip_target_enable of this UpdateLoadBalancerOption.
 
-        是否启用跨VPC后端转发，值只允许为true
+        是否启用跨VPC后端转发，值只允许为true。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :return: The ip_target_enable of this UpdateLoadBalancerOption.
         :rtype: bool
@@ -306,7 +316,7 @@ class UpdateLoadBalancerOption:
     def ip_target_enable(self, ip_target_enable):
         """Sets the ip_target_enable of this UpdateLoadBalancerOption.
 
-        是否启用跨VPC后端转发，值只允许为true
+        是否启用跨VPC后端转发，值只允许为true。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :param ip_target_enable: The ip_target_enable of this UpdateLoadBalancerOption.
         :type: bool
@@ -314,32 +324,10 @@ class UpdateLoadBalancerOption:
         self._ip_target_enable = ip_target_enable
 
     @property
-    def deletion_protection_enable(self):
-        """Gets the deletion_protection_enable of this UpdateLoadBalancerOption.
-
-        是否开启删除保护
-
-        :return: The deletion_protection_enable of this UpdateLoadBalancerOption.
-        :rtype: bool
-        """
-        return self._deletion_protection_enable
-
-    @deletion_protection_enable.setter
-    def deletion_protection_enable(self, deletion_protection_enable):
-        """Sets the deletion_protection_enable of this UpdateLoadBalancerOption.
-
-        是否开启删除保护
-
-        :param deletion_protection_enable: The deletion_protection_enable of this UpdateLoadBalancerOption.
-        :type: bool
-        """
-        self._deletion_protection_enable = deletion_protection_enable
-
-    @property
     def elb_virsubnet_ids(self):
         """Gets the elb_virsubnet_ids of this UpdateLoadBalancerOption.
 
-        【描述】下联面网络ID列表，若该字段不指定，在loadbalancer所属的VPC中任意选一个网络id，优选双栈网络。 【约束】 1、所有ID同属一个VPC 2、不允许移除已被ELB使用的子网 3、不支持边缘云子网 4、负载均衡实例不处于ACTIVE状态时，不支持该字段更新 
+        下联面子网的网络ID列表。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。 该参数将全量更新LB的下联面子网，即若LB原有的下联面子网网络ID不在该字段数组中，则将移除LB与该下联面子网的关联关系。但不允许移除已被ELB使用的子网。 使用说明： - 所有ID同属于该LB所在的VPC。 - 不支持边缘云子网。
 
         :return: The elb_virsubnet_ids of this UpdateLoadBalancerOption.
         :rtype: list[str]
@@ -350,12 +338,74 @@ class UpdateLoadBalancerOption:
     def elb_virsubnet_ids(self, elb_virsubnet_ids):
         """Sets the elb_virsubnet_ids of this UpdateLoadBalancerOption.
 
-        【描述】下联面网络ID列表，若该字段不指定，在loadbalancer所属的VPC中任意选一个网络id，优选双栈网络。 【约束】 1、所有ID同属一个VPC 2、不允许移除已被ELB使用的子网 3、不支持边缘云子网 4、负载均衡实例不处于ACTIVE状态时，不支持该字段更新 
+        下联面子网的网络ID列表。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。 该参数将全量更新LB的下联面子网，即若LB原有的下联面子网网络ID不在该字段数组中，则将移除LB与该下联面子网的关联关系。但不允许移除已被ELB使用的子网。 使用说明： - 所有ID同属于该LB所在的VPC。 - 不支持边缘云子网。
 
         :param elb_virsubnet_ids: The elb_virsubnet_ids of this UpdateLoadBalancerOption.
         :type: list[str]
         """
         self._elb_virsubnet_ids = elb_virsubnet_ids
+
+    @property
+    def deletion_protection_enable(self):
+        """Gets the deletion_protection_enable of this UpdateLoadBalancerOption.
+
+        是否开启删除保护。取值：false不开启，true开启。 > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用](tag:otc,otc_test,dt,dt_test)
+
+        :return: The deletion_protection_enable of this UpdateLoadBalancerOption.
+        :rtype: bool
+        """
+        return self._deletion_protection_enable
+
+    @deletion_protection_enable.setter
+    def deletion_protection_enable(self, deletion_protection_enable):
+        """Sets the deletion_protection_enable of this UpdateLoadBalancerOption.
+
+        是否开启删除保护。取值：false不开启，true开启。 > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用](tag:otc,otc_test,dt,dt_test)
+
+        :param deletion_protection_enable: The deletion_protection_enable of this UpdateLoadBalancerOption.
+        :type: bool
+        """
+        self._deletion_protection_enable = deletion_protection_enable
+
+    @property
+    def prepaid_options(self):
+        """Gets the prepaid_options of this UpdateLoadBalancerOption.
+
+
+        :return: The prepaid_options of this UpdateLoadBalancerOption.
+        :rtype: PrepaidUpdateOption
+        """
+        return self._prepaid_options
+
+    @prepaid_options.setter
+    def prepaid_options(self, prepaid_options):
+        """Sets the prepaid_options of this UpdateLoadBalancerOption.
+
+
+        :param prepaid_options: The prepaid_options of this UpdateLoadBalancerOption.
+        :type: PrepaidUpdateOption
+        """
+        self._prepaid_options = prepaid_options
+
+    @property
+    def autoscaling(self):
+        """Gets the autoscaling of this UpdateLoadBalancerOption.
+
+
+        :return: The autoscaling of this UpdateLoadBalancerOption.
+        :rtype: UpdateLoadbalancerAutoscalingOption
+        """
+        return self._autoscaling
+
+    @autoscaling.setter
+    def autoscaling(self, autoscaling):
+        """Sets the autoscaling of this UpdateLoadBalancerOption.
+
+
+        :param autoscaling: The autoscaling of this UpdateLoadBalancerOption.
+        :type: UpdateLoadbalancerAutoscalingOption
+        """
+        self._autoscaling = autoscaling
 
     def to_dict(self):
         """Returns the model properties as a dict"""

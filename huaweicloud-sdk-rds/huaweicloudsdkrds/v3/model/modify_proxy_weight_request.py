@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowQuotaDefaultsResponse(SdkResponse):
+class ModifyProxyWeightRequest:
 
 
     """
@@ -22,70 +22,70 @@ class ShowQuotaDefaultsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'request_id': 'str',
-        'quota': 'Quota'
+        'master_weight': 'str',
+        'readonly_instances': 'list[ProxyReadonlyInstances]'
     }
 
     attribute_map = {
-        'request_id': 'request_id',
-        'quota': 'quota'
+        'master_weight': 'master_weight',
+        'readonly_instances': 'readonly_instances'
     }
 
-    def __init__(self, request_id=None, quota=None):
-        """ShowQuotaDefaultsResponse - a model defined in huaweicloud sdk"""
+    def __init__(self, master_weight=None, readonly_instances=None):
+        """ModifyProxyWeightRequest - a model defined in huaweicloud sdk"""
         
-        super(ShowQuotaDefaultsResponse, self).__init__()
+        
 
-        self._request_id = None
-        self._quota = None
+        self._master_weight = None
+        self._readonly_instances = None
         self.discriminator = None
 
-        if request_id is not None:
-            self.request_id = request_id
-        if quota is not None:
-            self.quota = quota
+        self.master_weight = master_weight
+        self.readonly_instances = readonly_instances
 
     @property
-    def request_id(self):
-        """Gets the request_id of this ShowQuotaDefaultsResponse.
+    def master_weight(self):
+        """Gets the master_weight of this ModifyProxyWeightRequest.
 
-        请求ID。  注：自动生成 。
+        主实例权重，取值范围为0~1000。
 
-        :return: The request_id of this ShowQuotaDefaultsResponse.
+        :return: The master_weight of this ModifyProxyWeightRequest.
         :rtype: str
         """
-        return self._request_id
+        return self._master_weight
 
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this ShowQuotaDefaultsResponse.
+    @master_weight.setter
+    def master_weight(self, master_weight):
+        """Sets the master_weight of this ModifyProxyWeightRequest.
 
-        请求ID。  注：自动生成 。
+        主实例权重，取值范围为0~1000。
 
-        :param request_id: The request_id of this ShowQuotaDefaultsResponse.
+        :param master_weight: The master_weight of this ModifyProxyWeightRequest.
         :type: str
         """
-        self._request_id = request_id
+        self._master_weight = master_weight
 
     @property
-    def quota(self):
-        """Gets the quota of this ShowQuotaDefaultsResponse.
+    def readonly_instances(self):
+        """Gets the readonly_instances of this ModifyProxyWeightRequest.
 
+        只读实例信息。
 
-        :return: The quota of this ShowQuotaDefaultsResponse.
-        :rtype: Quota
+        :return: The readonly_instances of this ModifyProxyWeightRequest.
+        :rtype: list[ProxyReadonlyInstances]
         """
-        return self._quota
+        return self._readonly_instances
 
-    @quota.setter
-    def quota(self, quota):
-        """Sets the quota of this ShowQuotaDefaultsResponse.
+    @readonly_instances.setter
+    def readonly_instances(self, readonly_instances):
+        """Sets the readonly_instances of this ModifyProxyWeightRequest.
 
+        只读实例信息。
 
-        :param quota: The quota of this ShowQuotaDefaultsResponse.
-        :type: Quota
+        :param readonly_instances: The readonly_instances of this ModifyProxyWeightRequest.
+        :type: list[ProxyReadonlyInstances]
         """
-        self._quota = quota
+        self._readonly_instances = readonly_instances
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -129,7 +129,7 @@ class ShowQuotaDefaultsResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowQuotaDefaultsResponse):
+        if not isinstance(other, ModifyProxyWeightRequest):
             return False
 
         return self.__dict__ == other.__dict__

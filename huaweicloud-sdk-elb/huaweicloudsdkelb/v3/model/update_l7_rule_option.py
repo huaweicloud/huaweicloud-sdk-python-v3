@@ -26,7 +26,8 @@ class UpdateL7RuleOption:
         'compare_type': 'str',
         'invert': 'bool',
         'key': 'str',
-        'value': 'str'
+        'value': 'str',
+        'conditions': 'list[UpdateRuleCondition]'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class UpdateL7RuleOption:
         'compare_type': 'compare_type',
         'invert': 'invert',
         'key': 'key',
-        'value': 'value'
+        'value': 'value',
+        'conditions': 'conditions'
     }
 
-    def __init__(self, admin_state_up=None, compare_type=None, invert=None, key=None, value=None):
+    def __init__(self, admin_state_up=None, compare_type=None, invert=None, key=None, value=None, conditions=None):
         """UpdateL7RuleOption - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +49,7 @@ class UpdateL7RuleOption:
         self._invert = None
         self._key = None
         self._value = None
+        self._conditions = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -59,12 +62,14 @@ class UpdateL7RuleOption:
             self.key = key
         if value is not None:
             self.value = value
+        if conditions is not None:
+            self.conditions = conditions
 
     @property
     def admin_state_up(self):
         """Gets the admin_state_up of this UpdateL7RuleOption.
 
-        转发规则的管理状态；该字段为预留字段，暂未启用。默认为true。
+        转发规则的管理状态，默认为true。  不支持该字段，请勿使用。
 
         :return: The admin_state_up of this UpdateL7RuleOption.
         :rtype: bool
@@ -75,7 +80,7 @@ class UpdateL7RuleOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this UpdateL7RuleOption.
 
-        转发规则的管理状态；该字段为预留字段，暂未启用。默认为true。
+        转发规则的管理状态，默认为true。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this UpdateL7RuleOption.
         :type: bool
@@ -86,7 +91,7 @@ class UpdateL7RuleOption:
     def compare_type(self):
         """Gets the compare_type of this UpdateL7RuleOption.
 
-        转发规则的匹配方式。type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX， STARTS_WITH，EQUAL_TO。
+        转发规则的匹配方式。取值; - type为HOST_NAME时，可以为EQUAL_TO。 - type为PATH时，可以为Perl类型的REGEX， STARTS_WITH，EQUAL_TO。
 
         :return: The compare_type of this UpdateL7RuleOption.
         :rtype: str
@@ -97,7 +102,7 @@ class UpdateL7RuleOption:
     def compare_type(self, compare_type):
         """Sets the compare_type of this UpdateL7RuleOption.
 
-        转发规则的匹配方式。type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX， STARTS_WITH，EQUAL_TO。
+        转发规则的匹配方式。取值; - type为HOST_NAME时，可以为EQUAL_TO。 - type为PATH时，可以为Perl类型的REGEX， STARTS_WITH，EQUAL_TO。
 
         :param compare_type: The compare_type of this UpdateL7RuleOption.
         :type: str
@@ -108,7 +113,7 @@ class UpdateL7RuleOption:
     def invert(self):
         """Gets the invert of this UpdateL7RuleOption.
 
-        是否反向匹配。使用说明：固定为false。该字段能更新但不会生效。
+        是否反向匹配。取值：true、false。  不支持该字段，请勿使用。
 
         :return: The invert of this UpdateL7RuleOption.
         :rtype: bool
@@ -119,7 +124,7 @@ class UpdateL7RuleOption:
     def invert(self, invert):
         """Sets the invert of this UpdateL7RuleOption.
 
-        是否反向匹配。使用说明：固定为false。该字段能更新但不会生效。
+        是否反向匹配。取值：true、false。  不支持该字段，请勿使用。
 
         :param invert: The invert of this UpdateL7RuleOption.
         :type: bool
@@ -130,7 +135,7 @@ class UpdateL7RuleOption:
     def key(self):
         """Gets the key of this UpdateL7RuleOption.
 
-        匹配内容的键值。目前匹配内容为HOST_NAME和PATH时，该字段不生效。该字段能更新但不会生效。
+        匹配项的名称，比如转发规则匹配类型是请求头匹配，则key表示请求头参数的名称。  不支持该字段，请勿使用。
 
         :return: The key of this UpdateL7RuleOption.
         :rtype: str
@@ -141,7 +146,7 @@ class UpdateL7RuleOption:
     def key(self, key):
         """Sets the key of this UpdateL7RuleOption.
 
-        匹配内容的键值。目前匹配内容为HOST_NAME和PATH时，该字段不生效。该字段能更新但不会生效。
+        匹配项的名称，比如转发规则匹配类型是请求头匹配，则key表示请求头参数的名称。  不支持该字段，请勿使用。
 
         :param key: The key of this UpdateL7RuleOption.
         :type: str
@@ -152,7 +157,7 @@ class UpdateL7RuleOption:
     def value(self):
         """Gets the value of this UpdateL7RuleOption.
 
-        匹配内容的值。其值不能包含空格。使用说明：当type为HOST_NAME时，取值范围：String(100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。当type为PATH时，取值范围：String(128)。当转发规则的compare_type为STARTS_WITH，EQUAL_TO时，字符串只能包含英文字母、数字、^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
+        匹配项的值，比如转发规则匹配类型是域名匹配，则value表示域名的值。仅当conditions空时该字段生效。 当type为HOST_NAME时，字符串只能包含英文字母、数字、“-”、“.”或“*”，必须以字母、数字或“*”开头。 若域名中包含“*”，则“*”只能出现在开头且必须以*.开始。当*开头时表示通配0~任一个字符。 当type为PATH时，当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!&#58;|/()[]{}，且必须以\"/\"开头。 当type为METHOD、SOURCE_IP、HEADER,QUERY_STRING时，该字段无意义，使用conditions来指定key/value。
 
         :return: The value of this UpdateL7RuleOption.
         :rtype: str
@@ -163,12 +168,34 @@ class UpdateL7RuleOption:
     def value(self, value):
         """Sets the value of this UpdateL7RuleOption.
 
-        匹配内容的值。其值不能包含空格。使用说明：当type为HOST_NAME时，取值范围：String(100)，字符串只能包含英文字母、数字、“-”或“.”，且必须以字母或数字开头。当type为PATH时，取值范围：String(128)。当转发规则的compare_type为STARTS_WITH，EQUAL_TO时，字符串只能包含英文字母、数字、^-%#&$.*+?,=!:| /()[]{}，且必须以\"/\"开头。
+        匹配项的值，比如转发规则匹配类型是域名匹配，则value表示域名的值。仅当conditions空时该字段生效。 当type为HOST_NAME时，字符串只能包含英文字母、数字、“-”、“.”或“*”，必须以字母、数字或“*”开头。 若域名中包含“*”，则“*”只能出现在开头且必须以*.开始。当*开头时表示通配0~任一个字符。 当type为PATH时，当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!&#58;|/()[]{}，且必须以\"/\"开头。 当type为METHOD、SOURCE_IP、HEADER,QUERY_STRING时，该字段无意义，使用conditions来指定key/value。
 
         :param value: The value of this UpdateL7RuleOption.
         :type: str
         """
         self._value = value
+
+    @property
+    def conditions(self):
+        """Gets the conditions of this UpdateL7RuleOption.
+
+        转发规则的匹配条件。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效。 配置了conditions后，字段key、字段value的值无意义。 若指定了conditons，该rule的条件数为conditons列表长度。 列表中key必须相同，value不允许重复。 [ 不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+
+        :return: The conditions of this UpdateL7RuleOption.
+        :rtype: list[UpdateRuleCondition]
+        """
+        return self._conditions
+
+    @conditions.setter
+    def conditions(self, conditions):
+        """Sets the conditions of this UpdateL7RuleOption.
+
+        转发规则的匹配条件。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效。 配置了conditions后，字段key、字段value的值无意义。 若指定了conditons，该rule的条件数为conditons列表长度。 列表中key必须相同，value不允许重复。 [ 不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+
+        :param conditions: The conditions of this UpdateL7RuleOption.
+        :type: list[UpdateRuleCondition]
+        """
+        self._conditions = conditions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -319,9 +319,9 @@ class MeetingAsyncClient(Client):
 
 
     def add_material_async(self, request):
-        """新增全球窗素材
+        """新增信息窗素材
 
-        新增全球窗素材（上传素材文件）
+        新增信息窗素材（上传素材文件）
 
         :param AddMaterialRequest request
         :return: AddMaterialResponse
@@ -329,9 +329,9 @@ class MeetingAsyncClient(Client):
         return self.add_material_with_http_info(request)
 
     def add_material_with_http_info(self, request):
-        """新增全球窗素材
+        """新增信息窗素材
 
-        新增全球窗素材（上传素材文件）
+        新增信息窗素材（上传素材文件）
 
         :param AddMaterialRequest request
         :return: AddMaterialResponse
@@ -388,9 +388,9 @@ class MeetingAsyncClient(Client):
 
 
     def add_program_async(self, request):
-        """新增全球窗节目
+        """新增信息窗节目
 
-        新增全球窗节目
+        新增信息窗节目
 
         :param AddProgramRequest request
         :return: AddProgramResponse
@@ -398,9 +398,9 @@ class MeetingAsyncClient(Client):
         return self.add_program_with_http_info(request)
 
     def add_program_with_http_info(self, request):
-        """新增全球窗节目
+        """新增信息窗节目
 
-        新增全球窗节目
+        新增信息窗节目
 
         :param AddProgramRequest request
         :return: AddProgramResponse
@@ -455,9 +455,9 @@ class MeetingAsyncClient(Client):
 
 
     def add_publication_async(self, request):
-        """新增全球窗发布
+        """新增信息窗发布
 
-        新增全球窗发布
+        新增信息窗发布
 
         :param AddPublicationRequest request
         :return: AddPublicationResponse
@@ -465,9 +465,9 @@ class MeetingAsyncClient(Client):
         return self.add_publication_with_http_info(request)
 
     def add_publication_with_http_info(self, request):
-        """新增全球窗发布
+        """新增信息窗发布
 
-        新增全球窗发布
+        新增信息窗发布
 
         :param AddPublicationRequest request
         :return: AddPublicationResponse
@@ -999,9 +999,9 @@ class MeetingAsyncClient(Client):
 
 
     def batch_delete_materials_async(self, request):
-        """删除全球窗素材
+        """删除信息窗素材
 
-        删除全球窗素材
+        删除信息窗素材
 
         :param BatchDeleteMaterialsRequest request
         :return: BatchDeleteMaterialsResponse
@@ -1009,9 +1009,9 @@ class MeetingAsyncClient(Client):
         return self.batch_delete_materials_with_http_info(request)
 
     def batch_delete_materials_with_http_info(self, request):
-        """删除全球窗素材
+        """删除信息窗素材
 
-        删除全球窗素材
+        删除信息窗素材
 
         :param BatchDeleteMaterialsRequest request
         :return: BatchDeleteMaterialsResponse
@@ -1066,9 +1066,9 @@ class MeetingAsyncClient(Client):
 
 
     def batch_delete_programs_async(self, request):
-        """删除全球窗节目
+        """删除信息窗节目
 
-        删除全球窗节目
+        删除信息窗节目
 
         :param BatchDeleteProgramsRequest request
         :return: BatchDeleteProgramsResponse
@@ -1076,9 +1076,9 @@ class MeetingAsyncClient(Client):
         return self.batch_delete_programs_with_http_info(request)
 
     def batch_delete_programs_with_http_info(self, request):
-        """删除全球窗节目
+        """删除信息窗节目
 
-        删除全球窗节目
+        删除信息窗节目
 
         :param BatchDeleteProgramsRequest request
         :return: BatchDeleteProgramsResponse
@@ -1133,9 +1133,9 @@ class MeetingAsyncClient(Client):
 
 
     def batch_delete_publications_async(self, request):
-        """删除全球窗发布
+        """删除信息窗发布
 
-        删除全球窗发布
+        删除信息窗发布
 
         :param BatchDeletePublicationsRequest request
         :return: BatchDeletePublicationsResponse
@@ -1143,9 +1143,9 @@ class MeetingAsyncClient(Client):
         return self.batch_delete_publications_with_http_info(request)
 
     def batch_delete_publications_with_http_info(self, request):
-        """删除全球窗发布
+        """删除信息窗发布
 
-        删除全球窗发布
+        删除信息窗发布
 
         :param BatchDeletePublicationsRequest request
         :return: BatchDeletePublicationsResponse
@@ -5439,9 +5439,9 @@ class MeetingAsyncClient(Client):
 
 
     def search_materials_async(self, request):
-        """分页查询全球窗素材
+        """分页查询信息窗素材
 
-        分页查询全球窗素材
+        分页查询信息窗素材
 
         :param SearchMaterialsRequest request
         :return: SearchMaterialsResponse
@@ -5449,9 +5449,9 @@ class MeetingAsyncClient(Client):
         return self.search_materials_with_http_info(request)
 
     def search_materials_with_http_info(self, request):
-        """分页查询全球窗素材
+        """分页查询信息窗素材
 
-        分页查询全球窗素材
+        分页查询信息窗素材
 
         :param SearchMaterialsRequest request
         :return: SearchMaterialsResponse
@@ -5808,9 +5808,9 @@ class MeetingAsyncClient(Client):
 
 
     def search_programs_async(self, request):
-        """查询全球窗节目
+        """查询信息窗节目
 
-        获取全球窗节目
+        获取信息窗节目
 
         :param SearchProgramsRequest request
         :return: SearchProgramsResponse
@@ -5818,9 +5818,9 @@ class MeetingAsyncClient(Client):
         return self.search_programs_with_http_info(request)
 
     def search_programs_with_http_info(self, request):
-        """查询全球窗节目
+        """查询信息窗节目
 
-        获取全球窗节目
+        获取信息窗节目
 
         :param SearchProgramsRequest request
         :return: SearchProgramsResponse
@@ -5879,9 +5879,9 @@ class MeetingAsyncClient(Client):
 
 
     def search_publications_async(self, request):
-        """查询全球窗发布
+        """查询信息窗发布
 
-        获取全球窗发布
+        获取信息窗发布
 
         :param SearchPublicationsRequest request
         :return: SearchPublicationsResponse
@@ -5889,9 +5889,9 @@ class MeetingAsyncClient(Client):
         return self.search_publications_with_http_info(request)
 
     def search_publications_with_http_info(self, request):
-        """查询全球窗发布
+        """查询信息窗发布
 
-        获取全球窗发布
+        获取信息窗发布
 
         :param SearchPublicationsRequest request
         :return: SearchPublicationsResponse
@@ -8130,7 +8130,7 @@ class MeetingAsyncClient(Client):
 
 
     def show_publication_async(self, request):
-        """根据ID查询全球窗发布详情
+        """根据ID查询信息窗发布详情
 
         根据ID获取发布详情
 
@@ -8140,7 +8140,7 @@ class MeetingAsyncClient(Client):
         return self.show_publication_with_http_info(request)
 
     def show_publication_with_http_info(self, request):
-        """根据ID查询全球窗发布详情
+        """根据ID查询信息窗发布详情
 
         根据ID获取发布详情
 
@@ -9334,9 +9334,9 @@ class MeetingAsyncClient(Client):
 
 
     def update_material_async(self, request):
-        """更新全球窗素材
+        """更新信息窗素材
 
-        更新全球窗素材
+        更新信息窗素材
 
         :param UpdateMaterialRequest request
         :return: UpdateMaterialResponse
@@ -9344,9 +9344,9 @@ class MeetingAsyncClient(Client):
         return self.update_material_with_http_info(request)
 
     def update_material_with_http_info(self, request):
-        """更新全球窗素材
+        """更新信息窗素材
 
-        更新全球窗素材
+        更新信息窗素材
 
         :param UpdateMaterialRequest request
         :return: UpdateMaterialResponse
@@ -9610,9 +9610,9 @@ class MeetingAsyncClient(Client):
 
 
     def update_program_async(self, request):
-        """更新全球窗节目
+        """更新信息窗节目
 
-        更新全球窗节目
+        更新信息窗节目
 
         :param UpdateProgramRequest request
         :return: UpdateProgramResponse
@@ -9620,9 +9620,9 @@ class MeetingAsyncClient(Client):
         return self.update_program_with_http_info(request)
 
     def update_program_with_http_info(self, request):
-        """更新全球窗节目
+        """更新信息窗节目
 
-        更新全球窗节目
+        更新信息窗节目
 
         :param UpdateProgramRequest request
         :return: UpdateProgramResponse
@@ -9679,9 +9679,9 @@ class MeetingAsyncClient(Client):
 
 
     def update_publication_async(self, request):
-        """修改全球窗发布
+        """修改信息窗发布
 
-        修改全球窗发布
+        修改信息窗发布
 
         :param UpdatePublicationRequest request
         :return: UpdatePublicationResponse
@@ -9689,9 +9689,9 @@ class MeetingAsyncClient(Client):
         return self.update_publication_with_http_info(request)
 
     def update_publication_with_http_info(self, request):
-        """修改全球窗发布
+        """修改信息窗发布
 
-        修改全球窗发布
+        修改信息窗发布
 
         :param UpdatePublicationRequest request
         :return: UpdatePublicationResponse

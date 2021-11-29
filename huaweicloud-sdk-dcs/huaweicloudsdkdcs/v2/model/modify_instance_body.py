@@ -24,6 +24,7 @@ class ModifyInstanceBody:
     openapi_types = {
         'name': 'str',
         'description': 'str',
+        'port': 'int',
         'maintain_begin': 'str',
         'maintain_end': 'str',
         'security_group_id': 'str',
@@ -33,19 +34,21 @@ class ModifyInstanceBody:
     attribute_map = {
         'name': 'name',
         'description': 'description',
+        'port': 'port',
         'maintain_begin': 'maintain_begin',
         'maintain_end': 'maintain_end',
         'security_group_id': 'security_group_id',
         'instance_backup_policy': 'instance_backup_policy'
     }
 
-    def __init__(self, name=None, description=None, maintain_begin=None, maintain_end=None, security_group_id=None, instance_backup_policy=None):
+    def __init__(self, name=None, description=None, port=None, maintain_begin=None, maintain_end=None, security_group_id=None, instance_backup_policy=None):
         """ModifyInstanceBody - a model defined in huaweicloud sdk"""
         
         
 
         self._name = None
         self._description = None
+        self._port = None
         self._maintain_begin = None
         self._maintain_end = None
         self._security_group_id = None
@@ -56,6 +59,8 @@ class ModifyInstanceBody:
             self.name = name
         if description is not None:
             self.description = description
+        if port is not None:
+            self.port = port
         if maintain_begin is not None:
             self.maintain_begin = maintain_begin
         if maintain_end is not None:
@@ -108,6 +113,28 @@ class ModifyInstanceBody:
         :type: str
         """
         self._description = description
+
+    @property
+    def port(self):
+        """Gets the port of this ModifyInstanceBody.
+
+        修改Redis实例的访问端口。端口范围为1~65535的任意数字。 修改后，Redis实例的所有连接将会中断，业务需要重新连接Redis的新端口。 只有Redis4.0和Redis5.0支持修改端口号，Redis3.0[和Memcached](tag:hc,hk,ocb,sbc,tm,ctc,cmc)实例不支持。 
+
+        :return: The port of this ModifyInstanceBody.
+        :rtype: int
+        """
+        return self._port
+
+    @port.setter
+    def port(self, port):
+        """Sets the port of this ModifyInstanceBody.
+
+        修改Redis实例的访问端口。端口范围为1~65535的任意数字。 修改后，Redis实例的所有连接将会中断，业务需要重新连接Redis的新端口。 只有Redis4.0和Redis5.0支持修改端口号，Redis3.0[和Memcached](tag:hc,hk,ocb,sbc,tm,ctc,cmc)实例不支持。 
+
+        :param port: The port of this ModifyInstanceBody.
+        :type: int
+        """
+        self._port = port
 
     @property
     def maintain_begin(self):

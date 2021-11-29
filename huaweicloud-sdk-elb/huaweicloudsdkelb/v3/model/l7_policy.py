@@ -29,12 +29,15 @@ class L7Policy:
         'listener_id': 'str',
         'name': 'str',
         'position': 'int',
+        'priority': 'int',
         'project_id': 'str',
         'provisioning_status': 'str',
-        'redirect_listener_id': 'str',
         'redirect_pool_id': 'str',
+        'redirect_listener_id': 'str',
         'redirect_url': 'str',
-        'rules': 'list[RuleRef]'
+        'rules': 'list[RuleRef]',
+        'redirect_url_config': 'RedirectUrlConfig',
+        'fixed_response_config': 'FixtedResponseConfig'
     }
 
     attribute_map = {
@@ -45,15 +48,18 @@ class L7Policy:
         'listener_id': 'listener_id',
         'name': 'name',
         'position': 'position',
+        'priority': 'priority',
         'project_id': 'project_id',
         'provisioning_status': 'provisioning_status',
-        'redirect_listener_id': 'redirect_listener_id',
         'redirect_pool_id': 'redirect_pool_id',
+        'redirect_listener_id': 'redirect_listener_id',
         'redirect_url': 'redirect_url',
-        'rules': 'rules'
+        'rules': 'rules',
+        'redirect_url_config': 'redirect_url_config',
+        'fixed_response_config': 'fixed_response_config'
     }
 
-    def __init__(self, action=None, admin_state_up=None, description=None, id=None, listener_id=None, name=None, position=None, project_id=None, provisioning_status=None, redirect_listener_id=None, redirect_pool_id=None, redirect_url=None, rules=None):
+    def __init__(self, action=None, admin_state_up=None, description=None, id=None, listener_id=None, name=None, position=None, priority=None, project_id=None, provisioning_status=None, redirect_pool_id=None, redirect_listener_id=None, redirect_url=None, rules=None, redirect_url_config=None, fixed_response_config=None):
         """L7Policy - a model defined in huaweicloud sdk"""
         
         
@@ -65,12 +71,15 @@ class L7Policy:
         self._listener_id = None
         self._name = None
         self._position = None
+        self._priority = None
         self._project_id = None
         self._provisioning_status = None
-        self._redirect_listener_id = None
         self._redirect_pool_id = None
+        self._redirect_listener_id = None
         self._redirect_url = None
         self._rules = None
+        self._redirect_url_config = None
+        self._fixed_response_config = None
         self.discriminator = None
 
         self.action = action
@@ -80,18 +89,22 @@ class L7Policy:
         self.listener_id = listener_id
         self.name = name
         self.position = position
+        if priority is not None:
+            self.priority = priority
         self.project_id = project_id
         self.provisioning_status = provisioning_status
-        self.redirect_listener_id = redirect_listener_id
         self.redirect_pool_id = redirect_pool_id
+        self.redirect_listener_id = redirect_listener_id
         self.redirect_url = redirect_url
         self.rules = rules
+        self.redirect_url_config = redirect_url_config
+        self.fixed_response_config = fixed_response_config
 
     @property
     def action(self):
         """Gets the action of this L7Policy.
 
-        转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
+        转发策略的转发动作。取值： - REDIRECT_TO_POOL：转发到后端云服务器组； - REDIRECT_TO_LISTENER：重定向到监听器； - REDIRECT_TO_URL：重定向到URL； -FIXED_RESPONSE：返回固定响应体。 使用说明： - REDIRECT_TO_LISTENER的优先级最高，配置了以后，该监听器下的其他policy会失效。 - 当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP、HTTPS、TERMINATED_HTTPS的listener上。 - 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
 
         :return: The action of this L7Policy.
         :rtype: str
@@ -102,7 +115,7 @@ class L7Policy:
     def action(self, action):
         """Sets the action of this L7Policy.
 
-        转发策略的转发动作；取值：REDIRECT_TO_POOL：转发到后端云服务器组；REDIRECT_TO_LISTENER：重定向到监听器
+        转发策略的转发动作。取值： - REDIRECT_TO_POOL：转发到后端云服务器组； - REDIRECT_TO_LISTENER：重定向到监听器； - REDIRECT_TO_URL：重定向到URL； -FIXED_RESPONSE：返回固定响应体。 使用说明： - REDIRECT_TO_LISTENER的优先级最高，配置了以后，该监听器下的其他policy会失效。 - 当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP、HTTPS、TERMINATED_HTTPS的listener上。 - 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
 
         :param action: The action of this L7Policy.
         :type: str
@@ -113,7 +126,7 @@ class L7Policy:
     def admin_state_up(self):
         """Gets the admin_state_up of this L7Policy.
 
-        转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
+        转发策略的管理状态，默认为true。  不支持该字段，请勿使用。
 
         :return: The admin_state_up of this L7Policy.
         :rtype: bool
@@ -124,7 +137,7 @@ class L7Policy:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this L7Policy.
 
-        转发策略的管理状态；该字段为预留字段，暂未启用。默认为true。
+        转发策略的管理状态，默认为true。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this L7Policy.
         :type: bool
@@ -135,7 +148,7 @@ class L7Policy:
     def description(self):
         """Gets the description of this L7Policy.
 
-        转发策略描述信息
+        转发策略描述信息。
 
         :return: The description of this L7Policy.
         :rtype: str
@@ -146,7 +159,7 @@ class L7Policy:
     def description(self, description):
         """Sets the description of this L7Policy.
 
-        转发策略描述信息
+        转发策略描述信息。
 
         :param description: The description of this L7Policy.
         :type: str
@@ -157,7 +170,7 @@ class L7Policy:
     def id(self):
         """Gets the id of this L7Policy.
 
-        转发策略ID
+        转发策略ID。
 
         :return: The id of this L7Policy.
         :rtype: str
@@ -168,7 +181,7 @@ class L7Policy:
     def id(self, id):
         """Sets the id of this L7Policy.
 
-        转发策略ID
+        转发策略ID。
 
         :param id: The id of this L7Policy.
         :type: str
@@ -179,7 +192,7 @@ class L7Policy:
     def listener_id(self):
         """Gets the listener_id of this L7Policy.
 
-        转发策略对应的监听器ID。当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP或TERMINATED_HTTPS的listener上。 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
+        转发策略所属的监听器ID。
 
         :return: The listener_id of this L7Policy.
         :rtype: str
@@ -190,7 +203,7 @@ class L7Policy:
     def listener_id(self, listener_id):
         """Sets the listener_id of this L7Policy.
 
-        转发策略对应的监听器ID。当action为REDIRECT_TO_POOL时，只支持创建在PROTOCOL为HTTP或TERMINATED_HTTPS的listener上。 当action为REDIRECT_TO_LISTENER时，只支持创建在PROTOCOL为HTTP的listener上。
+        转发策略所属的监听器ID。
 
         :param listener_id: The listener_id of this L7Policy.
         :type: str
@@ -223,7 +236,7 @@ class L7Policy:
     def position(self):
         """Gets the position of this L7Policy.
 
-        转发策略的优先级，从1递增，最高100。该字段为预留字段，暂未启用。
+        转发策略的优先级，不支持更新。  不支持该字段，请勿使用。
 
         :return: The position of this L7Policy.
         :rtype: int
@@ -234,12 +247,34 @@ class L7Policy:
     def position(self, position):
         """Sets the position of this L7Policy.
 
-        转发策略的优先级，从1递增，最高100。该字段为预留字段，暂未启用。
+        转发策略的优先级，不支持更新。  不支持该字段，请勿使用。
 
         :param position: The position of this L7Policy.
         :type: int
         """
         self._position = position
+
+    @property
+    def priority(self):
+        """Gets the priority of this L7Policy.
+
+        转发策略的优先级。共享型实例该字段无意义。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效，未开启传入该字段会报错。共享型负载均衡器下的转发策略不支持该字段。 数字越小表示优先级越高，同一监听器下不允许重复。 当action为REDIRECT_TO_LISTENER时，仅支持指定为0，优先级最高。 当关联的listener没有开启enhance_l7policy_enable，按原有policy的排序逻辑，自动排序。各域名之间优先级独立，相同域名下，按path的compare_type排序，精确>前缀>正则，匹配类型相同时，path的长度越长优先级越高。若policy下只有域名rule，没有路径rule，默认path为前缀匹配/。 当关联的listener开启了enhance_l7policy_enable，且不传该字段，则新创建的转发策略的优先级的值为：同一监听器下已有转发策略的优先级的最大值+1。因此，若当前已有转发策略的优先级的最大值是10000，新创建会因超出取值范围10000而失败。此时可通过传入指定priority，或调整原有policy的优先级来避免错误。若监听器下没有转发策略，则新建的转发策略的优先级为1。 [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+
+        :return: The priority of this L7Policy.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        """Sets the priority of this L7Policy.
+
+        转发策略的优先级。共享型实例该字段无意义。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效，未开启传入该字段会报错。共享型负载均衡器下的转发策略不支持该字段。 数字越小表示优先级越高，同一监听器下不允许重复。 当action为REDIRECT_TO_LISTENER时，仅支持指定为0，优先级最高。 当关联的listener没有开启enhance_l7policy_enable，按原有policy的排序逻辑，自动排序。各域名之间优先级独立，相同域名下，按path的compare_type排序，精确>前缀>正则，匹配类型相同时，path的长度越长优先级越高。若policy下只有域名rule，没有路径rule，默认path为前缀匹配/。 当关联的listener开启了enhance_l7policy_enable，且不传该字段，则新创建的转发策略的优先级的值为：同一监听器下已有转发策略的优先级的最大值+1。因此，若当前已有转发策略的优先级的最大值是10000，新创建会因超出取值范围10000而失败。此时可通过传入指定priority，或调整原有policy的优先级来避免错误。若监听器下没有转发策略，则新建的转发策略的优先级为1。 [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+
+        :param priority: The priority of this L7Policy.
+        :type: int
+        """
+        self._priority = priority
 
     @property
     def project_id(self):
@@ -267,7 +302,7 @@ class L7Policy:
     def provisioning_status(self):
         """Gets the provisioning_status of this L7Policy.
 
-        provisioning状态，可以为ACTIVE、PENDING_CREATE 或者ERROR。 默认为ACTIVE。
+        转发策略的配置状态。 取值范围：  - ACTIVE：默认值，表示正常。 - ERROR：表示当前策略与同一监听器下的其他策略存在相同的规则配置。
 
         :return: The provisioning_status of this L7Policy.
         :rtype: str
@@ -278,7 +313,7 @@ class L7Policy:
     def provisioning_status(self, provisioning_status):
         """Sets the provisioning_status of this L7Policy.
 
-        provisioning状态，可以为ACTIVE、PENDING_CREATE 或者ERROR。 默认为ACTIVE。
+        转发策略的配置状态。 取值范围：  - ACTIVE：默认值，表示正常。 - ERROR：表示当前策略与同一监听器下的其他策略存在相同的规则配置。
 
         :param provisioning_status: The provisioning_status of this L7Policy.
         :type: str
@@ -286,32 +321,10 @@ class L7Policy:
         self._provisioning_status = provisioning_status
 
     @property
-    def redirect_listener_id(self):
-        """Gets the redirect_listener_id of this L7Policy.
-
-        转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。使用说明：只支持protocol为TERMINATED_HTTPS的listener。不能指定为其他loadbalancer下的listener。当action为REDIRECT_TO_POOL时，不可指定。
-
-        :return: The redirect_listener_id of this L7Policy.
-        :rtype: str
-        """
-        return self._redirect_listener_id
-
-    @redirect_listener_id.setter
-    def redirect_listener_id(self, redirect_listener_id):
-        """Sets the redirect_listener_id of this L7Policy.
-
-        转发到的listener的ID，当action为REDIRECT_TO_LISTENER时生效。使用说明：只支持protocol为TERMINATED_HTTPS的listener。不能指定为其他loadbalancer下的listener。当action为REDIRECT_TO_POOL时，不可指定。
-
-        :param redirect_listener_id: The redirect_listener_id of this L7Policy.
-        :type: str
-        """
-        self._redirect_listener_id = redirect_listener_id
-
-    @property
     def redirect_pool_id(self):
         """Gets the redirect_pool_id of this L7Policy.
 
-        转发到pool的ID。当action为REDIRECT_TO_POOL时生效。使用说明：指定的pool不能是listener的default_pool。不能是其他listener的l7policy使用的pool。当action为REDIRECT_TO_LISTENER时，不可指定。
+        转发到pool的ID。当action为REDIRECT_TO_POOL时生效。  使用说明： - 指定的pool不能是listener的default_pool。不能是其他listener的l7policy使用的pool。 - 当action为REDIRECT_TO_POOL时为必选字段。当action为REDIRECT_TO_LISTENER时，不可指定。
 
         :return: The redirect_pool_id of this L7Policy.
         :rtype: str
@@ -322,7 +335,7 @@ class L7Policy:
     def redirect_pool_id(self, redirect_pool_id):
         """Sets the redirect_pool_id of this L7Policy.
 
-        转发到pool的ID。当action为REDIRECT_TO_POOL时生效。使用说明：指定的pool不能是listener的default_pool。不能是其他listener的l7policy使用的pool。当action为REDIRECT_TO_LISTENER时，不可指定。
+        转发到pool的ID。当action为REDIRECT_TO_POOL时生效。  使用说明： - 指定的pool不能是listener的default_pool。不能是其他listener的l7policy使用的pool。 - 当action为REDIRECT_TO_POOL时为必选字段。当action为REDIRECT_TO_LISTENER时，不可指定。
 
         :param redirect_pool_id: The redirect_pool_id of this L7Policy.
         :type: str
@@ -330,10 +343,32 @@ class L7Policy:
         self._redirect_pool_id = redirect_pool_id
 
     @property
+    def redirect_listener_id(self):
+        """Gets the redirect_listener_id of this L7Policy.
+
+        转发到的listener的ID，当action为REDIRECT_TO_LISTENER时必选。  使用说明： - 只支持protocol为HTTPS/TERMINATED_HTTPS的listener。 - 不能指定为其他loadbalancer下的listener。 - 当action为REDIRECT_TO_POOL时，创建或更新时不能传入该参数。
+
+        :return: The redirect_listener_id of this L7Policy.
+        :rtype: str
+        """
+        return self._redirect_listener_id
+
+    @redirect_listener_id.setter
+    def redirect_listener_id(self, redirect_listener_id):
+        """Sets the redirect_listener_id of this L7Policy.
+
+        转发到的listener的ID，当action为REDIRECT_TO_LISTENER时必选。  使用说明： - 只支持protocol为HTTPS/TERMINATED_HTTPS的listener。 - 不能指定为其他loadbalancer下的listener。 - 当action为REDIRECT_TO_POOL时，创建或更新时不能传入该参数。
+
+        :param redirect_listener_id: The redirect_listener_id of this L7Policy.
+        :type: str
+        """
+        self._redirect_listener_id = redirect_listener_id
+
+    @property
     def redirect_url(self):
         """Gets the redirect_url of this L7Policy.
 
-        转发到的url。该字段未启用。
+        转发到的url。必须满足格式: protocol://host:port/path?query。  不支持该字段，请勿使用。
 
         :return: The redirect_url of this L7Policy.
         :rtype: str
@@ -344,7 +379,7 @@ class L7Policy:
     def redirect_url(self, redirect_url):
         """Sets the redirect_url of this L7Policy.
 
-        转发到的url。该字段未启用。
+        转发到的url。必须满足格式: protocol://host:port/path?query。  不支持该字段，请勿使用。
 
         :param redirect_url: The redirect_url of this L7Policy.
         :type: str
@@ -372,6 +407,46 @@ class L7Policy:
         :type: list[RuleRef]
         """
         self._rules = rules
+
+    @property
+    def redirect_url_config(self):
+        """Gets the redirect_url_config of this L7Policy.
+
+
+        :return: The redirect_url_config of this L7Policy.
+        :rtype: RedirectUrlConfig
+        """
+        return self._redirect_url_config
+
+    @redirect_url_config.setter
+    def redirect_url_config(self, redirect_url_config):
+        """Sets the redirect_url_config of this L7Policy.
+
+
+        :param redirect_url_config: The redirect_url_config of this L7Policy.
+        :type: RedirectUrlConfig
+        """
+        self._redirect_url_config = redirect_url_config
+
+    @property
+    def fixed_response_config(self):
+        """Gets the fixed_response_config of this L7Policy.
+
+
+        :return: The fixed_response_config of this L7Policy.
+        :rtype: FixtedResponseConfig
+        """
+        return self._fixed_response_config
+
+    @fixed_response_config.setter
+    def fixed_response_config(self, fixed_response_config):
+        """Sets the fixed_response_config of this L7Policy.
+
+
+        :param fixed_response_config: The fixed_response_config of this L7Policy.
+        :type: FixtedResponseConfig
+        """
+        self._fixed_response_config = fixed_response_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

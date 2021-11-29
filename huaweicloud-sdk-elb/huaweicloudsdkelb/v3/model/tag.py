@@ -49,7 +49,7 @@ class Tag:
     def key(self):
         """Gets the key of this Tag.
 
-        功能描述：标签键
+        标签键
 
         :return: The key of this Tag.
         :rtype: str
@@ -60,7 +60,7 @@ class Tag:
     def key(self, key):
         """Sets the key of this Tag.
 
-        功能描述：标签键
+        标签键
 
         :param key: The key of this Tag.
         :type: str
@@ -71,7 +71,7 @@ class Tag:
     def value(self):
         """Gets the value of this Tag.
 
-        功能描述：标签值
+        标签值
 
         :return: The value of this Tag.
         :rtype: str
@@ -82,7 +82,7 @@ class Tag:
     def value(self, value):
         """Sets the value of this Tag.
 
-        功能描述：标签值
+        标签值
 
         :param value: The value of this Tag.
         :type: str

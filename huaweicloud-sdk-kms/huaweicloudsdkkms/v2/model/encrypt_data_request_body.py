@@ -46,10 +46,8 @@ class EncryptDataRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
-        if plain_text is not None:
-            self.plain_text = plain_text
+        self.key_id = key_id
+        self.plain_text = plain_text
         if encryption_algorithm is not None:
             self.encryption_algorithm = encryption_algorithm
         if sequence is not None:

@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CinderExportToImageRequest:
+class BatchDeleteIpListRequestBody:
 
 
     """
@@ -22,69 +22,43 @@ class CinderExportToImageRequest:
     sensitive_list = []
 
     openapi_types = {
-        'volume_id': 'str',
-        'body': 'CinderExportToImageRequestBody'
+        'ipgroup': 'BatchDeleteIpListOption'
     }
 
     attribute_map = {
-        'volume_id': 'volume_id',
-        'body': 'body'
+        'ipgroup': 'ipgroup'
     }
 
-    def __init__(self, volume_id=None, body=None):
-        """CinderExportToImageRequest - a model defined in huaweicloud sdk"""
+    def __init__(self, ipgroup=None):
+        """BatchDeleteIpListRequestBody - a model defined in huaweicloud sdk"""
         
         
 
-        self._volume_id = None
-        self._body = None
+        self._ipgroup = None
         self.discriminator = None
 
-        self.volume_id = volume_id
-        if body is not None:
-            self.body = body
+        if ipgroup is not None:
+            self.ipgroup = ipgroup
 
     @property
-    def volume_id(self):
-        """Gets the volume_id of this CinderExportToImageRequest.
+    def ipgroup(self):
+        """Gets the ipgroup of this BatchDeleteIpListRequestBody.
 
-        云硬盘ID。
 
-        :return: The volume_id of this CinderExportToImageRequest.
-        :rtype: str
+        :return: The ipgroup of this BatchDeleteIpListRequestBody.
+        :rtype: BatchDeleteIpListOption
         """
-        return self._volume_id
+        return self._ipgroup
 
-    @volume_id.setter
-    def volume_id(self, volume_id):
-        """Sets the volume_id of this CinderExportToImageRequest.
+    @ipgroup.setter
+    def ipgroup(self, ipgroup):
+        """Sets the ipgroup of this BatchDeleteIpListRequestBody.
 
-        云硬盘ID。
 
-        :param volume_id: The volume_id of this CinderExportToImageRequest.
-        :type: str
+        :param ipgroup: The ipgroup of this BatchDeleteIpListRequestBody.
+        :type: BatchDeleteIpListOption
         """
-        self._volume_id = volume_id
-
-    @property
-    def body(self):
-        """Gets the body of this CinderExportToImageRequest.
-
-
-        :return: The body of this CinderExportToImageRequest.
-        :rtype: CinderExportToImageRequestBody
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CinderExportToImageRequest.
-
-
-        :param body: The body of this CinderExportToImageRequest.
-        :type: CinderExportToImageRequestBody
-        """
-        self._body = body
+        self._ipgroup = ipgroup
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -128,7 +102,7 @@ class CinderExportToImageRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CinderExportToImageRequest):
+        if not isinstance(other, BatchDeleteIpListRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

@@ -46,8 +46,7 @@ class CreateDatakeyRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
+        self.key_id = key_id
         if key_spec is not None:
             self.key_spec = key_spec
         if datakey_length is not None:

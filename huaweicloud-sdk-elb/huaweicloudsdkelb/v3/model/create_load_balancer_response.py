@@ -23,25 +23,35 @@ class CreateLoadBalancerResponse(SdkResponse):
 
     openapi_types = {
         'loadbalancer': 'LoadBalancer',
+        'loadbalancer_id': 'str',
+        'order_id': 'str',
         'request_id': 'str'
     }
 
     attribute_map = {
         'loadbalancer': 'loadbalancer',
+        'loadbalancer_id': 'loadbalancer_id',
+        'order_id': 'order_id',
         'request_id': 'request_id'
     }
 
-    def __init__(self, loadbalancer=None, request_id=None):
+    def __init__(self, loadbalancer=None, loadbalancer_id=None, order_id=None, request_id=None):
         """CreateLoadBalancerResponse - a model defined in huaweicloud sdk"""
         
         super(CreateLoadBalancerResponse, self).__init__()
 
         self._loadbalancer = None
+        self._loadbalancer_id = None
+        self._order_id = None
         self._request_id = None
         self.discriminator = None
 
         if loadbalancer is not None:
             self.loadbalancer = loadbalancer
+        if loadbalancer_id is not None:
+            self.loadbalancer_id = loadbalancer_id
+        if order_id is not None:
+            self.order_id = order_id
         if request_id is not None:
             self.request_id = request_id
 
@@ -64,6 +74,50 @@ class CreateLoadBalancerResponse(SdkResponse):
         :type: LoadBalancer
         """
         self._loadbalancer = loadbalancer
+
+    @property
+    def loadbalancer_id(self):
+        """Gets the loadbalancer_id of this CreateLoadBalancerResponse.
+
+        负载均衡器的id（包周期场景返回该字段）
+
+        :return: The loadbalancer_id of this CreateLoadBalancerResponse.
+        :rtype: str
+        """
+        return self._loadbalancer_id
+
+    @loadbalancer_id.setter
+    def loadbalancer_id(self, loadbalancer_id):
+        """Sets the loadbalancer_id of this CreateLoadBalancerResponse.
+
+        负载均衡器的id（包周期场景返回该字段）
+
+        :param loadbalancer_id: The loadbalancer_id of this CreateLoadBalancerResponse.
+        :type: str
+        """
+        self._loadbalancer_id = loadbalancer_id
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this CreateLoadBalancerResponse.
+
+        订单号（包周期场景返回该字段）
+
+        :return: The order_id of this CreateLoadBalancerResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this CreateLoadBalancerResponse.
+
+        订单号（包周期场景返回该字段）
+
+        :param order_id: The order_id of this CreateLoadBalancerResponse.
+        :type: str
+        """
+        self._order_id = order_id
 
     @property
     def request_id(self):

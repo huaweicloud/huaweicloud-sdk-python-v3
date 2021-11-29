@@ -92,7 +92,7 @@ class CreatePoolOption:
     def admin_state_up(self):
         """Gets the admin_state_up of this CreatePoolOption.
 
-        后端云服务器组的管理状态；该字段为预留字段，暂未启用。只支持更新为true。
+        后端云服务器组的管理状态，只支持更新为true。  不支持该字段，请勿使用。
 
         :return: The admin_state_up of this CreatePoolOption.
         :rtype: bool
@@ -103,7 +103,7 @@ class CreatePoolOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this CreatePoolOption.
 
-        后端云服务器组的管理状态；该字段为预留字段，暂未启用。只支持更新为true。
+        后端云服务器组的管理状态，只支持更新为true。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this CreatePoolOption.
         :type: bool
@@ -114,7 +114,7 @@ class CreatePoolOption:
     def description(self):
         """Gets the description of this CreatePoolOption.
 
-        后端云服务器组的描述信息
+        后端云服务器组的描述信息。
 
         :return: The description of this CreatePoolOption.
         :rtype: str
@@ -125,7 +125,7 @@ class CreatePoolOption:
     def description(self, description):
         """Sets the description of this CreatePoolOption.
 
-        后端云服务器组的描述信息
+        后端云服务器组的描述信息。
 
         :param description: The description of this CreatePoolOption.
         :type: str
@@ -136,7 +136,7 @@ class CreatePoolOption:
     def lb_algorithm(self):
         """Gets the lb_algorithm of this CreatePoolOption.
 
-        描述：后端云服务器组的负载均衡算法     取值：   1、ROUND_ROBIN：加权轮询算法；   2、LEAST_CONNECTIONS：加权最少连接算法；   3、SOURCE_IP：源IP算法；   4、QUIC_CID：连接ID算法；   约束：   1、当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。   2、只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :return: The lb_algorithm of this CreatePoolOption.
         :rtype: str
@@ -147,7 +147,7 @@ class CreatePoolOption:
     def lb_algorithm(self, lb_algorithm):
         """Sets the lb_algorithm of this CreatePoolOption.
 
-        描述：后端云服务器组的负载均衡算法     取值：   1、ROUND_ROBIN：加权轮询算法；   2、LEAST_CONNECTIONS：加权最少连接算法；   3、SOURCE_IP：源IP算法；   4、QUIC_CID：连接ID算法；   约束：   1、当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。   2、只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :param lb_algorithm: The lb_algorithm of this CreatePoolOption.
         :type: str
@@ -158,7 +158,7 @@ class CreatePoolOption:
     def listener_id(self):
         """Gets the listener_id of this CreatePoolOption.
 
-        后端云服务器组关联的监听器的ID。listener_id和loadbalancer_id中至少指定一个。
+        后端云服务器组关联的监听器的ID。  使用说明： - listener_id和loadbalancer_id至少指定一个。
 
         :return: The listener_id of this CreatePoolOption.
         :rtype: str
@@ -169,7 +169,7 @@ class CreatePoolOption:
     def listener_id(self, listener_id):
         """Sets the listener_id of this CreatePoolOption.
 
-        后端云服务器组关联的监听器的ID。listener_id和loadbalancer_id中至少指定一个。
+        后端云服务器组关联的监听器的ID。  使用说明： - listener_id和loadbalancer_id至少指定一个。
 
         :param listener_id: The listener_id of this CreatePoolOption.
         :type: str
@@ -180,7 +180,7 @@ class CreatePoolOption:
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this CreatePoolOption.
 
-        后端云服务器组关联的负载均衡器ID。listener_id和loadbalancer_id中至少指定一个。
+        后端云服务器组关联的负载均衡器ID。  使用说明： - listener_id和loadbalancer_id中至少指定一个。
 
         :return: The loadbalancer_id of this CreatePoolOption.
         :rtype: str
@@ -191,7 +191,7 @@ class CreatePoolOption:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this CreatePoolOption.
 
-        后端云服务器组关联的负载均衡器ID。listener_id和loadbalancer_id中至少指定一个。
+        后端云服务器组关联的负载均衡器ID。  使用说明： - listener_id和loadbalancer_id中至少指定一个。
 
         :param loadbalancer_id: The loadbalancer_id of this CreatePoolOption.
         :type: str
@@ -224,7 +224,7 @@ class CreatePoolOption:
     def project_id(self):
         """Gets the project_id of this CreatePoolOption.
 
-        后端云服务器组所在的项目ID。
+        后端云服务器组所属的项目ID。
 
         :return: The project_id of this CreatePoolOption.
         :rtype: str
@@ -235,7 +235,7 @@ class CreatePoolOption:
     def project_id(self, project_id):
         """Sets the project_id of this CreatePoolOption.
 
-        后端云服务器组所在的项目ID。
+        后端云服务器组所属的项目ID。
 
         :param project_id: The project_id of this CreatePoolOption.
         :type: str
@@ -246,7 +246,7 @@ class CreatePoolOption:
     def protocol(self):
         """Gets the protocol of this CreatePoolOption.
 
-        描述：后端云服务器组的后端协议。   使用说明：支持TCP、UDP、HTTP和QUIC。 约束： 1、listener的protocol为UDP时，pool的protocol必须为UDP或QUIC；   2、listener的protocol为TCP时pool的protocol必须为TCP；   3、listener的protocol为HTTP或TERMINATED_HTTPS时，pool的protocol必须为HTTP。
+        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
 
         :return: The protocol of this CreatePoolOption.
         :rtype: str
@@ -257,7 +257,7 @@ class CreatePoolOption:
     def protocol(self, protocol):
         """Sets the protocol of this CreatePoolOption.
 
-        描述：后端云服务器组的后端协议。   使用说明：支持TCP、UDP、HTTP和QUIC。 约束： 1、listener的protocol为UDP时，pool的protocol必须为UDP或QUIC；   2、listener的protocol为TCP时pool的protocol必须为TCP；   3、listener的protocol为HTTP或TERMINATED_HTTPS时，pool的protocol必须为HTTP。
+        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
 
         :param protocol: The protocol of this CreatePoolOption.
         :type: str
@@ -308,7 +308,7 @@ class CreatePoolOption:
     def member_deletion_protection_enable(self):
         """Gets the member_deletion_protection_enable of this CreatePoolOption.
 
-        是否开启删除保护，默认不开启
+        是否开启删除保护。取值：false不开启，true开启，默认false。 > 退场时需要先关闭所有资源的删除保护开关。
 
         :return: The member_deletion_protection_enable of this CreatePoolOption.
         :rtype: bool
@@ -319,7 +319,7 @@ class CreatePoolOption:
     def member_deletion_protection_enable(self, member_deletion_protection_enable):
         """Sets the member_deletion_protection_enable of this CreatePoolOption.
 
-        是否开启删除保护，默认不开启
+        是否开启删除保护。取值：false不开启，true开启，默认false。 > 退场时需要先关闭所有资源的删除保护开关。
 
         :param member_deletion_protection_enable: The member_deletion_protection_enable of this CreatePoolOption.
         :type: bool

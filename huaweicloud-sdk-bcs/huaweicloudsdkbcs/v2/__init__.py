@@ -49,6 +49,7 @@ from huaweicloudsdkbcs.v2.model.download_blockchain_cert_response import Downloa
 from huaweicloudsdkbcs.v2.model.download_blockchain_sdk_config_request import DownloadBlockchainSdkConfigRequest
 from huaweicloudsdkbcs.v2.model.download_blockchain_sdk_config_response import DownloadBlockchainSdkConfigResponse
 from huaweicloudsdkbcs.v2.model.entity_metric_list import EntityMetricList
+from huaweicloudsdkbcs.v2.model.entity_metric_list_item import EntityMetricListItem
 from huaweicloudsdkbcs.v2.model.freeze_cert_request import FreezeCertRequest
 from huaweicloudsdkbcs.v2.model.freeze_cert_response import FreezeCertResponse
 from huaweicloudsdkbcs.v2.model.handle_notification_invitee import HandleNotificationInvitee

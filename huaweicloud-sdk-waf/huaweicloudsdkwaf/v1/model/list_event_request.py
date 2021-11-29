@@ -24,6 +24,7 @@ class ListEventRequest:
     openapi_types = {
         'enterprise_project_id': 'str',
         'recent': 'str',
+        'attacks': 'list[str]',
         '_from': 'int',
         'to': 'int',
         'hosts': 'list[str]',
@@ -34,6 +35,7 @@ class ListEventRequest:
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'recent': 'recent',
+        'attacks': 'attacks',
         '_from': 'from',
         'to': 'to',
         'hosts': 'hosts',
@@ -41,13 +43,14 @@ class ListEventRequest:
         'pagesize': 'pagesize'
     }
 
-    def __init__(self, enterprise_project_id=None, recent=None, _from=None, to=None, hosts=None, page=None, pagesize=None):
+    def __init__(self, enterprise_project_id=None, recent=None, attacks=None, _from=None, to=None, hosts=None, page=None, pagesize=None):
         """ListEventRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._enterprise_project_id = None
         self._recent = None
+        self._attacks = None
         self.__from = None
         self._to = None
         self._hosts = None
@@ -59,6 +62,8 @@ class ListEventRequest:
             self.enterprise_project_id = enterprise_project_id
         if recent is not None:
             self.recent = recent
+        if attacks is not None:
+            self.attacks = attacks
         if _from is not None:
             self._from = _from
         if to is not None:
@@ -113,6 +118,28 @@ class ListEventRequest:
         :type: str
         """
         self._recent = recent
+
+    @property
+    def attacks(self):
+        """Gets the attacks of this ListEventRequest.
+
+        攻击类型:   - vuln：其它攻击类型   - sqli： sql注入攻击   - lfi： 本地文件包含  - cmdi：命令注入攻击   - xss：XSS攻击   - robot：恶意爬虫   - rfi：远程文件包含   - custom_custom：精准防护   - webshell：网站木马   - custom_whiteblackip：黑白名单拦截   - custom_geoip：地理访问控制拦截   - antitamper：防篡改   - anticrawler：反爬虫    - leakage：网站信息防泄漏   - illegal：非法请求 
+
+        :return: The attacks of this ListEventRequest.
+        :rtype: list[str]
+        """
+        return self._attacks
+
+    @attacks.setter
+    def attacks(self, attacks):
+        """Sets the attacks of this ListEventRequest.
+
+        攻击类型:   - vuln：其它攻击类型   - sqli： sql注入攻击   - lfi： 本地文件包含  - cmdi：命令注入攻击   - xss：XSS攻击   - robot：恶意爬虫   - rfi：远程文件包含   - custom_custom：精准防护   - webshell：网站木马   - custom_whiteblackip：黑白名单拦截   - custom_geoip：地理访问控制拦截   - antitamper：防篡改   - anticrawler：反爬虫    - leakage：网站信息防泄漏   - illegal：非法请求 
+
+        :param attacks: The attacks of this ListEventRequest.
+        :type: list[str]
+        """
+        self._attacks = attacks
 
     @property
     def _from(self):

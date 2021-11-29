@@ -3444,6 +3444,71 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_dr_replica_status(self, request):
+        """查询跨云容灾复制状态
+
+        建立跨云容灾关系后，查询主实例和灾备实例间的复制状态及延迟。
+
+        :param ShowDrReplicaStatusRequest request
+        :return: ShowDrReplicaStatusResponse
+        """
+        return self.show_dr_replica_status_with_http_info(request)
+
+    def show_dr_replica_status_with_http_info(self, request):
+        """查询跨云容灾复制状态
+
+        建立跨云容灾关系后，查询主实例和灾备实例间的复制状态及延迟。
+
+        :param ShowDrReplicaStatusRequest request
+        :return: ShowDrReplicaStatusResponse
+        """
+
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/disaster-recovery',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDrReplicaStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_instance_configuration(self, request):
         """获取指定实例的参数模板
 
@@ -5588,6 +5653,140 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def change_proxy_scale(self, request):
+        """数据库代理规格变更
+
+        数据库代理实例进行规格变更。  - 调用接口前，您需要了解API 认证鉴权。
+
+        :param ChangeProxyScaleRequest request
+        :return: ChangeProxyScaleResponse
+        """
+        return self.change_proxy_scale_with_http_info(request)
+
+    def change_proxy_scale_with_http_info(self, request):
+        """数据库代理规格变更
+
+        数据库代理实例进行规格变更。  - 调用接口前，您需要了解API 认证鉴权。
+
+        :param ChangeProxyScaleRequest request
+        :return: ChangeProxyScaleResponse
+        """
+
+        all_params = ['instance_id', 'scale_proxy_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/scale',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ChangeProxyScaleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def change_the_delay_threshold(self, request):
+        """修改读写分离阈值
+
+        修改指定实例的读写分离延时阈值。
+
+        :param ChangeTheDelayThresholdRequest request
+        :return: ChangeTheDelayThresholdResponse
+        """
+        return self.change_the_delay_threshold_with_http_info(request)
+
+    def change_the_delay_threshold_with_http_info(self, request):
+        """修改读写分离阈值
+
+        修改指定实例的读写分离延时阈值。
+
+        :param ChangeTheDelayThresholdRequest request
+        :return: ChangeTheDelayThresholdResponse
+        """
+
+        all_params = ['instance_id', 'changing_the_delay_threshold_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/delay-threshold',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ChangeTheDelayThresholdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_postgresql_database(self, request):
         """创建数据库
 
@@ -5998,6 +6197,71 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def search_query_scale_flavors(self, request):
+        """查询数据库代理可变更的规格
+
+        查询数据库代理可变更的规格信息。  - 调用接口前，您需要了解API 认证鉴权。
+
+        :param SearchQueryScaleFlavorsRequest request
+        :return: SearchQueryScaleFlavorsResponse
+        """
+        return self.search_query_scale_flavors_with_http_info(request)
+
+    def search_query_scale_flavors_with_http_info(self, request):
+        """查询数据库代理可变更的规格
+
+        查询数据库代理可变更的规格信息。  - 调用接口前，您需要了解API 认证鉴权。
+
+        :param SearchQueryScaleFlavorsRequest request
+        :return: SearchQueryScaleFlavorsResponse
+        """
+
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/scale/flavors',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchQueryScaleFlavorsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def set_postgresql_db_user_pwd(self, request):
         """重置数据库帐号密码
 
@@ -6059,6 +6323,270 @@ class RdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='SetPostgresqlDbUserPwdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_information_about_database_proxy(self, request):
+        """查询数据库代理信息
+
+        查询指定实例的数据库代理详细信息。
+
+        :param ShowInformationAboutDatabaseProxyRequest request
+        :return: ShowInformationAboutDatabaseProxyResponse
+        """
+        return self.show_information_about_database_proxy_with_http_info(request)
+
+    def show_information_about_database_proxy_with_http_info(self, request):
+        """查询数据库代理信息
+
+        查询指定实例的数据库代理详细信息。
+
+        :param ShowInformationAboutDatabaseProxyRequest request
+        :return: ShowInformationAboutDatabaseProxyResponse
+        """
+
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowInformationAboutDatabaseProxyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def start_database_proxy(self, request):
+        """开启数据库代理
+
+        为指定实例开启数据库代理。
+
+        :param StartDatabaseProxyRequest request
+        :return: StartDatabaseProxyResponse
+        """
+        return self.start_database_proxy_with_http_info(request)
+
+    def start_database_proxy_with_http_info(self, request):
+        """开启数据库代理
+
+        为指定实例开启数据库代理。
+
+        :param StartDatabaseProxyRequest request
+        :return: StartDatabaseProxyResponse
+        """
+
+        all_params = ['instance_id', 'open_proxy_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartDatabaseProxyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def stop_database_proxy(self, request):
+        """关闭数据库代理
+
+        为指定实例关闭数据库代理。
+
+        :param StopDatabaseProxyRequest request
+        :return: StopDatabaseProxyResponse
+        """
+        return self.stop_database_proxy_with_http_info(request)
+
+    def stop_database_proxy_with_http_info(self, request):
+        """关闭数据库代理
+
+        为指定实例关闭数据库代理。
+
+        :param StopDatabaseProxyRequest request
+        :return: StopDatabaseProxyResponse
+        """
+
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StopDatabaseProxyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_read_weight(self, request):
+        """修改读写分离权重
+
+        修改指定实例的读写分离权重。
+
+        :param UpdateReadWeightRequest request
+        :return: UpdateReadWeightResponse
+        """
+        return self.update_read_weight_with_http_info(request)
+
+    def update_read_weight_with_http_info(self, request):
+        """修改读写分离权重
+
+        修改指定实例的读写分离权重。
+
+        :param UpdateReadWeightRequest request
+        :return: UpdateReadWeightResponse
+        """
+
+        all_params = ['instance_id', 'modify_proxy_weight_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/weight',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateReadWeightResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

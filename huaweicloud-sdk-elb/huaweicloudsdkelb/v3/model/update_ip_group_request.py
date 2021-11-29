@@ -48,7 +48,7 @@ class UpdateIpGroupRequest:
     def ipgroup_id(self):
         """Gets the ipgroup_id of this UpdateIpGroupRequest.
 
-        待更新的IP地址组的id
+        待更新的IP地址组的ID。
 
         :return: The ipgroup_id of this UpdateIpGroupRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class UpdateIpGroupRequest:
     def ipgroup_id(self, ipgroup_id):
         """Sets the ipgroup_id of this UpdateIpGroupRequest.
 
-        待更新的IP地址组的id
+        待更新的IP地址组的ID。
 
         :param ipgroup_id: The ipgroup_id of this UpdateIpGroupRequest.
         :type: str

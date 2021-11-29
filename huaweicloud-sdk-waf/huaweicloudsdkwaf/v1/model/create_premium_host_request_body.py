@@ -66,7 +66,7 @@ class CreatePremiumHostRequestBody:
     def certificateid(self):
         """Gets the certificateid of this CreatePremiumHostRequestBody.
 
-        证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   -对外协议HTTPS时为必填参数
+        证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :return: The certificateid of this CreatePremiumHostRequestBody.
         :rtype: str
@@ -77,7 +77,7 @@ class CreatePremiumHostRequestBody:
     def certificateid(self, certificateid):
         """Sets the certificateid of this CreatePremiumHostRequestBody.
 
-        证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   -对外协议HTTPS时为必填参数
+        证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificateid: The certificateid of this CreatePremiumHostRequestBody.
         :type: str
@@ -88,7 +88,7 @@ class CreatePremiumHostRequestBody:
     def certificatename(self):
         """Gets the certificatename of this CreatePremiumHostRequestBody.
 
-        证书名   - 对外协议为HTTP时不需要填写   -对外协议HTTPS时为必填参数
+        证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :return: The certificatename of this CreatePremiumHostRequestBody.
         :rtype: str
@@ -99,7 +99,7 @@ class CreatePremiumHostRequestBody:
     def certificatename(self, certificatename):
         """Sets the certificatename of this CreatePremiumHostRequestBody.
 
-        证书名   - 对外协议为HTTP时不需要填写   -对外协议HTTPS时为必填参数
+        证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificatename: The certificatename of this CreatePremiumHostRequestBody.
         :type: str

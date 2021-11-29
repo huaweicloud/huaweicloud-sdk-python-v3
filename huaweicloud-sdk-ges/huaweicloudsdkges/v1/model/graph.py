@@ -23,7 +23,7 @@ class Graph:
 
     openapi_types = {
         'name': 'str',
-        'graph_size_type_index': 'int',
+        'graph_size_type_index': 'str',
         'arch': 'str',
         'data_source': 'DataSource',
         'vpc_id': 'str',
@@ -129,7 +129,7 @@ class Graph:
         图规模类型索引。 - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 401：十亿增强边
 
         :return: The graph_size_type_index of this Graph.
-        :rtype: int
+        :rtype: str
         """
         return self._graph_size_type_index
 
@@ -140,7 +140,7 @@ class Graph:
         图规模类型索引。 - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 401：十亿增强边
 
         :param graph_size_type_index: The graph_size_type_index of this Graph.
-        :type: int
+        :type: str
         """
         self._graph_size_type_index = graph_size_type_index
 

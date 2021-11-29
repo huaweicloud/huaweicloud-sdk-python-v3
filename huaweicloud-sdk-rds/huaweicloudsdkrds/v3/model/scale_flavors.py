@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowQuotaDefaultsRequest:
+class ScaleFlavors:
 
 
     """
@@ -22,16 +22,99 @@ class ShowQuotaDefaultsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'code': 'str',
+        'cpu': 'str',
+        'mem': 'str'
     }
 
     attribute_map = {
+        'code': 'code',
+        'cpu': 'cpu',
+        'mem': 'mem'
     }
 
-    def __init__(self):
-        """ShowQuotaDefaultsRequest - a model defined in huaweicloud sdk"""
+    def __init__(self, code=None, cpu=None, mem=None):
+        """ScaleFlavors - a model defined in huaweicloud sdk"""
         
         
+
+        self._code = None
+        self._cpu = None
+        self._mem = None
         self.discriminator = None
+
+        if code is not None:
+            self.code = code
+        if cpu is not None:
+            self.cpu = cpu
+        if mem is not None:
+            self.mem = mem
+
+    @property
+    def code(self):
+        """Gets the code of this ScaleFlavors.
+
+        规格码。
+
+        :return: The code of this ScaleFlavors.
+        :rtype: str
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        """Sets the code of this ScaleFlavors.
+
+        规格码。
+
+        :param code: The code of this ScaleFlavors.
+        :type: str
+        """
+        self._code = code
+
+    @property
+    def cpu(self):
+        """Gets the cpu of this ScaleFlavors.
+
+        CPU个数。
+
+        :return: The cpu of this ScaleFlavors.
+        :rtype: str
+        """
+        return self._cpu
+
+    @cpu.setter
+    def cpu(self, cpu):
+        """Sets the cpu of this ScaleFlavors.
+
+        CPU个数。
+
+        :param cpu: The cpu of this ScaleFlavors.
+        :type: str
+        """
+        self._cpu = cpu
+
+    @property
+    def mem(self):
+        """Gets the mem of this ScaleFlavors.
+
+        内存大小（单位：GB）。
+
+        :return: The mem of this ScaleFlavors.
+        :rtype: str
+        """
+        return self._mem
+
+    @mem.setter
+    def mem(self, mem):
+        """Sets the mem of this ScaleFlavors.
+
+        内存大小（单位：GB）。
+
+        :param mem: The mem of this ScaleFlavors.
+        :type: str
+        """
+        self._mem = mem
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -75,7 +158,7 @@ class ShowQuotaDefaultsRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowQuotaDefaultsRequest):
+        if not isinstance(other, ScaleFlavors):
             return False
 
         return self.__dict__ == other.__dict__

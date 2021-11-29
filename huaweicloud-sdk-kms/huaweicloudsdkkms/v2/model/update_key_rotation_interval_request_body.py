@@ -43,10 +43,8 @@ class UpdateKeyRotationIntervalRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
-        if rotation_interval is not None:
-            self.rotation_interval = rotation_interval
+        self.key_id = key_id
+        self.rotation_interval = rotation_interval
         if sequence is not None:
             self.sequence = sequence
 

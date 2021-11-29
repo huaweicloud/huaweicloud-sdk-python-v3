@@ -96,7 +96,7 @@ class ListListenersResponse(SdkResponse):
     def listeners(self):
         """Gets the listeners of this ListListenersResponse.
 
-        listener的列表。
+        Listener的列表。
 
         :return: The listeners of this ListListenersResponse.
         :rtype: list[Listener]
@@ -107,7 +107,7 @@ class ListListenersResponse(SdkResponse):
     def listeners(self, listeners):
         """Sets the listeners of this ListListenersResponse.
 
-        listener的列表。
+        Listener的列表。
 
         :param listeners: The listeners of this ListListenersResponse.
         :type: list[Listener]

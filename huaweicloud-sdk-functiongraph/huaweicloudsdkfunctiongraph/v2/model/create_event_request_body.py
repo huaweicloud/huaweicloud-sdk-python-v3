@@ -40,10 +40,8 @@ class CreateEventRequestBody:
         self._content = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if content is not None:
-            self.content = content
+        self.name = name
+        self.content = content
 
     @property
     def name(self):

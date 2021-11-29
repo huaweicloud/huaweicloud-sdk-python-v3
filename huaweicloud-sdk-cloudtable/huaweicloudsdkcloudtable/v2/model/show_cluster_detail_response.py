@@ -23,7 +23,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     openapi_types = {
         'actions': 'list[str]',
-        'enable_opentsdb': 'bool',
+        'enable_open_tsdb': 'bool',
         'enable_lemon': 'bool',
         'cluster_name': 'str',
         'cu_num': 'int',
@@ -51,7 +51,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     attribute_map = {
         'actions': 'actions',
-        'enable_opentsdb': 'enable_opentsdb',
+        'enable_open_tsdb': 'enable_openTSDB',
         'enable_lemon': 'enable_lemon',
         'cluster_name': 'cluster_name',
         'cu_num': 'cu_num',
@@ -77,13 +77,13 @@ class ShowClusterDetailResponse(SdkResponse):
         'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, actions=None, enable_opentsdb=None, enable_lemon=None, cluster_name=None, cu_num=None, tsd_num=None, lemon_num=None, storage_type=None, storage_quota=None, used_storage_size=None, auth_mode=None, updated=None, created=None, cluster_id=None, status=None, opentsdb_link=None, tsd_public_endpoint=None, lemon_link=None, zookeeper_link=None, hbase_public_endpoint=None, is_frozen=None, vpc_id=None, sub_net_id=None, security_group_id=None, availability_zone=None):
+    def __init__(self, actions=None, enable_open_tsdb=None, enable_lemon=None, cluster_name=None, cu_num=None, tsd_num=None, lemon_num=None, storage_type=None, storage_quota=None, used_storage_size=None, auth_mode=None, updated=None, created=None, cluster_id=None, status=None, opentsdb_link=None, tsd_public_endpoint=None, lemon_link=None, zookeeper_link=None, hbase_public_endpoint=None, is_frozen=None, vpc_id=None, sub_net_id=None, security_group_id=None, availability_zone=None):
         """ShowClusterDetailResponse - a model defined in huaweicloud sdk"""
         
         super(ShowClusterDetailResponse, self).__init__()
 
         self._actions = None
-        self._enable_opentsdb = None
+        self._enable_open_tsdb = None
         self._enable_lemon = None
         self._cluster_name = None
         self._cu_num = None
@@ -111,8 +111,8 @@ class ShowClusterDetailResponse(SdkResponse):
 
         if actions is not None:
             self.actions = actions
-        if enable_opentsdb is not None:
-            self.enable_opentsdb = enable_opentsdb
+        if enable_open_tsdb is not None:
+            self.enable_open_tsdb = enable_open_tsdb
         if enable_lemon is not None:
             self.enable_lemon = enable_lemon
         if cluster_name is not None:
@@ -183,26 +183,26 @@ class ShowClusterDetailResponse(SdkResponse):
         self._actions = actions
 
     @property
-    def enable_opentsdb(self):
-        """Gets the enable_opentsdb of this ShowClusterDetailResponse.
+    def enable_open_tsdb(self):
+        """Gets the enable_open_tsdb of this ShowClusterDetailResponse.
 
         是否打开openTSDB特性。 - false：不开启 - true：开启
 
-        :return: The enable_opentsdb of this ShowClusterDetailResponse.
+        :return: The enable_open_tsdb of this ShowClusterDetailResponse.
         :rtype: bool
         """
-        return self._enable_opentsdb
+        return self._enable_open_tsdb
 
-    @enable_opentsdb.setter
-    def enable_opentsdb(self, enable_opentsdb):
-        """Sets the enable_opentsdb of this ShowClusterDetailResponse.
+    @enable_open_tsdb.setter
+    def enable_open_tsdb(self, enable_open_tsdb):
+        """Sets the enable_open_tsdb of this ShowClusterDetailResponse.
 
         是否打开openTSDB特性。 - false：不开启 - true：开启
 
-        :param enable_opentsdb: The enable_opentsdb of this ShowClusterDetailResponse.
+        :param enable_open_tsdb: The enable_open_tsdb of this ShowClusterDetailResponse.
         :type: bool
         """
-        self._enable_opentsdb = enable_opentsdb
+        self._enable_open_tsdb = enable_open_tsdb
 
     @property
     def enable_lemon(self):

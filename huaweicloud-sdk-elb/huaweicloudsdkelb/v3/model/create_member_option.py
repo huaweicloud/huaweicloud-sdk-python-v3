@@ -72,7 +72,7 @@ class CreateMemberOption:
     def address(self):
         """Gets the address of this CreateMemberOption.
 
-        后端云服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。例如：192.168.3.11。只能指定为主网卡的IP。 subnet_cidr_id为空代表添加跨VPC后端，此时address必须为ipv4地址
+        后端服务器对应的IP地址。 使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:otc,otc_test,dt,dt_test)
 
         :return: The address of this CreateMemberOption.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateMemberOption:
     def address(self, address):
         """Sets the address of this CreateMemberOption.
 
-        后端云服务器的对应的IP地址，这个IP必须在subnet_cidr_id字段的子网网段中。例如：192.168.3.11。只能指定为主网卡的IP。 subnet_cidr_id为空代表添加跨VPC后端，此时address必须为ipv4地址
+        后端服务器对应的IP地址。 使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:otc,otc_test,dt,dt_test)
 
         :param address: The address of this CreateMemberOption.
         :type: str
@@ -94,7 +94,7 @@ class CreateMemberOption:
     def admin_state_up(self):
         """Gets the admin_state_up of this CreateMemberOption.
 
-        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :return: The admin_state_up of this CreateMemberOption.
         :rtype: bool
@@ -105,7 +105,7 @@ class CreateMemberOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this CreateMemberOption.
 
-        后端云服务器的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
+        后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
         :param admin_state_up: The admin_state_up of this CreateMemberOption.
         :type: bool
@@ -160,7 +160,7 @@ class CreateMemberOption:
     def protocol_port(self):
         """Gets the protocol_port of this CreateMemberOption.
 
-        后端端口和协议号
+        后端服务器业务端口号。
 
         :return: The protocol_port of this CreateMemberOption.
         :rtype: int
@@ -171,7 +171,7 @@ class CreateMemberOption:
     def protocol_port(self, protocol_port):
         """Sets the protocol_port of this CreateMemberOption.
 
-        后端端口和协议号
+        后端服务器业务端口号。
 
         :param protocol_port: The protocol_port of this CreateMemberOption.
         :type: int
@@ -182,7 +182,7 @@ class CreateMemberOption:
     def subnet_cidr_id(self):
         """Gets the subnet_cidr_id of this CreateMemberOption.
 
-        后端云服务器所在的子网ID。该子网和后端云服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。暂不支持IPv6。 可以不填，表示添加跨VPC后端，此时address必须为ipv4地址，pool的协议必须为TCP/HTTP/HTTPS，pool所属的LB的跨VPC后端转发能力必须打开
+        后端云服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。 使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。  - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。 [不支持IPv6，请勿设置为IPv6子网ID。](tag:otc,otc_test,dt,dt_test)
 
         :return: The subnet_cidr_id of this CreateMemberOption.
         :rtype: str
@@ -193,7 +193,7 @@ class CreateMemberOption:
     def subnet_cidr_id(self, subnet_cidr_id):
         """Sets the subnet_cidr_id of this CreateMemberOption.
 
-        后端云服务器所在的子网ID。该子网和后端云服务器关联的负载均衡器的子网必须在同一VPC下。只支持指定IPv4的子网ID。暂不支持IPv6。 可以不填，表示添加跨VPC后端，此时address必须为ipv4地址，pool的协议必须为TCP/HTTP/HTTPS，pool所属的LB的跨VPC后端转发能力必须打开
+        后端云服务器所在的子网ID，可以是子网的IPv4子网ID或IPv6子网ID。 使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。  - 若所属LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。 [不支持IPv6，请勿设置为IPv6子网ID。](tag:otc,otc_test,dt,dt_test)
 
         :param subnet_cidr_id: The subnet_cidr_id of this CreateMemberOption.
         :type: str
@@ -204,7 +204,7 @@ class CreateMemberOption:
     def weight(self):
         """Gets the weight of this CreateMemberOption.
 
-        后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
+        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 取值：0-100，默认1。 使用说明： - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
 
         :return: The weight of this CreateMemberOption.
         :rtype: int
@@ -215,7 +215,7 @@ class CreateMemberOption:
     def weight(self, weight):
         """Sets the weight of this CreateMemberOption.
 
-        后端云服务器的权重，请求按权重在同一后端云服务器组下的后端云服务器间分发。权重为0的后端不再接受新的请求。当后端云服务器所在的后端云服务器组的lb_algorithm的取值为SOURCE_IP时，该字段无效。
+        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 取值：0-100，默认1。 使用说明： - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
 
         :param weight: The weight of this CreateMemberOption.
         :type: int

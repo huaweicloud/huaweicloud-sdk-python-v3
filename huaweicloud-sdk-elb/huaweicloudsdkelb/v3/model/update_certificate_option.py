@@ -26,7 +26,9 @@ class UpdateCertificateOption:
         'description': 'str',
         'name': 'str',
         'private_key': 'str',
-        'domain': 'str'
+        'domain': 'str',
+        'enc_certificate': 'str',
+        'enc_private_key': 'str'
     }
 
     attribute_map = {
@@ -34,10 +36,12 @@ class UpdateCertificateOption:
         'description': 'description',
         'name': 'name',
         'private_key': 'private_key',
-        'domain': 'domain'
+        'domain': 'domain',
+        'enc_certificate': 'enc_certificate',
+        'enc_private_key': 'enc_private_key'
     }
 
-    def __init__(self, certificate=None, description=None, name=None, private_key=None, domain=None):
+    def __init__(self, certificate=None, description=None, name=None, private_key=None, domain=None, enc_certificate=None, enc_private_key=None):
         """UpdateCertificateOption - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +51,8 @@ class UpdateCertificateOption:
         self._name = None
         self._private_key = None
         self._domain = None
+        self._enc_certificate = None
+        self._enc_private_key = None
         self.discriminator = None
 
         if certificate is not None:
@@ -59,12 +65,16 @@ class UpdateCertificateOption:
             self.private_key = private_key
         if domain is not None:
             self.domain = domain
+        if enc_certificate is not None:
+            self.enc_certificate = enc_certificate
+        if enc_private_key is not None:
+            self.enc_private_key = enc_private_key
 
     @property
     def certificate(self):
         """Gets the certificate of this UpdateCertificateOption.
 
-        HTTPS协议使用的证书内容。 取值范围：PEM编码格式。
+        证书的内容。PEM编码格式。
 
         :return: The certificate of this UpdateCertificateOption.
         :rtype: str
@@ -75,7 +85,7 @@ class UpdateCertificateOption:
     def certificate(self, certificate):
         """Sets the certificate of this UpdateCertificateOption.
 
-        HTTPS协议使用的证书内容。 取值范围：PEM编码格式。
+        证书的内容。PEM编码格式。
 
         :param certificate: The certificate of this UpdateCertificateOption.
         :type: str
@@ -86,7 +96,7 @@ class UpdateCertificateOption:
     def description(self):
         """Gets the description of this UpdateCertificateOption.
 
-        SSL证书的描述。
+        证书的描述。
 
         :return: The description of this UpdateCertificateOption.
         :rtype: str
@@ -97,7 +107,7 @@ class UpdateCertificateOption:
     def description(self, description):
         """Sets the description of this UpdateCertificateOption.
 
-        SSL证书的描述。
+        证书的描述。
 
         :param description: The description of this UpdateCertificateOption.
         :type: str
@@ -108,7 +118,7 @@ class UpdateCertificateOption:
     def name(self):
         """Gets the name of this UpdateCertificateOption.
 
-        SSL证书的名称。
+        证书的名称。
 
         :return: The name of this UpdateCertificateOption.
         :rtype: str
@@ -119,7 +129,7 @@ class UpdateCertificateOption:
     def name(self, name):
         """Sets the name of this UpdateCertificateOption.
 
-        SSL证书的名称。
+        证书的名称。
 
         :param name: The name of this UpdateCertificateOption.
         :type: str
@@ -130,7 +140,7 @@ class UpdateCertificateOption:
     def private_key(self):
         """Gets the private_key of this UpdateCertificateOption.
 
-        HTTPS协议使用的私钥。仅type为server时有效。type为server时必选。 取值范围：PEM编码格式。
+        服务器证书的私钥。PEM编码格式。  当type为client时，该参数被忽略，不影响证书的创建和使用。且若不符合格式，不报错但会被设置为空。  当type为server时，该字段必须符合格式要求，且私钥必须是有效的。
 
         :return: The private_key of this UpdateCertificateOption.
         :rtype: str
@@ -141,7 +151,7 @@ class UpdateCertificateOption:
     def private_key(self, private_key):
         """Sets the private_key of this UpdateCertificateOption.
 
-        HTTPS协议使用的私钥。仅type为server时有效。type为server时必选。 取值范围：PEM编码格式。
+        服务器证书的私钥。PEM编码格式。  当type为client时，该参数被忽略，不影响证书的创建和使用。且若不符合格式，不报错但会被设置为空。  当type为server时，该字段必须符合格式要求，且私钥必须是有效的。
 
         :param private_key: The private_key of this UpdateCertificateOption.
         :type: str
@@ -169,6 +179,50 @@ class UpdateCertificateOption:
         :type: str
         """
         self._domain = domain
+
+    @property
+    def enc_certificate(self):
+        """Gets the enc_certificate of this UpdateCertificateOption.
+
+        HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效。
+
+        :return: The enc_certificate of this UpdateCertificateOption.
+        :rtype: str
+        """
+        return self._enc_certificate
+
+    @enc_certificate.setter
+    def enc_certificate(self, enc_certificate):
+        """Sets the enc_certificate of this UpdateCertificateOption.
+
+        HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效。
+
+        :param enc_certificate: The enc_certificate of this UpdateCertificateOption.
+        :type: str
+        """
+        self._enc_certificate = enc_certificate
+
+    @property
+    def enc_private_key(self):
+        """Gets the enc_private_key of this UpdateCertificateOption.
+
+        HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效。
+
+        :return: The enc_private_key of this UpdateCertificateOption.
+        :rtype: str
+        """
+        return self._enc_private_key
+
+    @enc_private_key.setter
+    def enc_private_key(self, enc_private_key):
+        """Sets the enc_private_key of this UpdateCertificateOption.
+
+        HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效。
+
+        :param enc_private_key: The enc_private_key of this UpdateCertificateOption.
+        :type: str
+        """
+        self._enc_private_key = enc_private_key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

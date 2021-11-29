@@ -22,23 +22,28 @@ class CreateKmsTagRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'tag': 'TagItem'
+        'tag': 'TagItem',
+        'sequence': 'str'
     }
 
     attribute_map = {
-        'tag': 'tag'
+        'tag': 'tag',
+        'sequence': 'sequence'
     }
 
-    def __init__(self, tag=None):
+    def __init__(self, tag=None, sequence=None):
         """CreateKmsTagRequestBody - a model defined in huaweicloud sdk"""
         
         
 
         self._tag = None
+        self._sequence = None
         self.discriminator = None
 
         if tag is not None:
             self.tag = tag
+        if sequence is not None:
+            self.sequence = sequence
 
     @property
     def tag(self):
@@ -59,6 +64,28 @@ class CreateKmsTagRequestBody:
         :type: TagItem
         """
         self._tag = tag
+
+    @property
+    def sequence(self):
+        """Gets the sequence of this CreateKmsTagRequestBody.
+
+        请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+
+        :return: The sequence of this CreateKmsTagRequestBody.
+        :rtype: str
+        """
+        return self._sequence
+
+    @sequence.setter
+    def sequence(self, sequence):
+        """Sets the sequence of this CreateKmsTagRequestBody.
+
+        请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+
+        :param sequence: The sequence of this CreateKmsTagRequestBody.
+        :type: str
+        """
+        self._sequence = sequence
 
     def to_dict(self):
         """Returns the model properties as a dict"""

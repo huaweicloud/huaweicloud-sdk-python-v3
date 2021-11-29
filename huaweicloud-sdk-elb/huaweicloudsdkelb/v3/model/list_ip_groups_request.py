@@ -22,119 +22,75 @@ class ListIpGroupsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'description': 'list[str]',
-        'id': 'list[str]',
-        'ip_list': 'list[str]',
-        'limit': 'int',
         'marker': 'str',
+        'limit': 'int',
+        'page_reverse': 'bool',
+        'id': 'list[str]',
         'name': 'list[str]',
-        'page_reverse': 'bool'
+        'description': 'list[str]',
+        'ip_list': 'list[str]'
     }
 
     attribute_map = {
-        'description': 'description',
-        'id': 'id',
-        'ip_list': 'ip_list',
-        'limit': 'limit',
         'marker': 'marker',
+        'limit': 'limit',
+        'page_reverse': 'page_reverse',
+        'id': 'id',
         'name': 'name',
-        'page_reverse': 'page_reverse'
+        'description': 'description',
+        'ip_list': 'ip_list'
     }
 
-    def __init__(self, description=None, id=None, ip_list=None, limit=None, marker=None, name=None, page_reverse=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, id=None, name=None, description=None, ip_list=None):
         """ListIpGroupsRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._description = None
-        self._id = None
-        self._ip_list = None
-        self._limit = None
         self._marker = None
-        self._name = None
+        self._limit = None
         self._page_reverse = None
+        self._id = None
+        self._name = None
+        self._description = None
+        self._ip_list = None
         self.discriminator = None
 
-        if description is not None:
-            self.description = description
-        if id is not None:
-            self.id = id
-        if ip_list is not None:
-            self.ip_list = ip_list
-        if limit is not None:
-            self.limit = limit
         if marker is not None:
             self.marker = marker
-        if name is not None:
-            self.name = name
+        if limit is not None:
+            self.limit = limit
         if page_reverse is not None:
             self.page_reverse = page_reverse
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
+        if description is not None:
+            self.description = description
+        if ip_list is not None:
+            self.ip_list = ip_list
 
     @property
-    def description(self):
-        """Gets the description of this ListIpGroupsRequest.
+    def marker(self):
+        """Gets the marker of this ListIpGroupsRequest.
 
-        ip地址组的描述信息。
+        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
-        :return: The description of this ListIpGroupsRequest.
-        :rtype: list[str]
+        :return: The marker of this ListIpGroupsRequest.
+        :rtype: str
         """
-        return self._description
+        return self._marker
 
-    @description.setter
-    def description(self, description):
-        """Sets the description of this ListIpGroupsRequest.
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListIpGroupsRequest.
 
-        ip地址组的描述信息。
+        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
-        :param description: The description of this ListIpGroupsRequest.
-        :type: list[str]
+        :param marker: The marker of this ListIpGroupsRequest.
+        :type: str
         """
-        self._description = description
-
-    @property
-    def id(self):
-        """Gets the id of this ListIpGroupsRequest.
-
-        ip地址组的id
-
-        :return: The id of this ListIpGroupsRequest.
-        :rtype: list[str]
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ListIpGroupsRequest.
-
-        ip地址组的id
-
-        :param id: The id of this ListIpGroupsRequest.
-        :type: list[str]
-        """
-        self._id = id
-
-    @property
-    def ip_list(self):
-        """Gets the ip_list of this ListIpGroupsRequest.
-
-        ip地址，多个用逗号分隔
-
-        :return: The ip_list of this ListIpGroupsRequest.
-        :rtype: list[str]
-        """
-        return self._ip_list
-
-    @ip_list.setter
-    def ip_list(self, ip_list):
-        """Sets the ip_list of this ListIpGroupsRequest.
-
-        ip地址，多个用逗号分隔
-
-        :param ip_list: The ip_list of this ListIpGroupsRequest.
-        :type: list[str]
-        """
-        self._ip_list = ip_list
+        self._marker = marker
 
     @property
     def limit(self):
@@ -159,54 +115,10 @@ class ListIpGroupsRequest:
         self._limit = limit
 
     @property
-    def marker(self):
-        """Gets the marker of this ListIpGroupsRequest.
-
-        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
-
-        :return: The marker of this ListIpGroupsRequest.
-        :rtype: str
-        """
-        return self._marker
-
-    @marker.setter
-    def marker(self, marker):
-        """Sets the marker of this ListIpGroupsRequest.
-
-        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
-
-        :param marker: The marker of this ListIpGroupsRequest.
-        :type: str
-        """
-        self._marker = marker
-
-    @property
-    def name(self):
-        """Gets the name of this ListIpGroupsRequest.
-
-        ip地址组的名称
-
-        :return: The name of this ListIpGroupsRequest.
-        :rtype: list[str]
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListIpGroupsRequest.
-
-        ip地址组的名称
-
-        :param name: The name of this ListIpGroupsRequest.
-        :type: list[str]
-        """
-        self._name = name
-
-    @property
     def page_reverse(self):
         """Gets the page_reverse of this ListIpGroupsRequest.
 
-        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明：必须与limit一起使用。
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
 
         :return: The page_reverse of this ListIpGroupsRequest.
         :rtype: bool
@@ -217,12 +129,100 @@ class ListIpGroupsRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListIpGroupsRequest.
 
-        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明：必须与limit一起使用。
+        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
 
         :param page_reverse: The page_reverse of this ListIpGroupsRequest.
         :type: bool
         """
         self._page_reverse = page_reverse
+
+    @property
+    def id(self):
+        """Gets the id of this ListIpGroupsRequest.
+
+        IP地址组的ID。
+
+        :return: The id of this ListIpGroupsRequest.
+        :rtype: list[str]
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ListIpGroupsRequest.
+
+        IP地址组的ID。
+
+        :param id: The id of this ListIpGroupsRequest.
+        :type: list[str]
+        """
+        self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this ListIpGroupsRequest.
+
+        IP地址组的名称。
+
+        :return: The name of this ListIpGroupsRequest.
+        :rtype: list[str]
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListIpGroupsRequest.
+
+        IP地址组的名称。
+
+        :param name: The name of this ListIpGroupsRequest.
+        :type: list[str]
+        """
+        self._name = name
+
+    @property
+    def description(self):
+        """Gets the description of this ListIpGroupsRequest.
+
+        IP地址组的描述信息。
+
+        :return: The description of this ListIpGroupsRequest.
+        :rtype: list[str]
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ListIpGroupsRequest.
+
+        IP地址组的描述信息。
+
+        :param description: The description of this ListIpGroupsRequest.
+        :type: list[str]
+        """
+        self._description = description
+
+    @property
+    def ip_list(self):
+        """Gets the ip_list of this ListIpGroupsRequest.
+
+        IP地址，多个用逗号分隔。
+
+        :return: The ip_list of this ListIpGroupsRequest.
+        :rtype: list[str]
+        """
+        return self._ip_list
+
+    @ip_list.setter
+    def ip_list(self, ip_list):
+        """Sets the ip_list of this ListIpGroupsRequest.
+
+        IP地址，多个用逗号分隔。
+
+        :param ip_list: The ip_list of this ListIpGroupsRequest.
+        :type: list[str]
+        """
+        self._ip_list = ip_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

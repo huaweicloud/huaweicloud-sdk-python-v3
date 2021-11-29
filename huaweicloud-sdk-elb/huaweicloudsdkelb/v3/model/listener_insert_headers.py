@@ -52,7 +52,8 @@ class ListenerInsertHeaders:
             self.x_forwarded_port = x_forwarded_port
         if x_forwarded_for_port is not None:
             self.x_forwarded_for_port = x_forwarded_for_port
-        self.x_forwarded_host = x_forwarded_host
+        if x_forwarded_host is not None:
+            self.x_forwarded_host = x_forwarded_host
 
     @property
     def x_forwarded_elb_ip(self):

@@ -69,7 +69,7 @@ class LoadBalancerStatusPool:
     def provisioning_status(self):
         """Gets the provisioning_status of this LoadBalancerStatusPool.
 
-        provisioning的状态。 可以为：ACTIVE、PENDING_CREATE 或者ERROR。说明：该字段为预留字段，暂未启用，默认为ACTIVE。
+        后端服务器组的配置状态。取值： - ACTIVE：使用中。
 
         :return: The provisioning_status of this LoadBalancerStatusPool.
         :rtype: str
@@ -80,7 +80,7 @@ class LoadBalancerStatusPool:
     def provisioning_status(self, provisioning_status):
         """Sets the provisioning_status of this LoadBalancerStatusPool.
 
-        provisioning的状态。 可以为：ACTIVE、PENDING_CREATE 或者ERROR。说明：该字段为预留字段，暂未启用，默认为ACTIVE。
+        后端服务器组的配置状态。取值： - ACTIVE：使用中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusPool.
         :type: str
@@ -133,7 +133,7 @@ class LoadBalancerStatusPool:
     def members(self):
         """Gets the members of this LoadBalancerStatusPool.
 
-        后端服务器。
+        后端服务器状态信息。
 
         :return: The members of this LoadBalancerStatusPool.
         :rtype: list[LoadBalancerStatusMember]
@@ -144,7 +144,7 @@ class LoadBalancerStatusPool:
     def members(self, members):
         """Sets the members of this LoadBalancerStatusPool.
 
-        后端服务器。
+        后端服务器状态信息。
 
         :param members: The members of this LoadBalancerStatusPool.
         :type: list[LoadBalancerStatusMember]
@@ -177,7 +177,7 @@ class LoadBalancerStatusPool:
     def operating_status(self):
         """Gets the operating_status of this LoadBalancerStatusPool.
 
-        操作状态。 可以为：ONLINE、OFFLINE、DEGRADED、DISABLED或NO_MONITOR。说明：该字段为预留字段，暂未启用，默认为ONLINE。
+        后端服务器组的操作状态。取值： - ONLINE：创建时默认状态，表后端服务器组正常。 - DEGRADED：该后端服务器组下存在member为的operating_status=OFFLINE。 - DISABLED：负载均衡器或后端服务器组的admin_state_up=false。 使用说明： - DEGRADED和DISABLED仅在当前接口返回，查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
 
         :return: The operating_status of this LoadBalancerStatusPool.
         :rtype: str
@@ -188,7 +188,7 @@ class LoadBalancerStatusPool:
     def operating_status(self, operating_status):
         """Sets the operating_status of this LoadBalancerStatusPool.
 
-        操作状态。 可以为：ONLINE、OFFLINE、DEGRADED、DISABLED或NO_MONITOR。说明：该字段为预留字段，暂未启用，默认为ONLINE。
+        后端服务器组的操作状态。取值： - ONLINE：创建时默认状态，表后端服务器组正常。 - DEGRADED：该后端服务器组下存在member为的operating_status=OFFLINE。 - DISABLED：负载均衡器或后端服务器组的admin_state_up=false。 使用说明： - DEGRADED和DISABLED仅在当前接口返回，查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
 
         :param operating_status: The operating_status of this LoadBalancerStatusPool.
         :type: str

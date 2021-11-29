@@ -6,6 +6,7 @@ from __future__ import absolute_import
 from huaweicloudsdkwaf.v1.waf_client import WafClient
 from huaweicloudsdkwaf.v1.waf_async_client import WafAsyncClient
 # import models into sdk package
+from huaweicloudsdkwaf.v1.model.advance import Advance
 from huaweicloudsdkwaf.v1.model.anti_tamper_rule_response_body import AntiTamperRuleResponseBody
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request import ApplyCertificateToHostRequest
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request_body import ApplyCertificateToHostRequestBody
@@ -65,7 +66,9 @@ from huaweicloudsdkwaf.v1.model.delete_value_list_response import DeleteValueLis
 from huaweicloudsdkwaf.v1.model.delete_white_black_ip_rule_request import DeleteWhiteBlackIpRuleRequest
 from huaweicloudsdkwaf.v1.model.delete_white_black_ip_rule_response import DeleteWhiteBlackIpRuleResponse
 from huaweicloudsdkwaf.v1.model.flag import Flag
+from huaweicloudsdkwaf.v1.model.ge_o_ip_item import GeOIpItem
 from huaweicloudsdkwaf.v1.model.host_flag import HostFlag
+from huaweicloudsdkwaf.v1.model.ingnore_item import IngnoreItem
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_request import ListAntitamperRuleRequest
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_response import ListAntitamperRuleResponse
 from huaweicloudsdkwaf.v1.model.list_bandwidth_timeline_request import ListBandwidthTimelineRequest
@@ -78,7 +81,6 @@ from huaweicloudsdkwaf.v1.model.list_event_items import ListEventItems
 from huaweicloudsdkwaf.v1.model.list_event_items_headers import ListEventItemsHeaders
 from huaweicloudsdkwaf.v1.model.list_event_request import ListEventRequest
 from huaweicloudsdkwaf.v1.model.list_event_response import ListEventResponse
-from huaweicloudsdkwaf.v1.model.list_geo_ip_response_body_items import ListGeoIpResponseBodyItems
 from huaweicloudsdkwaf.v1.model.list_geoip_rule_request import ListGeoipRuleRequest
 from huaweicloudsdkwaf.v1.model.list_geoip_rule_response import ListGeoipRuleResponse
 from huaweicloudsdkwaf.v1.model.list_host_request import ListHostRequest

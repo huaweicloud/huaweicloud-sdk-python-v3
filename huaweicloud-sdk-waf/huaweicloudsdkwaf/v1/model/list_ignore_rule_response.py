@@ -22,23 +22,28 @@ class ListIgnoreRuleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int'
+        'total': 'int',
+        'items': 'list[IngnoreItem]'
     }
 
     attribute_map = {
-        'total': 'total'
+        'total': 'total',
+        'items': 'items'
     }
 
-    def __init__(self, total=None):
+    def __init__(self, total=None, items=None):
         """ListIgnoreRuleResponse - a model defined in huaweicloud sdk"""
         
         super(ListIgnoreRuleResponse, self).__init__()
 
         self._total = None
+        self._items = None
         self.discriminator = None
 
         if total is not None:
             self.total = total
+        if items is not None:
+            self.items = items
 
     @property
     def total(self):
@@ -61,6 +66,28 @@ class ListIgnoreRuleResponse(SdkResponse):
         :type: int
         """
         self._total = total
+
+    @property
+    def items(self):
+        """Gets the items of this ListIgnoreRuleResponse.
+
+        误报屏蔽规则对象列表
+
+        :return: The items of this ListIgnoreRuleResponse.
+        :rtype: list[IngnoreItem]
+        """
+        return self._items
+
+    @items.setter
+    def items(self, items):
+        """Sets the items of this ListIgnoreRuleResponse.
+
+        误报屏蔽规则对象列表
+
+        :param items: The items of this ListIgnoreRuleResponse.
+        :type: list[IngnoreItem]
+        """
+        self._items = items
 
     def to_dict(self):
         """Returns the model properties as a dict"""

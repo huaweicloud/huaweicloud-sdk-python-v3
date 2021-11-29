@@ -29,7 +29,16 @@ class UpdateApiGroupV2Response(SdkResponse):
         'register_time': 'datetime',
         'update_time': 'datetime',
         'on_sell_status': 'int',
-        'url_domains': 'list[UrlDomain]'
+        'url_domains': 'list[UrlDomain]',
+        'sl_domains': 'list[str]',
+        'remark': 'str',
+        'call_limits': 'int',
+        'time_interval': 'int',
+        'time_unit': 'str',
+        'is_default': 'int',
+        'version': 'str',
+        'roma_app_id': 'str',
+        'roma_app_name': 'str'
     }
 
     attribute_map = {
@@ -40,10 +49,19 @@ class UpdateApiGroupV2Response(SdkResponse):
         'register_time': 'register_time',
         'update_time': 'update_time',
         'on_sell_status': 'on_sell_status',
-        'url_domains': 'url_domains'
+        'url_domains': 'url_domains',
+        'sl_domains': 'sl_domains',
+        'remark': 'remark',
+        'call_limits': 'call_limits',
+        'time_interval': 'time_interval',
+        'time_unit': 'time_unit',
+        'is_default': 'is_default',
+        'version': 'version',
+        'roma_app_id': 'roma_app_id',
+        'roma_app_name': 'roma_app_name'
     }
 
-    def __init__(self, id=None, name=None, status=None, sl_domain=None, register_time=None, update_time=None, on_sell_status=None, url_domains=None):
+    def __init__(self, id=None, name=None, status=None, sl_domain=None, register_time=None, update_time=None, on_sell_status=None, url_domains=None, sl_domains=None, remark=None, call_limits=None, time_interval=None, time_unit=None, is_default=None, version=None, roma_app_id=None, roma_app_name=None):
         """UpdateApiGroupV2Response - a model defined in huaweicloud sdk"""
         
         super(UpdateApiGroupV2Response, self).__init__()
@@ -56,6 +74,15 @@ class UpdateApiGroupV2Response(SdkResponse):
         self._update_time = None
         self._on_sell_status = None
         self._url_domains = None
+        self._sl_domains = None
+        self._remark = None
+        self._call_limits = None
+        self._time_interval = None
+        self._time_unit = None
+        self._is_default = None
+        self._version = None
+        self._roma_app_id = None
+        self._roma_app_name = None
         self.discriminator = None
 
         self.id = id
@@ -67,6 +94,24 @@ class UpdateApiGroupV2Response(SdkResponse):
         self.on_sell_status = on_sell_status
         if url_domains is not None:
             self.url_domains = url_domains
+        if sl_domains is not None:
+            self.sl_domains = sl_domains
+        if remark is not None:
+            self.remark = remark
+        if call_limits is not None:
+            self.call_limits = call_limits
+        if time_interval is not None:
+            self.time_interval = time_interval
+        if time_unit is not None:
+            self.time_unit = time_unit
+        if is_default is not None:
+            self.is_default = is_default
+        if version is not None:
+            self.version = version
+        if roma_app_id is not None:
+            self.roma_app_id = roma_app_id
+        if roma_app_name is not None:
+            self.roma_app_name = roma_app_name
 
     @property
     def id(self):
@@ -243,6 +288,204 @@ class UpdateApiGroupV2Response(SdkResponse):
         :type: list[UrlDomain]
         """
         self._url_domains = url_domains
+
+    @property
+    def sl_domains(self):
+        """Gets the sl_domains of this UpdateApiGroupV2Response.
+
+        系统默认分配的子域名列表
+
+        :return: The sl_domains of this UpdateApiGroupV2Response.
+        :rtype: list[str]
+        """
+        return self._sl_domains
+
+    @sl_domains.setter
+    def sl_domains(self, sl_domains):
+        """Sets the sl_domains of this UpdateApiGroupV2Response.
+
+        系统默认分配的子域名列表
+
+        :param sl_domains: The sl_domains of this UpdateApiGroupV2Response.
+        :type: list[str]
+        """
+        self._sl_domains = sl_domains
+
+    @property
+    def remark(self):
+        """Gets the remark of this UpdateApiGroupV2Response.
+
+        描述
+
+        :return: The remark of this UpdateApiGroupV2Response.
+        :rtype: str
+        """
+        return self._remark
+
+    @remark.setter
+    def remark(self, remark):
+        """Sets the remark of this UpdateApiGroupV2Response.
+
+        描述
+
+        :param remark: The remark of this UpdateApiGroupV2Response.
+        :type: str
+        """
+        self._remark = remark
+
+    @property
+    def call_limits(self):
+        """Gets the call_limits of this UpdateApiGroupV2Response.
+
+        流控时长内分组下的API的总访问次数限制，默认不限，请根据服务的负载能力自行设置  暂不支持
+
+        :return: The call_limits of this UpdateApiGroupV2Response.
+        :rtype: int
+        """
+        return self._call_limits
+
+    @call_limits.setter
+    def call_limits(self, call_limits):
+        """Sets the call_limits of this UpdateApiGroupV2Response.
+
+        流控时长内分组下的API的总访问次数限制，默认不限，请根据服务的负载能力自行设置  暂不支持
+
+        :param call_limits: The call_limits of this UpdateApiGroupV2Response.
+        :type: int
+        """
+        self._call_limits = call_limits
+
+    @property
+    def time_interval(self):
+        """Gets the time_interval of this UpdateApiGroupV2Response.
+
+        流控时长  暂不支持
+
+        :return: The time_interval of this UpdateApiGroupV2Response.
+        :rtype: int
+        """
+        return self._time_interval
+
+    @time_interval.setter
+    def time_interval(self, time_interval):
+        """Sets the time_interval of this UpdateApiGroupV2Response.
+
+        流控时长  暂不支持
+
+        :param time_interval: The time_interval of this UpdateApiGroupV2Response.
+        :type: int
+        """
+        self._time_interval = time_interval
+
+    @property
+    def time_unit(self):
+        """Gets the time_unit of this UpdateApiGroupV2Response.
+
+        流控的时间单位  暂不支持
+
+        :return: The time_unit of this UpdateApiGroupV2Response.
+        :rtype: str
+        """
+        return self._time_unit
+
+    @time_unit.setter
+    def time_unit(self, time_unit):
+        """Sets the time_unit of this UpdateApiGroupV2Response.
+
+        流控的时间单位  暂不支持
+
+        :param time_unit: The time_unit of this UpdateApiGroupV2Response.
+        :type: str
+        """
+        self._time_unit = time_unit
+
+    @property
+    def is_default(self):
+        """Gets the is_default of this UpdateApiGroupV2Response.
+
+        是否为默认分组
+
+        :return: The is_default of this UpdateApiGroupV2Response.
+        :rtype: int
+        """
+        return self._is_default
+
+    @is_default.setter
+    def is_default(self, is_default):
+        """Sets the is_default of this UpdateApiGroupV2Response.
+
+        是否为默认分组
+
+        :param is_default: The is_default of this UpdateApiGroupV2Response.
+        :type: int
+        """
+        self._is_default = is_default
+
+    @property
+    def version(self):
+        """Gets the version of this UpdateApiGroupV2Response.
+
+        分组版本  - V1：全局分组 - V2：应用级分组
+
+        :return: The version of this UpdateApiGroupV2Response.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this UpdateApiGroupV2Response.
+
+        分组版本  - V1：全局分组 - V2：应用级分组
+
+        :param version: The version of this UpdateApiGroupV2Response.
+        :type: str
+        """
+        self._version = version
+
+    @property
+    def roma_app_id(self):
+        """Gets the roma_app_id of this UpdateApiGroupV2Response.
+
+        分组归属的集成应用编号。  分组版本V2时必填。
+
+        :return: The roma_app_id of this UpdateApiGroupV2Response.
+        :rtype: str
+        """
+        return self._roma_app_id
+
+    @roma_app_id.setter
+    def roma_app_id(self, roma_app_id):
+        """Sets the roma_app_id of this UpdateApiGroupV2Response.
+
+        分组归属的集成应用编号。  分组版本V2时必填。
+
+        :param roma_app_id: The roma_app_id of this UpdateApiGroupV2Response.
+        :type: str
+        """
+        self._roma_app_id = roma_app_id
+
+    @property
+    def roma_app_name(self):
+        """Gets the roma_app_name of this UpdateApiGroupV2Response.
+
+        分组归属的集成应用名称
+
+        :return: The roma_app_name of this UpdateApiGroupV2Response.
+        :rtype: str
+        """
+        return self._roma_app_name
+
+    @roma_app_name.setter
+    def roma_app_name(self, roma_app_name):
+        """Sets the roma_app_name of this UpdateApiGroupV2Response.
+
+        分组归属的集成应用名称
+
+        :param roma_app_name: The roma_app_name of this UpdateApiGroupV2Response.
+        :type: str
+        """
+        self._roma_app_name = roma_app_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -28,7 +28,7 @@ class Flavor:
         'shared': 'bool',
         'project_id': 'str',
         'type': 'str',
-        'availability_zone_ids': 'list[str]'
+        'flavor_sold_out': 'bool'
     }
 
     attribute_map = {
@@ -38,10 +38,10 @@ class Flavor:
         'shared': 'shared',
         'project_id': 'project_id',
         'type': 'type',
-        'availability_zone_ids': 'availability_zone_ids'
+        'flavor_sold_out': 'flavor_sold_out'
     }
 
-    def __init__(self, id=None, info=None, name=None, shared=None, project_id=None, type=None, availability_zone_ids=None):
+    def __init__(self, id=None, info=None, name=None, shared=None, project_id=None, type=None, flavor_sold_out=None):
         """Flavor - a model defined in huaweicloud sdk"""
         
         
@@ -52,7 +52,7 @@ class Flavor:
         self._shared = None
         self._project_id = None
         self._type = None
-        self._availability_zone_ids = None
+        self._flavor_sold_out = None
         self.discriminator = None
 
         self.id = id
@@ -61,8 +61,7 @@ class Flavor:
         self.shared = shared
         self.project_id = project_id
         self.type = type
-        if availability_zone_ids is not None:
-            self.availability_zone_ids = availability_zone_ids
+        self.flavor_sold_out = flavor_sold_out
 
     @property
     def id(self):
@@ -154,7 +153,7 @@ class Flavor:
     def project_id(self):
         """Gets the project_id of this Flavor.
 
-        项目ID
+        项目ID。
 
         :return: The project_id of this Flavor.
         :rtype: str
@@ -165,7 +164,7 @@ class Flavor:
     def project_id(self, project_id):
         """Sets the project_id of this Flavor.
 
-        项目ID
+        项目ID。
 
         :param project_id: The project_id of this Flavor.
         :type: str
@@ -176,7 +175,7 @@ class Flavor:
     def type(self):
         """Gets the type of this Flavor.
 
-        L4和L7 分别表示四层和七层flavor。查询支持按type过滤
+        L4和L7 分别表示四层和七层flavor。查询支持按type过滤。
 
         :return: The type of this Flavor.
         :rtype: str
@@ -187,7 +186,7 @@ class Flavor:
     def type(self, type):
         """Sets the type of this Flavor.
 
-        L4和L7 分别表示四层和七层flavor。查询支持按type过滤
+        L4和L7 分别表示四层和七层flavor。查询支持按type过滤。
 
         :param type: The type of this Flavor.
         :type: str
@@ -195,26 +194,26 @@ class Flavor:
         self._type = type
 
     @property
-    def availability_zone_ids(self):
-        """Gets the availability_zone_ids of this Flavor.
+    def flavor_sold_out(self):
+        """Gets the flavor_sold_out of this Flavor.
 
-        availability_zone_ids字段，标志ELB对应L7-flavor在对应可用区是否可以售卖。 若该字段为[]代表该flavor不可售卖；若该字段为[\"ALL\"]，代表所有可用区可售卖；若仅部分可用区可售卖则返回[\"cn-north-1a\",\"cn-north-1b\"]。 可通过/v3/{project_id}/elb/availability-zones接口查询所有可售卖的可用区接口。
+        是否售罄。
 
-        :return: The availability_zone_ids of this Flavor.
-        :rtype: list[str]
+        :return: The flavor_sold_out of this Flavor.
+        :rtype: bool
         """
-        return self._availability_zone_ids
+        return self._flavor_sold_out
 
-    @availability_zone_ids.setter
-    def availability_zone_ids(self, availability_zone_ids):
-        """Sets the availability_zone_ids of this Flavor.
+    @flavor_sold_out.setter
+    def flavor_sold_out(self, flavor_sold_out):
+        """Sets the flavor_sold_out of this Flavor.
 
-        availability_zone_ids字段，标志ELB对应L7-flavor在对应可用区是否可以售卖。 若该字段为[]代表该flavor不可售卖；若该字段为[\"ALL\"]，代表所有可用区可售卖；若仅部分可用区可售卖则返回[\"cn-north-1a\",\"cn-north-1b\"]。 可通过/v3/{project_id}/elb/availability-zones接口查询所有可售卖的可用区接口。
+        是否售罄。
 
-        :param availability_zone_ids: The availability_zone_ids of this Flavor.
-        :type: list[str]
+        :param flavor_sold_out: The flavor_sold_out of this Flavor.
+        :type: bool
         """
-        self._availability_zone_ids = availability_zone_ids
+        self._flavor_sold_out = flavor_sold_out
 
     def to_dict(self):
         """Returns the model properties as a dict"""

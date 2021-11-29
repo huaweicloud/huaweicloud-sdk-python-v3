@@ -168,6 +168,7 @@ from huaweicloudsdkecs.v2.model.nova_server_fault import NovaServerFault
 from huaweicloudsdkecs.v2.model.nova_server_flavor import NovaServerFlavor
 from huaweicloudsdkecs.v2.model.nova_server_image import NovaServerImage
 from huaweicloudsdkecs.v2.model.nova_server_network import NovaServerNetwork
+from huaweicloudsdkecs.v2.model.nova_server_scheduler_hints import NovaServerSchedulerHints
 from huaweicloudsdkecs.v2.model.nova_server_security_group import NovaServerSecurityGroup
 from huaweicloudsdkecs.v2.model.nova_server_volume import NovaServerVolume
 from huaweicloudsdkecs.v2.model.nova_show_keypair_request import NovaShowKeypairRequest

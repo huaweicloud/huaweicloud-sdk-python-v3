@@ -43,10 +43,8 @@ class GetParametersForImportRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
-        if wrapping_algorithm is not None:
-            self.wrapping_algorithm = wrapping_algorithm
+        self.key_id = key_id
+        self.wrapping_algorithm = wrapping_algorithm
         if sequence is not None:
             self.sequence = sequence
 

@@ -44,14 +44,16 @@ class CreateListenerIpGroupOption:
         self.discriminator = None
 
         self.ipgroup_id = ipgroup_id
-        self.enable_ipgroup = enable_ipgroup
-        self.type = type
+        if enable_ipgroup is not None:
+            self.enable_ipgroup = enable_ipgroup
+        if type is not None:
+            self.type = type
 
     @property
     def ipgroup_id(self):
         """Gets the ipgroup_id of this CreateListenerIpGroupOption.
 
-        监听器关联的访问控制组的id。 创建时必选，更新时非必选。 指定的ipgroup必须已存在，不能指定为null，否则与enable_ipgroup冲突。 
+        监听器关联的访问控制组的id。  当关联的ipgroup中的ip_list为[]，且类型为白名单时，表示禁止所有ip的访问。  当关联的ipgroup中的ip_list为[]，且类型为黑名单时，表示允许所有ip的访问。 
 
         :return: The ipgroup_id of this CreateListenerIpGroupOption.
         :rtype: str
@@ -62,7 +64,7 @@ class CreateListenerIpGroupOption:
     def ipgroup_id(self, ipgroup_id):
         """Sets the ipgroup_id of this CreateListenerIpGroupOption.
 
-        监听器关联的访问控制组的id。 创建时必选，更新时非必选。 指定的ipgroup必须已存在，不能指定为null，否则与enable_ipgroup冲突。 
+        监听器关联的访问控制组的id。  当关联的ipgroup中的ip_list为[]，且类型为白名单时，表示禁止所有ip的访问。  当关联的ipgroup中的ip_list为[]，且类型为黑名单时，表示允许所有ip的访问。 
 
         :param ipgroup_id: The ipgroup_id of this CreateListenerIpGroupOption.
         :type: str
@@ -73,7 +75,7 @@ class CreateListenerIpGroupOption:
     def enable_ipgroup(self):
         """Gets the enable_ipgroup of this CreateListenerIpGroupOption.
 
-        访问控制组的状态。 True:开启访问控制； Flase：关闭访问控制； 开启访问控制的监听器，允许直接删除。
+        访问控制组的状态。取值： - true：开启访问控制，默认值。 - flase：关闭访问控制。
 
         :return: The enable_ipgroup of this CreateListenerIpGroupOption.
         :rtype: bool
@@ -84,7 +86,7 @@ class CreateListenerIpGroupOption:
     def enable_ipgroup(self, enable_ipgroup):
         """Sets the enable_ipgroup of this CreateListenerIpGroupOption.
 
-        访问控制组的状态。 True:开启访问控制； Flase：关闭访问控制； 开启访问控制的监听器，允许直接删除。
+        访问控制组的状态。取值： - true：开启访问控制，默认值。 - flase：关闭访问控制。
 
         :param enable_ipgroup: The enable_ipgroup of this CreateListenerIpGroupOption.
         :type: bool
@@ -95,7 +97,7 @@ class CreateListenerIpGroupOption:
     def type(self):
         """Gets the type of this CreateListenerIpGroupOption.
 
-        访问控制组的类型。 white:白名单，只允许指定ip访问； black:黑名单，不允许指定ip访问； 
+        访问控制组的类型。 - white：白名单，只允许指定ip访问，默认值。 - black：黑名单，不允许指定ip访问。
 
         :return: The type of this CreateListenerIpGroupOption.
         :rtype: str
@@ -106,7 +108,7 @@ class CreateListenerIpGroupOption:
     def type(self, type):
         """Sets the type of this CreateListenerIpGroupOption.
 
-        访问控制组的类型。 white:白名单，只允许指定ip访问； black:黑名单，不允许指定ip访问； 
+        访问控制组的类型。 - white：白名单，只允许指定ip访问，默认值。 - black：黑名单，不允许指定ip访问。
 
         :param type: The type of this CreateListenerIpGroupOption.
         :type: str

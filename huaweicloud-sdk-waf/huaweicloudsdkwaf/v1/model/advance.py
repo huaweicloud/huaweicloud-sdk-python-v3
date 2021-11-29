@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CinderExportToImageResponse(SdkResponse):
+class Advance:
 
 
     """
@@ -22,43 +22,72 @@ class CinderExportToImageResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'os_volume_upload_image': 'Image'
+        'index': 'str',
+        'contents': 'list[str]'
     }
 
     attribute_map = {
-        'os_volume_upload_image': 'os-volume_upload_image'
+        'index': 'index',
+        'contents': 'contents'
     }
 
-    def __init__(self, os_volume_upload_image=None):
-        """CinderExportToImageResponse - a model defined in huaweicloud sdk"""
+    def __init__(self, index=None, contents=None):
+        """Advance - a model defined in huaweicloud sdk"""
         
-        super(CinderExportToImageResponse, self).__init__()
+        
 
-        self._os_volume_upload_image = None
+        self._index = None
+        self._contents = None
         self.discriminator = None
 
-        if os_volume_upload_image is not None:
-            self.os_volume_upload_image = os_volume_upload_image
+        if index is not None:
+            self.index = index
+        if contents is not None:
+            self.contents = contents
 
     @property
-    def os_volume_upload_image(self):
-        """Gets the os_volume_upload_image of this CinderExportToImageResponse.
+    def index(self):
+        """Gets the index of this Advance.
 
+        索引（参数：params，会话cookie：cookie，header字段：header，body字段：body，多种组合：multipart）
 
-        :return: The os_volume_upload_image of this CinderExportToImageResponse.
-        :rtype: Image
+        :return: The index of this Advance.
+        :rtype: str
         """
-        return self._os_volume_upload_image
+        return self._index
 
-    @os_volume_upload_image.setter
-    def os_volume_upload_image(self, os_volume_upload_image):
-        """Sets the os_volume_upload_image of this CinderExportToImageResponse.
+    @index.setter
+    def index(self, index):
+        """Sets the index of this Advance.
 
+        索引（参数：params，会话cookie：cookie，header字段：header，body字段：body，多种组合：multipart）
 
-        :param os_volume_upload_image: The os_volume_upload_image of this CinderExportToImageResponse.
-        :type: Image
+        :param index: The index of this Advance.
+        :type: str
         """
-        self._os_volume_upload_image = os_volume_upload_image
+        self._index = index
+
+    @property
+    def contents(self):
+        """Gets the contents of this Advance.
+
+        指定字段（仅在param，cookie，header模式下可以使用）
+
+        :return: The contents of this Advance.
+        :rtype: list[str]
+        """
+        return self._contents
+
+    @contents.setter
+    def contents(self, contents):
+        """Sets the contents of this Advance.
+
+        指定字段（仅在param，cookie，header模式下可以使用）
+
+        :param contents: The contents of this Advance.
+        :type: list[str]
+        """
+        self._contents = contents
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -102,7 +131,7 @@ class CinderExportToImageResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CinderExportToImageResponse):
+        if not isinstance(other, Advance):
             return False
 
         return self.__dict__ == other.__dict__

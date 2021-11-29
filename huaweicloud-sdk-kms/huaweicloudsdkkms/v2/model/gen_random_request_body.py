@@ -40,8 +40,7 @@ class GenRandomRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if random_data_length is not None:
-            self.random_data_length = random_data_length
+        self.random_data_length = random_data_length
         if sequence is not None:
             self.sequence = sequence
 

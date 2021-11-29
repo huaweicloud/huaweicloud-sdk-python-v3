@@ -22,16 +22,96 @@ class LoadBalancerStatusL7Rule:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
+        'type': 'str',
+        'provisioning_status': 'str'
     }
 
     attribute_map = {
+        'id': 'id',
+        'type': 'type',
+        'provisioning_status': 'provisioning_status'
     }
 
-    def __init__(self):
+    def __init__(self, id=None, type=None, provisioning_status=None):
         """LoadBalancerStatusL7Rule - a model defined in huaweicloud sdk"""
         
         
+
+        self._id = None
+        self._type = None
+        self._provisioning_status = None
         self.discriminator = None
+
+        self.id = id
+        self.type = type
+        self.provisioning_status = provisioning_status
+
+    @property
+    def id(self):
+        """Gets the id of this LoadBalancerStatusL7Rule.
+
+        L7转发规则ID。
+
+        :return: The id of this LoadBalancerStatusL7Rule.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this LoadBalancerStatusL7Rule.
+
+        L7转发规则ID。
+
+        :param id: The id of this LoadBalancerStatusL7Rule.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def type(self):
+        """Gets the type of this LoadBalancerStatusL7Rule.
+
+        匹配内容类型，取值： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。  使用说明： - 同一个l7policy下创建的所有的l7rule的HOST_NAME不能重复。
+
+        :return: The type of this LoadBalancerStatusL7Rule.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this LoadBalancerStatusL7Rule.
+
+        匹配内容类型，取值： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。  使用说明： - 同一个l7policy下创建的所有的l7rule的HOST_NAME不能重复。
+
+        :param type: The type of this LoadBalancerStatusL7Rule.
+        :type: str
+        """
+        self._type = type
+
+    @property
+    def provisioning_status(self):
+        """Gets the provisioning_status of this LoadBalancerStatusL7Rule.
+
+        转发规则的配置状态。 取值： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
+
+        :return: The provisioning_status of this LoadBalancerStatusL7Rule.
+        :rtype: str
+        """
+        return self._provisioning_status
+
+    @provisioning_status.setter
+    def provisioning_status(self, provisioning_status):
+        """Sets the provisioning_status of this LoadBalancerStatusL7Rule.
+
+        转发规则的配置状态。 取值： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
+
+        :param provisioning_status: The provisioning_status of this LoadBalancerStatusL7Rule.
+        :type: str
+        """
+        self._provisioning_status = provisioning_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

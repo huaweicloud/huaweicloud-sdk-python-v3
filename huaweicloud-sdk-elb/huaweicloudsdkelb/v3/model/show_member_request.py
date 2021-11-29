@@ -22,48 +22,26 @@ class ShowMemberRequest:
     sensitive_list = []
 
     openapi_types = {
-        'member_id': 'str',
-        'pool_id': 'str'
+        'pool_id': 'str',
+        'member_id': 'str'
     }
 
     attribute_map = {
-        'member_id': 'member_id',
-        'pool_id': 'pool_id'
+        'pool_id': 'pool_id',
+        'member_id': 'member_id'
     }
 
-    def __init__(self, member_id=None, pool_id=None):
+    def __init__(self, pool_id=None, member_id=None):
         """ShowMemberRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._member_id = None
         self._pool_id = None
+        self._member_id = None
         self.discriminator = None
 
-        self.member_id = member_id
         self.pool_id = pool_id
-
-    @property
-    def member_id(self):
-        """Gets the member_id of this ShowMemberRequest.
-
-        后端服务器ID。
-
-        :return: The member_id of this ShowMemberRequest.
-        :rtype: str
-        """
-        return self._member_id
-
-    @member_id.setter
-    def member_id(self, member_id):
-        """Sets the member_id of this ShowMemberRequest.
-
-        后端服务器ID。
-
-        :param member_id: The member_id of this ShowMemberRequest.
-        :type: str
-        """
-        self._member_id = member_id
+        self.member_id = member_id
 
     @property
     def pool_id(self):
@@ -86,6 +64,28 @@ class ShowMemberRequest:
         :type: str
         """
         self._pool_id = pool_id
+
+    @property
+    def member_id(self):
+        """Gets the member_id of this ShowMemberRequest.
+
+        后端服务器ID。
+
+        :return: The member_id of this ShowMemberRequest.
+        :rtype: str
+        """
+        return self._member_id
+
+    @member_id.setter
+    def member_id(self, member_id):
+        """Sets the member_id of this ShowMemberRequest.
+
+        后端服务器ID。
+
+        :param member_id: The member_id of this ShowMemberRequest.
+        :type: str
+        """
+        self._member_id = member_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

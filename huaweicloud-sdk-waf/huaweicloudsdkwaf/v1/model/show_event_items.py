@@ -32,7 +32,7 @@ class ShowEventItems:
         'action': 'str',
         'cookie': 'object',
         'headers': 'str',
-        'host_id': 'object',
+        'host_id': 'str',
         'id': 'str',
         'payload': 'str',
         'payload_location': 'str',
@@ -357,7 +357,7 @@ class ShowEventItems:
         被攻击的域名id
 
         :return: The host_id of this ShowEventItems.
-        :rtype: object
+        :rtype: str
         """
         return self._host_id
 
@@ -368,7 +368,7 @@ class ShowEventItems:
         被攻击的域名id
 
         :param host_id: The host_id of this ShowEventItems.
-        :type: object
+        :type: str
         """
         self._host_id = host_id
 

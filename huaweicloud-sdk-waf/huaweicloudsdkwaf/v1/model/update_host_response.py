@@ -30,7 +30,7 @@ class UpdateHostResponse(SdkResponse):
         'protocol': 'str',
         'server': 'list[CloudWafServer]',
         'certificateid': 'str',
-        'certificatename': 'object',
+        'certificatename': 'str',
         'proxy': 'bool',
         'locked': 'int',
         'protect_status': 'int',
@@ -328,7 +328,7 @@ class UpdateHostResponse(SdkResponse):
         证书名，通过查询证书列表接口（ListCertificates）接口获取证书id
 
         :return: The certificatename of this UpdateHostResponse.
-        :rtype: object
+        :rtype: str
         """
         return self._certificatename
 
@@ -339,7 +339,7 @@ class UpdateHostResponse(SdkResponse):
         证书名，通过查询证书列表接口（ListCertificates）接口获取证书id
 
         :param certificatename: The certificatename of this UpdateHostResponse.
-        :type: object
+        :type: str
         """
         self._certificatename = certificatename
 

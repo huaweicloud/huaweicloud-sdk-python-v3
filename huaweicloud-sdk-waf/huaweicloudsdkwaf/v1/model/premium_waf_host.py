@@ -31,7 +31,7 @@ class PremiumWafHost:
         'protocol': 'str',
         'server': 'list[PremiumWafServer]',
         'certificateid': 'str',
-        'certificatename': 'object',
+        'certificatename': 'str',
         'tls': 'str',
         'cipher': 'str',
         'proxy': 'bool',
@@ -340,7 +340,7 @@ class PremiumWafHost:
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :return: The certificatename of this PremiumWafHost.
-        :rtype: object
+        :rtype: str
         """
         return self._certificatename
 
@@ -351,7 +351,7 @@ class PremiumWafHost:
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificatename: The certificatename of this PremiumWafHost.
-        :type: object
+        :type: str
         """
         self._certificatename = certificatename
 

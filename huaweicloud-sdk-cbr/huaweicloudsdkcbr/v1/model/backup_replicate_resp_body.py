@@ -189,7 +189,7 @@ class BackupReplicateRespBody:
     def provider_id(self):
         """Gets the provider_id of this BackupReplicateRespBody.
 
-        
+        备份提供商ID，用于区分备份对象.
 
         :return: The provider_id of this BackupReplicateRespBody.
         :rtype: str
@@ -200,7 +200,7 @@ class BackupReplicateRespBody:
     def provider_id(self, provider_id):
         """Sets the provider_id of this BackupReplicateRespBody.
 
-        
+        备份提供商ID，用于区分备份对象.
 
         :param provider_id: The provider_id of this BackupReplicateRespBody.
         :type: str

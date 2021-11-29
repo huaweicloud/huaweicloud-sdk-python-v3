@@ -46,12 +46,9 @@ class EncryptDatakeyRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
-        if plain_text is not None:
-            self.plain_text = plain_text
-        if datakey_plain_length is not None:
-            self.datakey_plain_length = datakey_plain_length
+        self.key_id = key_id
+        self.plain_text = plain_text
+        self.datakey_plain_length = datakey_plain_length
         if sequence is not None:
             self.sequence = sequence
 

@@ -55,8 +55,7 @@ class CreateKeyRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_alias is not None:
-            self.key_alias = key_alias
+        self.key_alias = key_alias
         if key_spec is not None:
             self.key_spec = key_spec
         if key_usage is not None:

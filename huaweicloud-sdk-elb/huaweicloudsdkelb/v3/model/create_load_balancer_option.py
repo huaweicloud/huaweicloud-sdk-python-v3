@@ -43,7 +43,9 @@ class CreateLoadBalancerOption:
         'publicip': 'CreateLoadBalancerPublicIpOption',
         'elb_virsubnet_ids': 'list[str]',
         'ip_target_enable': 'bool',
-        'deletion_protection_enable': 'bool'
+        'deletion_protection_enable': 'bool',
+        'prepaid_options': 'PrepaidCreateOption',
+        'autoscaling': 'CreateLoadbalancerAutoscalingOption'
     }
 
     attribute_map = {
@@ -68,10 +70,12 @@ class CreateLoadBalancerOption:
         'publicip': 'publicip',
         'elb_virsubnet_ids': 'elb_virsubnet_ids',
         'ip_target_enable': 'ip_target_enable',
-        'deletion_protection_enable': 'deletion_protection_enable'
+        'deletion_protection_enable': 'deletion_protection_enable',
+        'prepaid_options': 'prepaid_options',
+        'autoscaling': 'autoscaling'
     }
 
-    def __init__(self, name=None, description=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_virsubnet_id=None, provider=None, l4_flavor_id=None, project_id=None, guaranteed=None, vpc_id=None, availability_zone_list=None, enterprise_project_id=None, tags=None, admin_state_up=None, l7_flavor_id=None, billing_info=None, ipv6_bandwidth=None, publicip_ids=None, publicip=None, elb_virsubnet_ids=None, ip_target_enable=None, deletion_protection_enable=None):
+    def __init__(self, name=None, description=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_virsubnet_id=None, provider=None, l4_flavor_id=None, project_id=None, guaranteed=None, vpc_id=None, availability_zone_list=None, enterprise_project_id=None, tags=None, admin_state_up=None, l7_flavor_id=None, billing_info=None, ipv6_bandwidth=None, publicip_ids=None, publicip=None, elb_virsubnet_ids=None, ip_target_enable=None, deletion_protection_enable=None, prepaid_options=None, autoscaling=None):
         """CreateLoadBalancerOption - a model defined in huaweicloud sdk"""
         
         
@@ -98,6 +102,8 @@ class CreateLoadBalancerOption:
         self._elb_virsubnet_ids = None
         self._ip_target_enable = None
         self._deletion_protection_enable = None
+        self._prepaid_options = None
+        self._autoscaling = None
         self.discriminator = None
 
         if name is not None:
@@ -143,12 +149,16 @@ class CreateLoadBalancerOption:
             self.ip_target_enable = ip_target_enable
         if deletion_protection_enable is not None:
             self.deletion_protection_enable = deletion_protection_enable
+        if prepaid_options is not None:
+            self.prepaid_options = prepaid_options
+        if autoscaling is not None:
+            self.autoscaling = autoscaling
 
     @property
     def name(self):
         """Gets the name of this CreateLoadBalancerOption.
 
-        负载均衡器名称。
+        负载均衡器的名称。
 
         :return: The name of this CreateLoadBalancerOption.
         :rtype: str
@@ -159,7 +169,7 @@ class CreateLoadBalancerOption:
     def name(self, name):
         """Sets the name of this CreateLoadBalancerOption.
 
-        负载均衡器名称。
+        负载均衡器的名称。
 
         :param name: The name of this CreateLoadBalancerOption.
         :type: str
@@ -170,7 +180,7 @@ class CreateLoadBalancerOption:
     def description(self):
         """Gets the description of this CreateLoadBalancerOption.
 
-        负载均衡器功能说明。
+        负载均衡器的描述。
 
         :return: The description of this CreateLoadBalancerOption.
         :rtype: str
@@ -181,7 +191,7 @@ class CreateLoadBalancerOption:
     def description(self, description):
         """Sets the description of this CreateLoadBalancerOption.
 
-        负载均衡器功能说明。
+        负载均衡器的描述。
 
         :param description: The description of this CreateLoadBalancerOption.
         :type: str
@@ -192,7 +202,7 @@ class CreateLoadBalancerOption:
     def vip_address(self):
         """Gets the vip_address of this CreateLoadBalancerOption.
 
-        负载均衡器的虚拟IP。 1.传入vip_address时必须传入vip_subnet_cidr_id 2.不传入vip_address，自动分配虚拟IP 3.传入vip_address，需要保证该ip地址在子网中未被占用
+        负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  使用说明： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4虚拟IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配虚拟IP，vip_address=null。
 
         :return: The vip_address of this CreateLoadBalancerOption.
         :rtype: str
@@ -203,7 +213,7 @@ class CreateLoadBalancerOption:
     def vip_address(self, vip_address):
         """Sets the vip_address of this CreateLoadBalancerOption.
 
-        负载均衡器的虚拟IP。 1.传入vip_address时必须传入vip_subnet_cidr_id 2.不传入vip_address，自动分配虚拟IP 3.传入vip_address，需要保证该ip地址在子网中未被占用
+        负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  使用说明： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4虚拟IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配虚拟IP，vip_address=null。
 
         :param vip_address: The vip_address of this CreateLoadBalancerOption.
         :type: str
@@ -214,7 +224,7 @@ class CreateLoadBalancerOption:
     def vip_subnet_cidr_id(self):
         """Gets the vip_subnet_cidr_id of this CreateLoadBalancerOption.
 
-        负载均衡器所在的子网ID。 说明：vpc_id , vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
+        负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。 可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。 使用说明： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id，则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
 
         :return: The vip_subnet_cidr_id of this CreateLoadBalancerOption.
         :rtype: str
@@ -225,7 +235,7 @@ class CreateLoadBalancerOption:
     def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
         """Sets the vip_subnet_cidr_id of this CreateLoadBalancerOption.
 
-        负载均衡器所在的子网ID。 说明：vpc_id , vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
+        负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。 可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。 使用说明： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id，则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
 
         :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this CreateLoadBalancerOption.
         :type: str
@@ -236,7 +246,7 @@ class CreateLoadBalancerOption:
     def ipv6_vip_virsubnet_id(self):
         """Gets the ipv6_vip_virsubnet_id of this CreateLoadBalancerOption.
 
-        双栈实例对应v6的网络id 。注：默认为空，只有开启IPv6时才会传入。  说明：vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
+        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。  [不支持IPv6，请勿使用](tag:otc,otc_test,dt,dt_test)
 
         :return: The ipv6_vip_virsubnet_id of this CreateLoadBalancerOption.
         :rtype: str
@@ -247,7 +257,7 @@ class CreateLoadBalancerOption:
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
         """Sets the ipv6_vip_virsubnet_id of this CreateLoadBalancerOption.
 
-        双栈实例对应v6的网络id 。注：默认为空，只有开启IPv6时才会传入。  说明：vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
+        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。  [不支持IPv6，请勿使用](tag:otc,otc_test,dt,dt_test)
 
         :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this CreateLoadBalancerOption.
         :type: str
@@ -258,7 +268,7 @@ class CreateLoadBalancerOption:
     def provider(self):
         """Gets the provider of this CreateLoadBalancerOption.
 
-        负载均衡器的生产者名称。只支持vlb。
+        负载均衡器的生产者名称。固定为vlb。
 
         :return: The provider of this CreateLoadBalancerOption.
         :rtype: str
@@ -269,7 +279,7 @@ class CreateLoadBalancerOption:
     def provider(self, provider):
         """Sets the provider of this CreateLoadBalancerOption.
 
-        负载均衡器的生产者名称。只支持vlb。
+        负载均衡器的生产者名称。固定为vlb。
 
         :param provider: The provider of this CreateLoadBalancerOption.
         :type: str
@@ -280,7 +290,7 @@ class CreateLoadBalancerOption:
     def l4_flavor_id(self):
         """Gets the l4_flavor_id of this CreateLoadBalancerOption.
 
-        四层Flavor。
+        四层Flavor ID。[创建负载均衡器时l4_flavor_id和l7_flavor_id不能都不传](tag:otc,otc_test,dt,dt_test) [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hc,hws,hcso) 注意：当l4_flavor_id和l7_flavor_id都不传的时，会选择默认flavor。
 
         :return: The l4_flavor_id of this CreateLoadBalancerOption.
         :rtype: str
@@ -291,7 +301,7 @@ class CreateLoadBalancerOption:
     def l4_flavor_id(self, l4_flavor_id):
         """Sets the l4_flavor_id of this CreateLoadBalancerOption.
 
-        四层Flavor。
+        四层Flavor ID。[创建负载均衡器时l4_flavor_id和l7_flavor_id不能都不传](tag:otc,otc_test,dt,dt_test) [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hc,hws,hcso) 注意：当l4_flavor_id和l7_flavor_id都不传的时，会选择默认flavor。
 
         :param l4_flavor_id: The l4_flavor_id of this CreateLoadBalancerOption.
         :type: str
@@ -324,7 +334,7 @@ class CreateLoadBalancerOption:
     def guaranteed(self):
         """Gets the guaranteed of this CreateLoadBalancerOption.
 
-        共享型：false 保障型：true，当前只支持true。
+        是否独享型负载均衡器。取值： - true：独享型。 - false：共享型。  当前只支持设置为true，设置为false会返回400 Bad Request 。默认：true。
 
         :return: The guaranteed of this CreateLoadBalancerOption.
         :rtype: bool
@@ -335,7 +345,7 @@ class CreateLoadBalancerOption:
     def guaranteed(self, guaranteed):
         """Sets the guaranteed of this CreateLoadBalancerOption.
 
-        共享型：false 保障型：true，当前只支持true。
+        是否独享型负载均衡器。取值： - true：独享型。 - false：共享型。  当前只支持设置为true，设置为false会返回400 Bad Request 。默认：true。
 
         :param guaranteed: The guaranteed of this CreateLoadBalancerOption.
         :type: bool
@@ -346,7 +356,7 @@ class CreateLoadBalancerOption:
     def vpc_id(self):
         """Gets the vpc_id of this CreateLoadBalancerOption.
 
-        实例对应的vpc属性。 说明：vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
+        负载均衡器所在的VPC ID。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
 
         :return: The vpc_id of this CreateLoadBalancerOption.
         :rtype: str
@@ -357,7 +367,7 @@ class CreateLoadBalancerOption:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this CreateLoadBalancerOption.
 
-        实例对应的vpc属性。 说明：vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
+        负载均衡器所在的VPC ID。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
 
         :param vpc_id: The vpc_id of this CreateLoadBalancerOption.
         :type: str
@@ -368,7 +378,7 @@ class CreateLoadBalancerOption:
     def availability_zone_list(self):
         """Gets the availability_zone_list of this CreateLoadBalancerOption.
 
-        可用区列表。默认指定所有可利用的AZ。 注： 可用AZ的查询方式可用通过调用nova接口查询 /v2/{project_id}/os-availability-zone
+        可用区列表。可通过GET https&#58;//{ELB_Endponit}/v3/{project_id}/elb/availability-zones接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。
 
         :return: The availability_zone_list of this CreateLoadBalancerOption.
         :rtype: list[str]
@@ -379,7 +389,7 @@ class CreateLoadBalancerOption:
     def availability_zone_list(self, availability_zone_list):
         """Sets the availability_zone_list of this CreateLoadBalancerOption.
 
-        可用区列表。默认指定所有可利用的AZ。 注： 可用AZ的查询方式可用通过调用nova接口查询 /v2/{project_id}/os-availability-zone
+        可用区列表。可通过GET https&#58;//{ELB_Endponit}/v3/{project_id}/elb/availability-zones接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。
 
         :param availability_zone_list: The availability_zone_list of this CreateLoadBalancerOption.
         :type: list[str]
@@ -390,7 +400,7 @@ class CreateLoadBalancerOption:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateLoadBalancerOption.
 
-        企业项目ID。
+        负载均衡器所属的企业项目ID。不能传入\"\"、\"0\"或不存在的企业项目ID，创建时不传则资源属于default企业项目，默认返回\"0\"。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :return: The enterprise_project_id of this CreateLoadBalancerOption.
         :rtype: str
@@ -401,7 +411,7 @@ class CreateLoadBalancerOption:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateLoadBalancerOption.
 
-        企业项目ID。
+        负载均衡器所属的企业项目ID。不能传入\"\"、\"0\"或不存在的企业项目ID，创建时不传则资源属于default企业项目，默认返回\"0\"。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :param enterprise_project_id: The enterprise_project_id of this CreateLoadBalancerOption.
         :type: str
@@ -412,7 +422,7 @@ class CreateLoadBalancerOption:
     def tags(self):
         """Gets the tags of this CreateLoadBalancerOption.
 
-        负载均衡的标签列表。示例如下：\"tags\":[{\"key\":\"aaaa\",\"value\":\"mmmaaaaa\"}]
+        负载均衡的标签列表。示例：\"tags\":[{\"key\":\"my_tag\",\"value\":\"my_tag_value\"}]
 
         :return: The tags of this CreateLoadBalancerOption.
         :rtype: list[Tag]
@@ -423,7 +433,7 @@ class CreateLoadBalancerOption:
     def tags(self, tags):
         """Sets the tags of this CreateLoadBalancerOption.
 
-        负载均衡的标签列表。示例如下：\"tags\":[{\"key\":\"aaaa\",\"value\":\"mmmaaaaa\"}]
+        负载均衡的标签列表。示例：\"tags\":[{\"key\":\"my_tag\",\"value\":\"my_tag_value\"}]
 
         :param tags: The tags of this CreateLoadBalancerOption.
         :type: list[Tag]
@@ -434,7 +444,7 @@ class CreateLoadBalancerOption:
     def admin_state_up(self):
         """Gets the admin_state_up of this CreateLoadBalancerOption.
 
-        负载均衡器的管理状态。说明：负载均衡器的管理状态。只支持设定为true。
+        负载均衡器的管理状态。只能设置为true。默认：true。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :return: The admin_state_up of this CreateLoadBalancerOption.
         :rtype: bool
@@ -445,7 +455,7 @@ class CreateLoadBalancerOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this CreateLoadBalancerOption.
 
-        负载均衡器的管理状态。说明：负载均衡器的管理状态。只支持设定为true。
+        负载均衡器的管理状态。只能设置为true。默认：true。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :param admin_state_up: The admin_state_up of this CreateLoadBalancerOption.
         :type: bool
@@ -456,7 +466,7 @@ class CreateLoadBalancerOption:
     def l7_flavor_id(self):
         """Gets the l7_flavor_id of this CreateLoadBalancerOption.
 
-        七层Flavor。 
+        七层Flavor ID。[创建负载均衡器时l4_flavor_id和l7_flavor_id不能都不传](tag:otc,otc_test,dt,dt_test) [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hc,hws,hcso) 注意：当l4_flavor_id和l7_flavor_id都不传的时，会选择默认flavor。
 
         :return: The l7_flavor_id of this CreateLoadBalancerOption.
         :rtype: str
@@ -467,7 +477,7 @@ class CreateLoadBalancerOption:
     def l7_flavor_id(self, l7_flavor_id):
         """Sets the l7_flavor_id of this CreateLoadBalancerOption.
 
-        七层Flavor。 
+        七层Flavor ID。[创建负载均衡器时l4_flavor_id和l7_flavor_id不能都不传](tag:otc,otc_test,dt,dt_test) [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hc,hws,hcso) 注意：当l4_flavor_id和l7_flavor_id都不传的时，会选择默认flavor。
 
         :param l7_flavor_id: The l7_flavor_id of this CreateLoadBalancerOption.
         :type: str
@@ -478,7 +488,7 @@ class CreateLoadBalancerOption:
     def billing_info(self):
         """Gets the billing_info of this CreateLoadBalancerOption.
 
-        预留资源账单信息。
+        资源账单信息，取值： - 空：按需计费。 - 非空：包周期计费。 包周期计费billing_info字段的格式为：order_id&#58;product_id&#58;region_id&#58;project_id，如： CS2107161019CDJZZ&#58;OFFI569702121789763584&#58;eu-de&#58;057ef081eb00d2732fd1c01a9be75e6f 使用说明： - admin权限才能更新此字段。 [不支持该字段，请勿使用](tag:otc,otc_test,dt,dt_test)
 
         :return: The billing_info of this CreateLoadBalancerOption.
         :rtype: str
@@ -489,7 +499,7 @@ class CreateLoadBalancerOption:
     def billing_info(self, billing_info):
         """Sets the billing_info of this CreateLoadBalancerOption.
 
-        预留资源账单信息。
+        资源账单信息，取值： - 空：按需计费。 - 非空：包周期计费。 包周期计费billing_info字段的格式为：order_id&#58;product_id&#58;region_id&#58;project_id，如： CS2107161019CDJZZ&#58;OFFI569702121789763584&#58;eu-de&#58;057ef081eb00d2732fd1c01a9be75e6f 使用说明： - admin权限才能更新此字段。 [不支持该字段，请勿使用](tag:otc,otc_test,dt,dt_test)
 
         :param billing_info: The billing_info of this CreateLoadBalancerOption.
         :type: str
@@ -520,7 +530,7 @@ class CreateLoadBalancerOption:
     def publicip_ids(self):
         """Gets the publicip_ids of this CreateLoadBalancerOption.
 
-        公网EIP的ID，目前只支持一个
+        负载均衡器绑定的公网IP ID。只支持绑定数组中的第一个EIP，其他将被忽略。
 
         :return: The publicip_ids of this CreateLoadBalancerOption.
         :rtype: list[str]
@@ -531,7 +541,7 @@ class CreateLoadBalancerOption:
     def publicip_ids(self, publicip_ids):
         """Sets the publicip_ids of this CreateLoadBalancerOption.
 
-        公网EIP的ID，目前只支持一个
+        负载均衡器绑定的公网IP ID。只支持绑定数组中的第一个EIP，其他将被忽略。
 
         :param publicip_ids: The publicip_ids of this CreateLoadBalancerOption.
         :type: list[str]
@@ -562,7 +572,7 @@ class CreateLoadBalancerOption:
     def elb_virsubnet_ids(self):
         """Gets the elb_virsubnet_ids of this CreateLoadBalancerOption.
 
-        下联面网络id列表 若该字段不指定，在loadbalancer所属的VPC中任意选一个网络id，优选双栈网络
+        下联面子网的网络ID列表。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets  响应参数中的id得到。 若不指定该字段，则会在当前负载均衡器所在的VPC中任意选一个子网，优选双栈网络。 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。 下联面子网必须属于该LB所在的VPC。
 
         :return: The elb_virsubnet_ids of this CreateLoadBalancerOption.
         :rtype: list[str]
@@ -573,7 +583,7 @@ class CreateLoadBalancerOption:
     def elb_virsubnet_ids(self, elb_virsubnet_ids):
         """Sets the elb_virsubnet_ids of this CreateLoadBalancerOption.
 
-        下联面网络id列表 若该字段不指定，在loadbalancer所属的VPC中任意选一个网络id，优选双栈网络
+        下联面子网的网络ID列表。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets  响应参数中的id得到。 若不指定该字段，则会在当前负载均衡器所在的VPC中任意选一个子网，优选双栈网络。 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。 下联面子网必须属于该LB所在的VPC。
 
         :param elb_virsubnet_ids: The elb_virsubnet_ids of this CreateLoadBalancerOption.
         :type: list[str]
@@ -584,7 +594,7 @@ class CreateLoadBalancerOption:
     def ip_target_enable(self):
         """Gets the ip_target_enable of this CreateLoadBalancerOption.
 
-        是否启用跨VPC后端转发
+        是否启用跨VPC后端转发。取值：true 表示开启，false 表示不开启。默认：false不开启。仅独享型负载均衡器支持该特性。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :return: The ip_target_enable of this CreateLoadBalancerOption.
         :rtype: bool
@@ -595,7 +605,7 @@ class CreateLoadBalancerOption:
     def ip_target_enable(self, ip_target_enable):
         """Sets the ip_target_enable of this CreateLoadBalancerOption.
 
-        是否启用跨VPC后端转发
+        是否启用跨VPC后端转发。取值：true 表示开启，false 表示不开启。默认：false不开启。仅独享型负载均衡器支持该特性。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
 
         :param ip_target_enable: The ip_target_enable of this CreateLoadBalancerOption.
         :type: bool
@@ -606,7 +616,7 @@ class CreateLoadBalancerOption:
     def deletion_protection_enable(self):
         """Gets the deletion_protection_enable of this CreateLoadBalancerOption.
 
-        是否开启删除保护，默认不开启
+        是否开启删除保护。取值：false不开启，true开启。默认false不开启。 > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用](tag:otc,otc_test,dt,dt_test)
 
         :return: The deletion_protection_enable of this CreateLoadBalancerOption.
         :rtype: bool
@@ -617,12 +627,52 @@ class CreateLoadBalancerOption:
     def deletion_protection_enable(self, deletion_protection_enable):
         """Sets the deletion_protection_enable of this CreateLoadBalancerOption.
 
-        是否开启删除保护，默认不开启
+        是否开启删除保护。取值：false不开启，true开启。默认false不开启。 > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用](tag:otc,otc_test,dt,dt_test)
 
         :param deletion_protection_enable: The deletion_protection_enable of this CreateLoadBalancerOption.
         :type: bool
         """
         self._deletion_protection_enable = deletion_protection_enable
+
+    @property
+    def prepaid_options(self):
+        """Gets the prepaid_options of this CreateLoadBalancerOption.
+
+
+        :return: The prepaid_options of this CreateLoadBalancerOption.
+        :rtype: PrepaidCreateOption
+        """
+        return self._prepaid_options
+
+    @prepaid_options.setter
+    def prepaid_options(self, prepaid_options):
+        """Sets the prepaid_options of this CreateLoadBalancerOption.
+
+
+        :param prepaid_options: The prepaid_options of this CreateLoadBalancerOption.
+        :type: PrepaidCreateOption
+        """
+        self._prepaid_options = prepaid_options
+
+    @property
+    def autoscaling(self):
+        """Gets the autoscaling of this CreateLoadBalancerOption.
+
+
+        :return: The autoscaling of this CreateLoadBalancerOption.
+        :rtype: CreateLoadbalancerAutoscalingOption
+        """
+        return self._autoscaling
+
+    @autoscaling.setter
+    def autoscaling(self, autoscaling):
+        """Sets the autoscaling of this CreateLoadBalancerOption.
+
+
+        :param autoscaling: The autoscaling of this CreateLoadBalancerOption.
+        :type: CreateLoadbalancerAutoscalingOption
+        """
+        self._autoscaling = autoscaling
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListGeoIpResponseBodyItems:
+class GeOIpItem:
 
 
     """
@@ -36,7 +36,7 @@ class ListGeoIpResponseBodyItems:
     }
 
     def __init__(self, id=None, geoip=None, white=None, timestamp=None):
-        """ListGeoIpResponseBodyItems - a model defined in huaweicloud sdk"""
+        """GeOIpItem - a model defined in huaweicloud sdk"""
         
         
 
@@ -57,88 +57,88 @@ class ListGeoIpResponseBodyItems:
 
     @property
     def id(self):
-        """Gets the id of this ListGeoIpResponseBodyItems.
+        """Gets the id of this GeOIpItem.
 
         规则id
 
-        :return: The id of this ListGeoIpResponseBodyItems.
+        :return: The id of this GeOIpItem.
         :rtype: str
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListGeoIpResponseBodyItems.
+        """Sets the id of this GeOIpItem.
 
         规则id
 
-        :param id: The id of this ListGeoIpResponseBodyItems.
+        :param id: The id of this GeOIpItem.
         :type: str
         """
         self._id = id
 
     @property
     def geoip(self):
-        """Gets the geoip of this ListGeoIpResponseBodyItems.
+        """Gets the geoip of this GeOIpItem.
 
         地理位置封禁区域： (CN： 中国,AB2： 海外,AB： 海外及港澳台,RU： 俄罗斯,CA： 加拿大,US： 美国,AU： 澳大利亚,IN： 印度,JP： 日本,UK： 英国,FR： 法国,DE： 德国,BR： 巴西,Ukraine： 乌克兰,North Korea： 朝鲜,The Republic of Korea： 韩国,Iran： 伊朗,Cuba： 古巴,Sultan： 苏丹,Syria： 叙利亚,Pakistan： 巴基斯坦,Palestine： 巴勒斯坦,Israel： 以色列,Iraq： 伊拉克,Afghanistan： 阿富汗,Libya： 利比亚,Turkey： 土耳其,Thailand： 泰国,Singapore： 新加坡,South Africa： 南非,Mexico： 墨西哥,Peru： 秘鲁,Indonesia： 印度尼西亚,GD： 广东,FJ： 福建,JL： 吉林,LN： 辽宁,TW： 台湾,GZ： 贵州,AH： 安徽,HL： 黑龙江,HA： 河南,SC： 四川,HE： 河北,YN： 云南,HB： 湖北,HI： 海南,QH： 青海,HN： 湖南,JX： 江西,SX： 山西,SN： 陕西,ZJ： 浙江,GS： 甘肃,JS： 江苏,SD： 山东,BJ： 北京,SH： 上海,TJ： 天津,CQ： 重庆,MO： 澳门,HK： 香港,NX： 宁夏,GX： 广西,XJ： 新疆,XZ： 西藏,NM： 内蒙古)
 
-        :return: The geoip of this ListGeoIpResponseBodyItems.
+        :return: The geoip of this GeOIpItem.
         :rtype: str
         """
         return self._geoip
 
     @geoip.setter
     def geoip(self, geoip):
-        """Sets the geoip of this ListGeoIpResponseBodyItems.
+        """Sets the geoip of this GeOIpItem.
 
         地理位置封禁区域： (CN： 中国,AB2： 海外,AB： 海外及港澳台,RU： 俄罗斯,CA： 加拿大,US： 美国,AU： 澳大利亚,IN： 印度,JP： 日本,UK： 英国,FR： 法国,DE： 德国,BR： 巴西,Ukraine： 乌克兰,North Korea： 朝鲜,The Republic of Korea： 韩国,Iran： 伊朗,Cuba： 古巴,Sultan： 苏丹,Syria： 叙利亚,Pakistan： 巴基斯坦,Palestine： 巴勒斯坦,Israel： 以色列,Iraq： 伊拉克,Afghanistan： 阿富汗,Libya： 利比亚,Turkey： 土耳其,Thailand： 泰国,Singapore： 新加坡,South Africa： 南非,Mexico： 墨西哥,Peru： 秘鲁,Indonesia： 印度尼西亚,GD： 广东,FJ： 福建,JL： 吉林,LN： 辽宁,TW： 台湾,GZ： 贵州,AH： 安徽,HL： 黑龙江,HA： 河南,SC： 四川,HE： 河北,YN： 云南,HB： 湖北,HI： 海南,QH： 青海,HN： 湖南,JX： 江西,SX： 山西,SN： 陕西,ZJ： 浙江,GS： 甘肃,JS： 江苏,SD： 山东,BJ： 北京,SH： 上海,TJ： 天津,CQ： 重庆,MO： 澳门,HK： 香港,NX： 宁夏,GX： 广西,XJ： 新疆,XZ： 西藏,NM： 内蒙古)
 
-        :param geoip: The geoip of this ListGeoIpResponseBodyItems.
+        :param geoip: The geoip of this GeOIpItem.
         :type: str
         """
         self._geoip = geoip
 
     @property
     def white(self):
-        """Gets the white of this ListGeoIpResponseBodyItems.
+        """Gets the white of this GeOIpItem.
 
         防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
-        :return: The white of this ListGeoIpResponseBodyItems.
+        :return: The white of this GeOIpItem.
         :rtype: int
         """
         return self._white
 
     @white.setter
     def white(self, white):
-        """Sets the white of this ListGeoIpResponseBodyItems.
+        """Sets the white of this GeOIpItem.
 
         防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
-        :param white: The white of this ListGeoIpResponseBodyItems.
+        :param white: The white of this GeOIpItem.
         :type: int
         """
         self._white = white
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ListGeoIpResponseBodyItems.
+        """Gets the timestamp of this GeOIpItem.
 
         创建规则时间戳
 
-        :return: The timestamp of this ListGeoIpResponseBodyItems.
+        :return: The timestamp of this GeOIpItem.
         :rtype: int
         """
         return self._timestamp
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ListGeoIpResponseBodyItems.
+        """Sets the timestamp of this GeOIpItem.
 
         创建规则时间戳
 
-        :param timestamp: The timestamp of this ListGeoIpResponseBodyItems.
+        :param timestamp: The timestamp of this GeOIpItem.
         :type: int
         """
         self._timestamp = timestamp
@@ -185,7 +185,7 @@ class ListGeoIpResponseBodyItems:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListGeoIpResponseBodyItems):
+        if not isinstance(other, GeOIpItem):
             return False
 
         return self.__dict__ == other.__dict__

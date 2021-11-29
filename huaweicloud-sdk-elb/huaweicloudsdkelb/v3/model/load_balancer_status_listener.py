@@ -69,7 +69,7 @@ class LoadBalancerStatusListener:
     def name(self):
         """Gets the name of this LoadBalancerStatusListener.
 
-        负载均衡器下监听器的名称。
+        监听器的名称。
 
         :return: The name of this LoadBalancerStatusListener.
         :rtype: str
@@ -80,7 +80,7 @@ class LoadBalancerStatusListener:
     def name(self, name):
         """Sets the name of this LoadBalancerStatusListener.
 
-        负载均衡器下监听器的名称。
+        监听器的名称。
 
         :param name: The name of this LoadBalancerStatusListener.
         :type: str
@@ -91,7 +91,7 @@ class LoadBalancerStatusListener:
     def provisioning_status(self):
         """Gets the provisioning_status of this LoadBalancerStatusListener.
 
-        provisioning状态。 可以为ACTIVE、PENDING_CREATE 或者ERROR。
+        监听器的配置状态。取值： - ACTIVE：使用中。
 
         :return: The provisioning_status of this LoadBalancerStatusListener.
         :rtype: str
@@ -102,7 +102,7 @@ class LoadBalancerStatusListener:
     def provisioning_status(self, provisioning_status):
         """Sets the provisioning_status of this LoadBalancerStatusListener.
 
-        provisioning状态。 可以为ACTIVE、PENDING_CREATE 或者ERROR。
+        监听器的配置状态。取值： - ACTIVE：使用中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusListener.
         :type: str
@@ -113,7 +113,7 @@ class LoadBalancerStatusListener:
     def pools(self):
         """Gets the pools of this LoadBalancerStatusListener.
 
-        挂载在监听器下的后端主机组。
+        监听器下的后端主机组操作状态。
 
         :return: The pools of this LoadBalancerStatusListener.
         :rtype: list[LoadBalancerStatusPool]
@@ -124,7 +124,7 @@ class LoadBalancerStatusListener:
     def pools(self, pools):
         """Sets the pools of this LoadBalancerStatusListener.
 
-        挂载在监听器下的后端主机组。
+        监听器下的后端主机组操作状态。
 
         :param pools: The pools of this LoadBalancerStatusListener.
         :type: list[LoadBalancerStatusPool]
@@ -135,7 +135,7 @@ class LoadBalancerStatusListener:
     def l7policies(self):
         """Gets the l7policies of this LoadBalancerStatusListener.
 
-        7层转发策略
+        监听器下的7层转发策略操作状态。
 
         :return: The l7policies of this LoadBalancerStatusListener.
         :rtype: list[LoadBalancerStatusPolicy]
@@ -146,7 +146,7 @@ class LoadBalancerStatusListener:
     def l7policies(self, l7policies):
         """Sets the l7policies of this LoadBalancerStatusListener.
 
-        7层转发策略
+        监听器下的7层转发策略操作状态。
 
         :param l7policies: The l7policies of this LoadBalancerStatusListener.
         :type: list[LoadBalancerStatusPolicy]
@@ -179,7 +179,7 @@ class LoadBalancerStatusListener:
     def operating_status(self):
         """Gets the operating_status of this LoadBalancerStatusListener.
 
-        操作状态。 可以为：ONLINE、OFFLINE、DEGRADED、DISABLED或NO_MONITOR。说明：该字段为预留字段，暂未启用，默认为ONLINE。
+        监听器的操作状态。取值：  - ONLINE：创建时默认状态，表示监听器正常运行。  - DEGRADED：   -该监听器下存在l7policy或l7rule的Provisioning_status=ERROR时返回这个状态。   -状态树该监听器下存在member的operating_status=OFFLINE。 - DISABLED：负载均衡器或监听器的admin_state_up=false。 使用说明：  - DEGRADED和DISABLED状态仅在当前接口返回，查询监听器详情等其他接口返回字段operating_status不存在这两个状态值。
 
         :return: The operating_status of this LoadBalancerStatusListener.
         :rtype: str
@@ -190,7 +190,7 @@ class LoadBalancerStatusListener:
     def operating_status(self, operating_status):
         """Sets the operating_status of this LoadBalancerStatusListener.
 
-        操作状态。 可以为：ONLINE、OFFLINE、DEGRADED、DISABLED或NO_MONITOR。说明：该字段为预留字段，暂未启用，默认为ONLINE。
+        监听器的操作状态。取值：  - ONLINE：创建时默认状态，表示监听器正常运行。  - DEGRADED：   -该监听器下存在l7policy或l7rule的Provisioning_status=ERROR时返回这个状态。   -状态树该监听器下存在member的operating_status=OFFLINE。 - DISABLED：负载均衡器或监听器的admin_state_up=false。 使用说明：  - DEGRADED和DISABLED状态仅在当前接口返回，查询监听器详情等其他接口返回字段operating_status不存在这两个状态值。
 
         :param operating_status: The operating_status of this LoadBalancerStatusListener.
         :type: str

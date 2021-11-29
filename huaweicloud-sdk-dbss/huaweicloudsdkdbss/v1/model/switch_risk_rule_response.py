@@ -22,45 +22,45 @@ class SwitchRiskRuleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'status': 'str'
+        'result': 'str'
     }
 
     attribute_map = {
-        'status': 'status'
+        'result': 'result'
     }
 
-    def __init__(self, status=None):
+    def __init__(self, result=None):
         """SwitchRiskRuleResponse - a model defined in huaweicloud sdk"""
         
         super(SwitchRiskRuleResponse, self).__init__()
 
-        self._status = None
+        self._result = None
         self.discriminator = None
 
-        if status is not None:
-            self.status = status
+        if result is not None:
+            self.result = result
 
     @property
-    def status(self):
-        """Gets the status of this SwitchRiskRuleResponse.
+    def result(self):
+        """Gets the result of this SwitchRiskRuleResponse.
 
         响应状态
 
-        :return: The status of this SwitchRiskRuleResponse.
+        :return: The result of this SwitchRiskRuleResponse.
         :rtype: str
         """
-        return self._status
+        return self._result
 
-    @status.setter
-    def status(self, status):
-        """Sets the status of this SwitchRiskRuleResponse.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this SwitchRiskRuleResponse.
 
         响应状态
 
-        :param status: The status of this SwitchRiskRuleResponse.
+        :param result: The result of this SwitchRiskRuleResponse.
         :type: str
         """
-        self._status = status
+        self._result = result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -26,6 +26,7 @@ class ListKeysRequestBody:
         'marker': 'str',
         'key_state': 'str',
         'key_spec': 'str',
+        'enterprise_project_id': 'str',
         'sequence': 'str'
     }
 
@@ -34,10 +35,11 @@ class ListKeysRequestBody:
         'marker': 'marker',
         'key_state': 'key_state',
         'key_spec': 'key_spec',
+        'enterprise_project_id': 'enterprise_project_id',
         'sequence': 'sequence'
     }
 
-    def __init__(self, limit=None, marker=None, key_state=None, key_spec=None, sequence=None):
+    def __init__(self, limit=None, marker=None, key_state=None, key_spec=None, enterprise_project_id=None, sequence=None):
         """ListKeysRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -46,6 +48,7 @@ class ListKeysRequestBody:
         self._marker = None
         self._key_state = None
         self._key_spec = None
+        self._enterprise_project_id = None
         self._sequence = None
         self.discriminator = None
 
@@ -57,6 +60,8 @@ class ListKeysRequestBody:
             self.key_state = key_state
         if key_spec is not None:
             self.key_spec = key_spec
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if sequence is not None:
             self.sequence = sequence
 
@@ -147,6 +152,28 @@ class ListKeysRequestBody:
         :type: str
         """
         self._key_spec = key_spec
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListKeysRequestBody.
+
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件. - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+
+        :return: The enterprise_project_id of this ListKeysRequestBody.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListKeysRequestBody.
+
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件. - 取值为“all” - 取值为“0” - 满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+
+        :param enterprise_project_id: The enterprise_project_id of this ListKeysRequestBody.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def sequence(self):

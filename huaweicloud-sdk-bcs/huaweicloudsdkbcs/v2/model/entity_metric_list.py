@@ -23,7 +23,7 @@ class EntityMetricList:
 
     openapi_types = {
         'dimensions': 'list[Dimension]',
-        'values': 'object'
+        'values': 'list[EntityMetricListItem]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class EntityMetricList:
         监控数据列表项目。
 
         :return: The values of this EntityMetricList.
-        :rtype: object
+        :rtype: list[EntityMetricListItem]
         """
         return self._values
 
@@ -85,7 +85,7 @@ class EntityMetricList:
         监控数据列表项目。
 
         :param values: The values of this EntityMetricList.
-        :type: object
+        :type: list[EntityMetricListItem]
         """
         self._values = values
 

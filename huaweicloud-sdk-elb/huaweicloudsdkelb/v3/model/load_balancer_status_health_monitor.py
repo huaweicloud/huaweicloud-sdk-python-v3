@@ -59,7 +59,7 @@ class LoadBalancerStatusHealthMonitor:
     def type(self):
         """Gets the type of this LoadBalancerStatusHealthMonitor.
 
-        类型，可以为TCP、UDP_CONNECT或HTTP。
+        协议类型。取值：TCP、UDP_CONNECT、HTTP、HTTPS。
 
         :return: The type of this LoadBalancerStatusHealthMonitor.
         :rtype: str
@@ -70,7 +70,7 @@ class LoadBalancerStatusHealthMonitor:
     def type(self, type):
         """Sets the type of this LoadBalancerStatusHealthMonitor.
 
-        类型，可以为TCP、UDP_CONNECT或HTTP。
+        协议类型。取值：TCP、UDP_CONNECT、HTTP、HTTPS。
 
         :param type: The type of this LoadBalancerStatusHealthMonitor.
         :type: str
@@ -81,7 +81,7 @@ class LoadBalancerStatusHealthMonitor:
     def id(self):
         """Gets the id of this LoadBalancerStatusHealthMonitor.
 
-        健康检查ID。
+        健康检查器ID。
 
         :return: The id of this LoadBalancerStatusHealthMonitor.
         :rtype: str
@@ -92,7 +92,7 @@ class LoadBalancerStatusHealthMonitor:
     def id(self, id):
         """Sets the id of this LoadBalancerStatusHealthMonitor.
 
-        健康检查ID。
+        健康检查器ID。
 
         :param id: The id of this LoadBalancerStatusHealthMonitor.
         :type: str
@@ -103,7 +103,7 @@ class LoadBalancerStatusHealthMonitor:
     def name(self):
         """Gets the name of this LoadBalancerStatusHealthMonitor.
 
-        健康检查名称。
+        健康检查器名称。
 
         :return: The name of this LoadBalancerStatusHealthMonitor.
         :rtype: str
@@ -114,7 +114,7 @@ class LoadBalancerStatusHealthMonitor:
     def name(self, name):
         """Sets the name of this LoadBalancerStatusHealthMonitor.
 
-        健康检查名称。
+        健康检查器名称。
 
         :param name: The name of this LoadBalancerStatusHealthMonitor.
         :type: str
@@ -125,7 +125,7 @@ class LoadBalancerStatusHealthMonitor:
     def provisioning_status(self):
         """Gets the provisioning_status of this LoadBalancerStatusHealthMonitor.
 
-        provisioning的状态。 可以为：ACTIVE、PENDING_CREATE 或者ERROR。默认为ACTIVE。
+        健康检查器的配置状态。取值：ACTIVE表示使用中。
 
         :return: The provisioning_status of this LoadBalancerStatusHealthMonitor.
         :rtype: str
@@ -136,7 +136,7 @@ class LoadBalancerStatusHealthMonitor:
     def provisioning_status(self, provisioning_status):
         """Sets the provisioning_status of this LoadBalancerStatusHealthMonitor.
 
-        provisioning的状态。 可以为：ACTIVE、PENDING_CREATE 或者ERROR。默认为ACTIVE。
+        健康检查器的配置状态。取值：ACTIVE表示使用中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusHealthMonitor.
         :type: str

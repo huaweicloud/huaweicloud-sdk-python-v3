@@ -69,7 +69,7 @@ class SlowStart:
     def duration(self):
         """Gets the duration of this SlowStart.
 
-        慢启动的持续时间，单位：s。默认：30； 取值范围：30~1200
+        慢启动的持续时间。取值：30~1200s，默认30s；
 
         :return: The duration of this SlowStart.
         :rtype: int
@@ -80,7 +80,7 @@ class SlowStart:
     def duration(self, duration):
         """Sets the duration of this SlowStart.
 
-        慢启动的持续时间，单位：s。默认：30； 取值范围：30~1200
+        慢启动的持续时间。取值：30~1200s，默认30s；
 
         :param duration: The duration of this SlowStart.
         :type: int

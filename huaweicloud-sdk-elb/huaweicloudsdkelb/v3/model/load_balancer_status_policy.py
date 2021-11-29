@@ -64,7 +64,7 @@ class LoadBalancerStatusPolicy:
     def action(self):
         """Gets the action of this LoadBalancerStatusPolicy.
 
-        匹配动作。 支持REDIRECT_TO_POOL和REDIRECT_TO_LISTENER。
+        匹配后动作。取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
 
         :return: The action of this LoadBalancerStatusPolicy.
         :rtype: str
@@ -75,7 +75,7 @@ class LoadBalancerStatusPolicy:
     def action(self, action):
         """Sets the action of this LoadBalancerStatusPolicy.
 
-        匹配动作。 支持REDIRECT_TO_POOL和REDIRECT_TO_LISTENER。
+        匹配后动作。取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
 
         :param action: The action of this LoadBalancerStatusPolicy.
         :type: str
@@ -86,7 +86,7 @@ class LoadBalancerStatusPolicy:
     def id(self):
         """Gets the id of this LoadBalancerStatusPolicy.
 
-        策略ID。
+        转发策略ID。
 
         :return: The id of this LoadBalancerStatusPolicy.
         :rtype: str
@@ -97,7 +97,7 @@ class LoadBalancerStatusPolicy:
     def id(self, id):
         """Sets the id of this LoadBalancerStatusPolicy.
 
-        策略ID。
+        转发策略ID。
 
         :param id: The id of this LoadBalancerStatusPolicy.
         :type: str
@@ -108,7 +108,7 @@ class LoadBalancerStatusPolicy:
     def provisioning_status(self):
         """Gets the provisioning_status of this LoadBalancerStatusPolicy.
 
-        provisioning的状态。 可以为：ACTIVE、PENDING_CREATE 或者ERROR。默认为ACTIVE。
+        转发策略的配置状态。取值： - ACTIVE：使用中，默认值。 - ERROR：表示当前策略与同一监听器下的其他策略存在相同的规则配置。
 
         :return: The provisioning_status of this LoadBalancerStatusPolicy.
         :rtype: str
@@ -119,7 +119,7 @@ class LoadBalancerStatusPolicy:
     def provisioning_status(self, provisioning_status):
         """Sets the provisioning_status of this LoadBalancerStatusPolicy.
 
-        provisioning的状态。 可以为：ACTIVE、PENDING_CREATE 或者ERROR。默认为ACTIVE。
+        转发策略的配置状态。取值： - ACTIVE：使用中，默认值。 - ERROR：表示当前策略与同一监听器下的其他策略存在相同的规则配置。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusPolicy.
         :type: str
@@ -130,7 +130,7 @@ class LoadBalancerStatusPolicy:
     def name(self):
         """Gets the name of this LoadBalancerStatusPolicy.
 
-        策略名称。
+        转发策略名称。
 
         :return: The name of this LoadBalancerStatusPolicy.
         :rtype: str
@@ -141,7 +141,7 @@ class LoadBalancerStatusPolicy:
     def name(self, name):
         """Sets the name of this LoadBalancerStatusPolicy.
 
-        策略名称。
+        转发策略名称。
 
         :param name: The name of this LoadBalancerStatusPolicy.
         :type: str
@@ -152,7 +152,7 @@ class LoadBalancerStatusPolicy:
     def rules(self):
         """Gets the rules of this LoadBalancerStatusPolicy.
 
-        规则。
+        转发规则状态信息。
 
         :return: The rules of this LoadBalancerStatusPolicy.
         :rtype: list[LoadBalancerStatusL7Rule]
@@ -163,7 +163,7 @@ class LoadBalancerStatusPolicy:
     def rules(self, rules):
         """Sets the rules of this LoadBalancerStatusPolicy.
 
-        规则。
+        转发规则状态信息。
 
         :param rules: The rules of this LoadBalancerStatusPolicy.
         :type: list[LoadBalancerStatusL7Rule]

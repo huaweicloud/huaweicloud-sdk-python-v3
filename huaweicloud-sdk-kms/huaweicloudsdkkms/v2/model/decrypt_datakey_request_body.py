@@ -46,12 +46,9 @@ class DecryptDatakeyRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
-        if cipher_text is not None:
-            self.cipher_text = cipher_text
-        if datakey_cipher_length is not None:
-            self.datakey_cipher_length = datakey_cipher_length
+        self.key_id = key_id
+        self.cipher_text = cipher_text
+        self.datakey_cipher_length = datakey_cipher_length
         if sequence is not None:
             self.sequence = sequence
 

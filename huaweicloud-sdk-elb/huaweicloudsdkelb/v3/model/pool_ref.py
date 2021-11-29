@@ -43,7 +43,7 @@ class PoolRef:
     def id(self):
         """Gets the id of this PoolRef.
 
-        功能描述：后端服务器组ID。
+        后端服务器组ID。
 
         :return: The id of this PoolRef.
         :rtype: str
@@ -54,7 +54,7 @@ class PoolRef:
     def id(self, id):
         """Sets the id of this PoolRef.
 
-        功能描述：后端服务器组ID。
+        后端服务器组ID。
 
         :param id: The id of this PoolRef.
         :type: str

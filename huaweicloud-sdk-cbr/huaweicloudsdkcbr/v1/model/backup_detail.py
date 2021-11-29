@@ -23,6 +23,7 @@ class BackupDetail:
 
     openapi_types = {
         'checkpoint_id': 'str',
+        'provider_id': 'str',
         'created_at': 'datetime',
         'description': 'str',
         'expired_at': 'datetime',
@@ -48,6 +49,7 @@ class BackupDetail:
 
     attribute_map = {
         'checkpoint_id': 'checkpoint_id',
+        'provider_id': 'provider_id',
         'created_at': 'created_at',
         'description': 'description',
         'expired_at': 'expired_at',
@@ -71,12 +73,13 @@ class BackupDetail:
         'children': 'children'
     }
 
-    def __init__(self, checkpoint_id=None, created_at=None, description=None, expired_at=None, extend_info=None, id=None, image_type=None, name=None, parent_id=None, project_id=None, protected_at=None, resource_az=None, resource_id=None, resource_name=None, resource_size=None, resource_type=None, status=None, updated_at=None, vault_id=None, replication_records=None, enterprise_project_id=None, children=None):
+    def __init__(self, checkpoint_id=None, provider_id=None, created_at=None, description=None, expired_at=None, extend_info=None, id=None, image_type=None, name=None, parent_id=None, project_id=None, protected_at=None, resource_az=None, resource_id=None, resource_name=None, resource_size=None, resource_type=None, status=None, updated_at=None, vault_id=None, replication_records=None, enterprise_project_id=None, children=None):
         """BackupDetail - a model defined in huaweicloud sdk"""
         
         
 
         self._checkpoint_id = None
+        self._provider_id = None
         self._created_at = None
         self._description = None
         self._expired_at = None
@@ -101,6 +104,7 @@ class BackupDetail:
         self.discriminator = None
 
         self.checkpoint_id = checkpoint_id
+        self.provider_id = provider_id
         self.created_at = created_at
         self.description = description
         self.expired_at = expired_at
@@ -145,6 +149,28 @@ class BackupDetail:
         :type: str
         """
         self._checkpoint_id = checkpoint_id
+
+    @property
+    def provider_id(self):
+        """Gets the provider_id of this BackupDetail.
+
+        备份提供商ID，用于区分备份对象。当前取值包含：0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881， 该值代表备份对象为SFS Turbo。a13639de-00be-4e94-af30-26912d75e4a2，该值代表备份对象为混合云VMware备份。
+
+        :return: The provider_id of this BackupDetail.
+        :rtype: str
+        """
+        return self._provider_id
+
+    @provider_id.setter
+    def provider_id(self, provider_id):
+        """Sets the provider_id of this BackupDetail.
+
+        备份提供商ID，用于区分备份对象。当前取值包含：0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881， 该值代表备份对象为SFS Turbo。a13639de-00be-4e94-af30-26912d75e4a2，该值代表备份对象为混合云VMware备份。
+
+        :param provider_id: The provider_id of this BackupDetail.
+        :type: str
+        """
+        self._provider_id = provider_id
 
     @property
     def created_at(self):

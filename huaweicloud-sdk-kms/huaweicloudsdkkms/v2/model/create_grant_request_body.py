@@ -55,12 +55,9 @@ class CreateGrantRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
-        if grantee_principal is not None:
-            self.grantee_principal = grantee_principal
-        if operations is not None:
-            self.operations = operations
+        self.key_id = key_id
+        self.grantee_principal = grantee_principal
+        self.operations = operations
         if name is not None:
             self.name = name
         if retiring_principal is not None:

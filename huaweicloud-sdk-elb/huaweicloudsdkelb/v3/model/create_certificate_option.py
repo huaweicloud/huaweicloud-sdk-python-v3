@@ -30,7 +30,9 @@ class CreateCertificateOption:
         'private_key': 'str',
         'project_id': 'str',
         'type': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'enc_certificate': 'str',
+        'enc_private_key': 'str'
     }
 
     attribute_map = {
@@ -42,10 +44,12 @@ class CreateCertificateOption:
         'private_key': 'private_key',
         'project_id': 'project_id',
         'type': 'type',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'enc_certificate': 'enc_certificate',
+        'enc_private_key': 'enc_private_key'
     }
 
-    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, name=None, private_key=None, project_id=None, type=None, enterprise_project_id=None):
+    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, name=None, private_key=None, project_id=None, type=None, enterprise_project_id=None, enc_certificate=None, enc_private_key=None):
         """CreateCertificateOption - a model defined in huaweicloud sdk"""
         
         
@@ -59,6 +63,8 @@ class CreateCertificateOption:
         self._project_id = None
         self._type = None
         self._enterprise_project_id = None
+        self._enc_certificate = None
+        self._enc_private_key = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -78,12 +84,16 @@ class CreateCertificateOption:
             self.type = type
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if enc_certificate is not None:
+            self.enc_certificate = enc_certificate
+        if enc_private_key is not None:
+            self.enc_private_key = enc_private_key
 
     @property
     def admin_state_up(self):
         """Gets the admin_state_up of this CreateCertificateOption.
 
-        SSL证书的管理状态；暂不支持。
+        证书的管理状态。  不支持该字段，请勿使用。
 
         :return: The admin_state_up of this CreateCertificateOption.
         :rtype: bool
@@ -94,7 +104,7 @@ class CreateCertificateOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this CreateCertificateOption.
 
-        SSL证书的管理状态；暂不支持。
+        证书的管理状态。  不支持该字段，请勿使用。
 
         :param admin_state_up: The admin_state_up of this CreateCertificateOption.
         :type: bool
@@ -105,7 +115,7 @@ class CreateCertificateOption:
     def certificate(self):
         """Gets the certificate of this CreateCertificateOption.
 
-        HTTPS协议使用的证书内容。 取值范围：PEM编码格式。
+        HTTPS协议使用的证书内容。 如果type为server_sm时，该字段填写SM签名证书内容。 取值范围：PEM编码格式。
 
         :return: The certificate of this CreateCertificateOption.
         :rtype: str
@@ -116,7 +126,7 @@ class CreateCertificateOption:
     def certificate(self, certificate):
         """Sets the certificate of this CreateCertificateOption.
 
-        HTTPS协议使用的证书内容。 取值范围：PEM编码格式。
+        HTTPS协议使用的证书内容。 如果type为server_sm时，该字段填写SM签名证书内容。 取值范围：PEM编码格式。
 
         :param certificate: The certificate of this CreateCertificateOption.
         :type: str
@@ -127,7 +137,7 @@ class CreateCertificateOption:
     def description(self):
         """Gets the description of this CreateCertificateOption.
 
-        SSL证书的描述。
+        证书的描述。
 
         :return: The description of this CreateCertificateOption.
         :rtype: str
@@ -138,7 +148,7 @@ class CreateCertificateOption:
     def description(self, description):
         """Sets the description of this CreateCertificateOption.
 
-        SSL证书的描述。
+        证书的描述。
 
         :param description: The description of this CreateCertificateOption.
         :type: str
@@ -149,7 +159,7 @@ class CreateCertificateOption:
     def domain(self):
         """Gets the domain of this CreateCertificateOption.
 
-        服务器证书所签域名。该字段仅type为server时有效。默认值：\"\" 总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过30个域名。 普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com； 泛域名：在普通域名的基础上仅允许首字母为\"*\"。例：*.test.com
+        服务器证书所签域名。该字段仅type为server或server_sm时有效。 总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过30个域名。 普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com； 泛域名：在普通域名的基础上仅允许首字母为\"\"。例：.test.com
 
         :return: The domain of this CreateCertificateOption.
         :rtype: str
@@ -160,7 +170,7 @@ class CreateCertificateOption:
     def domain(self, domain):
         """Sets the domain of this CreateCertificateOption.
 
-        服务器证书所签域名。该字段仅type为server时有效。默认值：\"\" 总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过30个域名。 普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com； 泛域名：在普通域名的基础上仅允许首字母为\"*\"。例：*.test.com
+        服务器证书所签域名。该字段仅type为server或server_sm时有效。 总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过30个域名。 普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com； 泛域名：在普通域名的基础上仅允许首字母为\"\"。例：.test.com
 
         :param domain: The domain of this CreateCertificateOption.
         :type: str
@@ -171,7 +181,7 @@ class CreateCertificateOption:
     def name(self):
         """Gets the name of this CreateCertificateOption.
 
-        SSL证书的名称。
+        证书的名称。
 
         :return: The name of this CreateCertificateOption.
         :rtype: str
@@ -182,7 +192,7 @@ class CreateCertificateOption:
     def name(self, name):
         """Sets the name of this CreateCertificateOption.
 
-        SSL证书的名称。
+        证书的名称。
 
         :param name: The name of this CreateCertificateOption.
         :type: str
@@ -193,7 +203,7 @@ class CreateCertificateOption:
     def private_key(self):
         """Gets the private_key of this CreateCertificateOption.
 
-        HTTPS协议使用的私钥。仅type为server时有效。type为server时必选。 取值范围：PEM编码格式。
+        HTTPS协议使用的私钥。仅type为server或server_sm时有效。type为server或server_sm时必选。 如果type为server_sm时，该字段填写SM签名证书的私钥。 取值范围：PEM编码格式。
 
         :return: The private_key of this CreateCertificateOption.
         :rtype: str
@@ -204,7 +214,7 @@ class CreateCertificateOption:
     def private_key(self, private_key):
         """Sets the private_key of this CreateCertificateOption.
 
-        HTTPS协议使用的私钥。仅type为server时有效。type为server时必选。 取值范围：PEM编码格式。
+        HTTPS协议使用的私钥。仅type为server或server_sm时有效。type为server或server_sm时必选。 如果type为server_sm时，该字段填写SM签名证书的私钥。 取值范围：PEM编码格式。
 
         :param private_key: The private_key of this CreateCertificateOption.
         :type: str
@@ -215,7 +225,7 @@ class CreateCertificateOption:
     def project_id(self):
         """Gets the project_id of this CreateCertificateOption.
 
-        SSL证书所在的项目ID。
+        证书所在的项目ID。
 
         :return: The project_id of this CreateCertificateOption.
         :rtype: str
@@ -226,7 +236,7 @@ class CreateCertificateOption:
     def project_id(self, project_id):
         """Sets the project_id of this CreateCertificateOption.
 
-        SSL证书所在的项目ID。
+        证书所在的项目ID。
 
         :param project_id: The project_id of this CreateCertificateOption.
         :type: str
@@ -237,7 +247,7 @@ class CreateCertificateOption:
     def type(self):
         """Gets the type of this CreateCertificateOption.
 
-        SSL证书的类型。分为服务器证书(server)和CA证书(client)。 默认值：server
+        SSL证书的类型。分为服务器证书(server)、CA证书(client)和服务器SM双证书(server_sm)。 默认值：server
 
         :return: The type of this CreateCertificateOption.
         :rtype: str
@@ -248,7 +258,7 @@ class CreateCertificateOption:
     def type(self, type):
         """Sets the type of this CreateCertificateOption.
 
-        SSL证书的类型。分为服务器证书(server)和CA证书(client)。 默认值：server
+        SSL证书的类型。分为服务器证书(server)、CA证书(client)和服务器SM双证书(server_sm)。 默认值：server
 
         :param type: The type of this CreateCertificateOption.
         :type: str
@@ -259,7 +269,7 @@ class CreateCertificateOption:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateCertificateOption.
 
-        企业项目ID。
+        证书所属的企业项目ID。
 
         :return: The enterprise_project_id of this CreateCertificateOption.
         :rtype: str
@@ -270,12 +280,56 @@ class CreateCertificateOption:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateCertificateOption.
 
-        企业项目ID。
+        证书所属的企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateCertificateOption.
         :type: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def enc_certificate(self):
+        """Gets the enc_certificate of this CreateCertificateOption.
+
+        HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
+
+        :return: The enc_certificate of this CreateCertificateOption.
+        :rtype: str
+        """
+        return self._enc_certificate
+
+    @enc_certificate.setter
+    def enc_certificate(self, enc_certificate):
+        """Sets the enc_certificate of this CreateCertificateOption.
+
+        HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
+
+        :param enc_certificate: The enc_certificate of this CreateCertificateOption.
+        :type: str
+        """
+        self._enc_certificate = enc_certificate
+
+    @property
+    def enc_private_key(self):
+        """Gets the enc_private_key of this CreateCertificateOption.
+
+        HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
+
+        :return: The enc_private_key of this CreateCertificateOption.
+        :rtype: str
+        """
+        return self._enc_private_key
+
+    @enc_private_key.setter
+    def enc_private_key(self, enc_private_key):
+        """Sets the enc_private_key of this CreateCertificateOption.
+
+        HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
+
+        :param enc_private_key: The enc_private_key of this CreateCertificateOption.
+        :type: str
+        """
+        self._enc_private_key = enc_private_key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

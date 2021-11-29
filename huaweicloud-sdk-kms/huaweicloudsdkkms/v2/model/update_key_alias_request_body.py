@@ -43,10 +43,8 @@ class UpdateKeyAliasRequestBody:
         self._sequence = None
         self.discriminator = None
 
-        if key_id is not None:
-            self.key_id = key_id
-        if key_alias is not None:
-            self.key_alias = key_alias
+        self.key_id = key_id
+        self.key_alias = key_alias
         if sequence is not None:
             self.sequence = sequence
 

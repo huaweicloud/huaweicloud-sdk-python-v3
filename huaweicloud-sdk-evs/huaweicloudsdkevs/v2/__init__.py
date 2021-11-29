@@ -16,10 +16,6 @@ from huaweicloudsdkevs.v2.model.batch_delete_volume_tags_request_body import Bat
 from huaweicloudsdkevs.v2.model.batch_delete_volume_tags_response import BatchDeleteVolumeTagsResponse
 from huaweicloudsdkevs.v2.model.bss_param_for_create_volume import BssParamForCreateVolume
 from huaweicloudsdkevs.v2.model.bss_param_for_resize_volume import BssParamForResizeVolume
-from huaweicloudsdkevs.v2.model.cinder_export_to_image_option import CinderExportToImageOption
-from huaweicloudsdkevs.v2.model.cinder_export_to_image_request import CinderExportToImageRequest
-from huaweicloudsdkevs.v2.model.cinder_export_to_image_request_body import CinderExportToImageRequestBody
-from huaweicloudsdkevs.v2.model.cinder_export_to_image_response import CinderExportToImageResponse
 from huaweicloudsdkevs.v2.model.cinder_list_availability_zones_request import CinderListAvailabilityZonesRequest
 from huaweicloudsdkevs.v2.model.cinder_list_availability_zones_response import CinderListAvailabilityZonesResponse
 from huaweicloudsdkevs.v2.model.cinder_list_quotas_request import CinderListQuotasRequest
@@ -40,7 +36,6 @@ from huaweicloudsdkevs.v2.model.delete_snapshot_response import DeleteSnapshotRe
 from huaweicloudsdkevs.v2.model.delete_tags_option import DeleteTagsOption
 from huaweicloudsdkevs.v2.model.delete_volume_request import DeleteVolumeRequest
 from huaweicloudsdkevs.v2.model.delete_volume_response import DeleteVolumeResponse
-from huaweicloudsdkevs.v2.model.image import Image
 from huaweicloudsdkevs.v2.model.job_entities import JobEntities
 from huaweicloudsdkevs.v2.model.link import Link
 from huaweicloudsdkevs.v2.model.list_snapshots_request import ListSnapshotsRequest

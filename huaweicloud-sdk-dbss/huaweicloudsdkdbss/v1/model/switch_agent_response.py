@@ -22,45 +22,45 @@ class SwitchAgentResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'status': 'str'
+        'result': 'str'
     }
 
     attribute_map = {
-        'status': 'status'
+        'result': 'result'
     }
 
-    def __init__(self, status=None):
+    def __init__(self, result=None):
         """SwitchAgentResponse - a model defined in huaweicloud sdk"""
         
         super(SwitchAgentResponse, self).__init__()
 
-        self._status = None
+        self._result = None
         self.discriminator = None
 
-        if status is not None:
-            self.status = status
+        if result is not None:
+            self.result = result
 
     @property
-    def status(self):
-        """Gets the status of this SwitchAgentResponse.
+    def result(self):
+        """Gets the result of this SwitchAgentResponse.
 
         响应状态
 
-        :return: The status of this SwitchAgentResponse.
+        :return: The result of this SwitchAgentResponse.
         :rtype: str
         """
-        return self._status
+        return self._result
 
-    @status.setter
-    def status(self, status):
-        """Sets the status of this SwitchAgentResponse.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this SwitchAgentResponse.
 
         响应状态
 
-        :param status: The status of this SwitchAgentResponse.
+        :param result: The result of this SwitchAgentResponse.
         :type: str
         """
-        self._status = status
+        self._result = result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

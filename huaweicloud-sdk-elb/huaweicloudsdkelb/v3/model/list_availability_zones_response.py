@@ -22,50 +22,28 @@ class ListAvailabilityZonesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'availability_zones': 'list[list[AvailabilityZone]]',
-        'request_id': 'str'
+        'request_id': 'str',
+        'availability_zones': 'list[list[AvailabilityZone]]'
     }
 
     attribute_map = {
-        'availability_zones': 'availability_zones',
-        'request_id': 'request_id'
+        'request_id': 'request_id',
+        'availability_zones': 'availability_zones'
     }
 
-    def __init__(self, availability_zones=None, request_id=None):
+    def __init__(self, request_id=None, availability_zones=None):
         """ListAvailabilityZonesResponse - a model defined in huaweicloud sdk"""
         
         super(ListAvailabilityZonesResponse, self).__init__()
 
-        self._availability_zones = None
         self._request_id = None
+        self._availability_zones = None
         self.discriminator = None
 
-        if availability_zones is not None:
-            self.availability_zones = availability_zones
         if request_id is not None:
             self.request_id = request_id
-
-    @property
-    def availability_zones(self):
-        """Gets the availability_zones of this ListAvailabilityZonesResponse.
-
-        可用区列表。  > 获取可用区集合列表后，在（如创建LB时）设置可用区，选择的多个可用区必须同时在同一个集合中。
-
-        :return: The availability_zones of this ListAvailabilityZonesResponse.
-        :rtype: list[list[AvailabilityZone]]
-        """
-        return self._availability_zones
-
-    @availability_zones.setter
-    def availability_zones(self, availability_zones):
-        """Sets the availability_zones of this ListAvailabilityZonesResponse.
-
-        可用区列表。  > 获取可用区集合列表后，在（如创建LB时）设置可用区，选择的多个可用区必须同时在同一个集合中。
-
-        :param availability_zones: The availability_zones of this ListAvailabilityZonesResponse.
-        :type: list[list[AvailabilityZone]]
-        """
-        self._availability_zones = availability_zones
+        if availability_zones is not None:
+            self.availability_zones = availability_zones
 
     @property
     def request_id(self):
@@ -88,6 +66,28 @@ class ListAvailabilityZonesResponse(SdkResponse):
         :type: str
         """
         self._request_id = request_id
+
+    @property
+    def availability_zones(self):
+        """Gets the availability_zones of this ListAvailabilityZonesResponse.
+
+        返回创建LB时可使用的可用区集合列表。
+
+        :return: The availability_zones of this ListAvailabilityZonesResponse.
+        :rtype: list[list[AvailabilityZone]]
+        """
+        return self._availability_zones
+
+    @availability_zones.setter
+    def availability_zones(self, availability_zones):
+        """Sets the availability_zones of this ListAvailabilityZonesResponse.
+
+        返回创建LB时可使用的可用区集合列表。
+
+        :param availability_zones: The availability_zones of this ListAvailabilityZonesResponse.
+        :type: list[list[AvailabilityZone]]
+        """
+        self._availability_zones = availability_zones
 
     def to_dict(self):
         """Returns the model properties as a dict"""

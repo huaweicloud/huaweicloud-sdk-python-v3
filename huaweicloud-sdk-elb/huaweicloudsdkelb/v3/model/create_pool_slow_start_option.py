@@ -40,14 +40,16 @@ class CreatePoolSlowStartOption:
         self._duration = None
         self.discriminator = None
 
-        self.enable = enable
-        self.duration = duration
+        if enable is not None:
+            self.enable = enable
+        if duration is not None:
+            self.duration = duration
 
     @property
     def enable(self):
         """Gets the enable of this CreatePoolSlowStartOption.
 
-        慢启动的开关，默认值：false； true：开启； false：关闭 
+        慢启动的开关，取值： - true：开启。 - false：关闭，默认值。 
 
         :return: The enable of this CreatePoolSlowStartOption.
         :rtype: bool
@@ -58,7 +60,7 @@ class CreatePoolSlowStartOption:
     def enable(self, enable):
         """Sets the enable of this CreatePoolSlowStartOption.
 
-        慢启动的开关，默认值：false； true：开启； false：关闭 
+        慢启动的开关，取值： - true：开启。 - false：关闭，默认值。 
 
         :param enable: The enable of this CreatePoolSlowStartOption.
         :type: bool

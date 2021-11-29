@@ -58,8 +58,7 @@ class CreateDependencyRequestBody:
             self.depend_link = depend_link
         self.depend_type = depend_type
         self.runtime = runtime
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
 
