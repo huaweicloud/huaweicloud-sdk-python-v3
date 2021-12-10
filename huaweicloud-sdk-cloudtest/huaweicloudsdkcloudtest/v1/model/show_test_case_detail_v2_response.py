@@ -148,7 +148,7 @@ class ShowTestCaseDetailV2Response(SdkResponse):
     def service_id(self):
         """Gets the service_id of this ShowTestCaseDetailV2Response.
 
-        注册结果返回的服务id
+        注册测试类型服务接口返回的服务id
 
         :return: The service_id of this ShowTestCaseDetailV2Response.
         :rtype: int
@@ -159,7 +159,7 @@ class ShowTestCaseDetailV2Response(SdkResponse):
     def service_id(self, service_id):
         """Sets the service_id of this ShowTestCaseDetailV2Response.
 
-        注册结果返回的服务id
+        注册测试类型服务接口返回的服务id
 
         :param service_id: The service_id of this ShowTestCaseDetailV2Response.
         :type: int

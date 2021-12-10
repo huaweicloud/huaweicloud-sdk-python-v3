@@ -22,7 +22,7 @@ class CreateStructTemplateRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'LTSStructTemplateInfo'
+        'body': 'LtsStructTemplateInfo'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class CreateStructTemplateRequest:
 
 
         :return: The body of this CreateStructTemplateRequest.
-        :rtype: LTSStructTemplateInfo
+        :rtype: LtsStructTemplateInfo
         """
         return self._body
 
@@ -56,7 +56,7 @@ class CreateStructTemplateRequest:
 
 
         :param body: The body of this CreateStructTemplateRequest.
-        :type: LTSStructTemplateInfo
+        :type: LtsStructTemplateInfo
         """
         self._body = body
 

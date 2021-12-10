@@ -124,6 +124,7 @@ the [CHANGELOG.md](https://github.com/huaweicloud/huaweicloud-sdk-python-v3/blob
 * [6. Troubleshooting](#6-troubleshooting-top)
     * [6.1 Access Log](#61-access-log-top)
     * [6.2 Original HTTP Listener](#62-original-http-listener-top)
+* [7. Upload and download files](#7-upload-and-download-files-top)
 
 ### 1. Client Configuration [:top:](#user-manual-top)
 
@@ -440,3 +441,57 @@ if __name__ == "__main__":
 **Notice:**
 
 HttpHandler supports method `add_request_handler` and `add_response_handler`.
+
+### 7. Upload and download files [:top:](#user-manual-top)
+
+Take the interface `CreateImageWatermark` of the service `Data Security Center` as an example, this interface needs to upload an image file and return the watermarked image file stream:
+
+```python
+# coding: utf-8
+from huaweicloudsdkcore.auth.credentials import BasicCredentials
+from huaweicloudsdkcore.exceptions import exceptions
+from huaweicloudsdkcore.http.http_config import HttpConfig
+from huaweicloudsdkcore.http.formdata import FormFile
+from huaweicloudsdkdsc.v1 import *
+
+
+def create_image_watermark(client):
+
+    try:
+        request = CreateImageWatermarkRequest()
+        # Open the file in mode "rb", create a Formfile object.
+        image_file = FormFile(open("demo.jpg", "rb"))
+        body = CreateImageWatermarkRequestBody(file=image_file, blind_watermark="test_watermark")
+        request.body = body
+        response = client.create_image_watermark(request)
+        image_file.close()
+        
+        # Define the method of downloading files.
+        def save(stream):
+            with open("result.jpg", "wb") as f:
+                f.write(stream.content)
+        # Download the file.
+        response.consume_download_stream(save)
+    except exceptions.ClientRequestException as e:
+        print(e.status_code)
+        print(e.request_id)
+        print(e.error_code)
+        print(e.error_msg)
+
+
+if __name__ == "__main__":
+    ak = "{your ak string}"
+    sk = "{your sk string}"
+    endpoint = "{your endpoint}"
+    project_id = "{your project id}"
+    config = HttpConfig.get_default_config()
+    config.ignore_ssl_verification = True
+    credentials = BasicCredentials(ak, sk, project_id)
+    dsc_client = DscClient.new_builder()
+        .with_http_config(config) \
+        .with_credentials(credentials) \
+        .with_endpoint(endpoint) \
+        .build()
+    
+    create_image_watermark(dsc_client)
+```

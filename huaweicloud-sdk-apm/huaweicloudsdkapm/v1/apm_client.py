@@ -48,9 +48,71 @@ class ApmClient(Client):
 
         return ClientBuilder(clazz)
 
-    def list_business(self, request):
-        """list_business
+    def list_ak_sk(self, request):
+        """获取ak-sk
 
+        获取该用户创建的aksk列表
+
+        :param ListAkSkRequest request
+        :return: ListAkSkResponse
+        """
+        return self.list_ak_sk_with_http_info(request)
+
+    def list_ak_sk_with_http_info(self, request):
+        """获取ak-sk
+
+        获取该用户创建的aksk列表
+
+        :param ListAkSkRequest request
+        :return: ListAkSkResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/systemmng/get-ak-sk-list',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAkSkResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_business(self, request):
+        """查询业务列表
+
+        该接口用于查询对应用户下的业务。
 
         :param ListBusinessRequest request
         :return: ListBusinessResponse
@@ -58,8 +120,9 @@ class ApmClient(Client):
         return self.list_business_with_http_info(request)
 
     def list_business_with_http_info(self, request):
-        """list_business
+        """查询业务列表
 
+        该接口用于查询对应用户下的业务。
 
         :param ListBusinessRequest request
         :return: ListBusinessResponse
@@ -101,6 +164,69 @@ class ApmClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListBusinessResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_master_address(self, request):
+        """查询master地址
+
+        根据region名称获取该名称下的master服务podlb地址信息
+
+        :param ShowMasterAddressRequest request
+        :return: ShowMasterAddressResponse
+        """
+        return self.show_master_address_with_http_info(request)
+
+    def show_master_address_with_http_info(self, request):
+        """查询master地址
+
+        根据region名称获取该名称下的master服务podlb地址信息
+
+        :param ShowMasterAddressRequest request
+        :return: ShowMasterAddressResponse
+        """
+
+        all_params = ['region_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'region_name' in local_var_params:
+            query_params.append(('region_name', local_var_params['region_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/systemmng/get-master-address',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowMasterAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -32,7 +32,7 @@ class UpdateKeywordsAlarmRuleRequestBody:
         'keywords_alarm_send_code': 'int',
         'domain_id': 'str',
         'notification_save_rule': 'NotificationSaveRule',
-        'whether_english': 'bool'
+        'language': 'str'
     }
 
     attribute_map = {
@@ -46,10 +46,10 @@ class UpdateKeywordsAlarmRuleRequestBody:
         'keywords_alarm_send_code': 'keywords_alarm_send_code',
         'domain_id': 'domain_id',
         'notification_save_rule': 'notification_save_rule',
-        'whether_english': 'whether_english'
+        'language': 'language'
     }
 
-    def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, keywords_alarm_send_code=None, domain_id=None, notification_save_rule=None, whether_english=None):
+    def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, keywords_alarm_send_code=None, domain_id=None, notification_save_rule=None, language=None):
         """UpdateKeywordsAlarmRuleRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -64,7 +64,7 @@ class UpdateKeywordsAlarmRuleRequestBody:
         self._keywords_alarm_send_code = None
         self._domain_id = None
         self._notification_save_rule = None
-        self._whether_english = None
+        self._language = None
         self.discriminator = None
 
         self.keywords_alarm_rule_id = keywords_alarm_rule_id
@@ -79,7 +79,7 @@ class UpdateKeywordsAlarmRuleRequestBody:
         self.domain_id = domain_id
         if notification_save_rule is not None:
             self.notification_save_rule = notification_save_rule
-        self.whether_english = whether_english
+        self.language = language
 
     @property
     def keywords_alarm_rule_id(self):
@@ -302,26 +302,26 @@ class UpdateKeywordsAlarmRuleRequestBody:
         self._notification_save_rule = notification_save_rule
 
     @property
-    def whether_english(self):
-        """Gets the whether_english of this UpdateKeywordsAlarmRuleRequestBody.
+    def language(self):
+        """Gets the language of this UpdateKeywordsAlarmRuleRequestBody.
 
         邮件附加信息是否英文
 
-        :return: The whether_english of this UpdateKeywordsAlarmRuleRequestBody.
-        :rtype: bool
+        :return: The language of this UpdateKeywordsAlarmRuleRequestBody.
+        :rtype: str
         """
-        return self._whether_english
+        return self._language
 
-    @whether_english.setter
-    def whether_english(self, whether_english):
-        """Sets the whether_english of this UpdateKeywordsAlarmRuleRequestBody.
+    @language.setter
+    def language(self, language):
+        """Sets the language of this UpdateKeywordsAlarmRuleRequestBody.
 
         邮件附加信息是否英文
 
-        :param whether_english: The whether_english of this UpdateKeywordsAlarmRuleRequestBody.
-        :type: bool
+        :param language: The language of this UpdateKeywordsAlarmRuleRequestBody.
+        :type: str
         """
-        self._whether_english = whether_english
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -122,7 +122,6 @@ class AomMappingRequestInfo:
     def rule_info(self):
         """Gets the rule_info of this AomMappingRequestInfo.
 
-        接入规则详情
 
         :return: The rule_info of this AomMappingRequestInfo.
         :rtype: AomMappingRuleInfo
@@ -133,7 +132,6 @@ class AomMappingRequestInfo:
     def rule_info(self, rule_info):
         """Sets the rule_info of this AomMappingRequestInfo.
 
-        接入规则详情
 
         :param rule_info: The rule_info of this AomMappingRequestInfo.
         :type: AomMappingRuleInfo

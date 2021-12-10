@@ -211,7 +211,7 @@ class QueryResourcesReq:
     def expire_time_begin(self):
         """Gets the expire_time_begin of this QueryResourcesReq.
 
-        资源失效的开始时间，UTC时间。
+        查询指定时间段内失效的资源列表，时间段的起始时间，UTC时间。
 
         :return: The expire_time_begin of this QueryResourcesReq.
         :rtype: str
@@ -222,7 +222,7 @@ class QueryResourcesReq:
     def expire_time_begin(self, expire_time_begin):
         """Sets the expire_time_begin of this QueryResourcesReq.
 
-        资源失效的开始时间，UTC时间。
+        查询指定时间段内失效的资源列表，时间段的起始时间，UTC时间。
 
         :param expire_time_begin: The expire_time_begin of this QueryResourcesReq.
         :type: str
@@ -233,7 +233,7 @@ class QueryResourcesReq:
     def expire_time_end(self):
         """Gets the expire_time_end of this QueryResourcesReq.
 
-        资源失效的结束时间，UTC时间。
+        查询指定时间段内失效的资源列表，时间段的结束时间，UTC时间。
 
         :return: The expire_time_end of this QueryResourcesReq.
         :rtype: str
@@ -244,7 +244,7 @@ class QueryResourcesReq:
     def expire_time_end(self, expire_time_end):
         """Sets the expire_time_end of this QueryResourcesReq.
 
-        资源失效的结束时间，UTC时间。
+        查询指定时间段内失效的资源列表，时间段的结束时间，UTC时间。
 
         :param expire_time_end: The expire_time_end of this QueryResourcesReq.
         :type: str

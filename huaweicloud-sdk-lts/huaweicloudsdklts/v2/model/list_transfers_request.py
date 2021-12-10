@@ -24,16 +24,20 @@ class ListTransfersRequest:
     openapi_types = {
         'log_transfer_type': 'str',
         'log_group_name': 'str',
-        'log_stream_name': 'str'
+        'log_stream_name': 'str',
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
         'log_transfer_type': 'log_transfer_type',
         'log_group_name': 'log_group_name',
-        'log_stream_name': 'log_stream_name'
+        'log_stream_name': 'log_stream_name',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, log_transfer_type=None, log_group_name=None, log_stream_name=None):
+    def __init__(self, log_transfer_type=None, log_group_name=None, log_stream_name=None, offset=None, limit=None):
         """ListTransfersRequest - a model defined in huaweicloud sdk"""
         
         
@@ -41,6 +45,8 @@ class ListTransfersRequest:
         self._log_transfer_type = None
         self._log_group_name = None
         self._log_stream_name = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         if log_transfer_type is not None:
@@ -49,6 +55,10 @@ class ListTransfersRequest:
             self.log_group_name = log_group_name
         if log_stream_name is not None:
             self.log_stream_name = log_stream_name
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def log_transfer_type(self):
@@ -115,6 +125,50 @@ class ListTransfersRequest:
         :type: str
         """
         self._log_stream_name = log_stream_name
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListTransfersRequest.
+
+        查询游标，初始传入0，后续从上一次的返回值中获取
+
+        :return: The offset of this ListTransfersRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListTransfersRequest.
+
+        查询游标，初始传入0，后续从上一次的返回值中获取
+
+        :param offset: The offset of this ListTransfersRequest.
+        :type: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListTransfersRequest.
+
+        每页数据量，最大值为100
+
+        :return: The limit of this ListTransfersRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListTransfersRequest.
+
+        每页数据量，最大值为100
+
+        :param limit: The limit of this ListTransfersRequest.
+        :type: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

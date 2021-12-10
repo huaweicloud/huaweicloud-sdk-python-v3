@@ -48,6 +48,71 @@ class CloudIDEAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def create_extension_authorization_async(self, request):
+        """设置ide实例对插件的授权
+
+        设置ide实例对插件的授权。同意、不同意、未知（下次重新询问）
+
+        :param CreateExtensionAuthorizationRequest request
+        :return: CreateExtensionAuthorizationResponse
+        """
+        return self.create_extension_authorization_with_http_info(request)
+
+    def create_extension_authorization_with_http_info(self, request):
+        """设置ide实例对插件的授权
+
+        设置ide实例对插件的授权。同意、不同意、未知（下次重新询问）
+
+        :param CreateExtensionAuthorizationRequest request
+        :return: CreateExtensionAuthorizationResponse
+        """
+
+        all_params = ['instance_id', 'create_extension_authorization_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/extension/authorization/{instance_id}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateExtensionAuthorizationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_project_templates_async(self, request):
         """查询技术栈模板工程
 
@@ -238,6 +303,73 @@ class CloudIDEAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_extension_authorization_async(self, request):
+        """查询ide实例对插件的授权情况
+
+        查询ide实例对插件的授权情况，同意授权的插件能在ide实例内携带登陆用户的token调用第三方服务
+
+        :param ShowExtensionAuthorizationRequest request
+        :return: ShowExtensionAuthorizationResponse
+        """
+        return self.show_extension_authorization_with_http_info(request)
+
+    def show_extension_authorization_with_http_info(self, request):
+        """查询ide实例对插件的授权情况
+
+        查询ide实例对插件的授权情况，同意授权的插件能在ide实例内携带登陆用户的token调用第三方服务
+
+        :param ShowExtensionAuthorizationRequest request
+        :return: ShowExtensionAuthorizationResponse
+        """
+
+        all_params = ['extension_version', 'identifier', 'instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'extension_version' in local_var_params:
+            query_params.append(('extension_version', local_var_params['extension_version']))
+        if 'identifier' in local_var_params:
+            query_params.append(('identifier', local_var_params['identifier']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/extension/authorization',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowExtensionAuthorizationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_price_async(self, request):
         """获取技术栈计费信息
 
@@ -293,6 +425,69 @@ class CloudIDEAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowPriceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def check_instance_access_async(self, request):
+        """查询用户是否有权限访问某个IDE实例
+
+        查询用户是否有权限访问某个IDE实例
+
+        :param CheckInstanceAccessRequest request
+        :return: CheckInstanceAccessResponse
+        """
+        return self.check_instance_access_with_http_info(request)
+
+    def check_instance_access_with_http_info(self, request):
+        """查询用户是否有权限访问某个IDE实例
+
+        查询用户是否有权限访问某个IDE实例
+
+        :param CheckInstanceAccessRequest request
+        :return: CheckInstanceAccessResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/instances/{instance_id}/access',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CheckInstanceAccessResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -951,6 +1146,69 @@ class CloudIDEAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_instance_activity_async(self, request):
+        """刷新IDE实例活跃状态
+
+        刷新IDE实例活跃状态，超过该实例设置的过期时间后实例自动关闭。
+
+        :param UpdateInstanceActivityRequest request
+        :return: UpdateInstanceActivityResponse
+        """
+        return self.update_instance_activity_with_http_info(request)
+
+    def update_instance_activity_with_http_info(self, request):
+        """刷新IDE实例活跃状态
+
+        刷新IDE实例活跃状态，超过该实例设置的过期时间后实例自动关闭。
+
+        :param UpdateInstanceActivityRequest request
+        :return: UpdateInstanceActivityResponse
+        """
+
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/instances/{instance_id}/activity',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateInstanceActivityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

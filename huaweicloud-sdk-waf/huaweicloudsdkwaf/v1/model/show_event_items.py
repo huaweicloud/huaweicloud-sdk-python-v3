@@ -30,7 +30,7 @@ class ShowEventItems:
         'attack': 'str',
         'rule': 'str',
         'action': 'str',
-        'cookie': 'object',
+        'cookie': 'str',
         'headers': 'str',
         'host_id': 'str',
         'id': 'str',
@@ -313,7 +313,7 @@ class ShowEventItems:
         攻击请求的cookie
 
         :return: The cookie of this ShowEventItems.
-        :rtype: object
+        :rtype: str
         """
         return self._cookie
 
@@ -324,7 +324,7 @@ class ShowEventItems:
         攻击请求的cookie
 
         :param cookie: The cookie of this ShowEventItems.
-        :type: object
+        :type: str
         """
         self._cookie = cookie
 

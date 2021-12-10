@@ -306,7 +306,7 @@ class MonthlyBillRes:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this MonthlyBillRes.
 
-        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填,，例如ECS的云服务类型编码为“hws.service.type.ec2”|
+        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填,，例如OBS的云服务类型编码为“hws.service.type.obs”|
 
         :return: The cloud_service_type of this MonthlyBillRes.
         :rtype: str
@@ -317,7 +317,7 @@ class MonthlyBillRes:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this MonthlyBillRes.
 
-        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填,，例如ECS的云服务类型编码为“hws.service.type.ec2”|
+        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填,，例如OBS的云服务类型编码为“hws.service.type.obs”|
 
         :param cloud_service_type: The cloud_service_type of this MonthlyBillRes.
         :type: str

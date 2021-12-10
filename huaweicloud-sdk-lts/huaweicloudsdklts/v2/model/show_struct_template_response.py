@@ -231,7 +231,6 @@ class ShowStructTemplateResponse(SdkResponse):
     def rule(self):
         """Gets the rule of this ShowStructTemplateResponse.
 
-        结构化方式
 
         :return: The rule of this ShowStructTemplateResponse.
         :rtype: ShowStructTemplateRule
@@ -242,7 +241,6 @@ class ShowStructTemplateResponse(SdkResponse):
     def rule(self, rule):
         """Sets the rule of this ShowStructTemplateResponse.
 
-        结构化方式
 
         :param rule: The rule of this ShowStructTemplateResponse.
         :type: ShowStructTemplateRule
@@ -253,7 +251,6 @@ class ShowStructTemplateResponse(SdkResponse):
     def cluster_info(self):
         """Gets the cluster_info of this ShowStructTemplateResponse.
 
-        kafka信息
 
         :return: The cluster_info of this ShowStructTemplateResponse.
         :rtype: ShowStructTemplateclusterInfo
@@ -264,7 +261,6 @@ class ShowStructTemplateResponse(SdkResponse):
     def cluster_info(self, cluster_info):
         """Sets the cluster_info of this ShowStructTemplateResponse.
 
-        kafka信息
 
         :param cluster_info: The cluster_info of this ShowStructTemplateResponse.
         :type: ShowStructTemplateclusterInfo

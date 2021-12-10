@@ -112,7 +112,7 @@ class DemandProductInfo:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this DemandProductInfo.
 
-        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :return: The cloud_service_type of this DemandProductInfo.
         :rtype: str
@@ -123,7 +123,7 @@ class DemandProductInfo:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this DemandProductInfo.
 
-        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param cloud_service_type: The cloud_service_type of this DemandProductInfo.
         :type: str

@@ -10,9 +10,6 @@ from huaweicloudsdkges.v1.model.attach_eip_request import AttachEipRequest
 from huaweicloudsdkges.v1.model.attach_eip_response import AttachEipResponse
 from huaweicloudsdkges.v1.model.backup import Backup
 from huaweicloudsdkges.v1.model.bind_eip_req import BindEipReq
-from huaweicloudsdkges.v1.model.check_metadata_req import CheckMetadataReq
-from huaweicloudsdkges.v1.model.check_metadata_request import CheckMetadataRequest
-from huaweicloudsdkges.v1.model.check_metadata_response import CheckMetadataResponse
 from huaweicloudsdkges.v1.model.clear_graph_request import ClearGraphRequest
 from huaweicloudsdkges.v1.model.clear_graph_response import ClearGraphResponse
 from huaweicloudsdkges.v1.model.create_backup_request import CreateBackupRequest

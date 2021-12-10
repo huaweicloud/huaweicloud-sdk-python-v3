@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class QueryLTSStructLogParams:
+class QueryLtsStructLogParams:
 
 
     """
@@ -36,7 +36,7 @@ class QueryLTSStructLogParams:
     }
 
     def __init__(self, start_time=None, end_time=None, sql_expression=None, original_content=None):
-        """QueryLTSStructLogParams - a model defined in huaweicloud sdk"""
+        """QueryLtsStructLogParams - a model defined in huaweicloud sdk"""
         
         
 
@@ -55,88 +55,88 @@ class QueryLTSStructLogParams:
 
     @property
     def start_time(self):
-        """Gets the start_time of this QueryLTSStructLogParams.
+        """Gets the start_time of this QueryLtsStructLogParams.
 
         搜索起始时间（UTC时间，毫秒级）。
 
-        :return: The start_time of this QueryLTSStructLogParams.
+        :return: The start_time of this QueryLtsStructLogParams.
         :rtype: str
         """
         return self._start_time
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this QueryLTSStructLogParams.
+        """Sets the start_time of this QueryLtsStructLogParams.
 
         搜索起始时间（UTC时间，毫秒级）。
 
-        :param start_time: The start_time of this QueryLTSStructLogParams.
+        :param start_time: The start_time of this QueryLtsStructLogParams.
         :type: str
         """
         self._start_time = start_time
 
     @property
     def end_time(self):
-        """Gets the end_time of this QueryLTSStructLogParams.
+        """Gets the end_time of this QueryLtsStructLogParams.
 
         搜索结束时间（UTC时间，毫秒级）。
 
-        :return: The end_time of this QueryLTSStructLogParams.
+        :return: The end_time of this QueryLtsStructLogParams.
         :rtype: str
         """
         return self._end_time
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this QueryLTSStructLogParams.
+        """Sets the end_time of this QueryLtsStructLogParams.
 
         搜索结束时间（UTC时间，毫秒级）。
 
-        :param end_time: The end_time of this QueryLTSStructLogParams.
+        :param end_time: The end_time of this QueryLtsStructLogParams.
         :type: str
         """
         self._end_time = end_time
 
     @property
     def sql_expression(self):
-        """Gets the sql_expression of this QueryLTSStructLogParams.
+        """Gets the sql_expression of this QueryLtsStructLogParams.
 
         支持SQL语句搜索， 目前支持\"GROUP BY\", \"LIKE\"和\"WHERE\"。
 
-        :return: The sql_expression of this QueryLTSStructLogParams.
+        :return: The sql_expression of this QueryLtsStructLogParams.
         :rtype: str
         """
         return self._sql_expression
 
     @sql_expression.setter
     def sql_expression(self, sql_expression):
-        """Sets the sql_expression of this QueryLTSStructLogParams.
+        """Sets the sql_expression of this QueryLtsStructLogParams.
 
         支持SQL语句搜索， 目前支持\"GROUP BY\", \"LIKE\"和\"WHERE\"。
 
-        :param sql_expression: The sql_expression of this QueryLTSStructLogParams.
+        :param sql_expression: The sql_expression of this QueryLtsStructLogParams.
         :type: str
         """
         self._sql_expression = sql_expression
 
     @property
     def original_content(self):
-        """Gets the original_content of this QueryLTSStructLogParams.
+        """Gets the original_content of this QueryLtsStructLogParams.
 
         返回内容中是否包含原始日志， 默认为false。
 
-        :return: The original_content of this QueryLTSStructLogParams.
+        :return: The original_content of this QueryLtsStructLogParams.
         :rtype: bool
         """
         return self._original_content
 
     @original_content.setter
     def original_content(self, original_content):
-        """Sets the original_content of this QueryLTSStructLogParams.
+        """Sets the original_content of this QueryLtsStructLogParams.
 
         返回内容中是否包含原始日志， 默认为false。
 
-        :param original_content: The original_content of this QueryLTSStructLogParams.
+        :param original_content: The original_content of this QueryLtsStructLogParams.
         :type: bool
         """
         self._original_content = original_content
@@ -183,7 +183,7 @@ class QueryLTSStructLogParams:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, QueryLTSStructLogParams):
+        if not isinstance(other, QueryLtsStructLogParams):
             return False
 
         return self.__dict__ == other.__dict__

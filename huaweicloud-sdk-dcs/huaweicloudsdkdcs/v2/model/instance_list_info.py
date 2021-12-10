@@ -51,6 +51,7 @@ class InstanceListInfo:
         'user_id': 'str',
         'user_name': 'str',
         'domain_name': 'str',
+        'readonly_domain_name': 'str',
         'name': 'str',
         'spec_code': 'str',
         'status': 'str',
@@ -91,6 +92,7 @@ class InstanceListInfo:
         'user_id': 'user_id',
         'user_name': 'user_name',
         'domain_name': 'domain_name',
+        'readonly_domain_name': 'readonly_domain_name',
         'name': 'name',
         'spec_code': 'spec_code',
         'status': 'status',
@@ -101,7 +103,7 @@ class InstanceListInfo:
         'az_codes': 'az_codes'
     }
 
-    def __init__(self, publicip_id=None, vpc_name=None, charging_mode=None, vpc_id=None, subnet_id=None, security_group_id=None, created_at=None, enable_ssl=None, max_memory=None, used_memory=None, publicip_address=None, capacity=None, capacity_minor=None, order_id=None, maintain_begin=None, maintain_end=None, engine=None, engine_version=None, service_upgrade=None, no_password_access=None, service_task_id=None, ip=None, access_user=None, instance_id=None, enable_publicip=None, port=None, user_id=None, user_name=None, domain_name=None, name=None, spec_code=None, status=None, tags=None, enterprise_project_id=None, description=None, cpu_type=None, az_codes=None):
+    def __init__(self, publicip_id=None, vpc_name=None, charging_mode=None, vpc_id=None, subnet_id=None, security_group_id=None, created_at=None, enable_ssl=None, max_memory=None, used_memory=None, publicip_address=None, capacity=None, capacity_minor=None, order_id=None, maintain_begin=None, maintain_end=None, engine=None, engine_version=None, service_upgrade=None, no_password_access=None, service_task_id=None, ip=None, access_user=None, instance_id=None, enable_publicip=None, port=None, user_id=None, user_name=None, domain_name=None, readonly_domain_name=None, name=None, spec_code=None, status=None, tags=None, enterprise_project_id=None, description=None, cpu_type=None, az_codes=None):
         """InstanceListInfo - a model defined in huaweicloud sdk"""
         
         
@@ -135,6 +137,7 @@ class InstanceListInfo:
         self._user_id = None
         self._user_name = None
         self._domain_name = None
+        self._readonly_domain_name = None
         self._name = None
         self._spec_code = None
         self._status = None
@@ -203,6 +206,8 @@ class InstanceListInfo:
             self.user_name = user_name
         if domain_name is not None:
             self.domain_name = domain_name
+        if readonly_domain_name is not None:
+            self.readonly_domain_name = readonly_domain_name
         if name is not None:
             self.name = name
         if spec_code is not None:
@@ -857,6 +862,28 @@ class InstanceListInfo:
         :type: str
         """
         self._domain_name = domain_name
+
+    @property
+    def readonly_domain_name(self):
+        """Gets the readonly_domain_name of this InstanceListInfo.
+
+        实例的只读域名，只有主备实例有该字段。
+
+        :return: The readonly_domain_name of this InstanceListInfo.
+        :rtype: str
+        """
+        return self._readonly_domain_name
+
+    @readonly_domain_name.setter
+    def readonly_domain_name(self, readonly_domain_name):
+        """Sets the readonly_domain_name of this InstanceListInfo.
+
+        实例的只读域名，只有主备实例有该字段。
+
+        :param readonly_domain_name: The readonly_domain_name of this InstanceListInfo.
+        :type: str
+        """
+        self._readonly_domain_name = readonly_domain_name
 
     @property
     def name(self):

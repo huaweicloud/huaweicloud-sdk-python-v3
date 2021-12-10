@@ -26,6 +26,7 @@ class StructFieldInfo:
         'content': 'str',
         'field_name': 'str',
         'type': 'str',
+        'user_defined_name': 'str',
         'index': 'int'
     }
 
@@ -34,10 +35,11 @@ class StructFieldInfo:
         'content': 'content',
         'field_name': 'fieldName',
         'type': 'type',
+        'user_defined_name': 'userDefinedName',
         'index': 'index'
     }
 
-    def __init__(self, is_analysis=None, content=None, field_name=None, type=None, index=None):
+    def __init__(self, is_analysis=None, content=None, field_name=None, type=None, user_defined_name=None, index=None):
         """StructFieldInfo - a model defined in huaweicloud sdk"""
         
         
@@ -46,6 +48,7 @@ class StructFieldInfo:
         self._content = None
         self._field_name = None
         self._type = None
+        self._user_defined_name = None
         self._index = None
         self.discriminator = None
 
@@ -55,6 +58,8 @@ class StructFieldInfo:
         if field_name is not None:
             self.field_name = field_name
         self.type = type
+        if user_defined_name is not None:
+            self.user_defined_name = user_defined_name
         if index is not None:
             self.index = index
 
@@ -128,7 +133,7 @@ class StructFieldInfo:
     def type(self):
         """Gets the type of this StructFieldInfo.
 
-        字段数据类型
+        字段数据类型,例：string，long，float
 
         :return: The type of this StructFieldInfo.
         :rtype: str
@@ -139,12 +144,34 @@ class StructFieldInfo:
     def type(self, type):
         """Sets the type of this StructFieldInfo.
 
-        字段数据类型
+        字段数据类型,例：string，long，float
 
         :param type: The type of this StructFieldInfo.
         :type: str
         """
         self._type = type
+
+    @property
+    def user_defined_name(self):
+        """Gets the user_defined_name of this StructFieldInfo.
+
+        自定义别名(json方式中按需添加)
+
+        :return: The user_defined_name of this StructFieldInfo.
+        :rtype: str
+        """
+        return self._user_defined_name
+
+    @user_defined_name.setter
+    def user_defined_name(self, user_defined_name):
+        """Sets the user_defined_name of this StructFieldInfo.
+
+        自定义别名(json方式中按需添加)
+
+        :param user_defined_name: The user_defined_name of this StructFieldInfo.
+        :type: str
+        """
+        self._user_defined_name = user_defined_name
 
     @property
     def index(self):

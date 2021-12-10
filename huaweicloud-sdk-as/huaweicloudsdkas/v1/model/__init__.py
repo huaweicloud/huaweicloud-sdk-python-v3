@@ -5,6 +5,7 @@ from __future__ import absolute_import
 # import models into model package
 from huaweicloudsdkas.v1.model.all_quotas import AllQuotas
 from huaweicloudsdkas.v1.model.all_resources import AllResources
+from huaweicloudsdkas.v1.model.allowed_address_pair import AllowedAddressPair
 from huaweicloudsdkas.v1.model.attach_callback_instance_life_cycle_hook_request import AttachCallbackInstanceLifeCycleHookRequest
 from huaweicloudsdkas.v1.model.attach_callback_instance_life_cycle_hook_response import AttachCallbackInstanceLifeCycleHookResponse
 from huaweicloudsdkas.v1.model.bandwidth_info import BandwidthInfo

@@ -22,22 +22,27 @@ class CreateLogStreamParams:
     sensitive_list = []
 
     openapi_types = {
-        'log_stream_name': 'str'
+        'log_stream_name': 'str',
+        'enterprise_project_name': 'str'
     }
 
     attribute_map = {
-        'log_stream_name': 'log_stream_name'
+        'log_stream_name': 'log_stream_name',
+        'enterprise_project_name': 'enterprise_project_name'
     }
 
-    def __init__(self, log_stream_name=None):
+    def __init__(self, log_stream_name=None, enterprise_project_name=None):
         """CreateLogStreamParams - a model defined in huaweicloud sdk"""
         
         
 
         self._log_stream_name = None
+        self._enterprise_project_name = None
         self.discriminator = None
 
         self.log_stream_name = log_stream_name
+        if enterprise_project_name is not None:
+            self.enterprise_project_name = enterprise_project_name
 
     @property
     def log_stream_name(self):
@@ -60,6 +65,28 @@ class CreateLogStreamParams:
         :type: str
         """
         self._log_stream_name = log_stream_name
+
+    @property
+    def enterprise_project_name(self):
+        """Gets the enterprise_project_name of this CreateLogStreamParams.
+
+        企业项目名称。
+
+        :return: The enterprise_project_name of this CreateLogStreamParams.
+        :rtype: str
+        """
+        return self._enterprise_project_name
+
+    @enterprise_project_name.setter
+    def enterprise_project_name(self, enterprise_project_name):
+        """Sets the enterprise_project_name of this CreateLogStreamParams.
+
+        企业项目名称。
+
+        :param enterprise_project_name: The enterprise_project_name of this CreateLogStreamParams.
+        :type: str
+        """
+        self._enterprise_project_name = enterprise_project_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -25,6 +25,7 @@ class ImportKeyMaterialRequestBody:
         'key_id': 'str',
         'import_token': 'str',
         'encrypted_key_material': 'str',
+        'encrypted_privatekey': 'str',
         'expiration_time': 'int',
         'sequence': 'str'
     }
@@ -33,11 +34,12 @@ class ImportKeyMaterialRequestBody:
         'key_id': 'key_id',
         'import_token': 'import_token',
         'encrypted_key_material': 'encrypted_key_material',
+        'encrypted_privatekey': 'encrypted_privatekey',
         'expiration_time': 'expiration_time',
         'sequence': 'sequence'
     }
 
-    def __init__(self, key_id=None, import_token=None, encrypted_key_material=None, expiration_time=None, sequence=None):
+    def __init__(self, key_id=None, import_token=None, encrypted_key_material=None, encrypted_privatekey=None, expiration_time=None, sequence=None):
         """ImportKeyMaterialRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -45,6 +47,7 @@ class ImportKeyMaterialRequestBody:
         self._key_id = None
         self._import_token = None
         self._encrypted_key_material = None
+        self._encrypted_privatekey = None
         self._expiration_time = None
         self._sequence = None
         self.discriminator = None
@@ -52,6 +55,8 @@ class ImportKeyMaterialRequestBody:
         self.key_id = key_id
         self.import_token = import_token
         self.encrypted_key_material = encrypted_key_material
+        if encrypted_privatekey is not None:
+            self.encrypted_privatekey = encrypted_privatekey
         if expiration_time is not None:
             self.expiration_time = expiration_time
         if sequence is not None:
@@ -105,7 +110,7 @@ class ImportKeyMaterialRequestBody:
     def encrypted_key_material(self):
         """Gets the encrypted_key_material of this ImportKeyMaterialRequestBody.
 
-        加密后的密钥材料，base64格式，满足正则匹配“^[0-9a-zA-Z+/=]{344,360}$”。
+        加密后的对称密钥材料，base64格式，满足正则匹配“^[0-9a-zA-Z+/=]{344,360}$”。若导入非对称密钥，则该参数为用于加密私钥的临时中间密钥。
 
         :return: The encrypted_key_material of this ImportKeyMaterialRequestBody.
         :rtype: str
@@ -116,12 +121,34 @@ class ImportKeyMaterialRequestBody:
     def encrypted_key_material(self, encrypted_key_material):
         """Sets the encrypted_key_material of this ImportKeyMaterialRequestBody.
 
-        加密后的密钥材料，base64格式，满足正则匹配“^[0-9a-zA-Z+/=]{344,360}$”。
+        加密后的对称密钥材料，base64格式，满足正则匹配“^[0-9a-zA-Z+/=]{344,360}$”。若导入非对称密钥，则该参数为用于加密私钥的临时中间密钥。
 
         :param encrypted_key_material: The encrypted_key_material of this ImportKeyMaterialRequestBody.
         :type: str
         """
         self._encrypted_key_material = encrypted_key_material
+
+    @property
+    def encrypted_privatekey(self):
+        """Gets the encrypted_privatekey of this ImportKeyMaterialRequestBody.
+
+        使用临时中间密钥加密后的私钥，导入非对称密钥需要该参数，base64格式，满足正则匹配“^[0-9a-zA-Z+/=]{200,6144}$”。
+
+        :return: The encrypted_privatekey of this ImportKeyMaterialRequestBody.
+        :rtype: str
+        """
+        return self._encrypted_privatekey
+
+    @encrypted_privatekey.setter
+    def encrypted_privatekey(self, encrypted_privatekey):
+        """Sets the encrypted_privatekey of this ImportKeyMaterialRequestBody.
+
+        使用临时中间密钥加密后的私钥，导入非对称密钥需要该参数，base64格式，满足正则匹配“^[0-9a-zA-Z+/=]{200,6144}$”。
+
+        :param encrypted_privatekey: The encrypted_privatekey of this ImportKeyMaterialRequestBody.
+        :type: str
+        """
+        self._encrypted_privatekey = encrypted_privatekey
 
     @property
     def expiration_time(self):

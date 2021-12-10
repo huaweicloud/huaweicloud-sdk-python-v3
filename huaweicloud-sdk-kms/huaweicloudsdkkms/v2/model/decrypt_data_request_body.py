@@ -58,7 +58,7 @@ class DecryptDataRequestBody:
     def cipher_text(self):
         """Gets the cipher_text of this DecryptDataRequestBody.
 
-        被加密数据密文。取值为加密数据结果中的cipher_text的值，满足正则匹配“^[0-9a-zA-Z+/=]{188,5648}$”。
+        被加密数据密文。取值为加密数据结果中的cipher_text的值，满足正则匹配“^[0-9a-zA-Z+/=]{128,5648}$”。
 
         :return: The cipher_text of this DecryptDataRequestBody.
         :rtype: str
@@ -69,7 +69,7 @@ class DecryptDataRequestBody:
     def cipher_text(self, cipher_text):
         """Sets the cipher_text of this DecryptDataRequestBody.
 
-        被加密数据密文。取值为加密数据结果中的cipher_text的值，满足正则匹配“^[0-9a-zA-Z+/=]{188,5648}$”。
+        被加密数据密文。取值为加密数据结果中的cipher_text的值，满足正则匹配“^[0-9a-zA-Z+/=]{128,5648}$”。
 
         :param cipher_text: The cipher_text of this DecryptDataRequestBody.
         :type: str

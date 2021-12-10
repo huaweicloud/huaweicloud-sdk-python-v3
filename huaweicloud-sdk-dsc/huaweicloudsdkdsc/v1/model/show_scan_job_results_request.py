@@ -23,7 +23,7 @@ class ShowScanJobResultsRequest:
 
     openapi_types = {
         'job_id': 'str',
-        'page': 'int',
+        'offset': 'int',
         'limit': 'int',
         'type': 'str',
         'start_time': 'str',
@@ -32,20 +32,20 @@ class ShowScanJobResultsRequest:
 
     attribute_map = {
         'job_id': 'job_id',
-        'page': 'page',
+        'offset': 'offset',
         'limit': 'limit',
         'type': 'type',
         'start_time': 'start_time',
         'end_time': 'end_time'
     }
 
-    def __init__(self, job_id=None, page=None, limit=None, type=None, start_time=None, end_time=None):
+    def __init__(self, job_id=None, offset=None, limit=None, type=None, start_time=None, end_time=None):
         """ShowScanJobResultsRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._job_id = None
-        self._page = None
+        self._offset = None
         self._limit = None
         self._type = None
         self._start_time = None
@@ -53,8 +53,8 @@ class ShowScanJobResultsRequest:
         self.discriminator = None
 
         self.job_id = job_id
-        if page is not None:
-            self.page = page
+        if offset is not None:
+            self.offset = offset
         if limit is not None:
             self.limit = limit
         if type is not None:
@@ -87,26 +87,26 @@ class ShowScanJobResultsRequest:
         self._job_id = job_id
 
     @property
-    def page(self):
-        """Gets the page of this ShowScanJobResultsRequest.
+    def offset(self):
+        """Gets the offset of this ShowScanJobResultsRequest.
 
         页码
 
-        :return: The page of this ShowScanJobResultsRequest.
+        :return: The offset of this ShowScanJobResultsRequest.
         :rtype: int
         """
-        return self._page
+        return self._offset
 
-    @page.setter
-    def page(self, page):
-        """Sets the page of this ShowScanJobResultsRequest.
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ShowScanJobResultsRequest.
 
         页码
 
-        :param page: The page of this ShowScanJobResultsRequest.
+        :param offset: The offset of this ShowScanJobResultsRequest.
         :type: int
         """
-        self._page = page
+        self._offset = offset
 
     @property
     def limit(self):

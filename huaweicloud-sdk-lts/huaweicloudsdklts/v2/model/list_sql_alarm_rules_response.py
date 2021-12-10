@@ -22,45 +22,45 @@ class ListSqlAlarmRulesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'sql_alarm_rule': 'list[SqlAlarmRuleRespList]'
+        'sql_alarm_rules': 'list[SqlAlarmRuleRespList]'
     }
 
     attribute_map = {
-        'sql_alarm_rule': 'sql_alarm_rule'
+        'sql_alarm_rules': 'sql_alarm_rules'
     }
 
-    def __init__(self, sql_alarm_rule=None):
+    def __init__(self, sql_alarm_rules=None):
         """ListSqlAlarmRulesResponse - a model defined in huaweicloud sdk"""
         
         super(ListSqlAlarmRulesResponse, self).__init__()
 
-        self._sql_alarm_rule = None
+        self._sql_alarm_rules = None
         self.discriminator = None
 
-        if sql_alarm_rule is not None:
-            self.sql_alarm_rule = sql_alarm_rule
+        if sql_alarm_rules is not None:
+            self.sql_alarm_rules = sql_alarm_rules
 
     @property
-    def sql_alarm_rule(self):
-        """Gets the sql_alarm_rule of this ListSqlAlarmRulesResponse.
+    def sql_alarm_rules(self):
+        """Gets the sql_alarm_rules of this ListSqlAlarmRulesResponse.
 
         SQL告警
 
-        :return: The sql_alarm_rule of this ListSqlAlarmRulesResponse.
+        :return: The sql_alarm_rules of this ListSqlAlarmRulesResponse.
         :rtype: list[SqlAlarmRuleRespList]
         """
-        return self._sql_alarm_rule
+        return self._sql_alarm_rules
 
-    @sql_alarm_rule.setter
-    def sql_alarm_rule(self, sql_alarm_rule):
-        """Sets the sql_alarm_rule of this ListSqlAlarmRulesResponse.
+    @sql_alarm_rules.setter
+    def sql_alarm_rules(self, sql_alarm_rules):
+        """Sets the sql_alarm_rules of this ListSqlAlarmRulesResponse.
 
         SQL告警
 
-        :param sql_alarm_rule: The sql_alarm_rule of this ListSqlAlarmRulesResponse.
+        :param sql_alarm_rules: The sql_alarm_rules of this ListSqlAlarmRulesResponse.
         :type: list[SqlAlarmRuleRespList]
         """
-        self._sql_alarm_rule = sql_alarm_rule
+        self._sql_alarm_rules = sql_alarm_rules
 
     def to_dict(self):
         """Returns the model properties as a dict"""

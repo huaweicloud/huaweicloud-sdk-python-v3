@@ -22,16 +22,99 @@ class RestartInstanceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'instance_id': 'str',
+        'instance_name': 'str',
+        'job_id': 'str'
     }
 
     attribute_map = {
+        'instance_id': 'instanceId',
+        'instance_name': 'instanceName',
+        'job_id': 'jobId'
     }
 
-    def __init__(self):
+    def __init__(self, instance_id=None, instance_name=None, job_id=None):
         """RestartInstanceResponse - a model defined in huaweicloud sdk"""
         
         super(RestartInstanceResponse, self).__init__()
+
+        self._instance_id = None
+        self._instance_name = None
+        self._job_id = None
         self.discriminator = None
+
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if instance_name is not None:
+            self.instance_name = instance_name
+        if job_id is not None:
+            self.job_id = job_id
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this RestartInstanceResponse.
+
+        DDM实例ID。
+
+        :return: The instance_id of this RestartInstanceResponse.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this RestartInstanceResponse.
+
+        DDM实例ID。
+
+        :param instance_id: The instance_id of this RestartInstanceResponse.
+        :type: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def instance_name(self):
+        """Gets the instance_name of this RestartInstanceResponse.
+
+        DDM实例名称。
+
+        :return: The instance_name of this RestartInstanceResponse.
+        :rtype: str
+        """
+        return self._instance_name
+
+    @instance_name.setter
+    def instance_name(self, instance_name):
+        """Sets the instance_name of this RestartInstanceResponse.
+
+        DDM实例名称。
+
+        :param instance_name: The instance_name of this RestartInstanceResponse.
+        :type: str
+        """
+        self._instance_name = instance_name
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this RestartInstanceResponse.
+
+        任务ID。
+
+        :return: The job_id of this RestartInstanceResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this RestartInstanceResponse.
+
+        任务ID。
+
+        :param job_id: The job_id of this RestartInstanceResponse.
+        :type: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

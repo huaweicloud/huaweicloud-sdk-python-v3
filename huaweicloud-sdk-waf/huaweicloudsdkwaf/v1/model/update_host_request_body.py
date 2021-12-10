@@ -135,7 +135,7 @@ class UpdateHostRequestBody:
     def server(self):
         """Gets the server of this UpdateHostRequestBody.
 
-        独享模式回源服务器配置
+        服务器配置
 
         :return: The server of this UpdateHostRequestBody.
         :rtype: list[UpdateCloudWafServer]
@@ -146,7 +146,7 @@ class UpdateHostRequestBody:
     def server(self, server):
         """Sets the server of this UpdateHostRequestBody.
 
-        独享模式回源服务器配置
+        服务器配置
 
         :param server: The server of this UpdateHostRequestBody.
         :type: list[UpdateCloudWafServer]

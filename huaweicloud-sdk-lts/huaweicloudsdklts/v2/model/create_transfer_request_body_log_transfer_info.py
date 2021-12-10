@@ -172,7 +172,6 @@ class CreateTransferRequestBodyLogTransferInfo:
     def log_transfer_detail(self):
         """Gets the log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
 
-        日志转储详细信息
 
         :return: The log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
         :rtype: TransferDetail
@@ -183,7 +182,6 @@ class CreateTransferRequestBodyLogTransferInfo:
     def log_transfer_detail(self, log_transfer_detail):
         """Sets the log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
 
-        日志转储详细信息
 
         :param log_transfer_detail: The log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
         :type: TransferDetail

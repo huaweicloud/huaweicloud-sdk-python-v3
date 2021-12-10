@@ -81,7 +81,7 @@ class RoleAction:
     def actions(self):
         """Gets the actions of this RoleAction.
 
-        执行动作
+        执行动作 。 - CREATE_INSTANCE 创建实例 - DELETE_INSTANCE 删除实例 - UPDATE_INSTANCE 修改实例 - QUERY_INSTANCE 查询实例列表 - RUN_INSTANCE 运行实例 - CREATE_SUB_ORG 创建子组织 - UPDATE_SUB_ORG 修改子组织 - DELETE_SUB_ORG 删除子组织 - QUERY_SUB_ORG 查询子组织列表 - ADD_USER_TO_ORG 新增组织中用户 - SET_USER_ROLES 设置用户角色 - DELETE_USER_IN_ORG 删除组织中用户 - QUERY_USER_IN_ORG 查询组织中用户列表
 
         :return: The actions of this RoleAction.
         :rtype: str
@@ -92,7 +92,7 @@ class RoleAction:
     def actions(self, actions):
         """Sets the actions of this RoleAction.
 
-        执行动作
+        执行动作 。 - CREATE_INSTANCE 创建实例 - DELETE_INSTANCE 删除实例 - UPDATE_INSTANCE 修改实例 - QUERY_INSTANCE 查询实例列表 - RUN_INSTANCE 运行实例 - CREATE_SUB_ORG 创建子组织 - UPDATE_SUB_ORG 修改子组织 - DELETE_SUB_ORG 删除子组织 - QUERY_SUB_ORG 查询子组织列表 - ADD_USER_TO_ORG 新增组织中用户 - SET_USER_ROLES 设置用户角色 - DELETE_USER_IN_ORG 删除组织中用户 - QUERY_USER_IN_ORG 查询组织中用户列表
 
         :param actions: The actions of this RoleAction.
         :type: str

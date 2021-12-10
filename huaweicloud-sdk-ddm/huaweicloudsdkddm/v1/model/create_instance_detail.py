@@ -31,7 +31,8 @@ class CreateInstanceDetail:
         'vpc_id': 'str',
         'security_group_id': 'str',
         'subnet_id': 'str',
-        'param_group_id': 'str'
+        'param_group_id': 'str',
+        'time_zone': 'str'
     }
 
     attribute_map = {
@@ -44,10 +45,11 @@ class CreateInstanceDetail:
         'vpc_id': 'vpc_id',
         'security_group_id': 'security_group_id',
         'subnet_id': 'subnet_id',
-        'param_group_id': 'param_group_id'
+        'param_group_id': 'param_group_id',
+        'time_zone': 'time_zone'
     }
 
-    def __init__(self, name=None, flavor_id=None, node_num=None, engine_id=None, enterprise_project_id=None, available_zones=None, vpc_id=None, security_group_id=None, subnet_id=None, param_group_id=None):
+    def __init__(self, name=None, flavor_id=None, node_num=None, engine_id=None, enterprise_project_id=None, available_zones=None, vpc_id=None, security_group_id=None, subnet_id=None, param_group_id=None, time_zone=None):
         """CreateInstanceDetail - a model defined in huaweicloud sdk"""
         
         
@@ -62,6 +64,7 @@ class CreateInstanceDetail:
         self._security_group_id = None
         self._subnet_id = None
         self._param_group_id = None
+        self._time_zone = None
         self.discriminator = None
 
         self.name = name
@@ -76,6 +79,8 @@ class CreateInstanceDetail:
         self.subnet_id = subnet_id
         if param_group_id is not None:
             self.param_group_id = param_group_id
+        if time_zone is not None:
+            self.time_zone = time_zone
 
     @property
     def name(self):
@@ -296,6 +301,28 @@ class CreateInstanceDetail:
         :type: str
         """
         self._param_group_id = param_group_id
+
+    @property
+    def time_zone(self):
+        """Gets the time_zone of this CreateInstanceDetail.
+
+        UTC时区。默认为UTC。取值范围：\"UTC\",\"UTC-12:00\",\"UTC-11:00\",\"UTC-10:00\",\"UTC-09:00\", \"UTC-08:00\", \"UTC-07:00\", \"UTC-06:00\", \"UTC-05:00\", \"UTC-04:00\", \"UTC-03:00\", \"UTC-02:00\", \"UTC-01:00\", \"UTC+01:00\", \"UTC+02:00\", \"UTC+03:00\", \"UTC+04:00\", \"UTC+05:00\", \"UTC+06:00\", \"UTC+07:00\", \"UTC+08:00\", \"UTC+09:00\", \"UTC+10:00\", \"UTC+11:00\", \"UTC+12:00\"
+
+        :return: The time_zone of this CreateInstanceDetail.
+        :rtype: str
+        """
+        return self._time_zone
+
+    @time_zone.setter
+    def time_zone(self, time_zone):
+        """Sets the time_zone of this CreateInstanceDetail.
+
+        UTC时区。默认为UTC。取值范围：\"UTC\",\"UTC-12:00\",\"UTC-11:00\",\"UTC-10:00\",\"UTC-09:00\", \"UTC-08:00\", \"UTC-07:00\", \"UTC-06:00\", \"UTC-05:00\", \"UTC-04:00\", \"UTC-03:00\", \"UTC-02:00\", \"UTC-01:00\", \"UTC+01:00\", \"UTC+02:00\", \"UTC+03:00\", \"UTC+04:00\", \"UTC+05:00\", \"UTC+06:00\", \"UTC+07:00\", \"UTC+08:00\", \"UTC+09:00\", \"UTC+10:00\", \"UTC+11:00\", \"UTC+12:00\"
+
+        :param time_zone: The time_zone of this CreateInstanceDetail.
+        :type: str
+        """
+        self._time_zone = time_zone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

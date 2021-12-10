@@ -57,10 +57,8 @@ class ListTopAbnormalRequest:
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if _from is not None:
-            self._from = _from
-        if to is not None:
-            self.to = to
+        self._from = _from
+        self.to = to
         if top is not None:
             self.top = top
         if code is not None:

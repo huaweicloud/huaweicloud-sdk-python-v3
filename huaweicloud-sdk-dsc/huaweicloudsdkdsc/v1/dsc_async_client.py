@@ -193,7 +193,7 @@ class DscAsyncClient(Client):
         :return: CreateDocWatermarkResponse
         """
 
-        all_params = ['doc_type', 'file', 'file_password', 'marked_file_password', 'visible_watermark', 'font_size', 'rotation', 'opacity', 'blind_watermark', 'image_mark', 'visible_type']
+        all_params = ['doc_type', 'file', 'file_password', 'marked_file_password', 'readonly_password', 'visible_watermark', 'font_size', 'rotation', 'opacity', 'blind_watermark', 'image_mark', 'visible_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -214,6 +214,8 @@ class DscAsyncClient(Client):
             form_params['file_password'] = local_var_params['file_password']
         if 'marked_file_password' in local_var_params:
             form_params['marked_file_password'] = local_var_params['marked_file_password']
+        if 'readonly_password' in local_var_params:
+            form_params['readonly_password'] = local_var_params['readonly_password']
         if 'visible_watermark' in local_var_params:
             form_params['visible_watermark'] = local_var_params['visible_watermark']
         if 'font_size' in local_var_params:
@@ -544,7 +546,7 @@ class DscAsyncClient(Client):
         :return: ShowScanJobResultsResponse
         """
 
-        all_params = ['job_id', 'page', 'limit', 'type', 'start_time', 'end_time']
+        all_params = ['job_id', 'offset', 'limit', 'type', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -557,8 +559,8 @@ class DscAsyncClient(Client):
             path_params['job_id'] = local_var_params['job_id']
 
         query_params = []
-        if 'page' in local_var_params:
-            query_params.append(('page', local_var_params['page']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'type' in local_var_params:
@@ -617,7 +619,7 @@ class DscAsyncClient(Client):
         :return: ShowScanJobsResponse
         """
 
-        all_params = ['page', 'limit', 'content', 'start_time', 'end_time']
+        all_params = ['offset', 'limit', 'content', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -628,8 +630,8 @@ class DscAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'page' in local_var_params:
-            query_params.append(('page', local_var_params['page']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'content' in local_var_params:
@@ -663,6 +665,77 @@ class DscAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowScanJobsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_open_api_called_records_async(self, request):
+        """查询OpenApi调用记录
+
+        查询OpenApi调用记录
+
+        :param ShowOpenApiCalledRecordsRequest request
+        :return: ShowOpenApiCalledRecordsResponse
+        """
+        return self.show_open_api_called_records_with_http_info(request)
+
+    def show_open_api_called_records_with_http_info(self, request):
+        """查询OpenApi调用记录
+
+        查询OpenApi调用记录
+
+        :param ShowOpenApiCalledRecordsRequest request
+        :return: ShowOpenApiCalledRecordsResponse
+        """
+
+        all_params = ['limit', 'called_url', 'start_time', 'end_time', 'marker']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'called_url' in local_var_params:
+            query_params.append(('called_url', local_var_params['called_url']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/openapi/called-records',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowOpenApiCalledRecordsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

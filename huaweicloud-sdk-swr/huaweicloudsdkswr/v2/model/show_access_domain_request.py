@@ -95,7 +95,7 @@ class ShowAccessDomainRequest:
     def access_domain(self):
         """Gets the access_domain of this ShowAccessDomainRequest.
 
-        共享账号
+        共享帐号
 
         :return: The access_domain of this ShowAccessDomainRequest.
         :rtype: str
@@ -106,7 +106,7 @@ class ShowAccessDomainRequest:
     def access_domain(self, access_domain):
         """Sets the access_domain of this ShowAccessDomainRequest.
 
-        共享账号
+        共享帐号
 
         :param access_domain: The access_domain of this ShowAccessDomainRequest.
         :type: str

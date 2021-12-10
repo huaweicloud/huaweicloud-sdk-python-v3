@@ -22,16 +22,72 @@ class ShowBlockchainFlavorsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self):
+    def __init__(self, limit=None, offset=None):
         """ShowBlockchainFlavorsRequest - a model defined in huaweicloud sdk"""
         
         
+
+        self._limit = None
+        self._offset = None
         self.discriminator = None
+
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ShowBlockchainFlavorsRequest.
+
+        取值范围(0,1000]，默认值为1000。用于限制本次返回的结果数据条数。
+
+        :return: The limit of this ShowBlockchainFlavorsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ShowBlockchainFlavorsRequest.
+
+        取值范围(0,1000]，默认值为1000。用于限制本次返回的结果数据条数。
+
+        :param limit: The limit of this ShowBlockchainFlavorsRequest.
+        :type: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ShowBlockchainFlavorsRequest.
+
+        分页查询起始位置，为非负整数。
+
+        :return: The offset of this ShowBlockchainFlavorsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ShowBlockchainFlavorsRequest.
+
+        分页查询起始位置，为非负整数。
+
+        :param offset: The offset of this ShowBlockchainFlavorsRequest.
+        :type: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

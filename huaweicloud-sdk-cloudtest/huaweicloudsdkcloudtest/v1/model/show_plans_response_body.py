@@ -33,7 +33,8 @@ class ShowPlansResponseBody:
         'owner': 'ShowPlansResponseOwner',
         'design_stage': 'ShowPlansResponseDesignStage',
         'execute_stage': 'ShowPlansResponseExecuteStage',
-        'report_stage': 'ShowPlansResponseReportStage'
+        'report_stage': 'ShowPlansResponseReportStage',
+        'iteration': 'NameAndId'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class ShowPlansResponseBody:
         'owner': 'owner',
         'design_stage': 'design_stage',
         'execute_stage': 'execute_stage',
-        'report_stage': 'report_stage'
+        'report_stage': 'report_stage',
+        'iteration': 'iteration'
     }
 
-    def __init__(self, plan_id=None, name=None, start_date=None, end_date=None, finish_date=None, project_id=None, current_stage=None, expire_day=None, owner=None, design_stage=None, execute_stage=None, report_stage=None):
+    def __init__(self, plan_id=None, name=None, start_date=None, end_date=None, finish_date=None, project_id=None, current_stage=None, expire_day=None, owner=None, design_stage=None, execute_stage=None, report_stage=None, iteration=None):
         """ShowPlansResponseBody - a model defined in huaweicloud sdk"""
         
         
@@ -68,6 +70,7 @@ class ShowPlansResponseBody:
         self._design_stage = None
         self._execute_stage = None
         self._report_stage = None
+        self._iteration = None
         self.discriminator = None
 
         if plan_id is not None:
@@ -94,6 +97,8 @@ class ShowPlansResponseBody:
             self.execute_stage = execute_stage
         if report_stage is not None:
             self.report_stage = report_stage
+        if iteration is not None:
+            self.iteration = iteration
 
     @property
     def plan_id(self):
@@ -143,7 +148,7 @@ class ShowPlansResponseBody:
     def start_date(self):
         """Gets the start_date of this ShowPlansResponseBody.
 
-        测试计划开始日期
+        测试计划开始时间
 
         :return: The start_date of this ShowPlansResponseBody.
         :rtype: date
@@ -154,7 +159,7 @@ class ShowPlansResponseBody:
     def start_date(self, start_date):
         """Sets the start_date of this ShowPlansResponseBody.
 
-        测试计划开始日期
+        测试计划开始时间
 
         :param start_date: The start_date of this ShowPlansResponseBody.
         :type: date
@@ -165,7 +170,7 @@ class ShowPlansResponseBody:
     def end_date(self):
         """Gets the end_date of this ShowPlansResponseBody.
 
-        测试计划截止日期
+        测试计划截止时间
 
         :return: The end_date of this ShowPlansResponseBody.
         :rtype: date
@@ -176,7 +181,7 @@ class ShowPlansResponseBody:
     def end_date(self, end_date):
         """Sets the end_date of this ShowPlansResponseBody.
 
-        测试计划截止日期
+        测试计划截止时间
 
         :param end_date: The end_date of this ShowPlansResponseBody.
         :type: date
@@ -187,7 +192,7 @@ class ShowPlansResponseBody:
     def finish_date(self):
         """Gets the finish_date of this ShowPlansResponseBody.
 
-        测试计划实际完成日期（测试计划实际完成指测试计划下所有测试用例处于完成状态）
+        测试计划实际完成时间（测试计划实际完成指测试计划下所有测试用例处于完成状态）
 
         :return: The finish_date of this ShowPlansResponseBody.
         :rtype: date
@@ -198,7 +203,7 @@ class ShowPlansResponseBody:
     def finish_date(self, finish_date):
         """Sets the finish_date of this ShowPlansResponseBody.
 
-        测试计划实际完成日期（测试计划实际完成指测试计划下所有测试用例处于完成状态）
+        测试计划实际完成时间（测试计划实际完成指测试计划下所有测试用例处于完成状态）
 
         :param finish_date: The finish_date of this ShowPlansResponseBody.
         :type: date
@@ -350,6 +355,26 @@ class ShowPlansResponseBody:
         :type: ShowPlansResponseReportStage
         """
         self._report_stage = report_stage
+
+    @property
+    def iteration(self):
+        """Gets the iteration of this ShowPlansResponseBody.
+
+
+        :return: The iteration of this ShowPlansResponseBody.
+        :rtype: NameAndId
+        """
+        return self._iteration
+
+    @iteration.setter
+    def iteration(self, iteration):
+        """Sets the iteration of this ShowPlansResponseBody.
+
+
+        :param iteration: The iteration of this ShowPlansResponseBody.
+        :type: NameAndId
+        """
+        self._iteration = iteration
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -30,7 +30,7 @@ class CreateKeywordsAlarmRuleRequestBody:
         'keywords_alarm_send': 'bool',
         'domain_id': 'str',
         'notification_save_rule': 'NotificationSaveRule',
-        'whether_english': 'bool'
+        'language': 'str'
     }
 
     attribute_map = {
@@ -42,10 +42,10 @@ class CreateKeywordsAlarmRuleRequestBody:
         'keywords_alarm_send': 'keywords_alarm_send',
         'domain_id': 'domain_id',
         'notification_save_rule': 'notification_save_rule',
-        'whether_english': 'whether_english'
+        'language': 'language'
     }
 
-    def __init__(self, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, notification_save_rule=None, whether_english=None):
+    def __init__(self, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, notification_save_rule=None, language=None):
         """CreateKeywordsAlarmRuleRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -58,7 +58,7 @@ class CreateKeywordsAlarmRuleRequestBody:
         self._keywords_alarm_send = None
         self._domain_id = None
         self._notification_save_rule = None
-        self._whether_english = None
+        self._language = None
         self.discriminator = None
 
         self.keywords_alarm_rule_name = keywords_alarm_rule_name
@@ -71,7 +71,7 @@ class CreateKeywordsAlarmRuleRequestBody:
         self.domain_id = domain_id
         if notification_save_rule is not None:
             self.notification_save_rule = notification_save_rule
-        self.whether_english = whether_english
+        self.language = language
 
     @property
     def keywords_alarm_rule_name(self):
@@ -143,7 +143,6 @@ class CreateKeywordsAlarmRuleRequestBody:
     def frequency(self):
         """Gets the frequency of this CreateKeywordsAlarmRuleRequestBody.
 
-        告警统计周期
 
         :return: The frequency of this CreateKeywordsAlarmRuleRequestBody.
         :rtype: Frequency
@@ -154,7 +153,6 @@ class CreateKeywordsAlarmRuleRequestBody:
     def frequency(self, frequency):
         """Sets the frequency of this CreateKeywordsAlarmRuleRequestBody.
 
-        告警统计周期
 
         :param frequency: The frequency of this CreateKeywordsAlarmRuleRequestBody.
         :type: Frequency
@@ -250,26 +248,26 @@ class CreateKeywordsAlarmRuleRequestBody:
         self._notification_save_rule = notification_save_rule
 
     @property
-    def whether_english(self):
-        """Gets the whether_english of this CreateKeywordsAlarmRuleRequestBody.
+    def language(self):
+        """Gets the language of this CreateKeywordsAlarmRuleRequestBody.
 
-        是否英语
+        邮件附加信息是否英文
 
-        :return: The whether_english of this CreateKeywordsAlarmRuleRequestBody.
-        :rtype: bool
+        :return: The language of this CreateKeywordsAlarmRuleRequestBody.
+        :rtype: str
         """
-        return self._whether_english
+        return self._language
 
-    @whether_english.setter
-    def whether_english(self, whether_english):
-        """Sets the whether_english of this CreateKeywordsAlarmRuleRequestBody.
+    @language.setter
+    def language(self, language):
+        """Sets the language of this CreateKeywordsAlarmRuleRequestBody.
 
-        是否英语
+        邮件附加信息是否英文
 
-        :param whether_english: The whether_english of this CreateKeywordsAlarmRuleRequestBody.
-        :type: bool
+        :param language: The language of this CreateKeywordsAlarmRuleRequestBody.
+        :type: str
         """
-        self._whether_english = whether_english
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

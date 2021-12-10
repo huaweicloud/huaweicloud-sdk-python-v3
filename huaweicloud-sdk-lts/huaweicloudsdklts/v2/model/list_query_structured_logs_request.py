@@ -24,7 +24,7 @@ class ListQueryStructuredLogsRequest:
     openapi_types = {
         'log_group_id': 'str',
         'log_stream_id': 'str',
-        'body': 'QueryLTSStructLogParams'
+        'body': 'QueryLtsStructLogParams'
     }
 
     attribute_map = {
@@ -98,7 +98,7 @@ class ListQueryStructuredLogsRequest:
 
 
         :return: The body of this ListQueryStructuredLogsRequest.
-        :rtype: QueryLTSStructLogParams
+        :rtype: QueryLtsStructLogParams
         """
         return self._body
 
@@ -108,7 +108,7 @@ class ListQueryStructuredLogsRequest:
 
 
         :param body: The body of this ListQueryStructuredLogsRequest.
-        :type: QueryLTSStructLogParams
+        :type: QueryLtsStructLogParams
         """
         self._body = body
 

@@ -25,6 +25,7 @@ class CreateDocWatermarkRequestBody:
         'doc_type': 'str',
         'file_password': 'str',
         'marked_file_password': 'str',
+        'readonly_password': 'str',
         'visible_watermark': 'str',
         'font_size': 'str',
         'rotation': 'str',
@@ -39,6 +40,7 @@ class CreateDocWatermarkRequestBody:
         'doc_type': 'doc_type',
         'file_password': 'file_password',
         'marked_file_password': 'marked_file_password',
+        'readonly_password': 'readonly_password',
         'visible_watermark': 'visible_watermark',
         'font_size': 'font_size',
         'rotation': 'rotation',
@@ -49,7 +51,7 @@ class CreateDocWatermarkRequestBody:
         'visible_type': 'visible_type'
     }
 
-    def __init__(self, doc_type=None, file_password=None, marked_file_password=None, visible_watermark=None, font_size=None, rotation=None, opacity=None, blind_watermark=None, file=None, image_mark=None, visible_type=None):
+    def __init__(self, doc_type=None, file_password=None, marked_file_password=None, readonly_password=None, visible_watermark=None, font_size=None, rotation=None, opacity=None, blind_watermark=None, file=None, image_mark=None, visible_type=None):
         """CreateDocWatermarkRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -57,6 +59,7 @@ class CreateDocWatermarkRequestBody:
         self._doc_type = None
         self._file_password = None
         self._marked_file_password = None
+        self._readonly_password = None
         self._visible_watermark = None
         self._font_size = None
         self._rotation = None
@@ -72,6 +75,8 @@ class CreateDocWatermarkRequestBody:
             self.file_password = file_password
         if marked_file_password is not None:
             self.marked_file_password = marked_file_password
+        if readonly_password is not None:
+            self.readonly_password = readonly_password
         if visible_watermark is not None:
             self.visible_watermark = visible_watermark
         if font_size is not None:
@@ -153,6 +158,28 @@ class CreateDocWatermarkRequestBody:
         :type: str
         """
         self._marked_file_password = marked_file_password
+
+    @property
+    def readonly_password(self):
+        """Gets the readonly_password of this CreateDocWatermarkRequestBody.
+
+        添加水印后给文件设置只读密码， 最大支持长度256。
+
+        :return: The readonly_password of this CreateDocWatermarkRequestBody.
+        :rtype: str
+        """
+        return self._readonly_password
+
+    @readonly_password.setter
+    def readonly_password(self, readonly_password):
+        """Sets the readonly_password of this CreateDocWatermarkRequestBody.
+
+        添加水印后给文件设置只读密码， 最大支持长度256。
+
+        :param readonly_password: The readonly_password of this CreateDocWatermarkRequestBody.
+        :type: str
+        """
+        self._readonly_password = readonly_password
 
     @property
     def visible_watermark(self):

@@ -126,6 +126,7 @@ if __name__ == "__main__":
 * [6. 故障处理](#6-故障处理-top)
     * [6.1 访问日志](#61-访问日志-top)
     * [6.2 HTTP 监听器](#62-http-监听器-top)
+* [7. 文件上传与下载](#7-文件上传与下载-top)
 
 ### 1. 客户端连接参数 [:top:](#用户手册-top)
 
@@ -428,3 +429,57 @@ if __name__ == "__main__":
 
 **说明:**
 HttpHandler 支持如下方法 `add_request_handler`、`add_response_handler` 。
+
+### 7. 文件上传与下载 [:top:](#用户手册-top)
+
+以数据安全中心服务的嵌入图片水印接口为例，该接口需要上传一个图片文件，并返回加过水印的图片文件流：
+
+```python
+# coding: utf-8
+from huaweicloudsdkcore.auth.credentials import BasicCredentials
+from huaweicloudsdkcore.exceptions import exceptions
+from huaweicloudsdkcore.http.http_config import HttpConfig
+from huaweicloudsdkcore.http.formdata import FormFile
+from huaweicloudsdkdsc.v1 import *
+
+
+def create_image_watermark(client):
+
+    try:
+        request = CreateImageWatermarkRequest()
+        # 以只读方式、二进制格式打开文件，创建一个FormFile对象
+        image_file = FormFile(open("demo.jpg", "rb"))
+        body = CreateImageWatermarkRequestBody(file=image_file, blind_watermark="test_watermark")
+        request.body = body
+        response = client.create_image_watermark(request)
+        image_file.close()
+        
+        # 定义下载文件的方法
+        def save(stream):
+            with open("result.jpg", "wb") as f:
+                f.write(stream.content)
+        # 下载文件
+        response.consume_download_stream(save)
+    except exceptions.ClientRequestException as e:
+        print(e.status_code)
+        print(e.request_id)
+        print(e.error_code)
+        print(e.error_msg)
+
+
+if __name__ == "__main__":
+    ak = "{your ak string}"
+    sk = "{your sk string}"
+    endpoint = "{your endpoint}"
+    project_id = "{your project id}"
+    config = HttpConfig.get_default_config()
+    config.ignore_ssl_verification = True
+    credentials = BasicCredentials(ak, sk, project_id)
+    dsc_client = DscClient.new_builder()
+        .with_http_config(config) \
+        .with_credentials(credentials) \
+        .with_endpoint(endpoint) \
+        .build()
+    
+    create_image_watermark(dsc_client)
+```

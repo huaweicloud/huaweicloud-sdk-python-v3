@@ -20,7 +20,7 @@ class BcsRegion:
 
     AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://bcs.ap-southeast-1.myhuaweicloud.com")
 
-    AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://cs.ap-southeast-2.myhuaweicloud.com")
+    AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://bcs.ap-southeast-2.myhuaweicloud.com")
 
     AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://bcs.ap-southeast-3.myhuaweicloud.com")
 

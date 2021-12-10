@@ -24,7 +24,6 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'index_id': 'str',
-        'key': 'str',
         'language': 'str',
         'project_id': 'str',
         'sql_alarm_rule_name': 'str',
@@ -36,15 +35,14 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         'sql_alarm_level': 'str',
         'sql_alarm_send': 'bool',
         'domain_id': 'str',
-        'create_time': 'object',
-        'update_time': 'object',
+        'create_time': 'int',
+        'update_time': 'int',
         'topics': 'list[Topics]'
     }
 
     attribute_map = {
         'id': 'id',
         'index_id': 'indexId',
-        'key': 'key',
         'language': 'language',
         'project_id': 'projectId',
         'sql_alarm_rule_name': 'sql_alarm_rule_name',
@@ -61,14 +59,13 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         'topics': 'topics'
     }
 
-    def __init__(self, id=None, index_id=None, key=None, language=None, project_id=None, sql_alarm_rule_name=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None):
+    def __init__(self, id=None, index_id=None, language=None, project_id=None, sql_alarm_rule_name=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None):
         """UpdateSqlAlarmRuleResponse - a model defined in huaweicloud sdk"""
         
         super(UpdateSqlAlarmRuleResponse, self).__init__()
 
         self._id = None
         self._index_id = None
-        self._key = None
         self._language = None
         self._project_id = None
         self._sql_alarm_rule_name = None
@@ -89,8 +86,6 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
             self.id = id
         if index_id is not None:
             self.index_id = index_id
-        if key is not None:
-            self.key = key
         if language is not None:
             self.language = language
         if project_id is not None:
@@ -163,28 +158,6 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :type: str
         """
         self._index_id = index_id
-
-    @property
-    def key(self):
-        """Gets the key of this UpdateSqlAlarmRuleResponse.
-
-        测试
-
-        :return: The key of this UpdateSqlAlarmRuleResponse.
-        :rtype: str
-        """
-        return self._key
-
-    @key.setter
-    def key(self, key):
-        """Sets the key of this UpdateSqlAlarmRuleResponse.
-
-        测试
-
-        :param key: The key of this UpdateSqlAlarmRuleResponse.
-        :type: str
-        """
-        self._key = key
 
     @property
     def language(self):
@@ -435,7 +408,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         创建时间(毫秒时间戳)
 
         :return: The create_time of this UpdateSqlAlarmRuleResponse.
-        :rtype: object
+        :rtype: int
         """
         return self._create_time
 
@@ -446,7 +419,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         创建时间(毫秒时间戳)
 
         :param create_time: The create_time of this UpdateSqlAlarmRuleResponse.
-        :type: object
+        :type: int
         """
         self._create_time = create_time
 
@@ -457,7 +430,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         更新时间(毫秒时间戳)
 
         :return: The update_time of this UpdateSqlAlarmRuleResponse.
-        :rtype: object
+        :rtype: int
         """
         return self._update_time
 
@@ -468,7 +441,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         更新时间(毫秒时间戳)
 
         :param update_time: The update_time of this UpdateSqlAlarmRuleResponse.
-        :type: object
+        :type: int
         """
         self._update_time = update_time
 

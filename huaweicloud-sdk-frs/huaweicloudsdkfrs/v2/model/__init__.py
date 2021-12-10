@@ -69,14 +69,12 @@ from huaweicloudsdkfrs.v2.model.face_search_face_id_req import FaceSearchFaceIdR
 from huaweicloudsdkfrs.v2.model.face_search_url_req import FaceSearchUrlReq
 from huaweicloudsdkfrs.v2.model.face_set_face import FaceSetFace
 from huaweicloudsdkfrs.v2.model.face_set_info import FaceSetInfo
-from huaweicloudsdkfrs.v2.model.landmark import Landmark
 from huaweicloudsdkfrs.v2.model.live_detect_base64_req import LiveDetectBase64Req
 from huaweicloudsdkfrs.v2.model.live_detect_face_base64_req import LiveDetectFaceBase64Req
 from huaweicloudsdkfrs.v2.model.live_detect_face_resp_result import LiveDetectFaceRespResult
 from huaweicloudsdkfrs.v2.model.live_detect_face_url_req import LiveDetectFaceUrlReq
 from huaweicloudsdkfrs.v2.model.live_detect_resp_videoresult import LiveDetectRespVideoresult
 from huaweicloudsdkfrs.v2.model.live_detect_url_req import LiveDetectUrlReq
-from huaweicloudsdkfrs.v2.model.point import Point
 from huaweicloudsdkfrs.v2.model.search_face import SearchFace
 from huaweicloudsdkfrs.v2.model.search_face_by_base64_request import SearchFaceByBase64Request
 from huaweicloudsdkfrs.v2.model.search_face_by_base64_response import SearchFaceByBase64Response

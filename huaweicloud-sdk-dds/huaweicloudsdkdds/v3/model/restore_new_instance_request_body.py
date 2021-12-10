@@ -102,7 +102,7 @@ class RestoreNewInstanceRequestBody:
     def name(self):
         """Gets the name of this RestoreNewInstanceRequestBody.
 
-        实例名称。用于表示实例的名称，用于表示实例的名称，同一租户下，同类型的实例名唯一。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
+        实例名称。用于表示实例的名称，用于表示实例的名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
         :return: The name of this RestoreNewInstanceRequestBody.
         :rtype: str
@@ -113,7 +113,7 @@ class RestoreNewInstanceRequestBody:
     def name(self, name):
         """Sets the name of this RestoreNewInstanceRequestBody.
 
-        实例名称。用于表示实例的名称，用于表示实例的名称，同一租户下，同类型的实例名唯一。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
+        实例名称。用于表示实例的名称，用于表示实例的名称，允许和已有名称重复。 取值范围：长度为4~64位，必须以字母开头（A~Z或a~z），区分大小写，可以包含字母、数字（0~9）、中划线（-）或者下划线（_），不能包含其他特殊字符。
 
         :param name: The name of this RestoreNewInstanceRequestBody.
         :type: str

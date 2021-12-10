@@ -224,6 +224,8 @@ from huaweicloudsdkrds.v3.model.resize_flavor_object import ResizeFlavorObject
 from huaweicloudsdkrds.v3.model.resize_flavor_request import ResizeFlavorRequest
 from huaweicloudsdkrds.v3.model.resources import Resources
 from huaweicloudsdkrds.v3.model.restore_databases_info import RestoreDatabasesInfo
+from huaweicloudsdkrds.v3.model.restore_exist_instance_request import RestoreExistInstanceRequest
+from huaweicloudsdkrds.v3.model.restore_exist_instance_response import RestoreExistInstanceResponse
 from huaweicloudsdkrds.v3.model.restore_point import RestorePoint
 from huaweicloudsdkrds.v3.model.restore_table_info import RestoreTableInfo
 from huaweicloudsdkrds.v3.model.restore_tables_request import RestoreTablesRequest

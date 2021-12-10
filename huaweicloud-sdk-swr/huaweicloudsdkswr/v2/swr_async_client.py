@@ -376,9 +376,9 @@ class SwrAsyncClient(Client):
 
 
     def create_repo_domains_async(self, request):
-        """创建共享账号
+        """创建共享帐号
 
-        创建共享账号。镜像上传后，您可以共享私有镜像给其他帐号，并授予下载该镜像的权限。
+        创建共享帐号。镜像上传后，您可以共享私有镜像给其他帐号，并授予下载该镜像的权限。
 
         :param CreateRepoDomainsRequest request
         :return: CreateRepoDomainsResponse
@@ -386,9 +386,9 @@ class SwrAsyncClient(Client):
         return self.create_repo_domains_with_http_info(request)
 
     def create_repo_domains_with_http_info(self, request):
-        """创建共享账号
+        """创建共享帐号
 
-        创建共享账号。镜像上传后，您可以共享私有镜像给其他帐号，并授予下载该镜像的权限。
+        创建共享帐号。镜像上传后，您可以共享私有镜像给其他帐号，并授予下载该镜像的权限。
 
         :param CreateRepoDomainsRequest request
         :return: CreateRepoDomainsResponse
@@ -967,9 +967,9 @@ class SwrAsyncClient(Client):
 
 
     def delete_repo_domains_async(self, request):
-        """删除共享账号
+        """删除共享帐号
 
-        删除共享账号
+        删除共享帐号
 
         :param DeleteRepoDomainsRequest request
         :return: DeleteRepoDomainsResponse
@@ -977,9 +977,9 @@ class SwrAsyncClient(Client):
         return self.delete_repo_domains_with_http_info(request)
 
     def delete_repo_domains_with_http_info(self, request):
-        """删除共享账号
+        """删除共享帐号
 
-        删除共享账号
+        删除共享帐号
 
         :param DeleteRepoDomainsRequest request
         :return: DeleteRepoDomainsResponse
@@ -1429,10 +1429,71 @@ class SwrAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_repo_domains_async(self, request):
-        """获取共享账号列表
+    def list_quotas_async(self, request):
+        """获取配额信息
 
-        获取共享账号列表
+        获取配额信息
+
+        :param ListQuotasRequest request
+        :return: ListQuotasResponse
+        """
+        return self.list_quotas_with_http_info(request)
+
+    def list_quotas_with_http_info(self, request):
+        """获取配额信息
+
+        获取配额信息
+
+        :param ListQuotasRequest request
+        :return: ListQuotasResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/manage/projects/{project_id}/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_repo_domains_async(self, request):
+        """获取共享帐号列表
+
+        获取共享帐号列表
 
         :param ListRepoDomainsRequest request
         :return: ListRepoDomainsResponse
@@ -1440,9 +1501,9 @@ class SwrAsyncClient(Client):
         return self.list_repo_domains_with_http_info(request)
 
     def list_repo_domains_with_http_info(self, request):
-        """获取共享账号列表
+        """获取共享帐号列表
 
-        获取共享账号列表
+        获取共享帐号列表
 
         :param ListRepoDomainsRequest request
         :return: ListRepoDomainsResponse
@@ -1495,9 +1556,9 @@ class SwrAsyncClient(Client):
 
 
     def list_repos_details_async(self, request):
-        """查询镜像列表
+        """查询镜像仓库列表
 
-        查询镜像列表
+        查询镜像仓库列表
 
         :param ListReposDetailsRequest request
         :return: ListReposDetailsResponse
@@ -1505,9 +1566,9 @@ class SwrAsyncClient(Client):
         return self.list_repos_details_with_http_info(request)
 
     def list_repos_details_with_http_info(self, request):
-        """查询镜像列表
+        """查询镜像仓库列表
 
-        查询镜像列表
+        查询镜像仓库列表
 
         :param ListReposDetailsRequest request
         :return: ListReposDetailsResponse
@@ -1901,7 +1962,7 @@ class SwrAsyncClient(Client):
 
 
     def show_access_domain_async(self, request):
-        """判断共享账号是否存在
+        """判断共享帐号是否存在
 
         判断共享租户是否存在
 
@@ -1911,7 +1972,7 @@ class SwrAsyncClient(Client):
         return self.show_access_domain_with_http_info(request)
 
     def show_access_domain_with_http_info(self, request):
-        """判断共享账号是否存在
+        """判断共享帐号是否存在
 
         判断共享租户是否存在
 
@@ -2094,9 +2155,9 @@ class SwrAsyncClient(Client):
 
 
     def show_repository_async(self, request):
-        """查询镜像概要信息
+        """查询镜像仓库概要信息
 
-        查询镜像概要信息
+        查询镜像仓库概要信息
 
         :param ShowRepositoryRequest request
         :return: ShowRepositoryResponse
@@ -2104,9 +2165,9 @@ class SwrAsyncClient(Client):
         return self.show_repository_with_http_info(request)
 
     def show_repository_with_http_info(self, request):
-        """查询镜像概要信息
+        """查询镜像仓库概要信息
 
-        查询镜像概要信息
+        查询镜像仓库概要信息
 
         :param ShowRepositoryRequest request
         :return: ShowRepositoryResponse
@@ -2443,7 +2504,7 @@ class SwrAsyncClient(Client):
         :return: UpdateNamespaceAuthResponse
         """
 
-        all_params = ['namespace', 'update_namespace_auth_req']
+        all_params = ['namespace', 'update_namespace_auth_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2557,9 +2618,9 @@ class SwrAsyncClient(Client):
 
 
     def update_repo_domains_async(self, request):
-        """更新共享账号
+        """更新共享帐号
 
-        更新共享账号
+        更新共享帐号
 
         :param UpdateRepoDomainsRequest request
         :return: UpdateRepoDomainsResponse
@@ -2567,9 +2628,9 @@ class SwrAsyncClient(Client):
         return self.update_repo_domains_with_http_info(request)
 
     def update_repo_domains_with_http_info(self, request):
-        """更新共享账号
+        """更新共享帐号
 
-        更新共享账号
+        更新共享帐号
 
         :param UpdateRepoDomainsRequest request
         :return: UpdateRepoDomainsResponse

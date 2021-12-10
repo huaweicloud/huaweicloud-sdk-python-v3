@@ -34,7 +34,9 @@ class TransferDetail:
         'dis_id': 'str',
         'dis_name': 'str',
         'kafka_id': 'str',
-        'kafka_topic': 'str'
+        'kafka_topic': 'str',
+        'obs_time_zone': 'str',
+        'obs_time_zone_id': 'str'
     }
 
     attribute_map = {
@@ -50,10 +52,12 @@ class TransferDetail:
         'dis_id': 'dis_id',
         'dis_name': 'dis_name',
         'kafka_id': 'kafka_id',
-        'kafka_topic': 'kafka_topic'
+        'kafka_topic': 'kafka_topic',
+        'obs_time_zone': 'obs_time_zone',
+        'obs_time_zone_id': 'obs_time_zone_id'
     }
 
-    def __init__(self, obs_period=None, obs_encrypted_id=None, obs_prefix_name=None, obs_period_unit=None, obs_transfer_path=None, obs_eps_id=None, obs_bucket_name=None, obs_encrypted_enable=None, obs_dir_pre_fix_name=None, dis_id=None, dis_name=None, kafka_id=None, kafka_topic=None):
+    def __init__(self, obs_period=None, obs_encrypted_id=None, obs_prefix_name=None, obs_period_unit=None, obs_transfer_path=None, obs_eps_id=None, obs_bucket_name=None, obs_encrypted_enable=None, obs_dir_pre_fix_name=None, dis_id=None, dis_name=None, kafka_id=None, kafka_topic=None, obs_time_zone=None, obs_time_zone_id=None):
         """TransferDetail - a model defined in huaweicloud sdk"""
         
         
@@ -71,6 +75,8 @@ class TransferDetail:
         self._dis_name = None
         self._kafka_id = None
         self._kafka_topic = None
+        self._obs_time_zone = None
+        self._obs_time_zone_id = None
         self.discriminator = None
 
         if obs_period is not None:
@@ -99,6 +105,10 @@ class TransferDetail:
             self.kafka_id = kafka_id
         if kafka_topic is not None:
             self.kafka_topic = kafka_topic
+        if obs_time_zone is not None:
+            self.obs_time_zone = obs_time_zone
+        if obs_time_zone_id is not None:
+            self.obs_time_zone_id = obs_time_zone_id
 
     @property
     def obs_period(self):
@@ -385,6 +395,50 @@ class TransferDetail:
         :type: str
         """
         self._kafka_topic = kafka_topic
+
+    @property
+    def obs_time_zone(self):
+        """Gets the obs_time_zone of this TransferDetail.
+
+        OBS转储时区。如果选择该参数，则必须选择obs_time_zone_id。
+
+        :return: The obs_time_zone of this TransferDetail.
+        :rtype: str
+        """
+        return self._obs_time_zone
+
+    @obs_time_zone.setter
+    def obs_time_zone(self, obs_time_zone):
+        """Sets the obs_time_zone of this TransferDetail.
+
+        OBS转储时区。如果选择该参数，则必须选择obs_time_zone_id。
+
+        :param obs_time_zone: The obs_time_zone of this TransferDetail.
+        :type: str
+        """
+        self._obs_time_zone = obs_time_zone
+
+    @property
+    def obs_time_zone_id(self):
+        """Gets the obs_time_zone_id of this TransferDetail.
+
+        OBS转储时区ID。参数选择参考OBS转储时区表。如果选择该参数，则必须选择obs_time_zone。
+
+        :return: The obs_time_zone_id of this TransferDetail.
+        :rtype: str
+        """
+        return self._obs_time_zone_id
+
+    @obs_time_zone_id.setter
+    def obs_time_zone_id(self, obs_time_zone_id):
+        """Sets the obs_time_zone_id of this TransferDetail.
+
+        OBS转储时区ID。参数选择参考OBS转储时区表。如果选择该参数，则必须选择obs_time_zone。
+
+        :param obs_time_zone_id: The obs_time_zone_id of this TransferDetail.
+        :type: str
+        """
+        self._obs_time_zone_id = obs_time_zone_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -24,7 +24,6 @@ class PrepaidUpdateOption:
     openapi_types = {
         'auto_pay': 'bool',
         'change_mode': 'str',
-        'cloud_service_console_url': 'str',
         'period_num': 'int',
         'period_type': 'str'
     }
@@ -32,19 +31,17 @@ class PrepaidUpdateOption:
     attribute_map = {
         'auto_pay': 'auto_pay',
         'change_mode': 'change_mode',
-        'cloud_service_console_url': 'cloud_service_console_url',
         'period_num': 'period_num',
         'period_type': 'period_type'
     }
 
-    def __init__(self, auto_pay=None, change_mode=None, cloud_service_console_url=None, period_num=None, period_type=None):
+    def __init__(self, auto_pay=None, change_mode=None, period_num=None, period_type=None):
         """PrepaidUpdateOption - a model defined in huaweicloud sdk"""
         
         
 
         self._auto_pay = None
         self._change_mode = None
-        self._cloud_service_console_url = None
         self._period_num = None
         self._period_type = None
         self.discriminator = None
@@ -53,8 +50,6 @@ class PrepaidUpdateOption:
             self.auto_pay = auto_pay
         if change_mode is not None:
             self.change_mode = change_mode
-        if cloud_service_console_url is not None:
-            self.cloud_service_console_url = cloud_service_console_url
         if period_num is not None:
             self.period_num = period_num
         if period_type is not None:
@@ -103,28 +98,6 @@ class PrepaidUpdateOption:
         :type: str
         """
         self._change_mode = change_mode
-
-    @property
-    def cloud_service_console_url(self):
-        """Gets the cloud_service_console_url of this PrepaidUpdateOption.
-
-        云服务引导URL。 订购订单支付完成后，支付成功的页面嵌入该url的内容。 console传，用户侧api文档不可见该字段。
-
-        :return: The cloud_service_console_url of this PrepaidUpdateOption.
-        :rtype: str
-        """
-        return self._cloud_service_console_url
-
-    @cloud_service_console_url.setter
-    def cloud_service_console_url(self, cloud_service_console_url):
-        """Sets the cloud_service_console_url of this PrepaidUpdateOption.
-
-        云服务引导URL。 订购订单支付完成后，支付成功的页面嵌入该url的内容。 console传，用户侧api文档不可见该字段。
-
-        :param cloud_service_console_url: The cloud_service_console_url of this PrepaidUpdateOption.
-        :type: str
-        """
-        self._cloud_service_console_url = cloud_service_console_url
 
     @property
     def period_num(self):

@@ -221,7 +221,7 @@ class BssAsyncClient(Client):
         :return: ListFreeResourceInfosResponse
         """
 
-        all_params = ['req', 'x_language']
+        all_params = ['x_language', 'req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

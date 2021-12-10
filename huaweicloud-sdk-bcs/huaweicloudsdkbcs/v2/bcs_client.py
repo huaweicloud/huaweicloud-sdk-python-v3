@@ -1487,7 +1487,7 @@ class BcsClient(Client):
         :return: ShowBlockchainFlavorsResponse
         """
 
-        all_params = []
+        all_params = ['limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1498,6 +1498,10 @@ class BcsClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 

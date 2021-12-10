@@ -23,7 +23,7 @@ class ListStructuredLogsWithTimeRangeRequest:
 
     openapi_types = {
         'log_stream_id': 'str',
-        'body': 'QueryLTSStructLogParamsNew'
+        'body': 'QueryLtsStructLogParamsNew'
     }
 
     attribute_map = {
@@ -72,7 +72,7 @@ class ListStructuredLogsWithTimeRangeRequest:
 
 
         :return: The body of this ListStructuredLogsWithTimeRangeRequest.
-        :rtype: QueryLTSStructLogParamsNew
+        :rtype: QueryLtsStructLogParamsNew
         """
         return self._body
 
@@ -82,7 +82,7 @@ class ListStructuredLogsWithTimeRangeRequest:
 
 
         :param body: The body of this ListStructuredLogsWithTimeRangeRequest.
-        :type: QueryLTSStructLogParamsNew
+        :type: QueryLtsStructLogParamsNew
         """
         self._body = body
 

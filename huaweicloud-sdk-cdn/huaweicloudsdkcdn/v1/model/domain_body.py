@@ -148,7 +148,7 @@ class DomainBody:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this DomainBody.
 
-        企业项目ID，创建域名归属的项目。
+        企业项目ID，创建域名归属的项目。注意：当使用子账号调用接口时，该参数必传。
 
         :return: The enterprise_project_id of this DomainBody.
         :rtype: str
@@ -159,7 +159,7 @@ class DomainBody:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this DomainBody.
 
-        企业项目ID，创建域名归属的项目。
+        企业项目ID，创建域名归属的项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this DomainBody.
         :type: str

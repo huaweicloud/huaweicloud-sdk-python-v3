@@ -71,7 +71,7 @@ class ListServiceTypesRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListServiceTypesRequest.
 
-        云服务类型编码。例如ECS的云服务类型编码为“hws.service.type.ec2”。
+        云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :return: The service_type_code of this ListServiceTypesRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ListServiceTypesRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListServiceTypesRequest.
 
-        云服务类型编码。例如ECS的云服务类型编码为“hws.service.type.ec2”。
+        云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :param service_type_code: The service_type_code of this ListServiceTypesRequest.
         :type: str

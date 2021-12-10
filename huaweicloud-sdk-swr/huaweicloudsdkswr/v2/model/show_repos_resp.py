@@ -485,7 +485,7 @@ class ShowReposResp:
     def total_range(self):
         """Gets the total_range of this ShowReposResp.
 
-        
+        总记录条数
 
         :return: The total_range of this ShowReposResp.
         :rtype: int
@@ -496,7 +496,7 @@ class ShowReposResp:
     def total_range(self, total_range):
         """Sets the total_range of this ShowReposResp.
 
-        
+        总记录条数
 
         :param total_range: The total_range of this ShowReposResp.
         :type: int

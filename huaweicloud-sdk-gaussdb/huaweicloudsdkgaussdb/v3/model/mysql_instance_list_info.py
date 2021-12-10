@@ -44,7 +44,8 @@ class MysqlInstanceListInfo:
         'enterprise_project_id': 'str',
         'time_zone': 'str',
         'charge_info': 'MysqlChargeInfo',
-        'dedicated_resource_id': 'str'
+        'dedicated_resource_id': 'str',
+        'tags': 'list[InstanceTagItem]'
     }
 
     attribute_map = {
@@ -70,10 +71,11 @@ class MysqlInstanceListInfo:
         'enterprise_project_id': 'enterprise_project_id',
         'time_zone': 'time_zone',
         'charge_info': 'charge_info',
-        'dedicated_resource_id': 'dedicated_resource_id'
+        'dedicated_resource_id': 'dedicated_resource_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, backup_strategy=None, enterprise_project_id=None, time_zone=None, charge_info=None, dedicated_resource_id=None):
+    def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, backup_strategy=None, enterprise_project_id=None, time_zone=None, charge_info=None, dedicated_resource_id=None, tags=None):
         """MysqlInstanceListInfo - a model defined in huaweicloud sdk"""
         
         
@@ -101,6 +103,7 @@ class MysqlInstanceListInfo:
         self._time_zone = None
         self._charge_info = None
         self._dedicated_resource_id = None
+        self._tags = None
         self.discriminator = None
 
         self.id = id
@@ -147,6 +150,8 @@ class MysqlInstanceListInfo:
             self.charge_info = charge_info
         if dedicated_resource_id is not None:
             self.dedicated_resource_id = dedicated_resource_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -643,6 +648,28 @@ class MysqlInstanceListInfo:
         :type: str
         """
         self._dedicated_resource_id = dedicated_resource_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this MysqlInstanceListInfo.
+
+        标签列表。
+
+        :return: The tags of this MysqlInstanceListInfo.
+        :rtype: list[InstanceTagItem]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this MysqlInstanceListInfo.
+
+        标签列表。
+
+        :param tags: The tags of this MysqlInstanceListInfo.
+        :type: list[InstanceTagItem]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

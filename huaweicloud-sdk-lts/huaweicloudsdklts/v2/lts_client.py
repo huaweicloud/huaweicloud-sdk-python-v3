@@ -48,6 +48,132 @@ class LtsClient(Client):
 
         return ClientBuilder(clazz)
 
+    def create_access_config(self, request):
+        """创建日志接入
+
+        创建日志接入
+
+        :param CreateAccessConfigRequest request
+        :return: CreateAccessConfigResponse
+        """
+        return self.create_access_config_with_http_info(request)
+
+    def create_access_config_with_http_info(self, request):
+        """创建日志接入
+
+        创建日志接入
+
+        :param CreateAccessConfigRequest request
+        :return: CreateAccessConfigResponse
+        """
+
+        all_params = ['create_access_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/lts/access-config',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateAccessConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_host_group(self, request):
+        """创建主机组
+
+        创建主机组
+
+        :param CreateHostGroupRequest request
+        :return: CreateHostGroupResponse
+        """
+        return self.create_host_group_with_http_info(request)
+
+    def create_host_group_with_http_info(self, request):
+        """创建主机组
+
+        创建主机组
+
+        :param CreateHostGroupRequest request
+        :return: CreateHostGroupResponse
+        """
+
+        all_params = ['create_host_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/lts/host-group',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateHostGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_keywords_alarm_rule(self, request):
         """创建关键词告警规则
 
@@ -493,6 +619,69 @@ class LtsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_access_config(self, request):
+        """删除日志接入
+
+        删除日志接入
+
+        :param DeleteAccessConfigRequest request
+        :return: DeleteAccessConfigResponse
+        """
+        return self.delete_access_config_with_http_info(request)
+
+    def delete_access_config_with_http_info(self, request):
+        """删除日志接入
+
+        删除日志接入
+
+        :param DeleteAccessConfigRequest request
+        :return: DeleteAccessConfigResponse
+        """
+
+        all_params = ['delete_access_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/lts/access-config',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteAccessConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_active_alarms(self, request):
         """删除活动告警
 
@@ -552,6 +741,69 @@ class LtsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteActiveAlarmsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_host_group(self, request):
+        """删除主机组
+
+        删除主机组
+
+        :param DeleteHostGroupRequest request
+        :return: DeleteHostGroupResponse
+        """
+        return self.delete_host_group_with_http_info(request)
+
+    def delete_host_group_with_http_info(self, request):
+        """删除主机组
+
+        删除主机组
+
+        :param DeleteHostGroupRequest request
+        :return: DeleteHostGroupResponse
+        """
+
+        all_params = ['delete_host_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/lts/host-group',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteHostGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1062,6 +1314,69 @@ class LtsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_access_config(self, request):
+        """查询日志接入
+
+        查询日志接入列表
+
+        :param ListAccessConfigRequest request
+        :return: ListAccessConfigResponse
+        """
+        return self.list_access_config_with_http_info(request)
+
+    def list_access_config_with_http_info(self, request):
+        """查询日志接入
+
+        查询日志接入列表
+
+        :param ListAccessConfigRequest request
+        :return: ListAccessConfigResponse
+        """
+
+        all_params = ['list_access_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/lts/access-config-list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAccessConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_active_or_history_alarms(self, request):
         """查询活动或历史告警列表
 
@@ -1198,6 +1513,132 @@ class LtsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_host(self, request):
+        """查询主机信息
+
+        查询主机列表
+
+        :param ListHostRequest request
+        :return: ListHostResponse
+        """
+        return self.list_host_with_http_info(request)
+
+    def list_host_with_http_info(self, request):
+        """查询主机信息
+
+        查询主机列表
+
+        :param ListHostRequest request
+        :return: ListHostResponse
+        """
+
+        all_params = ['list_host_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/lts/host-list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListHostResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_host_group(self, request):
+        """查询主机组
+
+        查询主机组列表
+
+        :param ListHostGroupRequest request
+        :return: ListHostGroupResponse
+        """
+        return self.list_host_group_with_http_info(request)
+
+    def list_host_group_with_http_info(self, request):
+        """查询主机组
+
+        查询主机组列表
+
+        :param ListHostGroupRequest request
+        :return: ListHostGroupResponse
+        """
+
+        all_params = ['list_host_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/lts/host-group-list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListHostGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_keywords_alarm_rules(self, request):
         """查询关键词告警规则
 
@@ -1320,6 +1761,69 @@ class LtsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_log_histogram(self, request):
+        """查询关键词搜索条数
+
+        查询关键词搜索条数
+
+        :param ListLogHistogramRequest request
+        :return: ListLogHistogramResponse
+        """
+        return self.list_log_histogram_with_http_info(request)
+
+    def list_log_histogram_with_http_info(self, request):
+        """查询关键词搜索条数
+
+        查询关键词搜索条数
+
+        :param ListLogHistogramRequest request
+        :return: ListLogHistogramResponse
+        """
+
+        all_params = ['list_log_histogram_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/keyword-count',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListLogHistogramResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_log_stream(self, request):
         """查询指定日志组下的所有日志流
 
@@ -1404,7 +1908,7 @@ class LtsClient(Client):
         :return: ListLogStreamsResponse
         """
 
-        all_params = ['log_group_name', 'log_stream_name']
+        all_params = ['log_group_name', 'log_stream_name', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1419,6 +1923,10 @@ class LtsClient(Client):
             query_params.append(('log_group_name', local_var_params['log_group_name']))
         if 'log_stream_name' in local_var_params:
             query_params.append(('log_stream_name', local_var_params['log_stream_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1861,7 +2369,7 @@ class LtsClient(Client):
         :return: ListTransfersResponse
         """
 
-        all_params = ['log_transfer_type', 'log_group_name', 'log_stream_name']
+        all_params = ['log_transfer_type', 'log_group_name', 'log_stream_name', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1878,6 +2386,10 @@ class LtsClient(Client):
             query_params.append(('log_group_name', local_var_params['log_group_name']))
         if 'log_stream_name' in local_var_params:
             query_params.append(('log_stream_name', local_var_params['log_stream_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -2096,6 +2608,132 @@ class LtsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowStructTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_access_config(self, request):
+        """修改日志接入
+
+        修改日志接入
+
+        :param UpdateAccessConfigRequest request
+        :return: UpdateAccessConfigResponse
+        """
+        return self.update_access_config_with_http_info(request)
+
+    def update_access_config_with_http_info(self, request):
+        """修改日志接入
+
+        修改日志接入
+
+        :param UpdateAccessConfigRequest request
+        :return: UpdateAccessConfigResponse
+        """
+
+        all_params = ['update_access_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/lts/access-config',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateAccessConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_host_group(self, request):
+        """更新主机组
+
+        更新主机组
+
+        :param UpdateHostGroupRequest request
+        :return: UpdateHostGroupResponse
+        """
+        return self.update_host_group_with_http_info(request)
+
+    def update_host_group_with_http_info(self, request):
+        """更新主机组
+
+        更新主机组
+
+        :param UpdateHostGroupRequest request
+        :return: UpdateHostGroupResponse
+        """
+
+        all_params = ['update_host_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/lts/host-group',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateHostGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

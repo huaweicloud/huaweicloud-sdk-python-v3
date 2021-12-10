@@ -24,11 +24,11 @@ class Events:
     openapi_types = {
         'annotations': 'Annotations',
         'metadata': 'Metadata',
-        'arrives_at': 'object',
-        'ends_at': 'object',
+        'arrives_at': 'int',
+        'ends_at': 'int',
         'id': 'str',
-        'starts_at': 'object',
-        'timeout': 'object',
+        'starts_at': 'int',
+        'timeout': 'int',
         'type': 'str'
     }
 
@@ -71,7 +71,6 @@ class Events:
     def annotations(self):
         """Gets the annotations of this Events.
 
-        告警详情
 
         :return: The annotations of this Events.
         :rtype: Annotations
@@ -82,7 +81,6 @@ class Events:
     def annotations(self, annotations):
         """Sets the annotations of this Events.
 
-        告警详情
 
         :param annotations: The annotations of this Events.
         :type: Annotations
@@ -93,7 +91,6 @@ class Events:
     def metadata(self):
         """Gets the metadata of this Events.
 
-        告警信息
 
         :return: The metadata of this Events.
         :rtype: Metadata
@@ -104,7 +101,6 @@ class Events:
     def metadata(self, metadata):
         """Sets the metadata of this Events.
 
-        告警信息
 
         :param metadata: The metadata of this Events.
         :type: Metadata
@@ -118,7 +114,7 @@ class Events:
         到达时间(时间戳)
 
         :return: The arrives_at of this Events.
-        :rtype: object
+        :rtype: int
         """
         return self._arrives_at
 
@@ -129,7 +125,7 @@ class Events:
         到达时间(时间戳)
 
         :param arrives_at: The arrives_at of this Events.
-        :type: object
+        :type: int
         """
         self._arrives_at = arrives_at
 
@@ -140,7 +136,7 @@ class Events:
         告警清除时间(时间戳)
 
         :return: The ends_at of this Events.
-        :rtype: object
+        :rtype: int
         """
         return self._ends_at
 
@@ -151,7 +147,7 @@ class Events:
         告警清除时间(时间戳)
 
         :param ends_at: The ends_at of this Events.
-        :type: object
+        :type: int
         """
         self._ends_at = ends_at
 
@@ -184,7 +180,7 @@ class Events:
         告警产生时间(时间戳)
 
         :return: The starts_at of this Events.
-        :rtype: object
+        :rtype: int
         """
         return self._starts_at
 
@@ -195,7 +191,7 @@ class Events:
         告警产生时间(时间戳)
 
         :param starts_at: The starts_at of this Events.
-        :type: object
+        :type: int
         """
         self._starts_at = starts_at
 
@@ -206,7 +202,7 @@ class Events:
         告警自动清除时间(时间戳)
 
         :return: The timeout of this Events.
-        :rtype: object
+        :rtype: int
         """
         return self._timeout
 
@@ -217,7 +213,7 @@ class Events:
         告警自动清除时间(时间戳)
 
         :param timeout: The timeout of this Events.
-        :type: object
+        :type: int
         """
         self._timeout = timeout
 

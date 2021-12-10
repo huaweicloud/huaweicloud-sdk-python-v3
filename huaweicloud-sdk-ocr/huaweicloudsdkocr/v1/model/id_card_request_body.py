@@ -125,7 +125,7 @@ class IdCardRequestBody:
     def return_verification(self):
         """Gets the return_verification of this IdCardRequestBody.
 
-        返回校验身份证号等信息的开关，默认false，可选值如下所示：  - true：返回校验信息  - false：不反回校验信息 
+        返回校验身份证号等信息的开关，默认false，可选值如下所示：  - true：返回校验信息  - false：不返回校验信息 
 
         :return: The return_verification of this IdCardRequestBody.
         :rtype: bool
@@ -136,7 +136,7 @@ class IdCardRequestBody:
     def return_verification(self, return_verification):
         """Sets the return_verification of this IdCardRequestBody.
 
-        返回校验身份证号等信息的开关，默认false，可选值如下所示：  - true：返回校验信息  - false：不反回校验信息 
+        返回校验身份证号等信息的开关，默认false，可选值如下所示：  - true：返回校验信息  - false：不返回校验信息 
 
         :param return_verification: The return_verification of this IdCardRequestBody.
         :type: bool

@@ -22,45 +22,44 @@ class DeleteStructTemplateReqBody:
     sensitive_list = []
 
     openapi_types = {
-        'struct_template_id': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
-        'struct_template_id': 'struct_template_id'
+        'id': 'id'
     }
 
-    def __init__(self, struct_template_id=None):
+    def __init__(self, id=None):
         """DeleteStructTemplateReqBody - a model defined in huaweicloud sdk"""
         
         
 
-        self._struct_template_id = None
+        self._id = None
         self.discriminator = None
 
-        if struct_template_id is not None:
-            self.struct_template_id = struct_template_id
+        self.id = id
 
     @property
-    def struct_template_id(self):
-        """Gets the struct_template_id of this DeleteStructTemplateReqBody.
+    def id(self):
+        """Gets the id of this DeleteStructTemplateReqBody.
 
         结构化规则ID
 
-        :return: The struct_template_id of this DeleteStructTemplateReqBody.
+        :return: The id of this DeleteStructTemplateReqBody.
         :rtype: str
         """
-        return self._struct_template_id
+        return self._id
 
-    @struct_template_id.setter
-    def struct_template_id(self, struct_template_id):
-        """Sets the struct_template_id of this DeleteStructTemplateReqBody.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this DeleteStructTemplateReqBody.
 
         结构化规则ID
 
-        :param struct_template_id: The struct_template_id of this DeleteStructTemplateReqBody.
+        :param id: The id of this DeleteStructTemplateReqBody.
         :type: str
         """
-        self._struct_template_id = struct_template_id
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

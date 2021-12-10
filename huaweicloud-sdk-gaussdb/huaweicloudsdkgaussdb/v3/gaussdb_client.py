@@ -48,6 +48,73 @@ class GaussDBClient(Client):
 
         return ClientBuilder(clazz)
 
+    def batch_tag_action(self, request):
+        """批量添加或删除标签
+
+        批量添加或删除指定实例的标签。
+
+        :param BatchTagActionRequest request
+        :return: BatchTagActionResponse
+        """
+        return self.batch_tag_action_with_http_info(request)
+
+    def batch_tag_action_with_http_info(self, request):
+        """批量添加或删除标签
+
+        批量添加或删除指定实例的标签。
+
+        :param BatchTagActionRequest request
+        :return: BatchTagActionResponse
+        """
+
+        all_params = ['instance_id', 'batch_operate_instance_tag_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/tags/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchTagActionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def change_gauss_my_sql_instance_specification(self, request):
         """变更实例规格
 
@@ -940,7 +1007,7 @@ class GaussDBClient(Client):
         :return: ListGaussMySqlInstancesResponse
         """
 
-        all_params = ['x_language', 'id', 'name', 'type', 'datastore_type', 'vpc_id', 'subnet_id', 'offset', 'limit']
+        all_params = ['x_language', 'id', 'name', 'type', 'datastore_type', 'vpc_id', 'subnet_id', 'private_ip', 'offset', 'limit', 'tags']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -963,10 +1030,14 @@ class GaussDBClient(Client):
             query_params.append(('vpc_id', local_var_params['vpc_id']))
         if 'subnet_id' in local_var_params:
             query_params.append(('subnet_id', local_var_params['subnet_id']))
+        if 'private_ip' in local_var_params:
+            query_params.append(('private_ip', local_var_params['private_ip']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -1071,6 +1142,142 @@ class GaussDBClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListGaussMySqlSlowLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_instance_tags(self, request):
+        """查询资源标签
+
+        查询指定实例的标签信息。
+
+        :param ListInstanceTagsRequest request
+        :return: ListInstanceTagsResponse
+        """
+        return self.list_instance_tags_with_http_info(request)
+
+    def list_instance_tags_with_http_info(self, request):
+        """查询资源标签
+
+        查询指定实例的标签信息。
+
+        :param ListInstanceTagsRequest request
+        :return: ListInstanceTagsResponse
+        """
+
+        all_params = ['instance_id', 'x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListInstanceTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_project_tags(self, request):
+        """查询项目标签
+
+        查询指定project ID下实例的所有标签集合。
+
+        :param ListProjectTagsRequest request
+        :return: ListProjectTagsResponse
+        """
+        return self.list_project_tags_with_http_info(request)
+
+    def list_project_tags_with_http_info(self, request):
+        """查询项目标签
+
+        查询指定project ID下实例的所有标签集合。
+
+        :param ListProjectTagsRequest request
+        :return: ListProjectTagsResponse
+        """
+
+        all_params = ['x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListProjectTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1881,6 +2088,71 @@ class GaussDBClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_instance_monitor_extend(self, request):
+        """查询实例秒级监控频率
+
+        查询实例秒级监控频率。
+
+        :param ShowInstanceMonitorExtendRequest request
+        :return: ShowInstanceMonitorExtendResponse
+        """
+        return self.show_instance_monitor_extend_with_http_info(request)
+
+    def show_instance_monitor_extend_with_http_info(self, request):
+        """查询实例秒级监控频率
+
+        查询实例秒级监控频率。
+
+        :param ShowInstanceMonitorExtendRequest request
+        :return: ShowInstanceMonitorExtendResponse
+        """
+
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/monitorPolicy',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowInstanceMonitorExtendResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_gauss_my_sql_backup_policy(self, request):
         """修改备份策略
 
@@ -2074,6 +2346,73 @@ class GaussDBClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateGaussMySqlQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_instance_monitor(self, request):
+        """修改实例秒级监控频率
+
+        打开/关闭/修改实例秒级监控。
+
+        :param UpdateInstanceMonitorRequest request
+        :return: UpdateInstanceMonitorResponse
+        """
+        return self.update_instance_monitor_with_http_info(request)
+
+    def update_instance_monitor_with_http_info(self, request):
+        """修改实例秒级监控频率
+
+        打开/关闭/修改实例秒级监控。
+
+        :param UpdateInstanceMonitorRequest request
+        :return: UpdateInstanceMonitorResponse
+        """
+
+        all_params = ['instance_id', 'taurus_modify_instance_monitor_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/monitorPolicy',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateInstanceMonitorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

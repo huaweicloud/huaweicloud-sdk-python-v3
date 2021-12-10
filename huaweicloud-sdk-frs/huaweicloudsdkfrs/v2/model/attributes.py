@@ -24,18 +24,10 @@ class Attributes:
     openapi_types = {
         'dress': 'Dress',
         'glass': 'str',
-        'gender': 'str',
-        'yaw_angle': 'float',
-        'roll_angle': 'float',
-        'pitch_angle': 'float',
         'hat': 'str',
-        'headpose': 'list[float]',
         'age': 'int',
-        'smile': 'str',
         'mask': 'str',
         'beard': 'str',
-        'skin': 'str',
-        'ethnic': 'str',
         'phototype': 'str',
         'quality': 'FaceQuality',
         'hair': 'str',
@@ -46,18 +38,10 @@ class Attributes:
     attribute_map = {
         'dress': 'dress',
         'glass': 'glass',
-        'gender': 'gender',
-        'yaw_angle': 'yaw_angle',
-        'roll_angle': 'roll_angle',
-        'pitch_angle': 'pitch_angle',
         'hat': 'hat',
-        'headpose': 'headpose',
         'age': 'age',
-        'smile': 'smile',
         'mask': 'mask',
         'beard': 'beard',
-        'skin': 'skin',
-        'ethnic': 'ethnic',
         'phototype': 'phototype',
         'quality': 'quality',
         'hair': 'hair',
@@ -65,25 +49,17 @@ class Attributes:
         'face_angle': 'face_angle'
     }
 
-    def __init__(self, dress=None, glass=None, gender=None, yaw_angle=None, roll_angle=None, pitch_angle=None, hat=None, headpose=None, age=None, smile=None, mask=None, beard=None, skin=None, ethnic=None, phototype=None, quality=None, hair=None, expression=None, face_angle=None):
+    def __init__(self, dress=None, glass=None, hat=None, age=None, mask=None, beard=None, phototype=None, quality=None, hair=None, expression=None, face_angle=None):
         """Attributes - a model defined in huaweicloud sdk"""
         
         
 
         self._dress = None
         self._glass = None
-        self._gender = None
-        self._yaw_angle = None
-        self._roll_angle = None
-        self._pitch_angle = None
         self._hat = None
-        self._headpose = None
         self._age = None
-        self._smile = None
         self._mask = None
         self._beard = None
-        self._skin = None
-        self._ethnic = None
         self._phototype = None
         self._quality = None
         self._hair = None
@@ -93,18 +69,10 @@ class Attributes:
 
         self.dress = dress
         self.glass = glass
-        self.gender = gender
-        self.yaw_angle = yaw_angle
-        self.roll_angle = roll_angle
-        self.pitch_angle = pitch_angle
         self.hat = hat
-        self.headpose = headpose
         self.age = age
-        self.smile = smile
         self.mask = mask
         self.beard = beard
-        self.skin = skin
-        self.ethnic = ethnic
         self.phototype = phototype
         self.quality = quality
         self.hair = hair
@@ -154,94 +122,6 @@ class Attributes:
         self._glass = glass
 
     @property
-    def gender(self):
-        """Gets the gender of this Attributes.
-
-        性别： • male：男 • female：女 • unknown：未知
-
-        :return: The gender of this Attributes.
-        :rtype: str
-        """
-        return self._gender
-
-    @gender.setter
-    def gender(self, gender):
-        """Sets the gender of this Attributes.
-
-        性别： • male：男 • female：女 • unknown：未知
-
-        :param gender: The gender of this Attributes.
-        :type: str
-        """
-        self._gender = gender
-
-    @property
-    def yaw_angle(self):
-        """Gets the yaw_angle of this Attributes.
-
-        围绕Y轴旋转，偏航角，范围[-180,180]。
-
-        :return: The yaw_angle of this Attributes.
-        :rtype: float
-        """
-        return self._yaw_angle
-
-    @yaw_angle.setter
-    def yaw_angle(self, yaw_angle):
-        """Sets the yaw_angle of this Attributes.
-
-        围绕Y轴旋转，偏航角，范围[-180,180]。
-
-        :param yaw_angle: The yaw_angle of this Attributes.
-        :type: float
-        """
-        self._yaw_angle = yaw_angle
-
-    @property
-    def roll_angle(self):
-        """Gets the roll_angle of this Attributes.
-
-        围绕Z轴旋转，翻滚角，范围[-180,180]。
-
-        :return: The roll_angle of this Attributes.
-        :rtype: float
-        """
-        return self._roll_angle
-
-    @roll_angle.setter
-    def roll_angle(self, roll_angle):
-        """Sets the roll_angle of this Attributes.
-
-        围绕Z轴旋转，翻滚角，范围[-180,180]。
-
-        :param roll_angle: The roll_angle of this Attributes.
-        :type: float
-        """
-        self._roll_angle = roll_angle
-
-    @property
-    def pitch_angle(self):
-        """Gets the pitch_angle of this Attributes.
-
-        围绕X轴旋转，俯仰角，范围[-180,180]。
-
-        :return: The pitch_angle of this Attributes.
-        :rtype: float
-        """
-        return self._pitch_angle
-
-    @pitch_angle.setter
-    def pitch_angle(self, pitch_angle):
-        """Sets the pitch_angle of this Attributes.
-
-        围绕X轴旋转，俯仰角，范围[-180,180]。
-
-        :param pitch_angle: The pitch_angle of this Attributes.
-        :type: float
-        """
-        self._pitch_angle = pitch_angle
-
-    @property
     def hat(self):
         """Gets the hat of this Attributes.
 
@@ -264,28 +144,6 @@ class Attributes:
         self._hat = hat
 
     @property
-    def headpose(self):
-        """Gets the headpose of this Attributes.
-
-        人脸轮廓坐标值。
-
-        :return: The headpose of this Attributes.
-        :rtype: list[float]
-        """
-        return self._headpose
-
-    @headpose.setter
-    def headpose(self, headpose):
-        """Sets the headpose of this Attributes.
-
-        人脸轮廓坐标值。
-
-        :param headpose: The headpose of this Attributes.
-        :type: list[float]
-        """
-        self._headpose = headpose
-
-    @property
     def age(self):
         """Gets the age of this Attributes.
 
@@ -306,28 +164,6 @@ class Attributes:
         :type: int
         """
         self._age = age
-
-    @property
-    def smile(self):
-        """Gets the smile of this Attributes.
-
-        笑脸。
-
-        :return: The smile of this Attributes.
-        :rtype: str
-        """
-        return self._smile
-
-    @smile.setter
-    def smile(self, smile):
-        """Sets the smile of this Attributes.
-
-        笑脸。
-
-        :param smile: The smile of this Attributes.
-        :type: str
-        """
-        self._smile = smile
 
     @property
     def mask(self):
@@ -372,50 +208,6 @@ class Attributes:
         :type: str
         """
         self._beard = beard
-
-    @property
-    def skin(self):
-        """Gets the skin of this Attributes.
-
-        肤色： • brown：棕 • yellow：黄 • white：白 • black：黑 • unknown：未知
-
-        :return: The skin of this Attributes.
-        :rtype: str
-        """
-        return self._skin
-
-    @skin.setter
-    def skin(self, skin):
-        """Sets the skin of this Attributes.
-
-        肤色： • brown：棕 • yellow：黄 • white：白 • black：黑 • unknown：未知
-
-        :param skin: The skin of this Attributes.
-        :type: str
-        """
-        self._skin = skin
-
-    @property
-    def ethnic(self):
-        """Gets the ethnic of this Attributes.
-
-        民族： • han：汉族 • other：其他 • unknown：未知
-
-        :return: The ethnic of this Attributes.
-        :rtype: str
-        """
-        return self._ethnic
-
-    @ethnic.setter
-    def ethnic(self, ethnic):
-        """Sets the ethnic of this Attributes.
-
-        民族： • han：汉族 • other：其他 • unknown：未知
-
-        :param ethnic: The ethnic of this Attributes.
-        :type: str
-        """
-        self._ethnic = ethnic
 
     @property
     def phototype(self):

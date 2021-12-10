@@ -377,6 +377,144 @@ class CodeCheckAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_task_ruleset_async(self, request):
+        """查询任务的已选规则集列表
+
+        查询任务的已选规则集列表。
+
+        :param ListTaskRulesetRequest request
+        :return: ListTaskRulesetResponse
+        """
+        return self.list_task_ruleset_with_http_info(request)
+
+    def list_task_ruleset_with_http_info(self, request):
+        """查询任务的已选规则集列表
+
+        查询任务的已选规则集列表。
+
+        :param ListTaskRulesetRequest request
+        :return: ListTaskRulesetResponse
+        """
+
+        all_params = ['project_id', 'task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/tasks/{task_id}/rulesets',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTaskRulesetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_template_rules_async(self, request):
+        """查看规则集的规则列表
+
+        根据项目ID、规则集ID等条件查询规则列表。
+
+        :param ListTemplateRulesRequest request
+        :return: ListTemplateRulesResponse
+        """
+        return self.list_template_rules_with_http_info(request)
+
+    def list_template_rules_with_http_info(self, request):
+        """查看规则集的规则列表
+
+        根据项目ID、规则集ID等条件查询规则列表。
+
+        :param ListTemplateRulesRequest request
+        :return: ListTemplateRulesResponse
+        """
+
+        all_params = ['project_id', 'ruleset_id', 'types', 'languages', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'ruleset_id' in local_var_params:
+            path_params['ruleset_id'] = local_var_params['ruleset_id']
+
+        query_params = []
+        if 'types' in local_var_params:
+            query_params.append(('types', local_var_params['types']))
+        if 'languages' in local_var_params:
+            query_params.append(('languages', local_var_params['languages']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ruleset/{ruleset_id}/rules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTemplateRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def run_task_async(self, request):
         """执行检查任务
 
@@ -499,6 +637,71 @@ class CodeCheckAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowProgressDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_task_cmetrics_async(self, request):
+        """查询cmertrics缺陷概要
+
+        根据检查任务ID查询cmertrics缺陷概要。
+
+        :param ShowTaskCmetricsRequest request
+        :return: ShowTaskCmetricsResponse
+        """
+        return self.show_task_cmetrics_with_http_info(request)
+
+    def show_task_cmetrics_with_http_info(self, request):
+        """查询cmertrics缺陷概要
+
+        根据检查任务ID查询cmertrics缺陷概要。
+
+        :param ShowTaskCmetricsRequest request
+        :return: ShowTaskCmetricsResponse
+        """
+
+        all_params = ['project_id', 'task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/tasks/{task_id}/metrics-summary',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowTaskCmetricsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

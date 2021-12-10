@@ -24,9 +24,9 @@ class ListActiveOrHistoryAlarmsRequestBody:
     openapi_types = {
         'step': 'int',
         'whether_custom_field': 'bool',
-        'start_time': 'object',
-        'end_time': 'object',
-        'time_range': 'int',
+        'start_time': 'int',
+        'end_time': 'int',
+        'time_range': 'str',
         'search': 'str',
         'alarm_level_ids': 'list[str]',
         'sort': 'Sort'
@@ -39,7 +39,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         'end_time': 'end_time',
         'time_range': 'time_range',
         'search': 'search',
-        'alarm_level_ids': 'alarmLevelIds',
+        'alarm_level_ids': 'alarm_level_ids',
         'sort': 'sort'
     }
 
@@ -125,7 +125,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         自定义时间段开始时间(时间戳)
 
         :return: The start_time of this ListActiveOrHistoryAlarmsRequestBody.
-        :rtype: object
+        :rtype: int
         """
         return self._start_time
 
@@ -136,7 +136,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         自定义时间段开始时间(时间戳)
 
         :param start_time: The start_time of this ListActiveOrHistoryAlarmsRequestBody.
-        :type: object
+        :type: int
         """
         self._start_time = start_time
 
@@ -147,7 +147,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         自定义时间段结束时间(时间戳)
 
         :return: The end_time of this ListActiveOrHistoryAlarmsRequestBody.
-        :rtype: object
+        :rtype: int
         """
         return self._end_time
 
@@ -158,7 +158,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         自定义时间段结束时间(时间戳)
 
         :param end_time: The end_time of this ListActiveOrHistoryAlarmsRequestBody.
-        :type: object
+        :type: int
         """
         self._end_time = end_time
 
@@ -169,7 +169,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         非自定义时间段时间范围(单位为分钟)
 
         :return: The time_range of this ListActiveOrHistoryAlarmsRequestBody.
-        :rtype: int
+        :rtype: str
         """
         return self._time_range
 
@@ -180,7 +180,7 @@ class ListActiveOrHistoryAlarmsRequestBody:
         非自定义时间段时间范围(单位为分钟)
 
         :param time_range: The time_range of this ListActiveOrHistoryAlarmsRequestBody.
-        :type: int
+        :type: str
         """
         self._time_range = time_range
 
@@ -232,7 +232,6 @@ class ListActiveOrHistoryAlarmsRequestBody:
     def sort(self):
         """Gets the sort of this ListActiveOrHistoryAlarmsRequestBody.
 
-        排序检索条件
 
         :return: The sort of this ListActiveOrHistoryAlarmsRequestBody.
         :rtype: Sort
@@ -243,7 +242,6 @@ class ListActiveOrHistoryAlarmsRequestBody:
     def sort(self, sort):
         """Sets the sort of this ListActiveOrHistoryAlarmsRequestBody.
 
-        排序检索条件
 
         :param sort: The sort of this ListActiveOrHistoryAlarmsRequestBody.
         :type: Sort

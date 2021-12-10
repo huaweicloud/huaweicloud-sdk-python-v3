@@ -130,7 +130,7 @@ class QueryResRecordsDetailReq:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this QueryResRecordsDetailReq.
 
-        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填，最大长度：64，且只允许字符串，例如ECS的云服务类型编码为“hws.service.type.ec2”|
+        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填，最大长度：64，且只允许字符串，例如OBS的云服务类型编码为“hws.service.type.obs”|
 
         :return: The cloud_service_type of this QueryResRecordsDetailReq.
         :rtype: str
@@ -141,7 +141,7 @@ class QueryResRecordsDetailReq:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this QueryResRecordsDetailReq.
 
-        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填，最大长度：64，且只允许字符串，例如ECS的云服务类型编码为“hws.service.type.ec2”|
+        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填，最大长度：64，且只允许字符串，例如OBS的云服务类型编码为“hws.service.type.obs”|
 
         :param cloud_service_type: The cloud_service_type of this QueryResRecordsDetailReq.
         :type: str

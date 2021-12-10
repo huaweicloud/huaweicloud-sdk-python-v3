@@ -23,31 +23,26 @@ class DetectFace:
 
     openapi_types = {
         'bounding_box': 'BoundingBox',
-        'attributes': 'Attributes',
-        'landmark': 'Landmark'
+        'attributes': 'Attributes'
     }
 
     attribute_map = {
         'bounding_box': 'bounding_box',
-        'attributes': 'attributes',
-        'landmark': 'landmark'
+        'attributes': 'attributes'
     }
 
-    def __init__(self, bounding_box=None, attributes=None, landmark=None):
+    def __init__(self, bounding_box=None, attributes=None):
         """DetectFace - a model defined in huaweicloud sdk"""
         
         
 
         self._bounding_box = None
         self._attributes = None
-        self._landmark = None
         self.discriminator = None
 
         self.bounding_box = bounding_box
         if attributes is not None:
             self.attributes = attributes
-        if landmark is not None:
-            self.landmark = landmark
 
     @property
     def bounding_box(self):
@@ -88,26 +83,6 @@ class DetectFace:
         :type: Attributes
         """
         self._attributes = attributes
-
-    @property
-    def landmark(self):
-        """Gets the landmark of this DetectFace.
-
-
-        :return: The landmark of this DetectFace.
-        :rtype: Landmark
-        """
-        return self._landmark
-
-    @landmark.setter
-    def landmark(self, landmark):
-        """Sets the landmark of this DetectFace.
-
-
-        :param landmark: The landmark of this DetectFace.
-        :type: Landmark
-        """
-        self._landmark = landmark
 
     def to_dict(self):
         """Returns the model properties as a dict"""

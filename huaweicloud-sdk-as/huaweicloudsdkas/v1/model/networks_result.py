@@ -24,16 +24,18 @@ class NetworksResult:
     openapi_types = {
         'id': 'str',
         'ipv6_enable': 'bool',
-        'ipv6_bandwidth': 'Ipv6Bandwidth'
+        'ipv6_bandwidth': 'Ipv6Bandwidth',
+        'allowed_address_pairs': 'list[AllowedAddressPair]'
     }
 
     attribute_map = {
         'id': 'id',
         'ipv6_enable': 'ipv6_enable',
-        'ipv6_bandwidth': 'ipv6_bandwidth'
+        'ipv6_bandwidth': 'ipv6_bandwidth',
+        'allowed_address_pairs': 'allowed_address_pairs'
     }
 
-    def __init__(self, id=None, ipv6_enable=None, ipv6_bandwidth=None):
+    def __init__(self, id=None, ipv6_enable=None, ipv6_bandwidth=None, allowed_address_pairs=None):
         """NetworksResult - a model defined in huaweicloud sdk"""
         
         
@@ -41,6 +43,7 @@ class NetworksResult:
         self._id = None
         self._ipv6_enable = None
         self._ipv6_bandwidth = None
+        self._allowed_address_pairs = None
         self.discriminator = None
 
         if id is not None:
@@ -49,6 +52,8 @@ class NetworksResult:
             self.ipv6_enable = ipv6_enable
         if ipv6_bandwidth is not None:
             self.ipv6_bandwidth = ipv6_bandwidth
+        if allowed_address_pairs is not None:
+            self.allowed_address_pairs = allowed_address_pairs
 
     @property
     def id(self):
@@ -113,6 +118,28 @@ class NetworksResult:
         :type: Ipv6Bandwidth
         """
         self._ipv6_bandwidth = ipv6_bandwidth
+
+    @property
+    def allowed_address_pairs(self):
+        """Gets the allowed_address_pairs of this NetworksResult.
+
+        是否开启源/目的检查开关。
+
+        :return: The allowed_address_pairs of this NetworksResult.
+        :rtype: list[AllowedAddressPair]
+        """
+        return self._allowed_address_pairs
+
+    @allowed_address_pairs.setter
+    def allowed_address_pairs(self, allowed_address_pairs):
+        """Sets the allowed_address_pairs of this NetworksResult.
+
+        是否开启源/目的检查开关。
+
+        :param allowed_address_pairs: The allowed_address_pairs of this NetworksResult.
+        :type: list[AllowedAddressPair]
+        """
+        self._allowed_address_pairs = allowed_address_pairs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

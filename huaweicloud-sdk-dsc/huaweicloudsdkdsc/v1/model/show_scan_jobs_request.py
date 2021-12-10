@@ -22,7 +22,7 @@ class ShowScanJobsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'page': 'int',
+        'offset': 'int',
         'limit': 'int',
         'content': 'str',
         'start_time': 'str',
@@ -30,27 +30,27 @@ class ShowScanJobsRequest:
     }
 
     attribute_map = {
-        'page': 'page',
+        'offset': 'offset',
         'limit': 'limit',
         'content': 'content',
         'start_time': 'start_time',
         'end_time': 'end_time'
     }
 
-    def __init__(self, page=None, limit=None, content=None, start_time=None, end_time=None):
+    def __init__(self, offset=None, limit=None, content=None, start_time=None, end_time=None):
         """ShowScanJobsRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._page = None
+        self._offset = None
         self._limit = None
         self._content = None
         self._start_time = None
         self._end_time = None
         self.discriminator = None
 
-        if page is not None:
-            self.page = page
+        if offset is not None:
+            self.offset = offset
         if limit is not None:
             self.limit = limit
         if content is not None:
@@ -61,26 +61,26 @@ class ShowScanJobsRequest:
             self.end_time = end_time
 
     @property
-    def page(self):
-        """Gets the page of this ShowScanJobsRequest.
+    def offset(self):
+        """Gets the offset of this ShowScanJobsRequest.
 
         页码
 
-        :return: The page of this ShowScanJobsRequest.
+        :return: The offset of this ShowScanJobsRequest.
         :rtype: int
         """
-        return self._page
+        return self._offset
 
-    @page.setter
-    def page(self, page):
-        """Sets the page of this ShowScanJobsRequest.
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ShowScanJobsRequest.
 
         页码
 
-        :param page: The page of this ShowScanJobsRequest.
+        :param offset: The offset of this ShowScanJobsRequest.
         :type: int
         """
-        self._page = page
+        self._offset = offset
 
     @property
     def limit(self):

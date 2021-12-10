@@ -107,7 +107,7 @@ class GroupResponseItem:
     def name(self):
         """Gets the name of this GroupResponseItem.
 
-        组名组名称。节点类型为shard和config时，该参数有效。
+        组名称。节点类型为shard和config时，该参数有效。
 
         :return: The name of this GroupResponseItem.
         :rtype: str
@@ -118,7 +118,7 @@ class GroupResponseItem:
     def name(self, name):
         """Sets the name of this GroupResponseItem.
 
-        组名组名称。节点类型为shard和config时，该参数有效。
+        组名称。节点类型为shard和config时，该参数有效。
 
         :param name: The name of this GroupResponseItem.
         :type: str

@@ -176,7 +176,7 @@ class CreatePremiumHostRequestBody:
     def server(self):
         """Gets the server of this CreatePremiumHostRequestBody.
 
-        独享模式回源服务器配置
+        服务器配置
 
         :return: The server of this CreatePremiumHostRequestBody.
         :rtype: list[PremiumWafServer]
@@ -187,7 +187,7 @@ class CreatePremiumHostRequestBody:
     def server(self, server):
         """Sets the server of this CreatePremiumHostRequestBody.
 
-        独享模式回源服务器配置
+        服务器配置
 
         :param server: The server of this CreatePremiumHostRequestBody.
         :type: list[PremiumWafServer]

@@ -141,7 +141,7 @@ class OrderLineItemEntityV2:
     def service_type_code(self):
         """Gets the service_type_code of this OrderLineItemEntityV2.
 
-        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :return: The service_type_code of this OrderLineItemEntityV2.
         :rtype: str
@@ -152,7 +152,7 @@ class OrderLineItemEntityV2:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this OrderLineItemEntityV2.
 
-        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this OrderLineItemEntityV2.
         :type: str
@@ -425,7 +425,7 @@ class OrderLineItemEntityV2:
     def product_owner_service(self):
         """Gets the product_owner_service of this OrderLineItemEntityV2.
 
-        产品归属的云服务类型编码。 云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
+        产品归属的云服务类型编码。 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :return: The product_owner_service of this OrderLineItemEntityV2.
         :rtype: str
@@ -436,7 +436,7 @@ class OrderLineItemEntityV2:
     def product_owner_service(self, product_owner_service):
         """Sets the product_owner_service of this OrderLineItemEntityV2.
 
-        产品归属的云服务类型编码。 云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
+        产品归属的云服务类型编码。 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param product_owner_service: The product_owner_service of this OrderLineItemEntityV2.
         :type: str

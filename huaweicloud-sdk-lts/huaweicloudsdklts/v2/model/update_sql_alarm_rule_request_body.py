@@ -33,7 +33,7 @@ class UpdateSqlAlarmRuleRequestBody:
         'sql_alarm_send_code': 'int',
         'domain_id': 'str',
         'notification_save_rule': 'NotificationSaveRule',
-        'whether_english': 'bool'
+        'language': 'str'
     }
 
     attribute_map = {
@@ -48,10 +48,10 @@ class UpdateSqlAlarmRuleRequestBody:
         'sql_alarm_send_code': 'sql_alarm_send_code',
         'domain_id': 'domain_id',
         'notification_save_rule': 'notification_save_rule',
-        'whether_english': 'whether_english'
+        'language': 'language'
     }
 
-    def __init__(self, sql_alarm_rule_id=None, sql_alarm_rule_name=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, sql_alarm_send_code=None, domain_id=None, notification_save_rule=None, whether_english=None):
+    def __init__(self, sql_alarm_rule_id=None, sql_alarm_rule_name=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, sql_alarm_send_code=None, domain_id=None, notification_save_rule=None, language=None):
         """UpdateSqlAlarmRuleRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -67,7 +67,7 @@ class UpdateSqlAlarmRuleRequestBody:
         self._sql_alarm_send_code = None
         self._domain_id = None
         self._notification_save_rule = None
-        self._whether_english = None
+        self._language = None
         self.discriminator = None
 
         self.sql_alarm_rule_id = sql_alarm_rule_id
@@ -83,7 +83,7 @@ class UpdateSqlAlarmRuleRequestBody:
         self.domain_id = domain_id
         if notification_save_rule is not None:
             self.notification_save_rule = notification_save_rule
-        self.whether_english = whether_english
+        self.language = language
 
     @property
     def sql_alarm_rule_id(self):
@@ -328,26 +328,26 @@ class UpdateSqlAlarmRuleRequestBody:
         self._notification_save_rule = notification_save_rule
 
     @property
-    def whether_english(self):
-        """Gets the whether_english of this UpdateSqlAlarmRuleRequestBody.
+    def language(self):
+        """Gets the language of this UpdateSqlAlarmRuleRequestBody.
 
         邮件附加信息是否英文
 
-        :return: The whether_english of this UpdateSqlAlarmRuleRequestBody.
-        :rtype: bool
+        :return: The language of this UpdateSqlAlarmRuleRequestBody.
+        :rtype: str
         """
-        return self._whether_english
+        return self._language
 
-    @whether_english.setter
-    def whether_english(self, whether_english):
-        """Sets the whether_english of this UpdateSqlAlarmRuleRequestBody.
+    @language.setter
+    def language(self, language):
+        """Sets the language of this UpdateSqlAlarmRuleRequestBody.
 
         邮件附加信息是否英文
 
-        :param whether_english: The whether_english of this UpdateSqlAlarmRuleRequestBody.
-        :type: bool
+        :param language: The language of this UpdateSqlAlarmRuleRequestBody.
+        :type: str
         """
-        self._whether_english = whether_english
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -42,7 +42,8 @@ class OpenGaussInstanceRequest:
         'time_zone': 'str',
         'sharding_num': 'int',
         'coordinator_num': 'int',
-        'replica_num': 'int'
+        'replica_num': 'int',
+        'enable_force_switch': 'bool'
     }
 
     attribute_map = {
@@ -66,10 +67,11 @@ class OpenGaussInstanceRequest:
         'time_zone': 'time_zone',
         'sharding_num': 'sharding_num',
         'coordinator_num': 'coordinator_num',
-        'replica_num': 'replica_num'
+        'replica_num': 'replica_num',
+        'enable_force_switch': 'enable_force_switch'
     }
 
-    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, sharding_num=None, coordinator_num=None, replica_num=None):
+    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, sharding_num=None, coordinator_num=None, replica_num=None, enable_force_switch=None):
         """OpenGaussInstanceRequest - a model defined in huaweicloud sdk"""
         
         
@@ -95,6 +97,7 @@ class OpenGaussInstanceRequest:
         self._sharding_num = None
         self._coordinator_num = None
         self._replica_num = None
+        self._enable_force_switch = None
         self.discriminator = None
 
         self.name = name
@@ -126,6 +129,8 @@ class OpenGaussInstanceRequest:
         self.coordinator_num = coordinator_num
         if replica_num is not None:
             self.replica_num = replica_num
+        if enable_force_switch is not None:
+            self.enable_force_switch = enable_force_switch
 
     @property
     def name(self):
@@ -578,6 +583,28 @@ class OpenGaussInstanceRequest:
         :type: int
         """
         self._replica_num = replica_num
+
+    @property
+    def enable_force_switch(self):
+        """Gets the enable_force_switch of this OpenGaussInstanceRequest.
+
+        enable_force_switch表示是否开启备机强升主功能，enable_force_switch=true表示开启备机强升主功能，enable_force_switch=false表示关闭，默认关闭。  说明：  备机强升主功能适用场景：在主机发生故障后，为了保障集群的可用性，强制拉起备机作为新主机对外提供服务的场景。 本功能在集群故障状态下，以丢失部分数据为代价换取集群尽可能快的恢复服务。本功能是集群状态为不可用时的一个逃生方法，如果操作者不清楚备机强升后丢失数据对业务的影响，请勿使用本功能。 备机强升主相关介绍请参考《故障处理》备机强升主章节。
+
+        :return: The enable_force_switch of this OpenGaussInstanceRequest.
+        :rtype: bool
+        """
+        return self._enable_force_switch
+
+    @enable_force_switch.setter
+    def enable_force_switch(self, enable_force_switch):
+        """Sets the enable_force_switch of this OpenGaussInstanceRequest.
+
+        enable_force_switch表示是否开启备机强升主功能，enable_force_switch=true表示开启备机强升主功能，enable_force_switch=false表示关闭，默认关闭。  说明：  备机强升主功能适用场景：在主机发生故障后，为了保障集群的可用性，强制拉起备机作为新主机对外提供服务的场景。 本功能在集群故障状态下，以丢失部分数据为代价换取集群尽可能快的恢复服务。本功能是集群状态为不可用时的一个逃生方法，如果操作者不清楚备机强升后丢失数据对业务的影响，请勿使用本功能。 备机强升主相关介绍请参考《故障处理》备机强升主章节。
+
+        :param enable_force_switch: The enable_force_switch of this OpenGaussInstanceRequest.
+        :type: bool
+        """
+        self._enable_force_switch = enable_force_switch
 
     def to_dict(self):
         """Returns the model properties as a dict"""

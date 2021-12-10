@@ -1,3 +1,279 @@
+# 3.0.71 2021-12-10
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListEvents`的请求参数`relation`更新枚举值为`[AND, OR, NOT]`
+
+### HuaweiCloud SDK APM
+
+- _新增特性_
+  - 支持接口`ShowMasterAddress`、`ListAkSk`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK AS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateScalingGroup`新增请求参数 `allowed_address_pairs`
+  - 接口`ListScalingGroups`新增响应参数 `allowed_address_pairs`
+  - 接口`ShowScalingGroup`新增响应参数 `allowed_address_pairs`
+  - 接口`UpdateScalingGroup`新增请求参数 `allowed_address_pairs`
+
+### HuaweiCloud SDK BCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowBlockchainDetail`响应参数`node_cnt`类型调整 `int32` -> `int64`
+  - 接口`ShowBlockchainFlavors`新增请求参数 `limit`、`offset`
+
+### HuaweiCloud SDK CGS
+
+- _新增特性_
+  - 支持容器安全服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 支持接口`ShowExtensionAuthorization`、`CreateExtensionAuthorization`、`CheckInstanceAccess`、`UpdateInstanceActivity`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CloudRTC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListRtcClientQosDetails`新增请求参数`stream_id`
+
+### HuaweiCloud SDK CloudTable
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateCluster`:
+    - 请求参数`availability_zone`、`cu_num`、`net_id`、`security_group_id`、`tsd_num`、`vpc_id`、`version`、`type`改为必填
+    - 请求参数`enable_lemon`、`enable_openTSDB`改为非必填
+  - 接口`ListClusters`:
+    - 新增响应参数 `actions`
+    - 响应参数`action_progress`类型调整 `string` -> `object`
+  - 接口`ShowClusterDetail`:
+    - 新增响应参数 `openTSDB_link`
+    - 移除响应参数 `opentsdb_link`、`tsd_public_endpoint`
+    - 响应参数`cu_num`类型调整 `int32` -> `string`
+    - 响应参数`tsd_num`类型调整 `int32` -> `string`
+    - 响应参数`lemon_num`类型调整 `int32` -> `string`
+
+### HuaweiCloud SDK CodeCheck
+
+- _新增特性_
+  - 支持接口`ShowTaskCmetrics`、`ListTemplateRules`、`ListTaskRuleset`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowTaskDetail`新增响应参数 `is_access`、`trigger_type`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`新增响应参数 `readonly_domain_name`
+  - 接口`ShowInstance`新增响应参数 `readonly_domain_name`
+
+### HuaweiCloud SDK DDM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`新增请求参数 `time_zone`
+  - 接口`RestartInstance`新增响应参数 `instanceId`、`instanceName`、`jobId`
+
+### HuaweiCloud SDK DSC
+
+- _新增特性_
+  - 支持接口`ShowOpenApiCalledRecords`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateDocWatermark`新增请求参数 `readonly_password`
+  - 接口`ShowScanJobs`:
+    - 新增请求参数 `offset`
+    - 移除请求参数 `page`
+  - 接口`ShowScanJobResults`:
+    - 新增请求参数 `offset`
+    - 移除请求参数 `page`
+
+### HuaweiCloud SDK FRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DetectFaceByFile`移除响应参数 `landmark`、`gender`、`yaw_angle`、`roll_angle`、`pitch_angle`、`headpose`、`smile`、`skin`、`ethnic`
+  - 接口`DetectFaceByUrl`移除响应参数 `landmark`、`gender`、`yaw_angle`、`roll_angle`、`pitch_angle`、`headpose`、`smile`、`skin`、`ethnic`
+  - 接口`DetectFaceByBase64`移除响应参数 `landmark`、`gender`、`yaw_angle`、`roll_angle`、`pitch_angle`、`headpose`、`smile`、`skin`、`ethnic`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListInstanceTags`
+    - `ListProjectTags`
+    - `BatchTagAction`
+    - `ShowInstanceMonitorExtend`
+    - `UpdateInstanceMonitor`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListGaussMySqlInstances`:
+    - 新增请求参数 `private_ip`、`tags`
+    - 新增响应参数 `tags`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListFlavors`请求参数`region`改为必填
+
+### HuaweiCloud SDK GES
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`CheckMetadata`
+
+### HuaweiCloud SDK HiLens
+
+- _新增特性_
+  - 支持华为HiLens服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK KMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ImportKeyMaterial`新增请求参数 `encrypted_privatekey`
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateRecordRule`的请求参数`default_record_config`改为必填
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListLogHistogram`
+    - `ListHost`
+    - `ListHostGroup`
+    - `UpdateHostGroup`
+    - `CreateHostGroup`
+    - `DeleteHostGroup`
+    - `ListAccessConfig`
+    - `UpdateAccessConfig`
+    - `CreateAccessConfig`
+    - `DeleteAccessConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`RestoreExistInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RES
+
+- _新增特性_
+  - 支持推荐系统服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SWR
+
+- _新增特性_
+  - 支持接口`ListQuotas`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateNamespaceAuth`修改请求体名称`UpdateNamespaceAuthReq` -> `UpdateNamespaceAuthRequestBody`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListStatistics`请求参数`to`、`from`改为必填
+  - 接口`ListQpsTimeline`请求参数`from`、`to`改为必填
+  - 接口`ListBandwidthTimeline`请求参数`from`、`to`改为必填
+  - 接口`ListTopAbnormal`请求参数`from`、`to`改为必填
+  - 接口`ShowEvent`新增响应参数 `cookie`
+  - 接口`CreatePremiumHost`:
+    - 新增请求参数 `Content-Type`
+    - 请求参数`type`类型调整 `string` -> `enum`
+  - 接口`ListPremiumHost`新增请求参数 `Content-Type`
+  - 接口`UpdatePremiumHost`:
+    - 新增请求参数 `Content-Type`
+    - 响应参数`type`类型调整 `string` -> `enum`
+  - 接口`DeletePremiumHost`新增请求参数 `Content-Type`
+  - 接口`ShowPremiumHost`:
+    - 新增请求参数 `Content-Type`
+    - 响应参数`type`类型调整 `string` -> `enum`
+  - 接口`UpdatePremiumHostProtectStatus`新增请求参数 `Content-Type`
+
 # 3.0.70 2021-11-29
 
 ### HuaweiCloud SDK APIG

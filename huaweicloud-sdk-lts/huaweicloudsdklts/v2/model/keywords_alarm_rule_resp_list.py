@@ -32,14 +32,14 @@ class KeywordsAlarmRuleRespList:
         'keywords_alarm_level': 'str',
         'keywords_alarm_send': 'bool',
         'domain_id': 'str',
-        'create_time': 'object',
-        'update_time': 'object',
+        'create_time': 'int',
+        'update_time': 'int',
         'topics': 'list[Topics]',
-        'whether_english': 'bool'
+        'language': 'str'
     }
 
     attribute_map = {
-        'project_id': 'project_id',
+        'project_id': 'projectId',
         'keywords_alarm_rule_id': 'keywords_alarm_rule_id',
         'keywords_alarm_rule_name': 'keywords_alarm_rule_name',
         'keywords_alarm_rule_description': 'keywords_alarm_rule_description',
@@ -52,10 +52,10 @@ class KeywordsAlarmRuleRespList:
         'create_time': 'create_time',
         'update_time': 'update_time',
         'topics': 'topics',
-        'whether_english': 'whether_english'
+        'language': 'language'
     }
 
-    def __init__(self, project_id=None, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, condition_expression=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, whether_english=None):
+    def __init__(self, project_id=None, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, condition_expression=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, language=None):
         """KeywordsAlarmRuleRespList - a model defined in huaweicloud sdk"""
         
         
@@ -73,7 +73,7 @@ class KeywordsAlarmRuleRespList:
         self._create_time = None
         self._update_time = None
         self._topics = None
-        self._whether_english = None
+        self._language = None
         self.discriminator = None
 
         self.project_id = project_id
@@ -89,7 +89,7 @@ class KeywordsAlarmRuleRespList:
         self.create_time = create_time
         self.update_time = update_time
         self.topics = topics
-        self.whether_english = whether_english
+        self.language = language
 
     @property
     def project_id(self):
@@ -318,7 +318,7 @@ class KeywordsAlarmRuleRespList:
         创建时间(毫秒时间戳)
 
         :return: The create_time of this KeywordsAlarmRuleRespList.
-        :rtype: object
+        :rtype: int
         """
         return self._create_time
 
@@ -329,7 +329,7 @@ class KeywordsAlarmRuleRespList:
         创建时间(毫秒时间戳)
 
         :param create_time: The create_time of this KeywordsAlarmRuleRespList.
-        :type: object
+        :type: int
         """
         self._create_time = create_time
 
@@ -340,7 +340,7 @@ class KeywordsAlarmRuleRespList:
         更新时间(毫秒时间戳)
 
         :return: The update_time of this KeywordsAlarmRuleRespList.
-        :rtype: object
+        :rtype: int
         """
         return self._update_time
 
@@ -351,7 +351,7 @@ class KeywordsAlarmRuleRespList:
         更新时间(毫秒时间戳)
 
         :param update_time: The update_time of this KeywordsAlarmRuleRespList.
-        :type: object
+        :type: int
         """
         self._update_time = update_time
 
@@ -378,26 +378,26 @@ class KeywordsAlarmRuleRespList:
         self._topics = topics
 
     @property
-    def whether_english(self):
-        """Gets the whether_english of this KeywordsAlarmRuleRespList.
+    def language(self):
+        """Gets the language of this KeywordsAlarmRuleRespList.
 
         邮件附加信息是否英文
 
-        :return: The whether_english of this KeywordsAlarmRuleRespList.
-        :rtype: bool
+        :return: The language of this KeywordsAlarmRuleRespList.
+        :rtype: str
         """
-        return self._whether_english
+        return self._language
 
-    @whether_english.setter
-    def whether_english(self, whether_english):
-        """Sets the whether_english of this KeywordsAlarmRuleRespList.
+    @language.setter
+    def language(self, language):
+        """Sets the language of this KeywordsAlarmRuleRespList.
 
         邮件附加信息是否英文
 
-        :param whether_english: The whether_english of this KeywordsAlarmRuleRespList.
-        :type: bool
+        :param language: The language of this KeywordsAlarmRuleRespList.
+        :type: str
         """
-        self._whether_english = whether_english
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

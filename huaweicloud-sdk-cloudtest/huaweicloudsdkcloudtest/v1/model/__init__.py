@@ -33,6 +33,7 @@ from huaweicloudsdkcloudtest.v1.model.external_service_case_info import External
 from huaweicloudsdkcloudtest.v1.model.external_service_case_step import ExternalServiceCaseStep
 from huaweicloudsdkcloudtest.v1.model.list_environments_request import ListEnvironmentsRequest
 from huaweicloudsdkcloudtest.v1.model.list_environments_response import ListEnvironmentsResponse
+from huaweicloudsdkcloudtest.v1.model.name_and_id import NameAndId
 from huaweicloudsdkcloudtest.v1.model.plan_cycle import PlanCycle
 from huaweicloudsdkcloudtest.v1.model.run_test_case_request import RunTestCaseRequest
 from huaweicloudsdkcloudtest.v1.model.run_test_case_request_body import RunTestCaseRequestBody

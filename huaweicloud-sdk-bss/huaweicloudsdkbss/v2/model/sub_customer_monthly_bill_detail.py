@@ -295,7 +295,7 @@ class SubCustomerMonthlyBillDetail:
     def service_type_code(self):
         """Gets the service_type_code of this SubCustomerMonthlyBillDetail.
 
-        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :return: The service_type_code of this SubCustomerMonthlyBillDetail.
         :rtype: str
@@ -306,7 +306,7 @@ class SubCustomerMonthlyBillDetail:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this SubCustomerMonthlyBillDetail.
 
-        云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this SubCustomerMonthlyBillDetail.
         :type: str

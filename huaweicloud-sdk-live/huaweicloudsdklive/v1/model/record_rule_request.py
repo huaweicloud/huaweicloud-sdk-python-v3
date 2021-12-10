@@ -59,8 +59,7 @@ class RecordRuleRequest:
             self.record_type = record_type
         if plan_record_time is not None:
             self.plan_record_time = plan_record_time
-        if default_record_config is not None:
-            self.default_record_config = default_record_config
+        self.default_record_config = default_record_config
 
     @property
     def publish_domain(self):

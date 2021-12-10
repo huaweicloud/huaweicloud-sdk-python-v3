@@ -23,7 +23,7 @@ class Event:
 
     openapi_types = {
         'metadata': 'Metadata',
-        'starts_at': 'object'
+        'starts_at': 'int'
     }
 
     attribute_map = {
@@ -47,7 +47,6 @@ class Event:
     def metadata(self):
         """Gets the metadata of this Event.
 
-        告警信息
 
         :return: The metadata of this Event.
         :rtype: Metadata
@@ -58,7 +57,6 @@ class Event:
     def metadata(self, metadata):
         """Sets the metadata of this Event.
 
-        告警信息
 
         :param metadata: The metadata of this Event.
         :type: Metadata
@@ -72,7 +70,7 @@ class Event:
         告警产生时间(时间戳)
 
         :return: The starts_at of this Event.
-        :rtype: object
+        :rtype: int
         """
         return self._starts_at
 
@@ -83,7 +81,7 @@ class Event:
         告警产生时间(时间戳)
 
         :param starts_at: The starts_at of this Event.
-        :type: object
+        :type: int
         """
         self._starts_at = starts_at
 

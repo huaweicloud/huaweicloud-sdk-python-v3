@@ -54,6 +54,7 @@ class ShowInstanceResponse(SdkResponse):
         'order_id': 'str',
         'status': 'str',
         'domain_name': 'str',
+        'readonly_domain_name': 'str',
         'enable_publicip': 'bool',
         'publicip_id': 'str',
         'publicip_address': 'str',
@@ -97,6 +98,7 @@ class ShowInstanceResponse(SdkResponse):
         'order_id': 'order_id',
         'status': 'status',
         'domain_name': 'domain_name',
+        'readonly_domain_name': 'readonly_domain_name',
         'enable_publicip': 'enable_publicip',
         'publicip_id': 'publicip_id',
         'publicip_address': 'publicip_address',
@@ -107,7 +109,7 @@ class ShowInstanceResponse(SdkResponse):
         'backend_addrs': 'backend_addrs'
     }
 
-    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None):
+    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, readonly_domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None):
         """ShowInstanceResponse - a model defined in huaweicloud sdk"""
         
         super(ShowInstanceResponse, self).__init__()
@@ -144,6 +146,7 @@ class ShowInstanceResponse(SdkResponse):
         self._order_id = None
         self._status = None
         self._domain_name = None
+        self._readonly_domain_name = None
         self._enable_publicip = None
         self._publicip_id = None
         self._publicip_address = None
@@ -218,6 +221,8 @@ class ShowInstanceResponse(SdkResponse):
             self.status = status
         if domain_name is not None:
             self.domain_name = domain_name
+        if readonly_domain_name is not None:
+            self.readonly_domain_name = readonly_domain_name
         if enable_publicip is not None:
             self.enable_publicip = enable_publicip
         if publicip_id is not None:
@@ -936,6 +941,28 @@ class ShowInstanceResponse(SdkResponse):
         :type: str
         """
         self._domain_name = domain_name
+
+    @property
+    def readonly_domain_name(self):
+        """Gets the readonly_domain_name of this ShowInstanceResponse.
+
+        实例的只读域名，只有主备实例有该字段。
+
+        :return: The readonly_domain_name of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._readonly_domain_name
+
+    @readonly_domain_name.setter
+    def readonly_domain_name(self, readonly_domain_name):
+        """Sets the readonly_domain_name of this ShowInstanceResponse.
+
+        实例的只读域名，只有主备实例有该字段。
+
+        :param readonly_domain_name: The readonly_domain_name of this ShowInstanceResponse.
+        :type: str
+        """
+        self._readonly_domain_name = readonly_domain_name
 
     @property
     def enable_publicip(self):

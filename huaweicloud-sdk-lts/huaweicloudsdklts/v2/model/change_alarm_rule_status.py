@@ -43,12 +43,9 @@ class ChangeAlarmRuleStatus:
         self._type = None
         self.discriminator = None
 
-        if alarm_rule_id is not None:
-            self.alarm_rule_id = alarm_rule_id
-        if status is not None:
-            self.status = status
-        if type is not None:
-            self.type = type
+        self.alarm_rule_id = alarm_rule_id
+        self.status = status
+        self.type = type
 
     @property
     def alarm_rule_id(self):

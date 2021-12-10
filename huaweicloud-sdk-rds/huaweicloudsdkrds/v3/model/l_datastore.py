@@ -69,7 +69,7 @@ class LDatastore:
     def name(self):
         """Gets the name of this LDatastore.
 
-        数据库版本号，只返回两位数的大版本号，例如MySQL 5.6.X版本，仅返回5.6。
+        数据库版本号。 - 对于MySQL引擎可以返回小版本号，例如MySQL 5.6.51版本，将返回5.6.51。 - 对于PostgreSQL和SQL Server引擎，只返回两位数的大版本号，例如PostgreSQL 9.6.X版本，仅返回9.6。
 
         :return: The name of this LDatastore.
         :rtype: str
@@ -80,7 +80,7 @@ class LDatastore:
     def name(self, name):
         """Sets the name of this LDatastore.
 
-        数据库版本号，只返回两位数的大版本号，例如MySQL 5.6.X版本，仅返回5.6。
+        数据库版本号。 - 对于MySQL引擎可以返回小版本号，例如MySQL 5.6.51版本，将返回5.6.51。 - 对于PostgreSQL和SQL Server引擎，只返回两位数的大版本号，例如PostgreSQL 9.6.X版本，仅返回9.6。
 
         :param name: The name of this LDatastore.
         :type: str

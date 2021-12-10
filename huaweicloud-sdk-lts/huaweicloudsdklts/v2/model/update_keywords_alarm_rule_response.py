@@ -30,17 +30,13 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         'keywords_alarm_level': 'str',
         'keywords_alarm_send': 'bool',
         'domain_id': 'str',
-        'create_time': 'object',
-        'update_time': 'object',
-        'notification_save_rule': 'NotificationSaveRule',
-        'whether_english': 'bool',
+        'create_time': 'int',
+        'update_time': 'int',
         'language': 'str',
         'project_id': 'str',
         'topics': 'list[Topics]',
         'condition_expression': 'str',
-        'id': 'str',
-        'index_id': 'str',
-        'key': 'str'
+        'index_id': 'str'
     }
 
     attribute_map = {
@@ -54,18 +50,14 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         'domain_id': 'domain_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
-        'notification_save_rule': 'notification_save_rule',
-        'whether_english': 'whether_english',
         'language': 'language',
         'project_id': 'projectId',
         'topics': 'topics',
         'condition_expression': 'condition_expression',
-        'id': 'id',
-        'index_id': 'indexId',
-        'key': 'key'
+        'index_id': 'indexId'
     }
 
-    def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, notification_save_rule=None, whether_english=None, language=None, project_id=None, topics=None, condition_expression=None, id=None, index_id=None, key=None):
+    def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, language=None, project_id=None, topics=None, condition_expression=None, index_id=None):
         """UpdateKeywordsAlarmRuleResponse - a model defined in huaweicloud sdk"""
         
         super(UpdateKeywordsAlarmRuleResponse, self).__init__()
@@ -80,15 +72,11 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         self._domain_id = None
         self._create_time = None
         self._update_time = None
-        self._notification_save_rule = None
-        self._whether_english = None
         self._language = None
         self._project_id = None
         self._topics = None
         self._condition_expression = None
-        self._id = None
         self._index_id = None
-        self._key = None
         self.discriminator = None
 
         if keywords_alarm_rule_id is not None:
@@ -111,10 +99,6 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
-        if notification_save_rule is not None:
-            self.notification_save_rule = notification_save_rule
-        if whether_english is not None:
-            self.whether_english = whether_english
         if language is not None:
             self.language = language
         if project_id is not None:
@@ -123,12 +107,8 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
             self.topics = topics
         if condition_expression is not None:
             self.condition_expression = condition_expression
-        if id is not None:
-            self.id = id
         if index_id is not None:
             self.index_id = index_id
-        if key is not None:
-            self.key = key
 
     @property
     def keywords_alarm_rule_id(self):
@@ -222,7 +202,6 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     def frequency(self):
         """Gets the frequency of this UpdateKeywordsAlarmRuleResponse.
 
-        告警统计周期
 
         :return: The frequency of this UpdateKeywordsAlarmRuleResponse.
         :rtype: Frequency
@@ -233,7 +212,6 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     def frequency(self, frequency):
         """Sets the frequency of this UpdateKeywordsAlarmRuleResponse.
 
-        告警统计周期
 
         :param frequency: The frequency of this UpdateKeywordsAlarmRuleResponse.
         :type: Frequency
@@ -313,7 +291,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         创建时间(毫秒时间戳)
 
         :return: The create_time of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: object
+        :rtype: int
         """
         return self._create_time
 
@@ -324,7 +302,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         创建时间(毫秒时间戳)
 
         :param create_time: The create_time of this UpdateKeywordsAlarmRuleResponse.
-        :type: object
+        :type: int
         """
         self._create_time = create_time
 
@@ -335,7 +313,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         更新时间(毫秒时间戳)
 
         :return: The update_time of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: object
+        :rtype: int
         """
         return self._update_time
 
@@ -346,53 +324,9 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         更新时间(毫秒时间戳)
 
         :param update_time: The update_time of this UpdateKeywordsAlarmRuleResponse.
-        :type: object
+        :type: int
         """
         self._update_time = update_time
-
-    @property
-    def notification_save_rule(self):
-        """Gets the notification_save_rule of this UpdateKeywordsAlarmRuleResponse.
-
-        通知主题
-
-        :return: The notification_save_rule of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: NotificationSaveRule
-        """
-        return self._notification_save_rule
-
-    @notification_save_rule.setter
-    def notification_save_rule(self, notification_save_rule):
-        """Sets the notification_save_rule of this UpdateKeywordsAlarmRuleResponse.
-
-        通知主题
-
-        :param notification_save_rule: The notification_save_rule of this UpdateKeywordsAlarmRuleResponse.
-        :type: NotificationSaveRule
-        """
-        self._notification_save_rule = notification_save_rule
-
-    @property
-    def whether_english(self):
-        """Gets the whether_english of this UpdateKeywordsAlarmRuleResponse.
-
-        邮件附加信息是否英文
-
-        :return: The whether_english of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: bool
-        """
-        return self._whether_english
-
-    @whether_english.setter
-    def whether_english(self, whether_english):
-        """Sets the whether_english of this UpdateKeywordsAlarmRuleResponse.
-
-        邮件附加信息是否英文
-
-        :param whether_english: The whether_english of this UpdateKeywordsAlarmRuleResponse.
-        :type: bool
-        """
-        self._whether_english = whether_english
 
     @property
     def language(self):
@@ -483,28 +417,6 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         self._condition_expression = condition_expression
 
     @property
-    def id(self):
-        """Gets the id of this UpdateKeywordsAlarmRuleResponse.
-
-        暂无
-
-        :return: The id of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this UpdateKeywordsAlarmRuleResponse.
-
-        暂无
-
-        :param id: The id of this UpdateKeywordsAlarmRuleResponse.
-        :type: str
-        """
-        self._id = id
-
-    @property
     def index_id(self):
         """Gets the index_id of this UpdateKeywordsAlarmRuleResponse.
 
@@ -525,28 +437,6 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         :type: str
         """
         self._index_id = index_id
-
-    @property
-    def key(self):
-        """Gets the key of this UpdateKeywordsAlarmRuleResponse.
-
-        暂无
-
-        :return: The key of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: str
-        """
-        return self._key
-
-    @key.setter
-    def key(self, key):
-        """Sets the key of this UpdateKeywordsAlarmRuleResponse.
-
-        暂无
-
-        :param key: The key of this UpdateKeywordsAlarmRuleResponse.
-        :type: str
-        """
-        self._key = key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

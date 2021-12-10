@@ -32,9 +32,9 @@ class SqlAlarmRuleRespList:
         'sql_alarm_level': 'str',
         'sql_alarm_send': 'bool',
         'domain_id': 'str',
-        'create_time': 'object',
-        'update_time': 'object',
-        'whether_english': 'bool'
+        'create_time': 'int',
+        'update_time': 'int',
+        'language': 'str'
     }
 
     attribute_map = {
@@ -50,10 +50,10 @@ class SqlAlarmRuleRespList:
         'domain_id': 'domain_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
-        'whether_english': 'whether_english'
+        'language': 'language'
     }
 
-    def __init__(self, sql_alarm_rule_name=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, topics=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, whether_english=None):
+    def __init__(self, sql_alarm_rule_name=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, topics=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, language=None):
         """SqlAlarmRuleRespList - a model defined in huaweicloud sdk"""
         
         
@@ -70,7 +70,7 @@ class SqlAlarmRuleRespList:
         self._domain_id = None
         self._create_time = None
         self._update_time = None
-        self._whether_english = None
+        self._language = None
         self.discriminator = None
 
         self.sql_alarm_rule_name = sql_alarm_rule_name
@@ -85,7 +85,7 @@ class SqlAlarmRuleRespList:
         self.domain_id = domain_id
         self.create_time = create_time
         self.update_time = update_time
-        self.whether_english = whether_english
+        self.language = language
 
     @property
     def sql_alarm_rule_name(self):
@@ -314,7 +314,7 @@ class SqlAlarmRuleRespList:
         创建时间(毫秒时间戳)
 
         :return: The create_time of this SqlAlarmRuleRespList.
-        :rtype: object
+        :rtype: int
         """
         return self._create_time
 
@@ -325,7 +325,7 @@ class SqlAlarmRuleRespList:
         创建时间(毫秒时间戳)
 
         :param create_time: The create_time of this SqlAlarmRuleRespList.
-        :type: object
+        :type: int
         """
         self._create_time = create_time
 
@@ -336,7 +336,7 @@ class SqlAlarmRuleRespList:
         更新时间(毫秒时间戳)
 
         :return: The update_time of this SqlAlarmRuleRespList.
-        :rtype: object
+        :rtype: int
         """
         return self._update_time
 
@@ -347,31 +347,31 @@ class SqlAlarmRuleRespList:
         更新时间(毫秒时间戳)
 
         :param update_time: The update_time of this SqlAlarmRuleRespList.
-        :type: object
+        :type: int
         """
         self._update_time = update_time
 
     @property
-    def whether_english(self):
-        """Gets the whether_english of this SqlAlarmRuleRespList.
+    def language(self):
+        """Gets the language of this SqlAlarmRuleRespList.
 
         邮件附加信息是否英文
 
-        :return: The whether_english of this SqlAlarmRuleRespList.
-        :rtype: bool
+        :return: The language of this SqlAlarmRuleRespList.
+        :rtype: str
         """
-        return self._whether_english
+        return self._language
 
-    @whether_english.setter
-    def whether_english(self, whether_english):
-        """Sets the whether_english of this SqlAlarmRuleRespList.
+    @language.setter
+    def language(self, language):
+        """Sets the language of this SqlAlarmRuleRespList.
 
         邮件附加信息是否英文
 
-        :param whether_english: The whether_english of this SqlAlarmRuleRespList.
-        :type: bool
+        :param language: The language of this SqlAlarmRuleRespList.
+        :type: str
         """
-        self._whether_english = whether_english
+        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

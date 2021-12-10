@@ -25,8 +25,8 @@ class BusinessNodeModel:
         'default': 'bool',
         'display_name': 'str',
         'eps_id': 'str',
-        'gmt_create': 'datetime',
-        'gmt_modify': 'datetime',
+        'gmt_create': 'date',
+        'gmt_modify': 'date',
         'id': 'int',
         'inner_domain_id': 'int',
         'is_default': 'bool',
@@ -153,7 +153,7 @@ class BusinessNodeModel:
         创建时间
 
         :return: The gmt_create of this BusinessNodeModel.
-        :rtype: datetime
+        :rtype: date
         """
         return self._gmt_create
 
@@ -164,7 +164,7 @@ class BusinessNodeModel:
         创建时间
 
         :param gmt_create: The gmt_create of this BusinessNodeModel.
-        :type: datetime
+        :type: date
         """
         self._gmt_create = gmt_create
 
@@ -175,7 +175,7 @@ class BusinessNodeModel:
         修改时间
 
         :return: The gmt_modify of this BusinessNodeModel.
-        :rtype: datetime
+        :rtype: date
         """
         return self._gmt_modify
 
@@ -186,7 +186,7 @@ class BusinessNodeModel:
         修改时间
 
         :param gmt_modify: The gmt_modify of this BusinessNodeModel.
-        :type: datetime
+        :type: date
         """
         self._gmt_modify = gmt_modify
 

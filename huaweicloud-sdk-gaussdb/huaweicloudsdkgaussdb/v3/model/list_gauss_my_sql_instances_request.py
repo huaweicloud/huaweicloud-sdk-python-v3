@@ -29,8 +29,10 @@ class ListGaussMySqlInstancesRequest:
         'datastore_type': 'str',
         'vpc_id': 'str',
         'subnet_id': 'str',
+        'private_ip': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'tags': 'str'
     }
 
     attribute_map = {
@@ -41,11 +43,13 @@ class ListGaussMySqlInstancesRequest:
         'datastore_type': 'datastore_type',
         'vpc_id': 'vpc_id',
         'subnet_id': 'subnet_id',
+        'private_ip': 'private_ip',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'tags': 'tags'
     }
 
-    def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, vpc_id=None, subnet_id=None, offset=None, limit=None):
+    def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, vpc_id=None, subnet_id=None, private_ip=None, offset=None, limit=None, tags=None):
         """ListGaussMySqlInstancesRequest - a model defined in huaweicloud sdk"""
         
         
@@ -57,8 +61,10 @@ class ListGaussMySqlInstancesRequest:
         self._datastore_type = None
         self._vpc_id = None
         self._subnet_id = None
+        self._private_ip = None
         self._offset = None
         self._limit = None
+        self._tags = None
         self.discriminator = None
 
         if x_language is not None:
@@ -75,10 +81,14 @@ class ListGaussMySqlInstancesRequest:
             self.vpc_id = vpc_id
         if subnet_id is not None:
             self.subnet_id = subnet_id
+        if private_ip is not None:
+            self.private_ip = private_ip
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if tags is not None:
+            self.tags = tags
 
     @property
     def x_language(self):
@@ -235,6 +245,28 @@ class ListGaussMySqlInstancesRequest:
         self._subnet_id = subnet_id
 
     @property
+    def private_ip(self):
+        """Gets the private_ip of this ListGaussMySqlInstancesRequest.
+
+        读写内网IP。
+
+        :return: The private_ip of this ListGaussMySqlInstancesRequest.
+        :rtype: str
+        """
+        return self._private_ip
+
+    @private_ip.setter
+    def private_ip(self, private_ip):
+        """Sets the private_ip of this ListGaussMySqlInstancesRequest.
+
+        读写内网IP。
+
+        :param private_ip: The private_ip of this ListGaussMySqlInstancesRequest.
+        :type: str
+        """
+        self._private_ip = private_ip
+
+    @property
     def offset(self):
         """Gets the offset of this ListGaussMySqlInstancesRequest.
 
@@ -277,6 +309,28 @@ class ListGaussMySqlInstancesRequest:
         :type: int
         """
         self._limit = limit
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListGaussMySqlInstancesRequest.
+
+        根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。key不能重复，key之间是与的关系。
+
+        :return: The tags of this ListGaussMySqlInstancesRequest.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListGaussMySqlInstancesRequest.
+
+        根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。key不能重复，key之间是与的关系。
+
+        :param tags: The tags of this ListGaussMySqlInstancesRequest.
+        :type: str
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

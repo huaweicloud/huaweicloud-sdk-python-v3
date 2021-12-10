@@ -24,7 +24,7 @@ class ListLogsRequest:
     openapi_types = {
         'log_group_id': 'str',
         'log_stream_id': 'str',
-        'body': 'QueryLTSLogParams'
+        'body': 'QueryLtsLogParams'
     }
 
     attribute_map = {
@@ -98,7 +98,7 @@ class ListLogsRequest:
 
 
         :return: The body of this ListLogsRequest.
-        :rtype: QueryLTSLogParams
+        :rtype: QueryLtsLogParams
         """
         return self._body
 
@@ -108,7 +108,7 @@ class ListLogsRequest:
 
 
         :param body: The body of this ListLogsRequest.
-        :type: QueryLTSLogParams
+        :type: QueryLtsLogParams
         """
         self._body = body
 

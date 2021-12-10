@@ -71,7 +71,6 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
     def page_info(self):
         """Gets the page_info of this ListActiveOrHistoryAlarmsResponse.
 
-        分页详情
 
         :return: The page_info of this ListActiveOrHistoryAlarmsResponse.
         :rtype: PageInfo
@@ -82,7 +81,6 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
     def page_info(self, page_info):
         """Sets the page_info of this ListActiveOrHistoryAlarmsResponse.
 
-        分页详情
 
         :param page_info: The page_info of this ListActiveOrHistoryAlarmsResponse.
         :type: PageInfo

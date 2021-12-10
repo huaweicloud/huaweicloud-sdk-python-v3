@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class QueryLTSStructLogParamsNew:
+class QueryLtsStructLogParamsNew:
 
 
     """
@@ -34,7 +34,7 @@ class QueryLTSStructLogParamsNew:
     }
 
     def __init__(self, query=None, format=None, time_range=None):
-        """QueryLTSStructLogParamsNew - a model defined in huaweicloud sdk"""
+        """QueryLtsStructLogParamsNew - a model defined in huaweicloud sdk"""
         
         
 
@@ -49,64 +49,64 @@ class QueryLTSStructLogParamsNew:
 
     @property
     def query(self):
-        """Gets the query of this QueryLTSStructLogParamsNew.
+        """Gets the query of this QueryLtsStructLogParamsNew.
 
         sql语句字符串。
 
-        :return: The query of this QueryLTSStructLogParamsNew.
+        :return: The query of this QueryLtsStructLogParamsNew.
         :rtype: str
         """
         return self._query
 
     @query.setter
     def query(self, query):
-        """Sets the query of this QueryLTSStructLogParamsNew.
+        """Sets the query of this QueryLtsStructLogParamsNew.
 
         sql语句字符串。
 
-        :param query: The query of this QueryLTSStructLogParamsNew.
+        :param query: The query of this QueryLtsStructLogParamsNew.
         :type: str
         """
         self._query = query
 
     @property
     def format(self):
-        """Gets the format of this QueryLTSStructLogParamsNew.
+        """Gets the format of this QueryLtsStructLogParamsNew.
 
         查询结果格式。当前仅支持：\"k-v\"。
 
-        :return: The format of this QueryLTSStructLogParamsNew.
+        :return: The format of this QueryLtsStructLogParamsNew.
         :rtype: str
         """
         return self._format
 
     @format.setter
     def format(self, format):
-        """Sets the format of this QueryLTSStructLogParamsNew.
+        """Sets the format of this QueryLtsStructLogParamsNew.
 
         查询结果格式。当前仅支持：\"k-v\"。
 
-        :param format: The format of this QueryLTSStructLogParamsNew.
+        :param format: The format of this QueryLtsStructLogParamsNew.
         :type: str
         """
         self._format = format
 
     @property
     def time_range(self):
-        """Gets the time_range of this QueryLTSStructLogParamsNew.
+        """Gets the time_range of this QueryLtsStructLogParamsNew.
 
 
-        :return: The time_range of this QueryLTSStructLogParamsNew.
+        :return: The time_range of this QueryLtsStructLogParamsNew.
         :rtype: TimeRange
         """
         return self._time_range
 
     @time_range.setter
     def time_range(self, time_range):
-        """Sets the time_range of this QueryLTSStructLogParamsNew.
+        """Sets the time_range of this QueryLtsStructLogParamsNew.
 
 
-        :param time_range: The time_range of this QueryLTSStructLogParamsNew.
+        :param time_range: The time_range of this QueryLtsStructLogParamsNew.
         :type: TimeRange
         """
         self._time_range = time_range
@@ -153,7 +153,7 @@ class QueryLTSStructLogParamsNew:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, QueryLTSStructLogParamsNew):
+        if not isinstance(other, QueryLtsStructLogParamsNew):
             return False
 
         return self.__dict__ == other.__dict__

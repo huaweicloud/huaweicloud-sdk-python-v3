@@ -481,7 +481,7 @@ class ShowRepositoryResponse(SdkResponse):
     def domain_id(self):
         """Gets the domain_id of this ShowRepositoryResponse.
 
-        账号ID
+        帐号ID
 
         :return: The domain_id of this ShowRepositoryResponse.
         :rtype: str
@@ -492,7 +492,7 @@ class ShowRepositoryResponse(SdkResponse):
     def domain_id(self, domain_id):
         """Sets the domain_id of this ShowRepositoryResponse.
 
-        账号ID
+        帐号ID
 
         :param domain_id: The domain_id of this ShowRepositoryResponse.
         :type: str

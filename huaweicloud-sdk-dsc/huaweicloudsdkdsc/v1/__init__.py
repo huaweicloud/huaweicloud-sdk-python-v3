@@ -29,6 +29,7 @@ from huaweicloudsdkdsc.v1.model.extracted_database_watermark import ExtractedDat
 from huaweicloudsdkdsc.v1.model.mask_strategies import MaskStrategies
 from huaweicloudsdkdsc.v1.model.obs_scan_result import ObsScanResult
 from huaweicloudsdkdsc.v1.model.obs_scan_result_info import ObsScanResultInfo
+from huaweicloudsdkdsc.v1.model.open_api_called_record import OpenApiCalledRecord
 from huaweicloudsdkdsc.v1.model.scan_job import ScanJob
 from huaweicloudsdkdsc.v1.model.show_database_water_mark_request import ShowDatabaseWaterMarkRequest
 from huaweicloudsdkdsc.v1.model.show_database_water_mark_response import ShowDatabaseWaterMarkResponse
@@ -38,6 +39,8 @@ from huaweicloudsdkdsc.v1.model.show_doc_watermark_response import ShowDocWaterm
 from huaweicloudsdkdsc.v1.model.show_image_watermark_request import ShowImageWatermarkRequest
 from huaweicloudsdkdsc.v1.model.show_image_watermark_request_body import ShowImageWatermarkRequestBody
 from huaweicloudsdkdsc.v1.model.show_image_watermark_response import ShowImageWatermarkResponse
+from huaweicloudsdkdsc.v1.model.show_open_api_called_records_request import ShowOpenApiCalledRecordsRequest
+from huaweicloudsdkdsc.v1.model.show_open_api_called_records_response import ShowOpenApiCalledRecordsResponse
 from huaweicloudsdkdsc.v1.model.show_scan_job_results_request import ShowScanJobResultsRequest
 from huaweicloudsdkdsc.v1.model.show_scan_job_results_response import ShowScanJobResultsResponse
 from huaweicloudsdkdsc.v1.model.show_scan_jobs_request import ShowScanJobsRequest

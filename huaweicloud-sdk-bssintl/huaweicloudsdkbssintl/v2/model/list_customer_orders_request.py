@@ -192,7 +192,7 @@ class ListCustomerOrdersRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListCustomerOrdersRequest.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数的约束及描述：|
+        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数的约束及描述：|
 
         :return: The service_type_code of this ListCustomerOrdersRequest.
         :rtype: str
@@ -203,7 +203,7 @@ class ListCustomerOrdersRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListCustomerOrdersRequest.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数的约束及描述：|
+        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数的约束及描述：|
 
         :param service_type_code: The service_type_code of this ListCustomerOrdersRequest.
         :type: str

@@ -46,7 +46,9 @@ class ShowTaskDetailResponse(SdkResponse):
         'critical_count': 'str',
         'major_count': 'str',
         'minor_count': 'str',
-        'suggestion_count': 'str'
+        'suggestion_count': 'str',
+        'is_access': 'str',
+        'trigger_type': 'str'
     }
 
     attribute_map = {
@@ -74,10 +76,12 @@ class ShowTaskDetailResponse(SdkResponse):
         'critical_count': 'critical_count',
         'major_count': 'major_count',
         'minor_count': 'minor_count',
-        'suggestion_count': 'suggestion_count'
+        'suggestion_count': 'suggestion_count',
+        'is_access': 'is_access',
+        'trigger_type': 'trigger_type'
     }
 
-    def __init__(self, task_id=None, task_name=None, creator_id=None, git_url=None, git_branch=None, last_check_time=None, code_line_total=None, code_line=None, code_quality=None, issue_count=None, risk_coefficient=None, duplication_ratio=None, complexity_count=None, duplicated_lines=None, comment_lines=None, comment_ratio=None, duplicated_blocks=None, last_exec_time=None, check_type=None, created_at=None, cyclomatic_complexity_per_method=None, critical_count=None, major_count=None, minor_count=None, suggestion_count=None):
+    def __init__(self, task_id=None, task_name=None, creator_id=None, git_url=None, git_branch=None, last_check_time=None, code_line_total=None, code_line=None, code_quality=None, issue_count=None, risk_coefficient=None, duplication_ratio=None, complexity_count=None, duplicated_lines=None, comment_lines=None, comment_ratio=None, duplicated_blocks=None, last_exec_time=None, check_type=None, created_at=None, cyclomatic_complexity_per_method=None, critical_count=None, major_count=None, minor_count=None, suggestion_count=None, is_access=None, trigger_type=None):
         """ShowTaskDetailResponse - a model defined in huaweicloud sdk"""
         
         super(ShowTaskDetailResponse, self).__init__()
@@ -107,6 +111,8 @@ class ShowTaskDetailResponse(SdkResponse):
         self._major_count = None
         self._minor_count = None
         self._suggestion_count = None
+        self._is_access = None
+        self._trigger_type = None
         self.discriminator = None
 
         if task_id is not None:
@@ -159,6 +165,10 @@ class ShowTaskDetailResponse(SdkResponse):
             self.minor_count = minor_count
         if suggestion_count is not None:
             self.suggestion_count = suggestion_count
+        if is_access is not None:
+            self.is_access = is_access
+        if trigger_type is not None:
+            self.trigger_type = trigger_type
 
     @property
     def task_id(self):
@@ -318,6 +328,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def code_line(self):
         """Gets the code_line of this ShowTaskDetailResponse.
 
+        代码有效行数
 
         :return: The code_line of this ShowTaskDetailResponse.
         :rtype: int
@@ -328,6 +339,7 @@ class ShowTaskDetailResponse(SdkResponse):
     def code_line(self, code_line):
         """Sets the code_line of this ShowTaskDetailResponse.
 
+        代码有效行数
 
         :param code_line: The code_line of this ShowTaskDetailResponse.
         :type: int
@@ -707,6 +719,50 @@ class ShowTaskDetailResponse(SdkResponse):
         :type: str
         """
         self._suggestion_count = suggestion_count
+
+    @property
+    def is_access(self):
+        """Gets the is_access of this ShowTaskDetailResponse.
+
+        门禁质量是否通过
+
+        :return: The is_access of this ShowTaskDetailResponse.
+        :rtype: str
+        """
+        return self._is_access
+
+    @is_access.setter
+    def is_access(self, is_access):
+        """Sets the is_access of this ShowTaskDetailResponse.
+
+        门禁质量是否通过
+
+        :param is_access: The is_access of this ShowTaskDetailResponse.
+        :type: str
+        """
+        self._is_access = is_access
+
+    @property
+    def trigger_type(self):
+        """Gets the trigger_type of this ShowTaskDetailResponse.
+
+        任务触发方式
+
+        :return: The trigger_type of this ShowTaskDetailResponse.
+        :rtype: str
+        """
+        return self._trigger_type
+
+    @trigger_type.setter
+    def trigger_type(self, trigger_type):
+        """Sets the trigger_type of this ShowTaskDetailResponse.
+
+        任务触发方式
+
+        :param trigger_type: The trigger_type of this ShowTaskDetailResponse.
+        :type: str
+        """
+        self._trigger_type = trigger_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

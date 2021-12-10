@@ -22,7 +22,7 @@ class UpdateParametersReq:
     sensitive_list = []
 
     openapi_types = {
-        'values': 'object'
+        'values': 'UpdateParametersReqValues'
     }
 
     attribute_map = {
@@ -43,10 +43,9 @@ class UpdateParametersReq:
     def values(self):
         """Gets the values of this UpdateParametersReq.
 
-        需要修改的DDM实例参数的集合。
 
         :return: The values of this UpdateParametersReq.
-        :rtype: object
+        :rtype: UpdateParametersReqValues
         """
         return self._values
 
@@ -54,10 +53,9 @@ class UpdateParametersReq:
     def values(self, values):
         """Sets the values of this UpdateParametersReq.
 
-        需要修改的DDM实例参数的集合。
 
         :param values: The values of this UpdateParametersReq.
-        :type: object
+        :type: UpdateParametersReqValues
         """
         self._values = values
 

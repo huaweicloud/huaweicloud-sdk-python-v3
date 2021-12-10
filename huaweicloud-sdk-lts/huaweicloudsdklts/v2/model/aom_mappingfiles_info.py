@@ -69,7 +69,6 @@ class AomMappingfilesInfo:
     def log_stream_info(self):
         """Gets the log_stream_info of this AomMappingfilesInfo.
 
-        接入规则详情
 
         :return: The log_stream_info of this AomMappingfilesInfo.
         :rtype: AomMappingLogStreamInfo
@@ -80,7 +79,6 @@ class AomMappingfilesInfo:
     def log_stream_info(self, log_stream_info):
         """Sets the log_stream_info of this AomMappingfilesInfo.
 
-        接入规则详情
 
         :param log_stream_info: The log_stream_info of this AomMappingfilesInfo.
         :type: AomMappingLogStreamInfo

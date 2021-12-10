@@ -132,7 +132,7 @@ class QueryCustomerOnDemandResourcesReq:
     def service_type_code(self):
         """Gets the service_type_code of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
 
         :return: The service_type_code of this QueryCustomerOnDemandResourcesReq.
         :rtype: str
@@ -143,7 +143,7 @@ class QueryCustomerOnDemandResourcesReq:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
 
         :param service_type_code: The service_type_code of this QueryCustomerOnDemandResourcesReq.
         :type: str

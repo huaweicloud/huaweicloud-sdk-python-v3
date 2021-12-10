@@ -1,3 +1,279 @@
+# 3.0.71 2021-12-10
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Update the enum values to `[AND, OR, NOT]` of the request parameter `relation` of the interface `ListEvents`
+
+### HuaweiCloud SDK APM
+
+- _Features_
+  - Support the interfaces `ShowMasterAddress`, `ListAkSk`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK AS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `allowed_address_pairs` to the interface `ListScalingGroups`
+  - Add the request parameter `allowed_address_pairs` to the interface `CreateScalingGroup`
+  - Add the request parameter `allowed_address_pairs` to the interface `UpdateScalingGroup`
+  - Add the response parameter `allowed_address_pairs` to the interface `ShowScalingGroup`
+
+### HuaweiCloud SDK BCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `int32` -> `int64` of the response parameter `node_cnt` of the interface `ShowBlockchainDetail`
+  - Add the request parameters `limit`, `offset` to the interface `ShowBlockchainFlavors`
+
+### HuaweiCloud SDK CGS
+
+- _Features_
+  - Support the `Container Guard Service`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - Support the interfaces `ShowExtensionAuthorization`, `CreateExtensionAuthorization`, `CheckInstanceAccess`, `UpdateInstanceActivity`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CloudRTC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `stream_id` to the interface `ListRtcClientQosDetails`
+
+### HuaweiCloud SDK CloudTable
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateCluster`:
+    - The request parameter `availability_zone`, `cu_num`, `net_id`, `security_group_id`, `tsd_num`, `vpc_id`, `version`, `type` changed to required
+    - The request parameter `enable_lemon`, `enable_openTSDB` changed to not required
+  - Changes of the interface `ListClusters`:
+    - Add the response parameter `actions`
+    - Modify the type `string` -> `object` of the response parameter `action_progress`
+  - Changes of the interface `ShowClusterDetail`:
+    - Add the response parameter `openTSDB_link`
+    - Remove the response parameters `opentsdb_link`, `tsd_public_endpoint`
+    - Modify the type `int32` -> `string` of the response parameter `cu_num`
+    - Modify the type `int32` -> `string` of the response parameter `tsd_num`
+    - Modify the type `int32` -> `string` of the response parameter `lemon_num`
+
+### HuaweiCloud SDK CodeCheck
+
+- _Features_
+  - Support the interfaces `ShowTaskCmetrics`, `ListTemplateRules`, `ListTaskRuleset`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `is_access`, `trigger_type` to the interface `ShowTaskDetail`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `readonly_domain_name` to the interface `ListInstances`
+  - Add the response parameter `readonly_domain_name` to the interface `ShowInstance`
+
+### HuaweiCloud SDK DDM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `time_zone` to the interface `CreateInstance`
+  - Add the response parameters `instanceId`, `instanceName`, `jobId` to the interface `RestartInstance`
+
+### HuaweiCloud SDK DSC
+
+- _Features_
+  - Support the interface `ShowOpenApiCalledRecords`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `readonly_password` to the interface `CreateDocWatermark`
+  - Changes of the interface `ShowScanJobs`:
+    - Add the request parameter `offset`
+    - Remove the request parameter `page`
+  - Changes of the interface `ShowScanJobResults`:
+    - Add the request parameter `offset`
+    - Remove the request parameter `page`
+
+### HuaweiCloud SDK FRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameters `landmark`, `gender`, `yaw_angle`, `roll_angle`, `pitch_angle`, `headpose`, `smile`, `skin`, `ethnic` from the interface `DetectFaceByFile`
+  - Remove the response parameters `landmark`, `gender`, `yaw_angle`, `roll_angle`, `pitch_angle`, `headpose`, `smile`, `skin`, `ethnic` from the interface `DetectFaceByUrl`
+  - Remove the response parameters `landmark`, `gender`, `yaw_angle`, `roll_angle`, `pitch_angle`, `headpose`, `smile`, `skin`, `ethnic` from the interface `DetectFaceByBase64`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the following interfaces：
+    - `ListInstanceTags`
+    - `ListProjectTags`
+    - `BatchTagAction`
+    - `ShowInstanceMonitorExtend`
+    - `UpdateInstanceMonitor`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListGaussMySqlInstances`:
+    - Add the request parameters `private_ip`, `tags`
+    - Add the response parameter `tags`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `region` changed to required of the interface `ListFlavors`
+
+### HuaweiCloud SDK GES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `CheckMetadata`
+
+### HuaweiCloud SDK HiLens
+
+- _Features_
+  - Support the service `Huawei HiLens`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK KMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `encrypted_privatekey` to the interface `ImportKeyMaterial`
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `default_record_config` changed to required of the interface `CreateRecordRule`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - Support the following interfaces：
+    - `ListLogHistogram`
+    - `ListHost`
+    - `ListHostGroup`
+    - `UpdateHostGroup`
+    - `CreateHostGroup`
+    - `DeleteHostGroup`
+    - `ListAccessConfig`
+    - `UpdateAccessConfig`
+    - `CreateAccessConfig`
+    - `DeleteAccessConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interface `RestoreExistInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RES
+
+- _Features_
+  - Support the service `Recommender System`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SWR
+
+- _Features_
+  - Support the interface `ListQuotas`
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the name `UpdateNamespaceAuthReq` -> `UpdateNamespaceAuthRequestBody` of the request body of the interface `UpdateNamespaceAuth`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `to`, `from` changed to required of the interface `ListStatistics`
+  - The request parameter `from`, `to` changed to required of the interface `ListQpsTimeline`
+  - The request parameter `from`, `to` changed to required of the interface `ListBandwidthTimeline`
+  - The request parameter `from`, `to` changed to required of the interface `ListTopAbnormal`
+  - Add the response parameter `cookie` to the interface `ShowEvent`
+  - Changes of the interface `CreatePremiumHost`:
+    - Add the request parameter `Content-Type`
+    - Modify the type `string` -> `enum` of the request parameter `type`
+  - Add the request parameter `Content-Type` to the interface `ListPremiumHost`
+  - Changes of the interface `UpdatePremiumHost`:
+    - Add the request parameter `Content-Type`
+    - Modify the type `string` -> `enum` of the response parameter `type`
+  - Add the request parameter `Content-Type` to the interface `DeletePremiumHost`
+  - Changes of the interface `ShowPremiumHost`:
+    - Add the request parameter `Content-Type`
+    - Modify the type `string` -> `enum` of the response parameter `type`
+  - Add the request parameter `Content-Type` to the interface `UpdatePremiumHostProtectStatus`
+
 # 3.0.70 2021-11-29
 
 ### HuaweiCloud SDK APIG
