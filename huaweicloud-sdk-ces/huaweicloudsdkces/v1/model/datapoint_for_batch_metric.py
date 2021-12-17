@@ -26,7 +26,7 @@ class DatapointForBatchMetric:
         'min': 'float',
         'average': 'float',
         'sum': 'float',
-        'variance': 'str',
+        'variance': 'float',
         'timestamp': 'int'
     }
 
@@ -159,7 +159,7 @@ class DatapointForBatchMetric:
         聚合周期内指标数据的方差。
 
         :return: The variance of this DatapointForBatchMetric.
-        :rtype: str
+        :rtype: float
         """
         return self._variance
 
@@ -170,7 +170,7 @@ class DatapointForBatchMetric:
         聚合周期内指标数据的方差。
 
         :param variance: The variance of this DatapointForBatchMetric.
-        :type: str
+        :type: float
         """
         self._variance = variance
 

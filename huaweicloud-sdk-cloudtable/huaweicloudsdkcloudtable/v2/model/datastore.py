@@ -40,10 +40,8 @@ class Datastore:
         self._type = None
         self.discriminator = None
 
-        if version is not None:
-            self.version = version
-        if type is not None:
-            self.type = type
+        self.version = version
+        self.type = type
 
     @property
     def version(self):

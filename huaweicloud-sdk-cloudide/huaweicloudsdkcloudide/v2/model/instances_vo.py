@@ -22,7 +22,6 @@ class InstancesVO:
     sensitive_list = []
 
     openapi_types = {
-        'action_list': 'list[RoleAction]',
         'arch': 'str',
         'attributes': 'Attributes',
         'cpu_memory': 'str',
@@ -43,18 +42,17 @@ class InstancesVO:
         'pvc_quantity': 'str',
         'refresh_interval': 'int',
         'region': 'str',
-        'role': 'Role',
-        'role_id': 'str',
         'server_map': 'dict(str, str)',
         'server_url': 'str',
         'stack_id': 'str',
         'status': 'str',
-        'sub_org': 'str',
-        'updated_time': 'str'
+        'updated_time': 'str',
+        'visitor_id': 'str',
+        'visitor_name': 'str',
+        'visitor_domain_name': 'str'
     }
 
     attribute_map = {
-        'action_list': 'action_list',
         'arch': 'arch',
         'attributes': 'attributes',
         'cpu_memory': 'cpu_memory',
@@ -75,22 +73,21 @@ class InstancesVO:
         'pvc_quantity': 'pvc_quantity',
         'refresh_interval': 'refresh_interval',
         'region': 'region',
-        'role': 'role',
-        'role_id': 'role_id',
         'server_map': 'server_map',
         'server_url': 'server_url',
         'stack_id': 'stack_id',
         'status': 'status',
-        'sub_org': 'sub_org',
-        'updated_time': 'updated_time'
+        'updated_time': 'updated_time',
+        'visitor_id': 'visitor_id',
+        'visitor_name': 'visitor_name',
+        'visitor_domain_name': 'visitor_domain_name'
     }
 
-    def __init__(self, action_list=None, arch=None, attributes=None, cpu_memory=None, created_time=None, description=None, display_name=None, domain_name=None, id=None, is_temporary=None, label=None, link=None, name=None, organization_id=None, owner_id=None, owner_name=None, platform_id=None, private=None, pvc_quantity=None, refresh_interval=None, region=None, role=None, role_id=None, server_map=None, server_url=None, stack_id=None, status=None, sub_org=None, updated_time=None):
+    def __init__(self, arch=None, attributes=None, cpu_memory=None, created_time=None, description=None, display_name=None, domain_name=None, id=None, is_temporary=None, label=None, link=None, name=None, organization_id=None, owner_id=None, owner_name=None, platform_id=None, private=None, pvc_quantity=None, refresh_interval=None, region=None, server_map=None, server_url=None, stack_id=None, status=None, updated_time=None, visitor_id=None, visitor_name=None, visitor_domain_name=None):
         """InstancesVO - a model defined in huaweicloud sdk"""
         
         
 
-        self._action_list = None
         self._arch = None
         self._attributes = None
         self._cpu_memory = None
@@ -111,18 +108,16 @@ class InstancesVO:
         self._pvc_quantity = None
         self._refresh_interval = None
         self._region = None
-        self._role = None
-        self._role_id = None
         self._server_map = None
         self._server_url = None
         self._stack_id = None
         self._status = None
-        self._sub_org = None
         self._updated_time = None
+        self._visitor_id = None
+        self._visitor_name = None
+        self._visitor_domain_name = None
         self.discriminator = None
 
-        if action_list is not None:
-            self.action_list = action_list
         if arch is not None:
             self.arch = arch
         if attributes is not None:
@@ -163,10 +158,6 @@ class InstancesVO:
             self.refresh_interval = refresh_interval
         if region is not None:
             self.region = region
-        if role is not None:
-            self.role = role
-        if role_id is not None:
-            self.role_id = role_id
         if server_map is not None:
             self.server_map = server_map
         if server_url is not None:
@@ -175,32 +166,14 @@ class InstancesVO:
             self.stack_id = stack_id
         if status is not None:
             self.status = status
-        if sub_org is not None:
-            self.sub_org = sub_org
         if updated_time is not None:
             self.updated_time = updated_time
-
-    @property
-    def action_list(self):
-        """Gets the action_list of this InstancesVO.
-
-        角色权限列表
-
-        :return: The action_list of this InstancesVO.
-        :rtype: list[RoleAction]
-        """
-        return self._action_list
-
-    @action_list.setter
-    def action_list(self, action_list):
-        """Sets the action_list of this InstancesVO.
-
-        角色权限列表
-
-        :param action_list: The action_list of this InstancesVO.
-        :type: list[RoleAction]
-        """
-        self._action_list = action_list
+        if visitor_id is not None:
+            self.visitor_id = visitor_id
+        if visitor_name is not None:
+            self.visitor_name = visitor_name
+        if visitor_domain_name is not None:
+            self.visitor_domain_name = visitor_domain_name
 
     @property
     def arch(self):
@@ -641,48 +614,6 @@ class InstancesVO:
         self._region = region
 
     @property
-    def role(self):
-        """Gets the role of this InstancesVO.
-
-
-        :return: The role of this InstancesVO.
-        :rtype: Role
-        """
-        return self._role
-
-    @role.setter
-    def role(self, role):
-        """Sets the role of this InstancesVO.
-
-
-        :param role: The role of this InstancesVO.
-        :type: Role
-        """
-        self._role = role
-
-    @property
-    def role_id(self):
-        """Gets the role_id of this InstancesVO.
-
-        角色id
-
-        :return: The role_id of this InstancesVO.
-        :rtype: str
-        """
-        return self._role_id
-
-    @role_id.setter
-    def role_id(self, role_id):
-        """Sets the role_id of this InstancesVO.
-
-        角色id
-
-        :param role_id: The role_id of this InstancesVO.
-        :type: str
-        """
-        self._role_id = role_id
-
-    @property
     def server_map(self):
         """Gets the server_map of this InstancesVO.
 
@@ -771,28 +702,6 @@ class InstancesVO:
         self._status = status
 
     @property
-    def sub_org(self):
-        """Gets the sub_org of this InstancesVO.
-
-        子组织
-
-        :return: The sub_org of this InstancesVO.
-        :rtype: str
-        """
-        return self._sub_org
-
-    @sub_org.setter
-    def sub_org(self, sub_org):
-        """Sets the sub_org of this InstancesVO.
-
-        子组织
-
-        :param sub_org: The sub_org of this InstancesVO.
-        :type: str
-        """
-        self._sub_org = sub_org
-
-    @property
     def updated_time(self):
         """Gets the updated_time of this InstancesVO.
 
@@ -813,6 +722,72 @@ class InstancesVO:
         :type: str
         """
         self._updated_time = updated_time
+
+    @property
+    def visitor_id(self):
+        """Gets the visitor_id of this InstancesVO.
+
+        访问者id
+
+        :return: The visitor_id of this InstancesVO.
+        :rtype: str
+        """
+        return self._visitor_id
+
+    @visitor_id.setter
+    def visitor_id(self, visitor_id):
+        """Sets the visitor_id of this InstancesVO.
+
+        访问者id
+
+        :param visitor_id: The visitor_id of this InstancesVO.
+        :type: str
+        """
+        self._visitor_id = visitor_id
+
+    @property
+    def visitor_name(self):
+        """Gets the visitor_name of this InstancesVO.
+
+        访问者名称
+
+        :return: The visitor_name of this InstancesVO.
+        :rtype: str
+        """
+        return self._visitor_name
+
+    @visitor_name.setter
+    def visitor_name(self, visitor_name):
+        """Sets the visitor_name of this InstancesVO.
+
+        访问者名称
+
+        :param visitor_name: The visitor_name of this InstancesVO.
+        :type: str
+        """
+        self._visitor_name = visitor_name
+
+    @property
+    def visitor_domain_name(self):
+        """Gets the visitor_domain_name of this InstancesVO.
+
+        访问者租户名称
+
+        :return: The visitor_domain_name of this InstancesVO.
+        :rtype: str
+        """
+        return self._visitor_domain_name
+
+    @visitor_domain_name.setter
+    def visitor_domain_name(self, visitor_domain_name):
+        """Sets the visitor_domain_name of this InstancesVO.
+
+        访问者租户名称
+
+        :param visitor_domain_name: The visitor_domain_name of this InstancesVO.
+        :type: str
+        """
+        self._visitor_domain_name = visitor_domain_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

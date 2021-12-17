@@ -22,43 +22,72 @@ class ListEditingJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[QueryEditingJobRsp]'
+        'total': 'int',
+        'jobs': 'list[EditingJob]'
     }
 
     attribute_map = {
-        'body': 'body'
+        'total': 'total',
+        'jobs': 'jobs'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, total=None, jobs=None):
         """ListEditingJobResponse - a model defined in huaweicloud sdk"""
         
         super(ListEditingJobResponse, self).__init__()
 
-        self._body = None
+        self._total = None
+        self._jobs = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if total is not None:
+            self.total = total
+        if jobs is not None:
+            self.jobs = jobs
 
     @property
-    def body(self):
-        """Gets the body of this ListEditingJobResponse.
+    def total(self):
+        """Gets the total of this ListEditingJobResponse.
 
+        任务总数
 
-        :return: The body of this ListEditingJobResponse.
-        :rtype: list[QueryEditingJobRsp]
+        :return: The total of this ListEditingJobResponse.
+        :rtype: int
         """
-        return self._body
+        return self._total
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this ListEditingJobResponse.
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListEditingJobResponse.
 
+        任务总数
 
-        :param body: The body of this ListEditingJobResponse.
-        :type: list[QueryEditingJobRsp]
+        :param total: The total of this ListEditingJobResponse.
+        :type: int
         """
-        self._body = body
+        self._total = total
+
+    @property
+    def jobs(self):
+        """Gets the jobs of this ListEditingJobResponse.
+
+        任务列表
+
+        :return: The jobs of this ListEditingJobResponse.
+        :rtype: list[EditingJob]
+        """
+        return self._jobs
+
+    @jobs.setter
+    def jobs(self, jobs):
+        """Sets the jobs of this ListEditingJobResponse.
+
+        任务列表
+
+        :param jobs: The jobs of this ListEditingJobResponse.
+        :type: list[EditingJob]
+        """
+        self._jobs = jobs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

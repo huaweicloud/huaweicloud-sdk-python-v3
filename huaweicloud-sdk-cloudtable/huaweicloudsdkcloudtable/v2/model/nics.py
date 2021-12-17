@@ -40,10 +40,8 @@ class Nics:
         self._security_group_id = None
         self.discriminator = None
 
-        if net_id is not None:
-            self.net_id = net_id
-        if security_group_id is not None:
-            self.security_group_id = security_group_id
+        self.net_id = net_id
+        self.security_group_id = security_group_id
 
     @property
     def net_id(self):

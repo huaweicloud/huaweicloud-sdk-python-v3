@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class QueryEditingJobRsp:
+class StopJobRequest:
 
 
     """
@@ -22,72 +22,71 @@ class QueryEditingJobRsp:
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int',
-        'jobs': 'list[EditingJob]'
+        'job_id': 'str',
+        'trigger_savepoint': 'bool'
     }
 
     attribute_map = {
-        'total': 'total',
-        'jobs': 'jobs'
+        'job_id': 'job_id',
+        'trigger_savepoint': 'trigger_savepoint'
     }
 
-    def __init__(self, total=None, jobs=None):
-        """QueryEditingJobRsp - a model defined in huaweicloud sdk"""
+    def __init__(self, job_id=None, trigger_savepoint=None):
+        """StopJobRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._total = None
-        self._jobs = None
+        self._job_id = None
+        self._trigger_savepoint = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
-        if jobs is not None:
-            self.jobs = jobs
+        self.job_id = job_id
+        if trigger_savepoint is not None:
+            self.trigger_savepoint = trigger_savepoint
 
     @property
-    def total(self):
-        """Gets the total of this QueryEditingJobRsp.
+    def job_id(self):
+        """Gets the job_id of this StopJobRequest.
 
-        任务总数
+        作业ID
 
-        :return: The total of this QueryEditingJobRsp.
-        :rtype: int
+        :return: The job_id of this StopJobRequest.
+        :rtype: str
         """
-        return self._total
+        return self._job_id
 
-    @total.setter
-    def total(self, total):
-        """Sets the total of this QueryEditingJobRsp.
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this StopJobRequest.
 
-        任务总数
+        作业ID
 
-        :param total: The total of this QueryEditingJobRsp.
-        :type: int
+        :param job_id: The job_id of this StopJobRequest.
+        :type: str
         """
-        self._total = total
+        self._job_id = job_id
 
     @property
-    def jobs(self):
-        """Gets the jobs of this QueryEditingJobRsp.
+    def trigger_savepoint(self):
+        """Gets the trigger_savepoint of this StopJobRequest.
 
-        任务列表
+        停止作业触发savepoint
 
-        :return: The jobs of this QueryEditingJobRsp.
-        :rtype: list[EditingJob]
+        :return: The trigger_savepoint of this StopJobRequest.
+        :rtype: bool
         """
-        return self._jobs
+        return self._trigger_savepoint
 
-    @jobs.setter
-    def jobs(self, jobs):
-        """Sets the jobs of this QueryEditingJobRsp.
+    @trigger_savepoint.setter
+    def trigger_savepoint(self, trigger_savepoint):
+        """Sets the trigger_savepoint of this StopJobRequest.
 
-        任务列表
+        停止作业触发savepoint
 
-        :param jobs: The jobs of this QueryEditingJobRsp.
-        :type: list[EditingJob]
+        :param trigger_savepoint: The trigger_savepoint of this StopJobRequest.
+        :type: bool
         """
-        self._jobs = jobs
+        self._trigger_savepoint = trigger_savepoint
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -131,7 +130,7 @@ class QueryEditingJobRsp:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, QueryEditingJobRsp):
+        if not isinstance(other, StopJobRequest):
             return False
 
         return self.__dict__ == other.__dict__

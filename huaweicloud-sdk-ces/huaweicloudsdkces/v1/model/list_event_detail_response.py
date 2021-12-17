@@ -24,8 +24,8 @@ class ListEventDetailResponse(SdkResponse):
     openapi_types = {
         'event_name': 'str',
         'event_type': 'str',
-        'event_users': 'str',
-        'event_sources': 'str',
+        'event_users': 'list[str]',
+        'event_sources': 'list[str]',
         'event_info': 'list[EventInfoDetail]',
         'meta_data': 'TotalMetaData'
     }
@@ -116,7 +116,7 @@ class ListEventDetailResponse(SdkResponse):
         上报事件时用户的名称，也可能为projectID。
 
         :return: The event_users of this ListEventDetailResponse.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._event_users
 
@@ -127,7 +127,7 @@ class ListEventDetailResponse(SdkResponse):
         上报事件时用户的名称，也可能为projectID。
 
         :param event_users: The event_users of this ListEventDetailResponse.
-        :type: str
+        :type: list[str]
         """
         self._event_users = event_users
 
@@ -138,7 +138,7 @@ class ListEventDetailResponse(SdkResponse):
         事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
 
         :return: The event_sources of this ListEventDetailResponse.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._event_sources
 
@@ -149,7 +149,7 @@ class ListEventDetailResponse(SdkResponse):
         事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
 
         :param event_sources: The event_sources of this ListEventDetailResponse.
-        :type: str
+        :type: list[str]
         """
         self._event_sources = event_sources
 

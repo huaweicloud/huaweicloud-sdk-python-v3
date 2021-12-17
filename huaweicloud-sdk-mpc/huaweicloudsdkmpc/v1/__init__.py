@@ -102,6 +102,7 @@ from huaweicloudsdkmpc.v1.model.delete_watermark_template_response import Delete
 from huaweicloudsdkmpc.v1.model.each_encrypt_rsp import EachEncryptRsp
 from huaweicloudsdkmpc.v1.model.edit_audio_info import EditAudioInfo
 from huaweicloudsdkmpc.v1.model.edit_hls_info import EditHlsInfo
+from huaweicloudsdkmpc.v1.model.edit_setting import EditSetting
 from huaweicloudsdkmpc.v1.model.edit_video_info import EditVideoInfo
 from huaweicloudsdkmpc.v1.model.editing_job import EditingJob
 from huaweicloudsdkmpc.v1.model.encryption import Encryption
@@ -151,6 +152,7 @@ from huaweicloudsdkmpc.v1.model.mix_info import MixInfo
 from huaweicloudsdkmpc.v1.model.mix_info_layout import MixInfoLayout
 from huaweicloudsdkmpc.v1.model.modify_trans_template_group import ModifyTransTemplateGroup
 from huaweicloudsdkmpc.v1.model.modify_trans_template_req import ModifyTransTemplateReq
+from huaweicloudsdkmpc.v1.model.mosaic_info import MosaicInfo
 from huaweicloudsdkmpc.v1.model.mpc_multi_audio import MpcMultiAudio
 from huaweicloudsdkmpc.v1.model.mpe_call_back_req import MpeCallBackReq
 from huaweicloudsdkmpc.v1.model.mpe_meta_data import MpeMetaData
@@ -171,7 +173,6 @@ from huaweicloudsdkmpc.v1.model.pic_info import PicInfo
 from huaweicloudsdkmpc.v1.model.quality_enhance_template import QualityEnhanceTemplate
 from huaweicloudsdkmpc.v1.model.quality_enhance_template_info import QualityEnhanceTemplateInfo
 from huaweicloudsdkmpc.v1.model.quality_enhance_video import QualityEnhanceVideo
-from huaweicloudsdkmpc.v1.model.query_editing_job_rsp import QueryEditingJobRsp
 from huaweicloudsdkmpc.v1.model.query_trans_template import QueryTransTemplate
 from huaweicloudsdkmpc.v1.model.query_transcodings_task_response import QueryTranscodingsTaskResponse
 from huaweicloudsdkmpc.v1.model.remux_output_param import RemuxOutputParam

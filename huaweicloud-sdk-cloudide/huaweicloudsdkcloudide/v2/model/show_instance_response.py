@@ -23,27 +23,32 @@ class ShowInstanceResponse(SdkResponse):
 
     openapi_types = {
         'instance': 'InstancesVO',
-        'status': 'str'
+        'status': 'str',
+        'bundle_url': 'str'
     }
 
     attribute_map = {
         'instance': 'instance',
-        'status': 'status'
+        'status': 'status',
+        'bundle_url': 'bundle_url'
     }
 
-    def __init__(self, instance=None, status=None):
+    def __init__(self, instance=None, status=None, bundle_url=None):
         """ShowInstanceResponse - a model defined in huaweicloud sdk"""
         
         super(ShowInstanceResponse, self).__init__()
 
         self._instance = None
         self._status = None
+        self._bundle_url = None
         self.discriminator = None
 
         if instance is not None:
             self.instance = instance
         if status is not None:
             self.status = status
+        if bundle_url is not None:
+            self.bundle_url = bundle_url
 
     @property
     def instance(self):
@@ -86,6 +91,28 @@ class ShowInstanceResponse(SdkResponse):
         :type: str
         """
         self._status = status
+
+    @property
+    def bundle_url(self):
+        """Gets the bundle_url of this ShowInstanceResponse.
+
+        静态资源链接
+
+        :return: The bundle_url of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._bundle_url
+
+    @bundle_url.setter
+    def bundle_url(self, bundle_url):
+        """Sets the bundle_url of this ShowInstanceResponse.
+
+        静态资源链接
+
+        :param bundle_url: The bundle_url of this ShowInstanceResponse.
+        :type: str
+        """
+        self._bundle_url = bundle_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

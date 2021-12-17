@@ -1,3 +1,89 @@
+# 3.0.72 2021-12-17
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 支持接口`ShowVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowInstance`:
+    - 新增响应参数 `bundle_url`、`visitor_id`、`visitor_name`、`visitor_domain_name`
+    - 移除响应参数 `action_list`、`role`、`role_id`、`sub_org`
+  - 接口`ListOrgInstances`:
+    - 新增响应参数 `visitor_id`、`visitor_name`、`visitor_domain_name`
+    - 移除响应参数 `action_list`、`role`、`role_id`、`sub_org`
+  - 接口`ListInstances`:
+    - 新增响应参数 `visitor_id`、`visitor_name`、`visitor_domain_name`
+    - 移除响应参数 `action_list`、`role`、`role_id`、`sub_org`
+
+### HuaweiCloud SDK CloudRTC
+
+- _新增特性_
+  - 支持接口`ListRtcAbnormalEvents`、`ListRtcAbnormalEventDimension`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListEvents`:
+    - 响应参数`event_count`类型调整 `string` -> `int32`
+    - 响应参数`latest_occur_time`类型调整 `string` -> `int64`
+  - 接口`BatchListMetricData`响应参数`variance`类型调整 `string` -> `double`
+  - 接口`ListResourceGroup`响应参数`type_statistics`类型调整 `string` -> `int32`
+  - 接口`ListEventDetail`:
+    - 响应参数`event_users`类型调整 `string` -> `array`
+    - 响应参数`event_sources`类型调整 `string` -> `array`
+
+### HuaweiCloud SDK IoTAnalytics
+
+- _新增特性_
+  - 支持物联网数据分析服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateEditingJob`新增请求参数 `input`、`edit_settings`
+  - 接口`ListEditingJob`新增响应参数 `input`、`edit_settings`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 支持以下接口：
+    - `RecognizeThailandIdcard`
+    - `RecognizeMyanmarIdcard`
+    - `RecognizeMyanmarDriverLicense`
+    - `RecognizeChileIdCard`
+    - `RecognizeThailandLicensePlate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.0.71 2021-12-10
 
 ### HuaweiCloud SDK AOM

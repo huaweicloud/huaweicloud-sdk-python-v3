@@ -63,22 +63,23 @@ class Cluster:
 
         if auth_mode is not None:
             self.auth_mode = auth_mode
-        self.enable_lemon = enable_lemon
-        self.enable_open_tsdb = enable_open_tsdb
+        if enable_lemon is not None:
+            self.enable_lemon = enable_lemon
+        if enable_open_tsdb is not None:
+            self.enable_open_tsdb = enable_open_tsdb
         self.instance = instance
         self.name = name
         if storage_size is not None:
             self.storage_size = storage_size
         self.storage_type = storage_type
-        if vpc_id is not None:
-            self.vpc_id = vpc_id
+        self.vpc_id = vpc_id
         self.datastore = datastore
 
     @property
     def auth_mode(self):
         """Gets the auth_mode of this Cluster.
 
-        是否开启IAM权限认证。 - false：不开启 - true：开启 
+        是否开启IAM权限认证。 - false：不开启 - true：开启
 
         :return: The auth_mode of this Cluster.
         :rtype: str
@@ -89,7 +90,7 @@ class Cluster:
     def auth_mode(self, auth_mode):
         """Sets the auth_mode of this Cluster.
 
-        是否开启IAM权限认证。 - false：不开启 - true：开启 
+        是否开启IAM权限认证。 - false：不开启 - true：开启
 
         :param auth_mode: The auth_mode of this Cluster.
         :type: str
@@ -100,7 +101,7 @@ class Cluster:
     def enable_lemon(self):
         """Gets the enable_lemon of this Cluster.
 
-        是否开启Lemon。 - false：不开启 - true：开启
+        是否开启Lemon(目前已关闭该参数，填false即可) - false：不开启 - true：开启
 
         :return: The enable_lemon of this Cluster.
         :rtype: bool
@@ -111,7 +112,7 @@ class Cluster:
     def enable_lemon(self, enable_lemon):
         """Sets the enable_lemon of this Cluster.
 
-        是否开启Lemon。 - false：不开启 - true：开启
+        是否开启Lemon(目前已关闭该参数，填false即可) - false：不开启 - true：开启
 
         :param enable_lemon: The enable_lemon of this Cluster.
         :type: bool
@@ -186,7 +187,7 @@ class Cluster:
     def storage_size(self):
         """Gets the storage_size of this Cluster.
 
-        存储值的大小。  取值范围: 1-[10240-1024*1024*1024] 
+        存储值的大小。  取值范围: 1-[10240-1024*1024*1024]
 
         :return: The storage_size of this Cluster.
         :rtype: int
@@ -197,7 +198,7 @@ class Cluster:
     def storage_size(self, storage_size):
         """Sets the storage_size of this Cluster.
 
-        存储值的大小。  取值范围: 1-[10240-1024*1024*1024] 
+        存储值的大小。  取值范围: 1-[10240-1024*1024*1024]
 
         :param storage_size: The storage_size of this Cluster.
         :type: int
@@ -208,7 +209,7 @@ class Cluster:
     def storage_type(self):
         """Gets the storage_type of this Cluster.
 
-        存储类型： - ULTRAHIGH：超高IO - COMMON：普通IO 
+        存储类型： - ULTRAHIGH：超高IO - COMMON：普通IO
 
         :return: The storage_type of this Cluster.
         :rtype: str
@@ -219,7 +220,7 @@ class Cluster:
     def storage_type(self, storage_type):
         """Sets the storage_type of this Cluster.
 
-        存储类型： - ULTRAHIGH：超高IO - COMMON：普通IO 
+        存储类型： - ULTRAHIGH：超高IO - COMMON：普通IO
 
         :param storage_type: The storage_type of this Cluster.
         :type: str

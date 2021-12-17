@@ -24,8 +24,8 @@ class EventInfo:
     openapi_types = {
         'event_name': 'str',
         'event_type': 'str',
-        'event_count': 'str',
-        'latest_occur_time': 'str',
+        'event_count': 'int',
+        'latest_occur_time': 'int',
         'latest_event_source': 'str'
     }
 
@@ -111,7 +111,7 @@ class EventInfo:
         选择查询的时间范围内，此事件发生的数量。
 
         :return: The event_count of this EventInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._event_count
 
@@ -122,7 +122,7 @@ class EventInfo:
         选择查询的时间范围内，此事件发生的数量。
 
         :param event_count: The event_count of this EventInfo.
-        :type: str
+        :type: int
         """
         self._event_count = event_count
 
@@ -133,7 +133,7 @@ class EventInfo:
         此事件最近一次发生的时间。
 
         :return: The latest_occur_time of this EventInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._latest_occur_time
 
@@ -144,7 +144,7 @@ class EventInfo:
         此事件最近一次发生的时间。
 
         :param latest_occur_time: The latest_occur_time of this EventInfo.
-        :type: str
+        :type: int
         """
         self._latest_occur_time = latest_occur_time
 

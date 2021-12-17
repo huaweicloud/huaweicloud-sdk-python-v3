@@ -300,6 +300,69 @@ class OcrAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def recognize_chile_id_card_async(self, request):
+        """智利身份证识别
+
+        识别智利身份证图片中的文字内容，并返回识别的结构化结果。
+
+        :param RecognizeChileIdCardRequest request
+        :return: RecognizeChileIdCardResponse
+        """
+        return self.recognize_chile_id_card_with_http_info(request)
+
+    def recognize_chile_id_card_with_http_info(self, request):
+        """智利身份证识别
+
+        识别智利身份证图片中的文字内容，并返回识别的结构化结果。
+
+        :param RecognizeChileIdCardRequest request
+        :return: RecognizeChileIdCardResponse
+        """
+
+        all_params = ['chile_id_card_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/chile-id-card',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeChileIdCardResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def recognize_driver_license_async(self, request):
         """驾驶证识别
 
@@ -993,6 +1056,132 @@ class OcrAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def recognize_myanmar_driver_license_async(self, request):
+        """缅文驾驶证识别
+
+        识别缅甸驾驶证中的文字信息，并返回识别的结构化结果。
+
+        :param RecognizeMyanmarDriverLicenseRequest request
+        :return: RecognizeMyanmarDriverLicenseResponse
+        """
+        return self.recognize_myanmar_driver_license_with_http_info(request)
+
+    def recognize_myanmar_driver_license_with_http_info(self, request):
+        """缅文驾驶证识别
+
+        识别缅甸驾驶证中的文字信息，并返回识别的结构化结果。
+
+        :param RecognizeMyanmarDriverLicenseRequest request
+        :return: RecognizeMyanmarDriverLicenseResponse
+        """
+
+        all_params = ['myanmar_driver_license_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/myanmar-driver-license',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeMyanmarDriverLicenseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def recognize_myanmar_idcard_async(self, request):
+        """缅文身份证识别
+
+        识别缅文身份证中的文字信息，并返回识别的结构化结果。
+
+        :param RecognizeMyanmarIdcardRequest request
+        :return: RecognizeMyanmarIdcardResponse
+        """
+        return self.recognize_myanmar_idcard_with_http_info(request)
+
+    def recognize_myanmar_idcard_with_http_info(self, request):
+        """缅文身份证识别
+
+        识别缅文身份证中的文字信息，并返回识别的结构化结果。
+
+        :param RecognizeMyanmarIdcardRequest request
+        :return: RecognizeMyanmarIdcardResponse
+        """
+
+        all_params = ['myanmar_idcard_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/myanmar-id-card',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeMyanmarIdcardResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def recognize_passport_async(self, request):
         """护照识别
 
@@ -1239,6 +1428,132 @@ class OcrAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RecognizeTaxiInvoiceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def recognize_thailand_idcard_async(self, request):
+        """泰文身份证识别
+
+        识别泰国身份证中的文字信息，并返回识别的结构化结果。
+
+        :param RecognizeThailandIdcardRequest request
+        :return: RecognizeThailandIdcardResponse
+        """
+        return self.recognize_thailand_idcard_with_http_info(request)
+
+    def recognize_thailand_idcard_with_http_info(self, request):
+        """泰文身份证识别
+
+        识别泰国身份证中的文字信息，并返回识别的结构化结果。
+
+        :param RecognizeThailandIdcardRequest request
+        :return: RecognizeThailandIdcardResponse
+        """
+
+        all_params = ['thailand_idcard_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/thailand-id-card',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeThailandIdcardResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def recognize_thailand_license_plate_async(self, request):
+        """泰国车牌识别
+
+        识别泰国车牌图片中的车牌信息，并返回识别的结构化结果。
+
+        :param RecognizeThailandLicensePlateRequest request
+        :return: RecognizeThailandLicensePlateResponse
+        """
+        return self.recognize_thailand_license_plate_with_http_info(request)
+
+    def recognize_thailand_license_plate_with_http_info(self, request):
+        """泰国车牌识别
+
+        识别泰国车牌图片中的车牌信息，并返回识别的结构化结果。
+
+        :param RecognizeThailandLicensePlateRequest request
+        :return: RecognizeThailandLicensePlateResponse
+        """
+
+        all_params = ['thailand_license_plate_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/thailand-license-plate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeThailandLicensePlateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

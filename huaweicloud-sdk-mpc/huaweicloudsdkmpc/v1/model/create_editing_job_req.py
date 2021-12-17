@@ -27,8 +27,10 @@ class CreateEditingJobReq:
         'concats': 'list[MultiConcatInfo]',
         'concat': 'ConcatInfo',
         'mix': 'MixInfo',
+        'input': 'ObsObjInfo',
         'output_setting': 'OutputSetting',
         'image_watermark_settings': 'list[ImageWatermarkSetting]',
+        'edit_settings': 'list[EditSetting]',
         'user_data': 'str'
     }
 
@@ -38,12 +40,14 @@ class CreateEditingJobReq:
         'concats': 'concats',
         'concat': 'concat',
         'mix': 'mix',
+        'input': 'input',
         'output_setting': 'output_setting',
         'image_watermark_settings': 'image_watermark_settings',
+        'edit_settings': 'edit_settings',
         'user_data': 'user_data'
     }
 
-    def __init__(self, edit_type=None, clips=None, concats=None, concat=None, mix=None, output_setting=None, image_watermark_settings=None, user_data=None):
+    def __init__(self, edit_type=None, clips=None, concats=None, concat=None, mix=None, input=None, output_setting=None, image_watermark_settings=None, edit_settings=None, user_data=None):
         """CreateEditingJobReq - a model defined in huaweicloud sdk"""
         
         
@@ -53,8 +57,10 @@ class CreateEditingJobReq:
         self._concats = None
         self._concat = None
         self._mix = None
+        self._input = None
         self._output_setting = None
         self._image_watermark_settings = None
+        self._edit_settings = None
         self._user_data = None
         self.discriminator = None
 
@@ -68,10 +74,14 @@ class CreateEditingJobReq:
             self.concat = concat
         if mix is not None:
             self.mix = mix
+        if input is not None:
+            self.input = input
         if output_setting is not None:
             self.output_setting = output_setting
         if image_watermark_settings is not None:
             self.image_watermark_settings = image_watermark_settings
+        if edit_settings is not None:
+            self.edit_settings = edit_settings
         if user_data is not None:
             self.user_data = user_data
 
@@ -182,6 +192,26 @@ class CreateEditingJobReq:
         self._mix = mix
 
     @property
+    def input(self):
+        """Gets the input of this CreateEditingJobReq.
+
+
+        :return: The input of this CreateEditingJobReq.
+        :rtype: ObsObjInfo
+        """
+        return self._input
+
+    @input.setter
+    def input(self, input):
+        """Sets the input of this CreateEditingJobReq.
+
+
+        :param input: The input of this CreateEditingJobReq.
+        :type: ObsObjInfo
+        """
+        self._input = input
+
+    @property
     def output_setting(self):
         """Gets the output_setting of this CreateEditingJobReq.
 
@@ -222,6 +252,28 @@ class CreateEditingJobReq:
         :type: list[ImageWatermarkSetting]
         """
         self._image_watermark_settings = image_watermark_settings
+
+    @property
+    def edit_settings(self):
+        """Gets the edit_settings of this CreateEditingJobReq.
+
+        媒体处理配置，当edit_type为空时该参数生效。会根据该参数配置，对input参数指定的源文件进行处理 
+
+        :return: The edit_settings of this CreateEditingJobReq.
+        :rtype: list[EditSetting]
+        """
+        return self._edit_settings
+
+    @edit_settings.setter
+    def edit_settings(self, edit_settings):
+        """Sets the edit_settings of this CreateEditingJobReq.
+
+        媒体处理配置，当edit_type为空时该参数生效。会根据该参数配置，对input参数指定的源文件进行处理 
+
+        :param edit_settings: The edit_settings of this CreateEditingJobReq.
+        :type: list[EditSetting]
+        """
+        self._edit_settings = edit_settings
 
     @property
     def user_data(self):

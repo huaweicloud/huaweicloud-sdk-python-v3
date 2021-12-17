@@ -40,8 +40,6 @@ from huaweicloudsdkcloudide.v2.model.plugin import Plugin
 from huaweicloudsdkcloudide.v2.model.project_templates import ProjectTemplates
 from huaweicloudsdkcloudide.v2.model.recipe import Recipe
 from huaweicloudsdkcloudide.v2.model.resource_price import ResourcePrice
-from huaweicloudsdkcloudide.v2.model.role import Role
-from huaweicloudsdkcloudide.v2.model.role_action import RoleAction
 from huaweicloudsdkcloudide.v2.model.show_account_status_request import ShowAccountStatusRequest
 from huaweicloudsdkcloudide.v2.model.show_account_status_response import ShowAccountStatusResponse
 from huaweicloudsdkcloudide.v2.model.show_extension_authorization_request import ShowExtensionAuthorizationRequest

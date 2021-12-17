@@ -3,6 +3,7 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkcloudtable.v2.model.action_progress import ActionProgress
 from huaweicloudsdkcloudtable.v2.model.cluster import Cluster
 from huaweicloudsdkcloudtable.v2.model.cluster_detail import ClusterDetail
 from huaweicloudsdkcloudtable.v2.model.create_cluster_request import CreateClusterRequest

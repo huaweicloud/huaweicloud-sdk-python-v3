@@ -49,16 +49,12 @@ class Instance:
         self._tsd_num = None
         self.discriminator = None
 
-        if availability_zone is not None:
-            self.availability_zone = availability_zone
-        if cu_num is not None:
-            self.cu_num = cu_num
+        self.availability_zone = availability_zone
+        self.cu_num = cu_num
         if lemon_num is not None:
             self.lemon_num = lemon_num
-        if nics is not None:
-            self.nics = nics
-        if tsd_num is not None:
-            self.tsd_num = tsd_num
+        self.nics = nics
+        self.tsd_num = tsd_num
 
     @property
     def availability_zone(self):
@@ -86,7 +82,7 @@ class Instance:
     def cu_num(self):
         """Gets the cu_num of this Instance.
 
-        CloudTable集群计算单元节点数目，默认为2。
+        CloudTable集群计算单元节点数目，至少为2。
 
         :return: The cu_num of this Instance.
         :rtype: int
@@ -97,7 +93,7 @@ class Instance:
     def cu_num(self, cu_num):
         """Sets the cu_num of this Instance.
 
-        CloudTable集群计算单元节点数目，默认为2。
+        CloudTable集群计算单元节点数目，至少为2。
 
         :param cu_num: The cu_num of this Instance.
         :type: int
@@ -108,7 +104,7 @@ class Instance:
     def lemon_num(self):
         """Gets the lemon_num of this Instance.
 
-        CloudTable集群Lemon节点数目，默认为2。
+        CloudTable集群Lemon节点数目。
 
         :return: The lemon_num of this Instance.
         :rtype: int
@@ -119,7 +115,7 @@ class Instance:
     def lemon_num(self, lemon_num):
         """Sets the lemon_num of this Instance.
 
-        CloudTable集群Lemon节点数目，默认为2。
+        CloudTable集群Lemon节点数目。
 
         :param lemon_num: The lemon_num of this Instance.
         :type: int
@@ -152,7 +148,7 @@ class Instance:
     def tsd_num(self):
         """Gets the tsd_num of this Instance.
 
-        CloudTable集群TSD节点数目，默认为2。
+        CloudTable集群TSD节点数目，至少为2。
 
         :return: The tsd_num of this Instance.
         :rtype: int
@@ -163,7 +159,7 @@ class Instance:
     def tsd_num(self, tsd_num):
         """Sets the tsd_num of this Instance.
 
-        CloudTable集群TSD节点数目，默认为2。
+        CloudTable集群TSD节点数目，至少为2。
 
         :param tsd_num: The tsd_num of this Instance.
         :type: int

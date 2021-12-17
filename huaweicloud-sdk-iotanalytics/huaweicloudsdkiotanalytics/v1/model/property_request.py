@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class Role:
+class PropertyRequest:
 
 
     """
@@ -22,126 +22,98 @@ class Role:
     sensitive_list = []
 
     openapi_types = {
-        'c_role': 'str',
-        'id': 'str',
-        'role': 'str',
-        'role_actionses': 'list[RoleAction]'
+        'name': 'str',
+        'value': 'object',
+        'device_id': 'str'
     }
 
     attribute_map = {
-        'c_role': 'c_role',
-        'id': 'id',
-        'role': 'role',
-        'role_actionses': 'role_actionses'
+        'name': 'name',
+        'value': 'value',
+        'device_id': 'device_id'
     }
 
-    def __init__(self, c_role=None, id=None, role=None, role_actionses=None):
-        """Role - a model defined in huaweicloud sdk"""
+    def __init__(self, name=None, value=None, device_id=None):
+        """PropertyRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._c_role = None
-        self._id = None
-        self._role = None
-        self._role_actionses = None
+        self._name = None
+        self._value = None
+        self._device_id = None
         self.discriminator = None
 
-        if c_role is not None:
-            self.c_role = c_role
-        if id is not None:
-            self.id = id
-        if role is not None:
-            self.role = role
-        if role_actionses is not None:
-            self.role_actionses = role_actionses
+        self.name = name
+        if value is not None:
+            self.value = value
+        if device_id is not None:
+            self.device_id = device_id
 
     @property
-    def c_role(self):
-        """Gets the c_role of this Role.
+    def name(self):
+        """Gets the name of this PropertyRequest.
 
-        子角色
+        属性名称，必须是模型中已存在的
 
-        :return: The c_role of this Role.
+        :return: The name of this PropertyRequest.
         :rtype: str
         """
-        return self._c_role
+        return self._name
 
-    @c_role.setter
-    def c_role(self, c_role):
-        """Sets the c_role of this Role.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this PropertyRequest.
 
-        子角色
+        属性名称，必须是模型中已存在的
 
-        :param c_role: The c_role of this Role.
+        :param name: The name of this PropertyRequest.
         :type: str
         """
-        self._c_role = c_role
+        self._name = name
 
     @property
-    def id(self):
-        """Gets the id of this Role.
+    def value(self):
+        """Gets the value of this PropertyRequest.
 
-        id
+        值，只有static型属性可以填写
 
-        :return: The id of this Role.
+        :return: The value of this PropertyRequest.
+        :rtype: object
+        """
+        return self._value
+
+    @value.setter
+    def value(self, value):
+        """Sets the value of this PropertyRequest.
+
+        值，只有static型属性可以填写
+
+        :param value: The value of this PropertyRequest.
+        :type: object
+        """
+        self._value = value
+
+    @property
+    def device_id(self):
+        """Gets the device_id of this PropertyRequest.
+
+        设备ID，只有measurement型属性可以填写
+
+        :return: The device_id of this PropertyRequest.
         :rtype: str
         """
-        return self._id
+        return self._device_id
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this Role.
+    @device_id.setter
+    def device_id(self, device_id):
+        """Sets the device_id of this PropertyRequest.
 
-        id
+        设备ID，只有measurement型属性可以填写
 
-        :param id: The id of this Role.
+        :param device_id: The device_id of this PropertyRequest.
         :type: str
         """
-        self._id = id
-
-    @property
-    def role(self):
-        """Gets the role of this Role.
-
-        角色
-
-        :return: The role of this Role.
-        :rtype: str
-        """
-        return self._role
-
-    @role.setter
-    def role(self, role):
-        """Sets the role of this Role.
-
-        角色
-
-        :param role: The role of this Role.
-        :type: str
-        """
-        self._role = role
-
-    @property
-    def role_actionses(self):
-        """Gets the role_actionses of this Role.
-
-        角色执行操作列表
-
-        :return: The role_actionses of this Role.
-        :rtype: list[RoleAction]
-        """
-        return self._role_actionses
-
-    @role_actionses.setter
-    def role_actionses(self, role_actionses):
-        """Sets the role_actionses of this Role.
-
-        角色执行操作列表
-
-        :param role_actionses: The role_actionses of this Role.
-        :type: list[RoleAction]
-        """
-        self._role_actionses = role_actionses
+        self._device_id = device_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -185,7 +157,7 @@ class Role:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Role):
+        if not isinstance(other, PropertyRequest):
             return False
 
         return self.__dict__ == other.__dict__

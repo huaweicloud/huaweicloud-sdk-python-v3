@@ -22,8 +22,9 @@ class ClusterDetail:
     sensitive_list = []
 
     openapi_types = {
-        'action_progress': 'str',
-        'auth_mode': 'bool',
+        'action_progress': 'ActionProgress',
+        'actions': 'list[str]',
+        'auth_mode': 'str',
         'az_code': 'str',
         'cluster_id': 'str',
         'cluster_name': 'str',
@@ -40,6 +41,7 @@ class ClusterDetail:
 
     attribute_map = {
         'action_progress': 'action_progress',
+        'actions': 'actions',
         'auth_mode': 'auth_mode',
         'az_code': 'az_code',
         'cluster_id': 'cluster_id',
@@ -55,12 +57,13 @@ class ClusterDetail:
         'zookeeper_link': 'zookeeper_link'
     }
 
-    def __init__(self, action_progress=None, auth_mode=None, az_code=None, cluster_id=None, cluster_name=None, created=None, enable_dfv=None, enable_free=None, enable_lemon=None, enable_open_tsdb=None, status=None, tags=None, version=None, zookeeper_link=None):
+    def __init__(self, action_progress=None, actions=None, auth_mode=None, az_code=None, cluster_id=None, cluster_name=None, created=None, enable_dfv=None, enable_free=None, enable_lemon=None, enable_open_tsdb=None, status=None, tags=None, version=None, zookeeper_link=None):
         """ClusterDetail - a model defined in huaweicloud sdk"""
         
         
 
         self._action_progress = None
+        self._actions = None
         self._auth_mode = None
         self._az_code = None
         self._cluster_id = None
@@ -78,6 +81,8 @@ class ClusterDetail:
 
         if action_progress is not None:
             self.action_progress = action_progress
+        if actions is not None:
+            self.actions = actions
         if auth_mode is not None:
             self.auth_mode = auth_mode
         if az_code is not None:
@@ -109,10 +114,9 @@ class ClusterDetail:
     def action_progress(self):
         """Gets the action_progress of this ClusterDetail.
 
-        集群当前状态列表： - 创建中 - 扩容中 - 重启中 - 开启opentsdb - 扩容失败 - 重启失败 - 开启opentsdb失败
 
         :return: The action_progress of this ClusterDetail.
-        :rtype: str
+        :rtype: ActionProgress
         """
         return self._action_progress
 
@@ -120,12 +124,33 @@ class ClusterDetail:
     def action_progress(self, action_progress):
         """Sets the action_progress of this ClusterDetail.
 
-        集群当前状态列表： - 创建中 - 扩容中 - 重启中 - 开启opentsdb - 扩容失败 - 重启失败 - 开启opentsdb失败
 
         :param action_progress: The action_progress of this ClusterDetail.
-        :type: str
+        :type: ActionProgress
         """
         self._action_progress = action_progress
+
+    @property
+    def actions(self):
+        """Gets the actions of this ClusterDetail.
+
+        集群操作记录
+
+        :return: The actions of this ClusterDetail.
+        :rtype: list[str]
+        """
+        return self._actions
+
+    @actions.setter
+    def actions(self, actions):
+        """Sets the actions of this ClusterDetail.
+
+        集群操作记录
+
+        :param actions: The actions of this ClusterDetail.
+        :type: list[str]
+        """
+        self._actions = actions
 
     @property
     def auth_mode(self):
@@ -134,7 +159,7 @@ class ClusterDetail:
         是否开启IAM权限认证。 - false：不开启 - true：开启
 
         :return: The auth_mode of this ClusterDetail.
-        :rtype: bool
+        :rtype: str
         """
         return self._auth_mode
 
@@ -145,7 +170,7 @@ class ClusterDetail:
         是否开启IAM权限认证。 - false：不开启 - true：开启
 
         :param auth_mode: The auth_mode of this ClusterDetail.
-        :type: bool
+        :type: str
         """
         self._auth_mode = auth_mode
 

@@ -23,26 +23,28 @@ class ShowClusterDetailResponse(SdkResponse):
 
     openapi_types = {
         'actions': 'list[str]',
+        'datastore': 'Datastore',
         'enable_open_tsdb': 'bool',
         'enable_lemon': 'bool',
         'cluster_name': 'str',
-        'cu_num': 'int',
-        'tsd_num': 'int',
-        'lemon_num': 'int',
+        'cu_num': 'str',
+        'tsd_num': 'str',
+        'lemon_num': 'str',
         'storage_type': 'str',
-        'storage_quota': 'int',
-        'used_storage_size': 'int',
+        'storage_quota': 'str',
+        'used_storage_size': 'str',
         'auth_mode': 'bool',
+        'enable_dfv': 'bool',
         'updated': 'str',
         'created': 'str',
         'cluster_id': 'str',
         'status': 'str',
-        'opentsdb_link': 'str',
+        'open_tsdb_link': 'str',
         'tsd_public_endpoint': 'str',
         'lemon_link': 'str',
         'zookeeper_link': 'str',
         'hbase_public_endpoint': 'str',
-        'is_frozen': 'int',
+        'is_frozen': 'str',
         'vpc_id': 'str',
         'sub_net_id': 'str',
         'security_group_id': 'str',
@@ -51,6 +53,7 @@ class ShowClusterDetailResponse(SdkResponse):
 
     attribute_map = {
         'actions': 'actions',
+        'datastore': 'datastore',
         'enable_open_tsdb': 'enable_openTSDB',
         'enable_lemon': 'enable_lemon',
         'cluster_name': 'cluster_name',
@@ -61,11 +64,12 @@ class ShowClusterDetailResponse(SdkResponse):
         'storage_quota': 'storage_quota',
         'used_storage_size': 'used_storage_size',
         'auth_mode': 'auth_mode',
+        'enable_dfv': 'enable_dfv',
         'updated': 'updated',
         'created': 'created',
         'cluster_id': 'cluster_id',
         'status': 'status',
-        'opentsdb_link': 'opentsdb_link',
+        'open_tsdb_link': 'openTSDB_link',
         'tsd_public_endpoint': 'tsd_public_endpoint',
         'lemon_link': 'lemon_link',
         'zookeeper_link': 'zookeeper_link',
@@ -77,12 +81,13 @@ class ShowClusterDetailResponse(SdkResponse):
         'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, actions=None, enable_open_tsdb=None, enable_lemon=None, cluster_name=None, cu_num=None, tsd_num=None, lemon_num=None, storage_type=None, storage_quota=None, used_storage_size=None, auth_mode=None, updated=None, created=None, cluster_id=None, status=None, opentsdb_link=None, tsd_public_endpoint=None, lemon_link=None, zookeeper_link=None, hbase_public_endpoint=None, is_frozen=None, vpc_id=None, sub_net_id=None, security_group_id=None, availability_zone=None):
+    def __init__(self, actions=None, datastore=None, enable_open_tsdb=None, enable_lemon=None, cluster_name=None, cu_num=None, tsd_num=None, lemon_num=None, storage_type=None, storage_quota=None, used_storage_size=None, auth_mode=None, enable_dfv=None, updated=None, created=None, cluster_id=None, status=None, open_tsdb_link=None, tsd_public_endpoint=None, lemon_link=None, zookeeper_link=None, hbase_public_endpoint=None, is_frozen=None, vpc_id=None, sub_net_id=None, security_group_id=None, availability_zone=None):
         """ShowClusterDetailResponse - a model defined in huaweicloud sdk"""
         
         super(ShowClusterDetailResponse, self).__init__()
 
         self._actions = None
+        self._datastore = None
         self._enable_open_tsdb = None
         self._enable_lemon = None
         self._cluster_name = None
@@ -93,11 +98,12 @@ class ShowClusterDetailResponse(SdkResponse):
         self._storage_quota = None
         self._used_storage_size = None
         self._auth_mode = None
+        self._enable_dfv = None
         self._updated = None
         self._created = None
         self._cluster_id = None
         self._status = None
-        self._opentsdb_link = None
+        self._open_tsdb_link = None
         self._tsd_public_endpoint = None
         self._lemon_link = None
         self._zookeeper_link = None
@@ -111,6 +117,8 @@ class ShowClusterDetailResponse(SdkResponse):
 
         if actions is not None:
             self.actions = actions
+        if datastore is not None:
+            self.datastore = datastore
         if enable_open_tsdb is not None:
             self.enable_open_tsdb = enable_open_tsdb
         if enable_lemon is not None:
@@ -131,6 +139,8 @@ class ShowClusterDetailResponse(SdkResponse):
             self.used_storage_size = used_storage_size
         if auth_mode is not None:
             self.auth_mode = auth_mode
+        if enable_dfv is not None:
+            self.enable_dfv = enable_dfv
         if updated is not None:
             self.updated = updated
         if created is not None:
@@ -139,8 +149,8 @@ class ShowClusterDetailResponse(SdkResponse):
             self.cluster_id = cluster_id
         if status is not None:
             self.status = status
-        if opentsdb_link is not None:
-            self.opentsdb_link = opentsdb_link
+        if open_tsdb_link is not None:
+            self.open_tsdb_link = open_tsdb_link
         if tsd_public_endpoint is not None:
             self.tsd_public_endpoint = tsd_public_endpoint
         if lemon_link is not None:
@@ -181,6 +191,26 @@ class ShowClusterDetailResponse(SdkResponse):
         :type: list[str]
         """
         self._actions = actions
+
+    @property
+    def datastore(self):
+        """Gets the datastore of this ShowClusterDetailResponse.
+
+
+        :return: The datastore of this ShowClusterDetailResponse.
+        :rtype: Datastore
+        """
+        return self._datastore
+
+    @datastore.setter
+    def datastore(self, datastore):
+        """Sets the datastore of this ShowClusterDetailResponse.
+
+
+        :param datastore: The datastore of this ShowClusterDetailResponse.
+        :type: Datastore
+        """
+        self._datastore = datastore
 
     @property
     def enable_open_tsdb(self):
@@ -255,7 +285,7 @@ class ShowClusterDetailResponse(SdkResponse):
         RegionServer个数。
 
         :return: The cu_num of this ShowClusterDetailResponse.
-        :rtype: int
+        :rtype: str
         """
         return self._cu_num
 
@@ -266,7 +296,7 @@ class ShowClusterDetailResponse(SdkResponse):
         RegionServer个数。
 
         :param cu_num: The cu_num of this ShowClusterDetailResponse.
-        :type: int
+        :type: str
         """
         self._cu_num = cu_num
 
@@ -277,7 +307,7 @@ class ShowClusterDetailResponse(SdkResponse):
         TSD节点个数。
 
         :return: The tsd_num of this ShowClusterDetailResponse.
-        :rtype: int
+        :rtype: str
         """
         return self._tsd_num
 
@@ -288,7 +318,7 @@ class ShowClusterDetailResponse(SdkResponse):
         TSD节点个数。
 
         :param tsd_num: The tsd_num of this ShowClusterDetailResponse.
-        :type: int
+        :type: str
         """
         self._tsd_num = tsd_num
 
@@ -299,7 +329,7 @@ class ShowClusterDetailResponse(SdkResponse):
         Lemon节点个数。
 
         :return: The lemon_num of this ShowClusterDetailResponse.
-        :rtype: int
+        :rtype: str
         """
         return self._lemon_num
 
@@ -310,7 +340,7 @@ class ShowClusterDetailResponse(SdkResponse):
         Lemon节点个数。
 
         :param lemon_num: The lemon_num of this ShowClusterDetailResponse.
-        :type: int
+        :type: str
         """
         self._lemon_num = lemon_num
 
@@ -343,7 +373,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群存储配额。
 
         :return: The storage_quota of this ShowClusterDetailResponse.
-        :rtype: int
+        :rtype: str
         """
         return self._storage_quota
 
@@ -354,7 +384,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群存储配额。
 
         :param storage_quota: The storage_quota of this ShowClusterDetailResponse.
-        :type: int
+        :type: str
         """
         self._storage_quota = storage_quota
 
@@ -365,7 +395,7 @@ class ShowClusterDetailResponse(SdkResponse):
         当前使用存储空间。
 
         :return: The used_storage_size of this ShowClusterDetailResponse.
-        :rtype: int
+        :rtype: str
         """
         return self._used_storage_size
 
@@ -376,7 +406,7 @@ class ShowClusterDetailResponse(SdkResponse):
         当前使用存储空间。
 
         :param used_storage_size: The used_storage_size of this ShowClusterDetailResponse.
-        :type: int
+        :type: str
         """
         self._used_storage_size = used_storage_size
 
@@ -401,6 +431,28 @@ class ShowClusterDetailResponse(SdkResponse):
         :type: bool
         """
         self._auth_mode = auth_mode
+
+    @property
+    def enable_dfv(self):
+        """Gets the enable_dfv of this ShowClusterDetailResponse.
+
+        是否打开dfv
+
+        :return: The enable_dfv of this ShowClusterDetailResponse.
+        :rtype: bool
+        """
+        return self._enable_dfv
+
+    @enable_dfv.setter
+    def enable_dfv(self, enable_dfv):
+        """Sets the enable_dfv of this ShowClusterDetailResponse.
+
+        是否打开dfv
+
+        :param enable_dfv: The enable_dfv of this ShowClusterDetailResponse.
+        :type: bool
+        """
+        self._enable_dfv = enable_dfv
 
     @property
     def updated(self):
@@ -491,32 +543,32 @@ class ShowClusterDetailResponse(SdkResponse):
         self._status = status
 
     @property
-    def opentsdb_link(self):
-        """Gets the opentsdb_link of this ShowClusterDetailResponse.
+    def open_tsdb_link(self):
+        """Gets the open_tsdb_link of this ShowClusterDetailResponse.
 
         内网OpenTSDB连接访问地址。
 
-        :return: The opentsdb_link of this ShowClusterDetailResponse.
+        :return: The open_tsdb_link of this ShowClusterDetailResponse.
         :rtype: str
         """
-        return self._opentsdb_link
+        return self._open_tsdb_link
 
-    @opentsdb_link.setter
-    def opentsdb_link(self, opentsdb_link):
-        """Sets the opentsdb_link of this ShowClusterDetailResponse.
+    @open_tsdb_link.setter
+    def open_tsdb_link(self, open_tsdb_link):
+        """Sets the open_tsdb_link of this ShowClusterDetailResponse.
 
         内网OpenTSDB连接访问地址。
 
-        :param opentsdb_link: The opentsdb_link of this ShowClusterDetailResponse.
+        :param open_tsdb_link: The open_tsdb_link of this ShowClusterDetailResponse.
         :type: str
         """
-        self._opentsdb_link = opentsdb_link
+        self._open_tsdb_link = open_tsdb_link
 
     @property
     def tsd_public_endpoint(self):
         """Gets the tsd_public_endpoint of this ShowClusterDetailResponse.
 
-        公网OpenTSDB连接访问地址。
+        OpenTSDB公网endpoint地址
 
         :return: The tsd_public_endpoint of this ShowClusterDetailResponse.
         :rtype: str
@@ -527,7 +579,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def tsd_public_endpoint(self, tsd_public_endpoint):
         """Sets the tsd_public_endpoint of this ShowClusterDetailResponse.
 
-        公网OpenTSDB连接访问地址。
+        OpenTSDB公网endpoint地址
 
         :param tsd_public_endpoint: The tsd_public_endpoint of this ShowClusterDetailResponse.
         :type: str
@@ -607,7 +659,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群是否被冻结。 - false：不冻结 - true：冻结
 
         :return: The is_frozen of this ShowClusterDetailResponse.
-        :rtype: int
+        :rtype: str
         """
         return self._is_frozen
 
@@ -618,7 +670,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群是否被冻结。 - false：不冻结 - true：冻结
 
         :param is_frozen: The is_frozen of this ShowClusterDetailResponse.
-        :type: int
+        :type: str
         """
         self._is_frozen = is_frozen
 

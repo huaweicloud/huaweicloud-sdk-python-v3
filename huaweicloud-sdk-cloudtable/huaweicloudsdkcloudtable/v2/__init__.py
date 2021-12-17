@@ -6,6 +6,7 @@ from __future__ import absolute_import
 from huaweicloudsdkcloudtable.v2.cloudtable_client import CloudTableClient
 from huaweicloudsdkcloudtable.v2.cloudtable_async_client import CloudTableAsyncClient
 # import models into sdk package
+from huaweicloudsdkcloudtable.v2.model.action_progress import ActionProgress
 from huaweicloudsdkcloudtable.v2.model.cluster import Cluster
 from huaweicloudsdkcloudtable.v2.model.cluster_detail import ClusterDetail
 from huaweicloudsdkcloudtable.v2.model.create_cluster_request import CreateClusterRequest

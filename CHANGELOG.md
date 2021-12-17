@@ -1,3 +1,89 @@
+# 3.0.72 2021-12-17
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - Support the interface `ShowVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowInstance`:
+    - Add the response parameters `bundle_url`, `visitor_id`, `visitor_name`, `visitor_domain_name`
+    - Remove the response parameters `action_list`, `role`, `role_id`, `sub_org`
+  - Changes of the interface `ListOrgInstances`:
+    - Add the response parameters `visitor_id`, `visitor_name`, `visitor_domain_name`
+    - Remove the response parameters `action_list`, `role`, `role_id`, `sub_org`
+  - Changes of the interface `ListInstances`:
+    - Add the response parameters `visitor_id`, `visitor_name`, `visitor_domain_name`
+    - Remove the response parameters `action_list`, `role`, `role_id`, `sub_org`
+
+### HuaweiCloud SDK CloudRTC
+
+- _Features_
+  - Support the interfaces `ListRtcAbnormalEvents`, `ListRtcAbnormalEventDimension`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListEvents`:
+    - Modify the type `string` -> `int32` of the response parameter `event_count`
+    - Modify the type `string` -> `int64` of the response parameter `latest_occur_time`
+  - Modify the type `string` -> `double` of the response parameter `variance` of the interface `BatchListMetricData`
+  - Modify the type `string` -> `int32` of the response parameter `type_statistics` of the interface `ListResourceGroup`
+  - Changes of the interface `ListEventDetail`:
+    - Modify the type `string` -> `array` of the response parameter `event_users`
+    - Modify the type `string` -> `array` of the response parameter `event_sources`
+
+### HuaweiCloud SDK IoTAnalytics
+
+- _Features_
+  - Support the service `IoTAnalytics`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `input`, `edit_settings` to the interface `CreateEditingJob`
+  - Add the response parameters `input`, `edit_settings` to the interface `ListEditingJob`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - Support the following interfaces：
+    - `RecognizeThailandIdcard`
+    - `RecognizeMyanmarIdcard`
+    - `RecognizeMyanmarDriverLicense`
+    - `RecognizeChileIdCard`
+    - `RecognizeThailandLicensePlate`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.0.71 2021-12-10
 
 ### HuaweiCloud SDK AOM

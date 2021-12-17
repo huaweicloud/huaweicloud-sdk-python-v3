@@ -1,0 +1,355 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ChileIdCardResult:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'surname': 'list[str]',
+        'given_name': 'str',
+        'nationality': 'str',
+        'sex': 'str',
+        'birth': 'str',
+        'issue_date': 'str',
+        'expiry_date': 'str',
+        'document_number': 'str',
+        'number': 'str',
+        'confidence': 'ChileIdCardConfidence'
+    }
+
+    attribute_map = {
+        'surname': 'surname',
+        'given_name': 'given_name',
+        'nationality': 'nationality',
+        'sex': 'sex',
+        'birth': 'birth',
+        'issue_date': 'issue_date',
+        'expiry_date': 'expiry_date',
+        'document_number': 'document_number',
+        'number': 'number',
+        'confidence': 'confidence'
+    }
+
+    def __init__(self, surname=None, given_name=None, nationality=None, sex=None, birth=None, issue_date=None, expiry_date=None, document_number=None, number=None, confidence=None):
+        """ChileIdCardResult - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._surname = None
+        self._given_name = None
+        self._nationality = None
+        self._sex = None
+        self._birth = None
+        self._issue_date = None
+        self._expiry_date = None
+        self._document_number = None
+        self._number = None
+        self._confidence = None
+        self.discriminator = None
+
+        if surname is not None:
+            self.surname = surname
+        if given_name is not None:
+            self.given_name = given_name
+        if nationality is not None:
+            self.nationality = nationality
+        if sex is not None:
+            self.sex = sex
+        if birth is not None:
+            self.birth = birth
+        if issue_date is not None:
+            self.issue_date = issue_date
+        if expiry_date is not None:
+            self.expiry_date = expiry_date
+        if document_number is not None:
+            self.document_number = document_number
+        if number is not None:
+            self.number = number
+        if confidence is not None:
+            self.confidence = confidence
+
+    @property
+    def surname(self):
+        """Gets the surname of this ChileIdCardResult.
+
+        姓氏。 
+
+        :return: The surname of this ChileIdCardResult.
+        :rtype: list[str]
+        """
+        return self._surname
+
+    @surname.setter
+    def surname(self, surname):
+        """Sets the surname of this ChileIdCardResult.
+
+        姓氏。 
+
+        :param surname: The surname of this ChileIdCardResult.
+        :type: list[str]
+        """
+        self._surname = surname
+
+    @property
+    def given_name(self):
+        """Gets the given_name of this ChileIdCardResult.
+
+        名。 
+
+        :return: The given_name of this ChileIdCardResult.
+        :rtype: str
+        """
+        return self._given_name
+
+    @given_name.setter
+    def given_name(self, given_name):
+        """Sets the given_name of this ChileIdCardResult.
+
+        名。 
+
+        :param given_name: The given_name of this ChileIdCardResult.
+        :type: str
+        """
+        self._given_name = given_name
+
+    @property
+    def nationality(self):
+        """Gets the nationality of this ChileIdCardResult.
+
+        国籍。 
+
+        :return: The nationality of this ChileIdCardResult.
+        :rtype: str
+        """
+        return self._nationality
+
+    @nationality.setter
+    def nationality(self, nationality):
+        """Sets the nationality of this ChileIdCardResult.
+
+        国籍。 
+
+        :param nationality: The nationality of this ChileIdCardResult.
+        :type: str
+        """
+        self._nationality = nationality
+
+    @property
+    def sex(self):
+        """Gets the sex of this ChileIdCardResult.
+
+        性别。 
+
+        :return: The sex of this ChileIdCardResult.
+        :rtype: str
+        """
+        return self._sex
+
+    @sex.setter
+    def sex(self, sex):
+        """Sets the sex of this ChileIdCardResult.
+
+        性别。 
+
+        :param sex: The sex of this ChileIdCardResult.
+        :type: str
+        """
+        self._sex = sex
+
+    @property
+    def birth(self):
+        """Gets the birth of this ChileIdCardResult.
+
+        出生日。 
+
+        :return: The birth of this ChileIdCardResult.
+        :rtype: str
+        """
+        return self._birth
+
+    @birth.setter
+    def birth(self, birth):
+        """Sets the birth of this ChileIdCardResult.
+
+        出生日。 
+
+        :param birth: The birth of this ChileIdCardResult.
+        :type: str
+        """
+        self._birth = birth
+
+    @property
+    def issue_date(self):
+        """Gets the issue_date of this ChileIdCardResult.
+
+        发行日。 
+
+        :return: The issue_date of this ChileIdCardResult.
+        :rtype: str
+        """
+        return self._issue_date
+
+    @issue_date.setter
+    def issue_date(self, issue_date):
+        """Sets the issue_date of this ChileIdCardResult.
+
+        发行日。 
+
+        :param issue_date: The issue_date of this ChileIdCardResult.
+        :type: str
+        """
+        self._issue_date = issue_date
+
+    @property
+    def expiry_date(self):
+        """Gets the expiry_date of this ChileIdCardResult.
+
+        有效期。 
+
+        :return: The expiry_date of this ChileIdCardResult.
+        :rtype: str
+        """
+        return self._expiry_date
+
+    @expiry_date.setter
+    def expiry_date(self, expiry_date):
+        """Sets the expiry_date of this ChileIdCardResult.
+
+        有效期。 
+
+        :param expiry_date: The expiry_date of this ChileIdCardResult.
+        :type: str
+        """
+        self._expiry_date = expiry_date
+
+    @property
+    def document_number(self):
+        """Gets the document_number of this ChileIdCardResult.
+
+        文档编号。 
+
+        :return: The document_number of this ChileIdCardResult.
+        :rtype: str
+        """
+        return self._document_number
+
+    @document_number.setter
+    def document_number(self, document_number):
+        """Sets the document_number of this ChileIdCardResult.
+
+        文档编号。 
+
+        :param document_number: The document_number of this ChileIdCardResult.
+        :type: str
+        """
+        self._document_number = document_number
+
+    @property
+    def number(self):
+        """Gets the number of this ChileIdCardResult.
+
+        身份证号。 
+
+        :return: The number of this ChileIdCardResult.
+        :rtype: str
+        """
+        return self._number
+
+    @number.setter
+    def number(self, number):
+        """Sets the number of this ChileIdCardResult.
+
+        身份证号。 
+
+        :param number: The number of this ChileIdCardResult.
+        :type: str
+        """
+        self._number = number
+
+    @property
+    def confidence(self):
+        """Gets the confidence of this ChileIdCardResult.
+
+
+        :return: The confidence of this ChileIdCardResult.
+        :rtype: ChileIdCardConfidence
+        """
+        return self._confidence
+
+    @confidence.setter
+    def confidence(self, confidence):
+        """Sets the confidence of this ChileIdCardResult.
+
+
+        :param confidence: The confidence of this ChileIdCardResult.
+        :type: ChileIdCardConfidence
+        """
+        self._confidence = confidence
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ChileIdCardResult):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

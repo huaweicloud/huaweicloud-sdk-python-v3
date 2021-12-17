@@ -157,7 +157,7 @@ class ListRecordRulesRequest:
     def offset(self):
         """Gets the offset of this ListRecordRulesRequest.
 
-        分页编号，从0开始算
+        偏移量，表示从此偏移量开始查询，offset大于等于0
 
         :return: The offset of this ListRecordRulesRequest.
         :rtype: int
@@ -168,7 +168,7 @@ class ListRecordRulesRequest:
     def offset(self, offset):
         """Sets the offset of this ListRecordRulesRequest.
 
-        分页编号，从0开始算
+        偏移量，表示从此偏移量开始查询，offset大于等于0
 
         :param offset: The offset of this ListRecordRulesRequest.
         :type: int
@@ -179,7 +179,7 @@ class ListRecordRulesRequest:
     def limit(self):
         """Gets the limit of this ListRecordRulesRequest.
 
-        每页记录数，取值范围[1,100]
+        每页记录数，取值范围[1,100]，默认值10
 
         :return: The limit of this ListRecordRulesRequest.
         :rtype: int
@@ -190,7 +190,7 @@ class ListRecordRulesRequest:
     def limit(self, limit):
         """Sets the limit of this ListRecordRulesRequest.
 
-        每页记录数，取值范围[1,100]
+        每页记录数，取值范围[1,100]，默认值10
 
         :param limit: The limit of this ListRecordRulesRequest.
         :type: int

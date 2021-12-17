@@ -24,7 +24,7 @@ class InstanceStatistics:
     openapi_types = {
         'unhealth': 'int',
         'total': 'int',
-        'type_statistics': 'str'
+        'type_statistics': 'int'
     }
 
     attribute_map = {
@@ -101,7 +101,7 @@ class InstanceStatistics:
         该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。
 
         :return: The type_statistics of this InstanceStatistics.
-        :rtype: str
+        :rtype: int
         """
         return self._type_statistics
 
@@ -112,7 +112,7 @@ class InstanceStatistics:
         该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。
 
         :param type_statistics: The type_statistics of this InstanceStatistics.
-        :type: str
+        :type: int
         """
         self._type_statistics = type_statistics
 
