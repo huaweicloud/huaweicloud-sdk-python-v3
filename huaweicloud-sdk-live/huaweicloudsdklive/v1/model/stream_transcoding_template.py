@@ -51,7 +51,7 @@ class StreamTranscodingTemplate:
     def domain(self):
         """Gets the domain of this StreamTranscodingTemplate.
 
-        播放域名
+        推流域名
 
         :return: The domain of this StreamTranscodingTemplate.
         :rtype: str
@@ -62,7 +62,7 @@ class StreamTranscodingTemplate:
     def domain(self, domain):
         """Sets the domain of this StreamTranscodingTemplate.
 
-        播放域名
+        推流域名
 
         :param domain: The domain of this StreamTranscodingTemplate.
         :type: str

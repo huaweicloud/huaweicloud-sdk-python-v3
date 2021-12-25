@@ -507,7 +507,7 @@ class ListLoadBalancersRequest:
     def ipv6_vip_port_id(self):
         """Gets the ipv6_vip_port_id of this ListLoadBalancersRequest.
 
-        双栈类型负载均衡器的IPv6对应的port ID。  支持多值查询，查询条件格式：*ipv6_vip_port_id=xxx&ipv6_vip_port_id=xxx*。   [不支持IPv6，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        双栈类型负载均衡器的IPv6对应的port ID。  支持多值查询，查询条件格式：*ipv6_vip_port_id=xxx&ipv6_vip_port_id=xxx*。   [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :return: The ipv6_vip_port_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -518,7 +518,7 @@ class ListLoadBalancersRequest:
     def ipv6_vip_port_id(self, ipv6_vip_port_id):
         """Sets the ipv6_vip_port_id of this ListLoadBalancersRequest.
 
-        双栈类型负载均衡器的IPv6对应的port ID。  支持多值查询，查询条件格式：*ipv6_vip_port_id=xxx&ipv6_vip_port_id=xxx*。   [不支持IPv6，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        双栈类型负载均衡器的IPv6对应的port ID。  支持多值查询，查询条件格式：*ipv6_vip_port_id=xxx&ipv6_vip_port_id=xxx*。   [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :param ipv6_vip_port_id: The ipv6_vip_port_id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -529,7 +529,7 @@ class ListLoadBalancersRequest:
     def ipv6_vip_address(self):
         """Gets the ipv6_vip_address of this ListLoadBalancersRequest.
 
-        双栈类型负载均衡器的IPv6地址。  支持多值查询，查询条件格式：*ipv6_vip_address=xxx&ipv6_vip_address=xxx*。   [不支持IPv6，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        双栈类型负载均衡器的IPv6地址。  支持多值查询，查询条件格式：*ipv6_vip_address=xxx&ipv6_vip_address=xxx*。   [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :return: The ipv6_vip_address of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -540,7 +540,7 @@ class ListLoadBalancersRequest:
     def ipv6_vip_address(self, ipv6_vip_address):
         """Sets the ipv6_vip_address of this ListLoadBalancersRequest.
 
-        双栈类型负载均衡器的IPv6地址。  支持多值查询，查询条件格式：*ipv6_vip_address=xxx&ipv6_vip_address=xxx*。   [不支持IPv6，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        双栈类型负载均衡器的IPv6地址。  支持多值查询，查询条件格式：*ipv6_vip_address=xxx&ipv6_vip_address=xxx*。   [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :param ipv6_vip_address: The ipv6_vip_address of this ListLoadBalancersRequest.
         :type: list[str]
@@ -551,7 +551,7 @@ class ListLoadBalancersRequest:
     def ipv6_vip_virsubnet_id(self):
         """Gets the ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
 
-        双栈类型负载均衡器所在的子网IPv6网络ID。  支持多值查询，查询条件格式：*ipv6_vip_virsubnet_id=xxx&ipv6_vip_virsubnet_id=xxx*。   [不支持IPv6，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        双栈类型负载均衡器所在的子网IPv6网络ID。  支持多值查询，查询条件格式：*ipv6_vip_virsubnet_id=xxx&ipv6_vip_virsubnet_id=xxx*。   [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :return: The ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -562,7 +562,7 @@ class ListLoadBalancersRequest:
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
         """Sets the ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
 
-        双栈类型负载均衡器所在的子网IPv6网络ID。  支持多值查询，查询条件格式：*ipv6_vip_virsubnet_id=xxx&ipv6_vip_virsubnet_id=xxx*。   [不支持IPv6，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        双栈类型负载均衡器所在的子网IPv6网络ID。  支持多值查询，查询条件格式：*ipv6_vip_virsubnet_id=xxx&ipv6_vip_virsubnet_id=xxx*。   [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -727,7 +727,7 @@ class ListLoadBalancersRequest:
     def billing_info(self):
         """Gets the billing_info of this ListLoadBalancersRequest.
 
-        资源账单信息。admin权限才能更新此字段。  支持多值查询，查询条件格式：*billing_info=xxx&billing_info=xxx*。   [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        资源账单信息。admin权限才能更新此字段。  支持多值查询，查询条件格式：*billing_info=xxx&billing_info=xxx*。   [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The billing_info of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -738,7 +738,7 @@ class ListLoadBalancersRequest:
     def billing_info(self, billing_info):
         """Sets the billing_info of this ListLoadBalancersRequest.
 
-        资源账单信息。admin权限才能更新此字段。  支持多值查询，查询条件格式：*billing_info=xxx&billing_info=xxx*。   [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        资源账单信息。admin权限才能更新此字段。  支持多值查询，查询条件格式：*billing_info=xxx&billing_info=xxx*。   [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param billing_info: The billing_info of this ListLoadBalancersRequest.
         :type: list[str]
@@ -793,7 +793,7 @@ class ListLoadBalancersRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListLoadBalancersRequest.
 
-        负载均衡器所属的企业项目ID。 查询时若不传，则查询default企业项目下的资源，鉴权按照default企业项目鉴权。如果传值，则必须传已存在的企业项目ID（不可为\"0\"）或传all_granted_eps表示查询所有企业项目。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。 [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        负载均衡器所属的企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。 [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The enterprise_project_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -804,7 +804,7 @@ class ListLoadBalancersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListLoadBalancersRequest.
 
-        负载均衡器所属的企业项目ID。 查询时若不传，则查询default企业项目下的资源，鉴权按照default企业项目鉴权。如果传值，则必须传已存在的企业项目ID（不可为\"0\"）或传all_granted_eps表示查询所有企业项目。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。 [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        负载均衡器所属的企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。 [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param enterprise_project_id: The enterprise_project_id of this ListLoadBalancersRequest.
         :type: list[str]
@@ -815,7 +815,7 @@ class ListLoadBalancersRequest:
     def ip_version(self):
         """Gets the ip_version of this ListLoadBalancersRequest.
 
-        IP版本信息。 取值：4代表IPv4，6代表IPv6。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。   [不支持IPv6，请勿设置为6。](tag:otc,otc_test,dt,dt_test)
+        IP版本信息。 取值：4代表IPv4，6代表IPv6。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。   [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :return: The ip_version of this ListLoadBalancersRequest.
         :rtype: list[int]
@@ -826,7 +826,7 @@ class ListLoadBalancersRequest:
     def ip_version(self, ip_version):
         """Sets the ip_version of this ListLoadBalancersRequest.
 
-        IP版本信息。 取值：4代表IPv4，6代表IPv6。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。   [不支持IPv6，请勿设置为6。](tag:otc,otc_test,dt,dt_test)
+        IP版本信息。 取值：4代表IPv4，6代表IPv6。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。   [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this ListLoadBalancersRequest.
         :type: list[int]

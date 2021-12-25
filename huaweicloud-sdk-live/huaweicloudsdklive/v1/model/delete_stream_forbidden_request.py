@@ -78,7 +78,7 @@ class DeleteStreamForbiddenRequest:
     def domain(self):
         """Gets the domain of this DeleteStreamForbiddenRequest.
 
-        播放或推流域名
+        推流域名
 
         :return: The domain of this DeleteStreamForbiddenRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class DeleteStreamForbiddenRequest:
     def domain(self, domain):
         """Sets the domain of this DeleteStreamForbiddenRequest.
 
-        播放或推流域名
+        推流域名
 
         :param domain: The domain of this DeleteStreamForbiddenRequest.
         :type: str

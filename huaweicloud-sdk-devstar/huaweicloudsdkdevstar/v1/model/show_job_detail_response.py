@@ -25,17 +25,19 @@ class ShowJobDetailResponse(SdkResponse):
         'id': 'str',
         'name': 'str',
         'job_status': 'object',
-        'job_result': 'str'
+        'job_result': 'str',
+        'show_type': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
         'job_status': 'job_status',
-        'job_result': 'job_result'
+        'job_result': 'job_result',
+        'show_type': 'show_type'
     }
 
-    def __init__(self, id=None, name=None, job_status=None, job_result=None):
+    def __init__(self, id=None, name=None, job_status=None, job_result=None, show_type=None):
         """ShowJobDetailResponse - a model defined in huaweicloud sdk"""
         
         super(ShowJobDetailResponse, self).__init__()
@@ -44,6 +46,7 @@ class ShowJobDetailResponse(SdkResponse):
         self._name = None
         self._job_status = None
         self._job_result = None
+        self._show_type = None
         self.discriminator = None
 
         if id is not None:
@@ -54,6 +57,8 @@ class ShowJobDetailResponse(SdkResponse):
             self.job_status = job_status
         if job_result is not None:
             self.job_result = job_result
+        if show_type is not None:
+            self.show_type = show_type
 
     @property
     def id(self):
@@ -142,6 +147,28 @@ class ShowJobDetailResponse(SdkResponse):
         :type: str
         """
         self._job_result = job_result
+
+    @property
+    def show_type(self):
+        """Gets the show_type of this ShowJobDetailResponse.
+
+        任务显示类型，页面显示使用字段
+
+        :return: The show_type of this ShowJobDetailResponse.
+        :rtype: str
+        """
+        return self._show_type
+
+    @show_type.setter
+    def show_type(self, show_type):
+        """Sets the show_type of this ShowJobDetailResponse.
+
+        任务显示类型，页面显示使用字段
+
+        :param show_type: The show_type of this ShowJobDetailResponse.
+        :type: str
+        """
+        self._show_type = show_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

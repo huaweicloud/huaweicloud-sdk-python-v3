@@ -43,7 +43,7 @@ class AddExtendCidrOption:
     def extend_cidrs(self):
         """Gets the extend_cidrs of this AddExtendCidrOption.
 
-        功能说明：扩展cidr列表 取值范围：不能包含以下网段， 10.0.0.0/8     172.16.0.0/12  192.168.0.0/16 100.64.0.0/10 214.0.0.0/7 198.18.0.0/15  169.254.0.0/16 0.0.0.0/8 127.0.0.0/8  240.0.0.0/4  255.255.255.255/32  约束：当前只支持添加一个
+        功能说明：扩展cidr列表 取值范围：不能包含以下网段，100.64.0.0/10,214.0.0.0/7,198.18.0.0/15,169.254.0.0/16,0.0.0.0/8,127.0.0.0/8,240.0.0.0/4,172.31.0.0/16,192.168.0.0/16  约束：当前只支持添加一个
 
         :return: The extend_cidrs of this AddExtendCidrOption.
         :rtype: list[str]
@@ -54,7 +54,7 @@ class AddExtendCidrOption:
     def extend_cidrs(self, extend_cidrs):
         """Sets the extend_cidrs of this AddExtendCidrOption.
 
-        功能说明：扩展cidr列表 取值范围：不能包含以下网段， 10.0.0.0/8     172.16.0.0/12  192.168.0.0/16 100.64.0.0/10 214.0.0.0/7 198.18.0.0/15  169.254.0.0/16 0.0.0.0/8 127.0.0.0/8  240.0.0.0/4  255.255.255.255/32  约束：当前只支持添加一个
+        功能说明：扩展cidr列表 取值范围：不能包含以下网段，100.64.0.0/10,214.0.0.0/7,198.18.0.0/15,169.254.0.0/16,0.0.0.0/8,127.0.0.0/8,240.0.0.0/4,172.31.0.0/16,192.168.0.0/16  约束：当前只支持添加一个
 
         :param extend_cidrs: The extend_cidrs of this AddExtendCidrOption.
         :type: list[str]

@@ -130,7 +130,7 @@ class ShowInstanceTopicDetailRespReplicas:
     def size(self):
         """Gets the size of this ShowInstanceTopicDetailRespReplicas.
 
-        该副本当前日志大小。
+        该副本当前日志大小。单位：Byte。
 
         :return: The size of this ShowInstanceTopicDetailRespReplicas.
         :rtype: int
@@ -141,7 +141,7 @@ class ShowInstanceTopicDetailRespReplicas:
     def size(self, size):
         """Sets the size of this ShowInstanceTopicDetailRespReplicas.
 
-        该副本当前日志大小。
+        该副本当前日志大小。单位：Byte。
 
         :param size: The size of this ShowInstanceTopicDetailRespReplicas.
         :type: int

@@ -22,50 +22,28 @@ class ShowListPeriodHistoryResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'history_records': 'list[HistoryRecord]',
-        'total': 'int'
+        'total': 'int',
+        'history_records': 'list[HistoryRecord1]'
     }
 
     attribute_map = {
-        'history_records': 'history_records',
-        'total': 'total'
+        'total': 'total',
+        'history_records': 'history_records'
     }
 
-    def __init__(self, history_records=None, total=None):
+    def __init__(self, total=None, history_records=None):
         """ShowListPeriodHistoryResponse - a model defined in huaweicloud sdk"""
         
         super(ShowListPeriodHistoryResponse, self).__init__()
 
-        self._history_records = None
         self._total = None
+        self._history_records = None
         self.discriminator = None
 
-        if history_records is not None:
-            self.history_records = history_records
         if total is not None:
             self.total = total
-
-    @property
-    def history_records(self):
-        """Gets the history_records of this ShowListPeriodHistoryResponse.
-
-        构建历史列表
-
-        :return: The history_records of this ShowListPeriodHistoryResponse.
-        :rtype: list[HistoryRecord]
-        """
-        return self._history_records
-
-    @history_records.setter
-    def history_records(self, history_records):
-        """Sets the history_records of this ShowListPeriodHistoryResponse.
-
-        构建历史列表
-
-        :param history_records: The history_records of this ShowListPeriodHistoryResponse.
-        :type: list[HistoryRecord]
-        """
-        self._history_records = history_records
+        if history_records is not None:
+            self.history_records = history_records
 
     @property
     def total(self):
@@ -88,6 +66,28 @@ class ShowListPeriodHistoryResponse(SdkResponse):
         :type: int
         """
         self._total = total
+
+    @property
+    def history_records(self):
+        """Gets the history_records of this ShowListPeriodHistoryResponse.
+
+        构建历史列表
+
+        :return: The history_records of this ShowListPeriodHistoryResponse.
+        :rtype: list[HistoryRecord1]
+        """
+        return self._history_records
+
+    @history_records.setter
+    def history_records(self, history_records):
+        """Sets the history_records of this ShowListPeriodHistoryResponse.
+
+        构建历史列表
+
+        :param history_records: The history_records of this ShowListPeriodHistoryResponse.
+        :type: list[HistoryRecord1]
+        """
+        self._history_records = history_records
 
     def to_dict(self):
         """Returns the model properties as a dict"""

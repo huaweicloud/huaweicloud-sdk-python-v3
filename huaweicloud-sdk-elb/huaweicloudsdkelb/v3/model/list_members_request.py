@@ -36,7 +36,8 @@ class ListMembersRequest:
         'operating_status': 'list[str]',
         'enterprise_project_id': 'list[str]',
         'ip_version': 'list[str]',
-        'member_type': 'list[str]'
+        'member_type': 'list[str]',
+        'instance_id': 'list[str]'
     }
 
     attribute_map = {
@@ -54,10 +55,11 @@ class ListMembersRequest:
         'operating_status': 'operating_status',
         'enterprise_project_id': 'enterprise_project_id',
         'ip_version': 'ip_version',
-        'member_type': 'member_type'
+        'member_type': 'member_type',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, pool_id=None, marker=None, limit=None, page_reverse=None, name=None, weight=None, admin_state_up=None, subnet_cidr_id=None, address=None, protocol_port=None, id=None, operating_status=None, enterprise_project_id=None, ip_version=None, member_type=None):
+    def __init__(self, pool_id=None, marker=None, limit=None, page_reverse=None, name=None, weight=None, admin_state_up=None, subnet_cidr_id=None, address=None, protocol_port=None, id=None, operating_status=None, enterprise_project_id=None, ip_version=None, member_type=None, instance_id=None):
         """ListMembersRequest - a model defined in huaweicloud sdk"""
         
         
@@ -77,6 +79,7 @@ class ListMembersRequest:
         self._enterprise_project_id = None
         self._ip_version = None
         self._member_type = None
+        self._instance_id = None
         self.discriminator = None
 
         self.pool_id = pool_id
@@ -108,6 +111,8 @@ class ListMembersRequest:
             self.ip_version = ip_version
         if member_type is not None:
             self.member_type = member_type
+        if instance_id is not None:
+            self.instance_id = instance_id
 
     @property
     def pool_id(self):
@@ -267,7 +272,7 @@ class ListMembersRequest:
     def subnet_cidr_id(self):
         """Gets the subnet_cidr_id of this ListMembersRequest.
 
-        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:otc,otc_test,dt,dt_test)
+        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :return: The subnet_cidr_id of this ListMembersRequest.
         :rtype: list[str]
@@ -278,7 +283,7 @@ class ListMembersRequest:
     def subnet_cidr_id(self, subnet_cidr_id):
         """Sets the subnet_cidr_id of this ListMembersRequest.
 
-        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:otc,otc_test,dt,dt_test)
+        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  支持多值查询，查询条件格式：***subnet_cidr_id=xxx&subnet_cidr_id=xxx*。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :param subnet_cidr_id: The subnet_cidr_id of this ListMembersRequest.
         :type: list[str]
@@ -289,7 +294,7 @@ class ListMembersRequest:
     def address(self):
         """Gets the address of this ListMembersRequest.
 
-        后端服务器对应的IPv4或IPv6地址。  支持多值查询，查询条件格式：*address=xxx&address=xxx*。  [不支持IPv6，请勿设置为IPv6地址。](tag:otc,otc_test,dt,dt_test)
+        后端服务器对应的IPv4或IPv6地址。  支持多值查询，查询条件格式：*address=xxx&address=xxx*。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :return: The address of this ListMembersRequest.
         :rtype: list[str]
@@ -300,7 +305,7 @@ class ListMembersRequest:
     def address(self, address):
         """Sets the address of this ListMembersRequest.
 
-        后端服务器对应的IPv4或IPv6地址。  支持多值查询，查询条件格式：*address=xxx&address=xxx*。  [不支持IPv6，请勿设置为IPv6地址。](tag:otc,otc_test,dt,dt_test)
+        后端服务器对应的IPv4或IPv6地址。  支持多值查询，查询条件格式：*address=xxx&address=xxx*。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :param address: The address of this ListMembersRequest.
         :type: list[str]
@@ -377,7 +382,7 @@ class ListMembersRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListMembersRequest.
 
-        企业项目ID。不传时查询default企业项目\"0\"下的资源，鉴权按照default企业项目鉴权；如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。 [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The enterprise_project_id of this ListMembersRequest.
         :rtype: list[str]
@@ -388,7 +393,7 @@ class ListMembersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListMembersRequest.
 
-        企业项目ID。不传时查询default企业项目\"0\"下的资源，鉴权按照default企业项目鉴权；如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。 [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param enterprise_project_id: The enterprise_project_id of this ListMembersRequest.
         :type: list[str]
@@ -438,6 +443,28 @@ class ListMembersRequest:
         :type: list[str]
         """
         self._member_type = member_type
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this ListMembersRequest.
+
+        member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）。取值： - ip：跨VPC的member。 - instance：关联到ECS的member。  支持多值查询，查询条件格式：*member_type=xxx&member_type=xxx*。
+
+        :return: The instance_id of this ListMembersRequest.
+        :rtype: list[str]
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ListMembersRequest.
+
+        member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）。取值： - ip：跨VPC的member。 - instance：关联到ECS的member。  支持多值查询，查询条件格式：*member_type=xxx&member_type=xxx*。
+
+        :param instance_id: The instance_id of this ListMembersRequest.
+        :type: list[str]
+        """
+        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

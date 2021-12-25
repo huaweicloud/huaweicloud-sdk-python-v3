@@ -131,7 +131,7 @@ class CycleParams:
     def interval(self):
         """Gets the interval of this CycleParams.
 
-        - cycle选择了Day，表示每几天召开一次，取值范围[1,60] - cycle选择了Week，表示每几周召开一次，取值范围[1,5] - cycle选择了Month，Interval表示隔几月，取值范围[1,12]
+        - cycle选择了Day，表示每几天召开一次，取值范围[1,15] - cycle选择了Week，表示每几周召开一次，取值范围[1,5] - cycle选择了Month，Interval表示隔几月，取值范围[1,3]
 
         :return: The interval of this CycleParams.
         :rtype: int
@@ -142,7 +142,7 @@ class CycleParams:
     def interval(self, interval):
         """Sets the interval of this CycleParams.
 
-        - cycle选择了Day，表示每几天召开一次，取值范围[1,60] - cycle选择了Week，表示每几周召开一次，取值范围[1,5] - cycle选择了Month，Interval表示隔几月，取值范围[1,12]
+        - cycle选择了Day，表示每几天召开一次，取值范围[1,15] - cycle选择了Week，表示每几周召开一次，取值范围[1,5] - cycle选择了Month，Interval表示隔几月，取值范围[1,3]
 
         :param interval: The interval of this CycleParams.
         :type: int

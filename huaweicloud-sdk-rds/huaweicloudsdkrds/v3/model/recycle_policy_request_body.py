@@ -22,7 +22,7 @@ class RecyclePolicyRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'recycle_policy': 'object'
+        'recycle_policy': 'RecyclePolicy'
     }
 
     attribute_map = {
@@ -43,10 +43,9 @@ class RecyclePolicyRequestBody:
     def recycle_policy(self):
         """Gets the recycle_policy of this RecyclePolicyRequestBody.
 
-        每个元素都是与回收站相关信息。
 
         :return: The recycle_policy of this RecyclePolicyRequestBody.
-        :rtype: object
+        :rtype: RecyclePolicy
         """
         return self._recycle_policy
 
@@ -54,10 +53,9 @@ class RecyclePolicyRequestBody:
     def recycle_policy(self, recycle_policy):
         """Sets the recycle_policy of this RecyclePolicyRequestBody.
 
-        每个元素都是与回收站相关信息。
 
         :param recycle_policy: The recycle_policy of this RecyclePolicyRequestBody.
-        :type: object
+        :type: RecyclePolicy
         """
         self._recycle_policy = recycle_policy
 

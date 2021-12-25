@@ -30,7 +30,9 @@ class RulesetItem:
         'template_create_time': 'str',
         'is_used': 'str',
         'rule_ids': 'str',
-        'is_default': 'str'
+        'is_default': 'str',
+        'is_devcloud_project_default': 'str',
+        'is_default_template': 'str'
     }
 
     attribute_map = {
@@ -42,10 +44,12 @@ class RulesetItem:
         'template_create_time': 'template_create_time',
         'is_used': 'is_used',
         'rule_ids': 'rule_ids',
-        'is_default': 'is_default'
+        'is_default': 'is_default',
+        'is_devcloud_project_default': 'is_devcloud_project_default',
+        'is_default_template': 'is_default_template'
     }
 
-    def __init__(self, template_id=None, language=None, template_name=None, creator_id=None, creator_name=None, template_create_time=None, is_used=None, rule_ids=None, is_default=None):
+    def __init__(self, template_id=None, language=None, template_name=None, creator_id=None, creator_name=None, template_create_time=None, is_used=None, rule_ids=None, is_default=None, is_devcloud_project_default=None, is_default_template=None):
         """RulesetItem - a model defined in huaweicloud sdk"""
         
         
@@ -59,6 +63,8 @@ class RulesetItem:
         self._is_used = None
         self._rule_ids = None
         self._is_default = None
+        self._is_devcloud_project_default = None
+        self._is_default_template = None
         self.discriminator = None
 
         if template_id is not None:
@@ -79,6 +85,10 @@ class RulesetItem:
             self.rule_ids = rule_ids
         if is_default is not None:
             self.is_default = is_default
+        if is_devcloud_project_default is not None:
+            self.is_devcloud_project_default = is_devcloud_project_default
+        if is_default_template is not None:
+            self.is_default_template = is_default_template
 
     @property
     def template_id(self):
@@ -277,6 +287,50 @@ class RulesetItem:
         :type: str
         """
         self._is_default = is_default
+
+    @property
+    def is_devcloud_project_default(self):
+        """Gets the is_devcloud_project_default of this RulesetItem.
+
+        是否是项目下语言默认规则集，0不是，1是
+
+        :return: The is_devcloud_project_default of this RulesetItem.
+        :rtype: str
+        """
+        return self._is_devcloud_project_default
+
+    @is_devcloud_project_default.setter
+    def is_devcloud_project_default(self, is_devcloud_project_default):
+        """Sets the is_devcloud_project_default of this RulesetItem.
+
+        是否是项目下语言默认规则集，0不是，1是
+
+        :param is_devcloud_project_default: The is_devcloud_project_default of this RulesetItem.
+        :type: str
+        """
+        self._is_devcloud_project_default = is_devcloud_project_default
+
+    @property
+    def is_default_template(self):
+        """Gets the is_default_template of this RulesetItem.
+
+        是否该语言默认规则集，0不是，1是
+
+        :return: The is_default_template of this RulesetItem.
+        :rtype: str
+        """
+        return self._is_default_template
+
+    @is_default_template.setter
+    def is_default_template(self, is_default_template):
+        """Sets the is_default_template of this RulesetItem.
+
+        是否该语言默认规则集，0不是，1是
+
+        :param is_default_template: The is_default_template of this RulesetItem.
+        :type: str
+        """
+        self._is_default_template = is_default_template
 
     def to_dict(self):
         """Returns the model properties as a dict"""

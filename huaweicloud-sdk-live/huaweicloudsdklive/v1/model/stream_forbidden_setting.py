@@ -56,7 +56,7 @@ class StreamForbiddenSetting:
     def domain(self):
         """Gets the domain of this StreamForbiddenSetting.
 
-        直播播放域名或推流域名
+        推流域名
 
         :return: The domain of this StreamForbiddenSetting.
         :rtype: str
@@ -67,7 +67,7 @@ class StreamForbiddenSetting:
     def domain(self, domain):
         """Sets the domain of this StreamForbiddenSetting.
 
-        直播播放域名或推流域名
+        推流域名
 
         :param domain: The domain of this StreamForbiddenSetting.
         :type: str

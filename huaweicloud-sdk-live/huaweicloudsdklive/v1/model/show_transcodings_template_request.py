@@ -58,7 +58,7 @@ class ShowTranscodingsTemplateRequest:
     def domain(self):
         """Gets the domain of this ShowTranscodingsTemplateRequest.
 
-        播放域名
+        推流域名
 
         :return: The domain of this ShowTranscodingsTemplateRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ShowTranscodingsTemplateRequest:
     def domain(self, domain):
         """Sets the domain of this ShowTranscodingsTemplateRequest.
 
-        播放域名
+        推流域名
 
         :param domain: The domain of this ShowTranscodingsTemplateRequest.
         :type: str

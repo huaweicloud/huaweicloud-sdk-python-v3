@@ -23,25 +23,30 @@ class AvailabilityZone:
 
     openapi_types = {
         'code': 'str',
-        'state': 'str'
+        'state': 'str',
+        'protocol': 'list[str]'
     }
 
     attribute_map = {
         'code': 'code',
-        'state': 'state'
+        'state': 'state',
+        'protocol': 'protocol'
     }
 
-    def __init__(self, code=None, state=None):
+    def __init__(self, code=None, state=None, protocol=None):
         """AvailabilityZone - a model defined in huaweicloud sdk"""
         
         
 
         self._code = None
         self._state = None
+        self._protocol = None
         self.discriminator = None
 
         self.code = code
         self.state = state
+        if protocol is not None:
+            self.protocol = protocol
 
     @property
     def code(self):
@@ -86,6 +91,28 @@ class AvailabilityZone:
         :type: str
         """
         self._state = state
+
+    @property
+    def protocol(self):
+        """Gets the protocol of this AvailabilityZone.
+
+        未售罄的LB规格类别。取值： - L4 表示网络型LB未售罄； - L7 表示应用型LB未售罄。
+
+        :return: The protocol of this AvailabilityZone.
+        :rtype: list[str]
+        """
+        return self._protocol
+
+    @protocol.setter
+    def protocol(self, protocol):
+        """Sets the protocol of this AvailabilityZone.
+
+        未售罄的LB规格类别。取值： - L4 表示网络型LB未售罄； - L7 表示应用型LB未售罄。
+
+        :param protocol: The protocol of this AvailabilityZone.
+        :type: list[str]
+        """
+        self._protocol = protocol
 
     def to_dict(self):
         """Returns the model properties as a dict"""

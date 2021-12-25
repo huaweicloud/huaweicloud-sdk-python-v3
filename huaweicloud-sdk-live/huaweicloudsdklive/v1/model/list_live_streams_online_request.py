@@ -63,7 +63,7 @@ class ListLiveStreamsOnlineRequest:
     def publish_domain(self):
         """Gets the publish_domain of this ListLiveStreamsOnlineRequest.
 
-        域名
+        推流域名
 
         :return: The publish_domain of this ListLiveStreamsOnlineRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class ListLiveStreamsOnlineRequest:
     def publish_domain(self, publish_domain):
         """Sets the publish_domain of this ListLiveStreamsOnlineRequest.
 
-        域名
+        推流域名
 
         :param publish_domain: The publish_domain of this ListLiveStreamsOnlineRequest.
         :type: str

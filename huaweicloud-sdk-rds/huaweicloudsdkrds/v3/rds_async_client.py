@@ -4768,6 +4768,130 @@ class RdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_api_version_async(self, request):
+        """查询API版本列表
+
+        查询API版本列表。
+
+        :param ListApiVersionRequest request
+        :return: ListApiVersionResponse
+        """
+        return self.list_api_version_with_http_info(request)
+
+    def list_api_version_with_http_info(self, request):
+        """查询API版本列表
+
+        查询API版本列表。
+
+        :param ListApiVersionRequest request
+        :return: ListApiVersionResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/rds',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListApiVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_api_version_async(self, request):
+        """查询指定的API版本信息
+
+        查询指定的API版本信息。
+
+        :param ShowApiVersionRequest request
+        :return: ShowApiVersionResponse
+        """
+        return self.show_api_version_with_http_info(request)
+
+    def show_api_version_with_http_info(self, request):
+        """查询指定的API版本信息
+
+        查询指定的API版本信息。
+
+        :param ShowApiVersionRequest request
+        :return: ShowApiVersionResponse
+        """
+
+        all_params = ['version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'version' in local_var_params:
+            path_params['version'] = local_var_params['version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/rds/{version}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowApiVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def allow_db_user_privilege_async(self, request):
         """授权数据库帐号
 
@@ -6256,6 +6380,75 @@ class RdsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListPostgresqlDbUserPaginatedResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def search_query_scale_compute_flavors_async(self, request):
+        """查询数据库代理可变更的规格
+
+        查询数据库代理可变更的规格信息。  - 调用接口前，您需要了解API 认证鉴权。
+
+        :param SearchQueryScaleComputeFlavorsRequest request
+        :return: SearchQueryScaleComputeFlavorsResponse
+        """
+        return self.search_query_scale_compute_flavors_with_http_info(request)
+
+    def search_query_scale_compute_flavors_with_http_info(self, request):
+        """查询数据库代理可变更的规格
+
+        查询数据库代理可变更的规格信息。  - 调用接口前，您需要了解API 认证鉴权。
+
+        :param SearchQueryScaleComputeFlavorsRequest request
+        :return: SearchQueryScaleComputeFlavorsResponse
+        """
+
+        all_params = ['instance_id', 'x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.1/{project_id}/instances/{instance_id}/proxy/scale/flavors',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchQueryScaleComputeFlavorsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

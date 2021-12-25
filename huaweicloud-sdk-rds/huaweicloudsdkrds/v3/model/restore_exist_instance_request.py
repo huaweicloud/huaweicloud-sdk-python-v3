@@ -23,7 +23,7 @@ class RestoreExistInstanceRequest:
 
     openapi_types = {
         'x_language': 'str',
-        'body': 'RestoreToExistingInstanceRequestBody'
+        'body': 'RestoreExistingInstanceRequestBody'
     }
 
     attribute_map = {
@@ -73,7 +73,7 @@ class RestoreExistInstanceRequest:
 
 
         :return: The body of this RestoreExistInstanceRequest.
-        :rtype: RestoreToExistingInstanceRequestBody
+        :rtype: RestoreExistingInstanceRequestBody
         """
         return self._body
 
@@ -83,7 +83,7 @@ class RestoreExistInstanceRequest:
 
 
         :param body: The body of this RestoreExistInstanceRequest.
-        :type: RestoreToExistingInstanceRequestBody
+        :type: RestoreExistingInstanceRequestBody
         """
         self._body = body
 

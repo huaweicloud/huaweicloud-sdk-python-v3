@@ -48,6 +48,493 @@ class DevStarAsyncClient(Client):
 
         return ClientBuilder(clazz, "GlobalCredentials")
 
+    def show_application_release_repositories_async(self, request):
+        """通过应用Id获取软件发布仓库列表 
+
+        通过应用Id获取软件发布仓库列表 
+
+        :param ShowApplicationReleaseRepositoriesRequest request
+        :return: ShowApplicationReleaseRepositoriesResponse
+        """
+        return self.show_application_release_repositories_with_http_info(request)
+
+    def show_application_release_repositories_with_http_info(self, request):
+        """通过应用Id获取软件发布仓库列表 
+
+        通过应用Id获取软件发布仓库列表 
+
+        :param ShowApplicationReleaseRepositoriesRequest request
+        :return: ShowApplicationReleaseRepositoriesResponse
+        """
+
+        all_params = ['application_id', 'x_language', 'parent_id', 'keyword', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+        if 'parent_id' in local_var_params:
+            query_params.append(('parent_id', local_var_params['parent_id']))
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/applications/{application_id}/release-repositories',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowApplicationReleaseRepositoriesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_application_res_delete_status_async(self, request):
+        """查询应用关联资源删除状态
+
+        根据应用Id查询应用关联的代码仓、流水线删除状态 使用场景：用户删除应用关联的资源（如代码仓、流水线...）后，通过该接口实时查询代码仓、流水线删除状态
+
+        :param ShowApplicationResDeleteStatusRequest request
+        :return: ShowApplicationResDeleteStatusResponse
+        """
+        return self.show_application_res_delete_status_with_http_info(request)
+
+    def show_application_res_delete_status_with_http_info(self, request):
+        """查询应用关联资源删除状态
+
+        根据应用Id查询应用关联的代码仓、流水线删除状态 使用场景：用户删除应用关联的资源（如代码仓、流水线...）后，通过该接口实时查询代码仓、流水线删除状态
+
+        :param ShowApplicationResDeleteStatusRequest request
+        :return: ShowApplicationResDeleteStatusResponse
+        """
+
+        all_params = ['application_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/application-resources/{application_id}/delete-status',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowApplicationResDeleteStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_application_dependent_resources_async(self, request):
+        """获取应用依赖元数据资源
+
+        根据应用Id获取依赖元数据资源
+
+        :param ShowApplicationDependentResourcesRequest request
+        :return: ShowApplicationDependentResourcesResponse
+        """
+        return self.show_application_dependent_resources_with_http_info(request)
+
+    def show_application_dependent_resources_with_http_info(self, request):
+        """获取应用依赖元数据资源
+
+        根据应用Id获取依赖元数据资源
+
+        :param ShowApplicationDependentResourcesRequest request
+        :return: ShowApplicationDependentResourcesResponse
+        """
+
+        all_params = ['application_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/applications/{application_id}/dependent-resources',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowApplicationDependentResourcesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_application_v3_async(self, request):
+        """获取应用详情
+
+        根据应用Id获取应用详情
+
+        :param ShowApplicationV3Request request
+        :return: ShowApplicationV3Response
+        """
+        return self.show_application_v3_with_http_info(request)
+
+    def show_application_v3_with_http_info(self, request):
+        """获取应用详情
+
+        根据应用Id获取应用详情
+
+        :param ShowApplicationV3Request request
+        :return: ShowApplicationV3Response
+        """
+
+        all_params = ['application_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/applications/{application_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowApplicationV3Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_application_async(self, request):
+        """更新应用信息
+
+        根据应用Id更新对应有权限的应用信息 - 允许更新信息的信息包含 name,description,icon
+
+        :param UpdateApplicationRequest request
+        :return: UpdateApplicationResponse
+        """
+        return self.update_application_with_http_info(request)
+
+    def update_application_with_http_info(self, request):
+        """更新应用信息
+
+        根据应用Id更新对应有权限的应用信息 - 允许更新信息的信息包含 name,description,icon
+
+        :param UpdateApplicationRequest request
+        :return: UpdateApplicationResponse
+        """
+
+        all_params = ['application_id', 'update_application_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/applications/{application_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateApplicationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_application_v4_async(self, request):
+        """删除应用信息
+
+        根据应用Id删除应用，并可以选择删除其关联的代码仓、流水线资源
+
+        :param DeleteApplicationV4Request request
+        :return: DeleteApplicationV4Response
+        """
+        return self.delete_application_v4_with_http_info(request)
+
+    def delete_application_v4_with_http_info(self, request):
+        """删除应用信息
+
+        根据应用Id删除应用，并可以选择删除其关联的代码仓、流水线资源
+
+        :param DeleteApplicationV4Request request
+        :return: DeleteApplicationV4Response
+        """
+
+        all_params = ['application_id', 'is_delete_repository', 'pipeline_ids']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+        if 'is_delete_repository' in local_var_params:
+            query_params.append(('is_delete_repository', local_var_params['is_delete_repository']))
+        if 'pipeline_ids' in local_var_params:
+            query_params.append(('pipeline_ids', local_var_params['pipeline_ids']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v4/applications/{application_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteApplicationV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_applications_v6_async(self, request):
+        """获取应用列表
+
+        获取我创建的应用列表 当前只支持查询我创建的应用，其中请求参数is_created_by_self需为true
+
+        :param ListApplicationsV6Request request
+        :return: ListApplicationsV6Response
+        """
+        return self.list_applications_v6_with_http_info(request)
+
+    def list_applications_v6_with_http_info(self, request):
+        """获取应用列表
+
+        获取我创建的应用列表 当前只支持查询我创建的应用，其中请求参数is_created_by_self需为true
+
+        :param ListApplicationsV6Request request
+        :return: ListApplicationsV6Response
+        """
+
+        all_params = ['x_language', 'attention', 'region_id', 'keyword', 'project_id', 'topic_id', 'is_created_by_self', 'sort_key', 'sort_dir', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'attention' in local_var_params:
+            query_params.append(('attention', local_var_params['attention']))
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+        if 'topic_id' in local_var_params:
+            query_params.append(('topic_id', local_var_params['topic_id']))
+        if 'is_created_by_self' in local_var_params:
+            query_params.append(('is_created_by_self', local_var_params['is_created_by_self']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+            collection_formats['sort_key'] = 'multi'
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+            collection_formats['sort_dir'] = 'multi'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v6/applications',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListApplicationsV6Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def download_application_code_async(self, request):
         """下载模板产物
 
@@ -107,6 +594,142 @@ class DevStarAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DownloadApplicationCodeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_deployment_jobs_async(self, request):
+        """创建部署任务
+
+        创建部署任务，并触发任务执行，当前只支持函数部署。 其中，报文中file_id为查询软件版本包接口返回版本包id; handler为在函数部署方式下，入口函数名称，从应用代码中获取，格式为“包名.类名.函数名称”，例如：com.example.demo.APIGTrigger.handler。 也可以从应用详情接口返回结构template_deployment中直接获取。
+
+        :param CreateDeploymentJobsRequest request
+        :return: CreateDeploymentJobsResponse
+        """
+        return self.create_deployment_jobs_with_http_info(request)
+
+    def create_deployment_jobs_with_http_info(self, request):
+        """创建部署任务
+
+        创建部署任务，并触发任务执行，当前只支持函数部署。 其中，报文中file_id为查询软件版本包接口返回版本包id; handler为在函数部署方式下，入口函数名称，从应用代码中获取，格式为“包名.类名.函数名称”，例如：com.example.demo.APIGTrigger.handler。 也可以从应用详情接口返回结构template_deployment中直接获取。
+
+        :param CreateDeploymentJobsRequest request
+        :return: CreateDeploymentJobsResponse
+        """
+
+        all_params = ['application_id', 'environment_tag', 'create_deployment_jobs_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+        if 'environment_tag' in local_var_params:
+            path_params['environment_tag'] = local_var_params['environment_tag']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/applications/{application_id}/environments/{environment_tag}/deployment-jobs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateDeploymentJobsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_deployment_jobs_async(self, request):
+        """查询应用环境部署任务详情
+
+        查询应用环境部署任务详情
+
+        :param ShowDeploymentJobsRequest request
+        :return: ShowDeploymentJobsResponse
+        """
+        return self.show_deployment_jobs_with_http_info(request)
+
+    def show_deployment_jobs_with_http_info(self, request):
+        """查询应用环境部署任务详情
+
+        查询应用环境部署任务详情
+
+        :param ShowDeploymentJobsRequest request
+        :return: ShowDeploymentJobsResponse
+        """
+
+        all_params = ['application_id', 'environment_tag', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+        if 'environment_tag' in local_var_params:
+            path_params['environment_tag'] = local_var_params['environment_tag']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/applications/{application_id}/environments/{environment_tag}/deployment-jobs/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDeploymentJobsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -302,6 +925,408 @@ class DevStarAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowJobDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_pipeline_templates_async(self, request):
+        """流水线模板列表查询
+
+        流水线模板列表查询
+
+        :param ListPipelineTemplatesRequest request
+        :return: ListPipelineTemplatesResponse
+        """
+        return self.list_pipeline_templates_with_http_info(request)
+
+    def list_pipeline_templates_with_http_info(self, request):
+        """流水线模板列表查询
+
+        流水线模板列表查询
+
+        :param ListPipelineTemplatesRequest request
+        :return: ListPipelineTemplatesResponse
+        """
+
+        all_params = ['region_id', 'x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/pipeline-templates',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListPipelineTemplatesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_pipeline_last_status_v2_async(self, request):
+        """查询流水线最近一次运行状态查询接口
+
+        查询应用流水线最近一次运行状态查询接口
+
+        :param ShowPipelineLastStatusV2Request request
+        :return: ShowPipelineLastStatusV2Response
+        """
+        return self.show_pipeline_last_status_v2_with_http_info(request)
+
+    def show_pipeline_last_status_v2_with_http_info(self, request):
+        """查询流水线最近一次运行状态查询接口
+
+        查询应用流水线最近一次运行状态查询接口
+
+        :param ShowPipelineLastStatusV2Request request
+        :return: ShowPipelineLastStatusV2Response
+        """
+
+        all_params = ['pipeline_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/pipelines/{pipeline_id}/status',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowPipelineLastStatusV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def start_pipeline_async(self, request):
+        """根据流水线Id操作流水线启动
+
+        根据流水线Id操作流水线启动
+
+        :param StartPipelineRequest request
+        :return: StartPipelineResponse
+        """
+        return self.start_pipeline_with_http_info(request)
+
+    def start_pipeline_with_http_info(self, request):
+        """根据流水线Id操作流水线启动
+
+        根据流水线Id操作流水线启动
+
+        :param StartPipelineRequest request
+        :return: StartPipelineResponse
+        """
+
+        all_params = ['pipeline_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/pipelines/{pipeline_id}/start',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartPipelineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_projects_v4_async(self, request):
+        """获取用户有权限的DevStar存量DevCloud项目列表
+
+        获取用户有权限的DevStar存量DevCloud项目列表。 来源包括：1.DevStar创建的DevCloud项目；2.DevStar应用有关联DevCloud项目。
+
+        :param ListProjectsV4Request request
+        :return: ListProjectsV4Response
+        """
+        return self.list_projects_v4_with_http_info(request)
+
+    def list_projects_v4_with_http_info(self, request):
+        """获取用户有权限的DevStar存量DevCloud项目列表
+
+        获取用户有权限的DevStar存量DevCloud项目列表。 来源包括：1.DevStar创建的DevCloud项目；2.DevStar应用有关联DevCloud项目。
+
+        :param ListProjectsV4Request request
+        :return: ListProjectsV4Response
+        """
+
+        all_params = ['x_language', 'keyword', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v4/projects',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListProjectsV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def check_repository_duplicate_name_async(self, request):
+        """检查仓库名称是否重名
+
+        检查仓库名称是否重名 - 校验规则     同一个项目下的仓库名称不能存在重复,当结果为true时,校验通过,仓库名称可用,否则,校验不通过,当前项目下的仓库名称已存在,不可用 - 必传参数     project_id,name,region_id
+
+        :param CheckRepositoryDuplicateNameRequest request
+        :return: CheckRepositoryDuplicateNameResponse
+        """
+        return self.check_repository_duplicate_name_with_http_info(request)
+
+    def check_repository_duplicate_name_with_http_info(self, request):
+        """检查仓库名称是否重名
+
+        检查仓库名称是否重名 - 校验规则     同一个项目下的仓库名称不能存在重复,当结果为true时,校验通过,仓库名称可用,否则,校验不通过,当前项目下的仓库名称已存在,不可用 - 必传参数     project_id,name,region_id
+
+        :param CheckRepositoryDuplicateNameRequest request
+        :return: CheckRepositoryDuplicateNameResponse
+        """
+
+        all_params = ['project_id', 'name', 'region_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/check-repository-duplicate-name',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CheckRepositoryDuplicateNameResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_repository_statistical_data_v2_async(self, request):
+        """应用代码仓库统计信息
+
+        查询代码仓库的统计信息,包括代码仓的名称,代码行数等信息
+
+        :param ShowRepositoryStatisticalDataV2Request request
+        :return: ShowRepositoryStatisticalDataV2Response
+        """
+        return self.show_repository_statistical_data_v2_with_http_info(request)
+
+    def show_repository_statistical_data_v2_with_http_info(self, request):
+        """应用代码仓库统计信息
+
+        查询代码仓库的统计信息,包括代码仓的名称,代码行数等信息
+
+        :param ShowRepositoryStatisticalDataV2Request request
+        :return: ShowRepositoryStatisticalDataV2Response
+        """
+
+        all_params = ['repository_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/repositories/{repository_id}/statistical-data',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRepositoryStatisticalDataV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

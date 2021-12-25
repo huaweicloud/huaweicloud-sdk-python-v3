@@ -309,7 +309,7 @@ class KafkaClient(Client):
     def create_connector(self, request):
         """创建实例的转储节点
 
-        创建实例的转储节点。
+        创建实例的转储节点。  [**当前通过调用API，只支持按需实例创建转储节点。**](tag:hws,ctc)
 
         :param CreateConnectorRequest request
         :return: CreateConnectorResponse
@@ -319,7 +319,7 @@ class KafkaClient(Client):
     def create_connector_with_http_info(self, request):
         """创建实例的转储节点
 
-        创建实例的转储节点。
+        创建实例的转储节点。  [**当前通过调用API，只支持按需实例创建转储节点。**](tag:hws,ctc)
 
         :param CreateConnectorRequest request
         :return: CreateConnectorResponse
@@ -1552,7 +1552,7 @@ class KafkaClient(Client):
     def resize_instance(self, request):
         """实例规格变更
 
-        实例规格变更。
+        实例规格变更。  [**当前通过调用API，只支持按需实例进行实例规格变更。**](tag:hws,ctc)
 
         :param ResizeInstanceRequest request
         :return: ResizeInstanceResponse
@@ -1562,7 +1562,7 @@ class KafkaClient(Client):
     def resize_instance_with_http_info(self, request):
         """实例规格变更
 
-        实例规格变更。
+        实例规格变更。  [**当前通过调用API，只支持按需实例进行实例规格变更。**](tag:hws,ctc)
 
         :param ResizeInstanceRequest request
         :return: ResizeInstanceResponse

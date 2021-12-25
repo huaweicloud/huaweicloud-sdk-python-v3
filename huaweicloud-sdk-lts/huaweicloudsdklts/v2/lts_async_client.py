@@ -238,7 +238,7 @@ class LtsAsyncClient(Client):
 
 
     def create_log_dump_obs_async(self, request):
-        """日志转储
+        """创建日志转储（旧版）
 
         该接口用于将指定的一个或多个日志流的日志转储到OBS服务。
 
@@ -248,7 +248,7 @@ class LtsAsyncClient(Client):
         return self.create_log_dump_obs_with_http_info(request)
 
     def create_log_dump_obs_with_http_info(self, request):
-        """日志转储
+        """创建日志转储（旧版）
 
         该接口用于将指定的一个或多个日志流的日志转储到OBS服务。
 
@@ -429,7 +429,7 @@ class LtsAsyncClient(Client):
 
 
     def create_notification_template_async(self, request):
-        """创建通知模板
+        """创建消息模板
 
         该接口用于创建通知模板，目前每个帐户最多可以创建共100个通知模板，创建后名称不可修改。
 
@@ -439,7 +439,7 @@ class LtsAsyncClient(Client):
         return self.create_notification_template_with_http_info(request)
 
     def create_notification_template_with_http_info(self, request):
-        """创建通知模板
+        """创建消息模板
 
         该接口用于创建通知模板，目前每个帐户最多可以创建共100个通知模板，创建后名称不可修改。
 
@@ -557,7 +557,7 @@ class LtsAsyncClient(Client):
 
 
     def create_transfer_async(self, request):
-        """创建日志转储
+        """创建日志转储（新版）
 
         该接口用于创建OBS转储，DIS转储，DMS转储。
 
@@ -567,7 +567,7 @@ class LtsAsyncClient(Client):
         return self.create_transfer_with_http_info(request)
 
     def create_transfer_with_http_info(self, request):
-        """创建日志转储
+        """创建日志转储（新版）
 
         该接口用于创建OBS转储，DIS转储，DMS转储。
 
@@ -1002,7 +1002,7 @@ class LtsAsyncClient(Client):
 
 
     def delete_notification_template_async(self, request):
-        """删除通知模板
+        """删除消息模板
 
         该接口用于删除通知模板。
 
@@ -1012,7 +1012,7 @@ class LtsAsyncClient(Client):
         return self.delete_notification_template_with_http_info(request)
 
     def delete_notification_template_with_http_info(self, request):
-        """删除通知模板
+        """删除消息模板
 
         该接口用于删除通知模板。
 
@@ -1467,7 +1467,7 @@ class LtsAsyncClient(Client):
         :return: ListChartsResponse
         """
 
-        all_params = ['log_group_id', 'log_stream_id']
+        all_params = ['log_group_id', 'log_stream_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1482,6 +1482,10 @@ class LtsAsyncClient(Client):
             path_params['log_stream_id'] = local_var_params['log_stream_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -1762,7 +1766,7 @@ class LtsAsyncClient(Client):
 
 
     def list_log_histogram_async(self, request):
-        """查询关键词搜索条数
+        """查询日志直方图
 
         查询关键词搜索条数
 
@@ -1772,7 +1776,7 @@ class LtsAsyncClient(Client):
         return self.list_log_histogram_with_http_info(request)
 
     def list_log_histogram_with_http_info(self, request):
-        """查询关键词搜索条数
+        """查询日志直方图
 
         查询关键词搜索条数
 
@@ -2026,7 +2030,7 @@ class LtsAsyncClient(Client):
 
 
     def list_notification_template_async(self, request):
-        """预览通知模板邮件格式
+        """预览消息模板邮件格式
 
         该接口用于预览通知模板邮件格式
 
@@ -2036,7 +2040,7 @@ class LtsAsyncClient(Client):
         return self.list_notification_template_with_http_info(request)
 
     def list_notification_template_with_http_info(self, request):
-        """预览通知模板邮件格式
+        """预览消息模板邮件格式
 
         该接口用于预览通知模板邮件格式
 
@@ -2091,7 +2095,7 @@ class LtsAsyncClient(Client):
 
 
     def list_notification_templates_async(self, request):
-        """查询通知模板
+        """查询消息模板
 
         该接口用于查询通知模板。
 
@@ -2101,7 +2105,7 @@ class LtsAsyncClient(Client):
         return self.list_notification_templates_with_http_info(request)
 
     def list_notification_templates_with_http_info(self, request):
-        """查询通知模板
+        """查询消息模板
 
         该接口用于查询通知模板。
 
@@ -2109,7 +2113,7 @@ class LtsAsyncClient(Client):
         :return: ListNotificationTemplatesResponse
         """
 
-        all_params = ['domain_id']
+        all_params = ['domain_id', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2122,6 +2126,10 @@ class LtsAsyncClient(Client):
             path_params['domain_id'] = local_var_params['domain_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -2485,7 +2493,7 @@ class LtsAsyncClient(Client):
 
 
     def show_notification_template_async(self, request):
-        """查询单个通知模板
+        """查询单个消息模板
 
         该接口用于查询单个通知模板
 
@@ -2495,7 +2503,7 @@ class LtsAsyncClient(Client):
         return self.show_notification_template_with_http_info(request)
 
     def show_notification_template_with_http_info(self, request):
-        """查询单个通知模板
+        """查询单个消息模板
 
         该接口用于查询单个通知模板
 
@@ -2678,9 +2686,9 @@ class LtsAsyncClient(Client):
 
 
     def update_host_group_async(self, request):
-        """更新主机组
+        """修改主机组
 
-        更新主机组
+        修改主机组
 
         :param UpdateHostGroupRequest request
         :return: UpdateHostGroupResponse
@@ -2688,9 +2696,9 @@ class LtsAsyncClient(Client):
         return self.update_host_group_with_http_info(request)
 
     def update_host_group_with_http_info(self, request):
-        """更新主机组
+        """修改主机组
 
-        更新主机组
+        修改主机组
 
         :param UpdateHostGroupRequest request
         :return: UpdateHostGroupResponse
@@ -2869,7 +2877,7 @@ class LtsAsyncClient(Client):
 
 
     def update_notification_template_async(self, request):
-        """修改通知模板
+        """修改消息模板
 
         该接口用于修改通知模板,根据名称进行修改。
 
@@ -2879,7 +2887,7 @@ class LtsAsyncClient(Client):
         return self.update_notification_template_with_http_info(request)
 
     def update_notification_template_with_http_info(self, request):
-        """修改通知模板
+        """修改消息模板
 
         该接口用于修改通知模板,根据名称进行修改。
 
@@ -3060,7 +3068,7 @@ class LtsAsyncClient(Client):
 
 
     def create_aom_mapping_rules_async(self, request):
-        """创建日志接入lts规则
+        """创建接入规则
 
         该接口用于创建aom日志接入lts规则
 
@@ -3070,7 +3078,7 @@ class LtsAsyncClient(Client):
         return self.create_aom_mapping_rules_with_http_info(request)
 
     def create_aom_mapping_rules_with_http_info(self, request):
-        """创建日志接入lts规则
+        """创建接入规则
 
         该接口用于创建aom日志接入lts规则
 
@@ -3188,7 +3196,7 @@ class LtsAsyncClient(Client):
 
 
     def show_aom_mapping_rule_async(self, request):
-        """查询接入规则
+        """查询单个接入规则
 
         该接口用于查询单个aom日志接入lts
 
@@ -3198,7 +3206,7 @@ class LtsAsyncClient(Client):
         return self.show_aom_mapping_rule_with_http_info(request)
 
     def show_aom_mapping_rule_with_http_info(self, request):
-        """查询接入规则
+        """查询单个接入规则
 
         该接口用于查询单个aom日志接入lts
 
@@ -3251,7 +3259,7 @@ class LtsAsyncClient(Client):
 
 
     def show_aom_mapping_rules_async(self, request):
-        """查询接入规则
+        """查询所有接入规则
 
         该接口用于查询aom日志所有接入lts规则
 
@@ -3261,7 +3269,7 @@ class LtsAsyncClient(Client):
         return self.show_aom_mapping_rules_with_http_info(request)
 
     def show_aom_mapping_rules_with_http_info(self, request):
-        """查询接入规则
+        """查询所有接入规则
 
         该接口用于查询aom日志所有接入lts规则
 
@@ -3368,69 +3376,6 @@ class LtsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateAomMappingRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def update_alarm_rule_status_async(self, request):
-        """改变告警规则状态
-
-        改变告警规则状态
-
-        :param UpdateAlarmRuleStatusRequest request
-        :return: UpdateAlarmRuleStatusResponse
-        """
-        return self.update_alarm_rule_status_with_http_info(request)
-
-    def update_alarm_rule_status_with_http_info(self, request):
-        """改变告警规则状态
-
-        改变告警规则状态
-
-        :param UpdateAlarmRuleStatusRequest request
-        :return: UpdateAlarmRuleStatusResponse
-        """
-
-        all_params = ['change_alarm_rule_status']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/lts/alarms/status',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='UpdateAlarmRuleStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3618,6 +3563,69 @@ class LtsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSqlAlarmRulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_alarm_rule_status_async(self, request):
+        """切换告警规则状态
+
+        改变告警规则状态
+
+        :param UpdateAlarmRuleStatusRequest request
+        :return: UpdateAlarmRuleStatusResponse
+        """
+        return self.update_alarm_rule_status_with_http_info(request)
+
+    def update_alarm_rule_status_with_http_info(self, request):
+        """切换告警规则状态
+
+        改变告警规则状态
+
+        :param UpdateAlarmRuleStatusRequest request
+        :return: UpdateAlarmRuleStatusResponse
+        """
+
+        all_params = ['change_alarm_rule_status']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/lts/alarms/status',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateAlarmRuleStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

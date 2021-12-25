@@ -542,7 +542,7 @@ class ShowInstanceResp:
     def status(self):
         """Gets the status of this ShowInstanceResp.
 
-        实例的状态。详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-kafka/kafka-api-180514012.html)。
+        实例的状态。
 
         :return: The status of this ShowInstanceResp.
         :rtype: str
@@ -553,7 +553,7 @@ class ShowInstanceResp:
     def status(self, status):
         """Sets the status of this ShowInstanceResp.
 
-        实例的状态。详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-kafka/kafka-api-180514012.html)。
+        实例的状态。
 
         :param status: The status of this ShowInstanceResp.
         :type: str

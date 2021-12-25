@@ -48,7 +48,7 @@ class CreateIpGroupIpOption:
     def ip(self):
         """Gets the ip of this CreateIpGroupIpOption.
 
-        IP地址。支持IPv4、IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:otc,otc_test,dt,dt_test)
+        IP地址。支持IPv4、IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :return: The ip of this CreateIpGroupIpOption.
         :rtype: str
@@ -59,7 +59,7 @@ class CreateIpGroupIpOption:
     def ip(self, ip):
         """Sets the ip of this CreateIpGroupIpOption.
 
-        IP地址。支持IPv4、IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:otc,otc_test,dt,dt_test)
+        IP地址。支持IPv4、IPv6。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :param ip: The ip of this CreateIpGroupIpOption.
         :type: str

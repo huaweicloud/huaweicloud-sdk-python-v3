@@ -74,7 +74,7 @@ class UpdatePoolOption:
     def admin_state_up(self):
         """Gets the admin_state_up of this UpdatePoolOption.
 
-        后端云服务器组的管理状态，只支持更新为true。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        后端云服务器组的管理状态，只支持更新为true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The admin_state_up of this UpdatePoolOption.
         :rtype: bool
@@ -85,7 +85,7 @@ class UpdatePoolOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this UpdatePoolOption.
 
-        后端云服务器组的管理状态，只支持更新为true。  [不支持该字段，请勿使用。](tag:otc,otc_test,dt,dt_test)
+        后端云服务器组的管理状态，只支持更新为true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param admin_state_up: The admin_state_up of this UpdatePoolOption.
         :type: bool

@@ -1,0 +1,271 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class Deployment:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'name': 'str',
+        'description': 'str',
+        'source': 'str',
+        'group_id': 'str',
+        'node_ids': 'list[str]',
+        'tags': 'list[Attributes]',
+        'deployment': 'CreateAppsInDeploymentV3'
+    }
+
+    attribute_map = {
+        'name': 'name',
+        'description': 'description',
+        'source': 'source',
+        'group_id': 'group_id',
+        'node_ids': 'node_ids',
+        'tags': 'tags',
+        'deployment': 'deployment'
+    }
+
+    def __init__(self, name=None, description=None, source=None, group_id=None, node_ids=None, tags=None, deployment=None):
+        """Deployment - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._name = None
+        self._description = None
+        self._source = None
+        self._group_id = None
+        self._node_ids = None
+        self._tags = None
+        self._deployment = None
+        self.discriminator = None
+
+        self.name = name
+        if description is not None:
+            self.description = description
+        if source is not None:
+            self.source = source
+        if group_id is not None:
+            self.group_id = group_id
+        self.node_ids = node_ids
+        if tags is not None:
+            self.tags = tags
+        self.deployment = deployment
+
+    @property
+    def name(self):
+        """Gets the name of this Deployment.
+
+        部署名称
+
+        :return: The name of this Deployment.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this Deployment.
+
+        部署名称
+
+        :param name: The name of this Deployment.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def description(self):
+        """Gets the description of this Deployment.
+
+        部署描述
+
+        :return: The description of this Deployment.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this Deployment.
+
+        部署描述
+
+        :param description: The description of this Deployment.
+        :type: str
+        """
+        self._description = description
+
+    @property
+    def source(self):
+        """Gets the source of this Deployment.
+
+        应用部署来源: 边缘市场(iem) or 自定义(userdefined)
+
+        :return: The source of this Deployment.
+        :rtype: str
+        """
+        return self._source
+
+    @source.setter
+    def source(self, source):
+        """Sets the source of this Deployment.
+
+        应用部署来源: 边缘市场(iem) or 自定义(userdefined)
+
+        :param source: The source of this Deployment.
+        :type: str
+        """
+        self._source = source
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this Deployment.
+
+        应用部署到指定节点组，与node_ids二选一
+
+        :return: The group_id of this Deployment.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this Deployment.
+
+        应用部署到指定节点组，与node_ids二选一
+
+        :param group_id: The group_id of this Deployment.
+        :type: str
+        """
+        self._group_id = group_id
+
+    @property
+    def node_ids(self):
+        """Gets the node_ids of this Deployment.
+
+        应用部署到指定节点，当前只支持一个边缘节点
+
+        :return: The node_ids of this Deployment.
+        :rtype: list[str]
+        """
+        return self._node_ids
+
+    @node_ids.setter
+    def node_ids(self, node_ids):
+        """Sets the node_ids of this Deployment.
+
+        应用部署到指定节点，当前只支持一个边缘节点
+
+        :param node_ids: The node_ids of this Deployment.
+        :type: list[str]
+        """
+        self._node_ids = node_ids
+
+    @property
+    def tags(self):
+        """Gets the tags of this Deployment.
+
+        节点属性
+
+        :return: The tags of this Deployment.
+        :rtype: list[Attributes]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this Deployment.
+
+        节点属性
+
+        :param tags: The tags of this Deployment.
+        :type: list[Attributes]
+        """
+        self._tags = tags
+
+    @property
+    def deployment(self):
+        """Gets the deployment of this Deployment.
+
+
+        :return: The deployment of this Deployment.
+        :rtype: CreateAppsInDeploymentV3
+        """
+        return self._deployment
+
+    @deployment.setter
+    def deployment(self, deployment):
+        """Sets the deployment of this Deployment.
+
+
+        :param deployment: The deployment of this Deployment.
+        :type: CreateAppsInDeploymentV3
+        """
+        self._deployment = deployment
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, Deployment):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

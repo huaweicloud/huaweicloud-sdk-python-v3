@@ -70,7 +70,7 @@ class ShowJobDetailRequest:
     def job_id(self):
         """Gets the job_id of this ShowJobDetailRequest.
 
-        任务id。
+        任务 ID: 可以通过调用 RunDevstarTemplateJob 返回结果获取
 
         :return: The job_id of this ShowJobDetailRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ShowJobDetailRequest:
     def job_id(self, job_id):
         """Sets the job_id of this ShowJobDetailRequest.
 
-        任务id。
+        任务 ID: 可以通过调用 RunDevstarTemplateJob 返回结果获取
 
         :param job_id: The job_id of this ShowJobDetailRequest.
         :type: str

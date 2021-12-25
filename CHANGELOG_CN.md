@@ -1,3 +1,245 @@
+# 3.0.73 2021-12-25
+
+### HuaweiCloud SDK CDM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateLink`新增请求参数 `id`
+  - 接口`ShowClusterDetail`新增响应参数 `endpointDomainName`、`isScheduleBootOff`、`failedReasons`、`components`、`createFrom`、`resourceId`、`flavorType`、`workSpaceId`、`trial`
+  - 接口`UpdateJob`新增请求参数 `is_incre_job`、`flag`、`files_read`、`external_id`、`type`、`execute_start_date`、`delete_rows`、`enabled`、`bytes_written`、`id`、`is_use_sql`、`update_rows`、`group_name`、`bytes_read`、`execute_update_date`、`write_rows`、`files_writte`、`is_incrementing`、`execute_create_date`、`id`、`type`、`id`、`type`、`id`、`type`
+  - 接口`ShowJobs`新增响应参数 `is_incre_job`、`flag`、`files_read`、`external_id`、`type`、`execute_start_date`、`delete_rows`、`enabled`、`bytes_written`、`id`、`is_use_sql`、`update_rows`、`group_name`、`bytes_read`、`execute_update_date`、`write_rows`、`files_writte`、`is_incrementing`、`execute_create_date`、`id`、`type`、`id`、`type`、`id`、`type`
+  - 接口`CreateAndStartRandomClusterJob`:
+    - 新增请求参数 `is_incre_job`、`flag`、`files_read`、`external_id`、`type`、`execute_start_date`、`delete_rows`、`enabled`、`bytes_written`、`id`、`is_use_sql`、`update_rows`、`group_name`、`bytes_read`、`execute_update_date`、`write_rows`、`files_writte`、`is_incrementing`、`execute_create_date`、`id`、`type`、`id`、`type`、`id`、`type`
+    - 新增响应参数 `submissions`
+    - 移除响应参数 `name`、`validation-result`
+  - 接口`CreateJob`新增请求参数 `is_incre_job`、`flag`、`files_read`、`external_id`、`type`、`execute_start_date`、`delete_rows`、`enabled`、`bytes_written`、`id`、`is_use_sql`、`update_rows`、`group_name`、`bytes_read`、`execute_update_date`、`write_rows`、`files_writte`、`is_incrementing`、`execute_create_date`、`id`、`type`、`id`、`type`、`id`、`type`
+  - 接口`StartJob`新增响应参数 `execute-date`
+  - 接口`UpdateLink`新增请求参数 `id`
+  - 接口`ShowLink`新增响应参数 `id`
+  - 接口`ListClusters`:
+    - 新增响应参数 `bakExpectedStartTime`、`bakKeepDay`、`createFrom`、`resourceId`、`flavorType`、`workSpaceId`、`trial`、`components`
+    - 移除响应参数 `version`
+
+### HuaweiCloud SDK CloudBuild
+
+- _新增特性_
+  - 支持接口`ShowHistoryDetails`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Cloudtest
+
+- _新增特性_
+  - 支持接口`ShowPlanJournals`、`ShowIssuesByPlanId`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CodeCheck
+
+- _新增特性_
+  - 支持接口`CheckParameters`、`ListTaskParameter`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListRules`新增响应参数 `rule_desc`
+  - 接口`ListRulesets`新增响应参数 `is_devcloud_project_default`、`is_default_template`
+
+### HuaweiCloud SDK CodeHub
+
+- _新增特性_
+  - 支持代码托管服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CopyInstance`新增请求参数 `backup_format`
+
+### HuaweiCloud SDK DevStar
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowApplicationV3`
+    - `UpdateApplication`
+    - `ShowApplicationDependentResources`
+    - `DeleteApplicationV4`
+    - `ShowApplicationResDeleteStatus`
+    - `ListApplicationsV6`
+    - `ShowDeploymentJobs`
+    - `CreateDeploymentJobs`
+    - `ShowPipelineLastStatusV2`
+    - `ListPipelineTemplates`
+    - `StartPipeline`
+    - `ListProjectsV4`
+    - `ShowRepositoryStatisticalDataV2`
+    - `CheckRepositoryDuplicateName`
+    - `ShowApplicationReleaseRepositories`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowTemplateV3`新增响应参数 `dependents`
+  - 接口`ListTemplatesV2`新增响应参数 `dependents`、`dependent_services`
+  - 接口`ShowJobDetail`新增响应参数 `show_type`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`NovaListServerActions`移除响应参数`updated_at`
+
+### HuaweiCloud SDK IEF
+
+- _新增特性_
+  - 支持智能边缘平台服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IoTAnalytics
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateDatasource`:
+    - 新增请求参数 `site_id`
+    - 移除请求参数 `instance_id`
+  - 接口`ShowAllDataSource`:
+    - 新增响应参数 `site_id`
+    - 移除响应参数 `instance_id`
+  - 接口`UpdateDataSource`:
+    - 新增请求参数 `site_id`
+    - 新增响应参数 `site_id`
+    - 移除请求参数 `instance_id`
+    - 移除响应参数 `instance_id`
+  - 接口`ShowDataSource`:
+    - 新增响应参数 `site_id`
+    - 移除响应参数 `instance_id`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreatePostPaidInstance`请求参数`partition_num`改为非必填
+  - 接口`RestartManager`新增响应参数 `result`、`instance_id`
+  - 接口`ListProducts`:
+    - 新增响应参数 `hourly`、`honthly`
+    - 移除响应参数 `Hourly`、`Monthly`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCharts`新增请求参数 `offset`、`limit`
+  - 接口`ListNotificationTemplates`新增请求参数 `offset`、`limit`
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateTranscodingTask`:
+    - 新增请求参数 `auto_volume_setting`
+    - 请求参数`volume`新增枚举值`original`
+  - 接口`ListTranscodingTask`新增响应参数 `av_parameters`
+  - 接口`CreateWatermarkTemplate`新增请求参数 `template_id`
+  - 接口`ListWatermarkTemplate`新增响应参数 `template_id`
+  - 接口`UpdateWatermarkTemplate`新增请求参数 `template_id`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreateScalingPolicy`
+    - `ShowClusterDetails`
+    - `UpdateClusterScaling`
+    - `ListHosts`
+    - `CreateAndExecuteJob`
+    - `ListExecuteJob`
+    - `ShowJobExes`
+    - `DeleteJobExecution`
+    - `CreateCluster`
+    - `ShowAgencyMapping`
+    - `UpdateAgencyMapping`
+    - `ShowJobExeListNew`
+    - `CreateExecuteJob`
+    - `ShowSingleJobExe`
+    - `StopJob`
+    - `ShowSqlResultWithJob`
+    - `BatchDeleteJobs`
+    - `ExecuteSql`
+    - `ShowSqlResult`
+    - `CancelSql`
+    - `ShowHdfsFileList`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListTasks`新增响应参数 `group_type`、`success_record_error_reason`、`skip_record_error_reason`、`save_prefix`
+  - 接口`ShowTask`新增响应参数 `group_type`、`success_record_error_reason`、`skip_record_error_reason`、`save_prefix`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListApiVersion`、`ShowApiVersion`、`SearchQueryScaleComputeFlavors`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ROMA
+
+- _新增特性_
+  - 支持应用与数据集成平台服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SA
+
+- _新增特性_
+  - 支持态势感知服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.0.72 2021-12-17
 
 ### HuaweiCloud SDK CCE

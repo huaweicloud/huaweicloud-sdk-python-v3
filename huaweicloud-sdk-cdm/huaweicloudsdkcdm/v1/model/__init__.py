@@ -52,6 +52,7 @@ from huaweicloudsdkcdm.v1.model.job import Job
 from huaweicloudsdkcdm.v1.model.job_validation_result import JobValidationResult
 from huaweicloudsdkcdm.v1.model.links import Links
 from huaweicloudsdkcdm.v1.model.links_linkconfigvalues import LinksLinkconfigvalues
+from huaweicloudsdkcdm.v1.model.links_linkconfigvalues_extendedconfigs import LinksLinkconfigvaluesExtendedconfigs
 from huaweicloudsdkcdm.v1.model.list_clusters_request import ListClustersRequest
 from huaweicloudsdkcdm.v1.model.list_clusters_response import ListClustersResponse
 from huaweicloudsdkcdm.v1.model.nics import Nics

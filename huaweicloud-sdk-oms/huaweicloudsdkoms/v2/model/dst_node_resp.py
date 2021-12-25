@@ -23,27 +23,32 @@ class DstNodeResp:
 
     openapi_types = {
         'bucket': 'str',
-        'region': 'str'
+        'region': 'str',
+        'save_prefix': 'str'
     }
 
     attribute_map = {
         'bucket': 'bucket',
-        'region': 'region'
+        'region': 'region',
+        'save_prefix': 'save_prefix'
     }
 
-    def __init__(self, bucket=None, region=None):
+    def __init__(self, bucket=None, region=None, save_prefix=None):
         """DstNodeResp - a model defined in huaweicloud sdk"""
         
         
 
         self._bucket = None
         self._region = None
+        self._save_prefix = None
         self.discriminator = None
 
         if bucket is not None:
             self.bucket = bucket
         if region is not None:
             self.region = region
+        if save_prefix is not None:
+            self.save_prefix = save_prefix
 
     @property
     def bucket(self):
@@ -88,6 +93,28 @@ class DstNodeResp:
         :type: str
         """
         self._region = region
+
+    @property
+    def save_prefix(self):
+        """Gets the save_prefix of this DstNodeResp.
+
+        目的端桶内路径前缀（拼接在对象key前面,组成新的key,拼接后不能超过1024个字符）。
+
+        :return: The save_prefix of this DstNodeResp.
+        :rtype: str
+        """
+        return self._save_prefix
+
+    @save_prefix.setter
+    def save_prefix(self, save_prefix):
+        """Sets the save_prefix of this DstNodeResp.
+
+        目的端桶内路径前缀（拼接在对象key前面,组成新的key,拼接后不能超过1024个字符）。
+
+        :param save_prefix: The save_prefix of this DstNodeResp.
+        :type: str
+        """
+        self._save_prefix = save_prefix
 
     def to_dict(self):
         """Returns the model properties as a dict"""

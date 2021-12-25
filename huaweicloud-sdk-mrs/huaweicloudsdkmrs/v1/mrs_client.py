@@ -178,6 +178,69 @@ class MrsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_and_execute_job(self, request):
+        """新增作业并执行
+
+        在MRS集群中新增一个作业，并执行作业。该接口不兼容Sahara。 集群ID可参考[查询集群列表](https://support.huaweicloud.com/api-mrs/ListClusters.html)接口获取。
+
+        :param CreateAndExecuteJobRequest request
+        :return: CreateAndExecuteJobResponse
+        """
+        return self.create_and_execute_job_with_http_info(request)
+
+    def create_and_execute_job_with_http_info(self, request):
+        """新增作业并执行
+
+        在MRS集群中新增一个作业，并执行作业。该接口不兼容Sahara。 集群ID可参考[查询集群列表](https://support.huaweicloud.com/api-mrs/ListClusters.html)接口获取。
+
+        :param CreateAndExecuteJobRequest request
+        :return: CreateAndExecuteJobResponse
+        """
+
+        all_params = ['submit_job_req_v11']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/{project_id}/jobs/submit-job',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateAndExecuteJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_cluster(self, request):
         """创建集群并执行作业
 
@@ -306,6 +369,71 @@ class MrsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_scaling_policy(self, request):
+        """配置弹性伸缩规则
+
+        对弹性伸缩规则进行编辑。  在创建集群并执行作业接口中也可以创建弹性伸缩规则。
+
+        :param CreateScalingPolicyRequest request
+        :return: CreateScalingPolicyResponse
+        """
+        return self.create_scaling_policy_with_http_info(request)
+
+    def create_scaling_policy_with_http_info(self, request):
+        """配置弹性伸缩规则
+
+        对弹性伸缩规则进行编辑。  在创建集群并执行作业接口中也可以创建弹性伸缩规则。
+
+        :param CreateScalingPolicyRequest request
+        :return: CreateScalingPolicyResponse
+        """
+
+        all_params = ['cluster_id', 'auto_scaling_policy_req_v11']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/{project_id}/autoscaling-policy/{cluster_id}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateScalingPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_cluster(self, request):
         """删除集群
 
@@ -428,6 +556,69 @@ class MrsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteClusterTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_job_execution(self, request):
+        """删除作业执行对象
+
+        删除指定的作业执行对象。该接口兼容Sahara。
+
+        :param DeleteJobExecutionRequest request
+        :return: DeleteJobExecutionResponse
+        """
+        return self.delete_job_execution_with_http_info(request)
+
+    def delete_job_execution_with_http_info(self, request):
+        """删除作业执行对象
+
+        删除指定的作业执行对象。该接口兼容Sahara。
+
+        :param DeleteJobExecutionRequest request
+        :return: DeleteJobExecutionResponse
+        """
+
+        all_params = ['job_execution_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_execution_id' in local_var_params:
+            path_params['job_execution_id'] = local_var_params['job_execution_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/{project_id}/job-executions/{job_execution_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteJobExecutionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -688,6 +879,337 @@ class MrsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListClustersByTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_execute_job(self, request):
+        """查询作业exe对象列表
+
+        查询所有作业的exe对象列表。该接口不兼容Sahara。
+
+        :param ListExecuteJobRequest request
+        :return: ListExecuteJobResponse
+        """
+        return self.list_execute_job_with_http_info(request)
+
+    def list_execute_job_with_http_info(self, request):
+        """查询作业exe对象列表
+
+        查询所有作业的exe对象列表。该接口不兼容Sahara。
+
+        :param ListExecuteJobRequest request
+        :return: ListExecuteJobResponse
+        """
+
+        all_params = ['cluster_id', 'page_size', 'current_page', 'job_name', 'state', 'id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'current_page' in local_var_params:
+            query_params.append(('current_page', local_var_params['current_page']))
+        if 'job_name' in local_var_params:
+            query_params.append(('job_name', local_var_params['job_name']))
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/{project_id}/job-exes',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListExecuteJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_hosts(self, request):
+        """查询主机列表
+
+        该接口用于查询输入集群的主机列表详情。
+
+        :param ListHostsRequest request
+        :return: ListHostsResponse
+        """
+        return self.list_hosts_with_http_info(request)
+
+    def list_hosts_with_http_info(self, request):
+        """查询主机列表
+
+        该接口用于查询输入集群的主机列表详情。
+
+        :param ListHostsRequest request
+        :return: ListHostsResponse
+        """
+
+        all_params = ['cluster_id', 'page_size', 'current_page']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'page_size' in local_var_params:
+            query_params.append(('pageSize', local_var_params['page_size']))
+        if 'current_page' in local_var_params:
+            query_params.append(('currentPage', local_var_params['current_page']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/hosts',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListHostsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_cluster_details(self, request):
+        """查询集群详情
+
+        查看指定集群的详细信息。该接口不兼容Sahara。
+
+        :param ShowClusterDetailsRequest request
+        :return: ShowClusterDetailsResponse
+        """
+        return self.show_cluster_details_with_http_info(request)
+
+    def show_cluster_details_with_http_info(self, request):
+        """查询集群详情
+
+        查看指定集群的详细信息。该接口不兼容Sahara。
+
+        :param ShowClusterDetailsRequest request
+        :return: ShowClusterDetailsResponse
+        """
+
+        all_params = ['cluster_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/{project_id}/cluster_infos/{cluster_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowClusterDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_job_exes(self, request):
+        """查询作业exe对象详情
+
+        查询指定作业的exe对象详细信息。该接口不兼容Sahara。
+
+        :param ShowJobExesRequest request
+        :return: ShowJobExesResponse
+        """
+        return self.show_job_exes_with_http_info(request)
+
+    def show_job_exes_with_http_info(self, request):
+        """查询作业exe对象详情
+
+        查询指定作业的exe对象详细信息。该接口不兼容Sahara。
+
+        :param ShowJobExesRequest request
+        :return: ShowJobExesResponse
+        """
+
+        all_params = ['job_exe_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_exe_id' in local_var_params:
+            path_params['job_exe_id'] = local_var_params['job_exe_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/{project_id}/job-exes/{job_exe_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowJobExesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_cluster_scaling(self, request):
+        """调整集群节点
+
+        创建集群后，扩容/缩容集群Core节点或者Task节点。MRS集群创建成功后不支持调整Master节点数量，即不支持扩缩容Master节点。该接口不兼容Sahara。 处于running状态的集群才允许扩容/缩容，其他状态则不允许扩容/缩容。 集群状态和集群ID可参考[查询集群列表](https://support.huaweicloud.com/api-mrs/ListClusters.html)接口获取。
+
+        :param UpdateClusterScalingRequest request
+        :return: UpdateClusterScalingResponse
+        """
+        return self.update_cluster_scaling_with_http_info(request)
+
+    def update_cluster_scaling_with_http_info(self, request):
+        """调整集群节点
+
+        创建集群后，扩容/缩容集群Core节点或者Task节点。MRS集群创建成功后不支持调整Master节点数量，即不支持扩缩容Master节点。该接口不兼容Sahara。 处于running状态的集群才允许扩容/缩容，其他状态则不允许扩容/缩容。 集群状态和集群ID可参考[查询集群列表](https://support.huaweicloud.com/api-mrs/ListClusters.html)接口获取。
+
+        :param UpdateClusterScalingRequest request
+        :return: UpdateClusterScalingResponse
+        """
+
+        all_params = ['cluster_id', 'cluster_scaling_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/{project_id}/cluster_infos/{cluster_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateClusterScalingResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

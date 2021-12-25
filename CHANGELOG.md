@@ -1,3 +1,245 @@
+# 3.0.73 2021-12-25
+
+### HuaweiCloud SDK CDM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `id` to the interface `CreateLink`
+  - Add the response parameters `endpointDomainName`, `isScheduleBootOff`, `failedReasons`, `components`, `createFrom`, `resourceId`, `flavorType`, `workSpaceId`, `trial` to the interface `ShowClusterDetail`
+  - Add the request parameters `is_incre_job`, `flag`, `files_read`, `external_id`, `type`, `execute_start_date`, `delete_rows`, `enabled`, `bytes_written`, `id`, `is_use_sql`, `update_rows`, `group_name`, `bytes_read`, `execute_update_date`, `write_rows`, `files_writte`, `is_incrementing`, `execute_create_date`, `id`, `type`, `id`, `type`, `id`, `type` to the interface `UpdateJob`
+  - Add the response parameters `is_incre_job`, `flag`, `files_read`, `external_id`, `type`, `execute_start_date`, `delete_rows`, `enabled`, `bytes_written`, `id`, `is_use_sql`, `update_rows`, `group_name`, `bytes_read`, `execute_update_date`, `write_rows`, `files_writte`, `is_incrementing`, `execute_create_date`, `id`, `type`, `id`, `type`, `id`, `type` to the interface `ShowJobs`
+  - Changes of the interface `CreateAndStartRandomClusterJob`:
+    - Add the request parameters `is_incre_job`, `flag`, `files_read`, `external_id`, `type`, `execute_start_date`, `delete_rows`, `enabled`, `bytes_written`, `id`, `is_use_sql`, `update_rows`, `group_name`, `bytes_read`, `execute_update_date`, `write_rows`, `files_writte`, `is_incrementing`, `execute_create_date`, `id`, `type`, `id`, `type`, `id`, `type`
+    - Add the response parameter `submissions`
+    - Remove the response parameters `name`, `validation-result`
+  - Add the request parameters `is_incre_job`, `flag`, `files_read`, `external_id`, `type`, `execute_start_date`, `delete_rows`, `enabled`, `bytes_written`, `id`, `is_use_sql`, `update_rows`, `group_name`, `bytes_read`, `execute_update_date`, `write_rows`, `files_writte`, `is_incrementing`, `execute_create_date`, `id`, `type`, `id`, `type`, `id`, `type` to the interface `CreateJob`
+  - Add the response parameter `execute-date` to the interface `StartJob`
+  - Add the request parameter `id` to the interface `UpdateLink`
+  - Add the response parameter `id` to the interface `ShowLink`
+  - Changes of the interface `ListClusters`:
+    - Add the response parameters `bakExpectedStartTime`, `bakKeepDay`, `createFrom`, `resourceId`, `flavorType`, `workSpaceId`, `trial`, `components`
+    - Remove the response parameter `version`
+
+### HuaweiCloud SDK CloudBuild
+
+- _Features_
+  - Support the interface `ShowHistoryDetails`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Cloudtest
+
+- _Features_
+  - Support the interfaces `ShowPlanJournals`, `ShowIssuesByPlanId`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CodeCheck
+
+- _Features_
+  - Support the interfaces `CheckParameters`, `ListTaskParameter`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `rule_desc` to the interface `ListRules`
+  - Add the response parameters `is_devcloud_project_default`, `is_default_template` to the interface `ListRulesets`
+
+### HuaweiCloud SDK CodeHub
+
+- _Features_
+  - Support the service `CodeHub`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `backup_format` to the interface `CopyInstance`
+
+### HuaweiCloud SDK DevStar
+
+- _Features_
+  - Support the following interfaces：
+    - `ShowApplicationV3`
+    - `UpdateApplication`
+    - `ShowApplicationDependentResources`
+    - `DeleteApplicationV4`
+    - `ShowApplicationResDeleteStatus`
+    - `ListApplicationsV6`
+    - `ShowDeploymentJobs`
+    - `CreateDeploymentJobs`
+    - `ShowPipelineLastStatusV2`
+    - `ListPipelineTemplates`
+    - `StartPipeline`
+    - `ListProjectsV4`
+    - `ShowRepositoryStatisticalDataV2`
+    - `CheckRepositoryDuplicateName`
+    - `ShowApplicationReleaseRepositories`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `dependents` to the interface `ShowTemplateV3`
+  - Add the response parameters `dependents`, `dependent_services` to the interface `ListTemplatesV2`
+  - Add the response parameter `show_type` to the interface `ShowJobDetail`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameter `updated_at` from the interface `NovaListServerActions`
+
+### HuaweiCloud SDK IEF
+
+- _Features_
+  - Support the service `Intelligent EdgeFabric`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IoTAnalytics
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateDatasource`:
+    - Add the request parameter `site_id`
+    - Remove the request parameter `instance_id`
+  - Changes of the interface `ShowAllDataSource`:
+    - Add the response parameter `site_id`
+    - Remove the response parameter `instance_id`
+  - Changes of the interface `UpdateDataSource`:
+    - Add the request parameter `site_id`
+    - Add the response parameter `site_id`
+    - Remove the request parameter `instance_id`
+    - Remove the response parameter `instance_id`
+  - Changes of the interface `ShowDataSource`:
+    - Add the response parameter `site_id`
+    - Remove the response parameter `instance_id`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `partition_num` changed to not required of the interface `CreatePostPaidInstance`
+  - Add the response parameters `result`, `instance_id` to the interface `RestartManager`
+  - Changes of the interface `ListProducts`:
+    - Add the response parameters `hourly`, `honthly`
+    - Remove the response parameters `Hourly`, `Monthly`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `offset`, `limit` to the interface `ListCharts`
+  - Add the request parameters `offset`, `limit` to the interface `ListNotificationTemplates`
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateTranscodingTask`:
+    - Add the request parameter `auto_volume_setting`
+    - Add the enum values `original` to the request parameter `volume`
+  - Add the response parameter `av_parameters` to the interface `ListTranscodingTask`
+  - Add the request parameter `template_id` to the interface `CreateWatermarkTemplate`
+  - Add the response parameter `template_id` to the interface `ListWatermarkTemplate`
+  - Add the request parameter `template_id` to the interface `UpdateWatermarkTemplate`
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - Support the following interfaces：
+    - `CreateScalingPolicy`
+    - `ShowClusterDetails`
+    - `UpdateClusterScaling`
+    - `ListHosts`
+    - `CreateAndExecuteJob`
+    - `ListExecuteJob`
+    - `ShowJobExes`
+    - `DeleteJobExecution`
+    - `CreateCluster`
+    - `ShowAgencyMapping`
+    - `UpdateAgencyMapping`
+    - `ShowJobExeListNew`
+    - `CreateExecuteJob`
+    - `ShowSingleJobExe`
+    - `StopJob`
+    - `ShowSqlResultWithJob`
+    - `BatchDeleteJobs`
+    - `ExecuteSql`
+    - `ShowSqlResult`
+    - `CancelSql`
+    - `ShowHdfsFileList`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `group_type`, `success_record_error_reason`, `skip_record_error_reason`, `save_prefix` to the interface `ListTasks`
+  - Add the response parameters `group_type`, `success_record_error_reason`, `skip_record_error_reason`, `save_prefix` to the interface `ShowTask`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `ListApiVersion`, `ShowApiVersion`, `SearchQueryScaleComputeFlavors`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ROMA
+
+- _Features_
+  - Support the service `ROMA Connect`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SA
+
+- _Features_
+  - Support the service `Situation Awareness`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.0.72 2021-12-17
 
 ### HuaweiCloud SDK CCE

@@ -22,23 +22,32 @@ class LinksLinkconfigvalues:
     sensitive_list = []
 
     openapi_types = {
-        'configs': 'list[Configs]'
+        'configs': 'list[Configs]',
+        'extended_configs': 'LinksLinkconfigvaluesExtendedconfigs',
+        'validators': 'list[str]'
     }
 
     attribute_map = {
-        'configs': 'configs'
+        'configs': 'configs',
+        'extended_configs': 'extended-configs',
+        'validators': 'validators'
     }
 
-    def __init__(self, configs=None):
+    def __init__(self, configs=None, extended_configs=None, validators=None):
         """LinksLinkconfigvalues - a model defined in huaweicloud sdk"""
         
         
 
         self._configs = None
+        self._extended_configs = None
+        self._validators = None
         self.discriminator = None
 
-        if configs is not None:
-            self.configs = configs
+        self.configs = configs
+        if extended_configs is not None:
+            self.extended_configs = extended_configs
+        if validators is not None:
+            self.validators = validators
 
     @property
     def configs(self):
@@ -61,6 +70,48 @@ class LinksLinkconfigvalues:
         :type: list[Configs]
         """
         self._configs = configs
+
+    @property
+    def extended_configs(self):
+        """Gets the extended_configs of this LinksLinkconfigvalues.
+
+
+        :return: The extended_configs of this LinksLinkconfigvalues.
+        :rtype: LinksLinkconfigvaluesExtendedconfigs
+        """
+        return self._extended_configs
+
+    @extended_configs.setter
+    def extended_configs(self, extended_configs):
+        """Sets the extended_configs of this LinksLinkconfigvalues.
+
+
+        :param extended_configs: The extended_configs of this LinksLinkconfigvalues.
+        :type: LinksLinkconfigvaluesExtendedconfigs
+        """
+        self._extended_configs = extended_configs
+
+    @property
+    def validators(self):
+        """Gets the validators of this LinksLinkconfigvalues.
+
+        校验器
+
+        :return: The validators of this LinksLinkconfigvalues.
+        :rtype: list[str]
+        """
+        return self._validators
+
+    @validators.setter
+    def validators(self, validators):
+        """Sets the validators of this LinksLinkconfigvalues.
+
+        校验器
+
+        :param validators: The validators of this LinksLinkconfigvalues.
+        :type: list[str]
+        """
+        self._validators = validators
 
     def to_dict(self):
         """Returns the model properties as a dict"""

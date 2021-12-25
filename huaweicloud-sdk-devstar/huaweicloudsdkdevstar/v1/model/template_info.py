@@ -57,7 +57,9 @@ class TemplateInfo:
         'deployment': 'object',
         'update_id': 'str',
         'is_support_cloudide': 'bool',
-        'has_notices': 'bool'
+        'has_notices': 'bool',
+        'dependents': 'list[Dependent]',
+        'dependent_services': 'str'
     }
 
     attribute_map = {
@@ -96,10 +98,12 @@ class TemplateInfo:
         'deployment': 'deployment',
         'update_id': 'update_id',
         'is_support_cloudide': 'is_support_cloudide',
-        'has_notices': 'has_notices'
+        'has_notices': 'has_notices',
+        'dependents': 'dependents',
+        'dependent_services': 'dependent_services'
     }
 
-    def __init__(self, id=None, title=None, description=None, productshorts=None, products=None, topic=None, creator_id=None, creator=None, nickname=None, score=None, label=None, store=None, store_info=None, status=None, view_count=None, usage_count=None, created_at=None, updated_at=None, published_at=None, favorite_state=None, tags=None, type=None, is_static=None, maintainers=None, pipeline_template=None, platform_source=None, references=None, properties=None, dependencies=None, dependency_type=None, forum_id=None, file_size=None, deployment=None, update_id=None, is_support_cloudide=None, has_notices=None):
+    def __init__(self, id=None, title=None, description=None, productshorts=None, products=None, topic=None, creator_id=None, creator=None, nickname=None, score=None, label=None, store=None, store_info=None, status=None, view_count=None, usage_count=None, created_at=None, updated_at=None, published_at=None, favorite_state=None, tags=None, type=None, is_static=None, maintainers=None, pipeline_template=None, platform_source=None, references=None, properties=None, dependencies=None, dependency_type=None, forum_id=None, file_size=None, deployment=None, update_id=None, is_support_cloudide=None, has_notices=None, dependents=None, dependent_services=None):
         """TemplateInfo - a model defined in huaweicloud sdk"""
         
         
@@ -140,6 +144,8 @@ class TemplateInfo:
         self._update_id = None
         self._is_support_cloudide = None
         self._has_notices = None
+        self._dependents = None
+        self._dependent_services = None
         self.discriminator = None
 
         if id is not None:
@@ -214,6 +220,10 @@ class TemplateInfo:
             self.is_support_cloudide = is_support_cloudide
         if has_notices is not None:
             self.has_notices = has_notices
+        if dependents is not None:
+            self.dependents = dependents
+        if dependent_services is not None:
+            self.dependent_services = dependent_services
 
     @property
     def id(self):
@@ -1004,6 +1014,50 @@ class TemplateInfo:
         :type: bool
         """
         self._has_notices = has_notices
+
+    @property
+    def dependents(self):
+        """Gets the dependents of this TemplateInfo.
+
+        模板部署方式依赖信息
+
+        :return: The dependents of this TemplateInfo.
+        :rtype: list[Dependent]
+        """
+        return self._dependents
+
+    @dependents.setter
+    def dependents(self, dependents):
+        """Sets the dependents of this TemplateInfo.
+
+        模板部署方式依赖信息
+
+        :param dependents: The dependents of this TemplateInfo.
+        :type: list[Dependent]
+        """
+        self._dependents = dependents
+
+    @property
+    def dependent_services(self):
+        """Gets the dependent_services of this TemplateInfo.
+
+        模板关联云服务。
+
+        :return: The dependent_services of this TemplateInfo.
+        :rtype: str
+        """
+        return self._dependent_services
+
+    @dependent_services.setter
+    def dependent_services(self, dependent_services):
+        """Sets the dependent_services of this TemplateInfo.
+
+        模板关联云服务。
+
+        :param dependent_services: The dependent_services of this TemplateInfo.
+        :type: str
+        """
+        self._dependent_services = dependent_services
 
     def to_dict(self):
         """Returns the model properties as a dict"""

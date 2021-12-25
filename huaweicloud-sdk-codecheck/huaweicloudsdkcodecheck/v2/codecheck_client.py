@@ -48,6 +48,75 @@ class CodeCheckClient(Client):
 
         return ClientBuilder(clazz)
 
+    def check_parameters(self, request):
+        """查询任务规则集的检查参数
+
+        查询任务规则集的检查参数
+
+        :param CheckParametersRequest request
+        :return: CheckParametersResponse
+        """
+        return self.check_parameters_with_http_info(request)
+
+    def check_parameters_with_http_info(self, request):
+        """查询任务规则集的检查参数
+
+        查询任务规则集的检查参数
+
+        :param CheckParametersRequest request
+        :return: CheckParametersResponse
+        """
+
+        all_params = ['project_id', 'task_id', 'ruleset_id', 'language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+        if 'ruleset_id' in local_var_params:
+            path_params['ruleset_id'] = local_var_params['ruleset_id']
+
+        query_params = []
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/tasks/{task_id}/ruleset/{ruleset_id}/check-parameters',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CheckParametersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_ruleset(self, request):
         """创建自定义规则集
 
@@ -371,6 +440,73 @@ class CodeCheckClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListRulesetsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_task_parameter(self, request):
+        """任务配置检查参数
+
+        任务配置检查参数
+
+        :param ListTaskParameterRequest request
+        :return: ListTaskParameterResponse
+        """
+        return self.list_task_parameter_with_http_info(request)
+
+    def list_task_parameter_with_http_info(self, request):
+        """任务配置检查参数
+
+        任务配置检查参数
+
+        :param ListTaskParameterRequest request
+        :return: ListTaskParameterResponse
+        """
+
+        all_params = ['project_id', 'task_id', 'list_task_parameter_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/tasks/{task_id}/config-parameters',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTaskParameterResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

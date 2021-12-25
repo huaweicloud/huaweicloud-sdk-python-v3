@@ -22,16 +22,72 @@ class RestartManagerResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'result': 'str',
+        'instance_id': 'str'
     }
 
     attribute_map = {
+        'result': 'result',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self):
+    def __init__(self, result=None, instance_id=None):
         """RestartManagerResponse - a model defined in huaweicloud sdk"""
         
         super(RestartManagerResponse, self).__init__()
+
+        self._result = None
+        self._instance_id = None
         self.discriminator = None
+
+        if result is not None:
+            self.result = result
+        if instance_id is not None:
+            self.instance_id = instance_id
+
+    @property
+    def result(self):
+        """Gets the result of this RestartManagerResponse.
+
+        执行结果。
+
+        :return: The result of this RestartManagerResponse.
+        :rtype: str
+        """
+        return self._result
+
+    @result.setter
+    def result(self, result):
+        """Sets the result of this RestartManagerResponse.
+
+        执行结果。
+
+        :param result: The result of this RestartManagerResponse.
+        :type: str
+        """
+        self._result = result
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this RestartManagerResponse.
+
+        实例ID。
+
+        :return: The instance_id of this RestartManagerResponse.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this RestartManagerResponse.
+
+        实例ID。
+
+        :param instance_id: The instance_id of this RestartManagerResponse.
+        :type: str
+        """
+        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

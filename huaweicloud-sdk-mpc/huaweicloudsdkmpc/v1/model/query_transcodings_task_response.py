@@ -37,7 +37,8 @@ class QueryTranscodingsTaskResponse:
         'transcode_detail': 'TranscodeDetail',
         'thumbnail_output': 'ObsObjInfo',
         'thumbnail_outputname': 'str',
-        'pic_info': 'list[PicInfo]'
+        'pic_info': 'list[PicInfo]',
+        'av_parameters': 'list[AvParameters]'
     }
 
     attribute_map = {
@@ -56,10 +57,11 @@ class QueryTranscodingsTaskResponse:
         'transcode_detail': 'transcode_detail',
         'thumbnail_output': 'thumbnail_output',
         'thumbnail_outputname': 'thumbnail_outputname',
-        'pic_info': 'pic_info'
+        'pic_info': 'pic_info',
+        'av_parameters': 'av_parameters'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None):
+    def __init__(self, task_id=None, status=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, av_parameters=None):
         """QueryTranscodingsTaskResponse - a model defined in huaweicloud sdk"""
         
         
@@ -80,6 +82,7 @@ class QueryTranscodingsTaskResponse:
         self._thumbnail_output = None
         self._thumbnail_outputname = None
         self._pic_info = None
+        self._av_parameters = None
         self.discriminator = None
 
         if task_id is not None:
@@ -114,6 +117,8 @@ class QueryTranscodingsTaskResponse:
             self.thumbnail_outputname = thumbnail_outputname
         if pic_info is not None:
             self.pic_info = pic_info
+        if av_parameters is not None:
+            self.av_parameters = av_parameters
 
     @property
     def task_id(self):
@@ -458,6 +463,28 @@ class QueryTranscodingsTaskResponse:
         :type: list[PicInfo]
         """
         self._pic_info = pic_info
+
+    @property
+    def av_parameters(self):
+        """Gets the av_parameters of this QueryTranscodingsTaskResponse.
+
+        转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
+
+        :return: The av_parameters of this QueryTranscodingsTaskResponse.
+        :rtype: list[AvParameters]
+        """
+        return self._av_parameters
+
+    @av_parameters.setter
+    def av_parameters(self, av_parameters):
+        """Sets the av_parameters of this QueryTranscodingsTaskResponse.
+
+        转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
+
+        :param av_parameters: The av_parameters of this QueryTranscodingsTaskResponse.
+        :type: list[AvParameters]
+        """
+        self._av_parameters = av_parameters
 
     def to_dict(self):
         """Returns the model properties as a dict"""

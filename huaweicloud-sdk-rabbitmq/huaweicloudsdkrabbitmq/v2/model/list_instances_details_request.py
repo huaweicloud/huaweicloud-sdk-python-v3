@@ -140,7 +140,7 @@ class ListInstancesDetailsRequest:
     def status(self):
         """Gets the status of this ListInstancesDetailsRequest.
 
-        实例状态。详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-rabbitmq/rabbitmq-api-180514012.html)。
+        实例状态。
 
         :return: The status of this ListInstancesDetailsRequest.
         :rtype: str
@@ -151,7 +151,7 @@ class ListInstancesDetailsRequest:
     def status(self, status):
         """Sets the status of this ListInstancesDetailsRequest.
 
-        实例状态。详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-rabbitmq/rabbitmq-api-180514012.html)。
+        实例状态。
 
         :param status: The status of this ListInstancesDetailsRequest.
         :type: str

@@ -6,6 +6,11 @@ from __future__ import absolute_import
 from huaweicloudsdkcodecheck.v2.codecheck_client import CodeCheckClient
 from huaweicloudsdkcodecheck.v2.codecheck_async_client import CodeCheckAsyncClient
 # import models into sdk package
+from huaweicloudsdkcodecheck.v2.model.check_configs_item import CheckConfigsItem
+from huaweicloudsdkcodecheck.v2.model.check_parameters_request import CheckParametersRequest
+from huaweicloudsdkcodecheck.v2.model.check_parameters_res import CheckParametersRes
+from huaweicloudsdkcodecheck.v2.model.check_parameters_response import CheckParametersResponse
+from huaweicloudsdkcodecheck.v2.model.config_task_parameter_body import ConfigTaskParameterBody
 from huaweicloudsdkcodecheck.v2.model.create_ruleset_request import CreateRulesetRequest
 from huaweicloudsdkcodecheck.v2.model.create_ruleset_response import CreateRulesetResponse
 from huaweicloudsdkcodecheck.v2.model.create_task_request import CreateTaskRequest
@@ -20,6 +25,8 @@ from huaweicloudsdkcodecheck.v2.model.list_rules_request import ListRulesRequest
 from huaweicloudsdkcodecheck.v2.model.list_rules_response import ListRulesResponse
 from huaweicloudsdkcodecheck.v2.model.list_rulesets_request import ListRulesetsRequest
 from huaweicloudsdkcodecheck.v2.model.list_rulesets_response import ListRulesetsResponse
+from huaweicloudsdkcodecheck.v2.model.list_task_parameter_request import ListTaskParameterRequest
+from huaweicloudsdkcodecheck.v2.model.list_task_parameter_response import ListTaskParameterResponse
 from huaweicloudsdkcodecheck.v2.model.list_task_ruleset_request import ListTaskRulesetRequest
 from huaweicloudsdkcodecheck.v2.model.list_task_ruleset_res import ListTaskRulesetRes
 from huaweicloudsdkcodecheck.v2.model.list_task_ruleset_response import ListTaskRulesetResponse
@@ -52,6 +59,7 @@ from huaweicloudsdkcodecheck.v2.model.statistic_severity_v2 import StatisticSeve
 from huaweicloudsdkcodecheck.v2.model.statistic_status_v2 import StatisticStatusV2
 from huaweicloudsdkcodecheck.v2.model.stop_task_by_id_request import StopTaskByIdRequest
 from huaweicloudsdkcodecheck.v2.model.stop_task_by_id_response import StopTaskByIdResponse
+from huaweicloudsdkcodecheck.v2.model.task_check_settings_item import TaskCheckSettingsItem
 from huaweicloudsdkcodecheck.v2.model.update_defect_request_body import UpdateDefectRequestBody
 from huaweicloudsdkcodecheck.v2.model.update_defect_status_request import UpdateDefectStatusRequest
 from huaweicloudsdkcodecheck.v2.model.update_defect_status_response import UpdateDefectStatusResponse

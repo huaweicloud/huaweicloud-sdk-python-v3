@@ -26,8 +26,7 @@ class RestoreToExistingInstanceRequestBodySource:
         'type': 'str',
         'backup_id': 'str',
         'restore_time': 'int',
-        'database_name': 'dict(str, str)',
-        'restore_all_database': 'bool'
+        'database_name': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -35,11 +34,10 @@ class RestoreToExistingInstanceRequestBodySource:
         'type': 'type',
         'backup_id': 'backup_id',
         'restore_time': 'restore_time',
-        'database_name': 'database_name',
-        'restore_all_database': 'restore_all_database'
+        'database_name': 'database_name'
     }
 
-    def __init__(self, instance_id=None, type=None, backup_id=None, restore_time=None, database_name=None, restore_all_database=None):
+    def __init__(self, instance_id=None, type=None, backup_id=None, restore_time=None, database_name=None):
         """RestoreToExistingInstanceRequestBodySource - a model defined in huaweicloud sdk"""
         
         
@@ -49,7 +47,6 @@ class RestoreToExistingInstanceRequestBodySource:
         self._backup_id = None
         self._restore_time = None
         self._database_name = None
-        self._restore_all_database = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -61,8 +58,6 @@ class RestoreToExistingInstanceRequestBodySource:
             self.restore_time = restore_time
         if database_name is not None:
             self.database_name = database_name
-        if restore_all_database is not None:
-            self.restore_all_database = restore_all_database
 
     @property
     def instance_id(self):
@@ -173,28 +168,6 @@ class RestoreToExistingInstanceRequestBodySource:
         :type: dict(str, str)
         """
         self._database_name = database_name
-
-    @property
-    def restore_all_database(self):
-        """Gets the restore_all_database of this RestoreToExistingInstanceRequestBodySource.
-
-        该字段仅适用于SQL Server引擎。是否恢复所有数据库，不填写该字段默认为false，不会恢复所有数据库到目标实例。 - 须知： 如果您想恢复所有数据库到已有实例，必须设置restore_all_database为true。
-
-        :return: The restore_all_database of this RestoreToExistingInstanceRequestBodySource.
-        :rtype: bool
-        """
-        return self._restore_all_database
-
-    @restore_all_database.setter
-    def restore_all_database(self, restore_all_database):
-        """Sets the restore_all_database of this RestoreToExistingInstanceRequestBodySource.
-
-        该字段仅适用于SQL Server引擎。是否恢复所有数据库，不填写该字段默认为false，不会恢复所有数据库到目标实例。 - 须知： 如果您想恢复所有数据库到已有实例，必须设置restore_all_database为true。
-
-        :param restore_all_database: The restore_all_database of this RestoreToExistingInstanceRequestBodySource.
-        :type: bool
-        """
-        self._restore_all_database = restore_all_database
 
     def to_dict(self):
         """Returns the model properties as a dict"""

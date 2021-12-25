@@ -29,7 +29,8 @@ class RuleListItem:
         'rule_tages': 'str',
         'right_example': 'str',
         'error_example': 'str',
-        'revise_opinion': 'str'
+        'revise_opinion': 'str',
+        'rule_desc': 'str'
     }
 
     attribute_map = {
@@ -40,10 +41,11 @@ class RuleListItem:
         'rule_tages': 'rule_tages',
         'right_example': 'right_example',
         'error_example': 'error_example',
-        'revise_opinion': 'revise_opinion'
+        'revise_opinion': 'revise_opinion',
+        'rule_desc': 'rule_desc'
     }
 
-    def __init__(self, rule_id=None, rule_language=None, rule_name=None, rule_severity=None, rule_tages=None, right_example=None, error_example=None, revise_opinion=None):
+    def __init__(self, rule_id=None, rule_language=None, rule_name=None, rule_severity=None, rule_tages=None, right_example=None, error_example=None, revise_opinion=None, rule_desc=None):
         """RuleListItem - a model defined in huaweicloud sdk"""
         
         
@@ -56,6 +58,7 @@ class RuleListItem:
         self._right_example = None
         self._error_example = None
         self._revise_opinion = None
+        self._rule_desc = None
         self.discriminator = None
 
         if rule_id is not None:
@@ -74,6 +77,8 @@ class RuleListItem:
             self.error_example = error_example
         if revise_opinion is not None:
             self.revise_opinion = revise_opinion
+        if rule_desc is not None:
+            self.rule_desc = rule_desc
 
     @property
     def rule_id(self):
@@ -250,6 +255,28 @@ class RuleListItem:
         :type: str
         """
         self._revise_opinion = revise_opinion
+
+    @property
+    def rule_desc(self):
+        """Gets the rule_desc of this RuleListItem.
+
+        规则描述
+
+        :return: The rule_desc of this RuleListItem.
+        :rtype: str
+        """
+        return self._rule_desc
+
+    @rule_desc.setter
+    def rule_desc(self, rule_desc):
+        """Sets the rule_desc of this RuleListItem.
+
+        规则描述
+
+        :param rule_desc: The rule_desc of this RuleListItem.
+        :type: str
+        """
+        self._rule_desc = rule_desc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

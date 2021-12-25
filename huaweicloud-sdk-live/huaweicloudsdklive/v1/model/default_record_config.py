@@ -62,7 +62,7 @@ class DefaultRecordConfig:
     def record_format(self):
         """Gets the record_format of this DefaultRecordConfig.
 
-        录制格式flv，hls，mp4
+        录制格式，当前支持：FLV，HLS，MP4三种格式，设置格式时必须使用大写字母
 
         :return: The record_format of this DefaultRecordConfig.
         :rtype: list[VideoFormatVar]
@@ -73,7 +73,7 @@ class DefaultRecordConfig:
     def record_format(self, record_format):
         """Sets the record_format of this DefaultRecordConfig.
 
-        录制格式flv，hls，mp4
+        录制格式，当前支持：FLV，HLS，MP4三种格式，设置格式时必须使用大写字母
 
         :param record_format: The record_format of this DefaultRecordConfig.
         :type: list[VideoFormatVar]

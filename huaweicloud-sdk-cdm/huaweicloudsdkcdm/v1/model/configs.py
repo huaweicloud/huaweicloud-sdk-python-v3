@@ -23,25 +23,33 @@ class Configs:
 
     openapi_types = {
         'inputs': 'list[Input]',
-        'name': 'str'
+        'name': 'str',
+        'id': 'int',
+        'type': 'str'
     }
 
     attribute_map = {
         'inputs': 'inputs',
-        'name': 'name'
+        'name': 'name',
+        'id': 'id',
+        'type': 'type'
     }
 
-    def __init__(self, inputs=None, name=None):
+    def __init__(self, inputs=None, name=None, id=None, type=None):
         """Configs - a model defined in huaweicloud sdk"""
         
         
 
         self._inputs = None
         self._name = None
+        self._id = None
+        self._type = None
         self.discriminator = None
 
         self.inputs = inputs
         self.name = name
+        self.id = id
+        self.type = type
 
     @property
     def inputs(self):
@@ -86,6 +94,50 @@ class Configs:
         :type: str
         """
         self._name = name
+
+    @property
+    def id(self):
+        """Gets the id of this Configs.
+
+        配置ID
+
+        :return: The id of this Configs.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this Configs.
+
+        配置ID
+
+        :param id: The id of this Configs.
+        :type: int
+        """
+        self._id = id
+
+    @property
+    def type(self):
+        """Gets the type of this Configs.
+
+        配置类型
+
+        :return: The type of this Configs.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this Configs.
+
+        配置类型
+
+        :param type: The type of this Configs.
+        :type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

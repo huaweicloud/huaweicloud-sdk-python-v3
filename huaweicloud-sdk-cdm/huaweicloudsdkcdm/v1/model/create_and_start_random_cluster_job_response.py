@@ -22,72 +22,45 @@ class CreateAndStartRandomClusterJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
-        'validation_result': 'list[JobValidationResult]'
+        'submissions': 'list[StartJobSubmission]'
     }
 
     attribute_map = {
-        'name': 'name',
-        'validation_result': 'validation-result'
+        'submissions': 'submissions'
     }
 
-    def __init__(self, name=None, validation_result=None):
+    def __init__(self, submissions=None):
         """CreateAndStartRandomClusterJobResponse - a model defined in huaweicloud sdk"""
         
         super(CreateAndStartRandomClusterJobResponse, self).__init__()
 
-        self._name = None
-        self._validation_result = None
+        self._submissions = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if validation_result is not None:
-            self.validation_result = validation_result
+        if submissions is not None:
+            self.submissions = submissions
 
     @property
-    def name(self):
-        """Gets the name of this CreateAndStartRandomClusterJobResponse.
+    def submissions(self):
+        """Gets the submissions of this CreateAndStartRandomClusterJobResponse.
 
-        作业名称。
+        作业运行信息，请参见submission参数说明
 
-        :return: The name of this CreateAndStartRandomClusterJobResponse.
-        :rtype: str
+        :return: The submissions of this CreateAndStartRandomClusterJobResponse.
+        :rtype: list[StartJobSubmission]
         """
-        return self._name
+        return self._submissions
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this CreateAndStartRandomClusterJobResponse.
+    @submissions.setter
+    def submissions(self, submissions):
+        """Sets the submissions of this CreateAndStartRandomClusterJobResponse.
 
-        作业名称。
+        作业运行信息，请参见submission参数说明
 
-        :param name: The name of this CreateAndStartRandomClusterJobResponse.
-        :type: str
+        :param submissions: The submissions of this CreateAndStartRandomClusterJobResponse.
+        :type: list[StartJobSubmission]
         """
-        self._name = name
-
-    @property
-    def validation_result(self):
-        """Gets the validation_result of this CreateAndStartRandomClusterJobResponse.
-
-        校验结果： - 如果修改失败，返回失败原因。 - 如果修改成功，返回空列表。
-
-        :return: The validation_result of this CreateAndStartRandomClusterJobResponse.
-        :rtype: list[JobValidationResult]
-        """
-        return self._validation_result
-
-    @validation_result.setter
-    def validation_result(self, validation_result):
-        """Sets the validation_result of this CreateAndStartRandomClusterJobResponse.
-
-        校验结果： - 如果修改失败，返回失败原因。 - 如果修改成功，返回空列表。
-
-        :param validation_result: The validation_result of this CreateAndStartRandomClusterJobResponse.
-        :type: list[JobValidationResult]
-        """
-        self._validation_result = validation_result
+        self._submissions = submissions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

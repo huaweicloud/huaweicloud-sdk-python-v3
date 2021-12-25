@@ -30,6 +30,7 @@ class StartJobSubmission:
         'job_name': 'str',
         'creation_user': 'str',
         'creation_date': 'int',
+        'execute_date': 'int',
         'progress': 'int',
         'status': 'str',
         'is_stoping_increment': 'bool',
@@ -48,6 +49,7 @@ class StartJobSubmission:
         'job_name': 'job-name',
         'creation_user': 'creation-user',
         'creation_date': 'creation-date',
+        'execute_date': 'execute-date',
         'progress': 'progress',
         'status': 'status',
         'is_stoping_increment': 'isStopingIncrement',
@@ -57,7 +59,7 @@ class StartJobSubmission:
         'is_delete_job': 'isDeleteJob'
     }
 
-    def __init__(self, is_incrementing=None, delete_rows=None, update_rows=None, write_rows=None, submission_id=None, job_name=None, creation_user=None, creation_date=None, progress=None, status=None, is_stoping_increment=None, is_execute_auto=None, last_update_date=None, last_udpate_user=None, is_delete_job=None):
+    def __init__(self, is_incrementing=None, delete_rows=None, update_rows=None, write_rows=None, submission_id=None, job_name=None, creation_user=None, creation_date=None, execute_date=None, progress=None, status=None, is_stoping_increment=None, is_execute_auto=None, last_update_date=None, last_udpate_user=None, is_delete_job=None):
         """StartJobSubmission - a model defined in huaweicloud sdk"""
         
         
@@ -70,6 +72,7 @@ class StartJobSubmission:
         self._job_name = None
         self._creation_user = None
         self._creation_date = None
+        self._execute_date = None
         self._progress = None
         self._status = None
         self._is_stoping_increment = None
@@ -92,6 +95,8 @@ class StartJobSubmission:
         self.job_name = job_name
         self.creation_user = creation_user
         self.creation_date = creation_date
+        if execute_date is not None:
+            self.execute_date = execute_date
         self.progress = progress
         self.status = status
         if is_stoping_increment is not None:
@@ -280,6 +285,28 @@ class StartJobSubmission:
         :type: int
         """
         self._creation_date = creation_date
+
+    @property
+    def execute_date(self):
+        """Gets the execute_date of this StartJobSubmission.
+
+        执行时间
+
+        :return: The execute_date of this StartJobSubmission.
+        :rtype: int
+        """
+        return self._execute_date
+
+    @execute_date.setter
+    def execute_date(self, execute_date):
+        """Sets the execute_date of this StartJobSubmission.
+
+        执行时间
+
+        :param execute_date: The execute_date of this StartJobSubmission.
+        :type: int
+        """
+        self._execute_date = execute_date
 
     @property
     def progress(self):

@@ -30,6 +30,7 @@ class ClusterDetailInstance:
         'id': 'str',
         'name': 'str',
         'is_frozen': 'str',
+        'components': 'str',
         'config_status': 'str',
         'role': 'str',
         'group': 'str',
@@ -54,6 +55,7 @@ class ClusterDetailInstance:
         'id': 'id',
         'name': 'name',
         'is_frozen': 'isFrozen',
+        'components': 'components',
         'config_status': 'config_status',
         'role': 'role',
         'group': 'group',
@@ -69,7 +71,7 @@ class ClusterDetailInstance:
         'resource': 'resource'
     }
 
-    def __init__(self, flavor=None, volume=None, status=None, actions=None, type=None, id=None, name=None, is_frozen=None, config_status=None, role=None, group=None, links=None, params_group_id=None, public_ip=None, manage_ip=None, traffic_ip=None, shard_id=None, manage_fix_ip=None, private_ip=None, internal_ip=None, resource=None):
+    def __init__(self, flavor=None, volume=None, status=None, actions=None, type=None, id=None, name=None, is_frozen=None, components=None, config_status=None, role=None, group=None, links=None, params_group_id=None, public_ip=None, manage_ip=None, traffic_ip=None, shard_id=None, manage_fix_ip=None, private_ip=None, internal_ip=None, resource=None):
         """ClusterDetailInstance - a model defined in huaweicloud sdk"""
         
         
@@ -82,6 +84,7 @@ class ClusterDetailInstance:
         self._id = None
         self._name = None
         self._is_frozen = None
+        self._components = None
         self._config_status = None
         self._role = None
         self._group = None
@@ -106,6 +109,8 @@ class ClusterDetailInstance:
         self.id = id
         self.name = name
         self.is_frozen = is_frozen
+        if components is not None:
+            self.components = components
         if config_status is not None:
             self.config_status = config_status
         if role is not None:
@@ -304,6 +309,28 @@ class ClusterDetailInstance:
         :type: str
         """
         self._is_frozen = is_frozen
+
+    @property
+    def components(self):
+        """Gets the components of this ClusterDetailInstance.
+
+        组件
+
+        :return: The components of this ClusterDetailInstance.
+        :rtype: str
+        """
+        return self._components
+
+    @components.setter
+    def components(self, components):
+        """Sets the components of this ClusterDetailInstance.
+
+        组件
+
+        :param components: The components of this ClusterDetailInstance.
+        :type: str
+        """
+        self._components = components
 
     @property
     def config_status(self):

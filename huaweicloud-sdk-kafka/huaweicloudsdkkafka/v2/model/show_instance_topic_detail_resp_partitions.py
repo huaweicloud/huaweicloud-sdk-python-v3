@@ -184,7 +184,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def last_update_timestamp(self):
         """Gets the last_update_timestamp of this ShowInstanceTopicDetailRespPartitions.
 
-        分区上次写入消息的时间。
+        分区上次写入消息的时间。  格式为Unix时间戳。  单位：毫秒。
 
         :return: The last_update_timestamp of this ShowInstanceTopicDetailRespPartitions.
         :rtype: int
@@ -195,7 +195,7 @@ class ShowInstanceTopicDetailRespPartitions:
     def last_update_timestamp(self, last_update_timestamp):
         """Sets the last_update_timestamp of this ShowInstanceTopicDetailRespPartitions.
 
-        分区上次写入消息的时间。
+        分区上次写入消息的时间。  格式为Unix时间戳。  单位：毫秒。
 
         :param last_update_timestamp: The last_update_timestamp of this ShowInstanceTopicDetailRespPartitions.
         :type: int

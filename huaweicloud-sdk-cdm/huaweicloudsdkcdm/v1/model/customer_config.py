@@ -26,7 +26,12 @@ class CustomerConfig:
         'cluster_name': 'str',
         'service_provider': 'str',
         'local_disk': 'str',
-        'ssl': 'str'
+        'ssl': 'str',
+        'create_from': 'str',
+        'resource_id': 'str',
+        'flavor_type': 'str',
+        'work_space_id': 'str',
+        'trial': 'str'
     }
 
     attribute_map = {
@@ -34,10 +39,15 @@ class CustomerConfig:
         'cluster_name': 'clusterName',
         'service_provider': 'serviceProvider',
         'local_disk': 'localDisk',
-        'ssl': 'ssl'
+        'ssl': 'ssl',
+        'create_from': 'createFrom',
+        'resource_id': 'resourceId',
+        'flavor_type': 'flavorType',
+        'work_space_id': 'workSpaceId',
+        'trial': 'trial'
     }
 
-    def __init__(self, failure_remind=None, cluster_name=None, service_provider=None, local_disk=None, ssl=None):
+    def __init__(self, failure_remind=None, cluster_name=None, service_provider=None, local_disk=None, ssl=None, create_from=None, resource_id=None, flavor_type=None, work_space_id=None, trial=None):
         """CustomerConfig - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +57,11 @@ class CustomerConfig:
         self._service_provider = None
         self._local_disk = None
         self._ssl = None
+        self._create_from = None
+        self._resource_id = None
+        self._flavor_type = None
+        self._work_space_id = None
+        self._trial = None
         self.discriminator = None
 
         if failure_remind is not None:
@@ -59,6 +74,16 @@ class CustomerConfig:
             self.local_disk = local_disk
         if ssl is not None:
             self.ssl = ssl
+        if create_from is not None:
+            self.create_from = create_from
+        if resource_id is not None:
+            self.resource_id = resource_id
+        if flavor_type is not None:
+            self.flavor_type = flavor_type
+        if work_space_id is not None:
+            self.work_space_id = work_space_id
+        if trial is not None:
+            self.trial = trial
 
     @property
     def failure_remind(self):
@@ -169,6 +194,116 @@ class CustomerConfig:
         :type: str
         """
         self._ssl = ssl
+
+    @property
+    def create_from(self):
+        """Gets the create_from of this CustomerConfig.
+
+        创建来源
+
+        :return: The create_from of this CustomerConfig.
+        :rtype: str
+        """
+        return self._create_from
+
+    @create_from.setter
+    def create_from(self, create_from):
+        """Sets the create_from of this CustomerConfig.
+
+        创建来源
+
+        :param create_from: The create_from of this CustomerConfig.
+        :type: str
+        """
+        self._create_from = create_from
+
+    @property
+    def resource_id(self):
+        """Gets the resource_id of this CustomerConfig.
+
+        资源ID
+
+        :return: The resource_id of this CustomerConfig.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        """Sets the resource_id of this CustomerConfig.
+
+        资源ID
+
+        :param resource_id: The resource_id of this CustomerConfig.
+        :type: str
+        """
+        self._resource_id = resource_id
+
+    @property
+    def flavor_type(self):
+        """Gets the flavor_type of this CustomerConfig.
+
+        规格类型
+
+        :return: The flavor_type of this CustomerConfig.
+        :rtype: str
+        """
+        return self._flavor_type
+
+    @flavor_type.setter
+    def flavor_type(self, flavor_type):
+        """Sets the flavor_type of this CustomerConfig.
+
+        规格类型
+
+        :param flavor_type: The flavor_type of this CustomerConfig.
+        :type: str
+        """
+        self._flavor_type = flavor_type
+
+    @property
+    def work_space_id(self):
+        """Gets the work_space_id of this CustomerConfig.
+
+        工作空间ID
+
+        :return: The work_space_id of this CustomerConfig.
+        :rtype: str
+        """
+        return self._work_space_id
+
+    @work_space_id.setter
+    def work_space_id(self, work_space_id):
+        """Sets the work_space_id of this CustomerConfig.
+
+        工作空间ID
+
+        :param work_space_id: The work_space_id of this CustomerConfig.
+        :type: str
+        """
+        self._work_space_id = work_space_id
+
+    @property
+    def trial(self):
+        """Gets the trial of this CustomerConfig.
+
+        适用
+
+        :return: The trial of this CustomerConfig.
+        :rtype: str
+        """
+        return self._trial
+
+    @trial.setter
+    def trial(self, trial):
+        """Sets the trial of this CustomerConfig.
+
+        适用
+
+        :param trial: The trial of this CustomerConfig.
+        :type: str
+        """
+        self._trial = trial
 
     def to_dict(self):
         """Returns the model properties as a dict"""

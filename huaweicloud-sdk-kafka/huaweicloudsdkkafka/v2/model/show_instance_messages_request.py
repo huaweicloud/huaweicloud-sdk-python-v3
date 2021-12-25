@@ -219,7 +219,7 @@ class ShowInstanceMessagesRequest:
     def offset(self):
         """Gets the offset of this ShowInstanceMessagesRequest.
 
-        分页偏移量。
+        偏移量，表示从此偏移量开始查询， offset大于等于0。
 
         :return: The offset of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -230,7 +230,7 @@ class ShowInstanceMessagesRequest:
     def offset(self, offset):
         """Sets the offset of this ShowInstanceMessagesRequest.
 
-        分页偏移量。
+        偏移量，表示从此偏移量开始查询， offset大于等于0。
 
         :param offset: The offset of this ShowInstanceMessagesRequest.
         :type: str

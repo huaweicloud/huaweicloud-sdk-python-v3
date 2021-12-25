@@ -86,7 +86,7 @@ class ShowCeshierarchyRespDimensions:
     def metrics(self):
         """Gets the metrics of this ShowCeshierarchyRespDimensions.
 
-        监控指标名称。请参考[支持的监控指标](https://support.huaweicloud.com/usermanual-kafka/kafka-ug-180413002.html)。
+        监控指标名称。
 
         :return: The metrics of this ShowCeshierarchyRespDimensions.
         :rtype: list[str]
@@ -97,7 +97,7 @@ class ShowCeshierarchyRespDimensions:
     def metrics(self, metrics):
         """Sets the metrics of this ShowCeshierarchyRespDimensions.
 
-        监控指标名称。请参考[支持的监控指标](https://support.huaweicloud.com/usermanual-kafka/kafka-ug-180413002.html)。
+        监控指标名称。
 
         :param metrics: The metrics of this ShowCeshierarchyRespDimensions.
         :type: list[str]

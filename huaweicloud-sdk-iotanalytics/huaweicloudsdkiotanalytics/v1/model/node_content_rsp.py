@@ -22,50 +22,50 @@ class NodeContentRsp:
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'str',
+        'site_id': 'str',
         'sqllist': 'list[str]'
     }
 
     attribute_map = {
-        'instance_id': 'instance_id',
+        'site_id': 'site_id',
         'sqllist': 'sqllist'
     }
 
-    def __init__(self, instance_id=None, sqllist=None):
+    def __init__(self, site_id=None, sqllist=None):
         """NodeContentRsp - a model defined in huaweicloud sdk"""
         
         
 
-        self._instance_id = None
+        self._site_id = None
         self._sqllist = None
         self.discriminator = None
 
-        if instance_id is not None:
-            self.instance_id = instance_id
+        if site_id is not None:
+            self.site_id = site_id
         if sqllist is not None:
             self.sqllist = sqllist
 
     @property
-    def instance_id(self):
-        """Gets the instance_id of this NodeContentRsp.
+    def site_id(self):
+        """Gets the site_id of this NodeContentRsp.
 
         节点实例ID
 
-        :return: The instance_id of this NodeContentRsp.
+        :return: The site_id of this NodeContentRsp.
         :rtype: str
         """
-        return self._instance_id
+        return self._site_id
 
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        """Sets the instance_id of this NodeContentRsp.
+    @site_id.setter
+    def site_id(self, site_id):
+        """Sets the site_id of this NodeContentRsp.
 
         节点实例ID
 
-        :param instance_id: The instance_id of this NodeContentRsp.
+        :param site_id: The site_id of this NodeContentRsp.
         :type: str
         """
-        self._instance_id = instance_id
+        self._site_id = site_id
 
     @property
     def sqllist(self):

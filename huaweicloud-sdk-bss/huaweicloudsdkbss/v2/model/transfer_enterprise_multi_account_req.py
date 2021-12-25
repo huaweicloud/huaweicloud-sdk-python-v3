@@ -62,7 +62,7 @@ class TransferEnterpriseMultiAccountReq:
     def customer_id(self):
         """Gets the customer_id of this TransferEnterpriseMultiAccountReq.
 
-        企业子账号的客户ID。
+        企业子账号的客户ID。您可以调用查询企业子账号列表接口，获取响应参数“id”的返回值。
 
         :return: The customer_id of this TransferEnterpriseMultiAccountReq.
         :rtype: str
@@ -73,7 +73,7 @@ class TransferEnterpriseMultiAccountReq:
     def customer_id(self, customer_id):
         """Sets the customer_id of this TransferEnterpriseMultiAccountReq.
 
-        企业子账号的客户ID。
+        企业子账号的客户ID。您可以调用查询企业子账号列表接口，获取响应参数“id”的返回值。
 
         :param customer_id: The customer_id of this TransferEnterpriseMultiAccountReq.
         :type: str

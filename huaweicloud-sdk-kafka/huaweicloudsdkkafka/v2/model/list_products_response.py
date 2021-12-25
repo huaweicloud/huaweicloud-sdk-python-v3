@@ -23,27 +23,27 @@ class ListProductsResponse(SdkResponse):
 
     openapi_types = {
         'hourly': 'list[ListProductsRespHourly]',
-        'monthly': 'list[ListProductsRespHourly]'
+        'honthly': 'list[ListProductsRespHourly]'
     }
 
     attribute_map = {
-        'hourly': 'Hourly',
-        'monthly': 'Monthly'
+        'hourly': 'hourly',
+        'honthly': 'honthly'
     }
 
-    def __init__(self, hourly=None, monthly=None):
+    def __init__(self, hourly=None, honthly=None):
         """ListProductsResponse - a model defined in huaweicloud sdk"""
         
         super(ListProductsResponse, self).__init__()
 
         self._hourly = None
-        self._monthly = None
+        self._honthly = None
         self.discriminator = None
 
         if hourly is not None:
             self.hourly = hourly
-        if monthly is not None:
-            self.monthly = monthly
+        if honthly is not None:
+            self.honthly = honthly
 
     @property
     def hourly(self):
@@ -68,26 +68,26 @@ class ListProductsResponse(SdkResponse):
         self._hourly = hourly
 
     @property
-    def monthly(self):
-        """Gets the monthly of this ListProductsResponse.
+    def honthly(self):
+        """Gets the honthly of this ListProductsResponse.
 
         表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
 
-        :return: The monthly of this ListProductsResponse.
+        :return: The honthly of this ListProductsResponse.
         :rtype: list[ListProductsRespHourly]
         """
-        return self._monthly
+        return self._honthly
 
-    @monthly.setter
-    def monthly(self, monthly):
-        """Sets the monthly of this ListProductsResponse.
+    @honthly.setter
+    def honthly(self, honthly):
+        """Sets the honthly of this ListProductsResponse.
 
         表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
 
-        :param monthly: The monthly of this ListProductsResponse.
+        :param honthly: The honthly of this ListProductsResponse.
         :type: list[ListProductsRespHourly]
         """
-        self._monthly = monthly
+        self._honthly = honthly
 
     def to_dict(self):
         """Returns the model properties as a dict"""

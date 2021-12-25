@@ -47,7 +47,7 @@ class IpInfo:
     def ip(self):
         """Gets the ip of this IpInfo.
 
-        IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:otc,otc_test,dt,dt_test)
+        IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :return: The ip of this IpInfo.
         :rtype: str
@@ -58,7 +58,7 @@ class IpInfo:
     def ip(self, ip):
         """Sets the ip of this IpInfo.
 
-        IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:otc,otc_test,dt,dt_test)
+        IP地址组中的IP地址。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :param ip: The ip of this IpInfo.
         :type: str

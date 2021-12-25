@@ -30,7 +30,9 @@ class Quota:
         'pool': 'int',
         'healthmonitor': 'int',
         'member': 'int',
-        'members_per_pool': 'int'
+        'members_per_pool': 'int',
+        'ipgroup': 'int',
+        'security_policy': 'int'
     }
 
     attribute_map = {
@@ -42,10 +44,12 @@ class Quota:
         'pool': 'pool',
         'healthmonitor': 'healthmonitor',
         'member': 'member',
-        'members_per_pool': 'members_per_pool'
+        'members_per_pool': 'members_per_pool',
+        'ipgroup': 'ipgroup',
+        'security_policy': 'security_policy'
     }
 
-    def __init__(self, project_id=None, loadbalancer=None, certificate=None, listener=None, l7policy=None, pool=None, healthmonitor=None, member=None, members_per_pool=None):
+    def __init__(self, project_id=None, loadbalancer=None, certificate=None, listener=None, l7policy=None, pool=None, healthmonitor=None, member=None, members_per_pool=None, ipgroup=None, security_policy=None):
         """Quota - a model defined in huaweicloud sdk"""
         
         
@@ -59,6 +63,8 @@ class Quota:
         self._healthmonitor = None
         self._member = None
         self._members_per_pool = None
+        self._ipgroup = None
+        self._security_policy = None
         self.discriminator = None
 
         self.project_id = project_id
@@ -70,6 +76,8 @@ class Quota:
         self.healthmonitor = healthmonitor
         self.member = member
         self.members_per_pool = members_per_pool
+        self.ipgroup = ipgroup
+        self.security_policy = security_policy
 
     @property
     def project_id(self):
@@ -268,6 +276,50 @@ class Quota:
         :type: int
         """
         self._members_per_pool = members_per_pool
+
+    @property
+    def ipgroup(self):
+        """Gets the ipgroup of this Quota.
+
+        IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :return: The ipgroup of this Quota.
+        :rtype: int
+        """
+        return self._ipgroup
+
+    @ipgroup.setter
+    def ipgroup(self, ipgroup):
+        """Sets the ipgroup of this Quota.
+
+        IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :param ipgroup: The ipgroup of this Quota.
+        :type: int
+        """
+        self._ipgroup = ipgroup
+
+    @property
+    def security_policy(self):
+        """Gets the security_policy of this Quota.
+
+        自定义安全策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :return: The security_policy of this Quota.
+        :rtype: int
+        """
+        return self._security_policy
+
+    @security_policy.setter
+    def security_policy(self, security_policy):
+        """Sets the security_policy of this Quota.
+
+        自定义安全策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :param security_policy: The security_policy of this Quota.
+        :type: int
+        """
+        self._security_policy = security_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

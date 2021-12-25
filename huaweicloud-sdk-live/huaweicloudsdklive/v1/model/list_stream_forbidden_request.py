@@ -90,7 +90,7 @@ class ListStreamForbiddenRequest:
     def domain(self):
         """Gets the domain of this ListStreamForbiddenRequest.
 
-        播放或推流域名
+        推流域名
 
         :return: The domain of this ListStreamForbiddenRequest.
         :rtype: str
@@ -101,7 +101,7 @@ class ListStreamForbiddenRequest:
     def domain(self, domain):
         """Sets the domain of this ListStreamForbiddenRequest.
 
-        播放或推流域名
+        推流域名
 
         :param domain: The domain of this ListStreamForbiddenRequest.
         :type: str

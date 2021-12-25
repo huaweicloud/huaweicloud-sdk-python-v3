@@ -182,7 +182,7 @@ class ShowMessagesRequest:
     def offset(self):
         """Gets the offset of this ShowMessagesRequest.
 
-        查询的页码，默认值为1。
+        偏移量，表示从此偏移量开始查询， offset大于等于0。
 
         :return: The offset of this ShowMessagesRequest.
         :rtype: int
@@ -193,7 +193,7 @@ class ShowMessagesRequest:
     def offset(self, offset):
         """Sets the offset of this ShowMessagesRequest.
 
-        查询的页码，默认值为1。
+        偏移量，表示从此偏移量开始查询， offset大于等于0。
 
         :param offset: The offset of this ShowMessagesRequest.
         :type: int

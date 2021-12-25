@@ -22,23 +22,28 @@ class BackupInstanceBody:
     sensitive_list = []
 
     openapi_types = {
-        'remark': 'str'
+        'remark': 'str',
+        'backup_format': 'str'
     }
 
     attribute_map = {
-        'remark': 'remark'
+        'remark': 'remark',
+        'backup_format': 'backup_format'
     }
 
-    def __init__(self, remark=None):
+    def __init__(self, remark=None, backup_format=None):
         """BackupInstanceBody - a model defined in huaweicloud sdk"""
         
         
 
         self._remark = None
+        self._backup_format = None
         self.discriminator = None
 
         if remark is not None:
             self.remark = remark
+        if backup_format is not None:
+            self.backup_format = backup_format
 
     @property
     def remark(self):
@@ -61,6 +66,28 @@ class BackupInstanceBody:
         :type: str
         """
         self._remark = remark
+
+    @property
+    def backup_format(self):
+        """Gets the backup_format of this BackupInstanceBody.
+
+        备份缓存实例的格式。
+
+        :return: The backup_format of this BackupInstanceBody.
+        :rtype: str
+        """
+        return self._backup_format
+
+    @backup_format.setter
+    def backup_format(self, backup_format):
+        """Sets the backup_format of this BackupInstanceBody.
+
+        备份缓存实例的格式。
+
+        :param backup_format: The backup_format of this BackupInstanceBody.
+        :type: str
+        """
+        self._backup_format = backup_format
 
     def to_dict(self):
         """Returns the model properties as a dict"""

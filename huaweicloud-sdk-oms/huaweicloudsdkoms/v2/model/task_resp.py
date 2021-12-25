@@ -47,11 +47,14 @@ class TaskResp:
         'status': 'int',
         'successful_num': 'int',
         'task_type': 'str',
+        'group_type': 'str',
         'total_num': 'int',
         'total_size': 'int',
         'total_time': 'int',
         'smn_info': 'SmnInfo',
-        'source_cdn': 'SourceCdnResp'
+        'source_cdn': 'SourceCdnResp',
+        'success_record_error_reason': 'str',
+        'skip_record_error_reason': 'str'
     }
 
     attribute_map = {
@@ -80,14 +83,17 @@ class TaskResp:
         'status': 'status',
         'successful_num': 'successful_num',
         'task_type': 'task_type',
+        'group_type': 'group_type',
         'total_num': 'total_num',
         'total_size': 'total_size',
         'total_time': 'total_time',
         'smn_info': 'smn_info',
-        'source_cdn': 'source_cdn'
+        'source_cdn': 'source_cdn',
+        'success_record_error_reason': 'success_record_error_reason',
+        'skip_record_error_reason': 'skip_record_error_reason'
     }
 
-    def __init__(self, bandwidth_policy=None, complete_size=None, description=None, dst_node=None, enable_failed_object_recording=None, enable_kms=None, enable_restore=None, error_reason=None, failed_num=None, failed_object_record=None, group_id=None, id=None, is_query_over=None, left_time=None, migrate_since=None, migrate_speed=None, name=None, progress=None, real_size=None, skipped_num=None, src_node=None, start_time=None, status=None, successful_num=None, task_type=None, total_num=None, total_size=None, total_time=None, smn_info=None, source_cdn=None):
+    def __init__(self, bandwidth_policy=None, complete_size=None, description=None, dst_node=None, enable_failed_object_recording=None, enable_kms=None, enable_restore=None, error_reason=None, failed_num=None, failed_object_record=None, group_id=None, id=None, is_query_over=None, left_time=None, migrate_since=None, migrate_speed=None, name=None, progress=None, real_size=None, skipped_num=None, src_node=None, start_time=None, status=None, successful_num=None, task_type=None, group_type=None, total_num=None, total_size=None, total_time=None, smn_info=None, source_cdn=None, success_record_error_reason=None, skip_record_error_reason=None):
         """TaskResp - a model defined in huaweicloud sdk"""
         
         
@@ -117,11 +123,14 @@ class TaskResp:
         self._status = None
         self._successful_num = None
         self._task_type = None
+        self._group_type = None
         self._total_num = None
         self._total_size = None
         self._total_time = None
         self._smn_info = None
         self._source_cdn = None
+        self._success_record_error_reason = None
+        self._skip_record_error_reason = None
         self.discriminator = None
 
         if bandwidth_policy is not None:
@@ -174,6 +183,8 @@ class TaskResp:
             self.successful_num = successful_num
         if task_type is not None:
             self.task_type = task_type
+        if group_type is not None:
+            self.group_type = group_type
         if total_num is not None:
             self.total_num = total_num
         if total_size is not None:
@@ -184,6 +195,10 @@ class TaskResp:
             self.smn_info = smn_info
         if source_cdn is not None:
             self.source_cdn = source_cdn
+        if success_record_error_reason is not None:
+            self.success_record_error_reason = success_record_error_reason
+        if skip_record_error_reason is not None:
+            self.skip_record_error_reason = skip_record_error_reason
 
     @property
     def bandwidth_policy(self):
@@ -728,6 +743,28 @@ class TaskResp:
         self._task_type = task_type
 
     @property
+    def group_type(self):
+        """Gets the group_type of this TaskResp.
+
+        分组类型 NORMAL_TASK：一般迁移任务 SYNC_TASK：同步任务所属迁移任务 GROUP_TASK：任务组所属迁移任务
+
+        :return: The group_type of this TaskResp.
+        :rtype: str
+        """
+        return self._group_type
+
+    @group_type.setter
+    def group_type(self, group_type):
+        """Sets the group_type of this TaskResp.
+
+        分组类型 NORMAL_TASK：一般迁移任务 SYNC_TASK：同步任务所属迁移任务 GROUP_TASK：任务组所属迁移任务
+
+        :param group_type: The group_type of this TaskResp.
+        :type: str
+        """
+        self._group_type = group_type
+
+    @property
     def total_num(self):
         """Gets the total_num of this TaskResp.
 
@@ -832,6 +869,50 @@ class TaskResp:
         :type: SourceCdnResp
         """
         self._source_cdn = source_cdn
+
+    @property
+    def success_record_error_reason(self):
+        """Gets the success_record_error_reason of this TaskResp.
+
+        迁移成功对象列表记录失败错误码，记录成功时为空
+
+        :return: The success_record_error_reason of this TaskResp.
+        :rtype: str
+        """
+        return self._success_record_error_reason
+
+    @success_record_error_reason.setter
+    def success_record_error_reason(self, success_record_error_reason):
+        """Sets the success_record_error_reason of this TaskResp.
+
+        迁移成功对象列表记录失败错误码，记录成功时为空
+
+        :param success_record_error_reason: The success_record_error_reason of this TaskResp.
+        :type: str
+        """
+        self._success_record_error_reason = success_record_error_reason
+
+    @property
+    def skip_record_error_reason(self):
+        """Gets the skip_record_error_reason of this TaskResp.
+
+        迁移忽略对象列表记录失败错误码,记录记录成功时为空。
+
+        :return: The skip_record_error_reason of this TaskResp.
+        :rtype: str
+        """
+        return self._skip_record_error_reason
+
+    @skip_record_error_reason.setter
+    def skip_record_error_reason(self, skip_record_error_reason):
+        """Sets the skip_record_error_reason of this TaskResp.
+
+        迁移忽略对象列表记录失败错误码,记录记录成功时为空。
+
+        :param skip_record_error_reason: The skip_record_error_reason of this TaskResp.
+        :type: str
+        """
+        self._skip_record_error_reason = skip_record_error_reason
 
     def to_dict(self):
         """Returns the model properties as a dict"""

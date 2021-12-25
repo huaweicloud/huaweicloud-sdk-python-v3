@@ -47,7 +47,7 @@ class ResizeInstanceReq:
     def new_spec_code(self):
         """Gets the new_spec_code of this ResizeInstanceReq.
 
-        规格变更后的规格ID。 请参考[查询可扩容规格列表](https://support.huaweicloud.com/api-rabbitmq/ResizeInstance.html)接口返回的数据。
+        规格变更后的规格ID。
 
         :return: The new_spec_code of this ResizeInstanceReq.
         :rtype: str
@@ -58,7 +58,7 @@ class ResizeInstanceReq:
     def new_spec_code(self, new_spec_code):
         """Sets the new_spec_code of this ResizeInstanceReq.
 
-        规格变更后的规格ID。 请参考[查询可扩容规格列表](https://support.huaweicloud.com/api-rabbitmq/ResizeInstance.html)接口返回的数据。
+        规格变更后的规格ID。
 
         :param new_spec_code: The new_spec_code of this ResizeInstanceReq.
         :type: str
@@ -69,7 +69,7 @@ class ResizeInstanceReq:
     def new_storage_space(self):
         """Gets the new_storage_space of this ResizeInstanceReq.
 
-        规格变更后的消息存储空间，单位：GB。 请参考[查询可扩容规格列表](https://support.huaweicloud.com/api-rabbitmq/ResizeInstance.html)接口返回的数据。
+        规格变更后的消息存储空间，单位：GB。
 
         :return: The new_storage_space of this ResizeInstanceReq.
         :rtype: int
@@ -80,7 +80,7 @@ class ResizeInstanceReq:
     def new_storage_space(self, new_storage_space):
         """Sets the new_storage_space of this ResizeInstanceReq.
 
-        规格变更后的消息存储空间，单位：GB。 请参考[查询可扩容规格列表](https://support.huaweicloud.com/api-rabbitmq/ResizeInstance.html)接口返回的数据。
+        规格变更后的消息存储空间，单位：GB。
 
         :param new_storage_space: The new_storage_space of this ResizeInstanceReq.
         :type: int

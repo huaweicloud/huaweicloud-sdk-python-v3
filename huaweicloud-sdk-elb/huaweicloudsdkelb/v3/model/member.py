@@ -176,7 +176,7 @@ class Member:
     def pool_id(self):
         """Gets the pool_id of this Member.
 
-        所在后端服务器组ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        所在后端服务器组ID。  不支持该字段，请勿使用。
 
         :return: The pool_id of this Member.
         :rtype: str
@@ -187,7 +187,7 @@ class Member:
     def pool_id(self, pool_id):
         """Sets the pool_id of this Member.
 
-        所在后端服务器组ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        所在后端服务器组ID。  不支持该字段，请勿使用。
 
         :param pool_id: The pool_id of this Member.
         :type: str
@@ -220,7 +220,7 @@ class Member:
     def subnet_cidr_id(self):
         """Gets the subnet_cidr_id of this Member.
 
-        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。 若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。 使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 [不支持IPv6，请勿设置为IPv6子网ID。](tag:otc,otc_test,dt,dt_test)
+        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。 若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。 使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :return: The subnet_cidr_id of this Member.
         :rtype: str
@@ -231,7 +231,7 @@ class Member:
     def subnet_cidr_id(self, subnet_cidr_id):
         """Sets the subnet_cidr_id of this Member.
 
-        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。 若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。 使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 [不支持IPv6，请勿设置为IPv6子网ID。](tag:otc,otc_test,dt,dt_test)
+        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。 若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。 使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :param subnet_cidr_id: The subnet_cidr_id of this Member.
         :type: str
@@ -286,7 +286,7 @@ class Member:
     def address(self):
         """Gets the address of this Member.
 
-        后端服务器对应的IP地址。 使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:otc,otc_test,dt,dt_test)
+        后端服务器对应的IP地址。 使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :return: The address of this Member.
         :rtype: str
@@ -297,7 +297,7 @@ class Member:
     def address(self, address):
         """Sets the address of this Member.
 
-        后端服务器对应的IP地址。 使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:otc,otc_test,dt,dt_test)
+        后端服务器对应的IP地址。 使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :param address: The address of this Member.
         :type: str
@@ -330,7 +330,7 @@ class Member:
     def device_owner(self):
         """Gets the device_owner of this Member.
 
-        设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute&#58;{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute&#58;{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
 
         :return: The device_owner of this Member.
         :rtype: str
@@ -341,7 +341,7 @@ class Member:
     def device_owner(self, device_owner):
         """Sets the device_owner of this Member.
 
-        设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute&#58;{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute&#58;{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
 
         :param device_owner: The device_owner of this Member.
         :type: str
@@ -352,7 +352,7 @@ class Member:
     def device_id(self):
         """Gets the device_id of this Member.
 
-        关联的ECS ID，为空表示后端服务器未关联到ECS。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
 
         :return: The device_id of this Member.
         :rtype: str
@@ -363,7 +363,7 @@ class Member:
     def device_id(self, device_id):
         """Sets the device_id of this Member.
 
-        关联的ECS ID，为空表示后端服务器未关联到ECS。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
 
         :param device_id: The device_id of this Member.
         :type: str
@@ -396,7 +396,7 @@ class Member:
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this Member.
 
-        所属负载均衡器ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        所属负载均衡器ID。  不支持该字段，请勿使用。
 
         :return: The loadbalancer_id of this Member.
         :rtype: str
@@ -407,7 +407,7 @@ class Member:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this Member.
 
-        所属负载均衡器ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        所属负载均衡器ID。  不支持该字段，请勿使用。
 
         :param loadbalancer_id: The loadbalancer_id of this Member.
         :type: str

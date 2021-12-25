@@ -140,7 +140,7 @@ class ListInstancesRequest:
     def status(self):
         """Gets the status of this ListInstancesRequest.
 
-        实例状态。详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-kafka/kafka-api-180514012.html)。
+        实例状态。
 
         :return: The status of this ListInstancesRequest.
         :rtype: str
@@ -151,7 +151,7 @@ class ListInstancesRequest:
     def status(self, status):
         """Sets the status of this ListInstancesRequest.
 
-        实例状态。详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-kafka/kafka-api-180514012.html)。
+        实例状态。
 
         :param status: The status of this ListInstancesRequest.
         :type: str

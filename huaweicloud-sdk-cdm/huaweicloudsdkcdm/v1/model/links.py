@@ -25,6 +25,7 @@ class Links:
         'link_config_values': 'LinksLinkconfigvalues',
         'creation_user': 'str',
         'name': 'str',
+        'id': 'int',
         'creation_date': 'int',
         'connector_name': 'str',
         'update_date': 'int',
@@ -36,6 +37,7 @@ class Links:
         'link_config_values': 'link-config-values',
         'creation_user': 'creation-user',
         'name': 'name',
+        'id': 'id',
         'creation_date': 'creation-date',
         'connector_name': 'connector-name',
         'update_date': 'update-date',
@@ -43,7 +45,7 @@ class Links:
         'update_user': 'update-user'
     }
 
-    def __init__(self, link_config_values=None, creation_user=None, name=None, creation_date=None, connector_name=None, update_date=None, enabled=None, update_user=None):
+    def __init__(self, link_config_values=None, creation_user=None, name=None, id=None, creation_date=None, connector_name=None, update_date=None, enabled=None, update_user=None):
         """Links - a model defined in huaweicloud sdk"""
         
         
@@ -51,6 +53,7 @@ class Links:
         self._link_config_values = None
         self._creation_user = None
         self._name = None
+        self._id = None
         self._creation_date = None
         self._connector_name = None
         self._update_date = None
@@ -62,6 +65,8 @@ class Links:
         if creation_user is not None:
             self.creation_user = creation_user
         self.name = name
+        if id is not None:
+            self.id = id
         if creation_date is not None:
             self.creation_date = creation_date
         self.connector_name = connector_name
@@ -135,6 +140,28 @@ class Links:
         :type: str
         """
         self._name = name
+
+    @property
+    def id(self):
+        """Gets the id of this Links.
+
+        连接ID
+
+        :return: The id of this Links.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this Links.
+
+        连接ID
+
+        :param id: The id of this Links.
+        :type: int
+        """
+        self._id = id
 
     @property
     def creation_date(self):

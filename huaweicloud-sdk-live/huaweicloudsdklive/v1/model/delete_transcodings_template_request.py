@@ -47,7 +47,7 @@ class DeleteTranscodingsTemplateRequest:
     def domain(self):
         """Gets the domain of this DeleteTranscodingsTemplateRequest.
 
-        播放域名
+        推流域名
 
         :return: The domain of this DeleteTranscodingsTemplateRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class DeleteTranscodingsTemplateRequest:
     def domain(self, domain):
         """Sets the domain of this DeleteTranscodingsTemplateRequest.
 
-        播放域名
+        推流域名
 
         :param domain: The domain of this DeleteTranscodingsTemplateRequest.
         :type: str

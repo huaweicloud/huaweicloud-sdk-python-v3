@@ -51,7 +51,7 @@ class CgsClient(Client):
     def list_container_nodes(self, request):
         """查询容器节点列表
 
-        查询容器节点列表
+        查询容器节点列表（仅新版本容器安全支持，即将上线，敬请期待！）
 
         :param ListContainerNodesRequest request
         :return: ListContainerNodesResponse
@@ -61,7 +61,7 @@ class CgsClient(Client):
     def list_container_nodes_with_http_info(self, request):
         """查询容器节点列表
 
-        查询容器节点列表
+        查询容器节点列表（仅新版本容器安全支持，即将上线，敬请期待！）
 
         :param ListContainerNodesRequest request
         :return: ListContainerNodesResponse

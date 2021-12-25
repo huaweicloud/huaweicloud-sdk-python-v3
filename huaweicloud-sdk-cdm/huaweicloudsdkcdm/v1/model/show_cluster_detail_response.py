@@ -37,9 +37,12 @@ class ShowClusterDetailResponse(SdkResponse):
         'recent_event': 'int',
         'flavor_name': 'str',
         'az_name': 'str',
+        'endpoint_domain_name': 'str',
         'public_endpoint_status': 'CdmQueryClusterDetailsRepsonsePublicEndpointStatus',
+        'is_schedule_boot_off': 'bool',
         'namespace': 'str',
         'eip_id': 'str',
+        'failed_reasons': 'FailedReasons',
         'dbuser': 'str',
         'links': 'list[ClusterLinks]',
         'cluster_mode': 'str',
@@ -72,9 +75,12 @@ class ShowClusterDetailResponse(SdkResponse):
         'recent_event': 'recentEvent',
         'flavor_name': 'flavorName',
         'az_name': 'azName',
+        'endpoint_domain_name': 'endpointDomainName',
         'public_endpoint_status': 'publicEndpointStatus',
+        'is_schedule_boot_off': 'isScheduleBootOff',
         'namespace': 'namespace',
         'eip_id': 'eipId',
+        'failed_reasons': 'failedReasons',
         'dbuser': 'dbuser',
         'links': 'links',
         'cluster_mode': 'clusterMode',
@@ -91,7 +97,7 @@ class ShowClusterDetailResponse(SdkResponse):
         'status': 'status'
     }
 
-    def __init__(self, public_endpoint=None, instances=None, security_group_id=None, subnet_id=None, vpc_id=None, customer_config=None, datastore=None, is_auto_off=None, public_endpoint_domain_name=None, bak_expected_start_time=None, bak_keep_day=None, maintain_window=None, recent_event=None, flavor_name=None, az_name=None, public_endpoint_status=None, namespace=None, eip_id=None, dbuser=None, links=None, cluster_mode=None, task=None, created=None, status_detail=None, config_status=None, action_progress=None, name=None, id=None, is_frozen=None, actions=None, updated=None, status=None):
+    def __init__(self, public_endpoint=None, instances=None, security_group_id=None, subnet_id=None, vpc_id=None, customer_config=None, datastore=None, is_auto_off=None, public_endpoint_domain_name=None, bak_expected_start_time=None, bak_keep_day=None, maintain_window=None, recent_event=None, flavor_name=None, az_name=None, endpoint_domain_name=None, public_endpoint_status=None, is_schedule_boot_off=None, namespace=None, eip_id=None, failed_reasons=None, dbuser=None, links=None, cluster_mode=None, task=None, created=None, status_detail=None, config_status=None, action_progress=None, name=None, id=None, is_frozen=None, actions=None, updated=None, status=None):
         """ShowClusterDetailResponse - a model defined in huaweicloud sdk"""
         
         super(ShowClusterDetailResponse, self).__init__()
@@ -111,9 +117,12 @@ class ShowClusterDetailResponse(SdkResponse):
         self._recent_event = None
         self._flavor_name = None
         self._az_name = None
+        self._endpoint_domain_name = None
         self._public_endpoint_status = None
+        self._is_schedule_boot_off = None
         self._namespace = None
         self._eip_id = None
+        self._failed_reasons = None
         self._dbuser = None
         self._links = None
         self._cluster_mode = None
@@ -160,12 +169,18 @@ class ShowClusterDetailResponse(SdkResponse):
             self.flavor_name = flavor_name
         if az_name is not None:
             self.az_name = az_name
+        if endpoint_domain_name is not None:
+            self.endpoint_domain_name = endpoint_domain_name
         if public_endpoint_status is not None:
             self.public_endpoint_status = public_endpoint_status
+        if is_schedule_boot_off is not None:
+            self.is_schedule_boot_off = is_schedule_boot_off
         if namespace is not None:
             self.namespace = namespace
         if eip_id is not None:
             self.eip_id = eip_id
+        if failed_reasons is not None:
+            self.failed_reasons = failed_reasons
         if dbuser is not None:
             self.dbuser = dbuser
         if links is not None:
@@ -520,6 +535,28 @@ class ShowClusterDetailResponse(SdkResponse):
         self._az_name = az_name
 
     @property
+    def endpoint_domain_name(self):
+        """Gets the endpoint_domain_name of this ShowClusterDetailResponse.
+
+        对端域名
+
+        :return: The endpoint_domain_name of this ShowClusterDetailResponse.
+        :rtype: str
+        """
+        return self._endpoint_domain_name
+
+    @endpoint_domain_name.setter
+    def endpoint_domain_name(self, endpoint_domain_name):
+        """Sets the endpoint_domain_name of this ShowClusterDetailResponse.
+
+        对端域名
+
+        :param endpoint_domain_name: The endpoint_domain_name of this ShowClusterDetailResponse.
+        :type: str
+        """
+        self._endpoint_domain_name = endpoint_domain_name
+
+    @property
     def public_endpoint_status(self):
         """Gets the public_endpoint_status of this ShowClusterDetailResponse.
 
@@ -538,6 +575,28 @@ class ShowClusterDetailResponse(SdkResponse):
         :type: CdmQueryClusterDetailsRepsonsePublicEndpointStatus
         """
         self._public_endpoint_status = public_endpoint_status
+
+    @property
+    def is_schedule_boot_off(self):
+        """Gets the is_schedule_boot_off of this ShowClusterDetailResponse.
+
+        选择是否启用定时开关机功能。定时开关机功能和自动关机功能不可同时开启
+
+        :return: The is_schedule_boot_off of this ShowClusterDetailResponse.
+        :rtype: bool
+        """
+        return self._is_schedule_boot_off
+
+    @is_schedule_boot_off.setter
+    def is_schedule_boot_off(self, is_schedule_boot_off):
+        """Sets the is_schedule_boot_off of this ShowClusterDetailResponse.
+
+        选择是否启用定时开关机功能。定时开关机功能和自动关机功能不可同时开启
+
+        :param is_schedule_boot_off: The is_schedule_boot_off of this ShowClusterDetailResponse.
+        :type: bool
+        """
+        self._is_schedule_boot_off = is_schedule_boot_off
 
     @property
     def namespace(self):
@@ -582,6 +641,26 @@ class ShowClusterDetailResponse(SdkResponse):
         :type: str
         """
         self._eip_id = eip_id
+
+    @property
+    def failed_reasons(self):
+        """Gets the failed_reasons of this ShowClusterDetailResponse.
+
+
+        :return: The failed_reasons of this ShowClusterDetailResponse.
+        :rtype: FailedReasons
+        """
+        return self._failed_reasons
+
+    @failed_reasons.setter
+    def failed_reasons(self, failed_reasons):
+        """Sets the failed_reasons of this ShowClusterDetailResponse.
+
+
+        :param failed_reasons: The failed_reasons of this ShowClusterDetailResponse.
+        :type: FailedReasons
+        """
+        self._failed_reasons = failed_reasons
 
     @property
     def dbuser(self):

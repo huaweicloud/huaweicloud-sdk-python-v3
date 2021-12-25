@@ -144,7 +144,7 @@ class CreateCertificateRequestBody:
     def domain(self):
         """Gets the domain of this CreateCertificateRequestBody.
 
-        服务端证书所签的域名。默认值：null；支持的最大字符长度：100 取值范围： 普通域名由若干字符串组成，总长度为0-100，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。 泛域名在普通域名的基础上仅允许首字母为\"*\"。 该字段仅type为server时有效。
+        服务端证书所签的域名。默认值：null；支持的最大字符长度：1024 取值范围： 普通域名由若干字符串组成，总长度为0-1024，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。 泛域名在普通域名的基础上仅允许首字母为\"*\"。 该字段仅type为server时有效。
 
         :return: The domain of this CreateCertificateRequestBody.
         :rtype: str
@@ -155,7 +155,7 @@ class CreateCertificateRequestBody:
     def domain(self, domain):
         """Sets the domain of this CreateCertificateRequestBody.
 
-        服务端证书所签的域名。默认值：null；支持的最大字符长度：100 取值范围： 普通域名由若干字符串组成，总长度为0-100，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。 泛域名在普通域名的基础上仅允许首字母为\"*\"。 该字段仅type为server时有效。
+        服务端证书所签的域名。默认值：null；支持的最大字符长度：1024 取值范围： 普通域名由若干字符串组成，总长度为0-1024，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。 泛域名在普通域名的基础上仅允许首字母为\"*\"。 该字段仅type为server时有效。
 
         :param domain: The domain of this CreateCertificateRequestBody.
         :type: str

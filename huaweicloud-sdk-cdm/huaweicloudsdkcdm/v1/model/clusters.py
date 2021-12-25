@@ -37,13 +37,14 @@ class Clusters:
         'public_endpoint': 'str',
         'action_progress': 'ActionProgress',
         'created': 'str',
+        'bak_expected_start_time': 'str',
+        'bak_keep_day': 'int',
         'name': 'str',
         'status_detail': 'str',
         'id': 'str',
         'is_frozen': 'str',
         'config_status': 'str',
         'updated': 'str',
-        'version': 'str',
         'status': 'str',
         'failed_reasons': 'FailedReasons'
     }
@@ -64,18 +65,19 @@ class Clusters:
         'public_endpoint': 'publicEndpoint',
         'action_progress': 'actionProgress',
         'created': 'created',
+        'bak_expected_start_time': 'bakExpectedStartTime',
+        'bak_keep_day': 'bakKeepDay',
         'name': 'name',
         'status_detail': 'statusDetail',
         'id': 'id',
         'is_frozen': 'isFrozen',
         'config_status': 'config_status',
         'updated': 'updated',
-        'version': 'version',
         'status': 'status',
         'failed_reasons': 'failedReasons'
     }
 
-    def __init__(self, customer_config=None, datastore=None, instances=None, az_name=None, dbuser=None, flavor_name=None, recent_event=None, is_auto_off=None, is_schedule_boot_off=None, cluster_mode=None, namespace=None, task=None, public_endpoint=None, action_progress=None, created=None, name=None, status_detail=None, id=None, is_frozen=None, config_status=None, updated=None, version=None, status=None, failed_reasons=None):
+    def __init__(self, customer_config=None, datastore=None, instances=None, az_name=None, dbuser=None, flavor_name=None, recent_event=None, is_auto_off=None, is_schedule_boot_off=None, cluster_mode=None, namespace=None, task=None, public_endpoint=None, action_progress=None, created=None, bak_expected_start_time=None, bak_keep_day=None, name=None, status_detail=None, id=None, is_frozen=None, config_status=None, updated=None, status=None, failed_reasons=None):
         """Clusters - a model defined in huaweicloud sdk"""
         
         
@@ -95,13 +97,14 @@ class Clusters:
         self._public_endpoint = None
         self._action_progress = None
         self._created = None
+        self._bak_expected_start_time = None
+        self._bak_keep_day = None
         self._name = None
         self._status_detail = None
         self._id = None
         self._is_frozen = None
         self._config_status = None
         self._updated = None
-        self._version = None
         self._status = None
         self._failed_reasons = None
         self.discriminator = None
@@ -135,6 +138,10 @@ class Clusters:
         if action_progress is not None:
             self.action_progress = action_progress
         self.created = created
+        if bak_expected_start_time is not None:
+            self.bak_expected_start_time = bak_expected_start_time
+        if bak_keep_day is not None:
+            self.bak_keep_day = bak_keep_day
         self.name = name
         if status_detail is not None:
             self.status_detail = status_detail
@@ -143,7 +150,6 @@ class Clusters:
         if config_status is not None:
             self.config_status = config_status
         self.updated = updated
-        self.version = version
         self.status = status
         if failed_reasons is not None:
             self.failed_reasons = failed_reasons
@@ -471,6 +477,50 @@ class Clusters:
         self._created = created
 
     @property
+    def bak_expected_start_time(self):
+        """Gets the bak_expected_start_time of this Clusters.
+
+        开始时间
+
+        :return: The bak_expected_start_time of this Clusters.
+        :rtype: str
+        """
+        return self._bak_expected_start_time
+
+    @bak_expected_start_time.setter
+    def bak_expected_start_time(self, bak_expected_start_time):
+        """Sets the bak_expected_start_time of this Clusters.
+
+        开始时间
+
+        :param bak_expected_start_time: The bak_expected_start_time of this Clusters.
+        :type: str
+        """
+        self._bak_expected_start_time = bak_expected_start_time
+
+    @property
+    def bak_keep_day(self):
+        """Gets the bak_keep_day of this Clusters.
+
+        保留时间
+
+        :return: The bak_keep_day of this Clusters.
+        :rtype: int
+        """
+        return self._bak_keep_day
+
+    @bak_keep_day.setter
+    def bak_keep_day(self, bak_keep_day):
+        """Sets the bak_keep_day of this Clusters.
+
+        保留时间
+
+        :param bak_keep_day: The bak_keep_day of this Clusters.
+        :type: int
+        """
+        self._bak_keep_day = bak_keep_day
+
+    @property
     def name(self):
         """Gets the name of this Clusters.
 
@@ -601,28 +651,6 @@ class Clusters:
         :type: str
         """
         self._updated = updated
-
-    @property
-    def version(self):
-        """Gets the version of this Clusters.
-
-        集群版本
-
-        :return: The version of this Clusters.
-        :rtype: str
-        """
-        return self._version
-
-    @version.setter
-    def version(self, version):
-        """Sets the version of this Clusters.
-
-        集群版本
-
-        :param version: The version of this Clusters.
-        :type: str
-        """
-        self._version = version
 
     @property
     def status(self):

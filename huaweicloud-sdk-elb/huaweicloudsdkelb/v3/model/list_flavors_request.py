@@ -206,7 +206,7 @@ class ListFlavorsRequest:
     def shared(self):
         """Gets the shared of this ListFlavorsRequest.
 
-        是否查询公共规格。true表示公共规格，所有租户可见。false表示私有规格，为当前租户所有。
+        是否查询公共规格。取值： - true表示公共规格，所有租户可见。 - false表示私有规格，为当前租户所有。
 
         :return: The shared of this ListFlavorsRequest.
         :rtype: bool
@@ -217,7 +217,7 @@ class ListFlavorsRequest:
     def shared(self, shared):
         """Sets the shared of this ListFlavorsRequest.
 
-        是否查询公共规格。true表示公共规格，所有租户可见。false表示私有规格，为当前租户所有。
+        是否查询公共规格。取值： - true表示公共规格，所有租户可见。 - false表示私有规格，为当前租户所有。
 
         :param shared: The shared of this ListFlavorsRequest.
         :type: bool

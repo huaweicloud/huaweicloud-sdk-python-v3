@@ -48,7 +48,8 @@ class ShowTemplateV3Response(SdkResponse):
         'is_static': 'int',
         'update_id': 'str',
         'topic': 'list[TopicCategory]',
-        'tags': 'list[TagInfo]'
+        'tags': 'list[TagInfo]',
+        'dependents': 'list[Dependent]'
     }
 
     attribute_map = {
@@ -78,10 +79,11 @@ class ShowTemplateV3Response(SdkResponse):
         'is_static': 'is_static',
         'update_id': 'update_id',
         'topic': 'topic',
-        'tags': 'tags'
+        'tags': 'tags',
+        'dependents': 'dependents'
     }
 
-    def __init__(self, id=None, title=None, description=None, creator_id=None, creator=None, nickname=None, score=None, status=None, view_count=None, usage_count=None, created_at=None, updated_at=None, published_at=None, favorite_state=None, maintainers=None, platform_source=None, properties=None, dependencies=None, dependency_type=None, store=None, store_info=None, file_size=None, deployment=None, is_static=None, update_id=None, topic=None, tags=None):
+    def __init__(self, id=None, title=None, description=None, creator_id=None, creator=None, nickname=None, score=None, status=None, view_count=None, usage_count=None, created_at=None, updated_at=None, published_at=None, favorite_state=None, maintainers=None, platform_source=None, properties=None, dependencies=None, dependency_type=None, store=None, store_info=None, file_size=None, deployment=None, is_static=None, update_id=None, topic=None, tags=None, dependents=None):
         """ShowTemplateV3Response - a model defined in huaweicloud sdk"""
         
         super(ShowTemplateV3Response, self).__init__()
@@ -113,6 +115,7 @@ class ShowTemplateV3Response(SdkResponse):
         self._update_id = None
         self._topic = None
         self._tags = None
+        self._dependents = None
         self.discriminator = None
 
         if id is not None:
@@ -169,6 +172,8 @@ class ShowTemplateV3Response(SdkResponse):
             self.topic = topic
         if tags is not None:
             self.tags = tags
+        if dependents is not None:
+            self.dependents = dependents
 
     @property
     def id(self):
@@ -763,6 +768,28 @@ class ShowTemplateV3Response(SdkResponse):
         :type: list[TagInfo]
         """
         self._tags = tags
+
+    @property
+    def dependents(self):
+        """Gets the dependents of this ShowTemplateV3Response.
+
+        模板部署支持方式信息
+
+        :return: The dependents of this ShowTemplateV3Response.
+        :rtype: list[Dependent]
+        """
+        return self._dependents
+
+    @dependents.setter
+    def dependents(self, dependents):
+        """Sets the dependents of this ShowTemplateV3Response.
+
+        模板部署支持方式信息
+
+        :param dependents: The dependents of this ShowTemplateV3Response.
+        :type: list[Dependent]
+        """
+        self._dependents = dependents
 
     def to_dict(self):
         """Returns the model properties as a dict"""

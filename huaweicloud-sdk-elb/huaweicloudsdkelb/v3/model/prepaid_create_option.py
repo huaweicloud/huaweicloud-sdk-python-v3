@@ -58,7 +58,7 @@ class PrepaidCreateOption:
     def period_type(self):
         """Gets the period_type of this PrepaidCreateOption.
 
-        订购周期类型，当前支持包月和包年： month：月； year：年；
+        订购周期类型，仅在change_mode为delay时有效。取值： - month：月（默认）。 - year：年。
 
         :return: The period_type of this PrepaidCreateOption.
         :rtype: str
@@ -69,7 +69,7 @@ class PrepaidCreateOption:
     def period_type(self, period_type):
         """Sets the period_type of this PrepaidCreateOption.
 
-        订购周期类型，当前支持包月和包年： month：月； year：年；
+        订购周期类型，仅在change_mode为delay时有效。取值： - month：月（默认）。 - year：年。
 
         :param period_type: The period_type of this PrepaidCreateOption.
         :type: str
@@ -80,7 +80,7 @@ class PrepaidCreateOption:
     def period_num(self):
         """Gets the period_num of this PrepaidCreateOption.
 
-        订购周期数，取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
+        订购周期数，仅在change_mode为delay时有效。取值： - period_type为month时，为[1,9]，默认1。 - period_type为year时，为[1,3]，默认1。
 
         :return: The period_num of this PrepaidCreateOption.
         :rtype: int
@@ -91,7 +91,7 @@ class PrepaidCreateOption:
     def period_num(self, period_num):
         """Sets the period_num of this PrepaidCreateOption.
 
-        订购周期数，取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
+        订购周期数，仅在change_mode为delay时有效。取值： - period_type为month时，为[1,9]，默认1。 - period_type为year时，为[1,3]，默认1。
 
         :param period_num: The period_num of this PrepaidCreateOption.
         :type: int
