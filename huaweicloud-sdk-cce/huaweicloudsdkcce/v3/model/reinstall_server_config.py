@@ -49,7 +49,7 @@ class ReinstallServerConfig:
     def user_tags(self):
         """Gets the user_tags of this ReinstallServerConfig.
 
-        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限最少为5个。
+        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为5个。
 
         :return: The user_tags of this ReinstallServerConfig.
         :rtype: list[UserTag]
@@ -60,7 +60,7 @@ class ReinstallServerConfig:
     def user_tags(self, user_tags):
         """Sets the user_tags of this ReinstallServerConfig.
 
-        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限最少为5个。
+        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为5个。
 
         :param user_tags: The user_tags of this ReinstallServerConfig.
         :type: list[UserTag]

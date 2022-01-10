@@ -23,29 +23,29 @@ class OpenGaussHa:
 
     openapi_types = {
         'mode': 'str',
-        'replication_mode': 'str',
-        'consistency': 'str'
+        'consistency': 'str',
+        'replication_mode': 'str'
     }
 
     attribute_map = {
         'mode': 'mode',
-        'replication_mode': 'replication_mode',
-        'consistency': 'consistency'
+        'consistency': 'consistency',
+        'replication_mode': 'replication_mode'
     }
 
-    def __init__(self, mode=None, replication_mode=None, consistency=None):
+    def __init__(self, mode=None, consistency=None, replication_mode=None):
         """OpenGaussHa - a model defined in huaweicloud sdk"""
         
         
 
         self._mode = None
-        self._replication_mode = None
         self._consistency = None
+        self._replication_mode = None
         self.discriminator = None
 
         self.mode = mode
-        self.replication_mode = replication_mode
         self.consistency = consistency
+        self.replication_mode = replication_mode
 
     @property
     def mode(self):
@@ -70,28 +70,6 @@ class OpenGaussHa:
         self._mode = mode
 
     @property
-    def replication_mode(self):
-        """Gets the replication_mode of this OpenGaussHa.
-
-        备机同步参数。  取值：  GaussDB(for openGauss)为“sync\"  说明： - “sync”为同步模式。
-
-        :return: The replication_mode of this OpenGaussHa.
-        :rtype: str
-        """
-        return self._replication_mode
-
-    @replication_mode.setter
-    def replication_mode(self, replication_mode):
-        """Sets the replication_mode of this OpenGaussHa.
-
-        备机同步参数。  取值：  GaussDB(for openGauss)为“sync\"  说明： - “sync”为同步模式。
-
-        :param replication_mode: The replication_mode of this OpenGaussHa.
-        :type: str
-        """
-        self._replication_mode = replication_mode
-
-    @property
     def consistency(self):
         """Gets the consistency of this OpenGaussHa.
 
@@ -112,6 +90,28 @@ class OpenGaussHa:
         :type: str
         """
         self._consistency = consistency
+
+    @property
+    def replication_mode(self):
+        """Gets the replication_mode of this OpenGaussHa.
+
+        备机同步参数。  取值：  GaussDB(for openGauss)为“sync\"  说明： - “sync”为同步模式。
+
+        :return: The replication_mode of this OpenGaussHa.
+        :rtype: str
+        """
+        return self._replication_mode
+
+    @replication_mode.setter
+    def replication_mode(self, replication_mode):
+        """Sets the replication_mode of this OpenGaussHa.
+
+        备机同步参数。  取值：  GaussDB(for openGauss)为“sync\"  说明： - “sync”为同步模式。
+
+        :param replication_mode: The replication_mode of this OpenGaussHa.
+        :type: str
+        """
+        self._replication_mode = replication_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -217,7 +217,7 @@ class NodeExtendParam:
     def period_type(self):
         """Gets the period_type of this NodeExtendParam.
 
-        订购周期类型，取值范围： - month：月 - year：年 > billingMode为2（自动付费包周期）时生效，且为必选。 
+        - month：月 - year：年 > billingMode为1（包周期）或2（已废弃：自动付费包周期）时生效，且为必选。 
 
         :return: The period_type of this NodeExtendParam.
         :rtype: str
@@ -228,7 +228,7 @@ class NodeExtendParam:
     def period_type(self, period_type):
         """Sets the period_type of this NodeExtendParam.
 
-        订购周期类型，取值范围： - month：月 - year：年 > billingMode为2（自动付费包周期）时生效，且为必选。 
+        - month：月 - year：年 > billingMode为1（包周期）或2（已废弃：自动付费包周期）时生效，且为必选。 
 
         :param period_type: The period_type of this NodeExtendParam.
         :type: str
@@ -239,7 +239,7 @@ class NodeExtendParam:
     def period_num(self):
         """Gets the period_num of this NodeExtendParam.
 
-        订购周期数，取值范围： - periodType=month（周期类型为月）时，取值为[1-9]。 - periodType=year（周期类型为年）时，取值为1。 > billingMode为2时生效，且为必选。 
+        订购周期数，取值范围： - periodType=month（周期类型为月）时，取值为[1-9]。 - periodType=year（周期类型为年）时，取值为1。 > billingMode为1或2（已废弃）时生效，且为必选。 
 
         :return: The period_num of this NodeExtendParam.
         :rtype: int
@@ -250,7 +250,7 @@ class NodeExtendParam:
     def period_num(self, period_num):
         """Sets the period_num of this NodeExtendParam.
 
-        订购周期数，取值范围： - periodType=month（周期类型为月）时，取值为[1-9]。 - periodType=year（周期类型为年）时，取值为1。 > billingMode为2时生效，且为必选。 
+        订购周期数，取值范围： - periodType=month（周期类型为月）时，取值为[1-9]。 - periodType=year（周期类型为年）时，取值为1。 > billingMode为1或2（已废弃）时生效，且为必选。 
 
         :param period_num: The period_num of this NodeExtendParam.
         :type: int
@@ -261,7 +261,7 @@ class NodeExtendParam:
     def is_auto_renew(self):
         """Gets the is_auto_renew of this NodeExtendParam.
 
-        是否自动续订 - “true”：自动续订 - “false”：不自动续订 > billingMode为2时生效，且为必选。 
+        是否自动续订 - “true”：自动续订 - “false”：不自动续订 > billingMode为1或2（已废弃）时生效，不填写此参数时默认不会自动续费。 
 
         :return: The is_auto_renew of this NodeExtendParam.
         :rtype: str
@@ -272,7 +272,7 @@ class NodeExtendParam:
     def is_auto_renew(self, is_auto_renew):
         """Sets the is_auto_renew of this NodeExtendParam.
 
-        是否自动续订 - “true”：自动续订 - “false”：不自动续订 > billingMode为2时生效，且为必选。 
+        是否自动续订 - “true”：自动续订 - “false”：不自动续订 > billingMode为1或2（已废弃）时生效，不填写此参数时默认不会自动续费。 
 
         :param is_auto_renew: The is_auto_renew of this NodeExtendParam.
         :type: str
@@ -283,7 +283,7 @@ class NodeExtendParam:
     def is_auto_pay(self):
         """Gets the is_auto_pay of this NodeExtendParam.
 
-        是否自动扣款 - “true”：自动扣款 - “false”：不自动扣款 > billingMode为2时生效，不填写此参数时默认会自动扣款。 
+        是否自动扣款 - “true”：自动扣款 - “false”：不自动扣款 > billingMode为1或2（已废弃）时生效，billingMode为1时不填写此参数时默认不会自动扣款。（已废弃：billingMode为2时不填写此参数时默认会自动扣款） 
 
         :return: The is_auto_pay of this NodeExtendParam.
         :rtype: str
@@ -294,7 +294,7 @@ class NodeExtendParam:
     def is_auto_pay(self, is_auto_pay):
         """Sets the is_auto_pay of this NodeExtendParam.
 
-        是否自动扣款 - “true”：自动扣款 - “false”：不自动扣款 > billingMode为2时生效，不填写此参数时默认会自动扣款。 
+        是否自动扣款 - “true”：自动扣款 - “false”：不自动扣款 > billingMode为1或2（已废弃）时生效，billingMode为1时不填写此参数时默认不会自动扣款。（已废弃：billingMode为2时不填写此参数时默认会自动扣款） 
 
         :param is_auto_pay: The is_auto_pay of this NodeExtendParam.
         :type: str

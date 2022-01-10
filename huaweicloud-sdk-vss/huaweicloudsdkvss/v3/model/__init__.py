@@ -3,13 +3,27 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkvss.v3.model.authorize_domains_request import AuthorizeDomainsRequest
+from huaweicloudsdkvss.v3.model.authorize_domains_request_body import AuthorizeDomainsRequestBody
+from huaweicloudsdkvss.v3.model.authorize_domains_response import AuthorizeDomainsResponse
 from huaweicloudsdkvss.v3.model.create_domains_request import CreateDomainsRequest
 from huaweicloudsdkvss.v3.model.create_domains_request_body import CreateDomainsRequestBody
 from huaweicloudsdkvss.v3.model.create_domains_response import CreateDomainsResponse
+from huaweicloudsdkvss.v3.model.create_tasks_request import CreateTasksRequest
+from huaweicloudsdkvss.v3.model.create_tasks_request_body import CreateTasksRequestBody
+from huaweicloudsdkvss.v3.model.create_tasks_response import CreateTasksResponse
 from huaweicloudsdkvss.v3.model.delete_domains_request import DeleteDomainsRequest
 from huaweicloudsdkvss.v3.model.delete_domains_response import DeleteDomainsResponse
 from huaweicloudsdkvss.v3.model.domain_item import DomainItem
 from huaweicloudsdkvss.v3.model.list_domains_request import ListDomainsRequest
 from huaweicloudsdkvss.v3.model.list_domains_response import ListDomainsResponse
 from huaweicloudsdkvss.v3.model.operate_info_response_body import OperateInfoResponseBody
+from huaweicloudsdkvss.v3.model.show_results_request import ShowResultsRequest
+from huaweicloudsdkvss.v3.model.show_results_response import ShowResultsResponse
+from huaweicloudsdkvss.v3.model.show_tasks_request import ShowTasksRequest
+from huaweicloudsdkvss.v3.model.show_tasks_response import ShowTasksResponse
+from huaweicloudsdkvss.v3.model.task_infos import TaskInfos
+from huaweicloudsdkvss.v3.model.task_settings import TaskSettings
+from huaweicloudsdkvss.v3.model.task_settings_task_config import TaskSettingsTaskConfig
+from huaweicloudsdkvss.v3.model.vuln_item import VulnItem
 from huaweicloudsdkvss.v3.model.vulns_level import VulnsLevel

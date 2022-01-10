@@ -23,27 +23,32 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'user_coupons': 'list[CouponInfoV2]'
+        'user_coupons': 'list[CouponInfoV2]',
+        'coupon_max_use_quantity': 'list[CouponMaxUseQuantity]'
     }
 
     attribute_map = {
         'count': 'count',
-        'user_coupons': 'user_coupons'
+        'user_coupons': 'user_coupons',
+        'coupon_max_use_quantity': 'coupon_max_use_quantity'
     }
 
-    def __init__(self, count=None, user_coupons=None):
+    def __init__(self, count=None, user_coupons=None, coupon_max_use_quantity=None):
         """ListOrderCouponsByOrderIdResponse - a model defined in huaweicloud sdk"""
         
         super(ListOrderCouponsByOrderIdResponse, self).__init__()
 
         self._count = None
         self._user_coupons = None
+        self._coupon_max_use_quantity = None
         self.discriminator = None
 
         if count is not None:
             self.count = count
         if user_coupons is not None:
             self.user_coupons = user_coupons
+        if coupon_max_use_quantity is not None:
+            self.coupon_max_use_quantity = coupon_max_use_quantity
 
     @property
     def count(self):
@@ -88,6 +93,28 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
         :type: list[CouponInfoV2]
         """
         self._user_coupons = user_coupons
+
+    @property
+    def coupon_max_use_quantity(self):
+        """Gets the coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
+
+        |参数名称：代金券使用的最大数量。具体请参见表 CouponMaxUseQuantity| |参数约束以及描述：代金券使用的最大数量。具体请参见表 CouponMaxUseQuantity|
+
+        :return: The coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
+        :rtype: list[CouponMaxUseQuantity]
+        """
+        return self._coupon_max_use_quantity
+
+    @coupon_max_use_quantity.setter
+    def coupon_max_use_quantity(self, coupon_max_use_quantity):
+        """Sets the coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
+
+        |参数名称：代金券使用的最大数量。具体请参见表 CouponMaxUseQuantity| |参数约束以及描述：代金券使用的最大数量。具体请参见表 CouponMaxUseQuantity|
+
+        :param coupon_max_use_quantity: The coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
+        :type: list[CouponMaxUseQuantity]
+        """
+        self._coupon_max_use_quantity = coupon_max_use_quantity
 
     def to_dict(self):
         """Returns the model properties as a dict"""

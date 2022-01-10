@@ -28,6 +28,7 @@ class StopMigrationTaskResponse(SdkResponse):
         'status': 'str',
         'migration_type': 'str',
         'migration_method': 'str',
+        'ecs_tenant_private_ip': 'str',
         'backup_files': 'BackupFilesBody',
         'network_type': 'str',
         'source_instance': 'SourceInstanceBody',
@@ -43,6 +44,7 @@ class StopMigrationTaskResponse(SdkResponse):
         'status': 'status',
         'migration_type': 'migration_type',
         'migration_method': 'migration_method',
+        'ecs_tenant_private_ip': 'ecs_tenant_private_ip',
         'backup_files': 'backup_files',
         'network_type': 'network_type',
         'source_instance': 'source_instance',
@@ -51,7 +53,7 @@ class StopMigrationTaskResponse(SdkResponse):
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, task_id=None, task_name=None, description=None, status=None, migration_type=None, migration_method=None, backup_files=None, network_type=None, source_instance=None, target_instance=None, created_at=None, updated_at=None):
+    def __init__(self, task_id=None, task_name=None, description=None, status=None, migration_type=None, migration_method=None, ecs_tenant_private_ip=None, backup_files=None, network_type=None, source_instance=None, target_instance=None, created_at=None, updated_at=None):
         """StopMigrationTaskResponse - a model defined in huaweicloud sdk"""
         
         super(StopMigrationTaskResponse, self).__init__()
@@ -62,6 +64,7 @@ class StopMigrationTaskResponse(SdkResponse):
         self._status = None
         self._migration_type = None
         self._migration_method = None
+        self._ecs_tenant_private_ip = None
         self._backup_files = None
         self._network_type = None
         self._source_instance = None
@@ -82,6 +85,8 @@ class StopMigrationTaskResponse(SdkResponse):
             self.migration_type = migration_type
         if migration_method is not None:
             self.migration_method = migration_method
+        if ecs_tenant_private_ip is not None:
+            self.ecs_tenant_private_ip = ecs_tenant_private_ip
         if backup_files is not None:
             self.backup_files = backup_files
         if network_type is not None:
@@ -226,6 +231,28 @@ class StopMigrationTaskResponse(SdkResponse):
         :type: str
         """
         self._migration_method = migration_method
+
+    @property
+    def ecs_tenant_private_ip(self):
+        """Gets the ecs_tenant_private_ip of this StopMigrationTaskResponse.
+
+        迁移机租户侧私有IP，与目的/源redis私有IP处于同VPC，可将此IP加入白名单
+
+        :return: The ecs_tenant_private_ip of this StopMigrationTaskResponse.
+        :rtype: str
+        """
+        return self._ecs_tenant_private_ip
+
+    @ecs_tenant_private_ip.setter
+    def ecs_tenant_private_ip(self, ecs_tenant_private_ip):
+        """Sets the ecs_tenant_private_ip of this StopMigrationTaskResponse.
+
+        迁移机租户侧私有IP，与目的/源redis私有IP处于同VPC，可将此IP加入白名单
+
+        :param ecs_tenant_private_ip: The ecs_tenant_private_ip of this StopMigrationTaskResponse.
+        :type: str
+        """
+        self._ecs_tenant_private_ip = ecs_tenant_private_ip
 
     @property
     def backup_files(self):

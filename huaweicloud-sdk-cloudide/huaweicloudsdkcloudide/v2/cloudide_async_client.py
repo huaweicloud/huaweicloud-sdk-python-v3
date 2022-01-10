@@ -178,23 +178,23 @@ class CloudIDEAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_stacks_by_tag_async(self, request):
-        """获取标签所有技术栈
+    def list_stacks_async(self, request):
+        """按region获取标签所有技术栈
 
-        获取标签所有技术栈
+        按region获取标签所有技术栈
 
-        :param ListStacksByTagRequest request
-        :return: ListStacksByTagResponse
+        :param ListStacksRequest request
+        :return: ListStacksResponse
         """
-        return self.list_stacks_by_tag_with_http_info(request)
+        return self.list_stacks_with_http_info(request)
 
-    def list_stacks_by_tag_with_http_info(self, request):
-        """获取标签所有技术栈
+    def list_stacks_with_http_info(self, request):
+        """按region获取标签所有技术栈
 
-        获取标签所有技术栈
+        按region获取标签所有技术栈
 
-        :param ListStacksByTagRequest request
-        :return: ListStacksByTagResponse
+        :param ListStacksRequest request
+        :return: ListStacksResponse
         """
 
         all_params = ['tags']
@@ -210,7 +210,6 @@ class CloudIDEAsyncClient(Client):
         query_params = []
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
-            collection_formats['tags'] = 'multi'
 
         header_params = {}
 
@@ -228,14 +227,14 @@ class CloudIDEAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/stacks',
+            resource_path='/v2/stacks/tag',
             method='GET',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ListStacksByTagResponse',
+            response_type='ListStacksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

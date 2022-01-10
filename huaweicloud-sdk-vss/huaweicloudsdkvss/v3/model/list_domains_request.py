@@ -54,7 +54,7 @@ class ListDomainsRequest:
     def auth_status(self):
         """Gets the auth_status of this ListDomainsRequest.
 
-        域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证 
+        域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
 
         :return: The auth_status of this ListDomainsRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class ListDomainsRequest:
     def auth_status(self, auth_status):
         """Sets the auth_status of this ListDomainsRequest.
 
-        域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证 
+        域名的认证状态:   * unauth - 未认证   * auth - 已认证   * invalid - 认证文件无效   * manual - 人工认证   * skip - 免认证 
 
         :param auth_status: The auth_status of this ListDomainsRequest.
         :type: str

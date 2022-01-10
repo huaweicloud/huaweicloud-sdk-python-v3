@@ -109,7 +109,7 @@ class ShowDomainItemDetailsRequest:
     def end_time(self):
         """Gets the end_time of this ShowDomainItemDetailsRequest.
 
-        查询结束时间戳，必须设为5分钟整时刻点，与开始时间戳时间差不可以超过一天
+        查询结束时间戳，必须设为5分钟整时刻点
 
         :return: The end_time of this ShowDomainItemDetailsRequest.
         :rtype: int
@@ -120,7 +120,7 @@ class ShowDomainItemDetailsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowDomainItemDetailsRequest.
 
-        查询结束时间戳，必须设为5分钟整时刻点，与开始时间戳时间差不可以超过一天
+        查询结束时间戳，必须设为5分钟整时刻点
 
         :param end_time: The end_time of this ShowDomainItemDetailsRequest.
         :type: int

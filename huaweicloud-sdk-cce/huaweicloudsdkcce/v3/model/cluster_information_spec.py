@@ -22,23 +22,33 @@ class ClusterInformationSpec:
     sensitive_list = []
 
     openapi_types = {
-        'description': 'str'
+        'description': 'str',
+        'custom_san': 'list[str]',
+        'container_network': 'ContainerNetworkUpdate'
     }
 
     attribute_map = {
-        'description': 'description'
+        'description': 'description',
+        'custom_san': 'customSan',
+        'container_network': 'containerNetwork'
     }
 
-    def __init__(self, description=None):
+    def __init__(self, description=None, custom_san=None, container_network=None):
         """ClusterInformationSpec - a model defined in huaweicloud sdk"""
         
         
 
         self._description = None
+        self._custom_san = None
+        self._container_network = None
         self.discriminator = None
 
         if description is not None:
             self.description = description
+        if custom_san is not None:
+            self.custom_san = custom_san
+        if container_network is not None:
+            self.container_network = container_network
 
     @property
     def description(self):
@@ -61,6 +71,48 @@ class ClusterInformationSpec:
         :type: str
         """
         self._description = description
+
+    @property
+    def custom_san(self):
+        """Gets the custom_san of this ClusterInformationSpec.
+
+        集群的API Server服务端证书中的自定义SAN（Subject Alternative Name）字段，遵从SSL标准X509定义的格式规范。  1. 不允许出现同名重复。 2. 格式符合IP和域名格式。  example: SAN 1: DNS Name=example.com SAN 2: DNS Name=www.example.com SAN 3: DNS Name=example.net SAN 4: IP Address=93.184.216.34
+
+        :return: The custom_san of this ClusterInformationSpec.
+        :rtype: list[str]
+        """
+        return self._custom_san
+
+    @custom_san.setter
+    def custom_san(self, custom_san):
+        """Sets the custom_san of this ClusterInformationSpec.
+
+        集群的API Server服务端证书中的自定义SAN（Subject Alternative Name）字段，遵从SSL标准X509定义的格式规范。  1. 不允许出现同名重复。 2. 格式符合IP和域名格式。  example: SAN 1: DNS Name=example.com SAN 2: DNS Name=www.example.com SAN 3: DNS Name=example.net SAN 4: IP Address=93.184.216.34
+
+        :param custom_san: The custom_san of this ClusterInformationSpec.
+        :type: list[str]
+        """
+        self._custom_san = custom_san
+
+    @property
+    def container_network(self):
+        """Gets the container_network of this ClusterInformationSpec.
+
+
+        :return: The container_network of this ClusterInformationSpec.
+        :rtype: ContainerNetworkUpdate
+        """
+        return self._container_network
+
+    @container_network.setter
+    def container_network(self, container_network):
+        """Sets the container_network of this ClusterInformationSpec.
+
+
+        :param container_network: The container_network of this ClusterInformationSpec.
+        :type: ContainerNetworkUpdate
+        """
+        self._container_network = container_network
 
     def to_dict(self):
         """Returns the model properties as a dict"""

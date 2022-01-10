@@ -945,9 +945,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
 
     def list_instances_async(self, request):
-        """查询实例列表
+        """查询实例列表和详情
 
-        根据指定条件查询数据库实例列表。
+        根据指定条件查询数据库实例列表和详情。
 
         :param ListInstancesRequest request
         :return: ListInstancesResponse
@@ -955,9 +955,9 @@ class GaussDBforNoSQLAsyncClient(Client):
         return self.list_instances_with_http_info(request)
 
     def list_instances_with_http_info(self, request):
-        """查询实例列表
+        """查询实例列表和详情
 
-        根据指定条件查询数据库实例列表。
+        根据指定条件查询数据库实例列表和详情。
 
         :param ListInstancesRequest request
         :return: ListInstancesResponse

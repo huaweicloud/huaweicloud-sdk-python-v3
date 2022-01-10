@@ -23,26 +23,31 @@ class ContainerNetwork:
 
     openapi_types = {
         'mode': 'str',
-        'cidr': 'str'
+        'cidr': 'str',
+        'cidrs': 'list[ContainerCIDR]'
     }
 
     attribute_map = {
         'mode': 'mode',
-        'cidr': 'cidr'
+        'cidr': 'cidr',
+        'cidrs': 'cidrs'
     }
 
-    def __init__(self, mode=None, cidr=None):
+    def __init__(self, mode=None, cidr=None, cidrs=None):
         """ContainerNetwork - a model defined in huaweicloud sdk"""
         
         
 
         self._mode = None
         self._cidr = None
+        self._cidrs = None
         self.discriminator = None
 
         self.mode = mode
         if cidr is not None:
             self.cidr = cidr
+        if cidrs is not None:
+            self.cidrs = cidrs
 
     @property
     def mode(self):
@@ -70,7 +75,7 @@ class ContainerNetwork:
     def cidr(self):
         """Gets the cidr of this ContainerNetwork.
 
-        容器网络网段，建议使用网段10.0.0.0/12~19，172.16.0.0/16~19，192.168.0.0/16~19，如存在网段冲突，将自动重新选择。   当节点最大实例数为默认值110时，当前容器网段至少支持582个节点，此参数在集群创建后不可更改，请谨慎选择。
+        容器网络网段，建议使用网段10.0.0.0/12~19，172.16.0.0/16~19，192.168.0.0/16~19，如存在网段冲突，将会报错。   此参数在集群创建后不可更改，请谨慎选择。（已废弃，如填写cidrs将忽略该cidr）
 
         :return: The cidr of this ContainerNetwork.
         :rtype: str
@@ -81,12 +86,34 @@ class ContainerNetwork:
     def cidr(self, cidr):
         """Sets the cidr of this ContainerNetwork.
 
-        容器网络网段，建议使用网段10.0.0.0/12~19，172.16.0.0/16~19，192.168.0.0/16~19，如存在网段冲突，将自动重新选择。   当节点最大实例数为默认值110时，当前容器网段至少支持582个节点，此参数在集群创建后不可更改，请谨慎选择。
+        容器网络网段，建议使用网段10.0.0.0/12~19，172.16.0.0/16~19，192.168.0.0/16~19，如存在网段冲突，将会报错。   此参数在集群创建后不可更改，请谨慎选择。（已废弃，如填写cidrs将忽略该cidr）
 
         :param cidr: The cidr of this ContainerNetwork.
         :type: str
         """
         self._cidr = cidr
+
+    @property
+    def cidrs(self):
+        """Gets the cidrs of this ContainerNetwork.
+
+        容器网络网段列表。1.21及新版本集群使用cidrs字段，当集群网络类型为vpc-router类型时，支持多个容器网段；1.21之前版本若使用cidrs字段，则取值cidrs数组中的第一个cidr元素作为容器网络网段地址。  此参数在集群创建后不可更改，请谨慎选择。
+
+        :return: The cidrs of this ContainerNetwork.
+        :rtype: list[ContainerCIDR]
+        """
+        return self._cidrs
+
+    @cidrs.setter
+    def cidrs(self, cidrs):
+        """Sets the cidrs of this ContainerNetwork.
+
+        容器网络网段列表。1.21及新版本集群使用cidrs字段，当集群网络类型为vpc-router类型时，支持多个容器网段；1.21之前版本若使用cidrs字段，则取值cidrs数组中的第一个cidr元素作为容器网络网段地址。  此参数在集群创建后不可更改，请谨慎选择。
+
+        :param cidrs: The cidrs of this ContainerNetwork.
+        :type: list[ContainerCIDR]
+        """
+        self._cidrs = cidrs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

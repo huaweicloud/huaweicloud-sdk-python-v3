@@ -26,7 +26,6 @@ class CreateDictionaryResponse(SdkResponse):
         'name': 'str',
         'remark': 'str',
         'code': 'str',
-        'order': 'int',
         'extend_one': 'str',
         'extend_two': 'str',
         'parent_code': 'str',
@@ -40,7 +39,6 @@ class CreateDictionaryResponse(SdkResponse):
         'name': 'name',
         'remark': 'remark',
         'code': 'code',
-        'order': 'order',
         'extend_one': 'extend_one',
         'extend_two': 'extend_two',
         'parent_code': 'parent_code',
@@ -49,7 +47,7 @@ class CreateDictionaryResponse(SdkResponse):
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, name=None, remark=None, code=None, order=None, extend_one=None, extend_two=None, parent_code=None, type=None, create_time=None, update_time=None):
+    def __init__(self, id=None, name=None, remark=None, code=None, extend_one=None, extend_two=None, parent_code=None, type=None, create_time=None, update_time=None):
         """CreateDictionaryResponse - a model defined in huaweicloud sdk"""
         
         super(CreateDictionaryResponse, self).__init__()
@@ -58,7 +56,6 @@ class CreateDictionaryResponse(SdkResponse):
         self._name = None
         self._remark = None
         self._code = None
-        self._order = None
         self._extend_one = None
         self._extend_two = None
         self._parent_code = None
@@ -75,8 +72,6 @@ class CreateDictionaryResponse(SdkResponse):
             self.remark = remark
         if code is not None:
             self.code = code
-        if order is not None:
-            self.order = order
         if extend_one is not None:
             self.extend_one = extend_one
         if extend_two is not None:
@@ -177,28 +172,6 @@ class CreateDictionaryResponse(SdkResponse):
         :type: str
         """
         self._code = code
-
-    @property
-    def order(self):
-        """Gets the order of this CreateDictionaryResponse.
-
-        字典排序，值越小顺序越靠前
-
-        :return: The order of this CreateDictionaryResponse.
-        :rtype: int
-        """
-        return self._order
-
-    @order.setter
-    def order(self, order):
-        """Sets the order of this CreateDictionaryResponse.
-
-        字典排序，值越小顺序越靠前
-
-        :param order: The order of this CreateDictionaryResponse.
-        :type: int
-        """
-        self._order = order
 
     @property
     def extend_one(self):

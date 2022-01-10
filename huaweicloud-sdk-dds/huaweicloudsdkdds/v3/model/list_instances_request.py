@@ -84,7 +84,7 @@ class ListInstancesRequest:
     def id(self):
         """Gets the id of this ListInstancesRequest.
 
-        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The id of this ListInstancesRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ListInstancesRequest:
     def id(self, id):
         """Sets the id of this ListInstancesRequest.
 
-        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param id: The id of this ListInstancesRequest.
         :type: str

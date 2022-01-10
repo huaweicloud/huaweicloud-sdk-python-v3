@@ -334,7 +334,7 @@ class NodeSpec:
     def billing_mode(self):
         """Gets the billing_mode of this NodeSpec.
 
-        节点的计费模式：取值为 0（按需付费）、1（包周期）、2（自动付费包周期）
+        节点的计费模式：取值为 0（按需付费）、1（包周期）、2（已废弃：自动付费包周期）
 
         :return: The billing_mode of this NodeSpec.
         :rtype: int
@@ -345,7 +345,7 @@ class NodeSpec:
     def billing_mode(self, billing_mode):
         """Sets the billing_mode of this NodeSpec.
 
-        节点的计费模式：取值为 0（按需付费）、1（包周期）、2（自动付费包周期）
+        节点的计费模式：取值为 0（按需付费）、1（包周期）、2（已废弃：自动付费包周期）
 
         :param billing_mode: The billing_mode of this NodeSpec.
         :type: int
@@ -444,7 +444,7 @@ class NodeSpec:
     def user_tags(self):
         """Gets the user_tags of this NodeSpec.
 
-        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限最少为5个。
+        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为5个。
 
         :return: The user_tags of this NodeSpec.
         :rtype: list[UserTag]
@@ -455,7 +455,7 @@ class NodeSpec:
     def user_tags(self, user_tags):
         """Sets the user_tags of this NodeSpec.
 
-        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限最少为5个。
+        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为5个。
 
         :param user_tags: The user_tags of this NodeSpec.
         :type: list[UserTag]

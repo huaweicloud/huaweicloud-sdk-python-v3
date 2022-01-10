@@ -59,7 +59,7 @@ class CreateInstanceFlavorResult:
     def num(self):
         """Gets the num of this CreateInstanceFlavorResult.
 
-        节点数量。   - GaussDB(for Cassandra)实例的节点数量可取3~12。   - GaussDB(for Mongo)3.4版本集群实例的节点数量可取3~16。   - GaussDB(for Mongo)4.0版本副本集实例的节点数量可取3。   - GaussDB(for Influx)实例的节点数量可取3~16。
+        节点数量。   - GaussDB(for Cassandra)实例的节点数量可取3~12。   - GaussDB(for Mongo)4.0版本副本集实例的节点数量可取3。   - GaussDB(for Influx)实例的节点数量可取3~16。
 
         :return: The num of this CreateInstanceFlavorResult.
         :rtype: str
@@ -70,7 +70,7 @@ class CreateInstanceFlavorResult:
     def num(self, num):
         """Sets the num of this CreateInstanceFlavorResult.
 
-        节点数量。   - GaussDB(for Cassandra)实例的节点数量可取3~12。   - GaussDB(for Mongo)3.4版本集群实例的节点数量可取3~16。   - GaussDB(for Mongo)4.0版本副本集实例的节点数量可取3。   - GaussDB(for Influx)实例的节点数量可取3~16。
+        节点数量。   - GaussDB(for Cassandra)实例的节点数量可取3~12。   - GaussDB(for Mongo)4.0版本副本集实例的节点数量可取3。   - GaussDB(for Influx)实例的节点数量可取3~16。
 
         :param num: The num of this CreateInstanceFlavorResult.
         :type: str

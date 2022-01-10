@@ -28,6 +28,7 @@ class ClusterSpec:
         'version': 'str',
         'platform_version': 'str',
         'description': 'str',
+        'custom_san': 'list[str]',
         'ipv6enable': 'bool',
         'host_network': 'HostNetwork',
         'container_network': 'ContainerNetwork',
@@ -50,6 +51,7 @@ class ClusterSpec:
         'version': 'version',
         'platform_version': 'platformVersion',
         'description': 'description',
+        'custom_san': 'customSan',
         'ipv6enable': 'ipv6enable',
         'host_network': 'hostNetwork',
         'container_network': 'containerNetwork',
@@ -65,7 +67,7 @@ class ClusterSpec:
         'support_istio': 'supportIstio'
     }
 
-    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None):
+    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None):
         """ClusterSpec - a model defined in huaweicloud sdk"""
         
         
@@ -76,6 +78,7 @@ class ClusterSpec:
         self._version = None
         self._platform_version = None
         self._description = None
+        self._custom_san = None
         self._ipv6enable = None
         self._host_network = None
         self._container_network = None
@@ -102,6 +105,8 @@ class ClusterSpec:
             self.platform_version = platform_version
         if description is not None:
             self.description = description
+        if custom_san is not None:
+            self.custom_san = custom_san
         if ipv6enable is not None:
             self.ipv6enable = ipv6enable
         self.host_network = host_network
@@ -258,6 +263,28 @@ class ClusterSpec:
         :type: str
         """
         self._description = description
+
+    @property
+    def custom_san(self):
+        """Gets the custom_san of this ClusterSpec.
+
+        集群的API Server服务端证书中的自定义SAN（Subject Alternative Name）字段，遵从SSL标准X509定义的格式规范。  1. 不允许出现同名重复。 2. 格式符合IP和域名格式。  example: SAN 1: DNS Name=example.com SAN 2: DNS Name=www.example.com SAN 3: DNS Name=example.net SAN 4: IP Address=93.184.216.34
+
+        :return: The custom_san of this ClusterSpec.
+        :rtype: list[str]
+        """
+        return self._custom_san
+
+    @custom_san.setter
+    def custom_san(self, custom_san):
+        """Sets the custom_san of this ClusterSpec.
+
+        集群的API Server服务端证书中的自定义SAN（Subject Alternative Name）字段，遵从SSL标准X509定义的格式规范。  1. 不允许出现同名重复。 2. 格式符合IP和域名格式。  example: SAN 1: DNS Name=example.com SAN 2: DNS Name=www.example.com SAN 3: DNS Name=example.net SAN 4: IP Address=93.184.216.34
+
+        :param custom_san: The custom_san of this ClusterSpec.
+        :type: list[str]
+        """
+        self._custom_san = custom_san
 
     @property
     def ipv6enable(self):

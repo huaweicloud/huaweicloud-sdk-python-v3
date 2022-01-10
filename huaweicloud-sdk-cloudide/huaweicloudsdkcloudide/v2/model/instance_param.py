@@ -178,7 +178,7 @@ class InstanceParam:
     def cpu_memory(self):
         """Gets the cpu_memory of this InstanceParam.
 
-        cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacksByTag接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
+        cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
 
         :return: The cpu_memory of this InstanceParam.
         :rtype: str
@@ -189,7 +189,7 @@ class InstanceParam:
     def cpu_memory(self, cpu_memory):
         """Sets the cpu_memory of this InstanceParam.
 
-        cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacksByTag接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
+        cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
 
         :param cpu_memory: The cpu_memory of this InstanceParam.
         :type: str
@@ -442,7 +442,7 @@ class InstanceParam:
     def stack_id(self):
         """Gets the stack_id of this InstanceParam.
 
-        技术栈ID，通过技术栈管理ListStacksByTag接口获取。
+        技术栈ID，通过技术栈管理ListStacks接口获取。
 
         :return: The stack_id of this InstanceParam.
         :rtype: str
@@ -453,7 +453,7 @@ class InstanceParam:
     def stack_id(self, stack_id):
         """Sets the stack_id of this InstanceParam.
 
-        技术栈ID，通过技术栈管理ListStacksByTag接口获取。
+        技术栈ID，通过技术栈管理ListStacks接口获取。
 
         :param stack_id: The stack_id of this InstanceParam.
         :type: str

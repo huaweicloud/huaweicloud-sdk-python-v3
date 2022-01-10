@@ -49,7 +49,7 @@ class JobStatus:
     def phase(self):
         """Gets the phase of this JobStatus.
 
-        作业的状态，有如下四种状态：  - JobPhaseInitializing JobPhase = \"Initializing\" - JobPhaseRunning JobPhase = \"Running\" - JobPhaseFailed JobPhase = \"Failed\" - JobPhaseSuccess JobPhase = \"Success\"
+        任务的状态，有如下四种状态：  - JobPhaseInitializing JobPhase = \"Initializing\" - JobPhaseRunning JobPhase = \"Running\" - JobPhaseFailed JobPhase = \"Failed\" - JobPhaseSuccess JobPhase = \"Success\"
 
         :return: The phase of this JobStatus.
         :rtype: str
@@ -60,7 +60,7 @@ class JobStatus:
     def phase(self, phase):
         """Sets the phase of this JobStatus.
 
-        作业的状态，有如下四种状态：  - JobPhaseInitializing JobPhase = \"Initializing\" - JobPhaseRunning JobPhase = \"Running\" - JobPhaseFailed JobPhase = \"Failed\" - JobPhaseSuccess JobPhase = \"Success\"
+        任务的状态，有如下四种状态：  - JobPhaseInitializing JobPhase = \"Initializing\" - JobPhaseRunning JobPhase = \"Running\" - JobPhaseFailed JobPhase = \"Failed\" - JobPhaseSuccess JobPhase = \"Success\"
 
         :param phase: The phase of this JobStatus.
         :type: str
@@ -71,7 +71,7 @@ class JobStatus:
     def reason(self):
         """Gets the reason of this JobStatus.
 
-        作业变为当前状态的原因
+        任务变为当前状态的原因
 
         :return: The reason of this JobStatus.
         :rtype: str
@@ -82,7 +82,7 @@ class JobStatus:
     def reason(self, reason):
         """Sets the reason of this JobStatus.
 
-        作业变为当前状态的原因
+        任务变为当前状态的原因
 
         :param reason: The reason of this JobStatus.
         :type: str

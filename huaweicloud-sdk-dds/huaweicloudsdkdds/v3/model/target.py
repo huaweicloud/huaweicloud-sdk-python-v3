@@ -43,7 +43,7 @@ class Target:
     def instance_id(self):
         """Gets the instance_id of this Target.
 
-        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :return: The instance_id of this Target.
         :rtype: str
@@ -54,7 +54,7 @@ class Target:
     def instance_id(self, instance_id):
         """Sets the instance_id of this Target.
 
-        实例ID，可以调用“查询实例列表”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this Target.
         :type: str

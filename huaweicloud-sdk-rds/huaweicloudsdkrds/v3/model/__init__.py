@@ -3,6 +3,7 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkrds.v3.model.ad_domain_info import ADDomainInfo
 from huaweicloudsdkrds.v3.model.allow_db_privilege_request import AllowDbPrivilegeRequest
 from huaweicloudsdkrds.v3.model.allow_db_privilege_response import AllowDbPrivilegeResponse
 from huaweicloudsdkrds.v3.model.allow_db_user_privilege_request import AllowDbUserPrivilegeRequest

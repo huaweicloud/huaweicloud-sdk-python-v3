@@ -283,7 +283,7 @@ class CreateInstanceRequestBody:
     def mode(self):
         """Gets the mode of this CreateInstanceRequestBody.
 
-        实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)3.4版本支持集群类型，取值为“Sharding”   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。
+        实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。
 
         :return: The mode of this CreateInstanceRequestBody.
         :rtype: str
@@ -294,7 +294,7 @@ class CreateInstanceRequestBody:
     def mode(self, mode):
         """Sets the mode of this CreateInstanceRequestBody.
 
-        实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)3.4版本支持集群类型，取值为“Sharding”   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。
+        实例类型。   - GaussDB(for Cassandra)支持集群类型，取值为“Cluster”。   - GaussDB(for Mongo)4.0版本支持副本集类型，取值为“ReplicaSet”。   - GaussDB(for Influx)支持集群类型，取值为“Cluster”。
 
         :param mode: The mode of this CreateInstanceRequestBody.
         :type: str

@@ -43,7 +43,7 @@ class OpenGaussChargeInfoResponse:
     def charge_mode(self):
         """Gets the charge_mode of this OpenGaussChargeInfoResponse.
 
-        创建类型，支持按需。
+        计费模式。 取值范围： postPaid：后付费，即按需付费。 取值：postPaid，后付费，即按需付费。
 
         :return: The charge_mode of this OpenGaussChargeInfoResponse.
         :rtype: str
@@ -54,7 +54,7 @@ class OpenGaussChargeInfoResponse:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this OpenGaussChargeInfoResponse.
 
-        创建类型，支持按需。
+        计费模式。 取值范围： postPaid：后付费，即按需付费。 取值：postPaid，后付费，即按需付费。
 
         :param charge_mode: The charge_mode of this OpenGaussChargeInfoResponse.
         :type: str

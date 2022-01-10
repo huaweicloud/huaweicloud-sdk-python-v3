@@ -99,7 +99,7 @@ class HttpInfoRequestBody:
     def https_status(self):
         """Gets the https_status of this HttpInfoRequestBody.
 
-        HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，首次配置证书需要传递证书及私钥，如已有证书可不用传证书及私钥。
+        HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源；3：启用HTTPS加速并HTTPS回源，首次配置证书需要传递证书及私钥，如已有证书可不用传证书及私钥。
 
         :return: The https_status of this HttpInfoRequestBody.
         :rtype: int
@@ -110,7 +110,7 @@ class HttpInfoRequestBody:
     def https_status(self, https_status):
         """Sets the https_status of this HttpInfoRequestBody.
 
-        HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源，首次配置证书需要传递证书及私钥，如已有证书可不用传证书及私钥。
+        HTTPS证书是否启用。0：不启用，此时无需填写证书及私钥参数；1：启用HTTPS加速并协议跟随回源；2：启用HTTPS加速并HTTP回源；3：启用HTTPS加速并HTTPS回源，首次配置证书需要传递证书及私钥，如已有证书可不用传证书及私钥。
 
         :param https_status: The https_status of this HttpInfoRequestBody.
         :type: int

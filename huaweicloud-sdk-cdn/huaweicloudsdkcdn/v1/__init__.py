@@ -14,6 +14,7 @@ from huaweicloudsdkcdn.v1.model.cdn_ips import CdnIps
 from huaweicloudsdkcdn.v1.model.compress_request import CompressRequest
 from huaweicloudsdkcdn.v1.model.compress_response import CompressResponse
 from huaweicloudsdkcdn.v1.model.compress_rules import CompressRules
+from huaweicloudsdkcdn.v1.model.configs import Configs
 from huaweicloudsdkcdn.v1.model.create_domain_request import CreateDomainRequest
 from huaweicloudsdkcdn.v1.model.create_domain_request_body import CreateDomainRequestBody
 from huaweicloudsdkcdn.v1.model.create_domain_response import CreateDomainResponse
@@ -43,14 +44,17 @@ from huaweicloudsdkcdn.v1.model.header_map import HeaderMap
 from huaweicloudsdkcdn.v1.model.http_info_request import HttpInfoRequest
 from huaweicloudsdkcdn.v1.model.http_info_request_body import HttpInfoRequestBody
 from huaweicloudsdkcdn.v1.model.http_info_response_body import HttpInfoResponseBody
+from huaweicloudsdkcdn.v1.model.http_response_header import HttpResponseHeader
 from huaweicloudsdkcdn.v1.model.https_detail import HttpsDetail
 from huaweicloudsdkcdn.v1.model.list_domains_request import ListDomainsRequest
 from huaweicloudsdkcdn.v1.model.list_domains_response import ListDomainsResponse
 from huaweicloudsdkcdn.v1.model.log_object import LogObject
+from huaweicloudsdkcdn.v1.model.modify_domain_config_request_body import ModifyDomainConfigRequestBody
 from huaweicloudsdkcdn.v1.model.origin_host_body import OriginHostBody
 from huaweicloudsdkcdn.v1.model.origin_host_request import OriginHostRequest
 from huaweicloudsdkcdn.v1.model.origin_range_body import OriginRangeBody
 from huaweicloudsdkcdn.v1.model.origin_request import OriginRequest
+from huaweicloudsdkcdn.v1.model.origin_request_header import OriginRequestHeader
 from huaweicloudsdkcdn.v1.model.preheating_task_request import PreheatingTaskRequest
 from huaweicloudsdkcdn.v1.model.preheating_task_request_body import PreheatingTaskRequestBody
 from huaweicloudsdkcdn.v1.model.quotas import Quotas
@@ -104,6 +108,8 @@ from huaweicloudsdkcdn.v1.model.update_black_white_list_request import UpdateBla
 from huaweicloudsdkcdn.v1.model.update_black_white_list_response import UpdateBlackWhiteListResponse
 from huaweicloudsdkcdn.v1.model.update_cache_rules_request import UpdateCacheRulesRequest
 from huaweicloudsdkcdn.v1.model.update_cache_rules_response import UpdateCacheRulesResponse
+from huaweicloudsdkcdn.v1.model.update_domain_full_config_request import UpdateDomainFullConfigRequest
+from huaweicloudsdkcdn.v1.model.update_domain_full_config_response import UpdateDomainFullConfigResponse
 from huaweicloudsdkcdn.v1.model.update_domain_multi_certificates_request import UpdateDomainMultiCertificatesRequest
 from huaweicloudsdkcdn.v1.model.update_domain_multi_certificates_request_body import UpdateDomainMultiCertificatesRequestBody
 from huaweicloudsdkcdn.v1.model.update_domain_multi_certificates_request_body_content import UpdateDomainMultiCertificatesRequestBodyContent
@@ -126,5 +132,6 @@ from huaweicloudsdkcdn.v1.model.update_refer_request import UpdateReferRequest
 from huaweicloudsdkcdn.v1.model.update_refer_response import UpdateReferResponse
 from huaweicloudsdkcdn.v1.model.update_response_header_request import UpdateResponseHeaderRequest
 from huaweicloudsdkcdn.v1.model.update_response_header_response import UpdateResponseHeaderResponse
+from huaweicloudsdkcdn.v1.model.url_auth import UrlAuth
 from huaweicloudsdkcdn.v1.model.url_object import UrlObject
 

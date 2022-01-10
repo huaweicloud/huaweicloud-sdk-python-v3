@@ -639,6 +639,77 @@ class CloudtestClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_plan_list(self, request):
+        """项目下查询测试计划列表v2
+
+        项目下查询测试计划列表v2
+
+        :param ShowPlanListRequest request
+        :return: ShowPlanListResponse
+        """
+        return self.show_plan_list_with_http_info(request)
+
+    def show_plan_list_with_http_info(self, request):
+        """项目下查询测试计划列表v2
+
+        项目下查询测试计划列表v2
+
+        :param ShowPlanListRequest request
+        :return: ShowPlanListResponse
+        """
+
+        all_params = ['project_id', 'offset', 'limit', 'name', 'current_stage']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'current_stage' in local_var_params:
+            query_params.append(('current_stage', local_var_params['current_stage']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/projects/{project_id}/plans',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowPlanListResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_plans(self, request):
         """项目下查询测试计划列表
 
@@ -671,14 +742,14 @@ class CloudtestClient(Client):
             path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
         if 'current_stage' in local_var_params:
             query_params.append(('current_stage', local_var_params['current_stage']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 

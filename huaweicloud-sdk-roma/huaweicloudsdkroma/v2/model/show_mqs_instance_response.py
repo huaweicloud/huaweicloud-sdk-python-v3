@@ -93,7 +93,6 @@ class ShowMqsInstanceResponse(SdkResponse):
         'listeners': 'object',
         'public_access_enabled': 'str',
         'public_boundwidth': 'int',
-        'connect_dn': 'str',
         'agent_enable': 'bool'
     }
 
@@ -169,11 +168,10 @@ class ShowMqsInstanceResponse(SdkResponse):
         'listeners': 'listeners',
         'public_access_enabled': 'public_access_enabled',
         'public_boundwidth': 'public_boundwidth',
-        'connect_dn': 'connect_dn',
         'agent_enable': 'agent_enable'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_name=None, subnet_cidr=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, mqs_connector_enable=None, mqs_connector_address=None, plugin_enable=None, rest_enable=None, rest_connect_address=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, pod_connect_address=None, disk_encrypted=None, kafka_private_connect_address=None, ces_version=None, node_num=None, publicip_address=None, listeners=None, public_access_enabled=None, public_boundwidth=None, connect_dn=None, agent_enable=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_name=None, subnet_cidr=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, mqs_connector_enable=None, mqs_connector_address=None, plugin_enable=None, rest_enable=None, rest_connect_address=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, pod_connect_address=None, disk_encrypted=None, kafka_private_connect_address=None, ces_version=None, node_num=None, publicip_address=None, listeners=None, public_access_enabled=None, public_boundwidth=None, agent_enable=None):
         """ShowMqsInstanceResponse - a model defined in huaweicloud sdk"""
         
         super(ShowMqsInstanceResponse, self).__init__()
@@ -249,7 +247,6 @@ class ShowMqsInstanceResponse(SdkResponse):
         self._listeners = None
         self._public_access_enabled = None
         self._public_boundwidth = None
-        self._connect_dn = None
         self._agent_enable = None
         self.discriminator = None
 
@@ -395,8 +392,6 @@ class ShowMqsInstanceResponse(SdkResponse):
             self.public_access_enabled = public_access_enabled
         if public_boundwidth is not None:
             self.public_boundwidth = public_boundwidth
-        if connect_dn is not None:
-            self.connect_dn = connect_dn
         if agent_enable is not None:
             self.agent_enable = agent_enable
 
@@ -1961,28 +1956,6 @@ class ShowMqsInstanceResponse(SdkResponse):
         :type: int
         """
         self._public_boundwidth = public_boundwidth
-
-    @property
-    def connect_dn(self):
-        """Gets the connect_dn of this ShowMqsInstanceResponse.
-
-        实例连接地址。
-
-        :return: The connect_dn of this ShowMqsInstanceResponse.
-        :rtype: str
-        """
-        return self._connect_dn
-
-    @connect_dn.setter
-    def connect_dn(self, connect_dn):
-        """Sets the connect_dn of this ShowMqsInstanceResponse.
-
-        实例连接地址。
-
-        :param connect_dn: The connect_dn of this ShowMqsInstanceResponse.
-        :type: str
-        """
-        self._connect_dn = connect_dn
 
     @property
     def agent_enable(self):

@@ -47,7 +47,7 @@ class Storage:
     def storage_selectors(self):
         """Gets the storage_selectors of this Storage.
 
-        磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。
+        磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。磁盘匹配存在先后顺序，靠前的匹配规则优先匹配。
 
         :return: The storage_selectors of this Storage.
         :rtype: list[StorageSelectors]
@@ -58,7 +58,7 @@ class Storage:
     def storage_selectors(self, storage_selectors):
         """Sets the storage_selectors of this Storage.
 
-        磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。
+        磁盘选择，根据matchLabels和storageType对匹配的磁盘进行管理。磁盘匹配存在先后顺序，靠前的匹配规则优先匹配。
 
         :param storage_selectors: The storage_selectors of this Storage.
         :type: list[StorageSelectors]

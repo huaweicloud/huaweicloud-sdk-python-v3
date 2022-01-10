@@ -37,7 +37,8 @@ class UpdateFunctionConfigRequestBody:
         'extend_config': 'str',
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'is_stateful_function': 'bool'
     }
 
     attribute_map = {
@@ -56,10 +57,11 @@ class UpdateFunctionConfigRequestBody:
         'extend_config': 'extend_config',
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'is_stateful_function': 'is_stateful_function'
     }
 
-    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None):
+    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, is_stateful_function=None):
         """UpdateFunctionConfigRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -80,6 +82,7 @@ class UpdateFunctionConfigRequestBody:
         self._initializer_handler = None
         self._initializer_timeout = None
         self._enterprise_project_id = None
+        self._is_stateful_function = None
         self.discriminator = None
 
         self.func_name = func_name
@@ -109,6 +112,8 @@ class UpdateFunctionConfigRequestBody:
             self.initializer_timeout = initializer_timeout
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if is_stateful_function is not None:
+            self.is_stateful_function = is_stateful_function
 
     @property
     def func_name(self):
@@ -455,6 +460,28 @@ class UpdateFunctionConfigRequestBody:
         :type: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def is_stateful_function(self):
+        """Gets the is_stateful_function of this UpdateFunctionConfigRequestBody.
+
+        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+
+        :return: The is_stateful_function of this UpdateFunctionConfigRequestBody.
+        :rtype: bool
+        """
+        return self._is_stateful_function
+
+    @is_stateful_function.setter
+    def is_stateful_function(self, is_stateful_function):
+        """Sets the is_stateful_function of this UpdateFunctionConfigRequestBody.
+
+        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+
+        :param is_stateful_function: The is_stateful_function of this UpdateFunctionConfigRequestBody.
+        :type: bool
+        """
+        self._is_stateful_function = is_stateful_function
 
     def to_dict(self):
         """Returns the model properties as a dict"""

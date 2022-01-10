@@ -40,8 +40,7 @@ class NodeContentReq:
         self._sqllist = None
         self.discriminator = None
 
-        if site_id is not None:
-            self.site_id = site_id
+        self.site_id = site_id
         self.sqllist = sqllist
 
     @property

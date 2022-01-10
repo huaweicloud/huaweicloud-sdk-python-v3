@@ -96,7 +96,7 @@ class DeleteDatabaseRequest:
     def delete_rds_data(self):
         """Gets the delete_rds_data of this DeleteDatabaseRequest.
 
-        是否同时删除关联RDS上存储的数据。 - 取值为“true”：删除。 - 取值为空或“false”：不删除。 默认值为空。
+        是否同时删除关联后端数据库实例上存储的数据。 - 取值为“true”：删除。 - 取值为空或“false”：不删除。 默认值为空。
 
         :return: The delete_rds_data of this DeleteDatabaseRequest.
         :rtype: str
@@ -107,7 +107,7 @@ class DeleteDatabaseRequest:
     def delete_rds_data(self, delete_rds_data):
         """Sets the delete_rds_data of this DeleteDatabaseRequest.
 
-        是否同时删除关联RDS上存储的数据。 - 取值为“true”：删除。 - 取值为空或“false”：不删除。 默认值为空。
+        是否同时删除关联后端数据库实例上存储的数据。 - 取值为“true”：删除。 - 取值为空或“false”：不删除。 默认值为空。
 
         :param delete_rds_data: The delete_rds_data of this DeleteDatabaseRequest.
         :type: str

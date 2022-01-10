@@ -298,7 +298,8 @@ class GlanceShowImageResponseBody:
             self.support_agent_list = support_agent_list
         if system__cmkid is not None:
             self.system__cmkid = system__cmkid
-        self.active_at = active_at
+        if active_at is not None:
+            self.active_at = active_at
         if hw_vif_multiqueue_enabled is not None:
             self.hw_vif_multiqueue_enabled = hw_vif_multiqueue_enabled
         if max_ram is not None:

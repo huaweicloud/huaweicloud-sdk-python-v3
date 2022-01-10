@@ -23,39 +23,39 @@ class ShowPlansRequest:
 
     openapi_types = {
         'project_id': 'str',
-        'offset': 'int',
-        'limit': 'int',
         'name': 'str',
-        'current_stage': 'str'
+        'current_stage': 'str',
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
         'project_id': 'project_id',
-        'offset': 'offset',
-        'limit': 'limit',
         'name': 'name',
-        'current_stage': 'current_stage'
+        'current_stage': 'current_stage',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, project_id=None, offset=None, limit=None, name=None, current_stage=None):
+    def __init__(self, project_id=None, name=None, current_stage=None, offset=None, limit=None):
         """ShowPlansRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._project_id = None
-        self._offset = None
-        self._limit = None
         self._name = None
         self._current_stage = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         self.project_id = project_id
-        self.offset = offset
-        self.limit = limit
         if name is not None:
             self.name = name
         if current_stage is not None:
             self.current_stage = current_stage
+        self.offset = offset
+        self.limit = limit
 
     @property
     def project_id(self):
@@ -78,50 +78,6 @@ class ShowPlansRequest:
         :type: str
         """
         self._project_id = project_id
-
-    @property
-    def offset(self):
-        """Gets the offset of this ShowPlansRequest.
-
-        起始偏移量，表示从此偏移量开始查询， offset大于等于0
-
-        :return: The offset of this ShowPlansRequest.
-        :rtype: int
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this ShowPlansRequest.
-
-        起始偏移量，表示从此偏移量开始查询， offset大于等于0
-
-        :param offset: The offset of this ShowPlansRequest.
-        :type: int
-        """
-        self._offset = offset
-
-    @property
-    def limit(self):
-        """Gets the limit of this ShowPlansRequest.
-
-        每页显示的条目数量,最大支持200条
-
-        :return: The limit of this ShowPlansRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ShowPlansRequest.
-
-        每页显示的条目数量,最大支持200条
-
-        :param limit: The limit of this ShowPlansRequest.
-        :type: int
-        """
-        self._limit = limit
 
     @property
     def name(self):
@@ -166,6 +122,50 @@ class ShowPlansRequest:
         :type: str
         """
         self._current_stage = current_stage
+
+    @property
+    def offset(self):
+        """Gets the offset of this ShowPlansRequest.
+
+        页号，取值范围为1-20000
+
+        :return: The offset of this ShowPlansRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ShowPlansRequest.
+
+        页号，取值范围为1-20000
+
+        :param offset: The offset of this ShowPlansRequest.
+        :type: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ShowPlansRequest.
+
+        每页显示的条目数量，取值范围为1-200
+
+        :return: The limit of this ShowPlansRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ShowPlansRequest.
+
+        每页显示的条目数量，取值范围为1-200
+
+        :param limit: The limit of this ShowPlansRequest.
+        :type: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -47,7 +47,7 @@ class OpenGaussDatastoreResponse:
     def type(self):
         """Gets the type of this OpenGaussDatastoreResponse.
 
-        数据库引擎，返回值如下：  GaussDB(openGauss)
+        数据库引擎，返回值如下：  GaussDB(for openGauss)
 
         :return: The type of this OpenGaussDatastoreResponse.
         :rtype: str
@@ -58,7 +58,7 @@ class OpenGaussDatastoreResponse:
     def type(self, type):
         """Sets the type of this OpenGaussDatastoreResponse.
 
-        数据库引擎，返回值如下：  GaussDB(openGauss)
+        数据库引擎，返回值如下：  GaussDB(for openGauss)
 
         :param type: The type of this OpenGaussDatastoreResponse.
         :type: str

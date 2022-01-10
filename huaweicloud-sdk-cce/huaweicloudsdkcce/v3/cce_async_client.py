@@ -504,7 +504,7 @@ class CceAsyncClient(Client):
     def create_node_pool_async(self, request):
         """创建节点池
 
-        该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。  > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。  > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
+        该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。1.21版本的集群创建节点池时支持绑定安全组，每个节点池最多绑定五个安全组。更新节点池的安全组后，只针对新创的pod生效，建议驱逐节点上原有的pod。  > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。  > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
 
         :param CreateNodePoolRequest request
         :return: CreateNodePoolResponse
@@ -514,7 +514,7 @@ class CceAsyncClient(Client):
     def create_node_pool_with_http_info(self, request):
         """创建节点池
 
-        该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。  > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。  > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
+        该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。1.21版本的集群创建节点池时支持绑定安全组，每个节点池最多绑定五个安全组。更新节点池的安全组后，只针对新创的pod生效，建议驱逐节点上原有的pod。  > 若无集群，请先[[创建集群](https://support.huaweicloud.com/api-cce/cce_02_0236.html)](tag:hws)[[创建集群](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0236.html)](tag:hws_hk)。  > 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径 
 
         :param CreateNodePoolRequest request
         :return: CreateNodePoolResponse
@@ -1811,6 +1811,67 @@ class CceAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowNodePoolResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_quotas_async(self, request):
+        """查询CCE服务下的资源配额。
+
+        该API用于查询CCE服务下的资源配额。
+
+        :param ShowQuotasRequest request
+        :return: ShowQuotasResponse
+        """
+        return self.show_quotas_with_http_info(request)
+
+    def show_quotas_with_http_info(self, request):
+        """查询CCE服务下的资源配额。
+
+        该API用于查询CCE服务下的资源配额。
+
+        :param ShowQuotasRequest request
+        :return: ShowQuotasResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/api/v3/projects/{project_id}/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowQuotasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

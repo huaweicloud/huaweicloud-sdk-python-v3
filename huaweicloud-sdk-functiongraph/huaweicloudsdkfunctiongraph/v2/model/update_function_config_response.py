@@ -57,7 +57,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
         'log_group_id': 'str',
         'log_stream_id': 'str',
         'type': 'str',
-        'enable_dynamic_memory': 'bool'
+        'enable_dynamic_memory': 'bool',
+        'is_stateful_function': 'bool'
     }
 
     attribute_map = {
@@ -96,10 +97,11 @@ class UpdateFunctionConfigResponse(SdkResponse):
         'log_group_id': 'log_group_id',
         'log_stream_id': 'log_stream_id',
         'type': 'type',
-        'enable_dynamic_memory': 'enable_dynamic_memory'
+        'enable_dynamic_memory': 'enable_dynamic_memory',
+        'is_stateful_function': 'is_stateful_function'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None):
         """UpdateFunctionConfigResponse - a model defined in huaweicloud sdk"""
         
         super(UpdateFunctionConfigResponse, self).__init__()
@@ -140,6 +142,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
         self._log_stream_id = None
         self._type = None
         self._enable_dynamic_memory = None
+        self._is_stateful_function = None
         self.discriminator = None
 
         if func_urn is not None:
@@ -214,6 +217,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
             self.type = type
         if enable_dynamic_memory is not None:
             self.enable_dynamic_memory = enable_dynamic_memory
+        if is_stateful_function is not None:
+            self.is_stateful_function = is_stateful_function
 
     @property
     def func_urn(self):
@@ -1000,6 +1005,28 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type: bool
         """
         self._enable_dynamic_memory = enable_dynamic_memory
+
+    @property
+    def is_stateful_function(self):
+        """Gets the is_stateful_function of this UpdateFunctionConfigResponse.
+
+        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+
+        :return: The is_stateful_function of this UpdateFunctionConfigResponse.
+        :rtype: bool
+        """
+        return self._is_stateful_function
+
+    @is_stateful_function.setter
+    def is_stateful_function(self, is_stateful_function):
+        """Sets the is_stateful_function of this UpdateFunctionConfigResponse.
+
+        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+
+        :param is_stateful_function: The is_stateful_function of this UpdateFunctionConfigResponse.
+        :type: bool
+        """
+        self._is_stateful_function = is_stateful_function
 
     def to_dict(self):
         """Returns the model properties as a dict"""

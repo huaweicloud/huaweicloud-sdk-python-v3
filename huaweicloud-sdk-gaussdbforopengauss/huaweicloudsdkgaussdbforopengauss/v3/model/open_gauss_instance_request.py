@@ -220,7 +220,7 @@ class OpenGaussInstanceRequest:
     def port(self):
         """Gets the port of this OpenGaussInstanceRequest.
 
-        数据库端口信息。 - GaussDB(openGauss)   数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124被系统占用不可设置）  当不传该参数时，默认端口如下：  - GaussDB(openGauss)默认8000
+        数据库对外开放的端口，不填默认为8000，可选范围为：1024-39998。限制端口： 2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124。  - GaussDB(for openGauss)数据库端口当前只支持设置为8000，当不传该参数时，默认端口为8000。
 
         :return: The port of this OpenGaussInstanceRequest.
         :rtype: str
@@ -231,7 +231,7 @@ class OpenGaussInstanceRequest:
     def port(self, port):
         """Sets the port of this OpenGaussInstanceRequest.
 
-        数据库端口信息。 - GaussDB(openGauss)   数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124被系统占用不可设置）  当不传该参数时，默认端口如下：  - GaussDB(openGauss)默认8000
+        数据库对外开放的端口，不填默认为8000，可选范围为：1024-39998。限制端口： 2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124。  - GaussDB(for openGauss)数据库端口当前只支持设置为8000，当不传该参数时，默认端口为8000。
 
         :param port: The port of this OpenGaussInstanceRequest.
         :type: str
@@ -566,7 +566,7 @@ class OpenGaussInstanceRequest:
     def replica_num(self):
         """Gets the replica_num of this OpenGaussInstanceRequest.
 
-        实例副本数，支持取值2，3。不填默认为3。  说明： 2副本选项仅针对特定用户开放，如需配置白名单权限，您可以在管理控制台右上角，选择“[工单 > 新建工单](https://auth.huaweicloud.com/authui/login.html?service=https%3A%2F%2Fconsole.huaweicloud.com%2Fticket%2F%3Fregion%3Dcn-north-1%26locale%3Dzh-cn%26cloud_route_state%3D%2Fticketindex%2FcreateIndex#/login)”，提交开通白名单的申请。
+        实例副本数，支持取值2，3。不填默认为3。仅支持1.3.0及以上版本的实例。  说明： 2副本选项仅针对特定用户开放，如需配置白名单权限，您可以在管理控制台右上角，选择“[工单 > 新建工单](https://auth.huaweicloud.com/authui/login.html?service=https%3A%2F%2Fconsole.huaweicloud.com%2Fticket%2F%3Fregion%3Dcn-north-1%26locale%3Dzh-cn%26cloud_route_state%3D%2Fticketindex%2FcreateIndex#/login)”，提交开通白名单的申请。
 
         :return: The replica_num of this OpenGaussInstanceRequest.
         :rtype: int
@@ -577,7 +577,7 @@ class OpenGaussInstanceRequest:
     def replica_num(self, replica_num):
         """Sets the replica_num of this OpenGaussInstanceRequest.
 
-        实例副本数，支持取值2，3。不填默认为3。  说明： 2副本选项仅针对特定用户开放，如需配置白名单权限，您可以在管理控制台右上角，选择“[工单 > 新建工单](https://auth.huaweicloud.com/authui/login.html?service=https%3A%2F%2Fconsole.huaweicloud.com%2Fticket%2F%3Fregion%3Dcn-north-1%26locale%3Dzh-cn%26cloud_route_state%3D%2Fticketindex%2FcreateIndex#/login)”，提交开通白名单的申请。
+        实例副本数，支持取值2，3。不填默认为3。仅支持1.3.0及以上版本的实例。  说明： 2副本选项仅针对特定用户开放，如需配置白名单权限，您可以在管理控制台右上角，选择“[工单 > 新建工单](https://auth.huaweicloud.com/authui/login.html?service=https%3A%2F%2Fconsole.huaweicloud.com%2Fticket%2F%3Fregion%3Dcn-north-1%26locale%3Dzh-cn%26cloud_route_state%3D%2Fticketindex%2FcreateIndex#/login)”，提交开通白名单的申请。
 
         :param replica_num: The replica_num of this OpenGaussInstanceRequest.
         :type: int
@@ -588,7 +588,7 @@ class OpenGaussInstanceRequest:
     def enable_force_switch(self):
         """Gets the enable_force_switch of this OpenGaussInstanceRequest.
 
-        enable_force_switch表示是否开启备机强升主功能，enable_force_switch=true表示开启备机强升主功能，enable_force_switch=false表示关闭，默认关闭。  说明：  备机强升主功能适用场景：在主机发生故障后，为了保障集群的可用性，强制拉起备机作为新主机对外提供服务的场景。 本功能在集群故障状态下，以丢失部分数据为代价换取集群尽可能快的恢复服务。本功能是集群状态为不可用时的一个逃生方法，如果操作者不清楚备机强升后丢失数据对业务的影响，请勿使用本功能。 备机强升主相关介绍请参考《故障处理》备机强升主章节。
+        enable_force_switch表示是否开启备机强升主功能，enable_force_switch=true表示开启备机强升主功能，enable_force_switch=false表示关闭，默认关闭。仅支持1.2.2及以上版本。  说明：  备机强升主功能适用场景：在主机发生故障后，为了保障集群的可用性，强制拉起备机作为新主机对外提供服务的场景。 本功能在集群故障状态下，以丢失部分数据为代价换取集群尽可能快的恢复服务。本功能是集群状态为不可用时的一个逃生方法，如果操作者不清楚备机强升后丢失数据对业务的影响，请勿使用本功能。 备机强升主相关介绍请参考《故障处理》备机强升主章节。
 
         :return: The enable_force_switch of this OpenGaussInstanceRequest.
         :rtype: bool
@@ -599,7 +599,7 @@ class OpenGaussInstanceRequest:
     def enable_force_switch(self, enable_force_switch):
         """Sets the enable_force_switch of this OpenGaussInstanceRequest.
 
-        enable_force_switch表示是否开启备机强升主功能，enable_force_switch=true表示开启备机强升主功能，enable_force_switch=false表示关闭，默认关闭。  说明：  备机强升主功能适用场景：在主机发生故障后，为了保障集群的可用性，强制拉起备机作为新主机对外提供服务的场景。 本功能在集群故障状态下，以丢失部分数据为代价换取集群尽可能快的恢复服务。本功能是集群状态为不可用时的一个逃生方法，如果操作者不清楚备机强升后丢失数据对业务的影响，请勿使用本功能。 备机强升主相关介绍请参考《故障处理》备机强升主章节。
+        enable_force_switch表示是否开启备机强升主功能，enable_force_switch=true表示开启备机强升主功能，enable_force_switch=false表示关闭，默认关闭。仅支持1.2.2及以上版本。  说明：  备机强升主功能适用场景：在主机发生故障后，为了保障集群的可用性，强制拉起备机作为新主机对外提供服务的场景。 本功能在集群故障状态下，以丢失部分数据为代价换取集群尽可能快的恢复服务。本功能是集群状态为不可用时的一个逃生方法，如果操作者不清楚备机强升后丢失数据对业务的影响，请勿使用本功能。 备机强升主相关介绍请参考《故障处理》备机强升主章节。
 
         :param enable_force_switch: The enable_force_switch of this OpenGaussInstanceRequest.
         :type: bool

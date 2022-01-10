@@ -96,7 +96,7 @@ class LimitInfoV2:
     def limit_key(self):
         """Gets the limit_key of this LimitInfoV2.
 
-        折扣限制，key的取值请参考表4。
+        折扣限制，key的取值请参考表5。
 
         :return: The limit_key of this LimitInfoV2.
         :rtype: str
@@ -107,7 +107,7 @@ class LimitInfoV2:
     def limit_key(self, limit_key):
         """Sets the limit_key of this LimitInfoV2.
 
-        折扣限制，key的取值请参考表4。
+        折扣限制，key的取值请参考表5。
 
         :param limit_key: The limit_key of this LimitInfoV2.
         :type: str

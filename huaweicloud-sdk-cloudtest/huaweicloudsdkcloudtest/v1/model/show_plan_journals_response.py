@@ -22,7 +22,7 @@ class ShowPlanJournalsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[ShowPlanJournalsResponseBody]'
+        'body': 'list[TestPlanJournalList]'
     }
 
     attribute_map = {
@@ -44,10 +44,10 @@ class ShowPlanJournalsResponse(SdkResponse):
     def body(self):
         """Gets the body of this ShowPlanJournalsResponse.
 
-        项目下查询测试计划列表返回结构
+        项目下查询测试计划操作历史返回结构
 
         :return: The body of this ShowPlanJournalsResponse.
-        :rtype: list[ShowPlanJournalsResponseBody]
+        :rtype: list[TestPlanJournalList]
         """
         return self._body
 
@@ -55,10 +55,10 @@ class ShowPlanJournalsResponse(SdkResponse):
     def body(self, body):
         """Sets the body of this ShowPlanJournalsResponse.
 
-        项目下查询测试计划列表返回结构
+        项目下查询测试计划操作历史返回结构
 
         :param body: The body of this ShowPlanJournalsResponse.
-        :type: list[ShowPlanJournalsResponseBody]
+        :type: list[TestPlanJournalList]
         """
         self._body = body
 

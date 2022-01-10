@@ -45,7 +45,6 @@ class ListInstanceResponse:
         'switch_strategy': 'str',
         'backup_strategy': 'OpenGaussBackupStrategyForListResponse',
         'maintenance_window': 'str',
-        'related_instance': 'list[object]',
         'nodes': 'list[object]',
         'enterprise_project_id': 'str',
         'instance_mode': 'str',
@@ -79,7 +78,6 @@ class ListInstanceResponse:
         'switch_strategy': 'switch_strategy',
         'backup_strategy': 'backup_strategy',
         'maintenance_window': 'maintenance_window',
-        'related_instance': 'related_instance',
         'nodes': 'nodes',
         'enterprise_project_id': 'enterprise_project_id',
         'instance_mode': 'instance_mode',
@@ -89,7 +87,7 @@ class ListInstanceResponse:
         'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, ha=None, replica_num=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, switch_strategy=None, backup_strategy=None, maintenance_window=None, related_instance=None, nodes=None, enterprise_project_id=None, instance_mode=None, disk_encryption_id=None, charge_info=None, time_zone=None, tags=None):
+    def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, ha=None, replica_num=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, switch_strategy=None, backup_strategy=None, maintenance_window=None, nodes=None, enterprise_project_id=None, instance_mode=None, disk_encryption_id=None, charge_info=None, time_zone=None, tags=None):
         """ListInstanceResponse - a model defined in huaweicloud sdk"""
         
         
@@ -117,7 +115,6 @@ class ListInstanceResponse:
         self._switch_strategy = None
         self._backup_strategy = None
         self._maintenance_window = None
-        self._related_instance = None
         self._nodes = None
         self._enterprise_project_id = None
         self._instance_mode = None
@@ -151,7 +148,6 @@ class ListInstanceResponse:
         self.switch_strategy = switch_strategy
         self.backup_strategy = backup_strategy
         self.maintenance_window = maintenance_window
-        self.related_instance = related_instance
         self.nodes = nodes
         self.enterprise_project_id = enterprise_project_id
         self.instance_mode = instance_mode
@@ -208,7 +204,7 @@ class ListInstanceResponse:
     def status(self):
         """Gets the status of this ListInstanceResponse.
 
-        实例状态。  取值：  值为“BUILD”，表示实例正在创建。  值为“ACTIVE”，表示实例正常。  值为“FAILED”，表示实例异常。  值为“FROZEN”，表示实例冻结。  值为“EXPANDING”，表示实例正在扩容CN或DN。  值为“REBOOTING”，表示实例正在重启。  值为“UPGRADING”，表示实例正在升级。  值为“BACKING UP”，表示实例正在进行备份。  值为“STORAGE FULL”，表示实例磁盘空间满。
+        实例状态。  取值：  值为“BUILD”，表示实例正在创建。  值为“ACTIVE”，表示实例正常。  值为“FAILED”，表示实例异常。  值为“FROZEN”，表示实例冻结。  值为“EXPANDING”，表示实例正在扩容CN或DN。  值为“REBOOTING”，表示实例正在重启。  值为“UPGRADING”，表示实例正在升级。  值为“BACKING UP”，表示实例正在进行备份。  值为“REDUCING REPLICATION”，表示实例正在降副本。  值为“STORAGE FULL”，表示实例磁盘空间满。
 
         :return: The status of this ListInstanceResponse.
         :rtype: str
@@ -219,7 +215,7 @@ class ListInstanceResponse:
     def status(self, status):
         """Sets the status of this ListInstanceResponse.
 
-        实例状态。  取值：  值为“BUILD”，表示实例正在创建。  值为“ACTIVE”，表示实例正常。  值为“FAILED”，表示实例异常。  值为“FROZEN”，表示实例冻结。  值为“EXPANDING”，表示实例正在扩容CN或DN。  值为“REBOOTING”，表示实例正在重启。  值为“UPGRADING”，表示实例正在升级。  值为“BACKING UP”，表示实例正在进行备份。  值为“STORAGE FULL”，表示实例磁盘空间满。
+        实例状态。  取值：  值为“BUILD”，表示实例正在创建。  值为“ACTIVE”，表示实例正常。  值为“FAILED”，表示实例异常。  值为“FROZEN”，表示实例冻结。  值为“EXPANDING”，表示实例正在扩容CN或DN。  值为“REBOOTING”，表示实例正在重启。  值为“UPGRADING”，表示实例正在升级。  值为“BACKING UP”，表示实例正在进行备份。  值为“REDUCING REPLICATION”，表示实例正在降副本。  值为“STORAGE FULL”，表示实例磁盘空间满。
 
         :param status: The status of this ListInstanceResponse.
         :type: str
@@ -230,7 +226,7 @@ class ListInstanceResponse:
     def private_ips(self):
         """Gets the private_ips of this ListInstanceResponse.
 
-        实例内网IP地址列表。CN在的弹性云服务器创建成功后该值存在，其他情况下为空字符串。
+        实例内网IP地址列表。绑定弹性公网IP后，该值不为空。
 
         :return: The private_ips of this ListInstanceResponse.
         :rtype: list[str]
@@ -241,7 +237,7 @@ class ListInstanceResponse:
     def private_ips(self, private_ips):
         """Sets the private_ips of this ListInstanceResponse.
 
-        实例内网IP地址列表。CN在的弹性云服务器创建成功后该值存在，其他情况下为空字符串。
+        实例内网IP地址列表。绑定弹性公网IP后，该值不为空。
 
         :param private_ips: The private_ips of this ListInstanceResponse.
         :type: list[str]
@@ -296,7 +292,7 @@ class ListInstanceResponse:
     def type(self):
         """Gets the type of this ListInstanceResponse.
 
-        实例类型，取值为 \"Enterprise\"，对应于分布式实例（企业版）。
+        实例类型，取值为 \"enterprise\"，对应于分布式实例（企业版）。取值为\"Ha\"，对应于主备版实例。
 
         :return: The type of this ListInstanceResponse.
         :rtype: str
@@ -307,7 +303,7 @@ class ListInstanceResponse:
     def type(self, type):
         """Sets the type of this ListInstanceResponse.
 
-        实例类型，取值为 \"Enterprise\"，对应于分布式实例（企业版）。
+        实例类型，取值为 \"enterprise\"，对应于分布式实例（企业版）。取值为\"Ha\"，对应于主备版实例。
 
         :param type: The type of this ListInstanceResponse.
         :type: str
@@ -338,7 +334,7 @@ class ListInstanceResponse:
     def replica_num(self):
         """Gets the replica_num of this ListInstanceResponse.
 
-        实例副本数。说明：需添加白名单，才会开放显示。
+        实例副本数。
 
         :return: The replica_num of this ListInstanceResponse.
         :rtype: int
@@ -349,7 +345,7 @@ class ListInstanceResponse:
     def replica_num(self, replica_num):
         """Sets the replica_num of this ListInstanceResponse.
 
-        实例副本数。说明：需添加白名单，才会开放显示。
+        实例副本数。
 
         :param replica_num: The replica_num of this ListInstanceResponse.
         :type: int
@@ -596,7 +592,7 @@ class ListInstanceResponse:
     def switch_strategy(self):
         """Gets the switch_strategy of this ListInstanceResponse.
 
-        数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。
+        数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。 若创建时没有选择切换策略，则不予显示。
 
         :return: The switch_strategy of this ListInstanceResponse.
         :rtype: str
@@ -607,7 +603,7 @@ class ListInstanceResponse:
     def switch_strategy(self, switch_strategy):
         """Sets the switch_strategy of this ListInstanceResponse.
 
-        数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。
+        数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。 若创建时没有选择切换策略，则不予显示。
 
         :param switch_strategy: The switch_strategy of this ListInstanceResponse.
         :type: str
@@ -655,28 +651,6 @@ class ListInstanceResponse:
         :type: str
         """
         self._maintenance_window = maintenance_window
-
-    @property
-    def related_instance(self):
-        """Gets the related_instance of this ListInstanceResponse.
-
-        所关联的数据库实例列表。GaussDB(for openGauss)不涉及该参数。
-
-        :return: The related_instance of this ListInstanceResponse.
-        :rtype: list[object]
-        """
-        return self._related_instance
-
-    @related_instance.setter
-    def related_instance(self, related_instance):
-        """Sets the related_instance of this ListInstanceResponse.
-
-        所关联的数据库实例列表。GaussDB(for openGauss)不涉及该参数。
-
-        :param related_instance: The related_instance of this ListInstanceResponse.
-        :type: list[object]
-        """
-        self._related_instance = related_instance
 
     @property
     def nodes(self):
@@ -748,7 +722,7 @@ class ListInstanceResponse:
     def disk_encryption_id(self):
         """Gets the disk_encryption_id of this ListInstanceResponse.
 
-        磁盘加密密钥ID。
+        磁盘加密密钥ID。只有创建磁盘加密实例才会显示该参数。
 
         :return: The disk_encryption_id of this ListInstanceResponse.
         :rtype: str
@@ -759,7 +733,7 @@ class ListInstanceResponse:
     def disk_encryption_id(self, disk_encryption_id):
         """Sets the disk_encryption_id of this ListInstanceResponse.
 
-        磁盘加密密钥ID。
+        磁盘加密密钥ID。只有创建磁盘加密实例才会显示该参数。
 
         :param disk_encryption_id: The disk_encryption_id of this ListInstanceResponse.
         :type: str
@@ -812,7 +786,7 @@ class ListInstanceResponse:
     def tags(self):
         """Gets the tags of this ListInstanceResponse.
 
-        标签列表，没有标签默认为空数组。
+        标签列表，没有标签不返回该参数。
 
         :return: The tags of this ListInstanceResponse.
         :rtype: list[object]
@@ -823,7 +797,7 @@ class ListInstanceResponse:
     def tags(self, tags):
         """Sets the tags of this ListInstanceResponse.
 
-        标签列表，没有标签默认为空数组。
+        标签列表，没有标签不返回该参数。
 
         :param tags: The tags of this ListInstanceResponse.
         :type: list[object]

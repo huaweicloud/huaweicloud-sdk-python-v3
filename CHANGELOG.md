@@ -1,3 +1,202 @@
+# 3.0.74 2022-01-10
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `coupon_max_use_quantity`, `coupon_group` to the interface `ListOrderCouponsByOrderId`
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - Support the interface `ShowQuotas`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `customSan`, `offloadCluster`, `cidrs`, `flavor`, `faultDomain` to the interface `CreateCluster`
+  - Add the response parameters `customSan`, `offloadCluster`, `cidrs`, `flavor`, `faultDomain` to the interface `ListClusters`
+  - Changes of the interface `UpdateCluster`:
+    - Add the request parameters `customSan`, `containerNetwork`
+    - Add the response parameters `customSan`, `offloadCluster`, `cidrs`, `flavor`, `faultDomain`
+  - Add the response parameters `customSan`, `offloadCluster`, `cidrs`, `flavor`, `faultDomain` to the interface `ShowCluster`
+  - Add the response parameters `customSan`, `offloadCluster`, `cidrs`, `flavor`, `faultDomain` to the interface `DeleteCluster`
+  - Add the request parameters `faultDomain`, `offloadNode`, `offloadNode` to the interface `CreateNode`
+  - Add the response parameters `faultDomain`, `offloadNode`, `offloadNode` to the interface `ListNodes`
+  - Add the response parameters `faultDomain`, `offloadNode`, `offloadNode` to the interface `UpdateNode`
+  - Add the response parameters `faultDomain`, `offloadNode`, `offloadNode` to the interface `ShowNode`
+  - Add the response parameters `faultDomain`, `offloadNode`, `offloadNode` to the interface `DeleteNode`
+  - Add the request parameters `podSecurityGroups`, `faultDomain`, `offloadNode`, `offloadNode` to the interface `CreateNodePool`
+  - Add the response parameters `podSecurityGroups`, `faultDomain`, `offloadNode`, `offloadNode` to the interface `ListNodePools`
+  - Changes of the interface `UpdateNodePool`:
+    - Add the request parameters `podSecurityGroups`, `faultDomain`, `offloadNode`, `offloadNode`
+    - Add the response parameters `podSecurityGroups`, `faultDomain`, `offloadNode`, `offloadNode`
+  - Add the response parameters `podSecurityGroups`, `faultDomain`, `offloadNode`, `offloadNode` to the interface `ShowNodePool`
+  - Add the response parameters `podSecurityGroups`, `faultDomain`, `offloadNode`, `offloadNode` to the interface `DeleteNodePool`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - Support the interface `UpdateDomainFullConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - Support the interface `ListStacks`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `ListStacksByTag`
+
+### HuaweiCloud SDK Cloudtest
+
+- _Features_
+  - Support the interface `ShowPlanList`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowPlans`:
+    - Modify the type `int64` -> `int32` of the request parameter `limit`
+    - Modify the type `int64` -> `int32` of the request parameter `offset`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `ecs_tenant_private_ip` to the interface `ListMigrationTask`
+  - Add the response parameter `ecs_tenant_private_ip` to the interface `ShowMigrationTask`
+  - Add the response parameter `ecs_tenant_private_ip` to the interface `StopMigrationTask`
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameter `lb_ip_address` from the interface `ListInstances`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `delete_on_termination` to the interface `CreateServers`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `UpdateFunctionConfig`:
+    - Add the request parameter `is_stateful_function`
+    - Add the response parameter `is_stateful_function`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `lb_ip_address` to the interface `ListInstances`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `GaussDB(for openGauss)`, Remove the enum values `GaussDB(openGauss)` from the request parameter `type` to the interface `CreateInstance`
+  - Remove the response parameter `related_instance` from the interface `ListInstances`
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The response parameter `active_at` changed to not required of the interface `GlanceListImages`
+  - The response parameter `active_at` changed to not required of the interface `GlanceShowImage`
+  - The response parameter `active_at` changed to not required of the interface `GlanceUpdateImage`
+
+### HuaweiCloud SDK IoTAnalytics
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `site_id` changed to required of the interface `CreateDatasource`
+  - The request parameter `site_id` changed to required of the interface `UpdateDataSource`
+
+### HuaweiCloud SDK KPS
+
+- _Features_
+  - Support the `Key Pair Service`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `StartInstanceSingleToHaAction`:
+    - Add the request parameter `ad_domain_info`
+    - Remove the request parameter `password`
+
+### HuaweiCloud SDK ROMA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameter `connect_dn` from the interface `ShowMqsInstance`
+  - Remove the response parameter `policies` from the interface `ListMqsInstanceTopics`
+  - Add the response parameter `roma_app_type` to the interface `ShowDetailsOfAppV2`
+
+### HuaweiCloud SDK VPCEP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `pool_id` to the interface `CreateEndpointService`
+  - Add the response parameter `domain_id` to the interface `ListEndpointService`
+  - Add the response parameter `pool_id` to the interface `UpdateEndpointService`
+  - Add the response parameters `enable_status`, `specification_name` to the interface `ListEndpointInfoDetails`
+
+### HuaweiCloud SDK VSS
+
+- _Features_
+  - Support the interfaces `AuthorizeDomains`, `ShowTasks`, `CreateTasks`, `ShowResults`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `skip` to the response parameter `auth_status` to the interface `ListDomains`
+
 # 3.0.73 2021-12-25
 
 ### HuaweiCloud SDK CDM

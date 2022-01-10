@@ -40,6 +40,7 @@ from huaweicloudsdkbss.v2.model.city import City
 from huaweicloudsdkbss.v2.model.conversion import Conversion
 from huaweicloudsdkbss.v2.model.county import County
 from huaweicloudsdkbss.v2.model.coupon_info_v2 import CouponInfoV2
+from huaweicloudsdkbss.v2.model.coupon_max_use_quantity import CouponMaxUseQuantity
 from huaweicloudsdkbss.v2.model.coupon_quota_v2 import CouponQuotaV2
 from huaweicloudsdkbss.v2.model.coupon_record_v2 import CouponRecordV2
 from huaweicloudsdkbss.v2.model.coupon_simple_info import CouponSimpleInfo

@@ -26,7 +26,6 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
         'size': 'int',
         'permissions': 'list[str]',
         'topics': 'list[ListInstanceTopicsRespTopics]',
-        'policies': 'list[ListInstanceTopicsRespPolicies]',
         'remain_partitions': 'int',
         'max_partitions': 'int'
     }
@@ -36,12 +35,11 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
         'size': 'size',
         'permissions': 'permissions',
         'topics': 'topics',
-        'policies': 'policies',
         'remain_partitions': 'remain_partitions',
         'max_partitions': 'max_partitions'
     }
 
-    def __init__(self, total=None, size=None, permissions=None, topics=None, policies=None, remain_partitions=None, max_partitions=None):
+    def __init__(self, total=None, size=None, permissions=None, topics=None, remain_partitions=None, max_partitions=None):
         """ListMqsInstanceTopicsResponse - a model defined in huaweicloud sdk"""
         
         super(ListMqsInstanceTopicsResponse, self).__init__()
@@ -50,7 +48,6 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
         self._size = None
         self._permissions = None
         self._topics = None
-        self._policies = None
         self._remain_partitions = None
         self._max_partitions = None
         self.discriminator = None
@@ -63,8 +60,6 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
             self.permissions = permissions
         if topics is not None:
             self.topics = topics
-        if policies is not None:
-            self.policies = policies
         if remain_partitions is not None:
             self.remain_partitions = remain_partitions
         if max_partitions is not None:
@@ -157,28 +152,6 @@ class ListMqsInstanceTopicsResponse(SdkResponse):
         :type: list[ListInstanceTopicsRespTopics]
         """
         self._topics = topics
-
-    @property
-    def policies(self):
-        """Gets the policies of this ListMqsInstanceTopicsResponse.
-
-        权限列表。
-
-        :return: The policies of this ListMqsInstanceTopicsResponse.
-        :rtype: list[ListInstanceTopicsRespPolicies]
-        """
-        return self._policies
-
-    @policies.setter
-    def policies(self, policies):
-        """Sets the policies of this ListMqsInstanceTopicsResponse.
-
-        权限列表。
-
-        :param policies: The policies of this ListMqsInstanceTopicsResponse.
-        :type: list[ListInstanceTopicsRespPolicies]
-        """
-        self._policies = policies
 
     @property
     def remain_partitions(self):

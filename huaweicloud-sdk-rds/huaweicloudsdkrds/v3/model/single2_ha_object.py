@@ -23,36 +23,36 @@ class Single2HaObject:
 
     openapi_types = {
         'az_code_new_node': 'str',
-        'password': 'str',
         'dsspool_id': 'str',
-        'is_auto_pay': 'bool'
+        'is_auto_pay': 'bool',
+        'ad_domain_info': 'ADDomainInfo'
     }
 
     attribute_map = {
         'az_code_new_node': 'az_code_new_node',
-        'password': 'password',
         'dsspool_id': 'dsspool_id',
-        'is_auto_pay': 'is_auto_pay'
+        'is_auto_pay': 'is_auto_pay',
+        'ad_domain_info': 'ad_domain_info'
     }
 
-    def __init__(self, az_code_new_node=None, password=None, dsspool_id=None, is_auto_pay=None):
+    def __init__(self, az_code_new_node=None, dsspool_id=None, is_auto_pay=None, ad_domain_info=None):
         """Single2HaObject - a model defined in huaweicloud sdk"""
         
         
 
         self._az_code_new_node = None
-        self._password = None
         self._dsspool_id = None
         self._is_auto_pay = None
+        self._ad_domain_info = None
         self.discriminator = None
 
         self.az_code_new_node = az_code_new_node
-        if password is not None:
-            self.password = password
         if dsspool_id is not None:
             self.dsspool_id = dsspool_id
         if is_auto_pay is not None:
             self.is_auto_pay = is_auto_pay
+        if ad_domain_info is not None:
+            self.ad_domain_info = ad_domain_info
 
     @property
     def az_code_new_node(self):
@@ -75,28 +75,6 @@ class Single2HaObject:
         :type: str
         """
         self._az_code_new_node = az_code_new_node
-
-    @property
-    def password(self):
-        """Gets the password of this Single2HaObject.
-
-        仅在支持SQL Server数据库实例进行单机转主备时可选，指定时会验证密码有效性。
-
-        :return: The password of this Single2HaObject.
-        :rtype: str
-        """
-        return self._password
-
-    @password.setter
-    def password(self, password):
-        """Sets the password of this Single2HaObject.
-
-        仅在支持SQL Server数据库实例进行单机转主备时可选，指定时会验证密码有效性。
-
-        :param password: The password of this Single2HaObject.
-        :type: str
-        """
-        self._password = password
 
     @property
     def dsspool_id(self):
@@ -141,6 +119,26 @@ class Single2HaObject:
         :type: bool
         """
         self._is_auto_pay = is_auto_pay
+
+    @property
+    def ad_domain_info(self):
+        """Gets the ad_domain_info of this Single2HaObject.
+
+
+        :return: The ad_domain_info of this Single2HaObject.
+        :rtype: ADDomainInfo
+        """
+        return self._ad_domain_info
+
+    @ad_domain_info.setter
+    def ad_domain_info(self, ad_domain_info):
+        """Sets the ad_domain_info of this Single2HaObject.
+
+
+        :param ad_domain_info: The ad_domain_info of this Single2HaObject.
+        :type: ADDomainInfo
+        """
+        self._ad_domain_info = ad_domain_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

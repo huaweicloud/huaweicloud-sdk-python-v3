@@ -69,7 +69,7 @@ class JobSpec:
     def type(self):
         """Gets the type of this JobSpec.
 
-        作业的类型，例：“CreateCluster”- 创建集群。
+        任务的类型，例：“CreateCluster”- 创建集群。
 
         :return: The type of this JobSpec.
         :rtype: str
@@ -80,7 +80,7 @@ class JobSpec:
     def type(self, type):
         """Sets the type of this JobSpec.
 
-        作业的类型，例：“CreateCluster”- 创建集群。
+        任务的类型，例：“CreateCluster”- 创建集群。
 
         :param type: The type of this JobSpec.
         :type: str
@@ -91,7 +91,7 @@ class JobSpec:
     def cluster_uid(self):
         """Gets the cluster_uid of this JobSpec.
 
-        作业所在的集群的ID。
+        任务所在的集群的ID。
 
         :return: The cluster_uid of this JobSpec.
         :rtype: str
@@ -102,7 +102,7 @@ class JobSpec:
     def cluster_uid(self, cluster_uid):
         """Sets the cluster_uid of this JobSpec.
 
-        作业所在的集群的ID。
+        任务所在的集群的ID。
 
         :param cluster_uid: The cluster_uid of this JobSpec.
         :type: str
@@ -113,7 +113,7 @@ class JobSpec:
     def resource_id(self):
         """Gets the resource_id of this JobSpec.
 
-        作业操作的资源ID。
+        任务操作的资源ID。
 
         :return: The resource_id of this JobSpec.
         :rtype: str
@@ -124,7 +124,7 @@ class JobSpec:
     def resource_id(self, resource_id):
         """Sets the resource_id of this JobSpec.
 
-        作业操作的资源ID。
+        任务操作的资源ID。
 
         :param resource_id: The resource_id of this JobSpec.
         :type: str
@@ -135,7 +135,7 @@ class JobSpec:
     def resource_name(self):
         """Gets the resource_name of this JobSpec.
 
-        作业操作的资源名称。
+        任务操作的资源名称。
 
         :return: The resource_name of this JobSpec.
         :rtype: str
@@ -146,7 +146,7 @@ class JobSpec:
     def resource_name(self, resource_name):
         """Sets the resource_name of this JobSpec.
 
-        作业操作的资源名称。
+        任务操作的资源名称。
 
         :param resource_name: The resource_name of this JobSpec.
         :type: str
@@ -179,7 +179,7 @@ class JobSpec:
     def sub_jobs(self):
         """Gets the sub_jobs of this JobSpec.
 
-        子作业的列表。  - 包含了所有子作业的详细信息 - 在创建集群、节点等场景下，通常会由多个子作业共同组成创建作业，在子作业都完成后，作业才会完成 
+        子任务的列表。  - 包含了所有子任务的详细信息 - 在创建集群、节点等场景下，通常会由多个子任务共同组成创建任务，在子任务都完成后，任务才会完成 
 
         :return: The sub_jobs of this JobSpec.
         :rtype: list[Job]
@@ -190,7 +190,7 @@ class JobSpec:
     def sub_jobs(self, sub_jobs):
         """Sets the sub_jobs of this JobSpec.
 
-        子作业的列表。  - 包含了所有子作业的详细信息 - 在创建集群、节点等场景下，通常会由多个子作业共同组成创建作业，在子作业都完成后，作业才会完成 
+        子任务的列表。  - 包含了所有子任务的详细信息 - 在创建集群、节点等场景下，通常会由多个子任务共同组成创建任务，在子任务都完成后，任务才会完成 
 
         :param sub_jobs: The sub_jobs of this JobSpec.
         :type: list[Job]

@@ -155,7 +155,7 @@ class ListInstancesRequest:
     def type(self):
         """Gets the type of this ListInstancesRequest.
 
-        按照实例类型查询。目前仅支持取值“Enterprise”（区分大小写），对应分布式实例（企业版）。
+        按照实例类型查询。目前仅支持取值“Enterprise”（区分大小写），对应分布式实例（企业版）。当前支持取值\"Ha\"（区分大小写），对应主备式实例。
 
         :return: The type of this ListInstancesRequest.
         :rtype: str
@@ -166,7 +166,7 @@ class ListInstancesRequest:
     def type(self, type):
         """Sets the type of this ListInstancesRequest.
 
-        按照实例类型查询。目前仅支持取值“Enterprise”（区分大小写），对应分布式实例（企业版）。
+        按照实例类型查询。目前仅支持取值“Enterprise”（区分大小写），对应分布式实例（企业版）。当前支持取值\"Ha\"（区分大小写），对应主备式实例。
 
         :param type: The type of this ListInstancesRequest.
         :type: str
@@ -177,7 +177,7 @@ class ListInstancesRequest:
     def datastore_type(self):
         """Gets the datastore_type of this ListInstancesRequest.
 
-        数据库类型，区分大小写。  - GaussDB(openGauss)
+        数据库类型，区分大小写。  - GaussDB(for openGauss)
 
         :return: The datastore_type of this ListInstancesRequest.
         :rtype: str
@@ -188,7 +188,7 @@ class ListInstancesRequest:
     def datastore_type(self, datastore_type):
         """Sets the datastore_type of this ListInstancesRequest.
 
-        数据库类型，区分大小写。  - GaussDB(openGauss)
+        数据库类型，区分大小写。  - GaussDB(for openGauss)
 
         :param datastore_type: The datastore_type of this ListInstancesRequest.
         :type: str
@@ -287,7 +287,7 @@ class ListInstancesRequest:
     def tags(self):
         """Gets the tags of this ListInstancesRequest.
 
-        根据实例标签键值对进行查询。  {key}表示标签键，不可以为空或重复。 {value}表示标签值，可以为空。 如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，最多包含10组。
+        根据实例标签键值对进行查询。  {key}表示标签键，不可以为空或重复。最大长度127个unicode字符。key不能为空或者空字符串，不能为空格，使用之前先trim前后半角空格。不能包含+/?#&=,%特殊字符。  {value}表示标签值，可以为空。最大长度255个unicode字符，使用之前先trim 前后半角空格。不能包含+/?#&=,%特殊字符。  如果value为空，则表示any_value（查询任意value）。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，最多包含10组。
 
         :return: The tags of this ListInstancesRequest.
         :rtype: list[str]
@@ -298,7 +298,7 @@ class ListInstancesRequest:
     def tags(self, tags):
         """Sets the tags of this ListInstancesRequest.
 
-        根据实例标签键值对进行查询。  {key}表示标签键，不可以为空或重复。 {value}表示标签值，可以为空。 如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，最多包含10组。
+        根据实例标签键值对进行查询。  {key}表示标签键，不可以为空或重复。最大长度127个unicode字符。key不能为空或者空字符串，不能为空格，使用之前先trim前后半角空格。不能包含+/?#&=,%特殊字符。  {value}表示标签值，可以为空。最大长度255个unicode字符，使用之前先trim 前后半角空格。不能包含+/?#&=,%特殊字符。  如果value为空，则表示any_value（查询任意value）。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，最多包含10组。
 
         :param tags: The tags of this ListInstancesRequest.
         :type: list[str]

@@ -39,7 +39,8 @@ class CouponInfoV2:
         'coupon_version': 'int',
         'balance': 'float',
         'used_by_order_id': 'str',
-        'coupon_usage': 'str'
+        'coupon_usage': 'str',
+        'coupon_group': 'int'
     }
 
     attribute_map = {
@@ -60,10 +61,11 @@ class CouponInfoV2:
         'coupon_version': 'coupon_version',
         'balance': 'balance',
         'used_by_order_id': 'used_by_order_id',
-        'coupon_usage': 'coupon_usage'
+        'coupon_usage': 'coupon_usage',
+        'coupon_group': 'coupon_group'
     }
 
-    def __init__(self, coupon_id=None, coupon_code=None, status=None, coupon_type=None, measure_id=None, face_value=None, effective_time=None, expire_time=None, plan_name=None, plan_desc=None, use_limits=None, active_time=None, last_used_time=None, create_time=None, coupon_version=None, balance=None, used_by_order_id=None, coupon_usage=None):
+    def __init__(self, coupon_id=None, coupon_code=None, status=None, coupon_type=None, measure_id=None, face_value=None, effective_time=None, expire_time=None, plan_name=None, plan_desc=None, use_limits=None, active_time=None, last_used_time=None, create_time=None, coupon_version=None, balance=None, used_by_order_id=None, coupon_usage=None, coupon_group=None):
         """CouponInfoV2 - a model defined in huaweicloud sdk"""
         
         
@@ -86,6 +88,7 @@ class CouponInfoV2:
         self._balance = None
         self._used_by_order_id = None
         self._coupon_usage = None
+        self._coupon_group = None
         self.discriminator = None
 
         if coupon_id is not None:
@@ -124,6 +127,8 @@ class CouponInfoV2:
             self.used_by_order_id = used_by_order_id
         if coupon_usage is not None:
             self.coupon_usage = coupon_usage
+        if coupon_group is not None:
+            self.coupon_group = coupon_group
 
     @property
     def coupon_id(self):
@@ -520,6 +525,28 @@ class CouponInfoV2:
         :type: str
         """
         self._coupon_usage = coupon_usage
+
+    @property
+    def coupon_group(self):
+        """Gets the coupon_group of this CouponInfoV2.
+
+        优惠券分组。 1：云市场发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
+
+        :return: The coupon_group of this CouponInfoV2.
+        :rtype: int
+        """
+        return self._coupon_group
+
+    @coupon_group.setter
+    def coupon_group(self, coupon_group):
+        """Sets the coupon_group of this CouponInfoV2.
+
+        优惠券分组。 1：云市场发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
+
+        :param coupon_group: The coupon_group of this CouponInfoV2.
+        :type: int
+        """
+        self._coupon_group = coupon_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

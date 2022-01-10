@@ -26,7 +26,8 @@ class NodePoolSpec:
         'node_template': 'NodeSpec',
         'initial_node_count': 'int',
         'autoscaling': 'NodePoolNodeAutoscaling',
-        'node_management': 'NodeManagement'
+        'node_management': 'NodeManagement',
+        'pod_security_groups': 'list[object]'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class NodePoolSpec:
         'node_template': 'nodeTemplate',
         'initial_node_count': 'initialNodeCount',
         'autoscaling': 'autoscaling',
-        'node_management': 'nodeManagement'
+        'node_management': 'nodeManagement',
+        'pod_security_groups': 'podSecurityGroups'
     }
 
-    def __init__(self, type=None, node_template=None, initial_node_count=None, autoscaling=None, node_management=None):
+    def __init__(self, type=None, node_template=None, initial_node_count=None, autoscaling=None, node_management=None, pod_security_groups=None):
         """NodePoolSpec - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +49,7 @@ class NodePoolSpec:
         self._initial_node_count = None
         self._autoscaling = None
         self._node_management = None
+        self._pod_security_groups = None
         self.discriminator = None
 
         if type is not None:
@@ -58,6 +61,8 @@ class NodePoolSpec:
             self.autoscaling = autoscaling
         if node_management is not None:
             self.node_management = node_management
+        if pod_security_groups is not None:
+            self.pod_security_groups = pod_security_groups
 
     @property
     def type(self):
@@ -105,7 +110,7 @@ class NodePoolSpec:
     def initial_node_count(self):
         """Gets the initial_node_count of this NodePoolSpec.
 
-        节点池初始化节点个数。
+        节点池初始化节点个数。查询时为节点池目标节点数量。
 
         :return: The initial_node_count of this NodePoolSpec.
         :rtype: int
@@ -116,7 +121,7 @@ class NodePoolSpec:
     def initial_node_count(self, initial_node_count):
         """Sets the initial_node_count of this NodePoolSpec.
 
-        节点池初始化节点个数。
+        节点池初始化节点个数。查询时为节点池目标节点数量。
 
         :param initial_node_count: The initial_node_count of this NodePoolSpec.
         :type: int
@@ -162,6 +167,28 @@ class NodePoolSpec:
         :type: NodeManagement
         """
         self._node_management = node_management
+
+    @property
+    def pod_security_groups(self):
+        """Gets the pod_security_groups of this NodePoolSpec.
+
+        1.21版本集群节点池支持绑定安全组，最多五个。
+
+        :return: The pod_security_groups of this NodePoolSpec.
+        :rtype: list[object]
+        """
+        return self._pod_security_groups
+
+    @pod_security_groups.setter
+    def pod_security_groups(self, pod_security_groups):
+        """Sets the pod_security_groups of this NodePoolSpec.
+
+        1.21版本集群节点池支持绑定安全组，最多五个。
+
+        :param pod_security_groups: The pod_security_groups of this NodePoolSpec.
+        :type: list[object]
+        """
+        self._pod_security_groups = pod_security_groups
 
     def to_dict(self):
         """Returns the model properties as a dict"""

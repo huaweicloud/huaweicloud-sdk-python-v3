@@ -27,6 +27,7 @@ class MigrationTaskList:
         'status': 'str',
         'migration_type': 'str',
         'migration_method': 'str',
+        'ecs_tenant_private_ip': 'str',
         'data_source': 'str',
         'source_instance_name': 'str',
         'source_instance_id': 'str',
@@ -42,6 +43,7 @@ class MigrationTaskList:
         'status': 'status',
         'migration_type': 'migration_type',
         'migration_method': 'migration_method',
+        'ecs_tenant_private_ip': 'ecs_tenant_private_ip',
         'data_source': 'data_source',
         'source_instance_name': 'source_instance_name',
         'source_instance_id': 'source_instance_id',
@@ -51,7 +53,7 @@ class MigrationTaskList:
         'created_at': 'created_at'
     }
 
-    def __init__(self, task_id=None, task_name=None, status=None, migration_type=None, migration_method=None, data_source=None, source_instance_name=None, source_instance_id=None, target_instance_addrs=None, target_instance_name=None, target_instance_id=None, created_at=None):
+    def __init__(self, task_id=None, task_name=None, status=None, migration_type=None, migration_method=None, ecs_tenant_private_ip=None, data_source=None, source_instance_name=None, source_instance_id=None, target_instance_addrs=None, target_instance_name=None, target_instance_id=None, created_at=None):
         """MigrationTaskList - a model defined in huaweicloud sdk"""
         
         
@@ -61,6 +63,7 @@ class MigrationTaskList:
         self._status = None
         self._migration_type = None
         self._migration_method = None
+        self._ecs_tenant_private_ip = None
         self._data_source = None
         self._source_instance_name = None
         self._source_instance_id = None
@@ -80,6 +83,8 @@ class MigrationTaskList:
             self.migration_type = migration_type
         if migration_method is not None:
             self.migration_method = migration_method
+        if ecs_tenant_private_ip is not None:
+            self.ecs_tenant_private_ip = ecs_tenant_private_ip
         if data_source is not None:
             self.data_source = data_source
         if source_instance_name is not None:
@@ -204,6 +209,28 @@ class MigrationTaskList:
         :type: str
         """
         self._migration_method = migration_method
+
+    @property
+    def ecs_tenant_private_ip(self):
+        """Gets the ecs_tenant_private_ip of this MigrationTaskList.
+
+        迁移机租户侧私有IP，与目的/源redis私有IP处于同VPC，可将此IP加入白名单
+
+        :return: The ecs_tenant_private_ip of this MigrationTaskList.
+        :rtype: str
+        """
+        return self._ecs_tenant_private_ip
+
+    @ecs_tenant_private_ip.setter
+    def ecs_tenant_private_ip(self, ecs_tenant_private_ip):
+        """Sets the ecs_tenant_private_ip of this MigrationTaskList.
+
+        迁移机租户侧私有IP，与目的/源redis私有IP处于同VPC，可将此IP加入白名单
+
+        :param ecs_tenant_private_ip: The ecs_tenant_private_ip of this MigrationTaskList.
+        :type: str
+        """
+        self._ecs_tenant_private_ip = ecs_tenant_private_ip
 
     @property
     def data_source(self):

@@ -4194,9 +4194,9 @@ class RomaClient(Client):
 
 
     def delete_mqs_instance_topic(self, request):
-        """批量删除Topic
+        """删除Topic
 
-        批量删除Topic。
+        删除Topic。
 
         :param DeleteMqsInstanceTopicRequest request
         :return: DeleteMqsInstanceTopicResponse
@@ -4204,9 +4204,9 @@ class RomaClient(Client):
         return self.delete_mqs_instance_topic_with_http_info(request)
 
     def delete_mqs_instance_topic_with_http_info(self, request):
-        """批量删除Topic
+        """删除Topic
 
-        批量删除Topic。
+        删除Topic。
 
         :param DeleteMqsInstanceTopicRequest request
         :return: DeleteMqsInstanceTopicResponse

@@ -34,6 +34,7 @@ class ServiceList:
         'created_at': 'str',
         'updated_at': 'str',
         'project_id': 'str',
+        'domain_id': 'str',
         'ports': 'list[PortList]',
         'tags': 'list[TagList]',
         'connection_count': 'int',
@@ -54,6 +55,7 @@ class ServiceList:
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'project_id': 'project_id',
+        'domain_id': 'domain_id',
         'ports': 'ports',
         'tags': 'tags',
         'connection_count': 'connection_count',
@@ -61,7 +63,7 @@ class ServiceList:
         'error': 'error'
     }
 
-    def __init__(self, id=None, port_id=None, vip_port_id=None, service_name=None, service_type=None, vpc_id=None, approval_enabled=None, status=None, server_type=None, created_at=None, updated_at=None, project_id=None, ports=None, tags=None, connection_count=None, tcp_proxy=None, error=None):
+    def __init__(self, id=None, port_id=None, vip_port_id=None, service_name=None, service_type=None, vpc_id=None, approval_enabled=None, status=None, server_type=None, created_at=None, updated_at=None, project_id=None, domain_id=None, ports=None, tags=None, connection_count=None, tcp_proxy=None, error=None):
         """ServiceList - a model defined in huaweicloud sdk"""
         
         
@@ -78,6 +80,7 @@ class ServiceList:
         self._created_at = None
         self._updated_at = None
         self._project_id = None
+        self._domain_id = None
         self._ports = None
         self._tags = None
         self._connection_count = None
@@ -109,6 +112,8 @@ class ServiceList:
             self.updated_at = updated_at
         if project_id is not None:
             self.project_id = project_id
+        if domain_id is not None:
+            self.domain_id = domain_id
         if ports is not None:
             self.ports = ports
         if tags is not None:
@@ -383,6 +388,28 @@ class ServiceList:
         :type: str
         """
         self._project_id = project_id
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this ServiceList.
+
+        Domain ID
+
+        :return: The domain_id of this ServiceList.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this ServiceList.
+
+        Domain ID
+
+        :param domain_id: The domain_id of this ServiceList.
+        :type: str
+        """
+        self._domain_id = domain_id
 
     @property
     def ports(self):

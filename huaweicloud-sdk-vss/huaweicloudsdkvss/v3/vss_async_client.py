@@ -48,6 +48,69 @@ class VssAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def authorize_domains_async(self, request):
+        """认证域名资产
+
+        认证租户的域名资产
+
+        :param AuthorizeDomainsRequest request
+        :return: AuthorizeDomainsResponse
+        """
+        return self.authorize_domains_with_http_info(request)
+
+    def authorize_domains_with_http_info(self, request):
+        """认证域名资产
+
+        认证租户的域名资产
+
+        :param AuthorizeDomainsRequest request
+        :return: AuthorizeDomainsResponse
+        """
+
+        all_params = ['authorize_domains_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/domains/authenticate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AuthorizeDomainsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_domains_async(self, request):
         """创建域名资产
 
@@ -235,6 +298,201 @@ class VssAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListDomainsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_results_async(self, request):
+        """获取扫描结果
+
+        获取域名漏洞扫描结果
+
+        :param ShowResultsRequest request
+        :return: ShowResultsResponse
+        """
+        return self.show_results_with_http_info(request)
+
+    def show_results_with_http_info(self, request):
+        """获取扫描结果
+
+        获取域名漏洞扫描结果
+
+        :param ShowResultsRequest request
+        :return: ShowResultsResponse
+        """
+
+        all_params = ['task_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/results',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowResultsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_tasks_async(self, request):
+        """创建扫描任务并启动
+
+        创建域名漏洞扫描任务并启动
+
+        :param CreateTasksRequest request
+        :return: CreateTasksResponse
+        """
+        return self.create_tasks_with_http_info(request)
+
+    def create_tasks_with_http_info(self, request):
+        """创建扫描任务并启动
+
+        创建域名漏洞扫描任务并启动
+
+        :param CreateTasksRequest request
+        :return: CreateTasksResponse
+        """
+
+        all_params = ['create_tasks_request_body', 'upgrade']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'upgrade' in local_var_params:
+            query_params.append(('upgrade', local_var_params['upgrade']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/tasks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateTasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_tasks_async(self, request):
+        """获取扫描任务详情
+
+        获取域名漏洞扫描任务详情
+
+        :param ShowTasksRequest request
+        :return: ShowTasksResponse
+        """
+        return self.show_tasks_with_http_info(request)
+
+    def show_tasks_with_http_info(self, request):
+        """获取扫描任务详情
+
+        获取域名漏洞扫描任务详情
+
+        :param ShowTasksRequest request
+        :return: ShowTasksResponse
+        """
+
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/tasks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowTasksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

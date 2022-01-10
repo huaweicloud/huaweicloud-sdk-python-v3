@@ -32,7 +32,7 @@ class AppInfo:
         'register_time': 'datetime',
         'status': 'int',
         'app_type': 'str',
-        'roma_app_type': 'object'
+        'roma_app_type': 'str'
     }
 
     attribute_map = {
@@ -317,7 +317,7 @@ class AppInfo:
         ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用
 
         :return: The roma_app_type of this AppInfo.
-        :rtype: object
+        :rtype: str
         """
         return self._roma_app_type
 
@@ -328,7 +328,7 @@ class AppInfo:
         ROMA_APP的类型： - subscription：订阅应用 - integration：集成应用
 
         :param roma_app_type: The roma_app_type of this AppInfo.
-        :type: object
+        :type: str
         """
         self._roma_app_type = roma_app_type
 

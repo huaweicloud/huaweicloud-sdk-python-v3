@@ -123,7 +123,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
     def status(self):
         """Gets the status of this CheckAssetJobStatusResponse.
 
-        作业状态 - Running : 作业正在执行 - Success : 作业执行成功，对于导出作业，用户可以通过archive_id来下载资产包 - Failed : 作业执行失败，通过reason字段查看具体错误原因 - Finished : 作业完成，针对导出作业，如果在有效期内下载了资产包，则作业状态从Success转换到Finished，此时不再返回archive_id字段
+        作业状态 - RUNNING : 作业正在执行 - SUCCEEDED : 作业执行成功，对于导出作业，用户可以通过archive_id来下载资产包 - FAILED : 作业执行失败，通过reason字段查看具体错误原因
 
         :return: The status of this CheckAssetJobStatusResponse.
         :rtype: str
@@ -134,7 +134,7 @@ class CheckAssetJobStatusResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this CheckAssetJobStatusResponse.
 
-        作业状态 - Running : 作业正在执行 - Success : 作业执行成功，对于导出作业，用户可以通过archive_id来下载资产包 - Failed : 作业执行失败，通过reason字段查看具体错误原因 - Finished : 作业完成，针对导出作业，如果在有效期内下载了资产包，则作业状态从Success转换到Finished，此时不再返回archive_id字段
+        作业状态 - RUNNING : 作业正在执行 - SUCCEEDED : 作业执行成功，对于导出作业，用户可以通过archive_id来下载资产包 - FAILED : 作业执行失败，通过reason字段查看具体错误原因
 
         :param status: The status of this CheckAssetJobStatusResponse.
         :type: str

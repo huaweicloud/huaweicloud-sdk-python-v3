@@ -43,7 +43,8 @@ class ListInstancesResult:
         'enterprise_project_id': 'str',
         'dedicated_resource_id': 'str',
         'time_zone': 'str',
-        'actions': 'list[str]'
+        'actions': 'list[str]',
+        'lb_ip_address': 'str'
     }
 
     attribute_map = {
@@ -68,10 +69,11 @@ class ListInstancesResult:
         'enterprise_project_id': 'enterprise_project_id',
         'dedicated_resource_id': 'dedicated_resource_id',
         'time_zone': 'time_zone',
-        'actions': 'actions'
+        'actions': 'actions',
+        'lb_ip_address': 'lb_ip_address'
     }
 
-    def __init__(self, id=None, name=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None):
+    def __init__(self, id=None, name=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None):
         """ListInstancesResult - a model defined in huaweicloud sdk"""
         
         
@@ -98,6 +100,7 @@ class ListInstancesResult:
         self._dedicated_resource_id = None
         self._time_zone = None
         self._actions = None
+        self._lb_ip_address = None
         self.discriminator = None
 
         self.id = id
@@ -123,6 +126,8 @@ class ListInstancesResult:
             self.dedicated_resource_id = dedicated_resource_id
         self.time_zone = time_zone
         self.actions = actions
+        if lb_ip_address is not None:
+            self.lb_ip_address = lb_ip_address
 
     @property
     def id(self):
@@ -603,6 +608,28 @@ class ListInstancesResult:
         :type: list[str]
         """
         self._actions = actions
+
+    @property
+    def lb_ip_address(self):
+        """Gets the lb_ip_address of this ListInstancesResult.
+
+        负载均衡ip，只有存在负载均衡ip才会返回该参数。
+
+        :return: The lb_ip_address of this ListInstancesResult.
+        :rtype: str
+        """
+        return self._lb_ip_address
+
+    @lb_ip_address.setter
+    def lb_ip_address(self, lb_ip_address):
+        """Sets the lb_ip_address of this ListInstancesResult.
+
+        负载均衡ip，只有存在负载均衡ip才会返回该参数。
+
+        :param lb_ip_address: The lb_ip_address of this ListInstancesResult.
+        :type: str
+        """
+        self._lb_ip_address = lb_ip_address
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,27 +23,32 @@ class PrePaidServerPublicip:
 
     openapi_types = {
         'id': 'str',
-        'eip': 'PrePaidServerEip'
+        'eip': 'PrePaidServerEip',
+        'delete_on_termination': 'bool'
     }
 
     attribute_map = {
         'id': 'id',
-        'eip': 'eip'
+        'eip': 'eip',
+        'delete_on_termination': 'delete_on_termination'
     }
 
-    def __init__(self, id=None, eip=None):
+    def __init__(self, id=None, eip=None, delete_on_termination=None):
         """PrePaidServerPublicip - a model defined in huaweicloud sdk"""
         
         
 
         self._id = None
         self._eip = None
+        self._delete_on_termination = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if eip is not None:
             self.eip = eip
+        if delete_on_termination is not None:
+            self.delete_on_termination = delete_on_termination
 
     @property
     def id(self):
@@ -86,6 +91,28 @@ class PrePaidServerPublicip:
         :type: PrePaidServerEip
         """
         self._eip = eip
+
+    @property
+    def delete_on_termination(self):
+        """Gets the delete_on_termination of this PrePaidServerPublicip.
+
+        弹性公网IP随实例释放策略。  true：弹性公网IP随实例释放。 false：弹性公网IP不随实例释放。 默认值：false。
+
+        :return: The delete_on_termination of this PrePaidServerPublicip.
+        :rtype: bool
+        """
+        return self._delete_on_termination
+
+    @delete_on_termination.setter
+    def delete_on_termination(self, delete_on_termination):
+        """Sets the delete_on_termination of this PrePaidServerPublicip.
+
+        弹性公网IP随实例释放策略。  true：弹性公网IP随实例释放。 false：弹性公网IP不随实例释放。 默认值：false。
+
+        :param delete_on_termination: The delete_on_termination of this PrePaidServerPublicip.
+        :type: bool
+        """
+        self._delete_on_termination = delete_on_termination
 
     def to_dict(self):
         """Returns the model properties as a dict"""

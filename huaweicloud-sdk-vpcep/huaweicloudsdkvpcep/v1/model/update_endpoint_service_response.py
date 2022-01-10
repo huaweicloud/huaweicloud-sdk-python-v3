@@ -28,6 +28,7 @@ class UpdateEndpointServiceResponse(SdkResponse):
         'service_name': 'str',
         'server_type': 'str',
         'vpc_id': 'str',
+        'pool_id': 'str',
         'approval_enabled': 'bool',
         'status': 'str',
         'service_type': 'str',
@@ -47,6 +48,7 @@ class UpdateEndpointServiceResponse(SdkResponse):
         'service_name': 'service_name',
         'server_type': 'server_type',
         'vpc_id': 'vpc_id',
+        'pool_id': 'pool_id',
         'approval_enabled': 'approval_enabled',
         'status': 'status',
         'service_type': 'service_type',
@@ -59,7 +61,7 @@ class UpdateEndpointServiceResponse(SdkResponse):
         'tags': 'tags'
     }
 
-    def __init__(self, id=None, port_id=None, vip_port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, cidr_type=None, ports=None, tcp_proxy=None, tags=None):
+    def __init__(self, id=None, port_id=None, vip_port_id=None, service_name=None, server_type=None, vpc_id=None, pool_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, cidr_type=None, ports=None, tcp_proxy=None, tags=None):
         """UpdateEndpointServiceResponse - a model defined in huaweicloud sdk"""
         
         super(UpdateEndpointServiceResponse, self).__init__()
@@ -70,6 +72,7 @@ class UpdateEndpointServiceResponse(SdkResponse):
         self._service_name = None
         self._server_type = None
         self._vpc_id = None
+        self._pool_id = None
         self._approval_enabled = None
         self._status = None
         self._service_type = None
@@ -94,6 +97,8 @@ class UpdateEndpointServiceResponse(SdkResponse):
             self.server_type = server_type
         if vpc_id is not None:
             self.vpc_id = vpc_id
+        if pool_id is not None:
+            self.pool_id = pool_id
         if approval_enabled is not None:
             self.approval_enabled = approval_enabled
         if status is not None:
@@ -246,6 +251,28 @@ class UpdateEndpointServiceResponse(SdkResponse):
         :type: str
         """
         self._vpc_id = vpc_id
+
+    @property
+    def pool_id(self):
+        """Gets the pool_id of this UpdateEndpointServiceResponse.
+
+        终端节点服务对应的集群id
+
+        :return: The pool_id of this UpdateEndpointServiceResponse.
+        :rtype: str
+        """
+        return self._pool_id
+
+    @pool_id.setter
+    def pool_id(self, pool_id):
+        """Sets the pool_id of this UpdateEndpointServiceResponse.
+
+        终端节点服务对应的集群id
+
+        :param pool_id: The pool_id of this UpdateEndpointServiceResponse.
+        :type: str
+        """
+        self._pool_id = pool_id
 
     @property
     def approval_enabled(self):

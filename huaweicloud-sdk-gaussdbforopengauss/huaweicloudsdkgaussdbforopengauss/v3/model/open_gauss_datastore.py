@@ -48,7 +48,7 @@ class OpenGaussDatastore:
     def type(self):
         """Gets the type of this OpenGaussDatastore.
 
-        数据库引擎，取值如下：  GaussDB(openGauss)。
+        数据库引擎，不区分大小写，取值如下：  GaussDB(for openGauss)。
 
         :return: The type of this OpenGaussDatastore.
         :rtype: str
@@ -59,7 +59,7 @@ class OpenGaussDatastore:
     def type(self, type):
         """Sets the type of this OpenGaussDatastore.
 
-        数据库引擎，取值如下：  GaussDB(openGauss)。
+        数据库引擎，不区分大小写，取值如下：  GaussDB(for openGauss)。
 
         :param type: The type of this OpenGaussDatastore.
         :type: str

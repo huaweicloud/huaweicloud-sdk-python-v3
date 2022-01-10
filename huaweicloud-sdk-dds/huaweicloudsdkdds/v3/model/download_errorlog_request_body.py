@@ -71,7 +71,7 @@ class DownloadErrorlogRequestBody:
     def node_id_list(self):
         """Gets the node_id_list of this DownloadErrorlogRequestBody.
 
-        节点ID列表，取空值，表示查询实例下所有允许查询的节点。使用请参考《DDS API参考》的“查询实例列表”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群下面的mongos、shard、config节点 - 副本集、单节点下面的所有节点
+        节点ID列表，取空值，表示查询实例下所有允许查询的节点。使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群下面的mongos、shard、config节点 - 副本集、单节点下面的所有节点
 
         :return: The node_id_list of this DownloadErrorlogRequestBody.
         :rtype: list[str]
@@ -82,7 +82,7 @@ class DownloadErrorlogRequestBody:
     def node_id_list(self, node_id_list):
         """Sets the node_id_list of this DownloadErrorlogRequestBody.
 
-        节点ID列表，取空值，表示查询实例下所有允许查询的节点。使用请参考《DDS API参考》的“查询实例列表”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群下面的mongos、shard、config节点 - 副本集、单节点下面的所有节点
+        节点ID列表，取空值，表示查询实例下所有允许查询的节点。使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群下面的mongos、shard、config节点 - 副本集、单节点下面的所有节点
 
         :param node_id_list: The node_id_list of this DownloadErrorlogRequestBody.
         :type: list[str]

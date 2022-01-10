@@ -54,7 +54,7 @@ class JobMetadata:
     def uid(self):
         """Gets the uid of this JobMetadata.
 
-        作业的ID。
+        任务的ID。
 
         :return: The uid of this JobMetadata.
         :rtype: str
@@ -65,7 +65,7 @@ class JobMetadata:
     def uid(self, uid):
         """Sets the uid of this JobMetadata.
 
-        作业的ID。
+        任务的ID。
 
         :param uid: The uid of this JobMetadata.
         :type: str
@@ -76,7 +76,7 @@ class JobMetadata:
     def creation_timestamp(self):
         """Gets the creation_timestamp of this JobMetadata.
 
-        作业的创建时间。
+        任务的创建时间。
 
         :return: The creation_timestamp of this JobMetadata.
         :rtype: str
@@ -87,7 +87,7 @@ class JobMetadata:
     def creation_timestamp(self, creation_timestamp):
         """Sets the creation_timestamp of this JobMetadata.
 
-        作业的创建时间。
+        任务的创建时间。
 
         :param creation_timestamp: The creation_timestamp of this JobMetadata.
         :type: str
@@ -98,7 +98,7 @@ class JobMetadata:
     def update_timestamp(self):
         """Gets the update_timestamp of this JobMetadata.
 
-        作业的更新时间。
+        任务的更新时间。
 
         :return: The update_timestamp of this JobMetadata.
         :rtype: str
@@ -109,7 +109,7 @@ class JobMetadata:
     def update_timestamp(self, update_timestamp):
         """Sets the update_timestamp of this JobMetadata.
 
-        作业的更新时间。
+        任务的更新时间。
 
         :param update_timestamp: The update_timestamp of this JobMetadata.
         :type: str

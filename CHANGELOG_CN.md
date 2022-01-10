@@ -1,3 +1,202 @@
+# 3.0.74 2022-01-10
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListOrderCouponsByOrderId`新增响应参数 `coupon_max_use_quantity`、`coupon_group`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 支持接口`ShowQuotas`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateCluster`新增请求参数 `customSan`、`offloadCluster`、`cidrs`、`flavor`、`faultDomain`
+  - 接口`ListClusters`新增响应参数 `customSan`、`offloadCluster`、`cidrs`、`flavor`、`faultDomain`
+  - 接口`UpdateCluster`:
+    - 新增请求参数 `customSan`、`containerNetwork`
+    - 新增响应参数 `customSan`、`offloadCluster`、`cidrs`、`flavor`、`faultDomain`
+  - 接口`ShowCluster`新增响应参数 `customSan`、`offloadCluster`、`cidrs`、`flavor`、`faultDomain`
+  - 接口`DeleteCluster`新增响应参数 `customSan`、`offloadCluster`、`cidrs`、`flavor`、`faultDomain`
+  - 接口`CreateNode`新增请求参数 `faultDomain`、`offloadNode`、`offloadNode`
+  - 接口`ListNodes`新增响应参数 `faultDomain`、`offloadNode`、`offloadNode`
+  - 接口`UpdateNode`新增响应参数 `faultDomain`、`offloadNode`、`offloadNode`
+  - 接口`ShowNode`新增响应参数 `faultDomain`、`offloadNode`、`offloadNode`
+  - 接口`DeleteNode`新增响应参数 `faultDomain`、`offloadNode`、`offloadNode`
+  - 接口`CreateNodePool`新增请求参数 `podSecurityGroups`、`faultDomain`、`offloadNode`、`offloadNode`
+  - 接口`ListNodePools`新增响应参数 `podSecurityGroups`、`faultDomain`、`offloadNode`、`offloadNode`
+  - 接口`UpdateNodePool`:
+    - 新增请求参数 `podSecurityGroups`、`faultDomain`、`offloadNode`、`offloadNode`
+    - 新增响应参数 `podSecurityGroups`、`faultDomain`、`offloadNode`、`offloadNode`
+  - 接口`ShowNodePool`新增响应参数 `podSecurityGroups`、`faultDomain`、`offloadNode`、`offloadNode`
+  - 接口`DeleteNodePool`新增响应参数 `podSecurityGroups`、`faultDomain`、`offloadNode`、`offloadNode`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 支持接口`UpdateDomainFullConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 支持接口`ListStacks`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListStacksByTag`
+
+### HuaweiCloud SDK Cloudtest
+
+- _新增特性_
+  - 支持接口`ShowPlanList`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowPlans`:
+    - 请求参数`limit`类型调整 `int64` -> `int32`
+    - 请求参数`offset`类型调整 `int64` -> `int32`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListMigrationTask`新增响应参数 `ecs_tenant_private_ip`
+  - 接口`ShowMigrationTask`新增响应参数 `ecs_tenant_private_ip`
+  - 接口`StopMigrationTask`新增响应参数 `ecs_tenant_private_ip`
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`移除响应参数`lb_ip_address`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateServers`新增请求参数 `delete_on_termination`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateFunctionConfig`:
+    - 新增请求参数 `is_stateful_function`
+    - 新增响应参数 `is_stateful_function`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`新增响应参数 `lb_ip_address`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`请求参数`type`新增枚举值`GaussDB(for openGauss)`, 移除枚举值`GaussDB(openGauss)`
+  - 接口`ListInstances`移除响应参数 `related_instance`
+
+### HuaweiCloud SDK IMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`GlanceListImages`响应参数`active_at`改为非必填
+  - 接口`GlanceShowImage`响应参数`active_at`改为非必填
+  - 接口`GlanceUpdateImage`响应参数`active_at`改为非必填
+
+### HuaweiCloud SDK IoTAnalytics
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateDatasource`请求参数`site_id`改为必填
+  - 接口`UpdateDataSource`请求参数`site_id`改为必填
+
+### HuaweiCloud SDK KPS
+
+- _新增特性_
+  - 支持数据加密服务-密钥对管理
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`StartInstanceSingleToHaAction`:
+    - 新增请求参数 `ad_domain_info`
+    - 移除请求参数 `password`
+
+### HuaweiCloud SDK ROMA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowMqsInstance`移除响应参数 `connect_dn`
+  - 接口`ListMqsInstanceTopics`移除响应参数 `policies`
+  - 接口`ShowDetailsOfAppV2`新增响应参数 `roma_app_type`
+
+### HuaweiCloud SDK VPCEP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateEndpointService`新增响应参数 `pool_id`
+  - 接口`ListEndpointService`新增响应参数 `domain_id`
+  - 接口`UpdateEndpointService`新增响应参数 `pool_id`
+  - 接口`ListEndpointInfoDetails`新增响应参数 `enable_status`、`specification_name`
+
+### HuaweiCloud SDK VSS
+
+- _新增特性_
+  - 支持接口`AuthorizeDomains`、`ShowTasks`、`CreateTasks`、`ShowResults`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListDomains`响应参数`auth_status`新增枚举值`skip`
+
 # 3.0.73 2021-12-25
 
 ### HuaweiCloud SDK CDM

@@ -26,6 +26,8 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         'service_type': 'str',
         'status': 'str',
         'active_status': 'list[str]',
+        'enable_status': 'str',
+        'specification_name': 'str',
         'endpoint_service_name': 'str',
         'marker_id': 'int',
         'endpoint_service_id': 'str',
@@ -49,6 +51,8 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         'service_type': 'service_type',
         'status': 'status',
         'active_status': 'active_status',
+        'enable_status': 'enable_status',
+        'specification_name': 'specification_name',
         'endpoint_service_name': 'endpoint_service_name',
         'marker_id': 'marker_id',
         'endpoint_service_id': 'endpoint_service_id',
@@ -67,7 +71,7 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         'routetables': 'routetables'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None):
+    def __init__(self, id=None, service_type=None, status=None, active_status=None, enable_status=None, specification_name=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None):
         """ListEndpointInfoDetailsResponse - a model defined in huaweicloud sdk"""
         
         super(ListEndpointInfoDetailsResponse, self).__init__()
@@ -76,6 +80,8 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         self._service_type = None
         self._status = None
         self._active_status = None
+        self._enable_status = None
+        self._specification_name = None
         self._endpoint_service_name = None
         self._marker_id = None
         self._endpoint_service_id = None
@@ -102,6 +108,10 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
             self.status = status
         if active_status is not None:
             self.active_status = active_status
+        if enable_status is not None:
+            self.enable_status = enable_status
+        if specification_name is not None:
+            self.specification_name = specification_name
         if endpoint_service_name is not None:
             self.endpoint_service_name = endpoint_service_name
         if marker_id is not None:
@@ -222,6 +232,50 @@ class ListEndpointInfoDetailsResponse(SdkResponse):
         :type: list[str]
         """
         self._active_status = active_status
+
+    @property
+    def enable_status(self):
+        """Gets the enable_status of this ListEndpointInfoDetailsResponse.
+
+        终端节点是否可用。 ● enable：启用 ● disable：不启用
+
+        :return: The enable_status of this ListEndpointInfoDetailsResponse.
+        :rtype: str
+        """
+        return self._enable_status
+
+    @enable_status.setter
+    def enable_status(self, enable_status):
+        """Sets the enable_status of this ListEndpointInfoDetailsResponse.
+
+        终端节点是否可用。 ● enable：启用 ● disable：不启用
+
+        :param enable_status: The enable_status of this ListEndpointInfoDetailsResponse.
+        :type: str
+        """
+        self._enable_status = enable_status
+
+    @property
+    def specification_name(self):
+        """Gets the specification_name of this ListEndpointInfoDetailsResponse.
+
+        终端节点服务规格的名称。
+
+        :return: The specification_name of this ListEndpointInfoDetailsResponse.
+        :rtype: str
+        """
+        return self._specification_name
+
+    @specification_name.setter
+    def specification_name(self, specification_name):
+        """Sets the specification_name of this ListEndpointInfoDetailsResponse.
+
+        终端节点服务规格的名称。
+
+        :param specification_name: The specification_name of this ListEndpointInfoDetailsResponse.
+        :type: str
+        """
+        self._specification_name = specification_name
 
     @property
     def endpoint_service_name(self):

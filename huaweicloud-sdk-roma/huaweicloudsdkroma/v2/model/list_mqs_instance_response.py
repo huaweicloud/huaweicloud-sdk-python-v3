@@ -22,7 +22,7 @@ class ListMqsInstanceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'instances': 'list[ListInstancesRespInstances]',
+        'instances': 'list[ShowInstanceResp]',
         'instance_num': 'int'
     }
 
@@ -52,7 +52,7 @@ class ListMqsInstanceResponse(SdkResponse):
         实例列表
 
         :return: The instances of this ListMqsInstanceResponse.
-        :rtype: list[ListInstancesRespInstances]
+        :rtype: list[ShowInstanceResp]
         """
         return self._instances
 
@@ -63,7 +63,7 @@ class ListMqsInstanceResponse(SdkResponse):
         实例列表
 
         :param instances: The instances of this ListMqsInstanceResponse.
-        :type: list[ListInstancesRespInstances]
+        :type: list[ShowInstanceResp]
         """
         self._instances = instances
 

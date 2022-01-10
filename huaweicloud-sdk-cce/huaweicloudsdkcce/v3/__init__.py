@@ -30,7 +30,9 @@ from huaweicloudsdkcce.v3.model.cluster_node_information_metadata import Cluster
 from huaweicloudsdkcce.v3.model.cluster_spec import ClusterSpec
 from huaweicloudsdkcce.v3.model.cluster_status import ClusterStatus
 from huaweicloudsdkcce.v3.model.clusters import Clusters
+from huaweicloudsdkcce.v3.model.container_cidr import ContainerCIDR
 from huaweicloudsdkcce.v3.model.container_network import ContainerNetwork
+from huaweicloudsdkcce.v3.model.container_network_update import ContainerNetworkUpdate
 from huaweicloudsdkcce.v3.model.context import Context
 from huaweicloudsdkcce.v3.model.contexts import Contexts
 from huaweicloudsdkcce.v3.model.create_addon_instance_request import CreateAddonInstanceRequest
@@ -111,6 +113,7 @@ from huaweicloudsdkcce.v3.model.persistent_volume_claim import PersistentVolumeC
 from huaweicloudsdkcce.v3.model.persistent_volume_claim_metadata import PersistentVolumeClaimMetadata
 from huaweicloudsdkcce.v3.model.persistent_volume_claim_spec import PersistentVolumeClaimSpec
 from huaweicloudsdkcce.v3.model.persistent_volume_claim_status import PersistentVolumeClaimStatus
+from huaweicloudsdkcce.v3.model.quota_resource import QuotaResource
 from huaweicloudsdkcce.v3.model.reinstall_extend_param import ReinstallExtendParam
 from huaweicloudsdkcce.v3.model.reinstall_k8s_options_config import ReinstallK8sOptionsConfig
 from huaweicloudsdkcce.v3.model.reinstall_node_spec import ReinstallNodeSpec
@@ -140,6 +143,8 @@ from huaweicloudsdkcce.v3.model.show_node_pool_request import ShowNodePoolReques
 from huaweicloudsdkcce.v3.model.show_node_pool_response import ShowNodePoolResponse
 from huaweicloudsdkcce.v3.model.show_node_request import ShowNodeRequest
 from huaweicloudsdkcce.v3.model.show_node_response import ShowNodeResponse
+from huaweicloudsdkcce.v3.model.show_quotas_request import ShowQuotasRequest
+from huaweicloudsdkcce.v3.model.show_quotas_response import ShowQuotasResponse
 from huaweicloudsdkcce.v3.model.storage import Storage
 from huaweicloudsdkcce.v3.model.storage_groups import StorageGroups
 from huaweicloudsdkcce.v3.model.storage_selectors import StorageSelectors

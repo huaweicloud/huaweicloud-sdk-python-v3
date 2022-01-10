@@ -22,7 +22,7 @@ class ShowIssuesByPlanIdResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[ShowIssuesByPlanIdResponseBody]'
+        'body': 'list[TestPlanIssueDetail]'
     }
 
     attribute_map = {
@@ -44,10 +44,10 @@ class ShowIssuesByPlanIdResponse(SdkResponse):
     def body(self):
         """Gets the body of this ShowIssuesByPlanIdResponse.
 
-        查询某个测试计划关联的需求列表
+        项目下某个测试计划关联的需求列表的返回结构
 
         :return: The body of this ShowIssuesByPlanIdResponse.
-        :rtype: list[ShowIssuesByPlanIdResponseBody]
+        :rtype: list[TestPlanIssueDetail]
         """
         return self._body
 
@@ -55,10 +55,10 @@ class ShowIssuesByPlanIdResponse(SdkResponse):
     def body(self, body):
         """Sets the body of this ShowIssuesByPlanIdResponse.
 
-        查询某个测试计划关联的需求列表
+        项目下某个测试计划关联的需求列表的返回结构
 
         :param body: The body of this ShowIssuesByPlanIdResponse.
-        :type: list[ShowIssuesByPlanIdResponseBody]
+        :type: list[TestPlanIssueDetail]
         """
         self._body = body
 

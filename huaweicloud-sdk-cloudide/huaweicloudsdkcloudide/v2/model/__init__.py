@@ -30,8 +30,8 @@ from huaweicloudsdkcloudide.v2.model.list_org_instances_request import ListOrgIn
 from huaweicloudsdkcloudide.v2.model.list_org_instances_response import ListOrgInstancesResponse
 from huaweicloudsdkcloudide.v2.model.list_project_templates_request import ListProjectTemplatesRequest
 from huaweicloudsdkcloudide.v2.model.list_project_templates_response import ListProjectTemplatesResponse
-from huaweicloudsdkcloudide.v2.model.list_stacks_by_tag_request import ListStacksByTagRequest
-from huaweicloudsdkcloudide.v2.model.list_stacks_by_tag_response import ListStacksByTagResponse
+from huaweicloudsdkcloudide.v2.model.list_stacks_request import ListStacksRequest
+from huaweicloudsdkcloudide.v2.model.list_stacks_response import ListStacksResponse
 from huaweicloudsdkcloudide.v2.model.page_instances_vo import PageInstancesVO
 from huaweicloudsdkcloudide.v2.model.plugin import Plugin
 from huaweicloudsdkcloudide.v2.model.project_templates import ProjectTemplates
@@ -46,10 +46,10 @@ from huaweicloudsdkcloudide.v2.model.show_instance_response import ShowInstanceR
 from huaweicloudsdkcloudide.v2.model.show_price_request import ShowPriceRequest
 from huaweicloudsdkcloudide.v2.model.show_price_response import ShowPriceResponse
 from huaweicloudsdkcloudide.v2.model.source_storage import SourceStorage
-from huaweicloudsdkcloudide.v2.model.stacks import Stacks
+from huaweicloudsdkcloudide.v2.model.stack_info import StackInfo
 from huaweicloudsdkcloudide.v2.model.stacks_attribute import StacksAttribute
 from huaweicloudsdkcloudide.v2.model.stacks_config import StacksConfig
-from huaweicloudsdkcloudide.v2.model.stacks_tag import StacksTag
+from huaweicloudsdkcloudide.v2.model.stacks_tags import StacksTags
 from huaweicloudsdkcloudide.v2.model.start_instance_param import StartInstanceParam
 from huaweicloudsdkcloudide.v2.model.start_instance_request import StartInstanceRequest
 from huaweicloudsdkcloudide.v2.model.start_instance_response import StartInstanceResponse

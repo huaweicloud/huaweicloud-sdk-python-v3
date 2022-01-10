@@ -1826,6 +1826,73 @@ class CdnAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_domain_full_config_async(self, request):
+        """修改域名全量配置接口
+
+        修改域名全量配置接口，支持配置回源请求头、http header配置、url鉴权
+
+        :param UpdateDomainFullConfigRequest request
+        :return: UpdateDomainFullConfigResponse
+        """
+        return self.update_domain_full_config_with_http_info(request)
+
+    def update_domain_full_config_with_http_info(self, request):
+        """修改域名全量配置接口
+
+        修改域名全量配置接口，支持配置回源请求头、http header配置、url鉴权
+
+        :param UpdateDomainFullConfigRequest request
+        :return: UpdateDomainFullConfigResponse
+        """
+
+        all_params = ['domain_name', 'configs', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/cdn/configuration/domains/{domain_name}/configs',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateDomainFullConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_domain_multi_certificates_async(self, request):
         """一个证书批量设置多个域名
 
