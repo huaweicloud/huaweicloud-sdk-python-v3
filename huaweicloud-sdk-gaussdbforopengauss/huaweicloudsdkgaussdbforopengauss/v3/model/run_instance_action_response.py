@@ -44,7 +44,7 @@ class RunInstanceActionResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this RunInstanceActionResponse.
 
-        实例删除的任务id。
+        任务id。
 
         :return: The job_id of this RunInstanceActionResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class RunInstanceActionResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this RunInstanceActionResponse.
 
-        实例删除的任务id。
+        任务id。
 
         :param job_id: The job_id of this RunInstanceActionResponse.
         :type: str

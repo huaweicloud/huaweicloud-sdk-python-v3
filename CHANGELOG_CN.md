@@ -1,3 +1,57 @@
+# 3.0.75 2022-01-17
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 修复接口`CreateNodePool`的请求体结构错误的问题
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 支持接口`ListFunctionAsyncInvocations`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowGaussMySqlInstanceInfo`新增响应参数`used`
+  - 接口`UpdateInstanceMonitor`新增请求参数`monitor_switch`
+  - 接口`UpdateInstanceMonitor`的请求参数`period`类型修改： `string` -> `int32`
+  - 接口`ShowGaussMySqlProjectQuotas`移除响应参数`mode`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListApiVersionNew`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListFlavors`新增响应参数 `az_desc`
+
+### HuaweiCloud SDK ROMA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`AddUserToApp`新增请求参数 `id`、`roles`
+  - 接口`DownloadAssetArchive`移除响应参数 `apps`、`tasks`
+  - 接口`ImportAsset`移除请求参数 `apps`、`tasks`
+  - 接口`DeleteAsset`请求参数`tasks`改为必填
+  - 接口`ShowMqsInstance`新增响应参数`access_user`
+
 # 3.0.74 2022-01-10
 
 ### HuaweiCloud SDK BSS

@@ -133,6 +133,7 @@ from huaweicloudsdkcce.v3.model.resource_requirements import ResourceRequirement
 from huaweicloudsdkcce.v3.model.resource_tag import ResourceTag
 from huaweicloudsdkcce.v3.model.runtime import Runtime
 from huaweicloudsdkcce.v3.model.runtime_config import RuntimeConfig
+from huaweicloudsdkcce.v3.model.security_id import SecurityID
 from huaweicloudsdkcce.v3.model.show_addon_instance_request import ShowAddonInstanceRequest
 from huaweicloudsdkcce.v3.model.show_addon_instance_response import ShowAddonInstanceResponse
 from huaweicloudsdkcce.v3.model.show_cluster_request import ShowClusterRequest

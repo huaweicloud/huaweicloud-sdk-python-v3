@@ -287,7 +287,7 @@ class ListInstancesRequest:
     def tags(self):
         """Gets the tags of this ListInstancesRequest.
 
-        根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值，最多包含10组。key不可以为空或重复，value可以为空。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。
+        根据实例标签键值对进行查询。 {key}表示标签键，不可以为空或重复。最大长度127个unicode字符。key不能为空或者空字符串，不能为空格，使用之前先trim前后半角空格。不能包含+/?#&=,%特殊字符。 {value}表示标签值，可以为空。最大长度255个unicode字符，使用之前先trim 前后半角空格。不能包含+/?#&=,%特殊字符。如果value为空，则表示any_value（查询任意value）。 如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，最多包含10组。
 
         :return: The tags of this ListInstancesRequest.
         :rtype: str
@@ -298,7 +298,7 @@ class ListInstancesRequest:
     def tags(self, tags):
         """Sets the tags of this ListInstancesRequest.
 
-        根据实例标签键值对进行查询。{key}表示标签键，{value}表示标签值，最多包含10组。key不可以为空或重复，value可以为空。如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，表示查询同时包含指定标签键值对的实例。
+        根据实例标签键值对进行查询。 {key}表示标签键，不可以为空或重复。最大长度127个unicode字符。key不能为空或者空字符串，不能为空格，使用之前先trim前后半角空格。不能包含+/?#&=,%特殊字符。 {value}表示标签值，可以为空。最大长度255个unicode字符，使用之前先trim 前后半角空格。不能包含+/?#&=,%特殊字符。如果value为空，则表示any_value（查询任意value）。 如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，最多包含10组。
 
         :param tags: The tags of this ListInstancesRequest.
         :type: str

@@ -22,56 +22,30 @@ class Resource:
     sensitive_list = []
 
     openapi_types = {
-        'mode': 'str',
         'type': 'str',
         'used': 'int',
         'quota': 'int'
     }
 
     attribute_map = {
-        'mode': 'mode',
         'type': 'type',
         'used': 'used',
         'quota': 'quota'
     }
 
-    def __init__(self, mode=None, type=None, used=None, quota=None):
+    def __init__(self, type=None, used=None, quota=None):
         """Resource - a model defined in huaweicloud sdk"""
         
         
 
-        self._mode = None
         self._type = None
         self._used = None
         self._quota = None
         self.discriminator = None
 
-        self.mode = mode
         self.type = type
         self.used = used
         self.quota = quota
-
-    @property
-    def mode(self):
-        """Gets the mode of this Resource.
-
-        资源类型。 - cluster: 表示主备版实例的配额
-
-        :return: The mode of this Resource.
-        :rtype: str
-        """
-        return self._mode
-
-    @mode.setter
-    def mode(self, mode):
-        """Sets the mode of this Resource.
-
-        资源类型。 - cluster: 表示主备版实例的配额
-
-        :param mode: The mode of this Resource.
-        :type: str
-        """
-        self._mode = mode
 
     @property
     def type(self):

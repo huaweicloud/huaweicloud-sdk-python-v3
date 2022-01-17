@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AppAssetTasks:
+class User:
 
 
     """
@@ -22,45 +22,72 @@ class AppAssetTasks:
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str'
+        'id': 'str',
+        'roles': 'list[str]'
     }
 
     attribute_map = {
-        'task_id': 'task_id'
+        'id': 'id',
+        'roles': 'roles'
     }
 
-    def __init__(self, task_id=None):
-        """AppAssetTasks - a model defined in huaweicloud sdk"""
+    def __init__(self, id=None, roles=None):
+        """User - a model defined in huaweicloud sdk"""
         
         
 
-        self._task_id = None
+        self._id = None
+        self._roles = None
         self.discriminator = None
 
-        if task_id is not None:
-            self.task_id = task_id
+        if id is not None:
+            self.id = id
+        if roles is not None:
+            self.roles = roles
 
     @property
-    def task_id(self):
-        """Gets the task_id of this AppAssetTasks.
+    def id(self):
+        """Gets the id of this User.
 
-        任务ID
+        用户ID
 
-        :return: The task_id of this AppAssetTasks.
+        :return: The id of this User.
         :rtype: str
         """
-        return self._task_id
+        return self._id
 
-    @task_id.setter
-    def task_id(self, task_id):
-        """Sets the task_id of this AppAssetTasks.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this User.
 
-        任务ID
+        用户ID
 
-        :param task_id: The task_id of this AppAssetTasks.
+        :param id: The id of this User.
         :type: str
         """
-        self._task_id = task_id
+        self._id = id
+
+    @property
+    def roles(self):
+        """Gets the roles of this User.
+
+        应用权限角色 - read：应用下资源只读权限，至少要存在此权限，包括API调试 - access：应用下资源的访问管理权限 - delete：应用下资源的删除权限 - modify：应用下资源的修改权限，包括API发布、下线 - admin：应用和应用下资源的权限 - 仅提供admin时，会自动应用其它所有权限 - 未提供read时会自动应用read权限
+
+        :return: The roles of this User.
+        :rtype: list[str]
+        """
+        return self._roles
+
+    @roles.setter
+    def roles(self, roles):
+        """Sets the roles of this User.
+
+        应用权限角色 - read：应用下资源只读权限，至少要存在此权限，包括API调试 - access：应用下资源的访问管理权限 - delete：应用下资源的删除权限 - modify：应用下资源的修改权限，包括API发布、下线 - admin：应用和应用下资源的权限 - 仅提供admin时，会自动应用其它所有权限 - 未提供read时会自动应用read权限
+
+        :param roles: The roles of this User.
+        :type: list[str]
+        """
+        self._roles = roles
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -104,7 +131,7 @@ class AppAssetTasks:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AppAssetTasks):
+        if not isinstance(other, User):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,7 +27,7 @@ class NodePoolSpec:
         'initial_node_count': 'int',
         'autoscaling': 'NodePoolNodeAutoscaling',
         'node_management': 'NodeManagement',
-        'pod_security_groups': 'list[object]'
+        'pod_security_groups': 'list[SecurityID]'
     }
 
     attribute_map = {
@@ -175,7 +175,7 @@ class NodePoolSpec:
         1.21版本集群节点池支持绑定安全组，最多五个。
 
         :return: The pod_security_groups of this NodePoolSpec.
-        :rtype: list[object]
+        :rtype: list[SecurityID]
         """
         return self._pod_security_groups
 
@@ -186,7 +186,7 @@ class NodePoolSpec:
         1.21版本集群节点池支持绑定安全组，最多五个。
 
         :param pod_security_groups: The pod_security_groups of this NodePoolSpec.
-        :type: list[object]
+        :type: list[SecurityID]
         """
         self._pod_security_groups = pod_security_groups
 

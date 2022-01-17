@@ -23,7 +23,7 @@ class ImportAssetRequest:
 
     openapi_types = {
         'instance_id': 'str',
-        'body': 'AppAsset'
+        'body': 'str'
     }
 
     attribute_map = {
@@ -72,7 +72,7 @@ class ImportAssetRequest:
 
 
         :return: The body of this ImportAssetRequest.
-        :rtype: AppAsset
+        :rtype: str
         """
         return self._body
 
@@ -82,7 +82,7 @@ class ImportAssetRequest:
 
 
         :param body: The body of this ImportAssetRequest.
-        :type: AppAsset
+        :type: str
         """
         self._body = body
 

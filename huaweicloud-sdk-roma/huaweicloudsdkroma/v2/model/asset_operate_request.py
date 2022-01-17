@@ -23,7 +23,7 @@ class AssetOperateRequest:
 
     openapi_types = {
         'apps': 'list[str]',
-        'tasks': 'list[AppAssetTasks]'
+        'tasks': 'list[AssetOperateRequestTasks]'
     }
 
     attribute_map = {
@@ -41,8 +41,7 @@ class AssetOperateRequest:
         self.discriminator = None
 
         self.apps = apps
-        if tasks is not None:
-            self.tasks = tasks
+        self.tasks = tasks
 
     @property
     def apps(self):
@@ -73,7 +72,7 @@ class AssetOperateRequest:
         任务列表
 
         :return: The tasks of this AssetOperateRequest.
-        :rtype: list[AppAssetTasks]
+        :rtype: list[AssetOperateRequestTasks]
         """
         return self._tasks
 
@@ -84,7 +83,7 @@ class AssetOperateRequest:
         任务列表
 
         :param tasks: The tasks of this AssetOperateRequest.
-        :type: list[AppAssetTasks]
+        :type: list[AssetOperateRequestTasks]
         """
         self._tasks = tasks
 

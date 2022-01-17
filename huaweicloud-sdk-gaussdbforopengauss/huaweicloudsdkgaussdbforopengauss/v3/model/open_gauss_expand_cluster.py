@@ -49,6 +49,7 @@ class OpenGaussExpandCluster:
     def coordinators(self):
         """Gets the coordinators of this OpenGaussExpandCluster.
 
+        CN横向扩容时必填
 
         :return: The coordinators of this OpenGaussExpandCluster.
         :rtype: list[OpenGaussCoordinators]
@@ -59,6 +60,7 @@ class OpenGaussExpandCluster:
     def coordinators(self, coordinators):
         """Sets the coordinators of this OpenGaussExpandCluster.
 
+        CN横向扩容时必填
 
         :param coordinators: The coordinators of this OpenGaussExpandCluster.
         :type: list[OpenGaussCoordinators]

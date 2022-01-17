@@ -127,6 +127,8 @@ from huaweicloudsdkrds.v3.model.instance_response import InstanceResponse
 from huaweicloudsdkrds.v3.model.instance_restart_requset_body import InstanceRestartRequsetBody
 from huaweicloudsdkrds.v3.model.l_datastore import LDatastore
 from huaweicloudsdkrds.v3.model.links_info_response import LinksInfoResponse
+from huaweicloudsdkrds.v3.model.list_api_version_new_request import ListApiVersionNewRequest
+from huaweicloudsdkrds.v3.model.list_api_version_new_response import ListApiVersionNewResponse
 from huaweicloudsdkrds.v3.model.list_api_version_request import ListApiVersionRequest
 from huaweicloudsdkrds.v3.model.list_api_version_response import ListApiVersionResponse
 from huaweicloudsdkrds.v3.model.list_auditlogs_request import ListAuditlogsRequest

@@ -69,7 +69,7 @@ class OpenGaussBackupStrategyForResponse:
     def keep_days(self):
         """Gets the keep_days of this OpenGaussBackupStrategyForResponse.
 
-        指定已生成备份文件的可保存天数。  取值范围：0～732。该参数缺省，或取0值，表示关闭自动备份策略。  如果请求体中不填写“backup_strategy”字段，则响应体中 “keep_days”默认返回“7”。
+        指定已生成备份文件的可保存天数。  取值范围：1～732。  如果请求体中不填写“backup_strategy”字段，则响应体中 “keep_days”默认返回“7”。
 
         :return: The keep_days of this OpenGaussBackupStrategyForResponse.
         :rtype: int
@@ -80,7 +80,7 @@ class OpenGaussBackupStrategyForResponse:
     def keep_days(self, keep_days):
         """Sets the keep_days of this OpenGaussBackupStrategyForResponse.
 
-        指定已生成备份文件的可保存天数。  取值范围：0～732。该参数缺省，或取0值，表示关闭自动备份策略。  如果请求体中不填写“backup_strategy”字段，则响应体中 “keep_days”默认返回“7”。
+        指定已生成备份文件的可保存天数。  取值范围：1～732。  如果请求体中不填写“backup_strategy”字段，则响应体中 “keep_days”默认返回“7”。
 
         :param keep_days: The keep_days of this OpenGaussBackupStrategyForResponse.
         :type: int

@@ -1214,6 +1214,79 @@ class FunctionGraphAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_function_async_invocations_async(self, request):
+        """获取函数异步调用请求列表
+
+        获取函数异步调用请求列表
+
+        :param ListFunctionAsyncInvocationsRequest request
+        :return: ListFunctionAsyncInvocationsResponse
+        """
+        return self.list_function_async_invocations_with_http_info(request)
+
+    def list_function_async_invocations_with_http_info(self, request):
+        """获取函数异步调用请求列表
+
+        获取函数异步调用请求列表
+
+        :param ListFunctionAsyncInvocationsRequest request
+        :return: ListFunctionAsyncInvocationsResponse
+        """
+
+        all_params = ['function_urn', 'request_id', 'limit', 'status', 'query_begin_time', 'query_end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+        if 'request_id' in local_var_params:
+            query_params.append(('request_id', local_var_params['request_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'query_begin_time' in local_var_params:
+            query_params.append(('query_begin_time', local_var_params['query_begin_time']))
+        if 'query_end_time' in local_var_params:
+            query_params.append(('query_end_time', local_var_params['query_end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/async-invocations',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFunctionAsyncInvocationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_function_async_invoke_config_async(self, request):
         """获取函数异步配置列表
 

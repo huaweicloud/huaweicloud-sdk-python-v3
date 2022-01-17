@@ -72,7 +72,6 @@ from huaweicloudsdkroma.v2.model.api_version import ApiVersion
 from huaweicloudsdkroma.v2.model.api_version_resp import ApiVersionResp
 from huaweicloudsdkroma.v2.model.app_acl_create import AppAclCreate
 from huaweicloudsdkroma.v2.model.app_asset import AppAsset
-from huaweicloudsdkroma.v2.model.app_asset_tasks import AppAssetTasks
 from huaweicloudsdkroma.v2.model.app_base_info import AppBaseInfo
 from huaweicloudsdkroma.v2.model.app_code_base_info import AppCodeBaseInfo
 from huaweicloudsdkroma.v2.model.app_code_create import AppCodeCreate
@@ -98,6 +97,7 @@ from huaweicloudsdkroma.v2.model.asset_export_request_tasks import AssetExportRe
 from huaweicloudsdkroma.v2.model.asset_export_task import AssetExportTask
 from huaweicloudsdkroma.v2.model.asset_job_reason import AssetJobReason
 from huaweicloudsdkroma.v2.model.asset_operate_request import AssetOperateRequest
+from huaweicloudsdkroma.v2.model.asset_operate_request_tasks import AssetOperateRequestTasks
 from huaweicloudsdkroma.v2.model.associate_apps_for_app_quota_request import AssociateAppsForAppQuotaRequest
 from huaweicloudsdkroma.v2.model.associate_apps_for_app_quota_response import AssociateAppsForAppQuotaResponse
 from huaweicloudsdkroma.v2.model.associate_certificate_v2_request import AssociateCertificateV2Request
@@ -909,6 +909,7 @@ from huaweicloudsdkroma.v2.model.url_domain_base import UrlDomainBase
 from huaweicloudsdkroma.v2.model.url_domain_base_info import UrlDomainBaseInfo
 from huaweicloudsdkroma.v2.model.url_domain_create import UrlDomainCreate
 from huaweicloudsdkroma.v2.model.url_domain_modify import UrlDomainModify
+from huaweicloudsdkroma.v2.model.user import User
 from huaweicloudsdkroma.v2.model.validate_dictionary_request import ValidateDictionaryRequest
 from huaweicloudsdkroma.v2.model.validate_dictionary_response import ValidateDictionaryResponse
 from huaweicloudsdkroma.v2.model.validate_roma_app_request import ValidateRomaAppRequest

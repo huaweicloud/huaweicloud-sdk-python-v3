@@ -28,7 +28,7 @@ class MysqlInstanceNodeInfo:
         'status': 'str',
         'port': 'int',
         'private_read_ips': 'list[str]',
-        'volume': 'MysqlVolumeInfo',
+        'volume': 'MysqlInstanceNodeVolumeInfo',
         'az_code': 'str',
         'region_code': 'str',
         'created': 'str',
@@ -256,7 +256,7 @@ class MysqlInstanceNodeInfo:
 
 
         :return: The volume of this MysqlInstanceNodeInfo.
-        :rtype: MysqlVolumeInfo
+        :rtype: MysqlInstanceNodeVolumeInfo
         """
         return self._volume
 
@@ -266,7 +266,7 @@ class MysqlInstanceNodeInfo:
 
 
         :param volume: The volume of this MysqlInstanceNodeInfo.
-        :type: MysqlVolumeInfo
+        :type: MysqlInstanceNodeVolumeInfo
         """
         self._volume = volume
 

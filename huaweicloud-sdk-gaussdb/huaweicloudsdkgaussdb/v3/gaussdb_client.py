@@ -2139,7 +2139,7 @@ class GaussDBClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/monitorPolicy',
+            resource_path='/v3/{project_id}/instances/{instance_id}/monitor-policy',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -2405,7 +2405,7 @@ class GaussDBClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/monitorPolicy',
+            resource_path='/v3/{project_id}/instances/{instance_id}/monitor-policy',
             method='PUT',
             path_params=path_params,
             query_params=query_params,

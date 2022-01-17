@@ -98,7 +98,7 @@ class CreateVolumeRequestBody:
     def server_id(self):
         """Gets the server_id of this CreateVolumeRequestBody.
 
-        创建云硬盘并挂载到目标虚拟机。 目前只支持ECS服务的虚拟机，暂不支持BMS的裸金属服务器。
+        创建云硬盘并挂载到目标虚拟机。 创建的云硬盘的计费模式会与虚拟机的计费模式保持一致。 目前只支持ECS服务的虚拟机，暂不支持BMS的裸金属服务器。
 
         :return: The server_id of this CreateVolumeRequestBody.
         :rtype: str
@@ -109,7 +109,7 @@ class CreateVolumeRequestBody:
     def server_id(self, server_id):
         """Sets the server_id of this CreateVolumeRequestBody.
 
-        创建云硬盘并挂载到目标虚拟机。 目前只支持ECS服务的虚拟机，暂不支持BMS的裸金属服务器。
+        创建云硬盘并挂载到目标虚拟机。 创建的云硬盘的计费模式会与虚拟机的计费模式保持一致。 目前只支持ECS服务的虚拟机，暂不支持BMS的裸金属服务器。
 
         :param server_id: The server_id of this CreateVolumeRequestBody.
         :type: str

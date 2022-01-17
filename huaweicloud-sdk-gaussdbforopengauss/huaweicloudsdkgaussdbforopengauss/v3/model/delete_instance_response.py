@@ -44,7 +44,7 @@ class DeleteInstanceResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this DeleteInstanceResponse.
 
-        实例删除的任务id。
+        任务id。
 
         :return: The job_id of this DeleteInstanceResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteInstanceResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this DeleteInstanceResponse.
 
-        实例删除的任务id。
+        任务id。
 
         :param job_id: The job_id of this DeleteInstanceResponse.
         :type: str

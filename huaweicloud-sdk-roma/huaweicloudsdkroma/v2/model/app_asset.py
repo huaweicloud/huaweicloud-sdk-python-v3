@@ -22,72 +22,16 @@ class AppAsset:
     sensitive_list = []
 
     openapi_types = {
-        'apps': 'list[str]',
-        'tasks': 'list[AppAssetTasks]'
     }
 
     attribute_map = {
-        'apps': 'apps',
-        'tasks': 'tasks'
     }
 
-    def __init__(self, apps=None, tasks=None):
+    def __init__(self):
         """AppAsset - a model defined in huaweicloud sdk"""
         
         
-
-        self._apps = None
-        self._tasks = None
         self.discriminator = None
-
-        if apps is not None:
-            self.apps = apps
-        if tasks is not None:
-            self.tasks = tasks
-
-    @property
-    def apps(self):
-        """Gets the apps of this AppAsset.
-
-        应用列表
-
-        :return: The apps of this AppAsset.
-        :rtype: list[str]
-        """
-        return self._apps
-
-    @apps.setter
-    def apps(self, apps):
-        """Sets the apps of this AppAsset.
-
-        应用列表
-
-        :param apps: The apps of this AppAsset.
-        :type: list[str]
-        """
-        self._apps = apps
-
-    @property
-    def tasks(self):
-        """Gets the tasks of this AppAsset.
-
-        任务列表
-
-        :return: The tasks of this AppAsset.
-        :rtype: list[AppAssetTasks]
-        """
-        return self._tasks
-
-    @tasks.setter
-    def tasks(self, tasks):
-        """Sets the tasks of this AppAsset.
-
-        任务列表
-
-        :param tasks: The tasks of this AppAsset.
-        :type: list[AppAssetTasks]
-        """
-        self._tasks = tasks
 
     def to_dict(self):
         """Returns the model properties as a dict"""

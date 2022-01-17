@@ -40,7 +40,6 @@ class MysqlInstanceInfoDetail:
         'subnet_id': 'str',
         'security_group_id': 'str',
         'configuration_id': 'str',
-        'volume': 'MysqlVolumeInfo',
         'backup_strategy': 'MysqlBackupStrategy',
         'nodes': 'list[MysqlInstanceNodeInfo]',
         'enterprise_project_id': 'str',
@@ -71,7 +70,6 @@ class MysqlInstanceInfoDetail:
         'subnet_id': 'subnet_id',
         'security_group_id': 'security_group_id',
         'configuration_id': 'configuration_id',
-        'volume': 'volume',
         'backup_strategy': 'backup_strategy',
         'nodes': 'nodes',
         'enterprise_project_id': 'enterprise_project_id',
@@ -83,7 +81,7 @@ class MysqlInstanceInfoDetail:
         'dedicated_resource_id': 'dedicated_resource_id'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, type=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, volume=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None):
+    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, type=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None):
         """MysqlInstanceInfoDetail - a model defined in huaweicloud sdk"""
         
         
@@ -106,7 +104,6 @@ class MysqlInstanceInfoDetail:
         self._subnet_id = None
         self._security_group_id = None
         self._configuration_id = None
-        self._volume = None
         self._backup_strategy = None
         self._nodes = None
         self._enterprise_project_id = None
@@ -151,8 +148,6 @@ class MysqlInstanceInfoDetail:
             self.security_group_id = security_group_id
         if configuration_id is not None:
             self.configuration_id = configuration_id
-        if volume is not None:
-            self.volume = volume
         if backup_strategy is not None:
             self.backup_strategy = backup_strategy
         if nodes is not None:
@@ -565,26 +560,6 @@ class MysqlInstanceInfoDetail:
         :type: str
         """
         self._configuration_id = configuration_id
-
-    @property
-    def volume(self):
-        """Gets the volume of this MysqlInstanceInfoDetail.
-
-
-        :return: The volume of this MysqlInstanceInfoDetail.
-        :rtype: MysqlVolumeInfo
-        """
-        return self._volume
-
-    @volume.setter
-    def volume(self, volume):
-        """Sets the volume of this MysqlInstanceInfoDetail.
-
-
-        :param volume: The volume of this MysqlInstanceInfoDetail.
-        :type: MysqlVolumeInfo
-        """
-        self._volume = volume
 
     @property
     def backup_strategy(self):

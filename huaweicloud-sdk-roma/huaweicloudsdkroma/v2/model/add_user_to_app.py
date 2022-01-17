@@ -22,7 +22,7 @@ class AddUserToApp:
     sensitive_list = []
 
     openapi_types = {
-        'users': 'list[object]'
+        'users': 'list[User]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class AddUserToApp:
         要添加的用户成员列表，空列表时代表清空应用的所有成员
 
         :return: The users of this AddUserToApp.
-        :rtype: list[object]
+        :rtype: list[User]
         """
         return self._users
 
@@ -58,7 +58,7 @@ class AddUserToApp:
         要添加的用户成员列表，空列表时代表清空应用的所有成员
 
         :param users: The users of this AddUserToApp.
-        :type: list[object]
+        :type: list[User]
         """
         self._users = users
 

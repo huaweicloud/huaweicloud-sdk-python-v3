@@ -66,6 +66,7 @@ from huaweicloudsdkgaussdb.v3.model.mysql_flavors_info import MysqlFlavorsInfo
 from huaweicloudsdkgaussdb.v3.model.mysql_instance_info_detail import MysqlInstanceInfoDetail
 from huaweicloudsdkgaussdb.v3.model.mysql_instance_list_info import MysqlInstanceListInfo
 from huaweicloudsdkgaussdb.v3.model.mysql_instance_node_info import MysqlInstanceNodeInfo
+from huaweicloudsdkgaussdb.v3.model.mysql_instance_node_volume_info import MysqlInstanceNodeVolumeInfo
 from huaweicloudsdkgaussdb.v3.model.mysql_instance_request import MysqlInstanceRequest
 from huaweicloudsdkgaussdb.v3.model.mysql_instance_response import MysqlInstanceResponse
 from huaweicloudsdkgaussdb.v3.model.mysql_proxy import MysqlProxy

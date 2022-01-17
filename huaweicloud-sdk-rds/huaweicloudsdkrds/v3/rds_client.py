@@ -4829,6 +4829,67 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_api_version_new(self, request):
+        """查询API版本列表
+
+        查询API版本列表。
+
+        :param ListApiVersionNewRequest request
+        :return: ListApiVersionNewResponse
+        """
+        return self.list_api_version_new_with_http_info(request)
+
+    def list_api_version_new_with_http_info(self, request):
+        """查询API版本列表
+
+        查询API版本列表。
+
+        :param ListApiVersionNewRequest request
+        :return: ListApiVersionNewResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListApiVersionNewResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_api_version(self, request):
         """查询指定的API版本信息
 

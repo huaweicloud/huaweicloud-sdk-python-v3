@@ -43,7 +43,7 @@ class FailoverModeRequest:
     def mode(self):
         """Gets the mode of this FailoverModeRequest.
 
-        数据库主备同步模式
+        同步模式，各引擎可选择方式具体如下： MySQL： - async：异步。 - semisync：半同步。
 
         :return: The mode of this FailoverModeRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class FailoverModeRequest:
     def mode(self, mode):
         """Sets the mode of this FailoverModeRequest.
 
-        数据库主备同步模式
+        同步模式，各引擎可选择方式具体如下： MySQL： - async：异步。 - semisync：半同步。
 
         :param mode: The mode of this FailoverModeRequest.
         :type: str

@@ -135,7 +135,7 @@ class PublishMessageRequestBody:
     def message_template_name(self):
         """Gets the message_template_name of this PublishMessageRequestBody.
 
-        消息模板名称，可通过[查询消息模板列表](https://support.huaweicloud.com/api-smn/smn_api_53004.html)获取名称。  说明： 三种消息发送方式:  message  message_structure  message_template_name  至少设置其中一个，如果同时设置，生效的优先级为 message_structure > message_template_name > message。
+        消息模板名称，可通过[查询消息模板列表](https://support.huaweicloud.com/api-smn/ListMessageTemplates.html)获取名称。  说明： 三种消息发送方式:  message  message_structure  message_template_name  至少设置其中一个，如果同时设置，生效的优先级为 message_structure > message_template_name > message。
 
         :return: The message_template_name of this PublishMessageRequestBody.
         :rtype: str
@@ -146,7 +146,7 @@ class PublishMessageRequestBody:
     def message_template_name(self, message_template_name):
         """Sets the message_template_name of this PublishMessageRequestBody.
 
-        消息模板名称，可通过[查询消息模板列表](https://support.huaweicloud.com/api-smn/smn_api_53004.html)获取名称。  说明： 三种消息发送方式:  message  message_structure  message_template_name  至少设置其中一个，如果同时设置，生效的优先级为 message_structure > message_template_name > message。
+        消息模板名称，可通过[查询消息模板列表](https://support.huaweicloud.com/api-smn/ListMessageTemplates.html)获取名称。  说明： 三种消息发送方式:  message  message_structure  message_template_name  至少设置其中一个，如果同时设置，生效的优先级为 message_structure > message_template_name > message。
 
         :param message_template_name: The message_template_name of this PublishMessageRequestBody.
         :type: str

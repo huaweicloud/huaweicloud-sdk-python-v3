@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DownloadAssetArchiveResponse(SdkResponse):
+class DownloadAssetArchiveResponse(SdkStreamResponse):
 
 
     """
@@ -22,72 +22,16 @@ class DownloadAssetArchiveResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'apps': 'list[str]',
-        'tasks': 'list[AppAssetTasks]'
     }
 
     attribute_map = {
-        'apps': 'apps',
-        'tasks': 'tasks'
     }
 
-    def __init__(self, apps=None, tasks=None):
+    def __init__(self,response):
         """DownloadAssetArchiveResponse - a model defined in huaweicloud sdk"""
         
-        super(DownloadAssetArchiveResponse, self).__init__()
-
-        self._apps = None
-        self._tasks = None
+        super(DownloadAssetArchiveResponse, self).__init__(response)
         self.discriminator = None
-
-        if apps is not None:
-            self.apps = apps
-        if tasks is not None:
-            self.tasks = tasks
-
-    @property
-    def apps(self):
-        """Gets the apps of this DownloadAssetArchiveResponse.
-
-        应用列表
-
-        :return: The apps of this DownloadAssetArchiveResponse.
-        :rtype: list[str]
-        """
-        return self._apps
-
-    @apps.setter
-    def apps(self, apps):
-        """Sets the apps of this DownloadAssetArchiveResponse.
-
-        应用列表
-
-        :param apps: The apps of this DownloadAssetArchiveResponse.
-        :type: list[str]
-        """
-        self._apps = apps
-
-    @property
-    def tasks(self):
-        """Gets the tasks of this DownloadAssetArchiveResponse.
-
-        任务列表
-
-        :return: The tasks of this DownloadAssetArchiveResponse.
-        :rtype: list[AppAssetTasks]
-        """
-        return self._tasks
-
-    @tasks.setter
-    def tasks(self, tasks):
-        """Sets the tasks of this DownloadAssetArchiveResponse.
-
-        任务列表
-
-        :param tasks: The tasks of this DownloadAssetArchiveResponse.
-        :type: list[AppAssetTasks]
-        """
-        self._tasks = tasks
 
     def to_dict(self):
         """Returns the model properties as a dict"""

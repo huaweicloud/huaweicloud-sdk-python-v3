@@ -22,31 +22,58 @@ class TaurusModifyInstanceMonitorRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'period': 'str'
+        'monitor_switch': 'bool',
+        'period': 'int'
     }
 
     attribute_map = {
+        'monitor_switch': 'monitor_switch',
         'period': 'period'
     }
 
-    def __init__(self, period=None):
+    def __init__(self, monitor_switch=None, period=None):
         """TaurusModifyInstanceMonitorRequestBody - a model defined in huaweicloud sdk"""
         
         
 
+        self._monitor_switch = None
         self._period = None
         self.discriminator = None
 
-        self.period = period
+        self.monitor_switch = monitor_switch
+        if period is not None:
+            self.period = period
+
+    @property
+    def monitor_switch(self):
+        """Gets the monitor_switch of this TaurusModifyInstanceMonitorRequestBody.
+
+        实例秒级监控开关。为true时表示开启，为false时表示关闭。
+
+        :return: The monitor_switch of this TaurusModifyInstanceMonitorRequestBody.
+        :rtype: bool
+        """
+        return self._monitor_switch
+
+    @monitor_switch.setter
+    def monitor_switch(self, monitor_switch):
+        """Sets the monitor_switch of this TaurusModifyInstanceMonitorRequestBody.
+
+        实例秒级监控开关。为true时表示开启，为false时表示关闭。
+
+        :param monitor_switch: The monitor_switch of this TaurusModifyInstanceMonitorRequestBody.
+        :type: bool
+        """
+        self._monitor_switch = monitor_switch
 
     @property
     def period(self):
         """Gets the period of this TaurusModifyInstanceMonitorRequestBody.
 
-        采集周期。  取值： 0表示实例秒级监控关闭； 1表示实例秒级监控开启，采集周期为1s； 5表示实例秒级监控开启，采集周期为5s。
+        采集周期，仅在monitor_switch为true时生效。默认为5s。monitor_switch为false时，不传该参数。  取值： 1：采集周期为1s； 5：采集周期为5s。
 
         :return: The period of this TaurusModifyInstanceMonitorRequestBody.
-        :rtype: str
+        :rtype: int
         """
         return self._period
 
@@ -54,10 +81,10 @@ class TaurusModifyInstanceMonitorRequestBody:
     def period(self, period):
         """Sets the period of this TaurusModifyInstanceMonitorRequestBody.
 
-        采集周期。  取值： 0表示实例秒级监控关闭； 1表示实例秒级监控开启，采集周期为1s； 5表示实例秒级监控开启，采集周期为5s。
+        采集周期，仅在monitor_switch为true时生效。默认为5s。monitor_switch为false时，不传该参数。  取值： 1：采集周期为1s； 5：采集周期为5s。
 
         :param period: The period of this TaurusModifyInstanceMonitorRequestBody.
-        :type: str
+        :type: int
         """
         self._period = period
 

@@ -1,3 +1,57 @@
+# 3.0.75 2022-01-17
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - Fix the problem that the request body structure of the interface `CreateNodePool` is incorrect
+- _Change_
+  - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - Support the interface `ListFunctionAsyncInvocations`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `used` to the interface `ShowGaussMySqlInstanceInfo`
+  - Add the request parameter `monitor_switch` to the interface `UpdateInstanceMonitor`
+  - Modify the type of the request parameter `period` of the interface `UpdateInstanceMonitor`: `string` -> `int32`
+  - Remove the response parameter `mode` from the interface `ShowGaussMySqlProjectQuotas`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interface `ListApiVersionNew`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `az_desc` to the interface `ListFlavors`
+
+### HuaweiCloud SDK ROMA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `id`, `roles` to the interface `AddUserToApp`
+  - Remove the response parameters `apps`, `tasks` from the interface `DownloadAssetArchive`
+  - Remove the request parameters `apps`, `tasks` from the interface `ImportAsset`
+  - The request parameter `tasks` changed to required of the interface `DeleteAsset`
+  - Add the response parameter `access_user` to the interface `ShowMqsInstance`
+
 # 3.0.74 2022-01-10
 
 ### HuaweiCloud SDK BSS

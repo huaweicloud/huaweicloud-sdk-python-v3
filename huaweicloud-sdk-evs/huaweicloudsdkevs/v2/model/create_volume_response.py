@@ -76,7 +76,7 @@ class CreateVolumeResponse(SdkResponse):
     def order_id(self):
         """Gets the order_id of this CreateVolumeResponse.
 
-        订单ID，云硬盘为包周期计费时返回该参数。 > 说明： >  > - 如果您需要支付订单，请参考：\"[支付包周期产品订单](https://support.huaweicloud.com/api-oce/zh-cn_topic_0075746561.html)\"。
+        订单ID，云硬盘为包周期计费时返回该参数。 > 说明： > 直接在包周期云服务器上新增云硬盘，系统会自动将云硬盘挂载到包周期云服务器上。该情形下也会返回该参数。  > - 如果您需要支付订单，请参考：\"[支付包周期产品订单](https://support.huaweicloud.com/api-oce/zh-cn_topic_0075746561.html)\"。
 
         :return: The order_id of this CreateVolumeResponse.
         :rtype: str
@@ -87,7 +87,7 @@ class CreateVolumeResponse(SdkResponse):
     def order_id(self, order_id):
         """Sets the order_id of this CreateVolumeResponse.
 
-        订单ID，云硬盘为包周期计费时返回该参数。 > 说明： >  > - 如果您需要支付订单，请参考：\"[支付包周期产品订单](https://support.huaweicloud.com/api-oce/zh-cn_topic_0075746561.html)\"。
+        订单ID，云硬盘为包周期计费时返回该参数。 > 说明： > 直接在包周期云服务器上新增云硬盘，系统会自动将云硬盘挂载到包周期云服务器上。该情形下也会返回该参数。  > - 如果您需要支付订单，请参考：\"[支付包周期产品订单](https://support.huaweicloud.com/api-oce/zh-cn_topic_0075746561.html)\"。
 
         :param order_id: The order_id of this CreateVolumeResponse.
         :type: str

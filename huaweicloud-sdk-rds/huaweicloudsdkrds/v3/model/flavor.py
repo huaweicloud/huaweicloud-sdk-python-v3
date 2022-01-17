@@ -28,6 +28,7 @@ class Flavor:
         'spec_code': 'str',
         'instance_mode': 'str',
         'az_status': 'dict(str, str)',
+        'az_desc': 'dict(str, str)',
         'version_name': 'list[str]',
         'group_type': 'str'
     }
@@ -39,11 +40,12 @@ class Flavor:
         'spec_code': 'spec_code',
         'instance_mode': 'instance_mode',
         'az_status': 'az_status',
+        'az_desc': 'az_desc',
         'version_name': 'version_name',
         'group_type': 'group_type'
     }
 
-    def __init__(self, id=None, vcpus=None, ram=None, spec_code=None, instance_mode=None, az_status=None, version_name=None, group_type=None):
+    def __init__(self, id=None, vcpus=None, ram=None, spec_code=None, instance_mode=None, az_status=None, az_desc=None, version_name=None, group_type=None):
         """Flavor - a model defined in huaweicloud sdk"""
         
         
@@ -54,6 +56,7 @@ class Flavor:
         self._spec_code = None
         self._instance_mode = None
         self._az_status = None
+        self._az_desc = None
         self._version_name = None
         self._group_type = None
         self.discriminator = None
@@ -64,6 +67,8 @@ class Flavor:
         self.spec_code = spec_code
         self.instance_mode = instance_mode
         self.az_status = az_status
+        if az_desc is not None:
+            self.az_desc = az_desc
         self.version_name = version_name
         self.group_type = group_type
 
@@ -198,6 +203,28 @@ class Flavor:
         :type: dict(str, str)
         """
         self._az_status = az_status
+
+    @property
+    def az_desc(self):
+        """Gets the az_desc of this Flavor.
+
+        规格所在az的描述。
+
+        :return: The az_desc of this Flavor.
+        :rtype: dict(str, str)
+        """
+        return self._az_desc
+
+    @az_desc.setter
+    def az_desc(self, az_desc):
+        """Sets the az_desc of this Flavor.
+
+        规格所在az的描述。
+
+        :param az_desc: The az_desc of this Flavor.
+        :type: dict(str, str)
+        """
+        self._az_desc = az_desc
 
     @property
     def version_name(self):
