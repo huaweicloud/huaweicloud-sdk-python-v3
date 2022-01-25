@@ -25,7 +25,7 @@ class EventQueryParam2:
         'time_range': 'str',
         'step': 'int',
         'search': 'str',
-        'sort': 'EventQueryParamSort',
+        'sort': 'EventQueryParam2Sort',
         'metadata_relation': 'list[RelationModel]'
     }
 
@@ -107,7 +107,7 @@ class EventQueryParam2:
     def search(self):
         """Gets the search of this EventQueryParam2.
 
-        模糊查询匹配字段，可以为空。如果值不为空，可以模糊匹配metadata字段必选字段。
+        模糊查询匹配字段，可以为空。如果值不为空，可以模糊匹配。metadata字段为必选字段。
 
         :return: The search of this EventQueryParam2.
         :rtype: str
@@ -118,7 +118,7 @@ class EventQueryParam2:
     def search(self, search):
         """Sets the search of this EventQueryParam2.
 
-        模糊查询匹配字段，可以为空。如果值不为空，可以模糊匹配metadata字段必选字段。
+        模糊查询匹配字段，可以为空。如果值不为空，可以模糊匹配。metadata字段为必选字段。
 
         :param search: The search of this EventQueryParam2.
         :type: str
@@ -131,7 +131,7 @@ class EventQueryParam2:
 
 
         :return: The sort of this EventQueryParam2.
-        :rtype: EventQueryParamSort
+        :rtype: EventQueryParam2Sort
         """
         return self._sort
 
@@ -141,7 +141,7 @@ class EventQueryParam2:
 
 
         :param sort: The sort of this EventQueryParam2.
-        :type: EventQueryParamSort
+        :type: EventQueryParam2Sort
         """
         self._sort = sort
 

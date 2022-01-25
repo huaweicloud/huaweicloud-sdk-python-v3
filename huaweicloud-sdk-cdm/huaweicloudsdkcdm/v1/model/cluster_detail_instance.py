@@ -402,7 +402,7 @@ class ClusterDetailInstance:
     def links(self):
         """Gets the links of this ClusterDetailInstance.
 
-        链接信息
+        链接信息（查询集群列表时返回值为null）
 
         :return: The links of this ClusterDetailInstance.
         :rtype: list[ClusterLinks]
@@ -413,7 +413,7 @@ class ClusterDetailInstance:
     def links(self, links):
         """Sets the links of this ClusterDetailInstance.
 
-        链接信息
+        链接信息（查询集群列表时返回值为null）
 
         :param links: The links of this ClusterDetailInstance.
         :type: list[ClusterLinks]

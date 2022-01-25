@@ -35,7 +35,8 @@ class KeywordsAlarmRuleRespList:
         'create_time': 'int',
         'update_time': 'int',
         'topics': 'list[Topics]',
-        'language': 'str'
+        'template_name': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
@@ -52,10 +53,11 @@ class KeywordsAlarmRuleRespList:
         'create_time': 'create_time',
         'update_time': 'update_time',
         'topics': 'topics',
-        'language': 'language'
+        'template_name': 'template_name',
+        'status': 'status'
     }
 
-    def __init__(self, project_id=None, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, condition_expression=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, language=None):
+    def __init__(self, project_id=None, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, condition_expression=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, template_name=None, status=None):
         """KeywordsAlarmRuleRespList - a model defined in huaweicloud sdk"""
         
         
@@ -73,7 +75,8 @@ class KeywordsAlarmRuleRespList:
         self._create_time = None
         self._update_time = None
         self._topics = None
-        self._language = None
+        self._template_name = None
+        self._status = None
         self.discriminator = None
 
         self.project_id = project_id
@@ -89,7 +92,10 @@ class KeywordsAlarmRuleRespList:
         self.create_time = create_time
         self.update_time = update_time
         self.topics = topics
-        self.language = language
+        if template_name is not None:
+            self.template_name = template_name
+        if status is not None:
+            self.status = status
 
     @property
     def project_id(self):
@@ -378,26 +384,44 @@ class KeywordsAlarmRuleRespList:
         self._topics = topics
 
     @property
-    def language(self):
-        """Gets the language of this KeywordsAlarmRuleRespList.
+    def template_name(self):
+        """Gets the template_name of this KeywordsAlarmRuleRespList.
 
-        邮件附加信息是否英文
 
-        :return: The language of this KeywordsAlarmRuleRespList.
+        :return: The template_name of this KeywordsAlarmRuleRespList.
         :rtype: str
         """
-        return self._language
+        return self._template_name
 
-    @language.setter
-    def language(self, language):
-        """Sets the language of this KeywordsAlarmRuleRespList.
+    @template_name.setter
+    def template_name(self, template_name):
+        """Sets the template_name of this KeywordsAlarmRuleRespList.
 
-        邮件附加信息是否英文
 
-        :param language: The language of this KeywordsAlarmRuleRespList.
+        :param template_name: The template_name of this KeywordsAlarmRuleRespList.
         :type: str
         """
-        self._language = language
+        self._template_name = template_name
+
+    @property
+    def status(self):
+        """Gets the status of this KeywordsAlarmRuleRespList.
+
+
+        :return: The status of this KeywordsAlarmRuleRespList.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this KeywordsAlarmRuleRespList.
+
+
+        :param status: The status of this KeywordsAlarmRuleRespList.
+        :type: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

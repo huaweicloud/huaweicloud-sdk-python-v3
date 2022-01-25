@@ -81,7 +81,7 @@ class ListMetricItemsRequest:
     def limit(self):
         """Gets the limit of this ListMetricItemsRequest.
 
-        取值范围(0,1000]，默认值为1000。用于限制本次返回的结果数据条数。
+        用于限制本次返回的结果数据条数。 取值范围(0,1000]，默认值为1000。
 
         :return: The limit of this ListMetricItemsRequest.
         :rtype: str
@@ -92,7 +92,7 @@ class ListMetricItemsRequest:
     def limit(self, limit):
         """Sets the limit of this ListMetricItemsRequest.
 
-        取值范围(0,1000]，默认值为1000。用于限制本次返回的结果数据条数。
+        用于限制本次返回的结果数据条数。 取值范围(0,1000]，默认值为1000。
 
         :param limit: The limit of this ListMetricItemsRequest.
         :type: str

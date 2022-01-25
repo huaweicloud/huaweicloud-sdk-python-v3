@@ -560,7 +560,7 @@ class AomClient(Client):
     def list_events(self, request):
         """查询事件告警信息
 
-        该接口用于查询对应用户的事件、告警
+        该接口用于查询对应用户的事件、告警。
 
         :param ListEventsRequest request
         :return: ListEventsResponse
@@ -570,7 +570,7 @@ class AomClient(Client):
     def list_events_with_http_info(self, request):
         """查询事件告警信息
 
-        该接口用于查询对应用户的事件、告警
+        该接口用于查询对应用户的事件、告警。
 
         :param ListEventsRequest request
         :return: ListEventsResponse
@@ -1212,7 +1212,7 @@ class AomClient(Client):
     def list_instant_query_aom_prom_get(self, request):
         """瞬时数据查询
 
-        该接口用于查询PromQL(Prometheus Query Language) 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于查询PromQL(Prometheus Query Language)。 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListInstantQueryAomPromGetRequest request
         :return: ListInstantQueryAomPromGetResponse
@@ -1222,7 +1222,7 @@ class AomClient(Client):
     def list_instant_query_aom_prom_get_with_http_info(self, request):
         """瞬时数据查询
 
-        该接口用于查询PromQL(Prometheus Query Language) 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于查询PromQL(Prometheus Query Language)。 在特定时间点下的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListInstantQueryAomPromGetRequest request
         :return: ListInstantQueryAomPromGetResponse
@@ -1342,7 +1342,7 @@ class AomClient(Client):
     def list_label_values_aom_prom_get(self, request):
         """查询标签值
 
-        该接口用于查询带有指定标签的时间序列列表。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于查询带有指定标签的时间序列列表。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListLabelValuesAomPromGetRequest request
         :return: ListLabelValuesAomPromGetResponse
@@ -1352,7 +1352,7 @@ class AomClient(Client):
     def list_label_values_aom_prom_get_with_http_info(self, request):
         """查询标签值
 
-        该接口用于查询带有指定标签的时间序列列表。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于查询带有指定标签的时间序列列表。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListLabelValuesAomPromGetRequest request
         :return: ListLabelValuesAomPromGetResponse
@@ -1405,7 +1405,7 @@ class AomClient(Client):
     def list_labels_aom_prom_get(self, request):
         """获取标签名列表
 
-        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListLabelsAomPromGetRequest request
         :return: ListLabelsAomPromGetResponse
@@ -1415,7 +1415,7 @@ class AomClient(Client):
     def list_labels_aom_prom_get_with_http_info(self, request):
         """获取标签名列表
 
-        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListLabelsAomPromGetRequest request
         :return: ListLabelsAomPromGetResponse
@@ -1466,7 +1466,7 @@ class AomClient(Client):
     def list_labels_aom_prom_post(self, request):
         """获取标签名列表
 
-        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListLabelsAomPromPostRequest request
         :return: ListLabelsAomPromPostResponse
@@ -1476,7 +1476,7 @@ class AomClient(Client):
     def list_labels_aom_prom_post_with_http_info(self, request):
         """获取标签名列表
 
-        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于获取标签名列表。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListLabelsAomPromPostRequest request
         :return: ListLabelsAomPromPostResponse
@@ -1527,7 +1527,7 @@ class AomClient(Client):
     def list_metadata_aom_prom_get(self, request):
         """元数据查询
 
-        该接口用于查询序列及序列标签的元数据。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于查询序列及序列标签的元数据。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListMetadataAomPromGetRequest request
         :return: ListMetadataAomPromGetResponse
@@ -1537,7 +1537,7 @@ class AomClient(Client):
     def list_metadata_aom_prom_get_with_http_info(self, request):
         """元数据查询
 
-        该接口用于查询序列及序列标签的元数据。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于查询序列及序列标签的元数据。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListMetadataAomPromGetRequest request
         :return: ListMetadataAomPromGetResponse
@@ -1588,7 +1588,7 @@ class AomClient(Client):
     def list_range_query_aom_prom_get(self, request):
         """区间数据查询
 
-        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListRangeQueryAomPromGetRequest request
         :return: ListRangeQueryAomPromGetResponse
@@ -1598,7 +1598,7 @@ class AomClient(Client):
     def list_range_query_aom_prom_get_with_http_info(self, request):
         """区间数据查询
 
-        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListRangeQueryAomPromGetRequest request
         :return: ListRangeQueryAomPromGetResponse
@@ -1657,7 +1657,7 @@ class AomClient(Client):
     def list_range_query_aom_prom_post(self, request):
         """区间数据查询
 
-        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListRangeQueryAomPromPostRequest request
         :return: ListRangeQueryAomPromPostResponse
@@ -1667,7 +1667,7 @@ class AomClient(Client):
     def list_range_query_aom_prom_post_with_http_info(self, request):
         """区间数据查询
 
-        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）
+        该接口用于查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。（注：接口目前开放的region为：北京四、上海一和广州）。
 
         :param ListRangeQueryAomPromPostRequest request
         :return: ListRangeQueryAomPromPostResponse

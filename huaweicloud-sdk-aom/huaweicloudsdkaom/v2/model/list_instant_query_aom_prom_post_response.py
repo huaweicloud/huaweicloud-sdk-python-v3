@@ -49,6 +49,7 @@ class ListInstantQueryAomPromPostResponse(SdkResponse):
     def status(self):
         """Gets the status of this ListInstantQueryAomPromPostResponse.
 
+        响应状态。
 
         :return: The status of this ListInstantQueryAomPromPostResponse.
         :rtype: str
@@ -59,6 +60,7 @@ class ListInstantQueryAomPromPostResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ListInstantQueryAomPromPostResponse.
 
+        响应状态。
 
         :param status: The status of this ListInstantQueryAomPromPostResponse.
         :type: str

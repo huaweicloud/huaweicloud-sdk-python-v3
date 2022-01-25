@@ -49,6 +49,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
     def status(self):
         """Gets the status of this ListMetadataAomPromGetResponse.
 
+        响应状态。
 
         :return: The status of this ListMetadataAomPromGetResponse.
         :rtype: str
@@ -59,6 +60,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ListMetadataAomPromGetResponse.
 
+        响应状态。
 
         :param status: The status of this ListMetadataAomPromGetResponse.
         :type: str
@@ -69,6 +71,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListMetadataAomPromGetResponse.
 
+        元数据信息。
 
         :return: The data of this ListMetadataAomPromGetResponse.
         :rtype: object
@@ -79,6 +82,7 @@ class ListMetadataAomPromGetResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListMetadataAomPromGetResponse.
 
+        元数据信息。
 
         :param data: The data of this ListMetadataAomPromGetResponse.
         :type: object

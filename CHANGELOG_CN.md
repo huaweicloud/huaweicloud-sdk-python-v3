@@ -1,3 +1,139 @@
+# 3.0.76 2022-01-25
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateApiV2`新增请求参数 `content_type`
+  - 接口`ShowDetailsOfApiV2`新增响应参数 `publish_time`、`roma_app_name`、`ld_api_id`、`api_group_info`、`content_type`
+  - 接口`UpdateApiV2`:
+    - 新增请求参数 `content_type`
+    - 新增响应参数 `publish_time`、`roma_app_name`、`ld_api_id`、`api_group_info`、`content_type`
+  - 接口`ListApiRuntimeDefinitionV2`新增响应参数 `content_type`
+  - 接口`ListApiVersionDetailV2`:
+    - 新增响应参数 `roma_app_name`、`ld_api_id`、`api_group_info`、`content_type`
+    - 响应参数`publish_time`类型调整 `date-time` -> `string`
+
+### HuaweiCloud SDK CDM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowJobs`:
+    - 移除响应参数 `simple`
+    - 响应参数`name`、`values`改为必填
+  - 接口`UpdateJob`请求参数`name`、`values`改为必填
+  - 接口`CreateAndStartRandomClusterJob`请求参数`name`、`values`改为必填
+  - 接口`CreateJob`请求参数`name`、`values`改为必填
+  - 接口`ListClusters`移除响应参数 `config_status`
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 支持接口`ListAlarmHistories`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CodeCheck
+
+- _新增特性_
+  - 支持接口`DeleteRuleset`、`SetDefaulTemplate`、`ShowTasklog`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateTask`新增请求参数 `endpoint_id`
+  - 接口`CreateRuleset`新增请求参数 `custom_attributes`
+  - 接口`ListTemplateRules`:
+    - 新增请求参数 `tags`
+    - 新增响应参数 `rule_config_list`
+
+### HuaweiCloud SDK DevStar
+
+- _新增特性_
+  - 支持接口`ShowRepositoryByCloudIde`、`ListTemplates`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IAM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateLoginToken`新增响应参数`session_user_id`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 支持接口`ListEngineProducts`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`新增响应参数 `dr_enable`
+  - 接口`ShowInstance`新增响应参数 `dr_enable`
+  - 接口`ListProducts`:
+    - 新增响应参数 `Hourly`、`Monthly`
+    - 移除响应参数 `hourly`、`honthly`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateSqlAlarmRule`移除请求参数 `language`
+  - 接口`UpdateSqlAlarmRule`移除请求参数 `language`
+  - 接口`ListSqlAlarmRules`:
+    - 新增响应参数 `template_name`、`status`
+    - 移除响应参数 `language`
+  - 接口`CreateKeywordsAlarmRule`移除请求参数 `language`、`eps_id`、`eps_name`、`is_time_range_relative`
+  - 接口`UpdateKeywordsAlarmRule`:
+    - 移除请求参数 `language`、`eps_id`、`eps_name`、`is_time_range_relative`
+    - 移除响应参数 `eps_id`、`eps_name`、`is_time_range_relative`
+  - 接口`ListKeywordsAlarmRules`:
+    - 新增响应参数 `template_name`、`status`
+    - 移除响应参数 `language`、`eps_id`、`eps_name`、`is_time_range_relative`
+  - 接口`ListAccessConfig`:
+    - 新增请求参数 `access_config_tag_list`
+    - 新增响应参数 `access_config_tag`
+  - 接口`CreateAccessConfig`:
+    - 新增请求参数 `access_config_tag`
+    - 新增响应参数 `access_config_tag`
+  - 接口`UpdateAccessConfig`:
+    - 新增请求参数 `access_config_tag`
+    - 新增响应参数 `access_config_tag`
+  - 接口`DeleteAccessConfig`新增响应参数 `access_config_tag`
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 支持appId鉴权方式
+  - 支持接口`ShowWebHookConfig`、`SetWebHookConfig`、`DeleteWebHookConfig`、`UpdateWebHookConfigStatus`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RabbitMQ
+
+- _新增特性_
+  - 支持接口`ListEngineProducts`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.0.75 2022-01-17
 
 ### HuaweiCloud SDK CCE

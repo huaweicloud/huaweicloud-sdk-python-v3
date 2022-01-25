@@ -98,7 +98,7 @@ class RelationModel:
     def relation(self):
         """Gets the relation of this RelationModel.
 
-        该条件与其他条件的组合方式。 AND：必须满足所有条件； OR：可以满足其中一个条件； NOT：必须不满足所有条件。  枚举值：  AND OR NOT
+        该条件与其他条件的组合方式。 AND：必须满足所有条件； OR：可以满足其中一个条件； NOT：必须不满足所有条件。
 
         :return: The relation of this RelationModel.
         :rtype: str
@@ -109,7 +109,7 @@ class RelationModel:
     def relation(self, relation):
         """Sets the relation of this RelationModel.
 
-        该条件与其他条件的组合方式。 AND：必须满足所有条件； OR：可以满足其中一个条件； NOT：必须不满足所有条件。  枚举值：  AND OR NOT
+        该条件与其他条件的组合方式。 AND：必须满足所有条件； OR：可以满足其中一个条件； NOT：必须不满足所有条件。
 
         :param relation: The relation of this RelationModel.
         :type: str

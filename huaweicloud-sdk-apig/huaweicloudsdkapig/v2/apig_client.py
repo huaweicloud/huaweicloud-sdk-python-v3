@@ -2513,23 +2513,23 @@ class ApigClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_instance_cofigs_v2(self, request):
+    def list_instance_configs_v2(self, request):
         """查询租户实例配置列表
 
         查询租户实例配置列表
 
-        :param ListInstanceCofigsV2Request request
-        :return: ListInstanceCofigsV2Response
+        :param ListInstanceConfigsV2Request request
+        :return: ListInstanceConfigsV2Response
         """
-        return self.list_instance_cofigs_v2_with_http_info(request)
+        return self.list_instance_configs_v2_with_http_info(request)
 
-    def list_instance_cofigs_v2_with_http_info(self, request):
+    def list_instance_configs_v2_with_http_info(self, request):
         """查询租户实例配置列表
 
         查询租户实例配置列表
 
-        :param ListInstanceCofigsV2Request request
-        :return: ListInstanceCofigsV2Response
+        :param ListInstanceConfigsV2Request request
+        :return: ListInstanceConfigsV2Response
         """
 
         all_params = ['offset', 'limit']
@@ -2571,7 +2571,7 @@ class ApigClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ListInstanceCofigsV2Response',
+            response_type='ListInstanceConfigsV2Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4755,7 +4755,7 @@ class ApigClient(Client):
         :return: ListAclStrategiesV2Response
         """
 
-        all_params = ['instance_id', 'id', 'name', 'acl_type', 'entity_type', 'offset', 'limit', 'precise_search']
+        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'acl_type', 'entity_type', 'precise_search']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4768,6 +4768,10 @@ class ApigClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
         if 'name' in local_var_params:
@@ -4776,10 +4780,6 @@ class ApigClient(Client):
             query_params.append(('acl_type', local_var_params['acl_type']))
         if 'entity_type' in local_var_params:
             query_params.append(('entity_type', local_var_params['entity_type']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
         if 'precise_search' in local_var_params:
             query_params.append(('precise_search', local_var_params['precise_search']))
 

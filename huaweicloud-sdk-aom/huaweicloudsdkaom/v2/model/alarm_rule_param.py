@@ -206,7 +206,7 @@ class AlarmRuleParam:
     def alarm_level(self):
         """Gets the alarm_level of this AlarmRuleParam.
 
-        告警级别。
+        告警级别。1：紧急，2：重要，3：一般，4：提示。
 
         :return: The alarm_level of this AlarmRuleParam.
         :rtype: int
@@ -217,7 +217,7 @@ class AlarmRuleParam:
     def alarm_level(self, alarm_level):
         """Sets the alarm_level of this AlarmRuleParam.
 
-        告警级别。
+        告警级别。1：紧急，2：重要，3：一般，4：提示。
 
         :param alarm_level: The alarm_level of this AlarmRuleParam.
         :type: int
@@ -250,7 +250,7 @@ class AlarmRuleParam:
     def comparison_operator(self):
         """Gets the comparison_operator of this AlarmRuleParam.
 
-        极限条件。
+        超限条件。
 
         :return: The comparison_operator of this AlarmRuleParam.
         :rtype: str
@@ -261,7 +261,7 @@ class AlarmRuleParam:
     def comparison_operator(self, comparison_operator):
         """Sets the comparison_operator of this AlarmRuleParam.
 
-        极限条件。
+        超限条件。
 
         :param comparison_operator: The comparison_operator of this AlarmRuleParam.
         :type: str
@@ -360,7 +360,7 @@ class AlarmRuleParam:
     def metric_name(self):
         """Gets the metric_name of this AlarmRuleParam.
 
-        | 取值范围 名称长度为1~255个字符 时间序列名称。
+        时间序列名称。名称长度取值范围为1~255个字符。
 
         :return: The metric_name of this AlarmRuleParam.
         :rtype: str
@@ -371,7 +371,7 @@ class AlarmRuleParam:
     def metric_name(self, metric_name):
         """Sets the metric_name of this AlarmRuleParam.
 
-        | 取值范围 名称长度为1~255个字符 时间序列名称。
+        时间序列名称。名称长度取值范围为1~255个字符。
 
         :param metric_name: The metric_name of this AlarmRuleParam.
         :type: str
@@ -448,7 +448,7 @@ class AlarmRuleParam:
     def statistic(self):
         """Gets the statistic of this AlarmRuleParam.
 
-        取值范围 \"maximum\",\"minimum\",\"average\", \"sum\",\"sampleCount\" 统计方式
+        统计方式。
 
         :return: The statistic of this AlarmRuleParam.
         :rtype: str
@@ -459,7 +459,7 @@ class AlarmRuleParam:
     def statistic(self, statistic):
         """Sets the statistic of this AlarmRuleParam.
 
-        取值范围 \"maximum\",\"minimum\",\"average\", \"sum\",\"sampleCount\" 统计方式
+        统计方式。
 
         :param statistic: The statistic of this AlarmRuleParam.
         :type: str
@@ -470,7 +470,7 @@ class AlarmRuleParam:
     def threshold(self):
         """Gets the threshold of this AlarmRuleParam.
 
-        临界值。
+        超限值。
 
         :return: The threshold of this AlarmRuleParam.
         :rtype: str
@@ -481,7 +481,7 @@ class AlarmRuleParam:
     def threshold(self, threshold):
         """Sets the threshold of this AlarmRuleParam.
 
-        临界值。
+        超限值。
 
         :param threshold: The threshold of this AlarmRuleParam.
         :type: str
@@ -492,7 +492,7 @@ class AlarmRuleParam:
     def unit(self):
         """Gets the unit of this AlarmRuleParam.
 
-        阈值单元。
+        时间序列单位
 
         :return: The unit of this AlarmRuleParam.
         :rtype: str
@@ -503,7 +503,7 @@ class AlarmRuleParam:
     def unit(self, unit):
         """Sets the unit of this AlarmRuleParam.
 
-        阈值单元。
+        时间序列单位
 
         :param unit: The unit of this AlarmRuleParam.
         :type: str

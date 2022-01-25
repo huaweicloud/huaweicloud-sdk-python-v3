@@ -204,7 +204,7 @@ class ApiGroupCommonInfo:
     def on_sell_status(self):
         """Gets the on_sell_status of this ApiGroupCommonInfo.
 
-        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  ROMAConnect暂未对接云市场，此字段默认返回2
+        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中
 
         :return: The on_sell_status of this ApiGroupCommonInfo.
         :rtype: int
@@ -215,7 +215,7 @@ class ApiGroupCommonInfo:
     def on_sell_status(self, on_sell_status):
         """Sets the on_sell_status of this ApiGroupCommonInfo.
 
-        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  ROMAConnect暂未对接云市场，此字段默认返回2
+        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中
 
         :param on_sell_status: The on_sell_status of this ApiGroupCommonInfo.
         :type: int

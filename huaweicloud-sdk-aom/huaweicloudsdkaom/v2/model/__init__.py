@@ -33,6 +33,7 @@ from huaweicloudsdkaom.v2.model.event_list import EventList
 from huaweicloudsdkaom.v2.model.event_model import EventModel
 from huaweicloudsdkaom.v2.model.event_query_param import EventQueryParam
 from huaweicloudsdkaom.v2.model.event_query_param2 import EventQueryParam2
+from huaweicloudsdkaom.v2.model.event_query_param2_sort import EventQueryParam2Sort
 from huaweicloudsdkaom.v2.model.event_query_param_sort import EventQueryParamSort
 from huaweicloudsdkaom.v2.model.event_series import EventSeries
 from huaweicloudsdkaom.v2.model.list_alarm_rule_request import ListAlarmRuleRequest

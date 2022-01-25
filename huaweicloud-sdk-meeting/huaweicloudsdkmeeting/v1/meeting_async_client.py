@@ -2969,6 +2969,69 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_web_hook_config_async(self, request):
+        """删除事件订阅配置信息
+
+        管理员可以通过该接口删除事件订阅(webhook)配置
+
+        :param DeleteWebHookConfigRequest request
+        :return: DeleteWebHookConfigResponse
+        """
+        return self.delete_web_hook_config_with_http_info(request)
+
+    def delete_web_hook_config_with_http_info(self, request):
+        """删除事件订阅配置信息
+
+        管理员可以通过该接口删除事件订阅(webhook)配置
+
+        :param DeleteWebHookConfigRequest request
+        :return: DeleteWebHookConfigResponse
+        """
+
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/webhook/link-config',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteWebHookConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_webinar_async(self, request):
         """取消网络研讨会
 
@@ -6970,6 +7033,69 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def set_web_hook_config_async(self, request):
+        """设置事件订阅配置信息
+
+        设置企业事件订阅配置设置
+
+        :param SetWebHookConfigRequest request
+        :return: SetWebHookConfigResponse
+        """
+        return self.set_web_hook_config_with_http_info(request)
+
+    def set_web_hook_config_with_http_info(self, request):
+        """设置事件订阅配置信息
+
+        设置企业事件订阅配置设置
+
+        :param SetWebHookConfigRequest request
+        :return: SetWebHookConfigResponse
+        """
+
+        all_params = ['request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/webhook/link-config',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetWebHookConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_conf_org_async(self, request):
         """通过会议ID查询企业ID
 
@@ -8793,6 +8919,71 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_web_hook_config_async(self, request):
+        """查询事件订阅配置信息
+
+        查询企业事件订阅配置
+
+        :param ShowWebHookConfigRequest request
+        :return: ShowWebHookConfigResponse
+        """
+        return self.show_web_hook_config_with_http_info(request)
+
+    def show_web_hook_config_with_http_info(self, request):
+        """查询事件订阅配置信息
+
+        查询企业事件订阅配置
+
+        :param ShowWebHookConfigRequest request
+        :return: ShowWebHookConfigResponse
+        """
+
+        all_params = ['corp_id', 'sp_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'corp_id' in local_var_params:
+            query_params.append(('corpId', local_var_params['corp_id']))
+        if 'sp_id' in local_var_params:
+            query_params.append(('spId', local_var_params['sp_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/webhook/link-config',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowWebHookConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_webinar_async(self, request):
         """查询网络研讨会详情
 
@@ -10291,6 +10482,71 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_web_hook_config_status_async(self, request):
+        """变更订阅配置使用状态
+
+        变更订阅配置使用状态
+
+        :param UpdateWebHookConfigStatusRequest request
+        :return: UpdateWebHookConfigStatusResponse
+        """
+        return self.update_web_hook_config_status_with_http_info(request)
+
+    def update_web_hook_config_status_with_http_info(self, request):
+        """变更订阅配置使用状态
+
+        变更订阅配置使用状态
+
+        :param UpdateWebHookConfigStatusRequest request
+        :return: UpdateWebHookConfigStatusResponse
+        """
+
+        all_params = ['id', 'status']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/webhook/change-status',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateWebHookConfigStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

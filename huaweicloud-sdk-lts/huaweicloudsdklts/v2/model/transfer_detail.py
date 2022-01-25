@@ -79,20 +79,17 @@ class TransferDetail:
         self._obs_time_zone_id = None
         self.discriminator = None
 
-        if obs_period is not None:
-            self.obs_period = obs_period
+        self.obs_period = obs_period
         if obs_encrypted_id is not None:
             self.obs_encrypted_id = obs_encrypted_id
         if obs_prefix_name is not None:
             self.obs_prefix_name = obs_prefix_name
-        if obs_period_unit is not None:
-            self.obs_period_unit = obs_period_unit
+        self.obs_period_unit = obs_period_unit
         if obs_transfer_path is not None:
             self.obs_transfer_path = obs_transfer_path
         if obs_eps_id is not None:
             self.obs_eps_id = obs_eps_id
-        if obs_bucket_name is not None:
-            self.obs_bucket_name = obs_bucket_name
+        self.obs_bucket_name = obs_bucket_name
         if obs_encrypted_enable is not None:
             self.obs_encrypted_enable = obs_encrypted_enable
         if obs_dir_pre_fix_name is not None:

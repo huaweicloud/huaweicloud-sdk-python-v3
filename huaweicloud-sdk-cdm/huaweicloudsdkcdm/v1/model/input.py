@@ -43,10 +43,8 @@ class Input:
         self._type = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if values is not None:
-            self.values = values
+        self.name = name
+        self.values = values
         if type is not None:
             self.type = type
 

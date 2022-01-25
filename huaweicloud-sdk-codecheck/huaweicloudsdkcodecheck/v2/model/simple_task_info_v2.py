@@ -162,7 +162,7 @@ class SimpleTaskInfoV2:
     def git_branch(self):
         """Gets the git_branch of this SimpleTaskInfoV2.
 
-        代码仓分支
+        代码仓分支,如果是MR模式，为源分支
 
         :return: The git_branch of this SimpleTaskInfoV2.
         :rtype: str
@@ -173,7 +173,7 @@ class SimpleTaskInfoV2:
     def git_branch(self, git_branch):
         """Sets the git_branch of this SimpleTaskInfoV2.
 
-        代码仓分支
+        代码仓分支,如果是MR模式，为源分支
 
         :param git_branch: The git_branch of this SimpleTaskInfoV2.
         :type: str

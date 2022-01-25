@@ -73,7 +73,7 @@ class AppRules:
     def create_time(self):
         """Gets the create_time of this AppRules.
 
-        创建时间(创建时不传,修改时传查询返回的createTime)。
+        规则创建时间(创建时不传,修改时传查询返回的createTime)。
 
         :return: The create_time of this AppRules.
         :rtype: str
@@ -84,7 +84,7 @@ class AppRules:
     def create_time(self, create_time):
         """Sets the create_time of this AppRules.
 
-        创建时间(创建时不传,修改时传查询返回的createTime)。
+        规则创建时间(创建时不传,修改时传查询返回的createTime)。
 
         :param create_time: The create_time of this AppRules.
         :type: str
@@ -183,7 +183,7 @@ class AppRules:
     def name(self):
         """Gets the name of this AppRules.
 
-        字符长度小于64位,以小写字母(a-z)开头,只能包含0-9/a-z/-,不能以-结尾。 规则名称。
+        规则名称。 字符长度小于64位,以小写字母(a-z)开头,只能包含0-9/a-z/-,不能以-结尾。
 
         :return: The name of this AppRules.
         :rtype: str
@@ -194,7 +194,7 @@ class AppRules:
     def name(self, name):
         """Sets the name of this AppRules.
 
-        字符长度小于64位,以小写字母(a-z)开头,只能包含0-9/a-z/-,不能以-结尾。 规则名称。
+        规则名称。 字符长度小于64位,以小写字母(a-z)开头,只能包含0-9/a-z/-,不能以-结尾。
 
         :param name: The name of this AppRules.
         :type: str

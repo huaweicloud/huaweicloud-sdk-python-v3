@@ -118,7 +118,7 @@ class EventModel:
     def timeout(self):
         """Gets the timeout of this EventModel.
 
-        告警自动清除时间。毫秒数，例如一分钟则填写为60000。默认清除时间为3天,对应数字为 3*24*60*1000
+        告警自动清除时间。毫秒数，例如一分钟则填写为60000。默认清除时间为3天,对应数字为 4320 * 1000（即：3天 * 24小时 * 60分钟 * 1000毫秒）。
 
         :return: The timeout of this EventModel.
         :rtype: int
@@ -129,7 +129,7 @@ class EventModel:
     def timeout(self, timeout):
         """Sets the timeout of this EventModel.
 
-        告警自动清除时间。毫秒数，例如一分钟则填写为60000。默认清除时间为3天,对应数字为 3*24*60*1000
+        告警自动清除时间。毫秒数，例如一分钟则填写为60000。默认清除时间为3天,对应数字为 4320 * 1000（即：3天 * 24小时 * 60分钟 * 1000毫秒）。
 
         :param timeout: The timeout of this EventModel.
         :type: int
@@ -140,7 +140,7 @@ class EventModel:
     def metadata(self):
         """Gets the metadata of this EventModel.
 
-        事件或者告警的详细信息，为键值对形式。必须字段为： - event_name：事件或者告警名称,类型为String； - event_severity：事件级别枚举值。类型为String，四种类型 \"Critical\", \"Major\", \"Minor\", \"Info\"； - event_type：事件类别枚举值。类型为String，event为普通告警，alarm为告警事件； - resource_provider：事件对应云服务名称。类型为String； - resource_type：事件对应资源类型。类型为String； - resource_id：事件对应资源信息。类型为String。 
+        事件或者告警的详细信息，为键值对形式。必须字段为： - event_name：事件或者告警名称,类型为String； - event_severity：事件级别枚举值。类型为String，四种类型 \"Critical\", \"Major\", \"Minor\", \"Info\"； - event_type：事件类别枚举值。类型为String，event为普通告警，alarm为告警事件； - resource_provider：事件对应云服务名称。类型为String； - resource_type：事件对应资源类型。类型为String； - resource_id：事件对应资源信息。类型为String。
 
         :return: The metadata of this EventModel.
         :rtype: object
@@ -151,7 +151,7 @@ class EventModel:
     def metadata(self, metadata):
         """Sets the metadata of this EventModel.
 
-        事件或者告警的详细信息，为键值对形式。必须字段为： - event_name：事件或者告警名称,类型为String； - event_severity：事件级别枚举值。类型为String，四种类型 \"Critical\", \"Major\", \"Minor\", \"Info\"； - event_type：事件类别枚举值。类型为String，event为普通告警，alarm为告警事件； - resource_provider：事件对应云服务名称。类型为String； - resource_type：事件对应资源类型。类型为String； - resource_id：事件对应资源信息。类型为String。 
+        事件或者告警的详细信息，为键值对形式。必须字段为： - event_name：事件或者告警名称,类型为String； - event_severity：事件级别枚举值。类型为String，四种类型 \"Critical\", \"Major\", \"Minor\", \"Info\"； - event_type：事件类别枚举值。类型为String，event为普通告警，alarm为告警事件； - resource_provider：事件对应云服务名称。类型为String； - resource_type：事件对应资源类型。类型为String； - resource_id：事件对应资源信息。类型为String。
 
         :param metadata: The metadata of this EventModel.
         :type: object

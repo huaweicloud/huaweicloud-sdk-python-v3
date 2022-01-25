@@ -24,7 +24,6 @@ class ShowJobsResponse(SdkResponse):
     openapi_types = {
         'total': 'int',
         'jobs': 'list[Job]',
-        'simple': 'bool',
         'page_no': 'int',
         'page_size': 'int'
     }
@@ -32,19 +31,17 @@ class ShowJobsResponse(SdkResponse):
     attribute_map = {
         'total': 'total',
         'jobs': 'jobs',
-        'simple': 'simple',
         'page_no': 'page_no',
         'page_size': 'page_size'
     }
 
-    def __init__(self, total=None, jobs=None, simple=None, page_no=None, page_size=None):
+    def __init__(self, total=None, jobs=None, page_no=None, page_size=None):
         """ShowJobsResponse - a model defined in huaweicloud sdk"""
         
         super(ShowJobsResponse, self).__init__()
 
         self._total = None
         self._jobs = None
-        self._simple = None
         self._page_no = None
         self._page_size = None
         self.discriminator = None
@@ -53,8 +50,6 @@ class ShowJobsResponse(SdkResponse):
             self.total = total
         if jobs is not None:
             self.jobs = jobs
-        if simple is not None:
-            self.simple = simple
         if page_no is not None:
             self.page_no = page_no
         if page_size is not None:
@@ -64,7 +59,7 @@ class ShowJobsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ShowJobsResponse.
 
-        作业数
+        作业数,查询单个作业时为0
 
         :return: The total of this ShowJobsResponse.
         :rtype: int
@@ -75,7 +70,7 @@ class ShowJobsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ShowJobsResponse.
 
-        作业数
+        作业数,查询单个作业时为0
 
         :param total: The total of this ShowJobsResponse.
         :type: int
@@ -103,28 +98,6 @@ class ShowJobsResponse(SdkResponse):
         :type: list[Job]
         """
         self._jobs = jobs
-
-    @property
-    def simple(self):
-        """Gets the simple of this ShowJobsResponse.
-
-        当为“true”时返回精简消息，即作业参数只返回参数名和值，不返回参数的“size”、“type”、“id”等属性
-
-        :return: The simple of this ShowJobsResponse.
-        :rtype: bool
-        """
-        return self._simple
-
-    @simple.setter
-    def simple(self, simple):
-        """Sets the simple of this ShowJobsResponse.
-
-        当为“true”时返回精简消息，即作业参数只返回参数名和值，不返回参数的“size”、“type”、“id”等属性
-
-        :param simple: The simple of this ShowJobsResponse.
-        :type: bool
-        """
-        self._simple = simple
 
     @property
     def page_no(self):

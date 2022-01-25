@@ -73,7 +73,7 @@ class LogPathRule:
     def name_type(self):
         """Gets the name_type of this LogPathRule.
 
-        cmdLineHash 取值类型。
+        取值类型。 cmdLineHash
 
         :return: The name_type of this LogPathRule.
         :rtype: str
@@ -84,7 +84,7 @@ class LogPathRule:
     def name_type(self, name_type):
         """Sets the name_type of this LogPathRule.
 
-        cmdLineHash 取值类型。
+        取值类型。 cmdLineHash
 
         :param name_type: The name_type of this LogPathRule.
         :type: str

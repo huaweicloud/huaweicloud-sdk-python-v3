@@ -49,6 +49,7 @@ class Data:
     def result_type(self):
         """Gets the result_type of this Data.
 
+        返回值类型。
 
         :return: The result_type of this Data.
         :rtype: str
@@ -59,6 +60,7 @@ class Data:
     def result_type(self, result_type):
         """Sets the result_type of this Data.
 
+        返回值类型。
 
         :param result_type: The result_type of this Data.
         :type: str
@@ -69,6 +71,7 @@ class Data:
     def result(self):
         """Gets the result of this Data.
 
+        数据信息。
 
         :return: The result of this Data.
         :rtype: list[str]
@@ -79,6 +82,7 @@ class Data:
     def result(self, result):
         """Sets the result of this Data.
 
+        数据信息。
 
         :param result: The result of this Data.
         :type: list[str]

@@ -103,7 +103,7 @@ class AppRulesSpec:
     def attr_list(self):
         """Gets the attr_list of this AppRulesSpec.
 
-        cmdLine、env 属性列表(暂不使用,可不传)。
+        属性列表(暂不使用,可不传)。 cmdLine、env
 
         :return: The attr_list of this AppRulesSpec.
         :rtype: list[str]
@@ -114,7 +114,7 @@ class AppRulesSpec:
     def attr_list(self, attr_list):
         """Sets the attr_list of this AppRulesSpec.
 
-        cmdLine、env 属性列表(暂不使用,可不传)。
+        属性列表(暂不使用,可不传)。 cmdLine、env
 
         :param attr_list: The attr_list of this AppRulesSpec.
         :type: list[str]
@@ -125,7 +125,7 @@ class AppRulesSpec:
     def detect_log(self):
         """Gets the detect_log of this AppRulesSpec.
 
-        true、false 是否开启日志采集。
+        是否开启日志采集。 true、false
 
         :return: The detect_log of this AppRulesSpec.
         :rtype: str
@@ -136,7 +136,7 @@ class AppRulesSpec:
     def detect_log(self, detect_log):
         """Sets the detect_log of this AppRulesSpec.
 
-        true、false 是否开启日志采集。
+        是否开启日志采集。 true、false
 
         :param detect_log: The detect_log of this AppRulesSpec.
         :type: str
@@ -147,7 +147,7 @@ class AppRulesSpec:
     def discovery_rule(self):
         """Gets the discovery_rule of this AppRulesSpec.
 
-        checkType为cmdLine时checkMode填contain,checkContent格式为[“xxx”]表示进程命令行参数中需要包含xxx。checkType为env时checkMode填contain,checkContent格式为 [\"k1\",\"v1\"]表示进程环境变量中需要包含名为k1值为v1的环境变量。checkType为scope时checkMode填equals,checkContent格式为节点ID数组[\"hostId1”,”hostId2”],表示规则仅会在这些节点上生效(如果不指定节点范围,规则将下发到该项目所有的节点)。 规则发现部分,数组中有多个对象时表示需要同时满足所有条件的进程才会被匹配到。
+        规则发现部分,数组中有多个对象时表示需要同时满足所有条件的进程才会被匹配到。 checkType为cmdLine时checkMode填contain,checkContent格式为[“xxx”]表示进程命令行参数中需要包含xxx。checkType为env时checkMode填contain,checkContent格式为 [\"k1\",\"v1\"]表示进程环境变量中需要包含名为k1值为v1的环境变量。checkType为scope时checkMode填equals,checkContent格式为节点ID数组[\"hostId1”,”hostId2”],表示规则仅会在这些节点上生效(如果不指定节点范围,规则将下发到该项目所有的节点)。
 
         :return: The discovery_rule of this AppRulesSpec.
         :rtype: list[DiscoveryRule]
@@ -158,7 +158,7 @@ class AppRulesSpec:
     def discovery_rule(self, discovery_rule):
         """Sets the discovery_rule of this AppRulesSpec.
 
-        checkType为cmdLine时checkMode填contain,checkContent格式为[“xxx”]表示进程命令行参数中需要包含xxx。checkType为env时checkMode填contain,checkContent格式为 [\"k1\",\"v1\"]表示进程环境变量中需要包含名为k1值为v1的环境变量。checkType为scope时checkMode填equals,checkContent格式为节点ID数组[\"hostId1”,”hostId2”],表示规则仅会在这些节点上生效(如果不指定节点范围,规则将下发到该项目所有的节点)。 规则发现部分,数组中有多个对象时表示需要同时满足所有条件的进程才会被匹配到。
+        规则发现部分,数组中有多个对象时表示需要同时满足所有条件的进程才会被匹配到。 checkType为cmdLine时checkMode填contain,checkContent格式为[“xxx”]表示进程命令行参数中需要包含xxx。checkType为env时checkMode填contain,checkContent格式为 [\"k1\",\"v1\"]表示进程环境变量中需要包含名为k1值为v1的环境变量。checkType为scope时checkMode填equals,checkContent格式为节点ID数组[\"hostId1”,”hostId2”],表示规则仅会在这些节点上生效(如果不指定节点范围,规则将下发到该项目所有的节点)。
 
         :param discovery_rule: The discovery_rule of this AppRulesSpec.
         :type: list[DiscoveryRule]
@@ -169,7 +169,7 @@ class AppRulesSpec:
     def is_default_rule(self):
         """Gets the is_default_rule of this AppRulesSpec.
 
-        true、false 是否为默认规则。
+        是否为默认规则。 true、false
 
         :return: The is_default_rule of this AppRulesSpec.
         :rtype: str
@@ -180,7 +180,7 @@ class AppRulesSpec:
     def is_default_rule(self, is_default_rule):
         """Sets the is_default_rule of this AppRulesSpec.
 
-        true、false 是否为默认规则。
+        是否为默认规则。 true、false
 
         :param is_default_rule: The is_default_rule of this AppRulesSpec.
         :type: str
@@ -191,7 +191,7 @@ class AppRulesSpec:
     def is_detect(self):
         """Gets the is_detect of this AppRulesSpec.
 
-        true、false 是否为规则预探测场景(预探测场景不会保存规则,仅用于规则下发之前对规则正确性的检测)。
+        是否为规则预探测场景(预探测场景不会保存规则,仅用于规则下发之前验证该规则能否有效发现节点上的进程)。 true、false
 
         :return: The is_detect of this AppRulesSpec.
         :rtype: str
@@ -202,7 +202,7 @@ class AppRulesSpec:
     def is_detect(self, is_detect):
         """Sets the is_detect of this AppRulesSpec.
 
-        true、false 是否为规则预探测场景(预探测场景不会保存规则,仅用于规则下发之前对规则正确性的检测)。
+        是否为规则预探测场景(预探测场景不会保存规则,仅用于规则下发之前验证该规则能否有效发现节点上的进程)。 true、false
 
         :param is_detect: The is_detect of this AppRulesSpec.
         :type: str
@@ -213,7 +213,7 @@ class AppRulesSpec:
     def log_file_fix(self):
         """Gets the log_file_fix of this AppRulesSpec.
 
-        log、trace、out 日志文件的后缀。
+        日志文件的后缀。 log、trace、out
 
         :return: The log_file_fix of this AppRulesSpec.
         :rtype: list[str]
@@ -224,7 +224,7 @@ class AppRulesSpec:
     def log_file_fix(self, log_file_fix):
         """Sets the log_file_fix of this AppRulesSpec.
 
-        log、trace、out 日志文件的后缀。
+        日志文件的后缀。 log、trace、out
 
         :param log_file_fix: The log_file_fix of this AppRulesSpec.
         :type: list[str]
@@ -235,7 +235,7 @@ class AppRulesSpec:
     def log_path_rule(self):
         """Gets the log_path_rule of this AppRulesSpec.
 
-        当cmdLineHash为固定字符串时,指定日志路径或者日志文件。否则只采集进程当前打开的以.log和.trace结尾的文件。nameType取值cmdLineHash时,args格式为[\"00001\"],value格式为[\"/xxx/xx.log\"],表示当启动命令是00001时,日志路径为/xxx/xx.log。 日志路径配置规则。
+        日志路径配置规则。 当cmdLineHash为固定字符串时,指定日志路径或者日志文件。否则只采集进程当前打开的以.log和.trace结尾的文件。nameType取值cmdLineHash时,args格式为[\"00001\"],value格式为[\"/xxx/xx.log\"],表示当启动命令是00001时,日志路径为/xxx/xx.log。
 
         :return: The log_path_rule of this AppRulesSpec.
         :rtype: list[LogPathRule]
@@ -246,7 +246,7 @@ class AppRulesSpec:
     def log_path_rule(self, log_path_rule):
         """Sets the log_path_rule of this AppRulesSpec.
 
-        当cmdLineHash为固定字符串时,指定日志路径或者日志文件。否则只采集进程当前打开的以.log和.trace结尾的文件。nameType取值cmdLineHash时,args格式为[\"00001\"],value格式为[\"/xxx/xx.log\"],表示当启动命令是00001时,日志路径为/xxx/xx.log。 日志路径配置规则。
+        日志路径配置规则。 当cmdLineHash为固定字符串时,指定日志路径或者日志文件。否则只采集进程当前打开的以.log和.trace结尾的文件。nameType取值cmdLineHash时,args格式为[\"00001\"],value格式为[\"/xxx/xx.log\"],表示当启动命令是00001时,日志路径为/xxx/xx.log。
 
         :param log_path_rule: The log_path_rule of this AppRulesSpec.
         :type: list[LogPathRule]
@@ -277,7 +277,7 @@ class AppRulesSpec:
     def priority(self):
         """Gets the priority of this AppRulesSpec.
 
-        1~9999的整数字符串,默认取值为9999 规则优先级。
+        规则优先级。 1~9999的整数字符串,默认取值为9999
 
         :return: The priority of this AppRulesSpec.
         :rtype: str
@@ -288,7 +288,7 @@ class AppRulesSpec:
     def priority(self, priority):
         """Sets the priority of this AppRulesSpec.
 
-        1~9999的整数字符串,默认取值为9999 规则优先级。
+        规则优先级。 1~9999的整数字符串,默认取值为9999
 
         :param priority: The priority of this AppRulesSpec.
         :type: str

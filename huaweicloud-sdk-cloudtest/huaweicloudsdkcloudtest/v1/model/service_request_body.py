@@ -69,7 +69,7 @@ class ServiceRequestBody:
     def server_host(self):
         """Gets the server_host of this ServiceRequestBody.
 
-        新测试类型服务域名，用于拼接调用接口，以https/http开头，长度小于等于128位字符
+        server_host是由用户提供的域名。 我们会通过此域名进行接口调用，请以https/http开头,长度小于等于128位字符。 TestHub将会通过此域名下的接口，保证云测数据与用户系统数据的一致性。
 
         :return: The server_host of this ServiceRequestBody.
         :rtype: str
@@ -80,7 +80,7 @@ class ServiceRequestBody:
     def server_host(self, server_host):
         """Sets the server_host of this ServiceRequestBody.
 
-        新测试类型服务域名，用于拼接调用接口，以https/http开头，长度小于等于128位字符
+        server_host是由用户提供的域名。 我们会通过此域名进行接口调用，请以https/http开头,长度小于等于128位字符。 TestHub将会通过此域名下的接口，保证云测数据与用户系统数据的一致性。
 
         :param server_host: The server_host of this ServiceRequestBody.
         :type: str

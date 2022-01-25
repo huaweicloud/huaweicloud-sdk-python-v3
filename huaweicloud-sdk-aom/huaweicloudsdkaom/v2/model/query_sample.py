@@ -51,7 +51,7 @@ class QuerySample:
     def namespace(self):
         """Gets the namespace of this QuerySample.
 
-        时间序列的命名空间。 取值范围 PAAS.CONTAINER PAAS.NODE PAAS.SLA PAAS.AGGR CUSTOMMETRICS 
+        时间序列命名空间。 取值范围： PAAS.CONTAINER、PAAS.NODE、PAAS.SLA、PAAS.AGGR、CUSTOMMETRICS等； PAAS.CONTAINER：应用时间序列； PAAS.NODE：节点时间序列； PAAS.SLA：SLA时间序列； PAAS.AGGR：集群时间序列； CUSTOMMETRICS：自定义时间序列。
 
         :return: The namespace of this QuerySample.
         :rtype: str
@@ -62,7 +62,7 @@ class QuerySample:
     def namespace(self, namespace):
         """Sets the namespace of this QuerySample.
 
-        时间序列的命名空间。 取值范围 PAAS.CONTAINER PAAS.NODE PAAS.SLA PAAS.AGGR CUSTOMMETRICS 
+        时间序列命名空间。 取值范围： PAAS.CONTAINER、PAAS.NODE、PAAS.SLA、PAAS.AGGR、CUSTOMMETRICS等； PAAS.CONTAINER：应用时间序列； PAAS.NODE：节点时间序列； PAAS.SLA：SLA时间序列； PAAS.AGGR：集群时间序列； CUSTOMMETRICS：自定义时间序列。
 
         :param namespace: The namespace of this QuerySample.
         :type: str
@@ -73,7 +73,7 @@ class QuerySample:
     def dimensions(self):
         """Gets the dimensions of this QuerySample.
 
-        时间序列维度列表。 取值范围： 数组不能为空，同时数组中任何一个dimension对象name和value属性的值也不能为空。 
+        时间序列维度列表 可通过/v2/{project_id}/series接口中namespace+metric_name， 查询当前监控的时间序列名称的时间序列维度列表。
 
         :return: The dimensions of this QuerySample.
         :rtype: list[DimensionSeries]
@@ -84,7 +84,7 @@ class QuerySample:
     def dimensions(self, dimensions):
         """Sets the dimensions of this QuerySample.
 
-        时间序列维度列表。 取值范围： 数组不能为空，同时数组中任何一个dimension对象name和value属性的值也不能为空。 
+        时间序列维度列表 可通过/v2/{project_id}/series接口中namespace+metric_name， 查询当前监控的时间序列名称的时间序列维度列表。
 
         :param dimensions: The dimensions of this QuerySample.
         :type: list[DimensionSeries]
@@ -95,7 +95,7 @@ class QuerySample:
     def metric_name(self):
         """Gets the metric_name of this QuerySample.
 
-        时间序列名称。 取值范围 名称长度为1~255个字符 
+        时间序列名称。名称长度取值范围为1~255个字符。 取值范围： AOM提供的基础时间序列名称，cpuUsage、cpuCoreUsed等， cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义时间序列名称。
 
         :return: The metric_name of this QuerySample.
         :rtype: str
@@ -106,7 +106,7 @@ class QuerySample:
     def metric_name(self, metric_name):
         """Sets the metric_name of this QuerySample.
 
-        时间序列名称。 取值范围 名称长度为1~255个字符 
+        时间序列名称。名称长度取值范围为1~255个字符。 取值范围： AOM提供的基础时间序列名称，cpuUsage、cpuCoreUsed等， cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义时间序列名称。
 
         :param metric_name: The metric_name of this QuerySample.
         :type: str

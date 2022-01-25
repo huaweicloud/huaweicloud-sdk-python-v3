@@ -20,6 +20,7 @@ from huaweicloudsdklts.v2.model.access_config_host_group_id_list import AccessCo
 from huaweicloudsdklts.v2.model.access_config_host_group_id_list_create import AccessConfigHostGroupIdListCreate
 from huaweicloudsdklts.v2.model.access_config_info import AccessConfigInfo
 from huaweicloudsdklts.v2.model.access_config_query_log_info import AccessConfigQueryLogInfo
+from huaweicloudsdklts.v2.model.access_config_tag import AccessConfigTag
 from huaweicloudsdklts.v2.model.access_config_time_offset import AccessConfigTimeOffset
 from huaweicloudsdklts.v2.model.access_config_time_offset_create import AccessConfigTimeOffsetCreate
 from huaweicloudsdklts.v2.model.access_config_windows_log_info import AccessConfigWindowsLogInfo

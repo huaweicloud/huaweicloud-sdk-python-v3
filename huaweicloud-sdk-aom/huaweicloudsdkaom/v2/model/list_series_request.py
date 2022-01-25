@@ -54,7 +54,7 @@ class ListSeriesRequest:
     def limit(self):
         """Gets the limit of this ListSeriesRequest.
 
-        取值范围(0,1000]，默认值为1000。用于限制本次返回的结果数据条数。
+        用于限制本次返回的结果数据条数。 取值范围(0,1000]，默认值为1000。
 
         :return: The limit of this ListSeriesRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class ListSeriesRequest:
     def limit(self, limit):
         """Sets the limit of this ListSeriesRequest.
 
-        取值范围(0,1000]，默认值为1000。用于限制本次返回的结果数据条数。
+        用于限制本次返回的结果数据条数。 取值范围(0,1000]，默认值为1000。
 
         :param limit: The limit of this ListSeriesRequest.
         :type: str

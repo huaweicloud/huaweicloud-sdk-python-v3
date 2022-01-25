@@ -85,7 +85,7 @@ class QueryBodyParam:
     def category(self):
         """Gets the category of this QueryBodyParam.
 
-        取值范国 app_log,node _log,custom_log 日志类型字段:app_log:应用日志 node_log:主机日志 custom_log:自定义配置路径日志。
+        取值范围 app_log,node _log,custom_log 日志类型字段:app_log:应用日志 node_log:主机日志 custom_log:自定义配置路径日志。
 
         :return: The category of this QueryBodyParam.
         :rtype: str
@@ -96,7 +96,7 @@ class QueryBodyParam:
     def category(self, category):
         """Sets the category of this QueryBodyParam.
 
-        取值范国 app_log,node _log,custom_log 日志类型字段:app_log:应用日志 node_log:主机日志 custom_log:自定义配置路径日志。
+        取值范围 app_log,node _log,custom_log 日志类型字段:app_log:应用日志 node_log:主机日志 custom_log:自定义配置路径日志。
 
         :param category: The category of this QueryBodyParam.
         :type: str
@@ -129,7 +129,7 @@ class QueryBodyParam:
     def hide_syslog(self):
         """Gets the hide_syslog of this QueryBodyParam.
 
-        取值范围 0、1 。搜索时是否隐藏系统日志(icagentjkubectl )默认0为隐藏为显示。
+        取值范围 0、1 。搜索时是否隐藏系统日志，默认0为隐藏1为显示。
 
         :return: The hide_syslog of this QueryBodyParam.
         :rtype: int
@@ -140,7 +140,7 @@ class QueryBodyParam:
     def hide_syslog(self, hide_syslog):
         """Sets the hide_syslog of this QueryBodyParam.
 
-        取值范围 0、1 。搜索时是否隐藏系统日志(icagentjkubectl )默认0为隐藏为显示。
+        取值范围 0、1 。搜索时是否隐藏系统日志，默认0为隐藏1为显示。
 
         :param hide_syslog: The hide_syslog of this QueryBodyParam.
         :type: int

@@ -73,7 +73,7 @@ class MetricQueryMeritcParam:
     def metric_name(self):
         """Gets the metric_name of this MetricQueryMeritcParam.
 
-        指标名称。 取值范围 名称长度为1~255个字符
+        指标名称。名称长度取值范围为1~255个字符。 取值范围： AOM提供的基础指标， cpuUsage、cpuCoreUsed等 cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义指标名称。
 
         :return: The metric_name of this MetricQueryMeritcParam.
         :rtype: str
@@ -84,7 +84,7 @@ class MetricQueryMeritcParam:
     def metric_name(self, metric_name):
         """Sets the metric_name of this MetricQueryMeritcParam.
 
-        指标名称。 取值范围 名称长度为1~255个字符
+        指标名称。名称长度取值范围为1~255个字符。 取值范围： AOM提供的基础指标， cpuUsage、cpuCoreUsed等 cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义指标名称。
 
         :param metric_name: The metric_name of this MetricQueryMeritcParam.
         :type: str
@@ -95,7 +95,7 @@ class MetricQueryMeritcParam:
     def namespace(self):
         """Gets the namespace of this MetricQueryMeritcParam.
 
-        指标命名空间。 取值范围 PAAS.CONTAINER PAAS.NODE PAAS.SLA PAAS.AGGR CUSTOMMETRICS
+        指标命名空间。 取值范围： PAAS.CONTAINER：组件指标、实例指标、进程指标和容器指标的命名空间， PAAS.NODE： 主机指标、网络指标、磁盘指标和文件系统指标的命名空间， PAAS.SLA：SLA指标的命名空间， PAAS.AGGR：集群指标的命名空间， CUSTOMMETRICS：默认的自定义指标的命名空间。
 
         :return: The namespace of this MetricQueryMeritcParam.
         :rtype: str
@@ -106,7 +106,7 @@ class MetricQueryMeritcParam:
     def namespace(self, namespace):
         """Sets the namespace of this MetricQueryMeritcParam.
 
-        指标命名空间。 取值范围 PAAS.CONTAINER PAAS.NODE PAAS.SLA PAAS.AGGR CUSTOMMETRICS
+        指标命名空间。 取值范围： PAAS.CONTAINER：组件指标、实例指标、进程指标和容器指标的命名空间， PAAS.NODE： 主机指标、网络指标、磁盘指标和文件系统指标的命名空间， PAAS.SLA：SLA指标的命名空间， PAAS.AGGR：集群指标的命名空间， CUSTOMMETRICS：默认的自定义指标的命名空间。
 
         :param namespace: The namespace of this MetricQueryMeritcParam.
         :type: str

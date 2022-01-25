@@ -270,7 +270,7 @@ class RulesetItem:
     def is_default(self):
         """Gets the is_default of this RulesetItem.
 
-        是否默认规则集，0不是，1是
+        是否该语言默认规则集，0不是，1是
 
         :return: The is_default of this RulesetItem.
         :rtype: str
@@ -281,7 +281,7 @@ class RulesetItem:
     def is_default(self, is_default):
         """Sets the is_default of this RulesetItem.
 
-        是否默认规则集，0不是，1是
+        是否该语言默认规则集，0不是，1是
 
         :param is_default: The is_default of this RulesetItem.
         :type: str
@@ -314,7 +314,7 @@ class RulesetItem:
     def is_default_template(self):
         """Gets the is_default_template of this RulesetItem.
 
-        是否该语言默认规则集，0不是，1是
+        是否是系统规则集，0不是，1是
 
         :return: The is_default_template of this RulesetItem.
         :rtype: str
@@ -325,7 +325,7 @@ class RulesetItem:
     def is_default_template(self, is_default_template):
         """Sets the is_default_template of this RulesetItem.
 
-        是否该语言默认规则集，0不是，1是
+        是否是系统规则集，0不是，1是
 
         :param is_default_template: The is_default_template of this RulesetItem.
         :type: str

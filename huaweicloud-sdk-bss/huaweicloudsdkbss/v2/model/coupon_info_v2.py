@@ -200,7 +200,7 @@ class CouponInfoV2:
     def coupon_type(self):
         """Gets the coupon_type of this CouponInfoV2.
 
-        优惠券类型： 300：折扣券301：代金券302：现金券303：储值卡
+        优惠券类型。 1：代金券2：折扣券3：产品券4：现金券
 
         :return: The coupon_type of this CouponInfoV2.
         :rtype: int
@@ -211,7 +211,7 @@ class CouponInfoV2:
     def coupon_type(self, coupon_type):
         """Sets the coupon_type of this CouponInfoV2.
 
-        优惠券类型： 300：折扣券301：代金券302：现金券303：储值卡
+        优惠券类型。 1：代金券2：折扣券3：产品券4：现金券
 
         :param coupon_type: The coupon_type of this CouponInfoV2.
         :type: int

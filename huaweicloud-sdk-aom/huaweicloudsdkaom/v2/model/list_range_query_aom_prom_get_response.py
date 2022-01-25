@@ -49,6 +49,7 @@ class ListRangeQueryAomPromGetResponse(SdkResponse):
     def status(self):
         """Gets the status of this ListRangeQueryAomPromGetResponse.
 
+        响应状态。
 
         :return: The status of this ListRangeQueryAomPromGetResponse.
         :rtype: str
@@ -59,6 +60,7 @@ class ListRangeQueryAomPromGetResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ListRangeQueryAomPromGetResponse.
 
+        响应状态。
 
         :param status: The status of this ListRangeQueryAomPromGetResponse.
         :type: str

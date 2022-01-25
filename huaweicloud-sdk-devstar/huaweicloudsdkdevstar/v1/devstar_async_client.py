@@ -1268,6 +1268,81 @@ class DevStarAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_repository_by_cloud_ide_async(self, request):
+        """使用 CloudIDE 实例打开应用代码
+
+        使用 CloudIDE 实例打开应用代码。CloudIDE会保存用户项目数据，相同用户使用同一个CloudIDE 使用要求：1.用户需为登录状态； 2.拥有仓库权限 
+
+        :param ShowRepositoryByCloudIdeRequest request
+        :return: ShowRepositoryByCloudIdeResponse
+        """
+        return self.show_repository_by_cloud_ide_with_http_info(request)
+
+    def show_repository_by_cloud_ide_with_http_info(self, request):
+        """使用 CloudIDE 实例打开应用代码
+
+        使用 CloudIDE 实例打开应用代码。CloudIDE会保存用户项目数据，相同用户使用同一个CloudIDE 使用要求：1.用户需为登录状态； 2.拥有仓库权限 
+
+        :param ShowRepositoryByCloudIdeRequest request
+        :return: ShowRepositoryByCloudIdeResponse
+        """
+
+        all_params = ['repository_id', 'repository_ssh_url', 'x_language', 'region_id', 'space_prefix', 'is_open_last', 'is_free']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'repository_ssh_url' in local_var_params:
+            query_params.append(('repository_ssh_url', local_var_params['repository_ssh_url']))
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'space_prefix' in local_var_params:
+            query_params.append(('space_prefix', local_var_params['space_prefix']))
+        if 'is_open_last' in local_var_params:
+            query_params.append(('is_open_last', local_var_params['is_open_last']))
+        if 'is_free' in local_var_params:
+            query_params.append(('is_free', local_var_params['is_free']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/repositories/{repository_id}/show/cloudide',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRepositoryByCloudIdeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_repository_statistical_data_v2_async(self, request):
         """应用代码仓库统计信息
 
@@ -1595,6 +1670,71 @@ class DevStarAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListTemplateViewHistoriesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_templates_async(self, request):
+        """查询模板列表
+
+        查询模板列表。
+
+        :param ListTemplatesRequest request
+        :return: ListTemplatesResponse
+        """
+        return self.list_templates_with_http_info(request)
+
+    def list_templates_with_http_info(self, request):
+        """查询模板列表
+
+        查询模板列表。
+
+        :param ListTemplatesRequest request
+        :return: ListTemplatesResponse
+        """
+
+        all_params = ['x_language', 'list_templates_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/templates/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTemplatesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

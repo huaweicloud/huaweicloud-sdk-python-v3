@@ -27,7 +27,8 @@ class RuleItem:
         'rule_name': 'str',
         'rule_severity': 'str',
         'rule_tages': 'str',
-        'checked': 'str'
+        'checked': 'str',
+        'rule_config_list': 'list[RuleConfig]'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class RuleItem:
         'rule_name': 'rule_name',
         'rule_severity': 'rule_severity',
         'rule_tages': 'rule_tages',
-        'checked': 'checked'
+        'checked': 'checked',
+        'rule_config_list': 'rule_config_list'
     }
 
-    def __init__(self, rule_id=None, rule_language=None, rule_name=None, rule_severity=None, rule_tages=None, checked=None):
+    def __init__(self, rule_id=None, rule_language=None, rule_name=None, rule_severity=None, rule_tages=None, checked=None, rule_config_list=None):
         """RuleItem - a model defined in huaweicloud sdk"""
         
         
@@ -50,6 +52,7 @@ class RuleItem:
         self._rule_severity = None
         self._rule_tages = None
         self._checked = None
+        self._rule_config_list = None
         self.discriminator = None
 
         if rule_id is not None:
@@ -64,6 +67,8 @@ class RuleItem:
             self.rule_tages = rule_tages
         if checked is not None:
             self.checked = checked
+        if rule_config_list is not None:
+            self.rule_config_list = rule_config_list
 
     @property
     def rule_id(self):
@@ -196,6 +201,28 @@ class RuleItem:
         :type: str
         """
         self._checked = checked
+
+    @property
+    def rule_config_list(self):
+        """Gets the rule_config_list of this RuleItem.
+
+        规则配置参数阈值相关信息
+
+        :return: The rule_config_list of this RuleItem.
+        :rtype: list[RuleConfig]
+        """
+        return self._rule_config_list
+
+    @rule_config_list.setter
+    def rule_config_list(self, rule_config_list):
+        """Sets the rule_config_list of this RuleItem.
+
+        规则配置参数阈值相关信息
+
+        :param rule_config_list: The rule_config_list of this RuleItem.
+        :type: list[RuleConfig]
+        """
+        self._rule_config_list = rule_config_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

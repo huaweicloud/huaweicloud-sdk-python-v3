@@ -49,6 +49,7 @@ class ListLabelValuesAomPromGetResponse(SdkResponse):
     def status(self):
         """Gets the status of this ListLabelValuesAomPromGetResponse.
 
+        响应状态。
 
         :return: The status of this ListLabelValuesAomPromGetResponse.
         :rtype: str
@@ -59,6 +60,7 @@ class ListLabelValuesAomPromGetResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ListLabelValuesAomPromGetResponse.
 
+        响应状态。
 
         :param status: The status of this ListLabelValuesAomPromGetResponse.
         :type: str
@@ -69,6 +71,7 @@ class ListLabelValuesAomPromGetResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListLabelValuesAomPromGetResponse.
 
+        标签值信息。
 
         :return: The data of this ListLabelValuesAomPromGetResponse.
         :rtype: list[str]
@@ -79,6 +82,7 @@ class ListLabelValuesAomPromGetResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListLabelValuesAomPromGetResponse.
 
+        标签值信息。
 
         :param data: The data of this ListLabelValuesAomPromGetResponse.
         :type: list[str]

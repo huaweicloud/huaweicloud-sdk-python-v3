@@ -75,7 +75,7 @@ class SearchDepartmentByNameRequest:
     def accept_language(self):
         """Gets the accept_language of this SearchDepartmentByNameRequest.
 
-        语言参数，默认为中文zh_CN, 英文为en_US
+        语言参数，默认为中文zh-CN, 英文为en-US
 
         :return: The accept_language of this SearchDepartmentByNameRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class SearchDepartmentByNameRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this SearchDepartmentByNameRequest.
 
-        语言参数，默认为中文zh_CN, 英文为en_US
+        语言参数，默认为中文zh-CN, 英文为en-US
 
         :param accept_language: The accept_language of this SearchDepartmentByNameRequest.
         :type: str

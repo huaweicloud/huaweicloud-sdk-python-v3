@@ -30,6 +30,7 @@ class CreateTaskRequestV2:
         'task_type': 'str',
         'username': 'str',
         'access_token': 'str',
+        'endpoint_id': 'str',
         'inc_config': 'IncConfigV2',
         'enable_fossbot': 'bool',
         'resource_pool_id': 'str'
@@ -44,12 +45,13 @@ class CreateTaskRequestV2:
         'task_type': 'task_type',
         'username': 'username',
         'access_token': 'access_token',
+        'endpoint_id': 'endpoint_id',
         'inc_config': 'inc_config',
         'enable_fossbot': 'enable_fossbot',
         'resource_pool_id': 'resource_pool_id'
     }
 
-    def __init__(self, check_type=None, git_url=None, git_branch=None, language=None, rule_sets=None, task_type=None, username=None, access_token=None, inc_config=None, enable_fossbot=None, resource_pool_id=None):
+    def __init__(self, check_type=None, git_url=None, git_branch=None, language=None, rule_sets=None, task_type=None, username=None, access_token=None, endpoint_id=None, inc_config=None, enable_fossbot=None, resource_pool_id=None):
         """CreateTaskRequestV2 - a model defined in huaweicloud sdk"""
         
         
@@ -62,6 +64,7 @@ class CreateTaskRequestV2:
         self._task_type = None
         self._username = None
         self._access_token = None
+        self._endpoint_id = None
         self._inc_config = None
         self._enable_fossbot = None
         self._resource_pool_id = None
@@ -80,6 +83,8 @@ class CreateTaskRequestV2:
             self.username = username
         if access_token is not None:
             self.access_token = access_token
+        if endpoint_id is not None:
+            self.endpoint_id = endpoint_id
         if inc_config is not None:
             self.inc_config = inc_config
         if enable_fossbot is not None:
@@ -262,6 +267,28 @@ class CreateTaskRequestV2:
         :type: str
         """
         self._access_token = access_token
+
+    @property
+    def endpoint_id(self):
+        """Gets the endpoint_id of this CreateTaskRequestV2.
+
+        仓库有权限的用户endpointId
+
+        :return: The endpoint_id of this CreateTaskRequestV2.
+        :rtype: str
+        """
+        return self._endpoint_id
+
+    @endpoint_id.setter
+    def endpoint_id(self, endpoint_id):
+        """Sets the endpoint_id of this CreateTaskRequestV2.
+
+        仓库有权限的用户endpointId
+
+        :param endpoint_id: The endpoint_id of this CreateTaskRequestV2.
+        :type: str
+        """
+        self._endpoint_id = endpoint_id
 
     @property
     def inc_config(self):

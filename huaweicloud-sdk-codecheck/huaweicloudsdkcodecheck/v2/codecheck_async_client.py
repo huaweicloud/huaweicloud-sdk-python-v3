@@ -245,6 +245,71 @@ class CodeCheckAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_ruleset_async(self, request):
+        """删除自定义规则集
+
+        删除自定义规则集，正在使用中的或默认规则集不能删除
+
+        :param DeleteRulesetRequest request
+        :return: DeleteRulesetResponse
+        """
+        return self.delete_ruleset_with_http_info(request)
+
+    def delete_ruleset_with_http_info(self, request):
+        """删除自定义规则集
+
+        删除自定义规则集，正在使用中的或默认规则集不能删除
+
+        :param DeleteRulesetRequest request
+        :return: DeleteRulesetResponse
+        """
+
+        all_params = ['project_id', 'ruleset_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'ruleset_id' in local_var_params:
+            path_params['ruleset_id'] = local_var_params['ruleset_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ruleset/{ruleset_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteRulesetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_task_async(self, request):
         """删除检查任务
 
@@ -597,7 +662,7 @@ class CodeCheckAsyncClient(Client):
         :return: ListTemplateRulesResponse
         """
 
-        all_params = ['project_id', 'ruleset_id', 'types', 'languages', 'offset', 'limit']
+        all_params = ['project_id', 'ruleset_id', 'types', 'languages', 'tags', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -616,6 +681,8 @@ class CodeCheckAsyncClient(Client):
             query_params.append(('types', local_var_params['types']))
         if 'languages' in local_var_params:
             query_params.append(('languages', local_var_params['languages']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -710,6 +777,73 @@ class CodeCheckAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RunTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def set_defaul_template_async(self, request):
+        """设置每个项目对应语言的默认规则集配置
+
+        设置每个项目对应语言的默认规则集配置。
+
+        :param SetDefaulTemplateRequest request
+        :return: SetDefaulTemplateResponse
+        """
+        return self.set_defaul_template_with_http_info(request)
+
+    def set_defaul_template_with_http_info(self, request):
+        """设置每个项目对应语言的默认规则集配置
+
+        设置每个项目对应语言的默认规则集配置。
+
+        :param SetDefaulTemplateRequest request
+        :return: SetDefaulTemplateResponse
+        """
+
+        all_params = ['project_id', 'ruleset_id', 'language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'ruleset_id' in local_var_params:
+            path_params['ruleset_id'] = local_var_params['ruleset_id']
+        if 'language' in local_var_params:
+            path_params['language'] = local_var_params['language']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ruleset/{ruleset_id}/{language}/default',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetDefaulTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1102,6 +1236,73 @@ class CodeCheckAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowTaskListByProjectIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_tasklog_async(self, request):
+        """查询任务检查失败日志
+
+        查询任务检查失败日志，不传execute_id则查询最近一次的检查日志
+
+        :param ShowTasklogRequest request
+        :return: ShowTasklogResponse
+        """
+        return self.show_tasklog_with_http_info(request)
+
+    def show_tasklog_with_http_info(self, request):
+        """查询任务检查失败日志
+
+        查询任务检查失败日志，不传execute_id则查询最近一次的检查日志
+
+        :param ShowTasklogRequest request
+        :return: ShowTasklogResponse
+        """
+
+        all_params = ['project_id', 'task_id', 'execute_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'execute_id' in local_var_params:
+            query_params.append(('execute_id', local_var_params['execute_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/tasks/{task_id}/log-detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowTasklogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

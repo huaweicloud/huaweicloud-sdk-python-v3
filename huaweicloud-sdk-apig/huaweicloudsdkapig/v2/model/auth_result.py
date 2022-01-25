@@ -64,7 +64,7 @@ class AuthResult:
     def status(self):
         """Gets the status of this AuthResult.
 
-        授权结果 - SUCCESS：授权成功 - SKIPPED：跳过 - FILAED：授权失败
+        授权结果 - SUCCESS：授权成功 - SKIPPED：跳过 - FAILED：授权失败
 
         :return: The status of this AuthResult.
         :rtype: str
@@ -75,7 +75,7 @@ class AuthResult:
     def status(self, status):
         """Sets the status of this AuthResult.
 
-        授权结果 - SUCCESS：授权成功 - SKIPPED：跳过 - FILAED：授权失败
+        授权结果 - SUCCESS：授权成功 - SKIPPED：跳过 - FAILED：授权失败
 
         :param status: The status of this AuthResult.
         :type: str

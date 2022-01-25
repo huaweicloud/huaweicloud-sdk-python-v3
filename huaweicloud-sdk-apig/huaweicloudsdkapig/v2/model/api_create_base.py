@@ -44,6 +44,7 @@ class ApiCreateBase:
         'roma_app_id': 'str',
         'domain_name': 'str',
         'tag': 'str',
+        'content_type': 'str',
         'mock_info': 'ApiMockCreate',
         'func_info': 'ApiFuncCreate',
         'req_params': 'list[ReqParamBase]',
@@ -75,6 +76,7 @@ class ApiCreateBase:
         'roma_app_id': 'roma_app_id',
         'domain_name': 'domain_name',
         'tag': 'tag',
+        'content_type': 'content_type',
         'mock_info': 'mock_info',
         'func_info': 'func_info',
         'req_params': 'req_params',
@@ -83,7 +85,7 @@ class ApiCreateBase:
         'policy_functions': 'policy_functions'
     }
 
-    def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, mock_info=None, func_info=None, req_params=None, backend_params=None, policy_mocks=None, policy_functions=None):
+    def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, content_type=None, mock_info=None, func_info=None, req_params=None, backend_params=None, policy_mocks=None, policy_functions=None):
         """ApiCreateBase - a model defined in huaweicloud sdk"""
         
         
@@ -110,6 +112,7 @@ class ApiCreateBase:
         self._roma_app_id = None
         self._domain_name = None
         self._tag = None
+        self._content_type = None
         self._mock_info = None
         self._func_info = None
         self._req_params = None
@@ -154,6 +157,8 @@ class ApiCreateBase:
             self.domain_name = domain_name
         if tag is not None:
             self.tag = tag
+        if content_type is not None:
+            self.content_type = content_type
         if mock_info is not None:
             self.mock_info = mock_info
         if func_info is not None:
@@ -648,6 +653,28 @@ class ApiCreateBase:
         :type: str
         """
         self._tag = tag
+
+    @property
+    def content_type(self):
+        """Gets the content_type of this ApiCreateBase.
+
+        请求内容格式类型：  application/json application/xml multipart/form-date text/plain  暂不支持
+
+        :return: The content_type of this ApiCreateBase.
+        :rtype: str
+        """
+        return self._content_type
+
+    @content_type.setter
+    def content_type(self, content_type):
+        """Sets the content_type of this ApiCreateBase.
+
+        请求内容格式类型：  application/json application/xml multipart/form-date text/plain  暂不支持
+
+        :param content_type: The content_type of this ApiCreateBase.
+        :type: str
+        """
+        self._content_type = content_type
 
     @property
     def mock_info(self):

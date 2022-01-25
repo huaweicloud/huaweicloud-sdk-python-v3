@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListInstanceCofigsV2Request:
+class AccessConfigTag:
 
 
     """
@@ -22,72 +22,68 @@ class ListInstanceCofigsV2Request:
     sensitive_list = []
 
     openapi_types = {
-        'offset': 'int',
-        'limit': 'int'
+        'key': 'str',
+        'value': 'str'
     }
 
     attribute_map = {
-        'offset': 'offset',
-        'limit': 'limit'
+        'key': 'key',
+        'value': 'value'
     }
 
-    def __init__(self, offset=None, limit=None):
-        """ListInstanceCofigsV2Request - a model defined in huaweicloud sdk"""
+    def __init__(self, key=None, value=None):
+        """AccessConfigTag - a model defined in huaweicloud sdk"""
         
         
 
-        self._offset = None
-        self._limit = None
+        self._key = None
+        self._value = None
         self.discriminator = None
 
-        if offset is not None:
-            self.offset = offset
-        if limit is not None:
-            self.limit = limit
+        if key is not None:
+            self.key = key
+        if value is not None:
+            self.value = value
 
     @property
-    def offset(self):
-        """Gets the offset of this ListInstanceCofigsV2Request.
+    def key(self):
+        """Gets the key of this AccessConfigTag.
 
-        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
-        :return: The offset of this ListInstanceCofigsV2Request.
-        :rtype: int
+        :return: The key of this AccessConfigTag.
+        :rtype: str
         """
-        return self._offset
+        return self._key
 
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this ListInstanceCofigsV2Request.
+    @key.setter
+    def key(self, key):
+        """Sets the key of this AccessConfigTag.
 
-        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
-        :param offset: The offset of this ListInstanceCofigsV2Request.
-        :type: int
+        :param key: The key of this AccessConfigTag.
+        :type: str
         """
-        self._offset = offset
+        self._key = key
 
     @property
-    def limit(self):
-        """Gets the limit of this ListInstanceCofigsV2Request.
+    def value(self):
+        """Gets the value of this AccessConfigTag.
 
-        每页显示的条目数量
 
-        :return: The limit of this ListInstanceCofigsV2Request.
-        :rtype: int
+        :return: The value of this AccessConfigTag.
+        :rtype: str
         """
-        return self._limit
+        return self._value
 
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListInstanceCofigsV2Request.
+    @value.setter
+    def value(self, value):
+        """Sets the value of this AccessConfigTag.
 
-        每页显示的条目数量
 
-        :param limit: The limit of this ListInstanceCofigsV2Request.
-        :type: int
+        :param value: The value of this AccessConfigTag.
+        :type: str
         """
-        self._limit = limit
+        self._value = value
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -131,7 +127,7 @@ class ListInstanceCofigsV2Request:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListInstanceCofigsV2Request):
+        if not isinstance(other, AccessConfigTag):
             return False
 
         return self.__dict__ == other.__dict__

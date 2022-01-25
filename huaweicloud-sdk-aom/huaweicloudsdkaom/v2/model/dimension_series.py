@@ -49,7 +49,7 @@ class DimensionSeries:
     def name(self):
         """Gets the name of this DimensionSeries.
 
-        名称。
+        维度名称。
 
         :return: The name of this DimensionSeries.
         :rtype: str
@@ -60,7 +60,7 @@ class DimensionSeries:
     def name(self, name):
         """Sets the name of this DimensionSeries.
 
-        名称。
+        维度名称。
 
         :param name: The name of this DimensionSeries.
         :type: str
@@ -71,7 +71,7 @@ class DimensionSeries:
     def value(self):
         """Gets the value of this DimensionSeries.
 
-        具体数值。
+        维度取值。
 
         :return: The value of this DimensionSeries.
         :rtype: str
@@ -82,7 +82,7 @@ class DimensionSeries:
     def value(self, value):
         """Sets the value of this DimensionSeries.
 
-        具体数值。
+        维度取值。
 
         :param value: The value of this DimensionSeries.
         :type: str

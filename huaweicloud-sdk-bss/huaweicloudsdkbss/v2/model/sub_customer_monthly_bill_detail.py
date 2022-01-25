@@ -405,7 +405,7 @@ class SubCustomerMonthlyBillDetail:
     def bill_detail_type(self):
         """Gets the bill_detail_type of this SubCustomerMonthlyBillDetail.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更8：消费-自动续订5：消费-使用12：消费-按时计费4：退款-退订9：调账-补偿13：消费-退订手续费增收14：消费-服务支持计划月末补扣16：调账-扣费100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更8：消费-自动续订5：消费-使用12：消费-按时计费4：退款-退订9：调账-补偿13：消费-退订手续费增收14：消费-服务支持计划月末补扣16：调账-扣费20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
 
         :return: The bill_detail_type of this SubCustomerMonthlyBillDetail.
         :rtype: int
@@ -416,7 +416,7 @@ class SubCustomerMonthlyBillDetail:
     def bill_detail_type(self, bill_detail_type):
         """Sets the bill_detail_type of this SubCustomerMonthlyBillDetail.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更8：消费-自动续订5：消费-使用12：消费-按时计费4：退款-退订9：调账-补偿13：消费-退订手续费增收14：消费-服务支持计划月末补扣16：调账-扣费100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更8：消费-自动续订5：消费-使用12：消费-按时计费4：退款-退订9：调账-补偿13：消费-退订手续费增收14：消费-服务支持计划月末补扣16：调账-扣费20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
 
         :param bill_detail_type: The bill_detail_type of this SubCustomerMonthlyBillDetail.
         :type: int

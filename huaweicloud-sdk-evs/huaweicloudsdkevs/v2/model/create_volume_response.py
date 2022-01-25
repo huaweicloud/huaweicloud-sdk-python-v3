@@ -98,7 +98,7 @@ class CreateVolumeResponse(SdkResponse):
     def volume_ids(self):
         """Gets the volume_ids of this CreateVolumeResponse.
 
-        待创建的磁盘ID列表。
+        待创建的云硬盘ID列表，在请求体的metadata字段中指定create_for_volume_id为true时才返回该参数。
 
         :return: The volume_ids of this CreateVolumeResponse.
         :rtype: list[str]
@@ -109,7 +109,7 @@ class CreateVolumeResponse(SdkResponse):
     def volume_ids(self, volume_ids):
         """Sets the volume_ids of this CreateVolumeResponse.
 
-        待创建的磁盘ID列表。
+        待创建的云硬盘ID列表，在请求体的metadata字段中指定create_for_volume_id为true时才返回该参数。
 
         :param volume_ids: The volume_ids of this CreateVolumeResponse.
         :type: list[str]

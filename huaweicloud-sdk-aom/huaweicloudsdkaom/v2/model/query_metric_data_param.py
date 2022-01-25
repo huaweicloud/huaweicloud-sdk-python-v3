@@ -55,7 +55,7 @@ class QueryMetricDataParam:
     def metrics(self):
         """Gets the metrics of this QueryMetricDataParam.
 
-        取值范围 JSON数组大小不超过20 指标对象列表。
+        指标对象列表。 取值范围 JSON数组大小不超过20
 
         :return: The metrics of this QueryMetricDataParam.
         :rtype: list[MetricQueryMeritcParam]
@@ -66,7 +66,7 @@ class QueryMetricDataParam:
     def metrics(self, metrics):
         """Sets the metrics of this QueryMetricDataParam.
 
-        取值范围 JSON数组大小不超过20 指标对象列表。
+        指标对象列表。 取值范围 JSON数组大小不超过20
 
         :param metrics: The metrics of this QueryMetricDataParam.
         :type: list[MetricQueryMeritcParam]

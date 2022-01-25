@@ -23,42 +23,46 @@ class ListAclStrategiesV2Request:
 
     openapi_types = {
         'instance_id': 'str',
+        'offset': 'int',
+        'limit': 'int',
         'id': 'str',
         'name': 'str',
         'acl_type': 'str',
         'entity_type': 'str',
-        'offset': 'int',
-        'limit': 'int',
         'precise_search': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
+        'offset': 'offset',
+        'limit': 'limit',
         'id': 'id',
         'name': 'name',
         'acl_type': 'acl_type',
         'entity_type': 'entity_type',
-        'offset': 'offset',
-        'limit': 'limit',
         'precise_search': 'precise_search'
     }
 
-    def __init__(self, instance_id=None, id=None, name=None, acl_type=None, entity_type=None, offset=None, limit=None, precise_search=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, acl_type=None, entity_type=None, precise_search=None):
         """ListAclStrategiesV2Request - a model defined in huaweicloud sdk"""
         
         
 
         self._instance_id = None
+        self._offset = None
+        self._limit = None
         self._id = None
         self._name = None
         self._acl_type = None
         self._entity_type = None
-        self._offset = None
-        self._limit = None
         self._precise_search = None
         self.discriminator = None
 
         self.instance_id = instance_id
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
         if id is not None:
             self.id = id
         if name is not None:
@@ -67,10 +71,6 @@ class ListAclStrategiesV2Request:
             self.acl_type = acl_type
         if entity_type is not None:
             self.entity_type = entity_type
-        if offset is not None:
-            self.offset = offset
-        if limit is not None:
-            self.limit = limit
         if precise_search is not None:
             self.precise_search = precise_search
 
@@ -95,6 +95,50 @@ class ListAclStrategiesV2Request:
         :type: str
         """
         self._instance_id = instance_id
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListAclStrategiesV2Request.
+
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+
+        :return: The offset of this ListAclStrategiesV2Request.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListAclStrategiesV2Request.
+
+        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+
+        :param offset: The offset of this ListAclStrategiesV2Request.
+        :type: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListAclStrategiesV2Request.
+
+        每页显示的条目数量
+
+        :return: The limit of this ListAclStrategiesV2Request.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListAclStrategiesV2Request.
+
+        每页显示的条目数量
+
+        :param limit: The limit of this ListAclStrategiesV2Request.
+        :type: int
+        """
+        self._limit = limit
 
     @property
     def id(self):
@@ -183,50 +227,6 @@ class ListAclStrategiesV2Request:
         :type: str
         """
         self._entity_type = entity_type
-
-    @property
-    def offset(self):
-        """Gets the offset of this ListAclStrategiesV2Request.
-
-        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
-
-        :return: The offset of this ListAclStrategiesV2Request.
-        :rtype: int
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this ListAclStrategiesV2Request.
-
-        偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
-
-        :param offset: The offset of this ListAclStrategiesV2Request.
-        :type: int
-        """
-        self._offset = offset
-
-    @property
-    def limit(self):
-        """Gets the limit of this ListAclStrategiesV2Request.
-
-        每页显示的条目数量
-
-        :return: The limit of this ListAclStrategiesV2Request.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListAclStrategiesV2Request.
-
-        每页显示的条目数量
-
-        :param limit: The limit of this ListAclStrategiesV2Request.
-        :type: int
-        """
-        self._limit = limit
 
     @property
     def precise_search(self):

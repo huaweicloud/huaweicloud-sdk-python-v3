@@ -28,7 +28,8 @@ class Ruleset:
         'is_default': 'str',
         'rule_ids': 'str',
         'uncheck_ids': 'str',
-        'template_id': 'str'
+        'template_id': 'str',
+        'custom_attributes': 'list[CustomAttributes]'
     }
 
     attribute_map = {
@@ -38,10 +39,11 @@ class Ruleset:
         'is_default': 'is_default',
         'rule_ids': 'rule_ids',
         'uncheck_ids': 'uncheck_ids',
-        'template_id': 'template_id'
+        'template_id': 'template_id',
+        'custom_attributes': 'custom_attributes'
     }
 
-    def __init__(self, project_id=None, template_name=None, language=None, is_default=None, rule_ids=None, uncheck_ids=None, template_id=None):
+    def __init__(self, project_id=None, template_name=None, language=None, is_default=None, rule_ids=None, uncheck_ids=None, template_id=None, custom_attributes=None):
         """Ruleset - a model defined in huaweicloud sdk"""
         
         
@@ -53,6 +55,7 @@ class Ruleset:
         self._rule_ids = None
         self._uncheck_ids = None
         self._template_id = None
+        self._custom_attributes = None
         self.discriminator = None
 
         self.project_id = project_id
@@ -64,6 +67,8 @@ class Ruleset:
             self.uncheck_ids = uncheck_ids
         if template_id is not None:
             self.template_id = template_id
+        if custom_attributes is not None:
+            self.custom_attributes = custom_attributes
 
     @property
     def project_id(self):
@@ -218,6 +223,28 @@ class Ruleset:
         :type: str
         """
         self._template_id = template_id
+
+    @property
+    def custom_attributes(self):
+        """Gets the custom_attributes of this Ruleset.
+
+        自定义规则参数项，支持修改规则阈值
+
+        :return: The custom_attributes of this Ruleset.
+        :rtype: list[CustomAttributes]
+        """
+        return self._custom_attributes
+
+    @custom_attributes.setter
+    def custom_attributes(self, custom_attributes):
+        """Sets the custom_attributes of this Ruleset.
+
+        自定义规则参数项，支持修改规则阈值
+
+        :param custom_attributes: The custom_attributes of this Ruleset.
+        :type: list[CustomAttributes]
+        """
+        self._custom_attributes = custom_attributes
 
     def to_dict(self):
         """Returns the model properties as a dict"""

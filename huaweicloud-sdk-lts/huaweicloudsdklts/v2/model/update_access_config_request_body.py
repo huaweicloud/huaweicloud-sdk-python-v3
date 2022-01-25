@@ -24,16 +24,18 @@ class UpdateAccessConfigRequestBody:
     openapi_types = {
         'access_config_id': 'str',
         'access_config_detail': 'AccessConfigDeatil',
-        'host_group_info': 'AccessConfigHostGroupIdList'
+        'host_group_info': 'AccessConfigHostGroupIdList',
+        'access_config_tag': 'list[AccessConfigTag]'
     }
 
     attribute_map = {
         'access_config_id': 'access_config_id',
         'access_config_detail': 'access_config_detail',
-        'host_group_info': 'host_group_info'
+        'host_group_info': 'host_group_info',
+        'access_config_tag': 'access_config_tag'
     }
 
-    def __init__(self, access_config_id=None, access_config_detail=None, host_group_info=None):
+    def __init__(self, access_config_id=None, access_config_detail=None, host_group_info=None, access_config_tag=None):
         """UpdateAccessConfigRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -41,6 +43,7 @@ class UpdateAccessConfigRequestBody:
         self._access_config_id = None
         self._access_config_detail = None
         self._host_group_info = None
+        self._access_config_tag = None
         self.discriminator = None
 
         self.access_config_id = access_config_id
@@ -48,6 +51,8 @@ class UpdateAccessConfigRequestBody:
             self.access_config_detail = access_config_detail
         if host_group_info is not None:
             self.host_group_info = host_group_info
+        if access_config_tag is not None:
+            self.access_config_tag = access_config_tag
 
     @property
     def access_config_id(self):
@@ -110,6 +115,26 @@ class UpdateAccessConfigRequestBody:
         :type: AccessConfigHostGroupIdList
         """
         self._host_group_info = host_group_info
+
+    @property
+    def access_config_tag(self):
+        """Gets the access_config_tag of this UpdateAccessConfigRequestBody.
+
+
+        :return: The access_config_tag of this UpdateAccessConfigRequestBody.
+        :rtype: list[AccessConfigTag]
+        """
+        return self._access_config_tag
+
+    @access_config_tag.setter
+    def access_config_tag(self, access_config_tag):
+        """Sets the access_config_tag of this UpdateAccessConfigRequestBody.
+
+
+        :param access_config_tag: The access_config_tag of this UpdateAccessConfigRequestBody.
+        :type: list[AccessConfigTag]
+        """
+        self._access_config_tag = access_config_tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

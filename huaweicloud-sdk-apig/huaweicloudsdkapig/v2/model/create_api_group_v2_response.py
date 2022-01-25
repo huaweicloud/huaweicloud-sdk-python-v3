@@ -249,7 +249,7 @@ class CreateApiGroupV2Response(SdkResponse):
     def on_sell_status(self):
         """Gets the on_sell_status of this CreateApiGroupV2Response.
 
-        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  ROMAConnect暂未对接云市场，此字段默认返回2
+        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中
 
         :return: The on_sell_status of this CreateApiGroupV2Response.
         :rtype: int
@@ -260,7 +260,7 @@ class CreateApiGroupV2Response(SdkResponse):
     def on_sell_status(self, on_sell_status):
         """Sets the on_sell_status of this CreateApiGroupV2Response.
 
-        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中  ROMAConnect暂未对接云市场，此字段默认返回2
+        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中
 
         :param on_sell_status: The on_sell_status of this CreateApiGroupV2Response.
         :type: int
@@ -425,7 +425,7 @@ class CreateApiGroupV2Response(SdkResponse):
     def version(self):
         """Gets the version of this CreateApiGroupV2Response.
 
-        分组版本  - V1：全局分组 - V2：应用级分组
+        分组版本  - V1：全局分组 - V2：应用级分组  暂不支持，默认为V1
 
         :return: The version of this CreateApiGroupV2Response.
         :rtype: str
@@ -436,7 +436,7 @@ class CreateApiGroupV2Response(SdkResponse):
     def version(self, version):
         """Sets the version of this CreateApiGroupV2Response.
 
-        分组版本  - V1：全局分组 - V2：应用级分组
+        分组版本  - V1：全局分组 - V2：应用级分组  暂不支持，默认为V1
 
         :param version: The version of this CreateApiGroupV2Response.
         :type: str
@@ -447,7 +447,7 @@ class CreateApiGroupV2Response(SdkResponse):
     def roma_app_id(self):
         """Gets the roma_app_id of this CreateApiGroupV2Response.
 
-        分组归属的集成应用编号。  分组版本V2时必填。
+        分组归属的集成应用编号。  分组版本V2时必填。  暂不支持
 
         :return: The roma_app_id of this CreateApiGroupV2Response.
         :rtype: str
@@ -458,7 +458,7 @@ class CreateApiGroupV2Response(SdkResponse):
     def roma_app_id(self, roma_app_id):
         """Sets the roma_app_id of this CreateApiGroupV2Response.
 
-        分组归属的集成应用编号。  分组版本V2时必填。
+        分组归属的集成应用编号。  分组版本V2时必填。  暂不支持
 
         :param roma_app_id: The roma_app_id of this CreateApiGroupV2Response.
         :type: str
@@ -469,7 +469,7 @@ class CreateApiGroupV2Response(SdkResponse):
     def roma_app_name(self):
         """Gets the roma_app_name of this CreateApiGroupV2Response.
 
-        分组归属的集成应用名称
+        分组归属的集成应用名称  暂不支持
 
         :return: The roma_app_name of this CreateApiGroupV2Response.
         :rtype: str
@@ -480,7 +480,7 @@ class CreateApiGroupV2Response(SdkResponse):
     def roma_app_name(self, roma_app_name):
         """Sets the roma_app_name of this CreateApiGroupV2Response.
 
-        分组归属的集成应用名称
+        分组归属的集成应用名称  暂不支持
 
         :param roma_app_name: The roma_app_name of this CreateApiGroupV2Response.
         :type: str

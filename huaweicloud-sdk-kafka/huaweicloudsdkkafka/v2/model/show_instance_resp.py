@@ -82,7 +82,8 @@ class ShowInstanceResp:
         'disk_encrypted': 'bool',
         'kafka_private_connect_address': 'str',
         'ces_version': 'str',
-        'tags': 'list[TagEntity]'
+        'tags': 'list[TagEntity]',
+        'dr_enable': 'bool'
     }
 
     attribute_map = {
@@ -146,10 +147,11 @@ class ShowInstanceResp:
         'disk_encrypted': 'disk_encrypted',
         'kafka_private_connect_address': 'kafka_private_connect_address',
         'ces_version': 'ces_version',
-        'tags': 'tags'
+        'tags': 'tags',
+        'dr_enable': 'dr_enable'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, pod_connect_address=None, disk_encrypted=None, kafka_private_connect_address=None, ces_version=None, tags=None):
+    def __init__(self, name=None, engine=None, engine_version=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, pod_connect_address=None, disk_encrypted=None, kafka_private_connect_address=None, ces_version=None, tags=None, dr_enable=None):
         """ShowInstanceResp - a model defined in huaweicloud sdk"""
         
         
@@ -215,6 +217,7 @@ class ShowInstanceResp:
         self._kafka_private_connect_address = None
         self._ces_version = None
         self._tags = None
+        self._dr_enable = None
         self.discriminator = None
 
         if name is not None:
@@ -339,6 +342,8 @@ class ShowInstanceResp:
             self.ces_version = ces_version
         if tags is not None:
             self.tags = tags
+        if dr_enable is not None:
+            self.dr_enable = dr_enable
 
     @property
     def name(self):
@@ -1681,6 +1686,28 @@ class ShowInstanceResp:
         :type: list[TagEntity]
         """
         self._tags = tags
+
+    @property
+    def dr_enable(self):
+        """Gets the dr_enable of this ShowInstanceResp.
+
+        是否为容灾实例。
+
+        :return: The dr_enable of this ShowInstanceResp.
+        :rtype: bool
+        """
+        return self._dr_enable
+
+    @dr_enable.setter
+    def dr_enable(self, dr_enable):
+        """Sets the dr_enable of this ShowInstanceResp.
+
+        是否为容灾实例。
+
+        :param dr_enable: The dr_enable of this ShowInstanceResp.
+        :type: bool
+        """
+        self._dr_enable = dr_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

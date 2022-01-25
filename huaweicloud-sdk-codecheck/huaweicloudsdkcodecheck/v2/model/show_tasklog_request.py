@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListInstanceCofigsV2Response(SdkResponse):
+class ShowTasklogRequest:
 
 
     """
@@ -22,97 +22,97 @@ class ListInstanceCofigsV2Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'size': 'int',
-        'total': 'int',
-        'configs': 'list[InstanceConfig]'
+        'project_id': 'str',
+        'task_id': 'str',
+        'execute_id': 'str'
     }
 
     attribute_map = {
-        'size': 'size',
-        'total': 'total',
-        'configs': 'configs'
+        'project_id': 'project_id',
+        'task_id': 'task_id',
+        'execute_id': 'execute_id'
     }
 
-    def __init__(self, size=None, total=None, configs=None):
-        """ListInstanceCofigsV2Response - a model defined in huaweicloud sdk"""
+    def __init__(self, project_id=None, task_id=None, execute_id=None):
+        """ShowTasklogRequest - a model defined in huaweicloud sdk"""
         
-        super(ListInstanceCofigsV2Response, self).__init__()
+        
 
-        self._size = None
-        self._total = None
-        self._configs = None
+        self._project_id = None
+        self._task_id = None
+        self._execute_id = None
         self.discriminator = None
 
-        self.size = size
-        self.total = total
-        if configs is not None:
-            self.configs = configs
+        self.project_id = project_id
+        self.task_id = task_id
+        if execute_id is not None:
+            self.execute_id = execute_id
 
     @property
-    def size(self):
-        """Gets the size of this ListInstanceCofigsV2Response.
+    def project_id(self):
+        """Gets the project_id of this ShowTasklogRequest.
 
-        本次返回的列表长度
+        项目ID
 
-        :return: The size of this ListInstanceCofigsV2Response.
-        :rtype: int
+        :return: The project_id of this ShowTasklogRequest.
+        :rtype: str
         """
-        return self._size
+        return self._project_id
 
-    @size.setter
-    def size(self, size):
-        """Sets the size of this ListInstanceCofigsV2Response.
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this ShowTasklogRequest.
 
-        本次返回的列表长度
+        项目ID
 
-        :param size: The size of this ListInstanceCofigsV2Response.
-        :type: int
+        :param project_id: The project_id of this ShowTasklogRequest.
+        :type: str
         """
-        self._size = size
+        self._project_id = project_id
 
     @property
-    def total(self):
-        """Gets the total of this ListInstanceCofigsV2Response.
+    def task_id(self):
+        """Gets the task_id of this ShowTasklogRequest.
 
-        满足条件的记录数
+        任务ID
 
-        :return: The total of this ListInstanceCofigsV2Response.
-        :rtype: int
+        :return: The task_id of this ShowTasklogRequest.
+        :rtype: str
         """
-        return self._total
+        return self._task_id
 
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ListInstanceCofigsV2Response.
+    @task_id.setter
+    def task_id(self, task_id):
+        """Sets the task_id of this ShowTasklogRequest.
 
-        满足条件的记录数
+        任务ID
 
-        :param total: The total of this ListInstanceCofigsV2Response.
-        :type: int
+        :param task_id: The task_id of this ShowTasklogRequest.
+        :type: str
         """
-        self._total = total
+        self._task_id = task_id
 
     @property
-    def configs(self):
-        """Gets the configs of this ListInstanceCofigsV2Response.
+    def execute_id(self):
+        """Gets the execute_id of this ShowTasklogRequest.
 
-        配额列表
+        任务单次的执行ID
 
-        :return: The configs of this ListInstanceCofigsV2Response.
-        :rtype: list[InstanceConfig]
+        :return: The execute_id of this ShowTasklogRequest.
+        :rtype: str
         """
-        return self._configs
+        return self._execute_id
 
-    @configs.setter
-    def configs(self, configs):
-        """Sets the configs of this ListInstanceCofigsV2Response.
+    @execute_id.setter
+    def execute_id(self, execute_id):
+        """Sets the execute_id of this ShowTasklogRequest.
 
-        配额列表
+        任务单次的执行ID
 
-        :param configs: The configs of this ListInstanceCofigsV2Response.
-        :type: list[InstanceConfig]
+        :param execute_id: The execute_id of this ShowTasklogRequest.
+        :type: str
         """
-        self._configs = configs
+        self._execute_id = execute_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -156,7 +156,7 @@ class ListInstanceCofigsV2Response(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListInstanceCofigsV2Response):
+        if not isinstance(other, ShowTasklogRequest):
             return False
 
         return self.__dict__ == other.__dict__

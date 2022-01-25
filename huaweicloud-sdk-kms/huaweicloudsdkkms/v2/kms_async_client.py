@@ -2026,7 +2026,7 @@ class KmsAsyncClient(Client):
         :return: ShowPublicKeyResponse
         """
 
-        all_params = ['get_public_key_request_body']
+        all_params = ['show_public_key_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2463,7 +2463,7 @@ class KmsAsyncClient(Client):
         :return: ValidateSignatureResponse
         """
 
-        all_params = ['verify_request_body']
+        all_params = ['validate_signature_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

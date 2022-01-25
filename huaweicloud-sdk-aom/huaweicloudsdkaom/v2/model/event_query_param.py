@@ -106,7 +106,7 @@ class EventQueryParam:
     def search(self):
         """Gets the search of this EventQueryParam.
 
-        模糊查询匹配字段，可以为空。如果值不为空，可以模糊匹配metadata字段必选字段。
+        模糊查询匹配字段，可以为空。如果值不为空，可以模糊匹配metadata字段中的必选字段的值。
 
         :return: The search of this EventQueryParam.
         :rtype: str
@@ -117,7 +117,7 @@ class EventQueryParam:
     def search(self, search):
         """Sets the search of this EventQueryParam.
 
-        模糊查询匹配字段，可以为空。如果值不为空，可以模糊匹配metadata字段必选字段。
+        模糊查询匹配字段，可以为空。如果值不为空，可以模糊匹配metadata字段中的必选字段的值。
 
         :param search: The search of this EventQueryParam.
         :type: str

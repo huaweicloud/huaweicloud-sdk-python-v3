@@ -49,9 +49,9 @@ class CloudtestAsyncClient(Client):
         return ClientBuilder(clazz)
 
     def batch_delete_test_case_async(self, request):
-        """批量删除测试用例
+        """批量删除自定义测试服务类型用例
 
-        批量删除测试用例
+        批量删除自定义测试服务类型用例
 
         :param BatchDeleteTestCaseRequest request
         :return: BatchDeleteTestCaseResponse
@@ -59,9 +59,9 @@ class CloudtestAsyncClient(Client):
         return self.batch_delete_test_case_with_http_info(request)
 
     def batch_delete_test_case_with_http_info(self, request):
-        """批量删除测试用例
+        """批量删除自定义测试服务类型用例
 
-        批量删除测试用例
+        批量删除自定义测试服务类型用例
 
         :param BatchDeleteTestCaseRequest request
         :return: BatchDeleteTestCaseResponse
@@ -181,7 +181,7 @@ class CloudtestAsyncClient(Client):
     def create_service_async(self, request):
         """新测试类型服务注册到云测
 
-        新测试类型服务注册到云测
+        通过接口CreateService注册成为云测的自定义服务。 注册完成后云测界面将会出现此自定义测试类型。
 
         :param CreateServiceRequest request
         :return: CreateServiceResponse
@@ -191,7 +191,7 @@ class CloudtestAsyncClient(Client):
     def create_service_with_http_info(self, request):
         """新测试类型服务注册到云测
 
-        新测试类型服务注册到云测
+        通过接口CreateService注册成为云测的自定义服务。 注册完成后云测界面将会出现此自定义测试类型。
 
         :param CreateServiceRequest request
         :return: CreateServiceResponse
@@ -242,9 +242,9 @@ class CloudtestAsyncClient(Client):
 
 
     def create_test_case_async(self, request):
-        """创建测试用例
+        """创建自定义测试服务类型用例
 
-        创建测试用例
+        创建自定义测试服务类型用例
 
         :param CreateTestCaseRequest request
         :return: CreateTestCaseResponse
@@ -252,9 +252,9 @@ class CloudtestAsyncClient(Client):
         return self.create_test_case_with_http_info(request)
 
     def create_test_case_with_http_info(self, request):
-        """创建测试用例
+        """创建自定义测试服务类型用例
 
-        创建测试用例
+        创建自定义测试服务类型用例
 
         :param CreateTestCaseRequest request
         :return: CreateTestCaseResponse
@@ -908,9 +908,9 @@ class CloudtestAsyncClient(Client):
 
 
     def show_test_case_detail_v2_async(self, request):
-        """通过用例编号或用例ID获取测试用例详情
+        """通过用例编号获取测试用例详情
 
-        通过用例编号或用例ID获取测试用例详情
+        通过用例编号获取测试用例详情
 
         :param ShowTestCaseDetailV2Request request
         :return: ShowTestCaseDetailV2Response
@@ -918,9 +918,9 @@ class CloudtestAsyncClient(Client):
         return self.show_test_case_detail_v2_with_http_info(request)
 
     def show_test_case_detail_v2_with_http_info(self, request):
-        """通过用例编号或用例ID获取测试用例详情
+        """通过用例编号获取测试用例详情
 
-        通过用例编号或用例ID获取测试用例详情
+        通过用例编号获取测试用例详情
 
         :param ShowTestCaseDetailV2Request request
         :return: ShowTestCaseDetailV2Response
@@ -1038,9 +1038,9 @@ class CloudtestAsyncClient(Client):
 
 
     def update_test_case_async(self, request):
-        """更新测试用例接口
+        """更新自定义测试服务类型用例
 
-        更新测试用例接口
+        更新自定义测试服务类型用例
 
         :param UpdateTestCaseRequest request
         :return: UpdateTestCaseResponse
@@ -1048,9 +1048,9 @@ class CloudtestAsyncClient(Client):
         return self.update_test_case_with_http_info(request)
 
     def update_test_case_with_http_info(self, request):
-        """更新测试用例接口
+        """更新自定义测试服务类型用例
 
-        更新测试用例接口
+        更新自定义测试服务类型用例
 
         :param UpdateTestCaseRequest request
         :return: UpdateTestCaseResponse

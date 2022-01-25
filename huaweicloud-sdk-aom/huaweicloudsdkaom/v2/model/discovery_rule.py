@@ -73,7 +73,7 @@ class DiscoveryRule:
     def check_mode(self):
         """Gets the check_mode of this DiscoveryRule.
 
-        contain、equals 匹配条件。
+        匹配条件。 contain、equals
 
         :return: The check_mode of this DiscoveryRule.
         :rtype: str
@@ -84,7 +84,7 @@ class DiscoveryRule:
     def check_mode(self, check_mode):
         """Sets the check_mode of this DiscoveryRule.
 
-        contain、equals 匹配条件。
+        匹配条件。 contain、equals
 
         :param check_mode: The check_mode of this DiscoveryRule.
         :type: str
@@ -95,7 +95,7 @@ class DiscoveryRule:
     def check_type(self):
         """Gets the check_type of this DiscoveryRule.
 
-        cmdLine、env、scope 匹配类型。
+        匹配类型。 cmdLine、env、scope
 
         :return: The check_type of this DiscoveryRule.
         :rtype: str
@@ -106,7 +106,7 @@ class DiscoveryRule:
     def check_type(self, check_type):
         """Sets the check_type of this DiscoveryRule.
 
-        cmdLine、env、scope 匹配类型。
+        匹配类型。 cmdLine、env、scope
 
         :param check_type: The check_type of this DiscoveryRule.
         :type: str

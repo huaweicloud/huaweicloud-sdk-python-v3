@@ -23,27 +23,32 @@ class DecryptDataResponse(SdkResponse):
 
     openapi_types = {
         'key_id': 'str',
-        'plain_text': 'str'
+        'plain_text': 'str',
+        'plain_text_base64': 'str'
     }
 
     attribute_map = {
         'key_id': 'key_id',
-        'plain_text': 'plain_text'
+        'plain_text': 'plain_text',
+        'plain_text_base64': 'plain_text_base64'
     }
 
-    def __init__(self, key_id=None, plain_text=None):
+    def __init__(self, key_id=None, plain_text=None, plain_text_base64=None):
         """DecryptDataResponse - a model defined in huaweicloud sdk"""
         
         super(DecryptDataResponse, self).__init__()
 
         self._key_id = None
         self._plain_text = None
+        self._plain_text_base64 = None
         self.discriminator = None
 
         if key_id is not None:
             self.key_id = key_id
         if plain_text is not None:
             self.plain_text = plain_text
+        if plain_text_base64 is not None:
+            self.plain_text_base64 = plain_text_base64
 
     @property
     def key_id(self):
@@ -88,6 +93,28 @@ class DecryptDataResponse(SdkResponse):
         :type: str
         """
         self._plain_text = plain_text
+
+    @property
+    def plain_text_base64(self):
+        """Gets the plain_text_base64 of this DecryptDataResponse.
+
+        明文的Base64值，在非对称加密场景下，若加密的明文中含有不可见字符，则解密结果以该值为准。
+
+        :return: The plain_text_base64 of this DecryptDataResponse.
+        :rtype: str
+        """
+        return self._plain_text_base64
+
+    @plain_text_base64.setter
+    def plain_text_base64(self, plain_text_base64):
+        """Sets the plain_text_base64 of this DecryptDataResponse.
+
+        明文的Base64值，在非对称加密场景下，若加密的明文中含有不可见字符，则解密结果以该值为准。
+
+        :param plain_text_base64: The plain_text_base64 of this DecryptDataResponse.
+        :type: str
+        """
+        self._plain_text_base64 = plain_text_base64
 
     def to_dict(self):
         """Returns the model properties as a dict"""

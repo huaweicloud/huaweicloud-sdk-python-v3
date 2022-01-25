@@ -309,7 +309,7 @@ class KafkaAsyncClient(Client):
     def create_connector_async(self, request):
         """创建实例的转储节点
 
-        创建实例的转储节点。  [**当前通过调用API，只支持按需实例创建转储节点。**](tag:hws,ctc)
+        创建实例的转储节点。  **当前通过调用API，只支持按需实例创建转储节点。**
 
         :param CreateConnectorRequest request
         :return: CreateConnectorResponse
@@ -319,7 +319,7 @@ class KafkaAsyncClient(Client):
     def create_connector_with_http_info(self, request):
         """创建实例的转储节点
 
-        创建实例的转储节点。  [**当前通过调用API，只支持按需实例创建转储节点。**](tag:hws,ctc)
+        创建实例的转储节点。  **当前通过调用API，只支持按需实例创建转储节点。**
 
         :param CreateConnectorRequest request
         :return: CreateConnectorResponse
@@ -1021,6 +1021,71 @@ class KafkaAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_engine_products_async(self, request):
+        """查询产品规格列表
+
+        查询产品规格列表。
+
+        :param ListEngineProductsRequest request
+        :return: ListEngineProductsResponse
+        """
+        return self.list_engine_products_with_http_info(request)
+
+    def list_engine_products_with_http_info(self, request):
+        """查询产品规格列表
+
+        查询产品规格列表。
+
+        :param ListEngineProductsRequest request
+        :return: ListEngineProductsResponse
+        """
+
+        all_params = ['engine', 'product_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+
+        query_params = []
+        if 'product_id' in local_var_params:
+            query_params.append(('product_id', local_var_params['product_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{engine}/products',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEngineProductsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_instance_topics_async(self, request):
         """Kafka实例查询Topic
 
@@ -1552,7 +1617,7 @@ class KafkaAsyncClient(Client):
     def resize_instance_async(self, request):
         """实例规格变更
 
-        实例规格变更。  [**当前通过调用API，只支持按需实例进行实例规格变更。**](tag:hws,ctc)
+        实例规格变更。  **当前通过调用API，只支持按需实例进行实例规格变更。**
 
         :param ResizeInstanceRequest request
         :return: ResizeInstanceResponse
@@ -1562,7 +1627,7 @@ class KafkaAsyncClient(Client):
     def resize_instance_with_http_info(self, request):
         """实例规格变更
 
-        实例规格变更。  [**当前通过调用API，只支持按需实例进行实例规格变更。**](tag:hws,ctc)
+        实例规格变更。  **当前通过调用API，只支持按需实例进行实例规格变更。**
 
         :param ResizeInstanceRequest request
         :return: ResizeInstanceResponse
@@ -2129,7 +2194,7 @@ class KafkaAsyncClient(Client):
     def show_instance_messages_async(self, request):
         """查询消息
 
-        查询消息的偏移量和消息内容。 先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。 **注意：调用接口时message_offset和partition查询参数二选一。**
+        查询消息的偏移量和消息内容。 先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
 
         :param ShowInstanceMessagesRequest request
         :return: ShowInstanceMessagesResponse
@@ -2139,7 +2204,7 @@ class KafkaAsyncClient(Client):
     def show_instance_messages_with_http_info(self, request):
         """查询消息
 
-        查询消息的偏移量和消息内容。 先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。 **注意：调用接口时message_offset和partition查询参数二选一。**
+        查询消息的偏移量和消息内容。 先根据时间戳查询消息的偏移量，再根据偏移量查询消息内容。
 
         :param ShowInstanceMessagesRequest request
         :return: ShowInstanceMessagesResponse

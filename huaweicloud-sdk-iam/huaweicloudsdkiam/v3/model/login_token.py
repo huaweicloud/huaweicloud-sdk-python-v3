@@ -28,6 +28,7 @@ class LoginToken:
         'user_id': 'str',
         'user_name': 'str',
         'session_id': 'str',
+        'session_user_id': 'str',
         'session_name': 'str',
         'assumed_by': 'LoginTokenAssumedBy'
     }
@@ -39,11 +40,12 @@ class LoginToken:
         'user_id': 'user_id',
         'user_name': 'user_name',
         'session_id': 'session_id',
+        'session_user_id': 'session_user_id',
         'session_name': 'session_name',
         'assumed_by': 'assumed_by'
     }
 
-    def __init__(self, domain_id=None, expires_at=None, method=None, user_id=None, user_name=None, session_id=None, session_name=None, assumed_by=None):
+    def __init__(self, domain_id=None, expires_at=None, method=None, user_id=None, user_name=None, session_id=None, session_user_id=None, session_name=None, assumed_by=None):
         """LoginToken - a model defined in huaweicloud sdk"""
         
         
@@ -54,6 +56,7 @@ class LoginToken:
         self._user_id = None
         self._user_name = None
         self._session_id = None
+        self._session_user_id = None
         self._session_name = None
         self._assumed_by = None
         self.discriminator = None
@@ -64,6 +67,8 @@ class LoginToken:
         self.user_id = user_id
         self.user_name = user_name
         self.session_id = session_id
+        if session_user_id is not None:
+            self.session_user_id = session_user_id
         if session_name is not None:
             self.session_name = session_name
         if assumed_by is not None:
@@ -200,6 +205,28 @@ class LoginToken:
         :type: str
         """
         self._session_id = session_id
+
+    @property
+    def session_user_id(self):
+        """Gets the session_user_id of this LoginToken.
+
+        自定义代理用户ID。
+
+        :return: The session_user_id of this LoginToken.
+        :rtype: str
+        """
+        return self._session_user_id
+
+    @session_user_id.setter
+    def session_user_id(self, session_user_id):
+        """Sets the session_user_id of this LoginToken.
+
+        自定义代理用户ID。
+
+        :param session_user_id: The session_user_id of this LoginToken.
+        :type: str
+        """
+        self._session_user_id = session_user_id
 
     @property
     def session_name(self):

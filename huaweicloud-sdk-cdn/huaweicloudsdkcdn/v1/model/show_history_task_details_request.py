@@ -205,7 +205,7 @@ class ShowHistoryTaskDetailsRequest:
     def create_time(self):
         """Gets the create_time of this ShowHistoryTaskDetailsRequest.
 
-        刷新预热任务的创建时间。不传参默认为查询3天内的任务。最长可查询15天内数据。
+        刷新预热任务的创建时间。不传参默认为查询7天内的任务。最长可查询15天内数据。
 
         :return: The create_time of this ShowHistoryTaskDetailsRequest.
         :rtype: int
@@ -216,7 +216,7 @@ class ShowHistoryTaskDetailsRequest:
     def create_time(self, create_time):
         """Sets the create_time of this ShowHistoryTaskDetailsRequest.
 
-        刷新预热任务的创建时间。不传参默认为查询3天内的任务。最长可查询15天内数据。
+        刷新预热任务的创建时间。不传参默认为查询7天内的任务。最长可查询15天内数据。
 
         :param create_time: The create_time of this ShowHistoryTaskDetailsRequest.
         :type: int

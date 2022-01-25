@@ -1,3 +1,139 @@
+# 3.0.76 2022-01-25
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `content_type` to the interface `CreateApiV2`
+  - Add the response parameters `publish_time`, `roma_app_name`, `ld_api_id`, `api_group_info`, `content_type` to the interface `ShowDetailsOfApiV2`
+  - Changes of the interface `UpdateApiV2`:
+    - Add the request parameter `content_type`
+    - Add the response parameters `publish_time`, `roma_app_name`, `ld_api_id`, `api_group_info`, `content_type`
+  - Add the response parameter `content_type` to the interface `ListApiRuntimeDefinitionV2`
+  - Changes of the interface `ListApiVersionDetailV2`:
+    - Add the response parameters `roma_app_name`, `ld_api_id`, `api_group_info`, `content_type`
+    - Modify the type `date-time` -> `string` of the response parameter `publish_time`
+
+### HuaweiCloud SDK CDM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowJobs`:
+    - Remove the response parameter `simple`
+    - The response parameter `name`, `values` changed to required
+  - The request parameter `name`, `values` changed to required of the interface `UpdateJob`
+  - The request parameter `name`, `values` changed to required of the interface `CreateAndStartRandomClusterJob`
+  - The request parameter `name`, `values` changed to required of the interface `CreateJob`
+  - Remove the response parameter `config_status` from the interface `ListClusters`
+
+### HuaweiCloud SDK CES
+
+- _Features_
+  - Support the interface `ListAlarmHistories`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CodeCheck
+
+- _Features_
+  - Support the interfaces `DeleteRuleset`, `SetDefaulTemplate`, `ShowTasklog`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `endpoint_id` to the interface `CreateTask`
+  - Add the request parameter `custom_attributes` to the interface `CreateRuleset`
+  - Changes of the interface `ListTemplateRules`:
+    - Add the request parameter `tags`
+    - Add the response parameter `rule_config_list`
+
+### HuaweiCloud SDK DevStar
+
+- _Features_
+  - Support the interfaces `ShowRepositoryByCloudIde`, `ListTemplates`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IAM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `session_user_id` to the interface `CreateLoginToken`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - Support the interface `ListEngineProducts`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `dr_enable` to the interface `ListInstances`
+  - Add the response parameter `dr_enable` to the interface `ShowInstance`
+  - Changes of the interface `ListProducts`:
+    - Add the response parameters `Hourly`, `Monthly`
+    - Remove the response parameters `hourly`, `honthly`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameter `language` from the interface `CreateSqlAlarmRule`
+  - Remove the request parameter `language` from the interface `UpdateSqlAlarmRule`
+  - Changes of the interface `ListSqlAlarmRules`:
+    - Add the response parameters `template_name`, `status`
+    - Remove the response parameter `language`
+  - Remove the request parameters `language`, `eps_id`, `eps_name`, `is_time_range_relative` from the interface `CreateKeywordsAlarmRule`
+  - Changes of the interface `UpdateKeywordsAlarmRule`:
+    - Remove the request parameters `language`, `eps_id`, `eps_name`, `is_time_range_relative`
+    - Remove the response parameters `eps_id`, `eps_name`, `is_time_range_relative`
+  - Changes of the interface `ListKeywordsAlarmRules`:
+    - Add the response parameters `template_name`, `status`
+    - Remove the response parameters `language`, `eps_id`, `eps_name`, `is_time_range_relative`
+  - Changes of the interface `ListAccessConfig`:
+    - Add the request parameter `access_config_tag_list`
+    - Add the response parameter `access_config_tag`
+  - Changes of the interface `CreateAccessConfig`:
+    - Add the request parameter `access_config_tag`
+    - Add the response parameter `access_config_tag`
+  - Changes of the interface `UpdateAccessConfig`:
+    - Add the request parameter `access_config_tag`
+    - Add the response parameter `access_config_tag`
+  - Add the response parameter `access_config_tag` to the interface `DeleteAccessConfig`
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+  - Support the authentication method via appId
+  - Support the interfaces `ShowWebHookConfig`, `SetWebHookConfig`, `DeleteWebHookConfig`, `UpdateWebHookConfigStatus`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+  - Support the interface `ListEngineProducts`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.0.75 2022-01-17
 
 ### HuaweiCloud SDK CCE

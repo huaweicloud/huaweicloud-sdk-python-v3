@@ -98,7 +98,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
     def coupon_max_use_quantity(self):
         """Gets the coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
 
-        优惠券使用的最大数量。
+        优惠券使用的最大数量。 具体请参见表4。
 
         :return: The coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
         :rtype: list[CouponMaxUseQuantity]
@@ -109,7 +109,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
     def coupon_max_use_quantity(self, coupon_max_use_quantity):
         """Sets the coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
 
-        优惠券使用的最大数量。
+        优惠券使用的最大数量。 具体请参见表4。
 
         :param coupon_max_use_quantity: The coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
         :type: list[CouponMaxUseQuantity]

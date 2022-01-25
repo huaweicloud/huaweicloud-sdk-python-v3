@@ -25,17 +25,19 @@ class GetAccessConfigListRequestBody:
         'access_config_name_list': 'list[str]',
         'host_group_name_list': 'list[str]',
         'log_group_name_list': 'list[str]',
-        'log_stream_name_list': 'list[str]'
+        'log_stream_name_list': 'list[str]',
+        'access_config_tag_list': 'list[AccessConfigTag]'
     }
 
     attribute_map = {
         'access_config_name_list': 'access_config_name_list',
         'host_group_name_list': 'host_group_name_list',
         'log_group_name_list': 'log_group_name_list',
-        'log_stream_name_list': 'log_stream_name_list'
+        'log_stream_name_list': 'log_stream_name_list',
+        'access_config_tag_list': 'access_config_tag_list'
     }
 
-    def __init__(self, access_config_name_list=None, host_group_name_list=None, log_group_name_list=None, log_stream_name_list=None):
+    def __init__(self, access_config_name_list=None, host_group_name_list=None, log_group_name_list=None, log_stream_name_list=None, access_config_tag_list=None):
         """GetAccessConfigListRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +46,7 @@ class GetAccessConfigListRequestBody:
         self._host_group_name_list = None
         self._log_group_name_list = None
         self._log_stream_name_list = None
+        self._access_config_tag_list = None
         self.discriminator = None
 
         if access_config_name_list is not None:
@@ -54,6 +57,8 @@ class GetAccessConfigListRequestBody:
             self.log_group_name_list = log_group_name_list
         if log_stream_name_list is not None:
             self.log_stream_name_list = log_stream_name_list
+        if access_config_tag_list is not None:
+            self.access_config_tag_list = access_config_tag_list
 
     @property
     def access_config_name_list(self):
@@ -142,6 +147,26 @@ class GetAccessConfigListRequestBody:
         :type: list[str]
         """
         self._log_stream_name_list = log_stream_name_list
+
+    @property
+    def access_config_tag_list(self):
+        """Gets the access_config_tag_list of this GetAccessConfigListRequestBody.
+
+
+        :return: The access_config_tag_list of this GetAccessConfigListRequestBody.
+        :rtype: list[AccessConfigTag]
+        """
+        return self._access_config_tag_list
+
+    @access_config_tag_list.setter
+    def access_config_tag_list(self, access_config_tag_list):
+        """Sets the access_config_tag_list of this GetAccessConfigListRequestBody.
+
+
+        :param access_config_tag_list: The access_config_tag_list of this GetAccessConfigListRequestBody.
+        :type: list[AccessConfigTag]
+        """
+        self._access_config_tag_list = access_config_tag_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

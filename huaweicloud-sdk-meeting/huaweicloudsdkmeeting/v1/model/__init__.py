@@ -115,6 +115,8 @@ from huaweicloudsdkmeeting.v1.model.delete_resource_request import DeleteResourc
 from huaweicloudsdkmeeting.v1.model.delete_resource_response import DeleteResourceResponse
 from huaweicloudsdkmeeting.v1.model.delete_vision_active_code_request import DeleteVisionActiveCodeRequest
 from huaweicloudsdkmeeting.v1.model.delete_vision_active_code_response import DeleteVisionActiveCodeResponse
+from huaweicloudsdkmeeting.v1.model.delete_web_hook_config_request import DeleteWebHookConfigRequest
+from huaweicloudsdkmeeting.v1.model.delete_web_hook_config_response import DeleteWebHookConfigResponse
 from huaweicloudsdkmeeting.v1.model.delete_webinar_request import DeleteWebinarRequest
 from huaweicloudsdkmeeting.v1.model.delete_webinar_response import DeleteWebinarResponse
 from huaweicloudsdkmeeting.v1.model.dept_basic_dto import DeptBasicDTO
@@ -265,6 +267,7 @@ from huaweicloudsdkmeeting.v1.model.rest_mute_req_body import RestMuteReqBody
 from huaweicloudsdkmeeting.v1.model.rest_participant_view_req_body import RestParticipantViewReqBody
 from huaweicloudsdkmeeting.v1.model.rest_prolong_dur_req_body import RestProlongDurReqBody
 from huaweicloudsdkmeeting.v1.model.rest_rename_part_req_body import RestRenamePartReqBody
+from huaweicloudsdkmeeting.v1.model.rest_response import RestResponse
 from huaweicloudsdkmeeting.v1.model.rest_schedule_conf_dto import RestScheduleConfDTO
 from huaweicloudsdkmeeting.v1.model.rest_schedule_cycle_conf_dto import RestScheduleCycleConfDTO
 from huaweicloudsdkmeeting.v1.model.rest_set_live_req_body import RestSetLiveReqBody
@@ -359,6 +362,8 @@ from huaweicloudsdkmeeting.v1.model.set_role_response import SetRoleResponse
 from huaweicloudsdkmeeting.v1.model.set_sso_config_request import SetSsoConfigRequest
 from huaweicloudsdkmeeting.v1.model.set_sso_config_response import SetSsoConfigResponse
 from huaweicloudsdkmeeting.v1.model.set_threshold_data import SetThresholdData
+from huaweicloudsdkmeeting.v1.model.set_web_hook_config_request import SetWebHookConfigRequest
+from huaweicloudsdkmeeting.v1.model.set_web_hook_config_response import SetWebHookConfigResponse
 from huaweicloudsdkmeeting.v1.model.show_audience_count_info import ShowAudienceCountInfo
 from huaweicloudsdkmeeting.v1.model.show_conf_org_request import ShowConfOrgRequest
 from huaweicloudsdkmeeting.v1.model.show_conf_org_response import ShowConfOrgResponse
@@ -416,6 +421,8 @@ from huaweicloudsdkmeeting.v1.model.show_sso_config_request import ShowSsoConfig
 from huaweicloudsdkmeeting.v1.model.show_sso_config_response import ShowSsoConfigResponse
 from huaweicloudsdkmeeting.v1.model.show_user_detail_request import ShowUserDetailRequest
 from huaweicloudsdkmeeting.v1.model.show_user_detail_response import ShowUserDetailResponse
+from huaweicloudsdkmeeting.v1.model.show_web_hook_config_request import ShowWebHookConfigRequest
+from huaweicloudsdkmeeting.v1.model.show_web_hook_config_response import ShowWebHookConfigResponse
 from huaweicloudsdkmeeting.v1.model.show_webinar_request import ShowWebinarRequest
 from huaweicloudsdkmeeting.v1.model.show_webinar_response import ShowWebinarResponse
 from huaweicloudsdkmeeting.v1.model.slide_verify_code_check_dto import SlideVerifyCodeCheckDTO
@@ -474,6 +481,8 @@ from huaweicloudsdkmeeting.v1.model.update_token_request import UpdateTokenReque
 from huaweicloudsdkmeeting.v1.model.update_token_response import UpdateTokenResponse
 from huaweicloudsdkmeeting.v1.model.update_user_request import UpdateUserRequest
 from huaweicloudsdkmeeting.v1.model.update_user_response import UpdateUserResponse
+from huaweicloudsdkmeeting.v1.model.update_web_hook_config_status_request import UpdateWebHookConfigStatusRequest
+from huaweicloudsdkmeeting.v1.model.update_web_hook_config_status_response import UpdateWebHookConfigStatusResponse
 from huaweicloudsdkmeeting.v1.model.update_webinar_request import UpdateWebinarRequest
 from huaweicloudsdkmeeting.v1.model.update_webinar_response import UpdateWebinarResponse
 from huaweicloudsdkmeeting.v1.model.upload_file_request import UploadFileRequest
@@ -489,3 +498,4 @@ from huaweicloudsdkmeeting.v1.model.verification_code_dto import VerificationCod
 from huaweicloudsdkmeeting.v1.model.verify_code_check_dto import VerifyCodeCheckDTO
 from huaweicloudsdkmeeting.v1.model.verify_code_send_dtov1 import VerifyCodeSendDTOV1
 from huaweicloudsdkmeeting.v1.model.vision_active_code_dto import VisionActiveCodeDTO
+from huaweicloudsdkmeeting.v1.model.web_hook_config_request import WebHookConfigRequest

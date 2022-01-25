@@ -26,6 +26,7 @@ class ListTemplateRulesRequest:
         'ruleset_id': 'str',
         'types': 'str',
         'languages': 'str',
+        'tags': 'str',
         'offset': 'int',
         'limit': 'int'
     }
@@ -35,11 +36,12 @@ class ListTemplateRulesRequest:
         'ruleset_id': 'ruleset_id',
         'types': 'types',
         'languages': 'languages',
+        'tags': 'tags',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, project_id=None, ruleset_id=None, types=None, languages=None, offset=None, limit=None):
+    def __init__(self, project_id=None, ruleset_id=None, types=None, languages=None, tags=None, offset=None, limit=None):
         """ListTemplateRulesRequest - a model defined in huaweicloud sdk"""
         
         
@@ -48,6 +50,7 @@ class ListTemplateRulesRequest:
         self._ruleset_id = None
         self._types = None
         self._languages = None
+        self._tags = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -57,6 +60,8 @@ class ListTemplateRulesRequest:
         self.types = types
         if languages is not None:
             self.languages = languages
+        if tags is not None:
+            self.tags = tags
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -149,6 +154,28 @@ class ListTemplateRulesRequest:
         :type: str
         """
         self._languages = languages
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListTemplateRulesRequest.
+
+        规则所属标签
+
+        :return: The tags of this ListTemplateRulesRequest.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListTemplateRulesRequest.
+
+        规则所属标签
+
+        :param tags: The tags of this ListTemplateRulesRequest.
+        :type: str
+        """
+        self._tags = tags
 
     @property
     def offset(self):

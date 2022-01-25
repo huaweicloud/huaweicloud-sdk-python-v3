@@ -26,7 +26,8 @@ class CreateAccessConfigRequestBody:
         'access_config_type': 'str',
         'access_config_detail': 'AccessConfigDeatilCreate',
         'log_info': 'AccessConfigBaseLogInfoCreate',
-        'host_group_info': 'AccessConfigHostGroupIdListCreate'
+        'host_group_info': 'AccessConfigHostGroupIdListCreate',
+        'access_config_tag': 'list[AccessConfigTag]'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class CreateAccessConfigRequestBody:
         'access_config_type': 'access_config_type',
         'access_config_detail': 'access_config_detail',
         'log_info': 'log_info',
-        'host_group_info': 'host_group_info'
+        'host_group_info': 'host_group_info',
+        'access_config_tag': 'access_config_tag'
     }
 
-    def __init__(self, access_config_name=None, access_config_type=None, access_config_detail=None, log_info=None, host_group_info=None):
+    def __init__(self, access_config_name=None, access_config_type=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None):
         """CreateAccessConfigRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +49,7 @@ class CreateAccessConfigRequestBody:
         self._access_config_detail = None
         self._log_info = None
         self._host_group_info = None
+        self._access_config_tag = None
         self.discriminator = None
 
         self.access_config_name = access_config_name
@@ -55,6 +58,8 @@ class CreateAccessConfigRequestBody:
         self.log_info = log_info
         if host_group_info is not None:
             self.host_group_info = host_group_info
+        if access_config_tag is not None:
+            self.access_config_tag = access_config_tag
 
     @property
     def access_config_name(self):
@@ -159,6 +164,26 @@ class CreateAccessConfigRequestBody:
         :type: AccessConfigHostGroupIdListCreate
         """
         self._host_group_info = host_group_info
+
+    @property
+    def access_config_tag(self):
+        """Gets the access_config_tag of this CreateAccessConfigRequestBody.
+
+
+        :return: The access_config_tag of this CreateAccessConfigRequestBody.
+        :rtype: list[AccessConfigTag]
+        """
+        return self._access_config_tag
+
+    @access_config_tag.setter
+    def access_config_tag(self, access_config_tag):
+        """Sets the access_config_tag of this CreateAccessConfigRequestBody.
+
+
+        :param access_config_tag: The access_config_tag of this CreateAccessConfigRequestBody.
+        :type: list[AccessConfigTag]
+        """
+        self._access_config_tag = access_config_tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

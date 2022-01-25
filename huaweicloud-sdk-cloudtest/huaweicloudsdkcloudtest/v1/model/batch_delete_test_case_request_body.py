@@ -47,7 +47,7 @@ class BatchDeleteTestCaseRequestBody:
     def service_id(self):
         """Gets the service_id of this BatchDeleteTestCaseRequestBody.
 
-        注册测试类型服务接口返回的服务id
+        注册测试类型服务接口返回的服务id，取值范围为10-9999
 
         :return: The service_id of this BatchDeleteTestCaseRequestBody.
         :rtype: int
@@ -58,7 +58,7 @@ class BatchDeleteTestCaseRequestBody:
     def service_id(self, service_id):
         """Sets the service_id of this BatchDeleteTestCaseRequestBody.
 
-        注册测试类型服务接口返回的服务id
+        注册测试类型服务接口返回的服务id，取值范围为10-9999
 
         :param service_id: The service_id of this BatchDeleteTestCaseRequestBody.
         :type: int

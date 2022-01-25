@@ -43,7 +43,6 @@ class Clusters:
         'status_detail': 'str',
         'id': 'str',
         'is_frozen': 'str',
-        'config_status': 'str',
         'updated': 'str',
         'status': 'str',
         'failed_reasons': 'FailedReasons'
@@ -71,13 +70,12 @@ class Clusters:
         'status_detail': 'statusDetail',
         'id': 'id',
         'is_frozen': 'isFrozen',
-        'config_status': 'config_status',
         'updated': 'updated',
         'status': 'status',
         'failed_reasons': 'failedReasons'
     }
 
-    def __init__(self, customer_config=None, datastore=None, instances=None, az_name=None, dbuser=None, flavor_name=None, recent_event=None, is_auto_off=None, is_schedule_boot_off=None, cluster_mode=None, namespace=None, task=None, public_endpoint=None, action_progress=None, created=None, bak_expected_start_time=None, bak_keep_day=None, name=None, status_detail=None, id=None, is_frozen=None, config_status=None, updated=None, status=None, failed_reasons=None):
+    def __init__(self, customer_config=None, datastore=None, instances=None, az_name=None, dbuser=None, flavor_name=None, recent_event=None, is_auto_off=None, is_schedule_boot_off=None, cluster_mode=None, namespace=None, task=None, public_endpoint=None, action_progress=None, created=None, bak_expected_start_time=None, bak_keep_day=None, name=None, status_detail=None, id=None, is_frozen=None, updated=None, status=None, failed_reasons=None):
         """Clusters - a model defined in huaweicloud sdk"""
         
         
@@ -103,7 +101,6 @@ class Clusters:
         self._status_detail = None
         self._id = None
         self._is_frozen = None
-        self._config_status = None
         self._updated = None
         self._status = None
         self._failed_reasons = None
@@ -147,8 +144,6 @@ class Clusters:
             self.status_detail = status_detail
         self.id = id
         self.is_frozen = is_frozen
-        if config_status is not None:
-            self.config_status = config_status
         self.updated = updated
         self.status = status
         if failed_reasons is not None:
@@ -609,28 +604,6 @@ class Clusters:
         self._is_frozen = is_frozen
 
     @property
-    def config_status(self):
-        """Gets the config_status of this Clusters.
-
-        集群配置状态：In-Sync：配置已同步。Applying：配置中。Sync-Failure：配置失败
-
-        :return: The config_status of this Clusters.
-        :rtype: str
-        """
-        return self._config_status
-
-    @config_status.setter
-    def config_status(self, config_status):
-        """Sets the config_status of this Clusters.
-
-        集群配置状态：In-Sync：配置已同步。Applying：配置中。Sync-Failure：配置失败
-
-        :param config_status: The config_status of this Clusters.
-        :type: str
-        """
-        self._config_status = config_status
-
-    @property
     def updated(self):
         """Gets the updated of this Clusters.
 
@@ -656,7 +629,7 @@ class Clusters:
     def status(self):
         """Gets the status of this Clusters.
 
-        集群状态： - 100：创建中 - 200：正常 - 300：失败 - 303：创建失败 - 800：冻结 - 900：已关机 - 910：正在关机 - 920：正在开机
+        集群状态： - 100：创建中 - 200：正常 - 300：失败 - 303：创建失败 - 500：重启中 - 800：冻结 - 900：已关机 - 910：正在关机 - 920：正在开机
 
         :return: The status of this Clusters.
         :rtype: str
@@ -667,7 +640,7 @@ class Clusters:
     def status(self, status):
         """Sets the status of this Clusters.
 
-        集群状态： - 100：创建中 - 200：正常 - 300：失败 - 303：创建失败 - 800：冻结 - 900：已关机 - 910：正在关机 - 920：正在开机
+        集群状态： - 100：创建中 - 200：正常 - 300：失败 - 303：创建失败 - 500：重启中 - 800：冻结 - 900：已关机 - 910：正在关机 - 920：正在开机
 
         :param status: The status of this Clusters.
         :type: str

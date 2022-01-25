@@ -30,8 +30,7 @@ class CreateSqlAlarmRuleRequestBody:
         'sql_alarm_level': 'str',
         'sql_alarm_send': 'bool',
         'domain_id': 'str',
-        'notification_save_rule': 'NotificationSaveRule',
-        'language': 'str'
+        'notification_save_rule': 'NotificationSaveRule'
     }
 
     attribute_map = {
@@ -43,11 +42,10 @@ class CreateSqlAlarmRuleRequestBody:
         'sql_alarm_level': 'sql_alarm_level',
         'sql_alarm_send': 'sql_alarm_send',
         'domain_id': 'domain_id',
-        'notification_save_rule': 'notification_save_rule',
-        'language': 'language'
+        'notification_save_rule': 'notification_save_rule'
     }
 
-    def __init__(self, sql_alarm_rule_name=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, notification_save_rule=None, language=None):
+    def __init__(self, sql_alarm_rule_name=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, notification_save_rule=None):
         """CreateSqlAlarmRuleRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -61,7 +59,6 @@ class CreateSqlAlarmRuleRequestBody:
         self._sql_alarm_send = None
         self._domain_id = None
         self._notification_save_rule = None
-        self._language = None
         self.discriminator = None
 
         self.sql_alarm_rule_name = sql_alarm_rule_name
@@ -75,7 +72,6 @@ class CreateSqlAlarmRuleRequestBody:
         self.domain_id = domain_id
         if notification_save_rule is not None:
             self.notification_save_rule = notification_save_rule
-        self.language = language
 
     @property
     def sql_alarm_rule_name(self):
@@ -274,28 +270,6 @@ class CreateSqlAlarmRuleRequestBody:
         :type: NotificationSaveRule
         """
         self._notification_save_rule = notification_save_rule
-
-    @property
-    def language(self):
-        """Gets the language of this CreateSqlAlarmRuleRequestBody.
-
-        邮件附加信息是否英文
-
-        :return: The language of this CreateSqlAlarmRuleRequestBody.
-        :rtype: str
-        """
-        return self._language
-
-    @language.setter
-    def language(self, language):
-        """Sets the language of this CreateSqlAlarmRuleRequestBody.
-
-        邮件附加信息是否英文
-
-        :param language: The language of this CreateSqlAlarmRuleRequestBody.
-        :type: str
-        """
-        self._language = language
 
     def to_dict(self):
         """Returns the model properties as a dict"""

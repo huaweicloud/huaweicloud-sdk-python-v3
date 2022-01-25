@@ -746,7 +746,7 @@ class MonthlyBillRes:
     def measure_id(self):
         """Gets the measure_id of this MonthlyBillRes.
 
-        金额单位： 1：元
+        金额单位。 1：元
 
         :return: The measure_id of this MonthlyBillRes.
         :rtype: int
@@ -757,7 +757,7 @@ class MonthlyBillRes:
     def measure_id(self, measure_id):
         """Sets the measure_id of this MonthlyBillRes.
 
-        金额单位： 1：元
+        金额单位。 1：元
 
         :param measure_id: The measure_id of this MonthlyBillRes.
         :type: int

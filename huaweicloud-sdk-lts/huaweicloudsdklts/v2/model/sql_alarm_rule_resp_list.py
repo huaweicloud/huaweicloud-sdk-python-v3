@@ -34,7 +34,8 @@ class SqlAlarmRuleRespList:
         'domain_id': 'str',
         'create_time': 'int',
         'update_time': 'int',
-        'language': 'str'
+        'template_name': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
@@ -50,10 +51,11 @@ class SqlAlarmRuleRespList:
         'domain_id': 'domain_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
-        'language': 'language'
+        'template_name': 'template_name',
+        'status': 'status'
     }
 
-    def __init__(self, sql_alarm_rule_name=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, topics=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, language=None):
+    def __init__(self, sql_alarm_rule_name=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, topics=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, template_name=None, status=None):
         """SqlAlarmRuleRespList - a model defined in huaweicloud sdk"""
         
         
@@ -70,7 +72,8 @@ class SqlAlarmRuleRespList:
         self._domain_id = None
         self._create_time = None
         self._update_time = None
-        self._language = None
+        self._template_name = None
+        self._status = None
         self.discriminator = None
 
         self.sql_alarm_rule_name = sql_alarm_rule_name
@@ -85,7 +88,10 @@ class SqlAlarmRuleRespList:
         self.domain_id = domain_id
         self.create_time = create_time
         self.update_time = update_time
-        self.language = language
+        if template_name is not None:
+            self.template_name = template_name
+        if status is not None:
+            self.status = status
 
     @property
     def sql_alarm_rule_name(self):
@@ -352,26 +358,44 @@ class SqlAlarmRuleRespList:
         self._update_time = update_time
 
     @property
-    def language(self):
-        """Gets the language of this SqlAlarmRuleRespList.
+    def template_name(self):
+        """Gets the template_name of this SqlAlarmRuleRespList.
 
-        邮件附加信息是否英文
 
-        :return: The language of this SqlAlarmRuleRespList.
+        :return: The template_name of this SqlAlarmRuleRespList.
         :rtype: str
         """
-        return self._language
+        return self._template_name
 
-    @language.setter
-    def language(self, language):
-        """Sets the language of this SqlAlarmRuleRespList.
+    @template_name.setter
+    def template_name(self, template_name):
+        """Sets the template_name of this SqlAlarmRuleRespList.
 
-        邮件附加信息是否英文
 
-        :param language: The language of this SqlAlarmRuleRespList.
+        :param template_name: The template_name of this SqlAlarmRuleRespList.
         :type: str
         """
-        self._language = language
+        self._template_name = template_name
+
+    @property
+    def status(self):
+        """Gets the status of this SqlAlarmRuleRespList.
+
+
+        :return: The status of this SqlAlarmRuleRespList.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this SqlAlarmRuleRespList.
+
+
+        :param status: The status of this SqlAlarmRuleRespList.
+        :type: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

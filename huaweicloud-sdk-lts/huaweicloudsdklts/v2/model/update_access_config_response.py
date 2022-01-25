@@ -28,7 +28,8 @@ class UpdateAccessConfigResponse(SdkResponse):
         'create_time': 'int',
         'access_config_detail': 'AccessConfigDeatil',
         'log_info': 'AccessConfigQueryLogInfo',
-        'host_group_info': 'AccessConfigHostGroupIdList'
+        'host_group_info': 'AccessConfigHostGroupIdList',
+        'access_config_tag': 'list[AccessConfigTag]'
     }
 
     attribute_map = {
@@ -38,10 +39,11 @@ class UpdateAccessConfigResponse(SdkResponse):
         'create_time': 'create_time',
         'access_config_detail': 'access_config_detail',
         'log_info': 'log_info',
-        'host_group_info': 'host_group_info'
+        'host_group_info': 'host_group_info',
+        'access_config_tag': 'access_config_tag'
     }
 
-    def __init__(self, access_config_id=None, access_config_name=None, access_config_type=None, create_time=None, access_config_detail=None, log_info=None, host_group_info=None):
+    def __init__(self, access_config_id=None, access_config_name=None, access_config_type=None, create_time=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None):
         """UpdateAccessConfigResponse - a model defined in huaweicloud sdk"""
         
         super(UpdateAccessConfigResponse, self).__init__()
@@ -53,6 +55,7 @@ class UpdateAccessConfigResponse(SdkResponse):
         self._access_config_detail = None
         self._log_info = None
         self._host_group_info = None
+        self._access_config_tag = None
         self.discriminator = None
 
         if access_config_id is not None:
@@ -69,6 +72,8 @@ class UpdateAccessConfigResponse(SdkResponse):
             self.log_info = log_info
         if host_group_info is not None:
             self.host_group_info = host_group_info
+        if access_config_tag is not None:
+            self.access_config_tag = access_config_tag
 
     @property
     def access_config_id(self):
@@ -217,6 +222,26 @@ class UpdateAccessConfigResponse(SdkResponse):
         :type: AccessConfigHostGroupIdList
         """
         self._host_group_info = host_group_info
+
+    @property
+    def access_config_tag(self):
+        """Gets the access_config_tag of this UpdateAccessConfigResponse.
+
+
+        :return: The access_config_tag of this UpdateAccessConfigResponse.
+        :rtype: list[AccessConfigTag]
+        """
+        return self._access_config_tag
+
+    @access_config_tag.setter
+    def access_config_tag(self, access_config_tag):
+        """Sets the access_config_tag of this UpdateAccessConfigResponse.
+
+
+        :param access_config_tag: The access_config_tag of this UpdateAccessConfigResponse.
+        :type: list[AccessConfigTag]
+        """
+        self._access_config_tag = access_config_tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

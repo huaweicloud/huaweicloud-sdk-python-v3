@@ -52,7 +52,7 @@ class ApplicationNameRule:
     def name_type(self):
         """Gets the name_type of this ApplicationNameRule.
 
-        cmdLineHash、cmdLine、env、str 取值类型。
+        取值类型。 从cmdLineHash、cmdLine、env、str里面选取。
 
         :return: The name_type of this ApplicationNameRule.
         :rtype: str
@@ -63,7 +63,7 @@ class ApplicationNameRule:
     def name_type(self, name_type):
         """Sets the name_type of this ApplicationNameRule.
 
-        cmdLineHash、cmdLine、env、str 取值类型。
+        取值类型。 从cmdLineHash、cmdLine、env、str里面选取。
 
         :param name_type: The name_type of this ApplicationNameRule.
         :type: str

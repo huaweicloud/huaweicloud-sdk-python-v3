@@ -22,8 +22,6 @@ class KeywordsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'eps_id': 'str',
-        'eps_name': 'str',
         'log_stream_id': 'str',
         'log_stream_name': 'str',
         'log_group_id': 'str',
@@ -32,13 +30,10 @@ class KeywordsRequest:
         'condition': 'str',
         'number': 'int',
         'search_time_range': 'int',
-        'search_time_range_unit': 'str',
-        'is_time_range_relative': 'bool'
+        'search_time_range_unit': 'str'
     }
 
     attribute_map = {
-        'eps_id': 'eps_id',
-        'eps_name': 'eps_name',
         'log_stream_id': 'log_stream_id',
         'log_stream_name': 'log_stream_name',
         'log_group_id': 'log_group_id',
@@ -47,17 +42,14 @@ class KeywordsRequest:
         'condition': 'condition',
         'number': 'number',
         'search_time_range': 'search_time_range',
-        'search_time_range_unit': 'search_time_range_unit',
-        'is_time_range_relative': 'is_time_range_relative'
+        'search_time_range_unit': 'search_time_range_unit'
     }
 
-    def __init__(self, eps_id=None, eps_name=None, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, keywords=None, condition=None, number=None, search_time_range=None, search_time_range_unit=None, is_time_range_relative=None):
+    def __init__(self, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, keywords=None, condition=None, number=None, search_time_range=None, search_time_range_unit=None):
         """KeywordsRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._eps_id = None
-        self._eps_name = None
         self._log_stream_id = None
         self._log_stream_name = None
         self._log_group_id = None
@@ -67,13 +59,8 @@ class KeywordsRequest:
         self._number = None
         self._search_time_range = None
         self._search_time_range_unit = None
-        self._is_time_range_relative = None
         self.discriminator = None
 
-        if eps_id is not None:
-            self.eps_id = eps_id
-        if eps_name is not None:
-            self.eps_name = eps_name
         self.log_stream_id = log_stream_id
         if log_stream_name is not None:
             self.log_stream_name = log_stream_name
@@ -85,52 +72,6 @@ class KeywordsRequest:
         self.number = number
         self.search_time_range = search_time_range
         self.search_time_range_unit = search_time_range_unit
-        if is_time_range_relative is not None:
-            self.is_time_range_relative = is_time_range_relative
-
-    @property
-    def eps_id(self):
-        """Gets the eps_id of this KeywordsRequest.
-
-        企业项目id
-
-        :return: The eps_id of this KeywordsRequest.
-        :rtype: str
-        """
-        return self._eps_id
-
-    @eps_id.setter
-    def eps_id(self, eps_id):
-        """Sets the eps_id of this KeywordsRequest.
-
-        企业项目id
-
-        :param eps_id: The eps_id of this KeywordsRequest.
-        :type: str
-        """
-        self._eps_id = eps_id
-
-    @property
-    def eps_name(self):
-        """Gets the eps_name of this KeywordsRequest.
-
-        企业项目名称
-
-        :return: The eps_name of this KeywordsRequest.
-        :rtype: str
-        """
-        return self._eps_name
-
-    @eps_name.setter
-    def eps_name(self, eps_name):
-        """Sets the eps_name of this KeywordsRequest.
-
-        企业项目名称
-
-        :param eps_name: The eps_name of this KeywordsRequest.
-        :type: str
-        """
-        self._eps_name = eps_name
 
     @property
     def log_stream_id(self):
@@ -329,28 +270,6 @@ class KeywordsRequest:
         :type: str
         """
         self._search_time_range_unit = search_time_range_unit
-
-    @property
-    def is_time_range_relative(self):
-        """Gets the is_time_range_relative of this KeywordsRequest.
-
-        是否发送
-
-        :return: The is_time_range_relative of this KeywordsRequest.
-        :rtype: bool
-        """
-        return self._is_time_range_relative
-
-    @is_time_range_relative.setter
-    def is_time_range_relative(self, is_time_range_relative):
-        """Sets the is_time_range_relative of this KeywordsRequest.
-
-        是否发送
-
-        :param is_time_range_relative: The is_time_range_relative of this KeywordsRequest.
-        :type: bool
-        """
-        self._is_time_range_relative = is_time_range_relative
 
     def to_dict(self):
         """Returns the model properties as a dict"""

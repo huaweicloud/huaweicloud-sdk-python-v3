@@ -398,7 +398,7 @@ class InstanceParam:
     def refresh_interval(self):
         """Gets the refresh_interval of this InstanceParam.
 
-        实例的生命周期。 arm架构,生命周期只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例在到达生命周期后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
+        自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
 
         :return: The refresh_interval of this InstanceParam.
         :rtype: str
@@ -409,7 +409,7 @@ class InstanceParam:
     def refresh_interval(self, refresh_interval):
         """Sets the refresh_interval of this InstanceParam.
 
-        实例的生命周期。 arm架构,生命周期只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例在到达生命周期后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止。
+        自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
 
         :param refresh_interval: The refresh_interval of this InstanceParam.
         :type: str

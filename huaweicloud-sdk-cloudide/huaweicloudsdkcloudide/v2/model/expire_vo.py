@@ -98,7 +98,7 @@ class ExpireVo:
     def interval(self):
         """Gets the interval of this ExpireVo.
 
-        CloudIDE实例生命周期，单位‘分钟’
+        CloudIDE实例自动休眠时长，单位‘分钟’
 
         :return: The interval of this ExpireVo.
         :rtype: int
@@ -109,7 +109,7 @@ class ExpireVo:
     def interval(self, interval):
         """Sets the interval of this ExpireVo.
 
-        CloudIDE实例生命周期，单位‘分钟’
+        CloudIDE实例自动休眠时长，单位‘分钟’
 
         :param interval: The interval of this ExpireVo.
         :type: int

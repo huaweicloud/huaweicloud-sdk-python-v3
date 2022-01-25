@@ -57,7 +57,7 @@ class ValueData:
     def metric_name(self):
         """Gets the metric_name of this ValueData.
 
-        指标名称。
+        指标名称。长度1~255。
 
         :return: The metric_name of this ValueData.
         :rtype: str
@@ -68,7 +68,7 @@ class ValueData:
     def metric_name(self, metric_name):
         """Sets the metric_name of this ValueData.
 
-        指标名称。
+        指标名称。长度1~255。
 
         :param metric_name: The metric_name of this ValueData.
         :type: str
@@ -79,7 +79,7 @@ class ValueData:
     def type(self):
         """Gets the type of this ValueData.
 
-        取值范围 只能是\"int\"或\"float\"。 数据的类型。
+        数据的类型。 取值范围 只能是\"int\"或\"float\"。
 
         :return: The type of this ValueData.
         :rtype: str
@@ -90,7 +90,7 @@ class ValueData:
     def type(self, type):
         """Sets the type of this ValueData.
 
-        取值范围 只能是\"int\"或\"float\"。 数据的类型。
+        数据的类型。 取值范围 只能是\"int\"或\"float\"。
 
         :param type: The type of this ValueData.
         :type: str
@@ -101,7 +101,7 @@ class ValueData:
     def unit(self):
         """Gets the unit of this ValueData.
 
-        数据的单位。
+        数据的单位。长度不超过32个字符。
 
         :return: The unit of this ValueData.
         :rtype: str
@@ -112,7 +112,7 @@ class ValueData:
     def unit(self, unit):
         """Sets the unit of this ValueData.
 
-        数据的单位。
+        数据的单位。长度不超过32个字符。
 
         :param unit: The unit of this ValueData.
         :type: str
@@ -123,7 +123,7 @@ class ValueData:
     def value(self):
         """Gets the value of this ValueData.
 
-        取值范围 有效的数值类型 指标数据的值。
+        指标数据的值。 取值范围 有效的数值类型。
 
         :return: The value of this ValueData.
         :rtype: float
@@ -134,7 +134,7 @@ class ValueData:
     def value(self, value):
         """Sets the value of this ValueData.
 
-        取值范围 有效的数值类型 指标数据的值。
+        指标数据的值。 取值范围 有效的数值类型。
 
         :param value: The value of this ValueData.
         :type: float

@@ -44,6 +44,7 @@ class UpdateApiV2Response(SdkResponse):
         'roma_app_id': 'str',
         'domain_name': 'str',
         'tag': 'str',
+        'content_type': 'str',
         'id': 'str',
         'status': 'int',
         'arrange_necessary': 'int',
@@ -54,13 +55,17 @@ class UpdateApiV2Response(SdkResponse):
         'run_env_id': 'str',
         'run_env_name': 'str',
         'publish_id': 'str',
+        'publish_time': 'str',
+        'roma_app_name': 'str',
+        'ld_api_id': 'str',
+        'backend_api': 'BackendApi',
+        'api_group_info': 'ApiGroupCommonInfo',
         'func_info': 'ApiFunc',
         'mock_info': 'ApiMock',
         'req_params': 'list[ReqParam]',
         'backend_params': 'list[BackendParam]',
         'policy_functions': 'list[ApiPolicyFunctionResp]',
         'policy_mocks': 'list[ApiPolicyMockResp]',
-        'backend_api': 'BackendApi',
         'policy_https': 'list[ApiPolicyHttpResp]'
     }
 
@@ -87,6 +92,7 @@ class UpdateApiV2Response(SdkResponse):
         'roma_app_id': 'roma_app_id',
         'domain_name': 'domain_name',
         'tag': 'tag',
+        'content_type': 'content_type',
         'id': 'id',
         'status': 'status',
         'arrange_necessary': 'arrange_necessary',
@@ -97,17 +103,21 @@ class UpdateApiV2Response(SdkResponse):
         'run_env_id': 'run_env_id',
         'run_env_name': 'run_env_name',
         'publish_id': 'publish_id',
+        'publish_time': 'publish_time',
+        'roma_app_name': 'roma_app_name',
+        'ld_api_id': 'ld_api_id',
+        'backend_api': 'backend_api',
+        'api_group_info': 'api_group_info',
         'func_info': 'func_info',
         'mock_info': 'mock_info',
         'req_params': 'req_params',
         'backend_params': 'backend_params',
         'policy_functions': 'policy_functions',
         'policy_mocks': 'policy_mocks',
-        'backend_api': 'backend_api',
         'policy_https': 'policy_https'
     }
 
-    def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, id=None, status=None, arrange_necessary=None, register_time=None, update_time=None, group_name=None, group_version=None, run_env_id=None, run_env_name=None, publish_id=None, func_info=None, mock_info=None, req_params=None, backend_params=None, policy_functions=None, policy_mocks=None, backend_api=None, policy_https=None):
+    def __init__(self, name=None, type=None, version=None, req_protocol=None, req_method=None, req_uri=None, auth_type=None, auth_opt=None, cors=None, match_mode=None, backend_type=None, remark=None, group_id=None, body_remark=None, result_normal_sample=None, result_failure_sample=None, authorizer_id=None, tags=None, response_id=None, roma_app_id=None, domain_name=None, tag=None, content_type=None, id=None, status=None, arrange_necessary=None, register_time=None, update_time=None, group_name=None, group_version=None, run_env_id=None, run_env_name=None, publish_id=None, publish_time=None, roma_app_name=None, ld_api_id=None, backend_api=None, api_group_info=None, func_info=None, mock_info=None, req_params=None, backend_params=None, policy_functions=None, policy_mocks=None, policy_https=None):
         """UpdateApiV2Response - a model defined in huaweicloud sdk"""
         
         super(UpdateApiV2Response, self).__init__()
@@ -134,6 +144,7 @@ class UpdateApiV2Response(SdkResponse):
         self._roma_app_id = None
         self._domain_name = None
         self._tag = None
+        self._content_type = None
         self._id = None
         self._status = None
         self._arrange_necessary = None
@@ -144,13 +155,17 @@ class UpdateApiV2Response(SdkResponse):
         self._run_env_id = None
         self._run_env_name = None
         self._publish_id = None
+        self._publish_time = None
+        self._roma_app_name = None
+        self._ld_api_id = None
+        self._backend_api = None
+        self._api_group_info = None
         self._func_info = None
         self._mock_info = None
         self._req_params = None
         self._backend_params = None
         self._policy_functions = None
         self._policy_mocks = None
-        self._backend_api = None
         self._policy_https = None
         self.discriminator = None
 
@@ -190,6 +205,8 @@ class UpdateApiV2Response(SdkResponse):
             self.domain_name = domain_name
         if tag is not None:
             self.tag = tag
+        if content_type is not None:
+            self.content_type = content_type
         if id is not None:
             self.id = id
         if status is not None:
@@ -210,6 +227,16 @@ class UpdateApiV2Response(SdkResponse):
             self.run_env_name = run_env_name
         if publish_id is not None:
             self.publish_id = publish_id
+        if publish_time is not None:
+            self.publish_time = publish_time
+        if roma_app_name is not None:
+            self.roma_app_name = roma_app_name
+        if ld_api_id is not None:
+            self.ld_api_id = ld_api_id
+        if backend_api is not None:
+            self.backend_api = backend_api
+        if api_group_info is not None:
+            self.api_group_info = api_group_info
         if func_info is not None:
             self.func_info = func_info
         if mock_info is not None:
@@ -222,8 +249,6 @@ class UpdateApiV2Response(SdkResponse):
             self.policy_functions = policy_functions
         if policy_mocks is not None:
             self.policy_mocks = policy_mocks
-        if backend_api is not None:
-            self.backend_api = backend_api
         if policy_https is not None:
             self.policy_https = policy_https
 
@@ -710,6 +735,28 @@ class UpdateApiV2Response(SdkResponse):
         self._tag = tag
 
     @property
+    def content_type(self):
+        """Gets the content_type of this UpdateApiV2Response.
+
+        请求内容格式类型：  application/json application/xml multipart/form-date text/plain  暂不支持
+
+        :return: The content_type of this UpdateApiV2Response.
+        :rtype: str
+        """
+        return self._content_type
+
+    @content_type.setter
+    def content_type(self, content_type):
+        """Sets the content_type of this UpdateApiV2Response.
+
+        请求内容格式类型：  application/json application/xml multipart/form-date text/plain  暂不支持
+
+        :param content_type: The content_type of this UpdateApiV2Response.
+        :type: str
+        """
+        self._content_type = content_type
+
+    @property
     def id(self):
         """Gets the id of this UpdateApiV2Response.
 
@@ -930,6 +977,112 @@ class UpdateApiV2Response(SdkResponse):
         self._publish_id = publish_id
 
     @property
+    def publish_time(self):
+        """Gets the publish_time of this UpdateApiV2Response.
+
+        发布时间  存在多个发布记录时，发布时间之间用|隔开
+
+        :return: The publish_time of this UpdateApiV2Response.
+        :rtype: str
+        """
+        return self._publish_time
+
+    @publish_time.setter
+    def publish_time(self, publish_time):
+        """Sets the publish_time of this UpdateApiV2Response.
+
+        发布时间  存在多个发布记录时，发布时间之间用|隔开
+
+        :param publish_time: The publish_time of this UpdateApiV2Response.
+        :type: str
+        """
+        self._publish_time = publish_time
+
+    @property
+    def roma_app_name(self):
+        """Gets the roma_app_name of this UpdateApiV2Response.
+
+        API归属的集成应用名称  暂不支持
+
+        :return: The roma_app_name of this UpdateApiV2Response.
+        :rtype: str
+        """
+        return self._roma_app_name
+
+    @roma_app_name.setter
+    def roma_app_name(self, roma_app_name):
+        """Sets the roma_app_name of this UpdateApiV2Response.
+
+        API归属的集成应用名称  暂不支持
+
+        :param roma_app_name: The roma_app_name of this UpdateApiV2Response.
+        :type: str
+        """
+        self._roma_app_name = roma_app_name
+
+    @property
+    def ld_api_id(self):
+        """Gets the ld_api_id of this UpdateApiV2Response.
+
+        当API的后端为自定义后端时，对应的自定义后端API编号  暂不支持
+
+        :return: The ld_api_id of this UpdateApiV2Response.
+        :rtype: str
+        """
+        return self._ld_api_id
+
+    @ld_api_id.setter
+    def ld_api_id(self, ld_api_id):
+        """Sets the ld_api_id of this UpdateApiV2Response.
+
+        当API的后端为自定义后端时，对应的自定义后端API编号  暂不支持
+
+        :param ld_api_id: The ld_api_id of this UpdateApiV2Response.
+        :type: str
+        """
+        self._ld_api_id = ld_api_id
+
+    @property
+    def backend_api(self):
+        """Gets the backend_api of this UpdateApiV2Response.
+
+
+        :return: The backend_api of this UpdateApiV2Response.
+        :rtype: BackendApi
+        """
+        return self._backend_api
+
+    @backend_api.setter
+    def backend_api(self, backend_api):
+        """Sets the backend_api of this UpdateApiV2Response.
+
+
+        :param backend_api: The backend_api of this UpdateApiV2Response.
+        :type: BackendApi
+        """
+        self._backend_api = backend_api
+
+    @property
+    def api_group_info(self):
+        """Gets the api_group_info of this UpdateApiV2Response.
+
+
+        :return: The api_group_info of this UpdateApiV2Response.
+        :rtype: ApiGroupCommonInfo
+        """
+        return self._api_group_info
+
+    @api_group_info.setter
+    def api_group_info(self, api_group_info):
+        """Sets the api_group_info of this UpdateApiV2Response.
+
+
+        :param api_group_info: The api_group_info of this UpdateApiV2Response.
+        :type: ApiGroupCommonInfo
+        """
+        self._api_group_info = api_group_info
+
+    @property
     def func_info(self):
         """Gets the func_info of this UpdateApiV2Response.
 
@@ -1056,26 +1209,6 @@ class UpdateApiV2Response(SdkResponse):
         :type: list[ApiPolicyMockResp]
         """
         self._policy_mocks = policy_mocks
-
-    @property
-    def backend_api(self):
-        """Gets the backend_api of this UpdateApiV2Response.
-
-
-        :return: The backend_api of this UpdateApiV2Response.
-        :rtype: BackendApi
-        """
-        return self._backend_api
-
-    @backend_api.setter
-    def backend_api(self, backend_api):
-        """Sets the backend_api of this UpdateApiV2Response.
-
-
-        :param backend_api: The backend_api of this UpdateApiV2Response.
-        :type: BackendApi
-        """
-        self._backend_api = backend_api
 
     @property
     def policy_https(self):
