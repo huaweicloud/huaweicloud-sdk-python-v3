@@ -30,6 +30,16 @@ class DnsRegion:
 
     AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://dns.ap-southeast-3.myhuaweicloud.com")
 
+    SA_ARGENTINA_1 = Region(id="sa-argentina-1", endpoint="https://dns.sa-argentina-1.myhuaweicloud.com")
+
+    SA_PERU_1 = Region(id="sa-peru-1", endpoint="https://dns.sa-peru-1.myhuaweicloud.com")
+
+    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://dns.na-mexico-1.myhuaweicloud.com")
+
+    SA_CHILE_1 = Region(id="sa-chile-1", endpoint="https://dns.sa-chile-1.myhuaweicloud.com")
+
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://dns.sa-brazil-1.myhuaweicloud.com")
+
     static_fields = {
         "cn-east-2": CN_EAST_2,
         "cn-east-3": CN_EAST_3,
@@ -41,6 +51,11 @@ class DnsRegion:
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        'sa-argentina-1': SA_ARGENTINA_1,
+        'sa-peru-1': SA_PERU_1,
+        'na-mexico-1': NA_MEXICO_1,
+        'sa-chile-1': SA_CHILE_1,
+        'sa-brazil-1': SA_BRAZIL_1,
     }
 
     @staticmethod

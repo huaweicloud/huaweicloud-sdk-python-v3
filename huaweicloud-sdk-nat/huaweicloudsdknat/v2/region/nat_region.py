@@ -36,6 +36,18 @@ class NatRegion:
 
     RU_NORTHWEST_2 = Region(id="ru-northwest-2", endpoint="https://nat.ru-northwest-2.myhuaweicloud.com")
 
+    SA_ARGENTINA_1 = Region(id="sa-argentina-1", endpoint="https://nat.sa-argentina-1.myhuaweicloud.com")
+
+    SA_PERU_1 = Region(id="sa-peru-1", endpoint="https://nat.sa-peru-1.myhuaweicloud.com")
+
+    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://nat.na-mexico-1.myhuaweicloud.com")
+
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://nat.la-south-2.myhuaweicloud.com")
+
+    SA_CHILE_1 = Region(id="sa-chile-1", endpoint="https://nat.sa-chile-1.myhuaweicloud.com")
+
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://nat.sa-brazil-1.myhuaweicloud.com")
+
     static_fields = {
         "af-south-1": AF_SOUTH_1,
         "cn-north-4": CN_NORTH_4,
@@ -50,6 +62,12 @@ class NatRegion:
         "cn-south-2": CN_SOUTH_2,
         "cn-north-2": CN_NORTH_2,
         "ru-northwest-2": RU_NORTHWEST_2,
+        'sa-argentina-1': SA_ARGENTINA_1,
+        'sa-peru-1': SA_PERU_1,
+        'na-mexico-1': NA_MEXICO_1,
+        'la-south-2': LA_SOUTH_2,
+        'sa-chile-1': SA_CHILE_1,
+        'sa-brazil-1': SA_BRAZIL_1,
     }
 
     @staticmethod
