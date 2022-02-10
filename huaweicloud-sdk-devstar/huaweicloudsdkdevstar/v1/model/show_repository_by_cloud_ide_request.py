@@ -94,7 +94,7 @@ class ShowRepositoryByCloudIdeRequest:
     def repository_id(self):
         """Gets the repository_id of this ShowRepositoryByCloudIdeRequest.
 
-        仓库id
+        仓库id。
 
         :return: The repository_id of this ShowRepositoryByCloudIdeRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class ShowRepositoryByCloudIdeRequest:
     def repository_id(self, repository_id):
         """Sets the repository_id of this ShowRepositoryByCloudIdeRequest.
 
-        仓库id
+        仓库id。
 
         :param repository_id: The repository_id of this ShowRepositoryByCloudIdeRequest.
         :type: str
@@ -116,7 +116,7 @@ class ShowRepositoryByCloudIdeRequest:
     def repository_ssh_url(self):
         """Gets the repository_ssh_url of this ShowRepositoryByCloudIdeRequest.
 
-        仓库下载地址
+        仓库下载地址。
 
         :return: The repository_ssh_url of this ShowRepositoryByCloudIdeRequest.
         :rtype: str
@@ -127,7 +127,7 @@ class ShowRepositoryByCloudIdeRequest:
     def repository_ssh_url(self, repository_ssh_url):
         """Sets the repository_ssh_url of this ShowRepositoryByCloudIdeRequest.
 
-        仓库下载地址
+        仓库下载地址。
 
         :param repository_ssh_url: The repository_ssh_url of this ShowRepositoryByCloudIdeRequest.
         :type: str
@@ -138,7 +138,7 @@ class ShowRepositoryByCloudIdeRequest:
     def region_id(self):
         """Gets the region_id of this ShowRepositoryByCloudIdeRequest.
 
-        区域ID
+        区域ID，目前仅支持北京四：cn-north-4及北京一：cn-north-1。
 
         :return: The region_id of this ShowRepositoryByCloudIdeRequest.
         :rtype: str
@@ -149,7 +149,7 @@ class ShowRepositoryByCloudIdeRequest:
     def region_id(self, region_id):
         """Sets the region_id of this ShowRepositoryByCloudIdeRequest.
 
-        区域ID
+        区域ID，目前仅支持北京四：cn-north-4及北京一：cn-north-1。
 
         :param region_id: The region_id of this ShowRepositoryByCloudIdeRequest.
         :type: str
@@ -160,7 +160,7 @@ class ShowRepositoryByCloudIdeRequest:
     def space_prefix(self):
         """Gets the space_prefix of this ShowRepositoryByCloudIdeRequest.
 
-        工作空间名称前缀
+        工作空间名称前缀，仅在is_open_last为false时生效，由用户自定义，支持大小写字母、中文、_、-，长度1-256。
 
         :return: The space_prefix of this ShowRepositoryByCloudIdeRequest.
         :rtype: str
@@ -171,7 +171,7 @@ class ShowRepositoryByCloudIdeRequest:
     def space_prefix(self, space_prefix):
         """Sets the space_prefix of this ShowRepositoryByCloudIdeRequest.
 
-        工作空间名称前缀
+        工作空间名称前缀，仅在is_open_last为false时生效，由用户自定义，支持大小写字母、中文、_、-，长度1-256。
 
         :param space_prefix: The space_prefix of this ShowRepositoryByCloudIdeRequest.
         :type: str
@@ -182,7 +182,7 @@ class ShowRepositoryByCloudIdeRequest:
     def is_open_last(self):
         """Gets the is_open_last of this ShowRepositoryByCloudIdeRequest.
 
-        是否打开上一次的工作空间
+        是否打开上一次的工作空间，true表示打开上一次工作空间，如果没有上一次工作空间会返回空，false代表打开一个全新的工作空间。
 
         :return: The is_open_last of this ShowRepositoryByCloudIdeRequest.
         :rtype: bool
@@ -193,7 +193,7 @@ class ShowRepositoryByCloudIdeRequest:
     def is_open_last(self, is_open_last):
         """Sets the is_open_last of this ShowRepositoryByCloudIdeRequest.
 
-        是否打开上一次的工作空间
+        是否打开上一次的工作空间，true表示打开上一次工作空间，如果没有上一次工作空间会返回空，false代表打开一个全新的工作空间。
 
         :param is_open_last: The is_open_last of this ShowRepositoryByCloudIdeRequest.
         :type: bool
@@ -204,7 +204,7 @@ class ShowRepositoryByCloudIdeRequest:
     def is_free(self):
         """Gets the is_free of this ShowRepositoryByCloudIdeRequest.
 
-        是否创建免费实例链接
+        是否创建 CloudIDE 免费实例链接，true表示创建一个 CloudIDE 免费实例链接，false表示创建一个 CloudIDE 收费实例链接。
 
         :return: The is_free of this ShowRepositoryByCloudIdeRequest.
         :rtype: bool
@@ -215,7 +215,7 @@ class ShowRepositoryByCloudIdeRequest:
     def is_free(self, is_free):
         """Sets the is_free of this ShowRepositoryByCloudIdeRequest.
 
-        是否创建免费实例链接
+        是否创建 CloudIDE 免费实例链接，true表示创建一个 CloudIDE 免费实例链接，false表示创建一个 CloudIDE 收费实例链接。
 
         :param is_free: The is_free of this ShowRepositoryByCloudIdeRequest.
         :type: bool

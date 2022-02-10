@@ -51,7 +51,8 @@ class QosParticipantInfo:
         'speaker_info': 'str',
         'camera_info': 'str',
         'data_center': 'str',
-        'left_reason': 'int'
+        'left_reason': 'int',
+        'exist_qos': 'bool'
     }
 
     attribute_map = {
@@ -84,10 +85,11 @@ class QosParticipantInfo:
         'speaker_info': 'speakerInfo',
         'camera_info': 'cameraInfo',
         'data_center': 'dataCenter',
-        'left_reason': 'leftReason'
+        'left_reason': 'leftReason',
+        'exist_qos': 'existQos'
     }
 
-    def __init__(self, conf_uuid=None, conference_id=None, participant_id=None, user_uuid=None, display_name=None, dept_name=None, terminal_type=None, role=None, ip_address=None, country=None, province=None, city=None, app_version=None, join_time=None, left_time=None, system_info=None, network_type=None, alarm=None, audio_alarm_send=None, video_alarm_send=None, screen_alarm_send=None, audio_alarm_rec=None, video_alarm_rec=None, screen_alarm_rec=None, cpu_alarm=None, microphone_info=None, speaker_info=None, camera_info=None, data_center=None, left_reason=None):
+    def __init__(self, conf_uuid=None, conference_id=None, participant_id=None, user_uuid=None, display_name=None, dept_name=None, terminal_type=None, role=None, ip_address=None, country=None, province=None, city=None, app_version=None, join_time=None, left_time=None, system_info=None, network_type=None, alarm=None, audio_alarm_send=None, video_alarm_send=None, screen_alarm_send=None, audio_alarm_rec=None, video_alarm_rec=None, screen_alarm_rec=None, cpu_alarm=None, microphone_info=None, speaker_info=None, camera_info=None, data_center=None, left_reason=None, exist_qos=None):
         """QosParticipantInfo - a model defined in huaweicloud sdk"""
         
         
@@ -122,6 +124,7 @@ class QosParticipantInfo:
         self._camera_info = None
         self._data_center = None
         self._left_reason = None
+        self._exist_qos = None
         self.discriminator = None
 
         if conf_uuid is not None:
@@ -184,6 +187,8 @@ class QosParticipantInfo:
             self.data_center = data_center
         if left_reason is not None:
             self.left_reason = left_reason
+        if exist_qos is not None:
+            self.exist_qos = exist_qos
 
     @property
     def conf_uuid(self):
@@ -844,6 +849,28 @@ class QosParticipantInfo:
         :type: int
         """
         self._left_reason = left_reason
+
+    @property
+    def exist_qos(self):
+        """Gets the exist_qos of this QosParticipantInfo.
+
+        与会者是否存在QoS数据。 true：存在QoS数据。 false：不存在QoS数据。
+
+        :return: The exist_qos of this QosParticipantInfo.
+        :rtype: bool
+        """
+        return self._exist_qos
+
+    @exist_qos.setter
+    def exist_qos(self, exist_qos):
+        """Sets the exist_qos of this QosParticipantInfo.
+
+        与会者是否存在QoS数据。 true：存在QoS数据。 false：不存在QoS数据。
+
+        :param exist_qos: The exist_qos of this QosParticipantInfo.
+        :type: bool
+        """
+        self._exist_qos = exist_qos
 
     def to_dict(self):
         """Returns the model properties as a dict"""

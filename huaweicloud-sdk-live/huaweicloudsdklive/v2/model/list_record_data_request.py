@@ -22,28 +22,55 @@ class ListRecordDataRequest:
     sensitive_list = []
 
     openapi_types = {
+        'publish_domain': 'str',
         'start_time': 'str',
         'end_time': 'str'
     }
 
     attribute_map = {
+        'publish_domain': 'publish_domain',
         'start_time': 'start_time',
         'end_time': 'end_time'
     }
 
-    def __init__(self, start_time=None, end_time=None):
+    def __init__(self, publish_domain=None, start_time=None, end_time=None):
         """ListRecordDataRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._publish_domain = None
         self._start_time = None
         self._end_time = None
         self.discriminator = None
 
+        if publish_domain is not None:
+            self.publish_domain = publish_domain
         if start_time is not None:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+
+    @property
+    def publish_domain(self):
+        """Gets the publish_domain of this ListRecordDataRequest.
+
+        推流域名。 
+
+        :return: The publish_domain of this ListRecordDataRequest.
+        :rtype: str
+        """
+        return self._publish_domain
+
+    @publish_domain.setter
+    def publish_domain(self, publish_domain):
+        """Sets the publish_domain of this ListRecordDataRequest.
+
+        推流域名。 
+
+        :param publish_domain: The publish_domain of this ListRecordDataRequest.
+        :type: str
+        """
+        self._publish_domain = publish_domain
 
     @property
     def start_time(self):

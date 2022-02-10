@@ -1,0 +1,139 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class CreateClusterDatastoreBody:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'version': 'str',
+        'type': 'str'
+    }
+
+    attribute_map = {
+        'version': 'version',
+        'type': 'type'
+    }
+
+    def __init__(self, version=None, type=None):
+        """CreateClusterDatastoreBody - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._version = None
+        self._type = None
+        self.discriminator = None
+
+        self.version = version
+        self.type = type
+
+    @property
+    def version(self):
+        """Gets the version of this CreateClusterDatastoreBody.
+
+        引擎版本号，支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2和7.9.3，默认为5.5.1。
+
+        :return: The version of this CreateClusterDatastoreBody.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        """Sets the version of this CreateClusterDatastoreBody.
+
+        引擎版本号，支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2和7.9.3，默认为5.5.1。
+
+        :param version: The version of this CreateClusterDatastoreBody.
+        :type: str
+        """
+        self._version = version
+
+    @property
+    def type(self):
+        """Gets the type of this CreateClusterDatastoreBody.
+
+        引擎类型，默认为elasticsearch。目前只支持elasticsearch。
+
+        :return: The type of this CreateClusterDatastoreBody.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this CreateClusterDatastoreBody.
+
+        引擎类型，默认为elasticsearch。目前只支持elasticsearch。
+
+        :param type: The type of this CreateClusterDatastoreBody.
+        :type: str
+        """
+        self._type = type
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, CreateClusterDatastoreBody):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

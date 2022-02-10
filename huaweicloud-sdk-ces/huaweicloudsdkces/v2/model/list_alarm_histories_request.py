@@ -221,7 +221,7 @@ class ListAlarmHistoriesRequest:
     def _from(self):
         """Gets the _from of this ListAlarmHistoriesRequest.
 
-        通过时间筛选traces的起始时间(不包括传入时间)，UTC时间
+        通过时间筛选traces的起始时间(不包括传入时间) 例如：2022-02-10T10:05:46+08:00
 
         :return: The _from of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -232,7 +232,7 @@ class ListAlarmHistoriesRequest:
     def _from(self, _from):
         """Sets the _from of this ListAlarmHistoriesRequest.
 
-        通过时间筛选traces的起始时间(不包括传入时间)，UTC时间
+        通过时间筛选traces的起始时间(不包括传入时间) 例如：2022-02-10T10:05:46+08:00
 
         :param _from: The _from of this ListAlarmHistoriesRequest.
         :type: str
@@ -243,7 +243,7 @@ class ListAlarmHistoriesRequest:
     def to(self):
         """Gets the to of this ListAlarmHistoriesRequest.
 
-        通过时间筛选traces的终止时间(不包括传入时间)，UTC时间
+        通过时间筛选traces的终止时间(不包括传入时间) 例如：2022-02-10T10:05:47+08:00
 
         :return: The to of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -254,7 +254,7 @@ class ListAlarmHistoriesRequest:
     def to(self, to):
         """Sets the to of this ListAlarmHistoriesRequest.
 
-        通过时间筛选traces的终止时间(不包括传入时间)，UTC时间
+        通过时间筛选traces的终止时间(不包括传入时间) 例如：2022-02-10T10:05:47+08:00
 
         :param to: The to of this ListAlarmHistoriesRequest.
         :type: str

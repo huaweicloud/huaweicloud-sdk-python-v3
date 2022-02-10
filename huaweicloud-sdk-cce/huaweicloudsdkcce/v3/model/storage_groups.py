@@ -25,7 +25,7 @@ class StorageGroups:
         'name': 'str',
         'cce_managed': 'bool',
         'selector_names': 'list[str]',
-        'virtual_spaces': 'VirtualSpace'
+        'virtual_spaces': 'list[VirtualSpace]'
     }
 
     attribute_map = {
@@ -122,9 +122,10 @@ class StorageGroups:
     def virtual_spaces(self):
         """Gets the virtual_spaces of this StorageGroups.
 
+        group中空间配置的详细管理。
 
         :return: The virtual_spaces of this StorageGroups.
-        :rtype: VirtualSpace
+        :rtype: list[VirtualSpace]
         """
         return self._virtual_spaces
 
@@ -132,9 +133,10 @@ class StorageGroups:
     def virtual_spaces(self, virtual_spaces):
         """Sets the virtual_spaces of this StorageGroups.
 
+        group中空间配置的详细管理。
 
         :param virtual_spaces: The virtual_spaces of this StorageGroups.
-        :type: VirtualSpace
+        :type: list[VirtualSpace]
         """
         self._virtual_spaces = virtual_spaces
 

@@ -50,8 +50,7 @@ class MigrateNodesSpec:
         if extend_param is not None:
             self.extend_param = extend_param
         self.login = login
-        if nodes is not None:
-            self.nodes = nodes
+        self.nodes = nodes
 
     @property
     def os(self):

@@ -69,7 +69,7 @@ class UpdateWebHookConfigStatusRequest:
     def status(self):
         """Gets the status of this UpdateWebHookConfigStatusRequest.
 
-        0:启用, 1:未启用, 2:锁定
+        连接状态： 0表示已启用 ；1表示未启动； 2表示已锁定
 
         :return: The status of this UpdateWebHookConfigStatusRequest.
         :rtype: int
@@ -80,7 +80,7 @@ class UpdateWebHookConfigStatusRequest:
     def status(self, status):
         """Sets the status of this UpdateWebHookConfigStatusRequest.
 
-        0:启用, 1:未启用, 2:锁定
+        连接状态： 0表示已启用 ；1表示未启动； 2表示已锁定
 
         :param status: The status of this UpdateWebHookConfigStatusRequest.
         :type: int

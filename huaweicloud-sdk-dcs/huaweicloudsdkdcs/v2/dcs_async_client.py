@@ -178,6 +178,69 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_stop_migration_tasks_async(self, request):
+        """批量停止数据迁移任务
+
+        批量停止数据迁移任务，接口响应成功，仅表示下发任务成功。查询到迁移任务状态为TERMINATED时，即停止成功。
+
+        :param BatchStopMigrationTasksRequest request
+        :return: BatchStopMigrationTasksResponse
+        """
+        return self.batch_stop_migration_tasks_with_http_info(request)
+
+    def batch_stop_migration_tasks_with_http_info(self, request):
+        """批量停止数据迁移任务
+
+        批量停止数据迁移任务，接口响应成功，仅表示下发任务成功。查询到迁移任务状态为TERMINATED时，即停止成功。
+
+        :param BatchStopMigrationTasksRequest request
+        :return: BatchStopMigrationTasksResponse
+        """
+
+        all_params = ['batch_stop_migration_tasks_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/migration-task/batch-stop',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchStopMigrationTasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def change_master_standby_async(self, request):
         """主备切换
 
@@ -617,6 +680,69 @@ class DcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateMigrationTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_online_migration_task_async(self, request):
+        """创建在线数据迁移任务
+
+        创建在线数据迁移任务。
+
+        :param CreateOnlineMigrationTaskRequest request
+        :return: CreateOnlineMigrationTaskResponse
+        """
+        return self.create_online_migration_task_with_http_info(request)
+
+    def create_online_migration_task_with_http_info(self, request):
+        """创建在线数据迁移任务
+
+        创建在线数据迁移任务。
+
+        :param CreateOnlineMigrationTaskRequest request
+        :return: CreateOnlineMigrationTaskResponse
+        """
+
+        all_params = ['create_online_migration_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/migration/instance',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateOnlineMigrationTaskResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2818,6 +2944,71 @@ class DcsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def set_online_migration_task_async(self, request):
+        """配置在线数据迁移任务
+
+        配置在线数据迁移任务。
+
+        :param SetOnlineMigrationTaskRequest request
+        :return: SetOnlineMigrationTaskResponse
+        """
+        return self.set_online_migration_task_with_http_info(request)
+
+    def set_online_migration_task_with_http_info(self, request):
+        """配置在线数据迁移任务
+
+        配置在线数据迁移任务。
+
+        :param SetOnlineMigrationTaskRequest request
+        :return: SetOnlineMigrationTaskResponse
+        """
+
+        all_params = ['task_id', 'set_online_migration_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/migration/{task_id}/task',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetOnlineMigrationTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_bigkey_autoscan_config_async(self, request):
         """查询大key自动分析配置
 
@@ -3507,6 +3698,69 @@ class DcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='StopMigrationTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def stop_migration_task_sync_async(self, request):
+        """同步停止数据迁移任务
+
+        同步停止数据迁移任务。
+
+        :param StopMigrationTaskSyncRequest request
+        :return: StopMigrationTaskSyncResponse
+        """
+        return self.stop_migration_task_sync_with_http_info(request)
+
+    def stop_migration_task_sync_with_http_info(self, request):
+        """同步停止数据迁移任务
+
+        同步停止数据迁移任务。
+
+        :param StopMigrationTaskSyncRequest request
+        :return: StopMigrationTaskSyncResponse
+        """
+
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/migration-task/{task_id}/sync-stop',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StopMigrationTaskSyncResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

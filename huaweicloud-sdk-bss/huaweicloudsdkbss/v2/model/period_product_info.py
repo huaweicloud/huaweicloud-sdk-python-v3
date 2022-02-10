@@ -32,7 +32,8 @@ class PeriodProductInfo:
         'size_measure_id': 'int',
         'period_type': 'int',
         'period_num': 'int',
-        'subscription_num': 'int'
+        'subscription_num': 'int',
+        'fee_installment_mode': 'str'
     }
 
     attribute_map = {
@@ -46,10 +47,11 @@ class PeriodProductInfo:
         'size_measure_id': 'size_measure_id',
         'period_type': 'period_type',
         'period_num': 'period_num',
-        'subscription_num': 'subscription_num'
+        'subscription_num': 'subscription_num',
+        'fee_installment_mode': 'fee_installment_mode'
     }
 
-    def __init__(self, id=None, cloud_service_type=None, resource_type=None, resource_spec=None, region=None, available_zone=None, resource_size=None, size_measure_id=None, period_type=None, period_num=None, subscription_num=None):
+    def __init__(self, id=None, cloud_service_type=None, resource_type=None, resource_spec=None, region=None, available_zone=None, resource_size=None, size_measure_id=None, period_type=None, period_num=None, subscription_num=None, fee_installment_mode=None):
         """PeriodProductInfo - a model defined in huaweicloud sdk"""
         
         
@@ -65,6 +67,7 @@ class PeriodProductInfo:
         self._period_type = None
         self._period_num = None
         self._subscription_num = None
+        self._fee_installment_mode = None
         self.discriminator = None
 
         self.id = id
@@ -81,6 +84,8 @@ class PeriodProductInfo:
         self.period_type = period_type
         self.period_num = period_num
         self.subscription_num = subscription_num
+        if fee_installment_mode is not None:
+            self.fee_installment_mode = fee_installment_mode
 
     @property
     def id(self):
@@ -152,7 +157,7 @@ class PeriodProductInfo:
     def resource_spec(self):
         """Gets the resource_spec of this PeriodProductInfo.
 
-        云服务类型的资源规格，部分云服务类型和资源规格举例如下： 弹性云服务器：根据操作系统类型在云服务器规格的ID后添加“.win”或“.linux”，例如“s2.small.1.linux”。云服务器规格的ID字段，您可以调用查询规格详情和规格扩展信息列表接口获取。 带宽：12_bgp：动态BGP按流量计费带宽12_sbgp：静态BGP按流量计费带宽19_bgp：动态BGP按带宽计费带宽19_sbgp：静态BGP按带宽计费带宽19_share：按带宽计费共享带宽 IP：5_bgp：动态BGP公网IP5_sbgp：静态BGP公网IP
+        云服务类型的资源规格，部分云服务类型和资源规格举例如下： 弹性云服务器：根据操作系统类型在云服务器规格的ID后添加“.win”或“.linux”，例如“s2.small.1.linux”。云服务器规格的ID字段，您可以调用查询规格详情和规格扩展信息列表接口获取。 带宽：12_bgp：动态BGP按流量计费带宽12_sbgp：静态BGP按流量计费带宽19_bgp：动态BGP按带宽计费带宽19_sbgp：静态BGP按带宽计费带宽19_share：按带宽计费共享带宽 IP：5_bgp：动态BGP公网IP5_sbgp：静态BGP公网IP 云数据库：云数据库的资源规格信息，您可以调用查询数据库规格接口获取。 分布式缓存服务：分布式缓存服务的资源规格信息，您可以调用查询产品规格接口获取。
 
         :return: The resource_spec of this PeriodProductInfo.
         :rtype: str
@@ -163,7 +168,7 @@ class PeriodProductInfo:
     def resource_spec(self, resource_spec):
         """Sets the resource_spec of this PeriodProductInfo.
 
-        云服务类型的资源规格，部分云服务类型和资源规格举例如下： 弹性云服务器：根据操作系统类型在云服务器规格的ID后添加“.win”或“.linux”，例如“s2.small.1.linux”。云服务器规格的ID字段，您可以调用查询规格详情和规格扩展信息列表接口获取。 带宽：12_bgp：动态BGP按流量计费带宽12_sbgp：静态BGP按流量计费带宽19_bgp：动态BGP按带宽计费带宽19_sbgp：静态BGP按带宽计费带宽19_share：按带宽计费共享带宽 IP：5_bgp：动态BGP公网IP5_sbgp：静态BGP公网IP
+        云服务类型的资源规格，部分云服务类型和资源规格举例如下： 弹性云服务器：根据操作系统类型在云服务器规格的ID后添加“.win”或“.linux”，例如“s2.small.1.linux”。云服务器规格的ID字段，您可以调用查询规格详情和规格扩展信息列表接口获取。 带宽：12_bgp：动态BGP按流量计费带宽12_sbgp：静态BGP按流量计费带宽19_bgp：动态BGP按带宽计费带宽19_sbgp：静态BGP按带宽计费带宽19_share：按带宽计费共享带宽 IP：5_bgp：动态BGP公网IP5_sbgp：静态BGP公网IP 云数据库：云数据库的资源规格信息，您可以调用查询数据库规格接口获取。 分布式缓存服务：分布式缓存服务的资源规格信息，您可以调用查询产品规格接口获取。
 
         :param resource_spec: The resource_spec of this PeriodProductInfo.
         :type: str
@@ -323,6 +328,28 @@ class PeriodProductInfo:
         :type: int
         """
         self._subscription_num = subscription_num
+
+    @property
+    def fee_installment_mode(self):
+        """Gets the fee_installment_mode of this PeriodProductInfo.
+
+        费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不传则默认为空，效果等同于“NA：不支持费用分期模式”。暂只支持IES产品。
+
+        :return: The fee_installment_mode of this PeriodProductInfo.
+        :rtype: str
+        """
+        return self._fee_installment_mode
+
+    @fee_installment_mode.setter
+    def fee_installment_mode(self, fee_installment_mode):
+        """Sets the fee_installment_mode of this PeriodProductInfo.
+
+        费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不传则默认为空，效果等同于“NA：不支持费用分期模式”。暂只支持IES产品。
+
+        :param fee_installment_mode: The fee_installment_mode of this PeriodProductInfo.
+        :type: str
+        """
+        self._fee_installment_mode = fee_installment_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -139,7 +139,7 @@ class ListHistoryStreamsRequest:
     def start_time(self):
         """Gets the start_time of this ListHistoryStreamsRequest.
 
-        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认查询1天数据。 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天。  若参数为空，默认查询1天数据。 
 
         :return: The start_time of this ListHistoryStreamsRequest.
         :rtype: str
@@ -150,7 +150,7 @@ class ListHistoryStreamsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListHistoryStreamsRequest.
 
-        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期1个月。  若参数为空，默认查询1天数据。 
+        起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天。  若参数为空，默认查询1天数据。 
 
         :param start_time: The start_time of this ListHistoryStreamsRequest.
         :type: str
@@ -161,7 +161,7 @@ class ListHistoryStreamsRequest:
     def end_time(self):
         """Gets the end_time of this ListHistoryStreamsRequest.
 
-        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度1天，最大查询周期1个月。结束时间需大于起始时间。 
+        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度1天。结束时间需大于起始时间。 
 
         :return: The end_time of this ListHistoryStreamsRequest.
         :rtype: str
@@ -172,7 +172,7 @@ class ListHistoryStreamsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListHistoryStreamsRequest.
 
-        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度1天，最大查询周期1个月。结束时间需大于起始时间。 
+        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度1天。结束时间需大于起始时间。 
 
         :param end_time: The end_time of this ListHistoryStreamsRequest.
         :type: str

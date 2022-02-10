@@ -22,7 +22,7 @@ class UpdateAlarmRuleRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'AlarmRuleParam'
+        'body': 'UpdateAlarmRuleParam'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class UpdateAlarmRuleRequest:
 
 
         :return: The body of this UpdateAlarmRuleRequest.
-        :rtype: AlarmRuleParam
+        :rtype: UpdateAlarmRuleParam
         """
         return self._body
 
@@ -56,7 +56,7 @@ class UpdateAlarmRuleRequest:
 
 
         :param body: The body of this UpdateAlarmRuleRequest.
-        :type: AlarmRuleParam
+        :type: UpdateAlarmRuleParam
         """
         self._body = body
 

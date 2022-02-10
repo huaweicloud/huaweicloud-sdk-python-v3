@@ -1,0 +1,188 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class CreateClusterInstanceBody:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'flavor_ref': 'str',
+        'volume': 'CreateClusterInstanceVolumeBody',
+        'nics': 'CreateClusterInstanceNicsBody',
+        'availability_zone': 'str'
+    }
+
+    attribute_map = {
+        'flavor_ref': 'flavorRef',
+        'volume': 'volume',
+        'nics': 'nics',
+        'availability_zone': 'availability_zone'
+    }
+
+    def __init__(self, flavor_ref=None, volume=None, nics=None, availability_zone=None):
+        """CreateClusterInstanceBody - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._flavor_ref = None
+        self._volume = None
+        self._nics = None
+        self._availability_zone = None
+        self.discriminator = None
+
+        self.flavor_ref = flavor_ref
+        self.volume = volume
+        self.nics = nics
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
+
+    @property
+    def flavor_ref(self):
+        """Gets the flavor_ref of this CreateClusterInstanceBody.
+
+        实例规格名称。例如乌兰察布三中，  - ess.spec-2u16g规格对应的取值范围为40GB～1280GB。 - ess.spec-4u32g规格对应的取值范围为40GB～2560GB。 - ess.spec-8u64g规格对应的取值范围为80GB～5120GB。 - ess.spec-16u128g规格对应的取值范围为160GB～10240GB。
+
+        :return: The flavor_ref of this CreateClusterInstanceBody.
+        :rtype: str
+        """
+        return self._flavor_ref
+
+    @flavor_ref.setter
+    def flavor_ref(self, flavor_ref):
+        """Sets the flavor_ref of this CreateClusterInstanceBody.
+
+        实例规格名称。例如乌兰察布三中，  - ess.spec-2u16g规格对应的取值范围为40GB～1280GB。 - ess.spec-4u32g规格对应的取值范围为40GB～2560GB。 - ess.spec-8u64g规格对应的取值范围为80GB～5120GB。 - ess.spec-16u128g规格对应的取值范围为160GB～10240GB。
+
+        :param flavor_ref: The flavor_ref of this CreateClusterInstanceBody.
+        :type: str
+        """
+        self._flavor_ref = flavor_ref
+
+    @property
+    def volume(self):
+        """Gets the volume of this CreateClusterInstanceBody.
+
+
+        :return: The volume of this CreateClusterInstanceBody.
+        :rtype: CreateClusterInstanceVolumeBody
+        """
+        return self._volume
+
+    @volume.setter
+    def volume(self, volume):
+        """Sets the volume of this CreateClusterInstanceBody.
+
+
+        :param volume: The volume of this CreateClusterInstanceBody.
+        :type: CreateClusterInstanceVolumeBody
+        """
+        self._volume = volume
+
+    @property
+    def nics(self):
+        """Gets the nics of this CreateClusterInstanceBody.
+
+
+        :return: The nics of this CreateClusterInstanceBody.
+        :rtype: CreateClusterInstanceNicsBody
+        """
+        return self._nics
+
+    @nics.setter
+    def nics(self, nics):
+        """Sets the nics of this CreateClusterInstanceBody.
+
+
+        :param nics: The nics of this CreateClusterInstanceBody.
+        :type: CreateClusterInstanceNicsBody
+        """
+        self._nics = nics
+
+    @property
+    def availability_zone(self):
+        """Gets the availability_zone of this CreateClusterInstanceBody.
+
+        可用区。不填时默认创建单AZ。  如果需要创建多AZ，各个AZ之间使用英文逗号分隔，比如az1,az2 ，az不能重复输入，并且要求节点个数大于等于AZ个数。  如果节点个数为AZ个数的倍数，节点将会均匀的分布到各个AZ。如果节点个数不为AZ个数的倍数时，各个AZ分布的节点个数之和的绝对值之差小于等于1。
+
+        :return: The availability_zone of this CreateClusterInstanceBody.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        """Sets the availability_zone of this CreateClusterInstanceBody.
+
+        可用区。不填时默认创建单AZ。  如果需要创建多AZ，各个AZ之间使用英文逗号分隔，比如az1,az2 ，az不能重复输入，并且要求节点个数大于等于AZ个数。  如果节点个数为AZ个数的倍数，节点将会均匀的分布到各个AZ。如果节点个数不为AZ个数的倍数时，各个AZ分布的节点个数之和的绝对值之差小于等于1。
+
+        :param availability_zone: The availability_zone of this CreateClusterInstanceBody.
+        :type: str
+        """
+        self._availability_zone = availability_zone
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, CreateClusterInstanceBody):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

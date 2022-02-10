@@ -22,55 +22,29 @@ class RecyclePolicy:
     sensitive_list = []
 
     openapi_types = {
-        'is_open_recycle_policy': 'bool',
         'retention_period_in_days': 'str'
     }
 
     attribute_map = {
-        'is_open_recycle_policy': 'is_open_recycle_policy',
         'retention_period_in_days': 'retention_period_in_days'
     }
 
-    def __init__(self, is_open_recycle_policy=None, retention_period_in_days=None):
+    def __init__(self, retention_period_in_days=None):
         """RecyclePolicy - a model defined in huaweicloud sdk"""
         
         
 
-        self._is_open_recycle_policy = None
         self._retention_period_in_days = None
         self.discriminator = None
 
-        self.is_open_recycle_policy = is_open_recycle_policy
         if retention_period_in_days is not None:
             self.retention_period_in_days = retention_period_in_days
-
-    @property
-    def is_open_recycle_policy(self):
-        """Gets the is_open_recycle_policy of this RecyclePolicy.
-
-        是否打开回收策略，取值为“true”或“false”。
-
-        :return: The is_open_recycle_policy of this RecyclePolicy.
-        :rtype: bool
-        """
-        return self._is_open_recycle_policy
-
-    @is_open_recycle_policy.setter
-    def is_open_recycle_policy(self, is_open_recycle_policy):
-        """Sets the is_open_recycle_policy of this RecyclePolicy.
-
-        是否打开回收策略，取值为“true”或“false”。
-
-        :param is_open_recycle_policy: The is_open_recycle_policy of this RecyclePolicy.
-        :type: bool
-        """
-        self._is_open_recycle_policy = is_open_recycle_policy
 
     @property
     def retention_period_in_days(self):
         """Gets the retention_period_in_days of this RecyclePolicy.
 
-        保留时间，设置已删除实例保留天数，支持整数，可设置范围为1~7天。  当“is_open_recycle_policy”取值为“true”时且“retention_period_in_days”为空，保留时间默认是7天。
+        保留时间，设置已删除实例保留天数，支持整数，可设置范围为1~7天。  当“retention_period_in_days”为空，保留时间默认是7天。
 
         :return: The retention_period_in_days of this RecyclePolicy.
         :rtype: str
@@ -81,7 +55,7 @@ class RecyclePolicy:
     def retention_period_in_days(self, retention_period_in_days):
         """Sets the retention_period_in_days of this RecyclePolicy.
 
-        保留时间，设置已删除实例保留天数，支持整数，可设置范围为1~7天。  当“is_open_recycle_policy”取值为“true”时且“retention_period_in_days”为空，保留时间默认是7天。
+        保留时间，设置已删除实例保留天数，支持整数，可设置范围为1~7天。  当“retention_period_in_days”为空，保留时间默认是7天。
 
         :param retention_period_in_days: The retention_period_in_days of this RecyclePolicy.
         :type: str

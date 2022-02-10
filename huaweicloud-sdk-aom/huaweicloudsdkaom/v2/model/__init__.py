@@ -96,6 +96,7 @@ from huaweicloudsdkaom.v2.model.show_alarm_rule_response import ShowAlarmRuleRes
 from huaweicloudsdkaom.v2.model.show_metrics_data_request import ShowMetricsDataRequest
 from huaweicloudsdkaom.v2.model.show_metrics_data_response import ShowMetricsDataResponse
 from huaweicloudsdkaom.v2.model.statistic_value import StatisticValue
+from huaweicloudsdkaom.v2.model.update_alarm_rule_param import UpdateAlarmRuleParam
 from huaweicloudsdkaom.v2.model.update_alarm_rule_request import UpdateAlarmRuleRequest
 from huaweicloudsdkaom.v2.model.update_alarm_rule_response import UpdateAlarmRuleResponse
 from huaweicloudsdkaom.v2.model.value_data import ValueData

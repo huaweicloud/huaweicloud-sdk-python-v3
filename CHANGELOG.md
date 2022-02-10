@@ -1,3 +1,244 @@
+# 3.0.77 2022-02-10
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `UpdateAlarmRule`:
+    - Modify the type `string` -> `enum` of the request parameter `statistic`
+    - The request parameter `alarm_level`, `comparison_operator`, `evaluation_periods`, `metric_name`, `namespace`, `period`, `statistic`, `threshold`, `unit` changed to not required
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListRateOnPeriodDetail`:
+    - Add the request parameter `fee_installment_mode`
+    - Add the response parameters `installment_official_website_amount`、`installment_period_type`、`installment_official_discount_amount`、`installment_amount`
+
+### HuaweiCloud SDK CBR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListProtectable`:
+    - Modify the type `string` -> `boolean` of the response parameter `result`
+    - Modify the type `string` -> `int32` of the response parameter `size`
+  - Changes of the interface `ShowProtectable`:
+    - Modify the type `string` -> `boolean` of the response parameter `result`
+    - Modify the type `string` -> `int32` of the response parameter `size`
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - Support the interface `ShowVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameters `kind`, `apiVersion`, `metadata`, `spec`, `status` from the interface `CreateAddonInstance`
+  - Add the response parameters `isStatic`, `privateIPv6IP` to the interface `ListNodes`
+  - Add the request parameter `isStatic` to the interface `CreateNode`
+  - Add the response parameters `isStatic`, `privateIPv6IP` to the interface `DeleteNode`
+  - Add the response parameters `isStatic`, `privateIPv6IP` to the interface `ShowNode`
+  - Add the response parameters `isStatic`, `privateIPv6IP` to the interface `UpdateNode`
+  - Changes of the interface `RemoveNode`:
+    - The request parameter `uid` changed to required
+    - The response parameter `uid` changed to required
+  - Changes of the interface `MigrateNode`:
+    - The request parameter `uid` changed to required
+    - The response parameter `uid` changed to required
+  - Add the response parameter `isStatic` to the interface `ListNodePools`
+  - Add the request parameter `isStatic` to the interface `CreateNodePool`
+  - Add the response parameter `isStatic` to the interface `DeleteNodePool`
+  - Add the response parameter `isStatic` to the interface `ShowNodePool`
+  - Changes of the interface `UpdateNodePool`:
+    - Add the request parameter `isStatic`
+    - Add the response parameter `isStatic`
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - Support the following interfaces：
+    - `UpdateOndemandClusterToPeriod`
+    - `UpdateClusterName`
+    - `ResetPassword`
+    - `StartKibanaPublic`
+    - `UpdateCloseKibana`
+    - `UpdateAlterKibana`
+    - `UpdatePublicKibanaWhitelist`
+    - `StopPublicKibanaWhitelist`
+    - `CreateCnf`
+    - `UpdateCnf`
+    - `StartPipeline`
+    - `StopPipeline`
+    - `AddFavorite`
+    - `StartConnectivityTest`
+    - `ListTemplates`
+    - `ListConfs`
+    - `ListPipelines`
+    - `ListActions`
+    - `ShowGetConfDetail`
+    - `DeleteConf`
+    - `DeleteTemplate`
+    - `StartLogs`
+    - `StopLogs`
+    - `ShowGetLogSetting`
+    - `UpdateLogSetting`
+    - `StartLogAutoBackupPolicy`
+    - `StopLogAutoBackupPolicy`
+    - `CreateLogBackup`
+    - `ShowLogBackup`
+    - `CreateBindPublic`
+    - `UpdateUnbindPublic`
+    - `UpdatePublicBandWidth`
+    - `StartPublicWhitelist`
+    - `StopPublicWhitelist`
+    - `StartVpecp`
+    - `StopVpecp`
+    - `ShowVpcepConnection`
+    - `UpdateVpcepConnection`
+    - `UpdateVpcepWhitelist`
+    - `UpdateYmls`
+    - `ListYmlsJob`
+    - `ListYmls`
+    - `ListClustersDetails`
+    - `CreateCluster`
+    - `DeleteCluster`
+    - `RestartCluster`
+    - `UpdateExtendCluster`
+    - `UpdateExtendInstanceStorage`
+    - `ListFlavors`
+    - `ShowClusterTag`
+    - `CreateClustersTags`
+    - `ListClustersTags`
+    - `UpdateBatchClustersTags`
+    - `DeleteClustersTags`
+    - `ShowIkThesaurus`
+    - `CreateLoadIkThesaurus`
+    - `DeleteIkThesaurus`
+    - `StartAutoSetting`
+    - `UpdateSnapshotSetting`
+    - `ShowAutoCreatePolicy`
+    - `CreateAutoCreatePolicy`
+    - `CreateSnapshot`
+    - `ListSnapshots`
+    - `StopSnapshot`
+    - `RestoreSnapshot`
+    - `DeleteSnapshot`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - Support the interfaces `CreateOnlineMigrationTask`, `SetOnlineMigrationTask`, `BatchStopMigrationTasks`, `StopMigrationTaskSync`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DevStar
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowApplicationDependentResources`:
+    - Add the request parameters `X-Auth-Token`, `limit`, `offset`
+    - Add the response parameter `count`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateFunction`:
+    - Add the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3`, Remove the enum values `Python2.7`, `Python3.6`, `Go1.8`, `Java8`, `Node.js6.10`, `Node.js8.10`, `Custom`, `PHP7.3` from the request parameter `runtime`
+    - Add the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3`, Remove the enum values `Python2.7`, `Python3.6`, `Go1.8`, `Java8`, `Node.js6.10`, `Node.js8.10`, `Custom`, `PHP7.3` from the response parameter `runtime`
+  - Add the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3`, Remove the enum values `Python2.7`, `Python3.6`, `Go1.8`, `Java8`, `Node.js6.10`, `Node.js8.10`, `Custom`, `PHP7.3` from the response parameter `runtime` to the interface `ListFunctions`
+  - Add the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3`, Remove the enum values `Python2.7`, `Python3.6`, `Go1.8`, `Java8`, `Node.js6.10`, `Node.js8.10`, `Custom`, `PHP7.3` from the response parameter `runtime` to the interface `UpdateFunctionCode`
+  - Add the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3`, Remove the enum values `Python2.7`, `Python3.6`, `Go1.8`, `Java8`, `Node.js6.10`, `Node.js8.10`, `Custom`, `PHP7.3` from the response parameter `runtime` to the interface `ShowFunctionCode`
+  - Changes of the interface `UpdateFunctionConfig`:
+    - Add the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3`, Remove the enum values `Python2.7`, `Python3.6`, `Go1.8`, `Java8`, `Node.js6.10`, `Node.js8.10`, `Custom`, `PHP7.3` from the request parameter `runtime`
+    - Add the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3`, Remove the enum values `Python2.7`, `Python3.6`, `Go1.8`, `Java8`, `Node.js6.10`, `Node.js8.10`, `Custom`, `PHP7.3` from the response parameter `runtime`
+  - Add the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3`, Remove the enum values `Python2.7`, `Python3.6`, `Go1.8`, `Java8`, `Node.js6.10`, `Node.js8.10`, `Custom`, `PHP7.3` from the response parameter `runtime` to the interface `ShowFunctionConfig`
+  - Add the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3`, Remove the enum values `Python2.7`, `Python3.6`, `Go1.8`, `Java8`, `Node.js6.10`, `Node.js8.10`, `Custom`, `PHP7.3` from the response parameter `runtime` to the interface `CreateFunctionVersion`
+  - Add the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3`, Remove the enum values `Python2.7`, `Python3.6`, `Go1.8`, `Java8`, `Node.js6.10`, `Node.js8.10`, `Custom`, `PHP7.3` from the response parameter `runtime` to the interface `ListFunctionVersions`
+  - Add the enum values `Go1.x` to the request parameter `runtime` to the interface `CreateDependency`
+  - Add the enum values `Go1.x` to the request parameter `runtime` to the interface `UpdateDependency`
+  - Add the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3`, Remove the enum values `Python2.7`, `Python3.6`, `Go1.8`, `Java8`, `Node.js6.10`, `Node.js8.10`, `Custom`, `PHP7.3` from the response parameter `runtime` to the interface `ImportFunction`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `alias` to the interface `ShowGaussMySqlInstanceInfo`
+  - Add the response parameter `job_id` to the interface `CreateGaussMySqlBackup`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `int32` -> `string` of the response parameter `port` of the interface `ListInstances`
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - Support the interfaces `ListTranscodeTaskCount`, `ListAreaDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `publish_domain` to the interface `ListRecordData`
+  - Remove the request parameter `plan_record_time` from the interface `CreateRecordRule`
+  - Remove the response parameter `plan_record_time` from the interface `ListRecordRules`
+  - Remove the response parameter `plan_record_time` from the interface `ShowRecordRule`
+  - Changes of the interface `UpdateRecordRule`:
+    - Remove the request parameter `plan_record_time`
+    - Remove the response parameter `plan_record_time`
+  - Remove the request parameter `on_demand_callback_url` from the interface `CreateRecordCallbackConfig`
+  - Remove the response parameter `on_demand_callback_url` from the interface `ListRecordCallbackConfigs`
+  - Remove the response parameter `on_demand_callback_url` from the interface `ShowRecordCallbackConfig`
+  - Remove the request parameter `on_demand_callback_url` from the interface `UpdateRecordCallbackConfig`
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `existQos` to the interface `SearchQosParticipants`
+  - Add the response parameter `existQos` to the interface `SearchQosParticipantDetail`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `restore_all_database` to the interface `RestoreToExistingInstance`
+  - Remove the request parameter `is_open_recycle_policy` from the interface `StartRecyclePolicy`
+
 # 3.0.76 2022-01-25
 
 ### HuaweiCloud SDK APIG

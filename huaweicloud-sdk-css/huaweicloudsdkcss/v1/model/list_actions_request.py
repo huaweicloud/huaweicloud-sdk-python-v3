@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class PlanRecordTime:
+class ListActionsRequest:
 
 
     """
@@ -22,71 +22,44 @@ class PlanRecordTime:
     sensitive_list = []
 
     openapi_types = {
-        'start_time': 'date',
-        'end_time': 'date'
+        'cluster_id': 'str'
     }
 
     attribute_map = {
-        'start_time': 'start_time',
-        'end_time': 'end_time'
+        'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, start_time=None, end_time=None):
-        """PlanRecordTime - a model defined in huaweicloud sdk"""
+    def __init__(self, cluster_id=None):
+        """ListActionsRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._start_time = None
-        self._end_time = None
+        self._cluster_id = None
         self.discriminator = None
 
-        self.start_time = start_time
-        if end_time is not None:
-            self.end_time = end_time
+        self.cluster_id = cluster_id
 
     @property
-    def start_time(self):
-        """Gets the start_time of this PlanRecordTime.
+    def cluster_id(self):
+        """Gets the cluster_id of this ListActionsRequest.
 
-        录制开始时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。
+        指定查询集群ID。
 
-        :return: The start_time of this PlanRecordTime.
-        :rtype: date
+        :return: The cluster_id of this ListActionsRequest.
+        :rtype: str
         """
-        return self._start_time
+        return self._cluster_id
 
-    @start_time.setter
-    def start_time(self, start_time):
-        """Sets the start_time of this PlanRecordTime.
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        """Sets the cluster_id of this ListActionsRequest.
 
-        录制开始时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。
+        指定查询集群ID。
 
-        :param start_time: The start_time of this PlanRecordTime.
-        :type: date
+        :param cluster_id: The cluster_id of this ListActionsRequest.
+        :type: str
         """
-        self._start_time = start_time
-
-    @property
-    def end_time(self):
-        """Gets the end_time of this PlanRecordTime.
-
-        录制结束时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。如果填写，填写的时间必须晚于当前时间。如果不填写，则在计划录制触发后不停止。
-
-        :return: The end_time of this PlanRecordTime.
-        :rtype: date
-        """
-        return self._end_time
-
-    @end_time.setter
-    def end_time(self, end_time):
-        """Sets the end_time of this PlanRecordTime.
-
-        录制结束时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。如果填写，填写的时间必须晚于当前时间。如果不填写，则在计划录制触发后不停止。
-
-        :param end_time: The end_time of this PlanRecordTime.
-        :type: date
-        """
-        self._end_time = end_time
+        self._cluster_id = cluster_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -130,7 +103,7 @@ class PlanRecordTime:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanRecordTime):
+        if not isinstance(other, ListActionsRequest):
             return False
 
         return self.__dict__ == other.__dict__

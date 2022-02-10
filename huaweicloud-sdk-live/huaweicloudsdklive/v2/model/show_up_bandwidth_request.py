@@ -232,7 +232,7 @@ class ShowUpBandwidthRequest:
     def end_time(self):
         """Gets the end_time of this ShowUpBandwidthRequest.
 
-        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天，最大查询周期90天。结束时间需大于起始时间。 
+        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天，最大查询周期1年。结束时间需大于起始时间。 
 
         :return: The end_time of this ShowUpBandwidthRequest.
         :rtype: str
@@ -243,7 +243,7 @@ class ShowUpBandwidthRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowUpBandwidthRequest.
 
-        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天，最大查询周期90天。结束时间需大于起始时间。 
+        结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度31天，最大查询周期1年。结束时间需大于起始时间。 
 
         :param end_time: The end_time of this ShowUpBandwidthRequest.
         :type: str

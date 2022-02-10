@@ -25,17 +25,21 @@ class PeriodProductOfficialRatingResult:
         'id': 'str',
         'product_id': 'str',
         'official_website_amount': 'decimal.Decimal',
-        'measure_id': 'int'
+        'measure_id': 'int',
+        'installment_official_website_amount': 'str',
+        'installment_period_type': 'int'
     }
 
     attribute_map = {
         'id': 'id',
         'product_id': 'product_id',
         'official_website_amount': 'official_website_amount',
-        'measure_id': 'measure_id'
+        'measure_id': 'measure_id',
+        'installment_official_website_amount': 'installment_official_website_amount',
+        'installment_period_type': 'installment_period_type'
     }
 
-    def __init__(self, id=None, product_id=None, official_website_amount=None, measure_id=None):
+    def __init__(self, id=None, product_id=None, official_website_amount=None, measure_id=None, installment_official_website_amount=None, installment_period_type=None):
         """PeriodProductOfficialRatingResult - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +48,8 @@ class PeriodProductOfficialRatingResult:
         self._product_id = None
         self._official_website_amount = None
         self._measure_id = None
+        self._installment_official_website_amount = None
+        self._installment_period_type = None
         self.discriminator = None
 
         if id is not None:
@@ -54,6 +60,10 @@ class PeriodProductOfficialRatingResult:
             self.official_website_amount = official_website_amount
         if measure_id is not None:
             self.measure_id = measure_id
+        if installment_official_website_amount is not None:
+            self.installment_official_website_amount = installment_official_website_amount
+        if installment_period_type is not None:
+            self.installment_period_type = installment_period_type
 
     @property
     def id(self):
@@ -142,6 +152,50 @@ class PeriodProductOfficialRatingResult:
         :type: int
         """
         self._measure_id = measure_id
+
+    @property
+    def installment_official_website_amount(self):
+        """Gets the installment_official_website_amount of this PeriodProductOfficialRatingResult.
+
+        |参数名称：分期金额的官网价| |参数约束及描述：分期金额的官网价|
+
+        :return: The installment_official_website_amount of this PeriodProductOfficialRatingResult.
+        :rtype: str
+        """
+        return self._installment_official_website_amount
+
+    @installment_official_website_amount.setter
+    def installment_official_website_amount(self, installment_official_website_amount):
+        """Sets the installment_official_website_amount of this PeriodProductOfficialRatingResult.
+
+        |参数名称：分期金额的官网价| |参数约束及描述：分期金额的官网价|
+
+        :param installment_official_website_amount: The installment_official_website_amount of this PeriodProductOfficialRatingResult.
+        :type: str
+        """
+        self._installment_official_website_amount = installment_official_website_amount
+
+    @property
+    def installment_period_type(self):
+        """Gets the installment_period_type of this PeriodProductOfficialRatingResult.
+
+        |参数名称：分期付款的周期类型2：月|
+
+        :return: The installment_period_type of this PeriodProductOfficialRatingResult.
+        :rtype: int
+        """
+        return self._installment_period_type
+
+    @installment_period_type.setter
+    def installment_period_type(self, installment_period_type):
+        """Sets the installment_period_type of this PeriodProductOfficialRatingResult.
+
+        |参数名称：分期付款的周期类型2：月|
+
+        :param installment_period_type: The installment_period_type of this PeriodProductOfficialRatingResult.
+        :type: int
+        """
+        self._installment_period_type = installment_period_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

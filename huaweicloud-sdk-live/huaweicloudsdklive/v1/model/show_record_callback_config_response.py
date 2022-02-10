@@ -27,7 +27,6 @@ class ShowRecordCallbackConfigResponse(SdkResponse):
         'app': 'str',
         'notify_callback_url': 'str',
         'notify_event_subscription': 'list[str]',
-        'on_demand_callback_url': 'str',
         'sign_type': 'str',
         'create_time': 'date',
         'update_time': 'date'
@@ -39,13 +38,12 @@ class ShowRecordCallbackConfigResponse(SdkResponse):
         'app': 'app',
         'notify_callback_url': 'notify_callback_url',
         'notify_event_subscription': 'notify_event_subscription',
-        'on_demand_callback_url': 'on_demand_callback_url',
         'sign_type': 'sign_type',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, publish_domain=None, app=None, notify_callback_url=None, notify_event_subscription=None, on_demand_callback_url=None, sign_type=None, create_time=None, update_time=None):
+    def __init__(self, id=None, publish_domain=None, app=None, notify_callback_url=None, notify_event_subscription=None, sign_type=None, create_time=None, update_time=None):
         """ShowRecordCallbackConfigResponse - a model defined in huaweicloud sdk"""
         
         super(ShowRecordCallbackConfigResponse, self).__init__()
@@ -55,7 +53,6 @@ class ShowRecordCallbackConfigResponse(SdkResponse):
         self._app = None
         self._notify_callback_url = None
         self._notify_event_subscription = None
-        self._on_demand_callback_url = None
         self._sign_type = None
         self._create_time = None
         self._update_time = None
@@ -71,8 +68,6 @@ class ShowRecordCallbackConfigResponse(SdkResponse):
             self.notify_callback_url = notify_callback_url
         if notify_event_subscription is not None:
             self.notify_event_subscription = notify_event_subscription
-        if on_demand_callback_url is not None:
-            self.on_demand_callback_url = on_demand_callback_url
         if sign_type is not None:
             self.sign_type = sign_type
         if create_time is not None:
@@ -189,28 +184,6 @@ class ShowRecordCallbackConfigResponse(SdkResponse):
         :type: list[str]
         """
         self._notify_event_subscription = notify_event_subscription
-
-    @property
-    def on_demand_callback_url(self):
-        """Gets the on_demand_callback_url of this ShowRecordCallbackConfigResponse.
-
-        按需录制回调url地址
-
-        :return: The on_demand_callback_url of this ShowRecordCallbackConfigResponse.
-        :rtype: str
-        """
-        return self._on_demand_callback_url
-
-    @on_demand_callback_url.setter
-    def on_demand_callback_url(self, on_demand_callback_url):
-        """Sets the on_demand_callback_url of this ShowRecordCallbackConfigResponse.
-
-        按需录制回调url地址
-
-        :param on_demand_callback_url: The on_demand_callback_url of this ShowRecordCallbackConfigResponse.
-        :type: str
-        """
-        self._on_demand_callback_url = on_demand_callback_url
 
     @property
     def sign_type(self):

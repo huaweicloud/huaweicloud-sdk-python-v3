@@ -69,7 +69,7 @@ class NodePoolCondition:
     def type(self):
         """Gets the type of this NodePoolCondition.
 
-        Condition类型。
+        Condition类型，当前支持类型如下 - \"Scalable\"：节点池实际的可扩容状态，如果状态为\"False\"时则不会再次触发节点池扩容行为。 - \"QuotaInsufficient\"：节点池扩容依赖的配额不足，影响节点池可扩容状态。 - \"ResourceInsufficient\"：节点池扩容依赖的资源不足，影响节点池可扩容状态。 - \"UnexpectedError\"：节点池非预期扩容失败，影响节点池可扩容状态。 - \"LockedByOrder\"：包周期节点池被订单锁定，此时Reason为待支付订单ID。 - \"Error\"：节点池错误，通常由于删除失败触发。 
 
         :return: The type of this NodePoolCondition.
         :rtype: str
@@ -80,7 +80,7 @@ class NodePoolCondition:
     def type(self, type):
         """Sets the type of this NodePoolCondition.
 
-        Condition类型。
+        Condition类型，当前支持类型如下 - \"Scalable\"：节点池实际的可扩容状态，如果状态为\"False\"时则不会再次触发节点池扩容行为。 - \"QuotaInsufficient\"：节点池扩容依赖的配额不足，影响节点池可扩容状态。 - \"ResourceInsufficient\"：节点池扩容依赖的资源不足，影响节点池可扩容状态。 - \"UnexpectedError\"：节点池非预期扩容失败，影响节点池可扩容状态。 - \"LockedByOrder\"：包周期节点池被订单锁定，此时Reason为待支付订单ID。 - \"Error\"：节点池错误，通常由于删除失败触发。 
 
         :param type: The type of this NodePoolCondition.
         :type: str
@@ -91,7 +91,7 @@ class NodePoolCondition:
     def status(self):
         """Gets the status of this NodePoolCondition.
 
-        Condition当前状态。
+        Condition当前状态，取值如下 - \"True\" - \"False\" 
 
         :return: The status of this NodePoolCondition.
         :rtype: str
@@ -102,7 +102,7 @@ class NodePoolCondition:
     def status(self, status):
         """Sets the status of this NodePoolCondition.
 
-        Condition当前状态。
+        Condition当前状态，取值如下 - \"True\" - \"False\" 
 
         :param status: The status of this NodePoolCondition.
         :type: str

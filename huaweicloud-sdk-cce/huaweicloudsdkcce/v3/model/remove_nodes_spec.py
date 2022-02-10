@@ -41,8 +41,7 @@ class RemoveNodesSpec:
         self.discriminator = None
 
         self.login = login
-        if nodes is not None:
-            self.nodes = nodes
+        self.nodes = nodes
 
     @property
     def login(self):

@@ -24,7 +24,7 @@ class ProtectableResult:
     openapi_types = {
         'code': 'str',
         'reason': 'str',
-        'result': 'str',
+        'result': 'bool',
         'vault': 'VaultGet'
     }
 
@@ -105,7 +105,7 @@ class ProtectableResult:
         是否可备份
 
         :return: The result of this ProtectableResult.
-        :rtype: str
+        :rtype: bool
         """
         return self._result
 
@@ -116,7 +116,7 @@ class ProtectableResult:
         是否可备份
 
         :param result: The result of this ProtectableResult.
-        :type: str
+        :type: bool
         """
         self._result = result
 

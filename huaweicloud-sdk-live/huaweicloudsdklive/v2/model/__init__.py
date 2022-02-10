@@ -3,9 +3,13 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdklive.v2.model.area_detail import AreaDetail
+from huaweicloudsdklive.v2.model.area_time_value import AreaTimeValue
 from huaweicloudsdklive.v2.model.history_stream_info import HistoryStreamInfo
 from huaweicloudsdklive.v2.model.http_code import HttpCode
 from huaweicloudsdklive.v2.model.http_code_summary import HttpCodeSummary
+from huaweicloudsdklive.v2.model.list_area_detail_request import ListAreaDetailRequest
+from huaweicloudsdklive.v2.model.list_area_detail_response import ListAreaDetailResponse
 from huaweicloudsdklive.v2.model.list_bandwidth_detail_request import ListBandwidthDetailRequest
 from huaweicloudsdklive.v2.model.list_bandwidth_detail_response import ListBandwidthDetailResponse
 from huaweicloudsdklive.v2.model.list_domain_bandwidth_peak_request import ListDomainBandwidthPeakRequest
@@ -28,6 +32,8 @@ from huaweicloudsdklive.v2.model.list_snapshot_data_request import ListSnapshotD
 from huaweicloudsdklive.v2.model.list_snapshot_data_response import ListSnapshotDataResponse
 from huaweicloudsdklive.v2.model.list_transcode_data_request import ListTranscodeDataRequest
 from huaweicloudsdklive.v2.model.list_transcode_data_response import ListTranscodeDataResponse
+from huaweicloudsdklive.v2.model.list_transcode_task_count_request import ListTranscodeTaskCountRequest
+from huaweicloudsdklive.v2.model.list_transcode_task_count_response import ListTranscodeTaskCountResponse
 from huaweicloudsdklive.v2.model.list_users_of_stream_request import ListUsersOfStreamRequest
 from huaweicloudsdklive.v2.model.list_users_of_stream_response import ListUsersOfStreamResponse
 from huaweicloudsdklive.v2.model.peak_bandwidth_data import PeakBandwidthData
@@ -41,10 +47,13 @@ from huaweicloudsdklive.v2.model.show_up_bandwidth_response import ShowUpBandwid
 from huaweicloudsdklive.v2.model.snapshot_data import SnapshotData
 from huaweicloudsdklive.v2.model.stream_count_data import StreamCountData
 from huaweicloudsdklive.v2.model.stream_portrait import StreamPortrait
+from huaweicloudsdklive.v2.model.time_value import TimeValue
 from huaweicloudsdklive.v2.model.traffic_data import TrafficData
 from huaweicloudsdklive.v2.model.traffic_summary_data import TrafficSummaryData
+from huaweicloudsdklive.v2.model.transcode_count_data import TranscodeCountData
 from huaweicloudsdklive.v2.model.transcode_data import TranscodeData
 from huaweicloudsdklive.v2.model.transcode_spec import TranscodeSpec
+from huaweicloudsdklive.v2.model.transcode_spec_count import TranscodeSpecCount
 from huaweicloudsdklive.v2.model.transcode_summary import TranscodeSummary
 from huaweicloudsdklive.v2.model.v2_bandwidth_data import V2BandwidthData
 from huaweicloudsdklive.v2.model.v2_bitrate_info import V2BitrateInfo

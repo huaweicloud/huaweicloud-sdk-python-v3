@@ -27,7 +27,6 @@ class UpdateRecordRuleResponse(SdkResponse):
         'app': 'str',
         'stream': 'str',
         'record_type': 'str',
-        'plan_record_time': 'PlanRecordTime',
         'default_record_config': 'DefaultRecordConfig',
         'create_time': 'date',
         'update_time': 'date'
@@ -39,13 +38,12 @@ class UpdateRecordRuleResponse(SdkResponse):
         'app': 'app',
         'stream': 'stream',
         'record_type': 'record_type',
-        'plan_record_time': 'plan_record_time',
         'default_record_config': 'default_record_config',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, publish_domain=None, app=None, stream=None, record_type=None, plan_record_time=None, default_record_config=None, create_time=None, update_time=None):
+    def __init__(self, id=None, publish_domain=None, app=None, stream=None, record_type=None, default_record_config=None, create_time=None, update_time=None):
         """UpdateRecordRuleResponse - a model defined in huaweicloud sdk"""
         
         super(UpdateRecordRuleResponse, self).__init__()
@@ -55,7 +53,6 @@ class UpdateRecordRuleResponse(SdkResponse):
         self._app = None
         self._stream = None
         self._record_type = None
-        self._plan_record_time = None
         self._default_record_config = None
         self._create_time = None
         self._update_time = None
@@ -71,8 +68,6 @@ class UpdateRecordRuleResponse(SdkResponse):
             self.stream = stream
         if record_type is not None:
             self.record_type = record_type
-        if plan_record_time is not None:
-            self.plan_record_time = plan_record_time
         if default_record_config is not None:
             self.default_record_config = default_record_config
         if create_time is not None:
@@ -189,26 +184,6 @@ class UpdateRecordRuleResponse(SdkResponse):
         :type: str
         """
         self._record_type = record_type
-
-    @property
-    def plan_record_time(self):
-        """Gets the plan_record_time of this UpdateRecordRuleResponse.
-
-
-        :return: The plan_record_time of this UpdateRecordRuleResponse.
-        :rtype: PlanRecordTime
-        """
-        return self._plan_record_time
-
-    @plan_record_time.setter
-    def plan_record_time(self, plan_record_time):
-        """Sets the plan_record_time of this UpdateRecordRuleResponse.
-
-
-        :param plan_record_time: The plan_record_time of this UpdateRecordRuleResponse.
-        :type: PlanRecordTime
-        """
-        self._plan_record_time = plan_record_time
 
     @property
     def default_record_config(self):

@@ -23,28 +23,38 @@ class OfficialWebsiteRatingResult:
 
     openapi_types = {
         'official_website_amount': 'float',
+        'installment_official_website_amount': 'str',
+        'installment_period_type': 'int',
         'measure_id': 'int',
         'product_rating_results': 'list[PeriodProductOfficialRatingResult]'
     }
 
     attribute_map = {
         'official_website_amount': 'official_website_amount',
+        'installment_official_website_amount': 'installment_official_website_amount',
+        'installment_period_type': 'installment_period_type',
         'measure_id': 'measure_id',
         'product_rating_results': 'product_rating_results'
     }
 
-    def __init__(self, official_website_amount=None, measure_id=None, product_rating_results=None):
+    def __init__(self, official_website_amount=None, installment_official_website_amount=None, installment_period_type=None, measure_id=None, product_rating_results=None):
         """OfficialWebsiteRatingResult - a model defined in huaweicloud sdk"""
         
         
 
         self._official_website_amount = None
+        self._installment_official_website_amount = None
+        self._installment_period_type = None
         self._measure_id = None
         self._product_rating_results = None
         self.discriminator = None
 
         if official_website_amount is not None:
             self.official_website_amount = official_website_amount
+        if installment_official_website_amount is not None:
+            self.installment_official_website_amount = installment_official_website_amount
+        if installment_period_type is not None:
+            self.installment_period_type = installment_period_type
         if measure_id is not None:
             self.measure_id = measure_id
         if product_rating_results is not None:
@@ -71,6 +81,50 @@ class OfficialWebsiteRatingResult:
         :type: float
         """
         self._official_website_amount = official_website_amount
+
+    @property
+    def installment_official_website_amount(self):
+        """Gets the installment_official_website_amount of this OfficialWebsiteRatingResult.
+
+        分期金额的官网价。  说明： 暂只支持IES产品。
+
+        :return: The installment_official_website_amount of this OfficialWebsiteRatingResult.
+        :rtype: str
+        """
+        return self._installment_official_website_amount
+
+    @installment_official_website_amount.setter
+    def installment_official_website_amount(self, installment_official_website_amount):
+        """Sets the installment_official_website_amount of this OfficialWebsiteRatingResult.
+
+        分期金额的官网价。  说明： 暂只支持IES产品。
+
+        :param installment_official_website_amount: The installment_official_website_amount of this OfficialWebsiteRatingResult.
+        :type: str
+        """
+        self._installment_official_website_amount = installment_official_website_amount
+
+    @property
+    def installment_period_type(self):
+        """Gets the installment_period_type of this OfficialWebsiteRatingResult.
+
+        分期付款的周期类型。 2：月  说明： 暂只支持IES产品。
+
+        :return: The installment_period_type of this OfficialWebsiteRatingResult.
+        :rtype: int
+        """
+        return self._installment_period_type
+
+    @installment_period_type.setter
+    def installment_period_type(self, installment_period_type):
+        """Sets the installment_period_type of this OfficialWebsiteRatingResult.
+
+        分期付款的周期类型。 2：月  说明： 暂只支持IES产品。
+
+        :param installment_period_type: The installment_period_type of this OfficialWebsiteRatingResult.
+        :type: int
+        """
+        self._installment_period_type = installment_period_type
 
     @property
     def measure_id(self):

@@ -26,7 +26,6 @@ class RecordRuleRequest:
         'app': 'str',
         'stream': 'str',
         'record_type': 'str',
-        'plan_record_time': 'PlanRecordTime',
         'default_record_config': 'DefaultRecordConfig'
     }
 
@@ -35,11 +34,10 @@ class RecordRuleRequest:
         'app': 'app',
         'stream': 'stream',
         'record_type': 'record_type',
-        'plan_record_time': 'plan_record_time',
         'default_record_config': 'default_record_config'
     }
 
-    def __init__(self, publish_domain=None, app=None, stream=None, record_type=None, plan_record_time=None, default_record_config=None):
+    def __init__(self, publish_domain=None, app=None, stream=None, record_type=None, default_record_config=None):
         """RecordRuleRequest - a model defined in huaweicloud sdk"""
         
         
@@ -48,7 +46,6 @@ class RecordRuleRequest:
         self._app = None
         self._stream = None
         self._record_type = None
-        self._plan_record_time = None
         self._default_record_config = None
         self.discriminator = None
 
@@ -57,8 +54,6 @@ class RecordRuleRequest:
         self.stream = stream
         if record_type is not None:
             self.record_type = record_type
-        if plan_record_time is not None:
-            self.plan_record_time = plan_record_time
         self.default_record_config = default_record_config
 
     @property
@@ -148,26 +143,6 @@ class RecordRuleRequest:
         :type: str
         """
         self._record_type = record_type
-
-    @property
-    def plan_record_time(self):
-        """Gets the plan_record_time of this RecordRuleRequest.
-
-
-        :return: The plan_record_time of this RecordRuleRequest.
-        :rtype: PlanRecordTime
-        """
-        return self._plan_record_time
-
-    @plan_record_time.setter
-    def plan_record_time(self, plan_record_time):
-        """Sets the plan_record_time of this RecordRuleRequest.
-
-
-        :param plan_record_time: The plan_record_time of this RecordRuleRequest.
-        :type: PlanRecordTime
-        """
-        self._plan_record_time = plan_record_time
 
     @property
     def default_record_config(self):

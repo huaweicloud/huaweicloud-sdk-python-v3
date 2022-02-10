@@ -22,7 +22,7 @@ class RestoreExistingInstanceRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'source': 'RestoreExistingInstanceRequestBodySource',
+        'source': 'RestoreToExistingInstanceRequestBodySource',
         'target': 'RestoreToExistingInstanceRequestBodyTarget'
     }
 
@@ -49,7 +49,7 @@ class RestoreExistingInstanceRequestBody:
 
 
         :return: The source of this RestoreExistingInstanceRequestBody.
-        :rtype: RestoreExistingInstanceRequestBodySource
+        :rtype: RestoreToExistingInstanceRequestBodySource
         """
         return self._source
 
@@ -59,7 +59,7 @@ class RestoreExistingInstanceRequestBody:
 
 
         :param source: The source of this RestoreExistingInstanceRequestBody.
-        :type: RestoreExistingInstanceRequestBodySource
+        :type: RestoreToExistingInstanceRequestBodySource
         """
         self._source = source
 

@@ -22,23 +22,28 @@ class CreateGaussMySqlBackupResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'backup': 'Backup'
+        'backup': 'Backup',
+        'job_id': 'str'
     }
 
     attribute_map = {
-        'backup': 'backup'
+        'backup': 'backup',
+        'job_id': 'job_id'
     }
 
-    def __init__(self, backup=None):
+    def __init__(self, backup=None, job_id=None):
         """CreateGaussMySqlBackupResponse - a model defined in huaweicloud sdk"""
         
         super(CreateGaussMySqlBackupResponse, self).__init__()
 
         self._backup = None
+        self._job_id = None
         self.discriminator = None
 
         if backup is not None:
             self.backup = backup
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
     def backup(self):
@@ -59,6 +64,28 @@ class CreateGaussMySqlBackupResponse(SdkResponse):
         :type: Backup
         """
         self._backup = backup
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this CreateGaussMySqlBackupResponse.
+
+        任务ID。
+
+        :return: The job_id of this CreateGaussMySqlBackupResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this CreateGaussMySqlBackupResponse.
+
+        任务ID。
+
+        :param job_id: The job_id of this CreateGaussMySqlBackupResponse.
+        :type: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -27,7 +27,11 @@ class PeriodProductRatingResult:
         'amount': 'float',
         'official_website_amount': 'float',
         'discount_amount': 'float',
-        'measure_id': 'int'
+        'measure_id': 'int',
+        'installment_official_website_amount': 'str',
+        'installment_official_discount_amount': 'str',
+        'installment_amount': 'str',
+        'installment_period_type': 'int'
     }
 
     attribute_map = {
@@ -36,10 +40,14 @@ class PeriodProductRatingResult:
         'amount': 'amount',
         'official_website_amount': 'official_website_amount',
         'discount_amount': 'discount_amount',
-        'measure_id': 'measure_id'
+        'measure_id': 'measure_id',
+        'installment_official_website_amount': 'installment_official_website_amount',
+        'installment_official_discount_amount': 'installment_official_discount_amount',
+        'installment_amount': 'installment_amount',
+        'installment_period_type': 'installment_period_type'
     }
 
-    def __init__(self, id=None, product_id=None, amount=None, official_website_amount=None, discount_amount=None, measure_id=None):
+    def __init__(self, id=None, product_id=None, amount=None, official_website_amount=None, discount_amount=None, measure_id=None, installment_official_website_amount=None, installment_official_discount_amount=None, installment_amount=None, installment_period_type=None):
         """PeriodProductRatingResult - a model defined in huaweicloud sdk"""
         
         
@@ -50,6 +58,10 @@ class PeriodProductRatingResult:
         self._official_website_amount = None
         self._discount_amount = None
         self._measure_id = None
+        self._installment_official_website_amount = None
+        self._installment_official_discount_amount = None
+        self._installment_amount = None
+        self._installment_period_type = None
         self.discriminator = None
 
         if id is not None:
@@ -64,6 +76,14 @@ class PeriodProductRatingResult:
             self.discount_amount = discount_amount
         if measure_id is not None:
             self.measure_id = measure_id
+        if installment_official_website_amount is not None:
+            self.installment_official_website_amount = installment_official_website_amount
+        if installment_official_discount_amount is not None:
+            self.installment_official_discount_amount = installment_official_discount_amount
+        if installment_amount is not None:
+            self.installment_amount = installment_amount
+        if installment_period_type is not None:
+            self.installment_period_type = installment_period_type
 
     @property
     def id(self):
@@ -196,6 +216,94 @@ class PeriodProductRatingResult:
         :type: int
         """
         self._measure_id = measure_id
+
+    @property
+    def installment_official_website_amount(self):
+        """Gets the installment_official_website_amount of this PeriodProductRatingResult.
+
+        分期金额的官网价。  说明： 暂只支持IES产品。
+
+        :return: The installment_official_website_amount of this PeriodProductRatingResult.
+        :rtype: str
+        """
+        return self._installment_official_website_amount
+
+    @installment_official_website_amount.setter
+    def installment_official_website_amount(self, installment_official_website_amount):
+        """Sets the installment_official_website_amount of this PeriodProductRatingResult.
+
+        分期金额的官网价。  说明： 暂只支持IES产品。
+
+        :param installment_official_website_amount: The installment_official_website_amount of this PeriodProductRatingResult.
+        :type: str
+        """
+        self._installment_official_website_amount = installment_official_website_amount
+
+    @property
+    def installment_official_discount_amount(self):
+        """Gets the installment_official_discount_amount of this PeriodProductRatingResult.
+
+        分期金额的折扣价。  说明： 暂只支持IES产品。
+
+        :return: The installment_official_discount_amount of this PeriodProductRatingResult.
+        :rtype: str
+        """
+        return self._installment_official_discount_amount
+
+    @installment_official_discount_amount.setter
+    def installment_official_discount_amount(self, installment_official_discount_amount):
+        """Sets the installment_official_discount_amount of this PeriodProductRatingResult.
+
+        分期金额的折扣价。  说明： 暂只支持IES产品。
+
+        :param installment_official_discount_amount: The installment_official_discount_amount of this PeriodProductRatingResult.
+        :type: str
+        """
+        self._installment_official_discount_amount = installment_official_discount_amount
+
+    @property
+    def installment_amount(self):
+        """Gets the installment_amount of this PeriodProductRatingResult.
+
+        分期金额的成交价。  说明： 分期金额的成交价=分期金额的官网价-分期金额的折扣价。暂只支持IES产品。
+
+        :return: The installment_amount of this PeriodProductRatingResult.
+        :rtype: str
+        """
+        return self._installment_amount
+
+    @installment_amount.setter
+    def installment_amount(self, installment_amount):
+        """Sets the installment_amount of this PeriodProductRatingResult.
+
+        分期金额的成交价。  说明： 分期金额的成交价=分期金额的官网价-分期金额的折扣价。暂只支持IES产品。
+
+        :param installment_amount: The installment_amount of this PeriodProductRatingResult.
+        :type: str
+        """
+        self._installment_amount = installment_amount
+
+    @property
+    def installment_period_type(self):
+        """Gets the installment_period_type of this PeriodProductRatingResult.
+
+        分期付款的周期类型。 2：月  说明： 暂只支持IES产品。
+
+        :return: The installment_period_type of this PeriodProductRatingResult.
+        :rtype: int
+        """
+        return self._installment_period_type
+
+    @installment_period_type.setter
+    def installment_period_type(self, installment_period_type):
+        """Sets the installment_period_type of this PeriodProductRatingResult.
+
+        分期付款的周期类型。 2：月  说明： 暂只支持IES产品。
+
+        :param installment_period_type: The installment_period_type of this PeriodProductRatingResult.
+        :type: int
+        """
+        self._installment_period_type = installment_period_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

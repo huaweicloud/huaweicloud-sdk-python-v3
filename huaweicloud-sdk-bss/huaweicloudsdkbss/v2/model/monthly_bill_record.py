@@ -438,7 +438,7 @@ class MonthlyBillRecord:
     def bill_type(self):
         """Gets the bill_type of this MonthlyBillRecord.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
 
         :return: The bill_type of this MonthlyBillRecord.
         :rtype: int
@@ -449,7 +449,7 @@ class MonthlyBillRecord:
     def bill_type(self, bill_type):
         """Sets the bill_type of this MonthlyBillRecord.
 
-        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费
+        账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
 
         :param bill_type: The bill_type of this MonthlyBillRecord.
         :type: int

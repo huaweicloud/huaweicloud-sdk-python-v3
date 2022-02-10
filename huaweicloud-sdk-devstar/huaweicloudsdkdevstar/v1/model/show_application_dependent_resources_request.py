@@ -23,26 +23,36 @@ class ShowApplicationDependentResourcesRequest:
 
     openapi_types = {
         'x_language': 'str',
-        'application_id': 'str'
+        'application_id': 'str',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
-        'application_id': 'application_id'
+        'application_id': 'application_id',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, x_language=None, application_id=None):
+    def __init__(self, x_language=None, application_id=None, limit=None, offset=None):
         """ShowApplicationDependentResourcesRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._x_language = None
         self._application_id = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
         self.application_id = application_id
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def x_language(self):
@@ -87,6 +97,50 @@ class ShowApplicationDependentResourcesRequest:
         :type: str
         """
         self._application_id = application_id
+
+    @property
+    def limit(self):
+        """Gets the limit of this ShowApplicationDependentResourcesRequest.
+
+        每页显示的条目数量
+
+        :return: The limit of this ShowApplicationDependentResourcesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ShowApplicationDependentResourcesRequest.
+
+        每页显示的条目数量
+
+        :param limit: The limit of this ShowApplicationDependentResourcesRequest.
+        :type: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ShowApplicationDependentResourcesRequest.
+
+        偏移量，表示从此偏移量开始查询
+
+        :return: The offset of this ShowApplicationDependentResourcesRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ShowApplicationDependentResourcesRequest.
+
+        偏移量，表示从此偏移量开始查询
+
+        :param offset: The offset of this ShowApplicationDependentResourcesRequest.
+        :type: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

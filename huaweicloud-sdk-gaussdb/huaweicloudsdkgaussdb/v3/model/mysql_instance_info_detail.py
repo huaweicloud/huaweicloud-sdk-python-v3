@@ -27,6 +27,7 @@ class MysqlInstanceInfoDetail:
         'project_id': 'str',
         'status': 'str',
         'port': 'str',
+        'alias': 'str',
         'type': 'str',
         'node_count': 'int',
         'datastore': 'MysqlDatastore',
@@ -57,6 +58,7 @@ class MysqlInstanceInfoDetail:
         'project_id': 'project_id',
         'status': 'status',
         'port': 'port',
+        'alias': 'alias',
         'type': 'type',
         'node_count': 'node_count',
         'datastore': 'datastore',
@@ -81,7 +83,7 @@ class MysqlInstanceInfoDetail:
         'dedicated_resource_id': 'dedicated_resource_id'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, type=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None):
+    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, alias=None, type=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None):
         """MysqlInstanceInfoDetail - a model defined in huaweicloud sdk"""
         
         
@@ -91,6 +93,7 @@ class MysqlInstanceInfoDetail:
         self._project_id = None
         self._status = None
         self._port = None
+        self._alias = None
         self._type = None
         self._node_count = None
         self._datastore = None
@@ -122,6 +125,8 @@ class MysqlInstanceInfoDetail:
             self.status = status
         if port is not None:
             self.port = port
+        if alias is not None:
+            self.alias = alias
         if type is not None:
             self.type = type
         if node_count is not None:
@@ -276,6 +281,28 @@ class MysqlInstanceInfoDetail:
         :type: str
         """
         self._port = port
+
+    @property
+    def alias(self):
+        """Gets the alias of this MysqlInstanceInfoDetail.
+
+        实例备注
+
+        :return: The alias of this MysqlInstanceInfoDetail.
+        :rtype: str
+        """
+        return self._alias
+
+    @alias.setter
+    def alias(self, alias):
+        """Sets the alias of this MysqlInstanceInfoDetail.
+
+        实例备注
+
+        :param alias: The alias of this MysqlInstanceInfoDetail.
+        :type: str
+        """
+        self._alias = alias
 
     @property
     def type(self):

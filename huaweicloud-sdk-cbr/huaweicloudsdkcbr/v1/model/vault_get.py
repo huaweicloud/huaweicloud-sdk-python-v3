@@ -28,7 +28,7 @@ class VaultGet:
         'name': 'str',
         'project_id': 'str',
         'provider_id': 'str',
-        'resources': 'list[CheckpointResourceResp]',
+        'resources': 'list[ResourceResp]',
         'tags': 'list[TagsResp]',
         'enterprise_project_id': 'str',
         'auto_bind': 'bool',
@@ -254,7 +254,7 @@ class VaultGet:
         资源
 
         :return: The resources of this VaultGet.
-        :rtype: list[CheckpointResourceResp]
+        :rtype: list[ResourceResp]
         """
         return self._resources
 
@@ -265,7 +265,7 @@ class VaultGet:
         资源
 
         :param resources: The resources of this VaultGet.
-        :type: list[CheckpointResourceResp]
+        :type: list[ResourceResp]
         """
         self._resources = resources
 

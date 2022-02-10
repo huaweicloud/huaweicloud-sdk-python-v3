@@ -37,8 +37,7 @@ class NodeItem:
         self._uid = None
         self.discriminator = None
 
-        if uid is not None:
-            self.uid = uid
+        self.uid = uid
 
     @property
     def uid(self):

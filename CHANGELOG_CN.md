@@ -1,3 +1,244 @@
+# 3.0.77 2022-02-10
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateAlarmRule`:
+    - 请求参数`statistic`类型调整 `string` -> `enum`
+    - 请求参数`alarm_level`、`comparison_operator`、`evaluation_periods`、`metric_name`、`namespace`、`period`、`statistic`、`threshold`、`unit`改为非必填
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListRateOnPeriodDetail`:
+    - 新增请求参数 `fee_installment_mode`
+    - 新增响应参数 `installment_official_website_amount`、`installment_period_type`、`installment_official_discount_amount`、`installment_amount`
+
+### HuaweiCloud SDK CBR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListProtectable`:
+    - 响应参数`result`类型调整 `string` -> `boolean`
+    - 响应参数`size`类型调整 `string` -> `int32`
+  - 接口`ShowProtectable`:
+    - 响应参数`result`类型调整 `string` -> `boolean`
+    - 响应参数`size`类型调整 `string` -> `int32`
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 支持接口`ShowVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateAddonInstance`移除响应参数 `kind`、`apiVersion`、`metadata`、`spec`、`status`
+  - 接口`ListNodes`新增响应参数 `isStatic`、`privateIPv6IP`
+  - 接口`CreateNode`新增请求参数 `isStatic`
+  - 接口`DeleteNode`新增响应参数 `isStatic`、`privateIPv6IP`
+  - 接口`ShowNode`新增响应参数 `isStatic`、`privateIPv6IP`
+  - 接口`UpdateNode`新增响应参数 `isStatic`、`privateIPv6IP`
+  - 接口`RemoveNode`:
+    - 请求参数`uid`改为必填
+    - 响应参数`uid`改为必填
+  - 接口`MigrateNode`:
+    - 请求参数`uid`改为必填
+    - 响应参数`uid`改为必填
+  - 接口`ListNodePools`新增响应参数 `isStatic`
+  - 接口`CreateNodePool`新增请求参数 `isStatic`
+  - 接口`DeleteNodePool`新增响应参数 `isStatic`
+  - 接口`ShowNodePool`新增响应参数 `isStatic`
+  - 接口`UpdateNodePool`:
+    - 新增请求参数 `isStatic`
+    - 新增响应参数 `isStatic`
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 支持以下接口：
+    - `UpdateOndemandClusterToPeriod`
+    - `UpdateClusterName`
+    - `ResetPassword`
+    - `StartKibanaPublic`
+    - `UpdateCloseKibana`
+    - `UpdateAlterKibana`
+    - `UpdatePublicKibanaWhitelist`
+    - `StopPublicKibanaWhitelist`
+    - `CreateCnf`
+    - `UpdateCnf`
+    - `StartPipeline`
+    - `StopPipeline`
+    - `AddFavorite`
+    - `StartConnectivityTest`
+    - `ListTemplates`
+    - `ListConfs`
+    - `ListPipelines`
+    - `ListActions`
+    - `ShowGetConfDetail`
+    - `DeleteConf`
+    - `DeleteTemplate`
+    - `StartLogs`
+    - `StopLogs`
+    - `ShowGetLogSetting`
+    - `UpdateLogSetting`
+    - `StartLogAutoBackupPolicy`
+    - `StopLogAutoBackupPolicy`
+    - `CreateLogBackup`
+    - `ShowLogBackup`
+    - `CreateBindPublic`
+    - `UpdateUnbindPublic`
+    - `UpdatePublicBandWidth`
+    - `StartPublicWhitelist`
+    - `StopPublicWhitelist`
+    - `StartVpecp`
+    - `StopVpecp`
+    - `ShowVpcepConnection`
+    - `UpdateVpcepConnection`
+    - `UpdateVpcepWhitelist`
+    - `UpdateYmls`
+    - `ListYmlsJob`
+    - `ListYmls`
+    - `ListClustersDetails`
+    - `CreateCluster`
+    - `DeleteCluster`
+    - `RestartCluster`
+    - `UpdateExtendCluster`
+    - `UpdateExtendInstanceStorage`
+    - `ListFlavors`
+    - `ShowClusterTag`
+    - `CreateClustersTags`
+    - `ListClustersTags`
+    - `UpdateBatchClustersTags`
+    - `DeleteClustersTags`
+    - `ShowIkThesaurus`
+    - `CreateLoadIkThesaurus`
+    - `DeleteIkThesaurus`
+    - `StartAutoSetting`
+    - `UpdateSnapshotSetting`
+    - `ShowAutoCreatePolicy`
+    - `CreateAutoCreatePolicy`
+    - `CreateSnapshot`
+    - `ListSnapshots`
+    - `StopSnapshot`
+    - `RestoreSnapshot`
+    - `DeleteSnapshot`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 支持接口`CreateOnlineMigrationTask`、`SetOnlineMigrationTask`、`BatchStopMigrationTasks`、`StopMigrationTaskSync`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DevStar
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowApplicationDependentResources`:
+    - 新增请求参数 `X-Auth-Token`、`limit`、`offset`
+    - 新增响应参数 `count`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateFunction`:
+    - 请求参数`runtime`新增枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`, 移除枚举值`Python2.7`、`Python3.6`、`Go1.8`、`Java8`、`Node.js6.10`、`Node.js8.10`、`Custom`、`PHP7.3`
+    - 响应参数`runtime`新增枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`, 移除枚举值`Python2.7`、`Python3.6`、`Go1.8`、`Java8`、`Node.js6.10`、`Node.js8.10`、`Custom`、`PHP7.3`
+  - 接口`ListFunctions`响应参数`runtime`新增枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`, 移除枚举值`Python2.7`、`Python3.6`、`Go1.8`、`Java8`、`Node.js6.10`、`Node.js8.10`、`Custom`、`PHP7.3`
+  - 接口`UpdateFunctionCode`响应参数`runtime`新增枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`, 移除枚举值`Python2.7`、`Python3.6`、`Go1.8`、`Java8`、`Node.js6.10`、`Node.js8.10`、`Custom`、`PHP7.3`
+  - 接口`ShowFunctionCode`响应参数`runtime`新增枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`, 移除枚举值`Python2.7`、`Python3.6`、`Go1.8`、`Java8`、`Node.js6.10`、`Node.js8.10`、`Custom`、`PHP7.3`
+  - 接口`UpdateFunctionConfig`:
+    - 请求参数`runtime`新增枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`, 移除枚举值`Python2.7`、`Python3.6`、`Go1.8`、`Java8`、`Node.js6.10`、`Node.js8.10`、`Custom`、`PHP7.3`
+    - 响应参数`runtime`新增枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`, 移除枚举值`Python2.7`、`Python3.6`、`Go1.8`、`Java8`、`Node.js6.10`、`Node.js8.10`、`Custom`、`PHP7.3`
+  - 接口`ShowFunctionConfig`响应参数`runtime`新增枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`, 移除枚举值`Python2.7`、`Python3.6`、`Go1.8`、`Java8`、`Node.js6.10`、`Node.js8.10`、`Custom`、`PHP7.3`
+  - 接口`CreateFunctionVersion`响应参数`runtime`新增枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`, 移除枚举值`Python2.7`、`Python3.6`、`Go1.8`、`Java8`、`Node.js6.10`、`Node.js8.10`、`Custom`、`PHP7.3`
+  - 接口`ListFunctionVersions`响应参数`runtime`新增枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`, 移除枚举值`Python2.7`、`Python3.6`、`Go1.8`、`Java8`、`Node.js6.10`、`Node.js8.10`、`Custom`、`PHP7.3`
+  - 接口`CreateDependency`请求参数`runtime`新增枚举值`Go1.x`
+  - 接口`UpdateDependency`请求参数`runtime`新增枚举值`Go1.x`
+  - 接口`ImportFunction`响应参数`runtime`新增枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`, 移除枚举值`Python2.7`、`Python3.6`、`Go1.8`、`Java8`、`Node.js6.10`、`Node.js8.10`、`Custom`、`PHP7.3`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowGaussMySqlInstanceInfo`新增响应参数`alias`
+  - 接口`CreateGaussMySqlBackup`新增响应参数`job_id`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`响应参数`port`类型调整 `int32` -> `string`
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+  - 支持接口`ListTranscodeTaskCount`、`ListAreaDetail`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListRecordData`新增请求参数 `publish_domain`
+  - 接口`CreateRecordRule`移除请求参数 `plan_record_time`
+  - 接口`ListRecordRules`移除响应参数 `plan_record_time`
+  - 接口`ShowRecordRule`移除响应参数 `plan_record_time`
+  - 接口`UpdateRecordRule`:
+    - 移除请求参数 `plan_record_time`
+    - 移除响应参数 `plan_record_time`
+  - 接口`CreateRecordCallbackConfig`移除请求参数 `on_demand_callback_url`
+  - 接口`ListRecordCallbackConfigs`移除响应参数 `on_demand_callback_url`
+  - 接口`ShowRecordCallbackConfig`移除响应参数 `on_demand_callback_url`
+  - 接口`UpdateRecordCallbackConfig`移除请求参数 `on_demand_callback_url`
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`SearchQosParticipants`新增响应参数 `existQos`
+  - 接口`SearchQosParticipantDetail`新增响应参数 `existQos`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RestoreToExistingInstance`新增请求参数`restore_all_database`
+  - 接口`StartRecyclePolicy`移除请求参数`is_open_recycle_policy`
+
 # 3.0.76 2022-01-25
 
 ### HuaweiCloud SDK APIG

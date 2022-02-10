@@ -1254,7 +1254,7 @@ class KmsClient(Client):
     def enable_key_rotation(self, request):
         """开启密钥轮换
 
-        - 功能介绍：开启用户主密钥轮换。 - 说明：   - 开启密钥轮换后，默认轮询间隔时间为365天。   - 默认主密钥及外部导入密钥不支持轮换操作。
+        - 功能介绍：开启用户主密钥轮换。 - 说明：   - 开启密钥轮换后，默认轮换间隔时间为365天。   - 默认主密钥及外部导入密钥不支持轮换操作。
 
         :param EnableKeyRotationRequest request
         :return: EnableKeyRotationResponse
@@ -1264,7 +1264,7 @@ class KmsClient(Client):
     def enable_key_rotation_with_http_info(self, request):
         """开启密钥轮换
 
-        - 功能介绍：开启用户主密钥轮换。 - 说明：   - 开启密钥轮换后，默认轮询间隔时间为365天。   - 默认主密钥及外部导入密钥不支持轮换操作。
+        - 功能介绍：开启用户主密钥轮换。 - 说明：   - 开启密钥轮换后，默认轮换间隔时间为365天。   - 默认主密钥及外部导入密钥不支持轮换操作。
 
         :param EnableKeyRotationRequest request
         :return: EnableKeyRotationResponse
@@ -2447,7 +2447,7 @@ class KmsClient(Client):
     def validate_signature(self, request):
         """验证签名
 
-        - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行数字签名。
+        - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行签名验证。
 
         :param ValidateSignatureRequest request
         :return: ValidateSignatureResponse
@@ -2457,7 +2457,7 @@ class KmsClient(Client):
     def validate_signature_with_http_info(self, request):
         """验证签名
 
-        - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行数字签名。
+        - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行签名验证。
 
         :param ValidateSignatureRequest request
         :return: ValidateSignatureResponse

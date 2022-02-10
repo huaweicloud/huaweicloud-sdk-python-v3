@@ -22,23 +22,28 @@ class ShowApplicationDependentResourcesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'dependent_services': 'list[ResouceInfo]'
+        'dependent_services': 'list[ResouceInfo]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'dependent_services': 'dependent_services'
+        'dependent_services': 'dependent_services',
+        'count': 'count'
     }
 
-    def __init__(self, dependent_services=None):
+    def __init__(self, dependent_services=None, count=None):
         """ShowApplicationDependentResourcesResponse - a model defined in huaweicloud sdk"""
         
         super(ShowApplicationDependentResourcesResponse, self).__init__()
 
         self._dependent_services = None
+        self._count = None
         self.discriminator = None
 
         if dependent_services is not None:
             self.dependent_services = dependent_services
+        if count is not None:
+            self.count = count
 
     @property
     def dependent_services(self):
@@ -61,6 +66,28 @@ class ShowApplicationDependentResourcesResponse(SdkResponse):
         :type: list[ResouceInfo]
         """
         self._dependent_services = dependent_services
+
+    @property
+    def count(self):
+        """Gets the count of this ShowApplicationDependentResourcesResponse.
+
+        资源总个数
+
+        :return: The count of this ShowApplicationDependentResourcesResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ShowApplicationDependentResourcesResponse.
+
+        资源总个数
+
+        :param count: The count of this ShowApplicationDependentResourcesResponse.
+        :type: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

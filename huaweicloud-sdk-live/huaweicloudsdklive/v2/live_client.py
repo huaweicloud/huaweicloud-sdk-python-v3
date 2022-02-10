@@ -48,6 +48,90 @@ class LiveClient(Client):
 
         return ClientBuilder(clazz)
 
+    def list_area_detail(self, request):
+        """查询直播各区域指标分布接口
+
+        查询直播全球区域维度的详细数据接口。  最大查询跨度1天，最大查询周期90天。  支持查询当天，当前数据延时少于1分钟。 
+
+        :param ListAreaDetailRequest request
+        :return: ListAreaDetailResponse
+        """
+        return self.list_area_detail_with_http_info(request)
+
+    def list_area_detail_with_http_info(self, request):
+        """查询直播各区域指标分布接口
+
+        查询直播全球区域维度的详细数据接口。  最大查询跨度1天，最大查询周期90天。  支持查询当天，当前数据延时少于1分钟。 
+
+        :param ListAreaDetailRequest request
+        :return: ListAreaDetailResponse
+        """
+
+        all_params = ['start_time', 'end_time', 'play_domains', 'area', 'metric', 'app', 'stream', 'interval', 'isp', 'protocol']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'play_domains' in local_var_params:
+            query_params.append(('play_domains', local_var_params['play_domains']))
+            collection_formats['play_domains'] = 'csv'
+        if 'app' in local_var_params:
+            query_params.append(('app', local_var_params['app']))
+        if 'stream' in local_var_params:
+            query_params.append(('stream', local_var_params['stream']))
+        if 'interval' in local_var_params:
+            query_params.append(('interval', local_var_params['interval']))
+        if 'isp' in local_var_params:
+            query_params.append(('isp', local_var_params['isp']))
+            collection_formats['isp'] = 'csv'
+        if 'area' in local_var_params:
+            query_params.append(('area', local_var_params['area']))
+            collection_formats['area'] = 'csv'
+        if 'metric' in local_var_params:
+            query_params.append(('metric', local_var_params['metric']))
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/stats/area/detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAreaDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_bandwidth_detail(self, request):
         """查询播放带宽趋势接口
 
@@ -378,7 +462,7 @@ class LiveClient(Client):
     def list_history_streams(self, request):
         """查询历史推流列表接口
 
-        查询历史推流列表。  不能查询现推流。  最大查询跨度1天，最大查询周期1个月。
+        查询历史推流列表。  不能查询现推流。  最大查询跨度1天。 
 
         :param ListHistoryStreamsRequest request
         :return: ListHistoryStreamsResponse
@@ -388,7 +472,7 @@ class LiveClient(Client):
     def list_history_streams_with_http_info(self, request):
         """查询历史推流列表接口
 
-        查询历史推流列表。  不能查询现推流。  最大查询跨度1天，最大查询周期1个月。
+        查询历史推流列表。  不能查询现推流。  最大查询跨度1天。 
 
         :param ListHistoryStreamsRequest request
         :return: ListHistoryStreamsResponse
@@ -546,7 +630,7 @@ class LiveClient(Client):
         :return: ListRecordDataResponse
         """
 
-        all_params = ['start_time', 'end_time']
+        all_params = ['publish_domain', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -557,6 +641,8 @@ class LiveClient(Client):
         path_params = {}
 
         query_params = []
+        if 'publish_domain' in local_var_params:
+            query_params.append(('publish_domain', local_var_params['publish_domain']))
         if 'start_time' in local_var_params:
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:
@@ -722,6 +808,75 @@ class LiveClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListTranscodeDataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_transcode_task_count(self, request):
+        """查询直播转码任务数接口
+
+        查询5分钟粒度的各档位转码任务数。  仅支持查询视频转码任务数。  最大查询跨度7天，最大查询周期90天。 
+
+        :param ListTranscodeTaskCountRequest request
+        :return: ListTranscodeTaskCountResponse
+        """
+        return self.list_transcode_task_count_with_http_info(request)
+
+    def list_transcode_task_count_with_http_info(self, request):
+        """查询直播转码任务数接口
+
+        查询5分钟粒度的各档位转码任务数。  仅支持查询视频转码任务数。  最大查询跨度7天，最大查询周期90天。 
+
+        :param ListTranscodeTaskCountRequest request
+        :return: ListTranscodeTaskCountResponse
+        """
+
+        all_params = ['publish_domain', 'app', 'start_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'publish_domain' in local_var_params:
+            query_params.append(('publish_domain', local_var_params['publish_domain']))
+        if 'app' in local_var_params:
+            query_params.append(('app', local_var_params['app']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/stats/transcode/task-count',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTranscodeTaskCountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1030,7 +1185,7 @@ class LiveClient(Client):
     def list_single_stream_bitrate(self, request):
         """查询推流码率数据接口
 
-        查询推流监控码率数据接口。  最大查询跨度1天，最大查询周期1个月。
+        查询推流监控码率数据接口。  最大查询跨度1天，最大查询周期1个月。  返回的码率数据列表粒度为1秒钟。 
 
         :param ListSingleStreamBitrateRequest request
         :return: ListSingleStreamBitrateResponse
@@ -1040,7 +1195,7 @@ class LiveClient(Client):
     def list_single_stream_bitrate_with_http_info(self, request):
         """查询推流码率数据接口
 
-        查询推流监控码率数据接口。  最大查询跨度1天，最大查询周期1个月。
+        查询推流监控码率数据接口。  最大查询跨度1天，最大查询周期1个月。  返回的码率数据列表粒度为1秒钟。 
 
         :param ListSingleStreamBitrateRequest request
         :return: ListSingleStreamBitrateResponse
@@ -1101,7 +1256,7 @@ class LiveClient(Client):
     def list_single_stream_framerate(self, request):
         """查询推流帧率数据接口
 
-        查询推流帧率数据接口。  最大查询跨度1天，最大查询周期1个月。
+        查询推流帧率数据接口。  最大查询跨度1天，最大查询周期1个月。  返回的帧率数据列表粒度为1秒钟。 
 
         :param ListSingleStreamFramerateRequest request
         :return: ListSingleStreamFramerateResponse
@@ -1111,7 +1266,7 @@ class LiveClient(Client):
     def list_single_stream_framerate_with_http_info(self, request):
         """查询推流帧率数据接口
 
-        查询推流帧率数据接口。  最大查询跨度1天，最大查询周期1个月。
+        查询推流帧率数据接口。  最大查询跨度1天，最大查询周期1个月。  返回的帧率数据列表粒度为1秒钟。 
 
         :param ListSingleStreamFramerateRequest request
         :return: ListSingleStreamFramerateResponse

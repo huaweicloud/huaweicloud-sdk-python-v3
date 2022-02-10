@@ -27,7 +27,7 @@ class ProtectablesResp:
         'id': 'str',
         'name': 'str',
         'protectable': 'ProtectableResult',
-        'size': 'str',
+        'size': 'int',
         'status': 'str',
         'type': 'str'
     }
@@ -185,7 +185,7 @@ class ProtectablesResp:
         大小，单位GB
 
         :return: The size of this ProtectablesResp.
-        :rtype: str
+        :rtype: int
         """
         return self._size
 
@@ -196,7 +196,7 @@ class ProtectablesResp:
         大小，单位GB
 
         :param size: The size of this ProtectablesResp.
-        :type: str
+        :type: int
         """
         self._size = size
 

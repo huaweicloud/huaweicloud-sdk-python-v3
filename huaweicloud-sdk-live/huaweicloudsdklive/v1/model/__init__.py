@@ -50,7 +50,6 @@ from huaweicloudsdklive.v1.model.live_domain_modify_req import LiveDomainModifyR
 from huaweicloudsdklive.v1.model.log_info import LogInfo
 from huaweicloudsdklive.v1.model.mp4_record_config import MP4RecordConfig
 from huaweicloudsdklive.v1.model.online_info import OnlineInfo
-from huaweicloudsdklive.v1.model.plan_record_time import PlanRecordTime
 from huaweicloudsdklive.v1.model.quality_info import QualityInfo
 from huaweicloudsdklive.v1.model.record_callback_config import RecordCallbackConfig
 from huaweicloudsdklive.v1.model.record_callback_config_request import RecordCallbackConfigRequest

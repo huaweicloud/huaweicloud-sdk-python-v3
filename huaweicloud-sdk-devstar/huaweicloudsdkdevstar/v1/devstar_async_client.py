@@ -205,7 +205,7 @@ class DevStarAsyncClient(Client):
         :return: ShowApplicationDependentResourcesResponse
         """
 
-        all_params = ['application_id', 'x_language']
+        all_params = ['application_id', 'x_language', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -218,6 +218,10 @@ class DevStarAsyncClient(Client):
             path_params['application_id'] = local_var_params['application_id']
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -1271,7 +1275,7 @@ class DevStarAsyncClient(Client):
     def show_repository_by_cloud_ide_async(self, request):
         """使用 CloudIDE 实例打开应用代码
 
-        使用 CloudIDE 实例打开应用代码。CloudIDE会保存用户项目数据，相同用户使用同一个CloudIDE 使用要求：1.用户需为登录状态； 2.拥有仓库权限 
+        使用 CloudIDE 实例打开应用代码。CloudIDE会保存用户项目数据，相同用户使用同一个CloudIDE，使用要求： - 用户需为登录状态。 - 拥有仓库权限。 
 
         :param ShowRepositoryByCloudIdeRequest request
         :return: ShowRepositoryByCloudIdeResponse
@@ -1281,7 +1285,7 @@ class DevStarAsyncClient(Client):
     def show_repository_by_cloud_ide_with_http_info(self, request):
         """使用 CloudIDE 实例打开应用代码
 
-        使用 CloudIDE 实例打开应用代码。CloudIDE会保存用户项目数据，相同用户使用同一个CloudIDE 使用要求：1.用户需为登录状态； 2.拥有仓库权限 
+        使用 CloudIDE 实例打开应用代码。CloudIDE会保存用户项目数据，相同用户使用同一个CloudIDE，使用要求： - 用户需为登录状态。 - 拥有仓库权限。 
 
         :param ShowRepositoryByCloudIdeRequest request
         :return: ShowRepositoryByCloudIdeResponse
@@ -1545,7 +1549,7 @@ class DevStarAsyncClient(Client):
     def list_published_templates_async(self, request):
         """查询模板列表（V1）
 
-        查询模板列表，推荐使用V2版本接口。
+        查询模板列表，推荐使用/v1/templates/query接口。
 
         :param ListPublishedTemplatesRequest request
         :return: ListPublishedTemplatesResponse
@@ -1555,7 +1559,7 @@ class DevStarAsyncClient(Client):
     def list_published_templates_with_http_info(self, request):
         """查询模板列表（V1）
 
-        查询模板列表，推荐使用V2版本接口。
+        查询模板列表，推荐使用/v1/templates/query接口。
 
         :param ListPublishedTemplatesRequest request
         :return: ListPublishedTemplatesResponse
