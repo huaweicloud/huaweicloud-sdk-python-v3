@@ -54,7 +54,6 @@ from huaweicloudsdkbms.v1.model.flavors_resp import FlavorsResp
 from huaweicloudsdkbms.v1.model.image import Image
 from huaweicloudsdkbms.v1.model.image_info import ImageInfo
 from huaweicloudsdkbms.v1.model.interface_attachments import InterfaceAttachments
-from huaweicloudsdkbms.v1.model.key_value import KeyValue
 from huaweicloudsdkbms.v1.model.links import Links
 from huaweicloudsdkbms.v1.model.links_info import LinksInfo
 from huaweicloudsdkbms.v1.model.list_bare_metal_server_details_request import ListBareMetalServerDetailsRequest
@@ -63,7 +62,6 @@ from huaweicloudsdkbms.v1.model.list_bare_metal_servers_request import ListBareM
 from huaweicloudsdkbms.v1.model.list_bare_metal_servers_response import ListBareMetalServersResponse
 from huaweicloudsdkbms.v1.model.list_baremetal_flavor_detail_extends_request import ListBaremetalFlavorDetailExtendsRequest
 from huaweicloudsdkbms.v1.model.list_baremetal_flavor_detail_extends_response import ListBaremetalFlavorDetailExtendsResponse
-from huaweicloudsdkbms.v1.model.meta_data import MetaData
 from huaweicloudsdkbms.v1.model.meta_data_info import MetaDataInfo
 from huaweicloudsdkbms.v1.model.metadata_infos import MetadataInfos
 from huaweicloudsdkbms.v1.model.metadata_install import MetadataInstall
@@ -115,6 +113,7 @@ from huaweicloudsdkbms.v1.model.show_windows_baremetal_server_pwd_response impor
 from huaweicloudsdkbms.v1.model.start_servers_info import StartServersInfo
 from huaweicloudsdkbms.v1.model.sub_jobs import SubJobs
 from huaweicloudsdkbms.v1.model.system_tags import SystemTags
+from huaweicloudsdkbms.v1.model.update_baremetal_server_metadata_req import UpdateBaremetalServerMetadataReq
 from huaweicloudsdkbms.v1.model.update_baremetal_server_metadata_request import UpdateBaremetalServerMetadataRequest
 from huaweicloudsdkbms.v1.model.update_baremetal_server_metadata_response import UpdateBaremetalServerMetadataResponse
 from huaweicloudsdkbms.v1.model.version_links import VersionLinks

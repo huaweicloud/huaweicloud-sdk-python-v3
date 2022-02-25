@@ -73,7 +73,7 @@ class CreateCaseRequestBody:
     def type(self):
         """Gets the type of this CreateCaseRequestBody.
 
-        type
+        type (0-常规用例,1-视频流用例,2-预制用例)
 
         :return: The type of this CreateCaseRequestBody.
         :rtype: int
@@ -84,7 +84,7 @@ class CreateCaseRequestBody:
     def type(self, type):
         """Sets the type of this CreateCaseRequestBody.
 
-        type
+        type (0-常规用例,1-视频流用例,2-预制用例)
 
         :param type: The type of this CreateCaseRequestBody.
         :type: int

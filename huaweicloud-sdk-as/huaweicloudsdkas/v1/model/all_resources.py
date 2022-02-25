@@ -25,17 +25,19 @@ class AllResources:
         'type': 'str',
         'used': 'int',
         'quota': 'int',
-        'max': 'int'
+        'max': 'int',
+        'min': 'int'
     }
 
     attribute_map = {
         'type': 'type',
         'used': 'used',
         'quota': 'quota',
-        'max': 'max'
+        'max': 'max',
+        'min': 'min'
     }
 
-    def __init__(self, type=None, used=None, quota=None, max=None):
+    def __init__(self, type=None, used=None, quota=None, max=None, min=None):
         """AllResources - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +46,7 @@ class AllResources:
         self._used = None
         self._quota = None
         self._max = None
+        self._min = None
         self.discriminator = None
 
         if type is not None:
@@ -54,6 +57,8 @@ class AllResources:
             self.quota = quota
         if max is not None:
             self.max = max
+        if min is not None:
+            self.min = min
 
     @property
     def type(self):
@@ -142,6 +147,28 @@ class AllResources:
         :type: int
         """
         self._max = max
+
+    @property
+    def min(self):
+        """Gets the min of this AllResources.
+
+        配额下限。
+
+        :return: The min of this AllResources.
+        :rtype: int
+        """
+        return self._min
+
+    @min.setter
+    def min(self, min):
+        """Sets the min of this AllResources.
+
+        配额下限。
+
+        :param min: The min of this AllResources.
+        :type: int
+        """
+        self._min = min
 
     def to_dict(self):
         """Returns the model properties as a dict"""

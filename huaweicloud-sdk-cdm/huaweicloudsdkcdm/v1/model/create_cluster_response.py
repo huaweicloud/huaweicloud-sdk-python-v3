@@ -23,27 +23,42 @@ class CreateClusterResponse(SdkResponse):
 
     openapi_types = {
         'name': 'str',
-        'id': 'str'
+        'id': 'str',
+        'task': 'Task',
+        'datastore': 'Datastore',
+        'instances': 'list[ClusterInstance]'
     }
 
     attribute_map = {
         'name': 'name',
-        'id': 'id'
+        'id': 'id',
+        'task': 'task',
+        'datastore': 'datastore',
+        'instances': 'instances'
     }
 
-    def __init__(self, name=None, id=None):
+    def __init__(self, name=None, id=None, task=None, datastore=None, instances=None):
         """CreateClusterResponse - a model defined in huaweicloud sdk"""
         
         super(CreateClusterResponse, self).__init__()
 
         self._name = None
         self._id = None
+        self._task = None
+        self._datastore = None
+        self._instances = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
         if id is not None:
             self.id = id
+        if task is not None:
+            self.task = task
+        if datastore is not None:
+            self.datastore = datastore
+        if instances is not None:
+            self.instances = instances
 
     @property
     def name(self):
@@ -88,6 +103,68 @@ class CreateClusterResponse(SdkResponse):
         :type: str
         """
         self._id = id
+
+    @property
+    def task(self):
+        """Gets the task of this CreateClusterResponse.
+
+
+        :return: The task of this CreateClusterResponse.
+        :rtype: Task
+        """
+        return self._task
+
+    @task.setter
+    def task(self, task):
+        """Sets the task of this CreateClusterResponse.
+
+
+        :param task: The task of this CreateClusterResponse.
+        :type: Task
+        """
+        self._task = task
+
+    @property
+    def datastore(self):
+        """Gets the datastore of this CreateClusterResponse.
+
+
+        :return: The datastore of this CreateClusterResponse.
+        :rtype: Datastore
+        """
+        return self._datastore
+
+    @datastore.setter
+    def datastore(self, datastore):
+        """Sets the datastore of this CreateClusterResponse.
+
+
+        :param datastore: The datastore of this CreateClusterResponse.
+        :type: Datastore
+        """
+        self._datastore = datastore
+
+    @property
+    def instances(self):
+        """Gets the instances of this CreateClusterResponse.
+
+        集群的节点信息
+
+        :return: The instances of this CreateClusterResponse.
+        :rtype: list[ClusterInstance]
+        """
+        return self._instances
+
+    @instances.setter
+    def instances(self, instances):
+        """Sets the instances of this CreateClusterResponse.
+
+        集群的节点信息
+
+        :param instances: The instances of this CreateClusterResponse.
+        :type: list[ClusterInstance]
+        """
+        self._instances = instances
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,22 +22,27 @@ class ReduceRequest:
     sensitive_list = []
 
     openapi_types = {
-        'node_number': 'int'
+        'node_number': 'int',
+        'group_id': 'str'
     }
 
     attribute_map = {
-        'node_number': 'node_number'
+        'node_number': 'node_number',
+        'group_id': 'group_id'
     }
 
-    def __init__(self, node_number=None):
+    def __init__(self, node_number=None, group_id=None):
         """ReduceRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._node_number = None
+        self._group_id = None
         self.discriminator = None
 
         self.node_number = node_number
+        if group_id is not None:
+            self.group_id = group_id
 
     @property
     def node_number(self):
@@ -60,6 +65,28 @@ class ReduceRequest:
         :type: int
         """
         self._node_number = node_number
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this ReduceRequest.
+
+        组id，指定当前进行节点扩容的组。当实例的组>1时，必填。
+
+        :return: The group_id of this ReduceRequest.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this ReduceRequest.
+
+        组id，指定当前进行节点扩容的组。当实例的组>1时，必填。
+
+        :param group_id: The group_id of this ReduceRequest.
+        :type: str
+        """
+        self._group_id = group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

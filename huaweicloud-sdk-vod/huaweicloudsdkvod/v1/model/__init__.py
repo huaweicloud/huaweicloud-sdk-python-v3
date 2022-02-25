@@ -14,6 +14,7 @@ from huaweicloudsdkvod.v1.model.cancel_asset_transcode_task_request import Cance
 from huaweicloudsdkvod.v1.model.cancel_asset_transcode_task_response import CancelAssetTranscodeTaskResponse
 from huaweicloudsdkvod.v1.model.cancel_extract_audio_task_request import CancelExtractAudioTaskRequest
 from huaweicloudsdkvod.v1.model.cancel_extract_audio_task_response import CancelExtractAudioTaskResponse
+from huaweicloudsdkvod.v1.model.cdn_log import CdnLog
 from huaweicloudsdkvod.v1.model.check_md5_duplication_request import CheckMd5DuplicationRequest
 from huaweicloudsdkvod.v1.model.check_md5_duplication_response import CheckMd5DuplicationResponse
 from huaweicloudsdkvod.v1.model.common import Common
@@ -62,6 +63,8 @@ from huaweicloudsdkvod.v1.model.list_asset_category_request import ListAssetCate
 from huaweicloudsdkvod.v1.model.list_asset_category_response import ListAssetCategoryResponse
 from huaweicloudsdkvod.v1.model.list_asset_list_request import ListAssetListRequest
 from huaweicloudsdkvod.v1.model.list_asset_list_response import ListAssetListResponse
+from huaweicloudsdkvod.v1.model.list_domain_logs_request import ListDomainLogsRequest
+from huaweicloudsdkvod.v1.model.list_domain_logs_response import ListDomainLogsResponse
 from huaweicloudsdkvod.v1.model.list_take_over_task_request import ListTakeOverTaskRequest
 from huaweicloudsdkvod.v1.model.list_take_over_task_response import ListTakeOverTaskResponse
 from huaweicloudsdkvod.v1.model.list_template_group_request import ListTemplateGroupRequest

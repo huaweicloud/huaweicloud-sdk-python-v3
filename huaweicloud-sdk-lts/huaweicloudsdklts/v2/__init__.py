@@ -31,6 +31,7 @@ from huaweicloudsdklts.v2.model.aom_mapping_request_info import AomMappingReques
 from huaweicloudsdklts.v2.model.aom_mapping_rule_info import AomMappingRuleInfo
 from huaweicloudsdklts.v2.model.aom_mapping_rule_resp import AomMappingRuleResp
 from huaweicloudsdklts.v2.model.aom_mappingfiles_info import AomMappingfilesInfo
+from huaweicloudsdklts.v2.model.brief_struct_template_model import BriefStructTemplateModel
 from huaweicloudsdklts.v2.model.change_alarm_rule_status import ChangeAlarmRuleStatus
 from huaweicloudsdklts.v2.model.chart_config import ChartConfig
 from huaweicloudsdklts.v2.model.create_access_config_request import CreateAccessConfigRequest
@@ -59,6 +60,8 @@ from huaweicloudsdklts.v2.model.create_notification_template_response import Cre
 from huaweicloudsdklts.v2.model.create_sql_alarm_rule_request import CreateSqlAlarmRuleRequest
 from huaweicloudsdklts.v2.model.create_sql_alarm_rule_request_body import CreateSqlAlarmRuleRequestBody
 from huaweicloudsdklts.v2.model.create_sql_alarm_rule_response import CreateSqlAlarmRuleResponse
+from huaweicloudsdklts.v2.model.create_struct_config_request import CreateStructConfigRequest
+from huaweicloudsdklts.v2.model.create_struct_config_response import CreateStructConfigResponse
 from huaweicloudsdklts.v2.model.create_struct_template_request import CreateStructTemplateRequest
 from huaweicloudsdklts.v2.model.create_struct_template_response import CreateStructTemplateResponse
 from huaweicloudsdklts.v2.model.create_transfer_request import CreateTransferRequest
@@ -98,12 +101,14 @@ from huaweicloudsdklts.v2.model.delete_struct_template_request import DeleteStru
 from huaweicloudsdklts.v2.model.delete_struct_template_response import DeleteStructTemplateResponse
 from huaweicloudsdklts.v2.model.delete_transfer_request import DeleteTransferRequest
 from huaweicloudsdklts.v2.model.delete_transfer_response import DeleteTransferResponse
+from huaweicloudsdklts.v2.model.demo_field import DemoField
 from huaweicloudsdklts.v2.model.disable_log_collection_request import DisableLogCollectionRequest
 from huaweicloudsdklts.v2.model.disable_log_collection_response import DisableLogCollectionResponse
 from huaweicloudsdklts.v2.model.enable_log_collection_request import EnableLogCollectionRequest
 from huaweicloudsdklts.v2.model.enable_log_collection_response import EnableLogCollectionResponse
 from huaweicloudsdklts.v2.model.event import Event
 from huaweicloudsdklts.v2.model.events import Events
+from huaweicloudsdklts.v2.model.field_model import FieldModel
 from huaweicloudsdklts.v2.model.frequency import Frequency
 from huaweicloudsdklts.v2.model.get_access_config_list_request_body import GetAccessConfigListRequestBody
 from huaweicloudsdklts.v2.model.get_host_group_info import GetHostGroupInfo
@@ -121,6 +126,8 @@ from huaweicloudsdklts.v2.model.list_access_config_response import ListAccessCon
 from huaweicloudsdklts.v2.model.list_active_or_history_alarms_request import ListActiveOrHistoryAlarmsRequest
 from huaweicloudsdklts.v2.model.list_active_or_history_alarms_request_body import ListActiveOrHistoryAlarmsRequestBody
 from huaweicloudsdklts.v2.model.list_active_or_history_alarms_response import ListActiveOrHistoryAlarmsResponse
+from huaweicloudsdklts.v2.model.list_breif_struct_template_request import ListBreifStructTemplateRequest
+from huaweicloudsdklts.v2.model.list_breif_struct_template_response import ListBreifStructTemplateResponse
 from huaweicloudsdklts.v2.model.list_charts_request import ListChartsRequest
 from huaweicloudsdklts.v2.model.list_charts_response import ListChartsResponse
 from huaweicloudsdklts.v2.model.list_host_group_request import ListHostGroupRequest
@@ -150,6 +157,8 @@ from huaweicloudsdklts.v2.model.list_query_structured_logs_request import ListQu
 from huaweicloudsdklts.v2.model.list_query_structured_logs_response import ListQueryStructuredLogsResponse
 from huaweicloudsdklts.v2.model.list_sql_alarm_rules_request import ListSqlAlarmRulesRequest
 from huaweicloudsdklts.v2.model.list_sql_alarm_rules_response import ListSqlAlarmRulesResponse
+from huaweicloudsdklts.v2.model.list_struct_template_request import ListStructTemplateRequest
+from huaweicloudsdklts.v2.model.list_struct_template_response import ListStructTemplateResponse
 from huaweicloudsdklts.v2.model.list_structured_logs_with_time_range_request import ListStructuredLogsWithTimeRangeRequest
 from huaweicloudsdklts.v2.model.list_structured_logs_with_time_range_response import ListStructuredLogsWithTimeRangeResponse
 from huaweicloudsdklts.v2.model.list_transfers_request import ListTransfersRequest
@@ -184,12 +193,17 @@ from huaweicloudsdklts.v2.model.show_struct_templatecluster_info import ShowStru
 from huaweicloudsdklts.v2.model.sort import Sort
 from huaweicloudsdklts.v2.model.sql_alarm_rule_resp_list import SqlAlarmRuleRespList
 from huaweicloudsdklts.v2.model.sql_request import SqlRequest
+from huaweicloudsdklts.v2.model.struct_config import StructConfig
 from huaweicloudsdklts.v2.model.struct_field_info import StructFieldInfo
 from huaweicloudsdklts.v2.model.struct_field_info_return import StructFieldInfoReturn
 from huaweicloudsdklts.v2.model.struct_log_contents import StructLogContents
+from huaweicloudsdklts.v2.model.struct_template import StructTemplate
+from huaweicloudsdklts.v2.model.struct_template_model import StructTemplateModel
 from huaweicloudsdklts.v2.model.sub_template import SubTemplate
 from huaweicloudsdklts.v2.model.tag_field import TagField
+from huaweicloudsdklts.v2.model.tag_field_new import TagFieldNew
 from huaweicloudsdklts.v2.model.tag_fields_info import TagFieldsInfo
+from huaweicloudsdklts.v2.model.template_rule import TemplateRule
 from huaweicloudsdklts.v2.model.time_range import TimeRange
 from huaweicloudsdklts.v2.model.topics import Topics
 from huaweicloudsdklts.v2.model.transfer_detail import TransferDetail
@@ -214,6 +228,8 @@ from huaweicloudsdklts.v2.model.update_notification_template_response import Upd
 from huaweicloudsdklts.v2.model.update_sql_alarm_rule_request import UpdateSqlAlarmRuleRequest
 from huaweicloudsdklts.v2.model.update_sql_alarm_rule_request_body import UpdateSqlAlarmRuleRequestBody
 from huaweicloudsdklts.v2.model.update_sql_alarm_rule_response import UpdateSqlAlarmRuleResponse
+from huaweicloudsdklts.v2.model.update_struct_config_request import UpdateStructConfigRequest
+from huaweicloudsdklts.v2.model.update_struct_config_response import UpdateStructConfigResponse
 from huaweicloudsdklts.v2.model.update_struct_template_request import UpdateStructTemplateRequest
 from huaweicloudsdklts.v2.model.update_struct_template_response import UpdateStructTemplateResponse
 from huaweicloudsdklts.v2.model.update_transfer_request import UpdateTransferRequest

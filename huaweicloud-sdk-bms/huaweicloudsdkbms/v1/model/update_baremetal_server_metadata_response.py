@@ -22,7 +22,7 @@ class UpdateBaremetalServerMetadataResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'metadata': 'KeyValue'
+        'metadata': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -44,9 +44,10 @@ class UpdateBaremetalServerMetadataResponse(SdkResponse):
     def metadata(self):
         """Gets the metadata of this UpdateBaremetalServerMetadataResponse.
 
+        
 
         :return: The metadata of this UpdateBaremetalServerMetadataResponse.
-        :rtype: KeyValue
+        :rtype: dict(str, str)
         """
         return self._metadata
 
@@ -54,9 +55,10 @@ class UpdateBaremetalServerMetadataResponse(SdkResponse):
     def metadata(self, metadata):
         """Sets the metadata of this UpdateBaremetalServerMetadataResponse.
 
+        
 
         :param metadata: The metadata of this UpdateBaremetalServerMetadataResponse.
-        :type: KeyValue
+        :type: dict(str, str)
         """
         self._metadata = metadata
 

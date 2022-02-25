@@ -25,17 +25,19 @@ class RelatedTempRunningData:
         'task_run_info_id': 'int',
         'related_temp_running_id': 'int',
         'temp_id': 'int',
-        'temp_name': 'str'
+        'temp_name': 'str',
+        'related_temp_running_data': 'list[TempRunningData]'
     }
 
     attribute_map = {
         'task_run_info_id': 'task_run_info_id',
         'related_temp_running_id': 'related_temp_running_id',
         'temp_id': 'temp_id',
-        'temp_name': 'temp_name'
+        'temp_name': 'temp_name',
+        'related_temp_running_data': 'related_temp_running_data'
     }
 
-    def __init__(self, task_run_info_id=None, related_temp_running_id=None, temp_id=None, temp_name=None):
+    def __init__(self, task_run_info_id=None, related_temp_running_id=None, temp_id=None, temp_name=None, related_temp_running_data=None):
         """RelatedTempRunningData - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +46,7 @@ class RelatedTempRunningData:
         self._related_temp_running_id = None
         self._temp_id = None
         self._temp_name = None
+        self._related_temp_running_data = None
         self.discriminator = None
 
         if task_run_info_id is not None:
@@ -54,6 +57,8 @@ class RelatedTempRunningData:
             self.temp_id = temp_id
         if temp_name is not None:
             self.temp_name = temp_name
+        if related_temp_running_data is not None:
+            self.related_temp_running_data = related_temp_running_data
 
     @property
     def task_run_info_id(self):
@@ -142,6 +147,28 @@ class RelatedTempRunningData:
         :type: str
         """
         self._temp_name = temp_name
+
+    @property
+    def related_temp_running_data(self):
+        """Gets the related_temp_running_data of this RelatedTempRunningData.
+
+        related_temp_running_data
+
+        :return: The related_temp_running_data of this RelatedTempRunningData.
+        :rtype: list[TempRunningData]
+        """
+        return self._related_temp_running_data
+
+    @related_temp_running_data.setter
+    def related_temp_running_data(self, related_temp_running_data):
+        """Sets the related_temp_running_data of this RelatedTempRunningData.
+
+        related_temp_running_data
+
+        :param related_temp_running_data: The related_temp_running_data of this RelatedTempRunningData.
+        :type: list[TempRunningData]
+        """
+        self._related_temp_running_data = related_temp_running_data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -1483,7 +1483,7 @@ class BmsAsyncClient(Client):
         :return: UpdateBaremetalServerMetadataResponse
         """
 
-        all_params = ['server_id', 'meta_data']
+        all_params = ['server_id', 'update_baremetal_server_metadata_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

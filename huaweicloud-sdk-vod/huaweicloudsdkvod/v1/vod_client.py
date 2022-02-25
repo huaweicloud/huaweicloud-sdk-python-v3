@@ -1014,7 +1014,7 @@ class VodClient(Client):
         :return: DeleteAssetsResponse
         """
 
-        all_params = ['asset_id']
+        all_params = ['asset_id', 'delete_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1028,6 +1028,8 @@ class VodClient(Client):
         if 'asset_id' in local_var_params:
             query_params.append(('asset_id', local_var_params['asset_id']))
             collection_formats['asset_id'] = 'multi'
+        if 'delete_type' in local_var_params:
+            query_params.append(('delete_type', local_var_params['delete_type']))
 
         header_params = {}
 
@@ -1328,6 +1330,75 @@ class VodClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListAssetListResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_domain_logs(self, request):
+        """查询域名播放日志
+
+        查询指定点播域名某段时间内在CDN的相关日志。
+
+        :param ListDomainLogsRequest request
+        :return: ListDomainLogsResponse
+        """
+        return self.list_domain_logs_with_http_info(request)
+
+    def list_domain_logs_with_http_info(self, request):
+        """查询域名播放日志
+
+        查询指定点播域名某段时间内在CDN的相关日志。
+
+        :param ListDomainLogsRequest request
+        :return: ListDomainLogsResponse
+        """
+
+        all_params = ['domain_name', 'query_date', 'page_size', 'page_number']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain_name' in local_var_params:
+            query_params.append(('domain_name', local_var_params['domain_name']))
+        if 'query_date' in local_var_params:
+            query_params.append(('query_date', local_var_params['query_date']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'page_number' in local_var_params:
+            query_params.append(('page_number', local_var_params['page_number']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/vod/cdn/logs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListDomainLogsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

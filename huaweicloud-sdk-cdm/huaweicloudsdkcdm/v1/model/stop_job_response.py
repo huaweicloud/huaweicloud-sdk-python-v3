@@ -22,16 +22,45 @@ class StopJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'submissions': 'list[StartJobSubmission]'
     }
 
     attribute_map = {
+        'submissions': 'submissions'
     }
 
-    def __init__(self):
+    def __init__(self, submissions=None):
         """StopJobResponse - a model defined in huaweicloud sdk"""
         
         super(StopJobResponse, self).__init__()
+
+        self._submissions = None
         self.discriminator = None
+
+        if submissions is not None:
+            self.submissions = submissions
+
+    @property
+    def submissions(self):
+        """Gets the submissions of this StopJobResponse.
+
+        作业运行信息，请参见submission参数说明
+
+        :return: The submissions of this StopJobResponse.
+        :rtype: list[StartJobSubmission]
+        """
+        return self._submissions
+
+    @submissions.setter
+    def submissions(self, submissions):
+        """Sets the submissions of this StopJobResponse.
+
+        作业运行信息，请参见submission参数说明
+
+        :param submissions: The submissions of this StopJobResponse.
+        :type: list[StartJobSubmission]
+        """
+        self._submissions = submissions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -132,7 +132,7 @@ class CreateDependencyRequestBody:
     def runtime(self):
         """Gets the runtime of this CreateDependencyRequestBody.
 
-        运行时语言。
+        运行时语言，Java11、Nodejs14:、Python3:在type为v2时支持。
 
         :return: The runtime of this CreateDependencyRequestBody.
         :rtype: str
@@ -143,7 +143,7 @@ class CreateDependencyRequestBody:
     def runtime(self, runtime):
         """Sets the runtime of this CreateDependencyRequestBody.
 
-        运行时语言。
+        运行时语言，Java11、Nodejs14:、Python3:在type为v2时支持。
 
         :param runtime: The runtime of this CreateDependencyRequestBody.
         :type: str

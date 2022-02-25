@@ -25,17 +25,19 @@ class LogStream:
         'creation_time': 'int',
         'log_stream_name': 'str',
         'log_stream_id': 'str',
-        'filter_count': 'int'
+        'filter_count': 'int',
+        'tag': 'dict(str, str)'
     }
 
     attribute_map = {
         'creation_time': 'creation_time',
         'log_stream_name': 'log_stream_name',
         'log_stream_id': 'log_stream_id',
-        'filter_count': 'filter_count'
+        'filter_count': 'filter_count',
+        'tag': 'tag'
     }
 
-    def __init__(self, creation_time=None, log_stream_name=None, log_stream_id=None, filter_count=None):
+    def __init__(self, creation_time=None, log_stream_name=None, log_stream_id=None, filter_count=None, tag=None):
         """LogStream - a model defined in huaweicloud sdk"""
         
         
@@ -44,12 +46,15 @@ class LogStream:
         self._log_stream_name = None
         self._log_stream_id = None
         self._filter_count = None
+        self._tag = None
         self.discriminator = None
 
         self.creation_time = creation_time
         self.log_stream_name = log_stream_name
         self.log_stream_id = log_stream_id
         self.filter_count = filter_count
+        if tag is not None:
+            self.tag = tag
 
     @property
     def creation_time(self):
@@ -138,6 +143,28 @@ class LogStream:
         :type: int
         """
         self._filter_count = filter_count
+
+    @property
+    def tag(self):
+        """Gets the tag of this LogStream.
+
+        日志流所属标签
+
+        :return: The tag of this LogStream.
+        :rtype: dict(str, str)
+        """
+        return self._tag
+
+    @tag.setter
+    def tag(self, tag):
+        """Sets the tag of this LogStream.
+
+        日志流所属标签
+
+        :param tag: The tag of this LogStream.
+        :type: dict(str, str)
+        """
+        self._tag = tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

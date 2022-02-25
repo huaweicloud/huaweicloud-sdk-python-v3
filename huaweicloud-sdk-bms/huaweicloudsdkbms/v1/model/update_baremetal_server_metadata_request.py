@@ -23,7 +23,7 @@ class UpdateBaremetalServerMetadataRequest:
 
     openapi_types = {
         'server_id': 'str',
-        'body': 'MetaData'
+        'body': 'UpdateBaremetalServerMetadataReq'
     }
 
     attribute_map = {
@@ -72,7 +72,7 @@ class UpdateBaremetalServerMetadataRequest:
 
 
         :return: The body of this UpdateBaremetalServerMetadataRequest.
-        :rtype: MetaData
+        :rtype: UpdateBaremetalServerMetadataReq
         """
         return self._body
 
@@ -82,7 +82,7 @@ class UpdateBaremetalServerMetadataRequest:
 
 
         :param body: The body of this UpdateBaremetalServerMetadataRequest.
-        :type: MetaData
+        :type: UpdateBaremetalServerMetadataReq
         """
         self._body = body
 

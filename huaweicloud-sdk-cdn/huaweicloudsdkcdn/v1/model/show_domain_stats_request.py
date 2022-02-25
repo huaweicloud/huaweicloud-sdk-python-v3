@@ -25,13 +25,11 @@ class ShowDomainStatsRequest:
         'action': 'str',
         'start_time': 'int',
         'end_time': 'int',
-        'interval': 'int',
         'domain_name': 'str',
         'stat_type': 'str',
+        'interval': 'int',
         'group_by': 'str',
-        'country': 'str',
-        'district': 'str',
-        'isp': 'str',
+        'service_area': 'str',
         'enterprise_project_id': 'str'
     }
 
@@ -39,17 +37,15 @@ class ShowDomainStatsRequest:
         'action': 'action',
         'start_time': 'start_time',
         'end_time': 'end_time',
-        'interval': 'interval',
         'domain_name': 'domain_name',
         'stat_type': 'stat_type',
+        'interval': 'interval',
         'group_by': 'group_by',
-        'country': 'country',
-        'district': 'district',
-        'isp': 'isp',
+        'service_area': 'service_area',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, action=None, start_time=None, end_time=None, interval=None, domain_name=None, stat_type=None, group_by=None, country=None, district=None, isp=None, enterprise_project_id=None):
+    def __init__(self, action=None, start_time=None, end_time=None, domain_name=None, stat_type=None, interval=None, group_by=None, service_area=None, enterprise_project_id=None):
         """ShowDomainStatsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -57,31 +53,25 @@ class ShowDomainStatsRequest:
         self._action = None
         self._start_time = None
         self._end_time = None
-        self._interval = None
         self._domain_name = None
         self._stat_type = None
+        self._interval = None
         self._group_by = None
-        self._country = None
-        self._district = None
-        self._isp = None
+        self._service_area = None
         self._enterprise_project_id = None
         self.discriminator = None
 
         self.action = action
         self.start_time = start_time
         self.end_time = end_time
-        if interval is not None:
-            self.interval = interval
         self.domain_name = domain_name
         self.stat_type = stat_type
+        if interval is not None:
+            self.interval = interval
         if group_by is not None:
             self.group_by = group_by
-        if country is not None:
-            self.country = country
-        if district is not None:
-            self.district = district
-        if isp is not None:
-            self.isp = isp
+        if service_area is not None:
+            self.service_area = service_area
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
@@ -89,7 +79,7 @@ class ShowDomainStatsRequest:
     def action(self):
         """Gets the action of this ShowDomainStatsRequest.
 
-        查询类型，可选location_summary,location_detail  location_summary：查询汇总数据 location_detail：查询数据详情 
+        - 动作名称，可选summary、detail。 - summary：查询汇总数据 - detail：查询数据详情。
 
         :return: The action of this ShowDomainStatsRequest.
         :rtype: str
@@ -100,7 +90,7 @@ class ShowDomainStatsRequest:
     def action(self, action):
         """Sets the action of this ShowDomainStatsRequest.
 
-        查询类型，可选location_summary,location_detail  location_summary：查询汇总数据 location_detail：查询数据详情 
+        - 动作名称，可选summary、detail。 - summary：查询汇总数据 - detail：查询数据详情。
 
         :param action: The action of this ShowDomainStatsRequest.
         :type: str
@@ -111,7 +101,7 @@ class ShowDomainStatsRequest:
     def start_time(self):
         """Gets the start_time of this ShowDomainStatsRequest.
 
-        查询起始时间戳， 时间戳应设置需为整5分钟或整小时时刻点，设置方式如下  interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) interval大于等于3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) 
+        - 查询起始时间戳，时间戳应设置需为整5分钟，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
 
         :return: The start_time of this ShowDomainStatsRequest.
         :rtype: int
@@ -122,7 +112,7 @@ class ShowDomainStatsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ShowDomainStatsRequest.
 
-        查询起始时间戳， 时间戳应设置需为整5分钟或整小时时刻点，设置方式如下  interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) interval大于等于3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) 
+        - 查询起始时间戳，时间戳应设置需为整5分钟，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
 
         :param start_time: The start_time of this ShowDomainStatsRequest.
         :type: int
@@ -133,7 +123,7 @@ class ShowDomainStatsRequest:
     def end_time(self):
         """Gets the end_time of this ShowDomainStatsRequest.
 
-        查询结束时间戳， 时间戳应设置需为整5分钟或整小时时刻点，设置方式如下  interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-11 10:15:00) interval大于等于3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) 
+        - 查询结束时间戳，时间戳应设置需为整5分钟，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
 
         :return: The end_time of this ShowDomainStatsRequest.
         :rtype: int
@@ -144,7 +134,7 @@ class ShowDomainStatsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ShowDomainStatsRequest.
 
-        查询结束时间戳， 时间戳应设置需为整5分钟或整小时时刻点，设置方式如下  interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-11 10:15:00) interval大于等于3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) 
+        - 查询结束时间戳，时间戳应设置需为整5分钟，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
 
         :param end_time: The end_time of this ShowDomainStatsRequest.
         :type: int
@@ -152,32 +142,10 @@ class ShowDomainStatsRequest:
         self._end_time = end_time
 
     @property
-    def interval(self):
-        """Gets the interval of this ShowDomainStatsRequest.
-
-        查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),14400(4小时)等
-
-        :return: The interval of this ShowDomainStatsRequest.
-        :rtype: int
-        """
-        return self._interval
-
-    @interval.setter
-    def interval(self, interval):
-        """Sets the interval of this ShowDomainStatsRequest.
-
-        查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),14400(4小时)等
-
-        :param interval: The interval of this ShowDomainStatsRequest.
-        :type: int
-        """
-        self._interval = interval
-
-    @property
     def domain_name(self):
         """Gets the domain_name of this ShowDomainStatsRequest.
 
-        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名
+        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。
 
         :return: The domain_name of this ShowDomainStatsRequest.
         :rtype: str
@@ -188,7 +156,7 @@ class ShowDomainStatsRequest:
     def domain_name(self, domain_name):
         """Sets the domain_name of this ShowDomainStatsRequest.
 
-        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名
+        域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。
 
         :param domain_name: The domain_name of this ShowDomainStatsRequest.
         :type: str
@@ -199,7 +167,7 @@ class ShowDomainStatsRequest:
     def stat_type(self):
         """Gets the stat_type of this ShowDomainStatsRequest.
 
-        网络资源消耗： - bw（带宽） - flux（流量）  HTTP状态码（组合指标）： - status_code_2xx（状态码详情2xx） - status_code_3xx（状态码详情3xx） - status_code_4xx（状态码详情4xx） - status_code_5xx（状态码详情5xx）
+        - 网络资源消耗：   - bw（带宽）   - flux（流量）   - bs_bw（回源带宽）   - bs_flux（回源流量） - 访问情况：   - req_num（请求总数）   - hit_num（请求命中次数）   - bs_num（回源总数）   - bs_fail_num（回源失败数）   - hit_flux（命中流量） - HTTP状态码（组合指标）：   - http_code_2xx（状态码汇总2xx）   - http_code_3xx（状态码汇总3xx）   - http_code_4xx（状态码汇总4xx）   - http_code_5xx（状态码汇总5xx）   - bs_http_code_2xx（回源状态码汇总2xx）   - bs_http_code_3xx（回源状态码汇总3xx）   - bs_http_code_4xx（回源状态码汇总4xx）   - bs_http_code_5xx（回源状态码汇总5xx）   - status_code_2xx（状态码详情2xx）   - status_code_3xx（状态码详情3xx）   - status_code_4xx（状态码详情4xx）   - status_code_5xx（状态码详情5xx）   - bs_status_code_2xx（回源状态码详情2xx）   - bs_status_code_3xx（回源状态码详情3xx）   - bs_status_code_4xx（回源状态码详情4xx）   - bs_status_code_5xx（回源状态码详情5xx）   - status_code和bs_status_code不能一起查询
 
         :return: The stat_type of this ShowDomainStatsRequest.
         :rtype: str
@@ -210,7 +178,7 @@ class ShowDomainStatsRequest:
     def stat_type(self, stat_type):
         """Sets the stat_type of this ShowDomainStatsRequest.
 
-        网络资源消耗： - bw（带宽） - flux（流量）  HTTP状态码（组合指标）： - status_code_2xx（状态码详情2xx） - status_code_3xx（状态码详情3xx） - status_code_4xx（状态码详情4xx） - status_code_5xx（状态码详情5xx）
+        - 网络资源消耗：   - bw（带宽）   - flux（流量）   - bs_bw（回源带宽）   - bs_flux（回源流量） - 访问情况：   - req_num（请求总数）   - hit_num（请求命中次数）   - bs_num（回源总数）   - bs_fail_num（回源失败数）   - hit_flux（命中流量） - HTTP状态码（组合指标）：   - http_code_2xx（状态码汇总2xx）   - http_code_3xx（状态码汇总3xx）   - http_code_4xx（状态码汇总4xx）   - http_code_5xx（状态码汇总5xx）   - bs_http_code_2xx（回源状态码汇总2xx）   - bs_http_code_3xx（回源状态码汇总3xx）   - bs_http_code_4xx（回源状态码汇总4xx）   - bs_http_code_5xx（回源状态码汇总5xx）   - status_code_2xx（状态码详情2xx）   - status_code_3xx（状态码详情3xx）   - status_code_4xx（状态码详情4xx）   - status_code_5xx（状态码详情5xx）   - bs_status_code_2xx（回源状态码详情2xx）   - bs_status_code_3xx（回源状态码详情3xx）   - bs_status_code_4xx（回源状态码详情4xx）   - bs_status_code_5xx（回源状态码详情5xx）   - status_code和bs_status_code不能一起查询
 
         :param stat_type: The stat_type of this ShowDomainStatsRequest.
         :type: str
@@ -218,10 +186,32 @@ class ShowDomainStatsRequest:
         self._stat_type = stat_type
 
     @property
+    def interval(self):
+        """Gets the interval of this ShowDomainStatsRequest.
+
+        查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),86400(1天)等。
+
+        :return: The interval of this ShowDomainStatsRequest.
+        :rtype: int
+        """
+        return self._interval
+
+    @interval.setter
+    def interval(self, interval):
+        """Sets the interval of this ShowDomainStatsRequest.
+
+        查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),86400(1天)等。
+
+        :param interval: The interval of this ShowDomainStatsRequest.
+        :type: int
+        """
+        self._interval = interval
+
+    @property
     def group_by(self):
         """Gets the group_by of this ShowDomainStatsRequest.
 
-        数据分组方式，多个以英文逗号分隔，可选domain,country,district,isp，默认不分组
+        数据分组方式，可选domain，默认不分组。
 
         :return: The group_by of this ShowDomainStatsRequest.
         :rtype: str
@@ -232,7 +222,7 @@ class ShowDomainStatsRequest:
     def group_by(self, group_by):
         """Sets the group_by of this ShowDomainStatsRequest.
 
-        数据分组方式，多个以英文逗号分隔，可选domain,country,district,isp，默认不分组
+        数据分组方式，可选domain，默认不分组。
 
         :param group_by: The group_by of this ShowDomainStatsRequest.
         :type: str
@@ -240,70 +230,26 @@ class ShowDomainStatsRequest:
         self._group_by = group_by
 
     @property
-    def country(self):
-        """Gets the country of this ShowDomainStatsRequest.
+    def service_area(self):
+        """Gets the service_area of this ShowDomainStatsRequest.
 
-        需要过滤的国家编码，多个以英文逗号分隔，all表示全部
+        服务区域：mainland_china（默认）、outside_mainland_china，当查询回源类指标时该参数无效。
 
-        :return: The country of this ShowDomainStatsRequest.
+        :return: The service_area of this ShowDomainStatsRequest.
         :rtype: str
         """
-        return self._country
+        return self._service_area
 
-    @country.setter
-    def country(self, country):
-        """Sets the country of this ShowDomainStatsRequest.
+    @service_area.setter
+    def service_area(self, service_area):
+        """Sets the service_area of this ShowDomainStatsRequest.
 
-        需要过滤的国家编码，多个以英文逗号分隔，all表示全部
+        服务区域：mainland_china（默认）、outside_mainland_china，当查询回源类指标时该参数无效。
 
-        :param country: The country of this ShowDomainStatsRequest.
+        :param service_area: The service_area of this ShowDomainStatsRequest.
         :type: str
         """
-        self._country = country
-
-    @property
-    def district(self):
-        """Gets the district of this ShowDomainStatsRequest.
-
-        需要过滤的地区编码，多个以英文逗号分隔，all表示全部，仅仅country字段为cn时设置才合法
-
-        :return: The district of this ShowDomainStatsRequest.
-        :rtype: str
-        """
-        return self._district
-
-    @district.setter
-    def district(self, district):
-        """Sets the district of this ShowDomainStatsRequest.
-
-        需要过滤的地区编码，多个以英文逗号分隔，all表示全部，仅仅country字段为cn时设置才合法
-
-        :param district: The district of this ShowDomainStatsRequest.
-        :type: str
-        """
-        self._district = district
-
-    @property
-    def isp(self):
-        """Gets the isp of this ShowDomainStatsRequest.
-
-        需要过滤的运营商编码，多个以英文逗号分隔，all表示全部
-
-        :return: The isp of this ShowDomainStatsRequest.
-        :rtype: str
-        """
-        return self._isp
-
-    @isp.setter
-    def isp(self, isp):
-        """Sets the isp of this ShowDomainStatsRequest.
-
-        需要过滤的运营商编码，多个以英文逗号分隔，all表示全部
-
-        :param isp: The isp of this ShowDomainStatsRequest.
-        :type: str
-        """
-        self._isp = isp
+        self._service_area = service_area
 
     @property
     def enterprise_project_id(self):

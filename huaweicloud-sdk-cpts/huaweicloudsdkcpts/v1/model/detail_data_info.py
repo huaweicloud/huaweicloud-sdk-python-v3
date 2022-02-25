@@ -24,59 +24,62 @@ class DetailDataInfo:
     openapi_types = {
         'average_resp_time': 'float',
         'avg_rec_bytes': 'float',
-        'avg_sent_bytes': 'int',
-        'avg_tran_resp_time': 'str',
+        'avg_sent_bytes': 'float',
+        'avg_tran_resp_time': 'float',
         'case_uri': 'str',
         'create_time': 'str',
-        'current_thread_num': 'int',
+        'current_thread_num': 'float',
         'detail_id': 'str',
         'end_time': 'str',
-        'error_count': 'int',
-        'error_events_count': 'int',
-        'failed_assert': 'int',
-        'failed_others': 'int',
-        'failed_parsed': 'int',
-        'failed_refused': 'int',
-        'failed_timeout': 'int',
+        'error_count': 'float',
+        'error_events_count': 'float',
+        'failed_assert': 'float',
+        'failed_others': 'float',
+        'failed_parsed': 'float',
+        'failed_refused': 'float',
+        'failed_timeout': 'float',
         'id': 'str',
         'is_aw': 'bool',
-        'max': 'int',
-        'max_rec_bytes': 'int',
-        'max_resp_time': 'int',
-        'max_sent_bytes': 'int',
-        'max_tran_resp_time': 'int',
-        'min': 'int',
+        'max': 'float',
+        'max_rec_bytes': 'float',
+        'max_resp_time': 'float',
+        'max_sent_bytes': 'float',
+        'max_tran_resp_time': 'float',
+        'min': 'float',
+        'min_network_traffic': 'float',
         'name': 'str',
-        'requests': 'int',
-        'result': 'int',
+        'requests': 'float',
+        'result': 'float',
         'start_time': 'str',
-        'status': 'int',
-        'success_count': 'int',
-        'success_rate': 'int',
-        'sum1xx': 'int',
-        'sum2xx': 'int',
-        'sum3xx': 'int',
-        'sum4xx': 'int',
-        'sum5xx': 'int',
+        'status': 'float',
+        'success_count': 'float',
+        'success_rate': 'float',
+        'sum1xx': 'float',
+        'sum2xx': 'float',
+        'sum3xx': 'float',
+        'sum4xx': 'float',
+        'sum5xx': 'float',
         'task_id': 'str',
         'task_project_id': 'str',
-        'task_status': 'int',
+        'task_status': 'float',
         'test_case_uri': 'str',
-        'tp50': 'int',
-        'tp75': 'int',
-        'tp90': 'int',
-        'tp95': 'int',
-        'tp99': 'int',
+        'tp50': 'float',
+        'tp75': 'float',
+        'tp90': 'float',
+        'tp95': 'float',
+        'tp99': 'float',
         'tps': 'float',
-        'tran_tps': 'str',
+        'tran_tps': 'float',
         'transaction_id': 'str',
-        'transaction_success': 'str',
-        'transactional_success_rate': 'int',
-        'transactional_tps': 'int',
-        'transactional_tps_success': 'int',
-        'transactions': 'str',
+        'transaction_success': 'float',
+        'transactional_success_rate': 'float',
+        'transactional_tps': 'float',
+        'transactional_tps_success': 'float',
+        'transactions': 'float',
         'update_time': 'str',
-        'vum': 'int'
+        'vum': 'float',
+        'avg_network_traffic': 'float',
+        'max_network_traffic': 'float'
     }
 
     attribute_map = {
@@ -104,6 +107,7 @@ class DetailDataInfo:
         'max_sent_bytes': 'maxSentBytes',
         'max_tran_resp_time': 'maxTranRespTime',
         'min': 'min',
+        'min_network_traffic': 'minNetworkTraffic',
         'name': 'name',
         'requests': 'requests',
         'result': 'result',
@@ -134,10 +138,12 @@ class DetailDataInfo:
         'transactional_tps_success': 'transactionalTpsSuccess',
         'transactions': 'transactions',
         'update_time': 'updateTime',
-        'vum': 'vum'
+        'vum': 'vum',
+        'avg_network_traffic': 'avgNetworkTraffic',
+        'max_network_traffic': 'maxNetworkTraffic'
     }
 
-    def __init__(self, average_resp_time=None, avg_rec_bytes=None, avg_sent_bytes=None, avg_tran_resp_time=None, case_uri=None, create_time=None, current_thread_num=None, detail_id=None, end_time=None, error_count=None, error_events_count=None, failed_assert=None, failed_others=None, failed_parsed=None, failed_refused=None, failed_timeout=None, id=None, is_aw=None, max=None, max_rec_bytes=None, max_resp_time=None, max_sent_bytes=None, max_tran_resp_time=None, min=None, name=None, requests=None, result=None, start_time=None, status=None, success_count=None, success_rate=None, sum1xx=None, sum2xx=None, sum3xx=None, sum4xx=None, sum5xx=None, task_id=None, task_project_id=None, task_status=None, test_case_uri=None, tp50=None, tp75=None, tp90=None, tp95=None, tp99=None, tps=None, tran_tps=None, transaction_id=None, transaction_success=None, transactional_success_rate=None, transactional_tps=None, transactional_tps_success=None, transactions=None, update_time=None, vum=None):
+    def __init__(self, average_resp_time=None, avg_rec_bytes=None, avg_sent_bytes=None, avg_tran_resp_time=None, case_uri=None, create_time=None, current_thread_num=None, detail_id=None, end_time=None, error_count=None, error_events_count=None, failed_assert=None, failed_others=None, failed_parsed=None, failed_refused=None, failed_timeout=None, id=None, is_aw=None, max=None, max_rec_bytes=None, max_resp_time=None, max_sent_bytes=None, max_tran_resp_time=None, min=None, min_network_traffic=None, name=None, requests=None, result=None, start_time=None, status=None, success_count=None, success_rate=None, sum1xx=None, sum2xx=None, sum3xx=None, sum4xx=None, sum5xx=None, task_id=None, task_project_id=None, task_status=None, test_case_uri=None, tp50=None, tp75=None, tp90=None, tp95=None, tp99=None, tps=None, tran_tps=None, transaction_id=None, transaction_success=None, transactional_success_rate=None, transactional_tps=None, transactional_tps_success=None, transactions=None, update_time=None, vum=None, avg_network_traffic=None, max_network_traffic=None):
         """DetailDataInfo - a model defined in huaweicloud sdk"""
         
         
@@ -166,6 +172,7 @@ class DetailDataInfo:
         self._max_sent_bytes = None
         self._max_tran_resp_time = None
         self._min = None
+        self._min_network_traffic = None
         self._name = None
         self._requests = None
         self._result = None
@@ -197,6 +204,8 @@ class DetailDataInfo:
         self._transactions = None
         self._update_time = None
         self._vum = None
+        self._avg_network_traffic = None
+        self._max_network_traffic = None
         self.discriminator = None
 
         if average_resp_time is not None:
@@ -247,6 +256,8 @@ class DetailDataInfo:
             self.max_tran_resp_time = max_tran_resp_time
         if min is not None:
             self.min = min
+        if min_network_traffic is not None:
+            self.min_network_traffic = min_network_traffic
         if name is not None:
             self.name = name
         if requests is not None:
@@ -309,12 +320,16 @@ class DetailDataInfo:
             self.update_time = update_time
         if vum is not None:
             self.vum = vum
+        if avg_network_traffic is not None:
+            self.avg_network_traffic = avg_network_traffic
+        if max_network_traffic is not None:
+            self.max_network_traffic = max_network_traffic
 
     @property
     def average_resp_time(self):
         """Gets the average_resp_time of this DetailDataInfo.
 
-        averageRespTime
+        平均响应时间
 
         :return: The average_resp_time of this DetailDataInfo.
         :rtype: float
@@ -325,7 +340,7 @@ class DetailDataInfo:
     def average_resp_time(self, average_resp_time):
         """Sets the average_resp_time of this DetailDataInfo.
 
-        averageRespTime
+        平均响应时间
 
         :param average_resp_time: The average_resp_time of this DetailDataInfo.
         :type: float
@@ -336,7 +351,7 @@ class DetailDataInfo:
     def avg_rec_bytes(self):
         """Gets the avg_rec_bytes of this DetailDataInfo.
 
-        avgRecBytes
+        平均接收字节数
 
         :return: The avg_rec_bytes of this DetailDataInfo.
         :rtype: float
@@ -347,7 +362,7 @@ class DetailDataInfo:
     def avg_rec_bytes(self, avg_rec_bytes):
         """Sets the avg_rec_bytes of this DetailDataInfo.
 
-        avgRecBytes
+        平均接收字节数
 
         :param avg_rec_bytes: The avg_rec_bytes of this DetailDataInfo.
         :type: float
@@ -358,10 +373,10 @@ class DetailDataInfo:
     def avg_sent_bytes(self):
         """Gets the avg_sent_bytes of this DetailDataInfo.
 
-        avgSentBytes
+        平均发送字节数
 
         :return: The avg_sent_bytes of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._avg_sent_bytes
 
@@ -369,10 +384,10 @@ class DetailDataInfo:
     def avg_sent_bytes(self, avg_sent_bytes):
         """Sets the avg_sent_bytes of this DetailDataInfo.
 
-        avgSentBytes
+        平均发送字节数
 
         :param avg_sent_bytes: The avg_sent_bytes of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._avg_sent_bytes = avg_sent_bytes
 
@@ -380,10 +395,10 @@ class DetailDataInfo:
     def avg_tran_resp_time(self):
         """Gets the avg_tran_resp_time of this DetailDataInfo.
 
-        avgTranRespTime
+        事务平均响应时间
 
         :return: The avg_tran_resp_time of this DetailDataInfo.
-        :rtype: str
+        :rtype: float
         """
         return self._avg_tran_resp_time
 
@@ -391,10 +406,10 @@ class DetailDataInfo:
     def avg_tran_resp_time(self, avg_tran_resp_time):
         """Sets the avg_tran_resp_time of this DetailDataInfo.
 
-        avgTranRespTime
+        事务平均响应时间
 
         :param avg_tran_resp_time: The avg_tran_resp_time of this DetailDataInfo.
-        :type: str
+        :type: float
         """
         self._avg_tran_resp_time = avg_tran_resp_time
 
@@ -402,7 +417,7 @@ class DetailDataInfo:
     def case_uri(self):
         """Gets the case_uri of this DetailDataInfo.
 
-        caseUri
+        用例Uri
 
         :return: The case_uri of this DetailDataInfo.
         :rtype: str
@@ -413,7 +428,7 @@ class DetailDataInfo:
     def case_uri(self, case_uri):
         """Sets the case_uri of this DetailDataInfo.
 
-        caseUri
+        用例Uri
 
         :param case_uri: The case_uri of this DetailDataInfo.
         :type: str
@@ -424,7 +439,7 @@ class DetailDataInfo:
     def create_time(self):
         """Gets the create_time of this DetailDataInfo.
 
-        createTime
+        创建时间
 
         :return: The create_time of this DetailDataInfo.
         :rtype: str
@@ -435,7 +450,7 @@ class DetailDataInfo:
     def create_time(self, create_time):
         """Sets the create_time of this DetailDataInfo.
 
-        createTime
+        创建时间
 
         :param create_time: The create_time of this DetailDataInfo.
         :type: str
@@ -446,10 +461,10 @@ class DetailDataInfo:
     def current_thread_num(self):
         """Gets the current_thread_num of this DetailDataInfo.
 
-        currentThreadNum
+        最大并发数
 
         :return: The current_thread_num of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._current_thread_num
 
@@ -457,10 +472,10 @@ class DetailDataInfo:
     def current_thread_num(self, current_thread_num):
         """Sets the current_thread_num of this DetailDataInfo.
 
-        currentThreadNum
+        最大并发数
 
         :param current_thread_num: The current_thread_num of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._current_thread_num = current_thread_num
 
@@ -468,7 +483,7 @@ class DetailDataInfo:
     def detail_id(self):
         """Gets the detail_id of this DetailDataInfo.
 
-        detailId
+        详情id
 
         :return: The detail_id of this DetailDataInfo.
         :rtype: str
@@ -479,7 +494,7 @@ class DetailDataInfo:
     def detail_id(self, detail_id):
         """Sets the detail_id of this DetailDataInfo.
 
-        detailId
+        详情id
 
         :param detail_id: The detail_id of this DetailDataInfo.
         :type: str
@@ -490,7 +505,7 @@ class DetailDataInfo:
     def end_time(self):
         """Gets the end_time of this DetailDataInfo.
 
-        endTime
+        结束时间
 
         :return: The end_time of this DetailDataInfo.
         :rtype: str
@@ -501,7 +516,7 @@ class DetailDataInfo:
     def end_time(self, end_time):
         """Sets the end_time of this DetailDataInfo.
 
-        endTime
+        结束时间
 
         :param end_time: The end_time of this DetailDataInfo.
         :type: str
@@ -512,10 +527,10 @@ class DetailDataInfo:
     def error_count(self):
         """Gets the error_count of this DetailDataInfo.
 
-        errorCount
+        失败请求数
 
         :return: The error_count of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._error_count
 
@@ -523,10 +538,10 @@ class DetailDataInfo:
     def error_count(self, error_count):
         """Sets the error_count of this DetailDataInfo.
 
-        errorCount
+        失败请求数
 
         :param error_count: The error_count of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._error_count = error_count
 
@@ -534,10 +549,10 @@ class DetailDataInfo:
     def error_events_count(self):
         """Gets the error_events_count of this DetailDataInfo.
 
-        errorEventsCount
+        ERROR级别的事件个数
 
         :return: The error_events_count of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._error_events_count
 
@@ -545,10 +560,10 @@ class DetailDataInfo:
     def error_events_count(self, error_events_count):
         """Sets the error_events_count of this DetailDataInfo.
 
-        errorEventsCount
+        ERROR级别的事件个数
 
         :param error_events_count: The error_events_count of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._error_events_count = error_events_count
 
@@ -556,10 +571,10 @@ class DetailDataInfo:
     def failed_assert(self):
         """Gets the failed_assert of this DetailDataInfo.
 
-        failedAssert
+        断言失败
 
         :return: The failed_assert of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._failed_assert
 
@@ -567,10 +582,10 @@ class DetailDataInfo:
     def failed_assert(self, failed_assert):
         """Sets the failed_assert of this DetailDataInfo.
 
-        failedAssert
+        断言失败
 
         :param failed_assert: The failed_assert of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._failed_assert = failed_assert
 
@@ -578,10 +593,10 @@ class DetailDataInfo:
     def failed_others(self):
         """Gets the failed_others of this DetailDataInfo.
 
-        failedOthers
+        其他失败
 
         :return: The failed_others of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._failed_others
 
@@ -589,10 +604,10 @@ class DetailDataInfo:
     def failed_others(self, failed_others):
         """Sets the failed_others of this DetailDataInfo.
 
-        failedOthers
+        其他失败
 
         :param failed_others: The failed_others of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._failed_others = failed_others
 
@@ -600,10 +615,10 @@ class DetailDataInfo:
     def failed_parsed(self):
         """Gets the failed_parsed of this DetailDataInfo.
 
-        failedParsed
+        解析失败
 
         :return: The failed_parsed of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._failed_parsed
 
@@ -611,10 +626,10 @@ class DetailDataInfo:
     def failed_parsed(self, failed_parsed):
         """Sets the failed_parsed of this DetailDataInfo.
 
-        failedParsed
+        解析失败
 
         :param failed_parsed: The failed_parsed of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._failed_parsed = failed_parsed
 
@@ -622,10 +637,10 @@ class DetailDataInfo:
     def failed_refused(self):
         """Gets the failed_refused of this DetailDataInfo.
 
-        failedRefused
+        连接被拒
 
         :return: The failed_refused of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._failed_refused
 
@@ -633,10 +648,10 @@ class DetailDataInfo:
     def failed_refused(self, failed_refused):
         """Sets the failed_refused of this DetailDataInfo.
 
-        failedRefused
+        连接被拒
 
         :param failed_refused: The failed_refused of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._failed_refused = failed_refused
 
@@ -644,10 +659,10 @@ class DetailDataInfo:
     def failed_timeout(self):
         """Gets the failed_timeout of this DetailDataInfo.
 
-        failedTimeout
+        超时失败
 
         :return: The failed_timeout of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._failed_timeout
 
@@ -655,10 +670,10 @@ class DetailDataInfo:
     def failed_timeout(self, failed_timeout):
         """Sets the failed_timeout of this DetailDataInfo.
 
-        failedTimeout
+        超时失败
 
         :param failed_timeout: The failed_timeout of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._failed_timeout = failed_timeout
 
@@ -688,7 +703,7 @@ class DetailDataInfo:
     def is_aw(self):
         """Gets the is_aw of this DetailDataInfo.
 
-        isAW
+        是否aw
 
         :return: The is_aw of this DetailDataInfo.
         :rtype: bool
@@ -699,7 +714,7 @@ class DetailDataInfo:
     def is_aw(self, is_aw):
         """Sets the is_aw of this DetailDataInfo.
 
-        isAW
+        是否aw
 
         :param is_aw: The is_aw of this DetailDataInfo.
         :type: bool
@@ -710,10 +725,10 @@ class DetailDataInfo:
     def max(self):
         """Gets the max of this DetailDataInfo.
 
-        max
+        最大响应时间
 
         :return: The max of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._max
 
@@ -721,10 +736,10 @@ class DetailDataInfo:
     def max(self, max):
         """Sets the max of this DetailDataInfo.
 
-        max
+        最大响应时间
 
         :param max: The max of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._max = max
 
@@ -732,10 +747,10 @@ class DetailDataInfo:
     def max_rec_bytes(self):
         """Gets the max_rec_bytes of this DetailDataInfo.
 
-        maxRecBytes
+        最大接收字节数
 
         :return: The max_rec_bytes of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._max_rec_bytes
 
@@ -743,10 +758,10 @@ class DetailDataInfo:
     def max_rec_bytes(self, max_rec_bytes):
         """Sets the max_rec_bytes of this DetailDataInfo.
 
-        maxRecBytes
+        最大接收字节数
 
         :param max_rec_bytes: The max_rec_bytes of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._max_rec_bytes = max_rec_bytes
 
@@ -754,10 +769,10 @@ class DetailDataInfo:
     def max_resp_time(self):
         """Gets the max_resp_time of this DetailDataInfo.
 
-        maxRespTime
+        探底最大响应时间
 
         :return: The max_resp_time of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._max_resp_time
 
@@ -765,10 +780,10 @@ class DetailDataInfo:
     def max_resp_time(self, max_resp_time):
         """Sets the max_resp_time of this DetailDataInfo.
 
-        maxRespTime
+        探底最大响应时间
 
         :param max_resp_time: The max_resp_time of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._max_resp_time = max_resp_time
 
@@ -776,10 +791,10 @@ class DetailDataInfo:
     def max_sent_bytes(self):
         """Gets the max_sent_bytes of this DetailDataInfo.
 
-        maxSentBytes
+        最大发送字节数
 
         :return: The max_sent_bytes of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._max_sent_bytes
 
@@ -787,10 +802,10 @@ class DetailDataInfo:
     def max_sent_bytes(self, max_sent_bytes):
         """Sets the max_sent_bytes of this DetailDataInfo.
 
-        maxSentBytes
+        最大发送字节数
 
         :param max_sent_bytes: The max_sent_bytes of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._max_sent_bytes = max_sent_bytes
 
@@ -798,10 +813,10 @@ class DetailDataInfo:
     def max_tran_resp_time(self):
         """Gets the max_tran_resp_time of this DetailDataInfo.
 
-        maxTranRespTime
+        事务最大响应时间
 
         :return: The max_tran_resp_time of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._max_tran_resp_time
 
@@ -809,10 +824,10 @@ class DetailDataInfo:
     def max_tran_resp_time(self, max_tran_resp_time):
         """Sets the max_tran_resp_time of this DetailDataInfo.
 
-        maxTranRespTime
+        事务最大响应时间
 
         :param max_tran_resp_time: The max_tran_resp_time of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._max_tran_resp_time = max_tran_resp_time
 
@@ -820,10 +835,10 @@ class DetailDataInfo:
     def min(self):
         """Gets the min of this DetailDataInfo.
 
-        min
+        最小响应时间
 
         :return: The min of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._min
 
@@ -831,18 +846,40 @@ class DetailDataInfo:
     def min(self, min):
         """Sets the min of this DetailDataInfo.
 
-        min
+        最小响应时间
 
         :param min: The min of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._min = min
+
+    @property
+    def min_network_traffic(self):
+        """Gets the min_network_traffic of this DetailDataInfo.
+
+        最小带宽
+
+        :return: The min_network_traffic of this DetailDataInfo.
+        :rtype: float
+        """
+        return self._min_network_traffic
+
+    @min_network_traffic.setter
+    def min_network_traffic(self, min_network_traffic):
+        """Sets the min_network_traffic of this DetailDataInfo.
+
+        最小带宽
+
+        :param min_network_traffic: The min_network_traffic of this DetailDataInfo.
+        :type: float
+        """
+        self._min_network_traffic = min_network_traffic
 
     @property
     def name(self):
         """Gets the name of this DetailDataInfo.
 
-        name
+        名字
 
         :return: The name of this DetailDataInfo.
         :rtype: str
@@ -853,7 +890,7 @@ class DetailDataInfo:
     def name(self, name):
         """Sets the name of this DetailDataInfo.
 
-        name
+        名字
 
         :param name: The name of this DetailDataInfo.
         :type: str
@@ -864,10 +901,10 @@ class DetailDataInfo:
     def requests(self):
         """Gets the requests of this DetailDataInfo.
 
-        requests
+        请求数
 
         :return: The requests of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._requests
 
@@ -875,10 +912,10 @@ class DetailDataInfo:
     def requests(self, requests):
         """Sets the requests of this DetailDataInfo.
 
-        requests
+        请求数
 
         :param requests: The requests of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._requests = requests
 
@@ -886,10 +923,10 @@ class DetailDataInfo:
     def result(self):
         """Gets the result of this DetailDataInfo.
 
-        result
+        aw执行结果
 
         :return: The result of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._result
 
@@ -897,10 +934,10 @@ class DetailDataInfo:
     def result(self, result):
         """Sets the result of this DetailDataInfo.
 
-        result
+        aw执行结果
 
         :param result: The result of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._result = result
 
@@ -908,7 +945,7 @@ class DetailDataInfo:
     def start_time(self):
         """Gets the start_time of this DetailDataInfo.
 
-        startTime
+        开始时间
 
         :return: The start_time of this DetailDataInfo.
         :rtype: str
@@ -919,7 +956,7 @@ class DetailDataInfo:
     def start_time(self, start_time):
         """Sets the start_time of this DetailDataInfo.
 
-        startTime
+        开始时间
 
         :param start_time: The start_time of this DetailDataInfo.
         :type: str
@@ -930,10 +967,10 @@ class DetailDataInfo:
     def status(self):
         """Gets the status of this DetailDataInfo.
 
-        status
+        用例状态
 
         :return: The status of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._status
 
@@ -941,10 +978,10 @@ class DetailDataInfo:
     def status(self, status):
         """Sets the status of this DetailDataInfo.
 
-        status
+        用例状态
 
         :param status: The status of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._status = status
 
@@ -952,10 +989,10 @@ class DetailDataInfo:
     def success_count(self):
         """Gets the success_count of this DetailDataInfo.
 
-        successCount
+        成功请求数
 
         :return: The success_count of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._success_count
 
@@ -963,10 +1000,10 @@ class DetailDataInfo:
     def success_count(self, success_count):
         """Sets the success_count of this DetailDataInfo.
 
-        successCount
+        成功请求数
 
         :param success_count: The success_count of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._success_count = success_count
 
@@ -974,10 +1011,10 @@ class DetailDataInfo:
     def success_rate(self):
         """Gets the success_rate of this DetailDataInfo.
 
-        successRate
+        成功率
 
         :return: The success_rate of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._success_rate
 
@@ -985,10 +1022,10 @@ class DetailDataInfo:
     def success_rate(self, success_rate):
         """Sets the success_rate of this DetailDataInfo.
 
-        successRate
+        成功率
 
         :param success_rate: The success_rate of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._success_rate = success_rate
 
@@ -996,10 +1033,10 @@ class DetailDataInfo:
     def sum1xx(self):
         """Gets the sum1xx of this DetailDataInfo.
 
-        sum1xx
+        1xx请求数
 
         :return: The sum1xx of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._sum1xx
 
@@ -1007,10 +1044,10 @@ class DetailDataInfo:
     def sum1xx(self, sum1xx):
         """Sets the sum1xx of this DetailDataInfo.
 
-        sum1xx
+        1xx请求数
 
         :param sum1xx: The sum1xx of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._sum1xx = sum1xx
 
@@ -1018,10 +1055,10 @@ class DetailDataInfo:
     def sum2xx(self):
         """Gets the sum2xx of this DetailDataInfo.
 
-        sum2xx
+        2xx请求数
 
         :return: The sum2xx of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._sum2xx
 
@@ -1029,10 +1066,10 @@ class DetailDataInfo:
     def sum2xx(self, sum2xx):
         """Sets the sum2xx of this DetailDataInfo.
 
-        sum2xx
+        2xx请求数
 
         :param sum2xx: The sum2xx of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._sum2xx = sum2xx
 
@@ -1040,10 +1077,10 @@ class DetailDataInfo:
     def sum3xx(self):
         """Gets the sum3xx of this DetailDataInfo.
 
-        sum3xx
+        3xx请求数
 
         :return: The sum3xx of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._sum3xx
 
@@ -1051,10 +1088,10 @@ class DetailDataInfo:
     def sum3xx(self, sum3xx):
         """Sets the sum3xx of this DetailDataInfo.
 
-        sum3xx
+        3xx请求数
 
         :param sum3xx: The sum3xx of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._sum3xx = sum3xx
 
@@ -1062,10 +1099,10 @@ class DetailDataInfo:
     def sum4xx(self):
         """Gets the sum4xx of this DetailDataInfo.
 
-        sum4xx
+        4xx请求数
 
         :return: The sum4xx of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._sum4xx
 
@@ -1073,10 +1110,10 @@ class DetailDataInfo:
     def sum4xx(self, sum4xx):
         """Sets the sum4xx of this DetailDataInfo.
 
-        sum4xx
+        4xx请求数
 
         :param sum4xx: The sum4xx of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._sum4xx = sum4xx
 
@@ -1084,10 +1121,10 @@ class DetailDataInfo:
     def sum5xx(self):
         """Gets the sum5xx of this DetailDataInfo.
 
-        sum5xx
+        5xx请求数
 
         :return: The sum5xx of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._sum5xx
 
@@ -1095,10 +1132,10 @@ class DetailDataInfo:
     def sum5xx(self, sum5xx):
         """Sets the sum5xx of this DetailDataInfo.
 
-        sum5xx
+        5xx请求数
 
         :param sum5xx: The sum5xx of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._sum5xx = sum5xx
 
@@ -1106,7 +1143,7 @@ class DetailDataInfo:
     def task_id(self):
         """Gets the task_id of this DetailDataInfo.
 
-        taskId
+        任务id_轮次
 
         :return: The task_id of this DetailDataInfo.
         :rtype: str
@@ -1117,7 +1154,7 @@ class DetailDataInfo:
     def task_id(self, task_id):
         """Sets the task_id of this DetailDataInfo.
 
-        taskId
+        任务id_轮次
 
         :param task_id: The task_id of this DetailDataInfo.
         :type: str
@@ -1128,7 +1165,7 @@ class DetailDataInfo:
     def task_project_id(self):
         """Gets the task_project_id of this DetailDataInfo.
 
-        taskProjectId
+        任务id
 
         :return: The task_project_id of this DetailDataInfo.
         :rtype: str
@@ -1139,7 +1176,7 @@ class DetailDataInfo:
     def task_project_id(self, task_project_id):
         """Sets the task_project_id of this DetailDataInfo.
 
-        taskProjectId
+        任务id
 
         :param task_project_id: The task_project_id of this DetailDataInfo.
         :type: str
@@ -1150,10 +1187,10 @@ class DetailDataInfo:
     def task_status(self):
         """Gets the task_status of this DetailDataInfo.
 
-        taskStatus
+        任务状态
 
         :return: The task_status of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._task_status
 
@@ -1161,10 +1198,10 @@ class DetailDataInfo:
     def task_status(self, task_status):
         """Sets the task_status of this DetailDataInfo.
 
-        taskStatus
+        任务状态
 
         :param task_status: The task_status of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._task_status = task_status
 
@@ -1172,7 +1209,7 @@ class DetailDataInfo:
     def test_case_uri(self):
         """Gets the test_case_uri of this DetailDataInfo.
 
-        testCaseUri
+        用例uri
 
         :return: The test_case_uri of this DetailDataInfo.
         :rtype: str
@@ -1183,7 +1220,7 @@ class DetailDataInfo:
     def test_case_uri(self, test_case_uri):
         """Sets the test_case_uri of this DetailDataInfo.
 
-        testCaseUri
+        用例uri
 
         :param test_case_uri: The test_case_uri of this DetailDataInfo.
         :type: str
@@ -1197,7 +1234,7 @@ class DetailDataInfo:
         tp50
 
         :return: The tp50 of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._tp50
 
@@ -1208,7 +1245,7 @@ class DetailDataInfo:
         tp50
 
         :param tp50: The tp50 of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._tp50 = tp50
 
@@ -1219,7 +1256,7 @@ class DetailDataInfo:
         tp75
 
         :return: The tp75 of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._tp75
 
@@ -1230,7 +1267,7 @@ class DetailDataInfo:
         tp75
 
         :param tp75: The tp75 of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._tp75 = tp75
 
@@ -1241,7 +1278,7 @@ class DetailDataInfo:
         tp90
 
         :return: The tp90 of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._tp90
 
@@ -1252,7 +1289,7 @@ class DetailDataInfo:
         tp90
 
         :param tp90: The tp90 of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._tp90 = tp90
 
@@ -1263,7 +1300,7 @@ class DetailDataInfo:
         tp95
 
         :return: The tp95 of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._tp95
 
@@ -1274,7 +1311,7 @@ class DetailDataInfo:
         tp95
 
         :param tp95: The tp95 of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._tp95 = tp95
 
@@ -1285,7 +1322,7 @@ class DetailDataInfo:
         tp99
 
         :return: The tp99 of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._tp99
 
@@ -1296,7 +1333,7 @@ class DetailDataInfo:
         tp99
 
         :param tp99: The tp99 of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._tp99 = tp99
 
@@ -1326,10 +1363,10 @@ class DetailDataInfo:
     def tran_tps(self):
         """Gets the tran_tps of this DetailDataInfo.
 
-        tranTPS
+        事务tps
 
         :return: The tran_tps of this DetailDataInfo.
-        :rtype: str
+        :rtype: float
         """
         return self._tran_tps
 
@@ -1337,10 +1374,10 @@ class DetailDataInfo:
     def tran_tps(self, tran_tps):
         """Sets the tran_tps of this DetailDataInfo.
 
-        tranTPS
+        事务tps
 
         :param tran_tps: The tran_tps of this DetailDataInfo.
-        :type: str
+        :type: float
         """
         self._tran_tps = tran_tps
 
@@ -1348,7 +1385,7 @@ class DetailDataInfo:
     def transaction_id(self):
         """Gets the transaction_id of this DetailDataInfo.
 
-        transactionId
+        事务id
 
         :return: The transaction_id of this DetailDataInfo.
         :rtype: str
@@ -1359,7 +1396,7 @@ class DetailDataInfo:
     def transaction_id(self, transaction_id):
         """Sets the transaction_id of this DetailDataInfo.
 
-        transactionId
+        事务id
 
         :param transaction_id: The transaction_id of this DetailDataInfo.
         :type: str
@@ -1370,10 +1407,10 @@ class DetailDataInfo:
     def transaction_success(self):
         """Gets the transaction_success of this DetailDataInfo.
 
-        transactionSuccess
+        事务成功率
 
         :return: The transaction_success of this DetailDataInfo.
-        :rtype: str
+        :rtype: float
         """
         return self._transaction_success
 
@@ -1381,10 +1418,10 @@ class DetailDataInfo:
     def transaction_success(self, transaction_success):
         """Sets the transaction_success of this DetailDataInfo.
 
-        transactionSuccess
+        事务成功率
 
         :param transaction_success: The transaction_success of this DetailDataInfo.
-        :type: str
+        :type: float
         """
         self._transaction_success = transaction_success
 
@@ -1392,10 +1429,10 @@ class DetailDataInfo:
     def transactional_success_rate(self):
         """Gets the transactional_success_rate of this DetailDataInfo.
 
-        transactionalSuccessRate
+        事务成功率
 
         :return: The transactional_success_rate of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._transactional_success_rate
 
@@ -1403,10 +1440,10 @@ class DetailDataInfo:
     def transactional_success_rate(self, transactional_success_rate):
         """Sets the transactional_success_rate of this DetailDataInfo.
 
-        transactionalSuccessRate
+        事务成功率
 
         :param transactional_success_rate: The transactional_success_rate of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._transactional_success_rate = transactional_success_rate
 
@@ -1414,10 +1451,10 @@ class DetailDataInfo:
     def transactional_tps(self):
         """Gets the transactional_tps of this DetailDataInfo.
 
-        transactionalTps
+        自定义事务tps
 
         :return: The transactional_tps of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._transactional_tps
 
@@ -1425,10 +1462,10 @@ class DetailDataInfo:
     def transactional_tps(self, transactional_tps):
         """Sets the transactional_tps of this DetailDataInfo.
 
-        transactionalTps
+        自定义事务tps
 
         :param transactional_tps: The transactional_tps of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._transactional_tps = transactional_tps
 
@@ -1436,10 +1473,10 @@ class DetailDataInfo:
     def transactional_tps_success(self):
         """Gets the transactional_tps_success of this DetailDataInfo.
 
-        transactionalTpsSuccess
+        自定义事务成功率
 
         :return: The transactional_tps_success of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._transactional_tps_success
 
@@ -1447,10 +1484,10 @@ class DetailDataInfo:
     def transactional_tps_success(self, transactional_tps_success):
         """Sets the transactional_tps_success of this DetailDataInfo.
 
-        transactionalTpsSuccess
+        自定义事务成功率
 
         :param transactional_tps_success: The transactional_tps_success of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._transactional_tps_success = transactional_tps_success
 
@@ -1458,10 +1495,10 @@ class DetailDataInfo:
     def transactions(self):
         """Gets the transactions of this DetailDataInfo.
 
-        transactions
+        事务数
 
         :return: The transactions of this DetailDataInfo.
-        :rtype: str
+        :rtype: float
         """
         return self._transactions
 
@@ -1469,10 +1506,10 @@ class DetailDataInfo:
     def transactions(self, transactions):
         """Sets the transactions of this DetailDataInfo.
 
-        transactions
+        事务数
 
         :param transactions: The transactions of this DetailDataInfo.
-        :type: str
+        :type: float
         """
         self._transactions = transactions
 
@@ -1480,7 +1517,7 @@ class DetailDataInfo:
     def update_time(self):
         """Gets the update_time of this DetailDataInfo.
 
-        updateTime
+        更新时间
 
         :return: The update_time of this DetailDataInfo.
         :rtype: str
@@ -1491,7 +1528,7 @@ class DetailDataInfo:
     def update_time(self, update_time):
         """Sets the update_time of this DetailDataInfo.
 
-        updateTime
+        更新时间
 
         :param update_time: The update_time of this DetailDataInfo.
         :type: str
@@ -1502,10 +1539,10 @@ class DetailDataInfo:
     def vum(self):
         """Gets the vum of this DetailDataInfo.
 
-        vum
+        分钟*并发数
 
         :return: The vum of this DetailDataInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._vum
 
@@ -1513,12 +1550,56 @@ class DetailDataInfo:
     def vum(self, vum):
         """Sets the vum of this DetailDataInfo.
 
-        vum
+        分钟*并发数
 
         :param vum: The vum of this DetailDataInfo.
-        :type: int
+        :type: float
         """
         self._vum = vum
+
+    @property
+    def avg_network_traffic(self):
+        """Gets the avg_network_traffic of this DetailDataInfo.
+
+        平均带宽
+
+        :return: The avg_network_traffic of this DetailDataInfo.
+        :rtype: float
+        """
+        return self._avg_network_traffic
+
+    @avg_network_traffic.setter
+    def avg_network_traffic(self, avg_network_traffic):
+        """Sets the avg_network_traffic of this DetailDataInfo.
+
+        平均带宽
+
+        :param avg_network_traffic: The avg_network_traffic of this DetailDataInfo.
+        :type: float
+        """
+        self._avg_network_traffic = avg_network_traffic
+
+    @property
+    def max_network_traffic(self):
+        """Gets the max_network_traffic of this DetailDataInfo.
+
+        最大带宽
+
+        :return: The max_network_traffic of this DetailDataInfo.
+        :rtype: float
+        """
+        return self._max_network_traffic
+
+    @max_network_traffic.setter
+    def max_network_traffic(self, max_network_traffic):
+        """Sets the max_network_traffic of this DetailDataInfo.
+
+        最大带宽
+
+        :param max_network_traffic: The max_network_traffic of this DetailDataInfo.
+        :type: float
+        """
+        self._max_network_traffic = max_network_traffic
 
     def to_dict(self):
         """Returns the model properties as a dict"""

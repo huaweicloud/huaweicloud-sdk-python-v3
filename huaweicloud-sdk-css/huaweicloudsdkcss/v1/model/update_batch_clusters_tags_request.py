@@ -48,7 +48,7 @@ class UpdateBatchClustersTagsRequest:
     def cluster_id(self):
         """Gets the cluster_id of this UpdateBatchClustersTagsRequest.
 
-        指定待查询的集群ID。
+        指定待添加的集群ID。
 
         :return: The cluster_id of this UpdateBatchClustersTagsRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class UpdateBatchClustersTagsRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this UpdateBatchClustersTagsRequest.
 
-        指定待查询的集群ID。
+        指定待添加的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateBatchClustersTagsRequest.
         :type: str

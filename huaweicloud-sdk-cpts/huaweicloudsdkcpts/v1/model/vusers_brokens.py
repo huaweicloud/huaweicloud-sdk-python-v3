@@ -22,7 +22,7 @@ class VusersBrokens:
     sensitive_list = []
 
     openapi_types = {
-        'vusers': 'list[int]'
+        'vusers': 'list[float]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class VusersBrokens:
         vusers
 
         :return: The vusers of this VusersBrokens.
-        :rtype: list[int]
+        :rtype: list[float]
         """
         return self._vusers
 
@@ -58,7 +58,7 @@ class VusersBrokens:
         vusers
 
         :param vusers: The vusers of this VusersBrokens.
-        :type: list[int]
+        :type: list[float]
         """
         self._vusers = vusers
 

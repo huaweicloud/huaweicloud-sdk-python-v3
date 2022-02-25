@@ -68,8 +68,7 @@ class UpdateTaskRequestBody:
         self.discriminator = None
 
         self.id = id
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
         self.project_id = project_id

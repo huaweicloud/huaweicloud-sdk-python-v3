@@ -52,14 +52,15 @@ class CreateDatabaseDetail:
         self.name = name
         self.shard_mode = shard_mode
         self.shard_number = shard_number
-        self.shard_unit = shard_unit
+        if shard_unit is not None:
+            self.shard_unit = shard_unit
         self.used_rds = used_rds
 
     @property
     def name(self):
         """Gets the name of this CreateDatabaseDetail.
 
-        逻辑库名称，需要满足以下条件：  - 长度为2-24个字符。 - 必须以字母开头，且不区分大小写。 - 可以包含字母、数字、下划线，不能包含其它特殊字符。 - 禁用关键字：  \"information_schema\"、\"mysql\"、\"performance_schema\"、\"sys\"。
+        逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以字母开头，且不区分大小写。 - 可以包含字母、数字、下划线，不能包含其它特殊字符。 - 禁用关键字：  \"information_schema\"、\"mysql\"、\"performance_schema\"、\"sys\"。
 
         :return: The name of this CreateDatabaseDetail.
         :rtype: str
@@ -70,7 +71,7 @@ class CreateDatabaseDetail:
     def name(self, name):
         """Sets the name of this CreateDatabaseDetail.
 
-        逻辑库名称，需要满足以下条件：  - 长度为2-24个字符。 - 必须以字母开头，且不区分大小写。 - 可以包含字母、数字、下划线，不能包含其它特殊字符。 - 禁用关键字：  \"information_schema\"、\"mysql\"、\"performance_schema\"、\"sys\"。
+        逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以字母开头，且不区分大小写。 - 可以包含字母、数字、下划线，不能包含其它特殊字符。 - 禁用关键字：  \"information_schema\"、\"mysql\"、\"performance_schema\"、\"sys\"。
 
         :param name: The name of this CreateDatabaseDetail.
         :type: str
@@ -103,7 +104,7 @@ class CreateDatabaseDetail:
     def shard_number(self):
         """Gets the shard_number of this CreateDatabaseDetail.
 
-        同一种工作模式下逻辑库分片的数量，shard_unit与关联rds数量的乘积。
+        同一种工作模式下逻辑库分片的数量。 - shard_unit不为空， shard_unit与关联rds数量的乘积 - shard_unit为空，大于关联的RDS数量，小于等于关联rds数量*64。
 
         :return: The shard_number of this CreateDatabaseDetail.
         :rtype: int
@@ -114,7 +115,7 @@ class CreateDatabaseDetail:
     def shard_number(self, shard_number):
         """Sets the shard_number of this CreateDatabaseDetail.
 
-        同一种工作模式下逻辑库分片的数量，shard_unit与关联rds数量的乘积。
+        同一种工作模式下逻辑库分片的数量。 - shard_unit不为空， shard_unit与关联rds数量的乘积 - shard_unit为空，大于关联的RDS数量，小于等于关联rds数量*64。
 
         :param shard_number: The shard_number of this CreateDatabaseDetail.
         :type: int
@@ -125,7 +126,7 @@ class CreateDatabaseDetail:
     def shard_unit(self):
         """Gets the shard_unit of this CreateDatabaseDetail.
 
-        单个RDS上的逻辑库分片数。  - 非拆分逻辑库，固定为1。 - 拆分逻辑库缺省为8，可以根据需要配置为8、16。
+        单个RDS上的逻辑库分片数。非必选  - 非拆分逻辑库，固定为1。 - 拆分逻辑库，大于等于1，小于等于64。
 
         :return: The shard_unit of this CreateDatabaseDetail.
         :rtype: int
@@ -136,7 +137,7 @@ class CreateDatabaseDetail:
     def shard_unit(self, shard_unit):
         """Sets the shard_unit of this CreateDatabaseDetail.
 
-        单个RDS上的逻辑库分片数。  - 非拆分逻辑库，固定为1。 - 拆分逻辑库缺省为8，可以根据需要配置为8、16。
+        单个RDS上的逻辑库分片数。非必选  - 非拆分逻辑库，固定为1。 - 拆分逻辑库，大于等于1，小于等于64。
 
         :param shard_unit: The shard_unit of this CreateDatabaseDetail.
         :type: int

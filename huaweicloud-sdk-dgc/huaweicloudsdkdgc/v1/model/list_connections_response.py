@@ -22,7 +22,7 @@ class ListConnectionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total': 'str',
+        'total': 'int',
         'connections': 'list[ConnectionInfo]'
     }
 
@@ -51,7 +51,7 @@ class ListConnectionsResponse(SdkResponse):
 
 
         :return: The total of this ListConnectionsResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._total
 
@@ -61,7 +61,7 @@ class ListConnectionsResponse(SdkResponse):
 
 
         :param total: The total of this ListConnectionsResponse.
-        :type: str
+        :type: int
         """
         self._total = total
 

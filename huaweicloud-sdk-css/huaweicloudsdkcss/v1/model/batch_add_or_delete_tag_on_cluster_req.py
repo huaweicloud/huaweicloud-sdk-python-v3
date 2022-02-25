@@ -74,7 +74,7 @@ class BatchAddOrDeleteTagOnClusterReq:
     def tags(self):
         """Gets the tags of this BatchAddOrDeleteTagOnClusterReq.
 
-        标签列表
+        标签列表。
 
         :return: The tags of this BatchAddOrDeleteTagOnClusterReq.
         :rtype: list[TagList]
@@ -85,7 +85,7 @@ class BatchAddOrDeleteTagOnClusterReq:
     def tags(self, tags):
         """Sets the tags of this BatchAddOrDeleteTagOnClusterReq.
 
-        标签列表
+        标签列表。
 
         :param tags: The tags of this BatchAddOrDeleteTagOnClusterReq.
         :type: list[TagList]
@@ -96,7 +96,7 @@ class BatchAddOrDeleteTagOnClusterReq:
     def sys_tags(self):
         """Gets the sys_tags of this BatchAddOrDeleteTagOnClusterReq.
 
-        标签列表
+        标签列表。
 
         :return: The sys_tags of this BatchAddOrDeleteTagOnClusterReq.
         :rtype: list[SysTags]
@@ -107,7 +107,7 @@ class BatchAddOrDeleteTagOnClusterReq:
     def sys_tags(self, sys_tags):
         """Sets the sys_tags of this BatchAddOrDeleteTagOnClusterReq.
 
-        标签列表
+        标签列表。
 
         :param sys_tags: The sys_tags of this BatchAddOrDeleteTagOnClusterReq.
         :type: list[SysTags]

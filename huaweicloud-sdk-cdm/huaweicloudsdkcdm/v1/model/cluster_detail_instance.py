@@ -336,7 +336,7 @@ class ClusterDetailInstance:
     def config_status(self):
         """Gets the config_status of this ClusterDetailInstance.
 
-        节点配置状态： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败。
+        节点配置状态（查询集群列表时为null）： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败。
 
         :return: The config_status of this ClusterDetailInstance.
         :rtype: str
@@ -347,7 +347,7 @@ class ClusterDetailInstance:
     def config_status(self, config_status):
         """Sets the config_status of this ClusterDetailInstance.
 
-        节点配置状态： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败。
+        节点配置状态（查询集群列表时为null）： - In-Sync：配置已同步。 - Applying：配置中。 - Sync-Failure：配置失败。
 
         :param config_status: The config_status of this ClusterDetailInstance.
         :type: str
@@ -600,7 +600,7 @@ class ClusterDetailInstance:
     def resource(self):
         """Gets the resource of this ClusterDetailInstance.
 
-        资源信息
+        资源信息（查询集群列表时返回值为null）
 
         :return: The resource of this ClusterDetailInstance.
         :rtype: list[Resource]
@@ -611,7 +611,7 @@ class ClusterDetailInstance:
     def resource(self, resource):
         """Sets the resource of this ClusterDetailInstance.
 
-        资源信息
+        资源信息（查询集群列表时返回值为null）
 
         :param resource: The resource of this ClusterDetailInstance.
         :type: list[Resource]

@@ -23,25 +23,30 @@ class EnlargeRequest:
 
     openapi_types = {
         'flavor_id': 'str',
-        'node_number': 'int'
+        'node_number': 'int',
+        'group_id': 'str'
     }
 
     attribute_map = {
         'flavor_id': 'flavor_id',
-        'node_number': 'node_number'
+        'node_number': 'node_number',
+        'group_id': 'group_id'
     }
 
-    def __init__(self, flavor_id=None, node_number=None):
+    def __init__(self, flavor_id=None, node_number=None, group_id=None):
         """EnlargeRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._flavor_id = None
         self._node_number = None
+        self._group_id = None
         self.discriminator = None
 
         self.flavor_id = flavor_id
         self.node_number = node_number
+        if group_id is not None:
+            self.group_id = group_id
 
     @property
     def flavor_id(self):
@@ -86,6 +91,28 @@ class EnlargeRequest:
         :type: int
         """
         self._node_number = node_number
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this EnlargeRequest.
+
+        组id，指定当前进行节点扩容的组。当实例的组>1时，必填。
+
+        :return: The group_id of this EnlargeRequest.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this EnlargeRequest.
+
+        组id，指定当前进行节点扩容的组。当实例的组>1时，必填。
+
+        :param group_id: The group_id of this EnlargeRequest.
+        :type: str
+        """
+        self._group_id = group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -199,7 +199,7 @@ class CreateScalingPolicyOption:
     def cool_down_time(self):
         """Gets the cool_down_time of this CreateScalingPolicyOption.
 
-        冷却时间，取值范围0-86400，默认为900，单位是秒。
+        冷却时间，取值范围0-86400，默认为300，单位是秒。
 
         :return: The cool_down_time of this CreateScalingPolicyOption.
         :rtype: int
@@ -210,7 +210,7 @@ class CreateScalingPolicyOption:
     def cool_down_time(self, cool_down_time):
         """Sets the cool_down_time of this CreateScalingPolicyOption.
 
-        冷却时间，取值范围0-86400，默认为900，单位是秒。
+        冷却时间，取值范围0-86400，默认为300，单位是秒。
 
         :param cool_down_time: The cool_down_time of this CreateScalingPolicyOption.
         :type: int

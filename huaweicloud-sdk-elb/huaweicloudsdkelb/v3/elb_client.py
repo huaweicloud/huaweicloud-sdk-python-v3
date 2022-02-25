@@ -48,6 +48,136 @@ class ElbClient(Client):
 
         return ClientBuilder(clazz)
 
+    def batch_create_members(self, request):
+        """批量创建后端服务器
+
+        在指定pool下批量创建后端服务器。
+
+        :param BatchCreateMembersRequest request
+        :return: BatchCreateMembersResponse
+        """
+        return self.batch_create_members_with_http_info(request)
+
+    def batch_create_members_with_http_info(self, request):
+        """批量创建后端服务器
+
+        在指定pool下批量创建后端服务器。
+
+        :param BatchCreateMembersRequest request
+        :return: BatchCreateMembersResponse
+        """
+
+        all_params = ['pool_id', 'batch_create_member_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/pools/{pool_id}/members/batch-add',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchCreateMembersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def batch_delete_members(self, request):
+        """批量删除后端服务器
+
+        在指定pool下批量删除后端服务器。
+
+        :param BatchDeleteMembersRequest request
+        :return: BatchDeleteMembersResponse
+        """
+        return self.batch_delete_members_with_http_info(request)
+
+    def batch_delete_members_with_http_info(self, request):
+        """批量删除后端服务器
+
+        在指定pool下批量删除后端服务器。
+
+        :param BatchDeleteMembersRequest request
+        :return: BatchDeleteMembersResponse
+        """
+
+        all_params = ['pool_id', 'batch_delete_member_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/pools/{pool_id}/members/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteMembersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def batch_update_policies_priority(self, request):
         """批量更新转发策略优先级
 

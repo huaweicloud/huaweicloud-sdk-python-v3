@@ -147,7 +147,7 @@ class ListReadWriteRatioRequest:
     def end_date(self):
         """Gets the end_date of this ListReadWriteRatioRequest.
 
-        结束时间，UTC time，精确到毫秒。
+        结束时间，UTC time，精确到毫秒。结束时间与开始时间，间隔不能超过1个月。
 
         :return: The end_date of this ListReadWriteRatioRequest.
         :rtype: str
@@ -158,7 +158,7 @@ class ListReadWriteRatioRequest:
     def end_date(self, end_date):
         """Sets the end_date of this ListReadWriteRatioRequest.
 
-        结束时间，UTC time，精确到毫秒。
+        结束时间，UTC time，精确到毫秒。结束时间与开始时间，间隔不能超过1个月。
 
         :param end_date: The end_date of this ListReadWriteRatioRequest.
         :type: str

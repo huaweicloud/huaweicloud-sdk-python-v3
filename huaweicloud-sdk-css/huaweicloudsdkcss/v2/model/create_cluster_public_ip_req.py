@@ -96,7 +96,7 @@ class CreateClusterPublicIpReq:
     def public_bind_type(self):
         """Gets the public_bind_type of this CreateClusterPublicIpReq.
 
-        是否自动绑定弹性公网IP。auto_assgin为自动分配，bind_existing为绑定已有IP，需要填写eipId字段。
+        是否自动绑定弹性公网IP。auto_assign为自动分配，bind_existing为绑定已有IP，需要填写eipId字段。
 
         :return: The public_bind_type of this CreateClusterPublicIpReq.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateClusterPublicIpReq:
     def public_bind_type(self, public_bind_type):
         """Sets the public_bind_type of this CreateClusterPublicIpReq.
 
-        是否自动绑定弹性公网IP。auto_assgin为自动分配，bind_existing为绑定已有IP，需要填写eipId字段。
+        是否自动绑定弹性公网IP。auto_assign为自动分配，bind_existing为绑定已有IP，需要填写eipId字段。
 
         :param public_bind_type: The public_bind_type of this CreateClusterPublicIpReq.
         :type: str

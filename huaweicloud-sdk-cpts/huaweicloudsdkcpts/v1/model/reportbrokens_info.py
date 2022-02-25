@@ -84,7 +84,7 @@ class ReportbrokensInfo:
     def common_timestamps(self):
         """Gets the common_timestamps of this ReportbrokensInfo.
 
-        commonTimestamps
+        时间戳
 
         :return: The common_timestamps of this ReportbrokensInfo.
         :rtype: list[str]
@@ -95,7 +95,7 @@ class ReportbrokensInfo:
     def common_timestamps(self, common_timestamps):
         """Sets the common_timestamps of this ReportbrokensInfo.
 
-        commonTimestamps
+        时间戳
 
         :param common_timestamps: The common_timestamps of this ReportbrokensInfo.
         :type: list[str]

@@ -41,7 +41,9 @@ class InstanceParam:
         'token': 'str',
         'vpc_id': 'str',
         'instance_user_domain_name': 'str',
-        'instance_user_name': 'str'
+        'instance_user_name': 'str',
+        'instance_domain_id': 'str',
+        'instance_user_id': 'str'
     }
 
     attribute_map = {
@@ -64,10 +66,12 @@ class InstanceParam:
         'token': 'token',
         'vpc_id': 'vpc_id',
         'instance_user_domain_name': 'instance_user_domain_name',
-        'instance_user_name': 'instance_user_name'
+        'instance_user_name': 'instance_user_name',
+        'instance_domain_id': 'instance_domain_id',
+        'instance_user_id': 'instance_user_id'
     }
 
-    def __init__(self, agent_id=None, arch=None, cpu_memory=None, description=None, display_name=None, is_temporary=None, label_tag=None, plugin_enable_list=None, plugin_vars=None, port_id=None, private_ip=None, pvc_quantity=None, refresh_interval=None, repository_id=None, stack_id=None, task_type=None, token=None, vpc_id=None, instance_user_domain_name=None, instance_user_name=None):
+    def __init__(self, agent_id=None, arch=None, cpu_memory=None, description=None, display_name=None, is_temporary=None, label_tag=None, plugin_enable_list=None, plugin_vars=None, port_id=None, private_ip=None, pvc_quantity=None, refresh_interval=None, repository_id=None, stack_id=None, task_type=None, token=None, vpc_id=None, instance_user_domain_name=None, instance_user_name=None, instance_domain_id=None, instance_user_id=None):
         """InstanceParam - a model defined in huaweicloud sdk"""
         
         
@@ -92,6 +96,8 @@ class InstanceParam:
         self._vpc_id = None
         self._instance_user_domain_name = None
         self._instance_user_name = None
+        self._instance_domain_id = None
+        self._instance_user_id = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -129,6 +135,10 @@ class InstanceParam:
             self.instance_user_domain_name = instance_user_domain_name
         if instance_user_name is not None:
             self.instance_user_name = instance_user_name
+        if instance_domain_id is not None:
+            self.instance_domain_id = instance_domain_id
+        if instance_user_id is not None:
+            self.instance_user_id = instance_user_id
 
     @property
     def agent_id(self):
@@ -530,7 +540,7 @@ class InstanceParam:
     def instance_user_domain_name(self):
         """Gets the instance_user_domain_name of this InstanceParam.
 
-        实例授权用户组织名
+        实例授权用户租户名
 
         :return: The instance_user_domain_name of this InstanceParam.
         :rtype: str
@@ -541,7 +551,7 @@ class InstanceParam:
     def instance_user_domain_name(self, instance_user_domain_name):
         """Sets the instance_user_domain_name of this InstanceParam.
 
-        实例授权用户组织名
+        实例授权用户租户名
 
         :param instance_user_domain_name: The instance_user_domain_name of this InstanceParam.
         :type: str
@@ -569,6 +579,50 @@ class InstanceParam:
         :type: str
         """
         self._instance_user_name = instance_user_name
+
+    @property
+    def instance_domain_id(self):
+        """Gets the instance_domain_id of this InstanceParam.
+
+        实例授权用户租户ID
+
+        :return: The instance_domain_id of this InstanceParam.
+        :rtype: str
+        """
+        return self._instance_domain_id
+
+    @instance_domain_id.setter
+    def instance_domain_id(self, instance_domain_id):
+        """Sets the instance_domain_id of this InstanceParam.
+
+        实例授权用户租户ID
+
+        :param instance_domain_id: The instance_domain_id of this InstanceParam.
+        :type: str
+        """
+        self._instance_domain_id = instance_domain_id
+
+    @property
+    def instance_user_id(self):
+        """Gets the instance_user_id of this InstanceParam.
+
+        实例授权用户ID
+
+        :return: The instance_user_id of this InstanceParam.
+        :rtype: str
+        """
+        return self._instance_user_id
+
+    @instance_user_id.setter
+    def instance_user_id(self, instance_user_id):
+        """Sets the instance_user_id of this InstanceParam.
+
+        实例授权用户ID
+
+        :param instance_user_id: The instance_user_id of this InstanceParam.
+        :type: str
+        """
+        self._instance_user_id = instance_user_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

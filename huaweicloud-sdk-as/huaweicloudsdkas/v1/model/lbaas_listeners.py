@@ -95,7 +95,7 @@ class LbaasListeners:
     def weight(self):
         """Gets the weight of this LbaasListeners.
 
-        权重，指后端云服务器经分发得到的请求数量比例，取值范围[0,1]。
+        权重，指后端云服务器经分发得到的请求数量的比例，取值范围[0, 100]。
 
         :return: The weight of this LbaasListeners.
         :rtype: int
@@ -106,7 +106,7 @@ class LbaasListeners:
     def weight(self, weight):
         """Sets the weight of this LbaasListeners.
 
-        权重，指后端云服务器经分发得到的请求数量比例，取值范围[0,1]。
+        权重，指后端云服务器经分发得到的请求数量的比例，取值范围[0, 100]。
 
         :param weight: The weight of this LbaasListeners.
         :type: int

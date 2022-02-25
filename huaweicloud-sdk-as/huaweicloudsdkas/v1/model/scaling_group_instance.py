@@ -177,7 +177,7 @@ class ScalingGroupInstance:
     def life_cycle_state(self):
         """Gets the life_cycle_state of this ScalingGroupInstance.
 
-        实例在伸缩组中的实力状态周期：INSERVICE： 正在使用。PENDING：正在加入伸缩组。REMOVING：正在移出伸缩组。PENDING_WAIT：正在加入伸缩组：等待。REMOVING_WAIT：正在移出伸缩组：等待。
+        实例在伸缩组中的生命周期状态：  - INSERVICE：已启用 - PENDING：正在加入伸缩组 - PENDING_WAIT：等待（正在加入伸缩组） - REMOVING：正在移出伸缩组 - REMOVING_WAIT：等待（正在移出伸缩组） - STANDBY：已备用 - ENTERING_STANDBY：进入备用状态
 
         :return: The life_cycle_state of this ScalingGroupInstance.
         :rtype: str
@@ -188,7 +188,7 @@ class ScalingGroupInstance:
     def life_cycle_state(self, life_cycle_state):
         """Sets the life_cycle_state of this ScalingGroupInstance.
 
-        实例在伸缩组中的实力状态周期：INSERVICE： 正在使用。PENDING：正在加入伸缩组。REMOVING：正在移出伸缩组。PENDING_WAIT：正在加入伸缩组：等待。REMOVING_WAIT：正在移出伸缩组：等待。
+        实例在伸缩组中的生命周期状态：  - INSERVICE：已启用 - PENDING：正在加入伸缩组 - PENDING_WAIT：等待（正在加入伸缩组） - REMOVING：正在移出伸缩组 - REMOVING_WAIT：等待（正在移出伸缩组） - STANDBY：已备用 - ENTERING_STANDBY：进入备用状态
 
         :param life_cycle_state: The life_cycle_state of this ScalingGroupInstance.
         :type: str

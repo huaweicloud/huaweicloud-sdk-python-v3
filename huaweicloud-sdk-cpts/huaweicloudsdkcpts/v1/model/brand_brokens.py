@@ -22,8 +22,8 @@ class BrandBrokens:
     sensitive_list = []
 
     openapi_types = {
-        'rec_bytes': 'list[int]',
-        'sent_bytes': 'list[int]'
+        'rec_bytes': 'list[float]',
+        'sent_bytes': 'list[float]'
     }
 
     attribute_map = {
@@ -49,9 +49,10 @@ class BrandBrokens:
     def rec_bytes(self):
         """Gets the rec_bytes of this BrandBrokens.
 
+        接收字节数
 
         :return: The rec_bytes of this BrandBrokens.
-        :rtype: list[int]
+        :rtype: list[float]
         """
         return self._rec_bytes
 
@@ -59,9 +60,10 @@ class BrandBrokens:
     def rec_bytes(self, rec_bytes):
         """Sets the rec_bytes of this BrandBrokens.
 
+        接收字节数
 
         :param rec_bytes: The rec_bytes of this BrandBrokens.
-        :type: list[int]
+        :type: list[float]
         """
         self._rec_bytes = rec_bytes
 
@@ -69,9 +71,10 @@ class BrandBrokens:
     def sent_bytes(self):
         """Gets the sent_bytes of this BrandBrokens.
 
+        发送字节数
 
         :return: The sent_bytes of this BrandBrokens.
-        :rtype: list[int]
+        :rtype: list[float]
         """
         return self._sent_bytes
 
@@ -79,9 +82,10 @@ class BrandBrokens:
     def sent_bytes(self, sent_bytes):
         """Sets the sent_bytes of this BrandBrokens.
 
+        发送字节数
 
         :param sent_bytes: The sent_bytes of this BrandBrokens.
-        :type: list[int]
+        :type: list[float]
         """
         self._sent_bytes = sent_bytes
 

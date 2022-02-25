@@ -25,17 +25,19 @@ class LogGroup:
         'creation_time': 'int',
         'log_group_name': 'str',
         'log_group_id': 'str',
-        'ttl_in_days': 'int'
+        'ttl_in_days': 'int',
+        'tag': 'dict(str, str)'
     }
 
     attribute_map = {
         'creation_time': 'creation_time',
         'log_group_name': 'log_group_name',
         'log_group_id': 'log_group_id',
-        'ttl_in_days': 'ttl_in_days'
+        'ttl_in_days': 'ttl_in_days',
+        'tag': 'tag'
     }
 
-    def __init__(self, creation_time=None, log_group_name=None, log_group_id=None, ttl_in_days=None):
+    def __init__(self, creation_time=None, log_group_name=None, log_group_id=None, ttl_in_days=None, tag=None):
         """LogGroup - a model defined in huaweicloud sdk"""
         
         
@@ -44,12 +46,15 @@ class LogGroup:
         self._log_group_name = None
         self._log_group_id = None
         self._ttl_in_days = None
+        self._tag = None
         self.discriminator = None
 
         self.creation_time = creation_time
         self.log_group_name = log_group_name
         self.log_group_id = log_group_id
         self.ttl_in_days = ttl_in_days
+        if tag is not None:
+            self.tag = tag
 
     @property
     def creation_time(self):
@@ -138,6 +143,28 @@ class LogGroup:
         :type: int
         """
         self._ttl_in_days = ttl_in_days
+
+    @property
+    def tag(self):
+        """Gets the tag of this LogGroup.
+
+        日志流所属标签
+
+        :return: The tag of this LogGroup.
+        :rtype: dict(str, str)
+        """
+        return self._tag
+
+    @tag.setter
+    def tag(self, tag):
+        """Sets the tag of this LogGroup.
+
+        日志流所属标签
+
+        :param tag: The tag of this LogGroup.
+        :type: dict(str, str)
+        """
+        self._tag = tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

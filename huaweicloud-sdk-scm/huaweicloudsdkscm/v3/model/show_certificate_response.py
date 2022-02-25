@@ -30,7 +30,7 @@ class ShowCertificateResponse(SdkResponse):
         'brand': 'str',
         'push_support': 'str',
         'revoke_reason': 'str',
-        'signature_algrithm': 'str',
+        'signature_algorithm': 'str',
         'issue_time': 'str',
         'not_before': 'str',
         'not_after': 'str',
@@ -53,7 +53,7 @@ class ShowCertificateResponse(SdkResponse):
         'brand': 'brand',
         'push_support': 'push_support',
         'revoke_reason': 'revoke_reason',
-        'signature_algrithm': 'signature_algrithm',
+        'signature_algorithm': 'signature_algorithm',
         'issue_time': 'issue_time',
         'not_before': 'not_before',
         'not_after': 'not_after',
@@ -67,7 +67,7 @@ class ShowCertificateResponse(SdkResponse):
         'authentification': 'authentification'
     }
 
-    def __init__(self, id=None, status=None, order_id=None, name=None, type=None, brand=None, push_support=None, revoke_reason=None, signature_algrithm=None, issue_time=None, not_before=None, not_after=None, validity_period=None, validation_method=None, domain_type=None, domain=None, sans=None, domain_count=None, wildcard_count=None, authentification=None):
+    def __init__(self, id=None, status=None, order_id=None, name=None, type=None, brand=None, push_support=None, revoke_reason=None, signature_algorithm=None, issue_time=None, not_before=None, not_after=None, validity_period=None, validation_method=None, domain_type=None, domain=None, sans=None, domain_count=None, wildcard_count=None, authentification=None):
         """ShowCertificateResponse - a model defined in huaweicloud sdk"""
         
         super(ShowCertificateResponse, self).__init__()
@@ -80,7 +80,7 @@ class ShowCertificateResponse(SdkResponse):
         self._brand = None
         self._push_support = None
         self._revoke_reason = None
-        self._signature_algrithm = None
+        self._signature_algorithm = None
         self._issue_time = None
         self._not_before = None
         self._not_after = None
@@ -110,8 +110,8 @@ class ShowCertificateResponse(SdkResponse):
             self.push_support = push_support
         if revoke_reason is not None:
             self.revoke_reason = revoke_reason
-        if signature_algrithm is not None:
-            self.signature_algrithm = signature_algrithm
+        if signature_algorithm is not None:
+            self.signature_algorithm = signature_algorithm
         if issue_time is not None:
             self.issue_time = issue_time
         if not_before is not None:
@@ -312,26 +312,26 @@ class ShowCertificateResponse(SdkResponse):
         self._revoke_reason = revoke_reason
 
     @property
-    def signature_algrithm(self):
-        """Gets the signature_algrithm of this ShowCertificateResponse.
+    def signature_algorithm(self):
+        """Gets the signature_algorithm of this ShowCertificateResponse.
 
         签名算法。
 
-        :return: The signature_algrithm of this ShowCertificateResponse.
+        :return: The signature_algorithm of this ShowCertificateResponse.
         :rtype: str
         """
-        return self._signature_algrithm
+        return self._signature_algorithm
 
-    @signature_algrithm.setter
-    def signature_algrithm(self, signature_algrithm):
-        """Sets the signature_algrithm of this ShowCertificateResponse.
+    @signature_algorithm.setter
+    def signature_algorithm(self, signature_algorithm):
+        """Sets the signature_algorithm of this ShowCertificateResponse.
 
         签名算法。
 
-        :param signature_algrithm: The signature_algrithm of this ShowCertificateResponse.
+        :param signature_algorithm: The signature_algorithm of this ShowCertificateResponse.
         :type: str
         """
-        self._signature_algrithm = signature_algrithm
+        self._signature_algorithm = signature_algorithm
 
     @property
     def issue_time(self):

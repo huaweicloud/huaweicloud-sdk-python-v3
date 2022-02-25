@@ -48,7 +48,7 @@ class DeleteScalingInstanceRequest:
     def instance_id(self):
         """Gets the instance_id of this DeleteScalingInstanceRequest.
 
-        实例ID。
+        实例ID，可参考[查询弹性伸缩组中的实例列表](https://support.huaweicloud.com/api-as/as_06_0301.html)获取。
 
         :return: The instance_id of this DeleteScalingInstanceRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class DeleteScalingInstanceRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this DeleteScalingInstanceRequest.
 
-        实例ID。
+        实例ID，可参考[查询弹性伸缩组中的实例列表](https://support.huaweicloud.com/api-as/as_06_0301.html)获取。
 
         :param instance_id: The instance_id of this DeleteScalingInstanceRequest.
         :type: str

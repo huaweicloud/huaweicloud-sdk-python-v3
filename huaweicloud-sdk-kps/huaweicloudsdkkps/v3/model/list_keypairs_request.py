@@ -49,7 +49,7 @@ class ListKeypairsRequest:
     def limit(self):
         """Gets the limit of this ListKeypairsRequest.
 
-        每页返回的个数。  默认值：50。 
+        每页返回的个数。 默认值：50。 
 
         :return: The limit of this ListKeypairsRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class ListKeypairsRequest:
     def limit(self, limit):
         """Sets the limit of this ListKeypairsRequest.
 
-        每页返回的个数。  默认值：50。 
+        每页返回的个数。 默认值：50。 
 
         :param limit: The limit of this ListKeypairsRequest.
         :type: str

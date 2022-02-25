@@ -48,7 +48,7 @@ class UpdateSnapshotSettingRequest:
     def cluster_id(self):
         """Gets the cluster_id of this UpdateSnapshotSettingRequest.
 
-        指定要备份的集群ID。
+        指定待修改的集群ID。
 
         :return: The cluster_id of this UpdateSnapshotSettingRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class UpdateSnapshotSettingRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this UpdateSnapshotSettingRequest.
 
-        指定要备份的集群ID。
+        指定待修改的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateSnapshotSettingRequest.
         :type: str

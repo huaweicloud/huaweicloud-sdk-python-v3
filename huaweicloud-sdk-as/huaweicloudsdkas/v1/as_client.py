@@ -116,7 +116,7 @@ class AsClient(Client):
     def batch_add_scaling_instances(self, request):
         """批量添加实例
 
-        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。 说明： - 单次最多批量操作实例个数为10。批量添加后实例数不能大于伸缩组的最大实例数，批量移出后实例数不能小于伸缩组的最小实例数。 - 当伸缩组处于INSERVICE状态且没有伸缩活动时，才能添加实例。 - 当伸缩组没有伸缩活动时，才能移出实例。 - 向伸缩组中添加实例时，必须保证实例所在的可用区包含于伸缩组的可用区内。 - 实例处于INSERVICE状态时才可以进行移出、设置或取消实例保护属性等操作。 - 当伸缩组发生自动缩容活动时，设置了实例保护的实例不会被移出伸缩组。 - 批量移出弹性伸缩组中的实例时，若该实例加入伸缩组时绑定的监听器和伸缩组本身的监听器相同，会解绑定实例和监听器。若该实例加入伸缩组时绑定的监听器和伸缩组本身的监听器不同，会保留实例和监听器的绑定关系。
 
         :param BatchAddScalingInstancesRequest request
         :return: BatchAddScalingInstancesResponse
@@ -126,7 +126,7 @@ class AsClient(Client):
     def batch_add_scaling_instances_with_http_info(self, request):
         """批量添加实例
 
-        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。
+        批量移出伸缩组中的实例或批量添加伸缩组外的实例。批量对伸缩组中的实例设置或取消其实例保护属性。批量将伸缩组中的实例转入或移出备用状态。 说明： - 单次最多批量操作实例个数为10。批量添加后实例数不能大于伸缩组的最大实例数，批量移出后实例数不能小于伸缩组的最小实例数。 - 当伸缩组处于INSERVICE状态且没有伸缩活动时，才能添加实例。 - 当伸缩组没有伸缩活动时，才能移出实例。 - 向伸缩组中添加实例时，必须保证实例所在的可用区包含于伸缩组的可用区内。 - 实例处于INSERVICE状态时才可以进行移出、设置或取消实例保护属性等操作。 - 当伸缩组发生自动缩容活动时，设置了实例保护的实例不会被移出伸缩组。 - 批量移出弹性伸缩组中的实例时，若该实例加入伸缩组时绑定的监听器和伸缩组本身的监听器相同，会解绑定实例和监听器。若该实例加入伸缩组时绑定的监听器和伸缩组本身的监听器不同，会保留实例和监听器的绑定关系。
 
         :param BatchAddScalingInstancesRequest request
         :return: BatchAddScalingInstancesResponse
@@ -3599,7 +3599,7 @@ class AsClient(Client):
         :return: ListAllScalingV2PoliciesResponse
         """
 
-        all_params = ['scaling_resource_id', 'scaling_resource_type', 'scaling_policy_name', 'scaling_policy_type', 'scaling_policy_id', 'start_number', 'limit', 'sort_by', 'order', 'enterprise_project_id']
+        all_params = ['scaling_resource_id', 'scaling_resource_type', 'scaling_policy_name', 'scaling_policy_type', 'scaling_policy_id', 'start_number', 'limit', 'sort_by', 'order', 'enterprise_project_id', 'alarm_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3630,6 +3630,8 @@ class AsClient(Client):
             query_params.append(('order', local_var_params['order']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'alarm_id' in local_var_params:
+            query_params.append(('alarm_id', local_var_params['alarm_id']))
 
         header_params = {}
 

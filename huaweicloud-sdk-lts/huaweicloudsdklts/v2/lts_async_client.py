@@ -493,6 +493,69 @@ class LtsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_struct_config_async(self, request):
+        """通过结构化模板创建结构化配置（新）
+
+        该接口通过结构化模板创建结构化配置。
+
+        :param CreateStructConfigRequest request
+        :return: CreateStructConfigResponse
+        """
+        return self.create_struct_config_with_http_info(request)
+
+    def create_struct_config_with_http_info(self, request):
+        """通过结构化模板创建结构化配置（新）
+
+        该接口通过结构化模板创建结构化配置。
+
+        :param CreateStructConfigRequest request
+        :return: CreateStructConfigResponse
+        """
+
+        all_params = ['create_struct_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/lts/struct/template',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateStructConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_struct_template_async(self, request):
         """创建结构化配置
 
@@ -1448,6 +1511,67 @@ class LtsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_breif_struct_template_async(self, request):
+        """查询结构化模板简略列表
+
+        该接口用于查询结构化模板简略列表。
+
+        :param ListBreifStructTemplateRequest request
+        :return: ListBreifStructTemplateResponse
+        """
+        return self.list_breif_struct_template_with_http_info(request)
+
+    def list_breif_struct_template_with_http_info(self, request):
+        """查询结构化模板简略列表
+
+        该接口用于查询结构化模板简略列表。
+
+        :param ListBreifStructTemplateRequest request
+        :return: ListBreifStructTemplateResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/lts/struct/customtemplate/list',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListBreifStructTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_charts_async(self, request):
         """查询日志流图表
 
@@ -2293,6 +2417,69 @@ class LtsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_struct_template_async(self, request):
+        """查询结构化模板
+
+        该接口用于查询结构化模板。
+
+        :param ListStructTemplateRequest request
+        :return: ListStructTemplateResponse
+        """
+        return self.list_struct_template_with_http_info(request)
+
+    def list_struct_template_with_http_info(self, request):
+        """查询结构化模板
+
+        该接口用于查询结构化模板。
+
+        :param ListStructTemplateRequest request
+        :return: ListStructTemplateResponse
+        """
+
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/lts/struct/customtemplate',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListStructTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_structured_logs_with_time_range_async(self, request):
         """查询结构化日志（新版）
 
@@ -2935,6 +3122,69 @@ class LtsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateNotificationTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_struct_config_async(self, request):
+        """通过结构化模板修改结构化配置（新）
+
+        该接口通过结构化模板修改结构化配置
+
+        :param UpdateStructConfigRequest request
+        :return: UpdateStructConfigResponse
+        """
+        return self.update_struct_config_with_http_info(request)
+
+    def update_struct_config_with_http_info(self, request):
+        """通过结构化模板修改结构化配置（新）
+
+        该接口通过结构化模板修改结构化配置
+
+        :param UpdateStructConfigRequest request
+        :return: UpdateStructConfigResponse
+        """
+
+        all_params = ['update_struct_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/lts/struct/template',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateStructConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

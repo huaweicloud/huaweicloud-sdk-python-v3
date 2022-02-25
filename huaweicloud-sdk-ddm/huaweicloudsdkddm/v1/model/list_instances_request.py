@@ -49,7 +49,7 @@ class ListInstancesRequest:
     def offset(self):
         """Gets the offset of this ListInstancesRequest.
 
-        分页参数：起始值 [大于等于0] 。
+        分页参数：起始值 [大于等于0] 。默认值是0。
 
         :return: The offset of this ListInstancesRequest.
         :rtype: int
@@ -60,7 +60,7 @@ class ListInstancesRequest:
     def offset(self, offset):
         """Sets the offset of this ListInstancesRequest.
 
-        分页参数：起始值 [大于等于0] 。
+        分页参数：起始值 [大于等于0] 。默认值是0。
 
         :param offset: The offset of this ListInstancesRequest.
         :type: int
@@ -71,7 +71,7 @@ class ListInstancesRequest:
     def limit(self):
         """Gets the limit of this ListInstancesRequest.
 
-        分页参数：每页多少条 [大于0且小于等于128]。
+        分页参数：每页多少条 [大于0且小于等于128]。默认值是10。
 
         :return: The limit of this ListInstancesRequest.
         :rtype: int
@@ -82,7 +82,7 @@ class ListInstancesRequest:
     def limit(self, limit):
         """Sets the limit of this ListInstancesRequest.
 
-        分页参数：每页多少条 [大于0且小于等于128]。
+        分页参数：每页多少条 [大于0且小于等于128]。默认值是10。
 
         :param limit: The limit of this ListInstancesRequest.
         :type: int

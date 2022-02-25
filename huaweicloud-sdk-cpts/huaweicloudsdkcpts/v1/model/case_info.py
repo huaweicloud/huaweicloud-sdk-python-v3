@@ -25,27 +25,29 @@ class CaseInfo:
         'case_id': 'int',
         'case_name': 'str',
         'case_type': 'int',
-        'content': 'list[Contents]',
+        'contents': 'list[Contents]',
         'for_loop_params': 'list[object]',
         'increase_setting': 'list[object]',
         'stages': 'list[object]',
         'status': 'int',
-        'temp_id': 'int'
+        'temp_id': 'int',
+        'sort': 'int'
     }
 
     attribute_map = {
         'case_id': 'case_id',
         'case_name': 'case_name',
         'case_type': 'case_type',
-        'content': 'content',
+        'contents': 'contents',
         'for_loop_params': 'for_loop_params',
         'increase_setting': 'increase_setting',
         'stages': 'stages',
         'status': 'status',
-        'temp_id': 'temp_id'
+        'temp_id': 'temp_id',
+        'sort': 'sort'
     }
 
-    def __init__(self, case_id=None, case_name=None, case_type=None, content=None, for_loop_params=None, increase_setting=None, stages=None, status=None, temp_id=None):
+    def __init__(self, case_id=None, case_name=None, case_type=None, contents=None, for_loop_params=None, increase_setting=None, stages=None, status=None, temp_id=None, sort=None):
         """CaseInfo - a model defined in huaweicloud sdk"""
         
         
@@ -53,12 +55,13 @@ class CaseInfo:
         self._case_id = None
         self._case_name = None
         self._case_type = None
-        self._content = None
+        self._contents = None
         self._for_loop_params = None
         self._increase_setting = None
         self._stages = None
         self._status = None
         self._temp_id = None
+        self._sort = None
         self.discriminator = None
 
         if case_id is not None:
@@ -67,8 +70,8 @@ class CaseInfo:
             self.case_name = case_name
         if case_type is not None:
             self.case_type = case_type
-        if content is not None:
-            self.content = content
+        if contents is not None:
+            self.contents = contents
         if for_loop_params is not None:
             self.for_loop_params = for_loop_params
         if increase_setting is not None:
@@ -79,6 +82,8 @@ class CaseInfo:
             self.status = status
         if temp_id is not None:
             self.temp_id = temp_id
+        if sort is not None:
+            self.sort = sort
 
     @property
     def case_id(self):
@@ -147,26 +152,26 @@ class CaseInfo:
         self._case_type = case_type
 
     @property
-    def content(self):
-        """Gets the content of this CaseInfo.
+    def contents(self):
+        """Gets the contents of this CaseInfo.
 
         contents
 
-        :return: The content of this CaseInfo.
+        :return: The contents of this CaseInfo.
         :rtype: list[Contents]
         """
-        return self._content
+        return self._contents
 
-    @content.setter
-    def content(self, content):
-        """Sets the content of this CaseInfo.
+    @contents.setter
+    def contents(self, contents):
+        """Sets the contents of this CaseInfo.
 
         contents
 
-        :param content: The content of this CaseInfo.
+        :param contents: The contents of this CaseInfo.
         :type: list[Contents]
         """
-        self._content = content
+        self._contents = contents
 
     @property
     def for_loop_params(self):
@@ -277,6 +282,28 @@ class CaseInfo:
         :type: int
         """
         self._temp_id = temp_id
+
+    @property
+    def sort(self):
+        """Gets the sort of this CaseInfo.
+
+        sort
+
+        :return: The sort of this CaseInfo.
+        :rtype: int
+        """
+        return self._sort
+
+    @sort.setter
+    def sort(self, sort):
+        """Sets the sort of this CaseInfo.
+
+        sort
+
+        :param sort: The sort of this CaseInfo.
+        :type: int
+        """
+        self._sort = sort
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -26,6 +26,8 @@ from huaweicloudsdklive.v2.model.list_record_data_request import ListRecordDataR
 from huaweicloudsdklive.v2.model.list_record_data_response import ListRecordDataResponse
 from huaweicloudsdklive.v2.model.list_single_stream_bitrate_request import ListSingleStreamBitrateRequest
 from huaweicloudsdklive.v2.model.list_single_stream_bitrate_response import ListSingleStreamBitrateResponse
+from huaweicloudsdklive.v2.model.list_single_stream_detail_request import ListSingleStreamDetailRequest
+from huaweicloudsdklive.v2.model.list_single_stream_detail_response import ListSingleStreamDetailResponse
 from huaweicloudsdklive.v2.model.list_single_stream_framerate_request import ListSingleStreamFramerateRequest
 from huaweicloudsdklive.v2.model.list_single_stream_framerate_response import ListSingleStreamFramerateResponse
 from huaweicloudsdklive.v2.model.list_snapshot_data_request import ListSnapshotDataRequest
@@ -46,6 +48,7 @@ from huaweicloudsdklive.v2.model.show_up_bandwidth_request import ShowUpBandwidt
 from huaweicloudsdklive.v2.model.show_up_bandwidth_response import ShowUpBandwidthResponse
 from huaweicloudsdklive.v2.model.snapshot_data import SnapshotData
 from huaweicloudsdklive.v2.model.stream_count_data import StreamCountData
+from huaweicloudsdklive.v2.model.stream_detail import StreamDetail
 from huaweicloudsdklive.v2.model.stream_portrait import StreamPortrait
 from huaweicloudsdklive.v2.model.time_value import TimeValue
 from huaweicloudsdklive.v2.model.traffic_data import TrafficData

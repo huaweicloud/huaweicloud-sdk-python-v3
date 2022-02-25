@@ -117,6 +117,79 @@ class CodeCheckClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def check_record(self, request):
+        """历史扫描结果查询
+
+        提供每次扫描的问题数量统计
+
+        :param CheckRecordRequest request
+        :return: CheckRecordResponse
+        """
+        return self.check_record_with_http_info(request)
+
+    def check_record_with_http_info(self, request):
+        """历史扫描结果查询
+
+        提供每次扫描的问题数量统计
+
+        :param CheckRecordRequest request
+        :return: CheckRecordResponse
+        """
+
+        all_params = ['project_id', 'task_id', 'offset', 'limit', 'start_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/tasks/{task_id}/checkrecord',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CheckRecordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_ruleset(self, request):
         """创建自定义规则集
 

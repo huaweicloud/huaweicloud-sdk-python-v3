@@ -71,7 +71,7 @@ class Resource:
     def resource_type(self):
         """Gets the resource_type of this Resource.
 
-        资源类型
+        资源类型：server(服务器)
 
         :return: The resource_type of this Resource.
         :rtype: str
@@ -82,7 +82,7 @@ class Resource:
     def resource_type(self, resource_type):
         """Sets the resource_type of this Resource.
 
-        资源类型
+        资源类型：server(服务器)
 
         :param resource_type: The resource_type of this Resource.
         :type: str

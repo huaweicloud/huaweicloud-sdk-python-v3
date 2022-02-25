@@ -499,7 +499,7 @@ class InstanceConfigResult:
     def multi_flavor_priority_policy(self):
         """Gets the multi_flavor_priority_policy of this InstanceConfigResult.
 
-        使用伸缩配置创建云主机的时候，多规格使用的优先级策略。
+        使用伸缩配置创建云主机的时候，多规格使用的优先级策略。  PICK_FIRST（默认）：选择优先，虚拟机扩容时规格的选择按照flavorRef列表的顺序进行优先级排序。 COST_FIRST：成本优化，虚拟机扩容时规格的选择按照价格最优原则进行优先级排序。
 
         :return: The multi_flavor_priority_policy of this InstanceConfigResult.
         :rtype: str
@@ -510,7 +510,7 @@ class InstanceConfigResult:
     def multi_flavor_priority_policy(self, multi_flavor_priority_policy):
         """Sets the multi_flavor_priority_policy of this InstanceConfigResult.
 
-        使用伸缩配置创建云主机的时候，多规格使用的优先级策略。
+        使用伸缩配置创建云主机的时候，多规格使用的优先级策略。  PICK_FIRST（默认）：选择优先，虚拟机扩容时规格的选择按照flavorRef列表的顺序进行优先级排序。 COST_FIRST：成本优化，虚拟机扩容时规格的选择按照价格最优原则进行优先级排序。
 
         :param multi_flavor_priority_policy: The multi_flavor_priority_policy of this InstanceConfigResult.
         :type: str

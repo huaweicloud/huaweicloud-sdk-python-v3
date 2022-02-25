@@ -25,17 +25,19 @@ class CreateTempRequestBody:
         'project_id': 'int',
         'temp_type': 'int',
         'name': 'str',
-        'description': 'str'
+        'description': 'str',
+        'contents': 'list[object]'
     }
 
     attribute_map = {
         'project_id': 'project_id',
         'temp_type': 'temp_type',
         'name': 'name',
-        'description': 'description'
+        'description': 'description',
+        'contents': 'contents'
     }
 
-    def __init__(self, project_id=None, temp_type=None, name=None, description=None):
+    def __init__(self, project_id=None, temp_type=None, name=None, description=None, contents=None):
         """CreateTempRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +46,7 @@ class CreateTempRequestBody:
         self._temp_type = None
         self._name = None
         self._description = None
+        self._contents = None
         self.discriminator = None
 
         self.project_id = project_id
@@ -51,6 +54,8 @@ class CreateTempRequestBody:
         self.name = name
         if description is not None:
             self.description = description
+        if contents is not None:
+            self.contents = contents
 
     @property
     def project_id(self):
@@ -139,6 +144,28 @@ class CreateTempRequestBody:
         :type: str
         """
         self._description = description
+
+    @property
+    def contents(self):
+        """Gets the contents of this CreateTempRequestBody.
+
+        contents
+
+        :return: The contents of this CreateTempRequestBody.
+        :rtype: list[object]
+        """
+        return self._contents
+
+    @contents.setter
+    def contents(self, contents):
+        """Sets the contents of this CreateTempRequestBody.
+
+        contents
+
+        :param contents: The contents of this CreateTempRequestBody.
+        :type: list[object]
+        """
+        self._contents = contents
 
     def to_dict(self):
         """Returns the model properties as a dict"""

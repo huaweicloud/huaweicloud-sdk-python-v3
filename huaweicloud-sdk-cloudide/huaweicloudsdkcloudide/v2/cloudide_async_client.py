@@ -825,9 +825,9 @@ class CloudIDEAsyncClient(Client):
 
 
     def list_org_instances_async(self, request):
-        """查询某个组织下的IDE实例列表
+        """查询某个租户下的IDE实例列表
 
-        查询某个组织下的IDE实例列表
+        查询某个租户下的IDE实例列表
 
         :param ListOrgInstancesRequest request
         :return: ListOrgInstancesResponse
@@ -835,9 +835,9 @@ class CloudIDEAsyncClient(Client):
         return self.list_org_instances_with_http_info(request)
 
     def list_org_instances_with_http_info(self, request):
-        """查询某个组织下的IDE实例列表
+        """查询某个租户下的IDE实例列表
 
-        查询某个组织下的IDE实例列表
+        查询某个租户下的IDE实例列表
 
         :param ListOrgInstancesRequest request
         :return: ListOrgInstancesResponse

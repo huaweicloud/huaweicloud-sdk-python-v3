@@ -22,7 +22,7 @@ class ListIssuesV4Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'issues': 'list[IssueResponseV4]',
+        'issues': 'list[ListIssueItemResponse]',
         'total': 'int'
     }
 
@@ -52,7 +52,7 @@ class ListIssuesV4Response(SdkResponse):
         工作项列表
 
         :return: The issues of this ListIssuesV4Response.
-        :rtype: list[IssueResponseV4]
+        :rtype: list[ListIssueItemResponse]
         """
         return self._issues
 
@@ -63,7 +63,7 @@ class ListIssuesV4Response(SdkResponse):
         工作项列表
 
         :param issues: The issues of this ListIssuesV4Response.
-        :type: list[IssueResponseV4]
+        :type: list[ListIssueItemResponse]
         """
         self._issues = issues
 

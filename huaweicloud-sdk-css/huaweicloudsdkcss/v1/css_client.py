@@ -942,6 +942,69 @@ class CssClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_logs_job(self, request):
+        """查询作业列表
+
+        该接口用于查询具体某个集群的日志任务记录列表。
+
+        :param ListLogsJobRequest request
+        :return: ListLogsJobResponse
+        """
+        return self.list_logs_job_with_http_info(request)
+
+    def list_logs_job_with_http_info(self, request):
+        """查询作业列表
+
+        该接口用于查询具体某个集群的日志任务记录列表。
+
+        :param ListLogsJobRequest request
+        :return: ListLogsJobResponse
+        """
+
+        all_params = ['cluster_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/logs/records',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListLogsJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_snapshots(self, request):
         """查询快照列表
 
@@ -1383,6 +1446,69 @@ class CssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowAutoCreatePolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_cluster_detail(self, request):
+        """查询集群详情
+
+        该接口用于查询并显示单个集群详情。
+
+        :param ShowClusterDetailRequest request
+        :return: ShowClusterDetailResponse
+        """
+        return self.show_cluster_detail_with_http_info(request)
+
+    def show_cluster_detail_with_http_info(self, request):
+        """查询集群详情
+
+        该接口用于查询并显示单个集群详情。
+
+        :param ShowClusterDetailRequest request
+        :return: ShowClusterDetailResponse
+        """
+
+        all_params = ['cluster_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/clusters/{cluster_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowClusterDetailResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2604,6 +2730,138 @@ class CssClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_flavor(self, request):
+        """变更规格
+
+        该接口用于变更集群规格。只支持变更ess节点类型。
+
+        :param UpdateFlavorRequest request
+        :return: UpdateFlavorResponse
+        """
+        return self.update_flavor_with_http_info(request)
+
+    def update_flavor_with_http_info(self, request):
+        """变更规格
+
+        该接口用于变更集群规格。只支持变更ess节点类型。
+
+        :param UpdateFlavorRequest request
+        :return: UpdateFlavorResponse
+        """
+
+        all_params = ['cluster_id', 'update_flavor_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/flavor',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateFlavorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_flavor_by_type(self, request):
+        """全规格集群变更
+
+        修改集群规格。支持修改ess， ess-cold， ess-client， ess-master节点类型。
+
+        :param UpdateFlavorByTypeRequest request
+        :return: UpdateFlavorByTypeResponse
+        """
+        return self.update_flavor_by_type_with_http_info(request)
+
+    def update_flavor_by_type_with_http_info(self, request):
+        """全规格集群变更
+
+        修改集群规格。支持修改ess， ess-cold， ess-client， ess-master节点类型。
+
+        :param UpdateFlavorByTypeRequest request
+        :return: UpdateFlavorByTypeResponse
+        """
+
+        all_params = ['cluster_id', 'types', 'update_flavor_by_type_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'types' in local_var_params:
+            path_params['types'] = local_var_params['types']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/{types}/flavor',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateFlavorByTypeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_log_setting(self, request):
         """修改日志基础配置
 
@@ -2793,6 +3051,136 @@ class CssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdatePublicBandWidthResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_shrink_cluster(self, request):
+        """缩容集群
+
+        该接口用于集群缩容不同类型实例的个数以及存储容量。
+
+        :param UpdateShrinkClusterRequest request
+        :return: UpdateShrinkClusterResponse
+        """
+        return self.update_shrink_cluster_with_http_info(request)
+
+    def update_shrink_cluster_with_http_info(self, request):
+        """缩容集群
+
+        该接口用于集群缩容不同类型实例的个数以及存储容量。
+
+        :param UpdateShrinkClusterRequest request
+        :return: UpdateShrinkClusterResponse
+        """
+
+        all_params = ['cluster_id', 'shrink_cluster_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/extend/{project_id}/clusters/{cluster_id}/role/shrink',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateShrinkClusterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_shrink_nodes(self, request):
+        """指定角色下线
+
+        该接口用于下线集群指定角色。
+
+        :param UpdateShrinkNodesRequest request
+        :return: UpdateShrinkNodesResponse
+        """
+        return self.update_shrink_nodes_with_http_info(request)
+
+    def update_shrink_nodes_with_http_info(self, request):
+        """指定角色下线
+
+        该接口用于下线集群指定角色。
+
+        :param UpdateShrinkNodesRequest request
+        :return: UpdateShrinkNodesResponse
+        """
+
+        all_params = ['cluster_id', 'shrink_nodes_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/node/offline',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateShrinkNodesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -1,3 +1,368 @@
+# 3.0.78 2022-02-25
+
+### HuaweiCloud SDK AS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `alarm_id` to the interface `ListAllScalingV2Policies`
+  - Add the enum values `GPSSD` to the request parameter `volume_type` to the interface `CreateScalingConfig`
+  - Add the response parameter `min` to the interface `ShowResourceQuota`
+  - Add the response parameter `min` to the interface `ShowPolicyAndInstanceQuota`
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `UpdateBaremetalServerMetadata`:
+    - Modify the type of the request body `MetaData` -> `UpdateBaremetalServerMetadataReq`
+    - Remove the response parameter `key`
+
+### HuaweiCloud SDK CDM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The response parameter `from-connector-name`, `to-link-name` changed to required of the interface `ShowJobs`
+  - The request parameter `from-connector-name`, `to-link-name` changed to required of the interface `UpdateJob`
+  - Changes of the interface `CreateAndStartRandomClusterJob`:
+    - The request parameter `from-connector-name`, `to-link-name` changed to required
+    - Modify the type `int32` -> `float` of the response parameter `progress`
+    - Modify the type `boolean` -> `string` of the response parameter `isStopingIncrement`
+  - Add the response parameter `submissions` to the interface `StopJob`
+  - The request parameter `from-connector-name`, `to-link-name` changed to required of the interface `CreateJob`
+  - Changes of the interface `StartJob`:
+    - Modify the type `int32` -> `float` of the response parameter `progress`
+    - Modify the type `boolean` -> `string` of the response parameter `isStopingIncrement`
+  - Modify the type `double` -> `float` of the response parameter `progress` of the interface `ShowJobStatus`
+  - Modify the type `double` -> `float` of the response parameter `progress` of the interface `ShowSubmissions`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - Support the interfaces `ShowDomainLocationStats`, `ShowDomainFullConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowDomainStats`:
+    - Add the request parameter `service_area`
+    - Remove the request parameters `X-Auth-Token`, `country`, `district`, `isp`
+    - Remove the response parameters `start_time`, `end_time`, `interval`, `action`, `stat_type`, `group_by`
+  - Add the request parameter `https` to the interface `UpdateDomainFullConfig`
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `instance_domain_id`, `instance_user_id` to the interface `CreateInstance`
+  - The request parameter `instance_user_domain_name`, `instance_user_name` changed to not required of the interface `CreateInstanceBy3rd`
+
+### HuaweiCloud SDK CodeCheck
+
+- _Features_
+  - Support the interface `CheckRecord`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CloudRTC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `array` -> `string` of the request parameter `mid` of the interface `ListRtcClientQosDetails`
+
+### HuaweiCloud SDK CodeHub
+
+- _Features_
+  - Support the interface `ShowStatisticCommitV3`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CPTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListProjectSets`:
+    - Add the response parameters `CreateTime`, `UpdateTime`, `external_params`, `variables_no_file`
+    - Remove the response parameters `create_time`, `update_time`, `group`
+  - The request parameter `name` changed to required of the interface `UpdateProject`
+  - Changes of the interface `ShowTask`:
+    - Add the response parameters `parallel`, `contents`, `sort`, `related_temp_running_data`
+    - Remove the response parameter `content`
+  - Changes of the interface `UpdateTask`:
+    - Add the request parameters `contents`, `sort`, `related_temp_running_data`
+    - Add the response parameters `parallel`, `contents`, `sort`, `related_temp_running_data`
+    - Remove the request parameter `content`
+    - Remove the response parameter `content`
+    - The request parameter `name` changed to required
+  - Changes of the interface `ShowReport`:
+    - Add the response parameters `performance`, `minNetworkTraffic`, `avgNetworkTraffic`, `maxNetworkTraffic`, `branchId`, `branchName`, `projectId`, `serviceId`
+    - Remove the response parameters `progressState`, `statusValue`
+    - Modify the type `float` -> `double` of the response parameter `averageRespTime`
+    - Modify the type `float` -> `double` of the response parameter `avgRecBytes`
+    - Modify the type `int32` -> `double` of the response parameter `avgSentBytes`
+    - Modify the type `string` -> `double` of the response parameter `avgTranRespTime`
+    - Modify the type `int32` -> `double` of the response parameter `currentThreadNum`
+    - Modify the type `int32` -> `double` of the response parameter `errorCount`
+    - Modify the type `int32` -> `double` of the response parameter `errorEventsCount`
+    - Modify the type `int32` -> `double` of the response parameter `failedAssert`
+    - Modify the type `int32` -> `double` of the response parameter `failedOthers`
+    - Modify the type `int32` -> `double` of the response parameter `failedParsed`
+    - Modify the type `int32` -> `double` of the response parameter `failedRefused`
+    - Modify the type `int32` -> `double` of the response parameter `failedTimeout`
+    - Modify the type `int32` -> `double` of the response parameter `max`
+    - Modify the type `int32` -> `double` of the response parameter `maxRecBytes`
+    - Modify the type `int32` -> `double` of the response parameter `maxRespTime`
+    - Modify the type `int32` -> `double` of the response parameter `maxSentBytes`
+    - Modify the type `int32` -> `double` of the response parameter `maxTranRespTime`
+    - Modify the type `int32` -> `double` of the response parameter `min`
+    - Modify the type `int32` -> `double` of the response parameter `requests`
+    - Modify the type `int32` -> `double` of the response parameter `result`
+    - Modify the type `int32` -> `double` of the response parameter `status`
+    - Modify the type `int32` -> `double` of the response parameter `successCount`
+    - Modify the type `int32` -> `double` of the response parameter `successRate`
+    - Modify the type `int32` -> `double` of the response parameter `sum1xx`
+    - Modify the type `int32` -> `double` of the response parameter `sum2xx`
+    - Modify the type `int32` -> `double` of the response parameter `sum3xx`
+    - Modify the type `int32` -> `double` of the response parameter `sum4xx`
+    - Modify the type `int32` -> `double` of the response parameter `sum5xx`
+    - Modify the type `int32` -> `double` of the response parameter `taskStatus`
+    - Modify the type `int32` -> `double` of the response parameter `tp50`
+    - Modify the type `int32` -> `double` of the response parameter `tp75`
+    - Modify the type `int32` -> `double` of the response parameter `tp90`
+    - Modify the type `int32` -> `double` of the response parameter `tp95`
+    - Modify the type `int32` -> `double` of the response parameter `tp99`
+    - Modify the type `float` -> `double` of the response parameter `tps`
+    - Modify the type `string` -> `double` of the response parameter `tranTPS`
+    - Modify the type `string` -> `double` of the response parameter `transactionSuccess`
+    - Modify the type `int32` -> `double` of the response parameter `transactionalSuccessRate`
+    - Modify the type `int32` -> `double` of the response parameter `transactionalTps`
+    - Modify the type `int32` -> `double` of the response parameter `transactionalTpsSuccess`
+    - Modify the type `string` -> `double` of the response parameter `transactions`
+    - Modify the type `int32` -> `double` of the response parameter `vum`
+    - Modify the type `float` -> `double` of the response parameter `avgResponseTime`
+    - Modify the type `int32` -> `double` of the response parameter `caseRetry`
+    - Modify the type `int32` -> `double` of the response parameter `completeNum`
+    - Modify the type `int32` -> `double` of the response parameter `duration`
+    - Modify the type `int32` -> `double` of the response parameter `executedNum`
+    - Modify the type `int32` -> `double` of the response parameter `kpiCaseCount`
+    - Modify the type `int32` -> `double` of the response parameter `kpiCaseExecuteCount`
+    - Modify the type `int32` -> `double` of the response parameter `kpiCasePassCount`
+    - Modify the type `int32` -> `double` of the response parameter `maxUsers`
+    - Modify the type `int32` -> `double` of the response parameter `passNum`
+    - Modify the type `int32` -> `double` of the response parameter `stage`
+    - Modify the type `int32` -> `double` of the response parameter `totalNum`
+  - Changes of the interface `UpdateCase`:
+    - Add the request parameters `contents`, `sort`
+    - Remove the request parameter `content`
+  - Add the request parameter `contents` to the interface `CreateTemp`
+  - Changes of the interface `UpdateTemp`:
+    - Modify the type `array` -> `string` of the request parameter `bodys`
+    - The request parameter `name` changed to required
+  - Add the request parameter `is_quoted` to the interface `CreateVariable`
+  - Changes of the interface `ShowHistoryRunInfo`:
+    - Modify the type `int32` -> `double` of the response parameter `run_id`
+    - Modify the type `int32` -> `double` of the response parameter `run_type`
+    - Modify the type `int32` -> `double` of the response parameter `continue_time`
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - Support the following interfaces：
+    - `UpdateFlavor`
+    - `UpdateFlavorByType`
+    - `UpdateShrinkNodes`
+    - `UpdateShrinkCluster`
+    - `ListLogsJob`
+    - `ShowClusterDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameters `id`, `instances` from the interface `UpdateExtendCluster`
+  - Remove the request parameter `status` from the interface `StartConnectivityTest`
+
+### HuaweiCloud SDK DDM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `group_id` to the interface `ExpandInstanceNodes`
+  - Add the request parameter `group_id` to the interface `ShrinkInstanceNodes`
+  - The request parameter `shard_unit` changed to not required of the interface `CreateDatabase`
+
+### HuaweiCloud SDK DGC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListConnections`:
+    - Add the response parameters `type`, `description`
+    - Remove the response parameter `connectionType`
+    - Modify the type `string` -> `int32` of the response parameter `total`
+    - The response parameter `name` changed to required
+  - Changes of the interface `CreateConnection`:
+    - Add the request parameters `type`, `description`
+    - Remove the request parameter `connectionType`
+    - The request parameter `name` changed to required
+  - Changes of the interface `ShowConnection`:
+    - Add the response parameters `type`, `description`
+    - Remove the response parameter `connectionType`
+    - The response parameter `name` changed to required
+  - Changes of the interface `UpdateConnection`:
+    - Add the request parameters `type`, `description`
+    - Remove the request parameter `connectionType`
+    - The request parameter `name` changed to required
+  - Changes of the interface `ExecuteScript`:
+    - Add the response parameter `instanceId`
+    - Remove the response parameter `jobId`
+    - Modify the type `string` -> `object` of the request parameter `params`
+
+### HuaweiCloud SDK ELB
+
+- _Features_
+  - Support the interfaces `BatchCreateMembers`, `BatchDeleteMembers`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `Java8`, `Java11`, `Node.js6.10`, `Node.js8.10`, `Node.js10.16`, `Node.js12.13`, `Node.js14.18`, `Python2.7`, `Python3.6`, `Python3.9`, `Go1.8`, `Go1.x`, `PHP7.3`, Remove the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3` from the response parameter `runtime` to the interface `ListFunctions`
+  - Changes of the interface `CreateFunction`:
+    - Add the enum values `Java8`, `Java11`, `Node.js6.10`, `Node.js8.10`, `Node.js10.16`, `Node.js12.13`, `Node.js14.18`, `Python2.7`, `Python3.6`, `Python3.9`, `Go1.8`, `Go1.x`, `PHP7.3`, Remove the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3` from the request parameter `runtime`
+    - Add the enum values `Java8`, `Java11`, `Node.js6.10`, `Node.js8.10`, `Node.js10.16`, `Node.js12.13`, `Node.js14.18`, `Python2.7`, `Python3.6`, `Python3.9`, `Go1.8`, `Go1.x`, `PHP7.3`, Remove the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3` from the response parameter `runtime`
+  - Add the enum values `Java8`, `Java11`, `Node.js6.10`, `Node.js8.10`, `Node.js10.16`, `Node.js12.13`, `Node.js14.18`, `Python2.7`, `Python3.6`, `Python3.9`, `Go1.8`, `Go1.x`, `PHP7.3`, Remove the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3` from the response parameter `runtime` to the interface `ShowFunctionCode`
+  - Add the enum values `Java8`, `Java11`, `Node.js6.10`, `Node.js8.10`, `Node.js10.16`, `Node.js12.13`, `Node.js14.18`, `Python2.7`, `Python3.6`, `Python3.9`, `Go1.8`, `Go1.x`, `PHP7.3`, Remove the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3` from the response parameter `runtime` to the interface `UpdateFunctionCode`
+  - Add the enum values `Java8`, `Java11`, `Node.js6.10`, `Node.js8.10`, `Node.js10.16`, `Node.js12.13`, `Node.js14.18`, `Python2.7`, `Python3.6`, `Python3.9`, `Go1.8`, `Go1.x`, `PHP7.3`, Remove the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3` from the response parameter `runtime` to the interface `ShowFunctionConfig`
+  - Changes of the interface `UpdateFunctionConfig`:
+    - Add the enum values `Java8`, `Java11`, `Node.js6.10`, `Node.js8.10`, `Node.js10.16`, `Node.js12.13`, `Node.js14.18`, `Python2.7`, `Python3.6`, `Python3.9`, `Go1.8`, `Go1.x`, `PHP7.3`, Remove the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3` from the request parameter `runtime`
+    - Add the enum values `Java8`, `Java11`, `Node.js6.10`, `Node.js8.10`, `Node.js10.16`, `Node.js12.13`, `Node.js14.18`, `Python2.7`, `Python3.6`, `Python3.9`, `Go1.8`, `Go1.x`, `PHP7.3`, Remove the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3` from the response parameter `runtime`
+  - Add the enum values `Java8`, `Java11`, `Node.js6.10`, `Node.js8.10`, `Node.js10.16`, `Node.js12.13`, `Node.js14.18`, `Python2.7`, `Python3.6`, `Python3.9`, `Go1.8`, `Go1.x`, `PHP7.3`, Remove the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3` from the response parameter `runtime` to the interface `ListFunctionVersions`
+  - Add the enum values `Java8`, `Java11`, `Node.js6.10`, `Node.js8.10`, `Node.js10.16`, `Node.js12.13`, `Node.js14.18`, `Python2.7`, `Python3.6`, `Python3.9`, `Go1.8`, `Go1.x`, `PHP7.3`, Remove the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3` from the response parameter `runtime` to the interface `CreateFunctionVersion`
+  - Add the enum values `Java11`, `Node.js14.18`, `Python3.9` to the request parameter `runtime` to the interface `CreateDependency`
+  - Add the enum values `Java8`, `Java11`, `Node.js6.10`, `Node.js8.10`, `Node.js10.16`, `Node.js12.13`, `Node.js14.18`, `Python2.7`, `Python3.6`, `Python3.9`, `Go1.8`, `PHP7.3`, Remove the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `PHP 7.3` from the request parameter `runtime` to the interface `UpdateDependency`
+  - Add the enum values `Java8`, `Java11`, `Node.js6.10`, `Node.js8.10`, `Node.js10.16`, `Node.js12.13`, `Node.js14.18`, `Python2.7`, `Python3.6`, `Python3.9`, `Go1.8`, `Go1.x`, `PHP7.3`, Remove the enum values `Java 8`, `Node.js 6.10`, `Node.js 8.10`, `Node.js 10.16`, `Node.js 12.13`, `Python 2.7`, `Python 3.6`, `Go 1.8`, `Go 1.x`, `PHP 7.3` from the response parameter `runtime` to the interface `ImportFunction`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the interfaces `UpdateAuditLog`, `ShowAuditLog`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - Support the interface `ListSingleStreamDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - Support the interfaces `UpdateStructConfig`, `CreateStructConfig`, `ListStructTemplate`, `ListBreifStructTemplate`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `tag` to the interface `ListLogGroups`
+  - Add the response parameter `tag` to the interface `ListLogStream`
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+  - Support the interfaces `BatchUpdateChildNickNames`, `ListIterationHistories`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `updated_time_interval`, `include_deleted` to the interface `ListProjectIterationsV4`
+  - Add the request parameters `include_deleted`, `updated_time_interval` to the interface `ListIssuesV4`
+  - Add the response parameters `description`, `order`, `accessories` to the interface `ShowIssueV4`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `ListSlowLogFile`, `StopInstance`, `StartupInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SCM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `sans`, `signature_algorithm`, `deploy_support` to the interface `ListCertificates`
+  - Add the request parameters `enc_certificate`, `enc_private_key` to the interface `ImportCertificate`
+  - Changes of the interface `ShowCertificate`:
+    - Add the response parameter `signature_algorithm`
+    - Remove the response parameter `signature_algrithm`
+  - Add the response parameters `enc_certificate`, `enc_private_key` to the interface `ExportCertificate`
+
+### HuaweiCloud SDK VOD
+
+- _Features_
+  - Support the interface `ListDomainLogs`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `delete_type` to the interface `DeleteAssets`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `subnetpool_id` to the interface `NeutronListSubnets`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListWhiteblackipRule`:
+    - Add the response parameter `addr`
+    - Remove the response parameter `ip`
+
 # 3.0.77 2022-02-10
 
 ### HuaweiCloud SDK AOM

@@ -347,7 +347,7 @@ class Clusters:
     def cluster_mode(self):
         """Gets the cluster_mode of this Clusters.
 
-        集群模式
+        集群模式：sharding(分片集群)
 
         :return: The cluster_mode of this Clusters.
         :rtype: str
@@ -358,7 +358,7 @@ class Clusters:
     def cluster_mode(self, cluster_mode):
         """Sets the cluster_mode of this Clusters.
 
-        集群模式
+        集群模式：sharding(分片集群)
 
         :param cluster_mode: The cluster_mode of this Clusters.
         :type: str
@@ -541,7 +541,7 @@ class Clusters:
     def status_detail(self):
         """Gets the status_detail of this Clusters.
 
-        集群状态描述
+        集群状态描述：Normal（正常）
 
         :return: The status_detail of this Clusters.
         :rtype: str
@@ -552,7 +552,7 @@ class Clusters:
     def status_detail(self, status_detail):
         """Sets the status_detail of this Clusters.
 
-        集群状态描述
+        集群状态描述：Normal（正常）
 
         :param status_detail: The status_detail of this Clusters.
         :type: str

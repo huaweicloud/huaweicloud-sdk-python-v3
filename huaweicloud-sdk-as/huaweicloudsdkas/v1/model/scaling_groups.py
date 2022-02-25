@@ -700,7 +700,7 @@ class ScalingGroups:
     def notifications(self):
         """Gets the notifications of this ScalingGroups.
 
-        通知方式：EMAIL为发送邮件通知。
+        通知方式：  EMAIL为发送邮件通知。  该通知方式已经被废除，建议给弹性伸缩组配置通知功能。请参考[通知](https://support.huaweicloud.com/api-as/as_06_0800.html)。
 
         :return: The notifications of this ScalingGroups.
         :rtype: list[str]
@@ -711,7 +711,7 @@ class ScalingGroups:
     def notifications(self, notifications):
         """Sets the notifications of this ScalingGroups.
 
-        通知方式：EMAIL为发送邮件通知。
+        通知方式：  EMAIL为发送邮件通知。  该通知方式已经被废除，建议给弹性伸缩组配置通知功能。请参考[通知](https://support.huaweicloud.com/api-as/as_06_0800.html)。
 
         :param notifications: The notifications of this ScalingGroups.
         :type: list[str]

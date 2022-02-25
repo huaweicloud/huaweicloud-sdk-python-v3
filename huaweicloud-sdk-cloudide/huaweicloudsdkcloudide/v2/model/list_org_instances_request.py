@@ -129,7 +129,7 @@ class ListOrgInstancesRequest:
     def org_id(self):
         """Gets the org_id of this ListOrgInstancesRequest.
 
-        组织id（对应华为云帐号的domainId）
+        租户id（对应华为云帐号的domainId）
 
         :return: The org_id of this ListOrgInstancesRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class ListOrgInstancesRequest:
     def org_id(self, org_id):
         """Sets the org_id of this ListOrgInstancesRequest.
 
-        组织id（对应华为云帐号的domainId）
+        租户id（对应华为云帐号的domainId）
 
         :param org_id: The org_id of this ListOrgInstancesRequest.
         :type: str

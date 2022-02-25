@@ -36,7 +36,9 @@ class ListIssueRequestV4:
         'severity_ids': 'list[int]',
         'status_ids': 'list[int]',
         'story_point_ids': 'list[int]',
-        'tracker_ids': 'list[int]'
+        'tracker_ids': 'list[int]',
+        'include_deleted': 'bool',
+        'updated_time_interval': 'str'
     }
 
     attribute_map = {
@@ -54,10 +56,12 @@ class ListIssueRequestV4:
         'severity_ids': 'severity_ids',
         'status_ids': 'status_ids',
         'story_point_ids': 'story_point_ids',
-        'tracker_ids': 'tracker_ids'
+        'tracker_ids': 'tracker_ids',
+        'include_deleted': 'include_deleted',
+        'updated_time_interval': 'updated_time_interval'
     }
 
-    def __init__(self, assigned_ids=None, creator_ids=None, developer_ids=None, domain_ids=None, done_ratios=None, iteration_ids=None, limit=None, offset=None, module_ids=None, priority_ids=None, query_type=None, severity_ids=None, status_ids=None, story_point_ids=None, tracker_ids=None):
+    def __init__(self, assigned_ids=None, creator_ids=None, developer_ids=None, domain_ids=None, done_ratios=None, iteration_ids=None, limit=None, offset=None, module_ids=None, priority_ids=None, query_type=None, severity_ids=None, status_ids=None, story_point_ids=None, tracker_ids=None, include_deleted=None, updated_time_interval=None):
         """ListIssueRequestV4 - a model defined in huaweicloud sdk"""
         
         
@@ -77,6 +81,8 @@ class ListIssueRequestV4:
         self._status_ids = None
         self._story_point_ids = None
         self._tracker_ids = None
+        self._include_deleted = None
+        self._updated_time_interval = None
         self.discriminator = None
 
         if assigned_ids is not None:
@@ -109,6 +115,10 @@ class ListIssueRequestV4:
             self.story_point_ids = story_point_ids
         if tracker_ids is not None:
             self.tracker_ids = tracker_ids
+        if include_deleted is not None:
+            self.include_deleted = include_deleted
+        if updated_time_interval is not None:
+            self.updated_time_interval = updated_time_interval
 
     @property
     def assigned_ids(self):
@@ -439,6 +449,50 @@ class ListIssueRequestV4:
         :type: list[int]
         """
         self._tracker_ids = tracker_ids
+
+    @property
+    def include_deleted(self):
+        """Gets the include_deleted of this ListIssueRequestV4.
+
+        true 查询的工作项包含已经逻辑删除的，false 查询的工作项不包含已经删除的
+
+        :return: The include_deleted of this ListIssueRequestV4.
+        :rtype: bool
+        """
+        return self._include_deleted
+
+    @include_deleted.setter
+    def include_deleted(self, include_deleted):
+        """Sets the include_deleted of this ListIssueRequestV4.
+
+        true 查询的工作项包含已经逻辑删除的，false 查询的工作项不包含已经删除的
+
+        :param include_deleted: The include_deleted of this ListIssueRequestV4.
+        :type: bool
+        """
+        self._include_deleted = include_deleted
+
+    @property
+    def updated_time_interval(self):
+        """Gets the updated_time_interval of this ListIssueRequestV4.
+
+        根据工作项的更新时间查询工作项，(查询的起始时间,查询的结束时间)
+
+        :return: The updated_time_interval of this ListIssueRequestV4.
+        :rtype: str
+        """
+        return self._updated_time_interval
+
+    @updated_time_interval.setter
+    def updated_time_interval(self, updated_time_interval):
+        """Sets the updated_time_interval of this ListIssueRequestV4.
+
+        根据工作项的更新时间查询工作项，(查询的起始时间,查询的结束时间)
+
+        :param updated_time_interval: The updated_time_interval of this ListIssueRequestV4.
+        :type: str
+        """
+        self._updated_time_interval = updated_time_interval
 
     def to_dict(self):
         """Returns the model properties as a dict"""

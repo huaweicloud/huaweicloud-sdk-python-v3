@@ -48,7 +48,7 @@ class StartLogAutoBackupPolicyRequest:
     def cluster_id(self):
         """Gets the cluster_id of this StartLogAutoBackupPolicyRequest.
 
-        指定查询集群ID。
+        指定待开启的集群ID。
 
         :return: The cluster_id of this StartLogAutoBackupPolicyRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class StartLogAutoBackupPolicyRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this StartLogAutoBackupPolicyRequest.
 
-        指定查询集群ID。
+        指定待开启的集群ID。
 
         :param cluster_id: The cluster_id of this StartLogAutoBackupPolicyRequest.
         :type: str

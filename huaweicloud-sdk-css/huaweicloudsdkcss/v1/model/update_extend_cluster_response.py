@@ -22,72 +22,16 @@ class UpdateExtendClusterResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'instances': 'list[ExtendClusterInstancesResp]'
     }
 
     attribute_map = {
-        'id': 'id',
-        'instances': 'instances'
     }
 
-    def __init__(self, id=None, instances=None):
+    def __init__(self):
         """UpdateExtendClusterResponse - a model defined in huaweicloud sdk"""
         
         super(UpdateExtendClusterResponse, self).__init__()
-
-        self._id = None
-        self._instances = None
         self.discriminator = None
-
-        if id is not None:
-            self.id = id
-        if instances is not None:
-            self.instances = instances
-
-    @property
-    def id(self):
-        """Gets the id of this UpdateExtendClusterResponse.
-
-        集群ID。
-
-        :return: The id of this UpdateExtendClusterResponse.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this UpdateExtendClusterResponse.
-
-        集群ID。
-
-        :param id: The id of this UpdateExtendClusterResponse.
-        :type: str
-        """
-        self._id = id
-
-    @property
-    def instances(self):
-        """Gets the instances of this UpdateExtendClusterResponse.
-
-        扩容实例列表。
-
-        :return: The instances of this UpdateExtendClusterResponse.
-        :rtype: list[ExtendClusterInstancesResp]
-        """
-        return self._instances
-
-    @instances.setter
-    def instances(self, instances):
-        """Sets the instances of this UpdateExtendClusterResponse.
-
-        扩容实例列表。
-
-        :param instances: The instances of this UpdateExtendClusterResponse.
-        :type: list[ExtendClusterInstancesResp]
-        """
-        self._instances = instances
 
     def to_dict(self):
         """Returns the model properties as a dict"""

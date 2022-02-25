@@ -27,7 +27,7 @@ class WhiteBlackIpResponseBody:
         'timestamp': 'int',
         'description': 'str',
         'status': 'int',
-        'ip': 'str',
+        'addr': 'str',
         'white': 'int'
     }
 
@@ -37,11 +37,11 @@ class WhiteBlackIpResponseBody:
         'timestamp': 'timestamp',
         'description': 'description',
         'status': 'status',
-        'ip': 'ip',
+        'addr': 'addr',
         'white': 'white'
     }
 
-    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, ip=None, white=None):
+    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, addr=None, white=None):
         """WhiteBlackIpResponseBody - a model defined in huaweicloud sdk"""
         
         
@@ -51,7 +51,7 @@ class WhiteBlackIpResponseBody:
         self._timestamp = None
         self._description = None
         self._status = None
-        self._ip = None
+        self._addr = None
         self._white = None
         self.discriminator = None
 
@@ -65,8 +65,8 @@ class WhiteBlackIpResponseBody:
             self.description = description
         if status is not None:
             self.status = status
-        if ip is not None:
-            self.ip = ip
+        if addr is not None:
+            self.addr = addr
         if white is not None:
             self.white = white
 
@@ -181,26 +181,26 @@ class WhiteBlackIpResponseBody:
         self._status = status
 
     @property
-    def ip(self):
-        """Gets the ip of this WhiteBlackIpResponseBody.
+    def addr(self):
+        """Gets the addr of this WhiteBlackIpResponseBody.
 
         黑白名单
 
-        :return: The ip of this WhiteBlackIpResponseBody.
+        :return: The addr of this WhiteBlackIpResponseBody.
         :rtype: str
         """
-        return self._ip
+        return self._addr
 
-    @ip.setter
-    def ip(self, ip):
-        """Sets the ip of this WhiteBlackIpResponseBody.
+    @addr.setter
+    def addr(self, addr):
+        """Sets the addr of this WhiteBlackIpResponseBody.
 
         黑白名单
 
-        :param ip: The ip of this WhiteBlackIpResponseBody.
+        :param addr: The addr of this WhiteBlackIpResponseBody.
         :type: str
         """
-        self._ip = ip
+        self._addr = addr
 
     @property
     def white(self):

@@ -23,10 +23,10 @@ class HistoryRunInfo:
 
     openapi_types = {
         'name': 'str',
-        'run_id': 'int',
-        'run_type': 'int',
+        'run_id': 'float',
+        'run_type': 'float',
         'start_time': 'str',
-        'continue_time': 'int',
+        'continue_time': 'float',
         'temp_names': 'list[TempName]'
     }
 
@@ -94,7 +94,7 @@ class HistoryRunInfo:
         run_id
 
         :return: The run_id of this HistoryRunInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._run_id
 
@@ -105,7 +105,7 @@ class HistoryRunInfo:
         run_id
 
         :param run_id: The run_id of this HistoryRunInfo.
-        :type: int
+        :type: float
         """
         self._run_id = run_id
 
@@ -116,7 +116,7 @@ class HistoryRunInfo:
         run_type
 
         :return: The run_type of this HistoryRunInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._run_type
 
@@ -127,7 +127,7 @@ class HistoryRunInfo:
         run_type
 
         :param run_type: The run_type of this HistoryRunInfo.
-        :type: int
+        :type: float
         """
         self._run_type = run_type
 
@@ -160,7 +160,7 @@ class HistoryRunInfo:
         continue_time
 
         :return: The continue_time of this HistoryRunInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._continue_time
 
@@ -171,7 +171,7 @@ class HistoryRunInfo:
         continue_time
 
         :param continue_time: The continue_time of this HistoryRunInfo.
-        :type: int
+        :type: float
         """
         self._continue_time = continue_time
 

@@ -135,16 +135,11 @@ class Job:
 
         if job_type is not None:
             self.job_type = job_type
-        if from_connector_name is not None:
-            self.from_connector_name = from_connector_name
-        if to_config_values is not None:
-            self.to_config_values = to_config_values
-        if to_link_name is not None:
-            self.to_link_name = to_link_name
-        if driver_config_values is not None:
-            self.driver_config_values = driver_config_values
-        if from_config_values is not None:
-            self.from_config_values = from_config_values
+        self.from_connector_name = from_connector_name
+        self.to_config_values = to_config_values
+        self.to_link_name = to_link_name
+        self.driver_config_values = driver_config_values
+        self.from_config_values = from_config_values
         if to_connector_name is not None:
             self.to_connector_name = to_connector_name
         if name is not None:

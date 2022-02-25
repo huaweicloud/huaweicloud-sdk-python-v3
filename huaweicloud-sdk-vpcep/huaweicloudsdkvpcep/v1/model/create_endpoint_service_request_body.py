@@ -85,7 +85,7 @@ class CreateEndpointServiceRequestBody:
     def port_id(self):
         """Gets the port_id of this CreateEndpointServiceRequestBody.
 
-        标识终端节点服务后端资源的ID，格式为通用唯一识别码 （Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。详细内容请参考《弹性负载均衡API参考》中的“查询负载均 衡详情”，详见响应消息中的“vip_port_id”字段。 ● VM类型：弹性云服务器IP地址对应的网卡ID。详细内容请参考《弹性云服务器API参考》中的“查询云服务器网 卡信息”，详见响应消息中的“port_id”字段。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。 说明 ● 创建终端节点服务时，VPC的子网网段不能与198.19.128.0/20重叠。 ● VPC路由表中自定义路由的目的地址不能与198.19.128.0/20重叠
+        标识终端节点服务后端资源的ID，格式为通用唯一识别码 （Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。详细内容请参考《弹性负载均衡API参考》中的“查询负载均 衡详情”，详见响应消息中的“vip_port_id”字段。 ● VM类型：弹性云服务器IP地址对应的网卡ID。详细内容请参考《弹性云服务器API参考》中的“查询云服务器网 卡信息”，详见响应消息中的“port_id”字段。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。 说明 ● 创建终端节点服务时，VPC的子网网段不能与198.19.128.0/17重叠。 ● VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠
 
         :return: The port_id of this CreateEndpointServiceRequestBody.
         :rtype: str
@@ -96,7 +96,7 @@ class CreateEndpointServiceRequestBody:
     def port_id(self, port_id):
         """Sets the port_id of this CreateEndpointServiceRequestBody.
 
-        标识终端节点服务后端资源的ID，格式为通用唯一识别码 （Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。详细内容请参考《弹性负载均衡API参考》中的“查询负载均 衡详情”，详见响应消息中的“vip_port_id”字段。 ● VM类型：弹性云服务器IP地址对应的网卡ID。详细内容请参考《弹性云服务器API参考》中的“查询云服务器网 卡信息”，详见响应消息中的“port_id”字段。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。 说明 ● 创建终端节点服务时，VPC的子网网段不能与198.19.128.0/20重叠。 ● VPC路由表中自定义路由的目的地址不能与198.19.128.0/20重叠
+        标识终端节点服务后端资源的ID，格式为通用唯一识别码 （Universally Unique Identifier，下文简称UUID）。 取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。详细内容请参考《弹性负载均衡API参考》中的“查询负载均 衡详情”，详见响应消息中的“vip_port_id”字段。 ● VM类型：弹性云服务器IP地址对应的网卡ID。详细内容请参考《弹性云服务器API参考》中的“查询云服务器网 卡信息”，详见响应消息中的“port_id”字段。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。 说明 ● 创建终端节点服务时，VPC的子网网段不能与198.19.128.0/17重叠。 ● VPC路由表中自定义路由的目的地址不能与198.19.128.0/17重叠
 
         :param port_id: The port_id of this CreateEndpointServiceRequestBody.
         :type: str

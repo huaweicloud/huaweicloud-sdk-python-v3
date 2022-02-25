@@ -1,3 +1,368 @@
+# 3.0.78 2022-02-25
+
+### HuaweiCloud SDK AS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListAllScalingV2Policies`新增请求参数 `alarm_id`
+  - 接口`CreateScalingConfig`请求参数`volume_type`新增枚举值`GPSSD`
+  - 接口`ShowResourceQuota`新增响应参数 `min`
+  - 接口`ShowPolicyAndInstanceQuota`新增响应参数 `min`
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateBaremetalServerMetadata`:
+    - 请求体类型修改 `MetaData` -> `UpdateBaremetalServerMetadataReq`
+    - 移除响应参数 `key`
+
+### HuaweiCloud SDK CDM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowJobs`响应参数`from-connector-name`、`to-link-name`改为必填
+  - 接口`UpdateJob`请求参数`from-connector-name`、`to-link-name`改为必填
+  - 接口`CreateAndStartRandomClusterJob`:
+    - 请求参数`from-connector-name`、`to-link-name`改为必填
+    - 响应参数`progress`类型调整 `int32` -> `float`
+    - 响应参数`isStopingIncrement`类型调整 `boolean` -> `string`
+  - 接口`StopJob`新增响应参数 `submissions`
+  - 接口`CreateJob`请求参数`from-connector-name`、`to-link-name`改为必填
+  - 接口`StartJob`:
+    - 响应参数`progress`类型调整 `int32` -> `float`
+    - 响应参数`isStopingIncrement`类型调整 `boolean` -> `string`
+  - 接口`ShowJobStatus`响应参数`progress`类型调整 `double` -> `float`
+  - 接口`ShowSubmissions`响应参数`progress`类型调整 `double` -> `float`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 支持接口`ShowDomainLocationStats`、`ShowDomainFullConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowDomainStats`:
+    - 新增请求参数 `service_area`
+    - 移除请求参数 `X-Auth-Token`、`country`、`district`、`isp`
+    - 移除响应参数 `start_time`、`end_time`、`interval`、`action`、`stat_type`、`group_by`
+  - 接口`UpdateDomainFullConfig`新增请求参数 `https`
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`新增请求参数 `instance_domain_id`、`instance_user_id`
+  - 接口`CreateInstanceBy3rd`请求参数`instance_user_domain_name`、`instance_user_name`改为非必填
+
+### HuaweiCloud SDK CodeCheck
+
+- _新增特性_
+  - 支持接口`CheckRecord`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CloudRTC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListRtcClientQosDetails`请求参数`mid`类型调整 `array` -> `string`
+
+### HuaweiCloud SDK CodeHub
+
+- _新增特性_
+  - 支持接口`ShowStatisticCommitV3`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CPTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListProjectSets`:
+    - 新增响应参数 `CreateTime`、`UpdateTime`、`external_params`、`variables_no_file`
+    - 移除响应参数 `create_time`、`update_time`、`group`
+  - 接口`UpdateProject`请求参数`name`改为必填
+  - 接口`ShowTask`:
+    - 新增响应参数 `parallel`、`contents`、`sort`、`related_temp_running_data`
+    - 移除响应参数 `content`
+  - 接口`UpdateTask`:
+    - 新增请求参数 `contents`、`sort`、`related_temp_running_data`
+    - 新增响应参数 `parallel`、`contents`、`sort`、`related_temp_running_data`
+    - 移除请求参数 `content`
+    - 移除响应参数 `content`
+    - 请求参数`name`改为必填
+  - 接口`ShowReport`:
+    - 新增响应参数 `performance`、`minNetworkTraffic`、`avgNetworkTraffic`、`maxNetworkTraffic`、`branchId`、`branchName`、`projectId`、`serviceId`
+    - 移除响应参数 `progressState`、`statusValue`
+    - 响应参数`averageRespTime`类型调整 `float` -> `double`
+    - 响应参数`avgRecBytes`类型调整 `float` -> `double`
+    - 响应参数`avgSentBytes`类型调整 `int32` -> `double`
+    - 响应参数`avgTranRespTime`类型调整 `string` -> `double`
+    - 响应参数`currentThreadNum`类型调整 `int32` -> `double`
+    - 响应参数`errorCount`类型调整 `int32` -> `double`
+    - 响应参数`errorEventsCount`类型调整 `int32` -> `double`
+    - 响应参数`failedAssert`类型调整 `int32` -> `double`
+    - 响应参数`failedOthers`类型调整 `int32` -> `double`
+    - 响应参数`failedParsed`类型调整 `int32` -> `double`
+    - 响应参数`failedRefused`类型调整 `int32` -> `double`
+    - 响应参数`failedTimeout`类型调整 `int32` -> `double`
+    - 响应参数`max`类型调整 `int32` -> `double`
+    - 响应参数`maxRecBytes`类型调整 `int32` -> `double`
+    - 响应参数`maxRespTime`类型调整 `int32` -> `double`
+    - 响应参数`maxSentBytes`类型调整 `int32` -> `double`
+    - 响应参数`maxTranRespTime`类型调整 `int32` -> `double`
+    - 响应参数`min`类型调整 `int32` -> `double`
+    - 响应参数`requests`类型调整 `int32` -> `double`
+    - 响应参数`result`类型调整 `int32` -> `double`
+    - 响应参数`status`类型调整 `int32` -> `double`
+    - 响应参数`successCount`类型调整 `int32` -> `double`
+    - 响应参数`successRate`类型调整 `int32` -> `double`
+    - 响应参数`sum1xx`类型调整 `int32` -> `double`
+    - 响应参数`sum2xx`类型调整 `int32` -> `double`
+    - 响应参数`sum3xx`类型调整 `int32` -> `double`
+    - 响应参数`sum4xx`类型调整 `int32` -> `double`
+    - 响应参数`sum5xx`类型调整 `int32` -> `double`
+    - 响应参数`taskStatus`类型调整 `int32` -> `double`
+    - 响应参数`tp50`类型调整 `int32` -> `double`
+    - 响应参数`tp75`类型调整 `int32` -> `double`
+    - 响应参数`tp90`类型调整 `int32` -> `double`
+    - 响应参数`tp95`类型调整 `int32` -> `double`
+    - 响应参数`tp99`类型调整 `int32` -> `double`
+    - 响应参数`tps`类型调整 `float` -> `double`
+    - 响应参数`tranTPS`类型调整 `string` -> `double`
+    - 响应参数`transactionSuccess`类型调整 `string` -> `double`
+    - 响应参数`transactionalSuccessRate`类型调整 `int32` -> `double`
+    - 响应参数`transactionalTps`类型调整 `int32` -> `double`
+    - 响应参数`transactionalTpsSuccess`类型调整 `int32` -> `double`
+    - 响应参数`transactions`类型调整 `string` -> `double`
+    - 响应参数`vum`类型调整 `int32` -> `double`
+    - 响应参数`avgResponseTime`类型调整 `float` -> `double`
+    - 响应参数`caseRetry`类型调整 `int32` -> `double`
+    - 响应参数`completeNum`类型调整 `int32` -> `double`
+    - 响应参数`duration`类型调整 `int32` -> `double`
+    - 响应参数`executedNum`类型调整 `int32` -> `double`
+    - 响应参数`kpiCaseCount`类型调整 `int32` -> `double`
+    - 响应参数`kpiCaseExecuteCount`类型调整 `int32` -> `double`
+    - 响应参数`kpiCasePassCount`类型调整 `int32` -> `double`
+    - 响应参数`maxUsers`类型调整 `int32` -> `double`
+    - 响应参数`passNum`类型调整 `int32` -> `double`
+    - 响应参数`stage`类型调整 `int32` -> `double`
+    - 响应参数`totalNum`类型调整 `int32` -> `double`
+  - 接口`UpdateCase`:
+    - 新增请求参数 `contents`、`sort`
+    - 移除请求参数 `content`
+  - 接口`CreateTemp`新增请求参数 `contents`
+  - 接口`UpdateTemp`:
+    - 请求参数`bodys`类型调整 `array` -> `string`
+    - 请求参数`name`改为必填
+  - 接口`CreateVariable`新增请求参数 `is_quoted`
+  - 接口`ShowHistoryRunInfo`:
+    - 响应参数`run_id`类型调整 `int32` -> `double`
+    - 响应参数`run_type`类型调整 `int32` -> `double`
+    - 响应参数`continue_time`类型调整 `int32` -> `double`
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 支持以下接口：
+    - `UpdateFlavor`
+    - `UpdateFlavorByType`
+    - `UpdateShrinkNodes`
+    - `UpdateShrinkCluster`
+    - `ListLogsJob`
+    - `ShowClusterDetail`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateExtendCluster`移除响应参数 `id`、`instances`
+  - 接口`StartConnectivityTest`移除请求参数 `status`
+
+### HuaweiCloud SDK DDM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ExpandInstanceNodes`新增请求参数 `group_id`
+  - 接口`ShrinkInstanceNodes`新增请求参数 `group_id`
+  - 接口`CreateDatabase`请求参数`shard_unit`改为非必填
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListConnections`:
+    - 新增响应参数 `type`、`description`
+    - 移除响应参数 `connectionType`
+    - 响应参数`total`类型调整 `string` -> `int32`
+    - 响应参数`name`改为必填
+  - 接口`CreateConnection`:
+    - 新增请求参数 `type`、`description`
+    - 移除请求参数 `connectionType`
+    - 请求参数`name`改为必填
+  - 接口`ShowConnection`:
+    - 新增响应参数 `type`、`description`
+    - 移除响应参数 `connectionType`
+    - 响应参数`name`改为必填
+  - 接口`UpdateConnection`:
+    - 新增请求参数 `type`、`description`
+    - 移除请求参数 `connectionType`
+    - 请求参数`name`改为必填
+  - 接口`ExecuteScript`:
+    - 新增响应参数 `instanceId`
+    - 移除响应参数 `jobId`
+    - 请求参数`params`类型调整 `string` -> `object`
+
+### HuaweiCloud SDK ELB
+
+- _新增特性_
+  - 支持接口`BatchCreateMembers`、`BatchDeleteMembers`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListFunctions`响应参数`runtime`新增枚举值`Java8`、`Java11`、`Node.js6.10`、`Node.js8.10`、`Node.js10.16`、`Node.js12.13`、`Node.js14.18`、`Python2.7`、`Python3.6`、`Python3.9`、`Go1.8`、`Go1.x`、`PHP7.3`, 移除枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`
+  - 接口`CreateFunction`:
+    - 请求参数`runtime`新增枚举值`Java8`、`Java11`、`Node.js6.10`、`Node.js8.10`、`Node.js10.16`、`Node.js12.13`、`Node.js14.18`、`Python2.7`、`Python3.6`、`Python3.9`、`Go1.8`、`Go1.x`、`PHP7.3`, 移除枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`
+    - 响应参数`runtime`新增枚举值`Java8`、`Java11`、`Node.js6.10`、`Node.js8.10`、`Node.js10.16`、`Node.js12.13`、`Node.js14.18`、`Python2.7`、`Python3.6`、`Python3.9`、`Go1.8`、`Go1.x`、`PHP7.3`, 移除枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`
+  - 接口`ShowFunctionCode`响应参数`runtime`新增枚举值`Java8`、`Java11`、`Node.js6.10`、`Node.js8.10`、`Node.js10.16`、`Node.js12.13`、`Node.js14.18`、`Python2.7`、`Python3.6`、`Python3.9`、`Go1.8`、`Go1.x`、`PHP7.3`, 移除枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`
+  - 接口`UpdateFunctionCode`响应参数`runtime`新增枚举值`Java8`、`Java11`、`Node.js6.10`、`Node.js8.10`、`Node.js10.16`、`Node.js12.13`、`Node.js14.18`、`Python2.7`、`Python3.6`、`Python3.9`、`Go1.8`、`Go1.x`、`PHP7.3`, 移除枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`
+  - 接口`ShowFunctionConfig`响应参数`runtime`新增枚举值`Java8`、`Java11`、`Node.js6.10`、`Node.js8.10`、`Node.js10.16`、`Node.js12.13`、`Node.js14.18`、`Python2.7`、`Python3.6`、`Python3.9`、`Go1.8`、`Go1.x`、`PHP7.3`, 移除枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`
+  - 接口`UpdateFunctionConfig`:
+    - 请求参数`runtime`新增枚举值`Java8`、`Java11`、`Node.js6.10`、`Node.js8.10`、`Node.js10.16`、`Node.js12.13`、`Node.js14.18`、`Python2.7`、`Python3.6`、`Python3.9`、`Go1.8`、`Go1.x`、`PHP7.3`, 移除枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`
+    - 响应参数`runtime`新增枚举值`Java8`、`Java11`、`Node.js6.10`、`Node.js8.10`、`Node.js10.16`、`Node.js12.13`、`Node.js14.18`、`Python2.7`、`Python3.6`、`Python3.9`、`Go1.8`、`Go1.x`、`PHP7.3`, 移除枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`
+  - 接口`ListFunctionVersions`响应参数`runtime`新增枚举值`Java8`、`Java11`、`Node.js6.10`、`Node.js8.10`、`Node.js10.16`、`Node.js12.13`、`Node.js14.18`、`Python2.7`、`Python3.6`、`Python3.9`、`Go1.8`、`Go1.x`、`PHP7.3`, 移除枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`
+  - 接口`CreateFunctionVersion`响应参数`runtime`新增枚举值`Java8`、`Java11`、`Node.js6.10`、`Node.js8.10`、`Node.js10.16`、`Node.js12.13`、`Node.js14.18`、`Python2.7`、`Python3.6`、`Python3.9`、`Go1.8`、`Go1.x`、`PHP7.3`, 移除枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`
+  - 接口`CreateDependency`请求参数`runtime`新增枚举值`Java11`、`Node.js14.18`、`Python3.9`
+  - 接口`UpdateDependency`请求参数`runtime`新增枚举值`Java8`、`Java11`、`Node.js6.10`、`Node.js8.10`、`Node.js10.16`、`Node.js12.13`、`Node.js14.18`、`Python2.7`、`Python3.6`、`Python3.9`、`Go1.8`、`PHP7.3`, 移除枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`PHP 7.3`
+  - 接口`ImportFunction`响应参数`runtime`新增枚举值`Java8`、`Java11`、`Node.js6.10`、`Node.js8.10`、`Node.js10.16`、`Node.js12.13`、`Node.js14.18`、`Python2.7`、`Python3.6`、`Python3.9`、`Go1.8`、`Go1.x`、`PHP7.3`, 移除枚举值`Java 8`、`Node.js 6.10`、`Node.js 8.10`、`Node.js 10.16`、`Node.js 12.13`、`Python 2.7`、`Python 3.6`、`Go 1.8`、`Go 1.x`、`PHP 7.3`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持接口`UpdateAuditLog`、`ShowAuditLog`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+  - 支持接口`ListSingleStreamDetail`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 支持接口`UpdateStructConfig`、`CreateStructConfig`、`ListStructTemplate`、`ListBreifStructTemplate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListLogGroups`新增响应参数 `tag`
+  - 接口`ListLogStream`新增响应参数 `tag`
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 支持接口`BatchUpdateChildNickNames`、`ListIterationHistories`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListProjectIterationsV4`新增请求参数 `updated_time_interval`、`include_deleted`
+  - 接口`ListIssuesV4`新增请求参数 `include_deleted`、`updated_time_interval`
+  - 接口`ShowIssueV4`新增响应参数 `description`、`order`、`accessories`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListSlowLogFile`、`StopInstance`、`StartupInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SCM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCertificates`新增响应参数 `sans`、`signature_algorithm`、`deploy_support`
+  - 接口`ImportCertificate`新增请求参数 `enc_certificate`、`enc_private_key`
+  - 接口`ShowCertificate`:
+    - 新增响应参数 `signature_algorithm`
+    - 移除响应参数 `signature_algrithm`
+  - 接口`ExportCertificate`新增响应参数 `enc_certificate`、`enc_private_key`
+
+### HuaweiCloud SDK VOD
+
+- _新增特性_
+  - 支持接口`ListDomainLogs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DeleteAssets`新增请求参数 `delete_type`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`NeutronListSubnets`新增响应参数`subnetpool_id`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListWhiteblackipRule`:
+    - 新增响应参数 `addr`
+    - 移除响应参数 `ip`
+
 # 3.0.77 2022-02-10
 
 ### HuaweiCloud SDK AOM

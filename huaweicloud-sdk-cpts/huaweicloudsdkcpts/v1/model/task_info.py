@@ -31,7 +31,8 @@ class TaskInfo:
         'project_id': 'int',
         'related_temp_running_data': 'list[RelatedTempRunningData]',
         'run_status': 'int',
-        'update_time': 'str'
+        'update_time': 'str',
+        'parallel': 'bool'
     }
 
     attribute_map = {
@@ -44,10 +45,11 @@ class TaskInfo:
         'project_id': 'project_id',
         'related_temp_running_data': 'related_temp_running_data',
         'run_status': 'run_status',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'parallel': 'parallel'
     }
 
-    def __init__(self, bench_concurrent=None, case_list=None, create_time=None, description=None, name=None, operate_mode=None, project_id=None, related_temp_running_data=None, run_status=None, update_time=None):
+    def __init__(self, bench_concurrent=None, case_list=None, create_time=None, description=None, name=None, operate_mode=None, project_id=None, related_temp_running_data=None, run_status=None, update_time=None, parallel=None):
         """TaskInfo - a model defined in huaweicloud sdk"""
         
         
@@ -62,6 +64,7 @@ class TaskInfo:
         self._related_temp_running_data = None
         self._run_status = None
         self._update_time = None
+        self._parallel = None
         self.discriminator = None
 
         if bench_concurrent is not None:
@@ -84,6 +87,8 @@ class TaskInfo:
             self.run_status = run_status
         if update_time is not None:
             self.update_time = update_time
+        if parallel is not None:
+            self.parallel = parallel
 
     @property
     def bench_concurrent(self):
@@ -304,6 +309,28 @@ class TaskInfo:
         :type: str
         """
         self._update_time = update_time
+
+    @property
+    def parallel(self):
+        """Gets the parallel of this TaskInfo.
+
+        parallel
+
+        :return: The parallel of this TaskInfo.
+        :rtype: bool
+        """
+        return self._parallel
+
+    @parallel.setter
+    def parallel(self, parallel):
+        """Sets the parallel of this TaskInfo.
+
+        parallel
+
+        :param parallel: The parallel of this TaskInfo.
+        :type: bool
+        """
+        self._parallel = parallel
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,7 +22,7 @@ class ReportTaskInfo:
     sensitive_list = []
 
     openapi_types = {
-        'vum': 'int'
+        'vum': 'float'
     }
 
     attribute_map = {
@@ -44,10 +44,10 @@ class ReportTaskInfo:
     def vum(self):
         """Gets the vum of this ReportTaskInfo.
 
-        vum
+        分钟*并发数
 
         :return: The vum of this ReportTaskInfo.
-        :rtype: int
+        :rtype: float
         """
         return self._vum
 
@@ -55,10 +55,10 @@ class ReportTaskInfo:
     def vum(self, vum):
         """Sets the vum of this ReportTaskInfo.
 
-        vum
+        分钟*并发数
 
         :param vum: The vum of this ReportTaskInfo.
-        :type: int
+        :type: float
         """
         self._vum = vum
 

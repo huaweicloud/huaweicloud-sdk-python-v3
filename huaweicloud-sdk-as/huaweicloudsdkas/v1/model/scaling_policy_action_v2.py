@@ -59,7 +59,7 @@ class ScalingPolicyActionV2:
     def operation(self):
         """Gets the operation of this ScalingPolicyActionV2.
 
-        操作选项。ADD：添加实例。REMOVE/REDUCE：移除实例。SET：设置实例数为
+        操作选项，默认为ADD。 当scaling_resource_type为SCALING_GROUP，支持如下操作： - ADD：增加 - REMOVE/REDUCE：减少 - SET：设置为 当scaling_resource_type为BANDWIDTH，支持如下操作： - ADD：增加 - REDUCE：减少 - SET：设置为
 
         :return: The operation of this ScalingPolicyActionV2.
         :rtype: str
@@ -70,7 +70,7 @@ class ScalingPolicyActionV2:
     def operation(self, operation):
         """Sets the operation of this ScalingPolicyActionV2.
 
-        操作选项。ADD：添加实例。REMOVE/REDUCE：移除实例。SET：设置实例数为
+        操作选项，默认为ADD。 当scaling_resource_type为SCALING_GROUP，支持如下操作： - ADD：增加 - REMOVE/REDUCE：减少 - SET：设置为 当scaling_resource_type为BANDWIDTH，支持如下操作： - ADD：增加 - REDUCE：减少 - SET：设置为
 
         :param operation: The operation of this ScalingPolicyActionV2.
         :type: str

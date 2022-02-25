@@ -2732,6 +2732,75 @@ class CodeHubClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_statistic_commit_v3(self, request):
+        """获取代码提交行数
+
+        获取指定日期内代码仓指定分支的代码提交行数
+
+        :param ShowStatisticCommitV3Request request
+        :return: ShowStatisticCommitV3Response
+        """
+        return self.show_statistic_commit_v3_with_http_info(request)
+
+    def show_statistic_commit_v3_with_http_info(self, request):
+        """获取代码提交行数
+
+        获取指定日期内代码仓指定分支的代码提交行数
+
+        :param ShowStatisticCommitV3Request request
+        :return: ShowStatisticCommitV3Response
+        """
+
+        all_params = ['repository_id', 'ref_name', 'begin_date', 'end_date']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'ref_name' in local_var_params:
+            query_params.append(('ref_name', local_var_params['ref_name']))
+        if 'begin_date' in local_var_params:
+            query_params.append(('begin_date', local_var_params['begin_date']))
+        if 'end_date' in local_var_params:
+            query_params.append(('end_date', local_var_params['end_date']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v3/repositories/{repository_id}/commit-lines',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowStatisticCommitV3Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_statistical_data(self, request):
         """获取仓库统计数据
 

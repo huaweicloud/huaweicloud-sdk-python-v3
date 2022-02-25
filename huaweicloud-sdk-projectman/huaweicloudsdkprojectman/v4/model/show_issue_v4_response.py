@@ -45,7 +45,10 @@ class ShowIssueV4Response(SdkResponse):
         'status': 'IssueItemSfV4Status',
         'tracker': 'IssueItemSfV4Tracker',
         'updated_time': 'str',
-        'closed_time': 'str'
+        'closed_time': 'str',
+        'description': 'str',
+        'order': 'IssueOrder',
+        'accessories': 'list[IssueAccessory]'
     }
 
     attribute_map = {
@@ -72,10 +75,13 @@ class ShowIssueV4Response(SdkResponse):
         'status': 'status',
         'tracker': 'tracker',
         'updated_time': 'updated_time',
-        'closed_time': 'closed_time'
+        'closed_time': 'closed_time',
+        'description': 'description',
+        'order': 'order',
+        'accessories': 'accessories'
     }
 
-    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, name=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None, updated_time=None, closed_time=None):
+    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, name=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None, updated_time=None, closed_time=None, description=None, order=None, accessories=None):
         """ShowIssueV4Response - a model defined in huaweicloud sdk"""
         
         super(ShowIssueV4Response, self).__init__()
@@ -104,6 +110,9 @@ class ShowIssueV4Response(SdkResponse):
         self._tracker = None
         self._updated_time = None
         self._closed_time = None
+        self._description = None
+        self._order = None
+        self._accessories = None
         self.discriminator = None
 
         if actual_work_hours is not None:
@@ -154,6 +163,12 @@ class ShowIssueV4Response(SdkResponse):
             self.updated_time = updated_time
         if closed_time is not None:
             self.closed_time = closed_time
+        if description is not None:
+            self.description = description
+        if order is not None:
+            self.order = order
+        if accessories is not None:
+            self.accessories = accessories
 
     @property
     def actual_work_hours(self):
@@ -658,6 +673,70 @@ class ShowIssueV4Response(SdkResponse):
         :type: str
         """
         self._closed_time = closed_time
+
+    @property
+    def description(self):
+        """Gets the description of this ShowIssueV4Response.
+
+        工作项描述
+
+        :return: The description of this ShowIssueV4Response.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ShowIssueV4Response.
+
+        工作项描述
+
+        :param description: The description of this ShowIssueV4Response.
+        :type: str
+        """
+        self._description = description
+
+    @property
+    def order(self):
+        """Gets the order of this ShowIssueV4Response.
+
+
+        :return: The order of this ShowIssueV4Response.
+        :rtype: IssueOrder
+        """
+        return self._order
+
+    @order.setter
+    def order(self, order):
+        """Sets the order of this ShowIssueV4Response.
+
+
+        :param order: The order of this ShowIssueV4Response.
+        :type: IssueOrder
+        """
+        self._order = order
+
+    @property
+    def accessories(self):
+        """Gets the accessories of this ShowIssueV4Response.
+
+        附近列表
+
+        :return: The accessories of this ShowIssueV4Response.
+        :rtype: list[IssueAccessory]
+        """
+        return self._accessories
+
+    @accessories.setter
+    def accessories(self, accessories):
+        """Sets the accessories of this ShowIssueV4Response.
+
+        附近列表
+
+        :param accessories: The accessories of this ShowIssueV4Response.
+        :type: list[IssueAccessory]
+        """
+        self._accessories = accessories
 
     def to_dict(self):
         """Returns the model properties as a dict"""

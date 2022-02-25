@@ -60,8 +60,7 @@ class UpdateTempRequestBody:
 
         self.id = id
         self.project_id = project_id
-        if name is not None:
-            self.name = name
+        self.name = name
         if temp_type is not None:
             self.temp_type = temp_type
         if description is not None:

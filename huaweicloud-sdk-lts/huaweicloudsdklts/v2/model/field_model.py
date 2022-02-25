@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class KeyValue:
+class FieldModel:
 
 
     """
@@ -22,44 +22,70 @@ class KeyValue:
     sensitive_list = []
 
     openapi_types = {
-        'key': 'str'
+        'field_name': 'str',
+        'is_analysis': 'bool'
     }
 
     attribute_map = {
-        'key': 'key'
+        'field_name': 'field_name',
+        'is_analysis': 'is_analysis'
     }
 
-    def __init__(self, key=None):
-        """KeyValue - a model defined in huaweicloud sdk"""
+    def __init__(self, field_name=None, is_analysis=None):
+        """FieldModel - a model defined in huaweicloud sdk"""
         
         
 
-        self._key = None
+        self._field_name = None
+        self._is_analysis = None
         self.discriminator = None
 
-        self.key = key
+        self.field_name = field_name
+        self.is_analysis = is_analysis
 
     @property
-    def key(self):
-        """Gets the key of this KeyValue.
+    def field_name(self):
+        """Gets the field_name of this FieldModel.
 
-        键。最大长度255个Unicode字符，不能为空。可以为大写字母（A-Z）、小写字母（a-z）、数字（0-9）、中划线（-）、下划线（_）、冒号（:）和小数点（.）。
+        字段名称
 
-        :return: The key of this KeyValue.
+        :return: The field_name of this FieldModel.
         :rtype: str
         """
-        return self._key
+        return self._field_name
 
-    @key.setter
-    def key(self, key):
-        """Sets the key of this KeyValue.
+    @field_name.setter
+    def field_name(self, field_name):
+        """Sets the field_name of this FieldModel.
 
-        键。最大长度255个Unicode字符，不能为空。可以为大写字母（A-Z）、小写字母（a-z）、数字（0-9）、中划线（-）、下划线（_）、冒号（:）和小数点（.）。
+        字段名称
 
-        :param key: The key of this KeyValue.
+        :param field_name: The field_name of this FieldModel.
         :type: str
         """
-        self._key = key
+        self._field_name = field_name
+
+    @property
+    def is_analysis(self):
+        """Gets the is_analysis of this FieldModel.
+
+        是否开启快速分析。
+
+        :return: The is_analysis of this FieldModel.
+        :rtype: bool
+        """
+        return self._is_analysis
+
+    @is_analysis.setter
+    def is_analysis(self, is_analysis):
+        """Sets the is_analysis of this FieldModel.
+
+        是否开启快速分析。
+
+        :param is_analysis: The is_analysis of this FieldModel.
+        :type: bool
+        """
+        self._is_analysis = is_analysis
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -103,7 +129,7 @@ class KeyValue:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, KeyValue):
+        if not isinstance(other, FieldModel):
             return False
 
         return self.__dict__ == other.__dict__

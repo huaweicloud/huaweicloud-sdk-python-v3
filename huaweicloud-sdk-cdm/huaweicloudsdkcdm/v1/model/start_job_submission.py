@@ -31,9 +31,9 @@ class StartJobSubmission:
         'creation_user': 'str',
         'creation_date': 'int',
         'execute_date': 'int',
-        'progress': 'int',
+        'progress': 'float',
         'status': 'str',
-        'is_stoping_increment': 'bool',
+        'is_stoping_increment': 'str',
         'is_execute_auto': 'bool',
         'last_update_date': 'int',
         'last_udpate_user': 'str',
@@ -315,7 +315,7 @@ class StartJobSubmission:
         作业进度，失败时为“-1”，其它情况为0～100
 
         :return: The progress of this StartJobSubmission.
-        :rtype: int
+        :rtype: float
         """
         return self._progress
 
@@ -326,7 +326,7 @@ class StartJobSubmission:
         作业进度，失败时为“-1”，其它情况为0～100
 
         :param progress: The progress of this StartJobSubmission.
-        :type: int
+        :type: float
         """
         self._progress = progress
 
@@ -359,7 +359,7 @@ class StartJobSubmission:
         是否停止增量迁移
 
         :return: The is_stoping_increment of this StartJobSubmission.
-        :rtype: bool
+        :rtype: str
         """
         return self._is_stoping_increment
 
@@ -370,7 +370,7 @@ class StartJobSubmission:
         是否停止增量迁移
 
         :param is_stoping_increment: The is_stoping_increment of this StartJobSubmission.
-        :type: bool
+        :type: str
         """
         self._is_stoping_increment = is_stoping_increment
 

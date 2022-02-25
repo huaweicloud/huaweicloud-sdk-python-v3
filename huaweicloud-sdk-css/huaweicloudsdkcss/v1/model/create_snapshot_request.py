@@ -48,7 +48,7 @@ class CreateSnapshotRequest:
     def cluster_id(self):
         """Gets the cluster_id of this CreateSnapshotRequest.
 
-        指定要备份的集群ID。
+        指定要创建快照的集群ID。
 
         :return: The cluster_id of this CreateSnapshotRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class CreateSnapshotRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this CreateSnapshotRequest.
 
-        指定要备份的集群ID。
+        指定要创建快照的集群ID。
 
         :param cluster_id: The cluster_id of this CreateSnapshotRequest.
         :type: str

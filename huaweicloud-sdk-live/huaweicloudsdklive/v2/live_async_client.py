@@ -1253,6 +1253,77 @@ class LiveAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_single_stream_detail_async(self, request):
+        """查询流监控数据接口
+
+        查询流监控数据接口，包括帧率码率断流情况。  最大查询跨度1天，最大查询周期1个月。  返回的码率数据列表粒度为1秒钟。 
+
+        :param ListSingleStreamDetailRequest request
+        :return: ListSingleStreamDetailResponse
+        """
+        return self.list_single_stream_detail_with_http_info(request)
+
+    def list_single_stream_detail_with_http_info(self, request):
+        """查询流监控数据接口
+
+        查询流监控数据接口，包括帧率码率断流情况。  最大查询跨度1天，最大查询周期1个月。  返回的码率数据列表粒度为1秒钟。 
+
+        :param ListSingleStreamDetailRequest request
+        :return: ListSingleStreamDetailResponse
+        """
+
+        all_params = ['publish_domain', 'app', 'stream', 'start_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'publish_domain' in local_var_params:
+            query_params.append(('publish_domain', local_var_params['publish_domain']))
+        if 'app' in local_var_params:
+            query_params.append(('app', local_var_params['app']))
+        if 'stream' in local_var_params:
+            query_params.append(('stream', local_var_params['stream']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/stats/stream-detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSingleStreamDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_single_stream_framerate_async(self, request):
         """查询推流帧率数据接口
 

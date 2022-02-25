@@ -53,7 +53,7 @@ class BatchAddSharedTagsRequestBody:
     def action(self):
         """Gets the action of this BatchAddSharedTagsRequestBody.
 
-        操作标识，取值范围为：“create”和“delete”。 为指定共享批量添加标签时使用“create”。
+        操作标识，取值范围为：\"create\"。 为指定共享批量添加标签时使用\"create\"。
 
         :return: The action of this BatchAddSharedTagsRequestBody.
         :rtype: str
@@ -64,7 +64,7 @@ class BatchAddSharedTagsRequestBody:
     def action(self, action):
         """Sets the action of this BatchAddSharedTagsRequestBody.
 
-        操作标识，取值范围为：“create”和“delete”。 为指定共享批量添加标签时使用“create”。
+        操作标识，取值范围为：\"create\"。 为指定共享批量添加标签时使用\"create\"。
 
         :param action: The action of this BatchAddSharedTagsRequestBody.
         :type: str

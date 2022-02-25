@@ -23,32 +23,37 @@ class ShowConnectionResponse(SdkResponse):
 
     openapi_types = {
         'name': 'str',
-        'connection_type': 'str',
-        'config': 'object'
+        'type': 'str',
+        'config': 'object',
+        'description': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'connection_type': 'connectionType',
-        'config': 'config'
+        'type': 'type',
+        'config': 'config',
+        'description': 'description'
     }
 
-    def __init__(self, name=None, connection_type=None, config=None):
+    def __init__(self, name=None, type=None, config=None, description=None):
         """ShowConnectionResponse - a model defined in huaweicloud sdk"""
         
         super(ShowConnectionResponse, self).__init__()
 
         self._name = None
-        self._connection_type = None
+        self._type = None
         self._config = None
+        self._description = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
-        if connection_type is not None:
-            self.connection_type = connection_type
+        if type is not None:
+            self.type = type
         if config is not None:
             self.config = config
+        if description is not None:
+            self.description = description
 
     @property
     def name(self):
@@ -71,24 +76,24 @@ class ShowConnectionResponse(SdkResponse):
         self._name = name
 
     @property
-    def connection_type(self):
-        """Gets the connection_type of this ShowConnectionResponse.
+    def type(self):
+        """Gets the type of this ShowConnectionResponse.
 
 
-        :return: The connection_type of this ShowConnectionResponse.
+        :return: The type of this ShowConnectionResponse.
         :rtype: str
         """
-        return self._connection_type
+        return self._type
 
-    @connection_type.setter
-    def connection_type(self, connection_type):
-        """Sets the connection_type of this ShowConnectionResponse.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ShowConnectionResponse.
 
 
-        :param connection_type: The connection_type of this ShowConnectionResponse.
+        :param type: The type of this ShowConnectionResponse.
         :type: str
         """
-        self._connection_type = connection_type
+        self._type = type
 
     @property
     def config(self):
@@ -109,6 +114,26 @@ class ShowConnectionResponse(SdkResponse):
         :type: object
         """
         self._config = config
+
+    @property
+    def description(self):
+        """Gets the description of this ShowConnectionResponse.
+
+
+        :return: The description of this ShowConnectionResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ShowConnectionResponse.
+
+
+        :param description: The description of this ShowConnectionResponse.
+        :type: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

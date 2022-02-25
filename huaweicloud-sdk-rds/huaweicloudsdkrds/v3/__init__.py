@@ -182,6 +182,8 @@ from huaweicloudsdkrds.v3.model.list_project_tags_request import ListProjectTags
 from huaweicloudsdkrds.v3.model.list_project_tags_response import ListProjectTagsResponse
 from huaweicloudsdkrds.v3.model.list_restore_times_request import ListRestoreTimesRequest
 from huaweicloudsdkrds.v3.model.list_restore_times_response import ListRestoreTimesResponse
+from huaweicloudsdkrds.v3.model.list_slow_log_file_request import ListSlowLogFileRequest
+from huaweicloudsdkrds.v3.model.list_slow_log_file_response import ListSlowLogFileResponse
 from huaweicloudsdkrds.v3.model.list_slow_logs_new_request import ListSlowLogsNewRequest
 from huaweicloudsdkrds.v3.model.list_slow_logs_new_response import ListSlowLogsNewResponse
 from huaweicloudsdkrds.v3.model.list_slow_logs_request import ListSlowLogsRequest
@@ -302,6 +304,7 @@ from huaweicloudsdkrds.v3.model.show_quotas_response import ShowQuotasResponse
 from huaweicloudsdkrds.v3.model.single2_ha import Single2Ha
 from huaweicloudsdkrds.v3.model.single2_ha_object import Single2HaObject
 from huaweicloudsdkrds.v3.model.slow_log import SlowLog
+from huaweicloudsdkrds.v3.model.slow_log_file import SlowLogFile
 from huaweicloudsdkrds.v3.model.slow_log_statistics import SlowLogStatistics
 from huaweicloudsdkrds.v3.model.slowlog_download_info import SlowlogDownloadInfo
 from huaweicloudsdkrds.v3.model.slowlog_download_request import SlowlogDownloadRequest
@@ -326,8 +329,12 @@ from huaweicloudsdkrds.v3.model.start_recycle_policy_request import StartRecycle
 from huaweicloudsdkrds.v3.model.start_recycle_policy_response import StartRecyclePolicyResponse
 from huaweicloudsdkrds.v3.model.start_resize_flavor_action_request import StartResizeFlavorActionRequest
 from huaweicloudsdkrds.v3.model.start_resize_flavor_action_response import StartResizeFlavorActionResponse
+from huaweicloudsdkrds.v3.model.startup_instance_request import StartupInstanceRequest
+from huaweicloudsdkrds.v3.model.startup_instance_response import StartupInstanceResponse
 from huaweicloudsdkrds.v3.model.stop_database_proxy_request import StopDatabaseProxyRequest
 from huaweicloudsdkrds.v3.model.stop_database_proxy_response import StopDatabaseProxyResponse
+from huaweicloudsdkrds.v3.model.stop_instance_request import StopInstanceRequest
+from huaweicloudsdkrds.v3.model.stop_instance_response import StopInstanceResponse
 from huaweicloudsdkrds.v3.model.storage import Storage
 from huaweicloudsdkrds.v3.model.switch_ssl_request import SwitchSslRequest
 from huaweicloudsdkrds.v3.model.switch_ssl_response import SwitchSslResponse

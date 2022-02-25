@@ -27,7 +27,9 @@ class ListProjectVersionsV4ResponseBodyIterations:
         'id': 'int',
         'name': 'str',
         'begin_time': 'str',
-        'status': 'str'
+        'status': 'str',
+        'updated_time': 'int',
+        'deleted': 'bool'
     }
 
     attribute_map = {
@@ -36,10 +38,12 @@ class ListProjectVersionsV4ResponseBodyIterations:
         'id': 'id',
         'name': 'name',
         'begin_time': 'begin_time',
-        'status': 'status'
+        'status': 'status',
+        'updated_time': 'updated_time',
+        'deleted': 'deleted'
     }
 
-    def __init__(self, description=None, end_time=None, id=None, name=None, begin_time=None, status=None):
+    def __init__(self, description=None, end_time=None, id=None, name=None, begin_time=None, status=None, updated_time=None, deleted=None):
         """ListProjectVersionsV4ResponseBodyIterations - a model defined in huaweicloud sdk"""
         
         
@@ -50,6 +54,8 @@ class ListProjectVersionsV4ResponseBodyIterations:
         self._name = None
         self._begin_time = None
         self._status = None
+        self._updated_time = None
+        self._deleted = None
         self.discriminator = None
 
         if description is not None:
@@ -64,6 +70,10 @@ class ListProjectVersionsV4ResponseBodyIterations:
             self.begin_time = begin_time
         if status is not None:
             self.status = status
+        if updated_time is not None:
+            self.updated_time = updated_time
+        if deleted is not None:
+            self.deleted = deleted
 
     @property
     def description(self):
@@ -196,6 +206,50 @@ class ListProjectVersionsV4ResponseBodyIterations:
         :type: str
         """
         self._status = status
+
+    @property
+    def updated_time(self):
+        """Gets the updated_time of this ListProjectVersionsV4ResponseBodyIterations.
+
+        迭代更新时间，长整型时间戳
+
+        :return: The updated_time of this ListProjectVersionsV4ResponseBodyIterations.
+        :rtype: int
+        """
+        return self._updated_time
+
+    @updated_time.setter
+    def updated_time(self, updated_time):
+        """Sets the updated_time of this ListProjectVersionsV4ResponseBodyIterations.
+
+        迭代更新时间，长整型时间戳
+
+        :param updated_time: The updated_time of this ListProjectVersionsV4ResponseBodyIterations.
+        :type: int
+        """
+        self._updated_time = updated_time
+
+    @property
+    def deleted(self):
+        """Gets the deleted of this ListProjectVersionsV4ResponseBodyIterations.
+
+        迭代是否已经删除，false, 未删除， true已经删除
+
+        :return: The deleted of this ListProjectVersionsV4ResponseBodyIterations.
+        :rtype: bool
+        """
+        return self._deleted
+
+    @deleted.setter
+    def deleted(self, deleted):
+        """Sets the deleted of this ListProjectVersionsV4ResponseBodyIterations.
+
+        迭代是否已经删除，false, 未删除， true已经删除
+
+        :param deleted: The deleted of this ListProjectVersionsV4ResponseBodyIterations.
+        :type: bool
+        """
+        self._deleted = deleted
 
     def to_dict(self):
         """Returns the model properties as a dict"""

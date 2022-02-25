@@ -23,33 +23,38 @@ class ReportdetailItemInfo:
 
     openapi_types = {
         'custom_transactions': 'list[str]',
-        'detail_datas': 'list[DetailDataInfo]'
+        'detail_datas': 'list[DetailDataInfo]',
+        'performance': 'PerformanceInfo'
     }
 
     attribute_map = {
         'custom_transactions': 'customTransactions',
-        'detail_datas': 'detailDatas'
+        'detail_datas': 'detailDatas',
+        'performance': 'performance'
     }
 
-    def __init__(self, custom_transactions=None, detail_datas=None):
+    def __init__(self, custom_transactions=None, detail_datas=None, performance=None):
         """ReportdetailItemInfo - a model defined in huaweicloud sdk"""
         
         
 
         self._custom_transactions = None
         self._detail_datas = None
+        self._performance = None
         self.discriminator = None
 
         if custom_transactions is not None:
             self.custom_transactions = custom_transactions
         if detail_datas is not None:
             self.detail_datas = detail_datas
+        if performance is not None:
+            self.performance = performance
 
     @property
     def custom_transactions(self):
         """Gets the custom_transactions of this ReportdetailItemInfo.
 
-        customTransactions
+        自定义事务数据
 
         :return: The custom_transactions of this ReportdetailItemInfo.
         :rtype: list[str]
@@ -60,7 +65,7 @@ class ReportdetailItemInfo:
     def custom_transactions(self, custom_transactions):
         """Sets the custom_transactions of this ReportdetailItemInfo.
 
-        customTransactions
+        自定义事务数据
 
         :param custom_transactions: The custom_transactions of this ReportdetailItemInfo.
         :type: list[str]
@@ -71,7 +76,7 @@ class ReportdetailItemInfo:
     def detail_datas(self):
         """Gets the detail_datas of this ReportdetailItemInfo.
 
-        detailDatas
+        aw数据
 
         :return: The detail_datas of this ReportdetailItemInfo.
         :rtype: list[DetailDataInfo]
@@ -82,12 +87,32 @@ class ReportdetailItemInfo:
     def detail_datas(self, detail_datas):
         """Sets the detail_datas of this ReportdetailItemInfo.
 
-        detailDatas
+        aw数据
 
         :param detail_datas: The detail_datas of this ReportdetailItemInfo.
         :type: list[DetailDataInfo]
         """
         self._detail_datas = detail_datas
+
+    @property
+    def performance(self):
+        """Gets the performance of this ReportdetailItemInfo.
+
+
+        :return: The performance of this ReportdetailItemInfo.
+        :rtype: PerformanceInfo
+        """
+        return self._performance
+
+    @performance.setter
+    def performance(self, performance):
+        """Sets the performance of this ReportdetailItemInfo.
+
+
+        :param performance: The performance of this ReportdetailItemInfo.
+        :type: PerformanceInfo
+        """
+        self._performance = performance
 
     def to_dict(self):
         """Returns the model properties as a dict"""

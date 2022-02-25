@@ -310,6 +310,69 @@ class ProjectManAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_update_child_nick_names_async(self, request):
+        """更新子用户昵称
+
+        拥有te_admin角色的用户可以更新其他用户的昵称
+
+        :param BatchUpdateChildNickNamesRequest request
+        :return: BatchUpdateChildNickNamesResponse
+        """
+        return self.batch_update_child_nick_names_with_http_info(request)
+
+    def batch_update_child_nick_names_with_http_info(self, request):
+        """更新子用户昵称
+
+        拥有te_admin角色的用户可以更新其他用户的昵称
+
+        :param BatchUpdateChildNickNamesRequest request
+        :return: BatchUpdateChildNickNamesResponse
+        """
+
+        all_params = ['batch_update_child_nick_names_requestbody']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/domain/child-users',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchUpdateChildNickNamesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def check_project_name_v4_async(self, request):
         """检查项目名称是否存在
 
@@ -2321,6 +2384,73 @@ class ProjectManAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_iteration_histories_async(self, request):
+        """查看迭代历史记录
+
+        查看迭代历史记录
+
+        :param ListIterationHistoriesRequest request
+        :return: ListIterationHistoriesResponse
+        """
+        return self.list_iteration_histories_with_http_info(request)
+
+    def list_iteration_histories_with_http_info(self, request):
+        """查看迭代历史记录
+
+        查看迭代历史记录
+
+        :param ListIterationHistoriesRequest request
+        :return: ListIterationHistoriesResponse
+        """
+
+        all_params = ['iteration_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'iteration_id' in local_var_params:
+            path_params['iteration_id'] = local_var_params['iteration_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/iterations/{iteration_id}/histories',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListIterationHistoriesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_project_iterations_v4_async(self, request):
         """获取指定项目的迭代列表
 
@@ -2340,7 +2470,7 @@ class ProjectManAsyncClient(Client):
         :return: ListProjectIterationsV4Response
         """
 
-        all_params = ['project_id']
+        all_params = ['project_id', 'updated_time_interval', 'include_deleted']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2353,6 +2483,10 @@ class ProjectManAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
+        if 'updated_time_interval' in local_var_params:
+            query_params.append(('updated_time_interval', local_var_params['updated_time_interval']))
+        if 'include_deleted' in local_var_params:
+            query_params.append(('include_deleted', local_var_params['include_deleted']))
 
         header_params = {}
 

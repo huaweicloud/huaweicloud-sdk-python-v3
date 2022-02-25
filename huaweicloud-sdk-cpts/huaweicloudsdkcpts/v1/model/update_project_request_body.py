@@ -53,8 +53,7 @@ class UpdateProjectRequestBody:
         self.discriminator = None
 
         self.id = id
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
         if variables_no_file is not None:

@@ -113,7 +113,7 @@ class TempDetailInfo:
     def is_quoted(self):
         """Gets the is_quoted of this TempDetailInfo.
 
-        is_quoted
+        是否被引用
 
         :return: The is_quoted of this TempDetailInfo.
         :rtype: bool
@@ -124,7 +124,7 @@ class TempDetailInfo:
     def is_quoted(self, is_quoted):
         """Sets the is_quoted of this TempDetailInfo.
 
-        is_quoted
+        是否被引用
 
         :param is_quoted: The is_quoted of this TempDetailInfo.
         :type: bool

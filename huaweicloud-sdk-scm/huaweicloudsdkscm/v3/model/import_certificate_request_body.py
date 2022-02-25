@@ -25,17 +25,21 @@ class ImportCertificateRequestBody:
         'name': 'str',
         'certificate': 'str',
         'certificate_chain': 'str',
-        'private_key': 'str'
+        'private_key': 'str',
+        'enc_certificate': 'str',
+        'enc_private_key': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'certificate': 'certificate',
         'certificate_chain': 'certificate_chain',
-        'private_key': 'private_key'
+        'private_key': 'private_key',
+        'enc_certificate': 'enc_certificate',
+        'enc_private_key': 'enc_private_key'
     }
 
-    def __init__(self, name=None, certificate=None, certificate_chain=None, private_key=None):
+    def __init__(self, name=None, certificate=None, certificate_chain=None, private_key=None, enc_certificate=None, enc_private_key=None):
         """ImportCertificateRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -44,12 +48,18 @@ class ImportCertificateRequestBody:
         self._certificate = None
         self._certificate_chain = None
         self._private_key = None
+        self._enc_certificate = None
+        self._enc_private_key = None
         self.discriminator = None
 
         self.name = name
         self.certificate = certificate
         self.certificate_chain = certificate_chain
         self.private_key = private_key
+        if enc_certificate is not None:
+            self.enc_certificate = enc_certificate
+        if enc_private_key is not None:
+            self.enc_private_key = enc_private_key
 
     @property
     def name(self):
@@ -138,6 +148,50 @@ class ImportCertificateRequestBody:
         :type: str
         """
         self._private_key = private_key
+
+    @property
+    def enc_certificate(self):
+        """Gets the enc_certificate of this ImportCertificateRequestBody.
+
+        可选参数，国密证书的加密证书内容。书回车换行需要使用转义字符\\n或者\\r\\n替换。
+
+        :return: The enc_certificate of this ImportCertificateRequestBody.
+        :rtype: str
+        """
+        return self._enc_certificate
+
+    @enc_certificate.setter
+    def enc_certificate(self, enc_certificate):
+        """Sets the enc_certificate of this ImportCertificateRequestBody.
+
+        可选参数，国密证书的加密证书内容。书回车换行需要使用转义字符\\n或者\\r\\n替换。
+
+        :param enc_certificate: The enc_certificate of this ImportCertificateRequestBody.
+        :type: str
+        """
+        self._enc_certificate = enc_certificate
+
+    @property
+    def enc_private_key(self):
+        """Gets the enc_private_key of this ImportCertificateRequestBody.
+
+        可选参数，国密证书的加密私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。
+
+        :return: The enc_private_key of this ImportCertificateRequestBody.
+        :rtype: str
+        """
+        return self._enc_private_key
+
+    @enc_private_key.setter
+    def enc_private_key(self, enc_private_key):
+        """Sets the enc_private_key of this ImportCertificateRequestBody.
+
+        可选参数，国密证书的加密私钥。 不能上传带有口令保护的私钥，回车换行需要使用转义字符\\n或者\\r\\n替换。
+
+        :param enc_private_key: The enc_private_key of this ImportCertificateRequestBody.
+        :type: str
+        """
+        self._enc_private_key = enc_private_key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

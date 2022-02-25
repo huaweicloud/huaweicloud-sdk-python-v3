@@ -112,7 +112,7 @@ class ListScalingV2PoliciesRequest:
     def scaling_policy_type(self):
         """Gets the scaling_policy_type of this ListScalingV2PoliciesRequest.
 
-        策略类型。
+        策略类型：  - 告警策略：ALARM - 定时策略：SCHEDULED - 周期策略：RECURRENCE
 
         :return: The scaling_policy_type of this ListScalingV2PoliciesRequest.
         :rtype: str
@@ -123,7 +123,7 @@ class ListScalingV2PoliciesRequest:
     def scaling_policy_type(self, scaling_policy_type):
         """Sets the scaling_policy_type of this ListScalingV2PoliciesRequest.
 
-        策略类型。
+        策略类型：  - 告警策略：ALARM - 定时策略：SCHEDULED - 周期策略：RECURRENCE
 
         :param scaling_policy_type: The scaling_policy_type of this ListScalingV2PoliciesRequest.
         :type: str

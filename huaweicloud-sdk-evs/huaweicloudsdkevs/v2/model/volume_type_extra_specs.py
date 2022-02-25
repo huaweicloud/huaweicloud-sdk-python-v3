@@ -64,7 +64,7 @@ class VolumeTypeExtraSpecs:
     def reske_yavailability_zones(self):
         """Gets the reske_yavailability_zones of this VolumeTypeExtraSpecs.
 
-        支持当前云硬盘类型的可用区列表。
+        支持当前云硬盘类型的可用区列表，列表的元素以逗号分隔。
 
         :return: The reske_yavailability_zones of this VolumeTypeExtraSpecs.
         :rtype: str
@@ -75,7 +75,7 @@ class VolumeTypeExtraSpecs:
     def reske_yavailability_zones(self, reske_yavailability_zones):
         """Sets the reske_yavailability_zones of this VolumeTypeExtraSpecs.
 
-        支持当前云硬盘类型的可用区列表。
+        支持当前云硬盘类型的可用区列表，列表的元素以逗号分隔。
 
         :param reske_yavailability_zones: The reske_yavailability_zones of this VolumeTypeExtraSpecs.
         :type: str
@@ -108,7 +108,7 @@ class VolumeTypeExtraSpecs:
     def os_vendor_extendedsold_out_availability_zones(self):
         """Gets the os_vendor_extendedsold_out_availability_zones of this VolumeTypeExtraSpecs.
 
-        当前云硬盘类型已售罄的可用区列表。
+        当前云硬盘类型已售罄的可用区列表，列表的元素以逗号分隔。
 
         :return: The os_vendor_extendedsold_out_availability_zones of this VolumeTypeExtraSpecs.
         :rtype: str
@@ -119,7 +119,7 @@ class VolumeTypeExtraSpecs:
     def os_vendor_extendedsold_out_availability_zones(self, os_vendor_extendedsold_out_availability_zones):
         """Sets the os_vendor_extendedsold_out_availability_zones of this VolumeTypeExtraSpecs.
 
-        当前云硬盘类型已售罄的可用区列表。
+        当前云硬盘类型已售罄的可用区列表，列表的元素以逗号分隔。
 
         :param os_vendor_extendedsold_out_availability_zones: The os_vendor_extendedsold_out_availability_zones of this VolumeTypeExtraSpecs.
         :type: str

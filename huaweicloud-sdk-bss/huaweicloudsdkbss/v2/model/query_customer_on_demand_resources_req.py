@@ -264,7 +264,7 @@ class QueryCustomerOnDemandResourcesReq:
     def status(self):
         """Gets the status of this QueryCustomerOnDemandResourcesReq.
 
-        资源状态： 1：正常（已开通）3：冻结中4：变更中5：正在关闭6：已关闭
+        资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭
 
         :return: The status of this QueryCustomerOnDemandResourcesReq.
         :rtype: int
@@ -275,7 +275,7 @@ class QueryCustomerOnDemandResourcesReq:
     def status(self, status):
         """Sets the status of this QueryCustomerOnDemandResourcesReq.
 
-        资源状态： 1：正常（已开通）3：冻结中4：变更中5：正在关闭6：已关闭
+        资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭
 
         :param status: The status of this QueryCustomerOnDemandResourcesReq.
         :type: int

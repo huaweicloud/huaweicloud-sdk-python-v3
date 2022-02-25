@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ExtendClusterInstancesResp:
+class Task:
 
 
     """
@@ -23,125 +23,71 @@ class ExtendClusterInstancesResp:
 
     openapi_types = {
         'id': 'str',
-        'name': 'str',
-        'type': 'str',
-        'shard_id': 'str'
+        'name': 'str'
     }
 
     attribute_map = {
         'id': 'id',
-        'name': 'name',
-        'type': 'type',
-        'shard_id': 'shard_id'
+        'name': 'name'
     }
 
-    def __init__(self, id=None, name=None, type=None, shard_id=None):
-        """ExtendClusterInstancesResp - a model defined in huaweicloud sdk"""
+    def __init__(self, id=None, name=None):
+        """Task - a model defined in huaweicloud sdk"""
         
         
 
         self._id = None
         self._name = None
-        self._type = None
-        self._shard_id = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if name is not None:
             self.name = name
-        if type is not None:
-            self.type = type
-        if shard_id is not None:
-            self.shard_id = shard_id
 
     @property
     def id(self):
-        """Gets the id of this ExtendClusterInstancesResp.
+        """Gets the id of this Task.
 
-        实例ID。
+        任务id
 
-        :return: The id of this ExtendClusterInstancesResp.
+        :return: The id of this Task.
         :rtype: str
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExtendClusterInstancesResp.
+        """Sets the id of this Task.
 
-        实例ID。
+        任务id
 
-        :param id: The id of this ExtendClusterInstancesResp.
+        :param id: The id of this Task.
         :type: str
         """
         self._id = id
 
     @property
     def name(self):
-        """Gets the name of this ExtendClusterInstancesResp.
+        """Gets the name of this Task.
 
-        实例名字。
+        任务名称
 
-        :return: The name of this ExtendClusterInstancesResp.
+        :return: The name of this Task.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExtendClusterInstancesResp.
+        """Sets the name of this Task.
 
-        实例名字。
+        任务名称
 
-        :param name: The name of this ExtendClusterInstancesResp.
+        :param name: The name of this Task.
         :type: str
         """
         self._name = name
-
-    @property
-    def type(self):
-        """Gets the type of this ExtendClusterInstancesResp.
-
-        实例类型。
-
-        :return: The type of this ExtendClusterInstancesResp.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this ExtendClusterInstancesResp.
-
-        实例类型。
-
-        :param type: The type of this ExtendClusterInstancesResp.
-        :type: str
-        """
-        self._type = type
-
-    @property
-    def shard_id(self):
-        """Gets the shard_id of this ExtendClusterInstancesResp.
-
-        实例组名。
-
-        :return: The shard_id of this ExtendClusterInstancesResp.
-        :rtype: str
-        """
-        return self._shard_id
-
-    @shard_id.setter
-    def shard_id(self, shard_id):
-        """Sets the shard_id of this ExtendClusterInstancesResp.
-
-        实例组名。
-
-        :param shard_id: The shard_id of this ExtendClusterInstancesResp.
-        :type: str
-        """
-        self._shard_id = shard_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -185,7 +131,7 @@ class ExtendClusterInstancesResp:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ExtendClusterInstancesResp):
+        if not isinstance(other, Task):
             return False
 
         return self.__dict__ == other.__dict__

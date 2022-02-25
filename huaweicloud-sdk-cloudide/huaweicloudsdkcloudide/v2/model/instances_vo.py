@@ -309,7 +309,7 @@ class InstancesVO:
     def domain_name(self):
         """Gets the domain_name of this InstancesVO.
 
-        组织名
+        租户名
 
         :return: The domain_name of this InstancesVO.
         :rtype: str
@@ -320,7 +320,7 @@ class InstancesVO:
     def domain_name(self, domain_name):
         """Sets the domain_name of this InstancesVO.
 
-        组织名
+        租户名
 
         :param domain_name: The domain_name of this InstancesVO.
         :type: str
@@ -441,7 +441,7 @@ class InstancesVO:
     def organization_id(self):
         """Gets the organization_id of this InstancesVO.
 
-        组织id（对应华为云帐号的domainId）
+        租户id（对应华为云帐号的domainId）
 
         :return: The organization_id of this InstancesVO.
         :rtype: str
@@ -452,7 +452,7 @@ class InstancesVO:
     def organization_id(self, organization_id):
         """Sets the organization_id of this InstancesVO.
 
-        组织id（对应华为云帐号的domainId）
+        租户id（对应华为云帐号的domainId）
 
         :param organization_id: The organization_id of this InstancesVO.
         :type: str

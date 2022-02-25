@@ -22,8 +22,8 @@ class TpsBrokens:
     sensitive_list = []
 
     openapi_types = {
-        'average': 'list[int]',
-        'tps': 'list[int]'
+        'average': 'list[float]',
+        'tps': 'list[float]'
     }
 
     attribute_map = {
@@ -49,10 +49,10 @@ class TpsBrokens:
     def average(self):
         """Gets the average of this TpsBrokens.
 
-        average
+        平均响应时间
 
         :return: The average of this TpsBrokens.
-        :rtype: list[int]
+        :rtype: list[float]
         """
         return self._average
 
@@ -60,10 +60,10 @@ class TpsBrokens:
     def average(self, average):
         """Sets the average of this TpsBrokens.
 
-        average
+        平均响应时间
 
         :param average: The average of this TpsBrokens.
-        :type: list[int]
+        :type: list[float]
         """
         self._average = average
 
@@ -74,7 +74,7 @@ class TpsBrokens:
         tps
 
         :return: The tps of this TpsBrokens.
-        :rtype: list[int]
+        :rtype: list[float]
         """
         return self._tps
 
@@ -85,7 +85,7 @@ class TpsBrokens:
         tps
 
         :param tps: The tps of this TpsBrokens.
-        :type: list[int]
+        :type: list[float]
         """
         self._tps = tps
 

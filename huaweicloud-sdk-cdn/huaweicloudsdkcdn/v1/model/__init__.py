@@ -12,6 +12,7 @@ from huaweicloudsdkcdn.v1.model.compress_request import CompressRequest
 from huaweicloudsdkcdn.v1.model.compress_response import CompressResponse
 from huaweicloudsdkcdn.v1.model.compress_rules import CompressRules
 from huaweicloudsdkcdn.v1.model.configs import Configs
+from huaweicloudsdkcdn.v1.model.configs_get_body import ConfigsGetBody
 from huaweicloudsdkcdn.v1.model.create_domain_request import CreateDomainRequest
 from huaweicloudsdkcdn.v1.model.create_domain_request_body import CreateDomainRequestBody
 from huaweicloudsdkcdn.v1.model.create_domain_response import CreateDomainResponse
@@ -38,9 +39,11 @@ from huaweicloudsdkcdn.v1.model.follow302_status_request import Follow302StatusR
 from huaweicloudsdkcdn.v1.model.force_redirect import ForceRedirect
 from huaweicloudsdkcdn.v1.model.header_body import HeaderBody
 from huaweicloudsdkcdn.v1.model.header_map import HeaderMap
+from huaweicloudsdkcdn.v1.model.http_get_body import HttpGetBody
 from huaweicloudsdkcdn.v1.model.http_info_request import HttpInfoRequest
 from huaweicloudsdkcdn.v1.model.http_info_request_body import HttpInfoRequestBody
 from huaweicloudsdkcdn.v1.model.http_info_response_body import HttpInfoResponseBody
+from huaweicloudsdkcdn.v1.model.http_put_body import HttpPutBody
 from huaweicloudsdkcdn.v1.model.http_response_header import HttpResponseHeader
 from huaweicloudsdkcdn.v1.model.https_detail import HttpsDetail
 from huaweicloudsdkcdn.v1.model.list_domains_request import ListDomainsRequest
@@ -71,10 +74,14 @@ from huaweicloudsdkcdn.v1.model.show_certificates_https_info_request import Show
 from huaweicloudsdkcdn.v1.model.show_certificates_https_info_response import ShowCertificatesHttpsInfoResponse
 from huaweicloudsdkcdn.v1.model.show_domain_detail_request import ShowDomainDetailRequest
 from huaweicloudsdkcdn.v1.model.show_domain_detail_response import ShowDomainDetailResponse
+from huaweicloudsdkcdn.v1.model.show_domain_full_config_request import ShowDomainFullConfigRequest
+from huaweicloudsdkcdn.v1.model.show_domain_full_config_response import ShowDomainFullConfigResponse
 from huaweicloudsdkcdn.v1.model.show_domain_item_details_request import ShowDomainItemDetailsRequest
 from huaweicloudsdkcdn.v1.model.show_domain_item_details_response import ShowDomainItemDetailsResponse
 from huaweicloudsdkcdn.v1.model.show_domain_item_location_details_request import ShowDomainItemLocationDetailsRequest
 from huaweicloudsdkcdn.v1.model.show_domain_item_location_details_response import ShowDomainItemLocationDetailsResponse
+from huaweicloudsdkcdn.v1.model.show_domain_location_stats_request import ShowDomainLocationStatsRequest
+from huaweicloudsdkcdn.v1.model.show_domain_location_stats_response import ShowDomainLocationStatsResponse
 from huaweicloudsdkcdn.v1.model.show_domain_stats_request import ShowDomainStatsRequest
 from huaweicloudsdkcdn.v1.model.show_domain_stats_response import ShowDomainStatsResponse
 from huaweicloudsdkcdn.v1.model.show_history_task_details_request import ShowHistoryTaskDetailsRequest
@@ -130,4 +137,5 @@ from huaweicloudsdkcdn.v1.model.update_refer_response import UpdateReferResponse
 from huaweicloudsdkcdn.v1.model.update_response_header_request import UpdateResponseHeaderRequest
 from huaweicloudsdkcdn.v1.model.update_response_header_response import UpdateResponseHeaderResponse
 from huaweicloudsdkcdn.v1.model.url_auth import UrlAuth
+from huaweicloudsdkcdn.v1.model.url_auth_get_body import UrlAuthGetBody
 from huaweicloudsdkcdn.v1.model.url_object import UrlObject

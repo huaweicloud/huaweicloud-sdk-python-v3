@@ -22,22 +22,27 @@ class DeleteAssetsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'asset_id': 'list[str]'
+        'asset_id': 'list[str]',
+        'delete_type': 'str'
     }
 
     attribute_map = {
-        'asset_id': 'asset_id'
+        'asset_id': 'asset_id',
+        'delete_type': 'delete_type'
     }
 
-    def __init__(self, asset_id=None):
+    def __init__(self, asset_id=None, delete_type=None):
         """DeleteAssetsRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._asset_id = None
+        self._delete_type = None
         self.discriminator = None
 
         self.asset_id = asset_id
+        if delete_type is not None:
+            self.delete_type = delete_type
 
     @property
     def asset_id(self):
@@ -60,6 +65,28 @@ class DeleteAssetsRequest:
         :type: list[str]
         """
         self._asset_id = asset_id
+
+    @property
+    def delete_type(self):
+        """Gets the delete_type of this DeleteAssetsRequest.
+
+        删除类型，当值为origin时只删除源文件，保留转码后文件。
+
+        :return: The delete_type of this DeleteAssetsRequest.
+        :rtype: str
+        """
+        return self._delete_type
+
+    @delete_type.setter
+    def delete_type(self, delete_type):
+        """Sets the delete_type of this DeleteAssetsRequest.
+
+        删除类型，当值为origin时只删除源文件，保留转码后文件。
+
+        :param delete_type: The delete_type of this DeleteAssetsRequest.
+        :type: str
+        """
+        self._delete_type = delete_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

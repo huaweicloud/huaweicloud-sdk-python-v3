@@ -25,17 +25,19 @@ class CreateVariableRequestBody:
         'id': 'int',
         'name': 'str',
         'variable_type': 'int',
-        'variable': 'list[object]'
+        'variable': 'list[object]',
+        'is_quoted': 'bool'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
         'variable_type': 'variable_type',
-        'variable': 'variable'
+        'variable': 'variable',
+        'is_quoted': 'is_quoted'
     }
 
-    def __init__(self, id=None, name=None, variable_type=None, variable=None):
+    def __init__(self, id=None, name=None, variable_type=None, variable=None, is_quoted=None):
         """CreateVariableRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -44,12 +46,14 @@ class CreateVariableRequestBody:
         self._name = None
         self._variable_type = None
         self._variable = None
+        self._is_quoted = None
         self.discriminator = None
 
         self.id = id
         self.name = name
         self.variable_type = variable_type
         self.variable = variable
+        self.is_quoted = is_quoted
 
     @property
     def id(self):
@@ -138,6 +142,28 @@ class CreateVariableRequestBody:
         :type: list[object]
         """
         self._variable = variable
+
+    @property
+    def is_quoted(self):
+        """Gets the is_quoted of this CreateVariableRequestBody.
+
+        是否被引用
+
+        :return: The is_quoted of this CreateVariableRequestBody.
+        :rtype: bool
+        """
+        return self._is_quoted
+
+    @is_quoted.setter
+    def is_quoted(self, is_quoted):
+        """Sets the is_quoted of this CreateVariableRequestBody.
+
+        是否被引用
+
+        :param is_quoted: The is_quoted of this CreateVariableRequestBody.
+        :type: bool
+        """
+        self._is_quoted = is_quoted
 
     def to_dict(self):
         """Returns the model properties as a dict"""

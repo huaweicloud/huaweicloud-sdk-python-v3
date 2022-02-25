@@ -22,23 +22,28 @@ class ClusterDetailInstanceFlavor:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str'
+        'id': 'str',
+        'links': 'list[ClusterLinks]'
     }
 
     attribute_map = {
-        'id': 'id'
+        'id': 'id',
+        'links': 'links'
     }
 
-    def __init__(self, id=None):
+    def __init__(self, id=None, links=None):
         """ClusterDetailInstanceFlavor - a model defined in huaweicloud sdk"""
         
         
 
         self._id = None
+        self._links = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
+        if links is not None:
+            self.links = links
 
     @property
     def id(self):
@@ -61,6 +66,28 @@ class ClusterDetailInstanceFlavor:
         :type: str
         """
         self._id = id
+
+    @property
+    def links(self):
+        """Gets the links of this ClusterDetailInstanceFlavor.
+
+        链接信息
+
+        :return: The links of this ClusterDetailInstanceFlavor.
+        :rtype: list[ClusterLinks]
+        """
+        return self._links
+
+    @links.setter
+    def links(self, links):
+        """Sets the links of this ClusterDetailInstanceFlavor.
+
+        链接信息
+
+        :param links: The links of this ClusterDetailInstanceFlavor.
+        :type: list[ClusterLinks]
+        """
+        self._links = links
 
     def to_dict(self):
         """Returns the model properties as a dict"""

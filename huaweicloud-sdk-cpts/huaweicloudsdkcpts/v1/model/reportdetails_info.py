@@ -59,7 +59,7 @@ class ReportdetailsInfo:
     def data(self):
         """Gets the data of this ReportdetailsInfo.
 
-        data
+        表格数据
 
         :return: The data of this ReportdetailsInfo.
         :rtype: list[ReportdetailItemInfo]
@@ -70,7 +70,7 @@ class ReportdetailsInfo:
     def data(self, data):
         """Sets the data of this ReportdetailsInfo.
 
-        data
+        表格数据
 
         :param data: The data of this ReportdetailsInfo.
         :type: list[ReportdetailItemInfo]
@@ -81,7 +81,7 @@ class ReportdetailsInfo:
     def page_index(self):
         """Gets the page_index of this ReportdetailsInfo.
 
-        pageIndex
+        页码
 
         :return: The page_index of this ReportdetailsInfo.
         :rtype: int
@@ -92,7 +92,7 @@ class ReportdetailsInfo:
     def page_index(self, page_index):
         """Sets the page_index of this ReportdetailsInfo.
 
-        pageIndex
+        页码
 
         :param page_index: The page_index of this ReportdetailsInfo.
         :type: int
@@ -103,7 +103,7 @@ class ReportdetailsInfo:
     def page_size(self):
         """Gets the page_size of this ReportdetailsInfo.
 
-        pageSize
+        每页大小
 
         :return: The page_size of this ReportdetailsInfo.
         :rtype: int
@@ -114,7 +114,7 @@ class ReportdetailsInfo:
     def page_size(self, page_size):
         """Sets the page_size of this ReportdetailsInfo.
 
-        pageSize
+        每页大小
 
         :param page_size: The page_size of this ReportdetailsInfo.
         :type: int
@@ -125,7 +125,7 @@ class ReportdetailsInfo:
     def total(self):
         """Gets the total of this ReportdetailsInfo.
 
-        total
+        总记录数
 
         :return: The total of this ReportdetailsInfo.
         :rtype: int
@@ -136,7 +136,7 @@ class ReportdetailsInfo:
     def total(self, total):
         """Sets the total of this ReportdetailsInfo.
 
-        total
+        总记录数
 
         :param total: The total of this ReportdetailsInfo.
         :type: int

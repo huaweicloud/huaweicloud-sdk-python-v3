@@ -28,20 +28,22 @@ class ProjectsSet:
         'id': 'int',
         'name': 'str',
         'status': 'int',
-        'group': 'str'
+        'external_params': 'object',
+        'variables_no_file': 'list[str]'
     }
 
     attribute_map = {
-        'create_time': 'create_time',
-        'update_time': 'update_time',
+        'create_time': 'CreateTime',
+        'update_time': 'UpdateTime',
         'description': 'description',
         'id': 'id',
         'name': 'name',
         'status': 'status',
-        'group': 'group'
+        'external_params': 'external_params',
+        'variables_no_file': 'variables_no_file'
     }
 
-    def __init__(self, create_time=None, update_time=None, description=None, id=None, name=None, status=None, group=None):
+    def __init__(self, create_time=None, update_time=None, description=None, id=None, name=None, status=None, external_params=None, variables_no_file=None):
         """ProjectsSet - a model defined in huaweicloud sdk"""
         
         
@@ -52,7 +54,8 @@ class ProjectsSet:
         self._id = None
         self._name = None
         self._status = None
-        self._group = None
+        self._external_params = None
+        self._variables_no_file = None
         self.discriminator = None
 
         if create_time is not None:
@@ -67,8 +70,10 @@ class ProjectsSet:
             self.name = name
         if status is not None:
             self.status = status
-        if group is not None:
-            self.group = group
+        if external_params is not None:
+            self.external_params = external_params
+        if variables_no_file is not None:
+            self.variables_no_file = variables_no_file
 
     @property
     def create_time(self):
@@ -203,26 +208,48 @@ class ProjectsSet:
         self._status = status
 
     @property
-    def group(self):
-        """Gets the group of this ProjectsSet.
+    def external_params(self):
+        """Gets the external_params of this ProjectsSet.
 
-        工程所属组
+        外部参数
 
-        :return: The group of this ProjectsSet.
-        :rtype: str
+        :return: The external_params of this ProjectsSet.
+        :rtype: object
         """
-        return self._group
+        return self._external_params
 
-    @group.setter
-    def group(self, group):
-        """Sets the group of this ProjectsSet.
+    @external_params.setter
+    def external_params(self, external_params):
+        """Sets the external_params of this ProjectsSet.
 
-        工程所属组
+        外部参数
 
-        :param group: The group of this ProjectsSet.
-        :type: str
+        :param external_params: The external_params of this ProjectsSet.
+        :type: object
         """
-        self._group = group
+        self._external_params = external_params
+
+    @property
+    def variables_no_file(self):
+        """Gets the variables_no_file of this ProjectsSet.
+
+        文件变量
+
+        :return: The variables_no_file of this ProjectsSet.
+        :rtype: list[str]
+        """
+        return self._variables_no_file
+
+    @variables_no_file.setter
+    def variables_no_file(self, variables_no_file):
+        """Sets the variables_no_file of this ProjectsSet.
+
+        文件变量
+
+        :param variables_no_file: The variables_no_file of this ProjectsSet.
+        :type: list[str]
+        """
+        self._variables_no_file = variables_no_file
 
     def to_dict(self):
         """Returns the model properties as a dict"""

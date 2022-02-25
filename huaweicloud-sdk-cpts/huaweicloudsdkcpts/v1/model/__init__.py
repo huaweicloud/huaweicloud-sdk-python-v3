@@ -49,6 +49,7 @@ from huaweicloudsdkcpts.v1.model.list_variables_request import ListVariablesRequ
 from huaweicloudsdkcpts.v1.model.list_variables_response import ListVariablesResponse
 from huaweicloudsdkcpts.v1.model.logic_controller import LogicController
 from huaweicloudsdkcpts.v1.model.network_info import NetworkInfo
+from huaweicloudsdkcpts.v1.model.performance_info import PerformanceInfo
 from huaweicloudsdkcpts.v1.model.project import Project
 from huaweicloudsdkcpts.v1.model.project_resp import ProjectResp
 from huaweicloudsdkcpts.v1.model.projects_set import ProjectsSet
@@ -83,6 +84,7 @@ from huaweicloudsdkcpts.v1.model.temp_content_info import TempContentInfo
 from huaweicloudsdkcpts.v1.model.temp_detail_info import TempDetailInfo
 from huaweicloudsdkcpts.v1.model.temp_info import TempInfo
 from huaweicloudsdkcpts.v1.model.temp_name import TempName
+from huaweicloudsdkcpts.v1.model.temp_running_data import TempRunningData
 from huaweicloudsdkcpts.v1.model.tps_brokens import TpsBrokens
 from huaweicloudsdkcpts.v1.model.update_case_request import UpdateCaseRequest
 from huaweicloudsdkcpts.v1.model.update_case_request_body import UpdateCaseRequestBody

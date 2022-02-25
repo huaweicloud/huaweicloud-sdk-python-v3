@@ -49,7 +49,7 @@ class Encryption:
     def type(self):
         """Gets the type of this Encryption.
 
-        取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。 若局点没有kms服务，请填“default”。
+        取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。若局点没有kms服务，请填“default”。
 
         :return: The type of this Encryption.
         :rtype: str
@@ -60,7 +60,7 @@ class Encryption:
     def type(self, type):
         """Sets the type of this Encryption.
 
-        取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。 若局点没有kms服务，请填“default”。
+        取值范围：“kms”或“default”。 - “default”为默认加密方式，适用于没有kms服务的局点。 - “kms”为采用kms服务加密方式。若局点没有kms服务，请填“default”。
 
         :param type: The type of this Encryption.
         :type: str

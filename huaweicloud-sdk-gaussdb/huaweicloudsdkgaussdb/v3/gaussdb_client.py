@@ -1416,6 +1416,71 @@ class GaussDBClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_audit_log(self, request):
+        """查询审计日志开关状态
+
+        查询审计日志开关状态
+
+        :param ShowAuditLogRequest request
+        :return: ShowAuditLogResponse
+        """
+        return self.show_audit_log_with_http_info(request)
+
+    def show_audit_log_with_http_info(self, request):
+        """查询审计日志开关状态
+
+        查询审计日志开关状态
+
+        :param ShowAuditLogRequest request
+        :return: ShowAuditLogResponse
+        """
+
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instance/{instance_id}/audit-log/switch-status',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowAuditLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_gauss_my_sql_backup_list(self, request):
         """查询备份列表
 
@@ -2147,6 +2212,73 @@ class GaussDBClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowInstanceMonitorExtendResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_audit_log(self, request):
+        """开启或者关闭审计日志
+
+        开启或者关闭审计日志
+
+        :param UpdateAuditLogRequest request
+        :return: UpdateAuditLogResponse
+        """
+        return self.update_audit_log_with_http_info(request)
+
+    def update_audit_log_with_http_info(self, request):
+        """开启或者关闭审计日志
+
+        开启或者关闭审计日志
+
+        :param UpdateAuditLogRequest request
+        :return: UpdateAuditLogResponse
+        """
+
+        all_params = ['instance_id', 'operate_audit_log_request_v3_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instance/{instance_id}/audit-log/switch',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateAuditLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

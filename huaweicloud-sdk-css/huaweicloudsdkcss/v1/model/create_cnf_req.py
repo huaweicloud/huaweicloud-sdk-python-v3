@@ -51,7 +51,7 @@ class CreateCnfReq:
     def name(self):
         """Gets the name of this CreateCnfReq.
 
-        名称。
+        配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头
 
         :return: The name of this CreateCnfReq.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateCnfReq:
     def name(self, name):
         """Sets the name of this CreateCnfReq.
 
-        名称。
+        配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头
 
         :param name: The name of this CreateCnfReq.
         :type: str

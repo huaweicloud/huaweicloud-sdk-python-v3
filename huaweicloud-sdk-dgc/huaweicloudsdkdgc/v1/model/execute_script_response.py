@@ -22,43 +22,43 @@ class ExecuteScriptResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str'
+        'instance_id': 'str'
     }
 
     attribute_map = {
-        'job_id': 'jobId'
+        'instance_id': 'instanceId'
     }
 
-    def __init__(self, job_id=None):
+    def __init__(self, instance_id=None):
         """ExecuteScriptResponse - a model defined in huaweicloud sdk"""
         
         super(ExecuteScriptResponse, self).__init__()
 
-        self._job_id = None
+        self._instance_id = None
         self.discriminator = None
 
-        if job_id is not None:
-            self.job_id = job_id
+        if instance_id is not None:
+            self.instance_id = instance_id
 
     @property
-    def job_id(self):
-        """Gets the job_id of this ExecuteScriptResponse.
+    def instance_id(self):
+        """Gets the instance_id of this ExecuteScriptResponse.
 
 
-        :return: The job_id of this ExecuteScriptResponse.
+        :return: The instance_id of this ExecuteScriptResponse.
         :rtype: str
         """
-        return self._job_id
+        return self._instance_id
 
-    @job_id.setter
-    def job_id(self, job_id):
-        """Sets the job_id of this ExecuteScriptResponse.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ExecuteScriptResponse.
 
 
-        :param job_id: The job_id of this ExecuteScriptResponse.
+        :param instance_id: The instance_id of this ExecuteScriptResponse.
         :type: str
         """
-        self._job_id = job_id
+        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -124,7 +124,7 @@ class ReportInfo:
     def rtproportion(self):
         """Gets the rtproportion of this ReportInfo.
 
-        rtproportion
+        响应时间分布
 
         :return: The rtproportion of this ReportInfo.
         :rtype: str
@@ -135,7 +135,7 @@ class ReportInfo:
     def rtproportion(self, rtproportion):
         """Sets the rtproportion of this ReportInfo.
 
-        rtproportion
+        响应时间分布
 
         :param rtproportion: The rtproportion of this ReportInfo.
         :type: str

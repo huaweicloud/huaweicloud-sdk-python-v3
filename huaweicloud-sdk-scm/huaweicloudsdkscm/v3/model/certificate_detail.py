@@ -25,6 +25,9 @@ class CertificateDetail:
         'id': 'str',
         'name': 'str',
         'domain': 'str',
+        'sans': 'str',
+        'signature_algorithm': 'str',
+        'deploy_support': 'bool',
         'type': 'str',
         'brand': 'str',
         'expire_time': 'str',
@@ -40,6 +43,9 @@ class CertificateDetail:
         'id': 'id',
         'name': 'name',
         'domain': 'domain',
+        'sans': 'sans',
+        'signature_algorithm': 'signature_algorithm',
+        'deploy_support': 'deploy_support',
         'type': 'type',
         'brand': 'brand',
         'expire_time': 'expire_time',
@@ -51,7 +57,7 @@ class CertificateDetail:
         'description': 'description'
     }
 
-    def __init__(self, id=None, name=None, domain=None, type=None, brand=None, expire_time=None, domain_type=None, validity_period=None, status=None, domain_count=None, wildcard_count=None, description=None):
+    def __init__(self, id=None, name=None, domain=None, sans=None, signature_algorithm=None, deploy_support=None, type=None, brand=None, expire_time=None, domain_type=None, validity_period=None, status=None, domain_count=None, wildcard_count=None, description=None):
         """CertificateDetail - a model defined in huaweicloud sdk"""
         
         
@@ -59,6 +65,9 @@ class CertificateDetail:
         self._id = None
         self._name = None
         self._domain = None
+        self._sans = None
+        self._signature_algorithm = None
+        self._deploy_support = None
         self._type = None
         self._brand = None
         self._expire_time = None
@@ -76,6 +85,12 @@ class CertificateDetail:
             self.name = name
         if domain is not None:
             self.domain = domain
+        if sans is not None:
+            self.sans = sans
+        if signature_algorithm is not None:
+            self.signature_algorithm = signature_algorithm
+        if deploy_support is not None:
+            self.deploy_support = deploy_support
         if type is not None:
             self.type = type
         if brand is not None:
@@ -160,6 +175,72 @@ class CertificateDetail:
         :type: str
         """
         self._domain = domain
+
+    @property
+    def sans(self):
+        """Gets the sans of this CertificateDetail.
+
+        多域名证书绑定的附加域名。
+
+        :return: The sans of this CertificateDetail.
+        :rtype: str
+        """
+        return self._sans
+
+    @sans.setter
+    def sans(self, sans):
+        """Sets the sans of this CertificateDetail.
+
+        多域名证书绑定的附加域名。
+
+        :param sans: The sans of this CertificateDetail.
+        :type: str
+        """
+        self._sans = sans
+
+    @property
+    def signature_algorithm(self):
+        """Gets the signature_algorithm of this CertificateDetail.
+
+        签名算法。
+
+        :return: The signature_algorithm of this CertificateDetail.
+        :rtype: str
+        """
+        return self._signature_algorithm
+
+    @signature_algorithm.setter
+    def signature_algorithm(self, signature_algorithm):
+        """Sets the signature_algorithm of this CertificateDetail.
+
+        签名算法。
+
+        :param signature_algorithm: The signature_algorithm of this CertificateDetail.
+        :type: str
+        """
+        self._signature_algorithm = signature_algorithm
+
+    @property
+    def deploy_support(self):
+        """Gets the deploy_support of this CertificateDetail.
+
+        是否支持部署。
+
+        :return: The deploy_support of this CertificateDetail.
+        :rtype: bool
+        """
+        return self._deploy_support
+
+    @deploy_support.setter
+    def deploy_support(self, deploy_support):
+        """Sets the deploy_support of this CertificateDetail.
+
+        是否支持部署。
+
+        :param deploy_support: The deploy_support of this CertificateDetail.
+        :type: bool
+        """
+        self._deploy_support = deploy_support
 
     @property
     def type(self):

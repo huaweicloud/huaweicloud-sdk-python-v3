@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class MetaData:
+class UpdateShrinkNodesRequest:
 
 
     """
@@ -22,42 +22,69 @@ class MetaData:
     sensitive_list = []
 
     openapi_types = {
-        'metadata': 'KeyValue'
+        'cluster_id': 'str',
+        'body': 'ShrinkNodesReq'
     }
 
     attribute_map = {
-        'metadata': 'metadata'
+        'cluster_id': 'cluster_id',
+        'body': 'body'
     }
 
-    def __init__(self, metadata=None):
-        """MetaData - a model defined in huaweicloud sdk"""
+    def __init__(self, cluster_id=None, body=None):
+        """UpdateShrinkNodesRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._metadata = None
+        self._cluster_id = None
+        self._body = None
         self.discriminator = None
 
-        self.metadata = metadata
+        self.cluster_id = cluster_id
+        if body is not None:
+            self.body = body
 
     @property
-    def metadata(self):
-        """Gets the metadata of this MetaData.
+    def cluster_id(self):
+        """Gets the cluster_id of this UpdateShrinkNodesRequest.
 
+        指定待更改的集群ID。
 
-        :return: The metadata of this MetaData.
-        :rtype: KeyValue
+        :return: The cluster_id of this UpdateShrinkNodesRequest.
+        :rtype: str
         """
-        return self._metadata
+        return self._cluster_id
 
-    @metadata.setter
-    def metadata(self, metadata):
-        """Sets the metadata of this MetaData.
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        """Sets the cluster_id of this UpdateShrinkNodesRequest.
 
+        指定待更改的集群ID。
 
-        :param metadata: The metadata of this MetaData.
-        :type: KeyValue
+        :param cluster_id: The cluster_id of this UpdateShrinkNodesRequest.
+        :type: str
         """
-        self._metadata = metadata
+        self._cluster_id = cluster_id
+
+    @property
+    def body(self):
+        """Gets the body of this UpdateShrinkNodesRequest.
+
+
+        :return: The body of this UpdateShrinkNodesRequest.
+        :rtype: ShrinkNodesReq
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this UpdateShrinkNodesRequest.
+
+
+        :param body: The body of this UpdateShrinkNodesRequest.
+        :type: ShrinkNodesReq
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -101,7 +128,7 @@ class MetaData:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, MetaData):
+        if not isinstance(other, UpdateShrinkNodesRequest):
             return False
 
         return self.__dict__ == other.__dict__

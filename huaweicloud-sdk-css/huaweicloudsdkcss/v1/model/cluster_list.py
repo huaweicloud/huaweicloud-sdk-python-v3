@@ -480,6 +480,7 @@ class ClusterList:
     def period(self):
         """Gets the period of this ClusterList.
 
+        是为包周期集群。
 
         :return: The period of this ClusterList.
         :rtype: bool
@@ -490,6 +491,7 @@ class ClusterList:
     def period(self, period):
         """Sets the period of this ClusterList.
 
+        是为包周期集群。
 
         :param period: The period of this ClusterList.
         :type: bool
@@ -500,7 +502,7 @@ class ClusterList:
     def https_enable(self):
         """Gets the https_enable of this ClusterList.
 
-        是否开启https访问
+        是否开启https访问。
 
         :return: The https_enable of this ClusterList.
         :rtype: bool
@@ -511,7 +513,7 @@ class ClusterList:
     def https_enable(self, https_enable):
         """Sets the https_enable of this ClusterList.
 
-        是否开启https访问
+        是否开启https访问。
 
         :param https_enable: The https_enable of this ClusterList.
         :type: bool

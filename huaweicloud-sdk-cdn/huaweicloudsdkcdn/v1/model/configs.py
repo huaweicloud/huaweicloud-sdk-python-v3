@@ -24,16 +24,18 @@ class Configs:
     openapi_types = {
         'origin_request_header': 'list[OriginRequestHeader]',
         'http_response_header': 'list[HttpResponseHeader]',
-        'url_auth': 'UrlAuth'
+        'url_auth': 'UrlAuth',
+        'https': 'HttpPutBody'
     }
 
     attribute_map = {
         'origin_request_header': 'origin_request_header',
         'http_response_header': 'http_response_header',
-        'url_auth': 'url_auth'
+        'url_auth': 'url_auth',
+        'https': 'https'
     }
 
-    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None):
+    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None):
         """Configs - a model defined in huaweicloud sdk"""
         
         
@@ -41,6 +43,7 @@ class Configs:
         self._origin_request_header = None
         self._http_response_header = None
         self._url_auth = None
+        self._https = None
         self.discriminator = None
 
         if origin_request_header is not None:
@@ -49,6 +52,8 @@ class Configs:
             self.http_response_header = http_response_header
         if url_auth is not None:
             self.url_auth = url_auth
+        if https is not None:
+            self.https = https
 
     @property
     def origin_request_header(self):
@@ -113,6 +118,26 @@ class Configs:
         :type: UrlAuth
         """
         self._url_auth = url_auth
+
+    @property
+    def https(self):
+        """Gets the https of this Configs.
+
+
+        :return: The https of this Configs.
+        :rtype: HttpPutBody
+        """
+        return self._https
+
+    @https.setter
+    def https(self, https):
+        """Sets the https of this Configs.
+
+
+        :param https: The https of this Configs.
+        :type: HttpPutBody
+        """
+        self._https = https
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,7 +22,7 @@ class ExecuteScriptReq:
     sensitive_list = []
 
     openapi_types = {
-        'params': 'str'
+        'params': 'object'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ExecuteScriptReq:
         脚本的执行参数
 
         :return: The params of this ExecuteScriptReq.
-        :rtype: str
+        :rtype: object
         """
         return self._params
 
@@ -58,7 +58,7 @@ class ExecuteScriptReq:
         脚本的执行参数
 
         :param params: The params of this ExecuteScriptReq.
-        :type: str
+        :type: object
         """
         self._params = params
 

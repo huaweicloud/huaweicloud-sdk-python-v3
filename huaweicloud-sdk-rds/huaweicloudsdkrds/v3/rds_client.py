@@ -2222,6 +2222,75 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_slow_log_file(self, request):
+        """查询慢日志文件列表
+
+        查询慢日志文件列表。 调用该接口取到慢日志文件名后，可以调用接口/v3/{project_id}/instances/{instance_id}/slowlog-download 获取慢日志文件下载链接
+
+        :param ListSlowLogFileRequest request
+        :return: ListSlowLogFileResponse
+        """
+        return self.list_slow_log_file_with_http_info(request)
+
+    def list_slow_log_file_with_http_info(self, request):
+        """查询慢日志文件列表
+
+        查询慢日志文件列表。 调用该接口取到慢日志文件名后，可以调用接口/v3/{project_id}/instances/{instance_id}/slowlog-download 获取慢日志文件下载链接
+
+        :param ListSlowLogFileRequest request
+        :return: ListSlowLogFileResponse
+        """
+
+        all_params = ['instance_id', 'x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/slowlog-files',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSlowLogFileResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_slow_logs(self, request):
         """查询数据库慢日志
 
@@ -4159,6 +4228,136 @@ class RdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='StartResizeFlavorActionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def startup_instance(self, request):
+        """开启实例
+
+        停止实例以节省费用，在停止数据库实例后，支持手动重新开启实例。
+
+        :param StartupInstanceRequest request
+        :return: StartupInstanceResponse
+        """
+        return self.startup_instance_with_http_info(request)
+
+    def startup_instance_with_http_info(self, request):
+        """开启实例
+
+        停止实例以节省费用，在停止数据库实例后，支持手动重新开启实例。
+
+        :param StartupInstanceRequest request
+        :return: StartupInstanceResponse
+        """
+
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/action/startup',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartupInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def stop_instance(self, request):
+        """停止实例
+
+        实例进行关机，通过暂时停止按需实例以节省费用，实例默认停止七天。
+
+        :param StopInstanceRequest request
+        :return: StopInstanceResponse
+        """
+        return self.stop_instance_with_http_info(request)
+
+    def stop_instance_with_http_info(self, request):
+        """停止实例
+
+        实例进行关机，通过暂时停止按需实例以节省费用，实例默认停止七天。
+
+        :param StopInstanceRequest request
+        :return: StopInstanceResponse
+        """
+
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/action/shutdown',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StopInstanceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

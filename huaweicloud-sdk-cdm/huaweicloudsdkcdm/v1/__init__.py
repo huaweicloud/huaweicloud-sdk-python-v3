@@ -24,6 +24,7 @@ from huaweicloudsdkcdm.v1.model.cdm_update_job_json_req import CdmUpdateJobJsonR
 from huaweicloudsdkcdm.v1.model.cluster_detail_instance import ClusterDetailInstance
 from huaweicloudsdkcdm.v1.model.cluster_detail_instance_flavor import ClusterDetailInstanceFlavor
 from huaweicloudsdkcdm.v1.model.cluster_detail_instance_volume import ClusterDetailInstanceVolume
+from huaweicloudsdkcdm.v1.model.cluster_instance import ClusterInstance
 from huaweicloudsdkcdm.v1.model.cluster_links import ClusterLinks
 from huaweicloudsdkcdm.v1.model.cluster_task import ClusterTask
 from huaweicloudsdkcdm.v1.model.clusters import Clusters
@@ -83,6 +84,7 @@ from huaweicloudsdkcdm.v1.model.stop_job_request import StopJobRequest
 from huaweicloudsdkcdm.v1.model.stop_job_response import StopJobResponse
 from huaweicloudsdkcdm.v1.model.submission import Submission
 from huaweicloudsdkcdm.v1.model.sys_tags import SysTags
+from huaweicloudsdkcdm.v1.model.task import Task
 from huaweicloudsdkcdm.v1.model.update_job_request import UpdateJobRequest
 from huaweicloudsdkcdm.v1.model.update_job_response import UpdateJobResponse
 from huaweicloudsdkcdm.v1.model.update_link_request import UpdateLinkRequest

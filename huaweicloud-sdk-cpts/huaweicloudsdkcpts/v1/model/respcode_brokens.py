@@ -22,13 +22,13 @@ class RespcodeBrokens:
     sensitive_list = []
 
     openapi_types = {
-        'check_point_failed': 'list[int]',
-        'error': 'list[int]',
-        'others_failed': 'list[int]',
-        'parsed_failed': 'list[int]',
-        'refused_failed': 'list[int]',
-        'success': 'list[int]',
-        'timeout': 'list[int]'
+        'check_point_failed': 'list[float]',
+        'error': 'list[float]',
+        'others_failed': 'list[float]',
+        'parsed_failed': 'list[float]',
+        'refused_failed': 'list[float]',
+        'success': 'list[float]',
+        'timeout': 'list[float]'
     }
 
     attribute_map = {
@@ -74,10 +74,10 @@ class RespcodeBrokens:
     def check_point_failed(self):
         """Gets the check_point_failed of this RespcodeBrokens.
 
-        checkPointFailed
+        校验失败
 
         :return: The check_point_failed of this RespcodeBrokens.
-        :rtype: list[int]
+        :rtype: list[float]
         """
         return self._check_point_failed
 
@@ -85,10 +85,10 @@ class RespcodeBrokens:
     def check_point_failed(self, check_point_failed):
         """Sets the check_point_failed of this RespcodeBrokens.
 
-        checkPointFailed
+        校验失败
 
         :param check_point_failed: The check_point_failed of this RespcodeBrokens.
-        :type: list[int]
+        :type: list[float]
         """
         self._check_point_failed = check_point_failed
 
@@ -96,10 +96,10 @@ class RespcodeBrokens:
     def error(self):
         """Gets the error of this RespcodeBrokens.
 
-        error
+        异常请求
 
         :return: The error of this RespcodeBrokens.
-        :rtype: list[int]
+        :rtype: list[float]
         """
         return self._error
 
@@ -107,10 +107,10 @@ class RespcodeBrokens:
     def error(self, error):
         """Sets the error of this RespcodeBrokens.
 
-        error
+        异常请求
 
         :param error: The error of this RespcodeBrokens.
-        :type: list[int]
+        :type: list[float]
         """
         self._error = error
 
@@ -118,10 +118,10 @@ class RespcodeBrokens:
     def others_failed(self):
         """Gets the others_failed of this RespcodeBrokens.
 
-        othersFailed
+        其他失败
 
         :return: The others_failed of this RespcodeBrokens.
-        :rtype: list[int]
+        :rtype: list[float]
         """
         return self._others_failed
 
@@ -129,10 +129,10 @@ class RespcodeBrokens:
     def others_failed(self, others_failed):
         """Sets the others_failed of this RespcodeBrokens.
 
-        othersFailed
+        其他失败
 
         :param others_failed: The others_failed of this RespcodeBrokens.
-        :type: list[int]
+        :type: list[float]
         """
         self._others_failed = others_failed
 
@@ -140,10 +140,10 @@ class RespcodeBrokens:
     def parsed_failed(self):
         """Gets the parsed_failed of this RespcodeBrokens.
 
-        parsedFailed
+        解析失败
 
         :return: The parsed_failed of this RespcodeBrokens.
-        :rtype: list[int]
+        :rtype: list[float]
         """
         return self._parsed_failed
 
@@ -151,10 +151,10 @@ class RespcodeBrokens:
     def parsed_failed(self, parsed_failed):
         """Sets the parsed_failed of this RespcodeBrokens.
 
-        parsedFailed
+        解析失败
 
         :param parsed_failed: The parsed_failed of this RespcodeBrokens.
-        :type: list[int]
+        :type: list[float]
         """
         self._parsed_failed = parsed_failed
 
@@ -162,10 +162,10 @@ class RespcodeBrokens:
     def refused_failed(self):
         """Gets the refused_failed of this RespcodeBrokens.
 
-        refusedFailed
+        连接被拒
 
         :return: The refused_failed of this RespcodeBrokens.
-        :rtype: list[int]
+        :rtype: list[float]
         """
         return self._refused_failed
 
@@ -173,10 +173,10 @@ class RespcodeBrokens:
     def refused_failed(self, refused_failed):
         """Sets the refused_failed of this RespcodeBrokens.
 
-        refusedFailed
+        连接被拒
 
         :param refused_failed: The refused_failed of this RespcodeBrokens.
-        :type: list[int]
+        :type: list[float]
         """
         self._refused_failed = refused_failed
 
@@ -184,10 +184,10 @@ class RespcodeBrokens:
     def success(self):
         """Gets the success of this RespcodeBrokens.
 
-        success
+        成功请求
 
         :return: The success of this RespcodeBrokens.
-        :rtype: list[int]
+        :rtype: list[float]
         """
         return self._success
 
@@ -195,10 +195,10 @@ class RespcodeBrokens:
     def success(self, success):
         """Sets the success of this RespcodeBrokens.
 
-        success
+        成功请求
 
         :param success: The success of this RespcodeBrokens.
-        :type: list[int]
+        :type: list[float]
         """
         self._success = success
 
@@ -206,10 +206,10 @@ class RespcodeBrokens:
     def timeout(self):
         """Gets the timeout of this RespcodeBrokens.
 
-        timeout
+        超时失败
 
         :return: The timeout of this RespcodeBrokens.
-        :rtype: list[int]
+        :rtype: list[float]
         """
         return self._timeout
 
@@ -217,10 +217,10 @@ class RespcodeBrokens:
     def timeout(self, timeout):
         """Sets the timeout of this RespcodeBrokens.
 
-        timeout
+        超时失败
 
         :param timeout: The timeout of this RespcodeBrokens.
-        :type: list[int]
+        :type: list[float]
         """
         self._timeout = timeout
 

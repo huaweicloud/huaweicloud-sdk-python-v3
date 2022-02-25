@@ -23,31 +23,26 @@ class AddressAndPorts:
 
     openapi_types = {
         'address': 'str',
-        'port': 'int',
-        'status': 'int'
+        'port': 'int'
     }
 
     attribute_map = {
         'address': 'address',
-        'port': 'port',
-        'status': 'status'
+        'port': 'port'
     }
 
-    def __init__(self, address=None, port=None, status=None):
+    def __init__(self, address=None, port=None):
         """AddressAndPorts - a model defined in huaweicloud sdk"""
         
         
 
         self._address = None
         self._port = None
-        self._status = None
         self.discriminator = None
 
         self.address = address
         if port is not None:
             self.port = port
-        if status is not None:
-            self.status = status
 
     @property
     def address(self):
@@ -92,28 +87,6 @@ class AddressAndPorts:
         :type: int
         """
         self._port = port
-
-    @property
-    def status(self):
-        """Gets the status of this AddressAndPorts.
-
-        联通状态
-
-        :return: The status of this AddressAndPorts.
-        :rtype: int
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this AddressAndPorts.
-
-        联通状态
-
-        :param status: The status of this AddressAndPorts.
-        :type: int
-        """
-        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

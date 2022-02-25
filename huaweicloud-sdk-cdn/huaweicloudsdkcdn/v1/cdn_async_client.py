@@ -777,6 +777,71 @@ class CdnAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_domain_full_config_async(self, request):
+        """查询域名配置接口
+
+        查询域名配置接口，支持配置回源请求头、http header配置、url鉴权
+
+        :param ShowDomainFullConfigRequest request
+        :return: ShowDomainFullConfigResponse
+        """
+        return self.show_domain_full_config_with_http_info(request)
+
+    def show_domain_full_config_with_http_info(self, request):
+        """查询域名配置接口
+
+        查询域名配置接口，支持配置回源请求头、http header配置、url鉴权
+
+        :param ShowDomainFullConfigRequest request
+        :return: ShowDomainFullConfigResponse
+        """
+
+        all_params = ['domain_name', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_name' in local_var_params:
+            path_params['domain_name'] = local_var_params['domain_name']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.1/cdn/configuration/domains/{domain_name}/configs',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDomainFullConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_domain_item_details_async(self, request):
         """批量查询域名的统计明细-按域名单独返回
 
@@ -925,26 +990,26 @@ class CdnAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_domain_stats_async(self, request):
-        """查询区域运营商统计数据
+    def show_domain_location_stats_async(self, request):
+        """查询域名统计数据-区域运营商
 
-        - 支持同时指定多个指标。 - 支持同时指定多个域名。 - 起始时间和结束时间，需要同时指定。 - 开始时间、结束时间必须传毫秒级时间戳。
+        - 支持查询90天内的数据。 - 支持多指标同时查询，不超过5个。 - 最多同时指定20个域名。 - 起始时间和结束时间需要同时指定，左闭右开，毫秒级时间戳，必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点， 返回数据可能与预期不一致。统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。 - action取值：location_detail,location_summary
 
-        :param ShowDomainStatsRequest request
-        :return: ShowDomainStatsResponse
+        :param ShowDomainLocationStatsRequest request
+        :return: ShowDomainLocationStatsResponse
         """
-        return self.show_domain_stats_with_http_info(request)
+        return self.show_domain_location_stats_with_http_info(request)
 
-    def show_domain_stats_with_http_info(self, request):
-        """查询区域运营商统计数据
+    def show_domain_location_stats_with_http_info(self, request):
+        """查询域名统计数据-区域运营商
 
-        - 支持同时指定多个指标。 - 支持同时指定多个域名。 - 起始时间和结束时间，需要同时指定。 - 开始时间、结束时间必须传毫秒级时间戳。
+        - 支持查询90天内的数据。 - 支持多指标同时查询，不超过5个。 - 最多同时指定20个域名。 - 起始时间和结束时间需要同时指定，左闭右开，毫秒级时间戳，必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点， 返回数据可能与预期不一致。统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。 - action取值：location_detail,location_summary
 
-        :param ShowDomainStatsRequest request
-        :return: ShowDomainStatsResponse
+        :param ShowDomainLocationStatsRequest request
+        :return: ShowDomainLocationStatsResponse
         """
 
-        all_params = ['action', 'start_time', 'end_time', 'domain_name', 'stat_type', 'interval', 'group_by', 'country', 'district', 'isp', 'enterprise_project_id']
+        all_params = ['action', 'start_time', 'end_time', 'domain_name', 'stat_type', 'interval', 'group_by', 'country', 'province', 'isp', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -971,10 +1036,89 @@ class CdnAsyncClient(Client):
             query_params.append(('group_by', local_var_params['group_by']))
         if 'country' in local_var_params:
             query_params.append(('country', local_var_params['country']))
-        if 'district' in local_var_params:
-            query_params.append(('district', local_var_params['district']))
+        if 'province' in local_var_params:
+            query_params.append(('province', local_var_params['province']))
         if 'isp' in local_var_params:
             query_params.append(('isp', local_var_params['isp']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/cdn/statistics/domain-location-stats',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDomainLocationStatsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_domain_stats_async(self, request):
+        """查询域名统计数据-非区域运营商
+
+        - 支持查询90天内的数据。 - 支持多指标同时查询，不超过5个。 - 最多同时指定20个域名。 - 起始时间和结束时间需要同时指定，左闭右开，毫秒级时间戳，必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。 - action取值：detail,summary
+
+        :param ShowDomainStatsRequest request
+        :return: ShowDomainStatsResponse
+        """
+        return self.show_domain_stats_with_http_info(request)
+
+    def show_domain_stats_with_http_info(self, request):
+        """查询域名统计数据-非区域运营商
+
+        - 支持查询90天内的数据。 - 支持多指标同时查询，不超过5个。 - 最多同时指定20个域名。 - 起始时间和结束时间需要同时指定，左闭右开，毫秒级时间戳，必须为5分钟整时刻点，如：0分、5分、10分、15分等，如果传的不是5分钟时刻点，返回数据可能与预期不一致。统一用开始时间表示一个时间段，如：2019-01-24 20:15:00 表示取 [20:15:00, 20:20:00)的统计数据，且左闭右开。 - action取值：detail,summary
+
+        :param ShowDomainStatsRequest request
+        :return: ShowDomainStatsResponse
+        """
+
+        all_params = ['action', 'start_time', 'end_time', 'domain_name', 'stat_type', 'interval', 'group_by', 'service_area', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'domain_name' in local_var_params:
+            query_params.append(('domain_name', local_var_params['domain_name']))
+        if 'stat_type' in local_var_params:
+            query_params.append(('stat_type', local_var_params['stat_type']))
+        if 'interval' in local_var_params:
+            query_params.append(('interval', local_var_params['interval']))
+        if 'group_by' in local_var_params:
+            query_params.append(('group_by', local_var_params['group_by']))
+        if 'service_area' in local_var_params:
+            query_params.append(('service_area', local_var_params['service_area']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 

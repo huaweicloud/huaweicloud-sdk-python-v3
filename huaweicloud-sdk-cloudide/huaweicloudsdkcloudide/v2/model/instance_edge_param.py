@@ -81,10 +81,12 @@ class InstanceEdgeParam:
         self.instance_name = instance_name
         if instance_user_domain_id is not None:
             self.instance_user_domain_id = instance_user_domain_id
-        self.instance_user_domain_name = instance_user_domain_name
+        if instance_user_domain_name is not None:
+            self.instance_user_domain_name = instance_user_domain_name
         if instance_user_id is not None:
             self.instance_user_id = instance_user_id
-        self.instance_user_name = instance_user_name
+        if instance_user_name is not None:
+            self.instance_user_name = instance_user_name
         if is_temporary is not None:
             self.is_temporary = is_temporary
         if plugins is not None:
@@ -186,7 +188,7 @@ class InstanceEdgeParam:
     def instance_user_domain_id(self):
         """Gets the instance_user_domain_id of this InstanceEdgeParam.
 
-        组织id（对应华为云帐号的domainId）
+        租户id（对应华为云帐号的domainId）
 
         :return: The instance_user_domain_id of this InstanceEdgeParam.
         :rtype: str
@@ -197,7 +199,7 @@ class InstanceEdgeParam:
     def instance_user_domain_id(self, instance_user_domain_id):
         """Sets the instance_user_domain_id of this InstanceEdgeParam.
 
-        组织id（对应华为云帐号的domainId）
+        租户id（对应华为云帐号的domainId）
 
         :param instance_user_domain_id: The instance_user_domain_id of this InstanceEdgeParam.
         :type: str
@@ -208,7 +210,7 @@ class InstanceEdgeParam:
     def instance_user_domain_name(self):
         """Gets the instance_user_domain_name of this InstanceEdgeParam.
 
-        用户组织名
+        用户租户名
 
         :return: The instance_user_domain_name of this InstanceEdgeParam.
         :rtype: str
@@ -219,7 +221,7 @@ class InstanceEdgeParam:
     def instance_user_domain_name(self, instance_user_domain_name):
         """Sets the instance_user_domain_name of this InstanceEdgeParam.
 
-        用户组织名
+        用户租户名
 
         :param instance_user_domain_name: The instance_user_domain_name of this InstanceEdgeParam.
         :type: str

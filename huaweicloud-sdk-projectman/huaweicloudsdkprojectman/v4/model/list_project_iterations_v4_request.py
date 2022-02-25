@@ -22,22 +22,32 @@ class ListProjectIterationsV4Request:
     sensitive_list = []
 
     openapi_types = {
-        'project_id': 'str'
+        'project_id': 'str',
+        'updated_time_interval': 'str',
+        'include_deleted': 'bool'
     }
 
     attribute_map = {
-        'project_id': 'project_id'
+        'project_id': 'project_id',
+        'updated_time_interval': 'updated_time_interval',
+        'include_deleted': 'include_deleted'
     }
 
-    def __init__(self, project_id=None):
+    def __init__(self, project_id=None, updated_time_interval=None, include_deleted=None):
         """ListProjectIterationsV4Request - a model defined in huaweicloud sdk"""
         
         
 
         self._project_id = None
+        self._updated_time_interval = None
+        self._include_deleted = None
         self.discriminator = None
 
         self.project_id = project_id
+        if updated_time_interval is not None:
+            self.updated_time_interval = updated_time_interval
+        if include_deleted is not None:
+            self.include_deleted = include_deleted
 
     @property
     def project_id(self):
@@ -60,6 +70,50 @@ class ListProjectIterationsV4Request:
         :type: str
         """
         self._project_id = project_id
+
+    @property
+    def updated_time_interval(self):
+        """Gets the updated_time_interval of this ListProjectIterationsV4Request.
+
+        更新迭代的时间(查询的起始时间,查询的结束时间)
+
+        :return: The updated_time_interval of this ListProjectIterationsV4Request.
+        :rtype: str
+        """
+        return self._updated_time_interval
+
+    @updated_time_interval.setter
+    def updated_time_interval(self, updated_time_interval):
+        """Sets the updated_time_interval of this ListProjectIterationsV4Request.
+
+        更新迭代的时间(查询的起始时间,查询的结束时间)
+
+        :param updated_time_interval: The updated_time_interval of this ListProjectIterationsV4Request.
+        :type: str
+        """
+        self._updated_time_interval = updated_time_interval
+
+    @property
+    def include_deleted(self):
+        """Gets the include_deleted of this ListProjectIterationsV4Request.
+
+        是否包含被删除的迭代,默认false不包含被删除的迭代
+
+        :return: The include_deleted of this ListProjectIterationsV4Request.
+        :rtype: bool
+        """
+        return self._include_deleted
+
+    @include_deleted.setter
+    def include_deleted(self, include_deleted):
+        """Sets the include_deleted of this ListProjectIterationsV4Request.
+
+        是否包含被删除的迭代,默认false不包含被删除的迭代
+
+        :param include_deleted: The include_deleted of this ListProjectIterationsV4Request.
+        :type: bool
+        """
+        self._include_deleted = include_deleted
 
     def to_dict(self):
         """Returns the model properties as a dict"""
