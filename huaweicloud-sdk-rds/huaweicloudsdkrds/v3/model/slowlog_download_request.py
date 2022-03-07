@@ -22,49 +22,23 @@ class SlowlogDownloadRequest:
     sensitive_list = []
 
     openapi_types = {
-        'request_id': 'str',
         'file_name': 'str'
     }
 
     attribute_map = {
-        'request_id': 'request_id',
         'file_name': 'file_name'
     }
 
-    def __init__(self, request_id=None, file_name=None):
+    def __init__(self, file_name=None):
         """SlowlogDownloadRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._request_id = None
         self._file_name = None
         self.discriminator = None
 
-        self.request_id = request_id
         if file_name is not None:
             self.file_name = file_name
-
-    @property
-    def request_id(self):
-        """Gets the request_id of this SlowlogDownloadRequest.
-
-        - 请求ID，uuid，代表此次获取慢日志的请求ID。
-
-        :return: The request_id of this SlowlogDownloadRequest.
-        :rtype: str
-        """
-        return self._request_id
-
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this SlowlogDownloadRequest.
-
-        - 请求ID，uuid，代表此次获取慢日志的请求ID。
-
-        :param request_id: The request_id of this SlowlogDownloadRequest.
-        :type: str
-        """
-        self._request_id = request_id
 
     @property
     def file_name(self):

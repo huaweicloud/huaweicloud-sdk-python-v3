@@ -27,6 +27,7 @@ class CommonTaskMeta:
         'create_time': 'str',
         'start_time': 'str',
         'end_time': 'str',
+        'error_code': 'str',
         'description': 'str',
         'user_data': 'str'
     }
@@ -37,11 +38,12 @@ class CommonTaskMeta:
         'create_time': 'create_time',
         'start_time': 'start_time',
         'end_time': 'end_time',
+        'error_code': 'error_code',
         'description': 'description',
         'user_data': 'user_data'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, user_data=None):
+    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, error_code=None, description=None, user_data=None):
         """CommonTaskMeta - a model defined in huaweicloud sdk"""
         
         
@@ -51,6 +53,7 @@ class CommonTaskMeta:
         self._create_time = None
         self._start_time = None
         self._end_time = None
+        self._error_code = None
         self._description = None
         self._user_data = None
         self.discriminator = None
@@ -65,6 +68,8 @@ class CommonTaskMeta:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if error_code is not None:
+            self.error_code = error_code
         if description is not None:
             self.description = description
         if user_data is not None:
@@ -179,6 +184,28 @@ class CommonTaskMeta:
         :type: str
         """
         self._end_time = end_time
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this CommonTaskMeta.
+
+        任务的返回码。 
+
+        :return: The error_code of this CommonTaskMeta.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this CommonTaskMeta.
+
+        任务的返回码。 
+
+        :param error_code: The error_code of this CommonTaskMeta.
+        :type: str
+        """
+        self._error_code = error_code
 
     @property
     def description(self):

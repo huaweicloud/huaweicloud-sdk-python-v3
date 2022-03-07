@@ -27,7 +27,8 @@ class UpdateUserReq:
         'list': 'list[UserAccountVO]',
         'user_roles': 'list[UserRoleVO]',
         'is_set_password': 'bool',
-        'is_migrate_user': 'bool'
+        'is_migrate_user': 'bool',
+        'is_sync_object_privilege': 'bool'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class UpdateUserReq:
         'list': 'list',
         'user_roles': 'user_roles',
         'is_set_password': 'is_set_password',
-        'is_migrate_user': 'is_migrate_user'
+        'is_migrate_user': 'is_migrate_user',
+        'is_sync_object_privilege': 'is_sync_object_privilege'
     }
 
-    def __init__(self, job_id=None, password=None, list=None, user_roles=None, is_set_password=None, is_migrate_user=None):
+    def __init__(self, job_id=None, password=None, list=None, user_roles=None, is_set_password=None, is_migrate_user=None, is_sync_object_privilege=None):
         """UpdateUserReq - a model defined in huaweicloud sdk"""
         
         
@@ -50,6 +52,7 @@ class UpdateUserReq:
         self._user_roles = None
         self._is_set_password = None
         self._is_migrate_user = None
+        self._is_sync_object_privilege = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -61,6 +64,8 @@ class UpdateUserReq:
             self.user_roles = user_roles
         self.is_set_password = is_set_password
         self.is_migrate_user = is_migrate_user
+        if is_sync_object_privilege is not None:
+            self.is_sync_object_privilege = is_sync_object_privilege
 
     @property
     def job_id(self):
@@ -193,6 +198,28 @@ class UpdateUserReq:
         :type: bool
         """
         self._is_migrate_user = is_migrate_user
+
+    @property
+    def is_sync_object_privilege(self):
+        """Gets the is_sync_object_privilege of this UpdateUserReq.
+
+        是否同步权限，不填默认为false，PG同步使用。
+
+        :return: The is_sync_object_privilege of this UpdateUserReq.
+        :rtype: bool
+        """
+        return self._is_sync_object_privilege
+
+    @is_sync_object_privilege.setter
+    def is_sync_object_privilege(self, is_sync_object_privilege):
+        """Sets the is_sync_object_privilege of this UpdateUserReq.
+
+        是否同步权限，不填默认为false，PG同步使用。
+
+        :param is_sync_object_privilege: The is_sync_object_privilege of this UpdateUserReq.
+        :type: bool
+        """
+        self._is_sync_object_privilege = is_sync_object_privilege
 
     def to_dict(self):
         """Returns the model properties as a dict"""

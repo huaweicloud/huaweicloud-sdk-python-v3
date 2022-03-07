@@ -177,7 +177,7 @@ class IngnoreItem:
     def status(self):
         """Gets the status of this IngnoreItem.
 
-        状态（0：关闭，1：开启）
+        规则状态，0：关闭，1：开启
 
         :return: The status of this IngnoreItem.
         :rtype: int
@@ -188,7 +188,7 @@ class IngnoreItem:
     def status(self, status):
         """Sets the status of this IngnoreItem.
 
-        状态（0：关闭，1：开启）
+        规则状态，0：关闭，1：开启
 
         :param status: The status of this IngnoreItem.
         :type: int

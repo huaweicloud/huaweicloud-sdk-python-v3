@@ -132,7 +132,7 @@ class ListTasksDetailsRequest:
     def state(self):
         """Gets the state of this ListTasksDetailsRequest.
 
-        目标服务作业的状态
+        目标服务作业的状态，分别为PENDING（等待中），RECOVERING（恢复中），STARTING（启动中），UPGRADING（升级中），CREATE_FAILED（创建失败），START_FAILED（启动失败），RUNNING（运行中），STOPPING（停止中），STOPPED（已停止），ABNORMAL（异常），SUCCEEDED（运行成功），FAILED（运行失败），DELETING（删除中），FREEZING（冻结中），FROZEN（已冻结）
 
         :return: The state of this ListTasksDetailsRequest.
         :rtype: str
@@ -143,7 +143,7 @@ class ListTasksDetailsRequest:
     def state(self, state):
         """Sets the state of this ListTasksDetailsRequest.
 
-        目标服务作业的状态
+        目标服务作业的状态，分别为PENDING（等待中），RECOVERING（恢复中），STARTING（启动中），UPGRADING（升级中），CREATE_FAILED（创建失败），START_FAILED（启动失败），RUNNING（运行中），STOPPING（停止中），STOPPED（已停止），ABNORMAL（异常），SUCCEEDED（运行成功），FAILED（运行失败），DELETING（删除中），FREEZING（冻结中），FROZEN（已冻结）
 
         :param state: The state of this ListTasksDetailsRequest.
         :type: str
@@ -242,7 +242,7 @@ class ListTasksDetailsRequest:
     def order(self):
         """Gets the order of this ListTasksDetailsRequest.
 
-        展示服务作业时的排序字段和顺序
+        展示服务作业时的排序字段和顺序，分别为name:ASC（按名称顺序排序），name:DESC（按名称倒序排序），created_at:ASC（按创建时间正序排序），created_at:DESC（按创建时间倒序排序），updated_at:ASC（按更新时间正序排序），updated_at:DESC（按更新时间倒序排序）
 
         :return: The order of this ListTasksDetailsRequest.
         :rtype: str
@@ -253,7 +253,7 @@ class ListTasksDetailsRequest:
     def order(self, order):
         """Sets the order of this ListTasksDetailsRequest.
 
-        展示服务作业时的排序字段和顺序
+        展示服务作业时的排序字段和顺序，分别为name:ASC（按名称顺序排序），name:DESC（按名称倒序排序），created_at:ASC（按创建时间正序排序），created_at:DESC（按创建时间倒序排序），updated_at:ASC（按更新时间正序排序），updated_at:DESC（按更新时间倒序排序）
 
         :param order: The order of this ListTasksDetailsRequest.
         :type: str

@@ -114,6 +114,7 @@ from huaweicloudsdkdrs.v3.model.endpoint import Endpoint
 from huaweicloudsdkdrs.v3.model.endpoint_vo import EndpointVO
 from huaweicloudsdkdrs.v3.model.inst_info import InstInfo
 from huaweicloudsdkdrs.v3.model.job_info import JobInfo
+from huaweicloudsdkdrs.v3.model.kafka_security import KafkaSecurity
 from huaweicloudsdkdrs.v3.model.kerberos_vo import KerberosVO
 from huaweicloudsdkdrs.v3.model.limit_speed_req import LimitSpeedReq
 from huaweicloudsdkdrs.v3.model.line_compare_detail import LineCompareDetail

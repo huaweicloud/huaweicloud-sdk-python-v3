@@ -21,7 +21,7 @@
 from setuptools import setup, find_packages
 
 NAME = "huaweicloudsdkexample"
-VERSION = "3.0.78"
+VERSION = "3.0.79"
 AUTHOR = "HuaweiCloud SDK"
 AUTHOR_EMAIL = "hwcloudsdk@huawei.com"
 URL = "https://github.com/huaweicloud/huaweicloud-sdk-python-v3"

@@ -162,7 +162,7 @@ class WhiteBlackIpResponseBody:
     def status(self):
         """Gets the status of this WhiteBlackIpResponseBody.
 
-        规则状态
+        规则状态，0：关闭，1：开启
 
         :return: The status of this WhiteBlackIpResponseBody.
         :rtype: int
@@ -173,7 +173,7 @@ class WhiteBlackIpResponseBody:
     def status(self, status):
         """Sets the status of this WhiteBlackIpResponseBody.
 
-        规则状态
+        规则状态，0：关闭，1：开启
 
         :param status: The status of this WhiteBlackIpResponseBody.
         :type: int

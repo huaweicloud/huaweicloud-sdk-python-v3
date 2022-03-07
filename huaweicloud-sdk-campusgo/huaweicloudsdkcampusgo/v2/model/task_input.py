@@ -52,7 +52,7 @@ class TaskInput:
     def type(self):
         """Gets the type of this TaskInput.
 
-        作业的输入类型
+        作业的输入类型，必填。可选类型有obs（对象存储服务存储的文件），vis（视频接入服务的视频流），url（指定的文件地址或取流地址），edgecamera（绑定在IEF的边缘摄像头），edgerestful（从自定义的流媒体服务器通过Restful接口获取取流地址），vcn（VCN设备）。
 
         :return: The type of this TaskInput.
         :rtype: str
@@ -63,7 +63,7 @@ class TaskInput:
     def type(self, type):
         """Sets the type of this TaskInput.
 
-        作业的输入类型
+        作业的输入类型，必填。可选类型有obs（对象存储服务存储的文件），vis（视频接入服务的视频流），url（指定的文件地址或取流地址），edgecamera（绑定在IEF的边缘摄像头），edgerestful（从自定义的流媒体服务器通过Restful接口获取取流地址），vcn（VCN设备）。
 
         :param type: The type of this TaskInput.
         :type: str

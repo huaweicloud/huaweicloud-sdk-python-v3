@@ -44,7 +44,7 @@ class TaskServiceConfig:
     def common(self):
         """Gets the common of this TaskServiceConfig.
 
-        作业运行时指定的具体的算法配置项，以人流检测服务为例
+        根据不同服务，填写对应的服务配置参数json结构体
 
         :return: The common of this TaskServiceConfig.
         :rtype: object
@@ -55,7 +55,7 @@ class TaskServiceConfig:
     def common(self, common):
         """Sets the common of this TaskServiceConfig.
 
-        作业运行时指定的具体的算法配置项，以人流检测服务为例
+        根据不同服务，填写对应的服务配置参数json结构体
 
         :param common: The common of this TaskServiceConfig.
         :type: object

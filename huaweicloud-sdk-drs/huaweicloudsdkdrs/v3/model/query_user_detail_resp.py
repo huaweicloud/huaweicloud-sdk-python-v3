@@ -29,7 +29,10 @@ class QueryUserDetailResp:
         'privileges': 'list[str]',
         'password': 'str',
         'roles': 'list[str]',
-        'selected': 'bool'
+        'selected': 'bool',
+        'no_privileges': 'str',
+        'parent_account': 'str',
+        'no_parent_account': 'str'
     }
 
     attribute_map = {
@@ -40,10 +43,13 @@ class QueryUserDetailResp:
         'privileges': 'privileges',
         'password': 'password',
         'roles': 'roles',
-        'selected': 'selected'
+        'selected': 'selected',
+        'no_privileges': 'no_privileges',
+        'parent_account': 'parent_account',
+        'no_parent_account': 'no_parent_account'
     }
 
-    def __init__(self, id=None, account=None, comment=None, is_transfer=None, privileges=None, password=None, roles=None, selected=None):
+    def __init__(self, id=None, account=None, comment=None, is_transfer=None, privileges=None, password=None, roles=None, selected=None, no_privileges=None, parent_account=None, no_parent_account=None):
         """QueryUserDetailResp - a model defined in huaweicloud sdk"""
         
         
@@ -56,6 +62,9 @@ class QueryUserDetailResp:
         self._password = None
         self._roles = None
         self._selected = None
+        self._no_privileges = None
+        self._parent_account = None
+        self._no_parent_account = None
         self.discriminator = None
 
         if id is not None:
@@ -74,6 +83,12 @@ class QueryUserDetailResp:
             self.roles = roles
         if selected is not None:
             self.selected = selected
+        if no_privileges is not None:
+            self.no_privileges = no_privileges
+        if parent_account is not None:
+            self.parent_account = parent_account
+        if no_parent_account is not None:
+            self.no_parent_account = no_parent_account
 
     @property
     def id(self):
@@ -250,6 +265,72 @@ class QueryUserDetailResp:
         :type: bool
         """
         self._selected = selected
+
+    @property
+    def no_privileges(self):
+        """Gets the no_privileges of this QueryUserDetailResp.
+
+        无法同步的用户权限
+
+        :return: The no_privileges of this QueryUserDetailResp.
+        :rtype: str
+        """
+        return self._no_privileges
+
+    @no_privileges.setter
+    def no_privileges(self, no_privileges):
+        """Sets the no_privileges of this QueryUserDetailResp.
+
+        无法同步的用户权限
+
+        :param no_privileges: The no_privileges of this QueryUserDetailResp.
+        :type: str
+        """
+        self._no_privileges = no_privileges
+
+    @property
+    def parent_account(self):
+        """Gets the parent_account of this QueryUserDetailResp.
+
+        父用户
+
+        :return: The parent_account of this QueryUserDetailResp.
+        :rtype: str
+        """
+        return self._parent_account
+
+    @parent_account.setter
+    def parent_account(self, parent_account):
+        """Sets the parent_account of this QueryUserDetailResp.
+
+        父用户
+
+        :param parent_account: The parent_account of this QueryUserDetailResp.
+        :type: str
+        """
+        self._parent_account = parent_account
+
+    @property
+    def no_parent_account(self):
+        """Gets the no_parent_account of this QueryUserDetailResp.
+
+        无法同步父子关系的父用户
+
+        :return: The no_parent_account of this QueryUserDetailResp.
+        :rtype: str
+        """
+        return self._no_parent_account
+
+    @no_parent_account.setter
+    def no_parent_account(self, no_parent_account):
+        """Sets the no_parent_account of this QueryUserDetailResp.
+
+        无法同步父子关系的父用户
+
+        :param no_parent_account: The no_parent_account of this QueryUserDetailResp.
+        :type: str
+        """
+        self._no_parent_account = no_parent_account
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -40,7 +40,8 @@ class TestEndPoint:
         'end_point_type': 'str',
         'region': 'str',
         'project_id': 'str',
-        'db_name': 'str'
+        'db_name': 'str',
+        'kafka_security_config': 'KafkaSecurity'
     }
 
     attribute_map = {
@@ -62,10 +63,11 @@ class TestEndPoint:
         'end_point_type': 'end_point_type',
         'region': 'region',
         'project_id': 'project_id',
-        'db_name': 'db_name'
+        'db_name': 'db_name',
+        'kafka_security_config': 'kafka_security_config'
     }
 
-    def __init__(self, id=None, net_type=None, db_type=None, ip=None, db_port=None, inst_id=None, db_user=None, db_password=None, ssl_link=None, ssl_cert_key=None, ssl_cert_name=None, ssl_cert_check_sum=None, ssl_cert_password=None, vpc_id=None, subnet_id=None, end_point_type=None, region=None, project_id=None, db_name=None):
+    def __init__(self, id=None, net_type=None, db_type=None, ip=None, db_port=None, inst_id=None, db_user=None, db_password=None, ssl_link=None, ssl_cert_key=None, ssl_cert_name=None, ssl_cert_check_sum=None, ssl_cert_password=None, vpc_id=None, subnet_id=None, end_point_type=None, region=None, project_id=None, db_name=None, kafka_security_config=None):
         """TestEndPoint - a model defined in huaweicloud sdk"""
         
         
@@ -89,6 +91,7 @@ class TestEndPoint:
         self._region = None
         self._project_id = None
         self._db_name = None
+        self._kafka_security_config = None
         self.discriminator = None
 
         self.id = id
@@ -122,6 +125,8 @@ class TestEndPoint:
             self.project_id = project_id
         if db_name is not None:
             self.db_name = db_name
+        if kafka_security_config is not None:
+            self.kafka_security_config = kafka_security_config
 
     @property
     def id(self):
@@ -171,7 +176,7 @@ class TestEndPoint:
     def db_type(self):
         """Gets the db_type of this TestEndPoint.
 
-        数据库类型 
+        数据库类型
 
         :return: The db_type of this TestEndPoint.
         :rtype: str
@@ -182,7 +187,7 @@ class TestEndPoint:
     def db_type(self, db_type):
         """Sets the db_type of this TestEndPoint.
 
-        数据库类型 
+        数据库类型
 
         :param db_type: The db_type of this TestEndPoint.
         :type: str
@@ -325,7 +330,7 @@ class TestEndPoint:
     def ssl_cert_key(self):
         """Gets the ssl_cert_key of this TestEndPoint.
 
-        SSL证书内容，用base64加密后，源库安全连接必选。
+        SSL证书内容，base64加密后的值，源库安全连接必选。
 
         :return: The ssl_cert_key of this TestEndPoint.
         :rtype: str
@@ -336,7 +341,7 @@ class TestEndPoint:
     def ssl_cert_key(self, ssl_cert_key):
         """Sets the ssl_cert_key of this TestEndPoint.
 
-        SSL证书内容，用base64加密后，源库安全连接必选。
+        SSL证书内容，base64加密后的值，源库安全连接必选。
 
         :param ssl_cert_key: The ssl_cert_key of this TestEndPoint.
         :type: str
@@ -369,7 +374,7 @@ class TestEndPoint:
     def ssl_cert_check_sum(self):
         """Gets the ssl_cert_check_sum of this TestEndPoint.
 
-        SSL证书内容checksum值，后端校验，源库安全连接必选。
+        SSL证书内容checksum值，证书经过sha256加密后的值，后端校验，源库安全连接必选。
 
         :return: The ssl_cert_check_sum of this TestEndPoint.
         :rtype: str
@@ -380,7 +385,7 @@ class TestEndPoint:
     def ssl_cert_check_sum(self, ssl_cert_check_sum):
         """Sets the ssl_cert_check_sum of this TestEndPoint.
 
-        SSL证书内容checksum值，后端校验，源库安全连接必选。
+        SSL证书内容checksum值，证书经过sha256加密后的值，后端校验，源库安全连接必选。
 
         :param ssl_cert_check_sum: The ssl_cert_check_sum of this TestEndPoint.
         :type: str
@@ -540,6 +545,26 @@ class TestEndPoint:
         :type: str
         """
         self._db_name = db_name
+
+    @property
+    def kafka_security_config(self):
+        """Gets the kafka_security_config of this TestEndPoint.
+
+
+        :return: The kafka_security_config of this TestEndPoint.
+        :rtype: KafkaSecurity
+        """
+        return self._kafka_security_config
+
+    @kafka_security_config.setter
+    def kafka_security_config(self, kafka_security_config):
+        """Sets the kafka_security_config of this TestEndPoint.
+
+
+        :param kafka_security_config: The kafka_security_config of this TestEndPoint.
+        :type: KafkaSecurity
+        """
+        self._kafka_security_config = kafka_security_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

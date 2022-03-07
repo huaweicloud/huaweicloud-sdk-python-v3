@@ -211,7 +211,7 @@ class IndirectPartnerInfo:
     def account_manager_id(self):
         """Gets the account_manager_id of this IndirectPartnerInfo.
 
-        客户经理ID。
+        客户经理登录账户名。
 
         :return: The account_manager_id of this IndirectPartnerInfo.
         :rtype: str
@@ -222,7 +222,7 @@ class IndirectPartnerInfo:
     def account_manager_id(self, account_manager_id):
         """Sets the account_manager_id of this IndirectPartnerInfo.
 
-        客户经理ID。
+        客户经理登录账户名。
 
         :param account_manager_id: The account_manager_id of this IndirectPartnerInfo.
         :type: str

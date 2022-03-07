@@ -179,7 +179,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
     def status(self):
         """Gets the status of this CreateAntiTamperRuleResponse.
 
-        规则状态
+        规则状态，0：关闭，1：开启
 
         :return: The status of this CreateAntiTamperRuleResponse.
         :rtype: int
@@ -190,7 +190,7 @@ class CreateAntiTamperRuleResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this CreateAntiTamperRuleResponse.
 
-        规则状态
+        规则状态，0：关闭，1：开启
 
         :param status: The status of this CreateAntiTamperRuleResponse.
         :type: int

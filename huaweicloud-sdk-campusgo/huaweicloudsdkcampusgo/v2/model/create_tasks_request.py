@@ -48,7 +48,7 @@ class CreateTasksRequest:
     def service_name(self):
         """Gets the service_name of this CreateTasksRequest.
 
-        服务名称
+        服务API,具体API名称见园区智能体提供的API参考列表中URI描述[API列表](https://support.huaweicloud.com/api-campusgo/campusgo_03_0013.html)
 
         :return: The service_name of this CreateTasksRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class CreateTasksRequest:
     def service_name(self, service_name):
         """Sets the service_name of this CreateTasksRequest.
 
-        服务名称
+        服务API,具体API名称见园区智能体提供的API参考列表中URI描述[API列表](https://support.huaweicloud.com/api-campusgo/campusgo_03_0013.html)
 
         :param service_name: The service_name of this CreateTasksRequest.
         :type: str

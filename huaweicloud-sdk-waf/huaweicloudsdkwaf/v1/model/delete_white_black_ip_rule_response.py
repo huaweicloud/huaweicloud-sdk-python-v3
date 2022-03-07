@@ -189,7 +189,7 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
     def status(self):
         """Gets the status of this DeleteWhiteBlackIpRuleResponse.
 
-        规则状态
+        规则状态，0：关闭，1：开启
 
         :return: The status of this DeleteWhiteBlackIpRuleResponse.
         :rtype: int
@@ -200,7 +200,7 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this DeleteWhiteBlackIpRuleResponse.
 
-        规则状态
+        规则状态，0：关闭，1：开启
 
         :param status: The status of this DeleteWhiteBlackIpRuleResponse.
         :type: int

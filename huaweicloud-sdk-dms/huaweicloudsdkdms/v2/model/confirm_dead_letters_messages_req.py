@@ -22,7 +22,7 @@ class ConfirmDeadLettersMessagesReq:
     sensitive_list = []
 
     openapi_types = {
-        'message': 'list[ConfirmDeadLettersMessagesReqMessage]'
+        'message': 'list[ConfirmMessageEntity]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class ConfirmDeadLettersMessagesReq:
         确认消息数组。
 
         :return: The message of this ConfirmDeadLettersMessagesReq.
-        :rtype: list[ConfirmDeadLettersMessagesReqMessage]
+        :rtype: list[ConfirmMessageEntity]
         """
         return self._message
 
@@ -58,7 +58,7 @@ class ConfirmDeadLettersMessagesReq:
         确认消息数组。
 
         :param message: The message of this ConfirmDeadLettersMessagesReq.
-        :type: list[ConfirmDeadLettersMessagesReqMessage]
+        :type: list[ConfirmMessageEntity]
         """
         self._message = message
 

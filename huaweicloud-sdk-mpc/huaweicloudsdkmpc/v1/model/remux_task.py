@@ -27,6 +27,7 @@ class RemuxTask:
         'create_time': 'str',
         'start_time': 'str',
         'end_time': 'str',
+        'error_code': 'str',
         'description': 'str',
         'user_data': 'str',
         'input': 'ObsObjInfo',
@@ -42,6 +43,7 @@ class RemuxTask:
         'create_time': 'create_time',
         'start_time': 'start_time',
         'end_time': 'end_time',
+        'error_code': 'error_code',
         'description': 'description',
         'user_data': 'user_data',
         'input': 'input',
@@ -51,7 +53,7 @@ class RemuxTask:
         'output_metadata': 'output_metadata'
     }
 
-    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, description=None, user_data=None, input=None, output=None, output_param=None, complete_ratio=None, output_metadata=None):
+    def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, error_code=None, description=None, user_data=None, input=None, output=None, output_param=None, complete_ratio=None, output_metadata=None):
         """RemuxTask - a model defined in huaweicloud sdk"""
         
         
@@ -61,6 +63,7 @@ class RemuxTask:
         self._create_time = None
         self._start_time = None
         self._end_time = None
+        self._error_code = None
         self._description = None
         self._user_data = None
         self._input = None
@@ -80,6 +83,8 @@ class RemuxTask:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if error_code is not None:
+            self.error_code = error_code
         if description is not None:
             self.description = description
         if user_data is not None:
@@ -204,6 +209,28 @@ class RemuxTask:
         :type: str
         """
         self._end_time = end_time
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this RemuxTask.
+
+        任务的返回码。 
+
+        :return: The error_code of this RemuxTask.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this RemuxTask.
+
+        任务的返回码。 
+
+        :param error_code: The error_code of this RemuxTask.
+        :type: str
+        """
+        self._error_code = error_code
 
     @property
     def description(self):

@@ -1,3 +1,85 @@
+# 3.0.79 2022-03-07
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - Support the interfaces `UpdateClusterEip`, `ShowClusterEndpoints`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CES
+
+- _Features_
+  - Support the following interfaces (V2)：
+    - `ListAlarms`
+    - `CreateAlarm`
+    - `DeleteAlarm`
+    - `UpdateAlarmAction`
+    - `ListAlarmResources`
+    - `DeleteAlarmResources`
+    - `AddAlarmResources`
+    - `AddResourceGroupsResourcesBatch`
+    - `DeleteResourceGroupsResourcesBatch`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `gaussdbv5`, `postgresql` to the request parameter `engine_type` to the interface `BatchCreateJobs`
+  - Changes of the interface `BatchValidateConnections`:
+    - Add the request parameter `kafka_security_config`
+    - Add the enum values `postgresql` to the request parameter `db_type`
+  - Changes of the interface `BatchUpdateUser`:
+    - Add the request parameter `is_sync_object_privilege`
+    - Add the response parameters `no_privileges`, `parent_account`, `no_parent_account`
+  - Add the response parameters `no_privileges`, `parent_account`, `no_parent_account` to the interface `ListUsers`
+  - Add the request parameters `topic_policy`, `topic`, `partition_policy`, `kafka_data_format`, `topic_name_format`, `partitions_num`, `replication_factor`, `is_fill_materialized_view`, `export_snapshot` to the interface `BatchSetPolicy`
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type of the request parameter `ip_version` of the interface `CreatePrePaidPublicip`: `integer` -> `enum`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `order_id` to the interface `ShrinkInstanceNode`
+
+### HuaweiCloud SDK MPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `error_code` to the interface `ListEditingJob`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameter `request_id` from the interface `DownloadSlowlog`
+
 # 3.0.78 2022-02-25
 
 ### HuaweiCloud SDK AS

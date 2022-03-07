@@ -26,7 +26,16 @@ class SyncPolicyReq:
         'conflict_policy': 'str',
         'filter_ddl_policy': 'str',
         'ddl_trans': 'bool',
-        'index_trans': 'bool'
+        'index_trans': 'bool',
+        'topic_policy': 'str',
+        'topic': 'str',
+        'partition_policy': 'str',
+        'kafka_data_format': 'str',
+        'topic_name_format': 'str',
+        'partitions_num': 'str',
+        'replication_factor': 'str',
+        'is_fill_materialized_view': 'bool',
+        'export_snapshot': 'str'
     }
 
     attribute_map = {
@@ -34,10 +43,19 @@ class SyncPolicyReq:
         'conflict_policy': 'conflict_policy',
         'filter_ddl_policy': 'filter_ddl_policy',
         'ddl_trans': 'ddl_trans',
-        'index_trans': 'index_trans'
+        'index_trans': 'index_trans',
+        'topic_policy': 'topic_policy',
+        'topic': 'topic',
+        'partition_policy': 'partition_policy',
+        'kafka_data_format': 'kafka_data_format',
+        'topic_name_format': 'topic_name_format',
+        'partitions_num': 'partitions_num',
+        'replication_factor': 'replication_factor',
+        'is_fill_materialized_view': 'is_fill_materialized_view',
+        'export_snapshot': 'export_snapshot'
     }
 
-    def __init__(self, job_id=None, conflict_policy=None, filter_ddl_policy=None, ddl_trans=None, index_trans=None):
+    def __init__(self, job_id=None, conflict_policy=None, filter_ddl_policy=None, ddl_trans=None, index_trans=None, topic_policy=None, topic=None, partition_policy=None, kafka_data_format=None, topic_name_format=None, partitions_num=None, replication_factor=None, is_fill_materialized_view=None, export_snapshot=None):
         """SyncPolicyReq - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +65,15 @@ class SyncPolicyReq:
         self._filter_ddl_policy = None
         self._ddl_trans = None
         self._index_trans = None
+        self._topic_policy = None
+        self._topic = None
+        self._partition_policy = None
+        self._kafka_data_format = None
+        self._topic_name_format = None
+        self._partitions_num = None
+        self._replication_factor = None
+        self._is_fill_materialized_view = None
+        self._export_snapshot = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -56,6 +83,24 @@ class SyncPolicyReq:
             self.ddl_trans = ddl_trans
         if index_trans is not None:
             self.index_trans = index_trans
+        if topic_policy is not None:
+            self.topic_policy = topic_policy
+        if topic is not None:
+            self.topic = topic
+        if partition_policy is not None:
+            self.partition_policy = partition_policy
+        if kafka_data_format is not None:
+            self.kafka_data_format = kafka_data_format
+        if topic_name_format is not None:
+            self.topic_name_format = topic_name_format
+        if partitions_num is not None:
+            self.partitions_num = partitions_num
+        if replication_factor is not None:
+            self.replication_factor = replication_factor
+        if is_fill_materialized_view is not None:
+            self.is_fill_materialized_view = is_fill_materialized_view
+        if export_snapshot is not None:
+            self.export_snapshot = export_snapshot
 
     @property
     def job_id(self):
@@ -166,6 +211,204 @@ class SyncPolicyReq:
         :type: bool
         """
         self._index_trans = index_trans
+
+    @property
+    def topic_policy(self):
+        """Gets the topic_policy of this SyncPolicyReq.
+
+        同步Topic策略，目标库为kafka时必填，取值： - 0：集中投递到一个Topic - 1：按库名-schema自动生成Topic名字 - 2：按库名自动生成Topic名字 - 3：按库名-schema-表名自动生成Topic名字
+
+        :return: The topic_policy of this SyncPolicyReq.
+        :rtype: str
+        """
+        return self._topic_policy
+
+    @topic_policy.setter
+    def topic_policy(self, topic_policy):
+        """Sets the topic_policy of this SyncPolicyReq.
+
+        同步Topic策略，目标库为kafka时必填，取值： - 0：集中投递到一个Topic - 1：按库名-schema自动生成Topic名字 - 2：按库名自动生成Topic名字 - 3：按库名-schema-表名自动生成Topic名字
+
+        :param topic_policy: The topic_policy of this SyncPolicyReq.
+        :type: str
+        """
+        self._topic_policy = topic_policy
+
+    @property
+    def topic(self):
+        """Gets the topic of this SyncPolicyReq.
+
+        Topic名称，topic_policy为0时必填，确保topic已存在。
+
+        :return: The topic of this SyncPolicyReq.
+        :rtype: str
+        """
+        return self._topic
+
+    @topic.setter
+    def topic(self, topic):
+        """Sets the topic of this SyncPolicyReq.
+
+        Topic名称，topic_policy为0时必填，确保topic已存在。
+
+        :param topic: The topic of this SyncPolicyReq.
+        :type: str
+        """
+        self._topic = topic
+
+    @property
+    def partition_policy(self):
+        """Gets the partition_policy of this SyncPolicyReq.
+
+        同步到kafka partition策略，取值： - 0：按库名.schema.表名的hash值投递到不同Partition - 1：全部投递到Partition 0 - 2：按主键的hash值投递到不同Partition - 3：按库名.schema的hash值投递到不同Partition **当topic_policy取0时，可以取0,1,2,3；当topic_policy取1时，可以取0,1；当topic_policy取2时，可以取0,1,3；当topic_policy取3时，可以取1,2；**
+
+        :return: The partition_policy of this SyncPolicyReq.
+        :rtype: str
+        """
+        return self._partition_policy
+
+    @partition_policy.setter
+    def partition_policy(self, partition_policy):
+        """Sets the partition_policy of this SyncPolicyReq.
+
+        同步到kafka partition策略，取值： - 0：按库名.schema.表名的hash值投递到不同Partition - 1：全部投递到Partition 0 - 2：按主键的hash值投递到不同Partition - 3：按库名.schema的hash值投递到不同Partition **当topic_policy取0时，可以取0,1,2,3；当topic_policy取1时，可以取0,1；当topic_policy取2时，可以取0,1,3；当topic_policy取3时，可以取1,2；**
+
+        :param partition_policy: The partition_policy of this SyncPolicyReq.
+        :type: str
+        """
+        self._partition_policy = partition_policy
+
+    @property
+    def kafka_data_format(self):
+        """Gets the kafka_data_format of this SyncPolicyReq.
+
+        投送到kafka的数据格式，不填默认为json：
+
+        :return: The kafka_data_format of this SyncPolicyReq.
+        :rtype: str
+        """
+        return self._kafka_data_format
+
+    @kafka_data_format.setter
+    def kafka_data_format(self, kafka_data_format):
+        """Sets the kafka_data_format of this SyncPolicyReq.
+
+        投送到kafka的数据格式，不填默认为json：
+
+        :param kafka_data_format: The kafka_data_format of this SyncPolicyReq.
+        :type: str
+        """
+        self._kafka_data_format = kafka_data_format
+
+    @property
+    def topic_name_format(self):
+        """Gets the topic_name_format of this SyncPolicyReq.
+
+        Topic名字格式，topic_policy为1,2,3,时需要 - 当topic_policy取1时，Topic名字格式支持database、schema两个变量，其他字符当做常量。分别用$database$代替数据库名，$schema$代替模式名，不填默认为$database$-$schema$ - 当topic_policy取2时，Topic名字格式支持database一个变量，其他字符都当做常量，不填默认为$database$ - 当topic_policy取3时，Topic名字格式支持database、schema和tablename三个变量，其他字符当做常量。分别用$database$代替数据库名，$schema$代替模式名，$tablename$代替表名，不填默认为$database$-$schema$-$tablename$
+
+        :return: The topic_name_format of this SyncPolicyReq.
+        :rtype: str
+        """
+        return self._topic_name_format
+
+    @topic_name_format.setter
+    def topic_name_format(self, topic_name_format):
+        """Sets the topic_name_format of this SyncPolicyReq.
+
+        Topic名字格式，topic_policy为1,2,3,时需要 - 当topic_policy取1时，Topic名字格式支持database、schema两个变量，其他字符当做常量。分别用$database$代替数据库名，$schema$代替模式名，不填默认为$database$-$schema$ - 当topic_policy取2时，Topic名字格式支持database一个变量，其他字符都当做常量，不填默认为$database$ - 当topic_policy取3时，Topic名字格式支持database、schema和tablename三个变量，其他字符当做常量。分别用$database$代替数据库名，$schema$代替模式名，$tablename$代替表名，不填默认为$database$-$schema$-$tablename$
+
+        :param topic_name_format: The topic_name_format of this SyncPolicyReq.
+        :type: str
+        """
+        self._topic_name_format = topic_name_format
+
+    @property
+    def partitions_num(self):
+        """Gets the partitions_num of this SyncPolicyReq.
+
+        Partition个数，取值1-2147483647之间，topic_policy为1,2,3,时需要，不填默认为1
+
+        :return: The partitions_num of this SyncPolicyReq.
+        :rtype: str
+        """
+        return self._partitions_num
+
+    @partitions_num.setter
+    def partitions_num(self, partitions_num):
+        """Sets the partitions_num of this SyncPolicyReq.
+
+        Partition个数，取值1-2147483647之间，topic_policy为1,2,3,时需要，不填默认为1
+
+        :param partitions_num: The partitions_num of this SyncPolicyReq.
+        :type: str
+        """
+        self._partitions_num = partitions_num
+
+    @property
+    def replication_factor(self):
+        """Gets the replication_factor of this SyncPolicyReq.
+
+        副本个数，取值1-32767之间，topic_policy为1,2,3,时需要，不填默认为1
+
+        :return: The replication_factor of this SyncPolicyReq.
+        :rtype: str
+        """
+        return self._replication_factor
+
+    @replication_factor.setter
+    def replication_factor(self, replication_factor):
+        """Sets the replication_factor of this SyncPolicyReq.
+
+        副本个数，取值1-32767之间，topic_policy为1,2,3,时需要，不填默认为1
+
+        :param replication_factor: The replication_factor of this SyncPolicyReq.
+        :type: str
+        """
+        self._replication_factor = replication_factor
+
+    @property
+    def is_fill_materialized_view(self):
+        """Gets the is_fill_materialized_view of this SyncPolicyReq.
+
+        PostgreSQL同步全量阶段是否填充物化视图，不填默认为false
+
+        :return: The is_fill_materialized_view of this SyncPolicyReq.
+        :rtype: bool
+        """
+        return self._is_fill_materialized_view
+
+    @is_fill_materialized_view.setter
+    def is_fill_materialized_view(self, is_fill_materialized_view):
+        """Sets the is_fill_materialized_view of this SyncPolicyReq.
+
+        PostgreSQL同步全量阶段是否填充物化视图，不填默认为false
+
+        :param is_fill_materialized_view: The is_fill_materialized_view of this SyncPolicyReq.
+        :type: bool
+        """
+        self._is_fill_materialized_view = is_fill_materialized_view
+
+    @property
+    def export_snapshot(self):
+        """Gets the export_snapshot of this SyncPolicyReq.
+
+        PostgreSQL同步全量阶段是否使用快照模式导出，不填默认为false
+
+        :return: The export_snapshot of this SyncPolicyReq.
+        :rtype: str
+        """
+        return self._export_snapshot
+
+    @export_snapshot.setter
+    def export_snapshot(self, export_snapshot):
+        """Sets the export_snapshot of this SyncPolicyReq.
+
+        PostgreSQL同步全量阶段是否使用快照模式导出，不填默认为false
+
+        :param export_snapshot: The export_snapshot of this SyncPolicyReq.
+        :type: str
+        """
+        self._export_snapshot = export_snapshot
 
     def to_dict(self):
         """Returns the model properties as a dict"""

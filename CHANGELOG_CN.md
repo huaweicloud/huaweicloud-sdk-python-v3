@@ -1,3 +1,85 @@
+# 3.0.79 2022-03-07
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 支持接口`UpdateClusterEip`、`ShowClusterEndpoints`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 支持以下接口 (V2)：
+    - `ListAlarms`
+    - `CreateAlarm`
+    - `DeleteAlarm`
+    - `UpdateAlarmAction`
+    - `ListAlarmResources`
+    - `DeleteAlarmResources`
+    - `AddAlarmResources`
+    - `AddResourceGroupsResourcesBatch`
+    - `DeleteResourceGroupsResourcesBatch`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`BatchCreateJobs`请求参数`engine_type`新增枚举值`gaussdbv5`、`postgresql`
+  - 接口`BatchValidateConnections`:
+    - 新增请求参数 `kafka_security_config`
+    - 请求参数`db_type`新增枚举值`postgresql`
+  - 接口`BatchUpdateUser`:
+    - 新增请求参数 `is_sync_object_privilege`
+    - 新增响应参数 `no_privileges`、`parent_account`、`no_parent_account`
+  - 接口`ListUsers`新增响应参数 `no_privileges`、`parent_account`、`no_parent_account`
+  - 接口`BatchSetPolicy`新增请求参数 `topic_policy`、`topic`、`partition_policy`、`kafka_data_format`、`topic_name_format`、`partitions_num`、`replication_factor`、`is_fill_materialized_view`、`export_snapshot`
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreatePrePaidPublicip`的请求参数`ip_version`类型变更： `integer` -> `enum`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShrinkInstanceNode`新增响应参数 `order_id`
+
+### HuaweiCloud SDK MPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListEditingJob`新增响应参数 `error_code`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DownloadSlowlog`移除请求参数 `request_id`
+
 # 3.0.78 2022-02-25
 
 ### HuaweiCloud SDK AS

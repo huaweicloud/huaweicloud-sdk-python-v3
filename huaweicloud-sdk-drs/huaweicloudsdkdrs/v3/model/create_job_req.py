@@ -212,7 +212,7 @@ class CreateJobReq:
     def engine_type(self):
         """Gets the engine_type of this CreateJobReq.
 
-        引擎类型，mysql：迁移，同步使用；mongodb：迁移使用；cloudDataGuard-mysql：灾备使用。
+        引擎类型 - mysql：迁移，同步使用 - mongodb：迁移使用 - cloudDataGuard-mysql：灾备使用 - gaussdbv5，postgresql：同步使用
 
         :return: The engine_type of this CreateJobReq.
         :rtype: str
@@ -223,7 +223,7 @@ class CreateJobReq:
     def engine_type(self, engine_type):
         """Sets the engine_type of this CreateJobReq.
 
-        引擎类型，mysql：迁移，同步使用；mongodb：迁移使用；cloudDataGuard-mysql：灾备使用。
+        引擎类型 - mysql：迁移，同步使用 - mongodb：迁移使用 - cloudDataGuard-mysql：灾备使用 - gaussdbv5，postgresql：同步使用
 
         :param engine_type: The engine_type of this CreateJobReq.
         :type: str
@@ -428,7 +428,7 @@ class CreateJobReq:
     def task_type(self):
         """Gets the task_type of this CreateJobReq.
 
-        迁移模式，FULL_TRANS 全量,FULL_INCR_TRANS 全量+增量,INCR_TRANS 增量，灾备场景单主灾备仅支持全量加增量（FULL_INCR_TRANS）  
+        迁移模式，FULL_TRANS 全量,FULL_INCR_TRANS 全量+增量,INCR_TRANS 增量，灾备场景单主灾备仅支持全量加增量（FULL_INCR_TRANS）
 
         :return: The task_type of this CreateJobReq.
         :rtype: str
@@ -439,7 +439,7 @@ class CreateJobReq:
     def task_type(self, task_type):
         """Sets the task_type of this CreateJobReq.
 
-        迁移模式，FULL_TRANS 全量,FULL_INCR_TRANS 全量+增量,INCR_TRANS 增量，灾备场景单主灾备仅支持全量加增量（FULL_INCR_TRANS）  
+        迁移模式，FULL_TRANS 全量,FULL_INCR_TRANS 全量+增量,INCR_TRANS 增量，灾备场景单主灾备仅支持全量加增量（FULL_INCR_TRANS）
 
         :param task_type: The task_type of this CreateJobReq.
         :type: str
@@ -450,7 +450,7 @@ class CreateJobReq:
     def customize_sutnet_id(self):
         """Gets the customize_sutnet_id of this CreateJobReq.
 
-        drs实例所在子网ID
+        DRS实例所在子网ID，对应目标库相同VPC下已创建的子网（subnet）的网络ID，UUID格式。
 
         :return: The customize_sutnet_id of this CreateJobReq.
         :rtype: str
@@ -461,7 +461,7 @@ class CreateJobReq:
     def customize_sutnet_id(self, customize_sutnet_id):
         """Sets the customize_sutnet_id of this CreateJobReq.
 
-        drs实例所在子网ID
+        DRS实例所在子网ID，对应目标库相同VPC下已创建的子网（subnet）的网络ID，UUID格式。
 
         :param customize_sutnet_id: The customize_sutnet_id of this CreateJobReq.
         :type: str
