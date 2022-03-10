@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AlarmID:
+class UpdateLogtankRequestBody:
 
 
     """
@@ -22,16 +22,42 @@ class AlarmID:
     sensitive_list = []
 
     openapi_types = {
+        'logtank': 'UpdateLogtankOption'
     }
 
     attribute_map = {
+        'logtank': 'logtank'
     }
 
-    def __init__(self):
-        """AlarmID - a model defined in huaweicloud sdk"""
+    def __init__(self, logtank=None):
+        """UpdateLogtankRequestBody - a model defined in huaweicloud sdk"""
         
         
+
+        self._logtank = None
         self.discriminator = None
+
+        self.logtank = logtank
+
+    @property
+    def logtank(self):
+        """Gets the logtank of this UpdateLogtankRequestBody.
+
+
+        :return: The logtank of this UpdateLogtankRequestBody.
+        :rtype: UpdateLogtankOption
+        """
+        return self._logtank
+
+    @logtank.setter
+    def logtank(self, logtank):
+        """Sets the logtank of this UpdateLogtankRequestBody.
+
+
+        :param logtank: The logtank of this UpdateLogtankRequestBody.
+        :type: UpdateLogtankOption
+        """
+        self._logtank = logtank
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -75,7 +101,7 @@ class AlarmID:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AlarmID):
+        if not isinstance(other, UpdateLogtankRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

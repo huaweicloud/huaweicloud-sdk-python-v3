@@ -76,7 +76,7 @@ class UpdateFixtedResponseConfig:
     def content_type(self):
         """Gets the content_type of this UpdateFixtedResponseConfig.
 
-        返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json application/json
+        返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json
 
         :return: The content_type of this UpdateFixtedResponseConfig.
         :rtype: str
@@ -87,7 +87,7 @@ class UpdateFixtedResponseConfig:
     def content_type(self, content_type):
         """Sets the content_type of this UpdateFixtedResponseConfig.
 
-        返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json application/json
+        返回body的格式。  取值范围： - text/plain - text/css - text/html - application/javascript - application/json
 
         :param content_type: The content_type of this UpdateFixtedResponseConfig.
         :type: str

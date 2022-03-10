@@ -96,7 +96,7 @@ class AvailabilityZone:
     def protocol(self):
         """Gets the protocol of this AvailabilityZone.
 
-        未售罄的LB规格类别。取值： - L4 表示网络型LB未售罄； - L7 表示应用型LB未售罄。
+        未售罄的LB规格类别。取值： - L4：表示网络型LB未售罄。 - L7：表示应用型LB未售罄。
 
         :return: The protocol of this AvailabilityZone.
         :rtype: list[str]
@@ -107,7 +107,7 @@ class AvailabilityZone:
     def protocol(self, protocol):
         """Sets the protocol of this AvailabilityZone.
 
-        未售罄的LB规格类别。取值： - L4 表示网络型LB未售罄； - L7 表示应用型LB未售罄。
+        未售罄的LB规格类别。取值： - L4：表示网络型LB未售罄。 - L7：表示应用型LB未售罄。
 
         :param protocol: The protocol of this AvailabilityZone.
         :type: list[str]

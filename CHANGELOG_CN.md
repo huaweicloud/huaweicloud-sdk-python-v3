@@ -1,3 +1,109 @@
+# 3.0.80 2022-03-10
+
+### HuaweiCloud SDK BCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`BatchCreateChannels`新增响应参数 `operation_id`
+  - 接口`CreateNewBlockchain`请求参数`fabric_version`改为非必填
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DeleteAddonInstance`请求参数`cluster_id`改为非必填
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowTopUrl`移除请求参数 `X-Auth-Token`
+  - 接口`ShowDomainLocationStats`移除请求参数 `X-Auth-Token`
+  - 接口`ShowDomainItemDetails`移除请求参数 `X-Auth-Token`
+  - 接口`ShowDomainStats`移除请求参数 `X-Auth-Token`
+  - 接口`ShowDomainItemLocationDetails`移除请求参数 `X-Auth-Token`
+
+### HuaweiCloud SDK DWS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListClusterDetails`
+    - `DeleteCluster`
+    - `ResetPassword`
+    - `ListSnapshots`
+    - `CreateSnapshot`
+    - `RestartCluster`
+    - `ListClusters`
+    - `CreateCluster`
+    - `RestoreCluster`
+    - `ResizeCluster`
+    - `ListNodeTypes`
+    - `ListSnapshotDetails`
+    - `DeleteSnapshot`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ELB
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListLogtanks`
+    - `CreateLogtank`
+    - `ShowLogtank`
+    - `UpdateLogtank`
+    - `DeleteLogtank`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListFlavors`新增响应参数 `https_cps`
+  - 接口`ShowFlavor`新增响应参数 `https_cps`
+  - 接口`ListLoadBalancers`请求参数`X-Auth-Token`改为非必填
+  - 接口`CreateLoadBalancer`请求参数`X-Auth-Token`改为非必填
+  - 接口`UpdateIpList`请求参数`X-Auth-Token`改为非必填
+  - 接口`BatchDeleteIpList`请求参数`X-Auth-Token`改为非必填
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListSimCards`响应参数`act_date`类型调整 `date` -> `date-time`
+  - 接口`ShowSimCard`响应参数`act_date`类型调整 `date` -> `date-time`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListLogs`新增响应参数 `count`
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`AddDepartment`新增请求参数 `sortLevel`
+  - 接口`UpdateDepartment`新增请求参数 `sortLevel`
+  - 接口`ShowDeptAndChildDept`新增响应参数 `sortLevel`、`sortLevel`
+  - 接口`SearchDepartmentByName`新增响应参数 `sortLevel`
+
 # 3.0.79 2022-03-07
 
 ### HuaweiCloud SDK CCE

@@ -8,7 +8,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListAlarmResourcesResponse(SdkResponse):
+class ShowLogtankResponse(SdkResponse):
 
 
     """
@@ -22,72 +22,70 @@ class ListAlarmResourcesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'resources': 'list[list[Dimension]]',
-        'count': 'int'
+        'request_id': 'str',
+        'logtank': 'Logtank'
     }
 
     attribute_map = {
-        'resources': 'resources',
-        'count': 'count'
+        'request_id': 'request_id',
+        'logtank': 'logtank'
     }
 
-    def __init__(self, resources=None, count=None):
-        """ListAlarmResourcesResponse - a model defined in huaweicloud sdk"""
+    def __init__(self, request_id=None, logtank=None):
+        """ShowLogtankResponse - a model defined in huaweicloud sdk"""
         
-        super(ListAlarmResourcesResponse, self).__init__()
+        super(ShowLogtankResponse, self).__init__()
 
-        self._resources = None
-        self._count = None
+        self._request_id = None
+        self._logtank = None
         self.discriminator = None
 
-        if resources is not None:
-            self.resources = resources
-        if count is not None:
-            self.count = count
+        if request_id is not None:
+            self.request_id = request_id
+        if logtank is not None:
+            self.logtank = logtank
 
     @property
-    def resources(self):
-        """Gets the resources of this ListAlarmResourcesResponse.
+    def request_id(self):
+        """Gets the request_id of this ShowLogtankResponse.
 
-        资源信息
+        请求ID。  注：自动生成 。
 
-        :return: The resources of this ListAlarmResourcesResponse.
-        :rtype: list[list[Dimension]]
+        :return: The request_id of this ShowLogtankResponse.
+        :rtype: str
         """
-        return self._resources
+        return self._request_id
 
-    @resources.setter
-    def resources(self, resources):
-        """Sets the resources of this ListAlarmResourcesResponse.
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this ShowLogtankResponse.
 
-        资源信息
+        请求ID。  注：自动生成 。
 
-        :param resources: The resources of this ListAlarmResourcesResponse.
-        :type: list[list[Dimension]]
+        :param request_id: The request_id of this ShowLogtankResponse.
+        :type: str
         """
-        self._resources = resources
+        self._request_id = request_id
 
     @property
-    def count(self):
-        """Gets the count of this ListAlarmResourcesResponse.
+    def logtank(self):
+        """Gets the logtank of this ShowLogtankResponse.
 
-        资源总数
 
-        :return: The count of this ListAlarmResourcesResponse.
-        :rtype: int
+        :return: The logtank of this ShowLogtankResponse.
+        :rtype: Logtank
         """
-        return self._count
+        return self._logtank
 
-    @count.setter
-    def count(self, count):
-        """Sets the count of this ListAlarmResourcesResponse.
+    @logtank.setter
+    def logtank(self, logtank):
+        """Sets the logtank of this ShowLogtankResponse.
 
-        资源总数
 
-        :param count: The count of this ListAlarmResourcesResponse.
-        :type: int
+        :param logtank: The logtank of this ShowLogtankResponse.
+        :type: Logtank
         """
-        self._count = count
+        self._logtank = logtank
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -131,7 +129,7 @@ class ListAlarmResourcesResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListAlarmResourcesResponse):
+        if not isinstance(other, ShowLogtankResponse):
             return False
 
         return self.__dict__ == other.__dict__

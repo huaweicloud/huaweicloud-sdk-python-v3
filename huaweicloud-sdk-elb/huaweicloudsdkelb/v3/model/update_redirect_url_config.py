@@ -91,7 +91,7 @@ class UpdateRedirectUrlConfig:
     def host(self):
         """Gets the host of this UpdateRedirectUrlConfig.
 
-        重定向的主机名。字符串只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
+        重定向的主机名。字符串只能包含英文字母、数字、\"-\"、\".\"，必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
 
         :return: The host of this UpdateRedirectUrlConfig.
         :rtype: str
@@ -102,7 +102,7 @@ class UpdateRedirectUrlConfig:
     def host(self, host):
         """Sets the host of this UpdateRedirectUrlConfig.
 
-        重定向的主机名。字符串只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
+        重定向的主机名。字符串只能包含英文字母、数字、\"-\"、\".\"，必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
 
         :param host: The host of this UpdateRedirectUrlConfig.
         :type: str

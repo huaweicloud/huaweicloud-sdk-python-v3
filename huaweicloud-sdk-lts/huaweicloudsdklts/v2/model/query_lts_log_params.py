@@ -263,7 +263,7 @@ class QueryLtsLogParams:
     def limit(self):
         """Gets the limit of this QueryLtsLogParams.
 
-        表示每次查询的日志条数，不填时默认为5000，建议您设置为100。
+        表示每次查询的日志条数，不填时默认为50，建议您设置为100。
 
         :return: The limit of this QueryLtsLogParams.
         :rtype: int
@@ -274,7 +274,7 @@ class QueryLtsLogParams:
     def limit(self, limit):
         """Sets the limit of this QueryLtsLogParams.
 
-        表示每次查询的日志条数，不填时默认为5000，建议您设置为100。
+        表示每次查询的日志条数，不填时默认为50，建议您设置为100。
 
         :param limit: The limit of this QueryLtsLogParams.
         :type: int

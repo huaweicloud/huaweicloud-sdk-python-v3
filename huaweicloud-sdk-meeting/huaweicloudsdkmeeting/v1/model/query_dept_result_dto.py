@@ -33,7 +33,8 @@ class QueryDeptResultDTO:
         'corp_id': 'str',
         'in_permission': 'str',
         'out_permission': 'str',
-        'designated_out_dept_codes': 'list[IdMarkDTO]'
+        'designated_out_dept_codes': 'list[IdMarkDTO]',
+        'sort_level': 'int'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class QueryDeptResultDTO:
         'corp_id': 'corpId',
         'in_permission': 'inPermission',
         'out_permission': 'outPermission',
-        'designated_out_dept_codes': 'designatedOutDeptCodes'
+        'designated_out_dept_codes': 'designatedOutDeptCodes',
+        'sort_level': 'sortLevel'
     }
 
-    def __init__(self, dept_code=None, dept_level=None, dept_name=None, dept_name_path=None, is_leaf_node=None, parent_dept_code=None, dept_code_path=None, note=None, corp_id=None, in_permission=None, out_permission=None, designated_out_dept_codes=None):
+    def __init__(self, dept_code=None, dept_level=None, dept_name=None, dept_name_path=None, is_leaf_node=None, parent_dept_code=None, dept_code_path=None, note=None, corp_id=None, in_permission=None, out_permission=None, designated_out_dept_codes=None, sort_level=None):
         """QueryDeptResultDTO - a model defined in huaweicloud sdk"""
         
         
@@ -68,6 +70,7 @@ class QueryDeptResultDTO:
         self._in_permission = None
         self._out_permission = None
         self._designated_out_dept_codes = None
+        self._sort_level = None
         self.discriminator = None
 
         if dept_code is not None:
@@ -94,6 +97,8 @@ class QueryDeptResultDTO:
             self.out_permission = out_permission
         if designated_out_dept_codes is not None:
             self.designated_out_dept_codes = designated_out_dept_codes
+        if sort_level is not None:
+            self.sort_level = sort_level
 
     @property
     def dept_code(self):
@@ -358,6 +363,28 @@ class QueryDeptResultDTO:
         :type: list[IdMarkDTO]
         """
         self._designated_out_dept_codes = designated_out_dept_codes
+
+    @property
+    def sort_level(self):
+        """Gets the sort_level of this QueryDeptResultDTO.
+
+        部门排序号
+
+        :return: The sort_level of this QueryDeptResultDTO.
+        :rtype: int
+        """
+        return self._sort_level
+
+    @sort_level.setter
+    def sort_level(self, sort_level):
+        """Sets the sort_level of this QueryDeptResultDTO.
+
+        部门排序号
+
+        :param sort_level: The sort_level of this QueryDeptResultDTO.
+        :type: int
+        """
+        self._sort_level = sort_level
 
     def to_dict(self):
         """Returns the model properties as a dict"""

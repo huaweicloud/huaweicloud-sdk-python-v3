@@ -41,7 +41,8 @@ class DeleteAddonInstanceRequest:
         self.discriminator = None
 
         self.id = id
-        self.cluster_id = cluster_id
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
 
     @property
     def id(self):

@@ -73,7 +73,7 @@ class ListenerIpGroup:
     def enable_ipgroup(self):
         """Gets the enable_ipgroup of this ListenerIpGroup.
 
-        访问控制组的状态。 True:开启访问控制； Flase：关闭访问控制； 开启访问控制的监听器，允许直接删除。
+        访问控制组的状态。 True:开启访问控制； False：关闭访问控制； 开启访问控制的监听器，允许直接删除。
 
         :return: The enable_ipgroup of this ListenerIpGroup.
         :rtype: bool
@@ -84,7 +84,7 @@ class ListenerIpGroup:
     def enable_ipgroup(self, enable_ipgroup):
         """Sets the enable_ipgroup of this ListenerIpGroup.
 
-        访问控制组的状态。 True:开启访问控制； Flase：关闭访问控制； 开启访问控制的监听器，允许直接删除。
+        访问控制组的状态。 True:开启访问控制； False：关闭访问控制； 开启访问控制的监听器，允许直接删除。
 
         :param enable_ipgroup: The enable_ipgroup of this ListenerIpGroup.
         :type: bool

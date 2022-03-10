@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateAlarmResponse(SdkResponse):
+class CreateLogtankRequest:
 
 
     """
@@ -22,45 +22,43 @@ class CreateAlarmResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'alarm_id': 'str'
+        'body': 'CreateLogtankRequestBody'
     }
 
     attribute_map = {
-        'alarm_id': 'alarm_id'
+        'body': 'body'
     }
 
-    def __init__(self, alarm_id=None):
-        """CreateAlarmResponse - a model defined in huaweicloud sdk"""
+    def __init__(self, body=None):
+        """CreateLogtankRequest - a model defined in huaweicloud sdk"""
         
-        super(CreateAlarmResponse, self).__init__()
+        
 
-        self._alarm_id = None
+        self._body = None
         self.discriminator = None
 
-        if alarm_id is not None:
-            self.alarm_id = alarm_id
+        if body is not None:
+            self.body = body
 
     @property
-    def alarm_id(self):
-        """Gets the alarm_id of this CreateAlarmResponse.
+    def body(self):
+        """Gets the body of this CreateLogtankRequest.
 
-        告警的id以al开头，包含22个数字或字母
 
-        :return: The alarm_id of this CreateAlarmResponse.
-        :rtype: str
+        :return: The body of this CreateLogtankRequest.
+        :rtype: CreateLogtankRequestBody
         """
-        return self._alarm_id
+        return self._body
 
-    @alarm_id.setter
-    def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this CreateAlarmResponse.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this CreateLogtankRequest.
 
-        告警的id以al开头，包含22个数字或字母
 
-        :param alarm_id: The alarm_id of this CreateAlarmResponse.
-        :type: str
+        :param body: The body of this CreateLogtankRequest.
+        :type: CreateLogtankRequestBody
         """
-        self._alarm_id = alarm_id
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -104,7 +102,7 @@ class CreateAlarmResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateAlarmResponse):
+        if not isinstance(other, CreateLogtankRequest):
             return False
 
         return self.__dict__ == other.__dict__

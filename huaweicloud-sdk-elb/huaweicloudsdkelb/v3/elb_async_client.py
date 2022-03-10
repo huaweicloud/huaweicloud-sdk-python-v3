@@ -684,6 +684,69 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_logtank_async(self, request):
+        """创建云日志
+
+        创建云日志
+
+        :param CreateLogtankRequest request
+        :return: CreateLogtankResponse
+        """
+        return self.create_logtank_with_http_info(request)
+
+    def create_logtank_with_http_info(self, request):
+        """创建云日志
+
+        创建云日志
+
+        :param CreateLogtankRequest request
+        :return: CreateLogtankResponse
+        """
+
+        all_params = ['create_logtank_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/logtanks',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateLogtankResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_member_async(self, request):
         """创建后端服务器
 
@@ -1255,6 +1318,69 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_logtank_async(self, request):
+        """删除云日志
+
+        删除云日志。
+
+        :param DeleteLogtankRequest request
+        :return: DeleteLogtankResponse
+        """
+        return self.delete_logtank_with_http_info(request)
+
+    def delete_logtank_with_http_info(self, request):
+        """删除云日志
+
+        删除云日志。
+
+        :param DeleteLogtankRequest request
+        :return: DeleteLogtankResponse
+        """
+
+        all_params = ['logtank_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'logtank_id' in local_var_params:
+            path_params['logtank_id'] = local_var_params['logtank_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/logtanks/{logtank_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteLogtankResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_member_async(self, request):
         """删除后端服务器
 
@@ -1551,7 +1677,7 @@ class ElbAsyncClient(Client):
     def list_availability_zones_async(self, request):
         """查询可用区列表
 
-        返回租户创建LB时可使用的可用区集合列表情况。  默认情况下，会返回一个可用区集合。在（如创建LB）设置可用区时，填写的可用区必须包含在可用区集合中、为这个可用区集合的子集。  [特殊场景下，部分客户要求负载均衡只能创建在指定可用区集合中，此时会返回客户定制的可用区集合。返回可用区集合可能为一个也可能为多个，比如列表有两个可用区集合[az1,az2], [az2,az3]。在创建负载均衡器时，可以选择创建在多个可用区，但所选的多个可用区必须同属于其中一个可用区集合，如可以选az2和az3，但不能选择az1和az3。你可以选择多个可用区，只要这些可用区在一个子集中](tag:hws,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
+        返回租户创建LB时可使用的可用区集合列表情况。  默认情况下，会返回一个可用区集合。在（如创建LB）设置可用区时，填写的可用区必须包含在可用区集合中、为这个可用区集合的子集。  [特殊场景下，部分客户要求负载均衡只能创建在指定可用区集合中，此时会返回客户定制的可用区集合。返回可用区集合可能为一个也可能为多个，比如列表有两个可用区集合[az1,az2], [az2,az3]。在创建负载均衡器时，可以选择创建在多个可用区，但所选的多个可用区必须同属于其中一个可用区集合，如可以选az2和az3，但不能选择az1和az3。你可以选择多个可用区，只要这些可用区在一个子集中](tag:hws,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
 
         :param ListAvailabilityZonesRequest request
         :return: ListAvailabilityZonesResponse
@@ -1561,7 +1687,7 @@ class ElbAsyncClient(Client):
     def list_availability_zones_with_http_info(self, request):
         """查询可用区列表
 
-        返回租户创建LB时可使用的可用区集合列表情况。  默认情况下，会返回一个可用区集合。在（如创建LB）设置可用区时，填写的可用区必须包含在可用区集合中、为这个可用区集合的子集。  [特殊场景下，部分客户要求负载均衡只能创建在指定可用区集合中，此时会返回客户定制的可用区集合。返回可用区集合可能为一个也可能为多个，比如列表有两个可用区集合[az1,az2], [az2,az3]。在创建负载均衡器时，可以选择创建在多个可用区，但所选的多个可用区必须同属于其中一个可用区集合，如可以选az2和az3，但不能选择az1和az3。你可以选择多个可用区，只要这些可用区在一个子集中](tag:hws,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
+        返回租户创建LB时可使用的可用区集合列表情况。  默认情况下，会返回一个可用区集合。在（如创建LB）设置可用区时，填写的可用区必须包含在可用区集合中、为这个可用区集合的子集。  [特殊场景下，部分客户要求负载均衡只能创建在指定可用区集合中，此时会返回客户定制的可用区集合。返回可用区集合可能为一个也可能为多个，比如列表有两个可用区集合[az1,az2], [az2,az3]。在创建负载均衡器时，可以选择创建在多个可用区，但所选的多个可用区必须同属于其中一个可用区集合，如可以选az2和az3，但不能选择az1和az3。你可以选择多个可用区，只要这些可用区在一个子集中](tag:hws,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
 
         :param ListAvailabilityZonesRequest request
         :return: ListAvailabilityZonesResponse
@@ -2355,6 +2481,88 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListLoadBalancersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_logtanks_async(self, request):
+        """云日志列表
+
+        云日志列表
+
+        :param ListLogtanksRequest request
+        :return: ListLogtanksResponse
+        """
+        return self.list_logtanks_with_http_info(request)
+
+    def list_logtanks_with_http_info(self, request):
+        """云日志列表
+
+        云日志列表
+
+        :param ListLogtanksRequest request
+        :return: ListLogtanksResponse
+        """
+
+        all_params = ['limit', 'marker', 'page_reverse', 'enterprise_project_id', 'id', 'loadbalancer_id', 'log_group_id', 'log_topic_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'csv'
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
+        if 'loadbalancer_id' in local_var_params:
+            query_params.append(('loadbalancer_id', local_var_params['loadbalancer_id']))
+            collection_formats['loadbalancer_id'] = 'csv'
+        if 'log_group_id' in local_var_params:
+            query_params.append(('log_group_id', local_var_params['log_group_id']))
+            collection_formats['log_group_id'] = 'csv'
+        if 'log_topic_id' in local_var_params:
+            query_params.append(('log_topic_id', local_var_params['log_topic_id']))
+            collection_formats['log_topic_id'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/logtanks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListLogtanksResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3227,7 +3435,7 @@ class ElbAsyncClient(Client):
     def show_load_balancer_status_async(self, request):
         """查询负载均衡器状态树
 
-        查询负载均衡器状态树，包括负载均衡器及其关联的子资源的状态信息。 注意：该接口中的operating_status不一定与对应资源的operating_status相同。如：当Member的admin_state_up=false且operating_status=OFFLINE时，该接口返回member的operating_status=DISABLE。
+        查询负载均衡器状态树，包括负载均衡器及其关联的子资源的状态信息。  注意：该接口中的operating_status不一定与对应资源的operating_status相同。如：当Member的admin_state_up=false且operating_status=OFFLINE时，该接口返回member的operating_status=DISABLE。
 
         :param ShowLoadBalancerStatusRequest request
         :return: ShowLoadBalancerStatusResponse
@@ -3237,7 +3445,7 @@ class ElbAsyncClient(Client):
     def show_load_balancer_status_with_http_info(self, request):
         """查询负载均衡器状态树
 
-        查询负载均衡器状态树，包括负载均衡器及其关联的子资源的状态信息。 注意：该接口中的operating_status不一定与对应资源的operating_status相同。如：当Member的admin_state_up=false且operating_status=OFFLINE时，该接口返回member的operating_status=DISABLE。
+        查询负载均衡器状态树，包括负载均衡器及其关联的子资源的状态信息。  注意：该接口中的operating_status不一定与对应资源的operating_status相同。如：当Member的admin_state_up=false且operating_status=OFFLINE时，该接口返回member的operating_status=DISABLE。
 
         :param ShowLoadBalancerStatusRequest request
         :return: ShowLoadBalancerStatusResponse
@@ -3281,6 +3489,69 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowLoadBalancerStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_logtank_async(self, request):
+        """云日志配置详情
+
+        云日志详情。
+
+        :param ShowLogtankRequest request
+        :return: ShowLogtankResponse
+        """
+        return self.show_logtank_with_http_info(request)
+
+    def show_logtank_with_http_info(self, request):
+        """云日志配置详情
+
+        云日志详情。
+
+        :param ShowLogtankRequest request
+        :return: ShowLogtankResponse
+        """
+
+        all_params = ['logtank_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'logtank_id' in local_var_params:
+            path_params['logtank_id'] = local_var_params['logtank_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/logtanks/{logtank_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowLogtankResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3931,6 +4202,71 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_logtank_async(self, request):
+        """更新云日志
+
+        更新云日志
+
+        :param UpdateLogtankRequest request
+        :return: UpdateLogtankResponse
+        """
+        return self.update_logtank_with_http_info(request)
+
+    def update_logtank_with_http_info(self, request):
+        """更新云日志
+
+        更新云日志
+
+        :param UpdateLogtankRequest request
+        :return: UpdateLogtankResponse
+        """
+
+        all_params = ['logtank_id', 'logtank']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'logtank_id' in local_var_params:
+            path_params['logtank_id'] = local_var_params['logtank_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/logtanks/{logtank_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateLogtankResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_member_async(self, request):
         """更新后端服务器
 
@@ -4329,7 +4665,7 @@ class ElbAsyncClient(Client):
     def create_ip_group_async(self, request):
         """创建IP地址组
 
-        创建IP地址组。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0&#58;0&#58;0&#58;0&#58;0&#58;0&#58;0&#58;1与&#58;&#58;1与&#58;&#58;1/128视为重复，会只保留其中一个写入。
+        创建IP地址组。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。 [不支持IPv6，请勿传入IPv6地址。](tag:dt,dt_test)
 
         :param CreateIpGroupRequest request
         :return: CreateIpGroupResponse
@@ -4339,7 +4675,7 @@ class ElbAsyncClient(Client):
     def create_ip_group_with_http_info(self, request):
         """创建IP地址组
 
-        创建IP地址组。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0&#58;0&#58;0&#58;0&#58;0&#58;0&#58;0&#58;1与&#58;&#58;1与&#58;&#58;1/128视为重复，会只保留其中一个写入。
+        创建IP地址组。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。 [不支持IPv6，请勿传入IPv6地址。](tag:dt,dt_test)
 
         :param CreateIpGroupRequest request
         :return: CreateIpGroupResponse
@@ -4597,7 +4933,7 @@ class ElbAsyncClient(Client):
     def update_ip_group_async(self, request):
         """更新IP地址组
 
-        更新IP地址组，只支持全量更新IP。即IP地址组中的ip_list将被全量覆盖，不在请求参数中的IP地址将被移除。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0&#58;0&#58;0&#58;0&#58;0&#58;0&#58;0&#58;1与&#58;&#58;1与&#58;&#58;1/128视为重复，会只保留其中一个写入。
+        更新IP地址组，只支持全量更新IP。即IP地址组中的ip_list将被全量覆盖，不在请求参数中的IP地址将被移除。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。 [不支持IPv6，请勿传入IPv6地址。](tag:dt,dt_test)
 
         :param UpdateIpGroupRequest request
         :return: UpdateIpGroupResponse
@@ -4607,7 +4943,7 @@ class ElbAsyncClient(Client):
     def update_ip_group_with_http_info(self, request):
         """更新IP地址组
 
-        更新IP地址组，只支持全量更新IP。即IP地址组中的ip_list将被全量覆盖，不在请求参数中的IP地址将被移除。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0&#58;0&#58;0&#58;0&#58;0&#58;0&#58;0&#58;1与&#58;&#58;1与&#58;&#58;1/128视为重复，会只保留其中一个写入。
+        更新IP地址组，只支持全量更新IP。即IP地址组中的ip_list将被全量覆盖，不在请求参数中的IP地址将被移除。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。 [不支持IPv6，请勿传入IPv6地址。](tag:dt,dt_test)
 
         :param UpdateIpGroupRequest request
         :return: UpdateIpGroupResponse

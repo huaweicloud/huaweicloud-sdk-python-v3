@@ -143,7 +143,7 @@ class HealthMonitor:
     def domain_name(self):
         """Gets the domain_name of this HealthMonitor.
 
-        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明： - 仅当type为HTTP时生效。
+        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、'-'、'.'。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明： - 仅当type为HTTP时生效。
 
         :return: The domain_name of this HealthMonitor.
         :rtype: str
@@ -154,7 +154,7 @@ class HealthMonitor:
     def domain_name(self, domain_name):
         """Sets the domain_name of this HealthMonitor.
 
-        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明： - 仅当type为HTTP时生效。
+        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、'-'、'.'。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明： - 仅当type为HTTP时生效。
 
         :param domain_name: The domain_name of this HealthMonitor.
         :type: str
@@ -187,7 +187,7 @@ class HealthMonitor:
     def http_method(self):
         """Gets the http_method of this HealthMonitor.
 
-        HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。 使用说明： - 仅当type为HTTP时生效。 不支持该字段，请勿使用。
+        HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。 使用说明：  - 仅当type为HTTP时生效。 不支持该字段，请勿使用。
 
         :return: The http_method of this HealthMonitor.
         :rtype: str
@@ -198,7 +198,7 @@ class HealthMonitor:
     def http_method(self, http_method):
         """Sets the http_method of this HealthMonitor.
 
-        HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。 使用说明： - 仅当type为HTTP时生效。 不支持该字段，请勿使用。
+        HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。 使用说明：  - 仅当type为HTTP时生效。 不支持该字段，请勿使用。
 
         :param http_method: The http_method of this HealthMonitor.
         :type: str

@@ -30,7 +30,7 @@ class ShowSimCardResponse(SdkResponse):
         'sim_status': 'int',
         'device_status': 'int',
         'device_model': 'str',
-        'act_date': 'date',
+        'act_date': 'datetime',
         'device_status_date': 'date',
         'node_id': 'str',
         'iccid': 'str',
@@ -408,7 +408,7 @@ class ShowSimCardResponse(SdkResponse):
         激活日期 例如2020-01-31T16:00:00.000Z
 
         :return: The act_date of this ShowSimCardResponse.
-        :rtype: date
+        :rtype: datetime
         """
         return self._act_date
 
@@ -419,7 +419,7 @@ class ShowSimCardResponse(SdkResponse):
         激活日期 例如2020-01-31T16:00:00.000Z
 
         :param act_date: The act_date of this ShowSimCardResponse.
-        :type: date
+        :type: datetime
         """
         self._act_date = act_date
 

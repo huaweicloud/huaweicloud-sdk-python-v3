@@ -34,7 +34,8 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
         'in_permission': 'str',
         'out_permission': 'str',
         'designated_out_dept_codes': 'list[IdMarkDTO]',
-        'child_depts': 'list[QueryDeptResultDTO]'
+        'child_depts': 'list[QueryDeptResultDTO]',
+        'sort_level': 'int'
     }
 
     attribute_map = {
@@ -50,10 +51,11 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
         'in_permission': 'inPermission',
         'out_permission': 'outPermission',
         'designated_out_dept_codes': 'designatedOutDeptCodes',
-        'child_depts': 'childDepts'
+        'child_depts': 'childDepts',
+        'sort_level': 'sortLevel'
     }
 
-    def __init__(self, corp_id=None, dept_code=None, dept_level=None, dept_name=None, dept_name_path=None, is_leaf_node=None, parent_dept_code=None, dept_code_path=None, note=None, in_permission=None, out_permission=None, designated_out_dept_codes=None, child_depts=None):
+    def __init__(self, corp_id=None, dept_code=None, dept_level=None, dept_name=None, dept_name_path=None, is_leaf_node=None, parent_dept_code=None, dept_code_path=None, note=None, in_permission=None, out_permission=None, designated_out_dept_codes=None, child_depts=None, sort_level=None):
         """ShowDeptAndChildDeptResponse - a model defined in huaweicloud sdk"""
         
         super(ShowDeptAndChildDeptResponse, self).__init__()
@@ -71,6 +73,7 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
         self._out_permission = None
         self._designated_out_dept_codes = None
         self._child_depts = None
+        self._sort_level = None
         self.discriminator = None
 
         if corp_id is not None:
@@ -99,6 +102,8 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
             self.designated_out_dept_codes = designated_out_dept_codes
         if child_depts is not None:
             self.child_depts = child_depts
+        if sort_level is not None:
+            self.sort_level = sort_level
 
     @property
     def corp_id(self):
@@ -385,6 +390,28 @@ class ShowDeptAndChildDeptResponse(SdkResponse):
         :type: list[QueryDeptResultDTO]
         """
         self._child_depts = child_depts
+
+    @property
+    def sort_level(self):
+        """Gets the sort_level of this ShowDeptAndChildDeptResponse.
+
+        部门排序号
+
+        :return: The sort_level of this ShowDeptAndChildDeptResponse.
+        :rtype: int
+        """
+        return self._sort_level
+
+    @sort_level.setter
+    def sort_level(self, sort_level):
+        """Sets the sort_level of this ShowDeptAndChildDeptResponse.
+
+        部门排序号
+
+        :param sort_level: The sort_level of this ShowDeptAndChildDeptResponse.
+        :type: int
+        """
+        self._sort_level = sort_level
 
     def to_dict(self):
         """Returns the model properties as a dict"""

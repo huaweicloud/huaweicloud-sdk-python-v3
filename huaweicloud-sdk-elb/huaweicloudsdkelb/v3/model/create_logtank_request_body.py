@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DeleteAlarmResourcesRequest:
+class CreateLogtankRequestBody:
 
 
     """
@@ -22,69 +22,42 @@ class DeleteAlarmResourcesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'alarm_id': 'str',
-        'body': 'ResourcesReqV2'
+        'logtank': 'CreateLogtankOption'
     }
 
     attribute_map = {
-        'alarm_id': 'alarm_id',
-        'body': 'body'
+        'logtank': 'logtank'
     }
 
-    def __init__(self, alarm_id=None, body=None):
-        """DeleteAlarmResourcesRequest - a model defined in huaweicloud sdk"""
+    def __init__(self, logtank=None):
+        """CreateLogtankRequestBody - a model defined in huaweicloud sdk"""
         
         
 
-        self._alarm_id = None
-        self._body = None
+        self._logtank = None
         self.discriminator = None
 
-        self.alarm_id = alarm_id
-        if body is not None:
-            self.body = body
+        self.logtank = logtank
 
     @property
-    def alarm_id(self):
-        """Gets the alarm_id of this DeleteAlarmResourcesRequest.
+    def logtank(self):
+        """Gets the logtank of this CreateLogtankRequestBody.
 
-        Alarm实例ID
 
-        :return: The alarm_id of this DeleteAlarmResourcesRequest.
-        :rtype: str
+        :return: The logtank of this CreateLogtankRequestBody.
+        :rtype: CreateLogtankOption
         """
-        return self._alarm_id
+        return self._logtank
 
-    @alarm_id.setter
-    def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this DeleteAlarmResourcesRequest.
+    @logtank.setter
+    def logtank(self, logtank):
+        """Sets the logtank of this CreateLogtankRequestBody.
 
-        Alarm实例ID
 
-        :param alarm_id: The alarm_id of this DeleteAlarmResourcesRequest.
-        :type: str
+        :param logtank: The logtank of this CreateLogtankRequestBody.
+        :type: CreateLogtankOption
         """
-        self._alarm_id = alarm_id
-
-    @property
-    def body(self):
-        """Gets the body of this DeleteAlarmResourcesRequest.
-
-
-        :return: The body of this DeleteAlarmResourcesRequest.
-        :rtype: ResourcesReqV2
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        """Sets the body of this DeleteAlarmResourcesRequest.
-
-
-        :param body: The body of this DeleteAlarmResourcesRequest.
-        :type: ResourcesReqV2
-        """
-        self._body = body
+        self._logtank = logtank
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -128,7 +101,7 @@ class DeleteAlarmResourcesRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeleteAlarmResourcesRequest):
+        if not isinstance(other, CreateLogtankRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

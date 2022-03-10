@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DeleteAlarmRequest:
+class DeleteLogtankResponse(SdkResponse):
 
 
     """
@@ -22,44 +22,16 @@ class DeleteAlarmRequest:
     sensitive_list = []
 
     openapi_types = {
-        'alarm_id': 'str'
     }
 
     attribute_map = {
-        'alarm_id': 'alarm_id'
     }
 
-    def __init__(self, alarm_id=None):
-        """DeleteAlarmRequest - a model defined in huaweicloud sdk"""
+    def __init__(self):
+        """DeleteLogtankResponse - a model defined in huaweicloud sdk"""
         
-        
-
-        self._alarm_id = None
+        super(DeleteLogtankResponse, self).__init__()
         self.discriminator = None
-
-        self.alarm_id = alarm_id
-
-    @property
-    def alarm_id(self):
-        """Gets the alarm_id of this DeleteAlarmRequest.
-
-        Alarm实例ID
-
-        :return: The alarm_id of this DeleteAlarmRequest.
-        :rtype: str
-        """
-        return self._alarm_id
-
-    @alarm_id.setter
-    def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this DeleteAlarmRequest.
-
-        Alarm实例ID
-
-        :param alarm_id: The alarm_id of this DeleteAlarmRequest.
-        :type: str
-        """
-        self._alarm_id = alarm_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -103,7 +75,7 @@ class DeleteAlarmRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeleteAlarmRequest):
+        if not isinstance(other, DeleteLogtankResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -26,7 +26,8 @@ class FlavorInfo:
         'cps': 'int',
         'qps': 'int',
         'bandwidth': 'int',
-        'lcu': 'int'
+        'lcu': 'int',
+        'https_cps': 'int'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class FlavorInfo:
         'cps': 'cps',
         'qps': 'qps',
         'bandwidth': 'bandwidth',
-        'lcu': 'lcu'
+        'lcu': 'lcu',
+        'https_cps': 'https_cps'
     }
 
-    def __init__(self, connection=None, cps=None, qps=None, bandwidth=None, lcu=None):
+    def __init__(self, connection=None, cps=None, qps=None, bandwidth=None, lcu=None, https_cps=None):
         """FlavorInfo - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +49,7 @@ class FlavorInfo:
         self._qps = None
         self._bandwidth = None
         self._lcu = None
+        self._https_cps = None
         self.discriminator = None
 
         self.connection = connection
@@ -57,6 +60,8 @@ class FlavorInfo:
             self.bandwidth = bandwidth
         if lcu is not None:
             self.lcu = lcu
+        if https_cps is not None:
+            self.https_cps = https_cps
 
     @property
     def connection(self):
@@ -150,7 +155,7 @@ class FlavorInfo:
     def lcu(self):
         """Gets the lcu of this FlavorInfo.
 
-        flavor对应的lcu数量。
+        当前flavor对应的lcu数量。LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
 
         :return: The lcu of this FlavorInfo.
         :rtype: int
@@ -161,12 +166,34 @@ class FlavorInfo:
     def lcu(self, lcu):
         """Sets the lcu of this FlavorInfo.
 
-        flavor对应的lcu数量。
+        当前flavor对应的lcu数量。LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
 
         :param lcu: The lcu of this FlavorInfo.
         :type: int
         """
         self._lcu = lcu
+
+    @property
+    def https_cps(self):
+        """Gets the https_cps of this FlavorInfo.
+
+        https新建连接数。
+
+        :return: The https_cps of this FlavorInfo.
+        :rtype: int
+        """
+        return self._https_cps
+
+    @https_cps.setter
+    def https_cps(self, https_cps):
+        """Sets the https_cps of this FlavorInfo.
+
+        https新建连接数。
+
+        :param https_cps: The https_cps of this FlavorInfo.
+        :type: int
+        """
+        self._https_cps = https_cps
 
     def to_dict(self):
         """Returns the model properties as a dict"""

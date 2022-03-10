@@ -184,7 +184,7 @@ class CreateInstanceRequestBody:
     def availability_zone(self):
         """Gets the availability_zone of this CreateInstanceRequestBody.
 
-        可用区ID。非专属云用户可以选择多个AZ，创建跨AZ的集群。专属云用户暂不支持创建跨AZ的集群。取值：非空。
+        可用区ID。非专属云用户可以选择多个AZ，创建跨AZ的集群。专属云用户暂不支持创建跨AZ的集群。取值：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :return: The availability_zone of this CreateInstanceRequestBody.
         :rtype: str
@@ -195,7 +195,7 @@ class CreateInstanceRequestBody:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this CreateInstanceRequestBody.
 
-        可用区ID。非专属云用户可以选择多个AZ，创建跨AZ的集群。专属云用户暂不支持创建跨AZ的集群。取值：非空。
+        可用区ID。非专属云用户可以选择多个AZ，创建跨AZ的集群。专属云用户暂不支持创建跨AZ的集群。取值：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :param availability_zone: The availability_zone of this CreateInstanceRequestBody.
         :type: str

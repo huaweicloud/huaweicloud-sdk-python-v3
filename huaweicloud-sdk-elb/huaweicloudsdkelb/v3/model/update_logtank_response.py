@@ -8,7 +8,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DeleteResourceGroupsResourcesBatchResponse(SdkResponse):
+class UpdateLogtankResponse(SdkResponse):
 
 
     """
@@ -22,16 +22,70 @@ class DeleteResourceGroupsResourcesBatchResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'request_id': 'str',
+        'logtank': 'Logtank'
     }
 
     attribute_map = {
+        'request_id': 'request_id',
+        'logtank': 'logtank'
     }
 
-    def __init__(self):
-        """DeleteResourceGroupsResourcesBatchResponse - a model defined in huaweicloud sdk"""
+    def __init__(self, request_id=None, logtank=None):
+        """UpdateLogtankResponse - a model defined in huaweicloud sdk"""
         
-        super(DeleteResourceGroupsResourcesBatchResponse, self).__init__()
+        super(UpdateLogtankResponse, self).__init__()
+
+        self._request_id = None
+        self._logtank = None
         self.discriminator = None
+
+        if request_id is not None:
+            self.request_id = request_id
+        if logtank is not None:
+            self.logtank = logtank
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this UpdateLogtankResponse.
+
+        请求ID。  注：自动生成 。
+
+        :return: The request_id of this UpdateLogtankResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this UpdateLogtankResponse.
+
+        请求ID。  注：自动生成 。
+
+        :param request_id: The request_id of this UpdateLogtankResponse.
+        :type: str
+        """
+        self._request_id = request_id
+
+    @property
+    def logtank(self):
+        """Gets the logtank of this UpdateLogtankResponse.
+
+
+        :return: The logtank of this UpdateLogtankResponse.
+        :rtype: Logtank
+        """
+        return self._logtank
+
+    @logtank.setter
+    def logtank(self, logtank):
+        """Sets the logtank of this UpdateLogtankResponse.
+
+
+        :param logtank: The logtank of this UpdateLogtankResponse.
+        :type: Logtank
+        """
+        self._logtank = logtank
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -75,7 +129,7 @@ class DeleteResourceGroupsResourcesBatchResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeleteResourceGroupsResourcesBatchResponse):
+        if not isinstance(other, UpdateLogtankResponse):
             return False
 
         return self.__dict__ == other.__dict__

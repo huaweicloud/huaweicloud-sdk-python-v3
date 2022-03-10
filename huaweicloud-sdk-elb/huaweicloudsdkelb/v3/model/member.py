@@ -220,7 +220,7 @@ class Member:
     def subnet_cidr_id(self):
         """Gets the subnet_cidr_id of this Member.
 
-        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。 若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。 使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明：  - 该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :return: The subnet_cidr_id of this Member.
         :rtype: str
@@ -231,7 +231,7 @@ class Member:
     def subnet_cidr_id(self, subnet_cidr_id):
         """Sets the subnet_cidr_id of this Member.
 
-        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。 若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。 使用说明： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明：  - 该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :param subnet_cidr_id: The subnet_cidr_id of this Member.
         :type: str
@@ -264,7 +264,7 @@ class Member:
     def weight(self):
         """Gets the weight of this Member.
 
-        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 取值：0-100，默认1。 使用说明： - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
+        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 取值：0-100，默认1。 使用说明：  - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
 
         :return: The weight of this Member.
         :rtype: int
@@ -275,7 +275,7 @@ class Member:
     def weight(self, weight):
         """Sets the weight of this Member.
 
-        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 取值：0-100，默认1。 使用说明： - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
+        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 取值：0-100，默认1。 使用说明：  - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
 
         :param weight: The weight of this Member.
         :type: int
@@ -286,7 +286,7 @@ class Member:
     def address(self):
         """Gets the address of this Member.
 
-        后端服务器对应的IP地址。 使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        后端服务器对应的IP地址。 使用说明：  - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。  - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :return: The address of this Member.
         :rtype: str
@@ -297,7 +297,7 @@ class Member:
     def address(self, address):
         """Sets the address of this Member.
 
-        后端服务器对应的IP地址。 使用说明： - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。 - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        后端服务器对应的IP地址。 使用说明：  - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。  - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :param address: The address of this Member.
         :type: str
@@ -330,7 +330,7 @@ class Member:
     def device_owner(self):
         """Gets the device_owner of this Member.
 
-        设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute&#58;{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
+        设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute：{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
 
         :return: The device_owner of this Member.
         :rtype: str
@@ -341,7 +341,7 @@ class Member:
     def device_owner(self, device_owner):
         """Sets the device_owner of this Member.
 
-        设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute&#58;{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
+        设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute：{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
 
         :param device_owner: The device_owner of this Member.
         :type: str
@@ -352,7 +352,7 @@ class Member:
     def device_id(self):
         """Gets the device_id of this Member.
 
-        关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
+        关联的ECS ID，为空表示后端服务器未关联到ECS。
 
         :return: The device_id of this Member.
         :rtype: str
@@ -363,7 +363,7 @@ class Member:
     def device_id(self, device_id):
         """Sets the device_id of this Member.
 
-        关联的ECS ID，为空表示后端服务器未关联到ECS。  不支持该字段，请勿使用。
+        关联的ECS ID，为空表示后端服务器未关联到ECS。
 
         :param device_id: The device_id of this Member.
         :type: str
@@ -440,7 +440,7 @@ class Member:
     def instance_id(self):
         """Gets the instance_id of this Member.
 
-        member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）
+        member关联的实例ID，空表示跨VPC场景的member。
 
         :return: The instance_id of this Member.
         :rtype: str
@@ -451,7 +451,7 @@ class Member:
     def instance_id(self, instance_id):
         """Sets the instance_id of this Member.
 
-        member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）
+        member关联的实例ID，空表示跨VPC场景的member。
 
         :param instance_id: The instance_id of this Member.
         :type: str

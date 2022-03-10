@@ -224,7 +224,7 @@ class ClusterSpec:
     def platform_version(self):
         """Gets the platform_version of this ClusterSpec.
 
-        CCE集群平台版本号，仅供查看，不支持创建指定，集群创建时自动选择对应集群版本的最新平台版本。
+        CCE集群平台版本号，表示集群版本(version)下的内部版本。用于跟踪某一集群版本内的迭代，集群版本内唯一，跨集群版本重新计数。不支持用户指定，集群创建时自动选择对应集群版本的最新平台版本。   platformVersion格式为：cce.X.Y   - X: 表示内部特性版本。集群版本中特性或者补丁修复，或者OS支持等变更场景。其值从1开始单调递增。  - Y: 表示内部特性版本的补丁版本。仅用于特性版本上线后的软件包更新，不涉及其他修改。其值从0开始单调递增。
 
         :return: The platform_version of this ClusterSpec.
         :rtype: str
@@ -235,7 +235,7 @@ class ClusterSpec:
     def platform_version(self, platform_version):
         """Sets the platform_version of this ClusterSpec.
 
-        CCE集群平台版本号，仅供查看，不支持创建指定，集群创建时自动选择对应集群版本的最新平台版本。
+        CCE集群平台版本号，表示集群版本(version)下的内部版本。用于跟踪某一集群版本内的迭代，集群版本内唯一，跨集群版本重新计数。不支持用户指定，集群创建时自动选择对应集群版本的最新平台版本。   platformVersion格式为：cce.X.Y   - X: 表示内部特性版本。集群版本中特性或者补丁修复，或者OS支持等变更场景。其值从1开始单调递增。  - Y: 表示内部特性版本的补丁版本。仅用于特性版本上线后的软件包更新，不涉及其他修改。其值从0开始单调递增。
 
         :param platform_version: The platform_version of this ClusterSpec.
         :type: str

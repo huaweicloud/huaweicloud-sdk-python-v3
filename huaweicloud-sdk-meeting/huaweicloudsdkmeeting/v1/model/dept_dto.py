@@ -28,7 +28,8 @@ class DeptDTO:
         'note': 'str',
         'in_permission': 'str',
         'out_permission': 'str',
-        'designated_out_dept_codes': 'list[str]'
+        'designated_out_dept_codes': 'list[str]',
+        'sort_level': 'int'
     }
 
     attribute_map = {
@@ -38,10 +39,11 @@ class DeptDTO:
         'note': 'note',
         'in_permission': 'inPermission',
         'out_permission': 'outPermission',
-        'designated_out_dept_codes': 'designatedOutDeptCodes'
+        'designated_out_dept_codes': 'designatedOutDeptCodes',
+        'sort_level': 'sortLevel'
     }
 
-    def __init__(self, dept_code=None, dept_name=None, parent_dept_code=None, note=None, in_permission=None, out_permission=None, designated_out_dept_codes=None):
+    def __init__(self, dept_code=None, dept_name=None, parent_dept_code=None, note=None, in_permission=None, out_permission=None, designated_out_dept_codes=None, sort_level=None):
         """DeptDTO - a model defined in huaweicloud sdk"""
         
         
@@ -53,6 +55,7 @@ class DeptDTO:
         self._in_permission = None
         self._out_permission = None
         self._designated_out_dept_codes = None
+        self._sort_level = None
         self.discriminator = None
 
         if dept_code is not None:
@@ -68,6 +71,8 @@ class DeptDTO:
             self.out_permission = out_permission
         if designated_out_dept_codes is not None:
             self.designated_out_dept_codes = designated_out_dept_codes
+        if sort_level is not None:
+            self.sort_level = sort_level
 
     @property
     def dept_code(self):
@@ -222,6 +227,28 @@ class DeptDTO:
         :type: list[str]
         """
         self._designated_out_dept_codes = designated_out_dept_codes
+
+    @property
+    def sort_level(self):
+        """Gets the sort_level of this DeptDTO.
+
+        部门排序号，序号越小,部门排序越靠前 minimum: 1 maximum: 10000
+
+        :return: The sort_level of this DeptDTO.
+        :rtype: int
+        """
+        return self._sort_level
+
+    @sort_level.setter
+    def sort_level(self, sort_level):
+        """Sets the sort_level of this DeptDTO.
+
+        部门排序号，序号越小,部门排序越靠前 minimum: 1 maximum: 10000
+
+        :param sort_level: The sort_level of this DeptDTO.
+        :type: int
+        """
+        self._sort_level = sort_level
 
     def to_dict(self):
         """Returns the model properties as a dict"""

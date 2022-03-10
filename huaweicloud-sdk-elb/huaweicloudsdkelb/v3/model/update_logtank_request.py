@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AddResourceGroupsResourcesBatchRequest:
+class UpdateLogtankRequest:
 
 
     """
@@ -22,67 +22,67 @@ class AddResourceGroupsResourcesBatchRequest:
     sensitive_list = []
 
     openapi_types = {
-        'group_id': 'str',
-        'body': 'ResourcesReq'
+        'logtank_id': 'str',
+        'body': 'UpdateLogtankRequestBody'
     }
 
     attribute_map = {
-        'group_id': 'group_id',
+        'logtank_id': 'logtank_id',
         'body': 'body'
     }
 
-    def __init__(self, group_id=None, body=None):
-        """AddResourceGroupsResourcesBatchRequest - a model defined in huaweicloud sdk"""
+    def __init__(self, logtank_id=None, body=None):
+        """UpdateLogtankRequest - a model defined in huaweicloud sdk"""
         
         
 
-        self._group_id = None
+        self._logtank_id = None
         self._body = None
         self.discriminator = None
 
-        self.group_id = group_id
+        self.logtank_id = logtank_id
         if body is not None:
             self.body = body
 
     @property
-    def group_id(self):
-        """Gets the group_id of this AddResourceGroupsResourcesBatchRequest.
+    def logtank_id(self):
+        """Gets the logtank_id of this UpdateLogtankRequest.
 
-        当前资源所在分组信息，以rg开头，后跟22位由字母或数字组成的字符串
+        云日志ID。
 
-        :return: The group_id of this AddResourceGroupsResourcesBatchRequest.
+        :return: The logtank_id of this UpdateLogtankRequest.
         :rtype: str
         """
-        return self._group_id
+        return self._logtank_id
 
-    @group_id.setter
-    def group_id(self, group_id):
-        """Sets the group_id of this AddResourceGroupsResourcesBatchRequest.
+    @logtank_id.setter
+    def logtank_id(self, logtank_id):
+        """Sets the logtank_id of this UpdateLogtankRequest.
 
-        当前资源所在分组信息，以rg开头，后跟22位由字母或数字组成的字符串
+        云日志ID。
 
-        :param group_id: The group_id of this AddResourceGroupsResourcesBatchRequest.
+        :param logtank_id: The logtank_id of this UpdateLogtankRequest.
         :type: str
         """
-        self._group_id = group_id
+        self._logtank_id = logtank_id
 
     @property
     def body(self):
-        """Gets the body of this AddResourceGroupsResourcesBatchRequest.
+        """Gets the body of this UpdateLogtankRequest.
 
 
-        :return: The body of this AddResourceGroupsResourcesBatchRequest.
-        :rtype: ResourcesReq
+        :return: The body of this UpdateLogtankRequest.
+        :rtype: UpdateLogtankRequestBody
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddResourceGroupsResourcesBatchRequest.
+        """Sets the body of this UpdateLogtankRequest.
 
 
-        :param body: The body of this AddResourceGroupsResourcesBatchRequest.
-        :type: ResourcesReq
+        :param body: The body of this UpdateLogtankRequest.
+        :type: UpdateLogtankRequestBody
         """
         self._body = body
 
@@ -128,7 +128,7 @@ class AddResourceGroupsResourcesBatchRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AddResourceGroupsResourcesBatchRequest):
+        if not isinstance(other, UpdateLogtankRequest):
             return False
 
         return self.__dict__ == other.__dict__

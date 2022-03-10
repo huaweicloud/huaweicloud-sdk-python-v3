@@ -356,7 +356,7 @@ class ListAllMembersRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListAllMembersRequest.
 
-        企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :return: The enterprise_project_id of this ListAllMembersRequest.
         :rtype: list[str]
@@ -367,7 +367,7 @@ class ListAllMembersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListAllMembersRequest.
 
-        企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListAllMembersRequest.
         :type: list[str]

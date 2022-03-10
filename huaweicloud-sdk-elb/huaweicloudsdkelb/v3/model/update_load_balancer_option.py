@@ -175,7 +175,7 @@ class UpdateLoadBalancerOption:
     def ipv6_vip_virsubnet_id(self):
         """Gets the ipv6_vip_virsubnet_id of this UpdateLoadBalancerOption.
 
-        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。 通过更新ipv6_vip_virsubnet_id可以更新负载均衡器所在IPv6子网，并且负载均衡器的内网IPv6地址将发生变化。 ipv6_vip_virsubnet_id对应的子网必须属于当前负载均衡器所在VPC。 注： 1.只有子网开启IPv6时才可以传入。 2.仅当guaranteed是true的场合，才支持更新。 3.传入为null表示解绑IPv6子网。 [不支持IPv6，请勿使用。](tag:dt,dt_test)
+        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  通过更新ipv6_vip_virsubnet_id可以更新负载均衡器所在IPv6子网，且负载均衡器的内网IPv6地址将发生变化。  使用说明： - ipv6_vip_virsubnet_id 对应的子网必须属于当前负载均衡器所在VPC，且子网需开启支持IPv6。 - 只有guaranteed是true的负载均衡器才支持更新ipv6_vip_virsubnet_id。 - *传入为null表示解绑IPv6子网。* - 更新IPv6子网不会导致IPv4子网发生变化。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :return: The ipv6_vip_virsubnet_id of this UpdateLoadBalancerOption.
         :rtype: str
@@ -186,7 +186,7 @@ class UpdateLoadBalancerOption:
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
         """Sets the ipv6_vip_virsubnet_id of this UpdateLoadBalancerOption.
 
-        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。 通过更新ipv6_vip_virsubnet_id可以更新负载均衡器所在IPv6子网，并且负载均衡器的内网IPv6地址将发生变化。 ipv6_vip_virsubnet_id对应的子网必须属于当前负载均衡器所在VPC。 注： 1.只有子网开启IPv6时才可以传入。 2.仅当guaranteed是true的场合，才支持更新。 3.传入为null表示解绑IPv6子网。 [不支持IPv6，请勿使用。](tag:dt,dt_test)
+        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  通过更新ipv6_vip_virsubnet_id可以更新负载均衡器所在IPv6子网，且负载均衡器的内网IPv6地址将发生变化。  使用说明： - ipv6_vip_virsubnet_id 对应的子网必须属于当前负载均衡器所在VPC，且子网需开启支持IPv6。 - 只有guaranteed是true的负载均衡器才支持更新ipv6_vip_virsubnet_id。 - *传入为null表示解绑IPv6子网。* - 更新IPv6子网不会导致IPv4子网发生变化。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this UpdateLoadBalancerOption.
         :type: str
@@ -197,7 +197,7 @@ class UpdateLoadBalancerOption:
     def vip_subnet_cidr_id(self):
         """Gets the vip_subnet_cidr_id of this UpdateLoadBalancerOption.
 
-        负载均衡器所在的IPv4子网ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。 通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的内网IPv4地址将发生变化。 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。更新后将使用vip_address对应的IP作为负载均衡器的内网IPv4地址。 vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 注： 1.只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 2.传入null表示解绑IPv4子网。
+        负载均衡器所在的IPv4子网ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。 通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的内网IPv4地址将发生变化。 使用说明： - 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。 - vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 - 只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 - *传入null表示解绑IPv4子网。* - 更新IPv子网不会导致IPv4子网发生变化。
 
         :return: The vip_subnet_cidr_id of this UpdateLoadBalancerOption.
         :rtype: str
@@ -208,7 +208,7 @@ class UpdateLoadBalancerOption:
     def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
         """Sets the vip_subnet_cidr_id of this UpdateLoadBalancerOption.
 
-        负载均衡器所在的IPv4子网ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。 通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的内网IPv4地址将发生变化。 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。更新后将使用vip_address对应的IP作为负载均衡器的内网IPv4地址。 vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 注： 1.只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 2.传入null表示解绑IPv4子网。
+        负载均衡器所在的IPv4子网ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。 通过更新vip_subnet_cidr_id可以更新负载均衡器所在IPv4子网，并且负载均衡器的内网IPv4地址将发生变化。 使用说明： - 若同时设置了vip_address，则必须保证vip_address对应的IP在vip_subnet_cidr_id的子网网段中。 - vip_subnet_cidr_id对应的子网必须属于当前负载均衡器vpc_id对应的VPC。 - 只有guaranteed是true的负载均衡器才支持更新vip_subnet_cidr_id。 - *传入null表示解绑IPv4子网。* - 更新IPv子网不会导致IPv4子网发生变化。
 
         :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this UpdateLoadBalancerOption.
         :type: str
@@ -241,7 +241,7 @@ class UpdateLoadBalancerOption:
     def l4_flavor_id(self):
         """Gets the l4_flavor_id of this UpdateLoadBalancerOption.
 
-        四层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null，只允许改大，不允许改小。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
+        四层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null，只允许改大，不允许改小。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
 
         :return: The l4_flavor_id of this UpdateLoadBalancerOption.
         :rtype: str
@@ -252,7 +252,7 @@ class UpdateLoadBalancerOption:
     def l4_flavor_id(self, l4_flavor_id):
         """Sets the l4_flavor_id of this UpdateLoadBalancerOption.
 
-        四层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null，只允许改大，不允许改小。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
+        四层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null，只允许改大，不允许改小。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
 
         :param l4_flavor_id: The l4_flavor_id of this UpdateLoadBalancerOption.
         :type: str
@@ -263,7 +263,7 @@ class UpdateLoadBalancerOption:
     def l7_flavor_id(self):
         """Gets the l7_flavor_id of this UpdateLoadBalancerOption.
 
-        七层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null；只允许改大，不允许改小。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
+        七层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null；只允许改大，不允许改小。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
 
         :return: The l7_flavor_id of this UpdateLoadBalancerOption.
         :rtype: str
@@ -274,7 +274,7 @@ class UpdateLoadBalancerOption:
     def l7_flavor_id(self, l7_flavor_id):
         """Sets the l7_flavor_id of this UpdateLoadBalancerOption.
 
-        七层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null；只允许改大，不允许改小。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
+        七层Flavor ID。  注： 1.仅当guaranteed是true的场合，才支持更新。 2.不允许非null变成null，null变成非null；只允许改大，不允许改小。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
 
         :param l7_flavor_id: The l7_flavor_id of this UpdateLoadBalancerOption.
         :type: str
@@ -305,7 +305,7 @@ class UpdateLoadBalancerOption:
     def ip_target_enable(self):
         """Gets the ip_target_enable of this UpdateLoadBalancerOption.
 
-        是否启用跨VPC后端转发，开启跨VPC后端转发后，支持添加其他VPC、其他公有云、云下数据中心的服务器。取值： - true：开启。 - false：不开启。  仅独享型负载均衡器支持该特性，且只能更新为true，即开启后不支持关闭。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        是否启用跨VPC后端转发，开启跨VPC后端转发后，支持添加其他VPC、其他公有云、云下数据中心的服务器。取值： - true：开启。 - false：不开启。 [仅独享型负载均衡器支持该特性，且只能更新为true，即开启后不支持关闭。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test)  [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The ip_target_enable of this UpdateLoadBalancerOption.
         :rtype: bool
@@ -316,7 +316,7 @@ class UpdateLoadBalancerOption:
     def ip_target_enable(self, ip_target_enable):
         """Sets the ip_target_enable of this UpdateLoadBalancerOption.
 
-        是否启用跨VPC后端转发，开启跨VPC后端转发后，支持添加其他VPC、其他公有云、云下数据中心的服务器。取值： - true：开启。 - false：不开启。  仅独享型负载均衡器支持该特性，且只能更新为true，即开启后不支持关闭。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        是否启用跨VPC后端转发，开启跨VPC后端转发后，支持添加其他VPC、其他公有云、云下数据中心的服务器。取值： - true：开启。 - false：不开启。 [仅独享型负载均衡器支持该特性，且只能更新为true，即开启后不支持关闭。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test)  [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param ip_target_enable: The ip_target_enable of this UpdateLoadBalancerOption.
         :type: bool
@@ -327,7 +327,7 @@ class UpdateLoadBalancerOption:
     def elb_virsubnet_ids(self):
         """Gets the elb_virsubnet_ids of this UpdateLoadBalancerOption.
 
-        下联面子网的网络ID列表。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。 已绑定的下联面子网也在传参elb_virsubnet_ids列表中，则绑定关系保留。 已绑定的下联面子网若不在传参elb_virsubnet_ids列表中，则将移除LB与该下联面子网的关联关系。但不允许移除已被ELB使用的子网，否则将报错，不做任何修改。 在传参elb_virsubnet_ids列表中但不在已绑定的下联面子网列表中，则将新增LB与下联面的绑定关系。  使用说明： - 所有ID同属于该LB所在的VPC。 - 不支持边缘云子网。
+        下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  已绑定的下联面子网也在传参elb_virsubnet_ids列表中，则绑定关系保留。  已绑定的下联面子网若不在传参elb_virsubnet_ids列表中，则将移除LB与该下联面子网的关联关系。但不允许移除已被ELB使用的子网，否则将报错，不做任何修改。  在传参elb_virsubnet_ids列表中但不在已绑定的下联面子网列表中，则将新增LB与下联面的绑定关系。   使用说明：  - 所有ID同属于该LB所在的VPC。  - 不支持边缘云子网。
 
         :return: The elb_virsubnet_ids of this UpdateLoadBalancerOption.
         :rtype: list[str]
@@ -338,7 +338,7 @@ class UpdateLoadBalancerOption:
     def elb_virsubnet_ids(self, elb_virsubnet_ids):
         """Sets the elb_virsubnet_ids of this UpdateLoadBalancerOption.
 
-        下联面子网的网络ID列表。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。 已绑定的下联面子网也在传参elb_virsubnet_ids列表中，则绑定关系保留。 已绑定的下联面子网若不在传参elb_virsubnet_ids列表中，则将移除LB与该下联面子网的关联关系。但不允许移除已被ELB使用的子网，否则将报错，不做任何修改。 在传参elb_virsubnet_ids列表中但不在已绑定的下联面子网列表中，则将新增LB与下联面的绑定关系。  使用说明： - 所有ID同属于该LB所在的VPC。 - 不支持边缘云子网。
+        下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  已绑定的下联面子网也在传参elb_virsubnet_ids列表中，则绑定关系保留。  已绑定的下联面子网若不在传参elb_virsubnet_ids列表中，则将移除LB与该下联面子网的关联关系。但不允许移除已被ELB使用的子网，否则将报错，不做任何修改。  在传参elb_virsubnet_ids列表中但不在已绑定的下联面子网列表中，则将新增LB与下联面的绑定关系。   使用说明：  - 所有ID同属于该LB所在的VPC。  - 不支持边缘云子网。
 
         :param elb_virsubnet_ids: The elb_virsubnet_ids of this UpdateLoadBalancerOption.
         :type: list[str]

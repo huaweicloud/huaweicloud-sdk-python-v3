@@ -112,7 +112,7 @@ class ClusterMetadata:
     def annotations(self):
         """Gets the annotations of this ClusterMetadata.
 
-        集群注解，由key/value组成：   ```  \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" }  ```   >    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 >    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 
+        集群注解，由key/value组成：   ```  \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" }  ```   >    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 >    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 >    - 可通过加入\"cluster.install.addons.external/install\": \"[{\"addonTemplateName\":\"icagent\"}]\"的键值对在创建集群时安装ICAgent。 
 
         :return: The annotations of this ClusterMetadata.
         :rtype: dict(str, str)
@@ -123,7 +123,7 @@ class ClusterMetadata:
     def annotations(self, annotations):
         """Sets the annotations of this ClusterMetadata.
 
-        集群注解，由key/value组成：   ```  \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" }  ```   >    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 >    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 
+        集群注解，由key/value组成：   ```  \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" }  ```   >    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 >    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 >    - 可通过加入\"cluster.install.addons.external/install\": \"[{\"addonTemplateName\":\"icagent\"}]\"的键值对在创建集群时安装ICAgent。 
 
         :param annotations: The annotations of this ClusterMetadata.
         :type: dict(str, str)

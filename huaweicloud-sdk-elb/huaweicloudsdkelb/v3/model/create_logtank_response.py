@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateAlarmRequest:
+class CreateLogtankResponse(SdkResponse):
 
 
     """
@@ -22,43 +22,70 @@ class CreateAlarmRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'PostAlarmsReqV2'
+        'logtank': 'Logtank',
+        'request_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'logtank': 'logtank',
+        'request_id': 'request_id'
     }
 
-    def __init__(self, body=None):
-        """CreateAlarmRequest - a model defined in huaweicloud sdk"""
+    def __init__(self, logtank=None, request_id=None):
+        """CreateLogtankResponse - a model defined in huaweicloud sdk"""
         
-        
+        super(CreateLogtankResponse, self).__init__()
 
-        self._body = None
+        self._logtank = None
+        self._request_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if logtank is not None:
+            self.logtank = logtank
+        if request_id is not None:
+            self.request_id = request_id
 
     @property
-    def body(self):
-        """Gets the body of this CreateAlarmRequest.
+    def logtank(self):
+        """Gets the logtank of this CreateLogtankResponse.
 
 
-        :return: The body of this CreateAlarmRequest.
-        :rtype: PostAlarmsReqV2
+        :return: The logtank of this CreateLogtankResponse.
+        :rtype: Logtank
         """
-        return self._body
+        return self._logtank
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this CreateAlarmRequest.
+    @logtank.setter
+    def logtank(self, logtank):
+        """Sets the logtank of this CreateLogtankResponse.
 
 
-        :param body: The body of this CreateAlarmRequest.
-        :type: PostAlarmsReqV2
+        :param logtank: The logtank of this CreateLogtankResponse.
+        :type: Logtank
         """
-        self._body = body
+        self._logtank = logtank
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this CreateLogtankResponse.
+
+        请求ID。  注：自动生成 。
+
+        :return: The request_id of this CreateLogtankResponse.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this CreateLogtankResponse.
+
+        请求ID。  注：自动生成 。
+
+        :param request_id: The request_id of this CreateLogtankResponse.
+        :type: str
+        """
+        self._request_id = request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -102,7 +129,7 @@ class CreateAlarmRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateAlarmRequest):
+        if not isinstance(other, CreateLogtankResponse):
             return False
 
         return self.__dict__ == other.__dict__

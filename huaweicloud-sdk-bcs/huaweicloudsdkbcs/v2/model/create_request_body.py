@@ -129,7 +129,8 @@ class CreateRequestBody:
 
         self.name = name
         self.version_type = version_type
-        self.fabric_version = fabric_version
+        if fabric_version is not None:
+            self.fabric_version = fabric_version
         if blockchain_type is not None:
             self.blockchain_type = blockchain_type
         if consensus is not None:

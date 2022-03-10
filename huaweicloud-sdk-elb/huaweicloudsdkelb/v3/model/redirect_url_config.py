@@ -85,7 +85,7 @@ class RedirectUrlConfig:
     def host(self):
         """Gets the host of this RedirectUrlConfig.
 
-        重定向的主机名。字符串只能包含英文字母、数字、“-”、“.”。且必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
+        重定向的主机名。字符串只能包含英文字母、数字、\"-\"、\".\"。且必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
 
         :return: The host of this RedirectUrlConfig.
         :rtype: str
@@ -96,7 +96,7 @@ class RedirectUrlConfig:
     def host(self, host):
         """Sets the host of this RedirectUrlConfig.
 
-        重定向的主机名。字符串只能包含英文字母、数字、“-”、“.”。且必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
+        重定向的主机名。字符串只能包含英文字母、数字、\"-\"、\".\"。且必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
 
         :param host: The host of this RedirectUrlConfig.
         :type: str
@@ -151,7 +151,7 @@ class RedirectUrlConfig:
     def query(self):
         """Gets the query of this RedirectUrlConfig.
 
-        重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下： 若该字段被设置为：${query}&name=my_name，则在转发符合条件的URL（如https&#58;//www.xxx.com&#58;8080/elb?type=loadbalancer，此时${query}表示type=loadbalancer）时，将会重定向到https&#58;//www.xxx.com&#58;8080/elb?type=loadbalancer&name=my_name。 只能包含英文字母、数字和特殊字符：!$&'()*+,-./&#58;;=?@^_`。字母区分大小写。
+        重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下： 若该字段被设置为：${query}&name=my_name，则在转发符合条件的URL（如https://www.xxx.com:8080/elb?type=loadbalancer，此时${query}表示type=loadbalancer）时，将会重定向到https://www.xxx.com:8080/elb?type=loadbalancer&name=my_name。 只能包含英文字母、数字和特殊字符：!$&'()*+,-./:;=?@^_`。字母区分大小写。
 
         :return: The query of this RedirectUrlConfig.
         :rtype: str
@@ -162,7 +162,7 @@ class RedirectUrlConfig:
     def query(self, query):
         """Sets the query of this RedirectUrlConfig.
 
-        重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下： 若该字段被设置为：${query}&name=my_name，则在转发符合条件的URL（如https&#58;//www.xxx.com&#58;8080/elb?type=loadbalancer，此时${query}表示type=loadbalancer）时，将会重定向到https&#58;//www.xxx.com&#58;8080/elb?type=loadbalancer&name=my_name。 只能包含英文字母、数字和特殊字符：!$&'()*+,-./&#58;;=?@^_`。字母区分大小写。
+        重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下： 若该字段被设置为：${query}&name=my_name，则在转发符合条件的URL（如https://www.xxx.com:8080/elb?type=loadbalancer，此时${query}表示type=loadbalancer）时，将会重定向到https://www.xxx.com:8080/elb?type=loadbalancer&name=my_name。 只能包含英文字母、数字和特殊字符：!$&'()*+,-./:;=?@^_`。字母区分大小写。
 
         :param query: The query of this RedirectUrlConfig.
         :type: str

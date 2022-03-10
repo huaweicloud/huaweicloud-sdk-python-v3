@@ -431,7 +431,7 @@ class Listener:
     def protocol(self):
         """Gets the protocol of this Listener.
 
-        监听器的监听协议。支持TCP、UDP、HTTP、HTTPS、TERMINATED HTTPS。
+        监听器的监听协议。支持TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS和QUIC。
 
         :return: The protocol of this Listener.
         :rtype: str
@@ -442,7 +442,7 @@ class Listener:
     def protocol(self, protocol):
         """Sets the protocol of this Listener.
 
-        监听器的监听协议。支持TCP、UDP、HTTP、HTTPS、TERMINATED HTTPS。
+        监听器的监听协议。支持TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS和QUIC。
 
         :param protocol: The protocol of this Listener.
         :type: str
@@ -541,7 +541,7 @@ class Listener:
     def tls_ciphers_policy(self):
         """Gets the tls_ciphers_policy of this Listener.
 
-        监听器使用的安全策略，仅对HTTPS协议类型的监听器有效。 [取值：tls-1-0-inherit, tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，tls-1-2-fs, tls-1-0-with-1-3, tls-1-2-fs-with-1-3, hybrid-policy-1-0，默认：tls-1-0。](tag:hws,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [取值：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，默认：tls-1-0。](tag:dt,dt_test) 使用说明： - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。
+        监听器使用的安全策略，仅对HTTPS协议类型的监听器有效。  [取值：tls-1-0-inherit, tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，tls-1-2-fs, tls-1-0-with-1-3, tls-1-2-fs-with-1-3, hybrid-policy-1-0，默认：tls-1-0。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  [取值：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，默认：tls-1-0。](tag:dt,dt_test)  使用说明： - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。
 
         :return: The tls_ciphers_policy of this Listener.
         :rtype: str
@@ -552,7 +552,7 @@ class Listener:
     def tls_ciphers_policy(self, tls_ciphers_policy):
         """Sets the tls_ciphers_policy of this Listener.
 
-        监听器使用的安全策略，仅对HTTPS协议类型的监听器有效。 [取值：tls-1-0-inherit, tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，tls-1-2-fs, tls-1-0-with-1-3, tls-1-2-fs-with-1-3, hybrid-policy-1-0，默认：tls-1-0。](tag:hws,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [取值：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，默认：tls-1-0。](tag:dt,dt_test) 使用说明： - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。
+        监听器使用的安全策略，仅对HTTPS协议类型的监听器有效。  [取值：tls-1-0-inherit, tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，tls-1-2-fs, tls-1-0-with-1-3, tls-1-2-fs-with-1-3, hybrid-policy-1-0，默认：tls-1-0。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  [取值：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，默认：tls-1-0。](tag:dt,dt_test)  使用说明： - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。
 
         :param tls_ciphers_policy: The tls_ciphers_policy of this Listener.
         :type: str
@@ -563,7 +563,7 @@ class Listener:
     def security_policy_id(self):
         """Gets the security_policy_id of this Listener.
 
-        自定义安全策略的ID。仅关联LB为独享型时有效。  若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。
+        自定义安全策略的ID。[仅关联LB为独享型时有效。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test)  若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。
 
         :return: The security_policy_id of this Listener.
         :rtype: str
@@ -574,7 +574,7 @@ class Listener:
     def security_policy_id(self, security_policy_id):
         """Sets the security_policy_id of this Listener.
 
-        自定义安全策略的ID。仅关联LB为独享型时有效。  若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。
+        自定义安全策略的ID。[仅关联LB为独享型时有效。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test)  若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。
 
         :param security_policy_id: The security_policy_id of this Listener.
         :type: str
@@ -585,7 +585,7 @@ class Listener:
     def enable_member_retry(self):
         """Gets the enable_member_retry of this Listener.
 
-        是否开启后端服务器的重试。取值：true 开启重试，false 不开启重试。默认：true。  使用说明： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS时才能传入该字段。
+        是否开启后端服务器的重试。取值：true 开启重试，false 不开启重试。默认：true。  [使用说明： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [使用说明： 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hcso_dt)
 
         :return: The enable_member_retry of this Listener.
         :rtype: bool
@@ -596,7 +596,7 @@ class Listener:
     def enable_member_retry(self, enable_member_retry):
         """Sets the enable_member_retry of this Listener.
 
-        是否开启后端服务器的重试。取值：true 开启重试，false 不开启重试。默认：true。  使用说明： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS时才能传入该字段。
+        是否开启后端服务器的重试。取值：true 开启重试，false 不开启重试。默认：true。  [使用说明： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [使用说明： 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hcso_dt)
 
         :param enable_member_retry: The enable_member_retry of this Listener.
         :type: bool
@@ -607,7 +607,7 @@ class Listener:
     def keepalive_timeout(self):
         """Gets the keepalive_timeout of this Listener.
 
-        客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到一下次请求时重新建立新的连接。取值： - 若为TCP监听器，取值范围为（10-4000s）默认值为300s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）默认值为60s。 UDP监听器不支持此字段。
+        客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到一下次请求时重新建立新的连接。取值：  - 若为TCP监听器，取值范围为（10-4000s）默认值为300s。  - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）默认值为60s。 UDP监听器不支持此字段。
 
         :return: The keepalive_timeout of this Listener.
         :rtype: int
@@ -618,7 +618,7 @@ class Listener:
     def keepalive_timeout(self, keepalive_timeout):
         """Sets the keepalive_timeout of this Listener.
 
-        客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到一下次请求时重新建立新的连接。取值： - 若为TCP监听器，取值范围为（10-4000s）默认值为300s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）默认值为60s。 UDP监听器不支持此字段。
+        客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到一下次请求时重新建立新的连接。取值：  - 若为TCP监听器，取值范围为（10-4000s）默认值为300s。  - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）默认值为60s。 UDP监听器不支持此字段。
 
         :param keepalive_timeout: The keepalive_timeout of this Listener.
         :type: int
@@ -693,7 +693,7 @@ class Listener:
     def transparent_client_ip_enable(self):
         """Gets the transparent_client_ip_enable of this Listener.
 
-        是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。仅作用于共享型LB的TCP/UDP监听器。取值： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。  使用说明： - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问，需要确保已正确设置服务器的安全组以及访问控制策略。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，暂不支持变更后端服务器规格。
+        是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。[仅作用于共享型LB的TCP/UDP监听器。取值： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。  使用说明： - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问，需要确保已正确设置服务器的安全组以及访问控制策略。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，不支持变更后端服务器规格。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test)  [当前所有协议的监听器只设支持置为true，不传默认为true。](tag:hcso_dt)
 
         :return: The transparent_client_ip_enable of this Listener.
         :rtype: bool
@@ -704,7 +704,7 @@ class Listener:
     def transparent_client_ip_enable(self, transparent_client_ip_enable):
         """Sets the transparent_client_ip_enable of this Listener.
 
-        是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。仅作用于共享型LB的TCP/UDP监听器。取值： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。  使用说明： - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问，需要确保已正确设置服务器的安全组以及访问控制策略。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，暂不支持变更后端服务器规格。
+        是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。[仅作用于共享型LB的TCP/UDP监听器。取值： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。  使用说明： - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问，需要确保已正确设置服务器的安全组以及访问控制策略。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，不支持变更后端服务器规格。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test)  [当前所有协议的监听器只设支持置为true，不传默认为true。](tag:hcso_dt)
 
         :param transparent_client_ip_enable: The transparent_client_ip_enable of this Listener.
         :type: bool

@@ -1,3 +1,109 @@
+# 3.0.80 2022-03-10
+
+### HuaweiCloud SDK BCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `operation_id` to the interface `BatchCreateChannels`
+  - The request parameter `fabric_version` changed to not required of the interface `CreateNewBlockchain`
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `cluster_id` changed to not required of the interface `DeleteAddonInstance`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameter `X-Auth-Token` from the interface `ShowTopUrl`
+  - Remove the request parameter `X-Auth-Token` from the interface `ShowDomainLocationStats`
+  - Remove the request parameter `X-Auth-Token` from the interface `ShowDomainItemDetails`
+  - Remove the request parameter `X-Auth-Token` from the interface `ShowDomainStats`
+  - Remove the request parameter `X-Auth-Token` from the interface `ShowDomainItemLocationDetails`
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - Support the following interfaces：
+    - `ListClusterDetails`
+    - `DeleteCluster`
+    - `ResetPassword`
+    - `ListSnapshots`
+    - `CreateSnapshot`
+    - `RestartCluster`
+    - `ListClusters`
+    - `CreateCluster`
+    - `RestoreCluster`
+    - `ResizeCluster`
+    - `ListNodeTypes`
+    - `ListSnapshotDetails`
+    - `DeleteSnapshot`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ELB
+
+- _Features_
+  - Support the following interfaces：
+    - `ListLogtanks`
+    - `CreateLogtank`
+    - `ShowLogtank`
+    - `UpdateLogtank`
+    - `DeleteLogtank`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `https_cps` to the interface `ListFlavors`
+  - Add the response parameter `https_cps` to the interface `ShowFlavor`
+  - The request parameter `X-Auth-Token` changed to not required of the interface `ListLoadBalancers`
+  - The request parameter `X-Auth-Token` changed to not required of the interface `CreateLoadBalancer`
+  - The request parameter `X-Auth-Token` changed to not required of the interface `UpdateIpList`
+  - The request parameter `X-Auth-Token` changed to not required of the interface `BatchDeleteIpList`
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `date` -> `date-time` of the response parameter `act_date` of the interface `ListSimCards`
+  - Modify the type `date` -> `date-time` of the response parameter `act_date` of the interface `ShowSimCard`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `count` to the interface `ListLogs`
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `sortLevel` to the interface `AddDepartment`
+  - Add the request parameter `sortLevel` to the interface `UpdateDepartment`
+  - Add the response parameters `sortLevel`, `sortLevel` to the interface `ShowDeptAndChildDept`
+  - Add the response parameter `sortLevel` to the interface `SearchDepartmentByName`
+
 # 3.0.79 2022-03-07
 
 ### HuaweiCloud SDK CCE

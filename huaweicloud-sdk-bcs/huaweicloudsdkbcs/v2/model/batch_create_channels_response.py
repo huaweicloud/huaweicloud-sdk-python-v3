@@ -22,16 +22,45 @@ class BatchCreateChannelsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'operation_id': 'str'
     }
 
     attribute_map = {
+        'operation_id': 'operation_id'
     }
 
-    def __init__(self):
+    def __init__(self, operation_id=None):
         """BatchCreateChannelsResponse - a model defined in huaweicloud sdk"""
         
         super(BatchCreateChannelsResponse, self).__init__()
+
+        self._operation_id = None
         self.discriminator = None
+
+        if operation_id is not None:
+            self.operation_id = operation_id
+
+    @property
+    def operation_id(self):
+        """Gets the operation_id of this BatchCreateChannelsResponse.
+
+        操作记录id
+
+        :return: The operation_id of this BatchCreateChannelsResponse.
+        :rtype: str
+        """
+        return self._operation_id
+
+    @operation_id.setter
+    def operation_id(self, operation_id):
+        """Sets the operation_id of this BatchCreateChannelsResponse.
+
+        操作记录id
+
+        :param operation_id: The operation_id of this BatchCreateChannelsResponse.
+        :type: str
+        """
+        self._operation_id = operation_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

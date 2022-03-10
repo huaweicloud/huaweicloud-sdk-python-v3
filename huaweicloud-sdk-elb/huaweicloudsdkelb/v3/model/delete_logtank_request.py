@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AddResourceGroupsResourcesBatchResponse(SdkResponse):
+class DeleteLogtankRequest:
 
 
     """
@@ -22,16 +22,44 @@ class AddResourceGroupsResourcesBatchResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'logtank_id': 'str'
     }
 
     attribute_map = {
+        'logtank_id': 'logtank_id'
     }
 
-    def __init__(self):
-        """AddResourceGroupsResourcesBatchResponse - a model defined in huaweicloud sdk"""
+    def __init__(self, logtank_id=None):
+        """DeleteLogtankRequest - a model defined in huaweicloud sdk"""
         
-        super(AddResourceGroupsResourcesBatchResponse, self).__init__()
+        
+
+        self._logtank_id = None
         self.discriminator = None
+
+        self.logtank_id = logtank_id
+
+    @property
+    def logtank_id(self):
+        """Gets the logtank_id of this DeleteLogtankRequest.
+
+        云日志ID。
+
+        :return: The logtank_id of this DeleteLogtankRequest.
+        :rtype: str
+        """
+        return self._logtank_id
+
+    @logtank_id.setter
+    def logtank_id(self, logtank_id):
+        """Sets the logtank_id of this DeleteLogtankRequest.
+
+        云日志ID。
+
+        :param logtank_id: The logtank_id of this DeleteLogtankRequest.
+        :type: str
+        """
+        self._logtank_id = logtank_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -75,7 +103,7 @@ class AddResourceGroupsResourcesBatchResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AddResourceGroupsResourcesBatchResponse):
+        if not isinstance(other, DeleteLogtankRequest):
             return False
 
         return self.__dict__ == other.__dict__

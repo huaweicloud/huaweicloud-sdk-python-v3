@@ -55,7 +55,7 @@ class QuotaInfo:
     def quota_key(self):
         """Gets the quota_key of this QuotaInfo.
 
-        资源类型。 取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。
+        资源类型。  取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。
 
         :return: The quota_key of this QuotaInfo.
         :rtype: str
@@ -66,7 +66,7 @@ class QuotaInfo:
     def quota_key(self, quota_key):
         """Sets the quota_key of this QuotaInfo.
 
-        资源类型。 取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。
+        资源类型。  取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。
 
         :param quota_key: The quota_key of this QuotaInfo.
         :type: str

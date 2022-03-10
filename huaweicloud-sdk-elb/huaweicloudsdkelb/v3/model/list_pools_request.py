@@ -371,7 +371,7 @@ class ListPoolsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPoolsRequest.
 
-        企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :return: The enterprise_project_id of this ListPoolsRequest.
         :rtype: list[str]
@@ -382,7 +382,7 @@ class ListPoolsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPoolsRequest.
 
-        企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListPoolsRequest.
         :type: list[str]
@@ -393,7 +393,7 @@ class ListPoolsRequest:
     def ip_version(self):
         """Gets the ip_version of this ListPoolsRequest.
 
-        后端云服务器组支持的IP版本。取值： - 共享型LB下的pool：固定为v4； -   独享型LB下的pool：dualstack、v4。当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。当协议为HTTP/HTTPS时，ip_version为v4。 [不支持IPv6，只会返回v4。](tag:dt,dt_test) 支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
+        后端云服务器组支持的IP版本。取值： [- 共享型LB下的pool：固定为v4； - 独享型LB下的pool：dualstack、v4。当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。当协议为HTTP/HTTPS时，ip_version为v4。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [- dualstack: 当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。 - v4: 当该pool的协议为HTTP/HTTPS时，ip_version为v4。](tag:hcso_dt) 支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
 
         :return: The ip_version of this ListPoolsRequest.
         :rtype: list[str]
@@ -404,7 +404,7 @@ class ListPoolsRequest:
     def ip_version(self, ip_version):
         """Sets the ip_version of this ListPoolsRequest.
 
-        后端云服务器组支持的IP版本。取值： - 共享型LB下的pool：固定为v4； -   独享型LB下的pool：dualstack、v4。当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。当协议为HTTP/HTTPS时，ip_version为v4。 [不支持IPv6，只会返回v4。](tag:dt,dt_test) 支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
+        后端云服务器组支持的IP版本。取值： [- 共享型LB下的pool：固定为v4； - 独享型LB下的pool：dualstack、v4。当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。当协议为HTTP/HTTPS时，ip_version为v4。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [- dualstack: 当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。 - v4: 当该pool的协议为HTTP/HTTPS时，ip_version为v4。](tag:hcso_dt) 支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
 
         :param ip_version: The ip_version of this ListPoolsRequest.
         :type: list[str]

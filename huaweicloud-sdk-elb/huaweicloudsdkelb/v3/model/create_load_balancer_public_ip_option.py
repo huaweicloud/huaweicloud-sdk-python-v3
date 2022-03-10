@@ -84,7 +84,7 @@ class CreateLoadBalancerPublicIpOption:
     def network_type(self):
         """Gets the network_type of this CreateLoadBalancerPublicIpOption.
 
-        弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建
+        弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建。  [> 德国Region只支持5_gray.](tag:dt,dt_test) [> hcso_dt Cloud只支持5_gray.](tag:hcso_dt)
 
         :return: The network_type of this CreateLoadBalancerPublicIpOption.
         :rtype: str
@@ -95,7 +95,7 @@ class CreateLoadBalancerPublicIpOption:
     def network_type(self, network_type):
         """Sets the network_type of this CreateLoadBalancerPublicIpOption.
 
-        弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建
+        弹性公网IP的网络类型，默认5_bgp，更多请参考弹性公网ip创建。  [> 德国Region只支持5_gray.](tag:dt,dt_test) [> hcso_dt Cloud只支持5_gray.](tag:hcso_dt)
 
         :param network_type: The network_type of this CreateLoadBalancerPublicIpOption.
         :type: str

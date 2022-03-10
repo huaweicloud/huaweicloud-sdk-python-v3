@@ -22,23 +22,50 @@ class ListLogsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'count': 'int',
         'logs': 'list[LogContents]'
     }
 
     attribute_map = {
+        'count': 'count',
         'logs': 'logs'
     }
 
-    def __init__(self, logs=None):
+    def __init__(self, count=None, logs=None):
         """ListLogsResponse - a model defined in huaweicloud sdk"""
         
         super(ListLogsResponse, self).__init__()
 
+        self._count = None
         self._logs = None
         self.discriminator = None
 
+        if count is not None:
+            self.count = count
         if logs is not None:
             self.logs = logs
+
+    @property
+    def count(self):
+        """Gets the count of this ListLogsResponse.
+
+        日志条数。
+
+        :return: The count of this ListLogsResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListLogsResponse.
+
+        日志条数。
+
+        :param count: The count of this ListLogsResponse.
+        :type: int
+        """
+        self._count = count
 
     @property
     def logs(self):

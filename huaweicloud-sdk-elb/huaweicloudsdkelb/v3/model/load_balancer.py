@@ -46,7 +46,6 @@ class LoadBalancer:
         'ipv6_vip_port_id': 'str',
         'availability_zone_list': 'list[str]',
         'enterprise_project_id': 'str',
-        'billing_info': 'str',
         'l4_flavor_id': 'str',
         'l4_scale_flavor_id': 'str',
         'l7_flavor_id': 'str',
@@ -86,7 +85,6 @@ class LoadBalancer:
         'ipv6_vip_port_id': 'ipv6_vip_port_id',
         'availability_zone_list': 'availability_zone_list',
         'enterprise_project_id': 'enterprise_project_id',
-        'billing_info': 'billing_info',
         'l4_flavor_id': 'l4_flavor_id',
         'l4_scale_flavor_id': 'l4_scale_flavor_id',
         'l7_flavor_id': 'l7_flavor_id',
@@ -101,7 +99,7 @@ class LoadBalancer:
         'autoscaling': 'autoscaling'
     }
 
-    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, billing_info=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, ipv6_bandwidth=None, deletion_protection_enable=None, autoscaling=None):
+    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, ipv6_bandwidth=None, deletion_protection_enable=None, autoscaling=None):
         """LoadBalancer - a model defined in huaweicloud sdk"""
         
         
@@ -130,7 +128,6 @@ class LoadBalancer:
         self._ipv6_vip_port_id = None
         self._availability_zone_list = None
         self._enterprise_project_id = None
-        self._billing_info = None
         self._l4_flavor_id = None
         self._l4_scale_flavor_id = None
         self._l7_flavor_id = None
@@ -169,7 +166,6 @@ class LoadBalancer:
         self.ipv6_vip_port_id = ipv6_vip_port_id
         self.availability_zone_list = availability_zone_list
         self.enterprise_project_id = enterprise_project_id
-        self.billing_info = billing_info
         self.l4_flavor_id = l4_flavor_id
         self.l4_scale_flavor_id = l4_scale_flavor_id
         self.l7_flavor_id = l7_flavor_id
@@ -453,7 +449,7 @@ class LoadBalancer:
     def vip_port_id(self):
         """Gets the vip_port_id of this LoadBalancer.
 
-        负载均衡器的IPv4对应的port ID。
+        负载均衡器的IPv4对应的port ID。[创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。](tag:dt,dt_test,hcso_dt)
 
         :return: The vip_port_id of this LoadBalancer.
         :rtype: str
@@ -464,7 +460,7 @@ class LoadBalancer:
     def vip_port_id(self, vip_port_id):
         """Sets the vip_port_id of this LoadBalancer.
 
-        负载均衡器的IPv4对应的port ID。
+        负载均衡器的IPv4对应的port ID。[创建弹性负载均衡时，会自动为负载均衡创建一个port并关联一个默认的安全组，这个安全组对所有流量不生效。](tag:dt,dt_test,hcso_dt)
 
         :param vip_port_id: The vip_port_id of this LoadBalancer.
         :type: str
@@ -695,7 +691,7 @@ class LoadBalancer:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this LoadBalancer.
 
-        企业项目ID。  [不支持该字段，请勿使用](tag:dt,dt_test)
+        企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :return: The enterprise_project_id of this LoadBalancer.
         :rtype: str
@@ -706,7 +702,7 @@ class LoadBalancer:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this LoadBalancer.
 
-        企业项目ID。  [不支持该字段，请勿使用](tag:dt,dt_test)
+        企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this LoadBalancer.
         :type: str
@@ -714,32 +710,10 @@ class LoadBalancer:
         self._enterprise_project_id = enterprise_project_id
 
     @property
-    def billing_info(self):
-        """Gets the billing_info of this LoadBalancer.
-
-        资源账单信息，取值： - 空：按需计费。 - 非空：包周期计费， 包周期计费billing_info字段的格式为：order_id&#58;product_id&#58;region_id&#58;project_id，如： CS2107161019CDJZZ&#58;OFFI569702121789763584&#58;eu-de&#58;057ef081eb00d2732fd1c01a9be75e6f 使用说明： - admin权限才能更新此字段。 [不支持该字段，请勿使用](tag:dt,dt_test)
-
-        :return: The billing_info of this LoadBalancer.
-        :rtype: str
-        """
-        return self._billing_info
-
-    @billing_info.setter
-    def billing_info(self, billing_info):
-        """Sets the billing_info of this LoadBalancer.
-
-        资源账单信息，取值： - 空：按需计费。 - 非空：包周期计费， 包周期计费billing_info字段的格式为：order_id&#58;product_id&#58;region_id&#58;project_id，如： CS2107161019CDJZZ&#58;OFFI569702121789763584&#58;eu-de&#58;057ef081eb00d2732fd1c01a9be75e6f 使用说明： - admin权限才能更新此字段。 [不支持该字段，请勿使用](tag:dt,dt_test)
-
-        :param billing_info: The billing_info of this LoadBalancer.
-        :type: str
-        """
-        self._billing_info = billing_info
-
-    @property
     def l4_flavor_id(self):
         """Gets the l4_flavor_id of this LoadBalancer.
 
-        四层Flavor ID。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
+        四层Flavor ID。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
 
         :return: The l4_flavor_id of this LoadBalancer.
         :rtype: str
@@ -750,7 +724,7 @@ class LoadBalancer:
     def l4_flavor_id(self, l4_flavor_id):
         """Sets the l4_flavor_id of this LoadBalancer.
 
-        四层Flavor ID。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
+        四层Flavor ID。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
 
         :param l4_flavor_id: The l4_flavor_id of this LoadBalancer.
         :type: str
@@ -783,7 +757,7 @@ class LoadBalancer:
     def l7_flavor_id(self):
         """Gets the l7_flavor_id of this LoadBalancer.
 
-        七层Flavor ID。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
+        七层Flavor ID。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
 
         :return: The l7_flavor_id of this LoadBalancer.
         :rtype: str
@@ -794,7 +768,7 @@ class LoadBalancer:
     def l7_flavor_id(self, l7_flavor_id):
         """Sets the l7_flavor_id of this LoadBalancer.
 
-        七层Flavor ID。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
+        七层Flavor ID。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
 
         :param l7_flavor_id: The l7_flavor_id of this LoadBalancer.
         :type: str
@@ -849,7 +823,7 @@ class LoadBalancer:
     def elb_virsubnet_ids(self):
         """Gets the elb_virsubnet_ids of this LoadBalancer.
 
-        下联面子网的网络ID列表。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。 使用说明： - 若不指定该字段，则会在当前负载均衡器所在子网作为下联面子网。 - 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。 - 下联面子网必须属于该LB所在的VPC。 - 不支持边缘云子网。
+        下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： - 若不指定该字段，则会在当前负载均衡器所在子网作为下联面子网。  - 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  - 下联面子网必须属于该LB所在的VPC。  - 不支持边缘云子网。
 
         :return: The elb_virsubnet_ids of this LoadBalancer.
         :rtype: list[str]
@@ -860,7 +834,7 @@ class LoadBalancer:
     def elb_virsubnet_ids(self, elb_virsubnet_ids):
         """Sets the elb_virsubnet_ids of this LoadBalancer.
 
-        下联面子网的网络ID列表。可以通过GET https&#58;//{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。 使用说明： - 若不指定该字段，则会在当前负载均衡器所在子网作为下联面子网。 - 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。 - 下联面子网必须属于该LB所在的VPC。 - 不支持边缘云子网。
+        下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： - 若不指定该字段，则会在当前负载均衡器所在子网作为下联面子网。  - 若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  - 下联面子网必须属于该LB所在的VPC。  - 不支持边缘云子网。
 
         :param elb_virsubnet_ids: The elb_virsubnet_ids of this LoadBalancer.
         :type: list[str]
@@ -893,7 +867,7 @@ class LoadBalancer:
     def ip_target_enable(self):
         """Gets the ip_target_enable of this LoadBalancer.
 
-        是否启用跨VPC后端转发。取值： - true：开启。 - false：不开启。  仅独享型负载均衡器支持该特性。  开启跨VPC后端转发后，后端服务器组支持添加其他VPC、其他公有云、云下数据中心的服务器。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        是否启用跨VPC后端转发。开启跨VPC后端转发后，后端服务器组支持添加其他VPC、其他公有云、云下数据中心的服务器。取值： - true：开启。 - false：不开启。 [仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The ip_target_enable of this LoadBalancer.
         :rtype: bool
@@ -904,7 +878,7 @@ class LoadBalancer:
     def ip_target_enable(self, ip_target_enable):
         """Sets the ip_target_enable of this LoadBalancer.
 
-        是否启用跨VPC后端转发。取值： - true：开启。 - false：不开启。  仅独享型负载均衡器支持该特性。  开启跨VPC后端转发后，后端服务器组支持添加其他VPC、其他公有云、云下数据中心的服务器。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        是否启用跨VPC后端转发。开启跨VPC后端转发后，后端服务器组支持添加其他VPC、其他公有云、云下数据中心的服务器。取值： - true：开启。 - false：不开启。 [仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param ip_target_enable: The ip_target_enable of this LoadBalancer.
         :type: bool
@@ -957,7 +931,7 @@ class LoadBalancer:
     def deletion_protection_enable(self):
         """Gets the deletion_protection_enable of this LoadBalancer.
 
-        是否开启删除保护，取值： - false：不开启。 - true：开启。 >退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。
+        是否开启删除保护，取值： - false：不开启。 - true：开启。  仅当前局点启用删除保护特性后才会返回该字段。  >退场时需要先关闭所有资源的删除保护开关。
 
         :return: The deletion_protection_enable of this LoadBalancer.
         :rtype: bool
@@ -968,7 +942,7 @@ class LoadBalancer:
     def deletion_protection_enable(self, deletion_protection_enable):
         """Sets the deletion_protection_enable of this LoadBalancer.
 
-        是否开启删除保护，取值： - false：不开启。 - true：开启。 >退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。
+        是否开启删除保护，取值： - false：不开启。 - true：开启。  仅当前局点启用删除保护特性后才会返回该字段。  >退场时需要先关闭所有资源的删除保护开关。
 
         :param deletion_protection_enable: The deletion_protection_enable of this LoadBalancer.
         :type: bool

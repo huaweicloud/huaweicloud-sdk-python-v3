@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DeleteResourceGroupsResourcesBatchRequest:
+class UpdateLogtankOption:
 
 
     """
@@ -22,69 +22,72 @@ class DeleteResourceGroupsResourcesBatchRequest:
     sensitive_list = []
 
     openapi_types = {
-        'group_id': 'str',
-        'body': 'ResourcesReq'
+        'log_group_id': 'str',
+        'log_topic_id': 'str'
     }
 
     attribute_map = {
-        'group_id': 'group_id',
-        'body': 'body'
+        'log_group_id': 'log_group_id',
+        'log_topic_id': 'log_topic_id'
     }
 
-    def __init__(self, group_id=None, body=None):
-        """DeleteResourceGroupsResourcesBatchRequest - a model defined in huaweicloud sdk"""
+    def __init__(self, log_group_id=None, log_topic_id=None):
+        """UpdateLogtankOption - a model defined in huaweicloud sdk"""
         
         
 
-        self._group_id = None
-        self._body = None
+        self._log_group_id = None
+        self._log_topic_id = None
         self.discriminator = None
 
-        self.group_id = group_id
-        if body is not None:
-            self.body = body
+        if log_group_id is not None:
+            self.log_group_id = log_group_id
+        if log_topic_id is not None:
+            self.log_topic_id = log_topic_id
 
     @property
-    def group_id(self):
-        """Gets the group_id of this DeleteResourceGroupsResourcesBatchRequest.
+    def log_group_id(self):
+        """Gets the log_group_id of this UpdateLogtankOption.
 
-        当前资源所在分组信息，以rg开头，后跟22位由字母或数字组成的字符串
+        日志组别id，其他（非ELB）服务提供
 
-        :return: The group_id of this DeleteResourceGroupsResourcesBatchRequest.
+        :return: The log_group_id of this UpdateLogtankOption.
         :rtype: str
         """
-        return self._group_id
+        return self._log_group_id
 
-    @group_id.setter
-    def group_id(self, group_id):
-        """Sets the group_id of this DeleteResourceGroupsResourcesBatchRequest.
+    @log_group_id.setter
+    def log_group_id(self, log_group_id):
+        """Sets the log_group_id of this UpdateLogtankOption.
 
-        当前资源所在分组信息，以rg开头，后跟22位由字母或数字组成的字符串
+        日志组别id，其他（非ELB）服务提供
 
-        :param group_id: The group_id of this DeleteResourceGroupsResourcesBatchRequest.
+        :param log_group_id: The log_group_id of this UpdateLogtankOption.
         :type: str
         """
-        self._group_id = group_id
+        self._log_group_id = log_group_id
 
     @property
-    def body(self):
-        """Gets the body of this DeleteResourceGroupsResourcesBatchRequest.
+    def log_topic_id(self):
+        """Gets the log_topic_id of this UpdateLogtankOption.
 
+        日志订阅主题id，其他（非ELB）服务提供
 
-        :return: The body of this DeleteResourceGroupsResourcesBatchRequest.
-        :rtype: ResourcesReq
+        :return: The log_topic_id of this UpdateLogtankOption.
+        :rtype: str
         """
-        return self._body
+        return self._log_topic_id
 
-    @body.setter
-    def body(self, body):
-        """Sets the body of this DeleteResourceGroupsResourcesBatchRequest.
+    @log_topic_id.setter
+    def log_topic_id(self, log_topic_id):
+        """Sets the log_topic_id of this UpdateLogtankOption.
 
+        日志订阅主题id，其他（非ELB）服务提供
 
-        :param body: The body of this DeleteResourceGroupsResourcesBatchRequest.
-        :type: ResourcesReq
+        :param log_topic_id: The log_topic_id of this UpdateLogtankOption.
+        :type: str
         """
-        self._body = body
+        self._log_topic_id = log_topic_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -128,7 +131,7 @@ class DeleteResourceGroupsResourcesBatchRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeleteResourceGroupsResourcesBatchRequest):
+        if not isinstance(other, UpdateLogtankOption):
             return False
 
         return self.__dict__ == other.__dict__

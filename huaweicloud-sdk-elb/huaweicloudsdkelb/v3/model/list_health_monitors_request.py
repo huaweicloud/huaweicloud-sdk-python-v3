@@ -234,7 +234,7 @@ class ListHealthMonitorsRequest:
     def domain_name(self):
         """Gets the domain_name of this ListHealthMonitorsRequest.
 
-        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  支持多值查询，查询条件格式：**domain_name=xxx&domain_name=xxx**。
+        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、'-'、'.'。  支持多值查询，查询条件格式：**domain_name=xxx&domain_name=xxx**。
 
         :return: The domain_name of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -245,7 +245,7 @@ class ListHealthMonitorsRequest:
     def domain_name(self, domain_name):
         """Sets the domain_name of this ListHealthMonitorsRequest.
 
-        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  支持多值查询，查询条件格式：**domain_name=xxx&domain_name=xxx**。
+        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、'-'、'.'。  支持多值查询，查询条件格式：**domain_name=xxx&domain_name=xxx**。
 
         :param domain_name: The domain_name of this ListHealthMonitorsRequest.
         :type: list[str]
@@ -432,7 +432,7 @@ class ListHealthMonitorsRequest:
     def url_path(self):
         """Gets the url_path of this ListHealthMonitorsRequest.
 
-        健康检查测试member健康时发送的http请求路径。默认为“/”。  使用说明： - 以“/”开头。仅当type为HTTP时生效。  支持多值查询，查询条件格式：***url_path=xxx&url_path=xxx***。
+        健康检查测试member健康时发送的http请求路径。默认为\"/\"。  使用说明： - 以\"/\"开头。仅当type为HTTP时生效。  支持多值查询，查询条件格式：***url_path=xxx&url_path=xxx***。
 
         :return: The url_path of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -443,7 +443,7 @@ class ListHealthMonitorsRequest:
     def url_path(self, url_path):
         """Sets the url_path of this ListHealthMonitorsRequest.
 
-        健康检查测试member健康时发送的http请求路径。默认为“/”。  使用说明： - 以“/”开头。仅当type为HTTP时生效。  支持多值查询，查询条件格式：***url_path=xxx&url_path=xxx***。
+        健康检查测试member健康时发送的http请求路径。默认为\"/\"。  使用说明： - 以\"/\"开头。仅当type为HTTP时生效。  支持多值查询，查询条件格式：***url_path=xxx&url_path=xxx***。
 
         :param url_path: The url_path of this ListHealthMonitorsRequest.
         :type: list[str]
@@ -476,7 +476,7 @@ class ListHealthMonitorsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListHealthMonitorsRequest.
 
-        企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :return: The enterprise_project_id of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -487,7 +487,7 @@ class ListHealthMonitorsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListHealthMonitorsRequest.
 
-        企业项目ID。 支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListHealthMonitorsRequest.
         :type: list[str]

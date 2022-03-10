@@ -113,7 +113,7 @@ class CreateLoadBalancerBandwidthOption:
     def charge_mode(self):
         """Gets the charge_mode of this CreateLoadBalancerBandwidthOption.
 
-        计费模式。 [取值范围：bandwidth表示按带宽计费，traffic表示按流量计费。](tag:hws,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [当前仅支持traffic按流量计费](tag:dt,dt_test) 使用说明： - 当id字段为null时，charge_mode是必须的。
+        计费模式。 [取值范围：bandwidth表示按带宽计费，traffic表示按流量计费。](tag:hws,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [当前仅支持traffic按流量计费](tag:dt,dt_test,hcso_dt) 使用说明：   - 当id字段为null时，charge_mode是必须的。
 
         :return: The charge_mode of this CreateLoadBalancerBandwidthOption.
         :rtype: str
@@ -124,7 +124,7 @@ class CreateLoadBalancerBandwidthOption:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this CreateLoadBalancerBandwidthOption.
 
-        计费模式。 [取值范围：bandwidth表示按带宽计费，traffic表示按流量计费。](tag:hws,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [当前仅支持traffic按流量计费](tag:dt,dt_test) 使用说明： - 当id字段为null时，charge_mode是必须的。
+        计费模式。 [取值范围：bandwidth表示按带宽计费，traffic表示按流量计费。](tag:hws,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [当前仅支持traffic按流量计费](tag:dt,dt_test,hcso_dt) 使用说明：   - 当id字段为null时，charge_mode是必须的。
 
         :param charge_mode: The charge_mode of this CreateLoadBalancerBandwidthOption.
         :type: str
@@ -157,7 +157,7 @@ class CreateLoadBalancerBandwidthOption:
     def billing_info(self):
         """Gets the billing_info of this CreateLoadBalancerBandwidthOption.
 
-        预留资源账单信息，默认为空表示按需计费， 非空为包周期。admin权限才能更新此字段
+        预留资源账单信息，默认为空表示按需计费，非空为包周期。 不支持该字段，请勿使用。
 
         :return: The billing_info of this CreateLoadBalancerBandwidthOption.
         :rtype: str
@@ -168,7 +168,7 @@ class CreateLoadBalancerBandwidthOption:
     def billing_info(self, billing_info):
         """Sets the billing_info of this CreateLoadBalancerBandwidthOption.
 
-        预留资源账单信息，默认为空表示按需计费， 非空为包周期。admin权限才能更新此字段
+        预留资源账单信息，默认为空表示按需计费，非空为包周期。 不支持该字段，请勿使用。
 
         :param billing_info: The billing_info of this CreateLoadBalancerBandwidthOption.
         :type: str
