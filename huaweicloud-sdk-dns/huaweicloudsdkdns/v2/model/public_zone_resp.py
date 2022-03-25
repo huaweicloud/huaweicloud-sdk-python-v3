@@ -38,7 +38,6 @@ class PublicZoneResp:
         'links': 'PageLink',
         'tags': 'list[Tag]',
         'masters': 'list[str]',
-        'routers': 'list[RouterWithStatus]',
         'enterprise_project_id': 'str'
     }
 
@@ -59,11 +58,10 @@ class PublicZoneResp:
         'links': 'links',
         'tags': 'tags',
         'masters': 'masters',
-        'routers': 'routers',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, tags=None, masters=None, routers=None, enterprise_project_id=None):
+    def __init__(self, id=None, name=None, description=None, email=None, zone_type=None, ttl=None, serial=None, status=None, record_num=None, pool_id=None, project_id=None, created_at=None, updated_at=None, links=None, tags=None, masters=None, enterprise_project_id=None):
         """PublicZoneResp - a model defined in huaweicloud sdk"""
         
         
@@ -84,7 +82,6 @@ class PublicZoneResp:
         self._links = None
         self._tags = None
         self._masters = None
-        self._routers = None
         self._enterprise_project_id = None
         self.discriminator = None
 
@@ -120,8 +117,6 @@ class PublicZoneResp:
             self.tags = tags
         if masters is not None:
             self.masters = masters
-        if routers is not None:
-            self.routers = routers
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
@@ -474,28 +469,6 @@ class PublicZoneResp:
         :type: list[str]
         """
         self._masters = masters
-
-    @property
-    def routers(self):
-        """Gets the routers of this PublicZoneResp.
-
-        与该zone关联的Router(VPC)列表。
-
-        :return: The routers of this PublicZoneResp.
-        :rtype: list[RouterWithStatus]
-        """
-        return self._routers
-
-    @routers.setter
-    def routers(self, routers):
-        """Sets the routers of this PublicZoneResp.
-
-        与该zone关联的Router(VPC)列表。
-
-        :param routers: The routers of this PublicZoneResp.
-        :type: list[RouterWithStatus]
-        """
-        self._routers = routers
 
     @property
     def enterprise_project_id(self):

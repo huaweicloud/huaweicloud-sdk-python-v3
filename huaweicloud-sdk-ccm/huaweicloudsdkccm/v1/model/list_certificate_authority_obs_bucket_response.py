@@ -49,7 +49,7 @@ class ListCertificateAuthorityObsBucketResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListCertificateAuthorityObsBucketResponse.
 
-        OBS桶总数
+        OBS桶总数。
 
         :return: The total of this ListCertificateAuthorityObsBucketResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ListCertificateAuthorityObsBucketResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListCertificateAuthorityObsBucketResponse.
 
-        OBS桶总数
+        OBS桶总数。
 
         :param total: The total of this ListCertificateAuthorityObsBucketResponse.
         :type: int
@@ -71,7 +71,7 @@ class ListCertificateAuthorityObsBucketResponse(SdkResponse):
     def obs_buckets(self):
         """Gets the obs_buckets of this ListCertificateAuthorityObsBucketResponse.
 
-        OBS桶列表，详情请参见Resources
+        OBS桶列表，详情请参见**ObsBuckets**字段数据结构说明。
 
         :return: The obs_buckets of this ListCertificateAuthorityObsBucketResponse.
         :rtype: list[ObsBuckets]
@@ -82,7 +82,7 @@ class ListCertificateAuthorityObsBucketResponse(SdkResponse):
     def obs_buckets(self, obs_buckets):
         """Sets the obs_buckets of this ListCertificateAuthorityObsBucketResponse.
 
-        OBS桶列表，详情请参见Resources
+        OBS桶列表，详情请参见**ObsBuckets**字段数据结构说明。
 
         :param obs_buckets: The obs_buckets of this ListCertificateAuthorityObsBucketResponse.
         :type: list[ObsBuckets]

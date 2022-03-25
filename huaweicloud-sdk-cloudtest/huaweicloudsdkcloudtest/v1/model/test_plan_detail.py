@@ -30,6 +30,7 @@ class TestPlanDetail:
         'project_id': 'str',
         'current_stage': 'str',
         'expire_day': 'str',
+        'creator': 'TestPlanDetailCreator',
         'owner': 'TestPlanDetailOwner',
         'design_stage': 'TestPlanDetailDesignStage',
         'execute_stage': 'TestPlanDetailExecuteStage',
@@ -46,6 +47,7 @@ class TestPlanDetail:
         'project_id': 'project_id',
         'current_stage': 'current_stage',
         'expire_day': 'expire_day',
+        'creator': 'creator',
         'owner': 'owner',
         'design_stage': 'design_stage',
         'execute_stage': 'execute_stage',
@@ -53,7 +55,7 @@ class TestPlanDetail:
         'iteration': 'iteration'
     }
 
-    def __init__(self, plan_id=None, name=None, start_date=None, end_date=None, finish_date=None, project_id=None, current_stage=None, expire_day=None, owner=None, design_stage=None, execute_stage=None, report_stage=None, iteration=None):
+    def __init__(self, plan_id=None, name=None, start_date=None, end_date=None, finish_date=None, project_id=None, current_stage=None, expire_day=None, creator=None, owner=None, design_stage=None, execute_stage=None, report_stage=None, iteration=None):
         """TestPlanDetail - a model defined in huaweicloud sdk"""
         
         
@@ -66,6 +68,7 @@ class TestPlanDetail:
         self._project_id = None
         self._current_stage = None
         self._expire_day = None
+        self._creator = None
         self._owner = None
         self._design_stage = None
         self._execute_stage = None
@@ -89,6 +92,8 @@ class TestPlanDetail:
             self.current_stage = current_stage
         if expire_day is not None:
             self.expire_day = expire_day
+        if creator is not None:
+            self.creator = creator
         if owner is not None:
             self.owner = owner
         if design_stage is not None:
@@ -275,6 +280,26 @@ class TestPlanDetail:
         :type: str
         """
         self._expire_day = expire_day
+
+    @property
+    def creator(self):
+        """Gets the creator of this TestPlanDetail.
+
+
+        :return: The creator of this TestPlanDetail.
+        :rtype: TestPlanDetailCreator
+        """
+        return self._creator
+
+    @creator.setter
+    def creator(self, creator):
+        """Sets the creator of this TestPlanDetail.
+
+
+        :param creator: The creator of this TestPlanDetail.
+        :type: TestPlanDetailCreator
+        """
+        self._creator = creator
 
     @property
     def owner(self):

@@ -22,20 +22,24 @@ class ListCertificateRequest:
     sensitive_list = []
 
     openapi_types = {
-        'limit': 'str',
+        'limit': 'int',
         'name': 'str',
-        'offset': 'str',
-        'status': 'str'
+        'offset': 'int',
+        'status': 'str',
+        'sort_key': 'str',
+        'sort_dir': 'str'
     }
 
     attribute_map = {
         'limit': 'limit',
         'name': 'name',
         'offset': 'offset',
-        'status': 'status'
+        'status': 'status',
+        'sort_key': 'sort_key',
+        'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, limit=None, name=None, offset=None, status=None):
+    def __init__(self, limit=None, name=None, offset=None, status=None, sort_key=None, sort_dir=None):
         """ListCertificateRequest - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +48,8 @@ class ListCertificateRequest:
         self._name = None
         self._offset = None
         self._status = None
+        self._sort_key = None
+        self._sort_dir = None
         self.discriminator = None
 
         if limit is not None:
@@ -54,15 +60,19 @@ class ListCertificateRequest:
             self.offset = offset
         if status is not None:
             self.status = status
+        if sort_key is not None:
+            self.sort_key = sort_key
+        if sort_dir is not None:
+            self.sort_dir = sort_dir
 
     @property
     def limit(self):
         """Gets the limit of this ListCertificateRequest.
 
-        limit
+        指定查询返回记录条数，默认值10。
 
         :return: The limit of this ListCertificateRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._limit
 
@@ -70,10 +80,10 @@ class ListCertificateRequest:
     def limit(self, limit):
         """Sets the limit of this ListCertificateRequest.
 
-        limit
+        指定查询返回记录条数，默认值10。
 
         :param limit: The limit of this ListCertificateRequest.
-        :type: str
+        :type: int
         """
         self._limit = limit
 
@@ -81,7 +91,7 @@ class ListCertificateRequest:
     def name(self):
         """Gets the name of this ListCertificateRequest.
 
-        name
+        私有证书名称，返回名称带有name字段的证书集合。
 
         :return: The name of this ListCertificateRequest.
         :rtype: str
@@ -92,7 +102,7 @@ class ListCertificateRequest:
     def name(self, name):
         """Sets the name of this ListCertificateRequest.
 
-        name
+        私有证书名称，返回名称带有name字段的证书集合。
 
         :param name: The name of this ListCertificateRequest.
         :type: str
@@ -103,10 +113,10 @@ class ListCertificateRequest:
     def offset(self):
         """Gets the offset of this ListCertificateRequest.
 
-        offset
+        索引位置，从offset指定的下一条数据开始查询。
 
         :return: The offset of this ListCertificateRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._offset
 
@@ -114,10 +124,10 @@ class ListCertificateRequest:
     def offset(self, offset):
         """Sets the offset of this ListCertificateRequest.
 
-        offset
+        索引位置，从offset指定的下一条数据开始查询。
 
         :param offset: The offset of this ListCertificateRequest.
-        :type: str
+        :type: int
         """
         self._offset = offset
 
@@ -125,7 +135,7 @@ class ListCertificateRequest:
     def status(self):
         """Gets the status of this ListCertificateRequest.
 
-        status
+        私有证书状态，通过状态过滤证书集合。   - **ISSUED** : 已签发；   - **REVOKED** : 已吊销；   - **EXPIRED** : 已过期。
 
         :return: The status of this ListCertificateRequest.
         :rtype: str
@@ -136,12 +146,56 @@ class ListCertificateRequest:
     def status(self, status):
         """Sets the status of this ListCertificateRequest.
 
-        status
+        私有证书状态，通过状态过滤证书集合。   - **ISSUED** : 已签发；   - **REVOKED** : 已吊销；   - **EXPIRED** : 已过期。
 
         :param status: The status of this ListCertificateRequest.
         :type: str
         """
         self._status = status
+
+    @property
+    def sort_key(self):
+        """Gets the sort_key of this ListCertificateRequest.
+
+        排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **issuer_name** : 签发CA名称 - **not_after** : 证书到期时间
+
+        :return: The sort_key of this ListCertificateRequest.
+        :rtype: str
+        """
+        return self._sort_key
+
+    @sort_key.setter
+    def sort_key(self, sort_key):
+        """Sets the sort_key of this ListCertificateRequest.
+
+        排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **issuer_name** : 签发CA名称 - **not_after** : 证书到期时间
+
+        :param sort_key: The sort_key of this ListCertificateRequest.
+        :type: str
+        """
+        self._sort_key = sort_key
+
+    @property
+    def sort_dir(self):
+        """Gets the sort_dir of this ListCertificateRequest.
+
+        排序方向，支持以下值：   - **DESC** : 降序（默认）   - **ASC** : 升序
+
+        :return: The sort_dir of this ListCertificateRequest.
+        :rtype: str
+        """
+        return self._sort_dir
+
+    @sort_dir.setter
+    def sort_dir(self, sort_dir):
+        """Sets the sort_dir of this ListCertificateRequest.
+
+        排序方向，支持以下值：   - **DESC** : 降序（默认）   - **ASC** : 升序
+
+        :param sort_dir: The sort_dir of this ListCertificateRequest.
+        :type: str
+        """
+        self._sort_dir = sort_dir
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,66 +22,51 @@ class CreateCertificateByCsrRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'csr': 'str',
         'issuer_id': 'str',
-        'subject_alternative_names': 'list[SubjectAlternativeName]',
-        'validity': 'Validity'
+        'csr': 'str',
+        'validity': 'Validity',
+        'type': 'str',
+        'path_length': 'int',
+        'subject_alternative_names': 'list[SubjectAlternativeName]'
     }
 
     attribute_map = {
-        'csr': 'csr',
         'issuer_id': 'issuer_id',
-        'subject_alternative_names': 'subject_alternative_names',
-        'validity': 'validity'
+        'csr': 'csr',
+        'validity': 'validity',
+        'type': 'type',
+        'path_length': 'path_length',
+        'subject_alternative_names': 'subject_alternative_names'
     }
 
-    def __init__(self, csr=None, issuer_id=None, subject_alternative_names=None, validity=None):
+    def __init__(self, issuer_id=None, csr=None, validity=None, type=None, path_length=None, subject_alternative_names=None):
         """CreateCertificateByCsrRequestBody - a model defined in huaweicloud sdk"""
         
         
 
-        self._csr = None
         self._issuer_id = None
-        self._subject_alternative_names = None
+        self._csr = None
         self._validity = None
+        self._type = None
+        self._path_length = None
+        self._subject_alternative_names = None
         self.discriminator = None
 
-        if csr is not None:
-            self.csr = csr
-        if issuer_id is not None:
-            self.issuer_id = issuer_id
+        self.issuer_id = issuer_id
+        self.csr = csr
+        self.validity = validity
+        if type is not None:
+            self.type = type
+        if path_length is not None:
+            self.path_length = path_length
         if subject_alternative_names is not None:
             self.subject_alternative_names = subject_alternative_names
-        if validity is not None:
-            self.validity = validity
-
-    @property
-    def csr(self):
-        """Gets the csr of this CreateCertificateByCsrRequestBody.
-
-        证书签名请求
-
-        :return: The csr of this CreateCertificateByCsrRequestBody.
-        :rtype: str
-        """
-        return self._csr
-
-    @csr.setter
-    def csr(self, csr):
-        """Sets the csr of this CreateCertificateByCsrRequestBody.
-
-        证书签名请求
-
-        :param csr: The csr of this CreateCertificateByCsrRequestBody.
-        :type: str
-        """
-        self._csr = csr
 
     @property
     def issuer_id(self):
         """Gets the issuer_id of this CreateCertificateByCsrRequestBody.
 
-        签发CA ID
+        父CA证书ID。
 
         :return: The issuer_id of this CreateCertificateByCsrRequestBody.
         :rtype: str
@@ -92,7 +77,7 @@ class CreateCertificateByCsrRequestBody:
     def issuer_id(self, issuer_id):
         """Sets the issuer_id of this CreateCertificateByCsrRequestBody.
 
-        签发CA ID
+        父CA证书ID。
 
         :param issuer_id: The issuer_id of this CreateCertificateByCsrRequestBody.
         :type: str
@@ -100,26 +85,26 @@ class CreateCertificateByCsrRequestBody:
         self._issuer_id = issuer_id
 
     @property
-    def subject_alternative_names(self):
-        """Gets the subject_alternative_names of this CreateCertificateByCsrRequestBody.
+    def csr(self):
+        """Gets the csr of this CreateCertificateByCsrRequestBody.
 
-        主题备用名称
+        证书签名请求。请使用“\\r\\n”或“\\n”替代证书签名请求中的换行符，若通过console端请求此接口，则无需做符号转换。
 
-        :return: The subject_alternative_names of this CreateCertificateByCsrRequestBody.
-        :rtype: list[SubjectAlternativeName]
+        :return: The csr of this CreateCertificateByCsrRequestBody.
+        :rtype: str
         """
-        return self._subject_alternative_names
+        return self._csr
 
-    @subject_alternative_names.setter
-    def subject_alternative_names(self, subject_alternative_names):
-        """Sets the subject_alternative_names of this CreateCertificateByCsrRequestBody.
+    @csr.setter
+    def csr(self, csr):
+        """Sets the csr of this CreateCertificateByCsrRequestBody.
 
-        主题备用名称
+        证书签名请求。请使用“\\r\\n”或“\\n”替代证书签名请求中的换行符，若通过console端请求此接口，则无需做符号转换。
 
-        :param subject_alternative_names: The subject_alternative_names of this CreateCertificateByCsrRequestBody.
-        :type: list[SubjectAlternativeName]
+        :param csr: The csr of this CreateCertificateByCsrRequestBody.
+        :type: str
         """
-        self._subject_alternative_names = subject_alternative_names
+        self._csr = csr
 
     @property
     def validity(self):
@@ -140,6 +125,72 @@ class CreateCertificateByCsrRequestBody:
         :type: Validity
         """
         self._validity = validity
+
+    @property
+    def type(self):
+        """Gets the type of this CreateCertificateByCsrRequestBody.
+
+        证书类型，用于区分从属CA与私有证书。   - **ENTITY_CERT** : 签发私有证书，为缺省值；   - **INTERMEDIATE_CA** : 签发从属CA。
+
+        :return: The type of this CreateCertificateByCsrRequestBody.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this CreateCertificateByCsrRequestBody.
+
+        证书类型，用于区分从属CA与私有证书。   - **ENTITY_CERT** : 签发私有证书，为缺省值；   - **INTERMEDIATE_CA** : 签发从属CA。
+
+        :param type: The type of this CreateCertificateByCsrRequestBody.
+        :type: str
+        """
+        self._type = type
+
+    @property
+    def path_length(self):
+        """Gets the path_length of this CreateCertificateByCsrRequestBody.
+
+        路径长度，仅当签发从属CA时有效。
+
+        :return: The path_length of this CreateCertificateByCsrRequestBody.
+        :rtype: int
+        """
+        return self._path_length
+
+    @path_length.setter
+    def path_length(self, path_length):
+        """Sets the path_length of this CreateCertificateByCsrRequestBody.
+
+        路径长度，仅当签发从属CA时有效。
+
+        :param path_length: The path_length of this CreateCertificateByCsrRequestBody.
+        :type: int
+        """
+        self._path_length = path_length
+
+    @property
+    def subject_alternative_names(self):
+        """Gets the subject_alternative_names of this CreateCertificateByCsrRequestBody.
+
+        主体备用名称(本接口预留参数，当前在后端被忽略)，详情请参见**SubjectAlternativeName**字段数据结构说明。
+
+        :return: The subject_alternative_names of this CreateCertificateByCsrRequestBody.
+        :rtype: list[SubjectAlternativeName]
+        """
+        return self._subject_alternative_names
+
+    @subject_alternative_names.setter
+    def subject_alternative_names(self, subject_alternative_names):
+        """Sets the subject_alternative_names of this CreateCertificateByCsrRequestBody.
+
+        主体备用名称(本接口预留参数，当前在后端被忽略)，详情请参见**SubjectAlternativeName**字段数据结构说明。
+
+        :param subject_alternative_names: The subject_alternative_names of this CreateCertificateByCsrRequestBody.
+        :type: list[SubjectAlternativeName]
+        """
+        self._subject_alternative_names = subject_alternative_names
 
     def to_dict(self):
         """Returns the model properties as a dict"""

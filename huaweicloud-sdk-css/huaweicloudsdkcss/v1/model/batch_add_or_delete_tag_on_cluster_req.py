@@ -23,7 +23,7 @@ class BatchAddOrDeleteTagOnClusterReq:
 
     openapi_types = {
         'action': 'str',
-        'tags': 'list[TagList]',
+        'tags': 'list[Tag]',
         'sys_tags': 'list[SysTags]'
     }
 
@@ -77,7 +77,7 @@ class BatchAddOrDeleteTagOnClusterReq:
         标签列表。
 
         :return: The tags of this BatchAddOrDeleteTagOnClusterReq.
-        :rtype: list[TagList]
+        :rtype: list[Tag]
         """
         return self._tags
 
@@ -88,7 +88,7 @@ class BatchAddOrDeleteTagOnClusterReq:
         标签列表。
 
         :param tags: The tags of this BatchAddOrDeleteTagOnClusterReq.
-        :type: list[TagList]
+        :type: list[Tag]
         """
         self._tags = tags
 

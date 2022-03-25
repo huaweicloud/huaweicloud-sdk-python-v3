@@ -44,7 +44,7 @@ class ExportCertificateAuthorityCsrResponse(SdkResponse):
     def csr(self):
         """Gets the csr of this ExportCertificateAuthorityCsrResponse.
 
-        CSR内容
+        证书签名请求内容，有以下两种情况：   - 通过API请求本接口，证书签名请求中换行符已使用\"\\r\\n\"代替；   - 通过console端导出证书签名请求，将得到标准的PEM格式的证书签名请求文件。
 
         :return: The csr of this ExportCertificateAuthorityCsrResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class ExportCertificateAuthorityCsrResponse(SdkResponse):
     def csr(self, csr):
         """Sets the csr of this ExportCertificateAuthorityCsrResponse.
 
-        CSR内容
+        证书签名请求内容，有以下两种情况：   - 通过API请求本接口，证书签名请求中换行符已使用\"\\r\\n\"代替；   - 通过console端导出证书签名请求，将得到标准的PEM格式的证书签名请求文件。
 
         :param csr: The csr of this ExportCertificateAuthorityCsrResponse.
         :type: str

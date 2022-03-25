@@ -40,8 +40,7 @@ class ImportCertificateAuthorityCertificateRequestBody:
         self._certificate_chain = None
         self.discriminator = None
 
-        if certificate is not None:
-            self.certificate = certificate
+        self.certificate = certificate
         if certificate_chain is not None:
             self.certificate_chain = certificate_chain
 
@@ -49,7 +48,7 @@ class ImportCertificateAuthorityCertificateRequestBody:
     def certificate(self):
         """Gets the certificate of this ImportCertificateAuthorityCertificateRequestBody.
 
-        证书内容
+        证书内容。
 
         :return: The certificate of this ImportCertificateAuthorityCertificateRequestBody.
         :rtype: str
@@ -60,7 +59,7 @@ class ImportCertificateAuthorityCertificateRequestBody:
     def certificate(self, certificate):
         """Sets the certificate of this ImportCertificateAuthorityCertificateRequestBody.
 
-        证书内容
+        证书内容。
 
         :param certificate: The certificate of this ImportCertificateAuthorityCertificateRequestBody.
         :type: str
@@ -71,7 +70,7 @@ class ImportCertificateAuthorityCertificateRequestBody:
     def certificate_chain(self):
         """Gets the certificate_chain of this ImportCertificateAuthorityCertificateRequestBody.
 
-        证书链内容
+        证书链内容。
 
         :return: The certificate_chain of this ImportCertificateAuthorityCertificateRequestBody.
         :rtype: str
@@ -82,7 +81,7 @@ class ImportCertificateAuthorityCertificateRequestBody:
     def certificate_chain(self, certificate_chain):
         """Sets the certificate_chain of this ImportCertificateAuthorityCertificateRequestBody.
 
-        证书链内容
+        证书链内容。
 
         :param certificate_chain: The certificate_chain of this ImportCertificateAuthorityCertificateRequestBody.
         :type: str

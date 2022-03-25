@@ -48,7 +48,7 @@ class ExportCertificateRequest:
     def certificate_id(self):
         """Gets the certificate_id of this ExportCertificateRequest.
 
-        certificate_id
+        所要导出的私有证书ID。
 
         :return: The certificate_id of this ExportCertificateRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ExportCertificateRequest:
     def certificate_id(self, certificate_id):
         """Sets the certificate_id of this ExportCertificateRequest.
 
-        certificate_id
+        所要导出的私有证书ID。
 
         :param certificate_id: The certificate_id of this ExportCertificateRequest.
         :type: str

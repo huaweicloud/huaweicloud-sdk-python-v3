@@ -43,7 +43,7 @@ class EnableCertificateAuthorityRequest:
     def ca_id(self):
         """Gets the ca_id of this EnableCertificateAuthorityRequest.
 
-        ca_id
+        所要启用的CA证书ID。
 
         :return: The ca_id of this EnableCertificateAuthorityRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class EnableCertificateAuthorityRequest:
     def ca_id(self, ca_id):
         """Sets the ca_id of this EnableCertificateAuthorityRequest.
 
-        ca_id
+        所要启用的CA证书ID。
 
         :param ca_id: The ca_id of this EnableCertificateAuthorityRequest.
         :type: str

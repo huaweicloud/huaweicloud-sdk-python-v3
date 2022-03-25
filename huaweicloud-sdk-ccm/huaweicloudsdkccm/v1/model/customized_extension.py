@@ -49,7 +49,7 @@ class CustomizedExtension:
     def object_identifier(self):
         """Gets the object_identifier of this CustomizedExtension.
 
-        对象标识符
+        对象标识符。 > 本参数需要满足ASN1规范的点分十进制符号格式的字符串，如1.3.6.1.4.1.2011.4.99。
 
         :return: The object_identifier of this CustomizedExtension.
         :rtype: str
@@ -60,7 +60,7 @@ class CustomizedExtension:
     def object_identifier(self, object_identifier):
         """Sets the object_identifier of this CustomizedExtension.
 
-        对象标识符
+        对象标识符。 > 本参数需要满足ASN1规范的点分十进制符号格式的字符串，如1.3.6.1.4.1.2011.4.99。
 
         :param object_identifier: The object_identifier of this CustomizedExtension.
         :type: str
@@ -71,7 +71,7 @@ class CustomizedExtension:
     def value(self):
         """Gets the value of this CustomizedExtension.
 
-        自定义属性内容
+        自定义属性内容。
 
         :return: The value of this CustomizedExtension.
         :rtype: str
@@ -82,7 +82,7 @@ class CustomizedExtension:
     def value(self, value):
         """Sets the value of this CustomizedExtension.
 
-        自定义属性内容
+        自定义属性内容。
 
         :param value: The value of this CustomizedExtension.
         :type: str

@@ -22,72 +22,151 @@ class ParseCertificateSigningRequestResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int',
-        'certificates': 'list[ShowCertificateReponseBody]'
+        'key_algorithm': 'str',
+        'key_algorithm_length': 'str',
+        'signature_algorithm': 'str',
+        'public_key': 'str',
+        'distinguished_name': 'DistinguishedName'
     }
 
     attribute_map = {
-        'total': 'total',
-        'certificates': 'certificates'
+        'key_algorithm': 'key_algorithm',
+        'key_algorithm_length': 'key_algorithm_length',
+        'signature_algorithm': 'signature_algorithm',
+        'public_key': 'public_key',
+        'distinguished_name': 'distinguished_name'
     }
 
-    def __init__(self, total=None, certificates=None):
+    def __init__(self, key_algorithm=None, key_algorithm_length=None, signature_algorithm=None, public_key=None, distinguished_name=None):
         """ParseCertificateSigningRequestResponse - a model defined in huaweicloud sdk"""
         
         super(ParseCertificateSigningRequestResponse, self).__init__()
 
-        self._total = None
-        self._certificates = None
+        self._key_algorithm = None
+        self._key_algorithm_length = None
+        self._signature_algorithm = None
+        self._public_key = None
+        self._distinguished_name = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
-        if certificates is not None:
-            self.certificates = certificates
+        if key_algorithm is not None:
+            self.key_algorithm = key_algorithm
+        if key_algorithm_length is not None:
+            self.key_algorithm_length = key_algorithm_length
+        if signature_algorithm is not None:
+            self.signature_algorithm = signature_algorithm
+        if public_key is not None:
+            self.public_key = public_key
+        if distinguished_name is not None:
+            self.distinguished_name = distinguished_name
 
     @property
-    def total(self):
-        """Gets the total of this ParseCertificateSigningRequestResponse.
+    def key_algorithm(self):
+        """Gets the key_algorithm of this ParseCertificateSigningRequestResponse.
 
-        证书总数
+        密钥算法。
 
-        :return: The total of this ParseCertificateSigningRequestResponse.
-        :rtype: int
+        :return: The key_algorithm of this ParseCertificateSigningRequestResponse.
+        :rtype: str
         """
-        return self._total
+        return self._key_algorithm
 
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ParseCertificateSigningRequestResponse.
+    @key_algorithm.setter
+    def key_algorithm(self, key_algorithm):
+        """Sets the key_algorithm of this ParseCertificateSigningRequestResponse.
 
-        证书总数
+        密钥算法。
 
-        :param total: The total of this ParseCertificateSigningRequestResponse.
-        :type: int
+        :param key_algorithm: The key_algorithm of this ParseCertificateSigningRequestResponse.
+        :type: str
         """
-        self._total = total
+        self._key_algorithm = key_algorithm
 
     @property
-    def certificates(self):
-        """Gets the certificates of this ParseCertificateSigningRequestResponse.
+    def key_algorithm_length(self):
+        """Gets the key_algorithm_length of this ParseCertificateSigningRequestResponse.
 
-        证书列表
+        密钥算法长度，单位为bit。
 
-        :return: The certificates of this ParseCertificateSigningRequestResponse.
-        :rtype: list[ShowCertificateReponseBody]
+        :return: The key_algorithm_length of this ParseCertificateSigningRequestResponse.
+        :rtype: str
         """
-        return self._certificates
+        return self._key_algorithm_length
 
-    @certificates.setter
-    def certificates(self, certificates):
-        """Sets the certificates of this ParseCertificateSigningRequestResponse.
+    @key_algorithm_length.setter
+    def key_algorithm_length(self, key_algorithm_length):
+        """Sets the key_algorithm_length of this ParseCertificateSigningRequestResponse.
 
-        证书列表
+        密钥算法长度，单位为bit。
 
-        :param certificates: The certificates of this ParseCertificateSigningRequestResponse.
-        :type: list[ShowCertificateReponseBody]
+        :param key_algorithm_length: The key_algorithm_length of this ParseCertificateSigningRequestResponse.
+        :type: str
         """
-        self._certificates = certificates
+        self._key_algorithm_length = key_algorithm_length
+
+    @property
+    def signature_algorithm(self):
+        """Gets the signature_algorithm of this ParseCertificateSigningRequestResponse.
+
+        签名算法，带具体的签名与哈希算法，如\"SHA256withRSA\"。
+
+        :return: The signature_algorithm of this ParseCertificateSigningRequestResponse.
+        :rtype: str
+        """
+        return self._signature_algorithm
+
+    @signature_algorithm.setter
+    def signature_algorithm(self, signature_algorithm):
+        """Sets the signature_algorithm of this ParseCertificateSigningRequestResponse.
+
+        签名算法，带具体的签名与哈希算法，如\"SHA256withRSA\"。
+
+        :param signature_algorithm: The signature_algorithm of this ParseCertificateSigningRequestResponse.
+        :type: str
+        """
+        self._signature_algorithm = signature_algorithm
+
+    @property
+    def public_key(self):
+        """Gets the public_key of this ParseCertificateSigningRequestResponse.
+
+        公钥内容。 > 其中，换行符已被“\\r\\n”替代；
+
+        :return: The public_key of this ParseCertificateSigningRequestResponse.
+        :rtype: str
+        """
+        return self._public_key
+
+    @public_key.setter
+    def public_key(self, public_key):
+        """Sets the public_key of this ParseCertificateSigningRequestResponse.
+
+        公钥内容。 > 其中，换行符已被“\\r\\n”替代；
+
+        :param public_key: The public_key of this ParseCertificateSigningRequestResponse.
+        :type: str
+        """
+        self._public_key = public_key
+
+    @property
+    def distinguished_name(self):
+        """Gets the distinguished_name of this ParseCertificateSigningRequestResponse.
+
+
+        :return: The distinguished_name of this ParseCertificateSigningRequestResponse.
+        :rtype: DistinguishedName
+        """
+        return self._distinguished_name
+
+    @distinguished_name.setter
+    def distinguished_name(self, distinguished_name):
+        """Sets the distinguished_name of this ParseCertificateSigningRequestResponse.
+
+
+        :param distinguished_name: The distinguished_name of this ParseCertificateSigningRequestResponse.
+        :type: DistinguishedName
+        """
+        self._distinguished_name = distinguished_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

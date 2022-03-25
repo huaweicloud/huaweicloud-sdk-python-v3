@@ -22,11 +22,13 @@ class ListCertificateAuthorityRequest:
     sensitive_list = []
 
     openapi_types = {
-        'limit': 'str',
+        'limit': 'int',
         'name': 'str',
-        'offset': 'str',
+        'offset': 'int',
         'status': 'str',
-        'type': 'str'
+        'type': 'str',
+        'sort_key': 'str',
+        'sort_dir': 'str'
     }
 
     attribute_map = {
@@ -34,10 +36,12 @@ class ListCertificateAuthorityRequest:
         'name': 'name',
         'offset': 'offset',
         'status': 'status',
-        'type': 'type'
+        'type': 'type',
+        'sort_key': 'sort_key',
+        'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, limit=None, name=None, offset=None, status=None, type=None):
+    def __init__(self, limit=None, name=None, offset=None, status=None, type=None, sort_key=None, sort_dir=None):
         """ListCertificateAuthorityRequest - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +51,8 @@ class ListCertificateAuthorityRequest:
         self._offset = None
         self._status = None
         self._type = None
+        self._sort_key = None
+        self._sort_dir = None
         self.discriminator = None
 
         if limit is not None:
@@ -59,15 +65,19 @@ class ListCertificateAuthorityRequest:
             self.status = status
         if type is not None:
             self.type = type
+        if sort_key is not None:
+            self.sort_key = sort_key
+        if sort_dir is not None:
+            self.sort_dir = sort_dir
 
     @property
     def limit(self):
         """Gets the limit of this ListCertificateAuthorityRequest.
 
-        limit
+        指定查询返回记录条数，默认值10。
 
         :return: The limit of this ListCertificateAuthorityRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._limit
 
@@ -75,10 +85,10 @@ class ListCertificateAuthorityRequest:
     def limit(self, limit):
         """Sets the limit of this ListCertificateAuthorityRequest.
 
-        limit
+        指定查询返回记录条数，默认值10。
 
         :param limit: The limit of this ListCertificateAuthorityRequest.
-        :type: str
+        :type: int
         """
         self._limit = limit
 
@@ -86,7 +96,7 @@ class ListCertificateAuthorityRequest:
     def name(self):
         """Gets the name of this ListCertificateAuthorityRequest.
 
-        name
+        CA证书名称（CN）过滤值，用于获取名称中带有特定值的CA证书集合。
 
         :return: The name of this ListCertificateAuthorityRequest.
         :rtype: str
@@ -97,7 +107,7 @@ class ListCertificateAuthorityRequest:
     def name(self, name):
         """Sets the name of this ListCertificateAuthorityRequest.
 
-        name
+        CA证书名称（CN）过滤值，用于获取名称中带有特定值的CA证书集合。
 
         :param name: The name of this ListCertificateAuthorityRequest.
         :type: str
@@ -108,10 +118,10 @@ class ListCertificateAuthorityRequest:
     def offset(self):
         """Gets the offset of this ListCertificateAuthorityRequest.
 
-        offset
+        索引位置，从offset指定的下一条数据开始查询。默认值为0。
 
         :return: The offset of this ListCertificateAuthorityRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._offset
 
@@ -119,10 +129,10 @@ class ListCertificateAuthorityRequest:
     def offset(self, offset):
         """Sets the offset of this ListCertificateAuthorityRequest.
 
-        offset
+        索引位置，从offset指定的下一条数据开始查询。默认值为0。
 
         :param offset: The offset of this ListCertificateAuthorityRequest.
-        :type: str
+        :type: int
         """
         self._offset = offset
 
@@ -130,7 +140,7 @@ class ListCertificateAuthorityRequest:
     def status(self):
         """Gets the status of this ListCertificateAuthorityRequest.
 
-        status
+        CA证书状态，通过状态过滤证书集合： - **EXPIRED** : 待激活，此状态下，不可用于签发证书； - **ACTIVED** : 已激活，此状态下，可用于签发证书； - **DISABLED** : 已禁用，此状态下，不可用于签发证书； - **DELETED** : 计划删除，此状态下，不可用于签发证书； - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
 
         :return: The status of this ListCertificateAuthorityRequest.
         :rtype: str
@@ -141,7 +151,7 @@ class ListCertificateAuthorityRequest:
     def status(self, status):
         """Sets the status of this ListCertificateAuthorityRequest.
 
-        status
+        CA证书状态，通过状态过滤证书集合： - **EXPIRED** : 待激活，此状态下，不可用于签发证书； - **ACTIVED** : 已激活，此状态下，可用于签发证书； - **DISABLED** : 已禁用，此状态下，不可用于签发证书； - **DELETED** : 计划删除，此状态下，不可用于签发证书； - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
 
         :param status: The status of this ListCertificateAuthorityRequest.
         :type: str
@@ -152,7 +162,7 @@ class ListCertificateAuthorityRequest:
     def type(self):
         """Gets the type of this ListCertificateAuthorityRequest.
 
-        type
+        CA证书类型： - **ROOT** : 根CA证书 - **SUBORDINATE** : 从属CA证书
 
         :return: The type of this ListCertificateAuthorityRequest.
         :rtype: str
@@ -163,12 +173,56 @@ class ListCertificateAuthorityRequest:
     def type(self, type):
         """Sets the type of this ListCertificateAuthorityRequest.
 
-        type
+        CA证书类型： - **ROOT** : 根CA证书 - **SUBORDINATE** : 从属CA证书
 
         :param type: The type of this ListCertificateAuthorityRequest.
         :type: str
         """
         self._type = type
+
+    @property
+    def sort_key(self):
+        """Gets the sort_key of this ListCertificateAuthorityRequest.
+
+        排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **ca_type** : CA证书类型 - **not_after** : 证书到期时间
+
+        :return: The sort_key of this ListCertificateAuthorityRequest.
+        :rtype: str
+        """
+        return self._sort_key
+
+    @sort_key.setter
+    def sort_key(self, sort_key):
+        """Sets the sort_key of this ListCertificateAuthorityRequest.
+
+        排序属性，目前支持以下属性： - **create_time** : 证书创建时间（默认） - **common_name** : 证书名称 - **ca_type** : CA证书类型 - **not_after** : 证书到期时间
+
+        :param sort_key: The sort_key of this ListCertificateAuthorityRequest.
+        :type: str
+        """
+        self._sort_key = sort_key
+
+    @property
+    def sort_dir(self):
+        """Gets the sort_dir of this ListCertificateAuthorityRequest.
+
+        排序方向，支持以下值： - **DESC** : 降序（默认） - **ASC** : 升序
+
+        :return: The sort_dir of this ListCertificateAuthorityRequest.
+        :rtype: str
+        """
+        return self._sort_dir
+
+    @sort_dir.setter
+    def sort_dir(self, sort_dir):
+        """Sets the sort_dir of this ListCertificateAuthorityRequest.
+
+        排序方向，支持以下值： - **DESC** : 降序（默认） - **ASC** : 升序
+
+        :param sort_dir: The sort_dir of this ListCertificateAuthorityRequest.
+        :type: str
+        """
+        self._sort_dir = sort_dir
 
     def to_dict(self):
         """Returns the model properties as a dict"""

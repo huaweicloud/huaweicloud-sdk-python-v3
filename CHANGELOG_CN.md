@@ -1,3 +1,243 @@
+# 3.0.81 2022-03-25
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DeleteserviceDiscoveryRules`新增响应参数 `responseStatus`
+  - 接口`AddOrUpdateServiceDiscoveryRules`新增响应参数 `responseStatus`
+
+### HuaweiCloud SDK CCM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCertificateAuthority`:
+    - 新增请求参数 `sort_key`、`sort_dir`、`X-Auth-Token`
+    - 移除响应参数 `ca_id`、`type`、`status`、`path_length`、`freeze_flag`、`gen_mode`、`serial_number`、`create_time`、`delete_time`、`not_before`、`not_after`、`distinguished_name`、`crl_configuration`、`issuer_id`、`issuer_name`、`key_algorithm`、`signature_algorithm`
+    - 请求参数`limit`类型调整 `string` -> `int32`
+    - 请求参数`offset`类型调整 `string` -> `int32`
+    - 响应参数`total`改为必填
+  - 接口`CreateCertificateAuthority`:
+    - 新增请求参数 `X-Auth-Token`、`key_usages`
+    - 移除请求参数 `crl_dis_point`
+    - 请求参数`start_from`类型调整 `string` -> `int32`
+    - 请求参数`enabled`、`common_name`、`country`、`locality`、`organization`、`organizational_unit`、`state`、`key_algorithm`、`type`、`type`、`value`改为必填
+    - 响应参数`ca_id`改为必填
+  - 接口`ShowCertificateAuthorityObsAgency`:
+    - 新增请求参数 `X-Auth-Token`
+    - 响应参数`agency_granted`改为必填
+  - 接口`CreateCertificateAuthorityObsAgency`:
+    - 新增请求参数 `X-Auth-Token`
+    - 响应参数`agency_id`改为必填
+  - 接口`ListCertificateAuthorityObsBucket`:
+    - 新增请求参数 `X-Auth-Token`
+    - 响应参数`create_time`类型调整 `string` -> `int64`
+    - 响应参数`total`、`bucket_name`、`create_time`改为必填
+  - 接口`ShowCertificateAuthorityQuota`:
+    - 新增请求参数 `X-Auth-Token`
+    - 响应参数`type`类型调整 `enum` -> `string`
+    - 响应参数`type`、`used`、`quota`改为必填
+  - 接口`ShowCertificateAuthority`:
+    - 新增请求参数 `X-Auth-Token`
+    - 移除响应参数 `crl_dis_point`
+    - 响应参数`create_time`类型调整 `string` -> `int64`
+    - 响应参数`delete_time`类型调整 `string` -> `int64`
+    - 响应参数`not_before`类型调整 `string` -> `int64`
+    - 响应参数`not_after`类型调整 `string` -> `int64`
+    - 响应参数`ca_id`、`type`、`status`、`path_length`、`freeze_flag`、`gen_mode`、`serial_number`、`create_time`、`delete_time`、`not_before`、`not_after`、`common_name`、`country`、`locality`、`organization`、`organizational_unit`、`state`、`enabled`、`issuer_id`、`issuer_name`、`key_algorithm`、`signature_algorithm`改为必填
+  - 接口`DeleteCertificateAuthority`新增请求参数 `X-Auth-Token`
+  - 接口`IssueCertificateAuthorityCertificate`:
+    - 新增请求参数 `X-Auth-Token`
+    - 请求参数`start_from`类型调整 `string` -> `int32`
+    - 请求参数`issuer_id`、`path_length`、`signature_algorithm`、`type`、`value`改为必填
+  - 接口`ExportCertificateAuthorityCsr`:
+    - 新增请求参数 `X-Auth-Token`
+    - 响应参数`csr`改为必填
+  - 接口`DisableCertificateAuthority`新增请求参数 `X-Auth-Token`
+  - 接口`EnableCertificateAuthority`新增请求参数 `X-Auth-Token`
+  - 接口`ExportCertificateAuthorityCertificate`:
+    - 新增请求参数 `X-Auth-Token`
+    - 响应参数`certificate`、`certificate_chain`改为必填
+  - 接口`ImportCertificateAuthorityCertificate`:
+    - 新增请求参数 `X-Auth-Token`
+    - 请求参数`certificate`改为必填
+  - 接口`RestoreCertificateAuthority`新增请求参数 `X-Auth-Token`
+  - 接口`ListCertificate`:
+    - 新增请求参数 `sort_key`、`sort_dir`、`X-Auth-Token`
+    - 移除响应参数 `certificate_id`、`status`、`freeze_flag`、`gen_mode`、`serial_number`、`create_time`、`not_before`、`not_after`、`distinguished_name`、`issuer_id`、`issuer_name`、`key_algorithm`、`signature_algorithm`
+    - 请求参数`limit`类型调整 `string` -> `int32`
+    - 请求参数`offset`类型调整 `string` -> `int32`
+    - 响应参数`total`改为必填
+  - 接口`CreateCertificate`:
+    - 新增请求参数 `X-Auth-Token`
+    - 请求参数`start_from`类型调整 `string` -> `int32`
+    - 请求参数`common_name`、`country`、`locality`、`organization`、`organizational_unit`、`state`、`issuer_id`、`key_algorithm`、`signature_algorithm`、`type`、`value`、`type`、`value`改为必填
+    - 响应参数`certificate_id`改为必填
+  - 接口`CreateCertificateByCsr`:
+    - 新增请求参数 `X-Auth-Token`、`type`、`path_length`
+    - 请求参数`start_from`类型调整 `string` -> `int32`
+    - 请求参数`csr`、`issuer_id`、`type`、`value`、`type`、`value`改为必填
+    - 响应参数`certificate_id`改为必填
+  - 接口`ParseCertificateSigningRequest`:
+    - 新增请求参数 `X-Auth-Token`
+    - 新增响应参数 `key_algorithm`、`key_algorithm_length`、`signature_algorithm`、`public_key`、`distinguished_name`
+    - 移除响应参数 `total`、`certificates`
+    - 请求参数`csr`改为必填
+  - 接口`ShowCertificateQuota`:
+    - 新增请求参数 `X-Auth-Token`
+    - 响应参数`type`类型调整 `enum` -> `string`
+    - 响应参数`type`、`used`、`quota`改为必填
+  - 接口`ShowCertificate`:
+    - 新增请求参数 `X-Auth-Token`
+    - 新增响应参数 `delete_time`
+    - 响应参数`create_time`类型调整 `string` -> `int64`
+    - 响应参数`not_before`类型调整 `string` -> `int64`
+    - 响应参数`not_after`类型调整 `string` -> `int64`
+    - 响应参数`certificate_id`、`status`、`freeze_flag`、`gen_mode`、`serial_number`、`create_time`、`not_before`、`not_after`、`common_name`、`country`、`locality`、`organization`、`organizational_unit`、`state`、`issuer_id`、`issuer_name`、`key_algorithm`、`signature_algorithm`改为必填
+  - 接口`DeleteCertificate`新增请求参数 `X-Auth-Token`
+  - 接口`ExportCertificate`:
+    - 新增请求参数 `X-Auth-Token`
+    - 请求参数`is_compressed`、`type`改为必填
+  - 接口`RevokeCertificate`:
+    - 新增请求参数 `X-Auth-Token`
+    - 移除请求参数 `cert_id`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 支持V2版本接口：
+    - `ShowDomainLocationStats`
+    - `ShowDomainStats`
+    - `ShowTopUrl`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DAS
+
+- _新增特性_
+  - 支持接口 `ShowSqlExplain`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListRedislog`新增响应参数 `group_name`、`replication_ip`
+
+### HuaweiCloud SDK DNS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListPublicZones`移除响应参数 `routers`
+  - 接口`ShowRecordSetByZone`新增请求参数 `marker`、`limit`、`offset`、`line_id`、`tags`、`status`、`type`、`name`、`id`、`sort_key`、`sort_dir`、`search_mode`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListWorkflows`
+    - `CreateWorkflow`
+    - `BatchDeleteWorkflows`
+    - `ListWorkflowExecutions`
+    - `StartWorkflowExecution`
+    - `ShowWorkflowExecution`
+    - `ShowWorkFlow`
+    - `UpdateWorkFlow`
+    - `ShowTenantMetric`
+    - `ShowWorkFlowMetric`
+    - `RetryWorkFlow`
+    - `StopWorkFlow`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListSimCards`:
+    - 新增请求参数 `min_flow`、`max_flow`、`order_id`、`filter_downtime_period`
+    - 响应参数`device_status_date`类型调整 `date` -> `date-time`
+    - 响应参数`expire_time`类型调整 `date` -> `date-time`
+  - 接口`StopSimCard`新增请求参数 `price_plan_list`
+  - 接口`ResetSimCard`新增请求参数 `price_plan_list`
+  - 接口`ShowSimCard`:
+    - 响应参数`device_status_date`类型调整 `date` -> `date-time`
+    - 响应参数`expire_time`类型调整 `date` -> `date-time`
+
+### HuaweiCloud SDK IMS
+
+- _新增特性_
+  - 支持接口`ListVersions`、`ShowVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateDataImage`请求参数`os_type`改为非必填
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 支持接口 `ResetFingerprint`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeVatInvoice`:
+    - 新增请求参数 `return_text_location`
+    - 新增响应参数 `text_location`
+  - 接口`RecognizeIdCard`:
+    - 新增请求参数 `return_text_location`
+    - 新增响应参数 `text_location`
+  - 接口`RecognizeDriverLicense`:
+    - 新增请求参数 `return_text_location`
+    - 新增响应参数 `text_location`
+
+### HuaweiCloud SDK VSS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowDomainSettings`
+    - `UpdateDomainSettings`
+    - `ListTaskHistories`
+    - `ListPortResults`
+    - `ListBusinessRisks`
+    - `UpdateFalsePositive`
+    - `CancelTasks`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListDomains`新增请求参数 `domain_id`
+  - 接口`ShowResults`新增响应参数 `hit_details`
+
 # 3.0.80 2022-03-10
 
 ### HuaweiCloud SDK BCS

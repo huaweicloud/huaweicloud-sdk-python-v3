@@ -43,7 +43,7 @@ class RestoreCertificateAuthorityRequest:
     def ca_id(self):
         """Gets the ca_id of this RestoreCertificateAuthorityRequest.
 
-        ca_id
+        所需要恢复的CA证书ID。
 
         :return: The ca_id of this RestoreCertificateAuthorityRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class RestoreCertificateAuthorityRequest:
     def ca_id(self, ca_id):
         """Sets the ca_id of this RestoreCertificateAuthorityRequest.
 
-        ca_id
+        所需要恢复的CA证书ID。
 
         :param ca_id: The ca_id of this RestoreCertificateAuthorityRequest.
         :type: str

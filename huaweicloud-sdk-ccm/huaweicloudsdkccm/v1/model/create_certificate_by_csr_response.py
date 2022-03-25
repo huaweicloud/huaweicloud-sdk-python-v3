@@ -44,7 +44,7 @@ class CreateCertificateByCsrResponse(SdkResponse):
     def certificate_id(self):
         """Gets the certificate_id of this CreateCertificateByCsrResponse.
 
-        证书 ID
+        当前签发的证书ID。
 
         :return: The certificate_id of this CreateCertificateByCsrResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class CreateCertificateByCsrResponse(SdkResponse):
     def certificate_id(self, certificate_id):
         """Sets the certificate_id of this CreateCertificateByCsrResponse.
 
-        证书 ID
+        当前签发的证书ID。
 
         :param certificate_id: The certificate_id of this CreateCertificateByCsrResponse.
         :type: str

@@ -247,7 +247,7 @@ class OsmClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/servicerequest/verifycodes/',
+            resource_path='/v2/servicerequest/verifycodes',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -3590,7 +3590,7 @@ class OsmClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/servicerequest/verifycodes/',
+            resource_path='/v2/servicerequest/verifycodes',
             method='GET',
             path_params=path_params,
             query_params=query_params,

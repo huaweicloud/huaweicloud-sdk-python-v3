@@ -44,6 +44,7 @@ from huaweicloudsdkdas.v3.model.list_space_analysis_request import ListSpaceAnal
 from huaweicloudsdkdas.v3.model.list_space_analysis_response import ListSpaceAnalysisResponse
 from huaweicloudsdkdas.v3.model.metadata_lock import MetadataLock
 from huaweicloudsdkdas.v3.model.process import Process
+from huaweicloudsdkdas.v3.model.query_sql_plan_body import QuerySqlPlanBody
 from huaweicloudsdkdas.v3.model.register_db_user_request import RegisterDbUserRequest
 from huaweicloudsdkdas.v3.model.register_db_user_request_body import RegisterDbUserRequestBody
 from huaweicloudsdkdas.v3.model.register_db_user_response import RegisterDbUserResponse
@@ -55,6 +56,8 @@ from huaweicloudsdkdas.v3.model.show_quotas_request import ShowQuotasRequest
 from huaweicloudsdkdas.v3.model.show_quotas_response import ShowQuotasResponse
 from huaweicloudsdkdas.v3.model.show_sql_execution_plan_request import ShowSqlExecutionPlanRequest
 from huaweicloudsdkdas.v3.model.show_sql_execution_plan_response import ShowSqlExecutionPlanResponse
+from huaweicloudsdkdas.v3.model.show_sql_explain_request import ShowSqlExplainRequest
+from huaweicloudsdkdas.v3.model.show_sql_explain_response import ShowSqlExplainResponse
 from huaweicloudsdkdas.v3.model.show_sql_switch_status_request import ShowSqlSwitchStatusRequest
 from huaweicloudsdkdas.v3.model.show_sql_switch_status_response import ShowSqlSwitchStatusResponse
 from huaweicloudsdkdas.v3.model.slow_log import SlowLog

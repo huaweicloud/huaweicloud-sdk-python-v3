@@ -135,6 +135,9 @@ from huaweicloudsdkiotda.v5.model.queue_info import QueueInfo
 from huaweicloudsdkiotda.v5.model.reset_device_secret import ResetDeviceSecret
 from huaweicloudsdkiotda.v5.model.reset_device_secret_request import ResetDeviceSecretRequest
 from huaweicloudsdkiotda.v5.model.reset_device_secret_response import ResetDeviceSecretResponse
+from huaweicloudsdkiotda.v5.model.reset_fingerprint import ResetFingerprint
+from huaweicloudsdkiotda.v5.model.reset_fingerprint_request import ResetFingerprintRequest
+from huaweicloudsdkiotda.v5.model.reset_fingerprint_response import ResetFingerprintResponse
 from huaweicloudsdkiotda.v5.model.resource_dto import ResourceDTO
 from huaweicloudsdkiotda.v5.model.routing_rule import RoutingRule
 from huaweicloudsdkiotda.v5.model.routing_rule_action import RoutingRuleAction

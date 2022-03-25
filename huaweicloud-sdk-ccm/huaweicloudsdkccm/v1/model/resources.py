@@ -43,18 +43,15 @@ class Resources:
         self._quota = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if used is not None:
-            self.used = used
-        if quota is not None:
-            self.quota = quota
+        self.type = type
+        self.used = used
+        self.quota = quota
 
     @property
     def type(self):
         """Gets the type of this Resources.
 
-        配额类型。枚举值说明:  - CERTIFICATE_AUTHORITY: 私有证书颁发机构  - CERTIFICATE: 证书
+        证书类型:  - **CERTIFICATE_AUTHORITY**: CA证书；  - **CERTIFICATE**: 私有证书。
 
         :return: The type of this Resources.
         :rtype: str
@@ -65,7 +62,7 @@ class Resources:
     def type(self, type):
         """Sets the type of this Resources.
 
-        配额类型。枚举值说明:  - CERTIFICATE_AUTHORITY: 私有证书颁发机构  - CERTIFICATE: 证书
+        证书类型:  - **CERTIFICATE_AUTHORITY**: CA证书；  - **CERTIFICATE**: 私有证书。
 
         :param type: The type of this Resources.
         :type: str
@@ -76,7 +73,7 @@ class Resources:
     def used(self):
         """Gets the used of this Resources.
 
-        已使用配额数
+        已使用配额数。
 
         :return: The used of this Resources.
         :rtype: int
@@ -87,7 +84,7 @@ class Resources:
     def used(self, used):
         """Sets the used of this Resources.
 
-        已使用配额数
+        已使用配额数。
 
         :param used: The used of this Resources.
         :type: int
@@ -98,7 +95,7 @@ class Resources:
     def quota(self):
         """Gets the quota of this Resources.
 
-        配额总数
+        配额总数：   - **CERTIFICATE_AUTHORITY**: 当前系统指定100；   - **CERTIFICATE**: 当前系统指定100000。
 
         :return: The quota of this Resources.
         :rtype: int
@@ -109,7 +106,7 @@ class Resources:
     def quota(self, quota):
         """Sets the quota of this Resources.
 
-        配额总数
+        配额总数：   - **CERTIFICATE_AUTHORITY**: 当前系统指定100；   - **CERTIFICATE**: 当前系统指定100000。
 
         :param quota: The quota of this Resources.
         :type: int

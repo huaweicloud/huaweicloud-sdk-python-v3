@@ -37,14 +37,13 @@ class ParseCertificateSigningRequestRequestBody:
         self._csr = None
         self.discriminator = None
 
-        if csr is not None:
-            self.csr = csr
+        self.csr = csr
 
     @property
     def csr(self):
         """Gets the csr of this ParseCertificateSigningRequestRequestBody.
 
-        证书请求内容
+        证书签名请求。请使用“\\r\\n”或“\\n”替代证书签名请求中的换行符，若通过console端请求此接口，则无需做符号转换。
 
         :return: The csr of this ParseCertificateSigningRequestRequestBody.
         :rtype: str
@@ -55,7 +54,7 @@ class ParseCertificateSigningRequestRequestBody:
     def csr(self, csr):
         """Sets the csr of this ParseCertificateSigningRequestRequestBody.
 
-        证书请求内容
+        证书签名请求。请使用“\\r\\n”或“\\n”替代证书签名请求中的换行符，若通过console端请求此接口，则无需做符号转换。
 
         :param csr: The csr of this ParseCertificateSigningRequestRequestBody.
         :type: str

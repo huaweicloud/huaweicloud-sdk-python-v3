@@ -44,7 +44,7 @@ class CreateCertificateAuthorityObsAgencyResponse(SdkResponse):
     def agency_id(self):
         """Gets the agency_id of this CreateCertificateAuthorityObsAgencyResponse.
 
-        授权ID
+        创建OBS委托，由IAM返回的授权ID。
 
         :return: The agency_id of this CreateCertificateAuthorityObsAgencyResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class CreateCertificateAuthorityObsAgencyResponse(SdkResponse):
     def agency_id(self, agency_id):
         """Sets the agency_id of this CreateCertificateAuthorityObsAgencyResponse.
 
-        授权ID
+        创建OBS委托，由IAM返回的授权ID。
 
         :param agency_id: The agency_id of this CreateCertificateAuthorityObsAgencyResponse.
         :type: str

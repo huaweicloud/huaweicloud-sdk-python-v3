@@ -51,7 +51,8 @@ class VatInvoiceResult:
         'issuer': 'str',
         'seller_seal': 'list[str]',
         'item_list': 'list[ItemList]',
-        'confidence': 'object'
+        'confidence': 'object',
+        'text_location': 'object'
     }
 
     attribute_map = {
@@ -84,10 +85,11 @@ class VatInvoiceResult:
         'issuer': 'issuer',
         'seller_seal': 'seller_seal',
         'item_list': 'item_list',
-        'confidence': 'confidence'
+        'confidence': 'confidence',
+        'text_location': 'text_location'
     }
 
-    def __init__(self, type=None, serial_number=None, attribution=None, supervision_seal=None, code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, confidence=None):
+    def __init__(self, type=None, serial_number=None, attribution=None, supervision_seal=None, code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, confidence=None, text_location=None):
         """VatInvoiceResult - a model defined in huaweicloud sdk"""
         
         
@@ -122,6 +124,7 @@ class VatInvoiceResult:
         self._seller_seal = None
         self._item_list = None
         self._confidence = None
+        self._text_location = None
         self.discriminator = None
 
         if type is not None:
@@ -184,6 +187,8 @@ class VatInvoiceResult:
             self.item_list = item_list
         if confidence is not None:
             self.confidence = confidence
+        if text_location is not None:
+            self.text_location = text_location
 
     @property
     def type(self):
@@ -844,6 +849,28 @@ class VatInvoiceResult:
         :type: object
         """
         self._confidence = confidence
+
+    @property
+    def text_location(self):
+        """Gets the text_location of this VatInvoiceResult.
+
+        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+
+        :return: The text_location of this VatInvoiceResult.
+        :rtype: object
+        """
+        return self._text_location
+
+    @text_location.setter
+    def text_location(self, text_location):
+        """Sets the text_location of this VatInvoiceResult.
+
+        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+
+        :param text_location: The text_location of this VatInvoiceResult.
+        :type: object
+        """
+        self._text_location = text_location
 
     def to_dict(self):
         """Returns the model properties as a dict"""

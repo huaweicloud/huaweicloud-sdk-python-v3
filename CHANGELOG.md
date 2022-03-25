@@ -1,3 +1,243 @@
+# 3.0.81 2022-03-25
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `responseStatus` to the interface `DeleteserviceDiscoveryRules`
+  - Add the response parameter `responseStatus` to the interface `AddOrUpdateServiceDiscoveryRules`
+
+### HuaweiCloud SDK CCM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListCertificateAuthority`:
+    - Add the request parameters `sort_key`, `sort_dir`, `X-Auth-Token`
+    - Remove the response parameters `ca_id`, `type`, `status`, `path_length`, `freeze_flag`, `gen_mode`, `serial_number`, `create_time`, `delete_time`, `not_before`, `not_after`, `distinguished_name`, `crl_configuration`, `issuer_id`, `issuer_name`, `key_algorithm`, `signature_algorithm`
+    - Modify the type `string` -> `int32` of the request parameter `limit`
+    - Modify the type `string` -> `int32` of the request parameter `offset`
+    - The response parameter `total` changed to required
+  - Changes of the interface `CreateCertificateAuthority`:
+    - Add the request parameters `X-Auth-Token`, `key_usages`
+    - Remove the request parameter `crl_dis_point`
+    - Modify the type `string` -> `int32` of the request parameter `start_from`
+    - The request parameter `enabled`, `common_name`, `country`, `locality`, `organization`, `organizational_unit`, `state`, `key_algorithm`, `type`, `type`, `value` changed to required
+    - The response parameter `ca_id` changed to required
+  - Changes of the interface `ShowCertificateAuthorityObsAgency`:
+    - Add the request parameter `X-Auth-Token`
+    - The response parameter `agency_granted` changed to required
+  - Changes of the interface `CreateCertificateAuthorityObsAgency`:
+    - Add the request parameter `X-Auth-Token`
+    - The response parameter `agency_id` changed to required
+  - Changes of the interface `ListCertificateAuthorityObsBucket`:
+    - Add the request parameter `X-Auth-Token`
+    - Modify the type `string` -> `int64` of the response parameter `create_time`
+    - The response parameter `total`, `bucket_name`, `create_time` changed to required
+  - Changes of the interface `ShowCertificateAuthorityQuota`:
+    - Add the request parameter `X-Auth-Token`
+    - Modify the type `enum` -> `string` of the response parameter `type`
+    - The response parameter `type`, `used`, `quota` changed to required
+  - Changes of the interface `ShowCertificateAuthority`:
+    - Add the request parameter `X-Auth-Token`
+    - Remove the response parameter `crl_dis_point`
+    - Modify the type `string` -> `int64` of the response parameter `create_time`
+    - Modify the type `string` -> `int64` of the response parameter `delete_time`
+    - Modify the type `string` -> `int64` of the response parameter `not_before`
+    - Modify the type `string` -> `int64` of the response parameter `not_after`
+    - The response parameter `ca_id`, `type`, `status`, `path_length`, `freeze_flag`, `gen_mode`, `serial_number`, `create_time`, `delete_time`, `not_before`, `not_after`, `common_name`, `country`, `locality`, `organization`, `organizational_unit`, `state`, `enabled`, `issuer_id`, `issuer_name`, `key_algorithm`, `signature_algorithm` changed to required
+  - Add the request parameter `X-Auth-Token` to the interface `DeleteCertificateAuthority`
+  - Changes of the interface `IssueCertificateAuthorityCertificate`:
+    - Add the request parameter `X-Auth-Token`
+    - Modify the type `string` -> `int32` of the request parameter `start_from`
+    - The request parameter `issuer_id`, `path_length`, `signature_algorithm`, `type`, `value` changed to required
+  - Changes of the interface `ExportCertificateAuthorityCsr`:
+    - Add the request parameter `X-Auth-Token`
+    - The response parameter `csr` changed to required
+  - Add the request parameter `X-Auth-Token` to the interface `DisableCertificateAuthority`
+  - Add the request parameter `X-Auth-Token` to the interface `EnableCertificateAuthority`
+  - Changes of the interface `ExportCertificateAuthorityCertificate`:
+    - Add the request parameter `X-Auth-Token`
+    - The response parameter `certificate`, `certificate_chain` changed to required
+  - Changes of the interface `ImportCertificateAuthorityCertificate`:
+    - Add the request parameter `X-Auth-Token`
+    - The request parameter `certificate` changed to required
+  - Add the request parameter `X-Auth-Token` to the interface `RestoreCertificateAuthority`
+  - Changes of the interface `ListCertificate`:
+    - Add the request parameters `sort_key`, `sort_dir`, `X-Auth-Token`
+    - Remove the response parameters `certificate_id`, `status`, `freeze_flag`, `gen_mode`, `serial_number`, `create_time`, `not_before`, `not_after`, `distinguished_name`, `issuer_id`, `issuer_name`, `key_algorithm`, `signature_algorithm`
+    - Modify the type `string` -> `int32` of the request parameter `limit`
+    - Modify the type `string` -> `int32` of the request parameter `offset`
+    - The response parameter `total` changed to required
+  - Changes of the interface `CreateCertificate`:
+    - Add the request parameter `X-Auth-Token`
+    - Modify the type `string` -> `int32` of the request parameter `start_from`
+    - The request parameter `common_name`, `country`, `locality`, `organization`, `organizational_unit`, `state`, `issuer_id`, `key_algorithm`, `signature_algorithm`, `type`, `value`, `type`, `value` changed to required
+    - The response parameter `certificate_id` changed to required
+  - Changes of the interface `CreateCertificateByCsr`:
+    - Add the request parameters `X-Auth-Token`, `type`, `path_length`
+    - Modify the type `string` -> `int32` of the request parameter `start_from`
+    - The request parameter `csr`, `issuer_id`, `type`, `value`, `type`, `value` changed to required
+    - The response parameter `certificate_id` changed to required
+  - Changes of the interface `ParseCertificateSigningRequest`:
+    - Add the request parameter `X-Auth-Token`
+    - Add the response parameters `key_algorithm`, `key_algorithm_length`, `signature_algorithm`, `public_key`, `distinguished_name`
+    - Remove the response parameters `total`, `certificates`
+    - The request parameter `csr` changed to required
+  - Changes of the interface `ShowCertificateQuota`:
+    - Add the request parameter `X-Auth-Token`
+    - Modify the type `enum` -> `string` of the response parameter `type`
+    - The response parameter `type`, `used`, `quota` changed to required
+  - Changes of the interface `ShowCertificate`:
+    - Add the request parameter `X-Auth-Token`
+    - Add the response parameter `delete_time`
+    - Modify the type `string` -> `int64` of the response parameter `create_time`
+    - Modify the type `string` -> `int64` of the response parameter `not_before`
+    - Modify the type `string` -> `int64` of the response parameter `not_after`
+    - The response parameter `certificate_id`, `status`, `freeze_flag`, `gen_mode`, `serial_number`, `create_time`, `not_before`, `not_after`, `common_name`, `country`, `locality`, `organization`, `organizational_unit`, `state`, `issuer_id`, `issuer_name`, `key_algorithm`, `signature_algorithm` changed to required
+  - Add the request parameter `X-Auth-Token` to the interface `DeleteCertificate`
+  - Changes of the interface `ExportCertificate`:
+    - Add the request parameter `X-Auth-Token`
+    - The request parameter `is_compressed`, `type` changed to required
+  - Changes of the interface `RevokeCertificate`:
+    - Add the request parameter `X-Auth-Token`
+    - Remove the request parameter `cert_id`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - Support the interfaces(v2):
+    - `ShowDomainLocationStats`
+    - `ShowDomainStats`
+    - `ShowTopUrl`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DAS
+
+- _Features_
+  - Support the interface `ShowSqlExplain`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `group_name`, `replication_ip` to the interface `ListRedislog`
+
+### HuaweiCloud SDK DNS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameter `routers` from the interface `ListPublicZones`
+  - Add the request parameters `marker`, `limit`, `offset`, `line_id`, `tags`, `status`, `type`, `name`, `id`, `sort_key`, `sort_dir`, `search_mode` to the interface `ShowRecordSetByZone`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - Support the following interfaces：
+    - `ListWorkflows`
+    - `CreateWorkflow`
+    - `BatchDeleteWorkflows`
+    - `ListWorkflowExecutions`
+    - `StartWorkflowExecution`
+    - `ShowWorkflowExecution`
+    - `ShowWorkFlow`
+    - `UpdateWorkFlow`
+    - `ShowTenantMetric`
+    - `ShowWorkFlowMetric`
+    - `RetryWorkFlow`
+    - `StopWorkFlow`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListSimCards`:
+    - Add the request parameters `min_flow`, `max_flow`, `order_id`, `filter_downtime_period`
+    - Modify the type `date` -> `date-time` of the response parameter `device_status_date`
+    - Modify the type `date` -> `date-time` of the response parameter `expire_time`
+  - Add the request parameter `price_plan_list` to the interface `StopSimCard`
+  - Add the request parameter `price_plan_list` to the interface `ResetSimCard`
+  - Changes of the interface `ShowSimCard`:
+    - Modify the type `date` -> `date-time` of the response parameter `device_status_date`
+    - Modify the type `date` -> `date-time` of the response parameter `expire_time`
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+  - Support the interfaces `ListVersions`, `ShowVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `os_type` changed to not required of the interface `CreateDataImage`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - Support the interface `ResetFingerprint`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `RecognizeVatInvoice`:
+    - Add the request parameter `return_text_location`
+    - Add the response parameter `text_location`
+  - Changes of the interface `RecognizeIdCard`:
+    - Add the request parameter `return_text_location`
+    - Add the response parameter `text_location`
+  - Changes of the interface `RecognizeDriverLicense`:
+    - Add the request parameter `return_text_location`
+    - Add the response parameter `text_location`
+
+### HuaweiCloud SDK VSS
+
+- _Features_
+  - Support the following interfaces：
+    - `ShowDomainSettings`
+    - `UpdateDomainSettings`
+    - `ListTaskHistories`
+    - `ListPortResults`
+    - `ListBusinessRisks`
+    - `UpdateFalsePositive`
+    - `CancelTasks`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `domain_id` to the interface `ListDomains`
+  - Add the response parameter `hit_details` to the interface `ShowResults`
+
 # 3.0.80 2022-03-10
 
 ### HuaweiCloud SDK BCS

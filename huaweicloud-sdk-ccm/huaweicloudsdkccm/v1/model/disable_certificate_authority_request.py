@@ -43,7 +43,7 @@ class DisableCertificateAuthorityRequest:
     def ca_id(self):
         """Gets the ca_id of this DisableCertificateAuthorityRequest.
 
-        ca_id
+        所要禁用CA证书ID。
 
         :return: The ca_id of this DisableCertificateAuthorityRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class DisableCertificateAuthorityRequest:
     def ca_id(self, ca_id):
         """Sets the ca_id of this DisableCertificateAuthorityRequest.
 
-        ca_id
+        所要禁用CA证书ID。
 
         :param ca_id: The ca_id of this DisableCertificateAuthorityRequest.
         :type: str

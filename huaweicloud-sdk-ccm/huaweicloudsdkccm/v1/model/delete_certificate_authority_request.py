@@ -47,7 +47,7 @@ class DeleteCertificateAuthorityRequest:
     def ca_id(self):
         """Gets the ca_id of this DeleteCertificateAuthorityRequest.
 
-        ca_id
+        所要计划删除的CA证书ID。
 
         :return: The ca_id of this DeleteCertificateAuthorityRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class DeleteCertificateAuthorityRequest:
     def ca_id(self, ca_id):
         """Sets the ca_id of this DeleteCertificateAuthorityRequest.
 
-        ca_id
+        所要计划删除的CA证书ID。
 
         :param ca_id: The ca_id of this DeleteCertificateAuthorityRequest.
         :type: str
@@ -69,7 +69,7 @@ class DeleteCertificateAuthorityRequest:
     def pending_days(self):
         """Gets the pending_days of this DeleteCertificateAuthorityRequest.
 
-        pending_days
+        延迟删除时间，单位为”天“。
 
         :return: The pending_days of this DeleteCertificateAuthorityRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class DeleteCertificateAuthorityRequest:
     def pending_days(self, pending_days):
         """Sets the pending_days of this DeleteCertificateAuthorityRequest.
 
-        pending_days
+        延迟删除时间，单位为”天“。
 
         :param pending_days: The pending_days of this DeleteCertificateAuthorityRequest.
         :type: str

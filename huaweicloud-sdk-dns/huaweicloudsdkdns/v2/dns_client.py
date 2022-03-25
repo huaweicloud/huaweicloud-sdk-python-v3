@@ -1569,7 +1569,7 @@ class DnsClient(Client):
         :return: ShowRecordSetByZoneResponse
         """
 
-        all_params = ['zone_id']
+        all_params = ['zone_id', 'marker', 'limit', 'offset', 'line_id', 'tags', 'status', 'type', 'name', 'id', 'sort_key', 'sort_dir', 'search_mode']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1582,6 +1582,30 @@ class DnsClient(Client):
             path_params['zone_id'] = local_var_params['zone_id']
 
         query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'line_id' in local_var_params:
+            query_params.append(('line_id', local_var_params['line_id']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'search_mode' in local_var_params:
+            query_params.append(('search_mode', local_var_params['search_mode']))
 
         header_params = {}
 
@@ -2808,7 +2832,7 @@ class DnsClient(Client):
     def show_private_zone_name_server(self, request):
         """查询内网Zone的名称服务器
 
-        查询内网Zone的列表
+        查询内网Zone的名称服务器
 
         :param ShowPrivateZoneNameServerRequest request
         :return: ShowPrivateZoneNameServerResponse
@@ -2818,7 +2842,7 @@ class DnsClient(Client):
     def show_private_zone_name_server_with_http_info(self, request):
         """查询内网Zone的名称服务器
 
-        查询内网Zone的列表
+        查询内网Zone的名称服务器
 
         :param ShowPrivateZoneNameServerRequest request
         :return: ShowPrivateZoneNameServerResponse

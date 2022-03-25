@@ -241,7 +241,7 @@ class CreateCustomerV2Req:
     def cooperation_type(self):
         """Gets the cooperation_type of this CreateCustomerV2Req.
 
-        合作类型。 1：推荐。 仅支持1，如果不传递，默认会创建成垫付模式的客户。
+        合作类型。 1：顾问销售。 仅支持1，如果不传递，默认会创建成代售模式的客户。
 
         :return: The cooperation_type of this CreateCustomerV2Req.
         :rtype: str
@@ -252,7 +252,7 @@ class CreateCustomerV2Req:
     def cooperation_type(self, cooperation_type):
         """Sets the cooperation_type of this CreateCustomerV2Req.
 
-        合作类型。 1：推荐。 仅支持1，如果不传递，默认会创建成垫付模式的客户。
+        合作类型。 1：顾问销售。 仅支持1，如果不传递，默认会创建成代售模式的客户。
 
         :param cooperation_type: The cooperation_type of this CreateCustomerV2Req.
         :type: str

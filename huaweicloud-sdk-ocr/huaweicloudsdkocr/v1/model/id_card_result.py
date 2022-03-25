@@ -31,7 +31,8 @@ class IdCardResult:
         'issue': 'str',
         'valid_from': 'str',
         'valid_to': 'str',
-        'verification_result': 'IdcardVerificationResult'
+        'verification_result': 'IdcardVerificationResult',
+        'text_location': 'object'
     }
 
     attribute_map = {
@@ -44,10 +45,11 @@ class IdCardResult:
         'issue': 'issue',
         'valid_from': 'valid_from',
         'valid_to': 'valid_to',
-        'verification_result': 'verification_result'
+        'verification_result': 'verification_result',
+        'text_location': 'text_location'
     }
 
-    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None, verification_result=None):
+    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None, verification_result=None, text_location=None):
         """IdCardResult - a model defined in huaweicloud sdk"""
         
         
@@ -62,6 +64,7 @@ class IdCardResult:
         self._valid_from = None
         self._valid_to = None
         self._verification_result = None
+        self._text_location = None
         self.discriminator = None
 
         if name is not None:
@@ -84,6 +87,8 @@ class IdCardResult:
             self.valid_to = valid_to
         if verification_result is not None:
             self.verification_result = verification_result
+        if text_location is not None:
+            self.text_location = text_location
 
     @property
     def name(self):
@@ -265,7 +270,7 @@ class IdCardResult:
     def valid_to(self):
         """Gets the valid_to of this IdCardResult.
 
-        有效结束日期。   > 说明：  - 身份证识别只支持中国大陆汉族身份证识别。 
+        有效结束日期。   > 说明：  - 身份证识别支持中华人民共和国居民身份证识别。 
 
         :return: The valid_to of this IdCardResult.
         :rtype: str
@@ -276,7 +281,7 @@ class IdCardResult:
     def valid_to(self, valid_to):
         """Sets the valid_to of this IdCardResult.
 
-        有效结束日期。   > 说明：  - 身份证识别只支持中国大陆汉族身份证识别。 
+        有效结束日期。   > 说明：  - 身份证识别支持中华人民共和国居民身份证识别。 
 
         :param valid_to: The valid_to of this IdCardResult.
         :type: str
@@ -302,6 +307,28 @@ class IdCardResult:
         :type: IdcardVerificationResult
         """
         self._verification_result = verification_result
+
+    @property
+    def text_location(self):
+        """Gets the text_location of this IdCardResult.
+
+        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+
+        :return: The text_location of this IdCardResult.
+        :rtype: object
+        """
+        return self._text_location
+
+    @text_location.setter
+    def text_location(self, text_location):
+        """Sets the text_location of this IdCardResult.
+
+        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+
+        :param text_location: The text_location of this IdCardResult.
+        :type: object
+        """
+        self._text_location = text_location
 
     def to_dict(self):
         """Returns the model properties as a dict"""

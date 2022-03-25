@@ -46,20 +46,16 @@ class IssueCertificateAuthorityCertificateRequestBody:
         self._validity = None
         self.discriminator = None
 
-        if issuer_id is not None:
-            self.issuer_id = issuer_id
-        if path_length is not None:
-            self.path_length = path_length
-        if signature_algorithm is not None:
-            self.signature_algorithm = signature_algorithm
-        if validity is not None:
-            self.validity = validity
+        self.issuer_id = issuer_id
+        self.path_length = path_length
+        self.signature_algorithm = signature_algorithm
+        self.validity = validity
 
     @property
     def issuer_id(self):
         """Gets the issuer_id of this IssueCertificateAuthorityCertificateRequestBody.
 
-        签发CA ID
+        父CA证书ID。
 
         :return: The issuer_id of this IssueCertificateAuthorityCertificateRequestBody.
         :rtype: str
@@ -70,7 +66,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
     def issuer_id(self, issuer_id):
         """Sets the issuer_id of this IssueCertificateAuthorityCertificateRequestBody.
 
-        签发CA ID
+        父CA证书ID。
 
         :param issuer_id: The issuer_id of this IssueCertificateAuthorityCertificateRequestBody.
         :type: str
@@ -81,7 +77,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
     def path_length(self):
         """Gets the path_length of this IssueCertificateAuthorityCertificateRequestBody.
 
-        路径长度
+        路径长度。
 
         :return: The path_length of this IssueCertificateAuthorityCertificateRequestBody.
         :rtype: int
@@ -92,7 +88,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
     def path_length(self, path_length):
         """Sets the path_length of this IssueCertificateAuthorityCertificateRequestBody.
 
-        路径长度
+        路径长度。
 
         :param path_length: The path_length of this IssueCertificateAuthorityCertificateRequestBody.
         :type: int
@@ -103,7 +99,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
     def signature_algorithm(self):
         """Gets the signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
 
-        签名算法
+        签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**
 
         :return: The signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
         :rtype: str
@@ -114,7 +110,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
     def signature_algorithm(self, signature_algorithm):
         """Sets the signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
 
-        签名算法
+        签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**
 
         :param signature_algorithm: The signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
         :type: str

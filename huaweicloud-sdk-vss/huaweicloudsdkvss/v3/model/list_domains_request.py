@@ -22,33 +22,60 @@ class ListDomainsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'domain_id': 'str',
         'auth_status': 'str',
         'offset': 'int',
         'limit': 'int'
     }
 
     attribute_map = {
+        'domain_id': 'domain_id',
         'auth_status': 'auth_status',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, auth_status=None, offset=None, limit=None):
+    def __init__(self, domain_id=None, auth_status=None, offset=None, limit=None):
         """ListDomainsRequest - a model defined in huaweicloud sdk"""
         
         
 
+        self._domain_id = None
         self._auth_status = None
         self._offset = None
         self._limit = None
         self.discriminator = None
 
+        if domain_id is not None:
+            self.domain_id = domain_id
         if auth_status is not None:
             self.auth_status = auth_status
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this ListDomainsRequest.
+
+        域名ID
+
+        :return: The domain_id of this ListDomainsRequest.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this ListDomainsRequest.
+
+        域名ID
+
+        :param domain_id: The domain_id of this ListDomainsRequest.
+        :type: str
+        """
+        self._domain_id = domain_id
 
     @property
     def auth_status(self):

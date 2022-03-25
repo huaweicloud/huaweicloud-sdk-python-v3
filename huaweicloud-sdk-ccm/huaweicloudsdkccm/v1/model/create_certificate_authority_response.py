@@ -44,7 +44,7 @@ class CreateCertificateAuthorityResponse(SdkResponse):
     def ca_id(self):
         """Gets the ca_id of this CreateCertificateAuthorityResponse.
 
-        CA ID
+        当前签发的CA证书ID。
 
         :return: The ca_id of this CreateCertificateAuthorityResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class CreateCertificateAuthorityResponse(SdkResponse):
     def ca_id(self, ca_id):
         """Sets the ca_id of this CreateCertificateAuthorityResponse.
 
-        CA ID
+        当前签发的CA证书ID。
 
         :param ca_id: The ca_id of this CreateCertificateAuthorityResponse.
         :type: str

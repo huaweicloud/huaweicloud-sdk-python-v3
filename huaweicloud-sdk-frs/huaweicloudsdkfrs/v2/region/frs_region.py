@@ -10,6 +10,8 @@ class FrsRegion:
     def __init__(self):
         pass
 
+    CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://face.cn-north-1.myhuaweicloud.com")
+
     CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://face.cn-north-4.myhuaweicloud.com")
 
     CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://face.cn-south-1.myhuaweicloud.com")
@@ -21,6 +23,7 @@ class FrsRegion:
     AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://face.ap-southeast-2.myhuaweicloud.com")
 
     static_fields = {
+        "cn-north-1": CN_NORTH_1,
         "cn-north-4": CN_NORTH_4,
         "cn-south-1": CN_SOUTH_1,
         "cn-east-3": CN_EAST_3,

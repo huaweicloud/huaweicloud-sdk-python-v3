@@ -288,7 +288,7 @@ class QuickImportImageByFileRequestBody:
     def os_type(self):
         """Gets the os_type of this QuickImportImageByFileRequestBody.
 
-        操作系统版本。 创建数据盘镜像时该参数必填，取值为Linux或Windows。
+        操作系统版本。 创建数据盘镜像时该参数取值为Linux或Windows，默认Linux。
 
         :return: The os_type of this QuickImportImageByFileRequestBody.
         :rtype: str
@@ -299,7 +299,7 @@ class QuickImportImageByFileRequestBody:
     def os_type(self, os_type):
         """Sets the os_type of this QuickImportImageByFileRequestBody.
 
-        操作系统版本。 创建数据盘镜像时该参数必填，取值为Linux或Windows。
+        操作系统版本。 创建数据盘镜像时该参数取值为Linux或Windows，默认Linux。
 
         :param os_type: The os_type of this QuickImportImageByFileRequestBody.
         :type: str

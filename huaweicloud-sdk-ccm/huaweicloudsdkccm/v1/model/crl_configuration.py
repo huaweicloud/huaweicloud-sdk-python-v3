@@ -22,93 +22,43 @@ class CrlConfiguration:
     sensitive_list = []
 
     openapi_types = {
-        'crl_dis_point': 'str',
-        'crl_name': 'str',
         'enabled': 'bool',
+        'crl_name': 'str',
         'obs_bucket_name': 'str',
         'valid_days': 'int'
     }
 
     attribute_map = {
-        'crl_dis_point': 'crl_dis_point',
-        'crl_name': 'crl_name',
         'enabled': 'enabled',
+        'crl_name': 'crl_name',
         'obs_bucket_name': 'obs_bucket_name',
         'valid_days': 'valid_days'
     }
 
-    def __init__(self, crl_dis_point=None, crl_name=None, enabled=None, obs_bucket_name=None, valid_days=None):
+    def __init__(self, enabled=None, crl_name=None, obs_bucket_name=None, valid_days=None):
         """CrlConfiguration - a model defined in huaweicloud sdk"""
         
         
 
-        self._crl_dis_point = None
-        self._crl_name = None
         self._enabled = None
+        self._crl_name = None
         self._obs_bucket_name = None
         self._valid_days = None
         self.discriminator = None
 
-        if crl_dis_point is not None:
-            self.crl_dis_point = crl_dis_point
+        self.enabled = enabled
         if crl_name is not None:
             self.crl_name = crl_name
-        if enabled is not None:
-            self.enabled = enabled
         if obs_bucket_name is not None:
             self.obs_bucket_name = obs_bucket_name
         if valid_days is not None:
             self.valid_days = valid_days
 
     @property
-    def crl_dis_point(self):
-        """Gets the crl_dis_point of this CrlConfiguration.
-
-        吊销列表分发地址
-
-        :return: The crl_dis_point of this CrlConfiguration.
-        :rtype: str
-        """
-        return self._crl_dis_point
-
-    @crl_dis_point.setter
-    def crl_dis_point(self, crl_dis_point):
-        """Sets the crl_dis_point of this CrlConfiguration.
-
-        吊销列表分发地址
-
-        :param crl_dis_point: The crl_dis_point of this CrlConfiguration.
-        :type: str
-        """
-        self._crl_dis_point = crl_dis_point
-
-    @property
-    def crl_name(self):
-        """Gets the crl_name of this CrlConfiguration.
-
-        吊销列表文件名称
-
-        :return: The crl_name of this CrlConfiguration.
-        :rtype: str
-        """
-        return self._crl_name
-
-    @crl_name.setter
-    def crl_name(self, crl_name):
-        """Sets the crl_name of this CrlConfiguration.
-
-        吊销列表文件名称
-
-        :param crl_name: The crl_name of this CrlConfiguration.
-        :type: str
-        """
-        self._crl_name = crl_name
-
-    @property
     def enabled(self):
         """Gets the enabled of this CrlConfiguration.
 
-        是否启用CRL发布功能
+        是否启用CRL发布功能。 - **true** - **false**
 
         :return: The enabled of this CrlConfiguration.
         :rtype: bool
@@ -119,7 +69,7 @@ class CrlConfiguration:
     def enabled(self, enabled):
         """Sets the enabled of this CrlConfiguration.
 
-        是否启用CRL发布功能
+        是否启用CRL发布功能。 - **true** - **false**
 
         :param enabled: The enabled of this CrlConfiguration.
         :type: bool
@@ -127,10 +77,32 @@ class CrlConfiguration:
         self._enabled = enabled
 
     @property
+    def crl_name(self):
+        """Gets the crl_name of this CrlConfiguration.
+
+        吊销列表文件名称。 > 若用户不指定，系统将默认采用当前证书的父CA ID。
+
+        :return: The crl_name of this CrlConfiguration.
+        :rtype: str
+        """
+        return self._crl_name
+
+    @crl_name.setter
+    def crl_name(self, crl_name):
+        """Sets the crl_name of this CrlConfiguration.
+
+        吊销列表文件名称。 > 若用户不指定，系统将默认采用当前证书的父CA ID。
+
+        :param crl_name: The crl_name of this CrlConfiguration.
+        :type: str
+        """
+        self._crl_name = crl_name
+
+    @property
     def obs_bucket_name(self):
         """Gets the obs_bucket_name of this CrlConfiguration.
 
-        OBS桶名称
+        OBS桶名称。 > 当需要启用CRL发布功能： > - 此参数为必填项，且用户必须已创建委托授权，授予PCA服务对OBS的相关权限，具体参见本文档：**证书吊销处理>查看是否具有委托权限**、**证书吊销处理>创建委托**； > - 指定的OBS桶必须存在，否则将报错。
 
         :return: The obs_bucket_name of this CrlConfiguration.
         :rtype: str
@@ -141,7 +113,7 @@ class CrlConfiguration:
     def obs_bucket_name(self, obs_bucket_name):
         """Sets the obs_bucket_name of this CrlConfiguration.
 
-        OBS桶名称
+        OBS桶名称。 > 当需要启用CRL发布功能： > - 此参数为必填项，且用户必须已创建委托授权，授予PCA服务对OBS的相关权限，具体参见本文档：**证书吊销处理>查看是否具有委托权限**、**证书吊销处理>创建委托**； > - 指定的OBS桶必须存在，否则将报错。
 
         :param obs_bucket_name: The obs_bucket_name of this CrlConfiguration.
         :type: str
@@ -152,7 +124,7 @@ class CrlConfiguration:
     def valid_days(self):
         """Gets the valid_days of this CrlConfiguration.
 
-        更新周期
+        CRL更新周期，单位为\"天\"。当启用CRL发布功能，为必填项。
 
         :return: The valid_days of this CrlConfiguration.
         :rtype: int
@@ -163,7 +135,7 @@ class CrlConfiguration:
     def valid_days(self, valid_days):
         """Sets the valid_days of this CrlConfiguration.
 
-        更新周期
+        CRL更新周期，单位为\"天\"。当启用CRL发布功能，为必填项。
 
         :param valid_days: The valid_days of this CrlConfiguration.
         :type: int

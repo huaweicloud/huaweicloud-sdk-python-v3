@@ -44,7 +44,7 @@ class ShowCertificateAuthorityObsAgencyResponse(SdkResponse):
     def agency_granted(self):
         """Gets the agency_granted of this ShowCertificateAuthorityObsAgencyResponse.
 
-        是否已授权
+        OBS当前的授权结果。 - **true** - **false**
 
         :return: The agency_granted of this ShowCertificateAuthorityObsAgencyResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowCertificateAuthorityObsAgencyResponse(SdkResponse):
     def agency_granted(self, agency_granted):
         """Sets the agency_granted of this ShowCertificateAuthorityObsAgencyResponse.
 
-        是否已授权
+        OBS当前的授权结果。 - **true** - **false**
 
         :param agency_granted: The agency_granted of this ShowCertificateAuthorityObsAgencyResponse.
         :type: str

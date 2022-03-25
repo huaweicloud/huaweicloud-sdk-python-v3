@@ -43,7 +43,7 @@ class ExportCertificateAuthorityCsrRequest:
     def ca_id(self):
         """Gets the ca_id of this ExportCertificateAuthorityCsrRequest.
 
-        ca_id
+        未激活的从属CA证书ID。
 
         :return: The ca_id of this ExportCertificateAuthorityCsrRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class ExportCertificateAuthorityCsrRequest:
     def ca_id(self, ca_id):
         """Sets the ca_id of this ExportCertificateAuthorityCsrRequest.
 
-        ca_id
+        未激活的从属CA证书ID。
 
         :param ca_id: The ca_id of this ExportCertificateAuthorityCsrRequest.
         :type: str

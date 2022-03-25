@@ -24,6 +24,8 @@ class RunlogItem:
     openapi_types = {
         'id': 'str',
         'file_name': 'str',
+        'group_name': 'str',
+        'replication_ip': 'str',
         'status': 'str',
         'time': 'str'
     }
@@ -31,17 +33,21 @@ class RunlogItem:
     attribute_map = {
         'id': 'id',
         'file_name': 'file_name',
+        'group_name': 'group_name',
+        'replication_ip': 'replication_ip',
         'status': 'status',
         'time': 'time'
     }
 
-    def __init__(self, id=None, file_name=None, status=None, time=None):
+    def __init__(self, id=None, file_name=None, group_name=None, replication_ip=None, status=None, time=None):
         """RunlogItem - a model defined in huaweicloud sdk"""
         
         
 
         self._id = None
         self._file_name = None
+        self._group_name = None
+        self._replication_ip = None
         self._status = None
         self._time = None
         self.discriminator = None
@@ -50,6 +56,10 @@ class RunlogItem:
             self.id = id
         if file_name is not None:
             self.file_name = file_name
+        if group_name is not None:
+            self.group_name = group_name
+        if replication_ip is not None:
+            self.replication_ip = replication_ip
         if status is not None:
             self.status = status
         if time is not None:
@@ -98,6 +108,50 @@ class RunlogItem:
         :type: str
         """
         self._file_name = file_name
+
+    @property
+    def group_name(self):
+        """Gets the group_name of this RunlogItem.
+
+        分片名称
+
+        :return: The group_name of this RunlogItem.
+        :rtype: str
+        """
+        return self._group_name
+
+    @group_name.setter
+    def group_name(self, group_name):
+        """Sets the group_name of this RunlogItem.
+
+        分片名称
+
+        :param group_name: The group_name of this RunlogItem.
+        :type: str
+        """
+        self._group_name = group_name
+
+    @property
+    def replication_ip(self):
+        """Gets the replication_ip of this RunlogItem.
+
+        采集运行日志所在副本的IP
+
+        :return: The replication_ip of this RunlogItem.
+        :rtype: str
+        """
+        return self._replication_ip
+
+    @replication_ip.setter
+    def replication_ip(self, replication_ip):
+        """Sets the replication_ip of this RunlogItem.
+
+        采集运行日志所在副本的IP
+
+        :param replication_ip: The replication_ip of this RunlogItem.
+        :type: str
+        """
+        self._replication_ip = replication_ip
 
     @property
     def status(self):

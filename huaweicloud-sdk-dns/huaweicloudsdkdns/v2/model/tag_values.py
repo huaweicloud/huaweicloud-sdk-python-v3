@@ -49,7 +49,7 @@ class TagValues:
     def key(self):
         """Gets the key of this TagValues.
 
-        键。最大长度36个unicode字符。 key不能为空。不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
+        键。最大长度127个unicode字符。 key不能为空。(搜索时不对此参数做校验)
 
         :return: The key of this TagValues.
         :rtype: str
@@ -60,7 +60,7 @@ class TagValues:
     def key(self, key):
         """Sets the key of this TagValues.
 
-        键。最大长度36个unicode字符。 key不能为空。不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
+        键。最大长度127个unicode字符。 key不能为空。(搜索时不对此参数做校验)
 
         :param key: The key of this TagValues.
         :type: str
@@ -71,7 +71,7 @@ class TagValues:
     def values(self):
         """Gets the values of this TagValues.
 
-        值列表。每个值最大长度43个unicode字符，可以为空字符串。 不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
+        值列表。每个值最大长度255个unicode字符。*为系统保留字符。如果里面的value是以*开头时，表示按照*后面的值全模糊匹配。如果values缺失，则表示匹配任意值。value之间为或的关系。
 
         :return: The values of this TagValues.
         :rtype: list[str]
@@ -82,7 +82,7 @@ class TagValues:
     def values(self, values):
         """Sets the values of this TagValues.
 
-        值列表。每个值最大长度43个unicode字符，可以为空字符串。 不能包含“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”，且首尾字符不能为空格。
+        值列表。每个值最大长度255个unicode字符。*为系统保留字符。如果里面的value是以*开头时，表示按照*后面的值全模糊匹配。如果values缺失，则表示匹配任意值。value之间为或的关系。
 
         :param values: The values of this TagValues.
         :type: list[str]

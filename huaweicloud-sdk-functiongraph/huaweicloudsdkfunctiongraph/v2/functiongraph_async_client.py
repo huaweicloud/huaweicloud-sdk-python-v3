@@ -3168,6 +3168,790 @@ class FunctionGraphAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_delete_workflows_async(self, request):
+        """删除工作流列表
+
+        删除工作流列表
+
+        :param BatchDeleteWorkflowsRequest request
+        :return: BatchDeleteWorkflowsResponse
+        """
+        return self.batch_delete_workflows_with_http_info(request)
+
+    def batch_delete_workflows_with_http_info(self, request):
+        """删除工作流列表
+
+        删除工作流列表
+
+        :param BatchDeleteWorkflowsRequest request
+        :return: BatchDeleteWorkflowsResponse
+        """
+
+        all_params = ['batch_delete_workflows_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteWorkflowsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_workflow_async(self, request):
+        """创建工作流列表
+
+        创建工作流列表
+
+        :param CreateWorkflowRequest request
+        :return: CreateWorkflowResponse
+        """
+        return self.create_workflow_with_http_info(request)
+
+    def create_workflow_with_http_info(self, request):
+        """创建工作流列表
+
+        创建工作流列表
+
+        :param CreateWorkflowRequest request
+        :return: CreateWorkflowResponse
+        """
+
+        all_params = ['create_workflow_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateWorkflowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_workflow_executions_async(self, request):
+        """获取指定函数流执行实例列表
+
+        获取指定函数流执行实例列表
+
+        :param ListWorkflowExecutionsRequest request
+        :return: ListWorkflowExecutionsResponse
+        """
+        return self.list_workflow_executions_with_http_info(request)
+
+    def list_workflow_executions_with_http_info(self, request):
+        """获取指定函数流执行实例列表
+
+        获取指定函数流执行实例列表
+
+        :param ListWorkflowExecutionsRequest request
+        :return: ListWorkflowExecutionsResponse
+        """
+
+        all_params = ['workflow_id', 'limit', 'status', 'start_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListWorkflowExecutionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_workflows_async(self, request):
+        """查询工作流列表
+
+        查询工作流列表
+
+        :param ListWorkflowsRequest request
+        :return: ListWorkflowsResponse
+        """
+        return self.list_workflows_with_http_info(request)
+
+    def list_workflows_with_http_info(self, request):
+        """查询工作流列表
+
+        查询工作流列表
+
+        :param ListWorkflowsRequest request
+        :return: ListWorkflowsResponse
+        """
+
+        all_params = ['workflow_name', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'workflow_name' in local_var_params:
+            query_params.append(('workflow_name', local_var_params['workflow_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListWorkflowsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def retry_work_flow_async(self, request):
+        """重试工作流
+
+        重试工作流
+
+        :param RetryWorkFlowRequest request
+        :return: RetryWorkFlowResponse
+        """
+        return self.retry_work_flow_with_http_info(request)
+
+    def retry_work_flow_with_http_info(self, request):
+        """重试工作流
+
+        重试工作流
+
+        :param RetryWorkFlowRequest request
+        :return: RetryWorkFlowResponse
+        """
+
+        all_params = ['workflow_id', 'execution_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+        if 'execution_id' in local_var_params:
+            path_params['execution_id'] = local_var_params['execution_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions/{execution_id}/retry',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RetryWorkFlowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_tenant_metric_async(self, request):
+        """获取函数流指标
+
+        获取函数流指标
+
+        :param ShowTenantMetricRequest request
+        :return: ShowTenantMetricResponse
+        """
+        return self.show_tenant_metric_with_http_info(request)
+
+    def show_tenant_metric_with_http_info(self, request):
+        """获取函数流指标
+
+        获取函数流指标
+
+        :param ShowTenantMetricRequest request
+        :return: ShowTenantMetricResponse
+        """
+
+        all_params = ['period']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflow-statistic',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowTenantMetricResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_work_flow_async(self, request):
+        """获取指定函数流实例
+
+        获取指定函数流实例
+
+        :param ShowWorkFlowRequest request
+        :return: ShowWorkFlowResponse
+        """
+        return self.show_work_flow_with_http_info(request)
+
+    def show_work_flow_with_http_info(self, request):
+        """获取指定函数流实例
+
+        获取指定函数流实例
+
+        :param ShowWorkFlowRequest request
+        :return: ShowWorkFlowResponse
+        """
+
+        all_params = ['workflow_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowWorkFlowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_work_flow_metric_async(self, request):
+        """获取指定工作流指标
+
+        获取指定工作流指标
+
+        :param ShowWorkFlowMetricRequest request
+        :return: ShowWorkFlowMetricResponse
+        """
+        return self.show_work_flow_metric_with_http_info(request)
+
+    def show_work_flow_metric_with_http_info(self, request):
+        """获取指定工作流指标
+
+        获取指定工作流指标
+
+        :param ShowWorkFlowMetricRequest request
+        :return: ShowWorkFlowMetricResponse
+        """
+
+        all_params = ['workflow_urn', 'period']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_urn' in local_var_params:
+            path_params['workflow_urn'] = local_var_params['workflow_urn']
+
+        query_params = []
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflow-statistic/{workflow_urn}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowWorkFlowMetricResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_workflow_execution_async(self, request):
+        """获取指定函数流执行实例
+
+        获取指定函数流执行实例。
+
+        :param ShowWorkflowExecutionRequest request
+        :return: ShowWorkflowExecutionResponse
+        """
+        return self.show_workflow_execution_with_http_info(request)
+
+    def show_workflow_execution_with_http_info(self, request):
+        """获取指定函数流执行实例
+
+        获取指定函数流执行实例。
+
+        :param ShowWorkflowExecutionRequest request
+        :return: ShowWorkflowExecutionResponse
+        """
+
+        all_params = ['workflow_id', 'execution_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+        if 'execution_id' in local_var_params:
+            path_params['execution_id'] = local_var_params['execution_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions/{execution_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowWorkflowExecutionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def start_workflow_execution_async(self, request):
+        """开始执行函数流
+
+        开始执行函数流
+
+        :param StartWorkflowExecutionRequest request
+        :return: StartWorkflowExecutionResponse
+        """
+        return self.start_workflow_execution_with_http_info(request)
+
+    def start_workflow_execution_with_http_info(self, request):
+        """开始执行函数流
+
+        开始执行函数流
+
+        :param StartWorkflowExecutionRequest request
+        :return: StartWorkflowExecutionResponse
+        """
+
+        all_params = ['workflow_id', 'start_workflow_execution_request_body', 'x_create_time', 'x_workflow_run_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_create_time' in local_var_params:
+            header_params['X-Create-Time'] = local_var_params['x_create_time']
+        if 'x_workflow_run_id' in local_var_params:
+            header_params['X-WorkflowRun-ID'] = local_var_params['x_workflow_run_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartWorkflowExecutionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def stop_work_flow_async(self, request):
+        """停止工作流
+
+        停止工作流
+
+        :param StopWorkFlowRequest request
+        :return: StopWorkFlowResponse
+        """
+        return self.stop_work_flow_with_http_info(request)
+
+    def stop_work_flow_with_http_info(self, request):
+        """停止工作流
+
+        停止工作流
+
+        :param StopWorkFlowRequest request
+        :return: StopWorkFlowResponse
+        """
+
+        all_params = ['workflow_id', 'execution_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+        if 'execution_id' in local_var_params:
+            path_params['execution_id'] = local_var_params['execution_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions/{execution_id}/terminate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StopWorkFlowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_work_flow_async(self, request):
+        """修改指定函数流实例
+
+        修改指定函数流实例
+
+        :param UpdateWorkFlowRequest request
+        :return: UpdateWorkFlowResponse
+        """
+        return self.update_work_flow_with_http_info(request)
+
+    def update_work_flow_with_http_info(self, request):
+        """修改指定函数流实例
+
+        修改指定函数流实例
+
+        :param UpdateWorkFlowRequest request
+        :return: UpdateWorkFlowResponse
+        """
+
+        all_params = ['workflow_id', 'update_workflow_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateWorkFlowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,
                  collection_formats=None, request_type=None):

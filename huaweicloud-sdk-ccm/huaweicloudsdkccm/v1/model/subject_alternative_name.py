@@ -40,16 +40,14 @@ class SubjectAlternativeName:
         self._value = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if value is not None:
-            self.value = value
+        self.type = type
+        self.value = value
 
     @property
     def type(self):
         """Gets the type of this SubjectAlternativeName.
 
-        类型
+        备用名称类型，当前仅支持DNS与IP。 - **DNS** - **IP**
 
         :return: The type of this SubjectAlternativeName.
         :rtype: str
@@ -60,7 +58,7 @@ class SubjectAlternativeName:
     def type(self, type):
         """Sets the type of this SubjectAlternativeName.
 
-        类型
+        备用名称类型，当前仅支持DNS与IP。 - **DNS** - **IP**
 
         :param type: The type of this SubjectAlternativeName.
         :type: str
@@ -71,7 +69,7 @@ class SubjectAlternativeName:
     def value(self):
         """Gets the value of this SubjectAlternativeName.
 
-        值
+        对应备用名称类型的值。   - DNS类型，长度为0~253；   - IP类型，长度为0~39。
 
         :return: The value of this SubjectAlternativeName.
         :rtype: str
@@ -82,7 +80,7 @@ class SubjectAlternativeName:
     def value(self, value):
         """Sets the value of this SubjectAlternativeName.
 
-        值
+        对应备用名称类型的值。   - DNS类型，长度为0~253；   - IP类型，长度为0~39。
 
         :param value: The value of this SubjectAlternativeName.
         :type: str

@@ -40,16 +40,14 @@ class ExportCertificateRequestBody:
         self._type = None
         self.discriminator = None
 
-        if is_compressed is not None:
-            self.is_compressed = is_compressed
-        if type is not None:
-            self.type = type
+        self.is_compressed = is_compressed
+        self.type = type
 
     @property
     def is_compressed(self):
         """Gets the is_compressed of this ExportCertificateRequestBody.
 
-        是否压缩
+        是否压缩。   - **true**   - **false**
 
         :return: The is_compressed of this ExportCertificateRequestBody.
         :rtype: str
@@ -60,7 +58,7 @@ class ExportCertificateRequestBody:
     def is_compressed(self, is_compressed):
         """Sets the is_compressed of this ExportCertificateRequestBody.
 
-        是否压缩
+        是否压缩。   - **true**   - **false**
 
         :param is_compressed: The is_compressed of this ExportCertificateRequestBody.
         :type: str
@@ -71,7 +69,7 @@ class ExportCertificateRequestBody:
     def type(self):
         """Gets the type of this ExportCertificateRequestBody.
 
-        导出类型
+        根据服务器类型选择下载证书的形式，支持以下五种类型：   - **APACHE** : apache服务器推荐使用此参数；   - **NGINX** : nginx服务器推荐使用此参数；   - **IIS** : windows服务器推荐使用此参数；   - **TOMCAT** : tomcat服务器推荐使用此参数；   - **OTHER** : 下载PEM格式证书，推荐使用此参数。
 
         :return: The type of this ExportCertificateRequestBody.
         :rtype: str
@@ -82,7 +80,7 @@ class ExportCertificateRequestBody:
     def type(self, type):
         """Sets the type of this ExportCertificateRequestBody.
 
-        导出类型
+        根据服务器类型选择下载证书的形式，支持以下五种类型：   - **APACHE** : apache服务器推荐使用此参数；   - **NGINX** : nginx服务器推荐使用此参数；   - **IIS** : windows服务器推荐使用此参数；   - **TOMCAT** : tomcat服务器推荐使用此参数；   - **OTHER** : 下载PEM格式证书，推荐使用此参数。
 
         :param type: The type of this ExportCertificateRequestBody.
         :type: str

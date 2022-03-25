@@ -22,78 +22,82 @@ class CreateCertificateAuthorityRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'crl_configuration': 'CrlConfiguration',
+        'type': 'str',
         'distinguished_name': 'DistinguishedName',
-        'issuer_id': 'str',
         'key_algorithm': 'str',
+        'validity': 'Validity',
+        'issuer_id': 'str',
         'path_length': 'int',
         'signature_algorithm': 'str',
-        'type': 'str',
-        'validity': 'Validity'
+        'key_usages': 'list[str]',
+        'crl_configuration': 'CrlConfiguration'
     }
 
     attribute_map = {
-        'crl_configuration': 'crl_configuration',
+        'type': 'type',
         'distinguished_name': 'distinguished_name',
-        'issuer_id': 'issuer_id',
         'key_algorithm': 'key_algorithm',
+        'validity': 'validity',
+        'issuer_id': 'issuer_id',
         'path_length': 'path_length',
         'signature_algorithm': 'signature_algorithm',
-        'type': 'type',
-        'validity': 'validity'
+        'key_usages': 'key_usages',
+        'crl_configuration': 'crl_configuration'
     }
 
-    def __init__(self, crl_configuration=None, distinguished_name=None, issuer_id=None, key_algorithm=None, path_length=None, signature_algorithm=None, type=None, validity=None):
+    def __init__(self, type=None, distinguished_name=None, key_algorithm=None, validity=None, issuer_id=None, path_length=None, signature_algorithm=None, key_usages=None, crl_configuration=None):
         """CreateCertificateAuthorityRequestBody - a model defined in huaweicloud sdk"""
         
         
 
-        self._crl_configuration = None
+        self._type = None
         self._distinguished_name = None
-        self._issuer_id = None
         self._key_algorithm = None
+        self._validity = None
+        self._issuer_id = None
         self._path_length = None
         self._signature_algorithm = None
-        self._type = None
-        self._validity = None
+        self._key_usages = None
+        self._crl_configuration = None
         self.discriminator = None
 
-        if crl_configuration is not None:
-            self.crl_configuration = crl_configuration
-        if distinguished_name is not None:
-            self.distinguished_name = distinguished_name
+        self.type = type
+        self.distinguished_name = distinguished_name
+        self.key_algorithm = key_algorithm
+        if validity is not None:
+            self.validity = validity
         if issuer_id is not None:
             self.issuer_id = issuer_id
-        if key_algorithm is not None:
-            self.key_algorithm = key_algorithm
         if path_length is not None:
             self.path_length = path_length
         if signature_algorithm is not None:
             self.signature_algorithm = signature_algorithm
-        if type is not None:
-            self.type = type
-        if validity is not None:
-            self.validity = validity
+        if key_usages is not None:
+            self.key_usages = key_usages
+        if crl_configuration is not None:
+            self.crl_configuration = crl_configuration
 
     @property
-    def crl_configuration(self):
-        """Gets the crl_configuration of this CreateCertificateAuthorityRequestBody.
+    def type(self):
+        """Gets the type of this CreateCertificateAuthorityRequestBody.
 
+        创建的CA类型。 - **ROOT** : 根CA - **SUBORDINATE** : 从属CA
 
-        :return: The crl_configuration of this CreateCertificateAuthorityRequestBody.
-        :rtype: CrlConfiguration
+        :return: The type of this CreateCertificateAuthorityRequestBody.
+        :rtype: str
         """
-        return self._crl_configuration
+        return self._type
 
-    @crl_configuration.setter
-    def crl_configuration(self, crl_configuration):
-        """Sets the crl_configuration of this CreateCertificateAuthorityRequestBody.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this CreateCertificateAuthorityRequestBody.
 
+        创建的CA类型。 - **ROOT** : 根CA - **SUBORDINATE** : 从属CA
 
-        :param crl_configuration: The crl_configuration of this CreateCertificateAuthorityRequestBody.
-        :type: CrlConfiguration
+        :param type: The type of this CreateCertificateAuthorityRequestBody.
+        :type: str
         """
-        self._crl_configuration = crl_configuration
+        self._type = type
 
     @property
     def distinguished_name(self):
@@ -116,32 +120,10 @@ class CreateCertificateAuthorityRequestBody:
         self._distinguished_name = distinguished_name
 
     @property
-    def issuer_id(self):
-        """Gets the issuer_id of this CreateCertificateAuthorityRequestBody.
-
-        签发CA ID
-
-        :return: The issuer_id of this CreateCertificateAuthorityRequestBody.
-        :rtype: str
-        """
-        return self._issuer_id
-
-    @issuer_id.setter
-    def issuer_id(self, issuer_id):
-        """Sets the issuer_id of this CreateCertificateAuthorityRequestBody.
-
-        签发CA ID
-
-        :param issuer_id: The issuer_id of this CreateCertificateAuthorityRequestBody.
-        :type: str
-        """
-        self._issuer_id = issuer_id
-
-    @property
     def key_algorithm(self):
         """Gets the key_algorithm of this CreateCertificateAuthorityRequestBody.
 
-        密钥算法
+        密钥算法，可选值如下：   - **RSA2048** : RSA算法，密钥长度2048位；   - **RSA4096** : RSA算法，密钥长度4096位；   - **EC256** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度256位；   - **EC384** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度384位。
 
         :return: The key_algorithm of this CreateCertificateAuthorityRequestBody.
         :rtype: str
@@ -152,78 +134,12 @@ class CreateCertificateAuthorityRequestBody:
     def key_algorithm(self, key_algorithm):
         """Sets the key_algorithm of this CreateCertificateAuthorityRequestBody.
 
-        密钥算法
+        密钥算法，可选值如下：   - **RSA2048** : RSA算法，密钥长度2048位；   - **RSA4096** : RSA算法，密钥长度4096位；   - **EC256** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度256位；   - **EC384** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度384位。
 
         :param key_algorithm: The key_algorithm of this CreateCertificateAuthorityRequestBody.
         :type: str
         """
         self._key_algorithm = key_algorithm
-
-    @property
-    def path_length(self):
-        """Gets the path_length of this CreateCertificateAuthorityRequestBody.
-
-        路径长度
-
-        :return: The path_length of this CreateCertificateAuthorityRequestBody.
-        :rtype: int
-        """
-        return self._path_length
-
-    @path_length.setter
-    def path_length(self, path_length):
-        """Sets the path_length of this CreateCertificateAuthorityRequestBody.
-
-        路径长度
-
-        :param path_length: The path_length of this CreateCertificateAuthorityRequestBody.
-        :type: int
-        """
-        self._path_length = path_length
-
-    @property
-    def signature_algorithm(self):
-        """Gets the signature_algorithm of this CreateCertificateAuthorityRequestBody.
-
-        签名算法
-
-        :return: The signature_algorithm of this CreateCertificateAuthorityRequestBody.
-        :rtype: str
-        """
-        return self._signature_algorithm
-
-    @signature_algorithm.setter
-    def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this CreateCertificateAuthorityRequestBody.
-
-        签名算法
-
-        :param signature_algorithm: The signature_algorithm of this CreateCertificateAuthorityRequestBody.
-        :type: str
-        """
-        self._signature_algorithm = signature_algorithm
-
-    @property
-    def type(self):
-        """Gets the type of this CreateCertificateAuthorityRequestBody.
-
-        CA类型
-
-        :return: The type of this CreateCertificateAuthorityRequestBody.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this CreateCertificateAuthorityRequestBody.
-
-        CA类型
-
-        :param type: The type of this CreateCertificateAuthorityRequestBody.
-        :type: str
-        """
-        self._type = type
 
     @property
     def validity(self):
@@ -244,6 +160,114 @@ class CreateCertificateAuthorityRequestBody:
         :type: Validity
         """
         self._validity = validity
+
+    @property
+    def issuer_id(self):
+        """Gets the issuer_id of this CreateCertificateAuthorityRequestBody.
+
+        父CA证书ID，分以下三种情况：   - 创建根CA，根CA为自签名证书，无父CA，将忽略该参数；   - 创建从属CA，并需要直接激活该证书，为必填值；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略，激活证书时需要再次传入。
+
+        :return: The issuer_id of this CreateCertificateAuthorityRequestBody.
+        :rtype: str
+        """
+        return self._issuer_id
+
+    @issuer_id.setter
+    def issuer_id(self, issuer_id):
+        """Sets the issuer_id of this CreateCertificateAuthorityRequestBody.
+
+        父CA证书ID，分以下三种情况：   - 创建根CA，根CA为自签名证书，无父CA，将忽略该参数；   - 创建从属CA，并需要直接激活该证书，为必填值；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略，激活证书时需要再次传入。
+
+        :param issuer_id: The issuer_id of this CreateCertificateAuthorityRequestBody.
+        :type: str
+        """
+        self._issuer_id = issuer_id
+
+    @property
+    def path_length(self):
+        """Gets the path_length of this CreateCertificateAuthorityRequestBody.
+
+        CA证书路径长度，分以下三种情况：   - 创建根CA，为便于后期对证书层级的扩展，根CA默认不对路径长度做限制，故将忽略该参数。证书层级规划可由从属CA做限制；   - 创建从属CA，并需要直接激活该证书，用户可自定义。缺省值为0；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略。激活证书时若要自定义，需要再次传入；
+
+        :return: The path_length of this CreateCertificateAuthorityRequestBody.
+        :rtype: int
+        """
+        return self._path_length
+
+    @path_length.setter
+    def path_length(self, path_length):
+        """Sets the path_length of this CreateCertificateAuthorityRequestBody.
+
+        CA证书路径长度，分以下三种情况：   - 创建根CA，为便于后期对证书层级的扩展，根CA默认不对路径长度做限制，故将忽略该参数。证书层级规划可由从属CA做限制；   - 创建从属CA，并需要直接激活该证书，用户可自定义。缺省值为0；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略。激活证书时若要自定义，需要再次传入；
+
+        :param path_length: The path_length of this CreateCertificateAuthorityRequestBody.
+        :type: int
+        """
+        self._path_length = path_length
+
+    @property
+    def signature_algorithm(self):
+        """Gets the signature_algorithm of this CreateCertificateAuthorityRequestBody.
+
+        签名哈希算法。 - 分以下三种情况：   - 创建根CA，为必填值；   - 创建从属CA，并需要直接激活该证书，为必填值；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略，激活证书时需要再次传入。 - 可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**
+
+        :return: The signature_algorithm of this CreateCertificateAuthorityRequestBody.
+        :rtype: str
+        """
+        return self._signature_algorithm
+
+    @signature_algorithm.setter
+    def signature_algorithm(self, signature_algorithm):
+        """Sets the signature_algorithm of this CreateCertificateAuthorityRequestBody.
+
+        签名哈希算法。 - 分以下三种情况：   - 创建根CA，为必填值；   - 创建从属CA，并需要直接激活该证书，为必填值；   - 创建从属CA，不需要直接激活该证书，本参数值将被忽略，激活证书时需要再次传入。 - 可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**
+
+        :param signature_algorithm: The signature_algorithm of this CreateCertificateAuthorityRequestBody.
+        :type: str
+        """
+        self._signature_algorithm = signature_algorithm
+
+    @property
+    def key_usages(self):
+        """Gets the key_usages of this CreateCertificateAuthorityRequestBody.
+
+        密钥用法，具体标准参见RFC 5280中:[4.2.1.3节](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)。   - **digitalSignature** : 数字签名；   - **nonRepudiation** : 不可抵赖；   - **keyEncipherment** : 密钥用于加密密钥数据；   - **dataEncipherment** : 用于加密数据；   - **keyAgreement** : 密钥协商；   - **keyCertSign** : 签发证书；   - **cRLSign** : 签发吊销列表；   - **encipherOnly** : 仅用于加密；   - **decipherOnly** : 仅用于解密。 > 缺省值如下： > - 根CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，忽略用户传入值； > - 从属CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，支持用户自定义。
+
+        :return: The key_usages of this CreateCertificateAuthorityRequestBody.
+        :rtype: list[str]
+        """
+        return self._key_usages
+
+    @key_usages.setter
+    def key_usages(self, key_usages):
+        """Sets the key_usages of this CreateCertificateAuthorityRequestBody.
+
+        密钥用法，具体标准参见RFC 5280中:[4.2.1.3节](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)。   - **digitalSignature** : 数字签名；   - **nonRepudiation** : 不可抵赖；   - **keyEncipherment** : 密钥用于加密密钥数据；   - **dataEncipherment** : 用于加密数据；   - **keyAgreement** : 密钥协商；   - **keyCertSign** : 签发证书；   - **cRLSign** : 签发吊销列表；   - **encipherOnly** : 仅用于加密；   - **decipherOnly** : 仅用于解密。 > 缺省值如下： > - 根CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，忽略用户传入值； > - 从属CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，支持用户自定义。
+
+        :param key_usages: The key_usages of this CreateCertificateAuthorityRequestBody.
+        :type: list[str]
+        """
+        self._key_usages = key_usages
+
+    @property
+    def crl_configuration(self):
+        """Gets the crl_configuration of this CreateCertificateAuthorityRequestBody.
+
+
+        :return: The crl_configuration of this CreateCertificateAuthorityRequestBody.
+        :rtype: CrlConfiguration
+        """
+        return self._crl_configuration
+
+    @crl_configuration.setter
+    def crl_configuration(self, crl_configuration):
+        """Sets the crl_configuration of this CreateCertificateAuthorityRequestBody.
+
+
+        :param crl_configuration: The crl_configuration of this CreateCertificateAuthorityRequestBody.
+        :type: CrlConfiguration
+        """
+        self._crl_configuration = crl_configuration
 
     def to_dict(self):
         """Returns the model properties as a dict"""

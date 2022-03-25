@@ -31,7 +31,7 @@ class SimDeviceVO:
         'device_status': 'int',
         'device_model': 'str',
         'act_date': 'datetime',
-        'device_status_date': 'date',
+        'device_status_date': 'datetime',
         'node_id': 'str',
         'iccid': 'str',
         'network_type': 'str',
@@ -40,7 +40,7 @@ class SimDeviceVO:
         'sim_type': 'int',
         'tag_names': 'str',
         'order_id': 'int',
-        'expire_time': 'date',
+        'expire_time': 'datetime',
         'price_plan_name': 'str',
         'sim_price_plan_id': 'int',
         'flow_left': 'float',
@@ -430,7 +430,7 @@ class SimDeviceVO:
         设备状态变更时间 例如2020-01-31T16:00:00.000Z
 
         :return: The device_status_date of this SimDeviceVO.
-        :rtype: date
+        :rtype: datetime
         """
         return self._device_status_date
 
@@ -441,7 +441,7 @@ class SimDeviceVO:
         设备状态变更时间 例如2020-01-31T16:00:00.000Z
 
         :param device_status_date: The device_status_date of this SimDeviceVO.
-        :type: date
+        :type: datetime
         """
         self._device_status_date = device_status_date
 
@@ -628,7 +628,7 @@ class SimDeviceVO:
         到期时间 例如2021-06-30T00:00:00.000Z
 
         :return: The expire_time of this SimDeviceVO.
-        :rtype: date
+        :rtype: datetime
         """
         return self._expire_time
 
@@ -639,7 +639,7 @@ class SimDeviceVO:
         到期时间 例如2021-06-30T00:00:00.000Z
 
         :param expire_time: The expire_time of this SimDeviceVO.
-        :type: date
+        :type: datetime
         """
         self._expire_time = expire_time
 

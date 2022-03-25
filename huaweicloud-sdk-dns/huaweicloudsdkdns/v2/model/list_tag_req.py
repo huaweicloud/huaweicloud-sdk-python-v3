@@ -29,7 +29,7 @@ class ListTagReq:
         'limit': 'int',
         'offset': 'int',
         'action': 'str',
-        'matches': 'list[Tag]'
+        'matches': 'list[Match]'
     }
 
     attribute_map = {
@@ -235,7 +235,7 @@ class ListTagReq:
         key为要匹配的字段，value为匹配的值。  如果value为空字符串则精确匹配，否则模糊匹配。
 
         :return: The matches of this ListTagReq.
-        :rtype: list[Tag]
+        :rtype: list[Match]
         """
         return self._matches
 
@@ -246,7 +246,7 @@ class ListTagReq:
         key为要匹配的字段，value为匹配的值。  如果value为空字符串则精确匹配，否则模糊匹配。
 
         :param matches: The matches of this ListTagReq.
-        :type: list[Tag]
+        :type: list[Match]
         """
         self._matches = matches
 

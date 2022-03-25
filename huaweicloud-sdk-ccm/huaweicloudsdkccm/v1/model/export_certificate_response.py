@@ -54,7 +54,7 @@ class ExportCertificateResponse(SdkResponse):
     def private_key(self):
         """Gets the private_key of this ExportCertificateResponse.
 
-        私钥内容
+        私钥内容。
 
         :return: The private_key of this ExportCertificateResponse.
         :rtype: str
@@ -65,7 +65,7 @@ class ExportCertificateResponse(SdkResponse):
     def private_key(self, private_key):
         """Sets the private_key of this ExportCertificateResponse.
 
-        私钥内容
+        私钥内容。
 
         :param private_key: The private_key of this ExportCertificateResponse.
         :type: str
@@ -76,7 +76,7 @@ class ExportCertificateResponse(SdkResponse):
     def certificate(self):
         """Gets the certificate of this ExportCertificateResponse.
 
-        证书内容
+        证书内容。
 
         :return: The certificate of this ExportCertificateResponse.
         :rtype: str
@@ -87,7 +87,7 @@ class ExportCertificateResponse(SdkResponse):
     def certificate(self, certificate):
         """Sets the certificate of this ExportCertificateResponse.
 
-        证书内容
+        证书内容。
 
         :param certificate: The certificate of this ExportCertificateResponse.
         :type: str
@@ -98,7 +98,7 @@ class ExportCertificateResponse(SdkResponse):
     def certificate_chain(self):
         """Gets the certificate_chain of this ExportCertificateResponse.
 
-        证书链内容
+        证书链内容。
 
         :return: The certificate_chain of this ExportCertificateResponse.
         :rtype: str
@@ -109,7 +109,7 @@ class ExportCertificateResponse(SdkResponse):
     def certificate_chain(self, certificate_chain):
         """Sets the certificate_chain of this ExportCertificateResponse.
 
-        证书链内容
+        证书链内容。
 
         :param certificate_chain: The certificate_chain of this ExportCertificateResponse.
         :type: str

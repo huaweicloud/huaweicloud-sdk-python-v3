@@ -181,7 +181,6 @@ from huaweicloudsdkcss.v1.model.stop_vpecp_response import StopVpecpResponse
 from huaweicloudsdkcss.v1.model.sys_tags import SysTags
 from huaweicloudsdkcss.v1.model.system_templates import SystemTemplates
 from huaweicloudsdkcss.v1.model.tag import Tag
-from huaweicloudsdkcss.v1.model.tag_list import TagList
 from huaweicloudsdkcss.v1.model.tag_req import TagReq
 from huaweicloudsdkcss.v1.model.update_alter_kibana_request import UpdateAlterKibanaRequest
 from huaweicloudsdkcss.v1.model.update_alter_kibana_response import UpdateAlterKibanaResponse

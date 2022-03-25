@@ -26,19 +26,19 @@ class ShowCertificateAuthorityResponse(SdkResponse):
         'type': 'str',
         'status': 'str',
         'path_length': 'int',
-        'freeze_flag': 'int',
-        'gen_mode': 'str',
-        'serial_number': 'str',
-        'create_time': 'str',
-        'delete_time': 'str',
-        'not_before': 'str',
-        'not_after': 'str',
-        'distinguished_name': 'DistinguishedName',
-        'crl_configuration': 'CrlConfiguration',
         'issuer_id': 'str',
         'issuer_name': 'str',
         'key_algorithm': 'str',
-        'signature_algorithm': 'str'
+        'signature_algorithm': 'str',
+        'freeze_flag': 'int',
+        'gen_mode': 'str',
+        'serial_number': 'str',
+        'create_time': 'int',
+        'delete_time': 'int',
+        'not_before': 'int',
+        'not_after': 'int',
+        'distinguished_name': 'DistinguishedName',
+        'crl_configuration': 'ListCrlConfiguration'
     }
 
     attribute_map = {
@@ -46,6 +46,10 @@ class ShowCertificateAuthorityResponse(SdkResponse):
         'type': 'type',
         'status': 'status',
         'path_length': 'path_length',
+        'issuer_id': 'issuer_id',
+        'issuer_name': 'issuer_name',
+        'key_algorithm': 'key_algorithm',
+        'signature_algorithm': 'signature_algorithm',
         'freeze_flag': 'freeze_flag',
         'gen_mode': 'gen_mode',
         'serial_number': 'serial_number',
@@ -54,14 +58,10 @@ class ShowCertificateAuthorityResponse(SdkResponse):
         'not_before': 'not_before',
         'not_after': 'not_after',
         'distinguished_name': 'distinguished_name',
-        'crl_configuration': 'crl_configuration',
-        'issuer_id': 'issuer_id',
-        'issuer_name': 'issuer_name',
-        'key_algorithm': 'key_algorithm',
-        'signature_algorithm': 'signature_algorithm'
+        'crl_configuration': 'crl_configuration'
     }
 
-    def __init__(self, ca_id=None, type=None, status=None, path_length=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None, crl_configuration=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None):
+    def __init__(self, ca_id=None, type=None, status=None, path_length=None, issuer_id=None, issuer_name=None, key_algorithm=None, signature_algorithm=None, freeze_flag=None, gen_mode=None, serial_number=None, create_time=None, delete_time=None, not_before=None, not_after=None, distinguished_name=None, crl_configuration=None):
         """ShowCertificateAuthorityResponse - a model defined in huaweicloud sdk"""
         
         super(ShowCertificateAuthorityResponse, self).__init__()
@@ -70,6 +70,10 @@ class ShowCertificateAuthorityResponse(SdkResponse):
         self._type = None
         self._status = None
         self._path_length = None
+        self._issuer_id = None
+        self._issuer_name = None
+        self._key_algorithm = None
+        self._signature_algorithm = None
         self._freeze_flag = None
         self._gen_mode = None
         self._serial_number = None
@@ -79,10 +83,6 @@ class ShowCertificateAuthorityResponse(SdkResponse):
         self._not_after = None
         self._distinguished_name = None
         self._crl_configuration = None
-        self._issuer_id = None
-        self._issuer_name = None
-        self._key_algorithm = None
-        self._signature_algorithm = None
         self.discriminator = None
 
         if ca_id is not None:
@@ -93,6 +93,14 @@ class ShowCertificateAuthorityResponse(SdkResponse):
             self.status = status
         if path_length is not None:
             self.path_length = path_length
+        if issuer_id is not None:
+            self.issuer_id = issuer_id
+        if issuer_name is not None:
+            self.issuer_name = issuer_name
+        if key_algorithm is not None:
+            self.key_algorithm = key_algorithm
+        if signature_algorithm is not None:
+            self.signature_algorithm = signature_algorithm
         if freeze_flag is not None:
             self.freeze_flag = freeze_flag
         if gen_mode is not None:
@@ -111,20 +119,12 @@ class ShowCertificateAuthorityResponse(SdkResponse):
             self.distinguished_name = distinguished_name
         if crl_configuration is not None:
             self.crl_configuration = crl_configuration
-        if issuer_id is not None:
-            self.issuer_id = issuer_id
-        if issuer_name is not None:
-            self.issuer_name = issuer_name
-        if key_algorithm is not None:
-            self.key_algorithm = key_algorithm
-        if signature_algorithm is not None:
-            self.signature_algorithm = signature_algorithm
 
     @property
     def ca_id(self):
         """Gets the ca_id of this ShowCertificateAuthorityResponse.
 
-        CA ID
+        CA证书ID。
 
         :return: The ca_id of this ShowCertificateAuthorityResponse.
         :rtype: str
@@ -135,7 +135,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def ca_id(self, ca_id):
         """Sets the ca_id of this ShowCertificateAuthorityResponse.
 
-        CA ID
+        CA证书ID。
 
         :param ca_id: The ca_id of this ShowCertificateAuthorityResponse.
         :type: str
@@ -146,7 +146,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def type(self):
         """Gets the type of this ShowCertificateAuthorityResponse.
 
-        CA类型
+        CA类型:   - **ROOT**: 根CA   - **SUBORDINATE**: 从属CA
 
         :return: The type of this ShowCertificateAuthorityResponse.
         :rtype: str
@@ -157,7 +157,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def type(self, type):
         """Sets the type of this ShowCertificateAuthorityResponse.
 
-        CA类型
+        CA类型:   - **ROOT**: 根CA   - **SUBORDINATE**: 从属CA
 
         :param type: The type of this ShowCertificateAuthorityResponse.
         :type: str
@@ -168,7 +168,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowCertificateAuthorityResponse.
 
-        证书状态
+        CA证书状态：   - **EXPIRED** : 待激活，此状态下，不可用于签发证书；   - **ACTIVED** : 已激活，此状态下，可用于签发证书；   - **DISABLED** : 已禁用，此状态下，不可用于签发证书；   - **DELETED** : 计划删除，此状态下，不可用于签发证书；   - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
 
         :return: The status of this ShowCertificateAuthorityResponse.
         :rtype: str
@@ -179,7 +179,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowCertificateAuthorityResponse.
 
-        证书状态
+        CA证书状态：   - **EXPIRED** : 待激活，此状态下，不可用于签发证书；   - **ACTIVED** : 已激活，此状态下，可用于签发证书；   - **DISABLED** : 已禁用，此状态下，不可用于签发证书；   - **DELETED** : 计划删除，此状态下，不可用于签发证书；   - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
 
         :param status: The status of this ShowCertificateAuthorityResponse.
         :type: str
@@ -190,7 +190,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def path_length(self):
         """Gets the path_length of this ShowCertificateAuthorityResponse.
 
-        路径长度
+        CA路径长度。 > 注：生成的根CA证书，其路径长度不做限制，但本字段在数据库中统一置为7。从属CA的路径长度在创建时由用户指定，缺省值为0。
 
         :return: The path_length of this ShowCertificateAuthorityResponse.
         :rtype: int
@@ -201,7 +201,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def path_length(self, path_length):
         """Sets the path_length of this ShowCertificateAuthorityResponse.
 
-        路径长度
+        CA路径长度。 > 注：生成的根CA证书，其路径长度不做限制，但本字段在数据库中统一置为7。从属CA的路径长度在创建时由用户指定，缺省值为0。
 
         :param path_length: The path_length of this ShowCertificateAuthorityResponse.
         :type: int
@@ -209,10 +209,98 @@ class ShowCertificateAuthorityResponse(SdkResponse):
         self._path_length = path_length
 
     @property
+    def issuer_id(self):
+        """Gets the issuer_id of this ShowCertificateAuthorityResponse.
+
+        父CA证书ID，即签发此证书的CA证书ID。根CA中，此参数为**null**。
+
+        :return: The issuer_id of this ShowCertificateAuthorityResponse.
+        :rtype: str
+        """
+        return self._issuer_id
+
+    @issuer_id.setter
+    def issuer_id(self, issuer_id):
+        """Sets the issuer_id of this ShowCertificateAuthorityResponse.
+
+        父CA证书ID，即签发此证书的CA证书ID。根CA中，此参数为**null**。
+
+        :param issuer_id: The issuer_id of this ShowCertificateAuthorityResponse.
+        :type: str
+        """
+        self._issuer_id = issuer_id
+
+    @property
+    def issuer_name(self):
+        """Gets the issuer_name of this ShowCertificateAuthorityResponse.
+
+        父CA证书名称。根CA中，此参数为**null**。
+
+        :return: The issuer_name of this ShowCertificateAuthorityResponse.
+        :rtype: str
+        """
+        return self._issuer_name
+
+    @issuer_name.setter
+    def issuer_name(self, issuer_name):
+        """Sets the issuer_name of this ShowCertificateAuthorityResponse.
+
+        父CA证书名称。根CA中，此参数为**null**。
+
+        :param issuer_name: The issuer_name of this ShowCertificateAuthorityResponse.
+        :type: str
+        """
+        self._issuer_name = issuer_name
+
+    @property
+    def key_algorithm(self):
+        """Gets the key_algorithm of this ShowCertificateAuthorityResponse.
+
+        密钥算法。
+
+        :return: The key_algorithm of this ShowCertificateAuthorityResponse.
+        :rtype: str
+        """
+        return self._key_algorithm
+
+    @key_algorithm.setter
+    def key_algorithm(self, key_algorithm):
+        """Sets the key_algorithm of this ShowCertificateAuthorityResponse.
+
+        密钥算法。
+
+        :param key_algorithm: The key_algorithm of this ShowCertificateAuthorityResponse.
+        :type: str
+        """
+        self._key_algorithm = key_algorithm
+
+    @property
+    def signature_algorithm(self):
+        """Gets the signature_algorithm of this ShowCertificateAuthorityResponse.
+
+        签名哈希算法。
+
+        :return: The signature_algorithm of this ShowCertificateAuthorityResponse.
+        :rtype: str
+        """
+        return self._signature_algorithm
+
+    @signature_algorithm.setter
+    def signature_algorithm(self, signature_algorithm):
+        """Sets the signature_algorithm of this ShowCertificateAuthorityResponse.
+
+        签名哈希算法。
+
+        :param signature_algorithm: The signature_algorithm of this ShowCertificateAuthorityResponse.
+        :type: str
+        """
+        self._signature_algorithm = signature_algorithm
+
+    @property
     def freeze_flag(self):
         """Gets the freeze_flag of this ShowCertificateAuthorityResponse.
 
-        冻结标识
+        冻结标识:   - **0** : 非冻结状态；   - **其它值** : 冻结状态，当前预留。
 
         :return: The freeze_flag of this ShowCertificateAuthorityResponse.
         :rtype: int
@@ -223,7 +311,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def freeze_flag(self, freeze_flag):
         """Sets the freeze_flag of this ShowCertificateAuthorityResponse.
 
-        冻结标识
+        冻结标识:   - **0** : 非冻结状态；   - **其它值** : 冻结状态，当前预留。
 
         :param freeze_flag: The freeze_flag of this ShowCertificateAuthorityResponse.
         :type: int
@@ -234,7 +322,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def gen_mode(self):
         """Gets the gen_mode of this ShowCertificateAuthorityResponse.
 
-        证书生成方式
+        证书生成方式：  - **GENERATE** : PCA系统生成；  - **IMPORT** : 外部导入；  - **CSR** : 外部提供CSR，内部CA进行签发，即私钥不在PCA进行托管。
 
         :return: The gen_mode of this ShowCertificateAuthorityResponse.
         :rtype: str
@@ -245,7 +333,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def gen_mode(self, gen_mode):
         """Sets the gen_mode of this ShowCertificateAuthorityResponse.
 
-        证书生成方式
+        证书生成方式：  - **GENERATE** : PCA系统生成；  - **IMPORT** : 外部导入；  - **CSR** : 外部提供CSR，内部CA进行签发，即私钥不在PCA进行托管。
 
         :param gen_mode: The gen_mode of this ShowCertificateAuthorityResponse.
         :type: str
@@ -256,7 +344,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def serial_number(self):
         """Gets the serial_number of this ShowCertificateAuthorityResponse.
 
-        序列号
+        证书序列号。
 
         :return: The serial_number of this ShowCertificateAuthorityResponse.
         :rtype: str
@@ -267,7 +355,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def serial_number(self, serial_number):
         """Sets the serial_number of this ShowCertificateAuthorityResponse.
 
-        序列号
+        证书序列号。
 
         :param serial_number: The serial_number of this ShowCertificateAuthorityResponse.
         :type: str
@@ -278,10 +366,10 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def create_time(self):
         """Gets the create_time of this ShowCertificateAuthorityResponse.
 
-        创建时间
+        证书创建时间，格式为时间戳（毫秒级）。
 
         :return: The create_time of this ShowCertificateAuthorityResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._create_time
 
@@ -289,10 +377,10 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def create_time(self, create_time):
         """Sets the create_time of this ShowCertificateAuthorityResponse.
 
-        创建时间
+        证书创建时间，格式为时间戳（毫秒级）。
 
         :param create_time: The create_time of this ShowCertificateAuthorityResponse.
-        :type: str
+        :type: int
         """
         self._create_time = create_time
 
@@ -300,10 +388,10 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def delete_time(self):
         """Gets the delete_time of this ShowCertificateAuthorityResponse.
 
-        删除时间
+        证书删除时间，格式为时间戳（毫秒级）。
 
         :return: The delete_time of this ShowCertificateAuthorityResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._delete_time
 
@@ -311,10 +399,10 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def delete_time(self, delete_time):
         """Sets the delete_time of this ShowCertificateAuthorityResponse.
 
-        删除时间
+        证书删除时间，格式为时间戳（毫秒级）。
 
         :param delete_time: The delete_time of this ShowCertificateAuthorityResponse.
-        :type: str
+        :type: int
         """
         self._delete_time = delete_time
 
@@ -322,10 +410,10 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def not_before(self):
         """Gets the not_before of this ShowCertificateAuthorityResponse.
 
-        生效时间
+        证书创建时间，格式为时间戳（毫秒级）。
 
         :return: The not_before of this ShowCertificateAuthorityResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._not_before
 
@@ -333,10 +421,10 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def not_before(self, not_before):
         """Sets the not_before of this ShowCertificateAuthorityResponse.
 
-        生效时间
+        证书创建时间，格式为时间戳（毫秒级）。
 
         :param not_before: The not_before of this ShowCertificateAuthorityResponse.
-        :type: str
+        :type: int
         """
         self._not_before = not_before
 
@@ -344,10 +432,10 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def not_after(self):
         """Gets the not_after of this ShowCertificateAuthorityResponse.
 
-        失效时间
+        证书到期时间，格式为时间戳（毫秒级）。
 
         :return: The not_after of this ShowCertificateAuthorityResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._not_after
 
@@ -355,10 +443,10 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def not_after(self, not_after):
         """Sets the not_after of this ShowCertificateAuthorityResponse.
 
-        失效时间
+        证书到期时间，格式为时间戳（毫秒级）。
 
         :param not_after: The not_after of this ShowCertificateAuthorityResponse.
-        :type: str
+        :type: int
         """
         self._not_after = not_after
 
@@ -388,7 +476,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
 
 
         :return: The crl_configuration of this ShowCertificateAuthorityResponse.
-        :rtype: CrlConfiguration
+        :rtype: ListCrlConfiguration
         """
         return self._crl_configuration
 
@@ -398,97 +486,9 @@ class ShowCertificateAuthorityResponse(SdkResponse):
 
 
         :param crl_configuration: The crl_configuration of this ShowCertificateAuthorityResponse.
-        :type: CrlConfiguration
+        :type: ListCrlConfiguration
         """
         self._crl_configuration = crl_configuration
-
-    @property
-    def issuer_id(self):
-        """Gets the issuer_id of this ShowCertificateAuthorityResponse.
-
-        签发CA ID
-
-        :return: The issuer_id of this ShowCertificateAuthorityResponse.
-        :rtype: str
-        """
-        return self._issuer_id
-
-    @issuer_id.setter
-    def issuer_id(self, issuer_id):
-        """Sets the issuer_id of this ShowCertificateAuthorityResponse.
-
-        签发CA ID
-
-        :param issuer_id: The issuer_id of this ShowCertificateAuthorityResponse.
-        :type: str
-        """
-        self._issuer_id = issuer_id
-
-    @property
-    def issuer_name(self):
-        """Gets the issuer_name of this ShowCertificateAuthorityResponse.
-
-        签发CA名称
-
-        :return: The issuer_name of this ShowCertificateAuthorityResponse.
-        :rtype: str
-        """
-        return self._issuer_name
-
-    @issuer_name.setter
-    def issuer_name(self, issuer_name):
-        """Sets the issuer_name of this ShowCertificateAuthorityResponse.
-
-        签发CA名称
-
-        :param issuer_name: The issuer_name of this ShowCertificateAuthorityResponse.
-        :type: str
-        """
-        self._issuer_name = issuer_name
-
-    @property
-    def key_algorithm(self):
-        """Gets the key_algorithm of this ShowCertificateAuthorityResponse.
-
-        密钥算法
-
-        :return: The key_algorithm of this ShowCertificateAuthorityResponse.
-        :rtype: str
-        """
-        return self._key_algorithm
-
-    @key_algorithm.setter
-    def key_algorithm(self, key_algorithm):
-        """Sets the key_algorithm of this ShowCertificateAuthorityResponse.
-
-        密钥算法
-
-        :param key_algorithm: The key_algorithm of this ShowCertificateAuthorityResponse.
-        :type: str
-        """
-        self._key_algorithm = key_algorithm
-
-    @property
-    def signature_algorithm(self):
-        """Gets the signature_algorithm of this ShowCertificateAuthorityResponse.
-
-        签名算法
-
-        :return: The signature_algorithm of this ShowCertificateAuthorityResponse.
-        :rtype: str
-        """
-        return self._signature_algorithm
-
-    @signature_algorithm.setter
-    def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this ShowCertificateAuthorityResponse.
-
-        签名算法
-
-        :param signature_algorithm: The signature_algorithm of this ShowCertificateAuthorityResponse.
-        :type: str
-        """
-        self._signature_algorithm = signature_algorithm
 
     def to_dict(self):
         """Returns the model properties as a dict"""

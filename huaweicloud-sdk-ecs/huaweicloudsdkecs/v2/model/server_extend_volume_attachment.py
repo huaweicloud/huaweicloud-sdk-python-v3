@@ -78,7 +78,7 @@ class ServerExtendVolumeAttachment:
     def delete_on_termination(self):
         """Gets the delete_on_termination of this ServerExtendVolumeAttachment.
 
-        删弹性云服务器时是否一并删除该磁盘。  - true：是 - false：否
+        删弹性云服务器时是否一并删除该磁盘。  - true：是 - false：否 微版本2.3及以上版本支持。
 
         :return: The delete_on_termination of this ServerExtendVolumeAttachment.
         :rtype: str
@@ -89,7 +89,7 @@ class ServerExtendVolumeAttachment:
     def delete_on_termination(self, delete_on_termination):
         """Sets the delete_on_termination of this ServerExtendVolumeAttachment.
 
-        删弹性云服务器时是否一并删除该磁盘。  - true：是 - false：否
+        删弹性云服务器时是否一并删除该磁盘。  - true：是 - false：否 微版本2.3及以上版本支持。
 
         :param delete_on_termination: The delete_on_termination of this ServerExtendVolumeAttachment.
         :type: str

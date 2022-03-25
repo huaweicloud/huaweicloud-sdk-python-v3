@@ -79,6 +79,7 @@ from huaweicloudsdkdns.v2.model.list_tag_request import ListTagRequest
 from huaweicloudsdkdns.v2.model.list_tag_response import ListTagResponse
 from huaweicloudsdkdns.v2.model.list_tags_request import ListTagsRequest
 from huaweicloudsdkdns.v2.model.list_tags_response import ListTagsResponse
+from huaweicloudsdkdns.v2.model.match import Match
 from huaweicloudsdkdns.v2.model.metedata import Metedata
 from huaweicloudsdkdns.v2.model.name_servers_resp import NameServersResp
 from huaweicloudsdkdns.v2.model.nameserver import Nameserver

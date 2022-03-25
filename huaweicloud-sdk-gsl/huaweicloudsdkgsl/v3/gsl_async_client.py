@@ -270,7 +270,7 @@ class GslAsyncClient(Client):
         :return: ListSimCardsResponse
         """
 
-        all_params = ['main_search_type', 'main_search_key', 'limit', 'offset', 'sim_status', 'device_status', 'sim_type', 'order', 'sort', 'msisdn', 'customer_attribute1', 'customer_attribute2', 'customer_attribute3', 'customer_attribute4', 'customer_attribute5', 'customer_attribute6', 'real_named']
+        all_params = ['main_search_type', 'main_search_key', 'limit', 'offset', 'sim_status', 'device_status', 'sim_type', 'order', 'sort', 'msisdn', 'customer_attribute1', 'customer_attribute2', 'customer_attribute3', 'customer_attribute4', 'customer_attribute5', 'customer_attribute6', 'min_flow', 'max_flow', 'real_named', 'order_id', 'filter_downtime_period']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -313,8 +313,16 @@ class GslAsyncClient(Client):
             query_params.append(('customer_attribute5', local_var_params['customer_attribute5']))
         if 'customer_attribute6' in local_var_params:
             query_params.append(('customer_attribute6', local_var_params['customer_attribute6']))
+        if 'min_flow' in local_var_params:
+            query_params.append(('min_flow', local_var_params['min_flow']))
+        if 'max_flow' in local_var_params:
+            query_params.append(('max_flow', local_var_params['max_flow']))
         if 'real_named' in local_var_params:
             query_params.append(('real_named', local_var_params['real_named']))
+        if 'order_id' in local_var_params:
+            query_params.append(('order_id', local_var_params['order_id']))
+        if 'filter_downtime_period' in local_var_params:
+            query_params.append(('filter_downtime_period', local_var_params['filter_downtime_period']))
 
         header_params = {}
 

@@ -256,7 +256,7 @@ class VssClient(Client):
         :return: ListDomainsResponse
         """
 
-        all_params = ['auth_status', 'offset', 'limit']
+        all_params = ['domain_id', 'auth_status', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -267,6 +267,8 @@ class VssClient(Client):
         path_params = {}
 
         query_params = []
+        if 'domain_id' in local_var_params:
+            query_params.append(('domain_id', local_var_params['domain_id']))
         if 'auth_status' in local_var_params:
             query_params.append(('auth_status', local_var_params['auth_status']))
         if 'offset' in local_var_params:
@@ -298,6 +300,266 @@ class VssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListDomainsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_domain_settings(self, request):
+        """获取域名配置
+
+        获取域名登录配置
+
+        :param ShowDomainSettingsRequest request
+        :return: ShowDomainSettingsResponse
+        """
+        return self.show_domain_settings_with_http_info(request)
+
+    def show_domain_settings_with_http_info(self, request):
+        """获取域名配置
+
+        获取域名登录配置
+
+        :param ShowDomainSettingsRequest request
+        :return: ShowDomainSettingsResponse
+        """
+
+        all_params = ['domain_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain_id' in local_var_params:
+            query_params.append(('domain_id', local_var_params['domain_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/domains/settings',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDomainSettingsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_domain_settings(self, request):
+        """更新域名配置
+
+        更新域名登录配置
+
+        :param UpdateDomainSettingsRequest request
+        :return: UpdateDomainSettingsResponse
+        """
+        return self.update_domain_settings_with_http_info(request)
+
+    def update_domain_settings_with_http_info(self, request):
+        """更新域名配置
+
+        更新域名登录配置
+
+        :param UpdateDomainSettingsRequest request
+        :return: UpdateDomainSettingsResponse
+        """
+
+        all_params = ['update_domain_settings_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/domains/settings',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateDomainSettingsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_business_risks(self, request):
+        """获取业务风险扫描结果
+
+        获取域名业务风险扫描结果
+
+        :param ListBusinessRisksRequest request
+        :return: ListBusinessRisksResponse
+        """
+        return self.list_business_risks_with_http_info(request)
+
+    def list_business_risks_with_http_info(self, request):
+        """获取业务风险扫描结果
+
+        获取域名业务风险扫描结果
+
+        :param ListBusinessRisksRequest request
+        :return: ListBusinessRisksResponse
+        """
+
+        all_params = ['task_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/results/business-risk',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListBusinessRisksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_port_results(self, request):
+        """获取端口扫描结果
+
+        获取域名端口扫描结果
+
+        :param ListPortResultsRequest request
+        :return: ListPortResultsResponse
+        """
+        return self.list_port_results_with_http_info(request)
+
+    def list_port_results_with_http_info(self, request):
+        """获取端口扫描结果
+
+        获取域名端口扫描结果
+
+        :param ListPortResultsRequest request
+        :return: ListPortResultsResponse
+        """
+
+        all_params = ['task_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/results/ports',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListPortResultsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -371,6 +633,132 @@ class VssClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_false_positive(self, request):
+        """更新漏洞的误报状态
+
+        更新域名扫描漏洞的误报状态
+
+        :param UpdateFalsePositiveRequest request
+        :return: UpdateFalsePositiveResponse
+        """
+        return self.update_false_positive_with_http_info(request)
+
+    def update_false_positive_with_http_info(self, request):
+        """更新漏洞的误报状态
+
+        更新域名扫描漏洞的误报状态
+
+        :param UpdateFalsePositiveRequest request
+        :return: UpdateFalsePositiveResponse
+        """
+
+        all_params = ['update_false_positive_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/vulnerability/false-positive',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateFalsePositiveResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def cancel_tasks(self, request):
+        """取消或重启扫描任务
+
+        取消或重启域名漏洞扫描任务
+
+        :param CancelTasksRequest request
+        :return: CancelTasksResponse
+        """
+        return self.cancel_tasks_with_http_info(request)
+
+    def cancel_tasks_with_http_info(self, request):
+        """取消或重启扫描任务
+
+        取消或重启域名漏洞扫描任务
+
+        :param CancelTasksRequest request
+        :return: CancelTasksResponse
+        """
+
+        all_params = ['cancel_tasks_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/tasks',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CancelTasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_tasks(self, request):
         """创建扫描任务并启动
 
@@ -430,6 +818,73 @@ class VssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateTasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_task_histories(self, request):
+        """获取域名的历史扫描任务
+
+        获取域名漏洞扫描的历史扫描任务
+
+        :param ListTaskHistoriesRequest request
+        :return: ListTaskHistoriesResponse
+        """
+        return self.list_task_histories_with_http_info(request)
+
+    def list_task_histories_with_http_info(self, request):
+        """获取域名的历史扫描任务
+
+        获取域名漏洞扫描的历史扫描任务
+
+        :param ListTaskHistoriesRequest request
+        :return: ListTaskHistoriesResponse
+        """
+
+        all_params = ['domain_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain_id' in local_var_params:
+            query_params.append(('domain_id', local_var_params['domain_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/tasks/histories',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTaskHistoriesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

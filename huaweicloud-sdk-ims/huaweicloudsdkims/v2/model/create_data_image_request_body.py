@@ -72,7 +72,8 @@ class CreateDataImageRequestBody:
         self.image_url = image_url
         self.min_disk = min_disk
         self.name = name
-        self.os_type = os_type
+        if os_type is not None:
+            self.os_type = os_type
         if tags is not None:
             self.tags = tags
 
@@ -234,7 +235,7 @@ class CreateDataImageRequestBody:
     def os_type(self):
         """Gets the os_type of this CreateDataImageRequestBody.
 
-        操作系统类型。只能是Windows、Linux二者之一，值区分大小写。
+        操作系统类型。只能是Windows、Linux二者之一，默认Linux。
 
         :return: The os_type of this CreateDataImageRequestBody.
         :rtype: str
@@ -245,7 +246,7 @@ class CreateDataImageRequestBody:
     def os_type(self, os_type):
         """Sets the os_type of this CreateDataImageRequestBody.
 
-        操作系统类型。只能是Windows、Linux二者之一，值区分大小写。
+        操作系统类型。只能是Windows、Linux二者之一，默认Linux。
 
         :param os_type: The os_type of this CreateDataImageRequestBody.
         :type: str

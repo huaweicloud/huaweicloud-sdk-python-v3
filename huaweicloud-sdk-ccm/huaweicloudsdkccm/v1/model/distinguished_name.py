@@ -24,52 +24,46 @@ class DistinguishedName:
     openapi_types = {
         'common_name': 'str',
         'country': 'str',
+        'state': 'str',
         'locality': 'str',
         'organization': 'str',
-        'organizational_unit': 'str',
-        'state': 'str'
+        'organizational_unit': 'str'
     }
 
     attribute_map = {
         'common_name': 'common_name',
         'country': 'country',
+        'state': 'state',
         'locality': 'locality',
         'organization': 'organization',
-        'organizational_unit': 'organizational_unit',
-        'state': 'state'
+        'organizational_unit': 'organizational_unit'
     }
 
-    def __init__(self, common_name=None, country=None, locality=None, organization=None, organizational_unit=None, state=None):
+    def __init__(self, common_name=None, country=None, state=None, locality=None, organization=None, organizational_unit=None):
         """DistinguishedName - a model defined in huaweicloud sdk"""
         
         
 
         self._common_name = None
         self._country = None
+        self._state = None
         self._locality = None
         self._organization = None
         self._organizational_unit = None
-        self._state = None
         self.discriminator = None
 
-        if common_name is not None:
-            self.common_name = common_name
-        if country is not None:
-            self.country = country
-        if locality is not None:
-            self.locality = locality
-        if organization is not None:
-            self.organization = organization
-        if organizational_unit is not None:
-            self.organizational_unit = organizational_unit
-        if state is not None:
-            self.state = state
+        self.common_name = common_name
+        self.country = country
+        self.state = state
+        self.locality = locality
+        self.organization = organization
+        self.organizational_unit = organizational_unit
 
     @property
     def common_name(self):
         """Gets the common_name of this DistinguishedName.
 
-        通用名称
+        证书通用名称（CN）。
 
         :return: The common_name of this DistinguishedName.
         :rtype: str
@@ -80,7 +74,7 @@ class DistinguishedName:
     def common_name(self, common_name):
         """Sets the common_name of this DistinguishedName.
 
-        通用名称
+        证书通用名称（CN）。
 
         :param common_name: The common_name of this DistinguishedName.
         :type: str
@@ -91,7 +85,7 @@ class DistinguishedName:
     def country(self):
         """Gets the country of this DistinguishedName.
 
-        国家编码
+        国家编码，需符合正则\"**[A-Za-z]{2}**\"。
 
         :return: The country of this DistinguishedName.
         :rtype: str
@@ -102,7 +96,7 @@ class DistinguishedName:
     def country(self, country):
         """Sets the country of this DistinguishedName.
 
-        国家编码
+        国家编码，需符合正则\"**[A-Za-z]{2}**\"。
 
         :param country: The country of this DistinguishedName.
         :type: str
@@ -110,76 +104,10 @@ class DistinguishedName:
         self._country = country
 
     @property
-    def locality(self):
-        """Gets the locality of this DistinguishedName.
-
-        地区名称
-
-        :return: The locality of this DistinguishedName.
-        :rtype: str
-        """
-        return self._locality
-
-    @locality.setter
-    def locality(self, locality):
-        """Sets the locality of this DistinguishedName.
-
-        地区名称
-
-        :param locality: The locality of this DistinguishedName.
-        :type: str
-        """
-        self._locality = locality
-
-    @property
-    def organization(self):
-        """Gets the organization of this DistinguishedName.
-
-        组织名称
-
-        :return: The organization of this DistinguishedName.
-        :rtype: str
-        """
-        return self._organization
-
-    @organization.setter
-    def organization(self, organization):
-        """Sets the organization of this DistinguishedName.
-
-        组织名称
-
-        :param organization: The organization of this DistinguishedName.
-        :type: str
-        """
-        self._organization = organization
-
-    @property
-    def organizational_unit(self):
-        """Gets the organizational_unit of this DistinguishedName.
-
-        组织单元名称
-
-        :return: The organizational_unit of this DistinguishedName.
-        :rtype: str
-        """
-        return self._organizational_unit
-
-    @organizational_unit.setter
-    def organizational_unit(self, organizational_unit):
-        """Sets the organizational_unit of this DistinguishedName.
-
-        组织单元名称
-
-        :param organizational_unit: The organizational_unit of this DistinguishedName.
-        :type: str
-        """
-        self._organizational_unit = organizational_unit
-
-    @property
     def state(self):
         """Gets the state of this DistinguishedName.
 
-        省市
+        省市名称。
 
         :return: The state of this DistinguishedName.
         :rtype: str
@@ -190,12 +118,78 @@ class DistinguishedName:
     def state(self, state):
         """Sets the state of this DistinguishedName.
 
-        省市
+        省市名称。
 
         :param state: The state of this DistinguishedName.
         :type: str
         """
         self._state = state
+
+    @property
+    def locality(self):
+        """Gets the locality of this DistinguishedName.
+
+        地区名称。
+
+        :return: The locality of this DistinguishedName.
+        :rtype: str
+        """
+        return self._locality
+
+    @locality.setter
+    def locality(self, locality):
+        """Sets the locality of this DistinguishedName.
+
+        地区名称。
+
+        :param locality: The locality of this DistinguishedName.
+        :type: str
+        """
+        self._locality = locality
+
+    @property
+    def organization(self):
+        """Gets the organization of this DistinguishedName.
+
+        组织名称。
+
+        :return: The organization of this DistinguishedName.
+        :rtype: str
+        """
+        return self._organization
+
+    @organization.setter
+    def organization(self, organization):
+        """Sets the organization of this DistinguishedName.
+
+        组织名称。
+
+        :param organization: The organization of this DistinguishedName.
+        :type: str
+        """
+        self._organization = organization
+
+    @property
+    def organizational_unit(self):
+        """Gets the organizational_unit of this DistinguishedName.
+
+        组织单元名称。
+
+        :return: The organizational_unit of this DistinguishedName.
+        :rtype: str
+        """
+        return self._organizational_unit
+
+    @organizational_unit.setter
+    def organizational_unit(self, organizational_unit):
+        """Sets the organizational_unit of this DistinguishedName.
+
+        组织单元名称。
+
+        :param organizational_unit: The organizational_unit of this DistinguishedName.
+        :type: str
+        """
+        self._organizational_unit = organizational_unit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

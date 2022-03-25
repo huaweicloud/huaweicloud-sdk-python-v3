@@ -273,7 +273,7 @@ class SubCustomerMonthlyBillDetail:
     def association_type(self):
         """Gets the association_type of this SubCustomerMonthlyBillDetail.
 
-        子客户的关联类型： 1：推荐2：垫付
+        子客户的关联类型： 1：顾问销售2：代售
 
         :return: The association_type of this SubCustomerMonthlyBillDetail.
         :rtype: str
@@ -284,7 +284,7 @@ class SubCustomerMonthlyBillDetail:
     def association_type(self, association_type):
         """Sets the association_type of this SubCustomerMonthlyBillDetail.
 
-        子客户的关联类型： 1：推荐2：垫付
+        子客户的关联类型： 1：顾问销售2：代售
 
         :param association_type: The association_type of this SubCustomerMonthlyBillDetail.
         :type: str

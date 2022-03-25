@@ -23,7 +23,7 @@ class ListCertificateResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'certificates': 'list[ShowCertificateReponseBody]'
+        'certificates': 'list[Certificates]'
     }
 
     attribute_map = {
@@ -49,7 +49,7 @@ class ListCertificateResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListCertificateResponse.
 
-        证书总数
+        私有证书总数。
 
         :return: The total of this ListCertificateResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ListCertificateResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListCertificateResponse.
 
-        证书总数
+        私有证书总数。
 
         :param total: The total of this ListCertificateResponse.
         :type: int
@@ -71,10 +71,10 @@ class ListCertificateResponse(SdkResponse):
     def certificates(self):
         """Gets the certificates of this ListCertificateResponse.
 
-        证书列表
+        证书列表，详情请参见**Certificates**字段数据结构说明。
 
         :return: The certificates of this ListCertificateResponse.
-        :rtype: list[ShowCertificateReponseBody]
+        :rtype: list[Certificates]
         """
         return self._certificates
 
@@ -82,10 +82,10 @@ class ListCertificateResponse(SdkResponse):
     def certificates(self, certificates):
         """Sets the certificates of this ListCertificateResponse.
 
-        证书列表
+        证书列表，详情请参见**Certificates**字段数据结构说明。
 
         :param certificates: The certificates of this ListCertificateResponse.
-        :type: list[ShowCertificateReponseBody]
+        :type: list[Certificates]
         """
         self._certificates = certificates
 

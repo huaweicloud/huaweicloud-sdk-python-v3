@@ -1609,6 +1609,130 @@ class ImsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_versions_async(self, request):
+        """查询版本列表（OpenStack原生）
+
+        查询API的版本信息列表，包括API的版本兼容性、域名信息等。
+
+        :param ListVersionsRequest request
+        :return: ListVersionsResponse
+        """
+        return self.list_versions_with_http_info(request)
+
+    def list_versions_with_http_info(self, request):
+        """查询版本列表（OpenStack原生）
+
+        查询API的版本信息列表，包括API的版本兼容性、域名信息等。
+
+        :param ListVersionsRequest request
+        :return: ListVersionsResponse
+        """
+
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListVersionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_version_async(self, request):
+        """查询版本列表（OpenStack原生）
+
+        查询API的版本信息列表，包括API的版本兼容性、域名信息等。
+
+        :param ShowVersionRequest request
+        :return: ShowVersionResponse
+        """
+        return self.show_version_with_http_info(request)
+
+    def show_version_with_http_info(self, request):
+        """查询版本列表（OpenStack原生）
+
+        查询API的版本信息列表，包括API的版本兼容性、域名信息等。
+
+        :param ShowVersionRequest request
+        :return: ShowVersionResponse
+        """
+
+        all_params = ['version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'version' in local_var_params:
+            path_params['version'] = local_var_params['version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/{version}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def glance_add_image_member_async(self, request):
         """添加镜像成员（OpenStack原生）
 

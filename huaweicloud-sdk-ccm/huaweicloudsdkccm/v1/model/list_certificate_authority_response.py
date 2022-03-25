@@ -23,7 +23,7 @@ class ListCertificateAuthorityResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'certificate_authorities': 'list[ShowCertificateAuthorityResponseBody]'
+        'certificate_authorities': 'list[CertificateAuthorities]'
     }
 
     attribute_map = {
@@ -49,7 +49,7 @@ class ListCertificateAuthorityResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListCertificateAuthorityResponse.
 
-        CA总数
+        CA证书总数。
 
         :return: The total of this ListCertificateAuthorityResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ListCertificateAuthorityResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListCertificateAuthorityResponse.
 
-        CA总数
+        CA证书总数。
 
         :param total: The total of this ListCertificateAuthorityResponse.
         :type: int
@@ -71,10 +71,10 @@ class ListCertificateAuthorityResponse(SdkResponse):
     def certificate_authorities(self):
         """Gets the certificate_authorities of this ListCertificateAuthorityResponse.
 
-        CA列表
+        CA列表，详情请参见**CertificateAuthorities**字段数据结构说明。
 
         :return: The certificate_authorities of this ListCertificateAuthorityResponse.
-        :rtype: list[ShowCertificateAuthorityResponseBody]
+        :rtype: list[CertificateAuthorities]
         """
         return self._certificate_authorities
 
@@ -82,10 +82,10 @@ class ListCertificateAuthorityResponse(SdkResponse):
     def certificate_authorities(self, certificate_authorities):
         """Sets the certificate_authorities of this ListCertificateAuthorityResponse.
 
-        CA列表
+        CA列表，详情请参见**CertificateAuthorities**字段数据结构说明。
 
         :param certificate_authorities: The certificate_authorities of this ListCertificateAuthorityResponse.
-        :type: list[ShowCertificateAuthorityResponseBody]
+        :type: list[CertificateAuthorities]
         """
         self._certificate_authorities = certificate_authorities
 

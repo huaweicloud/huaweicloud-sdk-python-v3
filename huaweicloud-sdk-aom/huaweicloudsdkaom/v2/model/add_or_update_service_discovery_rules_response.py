@@ -23,27 +23,32 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
 
     openapi_types = {
         'error_code': 'str',
-        'error_message': 'str'
+        'error_message': 'str',
+        'response_status': 'int'
     }
 
     attribute_map = {
         'error_code': 'errorCode',
-        'error_message': 'errorMessage'
+        'error_message': 'errorMessage',
+        'response_status': 'responseStatus'
     }
 
-    def __init__(self, error_code=None, error_message=None):
+    def __init__(self, error_code=None, error_message=None, response_status=None):
         """AddOrUpdateServiceDiscoveryRulesResponse - a model defined in huaweicloud sdk"""
         
         super(AddOrUpdateServiceDiscoveryRulesResponse, self).__init__()
 
         self._error_code = None
         self._error_message = None
+        self._response_status = None
         self.discriminator = None
 
         if error_code is not None:
             self.error_code = error_code
         if error_message is not None:
             self.error_message = error_message
+        if response_status is not None:
+            self.response_status = response_status
 
     @property
     def error_code(self):
@@ -88,6 +93,28 @@ class AddOrUpdateServiceDiscoveryRulesResponse(SdkResponse):
         :type: str
         """
         self._error_message = error_message
+
+    @property
+    def response_status(self):
+        """Gets the response_status of this AddOrUpdateServiceDiscoveryRulesResponse.
+
+        响应状态码。
+
+        :return: The response_status of this AddOrUpdateServiceDiscoveryRulesResponse.
+        :rtype: int
+        """
+        return self._response_status
+
+    @response_status.setter
+    def response_status(self, response_status):
+        """Sets the response_status of this AddOrUpdateServiceDiscoveryRulesResponse.
+
+        响应状态码。
+
+        :param response_status: The response_status of this AddOrUpdateServiceDiscoveryRulesResponse.
+        :type: int
+        """
+        self._response_status = response_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

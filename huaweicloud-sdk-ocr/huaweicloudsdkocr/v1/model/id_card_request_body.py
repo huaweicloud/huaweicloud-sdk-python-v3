@@ -25,17 +25,19 @@ class IdCardRequestBody:
         'image': 'str',
         'url': 'str',
         'side': 'str',
-        'return_verification': 'bool'
+        'return_verification': 'bool',
+        'return_text_location': 'bool'
     }
 
     attribute_map = {
         'image': 'image',
         'url': 'url',
         'side': 'side',
-        'return_verification': 'return_verification'
+        'return_verification': 'return_verification',
+        'return_text_location': 'return_text_location'
     }
 
-    def __init__(self, image=None, url=None, side=None, return_verification=None):
+    def __init__(self, image=None, url=None, side=None, return_verification=None, return_text_location=None):
         """IdCardRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +46,7 @@ class IdCardRequestBody:
         self._url = None
         self._side = None
         self._return_verification = None
+        self._return_text_location = None
         self.discriminator = None
 
         if image is not None:
@@ -54,6 +57,8 @@ class IdCardRequestBody:
             self.side = side
         if return_verification is not None:
             self.return_verification = return_verification
+        if return_text_location is not None:
+            self.return_text_location = return_text_location
 
     @property
     def image(self):
@@ -142,6 +147,28 @@ class IdCardRequestBody:
         :type: bool
         """
         self._return_verification = return_verification
+
+    @property
+    def return_text_location(self):
+        """Gets the return_text_location of this IdCardRequestBody.
+
+        识别到的文字块的区域位置信息。可选值包括：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。 
+
+        :return: The return_text_location of this IdCardRequestBody.
+        :rtype: bool
+        """
+        return self._return_text_location
+
+    @return_text_location.setter
+    def return_text_location(self, return_text_location):
+        """Sets the return_text_location of this IdCardRequestBody.
+
+        识别到的文字块的区域位置信息。可选值包括：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。 
+
+        :param return_text_location: The return_text_location of this IdCardRequestBody.
+        :type: bool
+        """
+        self._return_text_location = return_text_location
 
     def to_dict(self):
         """Returns the model properties as a dict"""

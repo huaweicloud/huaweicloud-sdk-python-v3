@@ -105,7 +105,10 @@ from huaweicloudsdkims.v2.model.list_os_versions_response import ListOsVersionsR
 from huaweicloudsdkims.v2.model.list_os_versions_response_body import ListOsVersionsResponseBody
 from huaweicloudsdkims.v2.model.list_tags_request import ListTagsRequest
 from huaweicloudsdkims.v2.model.list_tags_response import ListTagsResponse
+from huaweicloudsdkims.v2.model.list_versions_request import ListVersionsRequest
+from huaweicloudsdkims.v2.model.list_versions_response import ListVersionsResponse
 from huaweicloudsdkims.v2.model.os_version_info import OsVersionInfo
+from huaweicloudsdkims.v2.model.os_version_response import OsVersionResponse
 from huaweicloudsdkims.v2.model.query_image_by_tags_resource_detail import QueryImageByTagsResourceDetail
 from huaweicloudsdkims.v2.model.quick_import_image_by_file_request_body import QuickImportImageByFileRequestBody
 from huaweicloudsdkims.v2.model.quota import Quota
@@ -119,6 +122,8 @@ from huaweicloudsdkims.v2.model.show_image_quota_request import ShowImageQuotaRe
 from huaweicloudsdkims.v2.model.show_image_quota_response import ShowImageQuotaResponse
 from huaweicloudsdkims.v2.model.show_job_request import ShowJobRequest
 from huaweicloudsdkims.v2.model.show_job_response import ShowJobResponse
+from huaweicloudsdkims.v2.model.show_version_request import ShowVersionRequest
+from huaweicloudsdkims.v2.model.show_version_response import ShowVersionResponse
 from huaweicloudsdkims.v2.model.tag_key_value import TagKeyValue
 from huaweicloudsdkims.v2.model.tags import Tags
 from huaweicloudsdkims.v2.model.update_image_request import UpdateImageRequest

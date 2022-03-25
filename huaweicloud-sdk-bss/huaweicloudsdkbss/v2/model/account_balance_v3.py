@@ -91,7 +91,7 @@ class AccountBalanceV3:
     def account_type(self):
         """Gets the account_type of this AccountBalanceV3.
 
-        账户类型。 1：余额2：信用5：奖励金
+        账户类型。 1：余额2：信用5：奖励金7：保证金
 
         :return: The account_type of this AccountBalanceV3.
         :rtype: int
@@ -102,7 +102,7 @@ class AccountBalanceV3:
     def account_type(self, account_type):
         """Sets the account_type of this AccountBalanceV3.
 
-        账户类型。 1：余额2：信用5：奖励金
+        账户类型。 1：余额2：信用5：奖励金7：保证金
 
         :param account_type: The account_type of this AccountBalanceV3.
         :type: int

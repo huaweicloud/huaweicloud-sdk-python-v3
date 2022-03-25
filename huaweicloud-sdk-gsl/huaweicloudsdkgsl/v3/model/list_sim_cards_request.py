@@ -38,7 +38,11 @@ class ListSimCardsRequest:
         'customer_attribute4': 'str',
         'customer_attribute5': 'str',
         'customer_attribute6': 'str',
-        'real_named': 'bool'
+        'min_flow': 'int',
+        'max_flow': 'int',
+        'real_named': 'bool',
+        'order_id': 'int',
+        'filter_downtime_period': 'bool'
     }
 
     attribute_map = {
@@ -58,10 +62,14 @@ class ListSimCardsRequest:
         'customer_attribute4': 'customer_attribute4',
         'customer_attribute5': 'customer_attribute5',
         'customer_attribute6': 'customer_attribute6',
-        'real_named': 'real_named'
+        'min_flow': 'min_flow',
+        'max_flow': 'max_flow',
+        'real_named': 'real_named',
+        'order_id': 'order_id',
+        'filter_downtime_period': 'filter_downtime_period'
     }
 
-    def __init__(self, main_search_type=None, main_search_key=None, limit=None, offset=None, sim_status=None, device_status=None, sim_type=None, order=None, sort=None, msisdn=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, real_named=None):
+    def __init__(self, main_search_type=None, main_search_key=None, limit=None, offset=None, sim_status=None, device_status=None, sim_type=None, order=None, sort=None, msisdn=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, min_flow=None, max_flow=None, real_named=None, order_id=None, filter_downtime_period=None):
         """ListSimCardsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -82,7 +90,11 @@ class ListSimCardsRequest:
         self._customer_attribute4 = None
         self._customer_attribute5 = None
         self._customer_attribute6 = None
+        self._min_flow = None
+        self._max_flow = None
         self._real_named = None
+        self._order_id = None
+        self._filter_downtime_period = None
         self.discriminator = None
 
         if main_search_type is not None:
@@ -117,8 +129,16 @@ class ListSimCardsRequest:
             self.customer_attribute5 = customer_attribute5
         if customer_attribute6 is not None:
             self.customer_attribute6 = customer_attribute6
+        if min_flow is not None:
+            self.min_flow = min_flow
+        if max_flow is not None:
+            self.max_flow = max_flow
         if real_named is not None:
             self.real_named = real_named
+        if order_id is not None:
+            self.order_id = order_id
+        if filter_downtime_period is not None:
+            self.filter_downtime_period = filter_downtime_period
 
     @property
     def main_search_type(self):
@@ -300,7 +320,7 @@ class ListSimCardsRequest:
     def sort(self):
         """Gets the sort of this ListSimCardsRequest.
 
-        排序的属性，目前支持:cid（容器ID）、flow_used（已用流量）、flow_left（剩余流量）
+        排序的属性，目前支持:cid（容器ID）、flow_used（已用流量）、flow_left（剩余流量）、act_date（激活时间）、expire_time（到期时间）
 
         :return: The sort of this ListSimCardsRequest.
         :rtype: str
@@ -311,7 +331,7 @@ class ListSimCardsRequest:
     def sort(self, sort):
         """Sets the sort of this ListSimCardsRequest.
 
-        排序的属性，目前支持:cid（容器ID）、flow_used（已用流量）、flow_left（剩余流量）
+        排序的属性，目前支持:cid（容器ID）、flow_used（已用流量）、flow_left（剩余流量）、act_date（激活时间）、expire_time（到期时间）
 
         :param sort: The sort of this ListSimCardsRequest.
         :type: str
@@ -473,6 +493,50 @@ class ListSimCardsRequest:
         self._customer_attribute6 = customer_attribute6
 
     @property
+    def min_flow(self):
+        """Gets the min_flow of this ListSimCardsRequest.
+
+        最小使用流量(MB)
+
+        :return: The min_flow of this ListSimCardsRequest.
+        :rtype: int
+        """
+        return self._min_flow
+
+    @min_flow.setter
+    def min_flow(self, min_flow):
+        """Sets the min_flow of this ListSimCardsRequest.
+
+        最小使用流量(MB)
+
+        :param min_flow: The min_flow of this ListSimCardsRequest.
+        :type: int
+        """
+        self._min_flow = min_flow
+
+    @property
+    def max_flow(self):
+        """Gets the max_flow of this ListSimCardsRequest.
+
+        最大使用流量(MB)
+
+        :return: The max_flow of this ListSimCardsRequest.
+        :rtype: int
+        """
+        return self._max_flow
+
+    @max_flow.setter
+    def max_flow(self, max_flow):
+        """Sets the max_flow of this ListSimCardsRequest.
+
+        最大使用流量(MB)
+
+        :param max_flow: The max_flow of this ListSimCardsRequest.
+        :type: int
+        """
+        self._max_flow = max_flow
+
+    @property
     def real_named(self):
         """Gets the real_named of this ListSimCardsRequest.
 
@@ -493,6 +557,50 @@ class ListSimCardsRequest:
         :type: bool
         """
         self._real_named = real_named
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this ListSimCardsRequest.
+
+        订单号
+
+        :return: The order_id of this ListSimCardsRequest.
+        :rtype: int
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this ListSimCardsRequest.
+
+        订单号
+
+        :param order_id: The order_id of this ListSimCardsRequest.
+        :type: int
+        """
+        self._order_id = order_id
+
+    @property
+    def filter_downtime_period(self):
+        """Gets the filter_downtime_period of this ListSimCardsRequest.
+
+        是否过滤停机保号的卡
+
+        :return: The filter_downtime_period of this ListSimCardsRequest.
+        :rtype: bool
+        """
+        return self._filter_downtime_period
+
+    @filter_downtime_period.setter
+    def filter_downtime_period(self, filter_downtime_period):
+        """Sets the filter_downtime_period of this ListSimCardsRequest.
+
+        是否过滤停机保号的卡
+
+        :param filter_downtime_period: The filter_downtime_period of this ListSimCardsRequest.
+        :type: bool
+        """
+        self._filter_downtime_period = filter_downtime_period
 
     def to_dict(self):
         """Returns the model properties as a dict"""

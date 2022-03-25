@@ -31,6 +31,7 @@ class VulnItem:
         'vuln_type': 'str',
         'description': 'str',
         'advice': 'str',
+        'hit_details': 'str',
         'request': 'str',
         'response': 'str',
         'provider': 'str',
@@ -48,6 +49,7 @@ class VulnItem:
         'vuln_type': 'vuln_type',
         'description': 'description',
         'advice': 'advice',
+        'hit_details': 'hit_details',
         'request': 'request',
         'response': 'response',
         'provider': 'provider',
@@ -55,7 +57,7 @@ class VulnItem:
         'find_time': 'find_time'
     }
 
-    def __init__(self, vuln_id=None, domain_id=None, url=None, severity=None, vuln_status=None, vuln_class=None, vuln_type=None, description=None, advice=None, request=None, response=None, provider=None, reason=None, find_time=None):
+    def __init__(self, vuln_id=None, domain_id=None, url=None, severity=None, vuln_status=None, vuln_class=None, vuln_type=None, description=None, advice=None, hit_details=None, request=None, response=None, provider=None, reason=None, find_time=None):
         """VulnItem - a model defined in huaweicloud sdk"""
         
         
@@ -69,6 +71,7 @@ class VulnItem:
         self._vuln_type = None
         self._description = None
         self._advice = None
+        self._hit_details = None
         self._request = None
         self._response = None
         self._provider = None
@@ -94,6 +97,8 @@ class VulnItem:
             self.description = description
         if advice is not None:
             self.advice = advice
+        if hit_details is not None:
+            self.hit_details = hit_details
         if request is not None:
             self.request = request
         if response is not None:
@@ -197,7 +202,7 @@ class VulnItem:
     def vuln_status(self):
         """Gets the vuln_status of this VulnItem.
 
-        漏洞状态:   * repairing - 修复中   * repaired - 已修复   * false_report - 误报 
+        漏洞状态:   * repairing - 未修复   * repaired - 已修复   * false_report - 误报，已忽略 
 
         :return: The vuln_status of this VulnItem.
         :rtype: str
@@ -208,7 +213,7 @@ class VulnItem:
     def vuln_status(self, vuln_status):
         """Sets the vuln_status of this VulnItem.
 
-        漏洞状态:   * repairing - 修复中   * repaired - 已修复   * false_report - 误报 
+        漏洞状态:   * repairing - 未修复   * repaired - 已修复   * false_report - 误报，已忽略 
 
         :param vuln_status: The vuln_status of this VulnItem.
         :type: str
@@ -241,7 +246,7 @@ class VulnItem:
     def vuln_type(self):
         """Gets the vuln_type of this VulnItem.
 
-        漏洞类型
+        漏洞名称
 
         :return: The vuln_type of this VulnItem.
         :rtype: str
@@ -252,7 +257,7 @@ class VulnItem:
     def vuln_type(self, vuln_type):
         """Sets the vuln_type of this VulnItem.
 
-        漏洞类型
+        漏洞名称
 
         :param vuln_type: The vuln_type of this VulnItem.
         :type: str
@@ -304,10 +309,32 @@ class VulnItem:
         self._advice = advice
 
     @property
+    def hit_details(self):
+        """Gets the hit_details of this VulnItem.
+
+        命中详情
+
+        :return: The hit_details of this VulnItem.
+        :rtype: str
+        """
+        return self._hit_details
+
+    @hit_details.setter
+    def hit_details(self, hit_details):
+        """Sets the hit_details of this VulnItem.
+
+        命中详情
+
+        :param hit_details: The hit_details of this VulnItem.
+        :type: str
+        """
+        self._hit_details = hit_details
+
+    @property
     def request(self):
         """Gets the request of this VulnItem.
 
-        测试请求报文
+        请求详情
 
         :return: The request of this VulnItem.
         :rtype: str
@@ -318,7 +345,7 @@ class VulnItem:
     def request(self, request):
         """Sets the request of this VulnItem.
 
-        测试请求报文
+        请求详情
 
         :param request: The request of this VulnItem.
         :type: str
@@ -329,7 +356,7 @@ class VulnItem:
     def response(self):
         """Gets the response of this VulnItem.
 
-        测试返回报文
+        响应详情
 
         :return: The response of this VulnItem.
         :rtype: str
@@ -340,7 +367,7 @@ class VulnItem:
     def response(self, response):
         """Sets the response of this VulnItem.
 
-        测试返回报文
+        响应详情
 
         :param response: The response of this VulnItem.
         :type: str
@@ -373,7 +400,7 @@ class VulnItem:
     def reason(self):
         """Gets the reason of this VulnItem.
 
-        确认误报理由
+        漏洞忽略理由
 
         :return: The reason of this VulnItem.
         :rtype: str
@@ -384,7 +411,7 @@ class VulnItem:
     def reason(self, reason):
         """Sets the reason of this VulnItem.
 
-        确认误报理由
+        漏洞忽略理由
 
         :param reason: The reason of this VulnItem.
         :type: str

@@ -53,7 +53,7 @@ class QuerySeriesOptionParam:
     def namespace(self):
         """Gets the namespace of this QuerySeriesOptionParam.
 
-        时间序列命名空间。 取值范围： PAAS.CONTAINER、PAAS.NODE、PAAS.SLA、PAAS.AGGR、CUSTOMMETRICS等： PAAS.CONTAINER：应用时间序列； PAAS.NODE：节点时间序列； PAAS.SLA：SLA时间序列； PAAS.AGGR：集群时间序列； CUSTOMMETRICS：自定义时间序列。
+        时间序列命名空间。 取值范围：PAAS.CONTAINER、PAAS.NODE、PAAS.SLA、PAAS.AGGR、CUSTOMMETRICS等。 PAAS.CONTAINER：应用时间序列命名空间； PAAS.NODE：节点时间序列命名空间； PAAS.SLA：SLA时间序列命名空间； PAAS.AGGR：集群时间序列命名空间； CUSTOMMETRICS：自定义时间序列命名空间。
 
         :return: The namespace of this QuerySeriesOptionParam.
         :rtype: str
@@ -64,7 +64,7 @@ class QuerySeriesOptionParam:
     def namespace(self, namespace):
         """Sets the namespace of this QuerySeriesOptionParam.
 
-        时间序列命名空间。 取值范围： PAAS.CONTAINER、PAAS.NODE、PAAS.SLA、PAAS.AGGR、CUSTOMMETRICS等： PAAS.CONTAINER：应用时间序列； PAAS.NODE：节点时间序列； PAAS.SLA：SLA时间序列； PAAS.AGGR：集群时间序列； CUSTOMMETRICS：自定义时间序列。
+        时间序列命名空间。 取值范围：PAAS.CONTAINER、PAAS.NODE、PAAS.SLA、PAAS.AGGR、CUSTOMMETRICS等。 PAAS.CONTAINER：应用时间序列命名空间； PAAS.NODE：节点时间序列命名空间； PAAS.SLA：SLA时间序列命名空间； PAAS.AGGR：集群时间序列命名空间； CUSTOMMETRICS：自定义时间序列命名空间。
 
         :param namespace: The namespace of this QuerySeriesOptionParam.
         :type: str

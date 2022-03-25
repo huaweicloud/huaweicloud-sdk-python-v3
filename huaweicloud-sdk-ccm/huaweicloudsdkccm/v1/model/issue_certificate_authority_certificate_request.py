@@ -48,7 +48,7 @@ class IssueCertificateAuthorityCertificateRequest:
     def ca_id(self):
         """Gets the ca_id of this IssueCertificateAuthorityCertificateRequest.
 
-        ca_id
+        所要激活的从属CA证书ID。
 
         :return: The ca_id of this IssueCertificateAuthorityCertificateRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class IssueCertificateAuthorityCertificateRequest:
     def ca_id(self, ca_id):
         """Sets the ca_id of this IssueCertificateAuthorityCertificateRequest.
 
-        ca_id
+        所要激活的从属CA证书ID。
 
         :param ca_id: The ca_id of this IssueCertificateAuthorityCertificateRequest.
         :type: str

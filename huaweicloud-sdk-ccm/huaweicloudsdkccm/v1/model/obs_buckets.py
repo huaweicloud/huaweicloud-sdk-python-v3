@@ -23,7 +23,7 @@ class ObsBuckets:
 
     openapi_types = {
         'bucket_name': 'str',
-        'create_time': 'str'
+        'create_time': 'int'
     }
 
     attribute_map = {
@@ -40,16 +40,14 @@ class ObsBuckets:
         self._create_time = None
         self.discriminator = None
 
-        if bucket_name is not None:
-            self.bucket_name = bucket_name
-        if create_time is not None:
-            self.create_time = create_time
+        self.bucket_name = bucket_name
+        self.create_time = create_time
 
     @property
     def bucket_name(self):
         """Gets the bucket_name of this ObsBuckets.
 
-        桶名称
+        桶名称。
 
         :return: The bucket_name of this ObsBuckets.
         :rtype: str
@@ -60,7 +58,7 @@ class ObsBuckets:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this ObsBuckets.
 
-        桶名称
+        桶名称。
 
         :param bucket_name: The bucket_name of this ObsBuckets.
         :type: str
@@ -71,10 +69,10 @@ class ObsBuckets:
     def create_time(self):
         """Gets the create_time of this ObsBuckets.
 
-        创建时间
+        创建时间,格式为时间戳（毫秒级）。
 
         :return: The create_time of this ObsBuckets.
-        :rtype: str
+        :rtype: int
         """
         return self._create_time
 
@@ -82,10 +80,10 @@ class ObsBuckets:
     def create_time(self, create_time):
         """Sets the create_time of this ObsBuckets.
 
-        创建时间
+        创建时间,格式为时间戳（毫秒级）。
 
         :param create_time: The create_time of this ObsBuckets.
-        :type: str
+        :type: int
         """
         self._create_time = create_time
 

@@ -37,14 +37,13 @@ class Quotas:
         self._resources = None
         self.discriminator = None
 
-        if resources is not None:
-            self.resources = resources
+        self.resources = resources
 
     @property
     def resources(self):
         """Gets the resources of this Quotas.
 
-        资源配额列表，详情请参见Resources
+        资源配额列表，详情请参见**Resources**字段数据结构说明。
 
         :return: The resources of this Quotas.
         :rtype: list[Resources]
@@ -55,7 +54,7 @@ class Quotas:
     def resources(self, resources):
         """Sets the resources of this Quotas.
 
-        资源配额列表，详情请参见Resources
+        资源配额列表，详情请参见**Resources**字段数据结构说明。
 
         :param resources: The resources of this Quotas.
         :type: list[Resources]

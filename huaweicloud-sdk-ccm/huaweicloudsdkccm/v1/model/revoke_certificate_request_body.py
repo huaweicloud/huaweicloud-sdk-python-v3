@@ -22,56 +22,29 @@ class RevokeCertificateRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'cert_id': 'str',
         'reason': 'str'
     }
 
     attribute_map = {
-        'cert_id': 'cert_id',
         'reason': 'reason'
     }
 
-    def __init__(self, cert_id=None, reason=None):
+    def __init__(self, reason=None):
         """RevokeCertificateRequestBody - a model defined in huaweicloud sdk"""
         
         
 
-        self._cert_id = None
         self._reason = None
         self.discriminator = None
 
-        if cert_id is not None:
-            self.cert_id = cert_id
         if reason is not None:
             self.reason = reason
-
-    @property
-    def cert_id(self):
-        """Gets the cert_id of this RevokeCertificateRequestBody.
-
-        证书ID
-
-        :return: The cert_id of this RevokeCertificateRequestBody.
-        :rtype: str
-        """
-        return self._cert_id
-
-    @cert_id.setter
-    def cert_id(self, cert_id):
-        """Sets the cert_id of this RevokeCertificateRequestBody.
-
-        证书ID
-
-        :param cert_id: The cert_id of this RevokeCertificateRequestBody.
-        :type: str
-        """
-        self._cert_id = cert_id
 
     @property
     def reason(self):
         """Gets the reason of this RevokeCertificateRequestBody.
 
-        吊销理由
+        吊销理由。 > 当不想填写吊销理由时，请求body体请置为\"{}\"，否则将会报错。
 
         :return: The reason of this RevokeCertificateRequestBody.
         :rtype: str
@@ -82,7 +55,7 @@ class RevokeCertificateRequestBody:
     def reason(self, reason):
         """Sets the reason of this RevokeCertificateRequestBody.
 
-        吊销理由
+        吊销理由。 > 当不想填写吊销理由时，请求body体请置为\"{}\"，否则将会报错。
 
         :param reason: The reason of this RevokeCertificateRequestBody.
         :type: str

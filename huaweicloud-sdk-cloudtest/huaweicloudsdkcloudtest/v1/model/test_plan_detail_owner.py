@@ -23,33 +23,43 @@ class TestPlanDetailOwner:
 
     openapi_types = {
         'id': 'str',
-        'name': 'str'
+        'name': 'str',
+        'nick_name': 'str',
+        'user_name': 'str'
     }
 
     attribute_map = {
         'id': 'id',
-        'name': 'name'
+        'name': 'name',
+        'nick_name': 'nick_name',
+        'user_name': 'user_name'
     }
 
-    def __init__(self, id=None, name=None):
+    def __init__(self, id=None, name=None, nick_name=None, user_name=None):
         """TestPlanDetailOwner - a model defined in huaweicloud sdk"""
         
         
 
         self._id = None
         self._name = None
+        self._nick_name = None
+        self._user_name = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if name is not None:
             self.name = name
+        if nick_name is not None:
+            self.nick_name = nick_name
+        if user_name is not None:
+            self.user_name = user_name
 
     @property
     def id(self):
         """Gets the id of this TestPlanDetailOwner.
 
-        测试计划创建者id
+        测试计划处理者id
 
         :return: The id of this TestPlanDetailOwner.
         :rtype: str
@@ -60,7 +70,7 @@ class TestPlanDetailOwner:
     def id(self, id):
         """Sets the id of this TestPlanDetailOwner.
 
-        测试计划创建者id
+        测试计划处理者id
 
         :param id: The id of this TestPlanDetailOwner.
         :type: str
@@ -71,7 +81,7 @@ class TestPlanDetailOwner:
     def name(self):
         """Gets the name of this TestPlanDetailOwner.
 
-        测试计划创建者名称
+        测试计划处理者名称，优先返回nickName，不存在则返回userName
 
         :return: The name of this TestPlanDetailOwner.
         :rtype: str
@@ -82,12 +92,56 @@ class TestPlanDetailOwner:
     def name(self, name):
         """Sets the name of this TestPlanDetailOwner.
 
-        测试计划创建者名称
+        测试计划处理者名称，优先返回nickName，不存在则返回userName
 
         :param name: The name of this TestPlanDetailOwner.
         :type: str
         """
         self._name = name
+
+    @property
+    def nick_name(self):
+        """Gets the nick_name of this TestPlanDetailOwner.
+
+        测试计划处理者的昵称，当用户未设置昵称时不返回该字段
+
+        :return: The nick_name of this TestPlanDetailOwner.
+        :rtype: str
+        """
+        return self._nick_name
+
+    @nick_name.setter
+    def nick_name(self, nick_name):
+        """Sets the nick_name of this TestPlanDetailOwner.
+
+        测试计划处理者的昵称，当用户未设置昵称时不返回该字段
+
+        :param nick_name: The nick_name of this TestPlanDetailOwner.
+        :type: str
+        """
+        self._nick_name = nick_name
+
+    @property
+    def user_name(self):
+        """Gets the user_name of this TestPlanDetailOwner.
+
+        测试计划处理者的用户名称
+
+        :return: The user_name of this TestPlanDetailOwner.
+        :rtype: str
+        """
+        return self._user_name
+
+    @user_name.setter
+    def user_name(self, user_name):
+        """Sets the user_name of this TestPlanDetailOwner.
+
+        测试计划处理者的用户名称
+
+        :param user_name: The user_name of this TestPlanDetailOwner.
+        :type: str
+        """
+        self._user_name = user_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

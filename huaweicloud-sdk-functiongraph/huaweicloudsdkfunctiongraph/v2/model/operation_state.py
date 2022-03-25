@@ -1,0 +1,328 @@
+# coding: utf-8
+
+import re
+import six
+
+
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class OperationState:
+
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+
+    sensitive_list = []
+
+    openapi_types = {
+        'id': 'str',
+        'name': 'str',
+        'type': 'str',
+        'end': 'bool',
+        'transition': 'str',
+        'state_data_filter': 'StateDataFilter',
+        'action_mode': 'str',
+        'actions': 'list[Action]',
+        'on_errors': 'list[OnError]'
+    }
+
+    attribute_map = {
+        'id': 'id',
+        'name': 'name',
+        'type': 'type',
+        'end': 'end',
+        'transition': 'transition',
+        'state_data_filter': 'state_data_filter',
+        'action_mode': 'action_mode',
+        'actions': 'actions',
+        'on_errors': 'on_errors'
+    }
+
+    def __init__(self, id=None, name=None, type=None, end=None, transition=None, state_data_filter=None, action_mode=None, actions=None, on_errors=None):
+        """OperationState - a model defined in huaweicloud sdk"""
+        
+        
+
+        self._id = None
+        self._name = None
+        self._type = None
+        self._end = None
+        self._transition = None
+        self._state_data_filter = None
+        self._action_mode = None
+        self._actions = None
+        self._on_errors = None
+        self.discriminator = None
+
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
+        if type is not None:
+            self.type = type
+        if end is not None:
+            self.end = end
+        if transition is not None:
+            self.transition = transition
+        if state_data_filter is not None:
+            self.state_data_filter = state_data_filter
+        if action_mode is not None:
+            self.action_mode = action_mode
+        if actions is not None:
+            self.actions = actions
+        if on_errors is not None:
+            self.on_errors = on_errors
+
+    @property
+    def id(self):
+        """Gets the id of this OperationState.
+
+        节点ID，需要在当前工作流中唯一
+
+        :return: The id of this OperationState.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this OperationState.
+
+        节点ID，需要在当前工作流中唯一
+
+        :param id: The id of this OperationState.
+        :type: str
+        """
+        self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this OperationState.
+
+        节点名称
+
+        :return: The name of this OperationState.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this OperationState.
+
+        节点名称
+
+        :param name: The name of this OperationState.
+        :type: str
+        """
+        self._name = name
+
+    @property
+    def type(self):
+        """Gets the type of this OperationState.
+
+        节点类型
+
+        :return: The type of this OperationState.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this OperationState.
+
+        节点类型
+
+        :param type: The type of this OperationState.
+        :type: str
+        """
+        self._type = type
+
+    @property
+    def end(self):
+        """Gets the end of this OperationState.
+
+        是否是结束节点
+
+        :return: The end of this OperationState.
+        :rtype: bool
+        """
+        return self._end
+
+    @end.setter
+    def end(self, end):
+        """Sets the end of this OperationState.
+
+        是否是结束节点
+
+        :param end: The end of this OperationState.
+        :type: bool
+        """
+        self._end = end
+
+    @property
+    def transition(self):
+        """Gets the transition of this OperationState.
+
+        下一步骤节点ID
+
+        :return: The transition of this OperationState.
+        :rtype: str
+        """
+        return self._transition
+
+    @transition.setter
+    def transition(self, transition):
+        """Sets the transition of this OperationState.
+
+        下一步骤节点ID
+
+        :param transition: The transition of this OperationState.
+        :type: str
+        """
+        self._transition = transition
+
+    @property
+    def state_data_filter(self):
+        """Gets the state_data_filter of this OperationState.
+
+
+        :return: The state_data_filter of this OperationState.
+        :rtype: StateDataFilter
+        """
+        return self._state_data_filter
+
+    @state_data_filter.setter
+    def state_data_filter(self, state_data_filter):
+        """Sets the state_data_filter of this OperationState.
+
+
+        :param state_data_filter: The state_data_filter of this OperationState.
+        :type: StateDataFilter
+        """
+        self._state_data_filter = state_data_filter
+
+    @property
+    def action_mode(self):
+        """Gets the action_mode of this OperationState.
+
+        Action执行模式，支持串行，并行两种模式，默认串行
+
+        :return: The action_mode of this OperationState.
+        :rtype: str
+        """
+        return self._action_mode
+
+    @action_mode.setter
+    def action_mode(self, action_mode):
+        """Sets the action_mode of this OperationState.
+
+        Action执行模式，支持串行，并行两种模式，默认串行
+
+        :param action_mode: The action_mode of this OperationState.
+        :type: str
+        """
+        self._action_mode = action_mode
+
+    @property
+    def actions(self):
+        """Gets the actions of this OperationState.
+
+        节点中要执行的操作列表
+
+        :return: The actions of this OperationState.
+        :rtype: list[Action]
+        """
+        return self._actions
+
+    @actions.setter
+    def actions(self, actions):
+        """Sets the actions of this OperationState.
+
+        节点中要执行的操作列表
+
+        :param actions: The actions of this OperationState.
+        :type: list[Action]
+        """
+        self._actions = actions
+
+    @property
+    def on_errors(self):
+        """Gets the on_errors of this OperationState.
+
+        错误处理策略
+
+        :return: The on_errors of this OperationState.
+        :rtype: list[OnError]
+        """
+        return self._on_errors
+
+    @on_errors.setter
+    def on_errors(self, on_errors):
+        """Sets the on_errors of this OperationState.
+
+        错误处理策略
+
+        :param on_errors: The on_errors of this OperationState.
+        :type: list[OnError]
+        """
+        self._on_errors = on_errors
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, OperationState):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

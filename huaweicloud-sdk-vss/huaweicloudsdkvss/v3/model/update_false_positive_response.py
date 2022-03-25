@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class TagList:
+class UpdateFalsePositiveResponse(SdkResponse):
 
 
     """
@@ -22,43 +22,72 @@ class TagList:
     sensitive_list = []
 
     openapi_types = {
-        'tag': 'TagReq'
+        'info_code': 'str',
+        'info_description': 'str'
     }
 
     attribute_map = {
-        'tag': 'tag'
+        'info_code': 'info_code',
+        'info_description': 'info_description'
     }
 
-    def __init__(self, tag=None):
-        """TagList - a model defined in huaweicloud sdk"""
+    def __init__(self, info_code=None, info_description=None):
+        """UpdateFalsePositiveResponse - a model defined in huaweicloud sdk"""
         
-        
+        super(UpdateFalsePositiveResponse, self).__init__()
 
-        self._tag = None
+        self._info_code = None
+        self._info_description = None
         self.discriminator = None
 
-        if tag is not None:
-            self.tag = tag
+        if info_code is not None:
+            self.info_code = info_code
+        if info_description is not None:
+            self.info_description = info_description
 
     @property
-    def tag(self):
-        """Gets the tag of this TagList.
+    def info_code(self):
+        """Gets the info_code of this UpdateFalsePositiveResponse.
 
+        状态码:   * success - 成功   * failure - 失败 
 
-        :return: The tag of this TagList.
-        :rtype: TagReq
+        :return: The info_code of this UpdateFalsePositiveResponse.
+        :rtype: str
         """
-        return self._tag
+        return self._info_code
 
-    @tag.setter
-    def tag(self, tag):
-        """Sets the tag of this TagList.
+    @info_code.setter
+    def info_code(self, info_code):
+        """Sets the info_code of this UpdateFalsePositiveResponse.
 
+        状态码:   * success - 成功   * failure - 失败 
 
-        :param tag: The tag of this TagList.
-        :type: TagReq
+        :param info_code: The info_code of this UpdateFalsePositiveResponse.
+        :type: str
         """
-        self._tag = tag
+        self._info_code = info_code
+
+    @property
+    def info_description(self):
+        """Gets the info_description of this UpdateFalsePositiveResponse.
+
+        返回的提示信息
+
+        :return: The info_description of this UpdateFalsePositiveResponse.
+        :rtype: str
+        """
+        return self._info_description
+
+    @info_description.setter
+    def info_description(self, info_description):
+        """Sets the info_description of this UpdateFalsePositiveResponse.
+
+        返回的提示信息
+
+        :param info_description: The info_description of this UpdateFalsePositiveResponse.
+        :type: str
+        """
+        self._info_description = info_description
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -102,7 +131,7 @@ class TagList:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TagList):
+        if not isinstance(other, UpdateFalsePositiveResponse):
             return False
 
         return self.__dict__ == other.__dict__

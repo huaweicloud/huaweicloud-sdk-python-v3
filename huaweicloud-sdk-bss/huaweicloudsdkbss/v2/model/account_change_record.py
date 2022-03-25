@@ -184,7 +184,7 @@ class AccountChangeRecord:
     def balance_after_change(self):
         """Gets the balance_after_change of this AccountChangeRecord.
 
-        变更后余额，单位    为元。
+        变更后余额，单位为元。
 
         :return: The balance_after_change of this AccountChangeRecord.
         :rtype: str
@@ -195,7 +195,7 @@ class AccountChangeRecord:
     def balance_after_change(self, balance_after_change):
         """Sets the balance_after_change of this AccountChangeRecord.
 
-        变更后余额，单位    为元。
+        变更后余额，单位为元。
 
         :param balance_after_change: The balance_after_change of this AccountChangeRecord.
         :type: str

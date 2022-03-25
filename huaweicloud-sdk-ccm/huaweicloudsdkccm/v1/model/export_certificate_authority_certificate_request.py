@@ -43,7 +43,7 @@ class ExportCertificateAuthorityCertificateRequest:
     def ca_id(self):
         """Gets the ca_id of this ExportCertificateAuthorityCertificateRequest.
 
-        ca_id
+        所要导出的CA证书ID。
 
         :return: The ca_id of this ExportCertificateAuthorityCertificateRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class ExportCertificateAuthorityCertificateRequest:
     def ca_id(self, ca_id):
         """Sets the ca_id of this ExportCertificateAuthorityCertificateRequest.
 
-        ca_id
+        所要导出的CA证书ID。
 
         :param ca_id: The ca_id of this ExportCertificateAuthorityCertificateRequest.
         :type: str

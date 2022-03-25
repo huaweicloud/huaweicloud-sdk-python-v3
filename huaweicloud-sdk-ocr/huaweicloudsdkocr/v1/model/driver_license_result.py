@@ -34,7 +34,8 @@ class DriverLicenseResult:
         'valid_to': 'str',
         'issuing_authority': 'str',
         'file_number': 'str',
-        'record': 'str'
+        'record': 'str',
+        'text_location': 'object'
     }
 
     attribute_map = {
@@ -50,10 +51,11 @@ class DriverLicenseResult:
         'valid_to': 'valid_to',
         'issuing_authority': 'issuing_authority',
         'file_number': 'file_number',
-        'record': 'record'
+        'record': 'record',
+        'text_location': 'text_location'
     }
 
-    def __init__(self, number=None, name=None, sex=None, nationality=None, address=None, birth=None, issue_date=None, _class=None, valid_from=None, valid_to=None, issuing_authority=None, file_number=None, record=None):
+    def __init__(self, number=None, name=None, sex=None, nationality=None, address=None, birth=None, issue_date=None, _class=None, valid_from=None, valid_to=None, issuing_authority=None, file_number=None, record=None, text_location=None):
         """DriverLicenseResult - a model defined in huaweicloud sdk"""
         
         
@@ -71,6 +73,7 @@ class DriverLicenseResult:
         self._issuing_authority = None
         self._file_number = None
         self._record = None
+        self._text_location = None
         self.discriminator = None
 
         if number is not None:
@@ -99,6 +102,8 @@ class DriverLicenseResult:
             self.file_number = file_number
         if record is not None:
             self.record = record
+        if text_location is not None:
+            self.text_location = text_location
 
     @property
     def number(self):
@@ -385,6 +390,28 @@ class DriverLicenseResult:
         :type: str
         """
         self._record = record
+
+    @property
+    def text_location(self):
+        """Gets the text_location of this DriverLicenseResult.
+
+        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+
+        :return: The text_location of this DriverLicenseResult.
+        :rtype: object
+        """
+        return self._text_location
+
+    @text_location.setter
+    def text_location(self, text_location):
+        """Sets the text_location of this DriverLicenseResult.
+
+        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+
+        :param text_location: The text_location of this DriverLicenseResult.
+        :type: object
+        """
+        self._text_location = text_location
 
     def to_dict(self):
         """Returns the model properties as a dict"""
