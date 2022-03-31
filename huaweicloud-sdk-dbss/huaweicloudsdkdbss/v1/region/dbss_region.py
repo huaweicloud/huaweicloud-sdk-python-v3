@@ -30,8 +30,6 @@ class DbssRegion:
 
     AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://dbss.ap-southeast-1.myhuaweicloud.com")
 
-    RU_NORTHWEST_2 = Region(id="ru-northwest-2", endpoint="https://dbss.ru-northwest-2.myhuaweicloud.com")
-
     AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://dbss.ap-southeast-2.myhuaweicloud.com")
 
     CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://dbss.cn-southwest-2.myhuaweicloud.com")
@@ -49,7 +47,6 @@ class DbssRegion:
         "cn-east-3": CN_EAST_3,
         "af-south-1": AF_SOUTH_1,
         "ap-southeast-1": AP_SOUTHEAST_1,
-        "ru-northwest-2": RU_NORTHWEST_2,
         "ap-southeast-2": AP_SOUTHEAST_2,
         "cn-southwest-2": CN_SOUTHWEST_2,
         "ap-southeast-3": AP_SOUTHEAST_3,

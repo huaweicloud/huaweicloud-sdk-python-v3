@@ -17,6 +17,8 @@ from huaweicloudsdkdcs.v2.model.batch_delete_body import BatchDeleteBody
 from huaweicloudsdkdcs.v2.model.batch_delete_instances_request import BatchDeleteInstancesRequest
 from huaweicloudsdkdcs.v2.model.batch_delete_instances_response import BatchDeleteInstancesResponse
 from huaweicloudsdkdcs.v2.model.batch_ops_result import BatchOpsResult
+from huaweicloudsdkdcs.v2.model.batch_show_nodes_information_request import BatchShowNodesInformationRequest
+from huaweicloudsdkdcs.v2.model.batch_show_nodes_information_response import BatchShowNodesInformationResponse
 from huaweicloudsdkdcs.v2.model.batch_stop_migration_tasks_body import BatchStopMigrationTasksBody
 from huaweicloudsdkdcs.v2.model.batch_stop_migration_tasks_request import BatchStopMigrationTasksRequest
 from huaweicloudsdkdcs.v2.model.batch_stop_migration_tasks_response import BatchStopMigrationTasksResponse
@@ -82,6 +84,7 @@ from huaweicloudsdkdcs.v2.model.flavors_items import FlavorsItems
 from huaweicloudsdkdcs.v2.model.hotkeys_body import HotkeysBody
 from huaweicloudsdkdcs.v2.model.instance_group_list_info import InstanceGroupListInfo
 from huaweicloudsdkdcs.v2.model.instance_list_info import InstanceListInfo
+from huaweicloudsdkdcs.v2.model.instance_nodes_info_resp import InstanceNodesInfoResp
 from huaweicloudsdkdcs.v2.model.instance_replication_dimensions_info import InstanceReplicationDimensionsInfo
 from huaweicloudsdkdcs.v2.model.instance_replication_list_info import InstanceReplicationListInfo
 from huaweicloudsdkdcs.v2.model.instance_restore_info import InstanceRestoreInfo
@@ -137,6 +140,7 @@ from huaweicloudsdkdcs.v2.model.modify_instance_body import ModifyInstanceBody
 from huaweicloudsdkdcs.v2.model.modify_instance_password_body import ModifyInstancePasswordBody
 from huaweicloudsdkdcs.v2.model.modify_ip_whitelist_body import ModifyIpWhitelistBody
 from huaweicloudsdkdcs.v2.model.modify_redis_config_body import ModifyRedisConfigBody
+from huaweicloudsdkdcs.v2.model.nodes_info_resp import NodesInfoResp
 from huaweicloudsdkdcs.v2.model.priority_body import PriorityBody
 from huaweicloudsdkdcs.v2.model.proxy2_node_monitored_object import Proxy2NodeMonitoredObject
 from huaweicloudsdkdcs.v2.model.proxy_node_monitored_object import ProxyNodeMonitoredObject

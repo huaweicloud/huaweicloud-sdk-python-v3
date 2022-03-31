@@ -1,3 +1,23 @@
+# 3.0.82 2022-03-31
+
+### HuaweiCloud SDK CC
+
+- _Features_
+  - Support the service `Cloud Connect`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - Support the interface `BatchShowNodesInformation`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.0.81 2022-03-25
 
 ### HuaweiCloud SDK AOM

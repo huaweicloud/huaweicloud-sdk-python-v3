@@ -1,3 +1,23 @@
+# 3.0.82 2022-03-31
+
+### HuaweiCloud SDK CC
+
+- _新增特性_
+  - 支持云连接服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 支持接口`BatchShowNodesInformation`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.0.81 2022-03-25
 
 ### HuaweiCloud SDK AOM

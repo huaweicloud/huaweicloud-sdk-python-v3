@@ -43,7 +43,7 @@ class MigrateAzRequestBody:
     def target_azs(self):
         """Gets the target_azs of this MigrateAzRequestBody.
 
-        迁移到的目标单az或者多az。
+        迁移到的目标单az或者多az，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :return: The target_azs of this MigrateAzRequestBody.
         :rtype: str
@@ -54,7 +54,7 @@ class MigrateAzRequestBody:
     def target_azs(self, target_azs):
         """Sets the target_azs of this MigrateAzRequestBody.
 
-        迁移到的目标单az或者多az。
+        迁移到的目标单az或者多az，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :param target_azs: The target_azs of this MigrateAzRequestBody.
         :type: str

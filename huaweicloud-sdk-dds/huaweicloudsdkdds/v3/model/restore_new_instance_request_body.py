@@ -124,7 +124,7 @@ class RestoreNewInstanceRequestBody:
     def availability_zone(self):
         """Gets the availability_zone of this RestoreNewInstanceRequestBody.
 
-        可用区ID。
+        可用区ID，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :return: The availability_zone of this RestoreNewInstanceRequestBody.
         :rtype: str
@@ -135,7 +135,7 @@ class RestoreNewInstanceRequestBody:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this RestoreNewInstanceRequestBody.
 
-        可用区ID。
+        可用区ID，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :param availability_zone: The availability_zone of this RestoreNewInstanceRequestBody.
         :type: str
