@@ -49,7 +49,7 @@ class NodeEIPSpec:
     def iptype(self):
         """Gets the iptype of this NodeEIPSpec.
 
-        弹性IP类型，取值请参见“[[创建云服务器](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0167957246.html)](tag:hws)[[创建云服务器](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0167957246.html)](tag:hws_hk) > eip字段数据结构说明”表中“iptype”参数的描述。
+        弹性IP类型，取值请参见申请EIP接口中publicip.type说明。 [链接请参见[申请EIP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)](tag:hws) [链接请参见[申请EIP](https://support.huaweicloud.com/intl/zh-cn/api-eip/eip_api_0001.html)](tag:hws_hk)
 
         :return: The iptype of this NodeEIPSpec.
         :rtype: str
@@ -60,7 +60,7 @@ class NodeEIPSpec:
     def iptype(self, iptype):
         """Sets the iptype of this NodeEIPSpec.
 
-        弹性IP类型，取值请参见“[[创建云服务器](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0167957246.html)](tag:hws)[[创建云服务器](https://support.huaweicloud.com/intl/zh-cn/api-ecs/zh-cn_topic_0167957246.html)](tag:hws_hk) > eip字段数据结构说明”表中“iptype”参数的描述。
+        弹性IP类型，取值请参见申请EIP接口中publicip.type说明。 [链接请参见[申请EIP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)](tag:hws) [链接请参见[申请EIP](https://support.huaweicloud.com/intl/zh-cn/api-eip/eip_api_0001.html)](tag:hws_hk)
 
         :param iptype: The iptype of this NodeEIPSpec.
         :type: str

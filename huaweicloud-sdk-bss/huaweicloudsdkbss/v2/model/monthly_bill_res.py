@@ -30,6 +30,8 @@ class MonthlyBillRes:
         'region_name': 'str',
         'cloud_service_type': 'str',
         'resource_type_code': 'str',
+        'cloud_service_type_name': 'str',
+        'resource_type_name': 'str',
         'res_instance_id': 'str',
         'resource_name': 'str',
         'resource_tag': 'str',
@@ -48,7 +50,8 @@ class MonthlyBillRes:
         'adjustment_amount': 'float',
         'official_amount': 'float',
         'discount_amount': 'float',
-        'measure_id': 'int'
+        'measure_id': 'int',
+        'period_type': 'int'
     }
 
     attribute_map = {
@@ -60,6 +63,8 @@ class MonthlyBillRes:
         'region_name': 'region_name',
         'cloud_service_type': 'cloud_service_type',
         'resource_type_code': 'resource_Type_code',
+        'cloud_service_type_name': 'cloud_service_type_name',
+        'resource_type_name': 'resource_type_name',
         'res_instance_id': 'res_instance_id',
         'resource_name': 'resource_name',
         'resource_tag': 'resource_tag',
@@ -78,10 +83,11 @@ class MonthlyBillRes:
         'adjustment_amount': 'adjustment_amount',
         'official_amount': 'official_amount',
         'discount_amount': 'discount_amount',
-        'measure_id': 'measure_id'
+        'measure_id': 'measure_id',
+        'period_type': 'period_type'
     }
 
-    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None):
+    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None):
         """MonthlyBillRes - a model defined in huaweicloud sdk"""
         
         
@@ -94,6 +100,8 @@ class MonthlyBillRes:
         self._region_name = None
         self._cloud_service_type = None
         self._resource_type_code = None
+        self._cloud_service_type_name = None
+        self._resource_type_name = None
         self._res_instance_id = None
         self._resource_name = None
         self._resource_tag = None
@@ -113,6 +121,7 @@ class MonthlyBillRes:
         self._official_amount = None
         self._discount_amount = None
         self._measure_id = None
+        self._period_type = None
         self.discriminator = None
 
         if cycle is not None:
@@ -131,6 +140,10 @@ class MonthlyBillRes:
             self.cloud_service_type = cloud_service_type
         if resource_type_code is not None:
             self.resource_type_code = resource_type_code
+        if cloud_service_type_name is not None:
+            self.cloud_service_type_name = cloud_service_type_name
+        if resource_type_name is not None:
+            self.resource_type_name = resource_type_name
         if res_instance_id is not None:
             self.res_instance_id = res_instance_id
         if resource_name is not None:
@@ -169,6 +182,8 @@ class MonthlyBillRes:
             self.discount_amount = discount_amount
         if measure_id is not None:
             self.measure_id = measure_id
+        if period_type is not None:
+            self.period_type = period_type
 
     @property
     def cycle(self):
@@ -345,6 +360,50 @@ class MonthlyBillRes:
         :type: str
         """
         self._resource_type_code = resource_type_code
+
+    @property
+    def cloud_service_type_name(self):
+        """Gets the cloud_service_type_name of this MonthlyBillRes.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :return: The cloud_service_type_name of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._cloud_service_type_name
+
+    @cloud_service_type_name.setter
+    def cloud_service_type_name(self, cloud_service_type_name):
+        """Sets the cloud_service_type_name of this MonthlyBillRes.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :param cloud_service_type_name: The cloud_service_type_name of this MonthlyBillRes.
+        :type: str
+        """
+        self._cloud_service_type_name = cloud_service_type_name
+
+    @property
+    def resource_type_name(self):
+        """Gets the resource_type_name of this MonthlyBillRes.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :return: The resource_type_name of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._resource_type_name
+
+    @resource_type_name.setter
+    def resource_type_name(self, resource_type_name):
+        """Sets the resource_type_name of this MonthlyBillRes.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :param resource_type_name: The resource_type_name of this MonthlyBillRes.
+        :type: str
+        """
+        self._resource_type_name = resource_type_name
 
     @property
     def res_instance_id(self):
@@ -763,6 +822,28 @@ class MonthlyBillRes:
         :type: int
         """
         self._measure_id = measure_id
+
+    @property
+    def period_type(self):
+        """Gets the period_type of this MonthlyBillRes.
+
+        周期类型： 19：年20：月24：天25：小时5：一次性
+
+        :return: The period_type of this MonthlyBillRes.
+        :rtype: int
+        """
+        return self._period_type
+
+    @period_type.setter
+    def period_type(self, period_type):
+        """Sets the period_type of this MonthlyBillRes.
+
+        周期类型： 19：年20：月24：天25：小时5：一次性
+
+        :param period_type: The period_type of this MonthlyBillRes.
+        :type: int
+        """
+        self._period_type = period_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -116,7 +116,7 @@ class BssClient(Client):
     def list_customer_bills_monthly_break_down(self, request):
         """查询月度成本
 
-        功能描述：查询月度成本
+        客户可以查询指定月份的月度摊销成本。当前仅支持查询近18个月的摊销成本。摊销成本计算规则请参见[成本摊销规则](https://support.huaweicloud.com/usermanual-cost/costcenter_000002_01.html)。  客户可查询的数据范围同成本中心提供的[数据范围](https://support.huaweicloud.com/usermanual-cost/costcenter_0000004.html)一致。  客户登录成本中心导出成本明细请参见[导出成本明细数据](https://support.huaweicloud.com/usermanual-cost/costcenter_000002_03.html)。  >![](public_sys-resources/icon-note.gif) **说明：**  >该接口仅面向已开通成本中心的客户开放。如何开启成本中心请参见[这里](https://support.huaweicloud.com/usermanual-cost/costcenter_000004.html)。
 
         :param ListCustomerBillsMonthlyBreakDownRequest request
         :return: ListCustomerBillsMonthlyBreakDownResponse
@@ -126,13 +126,13 @@ class BssClient(Client):
     def list_customer_bills_monthly_break_down_with_http_info(self, request):
         """查询月度成本
 
-        功能描述：查询月度成本
+        客户可以查询指定月份的月度摊销成本。当前仅支持查询近18个月的摊销成本。摊销成本计算规则请参见[成本摊销规则](https://support.huaweicloud.com/usermanual-cost/costcenter_000002_01.html)。  客户可查询的数据范围同成本中心提供的[数据范围](https://support.huaweicloud.com/usermanual-cost/costcenter_0000004.html)一致。  客户登录成本中心导出成本明细请参见[导出成本明细数据](https://support.huaweicloud.com/usermanual-cost/costcenter_000002_03.html)。  >![](public_sys-resources/icon-note.gif) **说明：**  >该接口仅面向已开通成本中心的客户开放。如何开启成本中心请参见[这里](https://support.huaweicloud.com/usermanual-cost/costcenter_000004.html)。
 
         :param ListCustomerBillsMonthlyBreakDownRequest request
         :return: ListCustomerBillsMonthlyBreakDownResponse
         """
 
-        all_params = ['shared_month', 'x_language', 'charging_mode', 'service_type_code', 'resource_type_code', 'region_code', 'bill_type', 'offset', 'limit', 'resource_id', 'resource_name', 'enterprise_project_id', 'method', 'sub_customer_id']
+        all_params = ['shared_month', 'x_language', 'service_type_code', 'resource_type_code', 'region_code', 'charging_mode', 'bill_type', 'offset', 'limit', 'resource_id', 'resource_name', 'enterprise_project_id', 'method', 'sub_customer_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -145,14 +145,14 @@ class BssClient(Client):
         query_params = []
         if 'shared_month' in local_var_params:
             query_params.append(('shared_month', local_var_params['shared_month']))
-        if 'charging_mode' in local_var_params:
-            query_params.append(('charging_mode', local_var_params['charging_mode']))
         if 'service_type_code' in local_var_params:
             query_params.append(('service_type_code', local_var_params['service_type_code']))
         if 'resource_type_code' in local_var_params:
             query_params.append(('resource_type_code', local_var_params['resource_type_code']))
         if 'region_code' in local_var_params:
             query_params.append(('region_code', local_var_params['region_code']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
         if 'bill_type' in local_var_params:
             query_params.append(('bill_type', local_var_params['bill_type']))
         if 'offset' in local_var_params:
@@ -539,10 +539,77 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_resource_types(self, request):
+        """查询资源类型列表
+
+        伙伴在伙伴销售平台查询资源类型的列表。
+
+        :param ListResourceTypesRequest request
+        :return: ListResourceTypesResponse
+        """
+        return self.list_resource_types_with_http_info(request)
+
+    def list_resource_types_with_http_info(self, request):
+        """查询资源类型列表
+
+        伙伴在伙伴销售平台查询资源类型的列表。
+
+        :param ListResourceTypesRequest request
+        :return: ListResourceTypesResponse
+        """
+
+        all_params = ['x_language', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/products/resource-types',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListResourceTypesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_resource_usage(self, request):
         """查询95计费资源用量明细
 
-        客户在自建平台查询自己的资源使用量明细。  >![](public_sys-resources/icon-caution.gif) **注意：**  >当前仅支持查询CDN和OBS两种云服务类型的资源用量明细，仅针对95计费场景。
+        客户在自建平台查询自己的资源使用量明细。  >![](public_sys-resources/icon-note.gif) **说明：**  >当前仅支持查询CDN和OBS两种云服务类型的资源用量明细，仅针对95计费场景。
 
         :param ListResourceUsageRequest request
         :return: ListResourceUsageResponse
@@ -552,7 +619,7 @@ class BssClient(Client):
     def list_resource_usage_with_http_info(self, request):
         """查询95计费资源用量明细
 
-        客户在自建平台查询自己的资源使用量明细。  >![](public_sys-resources/icon-caution.gif) **注意：**  >当前仅支持查询CDN和OBS两种云服务类型的资源用量明细，仅针对95计费场景。
+        客户在自建平台查询自己的资源使用量明细。  >![](public_sys-resources/icon-note.gif) **说明：**  >当前仅支持查询CDN和OBS两种云服务类型的资源用量明细，仅针对95计费场景。
 
         :param ListResourceUsageRequest request
         :return: ListResourceUsageResponse
@@ -619,7 +686,7 @@ class BssClient(Client):
     def list_resource_usage_summary(self, request):
         """查询95计费资源用量汇总
 
-        客户在自建平台查询自己的资源使用量汇总。  >![](public_sys-resources/icon-caution.gif) **注意：**  >-   当前仅支持查询CDN和OBS两种云服务类型的资源用量汇总，仅针对95计费场景。 >-   使用量汇总列表只包含月汇总金额和资源ID，若要查询具体某个资源的用量明细，请调用[查询资源用量明细](查询95计费资源用量明细.md)接口获取。
+        客户在自建平台查询自己的资源使用量汇总。  >![](public_sys-resources/icon-note.gif) **说明：**  >-   当前仅支持查询CDN和OBS两种云服务类型的资源用量汇总，仅针对95计费场景。 >-   使用量汇总列表只包含月汇总金额和资源ID，若要查询具体某个资源的用量明细，请调用[查询资源用量明细](查询95计费资源用量明细.md)接口获取。
 
         :param ListResourceUsageSummaryRequest request
         :return: ListResourceUsageSummaryResponse
@@ -629,7 +696,7 @@ class BssClient(Client):
     def list_resource_usage_summary_with_http_info(self, request):
         """查询95计费资源用量汇总
 
-        客户在自建平台查询自己的资源使用量汇总。  >![](public_sys-resources/icon-caution.gif) **注意：**  >-   当前仅支持查询CDN和OBS两种云服务类型的资源用量汇总，仅针对95计费场景。 >-   使用量汇总列表只包含月汇总金额和资源ID，若要查询具体某个资源的用量明细，请调用[查询资源用量明细](查询95计费资源用量明细.md)接口获取。
+        客户在自建平台查询自己的资源使用量汇总。  >![](public_sys-resources/icon-note.gif) **说明：**  >-   当前仅支持查询CDN和OBS两种云服务类型的资源用量汇总，仅针对95计费场景。 >-   使用量汇总列表只包含月汇总金额和资源ID，若要查询具体某个资源的用量明细，请调用[查询资源用量明细](查询95计费资源用量明细.md)接口获取。
 
         :param ListResourceUsageSummaryRequest request
         :return: ListResourceUsageSummaryResponse
@@ -691,26 +758,26 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def batch_set_sub_customer_discount(self, request):
-        """设置伙伴折扣
+    def list_service_types(self, request):
+        """查询云服务类型列表
 
-        合作伙伴可以为客户设置产品折扣，可指定有效期。被授予折扣后，客户在购买华为云产品（特殊产品除外）时，可享受伙伴授予折扣。  伙伴登录合作伙伴中心为客户设置折扣请参见[这里](https://support.huaweicloud.com/usermanual-bpconsole/zh-cn_topic_0072335153.html)。  >![](public_sys-resources/icon-note.gif) **说明：**  >-   精英服务商（二级经销商）也可以通过该接口给子客户设置折扣。 >-   暂不支持设置产品分类折扣。
+        伙伴在伙伴销售平台查询云服务类型的列表。
 
-        :param BatchSetSubCustomerDiscountRequest request
-        :return: BatchSetSubCustomerDiscountResponse
+        :param ListServiceTypesRequest request
+        :return: ListServiceTypesResponse
         """
-        return self.batch_set_sub_customer_discount_with_http_info(request)
+        return self.list_service_types_with_http_info(request)
 
-    def batch_set_sub_customer_discount_with_http_info(self, request):
-        """设置伙伴折扣
+    def list_service_types_with_http_info(self, request):
+        """查询云服务类型列表
 
-        合作伙伴可以为客户设置产品折扣，可指定有效期。被授予折扣后，客户在购买华为云产品（特殊产品除外）时，可享受伙伴授予折扣。  伙伴登录合作伙伴中心为客户设置折扣请参见[这里](https://support.huaweicloud.com/usermanual-bpconsole/zh-cn_topic_0072335153.html)。  >![](public_sys-resources/icon-note.gif) **说明：**  >-   精英服务商（二级经销商）也可以通过该接口给子客户设置折扣。 >-   暂不支持设置产品分类折扣。
+        伙伴在伙伴销售平台查询云服务类型的列表。
 
-        :param BatchSetSubCustomerDiscountRequest request
-        :return: BatchSetSubCustomerDiscountResponse
+        :param ListServiceTypesRequest request
+        :return: ListServiceTypesResponse
         """
 
-        all_params = ['req']
+        all_params = ['x_language', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -721,14 +788,18 @@ class BssClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
         body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
@@ -740,14 +811,83 @@ class BssClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/partners/discounts',
-            method='POST',
+            resource_path='/v2/products/service-types',
+            method='GET',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='BatchSetSubCustomerDiscountResponse',
+            response_type='ListServiceTypesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_stored_value_cards(self, request):
+        """查询储值卡列表
+
+        客户可以查看自己已经购买的储值卡列表。
+
+        :param ListStoredValueCardsRequest request
+        :return: ListStoredValueCardsResponse
+        """
+        return self.list_stored_value_cards_with_http_info(request)
+
+    def list_stored_value_cards_with_http_info(self, request):
+        """查询储值卡列表
+
+        客户可以查看自己已经购买的储值卡列表。
+
+        :param ListStoredValueCardsRequest request
+        :return: ListStoredValueCardsResponse
+        """
+
+        all_params = ['status', 'card_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'card_id' in local_var_params:
+            query_params.append(('card_id', local_var_params['card_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/promotions/benefits/stored-value-cards',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListStoredValueCardsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1618,7 +1758,7 @@ class BssClient(Client):
         :return: ListCustomerBillsFeeRecordsResponse
         """
 
-        all_params = ['bill_cycle', 'x_language', 'provider_type', 'service_type_code', 'resource_type_code', 'region_code', 'charging_mode', 'bill_type', 'trade_id', 'enterprise_project_id', 'include_zero_record', 'status', 'method', 'sub_customer_id', 'offset', 'limit']
+        all_params = ['bill_cycle', 'x_language', 'provider_type', 'service_type_code', 'resource_type_code', 'region_code', 'charging_mode', 'bill_type', 'trade_id', 'enterprise_project_id', 'include_zero_record', 'status', 'method', 'sub_customer_id', 'offset', 'limit', 'bill_date_begin', 'bill_date_end']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1659,6 +1799,10 @@ class BssClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'bill_date_begin' in local_var_params:
+            query_params.append(('bill_date_begin', local_var_params['bill_date_begin']))
+        if 'bill_date_end' in local_var_params:
+            query_params.append(('bill_date_end', local_var_params['bill_date_end']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -3015,71 +3159,6 @@ class BssClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_resource_types(self, request):
-        """查询资源类型列表
-
-        伙伴在伙伴销售平台查询资源类型的列表。
-
-        :param ListResourceTypesRequest request
-        :return: ListResourceTypesResponse
-        """
-        return self.list_resource_types_with_http_info(request)
-
-    def list_resource_types_with_http_info(self, request):
-        """查询资源类型列表
-
-        伙伴在伙伴销售平台查询资源类型的列表。
-
-        :param ListResourceTypesRequest request
-        :return: ListResourceTypesResponse
-        """
-
-        all_params = ['x_language', 'resource_type_code']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'resource_type_code' in local_var_params:
-            query_params.append(('resource_type_code', local_var_params['resource_type_code']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bases/resource-types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListResourceTypesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def list_service_resources(self, request):
         """根据云服务类型查询资源列表
 
@@ -3143,71 +3222,6 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListServiceResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_service_types(self, request):
-        """查询云服务类型列表
-
-        伙伴在伙伴销售平台查询云服务类型的列表。
-
-        :param ListServiceTypesRequest request
-        :return: ListServiceTypesResponse
-        """
-        return self.list_service_types_with_http_info(request)
-
-    def list_service_types_with_http_info(self, request):
-        """查询云服务类型列表
-
-        伙伴在伙伴销售平台查询云服务类型的列表。
-
-        :param ListServiceTypesRequest request
-        :return: ListServiceTypesResponse
-        """
-
-        all_params = ['x_language', 'service_type_code']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'service_type_code' in local_var_params:
-            query_params.append(('service_type_code', local_var_params['service_type_code']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bases/service-types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListServiceTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3386,71 +3400,6 @@ class BssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSubCustomerCouponsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_sub_customer_discounts(self, request):
-        """查询伙伴折扣
-
-        合作伙伴可以查看为客户设置的折扣，每次查询一个客户。如果该客户没有设置折扣，返回null。精英服务商（二级经销商）也可以通过该接口查询子客户的折扣。  伙伴登录合作伙伴中心查看为客户设置折扣请参见[这里](https://support.huaweicloud.com/usermanual-bpconsole/zh-cn_topic_0072335153.html)。  >![](public_sys-resources/icon-note.gif) **说明：**  >目前通过该接口只能查询统一折扣信息。 >暂不支持查询产品分类折扣。
-
-        :param ListSubCustomerDiscountsRequest request
-        :return: ListSubCustomerDiscountsResponse
-        """
-        return self.list_sub_customer_discounts_with_http_info(request)
-
-    def list_sub_customer_discounts_with_http_info(self, request):
-        """查询伙伴折扣
-
-        合作伙伴可以查看为客户设置的折扣，每次查询一个客户。如果该客户没有设置折扣，返回null。精英服务商（二级经销商）也可以通过该接口查询子客户的折扣。  伙伴登录合作伙伴中心查看为客户设置折扣请参见[这里](https://support.huaweicloud.com/usermanual-bpconsole/zh-cn_topic_0072335153.html)。  >![](public_sys-resources/icon-note.gif) **说明：**  >目前通过该接口只能查询统一折扣信息。 >暂不支持查询产品分类折扣。
-
-        :param ListSubCustomerDiscountsRequest request
-        :return: ListSubCustomerDiscountsResponse
-        """
-
-        all_params = ['customer_id', 'indirect_partner_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'customer_id' in local_var_params:
-            query_params.append(('customer_id', local_var_params['customer_id']))
-        if 'indirect_partner_id' in local_var_params:
-            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/partners/discounts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListSubCustomerDiscountsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

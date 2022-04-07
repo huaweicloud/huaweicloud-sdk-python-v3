@@ -30,7 +30,6 @@ class CreateCustomerV2Req:
         'xaccount_type': 'str',
         'password': 'str',
         'is_close_market_ms': 'str',
-        'indirect_partner_id': 'str',
         'include_association_result': 'bool'
     }
 
@@ -43,11 +42,10 @@ class CreateCustomerV2Req:
         'xaccount_type': 'xaccount_type',
         'password': 'password',
         'is_close_market_ms': 'is_close_market_ms',
-        'indirect_partner_id': 'indirect_partner_id',
         'include_association_result': 'include_association_result'
     }
 
-    def __init__(self, domain_name=None, email=None, verification_code=None, domain_area=None, xaccount_id=None, xaccount_type=None, password=None, is_close_market_ms=None, indirect_partner_id=None, include_association_result=None):
+    def __init__(self, domain_name=None, email=None, verification_code=None, domain_area=None, xaccount_id=None, xaccount_type=None, password=None, is_close_market_ms=None, include_association_result=None):
         """CreateCustomerV2Req - a model defined in huaweicloud sdk"""
         
         
@@ -60,7 +58,6 @@ class CreateCustomerV2Req:
         self._xaccount_type = None
         self._password = None
         self._is_close_market_ms = None
-        self._indirect_partner_id = None
         self._include_association_result = None
         self.discriminator = None
 
@@ -78,8 +75,6 @@ class CreateCustomerV2Req:
             self.password = password
         if is_close_market_ms is not None:
             self.is_close_market_ms = is_close_market_ms
-        if indirect_partner_id is not None:
-            self.indirect_partner_id = indirect_partner_id
         if include_association_result is not None:
             self.include_association_result = include_association_result
 
@@ -258,28 +253,6 @@ class CreateCustomerV2Req:
         :type: str
         """
         self._is_close_market_ms = is_close_market_ms
-
-    @property
-    def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this CreateCustomerV2Req.
-
-        |参数名称：二级渠道ID| |参数的约束及描述：该参数非必填，二级渠道ID，最大长度64|
-
-        :return: The indirect_partner_id of this CreateCustomerV2Req.
-        :rtype: str
-        """
-        return self._indirect_partner_id
-
-    @indirect_partner_id.setter
-    def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this CreateCustomerV2Req.
-
-        |参数名称：二级渠道ID| |参数的约束及描述：该参数非必填，二级渠道ID，最大长度64|
-
-        :param indirect_partner_id: The indirect_partner_id of this CreateCustomerV2Req.
-        :type: str
-        """
-        self._indirect_partner_id = indirect_partner_id
 
     @property
     def include_association_result(self):

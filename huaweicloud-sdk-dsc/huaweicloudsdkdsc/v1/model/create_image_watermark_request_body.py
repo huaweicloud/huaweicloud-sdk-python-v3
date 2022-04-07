@@ -23,25 +23,31 @@ class CreateImageWatermarkRequestBody:
 
     openapi_types = {
         'file': 'file',
-        'blind_watermark': 'str'
+        'blind_watermark': 'str',
+        'image_watermark': 'file'
     }
 
     attribute_map = {
         'file': 'file',
-        'blind_watermark': 'blind_watermark'
+        'blind_watermark': 'blind_watermark',
+        'image_watermark': 'image_watermark'
     }
 
-    def __init__(self, file=None, blind_watermark=None):
+    def __init__(self, file=None, blind_watermark=None, image_watermark=None):
         """CreateImageWatermarkRequestBody - a model defined in huaweicloud sdk"""
         
         
 
         self._file = None
         self._blind_watermark = None
+        self._image_watermark = None
         self.discriminator = None
 
         self.file = file
-        self.blind_watermark = blind_watermark
+        if blind_watermark is not None:
+            self.blind_watermark = blind_watermark
+        if image_watermark is not None:
+            self.image_watermark = image_watermark
 
     @property
     def file(self):
@@ -69,7 +75,7 @@ class CreateImageWatermarkRequestBody:
     def blind_watermark(self):
         """Gets the blind_watermark of this CreateImageWatermarkRequestBody.
 
-        嵌入暗水印的内容，长度不超过32个字符。当前仅支持数字及英文大小写。
+        待嵌入的文字暗水印内容，长度不超过32个字符。当前仅支持数字及英文大小写。与图片暗水印image_watermark二选一填充。
 
         :return: The blind_watermark of this CreateImageWatermarkRequestBody.
         :rtype: str
@@ -80,12 +86,34 @@ class CreateImageWatermarkRequestBody:
     def blind_watermark(self, blind_watermark):
         """Sets the blind_watermark of this CreateImageWatermarkRequestBody.
 
-        嵌入暗水印的内容，长度不超过32个字符。当前仅支持数字及英文大小写。
+        待嵌入的文字暗水印内容，长度不超过32个字符。当前仅支持数字及英文大小写。与图片暗水印image_watermark二选一填充。
 
         :param blind_watermark: The blind_watermark of this CreateImageWatermarkRequestBody.
         :type: str
         """
         self._blind_watermark = blind_watermark
+
+    @property
+    def image_watermark(self):
+        """Gets the image_watermark of this CreateImageWatermarkRequestBody.
+
+        待嵌入的图片暗水印文件，与文字暗水印 blind_watermark 二选一填充。
+
+        :return: The image_watermark of this CreateImageWatermarkRequestBody.
+        :rtype: file
+        """
+        return self._image_watermark
+
+    @image_watermark.setter
+    def image_watermark(self, image_watermark):
+        """Sets the image_watermark of this CreateImageWatermarkRequestBody.
+
+        待嵌入的图片暗水印文件，与文字暗水印 blind_watermark 二选一填充。
+
+        :param image_watermark: The image_watermark of this CreateImageWatermarkRequestBody.
+        :type: file
+        """
+        self._image_watermark = image_watermark
 
     def to_dict(self):
         """Returns the model properties as a dict"""

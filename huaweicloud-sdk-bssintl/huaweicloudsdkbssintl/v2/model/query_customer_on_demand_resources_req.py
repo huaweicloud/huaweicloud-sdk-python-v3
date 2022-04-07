@@ -30,8 +30,7 @@ class QueryCustomerOnDemandResourcesReq:
         'effective_time_end': 'str',
         'offset': 'int',
         'limit': 'int',
-        'status': 'int',
-        'indirect_partner_id': 'str'
+        'status': 'int'
     }
 
     attribute_map = {
@@ -43,11 +42,10 @@ class QueryCustomerOnDemandResourcesReq:
         'effective_time_end': 'effective_time_end',
         'offset': 'offset',
         'limit': 'limit',
-        'status': 'status',
-        'indirect_partner_id': 'indirect_partner_id'
+        'status': 'status'
     }
 
-    def __init__(self, customer_id=None, region_code=None, service_type_code=None, resource_ids=None, effective_time_begin=None, effective_time_end=None, offset=None, limit=None, status=None, indirect_partner_id=None):
+    def __init__(self, customer_id=None, region_code=None, service_type_code=None, resource_ids=None, effective_time_begin=None, effective_time_end=None, offset=None, limit=None, status=None):
         """QueryCustomerOnDemandResourcesReq - a model defined in huaweicloud sdk"""
         
         
@@ -61,7 +59,6 @@ class QueryCustomerOnDemandResourcesReq:
         self._offset = None
         self._limit = None
         self._status = None
-        self._indirect_partner_id = None
         self.discriminator = None
 
         self.customer_id = customer_id
@@ -81,8 +78,6 @@ class QueryCustomerOnDemandResourcesReq:
             self.limit = limit
         if status is not None:
             self.status = status
-        if indirect_partner_id is not None:
-            self.indirect_partner_id = indirect_partner_id
 
     @property
     def customer_id(self):
@@ -281,28 +276,6 @@ class QueryCustomerOnDemandResourcesReq:
         :type: int
         """
         self._status = status
-
-    @property
-    def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
-
-        |参数名称：二级经销商ID，如果想查询二级经销商的子客户的资源列表，必须携带该字段，否则只能查询自己的子客户的按需资源| |参数约束及描述：二级经销商ID，如果想查询二级经销商的子客户的资源列表，必须携带该字段，否则只能查询自己的子客户的按需资源|
-
-        :return: The indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
-        :rtype: str
-        """
-        return self._indirect_partner_id
-
-    @indirect_partner_id.setter
-    def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
-
-        |参数名称：二级经销商ID，如果想查询二级经销商的子客户的资源列表，必须携带该字段，否则只能查询自己的子客户的按需资源| |参数约束及描述：二级经销商ID，如果想查询二级经销商的子客户的资源列表，必须携带该字段，否则只能查询自己的子客户的按需资源|
-
-        :param indirect_partner_id: The indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
-        :type: str
-        """
-        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

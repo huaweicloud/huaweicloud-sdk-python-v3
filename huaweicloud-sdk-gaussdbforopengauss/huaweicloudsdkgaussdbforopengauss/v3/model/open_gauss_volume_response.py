@@ -47,7 +47,7 @@ class OpenGaussVolumeResponse:
     def type(self):
         """Gets the type of this OpenGaussVolumeResponse.
 
-        磁盘类型。  取值如下，区分大小写：  - ULTRAHIGH，表示SSD。
+        磁盘类型。  取值如下，区分大小写：  - ULTRAHIGH，表示SSD。 - ESSD，表示急速云盘
 
         :return: The type of this OpenGaussVolumeResponse.
         :rtype: str
@@ -58,7 +58,7 @@ class OpenGaussVolumeResponse:
     def type(self, type):
         """Sets the type of this OpenGaussVolumeResponse.
 
-        磁盘类型。  取值如下，区分大小写：  - ULTRAHIGH，表示SSD。
+        磁盘类型。  取值如下，区分大小写：  - ULTRAHIGH，表示SSD。 - ESSD，表示急速云盘
 
         :param type: The type of this OpenGaussVolumeResponse.
         :type: str

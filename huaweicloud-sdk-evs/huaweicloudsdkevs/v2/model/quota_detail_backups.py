@@ -24,18 +24,16 @@ class QuotaDetailBackups:
     openapi_types = {
         'in_use': 'int',
         'limit': 'int',
-        'reserved': 'int',
-        'allocated': 'int'
+        'reserved': 'int'
     }
 
     attribute_map = {
         'in_use': 'in_use',
         'limit': 'limit',
-        'reserved': 'reserved',
-        'allocated': 'allocated'
+        'reserved': 'reserved'
     }
 
-    def __init__(self, in_use=None, limit=None, reserved=None, allocated=None):
+    def __init__(self, in_use=None, limit=None, reserved=None):
         """QuotaDetailBackups - a model defined in huaweicloud sdk"""
         
         
@@ -43,13 +41,11 @@ class QuotaDetailBackups:
         self._in_use = None
         self._limit = None
         self._reserved = None
-        self._allocated = None
         self.discriminator = None
 
         self.in_use = in_use
         self.limit = limit
         self.reserved = reserved
-        self.allocated = allocated
 
     @property
     def in_use(self):
@@ -116,28 +112,6 @@ class QuotaDetailBackups:
         :type: int
         """
         self._reserved = reserved
-
-    @property
-    def allocated(self):
-        """Gets the allocated of this QuotaDetailBackups.
-
-        预留属性。
-
-        :return: The allocated of this QuotaDetailBackups.
-        :rtype: int
-        """
-        return self._allocated
-
-    @allocated.setter
-    def allocated(self, allocated):
-        """Sets the allocated of this QuotaDetailBackups.
-
-        预留属性。
-
-        :param allocated: The allocated of this QuotaDetailBackups.
-        :type: int
-        """
-        self._allocated = allocated
 
     def to_dict(self):
         """Returns the model properties as a dict"""

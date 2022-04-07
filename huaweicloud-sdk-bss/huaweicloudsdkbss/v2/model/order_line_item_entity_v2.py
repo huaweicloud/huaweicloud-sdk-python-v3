@@ -24,6 +24,7 @@ class OrderLineItemEntityV2:
     openapi_types = {
         'order_line_item_id': 'str',
         'service_type_code': 'str',
+        'service_type_name': 'str',
         'product_id': 'str',
         'product_spec_desc': 'str',
         'period_type': 'int',
@@ -43,6 +44,7 @@ class OrderLineItemEntityV2:
     attribute_map = {
         'order_line_item_id': 'order_line_item_id',
         'service_type_code': 'service_type_code',
+        'service_type_name': 'service_type_name',
         'product_id': 'product_id',
         'product_spec_desc': 'product_spec_desc',
         'period_type': 'period_type',
@@ -59,13 +61,14 @@ class OrderLineItemEntityV2:
         'commercial_resource': 'commercial_resource'
     }
 
-    def __init__(self, order_line_item_id=None, service_type_code=None, product_id=None, product_spec_desc=None, period_type=None, period_num=None, effective_time=None, expire_time=None, subscription_num=None, amount_after_discount=None, official_amount=None, amount_info=None, currency=None, category_code=None, product_owner_service=None, commercial_resource=None):
+    def __init__(self, order_line_item_id=None, service_type_code=None, service_type_name=None, product_id=None, product_spec_desc=None, period_type=None, period_num=None, effective_time=None, expire_time=None, subscription_num=None, amount_after_discount=None, official_amount=None, amount_info=None, currency=None, category_code=None, product_owner_service=None, commercial_resource=None):
         """OrderLineItemEntityV2 - a model defined in huaweicloud sdk"""
         
         
 
         self._order_line_item_id = None
         self._service_type_code = None
+        self._service_type_name = None
         self._product_id = None
         self._product_spec_desc = None
         self._period_type = None
@@ -86,6 +89,8 @@ class OrderLineItemEntityV2:
             self.order_line_item_id = order_line_item_id
         if service_type_code is not None:
             self.service_type_code = service_type_code
+        if service_type_name is not None:
+            self.service_type_name = service_type_name
         if product_id is not None:
             self.product_id = product_id
         if product_spec_desc is not None:
@@ -158,6 +163,28 @@ class OrderLineItemEntityV2:
         :type: str
         """
         self._service_type_code = service_type_code
+
+    @property
+    def service_type_name(self):
+        """Gets the service_type_name of this OrderLineItemEntityV2.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :return: The service_type_name of this OrderLineItemEntityV2.
+        :rtype: str
+        """
+        return self._service_type_name
+
+    @service_type_name.setter
+    def service_type_name(self, service_type_name):
+        """Sets the service_type_name of this OrderLineItemEntityV2.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :param service_type_name: The service_type_name of this OrderLineItemEntityV2.
+        :type: str
+        """
+        self._service_type_name = service_type_name
 
     @property
     def product_id(self):

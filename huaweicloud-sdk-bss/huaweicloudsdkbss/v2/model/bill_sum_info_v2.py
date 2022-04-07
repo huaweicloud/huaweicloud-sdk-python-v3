@@ -24,6 +24,7 @@ class BillSumInfoV2:
     openapi_types = {
         'customer_id': 'str',
         'cloud_service_type': 'str',
+        'cloud_service_type_name': 'str',
         'bill_type': 'str',
         'charge_mode': 'str',
         'amount': 'float',
@@ -32,12 +33,14 @@ class BillSumInfoV2:
         'discount_amount': 'float',
         'measure_id': 'int',
         'account_details': 'list[BalanceTypeDeductSumV2]',
-        'resource_type_code': 'str'
+        'resource_type_code': 'str',
+        'resource_type_name': 'str'
     }
 
     attribute_map = {
         'customer_id': 'customer_id',
         'cloud_service_type': 'cloud_service_type',
+        'cloud_service_type_name': 'cloud_service_type_name',
         'bill_type': 'bill_type',
         'charge_mode': 'charge_mode',
         'amount': 'amount',
@@ -46,16 +49,18 @@ class BillSumInfoV2:
         'discount_amount': 'discount_amount',
         'measure_id': 'measure_id',
         'account_details': 'account_details',
-        'resource_type_code': 'resource_type_code'
+        'resource_type_code': 'resource_type_code',
+        'resource_type_name': 'resource_type_name'
     }
 
-    def __init__(self, customer_id=None, cloud_service_type=None, bill_type=None, charge_mode=None, amount=None, debt_amount=None, adjustment_amount=None, discount_amount=None, measure_id=None, account_details=None, resource_type_code=None):
+    def __init__(self, customer_id=None, cloud_service_type=None, cloud_service_type_name=None, bill_type=None, charge_mode=None, amount=None, debt_amount=None, adjustment_amount=None, discount_amount=None, measure_id=None, account_details=None, resource_type_code=None, resource_type_name=None):
         """BillSumInfoV2 - a model defined in huaweicloud sdk"""
         
         
 
         self._customer_id = None
         self._cloud_service_type = None
+        self._cloud_service_type_name = None
         self._bill_type = None
         self._charge_mode = None
         self._amount = None
@@ -65,12 +70,15 @@ class BillSumInfoV2:
         self._measure_id = None
         self._account_details = None
         self._resource_type_code = None
+        self._resource_type_name = None
         self.discriminator = None
 
         if customer_id is not None:
             self.customer_id = customer_id
         if cloud_service_type is not None:
             self.cloud_service_type = cloud_service_type
+        if cloud_service_type_name is not None:
+            self.cloud_service_type_name = cloud_service_type_name
         if bill_type is not None:
             self.bill_type = bill_type
         if charge_mode is not None:
@@ -89,6 +97,8 @@ class BillSumInfoV2:
             self.account_details = account_details
         if resource_type_code is not None:
             self.resource_type_code = resource_type_code
+        if resource_type_name is not None:
+            self.resource_type_name = resource_type_name
 
     @property
     def customer_id(self):
@@ -133,6 +143,28 @@ class BillSumInfoV2:
         :type: str
         """
         self._cloud_service_type = cloud_service_type
+
+    @property
+    def cloud_service_type_name(self):
+        """Gets the cloud_service_type_name of this BillSumInfoV2.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :return: The cloud_service_type_name of this BillSumInfoV2.
+        :rtype: str
+        """
+        return self._cloud_service_type_name
+
+    @cloud_service_type_name.setter
+    def cloud_service_type_name(self, cloud_service_type_name):
+        """Sets the cloud_service_type_name of this BillSumInfoV2.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :param cloud_service_type_name: The cloud_service_type_name of this BillSumInfoV2.
+        :type: str
+        """
+        self._cloud_service_type_name = cloud_service_type_name
 
     @property
     def bill_type(self):
@@ -314,7 +346,7 @@ class BillSumInfoV2:
     def resource_type_code(self):
         """Gets the resource_type_code of this BillSumInfoV2.
 
-        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。
 
         :return: The resource_type_code of this BillSumInfoV2.
         :rtype: str
@@ -325,12 +357,34 @@ class BillSumInfoV2:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this BillSumInfoV2.
 
-        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。
 
         :param resource_type_code: The resource_type_code of this BillSumInfoV2.
         :type: str
         """
         self._resource_type_code = resource_type_code
+
+    @property
+    def resource_type_name(self):
+        """Gets the resource_type_name of this BillSumInfoV2.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :return: The resource_type_name of this BillSumInfoV2.
+        :rtype: str
+        """
+        return self._resource_type_name
+
+    @resource_type_name.setter
+    def resource_type_name(self, resource_type_name):
+        """Sets the resource_type_name of this BillSumInfoV2.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :param resource_type_name: The resource_type_name of this BillSumInfoV2.
+        :type: str
+        """
+        self._resource_type_name = resource_type_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

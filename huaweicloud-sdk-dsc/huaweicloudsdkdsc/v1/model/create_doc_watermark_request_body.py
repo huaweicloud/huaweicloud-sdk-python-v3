@@ -119,7 +119,7 @@ class CreateDocWatermarkRequestBody:
     def file_password(self):
         """Gets the file_password of this CreateDocWatermarkRequestBody.
 
-        解密文件的密码， 最大支持长度256。添加水印后的文件不带密码。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
+        输入文件有密码时，读取文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 
         :return: The file_password of this CreateDocWatermarkRequestBody.
         :rtype: str
@@ -130,7 +130,7 @@ class CreateDocWatermarkRequestBody:
     def file_password(self, file_password):
         """Sets the file_password of this CreateDocWatermarkRequestBody.
 
-        解密文件的密码， 最大支持长度256。添加水印后的文件不带密码。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
+        输入文件有密码时，读取文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 
         :param file_password: The file_password of this CreateDocWatermarkRequestBody.
         :type: str
@@ -141,7 +141,7 @@ class CreateDocWatermarkRequestBody:
     def marked_file_password(self):
         """Gets the marked_file_password of this CreateDocWatermarkRequestBody.
 
-        添加水印后给文件设置密码， 最大支持长度256。
+        添加水印后给文件设置密码， 最大支持长度256。默认不加文档密码。
 
         :return: The marked_file_password of this CreateDocWatermarkRequestBody.
         :rtype: str
@@ -152,7 +152,7 @@ class CreateDocWatermarkRequestBody:
     def marked_file_password(self, marked_file_password):
         """Sets the marked_file_password of this CreateDocWatermarkRequestBody.
 
-        添加水印后给文件设置密码， 最大支持长度256。
+        添加水印后给文件设置密码， 最大支持长度256。默认不加文档密码。
 
         :param marked_file_password: The marked_file_password of this CreateDocWatermarkRequestBody.
         :type: str
@@ -163,7 +163,7 @@ class CreateDocWatermarkRequestBody:
     def readonly_password(self):
         """Gets the readonly_password of this CreateDocWatermarkRequestBody.
 
-        添加水印后给文件设置只读密码， 最大支持长度256。
+        添加水印后给文件设置只读密码， 最大支持长度256。默认不加只读密码。
 
         :return: The readonly_password of this CreateDocWatermarkRequestBody.
         :rtype: str
@@ -174,7 +174,7 @@ class CreateDocWatermarkRequestBody:
     def readonly_password(self, readonly_password):
         """Sets the readonly_password of this CreateDocWatermarkRequestBody.
 
-        添加水印后给文件设置只读密码， 最大支持长度256。
+        添加水印后给文件设置只读密码， 最大支持长度256。默认不加只读密码。
 
         :param readonly_password: The readonly_password of this CreateDocWatermarkRequestBody.
         :type: str

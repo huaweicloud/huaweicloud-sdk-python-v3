@@ -79,7 +79,7 @@ class ListDomainLogsRequest:
     def query_date(self):
         """Gets the query_date of this ListDomainLogsRequest.
 
-        查询日期，格式为yyyymmdd。 - 查询结果为开始时间之后24小时内的日志数据 - 只能查最近一个月内的数据
+        查询日期，yyyyMMddHHmmss。 - 查询结果为开始时间之后24小时内的日志数据 - 只能查最近一个月内的数据
 
         :return: The query_date of this ListDomainLogsRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class ListDomainLogsRequest:
     def query_date(self, query_date):
         """Sets the query_date of this ListDomainLogsRequest.
 
-        查询日期，格式为yyyymmdd。 - 查询结果为开始时间之后24小时内的日志数据 - 只能查最近一个月内的数据
+        查询日期，yyyyMMddHHmmss。 - 查询结果为开始时间之后24小时内的日志数据 - 只能查最近一个月内的数据
 
         :param query_date: The query_date of this ListDomainLogsRequest.
         :type: str

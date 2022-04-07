@@ -21,6 +21,7 @@ from huaweicloudsdkocr.v1.model.chile_id_card_request_body import ChileIdCardReq
 from huaweicloudsdkocr.v1.model.chile_id_card_result import ChileIdCardResult
 from huaweicloudsdkocr.v1.model.driver_license_request_body import DriverLicenseRequestBody
 from huaweicloudsdkocr.v1.model.driver_license_result import DriverLicenseResult
+from huaweicloudsdkocr.v1.model.driver_license_result_status import DriverLicenseResultStatus
 from huaweicloudsdkocr.v1.model.extra_info_list import ExtraInfoList
 from huaweicloudsdkocr.v1.model.financial_statement_request_body import FinancialStatementRequestBody
 from huaweicloudsdkocr.v1.model.financial_statement_result import FinancialStatementResult
@@ -128,6 +129,8 @@ from huaweicloudsdkocr.v1.model.recognize_vehicle_license_request import Recogni
 from huaweicloudsdkocr.v1.model.recognize_vehicle_license_response import RecognizeVehicleLicenseResponse
 from huaweicloudsdkocr.v1.model.recognize_vin_request import RecognizeVinRequest
 from huaweicloudsdkocr.v1.model.recognize_vin_response import RecognizeVinResponse
+from huaweicloudsdkocr.v1.model.recognize_waybill_electronic_request import RecognizeWaybillElectronicRequest
+from huaweicloudsdkocr.v1.model.recognize_waybill_electronic_response import RecognizeWaybillElectronicResponse
 from huaweicloudsdkocr.v1.model.recognize_web_image_request import RecognizeWebImageRequest
 from huaweicloudsdkocr.v1.model.recognize_web_image_response import RecognizeWebImageResponse
 from huaweicloudsdkocr.v1.model.taxi_invoice_request_body import TaxiInvoiceRequestBody
@@ -149,6 +152,8 @@ from huaweicloudsdkocr.v1.model.vat_invoice_result import VatInvoiceResult
 from huaweicloudsdkocr.v1.model.vehicle_license_request_body import VehicleLicenseRequestBody
 from huaweicloudsdkocr.v1.model.vehicle_license_result import VehicleLicenseResult
 from huaweicloudsdkocr.v1.model.vin_request_body import VinRequestBody
+from huaweicloudsdkocr.v1.model.waybill_electronic_request_body import WaybillElectronicRequestBody
+from huaweicloudsdkocr.v1.model.waybill_electronic_result import WaybillElectronicResult
 from huaweicloudsdkocr.v1.model.web_image_request_body import WebImageRequestBody
 from huaweicloudsdkocr.v1.model.web_image_result import WebImageResult
 from huaweicloudsdkocr.v1.model.web_image_words_block_list import WebImageWordsBlockList

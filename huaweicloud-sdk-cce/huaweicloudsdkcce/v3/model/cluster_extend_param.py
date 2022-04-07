@@ -114,7 +114,7 @@ class ClusterExtendParam:
     def cluster_az(self):
         """Gets the cluster_az of this ClusterExtendParam.
 
-        集群控制节点可用区配置。CCE支持的可用区请参考[[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws)[[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk)获取。   - multi_az：多可用区，可选。仅使用高可用集群时才可以配置多可用区。   - 专属云计算池可用区：用于指定专属云可用区部署集群控制节点。   如果需配置专属CCE集群，该字段为必选。例如“华北四-可用区一”取值为：cn-north-4a。更多信息请参见[[什么是专属计算集群？](https://support.huaweicloud.com/productdesc-dcc/zh-cn_topic_0016310838.html)](tag:hws)[[什么是专属计算集群？](https://support.huaweicloud.com/intl/zh-cn/productdesc-dcc/zh-cn_topic_0016310838.html)](tag:hws_hk) 
+        集群控制节点可用区配置。 [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk)    - multi_az：多可用区，可选。仅使用高可用集群时才可以配置多可用区。 - 专属云计算池可用区：用于指定专属云可用区部署集群控制节点。如果需配置专属CCE集群，该字段为必选。 
 
         :return: The cluster_az of this ClusterExtendParam.
         :rtype: str
@@ -125,7 +125,7 @@ class ClusterExtendParam:
     def cluster_az(self, cluster_az):
         """Sets the cluster_az of this ClusterExtendParam.
 
-        集群控制节点可用区配置。CCE支持的可用区请参考[[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws)[[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk)获取。   - multi_az：多可用区，可选。仅使用高可用集群时才可以配置多可用区。   - 专属云计算池可用区：用于指定专属云可用区部署集群控制节点。   如果需配置专属CCE集群，该字段为必选。例如“华北四-可用区一”取值为：cn-north-4a。更多信息请参见[[什么是专属计算集群？](https://support.huaweicloud.com/productdesc-dcc/zh-cn_topic_0016310838.html)](tag:hws)[[什么是专属计算集群？](https://support.huaweicloud.com/intl/zh-cn/productdesc-dcc/zh-cn_topic_0016310838.html)](tag:hws_hk) 
+        集群控制节点可用区配置。 [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk)    - multi_az：多可用区，可选。仅使用高可用集群时才可以配置多可用区。 - 专属云计算池可用区：用于指定专属云可用区部署集群控制节点。如果需配置专属CCE集群，该字段为必选。 
 
         :param cluster_az: The cluster_az of this ClusterExtendParam.
         :type: str
@@ -158,7 +158,7 @@ class ClusterExtendParam:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ClusterExtendParam.
 
-        集群所属的企业项目ID。 >   - 需要开通企业项目功能后才可配置企业项目，详情请参见[[如何进入企业管理页面](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0108763975.html)](tag:hws)[[如何进入企业管理页面](https://support.huaweicloud.com/intl/zh-cn/usermanual-em/zh-cn_topic_0108763975.html)](tag:hws_hk)。 >   - 集群所属的企业项目与集群下所关联的其他云服务资源所属的企业项目必须保持一致。 
+        集群所属的企业项目ID。 >   - 需要开通企业项目功能后才可配置企业项目。 >   - 集群所属的企业项目与集群下所关联的其他云服务资源所属的企业项目必须保持一致。 
 
         :return: The enterprise_project_id of this ClusterExtendParam.
         :rtype: str
@@ -169,7 +169,7 @@ class ClusterExtendParam:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ClusterExtendParam.
 
-        集群所属的企业项目ID。 >   - 需要开通企业项目功能后才可配置企业项目，详情请参见[[如何进入企业管理页面](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0108763975.html)](tag:hws)[[如何进入企业管理页面](https://support.huaweicloud.com/intl/zh-cn/usermanual-em/zh-cn_topic_0108763975.html)](tag:hws_hk)。 >   - 集群所属的企业项目与集群下所关联的其他云服务资源所属的企业项目必须保持一致。 
+        集群所属的企业项目ID。 >   - 需要开通企业项目功能后才可配置企业项目。 >   - 集群所属的企业项目与集群下所关联的其他云服务资源所属的企业项目必须保持一致。 
 
         :param enterprise_project_id: The enterprise_project_id of this ClusterExtendParam.
         :type: str
@@ -224,7 +224,7 @@ class ClusterExtendParam:
     def alpha_cce_fix_pool_mask(self):
         """Gets the alpha_cce_fix_pool_mask of this ClusterExtendParam.
 
-        容器网络固定IP池掩码位数，仅vpc-router网络支持。  该参数决定节点可分配容器IP数量，与创建节点时设置的maxPods参数共同决定节点最多可以创建多少个Pod， [具体请参见[节点最多可以创建多少Pod](https://support.huaweicloud.com/usermanual-cce/cce_01_0348.html)](tag:hws) [具体请参见[节点最多可以创建多少Pod](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_01_0348.html)](tag:hws_hk)。   整数字符传取值范围: 24 ~ 28 
+        容器网络固定IP池掩码位数，仅vpc-router网络支持。  该参数决定节点可分配容器IP数量，与创建节点时设置的maxPods参数共同决定节点最多可以创建多少个Pod， 具体请参见[节点最多可以创建多少Pod](maxPods.xml)。   整数字符传取值范围: 24 ~ 28 
 
         :return: The alpha_cce_fix_pool_mask of this ClusterExtendParam.
         :rtype: str
@@ -235,7 +235,7 @@ class ClusterExtendParam:
     def alpha_cce_fix_pool_mask(self, alpha_cce_fix_pool_mask):
         """Sets the alpha_cce_fix_pool_mask of this ClusterExtendParam.
 
-        容器网络固定IP池掩码位数，仅vpc-router网络支持。  该参数决定节点可分配容器IP数量，与创建节点时设置的maxPods参数共同决定节点最多可以创建多少个Pod， [具体请参见[节点最多可以创建多少Pod](https://support.huaweicloud.com/usermanual-cce/cce_01_0348.html)](tag:hws) [具体请参见[节点最多可以创建多少Pod](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_01_0348.html)](tag:hws_hk)。   整数字符传取值范围: 24 ~ 28 
+        容器网络固定IP池掩码位数，仅vpc-router网络支持。  该参数决定节点可分配容器IP数量，与创建节点时设置的maxPods参数共同决定节点最多可以创建多少个Pod， 具体请参见[节点最多可以创建多少Pod](maxPods.xml)。   整数字符传取值范围: 24 ~ 28 
 
         :param alpha_cce_fix_pool_mask: The alpha_cce_fix_pool_mask of this ClusterExtendParam.
         :type: str
@@ -356,7 +356,7 @@ class ClusterExtendParam:
     def period_num(self):
         """Gets the period_num of this ClusterExtendParam.
 
-        订购周期数，取值范围： - periodType=month（周期类型为月）时，取值为[1-9]。 - periodType=year（周期类型为年）时，取值为1。 > billingMode为1时生效，且为必选。 
+        订购周期数，取值范围： - periodType=month（周期类型为月）时，取值为[1-9]。 - periodType=year（周期类型为年）时，取值为1-3。 > billingMode为1时生效，且为必选。 
 
         :return: The period_num of this ClusterExtendParam.
         :rtype: int
@@ -367,7 +367,7 @@ class ClusterExtendParam:
     def period_num(self, period_num):
         """Sets the period_num of this ClusterExtendParam.
 
-        订购周期数，取值范围： - periodType=month（周期类型为月）时，取值为[1-9]。 - periodType=year（周期类型为年）时，取值为1。 > billingMode为1时生效，且为必选。 
+        订购周期数，取值范围： - periodType=month（周期类型为月）时，取值为[1-9]。 - periodType=year（周期类型为年）时，取值为1-3。 > billingMode为1时生效，且为必选。 
 
         :param period_num: The period_num of this ClusterExtendParam.
         :type: int

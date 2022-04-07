@@ -25,6 +25,8 @@ class BillSumRecordInfoV2:
         'bill_cycle': 'str',
         'resource_type_code': 'str',
         'service_type_code': 'str',
+        'service_type_name': 'str',
+        'resource_type_name': 'str',
         'charging_mode': 'int',
         'official_amount': 'decimal.Decimal',
         'official_discount_amount': 'decimal.Decimal',
@@ -46,6 +48,8 @@ class BillSumRecordInfoV2:
         'bill_cycle': 'bill_cycle',
         'resource_type_code': 'resource_type_code',
         'service_type_code': 'service_type_code',
+        'service_type_name': 'service_type_name',
+        'resource_type_name': 'resource_type_name',
         'charging_mode': 'charging_mode',
         'official_amount': 'official_amount',
         'official_discount_amount': 'official_discount_amount',
@@ -63,7 +67,7 @@ class BillSumRecordInfoV2:
         'customer_id': 'customer_id'
     }
 
-    def __init__(self, bill_cycle=None, resource_type_code=None, service_type_code=None, charging_mode=None, official_amount=None, official_discount_amount=None, truncated_amount=None, consume_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, cash_amount=None, credit_amount=None, measure_id=None, bill_type=None, customer_id=None):
+    def __init__(self, bill_cycle=None, resource_type_code=None, service_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, official_amount=None, official_discount_amount=None, truncated_amount=None, consume_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, cash_amount=None, credit_amount=None, measure_id=None, bill_type=None, customer_id=None):
         """BillSumRecordInfoV2 - a model defined in huaweicloud sdk"""
         
         
@@ -71,6 +75,8 @@ class BillSumRecordInfoV2:
         self._bill_cycle = None
         self._resource_type_code = None
         self._service_type_code = None
+        self._service_type_name = None
+        self._resource_type_name = None
         self._charging_mode = None
         self._official_amount = None
         self._official_discount_amount = None
@@ -94,6 +100,10 @@ class BillSumRecordInfoV2:
             self.resource_type_code = resource_type_code
         if service_type_code is not None:
             self.service_type_code = service_type_code
+        if service_type_name is not None:
+            self.service_type_name = service_type_name
+        if resource_type_name is not None:
+            self.resource_type_name = resource_type_name
         if charging_mode is not None:
             self.charging_mode = charging_mode
         if official_amount is not None:
@@ -190,6 +200,50 @@ class BillSumRecordInfoV2:
         :type: str
         """
         self._service_type_code = service_type_code
+
+    @property
+    def service_type_name(self):
+        """Gets the service_type_name of this BillSumRecordInfoV2.
+
+        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+
+        :return: The service_type_name of this BillSumRecordInfoV2.
+        :rtype: str
+        """
+        return self._service_type_name
+
+    @service_type_name.setter
+    def service_type_name(self, service_type_name):
+        """Sets the service_type_name of this BillSumRecordInfoV2.
+
+        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+
+        :param service_type_name: The service_type_name of this BillSumRecordInfoV2.
+        :type: str
+        """
+        self._service_type_name = service_type_name
+
+    @property
+    def resource_type_name(self):
+        """Gets the resource_type_name of this BillSumRecordInfoV2.
+
+        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+
+        :return: The resource_type_name of this BillSumRecordInfoV2.
+        :rtype: str
+        """
+        return self._resource_type_name
+
+    @resource_type_name.setter
+    def resource_type_name(self, resource_type_name):
+        """Sets the resource_type_name of this BillSumRecordInfoV2.
+
+        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+
+        :param resource_type_name: The resource_type_name of this BillSumRecordInfoV2.
+        :type: str
+        """
+        self._resource_type_name = resource_type_name
 
     @property
     def charging_mode(self):

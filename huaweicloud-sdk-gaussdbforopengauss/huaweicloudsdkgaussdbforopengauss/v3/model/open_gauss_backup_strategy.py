@@ -70,7 +70,7 @@ class OpenGaussBackupStrategy:
     def keep_days(self):
         """Gets the keep_days of this OpenGaussBackupStrategy.
 
-        指定备份文件的可保存天数。  取值范围：1～732。该参数缺省时，默认填写为7天。
+        指定备份文件的可保存天数。  取值范围：1～732。该参数缺省或为0时，默认填写为7天。
 
         :return: The keep_days of this OpenGaussBackupStrategy.
         :rtype: int
@@ -81,7 +81,7 @@ class OpenGaussBackupStrategy:
     def keep_days(self, keep_days):
         """Sets the keep_days of this OpenGaussBackupStrategy.
 
-        指定备份文件的可保存天数。  取值范围：1～732。该参数缺省时，默认填写为7天。
+        指定备份文件的可保存天数。  取值范围：1～732。该参数缺省或为0时，默认填写为7天。
 
         :param keep_days: The keep_days of this OpenGaussBackupStrategy.
         :type: int

@@ -175,9 +175,9 @@ class DscAsyncClient(Client):
 
 
     def create_doc_watermark_async(self, request):
-        """嵌入文档水印
+        """文档嵌入水印
 
-        嵌入文档水印
+        对WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf) 类型的文件嵌入文字暗水印、文字明水印或者图片明水印，用户以formData的格式传入待加水印的文件和水印相关信息，DSC服务给文件加完水印后返回给用户已嵌入水印的文件的二进制流。
 
         :param CreateDocWatermarkRequest request
         :return: CreateDocWatermarkResponse
@@ -185,9 +185,9 @@ class DscAsyncClient(Client):
         return self.create_doc_watermark_with_http_info(request)
 
     def create_doc_watermark_with_http_info(self, request):
-        """嵌入文档水印
+        """文档嵌入水印
 
-        嵌入文档水印
+        对WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf) 类型的文件嵌入文字暗水印、文字明水印或者图片明水印，用户以formData的格式传入待加水印的文件和水印相关信息，DSC服务给文件加完水印后返回给用户已嵌入水印的文件的二进制流。
 
         :param CreateDocWatermarkRequest request
         :return: CreateDocWatermarkResponse
@@ -261,10 +261,73 @@ class DscAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def create_image_watermark_async(self, request):
-        """嵌入图片水印
+    def create_doc_watermark_by_address_async(self, request):
+        """文档嵌入水印（文件地址版本）
 
-        给上传的图片添加暗水印，目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+        对WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf)*类型的文档嵌入文字暗水印、文字明水印或者图片明水印，用户传入待加水印的文档地址（目前支持OBS)和水印相关信息，DSC服务对文档加完水印后返回给用户已嵌入水印的文档的存放地址。
+
+        :param CreateDocWatermarkByAddressRequest request
+        :return: CreateDocWatermarkByAddressResponse
+        """
+        return self.create_doc_watermark_by_address_with_http_info(request)
+
+    def create_doc_watermark_by_address_with_http_info(self, request):
+        """文档嵌入水印（文件地址版本）
+
+        对WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf)*类型的文档嵌入文字暗水印、文字明水印或者图片明水印，用户传入待加水印的文档地址（目前支持OBS)和水印相关信息，DSC服务对文档加完水印后返回给用户已嵌入水印的文档的存放地址。
+
+        :param CreateDocWatermarkByAddressRequest request
+        :return: CreateDocWatermarkByAddressResponse
+        """
+
+        all_params = ['create_doc_watermark_by_address_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/doc-address/watermark/embed',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateDocWatermarkByAddressResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_image_watermark_async(self, request):
+        """图片嵌入暗水印
+
+        对图片嵌入文字暗水印或者图片暗水印，用户以formData的格式传入待加水印图片和水印相关信息，DSC服务对图片加完水印后返回给用户已嵌入水印的图片二进制流，目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
 
         :param CreateImageWatermarkRequest request
         :return: CreateImageWatermarkResponse
@@ -272,15 +335,15 @@ class DscAsyncClient(Client):
         return self.create_image_watermark_with_http_info(request)
 
     def create_image_watermark_with_http_info(self, request):
-        """嵌入图片水印
+        """图片嵌入暗水印
 
-        给上传的图片添加暗水印，目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+        对图片嵌入文字暗水印或者图片暗水印，用户以formData的格式传入待加水印图片和水印相关信息，DSC服务对图片加完水印后返回给用户已嵌入水印的图片二进制流，目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
 
         :param CreateImageWatermarkRequest request
         :return: CreateImageWatermarkResponse
         """
 
-        all_params = ['file', 'blind_watermark']
+        all_params = ['file', 'blind_watermark', 'image_watermark']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -299,6 +362,8 @@ class DscAsyncClient(Client):
             form_params['file'] = local_var_params['file']
         if 'blind_watermark' in local_var_params:
             form_params['blind_watermark'] = local_var_params['blind_watermark']
+        if 'image_watermark' in local_var_params:
+            form_params['image_watermark'] = local_var_params['image_watermark']
 
         body_params = None
         if 'body' in local_var_params:
@@ -322,6 +387,69 @@ class DscAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateImageWatermarkResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_image_watermark_by_address_async(self, request):
+        """图片嵌入暗水印（文件地址版本）
+
+        对指定存储地址信息（目前支持华为云OBS）的图片嵌入文字暗水印或者图片暗水印，已嵌入的水印的图片将存放在用户指定的位置（目前支持华为云OBS），支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+
+        :param CreateImageWatermarkByAddressRequest request
+        :return: CreateImageWatermarkByAddressResponse
+        """
+        return self.create_image_watermark_by_address_with_http_info(request)
+
+    def create_image_watermark_by_address_with_http_info(self, request):
+        """图片嵌入暗水印（文件地址版本）
+
+        对指定存储地址信息（目前支持华为云OBS）的图片嵌入文字暗水印或者图片暗水印，已嵌入的水印的图片将存放在用户指定的位置（目前支持华为云OBS），支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+
+        :param CreateImageWatermarkByAddressRequest request
+        :return: CreateImageWatermarkByAddressResponse
+        """
+
+        all_params = ['create_image_watermark_by_address_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/image-address/watermark/embed',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateImageWatermarkByAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -392,9 +520,9 @@ class DscAsyncClient(Client):
 
 
     def show_doc_watermark_async(self, request):
-        """提取文档水印
+        """文档提取暗水印
 
-        提取文档水印
+        对已嵌入文字暗水印的WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf)类型的文档进行文字暗水印提取，用户以formData的格式传入待提取水印的文件，DSC服务以JSON的格式返回从文档里提取的出的文字暗水印内容。
 
         :param ShowDocWatermarkRequest request
         :return: ShowDocWatermarkResponse
@@ -402,9 +530,9 @@ class DscAsyncClient(Client):
         return self.show_doc_watermark_with_http_info(request)
 
     def show_doc_watermark_with_http_info(self, request):
-        """提取文档水印
+        """文档提取暗水印
 
-        提取文档水印
+        对已嵌入文字暗水印的WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf)类型的文档进行文字暗水印提取，用户以formData的格式传入待提取水印的文件，DSC服务以JSON的格式返回从文档里提取的出的文字暗水印内容。
 
         :param ShowDocWatermarkRequest request
         :return: ShowDocWatermarkResponse
@@ -460,10 +588,73 @@ class DscAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def show_image_watermark_async(self, request):
-        """提取图片水印
+    def show_doc_watermark_by_address_async(self, request):
+        """文档提取暗水印（文档地址版本）
 
-        提取图片中的暗水印内容
+        支持对已嵌入文字暗水印的WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf)类型的文档进行水印提取，用户传入待提取水印的文档地址（目前支持OBS），DSC服务以JSON的格式返回从文档里提取的出的文字暗水印内容。
+
+        :param ShowDocWatermarkByAddressRequest request
+        :return: ShowDocWatermarkByAddressResponse
+        """
+        return self.show_doc_watermark_by_address_with_http_info(request)
+
+    def show_doc_watermark_by_address_with_http_info(self, request):
+        """文档提取暗水印（文档地址版本）
+
+        支持对已嵌入文字暗水印的WORD(.docx)，PPT(.pptx)，EXCEL(.xlsx)，PDF(.pdf)类型的文档进行水印提取，用户传入待提取水印的文档地址（目前支持OBS），DSC服务以JSON的格式返回从文档里提取的出的文字暗水印内容。
+
+        :param ShowDocWatermarkByAddressRequest request
+        :return: ShowDocWatermarkByAddressResponse
+        """
+
+        all_params = ['show_doc_watermark_by_address_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/doc-address/watermark/extract',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDocWatermarkByAddressResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_image_watermark_async(self, request):
+        """提取图片中的文字暗水印
+
+        对已嵌入文字暗水印的图片进行水印提取，用户以formData的格式传入待提取水印的图片，DSC服务以JSON的格式返回从图片里提取的出的文字暗水印。目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
 
         :param ShowImageWatermarkRequest request
         :return: ShowImageWatermarkResponse
@@ -471,9 +662,9 @@ class DscAsyncClient(Client):
         return self.show_image_watermark_with_http_info(request)
 
     def show_image_watermark_with_http_info(self, request):
-        """提取图片水印
+        """提取图片中的文字暗水印
 
-        提取图片中的暗水印内容
+        对已嵌入文字暗水印的图片进行水印提取，用户以formData的格式传入待提取水印的图片，DSC服务以JSON的格式返回从图片里提取的出的文字暗水印。目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
 
         :param ShowImageWatermarkRequest request
         :return: ShowImageWatermarkResponse
@@ -521,6 +712,197 @@ class DscAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowImageWatermarkResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_image_watermark_by_address_async(self, request):
+        """提取图片中的文字暗水印（文件地址版本）
+
+        对指定存储地址信息（目前支持华为云OBS）的已嵌入文字暗水印的图片提取文字暗水印，支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+
+        :param ShowImageWatermarkByAddressRequest request
+        :return: ShowImageWatermarkByAddressResponse
+        """
+        return self.show_image_watermark_by_address_with_http_info(request)
+
+    def show_image_watermark_by_address_with_http_info(self, request):
+        """提取图片中的文字暗水印（文件地址版本）
+
+        对指定存储地址信息（目前支持华为云OBS）的已嵌入文字暗水印的图片提取文字暗水印，支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+
+        :param ShowImageWatermarkByAddressRequest request
+        :return: ShowImageWatermarkByAddressResponse
+        """
+
+        all_params = ['show_image_watermark_by_address_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/image-address/watermark/extract',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowImageWatermarkByAddressResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_image_watermark_with_image_async(self, request):
+        """提取图片中的图片暗水印
+
+        对已嵌入图片暗水印的图片进行水印提取，用户以formData的格式传入待提取水印的图片，DSC服务以图片二进制流的格式返回从图片里提取的出的图片暗水印。目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+
+        :param ShowImageWatermarkWithImageRequest request
+        :return: ShowImageWatermarkWithImageResponse
+        """
+        return self.show_image_watermark_with_image_with_http_info(request)
+
+    def show_image_watermark_with_image_with_http_info(self, request):
+        """提取图片中的图片暗水印
+
+        对已嵌入图片暗水印的图片进行水印提取，用户以formData的格式传入待提取水印的图片，DSC服务以图片二进制流的格式返回从图片里提取的出的图片暗水印。目前支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+
+        :param ShowImageWatermarkWithImageRequest request
+        :return: ShowImageWatermarkWithImageResponse
+        """
+
+        all_params = ['file']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/image/watermark/extract-image',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowImageWatermarkWithImageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_image_watermark_with_image_by_address_async(self, request):
+        """提取图片中的图片暗水印（文件地址版本）
+
+        对指定存储地址信息（目前支持华为云OBS）的已嵌入图片暗水印的图片提取图片暗水印，提取出的水印图片将存放在用户指定的位置（目前支持华为云OBS），支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+
+        :param ShowImageWatermarkWithImageByAddressRequest request
+        :return: ShowImageWatermarkWithImageByAddressResponse
+        """
+        return self.show_image_watermark_with_image_by_address_with_http_info(request)
+
+    def show_image_watermark_with_image_by_address_with_http_info(self, request):
+        """提取图片中的图片暗水印（文件地址版本）
+
+        对指定存储地址信息（目前支持华为云OBS）的已嵌入图片暗水印的图片提取图片暗水印，提取出的水印图片将存放在用户指定的位置（目前支持华为云OBS），支持的图片格式为：*.jpg, *.jpeg, *.jpe, *.png, *.bmp, *.dib, *.rle, *.tiff, *.tif, *.ppm, *.webp, *.tga, *.tpic, *.gif。
+
+        :param ShowImageWatermarkWithImageByAddressRequest request
+        :return: ShowImageWatermarkWithImageByAddressResponse
+        """
+
+        all_params = ['show_image_watermark_with_image_by_address_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/image-address/watermark/extract-image',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowImageWatermarkWithImageByAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

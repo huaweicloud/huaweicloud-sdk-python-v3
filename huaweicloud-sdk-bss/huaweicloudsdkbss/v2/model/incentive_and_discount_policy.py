@@ -23,28 +23,33 @@ class IncentiveAndDiscountPolicy:
 
     openapi_types = {
         'service_type_code': 'str',
+        'service_type_name': 'str',
         'incentive_policy': 'str',
         'allow_discount': 'str'
     }
 
     attribute_map = {
         'service_type_code': 'service_type_code',
+        'service_type_name': 'service_type_name',
         'incentive_policy': 'incentive_policy',
         'allow_discount': 'allow_discount'
     }
 
-    def __init__(self, service_type_code=None, incentive_policy=None, allow_discount=None):
+    def __init__(self, service_type_code=None, service_type_name=None, incentive_policy=None, allow_discount=None):
         """IncentiveAndDiscountPolicy - a model defined in huaweicloud sdk"""
         
         
 
         self._service_type_code = None
+        self._service_type_name = None
         self._incentive_policy = None
         self._allow_discount = None
         self.discriminator = None
 
         if service_type_code is not None:
             self.service_type_code = service_type_code
+        if service_type_name is not None:
+            self.service_type_name = service_type_name
         if incentive_policy is not None:
             self.incentive_policy = incentive_policy
         if allow_discount is not None:
@@ -71,6 +76,28 @@ class IncentiveAndDiscountPolicy:
         :type: str
         """
         self._service_type_code = service_type_code
+
+    @property
+    def service_type_name(self):
+        """Gets the service_type_name of this IncentiveAndDiscountPolicy.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :return: The service_type_name of this IncentiveAndDiscountPolicy.
+        :rtype: str
+        """
+        return self._service_type_name
+
+    @service_type_name.setter
+    def service_type_name(self, service_type_name):
+        """Sets the service_type_name of this IncentiveAndDiscountPolicy.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :param service_type_name: The service_type_name of this IncentiveAndDiscountPolicy.
+        :type: str
+        """
+        self._service_type_name = service_type_name
 
     @property
     def incentive_policy(self):

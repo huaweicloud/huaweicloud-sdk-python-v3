@@ -48,6 +48,73 @@ class RdsClient(Client):
 
         return ClientBuilder(clazz)
 
+    def apply_configuration_async(self, request):
+        """应用参数模板
+
+        应用参数模板。
+
+        :param ApplyConfigurationAsyncRequest request
+        :return: ApplyConfigurationAsyncResponse
+        """
+        return self.apply_configuration_async_with_http_info(request)
+
+    def apply_configuration_async_with_http_info(self, request):
+        """应用参数模板
+
+        应用参数模板。
+
+        :param ApplyConfigurationAsyncRequest request
+        :return: ApplyConfigurationAsyncResponse
+        """
+
+        all_params = ['config_id', 'apply_configuration_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_id' in local_var_params:
+            path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.1/{project_id}/configurations/{config_id}/apply',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ApplyConfigurationAsyncResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def attach_eip(self, request):
         """绑定和解绑弹性公网IP
 
@@ -4699,6 +4766,73 @@ class RdsClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def update_instance_configuration_async(self, request):
+        """修改指定实例的参数
+
+        修改指定实例的参数。
+
+        :param UpdateInstanceConfigurationAsyncRequest request
+        :return: UpdateInstanceConfigurationAsyncResponse
+        """
+        return self.update_instance_configuration_async_with_http_info(request)
+
+    def update_instance_configuration_async_with_http_info(self, request):
+        """修改指定实例的参数
+
+        修改指定实例的参数。
+
+        :param UpdateInstanceConfigurationAsyncRequest request
+        :return: UpdateInstanceConfigurationAsyncResponse
+        """
+
+        all_params = ['instance_id', 'update_instance_configuration_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.1/{project_id}/instances/{instance_id}/configurations',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateInstanceConfigurationAsyncResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def update_instance_name(self, request):
         """修改实例名称
 
@@ -7375,6 +7509,75 @@ class RdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteSqlserverDatabaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_sqlserver_database_ex(self, request):
+        """删除数据库
+
+        删除数据库。
+
+        :param DeleteSqlserverDatabaseExRequest request
+        :return: DeleteSqlserverDatabaseExResponse
+        """
+        return self.delete_sqlserver_database_ex_with_http_info(request)
+
+    def delete_sqlserver_database_ex_with_http_info(self, request):
+        """删除数据库
+
+        删除数据库。
+
+        :param DeleteSqlserverDatabaseExRequest request
+        :return: DeleteSqlserverDatabaseExResponse
+        """
+
+        all_params = ['instance_id', 'db_name', 'x_language', 'drop_database_v3_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.1/{project_id}/instances/{instance_id}/database/{db_name}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteSqlserverDatabaseExResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

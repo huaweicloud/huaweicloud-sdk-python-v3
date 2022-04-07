@@ -29,9 +29,7 @@ class QuerySubCustomerListReq:
         'label': 'str',
         'association_type': 'str',
         'associated_on_begin': 'str',
-        'associated_on_end': 'str',
-        'customer_id': 'str',
-        'indirect_partner_id': 'str'
+        'associated_on_end': 'str'
     }
 
     attribute_map = {
@@ -42,12 +40,10 @@ class QuerySubCustomerListReq:
         'label': 'label',
         'association_type': 'association_type',
         'associated_on_begin': 'associated_on_begin',
-        'associated_on_end': 'associated_on_end',
-        'customer_id': 'customer_id',
-        'indirect_partner_id': 'indirect_partner_id'
+        'associated_on_end': 'associated_on_end'
     }
 
-    def __init__(self, account_name=None, customer=None, offset=None, limit=None, label=None, association_type=None, associated_on_begin=None, associated_on_end=None, customer_id=None, indirect_partner_id=None):
+    def __init__(self, account_name=None, customer=None, offset=None, limit=None, label=None, association_type=None, associated_on_begin=None, associated_on_end=None):
         """QuerySubCustomerListReq - a model defined in huaweicloud sdk"""
         
         
@@ -60,8 +56,6 @@ class QuerySubCustomerListReq:
         self._association_type = None
         self._associated_on_begin = None
         self._associated_on_end = None
-        self._customer_id = None
-        self._indirect_partner_id = None
         self.discriminator = None
 
         if account_name is not None:
@@ -80,10 +74,6 @@ class QuerySubCustomerListReq:
             self.associated_on_begin = associated_on_begin
         if associated_on_end is not None:
             self.associated_on_end = associated_on_end
-        if customer_id is not None:
-            self.customer_id = customer_id
-        if indirect_partner_id is not None:
-            self.indirect_partner_id = indirect_partner_id
 
     @property
     def account_name(self):
@@ -260,50 +250,6 @@ class QuerySubCustomerListReq:
         :type: str
         """
         self._associated_on_end = associated_on_end
-
-    @property
-    def customer_id(self):
-        """Gets the customer_id of this QuerySubCustomerListReq.
-
-        |参数名称：子客户ID| |参数约束及描述：非必填，最大长度64|
-
-        :return: The customer_id of this QuerySubCustomerListReq.
-        :rtype: str
-        """
-        return self._customer_id
-
-    @customer_id.setter
-    def customer_id(self, customer_id):
-        """Sets the customer_id of this QuerySubCustomerListReq.
-
-        |参数名称：子客户ID| |参数约束及描述：非必填，最大长度64|
-
-        :param customer_id: The customer_id of this QuerySubCustomerListReq.
-        :type: str
-        """
-        self._customer_id = customer_id
-
-    @property
-    def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this QuerySubCustomerListReq.
-
-        |参数名称：二级渠道商ID| |参数约束及描述：如果想查询二级渠道子客户的列表，该字段必须携带，最大长度64|
-
-        :return: The indirect_partner_id of this QuerySubCustomerListReq.
-        :rtype: str
-        """
-        return self._indirect_partner_id
-
-    @indirect_partner_id.setter
-    def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this QuerySubCustomerListReq.
-
-        |参数名称：二级渠道商ID| |参数约束及描述：如果想查询二级渠道子客户的列表，该字段必须携带，最大长度64|
-
-        :param indirect_partner_id: The indirect_partner_id of this QuerySubCustomerListReq.
-        :type: str
-        """
-        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -74,7 +74,7 @@ class AccountChangeRecord:
     def account_change_id(self):
         """Gets the account_change_id of this AccountChangeRecord.
 
-        |参数名称：收支明细流水号| |参数约束及描述：数据表主键|
+        收支明细流水号
 
         :return: The account_change_id of this AccountChangeRecord.
         :rtype: str
@@ -85,7 +85,7 @@ class AccountChangeRecord:
     def account_change_id(self, account_change_id):
         """Sets the account_change_id of this AccountChangeRecord.
 
-        |参数名称：收支明细流水号| |参数约束及描述：数据表主键|
+        收支明细流水号
 
         :param account_change_id: The account_change_id of this AccountChangeRecord.
         :type: str

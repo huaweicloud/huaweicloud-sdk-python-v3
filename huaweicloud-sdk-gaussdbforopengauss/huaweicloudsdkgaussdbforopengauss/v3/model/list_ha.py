@@ -47,7 +47,7 @@ class ListHa:
     def consistency(self):
         """Gets the consistency of this ListHa.
 
-        数据库一致性类型。取值为“strong”、“eventual”，分别表示强一致性、最终一致性。
+        数据库一致性类型，分布式模式实例仅有。取值为“strong”、“eventual”，分别表示强一致性、最终一致性。
 
         :return: The consistency of this ListHa.
         :rtype: str
@@ -58,7 +58,7 @@ class ListHa:
     def consistency(self, consistency):
         """Sets the consistency of this ListHa.
 
-        数据库一致性类型。取值为“strong”、“eventual”，分别表示强一致性、最终一致性。
+        数据库一致性类型，分布式模式实例仅有。取值为“strong”、“eventual”，分别表示强一致性、最终一致性。
 
         :param consistency: The consistency of this ListHa.
         :type: str

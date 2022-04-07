@@ -51,7 +51,7 @@ class OpenGaussHaResponse:
     def mode(self):
         """Gets the mode of this OpenGaussHaResponse.
 
-        GaussDB(for openGauss)仅支持分布式模式，返回值为：Enterprise（企业版）。
+        GaussDB(for openGauss) 分布式模式，返回值为：Enterprise（企业版）；主备版，返回值为：Ha(主备版)。
 
         :return: The mode of this OpenGaussHaResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class OpenGaussHaResponse:
     def mode(self, mode):
         """Sets the mode of this OpenGaussHaResponse.
 
-        GaussDB(for openGauss)仅支持分布式模式，返回值为：Enterprise（企业版）。
+        GaussDB(for openGauss) 分布式模式，返回值为：Enterprise（企业版）；主备版，返回值为：Ha(主备版)。
 
         :param mode: The mode of this OpenGaussHaResponse.
         :type: str

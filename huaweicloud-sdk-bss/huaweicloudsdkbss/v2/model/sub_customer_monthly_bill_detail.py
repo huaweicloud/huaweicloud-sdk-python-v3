@@ -27,6 +27,8 @@ class SubCustomerMonthlyBillDetail:
         'association_type': 'str',
         'service_type_code': 'str',
         'resource_type_code': 'str',
+        'service_type_name': 'str',
+        'resource_type_name': 'str',
         'charging_mode': 'int',
         'trade_time': 'str',
         'trade_id': 'str',
@@ -68,6 +70,8 @@ class SubCustomerMonthlyBillDetail:
         'association_type': 'association_type',
         'service_type_code': 'service_type_code',
         'resource_type_code': 'resource_type_code',
+        'service_type_name': 'service_type_name',
+        'resource_type_name': 'resource_type_name',
         'charging_mode': 'charging_mode',
         'trade_time': 'trade_time',
         'trade_id': 'trade_id',
@@ -103,7 +107,7 @@ class SubCustomerMonthlyBillDetail:
         'region_name': 'region_name'
     }
 
-    def __init__(self, bill_cycle=None, customer_id=None, association_type=None, service_type_code=None, resource_type_code=None, charging_mode=None, trade_time=None, trade_id=None, bill_detail_type=None, resource_id=None, resource_name=None, product_spec_desc=None, region_code=None, product_id=None, product_name=None, resource_tag=None, consume_time=None, usage_type=None, usage_amount=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, official_discount_amount=None, payment_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, period_type=None, account_manager_id=None, partner_id=None, region_name=None):
+    def __init__(self, bill_cycle=None, customer_id=None, association_type=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, trade_time=None, trade_id=None, bill_detail_type=None, resource_id=None, resource_name=None, product_spec_desc=None, region_code=None, product_id=None, product_name=None, resource_tag=None, consume_time=None, usage_type=None, usage_amount=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, official_discount_amount=None, payment_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, period_type=None, account_manager_id=None, partner_id=None, region_name=None):
         """SubCustomerMonthlyBillDetail - a model defined in huaweicloud sdk"""
         
         
@@ -113,6 +117,8 @@ class SubCustomerMonthlyBillDetail:
         self._association_type = None
         self._service_type_code = None
         self._resource_type_code = None
+        self._service_type_name = None
+        self._resource_type_name = None
         self._charging_mode = None
         self._trade_time = None
         self._trade_id = None
@@ -158,6 +164,10 @@ class SubCustomerMonthlyBillDetail:
             self.service_type_code = service_type_code
         if resource_type_code is not None:
             self.resource_type_code = resource_type_code
+        if service_type_name is not None:
+            self.service_type_name = service_type_name
+        if resource_type_name is not None:
+            self.resource_type_name = resource_type_name
         if charging_mode is not None:
             self.charging_mode = charging_mode
         if trade_time is not None:
@@ -334,6 +344,50 @@ class SubCustomerMonthlyBillDetail:
         :type: str
         """
         self._resource_type_code = resource_type_code
+
+    @property
+    def service_type_name(self):
+        """Gets the service_type_name of this SubCustomerMonthlyBillDetail.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :return: The service_type_name of this SubCustomerMonthlyBillDetail.
+        :rtype: str
+        """
+        return self._service_type_name
+
+    @service_type_name.setter
+    def service_type_name(self, service_type_name):
+        """Sets the service_type_name of this SubCustomerMonthlyBillDetail.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :param service_type_name: The service_type_name of this SubCustomerMonthlyBillDetail.
+        :type: str
+        """
+        self._service_type_name = service_type_name
+
+    @property
+    def resource_type_name(self):
+        """Gets the resource_type_name of this SubCustomerMonthlyBillDetail.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :return: The resource_type_name of this SubCustomerMonthlyBillDetail.
+        :rtype: str
+        """
+        return self._resource_type_name
+
+    @resource_type_name.setter
+    def resource_type_name(self, resource_type_name):
+        """Sets the resource_type_name of this SubCustomerMonthlyBillDetail.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :param resource_type_name: The resource_type_name of this SubCustomerMonthlyBillDetail.
+        :type: str
+        """
+        self._resource_type_name = resource_type_name
 
     @property
     def charging_mode(self):

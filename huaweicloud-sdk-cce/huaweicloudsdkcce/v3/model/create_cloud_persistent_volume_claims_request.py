@@ -53,7 +53,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
     def namespace(self):
         """Gets the namespace of this CreateCloudPersistentVolumeClaimsRequest.
 
-        Namespace是对一组资源和对象的抽象集合，用来将系统内部的对象划分为不同的项目组或用户组。以小写字母开头，由小写字母、数字、中划线（-）组成，且不能以中划线（-）结尾。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先[[创建Namespace](https://support.huaweicloud.com/api-cce/cce_02_0050.html)](tag:hws)[[创建Namespace](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0050.html)](tag:hws_hk)  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
+        Namespace是对一组资源和对象的抽象集合，用来将系统内部的对象划分为不同的项目组或用户组。以小写字母开头，由小写字母、数字、中划线（-）组成，且不能以中划线（-）结尾。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先[创建Namespace](cce_02_0050.xml)  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
 
         :return: The namespace of this CreateCloudPersistentVolumeClaimsRequest.
         :rtype: str
@@ -64,7 +64,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
     def namespace(self, namespace):
         """Sets the namespace of this CreateCloudPersistentVolumeClaimsRequest.
 
-        Namespace是对一组资源和对象的抽象集合，用来将系统内部的对象划分为不同的项目组或用户组。以小写字母开头，由小写字母、数字、中划线（-）组成，且不能以中划线（-）结尾。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先[[创建Namespace](https://support.huaweicloud.com/api-cce/cce_02_0050.html)](tag:hws)[[创建Namespace](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0050.html)](tag:hws_hk)  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
+        Namespace是对一组资源和对象的抽象集合，用来将系统内部的对象划分为不同的项目组或用户组。以小写字母开头，由小写字母、数字、中划线（-）组成，且不能以中划线（-）结尾。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先[创建Namespace](cce_02_0050.xml)  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
 
         :param namespace: The namespace of this CreateCloudPersistentVolumeClaimsRequest.
         :type: str
@@ -75,7 +75,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
     def x_cluster_id(self):
         """Gets the x_cluster_id of this CreateCloudPersistentVolumeClaimsRequest.
 
-        集群ID，使用**https://Endpoint/uri**这种URL格式时必须指定此参数。获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
+        集群ID，使用**https://Endpoint/uri**这种URL格式时必须指定此参数。获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 
 
         :return: The x_cluster_id of this CreateCloudPersistentVolumeClaimsRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
     def x_cluster_id(self, x_cluster_id):
         """Sets the x_cluster_id of this CreateCloudPersistentVolumeClaimsRequest.
 
-        集群ID，使用**https://Endpoint/uri**这种URL格式时必须指定此参数。获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
+        集群ID，使用**https://Endpoint/uri**这种URL格式时必须指定此参数。获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 
 
         :param x_cluster_id: The x_cluster_id of this CreateCloudPersistentVolumeClaimsRequest.
         :type: str

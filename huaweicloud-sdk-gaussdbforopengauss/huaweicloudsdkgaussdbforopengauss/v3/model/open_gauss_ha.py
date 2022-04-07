@@ -51,7 +51,7 @@ class OpenGaussHa:
     def mode(self):
         """Gets the mode of this OpenGaussHa.
 
-        GaussDB(for openGauss)为分布式模式，取值：enterprise(企业版) ，不区分大小写。
+        GaussDB(for openGauss)为分布式时，取值：enterprise；为集中式时，取值：centralization_standard。不区分大小写。
 
         :return: The mode of this OpenGaussHa.
         :rtype: str
@@ -62,7 +62,7 @@ class OpenGaussHa:
     def mode(self, mode):
         """Sets the mode of this OpenGaussHa.
 
-        GaussDB(for openGauss)为分布式模式，取值：enterprise(企业版) ，不区分大小写。
+        GaussDB(for openGauss)为分布式时，取值：enterprise；为集中式时，取值：centralization_standard。不区分大小写。
 
         :param mode: The mode of this OpenGaussHa.
         :type: str
@@ -73,7 +73,7 @@ class OpenGaussHa:
     def consistency(self):
         """Gets the consistency of this OpenGaussHa.
 
-        指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)，不分区大小写。
+        指定实例一致性类型，当创建分布式模式实例时，该字段值必传，当创建主备模式实例时，该字段值不传。取值范围：strong（强一致性） | eventual(最终一致性)，不分区大小写。
 
         :return: The consistency of this OpenGaussHa.
         :rtype: str
@@ -84,7 +84,7 @@ class OpenGaussHa:
     def consistency(self, consistency):
         """Sets the consistency of this OpenGaussHa.
 
-        指定实例一致性类型，取值范围：strong（强一致性） | eventual(最终一致性)，不分区大小写。
+        指定实例一致性类型，当创建分布式模式实例时，该字段值必传，当创建主备模式实例时，该字段值不传。取值范围：strong（强一致性） | eventual(最终一致性)，不分区大小写。
 
         :param consistency: The consistency of this OpenGaussHa.
         :type: str

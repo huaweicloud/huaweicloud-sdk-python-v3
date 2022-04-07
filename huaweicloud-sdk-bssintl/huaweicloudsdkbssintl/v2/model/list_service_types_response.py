@@ -22,32 +22,59 @@ class ListServiceTypesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'service_types': 'list[ServiceType]'
+        'total_count': 'int',
+        'service_types': 'list[ServiceTypes]'
     }
 
     attribute_map = {
+        'total_count': 'total_count',
         'service_types': 'service_types'
     }
 
-    def __init__(self, service_types=None):
+    def __init__(self, total_count=None, service_types=None):
         """ListServiceTypesResponse - a model defined in huaweicloud sdk"""
         
         super(ListServiceTypesResponse, self).__init__()
 
+        self._total_count = None
         self._service_types = None
         self.discriminator = None
 
+        if total_count is not None:
+            self.total_count = total_count
         if service_types is not None:
             self.service_types = service_types
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListServiceTypesResponse.
+
+        |参数名称：总记录数| |参数约束以及描述：总记录数|
+
+        :return: The total_count of this ListServiceTypesResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListServiceTypesResponse.
+
+        |参数名称：总记录数| |参数约束以及描述：总记录数|
+
+        :param total_count: The total_count of this ListServiceTypesResponse.
+        :type: int
+        """
+        self._total_count = total_count
 
     @property
     def service_types(self):
         """Gets the service_types of this ListServiceTypesResponse.
 
-        |参数名称：返回数据| |参数约束以及描述：返回数据|
+        |参数名称：返回的云服务类型信息| |参数约束以及描述：返回的云服务类型信息|
 
         :return: The service_types of this ListServiceTypesResponse.
-        :rtype: list[ServiceType]
+        :rtype: list[ServiceTypes]
         """
         return self._service_types
 
@@ -55,10 +82,10 @@ class ListServiceTypesResponse(SdkResponse):
     def service_types(self, service_types):
         """Sets the service_types of this ListServiceTypesResponse.
 
-        |参数名称：返回数据| |参数约束以及描述：返回数据|
+        |参数名称：返回的云服务类型信息| |参数约束以及描述：返回的云服务类型信息|
 
         :param service_types: The service_types of this ListServiceTypesResponse.
-        :type: list[ServiceType]
+        :type: list[ServiceTypes]
         """
         self._service_types = service_types
 

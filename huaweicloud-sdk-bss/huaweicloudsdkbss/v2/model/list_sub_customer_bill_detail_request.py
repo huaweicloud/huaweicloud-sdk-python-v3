@@ -430,7 +430,7 @@ class ListSubCustomerBillDetailRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListSubCustomerBillDetailRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。如果华为云伙伴能力中心需要查询客户在精英服务商关联期间的消费，需要携带该字段；否则只能查询该客户在与自己关联期间的消费。 说明： 如果是普通经销商，那么此处可以为空。
+        精英服务商ID。获取方法请参见查询精英服务商列表。 说明： 华为云伙伴能力中心可以查询名下所有子客户消费（包括精英服务商子客户）。如果是普通经销商，那么此处可以为空。
 
         :return: The indirect_partner_id of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -441,7 +441,7 @@ class ListSubCustomerBillDetailRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListSubCustomerBillDetailRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。如果华为云伙伴能力中心需要查询客户在精英服务商关联期间的消费，需要携带该字段；否则只能查询该客户在与自己关联期间的消费。 说明： 如果是普通经销商，那么此处可以为空。
+        精英服务商ID。获取方法请参见查询精英服务商列表。 说明： 华为云伙伴能力中心可以查询名下所有子客户消费（包括精英服务商子客户）。如果是普通经销商，那么此处可以为空。
 
         :param indirect_partner_id: The indirect_partner_id of this ListSubCustomerBillDetailRequest.
         :type: str

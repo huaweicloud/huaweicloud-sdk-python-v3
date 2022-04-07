@@ -28,6 +28,8 @@ class OrderInstanceV2:
         'region_code': 'str',
         'service_type_code': 'str',
         'resource_type_code': 'str',
+        'resource_type_name': 'str',
+        'service_type_name': 'str',
         'resource_spec_code': 'str',
         'project_id': 'str',
         'product_id': 'str',
@@ -46,6 +48,8 @@ class OrderInstanceV2:
         'region_code': 'region_code',
         'service_type_code': 'service_type_code',
         'resource_type_code': 'resource_type_code',
+        'resource_type_name': 'resource_type_name',
+        'service_type_name': 'service_type_name',
         'resource_spec_code': 'resource_spec_code',
         'project_id': 'project_id',
         'product_id': 'product_id',
@@ -57,7 +61,7 @@ class OrderInstanceV2:
         'expire_policy': 'expire_policy'
     }
 
-    def __init__(self, id=None, resource_id=None, resource_name=None, region_code=None, service_type_code=None, resource_type_code=None, resource_spec_code=None, project_id=None, product_id=None, parent_resource_id=None, is_main_resource=None, status=None, effective_time=None, expire_time=None, expire_policy=None):
+    def __init__(self, id=None, resource_id=None, resource_name=None, region_code=None, service_type_code=None, resource_type_code=None, resource_type_name=None, service_type_name=None, resource_spec_code=None, project_id=None, product_id=None, parent_resource_id=None, is_main_resource=None, status=None, effective_time=None, expire_time=None, expire_policy=None):
         """OrderInstanceV2 - a model defined in huaweicloud sdk"""
         
         
@@ -68,6 +72,8 @@ class OrderInstanceV2:
         self._region_code = None
         self._service_type_code = None
         self._resource_type_code = None
+        self._resource_type_name = None
+        self._service_type_name = None
         self._resource_spec_code = None
         self._project_id = None
         self._product_id = None
@@ -91,6 +97,10 @@ class OrderInstanceV2:
             self.service_type_code = service_type_code
         if resource_type_code is not None:
             self.resource_type_code = resource_type_code
+        if resource_type_name is not None:
+            self.resource_type_name = resource_type_name
+        if service_type_name is not None:
+            self.service_type_name = service_type_name
         if resource_spec_code is not None:
             self.resource_spec_code = resource_spec_code
         if project_id is not None:
@@ -241,6 +251,50 @@ class OrderInstanceV2:
         :type: str
         """
         self._resource_type_code = resource_type_code
+
+    @property
+    def resource_type_name(self):
+        """Gets the resource_type_name of this OrderInstanceV2.
+
+        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+
+        :return: The resource_type_name of this OrderInstanceV2.
+        :rtype: str
+        """
+        return self._resource_type_name
+
+    @resource_type_name.setter
+    def resource_type_name(self, resource_type_name):
+        """Sets the resource_type_name of this OrderInstanceV2.
+
+        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+
+        :param resource_type_name: The resource_type_name of this OrderInstanceV2.
+        :type: str
+        """
+        self._resource_type_name = resource_type_name
+
+    @property
+    def service_type_name(self):
+        """Gets the service_type_name of this OrderInstanceV2.
+
+        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+
+        :return: The service_type_name of this OrderInstanceV2.
+        :rtype: str
+        """
+        return self._service_type_name
+
+    @service_type_name.setter
+    def service_type_name(self, service_type_name):
+        """Sets the service_type_name of this OrderInstanceV2.
+
+        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+
+        :param service_type_name: The service_type_name of this OrderInstanceV2.
+        :type: str
+        """
+        self._service_type_name = service_type_name
 
     @property
     def resource_spec_code(self):

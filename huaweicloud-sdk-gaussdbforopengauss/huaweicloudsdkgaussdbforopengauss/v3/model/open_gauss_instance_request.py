@@ -43,7 +43,8 @@ class OpenGaussInstanceRequest:
         'sharding_num': 'int',
         'coordinator_num': 'int',
         'replica_num': 'int',
-        'enable_force_switch': 'bool'
+        'enable_force_switch': 'bool',
+        'solution': 'str'
     }
 
     attribute_map = {
@@ -68,10 +69,11 @@ class OpenGaussInstanceRequest:
         'sharding_num': 'sharding_num',
         'coordinator_num': 'coordinator_num',
         'replica_num': 'replica_num',
-        'enable_force_switch': 'enable_force_switch'
+        'enable_force_switch': 'enable_force_switch',
+        'solution': 'solution'
     }
 
-    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, sharding_num=None, coordinator_num=None, replica_num=None, enable_force_switch=None):
+    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, sharding_num=None, coordinator_num=None, replica_num=None, enable_force_switch=None, solution=None):
         """OpenGaussInstanceRequest - a model defined in huaweicloud sdk"""
         
         
@@ -98,6 +100,7 @@ class OpenGaussInstanceRequest:
         self._coordinator_num = None
         self._replica_num = None
         self._enable_force_switch = None
+        self._solution = None
         self.discriminator = None
 
         self.name = name
@@ -131,6 +134,8 @@ class OpenGaussInstanceRequest:
             self.replica_num = replica_num
         if enable_force_switch is not None:
             self.enable_force_switch = enable_force_switch
+        if solution is not None:
+            self.solution = solution
 
     @property
     def name(self):
@@ -605,6 +610,28 @@ class OpenGaussInstanceRequest:
         :type: bool
         """
         self._enable_force_switch = enable_force_switch
+
+    @property
+    def solution(self):
+        """Gets the solution of this OpenGaussInstanceRequest.
+
+        GaussDB(for openGauss)支持的部署模式，当前可选的有triset。
+
+        :return: The solution of this OpenGaussInstanceRequest.
+        :rtype: str
+        """
+        return self._solution
+
+    @solution.setter
+    def solution(self, solution):
+        """Sets the solution of this OpenGaussInstanceRequest.
+
+        GaussDB(for openGauss)支持的部署模式，当前可选的有triset。
+
+        :param solution: The solution of this OpenGaussInstanceRequest.
+        :type: str
+        """
+        self._solution = solution
 
     def to_dict(self):
         """Returns the model properties as a dict"""

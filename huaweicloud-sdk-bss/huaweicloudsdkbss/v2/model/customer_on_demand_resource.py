@@ -27,6 +27,8 @@ class CustomerOnDemandResource:
         'availability_zone_code': 'str',
         'service_type_code': 'str',
         'resource_type_code': 'str',
+        'service_type_name': 'str',
+        'resource_type_name': 'str',
         'resource_id': 'str',
         'resource_name': 'str',
         'effective_time': 'str',
@@ -43,6 +45,8 @@ class CustomerOnDemandResource:
         'availability_zone_code': 'availability_zone_code',
         'service_type_code': 'service_type_code',
         'resource_type_code': 'resource_type_code',
+        'service_type_name': 'service_type_name',
+        'resource_type_name': 'resource_type_name',
         'resource_id': 'resource_id',
         'resource_name': 'resource_name',
         'effective_time': 'effective_time',
@@ -53,7 +57,7 @@ class CustomerOnDemandResource:
         'product_spec_desc': 'product_spec_desc'
     }
 
-    def __init__(self, customer_id=None, region_code=None, availability_zone_code=None, service_type_code=None, resource_type_code=None, resource_id=None, resource_name=None, effective_time=None, expire_time=None, status=None, resource_spec_code=None, resource_info=None, product_spec_desc=None):
+    def __init__(self, customer_id=None, region_code=None, availability_zone_code=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, resource_id=None, resource_name=None, effective_time=None, expire_time=None, status=None, resource_spec_code=None, resource_info=None, product_spec_desc=None):
         """CustomerOnDemandResource - a model defined in huaweicloud sdk"""
         
         
@@ -63,6 +67,8 @@ class CustomerOnDemandResource:
         self._availability_zone_code = None
         self._service_type_code = None
         self._resource_type_code = None
+        self._service_type_name = None
+        self._resource_type_name = None
         self._resource_id = None
         self._resource_name = None
         self._effective_time = None
@@ -83,6 +89,10 @@ class CustomerOnDemandResource:
             self.service_type_code = service_type_code
         if resource_type_code is not None:
             self.resource_type_code = resource_type_code
+        if service_type_name is not None:
+            self.service_type_name = service_type_name
+        if resource_type_name is not None:
+            self.resource_type_name = resource_type_name
         if resource_id is not None:
             self.resource_id = resource_id
         if resource_name is not None:
@@ -209,6 +219,50 @@ class CustomerOnDemandResource:
         :type: str
         """
         self._resource_type_code = resource_type_code
+
+    @property
+    def service_type_name(self):
+        """Gets the service_type_name of this CustomerOnDemandResource.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :return: The service_type_name of this CustomerOnDemandResource.
+        :rtype: str
+        """
+        return self._service_type_name
+
+    @service_type_name.setter
+    def service_type_name(self, service_type_name):
+        """Sets the service_type_name of this CustomerOnDemandResource.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :param service_type_name: The service_type_name of this CustomerOnDemandResource.
+        :type: str
+        """
+        self._service_type_name = service_type_name
+
+    @property
+    def resource_type_name(self):
+        """Gets the resource_type_name of this CustomerOnDemandResource.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :return: The resource_type_name of this CustomerOnDemandResource.
+        :rtype: str
+        """
+        return self._resource_type_name
+
+    @resource_type_name.setter
+    def resource_type_name(self, resource_type_name):
+        """Sets the resource_type_name of this CustomerOnDemandResource.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :param resource_type_name: The resource_type_name of this CustomerOnDemandResource.
+        :type: str
+        """
+        self._resource_type_name = resource_type_name
 
     @property
     def resource_id(self):

@@ -28,6 +28,8 @@ class OrderRefundInfoV2:
         'customer_id': 'str',
         'resource_type_code': 'str',
         'service_type_code': 'str',
+        'resource_type_name': 'str',
+        'service_type_name': 'str',
         'region_code': 'str',
         'base_order_id': 'str'
     }
@@ -39,11 +41,13 @@ class OrderRefundInfoV2:
         'customer_id': 'customer_id',
         'resource_type_code': 'resource_type_code',
         'service_type_code': 'service_type_code',
+        'resource_type_name': 'resource_type_name',
+        'service_type_name': 'service_type_name',
         'region_code': 'region_code',
         'base_order_id': 'base_order_id'
     }
 
-    def __init__(self, id=None, amount=None, measure_id=None, customer_id=None, resource_type_code=None, service_type_code=None, region_code=None, base_order_id=None):
+    def __init__(self, id=None, amount=None, measure_id=None, customer_id=None, resource_type_code=None, service_type_code=None, resource_type_name=None, service_type_name=None, region_code=None, base_order_id=None):
         """OrderRefundInfoV2 - a model defined in huaweicloud sdk"""
         
         
@@ -54,6 +58,8 @@ class OrderRefundInfoV2:
         self._customer_id = None
         self._resource_type_code = None
         self._service_type_code = None
+        self._resource_type_name = None
+        self._service_type_name = None
         self._region_code = None
         self._base_order_id = None
         self.discriminator = None
@@ -64,6 +70,10 @@ class OrderRefundInfoV2:
         self.customer_id = customer_id
         self.resource_type_code = resource_type_code
         self.service_type_code = service_type_code
+        if resource_type_name is not None:
+            self.resource_type_name = resource_type_name
+        if service_type_name is not None:
+            self.service_type_name = service_type_name
         self.region_code = region_code
         if base_order_id is not None:
             self.base_order_id = base_order_id
@@ -199,6 +209,50 @@ class OrderRefundInfoV2:
         :type: str
         """
         self._service_type_code = service_type_code
+
+    @property
+    def resource_type_name(self):
+        """Gets the resource_type_name of this OrderRefundInfoV2.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :return: The resource_type_name of this OrderRefundInfoV2.
+        :rtype: str
+        """
+        return self._resource_type_name
+
+    @resource_type_name.setter
+    def resource_type_name(self, resource_type_name):
+        """Sets the resource_type_name of this OrderRefundInfoV2.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :param resource_type_name: The resource_type_name of this OrderRefundInfoV2.
+        :type: str
+        """
+        self._resource_type_name = resource_type_name
+
+    @property
+    def service_type_name(self):
+        """Gets the service_type_name of this OrderRefundInfoV2.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :return: The service_type_name of this OrderRefundInfoV2.
+        :rtype: str
+        """
+        return self._service_type_name
+
+    @service_type_name.setter
+    def service_type_name(self, service_type_name):
+        """Sets the service_type_name of this OrderRefundInfoV2.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :param service_type_name: The service_type_name of this OrderRefundInfoV2.
+        :type: str
+        """
+        self._service_type_name = service_type_name
 
     @property
     def region_code(self):

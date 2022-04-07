@@ -42,7 +42,8 @@ class VehicleLicenseResult:
         'traction_mass': 'str',
         'remarks': 'str',
         'inspection_record': 'str',
-        'code_number': 'str'
+        'code_number': 'str',
+        'text_location': 'object'
     }
 
     attribute_map = {
@@ -66,10 +67,11 @@ class VehicleLicenseResult:
         'traction_mass': 'traction_mass',
         'remarks': 'remarks',
         'inspection_record': 'inspection_record',
-        'code_number': 'code_number'
+        'code_number': 'code_number',
+        'text_location': 'text_location'
     }
 
-    def __init__(self, number=None, vehicle_type=None, name=None, address=None, use_character=None, model=None, engine_no=None, vin=None, register_date=None, issue_date=None, issuing_authority=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None):
+    def __init__(self, number=None, vehicle_type=None, name=None, address=None, use_character=None, model=None, engine_no=None, vin=None, register_date=None, issue_date=None, issuing_authority=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None, text_location=None):
         """VehicleLicenseResult - a model defined in huaweicloud sdk"""
         
         
@@ -95,6 +97,7 @@ class VehicleLicenseResult:
         self._remarks = None
         self._inspection_record = None
         self._code_number = None
+        self._text_location = None
         self.discriminator = None
 
         if number is not None:
@@ -139,6 +142,8 @@ class VehicleLicenseResult:
             self.inspection_record = inspection_record
         if code_number is not None:
             self.code_number = code_number
+        if text_location is not None:
+            self.text_location = text_location
 
     @property
     def number(self):
@@ -601,6 +606,28 @@ class VehicleLicenseResult:
         :type: str
         """
         self._code_number = code_number
+
+    @property
+    def text_location(self):
+        """Gets the text_location of this VehicleLicenseResult.
+
+        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。  当“return_text_location”设置为“true”时才返回。 
+
+        :return: The text_location of this VehicleLicenseResult.
+        :rtype: object
+        """
+        return self._text_location
+
+    @text_location.setter
+    def text_location(self, text_location):
+        """Sets the text_location of this VehicleLicenseResult.
+
+        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。  当“return_text_location”设置为“true”时才返回。 
+
+        :param text_location: The text_location of this VehicleLicenseResult.
+        :type: object
+        """
+        self._text_location = text_location
 
     def to_dict(self):
         """Returns the model properties as a dict"""

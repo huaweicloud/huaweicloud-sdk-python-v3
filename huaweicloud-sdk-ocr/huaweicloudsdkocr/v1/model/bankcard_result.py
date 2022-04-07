@@ -27,7 +27,8 @@ class BankcardResult:
         'issue_date': 'str',
         'expiry_date': 'str',
         'type': 'str',
-        'confidence': 'object'
+        'confidence': 'object',
+        'text_location': 'object'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class BankcardResult:
         'issue_date': 'issue_date',
         'expiry_date': 'expiry_date',
         'type': 'type',
-        'confidence': 'confidence'
+        'confidence': 'confidence',
+        'text_location': 'text_location'
     }
 
-    def __init__(self, bank_name=None, card_number=None, issue_date=None, expiry_date=None, type=None, confidence=None):
+    def __init__(self, bank_name=None, card_number=None, issue_date=None, expiry_date=None, type=None, confidence=None, text_location=None):
         """BankcardResult - a model defined in huaweicloud sdk"""
         
         
@@ -50,6 +52,7 @@ class BankcardResult:
         self._expiry_date = None
         self._type = None
         self._confidence = None
+        self._text_location = None
         self.discriminator = None
 
         if bank_name is not None:
@@ -64,6 +67,8 @@ class BankcardResult:
             self.type = type
         if confidence is not None:
             self.confidence = confidence
+        if text_location is not None:
+            self.text_location = text_location
 
     @property
     def bank_name(self):
@@ -196,6 +201,28 @@ class BankcardResult:
         :type: object
         """
         self._confidence = confidence
+
+    @property
+    def text_location(self):
+        """Gets the text_location of this BankcardResult.
+
+        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+
+        :return: The text_location of this BankcardResult.
+        :rtype: object
+        """
+        return self._text_location
+
+    @text_location.setter
+    def text_location(self, text_location):
+        """Sets the text_location of this BankcardResult.
+
+        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+
+        :param text_location: The text_location of this BankcardResult.
+        :type: object
+        """
+        self._text_location = text_location
 
     def to_dict(self):
         """Returns the model properties as a dict"""

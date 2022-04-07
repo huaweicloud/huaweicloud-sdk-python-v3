@@ -9051,6 +9051,69 @@ class MeetingAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def start_meeting_async(self, request):
+        """通过会议ID和密码激活会议
+
+        终端到会管进行鉴权并激活会议，先通过该接口获取会议所在Region信息，该接口需要携带会议主席密码，在会议未召开的情况下，该接口会拉起会议。如果已存在会议，则直接返回在线会议所在Region信息
+
+        :param StartMeetingRequest request
+        :return: StartMeetingResponse
+        """
+        return self.start_meeting_with_http_info(request)
+
+    def start_meeting_with_http_info(self, request):
+        """通过会议ID和密码激活会议
+
+        终端到会管进行鉴权并激活会议，先通过该接口获取会议所在Region信息，该接口需要携带会议主席密码，在会议未召开的情况下，该接口会拉起会议。如果已存在会议，则直接返回在线会议所在Region信息
+
+        :param StartMeetingRequest request
+        :return: StartMeetingResponse
+        """
+
+        all_params = ['start_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/management/conferences/start',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartMeetingResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def stop_meeting_async(self, request):
         """结束会议
 

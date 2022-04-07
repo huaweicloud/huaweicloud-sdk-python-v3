@@ -37,7 +37,9 @@ class ListCustomerBillsFeeRecordsRequest:
         'method': 'str',
         'sub_customer_id': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'bill_date_begin': 'str',
+        'bill_date_end': 'str'
     }
 
     attribute_map = {
@@ -56,10 +58,12 @@ class ListCustomerBillsFeeRecordsRequest:
         'method': 'method',
         'sub_customer_id': 'sub_customer_id',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'bill_date_begin': 'bill_date_begin',
+        'bill_date_end': 'bill_date_end'
     }
 
-    def __init__(self, x_language=None, bill_cycle=None, provider_type=None, service_type_code=None, resource_type_code=None, region_code=None, charging_mode=None, bill_type=None, trade_id=None, enterprise_project_id=None, include_zero_record=None, status=None, method=None, sub_customer_id=None, offset=None, limit=None):
+    def __init__(self, x_language=None, bill_cycle=None, provider_type=None, service_type_code=None, resource_type_code=None, region_code=None, charging_mode=None, bill_type=None, trade_id=None, enterprise_project_id=None, include_zero_record=None, status=None, method=None, sub_customer_id=None, offset=None, limit=None, bill_date_begin=None, bill_date_end=None):
         """ListCustomerBillsFeeRecordsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -80,6 +84,8 @@ class ListCustomerBillsFeeRecordsRequest:
         self._sub_customer_id = None
         self._offset = None
         self._limit = None
+        self._bill_date_begin = None
+        self._bill_date_end = None
         self.discriminator = None
 
         if x_language is not None:
@@ -113,6 +119,10 @@ class ListCustomerBillsFeeRecordsRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if bill_date_begin is not None:
+            self.bill_date_begin = bill_date_begin
+        if bill_date_end is not None:
+            self.bill_date_end = bill_date_end
 
     @property
     def x_language(self):
@@ -465,6 +475,50 @@ class ListCustomerBillsFeeRecordsRequest:
         :type: int
         """
         self._limit = limit
+
+    @property
+    def bill_date_begin(self):
+        """Gets the bill_date_begin of this ListCustomerBillsFeeRecordsRequest.
+
+        查询的流水账单的开始日期，格式为YYYY-MM-DD。 说明： 必须和bill_cycle（即流水账单的所在账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照bill_cycle（即流水账单的所在账期）进行查询。
+
+        :return: The bill_date_begin of this ListCustomerBillsFeeRecordsRequest.
+        :rtype: str
+        """
+        return self._bill_date_begin
+
+    @bill_date_begin.setter
+    def bill_date_begin(self, bill_date_begin):
+        """Sets the bill_date_begin of this ListCustomerBillsFeeRecordsRequest.
+
+        查询的流水账单的开始日期，格式为YYYY-MM-DD。 说明： 必须和bill_cycle（即流水账单的所在账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照bill_cycle（即流水账单的所在账期）进行查询。
+
+        :param bill_date_begin: The bill_date_begin of this ListCustomerBillsFeeRecordsRequest.
+        :type: str
+        """
+        self._bill_date_begin = bill_date_begin
+
+    @property
+    def bill_date_end(self):
+        """Gets the bill_date_end of this ListCustomerBillsFeeRecordsRequest.
+
+        查询的流水账单的结束日期，格式为YYYY-MM-DD。 说明： 必须和bill_cycle（即流水账单的所在账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照bill_cycle（即流水账单的所在账期）进行查询。
+
+        :return: The bill_date_end of this ListCustomerBillsFeeRecordsRequest.
+        :rtype: str
+        """
+        return self._bill_date_end
+
+    @bill_date_end.setter
+    def bill_date_end(self, bill_date_end):
+        """Sets the bill_date_end of this ListCustomerBillsFeeRecordsRequest.
+
+        查询的流水账单的结束日期，格式为YYYY-MM-DD。 说明： 必须和bill_cycle（即流水账单的所在账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照bill_cycle（即流水账单的所在账期）进行查询。
+
+        :param bill_date_end: The bill_date_end of this ListCustomerBillsFeeRecordsRequest.
+        :type: str
+        """
+        self._bill_date_end = bill_date_end
 
     def to_dict(self):
         """Returns the model properties as a dict"""

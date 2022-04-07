@@ -25,21 +25,17 @@ class SendVerificationCodeV2Req:
         'receiver_type': 'int',
         'timeout': 'int',
         'email': 'str',
-        'lang': 'str',
-        'scene': 'int',
-        'customer_id': 'str'
+        'lang': 'str'
     }
 
     attribute_map = {
         'receiver_type': 'receiver_type',
         'timeout': 'timeout',
         'email': 'email',
-        'lang': 'lang',
-        'scene': 'scene',
-        'customer_id': 'customer_id'
+        'lang': 'lang'
     }
 
-    def __init__(self, receiver_type=None, timeout=None, email=None, lang=None, scene=None, customer_id=None):
+    def __init__(self, receiver_type=None, timeout=None, email=None, lang=None):
         """SendVerificationCodeV2Req - a model defined in huaweicloud sdk"""
         
         
@@ -48,8 +44,6 @@ class SendVerificationCodeV2Req:
         self._timeout = None
         self._email = None
         self._lang = None
-        self._scene = None
-        self._customer_id = None
         self.discriminator = None
 
         self.receiver_type = receiver_type
@@ -59,10 +53,6 @@ class SendVerificationCodeV2Req:
             self.email = email
         if lang is not None:
             self.lang = lang
-        if scene is not None:
-            self.scene = scene
-        if customer_id is not None:
-            self.customer_id = customer_id
 
     @property
     def receiver_type(self):
@@ -151,50 +141,6 @@ class SendVerificationCodeV2Req:
         :type: str
         """
         self._lang = lang
-
-    @property
-    def scene(self):
-        """Gets the scene of this SendVerificationCodeV2Req.
-
-        |参数名称：场景| |参数的约束及描述：该参数非必填，29：注册；18：实名认证个人银行卡认证；不填写默认为29|
-
-        :return: The scene of this SendVerificationCodeV2Req.
-        :rtype: int
-        """
-        return self._scene
-
-    @scene.setter
-    def scene(self, scene):
-        """Sets the scene of this SendVerificationCodeV2Req.
-
-        |参数名称：场景| |参数的约束及描述：该参数非必填，29：注册；18：实名认证个人银行卡认证；不填写默认为29|
-
-        :param scene: The scene of this SendVerificationCodeV2Req.
-        :type: int
-        """
-        self._scene = scene
-
-    @property
-    def customer_id(self):
-        """Gets the customer_id of this SendVerificationCodeV2Req.
-
-        |参数名称：客户ID，如果scene=18的时候必填。| |参数约束及描述：客户ID，如果scene=18的时候必填。|
-
-        :return: The customer_id of this SendVerificationCodeV2Req.
-        :rtype: str
-        """
-        return self._customer_id
-
-    @customer_id.setter
-    def customer_id(self, customer_id):
-        """Sets the customer_id of this SendVerificationCodeV2Req.
-
-        |参数名称：客户ID，如果scene=18的时候必填。| |参数约束及描述：客户ID，如果scene=18的时候必填。|
-
-        :param customer_id: The customer_id of this SendVerificationCodeV2Req.
-        :type: str
-        """
-        self._customer_id = customer_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -100,11 +100,15 @@ from huaweicloudsdkcce.v3.model.node_nic_spec import NodeNicSpec
 from huaweicloudsdkcce.v3.model.node_pool import NodePool
 from huaweicloudsdkcce.v3.model.node_pool_condition import NodePoolCondition
 from huaweicloudsdkcce.v3.model.node_pool_metadata import NodePoolMetadata
+from huaweicloudsdkcce.v3.model.node_pool_metadata_update import NodePoolMetadataUpdate
 from huaweicloudsdkcce.v3.model.node_pool_node_autoscaling import NodePoolNodeAutoscaling
 from huaweicloudsdkcce.v3.model.node_pool_spec import NodePoolSpec
+from huaweicloudsdkcce.v3.model.node_pool_spec_update import NodePoolSpecUpdate
 from huaweicloudsdkcce.v3.model.node_pool_status import NodePoolStatus
+from huaweicloudsdkcce.v3.model.node_pool_update import NodePoolUpdate
 from huaweicloudsdkcce.v3.model.node_public_ip import NodePublicIP
 from huaweicloudsdkcce.v3.model.node_spec import NodeSpec
+from huaweicloudsdkcce.v3.model.node_spec_update import NodeSpecUpdate
 from huaweicloudsdkcce.v3.model.node_status import NodeStatus
 from huaweicloudsdkcce.v3.model.persistent_volume_claim import PersistentVolumeClaim
 from huaweicloudsdkcce.v3.model.persistent_volume_claim_metadata import PersistentVolumeClaimMetadata

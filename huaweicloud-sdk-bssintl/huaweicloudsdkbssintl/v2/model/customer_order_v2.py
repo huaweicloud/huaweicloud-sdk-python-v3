@@ -25,6 +25,7 @@ class CustomerOrderV2:
         'order_id': 'str',
         'customer_id': 'str',
         'service_type_code': 'str',
+        'service_type_name': 'str',
         'source_type': 'int',
         'status': 'int',
         'order_type': 'int',
@@ -42,6 +43,7 @@ class CustomerOrderV2:
         'order_id': 'order_id',
         'customer_id': 'customer_id',
         'service_type_code': 'service_type_code',
+        'service_type_name': 'service_type_name',
         'source_type': 'source_type',
         'status': 'status',
         'order_type': 'order_type',
@@ -55,7 +57,7 @@ class CustomerOrderV2:
         'amount_info': 'amount_info'
     }
 
-    def __init__(self, order_id=None, customer_id=None, service_type_code=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None):
+    def __init__(self, order_id=None, customer_id=None, service_type_code=None, service_type_name=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None):
         """CustomerOrderV2 - a model defined in huaweicloud sdk"""
         
         
@@ -63,6 +65,7 @@ class CustomerOrderV2:
         self._order_id = None
         self._customer_id = None
         self._service_type_code = None
+        self._service_type_name = None
         self._source_type = None
         self._status = None
         self._order_type = None
@@ -82,6 +85,8 @@ class CustomerOrderV2:
             self.customer_id = customer_id
         if service_type_code is not None:
             self.service_type_code = service_type_code
+        if service_type_name is not None:
+            self.service_type_name = service_type_name
         if source_type is not None:
             self.source_type = source_type
         if status is not None:
@@ -170,6 +175,28 @@ class CustomerOrderV2:
         :type: str
         """
         self._service_type_code = service_type_code
+
+    @property
+    def service_type_name(self):
+        """Gets the service_type_name of this CustomerOrderV2.
+
+        |参数名称：云服务类型名称| |参数约束及描述：云服务类型名称|
+
+        :return: The service_type_name of this CustomerOrderV2.
+        :rtype: str
+        """
+        return self._service_type_name
+
+    @service_type_name.setter
+    def service_type_name(self, service_type_name):
+        """Sets the service_type_name of this CustomerOrderV2.
+
+        |参数名称：云服务类型名称| |参数约束及描述：云服务类型名称|
+
+        :param service_type_name: The service_type_name of this CustomerOrderV2.
+        :type: str
+        """
+        self._service_type_name = service_type_name
 
     @property
     def source_type(self):

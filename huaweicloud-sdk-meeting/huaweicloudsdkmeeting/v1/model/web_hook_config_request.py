@@ -149,7 +149,7 @@ class WebHookConfigRequest:
     def url(self):
         """Gets the url of this WebHookConfigRequest.
 
-        订阅url
+        订阅url，建议使用HTTPS
 
         :return: The url of this WebHookConfigRequest.
         :rtype: str
@@ -160,7 +160,7 @@ class WebHookConfigRequest:
     def url(self, url):
         """Sets the url of this WebHookConfigRequest.
 
-        订阅url
+        订阅url，建议使用HTTPS
 
         :param url: The url of this WebHookConfigRequest.
         :type: str

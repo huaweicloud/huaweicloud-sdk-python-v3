@@ -47,7 +47,7 @@ class OpenGaussVolume:
     def type(self):
         """Gets the type of this OpenGaussVolume.
 
-        磁盘类型。  仅支持ULTRAHIGH，区分大小写，表示SSD。
+        磁盘类型。  仅支持ULTRAHIGH和ESSD，区分大小写，分别表示SSD和急速云盘。
 
         :return: The type of this OpenGaussVolume.
         :rtype: str
@@ -58,7 +58,7 @@ class OpenGaussVolume:
     def type(self, type):
         """Sets the type of this OpenGaussVolume.
 
-        磁盘类型。  仅支持ULTRAHIGH，区分大小写，表示SSD。
+        磁盘类型。  仅支持ULTRAHIGH和ESSD，区分大小写，分别表示SSD和急速云盘。
 
         :param type: The type of this OpenGaussVolume.
         :type: str

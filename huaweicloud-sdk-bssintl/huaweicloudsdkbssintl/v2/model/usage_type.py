@@ -25,17 +25,21 @@ class UsageType:
         'code': 'str',
         'name': 'str',
         'resource_type_code': 'str',
-        'service_type_code': 'str'
+        'service_type_code': 'str',
+        'resource_type_name': 'str',
+        'service_type_name': 'str'
     }
 
     attribute_map = {
         'code': 'code',
         'name': 'name',
         'resource_type_code': 'resource_type_code',
-        'service_type_code': 'service_type_code'
+        'service_type_code': 'service_type_code',
+        'resource_type_name': 'resource_type_name',
+        'service_type_name': 'service_type_name'
     }
 
-    def __init__(self, code=None, name=None, resource_type_code=None, service_type_code=None):
+    def __init__(self, code=None, name=None, resource_type_code=None, service_type_code=None, resource_type_name=None, service_type_name=None):
         """UsageType - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +48,8 @@ class UsageType:
         self._name = None
         self._resource_type_code = None
         self._service_type_code = None
+        self._resource_type_name = None
+        self._service_type_name = None
         self.discriminator = None
 
         if code is not None:
@@ -54,6 +60,10 @@ class UsageType:
             self.resource_type_code = resource_type_code
         if service_type_code is not None:
             self.service_type_code = service_type_code
+        if resource_type_name is not None:
+            self.resource_type_name = resource_type_name
+        if service_type_name is not None:
+            self.service_type_name = service_type_name
 
     @property
     def code(self):
@@ -142,6 +152,50 @@ class UsageType:
         :type: str
         """
         self._service_type_code = service_type_code
+
+    @property
+    def resource_type_name(self):
+        """Gets the resource_type_name of this UsageType.
+
+        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+
+        :return: The resource_type_name of this UsageType.
+        :rtype: str
+        """
+        return self._resource_type_name
+
+    @resource_type_name.setter
+    def resource_type_name(self, resource_type_name):
+        """Sets the resource_type_name of this UsageType.
+
+        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+
+        :param resource_type_name: The resource_type_name of this UsageType.
+        :type: str
+        """
+        self._resource_type_name = resource_type_name
+
+    @property
+    def service_type_name(self):
+        """Gets the service_type_name of this UsageType.
+
+        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+
+        :return: The service_type_name of this UsageType.
+        :rtype: str
+        """
+        return self._service_type_name
+
+    @service_type_name.setter
+    def service_type_name(self, service_type_name):
+        """Sets the service_type_name of this UsageType.
+
+        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+
+        :param service_type_name: The service_type_name of this UsageType.
+        :type: str
+        """
+        self._service_type_name = service_type_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

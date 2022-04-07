@@ -51,7 +51,7 @@ class GaussDBforopenGaussAsyncClient(Client):
     def create_instance_async(self, request):
         """创建数据库实例
 
-        创建数据库实例
+        创建数据库企业版和集中式实例
 
         :param CreateInstanceRequest request
         :return: CreateInstanceResponse
@@ -61,7 +61,7 @@ class GaussDBforopenGaussAsyncClient(Client):
     def create_instance_with_http_info(self, request):
         """创建数据库实例
 
-        创建数据库实例
+        创建数据库企业版和集中式实例
 
         :param CreateInstanceRequest request
         :return: CreateInstanceResponse
@@ -178,6 +178,209 @@ class GaussDBforopenGaussAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_configurations_async(self, request):
+        """获取参数模板列表
+
+        获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
+
+        :param ListConfigurationsRequest request
+        :return: ListConfigurationsResponse
+        """
+        return self.list_configurations_with_http_info(request)
+
+    def list_configurations_with_http_info(self, request):
+        """获取参数模板列表
+
+        获取参数模板列表，包括所有数据库的默认参数模板和用户创建的参数模板。
+
+        :param ListConfigurationsRequest request
+        :return: ListConfigurationsResponse
+        """
+
+        all_params = ['x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/configurations',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListConfigurationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_datastores_async(self, request):
+        """查询数据库引擎的版本
+
+        查询指定数据库引擎对应的版本信息。
+
+        :param ListDatastoresRequest request
+        :return: ListDatastoresResponse
+        """
+        return self.list_datastores_with_http_info(request)
+
+    def list_datastores_with_http_info(self, request):
+        """查询数据库引擎的版本
+
+        查询指定数据库引擎对应的版本信息。
+
+        :param ListDatastoresRequest request
+        :return: ListDatastoresResponse
+        """
+
+        all_params = ['x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/datastore/versions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListDatastoresResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_flavors_async(self, request):
+        """查询数据库规格
+
+        查询指定数据库引擎对应的规格信息。
+
+        :param ListFlavorsRequest request
+        :return: ListFlavorsResponse
+        """
+        return self.list_flavors_with_http_info(request)
+
+    def list_flavors_with_http_info(self, request):
+        """查询数据库规格
+
+        查询指定数据库引擎对应的规格信息。
+
+        :param ListFlavorsRequest request
+        :return: ListFlavorsResponse
+        """
+
+        all_params = ['x_language', 'version', 'spec_code', 'ha_mode', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+        if 'spec_code' in local_var_params:
+            query_params.append(('spec_code', local_var_params['spec_code']))
+        if 'ha_mode' in local_var_params:
+            query_params.append(('ha_mode', local_var_params['ha_mode']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/flavors',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFlavorsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_instances_async(self, request):
         """查询数据库实例列表/查询实例详情
 
@@ -254,6 +457,73 @@ class GaussDBforopenGaussAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_storage_types_async(self, request):
+        """查询数据库磁盘类型
+
+        查询指定数据库引擎对应的磁盘类型。
+
+        :param ListStorageTypesRequest request
+        :return: ListStorageTypesResponse
+        """
+        return self.list_storage_types_with_http_info(request)
+
+    def list_storage_types_with_http_info(self, request):
+        """查询数据库磁盘类型
+
+        查询指定数据库引擎对应的磁盘类型。
+
+        :param ListStorageTypesRequest request
+        :return: ListStorageTypesResponse
+        """
+
+        all_params = ['version', 'x_language', 'ha_mode']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+        if 'ha_mode' in local_var_params:
+            query_params.append(('ha_mode', local_var_params['ha_mode']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/storage-type',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListStorageTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

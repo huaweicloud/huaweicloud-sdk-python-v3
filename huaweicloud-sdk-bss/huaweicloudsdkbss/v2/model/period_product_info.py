@@ -201,7 +201,7 @@ class PeriodProductInfo:
     def available_zone(self):
         """Gets the available_zone of this PeriodProductInfo.
 
-        可用区标识。
+        可用区标识，例如：“cn-north-1a”。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。
 
         :return: The available_zone of this PeriodProductInfo.
         :rtype: str
@@ -212,7 +212,7 @@ class PeriodProductInfo:
     def available_zone(self, available_zone):
         """Sets the available_zone of this PeriodProductInfo.
 
-        可用区标识。
+        可用区标识，例如：“cn-north-1a”。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。
 
         :param available_zone: The available_zone of this PeriodProductInfo.
         :type: str

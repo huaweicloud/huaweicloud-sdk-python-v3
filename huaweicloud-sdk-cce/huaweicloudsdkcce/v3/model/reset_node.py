@@ -47,7 +47,7 @@ class ResetNode:
     def node_id(self):
         """Gets the node_id of this ResetNode.
 
-        节点ID，获取方式请参见[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)
+        节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :return: The node_id of this ResetNode.
         :rtype: str
@@ -58,7 +58,7 @@ class ResetNode:
     def node_id(self, node_id):
         """Sets the node_id of this ResetNode.
 
-        节点ID，获取方式请参见[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)
+        节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param node_id: The node_id of this ResetNode.
         :type: str

@@ -80,7 +80,7 @@ class ListIncentiveDiscountPoliciesRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListIncentiveDiscountPoliciesRequest.
 
-        云服务类型列表。获取方法请参见查询云服务类型列表。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :return: The service_type_code of this ListIncentiveDiscountPoliciesRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class ListIncentiveDiscountPoliciesRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListIncentiveDiscountPoliciesRequest.
 
-        云服务类型列表。获取方法请参见查询云服务类型列表。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this ListIncentiveDiscountPoliciesRequest.
         :type: str

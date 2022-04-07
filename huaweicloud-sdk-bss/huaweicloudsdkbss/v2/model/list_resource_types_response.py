@@ -22,32 +22,59 @@ class ListResourceTypesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'resource_types': 'list[ResourceType]'
+        'total_count': 'int',
+        'resource_types': 'list[ResourceTypes]'
     }
 
     attribute_map = {
+        'total_count': 'total_count',
         'resource_types': 'resource_types'
     }
 
-    def __init__(self, resource_types=None):
+    def __init__(self, total_count=None, resource_types=None):
         """ListResourceTypesResponse - a model defined in huaweicloud sdk"""
         
         super(ListResourceTypesResponse, self).__init__()
 
+        self._total_count = None
         self._resource_types = None
         self.discriminator = None
 
+        if total_count is not None:
+            self.total_count = total_count
         if resource_types is not None:
             self.resource_types = resource_types
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListResourceTypesResponse.
+
+        总数。
+
+        :return: The total_count of this ListResourceTypesResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListResourceTypesResponse.
+
+        总数。
+
+        :param total_count: The total_count of this ListResourceTypesResponse.
+        :type: int
+        """
+        self._total_count = total_count
 
     @property
     def resource_types(self):
         """Gets the resource_types of this ListResourceTypesResponse.
 
-        资源类型信息，具体参见表3。
+        资源类型信息列表，具体请参见表3。
 
         :return: The resource_types of this ListResourceTypesResponse.
-        :rtype: list[ResourceType]
+        :rtype: list[ResourceTypes]
         """
         return self._resource_types
 
@@ -55,10 +82,10 @@ class ListResourceTypesResponse(SdkResponse):
     def resource_types(self, resource_types):
         """Sets the resource_types of this ListResourceTypesResponse.
 
-        资源类型信息，具体参见表3。
+        资源类型信息列表，具体请参见表3。
 
         :param resource_types: The resource_types of this ListResourceTypesResponse.
-        :type: list[ResourceType]
+        :type: list[ResourceTypes]
         """
         self._resource_types = resource_types
 

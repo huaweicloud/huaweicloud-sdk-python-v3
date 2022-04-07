@@ -24,10 +24,10 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     openapi_types = {
         'x_language': 'str',
         'shared_month': 'str',
-        'charging_mode': 'int',
         'service_type_code': 'str',
         'resource_type_code': 'str',
         'region_code': 'str',
+        'charging_mode': 'int',
         'bill_type': 'int',
         'offset': 'int',
         'limit': 'int',
@@ -41,10 +41,10 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     attribute_map = {
         'x_language': 'X-Language',
         'shared_month': 'shared_month',
-        'charging_mode': 'charging_mode',
         'service_type_code': 'service_type_code',
         'resource_type_code': 'resource_type_code',
         'region_code': 'region_code',
+        'charging_mode': 'charging_mode',
         'bill_type': 'bill_type',
         'offset': 'offset',
         'limit': 'limit',
@@ -55,17 +55,17 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         'sub_customer_id': 'sub_customer_id'
     }
 
-    def __init__(self, x_language=None, shared_month=None, charging_mode=None, service_type_code=None, resource_type_code=None, region_code=None, bill_type=None, offset=None, limit=None, resource_id=None, resource_name=None, enterprise_project_id=None, method=None, sub_customer_id=None):
+    def __init__(self, x_language=None, shared_month=None, service_type_code=None, resource_type_code=None, region_code=None, charging_mode=None, bill_type=None, offset=None, limit=None, resource_id=None, resource_name=None, enterprise_project_id=None, method=None, sub_customer_id=None):
         """ListCustomerBillsMonthlyBreakDownRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._x_language = None
         self._shared_month = None
-        self._charging_mode = None
         self._service_type_code = None
         self._resource_type_code = None
         self._region_code = None
+        self._charging_mode = None
         self._bill_type = None
         self._offset = None
         self._limit = None
@@ -79,14 +79,14 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         if x_language is not None:
             self.x_language = x_language
         self.shared_month = shared_month
-        if charging_mode is not None:
-            self.charging_mode = charging_mode
         if service_type_code is not None:
             self.service_type_code = service_type_code
         if resource_type_code is not None:
             self.resource_type_code = resource_type_code
         if region_code is not None:
             self.region_code = region_code
+        if charging_mode is not None:
+            self.charging_mode = charging_mode
         if bill_type is not None:
             self.bill_type = bill_type
         if offset is not None:
@@ -147,28 +147,6 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         :type: str
         """
         self._shared_month = shared_month
-
-    @property
-    def charging_mode(self):
-        """Gets the charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
-
-        计费模式。1：包年/包月3：按需10：预留实例
-
-        :return: The charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
-        :rtype: int
-        """
-        return self._charging_mode
-
-    @charging_mode.setter
-    def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
-
-        计费模式。1：包年/包月3：按需10：预留实例
-
-        :param charging_mode: The charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
-        :type: int
-        """
-        self._charging_mode = charging_mode
 
     @property
     def service_type_code(self):
@@ -235,6 +213,28 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         :type: str
         """
         self._region_code = region_code
+
+    @property
+    def charging_mode(self):
+        """Gets the charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
+
+        计费模式。1：包年/包月3：按需10：预留实例
+
+        :return: The charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
+        :rtype: int
+        """
+        return self._charging_mode
+
+    @charging_mode.setter
+    def charging_mode(self, charging_mode):
+        """Sets the charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
+
+        计费模式。1：包年/包月3：按需10：预留实例
+
+        :param charging_mode: The charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
+        :type: int
+        """
+        self._charging_mode = charging_mode
 
     @property
     def bill_type(self):

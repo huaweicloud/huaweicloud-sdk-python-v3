@@ -32,6 +32,7 @@ class FreeResourcePackageV3:
         'expire_time': 'str',
         'status': 'int',
         'service_type_code': 'str',
+        'service_type_name': 'str',
         'region_code': 'str',
         'source_type': 'int',
         'bundle_type': 'str',
@@ -50,6 +51,7 @@ class FreeResourcePackageV3:
         'expire_time': 'expire_time',
         'status': 'status',
         'service_type_code': 'service_type_code',
+        'service_type_name': 'service_type_name',
         'region_code': 'region_code',
         'source_type': 'source_type',
         'bundle_type': 'bundle_type',
@@ -57,7 +59,7 @@ class FreeResourcePackageV3:
         'free_resources': 'free_resources'
     }
 
-    def __init__(self, order_instance_id=None, order_id=None, product_id=None, product_name=None, enterprise_project_id=None, enterprise_project_scope=None, effective_time=None, expire_time=None, status=None, service_type_code=None, region_code=None, source_type=None, bundle_type=None, quota_reuse_mode=None, free_resources=None):
+    def __init__(self, order_instance_id=None, order_id=None, product_id=None, product_name=None, enterprise_project_id=None, enterprise_project_scope=None, effective_time=None, expire_time=None, status=None, service_type_code=None, service_type_name=None, region_code=None, source_type=None, bundle_type=None, quota_reuse_mode=None, free_resources=None):
         """FreeResourcePackageV3 - a model defined in huaweicloud sdk"""
         
         
@@ -72,6 +74,7 @@ class FreeResourcePackageV3:
         self._expire_time = None
         self._status = None
         self._service_type_code = None
+        self._service_type_name = None
         self._region_code = None
         self._source_type = None
         self._bundle_type = None
@@ -99,6 +102,8 @@ class FreeResourcePackageV3:
             self.status = status
         if service_type_code is not None:
             self.service_type_code = service_type_code
+        if service_type_name is not None:
+            self.service_type_name = service_type_name
         if region_code is not None:
             self.region_code = region_code
         if source_type is not None:
@@ -329,6 +334,28 @@ class FreeResourcePackageV3:
         :type: str
         """
         self._service_type_code = service_type_code
+
+    @property
+    def service_type_name(self):
+        """Gets the service_type_name of this FreeResourcePackageV3.
+
+        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+
+        :return: The service_type_name of this FreeResourcePackageV3.
+        :rtype: str
+        """
+        return self._service_type_name
+
+    @service_type_name.setter
+    def service_type_name(self, service_type_name):
+        """Sets the service_type_name of this FreeResourcePackageV3.
+
+        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+
+        :param service_type_name: The service_type_name of this FreeResourcePackageV3.
+        :type: str
+        """
+        self._service_type_name = service_type_name
 
     @property
     def region_code(self):

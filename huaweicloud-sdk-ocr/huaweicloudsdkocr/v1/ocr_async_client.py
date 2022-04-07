@@ -1875,6 +1875,69 @@ class OcrAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def recognize_waybill_electronic_async(self, request):
+        """电子面单识别
+
+        识别用户上传的韵达电子面单图片中的文字内容，并将识别的结果以json格式返回给用户。
+
+        :param RecognizeWaybillElectronicRequest request
+        :return: RecognizeWaybillElectronicResponse
+        """
+        return self.recognize_waybill_electronic_with_http_info(request)
+
+    def recognize_waybill_electronic_with_http_info(self, request):
+        """电子面单识别
+
+        识别用户上传的韵达电子面单图片中的文字内容，并将识别的结果以json格式返回给用户。
+
+        :param RecognizeWaybillElectronicRequest request
+        :return: RecognizeWaybillElectronicResponse
+        """
+
+        all_params = ['waybill_electronic_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/waybill-electronic',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeWaybillElectronicResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def recognize_web_image_async(self, request):
         """网络图片识别
 

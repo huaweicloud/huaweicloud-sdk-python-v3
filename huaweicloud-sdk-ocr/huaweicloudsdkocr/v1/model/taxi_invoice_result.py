@@ -41,7 +41,8 @@ class TaxiInvoiceResult:
         'fuel_oil_surcharge': 'str',
         'call_service_surcharge': 'str',
         'total': 'str',
-        'confidence': 'object'
+        'confidence': 'object',
+        'text_location': 'object'
     }
 
     attribute_map = {
@@ -64,10 +65,11 @@ class TaxiInvoiceResult:
         'fuel_oil_surcharge': 'fuel_oil_surcharge',
         'call_service_surcharge': 'call_service_surcharge',
         'total': 'total',
-        'confidence': 'confidence'
+        'confidence': 'confidence',
+        'text_location': 'text_location'
     }
 
-    def __init__(self, location=None, code=None, number=None, phone_number=None, company=None, taxi_number=None, certificate_number=None, identification_number=None, date=None, boarding_time=None, alighting_time=None, time=None, unit_price=None, distance=None, waiting_time=None, fare=None, fuel_oil_surcharge=None, call_service_surcharge=None, total=None, confidence=None):
+    def __init__(self, location=None, code=None, number=None, phone_number=None, company=None, taxi_number=None, certificate_number=None, identification_number=None, date=None, boarding_time=None, alighting_time=None, time=None, unit_price=None, distance=None, waiting_time=None, fare=None, fuel_oil_surcharge=None, call_service_surcharge=None, total=None, confidence=None, text_location=None):
         """TaxiInvoiceResult - a model defined in huaweicloud sdk"""
         
         
@@ -92,6 +94,7 @@ class TaxiInvoiceResult:
         self._call_service_surcharge = None
         self._total = None
         self._confidence = None
+        self._text_location = None
         self.discriminator = None
 
         if location is not None:
@@ -134,6 +137,8 @@ class TaxiInvoiceResult:
             self.total = total
         if confidence is not None:
             self.confidence = confidence
+        if text_location is not None:
+            self.text_location = text_location
 
     @property
     def location(self):
@@ -574,6 +579,28 @@ class TaxiInvoiceResult:
         :type: object
         """
         self._confidence = confidence
+
+    @property
+    def text_location(self):
+        """Gets the text_location of this TaxiInvoiceResult.
+
+        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+
+        :return: The text_location of this TaxiInvoiceResult.
+        :rtype: object
+        """
+        return self._text_location
+
+    @text_location.setter
+    def text_location(self, text_location):
+        """Sets the text_location of this TaxiInvoiceResult.
+
+        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+
+        :param text_location: The text_location of this TaxiInvoiceResult.
+        :type: object
+        """
+        self._text_location = text_location
 
     def to_dict(self):
         """Returns the model properties as a dict"""

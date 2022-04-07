@@ -170,6 +170,7 @@ from huaweicloudsdkmeeting.v1.model.mod_pwd_req_dto import ModPwdReqDTO
 from huaweicloudsdkmeeting.v1.model.mod_resource_dto import ModResourceDTO
 from huaweicloudsdkmeeting.v1.model.mod_user_dto import ModUserDTO
 from huaweicloudsdkmeeting.v1.model.mod_vmr_dto import ModVmrDTO
+from huaweicloudsdkmeeting.v1.model.multi_pic_display_do import MultiPicDisplayDO
 from huaweicloudsdkmeeting.v1.model.mute_meeting_request import MuteMeetingRequest
 from huaweicloudsdkmeeting.v1.model.mute_meeting_response import MuteMeetingResponse
 from huaweicloudsdkmeeting.v1.model.mute_participant_request import MuteParticipantRequest
@@ -194,6 +195,7 @@ from huaweicloudsdkmeeting.v1.model.pages import Pages
 from huaweicloudsdkmeeting.v1.model.part_attendee import PartAttendee
 from huaweicloudsdkmeeting.v1.model.participant_info import ParticipantInfo
 from huaweicloudsdkmeeting.v1.model.password_entry import PasswordEntry
+from huaweicloudsdkmeeting.v1.model.pic_info_notify import PicInfoNotify
 from huaweicloudsdkmeeting.v1.model.pic_layout_info import PicLayoutInfo
 from huaweicloudsdkmeeting.v1.model.program_item_request_base import ProgramItemRequestBase
 from huaweicloudsdkmeeting.v1.model.program_item_response_base import ProgramItemResponseBase
@@ -430,6 +432,9 @@ from huaweicloudsdkmeeting.v1.model.show_webinar_request import ShowWebinarReque
 from huaweicloudsdkmeeting.v1.model.show_webinar_response import ShowWebinarResponse
 from huaweicloudsdkmeeting.v1.model.slide_verify_code_check_dto import SlideVerifyCodeCheckDTO
 from huaweicloudsdkmeeting.v1.model.slide_verify_code_send_dto import SlideVerifyCodeSendDTO
+from huaweicloudsdkmeeting.v1.model.start_meeting_request import StartMeetingRequest
+from huaweicloudsdkmeeting.v1.model.start_meeting_response import StartMeetingResponse
+from huaweicloudsdkmeeting.v1.model.start_request import StartRequest
 from huaweicloudsdkmeeting.v1.model.statistic_conference_data_item import StatisticConferenceDataItem
 from huaweicloudsdkmeeting.v1.model.statistic_participate_data_item import StatisticParticipateDataItem
 from huaweicloudsdkmeeting.v1.model.statistic_resource_data_item import StatisticResourceDataItem

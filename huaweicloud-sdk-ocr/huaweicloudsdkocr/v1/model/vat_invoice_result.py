@@ -27,6 +27,7 @@ class VatInvoiceResult:
         'attribution': 'str',
         'supervision_seal': 'list[str]',
         'code': 'str',
+        'print_code': 'str',
         'machine_number': 'str',
         'print_number': 'str',
         'check_code': 'str',
@@ -61,6 +62,7 @@ class VatInvoiceResult:
         'attribution': 'attribution',
         'supervision_seal': 'supervision_seal',
         'code': 'code',
+        'print_code': 'print_code',
         'machine_number': 'machine_number',
         'print_number': 'print_number',
         'check_code': 'check_code',
@@ -89,7 +91,7 @@ class VatInvoiceResult:
         'text_location': 'text_location'
     }
 
-    def __init__(self, type=None, serial_number=None, attribution=None, supervision_seal=None, code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, confidence=None, text_location=None):
+    def __init__(self, type=None, serial_number=None, attribution=None, supervision_seal=None, code=None, print_code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, confidence=None, text_location=None):
         """VatInvoiceResult - a model defined in huaweicloud sdk"""
         
         
@@ -99,6 +101,7 @@ class VatInvoiceResult:
         self._attribution = None
         self._supervision_seal = None
         self._code = None
+        self._print_code = None
         self._machine_number = None
         self._print_number = None
         self._check_code = None
@@ -137,6 +140,8 @@ class VatInvoiceResult:
             self.supervision_seal = supervision_seal
         if code is not None:
             self.code = code
+        if print_code is not None:
+            self.print_code = print_code
         if machine_number is not None:
             self.machine_number = machine_number
         if print_number is not None:
@@ -299,6 +304,28 @@ class VatInvoiceResult:
         :type: str
         """
         self._code = code
+
+    @property
+    def print_code(self):
+        """Gets the print_code of this VatInvoiceResult.
+
+        打印发票代码。普通发票和专用发票在右上角，电子发票、通行费发票、卷票无此字段。 
+
+        :return: The print_code of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._print_code
+
+    @print_code.setter
+    def print_code(self, print_code):
+        """Sets the print_code of this VatInvoiceResult.
+
+        打印发票代码。普通发票和专用发票在右上角，电子发票、通行费发票、卷票无此字段。 
+
+        :param print_code: The print_code of this VatInvoiceResult.
+        :type: str
+        """
+        self._print_code = print_code
 
     @property
     def machine_number(self):

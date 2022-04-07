@@ -65,7 +65,7 @@ class ConferenceInfo:
         'conf_mode': 'str',
         'schedule_vmr': 'bool',
         'concurrent_participants': 'int',
-        'pic_display': 'object',
+        'pic_display': 'MultiPicDisplayDO',
         'sub_confs': 'list[CycleSubConf]',
         'cycle_sub_conf_id': 'str'
     }
@@ -1211,10 +1211,9 @@ class ConferenceInfo:
     def pic_display(self):
         """Gets the pic_display of this ConferenceInfo.
 
-        当前多画面信息。
 
         :return: The pic_display of this ConferenceInfo.
-        :rtype: object
+        :rtype: MultiPicDisplayDO
         """
         return self._pic_display
 
@@ -1222,10 +1221,9 @@ class ConferenceInfo:
     def pic_display(self, pic_display):
         """Sets the pic_display of this ConferenceInfo.
 
-        当前多画面信息。
 
         :param pic_display: The pic_display of this ConferenceInfo.
-        :type: object
+        :type: MultiPicDisplayDO
         """
         self._pic_display = pic_display
 

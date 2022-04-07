@@ -306,6 +306,140 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_resource_types_async(self, request):
+        """查询资源类型列表(新)
+
+        功能描述：客户在客户自建平台查询资源类型的列表。
+
+        :param ListResourceTypesRequest request
+        :return: ListResourceTypesResponse
+        """
+        return self.list_resource_types_with_http_info(request)
+
+    def list_resource_types_with_http_info(self, request):
+        """查询资源类型列表(新)
+
+        功能描述：客户在客户自建平台查询资源类型的列表。
+
+        :param ListResourceTypesRequest request
+        :return: ListResourceTypesResponse
+        """
+
+        all_params = ['x_language', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/products/resource-types',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListResourceTypesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_service_types_async(self, request):
+        """查询云服务类型列表(新)
+
+        功能描述：伙伴在伙伴销售平台查询云服务类型的列表。
+
+        :param ListServiceTypesRequest request
+        :return: ListServiceTypesResponse
+        """
+        return self.list_service_types_with_http_info(request)
+
+    def list_service_types_with_http_info(self, request):
+        """查询云服务类型列表(新)
+
+        功能描述：伙伴在伙伴销售平台查询云服务类型的列表。
+
+        :param ListServiceTypesRequest request
+        :return: ListServiceTypesResponse
+        """
+
+        all_params = ['x_language', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/products/service-types',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListServiceTypesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def change_enterprise_realname_authentication_async(self, request):
         """申请实名认证变更
 
@@ -1157,71 +1291,6 @@ class BssintlAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
-    def list_resource_types_async(self, request):
-        """查询资源类型列表
-
-        功能描述：客户在客户自建平台查询资源类型的列表。
-
-        :param ListResourceTypesRequest request
-        :return: ListResourceTypesResponse
-        """
-        return self.list_resource_types_with_http_info(request)
-
-    def list_resource_types_with_http_info(self, request):
-        """查询资源类型列表
-
-        功能描述：客户在客户自建平台查询资源类型的列表。
-
-        :param ListResourceTypesRequest request
-        :return: ListResourceTypesResponse
-        """
-
-        all_params = ['x_language', 'resource_type_code']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'resource_type_code' in local_var_params:
-            query_params.append(('resource_type_code', local_var_params['resource_type_code']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bases/resource-types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListResourceTypesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
     def list_service_resources_async(self, request):
         """根据云服务类型查询资源列表
 
@@ -1285,71 +1354,6 @@ class BssintlAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListServiceResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_service_types_async(self, request):
-        """查询云服务类型列表
-
-        功能描述：伙伴在伙伴销售平台查询云服务类型的列表。
-
-        :param ListServiceTypesRequest request
-        :return: ListServiceTypesResponse
-        """
-        return self.list_service_types_with_http_info(request)
-
-    def list_service_types_with_http_info(self, request):
-        """查询云服务类型列表
-
-        功能描述：伙伴在伙伴销售平台查询云服务类型的列表。
-
-        :param ListServiceTypesRequest request
-        :return: ListServiceTypesResponse
-        """
-
-        all_params = ['x_language', 'service_type_code']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'service_type_code' in local_var_params:
-            query_params.append(('service_type_code', local_var_params['service_type_code']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bases/service-types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListServiceTypesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2418,69 +2422,6 @@ class BssintlAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCustomerOrdersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def list_order_coupons_by_order_id_async(self, request):
-        """查询订单可用优惠券
-
-        功能描述：客户在客户自建平台查看订单可用的优惠券列表
-
-        :param ListOrderCouponsByOrderIdRequest request
-        :return: ListOrderCouponsByOrderIdResponse
-        """
-        return self.list_order_coupons_by_order_id_with_http_info(request)
-
-    def list_order_coupons_by_order_id_with_http_info(self, request):
-        """查询订单可用优惠券
-
-        功能描述：客户在客户自建平台查看订单可用的优惠券列表
-
-        :param ListOrderCouponsByOrderIdRequest request
-        :return: ListOrderCouponsByOrderIdResponse
-        """
-
-        all_params = ['order_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'order_id' in local_var_params:
-            query_params.append(('order_id', local_var_params['order_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/orders/customer-orders/order-coupons',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListOrderCouponsByOrderIdResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

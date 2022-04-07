@@ -22,50 +22,23 @@ class DownUpTimeForSimCardReq:
     sensitive_list = []
 
     openapi_types = {
-        'price_plan_list': 'list[SimPricePlanInfoVO]',
         'down_up_switch': 'int'
     }
 
     attribute_map = {
-        'price_plan_list': 'price_plan_list',
         'down_up_switch': 'down_up_switch'
     }
 
-    def __init__(self, price_plan_list=None, down_up_switch=None):
+    def __init__(self, down_up_switch=None):
         """DownUpTimeForSimCardReq - a model defined in huaweicloud sdk"""
         
         
 
-        self._price_plan_list = None
         self._down_up_switch = None
         self.discriminator = None
 
-        if price_plan_list is not None:
-            self.price_plan_list = price_plan_list
         if down_up_switch is not None:
             self.down_up_switch = down_up_switch
-
-    @property
-    def price_plan_list(self):
-        """Gets the price_plan_list of this DownUpTimeForSimCardReq.
-
-        套餐列表
-
-        :return: The price_plan_list of this DownUpTimeForSimCardReq.
-        :rtype: list[SimPricePlanInfoVO]
-        """
-        return self._price_plan_list
-
-    @price_plan_list.setter
-    def price_plan_list(self, price_plan_list):
-        """Sets the price_plan_list of this DownUpTimeForSimCardReq.
-
-        套餐列表
-
-        :param price_plan_list: The price_plan_list of this DownUpTimeForSimCardReq.
-        :type: list[SimPricePlanInfoVO]
-        """
-        self._price_plan_list = price_plan_list
 
     @property
     def down_up_switch(self):

@@ -29,8 +29,7 @@ class ApplyIndividualRealnameAuthsReq:
         'name': 'str',
         'verified_number': 'str',
         'change_type': 'int',
-        'xaccount_type': 'str',
-        'bank_card_info': 'BankCardInfoV2'
+        'xaccount_type': 'str'
     }
 
     attribute_map = {
@@ -41,11 +40,10 @@ class ApplyIndividualRealnameAuthsReq:
         'name': 'name',
         'verified_number': 'verified_number',
         'change_type': 'change_type',
-        'xaccount_type': 'xaccount_type',
-        'bank_card_info': 'bank_card_info'
+        'xaccount_type': 'xaccount_type'
     }
 
-    def __init__(self, customer_id=None, identify_type=None, verified_type=None, verified_file_url=None, name=None, verified_number=None, change_type=None, xaccount_type=None, bank_card_info=None):
+    def __init__(self, customer_id=None, identify_type=None, verified_type=None, verified_file_url=None, name=None, verified_number=None, change_type=None, xaccount_type=None):
         """ApplyIndividualRealnameAuthsReq - a model defined in huaweicloud sdk"""
         
         
@@ -58,7 +56,6 @@ class ApplyIndividualRealnameAuthsReq:
         self._verified_number = None
         self._change_type = None
         self._xaccount_type = None
-        self._bank_card_info = None
         self.discriminator = None
 
         self.customer_id = customer_id
@@ -71,8 +68,6 @@ class ApplyIndividualRealnameAuthsReq:
         if change_type is not None:
             self.change_type = change_type
         self.xaccount_type = xaccount_type
-        if bank_card_info is not None:
-            self.bank_card_info = bank_card_info
 
     @property
     def customer_id(self):
@@ -249,26 +244,6 @@ class ApplyIndividualRealnameAuthsReq:
         :type: str
         """
         self._xaccount_type = xaccount_type
-
-    @property
-    def bank_card_info(self):
-        """Gets the bank_card_info of this ApplyIndividualRealnameAuthsReq.
-
-
-        :return: The bank_card_info of this ApplyIndividualRealnameAuthsReq.
-        :rtype: BankCardInfoV2
-        """
-        return self._bank_card_info
-
-    @bank_card_info.setter
-    def bank_card_info(self, bank_card_info):
-        """Sets the bank_card_info of this ApplyIndividualRealnameAuthsReq.
-
-
-        :param bank_card_info: The bank_card_info of this ApplyIndividualRealnameAuthsReq.
-        :type: BankCardInfoV2
-        """
-        self._bank_card_info = bank_card_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -32,8 +32,7 @@ class PeriodProductInfo:
         'size_measure_id': 'int',
         'period_type': 'int',
         'period_num': 'int',
-        'subscription_num': 'int',
-        'fee_installment_mode': 'str'
+        'subscription_num': 'int'
     }
 
     attribute_map = {
@@ -47,11 +46,10 @@ class PeriodProductInfo:
         'size_measure_id': 'size_measure_id',
         'period_type': 'period_type',
         'period_num': 'period_num',
-        'subscription_num': 'subscription_num',
-        'fee_installment_mode': 'fee_installment_mode'
+        'subscription_num': 'subscription_num'
     }
 
-    def __init__(self, id=None, cloud_service_type=None, resource_type=None, resource_spec=None, region=None, available_zone=None, resource_size=None, size_measure_id=None, period_type=None, period_num=None, subscription_num=None, fee_installment_mode=None):
+    def __init__(self, id=None, cloud_service_type=None, resource_type=None, resource_spec=None, region=None, available_zone=None, resource_size=None, size_measure_id=None, period_type=None, period_num=None, subscription_num=None):
         """PeriodProductInfo - a model defined in huaweicloud sdk"""
         
         
@@ -67,7 +65,6 @@ class PeriodProductInfo:
         self._period_type = None
         self._period_num = None
         self._subscription_num = None
-        self._fee_installment_mode = None
         self.discriminator = None
 
         self.id = id
@@ -84,8 +81,6 @@ class PeriodProductInfo:
         self.period_type = period_type
         self.period_num = period_num
         self.subscription_num = subscription_num
-        if fee_installment_mode is not None:
-            self.fee_installment_mode = fee_installment_mode
 
     @property
     def id(self):
@@ -289,7 +284,7 @@ class PeriodProductInfo:
     def period_num(self):
         """Gets the period_num of this PeriodProductInfo.
 
-        |参数名称：订购周期数| |参数约束及描述：订购周期数|
+        |参数名称：订购周期数| |参数约束及描述： 订购周期数|
 
         :return: The period_num of this PeriodProductInfo.
         :rtype: int
@@ -300,7 +295,7 @@ class PeriodProductInfo:
     def period_num(self, period_num):
         """Sets the period_num of this PeriodProductInfo.
 
-        |参数名称：订购周期数| |参数约束及描述：订购周期数|
+        |参数名称：订购周期数| |参数约束及描述： 订购周期数|
 
         :param period_num: The period_num of this PeriodProductInfo.
         :type: int
@@ -328,28 +323,6 @@ class PeriodProductInfo:
         :type: int
         """
         self._subscription_num = subscription_num
-
-    @property
-    def fee_installment_mode(self):
-        """Gets the fee_installment_mode of this PeriodProductInfo.
-
-        |参数名称：费用分期模式| |参数约束及描述：HALF_PAY：半付；ZERO_PAY：零付；NA：不支持费用分期模式；不传默认为空，效果等同于NA|
-
-        :return: The fee_installment_mode of this PeriodProductInfo.
-        :rtype: str
-        """
-        return self._fee_installment_mode
-
-    @fee_installment_mode.setter
-    def fee_installment_mode(self, fee_installment_mode):
-        """Sets the fee_installment_mode of this PeriodProductInfo.
-
-        |参数名称：费用分期模式| |参数约束及描述：HALF_PAY：半付；ZERO_PAY：零付；NA：不支持费用分期模式；不传默认为空，效果等同于NA|
-
-        :param fee_installment_mode: The fee_installment_mode of this PeriodProductInfo.
-        :type: str
-        """
-        self._fee_installment_mode = fee_installment_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

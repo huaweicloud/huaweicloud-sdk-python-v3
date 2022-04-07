@@ -24,7 +24,7 @@ class UpdateNodePoolRequest:
     openapi_types = {
         'cluster_id': 'str',
         'nodepool_id': 'str',
-        'body': 'NodePool'
+        'body': 'NodePoolUpdate'
     }
 
     attribute_map = {
@@ -52,7 +52,7 @@ class UpdateNodePoolRequest:
     def cluster_id(self):
         """Gets the cluster_id of this UpdateNodePoolRequest.
 
-        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
+        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :return: The cluster_id of this UpdateNodePoolRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class UpdateNodePoolRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this UpdateNodePoolRequest.
 
-        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
+        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this UpdateNodePoolRequest.
         :type: str
@@ -98,7 +98,7 @@ class UpdateNodePoolRequest:
 
 
         :return: The body of this UpdateNodePoolRequest.
-        :rtype: NodePool
+        :rtype: NodePoolUpdate
         """
         return self._body
 
@@ -108,7 +108,7 @@ class UpdateNodePoolRequest:
 
 
         :param body: The body of this UpdateNodePoolRequest.
-        :type: NodePool
+        :type: NodePoolUpdate
         """
         self._body = body
 

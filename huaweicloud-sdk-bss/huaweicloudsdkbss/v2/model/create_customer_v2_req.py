@@ -87,7 +87,7 @@ class CreateCustomerV2Req:
     def domain_name(self):
         """Gets the domain_name of this CreateCustomerV2Req.
 
-        客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^([a-zA-Z_-]([a-zA-Z0-9_-])*)$。
+        客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^\\(\\[a-zA-Z_-\\]\\(\\[a-zA-Z0-9_-\\]\\)\\*\\)$。
 
         :return: The domain_name of this CreateCustomerV2Req.
         :rtype: str
@@ -98,7 +98,7 @@ class CreateCustomerV2Req:
     def domain_name(self, domain_name):
         """Sets the domain_name of this CreateCustomerV2Req.
 
-        客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^([a-zA-Z_-]([a-zA-Z0-9_-])*)$。
+        客户的华为云账号名。 如果为空，随机生成。 不能以“op_”或“shadow_”开头且不能全为数字。 校验长度（5到32位）和规则^\\(\\[a-zA-Z_-\\]\\(\\[a-zA-Z0-9_-\\]\\)\\*\\)$。
 
         :param domain_name: The domain_name of this CreateCustomerV2Req.
         :type: str

@@ -26,6 +26,8 @@ class MonthlyBillRecord:
         'customer_id': 'str',
         'service_type_code': 'str',
         'resource_type_code': 'str',
+        'service_type_name': 'str',
+        'resource_type_name': 'str',
         'region_code': 'str',
         'enterprise_project_id': 'str',
         'enterprise_project_name': 'str',
@@ -56,6 +58,8 @@ class MonthlyBillRecord:
         'customer_id': 'customer_id',
         'service_type_code': 'service_type_code',
         'resource_type_code': 'resource_type_code',
+        'service_type_name': 'service_type_name',
+        'resource_type_name': 'resource_type_name',
         'region_code': 'region_code',
         'enterprise_project_id': 'enterprise_project_id',
         'enterprise_project_name': 'enterprise_project_name',
@@ -81,7 +85,7 @@ class MonthlyBillRecord:
         'region_name': 'region_name'
     }
 
-    def __init__(self, bill_cycle=None, customer_id=None, service_type_code=None, resource_type_code=None, region_code=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, consume_time=None, trade_time=None, provider_type=None, trade_id=None, bill_type=None, status=None, official_amount=None, official_discount_amount=None, erase_amount=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, bonus_amount=None, debt_amount=None, writeoff_amount=None, region_name=None):
+    def __init__(self, bill_cycle=None, customer_id=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, region_code=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, consume_time=None, trade_time=None, provider_type=None, trade_id=None, bill_type=None, status=None, official_amount=None, official_discount_amount=None, erase_amount=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, bonus_amount=None, debt_amount=None, writeoff_amount=None, region_name=None):
         """MonthlyBillRecord - a model defined in huaweicloud sdk"""
         
         
@@ -90,6 +94,8 @@ class MonthlyBillRecord:
         self._customer_id = None
         self._service_type_code = None
         self._resource_type_code = None
+        self._service_type_name = None
+        self._resource_type_name = None
         self._region_code = None
         self._enterprise_project_id = None
         self._enterprise_project_name = None
@@ -123,6 +129,10 @@ class MonthlyBillRecord:
             self.service_type_code = service_type_code
         if resource_type_code is not None:
             self.resource_type_code = resource_type_code
+        if service_type_name is not None:
+            self.service_type_name = service_type_name
+        if resource_type_name is not None:
+            self.resource_type_name = resource_type_name
         if region_code is not None:
             self.region_code = region_code
         if enterprise_project_id is not None:
@@ -257,6 +267,50 @@ class MonthlyBillRecord:
         :type: str
         """
         self._resource_type_code = resource_type_code
+
+    @property
+    def service_type_name(self):
+        """Gets the service_type_name of this MonthlyBillRecord.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :return: The service_type_name of this MonthlyBillRecord.
+        :rtype: str
+        """
+        return self._service_type_name
+
+    @service_type_name.setter
+    def service_type_name(self, service_type_name):
+        """Sets the service_type_name of this MonthlyBillRecord.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :param service_type_name: The service_type_name of this MonthlyBillRecord.
+        :type: str
+        """
+        self._service_type_name = service_type_name
+
+    @property
+    def resource_type_name(self):
+        """Gets the resource_type_name of this MonthlyBillRecord.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :return: The resource_type_name of this MonthlyBillRecord.
+        :rtype: str
+        """
+        return self._resource_type_name
+
+    @resource_type_name.setter
+    def resource_type_name(self, resource_type_name):
+        """Sets the resource_type_name of this MonthlyBillRecord.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :param resource_type_name: The resource_type_name of this MonthlyBillRecord.
+        :type: str
+        """
+        self._resource_type_name = resource_type_name
 
     @property
     def region_code(self):

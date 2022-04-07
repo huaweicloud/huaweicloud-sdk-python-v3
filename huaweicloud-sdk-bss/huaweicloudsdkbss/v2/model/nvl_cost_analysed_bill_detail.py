@@ -30,6 +30,8 @@ class NvlCostAnalysedBillDetail:
         'region_name': 'str',
         'service_type_code': 'str',
         'resource_type_code': 'str',
+        'service_type_name': 'str',
+        'resource_type_name': 'str',
         'effective_time': 'str',
         'expire_time': 'str',
         'resource_id': 'str',
@@ -69,6 +71,8 @@ class NvlCostAnalysedBillDetail:
         'region_name': 'region_name',
         'service_type_code': 'service_type_code',
         'resource_type_code': 'resource_type_code',
+        'service_type_name': 'service_type_name',
+        'resource_type_name': 'resource_type_name',
         'effective_time': 'effective_time',
         'expire_time': 'expire_time',
         'resource_id': 'resource_id',
@@ -99,7 +103,7 @@ class NvlCostAnalysedBillDetail:
         'amortized_bonus_amount': 'amortized_bonus_amount'
     }
 
-    def __init__(self, shared_month=None, bill_cycle=None, bill_type=None, customer_id=None, region_code=None, region_name=None, service_type_code=None, resource_type_code=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_spec_desc=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, consume_amount=None, past_months_amortized_amount=None, current_month_amortized_amount=None, future_months_amortized_amount=None, amortized_cash_amount=None, amortized_credit_amount=None, amortized_coupon_amount=None, amortized_flexipurchase_coupon_amount=None, amortized_stored_value_card_amount=None, amortized_bonus_amount=None):
+    def __init__(self, shared_month=None, bill_cycle=None, bill_type=None, customer_id=None, region_code=None, region_name=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_spec_desc=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, consume_amount=None, past_months_amortized_amount=None, current_month_amortized_amount=None, future_months_amortized_amount=None, amortized_cash_amount=None, amortized_credit_amount=None, amortized_coupon_amount=None, amortized_flexipurchase_coupon_amount=None, amortized_stored_value_card_amount=None, amortized_bonus_amount=None):
         """NvlCostAnalysedBillDetail - a model defined in huaweicloud sdk"""
         
         
@@ -112,6 +116,8 @@ class NvlCostAnalysedBillDetail:
         self._region_name = None
         self._service_type_code = None
         self._resource_type_code = None
+        self._service_type_name = None
+        self._resource_type_name = None
         self._effective_time = None
         self._expire_time = None
         self._resource_id = None
@@ -158,6 +164,10 @@ class NvlCostAnalysedBillDetail:
             self.service_type_code = service_type_code
         if resource_type_code is not None:
             self.resource_type_code = resource_type_code
+        if service_type_name is not None:
+            self.service_type_name = service_type_name
+        if resource_type_name is not None:
+            self.resource_type_name = resource_type_name
         if effective_time is not None:
             self.effective_time = effective_time
         if expire_time is not None:
@@ -390,6 +400,50 @@ class NvlCostAnalysedBillDetail:
         :type: str
         """
         self._resource_type_code = resource_type_code
+
+    @property
+    def service_type_name(self):
+        """Gets the service_type_name of this NvlCostAnalysedBillDetail.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :return: The service_type_name of this NvlCostAnalysedBillDetail.
+        :rtype: str
+        """
+        return self._service_type_name
+
+    @service_type_name.setter
+    def service_type_name(self, service_type_name):
+        """Sets the service_type_name of this NvlCostAnalysedBillDetail.
+
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
+
+        :param service_type_name: The service_type_name of this NvlCostAnalysedBillDetail.
+        :type: str
+        """
+        self._service_type_name = service_type_name
+
+    @property
+    def resource_type_name(self):
+        """Gets the resource_type_name of this NvlCostAnalysedBillDetail.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :return: The resource_type_name of this NvlCostAnalysedBillDetail.
+        :rtype: str
+        """
+        return self._resource_type_name
+
+    @resource_type_name.setter
+    def resource_type_name(self, resource_type_name):
+        """Sets the resource_type_name of this NvlCostAnalysedBillDetail.
+
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
+
+        :param resource_type_name: The resource_type_name of this NvlCostAnalysedBillDetail.
+        :type: str
+        """
+        self._resource_type_name = resource_type_name
 
     @property
     def effective_time(self):

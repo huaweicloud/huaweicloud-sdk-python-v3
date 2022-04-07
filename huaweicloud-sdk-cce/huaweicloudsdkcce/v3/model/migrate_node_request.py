@@ -52,7 +52,7 @@ class MigrateNodeRequest:
     def cluster_id(self):
         """Gets the cluster_id of this MigrateNodeRequest.
 
-        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
+        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :return: The cluster_id of this MigrateNodeRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class MigrateNodeRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this MigrateNodeRequest.
 
-        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
+        集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this MigrateNodeRequest.
         :type: str
@@ -74,7 +74,7 @@ class MigrateNodeRequest:
     def target_cluster_id(self):
         """Gets the target_cluster_id of this MigrateNodeRequest.
 
-        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
+        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :return: The target_cluster_id of this MigrateNodeRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class MigrateNodeRequest:
     def target_cluster_id(self, target_cluster_id):
         """Sets the target_cluster_id of this MigrateNodeRequest.
 
-        集群 ID，获取方式请参见[[如何获取接口URI中参数](https://support.huaweicloud.com/api-cce/cce_02_0271.html)](tag:hws)[[如何获取接口URI中参数](https://support.huaweicloud.com/intl/zh-cn/api-cce/cce_02_0271.html)](tag:hws_hk)
+        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param target_cluster_id: The target_cluster_id of this MigrateNodeRequest.
         :type: str

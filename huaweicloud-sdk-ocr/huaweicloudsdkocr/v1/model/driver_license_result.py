@@ -22,6 +22,7 @@ class DriverLicenseResult:
     sensitive_list = []
 
     openapi_types = {
+        'type': 'str',
         'number': 'str',
         'name': 'str',
         'sex': 'str',
@@ -35,10 +36,15 @@ class DriverLicenseResult:
         'issuing_authority': 'str',
         'file_number': 'str',
         'record': 'str',
+        'accumulated_scores': 'str',
+        'status': 'list[DriverLicenseResultStatus]',
+        'generation_date': 'str',
+        'current_time': 'str',
         'text_location': 'object'
     }
 
     attribute_map = {
+        'type': 'type',
         'number': 'number',
         'name': 'name',
         'sex': 'sex',
@@ -52,14 +58,19 @@ class DriverLicenseResult:
         'issuing_authority': 'issuing_authority',
         'file_number': 'file_number',
         'record': 'record',
+        'accumulated_scores': 'accumulated_scores',
+        'status': 'status',
+        'generation_date': 'generation_date',
+        'current_time': 'current_time',
         'text_location': 'text_location'
     }
 
-    def __init__(self, number=None, name=None, sex=None, nationality=None, address=None, birth=None, issue_date=None, _class=None, valid_from=None, valid_to=None, issuing_authority=None, file_number=None, record=None, text_location=None):
+    def __init__(self, type=None, number=None, name=None, sex=None, nationality=None, address=None, birth=None, issue_date=None, _class=None, valid_from=None, valid_to=None, issuing_authority=None, file_number=None, record=None, accumulated_scores=None, status=None, generation_date=None, current_time=None, text_location=None):
         """DriverLicenseResult - a model defined in huaweicloud sdk"""
         
         
 
+        self._type = None
         self._number = None
         self._name = None
         self._sex = None
@@ -73,9 +84,15 @@ class DriverLicenseResult:
         self._issuing_authority = None
         self._file_number = None
         self._record = None
+        self._accumulated_scores = None
+        self._status = None
+        self._generation_date = None
+        self._current_time = None
         self._text_location = None
         self.discriminator = None
 
+        if type is not None:
+            self.type = type
         if number is not None:
             self.number = number
         if name is not None:
@@ -102,8 +119,38 @@ class DriverLicenseResult:
             self.file_number = file_number
         if record is not None:
             self.record = record
+        if accumulated_scores is not None:
+            self.accumulated_scores = accumulated_scores
+        if status is not None:
+            self.status = status
+        if generation_date is not None:
+            self.generation_date = generation_date
+        if current_time is not None:
+            self.current_time = current_time
         if text_location is not None:
             self.text_location = text_location
+
+    @property
+    def type(self):
+        """Gets the type of this DriverLicenseResult.
+
+        驾驶证类型。 normal：纸质驾驶证 electronic：电子驾驶证 
+
+        :return: The type of this DriverLicenseResult.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this DriverLicenseResult.
+
+        驾驶证类型。 normal：纸质驾驶证 electronic：电子驾驶证 
+
+        :param type: The type of this DriverLicenseResult.
+        :type: str
+        """
+        self._type = type
 
     @property
     def number(self):
@@ -392,10 +439,98 @@ class DriverLicenseResult:
         self._record = record
 
     @property
+    def accumulated_scores(self):
+        """Gets the accumulated_scores of this DriverLicenseResult.
+
+        累积记分。 
+
+        :return: The accumulated_scores of this DriverLicenseResult.
+        :rtype: str
+        """
+        return self._accumulated_scores
+
+    @accumulated_scores.setter
+    def accumulated_scores(self, accumulated_scores):
+        """Sets the accumulated_scores of this DriverLicenseResult.
+
+        累积记分。 
+
+        :param accumulated_scores: The accumulated_scores of this DriverLicenseResult.
+        :type: str
+        """
+        self._accumulated_scores = accumulated_scores
+
+    @property
+    def status(self):
+        """Gets the status of this DriverLicenseResult.
+
+        状态。
+
+        :return: The status of this DriverLicenseResult.
+        :rtype: list[DriverLicenseResultStatus]
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this DriverLicenseResult.
+
+        状态。
+
+        :param status: The status of this DriverLicenseResult.
+        :type: list[DriverLicenseResultStatus]
+        """
+        self._status = status
+
+    @property
+    def generation_date(self):
+        """Gets the generation_date of this DriverLicenseResult.
+
+        生成时间。 
+
+        :return: The generation_date of this DriverLicenseResult.
+        :rtype: str
+        """
+        return self._generation_date
+
+    @generation_date.setter
+    def generation_date(self, generation_date):
+        """Sets the generation_date of this DriverLicenseResult.
+
+        生成时间。 
+
+        :param generation_date: The generation_date of this DriverLicenseResult.
+        :type: str
+        """
+        self._generation_date = generation_date
+
+    @property
+    def current_time(self):
+        """Gets the current_time of this DriverLicenseResult.
+
+        当前时间。 
+
+        :return: The current_time of this DriverLicenseResult.
+        :rtype: str
+        """
+        return self._current_time
+
+    @current_time.setter
+    def current_time(self, current_time):
+        """Sets the current_time of this DriverLicenseResult.
+
+        当前时间。 
+
+        :param current_time: The current_time of this DriverLicenseResult.
+        :type: str
+        """
+        self._current_time = current_time
+
+    @property
     def text_location(self):
         """Gets the text_location of this DriverLicenseResult.
 
-        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :return: The text_location of this DriverLicenseResult.
         :rtype: object
@@ -406,7 +541,7 @@ class DriverLicenseResult:
     def text_location(self, text_location):
         """Sets the text_location of this DriverLicenseResult.
 
-        文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param text_location: The text_location of this DriverLicenseResult.
         :type: object
