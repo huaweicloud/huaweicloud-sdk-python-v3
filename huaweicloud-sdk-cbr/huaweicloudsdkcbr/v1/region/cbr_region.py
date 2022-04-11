@@ -32,6 +32,8 @@ class CbrRegion:
 
     AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://cbr.ap-southeast-3.myhuaweicloud.com")
 
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://cbr.la-south-2.myhuaweicloud.com")
+
     static_fields = {
         "af-south-1": AF_SOUTH_1,
         "cn-north-4": CN_NORTH_4,
@@ -44,6 +46,7 @@ class CbrRegion:
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        'la-south-2': LA_SOUTH_2,
     }
 
     @staticmethod
