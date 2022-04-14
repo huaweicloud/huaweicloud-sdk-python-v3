@@ -69,7 +69,7 @@ class UsageType:
     def code(self):
         """Gets the code of this UsageType.
 
-        |参数名称：用量类型编码如：duration| |参数约束及描述：用量类型编码如：duration|
+        使用量类型编码。如：reqNumber。
 
         :return: The code of this UsageType.
         :rtype: str
@@ -80,7 +80,7 @@ class UsageType:
     def code(self, code):
         """Sets the code of this UsageType.
 
-        |参数名称：用量类型编码如：duration| |参数约束及描述：用量类型编码如：duration|
+        使用量类型编码。如：reqNumber。
 
         :param code: The code of this UsageType.
         :type: str
@@ -91,7 +91,7 @@ class UsageType:
     def name(self):
         """Gets the name of this UsageType.
 
-        |参数名称：用量类型名称| |参数约束及描述：用量类型名称|
+        使用量类型名称。如：调用次数。
 
         :return: The name of this UsageType.
         :rtype: str
@@ -102,7 +102,7 @@ class UsageType:
     def name(self, name):
         """Sets the name of this UsageType.
 
-        |参数名称：用量类型名称| |参数约束及描述：用量类型名称|
+        使用量类型名称。如：调用次数。
 
         :param name: The name of this UsageType.
         :type: str
@@ -113,7 +113,7 @@ class UsageType:
     def resource_type_code(self):
         """Gets the resource_type_code of this UsageType.
 
-        |参数名称：资源类型编码| |参数约束及描述：资源类型编码|
+        资源类型编码。例如ECS的VM为“hws.resource.type.vm”。
 
         :return: The resource_type_code of this UsageType.
         :rtype: str
@@ -124,7 +124,7 @@ class UsageType:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this UsageType.
 
-        |参数名称：资源类型编码| |参数约束及描述：资源类型编码|
+        资源类型编码。例如ECS的VM为“hws.resource.type.vm”。
 
         :param resource_type_code: The resource_type_code of this UsageType.
         :type: str
@@ -135,7 +135,7 @@ class UsageType:
     def service_type_code(self):
         """Gets the service_type_code of this UsageType.
 
-        |参数名称：服务类型编码| |参数约束及描述：服务类型编码|
+        云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :return: The service_type_code of this UsageType.
         :rtype: str
@@ -146,7 +146,7 @@ class UsageType:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this UsageType.
 
-        |参数名称：服务类型编码| |参数约束及描述：服务类型编码|
+        云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :param service_type_code: The service_type_code of this UsageType.
         :type: str
@@ -157,7 +157,7 @@ class UsageType:
     def resource_type_name(self):
         """Gets the resource_type_name of this UsageType.
 
-        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :return: The resource_type_name of this UsageType.
         :rtype: str
@@ -168,7 +168,7 @@ class UsageType:
     def resource_type_name(self, resource_type_name):
         """Sets the resource_type_name of this UsageType.
 
-        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :param resource_type_name: The resource_type_name of this UsageType.
         :type: str
@@ -179,7 +179,7 @@ class UsageType:
     def service_type_name(self):
         """Gets the service_type_name of this UsageType.
 
-        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :return: The service_type_name of this UsageType.
         :rtype: str
@@ -190,7 +190,7 @@ class UsageType:
     def service_type_name(self, service_type_name):
         """Sets the service_type_name of this UsageType.
 
-        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this UsageType.
         :type: str

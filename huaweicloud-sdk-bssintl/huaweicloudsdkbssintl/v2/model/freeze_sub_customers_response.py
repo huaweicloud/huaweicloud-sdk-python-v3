@@ -44,7 +44,7 @@ class FreezeSubCustomersResponse(SdkResponse):
     def error_details(self):
         """Gets the error_details of this FreezeSubCustomersResponse.
 
-        |参数名称：错误原因，部分成功部分失败的时候会返回失败的客户列表和错误原因。注意这个结构体在HTTP 200的时候返回| |参数约束以及描述：错误原因，部分成功部分失败的时候会返回失败的客户列表和错误原因。注意这个结构体在HTTP 200的时候返回|
+        错误原因，只有部分失败的时候才返回。 具体请参见表1。
 
         :return: The error_details of this FreezeSubCustomersResponse.
         :rtype: list[CustomerErrorDetail]
@@ -55,7 +55,7 @@ class FreezeSubCustomersResponse(SdkResponse):
     def error_details(self, error_details):
         """Sets the error_details of this FreezeSubCustomersResponse.
 
-        |参数名称：错误原因，部分成功部分失败的时候会返回失败的客户列表和错误原因。注意这个结构体在HTTP 200的时候返回| |参数约束以及描述：错误原因，部分成功部分失败的时候会返回失败的客户列表和错误原因。注意这个结构体在HTTP 200的时候返回|
+        错误原因，只有部分失败的时候才返回。 具体请参见表1。
 
         :param error_details: The error_details of this FreezeSubCustomersResponse.
         :type: list[CustomerErrorDetail]

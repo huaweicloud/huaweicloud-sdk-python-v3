@@ -20,7 +20,6 @@ class UpdateDevice:
     """
 
     sensitive_list = []
-    sensitive_list.append('auth_info')
 
     openapi_types = {
         'device_name': 'str',
@@ -60,7 +59,7 @@ class UpdateDevice:
     def device_name(self):
         """Gets the device_name of this UpdateDevice.
 
-        **参数说明**：设备名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
+        **参数说明**：设备名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合，建议不少于4个字符。
 
         :return: The device_name of this UpdateDevice.
         :rtype: str
@@ -71,7 +70,7 @@ class UpdateDevice:
     def device_name(self, device_name):
         """Sets the device_name of this UpdateDevice.
 
-        **参数说明**：设备名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
+        **参数说明**：设备名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合，建议不少于4个字符。
 
         :param device_name: The device_name of this UpdateDevice.
         :type: str

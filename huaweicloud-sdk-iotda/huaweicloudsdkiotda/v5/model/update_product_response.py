@@ -209,7 +209,7 @@ class UpdateProductResponse(SdkResponse):
     def protocol_type(self):
         """Gets the protocol_type of this UpdateProductResponse.
 
-        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA。
+        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other。
 
         :return: The protocol_type of this UpdateProductResponse.
         :rtype: str
@@ -220,7 +220,7 @@ class UpdateProductResponse(SdkResponse):
     def protocol_type(self, protocol_type):
         """Sets the protocol_type of this UpdateProductResponse.
 
-        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA。
+        设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other。
 
         :param protocol_type: The protocol_type of this UpdateProductResponse.
         :type: str

@@ -67,7 +67,7 @@ class DrsAsyncClient(Client):
         :return: BatchChangeDataResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -132,7 +132,7 @@ class DrsAsyncClient(Client):
         :return: BatchCheckJobsResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -197,7 +197,7 @@ class DrsAsyncClient(Client):
         :return: BatchCheckResultsResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -262,7 +262,7 @@ class DrsAsyncClient(Client):
         :return: BatchCreateJobsResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -327,7 +327,7 @@ class DrsAsyncClient(Client):
         :return: BatchDeleteJobsResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -392,7 +392,7 @@ class DrsAsyncClient(Client):
         :return: BatchListJobDetailsResponse
         """
 
-        all_params = ['x_language', 'batch_query_job_req']
+        all_params = ['batch_query_job_req', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -457,7 +457,7 @@ class DrsAsyncClient(Client):
         :return: BatchListJobStatusResponse
         """
 
-        all_params = ['x_language', 'batch_query_job_req']
+        all_params = ['batch_query_job_req', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -522,7 +522,7 @@ class DrsAsyncClient(Client):
         :return: BatchListProgressesResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -587,7 +587,7 @@ class DrsAsyncClient(Client):
         :return: BatchListRposAndRtosResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -652,7 +652,7 @@ class DrsAsyncClient(Client):
         :return: BatchListStructDetailResponse
         """
 
-        all_params = ['type', 'x_language', 'batch_query_struct_process']
+        all_params = ['type', 'batch_query_struct_process', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -719,7 +719,7 @@ class DrsAsyncClient(Client):
         :return: BatchListStructProcessResponse
         """
 
-        all_params = ['x_language', 'batch_query_struct_process']
+        all_params = ['batch_query_struct_process', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -784,7 +784,7 @@ class DrsAsyncClient(Client):
         :return: BatchResetPasswordResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -849,7 +849,7 @@ class DrsAsyncClient(Client):
         :return: BatchRestoreTaskResponse
         """
 
-        all_params = ['x_language', 'jobs']
+        all_params = ['jobs', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -914,7 +914,7 @@ class DrsAsyncClient(Client):
         :return: BatchSetDefinerResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -979,7 +979,7 @@ class DrsAsyncClient(Client):
         :return: BatchSetObjectsResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1028,7 +1028,7 @@ class DrsAsyncClient(Client):
     def batch_set_policy_async(self, request):
         """批量设置同步策略
 
-        批量设置MySQL同步策略，包括冲突策略、过滤DROP Datase、对象同步范围。
+        - 批量设置同步策略，包括冲突策略、过滤DROP Datase、对象同步范围。 - 设置kafka同步策略
 
         :param BatchSetPolicyRequest request
         :return: BatchSetPolicyResponse
@@ -1038,13 +1038,13 @@ class DrsAsyncClient(Client):
     def batch_set_policy_with_http_info(self, request):
         """批量设置同步策略
 
-        批量设置MySQL同步策略，包括冲突策略、过滤DROP Datase、对象同步范围。
+        - 批量设置同步策略，包括冲突策略、过滤DROP Datase、对象同步范围。 - 设置kafka同步策略
 
         :param BatchSetPolicyRequest request
         :return: BatchSetPolicyResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1090,6 +1090,71 @@ class DrsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def batch_set_smn_async(self, request):
+        """批量配置异常通知
+
+        批量设置告警信息，已结束的任务不支持设置。 - 支持选择已有的SMN主题和手动输入手机号、邮箱两种方式，具体根据自己使用情况选择
+
+        :param BatchSetSmnRequest request
+        :return: BatchSetSmnResponse
+        """
+        return self.batch_set_smn_with_http_info(request)
+
+    def batch_set_smn_with_http_info(self, request):
+        """批量配置异常通知
+
+        批量设置告警信息，已结束的任务不支持设置。 - 支持选择已有的SMN主题和手动输入手机号、邮箱两种方式，具体根据自己使用情况选择
+
+        :param BatchSetSmnRequest request
+        :return: BatchSetSmnResponse
+        """
+
+        all_params = ['batch_import_smn_info_req', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/jobs/batch-set-smn',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchSetSmnResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def batch_set_speed_async(self, request):
         """批量设置任务限速
 
@@ -1109,7 +1174,7 @@ class DrsAsyncClient(Client):
         :return: BatchSetSpeedResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1174,7 +1239,7 @@ class DrsAsyncClient(Client):
         :return: BatchShowParamsResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1239,7 +1304,7 @@ class DrsAsyncClient(Client):
         :return: BatchStartJobsResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1304,7 +1369,7 @@ class DrsAsyncClient(Client):
         :return: BatchStopJobsResponse
         """
 
-        all_params = ['x_language', 'req']
+        all_params = ['req', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1369,7 +1434,7 @@ class DrsAsyncClient(Client):
         :return: BatchSwitchoverResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1434,7 +1499,7 @@ class DrsAsyncClient(Client):
         :return: BatchUpdateJobResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1499,7 +1564,7 @@ class DrsAsyncClient(Client):
         :return: BatchUpdateUserResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1564,7 +1629,7 @@ class DrsAsyncClient(Client):
         :return: BatchValidateClustersConnectionsResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1629,7 +1694,7 @@ class DrsAsyncClient(Client):
         :return: BatchValidateConnectionsResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1694,7 +1759,7 @@ class DrsAsyncClient(Client):
         :return: CreateCompareTaskResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1759,7 +1824,7 @@ class DrsAsyncClient(Client):
         :return: ListCompareResultResponse
         """
 
-        all_params = ['x_language', 'request_body']
+        all_params = ['request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1824,7 +1889,7 @@ class DrsAsyncClient(Client):
         :return: ListUsersResponse
         """
 
-        all_params = ['x_language', 'job_id']
+        all_params = ['job_id', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1889,7 +1954,7 @@ class DrsAsyncClient(Client):
         :return: ShowJobListResponse
         """
 
-        all_params = ['x_language', 'query_jobs_req_v3']
+        all_params = ['query_jobs_req_v3', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1954,7 +2019,7 @@ class DrsAsyncClient(Client):
         :return: ShowMonitoringDataResponse
         """
 
-        all_params = ['x_language', 'req']
+        all_params = ['req', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2082,7 +2147,7 @@ class DrsAsyncClient(Client):
         :return: UpdateParamsResponse
         """
 
-        all_params = ['job_id', 'x_language', 'request_body']
+        all_params = ['job_id', 'request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

@@ -74,7 +74,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
     def optional_discount_rating_results(self):
         """Gets the optional_discount_rating_results of this ListRateOnPeriodDetailResponse.
 
-        |参数名称：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果| |参数的约束及描述：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果|
+        存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果，具体参见表4。
 
         :return: The optional_discount_rating_results of this ListRateOnPeriodDetailResponse.
         :rtype: list[OptionalDiscountRatingResult]
@@ -85,7 +85,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
     def optional_discount_rating_results(self, optional_discount_rating_results):
         """Sets the optional_discount_rating_results of this ListRateOnPeriodDetailResponse.
 
-        |参数名称：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果| |参数的约束及描述：存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果|
+        存在可选折扣优惠时返回折扣优惠维度询价结果，每个折扣优惠一组询价结果，具体参见表4。
 
         :param optional_discount_rating_results: The optional_discount_rating_results of this ListRateOnPeriodDetailResponse.
         :type: list[OptionalDiscountRatingResult]
@@ -96,7 +96,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
     def currency(self):
         """Gets the currency of this ListRateOnPeriodDetailResponse.
 
-        |参数名称：币种| |参数约束及描述：比如CNY|
+        币种。 USD：美元。 值为空代表美元。
 
         :return: The currency of this ListRateOnPeriodDetailResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ListRateOnPeriodDetailResponse(SdkResponse):
     def currency(self, currency):
         """Sets the currency of this ListRateOnPeriodDetailResponse.
 
-        |参数名称：币种| |参数约束及描述：比如CNY|
+        币种。 USD：美元。 值为空代表美元。
 
         :param currency: The currency of this ListRateOnPeriodDetailResponse.
         :type: str

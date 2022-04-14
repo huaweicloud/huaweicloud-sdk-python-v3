@@ -44,7 +44,7 @@ class AccountManager:
     def account_name(self):
         """Gets the account_name of this AccountManager.
 
-        |参数名称：客户经理登录名称。| |参数约束及描述：客户经理登录名称。最大长度128，必填|
+        客户经理登录名称。
 
         :return: The account_name of this AccountManager.
         :rtype: str
@@ -55,7 +55,7 @@ class AccountManager:
     def account_name(self, account_name):
         """Sets the account_name of this AccountManager.
 
-        |参数名称：客户经理登录名称。| |参数约束及描述：客户经理登录名称。最大长度128，必填|
+        客户经理登录名称。
 
         :param account_name: The account_name of this AccountManager.
         :type: str

@@ -44,7 +44,7 @@ class ListConversionsResponse(SdkResponse):
     def conversions(self):
         """Gets the conversions of this ListConversionsResponse.
 
-        |参数名称：度量信息| |参数约束以及描述：度量信息|
+        度量单位的换算信息，具体参见表3。
 
         :return: The conversions of this ListConversionsResponse.
         :rtype: list[Conversion]
@@ -55,7 +55,7 @@ class ListConversionsResponse(SdkResponse):
     def conversions(self, conversions):
         """Sets the conversions of this ListConversionsResponse.
 
-        |参数名称：度量信息| |参数约束以及描述：度量信息|
+        度量单位的换算信息，具体参见表3。
 
         :param conversions: The conversions of this ListConversionsResponse.
         :type: list[Conversion]

@@ -1,3 +1,255 @@
+# 3.0.84 2022-04-14
+
+### HuaweiCloud SDK Core
+
+- _新增特性_
+  - 支持SK衍生认证方式
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateDomainFullConfig`新增请求参数 `sources`、`origin_protocol`、`force_redirect`、`compress`
+  - 接口`ShowDomainFullConfig`:
+    - 新增响应参数 `sources`、`origin_protocol`、`force_redirect`、`compress`
+    - 响应参数`certificate_source`类型调整 `string` -> `int32`
+
+### HuaweiCloud SDK CloudBuild
+
+- _新增特性_
+  - 支持接口`ShowJobSuccessRatio`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CodeCheck
+
+- _新增特性_
+  - 支持接口`ShowTasksRulesets`、`CheckRulesetParameters`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CSMS
+
+- _新增特性_
+  - 支持云凭据管理服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateInstance`新增请求参数 `rename_commands`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 支持接口`BatchSetSmn`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowQuotas`请求参数`X-Language`改为非必填
+  - 接口`BatchCreateJobs`请求参数`X-Language`改为非必填
+  - 接口`BatchValidateConnections`请求参数`X-Language`改为非必填
+  - 接口`BatchValidateClustersConnections`请求参数`X-Language`改为非必填
+  - 接口`BatchSetObjects`请求参数`X-Language`改为非必填
+  - 接口`BatchCheckJobs`请求参数`X-Language`改为非必填
+  - 接口`BatchCheckResults`请求参数`X-Language`改为非必填
+  - 接口`BatchSetSpeed`:
+    - 新增请求参数 `is_utc`
+    - 请求参数`X-Language`改为非必填
+  - 接口`BatchShowParams`请求参数`X-Language`改为非必填
+  - 接口`UpdateParams`请求参数`X-Language`改为非必填
+  - 接口`BatchStartJobs`请求参数`X-Language`改为非必填
+  - 接口`BatchRestoreTask`请求参数`X-Language`改为非必填
+  - 接口`BatchStopJobs`请求参数`X-Language`改为非必填
+  - 接口`BatchDeleteJobs`请求参数`X-Language`改为非必填
+  - 接口`BatchUpdateJob`:
+    - 请求参数`X-Language`改为非必填
+    - 请求参数`endpoints`、`protocol`改为非必填
+  - 接口`BatchResetPassword`请求参数`X-Language`改为非必填
+  - 接口`BatchSetDefiner`请求参数`X-Language`改为非必填
+  - 接口`CreateCompareTask`请求参数`X-Language`改为非必填
+  - 接口`ListCompareResult`请求参数`X-Language`改为非必填
+  - 接口`BatchListProgresses`请求参数`X-Language`改为非必填
+  - 接口`BatchListJobDetails`:
+    - 新增响应参数 `is_utc`
+    - 请求参数`X-Language`改为非必填
+    - 响应参数`alarm_notify`类型调整 `string` -> `object`
+  - 接口`ShowJobList`:
+    - 请求参数`X-Language`改为非必填
+    - 响应参数`billing_tag`类型调整 `string` -> `boolean`
+    - 响应参数`node_newFramework`类型调整 `string` -> `boolean`
+  - 接口`BatchListJobStatus`请求参数`X-Language`改为非必填
+  - 接口`BatchChangeData`请求参数`X-Language`改为非必填
+  - 接口`BatchSwitchover`请求参数`X-Language`改为非必填
+  - 接口`BatchListRposAndRtos`请求参数`X-Language`改为非必填
+  - 接口`ShowMonitoringData`请求参数`X-Language`改为非必填
+  - 接口`BatchListStructProcess`请求参数`X-Language`改为非必填
+  - 接口`BatchListStructDetail`请求参数`X-Language`改为非必填
+  - 接口`BatchUpdateUser`请求参数`X-Language`改为非必填
+  - 接口`ListUsers`请求参数`X-Language`改为非必填
+  - 接口`BatchSetPolicy`:
+    - 请求参数`export_snapshot`类型调整 `string` -> `boolean`
+    - 请求参数`X-Language`改为非必填
+    - 请求参数`conflict_policy`、`filter_ddl_policy`改为非必填
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListServersDetails`新增请求参数 `ip_eq`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateFunctionConfig`新增请求参数 `encrypted_user_data`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 支持接口`RestartInstance`、`ShowInstanceConfiguration`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`:
+    - 移除请求参数 `solution`
+    - 请求参数`sharding_num`、`coordinator_num`改为非必填
+  - 接口`ListConfigurations`新增响应参数 `count`
+  - 接口`ListFlavors`新增响应参数 `total`
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListSimPricePlans`:
+    - 响应参数`create_time`类型调整 `date` -> `date-time`
+    - 响应参数`active_time`类型调整 `date` -> `date-time`
+    - 响应参数`stop_time`类型调整 `date` -> `date-time`
+
+### HuaweiCloud SDK IEC
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListRelatedRoutetables`
+    - `ListRoutetables`
+    - `CreateRoutetable`
+    - `ShowRoutetable`
+    - `UpdateRoutetable`
+    - `DeleteRoutetable`
+    - `AssociateSubnet`
+    - `DisassociateSubnet`
+    - `ListRoutes`
+    - `CreateRoutes`
+    - `UpdateRoutes`
+    - `DeleteRoutes`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListSecurityGroups`新增响应参数 `action`、`priority`
+  - 接口`CreateSecurityGroup`新增响应参数 `action`、`priority`
+  - 接口`ShowSecurityGroup`新增响应参数 `action`、`priority`
+  - 接口`ListSecurityGroupRules`新增响应参数 `action`、`priority`
+  - 接口`CreateSecurityGroupRule`:
+    - 新增请求参数 `action`、`priority`
+    - 新增响应参数 `action`、`priority`
+  - 接口`ShowSecurityGroupRule`新增响应参数 `action`、`priority`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateAomMappingRules`:
+    - 请求参数`target_log_group_id`、`target_log_group_name`、`target_log_stream_id`、`target_log_stream_name`改为必填
+    - 请求参数`container_name`改为非必填
+    - 响应参数`target_log_group_id`、`target_log_group_name`、`target_log_stream_id`、`target_log_stream_name`改为必填
+    - 响应参数`container_name`改为非必填
+  - 接口`ShowAomMappingRules`:
+    - 响应参数`target_log_group_id`、`target_log_group_name`、`target_log_stream_id`、`target_log_stream_name`改为必填
+    - 响应参数`container_name`改为非必填
+  - 接口`CreateAomMappingRules`:
+    - 请求参数`target_log_group_id`、`target_log_group_name`、`target_log_stream_id`、`target_log_stream_name`改为必填
+    - 请求参数`container_name`改为非必填
+    - 响应参数`target_log_group_id`、`target_log_group_name`、`target_log_stream_id`、`target_log_stream_name`改为必填
+    - 响应参数`container_name`改为非必填
+  - 接口`ShowAomMappingRule`:
+    - 响应参数`target_log_group_id`、`target_log_group_name`、`target_log_stream_id`、`target_log_stream_name`改为必填
+    - 响应参数`container_name`改为非必填
+  - 接口`ListHost`请求参数`host_id_list`改为必填
+  - 接口`ListHostGroup`请求参数`host_group_id_list`改为必填
+  - 接口`ListAccessConfig`请求参数`access_config_name_list`、`host_group_name_list`、`log_group_name_list`、`log_stream_name_list`改为必填
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 支持接口`RunModerationAudio`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SCM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCertificates`:
+    - 新增请求参数 `enterprise_project_id`、`deploy_support`
+    - 新增响应参数 `enterprise_project_id`
+    - 响应参数`id`、`name`、`domain`、`sans`、`signature_algorithm`、`deploy_support`、`type`、`brand`、`expire_time`、`domain_type`、`validity_period`、`status`、`domain_count`、`wildcard_count`、`description`、`total_count`改为必填
+  - 接口`ImportCertificate`:
+    - 新增请求参数 `enterprise_project_id`
+    - 响应参数`certificate_id`改为必填
+  - 接口`ShowCertificate`:
+    - 新增响应参数 `enterprise_project_id`
+    - 响应参数`id`、`status`、`order_id`、`name`、`type`、`brand`、`push_support`、`revoke_reason`、`signature_algorithm`、`issue_time`、`not_before`、`not_after`、`validity_period`、`validation_method`、`domain_type`、`domain`、`sans`、`domain_count`、`wildcard_count`改为必填
+  - 接口`ExportCertificate`响应参数`certificate`、`certificate_chain`、`private_key`改为必填
+
+### HuaweiCloud SDK SMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListTasks`新增响应参数 `process_trace`
+  - 接口`ShowTask`新增响应参数 `process_trace`
+  - 接口`UpdateTask`新增请求参数 `process_trace`
+  - 接口`UpdateTaskSpeed`:
+    - 新增请求参数 `process_trace`、`compress_rate`
+    - 请求参数`migrate_speed`改为非必填
+
 # 3.0.83 2022-04-07
 
 ### HuaweiCloud SDK BSS

@@ -22,7 +22,7 @@ class ChildrenJobInfo:
     sensitive_list = []
 
     openapi_types = {
-        'billing_tag': 'str',
+        'billing_tag': 'bool',
         'create_time': 'str',
         'db_use_type': 'str',
         'description': 'str',
@@ -32,7 +32,7 @@ class ChildrenJobInfo:
         'job_direction': 'str',
         'name': 'str',
         'net_type': 'str',
-        'node_new_framework': 'str',
+        'node_new_framework': 'bool',
         'status': 'str',
         'task_type': 'str'
     }
@@ -94,7 +94,7 @@ class ChildrenJobInfo:
         计费字段
 
         :return: The billing_tag of this ChildrenJobInfo.
-        :rtype: str
+        :rtype: bool
         """
         return self._billing_tag
 
@@ -105,7 +105,7 @@ class ChildrenJobInfo:
         计费字段
 
         :param billing_tag: The billing_tag of this ChildrenJobInfo.
-        :type: str
+        :type: bool
         """
         self._billing_tag = billing_tag
 
@@ -314,7 +314,7 @@ class ChildrenJobInfo:
         新框架
 
         :return: The node_new_framework of this ChildrenJobInfo.
-        :rtype: str
+        :rtype: bool
         """
         return self._node_new_framework
 
@@ -325,7 +325,7 @@ class ChildrenJobInfo:
         新框架
 
         :param node_new_framework: The node_new_framework of this ChildrenJobInfo.
-        :type: str
+        :type: bool
         """
         self._node_new_framework = node_new_framework
 

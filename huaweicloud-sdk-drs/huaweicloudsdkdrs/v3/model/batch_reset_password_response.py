@@ -22,28 +22,48 @@ class BatchResetPasswordResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'count': 'int',
-        'results': 'list[ModifyJobResp]'
+        'results': 'list[ModifyDbPwdResp]',
+        'count': 'int'
     }
 
     attribute_map = {
-        'count': 'count',
-        'results': 'results'
+        'results': 'results',
+        'count': 'count'
     }
 
-    def __init__(self, count=None, results=None):
+    def __init__(self, results=None, count=None):
         """BatchResetPasswordResponse - a model defined in huaweicloud sdk"""
         
         super(BatchResetPasswordResponse, self).__init__()
 
-        self._count = None
         self._results = None
+        self._count = None
         self.discriminator = None
 
-        if count is not None:
-            self.count = count
         if results is not None:
             self.results = results
+        if count is not None:
+            self.count = count
+
+    @property
+    def results(self):
+        """Gets the results of this BatchResetPasswordResponse.
+
+
+        :return: The results of this BatchResetPasswordResponse.
+        :rtype: list[ModifyDbPwdResp]
+        """
+        return self._results
+
+    @results.setter
+    def results(self, results):
+        """Sets the results of this BatchResetPasswordResponse.
+
+
+        :param results: The results of this BatchResetPasswordResponse.
+        :type: list[ModifyDbPwdResp]
+        """
+        self._results = results
 
     @property
     def count(self):
@@ -66,28 +86,6 @@ class BatchResetPasswordResponse(SdkResponse):
         :type: int
         """
         self._count = count
-
-    @property
-    def results(self):
-        """Gets the results of this BatchResetPasswordResponse.
-
-        批量修改任务返回列表
-
-        :return: The results of this BatchResetPasswordResponse.
-        :rtype: list[ModifyJobResp]
-        """
-        return self._results
-
-    @results.setter
-    def results(self, results):
-        """Sets the results of this BatchResetPasswordResponse.
-
-        批量修改任务返回列表
-
-        :param results: The results of this BatchResetPasswordResponse.
-        :type: list[ModifyJobResp]
-        """
-        self._results = results
 
     def to_dict(self):
         """Returns the model properties as a dict"""

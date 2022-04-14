@@ -41,6 +41,7 @@ class ShowCertificateResponse(SdkResponse):
         'sans': 'str',
         'domain_count': 'int',
         'wildcard_count': 'int',
+        'enterprise_project_id': 'str',
         'authentification': 'list[Authentification]'
     }
 
@@ -64,10 +65,11 @@ class ShowCertificateResponse(SdkResponse):
         'sans': 'sans',
         'domain_count': 'domain_count',
         'wildcard_count': 'wildcard_count',
+        'enterprise_project_id': 'enterprise_project_id',
         'authentification': 'authentification'
     }
 
-    def __init__(self, id=None, status=None, order_id=None, name=None, type=None, brand=None, push_support=None, revoke_reason=None, signature_algorithm=None, issue_time=None, not_before=None, not_after=None, validity_period=None, validation_method=None, domain_type=None, domain=None, sans=None, domain_count=None, wildcard_count=None, authentification=None):
+    def __init__(self, id=None, status=None, order_id=None, name=None, type=None, brand=None, push_support=None, revoke_reason=None, signature_algorithm=None, issue_time=None, not_before=None, not_after=None, validity_period=None, validation_method=None, domain_type=None, domain=None, sans=None, domain_count=None, wildcard_count=None, enterprise_project_id=None, authentification=None):
         """ShowCertificateResponse - a model defined in huaweicloud sdk"""
         
         super(ShowCertificateResponse, self).__init__()
@@ -91,6 +93,7 @@ class ShowCertificateResponse(SdkResponse):
         self._sans = None
         self._domain_count = None
         self._wildcard_count = None
+        self._enterprise_project_id = None
         self._authentification = None
         self.discriminator = None
 
@@ -132,6 +135,8 @@ class ShowCertificateResponse(SdkResponse):
             self.domain_count = domain_count
         if wildcard_count is not None:
             self.wildcard_count = wildcard_count
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if authentification is not None:
             self.authentification = authentification
 
@@ -552,6 +557,28 @@ class ShowCertificateResponse(SdkResponse):
         :type: int
         """
         self._wildcard_count = wildcard_count
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ShowCertificateResponse.
+
+        企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
+
+        :return: The enterprise_project_id of this ShowCertificateResponse.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ShowCertificateResponse.
+
+        企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
+
+        :param enterprise_project_id: The enterprise_project_id of this ShowCertificateResponse.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def authentification(self):

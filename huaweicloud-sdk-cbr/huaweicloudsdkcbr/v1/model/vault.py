@@ -33,11 +33,11 @@ class Vault:
         'enterprise_project_id': 'str',
         'auto_bind': 'bool',
         'bind_rules': 'VaultBindRules',
+        'user_id': 'str',
+        'created_at': 'str',
         'auto_expand': 'bool',
         'smn_notify': 'bool',
-        'threshold': 'int',
-        'user_id': 'str',
-        'created_at': 'str'
+        'threshold': 'int'
     }
 
     attribute_map = {
@@ -52,14 +52,14 @@ class Vault:
         'enterprise_project_id': 'enterprise_project_id',
         'auto_bind': 'auto_bind',
         'bind_rules': 'bind_rules',
+        'user_id': 'user_id',
+        'created_at': 'created_at',
         'auto_expand': 'auto_expand',
         'smn_notify': 'smn_notify',
-        'threshold': 'threshold',
-        'user_id': 'user_id',
-        'created_at': 'created_at'
+        'threshold': 'threshold'
     }
 
-    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None, smn_notify=None, threshold=None, user_id=None, created_at=None):
+    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None):
         """Vault - a model defined in huaweicloud sdk"""
         
         
@@ -75,11 +75,11 @@ class Vault:
         self._enterprise_project_id = None
         self._auto_bind = None
         self._bind_rules = None
+        self._user_id = None
+        self._created_at = None
         self._auto_expand = None
         self._smn_notify = None
         self._threshold = None
-        self._user_id = None
-        self._created_at = None
         self.discriminator = None
 
         self.billing = billing
@@ -98,16 +98,16 @@ class Vault:
             self.auto_bind = auto_bind
         if bind_rules is not None:
             self.bind_rules = bind_rules
+        if user_id is not None:
+            self.user_id = user_id
+        if created_at is not None:
+            self.created_at = created_at
         if auto_expand is not None:
             self.auto_expand = auto_expand
         if smn_notify is not None:
             self.smn_notify = smn_notify
         if threshold is not None:
             self.threshold = threshold
-        if user_id is not None:
-            self.user_id = user_id
-        if created_at is not None:
-            self.created_at = created_at
 
     @property
     def billing(self):
@@ -155,7 +155,7 @@ class Vault:
     def id(self):
         """Gets the id of this Vault.
 
-        保管库ID
+        存储库ID
 
         :return: The id of this Vault.
         :rtype: str
@@ -166,7 +166,7 @@ class Vault:
     def id(self, id):
         """Sets the id of this Vault.
 
-        保管库ID
+        存储库ID
 
         :param id: The id of this Vault.
         :type: str
@@ -177,7 +177,7 @@ class Vault:
     def name(self):
         """Gets the name of this Vault.
 
-        保管库名称
+        存储库名称
 
         :return: The name of this Vault.
         :rtype: str
@@ -188,7 +188,7 @@ class Vault:
     def name(self, name):
         """Sets the name of this Vault.
 
-        保管库名称
+        存储库名称
 
         :param name: The name of this Vault.
         :type: str
@@ -221,7 +221,7 @@ class Vault:
     def provider_id(self):
         """Gets the provider_id of this Vault.
 
-        保管库资源类型id
+        存储库资源类型id
 
         :return: The provider_id of this Vault.
         :rtype: str
@@ -232,7 +232,7 @@ class Vault:
     def provider_id(self, provider_id):
         """Sets the provider_id of this Vault.
 
-        保管库资源类型id
+        存储库资源类型id
 
         :param provider_id: The provider_id of this Vault.
         :type: str
@@ -348,6 +348,50 @@ class Vault:
         self._bind_rules = bind_rules
 
     @property
+    def user_id(self):
+        """Gets the user_id of this Vault.
+
+        用户id
+
+        :return: The user_id of this Vault.
+        :rtype: str
+        """
+        return self._user_id
+
+    @user_id.setter
+    def user_id(self, user_id):
+        """Sets the user_id of this Vault.
+
+        用户id
+
+        :param user_id: The user_id of this Vault.
+        :type: str
+        """
+        self._user_id = user_id
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this Vault.
+
+        创建时间,例如:\"2020-02-05T10:38:34.209782\"
+
+        :return: The created_at of this Vault.
+        :rtype: str
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this Vault.
+
+        创建时间,例如:\"2020-02-05T10:38:34.209782\"
+
+        :param created_at: The created_at of this Vault.
+        :type: str
+        """
+        self._created_at = created_at
+
+    @property
     def auto_expand(self):
         """Gets the auto_expand of this Vault.
 
@@ -412,50 +456,6 @@ class Vault:
         :type: int
         """
         self._threshold = threshold
-
-    @property
-    def user_id(self):
-        """Gets the user_id of this Vault.
-
-        用户id
-
-        :return: The user_id of this Vault.
-        :rtype: str
-        """
-        return self._user_id
-
-    @user_id.setter
-    def user_id(self, user_id):
-        """Sets the user_id of this Vault.
-
-        用户id
-
-        :param user_id: The user_id of this Vault.
-        :type: str
-        """
-        self._user_id = user_id
-
-    @property
-    def created_at(self):
-        """Gets the created_at of this Vault.
-
-        创建时间
-
-        :return: The created_at of this Vault.
-        :rtype: str
-        """
-        return self._created_at
-
-    @created_at.setter
-    def created_at(self, created_at):
-        """Sets the created_at of this Vault.
-
-        创建时间
-
-        :param created_at: The created_at of this Vault.
-        :type: str
-        """
-        self._created_at = created_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -181,7 +181,7 @@ class Flavor:
     def version(self):
         """Gets the version of this Flavor.
 
-        数组形式版本号
+        该规格支持的数据库版本号
 
         :return: The version of this Flavor.
         :rtype: str
@@ -192,7 +192,7 @@ class Flavor:
     def version(self, version):
         """Sets the version of this Flavor.
 
-        数组形式版本号
+        该规格支持的数据库版本号
 
         :param version: The version of this Flavor.
         :type: str
@@ -203,7 +203,7 @@ class Flavor:
     def name(self):
         """Gets the name of this Flavor.
 
-        数组库引擎版本
+        数组库引擎名称
 
         :return: The name of this Flavor.
         :rtype: str
@@ -214,7 +214,7 @@ class Flavor:
     def name(self, name):
         """Sets the name of this Flavor.
 
-        数组库引擎版本
+        数组库引擎名称
 
         :param name: The name of this Flavor.
         :type: str

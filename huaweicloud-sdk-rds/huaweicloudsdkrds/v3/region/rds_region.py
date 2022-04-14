@@ -32,6 +32,10 @@ class RdsRegion:
 
     RU_NORTHWEST_2 = Region(id="ru-northwest-2", endpoint="https://rds.ru-northwest-2.myhuaweicloud.com")
 
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://rds.sa-brazil-1.myhuaweicloud.com")
+
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://rds.la-north-2.myhuaweicloud.com")
+
     static_fields = {
         "af-south-1": AF_SOUTH_1,
         "cn-north-4": CN_NORTH_4,
@@ -44,6 +48,8 @@ class RdsRegion:
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-3": AP_SOUTHEAST_3,
         "ru-northwest-2": RU_NORTHWEST_2,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "la-north-2": LA_NORTH_2,
     }
 
     @staticmethod

@@ -33,7 +33,8 @@ class BillingCreate:
         'is_auto_renew': 'bool',
         'is_auto_pay': 'bool',
         'console_url': 'str',
-        'extra_info': 'BillbingCreateExtraInfo'
+        'extra_info': 'BillbingCreateExtraInfo',
+        'is_multi_az': 'bool'
     }
 
     attribute_map = {
@@ -48,10 +49,11 @@ class BillingCreate:
         'is_auto_renew': 'is_auto_renew',
         'is_auto_pay': 'is_auto_pay',
         'console_url': 'console_url',
-        'extra_info': 'extra_info'
+        'extra_info': 'extra_info',
+        'is_multi_az': 'is_multi_az'
     }
 
-    def __init__(self, cloud_type=None, consistent_level=None, object_type=None, protect_type=None, size=None, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, console_url=None, extra_info=None):
+    def __init__(self, cloud_type=None, consistent_level=None, object_type=None, protect_type=None, size=None, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, console_url=None, extra_info=None, is_multi_az=None):
         """BillingCreate - a model defined in huaweicloud sdk"""
         
         
@@ -68,6 +70,7 @@ class BillingCreate:
         self._is_auto_pay = None
         self._console_url = None
         self._extra_info = None
+        self._is_multi_az = None
         self.discriminator = None
 
         if cloud_type is not None:
@@ -90,6 +93,8 @@ class BillingCreate:
             self.console_url = console_url
         if extra_info is not None:
             self.extra_info = extra_info
+        if is_multi_az is not None:
+            self.is_multi_az = is_multi_az
 
     @property
     def cloud_type(self):
@@ -227,7 +232,7 @@ class BillingCreate:
     def period_type(self):
         """Gets the period_type of this BillingCreate.
 
-        创建类型，按年(year)或者按月(month)
+        创建类型，charging_mode为pre_paid必填，按年(year)或者按月(month)
 
         :return: The period_type of this BillingCreate.
         :rtype: str
@@ -238,7 +243,7 @@ class BillingCreate:
     def period_type(self, period_type):
         """Sets the period_type of this BillingCreate.
 
-        创建类型，按年(year)或者按月(month)
+        创建类型，charging_mode为pre_paid必填，按年(year)或者按月(month)
 
         :param period_type: The period_type of this BillingCreate.
         :type: str
@@ -249,7 +254,7 @@ class BillingCreate:
     def period_num(self):
         """Gets the period_num of this BillingCreate.
 
-        创建类型的数量
+        创建类型的数量，charging_mode为pre_paid必填
 
         :return: The period_num of this BillingCreate.
         :rtype: int
@@ -260,7 +265,7 @@ class BillingCreate:
     def period_num(self, period_num):
         """Sets the period_num of this BillingCreate.
 
-        创建类型的数量
+        创建类型的数量，charging_mode为pre_paid必填
 
         :param period_num: The period_num of this BillingCreate.
         :type: int
@@ -352,6 +357,28 @@ class BillingCreate:
         :type: BillbingCreateExtraInfo
         """
         self._extra_info = extra_info
+
+    @property
+    def is_multi_az(self):
+        """Gets the is_multi_az of this BillingCreate.
+
+        存储库多az属性，默认为false
+
+        :return: The is_multi_az of this BillingCreate.
+        :rtype: bool
+        """
+        return self._is_multi_az
+
+    @is_multi_az.setter
+    def is_multi_az(self, is_multi_az):
+        """Sets the is_multi_az of this BillingCreate.
+
+        存储库多az属性，默认为false
+
+        :param is_multi_az: The is_multi_az of this BillingCreate.
+        :type: bool
+        """
+        self._is_multi_az = is_multi_az
 
     def to_dict(self):
         """Returns the model properties as a dict"""

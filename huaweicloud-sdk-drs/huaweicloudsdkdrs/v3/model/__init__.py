@@ -17,6 +17,7 @@ from huaweicloudsdkdrs.v3.model.batch_data_transformation_req import BatchDataTr
 from huaweicloudsdkdrs.v3.model.batch_delete_job_req import BatchDeleteJobReq
 from huaweicloudsdkdrs.v3.model.batch_delete_jobs_request import BatchDeleteJobsRequest
 from huaweicloudsdkdrs.v3.model.batch_delete_jobs_response import BatchDeleteJobsResponse
+from huaweicloudsdkdrs.v3.model.batch_import_smn_info_req import BatchImportSmnInfoReq
 from huaweicloudsdkdrs.v3.model.batch_job_action_req import BatchJobActionReq
 from huaweicloudsdkdrs.v3.model.batch_limit_speed_req import BatchLimitSpeedReq
 from huaweicloudsdkdrs.v3.model.batch_list_job_details_request import BatchListJobDetailsRequest
@@ -47,12 +48,15 @@ from huaweicloudsdkdrs.v3.model.batch_reset_password_response import BatchResetP
 from huaweicloudsdkdrs.v3.model.batch_restore_task_request import BatchRestoreTaskRequest
 from huaweicloudsdkdrs.v3.model.batch_restore_task_response import BatchRestoreTaskResponse
 from huaweicloudsdkdrs.v3.model.batch_retry_req import BatchRetryReq
+from huaweicloudsdkdrs.v3.model.batch_set_alarm_notify_info import BatchSetAlarmNotifyInfo
 from huaweicloudsdkdrs.v3.model.batch_set_definer_request import BatchSetDefinerRequest
 from huaweicloudsdkdrs.v3.model.batch_set_definer_response import BatchSetDefinerResponse
 from huaweicloudsdkdrs.v3.model.batch_set_objects_request import BatchSetObjectsRequest
 from huaweicloudsdkdrs.v3.model.batch_set_objects_response import BatchSetObjectsResponse
 from huaweicloudsdkdrs.v3.model.batch_set_policy_request import BatchSetPolicyRequest
 from huaweicloudsdkdrs.v3.model.batch_set_policy_response import BatchSetPolicyResponse
+from huaweicloudsdkdrs.v3.model.batch_set_smn_request import BatchSetSmnRequest
+from huaweicloudsdkdrs.v3.model.batch_set_smn_response import BatchSetSmnResponse
 from huaweicloudsdkdrs.v3.model.batch_set_speed_request import BatchSetSpeedRequest
 from huaweicloudsdkdrs.v3.model.batch_set_speed_response import BatchSetSpeedResponse
 from huaweicloudsdkdrs.v3.model.batch_setup_sync_policy_req import BatchSetupSyncPolicyReq
@@ -109,6 +113,7 @@ from huaweicloudsdkdrs.v3.model.delete_job_req import DeleteJobReq
 from huaweicloudsdkdrs.v3.model.delete_job_resp import DeleteJobResp
 from huaweicloudsdkdrs.v3.model.endpoint import Endpoint
 from huaweicloudsdkdrs.v3.model.endpoint_vo import EndpointVO
+from huaweicloudsdkdrs.v3.model.import_smn_resp import ImportSmnResp
 from huaweicloudsdkdrs.v3.model.inst_info import InstInfo
 from huaweicloudsdkdrs.v3.model.job_info import JobInfo
 from huaweicloudsdkdrs.v3.model.kafka_security import KafkaSecurity
@@ -122,6 +127,7 @@ from huaweicloudsdkdrs.v3.model.list_compare_result_request import ListCompareRe
 from huaweicloudsdkdrs.v3.model.list_compare_result_response import ListCompareResultResponse
 from huaweicloudsdkdrs.v3.model.list_users_request import ListUsersRequest
 from huaweicloudsdkdrs.v3.model.list_users_response import ListUsersResponse
+from huaweicloudsdkdrs.v3.model.modify_db_pwd_resp import ModifyDbPwdResp
 from huaweicloudsdkdrs.v3.model.modify_job_req import ModifyJobReq
 from huaweicloudsdkdrs.v3.model.modify_job_resp import ModifyJobResp
 from huaweicloudsdkdrs.v3.model.modify_pwd_end_point import ModifyPwdEndPoint
@@ -152,6 +158,7 @@ from huaweicloudsdkdrs.v3.model.query_progress_resp import QueryProgressResp
 from huaweicloudsdkdrs.v3.model.query_quota_info import QueryQuotaInfo
 from huaweicloudsdkdrs.v3.model.query_role_detail_resp import QueryRoleDetailResp
 from huaweicloudsdkdrs.v3.model.query_rpo_and_rto_resp import QueryRpoAndRtoResp
+from huaweicloudsdkdrs.v3.model.query_smn_info_resp import QuerySmnInfoResp
 from huaweicloudsdkdrs.v3.model.query_struct_detail_resp import QueryStructDetailResp
 from huaweicloudsdkdrs.v3.model.query_struct_process_resp import QueryStructProcessResp
 from huaweicloudsdkdrs.v3.model.query_user_detail_resp import QueryUserDetailResp
@@ -162,6 +169,7 @@ from huaweicloudsdkdrs.v3.model.resource_tag import ResourceTag
 from huaweicloudsdkdrs.v3.model.retry_info import RetryInfo
 from huaweicloudsdkdrs.v3.model.retry_task_resp import RetryTaskResp
 from huaweicloudsdkdrs.v3.model.rpo_and_rto_info import RpoAndRtoInfo
+from huaweicloudsdkdrs.v3.model.selected_set_alarm_task_req import SelectedSetAlarmTaskReq
 from huaweicloudsdkdrs.v3.model.show_job_list_request import ShowJobListRequest
 from huaweicloudsdkdrs.v3.model.show_job_list_response import ShowJobListResponse
 from huaweicloudsdkdrs.v3.model.show_monitoring_data_request import ShowMonitoringDataRequest

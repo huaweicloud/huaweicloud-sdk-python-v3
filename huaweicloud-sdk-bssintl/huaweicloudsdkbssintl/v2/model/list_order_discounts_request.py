@@ -43,7 +43,7 @@ class ListOrderDiscountsRequest:
     def order_id(self):
         """Gets the order_id of this ListOrderDiscountsRequest.
 
-        |参数名称：订单ID。| |参数的约束及描述：|
+        订单ID。
 
         :return: The order_id of this ListOrderDiscountsRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class ListOrderDiscountsRequest:
     def order_id(self, order_id):
         """Sets the order_id of this ListOrderDiscountsRequest.
 
-        |参数名称：订单ID。| |参数的约束及描述：|
+        订单ID。
 
         :param order_id: The order_id of this ListOrderDiscountsRequest.
         :type: str

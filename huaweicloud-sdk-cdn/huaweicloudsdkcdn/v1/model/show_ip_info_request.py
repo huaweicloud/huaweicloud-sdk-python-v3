@@ -70,7 +70,7 @@ class ShowIpInfoRequest:
     def ips(self):
         """Gets the ips of this ShowIpInfoRequest.
 
-        IP地址列表，以“，”分割，最多20个。
+        IP地址列表，以“,”分割，最多20个。
 
         :return: The ips of this ShowIpInfoRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ShowIpInfoRequest:
     def ips(self, ips):
         """Sets the ips of this ShowIpInfoRequest.
 
-        IP地址列表，以“，”分割，最多20个。
+        IP地址列表，以“,”分割，最多20个。
 
         :param ips: The ips of this ShowIpInfoRequest.
         :type: str

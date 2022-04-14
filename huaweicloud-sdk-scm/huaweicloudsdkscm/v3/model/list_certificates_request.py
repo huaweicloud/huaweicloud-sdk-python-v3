@@ -26,7 +26,9 @@ class ListCertificatesRequest:
         'offset': 'int',
         'sort_dir': 'str',
         'sort_key': 'str',
-        'status': 'str'
+        'status': 'str',
+        'enterprise_project_id': 'str',
+        'deploy_support': 'bool'
     }
 
     attribute_map = {
@@ -34,10 +36,12 @@ class ListCertificatesRequest:
         'offset': 'offset',
         'sort_dir': 'sort_dir',
         'sort_key': 'sort_key',
-        'status': 'status'
+        'status': 'status',
+        'enterprise_project_id': 'enterprise_project_id',
+        'deploy_support': 'deploy_support'
     }
 
-    def __init__(self, limit=None, offset=None, sort_dir=None, sort_key=None, status=None):
+    def __init__(self, limit=None, offset=None, sort_dir=None, sort_key=None, status=None, enterprise_project_id=None, deploy_support=None):
         """ListCertificatesRequest - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +51,8 @@ class ListCertificatesRequest:
         self._sort_dir = None
         self._sort_key = None
         self._status = None
+        self._enterprise_project_id = None
+        self._deploy_support = None
         self.discriminator = None
 
         if limit is not None:
@@ -59,6 +65,10 @@ class ListCertificatesRequest:
             self.sort_key = sort_key
         if status is not None:
             self.status = status
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if deploy_support is not None:
+            self.deploy_support = deploy_support
 
     @property
     def limit(self):
@@ -169,6 +179,50 @@ class ListCertificatesRequest:
         :type: str
         """
         self._status = status
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListCertificatesRequest.
+
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+
+        :return: The enterprise_project_id of this ListCertificatesRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListCertificatesRequest.
+
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+
+        :param enterprise_project_id: The enterprise_project_id of this ListCertificatesRequest.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def deploy_support(self):
+        """Gets the deploy_support of this ListCertificatesRequest.
+
+        是否支持部署。
+
+        :return: The deploy_support of this ListCertificatesRequest.
+        :rtype: bool
+        """
+        return self._deploy_support
+
+    @deploy_support.setter
+    def deploy_support(self, deploy_support):
+        """Sets the deploy_support of this ListCertificatesRequest.
+
+        是否支持部署。
+
+        :param deploy_support: The deploy_support of this ListCertificatesRequest.
+        :type: bool
+        """
+        self._deploy_support = deploy_support
 
     def to_dict(self):
         """Returns the model properties as a dict"""

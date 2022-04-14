@@ -71,7 +71,7 @@ class ListPoliciesResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListPoliciesResponse.
 
-        
+        策略总数
 
         :return: The count of this ListPoliciesResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class ListPoliciesResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListPoliciesResponse.
 
-        
+        策略总数
 
         :param count: The count of this ListPoliciesResponse.
         :type: int

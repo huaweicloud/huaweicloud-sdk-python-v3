@@ -71,7 +71,7 @@ class AddMemberResponse(SdkResponse):
     def count(self):
         """Gets the count of this AddMemberResponse.
 
-        
+        备份共享成员数量
 
         :return: The count of this AddMemberResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class AddMemberResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this AddMemberResponse.
 
-        
+        备份共享成员数量
 
         :param count: The count of this AddMemberResponse.
         :type: int

@@ -55,7 +55,7 @@ class DiscountInfoV3:
     def discount_id(self):
         """Gets the discount_id of this DiscountInfoV3.
 
-        |参数名称：折扣ID，支付的时候，如果要使用折扣，需要将这个值填入| |参数约束及描述：折扣ID，支付的时候，如果要使用折扣，需要将这个值填入|
+        订单的可用折扣ID。 支付订单时，输入该参数的值，即可使用折扣。
 
         :return: The discount_id of this DiscountInfoV3.
         :rtype: str
@@ -66,7 +66,7 @@ class DiscountInfoV3:
     def discount_id(self, discount_id):
         """Sets the discount_id of this DiscountInfoV3.
 
-        |参数名称：折扣ID，支付的时候，如果要使用折扣，需要将这个值填入| |参数约束及描述：折扣ID，支付的时候，如果要使用折扣，需要将这个值填入|
+        订单的可用折扣ID。 支付订单时，输入该参数的值，即可使用折扣。
 
         :param discount_id: The discount_id of this DiscountInfoV3.
         :type: str
@@ -77,7 +77,7 @@ class DiscountInfoV3:
     def discount_value(self):
         """Gets the discount_value of this DiscountInfoV3.
 
-        |参数名称：discountType为促销折扣或合作伙伴授予折扣时，为折扣率| |参数约束及描述：discountType为促销折扣或合作伙伴授予折扣时，为折扣率|
+        折扣率或者满减值，如果折扣模式是一口价，这个值为空。
 
         :return: The discount_value of this DiscountInfoV3.
         :rtype: str
@@ -88,7 +88,7 @@ class DiscountInfoV3:
     def discount_value(self, discount_value):
         """Sets the discount_value of this DiscountInfoV3.
 
-        |参数名称：discountType为促销折扣或合作伙伴授予折扣时，为折扣率| |参数约束及描述：discountType为促销折扣或合作伙伴授予折扣时，为折扣率|
+        折扣率或者满减值，如果折扣模式是一口价，这个值为空。
 
         :param discount_value: The discount_value of this DiscountInfoV3.
         :type: str
@@ -99,7 +99,7 @@ class DiscountInfoV3:
     def discount_type(self):
         """Gets the discount_type of this DiscountInfoV3.
 
-        |参数名称：折扣类型，取值为1：合同折扣（可以有多组）2：商务优惠（仅有一组）3：合作伙伴授予折扣（仅有一组）609：订单调价折扣| |参数的约束及描述：折扣类型，取值为1：合同折扣（可以有多组）2：商务优惠（仅有一组）3：合作伙伴授予折扣（仅有一组）609：订单调价折扣|
+        折扣类型，取值为 0：促销折扣1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
 
         :return: The discount_type of this DiscountInfoV3.
         :rtype: int
@@ -110,7 +110,7 @@ class DiscountInfoV3:
     def discount_type(self, discount_type):
         """Sets the discount_type of this DiscountInfoV3.
 
-        |参数名称：折扣类型，取值为1：合同折扣（可以有多组）2：商务优惠（仅有一组）3：合作伙伴授予折扣（仅有一组）609：订单调价折扣| |参数的约束及描述：折扣类型，取值为1：合同折扣（可以有多组）2：商务优惠（仅有一组）3：合作伙伴授予折扣（仅有一组）609：订单调价折扣|
+        折扣类型，取值为 0：促销折扣1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣
 
         :param discount_type: The discount_type of this DiscountInfoV3.
         :type: int
@@ -121,7 +121,7 @@ class DiscountInfoV3:
     def orders(self):
         """Gets the orders of this DiscountInfoV3.
 
-        |参数名称：订单列表| |参数约束以及描述：订单列表|
+        可使用折扣的订单列表。 具体请参见表3。
 
         :return: The orders of this DiscountInfoV3.
         :rtype: list[OrderV3]
@@ -132,7 +132,7 @@ class DiscountInfoV3:
     def orders(self, orders):
         """Sets the orders of this DiscountInfoV3.
 
-        |参数名称：订单列表| |参数约束以及描述：订单列表|
+        可使用折扣的订单列表。 具体请参见表3。
 
         :param orders: The orders of this DiscountInfoV3.
         :type: list[OrderV3]

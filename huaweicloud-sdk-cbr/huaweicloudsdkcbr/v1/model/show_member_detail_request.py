@@ -69,7 +69,7 @@ class ShowMemberDetailRequest:
     def member_id(self):
         """Gets the member_id of this ShowMemberDetailRequest.
 
-        成员id
+        成员id，为接收方的project_id
 
         :return: The member_id of this ShowMemberDetailRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class ShowMemberDetailRequest:
     def member_id(self, member_id):
         """Sets the member_id of this ShowMemberDetailRequest.
 
-        成员id
+        成员id，为接收方的project_id
 
         :param member_id: The member_id of this ShowMemberDetailRequest.
         :type: str

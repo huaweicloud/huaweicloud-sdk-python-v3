@@ -49,7 +49,7 @@ class ListServiceTypesResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListServiceTypesResponse.
 
-        |参数名称：总记录数| |参数约束以及描述：总记录数|
+        总数。
 
         :return: The total_count of this ListServiceTypesResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ListServiceTypesResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListServiceTypesResponse.
 
-        |参数名称：总记录数| |参数约束以及描述：总记录数|
+        总数。
 
         :param total_count: The total_count of this ListServiceTypesResponse.
         :type: int
@@ -71,7 +71,7 @@ class ListServiceTypesResponse(SdkResponse):
     def service_types(self):
         """Gets the service_types of this ListServiceTypesResponse.
 
-        |参数名称：返回的云服务类型信息| |参数约束以及描述：返回的云服务类型信息|
+        云服务类型信息列表，具体请参见表3。
 
         :return: The service_types of this ListServiceTypesResponse.
         :rtype: list[ServiceTypes]
@@ -82,7 +82,7 @@ class ListServiceTypesResponse(SdkResponse):
     def service_types(self, service_types):
         """Sets the service_types of this ListServiceTypesResponse.
 
-        |参数名称：返回的云服务类型信息| |参数约束以及描述：返回的云服务类型信息|
+        云服务类型信息列表，具体请参见表3。
 
         :param service_types: The service_types of this ListServiceTypesResponse.
         :type: list[ServiceTypes]

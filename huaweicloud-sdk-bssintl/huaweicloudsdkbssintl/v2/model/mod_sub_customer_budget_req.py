@@ -23,7 +23,7 @@ class ModSubCustomerBudgetReq:
 
     openapi_types = {
         'customer_id': 'str',
-        'budget_amount': 'decimal.Decimal',
+        'budget_amount': 'float',
         'cancel_partner_frozen': 'str'
     }
 
@@ -52,7 +52,7 @@ class ModSubCustomerBudgetReq:
     def customer_id(self):
         """Gets the customer_id of this ModSubCustomerBudgetReq.
 
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_id of this ModSubCustomerBudgetReq.
         :rtype: str
@@ -63,7 +63,7 @@ class ModSubCustomerBudgetReq:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ModSubCustomerBudgetReq.
 
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ModSubCustomerBudgetReq.
         :type: str
@@ -74,10 +74,10 @@ class ModSubCustomerBudgetReq:
     def budget_amount(self):
         """Gets the budget_amount of this ModSubCustomerBudgetReq.
 
-        |参数名称：调整的目标金额，可精确至小数点后面2位。| |参数的约束及描述：调整的目标金额，可精确至小数点后面2位。|
+        调整的目标金额。 单位：元。精确至小数点后2位。
 
         :return: The budget_amount of this ModSubCustomerBudgetReq.
-        :rtype: decimal.Decimal
+        :rtype: float
         """
         return self._budget_amount
 
@@ -85,10 +85,10 @@ class ModSubCustomerBudgetReq:
     def budget_amount(self, budget_amount):
         """Sets the budget_amount of this ModSubCustomerBudgetReq.
 
-        |参数名称：调整的目标金额，可精确至小数点后面2位。| |参数的约束及描述：调整的目标金额，可精确至小数点后面2位。|
+        调整的目标金额。 单位：元。精确至小数点后2位。
 
         :param budget_amount: The budget_amount of this ModSubCustomerBudgetReq.
-        :type: decimal.Decimal
+        :type: float
         """
         self._budget_amount = budget_amount
 
@@ -96,7 +96,7 @@ class ModSubCustomerBudgetReq:
     def cancel_partner_frozen(self):
         """Gets the cancel_partner_frozen of this ModSubCustomerBudgetReq.
 
-        |参数名称：是否在设置客户预算的同时解除账号冻结：0：否；1：是。默认为否。| |参数约束及描述：是否在设置客户预算的同时解除账号冻结：0：否；1：是。默认为否。|
+        是否在设置客户预算的同时解除账号冻结： 0：否1：是 默认值为0。
 
         :return: The cancel_partner_frozen of this ModSubCustomerBudgetReq.
         :rtype: str
@@ -107,7 +107,7 @@ class ModSubCustomerBudgetReq:
     def cancel_partner_frozen(self, cancel_partner_frozen):
         """Sets the cancel_partner_frozen of this ModSubCustomerBudgetReq.
 
-        |参数名称：是否在设置客户预算的同时解除账号冻结：0：否；1：是。默认为否。| |参数约束及描述：是否在设置客户预算的同时解除账号冻结：0：否；1：是。默认为否。|
+        是否在设置客户预算的同时解除账号冻结： 0：否1：是 默认值为0。
 
         :param cancel_partner_frozen: The cancel_partner_frozen of this ModSubCustomerBudgetReq.
         :type: str

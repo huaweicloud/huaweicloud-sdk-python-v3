@@ -43,7 +43,7 @@ class CancelCustomerOrderReq:
     def order_id(self):
         """Gets the order_id of this CancelCustomerOrderReq.
 
-        |参数名称：订单ID。| |参数约束及描述：订单ID。|
+        订单ID。 取值为调用“查询订单列表”接口时响应消息中的“order_id”字段的值。
 
         :return: The order_id of this CancelCustomerOrderReq.
         :rtype: str
@@ -54,7 +54,7 @@ class CancelCustomerOrderReq:
     def order_id(self, order_id):
         """Sets the order_id of this CancelCustomerOrderReq.
 
-        |参数名称：订单ID。| |参数约束及描述：订单ID。|
+        订单ID。 取值为调用“查询订单列表”接口时响应消息中的“order_id”字段的值。
 
         :param order_id: The order_id of this CancelCustomerOrderReq.
         :type: str

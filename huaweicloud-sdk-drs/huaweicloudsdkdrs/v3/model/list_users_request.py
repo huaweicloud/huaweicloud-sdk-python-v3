@@ -40,7 +40,8 @@ class ListUsersRequest:
         self._job_id = None
         self.discriminator = None
 
-        self.x_language = x_language
+        if x_language is not None:
+            self.x_language = x_language
         self.job_id = job_id
 
     @property

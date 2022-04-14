@@ -49,7 +49,7 @@ class ResourceExtraInfo:
     def exclude_volumes(self):
         """Gets the exclude_volumes of this ResourceExtraInfo.
 
-        需要排除备份的卷id。仅虚拟机磁盘级备份有效
+        需要排除备份的卷id。仅在多系统盘备份特性中有效，排除不需要备份的磁盘。当虚拟机新绑定磁盘时，也能继续排除之前设置不用备份的卷。
 
         :return: The exclude_volumes of this ResourceExtraInfo.
         :rtype: list[str]
@@ -60,7 +60,7 @@ class ResourceExtraInfo:
     def exclude_volumes(self, exclude_volumes):
         """Sets the exclude_volumes of this ResourceExtraInfo.
 
-        需要排除备份的卷id。仅虚拟机磁盘级备份有效
+        需要排除备份的卷id。仅在多系统盘备份特性中有效，排除不需要备份的磁盘。当虚拟机新绑定磁盘时，也能继续排除之前设置不用备份的卷。
 
         :param exclude_volumes: The exclude_volumes of this ResourceExtraInfo.
         :type: list[str]
@@ -71,7 +71,7 @@ class ResourceExtraInfo:
     def include_volumes(self):
         """Gets the include_volumes of this ResourceExtraInfo.
 
-        要备份的卷
+        指定需要备份的卷,若有指定值，则每次备份都只备份指定的卷，如虚拟机绑定存储库之后新绑定的卷不会备份；若为空默认为资源全部卷；仅虚拟机磁盘级备份特性中有效。
 
         :return: The include_volumes of this ResourceExtraInfo.
         :rtype: list[ResourceExtraInfoIncludeVolumes]
@@ -82,7 +82,7 @@ class ResourceExtraInfo:
     def include_volumes(self, include_volumes):
         """Sets the include_volumes of this ResourceExtraInfo.
 
-        要备份的卷
+        指定需要备份的卷,若有指定值，则每次备份都只备份指定的卷，如虚拟机绑定存储库之后新绑定的卷不会备份；若为空默认为资源全部卷；仅虚拟机磁盘级备份特性中有效。
 
         :param include_volumes: The include_volumes of this ResourceExtraInfo.
         :type: list[ResourceExtraInfoIncludeVolumes]

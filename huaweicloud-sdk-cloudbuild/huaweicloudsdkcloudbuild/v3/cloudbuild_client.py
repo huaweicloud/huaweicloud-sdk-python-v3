@@ -371,6 +371,73 @@ class CloudBuildClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_job_success_ratio(self, request):
+        """根据开始时间和结束时间查看构建任务的构建成功率
+
+        根据开始时间和结束时间查看构建任务的构建成功率
+
+        :param ShowJobSuccessRatioRequest request
+        :return: ShowJobSuccessRatioResponse
+        """
+        return self.show_job_success_ratio_with_http_info(request)
+
+    def show_job_success_ratio_with_http_info(self, request):
+        """根据开始时间和结束时间查看构建任务的构建成功率
+
+        根据开始时间和结束时间查看构建任务的构建成功率
+
+        :param ShowJobSuccessRatioRequest request
+        :return: ShowJobSuccessRatioResponse
+        """
+
+        all_params = ['job_id', 'start_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v3/jobs/{job_id}/success-ratio',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowJobSuccessRatioResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_last_history(self, request):
         """查询指定代码仓库最近一次成功的构建历史
 

@@ -49,7 +49,7 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ShowRefundOrderDetailsResponse.
 
-        |参数名称：总记录数。| |参数的约束及描述：总记录数。|
+        查询总数。
 
         :return: The total_count of this ShowRefundOrderDetailsResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ShowRefundOrderDetailsResponse.
 
-        |参数名称：总记录数。| |参数的约束及描述：总记录数。|
+        查询总数。
 
         :param total_count: The total_count of this ShowRefundOrderDetailsResponse.
         :type: int
@@ -71,7 +71,7 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
     def refund_infos(self):
         """Gets the refund_infos of this ShowRefundOrderDetailsResponse.
 
-        |参数名称：资源信息列表。具体请参见表2 OrderRefundInfoV2。| |参数约束以及描述：资源信息列表。具体请参见表2 OrderRefundInfoV2。|
+        资源信息列表。 具体请参见表2。
 
         :return: The refund_infos of this ShowRefundOrderDetailsResponse.
         :rtype: list[OrderRefundInfoV2]
@@ -82,7 +82,7 @@ class ShowRefundOrderDetailsResponse(SdkResponse):
     def refund_infos(self, refund_infos):
         """Sets the refund_infos of this ShowRefundOrderDetailsResponse.
 
-        |参数名称：资源信息列表。具体请参见表2 OrderRefundInfoV2。| |参数约束以及描述：资源信息列表。具体请参见表2 OrderRefundInfoV2。|
+        资源信息列表。 具体请参见表2。
 
         :param refund_infos: The refund_infos of this ShowRefundOrderDetailsResponse.
         :type: list[OrderRefundInfoV2]

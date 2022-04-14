@@ -31,7 +31,8 @@ class ListServersDetailsRequest:
         'offset': 'int',
         'reservation_id': 'str',
         'status': 'str',
-        'tags': 'str'
+        'tags': 'str',
+        'ip_eq': 'str'
     }
 
     attribute_map = {
@@ -44,10 +45,11 @@ class ListServersDetailsRequest:
         'offset': 'offset',
         'reservation_id': 'reservation_id',
         'status': 'status',
-        'tags': 'tags'
+        'tags': 'tags',
+        'ip_eq': 'ip_eq'
     }
 
-    def __init__(self, enterprise_project_id=None, flavor=None, ip=None, limit=None, name=None, not_tags=None, offset=None, reservation_id=None, status=None, tags=None):
+    def __init__(self, enterprise_project_id=None, flavor=None, ip=None, limit=None, name=None, not_tags=None, offset=None, reservation_id=None, status=None, tags=None, ip_eq=None):
         """ListServersDetailsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -62,6 +64,7 @@ class ListServersDetailsRequest:
         self._reservation_id = None
         self._status = None
         self._tags = None
+        self._ip_eq = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -84,6 +87,8 @@ class ListServersDetailsRequest:
             self.status = status
         if tags is not None:
             self.tags = tags
+        if ip_eq is not None:
+            self.ip_eq = ip_eq
 
     @property
     def enterprise_project_id(self):
@@ -304,6 +309,28 @@ class ListServersDetailsRequest:
         :type: str
         """
         self._tags = tags
+
+    @property
+    def ip_eq(self):
+        """Gets the ip_eq of this ListServersDetailsRequest.
+
+        IPv4地址过滤结果，匹配规则为精确匹配。
+
+        :return: The ip_eq of this ListServersDetailsRequest.
+        :rtype: str
+        """
+        return self._ip_eq
+
+    @ip_eq.setter
+    def ip_eq(self, ip_eq):
+        """Sets the ip_eq of this ListServersDetailsRequest.
+
+        IPv4地址过滤结果，匹配规则为精确匹配。
+
+        :param ip_eq: The ip_eq of this ListServersDetailsRequest.
+        :type: str
+        """
+        self._ip_eq = ip_eq
 
     def to_dict(self):
         """Returns the model properties as a dict"""

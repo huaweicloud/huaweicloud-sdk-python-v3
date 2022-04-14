@@ -307,9 +307,9 @@ class BssintlAsyncClient(Client):
 
 
     def list_resource_types_async(self, request):
-        """查询资源类型列表(新)
+        """查询资源类型列表
 
-        功能描述：客户在客户自建平台查询资源类型的列表。
+        伙伴在伙伴销售平台查询资源类型的列表。
 
         :param ListResourceTypesRequest request
         :return: ListResourceTypesResponse
@@ -317,15 +317,15 @@ class BssintlAsyncClient(Client):
         return self.list_resource_types_with_http_info(request)
 
     def list_resource_types_with_http_info(self, request):
-        """查询资源类型列表(新)
+        """查询资源类型列表
 
-        功能描述：客户在客户自建平台查询资源类型的列表。
+        伙伴在伙伴销售平台查询资源类型的列表。
 
         :param ListResourceTypesRequest request
         :return: ListResourceTypesResponse
         """
 
-        all_params = ['x_language', 'limit', 'offset']
+        all_params = ['x_language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -336,10 +336,10 @@ class BssintlAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -374,9 +374,9 @@ class BssintlAsyncClient(Client):
 
 
     def list_service_types_async(self, request):
-        """查询云服务类型列表(新)
+        """查询云服务类型列表
 
-        功能描述：伙伴在伙伴销售平台查询云服务类型的列表。
+        伙伴在伙伴销售平台查询云服务类型的列表。
 
         :param ListServiceTypesRequest request
         :return: ListServiceTypesResponse
@@ -384,15 +384,15 @@ class BssintlAsyncClient(Client):
         return self.list_service_types_with_http_info(request)
 
     def list_service_types_with_http_info(self, request):
-        """查询云服务类型列表(新)
+        """查询云服务类型列表
 
-        功能描述：伙伴在伙伴销售平台查询云服务类型的列表。
+        伙伴在伙伴销售平台查询云服务类型的列表。
 
         :param ListServiceTypesRequest request
         :return: ListServiceTypesResponse
         """
 
-        all_params = ['x_language', 'limit', 'offset']
+        all_params = ['x_language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -403,10 +403,10 @@ class BssintlAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -756,7 +756,7 @@ class BssintlAsyncClient(Client):
 
 
     def freeze_sub_customers_async(self, request):
-        """冻结伙伴子客户
+        """冻结客户账号
 
         功能描述：冻结伙伴子客户
 
@@ -766,7 +766,7 @@ class BssintlAsyncClient(Client):
         return self.freeze_sub_customers_with_http_info(request)
 
     def freeze_sub_customers_with_http_info(self, request):
-        """冻结伙伴子客户
+        """冻结客户账号
 
         功能描述：冻结伙伴子客户
 
@@ -1033,6 +1033,144 @@ class BssintlAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCustomerselfResourceRecordsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_invoices_async(self, request):
+        """查询发票列表
+
+        功能描述：查询发票列表
+
+        :param ListInvoicesRequest request
+        :return: ListInvoicesResponse
+        """
+        return self.list_invoices_with_http_info(request)
+
+    def list_invoices_with_http_info(self, request):
+        """查询发票列表
+
+        功能描述：查询发票列表
+
+        :param ListInvoicesRequest request
+        :return: ListInvoicesResponse
+        """
+
+        all_params = ['start_time', 'end_time', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{domain_id}/payments/intl-invoices',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListInvoicesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_monthly_expenditures_async(self, request):
+        """查询消费汇总(客户)
+
+        功能描述：客户可以查询自身的消费汇总单的功能，消费按月汇总。
+
+        :param ListMonthlyExpendituresRequest request
+        :return: ListMonthlyExpendituresResponse
+        """
+        return self.list_monthly_expenditures_with_http_info(request)
+
+    def list_monthly_expenditures_with_http_info(self, request):
+        """查询消费汇总(客户)
+
+        功能描述：客户可以查询自身的消费汇总单的功能，消费按月汇总。
+
+        :param ListMonthlyExpendituresRequest request
+        :return: ListMonthlyExpendituresResponse
+        """
+
+        all_params = ['cycle', 'cloud_service_type_code', 'type', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cycle' in local_var_params:
+            query_params.append(('cycle', local_var_params['cycle']))
+        if 'cloud_service_type_code' in local_var_params:
+            query_params.append(('cloud_service_type_code', local_var_params['cloud_service_type_code']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterpriseProjectId', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{domain_id}/customer/account-mgr/bill/monthly-sum',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListMonthlyExpendituresResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1310,7 +1448,7 @@ class BssintlAsyncClient(Client):
         :return: ListServiceResourcesResponse
         """
 
-        all_params = ['service_type_code', 'x_language', 'limit', 'offset']
+        all_params = ['service_type_code', 'x_language', 'offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1323,10 +1461,10 @@ class BssintlAsyncClient(Client):
         query_params = []
         if 'service_type_code' in local_var_params:
             query_params.append(('service_type_code', local_var_params['service_type_code']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -1363,7 +1501,7 @@ class BssintlAsyncClient(Client):
     def list_sub_customer_coupons_async(self, request):
         """查询优惠券列表
 
-        功能描述：伙伴可以查询自身的优惠券信息。
+        功能描述：伙伴/客户可以查询自身的优惠券信息。
 
         :param ListSubCustomerCouponsRequest request
         :return: ListSubCustomerCouponsResponse
@@ -1373,13 +1511,13 @@ class BssintlAsyncClient(Client):
     def list_sub_customer_coupons_with_http_info(self, request):
         """查询优惠券列表
 
-        功能描述：伙伴可以查询自身的优惠券信息。
+        功能描述：伙伴/客户可以查询自身的优惠券信息。
 
         :param ListSubCustomerCouponsRequest request
         :return: ListSubCustomerCouponsResponse
         """
 
-        all_params = ['coupon_id', 'order_id', 'promotion_plan_id', 'coupon_type', 'status', 'active_start_time', 'active_end_time', 'offset', 'limit', 'source_id', 'indirect_partner_id']
+        all_params = ['coupon_id', 'order_id', 'promotion_plan_id', 'coupon_type', 'status', 'active_start_time', 'active_end_time', 'offset', 'limit', 'source_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1410,8 +1548,6 @@ class BssintlAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'source_id' in local_var_params:
             query_params.append(('source_id', local_var_params['source_id']))
-        if 'indirect_partner_id' in local_var_params:
-            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
 
         header_params = {}
 
@@ -1578,7 +1714,7 @@ class BssintlAsyncClient(Client):
     def send_verification_message_code_async(self, request):
         """发送验证码
 
-        功能描述：客户注册时，如果填写了手机号，可以向对应的手机发送注册验证码，校验信息的正确性。使用个人银行卡方式进行实名认证时，通过该接口向指定的手机发送验证码。
+        功能描述：客户注册时，如果填写了邮箱，可以向对应的邮箱发送注册验证码，校验信息的正确性。
 
         :param SendVerificationMessageCodeRequest request
         :return: SendVerificationMessageCodeResponse
@@ -1588,7 +1724,7 @@ class BssintlAsyncClient(Client):
     def send_verification_message_code_with_http_info(self, request):
         """发送验证码
 
-        功能描述：客户注册时，如果填写了手机号，可以向对应的手机发送注册验证码，校验信息的正确性。使用个人银行卡方式进行实名认证时，通过该接口向指定的手机发送验证码。
+        功能描述：客户注册时，如果填写了邮箱，可以向对应的邮箱发送注册验证码，校验信息的正确性。
 
         :param SendVerificationMessageCodeRequest request
         :return: SendVerificationMessageCodeResponse
@@ -1641,7 +1777,7 @@ class BssintlAsyncClient(Client):
     def show_customer_account_balances_async(self, request):
         """查询账户余额
 
-        功能描述：查询账户余额
+        功能描述：客户可以查询自身的账户余额。
 
         :param ShowCustomerAccountBalancesRequest request
         :return: ShowCustomerAccountBalancesResponse
@@ -1651,7 +1787,7 @@ class BssintlAsyncClient(Client):
     def show_customer_account_balances_with_http_info(self, request):
         """查询账户余额
 
-        功能描述：查询账户余额
+        功能描述：客户可以查询自身的账户余额。
 
         :param ShowCustomerAccountBalancesRequest request
         :return: ShowCustomerAccountBalancesResponse
@@ -1693,81 +1829,6 @@ class BssintlAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowCustomerAccountBalancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-
-    def show_customer_monthly_sum_async(self, request):
-        """查询汇总账单
-
-        功能描述：客户在客户自建平台查询自身的消费汇总账单，此账单按月汇总消费数据。
-
-        :param ShowCustomerMonthlySumRequest request
-        :return: ShowCustomerMonthlySumResponse
-        """
-        return self.show_customer_monthly_sum_with_http_info(request)
-
-    def show_customer_monthly_sum_with_http_info(self, request):
-        """查询汇总账单
-
-        功能描述：客户在客户自建平台查询自身的消费汇总账单，此账单按月汇总消费数据。
-
-        :param ShowCustomerMonthlySumRequest request
-        :return: ShowCustomerMonthlySumResponse
-        """
-
-        all_params = ['bill_cycle', 'service_type_code', 'enterprise_project_id', 'offset', 'limit', 'method', 'sub_customer_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'bill_cycle' in local_var_params:
-            query_params.append(('bill_cycle', local_var_params['bill_cycle']))
-        if 'service_type_code' in local_var_params:
-            query_params.append(('service_type_code', local_var_params['service_type_code']))
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'method' in local_var_params:
-            query_params.append(('method', local_var_params['method']))
-        if 'sub_customer_id' in local_var_params:
-            query_params.append(('sub_customer_id', local_var_params['sub_customer_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/bills/customer-bills/monthly-sum',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowCustomerMonthlySumResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1901,7 +1962,7 @@ class BssintlAsyncClient(Client):
 
 
     def unfreeze_sub_customers_async(self, request):
-        """解冻伙伴子客户
+        """解冻客户账号
 
         功能描述：解冻伙伴子客户
 
@@ -1911,7 +1972,7 @@ class BssintlAsyncClient(Client):
         return self.unfreeze_sub_customers_with_http_info(request)
 
     def unfreeze_sub_customers_with_http_info(self, request):
-        """解冻伙伴子客户
+        """解冻客户账号
 
         功能描述：解冻伙伴子客户
 
@@ -2360,7 +2421,7 @@ class BssintlAsyncClient(Client):
         :return: ListCustomerOrdersResponse
         """
 
-        all_params = ['order_id', 'customer_id', 'create_time_begin', 'create_time_end', 'service_type_code', 'status', 'order_type', 'limit', 'offset', 'order_by', 'payment_time_begin', 'payment_time_end', 'indirect_partner_id']
+        all_params = ['order_id', 'customer_id', 'create_time_begin', 'create_time_end', 'service_type_code', 'status', 'order_type', 'limit', 'offset', 'order_by', 'payment_time_begin', 'payment_time_end']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2395,8 +2456,6 @@ class BssintlAsyncClient(Client):
             query_params.append(('payment_time_begin', local_var_params['payment_time_begin']))
         if 'payment_time_end' in local_var_params:
             query_params.append(('payment_time_end', local_var_params['payment_time_end']))
-        if 'indirect_partner_id' in local_var_params:
-            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
 
         header_params = {}
 
@@ -2636,7 +2695,7 @@ class BssintlAsyncClient(Client):
         :return: ShowCustomerOrderDetailsResponse
         """
 
-        all_params = ['order_id', 'x_language', 'limit', 'offset', 'indirect_partner_id']
+        all_params = ['order_id', 'x_language', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2653,8 +2712,6 @@ class BssintlAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
-        if 'indirect_partner_id' in local_var_params:
-            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
 
         header_params = {}
         if 'x_language' in local_var_params:

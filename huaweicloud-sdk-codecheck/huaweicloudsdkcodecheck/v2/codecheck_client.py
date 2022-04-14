@@ -190,6 +190,79 @@ class CodeCheckClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def check_ruleset_parameters(self, request):
+        """查询任务规则集的检查参数
+
+        查询任务规则集的检查参数
+
+        :param CheckRulesetParametersRequest request
+        :return: CheckRulesetParametersResponse
+        """
+        return self.check_ruleset_parameters_with_http_info(request)
+
+    def check_ruleset_parameters_with_http_info(self, request):
+        """查询任务规则集的检查参数
+
+        查询任务规则集的检查参数
+
+        :param CheckRulesetParametersRequest request
+        :return: CheckRulesetParametersResponse
+        """
+
+        all_params = ['project_id', 'task_id', 'ruleset_id', 'language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+        if 'ruleset_id' in local_var_params:
+            path_params['ruleset_id'] = local_var_params['ruleset_id']
+
+        query_params = []
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/tasks/{task_id}/ruleset/{ruleset_id}/check-parameters',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CheckRulesetParametersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_ruleset(self, request):
         """创建自定义规则集
 
@@ -1376,6 +1449,75 @@ class CodeCheckClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowTasklogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def show_tasks_rulesets(self, request):
+        """查询任务的已选规则集列表
+
+        查询任务的已选规则集列表。
+
+        :param ShowTasksRulesetsRequest request
+        :return: ShowTasksRulesetsResponse
+        """
+        return self.show_tasks_rulesets_with_http_info(request)
+
+    def show_tasks_rulesets_with_http_info(self, request):
+        """查询任务的已选规则集列表
+
+        查询任务的已选规则集列表。
+
+        :param ShowTasksRulesetsRequest request
+        :return: ShowTasksRulesetsResponse
+        """
+
+        all_params = ['project_id', 'task_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/tasks/{task_id}/rulesets',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowTasksRulesetsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

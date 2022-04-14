@@ -46,14 +46,10 @@ class AomMappingLogStreamInfo:
         self._target_log_stream_name = None
         self.discriminator = None
 
-        if target_log_group_id is not None:
-            self.target_log_group_id = target_log_group_id
-        if target_log_group_name is not None:
-            self.target_log_group_name = target_log_group_name
-        if target_log_stream_id is not None:
-            self.target_log_stream_id = target_log_stream_id
-        if target_log_stream_name is not None:
-            self.target_log_stream_name = target_log_stream_name
+        self.target_log_group_id = target_log_group_id
+        self.target_log_group_name = target_log_group_name
+        self.target_log_stream_id = target_log_stream_id
+        self.target_log_stream_name = target_log_stream_name
 
     @property
     def target_log_group_id(self):

@@ -43,7 +43,7 @@ class ShowRefundOrderDetailsRequest:
     def order_id(self):
         """Gets the order_id of this ShowRefundOrderDetailsRequest.
 
-        |参数名称：订单ID。| |参数的约束及描述：|
+        退订订单或者降配订单的ID。
 
         :return: The order_id of this ShowRefundOrderDetailsRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class ShowRefundOrderDetailsRequest:
     def order_id(self, order_id):
         """Sets the order_id of this ShowRefundOrderDetailsRequest.
 
-        |参数名称：订单ID。| |参数的约束及描述：|
+        退订订单或者降配订单的ID。
 
         :param order_id: The order_id of this ShowRefundOrderDetailsRequest.
         :type: str

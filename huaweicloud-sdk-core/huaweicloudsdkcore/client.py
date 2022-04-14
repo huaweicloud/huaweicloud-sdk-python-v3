@@ -32,7 +32,7 @@ import simplejson as json
 from six.moves.urllib.parse import quote, urlparse
 from requests_toolbelt import MultipartEncoder
 
-from huaweicloudsdkcore.auth.credentials import BasicCredentials, EnvCredentials
+from huaweicloudsdkcore.auth.credentials import BasicCredentials, EnvCredentialHelper, DerivedCredentials
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.http.http_handler import HttpHandler
@@ -49,6 +49,7 @@ class ClientBuilder(object):
     def __init__(self, client_type, credential_type=BasicCredentials.__name__):
         self._client_type = client_type
         self._credential_type = credential_type.split(',')
+        self._derived_auth_service_name = None
         self._config = None
         self._credentials = None
         self._region = None
@@ -99,12 +100,16 @@ class ClientBuilder(object):
         }
         return self
 
+    def _with_derived_auth_service_name(self, derived_auth_service_name):
+        self._derived_auth_service_name = derived_auth_service_name
+        return self
+
     def build(self):
         if self._config is None:
             self._config = HttpConfig.get_default_config()
 
         if self._credentials is None:
-            self._credentials = EnvCredentials.load_credential_from_env(self._credential_type[0])
+            self._credentials = EnvCredentialHelper.load_credential_from_env(self._credential_type[0])
         if self._credentials is None:
             raise ValueError("credential can not be None, %s credential objects are required"
                              % ",".join(self._credential_type))
@@ -121,6 +126,9 @@ class ClientBuilder(object):
         if self._region is not None:
             self._endpoint = self._region.endpoint
             self._credentials = self._credentials.process_auth_params(client.get_http_client(), self._region.id)
+
+            if isinstance(self._credentials, DerivedCredentials):
+                self._credentials._process_derived_auth_params(self._derived_auth_service_name, self._region.id)
 
         if not self._endpoint.startswith(self._http_scheme):
             self._endpoint = self._https_scheme + "://" + self._endpoint

@@ -69,7 +69,7 @@ class AmountInfomationV2:
     def discounts(self):
         """Gets the discounts of this AmountInfomationV2.
 
-        |参数名称：费用项。具体请参见表 DiscountItemV2。| |参数约束以及描述：费用项。具体请参见表 DiscountItemV2。|
+        费用项。 具体请参见表7。
 
         :return: The discounts of this AmountInfomationV2.
         :rtype: list[DiscountItemV2]
@@ -80,7 +80,7 @@ class AmountInfomationV2:
     def discounts(self, discounts):
         """Sets the discounts of this AmountInfomationV2.
 
-        |参数名称：费用项。具体请参见表 DiscountItemV2。| |参数约束以及描述：费用项。具体请参见表 DiscountItemV2。|
+        费用项。 具体请参见表7。
 
         :param discounts: The discounts of this AmountInfomationV2.
         :type: list[DiscountItemV2]
@@ -91,7 +91,7 @@ class AmountInfomationV2:
     def flexipurchase_coupon_amount(self):
         """Gets the flexipurchase_coupon_amount of this AmountInfomationV2.
 
-        |参数名称：现金券金额，预留。| |参数的约束及描述：现金券金额，预留。|
+        现金券金额，预留。
 
         :return: The flexipurchase_coupon_amount of this AmountInfomationV2.
         :rtype: float
@@ -102,7 +102,7 @@ class AmountInfomationV2:
     def flexipurchase_coupon_amount(self, flexipurchase_coupon_amount):
         """Sets the flexipurchase_coupon_amount of this AmountInfomationV2.
 
-        |参数名称：现金券金额，预留。| |参数的约束及描述：现金券金额，预留。|
+        现金券金额，预留。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this AmountInfomationV2.
         :type: float
@@ -113,7 +113,7 @@ class AmountInfomationV2:
     def coupon_amount(self):
         """Gets the coupon_amount of this AmountInfomationV2.
 
-        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
+        代金券金额。
 
         :return: The coupon_amount of this AmountInfomationV2.
         :rtype: float
@@ -124,7 +124,7 @@ class AmountInfomationV2:
     def coupon_amount(self, coupon_amount):
         """Sets the coupon_amount of this AmountInfomationV2.
 
-        |参数名称：代金券金额。| |参数的约束及描述：代金券金额。|
+        代金券金额。
 
         :param coupon_amount: The coupon_amount of this AmountInfomationV2.
         :type: float
@@ -135,7 +135,7 @@ class AmountInfomationV2:
     def stored_card_amount(self):
         """Gets the stored_card_amount of this AmountInfomationV2.
 
-        |参数名称：储值卡金额，预留。| |参数的约束及描述：储值卡金额，预留。|
+        储值卡金额，预留。
 
         :return: The stored_card_amount of this AmountInfomationV2.
         :rtype: float
@@ -146,7 +146,7 @@ class AmountInfomationV2:
     def stored_card_amount(self, stored_card_amount):
         """Sets the stored_card_amount of this AmountInfomationV2.
 
-        |参数名称：储值卡金额，预留。| |参数的约束及描述：储值卡金额，预留。|
+        储值卡金额，预留。
 
         :param stored_card_amount: The stored_card_amount of this AmountInfomationV2.
         :type: float
@@ -157,7 +157,7 @@ class AmountInfomationV2:
     def commission_amount(self):
         """Gets the commission_amount of this AmountInfomationV2.
 
-        |参数名称：手续费（仅退订订单存在）。| |参数的约束及描述：手续费（仅退订订单存在）。|
+        手续费（仅退订订单存在）。
 
         :return: The commission_amount of this AmountInfomationV2.
         :rtype: float
@@ -168,7 +168,7 @@ class AmountInfomationV2:
     def commission_amount(self, commission_amount):
         """Sets the commission_amount of this AmountInfomationV2.
 
-        |参数名称：手续费（仅退订订单存在）。| |参数的约束及描述：手续费（仅退订订单存在）。|
+        手续费（仅退订订单存在）。
 
         :param commission_amount: The commission_amount of this AmountInfomationV2.
         :type: float
@@ -179,7 +179,7 @@ class AmountInfomationV2:
     def consumed_amount(self):
         """Gets the consumed_amount of this AmountInfomationV2.
 
-        |参数名称：消费金额（仅退订订单存在）。| |参数的约束及描述：消费金额（仅退订订单存在）。|
+        消费金额（仅退订订单存在）。
 
         :return: The consumed_amount of this AmountInfomationV2.
         :rtype: float
@@ -190,7 +190,7 @@ class AmountInfomationV2:
     def consumed_amount(self, consumed_amount):
         """Sets the consumed_amount of this AmountInfomationV2.
 
-        |参数名称：消费金额（仅退订订单存在）。| |参数的约束及描述：消费金额（仅退订订单存在）。|
+        消费金额（仅退订订单存在）。
 
         :param consumed_amount: The consumed_amount of this AmountInfomationV2.
         :type: float

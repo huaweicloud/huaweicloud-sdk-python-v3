@@ -33,11 +33,11 @@ class VaultGet:
         'enterprise_project_id': 'str',
         'auto_bind': 'bool',
         'bind_rules': 'VaultBindRules',
+        'user_id': 'str',
+        'created_at': 'str',
         'auto_expand': 'bool',
         'smn_notify': 'bool',
         'threshold': 'int',
-        'user_id': 'str',
-        'created_at': 'str',
         'updated_at': 'str',
         'version': 'str'
     }
@@ -54,16 +54,16 @@ class VaultGet:
         'enterprise_project_id': 'enterprise_project_id',
         'auto_bind': 'auto_bind',
         'bind_rules': 'bind_rules',
+        'user_id': 'user_id',
+        'created_at': 'created_at',
         'auto_expand': 'auto_expand',
         'smn_notify': 'smn_notify',
         'threshold': 'threshold',
-        'user_id': 'user_id',
-        'created_at': 'created_at',
         'updated_at': 'updated_at',
         'version': 'version'
     }
 
-    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None, smn_notify=None, threshold=None, user_id=None, created_at=None, updated_at=None, version=None):
+    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, updated_at=None, version=None):
         """VaultGet - a model defined in huaweicloud sdk"""
         
         
@@ -79,11 +79,11 @@ class VaultGet:
         self._enterprise_project_id = None
         self._auto_bind = None
         self._bind_rules = None
+        self._user_id = None
+        self._created_at = None
         self._auto_expand = None
         self._smn_notify = None
         self._threshold = None
-        self._user_id = None
-        self._created_at = None
         self._updated_at = None
         self._version = None
         self.discriminator = None
@@ -104,15 +104,16 @@ class VaultGet:
             self.auto_bind = auto_bind
         if bind_rules is not None:
             self.bind_rules = bind_rules
+        if user_id is not None:
+            self.user_id = user_id
+        if created_at is not None:
+            self.created_at = created_at
         if auto_expand is not None:
             self.auto_expand = auto_expand
         if smn_notify is not None:
             self.smn_notify = smn_notify
         if threshold is not None:
             self.threshold = threshold
-        if user_id is not None:
-            self.user_id = user_id
-        self.created_at = created_at
         self.updated_at = updated_at
         if version is not None:
             self.version = version
@@ -141,7 +142,7 @@ class VaultGet:
     def description(self):
         """Gets the description of this VaultGet.
 
-        描述
+        存储库自定义描述信息。
 
         :return: The description of this VaultGet.
         :rtype: str
@@ -152,7 +153,7 @@ class VaultGet:
     def description(self, description):
         """Sets the description of this VaultGet.
 
-        描述
+        存储库自定义描述信息。
 
         :param description: The description of this VaultGet.
         :type: str
@@ -163,7 +164,7 @@ class VaultGet:
     def id(self):
         """Gets the id of this VaultGet.
 
-        保管库id
+        存储库ID
 
         :return: The id of this VaultGet.
         :rtype: str
@@ -174,7 +175,7 @@ class VaultGet:
     def id(self, id):
         """Sets the id of this VaultGet.
 
-        保管库id
+        存储库ID
 
         :param id: The id of this VaultGet.
         :type: str
@@ -185,7 +186,7 @@ class VaultGet:
     def name(self):
         """Gets the name of this VaultGet.
 
-        保管库名称
+        存储库名称
 
         :return: The name of this VaultGet.
         :rtype: str
@@ -196,7 +197,7 @@ class VaultGet:
     def name(self, name):
         """Sets the name of this VaultGet.
 
-        保管库名称
+        存储库名称
 
         :param name: The name of this VaultGet.
         :type: str
@@ -207,7 +208,7 @@ class VaultGet:
     def project_id(self):
         """Gets the project_id of this VaultGet.
 
-        项目id
+        项目ID
 
         :return: The project_id of this VaultGet.
         :rtype: str
@@ -218,7 +219,7 @@ class VaultGet:
     def project_id(self, project_id):
         """Sets the project_id of this VaultGet.
 
-        项目id
+        项目ID
 
         :param project_id: The project_id of this VaultGet.
         :type: str
@@ -229,7 +230,7 @@ class VaultGet:
     def provider_id(self):
         """Gets the provider_id of this VaultGet.
 
-        
+        存储库资源类型id
 
         :return: The provider_id of this VaultGet.
         :rtype: str
@@ -240,7 +241,7 @@ class VaultGet:
     def provider_id(self, provider_id):
         """Sets the provider_id of this VaultGet.
 
-        
+        存储库资源类型id
 
         :param provider_id: The provider_id of this VaultGet.
         :type: str
@@ -295,7 +296,7 @@ class VaultGet:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this VaultGet.
 
-        企业项目id
+        企业项目id，默认为‘0’。
 
         :return: The enterprise_project_id of this VaultGet.
         :rtype: str
@@ -306,7 +307,7 @@ class VaultGet:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this VaultGet.
 
-        企业项目id
+        企业项目id，默认为‘0’。
 
         :param enterprise_project_id: The enterprise_project_id of this VaultGet.
         :type: str
@@ -354,6 +355,50 @@ class VaultGet:
         :type: VaultBindRules
         """
         self._bind_rules = bind_rules
+
+    @property
+    def user_id(self):
+        """Gets the user_id of this VaultGet.
+
+        用户id
+
+        :return: The user_id of this VaultGet.
+        :rtype: str
+        """
+        return self._user_id
+
+    @user_id.setter
+    def user_id(self, user_id):
+        """Sets the user_id of this VaultGet.
+
+        用户id
+
+        :param user_id: The user_id of this VaultGet.
+        :type: str
+        """
+        self._user_id = user_id
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this VaultGet.
+
+        创建时间,例如:\"2020-02-05T10:38:34.209782\"
+
+        :return: The created_at of this VaultGet.
+        :rtype: str
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this VaultGet.
+
+        创建时间,例如:\"2020-02-05T10:38:34.209782\"
+
+        :param created_at: The created_at of this VaultGet.
+        :type: str
+        """
+        self._created_at = created_at
 
     @property
     def auto_expand(self):
@@ -420,50 +465,6 @@ class VaultGet:
         :type: int
         """
         self._threshold = threshold
-
-    @property
-    def user_id(self):
-        """Gets the user_id of this VaultGet.
-
-        用户id
-
-        :return: The user_id of this VaultGet.
-        :rtype: str
-        """
-        return self._user_id
-
-    @user_id.setter
-    def user_id(self, user_id):
-        """Sets the user_id of this VaultGet.
-
-        用户id
-
-        :param user_id: The user_id of this VaultGet.
-        :type: str
-        """
-        self._user_id = user_id
-
-    @property
-    def created_at(self):
-        """Gets the created_at of this VaultGet.
-
-        创建时间,例如:\"2020-02-05T10:38:34.209782\"
-
-        :return: The created_at of this VaultGet.
-        :rtype: str
-        """
-        return self._created_at
-
-    @created_at.setter
-    def created_at(self, created_at):
-        """Sets the created_at of this VaultGet.
-
-        创建时间,例如:\"2020-02-05T10:38:34.209782\"
-
-        :param created_at: The created_at of this VaultGet.
-        :type: str
-        """
-        self._created_at = created_at
 
     @property
     def updated_at(self):

@@ -50,8 +50,7 @@ class EventInfoDetail:
         self.discriminator = None
 
         self.event_name = event_name
-        if event_source is not None:
-            self.event_source = event_source
+        self.event_source = event_source
         self.time = time
         self.detail = detail
         if event_id is not None:

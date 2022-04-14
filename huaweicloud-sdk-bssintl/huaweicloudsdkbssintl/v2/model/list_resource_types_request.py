@@ -23,38 +23,38 @@ class ListResourceTypesRequest:
 
     openapi_types = {
         'x_language': 'str',
-        'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
-        'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, x_language=None, limit=None, offset=None):
+    def __init__(self, x_language=None, offset=None, limit=None):
         """ListResourceTypesRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._x_language = None
-        self._limit = None
         self._offset = None
+        self._limit = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
-        if limit is not None:
-            self.limit = limit
         if offset is not None:
             self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def x_language(self):
         """Gets the x_language of this ListResourceTypesRequest.
 
-        |语言 zh_CN：中文 en_US：英文|
+        语言。zh_CN：中文en_US：英文缺省为zh_CN。
 
         :return: The x_language of this ListResourceTypesRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class ListResourceTypesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListResourceTypesRequest.
 
-        |语言 zh_CN：中文 en_US：英文|
+        语言。zh_CN：中文en_US：英文缺省为zh_CN。
 
         :param x_language: The x_language of this ListResourceTypesRequest.
         :type: str
@@ -73,32 +73,10 @@ class ListResourceTypesRequest:
         self._x_language = x_language
 
     @property
-    def limit(self):
-        """Gets the limit of this ListResourceTypesRequest.
-
-        |参数名称：每次查询的数量。默认值为10。| |参数的约束及描述：每页大小，缺省为1000。|
-
-        :return: The limit of this ListResourceTypesRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListResourceTypesRequest.
-
-        |参数名称：每次查询的数量。默认值为10。| |参数的约束及描述：每页大小，缺省为1000。|
-
-        :param limit: The limit of this ListResourceTypesRequest.
-        :type: int
-        """
-        self._limit = limit
-
-    @property
     def offset(self):
         """Gets the offset of this ListResourceTypesRequest.
 
-        |参数名称：页数，从0开始。默认值为0。| |参数的约束及描述：从0开始。默认值为0。|
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :return: The offset of this ListResourceTypesRequest.
         :rtype: int
@@ -109,12 +87,34 @@ class ListResourceTypesRequest:
     def offset(self, offset):
         """Sets the offset of this ListResourceTypesRequest.
 
-        |参数名称：页数，从0开始。默认值为0。| |参数的约束及描述：从0开始。默认值为0。|
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListResourceTypesRequest.
         :type: int
         """
         self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListResourceTypesRequest.
+
+        每次查询的数量，默认值为10。
+
+        :return: The limit of this ListResourceTypesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListResourceTypesRequest.
+
+        每次查询的数量，默认值为10。
+
+        :param limit: The limit of this ListResourceTypesRequest.
+        :type: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

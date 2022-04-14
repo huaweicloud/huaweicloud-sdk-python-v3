@@ -79,7 +79,7 @@ class ListFreeResourceInfosReq:
     def region_code(self):
         """Gets the region_code of this ListFreeResourceInfosReq.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :return: The region_code of this ListFreeResourceInfosReq.
         :rtype: str
@@ -90,7 +90,7 @@ class ListFreeResourceInfosReq:
     def region_code(self, region_code):
         """Sets the region_code of this ListFreeResourceInfosReq.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this ListFreeResourceInfosReq.
         :type: str
@@ -101,7 +101,7 @@ class ListFreeResourceInfosReq:
     def order_id(self):
         """Gets the order_id of this ListFreeResourceInfosReq.
 
-        |参数名称：订单ID。| |参数约束及描述：订单ID。|
+        订单ID。
 
         :return: The order_id of this ListFreeResourceInfosReq.
         :rtype: str
@@ -112,7 +112,7 @@ class ListFreeResourceInfosReq:
     def order_id(self, order_id):
         """Sets the order_id of this ListFreeResourceInfosReq.
 
-        |参数名称：订单ID。| |参数约束及描述：订单ID。|
+        订单ID。
 
         :param order_id: The order_id of this ListFreeResourceInfosReq.
         :type: str
@@ -123,7 +123,7 @@ class ListFreeResourceInfosReq:
     def product_id(self):
         """Gets the product_id of this ListFreeResourceInfosReq.
 
-        |参数名称：产品ID，即资源包ID。| |参数约束及描述：产品ID，即资源包ID。|
+        产品ID，即资源包ID。
 
         :return: The product_id of this ListFreeResourceInfosReq.
         :rtype: str
@@ -134,7 +134,7 @@ class ListFreeResourceInfosReq:
     def product_id(self, product_id):
         """Sets the product_id of this ListFreeResourceInfosReq.
 
-        |参数名称：产品ID，即资源包ID。| |参数约束及描述：产品ID，即资源包ID。|
+        产品ID，即资源包ID。
 
         :param product_id: The product_id of this ListFreeResourceInfosReq.
         :type: str
@@ -145,7 +145,7 @@ class ListFreeResourceInfosReq:
     def product_name(self):
         """Gets the product_name of this ListFreeResourceInfosReq.
 
-        |参数名称：产品名称，即资源包名称。| |参数约束及描述：产品名称，即资源包名称。|
+        产品名称，即资源包名称。
 
         :return: The product_name of this ListFreeResourceInfosReq.
         :rtype: str
@@ -156,7 +156,7 @@ class ListFreeResourceInfosReq:
     def product_name(self, product_name):
         """Sets the product_name of this ListFreeResourceInfosReq.
 
-        |参数名称：产品名称，即资源包名称。| |参数约束及描述：产品名称，即资源包名称。|
+        产品名称，即资源包名称。
 
         :param product_name: The product_name of this ListFreeResourceInfosReq.
         :type: str
@@ -167,7 +167,7 @@ class ListFreeResourceInfosReq:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListFreeResourceInfosReq.
 
-        |参数名称：企业项目ID。| |参数约束及描述：企业项目ID。|
+        企业项目ID。
 
         :return: The enterprise_project_id of this ListFreeResourceInfosReq.
         :rtype: str
@@ -178,7 +178,7 @@ class ListFreeResourceInfosReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListFreeResourceInfosReq.
 
-        |参数名称：企业项目ID。| |参数约束及描述：企业项目ID。|
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListFreeResourceInfosReq.
         :type: str
@@ -189,7 +189,7 @@ class ListFreeResourceInfosReq:
     def status(self):
         """Gets the status of this ListFreeResourceInfosReq.
 
-        |参数名称：状态：0：未生效1：生效中2：已用完3：已失效4：已退订| |参数的约束及描述：状态：0：未生效1：生效中2：已用完3：已失效4：已退订|
+        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
         :return: The status of this ListFreeResourceInfosReq.
         :rtype: int
@@ -200,7 +200,7 @@ class ListFreeResourceInfosReq:
     def status(self, status):
         """Sets the status of this ListFreeResourceInfosReq.
 
-        |参数名称：状态：0：未生效1：生效中2：已用完3：已失效4：已退订| |参数的约束及描述：状态：0：未生效1：生效中2：已用完3：已失效4：已退订|
+        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
         :param status: The status of this ListFreeResourceInfosReq.
         :type: int
@@ -211,7 +211,7 @@ class ListFreeResourceInfosReq:
     def offset(self):
         """Gets the offset of this ListFreeResourceInfosReq.
 
-        |参数名称：偏移量，从0开始。默认值为0。| |参数的约束及描述：偏移量，从0开始。默认值为0。|
+        偏移量，从0开始，默认为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :return: The offset of this ListFreeResourceInfosReq.
         :rtype: int
@@ -222,7 +222,7 @@ class ListFreeResourceInfosReq:
     def offset(self, offset):
         """Sets the offset of this ListFreeResourceInfosReq.
 
-        |参数名称：偏移量，从0开始。默认值为0。| |参数的约束及描述：偏移量，从0开始。默认值为0。|
+        偏移量，从0开始，默认为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListFreeResourceInfosReq.
         :type: int
@@ -233,7 +233,7 @@ class ListFreeResourceInfosReq:
     def limit(self):
         """Gets the limit of this ListFreeResourceInfosReq.
 
-        |参数名称：每次查询的数量限制。默认值为10。| |参数的约束及描述：每次查询的数量限制。默认值为10。|
+        每次查询的记录数，默认为10。
 
         :return: The limit of this ListFreeResourceInfosReq.
         :rtype: int
@@ -244,7 +244,7 @@ class ListFreeResourceInfosReq:
     def limit(self, limit):
         """Sets the limit of this ListFreeResourceInfosReq.
 
-        |参数名称：每次查询的数量限制。默认值为10。| |参数的约束及描述：每次查询的数量限制。默认值为10。|
+        每次查询的记录数，默认为10。
 
         :param limit: The limit of this ListFreeResourceInfosReq.
         :type: int

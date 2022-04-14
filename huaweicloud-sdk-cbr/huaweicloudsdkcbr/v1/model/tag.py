@@ -70,7 +70,7 @@ class Tag:
     def value(self):
         """Gets the value of this Tag.
 
-        值。 添加标签时value值必选，删除标签时value值可选。 value最大长度为43个字符。 value可以为空字符串。 value前后的空格会被丢弃。 value不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。 value只能由中文，字母，数字，“-”，“_”，“.”组成。 
+        值。  添加标签时value值必选，删除标签时value值可选。  value最大长度为43个字符。  value可以为空字符串。  value前后的空格会被丢弃。  value不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。 value只能由中文，字母，数字，“-”，“_”，“.”组成。 
 
         :return: The value of this Tag.
         :rtype: str
@@ -81,7 +81,7 @@ class Tag:
     def value(self, value):
         """Sets the value of this Tag.
 
-        值。 添加标签时value值必选，删除标签时value值可选。 value最大长度为43个字符。 value可以为空字符串。 value前后的空格会被丢弃。 value不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。 value只能由中文，字母，数字，“-”，“_”，“.”组成。 
+        值。  添加标签时value值必选，删除标签时value值可选。  value最大长度为43个字符。  value可以为空字符串。  value前后的空格会被丢弃。  value不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。 value只能由中文，字母，数字，“-”，“_”，“.”组成。 
 
         :param value: The value of this Tag.
         :type: str

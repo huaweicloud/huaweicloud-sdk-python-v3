@@ -86,7 +86,7 @@ class PeriodProductInfo:
     def id(self):
         """Gets the id of this PeriodProductInfo.
 
-        |参数名称：ID标识| |参数约束及描述：同一次询价中不能重复，用于标识返回询价结果和请求的映射关系|
+        ID标识，同一次询价中不能重复，用于标识返回询价结果和请求的映射关系。
 
         :return: The id of this PeriodProductInfo.
         :rtype: str
@@ -97,7 +97,7 @@ class PeriodProductInfo:
     def id(self, id):
         """Sets the id of this PeriodProductInfo.
 
-        |参数名称：ID标识| |参数约束及描述：同一次询价中不能重复，用于标识返回询价结果和请求的映射关系|
+        ID标识，同一次询价中不能重复，用于标识返回询价结果和请求的映射关系。
 
         :param id: The id of this PeriodProductInfo.
         :type: str
@@ -108,7 +108,7 @@ class PeriodProductInfo:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this PeriodProductInfo.
 
-        |参数名称：用户购买云服务产品的云服务类型| |参数约束及描述：例如EC2，云服务类型为hws.service.type.ec2|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :return: The cloud_service_type of this PeriodProductInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class PeriodProductInfo:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this PeriodProductInfo.
 
-        |参数名称：用户购买云服务产品的云服务类型| |参数约束及描述：例如EC2，云服务类型为hws.service.type.ec2|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param cloud_service_type: The cloud_service_type of this PeriodProductInfo.
         :type: str
@@ -130,7 +130,7 @@ class PeriodProductInfo:
     def resource_type(self):
         """Gets the resource_type of this PeriodProductInfo.
 
-        |参数名称：用户购买云服务产品的资源类型| |参数约束及描述：例如EC2中的VM，资源类型为hws.resource.type.vm。ResourceType是CloudServiceType中的一种资源，CloudServiceType由多种ResourceType组合提供|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。 ResourceType是CloudServiceType中的一种资源，CloudServiceType由多种ResourceType组合提供。
 
         :return: The resource_type of this PeriodProductInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class PeriodProductInfo:
     def resource_type(self, resource_type):
         """Sets the resource_type of this PeriodProductInfo.
 
-        |参数名称：用户购买云服务产品的资源类型| |参数约束及描述：例如EC2中的VM，资源类型为hws.resource.type.vm。ResourceType是CloudServiceType中的一种资源，CloudServiceType由多种ResourceType组合提供|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。 ResourceType是CloudServiceType中的一种资源，CloudServiceType由多种ResourceType组合提供。
 
         :param resource_type: The resource_type of this PeriodProductInfo.
         :type: str
@@ -152,7 +152,7 @@ class PeriodProductInfo:
     def resource_spec(self):
         """Gets the resource_spec of this PeriodProductInfo.
 
-        |参数名称：用户购买云服务产品的资源规格| |参数约束及描述：例如VM的小型规格，资源规格为m1.tiny|
+        云服务类型的资源规格，部分云服务类型和资源规格举例如下： 弹性云服务器：根据操作系统类型在云服务器规格的ID后添加“.win”或“.linux”，例如“s2.small.1.linux”。云服务器规格的ID字段，您可以调用查询规格详情和规格扩展信息列表接口获取。 带宽：12_bgp：动态BGP按流量计费带宽12_sbgp：静态BGP按流量计费带宽19_bgp：动态BGP按带宽计费带宽19_sbgp：静态BGP按带宽计费带宽19_share：按带宽计费共享带宽 IP：5_bgp：动态BGP公网IP5_sbgp：静态BGP公网IP 云数据库：云数据库的资源规格信息，您可以调用查询数据库规格接口获取。 分布式缓存服务：分布式缓存服务的资源规格信息，您可以调用查询产品规格列表接口获取。
 
         :return: The resource_spec of this PeriodProductInfo.
         :rtype: str
@@ -163,7 +163,7 @@ class PeriodProductInfo:
     def resource_spec(self, resource_spec):
         """Sets the resource_spec of this PeriodProductInfo.
 
-        |参数名称：用户购买云服务产品的资源规格| |参数约束及描述：例如VM的小型规格，资源规格为m1.tiny|
+        云服务类型的资源规格，部分云服务类型和资源规格举例如下： 弹性云服务器：根据操作系统类型在云服务器规格的ID后添加“.win”或“.linux”，例如“s2.small.1.linux”。云服务器规格的ID字段，您可以调用查询规格详情和规格扩展信息列表接口获取。 带宽：12_bgp：动态BGP按流量计费带宽12_sbgp：静态BGP按流量计费带宽19_bgp：动态BGP按带宽计费带宽19_sbgp：静态BGP按带宽计费带宽19_share：按带宽计费共享带宽 IP：5_bgp：动态BGP公网IP5_sbgp：静态BGP公网IP 云数据库：云数据库的资源规格信息，您可以调用查询数据库规格接口获取。 分布式缓存服务：分布式缓存服务的资源规格信息，您可以调用查询产品规格列表接口获取。
 
         :param resource_spec: The resource_spec of this PeriodProductInfo.
         :type: str
@@ -174,7 +174,7 @@ class PeriodProductInfo:
     def region(self):
         """Gets the region of this PeriodProductInfo.
 
-        |参数名称：云服务区编码| |参数约束及描述：云服务区编码|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :return: The region of this PeriodProductInfo.
         :rtype: str
@@ -185,7 +185,7 @@ class PeriodProductInfo:
     def region(self, region):
         """Sets the region of this PeriodProductInfo.
 
-        |参数名称：云服务区编码| |参数约束及描述：云服务区编码|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region: The region of this PeriodProductInfo.
         :type: str
@@ -196,7 +196,7 @@ class PeriodProductInfo:
     def available_zone(self):
         """Gets the available_zone of this PeriodProductInfo.
 
-        |参数名称：可用区标识| |参数约束及描述：可用区标识|
+        可用区标识，例如：“cn-north-1a”。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。
 
         :return: The available_zone of this PeriodProductInfo.
         :rtype: str
@@ -207,7 +207,7 @@ class PeriodProductInfo:
     def available_zone(self, available_zone):
         """Sets the available_zone of this PeriodProductInfo.
 
-        |参数名称：可用区标识| |参数约束及描述：可用区标识|
+        可用区标识，例如：“cn-north-1a”。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。
 
         :param available_zone: The available_zone of this PeriodProductInfo.
         :type: str
@@ -218,7 +218,7 @@ class PeriodProductInfo:
     def resource_size(self):
         """Gets the resource_size of this PeriodProductInfo.
 
-        |参数名称：资源容量大小| |参数约束及描述：例如购买的卷大小或带宽大小，只有线性产品才有这个字段|
+        资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
         :return: The resource_size of this PeriodProductInfo.
         :rtype: int
@@ -229,7 +229,7 @@ class PeriodProductInfo:
     def resource_size(self, resource_size):
         """Sets the resource_size of this PeriodProductInfo.
 
-        |参数名称：资源容量大小| |参数约束及描述：例如购买的卷大小或带宽大小，只有线性产品才有这个字段|
+        资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
         :param resource_size: The resource_size of this PeriodProductInfo.
         :type: int
@@ -240,7 +240,7 @@ class PeriodProductInfo:
     def size_measure_id(self):
         """Gets the size_measure_id of this PeriodProductInfo.
 
-        |参数名称：资源容量度量标识| |参数约束及描述：枚举值如下：15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个只有线性产品才有这个字段|
+        资源容量度量标识。 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
         :return: The size_measure_id of this PeriodProductInfo.
         :rtype: int
@@ -251,7 +251,7 @@ class PeriodProductInfo:
     def size_measure_id(self, size_measure_id):
         """Sets the size_measure_id of this PeriodProductInfo.
 
-        |参数名称：资源容量度量标识| |参数约束及描述：枚举值如下：15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个只有线性产品才有这个字段|
+        资源容量度量标识。 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
 
         :param size_measure_id: The size_measure_id of this PeriodProductInfo.
         :type: int
@@ -262,7 +262,7 @@ class PeriodProductInfo:
     def period_type(self):
         """Gets the period_type of this PeriodProductInfo.
 
-        |参数名称：订购周期类型| |参数约束及描述：0：天；1：周；2：月；3：年；4：小时；|
+        订购包年/包月产品的周期类型。 0：天2：月3：年4：小时
 
         :return: The period_type of this PeriodProductInfo.
         :rtype: int
@@ -273,7 +273,7 @@ class PeriodProductInfo:
     def period_type(self, period_type):
         """Sets the period_type of this PeriodProductInfo.
 
-        |参数名称：订购周期类型| |参数约束及描述：0：天；1：周；2：月；3：年；4：小时；|
+        订购包年/包月产品的周期类型。 0：天2：月3：年4：小时
 
         :param period_type: The period_type of this PeriodProductInfo.
         :type: int
@@ -284,7 +284,7 @@ class PeriodProductInfo:
     def period_num(self):
         """Gets the period_num of this PeriodProductInfo.
 
-        |参数名称：订购周期数| |参数约束及描述： 订购周期数|
+        订购包年/包月产品的周期数。
 
         :return: The period_num of this PeriodProductInfo.
         :rtype: int
@@ -295,7 +295,7 @@ class PeriodProductInfo:
     def period_num(self, period_num):
         """Sets the period_num of this PeriodProductInfo.
 
-        |参数名称：订购周期数| |参数约束及描述： 订购周期数|
+        订购包年/包月产品的周期数。
 
         :param period_num: The period_num of this PeriodProductInfo.
         :type: int
@@ -306,7 +306,7 @@ class PeriodProductInfo:
     def subscription_num(self):
         """Gets the subscription_num of this PeriodProductInfo.
 
-        |参数名称：订购数量| |参数约束及描述：订购数量,有值时不能小于0|
+        订购包年/包月产品的数量。
 
         :return: The subscription_num of this PeriodProductInfo.
         :rtype: int
@@ -317,7 +317,7 @@ class PeriodProductInfo:
     def subscription_num(self, subscription_num):
         """Sets the subscription_num of this PeriodProductInfo.
 
-        |参数名称：订购数量| |参数约束及描述：订购数量,有值时不能小于0|
+        订购包年/包月产品的数量。
 
         :param subscription_num: The subscription_num of this PeriodProductInfo.
         :type: int

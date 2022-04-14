@@ -24,6 +24,12 @@ class DdmRegion:
 
     CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://ddm.cn-south-1.myhuaweicloud.com")
 
+    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://ddm.ap-southeast-1.myhuaweicloud.com")
+
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://ddm.la-north-2.myhuaweicloud.com")
+
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://ddm.sa-brazil-1.myhuaweicloud.com")
+
     static_fields = {
         "cn-southwest-2": CN_SOUTHWEST_2,
         "cn-south-2": CN_SOUTH_2,
@@ -32,6 +38,9 @@ class DdmRegion:
         "cn-east-2": CN_EAST_2,
         "cn-north-1": CN_NORTH_1,
         "cn-south-1": CN_SOUTH_1,
+        "ap-southeast-1": AP_SOUTHEAST_1,
+        "la-north-2": LA_NORTH_2,
+        "sa-brazil-1": SA_BRAZIL_1,
     }
 
     @staticmethod

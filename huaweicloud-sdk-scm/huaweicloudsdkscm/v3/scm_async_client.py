@@ -256,7 +256,7 @@ class ScmAsyncClient(Client):
         :return: ListCertificatesResponse
         """
 
-        all_params = ['limit', 'offset', 'sort_dir', 'sort_key', 'status']
+        all_params = ['limit', 'offset', 'sort_dir', 'sort_key', 'status', 'enterprise_project_id', 'deploy_support']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -277,6 +277,10 @@ class ScmAsyncClient(Client):
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'deploy_support' in local_var_params:
+            query_params.append(('deploy_support', local_var_params['deploy_support']))
 
         header_params = {}
 

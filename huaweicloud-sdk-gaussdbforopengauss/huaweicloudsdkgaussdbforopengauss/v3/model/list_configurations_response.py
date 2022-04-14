@@ -22,23 +22,48 @@ class ListConfigurationsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'count': 'int',
         'configurations': 'list[ConfigurationSummary]'
     }
 
     attribute_map = {
+        'count': 'count',
         'configurations': 'configurations'
     }
 
-    def __init__(self, configurations=None):
+    def __init__(self, count=None, configurations=None):
         """ListConfigurationsResponse - a model defined in huaweicloud sdk"""
         
         super(ListConfigurationsResponse, self).__init__()
 
+        self._count = None
         self._configurations = None
         self.discriminator = None
 
+        if count is not None:
+            self.count = count
         if configurations is not None:
             self.configurations = configurations
+
+    @property
+    def count(self):
+        """Gets the count of this ListConfigurationsResponse.
+
+
+        :return: The count of this ListConfigurationsResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListConfigurationsResponse.
+
+
+        :param count: The count of this ListConfigurationsResponse.
+        :type: int
+        """
+        self._count = count
 
     @property
     def configurations(self):

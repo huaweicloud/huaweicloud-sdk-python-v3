@@ -54,7 +54,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ShowCustomerOrderDetailsResponse.
 
-        |参数名称：符合条件的记录总数。| |参数的约束及描述：符合条件的记录总数。|
+        订单项个数。
 
         :return: The total_count of this ShowCustomerOrderDetailsResponse.
         :rtype: int
@@ -65,7 +65,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ShowCustomerOrderDetailsResponse.
 
-        |参数名称：符合条件的记录总数。| |参数的约束及描述：符合条件的记录总数。|
+        订单项个数。
 
         :param total_count: The total_count of this ShowCustomerOrderDetailsResponse.
         :type: int
@@ -96,7 +96,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     def order_line_items(self):
         """Gets the order_line_items of this ShowCustomerOrderDetailsResponse.
 
-        |参数名称：订单对应的订单项。具体请参见表 OrderLineItemEntityV2。| |参数约束及描述： 订单对应的订单项。具体请参见表 OrderLineItemEntityV2。|
+        订单对应的订单项。 具体请参见表5。
 
         :return: The order_line_items of this ShowCustomerOrderDetailsResponse.
         :rtype: list[OrderLineItemEntityV2]
@@ -107,7 +107,7 @@ class ShowCustomerOrderDetailsResponse(SdkResponse):
     def order_line_items(self, order_line_items):
         """Sets the order_line_items of this ShowCustomerOrderDetailsResponse.
 
-        |参数名称：订单对应的订单项。具体请参见表 OrderLineItemEntityV2。| |参数约束及描述： 订单对应的订单项。具体请参见表 OrderLineItemEntityV2。|
+        订单对应的订单项。 具体请参见表5。
 
         :param order_line_items: The order_line_items of this ShowCustomerOrderDetailsResponse.
         :type: list[OrderLineItemEntityV2]

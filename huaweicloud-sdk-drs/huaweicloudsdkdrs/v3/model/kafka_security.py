@@ -59,7 +59,7 @@ class KafkaSecurity:
     def trust_store_key_name(self):
         """Gets the trust_store_key_name of this KafkaSecurity.
 
-        证书名称。
+        证书名称，使用安全认证时必填。
 
         :return: The trust_store_key_name of this KafkaSecurity.
         :rtype: str
@@ -70,7 +70,7 @@ class KafkaSecurity:
     def trust_store_key_name(self, trust_store_key_name):
         """Sets the trust_store_key_name of this KafkaSecurity.
 
-        证书名称。
+        证书名称，使用安全认证时必填。
 
         :param trust_store_key_name: The trust_store_key_name of this KafkaSecurity.
         :type: str
@@ -81,7 +81,7 @@ class KafkaSecurity:
     def trust_store_key(self):
         """Gets the trust_store_key of this KafkaSecurity.
 
-        安全证书base64转码后的值。
+        安全证书base64转码后的值，使用安全认证时必填。
 
         :return: The trust_store_key of this KafkaSecurity.
         :rtype: str
@@ -92,7 +92,7 @@ class KafkaSecurity:
     def trust_store_key(self, trust_store_key):
         """Sets the trust_store_key of this KafkaSecurity.
 
-        安全证书base64转码后的值。
+        安全证书base64转码后的值，使用安全认证时必填。
 
         :param trust_store_key: The trust_store_key of this KafkaSecurity.
         :type: str
@@ -103,7 +103,7 @@ class KafkaSecurity:
     def trust_store_password(self):
         """Gets the trust_store_password of this KafkaSecurity.
 
-        证书密码。
+        证书密码，使用安全认证时必填。
 
         :return: The trust_store_password of this KafkaSecurity.
         :rtype: str
@@ -114,7 +114,7 @@ class KafkaSecurity:
     def trust_store_password(self, trust_store_password):
         """Sets the trust_store_password of this KafkaSecurity.
 
-        证书密码。
+        证书密码，使用安全认证时必填。
 
         :param trust_store_password: The trust_store_password of this KafkaSecurity.
         :type: str
@@ -125,7 +125,7 @@ class KafkaSecurity:
     def type(self):
         """Gets the type of this KafkaSecurity.
 
-        认证类型，PLAINTEXT为无认证：
+        认证类型，PLAINTEXT为无认证，，使用安全认证时必填。
 
         :return: The type of this KafkaSecurity.
         :rtype: str
@@ -136,7 +136,7 @@ class KafkaSecurity:
     def type(self, type):
         """Sets the type of this KafkaSecurity.
 
-        认证类型，PLAINTEXT为无认证：
+        认证类型，PLAINTEXT为无认证，，使用安全认证时必填。
 
         :param type: The type of this KafkaSecurity.
         :type: str

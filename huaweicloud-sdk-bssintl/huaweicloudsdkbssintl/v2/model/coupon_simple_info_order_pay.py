@@ -47,7 +47,7 @@ class CouponSimpleInfoOrderPay:
     def id(self):
         """Gets the id of this CouponSimpleInfoOrderPay.
 
-        |参数名称：优惠券ID，同种类型的优惠券，列表前面会优先使用| |参数约束及描述：优惠券ID，同种类型的优惠券，列表前面会优先使用|
+        折扣ID。
 
         :return: The id of this CouponSimpleInfoOrderPay.
         :rtype: str
@@ -58,7 +58,7 @@ class CouponSimpleInfoOrderPay:
     def id(self, id):
         """Sets the id of this CouponSimpleInfoOrderPay.
 
-        |参数名称：优惠券ID，同种类型的优惠券，列表前面会优先使用| |参数约束及描述：优惠券ID，同种类型的优惠券，列表前面会优先使用|
+        折扣ID。
 
         :param id: The id of this CouponSimpleInfoOrderPay.
         :type: str
@@ -69,7 +69,7 @@ class CouponSimpleInfoOrderPay:
     def type(self):
         """Gets the type of this CouponSimpleInfoOrderPay.
 
-        |参数名称：折扣类型：取值为300-折扣卷 301-促销代金券302-促销现金券303-促销储值卡| |参数的约束及描述：折扣类型：取值为300-折扣卷 301-促销代金券302-促销现金券303-促销储值卡|
+        折扣类型： 0：促销折扣 1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
 
         :return: The type of this CouponSimpleInfoOrderPay.
         :rtype: int
@@ -80,7 +80,7 @@ class CouponSimpleInfoOrderPay:
     def type(self, type):
         """Sets the type of this CouponSimpleInfoOrderPay.
 
-        |参数名称：折扣类型：取值为300-折扣卷 301-促销代金券302-促销现金券303-促销储值卡| |参数的约束及描述：折扣类型：取值为300-折扣卷 301-促销代金券302-促销现金券303-促销储值卡|
+        折扣类型： 0：促销折扣 1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
 
         :param type: The type of this CouponSimpleInfoOrderPay.
         :type: int

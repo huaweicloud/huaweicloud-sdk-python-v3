@@ -31,7 +31,9 @@ class SecurityGroupRule:
         'port_range_min': 'str',
         'port_range_max': 'str',
         'remote_group_id': 'str',
-        'remote_ip_prefix': 'str'
+        'remote_ip_prefix': 'str',
+        'action': 'str',
+        'priority': 'int'
     }
 
     attribute_map = {
@@ -44,10 +46,12 @@ class SecurityGroupRule:
         'port_range_min': 'port_range_min',
         'port_range_max': 'port_range_max',
         'remote_group_id': 'remote_group_id',
-        'remote_ip_prefix': 'remote_ip_prefix'
+        'remote_ip_prefix': 'remote_ip_prefix',
+        'action': 'action',
+        'priority': 'priority'
     }
 
-    def __init__(self, id=None, description=None, security_group_id=None, direction=None, ethertype=None, protocol=None, port_range_min=None, port_range_max=None, remote_group_id=None, remote_ip_prefix=None):
+    def __init__(self, id=None, description=None, security_group_id=None, direction=None, ethertype=None, protocol=None, port_range_min=None, port_range_max=None, remote_group_id=None, remote_ip_prefix=None, action=None, priority=None):
         """SecurityGroupRule - a model defined in huaweicloud sdk"""
         
         
@@ -62,6 +66,8 @@ class SecurityGroupRule:
         self._port_range_max = None
         self._remote_group_id = None
         self._remote_ip_prefix = None
+        self._action = None
+        self._priority = None
         self.discriminator = None
 
         if id is not None:
@@ -84,6 +90,10 @@ class SecurityGroupRule:
             self.remote_group_id = remote_group_id
         if remote_ip_prefix is not None:
             self.remote_ip_prefix = remote_ip_prefix
+        if action is not None:
+            self.action = action
+        if priority is not None:
+            self.priority = priority
 
     @property
     def id(self):
@@ -304,6 +314,50 @@ class SecurityGroupRule:
         :type: str
         """
         self._remote_ip_prefix = remote_ip_prefix
+
+    @property
+    def action(self):
+        """Gets the action of this SecurityGroupRule.
+
+        安全组规则生效策略  取值范围：allow 允许，deny 拒绝  约束：默认值为allow
+
+        :return: The action of this SecurityGroupRule.
+        :rtype: str
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        """Sets the action of this SecurityGroupRule.
+
+        安全组规则生效策略  取值范围：allow 允许，deny 拒绝  约束：默认值为allow
+
+        :param action: The action of this SecurityGroupRule.
+        :type: str
+        """
+        self._action = action
+
+    @property
+    def priority(self):
+        """Gets the priority of this SecurityGroupRule.
+
+        规则在安全组中的优先级 取值范围：1~100，1代表最高优先级  约束：默认值为1
+
+        :return: The priority of this SecurityGroupRule.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        """Sets the priority of this SecurityGroupRule.
+
+        规则在安全组中的优先级 取值范围：1~100，1代表最高优先级  约束：默认值为1
+
+        :param priority: The priority of this SecurityGroupRule.
+        :type: int
+        """
+        self._priority = priority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -40,10 +40,8 @@ class GetHostGroupListRequestBody:
         self._filter = None
         self.discriminator = None
 
-        if host_group_id_list is not None:
-            self.host_group_id_list = host_group_id_list
-        if filter is not None:
-            self.filter = filter
+        self.host_group_id_list = host_group_id_list
+        self.filter = filter
 
     @property
     def host_group_id_list(self):

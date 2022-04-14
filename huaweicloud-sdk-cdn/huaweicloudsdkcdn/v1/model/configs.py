@@ -25,17 +25,25 @@ class Configs:
         'origin_request_header': 'list[OriginRequestHeader]',
         'http_response_header': 'list[HttpResponseHeader]',
         'url_auth': 'UrlAuth',
-        'https': 'HttpPutBody'
+        'https': 'HttpPutBody',
+        'sources': 'list[SourcesConfig]',
+        'origin_protocol': 'str',
+        'force_redirect': 'ForceRedirectConfig',
+        'compress': 'Compress'
     }
 
     attribute_map = {
         'origin_request_header': 'origin_request_header',
         'http_response_header': 'http_response_header',
         'url_auth': 'url_auth',
-        'https': 'https'
+        'https': 'https',
+        'sources': 'sources',
+        'origin_protocol': 'origin_protocol',
+        'force_redirect': 'force_redirect',
+        'compress': 'compress'
     }
 
-    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None):
+    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, force_redirect=None, compress=None):
         """Configs - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +52,10 @@ class Configs:
         self._http_response_header = None
         self._url_auth = None
         self._https = None
+        self._sources = None
+        self._origin_protocol = None
+        self._force_redirect = None
+        self._compress = None
         self.discriminator = None
 
         if origin_request_header is not None:
@@ -54,12 +66,20 @@ class Configs:
             self.url_auth = url_auth
         if https is not None:
             self.https = https
+        if sources is not None:
+            self.sources = sources
+        if origin_protocol is not None:
+            self.origin_protocol = origin_protocol
+        if force_redirect is not None:
+            self.force_redirect = force_redirect
+        if compress is not None:
+            self.compress = compress
 
     @property
     def origin_request_header(self):
         """Gets the origin_request_header of this Configs.
 
-        回源请求头配置
+        回源请求头配置。
 
         :return: The origin_request_header of this Configs.
         :rtype: list[OriginRequestHeader]
@@ -70,7 +90,7 @@ class Configs:
     def origin_request_header(self, origin_request_header):
         """Sets the origin_request_header of this Configs.
 
-        回源请求头配置
+        回源请求头配置。
 
         :param origin_request_header: The origin_request_header of this Configs.
         :type: list[OriginRequestHeader]
@@ -81,7 +101,7 @@ class Configs:
     def http_response_header(self):
         """Gets the http_response_header of this Configs.
 
-        http header配置
+        http header配置。
 
         :return: The http_response_header of this Configs.
         :rtype: list[HttpResponseHeader]
@@ -92,7 +112,7 @@ class Configs:
     def http_response_header(self, http_response_header):
         """Sets the http_response_header of this Configs.
 
-        http header配置
+        http header配置。
 
         :param http_response_header: The http_response_header of this Configs.
         :type: list[HttpResponseHeader]
@@ -138,6 +158,90 @@ class Configs:
         :type: HttpPutBody
         """
         self._https = https
+
+    @property
+    def sources(self):
+        """Gets the sources of this Configs.
+
+        源站配置。
+
+        :return: The sources of this Configs.
+        :rtype: list[SourcesConfig]
+        """
+        return self._sources
+
+    @sources.setter
+    def sources(self, sources):
+        """Sets the sources of this Configs.
+
+        源站配置。
+
+        :param sources: The sources of this Configs.
+        :type: list[SourcesConfig]
+        """
+        self._sources = sources
+
+    @property
+    def origin_protocol(self):
+        """Gets the origin_protocol of this Configs.
+
+        回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
+
+        :return: The origin_protocol of this Configs.
+        :rtype: str
+        """
+        return self._origin_protocol
+
+    @origin_protocol.setter
+    def origin_protocol(self, origin_protocol):
+        """Sets the origin_protocol of this Configs.
+
+        回源协议（follow：协议跟随回源，http：HTTP回源(默认)，https：https回源）。
+
+        :param origin_protocol: The origin_protocol of this Configs.
+        :type: str
+        """
+        self._origin_protocol = origin_protocol
+
+    @property
+    def force_redirect(self):
+        """Gets the force_redirect of this Configs.
+
+
+        :return: The force_redirect of this Configs.
+        :rtype: ForceRedirectConfig
+        """
+        return self._force_redirect
+
+    @force_redirect.setter
+    def force_redirect(self, force_redirect):
+        """Sets the force_redirect of this Configs.
+
+
+        :param force_redirect: The force_redirect of this Configs.
+        :type: ForceRedirectConfig
+        """
+        self._force_redirect = force_redirect
+
+    @property
+    def compress(self):
+        """Gets the compress of this Configs.
+
+
+        :return: The compress of this Configs.
+        :rtype: Compress
+        """
+        return self._compress
+
+    @compress.setter
+    def compress(self, compress):
+        """Sets the compress of this Configs.
+
+
+        :param compress: The compress of this Configs.
+        :type: Compress
+        """
+        self._compress = compress
 
     def to_dict(self):
         """Returns the model properties as a dict"""

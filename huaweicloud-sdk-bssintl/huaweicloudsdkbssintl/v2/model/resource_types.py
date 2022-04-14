@@ -59,7 +59,7 @@ class ResourceTypes:
     def resource_type_code(self):
         """Gets the resource_type_code of this ResourceTypes.
 
-        |参数名称：资源类型编码| |参数约束及描述：资源类型编码|
+        资源类型的编码。例如ECS的VM为“hws.resource.type.vm”。
 
         :return: The resource_type_code of this ResourceTypes.
         :rtype: str
@@ -70,7 +70,7 @@ class ResourceTypes:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this ResourceTypes.
 
-        |参数名称：资源类型编码| |参数约束及描述：资源类型编码|
+        资源类型的编码。例如ECS的VM为“hws.resource.type.vm”。
 
         :param resource_type_code: The resource_type_code of this ResourceTypes.
         :type: str
@@ -81,7 +81,7 @@ class ResourceTypes:
     def resource_type_name(self):
         """Gets the resource_type_name of this ResourceTypes.
 
-        |参数名称：资源类型名称| |参数约束及描述：资源类型名称|
+        资源类型的名称。
 
         :return: The resource_type_name of this ResourceTypes.
         :rtype: str
@@ -92,7 +92,7 @@ class ResourceTypes:
     def resource_type_name(self, resource_type_name):
         """Sets the resource_type_name of this ResourceTypes.
 
-        |参数名称：资源类型名称| |参数约束及描述：资源类型名称|
+        资源类型的名称。
 
         :param resource_type_name: The resource_type_name of this ResourceTypes.
         :type: str
@@ -103,7 +103,7 @@ class ResourceTypes:
     def resource_type_desc(self):
         """Gets the resource_type_desc of this ResourceTypes.
 
-        |参数名称：资源类型描述| |参数约束及描述：资源类型描述|
+        资源类型的描述。
 
         :return: The resource_type_desc of this ResourceTypes.
         :rtype: str
@@ -114,7 +114,7 @@ class ResourceTypes:
     def resource_type_desc(self, resource_type_desc):
         """Sets the resource_type_desc of this ResourceTypes.
 
-        |参数名称：资源类型描述| |参数约束及描述：资源类型描述|
+        资源类型的描述。
 
         :param resource_type_desc: The resource_type_desc of this ResourceTypes.
         :type: str
@@ -125,7 +125,7 @@ class ResourceTypes:
     def service_type_code(self):
         """Gets the service_type_code of this ResourceTypes.
 
-        |参数名称：资源类型归属的服务类型编码| |参数约束及描述：资源类型归属的服务类型编码|
+        资源类型归属的服务类型编码。例如：hws.service.type.offline。
 
         :return: The service_type_code of this ResourceTypes.
         :rtype: str
@@ -136,7 +136,7 @@ class ResourceTypes:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ResourceTypes.
 
-        |参数名称：资源类型归属的服务类型编码| |参数约束及描述：资源类型归属的服务类型编码|
+        资源类型归属的服务类型编码。例如：hws.service.type.offline。
 
         :param service_type_code: The service_type_code of this ResourceTypes.
         :type: str

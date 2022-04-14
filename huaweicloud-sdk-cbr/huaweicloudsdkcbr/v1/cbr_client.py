@@ -1077,7 +1077,7 @@ class CbrClient(Client):
     def import_backup(self, request):
         """同步备份
 
-        同步备份副本
+        同步线下混合云VMware备份副本
 
         :param ImportBackupRequest request
         :return: ImportBackupResponse
@@ -1087,7 +1087,7 @@ class CbrClient(Client):
     def import_backup_with_http_info(self, request):
         """同步备份
 
-        同步备份副本
+        同步线下混合云VMware备份副本
 
         :param ImportBackupRequest request
         :return: ImportBackupResponse
@@ -1156,7 +1156,7 @@ class CbrClient(Client):
         :return: ListBackupsResponse
         """
 
-        all_params = ['checkpoint_id', 'dec', 'end_time', 'image_type', 'limit', 'marker', 'name', 'offset', 'resource_az', 'resource_id', 'resource_name', 'resource_type', 'sort', 'start_time', 'status', 'vault_id', 'enterprise_project_id', 'own_type', 'member_status', 'parent_id', 'used_percent']
+        all_params = ['checkpoint_id', 'dec', 'end_time', 'image_type', 'limit', 'marker', 'name', 'offset', 'resource_az', 'resource_id', 'resource_name', 'resource_type', 'sort', 'start_time', 'status', 'vault_id', 'enterprise_project_id', 'own_type', 'member_status', 'parent_id', 'used_percent', 'show_replication']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1209,6 +1209,8 @@ class CbrClient(Client):
             query_params.append(('parent_id', local_var_params['parent_id']))
         if 'used_percent' in local_var_params:
             query_params.append(('used_percent', local_var_params['used_percent']))
+        if 'show_replication' in local_var_params:
+            query_params.append(('show_replication', local_var_params['show_replication']))
 
         header_params = {}
 

@@ -63,7 +63,7 @@ class ShowCustomerOrderDetailsRequest:
     def x_language(self):
         """Gets the x_language of this ShowCustomerOrderDetailsRequest.
 
-        |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US缺省为zh_CN|
+        语言：中文：zh_CN 英文：en_US 缺省为zh_CN
 
         :return: The x_language of this ShowCustomerOrderDetailsRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class ShowCustomerOrderDetailsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowCustomerOrderDetailsRequest.
 
-        |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US缺省为zh_CN|
+        语言：中文：zh_CN 英文：en_US 缺省为zh_CN
 
         :param x_language: The x_language of this ShowCustomerOrderDetailsRequest.
         :type: str
@@ -85,7 +85,7 @@ class ShowCustomerOrderDetailsRequest:
     def order_id(self):
         """Gets the order_id of this ShowCustomerOrderDetailsRequest.
 
-        |参数名称：订单ID。| |参数的约束及描述：|
+        订单ID。
 
         :return: The order_id of this ShowCustomerOrderDetailsRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class ShowCustomerOrderDetailsRequest:
     def order_id(self, order_id):
         """Sets the order_id of this ShowCustomerOrderDetailsRequest.
 
-        |参数名称：订单ID。| |参数的约束及描述：|
+        订单ID。
 
         :param order_id: The order_id of this ShowCustomerOrderDetailsRequest.
         :type: str

@@ -119,7 +119,7 @@ class CustomerOrderV3:
     def order_id(self):
         """Gets the order_id of this CustomerOrderV3.
 
-        |参数名称：订单ID。| |参数约束及描述：订单ID。|
+        订单ID。
 
         :return: The order_id of this CustomerOrderV3.
         :rtype: str
@@ -130,7 +130,7 @@ class CustomerOrderV3:
     def order_id(self, order_id):
         """Sets the order_id of this CustomerOrderV3.
 
-        |参数名称：订单ID。| |参数约束及描述：订单ID。|
+        订单ID。
 
         :param order_id: The order_id of this CustomerOrderV3.
         :type: str
@@ -141,7 +141,7 @@ class CustomerOrderV3:
     def customer_id(self):
         """Gets the customer_id of this CustomerOrderV3.
 
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+        客户账号ID。
 
         :return: The customer_id of this CustomerOrderV3.
         :rtype: str
@@ -152,7 +152,7 @@ class CustomerOrderV3:
     def customer_id(self, customer_id):
         """Sets the customer_id of this CustomerOrderV3.
 
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+        客户账号ID。
 
         :param customer_id: The customer_id of this CustomerOrderV3.
         :type: str
@@ -163,7 +163,7 @@ class CustomerOrderV3:
     def service_type_code(self):
         """Gets the service_type_code of this CustomerOrderV3.
 
-        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :return: The service_type_code of this CustomerOrderV3.
         :rtype: str
@@ -174,7 +174,7 @@ class CustomerOrderV3:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this CustomerOrderV3.
 
-        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :param service_type_code: The service_type_code of this CustomerOrderV3.
         :type: str
@@ -185,7 +185,7 @@ class CustomerOrderV3:
     def service_type_name(self):
         """Gets the service_type_name of this CustomerOrderV3.
 
-        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :return: The service_type_name of this CustomerOrderV3.
         :rtype: str
@@ -196,7 +196,7 @@ class CustomerOrderV3:
     def service_type_name(self, service_type_name):
         """Sets the service_type_name of this CustomerOrderV3.
 
-        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this CustomerOrderV3.
         :type: str
@@ -207,7 +207,7 @@ class CustomerOrderV3:
     def source_type(self):
         """Gets the source_type of this CustomerOrderV3.
 
-        |参数名称：客户订单订单来源类型：1：客户2：代理3：合同4：分销商| |参数的约束及描述：客户订单订单来源类型：1：客户2：代理3：合同4：分销商|
+        客户订单来源类型： 1：客户2：代理3：合同4：分销商
 
         :return: The source_type of this CustomerOrderV3.
         :rtype: int
@@ -218,7 +218,7 @@ class CustomerOrderV3:
     def source_type(self, source_type):
         """Sets the source_type of this CustomerOrderV3.
 
-        |参数名称：客户订单订单来源类型：1：客户2：代理3：合同4：分销商| |参数的约束及描述：客户订单订单来源类型：1：客户2：代理3：合同4：分销商|
+        客户订单来源类型： 1：客户2：代理3：合同4：分销商
 
         :param source_type: The source_type of this CustomerOrderV3.
         :type: int
@@ -229,7 +229,7 @@ class CustomerOrderV3:
     def status(self):
         """Gets the status of this CustomerOrderV3.
 
-        |参数名称：订单状态：1：待审核3：处理中4：已取消5：已完成6：待支付9：待确认| |参数的约束及描述：订单状态：1：待审核3：处理中4：已取消5：已完成6：待支付9：待确认|
+        订单状态。 1：待审核3：处理中4：已取消5：已完成6：待付款9：待确认
 
         :return: The status of this CustomerOrderV3.
         :rtype: int
@@ -240,7 +240,7 @@ class CustomerOrderV3:
     def status(self, status):
         """Sets the status of this CustomerOrderV3.
 
-        |参数名称：订单状态：1：待审核3：处理中4：已取消5：已完成6：待支付9：待确认| |参数的约束及描述：订单状态：1：待审核3：处理中4：已取消5：已完成6：待支付9：待确认|
+        订单状态。 1：待审核3：处理中4：已取消5：已完成6：待付款9：待确认
 
         :param status: The status of this CustomerOrderV3.
         :type: int
@@ -251,7 +251,7 @@ class CustomerOrderV3:
     def order_type(self):
         """Gets the order_type of this CustomerOrderV3.
 
-        |参数名称：订单类型：1：开通2：续订3：变更4：退订10：包周期转按需11：按需转包周期12：赠送13：试用14：转商用15：费用调整| |参数的约束及描述：订单类型：1：开通2：续订3：变更4：退订10：包周期转按需11：按需转包周期12：赠送13：试用14：转商用15：费用调整|
+        订单类型。 1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
 
         :return: The order_type of this CustomerOrderV3.
         :rtype: int
@@ -262,7 +262,7 @@ class CustomerOrderV3:
     def order_type(self, order_type):
         """Sets the order_type of this CustomerOrderV3.
 
-        |参数名称：订单类型：1：开通2：续订3：变更4：退订10：包周期转按需11：按需转包周期12：赠送13：试用14：转商用15：费用调整| |参数的约束及描述：订单类型：1：开通2：续订3：变更4：退订10：包周期转按需11：按需转包周期12：赠送13：试用14：转商用15：费用调整|
+        订单类型。 1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
 
         :param order_type: The order_type of this CustomerOrderV3.
         :type: int
@@ -273,7 +273,7 @@ class CustomerOrderV3:
     def amount_after_discount(self):
         """Gets the amount_after_discount of this CustomerOrderV3.
 
-        |参数名称：订单优惠后金额（不含券不含卡的实付价格）。| |参数的约束及描述：订单优惠后金额（不含券不含卡的实付价格）。|
+        订单优惠后金额（实付价格，不含券不含卡）。
 
         :return: The amount_after_discount of this CustomerOrderV3.
         :rtype: float
@@ -284,7 +284,7 @@ class CustomerOrderV3:
     def amount_after_discount(self, amount_after_discount):
         """Sets the amount_after_discount of this CustomerOrderV3.
 
-        |参数名称：订单优惠后金额（不含券不含卡的实付价格）。| |参数的约束及描述：订单优惠后金额（不含券不含卡的实付价格）。|
+        订单优惠后金额（实付价格，不含券不含卡）。
 
         :param amount_after_discount: The amount_after_discount of this CustomerOrderV3.
         :type: float
@@ -295,7 +295,7 @@ class CustomerOrderV3:
     def official_amount(self):
         """Gets the official_amount of this CustomerOrderV3.
 
-        |参数名称：订单金额（官网价）。退订订单中，该金额等于amount。| |参数的约束及描述：订单金额（官网价）。退订订单中，该金额等于amount。|
+        订单金额（官网价）。 退订订单中，该金额等于currencyAfterDiscount。
 
         :return: The official_amount of this CustomerOrderV3.
         :rtype: float
@@ -306,7 +306,7 @@ class CustomerOrderV3:
     def official_amount(self, official_amount):
         """Sets the official_amount of this CustomerOrderV3.
 
-        |参数名称：订单金额（官网价）。退订订单中，该金额等于amount。| |参数的约束及描述：订单金额（官网价）。退订订单中，该金额等于amount。|
+        订单金额（官网价）。 退订订单中，该金额等于currencyAfterDiscount。
 
         :param official_amount: The official_amount of this CustomerOrderV3.
         :type: float
@@ -317,7 +317,7 @@ class CustomerOrderV3:
     def measure_id(self):
         """Gets the measure_id of this CustomerOrderV3.
 
-        |参数名称：订单金额度量单位：1：元| |参数的约束及描述：订单金额度量单位：1：元|
+        订单金额度量单位。 1：元
 
         :return: The measure_id of this CustomerOrderV3.
         :rtype: int
@@ -328,7 +328,7 @@ class CustomerOrderV3:
     def measure_id(self, measure_id):
         """Sets the measure_id of this CustomerOrderV3.
 
-        |参数名称：订单金额度量单位：1：元| |参数的约束及描述：订单金额度量单位：1：元|
+        订单金额度量单位。 1：元
 
         :param measure_id: The measure_id of this CustomerOrderV3.
         :type: int
@@ -339,7 +339,7 @@ class CustomerOrderV3:
     def create_time(self):
         """Gets the create_time of this CustomerOrderV3.
 
-        |参数名称：创建时间 。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：创建时间 。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        创建时间 。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The create_time of this CustomerOrderV3.
         :rtype: str
@@ -350,7 +350,7 @@ class CustomerOrderV3:
     def create_time(self, create_time):
         """Sets the create_time of this CustomerOrderV3.
 
-        |参数名称：创建时间 。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：创建时间 。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        创建时间 。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param create_time: The create_time of this CustomerOrderV3.
         :type: str
@@ -361,7 +361,7 @@ class CustomerOrderV3:
     def payment_time(self):
         """Gets the payment_time of this CustomerOrderV3.
 
-        |参数名称：支付时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：支付时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        支付时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The payment_time of this CustomerOrderV3.
         :rtype: str
@@ -372,7 +372,7 @@ class CustomerOrderV3:
     def payment_time(self, payment_time):
         """Sets the payment_time of this CustomerOrderV3.
 
-        |参数名称：支付时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：支付时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        支付时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param payment_time: The payment_time of this CustomerOrderV3.
         :type: str
@@ -383,7 +383,7 @@ class CustomerOrderV3:
     def currency(self):
         """Gets the currency of this CustomerOrderV3.
 
-        |参数名称：货币编码。| |参数约束及描述：货币编码。如CNY|
+        货币编码。
 
         :return: The currency of this CustomerOrderV3.
         :rtype: str
@@ -394,7 +394,7 @@ class CustomerOrderV3:
     def currency(self, currency):
         """Sets the currency of this CustomerOrderV3.
 
-        |参数名称：货币编码。| |参数约束及描述：货币编码。如CNY|
+        货币编码。
 
         :param currency: The currency of this CustomerOrderV3.
         :type: str
@@ -405,7 +405,7 @@ class CustomerOrderV3:
     def contract_id(self):
         """Gets the contract_id of this CustomerOrderV3.
 
-        |参数名称：合同ID。| |参数约束及描述：合同ID。|
+        合同ID。
 
         :return: The contract_id of this CustomerOrderV3.
         :rtype: str
@@ -416,7 +416,7 @@ class CustomerOrderV3:
     def contract_id(self, contract_id):
         """Sets the contract_id of this CustomerOrderV3.
 
-        |参数名称：合同ID。| |参数约束及描述：合同ID。|
+        合同ID。
 
         :param contract_id: The contract_id of this CustomerOrderV3.
         :type: str
@@ -447,7 +447,7 @@ class CustomerOrderV3:
     def user_name(self):
         """Gets the user_name of this CustomerOrderV3.
 
-        |参数名称：订单创建者名称。| |参数约束及描述：如果是客户自己下单，则这个地方填写是下单的操作员的登录名称; 如果是运营人员从后台下单，则此处返回“运营人员”; 如果是运营系统自动触发下单，则此处返回“运营系统”|
+        订单创建者名称。 如果是客户自己下单，则此处返回下单操作员的登录名称；如果是运营人员从后台下单，则此处返回“运营人员”；如果是运营系统自动触发下单，则此处返回“运营系统”。
 
         :return: The user_name of this CustomerOrderV3.
         :rtype: str
@@ -458,7 +458,7 @@ class CustomerOrderV3:
     def user_name(self, user_name):
         """Sets the user_name of this CustomerOrderV3.
 
-        |参数名称：订单创建者名称。| |参数约束及描述：如果是客户自己下单，则这个地方填写是下单的操作员的登录名称; 如果是运营人员从后台下单，则此处返回“运营人员”; 如果是运营系统自动触发下单，则此处返回“运营系统”|
+        订单创建者名称。 如果是客户自己下单，则此处返回下单操作员的登录名称；如果是运营人员从后台下单，则此处返回“运营人员”；如果是运营系统自动触发下单，则此处返回“运营系统”。
 
         :param user_name: The user_name of this CustomerOrderV3.
         :type: str

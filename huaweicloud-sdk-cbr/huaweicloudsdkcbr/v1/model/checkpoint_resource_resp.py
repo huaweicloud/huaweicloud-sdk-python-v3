@@ -142,7 +142,7 @@ class CheckpointResourceResp:
     def protect_status(self):
         """Gets the protect_status of this CheckpointResourceResp.
 
-        保护状态
+        保护状态。available（可用），error（错误），protecting（备份中），restoring（恢复中），removing（删除中）。
 
         :return: The protect_status of this CheckpointResourceResp.
         :rtype: str
@@ -153,7 +153,7 @@ class CheckpointResourceResp:
     def protect_status(self, protect_status):
         """Sets the protect_status of this CheckpointResourceResp.
 
-        保护状态
+        保护状态。available（可用），error（错误），protecting（备份中），restoring（恢复中），removing（删除中）。
 
         :param protect_status: The protect_status of this CheckpointResourceResp.
         :type: str
@@ -186,7 +186,7 @@ class CheckpointResourceResp:
     def type(self):
         """Gets the type of this CheckpointResourceResp.
 
-        
+        待备份资源的类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo
 
         :return: The type of this CheckpointResourceResp.
         :rtype: str
@@ -197,7 +197,7 @@ class CheckpointResourceResp:
     def type(self, type):
         """Sets the type of this CheckpointResourceResp.
 
-        
+        待备份资源的类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo
 
         :param type: The type of this CheckpointResourceResp.
         :type: str

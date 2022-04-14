@@ -97,7 +97,7 @@ class ListStorageTypesRequest:
     def ha_mode(self):
         """Gets the ha_mode of this ListStorageTypesRequest.
 
-        实例类型： enterprise(企业版)， ha(主备版)，不区分大小写。
+        实例类型： enterprise(企业版)， centralization_standard(主备版)，不区分大小写。
 
         :return: The ha_mode of this ListStorageTypesRequest.
         :rtype: str
@@ -108,7 +108,7 @@ class ListStorageTypesRequest:
     def ha_mode(self, ha_mode):
         """Sets the ha_mode of this ListStorageTypesRequest.
 
-        实例类型： enterprise(企业版)， ha(主备版)，不区分大小写。
+        实例类型： enterprise(企业版)， centralization_standard(主备版)，不区分大小写。
 
         :param ha_mode: The ha_mode of this ListStorageTypesRequest.
         :type: str

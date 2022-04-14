@@ -47,7 +47,7 @@ class OrderV3:
     def order_id(self):
         """Gets the order_id of this OrderV3.
 
-        |参数名称：订单标识| |参数约束及描述：订单标识|
+        可使用折扣的订单ID。
 
         :return: The order_id of this OrderV3.
         :rtype: str
@@ -58,7 +58,7 @@ class OrderV3:
     def order_id(self, order_id):
         """Sets the order_id of this OrderV3.
 
-        |参数名称：订单标识| |参数约束及描述：订单标识|
+        可使用折扣的订单ID。
 
         :param order_id: The order_id of this OrderV3.
         :type: str
@@ -69,7 +69,7 @@ class OrderV3:
     def order_line_items(self):
         """Gets the order_line_items of this OrderV3.
 
-        |参数名称：订单行列表| |参数约束以及描述：订单行列表|
+        可使用折扣的订单项列表，具体参见表4。
 
         :return: The order_line_items of this OrderV3.
         :rtype: list[OrderLineItemV3]
@@ -80,7 +80,7 @@ class OrderV3:
     def order_line_items(self, order_line_items):
         """Sets the order_line_items of this OrderV3.
 
-        |参数名称：订单行列表| |参数约束以及描述：订单行列表|
+        可使用折扣的订单项列表，具体参见表4。
 
         :param order_line_items: The order_line_items of this OrderV3.
         :type: list[OrderLineItemV3]

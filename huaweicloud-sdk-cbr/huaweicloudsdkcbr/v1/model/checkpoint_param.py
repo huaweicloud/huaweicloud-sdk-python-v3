@@ -27,7 +27,8 @@ class CheckpointParam:
         'incremental': 'bool',
         'name': 'str',
         'resources': 'list[str]',
-        'resource_details': 'list[Resource]'
+        'resource_details': 'list[Resource]',
+        'policy_id': 'str'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class CheckpointParam:
         'incremental': 'incremental',
         'name': 'name',
         'resources': 'resources',
-        'resource_details': 'resource_details'
+        'resource_details': 'resource_details',
+        'policy_id': 'policy_id'
     }
 
-    def __init__(self, auto_trigger=None, description=None, incremental=None, name=None, resources=None, resource_details=None):
+    def __init__(self, auto_trigger=None, description=None, incremental=None, name=None, resources=None, resource_details=None, policy_id=None):
         """CheckpointParam - a model defined in huaweicloud sdk"""
         
         
@@ -50,6 +52,7 @@ class CheckpointParam:
         self._name = None
         self._resources = None
         self._resource_details = None
+        self._policy_id = None
         self.discriminator = None
 
         if auto_trigger is not None:
@@ -64,6 +67,8 @@ class CheckpointParam:
             self.resources = resources
         if resource_details is not None:
             self.resource_details = resource_details
+        if policy_id is not None:
+            self.policy_id = policy_id
 
     @property
     def auto_trigger(self):
@@ -179,7 +184,7 @@ class CheckpointParam:
     def resource_details(self):
         """Gets the resource_details of this CheckpointParam.
 
-        
+        资源详情
 
         :return: The resource_details of this CheckpointParam.
         :rtype: list[Resource]
@@ -190,12 +195,34 @@ class CheckpointParam:
     def resource_details(self, resource_details):
         """Sets the resource_details of this CheckpointParam.
 
-        
+        资源详情
 
         :param resource_details: The resource_details of this CheckpointParam.
         :type: list[Resource]
         """
         self._resource_details = resource_details
+
+    @property
+    def policy_id(self):
+        """Gets the policy_id of this CheckpointParam.
+
+        自动备份时的策略id
+
+        :return: The policy_id of this CheckpointParam.
+        :rtype: str
+        """
+        return self._policy_id
+
+    @policy_id.setter
+    def policy_id(self, policy_id):
+        """Sets the policy_id of this CheckpointParam.
+
+        自动备份时的策略id
+
+        :param policy_id: The policy_id of this CheckpointParam.
+        :type: str
+        """
+        self._policy_id = policy_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

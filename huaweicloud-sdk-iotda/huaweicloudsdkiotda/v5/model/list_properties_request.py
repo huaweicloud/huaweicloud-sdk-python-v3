@@ -20,30 +20,36 @@ class ListPropertiesRequest:
     """
 
     sensitive_list = []
+    sensitive_list.append('sp_auth_token')
 
     openapi_types = {
         'device_id': 'str',
+        'sp_auth_token': 'str',
         'instance_id': 'str',
         'service_id': 'str'
     }
 
     attribute_map = {
         'device_id': 'device_id',
+        'sp_auth_token': 'Sp-Auth-Token',
         'instance_id': 'Instance-Id',
         'service_id': 'service_id'
     }
 
-    def __init__(self, device_id=None, instance_id=None, service_id=None):
+    def __init__(self, device_id=None, sp_auth_token=None, instance_id=None, service_id=None):
         """ListPropertiesRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._device_id = None
+        self._sp_auth_token = None
         self._instance_id = None
         self._service_id = None
         self.discriminator = None
 
         self.device_id = device_id
+        if sp_auth_token is not None:
+            self.sp_auth_token = sp_auth_token
         if instance_id is not None:
             self.instance_id = instance_id
         self.service_id = service_id
@@ -69,6 +75,28 @@ class ListPropertiesRequest:
         :type: str
         """
         self._device_id = device_id
+
+    @property
+    def sp_auth_token(self):
+        """Gets the sp_auth_token of this ListPropertiesRequest.
+
+        Sp用户Token。通过调用IoBPS服务获取SP用户Token
+
+        :return: The sp_auth_token of this ListPropertiesRequest.
+        :rtype: str
+        """
+        return self._sp_auth_token
+
+    @sp_auth_token.setter
+    def sp_auth_token(self, sp_auth_token):
+        """Sets the sp_auth_token of this ListPropertiesRequest.
+
+        Sp用户Token。通过调用IoBPS服务获取SP用户Token
+
+        :param sp_auth_token: The sp_auth_token of this ListPropertiesRequest.
+        :type: str
+        """
+        self._sp_auth_token = sp_auth_token
 
     @property
     def instance_id(self):

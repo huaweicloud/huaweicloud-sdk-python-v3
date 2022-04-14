@@ -131,7 +131,7 @@ class CheckpointCreate:
     def status(self):
         """Gets the status of this CheckpointCreate.
 
-        状态
+        状态:available,deleting,protecting,deleted,error-deleting,error
 
         :return: The status of this CheckpointCreate.
         :rtype: str
@@ -142,7 +142,7 @@ class CheckpointCreate:
     def status(self, status):
         """Sets the status of this CheckpointCreate.
 
-        状态
+        状态:available,deleting,protecting,deleted,error-deleting,error
 
         :param status: The status of this CheckpointCreate.
         :type: str

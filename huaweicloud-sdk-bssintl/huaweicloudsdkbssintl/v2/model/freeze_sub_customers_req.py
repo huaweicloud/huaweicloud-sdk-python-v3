@@ -47,7 +47,7 @@ class FreezeSubCustomersReq:
     def customer_ids(self):
         """Gets the customer_ids of this FreezeSubCustomersReq.
 
-        |参数名称：需要冻结的客户ID列表。| |参数约束以及描述：需要冻结的客户ID列表。|
+        需要冻结的客户账号ID列表。 您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_ids of this FreezeSubCustomersReq.
         :rtype: list[str]
@@ -58,7 +58,7 @@ class FreezeSubCustomersReq:
     def customer_ids(self, customer_ids):
         """Sets the customer_ids of this FreezeSubCustomersReq.
 
-        |参数名称：需要冻结的客户ID列表。| |参数约束以及描述：需要冻结的客户ID列表。|
+        需要冻结的客户账号ID列表。 您可以调用查询客户列表接口获取customer_id。
 
         :param customer_ids: The customer_ids of this FreezeSubCustomersReq.
         :type: list[str]
@@ -69,7 +69,7 @@ class FreezeSubCustomersReq:
     def reason(self):
         """Gets the reason of this FreezeSubCustomersReq.
 
-        |参数名称：冻结原因。| |参数约束及描述：冻结原因。|
+        冻结原因。
 
         :return: The reason of this FreezeSubCustomersReq.
         :rtype: str
@@ -80,7 +80,7 @@ class FreezeSubCustomersReq:
     def reason(self, reason):
         """Sets the reason of this FreezeSubCustomersReq.
 
-        |参数名称：冻结原因。| |参数约束及描述：冻结原因。|
+        冻结原因。
 
         :param reason: The reason of this FreezeSubCustomersReq.
         :type: str

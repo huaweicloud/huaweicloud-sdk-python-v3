@@ -54,7 +54,7 @@ class ListCustomerselfResourceRecordDetailsResponse(SdkResponse):
     def monthly_records(self):
         """Gets the monthly_records of this ListCustomerselfResourceRecordDetailsResponse.
 
-        |参数名称：资源费用记录数据| |参数的约束及描述：该参数非必填|
+        资源详单数据记录。 具体请参见表1。
 
         :return: The monthly_records of this ListCustomerselfResourceRecordDetailsResponse.
         :rtype: list[MonthlyBillRes]
@@ -65,7 +65,7 @@ class ListCustomerselfResourceRecordDetailsResponse(SdkResponse):
     def monthly_records(self, monthly_records):
         """Sets the monthly_records of this ListCustomerselfResourceRecordDetailsResponse.
 
-        |参数名称：资源费用记录数据| |参数的约束及描述：该参数非必填|
+        资源详单数据记录。 具体请参见表1。
 
         :param monthly_records: The monthly_records of this ListCustomerselfResourceRecordDetailsResponse.
         :type: list[MonthlyBillRes]
@@ -76,7 +76,7 @@ class ListCustomerselfResourceRecordDetailsResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListCustomerselfResourceRecordDetailsResponse.
 
-        |参数名称：结果集数量| |参数的约束及描述：该参数非必填，且只允许数字，只有成功才返回这个参数。|
+        结果集数量，只有成功才返回这个参数。
 
         :return: The total_count of this ListCustomerselfResourceRecordDetailsResponse.
         :rtype: int
@@ -87,7 +87,7 @@ class ListCustomerselfResourceRecordDetailsResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListCustomerselfResourceRecordDetailsResponse.
 
-        |参数名称：结果集数量| |参数的约束及描述：该参数非必填，且只允许数字，只有成功才返回这个参数。|
+        结果集数量，只有成功才返回这个参数。
 
         :param total_count: The total_count of this ListCustomerselfResourceRecordDetailsResponse.
         :type: int
@@ -98,7 +98,7 @@ class ListCustomerselfResourceRecordDetailsResponse(SdkResponse):
     def currency(self):
         """Gets the currency of this ListCustomerselfResourceRecordDetailsResponse.
 
-        |参数名称：货币单位代码| |参数的约束及描述：该参数非必填，最大长度3，CNY：人民币；USD：美元|
+        货币单位代码： USD：美元
 
         :return: The currency of this ListCustomerselfResourceRecordDetailsResponse.
         :rtype: str
@@ -109,7 +109,7 @@ class ListCustomerselfResourceRecordDetailsResponse(SdkResponse):
     def currency(self, currency):
         """Sets the currency of this ListCustomerselfResourceRecordDetailsResponse.
 
-        |参数名称：货币单位代码| |参数的约束及描述：该参数非必填，最大长度3，CNY：人民币；USD：美元|
+        货币单位代码： USD：美元
 
         :param currency: The currency of this ListCustomerselfResourceRecordDetailsResponse.
         :type: str

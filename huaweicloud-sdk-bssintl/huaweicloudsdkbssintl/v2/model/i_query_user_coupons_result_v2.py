@@ -179,7 +179,7 @@ class IQueryUserCouponsResultV2:
     def coupon_id(self):
         """Gets the coupon_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券实例ID。| |参数约束及描述：优惠券实例ID。|
+        优惠券实例ID。
 
         :return: The coupon_id of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -190,7 +190,7 @@ class IQueryUserCouponsResultV2:
     def coupon_id(self, coupon_id):
         """Sets the coupon_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券实例ID。| |参数约束及描述：优惠券实例ID。|
+        优惠券实例ID。
 
         :param coupon_id: The coupon_id of this IQueryUserCouponsResultV2.
         :type: str
@@ -201,7 +201,7 @@ class IQueryUserCouponsResultV2:
     def coupon_code(self):
         """Gets the coupon_code of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券编码。| |参数约束及描述：优惠券编码。|
+        优惠券编码。
 
         :return: The coupon_code of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -212,7 +212,7 @@ class IQueryUserCouponsResultV2:
     def coupon_code(self, coupon_code):
         """Sets the coupon_code of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券编码。| |参数约束及描述：优惠券编码。|
+        优惠券编码。
 
         :param coupon_code: The coupon_code of this IQueryUserCouponsResultV2.
         :type: str
@@ -223,7 +223,7 @@ class IQueryUserCouponsResultV2:
     def status(self):
         """Gets the status of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券状态：1：未激活；2：待使用；3：已使用；4：已过期。| |参数的约束及描述：优惠券状态：1：未激活；2：待使用；3：已使用；4：已过期。|
+        优惠券状态： 1：未激活2：待使用3：已使用4：已过期5：已回收
 
         :return: The status of this IQueryUserCouponsResultV2.
         :rtype: int
@@ -234,7 +234,7 @@ class IQueryUserCouponsResultV2:
     def status(self, status):
         """Sets the status of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券状态：1：未激活；2：待使用；3：已使用；4：已过期。| |参数的约束及描述：优惠券状态：1：未激活；2：待使用；3：已使用；4：已过期。|
+        优惠券状态： 1：未激活2：待使用3：已使用4：已过期5：已回收
 
         :param status: The status of this IQueryUserCouponsResultV2.
         :type: int
@@ -245,7 +245,7 @@ class IQueryUserCouponsResultV2:
     def customer_id(self):
         """Gets the customer_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：客户ID| |参数约束及描述：客户ID|
+        客户账号ID。
 
         :return: The customer_id of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -256,7 +256,7 @@ class IQueryUserCouponsResultV2:
     def customer_id(self, customer_id):
         """Sets the customer_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：客户ID| |参数约束及描述：客户ID|
+        客户账号ID。
 
         :param customer_id: The customer_id of this IQueryUserCouponsResultV2.
         :type: str
@@ -267,7 +267,7 @@ class IQueryUserCouponsResultV2:
     def coupon_type(self):
         """Gets the coupon_type of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券类型：1：代金券；2：折扣券；3：产品券；4：现金券。| |参数的约束及描述：优惠券类型：1：代金券；2：折扣券；3：产品券；4：现金券。|
+        优惠券类型： 1：代金券2：折扣券（预留）3：产品券（预留）4：现金券（预留）
 
         :return: The coupon_type of this IQueryUserCouponsResultV2.
         :rtype: int
@@ -278,7 +278,7 @@ class IQueryUserCouponsResultV2:
     def coupon_type(self, coupon_type):
         """Sets the coupon_type of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券类型：1：代金券；2：折扣券；3：产品券；4：现金券。| |参数的约束及描述：优惠券类型：1：代金券；2：折扣券；3：产品券；4：现金券。|
+        优惠券类型： 1：代金券2：折扣券（预留）3：产品券（预留）4：现金券（预留）
 
         :param coupon_type: The coupon_type of this IQueryUserCouponsResultV2.
         :type: int
@@ -289,7 +289,7 @@ class IQueryUserCouponsResultV2:
     def measure_id(self):
         """Gets the measure_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：度量单位。1：元| |参数的约束及描述：度量单位。1：元|
+        度量单位。 1：元
 
         :return: The measure_id of this IQueryUserCouponsResultV2.
         :rtype: int
@@ -300,7 +300,7 @@ class IQueryUserCouponsResultV2:
     def measure_id(self, measure_id):
         """Sets the measure_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：度量单位。1：元| |参数的约束及描述：度量单位。1：元|
+        度量单位。 1：元
 
         :param measure_id: The measure_id of this IQueryUserCouponsResultV2.
         :type: int
@@ -311,7 +311,7 @@ class IQueryUserCouponsResultV2:
     def face_value(self):
         """Gets the face_value of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券金额。| |参数的约束及描述：优惠券金额。|
+        优惠券金额。
 
         :return: The face_value of this IQueryUserCouponsResultV2.
         :rtype: float
@@ -322,7 +322,7 @@ class IQueryUserCouponsResultV2:
     def face_value(self, face_value):
         """Sets the face_value of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券金额。| |参数的约束及描述：优惠券金额。|
+        优惠券金额。
 
         :param face_value: The face_value of this IQueryUserCouponsResultV2.
         :type: float
@@ -333,7 +333,7 @@ class IQueryUserCouponsResultV2:
     def valid_time(self):
         """Gets the valid_time of this IQueryUserCouponsResultV2.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The valid_time of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -344,7 +344,7 @@ class IQueryUserCouponsResultV2:
     def valid_time(self, valid_time):
         """Sets the valid_time of this IQueryUserCouponsResultV2.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param valid_time: The valid_time of this IQueryUserCouponsResultV2.
         :type: str
@@ -355,7 +355,7 @@ class IQueryUserCouponsResultV2:
     def expire_time(self):
         """Gets the expire_time of this IQueryUserCouponsResultV2.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The expire_time of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -366,7 +366,7 @@ class IQueryUserCouponsResultV2:
     def expire_time(self, expire_time):
         """Sets the expire_time of this IQueryUserCouponsResultV2.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this IQueryUserCouponsResultV2.
         :type: str
@@ -377,7 +377,7 @@ class IQueryUserCouponsResultV2:
     def order_id(self):
         """Gets the order_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：订单ID。| |参数约束及描述：订单ID。|
+        订单ID。
 
         :return: The order_id of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -388,7 +388,7 @@ class IQueryUserCouponsResultV2:
     def order_id(self, order_id):
         """Sets the order_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：订单ID。| |参数约束及描述：订单ID。|
+        订单ID。
 
         :param order_id: The order_id of this IQueryUserCouponsResultV2.
         :type: str
@@ -399,7 +399,7 @@ class IQueryUserCouponsResultV2:
     def promotion_plan_id(self):
         """Gets the promotion_plan_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：促销计划ID。| |参数约束及描述：促销计划ID。|
+        促销计划ID。
 
         :return: The promotion_plan_id of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -410,7 +410,7 @@ class IQueryUserCouponsResultV2:
     def promotion_plan_id(self, promotion_plan_id):
         """Sets the promotion_plan_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：促销计划ID。| |参数约束及描述：促销计划ID。|
+        促销计划ID。
 
         :param promotion_plan_id: The promotion_plan_id of this IQueryUserCouponsResultV2.
         :type: str
@@ -421,7 +421,7 @@ class IQueryUserCouponsResultV2:
     def plan_name(self):
         """Gets the plan_name of this IQueryUserCouponsResultV2.
 
-        |参数名称：促销计划名称。| |参数约束及描述：促销计划名称。|
+        促销计划名称。
 
         :return: The plan_name of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -432,7 +432,7 @@ class IQueryUserCouponsResultV2:
     def plan_name(self, plan_name):
         """Sets the plan_name of this IQueryUserCouponsResultV2.
 
-        |参数名称：促销计划名称。| |参数约束及描述：促销计划名称。|
+        促销计划名称。
 
         :param plan_name: The plan_name of this IQueryUserCouponsResultV2.
         :type: str
@@ -443,7 +443,7 @@ class IQueryUserCouponsResultV2:
     def plan_desc(self):
         """Gets the plan_desc of this IQueryUserCouponsResultV2.
 
-        |参数名称：促销计划描述。| |参数约束及描述：促销计划描述。|
+        促销计划描述。
 
         :return: The plan_desc of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -454,7 +454,7 @@ class IQueryUserCouponsResultV2:
     def plan_desc(self, plan_desc):
         """Sets the plan_desc of this IQueryUserCouponsResultV2.
 
-        |参数名称：促销计划描述。| |参数约束及描述：促销计划描述。|
+        促销计划描述。
 
         :param plan_desc: The plan_desc of this IQueryUserCouponsResultV2.
         :type: str
@@ -465,7 +465,7 @@ class IQueryUserCouponsResultV2:
     def media_type(self):
         """Gets the media_type of this IQueryUserCouponsResultV2.
 
-        |参数名称：介质类型。| |参数的约束及描述：介质类型。|
+        介质类型。 1：电子券2：纸质券
 
         :return: The media_type of this IQueryUserCouponsResultV2.
         :rtype: int
@@ -476,7 +476,7 @@ class IQueryUserCouponsResultV2:
     def media_type(self, media_type):
         """Sets the media_type of this IQueryUserCouponsResultV2.
 
-        |参数名称：介质类型。| |参数的约束及描述：介质类型。|
+        介质类型。 1：电子券2：纸质券
 
         :param media_type: The media_type of this IQueryUserCouponsResultV2.
         :type: int
@@ -487,7 +487,7 @@ class IQueryUserCouponsResultV2:
     def fetch_method(self):
         """Gets the fetch_method of this IQueryUserCouponsResultV2.
 
-        |参数名称：获取方式：1：线上领取；2：线上兑换；3：线上发放；4：线下获取；5：事件赠送。| |参数的约束及描述：获取方式：1：线上领取；2：线上兑换；3：线上发放；4：线下获取；5：事件赠送。|
+        获取方式： 1：线上领取2：线上兑换3：线上发放4：线下获取5：事件赠送
 
         :return: The fetch_method of this IQueryUserCouponsResultV2.
         :rtype: int
@@ -498,7 +498,7 @@ class IQueryUserCouponsResultV2:
     def fetch_method(self, fetch_method):
         """Sets the fetch_method of this IQueryUserCouponsResultV2.
 
-        |参数名称：获取方式：1：线上领取；2：线上兑换；3：线上发放；4：线下获取；5：事件赠送。| |参数的约束及描述：获取方式：1：线上领取；2：线上兑换；3：线上发放；4：线下获取；5：事件赠送。|
+        获取方式： 1：线上领取2：线上兑换3：线上发放4：线下获取5：事件赠送
 
         :param fetch_method: The fetch_method of this IQueryUserCouponsResultV2.
         :type: int
@@ -509,7 +509,7 @@ class IQueryUserCouponsResultV2:
     def use_limits(self):
         """Gets the use_limits of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券使用限制。具体请参见表 ICouponUseLimitInfo。| |参数约束以及描述：优惠券使用限制。具体请参见表 ICouponUseLimitInfo。|
+        优惠券使用限制。 具体请参见表3。
 
         :return: The use_limits of this IQueryUserCouponsResultV2.
         :rtype: list[ICouponUseLimitInfoV2]
@@ -520,7 +520,7 @@ class IQueryUserCouponsResultV2:
     def use_limits(self, use_limits):
         """Sets the use_limits of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券使用限制。具体请参见表 ICouponUseLimitInfo。| |参数约束以及描述：优惠券使用限制。具体请参见表 ICouponUseLimitInfo。|
+        优惠券使用限制。 具体请参见表3。
 
         :param use_limits: The use_limits of this IQueryUserCouponsResultV2.
         :type: list[ICouponUseLimitInfoV2]
@@ -531,7 +531,7 @@ class IQueryUserCouponsResultV2:
     def active_time(self):
         """Gets the active_time of this IQueryUserCouponsResultV2.
 
-        |参数名称：激活时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：激活时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        激活时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The active_time of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -542,7 +542,7 @@ class IQueryUserCouponsResultV2:
     def active_time(self, active_time):
         """Sets the active_time of this IQueryUserCouponsResultV2.
 
-        |参数名称：激活时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：激活时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        激活时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param active_time: The active_time of this IQueryUserCouponsResultV2.
         :type: str
@@ -553,7 +553,7 @@ class IQueryUserCouponsResultV2:
     def reserve_time(self):
         """Gets the reserve_time of this IQueryUserCouponsResultV2.
 
-        |参数名称：使用时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：使用时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        使用时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The reserve_time of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -564,7 +564,7 @@ class IQueryUserCouponsResultV2:
     def reserve_time(self, reserve_time):
         """Sets the reserve_time of this IQueryUserCouponsResultV2.
 
-        |参数名称：使用时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：使用时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        使用时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param reserve_time: The reserve_time of this IQueryUserCouponsResultV2.
         :type: str
@@ -575,7 +575,7 @@ class IQueryUserCouponsResultV2:
     def promotion_id(self):
         """Gets the promotion_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：促销ID。| |参数约束及描述：促销ID。|
+        促销ID。
 
         :return: The promotion_id of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -586,7 +586,7 @@ class IQueryUserCouponsResultV2:
     def promotion_id(self, promotion_id):
         """Sets the promotion_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：促销ID。| |参数约束及描述：促销ID。|
+        促销ID。
 
         :param promotion_id: The promotion_id of this IQueryUserCouponsResultV2.
         :type: str
@@ -597,7 +597,7 @@ class IQueryUserCouponsResultV2:
     def create_time(self):
         """Gets the create_time of this IQueryUserCouponsResultV2.
 
-        |参数名称：创建时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：创建时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The create_time of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -608,7 +608,7 @@ class IQueryUserCouponsResultV2:
     def create_time(self, create_time):
         """Sets the create_time of this IQueryUserCouponsResultV2.
 
-        |参数名称：创建时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ| |参数约束及描述：创建时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ|
+        创建时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param create_time: The create_time of this IQueryUserCouponsResultV2.
         :type: str
@@ -619,7 +619,7 @@ class IQueryUserCouponsResultV2:
     def coupon_version(self):
         """Gets the coupon_version of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券版本：1：老版本，老版本优惠券只能使用一次；2：新版本，新版本优惠券可以反复使用。| |参数的约束及描述：优惠券版本：1：老版本，老版本优惠券只能使用一次；2：新版本，新版本优惠券可以反复使用。|
+        优惠券版本： 1：老版本，老版本优惠券只能使用一次2：新版本，新版本优惠券可以反复使用
 
         :return: The coupon_version of this IQueryUserCouponsResultV2.
         :rtype: int
@@ -630,7 +630,7 @@ class IQueryUserCouponsResultV2:
     def coupon_version(self, coupon_version):
         """Sets the coupon_version of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券版本：1：老版本，老版本优惠券只能使用一次；2：新版本，新版本优惠券可以反复使用。| |参数的约束及描述：优惠券版本：1：老版本，老版本优惠券只能使用一次；2：新版本，新版本优惠券可以反复使用。|
+        优惠券版本： 1：老版本，老版本优惠券只能使用一次2：新版本，新版本优惠券可以反复使用
 
         :param coupon_version: The coupon_version of this IQueryUserCouponsResultV2.
         :type: int
@@ -641,7 +641,7 @@ class IQueryUserCouponsResultV2:
     def balance(self):
         """Gets the balance of this IQueryUserCouponsResultV2.
 
-        |参数名称：余额。如果为老版本优惠券，该值为空| |参数的约束及描述：余额。如果为老版本优惠券，该值为空|
+        优惠券余额。单位：元。 如果为老版本优惠券，该值为空。
 
         :return: The balance of this IQueryUserCouponsResultV2.
         :rtype: float
@@ -652,7 +652,7 @@ class IQueryUserCouponsResultV2:
     def balance(self, balance):
         """Sets the balance of this IQueryUserCouponsResultV2.
 
-        |参数名称：余额。如果为老版本优惠券，该值为空| |参数的约束及描述：余额。如果为老版本优惠券，该值为空|
+        优惠券余额。单位：元。 如果为老版本优惠券，该值为空。
 
         :param balance: The balance of this IQueryUserCouponsResultV2.
         :type: float
@@ -663,7 +663,7 @@ class IQueryUserCouponsResultV2:
     def lock_order_id(self):
         """Gets the lock_order_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：锁定优惠券的订单ID。如果为老版本优惠券，该值为空。| |参数约束及描述：锁定优惠券的订单ID。如果为老版本优惠券，该值为空。|
+        锁定优惠券的订单ID。 如果为老版本优惠券，该值为空。
 
         :return: The lock_order_id of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -674,7 +674,7 @@ class IQueryUserCouponsResultV2:
     def lock_order_id(self, lock_order_id):
         """Sets the lock_order_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：锁定优惠券的订单ID。如果为老版本优惠券，该值为空。| |参数约束及描述：锁定优惠券的订单ID。如果为老版本优惠券，该值为空。|
+        锁定优惠券的订单ID。 如果为老版本优惠券，该值为空。
 
         :param lock_order_id: The lock_order_id of this IQueryUserCouponsResultV2.
         :type: str
@@ -685,7 +685,7 @@ class IQueryUserCouponsResultV2:
     def coupon_usage(self):
         """Gets the coupon_usage of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券用途。| |参数约束及描述：优惠券用途。|
+        优惠券用途。
 
         :return: The coupon_usage of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -696,7 +696,7 @@ class IQueryUserCouponsResultV2:
     def coupon_usage(self, coupon_usage):
         """Sets the coupon_usage of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券用途。| |参数约束及描述：优惠券用途。|
+        优惠券用途。
 
         :param coupon_usage: The coupon_usage of this IQueryUserCouponsResultV2.
         :type: str
@@ -707,7 +707,7 @@ class IQueryUserCouponsResultV2:
     def is_frozen(self):
         """Gets the is_frozen of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券是否冻结：0：否1：是可用优惠券接口返回时不包括冻结状态的优惠券。| |参数约束及描述：优惠券是否冻结：0：否1：是可用优惠券接口返回时不包括冻结状态的优惠券。|
+        优惠券是否冻结： 0：否1：是
 
         :return: The is_frozen of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -718,7 +718,7 @@ class IQueryUserCouponsResultV2:
     def is_frozen(self, is_frozen):
         """Sets the is_frozen of this IQueryUserCouponsResultV2.
 
-        |参数名称：优惠券是否冻结：0：否1：是可用优惠券接口返回时不包括冻结状态的优惠券。| |参数约束及描述：优惠券是否冻结：0：否1：是可用优惠券接口返回时不包括冻结状态的优惠券。|
+        优惠券是否冻结： 0：否1：是
 
         :param is_frozen: The is_frozen of this IQueryUserCouponsResultV2.
         :type: str
@@ -729,7 +729,7 @@ class IQueryUserCouponsResultV2:
     def currency(self):
         """Gets the currency of this IQueryUserCouponsResultV2.
 
-        |参数名称：币种。| |参数约束及描述：币种。|
+        币种。 USD：美元
 
         :return: The currency of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -740,7 +740,7 @@ class IQueryUserCouponsResultV2:
     def currency(self, currency):
         """Sets the currency of this IQueryUserCouponsResultV2.
 
-        |参数名称：币种。| |参数约束及描述：币种。|
+        币种。 USD：美元
 
         :param currency: The currency of this IQueryUserCouponsResultV2.
         :type: str
@@ -751,7 +751,7 @@ class IQueryUserCouponsResultV2:
     def extend_param1(self):
         """Gets the extend_param1 of this IQueryUserCouponsResultV2.
 
-        |参数名称：扩展字段。| |参数约束及描述：扩展字段。|
+        扩展字段。
 
         :return: The extend_param1 of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -762,7 +762,7 @@ class IQueryUserCouponsResultV2:
     def extend_param1(self, extend_param1):
         """Sets the extend_param1 of this IQueryUserCouponsResultV2.
 
-        |参数名称：扩展字段。| |参数约束及描述：扩展字段。|
+        扩展字段。
 
         :param extend_param1: The extend_param1 of this IQueryUserCouponsResultV2.
         :type: str
@@ -773,7 +773,7 @@ class IQueryUserCouponsResultV2:
     def source_id(self):
         """Gets the source_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：发放人标识| |参数约束及描述：用于标识优惠券唯一的发放人； 云豆兑换优惠券时sourceId填写云豆计划Id； 累计送优惠券时sourceId填写累计送计划Id； 抽奖送优惠券时sourceId填写抽奖计划Id； 事件送优惠券时sourceId填写事件计划Id； 定制优惠券时sourceId填写创建人Id；|
+        发券来源。 如果是合作伙伴发送的券，此处为伙伴ID。如果是活动发券，此处为活动ID：云豆兑换优惠券：云豆计划ID累计送优惠券：累计送计划ID抽奖送优惠券：抽奖计划ID事件送优惠券：事件计划ID定制优惠券：创建人ID
 
         :return: The source_id of this IQueryUserCouponsResultV2.
         :rtype: str
@@ -784,7 +784,7 @@ class IQueryUserCouponsResultV2:
     def source_id(self, source_id):
         """Sets the source_id of this IQueryUserCouponsResultV2.
 
-        |参数名称：发放人标识| |参数约束及描述：用于标识优惠券唯一的发放人； 云豆兑换优惠券时sourceId填写云豆计划Id； 累计送优惠券时sourceId填写累计送计划Id； 抽奖送优惠券时sourceId填写抽奖计划Id； 事件送优惠券时sourceId填写事件计划Id； 定制优惠券时sourceId填写创建人Id；|
+        发券来源。 如果是合作伙伴发送的券，此处为伙伴ID。如果是活动发券，此处为活动ID：云豆兑换优惠券：云豆计划ID累计送优惠券：累计送计划ID抽奖送优惠券：抽奖计划ID事件送优惠券：事件计划ID定制优惠券：创建人ID
 
         :param source_id: The source_id of this IQueryUserCouponsResultV2.
         :type: str

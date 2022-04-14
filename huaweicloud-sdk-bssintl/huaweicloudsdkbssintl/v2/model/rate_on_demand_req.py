@@ -52,7 +52,7 @@ class RateOnDemandReq:
     def project_id(self):
         """Gets the project_id of this RateOnDemandReq.
 
-        |参数名称：项目ID| |参数约束及描述：如果使用客户AK/SK或者Token，可以调用“通过assume_role方式获取用户token”接口获取“regionId”取值对应的project id。|
+        项目ID。  说明： 使用客户Token，可以调用通过assume_role方式获取用户token接口获取“regionId”的取值对应的“project id”。具体请参见如何将合作伙伴Token置换为客户Token的步骤2。IAM子用户调用此接口，需要IAM主账号授权，具体请参考创建用户组并授权。
 
         :return: The project_id of this RateOnDemandReq.
         :rtype: str
@@ -63,7 +63,7 @@ class RateOnDemandReq:
     def project_id(self, project_id):
         """Sets the project_id of this RateOnDemandReq.
 
-        |参数名称：项目ID| |参数约束及描述：如果使用客户AK/SK或者Token，可以调用“通过assume_role方式获取用户token”接口获取“regionId”取值对应的project id。|
+        项目ID。  说明： 使用客户Token，可以调用通过assume_role方式获取用户token接口获取“regionId”的取值对应的“project id”。具体请参见如何将合作伙伴Token置换为客户Token的步骤2。IAM子用户调用此接口，需要IAM主账号授权，具体请参考创建用户组并授权。
 
         :param project_id: The project_id of this RateOnDemandReq.
         :type: str
@@ -74,7 +74,7 @@ class RateOnDemandReq:
     def inquiry_precision(self):
         """Gets the inquiry_precision of this RateOnDemandReq.
 
-        |参数名称：精度模式| |参数约束及描述：精度模式：0：询价结果默认精度截取，按需最长保留到元后6位小数点，如0.000001元;1：询价结果保留10位精度，即最长保留到分后10位小数点，如：1.0000000001元. 说明：如果定价只到元后2位或者3位，那么价格也只到元后2位或者3位，不管传0或者穿1都一样，只有定价定到了小数点后面6位以上，传0和传1才有区别。|
+        查询价格结果的精度模式。 0：询价结果默认精度截取，即最长保留到元后6位小数点，如0.000001元1：询价结果保留10位精度，即最长保留到元后10位小数点，如1.0000000001元  说明： 如果询价结果只到元后2位或者3位，那么价格也只到元后2位或者3位，不管传0或者传1都一样，只有询价结果到了小数点后面6位以上，传0和传1才有区别。
 
         :return: The inquiry_precision of this RateOnDemandReq.
         :rtype: int
@@ -85,7 +85,7 @@ class RateOnDemandReq:
     def inquiry_precision(self, inquiry_precision):
         """Sets the inquiry_precision of this RateOnDemandReq.
 
-        |参数名称：精度模式| |参数约束及描述：精度模式：0：询价结果默认精度截取，按需最长保留到元后6位小数点，如0.000001元;1：询价结果保留10位精度，即最长保留到分后10位小数点，如：1.0000000001元. 说明：如果定价只到元后2位或者3位，那么价格也只到元后2位或者3位，不管传0或者穿1都一样，只有定价定到了小数点后面6位以上，传0和传1才有区别。|
+        查询价格结果的精度模式。 0：询价结果默认精度截取，即最长保留到元后6位小数点，如0.000001元1：询价结果保留10位精度，即最长保留到元后10位小数点，如1.0000000001元  说明： 如果询价结果只到元后2位或者3位，那么价格也只到元后2位或者3位，不管传0或者传1都一样，只有询价结果到了小数点后面6位以上，传0和传1才有区别。
 
         :param inquiry_precision: The inquiry_precision of this RateOnDemandReq.
         :type: int
@@ -96,7 +96,7 @@ class RateOnDemandReq:
     def product_infos(self):
         """Gets the product_infos of this RateOnDemandReq.
 
-        |参数名称：产品信息列表| |参数的约束及描述：询价时要询价产品的信息的列表|
+        产品信息列表，询价时要询价产品的信息的列表，具体参见表1。
 
         :return: The product_infos of this RateOnDemandReq.
         :rtype: list[DemandProductInfo]
@@ -107,7 +107,7 @@ class RateOnDemandReq:
     def product_infos(self, product_infos):
         """Sets the product_infos of this RateOnDemandReq.
 
-        |参数名称：产品信息列表| |参数的约束及描述：询价时要询价产品的信息的列表|
+        产品信息列表，询价时要询价产品的信息的列表，具体参见表1。
 
         :param product_infos: The product_infos of this RateOnDemandReq.
         :type: list[DemandProductInfo]

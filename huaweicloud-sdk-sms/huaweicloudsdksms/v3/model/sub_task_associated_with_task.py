@@ -26,7 +26,8 @@ class SubTaskAssociatedWithTask:
         'name': 'str',
         'progress': 'int',
         'start_date': 'int',
-        'end_date': 'int'
+        'end_date': 'int',
+        'process_trace': 'str'
     }
 
     attribute_map = {
@@ -34,10 +35,11 @@ class SubTaskAssociatedWithTask:
         'name': 'name',
         'progress': 'progress',
         'start_date': 'start_date',
-        'end_date': 'end_date'
+        'end_date': 'end_date',
+        'process_trace': 'process_trace'
     }
 
-    def __init__(self, id=None, name=None, progress=None, start_date=None, end_date=None):
+    def __init__(self, id=None, name=None, progress=None, start_date=None, end_date=None, process_trace=None):
         """SubTaskAssociatedWithTask - a model defined in huaweicloud sdk"""
         
         
@@ -47,6 +49,7 @@ class SubTaskAssociatedWithTask:
         self._progress = None
         self._start_date = None
         self._end_date = None
+        self._process_trace = None
         self.discriminator = None
 
         if id is not None:
@@ -59,6 +62,8 @@ class SubTaskAssociatedWithTask:
             self.start_date = start_date
         if end_date is not None:
             self.end_date = end_date
+        if process_trace is not None:
+            self.process_trace = process_trace
 
     @property
     def id(self):
@@ -169,6 +174,28 @@ class SubTaskAssociatedWithTask:
         :type: int
         """
         self._end_date = end_date
+
+    @property
+    def process_trace(self):
+        """Gets the process_trace of this SubTaskAssociatedWithTask.
+
+        迁移或同步时，具体的迁移详情
+
+        :return: The process_trace of this SubTaskAssociatedWithTask.
+        :rtype: str
+        """
+        return self._process_trace
+
+    @process_trace.setter
+    def process_trace(self, process_trace):
+        """Sets the process_trace of this SubTaskAssociatedWithTask.
+
+        迁移或同步时，具体的迁移详情
+
+        :param process_trace: The process_trace of this SubTaskAssociatedWithTask.
+        :type: str
+        """
+        self._process_trace = process_trace
 
     def to_dict(self):
         """Returns the model properties as a dict"""

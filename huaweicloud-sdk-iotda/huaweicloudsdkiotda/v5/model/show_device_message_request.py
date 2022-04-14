@@ -52,7 +52,7 @@ class ShowDeviceMessageRequest:
     def device_id(self):
         """Gets the device_id of this ShowDeviceMessageRequest.
 
-        **参数说明**：下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获。
+        **参数说明**：下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :return: The device_id of this ShowDeviceMessageRequest.
         :rtype: str
@@ -63,7 +63,7 @@ class ShowDeviceMessageRequest:
     def device_id(self, device_id):
         """Sets the device_id of this ShowDeviceMessageRequest.
 
-        **参数说明**：下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获。
+        **参数说明**：下发消息的设备ID，用于唯一标识一个设备，在注册设备时由物联网平台分配获得。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
         :param device_id: The device_id of this ShowDeviceMessageRequest.
         :type: str

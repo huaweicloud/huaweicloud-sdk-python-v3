@@ -49,7 +49,7 @@ class ListFreeResourceUsagesRequest:
     def x_language(self):
         """Gets the x_language of this ListFreeResourceUsagesRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
         :return: The x_language of this ListFreeResourceUsagesRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class ListFreeResourceUsagesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListFreeResourceUsagesRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
         :param x_language: The x_language of this ListFreeResourceUsagesRequest.
         :type: str

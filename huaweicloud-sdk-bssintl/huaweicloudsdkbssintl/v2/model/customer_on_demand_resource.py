@@ -114,7 +114,7 @@ class CustomerOnDemandResource:
     def customer_id(self):
         """Gets the customer_id of this CustomerOnDemandResource.
 
-        |参数名称：所属的客户ID。| |参数约束及描述：所属的客户ID。|
+        客户账号ID。
 
         :return: The customer_id of this CustomerOnDemandResource.
         :rtype: str
@@ -125,7 +125,7 @@ class CustomerOnDemandResource:
     def customer_id(self, customer_id):
         """Sets the customer_id of this CustomerOnDemandResource.
 
-        |参数名称：所属的客户ID。| |参数约束及描述：所属的客户ID。|
+        客户账号ID。
 
         :param customer_id: The customer_id of this CustomerOnDemandResource.
         :type: str
@@ -136,7 +136,7 @@ class CustomerOnDemandResource:
     def region_code(self):
         """Gets the region_code of this CustomerOnDemandResource.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :return: The region_code of this CustomerOnDemandResource.
         :rtype: str
@@ -147,7 +147,7 @@ class CustomerOnDemandResource:
     def region_code(self, region_code):
         """Sets the region_code of this CustomerOnDemandResource.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this CustomerOnDemandResource.
         :type: str
@@ -158,7 +158,7 @@ class CustomerOnDemandResource:
     def availability_zone_code(self):
         """Gets the availability_zone_code of this CustomerOnDemandResource.
 
-        |参数名称：所属的AZ的编码。| |参数约束及描述：所属的AZ的编码。|
+        所属可用区的编码。
 
         :return: The availability_zone_code of this CustomerOnDemandResource.
         :rtype: str
@@ -169,7 +169,7 @@ class CustomerOnDemandResource:
     def availability_zone_code(self, availability_zone_code):
         """Sets the availability_zone_code of this CustomerOnDemandResource.
 
-        |参数名称：所属的AZ的编码。| |参数约束及描述：所属的AZ的编码。|
+        所属可用区的编码。
 
         :param availability_zone_code: The availability_zone_code of this CustomerOnDemandResource.
         :type: str
@@ -180,7 +180,7 @@ class CustomerOnDemandResource:
     def service_type_code(self):
         """Gets the service_type_code of this CustomerOnDemandResource.
 
-        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :return: The service_type_code of this CustomerOnDemandResource.
         :rtype: str
@@ -191,7 +191,7 @@ class CustomerOnDemandResource:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this CustomerOnDemandResource.
 
-        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this CustomerOnDemandResource.
         :type: str
@@ -202,7 +202,7 @@ class CustomerOnDemandResource:
     def resource_type_code(self):
         """Gets the resource_type_code of this CustomerOnDemandResource.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :return: The resource_type_code of this CustomerOnDemandResource.
         :rtype: str
@@ -213,7 +213,7 @@ class CustomerOnDemandResource:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this CustomerOnDemandResource.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this CustomerOnDemandResource.
         :type: str
@@ -224,7 +224,7 @@ class CustomerOnDemandResource:
     def service_type_name(self):
         """Gets the service_type_name of this CustomerOnDemandResource.
 
-        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :return: The service_type_name of this CustomerOnDemandResource.
         :rtype: str
@@ -235,7 +235,7 @@ class CustomerOnDemandResource:
     def service_type_name(self, service_type_name):
         """Sets the service_type_name of this CustomerOnDemandResource.
 
-        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this CustomerOnDemandResource.
         :type: str
@@ -246,7 +246,7 @@ class CustomerOnDemandResource:
     def resource_type_name(self):
         """Gets the resource_type_name of this CustomerOnDemandResource.
 
-        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :return: The resource_type_name of this CustomerOnDemandResource.
         :rtype: str
@@ -257,7 +257,7 @@ class CustomerOnDemandResource:
     def resource_type_name(self, resource_type_name):
         """Sets the resource_type_name of this CustomerOnDemandResource.
 
-        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :param resource_type_name: The resource_type_name of this CustomerOnDemandResource.
         :type: str
@@ -268,7 +268,7 @@ class CustomerOnDemandResource:
     def resource_id(self):
         """Gets the resource_id of this CustomerOnDemandResource.
 
-        |参数名称：具体资源的ID。| |参数约束及描述：具体资源的ID。|
+        资源ID。
 
         :return: The resource_id of this CustomerOnDemandResource.
         :rtype: str
@@ -279,7 +279,7 @@ class CustomerOnDemandResource:
     def resource_id(self, resource_id):
         """Sets the resource_id of this CustomerOnDemandResource.
 
-        |参数名称：具体资源的ID。| |参数约束及描述：具体资源的ID。|
+        资源ID。
 
         :param resource_id: The resource_id of this CustomerOnDemandResource.
         :type: str
@@ -290,7 +290,7 @@ class CustomerOnDemandResource:
     def resource_name(self):
         """Gets the resource_name of this CustomerOnDemandResource.
 
-        |参数名称：资源实例的名称。| |参数约束及描述：资源实例的名称。|
+        资源实例名称。
 
         :return: The resource_name of this CustomerOnDemandResource.
         :rtype: str
@@ -301,7 +301,7 @@ class CustomerOnDemandResource:
     def resource_name(self, resource_name):
         """Sets the resource_name of this CustomerOnDemandResource.
 
-        |参数名称：资源实例的名称。| |参数约束及描述：资源实例的名称。|
+        资源实例名称。
 
         :param resource_name: The resource_name of this CustomerOnDemandResource.
         :type: str
@@ -312,7 +312,7 @@ class CustomerOnDemandResource:
     def effective_time(self):
         """Gets the effective_time of this CustomerOnDemandResource.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The effective_time of this CustomerOnDemandResource.
         :rtype: str
@@ -323,7 +323,7 @@ class CustomerOnDemandResource:
     def effective_time(self, effective_time):
         """Sets the effective_time of this CustomerOnDemandResource.
 
-        |参数名称：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param effective_time: The effective_time of this CustomerOnDemandResource.
         :type: str
@@ -334,7 +334,7 @@ class CustomerOnDemandResource:
     def expire_time(self):
         """Gets the expire_time of this CustomerOnDemandResource.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The expire_time of this CustomerOnDemandResource.
         :rtype: str
@@ -345,7 +345,7 @@ class CustomerOnDemandResource:
     def expire_time(self, expire_time):
         """Sets the expire_time of this CustomerOnDemandResource.
 
-        |参数名称：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：失效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param expire_time: The expire_time of this CustomerOnDemandResource.
         :type: str
@@ -356,7 +356,7 @@ class CustomerOnDemandResource:
     def status(self):
         """Gets the status of this CustomerOnDemandResource.
 
-        |参数名称：资源状态：1：正常（已开通）；2：宽限期；3：冻结中；4：变更中；5：正在关闭；6：已关闭。| |参数的约束及描述：资源状态：1：正常（已开通）；2：宽限期；3：冻结中；4：变更中；5：正在关闭；6：已关闭。|
+        资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭
 
         :return: The status of this CustomerOnDemandResource.
         :rtype: int
@@ -367,7 +367,7 @@ class CustomerOnDemandResource:
     def status(self, status):
         """Sets the status of this CustomerOnDemandResource.
 
-        |参数名称：资源状态：1：正常（已开通）；2：宽限期；3：冻结中；4：变更中；5：正在关闭；6：已关闭。| |参数的约束及描述：资源状态：1：正常（已开通）；2：宽限期；3：冻结中；4：变更中；5：正在关闭；6：已关闭。|
+        资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭
 
         :param status: The status of this CustomerOnDemandResource.
         :type: int
@@ -378,7 +378,7 @@ class CustomerOnDemandResource:
     def resource_spec_code(self):
         """Gets the resource_spec_code of this CustomerOnDemandResource.
 
-        |参数名称：按需资源规格编码。| |参数约束及描述：按需资源规格编码。|
+        云服务产品的资源规格。如果是VM的资源规格，则需要在规格后面添加“.win”或“.linux”，例如“s2.small.1.linux”。
 
         :return: The resource_spec_code of this CustomerOnDemandResource.
         :rtype: str
@@ -389,7 +389,7 @@ class CustomerOnDemandResource:
     def resource_spec_code(self, resource_spec_code):
         """Sets the resource_spec_code of this CustomerOnDemandResource.
 
-        |参数名称：按需资源规格编码。| |参数约束及描述：按需资源规格编码。|
+        云服务产品的资源规格。如果是VM的资源规格，则需要在规格后面添加“.win”或“.linux”，例如“s2.small.1.linux”。
 
         :param resource_spec_code: The resource_spec_code of this CustomerOnDemandResource.
         :type: str
@@ -400,7 +400,7 @@ class CustomerOnDemandResource:
     def resource_info(self):
         """Gets the resource_info of this CustomerOnDemandResource.
 
-        |参数名称：资源容量大小。格式如| |参数约束及描述：资源容量大小。格式如：\"resourceInfo\": \"{\\\"specSize\\\":40.0}\"|
+        按需资源的容量大小。 格式如：\"resourceInfo\": \"{\\\"specSize\\\":40.0}\"
 
         :return: The resource_info of this CustomerOnDemandResource.
         :rtype: str
@@ -411,7 +411,7 @@ class CustomerOnDemandResource:
     def resource_info(self, resource_info):
         """Sets the resource_info of this CustomerOnDemandResource.
 
-        |参数名称：资源容量大小。格式如| |参数约束及描述：资源容量大小。格式如：\"resourceInfo\": \"{\\\"specSize\\\":40.0}\"|
+        按需资源的容量大小。 格式如：\"resourceInfo\": \"{\\\"specSize\\\":40.0}\"
 
         :param resource_info: The resource_info of this CustomerOnDemandResource.
         :type: str
@@ -422,7 +422,7 @@ class CustomerOnDemandResource:
     def product_spec_desc(self):
         """Gets the product_spec_desc of this CustomerOnDemandResource.
 
-        |参数名称：产品规格描述| |参数约束及描述：譬如虚拟机为：\"通用计算增强型|c6.2xlarge.4|8vCPUs|32GB|linux\"，硬盘为：\"云硬盘_SATA_LXH01|40.0GB\"|
+        产品规格描述。例如： 虚拟机：“通用计算增强型|c6.2xlarge.4|8vCPUs|32GB|linux”硬盘：“云硬盘_SATA_LXH01|40.0GB”
 
         :return: The product_spec_desc of this CustomerOnDemandResource.
         :rtype: str
@@ -433,7 +433,7 @@ class CustomerOnDemandResource:
     def product_spec_desc(self, product_spec_desc):
         """Sets the product_spec_desc of this CustomerOnDemandResource.
 
-        |参数名称：产品规格描述| |参数约束及描述：譬如虚拟机为：\"通用计算增强型|c6.2xlarge.4|8vCPUs|32GB|linux\"，硬盘为：\"云硬盘_SATA_LXH01|40.0GB\"|
+        产品规格描述。例如： 虚拟机：“通用计算增强型|c6.2xlarge.4|8vCPUs|32GB|linux”硬盘：“云硬盘_SATA_LXH01|40.0GB”
 
         :param product_spec_desc: The product_spec_desc of this CustomerOnDemandResource.
         :type: str

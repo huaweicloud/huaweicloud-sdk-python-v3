@@ -147,7 +147,7 @@ class TagResource:
     def sys_tags(self):
         """Gets the sys_tags of this TagResource.
 
-        仅op_service权限才可以可以获取此字段：  目前只包含一个resource_tag 结构体。  key：_sys_enterprise_project_id  value：企业项目id，0表示默认企业项目  非op_service场景不能返回此字段。
+        仅op_service权限才可以获取此字段：  目前只包含一个resource_tag 结构体。  key：_sys_enterprise_project_id  value：企业项目id，0表示默认企业项目  非op_service场景不能返回此字段。
 
         :return: The sys_tags of this TagResource.
         :rtype: list[SysTag]
@@ -158,7 +158,7 @@ class TagResource:
     def sys_tags(self, sys_tags):
         """Sets the sys_tags of this TagResource.
 
-        仅op_service权限才可以可以获取此字段：  目前只包含一个resource_tag 结构体。  key：_sys_enterprise_project_id  value：企业项目id，0表示默认企业项目  非op_service场景不能返回此字段。
+        仅op_service权限才可以获取此字段：  目前只包含一个resource_tag 结构体。  key：_sys_enterprise_project_id  value：企业项目id，0表示默认企业项目  非op_service场景不能返回此字段。
 
         :param sys_tags: The sys_tags of this TagResource.
         :type: list[SysTag]

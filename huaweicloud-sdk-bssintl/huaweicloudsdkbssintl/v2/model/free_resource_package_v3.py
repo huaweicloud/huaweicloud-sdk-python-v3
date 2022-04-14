@@ -119,7 +119,7 @@ class FreeResourcePackageV3:
     def order_instance_id(self):
         """Gets the order_instance_id of this FreeResourcePackageV3.
 
-        |参数名称：订购资源包产品后，系统生成的ID，是这个资源包列表的标识字段。| |参数约束及描述：订购资源包产品后，系统生成的ID，是这个资源包列表的标识字段。|
+        订购资源包产品后，系统生成的ID，是这个资源包列表的标识字段。
 
         :return: The order_instance_id of this FreeResourcePackageV3.
         :rtype: str
@@ -130,7 +130,7 @@ class FreeResourcePackageV3:
     def order_instance_id(self, order_instance_id):
         """Sets the order_instance_id of this FreeResourcePackageV3.
 
-        |参数名称：订购资源包产品后，系统生成的ID，是这个资源包列表的标识字段。| |参数约束及描述：订购资源包产品后，系统生成的ID，是这个资源包列表的标识字段。|
+        订购资源包产品后，系统生成的ID，是这个资源包列表的标识字段。
 
         :param order_instance_id: The order_instance_id of this FreeResourcePackageV3.
         :type: str
@@ -141,7 +141,7 @@ class FreeResourcePackageV3:
     def order_id(self):
         """Gets the order_id of this FreeResourcePackageV3.
 
-        |参数名称：订单ID，如果source_type为“1：软开云赠送”，该字段为空。| |参数约束及描述：订单ID，如果source_type为“1：软开云赠送”，该字段为空。|
+        订单ID，如果source_type为“1：软开云赠送”，该字段为空。
 
         :return: The order_id of this FreeResourcePackageV3.
         :rtype: str
@@ -152,7 +152,7 @@ class FreeResourcePackageV3:
     def order_id(self, order_id):
         """Sets the order_id of this FreeResourcePackageV3.
 
-        |参数名称：订单ID，如果source_type为“1：软开云赠送”，该字段为空。| |参数约束及描述：订单ID，如果source_type为“1：软开云赠送”，该字段为空。|
+        订单ID，如果source_type为“1：软开云赠送”，该字段为空。
 
         :param order_id: The order_id of this FreeResourcePackageV3.
         :type: str
@@ -163,7 +163,7 @@ class FreeResourcePackageV3:
     def product_id(self):
         """Gets the product_id of this FreeResourcePackageV3.
 
-        |参数名称：产品ID，即资源包ID。| |参数约束及描述：产品ID，即资源包ID。|
+        产品ID，即资源包ID。
 
         :return: The product_id of this FreeResourcePackageV3.
         :rtype: str
@@ -174,7 +174,7 @@ class FreeResourcePackageV3:
     def product_id(self, product_id):
         """Sets the product_id of this FreeResourcePackageV3.
 
-        |参数名称：产品ID，即资源包ID。| |参数约束及描述：产品ID，即资源包ID。|
+        产品ID，即资源包ID。
 
         :param product_id: The product_id of this FreeResourcePackageV3.
         :type: str
@@ -185,7 +185,7 @@ class FreeResourcePackageV3:
     def product_name(self):
         """Gets the product_name of this FreeResourcePackageV3.
 
-        |参数名称：产品名称，即资源包名称。| |参数约束及描述：产品名称，即资源包名称。|
+        产品名称，即资源包名称。
 
         :return: The product_name of this FreeResourcePackageV3.
         :rtype: str
@@ -196,7 +196,7 @@ class FreeResourcePackageV3:
     def product_name(self, product_name):
         """Sets the product_name of this FreeResourcePackageV3.
 
-        |参数名称：产品名称，即资源包名称。| |参数约束及描述：产品名称，即资源包名称。|
+        产品名称，即资源包名称。
 
         :param product_name: The product_name of this FreeResourcePackageV3.
         :type: str
@@ -207,7 +207,7 @@ class FreeResourcePackageV3:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this FreeResourcePackageV3.
 
-        |参数名称：企业项目ID。| |参数约束及描述：企业项目ID。|
+        企业项目ID。
 
         :return: The enterprise_project_id of this FreeResourcePackageV3.
         :rtype: str
@@ -218,7 +218,7 @@ class FreeResourcePackageV3:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this FreeResourcePackageV3.
 
-        |参数名称：企业项目ID。| |参数约束及描述：企业项目ID。|
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this FreeResourcePackageV3.
         :type: str
@@ -229,7 +229,7 @@ class FreeResourcePackageV3:
     def enterprise_project_scope(self):
         """Gets the enterprise_project_scope of this FreeResourcePackageV3.
 
-        |参数名称：企业项目应用范围：0：应用所有1：应用到具体企业项目| |参数的约束及描述：企业项目应用范围：0：应用所有1：应用到具体企业项目|
+        企业项目应用范围： 0：应用所有1：应用到具体企业项目
 
         :return: The enterprise_project_scope of this FreeResourcePackageV3.
         :rtype: int
@@ -240,7 +240,7 @@ class FreeResourcePackageV3:
     def enterprise_project_scope(self, enterprise_project_scope):
         """Sets the enterprise_project_scope of this FreeResourcePackageV3.
 
-        |参数名称：企业项目应用范围：0：应用所有1：应用到具体企业项目| |参数的约束及描述：企业项目应用范围：0：应用所有1：应用到具体企业项目|
+        企业项目应用范围： 0：应用所有1：应用到具体企业项目
 
         :param enterprise_project_scope: The enterprise_project_scope of this FreeResourcePackageV3.
         :type: int
@@ -251,7 +251,7 @@ class FreeResourcePackageV3:
     def effective_time(self):
         """Gets the effective_time of this FreeResourcePackageV3.
 
-        |参数名称：生效时间，购买资源包的时间，格式UTC。| |参数约束及描述：生效时间，购买资源包的时间，格式UTC。|
+        生效时间，购买资源包的时间，格式UTC。
 
         :return: The effective_time of this FreeResourcePackageV3.
         :rtype: str
@@ -262,7 +262,7 @@ class FreeResourcePackageV3:
     def effective_time(self, effective_time):
         """Sets the effective_time of this FreeResourcePackageV3.
 
-        |参数名称：生效时间，购买资源包的时间，格式UTC。| |参数约束及描述：生效时间，购买资源包的时间，格式UTC。|
+        生效时间，购买资源包的时间，格式UTC。
 
         :param effective_time: The effective_time of this FreeResourcePackageV3.
         :type: str
@@ -273,7 +273,7 @@ class FreeResourcePackageV3:
     def expire_time(self):
         """Gets the expire_time of this FreeResourcePackageV3.
 
-        |参数名称：失效时间，资源包到期时间，格式UTC。| |参数约束及描述：失效时间，资源包到期时间，格式UTC。|
+        失效时间，资源包到期时间，格式UTC。
 
         :return: The expire_time of this FreeResourcePackageV3.
         :rtype: str
@@ -284,7 +284,7 @@ class FreeResourcePackageV3:
     def expire_time(self, expire_time):
         """Sets the expire_time of this FreeResourcePackageV3.
 
-        |参数名称：失效时间，资源包到期时间，格式UTC。| |参数约束及描述：失效时间，资源包到期时间，格式UTC。|
+        失效时间，资源包到期时间，格式UTC。
 
         :param expire_time: The expire_time of this FreeResourcePackageV3.
         :type: str
@@ -295,7 +295,7 @@ class FreeResourcePackageV3:
     def status(self):
         """Gets the status of this FreeResourcePackageV3.
 
-        |参数名称：状态：0：未生效1：生效中2：已用完3：已失效4：已退订| |参数的约束及描述：状态：0：未生效1：生效中2：已用完3：已失效4：已退订|
+        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
         :return: The status of this FreeResourcePackageV3.
         :rtype: int
@@ -306,7 +306,7 @@ class FreeResourcePackageV3:
     def status(self, status):
         """Sets the status of this FreeResourcePackageV3.
 
-        |参数名称：状态：0：未生效1：生效中2：已用完3：已失效4：已退订| |参数的约束及描述：状态：0：未生效1：生效中2：已用完3：已失效4：已退订|
+        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
         :param status: The status of this FreeResourcePackageV3.
         :type: int
@@ -317,7 +317,7 @@ class FreeResourcePackageV3:
     def service_type_code(self):
         """Gets the service_type_code of this FreeResourcePackageV3.
 
-        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。| |参数约束及描述：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :return: The service_type_code of this FreeResourcePackageV3.
         :rtype: str
@@ -328,7 +328,7 @@ class FreeResourcePackageV3:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this FreeResourcePackageV3.
 
-        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。| |参数约束及描述：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :param service_type_code: The service_type_code of this FreeResourcePackageV3.
         :type: str
@@ -339,7 +339,7 @@ class FreeResourcePackageV3:
     def service_type_name(self):
         """Gets the service_type_name of this FreeResourcePackageV3.
 
-        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :return: The service_type_name of this FreeResourcePackageV3.
         :rtype: str
@@ -350,7 +350,7 @@ class FreeResourcePackageV3:
     def service_type_name(self, service_type_name):
         """Sets the service_type_name of this FreeResourcePackageV3.
 
-        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this FreeResourcePackageV3.
         :type: str
@@ -361,7 +361,7 @@ class FreeResourcePackageV3:
     def region_code(self):
         """Gets the region_code of this FreeResourcePackageV3.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”| |参数约束及描述：云服务区编码，例如：“cn-north-1”|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :return: The region_code of this FreeResourcePackageV3.
         :rtype: str
@@ -372,7 +372,7 @@ class FreeResourcePackageV3:
     def region_code(self, region_code):
         """Sets the region_code of this FreeResourcePackageV3.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”| |参数约束及描述：云服务区编码，例如：“cn-north-1”|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this FreeResourcePackageV3.
         :type: str
@@ -383,7 +383,7 @@ class FreeResourcePackageV3:
     def source_type(self):
         """Gets the source_type of this FreeResourcePackageV3.
 
-        |参数名称：套餐绑定类型：ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐| |参数的约束及描述：套餐绑定类型：ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐|
+        资源包的来源类型： 0：订单1：软开云赠送
 
         :return: The source_type of this FreeResourcePackageV3.
         :rtype: int
@@ -394,7 +394,7 @@ class FreeResourcePackageV3:
     def source_type(self, source_type):
         """Sets the source_type of this FreeResourcePackageV3.
 
-        |参数名称：套餐绑定类型：ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐| |参数的约束及描述：套餐绑定类型：ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐|
+        资源包的来源类型： 0：订单1：软开云赠送
 
         :param source_type: The source_type of this FreeResourcePackageV3.
         :type: int
@@ -405,7 +405,7 @@ class FreeResourcePackageV3:
     def bundle_type(self):
         """Gets the bundle_type of this FreeResourcePackageV3.
 
-        |参数名称：套餐绑定类型：ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐| |参数约束及描述：套餐绑定类型：ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐|
+        套餐绑定类型： ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐
 
         :return: The bundle_type of this FreeResourcePackageV3.
         :rtype: str
@@ -416,7 +416,7 @@ class FreeResourcePackageV3:
     def bundle_type(self, bundle_type):
         """Sets the bundle_type of this FreeResourcePackageV3.
 
-        |参数名称：套餐绑定类型：ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐| |参数约束及描述：套餐绑定类型：ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐|
+        套餐绑定类型： ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐
 
         :param bundle_type: The bundle_type of this FreeResourcePackageV3.
         :type: str
@@ -427,7 +427,7 @@ class FreeResourcePackageV3:
     def quota_reuse_mode(self):
         """Gets the quota_reuse_mode of this FreeResourcePackageV3.
 
-        |参数名称：使用模式。1：可重置表示购买的资源包能够按照一定的周期恢复使用量。例如购买一个1年的按需资源包，使用量是40G，可重置，重置周期为1个月，表示1年内每个月会给予40G的使用量。2：不可重置表示购买的资源包的使用量不会恢复。例如购买一个1年的按需资源包，使用量是40G，不可重置，表示1年内一共给予40G的使用量。| |参数的约束及描述：使用模式。1：可重置表示购买的资源包能够按照一定的周期恢复使用量。例如购买一个1年的按需资源包，使用量是40G，可重置，重置周期为1个月，表示1年内每个月会给予40G的使用量。2：不可重置表示购买的资源包的使用量不会恢复。例如购买一个1年的按需资源包，使用量是40G，不可重置，表示1年内一共给予40G的使用量。|
+        使用模式。 1：可重置表示购买的资源包能够按照一定的周期恢复使用量。例如购买一个1年的按需资源包，使用量是40G，可重置，重置周期为1个月，表示1年内每个月会给予40G的使用量。 2：不可重置表示购买的资源包的使用量不会恢复。例如购买一个1年的按需资源包，使用量是40G，不可重置，表示1年内一共给予40G的使用量。
 
         :return: The quota_reuse_mode of this FreeResourcePackageV3.
         :rtype: int
@@ -438,7 +438,7 @@ class FreeResourcePackageV3:
     def quota_reuse_mode(self, quota_reuse_mode):
         """Sets the quota_reuse_mode of this FreeResourcePackageV3.
 
-        |参数名称：使用模式。1：可重置表示购买的资源包能够按照一定的周期恢复使用量。例如购买一个1年的按需资源包，使用量是40G，可重置，重置周期为1个月，表示1年内每个月会给予40G的使用量。2：不可重置表示购买的资源包的使用量不会恢复。例如购买一个1年的按需资源包，使用量是40G，不可重置，表示1年内一共给予40G的使用量。| |参数的约束及描述：使用模式。1：可重置表示购买的资源包能够按照一定的周期恢复使用量。例如购买一个1年的按需资源包，使用量是40G，可重置，重置周期为1个月，表示1年内每个月会给予40G的使用量。2：不可重置表示购买的资源包的使用量不会恢复。例如购买一个1年的按需资源包，使用量是40G，不可重置，表示1年内一共给予40G的使用量。|
+        使用模式。 1：可重置表示购买的资源包能够按照一定的周期恢复使用量。例如购买一个1年的按需资源包，使用量是40G，可重置，重置周期为1个月，表示1年内每个月会给予40G的使用量。 2：不可重置表示购买的资源包的使用量不会恢复。例如购买一个1年的按需资源包，使用量是40G，不可重置，表示1年内一共给予40G的使用量。
 
         :param quota_reuse_mode: The quota_reuse_mode of this FreeResourcePackageV3.
         :type: int
@@ -449,7 +449,7 @@ class FreeResourcePackageV3:
     def free_resources(self):
         """Gets the free_resources of this FreeResourcePackageV3.
 
-        |参数名称：资源套餐内的资源项信息（资源项ID级的详情）| |参数约束以及描述：资源套餐内的资源项信息（资源项ID级的详情）|
+        资源套餐内的资源项信息（资源项ID级的详情），具体参见表3。
 
         :return: The free_resources of this FreeResourcePackageV3.
         :rtype: list[FreeResourceV3]
@@ -460,7 +460,7 @@ class FreeResourcePackageV3:
     def free_resources(self, free_resources):
         """Sets the free_resources of this FreeResourcePackageV3.
 
-        |参数名称：资源套餐内的资源项信息（资源项ID级的详情）| |参数约束以及描述：资源套餐内的资源项信息（资源项ID级的详情）|
+        资源套餐内的资源项信息（资源项ID级的详情），具体参见表3。
 
         :param free_resources: The free_resources of this FreeResourcePackageV3.
         :type: list[FreeResourceV3]

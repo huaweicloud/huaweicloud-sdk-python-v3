@@ -35,7 +35,7 @@ class SyncPolicyReq:
         'partitions_num': 'str',
         'replication_factor': 'str',
         'is_fill_materialized_view': 'bool',
-        'export_snapshot': 'str'
+        'export_snapshot': 'bool'
     }
 
     attribute_map = {
@@ -77,8 +77,10 @@ class SyncPolicyReq:
         self.discriminator = None
 
         self.job_id = job_id
-        self.conflict_policy = conflict_policy
-        self.filter_ddl_policy = filter_ddl_policy
+        if conflict_policy is not None:
+            self.conflict_policy = conflict_policy
+        if filter_ddl_policy is not None:
+            self.filter_ddl_policy = filter_ddl_policy
         if ddl_trans is not None:
             self.ddl_trans = ddl_trans
         if index_trans is not None:
@@ -216,7 +218,7 @@ class SyncPolicyReq:
     def topic_policy(self):
         """Gets the topic_policy of this SyncPolicyReq.
 
-        同步Topic策略，目标库为kafka时必填，取值： - 0：集中投递到一个Topic - 1：按库名-schema自动生成Topic名字 - 2：按库名自动生成Topic名字 - 3：按库名-schema-表名自动生成Topic名字
+        同步Topic策略，目标库为kafka时必填，取值： - 0：集中投递到一个Topic - 1：按库名-schema-表名自动生成Topic名字 - 2：按库名自动生成Topic名字 - 3：按库名-schema自动生成Topic名字
 
         :return: The topic_policy of this SyncPolicyReq.
         :rtype: str
@@ -227,7 +229,7 @@ class SyncPolicyReq:
     def topic_policy(self, topic_policy):
         """Sets the topic_policy of this SyncPolicyReq.
 
-        同步Topic策略，目标库为kafka时必填，取值： - 0：集中投递到一个Topic - 1：按库名-schema自动生成Topic名字 - 2：按库名自动生成Topic名字 - 3：按库名-schema-表名自动生成Topic名字
+        同步Topic策略，目标库为kafka时必填，取值： - 0：集中投递到一个Topic - 1：按库名-schema-表名自动生成Topic名字 - 2：按库名自动生成Topic名字 - 3：按库名-schema自动生成Topic名字
 
         :param topic_policy: The topic_policy of this SyncPolicyReq.
         :type: str
@@ -260,7 +262,7 @@ class SyncPolicyReq:
     def partition_policy(self):
         """Gets the partition_policy of this SyncPolicyReq.
 
-        同步到kafka partition策略，取值： - 0：按库名.schema.表名的hash值投递到不同Partition - 1：全部投递到Partition 0 - 2：按主键的hash值投递到不同Partition - 3：按库名.schema的hash值投递到不同Partition **当topic_policy取0时，可以取0,1,2,3；当topic_policy取1时，可以取0,1；当topic_policy取2时，可以取0,1,3；当topic_policy取3时，可以取1,2；**
+        同步到kafka partition策略，取值： - 0：按库名.schema.表名的hash值投递到不同Partition - 1：全部投递到Partition 0 - 2：按主键的hash值投递到不同Partition - 3：按库名.schema的hash值投递到不同Partition **当topic_policy取0时，可以取0,1,2,3；当topic_policy取1时，可以取1,2；当topic_policy取2时，可以取0,1,3；当topic_policy取3时，可以取0,1；**
 
         :return: The partition_policy of this SyncPolicyReq.
         :rtype: str
@@ -271,7 +273,7 @@ class SyncPolicyReq:
     def partition_policy(self, partition_policy):
         """Sets the partition_policy of this SyncPolicyReq.
 
-        同步到kafka partition策略，取值： - 0：按库名.schema.表名的hash值投递到不同Partition - 1：全部投递到Partition 0 - 2：按主键的hash值投递到不同Partition - 3：按库名.schema的hash值投递到不同Partition **当topic_policy取0时，可以取0,1,2,3；当topic_policy取1时，可以取0,1；当topic_policy取2时，可以取0,1,3；当topic_policy取3时，可以取1,2；**
+        同步到kafka partition策略，取值： - 0：按库名.schema.表名的hash值投递到不同Partition - 1：全部投递到Partition 0 - 2：按主键的hash值投递到不同Partition - 3：按库名.schema的hash值投递到不同Partition **当topic_policy取0时，可以取0,1,2,3；当topic_policy取1时，可以取1,2；当topic_policy取2时，可以取0,1,3；当topic_policy取3时，可以取0,1；**
 
         :param partition_policy: The partition_policy of this SyncPolicyReq.
         :type: str
@@ -395,7 +397,7 @@ class SyncPolicyReq:
         PostgreSQL同步全量阶段是否使用快照模式导出，不填默认为false
 
         :return: The export_snapshot of this SyncPolicyReq.
-        :rtype: str
+        :rtype: bool
         """
         return self._export_snapshot
 
@@ -406,7 +408,7 @@ class SyncPolicyReq:
         PostgreSQL同步全量阶段是否使用快照模式导出，不填默认为false
 
         :param export_snapshot: The export_snapshot of this SyncPolicyReq.
-        :type: str
+        :type: bool
         """
         self._export_snapshot = export_snapshot
 

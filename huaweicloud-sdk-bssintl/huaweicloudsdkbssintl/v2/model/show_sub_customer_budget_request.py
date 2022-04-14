@@ -43,7 +43,7 @@ class ShowSubCustomerBudgetRequest:
     def customer_id(self):
         """Gets the customer_id of this ShowSubCustomerBudgetRequest.
 
-        |参数名称：客户ID| |参数的约束及描述：|
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_id of this ShowSubCustomerBudgetRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class ShowSubCustomerBudgetRequest:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ShowSubCustomerBudgetRequest.
 
-        |参数名称：客户ID| |参数的约束及描述：|
+        客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ShowSubCustomerBudgetRequest.
         :type: str

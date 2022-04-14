@@ -29,9 +29,9 @@ class SimPricePlanVO:
         'price_plan_id': 'str',
         'cid': 'str',
         'order_id': 'str',
-        'create_time': 'date',
-        'active_time': 'date',
-        'stop_time': 'date',
+        'create_time': 'datetime',
+        'active_time': 'datetime',
+        'stop_time': 'datetime',
         'flow_total': 'float',
         'flow_used': 'float',
         'flow_left': 'float',
@@ -306,7 +306,7 @@ class SimPricePlanVO:
         创建时间 例如2020-08-24T07:57:56.000Z
 
         :return: The create_time of this SimPricePlanVO.
-        :rtype: date
+        :rtype: datetime
         """
         return self._create_time
 
@@ -317,7 +317,7 @@ class SimPricePlanVO:
         创建时间 例如2020-08-24T07:57:56.000Z
 
         :param create_time: The create_time of this SimPricePlanVO.
-        :type: date
+        :type: datetime
         """
         self._create_time = create_time
 
@@ -328,7 +328,7 @@ class SimPricePlanVO:
         激活时间 例如2020-10-31T16:00:00.000Z
 
         :return: The active_time of this SimPricePlanVO.
-        :rtype: date
+        :rtype: datetime
         """
         return self._active_time
 
@@ -339,7 +339,7 @@ class SimPricePlanVO:
         激活时间 例如2020-10-31T16:00:00.000Z
 
         :param active_time: The active_time of this SimPricePlanVO.
-        :type: date
+        :type: datetime
         """
         self._active_time = active_time
 
@@ -350,7 +350,7 @@ class SimPricePlanVO:
         停用时间 2021-10-31T16:00:00.000Z
 
         :return: The stop_time of this SimPricePlanVO.
-        :rtype: date
+        :rtype: datetime
         """
         return self._stop_time
 
@@ -361,7 +361,7 @@ class SimPricePlanVO:
         停用时间 2021-10-31T16:00:00.000Z
 
         :param stop_time: The stop_time of this SimPricePlanVO.
-        :type: date
+        :type: datetime
         """
         self._stop_time = stop_time
 

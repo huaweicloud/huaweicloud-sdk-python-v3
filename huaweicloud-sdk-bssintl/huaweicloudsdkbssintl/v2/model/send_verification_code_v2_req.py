@@ -58,7 +58,7 @@ class SendVerificationCodeV2Req:
     def receiver_type(self):
         """Gets the receiver_type of this SendVerificationCodeV2Req.
 
-        |参数名称：发送类型：1：发送短信验证码。2：发送邮件验证码。| |参数的约束及描述：发送类型：1：发送短信验证码。2：发送邮件验证码。|
+        发送验证码的类型： 2：发送邮件验证码
 
         :return: The receiver_type of this SendVerificationCodeV2Req.
         :rtype: int
@@ -69,7 +69,7 @@ class SendVerificationCodeV2Req:
     def receiver_type(self, receiver_type):
         """Sets the receiver_type of this SendVerificationCodeV2Req.
 
-        |参数名称：发送类型：1：发送短信验证码。2：发送邮件验证码。| |参数的约束及描述：发送类型：1：发送短信验证码。2：发送邮件验证码。|
+        发送验证码的类型： 2：发送邮件验证码
 
         :param receiver_type: The receiver_type of this SendVerificationCodeV2Req.
         :type: int
@@ -80,7 +80,7 @@ class SendVerificationCodeV2Req:
     def timeout(self):
         """Gets the timeout of this SendVerificationCodeV2Req.
 
-        |参数名称：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟| |参数的约束及描述：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟|
+        发送验证码的超时时间。 如果不填的话，采用系统默认超时时间5分钟。 单位：分钟
 
         :return: The timeout of this SendVerificationCodeV2Req.
         :rtype: int
@@ -91,7 +91,7 @@ class SendVerificationCodeV2Req:
     def timeout(self, timeout):
         """Sets the timeout of this SendVerificationCodeV2Req.
 
-        |参数名称：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟| |参数的约束及描述：验证码超时时间。如果不填的话，采用系统默认超时时间5分钟。单位：分钟|
+        发送验证码的超时时间。 如果不填的话，采用系统默认超时时间5分钟。 单位：分钟
 
         :param timeout: The timeout of this SendVerificationCodeV2Req.
         :type: int
@@ -102,7 +102,7 @@ class SendVerificationCodeV2Req:
     def email(self):
         """Gets the email of this SendVerificationCodeV2Req.
 
-        |参数名称：指定发送邮箱地址。| |参数约束及描述：指定发送邮箱地址。|
+        指定发送验证码的邮箱地址。
 
         :return: The email of this SendVerificationCodeV2Req.
         :rtype: str
@@ -113,7 +113,7 @@ class SendVerificationCodeV2Req:
     def email(self, email):
         """Sets the email of this SendVerificationCodeV2Req.
 
-        |参数名称：指定发送邮箱地址。| |参数约束及描述：指定发送邮箱地址。|
+        指定发送验证码的邮箱地址。
 
         :param email: The email of this SendVerificationCodeV2Req.
         :type: str
@@ -124,7 +124,7 @@ class SendVerificationCodeV2Req:
     def lang(self):
         """Gets the lang of this SendVerificationCodeV2Req.
 
-        |参数名称：根据语言如果查询不到对应模板信息，就取系统默认语言对应的模板信息。zh-cn：中文；en-us：英文。| |参数约束及描述：根据语言如果查询不到对应模板信息，就取系统默认语言对应的模板信息。zh-cn：中文；en-us：英文。|
+        根据该参数的取值选择发送邮件验证码的语言。 zh-cn：中文en-us：英文
 
         :return: The lang of this SendVerificationCodeV2Req.
         :rtype: str
@@ -135,7 +135,7 @@ class SendVerificationCodeV2Req:
     def lang(self, lang):
         """Sets the lang of this SendVerificationCodeV2Req.
 
-        |参数名称：根据语言如果查询不到对应模板信息，就取系统默认语言对应的模板信息。zh-cn：中文；en-us：英文。| |参数约束及描述：根据语言如果查询不到对应模板信息，就取系统默认语言对应的模板信息。zh-cn：中文；en-us：英文。|
+        根据该参数的取值选择发送邮件验证码的语言。 zh-cn：中文en-us：英文
 
         :param lang: The lang of this SendVerificationCodeV2Req.
         :type: str

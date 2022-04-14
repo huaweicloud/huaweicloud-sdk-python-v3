@@ -67,7 +67,7 @@ class QueryJobResp:
         'support_ip_v6': 'bool',
         'inherit_id': 'str',
         'gtid': 'str',
-        'alarm_notify': 'str',
+        'alarm_notify': 'QuerySmnInfoResp',
         'incre_start_position': 'str'
     }
 
@@ -1254,10 +1254,9 @@ class QueryJobResp:
     def alarm_notify(self):
         """Gets the alarm_notify of this QueryJobResp.
 
-        获取异常通知设置信息。
 
         :return: The alarm_notify of this QueryJobResp.
-        :rtype: str
+        :rtype: QuerySmnInfoResp
         """
         return self._alarm_notify
 
@@ -1265,10 +1264,9 @@ class QueryJobResp:
     def alarm_notify(self, alarm_notify):
         """Sets the alarm_notify of this QueryJobResp.
 
-        获取异常通知设置信息。
 
         :param alarm_notify: The alarm_notify of this QueryJobResp.
-        :type: str
+        :type: QuerySmnInfoResp
         """
         self._alarm_notify = alarm_notify
 

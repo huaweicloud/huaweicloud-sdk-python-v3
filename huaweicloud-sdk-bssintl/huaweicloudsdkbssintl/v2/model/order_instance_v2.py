@@ -124,7 +124,7 @@ class OrderInstanceV2:
     def id(self):
         """Gets the id of this OrderInstanceV2.
 
-        |参数名称：标识要开通资源的内部ID，资源开通以后生成的ID为resource_id。对应订购关系ID。| |参数约束及描述：标识要开通资源的内部ID，资源开通以后生成的ID为resource_id。对应订购关系ID。|
+        标识要开通资源的内部ID，资源开通以后生成的ID为resource_id。
 
         :return: The id of this OrderInstanceV2.
         :rtype: str
@@ -135,7 +135,7 @@ class OrderInstanceV2:
     def id(self, id):
         """Sets the id of this OrderInstanceV2.
 
-        |参数名称：标识要开通资源的内部ID，资源开通以后生成的ID为resource_id。对应订购关系ID。| |参数约束及描述：标识要开通资源的内部ID，资源开通以后生成的ID为resource_id。对应订购关系ID。|
+        标识要开通资源的内部ID，资源开通以后生成的ID为resource_id。
 
         :param id: The id of this OrderInstanceV2.
         :type: str
@@ -146,7 +146,7 @@ class OrderInstanceV2:
     def resource_id(self):
         """Gets the resource_id of this OrderInstanceV2.
 
-        |参数名称：资源实例ID。| |参数约束及描述：资源实例ID。|
+        资源ID。
 
         :return: The resource_id of this OrderInstanceV2.
         :rtype: str
@@ -157,7 +157,7 @@ class OrderInstanceV2:
     def resource_id(self, resource_id):
         """Sets the resource_id of this OrderInstanceV2.
 
-        |参数名称：资源实例ID。| |参数约束及描述：资源实例ID。|
+        资源ID。
 
         :param resource_id: The resource_id of this OrderInstanceV2.
         :type: str
@@ -168,7 +168,7 @@ class OrderInstanceV2:
     def resource_name(self):
         """Gets the resource_name of this OrderInstanceV2.
 
-        |参数名称：资源实例名。| |参数约束及描述：资源实例名。|
+        资源实例名。
 
         :return: The resource_name of this OrderInstanceV2.
         :rtype: str
@@ -179,7 +179,7 @@ class OrderInstanceV2:
     def resource_name(self, resource_name):
         """Sets the resource_name of this OrderInstanceV2.
 
-        |参数名称：资源实例名。| |参数约束及描述：资源实例名。|
+        资源实例名。
 
         :param resource_name: The resource_name of this OrderInstanceV2.
         :type: str
@@ -190,7 +190,7 @@ class OrderInstanceV2:
     def region_code(self):
         """Gets the region_code of this OrderInstanceV2.
 
-        |参数名称：云服务资源池区域编码。| |参数约束及描述：云服务资源池区域编码。|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :return: The region_code of this OrderInstanceV2.
         :rtype: str
@@ -201,7 +201,7 @@ class OrderInstanceV2:
     def region_code(self, region_code):
         """Sets the region_code of this OrderInstanceV2.
 
-        |参数名称：云服务资源池区域编码。| |参数约束及描述：云服务资源池区域编码。|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this OrderInstanceV2.
         :type: str
@@ -212,7 +212,7 @@ class OrderInstanceV2:
     def service_type_code(self):
         """Gets the service_type_code of this OrderInstanceV2.
 
-        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :return: The service_type_code of this OrderInstanceV2.
         :rtype: str
@@ -223,7 +223,7 @@ class OrderInstanceV2:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this OrderInstanceV2.
 
-        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this OrderInstanceV2.
         :type: str
@@ -234,7 +234,7 @@ class OrderInstanceV2:
     def resource_type_code(self):
         """Gets the resource_type_code of this OrderInstanceV2.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :return: The resource_type_code of this OrderInstanceV2.
         :rtype: str
@@ -245,7 +245,7 @@ class OrderInstanceV2:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this OrderInstanceV2.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this OrderInstanceV2.
         :type: str
@@ -256,7 +256,7 @@ class OrderInstanceV2:
     def resource_type_name(self):
         """Gets the resource_type_name of this OrderInstanceV2.
 
-        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :return: The resource_type_name of this OrderInstanceV2.
         :rtype: str
@@ -267,7 +267,7 @@ class OrderInstanceV2:
     def resource_type_name(self, resource_type_name):
         """Sets the resource_type_name of this OrderInstanceV2.
 
-        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :param resource_type_name: The resource_type_name of this OrderInstanceV2.
         :type: str
@@ -278,7 +278,7 @@ class OrderInstanceV2:
     def service_type_name(self):
         """Gets the service_type_name of this OrderInstanceV2.
 
-        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :return: The service_type_name of this OrderInstanceV2.
         :rtype: str
@@ -289,7 +289,7 @@ class OrderInstanceV2:
     def service_type_name(self, service_type_name):
         """Sets the service_type_name of this OrderInstanceV2.
 
-        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this OrderInstanceV2.
         :type: str
@@ -300,7 +300,7 @@ class OrderInstanceV2:
     def resource_spec_code(self):
         """Gets the resource_spec_code of this OrderInstanceV2.
 
-        |参数名称：云服务产品的资源规格，例如VM的资源规格举例为“s2.small.1.linux”。具体请参见对应云服务的相关介绍。| |参数约束及描述：云服务产品的资源规格，例如VM的资源规格举例为“s2.small.1.linux”。具体请参见对应云服务的相关介绍。|
+        云服务产品的资源规格。如果是VM的资源规格，则需要在规格后面添加“.win”或“.linux”，例如“s2.small.1.linux”。
 
         :return: The resource_spec_code of this OrderInstanceV2.
         :rtype: str
@@ -311,7 +311,7 @@ class OrderInstanceV2:
     def resource_spec_code(self, resource_spec_code):
         """Sets the resource_spec_code of this OrderInstanceV2.
 
-        |参数名称：云服务产品的资源规格，例如VM的资源规格举例为“s2.small.1.linux”。具体请参见对应云服务的相关介绍。| |参数约束及描述：云服务产品的资源规格，例如VM的资源规格举例为“s2.small.1.linux”。具体请参见对应云服务的相关介绍。|
+        云服务产品的资源规格。如果是VM的资源规格，则需要在规格后面添加“.win”或“.linux”，例如“s2.small.1.linux”。
 
         :param resource_spec_code: The resource_spec_code of this OrderInstanceV2.
         :type: str
@@ -322,7 +322,7 @@ class OrderInstanceV2:
     def project_id(self):
         """Gets the project_id of this OrderInstanceV2.
 
-        |参数名称：资源项目ID。| |参数约束及描述：资源项目ID。|
+        资源项目ID。
 
         :return: The project_id of this OrderInstanceV2.
         :rtype: str
@@ -333,7 +333,7 @@ class OrderInstanceV2:
     def project_id(self, project_id):
         """Sets the project_id of this OrderInstanceV2.
 
-        |参数名称：资源项目ID。| |参数约束及描述：资源项目ID。|
+        资源项目ID。
 
         :param project_id: The project_id of this OrderInstanceV2.
         :type: str
@@ -344,7 +344,7 @@ class OrderInstanceV2:
     def product_id(self):
         """Gets the product_id of this OrderInstanceV2.
 
-        |参数名称：产品ID。| |参数约束及描述：产品ID。|
+        产品ID。
 
         :return: The product_id of this OrderInstanceV2.
         :rtype: str
@@ -355,7 +355,7 @@ class OrderInstanceV2:
     def product_id(self, product_id):
         """Sets the product_id of this OrderInstanceV2.
 
-        |参数名称：产品ID。| |参数约束及描述：产品ID。|
+        产品ID。
 
         :param product_id: The product_id of this OrderInstanceV2.
         :type: str
@@ -366,7 +366,7 @@ class OrderInstanceV2:
     def parent_resource_id(self):
         """Gets the parent_resource_id of this OrderInstanceV2.
 
-        |参数名称：父资源实例ID。| |参数约束及描述：父资源实例ID。|
+        父资源ID。
 
         :return: The parent_resource_id of this OrderInstanceV2.
         :rtype: str
@@ -377,7 +377,7 @@ class OrderInstanceV2:
     def parent_resource_id(self, parent_resource_id):
         """Sets the parent_resource_id of this OrderInstanceV2.
 
-        |参数名称：父资源实例ID。| |参数约束及描述：父资源实例ID。|
+        父资源ID。
 
         :param parent_resource_id: The parent_resource_id of this OrderInstanceV2.
         :type: str
@@ -388,7 +388,7 @@ class OrderInstanceV2:
     def is_main_resource(self):
         """Gets the is_main_resource of this OrderInstanceV2.
 
-        |参数名称：是否是主资源。0：非主资源1：主资源| |参数的约束及描述：是否是主资源。0：非主资源1：主资源|
+        是否是主资源。 0：非主资源1：主资源
 
         :return: The is_main_resource of this OrderInstanceV2.
         :rtype: int
@@ -399,7 +399,7 @@ class OrderInstanceV2:
     def is_main_resource(self, is_main_resource):
         """Sets the is_main_resource of this OrderInstanceV2.
 
-        |参数名称：是否是主资源。0：非主资源1：主资源| |参数的约束及描述：是否是主资源。0：非主资源1：主资源|
+        是否是主资源。 0：非主资源1：主资源
 
         :param is_main_resource: The is_main_resource of this OrderInstanceV2.
         :type: int
@@ -410,7 +410,7 @@ class OrderInstanceV2:
     def status(self):
         """Gets the status of this OrderInstanceV2.
 
-        |参数名称：资源状态：1：初始化2：已生效3：已过期4：已冻结5：宽限期6：冻结中7：冻结恢复中（预留，未启用）8：正在关闭| |参数的约束及描述：资源状态：1：初始化2：已生效3：已过期4：已冻结5：宽限期6：冻结中7：冻结恢复中（预留，未启用）8：正在关闭|
+        资源状态。 2：使用中3：已关闭（页面不展示这个状态）4：已冻结5：已过期
 
         :return: The status of this OrderInstanceV2.
         :rtype: int
@@ -421,7 +421,7 @@ class OrderInstanceV2:
     def status(self, status):
         """Sets the status of this OrderInstanceV2.
 
-        |参数名称：资源状态：1：初始化2：已生效3：已过期4：已冻结5：宽限期6：冻结中7：冻结恢复中（预留，未启用）8：正在关闭| |参数的约束及描述：资源状态：1：初始化2：已生效3：已过期4：已冻结5：宽限期6：冻结中7：冻结恢复中（预留，未启用）8：正在关闭|
+        资源状态。 2：使用中3：已关闭（页面不展示这个状态）4：已冻结5：已过期
 
         :param status: The status of this OrderInstanceV2.
         :type: int
@@ -432,7 +432,7 @@ class OrderInstanceV2:
     def effective_time(self):
         """Gets the effective_time of this OrderInstanceV2.
 
-        |参数名称：资源生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。| |参数约束及描述：资源生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        资源生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The effective_time of this OrderInstanceV2.
         :rtype: str
@@ -443,7 +443,7 @@ class OrderInstanceV2:
     def effective_time(self, effective_time):
         """Sets the effective_time of this OrderInstanceV2.
 
-        |参数名称：资源生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。| |参数约束及描述：资源生效时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        资源生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param effective_time: The effective_time of this OrderInstanceV2.
         :type: str
@@ -454,7 +454,7 @@ class OrderInstanceV2:
     def expire_time(self):
         """Gets the expire_time of this OrderInstanceV2.
 
-        |参数名称：资源过期时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。| |参数约束及描述：资源过期时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        资源过期时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :return: The expire_time of this OrderInstanceV2.
         :rtype: str
@@ -465,7 +465,7 @@ class OrderInstanceV2:
     def expire_time(self, expire_time):
         """Sets the expire_time of this OrderInstanceV2.
 
-        |参数名称：资源过期时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。| |参数约束及描述：资源过期时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。|
+        资源过期时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
 
         :param expire_time: The expire_time of this OrderInstanceV2.
         :type: str
@@ -476,7 +476,7 @@ class OrderInstanceV2:
     def expire_policy(self):
         """Gets the expire_policy of this OrderInstanceV2.
 
-        |参数名称：到期策略：0：到期进入宽限期1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）| |参数的约束及描述：到期策略：0：到期进入宽限期1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）|
+        资源到期后的扣费策略： 0：到期进入宽限期1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）  说明： 只有“3”表示该资源是自动续订，其他情况下，都是非自动续订下的到期策略。
 
         :return: The expire_policy of this OrderInstanceV2.
         :rtype: int
@@ -487,7 +487,7 @@ class OrderInstanceV2:
     def expire_policy(self, expire_policy):
         """Sets the expire_policy of this OrderInstanceV2.
 
-        |参数名称：到期策略：0：到期进入宽限期1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）| |参数的约束及描述：到期策略：0：到期进入宽限期1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）|
+        资源到期后的扣费策略： 0：到期进入宽限期1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）  说明： 只有“3”表示该资源是自动续订，其他情况下，都是非自动续订下的到期策略。
 
         :param expire_policy: The expire_policy of this OrderInstanceV2.
         :type: int

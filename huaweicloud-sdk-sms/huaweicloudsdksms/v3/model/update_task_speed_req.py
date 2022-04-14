@@ -26,7 +26,9 @@ class UpdateTaskSpeedReq:
         'progress': 'int',
         'replicatesize': 'int',
         'totalsize': 'int',
-        'migrate_speed': 'float'
+        'process_trace': 'str',
+        'migrate_speed': 'float',
+        'compress_rate': 'float'
     }
 
     attribute_map = {
@@ -34,10 +36,12 @@ class UpdateTaskSpeedReq:
         'progress': 'progress',
         'replicatesize': 'replicatesize',
         'totalsize': 'totalsize',
-        'migrate_speed': 'migrate_speed'
+        'process_trace': 'process_trace',
+        'migrate_speed': 'migrate_speed',
+        'compress_rate': 'compress_rate'
     }
 
-    def __init__(self, subtask_name=None, progress=None, replicatesize=None, totalsize=None, migrate_speed=None):
+    def __init__(self, subtask_name=None, progress=None, replicatesize=None, totalsize=None, process_trace=None, migrate_speed=None, compress_rate=None):
         """UpdateTaskSpeedReq - a model defined in huaweicloud sdk"""
         
         
@@ -46,14 +50,20 @@ class UpdateTaskSpeedReq:
         self._progress = None
         self._replicatesize = None
         self._totalsize = None
+        self._process_trace = None
         self._migrate_speed = None
+        self._compress_rate = None
         self.discriminator = None
 
         self.subtask_name = subtask_name
         self.progress = progress
         self.replicatesize = replicatesize
         self.totalsize = totalsize
-        self.migrate_speed = migrate_speed
+        self.process_trace = process_trace
+        if migrate_speed is not None:
+            self.migrate_speed = migrate_speed
+        if compress_rate is not None:
+            self.compress_rate = compress_rate
 
     @property
     def subtask_name(self):
@@ -144,6 +154,28 @@ class UpdateTaskSpeedReq:
         self._totalsize = totalsize
 
     @property
+    def process_trace(self):
+        """Gets the process_trace of this UpdateTaskSpeedReq.
+
+        迁移或同步时，具体的迁移详情
+
+        :return: The process_trace of this UpdateTaskSpeedReq.
+        :rtype: str
+        """
+        return self._process_trace
+
+    @process_trace.setter
+    def process_trace(self, process_trace):
+        """Sets the process_trace of this UpdateTaskSpeedReq.
+
+        迁移或同步时，具体的迁移详情
+
+        :param process_trace: The process_trace of this UpdateTaskSpeedReq.
+        :type: str
+        """
+        self._process_trace = process_trace
+
+    @property
     def migrate_speed(self):
         """Gets the migrate_speed of this UpdateTaskSpeedReq.
 
@@ -164,6 +196,28 @@ class UpdateTaskSpeedReq:
         :type: float
         """
         self._migrate_speed = migrate_speed
+
+    @property
+    def compress_rate(self):
+        """Gets the compress_rate of this UpdateTaskSpeedReq.
+
+        实施文件压缩率
+
+        :return: The compress_rate of this UpdateTaskSpeedReq.
+        :rtype: float
+        """
+        return self._compress_rate
+
+    @compress_rate.setter
+    def compress_rate(self, compress_rate):
+        """Sets the compress_rate of this UpdateTaskSpeedReq.
+
+        实施文件压缩率
+
+        :param compress_rate: The compress_rate of this UpdateTaskSpeedReq.
+        :type: float
+        """
+        self._compress_rate = compress_rate
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -49,7 +49,7 @@ class ListFreeResourceInfosResponse(SdkResponse):
     def free_resource_packages(self):
         """Gets the free_resource_packages of this ListFreeResourceInfosResponse.
 
-        |参数名称：调账记录列表| |参数约束以及描述：调账记录列表|
+        资源包信息列表，具体参见表2。
 
         :return: The free_resource_packages of this ListFreeResourceInfosResponse.
         :rtype: list[FreeResourcePackageV3]
@@ -60,7 +60,7 @@ class ListFreeResourceInfosResponse(SdkResponse):
     def free_resource_packages(self, free_resource_packages):
         """Sets the free_resource_packages of this ListFreeResourceInfosResponse.
 
-        |参数名称：调账记录列表| |参数约束以及描述：调账记录列表|
+        资源包信息列表，具体参见表2。
 
         :param free_resource_packages: The free_resource_packages of this ListFreeResourceInfosResponse.
         :type: list[FreeResourcePackageV3]
@@ -71,7 +71,7 @@ class ListFreeResourceInfosResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListFreeResourceInfosResponse.
 
-        |参数名称：总条数| |参数的约束及描述：总条数|
+        总条数。
 
         :return: The total_count of this ListFreeResourceInfosResponse.
         :rtype: int
@@ -82,7 +82,7 @@ class ListFreeResourceInfosResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListFreeResourceInfosResponse.
 
-        |参数名称：总条数| |参数的约束及描述：总条数|
+        总条数。
 
         :param total_count: The total_count of this ListFreeResourceInfosResponse.
         :type: int

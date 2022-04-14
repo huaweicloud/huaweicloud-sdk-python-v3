@@ -69,7 +69,7 @@ class SysTag:
     def value(self):
         """Gets the value of this SysTag.
 
-        值。  目前仅会用到企业项目ID，其中默 认的企业项目ID为“0”。
+        值。  目前仅会用到企业项目ID，其中默认的企业项目ID为“0”。
 
         :return: The value of this SysTag.
         :rtype: str
@@ -80,7 +80,7 @@ class SysTag:
     def value(self, value):
         """Sets the value of this SysTag.
 
-        值。  目前仅会用到企业项目ID，其中默 认的企业项目ID为“0”。
+        值。  目前仅会用到企业项目ID，其中默认的企业项目ID为“0”。
 
         :param value: The value of this SysTag.
         :type: str

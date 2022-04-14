@@ -778,9 +778,9 @@ class CdnClient(Client):
 
 
     def show_domain_full_config(self, request):
-        """查询域名配置接口
+        """查询域名全量配置
 
-        查询域名配置接口，支持配置回源请求头、http header配置、url鉴权
+        查询域名全量配置接口，支持配置回源请求头、http header配置、url鉴权、证书设置等
 
         :param ShowDomainFullConfigRequest request
         :return: ShowDomainFullConfigResponse
@@ -788,9 +788,9 @@ class CdnClient(Client):
         return self.show_domain_full_config_with_http_info(request)
 
     def show_domain_full_config_with_http_info(self, request):
-        """查询域名配置接口
+        """查询域名全量配置
 
-        查询域名配置接口，支持配置回源请求头、http header配置、url鉴权
+        查询域名全量配置接口，支持配置回源请求头、http header配置、url鉴权、证书设置等
 
         :param ShowDomainFullConfigRequest request
         :return: ShowDomainFullConfigResponse
@@ -1971,9 +1971,9 @@ class CdnClient(Client):
 
 
     def update_domain_full_config(self, request):
-        """修改域名全量配置接口
+        """修改域名全量配置
 
-        修改域名全量配置接口，支持配置回源请求头、http header配置、url鉴权
+        修改域名全量配置接口，支持配置回源请求头、http header配置、url鉴权、证书设置等
 
         :param UpdateDomainFullConfigRequest request
         :return: UpdateDomainFullConfigResponse
@@ -1981,9 +1981,9 @@ class CdnClient(Client):
         return self.update_domain_full_config_with_http_info(request)
 
     def update_domain_full_config_with_http_info(self, request):
-        """修改域名全量配置接口
+        """修改域名全量配置
 
-        修改域名全量配置接口，支持配置回源请求头、http header配置、url鉴权
+        修改域名全量配置接口，支持配置回源请求头、http header配置、url鉴权、证书设置等
 
         :param UpdateDomainFullConfigRequest request
         :return: UpdateDomainFullConfigResponse

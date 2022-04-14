@@ -24,10 +24,11 @@ class PeriodProductRatingResult:
     openapi_types = {
         'id': 'str',
         'product_id': 'str',
-        'amount': 'decimal.Decimal',
-        'official_website_amount': 'decimal.Decimal',
-        'discount_amount': 'decimal.Decimal',
-        'measure_id': 'int'
+        'amount': 'float',
+        'official_website_amount': 'float',
+        'discount_amount': 'float',
+        'measure_id': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class PeriodProductRatingResult:
         'amount': 'amount',
         'official_website_amount': 'official_website_amount',
         'discount_amount': 'discount_amount',
-        'measure_id': 'measure_id'
+        'measure_id': 'measure_id',
+        'limit': 'limit'
     }
 
-    def __init__(self, id=None, product_id=None, amount=None, official_website_amount=None, discount_amount=None, measure_id=None):
+    def __init__(self, id=None, product_id=None, amount=None, official_website_amount=None, discount_amount=None, measure_id=None, limit=None):
         """PeriodProductRatingResult - a model defined in huaweicloud sdk"""
         
         
@@ -50,6 +52,7 @@ class PeriodProductRatingResult:
         self._official_website_amount = None
         self._discount_amount = None
         self._measure_id = None
+        self._limit = None
         self.discriminator = None
 
         if id is not None:
@@ -64,12 +67,14 @@ class PeriodProductRatingResult:
             self.discount_amount = discount_amount
         if measure_id is not None:
             self.measure_id = measure_id
+        if limit is not None:
+            self.limit = limit
 
     @property
     def id(self):
         """Gets the id of this PeriodProductRatingResult.
 
-        |参数名称：ID标识| |参数约束及描述：ID标识，来源于请求中的ID|
+        ID标识，来源于请求中的ID。
 
         :return: The id of this PeriodProductRatingResult.
         :rtype: str
@@ -80,7 +85,7 @@ class PeriodProductRatingResult:
     def id(self, id):
         """Sets the id of this PeriodProductRatingResult.
 
-        |参数名称：ID标识| |参数约束及描述：ID标识，来源于请求中的ID|
+        ID标识，来源于请求中的ID。
 
         :param id: The id of this PeriodProductRatingResult.
         :type: str
@@ -91,7 +96,7 @@ class PeriodProductRatingResult:
     def product_id(self):
         """Gets the product_id of this PeriodProductRatingResult.
 
-        |参数名称：产品ID| |参数约束及描述：产品ID|
+        包年/包月产品的ID。
 
         :return: The product_id of this PeriodProductRatingResult.
         :rtype: str
@@ -102,7 +107,7 @@ class PeriodProductRatingResult:
     def product_id(self, product_id):
         """Sets the product_id of this PeriodProductRatingResult.
 
-        |参数名称：产品ID| |参数约束及描述：产品ID|
+        包年/包月产品的ID。
 
         :param product_id: The product_id of this PeriodProductRatingResult.
         :type: str
@@ -113,10 +118,10 @@ class PeriodProductRatingResult:
     def amount(self):
         """Gets the amount of this PeriodProductRatingResult.
 
-        |参数名称：总额| |参数约束及描述：即最终优惠的金额|
+        总额，即最终优惠后的金额。 amount= official_website_amount - discountAmount。
 
         :return: The amount of this PeriodProductRatingResult.
-        :rtype: decimal.Decimal
+        :rtype: float
         """
         return self._amount
 
@@ -124,10 +129,10 @@ class PeriodProductRatingResult:
     def amount(self, amount):
         """Sets the amount of this PeriodProductRatingResult.
 
-        |参数名称：总额| |参数约束及描述：即最终优惠的金额|
+        总额，即最终优惠后的金额。 amount= official_website_amount - discountAmount。
 
         :param amount: The amount of this PeriodProductRatingResult.
-        :type: decimal.Decimal
+        :type: float
         """
         self._amount = amount
 
@@ -135,10 +140,10 @@ class PeriodProductRatingResult:
     def official_website_amount(self):
         """Gets the official_website_amount of this PeriodProductRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        包年/包月产品的官网价。
 
         :return: The official_website_amount of this PeriodProductRatingResult.
-        :rtype: decimal.Decimal
+        :rtype: float
         """
         return self._official_website_amount
 
@@ -146,10 +151,10 @@ class PeriodProductRatingResult:
     def official_website_amount(self, official_website_amount):
         """Sets the official_website_amount of this PeriodProductRatingResult.
 
-        |参数名称：官网价| |参数约束及描述：官网价|
+        包年/包月产品的官网价。
 
         :param official_website_amount: The official_website_amount of this PeriodProductRatingResult.
-        :type: decimal.Decimal
+        :type: float
         """
         self._official_website_amount = official_website_amount
 
@@ -157,10 +162,10 @@ class PeriodProductRatingResult:
     def discount_amount(self):
         """Gets the discount_amount of this PeriodProductRatingResult.
 
-        |参数名称：优惠额（官网价和总价的差）| |参数约束及描述：优惠额（官网价和总价的差）|
+        可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
 
         :return: The discount_amount of this PeriodProductRatingResult.
-        :rtype: decimal.Decimal
+        :rtype: float
         """
         return self._discount_amount
 
@@ -168,10 +173,10 @@ class PeriodProductRatingResult:
     def discount_amount(self, discount_amount):
         """Sets the discount_amount of this PeriodProductRatingResult.
 
-        |参数名称：优惠额（官网价和总价的差）| |参数约束及描述：优惠额（官网价和总价的差）|
+        可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额。
 
         :param discount_amount: The discount_amount of this PeriodProductRatingResult.
-        :type: decimal.Decimal
+        :type: float
         """
         self._discount_amount = discount_amount
 
@@ -179,7 +184,7 @@ class PeriodProductRatingResult:
     def measure_id(self):
         """Gets the measure_id of this PeriodProductRatingResult.
 
-        |参数名称：度量单位标识| |参数约束及描述：1：元|
+        价格度量单位标识。 1：元
 
         :return: The measure_id of this PeriodProductRatingResult.
         :rtype: int
@@ -190,12 +195,34 @@ class PeriodProductRatingResult:
     def measure_id(self, measure_id):
         """Sets the measure_id of this PeriodProductRatingResult.
 
-        |参数名称：度量单位标识| |参数约束及描述：1：元|
+        价格度量单位标识。 1：元
 
         :param measure_id: The measure_id of this PeriodProductRatingResult.
         :type: int
         """
         self._measure_id = measure_id
+
+    @property
+    def limit(self):
+        """Gets the limit of this PeriodProductRatingResult.
+
+        |参数名称：每页数量| |参数的约束及描述：该参数非必填，且只允许1-100数字，默认10，最多100|
+
+        :return: The limit of this PeriodProductRatingResult.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this PeriodProductRatingResult.
+
+        |参数名称：每页数量| |参数的约束及描述：该参数非必填，且只允许1-100数字，默认10，最多100|
+
+        :param limit: The limit of this PeriodProductRatingResult.
+        :type: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

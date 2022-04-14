@@ -8,6 +8,7 @@ from huaweicloudsdkcdn.v1.model.cache_config import CacheConfig
 from huaweicloudsdkcdn.v1.model.cache_config_request import CacheConfigRequest
 from huaweicloudsdkcdn.v1.model.cache_config_request_body import CacheConfigRequestBody
 from huaweicloudsdkcdn.v1.model.cdn_ips import CdnIps
+from huaweicloudsdkcdn.v1.model.compress import Compress
 from huaweicloudsdkcdn.v1.model.compress_request import CompressRequest
 from huaweicloudsdkcdn.v1.model.compress_response import CompressResponse
 from huaweicloudsdkcdn.v1.model.compress_rules import CompressRules
@@ -37,6 +38,7 @@ from huaweicloudsdkcdn.v1.model.enable_domain_response import EnableDomainRespon
 from huaweicloudsdkcdn.v1.model.follow302_status_body import Follow302StatusBody
 from huaweicloudsdkcdn.v1.model.follow302_status_request import Follow302StatusRequest
 from huaweicloudsdkcdn.v1.model.force_redirect import ForceRedirect
+from huaweicloudsdkcdn.v1.model.force_redirect_config import ForceRedirectConfig
 from huaweicloudsdkcdn.v1.model.header_body import HeaderBody
 from huaweicloudsdkcdn.v1.model.header_map import HeaderMap
 from huaweicloudsdkcdn.v1.model.http_get_body import HttpGetBody
@@ -106,6 +108,7 @@ from huaweicloudsdkcdn.v1.model.show_top_url_request import ShowTopUrlRequest
 from huaweicloudsdkcdn.v1.model.show_top_url_response import ShowTopUrlResponse
 from huaweicloudsdkcdn.v1.model.source_with_port import SourceWithPort
 from huaweicloudsdkcdn.v1.model.sources import Sources
+from huaweicloudsdkcdn.v1.model.sources_config import SourcesConfig
 from huaweicloudsdkcdn.v1.model.tasks_object import TasksObject
 from huaweicloudsdkcdn.v1.model.top_url_summary import TopUrlSummary
 from huaweicloudsdkcdn.v1.model.update_black_white_list_request import UpdateBlackWhiteListRequest

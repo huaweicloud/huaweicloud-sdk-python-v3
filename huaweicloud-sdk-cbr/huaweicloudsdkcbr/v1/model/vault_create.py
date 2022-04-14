@@ -26,7 +26,7 @@ class VaultCreate:
         'billing': 'BillingCreate',
         'description': 'str',
         'name': 'str',
-        'resources': 'list[ResourceResp]',
+        'resources': 'list[ResourceCreate]',
         'tags': 'list[Tag]',
         'enterprise_project_id': 'str',
         'auto_bind': 'bool',
@@ -175,7 +175,7 @@ class VaultCreate:
         绑定的备份资源，未在创建时绑定资源填[]
 
         :return: The resources of this VaultCreate.
-        :rtype: list[ResourceResp]
+        :rtype: list[ResourceCreate]
         """
         return self._resources
 
@@ -186,7 +186,7 @@ class VaultCreate:
         绑定的备份资源，未在创建时绑定资源填[]
 
         :param resources: The resources of this VaultCreate.
-        :type: list[ResourceResp]
+        :type: list[ResourceCreate]
         """
         self._resources = resources
 

@@ -2062,7 +2062,7 @@ class EcsClient(Client):
         :return: ListServersDetailsResponse
         """
 
-        all_params = ['enterprise_project_id', 'flavor', 'ip', 'limit', 'name', 'not_tags', 'offset', 'reservation_id', 'status', 'tags']
+        all_params = ['enterprise_project_id', 'flavor', 'ip', 'limit', 'name', 'not_tags', 'offset', 'reservation_id', 'status', 'tags', 'ip_eq']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2093,6 +2093,8 @@ class EcsClient(Client):
             query_params.append(('status', local_var_params['status']))
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
+        if 'ip_eq' in local_var_params:
+            query_params.append(('ip_eq', local_var_params['ip_eq']))
 
         header_params = {}
 

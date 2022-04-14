@@ -43,8 +43,7 @@ class OpenGaussInstanceRequest:
         'sharding_num': 'int',
         'coordinator_num': 'int',
         'replica_num': 'int',
-        'enable_force_switch': 'bool',
-        'solution': 'str'
+        'enable_force_switch': 'bool'
     }
 
     attribute_map = {
@@ -69,11 +68,10 @@ class OpenGaussInstanceRequest:
         'sharding_num': 'sharding_num',
         'coordinator_num': 'coordinator_num',
         'replica_num': 'replica_num',
-        'enable_force_switch': 'enable_force_switch',
-        'solution': 'solution'
+        'enable_force_switch': 'enable_force_switch'
     }
 
-    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, sharding_num=None, coordinator_num=None, replica_num=None, enable_force_switch=None, solution=None):
+    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, sharding_num=None, coordinator_num=None, replica_num=None, enable_force_switch=None):
         """OpenGaussInstanceRequest - a model defined in huaweicloud sdk"""
         
         
@@ -100,7 +98,6 @@ class OpenGaussInstanceRequest:
         self._coordinator_num = None
         self._replica_num = None
         self._enable_force_switch = None
-        self._solution = None
         self.discriminator = None
 
         self.name = name
@@ -128,14 +125,14 @@ class OpenGaussInstanceRequest:
             self.charge_info = charge_info
         if time_zone is not None:
             self.time_zone = time_zone
-        self.sharding_num = sharding_num
-        self.coordinator_num = coordinator_num
+        if sharding_num is not None:
+            self.sharding_num = sharding_num
+        if coordinator_num is not None:
+            self.coordinator_num = coordinator_num
         if replica_num is not None:
             self.replica_num = replica_num
         if enable_force_switch is not None:
             self.enable_force_switch = enable_force_switch
-        if solution is not None:
-            self.solution = solution
 
     @property
     def name(self):
@@ -527,7 +524,7 @@ class OpenGaussInstanceRequest:
     def sharding_num(self):
         """Gets the sharding_num of this OpenGaussInstanceRequest.
 
-        分片数量，取值范围1~9。
+        仅分布式形态需要填写该参数。分片数量，取值范围1~9。
 
         :return: The sharding_num of this OpenGaussInstanceRequest.
         :rtype: int
@@ -538,7 +535,7 @@ class OpenGaussInstanceRequest:
     def sharding_num(self, sharding_num):
         """Sets the sharding_num of this OpenGaussInstanceRequest.
 
-        分片数量，取值范围1~9。
+        仅分布式形态需要填写该参数。分片数量，取值范围1~9。
 
         :param sharding_num: The sharding_num of this OpenGaussInstanceRequest.
         :type: int
@@ -549,7 +546,7 @@ class OpenGaussInstanceRequest:
     def coordinator_num(self):
         """Gets the coordinator_num of this OpenGaussInstanceRequest.
 
-        协调节点数量，取值范围1~9。CN数量必须小于或等于两倍的分片数。
+        仅分布式形态需要填写该参数。协调节点数量，取值范围1~9。CN数量必须小于或等于两倍的分片数。
 
         :return: The coordinator_num of this OpenGaussInstanceRequest.
         :rtype: int
@@ -560,7 +557,7 @@ class OpenGaussInstanceRequest:
     def coordinator_num(self, coordinator_num):
         """Sets the coordinator_num of this OpenGaussInstanceRequest.
 
-        协调节点数量，取值范围1~9。CN数量必须小于或等于两倍的分片数。
+        仅分布式形态需要填写该参数。协调节点数量，取值范围1~9。CN数量必须小于或等于两倍的分片数。
 
         :param coordinator_num: The coordinator_num of this OpenGaussInstanceRequest.
         :type: int
@@ -610,28 +607,6 @@ class OpenGaussInstanceRequest:
         :type: bool
         """
         self._enable_force_switch = enable_force_switch
-
-    @property
-    def solution(self):
-        """Gets the solution of this OpenGaussInstanceRequest.
-
-        GaussDB(for openGauss)支持的部署模式，当前可选的有triset。
-
-        :return: The solution of this OpenGaussInstanceRequest.
-        :rtype: str
-        """
-        return self._solution
-
-    @solution.setter
-    def solution(self, solution):
-        """Sets the solution of this OpenGaussInstanceRequest.
-
-        GaussDB(for openGauss)支持的部署模式，当前可选的有triset。
-
-        :param solution: The solution of this OpenGaussInstanceRequest.
-        :type: str
-        """
-        self._solution = solution
 
     def to_dict(self):
         """Returns the model properties as a dict"""

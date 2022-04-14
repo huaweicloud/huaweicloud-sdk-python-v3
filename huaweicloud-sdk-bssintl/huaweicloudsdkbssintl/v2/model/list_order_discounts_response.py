@@ -44,7 +44,7 @@ class ListOrderDiscountsResponse(SdkResponse):
     def discounts(self):
         """Gets the discounts of this ListOrderDiscountsResponse.
 
-        |参数名称：可用的优惠券列表。具体请参见表1-30。| |参数约束以及描述：可用的优惠券列表。具体请参见表1-30。|
+        可用的折扣列表。 具体请参见表2。
 
         :return: The discounts of this ListOrderDiscountsResponse.
         :rtype: list[DiscountInfoV3]
@@ -55,7 +55,7 @@ class ListOrderDiscountsResponse(SdkResponse):
     def discounts(self, discounts):
         """Sets the discounts of this ListOrderDiscountsResponse.
 
-        |参数名称：可用的优惠券列表。具体请参见表1-30。| |参数约束以及描述：可用的优惠券列表。具体请参见表1-30。|
+        可用的折扣列表。 具体请参见表2。
 
         :param discounts: The discounts of this ListOrderDiscountsResponse.
         :type: list[DiscountInfoV3]

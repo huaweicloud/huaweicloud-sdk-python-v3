@@ -112,7 +112,7 @@ class CustomerInformation:
     def customer(self):
         """Gets the customer of this CustomerInformation.
 
-        |参数名称：实名认证名称。虚拟账号下，该字段无效。| |参数约束及描述：实名认证名称。虚拟账号下，该字段无效。|
+        实名认证名称。
 
         :return: The customer of this CustomerInformation.
         :rtype: str
@@ -123,7 +123,7 @@ class CustomerInformation:
     def customer(self, customer):
         """Sets the customer of this CustomerInformation.
 
-        |参数名称：实名认证名称。虚拟账号下，该字段无效。| |参数约束及描述：实名认证名称。虚拟账号下，该字段无效。|
+        实名认证名称。
 
         :param customer: The customer of this CustomerInformation.
         :type: str
@@ -134,7 +134,7 @@ class CustomerInformation:
     def account_name(self):
         """Gets the account_name of this CustomerInformation.
 
-        |参数名称：客户登录名称（如果客户创建了子用户，此处返回主账号登录名称）。| |参数约束及描述：客户登录名称（如果客户创建了子用户，此处返回主账号登录名称）。|
+        客户经理登录名称。
 
         :return: The account_name of this CustomerInformation.
         :rtype: str
@@ -145,7 +145,7 @@ class CustomerInformation:
     def account_name(self, account_name):
         """Sets the account_name of this CustomerInformation.
 
-        |参数名称：客户登录名称（如果客户创建了子用户，此处返回主账号登录名称）。| |参数约束及描述：客户登录名称（如果客户创建了子用户，此处返回主账号登录名称）。|
+        客户经理登录名称。
 
         :param account_name: The account_name of this CustomerInformation.
         :type: str
@@ -156,7 +156,7 @@ class CustomerInformation:
     def customer_id(self):
         """Gets the customer_id of this CustomerInformation.
 
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+        客户账号ID。
 
         :return: The customer_id of this CustomerInformation.
         :rtype: str
@@ -167,7 +167,7 @@ class CustomerInformation:
     def customer_id(self, customer_id):
         """Sets the customer_id of this CustomerInformation.
 
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+        客户账号ID。
 
         :param customer_id: The customer_id of this CustomerInformation.
         :type: str
@@ -178,7 +178,7 @@ class CustomerInformation:
     def associated_on(self):
         """Gets the associated_on of this CustomerInformation.
 
-        |参数名称：客户和伙伴关联时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”，其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：客户和伙伴关联时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”，其中，HH范围是0～23，mm和ss范围是0～59。|
+        客户和伙伴关联时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”，其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The associated_on of this CustomerInformation.
         :rtype: str
@@ -189,7 +189,7 @@ class CustomerInformation:
     def associated_on(self, associated_on):
         """Sets the associated_on of this CustomerInformation.
 
-        |参数名称：客户和伙伴关联时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”，其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：客户和伙伴关联时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”，其中，HH范围是0～23，mm和ss范围是0～59。|
+        客户和伙伴关联时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”，其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param associated_on: The associated_on of this CustomerInformation.
         :type: str
@@ -200,7 +200,7 @@ class CustomerInformation:
     def association_type(self):
         """Gets the association_type of this CustomerInformation.
 
-        |参数名称：合作模式。1：推荐2：垫付3：转售| |参数约束及描述：合作模式。1：推荐2：垫付3：转售|
+        关联类型： 1：顾问销售3：转售
 
         :return: The association_type of this CustomerInformation.
         :rtype: str
@@ -211,7 +211,7 @@ class CustomerInformation:
     def association_type(self, association_type):
         """Sets the association_type of this CustomerInformation.
 
-        |参数名称：合作模式。1：推荐2：垫付3：转售| |参数约束及描述：合作模式。1：推荐2：垫付3：转售|
+        关联类型： 1：顾问销售3：转售
 
         :param association_type: The association_type of this CustomerInformation.
         :type: str
@@ -222,7 +222,7 @@ class CustomerInformation:
     def label(self):
         """Gets the label of this CustomerInformation.
 
-        |参数名称：标签，支持模糊查找。虚拟账号下，该字段无效。| |参数约束及描述：标签，支持模糊查找。虚拟账号下，该字段无效。|
+        标签。
 
         :return: The label of this CustomerInformation.
         :rtype: str
@@ -233,7 +233,7 @@ class CustomerInformation:
     def label(self, label):
         """Sets the label of this CustomerInformation.
 
-        |参数名称：标签，支持模糊查找。虚拟账号下，该字段无效。| |参数约束及描述：标签，支持模糊查找。虚拟账号下，该字段无效。|
+        标签。
 
         :param label: The label of this CustomerInformation.
         :type: str
@@ -244,7 +244,7 @@ class CustomerInformation:
     def telephone(self):
         """Gets the telephone of this CustomerInformation.
 
-        |参数名称：客户电话号码。虚拟账号下，该字段无效。| |参数约束及描述：客户电话号码。虚拟账号下，该字段无效。|
+        客户电话号码。
 
         :return: The telephone of this CustomerInformation.
         :rtype: str
@@ -255,7 +255,7 @@ class CustomerInformation:
     def telephone(self, telephone):
         """Sets the telephone of this CustomerInformation.
 
-        |参数名称：客户电话号码。虚拟账号下，该字段无效。| |参数约束及描述：客户电话号码。虚拟账号下，该字段无效。|
+        客户电话号码。
 
         :param telephone: The telephone of this CustomerInformation.
         :type: str
@@ -266,7 +266,7 @@ class CustomerInformation:
     def verified_status(self):
         """Gets the verified_status of this CustomerInformation.
 
-        |参数名称：实名认证状态，虚拟账号下，该字段无效。：null：实名认证开关关闭；-1：未实名认证；0：实名认证审核中；1：实名认证不通过；2：已实名认证；3：实名认证失败。| |参数约束及描述：实名认证状态，虚拟账号下，该字段无效。：null：实名认证开关关闭；-1：未实名认证；0：实名认证审核中；1：实名认证不通过；2：已实名认证；3：实名认证失败。|
+        实名认证状态： -1：未实名认证0：实名认证审核中1：实名认证不通过2：已实名认证3：实名认证失败
 
         :return: The verified_status of this CustomerInformation.
         :rtype: str
@@ -277,7 +277,7 @@ class CustomerInformation:
     def verified_status(self, verified_status):
         """Sets the verified_status of this CustomerInformation.
 
-        |参数名称：实名认证状态，虚拟账号下，该字段无效。：null：实名认证开关关闭；-1：未实名认证；0：实名认证审核中；1：实名认证不通过；2：已实名认证；3：实名认证失败。| |参数约束及描述：实名认证状态，虚拟账号下，该字段无效。：null：实名认证开关关闭；-1：未实名认证；0：实名认证审核中；1：实名认证不通过；2：已实名认证；3：实名认证失败。|
+        实名认证状态： -1：未实名认证0：实名认证审核中1：实名认证不通过2：已实名认证3：实名认证失败
 
         :param verified_status: The verified_status of this CustomerInformation.
         :type: str
@@ -288,7 +288,7 @@ class CustomerInformation:
     def country_code(self):
         """Gets the country_code of this CustomerInformation.
 
-        |参数名称：国家码，电话号码的国家码前缀。虚拟账号下，该字段无效。例如：中国 0086。| |参数约束及描述：国家码，电话号码的国家码前缀。虚拟账号下，该字段无效。例如：中国 0086。|
+        国家码，电话号码的国家码前缀。 例如：中国 0086。
 
         :return: The country_code of this CustomerInformation.
         :rtype: str
@@ -299,7 +299,7 @@ class CustomerInformation:
     def country_code(self, country_code):
         """Sets the country_code of this CustomerInformation.
 
-        |参数名称：国家码，电话号码的国家码前缀。虚拟账号下，该字段无效。例如：中国 0086。| |参数约束及描述：国家码，电话号码的国家码前缀。虚拟账号下，该字段无效。例如：中国 0086。|
+        国家码，电话号码的国家码前缀。 例如：中国 0086。
 
         :param country_code: The country_code of this CustomerInformation.
         :type: str
@@ -310,7 +310,7 @@ class CustomerInformation:
     def customer_type(self):
         """Gets the customer_type of this CustomerInformation.
 
-        |参数名称：客户类型，虚拟账号下，该字段无效。：-1：无类型0：个人1：企业客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。| |参数的约束及描述：客户类型，虚拟账号下，该字段无效。：-1：无类型0：个人1：企业客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。|
+        客户类型： -1：无类型0：个人1：企业 客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。
 
         :return: The customer_type of this CustomerInformation.
         :rtype: int
@@ -321,7 +321,7 @@ class CustomerInformation:
     def customer_type(self, customer_type):
         """Sets the customer_type of this CustomerInformation.
 
-        |参数名称：客户类型，虚拟账号下，该字段无效。：-1：无类型0：个人1：企业客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。| |参数的约束及描述：客户类型，虚拟账号下，该字段无效。：-1：无类型0：个人1：企业客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。|
+        客户类型： -1：无类型0：个人1：企业 客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。
 
         :param customer_type: The customer_type of this CustomerInformation.
         :type: int
@@ -332,7 +332,7 @@ class CustomerInformation:
     def is_frozen(self):
         """Gets the is_frozen of this CustomerInformation.
 
-        |参数名称：是否伙伴冻结，注意，只有转售子客户才能被伙伴冻结：0：否1：是| |参数的约束及描述：是否伙伴冻结，注意，只有转售子客户才能被伙伴冻结：0：否1：是|
+        是否冻结： 0：否1：是
 
         :return: The is_frozen of this CustomerInformation.
         :rtype: int
@@ -343,7 +343,7 @@ class CustomerInformation:
     def is_frozen(self, is_frozen):
         """Sets the is_frozen of this CustomerInformation.
 
-        |参数名称：是否伙伴冻结，注意，只有转售子客户才能被伙伴冻结：0：否1：是| |参数的约束及描述：是否伙伴冻结，注意，只有转售子客户才能被伙伴冻结：0：否1：是|
+        是否冻结： 0：否1：是
 
         :param is_frozen: The is_frozen of this CustomerInformation.
         :type: int
@@ -354,7 +354,7 @@ class CustomerInformation:
     def account_managers(self):
         """Gets the account_managers of this CustomerInformation.
 
-        |参数名称：客户经理名称列表，目前只支持1个| |参数约束以及描述：客户经理名称列表，目前只支持1个|
+        该客户对应的客户经理信息，目前只支持1个，具体参见表2。
 
         :return: The account_managers of this CustomerInformation.
         :rtype: list[AccountManager]
@@ -365,7 +365,7 @@ class CustomerInformation:
     def account_managers(self, account_managers):
         """Sets the account_managers of this CustomerInformation.
 
-        |参数名称：客户经理名称列表，目前只支持1个| |参数约束以及描述：客户经理名称列表，目前只支持1个|
+        该客户对应的客户经理信息，目前只支持1个，具体参见表2。
 
         :param account_managers: The account_managers of this CustomerInformation.
         :type: list[AccountManager]
@@ -376,7 +376,7 @@ class CustomerInformation:
     def xaccount_id(self):
         """Gets the xaccount_id of this CustomerInformation.
 
-        |参数名称：伙伴销售平台的用户唯一标识| |参数的约束及描述：该标识的具体值由伙伴分配|
+        伙伴销售平台的用户唯一标识，该标识的具体值由伙伴分配。
 
         :return: The xaccount_id of this CustomerInformation.
         :rtype: str
@@ -387,7 +387,7 @@ class CustomerInformation:
     def xaccount_id(self, xaccount_id):
         """Sets the xaccount_id of this CustomerInformation.
 
-        |参数名称：伙伴销售平台的用户唯一标识| |参数的约束及描述：该标识的具体值由伙伴分配|
+        伙伴销售平台的用户唯一标识，该标识的具体值由伙伴分配。
 
         :param xaccount_id: The xaccount_id of this CustomerInformation.
         :type: str
@@ -398,7 +398,7 @@ class CustomerInformation:
     def xaccount_type(self):
         """Gets the xaccount_type of this CustomerInformation.
 
-        |参数名称：华为分给合作伙伴的平台标识| |参数的约束及描述：该标识的具体值由华为分配|
+        华为分配给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
 
         :return: The xaccount_type of this CustomerInformation.
         :rtype: str
@@ -409,7 +409,7 @@ class CustomerInformation:
     def xaccount_type(self, xaccount_type):
         """Sets the xaccount_type of this CustomerInformation.
 
-        |参数名称：华为分给合作伙伴的平台标识| |参数的约束及描述：该标识的具体值由华为分配|
+        华为分配给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
 
         :param xaccount_type: The xaccount_type of this CustomerInformation.
         :type: str
@@ -420,7 +420,7 @@ class CustomerInformation:
     def customer_level(self):
         """Gets the customer_level of this CustomerInformation.
 
-        |参数名称：客户等级| |参数的约束及描述：V0、V1、V2、V3、V4、V5|
+        客户等级。 V0 V1 V2 V3 V4 V5
 
         :return: The customer_level of this CustomerInformation.
         :rtype: str
@@ -431,7 +431,7 @@ class CustomerInformation:
     def customer_level(self, customer_level):
         """Sets the customer_level of this CustomerInformation.
 
-        |参数名称：客户等级| |参数的约束及描述：V0、V1、V2、V3、V4、V5|
+        客户等级。 V0 V1 V2 V3 V4 V5
 
         :param customer_level: The customer_level of this CustomerInformation.
         :type: str

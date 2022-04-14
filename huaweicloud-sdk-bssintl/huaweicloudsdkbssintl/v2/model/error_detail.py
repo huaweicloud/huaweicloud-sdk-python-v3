@@ -54,7 +54,7 @@ class ErrorDetail:
     def error_code(self):
         """Gets the error_code of this ErrorDetail.
 
-        |参数名称：返回码| |参数的约束及描述：该参数非必填，最大长度16|
+        状态码。
 
         :return: The error_code of this ErrorDetail.
         :rtype: str
@@ -65,7 +65,7 @@ class ErrorDetail:
     def error_code(self, error_code):
         """Sets the error_code of this ErrorDetail.
 
-        |参数名称：返回码| |参数的约束及描述：该参数非必填，最大长度16|
+        状态码。
 
         :param error_code: The error_code of this ErrorDetail.
         :type: str
@@ -76,7 +76,7 @@ class ErrorDetail:
     def error_msg(self):
         """Gets the error_msg of this ErrorDetail.
 
-        |参数名称：返回码描述| |参数的约束及描述：该参数非必填，最大长度1024|
+        错误描述信息。
 
         :return: The error_msg of this ErrorDetail.
         :rtype: str
@@ -87,7 +87,7 @@ class ErrorDetail:
     def error_msg(self, error_msg):
         """Sets the error_msg of this ErrorDetail.
 
-        |参数名称：返回码描述| |参数的约束及描述：该参数非必填，最大长度1024|
+        错误描述信息。
 
         :param error_msg: The error_msg of this ErrorDetail.
         :type: str
@@ -98,7 +98,7 @@ class ErrorDetail:
     def id(self):
         """Gets the id of this ErrorDetail.
 
-        |参数名称：标示ID| |参数的约束及描述：该参数非必填，最大长度256|
+        出现错误的客户ID或批量处理消息的ID。
 
         :return: The id of this ErrorDetail.
         :rtype: str
@@ -109,7 +109,7 @@ class ErrorDetail:
     def id(self, id):
         """Sets the id of this ErrorDetail.
 
-        |参数名称：标示ID| |参数的约束及描述：该参数非必填，最大长度256|
+        出现错误的客户ID或批量处理消息的ID。
 
         :param id: The id of this ErrorDetail.
         :type: str

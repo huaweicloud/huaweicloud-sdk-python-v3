@@ -40,8 +40,10 @@ class SubscriptionInfo:
         self._protocol = None
         self.discriminator = None
 
-        self.endpoints = endpoints
-        self.protocol = protocol
+        if endpoints is not None:
+            self.endpoints = endpoints
+        if protocol is not None:
+            self.protocol = protocol
 
     @property
     def endpoints(self):

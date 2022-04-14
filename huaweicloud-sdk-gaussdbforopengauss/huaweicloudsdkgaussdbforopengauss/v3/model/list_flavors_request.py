@@ -157,7 +157,7 @@ class ListFlavorsRequest:
     def limit(self):
         """Gets the limit of this ListFlavorsRequest.
 
-        查询记录数。
+        查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
         :return: The limit of this ListFlavorsRequest.
         :rtype: int
@@ -168,7 +168,7 @@ class ListFlavorsRequest:
     def limit(self, limit):
         """Sets the limit of this ListFlavorsRequest.
 
-        查询记录数。
+        查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
         :param limit: The limit of this ListFlavorsRequest.
         :type: int
@@ -179,7 +179,7 @@ class ListFlavorsRequest:
     def offset(self):
         """Gets the offset of this ListFlavorsRequest.
 
-        偏移量。
+        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :return: The offset of this ListFlavorsRequest.
         :rtype: int
@@ -190,7 +190,7 @@ class ListFlavorsRequest:
     def offset(self, offset):
         """Sets the offset of this ListFlavorsRequest.
 
-        偏移量。
+        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListFlavorsRequest.
         :type: int

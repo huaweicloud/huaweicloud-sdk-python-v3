@@ -36,7 +36,8 @@ class CertificateDetail:
         'status': 'str',
         'domain_count': 'int',
         'wildcard_count': 'int',
-        'description': 'str'
+        'description': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -54,10 +55,11 @@ class CertificateDetail:
         'status': 'status',
         'domain_count': 'domain_count',
         'wildcard_count': 'wildcard_count',
-        'description': 'description'
+        'description': 'description',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, id=None, name=None, domain=None, sans=None, signature_algorithm=None, deploy_support=None, type=None, brand=None, expire_time=None, domain_type=None, validity_period=None, status=None, domain_count=None, wildcard_count=None, description=None):
+    def __init__(self, id=None, name=None, domain=None, sans=None, signature_algorithm=None, deploy_support=None, type=None, brand=None, expire_time=None, domain_type=None, validity_period=None, status=None, domain_count=None, wildcard_count=None, description=None, enterprise_project_id=None):
         """CertificateDetail - a model defined in huaweicloud sdk"""
         
         
@@ -77,38 +79,26 @@ class CertificateDetail:
         self._domain_count = None
         self._wildcard_count = None
         self._description = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
-        if domain is not None:
-            self.domain = domain
-        if sans is not None:
-            self.sans = sans
-        if signature_algorithm is not None:
-            self.signature_algorithm = signature_algorithm
-        if deploy_support is not None:
-            self.deploy_support = deploy_support
-        if type is not None:
-            self.type = type
-        if brand is not None:
-            self.brand = brand
-        if expire_time is not None:
-            self.expire_time = expire_time
-        if domain_type is not None:
-            self.domain_type = domain_type
-        if validity_period is not None:
-            self.validity_period = validity_period
-        if status is not None:
-            self.status = status
-        if domain_count is not None:
-            self.domain_count = domain_count
-        if wildcard_count is not None:
-            self.wildcard_count = wildcard_count
-        if description is not None:
-            self.description = description
+        self.id = id
+        self.name = name
+        self.domain = domain
+        self.sans = sans
+        self.signature_algorithm = signature_algorithm
+        self.deploy_support = deploy_support
+        self.type = type
+        self.brand = brand
+        self.expire_time = expire_time
+        self.domain_type = domain_type
+        self.validity_period = validity_period
+        self.status = status
+        self.domain_count = domain_count
+        self.wildcard_count = wildcard_count
+        self.description = description
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def id(self):
@@ -439,6 +429,28 @@ class CertificateDetail:
         :type: str
         """
         self._description = description
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this CertificateDetail.
+
+        企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
+
+        :return: The enterprise_project_id of this CertificateDetail.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this CertificateDetail.
+
+        企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
+
+        :param enterprise_project_id: The enterprise_project_id of this CertificateDetail.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

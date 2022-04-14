@@ -25,17 +25,19 @@ class ProtectableResult:
         'code': 'str',
         'reason': 'str',
         'result': 'bool',
-        'vault': 'VaultGet'
+        'vault': 'VaultGet',
+        'message': 'str'
     }
 
     attribute_map = {
         'code': 'code',
         'reason': 'reason',
         'result': 'result',
-        'vault': 'vault'
+        'vault': 'vault',
+        'message': 'message'
     }
 
-    def __init__(self, code=None, reason=None, result=None, vault=None):
+    def __init__(self, code=None, reason=None, result=None, vault=None, message=None):
         """ProtectableResult - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +46,7 @@ class ProtectableResult:
         self._reason = None
         self._result = None
         self._vault = None
+        self._message = None
         self.discriminator = None
 
         if code is not None:
@@ -53,6 +56,8 @@ class ProtectableResult:
         self.result = result
         if vault is not None:
             self.vault = vault
+        if message is not None:
+            self.message = message
 
     @property
     def code(self):
@@ -139,6 +144,28 @@ class ProtectableResult:
         :type: VaultGet
         """
         self._vault = vault
+
+    @property
+    def message(self):
+        """Gets the message of this ProtectableResult.
+
+        资源不可备份的原因信息，当资源可保护性检验失败时才有该字段。
+
+        :return: The message of this ProtectableResult.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        """Sets the message of this ProtectableResult.
+
+        资源不可备份的原因信息，当资源可保护性检验失败时才有该字段。
+
+        :param message: The message of this ProtectableResult.
+        :type: str
+        """
+        self._message = message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

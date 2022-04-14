@@ -10,10 +10,13 @@ from huaweicloudsdkcore.auth.cache import AuthCache
 from huaweicloudsdkcore.signer import signer
 
 from huaweicloudsdkiotda.v5.region.iotda_region import IoTDARegion
-from huaweicloudsdkiotda.v5.auth.derivation_aksk_signer import DerivationAKSKSigner
+from huaweicloudsdkcore.signer.derived_aksk_signer import DerivationAKSKSigner
 
 
 class IoTDACredentials(Credentials):
+
+    _DERIVED_AUTH_SERVICE_NAME = "iotdm"
+
     def __init__(self, ak, sk, project_id=None):
         if not ak:
             raise ApiValueError("AK can not be null.")
@@ -80,7 +83,7 @@ class IoTDACredentials(Credentials):
         if self.is_default_endpoint(request):
             return signer.Signer(self).sign(request)
         else:
-            return DerivationAKSKSigner(self).sign(request, self.region_id)
+            return DerivationAKSKSigner(self).sign(request, self._DERIVED_AUTH_SERVICE_NAME, self.region_id)
 
     def is_default_endpoint(self, request):
         if self.default_endpoint is not None:

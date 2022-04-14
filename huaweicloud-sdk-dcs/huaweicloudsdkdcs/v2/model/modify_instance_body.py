@@ -25,6 +25,7 @@ class ModifyInstanceBody:
         'name': 'str',
         'description': 'str',
         'port': 'int',
+        'rename_commands': 'RenameCommandResp',
         'maintain_begin': 'str',
         'maintain_end': 'str',
         'security_group_id': 'str',
@@ -35,13 +36,14 @@ class ModifyInstanceBody:
         'name': 'name',
         'description': 'description',
         'port': 'port',
+        'rename_commands': 'rename_commands',
         'maintain_begin': 'maintain_begin',
         'maintain_end': 'maintain_end',
         'security_group_id': 'security_group_id',
         'instance_backup_policy': 'instance_backup_policy'
     }
 
-    def __init__(self, name=None, description=None, port=None, maintain_begin=None, maintain_end=None, security_group_id=None, instance_backup_policy=None):
+    def __init__(self, name=None, description=None, port=None, rename_commands=None, maintain_begin=None, maintain_end=None, security_group_id=None, instance_backup_policy=None):
         """ModifyInstanceBody - a model defined in huaweicloud sdk"""
         
         
@@ -49,6 +51,7 @@ class ModifyInstanceBody:
         self._name = None
         self._description = None
         self._port = None
+        self._rename_commands = None
         self._maintain_begin = None
         self._maintain_end = None
         self._security_group_id = None
@@ -61,6 +64,8 @@ class ModifyInstanceBody:
             self.description = description
         if port is not None:
             self.port = port
+        if rename_commands is not None:
+            self.rename_commands = rename_commands
         if maintain_begin is not None:
             self.maintain_begin = maintain_begin
         if maintain_end is not None:
@@ -135,6 +140,26 @@ class ModifyInstanceBody:
         :type: int
         """
         self._port = port
+
+    @property
+    def rename_commands(self):
+        """Gets the rename_commands of this ModifyInstanceBody.
+
+
+        :return: The rename_commands of this ModifyInstanceBody.
+        :rtype: RenameCommandResp
+        """
+        return self._rename_commands
+
+    @rename_commands.setter
+    def rename_commands(self, rename_commands):
+        """Sets the rename_commands of this ModifyInstanceBody.
+
+
+        :param rename_commands: The rename_commands of this ModifyInstanceBody.
+        :type: RenameCommandResp
+        """
+        self._rename_commands = rename_commands
 
     @property
     def maintain_begin(self):

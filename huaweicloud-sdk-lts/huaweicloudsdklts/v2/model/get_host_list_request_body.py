@@ -40,10 +40,8 @@ class GetHostListRequestBody:
         self._filter = None
         self.discriminator = None
 
-        if host_id_list is not None:
-            self.host_id_list = host_id_list
-        if filter is not None:
-            self.filter = filter
+        self.host_id_list = host_id_list
+        self.filter = filter
 
     @property
     def host_id_list(self):

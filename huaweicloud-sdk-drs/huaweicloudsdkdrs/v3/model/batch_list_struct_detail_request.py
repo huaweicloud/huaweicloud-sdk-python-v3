@@ -44,7 +44,8 @@ class BatchListStructDetailRequest:
         self.discriminator = None
 
         self.type = type
-        self.x_language = x_language
+        if x_language is not None:
+            self.x_language = x_language
         if body is not None:
             self.body = body
 

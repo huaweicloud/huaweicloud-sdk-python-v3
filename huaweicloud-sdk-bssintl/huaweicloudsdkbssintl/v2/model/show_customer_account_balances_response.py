@@ -23,7 +23,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
 
     openapi_types = {
         'account_balances': 'list[AccountBalanceV3]',
-        'debt_amount': 'decimal.Decimal',
+        'debt_amount': 'float',
         'measure_id': 'int',
         'currency': 'str'
     }
@@ -59,7 +59,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
     def account_balances(self):
         """Gets the account_balances of this ShowCustomerAccountBalancesResponse.
 
-        |参数名称：账户余额列表。具体请参见表 AccountBalanceV3| |参数约束以及描述：账户余额列表。具体请参见表 AccountBalanceV3|
+        账户余额列表。 具体请参见表1。
 
         :return: The account_balances of this ShowCustomerAccountBalancesResponse.
         :rtype: list[AccountBalanceV3]
@@ -70,7 +70,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
     def account_balances(self, account_balances):
         """Sets the account_balances of this ShowCustomerAccountBalancesResponse.
 
-        |参数名称：账户余额列表。具体请参见表 AccountBalanceV3| |参数约束以及描述：账户余额列表。具体请参见表 AccountBalanceV3|
+        账户余额列表。 具体请参见表1。
 
         :param account_balances: The account_balances of this ShowCustomerAccountBalancesResponse.
         :type: list[AccountBalanceV3]
@@ -81,10 +81,10 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
     def debt_amount(self):
         """Gets the debt_amount of this ShowCustomerAccountBalancesResponse.
 
-        |参数名称：欠款总金额。| |参数的约束及描述：欠款总金额。|
+        欠款总金额。
 
         :return: The debt_amount of this ShowCustomerAccountBalancesResponse.
-        :rtype: decimal.Decimal
+        :rtype: float
         """
         return self._debt_amount
 
@@ -92,10 +92,10 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
     def debt_amount(self, debt_amount):
         """Sets the debt_amount of this ShowCustomerAccountBalancesResponse.
 
-        |参数名称：欠款总金额。| |参数的约束及描述：欠款总金额。|
+        欠款总金额。
 
         :param debt_amount: The debt_amount of this ShowCustomerAccountBalancesResponse.
-        :type: decimal.Decimal
+        :type: float
         """
         self._debt_amount = debt_amount
 
@@ -103,7 +103,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
     def measure_id(self):
         """Gets the measure_id of this ShowCustomerAccountBalancesResponse.
 
-        |参数名称：度量单位：1：元2：角3：分| |参数的约束及描述：度量单位：1：元2：角3：分|
+        度量单位。 1：元
 
         :return: The measure_id of this ShowCustomerAccountBalancesResponse.
         :rtype: int
@@ -114,7 +114,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
     def measure_id(self, measure_id):
         """Sets the measure_id of this ShowCustomerAccountBalancesResponse.
 
-        |参数名称：度量单位：1：元2：角3：分| |参数的约束及描述：度量单位：1：元2：角3：分|
+        度量单位。 1：元
 
         :param measure_id: The measure_id of this ShowCustomerAccountBalancesResponse.
         :type: int
@@ -125,7 +125,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
     def currency(self):
         """Gets the currency of this ShowCustomerAccountBalancesResponse.
 
-        |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
+        币种。 USD：美元。
 
         :return: The currency of this ShowCustomerAccountBalancesResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class ShowCustomerAccountBalancesResponse(SdkResponse):
     def currency(self, currency):
         """Sets the currency of this ShowCustomerAccountBalancesResponse.
 
-        |参数名称：币种。CNY：人民币。USD：美元。| |参数约束及描述：币种。CNY：人民币。USD：美元。|
+        币种。 USD：美元。
 
         :param currency: The currency of this ShowCustomerAccountBalancesResponse.
         :type: str

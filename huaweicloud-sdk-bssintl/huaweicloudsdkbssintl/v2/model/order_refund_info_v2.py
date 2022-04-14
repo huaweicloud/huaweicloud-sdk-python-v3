@@ -23,7 +23,7 @@ class OrderRefundInfoV2:
 
     openapi_types = {
         'id': 'str',
-        'amount': 'decimal.Decimal',
+        'amount': 'float',
         'measure_id': 'str',
         'customer_id': 'str',
         'resource_type_code': 'str',
@@ -82,7 +82,7 @@ class OrderRefundInfoV2:
     def id(self):
         """Gets the id of this OrderRefundInfoV2.
 
-        |参数名称：该记录的ID。| |参数约束及描述：该记录的ID。|
+        该记录的ID。
 
         :return: The id of this OrderRefundInfoV2.
         :rtype: str
@@ -93,7 +93,7 @@ class OrderRefundInfoV2:
     def id(self, id):
         """Sets the id of this OrderRefundInfoV2.
 
-        |参数名称：该记录的ID。| |参数约束及描述：该记录的ID。|
+        该记录的ID。
 
         :param id: The id of this OrderRefundInfoV2.
         :type: str
@@ -104,10 +104,10 @@ class OrderRefundInfoV2:
     def amount(self):
         """Gets the amount of this OrderRefundInfoV2.
 
-        |参数名称：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。| |参数的约束及描述：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。|
+        金额。 金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。
 
         :return: The amount of this OrderRefundInfoV2.
-        :rtype: decimal.Decimal
+        :rtype: float
         """
         return self._amount
 
@@ -115,10 +115,10 @@ class OrderRefundInfoV2:
     def amount(self, amount):
         """Sets the amount of this OrderRefundInfoV2.
 
-        |参数名称：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。| |参数的约束及描述：金额。金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。|
+        金额。 金额为负数，表示退订金额。金额为正数，表示已消费金额或收取的退订手续费。
 
         :param amount: The amount of this OrderRefundInfoV2.
-        :type: decimal.Decimal
+        :type: float
         """
         self._amount = amount
 
@@ -126,7 +126,7 @@ class OrderRefundInfoV2:
     def measure_id(self):
         """Gets the measure_id of this OrderRefundInfoV2.
 
-        |参数名称：度量单位。1：元| |参数约束及描述：度量单位。1：元|
+        金额的度量单位。 1：元
 
         :return: The measure_id of this OrderRefundInfoV2.
         :rtype: str
@@ -137,7 +137,7 @@ class OrderRefundInfoV2:
     def measure_id(self, measure_id):
         """Sets the measure_id of this OrderRefundInfoV2.
 
-        |参数名称：度量单位。1：元| |参数约束及描述：度量单位。1：元|
+        金额的度量单位。 1：元
 
         :param measure_id: The measure_id of this OrderRefundInfoV2.
         :type: str
@@ -148,7 +148,7 @@ class OrderRefundInfoV2:
     def customer_id(self):
         """Gets the customer_id of this OrderRefundInfoV2.
 
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+        客户账号ID。
 
         :return: The customer_id of this OrderRefundInfoV2.
         :rtype: str
@@ -159,7 +159,7 @@ class OrderRefundInfoV2:
     def customer_id(self, customer_id):
         """Sets the customer_id of this OrderRefundInfoV2.
 
-        |参数名称：客户ID。| |参数约束及描述：客户ID。|
+        客户账号ID。
 
         :param customer_id: The customer_id of this OrderRefundInfoV2.
         :type: str
@@ -170,7 +170,7 @@ class OrderRefundInfoV2:
     def resource_type_code(self):
         """Gets the resource_type_code of this OrderRefundInfoV2.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。
 
         :return: The resource_type_code of this OrderRefundInfoV2.
         :rtype: str
@@ -181,7 +181,7 @@ class OrderRefundInfoV2:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this OrderRefundInfoV2.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数约束及描述：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。
 
         :param resource_type_code: The resource_type_code of this OrderRefundInfoV2.
         :type: str
@@ -192,7 +192,7 @@ class OrderRefundInfoV2:
     def service_type_code(self):
         """Gets the service_type_code of this OrderRefundInfoV2.
 
-        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :return: The service_type_code of this OrderRefundInfoV2.
         :rtype: str
@@ -203,7 +203,7 @@ class OrderRefundInfoV2:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this OrderRefundInfoV2.
 
-        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如ECS的云服务类型编码为“hws.service.type.ec2”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :param service_type_code: The service_type_code of this OrderRefundInfoV2.
         :type: str
@@ -214,7 +214,7 @@ class OrderRefundInfoV2:
     def resource_type_name(self):
         """Gets the resource_type_name of this OrderRefundInfoV2.
 
-        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :return: The resource_type_name of this OrderRefundInfoV2.
         :rtype: str
@@ -225,7 +225,7 @@ class OrderRefundInfoV2:
     def resource_type_name(self, resource_type_name):
         """Sets the resource_type_name of this OrderRefundInfoV2.
 
-        |参数名称：资源类型编码名称| |参数约束及描述：资源类型编码名称|
+        资源类型名称。例如ECS的资源类型名称为“云主机”。
 
         :param resource_type_name: The resource_type_name of this OrderRefundInfoV2.
         :type: str
@@ -236,7 +236,7 @@ class OrderRefundInfoV2:
     def service_type_name(self):
         """Gets the service_type_name of this OrderRefundInfoV2.
 
-        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :return: The service_type_name of this OrderRefundInfoV2.
         :rtype: str
@@ -247,7 +247,7 @@ class OrderRefundInfoV2:
     def service_type_name(self, service_type_name):
         """Sets the service_type_name of this OrderRefundInfoV2.
 
-        |参数名称：服务类型编码名称| |参数约束及描述：服务类型编码名称|
+        云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
         :param service_type_name: The service_type_name of this OrderRefundInfoV2.
         :type: str
@@ -258,7 +258,7 @@ class OrderRefundInfoV2:
     def region_code(self):
         """Gets the region_code of this OrderRefundInfoV2.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :return: The region_code of this OrderRefundInfoV2.
         :rtype: str
@@ -269,7 +269,7 @@ class OrderRefundInfoV2:
     def region_code(self, region_code):
         """Sets the region_code of this OrderRefundInfoV2.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this OrderRefundInfoV2.
         :type: str
@@ -280,7 +280,7 @@ class OrderRefundInfoV2:
     def base_order_id(self):
         """Gets the base_order_id of this OrderRefundInfoV2.
 
-        |参数名称：退订金额、已消费金额或收取退订手续费对应的原订单ID。| |参数约束及描述：退订金额、已消费金额或收取退订手续费对应的原订单ID。|
+        退订金额、已消费金额或收取退订手续费对应的原订单ID。
 
         :return: The base_order_id of this OrderRefundInfoV2.
         :rtype: str
@@ -291,7 +291,7 @@ class OrderRefundInfoV2:
     def base_order_id(self, base_order_id):
         """Sets the base_order_id of this OrderRefundInfoV2.
 
-        |参数名称：退订金额、已消费金额或收取退订手续费对应的原订单ID。| |参数约束及描述：退订金额、已消费金额或收取退订手续费对应的原订单ID。|
+        退订金额、已消费金额或收取退订手续费对应的原订单ID。
 
         :param base_order_id: The base_order_id of this OrderRefundInfoV2.
         :type: str

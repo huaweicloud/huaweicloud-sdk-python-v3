@@ -25,17 +25,27 @@ class RuleAction:
         'type': 'str',
         'smn_forwarding': 'ActionSmnForwarding',
         'device_alarm': 'ActionDeviceAlarm',
-        'device_command': 'ActionDeviceCommand'
+        'device_command': 'ActionDeviceCommand',
+        'dis_forwarding': 'ActionDisForwarding',
+        'obs_forwarding': 'ActionObsForwarding',
+        'roma_forwarding': 'ActionRomaForwarding',
+        'iota_forwarding': 'ActionIoTAForwarding',
+        'kafka_forwarding': 'ActionKafkaForwarding'
     }
 
     attribute_map = {
         'type': 'type',
         'smn_forwarding': 'smn_forwarding',
         'device_alarm': 'device_alarm',
-        'device_command': 'device_command'
+        'device_command': 'device_command',
+        'dis_forwarding': 'dis_forwarding',
+        'obs_forwarding': 'obs_forwarding',
+        'roma_forwarding': 'roma_forwarding',
+        'iota_forwarding': 'iota_forwarding',
+        'kafka_forwarding': 'kafka_forwarding'
     }
 
-    def __init__(self, type=None, smn_forwarding=None, device_alarm=None, device_command=None):
+    def __init__(self, type=None, smn_forwarding=None, device_alarm=None, device_command=None, dis_forwarding=None, obs_forwarding=None, roma_forwarding=None, iota_forwarding=None, kafka_forwarding=None):
         """RuleAction - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +54,11 @@ class RuleAction:
         self._smn_forwarding = None
         self._device_alarm = None
         self._device_command = None
+        self._dis_forwarding = None
+        self._obs_forwarding = None
+        self._roma_forwarding = None
+        self._iota_forwarding = None
+        self._kafka_forwarding = None
         self.discriminator = None
 
         self.type = type
@@ -53,6 +68,16 @@ class RuleAction:
             self.device_alarm = device_alarm
         if device_command is not None:
             self.device_command = device_command
+        if dis_forwarding is not None:
+            self.dis_forwarding = dis_forwarding
+        if obs_forwarding is not None:
+            self.obs_forwarding = obs_forwarding
+        if roma_forwarding is not None:
+            self.roma_forwarding = roma_forwarding
+        if iota_forwarding is not None:
+            self.iota_forwarding = iota_forwarding
+        if kafka_forwarding is not None:
+            self.kafka_forwarding = kafka_forwarding
 
     @property
     def type(self):
@@ -135,6 +160,106 @@ class RuleAction:
         :type: ActionDeviceCommand
         """
         self._device_command = device_command
+
+    @property
+    def dis_forwarding(self):
+        """Gets the dis_forwarding of this RuleAction.
+
+
+        :return: The dis_forwarding of this RuleAction.
+        :rtype: ActionDisForwarding
+        """
+        return self._dis_forwarding
+
+    @dis_forwarding.setter
+    def dis_forwarding(self, dis_forwarding):
+        """Sets the dis_forwarding of this RuleAction.
+
+
+        :param dis_forwarding: The dis_forwarding of this RuleAction.
+        :type: ActionDisForwarding
+        """
+        self._dis_forwarding = dis_forwarding
+
+    @property
+    def obs_forwarding(self):
+        """Gets the obs_forwarding of this RuleAction.
+
+
+        :return: The obs_forwarding of this RuleAction.
+        :rtype: ActionObsForwarding
+        """
+        return self._obs_forwarding
+
+    @obs_forwarding.setter
+    def obs_forwarding(self, obs_forwarding):
+        """Sets the obs_forwarding of this RuleAction.
+
+
+        :param obs_forwarding: The obs_forwarding of this RuleAction.
+        :type: ActionObsForwarding
+        """
+        self._obs_forwarding = obs_forwarding
+
+    @property
+    def roma_forwarding(self):
+        """Gets the roma_forwarding of this RuleAction.
+
+
+        :return: The roma_forwarding of this RuleAction.
+        :rtype: ActionRomaForwarding
+        """
+        return self._roma_forwarding
+
+    @roma_forwarding.setter
+    def roma_forwarding(self, roma_forwarding):
+        """Sets the roma_forwarding of this RuleAction.
+
+
+        :param roma_forwarding: The roma_forwarding of this RuleAction.
+        :type: ActionRomaForwarding
+        """
+        self._roma_forwarding = roma_forwarding
+
+    @property
+    def iota_forwarding(self):
+        """Gets the iota_forwarding of this RuleAction.
+
+
+        :return: The iota_forwarding of this RuleAction.
+        :rtype: ActionIoTAForwarding
+        """
+        return self._iota_forwarding
+
+    @iota_forwarding.setter
+    def iota_forwarding(self, iota_forwarding):
+        """Sets the iota_forwarding of this RuleAction.
+
+
+        :param iota_forwarding: The iota_forwarding of this RuleAction.
+        :type: ActionIoTAForwarding
+        """
+        self._iota_forwarding = iota_forwarding
+
+    @property
+    def kafka_forwarding(self):
+        """Gets the kafka_forwarding of this RuleAction.
+
+
+        :return: The kafka_forwarding of this RuleAction.
+        :rtype: ActionKafkaForwarding
+        """
+        return self._kafka_forwarding
+
+    @kafka_forwarding.setter
+    def kafka_forwarding(self, kafka_forwarding):
+        """Sets the kafka_forwarding of this RuleAction.
+
+
+        :param kafka_forwarding: The kafka_forwarding of this RuleAction.
+        :type: ActionKafkaForwarding
+        """
+        self._kafka_forwarding = kafka_forwarding
 
     def to_dict(self):
         """Returns the model properties as a dict"""

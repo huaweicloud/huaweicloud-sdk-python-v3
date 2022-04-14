@@ -56,7 +56,8 @@ class AomMappingRuleInfo:
         self.cluster_name = cluster_name
         self.deployments = deployments
         self.namespace = namespace
-        self.container_name = container_name
+        if container_name is not None:
+            self.container_name = container_name
         self.files = files
 
     @property

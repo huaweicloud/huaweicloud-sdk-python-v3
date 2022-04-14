@@ -1,3 +1,255 @@
+# 3.0.84 2022-04-14
+
+### HuaweiCloud SDK Core
+
+- _Features_
+  - Support SK derived authentication
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `sources`, `origin_protocol`, `force_redirect`, `compress` to the interface `UpdateDomainFullConfig`
+  - Changes of the interface `ShowDomainFullConfig`:
+    - Add the response parameters `sources`, `origin_protocol`, `force_redirect`, `compress`
+    - Modify the type `string` -> `int32` of the response parameter `certificate_source`
+
+### HuaweiCloud SDK CloudBuild
+
+- _Features_
+  - Support the interface `ShowJobSuccessRatio`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CodeCheck
+
+- _Features_
+  - Support the interfaces `ShowTasksRulesets`, `CheckRulesetParameters`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CSMS
+
+- _Features_
+  - Support the `Cloud Secret Management Service`.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `rename_commands` to the interface `UpdateInstance`
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - Support the interface `BatchSetSmn`
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `X-Language` changed to not required of the interface `ShowQuotas`
+  - The request parameter `X-Language` changed to not required of the interface `BatchCreateJobs`
+  - The request parameter `X-Language` changed to not required of the interface `BatchValidateConnections`
+  - The request parameter `X-Language` changed to not required of the interface `BatchValidateClustersConnections`
+  - The request parameter `X-Language` changed to not required of the interface `BatchSetObjects`
+  - The request parameter `X-Language` changed to not required of the interface `BatchCheckJobs`
+  - The request parameter `X-Language` changed to not required of the interface `BatchCheckResults`
+  - Changes of the interface `BatchSetSpeed`:
+    - Add the request parameter `is_utc`
+    - The request parameter `X-Language` changed to not required
+  - The request parameter `X-Language` changed to not required of the interface `BatchShowParams`
+  - The request parameter `X-Language` changed to not required of the interface `UpdateParams`
+  - The request parameter `X-Language` changed to not required of the interface `BatchStartJobs`
+  - The request parameter `X-Language` changed to not required of the interface `BatchRestoreTask`
+  - The request parameter `X-Language` changed to not required of the interface `BatchStopJobs`
+  - The request parameter `X-Language` changed to not required of the interface `BatchDeleteJobs`
+  - Changes of the interface `BatchUpdateJob`:
+    - The request parameter `X-Language` changed to not required
+    - The request parameter `endpoints`, `protocol` changed to not required
+  - The request parameter `X-Language` changed to not required of the interface `BatchResetPassword`
+  - The request parameter `X-Language` changed to not required of the interface `BatchSetDefiner`
+  - The request parameter `X-Language` changed to not required of the interface `CreateCompareTask`
+  - The request parameter `X-Language` changed to not required of the interface `ListCompareResult`
+  - The request parameter `X-Language` changed to not required of the interface `BatchListProgresses`
+  - Changes of the interface `BatchListJobDetails`:
+    - Add the response parameter `is_utc`
+    - The request parameter `X-Language` changed to not required
+    - Modify the type `string` -> `object` of the response parameter `alarm_notify`
+  - Changes of the interface `ShowJobList`:
+    - The request parameter `X-Language` changed to not required
+    - Modify the type `string` -> `boolean` of the response parameter `billing_tag`
+    - Modify the type `string` -> `boolean` of the response parameter `node_newFramework`
+  - The request parameter `X-Language` changed to not required of the interface `BatchListJobStatus`
+  - The request parameter `X-Language` changed to not required of the interface `BatchChangeData`
+  - The request parameter `X-Language` changed to not required of the interface `BatchSwitchover`
+  - The request parameter `X-Language` changed to not required of the interface `BatchListRposAndRtos`
+  - The request parameter `X-Language` changed to not required of the interface `ShowMonitoringData`
+  - The request parameter `X-Language` changed to not required of the interface `BatchListStructProcess`
+  - The request parameter `X-Language` changed to not required of the interface `BatchListStructDetail`
+  - The request parameter `X-Language` changed to not required of the interface `BatchUpdateUser`
+  - The request parameter `X-Language` changed to not required of the interface `ListUsers`
+  - Changes of the interface `BatchSetPolicy`:
+    - Modify the type `string` -> `boolean` of the request parameter `export_snapshot`
+    - The request parameter `X-Language` changed to not required
+    - The request parameter `conflict_policy`, `filter_ddl_policy` changed to not required
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `ip_eq` to the interface `ListServersDetails`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `encrypted_user_data` to the interface `UpdateFunctionConfig`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - Support the interfaces `RestartInstance`, `ShowInstanceConfiguration`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateInstance`:
+    - Remove the request parameter `solution`
+    - The request parameter `sharding_num`, `coordinator_num` changed to not required
+  - Add the response parameter `count` to the interface `ListConfigurations`
+  - Add the response parameter `total` to the interface `ListFlavors`
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListSimPricePlans`:
+    - Modify the type `date` -> `date-time` of the response parameter `create_time`
+    - Modify the type `date` -> `date-time` of the response parameter `active_time`
+    - Modify the type `date` -> `date-time` of the response parameter `stop_time`
+
+### HuaweiCloud SDK IEC
+
+- _Features_
+  - Support the following interfaces：
+    - `ListRelatedRoutetables`
+    - `ListRoutetables`
+    - `CreateRoutetable`
+    - `ShowRoutetable`
+    - `UpdateRoutetable`
+    - `DeleteRoutetable`
+    - `AssociateSubnet`
+    - `DisassociateSubnet`
+    - `ListRoutes`
+    - `CreateRoutes`
+    - `UpdateRoutes`
+    - `DeleteRoutes`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `action`, `priority` to the interface `ListSecurityGroups`
+  - Add the response parameters `action`, `priority` to the interface `CreateSecurityGroup`
+  - Add the response parameters `action`, `priority` to the interface `ShowSecurityGroup`
+  - Add the response parameters `action`, `priority` to the interface `ListSecurityGroupRules`
+  - Changes of the interface `CreateSecurityGroupRule`:
+    - Add the request parameters `action`, `priority`
+    - Add the response parameters `action`, `priority`
+  - Add the response parameters `action`, `priority` to the interface `ShowSecurityGroupRule`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `UpdateAomMappingRules`:
+    - The request parameter `target_log_group_id`, `target_log_group_name`, `target_log_stream_id`, `target_log_stream_name` changed to required
+    - The request parameter `container_name` changed to not required
+    - The response parameter `target_log_group_id`, `target_log_group_name`, `target_log_stream_id`, `target_log_stream_name` changed to required
+    - The response parameter `container_name` changed to not required
+  - Changes of the interface `ShowAomMappingRules`:
+    - The response parameter `target_log_group_id`, `target_log_group_name`, `target_log_stream_id`, `target_log_stream_name` changed to required
+    - The response parameter `container_name` changed to not required
+  - Changes of the interface `CreateAomMappingRules`:
+    - The request parameter `target_log_group_id`, `target_log_group_name`, `target_log_stream_id`, `target_log_stream_name` changed to required
+    - The request parameter `container_name` changed to not required
+    - The response parameter `target_log_group_id`, `target_log_group_name`, `target_log_stream_id`, `target_log_stream_name` changed to required
+    - The response parameter `container_name` changed to not required
+  - Changes of the interface `ShowAomMappingRule`:
+    - The response parameter `target_log_group_id`, `target_log_group_name`, `target_log_stream_id`, `target_log_stream_name` changed to required
+    - The response parameter `container_name` changed to not required
+  - The request parameter `host_id_list` changed to required of the interface `ListHost`
+  - The request parameter `host_group_id_list` changed to required of the interface `ListHostGroup`
+  - The request parameter `access_config_name_list`, `host_group_name_list`, `log_group_name_list`, `log_stream_name_list` changed to required of the interface `ListAccessConfig`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - Support the interface `RunModerationAudio`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SCM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListCertificates`:
+    - Add the request parameters `enterprise_project_id`, `deploy_support`
+    - Add the response parameter `enterprise_project_id`
+    - The response parameter `id`, `name`, `domain`, `sans`, `signature_algorithm`, `deploy_support`, `type`, `brand`, `expire_time`, `domain_type`, `validity_period`, `status`, `domain_count`, `wildcard_count`, `description`, `total_count` changed to required
+  - Changes of the interface `ImportCertificate`:
+    - Add the request parameter `enterprise_project_id`
+    - The response parameter `certificate_id` changed to required
+  - Changes of the interface `ShowCertificate`:
+    - Add the response parameter `enterprise_project_id`
+    - The response parameter `id`, `status`, `order_id`, `name`, `type`, `brand`, `push_support`, `revoke_reason`, `signature_algorithm`, `issue_time`, `not_before`, `not_after`, `validity_period`, `validation_method`, `domain_type`, `domain`, `sans`, `domain_count`, `wildcard_count` changed to required
+  - The response parameter `certificate`, `certificate_chain`, `private_key` changed to required of the interface `ExportCertificate`
+
+### HuaweiCloud SDK SMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `process_trace` to the interface `ListTasks`
+  - Add the response parameter `process_trace` to the interface `ShowTask`
+  - Add the request parameter `process_trace` to the interface `UpdateTask`
+  - Changes of the interface `UpdateTaskSpeed`:
+    - Add the request parameters `process_trace`, `compress_rate`
+    - The request parameter `migrate_speed` changed to not required
+
 # 3.0.83 2022-04-07
 
 ### HuaweiCloud SDK BSS

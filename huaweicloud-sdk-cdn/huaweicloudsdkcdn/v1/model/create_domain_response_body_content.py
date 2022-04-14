@@ -173,7 +173,7 @@ class CreateDomainResponseBodyContent:
     def business_type(self):
         """Gets the business_type of this CreateDomainResponseBodyContent.
 
-        域名业务类型:-web:网站加速；-download:文件下载加速；-video:点播加速；-wholeSite:全站加速。
+        域名业务类型：-web：网站加速；-download：文件下载加速；-video：点播加速；-wholeSite：全站加速。
 
         :return: The business_type of this CreateDomainResponseBodyContent.
         :rtype: str
@@ -184,7 +184,7 @@ class CreateDomainResponseBodyContent:
     def business_type(self, business_type):
         """Sets the business_type of this CreateDomainResponseBodyContent.
 
-        域名业务类型:-web:网站加速；-download:文件下载加速；-video:点播加速；-wholeSite:全站加速。
+        域名业务类型：-web：网站加速；-download：文件下载加速；-video：点播加速；-wholeSite：全站加速。
 
         :param business_type: The business_type of this CreateDomainResponseBodyContent.
         :type: str

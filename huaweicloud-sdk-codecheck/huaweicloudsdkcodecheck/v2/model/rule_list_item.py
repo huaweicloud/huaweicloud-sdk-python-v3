@@ -22,6 +22,7 @@ class RuleListItem:
     sensitive_list = []
 
     openapi_types = {
+        'rule_set': 'str',
         'rule_id': 'str',
         'rule_language': 'str',
         'rule_name': 'str',
@@ -34,6 +35,7 @@ class RuleListItem:
     }
 
     attribute_map = {
+        'rule_set': 'rule_set',
         'rule_id': 'rule_id',
         'rule_language': 'rule_language',
         'rule_name': 'rule_name',
@@ -45,11 +47,12 @@ class RuleListItem:
         'rule_desc': 'rule_desc'
     }
 
-    def __init__(self, rule_id=None, rule_language=None, rule_name=None, rule_severity=None, rule_tages=None, right_example=None, error_example=None, revise_opinion=None, rule_desc=None):
+    def __init__(self, rule_set=None, rule_id=None, rule_language=None, rule_name=None, rule_severity=None, rule_tages=None, right_example=None, error_example=None, revise_opinion=None, rule_desc=None):
         """RuleListItem - a model defined in huaweicloud sdk"""
         
         
 
+        self._rule_set = None
         self._rule_id = None
         self._rule_language = None
         self._rule_name = None
@@ -61,6 +64,8 @@ class RuleListItem:
         self._rule_desc = None
         self.discriminator = None
 
+        if rule_set is not None:
+            self.rule_set = rule_set
         if rule_id is not None:
             self.rule_id = rule_id
         if rule_language is not None:
@@ -79,6 +84,28 @@ class RuleListItem:
             self.revise_opinion = revise_opinion
         if rule_desc is not None:
             self.rule_desc = rule_desc
+
+    @property
+    def rule_set(self):
+        """Gets the rule_set of this RuleListItem.
+
+        规则集规范分类
+
+        :return: The rule_set of this RuleListItem.
+        :rtype: str
+        """
+        return self._rule_set
+
+    @rule_set.setter
+    def rule_set(self, rule_set):
+        """Sets the rule_set of this RuleListItem.
+
+        规则集规范分类
+
+        :param rule_set: The rule_set of this RuleListItem.
+        :type: str
+        """
+        self._rule_set = rule_set
 
     @property
     def rule_id(self):

@@ -37,7 +37,8 @@ class ShowQuotasRequest:
         self._x_language = None
         self.discriminator = None
 
-        self.x_language = x_language
+        if x_language is not None:
+            self.x_language = x_language
 
     @property
     def x_language(self):

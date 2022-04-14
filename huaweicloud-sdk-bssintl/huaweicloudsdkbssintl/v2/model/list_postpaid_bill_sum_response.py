@@ -23,11 +23,11 @@ class ListPostpaidBillSumResponse(SdkResponse):
 
     openapi_types = {
         'bill_cycle': 'str',
-        'initial_amount_due': 'decimal.Decimal',
-        'consume_amount': 'decimal.Decimal',
-        'refunds': 'decimal.Decimal',
-        'adjustments': 'decimal.Decimal',
-        'tax_amount': 'decimal.Decimal',
+        'initial_amount_due': 'float',
+        'consume_amount': 'float',
+        'refunds': 'float',
+        'adjustments': 'float',
+        'tax_amount': 'float',
         'currency': 'str'
     }
 
@@ -74,7 +74,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def bill_cycle(self):
         """Gets the bill_cycle of this ListPostpaidBillSumResponse.
 
-        |参数名称：结算周期，只有成功才返回这个参数。表示某年某月的账单汇总。格式：YYYY-MM| |参数约束及描述：结算周期，只有成功才返回这个参数。表示某年某月的账单汇总。格式：YYYY-MM|
+        账单所归属的月份。只有成功才返回这个参数。 格式：YYYY-MM
 
         :return: The bill_cycle of this ListPostpaidBillSumResponse.
         :rtype: str
@@ -85,7 +85,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def bill_cycle(self, bill_cycle):
         """Sets the bill_cycle of this ListPostpaidBillSumResponse.
 
-        |参数名称：结算周期，只有成功才返回这个参数。表示某年某月的账单汇总。格式：YYYY-MM| |参数约束及描述：结算周期，只有成功才返回这个参数。表示某年某月的账单汇总。格式：YYYY-MM|
+        账单所归属的月份。只有成功才返回这个参数。 格式：YYYY-MM
 
         :param bill_cycle: The bill_cycle of this ListPostpaidBillSumResponse.
         :type: str
@@ -96,10 +96,10 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def initial_amount_due(self):
         """Gets the initial_amount_due of this ListPostpaidBillSumResponse.
 
-        |参数名称：初始应还金额（含税）| |参数的约束及描述：初始应还金额（含税）|
+        账单中的应还金额（含税）。 应还金额（包含销项税）=消费金额+退款金额+调账金额
 
         :return: The initial_amount_due of this ListPostpaidBillSumResponse.
-        :rtype: decimal.Decimal
+        :rtype: float
         """
         return self._initial_amount_due
 
@@ -107,10 +107,10 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def initial_amount_due(self, initial_amount_due):
         """Sets the initial_amount_due of this ListPostpaidBillSumResponse.
 
-        |参数名称：初始应还金额（含税）| |参数的约束及描述：初始应还金额（含税）|
+        账单中的应还金额（含税）。 应还金额（包含销项税）=消费金额+退款金额+调账金额
 
         :param initial_amount_due: The initial_amount_due of this ListPostpaidBillSumResponse.
-        :type: decimal.Decimal
+        :type: float
         """
         self._initial_amount_due = initial_amount_due
 
@@ -118,10 +118,10 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def consume_amount(self):
         """Gets the consume_amount of this ListPostpaidBillSumResponse.
 
-        |参数名称：消费金额| |参数的约束及描述：消费金额|
+        账单中的消费金额。
 
         :return: The consume_amount of this ListPostpaidBillSumResponse.
-        :rtype: decimal.Decimal
+        :rtype: float
         """
         return self._consume_amount
 
@@ -129,10 +129,10 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def consume_amount(self, consume_amount):
         """Sets the consume_amount of this ListPostpaidBillSumResponse.
 
-        |参数名称：消费金额| |参数的约束及描述：消费金额|
+        账单中的消费金额。
 
         :param consume_amount: The consume_amount of this ListPostpaidBillSumResponse.
-        :type: decimal.Decimal
+        :type: float
         """
         self._consume_amount = consume_amount
 
@@ -140,10 +140,10 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def refunds(self):
         """Gets the refunds of this ListPostpaidBillSumResponse.
 
-        |参数名称：退款| |参数的约束及描述：退款|
+        账单中的退款金额。
 
         :return: The refunds of this ListPostpaidBillSumResponse.
-        :rtype: decimal.Decimal
+        :rtype: float
         """
         return self._refunds
 
@@ -151,10 +151,10 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def refunds(self, refunds):
         """Sets the refunds of this ListPostpaidBillSumResponse.
 
-        |参数名称：退款| |参数的约束及描述：退款|
+        账单中的退款金额。
 
         :param refunds: The refunds of this ListPostpaidBillSumResponse.
-        :type: decimal.Decimal
+        :type: float
         """
         self._refunds = refunds
 
@@ -162,10 +162,10 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def adjustments(self):
         """Gets the adjustments of this ListPostpaidBillSumResponse.
 
-        |参数名称：调账| |参数的约束及描述：调账|
+        账单中的调账金额，即伙伴在账期内的调账信息如：欠款核销金额等。
 
         :return: The adjustments of this ListPostpaidBillSumResponse.
-        :rtype: decimal.Decimal
+        :rtype: float
         """
         return self._adjustments
 
@@ -173,10 +173,10 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def adjustments(self, adjustments):
         """Sets the adjustments of this ListPostpaidBillSumResponse.
 
-        |参数名称：调账| |参数的约束及描述：调账|
+        账单中的调账金额，即伙伴在账期内的调账信息如：欠款核销金额等。
 
         :param adjustments: The adjustments of this ListPostpaidBillSumResponse.
-        :type: decimal.Decimal
+        :type: float
         """
         self._adjustments = adjustments
 
@@ -184,10 +184,10 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def tax_amount(self):
         """Gets the tax_amount of this ListPostpaidBillSumResponse.
 
-        |参数名称：销项税金额| |参数的约束及描述：销项税金额|
+        账单中的销项税金额，销项税不计入应还金额。
 
         :return: The tax_amount of this ListPostpaidBillSumResponse.
-        :rtype: decimal.Decimal
+        :rtype: float
         """
         return self._tax_amount
 
@@ -195,10 +195,10 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def tax_amount(self, tax_amount):
         """Sets the tax_amount of this ListPostpaidBillSumResponse.
 
-        |参数名称：销项税金额| |参数的约束及描述：销项税金额|
+        账单中的销项税金额，销项税不计入应还金额。
 
         :param tax_amount: The tax_amount of this ListPostpaidBillSumResponse.
-        :type: decimal.Decimal
+        :type: float
         """
         self._tax_amount = tax_amount
 
@@ -206,7 +206,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def currency(self):
         """Gets the currency of this ListPostpaidBillSumResponse.
 
-        |参数名称：只有成功才返回这个参数。人民币：CNY美金：USD| |参数约束及描述：只有成功才返回这个参数。人民币：CNY美金：USD|
+        只有成功才返回这个参数。 美金：USD
 
         :return: The currency of this ListPostpaidBillSumResponse.
         :rtype: str
@@ -217,7 +217,7 @@ class ListPostpaidBillSumResponse(SdkResponse):
     def currency(self, currency):
         """Sets the currency of this ListPostpaidBillSumResponse.
 
-        |参数名称：只有成功才返回这个参数。人民币：CNY美金：USD| |参数约束及描述：只有成功才返回这个参数。人民币：CNY美金：USD|
+        只有成功才返回这个参数。 美金：USD
 
         :param currency: The currency of this ListPostpaidBillSumResponse.
         :type: str

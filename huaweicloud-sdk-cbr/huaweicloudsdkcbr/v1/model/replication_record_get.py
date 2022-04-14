@@ -28,7 +28,7 @@ class ReplicationRecordGet:
         'destination_project_id': 'str',
         'destination_region': 'str',
         'destination_vault_id': 'str',
-        'extra_info': 'str',
+        'extra_info': 'ReplicationRecordsExtraInfo',
         'id': 'str',
         'source_backup_id': 'str',
         'source_checkpoint_id': 'str',
@@ -240,10 +240,9 @@ class ReplicationRecordGet:
     def extra_info(self):
         """Gets the extra_info of this ReplicationRecordGet.
 
-        复制附加信息
 
         :return: The extra_info of this ReplicationRecordGet.
-        :rtype: str
+        :rtype: ReplicationRecordsExtraInfo
         """
         return self._extra_info
 
@@ -251,10 +250,9 @@ class ReplicationRecordGet:
     def extra_info(self, extra_info):
         """Sets the extra_info of this ReplicationRecordGet.
 
-        复制附加信息
 
         :param extra_info: The extra_info of this ReplicationRecordGet.
-        :type: str
+        :type: ReplicationRecordsExtraInfo
         """
         self._extra_info = extra_info
 

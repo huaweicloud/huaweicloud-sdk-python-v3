@@ -113,6 +113,71 @@ class IecClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def associate_subnet(self, request):
+        """路由表关联子网
+
+        路由表关联子网
+
+        :param AssociateSubnetRequest request
+        :return: AssociateSubnetResponse
+        """
+        return self.associate_subnet_with_http_info(request)
+
+    def associate_subnet_with_http_info(self, request):
+        """路由表关联子网
+
+        路由表关联子网
+
+        :param AssociateSubnetRequest request
+        :return: AssociateSubnetResponse
+        """
+
+        all_params = ['routetable_id', 'associate_subnet_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/routetables/{routetable_id}/associate-subnets',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AssociateSubnetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def batch_reboot_instance(self, request):
         """批量重启边缘实例
 
@@ -556,6 +621,134 @@ class IecClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def create_routes(self, request):
+        """创建路由
+
+        创建路由
+
+        :param CreateRoutesRequest request
+        :return: CreateRoutesResponse
+        """
+        return self.create_routes_with_http_info(request)
+
+    def create_routes_with_http_info(self, request):
+        """创建路由
+
+        创建路由
+
+        :param CreateRoutesRequest request
+        :return: CreateRoutesResponse
+        """
+
+        all_params = ['routetable_id', 'create_routes_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/routetables/{routetable_id}/add-routes',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateRoutesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def create_routetable(self, request):
+        """创建路由表
+
+        创建路由表
+
+        :param CreateRoutetableRequest request
+        :return: CreateRoutetableResponse
+        """
+        return self.create_routetable_with_http_info(request)
+
+    def create_routetable_with_http_info(self, request):
+        """创建路由表
+
+        创建路由表
+
+        :param CreateRoutetableRequest request
+        :return: CreateRoutetableResponse
+        """
+
+        all_params = ['create_routetable_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/routetables',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateRoutetableResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def create_security_group(self, request):
         """创建边缘安全组
 
@@ -811,7 +1004,7 @@ class IecClient(Client):
     def delete_edge_cloud(self, request):
         """删除边缘业务
 
-        删除边缘业务以及其下边缘实例。
+        删除边缘业务。
 
         :param DeleteEdgeCloudRequest request
         :return: DeleteEdgeCloudResponse
@@ -821,7 +1014,7 @@ class IecClient(Client):
     def delete_edge_cloud_with_http_info(self, request):
         """删除边缘业务
 
-        删除边缘业务以及其下边缘实例。
+        删除边缘业务。
 
         :param DeleteEdgeCloudRequest request
         :return: DeleteEdgeCloudResponse
@@ -1125,6 +1318,134 @@ class IecClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def delete_routes(self, request):
+        """删除路由
+
+        删除路由
+
+        :param DeleteRoutesRequest request
+        :return: DeleteRoutesResponse
+        """
+        return self.delete_routes_with_http_info(request)
+
+    def delete_routes_with_http_info(self, request):
+        """删除路由
+
+        删除路由
+
+        :param DeleteRoutesRequest request
+        :return: DeleteRoutesResponse
+        """
+
+        all_params = ['routetable_id', 'delete_routes_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/routetables/{routetable_id}/delete-routes',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteRoutesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def delete_routetable(self, request):
+        """删除路由表
+
+        删除路由表
+
+        :param DeleteRoutetableRequest request
+        :return: DeleteRoutetableResponse
+        """
+        return self.delete_routetable_with_http_info(request)
+
+    def delete_routetable_with_http_info(self, request):
+        """删除路由表
+
+        删除路由表
+
+        :param DeleteRoutetableRequest request
+        :return: DeleteRoutetableResponse
+        """
+
+        all_params = ['routetable_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/routetables/{routetable_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteRoutetableResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def delete_security_group(self, request):
         """删除安全组
 
@@ -1371,6 +1692,71 @@ class IecClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteVpcResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def disassociate_subnet(self, request):
+        """路由表解关联子网
+
+        路由表解关联子网
+
+        :param DisassociateSubnetRequest request
+        :return: DisassociateSubnetResponse
+        """
+        return self.disassociate_subnet_with_http_info(request)
+
+    def disassociate_subnet_with_http_info(self, request):
+        """路由表解关联子网
+
+        路由表解关联子网
+
+        :param DisassociateSubnetRequest request
+        :return: DisassociateSubnetResponse
+        """
+
+        all_params = ['routetable_id', 'disassociate_subnet_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/routetables/{routetable_id}/disassociate-subnets',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DisassociateSubnetResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2181,6 +2567,203 @@ class IecClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def list_related_routetables(self, request):
+        """查询子网关联的路由表
+
+        查询子网关联的路由表。
+
+        :param ListRelatedRoutetablesRequest request
+        :return: ListRelatedRoutetablesResponse
+        """
+        return self.list_related_routetables_with_http_info(request)
+
+    def list_related_routetables_with_http_info(self, request):
+        """查询子网关联的路由表
+
+        查询子网关联的路由表。
+
+        :param ListRelatedRoutetablesRequest request
+        :return: ListRelatedRoutetablesResponse
+        """
+
+        all_params = ['subnet_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'subnet_id' in local_var_params:
+            path_params['subnet_id'] = local_var_params['subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/subnets/{subnet_id}/routetables',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRelatedRoutetablesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_routes(self, request):
+        """查询路由列表
+
+        查询路由列表
+
+        :param ListRoutesRequest request
+        :return: ListRoutesResponse
+        """
+        return self.list_routes_with_http_info(request)
+
+    def list_routes_with_http_info(self, request):
+        """查询路由列表
+
+        查询路由列表
+
+        :param ListRoutesRequest request
+        :return: ListRoutesResponse
+        """
+
+        all_params = ['routetable_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/routetables/{routetable_id}/routes',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRoutesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def list_routetables(self, request):
+        """查询路由表列表
+
+        查询路由列表
+
+        :param ListRoutetablesRequest request
+        :return: ListRoutetablesResponse
+        """
+        return self.list_routetables_with_http_info(request)
+
+    def list_routetables_with_http_info(self, request):
+        """查询路由表列表
+
+        查询路由列表
+
+        :param ListRoutetablesRequest request
+        :return: ListRoutetablesResponse
+        """
+
+        all_params = ['id', 'limit', 'name', 'offset', 'vpc_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/routetables',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRoutetablesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def list_security_group_rules(self, request):
         """查询安全组规则列表
 
@@ -2906,6 +3489,69 @@ class IecClient(Client):
             request_type=request.__class__.__name__)
 
 
+    def show_routetable(self, request):
+        """查询路由表详情
+
+        查询路由表详情
+
+        :param ShowRoutetableRequest request
+        :return: ShowRoutetableResponse
+        """
+        return self.show_routetable_with_http_info(request)
+
+    def show_routetable_with_http_info(self, request):
+        """查询路由表详情
+
+        查询路由表详情
+
+        :param ShowRoutetableRequest request
+        :return: ShowRoutetableResponse
+        """
+
+        all_params = ['routetable_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/routetables/{routetable_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRoutetableResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
     def show_security_group(self, request):
         """查询安全组详情
 
@@ -3345,6 +3991,136 @@ class IecClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdatePortResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_routes(self, request):
+        """更新路由
+
+        更新路由信息
+
+        :param UpdateRoutesRequest request
+        :return: UpdateRoutesResponse
+        """
+        return self.update_routes_with_http_info(request)
+
+    def update_routes_with_http_info(self, request):
+        """更新路由
+
+        更新路由信息
+
+        :param UpdateRoutesRequest request
+        :return: UpdateRoutesResponse
+        """
+
+        all_params = ['routetable_id', 'update_routes_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/routetables/{routetable_id}/update-routes',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateRoutesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+
+    def update_routetable(self, request):
+        """更新路由表
+
+        更新路由表基本信息
+
+        :param UpdateRoutetableRequest request
+        :return: UpdateRoutetableResponse
+        """
+        return self.update_routetable_with_http_info(request)
+
+    def update_routetable_with_http_info(self, request):
+        """更新路由表
+
+        更新路由表基本信息
+
+        :param UpdateRoutetableRequest request
+        :return: UpdateRoutetableResponse
+        """
+
+        all_params = ['routetable_id', 'update_routetable_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'routetable_id' in local_var_params:
+            path_params['routetable_id'] = local_var_params['routetable_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/routetables/{routetable_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateRoutetableResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

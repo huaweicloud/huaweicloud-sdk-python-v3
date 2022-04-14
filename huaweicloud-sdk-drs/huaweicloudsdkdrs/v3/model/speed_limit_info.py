@@ -24,16 +24,18 @@ class SpeedLimitInfo:
     openapi_types = {
         'begin': 'str',
         'end': 'str',
-        'speed': 'str'
+        'speed': 'str',
+        'is_utc': 'bool'
     }
 
     attribute_map = {
         'begin': 'begin',
         'end': 'end',
-        'speed': 'speed'
+        'speed': 'speed',
+        'is_utc': 'is_utc'
     }
 
-    def __init__(self, begin=None, end=None, speed=None):
+    def __init__(self, begin=None, end=None, speed=None, is_utc=None):
         """SpeedLimitInfo - a model defined in huaweicloud sdk"""
         
         
@@ -41,11 +43,14 @@ class SpeedLimitInfo:
         self._begin = None
         self._end = None
         self._speed = None
+        self._is_utc = None
         self.discriminator = None
 
         self.begin = begin
         self.end = end
         self.speed = speed
+        if is_utc is not None:
+            self.is_utc = is_utc
 
     @property
     def begin(self):
@@ -112,6 +117,28 @@ class SpeedLimitInfo:
         :type: str
         """
         self._speed = speed
+
+    @property
+    def is_utc(self):
+        """Gets the is_utc of this SpeedLimitInfo.
+
+        是否为UTC时间
+
+        :return: The is_utc of this SpeedLimitInfo.
+        :rtype: bool
+        """
+        return self._is_utc
+
+    @is_utc.setter
+    def is_utc(self, is_utc):
+        """Sets the is_utc of this SpeedLimitInfo.
+
+        是否为UTC时间
+
+        :param is_utc: The is_utc of this SpeedLimitInfo.
+        :type: bool
+        """
+        self._is_utc = is_utc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

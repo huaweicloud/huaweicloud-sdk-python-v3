@@ -42,7 +42,8 @@ class ListBackupsRequest:
         'own_type': 'str',
         'member_status': 'str',
         'parent_id': 'str',
-        'used_percent': 'str'
+        'used_percent': 'str',
+        'show_replication': 'bool'
     }
 
     attribute_map = {
@@ -66,10 +67,11 @@ class ListBackupsRequest:
         'own_type': 'own_type',
         'member_status': 'member_status',
         'parent_id': 'parent_id',
-        'used_percent': 'used_percent'
+        'used_percent': 'used_percent',
+        'show_replication': 'show_replication'
     }
 
-    def __init__(self, checkpoint_id=None, dec=None, end_time=None, image_type=None, limit=None, marker=None, name=None, offset=None, resource_az=None, resource_id=None, resource_name=None, resource_type=None, sort=None, start_time=None, status=None, vault_id=None, enterprise_project_id=None, own_type=None, member_status=None, parent_id=None, used_percent=None):
+    def __init__(self, checkpoint_id=None, dec=None, end_time=None, image_type=None, limit=None, marker=None, name=None, offset=None, resource_az=None, resource_id=None, resource_name=None, resource_type=None, sort=None, start_time=None, status=None, vault_id=None, enterprise_project_id=None, own_type=None, member_status=None, parent_id=None, used_percent=None, show_replication=None):
         """ListBackupsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -95,6 +97,7 @@ class ListBackupsRequest:
         self._member_status = None
         self._parent_id = None
         self._used_percent = None
+        self._show_replication = None
         self.discriminator = None
 
         if checkpoint_id is not None:
@@ -139,6 +142,8 @@ class ListBackupsRequest:
             self.parent_id = parent_id
         if used_percent is not None:
             self.used_percent = used_percent
+        if show_replication is not None:
+            self.show_replication = show_replication
 
     @property
     def checkpoint_id(self):
@@ -452,7 +457,7 @@ class ListBackupsRequest:
     def status(self):
         """Gets the status of this ListBackupsRequest.
 
-        状态
+        状态。 调用API时，支持通过传多个status值进行过滤。例如：status=available&status=error
 
         :return: The status of this ListBackupsRequest.
         :rtype: str
@@ -463,7 +468,7 @@ class ListBackupsRequest:
     def status(self, status):
         """Sets the status of this ListBackupsRequest.
 
-        状态
+        状态。 调用API时，支持通过传多个status值进行过滤。例如：status=available&status=error
 
         :param status: The status of this ListBackupsRequest.
         :type: str
@@ -601,6 +606,28 @@ class ListBackupsRequest:
         :type: str
         """
         self._used_percent = used_percent
+
+    @property
+    def show_replication(self):
+        """Gets the show_replication of this ListBackupsRequest.
+
+        是否返回复制记录
+
+        :return: The show_replication of this ListBackupsRequest.
+        :rtype: bool
+        """
+        return self._show_replication
+
+    @show_replication.setter
+    def show_replication(self, show_replication):
+        """Sets the show_replication of this ListBackupsRequest.
+
+        是否返回复制记录
+
+        :param show_replication: The show_replication of this ListBackupsRequest.
+        :type: bool
+        """
+        self._show_replication = show_replication
 
     def to_dict(self):
         """Returns the model properties as a dict"""

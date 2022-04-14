@@ -25,19 +25,17 @@ class ShowCustomerOrderDetailsRequest:
         'x_language': 'str',
         'order_id': 'str',
         'limit': 'int',
-        'offset': 'int',
-        'indirect_partner_id': 'str'
+        'offset': 'int'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'order_id': 'order_id',
         'limit': 'limit',
-        'offset': 'offset',
-        'indirect_partner_id': 'indirect_partner_id'
+        'offset': 'offset'
     }
 
-    def __init__(self, x_language=None, order_id=None, limit=None, offset=None, indirect_partner_id=None):
+    def __init__(self, x_language=None, order_id=None, limit=None, offset=None):
         """ShowCustomerOrderDetailsRequest - a model defined in huaweicloud sdk"""
         
         
@@ -46,7 +44,6 @@ class ShowCustomerOrderDetailsRequest:
         self._order_id = None
         self._limit = None
         self._offset = None
-        self._indirect_partner_id = None
         self.discriminator = None
 
         if x_language is not None:
@@ -56,14 +53,12 @@ class ShowCustomerOrderDetailsRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
-        if indirect_partner_id is not None:
-            self.indirect_partner_id = indirect_partner_id
 
     @property
     def x_language(self):
         """Gets the x_language of this ShowCustomerOrderDetailsRequest.
 
-        |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US缺省为zh_CN|
+        语言：中文：zh_CN 英文：en_US 缺省为zh_CN|
 
         :return: The x_language of this ShowCustomerOrderDetailsRequest.
         :rtype: str
@@ -74,7 +69,7 @@ class ShowCustomerOrderDetailsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ShowCustomerOrderDetailsRequest.
 
-        |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US缺省为zh_CN|
+        语言：中文：zh_CN 英文：en_US 缺省为zh_CN|
 
         :param x_language: The x_language of this ShowCustomerOrderDetailsRequest.
         :type: str
@@ -85,7 +80,7 @@ class ShowCustomerOrderDetailsRequest:
     def order_id(self):
         """Gets the order_id of this ShowCustomerOrderDetailsRequest.
 
-        |参数名称：订单ID。| |参数的约束及描述：|
+        订单ID。
 
         :return: The order_id of this ShowCustomerOrderDetailsRequest.
         :rtype: str
@@ -96,7 +91,7 @@ class ShowCustomerOrderDetailsRequest:
     def order_id(self, order_id):
         """Sets the order_id of this ShowCustomerOrderDetailsRequest.
 
-        |参数名称：订单ID。| |参数的约束及描述：|
+        订单ID。
 
         :param order_id: The order_id of this ShowCustomerOrderDetailsRequest.
         :type: str
@@ -107,7 +102,7 @@ class ShowCustomerOrderDetailsRequest:
     def limit(self):
         """Gets the limit of this ShowCustomerOrderDetailsRequest.
 
-        |参数名称：每次查询的大小，默认为10| |参数的约束及描述：|
+        每页大小。默认值为10。
 
         :return: The limit of this ShowCustomerOrderDetailsRequest.
         :rtype: int
@@ -118,7 +113,7 @@ class ShowCustomerOrderDetailsRequest:
     def limit(self, limit):
         """Sets the limit of this ShowCustomerOrderDetailsRequest.
 
-        |参数名称：每次查询的大小，默认为10| |参数的约束及描述：|
+        每页大小。默认值为10。
 
         :param limit: The limit of this ShowCustomerOrderDetailsRequest.
         :type: int
@@ -129,7 +124,7 @@ class ShowCustomerOrderDetailsRequest:
     def offset(self):
         """Gets the offset of this ShowCustomerOrderDetailsRequest.
 
-        |参数名称：偏移量，从0开始，默认为0| |参数的约束及描述：|
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :return: The offset of this ShowCustomerOrderDetailsRequest.
         :rtype: int
@@ -140,34 +135,12 @@ class ShowCustomerOrderDetailsRequest:
     def offset(self, offset):
         """Sets the offset of this ShowCustomerOrderDetailsRequest.
 
-        |参数名称：偏移量，从0开始，默认为0| |参数的约束及描述：|
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ShowCustomerOrderDetailsRequest.
         :type: int
         """
         self._offset = offset
-
-    @property
-    def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this ShowCustomerOrderDetailsRequest.
-
-        |参数名称：二级经销商ID，只有伙伴用自身token调用的时候，该字段才有含义。| |参数的约束及描述：|
-
-        :return: The indirect_partner_id of this ShowCustomerOrderDetailsRequest.
-        :rtype: str
-        """
-        return self._indirect_partner_id
-
-    @indirect_partner_id.setter
-    def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this ShowCustomerOrderDetailsRequest.
-
-        |参数名称：二级经销商ID，只有伙伴用自身token调用的时候，该字段才有含义。| |参数的约束及描述：|
-
-        :param indirect_partner_id: The indirect_partner_id of this ShowCustomerOrderDetailsRequest.
-        :type: str
-        """
-        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

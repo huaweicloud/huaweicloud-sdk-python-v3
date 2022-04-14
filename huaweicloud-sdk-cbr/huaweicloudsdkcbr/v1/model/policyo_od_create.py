@@ -243,7 +243,7 @@ class PolicyoODCreate:
     def timezone(self):
         """Gets the timezone of this PolicyoODCreate.
 
-        用户所在时区,格式形如UTC+08:00,若没有选择年备，月备，周备，日备中任一参数，则不能选择该参数。
+        用户所在时区,格式形如UTC+08:00, 若选择年备，月备，周备，日备中任一参数，则该参数不能为空。
 
         :return: The timezone of this PolicyoODCreate.
         :rtype: str
@@ -254,7 +254,7 @@ class PolicyoODCreate:
     def timezone(self, timezone):
         """Sets the timezone of this PolicyoODCreate.
 
-        用户所在时区,格式形如UTC+08:00,若没有选择年备，月备，周备，日备中任一参数，则不能选择该参数。
+        用户所在时区,格式形如UTC+08:00, 若选择年备，月备，周备，日备中任一参数，则该参数不能为空。
 
         :param timezone: The timezone of this PolicyoODCreate.
         :type: str

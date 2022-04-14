@@ -28,6 +28,7 @@ class UpdateFunctionConfigRequestBody:
         'handler': 'str',
         'memory_size': 'int',
         'user_data': 'str',
+        'encrypted_user_data': 'str',
         'xrole': 'str',
         'app_xrole': 'str',
         'description': 'str',
@@ -48,6 +49,7 @@ class UpdateFunctionConfigRequestBody:
         'handler': 'handler',
         'memory_size': 'memory_size',
         'user_data': 'user_data',
+        'encrypted_user_data': 'encrypted_user_data',
         'xrole': 'xrole',
         'app_xrole': 'app_xrole',
         'description': 'description',
@@ -61,7 +63,7 @@ class UpdateFunctionConfigRequestBody:
         'is_stateful_function': 'is_stateful_function'
     }
 
-    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, is_stateful_function=None):
+    def __init__(self, func_name=None, runtime=None, timeout=None, handler=None, memory_size=None, user_data=None, encrypted_user_data=None, xrole=None, app_xrole=None, description=None, func_vpc=None, mount_config=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, is_stateful_function=None):
         """UpdateFunctionConfigRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -72,6 +74,7 @@ class UpdateFunctionConfigRequestBody:
         self._handler = None
         self._memory_size = None
         self._user_data = None
+        self._encrypted_user_data = None
         self._xrole = None
         self._app_xrole = None
         self._description = None
@@ -92,6 +95,8 @@ class UpdateFunctionConfigRequestBody:
         self.memory_size = memory_size
         if user_data is not None:
             self.user_data = user_data
+        if encrypted_user_data is not None:
+            self.encrypted_user_data = encrypted_user_data
         if xrole is not None:
             self.xrole = xrole
         if app_xrole is not None:
@@ -246,6 +251,28 @@ class UpdateFunctionConfigRequestBody:
         :type: str
         """
         self._user_data = user_data
+
+    @property
+    def encrypted_user_data(self):
+        """Gets the encrypted_user_data of this UpdateFunctionConfigRequestBody.
+
+        用户自定义的name/value信息，用于需要加密的配置。
+
+        :return: The encrypted_user_data of this UpdateFunctionConfigRequestBody.
+        :rtype: str
+        """
+        return self._encrypted_user_data
+
+    @encrypted_user_data.setter
+    def encrypted_user_data(self, encrypted_user_data):
+        """Sets the encrypted_user_data of this UpdateFunctionConfigRequestBody.
+
+        用户自定义的name/value信息，用于需要加密的配置。
+
+        :param encrypted_user_data: The encrypted_user_data of this UpdateFunctionConfigRequestBody.
+        :type: str
+        """
+        self._encrypted_user_data = encrypted_user_data
 
     @property
     def xrole(self):

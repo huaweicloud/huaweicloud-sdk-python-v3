@@ -58,7 +58,7 @@ class UrlAuthGetBody:
     def status(self):
         """Gets the status of this UrlAuthGetBody.
 
-        A/B/C类防盗链开关（\"off\"/\"on\"）。
+        A/B/C类防盗链开关（on：开启，off：关闭）。
 
         :return: The status of this UrlAuthGetBody.
         :rtype: str
@@ -69,7 +69,7 @@ class UrlAuthGetBody:
     def status(self, status):
         """Sets the status of this UrlAuthGetBody.
 
-        A/B/C类防盗链开关（\"off\"/\"on\"）。
+        A/B/C类防盗链开关（on：开启，off：关闭）。
 
         :param status: The status of this UrlAuthGetBody.
         :type: str

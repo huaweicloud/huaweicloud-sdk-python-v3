@@ -148,6 +148,7 @@ from huaweicloudsdkdcs.v2.model.query_redis_config import QueryRedisConfig
 from huaweicloudsdkdcs.v2.model.query_tenant_quota_resp_quotas import QueryTenantQuotaRespQuotas
 from huaweicloudsdkdcs.v2.model.records_response import RecordsResponse
 from huaweicloudsdkdcs.v2.model.redis_config import RedisConfig
+from huaweicloudsdkdcs.v2.model.rename_command_resp import RenameCommandResp
 from huaweicloudsdkdcs.v2.model.resize_instance_body import ResizeInstanceBody
 from huaweicloudsdkdcs.v2.model.resize_instance_request import ResizeInstanceRequest
 from huaweicloudsdkdcs.v2.model.resize_instance_response import ResizeInstanceResponse

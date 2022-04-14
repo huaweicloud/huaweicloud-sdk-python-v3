@@ -25,17 +25,21 @@ class RuleCondition:
         'type': 'str',
         'device_property_condition': 'DeviceDataCondition',
         'simple_timer_condition': 'SimpleTimerType',
-        'daily_timer_condition': 'DailyTimerType'
+        'daily_timer_condition': 'DailyTimerType',
+        'device_message_condition': 'DeviceMessageCondition',
+        'device_status_condition': 'DeviceStatusCondition'
     }
 
     attribute_map = {
         'type': 'type',
         'device_property_condition': 'device_property_condition',
         'simple_timer_condition': 'simple_timer_condition',
-        'daily_timer_condition': 'daily_timer_condition'
+        'daily_timer_condition': 'daily_timer_condition',
+        'device_message_condition': 'device_message_condition',
+        'device_status_condition': 'device_status_condition'
     }
 
-    def __init__(self, type=None, device_property_condition=None, simple_timer_condition=None, daily_timer_condition=None):
+    def __init__(self, type=None, device_property_condition=None, simple_timer_condition=None, daily_timer_condition=None, device_message_condition=None, device_status_condition=None):
         """RuleCondition - a model defined in huaweicloud sdk"""
         
         
@@ -44,6 +48,8 @@ class RuleCondition:
         self._device_property_condition = None
         self._simple_timer_condition = None
         self._daily_timer_condition = None
+        self._device_message_condition = None
+        self._device_status_condition = None
         self.discriminator = None
 
         self.type = type
@@ -53,6 +59,10 @@ class RuleCondition:
             self.simple_timer_condition = simple_timer_condition
         if daily_timer_condition is not None:
             self.daily_timer_condition = daily_timer_condition
+        if device_message_condition is not None:
+            self.device_message_condition = device_message_condition
+        if device_status_condition is not None:
+            self.device_status_condition = device_status_condition
 
     @property
     def type(self):
@@ -135,6 +145,46 @@ class RuleCondition:
         :type: DailyTimerType
         """
         self._daily_timer_condition = daily_timer_condition
+
+    @property
+    def device_message_condition(self):
+        """Gets the device_message_condition of this RuleCondition.
+
+
+        :return: The device_message_condition of this RuleCondition.
+        :rtype: DeviceMessageCondition
+        """
+        return self._device_message_condition
+
+    @device_message_condition.setter
+    def device_message_condition(self, device_message_condition):
+        """Sets the device_message_condition of this RuleCondition.
+
+
+        :param device_message_condition: The device_message_condition of this RuleCondition.
+        :type: DeviceMessageCondition
+        """
+        self._device_message_condition = device_message_condition
+
+    @property
+    def device_status_condition(self):
+        """Gets the device_status_condition of this RuleCondition.
+
+
+        :return: The device_status_condition of this RuleCondition.
+        :rtype: DeviceStatusCondition
+        """
+        return self._device_status_condition
+
+    @device_status_condition.setter
+    def device_status_condition(self, device_status_condition):
+        """Sets the device_status_condition of this RuleCondition.
+
+
+        :param device_status_condition: The device_status_condition of this RuleCondition.
+        :type: DeviceStatusCondition
+        """
+        self._device_status_condition = device_status_condition
 
     def to_dict(self):
         """Returns the model properties as a dict"""

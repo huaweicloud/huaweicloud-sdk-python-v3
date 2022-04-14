@@ -49,7 +49,7 @@ class ListResourceTypesResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListResourceTypesResponse.
 
-        |参数名称：总记录数| |参数约束以及描述：总记录数|
+        总数。
 
         :return: The total_count of this ListResourceTypesResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ListResourceTypesResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListResourceTypesResponse.
 
-        |参数名称：总记录数| |参数约束以及描述：总记录数|
+        总数。
 
         :param total_count: The total_count of this ListResourceTypesResponse.
         :type: int
@@ -71,7 +71,7 @@ class ListResourceTypesResponse(SdkResponse):
     def resource_types(self):
         """Gets the resource_types of this ListResourceTypesResponse.
 
-        |参数名称：资源类型信息| |参数约束以及描述：资源类型信息|
+        资源类型信息列表，具体请参见表3。
 
         :return: The resource_types of this ListResourceTypesResponse.
         :rtype: list[ResourceTypes]
@@ -82,7 +82,7 @@ class ListResourceTypesResponse(SdkResponse):
     def resource_types(self, resource_types):
         """Sets the resource_types of this ListResourceTypesResponse.
 
-        |参数名称：资源类型信息| |参数约束以及描述：资源类型信息|
+        资源类型信息列表，具体请参见表3。
 
         :param resource_types: The resource_types of this ListResourceTypesResponse.
         :type: list[ResourceTypes]

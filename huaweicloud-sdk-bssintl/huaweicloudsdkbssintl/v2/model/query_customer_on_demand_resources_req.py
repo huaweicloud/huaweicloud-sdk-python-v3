@@ -83,7 +83,7 @@ class QueryCustomerOnDemandResourcesReq:
     def customer_id(self):
         """Gets the customer_id of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：所属的客户ID。| |参数约束及描述：所属的客户ID。|
+        客户账号ID。 您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_id of this QueryCustomerOnDemandResourcesReq.
         :rtype: str
@@ -94,7 +94,7 @@ class QueryCustomerOnDemandResourcesReq:
     def customer_id(self, customer_id):
         """Sets the customer_id of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：所属的客户ID。| |参数约束及描述：所属的客户ID。|
+        客户账号ID。 您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this QueryCustomerOnDemandResourcesReq.
         :type: str
@@ -105,7 +105,7 @@ class QueryCustomerOnDemandResourcesReq:
     def region_code(self):
         """Gets the region_code of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :return: The region_code of this QueryCustomerOnDemandResourcesReq.
         :rtype: str
@@ -116,7 +116,7 @@ class QueryCustomerOnDemandResourcesReq:
     def region_code(self, region_code):
         """Sets the region_code of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。| |参数约束及描述：云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点地区和终端节点对应云服务的“区域”列的值。|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this QueryCustomerOnDemandResourcesReq.
         :type: str
@@ -127,7 +127,7 @@ class QueryCustomerOnDemandResourcesReq:
     def service_type_code(self):
         """Gets the service_type_code of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :return: The service_type_code of this QueryCustomerOnDemandResourcesReq.
         :rtype: str
@@ -138,7 +138,7 @@ class QueryCustomerOnDemandResourcesReq:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。| |参数约束及描述：云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。具体请参见云服务类型云服务类型云服务类型云服务类型。|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this QueryCustomerOnDemandResourcesReq.
         :type: str
@@ -149,7 +149,7 @@ class QueryCustomerOnDemandResourcesReq:
     def resource_ids(self):
         """Gets the resource_ids of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：资源ID批量查询| |参数约束以及描述：用于查询指定资源ID对应的资源。最多支持同时传递50个Id的列表。|
+        资源ID批量查询。 用于查询指定资源ID对应的资源。 最多支持同时传递50个ID的列表。
 
         :return: The resource_ids of this QueryCustomerOnDemandResourcesReq.
         :rtype: list[str]
@@ -160,7 +160,7 @@ class QueryCustomerOnDemandResourcesReq:
     def resource_ids(self, resource_ids):
         """Sets the resource_ids of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：资源ID批量查询| |参数约束以及描述：用于查询指定资源ID对应的资源。最多支持同时传递50个Id的列表。|
+        资源ID批量查询。 用于查询指定资源ID对应的资源。 最多支持同时传递50个ID的列表。
 
         :param resource_ids: The resource_ids of this QueryCustomerOnDemandResourcesReq.
         :type: list[str]
@@ -171,7 +171,7 @@ class QueryCustomerOnDemandResourcesReq:
     def effective_time_begin(self):
         """Gets the effective_time_begin of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：生效时间的开始时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：生效时间的开始时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        生效时间的开始时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The effective_time_begin of this QueryCustomerOnDemandResourcesReq.
         :rtype: str
@@ -182,7 +182,7 @@ class QueryCustomerOnDemandResourcesReq:
     def effective_time_begin(self, effective_time_begin):
         """Sets the effective_time_begin of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：生效时间的开始时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：生效时间的开始时间。UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        生效时间的开始时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param effective_time_begin: The effective_time_begin of this QueryCustomerOnDemandResourcesReq.
         :type: str
@@ -193,7 +193,7 @@ class QueryCustomerOnDemandResourcesReq:
     def effective_time_end(self):
         """Gets the effective_time_end of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：生效时间的结束时间UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：生效时间的结束时间UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        生效时间的结束时间 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :return: The effective_time_end of this QueryCustomerOnDemandResourcesReq.
         :rtype: str
@@ -204,7 +204,7 @@ class QueryCustomerOnDemandResourcesReq:
     def effective_time_end(self, effective_time_end):
         """Sets the effective_time_end of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：生效时间的结束时间UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。| |参数约束及描述：生效时间的结束时间UTC时间，格式：yyyy-MM-ddTHH:mm:ssZ，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。|
+        生效时间的结束时间 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。
 
         :param effective_time_end: The effective_time_end of this QueryCustomerOnDemandResourcesReq.
         :type: str
@@ -215,7 +215,7 @@ class QueryCustomerOnDemandResourcesReq:
     def offset(self):
         """Gets the offset of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：偏移量，从0开始。默认值：0| |参数的约束及描述：偏移量，从0开始。默认值：0|
+        偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :return: The offset of this QueryCustomerOnDemandResourcesReq.
         :rtype: int
@@ -226,7 +226,7 @@ class QueryCustomerOnDemandResourcesReq:
     def offset(self, offset):
         """Sets the offset of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：偏移量，从0开始。默认值：0| |参数的约束及描述：偏移量，从0开始。默认值：0|
+        偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this QueryCustomerOnDemandResourcesReq.
         :type: int
@@ -237,7 +237,7 @@ class QueryCustomerOnDemandResourcesReq:
     def limit(self):
         """Gets the limit of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：一次查询的条数，默认10条。| |参数的约束及描述：一次查询的条数，默认10条。|
+        一次查询的条数，默认值为10。
 
         :return: The limit of this QueryCustomerOnDemandResourcesReq.
         :rtype: int
@@ -248,7 +248,7 @@ class QueryCustomerOnDemandResourcesReq:
     def limit(self, limit):
         """Sets the limit of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：一次查询的条数，默认10条。| |参数的约束及描述：一次查询的条数，默认10条。|
+        一次查询的条数，默认值为10。
 
         :param limit: The limit of this QueryCustomerOnDemandResourcesReq.
         :type: int
@@ -259,7 +259,7 @@ class QueryCustomerOnDemandResourcesReq:
     def status(self):
         """Gets the status of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：资源状态：1：正常（已开通）；2：宽限期；3：冻结中；4：变更中；5：正在关闭；6：已关闭。| |参数的约束及描述：资源状态：1：正常（已开通）；2：宽限期；3：冻结中；4：变更中；5：正在关闭；6：已关闭。|
+        资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭
 
         :return: The status of this QueryCustomerOnDemandResourcesReq.
         :rtype: int
@@ -270,7 +270,7 @@ class QueryCustomerOnDemandResourcesReq:
     def status(self, status):
         """Sets the status of this QueryCustomerOnDemandResourcesReq.
 
-        |参数名称：资源状态：1：正常（已开通）；2：宽限期；3：冻结中；4：变更中；5：正在关闭；6：已关闭。| |参数的约束及描述：资源状态：1：正常（已开通）；2：宽限期；3：冻结中；4：变更中；5：正在关闭；6：已关闭。|
+        资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭
 
         :param status: The status of this QueryCustomerOnDemandResourcesReq.
         :type: int

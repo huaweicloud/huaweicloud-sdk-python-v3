@@ -24,41 +24,41 @@ class ListServiceResourcesRequest:
     openapi_types = {
         'x_language': 'str',
         'service_type_code': 'str',
-        'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'service_type_code': 'service_type_code',
-        'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, x_language=None, service_type_code=None, limit=None, offset=None):
+    def __init__(self, x_language=None, service_type_code=None, offset=None, limit=None):
         """ListServiceResourcesRequest - a model defined in huaweicloud sdk"""
         
         
 
         self._x_language = None
         self._service_type_code = None
-        self._limit = None
         self._offset = None
+        self._limit = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
         self.service_type_code = service_type_code
-        if limit is not None:
-            self.limit = limit
         if offset is not None:
             self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def x_language(self):
         """Gets the x_language of this ListServiceResourcesRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
         :return: The x_language of this ListServiceResourcesRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class ListServiceResourcesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListServiceResourcesRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
         :param x_language: The x_language of this ListServiceResourcesRequest.
         :type: str
@@ -80,7 +80,7 @@ class ListServiceResourcesRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListServiceResourcesRequest.
 
-        |参数名称：云服务类型编码| |参数的约束及描述：|
+        云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :return: The service_type_code of this ListServiceResourcesRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class ListServiceResourcesRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListServiceResourcesRequest.
 
-        |参数名称：云服务类型编码| |参数的约束及描述：|
+        云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param service_type_code: The service_type_code of this ListServiceResourcesRequest.
         :type: str
@@ -99,32 +99,10 @@ class ListServiceResourcesRequest:
         self._service_type_code = service_type_code
 
     @property
-    def limit(self):
-        """Gets the limit of this ListServiceResourcesRequest.
-
-        |参数名称：每次查询的数量| |参数的约束及描述：|
-
-        :return: The limit of this ListServiceResourcesRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListServiceResourcesRequest.
-
-        |参数名称：每次查询的数量| |参数的约束及描述：|
-
-        :param limit: The limit of this ListServiceResourcesRequest.
-        :type: int
-        """
-        self._limit = limit
-
-    @property
     def offset(self):
         """Gets the offset of this ListServiceResourcesRequest.
 
-        |参数名称：偏移量| |参数的约束及描述：|
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :return: The offset of this ListServiceResourcesRequest.
         :rtype: int
@@ -135,12 +113,34 @@ class ListServiceResourcesRequest:
     def offset(self, offset):
         """Sets the offset of this ListServiceResourcesRequest.
 
-        |参数名称：偏移量| |参数的约束及描述：|
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListServiceResourcesRequest.
         :type: int
         """
         self._offset = offset
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListServiceResourcesRequest.
+
+        每次查询的数量，默认值为10。
+
+        :return: The limit of this ListServiceResourcesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListServiceResourcesRequest.
+
+        每次查询的数量，默认值为10。
+
+        :param limit: The limit of this ListServiceResourcesRequest.
+        :type: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

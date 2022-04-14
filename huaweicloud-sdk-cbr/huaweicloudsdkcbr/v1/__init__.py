@@ -32,6 +32,7 @@ from huaweicloudsdkcbr.v1.model.billing import Billing
 from huaweicloudsdkcbr.v1.model.billing_create import BillingCreate
 from huaweicloudsdkcbr.v1.model.billing_update import BillingUpdate
 from huaweicloudsdkcbr.v1.model.bulk_create_and_delete_vault_tags_req import BulkCreateAndDeleteVaultTagsReq
+from huaweicloudsdkcbr.v1.model.cbc_order_result import CbcOrderResult
 from huaweicloudsdkcbr.v1.model.checkpoint_create import CheckpointCreate
 from huaweicloudsdkcbr.v1.model.checkpoint_create_skipped_resource import CheckpointCreateSkippedResource
 from huaweicloudsdkcbr.v1.model.checkpoint_extra_info_resp import CheckpointExtraInfoResp
@@ -111,6 +112,7 @@ from huaweicloudsdkcbr.v1.model.protectables_resp import ProtectablesResp
 from huaweicloudsdkcbr.v1.model.remove_vault_resource_request import RemoveVaultResourceRequest
 from huaweicloudsdkcbr.v1.model.remove_vault_resource_response import RemoveVaultResourceResponse
 from huaweicloudsdkcbr.v1.model.replication_record_get import ReplicationRecordGet
+from huaweicloudsdkcbr.v1.model.replication_records_extra_info import ReplicationRecordsExtraInfo
 from huaweicloudsdkcbr.v1.model.resource import Resource
 from huaweicloudsdkcbr.v1.model.resource_create import ResourceCreate
 from huaweicloudsdkcbr.v1.model.resource_extra_info import ResourceExtraInfo
@@ -163,6 +165,7 @@ from huaweicloudsdkcbr.v1.model.vault_backup_req import VaultBackupReq
 from huaweicloudsdkcbr.v1.model.vault_bind_rules import VaultBindRules
 from huaweicloudsdkcbr.v1.model.vault_create import VaultCreate
 from huaweicloudsdkcbr.v1.model.vault_create_req import VaultCreateReq
+from huaweicloudsdkcbr.v1.model.vault_create_resource import VaultCreateResource
 from huaweicloudsdkcbr.v1.model.vault_dissociate import VaultDissociate
 from huaweicloudsdkcbr.v1.model.vault_get import VaultGet
 from huaweicloudsdkcbr.v1.model.vault_migrate_resource_req import VaultMigrateResourceReq

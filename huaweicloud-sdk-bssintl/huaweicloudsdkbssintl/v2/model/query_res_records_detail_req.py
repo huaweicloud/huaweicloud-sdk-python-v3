@@ -108,7 +108,7 @@ class QueryResRecordsDetailReq:
     def cycle(self):
         """Gets the cycle of this QueryResRecordsDetailReq.
 
-        |参数名称：消费月份| |参数的约束及描述：该参数必填，最大长度：8，比如2018-12|
+        查询的资源详单所在账期，格式为YYYY-MM。 示例：2019-01。  说明： 不支持2019年1月份之前的资源详单。
 
         :return: The cycle of this QueryResRecordsDetailReq.
         :rtype: str
@@ -119,7 +119,7 @@ class QueryResRecordsDetailReq:
     def cycle(self, cycle):
         """Sets the cycle of this QueryResRecordsDetailReq.
 
-        |参数名称：消费月份| |参数的约束及描述：该参数必填，最大长度：8，比如2018-12|
+        查询的资源详单所在账期，格式为YYYY-MM。 示例：2019-01。  说明： 不支持2019年1月份之前的资源详单。
 
         :param cycle: The cycle of this QueryResRecordsDetailReq.
         :type: str
@@ -130,7 +130,7 @@ class QueryResRecordsDetailReq:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this QueryResRecordsDetailReq.
 
-        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填，最大长度：64，且只允许字符串，例如OBS的云服务类型编码为“hws.service.type.obs”|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :return: The cloud_service_type of this QueryResRecordsDetailReq.
         :rtype: str
@@ -141,7 +141,7 @@ class QueryResRecordsDetailReq:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this QueryResRecordsDetailReq.
 
-        |参数名称：云服务类型编码| |参数的约束及描述：该参数非必填，最大长度：64，且只允许字符串，例如OBS的云服务类型编码为“hws.service.type.obs”|
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
         :param cloud_service_type: The cloud_service_type of this QueryResRecordsDetailReq.
         :type: str
@@ -152,7 +152,7 @@ class QueryResRecordsDetailReq:
     def resource_type(self):
         """Gets the resource_type of this QueryResRecordsDetailReq.
 
-        |参数名称：资源类型编码| |参数的约束及描述：该参数非必填，最大长度：64，且只允许字符串，例如ECS的VM为“hws.resource.type.vm”|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :return: The resource_type of this QueryResRecordsDetailReq.
         :rtype: str
@@ -163,7 +163,7 @@ class QueryResRecordsDetailReq:
     def resource_type(self, resource_type):
         """Sets the resource_type of this QueryResRecordsDetailReq.
 
-        |参数名称：资源类型编码| |参数的约束及描述：该参数非必填，最大长度：64，且只允许字符串，例如ECS的VM为“hws.resource.type.vm”|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type: The resource_type of this QueryResRecordsDetailReq.
         :type: str
@@ -174,7 +174,7 @@ class QueryResRecordsDetailReq:
     def region(self):
         """Gets the region of this QueryResRecordsDetailReq.
 
-        |参数名称：云服务区编码| |参数的约束及描述：该参数非必填，最大长度：64，且只允许字符串，例如：“cn-north-1”|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :return: The region of this QueryResRecordsDetailReq.
         :rtype: str
@@ -185,7 +185,7 @@ class QueryResRecordsDetailReq:
     def region(self, region):
         """Sets the region of this QueryResRecordsDetailReq.
 
-        |参数名称：云服务区编码| |参数的约束及描述：该参数非必填，最大长度：64，且只允许字符串，例如：“cn-north-1”|
+        云服务区编码，例如：“ap-southeast-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region: The region of this QueryResRecordsDetailReq.
         :type: str
@@ -196,7 +196,7 @@ class QueryResRecordsDetailReq:
     def res_instance_id(self):
         """Gets the res_instance_id of this QueryResRecordsDetailReq.
 
-        |参数名称：资源实例ID| |参数的约束及描述：该参数非必填，最大长度：64，且只允字符串|
+        资源实例ID。
 
         :return: The res_instance_id of this QueryResRecordsDetailReq.
         :rtype: str
@@ -207,7 +207,7 @@ class QueryResRecordsDetailReq:
     def res_instance_id(self, res_instance_id):
         """Sets the res_instance_id of this QueryResRecordsDetailReq.
 
-        |参数名称：资源实例ID| |参数的约束及描述：该参数非必填，最大长度：64，且只允字符串|
+        资源实例ID。
 
         :param res_instance_id: The res_instance_id of this QueryResRecordsDetailReq.
         :type: str
@@ -218,7 +218,7 @@ class QueryResRecordsDetailReq:
     def charge_mode(self):
         """Gets the charge_mode of this QueryResRecordsDetailReq.
 
-        |参数名称：支付方式| |参数的约束及描述：该参数非必填，且只允许整数,1 : 包周期；3: 按需。10: 预留实例|
+        计费模式： 1 : 包年/包月3：按需10：预留实例
 
         :return: The charge_mode of this QueryResRecordsDetailReq.
         :rtype: int
@@ -229,7 +229,7 @@ class QueryResRecordsDetailReq:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this QueryResRecordsDetailReq.
 
-        |参数名称：支付方式| |参数的约束及描述：该参数非必填，且只允许整数,1 : 包周期；3: 按需。10: 预留实例|
+        计费模式： 1 : 包年/包月3：按需10：预留实例
 
         :param charge_mode: The charge_mode of this QueryResRecordsDetailReq.
         :type: int
@@ -240,7 +240,7 @@ class QueryResRecordsDetailReq:
     def bill_type(self):
         """Gets the bill_type of this QueryResRecordsDetailReq.
 
-        |参数名称：账单类型| |参数的约束及描述：该参数非必填，且只允许整数,1：消费-新购；2：消费-续订；3：消费-变更；4：退款-退订；5：消费-使用；8：消费-自动续订；9：调账-补偿；12：消费-按时计费；13：消费-退订手续费；14：消费-服务支持计划月末扣费； 15消费-税金；16：调账-扣费; 17：消费-保底差额 100：退款-退订税金 101：调账-补偿税金 102：调账-扣费税金|
+        账单类型： 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
 
         :return: The bill_type of this QueryResRecordsDetailReq.
         :rtype: int
@@ -251,7 +251,7 @@ class QueryResRecordsDetailReq:
     def bill_type(self, bill_type):
         """Sets the bill_type of this QueryResRecordsDetailReq.
 
-        |参数名称：账单类型| |参数的约束及描述：该参数非必填，且只允许整数,1：消费-新购；2：消费-续订；3：消费-变更；4：退款-退订；5：消费-使用；8：消费-自动续订；9：调账-补偿；12：消费-按时计费；13：消费-退订手续费；14：消费-服务支持计划月末扣费； 15消费-税金；16：调账-扣费; 17：消费-保底差额 100：退款-退订税金 101：调账-补偿税金 102：调账-扣费税金|
+        账单类型： 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额=客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
 
         :param bill_type: The bill_type of this QueryResRecordsDetailReq.
         :type: int
@@ -262,7 +262,7 @@ class QueryResRecordsDetailReq:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this QueryResRecordsDetailReq.
 
-        |参数名称：企业项目ID| |参数的约束及描述：该参数非必，最大长度：64，且只允许字符串|
+        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :return: The enterprise_project_id of this QueryResRecordsDetailReq.
         :rtype: str
@@ -273,7 +273,7 @@ class QueryResRecordsDetailReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this QueryResRecordsDetailReq.
 
-        |参数名称：企业项目ID| |参数的约束及描述：该参数非必，最大长度：64，且只允许字符串|
+        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this QueryResRecordsDetailReq.
         :type: str
@@ -284,7 +284,7 @@ class QueryResRecordsDetailReq:
     def include_zero_record(self):
         """Gets the include_zero_record of this QueryResRecordsDetailReq.
 
-        |参数名称：返回是否包含应付金额为0的记录| |参数的约束及描述：该参数非必填，且只允许布尔型，true: 包含；false: 不包含|
+        返回是否包含应付金额为0的记录。 true: 包含false: 不包含
 
         :return: The include_zero_record of this QueryResRecordsDetailReq.
         :rtype: bool
@@ -295,7 +295,7 @@ class QueryResRecordsDetailReq:
     def include_zero_record(self, include_zero_record):
         """Sets the include_zero_record of this QueryResRecordsDetailReq.
 
-        |参数名称：返回是否包含应付金额为0的记录| |参数的约束及描述：该参数非必填，且只允许布尔型，true: 包含；false: 不包含|
+        返回是否包含应付金额为0的记录。 true: 包含false: 不包含
 
         :param include_zero_record: The include_zero_record of this QueryResRecordsDetailReq.
         :type: bool
@@ -306,7 +306,7 @@ class QueryResRecordsDetailReq:
     def offset(self):
         """Gets the offset of this QueryResRecordsDetailReq.
 
-        |参数名称：偏移量| |参数的约束及描述：该参数非必填，且只允许数字，默认为0|
+        偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :return: The offset of this QueryResRecordsDetailReq.
         :rtype: int
@@ -317,7 +317,7 @@ class QueryResRecordsDetailReq:
     def offset(self, offset):
         """Sets the offset of this QueryResRecordsDetailReq.
 
-        |参数名称：偏移量| |参数的约束及描述：该参数非必填，且只允许数字，默认为0|
+        偏移量，从0开始。默认值为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this QueryResRecordsDetailReq.
         :type: int
@@ -328,7 +328,7 @@ class QueryResRecordsDetailReq:
     def limit(self):
         """Gets the limit of this QueryResRecordsDetailReq.
 
-        |参数名称：页面大小| |参数的约束及描述：该参数非必填，且只允许1-100的数字，默认10|
+        页面大小。默认值为10。
 
         :return: The limit of this QueryResRecordsDetailReq.
         :rtype: int
@@ -339,7 +339,7 @@ class QueryResRecordsDetailReq:
     def limit(self, limit):
         """Sets the limit of this QueryResRecordsDetailReq.
 
-        |参数名称：页面大小| |参数的约束及描述：该参数非必填，且只允许1-100的数字，默认10|
+        页面大小。默认值为10。
 
         :param limit: The limit of this QueryResRecordsDetailReq.
         :type: int
@@ -350,7 +350,7 @@ class QueryResRecordsDetailReq:
     def method(self):
         """Gets the method of this QueryResRecordsDetailReq.
 
-        |参数名称：查询方式。oneself：自身sub_customer: 企业子客户all:自己和企业子客户| |参数的约束及描述：oneself：自身sub_customer: 企业子客户all:自己和企业子客户|
+        查询方式。 oneself：客户自己  sub_customer：企业子客户  all：客户自己和企业子客户 。默认为all，如果没有企业子客户，all的时候也是查询客户自己的数据。
 
         :return: The method of this QueryResRecordsDetailReq.
         :rtype: str
@@ -361,7 +361,7 @@ class QueryResRecordsDetailReq:
     def method(self, method):
         """Sets the method of this QueryResRecordsDetailReq.
 
-        |参数名称：查询方式。oneself：自身sub_customer: 企业子客户all:自己和企业子客户| |参数的约束及描述：oneself：自身sub_customer: 企业子客户all:自己和企业子客户|
+        查询方式。 oneself：客户自己  sub_customer：企业子客户  all：客户自己和企业子客户 。默认为all，如果没有企业子客户，all的时候也是查询客户自己的数据。
 
         :param method: The method of this QueryResRecordsDetailReq.
         :type: str
@@ -372,7 +372,7 @@ class QueryResRecordsDetailReq:
     def sub_customer_id(self):
         """Gets the sub_customer_id of this QueryResRecordsDetailReq.
 
-        |参数名称：企业子账号ID。| |参数的约束及描述：注意：method不等于sub_customer的时候，该参数无效，如果method等于sub_customer，该参数不能为空|
+        企业子账号ID。  说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
         :return: The sub_customer_id of this QueryResRecordsDetailReq.
         :rtype: str
@@ -383,7 +383,7 @@ class QueryResRecordsDetailReq:
     def sub_customer_id(self, sub_customer_id):
         """Sets the sub_customer_id of this QueryResRecordsDetailReq.
 
-        |参数名称：企业子账号ID。| |参数的约束及描述：注意：method不等于sub_customer的时候，该参数无效，如果method等于sub_customer，该参数不能为空|
+        企业子账号ID。  说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
         :param sub_customer_id: The sub_customer_id of this QueryResRecordsDetailReq.
         :type: str
@@ -394,7 +394,7 @@ class QueryResRecordsDetailReq:
     def statistic_type(self):
         """Gets the statistic_type of this QueryResRecordsDetailReq.
 
-        |参数名称：统计类型。默认值为1。1：按账期 2：按天| |参数的约束及描述：统计类型。默认值为1。1：按账期 2：按天|
+        统计类型。默认值为1。 1：按账期  2：按天
 
         :return: The statistic_type of this QueryResRecordsDetailReq.
         :rtype: int
@@ -405,7 +405,7 @@ class QueryResRecordsDetailReq:
     def statistic_type(self, statistic_type):
         """Sets the statistic_type of this QueryResRecordsDetailReq.
 
-        |参数名称：统计类型。默认值为1。1：按账期 2：按天| |参数的约束及描述：统计类型。默认值为1。1：按账期 2：按天|
+        统计类型。默认值为1。 1：按账期  2：按天
 
         :param statistic_type: The statistic_type of this QueryResRecordsDetailReq.
         :type: int

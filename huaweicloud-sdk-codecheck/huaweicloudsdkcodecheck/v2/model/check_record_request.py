@@ -133,7 +133,7 @@ class CheckRecordRequest:
     def limit(self):
         """Gets the limit of this CheckRecordRequest.
 
-        每页显示的数量,每页最多显示100条
+        每页显示的数量,每页最多显示1000条
 
         :return: The limit of this CheckRecordRequest.
         :rtype: int
@@ -144,7 +144,7 @@ class CheckRecordRequest:
     def limit(self, limit):
         """Sets the limit of this CheckRecordRequest.
 
-        每页显示的数量,每页最多显示100条
+        每页显示的数量,每页最多显示1000条
 
         :param limit: The limit of this CheckRecordRequest.
         :type: int
@@ -155,7 +155,7 @@ class CheckRecordRequest:
     def start_time(self):
         """Gets the start_time of this CheckRecordRequest.
 
-        开始时间
+        过滤开始时间,根据任务检查开始时间过滤
 
         :return: The start_time of this CheckRecordRequest.
         :rtype: str
@@ -166,7 +166,7 @@ class CheckRecordRequest:
     def start_time(self, start_time):
         """Sets the start_time of this CheckRecordRequest.
 
-        开始时间
+        过滤开始时间,根据任务检查开始时间过滤
 
         :param start_time: The start_time of this CheckRecordRequest.
         :type: str
@@ -177,7 +177,7 @@ class CheckRecordRequest:
     def end_time(self):
         """Gets the end_time of this CheckRecordRequest.
 
-        结束时间
+        过滤结束时间,根据任务检查开始时间过滤
 
         :return: The end_time of this CheckRecordRequest.
         :rtype: str
@@ -188,7 +188,7 @@ class CheckRecordRequest:
     def end_time(self, end_time):
         """Sets the end_time of this CheckRecordRequest.
 
-        结束时间
+        过滤结束时间,根据任务检查开始时间过滤
 
         :param end_time: The end_time of this CheckRecordRequest.
         :type: str

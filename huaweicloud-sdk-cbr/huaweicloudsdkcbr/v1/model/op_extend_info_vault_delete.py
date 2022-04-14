@@ -49,7 +49,7 @@ class OpExtendInfoVaultDelete:
     def fail_count(self):
         """Gets the fail_count of this OpExtendInfoVaultDelete.
 
-        删除失败的资源数量
+        本次任务删除失败的资源数量
 
         :return: The fail_count of this OpExtendInfoVaultDelete.
         :rtype: int
@@ -60,7 +60,7 @@ class OpExtendInfoVaultDelete:
     def fail_count(self, fail_count):
         """Sets the fail_count of this OpExtendInfoVaultDelete.
 
-        删除失败的资源数量
+        本次任务删除失败的资源数量
 
         :param fail_count: The fail_count of this OpExtendInfoVaultDelete.
         :type: int
@@ -71,7 +71,7 @@ class OpExtendInfoVaultDelete:
     def total_count(self):
         """Gets the total_count of this OpExtendInfoVaultDelete.
 
-        删除的备份数量
+        本次任务删除的备份总数
 
         :return: The total_count of this OpExtendInfoVaultDelete.
         :rtype: int
@@ -82,7 +82,7 @@ class OpExtendInfoVaultDelete:
     def total_count(self, total_count):
         """Sets the total_count of this OpExtendInfoVaultDelete.
 
-        删除的备份数量
+        本次任务删除的备份总数
 
         :param total_count: The total_count of this OpExtendInfoVaultDelete.
         :type: int

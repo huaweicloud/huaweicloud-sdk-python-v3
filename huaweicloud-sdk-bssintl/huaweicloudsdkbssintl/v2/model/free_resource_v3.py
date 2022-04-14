@@ -64,7 +64,7 @@ class FreeResourceV3:
     def free_resource_id(self):
         """Gets the free_resource_id of this FreeResourceV3.
 
-        |参数名称：资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。| |参数约束及描述：资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。|
+        资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。
 
         :return: The free_resource_id of this FreeResourceV3.
         :rtype: str
@@ -75,7 +75,7 @@ class FreeResourceV3:
     def free_resource_id(self, free_resource_id):
         """Sets the free_resource_id of this FreeResourceV3.
 
-        |参数名称：资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。| |参数约束及描述：资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。|
+        资源项ID，一个资源包中会含有多个资源项，一个使用量类型对应一个资源项。
 
         :param free_resource_id: The free_resource_id of this FreeResourceV3.
         :type: str
@@ -86,7 +86,7 @@ class FreeResourceV3:
     def usage_type_name(self):
         """Gets the usage_type_name of this FreeResourceV3.
 
-        |参数名称：使用量类型名称。| |参数约束及描述：使用量类型名称。|
+        使用量类型名称。
 
         :return: The usage_type_name of this FreeResourceV3.
         :rtype: str
@@ -97,7 +97,7 @@ class FreeResourceV3:
     def usage_type_name(self, usage_type_name):
         """Sets the usage_type_name of this FreeResourceV3.
 
-        |参数名称：使用量类型名称。| |参数约束及描述：使用量类型名称。|
+        使用量类型名称。
 
         :param usage_type_name: The usage_type_name of this FreeResourceV3.
         :type: str
@@ -108,7 +108,7 @@ class FreeResourceV3:
     def amount(self):
         """Gets the amount of this FreeResourceV3.
 
-        |参数名称：资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。| |参数约束及描述：资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。|
+        资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。
 
         :return: The amount of this FreeResourceV3.
         :rtype: str
@@ -119,7 +119,7 @@ class FreeResourceV3:
     def amount(self, amount):
         """Sets the amount of this FreeResourceV3.
 
-        |参数名称：资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。| |参数约束及描述：资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。|
+        资源剩余额度，针对可重置资源包，是指当前重置周期内的剩余量。
 
         :param amount: The amount of this FreeResourceV3.
         :type: str
@@ -130,7 +130,7 @@ class FreeResourceV3:
     def original_amount(self):
         """Gets the original_amount of this FreeResourceV3.
 
-        |参数名称：资源原始额度，针对可重置资源包，是指每个重置周期内的总量。| |参数约束及描述：资源原始额度，针对可重置资源包，是指每个重置周期内的总量。|
+        资源原始额度，针对可重置资源包，是指每个重置周期内的总量。
 
         :return: The original_amount of this FreeResourceV3.
         :rtype: str
@@ -141,7 +141,7 @@ class FreeResourceV3:
     def original_amount(self, original_amount):
         """Sets the original_amount of this FreeResourceV3.
 
-        |参数名称：资源原始额度，针对可重置资源包，是指每个重置周期内的总量。| |参数约束及描述：资源原始额度，针对可重置资源包，是指每个重置周期内的总量。|
+        资源原始额度，针对可重置资源包，是指每个重置周期内的总量。
 
         :param original_amount: The original_amount of this FreeResourceV3.
         :type: str
@@ -152,7 +152,7 @@ class FreeResourceV3:
     def measure_id(self):
         """Gets the measure_id of this FreeResourceV3.
 
-        |参数名称：度量单位，免费资源套餐额度度量单位。| |参数的约束及描述：度量单位，免费资源套餐额度度量单位。|
+        度量单位，免费资源套餐额度度量单位。您可以调用查询度量单位列表接口获取。
 
         :return: The measure_id of this FreeResourceV3.
         :rtype: int
@@ -163,7 +163,7 @@ class FreeResourceV3:
     def measure_id(self, measure_id):
         """Sets the measure_id of this FreeResourceV3.
 
-        |参数名称：度量单位，免费资源套餐额度度量单位。| |参数的约束及描述：度量单位，免费资源套餐额度度量单位。|
+        度量单位，免费资源套餐额度度量单位。您可以调用查询度量单位列表接口获取。
 
         :param measure_id: The measure_id of this FreeResourceV3.
         :type: int

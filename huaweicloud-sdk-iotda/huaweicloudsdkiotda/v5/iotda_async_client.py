@@ -658,7 +658,7 @@ class IoTDAAsyncClient(Client):
         :return: CreateAsyncCommandResponse
         """
 
-        all_params = ['device_id', 'create_async_command_request_body', 'instance_id']
+        all_params = ['device_id', 'create_async_command_request_body', 'sp_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -673,6 +673,8 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -709,7 +711,7 @@ class IoTDAAsyncClient(Client):
     def show_async_device_command_async(self, request):
         """查询指定id的命令
 
-        物联网平台可查询指定id的命令。 
+        物联网平台可查询指定id的命令。  
 
         :param ShowAsyncDeviceCommandRequest request
         :return: ShowAsyncDeviceCommandResponse
@@ -719,13 +721,13 @@ class IoTDAAsyncClient(Client):
     def show_async_device_command_with_http_info(self, request):
         """查询指定id的命令
 
-        物联网平台可查询指定id的命令。 
+        物联网平台可查询指定id的命令。  
 
         :param ShowAsyncDeviceCommandRequest request
         :return: ShowAsyncDeviceCommandResponse
         """
 
-        all_params = ['device_id', 'command_id', 'instance_id']
+        all_params = ['device_id', 'command_id', 'sp_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -742,6 +744,8 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1401,7 +1405,7 @@ class IoTDAAsyncClient(Client):
         :return: CreateCommandResponse
         """
 
-        all_params = ['device_id', 'create_command_request_body', 'instance_id']
+        all_params = ['device_id', 'create_command_request_body', 'sp_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1416,6 +1420,8 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -2540,7 +2546,7 @@ class IoTDAAsyncClient(Client):
     def show_device_shadow_async(self, request):
         """查询设备影子数据
 
-        应用服务器可调用此接口查询指定设备的设备影子信息，包括对设备的期望属性信息（desired区）和设备最新上报的属性信息（reported区）。  设备影子介绍： 设备影子是一个用于存储和检索设备当前状态信息的JSON文档。 - 每个设备有且只有一个设备影子，由设备ID唯一标识 - 设备影子仅保存最近一次设备的上报数据和预期数据 - 无论该设备是否在线，都可以通过该影子获取和设置设备的属性 - 设备上线或者设备上报属性时，如果desired区和reported区存在差异，则将差异部分下发给设备，配置的预期属性需在产品模型中定义且method具有可写属性“W”才可下发 
+        应用服务器可调用此接口查询指定设备的设备影子信息，包括对设备的期望属性信息（desired区）和设备最新上报的属性信息（reported区）。  设备影子介绍： 设备影子是一个用于存储和检索设备当前状态信息的JSON文档。 - 每个设备有且只有一个设备影子，由设备ID唯一标识 - 设备影子仅保存最近一次设备的上报数据和预期数据 - 无论该设备是否在线，都可以通过该影子获取和设置设备的属性 - 设备上线或者设备上报属性时，如果desired区和reported区存在差异，则将差异部分下发给设备，配置的预期属性需在产品模型中定义且method具有可写属性“W”才可下发  限制： 设备影子JSON文档中的key不允许特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00)。如果包含了以上特殊字符则无法正常刷新影子文档。 
 
         :param ShowDeviceShadowRequest request
         :return: ShowDeviceShadowResponse
@@ -2550,7 +2556,7 @@ class IoTDAAsyncClient(Client):
     def show_device_shadow_with_http_info(self, request):
         """查询设备影子数据
 
-        应用服务器可调用此接口查询指定设备的设备影子信息，包括对设备的期望属性信息（desired区）和设备最新上报的属性信息（reported区）。  设备影子介绍： 设备影子是一个用于存储和检索设备当前状态信息的JSON文档。 - 每个设备有且只有一个设备影子，由设备ID唯一标识 - 设备影子仅保存最近一次设备的上报数据和预期数据 - 无论该设备是否在线，都可以通过该影子获取和设置设备的属性 - 设备上线或者设备上报属性时，如果desired区和reported区存在差异，则将差异部分下发给设备，配置的预期属性需在产品模型中定义且method具有可写属性“W”才可下发 
+        应用服务器可调用此接口查询指定设备的设备影子信息，包括对设备的期望属性信息（desired区）和设备最新上报的属性信息（reported区）。  设备影子介绍： 设备影子是一个用于存储和检索设备当前状态信息的JSON文档。 - 每个设备有且只有一个设备影子，由设备ID唯一标识 - 设备影子仅保存最近一次设备的上报数据和预期数据 - 无论该设备是否在线，都可以通过该影子获取和设置设备的属性 - 设备上线或者设备上报属性时，如果desired区和reported区存在差异，则将差异部分下发给设备，配置的预期属性需在产品模型中定义且method具有可写属性“W”才可下发  限制： 设备影子JSON文档中的key不允许特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00)。如果包含了以上特殊字符则无法正常刷新影子文档。 
 
         :param ShowDeviceShadowRequest request
         :return: ShowDeviceShadowResponse
@@ -2605,7 +2611,7 @@ class IoTDAAsyncClient(Client):
     def update_device_shadow_desired_data_async(self, request):
         """配置设备影子预期数据
 
-        应用服务器可调用此接口配置设备影子的预期属性（desired区），当设备上线或者设备上报属性时把属性下发给设备。  设备影子介绍： 设备影子是一个用于存储和检索设备当前状态信息的JSON文档。 - 每个设备有且只有一个设备影子，由设备ID唯一标识 - 设备影子仅保存最近一次设备的上报数据和预期数据 - 无论该设备是否在线，都可以通过该影子获取和设置设备的属性 - 设备上线或者设备上报属性时，如果desired区和reported区存在差异，则将差异部分下发给设备，配置的预期属性需在产品模型中定义且method具有可写属性“W”才可下发 
+        应用服务器可调用此接口配置设备影子的预期属性（desired区），当设备上线或者设备上报属性时把属性下发给设备。  设备影子介绍： 设备影子是一个用于存储和检索设备当前状态信息的JSON文档。 - 每个设备有且只有一个设备影子，由设备ID唯一标识 - 设备影子仅保存最近一次设备的上报数据和预期数据 - 无论该设备是否在线，都可以通过该影子获取和设置设备的属性 - 设备上线或者设备上报属性时，如果desired区和reported区存在差异，则将差异部分下发给设备，配置的预期属性需在产品模型中定义且method具有可写属性“W”才可下发  限制： 设备影子JSON文档中的key不允许特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00)。如果包含了以上特殊字符则无法正常刷新影子文档。 
 
         :param UpdateDeviceShadowDesiredDataRequest request
         :return: UpdateDeviceShadowDesiredDataResponse
@@ -2615,7 +2621,7 @@ class IoTDAAsyncClient(Client):
     def update_device_shadow_desired_data_with_http_info(self, request):
         """配置设备影子预期数据
 
-        应用服务器可调用此接口配置设备影子的预期属性（desired区），当设备上线或者设备上报属性时把属性下发给设备。  设备影子介绍： 设备影子是一个用于存储和检索设备当前状态信息的JSON文档。 - 每个设备有且只有一个设备影子，由设备ID唯一标识 - 设备影子仅保存最近一次设备的上报数据和预期数据 - 无论该设备是否在线，都可以通过该影子获取和设置设备的属性 - 设备上线或者设备上报属性时，如果desired区和reported区存在差异，则将差异部分下发给设备，配置的预期属性需在产品模型中定义且method具有可写属性“W”才可下发 
+        应用服务器可调用此接口配置设备影子的预期属性（desired区），当设备上线或者设备上报属性时把属性下发给设备。  设备影子介绍： 设备影子是一个用于存储和检索设备当前状态信息的JSON文档。 - 每个设备有且只有一个设备影子，由设备ID唯一标识 - 设备影子仅保存最近一次设备的上报数据和预期数据 - 无论该设备是否在线，都可以通过该影子获取和设置设备的属性 - 设备上线或者设备上报属性时，如果desired区和reported区存在差异，则将差异部分下发给设备，配置的预期属性需在产品模型中定义且method具有可写属性“W”才可下发  限制： 设备影子JSON文档中的key不允许特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00)。如果包含了以上特殊字符则无法正常刷新影子文档。 
 
         :param UpdateDeviceShadowDesiredDataRequest request
         :return: UpdateDeviceShadowDesiredDataResponse
@@ -2739,7 +2745,7 @@ class IoTDAAsyncClient(Client):
     def list_device_messages_async(self, request):
         """查询设备消息
 
-        物联网平台可查询指定设备下发的消息，平台为每个设备默认最多保存20条消息，超过20条后， 后续的消息会替换下发最早的消息。 
+        应用服务器可调用此接口查询平台下发给设备的消息，平台为每个设备默认最多保存20条消息，超过20条后， 后续的消息会替换下发最早的消息。  
 
         :param ListDeviceMessagesRequest request
         :return: ListDeviceMessagesResponse
@@ -2749,7 +2755,7 @@ class IoTDAAsyncClient(Client):
     def list_device_messages_with_http_info(self, request):
         """查询设备消息
 
-        物联网平台可查询指定设备下发的消息，平台为每个设备默认最多保存20条消息，超过20条后， 后续的消息会替换下发最早的消息。 
+        应用服务器可调用此接口查询平台下发给设备的消息，平台为每个设备默认最多保存20条消息，超过20条后， 后续的消息会替换下发最早的消息。  
 
         :param ListDeviceMessagesRequest request
         :return: ListDeviceMessagesResponse
@@ -2804,7 +2810,7 @@ class IoTDAAsyncClient(Client):
     def show_device_message_async(self, request):
         """查询指定消息id的消息
 
-        物联网平台可查询设备下发的指定消息id的消息。 
+        应用服务器可调用此接口查询平台下发给设备的指定消息id的消息。  
 
         :param ShowDeviceMessageRequest request
         :return: ShowDeviceMessageResponse
@@ -2814,7 +2820,7 @@ class IoTDAAsyncClient(Client):
     def show_device_message_with_http_info(self, request):
         """查询指定消息id的消息
 
-        物联网平台可查询设备下发的指定消息id的消息。 
+        应用服务器可调用此接口查询平台下发给设备的指定消息id的消息。  
 
         :param ShowDeviceMessageRequest request
         :return: ShowDeviceMessageResponse
@@ -3224,7 +3230,7 @@ class IoTDAAsyncClient(Client):
         :return: ListPropertiesResponse
         """
 
-        all_params = ['device_id', 'service_id', 'instance_id']
+        all_params = ['device_id', 'service_id', 'sp_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3241,6 +3247,8 @@ class IoTDAAsyncClient(Client):
             query_params.append(('service_id', local_var_params['service_id']))
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -3291,7 +3299,7 @@ class IoTDAAsyncClient(Client):
         :return: UpdatePropertiesResponse
         """
 
-        all_params = ['device_id', 'update_properties_request_body', 'instance_id']
+        all_params = ['device_id', 'update_properties_request_body', 'sp_auth_token', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3306,6 +3314,8 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 

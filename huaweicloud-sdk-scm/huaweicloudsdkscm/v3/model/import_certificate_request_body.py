@@ -26,6 +26,7 @@ class ImportCertificateRequestBody:
         'certificate': 'str',
         'certificate_chain': 'str',
         'private_key': 'str',
+        'enterprise_project_id': 'str',
         'enc_certificate': 'str',
         'enc_private_key': 'str'
     }
@@ -35,11 +36,12 @@ class ImportCertificateRequestBody:
         'certificate': 'certificate',
         'certificate_chain': 'certificate_chain',
         'private_key': 'private_key',
+        'enterprise_project_id': 'enterprise_project_id',
         'enc_certificate': 'enc_certificate',
         'enc_private_key': 'enc_private_key'
     }
 
-    def __init__(self, name=None, certificate=None, certificate_chain=None, private_key=None, enc_certificate=None, enc_private_key=None):
+    def __init__(self, name=None, certificate=None, certificate_chain=None, private_key=None, enterprise_project_id=None, enc_certificate=None, enc_private_key=None):
         """ImportCertificateRequestBody - a model defined in huaweicloud sdk"""
         
         
@@ -48,6 +50,7 @@ class ImportCertificateRequestBody:
         self._certificate = None
         self._certificate_chain = None
         self._private_key = None
+        self._enterprise_project_id = None
         self._enc_certificate = None
         self._enc_private_key = None
         self.discriminator = None
@@ -56,6 +59,8 @@ class ImportCertificateRequestBody:
         self.certificate = certificate
         self.certificate_chain = certificate_chain
         self.private_key = private_key
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if enc_certificate is not None:
             self.enc_certificate = enc_certificate
         if enc_private_key is not None:
@@ -148,6 +153,28 @@ class ImportCertificateRequestBody:
         :type: str
         """
         self._private_key = private_key
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ImportCertificateRequestBody.
+
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+
+        :return: The enterprise_project_id of this ImportCertificateRequestBody.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ImportCertificateRequestBody.
+
+        企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.  取值为“all”  取值为“0”  满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
+
+        :param enterprise_project_id: The enterprise_project_id of this ImportCertificateRequestBody.
+        :type: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def enc_certificate(self):

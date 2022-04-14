@@ -47,7 +47,7 @@ class UnfreezeSubCustomersReq:
     def customer_ids(self):
         """Gets the customer_ids of this UnfreezeSubCustomersReq.
 
-        |参数名称：需要解冻的客户ID列表。| |参数约束以及描述：需要解冻的客户ID列表。|
+        需要解冻的客户账号ID列表。 您可以调用查询客户列表接口获取customer_id。
 
         :return: The customer_ids of this UnfreezeSubCustomersReq.
         :rtype: list[str]
@@ -58,7 +58,7 @@ class UnfreezeSubCustomersReq:
     def customer_ids(self, customer_ids):
         """Sets the customer_ids of this UnfreezeSubCustomersReq.
 
-        |参数名称：需要解冻的客户ID列表。| |参数约束以及描述：需要解冻的客户ID列表。|
+        需要解冻的客户账号ID列表。 您可以调用查询客户列表接口获取customer_id。
 
         :param customer_ids: The customer_ids of this UnfreezeSubCustomersReq.
         :type: list[str]
@@ -69,7 +69,7 @@ class UnfreezeSubCustomersReq:
     def reason(self):
         """Gets the reason of this UnfreezeSubCustomersReq.
 
-        |参数名称：解冻原因。| |参数约束及描述：解冻原因。|
+        解冻原因。
 
         :return: The reason of this UnfreezeSubCustomersReq.
         :rtype: str
@@ -80,7 +80,7 @@ class UnfreezeSubCustomersReq:
     def reason(self, reason):
         """Sets the reason of this UnfreezeSubCustomersReq.
 
-        |参数名称：解冻原因。| |参数约束及描述：解冻原因。|
+        解冻原因。
 
         :param reason: The reason of this UnfreezeSubCustomersReq.
         :type: str

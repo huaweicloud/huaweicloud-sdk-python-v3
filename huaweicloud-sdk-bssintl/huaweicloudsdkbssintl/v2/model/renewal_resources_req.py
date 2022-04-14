@@ -60,7 +60,7 @@ class RenewalResourcesReq:
     def resource_ids(self):
         """Gets the resource_ids of this RenewalResourcesReq.
 
-        |参数名称：资源ID列表。只支持传入主资源ID，最多100个资源ID。哪些资源是主资源请根据“2.1-查询客户包周期资源列表”接口响应参数中的“is_main_resource”来标识。| |参数约束以及描述：资源ID列表。只支持传入主资源ID，最多100个资源ID。哪些资源是主资源请根据“2.1-查询客户包周期资源列表”接口响应参数中的“is_main_resource”来标识。|
+        资源ID列表。 只支持传入主资源ID，最多100个资源ID。 哪些资源是主资源请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”来标识。
 
         :return: The resource_ids of this RenewalResourcesReq.
         :rtype: list[str]
@@ -71,7 +71,7 @@ class RenewalResourcesReq:
     def resource_ids(self, resource_ids):
         """Sets the resource_ids of this RenewalResourcesReq.
 
-        |参数名称：资源ID列表。只支持传入主资源ID，最多100个资源ID。哪些资源是主资源请根据“2.1-查询客户包周期资源列表”接口响应参数中的“is_main_resource”来标识。| |参数约束以及描述：资源ID列表。只支持传入主资源ID，最多100个资源ID。哪些资源是主资源请根据“2.1-查询客户包周期资源列表”接口响应参数中的“is_main_resource”来标识。|
+        资源ID列表。 只支持传入主资源ID，最多100个资源ID。 哪些资源是主资源请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”来标识。
 
         :param resource_ids: The resource_ids of this RenewalResourcesReq.
         :type: list[str]
@@ -82,7 +82,7 @@ class RenewalResourcesReq:
     def period_type(self):
         """Gets the period_type of this RenewalResourcesReq.
 
-        |参数名称：周期类型：2：月；3：年| |参数的约束及描述：周期类型：2：月；3：年|
+        周期类型： 2：月3：年
 
         :return: The period_type of this RenewalResourcesReq.
         :rtype: int
@@ -93,7 +93,7 @@ class RenewalResourcesReq:
     def period_type(self, period_type):
         """Sets the period_type of this RenewalResourcesReq.
 
-        |参数名称：周期类型：2：月；3：年| |参数的约束及描述：周期类型：2：月；3：年|
+        周期类型： 2：月3：年
 
         :param period_type: The period_type of this RenewalResourcesReq.
         :type: int
@@ -104,7 +104,7 @@ class RenewalResourcesReq:
     def period_num(self):
         """Gets the period_num of this RenewalResourcesReq.
 
-        |参数名称：周期数目：如果是月，目前支持1-11；如果是年，目前支持1-3| |参数的约束及描述：周期数目：如果是月，目前支持1-11；如果是年，目前支持1-3|
+        周期数目： 如果是月，目前支持1-11如果是年，目前支持1-3
 
         :return: The period_num of this RenewalResourcesReq.
         :rtype: int
@@ -115,7 +115,7 @@ class RenewalResourcesReq:
     def period_num(self, period_num):
         """Sets the period_num of this RenewalResourcesReq.
 
-        |参数名称：周期数目：如果是月，目前支持1-11；如果是年，目前支持1-3| |参数的约束及描述：周期数目：如果是月，目前支持1-11；如果是年，目前支持1-3|
+        周期数目： 如果是月，目前支持1-11如果是年，目前支持1-3
 
         :param period_num: The period_num of this RenewalResourcesReq.
         :type: int
@@ -126,7 +126,7 @@ class RenewalResourcesReq:
     def expire_policy(self):
         """Gets the expire_policy of this RenewalResourcesReq.
 
-        |参数名称：到期策略：0：进入宽限期1：转按需2：自动退订3：自动续订| |参数的约束及描述：到期策略：0：进入宽限期1：转按需2：自动退订3：自动续订|
+        到期策略： 0：进入宽限期/保留期1：转按需2：自动退订3：自动续订
 
         :return: The expire_policy of this RenewalResourcesReq.
         :rtype: int
@@ -137,7 +137,7 @@ class RenewalResourcesReq:
     def expire_policy(self, expire_policy):
         """Sets the expire_policy of this RenewalResourcesReq.
 
-        |参数名称：到期策略：0：进入宽限期1：转按需2：自动退订3：自动续订| |参数的约束及描述：到期策略：0：进入宽限期1：转按需2：自动退订3：自动续订|
+        到期策略： 0：进入宽限期/保留期1：转按需2：自动退订3：自动续订
 
         :param expire_policy: The expire_policy of this RenewalResourcesReq.
         :type: int
@@ -148,7 +148,7 @@ class RenewalResourcesReq:
     def is_auto_pay(self):
         """Gets the is_auto_pay of this RenewalResourcesReq.
 
-        |参数名称：是否自动支付。0：否1：是不填写的话，默认值是0，不自动支付。| |参数的约束及描述：是否自动支付。0：否1：是不填写的话，默认值是0，不自动支付。|
+        是否自动支付。 0：否1：是 不填写的话，默认值是0，不自动支付。
 
         :return: The is_auto_pay of this RenewalResourcesReq.
         :rtype: int
@@ -159,7 +159,7 @@ class RenewalResourcesReq:
     def is_auto_pay(self, is_auto_pay):
         """Sets the is_auto_pay of this RenewalResourcesReq.
 
-        |参数名称：是否自动支付。0：否1：是不填写的话，默认值是0，不自动支付。| |参数的约束及描述：是否自动支付。0：否1：是不填写的话，默认值是0，不自动支付。|
+        是否自动支付。 0：否1：是 不填写的话，默认值是0，不自动支付。
 
         :param is_auto_pay: The is_auto_pay of this RenewalResourcesReq.
         :type: int

@@ -59,7 +59,7 @@ class ListUsageTypesRequest:
     def x_language(self):
         """Gets the x_language of this ListUsageTypesRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
         :return: The x_language of this ListUsageTypesRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class ListUsageTypesRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListUsageTypesRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
         :param x_language: The x_language of this ListUsageTypesRequest.
         :type: str
@@ -81,7 +81,7 @@ class ListUsageTypesRequest:
     def resource_type_code(self):
         """Gets the resource_type_code of this ListUsageTypesRequest.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数的约束及描述：|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :return: The resource_type_code of this ListUsageTypesRequest.
         :rtype: str
@@ -92,7 +92,7 @@ class ListUsageTypesRequest:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this ListUsageTypesRequest.
 
-        |参数名称：资源类型编码，例如ECS的VM为“hws.resource.type.vm”。具体请参见资源类型资源类型资源类型资源类型。| |参数的约束及描述：|
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
         :param resource_type_code: The resource_type_code of this ListUsageTypesRequest.
         :type: str
@@ -103,7 +103,7 @@ class ListUsageTypesRequest:
     def offset(self):
         """Gets the offset of this ListUsageTypesRequest.
 
-        |参数名称：偏移量，从0开始。默认值为0。| |参数的约束及描述：偏移量，从0开始。默认值为0。|
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :return: The offset of this ListUsageTypesRequest.
         :rtype: int
@@ -114,7 +114,7 @@ class ListUsageTypesRequest:
     def offset(self, offset):
         """Sets the offset of this ListUsageTypesRequest.
 
-        |参数名称：偏移量，从0开始。默认值为0。| |参数的约束及描述：偏移量，从0开始。默认值为0。|
+        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListUsageTypesRequest.
         :type: int
@@ -125,7 +125,7 @@ class ListUsageTypesRequest:
     def limit(self):
         """Gets the limit of this ListUsageTypesRequest.
 
-        |参数名称：每次查询的数量。默认值为10。| |参数的约束及描述：每次查询的数量。默认值为10。|
+        每次查询的数量，默认值为10。
 
         :return: The limit of this ListUsageTypesRequest.
         :rtype: int
@@ -136,7 +136,7 @@ class ListUsageTypesRequest:
     def limit(self, limit):
         """Sets the limit of this ListUsageTypesRequest.
 
-        |参数名称：每次查询的数量。默认值为10。| |参数的约束及描述：每次查询的数量。默认值为10。|
+        每次查询的数量，默认值为10。
 
         :param limit: The limit of this ListUsageTypesRequest.
         :type: int

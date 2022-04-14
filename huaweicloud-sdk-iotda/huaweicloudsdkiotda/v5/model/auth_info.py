@@ -130,7 +130,7 @@ class AuthInfo:
     def secure_access(self):
         """Gets the secure_access of this AuthInfo.
 
-        **参数说明**：指设备是否通过安全协议方式接入。默认值为true。 **取值范围**： - true：通过安全协议方式接入。 - false：通过非安全协议方式接入。非安全接入的设备存在被仿冒等安全风险，请谨慎使用。
+        **参数说明**：指设备是否通过安全协议方式接入。 **取值范围**： - true：通过安全协议方式接入。 - false：通过非安全协议方式接入。非安全接入的设备存在被仿冒等安全风险，请谨慎使用。
 
         :return: The secure_access of this AuthInfo.
         :rtype: bool
@@ -141,7 +141,7 @@ class AuthInfo:
     def secure_access(self, secure_access):
         """Sets the secure_access of this AuthInfo.
 
-        **参数说明**：指设备是否通过安全协议方式接入。默认值为true。 **取值范围**： - true：通过安全协议方式接入。 - false：通过非安全协议方式接入。非安全接入的设备存在被仿冒等安全风险，请谨慎使用。
+        **参数说明**：指设备是否通过安全协议方式接入。 **取值范围**： - true：通过安全协议方式接入。 - false：通过非安全协议方式接入。非安全接入的设备存在被仿冒等安全风险，请谨慎使用。
 
         :param secure_access: The secure_access of this AuthInfo.
         :type: bool

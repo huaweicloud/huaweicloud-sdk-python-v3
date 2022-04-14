@@ -25,7 +25,7 @@ class HttpGetBody:
         'https_status': 'str',
         'certificate_name': 'str',
         'certificate_value': 'str',
-        'certificate_source': 'str',
+        'certificate_source': 'int',
         'http2_status': 'str'
     }
 
@@ -133,7 +133,7 @@ class HttpGetBody:
         证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必返回该字段。
 
         :return: The certificate_source of this HttpGetBody.
-        :rtype: str
+        :rtype: int
         """
         return self._certificate_source
 
@@ -144,7 +144,7 @@ class HttpGetBody:
         证书来源。1：代表华为云托管证书；0：表示自有证书。 默认值0。当证书开启时必返回该字段。
 
         :param certificate_source: The certificate_source of this HttpGetBody.
-        :type: str
+        :type: int
         """
         self._certificate_source = certificate_source
 

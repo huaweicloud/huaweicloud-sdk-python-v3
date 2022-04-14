@@ -27,7 +27,8 @@ class SubTask:
         'start_date': 'int',
         'end_date': 'int',
         'migrate_speed': 'float',
-        'user_op': 'str'
+        'user_op': 'str',
+        'process_trace': 'str'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class SubTask:
         'start_date': 'start_date',
         'end_date': 'end_date',
         'migrate_speed': 'migrate_speed',
-        'user_op': 'user_op'
+        'user_op': 'user_op',
+        'process_trace': 'process_trace'
     }
 
-    def __init__(self, name=None, progress=None, start_date=None, end_date=None, migrate_speed=None, user_op=None):
+    def __init__(self, name=None, progress=None, start_date=None, end_date=None, migrate_speed=None, user_op=None, process_trace=None):
         """SubTask - a model defined in huaweicloud sdk"""
         
         
@@ -50,6 +52,7 @@ class SubTask:
         self._end_date = None
         self._migrate_speed = None
         self._user_op = None
+        self._process_trace = None
         self.discriminator = None
 
         if name is not None:
@@ -63,6 +66,8 @@ class SubTask:
             self.migrate_speed = migrate_speed
         if user_op is not None:
             self.user_op = user_op
+        if process_trace is not None:
+            self.process_trace = process_trace
 
     @property
     def name(self):
@@ -195,6 +200,28 @@ class SubTask:
         :type: str
         """
         self._user_op = user_op
+
+    @property
+    def process_trace(self):
+        """Gets the process_trace of this SubTask.
+
+        迁移或同步时，具体的迁移详情
+
+        :return: The process_trace of this SubTask.
+        :rtype: str
+        """
+        return self._process_trace
+
+    @process_trace.setter
+    def process_trace(self, process_trace):
+        """Sets the process_trace of this SubTask.
+
+        迁移或同步时，具体的迁移详情
+
+        :param process_trace: The process_trace of this SubTask.
+        :type: str
+        """
+        self._process_trace = process_trace
 
     def to_dict(self):
         """Returns the model properties as a dict"""
